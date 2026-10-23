@@ -228,5 +228,3 @@ Party Vote New Zealand First.
 And let’s put New Zealanders first.
 
 ENDS
-
-back to main page

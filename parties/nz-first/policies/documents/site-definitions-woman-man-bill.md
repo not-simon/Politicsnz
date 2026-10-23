@@ -22,5 +22,3 @@ New Zealand First April 22, 2025
 New Zealand First has today introduced a Member’s Bill that would ensure the biological definition of a woman and man are defined in law.
 
 The Legislation (Definitions of Woman and Man) Amendment Bill will provide clarity and consistency in New Zealand law by defining “woman” as “an adult human biological female” and “man” as “an adult human biological male” in the Legislation Act 2019.
-
-back to main page

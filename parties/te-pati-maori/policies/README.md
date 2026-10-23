@@ -11,17 +11,19 @@ Every 2026 policy of Te Pāti Māori that this archive could find, with a short 
 ## Method & sources
 
 1. Started from policy.nz's Te Pāti Māori data (`raw/policy.nz/parties/te-pati-maori.json`): statement, Why/How, citations.
-2. maoriparty.org.nz blocks automated access (Cloudflare 403, also with a headless browser) and web.archive.org is unreachable from this environment, so the cited party web pages could not be fetched.
+2. maoriparty.org.nz blocks automated access (Cloudflare 403, also with a headless browser) and web.archive.org is unreachable from this environment. The party's own web pages were therefore recovered from **Common Crawl**: its 2026 crawl indexes (CC-MAIN-2026-12 … -43) were searched for every maoriparty.org.nz URL and the latest HTTP-200 capture of each page was read from the WARC archive on data.commoncrawl.org (`tools/policies_nzf_tpm_cc_index.py`, `tools/policies_nzf_tpm_cc_fetch.py`). Each such document (`documents/site-*.md`) records the capture date and WARC record; captures are 16 Aug–14 Oct 2026, so later edits are not reflected.
 3. Instead, every Te Pāti Māori press release and speech from late 2025 to 23 Oct 2026 was collected from Scoop's organisation page (https://info.scoop.co.nz/Te_Pati_Maori); Scoop republishes party releases as issued, so their text is the party's own. Policy PDFs the party attached to releases (img.scoop.co.nz) or linked from its site (Google Drive) were downloaded and text-extracted.
-4. Each policy links (a) the page policy.nz cited and (b) the party's own retrieved text on the same policy. Where policy.nz cited a blocked page, a `documents/not-retrieved-*.md` file records the URL and the reason; it contains no paraphrase.
+4. Each policy links (a) the page policy.nz cited (now mostly a Common Crawl capture) and (b) other party texts on the same policy. Where a cited page could not be recovered at all, a `documents/not-retrieved-*.md` file records the URL and the reason; it contains no paraphrase.
 5. Policies found in party texts but missing from policy.nz were added with neutral summaries (`summary_source: archive`). Calls on the current government and positions (e.g. opposing a bill) are included where the party presents them as what it stands for, and are labelled as such.
 
 ### Retrieval gaps (read this)
 
 - **1 maoriparty.org.nz pages cited by policy.nz were not retrieved** (403 / archive unreachable). Where a party release covers the same policy it is linked, but the website page may contain details the release does not.
   - ['Sports', undated (accessed 18 August 2026)](documents/not-retrieved-maoriparty-sports.md) — <https://www.maoriparty.org.nz/sports> (policies: POL55068)
-- The party's 2026 *Policy Manifesto* appears to be published as separate chapter PDFs (the Tax and Justice chapters carry "Te Pāti Māori Policy Manifesto 2026" headers and page numbers 3–7 and 27–30). Only the Tax, Justice, Te Tiriti Entrenchment, Energy Sovereignty and Kai Sovereignty documents were found; other chapters (health, housing, education, disability, climate, foreign affairs, te reo, etc.) were not locatable without access to maoriparty.org.nz.
-- No Te Pāti Māori statement of formal coalition "bottom lines" was retrieved (NZ First's leader said TPM called its tax policy a "bottom line"). The web-search budget for this session ran out before further news coverage could be checked.
+- The party's web policy pages are short summaries ("What we’ll do / Why it matters") that link to full manifesto chapters on Google Drive. Chapters recovered (all text-extracted in `documents/pdf-*.md`): Tax, Te Tiriti Entrenchment, Energy Sovereignty, Kai Sovereignty, Justice, Mana Motuhake, Military Neutrality, Climate, Toi Māori, Freshwater, Housing, Mokopuna Māori, Te Reo Māori, Mana Takatāpui. **No full chapter was linked for Health, Disabilities, Education & Training, Economic development or Cost of living** (those web pages have no Drive link in their captures); for these the web-page summary and the party's “What matters to you?” tool (which says its content is from the Policy Manifesto 2026) are the fullest party texts found.
+- The site's Sports and Disability pages link to older documents (a 2020 sport policy; a 2023 Mana Hauā policy). They are archived but flagged as not 2026 policy.
+- maoriparty.org.nz/sports (cited by policy.nz) has no Common Crawl capture; the policy index page (captured 8 Oct 2026) includes the same Sports summary.
+- No Te Pāti Māori statement of formal coalition "bottom lines" was found. Its stated strategy is a candidate vote for Te Pāti Māori and party vote for Labour or the Greens, aiming for a one-term government.
 
 ## Headline commitments & stated conditions
 

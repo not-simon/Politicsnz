@@ -20,7 +20,7 @@
 | [ACT](#act) | David Seymour | right-wing | 11 | 9.8% | National, NZ First, Opportunity (TOP) | Labour |
 | [NZ First](#nz-first) | Winston Peters | – | 8 | 10.2% | National, ACT | Labour, Opportunity (TOP) |
 | [Te Pāti Māori](#te-pati-maori) | Debbie Ngarewa-Packer, Rawiri Waititi | left-wing | 4 | 1.4% | Labour, Greens | National, ACT, NZ First |
-| [Te Tai Tokerau Party](#te-tai-tokerau-party) | Mariameno Kapa-Kingi | – | 1 | – | – | – |
+| [Te Tai Tokerau Party](#te-tai-tokerau-party) | Mariameno Kapa-Kingi | – | 1 | – | National | – |
 | [Opportunity (TOP)](#opportunity) | Qiulae Wong | centre | 0 | 6.2% | National, Labour | – |
 | [Alliance](#alliance) | Victor Billot | left-wing | 0 | <0.5% (policy.nz) | – | – |
 | [Animal Justice](#animal-justice) | Rob McNeil, Danette Wereta | – | 0 | <0.5% (policy.nz) | – | – |
@@ -254,7 +254,7 @@
 | **Position (Wikipedia)** | left-wing ([en.wikipedia.org](https://en.wikipedia.org/wiki/Te_P%C4%81ti_M%C4%81ori)) |
 | **Seats now** | 4 of 123 — Won 6 electorates in 2023; MPs Mariameno Kapa-Kingi and Tākuta Ferris were expelled in Nov 2025 (Kapa-Kingi now leads the Te Tai Tokerau Party; Ferris sits as an independent). |
 | **Polling** | 1.4% (average of 9 polls, 2026-09-23–2026-10-23; range 0.4–2.0%) |
-| **Coalition stance** | Wants to remove the current government and asks supporters to give their party vote to the 'left bloc' (Labour or the Greens). Responding to Labour saying senior roles were 'unlikely', co-leader Debbie Ngarewa-Packer said "Te Pāti Māori will have that conversation on 8th November." *(as at 2026-08-16)* [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1011909/te-pati-maori-reveals-election-strategy-as-campaign-launches-in-gisborne), [nzherald.co.nz](https://www.nzherald.co.nz/nz/politics/election-2026-te-pati-maori-responds-to-labours-chris-hipkins-saying-senior-govt-roles-unlikely-in-future-coalition/CKO2UJPLVNFBHFD6P324NS2CE4/) |
+| **Coalition stance** | Wants to remove the current government and asks supporters to give their party vote to the 'left bloc' (Labour or the Greens). Responding to Labour saying senior roles were 'unlikely', co-leader Debbie Ngarewa-Packer said "Te Pāti Māori will have that conversation on 8th November." *(as at 2026-08-16)* [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1011909/te-pati-maori-reveals-election-strategy-as-campaign-launches-in-gisborne), [nzherald.co.nz](https://www.nzherald.co.nz/nz/politics/election-2026-te-pati-maori-responds-to-labours-chris-hipkins-saying-senior-govt-roles-unlikely-in-future-coalition/CKO2UJPLVNFBHFD6P324NS2CE4/), [theguardian.com](https://www.theguardian.com/world/2022/may/31/nz-maori-party-rules-out-right-wing-coalition-after-next-election) |
 | **Costed fiscal plan?** | No full fiscal plan found. It published a 'Kiwi Tax Plan' (26 Aug 2026) setting out new taxes and rebates, but we found no published overall costing of its spending promises. [img.scoop.co.nz](https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf) |
 | **Track record** | Supported National-led governments under confidence-and-supply deals from 2008 to 2017 (as the Māori Party); in opposition since 2020. Of 15 past promises checked in this archive's tracker: 8 kept, 3 partly kept, 3 broken, 1 abandoned. (6 2026 promises are tracked but not yet due.) |
 | **Website** | [maoriparty.org.nz](https://www.maoriparty.org.nz) |
@@ -290,7 +290,7 @@
 | **Position (Wikipedia)** | no position label in Wikipedia infobox. Wikipedia lists its ideology as tino rangatiratanga (Māori self-determination). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Te_Tai_Tokerau_Party)) |
 | **Seats now** | 1 of 123 — Mariameno Kapa-Kingi, elected for Te Pāti Māori in Te Tai Tokerau in 2023 (policy.nz lists 1 current MP). |
 | **Polling** | not polled separately |
-| **Coalition stance** | No public statement on post-election partners found. Polls and media seat projections count it in the opposition (left) bloc. *(as at 2026-10-23)* [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1932454/four-headed-beast-act-leader-david-seymour-hints-at-potential-for-coalition-with-opportunity) |
+| **Coalition stance** | Would not rule any party out, saying she would let the people of Te Tai Tokerau guide her. Kapa-Kingi said she would take a call from Prime Minister Luxon if he needed her support: "Imagine having Te Tai Tokerau at that table" (May 2026). Media seat projections count the party in the opposition bloc. *(as at 2026-05-12)* [1news.co.nz](https://www.1news.co.nz/2026/05/12/kapa-kingi-talks-plan-for-new-party-after-te-pati-maori-split/), [en.wikipedia.org](https://en.wikipedia.org/wiki/Te_Tai_Tokerau_Party), [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1932454/four-headed-beast-act-leader-david-seymour-hints-at-potential-for-coalition-with-opportunity) |
 | **Costed fiscal plan?** | No costed plan found. |
 | **Track record** | New party (founded 11 May 2026, registered 5 August 2026); its leader has been an MP since 2023. This archive has no promise tracker for it. |
 | **Website** | [tetaitokerauparty.org.nz](https://tetaitokerauparty.org.nz) |

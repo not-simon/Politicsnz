@@ -44,5 +44,3 @@ We are protecting our flag.
 We are protecting our language.
 
 Showing once again we are a party of action, this bill delivers on another election and coalition commitment. And our English language promise is now officially on the way to being delivered.
-
-back to main page

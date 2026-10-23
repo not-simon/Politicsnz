@@ -22,5 +22,3 @@ New Zealand First February 11, 2025
 New Zealand First has introduced a Member’s Bill which would restore decision-making power to local communities regarding the fluoridation of drinking water.
 
 The ‘Fluoridation (Referendum) Legislation Bill’ seeks to repeal the Health (Fluoridation of Drinking Water) Amendment Act 2021 that granted centralised authority to the Direct General of Health and mandated the fluoridation of local water supplies.
-
-back to main page

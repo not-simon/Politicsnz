@@ -20,5 +20,3 @@ Source: <https://www.nzfirst.nz/preventing_payment_scams_bill> — Common Crawl 
 New Zealand First February 27, 2026
 
 New Zealand First has introduced the Financial Markets Conduct (Preventing Payment Scams) Amendment Bill to ensure banks are mandated to do more to protect New Zealanders from financially devastating banking scams.
-
-back to main page

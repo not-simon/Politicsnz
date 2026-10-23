@@ -20,5 +20,3 @@ Source: <https://www.nzfirst.nz/repeal-of-dei-requirements-bill> — Common Craw
 New Zealand First March 07, 2025
 
 New Zealand First has introduced a Member’s Bill that will ensure employment decisions in the public service are based on merit and not on forced woke ‘Diversity, Equity, and Inclusion’ targets.
-
-back to main page

@@ -26,5 +26,3 @@ New Zealand First has introduced a Member’s Bill that will remove the power of
 The “Conscience Acts Referendums Bill” will require that any legislation deemed as a “conscience Act” by the Speaker of the House, once debated and voted on by parliament, will be put to a public referendum at the next election so it is the people that make the final decision.
 
 The Bill upholds the democratic process in New Zealand by amending existing parliamentary process to mandate referendums on conscience issues.
-
-back to main page

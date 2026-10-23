@@ -22,5 +22,3 @@ New Zealand First February 18, 2026
 We have recently announced our intention to campaign on a binding referendum on the future of the Māori seats - we are saying we have legislation ready to go right now.
 
 We don’t have to wait until after the next election. If we have the support of other parties in parliament, we can get this referendum completed at no extra cost, and no wasted time, if we hold it in conjunction with the general election in November.
-
-back to main page

@@ -20,5 +20,3 @@ Source: <https://www.nzfirst.nz/display_of_flags_government_premises_bill> — C
 New Zealand First July 02, 2025
 
 New Zealand First has today introduced a member's bill which would make it law that government buildings can only display the official flag of New Zealand.
-
-back to main page

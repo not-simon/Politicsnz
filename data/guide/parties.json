@@ -1009,10 +1009,11 @@
           "nz-first"
         ],
         "as_of": "2026-08-16",
-        "note": "'rules_out' reflects its stated aim to remove the current government; we found no formal rule-out statement worded as such.",
+        "note": "'rules_out' reflects its stated aim to remove the current government and its 2022 decision to rule out a coalition with right-wing parties (The Guardian, 31 May 2022).",
         "sources": [
           "https://www.rnz.co.nz/news/politics_election-2026/1011909/te-pati-maori-reveals-election-strategy-as-campaign-launches-in-gisborne",
-          "https://www.nzherald.co.nz/nz/politics/election-2026-te-pati-maori-responds-to-labours-chris-hipkins-saying-senior-govt-roles-unlikely-in-future-coalition/CKO2UJPLVNFBHFD6P324NS2CE4/"
+          "https://www.nzherald.co.nz/nz/politics/election-2026-te-pati-maori-responds-to-labours-chris-hipkins-saying-senior-govt-roles-unlikely-in-future-coalition/CKO2UJPLVNFBHFD6P324NS2CE4/",
+          "https://www.theguardian.com/world/2022/may/31/nz-maori-party-rules-out-right-wing-coalition-after-next-election"
         ]
       },
       "costings": {
@@ -2380,11 +2381,16 @@
       "track_record_context": "New party (founded 11 May 2026, registered 5 August 2026); its leader has been an MP since 2023.",
       "track_record_line": "New party (founded 11 May 2026, registered 5 August 2026); its leader has been an MP since 2023. This archive has no promise tracker for it.",
       "coalition_stance_2026": {
-        "summary": "No public statement on post-election partners found. Polls and media seat projections count it in the opposition (left) bloc.",
-        "open_to": [],
+        "summary": "Would not rule any party out, saying she would let the people of Te Tai Tokerau guide her. Kapa-Kingi said she would take a call from Prime Minister Luxon if he needed her support: \"Imagine having Te Tai Tokerau at that table\" (May 2026). Media seat projections count the party in the opposition bloc.",
+        "open_to": [
+          "national"
+        ],
         "rules_out": [],
-        "as_of": "2026-10-23",
+        "as_of": "2026-05-12",
+        "note": "'open_to' lists only the party she named; she said she would rule no one out.",
         "sources": [
+          "https://www.1news.co.nz/2026/05/12/kapa-kingi-talks-plan-for-new-party-after-te-pati-maori-split/",
+          "https://en.wikipedia.org/wiki/Te_Tai_Tokerau_Party",
           "https://www.rnz.co.nz/news/politics_election-2026/1932454/four-headed-beast-act-leader-david-seymour-hints-at-potential-for-coalition-with-opportunity"
         ]
       },

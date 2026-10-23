@@ -20,5 +20,3 @@ Source: <https://www.nzfirst.nz/cash_transactions_protection_bill> — Common Cr
 New Zealand First July 08, 2025
 
 New Zealand First has introduced a Member’s Bill that would protect New Zealanders’ ability to use cash. The Bill will provide for the enduring use of cash as a private, accessible, and reliable method of payment.
-
-back to main page

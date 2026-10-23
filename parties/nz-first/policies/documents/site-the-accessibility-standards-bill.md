@@ -22,5 +22,3 @@ New Zealand First July 08, 2026
 New Zealand First has today introduced the Accessibility Standards Bill, a Member’s Bill which creates an opportunity to establish practical standards to address avoidable barriers that limit participation, opportunity, and independence.
 
 https://assets.nationbuilder.com/nzfirst/pages/11054/attachments/original/1783483365/Accessibility_Standards_Bill-v1.4.pdf?1783483365
-
-back to main page

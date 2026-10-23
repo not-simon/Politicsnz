@@ -22,5 +22,3 @@ New Zealand First June 18, 2026
 New Zealand First has today announced a campaign policy to disestablish the unelected Auckland Council Independent Māori Statutory Board (IMSB).
 
 A member’s bill has been written and introduced, which will be campaigned on, that will see this unelected body that has exercised significant influence over council decision making since the creation of the Auckland Super City in 2010.
-
-back to main page

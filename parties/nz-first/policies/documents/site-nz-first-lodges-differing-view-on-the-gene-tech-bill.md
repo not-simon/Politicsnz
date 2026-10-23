@@ -30,5 +30,3 @@ In our First Reading contribution we noted the complexity of this issue, and the
 This is not just an isolated scientific decision about GE’s technological benefits. It is also about the very real concerns about the health, protection, and safety of the environment and our population. Importantly, it is also a consumer preference decision, and to what extent New Zealand might trade away a market advantage.
 
 New Zealand First is not against a responsible, safe, and pragmatic pathway to genetic modification technology utilisation. But the bill as it stands is far too liberal, beyond our key trading partners, and lacks strong safeguards and protections. We will continue to work with and discuss our concerns with our coalition partners.
-
-back to main page

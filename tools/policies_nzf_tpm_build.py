@@ -123,7 +123,7 @@ def build(party):
         text = re.sub(r"^back to main page\s*", "", text)
         for cut in ("### Get our newsletter", "See all pānui", "Do you like this page?"):
             if cut in text: text = text.split(cut)[0]
-        text = text.strip()
+        text = re.sub(r"\s*back to main page\s*$", "", text.strip())
         ts = m["timestamp"]; cap = f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}T{ts[8:10]}:{ts[10:12]}:{ts[12:14]}Z"
         crawl = re.search(r"CC-MAIN-\d{4}-\d{2}", m["warc"]).group(0)
         title = re.sub(r"\s+-\s+(New Zealand First|NZ First|Te Pāti Māori)$", "", title)
@@ -286,13 +286,16 @@ def write_readme(party, P, policies, docs, blocked, base):
     L.append("## Method & sources\n")
     L.append(f"1. Started from policy.nz's {P['short']} data (`raw/policy.nz/parties/{P['pnz']}.json`): statement, Why/How, citations.")
     L.append(f"2. {P['site']} blocks automated access (Cloudflare 403, also with a headless browser) and web.archive.org is unreachable "
-             f"from this environment, so the cited party web pages could not be fetched.")
+             f"from this environment. The party's own web pages were therefore recovered from **Common Crawl**: its 2026 crawl indexes "
+             f"(CC-MAIN-2026-12 … -43) were searched for every {P['site']} URL and the latest HTTP-200 capture of each page was read from the WARC "
+             f"archive on data.commoncrawl.org (`tools/policies_nzf_tpm_cc_index.py`, `tools/policies_nzf_tpm_cc_fetch.py`). Each such document "
+             f"(`documents/site-*.md`) records the capture date and WARC record; captures are 16 Aug–14 Oct 2026, so later edits are not reflected.")
     L.append(f"3. Instead, every {P['name']} press release and speech from late 2025 to 23 Oct 2026 was collected from Scoop's "
              f"organisation page ({P['scoop_org']}); Scoop republishes party releases as issued, so their text is the party's own. "
              f"Policy PDFs the party attached to releases (img.scoop.co.nz) or linked from its site (Google Drive) were downloaded "
              f"and text-extracted.")
-    L.append("4. Each policy links (a) the page policy.nz cited and (b) the party's own retrieved text on the same policy. Where policy.nz "
-             "cited a blocked page, a `documents/not-retrieved-*.md` file records the URL and the reason; it contains no paraphrase.")
+    L.append("4. Each policy links (a) the page policy.nz cited (now mostly a Common Crawl capture) and (b) other party texts on the same policy. "
+             "Where a cited page could not be recovered at all, a `documents/not-retrieved-*.md` file records the URL and the reason; it contains no paraphrase.")
     L.append("5. Policies found in party texts but missing from policy.nz were added with neutral summaries (`summary_source: archive`). "
              "Calls on the current government and positions (e.g. opposing a bill) are included where the party presents them as what it stands for, and are labelled as such.\n")
     L.append("### Retrieval gaps (read this)\n")
@@ -301,17 +304,22 @@ def write_readme(party, P, policies, docs, blocked, base):
     for o, b in blocked.items():
         L.append(f"  - [{b['title']}](documents/{b['slug']}.md) — <{o}> (policies: {', '.join(b['policies'])})")
     if party == "te-pati-maori":
-        L.append("- The party's 2026 *Policy Manifesto* appears to be published as separate chapter PDFs (the Tax and Justice chapters carry "
-                 "\"Te Pāti Māori Policy Manifesto 2026\" headers and page numbers 3–7 and 27–30). Only the Tax, Justice, Te Tiriti Entrenchment, "
-                 "Energy Sovereignty and Kai Sovereignty documents were found; other chapters (health, housing, education, disability, "
-                 "climate, foreign affairs, te reo, etc.) were not locatable without access to maoriparty.org.nz.")
-        L.append("- No Te Pāti Māori statement of formal coalition \"bottom lines\" was retrieved (NZ First's leader said TPM called its tax policy a \"bottom line\"). The web-search budget for this session ran out before further news coverage could be checked.")
+        L.append("- The party's web policy pages are short summaries (\"What we’ll do / Why it matters\") that link to full manifesto chapters on Google Drive. "
+                 "Chapters recovered (all text-extracted in `documents/pdf-*.md`): Tax, Te Tiriti Entrenchment, Energy Sovereignty, Kai Sovereignty, Justice, "
+                 "Mana Motuhake, Military Neutrality, Climate, Toi Māori, Freshwater, Housing, Mokopuna Māori, Te Reo Māori, Mana Takatāpui. "
+                 "**No full chapter was linked for Health, Disabilities, Education & Training, Economic development or Cost of living** "
+                 "(those web pages have no Drive link in their captures); for these the web-page summary and the party's “What matters to you?” tool "
+                 "(which says its content is from the Policy Manifesto 2026) are the fullest party texts found.")
+        L.append("- The site's Sports and Disability pages link to older documents (a 2020 sport policy; a 2023 Mana Hauā policy). They are archived but flagged as not 2026 policy.")
+        L.append("- maoriparty.org.nz/sports (cited by policy.nz) has no Common Crawl capture; the policy index page (captured 8 Oct 2026) includes the same Sports summary.")
+        L.append("- No Te Pāti Māori statement of formal coalition \"bottom lines\" was found. Its stated strategy is a candidate vote for Te Pāti Māori and party vote for Labour or the Greens, aiming for a one-term government.")
     else:
-        L.append("- The $100bn Future Fund and Paris Agreement withdrawal announcements were found only as references in the leader's speeches; "
-                 "no stand-alone release or policy page for them was retrievable.")
-        L.append("- Member's bill texts on parliament.nz / legislation.govt.nz (e.g. Māori seats referendum, IMSB disestablishment, fireworks, "
-                 "container return) could not be fetched (bot-protection); the party releases describing them are archived instead. "
-                 "The two bill drafts NZ First attached to releases (anti-scam; accessibility) are archived as PDFs.")
+        L.append("- nzfirst.nz's policy index (captured 11 Oct 2026) lists 20 policy pages, all recovered from Common Crawl. Seven pages policy.nz cites "
+                 "(October 2026 announcements) had no capture; the identical-titled Scoop releases are linked instead.")
+        L.append("- The site's 'Our Members' Bills' list is paginated; only its first page and the individual bill pages that were captured are archived. "
+                 "Bills dated 2025 are included because the party still lists them as its members' bills; they are grouped separately.")
+        L.append("- parliament.nz / legislation.govt.nz could not be fetched (bot-protection). Bill drafts the party itself published are archived as PDFs: "
+                 "anti-scam, accessibility, fireworks, container return.")
         L.append("- policy.nz's citation for POL55077 (nutrition-guidelines review) points to an unrelated NZ First release (Mill Road); the correct party text is linked as well.")
     L.append("")
     L.append("## Headline commitments & stated conditions\n")

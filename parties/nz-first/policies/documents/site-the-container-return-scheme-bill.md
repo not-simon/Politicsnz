@@ -22,5 +22,3 @@ New Zealand First May 08, 2026
 New Zealand First has introduced a Member’s Bill that will implement a nationwide Container Return Scheme to reduce litter, improve recycling rates, and shift the cost burden away from ratepayers.
 
 https://assets.nationbuilder.com/nzfirst/pages/9701/attachments/original/1778203177/Container_Return_Scheme_Bill-v1.5_%281%29.pdf?1778203177
-
-back to main page

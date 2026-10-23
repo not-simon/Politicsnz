@@ -48,5 +48,3 @@ Contemporary claims, modern policy differences, and post-settlement leadership w
 Crown Maori relations work will return to being the responsibility of the Ministry of Maori Development - as was written into the law in 1991 when that department was established.
 
 ENDS
-
-back to main page
