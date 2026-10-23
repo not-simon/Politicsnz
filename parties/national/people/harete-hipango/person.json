@@ -1,16 +1,24 @@
 {
  "name": "Harete Hipango",
  "slug": "harete-hipango",
- "party": "national",
+ "party": "nz-first",
  "status": "former-mp",
  "party_history": [
   {
    "party": "national",
    "from": "2017",
+   "to": "2023"
+  },
+  {
+   "party": "nz-first",
+   "from": "2023/24",
    "to": null
   }
  ],
- "roles": [],
+ "roles": [
+  "MP for Whanganui (2017–2020)",
+  "List MP (2021–2023)"
+ ],
  "parliaments": [
   52,
   53
@@ -35,6 +43,8 @@
  "photo_license": "CC BY-SA 4.0",
  "photo_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
  "sources": [
-  "https://en.wikipedia.org/wiki/Harete_Hipango"
- ]
+  "https://en.wikipedia.org/wiki/Harete_Hipango",
+  "https://vote.nz/2026-general-election/voting-in-the-election/party-lists"
+ ],
+ "status_detail": "Former National MP. Joined NZ First after losing in 2023; #7 on NZ First's 2026 list (as Harete Hipango-Brownlie per the Electoral Commission) and its candidate for Whanganui. See also ../../../nz-first/people/harete-hipango-brownlie/."
 }

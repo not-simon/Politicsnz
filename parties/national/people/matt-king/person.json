@@ -1,17 +1,24 @@
 {
  "name": "Matt King",
  "slug": "matt-king",
- "party": "national",
+ "party": "independent",
  "status": "former-mp",
  "party_history": [
   {
    "party": "national",
    "from": "2017",
-   "to": null
+   "to": "2022-02"
+  },
+  {
+   "party": "democracynz",
+   "from": "2022-03",
+   "to": "2024-02"
   }
  ],
  "roles": [
-  "Leader of DemocracyNZ (2022–2024)"
+  "MP for Northland (2017–2020)",
+  "Leader of DemocracyNZ (2022–2024)",
+  "National spokesperson for regional development (North Island), rural communities, transport (2017–2020)"
  ],
  "parliaments": [
   52
@@ -36,6 +43,10 @@
  "photo_license": "CC BY-SA 4.0",
  "photo_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
  "sources": [
-  "https://en.wikipedia.org/wiki/Matt_King_(politician)"
- ]
+  "https://en.wikipedia.org/wiki/Matt_King_(politician)",
+  "https://www.electionresults.govt.nz/electionresults_2020/",
+  "https://archive.electionresults.govt.nz/electionresults_2023/"
+ ],
+ "status_detail": "Northland beef farmer; former leader of DemocracyNZ (founded 2022; deregistered at its own request Feb 2024). Left National in 2022 after joining the Parliament-grounds protest.",
+ "born": "1967"
 }

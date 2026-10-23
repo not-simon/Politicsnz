@@ -159,6 +159,8 @@ for slug in sorted(slugs):
     if rank or p.get('electorate_2026'): facts.append(('2026 election', ', '.join(x for x in [f'list #{rank}' if rank else '', f"standing in {p['electorate_2026']}" if p.get('electorate_2026') else ''] if x)))
     if p.get('wikipedia'): facts.append(('Wikipedia', f"[{p['wikipedia'].rsplit('/', 1)[-1].replace('_', ' ')}]({p['wikipedia']})"))
     L += ['| | |', '|---|---|'] + [f'| **{k}** | {v} |' for k, v in facts] + ['']
+    if rank and p.get('list_rank_2026') and p['list_rank_2026'] != rank:
+        L += [f"> **List rank note:** policy.nz (in the 2026 candidacy section below) gives #{p['list_rank_2026']}. The Electoral Commission's official National list gives **#{rank}**. From #14 down, policy.nz's numbering appears to still include Chris Penk, who withdrew. ([Electoral Commission](https://vote.nz/2026-general-election/voting-in-the-election/party-lists))", '']
     for sec in ('Current status', 'Biography', 'Political career', 'Record & notable actions', 'Controversies'):
         txt = section(body, sec)
         if sec == 'Political career' and p['roles'] and not hand.get('roles_in_text'):

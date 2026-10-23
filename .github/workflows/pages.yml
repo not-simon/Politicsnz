@@ -1,11 +1,16 @@
 # Publishes the voter guide in site/ to GitHub Pages.
-# One-time setup: repo Settings -> Pages -> Source: "GitHub Actions".
-# (Pages on a private repo needs a paid GitHub plan; on a public repo it's free.)
+#
+# One-time setup (Pages is not available on a private repo without a paid plan):
+#   1. Make the repo public (Settings -> General -> Danger Zone -> Change visibility), or upgrade the plan.
+#   2. Settings -> Pages -> Source: "GitHub Actions".
+#   3. Actions -> "Publish voter guide" -> Run workflow.
+# Until then the workflow only runs manually, so a failed setup does not email on every push.
+# After the first successful run, re-add the push trigger below to publish automatically:
+#   push:
+#     branches: [claude/nz-political-parties-research-hnn8ae, main]
+#     paths: ['site/**', '.github/workflows/pages.yml']
 name: Publish voter guide
 on:
-  push:
-    branches: [claude/nz-political-parties-research-hnn8ae, main]
-    paths: ['site/**', '.github/workflows/pages.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -23,6 +28,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true   # creates the Pages site on first run once the repo is public / plan allows it
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

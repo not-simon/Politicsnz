@@ -1,16 +1,26 @@
 {
  "name": "Parmjeet Parmar",
  "slug": "parmjeet-parmar",
- "party": "national",
+ "party": "act",
  "status": "former-mp",
  "party_history": [
   {
    "party": "national",
    "from": "2014",
+   "to": "2023-05"
+  },
+  {
+   "party": "act",
+   "from": "2023-05",
    "to": null
   }
  ],
- "roles": [],
+ "roles": [
+  "ACT list MP (2023–)",
+  "National list MP (2014–2020)",
+  "Chair, Education and Workforce Committee (2018–2020)",
+  "National spokesperson for research, science and innovation (2017–2020)"
+ ],
  "parliaments": [
   51,
   52,
@@ -29,5 +39,7 @@
  "photo_license_url": "https://creativecommons.org/licenses/by/3.0",
  "sources": [
   "https://en.wikipedia.org/wiki/Parmjeet_Parmar"
- ]
+ ],
+ "status_detail": "Current ACT list MP (since Oct 2023) and ACT education spokesperson; ACT 2026 candidate for Pakuranga. Former National list MP 2014–2020. Her current-party profile: ../../../act/people/parmjeet-parmar/.",
+ "born": "1970"
 }

@@ -5,21 +5,38 @@
  "status": "former-mp",
  "party_history": [
   {
-   "party": "national",
+   "party": "nz-first",
    "from": "1993",
+   "to": "1998"
+  },
+  {
+   "party": "mauri-pacific",
+   "from": "1998",
+   "to": "1999"
+  },
+  {
+   "party": "national",
+   "from": "2002",
    "to": null
   }
  ],
- "roles": [],
+ "roles": [
+  "Minister of Māori Affairs (1996–1999)",
+  "Minister of Racing (1996–1998)",
+  "MP for Northern Māori / Te Tai Tokerau (1993–1999)",
+  "Deputy Leader of NZ First (1993–1998)",
+  "Leader of Mauri Pacific (1998–1999)",
+  "National list MP (2005–2014)",
+  "Chair, Māori Affairs Committee (2008–2014)"
+ ],
  "parliaments": [
-  43,
   44,
   45,
   48,
   49,
   50
  ],
- "first_elected": 1993,
+ "first_elected": "1993",
  "electorates": [
   {
    "electorate": "Northern Maori",
@@ -46,5 +63,6 @@
  "photo_license_url": "https://creativecommons.org/licenses/by/3.0",
  "sources": [
   "https://en.wikipedia.org/wiki/Tau_Henare"
- ]
+ ],
+ "status_detail": "Retired at the 2014 election. Appointed to Housing NZ's board (2015) and Auckland's Independent Māori Statutory Board (2016; deputy chair 2019). Current roles not verified."
 }
