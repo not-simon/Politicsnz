@@ -1,0 +1,137 @@
+---
+title: "Kai Sovereignty Policy 2026"
+party: "te-pati-maori"
+source_url: "https://img.scoop.co.nz/media/pdfs/2609/KAI_SOVEREIGNTY_POLICY_2026.pdf"
+retrieved: "2026-10-23"
+format: "pdf"
+fetch_method: "curl download; text extracted with `pdftotext -raw` (tools/policies_nzf_tpm_pdftext.py)"
+local_copy: "raw/party-docs/te-pati-maori/KAI_SOVEREIGNTY_POLICY_2026.pdf"
+note: "Attached by Te Pāti Māori to its 21 Sep 2026 press release (Scoop PA2609/S00211)."
+---
+
+# Kai Sovereignty Policy 2026
+
+Source: [https://img.scoop.co.nz/media/pdfs/2609/KAI_SOVEREIGNTY_POLICY_2026.pdf](https://img.scoop.co.nz/media/pdfs/2609/KAI_SOVEREIGNTY_POLICY_2026.pdf). Attached by Te Pāti Māori to its 21 Sep 2026 press release (Scoop PA2609/S00211).
+
+> Extraction notes: text is reproduced in the PDF's content-stream order, page by page. Only whitespace and glyph markup were normalised (bullet glyphs shown as •, decorative icons removed). Designed layouts mean page headers, side labels and table cells can appear out of visual order; consult the PDF for layout. No words were added, removed or reworded.
+
+## Full text
+
+### Page 1
+
+```text
+Kai Sovereignty
+Te Pāti Māori Policy Manifesto 2026 • 2
+Context
+Agriculture is one of Aotearoa’s most significant primary industries, yet two of its key products; dairy and
+meat, are almost exclusively export products. Around 95 percent of milk and more than 80 percent of meat
+are exported overseas.
+Leading companies in this industry are causing detrimental harm to our taiao as they continue to intensify
+production at the expense of land, water and soil. At the same time, many people in Aotearoa cannot afford
+to put basic kai on the table.
+It is unacceptable that Aotearoa exploits the environment to provide food for the world while so many
+whānau experience food poverty, compounded by rising costs and generations of entrenched poverty.
+Our Position
+We need sustainable ways to provide more food for everyone in Aotearoa while breaking the stranglehold
+that monopolies have on food supply; across production, distribution and retail.
+Our vision is to facilitate and support the transition of Māori from kai dependency to kai sovereignty: to feed
+the community, teach the community to feed themselves, and empower them to feed each other.
+We acknowledge Māori growers, hunters, regenerative agriculture farmers, related business owners,
+governance leaders, and kaupapa Māori and Indigenous researchers who have kept tūpuna practices alive.
+We must return to our traditional practices and customs of gathering kai because our sustenance can no
+longer be in the hands of corporate-controlled food chains.
+Our Vision
+• Traditional practices, customs and ceremonies of gathering kai are revitalised.
+• Whānau and communities have safe, clean and pure kai.
+• Food security is realised and food poverty is eliminated.
+• Soil is protected and restored.
+• Independent and collaborative Māori-led approaches to kai are established.
+Why community capability matters
+Normalising the growing and distribution of kai at whānau and community level saves money, promotes
+healthy lifestyles, and builds unity and purpose. It strengthens our collective tools and knowledge for the
+benefit of all.
+Marae have been at the forefront as first responders, distributing kai through national and civil emergency
+events such as Covid-19, Cyclone Gabrielle and flooding. They must be supported to continue these
+essential services.
+```
+
+### Page 2
+
+```text
+Kai Sovereignty
+Te Pāti Māori Policy Manifesto 2026 • 3
+Te Pāti Māori will…
+1. Protect the whakapapa of kai
+The kai we consume has whakapapa and sits within ecosystems that we are also part of. Seeds hold
+whakapapa and must not be tampered with. Decisions about flora, fauna and the wider environment that
+are symbiotic with Māori culture must be conceived of and determined by Tangata Whenua.
+• Honour WAI 262 and reject research and commercialisation of Indigenous plant species undertaken
+without whānau, hapū and iwi consent.
+• Support Māori kai licensing and trademarks to protect the whakapapa of heritage seed and Māori
+intellectual property rights.
+• Develop a Māori Seed Conservation Strategy.
+• Oppose the introduction of genetically engineered food.
+2. Establish a Māori Kai Sovereignty Board
+A national body with statutory powers is needed to advance kai sovereignty and justice, working with
+whānau, hapū, iwi and Māori organisations and partnering with the sectors and agencies that influence our
+ability to feed ourselves.
+• Establish an independent Māori Kai Sovereignty Board with statutory powers to oversee kai sovereignty
+and justice.
+• Mandate the Board to lead work addressing hunger, poverty and inequality, and to ensure struggling
+communities are represented in decisions that govern our kai systems.
+3. Invest in community kai
+Kai sovereignty requires the growing and distribution of kai to become normal at whānau and community
+level.
+• Establish a $100 million Community Kai Fund for home-garden establishment, marae māra kai, and
+Māori and community-led food farms at scale.
+• Work with councils to set aside more land for urban and rural food farms.
+• Establish Crown-funded kai sovereignty scholarships for rangatahi to pursue food sciences, marine
+biology and primary-industry skills.
+$100 million for whānau, marae and community food systems.
+4. Build Māori production capability
+Tangata Whenua must be supported to restore our capacity to feed our own people while growing our
+economic base. We will reduce dependence on agribusiness and corporate-controlled food chains by
+strengthening local kai markets and networks.
+• Invest an additional $100 million into a Mātai Ahuwhenua agricultural innovation fund to support small-
+scale and diversified pāmu/whenua blocks that prioritise regenerative and organic farming practices,
+and local consumption.
+• Fund regenerative and organic farming training and technical programmes, including support for
+agroforestry.
+• Support garden-to-market food production that strengthens both food security and regional
+development.
+```
+
+### Page 3
+
+```text
+Kai Sovereignty
+Te Pāti Māori Policy Manifesto 2026 • 4
+$100 million to support regenerative Māori agriculture and diversified whenua-based production.
+5. Build Māori-owned retail alternatives
+The supermarket duopoly has a stranglehold over food retail in Aotearoa. It must be broken so that Māori
+and other independent grocers can gain a foothold in the market.
+• Secure Crown or council-owned land in commercially viable areas
+• Invest $100 million in seed funding, so Māori collectives can establish supermarket chains.
+Protect the rights of whānau to sell homegrown and homekill kai at the local community level, including
+roadside kai; without interference or taxation.
+$100 million seed funding for the establishment of supermarket chains
+6. Deliver a Kai Credit
+The long-term transformation of our kai systems must be matched with immediate relief for whānau who
+are struggling with the cost of kai.
+• Provide an Income Tax Kai Credit to people earning $60,000 or less.
+• Set the credit at a value equivalent to up to eight weeks of kai each year.
+• Deliver support to an estimated 3 million people (64 percent of Aotearoa).
+• Fund the Kai Credit at an estimated fiscal cost of $2.8 billion.
+Our Commitment
+From kai dependency to kai sovereignty.
+Te Pāti Māori will ensure communities are fed, communities are taught to feed themselves and empower
+communities to feed each other.
+We will protect whakapapa, seed and mātauranga; strengthen whānau, marae and community food
+systems; restore Māori production capability; and build Māori ownership in retail and distribution.
+The Income Tax Kai Credit will give millions of people immediate support with the cost of kai, while the
+wider policy rebuilds the land, knowledge, infrastructure and ownership needed for long-term sovereignty.
+Our vision is safe, clean and nourishing kai; food security and the elimination of food poverty; restored soil
+and taiao; and independent, collaborative Māori-led kai systems.
+AFFORD THE KAI. GROW THE KAI. OWN THE SYSTEM.
+```
+

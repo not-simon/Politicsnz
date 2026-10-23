@@ -1,0 +1,286 @@
+---
+title: "Energy Sovereignty Policy 2026"
+party: "te-pati-maori"
+source_url: "https://img.scoop.co.nz/media/pdfs/2609/Te_Pti_Mori_Energy_Sovereignty_Policy_FINAL.pdf"
+retrieved: "2026-10-23"
+format: "pdf"
+fetch_method: "curl download; text extracted with `pdftotext -raw` (tools/policies_nzf_tpm_pdftext.py)"
+local_copy: "raw/party-docs/te-pati-maori/Te_Pti_Mori_Energy_Sovereignty_Policy_FINAL.pdf"
+note: "Attached by Te Pāti Māori to its 16 Sep 2026 press release (Scoop PA2609/S00161)."
+---
+
+# Energy Sovereignty Policy 2026
+
+Source: [https://img.scoop.co.nz/media/pdfs/2609/Te_Pti_Mori_Energy_Sovereignty_Policy_FINAL.pdf](https://img.scoop.co.nz/media/pdfs/2609/Te_Pti_Mori_Energy_Sovereignty_Policy_FINAL.pdf). Attached by Te Pāti Māori to its 16 Sep 2026 press release (Scoop PA2609/S00161).
+
+> Extraction notes: text is reproduced in the PDF's content-stream order, page by page. Only whitespace and glyph markup were normalised (bullet glyphs shown as •, decorative icons removed). Designed layouts mean page headers, side labels and table cells can appear out of visual order; consult the PDF for layout. No words were added, removed or reworded.
+
+## Full text
+
+### Page 1
+
+```text
+ENERGY SOVEREIGNTY POLICY 2026 | POLICY
+TE PĀTI MĀORI • ENERGY SOVEREIGNTY • 1
+Energy Sovereignty Policy
+Executive Summary
+Energy is power.
+It powers our homes, our businesses, our marae, our transport and our economy. However, too
+many of our people remain customers of an energy system they do not own and have little
+control over.
+We pay the bills. Our whenua, wai and natural resources support the system. Our communities
+host the infrastructure; yet ownership, control and profit remain concentrated elsewhere.
+Te Pāti Māori will change that.
+Our Energy Sovereignty policy is a just transition pathway to transform who produces, owns
+and benefits from energy in Aotearoa.
+CUT THE POWER
+Lower energy
+costs for whānau
+and reduce our
+dependence on
+fossil fuels.
+BUILD THE POWER
+Invest in renewable generation, storage,
+infrastructure, Māori businesses, skills,
+system planning and community
+resilience. Connection rules and costs
+must not lock smaller Māori and
+community projects out of the system.
+OWN THE POWER
+Shift capital,
+ownership and control
+into the hands of
+whānau, hapū, iwi and
+communities.
+Te Pāti Māori will establish a just transition pathway towards Energy Sovereignty by
+2035.
+This is not about subsidising energy consumption, it is about building assets, shifting capital
+and shifting ownership. It is about moving our people from being customers of the energy
+system to becoming producers, builders, investors and owners.
+```
+
+### Page 2
+
+```text
+ENERGY SOVEREIGNTY POLICY 2026 | POLICY
+TE PĀTI MĀORI • ENERGY SOVEREIGNTY • 2
+Context
+Aotearoa is entering a major energy transformation. Homes, transport, businesses and industry
+will increasingly move away from fossil fuels and towards electricity and other renewable
+energy sources.
+That transition will require significant investment in generation, storage, transmission,
+distribution networks, infrastructure and workforce capability. It also presents one of the largest
+economic opportunities of the next generation.
+Greater electrification and renewable generation mean we can produce more of the energy we
+need here at home, reduce our dependence on imported fossil fuels and keep more of our
+energy spending circulating within Aotearoa.
+But Te Pāti Māori will not support a transition that simply replaces one form of extraction with
+another. We will not accept renewable infrastructure being built on or around Māori whenua
+while Māori remain customers and somebody else owns the assets.
+Our renewable energy future will draw on the full range of appropriate renewable resources,
+including solar, wind, geothermal, hydro, bioenergy and emerging technologies, with
+development subject to Te Tiriti, mana whenua authority and strong protections for the taiao.
+Anchored in Te Tiriti
+Energy Sovereignty is anchored in Te Tiriti o Waitangi.
+There is no climate justice without Tiriti justice.
+The transition to renewable energy must uphold tino rangatiratanga and must not reproduce an
+economic model where value is extracted from Māori communities while ownership, decision-
+making and economic benefit accumulate elsewhere.
+Māori must have meaningful rights and interests in ownership, governance, investment,
+development, employment, procurement, benefit sharing and decisions affecting whenua, wai
+and other taonga.
+The renewable transition cannot become the next extractive economy. Renewable development
+must honour Te Tiriti, protect mana whenua decision-making, uphold strong environmental
+standards and avoid shifting environmental harm onto mokopuna generations.
+Energy transformation must strengthen both tino rangatiratanga and intergenerational Māori
+wealth.
+```
+
+### Page 3
+
+```text
+ENERGY SOVEREIGNTY POLICY 2026 | POLICY
+TE PĀTI MĀORI • ENERGY SOVEREIGNTY • 3
+1. Cut the Power: Lower Whānau Energy Costs
+Te Pāti Māori will help whānau reduce their energy costs by making it easier to produce, store
+and use more of their own energy.
+We will support access to:
+• Solar and batteries
+• Energy-efficient appliances, heating and hot water
+• Home electrification and EV charging
+• Long-term, low-cost and zer o-interest finance
+• Rates Assistance Scheme
+Renters and whānau living in social housing must also benefit from the energy transition. We
+will support renter-friendly energy solutions, community batteries and stronger electrification
+standards across rental and social housing.
+Crown-funded housing will be expected to lead the transition, with renewable energy and
+electrification increasingly built into new developments.
+Te Pāti Māori will establish a government backed loan scheme to provide long-term, low-cost
+finance for homeowners, Māori landowners, papakāinga, marae and community energy
+projects. This will support the installation of solar, batteries, efficient heating, hot water systems,
+insulation, EV charging and other upgrades that permanently cut power costs. This financing
+mechanism will be delivered through an expanded Ratepayer Assistance Scheme
+This is not about permanently subsidising electricity bills. It is about investing in assets that
+permanently reduce them.
+THE PRINCIPLE
+Invest in assets that permanently reduce power bills.
+This is not about permanently subsidising electricity bills. It is about building household and
+community energy capability.
+2. Build the Power
+Te Pāti Māori will invest in the infrastructure, capability and planning required to build the
+energy system Aotearoa needs.
+This means building more renewable generation, strengthening transmission and distribution
+networks, investing in storage, growing the Māori energy workforce and ensuring local energy
+systems are planned alongside national infrastructure.
+```
+
+### Page 4
+
+```text
+ENERGY SOVEREIGNTY POLICY 2026 | POLICY
+TE PĀTI MĀORI • ENERGY SOVEREIGNTY • 4
+Establish a $1 Billion Energy Sovereignty Fund
+ENERGY SOVEREIGNTY FUND
+$1 BILLION
+Capital to build Māori and community ownership of productive energy assets.
+Te Pāti Māori will establish a $1 billion Energy Sovereignty Fund to build Māori and community
+ownership of the energy system.
+We will reinvest at the scale of the wealth currently being extracted from our homes and
+communities through the electricity system, and use that capital to build productive energy
+assets owned by our people.
+The Fund will invest in:
+• Reducing household energy costs
+• Marae and papakāinga energy resilience
+• Māori-owned renewable generation
+• Community batteries and microgrids
+• Energy infrastructure on whenua Māori
+• Māori energy businesses
+• Skills, apprenticeships and workforce development
+• Pathways for whānau, iwi and Māori entities to own productive energy assets
+Establish a National Independence Energy Plan
+We will establish a National Energy Independence Plan run by a National Energy
+Independence Taskforce made up of iwi, sector groups and workforce operators.
+Any situation where the private market is not setting the price of power, the market is being
+regulated.
+A fairness framework will be mandated to regulate pricing.
+Te Pāti Māori will establish a whole-of-system National Energy Plan covering generation,
+storage, transmission, distribution networks, household electrification, transport, industrial
+demand, resilience, workforce development and Māori and community ownership.
+The Plan will identify the renewable mix Aotearoa needs, including solar, wind, geothermal,
+hydro, bioenergy and emerging technologies, and ensure national infrastructure and local
+energy systems are planned together.
+It will identify and fund the transmission and distribution upgrades required for new renewable
+generation, community energy, electrification and storage.
+```
+
+### Page 5
+
+```text
+ENERGY SOVEREIGNTY POLICY 2026 | POLICY
+TE PĀTI MĀORI • ENERGY SOVEREIGNTY • 5
+Build the Power
+Build a Māori Energy Workforce and Industry
+Te Pāti Māori will create explicit pathways for Māori businesses, workers and training providers
+across construction, electrical trades, solar and battery installation, engineering, maintenance,
+energy services, transport electrification and emerging technologies.
+Crown-funded energy investment will actively support Māori procurement, apprenticeships and
+workforce development. The transition should create businesses, careers and intergenerational
+capability owned by our people.
+Build Rural Energy Capability
+Te Pāti Māori will support farms and rural communities to become energy producers through
+on-farm generation, energy storage, rural charging and distributed energy. Rural communities
+should be owners and beneficiaries of the transition, not simply consumers facing new costs.
+Build the infrastructure. Build the businesses. Build the workforce. Build the
+capability.
+3. Own the Power: Increase Māori and Community Ownership
+Participation is not sovereignty. Ownership is.
+Te Pāti Māori will deliberately increase Māori and community ownership of renewable energy
+infrastructure.
+The Energy Sovereignty Fund will use grants, concessional finance, guarantees, equity
+investment and co-investment to enable whānau, hapū, iwi, marae, Māori landowners and
+communities to acquire permanent ownership stakes in productive energy assets.
+Ownership pathways will include whānau ownership, hapū and iwi equity, community and co-
+operative ownership, Māori-Crown co-investment, joint ventures, Māori landowner investment
+and Māori-owned business investment.
+Crown investment will be designed to build Māori equity, not permanent Crown ownership.
+We will create stronger pathways for mana whenua to participate as owners in major renewable
+developments within their rohe and ensure Crown investment supports Māori equity rather than
+simply consultation.
+```
+
+### Page 6
+
+```text
+ENERGY SOVEREIGNTY POLICY 2026 | POLICY
+TE PĀTI MĀORI • ENERGY SOVEREIGNTY • 6
+Fair Value for Whānau and Communities
+Te Pāti Māori will establish a fair-value framework for distributed generation, battery storage
+and grid services so households and communities are properly paid for energy and services
+supplied back to the system.
+This will support household solar, battery storage, community energy, microgrids, local energy
+sharing and Māori-owned distributed generation.
+If our people generate the power, store the power or strengthen the grid, they should be paid
+fairly for it.
+Regulate the Energy System in the Public Interest
+Energy is essential national infrastructure. It must serve people before profit.
+Te Pāti Māori will strengthen the powers of the Commerce Commission and Electricity Authority
+to investigate excessive pricing and profits, strengthen competition and protect consumers.
+We will ensure regulators have the power to intervene more structurally if regulation does not
+deliver fair prices, genuine competition, consumer protection and fair access for Māori and
+community-owned generation.
+Regulatory tools will include pricing, market investigations and enforceable remedies.
+We will remove unnecessary barriers that prevent whānau, Māori and communities from
+generating, sharing, selling and trading energy.
+Reduce Fossil-Fuel Dependence and Protect Our Sovereignty
+Te Pāti Māori will support businesses, farms, transport and industry to move away from fossil
+fuels where renewable energy and electrification are technically and economically viable.
+The more energy we produce here at home, the less dependent we are on fossil fuels imported
+from overseas. That means greater national resilience and economic sovereignty.
+The renewable transition cannot become the next extractive economy.
+Te Pāti Māori will also protect Māori energy data sovereignty. Information generated through
+smart meters, community energy systems, storage, trading platforms and emerging
+technologies must not become another resource extracted from our people without authority or
+benefit.
+Energy Sovereignty by 2035
+Our 2035 goal is a just transition that delivers a measurable shift in affordability, capability,
+ownership and control.
+• By 2035 Te Pāti Māori will deliver measurable reductions in household energy costs and
+measurable increases in Māori and community ownership of new renewable energy assets.
+```
+
+### Page 7
+
+```text
+ENERGY SOVEREIGNTY POLICY 2026 | POLICY
+TE PĀTI MĀORI • ENERGY SOVEREIGNTY • 7
+• Baselines, targets and five-year milestones will be established through the National Energy
+Plan and reported publicly.
+• marae and papakāinga with strong energy resilience
+• fair payment for distributed generation and storage
+• substantially reduced fossil-fuel dependence
+• a strong Māori workforce and business presence throughout the energy economy
+Hard targets and milestones will be developed through the National Energy Plan and reported
+publicly.
+Our Commitment
+Energy Sovereignty is about putting the power back into the hands of our people. Our
+commitment is clear; we will ensure affordability is tackled, while building capability and
+infrastructure for the ultimate goal of sovereignty.
+CUT THE POWER
+Lower costs and reduce
+dependence on
+imported fossil fuels.
+BUILD THE POWER
+Build the infrastructure,
+businesses, workforce,
+planning and capability our
+future requires.
+OWN THE POWER
+Shift productive assets,
+capital and decision-
+making into the hands of
+our people.
+That is how we move from dependence to independence; from customers to owners and
+from participation to sovereignty. This is nation building. This is Te Tiriti in action. This
+is Energy Sovereignty.
+```
+
