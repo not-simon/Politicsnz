@@ -481,9 +481,11 @@ function startBallot() { if (S.ballotTimer) clearInterval(S.ballotTimer); if (ma
   const cols = [['#bl-p', '#bt-p'], ['#bl-e', '#bt-e']].map(([l, t]) => ({ list: $(l), tick: $(t), i: 0 })).filter(c => c.list && c.tick);
   if (!cols.length) return; cols[1] && (cols[1].i = 2);
   const place = c => { const rows = c.list.querySelectorAll('.opt'); if (!rows.length) return; const r = rows[c.i % rows.length];
-    c.tick.style.top = (r.offsetTop + (r.offsetHeight - 20) / 2) + 'px'; c.tick.classList.add('on'); r.scrollIntoView({ block: 'nearest', behavior: 'smooth' }) };
+    c.tick.style.top = (r.offsetTop + (r.offsetHeight - 20) / 2) + 'px'; c.tick.classList.add('on');
+    // scroll only the list, never the page
+    const top = r.offsetTop - c.list.clientHeight / 2 + r.offsetHeight / 2; c.list.scrollTo({ top: Math.max(0, top), behavior: 'smooth' }) };
   cols.forEach(place);
-  S.ballotTimer = setInterval(() => { cols.forEach((c, k) => { const n = c.list.querySelectorAll('.opt').length; c.i = (c.i + (k ? 2 : 1)) % n; place(c) }) }, 1700) }
+  S.ballotTimer = setInterval(() => { cols.forEach(c => { const n = c.list.querySelectorAll('.opt').length; if (n < 2) return; let j; do { j = Math.floor(Math.random() * n) } while (j === c.i); c.i = j; place(c) }) }, 1700) }
 function partyOrder() {
   const gp = (G().parties || []).map(p => p.slug);
   const known = Object.keys(S.data.parties).filter(s => gp.includes(s) || P(s).policy_count > 0);
