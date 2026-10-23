@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Electorate map — Ballot Book NZ</title>
+<meta name="description" content="NZ electorate results 2011–2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Atkinson+Hyperlegible+Next:wght@400..800&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="components.css">
+<script>try{var t=localStorage.getItem('bb-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <!-- Ballot Book NZ icon set. 24×24, stroke 1.75, round caps/joins, currentColor.
+       Use: <svg class="ic" width="20" height="20"><use href="#ic-home"/></svg>
+       Inline this file once in the document body (or serve it and reference icons.svg#ic-name). -->
+  <defs>
+    <style>
+      .ic-s{fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+      .ic-f{fill:currentColor;stroke:none}
+    </style>
+  </defs>
+
+  <!-- navigation -->
+  <symbol id="ic-home" viewBox="0 0 24 24"><path class="ic-s" d="M4 11.5 12 5l8 6.5M6 10v9h4.5v-5h3v5H18v-9"/></symbol>
+  <symbol id="ic-quiz" viewBox="0 0 24 24"><path class="ic-s" d="M5 4.5h14v15H5zM8 9h3M8 12.5h3M8 16h3"/><path class="ic-s" d="m13.5 9 1 1 2-2.2M13.5 12.6l1 1 2-2.2M13.5 16.1l1 1 2-2.2"/></symbol>
+  <symbol id="ic-swipe" viewBox="0 0 24 24"><path class="ic-s" d="M7.5 6.5h9a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 18V8a1.5 1.5 0 0 1 1.5-1.5Z"/><path class="ic-s" d="M9 4h8.5A1.5 1.5 0 0 1 19 5.5V16M3.5 11l-1.5 1.5 1.5 1.5M20.5 11l1.5 1.5-1.5 1.5"/></symbol>
+  <symbol id="ic-compare" viewBox="0 0 24 24"><path class="ic-s" d="M4 5h6v14H4zM14 5h6v14h-6zM6.5 9h1M6.5 12h1M16.5 9h1M16.5 12h1M16.5 15h1"/></symbol>
+  <symbol id="ic-map" viewBox="0 0 24 24"><path class="ic-s" d="M3.5 6.5 9 4l6 2.5 5.5-2.5v13.5L15 20l-6-2.5-5.5 2.5zM9 4v13.5M15 6.5V20"/></symbol>
+  <symbol id="ic-parliament" viewBox="0 0 24 24"><path class="ic-s" d="M4 20h16M5 17h14M6 17V11M10 17V11M14 17V11M18 17V11M4 11h16L12 4z"/></symbol>
+  <symbol id="ic-people" viewBox="0 0 24 24"><circle class="ic-s" cx="9" cy="8.5" r="3"/><path class="ic-s" d="M3.5 19a5.5 5.5 0 0 1 11 0M15.5 5.6a3 3 0 0 1 0 5.8M17 13.6a5.5 5.5 0 0 1 3.5 5.4"/></symbol>
+  <symbol id="ic-polls" viewBox="0 0 24 24"><path class="ic-s" d="M4 19h16M5 15l4-4.5 3.5 3L19 6"/><circle class="ic-f" cx="19" cy="6" r="1.6"/></symbol>
+  <symbol id="ic-issues" viewBox="0 0 24 24"><path class="ic-s" d="M12 3.5 3.5 20.5h17z"/><path class="ic-s" d="M12 10v4.5M12 17.2v.3"/></symbol>
+  <symbol id="ic-more" viewBox="0 0 24 24"><circle class="ic-f" cx="6" cy="12" r="1.8"/><circle class="ic-f" cx="12" cy="12" r="1.8"/><circle class="ic-f" cx="18" cy="12" r="1.8"/></symbol>
+  <symbol id="ic-compass" viewBox="0 0 24 24"><circle class="ic-s" cx="12" cy="12" r="8.5"/><path class="ic-f" d="m15.5 8.5-2.2 5.3-5.3 2.2 2.2-5.3z"/></symbol>
+  <symbol id="ic-book" viewBox="0 0 24 24"><path class="ic-s" d="M4 5.5A2 2 0 0 1 6 4h6v15H6a2 2 0 0 0-2 2zM12 4h6a2 2 0 0 1 2 2v15a2 2 0 0 0-2-2h-6"/></symbol>
+
+  <!-- actions -->
+  <symbol id="ic-search" viewBox="0 0 24 24"><circle class="ic-s" cx="10.5" cy="10.5" r="6"/><path class="ic-s" d="m15 15 5 5"/></symbol>
+  <symbol id="ic-arrow" viewBox="0 0 24 24"><path class="ic-s" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="ic-chevron" viewBox="0 0 24 24"><path class="ic-s" d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="ic-chevron-r" viewBox="0 0 24 24"><path class="ic-s" d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="ic-check" viewBox="0 0 24 24"><path class="ic-s" d="m5 12.5 4.5 4.5L19 7"/></symbol>
+  <symbol id="ic-x" viewBox="0 0 24 24"><path class="ic-s" d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="ic-skip" viewBox="0 0 24 24"><path class="ic-s" d="M5 6v12M9 12l9-6v12z"/></symbol>
+  <symbol id="ic-play" viewBox="0 0 24 24"><path class="ic-f" d="M7 5v14l12-7z"/></symbol>
+  <symbol id="ic-pause" viewBox="0 0 24 24"><path class="ic-f" d="M6 5h4v14H6zM14 5h4v14h-4z"/></symbol>
+  <symbol id="ic-info" viewBox="0 0 24 24"><circle class="ic-s" cx="12" cy="12" r="8.5"/><path class="ic-s" d="M12 11v5"/><circle class="ic-f" cx="12" cy="8" r="1.1"/></symbol>
+  <symbol id="ic-external" viewBox="0 0 24 24"><path class="ic-s" d="M14 4h6v6M20 4l-9 9M18 13v6H5V6h6"/></symbol>
+  <symbol id="ic-filter" viewBox="0 0 24 24"><path class="ic-s" d="M4 6h16M7 12h10M10 18h4"/></symbol>
+  <symbol id="ic-calendar" viewBox="0 0 24 24"><path class="ic-s" d="M4.5 6.5h15v13h-15zM4.5 10.5h15M8 4v4M16 4v4"/></symbol>
+  <symbol id="ic-clock" viewBox="0 0 24 24"><circle class="ic-s" cx="12" cy="12" r="8.5"/><path class="ic-s" d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="ic-sun" viewBox="0 0 24 24"><circle class="ic-s" cx="12" cy="12" r="4"/><path class="ic-s" d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/></symbol>
+  <symbol id="ic-moon" viewBox="0 0 24 24"><path class="ic-s" d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/></symbol>
+  <symbol id="ic-star" viewBox="0 0 24 24"><path class="ic-s" d="m12 4 2.4 5 5.4.7-4 3.8 1 5.4L12 16.3 7.2 18.9l1-5.4-4-3.8L9.6 9z"/></symbol>
+  <symbol id="ic-flag" viewBox="0 0 24 24"><path class="ic-s" d="M6 20V4.5M6 5h11l-2.5 3.5L17 12H6"/></symbol>
+  <symbol id="ic-tick-box" viewBox="0 0 24 24"><path class="ic-s" d="M5 5h14v14H5z"/><path class="ic-s" d="m8.5 12.5 2.5 2.5 5-5.5"/></symbol>
+  <symbol id="ic-doc" viewBox="0 0 24 24"><path class="ic-s" d="M7 3.5h7l4 4v13H7zM14 3.5v4h4M9.5 12h5M9.5 15.5h5"/></symbol>
+  <symbol id="ic-scale" viewBox="0 0 24 24"><path class="ic-s" d="M12 4v16M6 20h12M4 8h16M6 8l-3 6a3 3 0 0 0 6 0zM18 8l-3 6a3 3 0 0 0 6 0z"/></symbol>
+  <symbol id="ic-pin" viewBox="0 0 24 24"><path class="ic-s" d="M12 21s6-5.5 6-11a6 6 0 0 0-12 0c0 5.5 6 11 6 11z"/><circle class="ic-s" cx="12" cy="10" r="2.2"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="inner">
+    <a class="logo" href="home.html"><span class="mark"><svg class="" width="18" height="18" aria-hidden="true"><use href="#ic-check"/></svg></span>Ballot Book <span class="tag">NZ 2026</span></a>
+    <nav class="nav" aria-label="Sections"><button type="button"  onclick="location.href='home.html'">Home</button><button type="button"  onclick="location.href='quiz.html'">Match</button><button type="button"  onclick="location.href='swipe.html'">Swipe</button><button type="button"  onclick="location.href='polls.html'">Polls</button><button type="button" aria-current="page" onclick="location.href='map.html'">Electorates</button><button type="button"  onclick="location.href='parliament.html'">Parliament</button><button type="button"  onclick="location.href='#'">People</button><button type="button"  onclick="location.href='#'">Issues</button></nav>
+    <span class="spacer"></span>
+    <button class="iconbtn" type="button" aria-label="Search"><svg class="" width="20" height="20" aria-hidden="true"><use href="#ic-search"/></svg></button>
+    <button class="iconbtn" type="button" aria-label="Toggle dark mode" onclick="(function(){var r=document.documentElement;var dark=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches);r.dataset.theme=dark?'light':'dark';try{localStorage.setItem('bb-theme',r.dataset.theme)}catch(e){}})()"><svg class="" width="20" height="20" aria-hidden="true"><use href="#ic-moon"/></svg></button>
+  </div>
+</header>
+<main class="wrap">
+
+<span class="kicker">Electorates</span>
+<h1>Electorate map</h1>
+<p class="lede">Who won each seat, election by election. Tap a seat for the result and the 2026 candidates.</p>
+<div class="toolbar">
+  <div class="chips"><button class="chip" type="button" aria-pressed="true">General electorates · 65</button><button class="chip" type="button" aria-pressed="false">Māori electorates · 7</button></div>
+  <span class="spacer"></span>
+  <div class="search"><span><svg class="" width="18" height="18" aria-hidden="true"><use href="#ic-search"/></svg></span><input type="search" placeholder="Find your electorate or suburb" aria-label="Find electorate"></div>
+</div>
+<div class="split wide-left">
+  <div>
+    <div class="map">
+      <div class="year">2020<small>65 general seats</small></div>
+      <svg viewBox="0 0 320 500" role="img" aria-label="Map of New Zealand electorates (placeholder outline)"><path class="el" d="M150 20 L178 34 L186 70 L172 92 L150 86 L140 56 Z" fill="#00529F" data-el="northland"><title>Northland — National</title></path><path class="el" d="M172 92 L200 108 L212 128 L190 140 L164 128 L150 110 Z" fill="#D82A20" data-el="auckland"><title>Auckland — Labour</title></path><path class="el" d="M164 128 L212 128 L236 150 L230 186 L196 196 L170 170 Z" fill="#00529F" data-el="waikato"><title>Waikato — National</title></path><path class="el" d="M236 150 L274 148 L288 176 L258 206 L230 186 Z" fill="#00529F" data-el="bop"><title>Bop — National</title></path><path class="el" d="M288 176 L300 214 L278 254 L250 240 L258 206 Z" fill="#D82A20" data-el="east"><title>East — Labour</title></path><path class="el" d="M170 170 L196 196 L184 232 L150 222 L138 196 Z" fill="#00529F" data-el="taranaki"><title>Taranaki — National</title></path><path class="el" d="M184 232 L230 186 L250 240 L236 272 L198 272 Z" fill="#00529F" data-el="manawatu"><title>Manawatu — National</title></path><path class="el" d="M198 272 L236 272 L250 300 L224 318 L196 300 Z" fill="#D82A20" data-el="wellington"><title>Wellington — Labour</title></path><path class="el" d="M118 262 L160 278 L168 304 L136 318 L108 296 Z" fill="#D82A20" data-el="nelson"><title>Nelson — Labour</title></path><path class="el" d="M60 330 L108 296 L136 318 L120 360 L84 392 L50 370 Z" fill="#00529F" data-el="westcoast"><title>Westcoast — National</title></path><path class="el" d="M136 318 L168 304 L180 352 L156 400 L120 408 L120 360 Z" fill="#00529F" data-el="canterbury"><title>Canterbury — National</title></path><path class="el" d="M84 392 L120 360 L120 408 L96 440 L58 452 L40 420 Z" fill="#D82A20" data-el="otago"><title>Otago — Labour</title></path><path class="el" d="M40 420 L58 452 L96 440 L104 468 L60 486 L24 462 Z" fill="#00529F" data-el="southland"><title>Southland — National</title></path></svg>
+      <div class="inset" style="right:12px;top:64px;width:96px;height:96px"><small>Auckland</small><svg viewBox="0 0 100 100"><rect class="el" x="2.0" y="14.0" width="22.0" height="18.5" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="27.0" y="14.0" width="22.0" height="18.5" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="52.0" y="14.0" width="22.0" height="18.5" rx="3" fill="#00529F" stroke="var(--map-stroke)"/><rect class="el" x="77.0" y="14.0" width="22.0" height="18.5" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="2.0" y="39.0" width="22.0" height="18.5" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="27.0" y="39.0" width="22.0" height="18.5" rx="3" fill="#00529F" stroke="var(--map-stroke)"/><rect class="el" x="52.0" y="39.0" width="22.0" height="18.5" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="77.0" y="39.0" width="22.0" height="18.5" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="2.0" y="64.0" width="22.0" height="18.5" rx="3" fill="#F2C300" stroke="var(--map-stroke)"/><rect class="el" x="27.0" y="64.0" width="22.0" height="18.5" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="52.0" y="64.0" width="22.0" height="18.5" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="77.0" y="64.0" width="22.0" height="18.5" rx="3" fill="#00529F" stroke="var(--map-stroke)"/><rect class="el" x="2.0" y="89.0" width="22.0" height="18.5" rx="3" fill="#00529F" stroke="var(--map-stroke)"/><rect class="el" x="27.0" y="89.0" width="22.0" height="18.5" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="52.0" y="89.0" width="22.0" height="18.5" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="77.0" y="89.0" width="22.0" height="18.5" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/></svg></div>
+      <div class="inset" style="right:12px;bottom:120px;width:78px;height:78px"><small>Wellington</small><svg viewBox="0 0 100 100"><rect class="el" x="2.0" y="14.0" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="35.3" y="14.0" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="68.7" y="14.0" width="30.3" height="25.7" rx="3" fill="#0B8A3E" stroke="var(--map-stroke)"/><rect class="el" x="2.0" y="47.3" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="35.3" y="47.3" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="68.7" y="47.3" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="2.0" y="80.7" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="35.3" y="80.7" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="68.7" y="80.7" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/></svg></div>
+      <div class="inset" style="right:12px;bottom:24px;width:78px;height:78px"><small>Christchurch</small><svg viewBox="0 0 100 100"><rect class="el" x="2.0" y="14.0" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="35.3" y="14.0" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="68.7" y="14.0" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="2.0" y="47.3" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="35.3" y="47.3" width="30.3" height="25.7" rx="3" fill="#00529F" stroke="var(--map-stroke)"/><rect class="el" x="68.7" y="47.3" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="2.0" y="80.7" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="35.3" y="80.7" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/><rect class="el" x="68.7" y="80.7" width="30.3" height="25.7" rx="3" fill="#D82A20" stroke="var(--map-stroke)"/></svg></div>
+    </div>
+    <div class="scrubber">
+      <button class="play" type="button" aria-label="Play through elections"><svg class="" width="20" height="20" aria-hidden="true"><use href="#ic-play"/></svg></button>
+      <div class="track"><input type="range" min="2011" max="2026" step="3" value="2020" aria-label="Election year"><div class="years"><span>2011</span><span>2014</span><span>2017</span><b>2020</b><span>2023</span><span>2026</span></div></div>
+    </div>
+    <div class="legend" style="margin-top:12px"><span class="item"><span class="dot" style="--pc:#00529F"></span>National <span class="num">43</span></span><span class="item"><span class="dot" style="--pc:#D82A20"></span>Labour <span class="num">17</span></span><span class="item"><span class="dot" style="--pc:#0B8A3E"></span>Green <span class="num">3</span></span><span class="item"><span class="dot" style="--pc:#F2C300"></span>ACT <span class="num">1</span></span><span class="item"><span class="dot" style="--pc:#B2001A"></span>Te Pāti Māori <span class="num">6</span></span><span class="item"><span class="dot" style="--pc:#2B2B2B"></span>NZ First <span class="num">0</span></span></div>
+    <p class="tiny muted" style="margin-top:8px">Placeholder outline — the app renders real electorate boundaries. 2026 shows candidates, not results, until election night.</p>
+  </div>
+  <aside class="mapside">
+    <div class="card">
+      <span class="kicker">Ōtaki · General · 2020</span>
+      <h3>Ōtaki</h3>
+      <p class="small muted">Kāpiti Coast and Horowhenua. Held by National 2005–2020, Labour 2020, National 2023.</p>
+      <div class="result" style="--pc:#D82A20"><span class="nm"><span class="dot" style="--pc:#D82A20"></span>Terisa Ngobi <span class="badge in">Won</span></span><span class="num small">47.9%</span><div class="meter single"><span style="width:96%"></span></div></div><div class="result" style="--pc:#00529F"><span class="nm"><span class="dot" style="--pc:#00529F"></span>Tim Costley</span><span class="num small">44.1%</span><div class="meter single"><span style="width:88%"></span></div></div><div class="result" style="--pc:#0B8A3E"><span class="nm"><span class="dot" style="--pc:#0B8A3E"></span>Bernard Long</span><span class="num small">4.2%</span><div class="meter single"><span style="width:8%"></span></div></div><div class="result" style="--pc:#F2C300"><span class="nm"><span class="dot" style="--pc:#F2C300"></span>Ian Wells</span><span class="num small">2.1%</span><div class="meter single"><span style="width:4%"></span></div></div><div class="result" style="--pc:#A7ADB5"><span class="nm"><span class="dot" style="--pc:#A7ADB5"></span>Three others</span><span class="num small">1.7%</span><div class="meter single"><span style="width:3%"></span></div></div>
+      <p class="tiny muted" style="margin-top:12px">Majority 1,296 · turnout 84.7% · Electoral Commission</p>
+    </div>
+    <div class="card flat">
+      <span class="kicker">2026 candidates</span>
+      <div class="stack" style="gap:8px">
+        <div class="row" style="flex-wrap:nowrap"><img class="face sm" style="--pc:#00529F" alt="" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Crect%20width%3D%27100%27%20height%3D%27100%27%20fill%3D%27%23C9CCC4%27/%3E%3Ccircle%20cx%3D%2750%27%20cy%3D%2740%27%20r%3D%2718%27%20fill%3D%27%23F3F3EF%27%20opacity%3D%27.9%27/%3E%3Cellipse%20cx%3D%2750%27%20cy%3D%2784%27%20rx%3D%2730%27%20ry%3D%2720%27%20fill%3D%27%23F3F3EF%27%20opacity%3D%27.9%27/%3E%3C/svg%3E"><div><b class="small">Tim Costley</b><div class="tiny muted">National · sitting MP</div></div><span class="status mp" style="margin-left:auto">MP</span></div>
+        <div class="row" style="flex-wrap:nowrap"><img class="face sm" style="--pc:#D82A20" alt="" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Crect%20width%3D%27100%27%20height%3D%27100%27%20fill%3D%27%23C9CCC4%27/%3E%3Ccircle%20cx%3D%2750%27%20cy%3D%2740%27%20r%3D%2718%27%20fill%3D%27%23F3F3EF%27%20opacity%3D%27.9%27/%3E%3Cellipse%20cx%3D%2750%27%20cy%3D%2784%27%20rx%3D%2730%27%20ry%3D%2720%27%20fill%3D%27%23F3F3EF%27%20opacity%3D%27.9%27/%3E%3C/svg%3E"><div><b class="small">Terisa Ngobi</b><div class="tiny muted">Labour · list MP</div></div><span class="status mp" style="margin-left:auto">MP</span></div>
+        <div class="row" style="flex-wrap:nowrap"><img class="face sm" style="--pc:#0B8A3E" alt="" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Crect%20width%3D%27100%27%20height%3D%27100%27%20fill%3D%27%23C9CCC4%27/%3E%3Ccircle%20cx%3D%2750%27%20cy%3D%2740%27%20r%3D%2718%27%20fill%3D%27%23F3F3EF%27%20opacity%3D%27.9%27/%3E%3Cellipse%20cx%3D%2750%27%20cy%3D%2784%27%20rx%3D%2730%27%20ry%3D%2720%27%20fill%3D%27%23F3F3EF%27%20opacity%3D%27.9%27/%3E%3C/svg%3E"><div><b class="small">Bernard Long</b><div class="tiny muted">Green</div></div><span class="status candidate" style="margin-left:auto">Candidate</span></div>
+      </div>
+      <a class="btn sm block" style="margin-top:12px" href="#">All 7 candidates <svg class="" width="14" height="14" aria-hidden="true"><use href="#ic-chevron-r"/></svg></a>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="cols">
+    <div><a class="logo" href="home.html"><span class="mark"><svg class="" width="16" height="16" aria-hidden="true"><use href="#ic-check"/></svg></span>Ballot Book</a><p class="small" style="margin-top:8px;max-width:46ch">An independent, non-partisan guide to the 2026 New Zealand general election. Every fact is dated and linked to its source. We do not tell you how to vote.</p></div>
+    <div class="small"><p><a href="#">About &amp; method</a> · <a href="#">Sources</a> · <a href="#">Corrections</a> · <a href="#">Privacy</a></p><p class="muted">Enrol or check your details at <a href="https://vote.nz">vote.nz</a>. Election day is Saturday 7 November 2026.</p></div>
+  </div>
+</footer>
+</main>
+<nav class="bottombar" aria-label="Main"><button type="button"  onclick="location.href='home.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-home"/></svg><span>Home</span></button><button type="button"  onclick="location.href='quiz.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-quiz"/></svg><span>Match</span></button><button type="button"  onclick="location.href='swipe.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-swipe"/></svg><span>Swipe</span></button><button type="button"  onclick="location.href='polls.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-polls"/></svg><span>Polls</span></button><button type="button" aria-current="page" onclick="location.href='map.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-map"/></svg><span>Map</span></button><button type="button"  onclick="location.href='#'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-more"/></svg><span>More</span></button></nav>
+</body>
+</html>

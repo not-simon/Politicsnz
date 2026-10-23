@@ -1,0 +1,5578 @@
+{
+ "version": "2026-10",
+ "generated": "2026-10-23",
+ "about": "NZ party placements on the compass axes from (a) published expert/manifesto/voter-survey data, each kept on its original scale with a stated rescaling to -10..+10, and (b) our own coding of each party's answers to the 36 compass items from its 2026 policy documents, recorded votes and leader statements (null = no evidence, never guessed). Scores in coded.axes use the same formula as the user test (data/guide/compass.json scoring). See guide/compass-method.md.",
+ "method_page": "guide/compass-method.md",
+ "axes_scale": "-10..+10 on every axis; economic: left (-) to right (+); social: GAL/libertarian (-) to TAN/authoritarian (+); populism: pluralist (-) to populist (+). \"general_left_right\" values are voters' or experts' overall left-right placements and are NOT the economic axis.",
+ "coding_scale": "-2 strongly disagree / very negative .. +2 strongly agree / very positive relative to the item text; confidence high | medium | low; null = no public evidence found.",
+ "published_sources": [
+  {
+   "id": "gps2019",
+   "name": "Global Party Survey 2019 (expert survey)",
+   "citation": "Norris, Pippa (2020). Global Party Survey, 2019, V2.1 (party-level file, April 2020). Harvard Dataverse, doi:10.7910/DVN/WMGTNS.",
+   "url": "https://doi.org/10.7910/DVN/WMGTNS",
+   "licence": "CC0 1.0 (Dataverse licence field)",
+   "year": 2019,
+   "reference_election": 2017,
+   "coverage_note": "Five NZ parties were rated (12 experts each). The Māori Party and TOP were not included.",
+   "scales": {
+    "V4_Scale": "0 = extreme economic left ... 10 = extreme economic right (government role in economy: privatisation, taxes, regulation, spending, welfare)",
+    "V6_Scale": "0 = very liberal ... 10 = very conservative social values (personal freedoms, abortion, same-sex marriage, democratic participation vs order, tradition, stability)",
+    "V8_Scale": "0 = strongly favours pluralist rhetoric ... 10 = strongly favours populist rhetoric",
+    "V9": "0 = no importance ... 10 = great importance of populist rhetoric",
+    "V10": "0 = liberal immigration policies ... 10 = restrictive",
+    "V11": "0 = favours increased public spending ... 10 = favours reduced taxation",
+    "V12": "0 = favours environmental protection ... 10 = opposes",
+    "V13": "0 = strongly favours nationalism ... 10 = strongly favours multilateralism",
+    "V16": "0 = strongly respects liberal-democratic norms ... 10 = strongly undermines them",
+    "WVS_LR_PartyVoter": "mean 1-10 left-right self-placement of the party's own voters in the World Values Survey (GPS auxiliary variable)"
+   },
+   "rescale_formula": {
+    "economic": "V4_Scale -> (x - 5) * 2",
+    "social": "V6_Scale -> (x - 5) * 2",
+    "populism": "V8_Scale -> (x - 5) * 2"
+   },
+   "archived_copy": "raw/compass/gps_by_party_v2_1.dta; extract raw/compass/gps2019_nz_extract.json; codebook raw/compass/gps_codebook.pdf"
+  },
+  {
+   "id": "vparty_v2",
+   "name": "V-Party dataset v2 (Varieties of Democracy Institute, expert coding)",
+   "citation": "Lindberg, Staffan I., Nils Düpont, Masaaki Higashijima, Yaman Berker Kavasoglu, Kyle L. Marquardt, Michael Bernhard, Holger Döring, Allen Hicken, Melis Laebens, Juraj Medzihorsky, Anja Neundorf, Ora John Reuter, Saskia Ruth-Lovell, Keith R. Weghorst, Nina Wiesehomeier, Joseph Wright, Nazifa Alizada, Paul Bederke, Lisa Gastaldi, Sandra Grahn, Garry Hindle, Nina Ilchenko, Johannes von Römer, Steven Wilson, Daniel Pemstein, Brigitte Seim (2022). Varieties of Party Identity and Organization (V-Party) Dataset V2. Varieties of Democracy (V-Dem) Project.",
+   "url": "https://doi.org/10.23696/vpartydsv2",
+   "licence": "Free for research use with the suggested citation (V-Dem Institute terms; no Creative Commons licence is stated in the v2 codebook). Obtained from the V-Dem Institute's vdemdata R-package repository (github.com/vdeminstitute/vdemdata, data/vparty.RData).",
+   "year": 2022,
+   "coverage_note": "NZ is coded for elections up to 2017 only; ACT is coded only to 2002, and the Māori Party, TOP, Mana and later minor parties are not coded. Values for 2014 and 2017 are shown (earlier years are in the raw extract).",
+   "scales": {
+    "v2pariglef": "Economic left-right, measurement-model interval scale (lower = left). The _osp version is the ordinal original scale: 0 far-left ... 3 centre ... 6 far-right.",
+    "v2pawelf_osp": "Welfare: 0 strongly opposes ... 4 strongly supports welfare-state policies",
+    "v2paculsup_osp": "Cultural superiority: 0 strongly promotes superiority of a group/nation ... 4 strongly opposes",
+    "v2paanteli_osp": "Anti-elitism: 0 none ... 4 strongly anti-elite rhetoric",
+    "v2papeople_osp": "People-centrism: 0 none ... 4 strongly people-centric rhetoric",
+    "v2paplur_osp": "Political pluralism: 0 rejects ... 4 strongly embraces pluralism (respects opponents and institutions)",
+    "v2paimmig_osp": "Immigration: 0 strongly opposes ... 4 strongly supports",
+    "v2palgbt_osp": "LGBT social equality: 0 strongly opposes ... 4 strongly supports",
+    "v2parelig_osp": "Religious principles: 0 strongly promotes religious principles in politics ... 4 strongly opposes",
+    "v2xpa_popul": "Populism index 0-1 (combines anti-elitism and people-centrism)",
+    "v2xpa_antiplural": "Anti-pluralism index 0-1"
+   },
+   "rescale_formula": {
+    "economic": "v2pariglef_osp (0..6) -> (x - 3) * 10/3",
+    "populism": "v2xpa_popul (0..1) -> (x - 0.5) * 20",
+    "social": "not rescaled: V-Party has no single GAL-TAN scale; the LGBT, religion, immigration and cultural-superiority items are shown separately"
+   },
+   "archived_copy": "raw/compass/vparty_v2_nz_extract.json (from vparty.RData); codebook raw/compass/vparty_codebook_v2.pdf"
+  },
+  {
+   "id": "cses5",
+   "name": "CSES Module 5: collaborator (expert) left-right placements and respondent placements, New Zealand 2017 and 2020",
+   "citation": "The Comparative Study of Electoral Systems (www.cses.org). CSES MODULE 5 FULL RELEASE [dataset and documentation]. July 7, 2023 version. doi:10.7804/cses.module5.2023-07-07. New Zealand studies: NZES 2017 and NZES 2020 (collaborators Jack Vowles et al.).",
+   "url": "https://cses.org/data-download/cses-module-5-2016-2021/",
+   "licence": "Free for research use with citation (CSES data-download terms). Expert placement E5018 is the single judgment of the national collaborator team, not a multi-expert survey.",
+   "year": 2023,
+   "scales": {
+    "E5018": "00 = Left ... 10 = Right, in the expert judgment of the CSES collaborator",
+    "E3019": "respondents' placement of each party, 0 = Left ... 10 = Right (means here are unweighted)"
+   },
+   "rescale_formula": {
+    "general_left_right": "(x - 5) * 2; this is a GENERAL left-right scale, not the economic axis, and is plotted on the economic axis only as a labelled approximation"
+   },
+   "archived_copy": "raw/compass/cses5_nz_party_placements.json (computed from raw/compass/cses5_csv/cses5.csv); codebook raw/compass/cses5_codebook_part3_parties_and_leaders.txt"
+  },
+  {
+   "id": "nzes_voters",
+   "name": "New Zealand Election Study 2020 and 2023: voters' mean placement of parties on a 0-10 left-right scale",
+   "citation": "Vowles, J. et al. New Zealand Election Study 2020 and 2023, weighted frequency tables (Sections B/C), hosted at jackvowles.com; question B5 (2023) / B7 (2020): \"Where would you place these political parties on a scale from 0 to 10, where 0 means the most left and 10 means the most right?\"",
+   "url": "https://www.nzes.net/home-2/the-2023-election/",
+   "licence": "Public frequency tables; means and SDs computed here from the published weighted frequencies (excluding Don't know). Unit-record NZES data are subject to the NZES Data Usage Terms and were not used.",
+   "year": 2024,
+   "scales": {
+    "mean_left_right_0_10": "0 = most left ... 5 = centre ... 10 = most right"
+   },
+   "rescale_formula": {
+    "general_left_right": "(mean - 5) * 2; a GENERAL left-right scale as perceived by voters, shown alongside (not as) the economic axis"
+   },
+   "archived_copy": "raw/compass/nzes_party_placements.json; source PDFs raw/compass/nzes2023_sectionsBCD_freq.pdf and raw/compass/nzes2020_sectionsBC_freq.pdf"
+  },
+  {
+   "id": "parlgov",
+   "name": "ParlGov party table (development version, 2026 snapshot)",
+   "citation": "Döring, Holger and Philip Manow. Parliaments and governments database (ParlGov): Information on parties, elections and cabinets in established democracies. view_party.csv (development version, retrieved 23 Oct 2026).",
+   "url": "https://www.parlgov.org/data/parlgov-development_csv-utf-8/view_party.csv",
+   "licence": "ParlGov releases are published on Harvard Dataverse under CC0 1.0 (2024 release, doi:10.7910/DVN/2VZ5ZC).",
+   "year": 2026,
+   "coverage_note": "left_right / state_market / liberty_authority are ParlGov composites of the Castles-Mair (1984), Huber-Inglehart (1995) and Benoit-Laver (2006) expert surveys where a party was rated; parties with no expert rating (e.g. TOP, Conservative, New Conservative) carry the mean of their party family and are flagged based_on_expert_surveys=false. The most recent expert input is 2003-04 (Benoit-Laver), so these are historical.",
+   "scales": {
+    "left_right": "0 left ... 10 right",
+    "state_market": "0 state ... 10 market",
+    "liberty_authority": "0 libertarian ... 10 authoritarian"
+   },
+   "rescale_formula": {
+    "economic": "state_market -> (x - 5) * 2",
+    "social": "liberty_authority -> (x - 5) * 2",
+    "general_left_right": "left_right -> (x - 5) * 2"
+   },
+   "archived_copy": "raw/compass/parlgov_party.csv"
+  }
+ ],
+ "not_retrieved": [
+  {
+   "id": "marpor",
+   "name": "Manifesto Project (MARPOR / CMP) RILE scores for NZ manifestos",
+   "url": "https://manifesto-project.wzb.eu/",
+   "status": "not retrieved",
+   "reason": "The Manifesto Project Main Dataset (MPDS2024a) and its API require a free registered account and API key; the download could not be completed from this research environment and no published table of NZ RILE scores for 2017-2023 was found. The dataset covers NZ parties (CMP ids 64110 Green, 64320 Labour, 64420 ACT, 64620 National, 64621 NZ First, 64901 Māori Party per the CSES Module 5 codebook). RILE = share of right-coded quasi-sentences minus share of left-coded ones (-100..+100).",
+   "proposed_rescale": "economic approximation: RILE / 10 (so -100..+100 -> -10..+10); note RILE mixes economic and social categories."
+  },
+  {
+   "id": "vote_compass_nz",
+   "name": "Vote Compass New Zealand 2023 / 2026 (Vox Pop Labs for 1News/TVNZ) party positions",
+   "url": "https://www.1news.co.nz/vote-compass/",
+   "status": "not retrieved",
+   "reason": "Vote Compass places parties on a two-dimensional (economic x social) chart inside the application, from party answers to 30 propositions calibrated by the Vox Pop Labs team with NZ political scientists; the party coordinates are shown to users but are not published as numbers in 1News articles or in a dataset. 1News articles on 10 Oct 2023 and 22 Oct 2026 publish electorate-level scores only."
+  },
+  {
+   "id": "ches",
+   "name": "Chapel Hill Expert Survey",
+   "status": "not applicable",
+   "reason": "CHES covers European parties only; New Zealand is not included in any CHES wave."
+  }
+ ],
+ "parties": {
+  "national": {
+   "name": "National",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": {
+      "position": -1,
+      "evidence": "\"Reward for achievement\" is a stated party value; \"No new taxes, including no capital gains tax\".",
+      "source_url": "https://assets.national.org.nz/web/prod/National%27s%20Economic%20Plan.pdf?v=1790557287",
+      "confidence": "medium"
+     },
+     "econ_wvs_ownership": null,
+     "econ_wvs_responsibility": {
+      "position": -1,
+      "evidence": "\"those who can work should work ... Our welfare system provides a safety net when people need it, but it must be fair and affordable\"; \"Personal responsibility\" is a party value.",
+      "source_url": "https://www.national.org.nz/news/261008-louiseupston",
+      "confidence": "high"
+     },
+     "econ_wvs_competition": {
+      "position": 2,
+      "evidence": "\"Competitive enterprise\" is a party value; \"Strong competition is one of the most effective ways to reduce prices, increase innovation, lift productivity\".",
+      "source_url": "https://assets.national.org.nz/web/prod/More%20Grocery%20Competition.pdf?v=1789522994",
+      "confidence": "high"
+     },
+     "econ_cses_reduce_differences": {
+      "position": -1,
+      "evidence": "\"No new taxes, including no capital gains tax.\"",
+      "source_url": "https://assets.national.org.nz/web/prod/National%27s%20Economic%20Plan.pdf?v=1790557287",
+      "confidence": "medium"
+     },
+     "econ_nzes_privatisation": {
+      "position": -1,
+      "evidence": "Carried out the 2011-14 mixed-ownership share floats despite a referendum against them (dated evidence; no 2026 asset-sales policy found).",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_National_Party",
+      "confidence": "low"
+     },
+     "econ_nzes_big_business": {
+      "position": 0,
+      "evidence": "Says \"supermarket competition is still too weak\" yet \"businesses create wealth, not governments\".",
+      "source_url": "https://assets.national.org.nz/web/prod/More%20Grocery%20Competition.pdf?v=1789522994",
+      "confidence": "medium"
+     },
+     "econ_secs_limited_government": {
+      "position": 2,
+      "evidence": "Luxon lists \"Limited government\" among National's founding values (June 2026).",
+      "source_url": "https://www.national.org.nz/news/20260621-rthonchristopherluxon",
+      "confidence": "high"
+     },
+     "econ_secs_welfare_benefits": {
+      "position": -2,
+      "evidence": "Reduce Jobseeker payments after two years; random drug testing; five-year stand-down for new residents.",
+      "source_url": "https://assets.national.org.nz/web/prod/A%20firm,%20fair%20and%20affordable%20welfare%20system.pdf?v=1791407915",
+      "confidence": "high"
+     },
+     "econ_secs_business": {
+      "position": 2,
+      "evidence": "\"businesses create wealth, not governments\"; \"Competitive enterprise\" value.",
+      "source_url": "https://assets.national.org.nz/web/prod/More%20Grocery%20Competition.pdf?v=1789522994",
+      "confidence": "high"
+     },
+     "econ_secs_fiscal_responsibility": {
+      "position": 2,
+      "evidence": "Return to surplus by 2028/29; keep debt below 40% of GDP; \"Economic productivity and fiscal discipline ... are national security\".",
+      "source_url": "https://www.national.org.nz/news/20260809-honnicolawillis",
+      "confidence": "high"
+     },
+     "econ_secs_gun_ownership": {
+      "position": 1,
+      "evidence": "Increase public access to shooting ranges and hunter training; supported the 2019 semi-automatic ban.",
+      "source_url": "https://assets.national.org.nz/web/prod/National%27s%20Plan%20for%20Hunting%20and%20Fishing.pdf?v=1785105126",
+      "confidence": "medium"
+     },
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": null,
+     "soc_vsa_gods_laws": {
+      "position": 0,
+      "evidence": "Conscience votes: MPs mostly opposed the Abortion Legislation Act 2020 and split on same-sex marriage.",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_National_Party",
+      "confidence": "low"
+     },
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": -2,
+      "evidence": "Reinstated three strikes, banned gang patches, boot camps; \"fixing the basics in law and order\".",
+      "source_url": "https://en.wikipedia.org/wiki/Sentencing_(Reinstating_Three_Strikes)_Amendment_Act_2024",
+      "confidence": "high"
+     },
+     "soc_vsa_crack_down": {
+      "position": 2,
+      "evidence": "\"37,000 fewer victims of crime, no more gang patches, ram raids are down 85%\"; add 240 prison beds.",
+      "source_url": "https://www.national.org.nz/news/260927-christopherluxon",
+      "confidence": "high"
+     },
+     "soc_secs_abortion": {
+      "position": -1,
+      "evidence": "National MPs \"mostly opposed the Abortion Legislation Act 2020\" (conscience vote).",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_National_Party",
+      "confidence": "low"
+     },
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": {
+      "position": 0,
+      "evidence": "MPs split on same-sex marriage (2013 conscience vote).",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_National_Party",
+      "confidence": "low"
+     },
+     "soc_secs_traditional_values": {
+      "position": 1,
+      "evidence": "\"Strong families and caring communities\"; a socially conservative wing (conscience votes).",
+      "source_url": "https://www.national.org.nz/news/260927-christopherluxon",
+      "confidence": "low"
+     },
+     "soc_secs_family_unit": {
+      "position": 1,
+      "evidence": "\"Strong families and caring communities\" is a founding value; 30 weeks paid parental leave.",
+      "source_url": "https://www.national.org.nz/news/260927-christopherluxon",
+      "confidence": "medium"
+     },
+     "soc_secs_patriotism": {
+      "position": 1,
+      "evidence": "Party constitution: \"loyalty to country and Sovereign\".",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_National_Party",
+      "confidence": "low"
+     },
+     "soc_secs_military": {
+      "position": 2,
+      "evidence": "\"National security\" is a founding value; \"Boosting defence spending\"; Defence Capability Plan to 2% of GDP by 2032/33.",
+      "source_url": "https://newswire.co.nz/2026/05/chris-penk-defence-spending-2-percent-gdp-2033/",
+      "confidence": "high"
+     },
+     "soc_ess_gay_free": {
+      "position": 1,
+      "evidence": "25 of 33 National MPs voted for the conversion-practices ban (2022); \"National with Pride\" wing.",
+      "source_url": "https://en.wikipedia.org/wiki/Conversion_Practices_Prohibition_Legislation_Act_2022",
+      "confidence": "low"
+     },
+     "soc_cses_immigrants_economy": {
+      "position": 1,
+      "evidence": "Encourage Active Investor Plus visa holders to stay: \"NZ needs partners on the world stage to help businesses get ahead\".",
+      "source_url": "https://assets.national.org.nz/web/prod/National%27s%20Economic%20Plan.pdf?v=1790557287",
+      "confidence": "low"
+     },
+     "soc_cses_culture_harmed": null,
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": null,
+     "pop_cses_trustworthy": null,
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": null,
+     "pop_cses_people_decide": null,
+     "pop_cses_rich_powerful": null,
+     "pop_cses_majority": {
+      "position": 0,
+      "evidence": "Voted down the Treaty Principles Bill (2025) but restored local referendums on Māori wards (2024).",
+      "source_url": "https://en.wikipedia.org/wiki/Treaty_Principles_Bill",
+      "confidence": "medium"
+     }
+    },
+    "n_coded": 23,
+    "n_items": 36,
+    "confidence_counts": {
+     "medium": 6,
+     "high": 9,
+     "low": 8
+    },
+    "axes": {
+     "economic": {
+      "score": 6.82,
+      "n_items": 11,
+      "n_total": 12,
+      "enough": true,
+      "half_width": 1.99,
+      "keyed_mean": 1.364,
+      "keyed_sd": 0.674
+     },
+     "social": {
+      "score": 3.64,
+      "n_items": 11,
+      "n_total": 16,
+      "enough": true,
+      "half_width": 3.26,
+      "keyed_mean": 0.727,
+      "keyed_sd": 1.104
+     },
+     "populism": {
+      "score": 0.0,
+      "n_items": 1,
+      "n_total": 8,
+      "enough": false,
+      "half_width": 1.0,
+      "keyed_mean": 0.0,
+      "keyed_sd": 0.0
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": 6.67,
+      "n_items": 3,
+      "n_total": 4,
+      "shown": true
+     },
+     "cses_redistribution": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "nzes_economic": {
+      "score": 2.5,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "secs_economic": {
+      "score": 9.0,
+      "n_items": 5,
+      "n_total": 5,
+      "shown": true,
+      "secs_0_100": 72.5
+     },
+     "vsa_authoritarianism": {
+      "score": 6.67,
+      "n_items": 3,
+      "n_total": 6,
+      "shown": true
+     },
+     "secs_social": {
+      "score": 5.0,
+      "n_items": 6,
+      "n_total": 7,
+      "shown": true,
+      "secs_0_100": 62.5
+     },
+     "ess_social_values": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "cses_outgroup": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 2,
+      "shown": true
+     },
+     "cses_populism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 7
+     },
+     "cses_antipluralism": {
+      "score": 0.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     }
+    }
+   },
+   "published": {
+    "gps2019": [
+     {
+      "experts": 12,
+      "V4_Scale_economic_left_right": 7.375,
+      "V6_Scale_social_liberal_conservative": 6.857,
+      "V8_Scale_populist_rhetoric": 5.833,
+      "V9_populist_saliency": 7.5,
+      "V10_immigration_liberal_restrictive": 4.429,
+      "V11_spending_vs_tax_cuts": 8.0,
+      "V12_environment": 6.333,
+      "V13_nationalism_vs_multilateralism": 8.0,
+      "V16_liberal_democracy_respect_undermine": 3.125,
+      "WVS_LR_PartyVoter_mean_self_placement_1_10": 6.888,
+      "rescaled": {
+       "economic": 4.75,
+       "social": 3.71,
+       "populism": 1.67
+      }
+     }
+    ],
+    "vparty_v2": [
+     {
+      "election_year": 2002,
+      "v2pariglef_economic_left_right_interval": 1.156,
+      "v2pariglef_osp_0_6": 3.978,
+      "v2pawelf_welfare_osp_0_4": 2.319,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.15,
+      "v2paanteli_anti_elitism_osp_0_4": 0.934,
+      "v2papeople_people_centrism_osp_0_4": 1.36,
+      "v2paplur_political_pluralism_osp_0_4": 3.482,
+      "v2paimmig_immigration_osp_0_4": 2.808,
+      "v2palgbt_lgbt_equality_osp_0_4": 1.994,
+      "v2parelig_religious_principles_osp_0_4": 3.442,
+      "v2xpa_popul_populism_index_0_1": 0.264,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.117,
+      "rescaled": {
+       "economic": 3.26,
+       "populism": -4.72
+      }
+     },
+     {
+      "election_year": 2005,
+      "v2pariglef_economic_left_right_interval": 1.469,
+      "v2pariglef_osp_0_6": 4.228,
+      "v2pawelf_welfare_osp_0_4": 2.319,
+      "v2paculsup_cultural_superiority_osp_0_4": 2.639,
+      "v2paanteli_anti_elitism_osp_0_4": 0.934,
+      "v2papeople_people_centrism_osp_0_4": 1.674,
+      "v2paplur_political_pluralism_osp_0_4": 3.482,
+      "v2paimmig_immigration_osp_0_4": 2.808,
+      "v2palgbt_lgbt_equality_osp_0_4": 1.994,
+      "v2parelig_religious_principles_osp_0_4": 3.456,
+      "v2xpa_popul_populism_index_0_1": 0.287,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.149,
+      "rescaled": {
+       "economic": 4.09,
+       "populism": -4.26
+      }
+     },
+     {
+      "election_year": 2008,
+      "v2pariglef_economic_left_right_interval": 1.141,
+      "v2pariglef_osp_0_6": 3.97,
+      "v2pawelf_welfare_osp_0_4": 2.319,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.177,
+      "v2paanteli_anti_elitism_osp_0_4": 0.934,
+      "v2papeople_people_centrism_osp_0_4": 1.399,
+      "v2paplur_political_pluralism_osp_0_4": 3.482,
+      "v2paimmig_immigration_osp_0_4": 2.808,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.236,
+      "v2parelig_religious_principles_osp_0_4": 3.456,
+      "v2xpa_popul_populism_index_0_1": 0.264,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.115,
+      "rescaled": {
+       "economic": 3.23,
+       "populism": -4.72
+      }
+     },
+     {
+      "election_year": 2011,
+      "v2pariglef_economic_left_right_interval": 1.141,
+      "v2pariglef_osp_0_6": 3.97,
+      "v2pawelf_welfare_osp_0_4": 2.319,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.177,
+      "v2paanteli_anti_elitism_osp_0_4": 0.934,
+      "v2papeople_people_centrism_osp_0_4": 1.399,
+      "v2paplur_political_pluralism_osp_0_4": 3.482,
+      "v2paimmig_immigration_osp_0_4": 2.808,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.236,
+      "v2parelig_religious_principles_osp_0_4": 3.456,
+      "v2xpa_popul_populism_index_0_1": 0.264,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.115,
+      "rescaled": {
+       "economic": 3.23,
+       "populism": -4.72
+      }
+     },
+     {
+      "election_year": 2014,
+      "v2pariglef_economic_left_right_interval": 1.141,
+      "v2pariglef_osp_0_6": 3.97,
+      "v2pawelf_welfare_osp_0_4": 2.319,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.177,
+      "v2paanteli_anti_elitism_osp_0_4": 0.934,
+      "v2papeople_people_centrism_osp_0_4": 1.399,
+      "v2paplur_political_pluralism_osp_0_4": 3.482,
+      "v2paimmig_immigration_osp_0_4": 2.808,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.236,
+      "v2parelig_religious_principles_osp_0_4": 3.456,
+      "v2xpa_popul_populism_index_0_1": 0.264,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.137,
+      "rescaled": {
+       "economic": 3.23,
+       "populism": -4.72
+      }
+     },
+     {
+      "election_year": 2017,
+      "v2pariglef_economic_left_right_interval": 1.141,
+      "v2pariglef_osp_0_6": 3.97,
+      "v2pawelf_welfare_osp_0_4": 2.319,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.177,
+      "v2paanteli_anti_elitism_osp_0_4": 0.934,
+      "v2papeople_people_centrism_osp_0_4": 1.399,
+      "v2paplur_political_pluralism_osp_0_4": 3.482,
+      "v2paimmig_immigration_osp_0_4": 2.808,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.236,
+      "v2parelig_religious_principles_osp_0_4": 3.456,
+      "v2xpa_popul_populism_index_0_1": 0.264,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.116,
+      "rescaled": {
+       "economic": 3.23,
+       "populism": -4.72
+      }
+     }
+    ],
+    "cses5": [
+     {
+      "election_year": 2017,
+      "E5018_expert_left_right_0_10": 7.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 7.31,
+      "E3019_n_respondents_placing": 1413,
+      "rescaled": {
+       "general_left_right_expert": 4.0,
+       "general_left_right_voters": 4.62
+      }
+     },
+     {
+      "election_year": 2020,
+      "E5018_expert_left_right_0_10": 7.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 7.15,
+      "E3019_n_respondents_placing": 1313,
+      "rescaled": {
+       "general_left_right_expert": 4.0,
+       "general_left_right_voters": 4.3
+      }
+     }
+    ],
+    "nzes_voters": [
+     {
+      "election_year": 2023,
+      "item": "B5",
+      "mean_left_right_0_10_weighted": 5.5,
+      "sd": 2.5,
+      "weighted_n_placing": 583.2,
+      "dont_know_pct": 18.38,
+      "distribution_weighted_freq": {
+       "0": 53.8,
+       "1": 10.0,
+       "2": 10.9,
+       "3": 37.8,
+       "4": 21.0,
+       "5": 109.1,
+       "6": 88.4,
+       "7": 197.8,
+       "8": 9.3,
+       "9": 9.1,
+       "10": 36.0
+      },
+      "rescaled": {
+       "general_left_right_voters": 1.0
+      }
+     },
+     {
+      "election_year": 2020,
+      "item": "B7",
+      "mean_left_right_0_10_weighted": 5.72,
+      "sd": 2.32,
+      "weighted_n_placing": 2127.5,
+      "dont_know_pct": 26.96,
+      "distribution_weighted_freq": {
+       "0": 100.1,
+       "1": 37.3,
+       "2": 66.8,
+       "3": 89.1,
+       "4": 146.0,
+       "5": 571.3,
+       "6": 332.4,
+       "7": 289.5,
+       "8": 274.0,
+       "9": 122.7,
+       "10": 98.3
+      },
+      "rescaled": {
+       "general_left_right_voters": 1.44
+      }
+     }
+    ],
+    "parlgov": [
+     {
+      "parlgov_party_id": 997,
+      "family": "Conservative",
+      "left_right_0_10": 6.7193,
+      "state_market_0_10": 7.2299,
+      "liberty_authority_0_10": 6.9,
+      "based_on_expert_surveys": true,
+      "expert_survey_ids": {
+       "castles_mair": "1203",
+       "huber_inglehart": "2704",
+       "benoit_laver": "7268"
+      },
+      "rescaled": {
+       "economic": 4.46,
+       "social": 3.8,
+       "general_left_right": 3.44
+      }
+     }
+    ]
+   },
+   "comparison": {
+    "gps2019_economic": {
+     "ours": 6.82,
+     "published": 4.75,
+     "difference_ours_minus_published": 2.07
+    },
+    "gps2019_social": {
+     "ours": 3.64,
+     "published": 3.71,
+     "difference_ours_minus_published": -0.07
+    },
+    "gps2019_populism": {
+     "ours": 0.0,
+     "published": 1.67,
+     "difference_ours_minus_published": -1.67
+    },
+    "parlgov_economic": {
+     "ours": 6.82,
+     "published": 4.46,
+     "difference_ours_minus_published": 2.36
+    },
+    "parlgov_social": {
+     "ours": 3.64,
+     "published": 3.8,
+     "difference_ours_minus_published": -0.16
+    },
+    "vparty2017_economic": {
+     "ours": 6.82,
+     "published": 3.23,
+     "difference_ours_minus_published": 3.59
+    },
+    "vparty2017_populism": {
+     "ours": 0.0,
+     "published": -4.72,
+     "difference_ours_minus_published": 4.72
+    },
+    "nzes2023_voters_general_left_right": {
+     "ours_economic": 6.82,
+     "published_general_left_right": 1.0,
+     "note": "voters' general left-right placement, not an economic-only scale"
+    }
+   }
+  },
+  "labour": {
+   "name": "Labour",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": {
+      "position": 1,
+      "evidence": "Future Fund paper: \"Our system has been designed to justify inequalities of wealth and income\"; CGT so \"those profiting from property pay their fair share\".",
+      "source_url": "https://www.labour.org.nz/media/vbyf0pxe/the-new-zealand-future-fund.pdf",
+      "confidence": "medium"
+     },
+     "econ_wvs_ownership": {
+      "position": -1,
+      "evidence": "Future Fund: seeded assets \"cannot be sold and will remain in public ownership for generations\"; \"Instead of selling off our assets ...\".",
+      "source_url": "https://www.labour.org.nz/futurefund",
+      "confidence": "high"
+     },
+     "econ_wvs_responsibility": {
+      "position": 1,
+      "evidence": "Free GP visits (Medicard), 6,000 more social housing places, fare caps: an expanded state role in provision.",
+      "source_url": "https://www.labour.org.nz/banning-price-gouging",
+      "confidence": "medium"
+     },
+     "econ_wvs_competition": {
+      "position": 1,
+      "evidence": "Competition scrutiny of fuel, airports and groceries, alongside a price-gouging ban.",
+      "source_url": "https://www.labour.org.nz/banning-price-gouging",
+      "confidence": "medium"
+     },
+     "econ_cses_reduce_differences": {
+      "position": 1,
+      "evidence": "28% capital gains tax on investment property with \"every dollar raised\" going to health.",
+      "source_url": "https://www.labour.org.nz/capitalgainstax",
+      "confidence": "medium"
+     },
+     "econ_nzes_privatisation": {
+      "position": 1,
+      "evidence": "Future Fund locks assets in public ownership \"instead of selling off our assets and opening the gates to foreign investors\".",
+      "source_url": "https://www.labour.org.nz/media/vbyf0pxe/the-new-zealand-future-fund.pdf",
+      "confidence": "medium"
+     },
+     "econ_nzes_big_business": {
+      "position": 1,
+      "evidence": "\"crack down on big companies who charge excessive prices\"; \"the big companies can't rip you off\".",
+      "source_url": "https://www.labour.org.nz/banning-price-gouging",
+      "confidence": "medium"
+     },
+     "econ_secs_limited_government": {
+      "position": -1,
+      "evidence": "Future Fund, Medicard and fare caps expand the state's role, while promising \"not a new layer of bureaucracy\".",
+      "source_url": "https://www.labour.org.nz/futurefund",
+      "confidence": "low"
+     },
+     "econ_secs_welfare_benefits": {
+      "position": 1,
+      "evidence": "In office: benefit increases and wage indexation (2018-23); opposes National's 2026 benefit cuts.",
+      "source_url": "https://en.wikipedia.org/wiki/Sixth_Labour_Government_of_New_Zealand",
+      "confidence": "low"
+     },
+     "econ_secs_business": {
+      "position": 1,
+      "evidence": "\"Small Business First\" package; \"leveling the playing field for Kiwi businesses and innovation\".",
+      "source_url": "https://www.labour.org.nz/small-business-first",
+      "confidence": "medium"
+     },
+     "econ_secs_fiscal_responsibility": {
+      "position": 2,
+      "evidence": "\"Labour will balance the books, return to surplus by 2029/30, reduce net debt to 20% of GDP\".",
+      "source_url": "https://www.labour.org.nz/fiscal-strategy",
+      "confidence": "high"
+     },
+     "econ_secs_gun_ownership": {
+      "position": -1,
+      "evidence": "Led the 2019 semi-automatic firearms ban and registry.",
+      "source_url": "https://en.wikipedia.org/wiki/Sixth_Labour_Government_of_New_Zealand",
+      "confidence": "medium"
+     },
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": null,
+     "soc_vsa_gods_laws": {
+      "position": -1,
+      "evidence": "Took abortion out of the Crimes Act in government (2020); Rainbow Pae Ora strategy.",
+      "source_url": "https://en.wikipedia.org/wiki/Abortion_Legislation_Act_2020",
+      "confidence": "medium"
+     },
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": 1,
+      "evidence": "Voted against reinstating three strikes; would end youth boot camps; but would \"crack down\" on price gouging.",
+      "source_url": "https://en.wikipedia.org/wiki/Sentencing_(Reinstating_Three_Strikes)_Amendment_Act_2024",
+      "confidence": "medium"
+     },
+     "soc_vsa_crack_down": {
+      "position": -1,
+      "evidence": "Opposed reinstating three strikes and permanent boot camps.",
+      "source_url": "https://en.wikipedia.org/wiki/Sentencing_(Reinstating_Three_Strikes)_Amendment_Act_2024",
+      "confidence": "medium"
+     },
+     "soc_secs_abortion": {
+      "position": 1,
+      "evidence": "Government bill that decriminalised abortion (2020); most Labour MPs voted for it on a conscience vote.",
+      "source_url": "https://en.wikipedia.org/wiki/Abortion_Legislation_Act_2020",
+      "confidence": "medium"
+     },
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": {
+      "position": -1,
+      "evidence": "Marriage equality was Labour MP Louisa Wall's bill (2013), supported by most Labour MPs.",
+      "source_url": "https://en.wikipedia.org/wiki/Marriage_(Definition_of_Marriage)_Amendment_Act_2013",
+      "confidence": "medium"
+     },
+     "soc_secs_traditional_values": null,
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": null,
+     "soc_secs_military": {
+      "position": 0,
+      "evidence": "Hipkins rejected US calls to lift spending to a set level: \"no other country should dictate New Zealand's military spend\"; would not join AUKUS.",
+      "source_url": "https://www.1news.co.nz/2026/06/02/hipkins-says-new-policy-coming-soon-labour-still-working-through-budget/",
+      "confidence": "low"
+     },
+     "soc_ess_gay_free": {
+      "position": 2,
+      "evidence": "Rainbow Pae Ora health strategy; passed the conversion-practices ban (2022).",
+      "source_url": "https://www.labour.org.nz/news/release-labour-to-deliver-stronger-healthcare-and-protections-for-rainbow-communities/",
+      "confidence": "high"
+     },
+     "soc_cses_immigrants_economy": {
+      "position": 1,
+      "evidence": "\"Migrants bring much-needed energy and skills\"; immigration \"planned around what New Zealand needs\".",
+      "source_url": "https://www.labour.org.nz/immigration",
+      "confidence": "medium"
+     },
+     "soc_cses_culture_harmed": {
+      "position": -1,
+      "evidence": "Immigration policy \"aims to treat migrants with decency\".",
+      "source_url": "https://www.labour.org.nz/immigration",
+      "confidence": "medium"
+     },
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": null,
+     "pop_cses_trustworthy": null,
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": {
+      "position": -1,
+      "evidence": "Limit urgency \"to genuine emergencies\" and send rushed laws back to select committee.",
+      "source_url": "https://www.labour.org.nz/government-you-can-trust",
+      "confidence": "medium"
+     },
+     "pop_cses_people_decide": null,
+     "pop_cses_rich_powerful": null,
+     "pop_cses_majority": {
+      "position": -1,
+      "evidence": "Opposed the Treaty Principles Bill; opposed Māori-ward referendums.",
+      "source_url": "https://en.wikipedia.org/wiki/Treaty_Principles_Bill",
+      "confidence": "low"
+     }
+    },
+    "n_coded": 23,
+    "n_items": 36,
+    "confidence_counts": {
+     "medium": 16,
+     "high": 3,
+     "low": 4
+    },
+    "axes": {
+     "economic": {
+      "score": -2.08,
+      "n_items": 12,
+      "n_total": 12,
+      "enough": true,
+      "half_width": 3.07,
+      "keyed_mean": -0.417,
+      "keyed_sd": 1.084
+     },
+     "social": {
+      "score": -5.0,
+      "n_items": 9,
+      "n_total": 16,
+      "enough": true,
+      "half_width": 1.63,
+      "keyed_mean": -1.0,
+      "keyed_sd": 0.5
+     },
+     "populism": {
+      "score": -5.0,
+      "n_items": 2,
+      "n_total": 8,
+      "enough": false,
+      "half_width": 1.0,
+      "keyed_mean": -1.0,
+      "keyed_sd": 0.0
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": -2.5,
+      "n_items": 4,
+      "n_total": 4,
+      "shown": true
+     },
+     "cses_redistribution": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "nzes_economic": {
+      "score": -5.0,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "secs_economic": {
+      "score": 0.0,
+      "n_items": 5,
+      "n_total": 5,
+      "shown": true,
+      "secs_0_100": 50.0
+     },
+     "vsa_authoritarianism": {
+      "score": -5.0,
+      "n_items": 3,
+      "n_total": 6,
+      "shown": true
+     },
+     "secs_social": {
+      "score": -3.33,
+      "n_items": 3,
+      "n_total": 7,
+      "shown": false,
+      "secs_0_100": 41.7
+     },
+     "ess_social_values": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "cses_outgroup": {
+      "score": -5.0,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "cses_populism": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 7,
+      "shown": false
+     },
+     "cses_antipluralism": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     }
+    }
+   },
+   "published": {
+    "gps2019": [
+     {
+      "experts": 12,
+      "V4_Scale_economic_left_right": 4.286,
+      "V6_Scale_social_liberal_conservative": 3.333,
+      "V8_Scale_populist_rhetoric": 4.0,
+      "V9_populist_saliency": 3.889,
+      "V10_immigration_liberal_restrictive": 4.2,
+      "V11_spending_vs_tax_cuts": 3.833,
+      "V12_environment": 3.875,
+      "V13_nationalism_vs_multilateralism": 7.25,
+      "V16_liberal_democracy_respect_undermine": 3.125,
+      "WVS_LR_PartyVoter_mean_self_placement_1_10": 4.805,
+      "rescaled": {
+       "economic": -1.43,
+       "social": -3.33,
+       "populism": -2.0
+      }
+     }
+    ],
+    "vparty_v2": [
+     {
+      "election_year": 2002,
+      "v2pariglef_economic_left_right_interval": -0.807,
+      "v2pariglef_osp_0_6": 2.224,
+      "v2pawelf_welfare_osp_0_4": 3.045,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.177,
+      "v2paanteli_anti_elitism_osp_0_4": 1.987,
+      "v2papeople_people_centrism_osp_0_4": 1.614,
+      "v2paplur_political_pluralism_osp_0_4": 3.488,
+      "v2paimmig_immigration_osp_0_4": 2.742,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.824,
+      "v2parelig_religious_principles_osp_0_4": 3.811,
+      "v2xpa_popul_populism_index_0_1": 0.435,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.061,
+      "rescaled": {
+       "economic": -2.59,
+       "populism": -1.3
+      }
+     },
+     {
+      "election_year": 2005,
+      "v2pariglef_economic_left_right_interval": -0.807,
+      "v2pariglef_osp_0_6": 2.224,
+      "v2pawelf_welfare_osp_0_4": 3.045,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.15,
+      "v2paanteli_anti_elitism_osp_0_4": 2.189,
+      "v2papeople_people_centrism_osp_0_4": 1.614,
+      "v2paplur_political_pluralism_osp_0_4": 3.488,
+      "v2paimmig_immigration_osp_0_4": 2.742,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.824,
+      "v2parelig_religious_principles_osp_0_4": 3.811,
+      "v2xpa_popul_populism_index_0_1": 0.455,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.061,
+      "rescaled": {
+       "economic": -2.59,
+       "populism": -0.9
+      }
+     },
+     {
+      "election_year": 2008,
+      "v2pariglef_economic_left_right_interval": -0.807,
+      "v2pariglef_osp_0_6": 2.224,
+      "v2pawelf_welfare_osp_0_4": 3.045,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.15,
+      "v2paanteli_anti_elitism_osp_0_4": 2.474,
+      "v2papeople_people_centrism_osp_0_4": 1.614,
+      "v2paplur_political_pluralism_osp_0_4": 3.488,
+      "v2paimmig_immigration_osp_0_4": 2.736,
+      "v2palgbt_lgbt_equality_osp_0_4": 3.219,
+      "v2parelig_religious_principles_osp_0_4": 3.816,
+      "v2xpa_popul_populism_index_0_1": 0.481,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.061,
+      "rescaled": {
+       "economic": -2.59,
+       "populism": -0.38
+      }
+     },
+     {
+      "election_year": 2011,
+      "v2pariglef_economic_left_right_interval": -0.807,
+      "v2pariglef_osp_0_6": 2.224,
+      "v2pawelf_welfare_osp_0_4": 3.045,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.15,
+      "v2paanteli_anti_elitism_osp_0_4": 2.474,
+      "v2papeople_people_centrism_osp_0_4": 1.614,
+      "v2paplur_political_pluralism_osp_0_4": 3.488,
+      "v2paimmig_immigration_osp_0_4": 2.156,
+      "v2palgbt_lgbt_equality_osp_0_4": 3.219,
+      "v2parelig_religious_principles_osp_0_4": 3.816,
+      "v2xpa_popul_populism_index_0_1": 0.481,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.061,
+      "rescaled": {
+       "economic": -2.59,
+       "populism": -0.38
+      }
+     },
+     {
+      "election_year": 2014,
+      "v2pariglef_economic_left_right_interval": -1.093,
+      "v2pariglef_osp_0_6": 1.979,
+      "v2pawelf_welfare_osp_0_4": 3.045,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.15,
+      "v2paanteli_anti_elitism_osp_0_4": 2.474,
+      "v2papeople_people_centrism_osp_0_4": 1.329,
+      "v2paplur_political_pluralism_osp_0_4": 3.488,
+      "v2paimmig_immigration_osp_0_4": 2.109,
+      "v2palgbt_lgbt_equality_osp_0_4": 3.219,
+      "v2parelig_religious_principles_osp_0_4": 3.816,
+      "v2xpa_popul_populism_index_0_1": 0.422,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.061,
+      "rescaled": {
+       "economic": -3.4,
+       "populism": -1.56
+      }
+     },
+     {
+      "election_year": 2017,
+      "v2pariglef_economic_left_right_interval": -0.817,
+      "v2pariglef_osp_0_6": 2.21,
+      "v2pawelf_welfare_osp_0_4": 3.045,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.15,
+      "v2paanteli_anti_elitism_osp_0_4": 2.474,
+      "v2papeople_people_centrism_osp_0_4": 1.329,
+      "v2paplur_political_pluralism_osp_0_4": 3.488,
+      "v2paimmig_immigration_osp_0_4": 2.417,
+      "v2palgbt_lgbt_equality_osp_0_4": 3.219,
+      "v2parelig_religious_principles_osp_0_4": 3.808,
+      "v2xpa_popul_populism_index_0_1": 0.422,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.061,
+      "rescaled": {
+       "economic": -2.63,
+       "populism": -1.56
+      }
+     }
+    ],
+    "cses5": [
+     {
+      "election_year": 2017,
+      "E5018_expert_left_right_0_10": 4.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 3.32,
+      "E3019_n_respondents_placing": 1410,
+      "rescaled": {
+       "general_left_right_expert": -2.0,
+       "general_left_right_voters": -3.36
+      }
+     },
+     {
+      "election_year": 2020,
+      "E5018_expert_left_right_0_10": 4.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 3.63,
+      "E3019_n_respondents_placing": 1326,
+      "rescaled": {
+       "general_left_right_expert": -2.0,
+       "general_left_right_voters": -2.74
+      }
+     }
+    ],
+    "nzes_voters": [
+     {
+      "election_year": 2023,
+      "item": "B5",
+      "mean_left_right_0_10_weighted": 4.04,
+      "sd": 3.58,
+      "weighted_n_placing": 2115.5,
+      "dont_know_pct": 17.64,
+      "distribution_weighted_freq": {
+       "0": 413.8,
+       "1": 256.2,
+       "2": 329.9,
+       "3": 224.3,
+       "4": 98.9,
+       "5": 121.8,
+       "6": 16.1,
+       "7": 17.4,
+       "8": 258.3,
+       "9": 128.1,
+       "10": 250.8
+      },
+      "rescaled": {
+       "general_left_right_voters": -1.92
+      }
+     },
+     {
+      "election_year": 2020,
+      "item": "B7",
+      "mean_left_right_0_10_weighted": 2.37,
+      "sd": 2.28,
+      "weighted_n_placing": 2398.6,
+      "dont_know_pct": 25.97,
+      "distribution_weighted_freq": {
+       "0": 561.9,
+       "1": 400.5,
+       "2": 536.5,
+       "3": 357.5,
+       "4": 163.3,
+       "5": 184.5,
+       "6": 50.0,
+       "7": 32.1,
+       "8": 34.5,
+       "9": 21.8,
+       "10": 55.9
+      },
+      "rescaled": {
+       "general_left_right_voters": -5.26
+      }
+     }
+    ],
+    "parlgov": [
+     {
+      "parlgov_party_id": 878,
+      "family": "Social democracy",
+      "left_right_0_10": 4.483,
+      "state_market_0_10": 3.9889,
+      "liberty_authority_0_10": 3.5,
+      "based_on_expert_surveys": true,
+      "expert_survey_ids": {
+       "castles_mair": "1201",
+       "huber_inglehart": "2703",
+       "benoit_laver": "7300"
+      },
+      "rescaled": {
+       "economic": -2.02,
+       "social": -3.0,
+       "general_left_right": -1.03
+      }
+     }
+    ]
+   },
+   "comparison": {
+    "gps2019_economic": {
+     "ours": -2.08,
+     "published": -1.43,
+     "difference_ours_minus_published": -0.65
+    },
+    "gps2019_social": {
+     "ours": -5.0,
+     "published": -3.33,
+     "difference_ours_minus_published": -1.67
+    },
+    "gps2019_populism": {
+     "ours": -5.0,
+     "published": -2.0,
+     "difference_ours_minus_published": -3.0
+    },
+    "parlgov_economic": {
+     "ours": -2.08,
+     "published": -2.02,
+     "difference_ours_minus_published": -0.06
+    },
+    "parlgov_social": {
+     "ours": -5.0,
+     "published": -3.0,
+     "difference_ours_minus_published": -2.0
+    },
+    "vparty2017_economic": {
+     "ours": -2.08,
+     "published": -2.63,
+     "difference_ours_minus_published": 0.55
+    },
+    "vparty2017_populism": {
+     "ours": -5.0,
+     "published": -1.56,
+     "difference_ours_minus_published": -3.44
+    },
+    "nzes2023_voters_general_left_right": {
+     "ours_economic": -2.08,
+     "published_general_left_right": -1.92,
+     "note": "voters' general left-right placement, not an economic-only scale"
+    }
+   }
+  },
+  "green": {
+   "name": "Green",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": {
+      "position": 2,
+      "evidence": "A wealth tax on net wealth over $10m \"can reduce income inequality and ensure everyone has enough to live\"; \"multi-millionaires pay $9 in tax for every $100 ... teachers pay $22\".",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_tax",
+      "confidence": "high"
+     },
+     "econ_wvs_ownership": {
+      "position": -2,
+      "evidence": "Public services and SOEs \"continue to be owned by the government\"; a publicly owned KiwiMart and \"Kiwipower\".",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_public_services",
+      "confidence": "high"
+     },
+     "econ_wvs_responsibility": {
+      "position": 2,
+      "evidence": "\"Everyone deserves support through hard times, not blame and punishment\"; increase benefits to liveable rates.",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_income",
+      "confidence": "high"
+     },
+     "econ_wvs_competition": {
+      "position": 0,
+      "evidence": "Breaks up the duopoly for competition but would re-impose a legal ban on \"unreasonably high prices\" removed by 1980s deregulation.",
+      "source_url": "https://assets.nationbuilder.com/beachheroes/pages/89620/attachments/original/1788650611/AFFORDABLE_FOOD_FOR_ALL_OF_US_POLICY_FINAL.pdf?1788650611",
+      "confidence": "medium"
+     },
+     "econ_cses_reduce_differences": {
+      "position": 2,
+      "evidence": "Wealth tax over $10m to \"reduce income inequality\"; corporate tax to 33% for the largest 0.7% of companies.",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_tax",
+      "confidence": "high"
+     },
+     "econ_nzes_privatisation": {
+      "position": 1,
+      "evidence": "\"restoring public ownership of energy projects would make power more affordable\"; keep SOEs in public ownership.",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_public_services",
+      "confidence": "medium"
+     },
+     "econ_nzes_big_business": {
+      "position": 2,
+      "evidence": "Supermarkets \"making $1 million a day in excessive profits\"; large corporations \"profiting from the public without contributing back\".",
+      "source_url": "https://assets.nationbuilder.com/beachheroes/pages/89620/attachments/original/1788650611/AFFORDABLE_FOOD_FOR_ALL_OF_US_POLICY_FINAL.pdf?1788650611",
+      "confidence": "high"
+     },
+     "econ_secs_limited_government": {
+      "position": -2,
+      "evidence": "Public Finance Act reform \"Avoiding arbitrary limits on government debt and expenditure\"; a Ministry for Green Works; state-owned supermarket and power company.",
+      "source_url": "https://assets.nationbuilder.com/beachheroes/pages/64724/attachments/original/1778624605/Policy-Greens_Government_Economy_Policy_2024-2026.pdf",
+      "confidence": "high"
+     },
+     "econ_secs_welfare_benefits": {
+      "position": 2,
+      "evidence": "\"Increase benefits to liveable rates, individualise benefit entitlements and abolish benefit sanctions.\"",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_income",
+      "confidence": "high"
+     },
+     "econ_secs_business": {
+      "position": 0,
+      "evidence": "Keeps 28% rate for SMEs but 33% for the largest corporates and would \"Regulate businesses ... to be socially and environmentally responsible\".",
+      "source_url": "https://assets.nationbuilder.com/beachheroes/pages/64528/attachments/original/1781650904/Policy-Greens_Business_Policy_2025-2026.pdf?1781650904",
+      "confidence": "medium"
+     },
+     "econ_secs_fiscal_responsibility": {
+      "position": -1,
+      "evidence": "\"Enabling greater government borrowing for investing in infrastructure; Avoiding arbitrary limits on government debt and expenditure\".",
+      "source_url": "https://assets.nationbuilder.com/beachheroes/pages/64724/attachments/original/1778624605/Policy-Greens_Government_Economy_Policy_2024-2026.pdf",
+      "confidence": "medium"
+     },
+     "econ_secs_gun_ownership": {
+      "position": -2,
+      "evidence": "\"continuing to oppose possession of military-style semi-automatic firearms\"; robust licensing and registration.",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_justice_and_community_safety",
+      "confidence": "high"
+     },
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": null,
+     "soc_vsa_gods_laws": {
+      "position": -2,
+      "evidence": "Reproductive rights, rainbow and drug-law reform; opposes any religious basis for law.",
+      "source_url": "https://assets.nationbuilder.com/beachheroes/pages/65060/attachments/original/1779238542/Policy-Greens_Womens_Policy_2025-2026.pdf?1779238542",
+      "confidence": "high"
+     },
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": 2,
+      "evidence": "Prioritise rehabilitation; voted against reinstating three strikes; repeal the Misuse of Drugs Act.",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_justice_and_community_safety",
+      "confidence": "high"
+     },
+     "soc_vsa_crack_down": {
+      "position": -2,
+      "evidence": "Rehabilitation over punishment; end military-style academies; raise the age of criminal responsibility.",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_justice_and_community_safety",
+      "confidence": "high"
+     },
+     "soc_secs_abortion": {
+      "position": 2,
+      "evidence": "\"Uphold women's reproductive rights ... equitable access ... to contraception, abortion\"; voted for the 2020 Act at all stages.",
+      "source_url": "https://assets.nationbuilder.com/beachheroes/pages/65060/attachments/original/1779238542/Policy-Greens_Womens_Policy_2025-2026.pdf?1779238542",
+      "confidence": "high"
+     },
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": {
+      "position": -2,
+      "evidence": "Voted for marriage equality (2013); rainbow policy.",
+      "source_url": "https://en.wikipedia.org/wiki/Marriage_(Definition_of_Marriage)_Amendment_Act_2013",
+      "confidence": "high"
+     },
+     "soc_secs_traditional_values": {
+      "position": -1,
+      "evidence": "Progressive agenda: drug-law reform, rainbow rights, Te Tiriti co-governance.",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_rainbow_communities",
+      "confidence": "low"
+     },
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": null,
+     "soc_secs_military": {
+      "position": -2,
+      "evidence": "Withdraw from Five Eyes; Defence Force to \"focus on climate change, humanitarian responses\".",
+      "source_url": "https://assets.nationbuilder.com/beachheroes/pages/64948/attachments/original/1778624615/Policy-Greens_Security_Defence_Policy_2011-2026.pdf",
+      "confidence": "high"
+     },
+     "soc_ess_gay_free": {
+      "position": 2,
+      "evidence": "Rainbow communities manifesto; increase resourcing for rainbow organisations.",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_rainbow_communities",
+      "confidence": "high"
+     },
+     "soc_cses_immigrants_economy": {
+      "position": 2,
+      "evidence": "New residency pathways; refugee quota to 5,000; migrant workers \"contribute to Business success\".",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_immigration_and_refugees",
+      "confidence": "high"
+     },
+     "soc_cses_culture_harmed": {
+      "position": -2,
+      "evidence": "Communities of Colour policy; \"Welcoming, safe and fair pathways to make Aotearoa home\".",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_immigration_and_refugees",
+      "confidence": "high"
+     },
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": null,
+     "pop_cses_trustworthy": null,
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": {
+      "position": -1,
+      "evidence": "Lobbying register, donation caps, \"uphold the international rule of law\".",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_democracy",
+      "confidence": "low"
+     },
+     "pop_cses_people_decide": {
+      "position": 0,
+      "evidence": "Citizens' assemblies for local decisions, but entrench the Māori seats beyond referendums.",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_democracy",
+      "confidence": "low"
+     },
+     "pop_cses_rich_powerful": {
+      "position": 1,
+      "evidence": "Lobbying and donation reform so \"big money and professional lobbying can have less influence over politics\".",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_democracy",
+      "confidence": "low"
+     },
+     "pop_cses_majority": {
+      "position": -2,
+      "evidence": "Entrench the Māori seats; councils as Te Tiriti partners with Māori wards.",
+      "source_url": "https://www.greens.org.nz/manifesto_2026_democracy",
+      "confidence": "high"
+     }
+    },
+    "n_coded": 26,
+    "n_items": 36,
+    "confidence_counts": {
+     "high": 18,
+     "medium": 4,
+     "low": 4
+    },
+    "axes": {
+     "economic": {
+      "score": -7.5,
+      "n_items": 12,
+      "n_total": 12,
+      "enough": true,
+      "half_width": 2.26,
+      "keyed_mean": -1.5,
+      "keyed_sd": 0.798
+     },
+     "social": {
+      "score": -9.5,
+      "n_items": 10,
+      "n_total": 16,
+      "enough": true,
+      "half_width": 1.0,
+      "keyed_mean": -1.9,
+      "keyed_sd": 0.316
+     },
+     "populism": {
+      "score": -2.5,
+      "n_items": 4,
+      "n_total": 8,
+      "enough": true,
+      "half_width": 6.33,
+      "keyed_mean": -0.5,
+      "keyed_sd": 1.291
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": -7.5,
+      "n_items": 4,
+      "n_total": 4,
+      "shown": true
+     },
+     "cses_redistribution": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "nzes_economic": {
+      "score": -7.5,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "secs_economic": {
+      "score": -7.0,
+      "n_items": 5,
+      "n_total": 5,
+      "shown": true,
+      "secs_0_100": 32.5
+     },
+     "vsa_authoritarianism": {
+      "score": -10.0,
+      "n_items": 3,
+      "n_total": 6,
+      "shown": true
+     },
+     "secs_social": {
+      "score": -8.75,
+      "n_items": 4,
+      "n_total": 7,
+      "shown": true,
+      "secs_0_100": 28.1
+     },
+     "ess_social_values": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "cses_outgroup": {
+      "score": -10.0,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "cses_populism": {
+      "score": 0.0,
+      "n_items": 3,
+      "n_total": 7,
+      "shown": false
+     },
+     "cses_antipluralism": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     }
+    }
+   },
+   "published": {
+    "gps2019": [
+     {
+      "experts": 12,
+      "V4_Scale_economic_left_right": 2.778,
+      "V6_Scale_social_liberal_conservative": 1.889,
+      "V8_Scale_populist_rhetoric": 4.0,
+      "V9_populist_saliency": 3.6,
+      "V10_immigration_liberal_restrictive": 3.333,
+      "V11_spending_vs_tax_cuts": 2.778,
+      "V12_environment": 1.25,
+      "V13_nationalism_vs_multilateralism": 6.75,
+      "V16_liberal_democracy_respect_undermine": 2.875,
+      "WVS_LR_PartyVoter_mean_self_placement_1_10": 3.795,
+      "rescaled": {
+       "economic": -4.44,
+       "social": -6.22,
+       "populism": -2.0
+      }
+     }
+    ],
+    "vparty_v2": [
+     {
+      "election_year": 2002,
+      "v2pariglef_economic_left_right_interval": -2.282,
+      "v2pariglef_osp_0_6": 1.139,
+      "v2pawelf_welfare_osp_0_4": 4.526,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.148,
+      "v2paanteli_anti_elitism_osp_0_4": 2.498,
+      "v2papeople_people_centrism_osp_0_4": 1.112,
+      "v2paplur_political_pluralism_osp_0_4": 3.81,
+      "v2paimmig_immigration_osp_0_4": 2.227,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.95,
+      "v2parelig_religious_principles_osp_0_4": 3.804,
+      "v2xpa_popul_populism_index_0_1": 0.377,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.021,
+      "rescaled": {
+       "economic": -6.2,
+       "populism": -2.46
+      }
+     },
+     {
+      "election_year": 2005,
+      "v2pariglef_economic_left_right_interval": -2.282,
+      "v2pariglef_osp_0_6": 1.139,
+      "v2pawelf_welfare_osp_0_4": 4.526,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.147,
+      "v2paanteli_anti_elitism_osp_0_4": 2.498,
+      "v2papeople_people_centrism_osp_0_4": 1.112,
+      "v2paplur_political_pluralism_osp_0_4": 3.81,
+      "v2paimmig_immigration_osp_0_4": 2.227,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.95,
+      "v2parelig_religious_principles_osp_0_4": 3.804,
+      "v2xpa_popul_populism_index_0_1": 0.377,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.021,
+      "rescaled": {
+       "economic": -6.2,
+       "populism": -2.46
+      }
+     },
+     {
+      "election_year": 2008,
+      "v2pariglef_economic_left_right_interval": -2.282,
+      "v2pariglef_osp_0_6": 1.139,
+      "v2pawelf_welfare_osp_0_4": 4.526,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.477,
+      "v2paanteli_anti_elitism_osp_0_4": 2.498,
+      "v2papeople_people_centrism_osp_0_4": 1.112,
+      "v2paplur_political_pluralism_osp_0_4": 3.81,
+      "v2paimmig_immigration_osp_0_4": 2.227,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.95,
+      "v2parelig_religious_principles_osp_0_4": 3.804,
+      "v2xpa_popul_populism_index_0_1": 0.377,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.021,
+      "rescaled": {
+       "economic": -6.2,
+       "populism": -2.46
+      }
+     },
+     {
+      "election_year": 2011,
+      "v2pariglef_economic_left_right_interval": -2.282,
+      "v2pariglef_osp_0_6": 1.139,
+      "v2pawelf_welfare_osp_0_4": 4.526,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.477,
+      "v2paanteli_anti_elitism_osp_0_4": 2.498,
+      "v2papeople_people_centrism_osp_0_4": 1.112,
+      "v2paplur_political_pluralism_osp_0_4": 3.81,
+      "v2paimmig_immigration_osp_0_4": 2.227,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.95,
+      "v2parelig_religious_principles_osp_0_4": 3.804,
+      "v2xpa_popul_populism_index_0_1": 0.377,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.021,
+      "rescaled": {
+       "economic": -6.2,
+       "populism": -2.46
+      }
+     },
+     {
+      "election_year": 2014,
+      "v2pariglef_economic_left_right_interval": -2.282,
+      "v2pariglef_osp_0_6": 1.139,
+      "v2pawelf_welfare_osp_0_4": 4.526,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.477,
+      "v2paanteli_anti_elitism_osp_0_4": 2.498,
+      "v2papeople_people_centrism_osp_0_4": 1.112,
+      "v2paplur_political_pluralism_osp_0_4": 3.81,
+      "v2paimmig_immigration_osp_0_4": 2.227,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.95,
+      "v2parelig_religious_principles_osp_0_4": 3.804,
+      "v2xpa_popul_populism_index_0_1": 0.377,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.02,
+      "rescaled": {
+       "economic": -6.2,
+       "populism": -2.46
+      }
+     },
+     {
+      "election_year": 2017,
+      "v2pariglef_economic_left_right_interval": -2.282,
+      "v2pariglef_osp_0_6": 1.139,
+      "v2pawelf_welfare_osp_0_4": 4.526,
+      "v2paculsup_cultural_superiority_osp_0_4": 3.477,
+      "v2paanteli_anti_elitism_osp_0_4": 2.498,
+      "v2papeople_people_centrism_osp_0_4": 1.112,
+      "v2paplur_political_pluralism_osp_0_4": 3.81,
+      "v2paimmig_immigration_osp_0_4": 2.021,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.95,
+      "v2parelig_religious_principles_osp_0_4": 3.804,
+      "v2xpa_popul_populism_index_0_1": 0.377,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.02,
+      "rescaled": {
+       "economic": -6.2,
+       "populism": -2.46
+      }
+     }
+    ],
+    "cses5": [
+     {
+      "election_year": 2017,
+      "E5018_expert_left_right_0_10": 3.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 2.56,
+      "E3019_n_respondents_placing": 1319,
+      "rescaled": {
+       "general_left_right_expert": -4.0,
+       "general_left_right_voters": -4.88
+      }
+     },
+     {
+      "election_year": 2020,
+      "E5018_expert_left_right_0_10": 2.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 2.26,
+      "E3019_n_respondents_placing": 1222,
+      "rescaled": {
+       "general_left_right_expert": -6.0,
+       "general_left_right_voters": -5.48
+      }
+     }
+    ],
+    "nzes_voters": [
+     {
+      "election_year": 2023,
+      "item": "B5",
+      "mean_left_right_0_10_weighted": 7.12,
+      "sd": 2.36,
+      "weighted_n_placing": 1958.3,
+      "dont_know_pct": 21.17,
+      "distribution_weighted_freq": {
+       "0": 46.9,
+       "1": 7.2,
+       "2": 23.5,
+       "3": 41.8,
+       "4": 54.6,
+       "5": 375.7,
+       "6": 222.6,
+       "7": 196.5,
+       "8": 333.4,
+       "9": 266.6,
+       "10": 389.4
+      },
+      "rescaled": {
+       "general_left_right_voters": 4.24
+      }
+     },
+     {
+      "election_year": 2020,
+      "item": "B7",
+      "mean_left_right_0_10_weighted": 7.11,
+      "sd": 2.55,
+      "weighted_n_placing": 2145.7,
+      "dont_know_pct": 31.28,
+      "distribution_weighted_freq": {
+       "0": 81.2,
+       "1": 32.7,
+       "2": 68.3,
+       "3": 51.4,
+       "4": 45.7,
+       "5": 193.2,
+       "6": 161.5,
+       "7": 336.2,
+       "8": 463.6,
+       "9": 377.0,
+       "10": 335.0
+      },
+      "rescaled": {
+       "general_left_right_voters": 4.22
+      }
+     }
+    ],
+    "parlgov": [
+     {
+      "parlgov_party_id": 1171,
+      "family": "Green/Ecologist",
+      "left_right_0_10": 1.7729,
+      "state_market_0_10": 2.2438,
+      "liberty_authority_0_10": 1.8,
+      "based_on_expert_surveys": true,
+      "expert_survey_ids": {
+       "benoit_laver": "7252"
+      },
+      "rescaled": {
+       "economic": -5.51,
+       "social": -6.4,
+       "general_left_right": -6.45
+      }
+     }
+    ]
+   },
+   "comparison": {
+    "gps2019_economic": {
+     "ours": -7.5,
+     "published": -4.44,
+     "difference_ours_minus_published": -3.06
+    },
+    "gps2019_social": {
+     "ours": -9.5,
+     "published": -6.22,
+     "difference_ours_minus_published": -3.28
+    },
+    "gps2019_populism": {
+     "ours": -2.5,
+     "published": -2.0,
+     "difference_ours_minus_published": -0.5
+    },
+    "parlgov_economic": {
+     "ours": -7.5,
+     "published": -5.51,
+     "difference_ours_minus_published": -1.99
+    },
+    "parlgov_social": {
+     "ours": -9.5,
+     "published": -6.4,
+     "difference_ours_minus_published": -3.1
+    },
+    "vparty2017_economic": {
+     "ours": -7.5,
+     "published": -6.2,
+     "difference_ours_minus_published": -1.3
+    },
+    "vparty2017_populism": {
+     "ours": -2.5,
+     "published": -2.46,
+     "difference_ours_minus_published": -0.04
+    },
+    "nzes2023_voters_general_left_right": {
+     "ours_economic": -7.5,
+     "published_general_left_right": 4.24,
+     "note": "voters' general left-right placement, not an economic-only scale"
+    }
+   }
+  },
+  "act": {
+   "name": "ACT",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": {
+      "position": -1,
+      "evidence": "Fiscal plan aims at \"much lower, flatter taxes\"; no capital gains tax; opposes wealth taxes.",
+      "source_url": "https://balancethebooks.nz/",
+      "confidence": "medium"
+     },
+     "econ_wvs_ownership": {
+      "position": 1,
+      "evidence": "Open power transmission to private investment; opposes break-ups and state-run alternatives; public-private partnerships for cancer centres.",
+      "source_url": "https://assets.nationbuilder.com/actnz/pages/37361/attachments/original/1789601230/Stability__investment__affordability.pdf?1789601230",
+      "confidence": "medium"
+     },
+     "econ_wvs_responsibility": {
+      "position": -2,
+      "evidence": "\"Welfare should unlock potential, not trap it\"; restore \"personal responsibility, and the value of work\"; five-year benefit stand-down for new residents.",
+      "source_url": "https://www.act.org.nz/news/act-announces-policy-to-make-benefits-a-hand-up-not-a-way-of-life",
+      "confidence": "high"
+     },
+     "econ_wvs_competition": {
+      "position": 2,
+      "evidence": "\"More competition and ...\" is ACT's standard remedy; one-stop consenting body to approve competing supermarkets.",
+      "source_url": "https://www.act.org.nz/news/act%E2%80%99s-plan-to-increase-supermarket-competition",
+      "confidence": "high"
+     },
+     "econ_cses_reduce_differences": {
+      "position": -2,
+      "evidence": "No capital gains tax; \"much lower, flatter taxes, paid for by spending control\".",
+      "source_url": "https://balancethebooks.nz/",
+      "confidence": "medium"
+     },
+     "econ_nzes_privatisation": {
+      "position": -1,
+      "evidence": "Favours private investment in transmission and public-private partnerships; no concern expressed about past privatisation.",
+      "source_url": "https://assets.nationbuilder.com/actnz/pages/37361/attachments/original/1789601230/Stability__investment__affordability.pdf?1789601230",
+      "confidence": "medium"
+     },
+     "econ_nzes_big_business": {
+      "position": -1,
+      "evidence": "Criticises \"political leadership blame[ing] companies for their prices\", which \"creates greater bureaucracy\".",
+      "source_url": "https://www.act.org.nz/news/act%E2%80%99s-plan-to-increase-supermarket-competition",
+      "confidence": "medium"
+     },
+     "econ_secs_limited_government": {
+      "position": 2,
+      "evidence": "\"smaller, more efficient government\"; halve the number of ministries; cut non-frontline spending to 2017 levels.",
+      "source_url": "https://www.act.org.nz/affordable-government",
+      "confidence": "high"
+     },
+     "econ_secs_welfare_benefits": {
+      "position": -2,
+      "evidence": "Benefits \"a hand-up, not a way of life\"; money-management cards after four months; tighter medical certification.",
+      "source_url": "https://www.act.org.nz/news/act-announces-policy-to-make-benefits-a-hand-up-not-a-way-of-life",
+      "confidence": "high"
+     },
+     "econ_secs_business": {
+      "position": 2,
+      "evidence": "\"Small businesses shouldn't need a lawyer just to have a difficult conversation\"; growth policies built around business.",
+      "source_url": "https://balancethebooks.nz/",
+      "confidence": "high"
+     },
+     "econ_secs_fiscal_responsibility": {
+      "position": 2,
+      "evidence": "\"Government has to do its part by living within its means\"; surplus in 2028/29 and $12.4b less debt by 2031.",
+      "source_url": "https://balancethebooks.nz/",
+      "confidence": "high"
+     },
+     "econ_secs_gun_ownership": {
+      "position": 2,
+      "evidence": "\"restored common sense to firearms laws\"; policies to back hunters and make disrupting lawful hunters an offence.",
+      "source_url": "https://www.act.org.nz/news/act-will-make-farming-fun-again",
+      "confidence": "high"
+     },
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": null,
+     "soc_vsa_gods_laws": {
+      "position": -2,
+      "evidence": "Voted for abortion decriminalisation at every stage (2020) and sponsored the End of Life Choice Act.",
+      "source_url": "https://en.wikipedia.org/wiki/Abortion_Legislation_Act_2020",
+      "confidence": "high"
+     },
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": -2,
+      "evidence": "Mandatory minimum three years for a third burglary; voted to reinstate three strikes.",
+      "source_url": "https://www.act.org.nz/burglary",
+      "confidence": "high"
+     },
+     "soc_vsa_crack_down": {
+      "position": 2,
+      "evidence": "Three strikes for burglary; deport non-citizen serious offenders; licensed security guards with powers to remove people.",
+      "source_url": "https://www.act.org.nz/burglary",
+      "confidence": "high"
+     },
+     "soc_secs_abortion": {
+      "position": 1,
+      "evidence": "Voted for the Abortion Legislation Act 2020 at all three readings.",
+      "source_url": "https://en.wikipedia.org/wiki/Abortion_Legislation_Act_2020",
+      "confidence": "medium"
+     },
+     "soc_secs_religion": {
+      "position": -1,
+      "evidence": "Exclude \"purely spiritual and religious effects\" from planning law; no karakia or prayers in public-service work time.",
+      "source_url": "https://assets.nationbuilder.com/actnz/mailings/59226/attachments/original/PublicService_policy_03.pdf?1786679526",
+      "confidence": "low"
+     },
+     "soc_secs_traditional_marriage": {
+      "position": -1,
+      "evidence": "ACT's MP voted for marriage equality (2013); liberal on personal choice.",
+      "source_url": "https://en.wikipedia.org/wiki/Marriage_(Definition_of_Marriage)_Amendment_Act_2013",
+      "confidence": "low"
+     },
+     "soc_secs_traditional_values": {
+      "position": -1,
+      "evidence": "Classical-liberal: End of Life Choice, abortion decriminalisation, secular public service.",
+      "source_url": "https://en.wikipedia.org/wiki/Abortion_Legislation_Act_2020",
+      "confidence": "low"
+     },
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": null,
+     "soc_secs_military": {
+      "position": 1,
+      "evidence": "Fiscal plan protects spending growth in \"core frontline services such as health, education, defence\".",
+      "source_url": "https://assets.nationbuilder.com/actnz/pages/38747/attachments/original/1791599898/ACT_2026_Fiscal_Plan.pdf?1791599898",
+      "confidence": "medium"
+     },
+     "soc_ess_gay_free": {
+      "position": 1,
+      "evidence": "Voted for marriage equality (2013) and the conversion-practices ban (2022).",
+      "source_url": "https://en.wikipedia.org/wiki/Conversion_Practices_Prohibition_Legislation_Act_2022",
+      "confidence": "medium"
+     },
+     "soc_cses_immigrants_economy": {
+      "position": 1,
+      "evidence": "Skills categories kept open where demand is shown; \"why are we paying people to stay at home who could be doing jobs we are currently filling with migrants?\"",
+      "source_url": "https://www.act.org.nz/news/act-announces-policy-to-make-benefits-a-hand-up-not-a-way-of-life",
+      "confidence": "low"
+     },
+     "soc_cses_culture_harmed": null,
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": null,
+     "pop_cses_trustworthy": null,
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": {
+      "position": -2,
+      "evidence": "Add to the Constitution Act that \"the rule of law is fundamental\" and \"Everyone, including the Government, should be bound by the law\".",
+      "source_url": "https://assets.nationbuilder.com/actnz/pages/36437/attachments/original/1787277161/One_Law_for_All_policy_06.pdf?1787277161",
+      "confidence": "high"
+     },
+     "pop_cses_people_decide": {
+      "position": 1,
+      "evidence": "Campaigned for a binding referendum on Treaty principles; restored binding local referendums on Māori wards.",
+      "source_url": "https://www.act.org.nz/one-law-for-all",
+      "confidence": "medium"
+     },
+     "pop_cses_rich_powerful": null,
+     "pop_cses_majority": {
+      "position": 1,
+      "evidence": "Treaty principles must not \"go beyond what Parliament intend[ed]\" \"to protect democratic majority rule\"; but \"every New Zealander is equal before the law\".",
+      "source_url": "https://assets.nationbuilder.com/actnz/pages/36437/attachments/original/1787277161/One_Law_for_All_policy_06.pdf?1787277161",
+      "confidence": "medium"
+     }
+    },
+    "n_coded": 25,
+    "n_items": 36,
+    "confidence_counts": {
+     "medium": 10,
+     "high": 11,
+     "low": 4
+    },
+    "axes": {
+     "economic": {
+      "score": 8.33,
+      "n_items": 12,
+      "n_total": 12,
+      "enough": true,
+      "half_width": 1.39,
+      "keyed_mean": 1.667,
+      "keyed_sd": 0.492
+     },
+     "social": {
+      "score": -1.5,
+      "n_items": 10,
+      "n_total": 16,
+      "enough": true,
+      "half_width": 4.39,
+      "keyed_mean": -0.3,
+      "keyed_sd": 1.418
+     },
+     "populism": {
+      "score": 0.0,
+      "n_items": 3,
+      "n_total": 8,
+      "enough": false,
+      "half_width": 9.8,
+      "keyed_mean": 0.0,
+      "keyed_sd": 1.732
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": 7.5,
+      "n_items": 4,
+      "n_total": 4,
+      "shown": true
+     },
+     "cses_redistribution": {
+      "score": 10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "nzes_economic": {
+      "score": 5.0,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "secs_economic": {
+      "score": 10.0,
+      "n_items": 5,
+      "n_total": 5,
+      "shown": true,
+      "secs_0_100": 75.0
+     },
+     "vsa_authoritarianism": {
+      "score": 3.33,
+      "n_items": 3,
+      "n_total": 6,
+      "shown": true
+     },
+     "secs_social": {
+      "score": -3.0,
+      "n_items": 5,
+      "n_total": 7,
+      "shown": true,
+      "secs_0_100": 42.5
+     },
+     "ess_social_values": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "cses_outgroup": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 2,
+      "shown": true
+     },
+     "cses_populism": {
+      "score": -2.5,
+      "n_items": 2,
+      "n_total": 7,
+      "shown": false
+     },
+     "cses_antipluralism": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     }
+    }
+   },
+   "published": {
+    "gps2019": [
+     {
+      "experts": 12,
+      "V4_Scale_economic_left_right": 8.3,
+      "V6_Scale_social_liberal_conservative": 3.714,
+      "V8_Scale_populist_rhetoric": 6.0,
+      "V9_populist_saliency": 5.429,
+      "V10_immigration_liberal_restrictive": 3.25,
+      "V11_spending_vs_tax_cuts": 8.0,
+      "V12_environment": 7.5,
+      "V13_nationalism_vs_multilateralism": 7.8,
+      "V16_liberal_democracy_respect_undermine": 2.429,
+      "WVS_LR_PartyVoter_mean_self_placement_1_10": 7.053,
+      "rescaled": {
+       "economic": 6.6,
+       "social": -2.57,
+       "populism": 2.0
+      }
+     }
+    ],
+    "vparty_v2": [
+     {
+      "election_year": 2002,
+      "v2pariglef_economic_left_right_interval": 2.389,
+      "v2pariglef_osp_0_6": 4.873,
+      "v2pawelf_welfare_osp_0_4": 0.606,
+      "v2paculsup_cultural_superiority_osp_0_4": 2.889,
+      "v2paanteli_anti_elitism_osp_0_4": 0.922,
+      "v2papeople_people_centrism_osp_0_4": 1.127,
+      "v2paplur_political_pluralism_osp_0_4": 3.388,
+      "v2paimmig_immigration_osp_0_4": 3.268,
+      "v2palgbt_lgbt_equality_osp_0_4": 2.018,
+      "v2parelig_religious_principles_osp_0_4": 3.808,
+      "v2xpa_popul_populism_index_0_1": 0.237,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.153,
+      "rescaled": {
+       "economic": 6.24,
+       "populism": -5.26
+      }
+     }
+    ],
+    "cses5": [
+     {
+      "election_year": 2017,
+      "E5018_expert_left_right_0_10": 9.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 7.36,
+      "E3019_n_respondents_placing": 1123,
+      "rescaled": {
+       "general_left_right_expert": 8.0,
+       "general_left_right_voters": 4.72
+      }
+     },
+     {
+      "election_year": 2020,
+      "E5018_expert_left_right_0_10": 8.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 7.34,
+      "E3019_n_respondents_placing": 1125,
+      "rescaled": {
+       "general_left_right_expert": 6.0,
+       "general_left_right_voters": 4.68
+      }
+     }
+    ],
+    "nzes_voters": [
+     {
+      "election_year": 2023,
+      "item": "B5",
+      "mean_left_right_0_10_weighted": 3.8,
+      "sd": 3.44,
+      "weighted_n_placing": 1649.8,
+      "dont_know_pct": 21.78,
+      "distribution_weighted_freq": {
+       "0": 340.3,
+       "1": 214.2,
+       "2": 232.6,
+       "3": 188.1,
+       "4": 84.1,
+       "5": 128.4,
+       "6": 13.7,
+       "7": 13.3,
+       "8": 178.8,
+       "9": 116.3,
+       "10": 140.0
+      },
+      "rescaled": {
+       "general_left_right_voters": -2.4
+      }
+     },
+     {
+      "election_year": 2020,
+      "item": "B7",
+      "mean_left_right_0_10_weighted": 7.31,
+      "sd": 3.44,
+      "weighted_n_placing": 1513.1,
+      "dont_know_pct": 38.3,
+      "distribution_weighted_freq": {
+       "0": 147.4,
+       "1": 41.8,
+       "2": 59.0,
+       "3": 30.5,
+       "4": 30.6,
+       "5": 80.0,
+       "6": 52.1,
+       "7": 79.7,
+       "8": 154.0,
+       "9": 202.5,
+       "10": 635.6
+      },
+      "rescaled": {
+       "general_left_right_voters": 4.62
+      }
+     }
+    ],
+    "parlgov": [
+     {
+      "parlgov_party_id": 617,
+      "family": "Liberal",
+      "left_right_0_10": 9.0263,
+      "state_market_0_10": 8.9751,
+      "liberty_authority_0_10": 3.6,
+      "based_on_expert_surveys": true,
+      "expert_survey_ids": {
+       "benoit_laver": "7220"
+      },
+      "rescaled": {
+       "economic": 7.95,
+       "social": -2.8,
+       "general_left_right": 8.05
+      }
+     }
+    ]
+   },
+   "comparison": {
+    "gps2019_economic": {
+     "ours": 8.33,
+     "published": 6.6,
+     "difference_ours_minus_published": 1.73
+    },
+    "gps2019_social": {
+     "ours": -1.5,
+     "published": -2.57,
+     "difference_ours_minus_published": 1.07
+    },
+    "gps2019_populism": {
+     "ours": 0.0,
+     "published": 2.0,
+     "difference_ours_minus_published": -2.0
+    },
+    "parlgov_economic": {
+     "ours": 8.33,
+     "published": 7.95,
+     "difference_ours_minus_published": 0.38
+    },
+    "parlgov_social": {
+     "ours": -1.5,
+     "published": -2.8,
+     "difference_ours_minus_published": 1.3
+    },
+    "nzes2023_voters_general_left_right": {
+     "ours_economic": 8.33,
+     "published_general_left_right": -2.4,
+     "note": "voters' general left-right placement, not an economic-only scale"
+    }
+   }
+  },
+  "nz-first": {
+   "name": "NZ First",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": {
+      "position": 0,
+      "evidence": "Peters lists \"Egalitarianism\" among NZ First's values, but attacks Opportunity's \"redistribution of wealth and bludging tax policy\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "low"
+     },
+     "econ_wvs_ownership": {
+      "position": -2,
+      "evidence": "\"we own our country's assets\"; \"No government with New Zealand First will be selling our assets\"; buy back BNZ.",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "high"
+     },
+     "econ_wvs_responsibility": {
+      "position": 0,
+      "evidence": "Mixed: \"targeted government intervention ... a hand up in times of need\" versus calling a universal basic income \"communism\" and listing \"personal responsibility\" as a kiwi value.",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "medium"
+     },
+     "econ_wvs_competition": {
+      "position": 1,
+      "evidence": "Break up the supermarket duopoly: \"Creating more competition will drive prices down\" - but also calls NZ \"the victim of a totally unfettered free market\".",
+      "source_url": "https://www.nzfirst.nz/break_up_the_supermarket_duopoly",
+      "confidence": "medium"
+     },
+     "econ_cses_reduce_differences": {
+      "position": 0,
+      "evidence": "\"Egalitarianism\" claimed as a value; Opportunity's land-tax-funded income called \"robbing Peter to pay Paul\" and \"communism\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2608/S00133/winston-peters-speech-the-labour-green-maori-opportunity-antipodean-animal-farm.htm",
+      "confidence": "low"
+     },
+     "econ_nzes_privatisation": {
+      "position": 2,
+      "evidence": "\"Labour and National, went on to sell our assets, privatise our country ... an abject failure and purveyor of misery\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "high"
+     },
+     "econ_nzes_big_business": {
+      "position": 1,
+      "evidence": "Power system \"designed to make maximum profits for power companies\"; break up the supermarket duopoly; Australian-owned banks.",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "medium"
+     },
+     "econ_secs_limited_government": {
+      "position": 0,
+      "evidence": "\"targeted government intervention\" and economic nationalism, alongside attacks on \"bureaucracy gone mad\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "low"
+     },
+     "econ_secs_welfare_benefits": {
+      "position": -1,
+      "evidence": "Ten-year benefit stand-down for migrants; UBI called \"communism\"; defends superannuation.",
+      "source_url": "https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies",
+      "confidence": "medium"
+     },
+     "econ_secs_business": {
+      "position": 1,
+      "evidence": "Company tax cut to 20% for firms under $30m turnover; hostile to power companies and Australian banks.",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "medium"
+     },
+     "econ_secs_fiscal_responsibility": {
+      "position": 1,
+      "evidence": "Attacks the previous government's \"massive overborrowing\"; Labour \"will tax more, spend more, and borrow more\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "medium"
+     },
+     "econ_secs_gun_ownership": {
+      "position": -1,
+      "evidence": "Supported the 2019 firearms ban in government.",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_First",
+      "confidence": "low"
+     },
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": null,
+     "soc_vsa_gods_laws": {
+      "position": 0,
+      "evidence": "Self-described \"only socially conservative party\" that voted against same-sex marriage, yet Peters says \"the government has no place in the nation's bedrooms\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2606/S00103/winston-peters-speech-keep-hope-alive.htm",
+      "confidence": "low"
+     },
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": -2,
+      "evidence": "More mandatory minimum sentences, tougher parole, caps on sentence discounts.",
+      "source_url": "https://www.nzfirst.nz/",
+      "confidence": "high"
+     },
+     "soc_vsa_crack_down": {
+      "position": 2,
+      "evidence": "Mandatory minimums for violent and sexual offenders; attacks Labour's \"ridiculous view on law and order\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2608/S00133/winston-peters-speech-the-labour-green-maori-opportunity-antipodean-animal-farm.htm",
+      "confidence": "high"
+     },
+     "soc_secs_abortion": {
+      "position": -1,
+      "evidence": "Seven of nine NZ First MPs voted against the 2020 Act at its third reading after Peters demanded a referendum.",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_First",
+      "confidence": "medium"
+     },
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": {
+      "position": 1,
+      "evidence": "All seven NZ First MPs voted against same-sex marriage in 2013; \"the only socially conservative party\".",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_First",
+      "confidence": "medium"
+     },
+     "soc_secs_traditional_values": {
+      "position": 2,
+      "evidence": "\"We are the only socially conservative party\"; \"proud traditional kiwi values\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "high"
+     },
+     "soc_secs_family_unit": {
+      "position": 1,
+      "evidence": "$5,000 grant for new parents; socially conservative self-description.",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "low"
+     },
+     "soc_secs_patriotism": {
+      "position": 2,
+      "evidence": "\"We are the only patriotic party ... We stand proud to be patriots of New Zealand\"; \"nationalist with a capital N\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "high"
+     },
+     "soc_secs_military": {
+      "position": 1,
+      "evidence": "\"energy security is national security\"; praises Ron Mark's defence procurement record; coalition partner in the 2025 Defence Capability Plan.",
+      "source_url": "https://www.scoop.co.nz/stories/PA2608/S00010/winston-peters-speech-new-zealand-in-its-eleventh-hour.htm",
+      "confidence": "medium"
+     },
+     "soc_ess_gay_free": {
+      "position": 0,
+      "evidence": "\"the government has no place in the nation's bedrooms – may a thousand blossoms bloom\", but derides \"rainbow-wars\" and voted against same-sex marriage.",
+      "source_url": "https://www.scoop.co.nz/stories/PA2606/S00103/winston-peters-speech-keep-hope-alive.htm",
+      "confidence": "medium"
+     },
+     "soc_cses_immigrants_economy": {
+      "position": -1,
+      "evidence": "Opening \"our borders to mass immigration\" part of an \"abject failure\"; visas tied to genuine shortages.",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "medium"
+     },
+     "soc_cses_culture_harmed": {
+      "position": 1,
+      "evidence": "Governments \"open[ed] our society to every wild-west simpleton ideology\"; \"one people, one country, one flag, one law\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "medium"
+     },
+     "pop_cses_compromise": {
+      "position": 0,
+      "evidence": "Says leaders must \"say the things people are thinking without fear or favour\", yet has governed with both National and Labour and \"reluctantly supported\" ACT's Regulatory Standards Act.",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_First",
+      "confidence": "medium"
+     },
+     "pop_cses_dont_care": {
+      "position": 1,
+      "evidence": "\"Those out of touch, bureaucratic, left elitists\"; \"Ordinary kiwis have had enough.\"",
+      "source_url": "https://www.scoop.co.nz/stories/PA2605/S00140/winston-peters-speech-by-their-deeds-you-will-know-them.htm",
+      "confidence": "medium"
+     },
+     "pop_cses_trustworthy": {
+      "position": -1,
+      "evidence": "Attacks \"elitist\" opponents and \"Wellington\" as out of touch.",
+      "source_url": "https://www.scoop.co.nz/stories/PA2605/S00140/winston-peters-speech-by-their-deeds-you-will-know-them.htm",
+      "confidence": "low"
+     },
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": {
+      "position": 0,
+      "evidence": "\"New Zealand needs strong leadership who are not afraid to be strong\", while naming \"the rule of law\" a core Western value.",
+      "source_url": "https://www.scoop.co.nz/stories/PA2608/S00133/winston-peters-speech-the-labour-green-maori-opportunity-antipodean-animal-farm.htm",
+      "confidence": "medium"
+     },
+     "pop_cses_people_decide": {
+      "position": 2,
+      "evidence": "Binding referendum on the Māori seats; long-standing advocacy of \"binding citizen initiated referenda\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2602/S00071/new-zealand-first-to-campaign-for-referendum-on-maori-seats.htm",
+      "confidence": "high"
+     },
+     "pop_cses_rich_powerful": {
+      "position": 1,
+      "evidence": "Fonterra \"gone from a propped-up nationalist company, to a sell-out globalist company\"; attacks \"elitists\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
+      "confidence": "low"
+     },
+     "pop_cses_majority": {
+      "position": 2,
+      "evidence": "Binding referendum on the Māori seats; \"forcing government to accept the will of the people\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2602/S00071/new-zealand-first-to-campaign-for-referendum-on-maori-seats.htm",
+      "confidence": "high"
+     }
+    },
+    "n_coded": 31,
+    "n_items": 36,
+    "confidence_counts": {
+     "low": 8,
+     "high": 8,
+     "medium": 15
+    },
+    "axes": {
+     "economic": {
+      "score": -0.83,
+      "n_items": 12,
+      "n_total": 12,
+      "enough": true,
+      "half_width": 3.15,
+      "keyed_mean": -0.167,
+      "keyed_sd": 1.115
+     },
+     "social": {
+      "score": 5.83,
+      "n_items": 12,
+      "n_total": 16,
+      "enough": true,
+      "half_width": 2.03,
+      "keyed_mean": 1.167,
+      "keyed_sd": 0.718
+     },
+     "populism": {
+      "score": 5.0,
+      "n_items": 7,
+      "n_total": 8,
+      "enough": true,
+      "half_width": 3.02,
+      "keyed_mean": 1.0,
+      "keyed_sd": 0.816
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": -1.25,
+      "n_items": 4,
+      "n_total": 4,
+      "shown": true
+     },
+     "cses_redistribution": {
+      "score": 0.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "nzes_economic": {
+      "score": -7.5,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "secs_economic": {
+      "score": 2.0,
+      "n_items": 5,
+      "n_total": 5,
+      "shown": true,
+      "secs_0_100": 55.0
+     },
+     "vsa_authoritarianism": {
+      "score": 6.67,
+      "n_items": 3,
+      "n_total": 6,
+      "shown": true
+     },
+     "secs_social": {
+      "score": 6.67,
+      "n_items": 6,
+      "n_total": 7,
+      "shown": true,
+      "secs_0_100": 66.7
+     },
+     "ess_social_values": {
+      "score": 0.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "cses_outgroup": {
+      "score": 5.0,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "cses_populism": {
+      "score": 4.17,
+      "n_items": 6,
+      "n_total": 7,
+      "shown": true
+     },
+     "cses_antipluralism": {
+      "score": 10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     }
+    }
+   },
+   "published": {
+    "gps2019": [
+     {
+      "experts": 12,
+      "V4_Scale_economic_left_right": 6.4,
+      "V6_Scale_social_liberal_conservative": 7.875,
+      "V8_Scale_populist_rhetoric": 8.222,
+      "V9_populist_saliency": 8.222,
+      "V10_immigration_liberal_restrictive": 8.625,
+      "V11_spending_vs_tax_cuts": 4.0,
+      "V12_environment": 7.5,
+      "V13_nationalism_vs_multilateralism": 5.8,
+      "V16_liberal_democracy_respect_undermine": 3.667,
+      "WVS_LR_PartyVoter_mean_self_placement_1_10": 6.033,
+      "rescaled": {
+       "economic": 2.8,
+       "social": 5.75,
+       "populism": 6.44
+      }
+     }
+    ],
+    "vparty_v2": [
+     {
+      "election_year": 2002,
+      "v2pariglef_economic_left_right_interval": 0.033,
+      "v2pariglef_osp_0_6": 2.968,
+      "v2pawelf_welfare_osp_0_4": 3.04,
+      "v2paculsup_cultural_superiority_osp_0_4": 2.567,
+      "v2paanteli_anti_elitism_osp_0_4": 3.458,
+      "v2papeople_people_centrism_osp_0_4": 3.865,
+      "v2paplur_political_pluralism_osp_0_4": 3.255,
+      "v2paimmig_immigration_osp_0_4": 1.363,
+      "v2palgbt_lgbt_equality_osp_0_4": 1.745,
+      "v2parelig_religious_principles_osp_0_4": 3.805,
+      "v2xpa_popul_populism_index_0_1": 0.903,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.316,
+      "rescaled": {
+       "economic": -0.11,
+       "populism": 8.06
+      }
+     },
+     {
+      "election_year": 2005,
+      "v2pariglef_economic_left_right_interval": 0.033,
+      "v2pariglef_osp_0_6": 2.968,
+      "v2pawelf_welfare_osp_0_4": 3.04,
+      "v2paculsup_cultural_superiority_osp_0_4": 2.569,
+      "v2paanteli_anti_elitism_osp_0_4": 3.458,
+      "v2papeople_people_centrism_osp_0_4": 3.865,
+      "v2paplur_political_pluralism_osp_0_4": 3.255,
+      "v2paimmig_immigration_osp_0_4": 1.363,
+      "v2palgbt_lgbt_equality_osp_0_4": 1.745,
+      "v2parelig_religious_principles_osp_0_4": 3.803,
+      "v2xpa_popul_populism_index_0_1": 0.903,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.316,
+      "rescaled": {
+       "economic": -0.11,
+       "populism": 8.06
+      }
+     },
+     {
+      "election_year": 2011,
+      "v2pariglef_economic_left_right_interval": 0.03,
+      "v2pariglef_osp_0_6": 2.965,
+      "v2pawelf_welfare_osp_0_4": 3.027,
+      "v2paculsup_cultural_superiority_osp_0_4": 2.558,
+      "v2paanteli_anti_elitism_osp_0_4": 3.458,
+      "v2papeople_people_centrism_osp_0_4": 3.868,
+      "v2paplur_political_pluralism_osp_0_4": 3.263,
+      "v2paimmig_immigration_osp_0_4": 1.37,
+      "v2palgbt_lgbt_equality_osp_0_4": 1.755,
+      "v2parelig_religious_principles_osp_0_4": 3.806,
+      "v2xpa_popul_populism_index_0_1": 0.904,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.317,
+      "rescaled": {
+       "economic": -0.12,
+       "populism": 8.08
+      }
+     },
+     {
+      "election_year": 2014,
+      "v2pariglef_economic_left_right_interval": -0.158,
+      "v2pariglef_osp_0_6": 2.792,
+      "v2pawelf_welfare_osp_0_4": 3.027,
+      "v2paculsup_cultural_superiority_osp_0_4": 2.554,
+      "v2paanteli_anti_elitism_osp_0_4": 3.458,
+      "v2papeople_people_centrism_osp_0_4": 3.868,
+      "v2paplur_political_pluralism_osp_0_4": 3.263,
+      "v2paimmig_immigration_osp_0_4": 1.362,
+      "v2palgbt_lgbt_equality_osp_0_4": 1.989,
+      "v2parelig_religious_principles_osp_0_4": 3.806,
+      "v2xpa_popul_populism_index_0_1": 0.904,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.317,
+      "rescaled": {
+       "economic": -0.69,
+       "populism": 8.08
+      }
+     },
+     {
+      "election_year": 2017,
+      "v2pariglef_economic_left_right_interval": -0.158,
+      "v2pariglef_osp_0_6": 2.795,
+      "v2pawelf_welfare_osp_0_4": 3.027,
+      "v2paculsup_cultural_superiority_osp_0_4": 2.56,
+      "v2paanteli_anti_elitism_osp_0_4": 3.458,
+      "v2papeople_people_centrism_osp_0_4": 3.868,
+      "v2paplur_political_pluralism_osp_0_4": 3.263,
+      "v2paimmig_immigration_osp_0_4": 1.362,
+      "v2palgbt_lgbt_equality_osp_0_4": 1.989,
+      "v2parelig_religious_principles_osp_0_4": 3.806,
+      "v2xpa_popul_populism_index_0_1": 0.904,
+      "v2xpa_antiplural_antipluralism_index_0_1": 0.299,
+      "rescaled": {
+       "economic": -0.68,
+       "populism": 8.08
+      }
+     }
+    ],
+    "cses5": [
+     {
+      "election_year": 2017,
+      "E5018_expert_left_right_0_10": 5.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 5.44,
+      "E3019_n_respondents_placing": 1240,
+      "rescaled": {
+       "general_left_right_expert": 0.0,
+       "general_left_right_voters": 0.88
+      }
+     },
+     {
+      "election_year": 2020,
+      "E5018_expert_left_right_0_10": 6.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 5.92,
+      "E3019_n_respondents_placing": 1106,
+      "rescaled": {
+       "general_left_right_expert": 2.0,
+       "general_left_right_voters": 1.84
+      }
+     }
+    ],
+    "nzes_voters": [
+     {
+      "election_year": 2023,
+      "item": "B5",
+      "mean_left_right_0_10_weighted": 4.07,
+      "sd": 2.64,
+      "weighted_n_placing": 785.3,
+      "dont_know_pct": 27.56,
+      "distribution_weighted_freq": {
+       "0": 116.5,
+       "1": 38.0,
+       "2": 53.0,
+       "3": 94.9,
+       "4": 96.9,
+       "5": 213.9,
+       "6": 61.8,
+       "7": 44.7,
+       "8": 9.9,
+       "9": 6.5,
+       "10": 49.2
+      },
+      "rescaled": {
+       "general_left_right_voters": -1.86
+      }
+     },
+     {
+      "election_year": 2020,
+      "item": "B7",
+      "mean_left_right_0_10_weighted": 3.38,
+      "sd": 2.26,
+      "weighted_n_placing": 1843.6,
+      "dont_know_pct": 38.68,
+      "distribution_weighted_freq": {
+       "0": 224.2,
+       "1": 153.4,
+       "2": 305.5,
+       "3": 316.6,
+       "4": 278.9,
+       "5": 346.5,
+       "6": 61.1,
+       "7": 62.4,
+       "8": 31.2,
+       "9": 27.9,
+       "10": 35.8
+      },
+      "rescaled": {
+       "general_left_right_voters": -3.24
+      }
+     }
+    ],
+    "parlgov": [
+     {
+      "parlgov_party_id": 891,
+      "family": "Conservative",
+      "left_right_0_10": 6.0388,
+      "state_market_0_10": 5.4386,
+      "liberty_authority_0_10": 6.9,
+      "based_on_expert_surveys": true,
+      "expert_survey_ids": {
+       "benoit_laver": "7284"
+      },
+      "rescaled": {
+       "economic": 0.88,
+       "social": 3.8,
+       "general_left_right": 2.08
+      }
+     }
+    ]
+   },
+   "comparison": {
+    "gps2019_economic": {
+     "ours": -0.83,
+     "published": 2.8,
+     "difference_ours_minus_published": -3.63
+    },
+    "gps2019_social": {
+     "ours": 5.83,
+     "published": 5.75,
+     "difference_ours_minus_published": 0.08
+    },
+    "gps2019_populism": {
+     "ours": 5.0,
+     "published": 6.44,
+     "difference_ours_minus_published": -1.44
+    },
+    "parlgov_economic": {
+     "ours": -0.83,
+     "published": 0.88,
+     "difference_ours_minus_published": -1.71
+    },
+    "parlgov_social": {
+     "ours": 5.83,
+     "published": 3.8,
+     "difference_ours_minus_published": 2.03
+    },
+    "vparty2017_economic": {
+     "ours": -0.83,
+     "published": -0.68,
+     "difference_ours_minus_published": -0.15
+    },
+    "vparty2017_populism": {
+     "ours": 5.0,
+     "published": 8.08,
+     "difference_ours_minus_published": -3.08
+    },
+    "nzes2023_voters_general_left_right": {
+     "ours_economic": -0.83,
+     "published_general_left_right": -1.86,
+     "note": "voters' general left-right placement, not an economic-only scale"
+    }
+   }
+  },
+  "te-pati-maori": {
+   "name": "Te Pāti Māori",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": {
+      "position": 2,
+      "evidence": "\"wealth inequality is currently extremely high. Tax reform is required to address wealth inequality\" (1.5-2.5% net wealth tax).",
+      "source_url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf",
+      "confidence": "high"
+     },
+     "econ_wvs_ownership": {
+      "position": -1,
+      "evidence": "\"Reject privatisation and trading of water rights\"; increase Māori and community ownership of energy.",
+      "source_url": "https://drive.google.com/file/d/1LPTzVr2sdxSNdfLF2DFLikHqr2zaeuBP/view",
+      "confidence": "medium"
+     },
+     "econ_wvs_responsibility": {
+      "position": 2,
+      "evidence": "\"ensure everybody is paid enough to live with dignity, whether they are in employment or not\" (Oct 2024).",
+      "source_url": "https://scoop.co.nz/stories/PA202410/S00184.htm",
+      "confidence": "high"
+     },
+     "econ_wvs_competition": null,
+     "econ_cses_reduce_differences": {
+      "position": 2,
+      "evidence": "Net wealth tax and 33% company tax to \"address wealth inequality ... and fund public services\".",
+      "source_url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf",
+      "confidence": "high"
+     },
+     "econ_nzes_privatisation": {
+      "position": 1,
+      "evidence": "Rejects privatisation and trading of water rights; \"Energy that belongs here. Generation we control.\"",
+      "source_url": "https://drive.google.com/file/d/1LPTzVr2sdxSNdfLF2DFLikHqr2zaeuBP/view",
+      "confidence": "low"
+     },
+     "econ_nzes_big_business": {
+      "position": 2,
+      "evidence": "\"breaking the stranglehold that monopolies have on food supply\"; company tax back to 33%.",
+      "source_url": "https://www.maoriparty.org.nz/kai_sovereignt",
+      "confidence": "high"
+     },
+     "econ_secs_limited_government": {
+      "position": -1,
+      "evidence": "Large new state programmes ($2.8b Kai Credit, wealth tax) alongside devolution to iwi and hapū.",
+      "source_url": "https://www.maoriparty.org.nz/kai_sovereignt",
+      "confidence": "medium"
+     },
+     "econ_secs_welfare_benefits": {
+      "position": 2,
+      "evidence": "\"We will scrap benefit sanctions and ensure everybody is paid enough to live with dignity\" (Oct 2024).",
+      "source_url": "https://scoop.co.nz/stories/PA202410/S00184.htm",
+      "confidence": "high"
+     },
+     "econ_secs_business": {
+      "position": 0,
+      "evidence": "Company tax to 33% and a $1b tax-avoidance crackdown, but a quarter of government contracts for Māori businesses.",
+      "source_url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf",
+      "confidence": "medium"
+     },
+     "econ_secs_fiscal_responsibility": null,
+     "econ_secs_gun_ownership": null,
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": null,
+     "soc_vsa_gods_laws": {
+      "position": -1,
+      "evidence": "Calls for \"a stop to political, legislative, and religious developments that deny and marginalise Takatāpui\".",
+      "source_url": "https://drive.google.com/file/d/1qyqzCxGrLF067Q2S5ZafwQ1F_UDOpPj0/view",
+      "confidence": "medium"
+     },
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": 2,
+      "evidence": "\"Abolish prisons by 2040\"; repeal three strikes, gang and bail laws.",
+      "source_url": "https://www.scoop.co.nz/stories/PA2601/S00112/if-youre-not-trying-to-abolish-prisons-in-aotearoa-what-are-you-doing-in-parliament-rawiri-waititi.htm",
+      "confidence": "high"
+     },
+     "soc_vsa_crack_down": {
+      "position": -2,
+      "evidence": "\"Prisons don't work because they do nothing to address the root causes of crime\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2601/S00112/if-youre-not-trying-to-abolish-prisons-in-aotearoa-what-are-you-doing-in-parliament-rawiri-waititi.htm",
+      "confidence": "high"
+     },
+     "soc_secs_abortion": null,
+     "soc_secs_religion": {
+      "position": -1,
+      "evidence": "Colonial systems including \"religion\" have \"failed to recognise, protect, or serve Takatāpui\".",
+      "source_url": "https://drive.google.com/file/d/1qyqzCxGrLF067Q2S5ZafwQ1F_UDOpPj0/view",
+      "confidence": "low"
+     },
+     "soc_secs_traditional_marriage": {
+      "position": -1,
+      "evidence": "Māori Party MPs voted for marriage equality (2013); takatāpui commission.",
+      "source_url": "https://en.wikipedia.org/wiki/Marriage_(Definition_of_Marriage)_Amendment_Act_2013",
+      "confidence": "low"
+     },
+     "soc_secs_traditional_values": null,
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": null,
+     "soc_secs_military": {
+      "position": -2,
+      "evidence": "Declare NZ \"militarily neutral\"; \"War has never delivered enduring safety for ordinary people\".",
+      "source_url": "https://www.maoriparty.org.nz/military_neutrality",
+      "confidence": "high"
+     },
+     "soc_ess_gay_free": {
+      "position": 2,
+      "evidence": "$200m and an independent Takatāpui-governed Commission; \"homophobia and transphobia are no longer acceptable\".",
+      "source_url": "https://drive.google.com/file/d/1qyqzCxGrLF067Q2S5ZafwQ1F_UDOpPj0/view",
+      "confidence": "high"
+     },
+     "soc_cses_immigrants_economy": null,
+     "soc_cses_culture_harmed": null,
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": {
+      "position": 1,
+      "evidence": "\"politicians lining their own pockets while whānau go without\"; \"Wellington definitely does not work for Māori\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2604/S00015/te-pati-maori-calls-for-freeze-on-mp-pay-rises.htm",
+      "confidence": "medium"
+     },
+     "pop_cses_trustworthy": null,
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": null,
+     "pop_cses_people_decide": {
+      "position": -1,
+      "evidence": "Entrench the Māori seats \"beyond the reach of referendums\"; \"constitutional, not conditional\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2602/S00082/maori-seats-are-constitutional-not-conditional.htm",
+      "confidence": "medium"
+     },
+     "pop_cses_rich_powerful": {
+      "position": 1,
+      "evidence": "Tax system \"rewarding wealth accumulation and property speculation\"; MPs \"lining their own pockets\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2604/S00015/te-pati-maori-calls-for-freeze-on-mp-pay-rises.htm",
+      "confidence": "low"
+     },
+     "pop_cses_majority": {
+      "position": -2,
+      "evidence": "Māori seats \"guaranteed under Te Tiriti\"; entrench them \"beyond the reach of referendums\".",
+      "source_url": "https://www.scoop.co.nz/stories/PA2602/S00082/maori-seats-are-constitutional-not-conditional.htm",
+      "confidence": "high"
+     }
+    },
+    "n_coded": 20,
+    "n_items": 36,
+    "confidence_counts": {
+     "high": 10,
+     "medium": 6,
+     "low": 4
+    },
+    "axes": {
+     "economic": {
+      "score": -7.22,
+      "n_items": 9,
+      "n_total": 12,
+      "enough": true,
+      "half_width": 2.37,
+      "keyed_mean": -1.444,
+      "keyed_sd": 0.726
+     },
+     "social": {
+      "score": -7.86,
+      "n_items": 7,
+      "n_total": 16,
+      "enough": false,
+      "half_width": 1.98,
+      "keyed_mean": -1.571,
+      "keyed_sd": 0.535
+     },
+     "populism": {
+      "score": -1.25,
+      "n_items": 4,
+      "n_total": 8,
+      "enough": true,
+      "half_width": 7.35,
+      "keyed_mean": -0.25,
+      "keyed_sd": 1.5
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": -8.33,
+      "n_items": 3,
+      "n_total": 4,
+      "shown": true
+     },
+     "cses_redistribution": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "nzes_economic": {
+      "score": -7.5,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "secs_economic": {
+      "score": -5.0,
+      "n_items": 3,
+      "n_total": 5,
+      "shown": true,
+      "secs_0_100": 37.5
+     },
+     "vsa_authoritarianism": {
+      "score": -8.33,
+      "n_items": 3,
+      "n_total": 6,
+      "shown": true
+     },
+     "secs_social": {
+      "score": -6.67,
+      "n_items": 3,
+      "n_total": 7,
+      "shown": false,
+      "secs_0_100": 33.3
+     },
+     "ess_social_values": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "cses_outgroup": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 2
+     },
+     "cses_populism": {
+      "score": 1.67,
+      "n_items": 3,
+      "n_total": 7,
+      "shown": false
+     },
+     "cses_antipluralism": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     }
+    }
+   },
+   "published": {
+    "cses5": [
+     {
+      "election_year": 2017,
+      "E5018_expert_left_right_0_10": 5.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 3.83,
+      "E3019_n_respondents_placing": 1042,
+      "rescaled": {
+       "general_left_right_expert": 0.0,
+       "general_left_right_voters": -2.34
+      }
+     },
+     {
+      "election_year": 2020,
+      "E5018_expert_left_right_0_10": 2.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 3.31,
+      "E3019_n_respondents_placing": 931,
+      "rescaled": {
+       "general_left_right_expert": -6.0,
+       "general_left_right_voters": -3.38
+      }
+     }
+    ],
+    "nzes_voters": [
+     {
+      "election_year": 2023,
+      "item": "B5",
+      "mean_left_right_0_10_weighted": 4.59,
+      "sd": 2.37,
+      "weighted_n_placing": 1352.0,
+      "dont_know_pct": 34.01,
+      "distribution_weighted_freq": {
+       "0": 77.5,
+       "1": 71.4,
+       "2": 126.2,
+       "3": 187.2,
+       "4": 112.9,
+       "5": 306.0,
+       "6": 177.8,
+       "7": 185.3,
+       "8": 35.4,
+       "9": 32.4,
+       "10": 40.0
+      },
+      "rescaled": {
+       "general_left_right_voters": -0.82
+      }
+     },
+     {
+      "election_year": 2020,
+      "item": "B7",
+      "mean_left_right_0_10_weighted": 4.44,
+      "sd": 3.05,
+      "weighted_n_placing": 1185.8,
+      "dont_know_pct": 46.93,
+      "distribution_weighted_freq": {
+       "0": 174.1,
+       "1": 74.6,
+       "2": 97.0,
+       "3": 135.4,
+       "4": 98.9,
+       "5": 216.4,
+       "6": 89.6,
+       "7": 74.7,
+       "8": 68.0,
+       "9": 62.7,
+       "10": 94.4
+      },
+      "rescaled": {
+       "general_left_right_voters": -1.12
+      }
+     }
+    ],
+    "parlgov": [
+     {
+      "parlgov_party_id": 114,
+      "family": "Special issue",
+      "left_right_0_10": null,
+      "state_market_0_10": null,
+      "liberty_authority_0_10": null,
+      "based_on_expert_surveys": false,
+      "expert_survey_ids": {},
+      "rescaled": {
+       "economic": null,
+       "social": null,
+       "general_left_right": null
+      }
+     }
+    ]
+   },
+   "comparison": {
+    "nzes2023_voters_general_left_right": {
+     "ours_economic": -7.22,
+     "published_general_left_right": -0.82,
+     "note": "voters' general left-right placement, not an economic-only scale"
+    }
+   }
+  },
+  "opportunity": {
+   "name": "Opportunity (TOP)",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": {
+      "position": 1,
+      "evidence": "Cites \"widening inequality\"; land tax plus Citizens' Income would \"significantly decrease poverty\", while rejecting the \"socialist redistribution\" label.",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf",
+      "confidence": "medium"
+     },
+     "econ_wvs_ownership": null,
+     "econ_wvs_responsibility": {
+      "position": 2,
+      "evidence": "Universal Citizens' Income: \"Give every adult the basics to live well\".",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf",
+      "confidence": "high"
+     },
+     "econ_wvs_competition": {
+      "position": 2,
+      "evidence": "Commerce Commission powers \"to investigate, intervene and force structural separation of anti-competitive businesses\".",
+      "source_url": "https://www.opportunity.org.nz/",
+      "confidence": "high"
+     },
+     "econ_cses_reduce_differences": {
+      "position": 1,
+      "evidence": "Land value tax funding a Citizens' Income that lifts incomes for 70% of households.",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf",
+      "confidence": "medium"
+     },
+     "econ_nzes_privatisation": null,
+     "econ_nzes_big_business": {
+      "position": 1,
+      "evidence": "Consumers \"paying too much because of a lack of market competition in sectors such as the supermarkets and banking\".",
+      "source_url": "https://www.opportunity.org.nz/",
+      "confidence": "medium"
+     },
+     "econ_secs_limited_government": {
+      "position": 0,
+      "evidence": "Would cut welfare bureaucracy and consenting red tape but add a Citizens' Income and borrow 15% of GDP for infrastructure.",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf",
+      "confidence": "low"
+     },
+     "econ_secs_welfare_benefits": {
+      "position": 1,
+      "evidence": "Replaces most benefits with a Citizens' Income because the \"welfare system traps people in poverty with punitive rules\".",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf",
+      "confidence": "medium"
+     },
+     "econ_secs_business": {
+      "position": 1,
+      "evidence": "25% technology tax credit for SMEs; \"Impact Company\" structure.",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf",
+      "confidence": "medium"
+     },
+     "econ_secs_fiscal_responsibility": {
+      "position": 0,
+      "evidence": "Would issue \"up to an additional 15% of GDP in special infrastructure\" bonds, arguing NZ \"can borrow carefully\".",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf",
+      "confidence": "medium"
+     },
+     "econ_secs_gun_ownership": null,
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": {
+      "position": -1,
+      "evidence": "Citizens' assemblies because \"Parliament has become gridlocked\"; distrust of leader-driven politics.",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/citizens-voice-policy.pdf",
+      "confidence": "low"
+     },
+     "soc_vsa_gods_laws": null,
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": 1,
+      "evidence": "\"Smart on Crime\": prevention, rehabilitation; decriminalise drug possession.",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Smart%20on%20Crime.pdf",
+      "confidence": "medium"
+     },
+     "soc_vsa_crack_down": {
+      "position": -1,
+      "evidence": "\"Prevention – Rehabilitation – Victim focused – Reintegration\".",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Smart%20on%20Crime.pdf",
+      "confidence": "medium"
+     },
+     "soc_secs_abortion": null,
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": null,
+     "soc_secs_traditional_values": null,
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": null,
+     "soc_secs_military": null,
+     "soc_ess_gay_free": {
+      "position": 1,
+      "evidence": "Criticises NZ First for telling voters \"transgender Kiwis ... are the problem\".",
+      "source_url": "https://www.opportunity.org.nz/the-state-of-the-nation",
+      "confidence": "low"
+     },
+     "soc_cses_immigrants_economy": {
+      "position": 1,
+      "evidence": "\"Immigration can bring expertise, energy and capital to the New Zealand economy.\"",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf",
+      "confidence": "medium"
+     },
+     "soc_cses_culture_harmed": {
+      "position": -1,
+      "evidence": "Condemns parties that say \"immigrants ... are the problem\".",
+      "source_url": "https://www.opportunity.org.nz/the-state-of-the-nation",
+      "confidence": "low"
+     },
+     "pop_cses_compromise": {
+      "position": -1,
+      "evidence": "Citizens' assemblies \"consistently find common ground on hard issues\".",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/citizens-voice-policy.pdf",
+      "confidence": "medium"
+     },
+     "pop_cses_dont_care": {
+      "position": 1,
+      "evidence": "\"Left-right politics is failing New Zealand\"; \"trust in government is under pressure\".",
+      "source_url": "https://www.opportunity.org.nz/_left_right_politics_is_failing_new_zealand",
+      "confidence": "medium"
+     },
+     "pop_cses_trustworthy": {
+      "position": -1,
+      "evidence": "A political corruption watchdog and policy-costing unit \"if trust is to be rebuilt\".",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf",
+      "confidence": "low"
+     },
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": {
+      "position": -1,
+      "evidence": "Concern at \"increasingly centralised executive power\"; corruption watchdog.",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf",
+      "confidence": "medium"
+     },
+     "pop_cses_people_decide": {
+      "position": 1,
+      "evidence": "Randomly selected citizens' assemblies, mirroring the number of MPs, to advise on major issues (\"Direct democracy\").",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/citizens-voice-policy.pdf",
+      "confidence": "medium"
+     },
+     "pop_cses_rich_powerful": {
+      "position": 1,
+      "evidence": "\"growing private and foreign influence in politics, expanding political lobbying\".",
+      "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf",
+      "confidence": "low"
+     },
+     "pop_cses_majority": null
+    },
+    "n_coded": 21,
+    "n_items": 36,
+    "confidence_counts": {
+     "medium": 13,
+     "high": 2,
+     "low": 6
+    },
+    "axes": {
+     "economic": {
+      "score": -1.67,
+      "n_items": 9,
+      "n_total": 12,
+      "enough": true,
+      "half_width": 4.0,
+      "keyed_mean": -0.333,
+      "keyed_sd": 1.225
+     },
+     "social": {
+      "score": -5.0,
+      "n_items": 6,
+      "n_total": 16,
+      "enough": false,
+      "half_width": 1.0,
+      "keyed_mean": -1.0,
+      "keyed_sd": 0.0
+     },
+     "populism": {
+      "score": 1.67,
+      "n_items": 6,
+      "n_total": 8,
+      "enough": true,
+      "half_width": 4.13,
+      "keyed_mean": 0.333,
+      "keyed_sd": 1.033
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": -1.67,
+      "n_items": 3,
+      "n_total": 4,
+      "shown": true
+     },
+     "cses_redistribution": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "nzes_economic": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 2,
+      "shown": true
+     },
+     "secs_economic": {
+      "score": 0.0,
+      "n_items": 4,
+      "n_total": 5,
+      "shown": true,
+      "secs_0_100": 50.0
+     },
+     "vsa_authoritarianism": {
+      "score": -5.0,
+      "n_items": 3,
+      "n_total": 6,
+      "shown": true
+     },
+     "secs_social": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 7
+     },
+     "ess_social_values": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "cses_outgroup": {
+      "score": -5.0,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "cses_populism": {
+      "score": 1.67,
+      "n_items": 6,
+      "n_total": 7,
+      "shown": true
+     },
+     "cses_antipluralism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     }
+    }
+   },
+   "published": {
+    "cses5": [
+     {
+      "election_year": 2017,
+      "E5018_expert_left_right_0_10": 5.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 4.66,
+      "E3019_n_respondents_placing": 886,
+      "rescaled": {
+       "general_left_right_expert": 0.0,
+       "general_left_right_voters": -0.68
+      }
+     },
+     {
+      "election_year": 2020,
+      "E5018_expert_left_right_0_10": 4.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 4.64,
+      "E3019_n_respondents_placing": 576,
+      "rescaled": {
+       "general_left_right_expert": -2.0,
+       "general_left_right_voters": -0.72
+      }
+     }
+    ],
+    "nzes_voters": [
+     {
+      "election_year": 2023,
+      "item": "B5",
+      "mean_left_right_0_10_weighted": 5.33,
+      "sd": 2.72,
+      "weighted_n_placing": 1635.8,
+      "dont_know_pct": 57.16,
+      "distribution_weighted_freq": {
+       "0": 77.5,
+       "1": 71.4,
+       "2": 126.2,
+       "3": 187.2,
+       "4": 112.9,
+       "5": 306.0,
+       "6": 177.8,
+       "7": 185.3,
+       "8": 179.7,
+       "9": 71.0,
+       "10": 140.8
+      },
+      "rescaled": {
+       "general_left_right_voters": 0.66
+      }
+     },
+     {
+      "election_year": 2020,
+      "item": "B7",
+      "mean_left_right_0_10_weighted": 5.43,
+      "sd": 2.46,
+      "weighted_n_placing": 2582.9,
+      "dont_know_pct": 65.84,
+      "distribution_weighted_freq": {
+       "0": 76.3,
+       "1": 105.1,
+       "2": 140.7,
+       "3": 273.6,
+       "4": 276.4,
+       "5": 409.4,
+       "6": 438.6,
+       "7": 283.2,
+       "8": 309.3,
+       "9": 131.5,
+       "10": 139.0
+      },
+      "rescaled": {
+       "general_left_right_voters": 0.86
+      }
+     }
+    ],
+    "parlgov": [
+     {
+      "parlgov_party_id": 2650,
+      "family": "Liberal",
+      "left_right_0_10": 6.0,
+      "state_market_0_10": 6.7,
+      "liberty_authority_0_10": 3.6,
+      "based_on_expert_surveys": false,
+      "expert_survey_ids": {},
+      "rescaled": {
+       "economic": 3.4,
+       "social": -2.8,
+       "general_left_right": 2.0
+      }
+     }
+    ]
+   },
+   "comparison": {
+    "nzes2023_voters_general_left_right": {
+     "ours_economic": -1.67,
+     "published_general_left_right": 0.66,
+     "note": "voters' general left-right placement, not an economic-only scale"
+    }
+   }
+  },
+  "nz-loyal": {
+   "name": "NZ Loyal",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": null,
+     "econ_wvs_ownership": {
+      "position": -2,
+      "evidence": "Platform includes nationalisation of key infrastructure (communications, transport, water, energy grid).",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_Loyal",
+      "confidence": "medium"
+     },
+     "econ_wvs_responsibility": null,
+     "econ_wvs_competition": null,
+     "econ_cses_reduce_differences": null,
+     "econ_nzes_privatisation": {
+      "position": 2,
+      "evidence": "Nationalisation of communications, transport, water and energy infrastructure.",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_Loyal",
+      "confidence": "medium"
+     },
+     "econ_nzes_big_business": {
+      "position": 1,
+      "evidence": "Opposition to \"globalist\" institutions including banks (policy.nz description quoted in party README).",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "low"
+     },
+     "econ_secs_limited_government": {
+      "position": 1,
+      "evidence": "\"We reject government overreach\"; \"Decentralise government and return power to the people\" (but also nationalisation).",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "low"
+     },
+     "econ_secs_welfare_benefits": null,
+     "econ_secs_business": null,
+     "econ_secs_fiscal_responsibility": null,
+     "econ_secs_gun_ownership": null,
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": {
+      "position": -1,
+      "evidence": "\"We reject government overreach ... return power to the people.\"",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "low"
+     },
+     "soc_vsa_gods_laws": {
+      "position": 1,
+      "evidence": "Teach children \"objective morality\"; end \"corrupt sex and gender education\".",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_Loyal",
+      "confidence": "low"
+     },
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": 1,
+      "evidence": "\"We reject government overreach.\"",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "low"
+     },
+     "soc_vsa_crack_down": null,
+     "soc_secs_abortion": null,
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": null,
+     "soc_secs_traditional_values": {
+      "position": 1,
+      "evidence": "Teach children \"objective morality\".",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_Loyal",
+      "confidence": "low"
+     },
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": {
+      "position": 2,
+      "evidence": "\"We take our country back from foreign interests\"; leave the UN, WEF and WHO.",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "medium"
+     },
+     "soc_secs_military": null,
+     "soc_ess_gay_free": null,
+     "soc_cses_immigrants_economy": {
+      "position": -2,
+      "evidence": "Immigration moratorium.",
+      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_Loyal",
+      "confidence": "medium"
+     },
+     "soc_cses_culture_harmed": {
+      "position": 1,
+      "evidence": "Immigration moratorium; \"take our country back from foreign interests\".",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "low"
+     },
+     "pop_cses_compromise": {
+      "position": 2,
+      "evidence": "\"No compromise. No apologies.\"",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "high"
+     },
+     "pop_cses_dont_care": {
+      "position": 2,
+      "evidence": "\"We reject government overreach\"; \"Expose and eradicate propaganda from our news media\".",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "medium"
+     },
+     "pop_cses_trustworthy": {
+      "position": -2,
+      "evidence": "Anti-establishment platform: expose media \"propaganda\"; leave the UN, WEF, WHO.",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "medium"
+     },
+     "pop_cses_main_problem": {
+      "position": 2,
+      "evidence": "\"We take our country back\"; scrap the tax system, leave international bodies.",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "medium"
+     },
+     "pop_cses_strong_leader": null,
+     "pop_cses_people_decide": {
+      "position": 1,
+      "evidence": "\"Decentralise government and return power to the people.\"",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "medium"
+     },
+     "pop_cses_rich_powerful": {
+      "position": 2,
+      "evidence": "Opposition to \"globalist\" institutions \"such as the United Nations, Banks, and the World Economic Forum\".",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "medium"
+     },
+     "pop_cses_majority": {
+      "position": 1,
+      "evidence": "\"Scrap all race-based policies.\"",
+      "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election",
+      "confidence": "low"
+     }
+    },
+    "n_coded": 18,
+    "n_items": 36,
+    "confidence_counts": {
+     "medium": 9,
+     "low": 8,
+     "high": 1
+    },
+    "axes": {
+     "economic": {
+      "score": -5.0,
+      "n_items": 4,
+      "n_total": 12,
+      "enough": false,
+      "half_width": 6.93,
+      "keyed_mean": -1.0,
+      "keyed_sd": 1.414
+     },
+     "social": {
+      "score": 3.57,
+      "n_items": 7,
+      "n_total": 16,
+      "enough": false,
+      "half_width": 4.64,
+      "keyed_mean": 0.714,
+      "keyed_sd": 1.254
+     },
+     "populism": {
+      "score": 8.57,
+      "n_items": 7,
+      "n_total": 8,
+      "enough": true,
+      "half_width": 1.81,
+      "keyed_mean": 1.714,
+      "keyed_sd": 0.488
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 4,
+      "shown": false
+     },
+     "cses_redistribution": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     },
+     "nzes_economic": {
+      "score": -7.5,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "secs_economic": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 5,
+      "shown": false,
+      "secs_0_100": 62.5
+     },
+     "vsa_authoritarianism": {
+      "score": -1.67,
+      "n_items": 3,
+      "n_total": 6,
+      "shown": true
+     },
+     "secs_social": {
+      "score": 7.5,
+      "n_items": 2,
+      "n_total": 7,
+      "shown": false,
+      "secs_0_100": 68.8
+     },
+     "ess_social_values": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     },
+     "cses_outgroup": {
+      "score": 7.5,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "cses_populism": {
+      "score": 9.17,
+      "n_items": 6,
+      "n_total": 7,
+      "shown": true
+     },
+     "cses_antipluralism": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     }
+    }
+   },
+   "published": {},
+   "comparison": {}
+  },
+  "nz-outdoors-freedom": {
+   "name": "NZ Outdoors & Freedom",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": null,
+     "econ_wvs_ownership": {
+      "position": -1,
+      "evidence": "Says the Quota Management System \"privatised the once public fishery\"; keep fisheries in public ownership (but also wants smaller government).",
+      "source_url": "https://freedom.kiwi/nzofp-fisheries-policy",
+      "confidence": "low"
+     },
+     "econ_wvs_responsibility": {
+      "position": -1,
+      "evidence": "Swiss-style subsidiarity: \"dismantle\" the \"bloated bureaucracy in Wellington\"; smaller central government.",
+      "source_url": "https://freedom.kiwi/direct-democracy",
+      "confidence": "low"
+     },
+     "econ_wvs_competition": null,
+     "econ_cses_reduce_differences": null,
+     "econ_nzes_privatisation": {
+      "position": 1,
+      "evidence": "QMS \"privatised the once public fishery\".",
+      "source_url": "https://freedom.kiwi/nzofp-fisheries-policy",
+      "confidence": "low"
+     },
+     "econ_nzes_big_business": {
+      "position": 1,
+      "evidence": "\"Holding Big Pharma Accountable\"; strengthen anti-monopoly law.",
+      "source_url": "https://freedom.kiwi/the-acc-justice-accountability-policy-statement",
+      "confidence": "low"
+     },
+     "econ_secs_limited_government": {
+      "position": 2,
+      "evidence": "\"Decentralisation & Smaller Government\"; dismantle the \"bloated bureaucracy in Wellington\".",
+      "source_url": "https://freedom.kiwi/direct-democracy",
+      "confidence": "high"
+     },
+     "econ_secs_welfare_benefits": null,
+     "econ_secs_business": null,
+     "econ_secs_fiscal_responsibility": null,
+     "econ_secs_gun_ownership": null,
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": {
+      "position": -2,
+      "evidence": "Politicians \"will no longer hold the supreme power\"; citizens can veto laws.",
+      "source_url": "https://freedom.kiwi/direct-democracy",
+      "confidence": "medium"
+     },
+     "soc_vsa_gods_laws": null,
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": 1,
+      "evidence": "Citizens' veto to \"kill\" unpopular laws; rights that cannot be \"voted away by politicians\".",
+      "source_url": "https://freedom.kiwi/direct-democracy",
+      "confidence": "low"
+     },
+     "soc_vsa_crack_down": null,
+     "soc_secs_abortion": null,
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": null,
+     "soc_secs_traditional_values": null,
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": null,
+     "soc_secs_military": null,
+     "soc_ess_gay_free": {
+      "position": 1,
+      "evidence": "Code of conduct: \"We welcome and support people of all backgrounds and identities ... any sexual orientation\".",
+      "source_url": "https://freedom.kiwi/anti-bullying-policy",
+      "confidence": "low"
+     },
+     "soc_cses_immigrants_economy": null,
+     "soc_cses_culture_harmed": null,
+     "pop_cses_compromise": {
+      "position": 1,
+      "evidence": "Politicians \"go through the motions of the Select Committee process ... and push ahead with their pre-determined agendas anyway\".",
+      "source_url": "https://freedom.kiwi/direct-democracy",
+      "confidence": "low"
+     },
+     "pop_cses_dont_care": {
+      "position": 2,
+      "evidence": "\"They hear us, but they refuse to listen\"; \"politicians ram through deeply unpopular laws\".",
+      "source_url": "https://freedom.kiwi/direct-democracy",
+      "confidence": "high"
+     },
+     "pop_cses_trustworthy": {
+      "position": -2,
+      "evidence": "\"the fake listening stops\"; politicians hide \"behind toothless\" consultation.",
+      "source_url": "https://freedom.kiwi/direct-democracy",
+      "confidence": "medium"
+     },
+     "pop_cses_main_problem": {
+      "position": 1,
+      "evidence": "Direct democracy because politicians \"ram through deeply unpopular laws\".",
+      "source_url": "https://freedom.kiwi/direct-democracy",
+      "confidence": "medium"
+     },
+     "pop_cses_strong_leader": {
+      "position": -1,
+      "evidence": "Fundamental rights \"will no longer be able to be voted away by politicians\".",
+      "source_url": "https://freedom.kiwi/direct-democracy",
+      "confidence": "medium"
+     },
+     "pop_cses_people_decide": {
+      "position": 2,
+      "evidence": "Swiss-style binding citizens' referendums: a citizens' veto and citizen-initiated laws.",
+      "source_url": "https://freedom.kiwi/direct-democracy",
+      "confidence": "high"
+     },
+     "pop_cses_rich_powerful": {
+      "position": 1,
+      "evidence": "Government \"acts as Pfizer's unpaid insurance company\".",
+      "source_url": "https://freedom.kiwi/the-acc-justice-accountability-policy-statement",
+      "confidence": "low"
+     },
+     "pop_cses_majority": {
+      "position": 0,
+      "evidence": "Binding referendums on laws, yet fundamental rights \"belong to the people anyway\" and cannot be voted away.",
+      "source_url": "https://freedom.kiwi/direct-democracy",
+      "confidence": "medium"
+     }
+    },
+    "n_coded": 16,
+    "n_items": 36,
+    "confidence_counts": {
+     "low": 8,
+     "high": 3,
+     "medium": 5
+    },
+    "axes": {
+     "economic": {
+      "score": 0.0,
+      "n_items": 5,
+      "n_total": 12,
+      "enough": false,
+      "half_width": 6.2,
+      "keyed_mean": 0.0,
+      "keyed_sd": 1.414
+     },
+     "social": {
+      "score": -6.67,
+      "n_items": 3,
+      "n_total": 16,
+      "enough": false,
+      "half_width": 3.27,
+      "keyed_mean": -1.333,
+      "keyed_sd": 0.577
+     },
+     "populism": {
+      "score": 5.0,
+      "n_items": 8,
+      "n_total": 8,
+      "enough": true,
+      "half_width": 3.7,
+      "keyed_mean": 1.0,
+      "keyed_sd": 1.069
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": 0.0,
+      "n_items": 2,
+      "n_total": 4,
+      "shown": true
+     },
+     "cses_redistribution": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     },
+     "nzes_economic": {
+      "score": -5.0,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "secs_economic": {
+      "score": 10.0,
+      "n_items": 1,
+      "n_total": 5,
+      "shown": false,
+      "secs_0_100": 75.0
+     },
+     "vsa_authoritarianism": {
+      "score": -7.5,
+      "n_items": 2,
+      "n_total": 6,
+      "shown": false
+     },
+     "secs_social": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 7
+     },
+     "ess_social_values": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "cses_outgroup": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 2
+     },
+     "cses_populism": {
+      "score": 5.71,
+      "n_items": 7,
+      "n_total": 7,
+      "shown": true
+     },
+     "cses_antipluralism": {
+      "score": 0.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     }
+    }
+   },
+   "published": {},
+   "comparison": {}
+  },
+  "legalise-cannabis": {
+   "name": "Legalise Cannabis",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": null,
+     "econ_wvs_ownership": null,
+     "econ_wvs_responsibility": null,
+     "econ_wvs_competition": null,
+     "econ_cses_reduce_differences": null,
+     "econ_nzes_privatisation": null,
+     "econ_nzes_big_business": null,
+     "econ_secs_limited_government": null,
+     "econ_secs_welfare_benefits": null,
+     "econ_secs_business": null,
+     "econ_secs_fiscal_responsibility": null,
+     "econ_secs_gun_ownership": null,
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": null,
+     "soc_vsa_gods_laws": null,
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": 0,
+      "evidence": "\"Education not incarceration\" for cannabis, but claims \"the strongest law and order policy\" against serious crime.",
+      "source_url": "https://www.alcp.org.nz/policy",
+      "confidence": "low"
+     },
+     "soc_vsa_crack_down": {
+      "position": 0,
+      "evidence": "Wants \"law and order and respect for rule of law\" restored by ending prohibition, not by harsher enforcement.",
+      "source_url": "https://www.alcp.org.nz/policy",
+      "confidence": "low"
+     },
+     "soc_secs_abortion": null,
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": null,
+     "soc_secs_traditional_values": null,
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": null,
+     "soc_secs_military": null,
+     "soc_ess_gay_free": null,
+     "soc_cses_immigrants_economy": null,
+     "soc_cses_culture_harmed": null,
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": null,
+     "pop_cses_trustworthy": null,
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": null,
+     "pop_cses_people_decide": null,
+     "pop_cses_rich_powerful": null,
+     "pop_cses_majority": null
+    },
+    "n_coded": 2,
+    "n_items": 36,
+    "confidence_counts": {
+     "low": 2
+    },
+    "axes": {
+     "economic": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 12,
+      "enough": false,
+      "half_width": null
+     },
+     "social": {
+      "score": 0.0,
+      "n_items": 2,
+      "n_total": 16,
+      "enough": false,
+      "half_width": 1.0,
+      "keyed_mean": 0.0,
+      "keyed_sd": 0.0
+     },
+     "populism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 8,
+      "enough": false,
+      "half_width": null
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 4
+     },
+     "cses_redistribution": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     },
+     "nzes_economic": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 2
+     },
+     "secs_economic": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 5
+     },
+     "vsa_authoritarianism": {
+      "score": 0.0,
+      "n_items": 2,
+      "n_total": 6,
+      "shown": false
+     },
+     "secs_social": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 7
+     },
+     "ess_social_values": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     },
+     "cses_outgroup": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 2
+     },
+     "cses_populism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 7
+     },
+     "cses_antipluralism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     }
+    }
+   },
+   "published": {
+    "parlgov": [
+     {
+      "parlgov_party_id": 2073,
+      "family": "Special issue",
+      "left_right_0_10": null,
+      "state_market_0_10": null,
+      "liberty_authority_0_10": null,
+      "based_on_expert_surveys": false,
+      "expert_survey_ids": {},
+      "rescaled": {
+       "economic": null,
+       "social": null,
+       "general_left_right": null
+      }
+     }
+    ]
+   },
+   "comparison": {}
+  },
+  "animal-justice": {
+   "name": "Animal Justice",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": {
+      "position": 1,
+      "evidence": "Policies address \"economic inequality that traps people in exploitative industries\".",
+      "source_url": "https://animaljustice.org.nz/policies/ajp-people-policies-pack/",
+      "confidence": "low"
+     },
+     "econ_wvs_ownership": null,
+     "econ_wvs_responsibility": null,
+     "econ_wvs_competition": null,
+     "econ_cses_reduce_differences": {
+      "position": 1,
+      "evidence": "Government procurement to require fair wages; concern about \"economic inequality\".",
+      "source_url": "https://animaljustice.org.nz/policies/ajp-people-policies-pack/",
+      "confidence": "low"
+     },
+     "econ_nzes_privatisation": null,
+     "econ_nzes_big_business": {
+      "position": 1,
+      "evidence": "\"democratic deficits that allow wealthy interests to block necessary reforms\"; address the supermarket duopoly.",
+      "source_url": "https://animaljustice.org.nz/policies/ajp-people-policies-pack/",
+      "confidence": "low"
+     },
+     "econ_secs_limited_government": null,
+     "econ_secs_welfare_benefits": null,
+     "econ_secs_business": null,
+     "econ_secs_fiscal_responsibility": null,
+     "econ_secs_gun_ownership": null,
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": null,
+     "soc_vsa_gods_laws": null,
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": null,
+     "soc_vsa_crack_down": null,
+     "soc_secs_abortion": null,
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": null,
+     "soc_secs_traditional_values": null,
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": null,
+     "soc_secs_military": null,
+     "soc_ess_gay_free": null,
+     "soc_cses_immigrants_economy": null,
+     "soc_cses_culture_harmed": null,
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": null,
+     "pop_cses_trustworthy": null,
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": null,
+     "pop_cses_people_decide": {
+      "position": 1,
+      "evidence": "\"Establish citizens' assemblies for major policy decisions currently deadlocked\".",
+      "source_url": "https://animaljustice.org.nz/policies/ajp-people-policies-pack/",
+      "confidence": "low"
+     },
+     "pop_cses_rich_powerful": null,
+     "pop_cses_majority": null
+    },
+    "n_coded": 4,
+    "n_items": 36,
+    "confidence_counts": {
+     "low": 4
+    },
+    "axes": {
+     "economic": {
+      "score": -5.0,
+      "n_items": 3,
+      "n_total": 12,
+      "enough": false,
+      "half_width": 1.0,
+      "keyed_mean": -1.0,
+      "keyed_sd": 0.0
+     },
+     "social": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 16,
+      "enough": false,
+      "half_width": null
+     },
+     "populism": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 8,
+      "enough": false,
+      "half_width": 1.0,
+      "keyed_mean": 1.0,
+      "keyed_sd": 0.0
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 4,
+      "shown": false
+     },
+     "cses_redistribution": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "nzes_economic": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 2,
+      "shown": true
+     },
+     "secs_economic": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 5
+     },
+     "vsa_authoritarianism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 6
+     },
+     "secs_social": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 7
+     },
+     "ess_social_values": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     },
+     "cses_outgroup": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 2
+     },
+     "cses_populism": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 7,
+      "shown": false
+     },
+     "cses_antipluralism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     }
+    }
+   },
+   "published": {},
+   "comparison": {}
+  },
+  "alliance": {
+   "name": "Alliance",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": {
+      "position": 2,
+      "evidence": "\"We want to create a more equal, fair, and democratic society\"; \"make the wealthy who earn their income from assets pay their fair share\".",
+      "source_url": "https://allianceparty.nz/what-we-stand-for/",
+      "confidence": "high"
+     },
+     "econ_wvs_ownership": {
+      "position": -2,
+      "evidence": "\"returning to public ownership and control of key national and local assets\"; a \"reverse privatisation\" programme for electricity, ports, water, telecommunications, Air NZ.",
+      "source_url": "https://allianceparty.nz/what-we-stand-for/",
+      "confidence": "high"
+     },
+     "econ_wvs_responsibility": {
+      "position": 2,
+      "evidence": "A Universal Benefit and \"a strong and comprehensive welfare state\".",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-universal-child-benefit-and-child-poverty-policy-2026.pdf",
+      "confidence": "high"
+     },
+     "econ_wvs_competition": {
+      "position": -1,
+      "evidence": "Rejects \"the zero-sum assumptions of competition and imperial capital\"; natural monopolies in public ownership; supports stronger competition law for small firms.",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/10/alliance-foreign-affairs-defence-international-relations-policy-2026.pdf",
+      "confidence": "low"
+     },
+     "econ_cses_reduce_differences": {
+      "position": 2,
+      "evidence": "Progressive tax scale to 47% over $250,000, wealth and financial-transactions taxes, to fund free services.",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-tax-policy-costings-2026.pdf",
+      "confidence": "high"
+     },
+     "econ_nzes_privatisation": {
+      "position": 2,
+      "evidence": "\"Stop all further privatisation and return ports, water, telecommunications and Air New Zealand to full public ownership.\"",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-environment-climate-sustainable-economy-policy-2026.pdf",
+      "confidence": "high"
+     },
+     "econ_nzes_big_business": {
+      "position": 2,
+      "evidence": "Media \"captured by big business interests\"; \"Political power must not be concentrated in the hands of ... multinational corporations, wealthy individuals\".",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-te-tiriti-democracy-constitutional-policy-2026.pdf",
+      "confidence": "high"
+     },
+     "econ_secs_limited_government": {
+      "position": -2,
+      "evidence": "\"major state-led intervention\"; a new Ministry of Works; public ownership of utilities.",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-housing-policy-2026.pdf",
+      "confidence": "high"
+     },
+     "econ_secs_welfare_benefits": {
+      "position": 2,
+      "evidence": "Universal Benefit; \"abolish benefit sanctions, stand-downs and beneficiary debt\".",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-universal-child-benefit-and-child-poverty-policy-2026.pdf",
+      "confidence": "high"
+     },
+     "econ_secs_business": {
+      "position": 0,
+      "evidence": "Supports small business and co-operatives with a public development bank, while bringing utilities into public ownership.",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-small-business-local-enterprise-cooperative-policy-2026.pdf",
+      "confidence": "low"
+     },
+     "econ_secs_fiscal_responsibility": {
+      "position": 0,
+      "evidence": "Tax package \"runs a surplus in both periods\" but funds a large state-led spending programme.",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-tax-policy-costings-2026.pdf",
+      "confidence": "low"
+     },
+     "econ_secs_gun_ownership": null,
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": {
+      "position": -1,
+      "evidence": "\"a radically democratic party\"; participatory democracy with recall of representatives.",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-te-tiriti-democracy-constitutional-policy-2026.pdf",
+      "confidence": "low"
+     },
+     "soc_vsa_gods_laws": {
+      "position": -2,
+      "evidence": "\"Reproductive healthcare is a fundamental health right and must not be treated as a criminal matter.\"",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-women-gender-equality-economic-security-policy-2026.pdf",
+      "confidence": "high"
+     },
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": 2,
+      "evidence": "High imprisonment \"cannot be addressed simply by building more prisons or imposing harsher sentences\".",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-justice-policy-2026.pdf",
+      "confidence": "high"
+     },
+     "soc_vsa_crack_down": {
+      "position": -2,
+      "evidence": "Justice \"based on prevention, rehabilitation, restorative justice\".",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-justice-policy-2026.pdf",
+      "confidence": "high"
+     },
+     "soc_secs_abortion": {
+      "position": 2,
+      "evidence": "\"ensure free, safe, and accessible abortion services throughout Aotearoa\".",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-women-gender-equality-economic-security-policy-2026.pdf",
+      "confidence": "high"
+     },
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": {
+      "position": -1,
+      "evidence": "Policy names lesbian and trans women among groups whose barriers it will address.",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-women-gender-equality-economic-security-policy-2026.pdf",
+      "confidence": "low"
+     },
+     "soc_secs_traditional_values": {
+      "position": -1,
+      "evidence": "Progressive gender, reproductive and justice policies.",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-women-gender-equality-economic-security-policy-2026.pdf",
+      "confidence": "low"
+     },
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": null,
+     "soc_secs_military": {
+      "position": -2,
+      "evidence": "Non-aligned; \"remove offensive capabilities\"; close foreign military and intelligence facilities.",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/10/alliance-foreign-affairs-defence-international-relations-policy-2026.pdf",
+      "confidence": "high"
+     },
+     "soc_ess_gay_free": {
+      "position": 2,
+      "evidence": "Names lesbian and trans women among groups whose rights it will advance.",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-women-gender-equality-economic-security-policy-2026.pdf",
+      "confidence": "medium"
+     },
+     "soc_cses_immigrants_economy": {
+      "position": 1,
+      "evidence": "\"review and reduce unnecessary barriers to migration from neighbouring Pacific Island countries\".",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/10/alliance-foreign-affairs-defence-international-relations-policy-2026.pdf",
+      "confidence": "low"
+     },
+     "soc_cses_culture_harmed": {
+      "position": -1,
+      "evidence": "Migrant and refugee women explicitly included in equality policy.",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-women-gender-equality-economic-security-policy-2026.pdf",
+      "confidence": "low"
+     },
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": {
+      "position": 1,
+      "evidence": "\"Political power must not be concentrated in the hands of governments ... or distant bureaucracies.\"",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-te-tiriti-democracy-constitutional-policy-2026.pdf",
+      "confidence": "low"
+     },
+     "pop_cses_trustworthy": null,
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": {
+      "position": -2,
+      "evidence": "\"Parliament must be an effective check on executive power\"; an entrenched Bill of Rights.",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-te-tiriti-democracy-constitutional-policy-2026.pdf",
+      "confidence": "high"
+     },
+     "pop_cses_people_decide": {
+      "position": 1,
+      "evidence": "Citizens' Initiatives and recall, but \"Direct democracy should complement representative democracy rather than replace it\".",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-te-tiriti-democracy-constitutional-policy-2026.pdf",
+      "confidence": "low"
+     },
+     "pop_cses_rich_powerful": {
+      "position": 1,
+      "evidence": "Media should hold \"the wealthy and the politicians' feet to the fire\"; \"We don't receive large donations from big business\".",
+      "source_url": "https://allianceparty.nz/what-we-stand-for/",
+      "confidence": "low"
+     },
+     "pop_cses_majority": {
+      "position": -2,
+      "evidence": "Any direct-democracy system must include \"protection of minority and individual rights\".",
+      "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-te-tiriti-democracy-constitutional-policy-2026.pdf",
+      "confidence": "high"
+     }
+    },
+    "n_coded": 27,
+    "n_items": 36,
+    "confidence_counts": {
+     "high": 15,
+     "low": 11,
+     "medium": 1
+    },
+    "axes": {
+     "economic": {
+      "score": -7.73,
+      "n_items": 11,
+      "n_total": 12,
+      "enough": true,
+      "half_width": 2.42,
+      "keyed_mean": -1.545,
+      "keyed_sd": 0.82
+     },
+     "social": {
+      "score": -7.73,
+      "n_items": 11,
+      "n_total": 16,
+      "enough": true,
+      "half_width": 1.54,
+      "keyed_mean": -1.545,
+      "keyed_sd": 0.522
+     },
+     "populism": {
+      "score": -1.0,
+      "n_items": 5,
+      "n_total": 8,
+      "enough": true,
+      "half_width": 7.2,
+      "keyed_mean": -0.2,
+      "keyed_sd": 1.643
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": -8.75,
+      "n_items": 4,
+      "n_total": 4,
+      "shown": true
+     },
+     "cses_redistribution": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "nzes_economic": {
+      "score": -10.0,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "secs_economic": {
+      "score": -5.0,
+      "n_items": 4,
+      "n_total": 5,
+      "shown": true,
+      "secs_0_100": 37.5
+     },
+     "vsa_authoritarianism": {
+      "score": -8.75,
+      "n_items": 4,
+      "n_total": 6,
+      "shown": true
+     },
+     "secs_social": {
+      "score": -7.5,
+      "n_items": 4,
+      "n_total": 7,
+      "shown": true,
+      "secs_0_100": 31.2
+     },
+     "ess_social_values": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "cses_outgroup": {
+      "score": -5.0,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "cses_populism": {
+      "score": 1.25,
+      "n_items": 4,
+      "n_total": 7,
+      "shown": true
+     },
+     "cses_antipluralism": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     }
+    }
+   },
+   "published": {
+    "parlgov": [
+     {
+      "parlgov_party_id": 1444,
+      "family": "Social democracy",
+      "left_right_0_10": 2.0757,
+      "state_market_0_10": 1.1111,
+      "liberty_authority_0_10": 3.5,
+      "based_on_expert_surveys": true,
+      "expert_survey_ids": {
+       "huber_inglehart": "2702",
+       "benoit_laver": "7236"
+      },
+      "rescaled": {
+       "economic": -7.78,
+       "social": -3.0,
+       "general_left_right": -5.85
+      }
+     }
+    ]
+   },
+   "comparison": {
+    "parlgov_economic": {
+     "ours": -7.73,
+     "published": -7.78,
+     "difference_ours_minus_published": 0.05
+    },
+    "parlgov_social": {
+     "ours": -7.73,
+     "published": -3.0,
+     "difference_ours_minus_published": -4.73
+    }
+   }
+  },
+  "conservative": {
+   "name": "Conservative",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": {
+      "position": -1,
+      "evidence": "Calls for a flat tax rate: \"The New Zealand citizen can spend their money far better than the government can.\"",
+      "source_url": "https://conservatives.org.nz/policies/economy-1/",
+      "confidence": "low"
+     },
+     "econ_wvs_ownership": null,
+     "econ_wvs_responsibility": {
+      "position": -2,
+      "evidence": "Government \"should strengthen families rather than create long-term dependency\"; \"Encourage self-reliance\".",
+      "source_url": "https://conservatives.org.nz/policies/overview/",
+      "confidence": "high"
+     },
+     "econ_wvs_competition": {
+      "position": 1,
+      "evidence": "Principle: people \"free to pursue their legitimate self-interest within a competitive economy\".",
+      "source_url": "https://www.conservatives.nz/principles",
+      "confidence": "medium"
+     },
+     "econ_cses_reduce_differences": {
+      "position": -1,
+      "evidence": "Flat tax rate for individuals and companies.",
+      "source_url": "https://www.conservatives.nz/news/new-policies-announcement",
+      "confidence": "medium"
+     },
+     "econ_nzes_privatisation": null,
+     "econ_nzes_big_business": null,
+     "econ_secs_limited_government": {
+      "position": 2,
+      "evidence": "\"Reduce the size of government\"; policies \"built on ... limited government\".",
+      "source_url": "https://conservatives.org.nz/policies/agriculture/",
+      "confidence": "high"
+     },
+     "econ_secs_welfare_benefits": {
+      "position": -2,
+      "evidence": "\"Fifty years of expanding welfare has undermined our families and created an underclass.\"",
+      "source_url": "https://www.conservatives.nz/policy",
+      "confidence": "high"
+     },
+     "econ_secs_business": {
+      "position": 2,
+      "evidence": "Lower company tax; \"Retention of capital will encourage entrepreneurs\".",
+      "source_url": "https://conservatives.org.nz/policies/economy-1/",
+      "confidence": "high"
+     },
+     "econ_secs_fiscal_responsibility": {
+      "position": 1,
+      "evidence": "\"careful management of public money\"; \"tackle public debt\".",
+      "source_url": "https://conservatives.org.nz/policies/overview/",
+      "confidence": "medium"
+     },
+     "econ_secs_gun_ownership": null,
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": null,
+     "soc_vsa_gods_laws": {
+      "position": 1,
+      "evidence": "\"We stand by Judeo-Christian Western cultural traditions\"; unborn-child personhood; opposed abortion decriminalisation.",
+      "source_url": "https://www.conservatives.nz/policy",
+      "confidence": "medium"
+     },
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": -1,
+      "evidence": "\"Punishment that will deter crime\"; longer sentences for repeat child-sex offenders; also \"individual freedom\".",
+      "source_url": "https://www.conservatives.nz/principles",
+      "confidence": "medium"
+     },
+     "soc_vsa_crack_down": {
+      "position": 1,
+      "evidence": "\"Removal of criminals from society, to protect others\"; \"Safe neighbourhoods and streets\".",
+      "source_url": "https://www.conservatives.nz/principles",
+      "confidence": "medium"
+     },
+     "soc_secs_abortion": {
+      "position": -2,
+      "evidence": "Unborn Child (Legal Personhood and Rights) Act from the third trimester.",
+      "source_url": "https://conservatives.org.nz/policies/right-to-life/",
+      "confidence": "high"
+     },
+     "soc_secs_religion": {
+      "position": 1,
+      "evidence": "\"We stand by Judeo-Christian Western cultural traditions\".",
+      "source_url": "https://www.conservatives.nz/policy",
+      "confidence": "medium"
+     },
+     "soc_secs_traditional_marriage": {
+      "position": 1,
+      "evidence": "Campaigns on \"conservative family values\"; \"a man is a man, and a woman is a woman\".",
+      "source_url": "https://www.conservatives.nz/policy",
+      "confidence": "medium"
+     },
+     "soc_secs_traditional_values": {
+      "position": 2,
+      "evidence": "\"Conserving the good for a better New Zealand\"; conservative family values.",
+      "source_url": "https://conservatives.org.nz/policies/overview/",
+      "confidence": "high"
+     },
+     "soc_secs_family_unit": {
+      "position": 2,
+      "evidence": "\"Strong families are the foundation of a healthy society.\"",
+      "source_url": "https://conservatives.org.nz/policies/overview/",
+      "confidence": "high"
+     },
+     "soc_secs_patriotism": {
+      "position": 1,
+      "evidence": "\"National sovereignty\" among its principles; \"Policies that put New Zealanders first\".",
+      "source_url": "https://www.conservatives.nz/we-stand-for",
+      "confidence": "medium"
+     },
+     "soc_secs_military": {
+      "position": 0,
+      "evidence": "\"Taking a neutral stance rather than being dragged into war\"; keep the Australian alliance; a support-and-reconstruction military.",
+      "source_url": "https://www.conservatives.nz/news/new-policies-announcement",
+      "confidence": "low"
+     },
+     "soc_ess_gay_free": null,
+     "soc_cses_immigrants_economy": {
+      "position": -1,
+      "evidence": "\"population growing faster than social goods makes everyone poorer\"; cap unskilled migration.",
+      "source_url": "https://conservatives.org.nz/policies/immigration/",
+      "confidence": "medium"
+     },
+     "soc_cses_culture_harmed": {
+      "position": 1,
+      "evidence": "\"Newcomers should follow our way of life.\"",
+      "source_url": "https://www.conservatives.nz/policy",
+      "confidence": "medium"
+     },
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": null,
+     "pop_cses_trustworthy": null,
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": null,
+     "pop_cses_people_decide": {
+      "position": 1,
+      "evidence": "Party policy has included \"Binding citizens-initiated referendums\".",
+      "source_url": "https://en.wikipedia.org/wiki/Conservative_Party_of_New_Zealand",
+      "confidence": "low"
+     },
+     "pop_cses_rich_powerful": null,
+     "pop_cses_majority": {
+      "position": 1,
+      "evidence": "\"One people under one law\"; \"equal treatment\".",
+      "source_url": "https://conservatives.org.nz/policies/overview/",
+      "confidence": "low"
+     }
+    },
+    "n_coded": 22,
+    "n_items": 36,
+    "confidence_counts": {
+     "low": 4,
+     "high": 7,
+     "medium": 11
+    },
+    "axes": {
+     "economic": {
+      "score": 7.5,
+      "n_items": 8,
+      "n_total": 12,
+      "enough": true,
+      "half_width": 1.85,
+      "keyed_mean": 1.5,
+      "keyed_sd": 0.535
+     },
+     "social": {
+      "score": 5.83,
+      "n_items": 12,
+      "n_total": 16,
+      "enough": true,
+      "half_width": 1.63,
+      "keyed_mean": 1.167,
+      "keyed_sd": 0.577
+     },
+     "populism": {
+      "score": 5.0,
+      "n_items": 2,
+      "n_total": 8,
+      "enough": false,
+      "half_width": 1.0,
+      "keyed_mean": 1.0,
+      "keyed_sd": 0.0
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": 6.67,
+      "n_items": 3,
+      "n_total": 4,
+      "shown": true
+     },
+     "cses_redistribution": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "nzes_economic": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 2
+     },
+     "secs_economic": {
+      "score": 8.75,
+      "n_items": 4,
+      "n_total": 5,
+      "shown": true,
+      "secs_0_100": 71.9
+     },
+     "vsa_authoritarianism": {
+      "score": 5.0,
+      "n_items": 3,
+      "n_total": 6,
+      "shown": true
+     },
+     "secs_social": {
+      "score": 6.43,
+      "n_items": 7,
+      "n_total": 7,
+      "shown": true,
+      "secs_0_100": 66.1
+     },
+     "ess_social_values": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     },
+     "cses_outgroup": {
+      "score": 5.0,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "cses_populism": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 7,
+      "shown": false
+     },
+     "cses_antipluralism": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     }
+    }
+   },
+   "published": {
+    "cses5": [
+     {
+      "election_year": 2020,
+      "E5018_expert_left_right_0_10": 8.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 7.75,
+      "E3019_n_respondents_placing": 754,
+      "rescaled": {
+       "general_left_right_expert": 6.0,
+       "general_left_right_voters": 5.5
+      },
+      "party_name_in_source": "new-conservative"
+     }
+    ],
+    "nzes_voters": [
+     {
+      "election_year": 2020,
+      "item": "B7",
+      "mean_left_right_0_10_weighted": 5.74,
+      "sd": 3.77,
+      "weighted_n_placing": 887.5,
+      "dont_know_pct": 56.5,
+      "distribution_weighted_freq": {
+       "0": 154.1,
+       "1": 35.6,
+       "2": 59.5,
+       "3": 28.3,
+       "4": 28.1,
+       "5": 97.1,
+       "6": 69.1,
+       "7": 45.6,
+       "8": 54.1,
+       "9": 70.2,
+       "10": 245.9
+      },
+      "rescaled": {
+       "general_left_right_voters": 1.48
+      },
+      "party_name_in_source": "new-conservative"
+     }
+    ],
+    "parlgov": [
+     {
+      "parlgov_party_id": 1973,
+      "family": "Conservative",
+      "left_right_0_10": 7.4,
+      "state_market_0_10": 6.4,
+      "liberty_authority_0_10": 6.9,
+      "based_on_expert_surveys": false,
+      "expert_survey_ids": {},
+      "rescaled": {
+       "economic": 2.8,
+       "social": 3.8,
+       "general_left_right": 4.8
+      }
+     },
+     {
+      "parlgov_party_id": 2806,
+      "family": "Right-wing",
+      "left_right_0_10": 8.8,
+      "state_market_0_10": 5.9,
+      "liberty_authority_0_10": 8.5,
+      "based_on_expert_surveys": false,
+      "expert_survey_ids": {},
+      "rescaled": {
+       "economic": 1.8,
+       "social": 7.0,
+       "general_left_right": 7.6
+      },
+      "party_name_in_source": "new-conservative"
+     }
+    ]
+   },
+   "comparison": {}
+  },
+  "womens-rights": {
+   "name": "Women's Rights",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": {
+      "position": 1,
+      "evidence": "\"social and economic inequality and poverty, are of particular concern\"; \"benefits need to be increased so that all people have living incomes\".",
+      "source_url": "https://womensrightsparty.nz/policy/",
+      "confidence": "medium"
+     },
+     "econ_wvs_ownership": null,
+     "econ_wvs_responsibility": {
+      "position": 1,
+      "evidence": "\"Minimum wages and benefits need to be increased so that all people have living incomes.\"",
+      "source_url": "https://womensrightsparty.nz/policy/",
+      "confidence": "medium"
+     },
+     "econ_wvs_competition": null,
+     "econ_cses_reduce_differences": {
+      "position": 1,
+      "evidence": "CPAG-style Working for Families reform to \"lift the poorest families out of poverty\".",
+      "source_url": "https://womensrightsparty.nz/wp-content/uploads/2025/11/POLICY-Womens-Rights-Party-2025-041125.docx",
+      "confidence": "medium"
+     },
+     "econ_nzes_privatisation": null,
+     "econ_nzes_big_business": null,
+     "econ_secs_limited_government": null,
+     "econ_secs_welfare_benefits": {
+      "position": 2,
+      "evidence": "Remove \"discrimination against beneficiary families\"; benefits \"need to be increased\".",
+      "source_url": "https://womensrightsparty.nz/wp-content/uploads/2025/11/POLICY-Womens-Rights-Party-2025-041125.docx",
+      "confidence": "medium"
+     },
+     "econ_secs_business": null,
+     "econ_secs_fiscal_responsibility": null,
+     "econ_secs_gun_ownership": null,
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": null,
+     "soc_vsa_gods_laws": {
+      "position": 0,
+      "evidence": "Defends \"reproductive autonomy\" but opposes pornography involving violence and would adopt the Nordic model on prostitution.",
+      "source_url": "https://womensrightsparty.nz/our-priorities/",
+      "confidence": "low"
+     },
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": 0,
+      "evidence": "Would criminalise sex buyers and ban the \"rough sex\" defence, but opposes new hate-crime categories.",
+      "source_url": "https://womensrightsparty.nz/wp-content/uploads/2025/11/POLICY-Womens-Rights-Party-2025-041125.docx",
+      "confidence": "low"
+     },
+     "soc_vsa_crack_down": null,
+     "soc_secs_abortion": {
+      "position": 1,
+      "evidence": "\"the right to have control of our own bodies, including reproductive autonomy\".",
+      "source_url": "https://womensrightsparty.nz/our-priorities/",
+      "confidence": "medium"
+     },
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": null,
+     "soc_secs_traditional_values": null,
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": null,
+     "soc_secs_military": null,
+     "soc_ess_gay_free": {
+      "position": 1,
+      "evidence": "\"committed to the rights of lesbians to organise and socialise separately\".",
+      "source_url": "https://womensrightsparty.nz/wp-content/uploads/2025/11/POLICY-Womens-Rights-Party-2025-041125.docx",
+      "confidence": "low"
+     },
+     "soc_cses_immigrants_economy": null,
+     "soc_cses_culture_harmed": null,
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": null,
+     "pop_cses_trustworthy": null,
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": null,
+     "pop_cses_people_decide": null,
+     "pop_cses_rich_powerful": null,
+     "pop_cses_majority": null
+    },
+    "n_coded": 8,
+    "n_items": 36,
+    "confidence_counts": {
+     "medium": 5,
+     "low": 3
+    },
+    "axes": {
+     "economic": {
+      "score": -6.25,
+      "n_items": 4,
+      "n_total": 12,
+      "enough": false,
+      "half_width": 2.45,
+      "keyed_mean": -1.25,
+      "keyed_sd": 0.5
+     },
+     "social": {
+      "score": -2.5,
+      "n_items": 4,
+      "n_total": 16,
+      "enough": false,
+      "half_width": 2.83,
+      "keyed_mean": -0.5,
+      "keyed_sd": 0.577
+     },
+     "populism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 8,
+      "enough": false,
+      "half_width": null
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": -5.0,
+      "n_items": 2,
+      "n_total": 4,
+      "shown": true
+     },
+     "cses_redistribution": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "nzes_economic": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 2
+     },
+     "secs_economic": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 5,
+      "shown": false,
+      "secs_0_100": 25.0
+     },
+     "vsa_authoritarianism": {
+      "score": 0.0,
+      "n_items": 2,
+      "n_total": 6,
+      "shown": false
+     },
+     "secs_social": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 7,
+      "shown": false,
+      "secs_0_100": 37.5
+     },
+     "ess_social_values": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "cses_outgroup": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 2
+     },
+     "cses_populism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 7
+     },
+     "cses_antipluralism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     }
+    }
+   },
+   "published": {},
+   "comparison": {}
+  },
+  "vision-nz": {
+   "name": "Vision NZ",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": null,
+     "econ_wvs_ownership": null,
+     "econ_wvs_responsibility": {
+      "position": -1,
+      "evidence": "\"dismantle state dependency, strip away government over-reach\", but also a universal payment for families with a child under one.",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "medium"
+     },
+     "econ_wvs_competition": null,
+     "econ_cses_reduce_differences": null,
+     "econ_nzes_privatisation": null,
+     "econ_nzes_big_business": null,
+     "econ_secs_limited_government": {
+      "position": 1,
+      "evidence": "\"Less Government, More Community\"; \"cutting the size of government\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "medium"
+     },
+     "econ_secs_welfare_benefits": {
+      "position": -1,
+      "evidence": "\"Slash state dependency\"; but abolish income tax on benefits.",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "medium"
+     },
+     "econ_secs_business": null,
+     "econ_secs_fiscal_responsibility": null,
+     "econ_secs_gun_ownership": null,
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": {
+      "position": 1,
+      "evidence": "Core principle \"One Nation, One People, One Vote, One Government, One Flag, Under One God\"; schools to \"rebuild a shared national identity\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "low"
+     },
+     "soc_vsa_gods_laws": {
+      "position": 2,
+      "evidence": "\"Under One God\"; \"protect the unborn\"; \"Protect the nuclear family\"; remove gender theory and RSE from schools.",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "high"
+     },
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": -1,
+      "evidence": "\"restore order\"; deputise Community Support Officers; \"hold individuals accountable\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "low"
+     },
+     "soc_vsa_crack_down": {
+      "position": 1,
+      "evidence": "\"restoring safety to our streets ... restore order\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "medium"
+     },
+     "soc_secs_abortion": {
+      "position": -2,
+      "evidence": "\"a compassionate society must protect its most vulnerable, beginning in the womb\"; review laws that \"endanger the unborn\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "high"
+     },
+     "soc_secs_religion": {
+      "position": 2,
+      "evidence": "Led by Destiny Church co-leader Hannah Tamaki; \"Under One God\" principle.",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "high"
+     },
+     "soc_secs_traditional_marriage": {
+      "position": 2,
+      "evidence": "\"Protect the nuclear family\"; tax credits for marriage milestones at 7, 15 and 20 years.",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "high"
+     },
+     "soc_secs_traditional_values": {
+      "position": 2,
+      "evidence": "\"restoration will ... come from inside the home\"; \"balanced history and strong civic values\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "high"
+     },
+     "soc_secs_family_unit": {
+      "position": 2,
+      "evidence": "\"the family is the ultimate cornerstone of society and the primary incubator for our nation's morals\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "high"
+     },
+     "soc_secs_patriotism": {
+      "position": 2,
+      "evidence": "\"One Nation, One People ... One Flag\"; schools to \"rebuild a shared national identity\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "high"
+     },
+     "soc_secs_military": null,
+     "soc_ess_gay_free": {
+      "position": -1,
+      "evidence": "Positions \"have included opposition to abortion, homosexuality\" (Wikipedia); 2026 policies define sex in law and protect the \"nuclear family\".",
+      "source_url": "https://en.wikipedia.org/wiki/Vision_NZ",
+      "confidence": "low"
+     },
+     "soc_cses_immigrants_economy": {
+      "position": -2,
+      "evidence": "\"Pause mass immigration immediately\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "high"
+     },
+     "soc_cses_culture_harmed": {
+      "position": 2,
+      "evidence": "English the official language; 10-year citizenship wait; a country \"where the rights and culture of Kiwi citizens are put first\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "high"
+     },
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": {
+      "position": 2,
+      "evidence": "\"career politicians insulated inside a Wellington bubble\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "high"
+     },
+     "pop_cses_trustworthy": {
+      "position": -1,
+      "evidence": "Drug testing for MPs; replace \"career politicians\" with \"dedicated public servants\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "medium"
+     },
+     "pop_cses_main_problem": {
+      "position": 1,
+      "evidence": "\"MMP Fatigue and Democracy Reset\": eliminate \"unelected List MPs\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "low"
+     },
+     "pop_cses_strong_leader": null,
+     "pop_cses_people_decide": {
+      "position": 1,
+      "evidence": "Place \"power firmly back into the hands of local voters\"; abolish party lists.",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "low"
+     },
+     "pop_cses_rich_powerful": null,
+     "pop_cses_majority": {
+      "position": 1,
+      "evidence": "\"One Vote\"; \"End all race-based politics\".",
+      "source_url": "https://www.vision.org.nz/visionpolicies",
+      "confidence": "low"
+     }
+    },
+    "n_coded": 21,
+    "n_items": 36,
+    "confidence_counts": {
+     "medium": 5,
+     "low": 6,
+     "high": 10
+    },
+    "axes": {
+     "economic": {
+      "score": 5.0,
+      "n_items": 3,
+      "n_total": 12,
+      "enough": false,
+      "half_width": 1.0,
+      "keyed_mean": 1.0,
+      "keyed_sd": 0.0
+     },
+     "social": {
+      "score": 8.46,
+      "n_items": 13,
+      "n_total": 16,
+      "enough": true,
+      "half_width": 1.31,
+      "keyed_mean": 1.692,
+      "keyed_sd": 0.48
+     },
+     "populism": {
+      "score": 6.0,
+      "n_items": 5,
+      "n_total": 8,
+      "enough": true,
+      "half_width": 1.96,
+      "keyed_mean": 1.2,
+      "keyed_sd": 0.447
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 4,
+      "shown": false
+     },
+     "cses_redistribution": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     },
+     "nzes_economic": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 2
+     },
+     "secs_economic": {
+      "score": 5.0,
+      "n_items": 2,
+      "n_total": 5,
+      "shown": false,
+      "secs_0_100": 62.5
+     },
+     "vsa_authoritarianism": {
+      "score": 6.25,
+      "n_items": 4,
+      "n_total": 6,
+      "shown": true
+     },
+     "secs_social": {
+      "score": 10.0,
+      "n_items": 6,
+      "n_total": 7,
+      "shown": true,
+      "secs_0_100": 75.0
+     },
+     "ess_social_values": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "cses_outgroup": {
+      "score": 10.0,
+      "n_items": 2,
+      "n_total": 2,
+      "shown": true
+     },
+     "cses_populism": {
+      "score": 6.25,
+      "n_items": 4,
+      "n_total": 7,
+      "shown": true
+     },
+     "cses_antipluralism": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     }
+    }
+   },
+   "published": {},
+   "comparison": {}
+  },
+  "free-palestine": {
+   "name": "Free Palestine",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": null,
+     "econ_wvs_ownership": null,
+     "econ_wvs_responsibility": null,
+     "econ_wvs_competition": null,
+     "econ_cses_reduce_differences": null,
+     "econ_nzes_privatisation": null,
+     "econ_nzes_big_business": null,
+     "econ_secs_limited_government": null,
+     "econ_secs_welfare_benefits": null,
+     "econ_secs_business": null,
+     "econ_secs_fiscal_responsibility": null,
+     "econ_secs_gun_ownership": null,
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": null,
+     "soc_vsa_gods_laws": null,
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": null,
+     "soc_vsa_crack_down": null,
+     "soc_secs_abortion": null,
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": null,
+     "soc_secs_traditional_values": null,
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": null,
+     "soc_secs_military": {
+      "position": -2,
+      "evidence": "Withdraw from \"any formal security alliances with the U.S.\"; against \"military interventionism\".",
+      "source_url": "https://palfree.nz/",
+      "confidence": "medium"
+     },
+     "soc_ess_gay_free": null,
+     "soc_cses_immigrants_economy": null,
+     "soc_cses_culture_harmed": null,
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": null,
+     "pop_cses_trustworthy": null,
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": null,
+     "pop_cses_people_decide": null,
+     "pop_cses_rich_powerful": null,
+     "pop_cses_majority": null
+    },
+    "n_coded": 1,
+    "n_items": 36,
+    "confidence_counts": {
+     "medium": 1
+    },
+    "axes": {
+     "economic": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 12,
+      "enough": false,
+      "half_width": null
+     },
+     "social": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 16,
+      "enough": false,
+      "half_width": 1.0,
+      "keyed_mean": -2.0,
+      "keyed_sd": 0.0
+     },
+     "populism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 8,
+      "enough": false,
+      "half_width": null
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 4
+     },
+     "cses_redistribution": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     },
+     "nzes_economic": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 2
+     },
+     "secs_economic": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 5
+     },
+     "vsa_authoritarianism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 6
+     },
+     "secs_social": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 7,
+      "shown": false,
+      "secs_0_100": 25.0
+     },
+     "ess_social_values": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     },
+     "cses_outgroup": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 2
+     },
+     "cses_populism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 7
+     },
+     "cses_antipluralism": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     }
+    }
+   },
+   "published": {},
+   "comparison": {}
+  },
+  "te-tai-tokerau-party": {
+   "name": "Te Tai Tokerau Party",
+   "coded": {
+    "items": {
+     "econ_wvs_incomes": {
+      "position": 1,
+      "evidence": "Universal Whānau Allowance, amnesty on whānau debt to MSD/IRD; describes \"persistent economic extraction\" from the North.",
+      "source_url": "https://tetaitokerauparty.org.nz/our-policies/",
+      "confidence": "medium"
+     },
+     "econ_wvs_ownership": {
+      "position": -1,
+      "evidence": "Māori-governed land buy-back fund; community-owned food hubs.",
+      "source_url": "https://tetaitokerauparty.org.nz/our-policies/",
+      "confidence": "low"
+     },
+     "econ_wvs_responsibility": {
+      "position": 2,
+      "evidence": "Replace the benefit system with a non-taxable Universal Whānau Allowance.",
+      "source_url": "https://tetaitokerauparty.org.nz/our-policies/",
+      "confidence": "medium"
+     },
+     "econ_wvs_competition": null,
+     "econ_cses_reduce_differences": {
+      "position": 1,
+      "evidence": "Universal Whānau Allowance and whānau debt amnesty.",
+      "source_url": "https://tetaitokerauparty.org.nz/our-policies/",
+      "confidence": "medium"
+     },
+     "econ_nzes_privatisation": null,
+     "econ_nzes_big_business": {
+      "position": 2,
+      "evidence": "Food supply \"controlled by an anti-competitive corporate supermarket duopoly\" that \"extract[s] millions from our local economy\".",
+      "source_url": "https://tetaitokerauparty.org.nz/our-policies/",
+      "confidence": "medium"
+     },
+     "econ_secs_limited_government": null,
+     "econ_secs_welfare_benefits": {
+      "position": 2,
+      "evidence": "Replace the \"complex, punitive benefit system\" with a Universal Whānau Allowance.",
+      "source_url": "https://tetaitokerauparty.org.nz/our-policies/",
+      "confidence": "medium"
+     },
+     "econ_secs_business": {
+      "position": 1,
+      "evidence": "Five-year corporate tax exemption for new regional employers.",
+      "source_url": "https://tetaitokerauparty.org.nz/our-policies/",
+      "confidence": "low"
+     },
+     "econ_secs_fiscal_responsibility": null,
+     "econ_secs_gun_ownership": null,
+     "soc_vsa_defy_authority": null,
+     "soc_vsa_discipline": null,
+     "soc_vsa_gods_laws": null,
+     "soc_vsa_premarital": null,
+     "soc_vsa_not_tougher": {
+      "position": 2,
+      "evidence": "\"Prison Sinking Lid\"; \"punitive policing entrench[es] institutional inequity\".",
+      "source_url": "https://tetaitokerauparty.org.nz/our-policies/",
+      "confidence": "medium"
+     },
+     "soc_vsa_crack_down": {
+      "position": -2,
+      "evidence": "Divert offenders into hapū-run rehabilitation; iwi-governed youth justice.",
+      "source_url": "https://tetaitokerauparty.org.nz/our-policies/",
+      "confidence": "medium"
+     },
+     "soc_secs_abortion": null,
+     "soc_secs_religion": null,
+     "soc_secs_traditional_marriage": null,
+     "soc_secs_traditional_values": null,
+     "soc_secs_family_unit": null,
+     "soc_secs_patriotism": null,
+     "soc_secs_military": null,
+     "soc_ess_gay_free": null,
+     "soc_cses_immigrants_economy": null,
+     "soc_cses_culture_harmed": null,
+     "pop_cses_compromise": null,
+     "pop_cses_dont_care": {
+      "position": 1,
+      "evidence": "Seeks \"political and economic independence\" from a Wellington that \"extracts\" from the North.",
+      "source_url": "https://tetaitokerauparty.org.nz/our-policies/",
+      "confidence": "low"
+     },
+     "pop_cses_trustworthy": null,
+     "pop_cses_main_problem": null,
+     "pop_cses_strong_leader": null,
+     "pop_cses_people_decide": null,
+     "pop_cses_rich_powerful": null,
+     "pop_cses_majority": {
+      "position": -2,
+      "evidence": "Constitutional protection for He Whakaputanga and Te Tiriti; iwi-governed institutions.",
+      "source_url": "https://tetaitokerauparty.org.nz/our-policies/",
+      "confidence": "medium"
+     }
+    },
+    "n_coded": 11,
+    "n_items": 36,
+    "confidence_counts": {
+     "medium": 8,
+     "low": 3
+    },
+    "axes": {
+     "economic": {
+      "score": -5.71,
+      "n_items": 7,
+      "n_total": 12,
+      "enough": true,
+      "half_width": 3.96,
+      "keyed_mean": -1.143,
+      "keyed_sd": 1.069
+     },
+     "social": {
+      "score": -10.0,
+      "n_items": 2,
+      "n_total": 16,
+      "enough": false,
+      "half_width": 1.0,
+      "keyed_mean": -2.0,
+      "keyed_sd": 0.0
+     },
+     "populism": {
+      "score": -2.5,
+      "n_items": 2,
+      "n_total": 8,
+      "enough": false,
+      "half_width": 14.7,
+      "keyed_mean": -0.5,
+      "keyed_sd": 2.121
+     }
+    },
+    "subscales": {
+     "wvs_economic_values": {
+      "score": -6.67,
+      "n_items": 3,
+      "n_total": 4,
+      "shown": true
+     },
+     "cses_redistribution": {
+      "score": -5.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     },
+     "nzes_economic": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 2,
+      "shown": true
+     },
+     "secs_economic": {
+      "score": -2.5,
+      "n_items": 2,
+      "n_total": 5,
+      "shown": false,
+      "secs_0_100": 43.8
+     },
+     "vsa_authoritarianism": {
+      "score": -10.0,
+      "n_items": 2,
+      "n_total": 6,
+      "shown": false
+     },
+     "secs_social": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 7
+     },
+     "ess_social_values": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 1
+     },
+     "cses_outgroup": {
+      "score": null,
+      "n_items": 0,
+      "n_total": 2
+     },
+     "cses_populism": {
+      "score": 5.0,
+      "n_items": 1,
+      "n_total": 7,
+      "shown": false
+     },
+     "cses_antipluralism": {
+      "score": -10.0,
+      "n_items": 1,
+      "n_total": 1,
+      "shown": true
+     }
+    }
+   },
+   "published": {},
+   "comparison": {}
+  },
+  "mana": {
+   "name": "mana",
+   "coded": null,
+   "published": {
+    "cses5": [
+     {
+      "election_year": 2017,
+      "E5018_expert_left_right_0_10": 2.0,
+      "E3019_respondent_mean_left_right_0_10_unweighted": 2.68,
+      "E3019_n_respondents_placing": 828,
+      "rescaled": {
+       "general_left_right_expert": -6.0,
+       "general_left_right_voters": -4.64
+      }
+     }
+    ]
+   }
+  }
+ }
+}

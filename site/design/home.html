@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ballot Book NZ — 2026 election guide</title>
+<meta name="description" content="Independent guide to the 2026 New Zealand general election.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Atkinson+Hyperlegible+Next:wght@400..800&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="components.css">
+<script>try{var t=localStorage.getItem('bb-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <!-- Ballot Book NZ icon set. 24×24, stroke 1.75, round caps/joins, currentColor.
+       Use: <svg class="ic" width="20" height="20"><use href="#ic-home"/></svg>
+       Inline this file once in the document body (or serve it and reference icons.svg#ic-name). -->
+  <defs>
+    <style>
+      .ic-s{fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+      .ic-f{fill:currentColor;stroke:none}
+    </style>
+  </defs>
+
+  <!-- navigation -->
+  <symbol id="ic-home" viewBox="0 0 24 24"><path class="ic-s" d="M4 11.5 12 5l8 6.5M6 10v9h4.5v-5h3v5H18v-9"/></symbol>
+  <symbol id="ic-quiz" viewBox="0 0 24 24"><path class="ic-s" d="M5 4.5h14v15H5zM8 9h3M8 12.5h3M8 16h3"/><path class="ic-s" d="m13.5 9 1 1 2-2.2M13.5 12.6l1 1 2-2.2M13.5 16.1l1 1 2-2.2"/></symbol>
+  <symbol id="ic-swipe" viewBox="0 0 24 24"><path class="ic-s" d="M7.5 6.5h9a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 18V8a1.5 1.5 0 0 1 1.5-1.5Z"/><path class="ic-s" d="M9 4h8.5A1.5 1.5 0 0 1 19 5.5V16M3.5 11l-1.5 1.5 1.5 1.5M20.5 11l1.5 1.5-1.5 1.5"/></symbol>
+  <symbol id="ic-compare" viewBox="0 0 24 24"><path class="ic-s" d="M4 5h6v14H4zM14 5h6v14h-6zM6.5 9h1M6.5 12h1M16.5 9h1M16.5 12h1M16.5 15h1"/></symbol>
+  <symbol id="ic-map" viewBox="0 0 24 24"><path class="ic-s" d="M3.5 6.5 9 4l6 2.5 5.5-2.5v13.5L15 20l-6-2.5-5.5 2.5zM9 4v13.5M15 6.5V20"/></symbol>
+  <symbol id="ic-parliament" viewBox="0 0 24 24"><path class="ic-s" d="M4 20h16M5 17h14M6 17V11M10 17V11M14 17V11M18 17V11M4 11h16L12 4z"/></symbol>
+  <symbol id="ic-people" viewBox="0 0 24 24"><circle class="ic-s" cx="9" cy="8.5" r="3"/><path class="ic-s" d="M3.5 19a5.5 5.5 0 0 1 11 0M15.5 5.6a3 3 0 0 1 0 5.8M17 13.6a5.5 5.5 0 0 1 3.5 5.4"/></symbol>
+  <symbol id="ic-polls" viewBox="0 0 24 24"><path class="ic-s" d="M4 19h16M5 15l4-4.5 3.5 3L19 6"/><circle class="ic-f" cx="19" cy="6" r="1.6"/></symbol>
+  <symbol id="ic-issues" viewBox="0 0 24 24"><path class="ic-s" d="M12 3.5 3.5 20.5h17z"/><path class="ic-s" d="M12 10v4.5M12 17.2v.3"/></symbol>
+  <symbol id="ic-more" viewBox="0 0 24 24"><circle class="ic-f" cx="6" cy="12" r="1.8"/><circle class="ic-f" cx="12" cy="12" r="1.8"/><circle class="ic-f" cx="18" cy="12" r="1.8"/></symbol>
+  <symbol id="ic-compass" viewBox="0 0 24 24"><circle class="ic-s" cx="12" cy="12" r="8.5"/><path class="ic-f" d="m15.5 8.5-2.2 5.3-5.3 2.2 2.2-5.3z"/></symbol>
+  <symbol id="ic-book" viewBox="0 0 24 24"><path class="ic-s" d="M4 5.5A2 2 0 0 1 6 4h6v15H6a2 2 0 0 0-2 2zM12 4h6a2 2 0 0 1 2 2v15a2 2 0 0 0-2-2h-6"/></symbol>
+
+  <!-- actions -->
+  <symbol id="ic-search" viewBox="0 0 24 24"><circle class="ic-s" cx="10.5" cy="10.5" r="6"/><path class="ic-s" d="m15 15 5 5"/></symbol>
+  <symbol id="ic-arrow" viewBox="0 0 24 24"><path class="ic-s" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="ic-chevron" viewBox="0 0 24 24"><path class="ic-s" d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="ic-chevron-r" viewBox="0 0 24 24"><path class="ic-s" d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="ic-check" viewBox="0 0 24 24"><path class="ic-s" d="m5 12.5 4.5 4.5L19 7"/></symbol>
+  <symbol id="ic-x" viewBox="0 0 24 24"><path class="ic-s" d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="ic-skip" viewBox="0 0 24 24"><path class="ic-s" d="M5 6v12M9 12l9-6v12z"/></symbol>
+  <symbol id="ic-play" viewBox="0 0 24 24"><path class="ic-f" d="M7 5v14l12-7z"/></symbol>
+  <symbol id="ic-pause" viewBox="0 0 24 24"><path class="ic-f" d="M6 5h4v14H6zM14 5h4v14h-4z"/></symbol>
+  <symbol id="ic-info" viewBox="0 0 24 24"><circle class="ic-s" cx="12" cy="12" r="8.5"/><path class="ic-s" d="M12 11v5"/><circle class="ic-f" cx="12" cy="8" r="1.1"/></symbol>
+  <symbol id="ic-external" viewBox="0 0 24 24"><path class="ic-s" d="M14 4h6v6M20 4l-9 9M18 13v6H5V6h6"/></symbol>
+  <symbol id="ic-filter" viewBox="0 0 24 24"><path class="ic-s" d="M4 6h16M7 12h10M10 18h4"/></symbol>
+  <symbol id="ic-calendar" viewBox="0 0 24 24"><path class="ic-s" d="M4.5 6.5h15v13h-15zM4.5 10.5h15M8 4v4M16 4v4"/></symbol>
+  <symbol id="ic-clock" viewBox="0 0 24 24"><circle class="ic-s" cx="12" cy="12" r="8.5"/><path class="ic-s" d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="ic-sun" viewBox="0 0 24 24"><circle class="ic-s" cx="12" cy="12" r="4"/><path class="ic-s" d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/></symbol>
+  <symbol id="ic-moon" viewBox="0 0 24 24"><path class="ic-s" d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/></symbol>
+  <symbol id="ic-star" viewBox="0 0 24 24"><path class="ic-s" d="m12 4 2.4 5 5.4.7-4 3.8 1 5.4L12 16.3 7.2 18.9l1-5.4-4-3.8L9.6 9z"/></symbol>
+  <symbol id="ic-flag" viewBox="0 0 24 24"><path class="ic-s" d="M6 20V4.5M6 5h11l-2.5 3.5L17 12H6"/></symbol>
+  <symbol id="ic-tick-box" viewBox="0 0 24 24"><path class="ic-s" d="M5 5h14v14H5z"/><path class="ic-s" d="m8.5 12.5 2.5 2.5 5-5.5"/></symbol>
+  <symbol id="ic-doc" viewBox="0 0 24 24"><path class="ic-s" d="M7 3.5h7l4 4v13H7zM14 3.5v4h4M9.5 12h5M9.5 15.5h5"/></symbol>
+  <symbol id="ic-scale" viewBox="0 0 24 24"><path class="ic-s" d="M12 4v16M6 20h12M4 8h16M6 8l-3 6a3 3 0 0 0 6 0zM18 8l-3 6a3 3 0 0 0 6 0z"/></symbol>
+  <symbol id="ic-pin" viewBox="0 0 24 24"><path class="ic-s" d="M12 21s6-5.5 6-11a6 6 0 0 0-12 0c0 5.5 6 11 6 11z"/><circle class="ic-s" cx="12" cy="10" r="2.2"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="inner">
+    <a class="logo" href="home.html"><span class="mark"><svg class="" width="18" height="18" aria-hidden="true"><use href="#ic-check"/></svg></span>Ballot Book <span class="tag">NZ 2026</span></a>
+    <nav class="nav" aria-label="Sections"><button type="button" aria-current="page" onclick="location.href='home.html'">Home</button><button type="button"  onclick="location.href='quiz.html'">Match</button><button type="button"  onclick="location.href='swipe.html'">Swipe</button><button type="button"  onclick="location.href='polls.html'">Polls</button><button type="button"  onclick="location.href='map.html'">Electorates</button><button type="button"  onclick="location.href='parliament.html'">Parliament</button><button type="button"  onclick="location.href='#'">People</button><button type="button"  onclick="location.href='#'">Issues</button></nav>
+    <span class="spacer"></span>
+    <button class="iconbtn" type="button" aria-label="Search"><svg class="" width="20" height="20" aria-hidden="true"><use href="#ic-search"/></svg></button>
+    <button class="iconbtn" type="button" aria-label="Toggle dark mode" onclick="(function(){var r=document.documentElement;var dark=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches);r.dataset.theme=dark?'light':'dark';try{localStorage.setItem('bb-theme',r.dataset.theme)}catch(e){}})()"><svg class="" width="20" height="20" aria-hidden="true"><use href="#ic-moon"/></svg></button>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="hero">
+  <div>
+    <span class="kicker">Independent voter guide · General election 2026</span>
+    <h1>Know what you're voting for.</h1>
+    <p class="lede">Plain-English, sourced information about every party on the ballot: what they promise, what they've done, and how MMP turns your two ticks into a Parliament.</p>
+    <div class="actions">
+      <a class="btn sun" href="quiz.html"><svg class="" width="20" height="20" aria-hidden="true"><use href="#ic-quiz"/></svg> Find your match</a>
+      <a class="btn ghost" href="#mmp">How MMP works <svg class="" width="18" height="18" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+    </div>
+  </div>
+  <div class="count" aria-label="Countdown to election day">
+    <div class="unit"><b class="num">15</b><span>days</span></div>
+    <div class="unit"><b class="num">09</b><span>hours</span></div>
+    <div class="unit"><b class="num">42</b><span>mins</span></div>
+    <div class="when">until polls close, Saturday <b>7 November</b>, 7pm</div>
+  </div>
+</section>
+
+<section>
+  <div class="starters">
+    <a class="starter hot" href="quiz.html"><span class="ic"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-quiz"/></svg></span><span><b>Find your match</b><span class="small">30 statements, 6 minutes. See which parties agree with you.</span></span><svg class="go" width="20" height="20" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+    <a class="starter" href="swipe.html"><span class="ic"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-swipe"/></svg></span><span><b>Policy swipe</b><span class="small">Judge policies without knowing whose they are.</span></span><svg class="go" width="20" height="20" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+    <a class="starter" href="#"><span class="ic"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-compare"/></svg></span><span><b>Compare the issues</b><span class="small">Housing, cost of living, health, climate, crime.</span></span><svg class="go" width="20" height="20" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+    <a class="starter" href="map.html"><span class="ic"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-pin"/></svg></span><span><b>Your electorate</b><span class="small">Who's standing where you live, and who won before.</span></span><svg class="go" width="20" height="20" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+  </div>
+</section>
+
+<section>
+  <div class="sechead"><div><span class="kicker">The parties</span><h2>Who's on the ballot</h2></div><span class="small muted">17 registered · ordered by 30-day poll average</span></div>
+  <div class="parties-row"><a class="pcard" style="--pc:#00529F" href="party.html">
+      <span class="mono round">NA</span>
+      <span class="who"><b>National</b><span class="small">Christopher Luxon</span></span>
+      <span class="pct">28.7%</span></a><a class="pcard" style="--pc:#D82A20" href="party.html">
+      <span class="mono round">LA</span>
+      <span class="who"><b>Labour</b><span class="small">Chris Hipkins</span></span>
+      <span class="pct">27.9%</span></a><a class="pcard" style="--pc:#0B8A3E" href="party.html">
+      <span class="mono round">GR</span>
+      <span class="who"><b>Green</b><span class="small">Davidson & Swarbrick</span></span>
+      <span class="pct">15.2%</span></a><a class="pcard" style="--pc:#2B2B2B" href="party.html">
+      <span class="mono round">NZ</span>
+      <span class="who"><b>NZ First</b><span class="small">Winston Peters</span></span>
+      <span class="pct">10.2%</span></a><a class="pcard" style="--pc:#F2C300" href="party.html">
+      <span class="mono round">AC</span>
+      <span class="who"><b>ACT</b><span class="small">David Seymour</span></span>
+      <span class="pct">9.8%</span></a><a class="pcard" style="--pc:#1FB5A3" href="party.html">
+      <span class="mono round">OP</span>
+      <span class="who"><b>Opportunity</b><span class="small">Qiulae Wong</span></span>
+      <span class="pct">6.2%</span></a><a class="pcard" style="--pc:#B2001A" href="party.html">
+      <span class="mono round">TE</span>
+      <span class="who"><b>Te Pāti Māori</b><span class="small">Ngarewa-Packer & Waititi</span></span>
+      <span class="pct">1.4%</span></a>
+    <a class="pcard" style="--pc:#A7ADB5" href="#"><span class="mono round">+10</span><span class="who"><b>Ten more parties</b><span class="small">Alliance, Conservative, Vision NZ, …</span></span><span class="pct"><svg class="" width="18" height="18" aria-hidden="true"><use href="#ic-chevron-r"/></svg></span></a>
+  </div>
+</section>
+
+<section id="mmp">
+  <div class="sechead"><div><span class="kicker">One minute</span><h2>How MMP works</h2></div></div>
+  <div class="split">
+    <ol class="steps">
+      <li><div><b>You get two ticks.</b> One for a <em>party</em>, one for a local <em>electorate</em> candidate. They can be for different sides.</div></li>
+      <li><div><b>The party vote decides almost everything.</b> A party's share of the party vote sets its share of the 120 seats.</div></li>
+      <li><div><b>To get in, a party needs 5% or an electorate seat.</b> Below that, its party votes are set aside.</div></li>
+      <li><div><b>61 seats make a government.</b> No party has won that alone under MMP, so parties agree deals to govern together.</div></li>
+    </ol>
+    <div>
+      <div class="ballot" aria-hidden="true">
+        <div class="cols2">
+          <div><h5>Party vote</h5>
+            <div class="opt"><span class="box"></span><span class="dot" style="--pc:#F2C300"></span>ACT</div>
+            <div class="opt"><span class="box"></span><span class="dot" style="--pc:#0B8A3E"></span>Green</div>
+            <div class="opt"><span class="box on"></span><span class="dot" style="--pc:#D82A20"></span>Labour</div>
+            <div class="opt"><span class="box"></span><span class="dot" style="--pc:#00529F"></span>National</div>
+            <div class="opt"><span class="box"></span><span class="dot" style="--pc:#2B2B2B"></span>NZ First</div>
+          </div>
+          <div><h5>Electorate vote</h5>
+            <div class="opt"><span class="box"></span>A. Hemi</div>
+            <div class="opt"><span class="box on"></span>R. Patel</div>
+            <div class="opt"><span class="box"></span>M. Walker</div>
+            <div class="opt"><span class="box"></span>T. Ngata</div>
+            <div class="opt"><span class="box"></span>J. Costa</div>
+          </div>
+        </div>
+      </div>
+      <p class="small muted" style="margin-top:12px">Illustrative ballot. Your real paper lists the candidates standing in your electorate.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="split">
+    <div>
+      <div class="sechead"><div><span class="kicker">Key dates</span><h2>What happens when</h2></div></div>
+      <div class="dates">
+        <div class="date"><div class="cal"><small>Oct</small><b>26</b></div><div><b class="ttl">Advance voting opens</b><span class="small muted">Vote anywhere in NZ, no reason needed.</span></div></div>
+        <div class="date"><div class="cal"><small>Nov</small><b>06</b></div><div><b class="ttl">Last day to enrol in advance</b><span class="small muted">You can still enrol and vote on the day.</span></div></div>
+        <div class="date key"><div class="cal"><small>Nov</small><b>07</b></div><div><b class="ttl">Election day</b><span class="small muted">Polls open 9am–7pm. Preliminary results from 7pm.</span></div></div>
+        <div class="date"><div class="cal"><small>Nov</small><b>27</b></div><div><b class="ttl">Official results declared</b><span class="small muted">Includes special votes, which often shift a seat or two.</span></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="sechead"><div><span class="kicker">Poll snapshot</span><h2>Where the parties stand</h2></div><a class="small" href="polls.html">All polls</a></div>
+      <div class="card">
+        <div class="match" style="--pc:#00529F"><span class="rank"></span>
+      <div><div class="nm"><span class="dot" style="--pc:#00529F"></span>National</div><div class="meter single"><span style="width:72%"></span></div></div>
+      <span class="num small">28.7%</span></div><div class="match" style="--pc:#D82A20"><span class="rank"></span>
+      <div><div class="nm"><span class="dot" style="--pc:#D82A20"></span>Labour</div><div class="meter single"><span style="width:70%"></span></div></div>
+      <span class="num small">27.9%</span></div><div class="match" style="--pc:#0B8A3E"><span class="rank"></span>
+      <div><div class="nm"><span class="dot" style="--pc:#0B8A3E"></span>Green</div><div class="meter single"><span style="width:38%"></span></div></div>
+      <span class="num small">15.2%</span></div><div class="match" style="--pc:#2B2B2B"><span class="rank"></span>
+      <div><div class="nm"><span class="dot" style="--pc:#2B2B2B"></span>NZ First</div><div class="meter single"><span style="width:26%"></span></div></div>
+      <span class="num small">10.2%</span></div><div class="match" style="--pc:#F2C300"><span class="rank"></span>
+      <div><div class="nm"><span class="dot" style="--pc:#F2C300"></span>ACT</div><div class="meter single"><span style="width:25%"></span></div></div>
+      <span class="num small">9.8%</span></div><div class="match" style="--pc:#1FB5A3"><span class="rank"></span>
+      <div><div class="nm"><span class="dot" style="--pc:#1FB5A3"></span>Opportunity</div><div class="meter single"><span style="width:16%"></span></div></div>
+      <span class="num small">6.2%</span></div><div class="match" style="--pc:#B2001A"><span class="rank"></span>
+      <div><div class="nm"><span class="dot" style="--pc:#B2001A"></span>Te Pāti Māori</div><div class="meter single"><span style="width:3%"></span></div></div>
+      <span class="num small">1.4%</span></div>
+        <p class="tiny muted" style="margin-top:12px">Simple average of 9 polls with fieldwork ending 23 Sep – 23 Oct 2026. Latest: The Post/Freshwater Strategy, 19 Oct. Dashed line on charts marks the 5% threshold.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="cols">
+    <div><a class="logo" href="home.html"><span class="mark"><svg class="" width="16" height="16" aria-hidden="true"><use href="#ic-check"/></svg></span>Ballot Book</a><p class="small" style="margin-top:8px;max-width:46ch">An independent, non-partisan guide to the 2026 New Zealand general election. Every fact is dated and linked to its source. We do not tell you how to vote.</p></div>
+    <div class="small"><p><a href="#">About &amp; method</a> · <a href="#">Sources</a> · <a href="#">Corrections</a> · <a href="#">Privacy</a></p><p class="muted">Enrol or check your details at <a href="https://vote.nz">vote.nz</a>. Election day is Saturday 7 November 2026.</p></div>
+  </div>
+</footer>
+</main>
+<nav class="bottombar" aria-label="Main"><button type="button" aria-current="page" onclick="location.href='home.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-home"/></svg><span>Home</span></button><button type="button"  onclick="location.href='quiz.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-quiz"/></svg><span>Match</span></button><button type="button"  onclick="location.href='swipe.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-swipe"/></svg><span>Swipe</span></button><button type="button"  onclick="location.href='polls.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-polls"/></svg><span>Polls</span></button><button type="button"  onclick="location.href='map.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-map"/></svg><span>Map</span></button><button type="button"  onclick="location.href='#'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-more"/></svg><span>More</span></button></nav>
+</body>
+</html>

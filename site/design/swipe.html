@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Policy swipe — Ballot Book NZ</title>
+<meta name="description" content="Swipe through policies blind, then see whose they are.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Atkinson+Hyperlegible+Next:wght@400..800&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="components.css">
+<script>try{var t=localStorage.getItem('bb-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <!-- Ballot Book NZ icon set. 24×24, stroke 1.75, round caps/joins, currentColor.
+       Use: <svg class="ic" width="20" height="20"><use href="#ic-home"/></svg>
+       Inline this file once in the document body (or serve it and reference icons.svg#ic-name). -->
+  <defs>
+    <style>
+      .ic-s{fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+      .ic-f{fill:currentColor;stroke:none}
+    </style>
+  </defs>
+
+  <!-- navigation -->
+  <symbol id="ic-home" viewBox="0 0 24 24"><path class="ic-s" d="M4 11.5 12 5l8 6.5M6 10v9h4.5v-5h3v5H18v-9"/></symbol>
+  <symbol id="ic-quiz" viewBox="0 0 24 24"><path class="ic-s" d="M5 4.5h14v15H5zM8 9h3M8 12.5h3M8 16h3"/><path class="ic-s" d="m13.5 9 1 1 2-2.2M13.5 12.6l1 1 2-2.2M13.5 16.1l1 1 2-2.2"/></symbol>
+  <symbol id="ic-swipe" viewBox="0 0 24 24"><path class="ic-s" d="M7.5 6.5h9a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 18V8a1.5 1.5 0 0 1 1.5-1.5Z"/><path class="ic-s" d="M9 4h8.5A1.5 1.5 0 0 1 19 5.5V16M3.5 11l-1.5 1.5 1.5 1.5M20.5 11l1.5 1.5-1.5 1.5"/></symbol>
+  <symbol id="ic-compare" viewBox="0 0 24 24"><path class="ic-s" d="M4 5h6v14H4zM14 5h6v14h-6zM6.5 9h1M6.5 12h1M16.5 9h1M16.5 12h1M16.5 15h1"/></symbol>
+  <symbol id="ic-map" viewBox="0 0 24 24"><path class="ic-s" d="M3.5 6.5 9 4l6 2.5 5.5-2.5v13.5L15 20l-6-2.5-5.5 2.5zM9 4v13.5M15 6.5V20"/></symbol>
+  <symbol id="ic-parliament" viewBox="0 0 24 24"><path class="ic-s" d="M4 20h16M5 17h14M6 17V11M10 17V11M14 17V11M18 17V11M4 11h16L12 4z"/></symbol>
+  <symbol id="ic-people" viewBox="0 0 24 24"><circle class="ic-s" cx="9" cy="8.5" r="3"/><path class="ic-s" d="M3.5 19a5.5 5.5 0 0 1 11 0M15.5 5.6a3 3 0 0 1 0 5.8M17 13.6a5.5 5.5 0 0 1 3.5 5.4"/></symbol>
+  <symbol id="ic-polls" viewBox="0 0 24 24"><path class="ic-s" d="M4 19h16M5 15l4-4.5 3.5 3L19 6"/><circle class="ic-f" cx="19" cy="6" r="1.6"/></symbol>
+  <symbol id="ic-issues" viewBox="0 0 24 24"><path class="ic-s" d="M12 3.5 3.5 20.5h17z"/><path class="ic-s" d="M12 10v4.5M12 17.2v.3"/></symbol>
+  <symbol id="ic-more" viewBox="0 0 24 24"><circle class="ic-f" cx="6" cy="12" r="1.8"/><circle class="ic-f" cx="12" cy="12" r="1.8"/><circle class="ic-f" cx="18" cy="12" r="1.8"/></symbol>
+  <symbol id="ic-compass" viewBox="0 0 24 24"><circle class="ic-s" cx="12" cy="12" r="8.5"/><path class="ic-f" d="m15.5 8.5-2.2 5.3-5.3 2.2 2.2-5.3z"/></symbol>
+  <symbol id="ic-book" viewBox="0 0 24 24"><path class="ic-s" d="M4 5.5A2 2 0 0 1 6 4h6v15H6a2 2 0 0 0-2 2zM12 4h6a2 2 0 0 1 2 2v15a2 2 0 0 0-2-2h-6"/></symbol>
+
+  <!-- actions -->
+  <symbol id="ic-search" viewBox="0 0 24 24"><circle class="ic-s" cx="10.5" cy="10.5" r="6"/><path class="ic-s" d="m15 15 5 5"/></symbol>
+  <symbol id="ic-arrow" viewBox="0 0 24 24"><path class="ic-s" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="ic-chevron" viewBox="0 0 24 24"><path class="ic-s" d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="ic-chevron-r" viewBox="0 0 24 24"><path class="ic-s" d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="ic-check" viewBox="0 0 24 24"><path class="ic-s" d="m5 12.5 4.5 4.5L19 7"/></symbol>
+  <symbol id="ic-x" viewBox="0 0 24 24"><path class="ic-s" d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="ic-skip" viewBox="0 0 24 24"><path class="ic-s" d="M5 6v12M9 12l9-6v12z"/></symbol>
+  <symbol id="ic-play" viewBox="0 0 24 24"><path class="ic-f" d="M7 5v14l12-7z"/></symbol>
+  <symbol id="ic-pause" viewBox="0 0 24 24"><path class="ic-f" d="M6 5h4v14H6zM14 5h4v14h-4z"/></symbol>
+  <symbol id="ic-info" viewBox="0 0 24 24"><circle class="ic-s" cx="12" cy="12" r="8.5"/><path class="ic-s" d="M12 11v5"/><circle class="ic-f" cx="12" cy="8" r="1.1"/></symbol>
+  <symbol id="ic-external" viewBox="0 0 24 24"><path class="ic-s" d="M14 4h6v6M20 4l-9 9M18 13v6H5V6h6"/></symbol>
+  <symbol id="ic-filter" viewBox="0 0 24 24"><path class="ic-s" d="M4 6h16M7 12h10M10 18h4"/></symbol>
+  <symbol id="ic-calendar" viewBox="0 0 24 24"><path class="ic-s" d="M4.5 6.5h15v13h-15zM4.5 10.5h15M8 4v4M16 4v4"/></symbol>
+  <symbol id="ic-clock" viewBox="0 0 24 24"><circle class="ic-s" cx="12" cy="12" r="8.5"/><path class="ic-s" d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="ic-sun" viewBox="0 0 24 24"><circle class="ic-s" cx="12" cy="12" r="4"/><path class="ic-s" d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/></symbol>
+  <symbol id="ic-moon" viewBox="0 0 24 24"><path class="ic-s" d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/></symbol>
+  <symbol id="ic-star" viewBox="0 0 24 24"><path class="ic-s" d="m12 4 2.4 5 5.4.7-4 3.8 1 5.4L12 16.3 7.2 18.9l1-5.4-4-3.8L9.6 9z"/></symbol>
+  <symbol id="ic-flag" viewBox="0 0 24 24"><path class="ic-s" d="M6 20V4.5M6 5h11l-2.5 3.5L17 12H6"/></symbol>
+  <symbol id="ic-tick-box" viewBox="0 0 24 24"><path class="ic-s" d="M5 5h14v14H5z"/><path class="ic-s" d="m8.5 12.5 2.5 2.5 5-5.5"/></symbol>
+  <symbol id="ic-doc" viewBox="0 0 24 24"><path class="ic-s" d="M7 3.5h7l4 4v13H7zM14 3.5v4h4M9.5 12h5M9.5 15.5h5"/></symbol>
+  <symbol id="ic-scale" viewBox="0 0 24 24"><path class="ic-s" d="M12 4v16M6 20h12M4 8h16M6 8l-3 6a3 3 0 0 0 6 0zM18 8l-3 6a3 3 0 0 0 6 0z"/></symbol>
+  <symbol id="ic-pin" viewBox="0 0 24 24"><path class="ic-s" d="M12 21s6-5.5 6-11a6 6 0 0 0-12 0c0 5.5 6 11 6 11z"/><circle class="ic-s" cx="12" cy="10" r="2.2"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="inner">
+    <a class="logo" href="home.html"><span class="mark"><svg class="" width="18" height="18" aria-hidden="true"><use href="#ic-check"/></svg></span>Ballot Book <span class="tag">NZ 2026</span></a>
+    <nav class="nav" aria-label="Sections"><button type="button"  onclick="location.href='home.html'">Home</button><button type="button"  onclick="location.href='quiz.html'">Match</button><button type="button" aria-current="page" onclick="location.href='swipe.html'">Swipe</button><button type="button"  onclick="location.href='polls.html'">Polls</button><button type="button"  onclick="location.href='map.html'">Electorates</button><button type="button"  onclick="location.href='parliament.html'">Parliament</button><button type="button"  onclick="location.href='#'">People</button><button type="button"  onclick="location.href='#'">Issues</button></nav>
+    <span class="spacer"></span>
+    <button class="iconbtn" type="button" aria-label="Search"><svg class="" width="20" height="20" aria-hidden="true"><use href="#ic-search"/></svg></button>
+    <button class="iconbtn" type="button" aria-label="Toggle dark mode" onclick="(function(){var r=document.documentElement;var dark=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches);r.dataset.theme=dark?'light':'dark';try{localStorage.setItem('bb-theme',r.dataset.theme)}catch(e){}})()"><svg class="" width="20" height="20" aria-hidden="true"><use href="#ic-moon"/></svg></button>
+  </div>
+</header>
+<main class="wrap">
+
+<div class="split" style="gap:48px">
+<section class="swipe-wrap">
+  <span class="kicker">Policy swipe · Card 4 of 20</span>
+  <h1 style="font-size:var(--t-h2)">Do you agree?</h1>
+  <p class="small muted">Judge the idea first. We'll tell you whose it is after you decide.</p>
+  <div class="stage">
+    <div class="scard back2" aria-hidden="true"></div>
+    <div class="scard back" aria-hidden="true"></div>
+    <article class="scard top" data-dir="yes">
+      <span class="stamp yes show">Agree</span><span class="stamp no">Nope</span>
+      <span class="kicker">Energy · Policy 4 of 20</span>
+      <p class="stmt">Break up the big electricity "gentailers" so companies that generate power can't also sell it.</p>
+      <div class="body">
+        <h4>What it would do</h4>
+        <p>Force Meridian, Mercury, Genesis and Contact to separate their generation and retail arms into different companies.</p>
+        <h4>The reasoning</h4>
+        <p>Supporters say the combined companies have little reason to compete on price. Critics say splitting them raises costs and slows new generation.</p>
+      </div>
+      <div class="foot"><span>Swipe right to agree, left to disagree</span><span class="num">4/20</span></div>
+    </article>
+  </div>
+  <div class="swipe-actions">
+    <button class="big no" type="button" aria-label="Disagree"><svg class="" width="28" height="28" aria-hidden="true"><use href="#ic-x"/></svg></button>
+    <button class="btn ghost" type="button" aria-label="Skip"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-skip"/></svg></button>
+    <button class="big yes" type="button" aria-label="Agree"><svg class="" width="28" height="28" aria-hidden="true"><use href="#ic-check"/></svg></button>
+  </div>
+  <div class="tallybar"><span>Agreed <b>9</b></span><span>·</span><span>Disagreed <b>6</b></span><span>·</span><span>Skipped <b>1</b></span></div>
+</section>
+
+<section class="swipe-wrap">
+  <span class="kicker">After you decide</span>
+  <h2>Whose policy was it?</h2>
+  <div class="stage" style="min-height:380px;height:420px">
+    <article class="scard top reveal" style="--pc:#2B2B2B">
+      <div class="whose"><img class="face" style="--pc:#2B2B2B" alt="Winston Peters" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Crect%20width%3D%27100%27%20height%3D%27100%27%20fill%3D%27%23C9CCC4%27/%3E%3Ccircle%20cx%3D%2750%27%20cy%3D%2740%27%20r%3D%2718%27%20fill%3D%27%23F3F3EF%27%20opacity%3D%27.9%27/%3E%3Cellipse%20cx%3D%2750%27%20cy%3D%2784%27%20rx%3D%2730%27%20ry%3D%2720%27%20fill%3D%27%23F3F3EF%27%20opacity%3D%27.9%27/%3E%3C/svg%3E"><div><span class="kicker" style="margin:0">This is a</span><b>NZ First</b> policy<div class="small muted">Also backed by Labour and the Greens</div></div></div>
+      <span class="verdict-pill yes"><svg class="" width="12" height="12" aria-hidden="true"><use href="#ic-check"/></svg> You agreed</span>
+      <p class="stmt" style="font-size:1.25rem">Break up the big electricity "gentailers".</p>
+      <div class="body"><p>You've now agreed with <b>1 of 3</b> NZ First policies so far. <a href="#">Read the full policy</a>.</p></div>
+      <div class="foot"><button class="btn primary sm" type="button">Next card <svg class="" width="16" height="16" aria-hidden="true"><use href="#ic-arrow"/></svg></button><span class="num">4/20</span></div>
+    </article>
+  </div>
+
+  <h3 style="margin-top:32px">Your running tally</h3>
+  <div class="card tally"><div class="trow" style="--pc:#0B8A3E"><span class="nm"><span class="dot" style="--pc:#0B8A3E"></span>Green</span><div class="meter single"><span style="width:88%"></span></div><span class="num small">7/8 · 88%</span></div><div class="trow" style="--pc:#D82A20"><span class="nm"><span class="dot" style="--pc:#D82A20"></span>Labour</span><div class="meter single"><span style="width:71%"></span></div><span class="num small">5/7 · 71%</span></div><div class="trow" style="--pc:#1FB5A3"><span class="nm"><span class="dot" style="--pc:#1FB5A3"></span>Opportunity</span><div class="meter single"><span style="width:60%"></span></div><span class="num small">3/5 · 60%</span></div><div class="trow" style="--pc:#B2001A"><span class="nm"><span class="dot" style="--pc:#B2001A"></span>Te Pāti Māori</span><div class="meter single"><span style="width:50%"></span></div><span class="num small">2/4 · 50%</span></div><div class="trow" style="--pc:#00529F"><span class="nm"><span class="dot" style="--pc:#00529F"></span>National</span><div class="meter single"><span style="width:38%"></span></div><span class="num small">3/8 · 38%</span></div><div class="trow" style="--pc:#2B2B2B"><span class="nm"><span class="dot" style="--pc:#2B2B2B"></span>NZ First</span><div class="meter single"><span style="width:20%"></span></div><span class="num small">1/5 · 20%</span></div><div class="trow" style="--pc:#F2C300"><span class="nm"><span class="dot" style="--pc:#F2C300"></span>ACT</span><div class="meter single"><span style="width:17%"></span></div><span class="num small">1/6 · 17%</span></div></div>
+  <p class="tiny muted" style="margin-top:8px">Agree rate = policies you agreed with ÷ that party's policies you've seen. Small samples bounce around: judge after 20 cards, not 4.</p>
+</section>
+</div>
+
+<footer>
+  <div class="cols">
+    <div><a class="logo" href="home.html"><span class="mark"><svg class="" width="16" height="16" aria-hidden="true"><use href="#ic-check"/></svg></span>Ballot Book</a><p class="small" style="margin-top:8px;max-width:46ch">An independent, non-partisan guide to the 2026 New Zealand general election. Every fact is dated and linked to its source. We do not tell you how to vote.</p></div>
+    <div class="small"><p><a href="#">About &amp; method</a> · <a href="#">Sources</a> · <a href="#">Corrections</a> · <a href="#">Privacy</a></p><p class="muted">Enrol or check your details at <a href="https://vote.nz">vote.nz</a>. Election day is Saturday 7 November 2026.</p></div>
+  </div>
+</footer>
+</main>
+<nav class="bottombar" aria-label="Main"><button type="button"  onclick="location.href='home.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-home"/></svg><span>Home</span></button><button type="button"  onclick="location.href='quiz.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-quiz"/></svg><span>Match</span></button><button type="button" aria-current="page" onclick="location.href='swipe.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-swipe"/></svg><span>Swipe</span></button><button type="button"  onclick="location.href='polls.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-polls"/></svg><span>Polls</span></button><button type="button"  onclick="location.href='map.html'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-map"/></svg><span>Map</span></button><button type="button"  onclick="location.href='#'"><svg class="" width="22" height="22" aria-hidden="true"><use href="#ic-more"/></svg><span>More</span></button></nav>
+</body>
+</html>
