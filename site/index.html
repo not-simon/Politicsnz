@@ -492,7 +492,7 @@ V.home = async () => {
 
     <div class="card" style="display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;border-left:6px solid var(--sun)"><span class="ic" style="width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:color-mix(in srgb, var(--sun) 30%, transparent)">${ic('vote')}</span><div><h3>First time voting, or haven't voted in a while?</h3><p class="small muted" style="margin:0">A plain, step-by-step guide: check you're enrolled, find a voting place, know what to bring and what the two ticks mean.</p></div><button class="btn sun" data-go="vote">How to vote</button></div>
     <div class="starters">
-      <button class="starter" data-go="match"><span class="ic sun">${ic('match')}</span><h3>Find your match</h3><p class="muted small">Answer ${(G().quiz && G().quiz.statements || []).length || 'about 40'} quick questions, written without naming any party, and see who agrees with you and on what.</p><span class="go">Start the quiz →</span></button>
+      <button class="starter" data-go="match"><span class="ic sun">${ic('match')}</span><h3>Find your match</h3><p class="muted small">Thirty statements about how New Zealand should work, no party named. See how closely each party's published positions match yours, with the evidence.</p><span class="go">Start the quiz →</span></button>
       <button class="starter" data-go="swipe"><span class="ic">${ic('swipe')}</span><h3>Policy swipe</h3><p class="muted small">Agree or disagree with real 2026 policies, one at a time, with no party names. Find out whose it was after you decide.</p><span class="go">Start swiping →</span></button>
       <button class="starter" data-go="compass"><span class="ic">${ic('compass')}</span><h3>Political compass</h3><p class="muted small">General value questions from academic surveys; see where you sit, and where the parties sit, on standard axes.</p><span class="go">Take the test →</span></button>
       <button class="starter" data-go="game"><span class="ic">${ic('game')}</span><h3>Whose policy? (game)</h3><p class="muted small">Pass the phone. Each player guesses which party a real policy belongs to. Two to six players.</p><span class="go">Play →</span></button>
@@ -1015,51 +1015,60 @@ V['swipe-tally'] = async () => {
 const SCALE = [[-2, 'Strongly disagree'], [-1, 'Disagree'], [0, 'Neutral'], [1, 'Agree'], [2, 'Strongly agree']];
 function quizState() { try { return JSON.parse(store.get('quiz') || '{}') } catch { return {} } }
 function saveQuiz(q) { store.set('quiz', JSON.stringify(q)) }
+const IMP = [['less', 'Matters less'], ['normal', 'Normal'], ['very', 'Matters a lot']];
+function q2State() { try { return JSON.parse(store.get('quiz2') || '{}') } catch { return {} } }
+function q2Save(st) { store.set('quiz2', JSON.stringify(st)) }
+function shuffled(ids, seed) { let x = seed || 1; const r = () => (x = (x * 1664525 + 1013904223) % 4294967296) / 4294967296; const a = ids.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a }
+function q2Scores(Q, st, { dropLow = false } = {}) { const W = { less: .5, normal: 1, very: 2 }; const k = ((Q.scoring || {}).shrinkage || {}).k ?? 4;
+  const answered = Q.statements.filter(q => typeof st.answers[q.id] === 'number'); const M = answered.length; const need = Math.max(10, Math.ceil(0.5 * M));
+  const out = []; for (const [slug, meta] of Object.entries(Q.parties || {})) { let num = 0, den = 0, n = 0; const byDim = {};
+    for (const q of answered) { const c = q.positions[slug]; if (!c || typeof c.position !== 'number') continue; if (dropLow && c.confidence === 'low') continue; const w = W[st.weights[q.id] || 'normal']; const a = 1 - Math.abs(st.answers[q.id] - c.position) / 4; num += w * a; den += w; n++; (byDim[q.dimension] = byDim[q.dimension] || []).push(a) }
+    if (!n) continue; out.push({ slug, name: meta.name, n, M, raw: num / den, match: (num + k * .5) / (den + k), inRanking: n >= need, dims: Object.fromEntries(Object.entries(byDim).map(([d, arr]) => [d, arr.reduce((x, y) => x + y, 0) / arr.length])) }) }
+  return out.sort((a, b) => b.match - a.match) }
+function dimPositions(Q, st) { const dims = {}; for (const q of Q.statements) { const d = dims[q.dimension] = dims[q.dimension] || { label: q.dimension_label, a: q.pole_a, b: q.pole_b, user: [], parties: {} };
+    if (typeof st.answers[q.id] === 'number') d.user.push(q.polarity_sign * st.answers[q.id]);
+    for (const [slug, c] of Object.entries(q.positions)) if (c && typeof c.position === 'number') (d.parties[slug] = d.parties[slug] || []).push(q.polarity_sign * c.position) }
+  const mean = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
+  return Object.fromEntries(Object.entries(dims).map(([k, d]) => [k, { ...d, user: d.user.length >= 2 ? mean(d.user) : null, parties: Object.fromEntries(Object.entries(d.parties).filter(([, a]) => a.length >= 2).map(([s, a]) => [s, mean(a)])) }])) }
 V.match = () => {
-  const Q = (G().quiz || {}).statements || [];
-  if (!Q.length) { $('#main').innerHTML = `<section class="view"><h2>Find your match</h2><p class="empty">The quiz questions are still being researched. Check back soon.</p></section>`; return }
-  const st = quizState(); st.answers = st.answers || {}; st.weights = st.weights || {};
-  let i = Math.min(st.i || 0, Q.length);
-  const render = () => {
-    if (i >= Q.length) return results();
-    const q = Q[i]; const a = st.answers[q.id];
-    $('#main').innerHTML = `<section class="view"><div class="quiz">
-      <div class="row" style="justify-content:space-between"><div class="kicker">Question ${i + 1} of ${Q.length} · ${esc((q.issue || '').replace(/-/g, ' '))}</div><button class="btn ghost sm" id="qres">See results so far</button></div>
-      <div class="progress"><span style="width:${i / Q.length * 100}%"></span></div>
+  const Q = G().quiz2; if (!Q || !(Q.statements || []).length) { $('#main').innerHTML = `<section class="view"><h2>Find your match</h2><p class="empty">The quiz is being rebuilt on a published method. Check back soon.</p></section>`; return }
+  const st = q2State(); st.answers = st.answers || {}; st.weights = st.weights || {}; if (!st.seed) { st.seed = Math.floor(Math.random() * 1e9) + 1; q2Save(st) }
+  const order = shuffled(Q.statements.map(q => q.id), st.seed); const byId = Object.fromEntries(Q.statements.map(q => [q.id, q])); let i = Math.min(st.i || 0, order.length);
+  const intro = () => { const n = Object.keys(st.answers).length; $('#main').innerHTML = `<section class="view"><div class="quiz"><div class="stack"><div class="kicker">Find your match · ${Q.statements.length} statements · about 5 minutes</div><h2>Which parties think like you?</h2>
+      <p class="lede">Thirty statements about how New Zealand should work, each with its trade-off spelt out. No party is named. At the end you'll see how closely each party's published positions match yours, with the evidence for every one.</p>
+      <p class="small muted">Positions were placed by two independent coders from manifestos, recorded votes and leaders' statements, then reconciled (they agreed within one point on 99.6% of positions). Statements come in a random order; your answers stay on this device. <button class="btn ghost sm" data-page="guide/quiz-method.md">How it works</button></p>
+      <div class="row"><button class="btn sun" id="qstart">${n ? 'Continue' : 'Start'}</button>${n ? `<button class="btn" id="qres0">See my results</button><button class="btn ghost" id="qreset0">Start over</button>` : ''}</div></div></div></section>`;
+    $('#qstart').onclick = () => render(); const r = $('#qres0'); if (r) r.onclick = results; const z = $('#qreset0'); if (z) z.onclick = () => { st.answers = {}; st.weights = {}; st.i = 0; i = 0; q2Save(st); intro() } };
+  const render = () => { if (i >= order.length) return results(); const q = byId[order[i]]; const a = st.answers[q.id]; const w = st.weights[q.id] || 'normal';
+    $('#main').innerHTML = `<section class="view"><div class="quiz"><div class="row" style="justify-content:space-between"><div class="kicker">Statement ${i + 1} of ${order.length}</div><button class="btn ghost sm" id="qres">Results so far</button></div><div class="progress"><span style="width:${i / order.length * 100}%"></span></div>
       <div class="qcard"><div class="qtext">${esc(q.text)}</div>
         <div class="scale">${SCALE.map(([v, l]) => `<button data-v="${v}" aria-pressed="${a === v}">${l}</button>`).join('')}</div>
-        <div class="row" style="justify-content:space-between"><label class="row small" style="gap:6px"><input type="checkbox" id="qimp" ${st.weights[q.id] === 2 ? 'checked' : ''}> This matters a lot to me</label>
-        <div class="row"><button class="btn sm" id="qback" ${i === 0 ? 'disabled' : ''}>Back</button><button class="btn sm" id="qskip">Skip</button></div></div></div>
-      <p class="tiny muted" style="text-align:center">Statements are written without naming any party, so you can answer on the substance. Your answers stay on this device. <button class="btn ghost sm" data-page="guide/quiz-method.md">How matching works</button></p></div></section>`;
-    $('.scale').onclick = e => { const b = e.target.closest('[data-v]'); if (!b) return; st.answers[q.id] = +b.dataset.v; st.weights[q.id] = $('#qimp').checked ? 2 : 1; i++; st.i = i; saveQuiz(st); render() };
-    $('#qimp').onchange = () => { st.weights[q.id] = $('#qimp').checked ? 2 : 1; saveQuiz(st) };
-    $('#qskip').onclick = () => { delete st.answers[q.id]; i++; st.i = i; saveQuiz(st); render() };
-    $('#qback').onclick = () => { i = Math.max(0, i - 1); st.i = i; saveQuiz(st); render() };
-    $('#qres').onclick = results;
-  };
-  const results = () => {
-    const parties = new Set(); Q.forEach(q => Object.entries(q.positions || {}).forEach(([p, x]) => { if (x && typeof x.position === 'number') parties.add(p) }));
-    const answered = Q.filter(q => typeof st.answers[q.id] === 'number');
-    const scores = [...parties].map(p => { let num = 0, den = 0, cov = 0;
-      answered.forEach(q => { const x = (q.positions || {})[p]; if (!x || typeof x.position !== 'number') return; const w = st.weights[q.id] || 1; num += w * (1 - Math.abs(st.answers[q.id] - x.position) / 4); den += w; cov++ });
-      const k = 3; return { p, score: den ? (num + k * .5) / (den + k) : null, raw: den ? num / den : null, cov } }).filter(x => x.score != null).sort((a, b) => b.score - a.score);
-    $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:820px">
-      <div class="stack"><div class="kicker">Your results · ${answered.length} of ${Q.length} answered</div><h2>Parties that agree with you most</h2>
-      <p class="muted">Agreement is worked out only on questions where a party has a public position. Parties with few public positions are pulled towards 50% so they aren't over-rewarded. This is a starting point, not advice.</p></div>
-      ${answered.length ? (() => { const row = (x, n) => `<div class="match" style="--pc:${pcolor(x.p)}">${(() => { const f = leaderFaces(x.p)[0]; return f ? faceHTML(f, x.p) : `<span class="mono">${esc(initials(x.p))}</span>` })()}
-        <div style="min-width:0"><h3>${esc(pname(x.p))}</h3><div class="meter" style="margin-top:6px"><span style="width:${x.score * 100}%;background:${pcolor(x.p)}"></span></div><div class="tiny muted">Based on ${x.cov} of your ${answered.length} answers${x.cov < 10 ? ' · <span class="badge" style="padding:1px 8px">limited information</span>' : ''}</div></div>
-        <div class="stack" style="justify-items:end;gap:4px"><span class="pct">${Math.round(x.score * 100)}%</span><button class="btn sm" data-why="${x.p}">Why</button></div></div>`; const main = scores.filter(x => x.cov >= 10), few = scores.filter(x => x.cov < 10);
-        return main.map(row).join('') + (few.length ? `<details class="card flat"><summary style="cursor:pointer"><b>${few.length} parties with few public positions</b> <span class="small muted">· matched on fewer than 10 of your answers, so less reliable</span></summary><div class="stack" style="margin-top:12px">${few.map(row).join('')}</div></details>` : '') })() : '<p class="empty">Answer a few questions first.</p>'}
-      <div class="row"><button class="btn primary" id="qagain">${i >= Q.length ? 'Change my answers' : 'Keep answering'}</button><button class="btn" id="qreset">Start over</button></div></div></section>`;
-    $('#qagain').onclick = () => { i = i >= Q.length ? 0 : i; render() };
-    $('#qreset').onclick = () => { st.answers = {}; st.weights = {}; st.i = 0; i = 0; saveQuiz(st); render() };
-    $('#main').querySelectorAll('[data-why]').forEach(b => b.onclick = () => { const p = b.dataset.why;
-      openDialog(`You and ${pname(p)}`, `<div class="stack">${answered.map(q => { const x = (q.positions || {})[p]; const u = st.answers[q.id];
-        const lab = v => (SCALE.find(s => s[0] === v) || [0, '–'])[1];
-        return `<div class="pol"><div class="st">${esc(q.text)}</div>${q.explainer ? `<p class="tiny muted">${esc(q.explainer)}</p>` : ''}<div class="row small"><span>You: <b>${lab(u)}</b></span><span>${esc(pname(p))}: <b>${x && typeof x.position === 'number' ? lab(x.position) : 'no public position'}</b></span></div>
-          ${x && x.evidence ? `<p class="small muted">${esc(x.evidence)}${x.source_url ? ` <a href="${esc(x.source_url)}" target="_blank" rel="noopener">source</a>` : ''}</p>` : ''}</div>` }).join('')}</div>`) });
-  };
-  render();
+        <div class="row" style="justify-content:space-between"><span class="seg" id="qimp">${IMP.map(([k, l]) => `<button data-w="${k}" aria-pressed="${w === k}">${l}</button>`).join('')}</span><div class="row"><button class="btn sm" id="qback" ${i === 0 ? 'disabled' : ''}>Back</button><button class="btn sm" id="qskip">No opinion</button></div></div></div>
+      <p class="tiny muted" style="text-align:center">Pick how much this matters to you before choosing, or leave it on Normal.</p></div></section>`;
+    $('.scale').onclick = e => { const b = e.target.closest('[data-v]'); if (!b) return; st.answers[q.id] = +b.dataset.v; i++; st.i = i; q2Save(st); render() };
+    $('#qimp').onclick = e => { const b = e.target.closest('[data-w]'); if (!b) return; st.weights[q.id] = b.dataset.w; q2Save(st); $('#qimp').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.w === b.dataset.w)) };
+    $('#qskip').onclick = () => { delete st.answers[q.id]; i++; st.i = i; q2Save(st); render() }; $('#qback').onclick = () => { i = Math.max(0, i - 1); st.i = i; q2Save(st); render() }; $('#qres').onclick = results };
+  const results = () => { const sc = q2Scores(Q, st); const scLow = Object.fromEntries(q2Scores(Q, st, { dropLow: true }).map(x => [x.slug, x.match])); const M = Object.keys(st.answers).filter(id => byId[id]).length;
+    const main = sc.filter(x => x.inRanking), few = sc.filter(x => !x.inRanking); const dims = dimPositions(Q, st);
+    const row = (x, idx) => { const band = scLow[x.slug] != null ? Math.abs(scLow[x.slug] - x.match) : 0; const gap = idx > 0 && main[idx - 1] ? Math.round((main[idx - 1].match - x.match) * 100) : null;
+      return `<div class="match" style="--pc:${pcolor(x.slug)}">${(() => { const f = leaderFaces(x.slug)[0]; return f ? faceHTML(f, x.slug) : `<span class="mono" style="--pc:${pcolor(x.slug)}">${esc(initials(x.slug))}</span>` })()}
+        <div style="min-width:0"><h3>${esc(pname(x.slug))}</h3><div class="meter" style="margin-top:6px"><span style="width:${x.match * 100}%;background:${pcolor(x.slug)}"></span></div><div class="tiny muted">Based on ${x.n} of your ${M} answers${band >= .02 ? ` · ±${Math.round(band * 100)} if low-confidence positions are set aside` : ''}${x.inRanking ? '' : ' · <span class="badge">limited information</span>'}</div></div>
+        <div class="stack" style="justify-items:end;gap:4px"><span class="pct">${Math.round(x.match * 100)}%</span><button class="btn sm" data-why="${x.slug}">Why</button></div></div>` };
+    $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:840px"><div class="stack"><div class="kicker">Your results · ${M} of ${Q.statements.length} answered</div><h2>How closely each party matches you</h2>
+      <p class="muted">Agreement is measured only on statements where a party has an evidenced position, weighted by how much each mattered to you, and pulled toward 50% by four "neutral" phantom statements so thin records can't win by luck. Differences of a few points are not meaningful. This is information, not a recommendation.</p></div>
+      ${M ? (main.length ? main.map(row).join('') : '<p class="empty">Answer at least 10 statements to rank the parties.</p>') : '<p class="empty">Answer a few statements first.</p>'}
+      ${few.length && M ? `<details class="card flat"><summary style="cursor:pointer"><b>${few.length} parties with few public positions</b> <span class="small muted">· matched on fewer than ${Math.max(10, Math.ceil(0.5 * M))} of your answers, so not ranked</span></summary><div class="stack" style="margin-top:12px">${few.map(row).join('')}</div></details>` : ''}
+      ${M ? `<div class="card stack"><h3>Where you sit, dimension by dimension</h3><p class="small muted">Your average answer on each group of statements, with the parties' coded positions. Left and right here are the two poles of each dimension, not left and right wing.</p>
+        ${Object.entries(dims).map(([k, d]) => `<div class="stack" style="gap:4px"><div class="row" style="justify-content:space-between"><b class="small">${esc(d.label)}</b></div><div class="row tiny muted" style="justify-content:space-between"><span style="max-width:45%">${esc(d.a)}</span><span style="max-width:45%;text-align:right">${esc(d.b)}</span></div>
+          <div style="position:relative;height:34px;background:var(--sunk);border-radius:8px"><span style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--rule)"></span>${Object.entries(d.parties).map(([s, v]) => `<span title="${esc(pname(s))}" style="position:absolute;top:10px;left:calc(${(2 - v) / 4 * 100}% - 7px);width:14px;height:14px;border-radius:50%;background:${pcolor(s)};box-shadow:0 0 0 1px var(--seat-stroke)"></span>`).join('')}${d.user != null ? `<span style="position:absolute;top:3px;left:calc(${(2 - d.user) / 4 * 100}% - 12px);width:24px;height:28px;border-radius:8px;background:var(--sun);border:2px solid var(--ink);display:grid;place-items:center;font:800 11px var(--f-ui);color:var(--sun-ink)">You</span>` : ''}</div></div>`).join('')}
+        <div class="legend">${Object.keys(Q.parties).filter(s => Object.values(dims).some(d => d.parties[s] != null)).map(s => `<span class="item"><span class="dot" style="background:${pcolor(s)}"></span>${esc(pname(s))}</span>`).join('')}</div></div>` : ''}
+      <div class="row"><button class="btn primary" id="qagain">${i >= order.length ? 'Change my answers' : 'Keep answering'}</button><button class="btn" id="qreset">Start over</button><button class="btn ghost" data-page="guide/quiz-method.md">Method and full audit table</button></div></div></section>`;
+    $('#qagain').onclick = () => { i = i >= order.length ? 0 : i; render() }; $('#qreset').onclick = () => { st.answers = {}; st.weights = {}; st.i = 0; i = 0; q2Save(st); intro() };
+    $('#main').querySelectorAll('[data-why]').forEach(b => b.onclick = () => { const p = b.dataset.why; const lab = v => (SCALE.find(x => x[0] === v) || [0, '–'])[1];
+      openDialog(`You and ${pname(p)}`, `<p class="small muted">Each statement you answered, your answer, the party's coded position and the evidence behind it.</p><div class="stack">${order.filter(id => typeof st.answers[id] === 'number').map(id => { const q = byId[id]; const c = q.positions[p]; const u = st.answers[id];
+        return `<div class="pol"><div class="st">${esc(q.text)}</div><div class="row small"><span>You: <b>${lab(u)}</b></span><span>${esc(pname(p))}: <b>${c && typeof c.position === 'number' ? lab(c.position) + (c.position === 0 ? ' (argued neutral)' : '') : 'no evidenced position'}</b>${c && c.confidence ? ` <span class="tiny muted">· ${esc(c.confidence)} confidence</span>` : ''}</span></div>
+          ${c && c.evidence ? `<p class="small muted">${esc(c.evidence.length > 420 ? c.evidence.slice(0, 420) + '…' : c.evidence)}${c.source_url ? ` <a href="${esc(c.source_url)}" target="_blank" rel="noopener">source</a>` : ''}</p>` : ''}</div>` }).join('')}</div>`) }) };
+  if (!Object.keys(st.answers).length && i === 0) intro(); else if (i >= order.length) results(); else render();
 };
 
 /* ----- electorate ----- */
