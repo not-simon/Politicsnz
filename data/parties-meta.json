@@ -1,0 +1,33 @@
+{
+ "_note": "Display metadata for charts. order = left-to-right seating in the hemicycle (approximate political spectrum).",
+ "parties": {
+  "mana":            {"name": "Mana Movement", "short": "Mana", "color": "#7A1E1E", "order": 1},
+  "internet-mana":   {"name": "Internet MANA", "short": "Internet MANA", "color": "#6A2C91", "order": 2},
+  "internet-party":  {"name": "Internet Party", "short": "Internet", "color": "#6A2C91", "order": 3},
+  "alliance":        {"name": "Alliance", "short": "Alliance", "color": "#1E8C4E", "order": 4},
+  "free-palestine":  {"name": "Free Palestine", "short": "Free Palestine", "color": "#149954", "order": 5},
+  "green":           {"name": "Green Party", "short": "Green", "color": "#0B8A3E", "order": 10},
+  "te-pati-maori":   {"name": "Te Pāti Māori", "short": "Te Pāti Māori", "color": "#B2001A", "order": 11},
+  "te-tai-tokerau-party": {"name": "Te Tai Tokerau Party", "short": "Te Tai Tokerau", "color": "#8C3B2E", "order": 12},
+  "labour":          {"name": "Labour Party", "short": "Labour", "color": "#D82A20", "order": 20},
+  "animal-justice":  {"name": "Animal Justice Party", "short": "Animal Justice", "color": "#0F6E84", "order": 25},
+  "legalise-cannabis": {"name": "Aotearoa Legalise Cannabis", "short": "Legalise Cannabis", "color": "#3C8D2F", "order": 26},
+  "opportunity":     {"name": "The Opportunity Party (TOP)", "short": "TOP", "color": "#1FB5A3", "order": 30},
+  "united-future":   {"name": "United Future", "short": "United Future", "color": "#501557", "order": 35},
+  "independent":     {"name": "Independent", "short": "Independent", "color": "#8A8F98", "order": 40},
+  "nz-first":        {"name": "New Zealand First", "short": "NZ First", "color": "#2B2B2B", "order": 45},
+  "national":        {"name": "National Party", "short": "National", "color": "#00529F", "order": 50},
+  "act":             {"name": "ACT New Zealand", "short": "ACT", "color": "#F2C300", "order": 60},
+  "conservative":    {"name": "Conservative Party", "short": "Conservative", "color": "#00AEEF", "order": 65},
+  "new-conservative":{"name": "New Conservative", "short": "New Conservative", "color": "#00AEEF", "order": 66},
+  "womens-rights":   {"name": "Women's Rights Party", "short": "Women's Rights", "color": "#7B3F98", "order": 67},
+  "nz-outdoors-freedom": {"name": "NZ Outdoors & Freedom", "short": "Outdoors & Freedom", "color": "#5B7F2A", "order": 68},
+  "vision-nz":       {"name": "Vision NZ", "short": "Vision NZ", "color": "#2E4A9E", "order": 69},
+  "nz-loyal":        {"name": "NZ Loyal", "short": "NZ Loyal", "color": "#1D2F6F", "order": 70},
+  "freedoms-nz":     {"name": "Freedoms NZ", "short": "Freedoms NZ", "color": "#A1432B", "order": 71},
+  "advance-nz":      {"name": "Advance NZ", "short": "Advance NZ", "color": "#C6382D", "order": 72},
+  "democracynz":     {"name": "DemocracyNZ", "short": "DemocracyNZ", "color": "#4B5D7A", "order": 73},
+  "newzeal":         {"name": "NewZeal", "short": "NewZeal", "color": "#3D7FB8", "order": 74},
+  "other":           {"name": "Other", "short": "Other", "color": "#A7ADB5", "order": 99}
+ }
+}

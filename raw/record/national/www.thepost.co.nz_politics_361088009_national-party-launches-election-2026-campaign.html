@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" data-theme="the-post">
+  <head>
+    <meta charset="utf-8" />
+    <title>The Post</title>
+
+    <base href="/">
+    <link rel="preload" href="assets/fonts/Stuff-Sans.css" as="style" />
+    <link rel="preload" href="assets/fonts/Fjalla-One-Sans.css" as="style" />
+
+    <link
+      href="assets/fonts/Stuff-Display.css"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+      onerror="this.media='all'"
+    />
+    <link
+      href="assets/fonts/Stuff-Sans-Condensed.css"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+      onerror="this.media='all'"
+    />
+    <link
+      href="assets/fonts/Stuff-Sans-Wide.css"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+      onerror="this.media='all'"
+    />
+    <link href="assets/fonts/Stuff-Sans.css" rel="stylesheet" />
+    <link
+      href="assets/fonts/Stuff-Text.css"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+      onerror="this.media='all'"
+    />
+    <link href="assets/fonts/Fjalla-One-Sans.css" rel="stylesheet" />
+
+    <noscript>
+      <link href="assets/fonts/Stuff-Display.css" rel="stylesheet" />
+      <link href="assets/fonts/Stuff-Sans-Condensed.css" rel="stylesheet" />
+      <link href="assets/fonts/Stuff-Sans-Wide.css" rel="stylesheet" />
+      <link href="assets/fonts/Stuff-Text.css" rel="stylesheet" />
+    </noscript>
+
+    <meta content="light" name="color-scheme" />
+    <meta
+      content="#0d0d0d"
+      media="(prefers-color-scheme: light)"
+      name="theme-color"
+    />
+    <meta
+      content="#0d0d0d"
+      media="(prefers-color-scheme: dark)"
+      name="theme-color"
+    />
+    <meta
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"
+      name="viewport"
+    />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="no" name="msapplication-tap-highlight" />
+
+    <link crossorigin="use-credentials" href="/manifest.json" rel="manifest" />
+    <link
+      href="assets/icon/Favicon-Post-192x192.png"
+      rel="icon"
+      sizes="192x192"
+    />
+
+    <link
+      href="assets/icon/Favicon-Post-32x32.png"
+      rel="shortcut icon"
+      type="image/png"
+    />
+
+    <!-- add to homescreen for ios -->
+    <meta content="yes" name="mobile-web-app-capable" />
+    <meta content="The Post" name="apple-mobile-web-app-title" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+
+    <meta
+      content="87Dh_4Ph_kq3Lw1HFrxYVXYgomDfTawU5QPB0hFxn0M"
+      name="google-site-verification"
+    />
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <script src="https://assets.news.stuff.co.nz/feature-flags/feature-flag.js"></script>
+    <!-- High-priority TOP ad bidders -->
+    <link
+      rel="preconnect"
+      href="https://securepubads.g.doubleclick.net"
+      crossorigin
+    />
+    <link
+      rel="preconnect"
+      href="https://pagead2.googlesyndication.com"
+      crossorigin
+    />
+    <link rel="preconnect" href="https://js-sec.indexww.com" crossorigin />
+    <link rel="preconnect" href="https://prebid.adnxs.com" crossorigin />
+    <link rel="preconnect" href="https://gumgum.com" crossorigin />
+    <link rel="preconnect" href="https://bidder.teads.tv" crossorigin />
+    <link rel="preconnect" href="https://xandr.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://prebid-server.rubiconproject.com"
+      crossorigin
+    />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://ads-api.stuff.co.nz" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://ads-api.news.stuff.co.nz"
+      crossorigin
+    />
+
+    <!-- GPT Early Load: pre-load GPT script so it's ready when the SDK needs it -->
+    <script>
+      (function () {
+        // Only run on web, not native app
+        var isNativeApp =
+          window.webkit &&
+          window.webkit.messageHandlers &&
+          window.webkit.messageHandlers.nativeApp;
+        if (isNativeApp) return;
+
+        // Initialize GPT command queue (SDK will use this when it loads)
+        window.googletag = window.googletag || { cmd: [] };
+
+        // Guard against double injection. Prebid (loaded later by the ads SDK)
+        // also injects gpt.js internally. Check for any existing <script>
+        // whose src matches the GPT URL so we catch both our own tag and
+        // any tag Prebid may have already created.
+        var GPT_SRC = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
+        var scripts = document.getElementsByTagName('script');
+        for (var i = 0; i < scripts.length; i++) {
+          if (scripts[i].src === GPT_SRC) return;
+        }
+
+        // Load GPT script with high priority — this is the key optimisation.
+        // By loading GPT in <head> instead of waiting for the SDK bundle,
+        // GPT is already available when the SDK initialises, saving ~2-3s.
+        var gptScript = document.createElement('script');
+        gptScript.src = GPT_SRC;
+        gptScript.async = true;
+        gptScript.setAttribute('fetchpriority', 'high');
+        document.head.appendChild(gptScript);
+      })();
+    </script>
+
+    <!-- Lower priority (dns-prefetch only) -->
+    <link rel="dns-prefetch" href="//static.criteo.net" />
+    <link rel="dns-prefetch" href="//secure.adnxs.com" />
+    <link rel="dns-prefetch" href="//as.casalemedia.com" />
+    <link rel="dns-prefetch" href="//as-sec.casalemedia.com" />
+    <link rel="dns-prefetch" href="//www.googletagservices.com" />
+    <link rel="dns-prefetch" href="//www.google-analytics.com" />
+    <link rel="dns-prefetch" href="//adservice.google.com" />
+    <link rel="dns-prefetch" href="//fastlane.rubiconproject.com" />
+    <link rel="dns-prefetch" href="//a.teads.tv" />
+    <link rel="dns-prefetch" href="//g2.gumgum.com" />
+    <link rel="dns-prefetch" href="//rtb.openx.net" />
+    <link rel="dns-prefetch" href="//krk2.kargo.com" />
+    <link rel="dns-prefetch" href="//hbopenbid.pubmatic.com" />
+    <link rel="dns-prefetch" href="//htlb.casalemedia.com" />
+
+    <!-- Nielsen Analytics -->
+    <script type="text/JavaScript">
+      !function (t, n) {
+        t[n] = t[n] || {
+          nlsQ: function (e, o, c, r, s, i) {
+            return s = t.document,
+              r = s.createElement("script"),
+              r.async = 1, r.src = ("http:" === t.location.protocol ? "http:" : "https:") + "//cdn-gl.imrworldwide.com/conf/" + e + ".js#name=" + o + "&ns=" + n, i = s.getElementsByTagName("script")[0], i.parentNode.insertBefore(r, i),
+              t[n][o] = t[n][o] || {
+                g: c || {}, ggPM: function (e, c, r, s, i) {
+                  (t[n][o].q = t[n][o].q || []).push([e, c, r, s, i]);
+                }
+              }, t[n][o];
+          }
+        };
+      }
+      (window, "NOLBUNDLE");
+    </script>
+    <script src="https://csm.cxpublic.com/Stuff.js" async></script>
+  <link rel="stylesheet" href="/main.33269bf4397a08be.css"></head>
+  <body>
+    <div id="root"></div>
+  <script src="/runtime.1a6470b18f1977c4.js" type="module"></script><script src="/main.320467a3a9848acb.js" type="module"></script></body>
+</html>

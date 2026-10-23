@@ -1,0 +1,857 @@
+{
+ "https://www.labour.org.nz/prescriptions": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/prescriptions",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/prescriptions.html",
+  "slug": "prescriptions",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/medicard": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/medicard",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/medicard.html",
+  "slug": "medicard",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/capitalgainstax": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/capitalgainstax",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/capitalgainstax.html",
+  "slug": "capitalgainstax",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/farecap": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/farecap",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/farecap.html",
+  "slug": "farecap",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-to-deliver-unlimited-public-transport-for-20-max-a-week/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-to-deliver-unlimited-public-transport-for-20-max-a-week/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-to-deliver-unlimited-public-transport-for-20-max-a-week.html",
+  "slug": "release-labour-to-deliver-unlimited-public-transport-for-20-max-a-week",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/maternityscans": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/maternityscans",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/maternityscans.html",
+  "slug": "maternityscans",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/futurefund": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/futurefund",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/futurefund.html",
+  "slug": "futurefund",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/cervicalscreening": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/cervicalscreening",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/cervicalscreening.html",
+  "slug": "cervicalscreening",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/familydoctorloanscheme": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/familydoctorloanscheme",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/familydoctorloanscheme.html",
+  "slug": "familydoctorloanscheme",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/apprenticeshipboost": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/apprenticeshipboost",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/apprenticeshipboost.html",
+  "slug": "apprenticeshipboost",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-national-moves-the-goalposts-on-jobs/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-national-moves-the-goalposts-on-jobs/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-national-moves-the-goalposts-on-jobs.html",
+  "slug": "release-national-moves-the-goalposts-on-jobs",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/fiscal-strategy": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/fiscal-strategy",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/fiscal-strategy.html",
+  "slug": "fiscal-strategy",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/solarsaver": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/solarsaver",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/solarsaver.html",
+  "slug": "solarsaver",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/small-business-first": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/small-business-first",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/small-business-first.html",
+  "slug": "small-business-first",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/small-business-action-plan": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/small-business-action-plan",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/small-business-action-plan.html",
+  "slug": "small-business-action-plan",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-will-back-kiwis-and-grow-the-economy/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-will-back-kiwis-and-grow-the-economy/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-will-back-kiwis-and-grow-the-economy.html",
+  "slug": "release-labour-will-back-kiwis-and-grow-the-economy",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-clears-way-for-social-media-bill-to-go-to-select-committee/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-clears-way-for-social-media-bill-to-go-to-select-committee/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-clears-way-for-social-media-bill-to-go-to-select-committee.html",
+  "slug": "release-labour-clears-way-for-social-media-bill-to-go-to-select-committee",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-national-must-cancel-fuel-tax-hikes-for-kiwis/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-national-must-cancel-fuel-tax-hikes-for-kiwis/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-national-must-cancel-fuel-tax-hikes-for-kiwis.html",
+  "slug": "release-national-must-cancel-fuel-tax-hikes-for-kiwis",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-will-scrap-national-s-fuel-excise-increase/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-will-scrap-national-s-fuel-excise-increase/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-will-scrap-national-s-fuel-excise-increase.html",
+  "slug": "release-labour-will-scrap-national-s-fuel-excise-increase",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-a-fair-go-for-kiwi-drivers/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-a-fair-go-for-kiwi-drivers/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-a-fair-go-for-kiwi-drivers.html",
+  "slug": "release-a-fair-go-for-kiwi-drivers",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-national-refuses-to-rule-out-gst-hike/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-national-refuses-to-rule-out-gst-hike/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-national-refuses-to-rule-out-gst-hike.html",
+  "slug": "release-national-refuses-to-rule-out-gst-hike",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/maori-trades-training": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/maori-trades-training",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/maori-trades-training.html",
+  "slug": "maori-trades-training",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-will-guarantee-a-job-for-graduate-nurses/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-will-guarantee-a-job-for-graduate-nurses/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-will-guarantee-a-job-for-graduate-nurses.html",
+  "slug": "release-labour-will-guarantee-a-job-for-graduate-nurses",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-national-must-scrap-its-failed-boot-camps/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-national-must-scrap-its-failed-boot-camps/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-national-must-scrap-its-failed-boot-camps.html",
+  "slug": "release-national-must-scrap-its-failed-boot-camps",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-move-on-bill-still-punishes-the-homeless/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-move-on-bill-still-punishes-the-homeless/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-move-on-bill-still-punishes-the-homeless.html",
+  "slug": "release-move-on-bill-still-punishes-the-homeless",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-to-accelerate-climate-action/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-to-accelerate-climate-action/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-to-accelerate-climate-action.html",
+  "slug": "release-labour-to-accelerate-climate-action",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-will-make-ai-work-for-new-zealanders/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-will-make-ai-work-for-new-zealanders/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-will-make-ai-work-for-new-zealanders.html",
+  "slug": "release-labour-will-make-ai-work-for-new-zealanders",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/ai-for-new-zealand": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/ai-for-new-zealand",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/ai-for-new-zealand.html",
+  "slug": "ai-for-new-zealand",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-backing-small-business-to-innovate-and-succeed/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-backing-small-business-to-innovate-and-succeed/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-backing-small-business-to-innovate-and-succeed.html",
+  "slug": "release-backing-small-business-to-innovate-and-succeed",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-to-ensure-an-immigration-system-that-works-for-new-zealand-1/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-to-ensure-an-immigration-system-that-works-for-new-zealand/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-to-ensure-an-immigration-system-that-works-for-new-zealand-1.html",
+  "slug": "release-labour-to-ensure-an-immigration-system-that-works-for-new-zealand-1",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-will-strengthen-kiwisaver-for-future-generations/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-will-strengthen-kiwisaver-for-future-generations/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-will-strengthen-kiwisaver-for-future-generations.html",
+  "slug": "release-labour-will-strengthen-kiwisaver-for-future-generations",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/banning-price-gouging": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/banning-price-gouging",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/banning-price-gouging.html",
+  "slug": "banning-price-gouging",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-will-make-price-gouging-illegal/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-will-make-price-gouging-illegal/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-will-make-price-gouging-illegal.html",
+  "slug": "release-labour-will-make-price-gouging-illegal",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labours-plan-for-fairer-grocery-prices/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labours-plan-for-fairer-grocery-prices/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labours-plan-for-fairer-grocery-prices.html",
+  "slug": "release-labours-plan-for-fairer-grocery-prices",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-will-introduce-corporate-homicide-charge/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-will-introduce-corporate-homicide-charge/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-will-introduce-corporate-homicide-charge.html",
+  "slug": "release-labour-will-introduce-corporate-homicide-charge",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-nationals-retirement-village-policy-leaves-residents-out-of-pocket/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-nationals-retirement-village-policy-leaves-residents-out-of-pocket/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-nationals-retirement-village-policy-leaves-residents-out-of-pocket.html",
+  "slug": "release-nationals-retirement-village-policy-leaves-residents-out-of-pocket",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/speech-labours-foreign-policy/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/speech-labours-foreign-policy/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/speech-labours-foreign-policy.html",
+  "slug": "speech-labours-foreign-policy",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/speech-new-zealand-an-independent-voice-in-the-world/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/speech-new-zealand-an-independent-voice-in-the-world/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/speech-new-zealand-an-independent-voice-in-the-world.html",
+  "slug": "speech-new-zealand-an-independent-voice-in-the-world",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-to-deliver-stronger-healthcare-and-protections-for-rainbow-communities/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-to-deliver-stronger-healthcare-and-protections-for-rainbow-communities/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-to-deliver-stronger-healthcare-and-protections-for-rainbow-communities.html",
+  "slug": "release-labour-to-deliver-stronger-healthcare-and-protections-for-rainbow-communities",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-will-restore-mana-whakahono-a-rohe-agreements/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-will-restore-mana-whakahono-a-rohe-agreements/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-will-restore-mana-whakahono-a-rohe-agreements.html",
+  "slug": "release-labour-will-restore-mana-whakahono-a-rohe-agreements",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-to-get-new-zealand-building-and-kiwis-back-to-work/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-to-get-new-zealand-building-and-kiwis-back-to-work/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-to-get-new-zealand-building-and-kiwis-back-to-work.html",
+  "slug": "release-labour-to-get-new-zealand-building-and-kiwis-back-to-work",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-to-cut-student-debt/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-to-cut-student-debt/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-to-cut-student-debt.html",
+  "slug": "release-labour-to-cut-student-debt",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.rnz.co.nz/news/politics_election-2026/1637385/chris-hipkins-promises-to-reverse-pay-equity-changes-in-first-100-days-if-elected": {
+  "status": "200",
+  "final_url": "https://www.rnz.co.nz/news/politics_election-2026/1637385/chris-hipkins-promises-to-reverse-pay-equity-changes-in-first-100-days-if-elected",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/rnz-chris-hipkins-promises-to-reverse-pay-equity-changes-in-first-100-days-if-elected.html",
+  "slug": "rnz-chris-hipkins-promises-to-reverse-pay-equity-changes-in-first-100-days-if-elected",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.scoop.co.nz/stories/PO2609/S00254/labours-first-budget-pay-equity-pledge-offers-historic-step-for-65000-care-and-support-workers.htm": {
+  "status": "200",
+  "final_url": "https://www.scoop.co.nz/stories/PO2609/S00254/labours-first-budget-pay-equity-pledge-offers-historic-step-for-65000-care-and-support-workers.htm",
+  "content_type": "text/html;charset=UTF-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/scoop-labours-first-budget-pay-equity-pledge-offers-historic-step-for-65000-care-and-suppo.html",
+  "slug": "scoop-labours-first-budget-pay-equity-pledge-offers-historic-step-for-65000-care-and-suppo",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.rnz.co.nz/news/politics/1653587/labour-commits-to-securing-first-pay-equity-deal-by-next-budget": {
+  "status": "200",
+  "final_url": "https://www.rnz.co.nz/news/politics/1653587/labour-commits-to-securing-first-pay-equity-deal-by-next-budget",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/rnz-labour-commits-to-securing-first-pay-equity-deal-by-next-budget.html",
+  "slug": "rnz-labour-commits-to-securing-first-pay-equity-deal-by-next-budget",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-to-restore-pay-equity-immediate-pay-rise-for-care-and-support-workers/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-to-restore-pay-equity-immediate-pay-rise-for-care-and-support-workers/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-to-restore-pay-equity-immediate-pay-rise-for-care-and-support-workers.html",
+  "slug": "release-labour-to-restore-pay-equity-immediate-pay-rise-for-care-and-support-workers",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-a-fair-go-for-families/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-a-fair-go-for-families/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-a-fair-go-for-families.html",
+  "slug": "release-a-fair-go-for-families",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.scoop.co.nz/stories/PO2610/S00007/make-it-16-welcomes-labours-support-for-16-and-17-year-olds-voting-at-local-elections.htm": {
+  "status": "200",
+  "final_url": "https://www.scoop.co.nz/stories/PO2610/S00007/make-it-16-welcomes-labours-support-for-16-and-17-year-olds-voting-at-local-elections.htm",
+  "content_type": "text/html;charset=UTF-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/scoop-make-it-16-welcomes-labours-support-for-16-and-17-year-olds-voting-at-local-election.html",
+  "slug": "scoop-make-it-16-welcomes-labours-support-for-16-and-17-year-olds-voting-at-local-election",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-national-is-making-it-harder-to-vote/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-national-is-making-it-harder-to-vote/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-national-is-making-it-harder-to-vote.html",
+  "slug": "release-national-is-making-it-harder-to-vote",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-will-expand-visa-waiver-travel-to-pacific-citizens/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-will-expand-visa-waiver-travel-to-pacific-citizens/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-will-expand-visa-waiver-travel-to-pacific-citizens.html",
+  "slug": "release-labour-will-expand-visa-waiver-travel-to-pacific-citizens",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-will-scrap-harmful-disability-bill/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-will-scrap-harmful-disability-bill/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-will-scrap-harmful-disability-bill.html",
+  "slug": "release-labour-will-scrap-harmful-disability-bill",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-to-give-kiwis-a-better-deal-when-you-fly/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-to-give-kiwis-a-better-deal-when-you-fly/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-to-give-kiwis-a-better-deal-when-you-fly.html",
+  "slug": "release-labour-to-give-kiwis-a-better-deal-when-you-fly",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.scoop.co.nz/stories/PA2610/S00060/labour-will-get-kiwis-a-better-deal-from-banks.htm": {
+  "status": "200",
+  "final_url": "https://www.scoop.co.nz/stories/PA2610/S00060/labour-will-get-kiwis-a-better-deal-from-banks.htm",
+  "content_type": "text/html;charset=UTF-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/scoop-labour-will-get-kiwis-a-better-deal-from-banks.html",
+  "slug": "scoop-labour-will-get-kiwis-a-better-deal-from-banks",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/banking-for-everyone": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/banking-for-everyone",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/banking-for-everyone.html",
+  "slug": "banking-for-everyone",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.tvnz.co.nz/tvseries/1-news-leaders-debate": {
+  "status": "200",
+  "final_url": "https://www.tvnz.co.nz/tvseries/1-news-leaders-debate",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/tvnz-tvseries-1-news-leaders-debate.html",
+  "slug": "tvnz-tvseries-1-news-leaders-debate",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-a-vote-for-national-means-three-years-of-frozen-wages/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-a-vote-for-national-means-three-years-of-frozen-wages/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-a-vote-for-national-means-three-years-of-frozen-wages.html",
+  "slug": "release-a-vote-for-national-means-three-years-of-frozen-wages",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labours-plan-to-bring-down-costs-for-kiwis/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labours-plan-to-bring-down-costs-for-kiwis/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labours-plan-to-bring-down-costs-for-kiwis.html",
+  "slug": "release-labours-plan-to-bring-down-costs-for-kiwis",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.scoop.co.nz/stories/PA2610/S00093/labour-will-cut-the-cost-of-getting-kids-back-to-school.htm": {
+  "status": "200",
+  "final_url": "https://www.scoop.co.nz/stories/PA2610/S00093/labour-will-cut-the-cost-of-getting-kids-back-to-school.htm",
+  "content_type": "text/html;charset=UTF-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/scoop-labour-will-cut-the-cost-of-getting-kids-back-to-school.html",
+  "slug": "scoop-labour-will-cut-the-cost-of-getting-kids-back-to-school",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/cutting-back-to-school-costs": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/cutting-back-to-school-costs",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/cutting-back-to-school-costs.html",
+  "slug": "cutting-back-to-school-costs",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-will-back-maori-businesses-and-grow-the-maori-economy/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-will-back-maori-businesses-and-grow-the-maori-economy/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-will-back-maori-businesses-and-grow-the-maori-economy.html",
+  "slug": "release-labour-will-back-maori-businesses-and-grow-the-maori-economy",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/safer-online": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/safer-online",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/safer-online.html",
+  "slug": "safer-online",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-labour-to-make-it-safer-for-kiwis-online/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-labour-to-make-it-safer-for-kiwis-online/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-labour-to-make-it-safer-for-kiwis-online.html",
+  "slug": "release-labour-to-make-it-safer-for-kiwis-online",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/kids-off-screens": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/kids-off-screens",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/kids-off-screens.html",
+  "slug": "kids-off-screens",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/news/release-getting-kids-off-screens-and-back-to-being-kids/": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/news/release-getting-kids-off-screens-and-back-to-being-kids/",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/release-getting-kids-off-screens-and-back-to-being-kids.html",
+  "slug": "release-getting-kids-off-screens-and-back-to-being-kids",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/ed-recovery-plan": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/ed-recovery-plan",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/ed-recovery-plan.html",
+  "slug": "ed-recovery-plan",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/fiscal-plan": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/fiscal-plan",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/fiscal-plan.html",
+  "slug": "fiscal-plan",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/graduate-nurse-job-guarantee": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/graduate-nurse-job-guarantee",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/graduate-nurse-job-guarantee.html",
+  "slug": "graduate-nurse-job-guarantee",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/strengthening-kiwisaver": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/strengthening-kiwisaver",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/strengthening-kiwisaver.html",
+  "slug": "strengthening-kiwisaver",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/fairer-grocery-prices": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/fairer-grocery-prices",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/fairer-grocery-prices.html",
+  "slug": "fairer-grocery-prices",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/start-work-now": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/start-work-now",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/start-work-now.html",
+  "slug": "start-work-now",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/cutting-student-debt": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/cutting-student-debt",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/cutting-student-debt.html",
+  "slug": "cutting-student-debt",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/fair-go-for-families": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/fair-go-for-families",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/fair-go-for-families.html",
+  "slug": "fair-go-for-families",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/pay-equity": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/pay-equity",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/pay-equity.html",
+  "slug": "pay-equity",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/fair-go-for-drivers": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/fair-go-for-drivers",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/fair-go-for-drivers.html",
+  "slug": "fair-go-for-drivers",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/fuel-tax-freeze": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/fuel-tax-freeze",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/fuel-tax-freeze.html",
+  "slug": "fuel-tax-freeze",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/better-deal-when-you-fly": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/better-deal-when-you-fly",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/better-deal-when-you-fly.html",
+  "slug": "better-deal-when-you-fly",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/cost-of-living-plan": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/cost-of-living-plan",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/cost-of-living-plan.html",
+  "slug": "cost-of-living-plan",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/affordable-healthcare": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/affordable-healthcare",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/affordable-healthcare.html",
+  "slug": "affordable-healthcare",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/good-jobs": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/good-jobs",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/good-jobs.html",
+  "slug": "good-jobs",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/foreign-affairs": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/foreign-affairs",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/foreign-affairs.html",
+  "slug": "foreign-affairs",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/immigration": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/immigration",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/immigration.html",
+  "slug": "immigration",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/disability": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/disability",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/disability.html",
+  "slug": "disability",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/ece": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/ece",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/ece.html",
+  "slug": "ece",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/laboursaver": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/laboursaver",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/laboursaver.html",
+  "slug": "laboursaver",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/backing-maori-businesses": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/backing-maori-businesses",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/backing-maori-businesses.html",
+  "slug": "backing-maori-businesses",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/fairer-workplaces": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/fairer-workplaces",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/fairer-workplaces.html",
+  "slug": "fairer-workplaces",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/government-you-can-trust": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/government-you-can-trust",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/government-you-can-trust.html",
+  "slug": "government-you-can-trust",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/community-housing-and-retirement-villages": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/community-housing-and-retirement-villages",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/community-housing-and-retirement-villages.html",
+  "slug": "community-housing-and-retirement-villages",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/early-childhood-education": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/early-childhood-education",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/early-childhood-education.html",
+  "slug": "early-childhood-education",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/fixing-the-ets": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/fixing-the-ets",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/fixing-the-ets.html",
+  "slug": "fixing-the-ets",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/policy": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/policy",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/policy.html",
+  "slug": "policy",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/costofliving": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/costofliving",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/costofliving.html",
+  "slug": "costofliving",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/healthcare": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/healthcare",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/healthcare.html",
+  "slug": "healthcare",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/homes": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/homes",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/homes.html",
+  "slug": "homes",
+  "retrieved": "2026-10-23"
+ },
+ "https://www.labour.org.nz/jobs": {
+  "status": "200",
+  "final_url": "https://www.labour.org.nz/jobs",
+  "content_type": "text/html; charset=utf-8",
+  "err": "",
+  "file": "raw/party-docs/labour/html/jobs.html",
+  "slug": "jobs",
+  "retrieved": "2026-10-23"
+ }
+}

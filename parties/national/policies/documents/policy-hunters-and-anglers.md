@@ -1,0 +1,130 @@
+---
+title: "National backs South Island growth"
+party: "national"
+source_url: "https://www.national.org.nz/policies/hunters-and-anglers"
+retrieved: "2026-10-23"
+format: "html"
+fetch_method: "curl; main content extracted with BeautifulSoup (tools/policies_national_extract.py)"
+publisher: "New Zealand National Party (national.org.nz)"
+local_copy: "raw/party-docs/national/html/national.org.nz__policies__hunters-and-anglers.html"
+---
+
+# National backs South Island growth
+
+Source: <https://www.national.org.nz/policies/hunters-and-anglers> (New Zealand National Party (national.org.nz)). Main article/policy content only; site navigation, footer and 'More policies/Latest news' lists removed. Text is verbatim.
+
+## Full text
+
+## National backs South Island growth
+
+The South Island needs infrastructure that keeps communities connected and supports future growth.
+
+The South Island is now a powerhouse of the New Zealand economy – producing the food, fibre, energy, technology and visitor experiences the country needs and the world flocks to buy. In total, the South Island’s economy is worth almost $100 billion a year, or around 22 per cent of the New Zealand economy, and its ports carry around a third of New Zealand’s goods exports.
+
+A re-elected National Government will build the transport and regional connections the South Island needs to move people, goods and visitors reliably. Grow Southern exports across agriculture, tourism, and mining and resources. Secure the energy new industrial investment needs; and strengthen the frontline health, education, and law and order services growing communities rely on.
+
+## Infrastructure
+
+1
+
+### National will Invest $50 million in the shared road and rail connections for the Rolleston intermodal freight hub
+
+2
+
+### Ensure that congestion reducing Gondola solutions in Queenstown can access existing public transport funding in the NLTF
+
+3
+
+### Commit $25m to four-lane the remaining portion past Hansen Road down to the Five Mile roundabout in Queenstown
+
+4
+
+### Use the next Government Policy Statement to improve the network’s most critical links, including South Island state highway bridge replacements.
+
+## Agriculture
+
+1
+
+### National will complete and implement the replacement of the RMA, giving farmers and growers certainty to invest
+
+2
+
+### Implement new Crown pastoral land settings so high-country farmers can invest and diversify with confidence.
+
+## Tourism
+
+1
+
+### National will provide standardised planning provisions through standardised zoning to enable growth in our small-towns
+
+2
+
+### Introduce access charging for international visitors at Aoraki / Mt Cook and Milford Sounds, prioritising reinvestment in local conservation and tourism infrastructure
+
+3
+
+### Implement new conservation concession timeframes and publish regional performance.
+
+## Mining and resources
+
+1
+
+### National will develop a new Government Policy Statement on Mining and Extraction under the Fast Track Approvals Act
+
+2
+
+### Develop a National Standard for gravel extraction from rivers, supporting aggregate supply and flood management
+
+3
+
+### Develop a National Standard for on-farm quarries, cutting consenting costs for farmers.
+
+## Energy
+
+1
+
+### National will complete and implement the replacement of the RMA, with more enabling rules for wind, solar and hydro development
+
+2
+
+### Require new data centre projects to be accompanied by new, firmed generation, protecting households and businesses from higher power prices.
+
+## Health & Education
+
+1
+
+### National will finish fitting out Tower Three at Christchurch Hospital, delivering 96 additional beds for patients
+
+2
+
+### Deliver the remaining funded teaching spaces, nearly 100 more classrooms across the South Island
+
+3
+
+### Complete the redevelopment programme underway across 14 South Island schools.
+
+## Law and order
+
+1
+
+### National will deliver a new Police station for Greymouth through Budget 2026
+
+2
+
+### Complete Phase 1 of the Christchurch Men’s Prison redevelopment, operational by mid-2030.
+
+## Building the South Island’s Future
+
+The South Island has strong renewable resources and some of New Zealand’s best opportunities for new industrial investment. Growth is only worth having if it comes with the services growing communities rely on.
+
+That is why National is focused on delivering the infrastructure needed to keep communities connected, support growth and unlock the South Island’s potential.
+
+## National's plan for the South Island
+
+Read the complete policy as a PDF.
+
+View full document
+
+## Linked policy documents (PDF)
+
+- [National's South Island Plan](pdf-nationals-south-island-plan.md) — <https://assets.national.org.nz/web/prod/National's%20South%20Island%20Plan.pdf?v=1786659579>
