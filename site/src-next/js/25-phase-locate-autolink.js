@@ -9,7 +9,7 @@ const PHASE_MSG = () => ({
   advance: ['Voting is open.', 'Vote early at any voting place until Friday 6 November, or on Saturday 7 November 9am–7pm.', 'Find a voting place', 'https://map.vote.nz'],
   electionday: ['Election day: voting closes at 7pm.', 'Results, polls, the quiz and the forecast are hidden until then.', 'Find a voting place', 'https://map.vote.nz'],
   results: ['Results are coming in.', 'Preliminary count tonight; special votes are counted later.', 'Seats', '#/seats/parliament'],
-  after: ['Special votes are being counted.', 'Final result Friday 27 November.', 'What could change', '#/seats/polls'] });
+  after: ['Special votes are being counted.', 'Final result Friday 27 November.', 'What could change', '#/vote/specials'] });
 function daysTo(iso) { const t = nzNow(); const today = Date.UTC(t.getFullYear(), t.getMonth(), t.getDate()); const [y, m, d] = iso.split('-').map(Number); return Math.round((Date.UTC(y, m - 1, d) - today) / 864e5) }
 function renderPhase() { const ph = electionPhase(); const el = $('#phase'); if (!el) return; const m = PHASE_MSG()[ph]; if (!m) { el.hidden = true; return }
   el.hidden = false; el.dataset.phase = ph;
@@ -20,7 +20,7 @@ const BLOCKED_PAGES = /^(REPORT\.md|elections\/2026\.md|elections\/trends\.md|gu
 function blockedPage(k) { return electionPhase() === 'electionday' && BLOCKED_PAGES.test(k) }
 const isElectionDay = () => electionPhase() === 'electionday';
 const RESULT_DISCLAIMER = `<p class="small muted" style="border-top:1px solid var(--line);padding-top:10px">This shows how closely your answers line up with each party's published positions on the questions you answered. It is information, not advice: it does not take account of candidates, coalitions, trust, or the issues we did not ask about, and it is not a recommendation about how to vote. Every party is listed. Read the party pages and the original policy texts before deciding. Ballot Book NZ is independent and not affiliated with any party, candidate or the Electoral Commission.</p>`;
-const NOT_EC = `<p class="tiny muted">Independent and non-partisan. Not the Electoral Commission: for official information on enrolling, voting places and hours, go to <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or call 0800 36 76 56.</p>`;
+const NOT_EC = `<p class="micro muted">Independent and non-partisan. Not the Electoral Commission: for official information on enrolling, voting places and hours, go to <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or call 0800 36 76 56.</p>`;
 
 /* ----- find my electorate from location (device-side only) ----- */
 function pointInRing(pt, ring) { let inside = false; const [x, y] = pt; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) { const [xi, yi] = ring[i], [xj, yj] = ring[j]; if (((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi)) inside = !inside } return inside }

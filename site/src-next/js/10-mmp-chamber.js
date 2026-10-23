@@ -27,17 +27,25 @@ function hemicycle(n) {
   raw.map((v, i) => [v - Math.floor(v), i]).sort((a, b) => b[0] - a[0]).slice(0, rem).forEach(([, i]) => counts[i]++);
   const pts = []; radii.forEach((r, i) => { const k = counts[i]; for (let j = 0; j < k; j++) { const t = k === 1 ? Math.PI / 2 : Math.PI * (1 - j / (k - 1)); pts.push({ t, r, x: Math.cos(t) * r, y: Math.sin(t) * r }) } });
   pts.sort((a, b) => b.t - a.t || a.r - b.r); return { pts, dot: (1 - r0) / (rows - 1) * .42 } }
-function chamberSVG(seatList, { highlight = null, label = 'Seats', animate = false, caption = true } = {}) {
-  const n = seatList.length; if (!n) return '<p class="empty">No seat data yet.</p>';
-  const { pts, dot } = hemicycle(n), R = 185, cx = 200, cy = 200;
-  const c = pts.map((p, i) => { const s = seatList[i]; const dim = highlight && !highlight.has(s.party) ? ' dim' : '';
-    const ring = ['nz-first', 'act'].includes(s.party) ? ' ring' : ''; return `<circle class="seat${dim}${ring}${animate ? ' pop' : ''}" style="${animate ? `animation-delay:${Math.min(400, i * 2.5)}ms;transform-origin:${(cx + p.x * R).toFixed(1)}px ${(cy - p.y * R).toFixed(1)}px` : ''}" tabindex="0" data-i="${i}" cx="${(cx + p.x * R).toFixed(1)}" cy="${(cy - p.y * R).toFixed(1)}" r="${(dot * R).toFixed(2)}" fill="${pcolor(s.party)}"><title>${esc(s.name || pname(s.party))}</title></circle>` }).join('');
-  const maj = Math.floor(n / 2) + 1;
-  return `<svg viewBox="0 0 400 ${caption ? 240 : 204}" role="img" aria-label="${esc(label)}">${c}${caption ? `<text x="200" y="222" text-anchor="middle" style="font:800 30px var(--font-display);fill:var(--text)">${n}</text><text x="200" y="237" text-anchor="middle" style="font:600 11px var(--font-mono);fill:var(--text-2)">seats · ${maj} to govern</text>` : ''}</svg>` }
-function chamberUpdate(container, seatList, opts = {}) { // animate fills in place when the seat count is unchanged
-  const svg = container.querySelector('svg'); const circles = svg ? svg.querySelectorAll('circle.seat') : [];
-  if (!svg || circles.length !== seatList.length) { container.innerHTML = chamberSVG(seatList, { ...opts, animate: true }); return }
-  circles.forEach((c, i) => { const s = seatList[i]; c.setAttribute('fill', pcolor(s.party)); c.querySelector('title').textContent = s.name || pname(s.party); c.classList.toggle('dim', !!(opts.highlight && !opts.highlight.has(s.party))) });
+// Seat map. svg.hemi with one <circle style="--pc;--i"> per seat: fills and the pop-in stagger come from CSS.
+// opts: highlight (Set of parties to keep at full strength), label, caption (count + "N to govern"), majLine, interactive (seats focusable)
+function chamberSVG(seatList, { highlight = null, label = 'Seats', caption = true, majLine = true, interactive = false } = {}) {
+  const n = seatList.length; if (!n) return '<p class="muted small">No seat data yet.</p>';
+  const { pts, dot } = hemicycle(n), R = 185, cx = 200, cy = 200, maj = Math.floor(n / 2) + 1;
+  const c = pts.map((p, i) => { const s = seatList[i]; const dim = highlight && !highlight.has(s.party);
+    return `<circle${dim ? ' class="is-dim"' : ''} style="--pc:${pcolor(s.party)};--i:${i}"${interactive ? ' tabindex="0"' : ''} data-i="${i}" cx="${(cx + p.x * R).toFixed(1)}" cy="${(cy - p.y * R).toFixed(1)}" r="${(dot * R).toFixed(2)}"><title>${esc(seatTitle(s))}</title></circle>` }).join('');
+  let line = '';
+  if (majLine && n > maj) { const t = (pts[maj - 1].t + pts[maj].t) / 2, r0 = Math.min(...pts.map(p => p.r)) - dot * 1.4, r1 = 1 + dot * 1.4;
+    const x0 = cx + Math.cos(t) * r0 * R, y0 = cy - Math.sin(t) * r0 * R, x1 = cx + Math.cos(t) * r1 * R, y1 = cy - Math.sin(t) * r1 * R;
+    line = `<line class="maj" x1="${x0.toFixed(1)}" y1="${y0.toFixed(1)}" x2="${x1.toFixed(1)}" y2="${y1.toFixed(1)}"/><text class="hemi__maj" x="${x1.toFixed(1)}" y="${(y1 - 4).toFixed(1)}" text-anchor="middle">${maj}</text>` }
+  return `<svg class="hemi" viewBox="0 -14 400 ${caption ? 258 : 218}" role="img" aria-label="${esc(label)}: ${n} seats, ${maj} needed to govern">${line}${c}${caption ? `<text class="hemi__n" x="200" y="214" text-anchor="middle">${n}</text><text class="hemi__l" x="200" y="236" text-anchor="middle">seats · ${maj} to govern</text>` : ''}</svg>` }
+const seatTitle = s => s.name ? `${s.name} · ${pname(s.party)}` : `${pname(s.party)} seat`;
+// Change seats in place (fills cross-fade through CSS) when the count is unchanged; otherwise redraw (seats pop in).
+function chamberUpdate(container, seatList, opts = {}) {
+  const svg = container.querySelector('svg.hemi'); const circles = svg ? svg.querySelectorAll('circle') : [];
+  if (!svg || circles.length !== seatList.length) { container.innerHTML = chamberSVG(seatList, opts); return }
+  circles.forEach((c, i) => { const s = seatList[i]; c.style.setProperty('--pc', pcolor(s.party)); c.querySelector('title').textContent = seatTitle(s); c.classList.toggle('is-dim', !!(opts.highlight && !opts.highlight.has(s.party))) });
+  if (opts.label) svg.setAttribute('aria-label', `${opts.label}: ${seatList.length} seats, ${Math.floor(seatList.length / 2) + 1} needed to govern`);
 }
 function seatsFromComposition(comp, members) {
   const parties = Object.keys(comp).filter(p => comp[p] > 0).sort((a, b) => P(a).order - P(b).order); const list = [];
@@ -56,3 +64,43 @@ const currentParl = () => { const ps = S.data.parliaments || []; if (ps.length) 
   const e = (S.data.elections || []).filter(x => x.parties).slice(-1)[0]; if (!e) return null;
   const comp = Object.fromEntries(e.parties.filter(r => r.total_seats).map(r => [r.party, r.total_seats]));
   return { parliament: e.parliament, election_year: e.year, composition_start: comp, composition_now_or_end: comp, members: [] } };
+
+/* ===== shared Seats helpers ===== */
+const byShort = (a, b) => pname(a).localeCompare(pname(b), 'en-NZ', { sensitivity: 'base' });   // A–Z by short name
+const seatDate = iso => { if (!iso) return ''; const d = new Date(String(iso).slice(0, 10) + 'T12:00:00'); return isNaN(d) ? String(iso) : d.toLocaleDateString('en-NZ', { day: 'numeric', month: 'short', year: 'numeric' }) };
+const inHundred = v => v == null ? '–' : v >= 99.5 ? 'over 99 in 100' : v < 0.5 ? 'under 1 in 100' : `${Math.round(v)} in 100`;
+// Nothing predictive (polls, forecast, poll-based projections) on election day before 7pm.
+const forecastHidden = () => electionPhase() === 'electionday';
+// The 2026 result once it is loaded: an elections entry for 2026 with `results` (or party rows), or upcoming.results.
+function results2026() {
+  const cands = [...(S.data.elections || []).filter(e => e.year === 2026), S.data.upcoming].filter(Boolean);
+  for (const e of cands) {
+    const r = Array.isArray(e.results) ? { parties: e.results } : e.results;
+    if (r && (r.parties || []).length) return { year: 2026, date: e.date, parliament: e.parliament || 55, ...r };
+    if (e.year === 2026 && (e.parties || []).some(p => p && p.party_vote_pct != null)) return { year: 2026, ...e } }
+  return null }
+const legendHTML = (counts, sq = false) => Object.entries(counts).sort((a, b) => a[0] === 'vacant' ? 1 : b[0] === 'vacant' ? -1 : byShort(a[0], b[0]))
+  .map(([p, n]) => `<span style="--pc:${p === 'vacant' ? 'var(--seat-empty)' : pcolor(p)}"><span class="sw${sq ? ' sw--sq' : ''}"></span>${p === 'vacant' ? 'No result' : esc(pname(p))} <b>${n}</b></span>`).join('');
+const ptagHTML = (p, label) => `<span class="ptag ptag--s" style="--pc:${pcolor(p)}"><span class="sw"></span>${esc(label || pname(p))}</span>`;
+
+/* ----- scrubber (map, parliament): play + rolling year + range + stops. Steps every 1200ms; timer lives in S.scrubTimer
+   so the router clears it on navigation. Keyboard: the range takes arrow keys; reduced motion: CSS drops the roll, steps stay. */
+function scrubberHTML({ id, labels, i, aria = 'Election year', play = 'Play through the years', note = '' }) {
+  const fill = labels.length > 1 ? i / (labels.length - 1) * 100 : 0;
+  return `<div class="scrubber" id="${id}"><button class="scrubber__play" type="button" aria-label="${esc(play)}">${ic('play')}${ic('pause')}</button>
+    <div class="scrubber__main"><div class="scrubber__head"><div class="scrubber__year" aria-live="polite"><span>${esc(labels[i])}</span></div><span class="scrubber__note">${note}</span></div>
+      <div class="scrubber__track"><input class="range" type="range" min="0" max="${labels.length - 1}" step="1" value="${i}" aria-label="${esc(aria)}" aria-valuetext="${esc(labels[i])}" style="--fill:${fill}%">
+        <div class="scrubber__stops">${labels.map((l, k) => `<span data-k="${k}" aria-current="${k === i}">${esc(l)}</span>`).join('')}</div></div></div></div>` }
+function bindScrubber(el, { labels, get, set, play = 'Play through the years' }) {
+  const range = el.querySelector('.range'), btn = el.querySelector('.scrubber__play'), yr = el.querySelector('.scrubber__year'), stops = [...el.querySelectorAll('.scrubber__stops span')];
+  const sync = i => { range.value = i; range.style.setProperty('--fill', (labels.length > 1 ? i / (labels.length - 1) * 100 : 0) + '%'); range.setAttribute('aria-valuetext', labels[i]);
+    stops.forEach((s, k) => s.setAttribute('aria-current', String(k === i))); if (yr.textContent !== labels[i]) yr.innerHTML = `<span>${esc(labels[i])}</span>` };
+  const stop = () => { if (S.scrubTimer) { clearInterval(S.scrubTimer); S.scrubTimer = null } el.removeAttribute('data-playing'); btn.setAttribute('aria-label', play) };
+  const to = i => { sync(i); set(i) };
+  range.addEventListener('input', () => { stop(); to(+range.value) });
+  el.querySelector('.scrubber__stops').addEventListener('click', e => { const s = e.target.closest('[data-k]'); if (s) { stop(); to(+s.dataset.k) } });
+  btn.addEventListener('click', () => { if (el.hasAttribute('data-playing')) { stop(); return }
+    if (S.scrubTimer) clearInterval(S.scrubTimer);
+    el.setAttribute('data-playing', ''); btn.setAttribute('aria-label', 'Pause'); to(0);
+    S.scrubTimer = setInterval(() => { if (!el.isConnected) { stop(); return } const i = get(); if (i >= labels.length - 1) { stop(); return } to(i + 1); if (i + 1 >= labels.length - 1) stop() }, 1200) });
+  return { sync, stop } }

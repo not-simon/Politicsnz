@@ -1,0 +1,63 @@
+/* ===== Choose section: small additions to components.css (tokens only, both themes) ===== */
+.quizq { padding-top: var(--s-2) }
+.quizq .statement:focus { outline: none }
+.quizq .progress-line a, .quizbar__meta a { color: var(--text-2) }
+
+/* swipe: let the page scroll vertically while the card takes horizontal drags */
+.deck .scard:not(.scard--behind):not(.scard--behind2) { touch-action: pan-y; user-select: none; -webkit-user-select: none }
+.deck .scard .disclose__body { user-select: text; -webkit-user-select: text }
+.tally__who { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; min-width: 0 }
+
+/* match: "Why" evidence sheet */
+.qwhy { display: grid }
+.qwhy__row { display: grid; gap: var(--s-2); padding: var(--s-4) 0; border-bottom: 1px solid var(--line) }
+.qwhy__row:first-child { padding-top: 0 }
+.qwhy__s { font-weight: 700; line-height: 1.35 }
+.qwhy__row--none .qwhy__s { color: var(--text-2) }
+.qwhy__ev > summary { padding: var(--s-2) 0; font-size: var(--t-small) }
+
+/* compass plot */
+.cplot { max-width: 560px }
+.cplot-s .cplot { max-width: 360px }
+.cplot__bg { fill: var(--sunk) }
+.cplot .grid line { stroke: var(--viz-grid) }
+.cplot__axis { stroke: var(--viz-axis); stroke-width: 1.2 }
+.cplot__ax text { fill: var(--text-3); font-weight: 700; letter-spacing: .04em }
+.cplot__p circle { fill: var(--pc); stroke: var(--surface); stroke-width: 2 }
+.cplot__p text { fill: var(--text-2); font-weight: 600; paint-order: stroke; stroke: var(--sunk); stroke-width: 3px; stroke-linejoin: round }
+.cplot__you { fill: var(--signal); fill-opacity: .16; stroke: var(--signal); stroke-width: 1.5 }
+.cplot__ring { fill: var(--surface); stroke: var(--signal); stroke-width: 4 }
+.cplot__me { fill: var(--text); font-weight: 800; paint-order: stroke; stroke: var(--sunk); stroke-width: 3px; stroke-linejoin: round }
+.chart.cplot text { font-variant-numeric: normal }
+
+/* compare two parties */
+.cmp__pair { display: grid; gap: var(--s-4); grid-template-columns: minmax(0, 1fr) }
+@media (min-width: 720px) { .cmp__pair { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--col-gap) } }
+.cmp__cell { display: grid; gap: var(--s-2); align-content: start; padding-top: var(--s-3); border-top: 4px solid var(--pc, var(--text)); min-width: 0 }
+.cmp__heads { display: none }
+@media (min-width: 720px) { .cmp__heads { display: grid } }
+.cmp .side { padding: var(--s-3) var(--s-3) var(--s-3) var(--s-4) }
+.cmp .ideas li { grid-template-columns: 1.75rem minmax(0, 1fr) }
+.cmp .ideas li::before { font-size: 20px }
+
+/* game */
+.game-score { display: flex; flex-wrap: wrap; gap: 6px; font-size: var(--t-small) }
+.game-score span { padding: 6px 10px; border-radius: var(--r-pill); background: var(--sunk); color: var(--text-2) }
+.game-score span[aria-current="true"] { background: var(--text); color: var(--bg) }
+.game-score b { margin-left: 4px }
+.game-hand { padding: var(--s-6) 0; justify-items: start }
+.game-hand .figure { overflow-wrap: anywhere }
+.game-choices button { min-height: 64px; font-size: 16px }
+.game-choices button .sw { width: 14px; height: 14px }
+.persona button.v-kept, .persona button.v-broken { border-color: var(--v); background: var(--v-soft); box-shadow: inset 0 0 0 1px var(--v); color: var(--text) }
+.persona button.v-kept::after, .persona button.v-broken::after { font: 700 12.5px/1 var(--font-body); color: var(--v) }
+.persona button.v-kept::after { content: "✓ Right answer" }
+.persona button.v-broken::after { content: "✕ Your guess" }
+.persona button:disabled { opacity: .55 }
+
+/* saved-answers code box */
+.choose-ta { min-height: 0; padding: 10px 14px; font: 13px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; resize: vertical; word-break: break-all }
+
+/* tallies with counts like "11 of 16" */
+.ctally .tally__row { grid-template-columns: minmax(6rem, 10rem) minmax(0, 1fr) auto }
+.ctally .tally__v { white-space: nowrap; min-width: 3.5rem }

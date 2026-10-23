@@ -1,71 +1,187 @@
-/* ----- polls & forecast ----- */
+/* ----- Seats › Polls & forecast -----
+   The only page in the guide that orders parties by polling (and it says so). Ranges come before middles, probabilities are
+   "N in 100" with icon arrays, and the model's misses are listed. Also holds the long view (party vote since 2008). */
 const isPollster = p => p.pollster && !/election result/i.test(p.pollster);
+const PARTY_ABBR = { national: 'NAT', labour: 'LAB', green: 'GRN', act: 'ACT', 'nz-first': 'NZF', 'te-pati-maori': 'TPM', opportunity: 'TOP' };
+const pollKey = n => ({ 'National': 'national', 'Labour': 'labour', 'Green': 'green', 'ACT': 'act', 'NZ First': 'nz-first', 'Te Pāti Māori': 'te-pati-maori', 'TOP': 'opportunity', 'Te Tai Tokerau Party': 'te-tai-tokerau-party', 'Independent': 'independent' }[n] || n);
+const iconArray = n => `<div class="iconarray" aria-hidden="true">${Array.from({ length: 100 }, (_, k) => `<i${k < Math.round(n || 0) ? ' class="on"' : ''} style="--i:${k}"></i>`).join('')}</div>`;
+
 V.polls = () => {
   const polls = (S.data.polls || []).filter(isPollster).sort((a, b) => b.date.localeCompare(a.date));
-  const F = S.data.forecast; const pr = projection(8);
+  const F = S.data.forecast, hasF = !!(F && (F.parties || []).length);
   const pollsters = [...new Set(polls.map(p => p.pollster))];
+  const internal = new Set(((F && F.pollsters) || []).filter(q => q.internal).map(q => q.pollster));
   const latestBy = pollsters.map(n => polls.find(p => p.pollster === n)).sort((a, b) => b.date.localeCompare(a.date));
-  const parties = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'];
-  const on = new Set(pollsters); const onP = new Set(parties.slice(0, 6));
-  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Polls & forecast · latest poll ${esc(polls[0] ? polls[0].date : '')}</div><h2>What the polls say</h2>
-    <p class="lede">Every public poll since the 2023 election, from ${pollsters.length} pollsters, with a pooled trend. Polls differ in method and have margins of error of around ±3 points, so look at the trend, not one number.</p></div>
-    ${F && F.parties ? forecastSummary(F) : `<div class="card stack"><div class="row" style="justify-content:space-between"><h3>Poll of polls</h3><span class="tiny muted">average of the ${pr.n} latest polls (${esc(pr.range)})</span></div>
-      ${Object.entries(pr.pct).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= 0.8).map(([p, v]) => `<div class="row" style="flex-wrap:nowrap"><span style="width:120px;flex:none" class="small"><b>${esc(pname(p))}</b></span><div class="meter" style="flex:1"><span style="width:${v / 50 * 100}%;background:${pcolor(p)}"></span></div><span class="num small" style="width:48px;text-align:right">${fmt(v)}%</span></div>`).join('')}
-      <p class="tiny muted">A full forecast model (house effects, calibrated error, 20,000 simulated elections) is being built and will appear here.</p></div>`}
-    <div class="card chart stack"><div class="row" style="justify-content:space-between"><h3>Trend since the 2023 election</h3><span class="tiny muted">dots = individual polls · line = 8-poll rolling average</span></div>
-      <div class="chips" id="pp-parties">${parties.map(p => `<button class="chip" data-p="${p}" aria-pressed="${onP.has(p)}"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))}</button>`).join('')}</div>
-      <div class="chips" id="pp-pollsters">${pollsters.map(n => `<button class="chip" data-n="${esc(n)}" aria-pressed="true">${esc(n)} <span class="num muted">${polls.filter(p => p.pollster === n).length}</span></button>`).join('')}</div>
-      <div id="pchart"></div><div class="tip" id="ptip">Tap a dot for the poll.</div></div>
-    <div class="card scroll stack"><h3>Latest poll from each pollster</h3><table><thead><tr><th>Pollster</th><th>Fieldwork ended</th>${parties.map(p => `<th class="n"><span class="dot" title="${esc(pname(p))}" style="background:${pcolor(p)};display:inline-block"></span></th>`).join('')}<th class="n">Sample</th><th></th></tr></thead>
-      <tbody>${latestBy.map(p => `<tr><td><b>${esc(p.pollster)}</b></td><td class="num">${esc(p.date)}</td>${parties.map(x => `<td class="n">${p.parties[x] != null ? fmt(p.parties[x]) : '–'}</td>`).join('')}<td class="n">${p.sample_size ? Number(p.sample_size).toLocaleString('en-NZ') : '–'}</td><td>${p.source_url ? `<a class="tiny" href="${esc(p.source_url)}" target="_blank" rel="noopener">source</a>` : ''}</td></tr>`).join('')}</tbody></table>
-      <p class="tiny muted">Columns: ${parties.map(pname).join(', ')}. ${F && F.house_effects ? 'House effects (how each pollster leans relative to the pooled trend) are shown in the forecast section.' : ''}</p></div>
-    <div class="card scroll stack"><h3>All ${polls.length} polls</h3><div id="palltable"></div></div>
-    <p class="small muted">Poll data is compiled from each pollster's published release (linked), via the public record on Wikipedia, and is refreshed automatically. <button class="btn ghost sm" data-page="guide/forecast-method.md">How the forecast works</button></p></section>`;
-  const draw = () => { const sel = polls.filter(p => on.has(p.pollster)); $('#pchart').innerHTML = pollChart(sel, [...onP], $('#pchart').clientWidth || 760) };
+  const pr = projection(8);
+  // Poll order: by the forecast middle estimate (or the poll average without a forecast). Only on this page.
+  const parties = hasF ? F.parties.slice().sort((a, b) => b.forecast_vote_mean - a.forecast_vote_mean).map(x => x.party)
+    : Object.entries(pr.pct).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= 0.8).map(([p]) => p);
+  const onP = new Set(parties), on = new Set(pollsters); let mode = 'vote', span = 'term';
+  const asOf = hasF ? F.as_of : (polls[0] || {}).date;
+  $('#main').innerHTML = sectionFrame('seats', 'seats/polls', `
+    <header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('poll', 'i--s')} Seats · Polls &amp; forecast</p><h1>What the polls say, and what they can't</h1>
+      <p class="lede">${polls.length} polls from ${pollsters.length} pollsters since the 2023 election, pooled into ranges. Read the range, not a single number: polls have missed by several points before.</p>
+      <div class="row"><span class="badge">Updated ${esc(seatDate(asOf))}${hasF && F.days_to_election != null ? `, ${esc(F.days_to_election)} days out` : ''}</span><span class="badge badge--outline">${ic('lock', 'i--xs')} Hidden 7 Nov until 7pm</span><a class="more small" href="#/about/page/guide/forecast-method.md">How the forecast works ${ic('chev', 'i--xs')}</a></div></header>
+    ${hasF ? forecastSummary(F) : pollAverageBlock(pr)}
+    <section class="stack" aria-labelledby="h-trend">
+      <div class="shead"><div class="shead__row"><h2 id="h-trend">The trend</h2><div class="seg" role="group" aria-label="Time span" id="pspan"><button type="button" data-s="term" aria-pressed="true">Since 2023</button><button type="button" data-s="long" aria-pressed="false">Since 2008</button></div></div></div>
+      <div class="chips chips--scroll" id="pp-parties" aria-label="Parties shown">${parties.map(p => `<button class="chip" type="button" data-p="${p}" aria-pressed="true" style="--pc:${pcolor(p)}"><span class="sw"></span>${esc(pname(p))}</button>`).join('')}</div>
+      <div class="chips chips--scroll" id="pp-pollsters" aria-label="Pollsters included">${pollsters.map(n => `<button class="chip" type="button" data-n="${esc(n)}" aria-pressed="true">${esc(n)} <span class="count">${polls.filter(p => p.pollster === n).length}</span></button>`).join('')}</div>
+      <figure class="stack stack--s" id="pchart"></figure>
+      <p class="srcline" id="ptip" aria-live="polite">Tap a dot for the pollster, date and sample.</p>
+      <details class="disclose"><summary>Past elections at a glance: seats, turnout and wasted vote since 2008</summary><div class="disclose__body" id="ppast"></div></details>
+    </section>
+    ${hasF ? `<div class="split split--6-6">${unknownsBlock(F)}${trackRecordBlock(F)}</div>` : ''}
+    <section class="stack" aria-labelledby="h-latest">
+      <div class="shead"><div class="shead__row"><h2 id="h-latest">Latest poll from each pollster</h2><span class="small muted">newest first</span></div></div>
+      <div class="table-wrap"><table class="table"><thead><tr><th>Pollster</th><th>Ended</th>${parties.map(p => `<th class="n"><abbr title="${esc(pname(p))}">${esc(PARTY_ABBR[p] || pname(p))}</abbr></th>`).join('')}<th class="n">Sample</th><th>Release</th></tr></thead>
+        <tbody>${latestBy.map(p => `<tr><td><b>${esc(p.pollster)}</b>${internal.has(p.pollster) ? ' <span class="badge badge--outline">Party-commissioned</span>' : ''}</td><td class="num">${esc(seatDate(p.date))}</td>${parties.map(x => `<td class="n">${p.parties[x] != null ? fmt(p.parties[x]) : '–'}</td>`).join('')}<td class="n">${p.sample_size ? Number(p.sample_size).toLocaleString('en-NZ') : '–'}</td><td>${p.source_url ? `<a href="${esc(p.source_url)}" target="_blank" rel="noopener">release ${ic('ext', 'i--xs')}</a>` : '<span class="muted">none linked</span>'}</td></tr>`).join('')}</tbody></table></div>
+      <p class="micro muted">Each pollster's own release, linked. Fieldwork end dates. Party-vote shares exclude undecided voters, as each pollster publishes them. A pollster that differs from the others isn't necessarily wrong.</p>
+      <details class="disclose"><summary>All ${polls.length} polls, newest first</summary><div class="disclose__body" id="palltable"></div></details>
+      ${hasF && (F.pollsters || []).length ? houseEffectsBlock(F) : ''}
+    </section>
+    ${hasF ? maoriSeatsBlock(F) : ''}
+    <section class="stack stack--s" aria-label="Method and sources"><a class="more" href="#/about/page/guide/forecast-method.md">How the forecast works ${ic('chev', 'i--xs')}</a>
+      <p class="srcline">Polls: each pollster's published release, compiled via <a href="${esc((F && F.polls_source) || 'https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election')}" target="_blank" rel="noopener">the public record on Wikipedia</a>${F && F.polls_retrieved ? `, retrieved ${esc(seatDate(F.polls_retrieved))}` : ''}.${hasF && F.simulation ? ` Forecast: ${Number(F.simulation.draws).toLocaleString('en-NZ')} simulated elections; poll-of-polls with recency weighting and pollster house effects, polling error calibrated on 2011–2023, seats by Sainte-Laguë with the 5% threshold and electorate seats. Probabilities are rounded to whole numbers on purpose.` : ''}</p>
+      ${hasF && (F.sources || []).length ? `<p class="srcline">Method sources: ${F.sources.map((u, k) => `<a href="${esc(u)}" target="_blank" rel="noopener">${k + 1}</a>`).join(' ')}</p>` : ''}</section>`);
+  // party vote / seats switch
+  const fbox = $('#frows'); if (fbox) { fbox.innerHTML = forecastRows(F, mode);
+    $('#fmode').onclick = e => { const b = e.target.closest('[data-m]'); if (!b) return; mode = b.dataset.m; $('#fmode').querySelectorAll('[data-m]').forEach(x => x.setAttribute('aria-pressed', x === b)); fbox.innerHTML = forecastRows(F, mode); $('#flegend').innerHTML = forecastLegend(mode) } }
+  const draw = () => { const sel = polls.filter(p => on.has(p.pollster)); $('#pchart').innerHTML = pollChart(sel, parties.filter(p => onP.has(p)), { long: span === 'long' }) };
   $('#pp-parties').onclick = e => { const b = e.target.closest('[data-p]'); if (!b) return; onP.has(b.dataset.p) ? onP.delete(b.dataset.p) : onP.add(b.dataset.p); b.setAttribute('aria-pressed', onP.has(b.dataset.p)); draw() };
   $('#pp-pollsters').onclick = e => { const b = e.target.closest('[data-n]'); if (!b) return; on.has(b.dataset.n) ? on.delete(b.dataset.n) : on.add(b.dataset.n); b.setAttribute('aria-pressed', on.has(b.dataset.n)); draw() };
+  $('#pspan').onclick = e => { const b = e.target.closest('[data-s]'); if (!b) return; span = b.dataset.s; $('#pspan').querySelectorAll('[data-s]').forEach(x => x.setAttribute('aria-pressed', x === b)); draw() };
   $('#pchart').onclick = e => { const c = e.target.closest('[data-tip]'); if (c) $('#ptip').textContent = c.dataset.tip };
-  let lim = 40; const all = () => { $('#palltable').innerHTML = `<table><thead><tr><th>Ended</th><th>Pollster</th>${parties.map(p => `<th class="n"><span class="dot" title="${esc(pname(p))}" style="background:${pcolor(p)};display:inline-block"></span></th>`).join('')}<th class="n">n</th></tr></thead><tbody>${polls.slice(0, lim).map(p => `<tr><td class="num">${esc(p.date)}</td><td>${p.source_url ? `<a href="${esc(p.source_url)}" target="_blank" rel="noopener">${esc(p.pollster)}</a>` : esc(p.pollster)}</td>${parties.map(x => `<td class="n">${p.parties[x] != null ? fmt(p.parties[x]) : '–'}</td>`).join('')}<td class="n">${p.sample_size || '–'}</td></tr>`).join('')}</tbody></table>${polls.length > lim ? `<div class="row" style="justify-content:center;margin-top:10px"><button class="btn sm" id="pmore2">Show more</button></div>` : ''}`; const m = $('#pmore2'); if (m) m.onclick = () => { lim += 40; all() } };
+  $('#ppast').innerHTML = pastElectionsCharts();
+  $('#ppast').onclick = e => { const c = e.target.closest('[data-tip]'); if (c) $('#ppast-tip').textContent = c.dataset.tip };
+  let lim = 40; const all = () => { $('#palltable').innerHTML = `<div class="table-wrap"><table class="table"><thead><tr><th>Ended</th><th>Pollster</th>${parties.map(p => `<th class="n"><abbr title="${esc(pname(p))}">${esc(PARTY_ABBR[p] || pname(p))}</abbr></th>`).join('')}<th class="n">Sample</th></tr></thead><tbody>${polls.slice(0, lim).map(p => `<tr><td class="num">${esc(seatDate(p.date))}</td><td>${p.source_url ? `<a href="${esc(p.source_url)}" target="_blank" rel="noopener">${esc(p.pollster)}</a>` : esc(p.pollster)}</td>${parties.map(x => `<td class="n">${p.parties[x] != null ? fmt(p.parties[x]) : '–'}</td>`).join('')}<td class="n">${p.sample_size ? Number(p.sample_size).toLocaleString('en-NZ') : '–'}</td></tr>`).join('')}</tbody></table></div>${polls.length > lim ? `<div class="row"><button class="btn btn--s" type="button" id="pmore2">Show ${Math.min(40, polls.length - lim)} more</button></div>` : ''}`; const m = $('#pmore2'); if (m) m.onclick = () => { lim += 40; all() } };
   draw(); all();
 };
-function pollChart(polls, parties, cw = 760) {
-  const W = Math.max(440, Math.min(760, Math.round(cw * 1.25))), H = 320, L = 36, R = 34, T = 10, B = 26;
-  const t0 = new Date('2023-10-01').getTime(), t1 = new Date('2026-11-14').getTime();
-  const xs = d => L + (new Date(d).getTime() - t0) / (t1 - t0) * (W - L - R), maxV = 45, ys = v => T + (1 - v / maxV) * (H - T - B);
-  let g = [0, 10, 20, 30, 40].map(v => `<line class="grid-l" x1="${L}" x2="${W - R}" y1="${ys(v)}" y2="${ys(v)}"/><text x="4" y="${ys(v) + 4}">${v}%</text>`).join('');
-  for (let y = 2024; y <= 2026; y++) g += `<text x="${xs(y + '-01-01')}" y="${H - 6}" text-anchor="middle">${y}</text>`;
-  g += `<line x1="${xs('2026-11-07')}" x2="${xs('2026-11-07')}" y1="${T}" y2="${H - B}" stroke="var(--primary)" stroke-dasharray="3 3"/><text x="${xs('2026-11-07') - 4}" y="${T + 10}" text-anchor="end" style="fill:var(--primary);font-weight:700">election</text>`;
-  g += `<line x1="${L}" x2="${W - R}" y1="${ys(5)}" y2="${ys(5)}" stroke="var(--text-2)" stroke-dasharray="2 4"/><text x="${L + 4}" y="${ys(5) - 4}">5% threshold</text>`;
-  const sorted = polls.slice().sort((a, b) => a.date.localeCompare(b.date));
-  const res2023 = (S.data.elections.find(e => e.year === 2023) || {}).parties || [];
-  for (const p of parties) { const c = pcolor(p); const pp = sorted.filter(x => typeof x.parties[p] === 'number'); if (!pp.length) continue;
-    const r = res2023.find(x => x.party === p); if (r) g += `<circle cx="${xs('2023-10-14')}" cy="${ys(r.party_vote_pct)}" r="5" fill="${c}" stroke="var(--surface)" stroke-width="2" data-tip="2023 election result · ${esc(pname(p))} ${fmt(r.party_vote_pct, 2)}%"></circle>`;
-    g += pp.map(x => `<circle cx="${xs(x.date).toFixed(1)}" cy="${ys(x.parties[p]).toFixed(1)}" r="3" fill="${c}" opacity=".45" data-tip="${esc(x.pollster)} · ${esc(x.date)} · ${esc(pname(p))} ${fmt(x.parties[p])}%${x.sample_size ? ' · n=' + x.sample_size : ''}"></circle>`).join('');
-    if (pp.length > 3) { const avg = pp.map((x, i) => { const w = pp.slice(Math.max(0, i - 7), i + 1); return [x.date, w.reduce((a, y) => a + y.parties[p], 0) / w.length] });
-      g += `<polyline fill="none" stroke="${c}" stroke-width="2.6" stroke-linejoin="round" points="${avg.map(([d, v]) => `${xs(d).toFixed(1)},${ys(v).toFixed(1)}`).join(' ')}"/>`;
-      const [ld, lv] = avg[avg.length - 1]; g += `<text x="${(xs(ld) + 6).toFixed(1)}" y="${(ys(lv) + 4).toFixed(1)}" style="fill:${c};font-weight:700">${fmt(lv)}</text>` } }
-  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Polls since 2023">${g}</svg>` }
+
+/* ----- forecast blocks ----- */
 function forecastSummary(F) {
-  const P7 = F.parties || []; const H = F.headline || {}; const blocs = F.blocs || [];
-  const pct = v => (v == null ? '–' : Math.round(v) + '%');
-  const tile = (v, l) => `<div class="stat"><b>${pct(v)}</b><span>${esc(l)}</span></div>`;
-  const band = (lo, hi, mean, max, c) => `<div class="meter" style="flex:1;position:relative;height:12px"><span style="position:absolute;left:${lo / max * 100}%;width:${Math.max(0.5, (hi - lo) / max * 100)}%;height:100%;background:${c};opacity:.35"></span><span style="position:absolute;left:${mean / max * 100}%;width:3px;height:100%;background:${c}"></span></div>`;
+  const H = F.headline || {}, blocs = (F.blocs || []).slice().sort((a, b) => a.bloc.localeCompare(b.bloc, 'en-NZ'));
+  // the two groups the headline reports on (the current government and the main opposition parties); other combinations go in a table
+  const same = (b, set) => (b.parties || []).length === set.length && set.every(p => b.parties.includes(p));
+  let main = blocs.filter(b => same(b, ['national', 'act', 'nz-first']) || same(b, ['labour', 'green', 'te-pati-maori'])); if (!main.length) main = blocs.slice(0, 2);
+  const more = blocs.filter(b => !main.includes(b));
+  const none = H.p_no_bloc_majority ?? F.p_no_bloc_majority;
+  const bloc = (n, title, who, extra = '') => `<div class="bloc"><div class="bloc__h"><span class="bloc__n">${Math.round(n)}<small>in 100</small></span></div><p style="font-weight:700">${title}</p>${who}${extra}${iconArray(n)}</div>`;
+  const whoHTML = ps => `<div class="bloc__who">${ps.map(p => `<span style="--pc:${pcolor(p)}"><span class="sw"></span>${esc(pname(p))}</span>`).join('')}</div>`;
   const lp = H.largest_party_probability || {};
-  const mlp = F.most_likely_parliament && F.most_likely_parliament.seats;
-  const maori = (F.electorates && F.electorates.maori_seats) || {};
-  const track = (F.historical_track_record && F.historical_track_record.elections) || [];
-  const partyKey = n => ({ 'National': 'national', 'Labour': 'labour', 'Green': 'green', 'ACT': 'act', 'NZ First': 'nz-first', 'Te Pāti Māori': 'te-pati-maori', 'TOP': 'opportunity', 'Te Tai Tokerau Party': 'te-tai-tokerau-party', 'Independent': 'independent' }[n] || n);
-  return `<div class="card stack" style="gap:18px"><div class="row" style="justify-content:space-between"><div><div class="kicker">Forecast · ${esc(F.days_to_election)} days to go · updated ${esc((F.generated || '').slice(0, 10))}</div><h3>If the election were held on current polling</h3></div><button class="btn sm" data-page="guide/forecast-method.md">How the model works</button></div>
-    <div class="stats">${tile(lp.national, 'National is the largest party')}${tile(lp.labour, 'Labour is the largest party')}${tile(H.p_right_bloc_majority_NAT_ACT_NZF, 'National + ACT + NZ First majority')}${tile(H.p_left_bloc_majority_LAB_GRN_TPM, 'Labour + Green + Te Pāti Māori majority')}${tile(H.p_no_bloc_majority ?? F.p_no_bloc_majority, 'Neither bloc has a majority')}${tile(H.p_TOP_over_5pct, 'TOP clears 5%')}${tile(H.p_TOP_holds_balance_of_power, 'TOP holds the balance of power')}</div>
-    <div class="split"><div class="stack"><h4>Party vote forecast <span class="tiny muted">(shaded = 80% range)</span></h4>
-      ${P7.slice().sort((a, b) => b.forecast_vote_mean - a.forecast_vote_mean).map(x => `<div class="row" style="flex-wrap:nowrap"><span style="width:104px;flex:none" class="small"><b>${esc(pname(x.party))}</b></span>${band(x.forecast_vote_80[0], x.forecast_vote_80[1], x.forecast_vote_mean, 45, pcolor(x.party))}<span class="num small" style="width:118px;text-align:right">${fmt(x.forecast_vote_mean)}% <span class="muted">${fmt(x.forecast_vote_80[0], 0)}–${fmt(x.forecast_vote_80[1], 0)}</span></span></div>`).join('')}</div>
-    <div class="stack"><h4>Seats <span class="tiny muted">(expected, with 80% range)</span></h4>
-      ${P7.slice().sort((a, b) => (b.seats_expected || 0) - (a.seats_expected || 0)).map(x => `<div class="row" style="flex-wrap:nowrap"><span style="width:104px;flex:none" class="small"><b>${esc(pname(x.party))}</b></span>${band((x.seats_80 || [0, 0])[0], (x.seats_80 || [0, 0])[1], x.seats_expected || 0, 70, pcolor(x.party))}<span class="num small" style="width:118px;text-align:right">${x.seats_expected ?? '–'} <span class="muted">${(x.seats_80 || []).join('–')}</span>${x.p_over_5pct != null && x.p_over_5pct < 99 ? ` <span class="tiny muted">· ${pct(x.p_over_5pct)} ≥5%</span>` : ''}</span></div>`).join('')}</div></div>
-    <div class="split"><div class="stack"><h4>Coalition blocs</h4><div class="scroll"><table><thead><tr><th>Bloc</th><th class="n">Seats</th><th class="n">80% range</th><th class="n">Chance of majority</th></tr></thead><tbody>${blocs.map(b => `<tr><td>${esc(b.bloc)}</td><td class="n">${b.seats_expected}</td><td class="n">${(b.seats_80 || []).join('–')}</td><td class="n"><b>${pct(b.p_majority)}</b></td></tr>`).join('')}</tbody></table></div>
-      <p class="tiny muted">${esc((F.majority_threshold || {}).note || '')}</p></div>
-      ${mlp ? `<div class="stack chamber"><h4>Most likely Parliament <span class="tiny muted">(${fmt((F.most_likely_parliament.share_of_simulations || 0) * 100, 1)}% of simulations)</span></h4>${chamberSVG(seatsFromComposition(mlp, []), { label: 'Most likely parliament' })}<div class="legend">${Object.entries(mlp).filter(([, n]) => n).sort((a, b) => P(a[0]).order - P(b[0]).order).map(([p, n]) => `<span class="item"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))} <b class="num">${n}</b></span>`).join('')}</div></div>` : ''}</div>
-    ${Object.keys(maori).length ? `<details><summary style="cursor:pointer;color:var(--primary);font-weight:700">Māori electorates and Epsom: who is likely to win each seat</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Seat</th><th>Chance of winning</th></tr></thead><tbody>${Object.entries(maori).map(([seat, m]) => `<tr><td>${esc(seat)}</td><td>${Object.entries(m.p_win || {}).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= 1).map(([p, v]) => `<span class="row" style="display:inline-flex;gap:4px;margin-right:10px"><span class="dot" style="background:${pcolor(partyKey(p))}"></span>${esc(p)} <b class="num">${pct(v)}</b></span>`).join('')}</td></tr>`).join('')}${F.electorates.epsom ? `<tr><td>Epsom</td><td><span class="row" style="display:inline-flex;gap:4px"><span class="dot" style="background:${pcolor('act')}"></span>ACT <b class="num">${pct(F.electorates.epsom.p_act_wins)}</b></span> <span class="tiny muted">${esc(F.electorates.epsom.assumption || '')}</span></td></tr>` : ''}</tbody></table></div></details>` : ''}
-    ${(F.pollsters || []).length ? `<details><summary style="cursor:pointer;color:var(--primary);font-weight:700">Pollster house effects (how each pollster leans vs the pooled trend)</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Pollster</th><th class="n">Polls</th>${P7.map(x => `<th class="n"><span class="dot" title="${esc(pname(x.party))}" style="background:${pcolor(x.party)};display:inline-block"></span></th>`).join('')}</tr></thead><tbody>${F.pollsters.filter(q => q.n_polls_this_term).map(q => `<tr><td>${esc(q.pollster)}${q.internal ? ' <span class="tiny muted">(party-commissioned, half weight)</span>' : ''}</td><td class="n">${q.n_polls_this_term}</td>${P7.map(x => { const v = (q.house_effects || {})[x.party]; return `<td class="n">${v == null ? '–' : (v > 0 ? '+' : '') + fmt(v)}</td>` }).join('')}</tr>`).join('')}</tbody></table></div><p class="tiny muted">${esc(F.house_effects_note || '')}</p></details>` : ''}
-    ${track.length ? `<details><summary style="cursor:pointer;color:var(--primary);font-weight:700">Track record: what this model would have said two weeks before past elections</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Election</th><th class="n">Polls used</th><th>Results inside the 80% range</th><th>Inside the 95% range</th></tr></thead><tbody>${track.map(t => `<tr><td class="num">${t.election}</td><td class="n">${t.n_polls_used_120d ?? '–'}</td><td>${esc(t.coverage80 || '')}</td><td>${esc(t.coverage95 || '')}</td></tr>`).join('')}</tbody></table></div><p class="tiny muted">${esc(F.historical_track_record.note || '')} Overall: ${esc(F.historical_track_record.coverage80 || '')} of results fell inside the 80% range and ${esc(F.historical_track_record.coverage95 || '')} inside the 95% range.</p></details>` : ''}
-    <details><summary style="cursor:pointer;color:var(--primary);font-weight:700">How to read this, and what it can't tell you</summary><ul class="small" style="margin-top:8px">${(F.how_to_read || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul><h4>Caveats</h4><ul class="small">${(F.caveats || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></details>
-    <p class="tiny muted">${esc(F.simulation ? F.simulation.draws.toLocaleString('en-NZ') + ' simulated elections' : '')} · poll-of-polls with recency weighting and pollster house effects, polling error calibrated on 2011–2023, seats by Sainte-Laguë with the 5% threshold and electorate seats. Probabilities are rounded to whole numbers on purpose.</p></div>` }
+  const facts = [
+    ...Object.keys(lp).sort(byShort).map(p => [`${pname(p)} is the largest party`, lp[p]]),
+    ['Opportunity (TOP) clears 5%', H.p_TOP_over_5pct], ['NZ First clears 5%', H.p_NZ_First_over_5pct], ['Te Pāti Māori clears 5%', H.p_TPM_over_5pct],
+    ['Opportunity (TOP) holds the balance of power', H.p_TOP_holds_balance_of_power], ['NZ First holds the balance of power', H.p_NZ_First_holds_balance_of_power],
+    ['There are overhang seats (a House bigger than 120)', H.p_overhang]].filter(([, v]) => v != null);
+  const others = Object.entries(F.other_seat_winners || {}).filter(([, v]) => v.p_wins_seat);
+  return `<section class="stack stack--l" aria-labelledby="h-fc">
+    <div class="shead"><div class="shead__row"><h2 id="h-fc">If the election were held on today's polling</h2><div class="seg" role="group" aria-label="Show" id="fmode"><button type="button" data-m="vote" aria-pressed="true">Party vote</button><button type="button" data-m="seats" aria-pressed="false">Seats</button></div></div>
+      <p class="small muted">Forecast ${esc(seatDate(F.generated))} · latest poll ${esc(seatDate(F.latest_poll_date))} · ${esc(F.n_polls_this_term)} polls this term</p></div>
+    <div class="split split--7-5">
+      <div class="stack"><div id="frows"></div><div class="legend small" id="flegend">${forecastLegend('vote')}</div>
+        ${others.length ? `<p class="small soft">Seats outside the parties above: ${others.map(([p, v]) => `${esc(pname(p))} wins an electorate in ${inHundred(v.p_wins_seat)} simulations`).join('; ')}.</p>` : ''}
+        <p class="micro muted">Sorted by the forecast's middle estimate. This is the only page in the guide that orders parties by polling; everywhere else is A–Z or ballot order.</p></div>
+      <div class="stack stack--l"><h3>Who could govern?</h3>
+        <p class="small soft">From ${F.simulation ? Number(F.simulation.draws).toLocaleString('en-NZ') : 'tens of thousands of'} simulated elections built from the polls and how far they have missed before. Not a prediction: in 2017 and 2020 late swings moved the result.</p>
+        <div class="blocs">${main.map(b => bloc(b.p_majority, `${esc(b.bloc)} win a majority`, whoHTML(b.parties), `<p class="small soft">Seats: likely ${(b.seats_80 || []).join('–')}, middle ${b.seats_expected}</p>`)).join('')}
+          ${none != null ? bloc(none, 'Neither group has a majority on its own', '', H.p_TOP_holds_balance_of_power != null ? `<p class="small soft">The balance of power: Opportunity (TOP) holds it in ${inHundred(H.p_TOP_holds_balance_of_power)} simulations, NZ First in ${inHundred(H.p_NZ_First_holds_balance_of_power)}.</p>` : '') : ''}</div>
+        ${more.length ? `<details class="disclose"><summary>Other combinations</summary><div class="disclose__body"><div class="table-wrap"><table class="table"><thead><tr><th>Parties</th><th class="n">Seats, likely</th><th class="n">Majority</th></tr></thead><tbody>${blocs.map(b => `<tr><td>${esc(b.bloc)}</td><td class="n">${(b.seats_80 || []).join('–')}</td><td class="n"><b>${inHundred(b.p_majority)}</b></td></tr>`).join('')}</tbody></table></div><p class="small">${esc((F.majority_threshold || {}).note || '')}</p></div></details>` : ''}
+        ${facts.length ? `<details class="disclose"><summary>More from the simulations</summary><div class="disclose__body"><dl class="dl">${facts.map(([l, v]) => `<dt>${esc(l)}</dt><dd>${inHundred(v)}</dd>`).join('')}</dl></div></details>` : ''}
+      </div>
+    </div>
+    <details class="disclose"><summary>How to read this</summary><div class="disclose__body"><ul class="small">${(F.how_to_read || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul>${F.undecided_note ? `<p class="small">${esc(F.undecided_note)}</p>` : ''}</div></details>
+  </section>` }
+function forecastLegend(mode) { return `<span><span class="lg-band"></span> 8 in 10 chance the result lands here</span><span><span class="lg-mean"></span> middle estimate</span>${mode === 'vote' ? '<span><span class="lg-thr"></span> 5% threshold</span>' : ''}` }
+function forecastRows(F, mode) {
+  const ps = F.parties.slice().sort(mode === 'vote' ? (a, b) => b.forecast_vote_mean - a.forecast_vote_mean : (a, b) => (b.seats_expected || 0) - (a.seats_expected || 0));
+  const get = x => mode === 'vote' ? [x.forecast_vote_80[0], x.forecast_vote_80[1], x.forecast_vote_mean] : [(x.seats_80 || [0, 0])[0], (x.seats_80 || [0, 0])[1], x.seats_expected || 0];
+  const max = mode === 'vote' ? Math.max(45, Math.ceil(Math.max(...ps.map(x => get(x)[1])) / 5) * 5) : Math.max(50, Math.ceil(Math.max(...ps.map(x => get(x)[1])) / 10) * 10);
+  const pc = v => (Math.max(0, Math.min(max, v)) / max * 100).toFixed(1) + '%';
+  return `<p class="micro muted">Scale 0–${max}${mode === 'vote' ? '% of the party vote' : ' seats'}, the same for every party.</p>` + ps.map(x => { const [lo, hi, m] = get(x); const u = mode === 'vote' ? '%' : '';
+    const loS = mode === 'vote' ? Math.max(0, Math.round(lo)) : lo, hiS = mode === 'vote' ? Math.round(hi) : hi, mS = mode === 'vote' ? fmt(m) : m;
+    const sub = mode === 'vote' ? (x.p_over_5pct != null && x.p_over_5pct < 99 ? `clears 5% in ${inHundred(x.p_over_5pct)}` : '') : (x.p_in_parliament != null && x.p_in_parliament < 99 ? `in Parliament in ${inHundred(x.p_in_parliament)}` : '');
+    return `<div class="rrow" style="--pc:${pcolor(x.party)}"><span class="stack stack--s" style="gap:2px">${ptagHTML(x.party)}${sub ? `<span class="micro muted">${sub}</span>` : ''}</span>
+      <div class="rbar" style="--lo:${pc(lo)};--hi:${pc(hi)};--m:${pc(m)}${mode === 'vote' ? `;--x:${pc(5)}` : ''}" role="img" aria-label="${esc(pname(x.party))}: likely ${loS} to ${hiS}${u}, middle estimate ${mS}${u}">${mode === 'vote' ? '<span class="rbar__mark"></span>' : ''}<span class="rbar__band"></span><span class="rbar__mean"></span></div>
+      <span class="rrow__v"><b>${loS}–${hiS}${u}</b><span>middle ${mS}${u}</span></span></div>` }).join('') }
+function pollAverageBlock(pr) { const ps = Object.entries(pr.pct).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= 0.8);
+  return `<section class="stack" aria-labelledby="h-pa"><div class="shead"><div class="shead__row"><h2 id="h-pa">Poll of polls</h2><span class="small muted">average of the ${pr.n} latest polls (${esc(pr.range)})</span></div></div>
+    <div>${ps.map(([p, v], k) => `<div class="rrow" style="--pc:${pcolor(p)}">${ptagHTML(p)}<div class="bar"><i style="--w:${v / 50 * 100}%;--i:${k}"></i></div><span class="rrow__v"><b>${fmt(v)}%</b></span></div>`).join('')}</div>
+    <p class="micro muted">Sorted by poll average: the only page in the guide sorted this way. A full forecast with ranges will appear here.</p></section>` }
+function unknownsBlock(F) {
+  const items = (F.caveats || []).map(c => { const m = String(c).match(/^([^:]{3,60}):\s*(.+)$/); return m ? `<li><b>${esc(m[1])}:</b> ${esc(m[2])}</li>` : `<li>${esc(c)}</li>` });
+  return `<section class="unknowns" aria-labelledby="h-unk"><h2 id="h-unk" class="h3">How this could be wrong</h2><ul>${items.join('')}</ul>
+    <p class="small soft">It also can't know turnout under this year's earlier enrolment deadline, or how special votes will move things after election night.</p></section>` }
+function trackRecordBlock(F) {
+  const TR = F.historical_track_record || {}, els = TR.elections || [];
+  if (!els.length) return '<div></div>';
+  const misses = els.flatMap(e => (e.parties || []).filter(p => p.inside80 === false).map(p => ({ year: e.election, ...p })));
+  const [hit, tot] = String(TR.coverage80 || '').split('/');
+  return `<section class="stack" aria-labelledby="h-bt"><h2 id="h-bt" class="h3">Our track record, misses included</h2>
+    <p class="soft">Run two weeks before each election since ${esc(els[0].election)}, the "8 in 10" range caught <b style="color:var(--text)">${esc(hit)} of ${esc(tot)}</b> party results. It missed these:</p>
+    <div class="table-wrap"><table class="table"><thead><tr><th>Year</th><th>Party</th><th class="n">Forecast</th><th class="n">Result</th><th class="n">Miss</th></tr></thead><tbody>
+    ${misses.map(m => `<tr><td class="num">${esc(m.year)}</td><td>${ptagHTML(m.party)}</td><td class="n">${fmt(m.forecast_2wk_out)}%</td><td class="n">${fmt(m.result)}%</td><td class="n"><b>${m.error_result_minus_forecast > 0 ? '+' : ''}${fmt(m.error_result_minus_forecast)}</b></td></tr>`).join('')}</tbody></table></div>
+    <details class="disclose"><summary>Every election, and the "19 in 20" range</summary><div class="disclose__body">
+      <div class="table-wrap"><table class="table"><thead><tr><th>Election</th><th class="n">Polls used</th><th class="n">Inside 8 in 10</th><th class="n">Inside 19 in 20</th></tr></thead><tbody>${els.map(t => `<tr><td class="num">${esc(t.election)}</td><td class="n">${t.n_polls_used_120d ?? '–'}</td><td class="n">${esc(t.coverage80 || '')}</td><td class="n">${esc(t.coverage95 || '')}</td></tr>`).join('')}</tbody></table></div>
+      <p class="small">${esc(TR.note || '')} Overall: ${esc(TR.coverage80 || '')} of results fell inside the 80% range and ${esc(TR.coverage95 || '')} inside the 95% range.</p></div></details></section>` }
+function houseEffectsBlock(F) { const P7 = F.parties.slice().sort((a, b) => b.forecast_vote_mean - a.forecast_vote_mean);
+  return `<details class="disclose"><summary>How each pollster leans compared with the others</summary><div class="disclose__body"><div class="table-wrap"><table class="table"><thead><tr><th>Pollster</th><th class="n">Polls</th>${P7.map(x => `<th class="n"><abbr title="${esc(pname(x.party))}">${esc(PARTY_ABBR[x.party] || pname(x.party))}</abbr></th>`).join('')}</tr></thead><tbody>${F.pollsters.filter(q => q.n_polls_this_term).map(q => `<tr><td>${esc(q.pollster)}${q.internal ? ' <span class="badge badge--outline">Party-commissioned, half weight</span>' : ''}</td><td class="n">${q.n_polls_this_term}</td>${P7.map(x => { const v = (q.house_effects || {})[x.party]; return `<td class="n">${v == null ? '–' : (v > 0 ? '+' : '') + fmt(v)}</td>` }).join('')}</tr>`).join('')}</tbody></table></div><p class="small">${esc(F.house_effects_note || '')}</p></div></details>` }
+function maoriSeatsBlock(F) {
+  const E = F.electorates || {}, M = E.maori_seats || {}; if (!Object.keys(M).length) return '';
+  const rows = Object.entries(M).sort((a, b) => a[0].localeCompare(b[0], 'en-NZ')).map(([seat, m]) => { const w = Object.entries(m.p_win || {}).map(([p, v]) => [pollKey(p), v]).sort((a, b) => b[1] - a[1]);
+    return `<tr><td><b>${esc(seat)}</b></td><td>${w[0] ? ptagHTML(w[0][0]) : '–'}</td><td class="n">${w[0] ? inHundred(w[0][1]) : '–'}</td><td>${w.slice(1).filter(([, v]) => v >= 1).map(([p, v]) => `${esc(pname(p))} ${Math.round(v)}`).join(' · ') || '–'}</td><td class="small">${(m.polls_used || []).length ? m.polls_used.map(x => `${x.source_url ? `<a href="${esc(x.source_url)}" target="_blank" rel="noopener">${esc(x.pollster || 'poll')}</a>` : esc(x.pollster || 'poll')}, ${esc(x.date || '')}${x.sample_size ? ` (sample ${Number(x.sample_size).toLocaleString('en-NZ')})` : ''}`).join('<br>') : '<span class="muted">none: 2023 result only</span>'}</td></tr>` });
+  return `<section class="stack" aria-labelledby="h-maori"><div class="shead"><div class="shead__row"><h2 id="h-maori">The seven Māori seats, and Epsom</h2><span class="badge badge--outline">Low confidence</span></div>
+      <p class="small soft">Chance each candidate's party wins the seat. These rest on very few small electorate polls and the 2023 result, so treat them as rough.</p></div>
+    <div class="table-wrap"><table class="table"><thead><tr><th>Electorate</th><th>Most likely</th><th class="n">Chance</th><th>Others (in 100)</th><th>Electorate polls</th></tr></thead><tbody>${rows.join('')}
+      ${E.epsom ? `<tr><td><b>Epsom</b></td><td>${ptagHTML('act')}</td><td class="n">${inHundred(E.epsom.p_act_wins)}</td><td>–</td><td><span class="muted">none: stated assumption</span></td></tr>` : ''}</tbody></table></div>
+    ${E.epsom && E.epsom.assumption ? `<p class="small soft"><b>Epsom:</b> ${esc(E.epsom.assumption)}</p>` : ''}
+    ${E.note ? `<p class="micro muted">${esc(E.note)}</p>` : ''}</section>` }
+
+/* ----- trend chart: a 360-wide lines-only SVG for phones and a 900-wide one with dots; CSS shows one ----- */
+function pollChart(polls, parties, { long = false } = {}) {
+  const label = long ? 'Party vote at each election since 2008, then every published poll since 2023 with an 8-poll rolling average' : 'Party vote in every published poll since the 2023 election, with an 8-poll rolling average';
+  return trendSVG(polls, parties, 360, 300, false, long, label) + trendSVG(polls, parties, 900, 340, true, long, label) +
+    `<figcaption class="micro muted">Lines: average of each party's last 8 polls${long ? '; solid dots joined by a dashed line: election results' : ''}. Dots (on wider screens): individual polls. Same 0–${long ? 55 : 45}% scale for every party.</figcaption>` }
+function trendSVG(polls, parties, W, H, dots, long, label) {
+  const L = W < 500 ? 30 : 34, R = W < 500 ? 36 : 44, T = 12, B = 24;
+  const t0 = new Date(long ? '2008-06-01' : '2023-10-01').getTime(), t1 = new Date(long ? '2026-12-15' : '2026-11-14').getTime(), maxV = long ? 55 : 45;
+  const xs = d => L + (new Date(d).getTime() - t0) / (t1 - t0) * (W - L - R), ys = v => T + (1 - v / maxV) * (H - T - B);
+  const ticks = long ? [0, 10, 20, 30, 40, 50] : [0, 10, 20, 30, 40];
+  let g = `<g class="grid">${ticks.map(v => `<line x1="${L}" x2="${W - R}" y1="${ys(v).toFixed(1)}" y2="${ys(v).toFixed(1)}"/>`).join('')}</g>` + ticks.map((v, k) => `<text x="${L - 6}" y="${(ys(v) + 4).toFixed(1)}" text-anchor="end">${v}${k === ticks.length - 1 ? '%' : ''}</text>`).join('');
+  const years = long ? (W < 500 ? [2011, 2017, 2023] : [2008, 2011, 2014, 2017, 2020, 2023]) : [2024, 2025, 2026];
+  g += years.map(y => `<text x="${xs(long ? y + '-11-01' : y + '-01-01').toFixed(1)}" y="${H - 6}" text-anchor="middle">${y}</text>`).join('');
+  g += `<line class="thr" x1="${L}" x2="${W - R}" y1="${ys(5).toFixed(1)}" y2="${ys(5).toFixed(1)}"/><text class="thr-l" x="${xs(long ? '2009-06-01' : '2023-12-15').toFixed(1)}" y="${(ys(5) - 5).toFixed(1)}">5% threshold</text>`;
+  g += `<line class="eday" x1="${xs('2026-11-07').toFixed(1)}" x2="${xs('2026-11-07').toFixed(1)}" y1="${T}" y2="${H - B}"/><text class="eday-l" x="${(xs('2026-11-07') - 4).toFixed(1)}" y="${T + 10}" text-anchor="end">7 Nov</text>`;
+  const sorted = polls.slice().sort((a, b) => a.date.localeCompare(b.date));
+  const els = (S.data.elections || []).filter(e => e.year >= (long ? 2008 : 2023) && e.year < 2026);
+  const ends = [];
+  for (const p of parties) { const pc = pcolor(p); const pp = sorted.filter(x => typeof x.parties[p] === 'number');
+    let part = '';
+    const res = els.map(e => { const r = (e.parties || []).find(x => x.party === p); return r && r.party_vote_pct != null ? [e.date || e.year + '-11-01', r.party_vote_pct, e.year] : null }).filter(Boolean);
+    if (long && res.length > 1) part += `<polyline class="elx" points="${res.map(([d, v]) => `${xs(d).toFixed(1)},${ys(v).toFixed(1)}`).join(' ')}"/>`;
+    part += res.map(([d, v, y]) => `<circle class="res" cx="${xs(d).toFixed(1)}" cy="${ys(v).toFixed(1)}" r="${W < 500 ? 3.5 : 4.5}" data-tip="${y} election result · ${esc(pname(p))} ${fmt(v, 2)}%"></circle>`).join('');
+    if (dots) part += pp.map(x => `<circle class="dot" cx="${xs(x.date).toFixed(1)}" cy="${ys(x.parties[p]).toFixed(1)}" r="3" data-tip="${esc(x.pollster)} · ${esc(seatDate(x.date))} · ${esc(pname(p))} ${fmt(x.parties[p])}%${x.sample_size ? ' · sample ' + Number(x.sample_size).toLocaleString('en-NZ') : ''}"></circle>`).join('');
+    if (pp.length > 3) { const avg = pp.map((x, i) => { const w = pp.slice(Math.max(0, i - 7), i + 1); return [x.date, w.reduce((a, y) => a + y.parties[p], 0) / w.length] });
+      const xy = avg.map(([d, v]) => [xs(d), ys(v)]); let len = 0; for (let k = 1; k < xy.length; k++) len += Math.hypot(xy[k][0] - xy[k - 1][0], xy[k][1] - xy[k - 1][1]);
+      part += `<polyline class="avg" style="--len:${Math.ceil(len)}" points="${xy.map(([a, b]) => `${a.toFixed(1)},${b.toFixed(1)}`).join(' ')}"/>`;
+      const [ld, lv] = avg[avg.length - 1]; ends.push({ x: xs(ld) + 5, y: ys(lv) + 4, v: lv, p }) }
+    g += `<g style="--pc:${pc}">${part}</g>` }
+  // end labels, nudged apart so they don't overlap
+  ends.sort((a, b) => a.y - b.y); for (let k = 1; k < ends.length; k++) if (ends[k].y - ends[k - 1].y < 12) ends[k].y = ends[k - 1].y + 12;
+  g += ends.map(e => `<text class="end" x="${e.x.toFixed(1)}" y="${e.y.toFixed(1)}">${Math.round(e.v)}</text>`).join('');
+  return `<svg class="chart ${dots ? 'chart--wide' : 'chart--narrow'}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">${g}</svg>` }
+// Seats after each election (stacked, 61 tick) and turnout vs wasted vote, since 2008 (from the old Parliament › trends tab)
+function pastElectionsCharts() {
+  const els = (S.data.elections || []).filter(e => e.year >= 2008 && e.year < 2026);
+  const W = 520, bh = 24, gap = 10, H = els.length * (bh + gap) + 24, x0 = 48, sc = (W - x0 - 8) / 125;
+  const seats = `<svg class="chart chart--past" viewBox="0 0 ${W} ${H}" role="img" aria-label="Seats won by each party at each election since 2008">${els.map((e, i) => { let x = x0; const y = i * (bh + gap); const tot = (e.parties || []).reduce((a, r) => a + (r.total_seats || 0), 0) || 120;
+    const segs = (e.parties || []).filter(r => r.total_seats).sort((a, b) => P(a.party).order - P(b.party).order).map(r => { const w = r.total_seats * sc; const s = `<rect class="stk" x="${x.toFixed(1)}" y="${y}" width="${w.toFixed(1)}" height="${bh}" style="--pc:${pcolor(r.party)}" data-tip="${e.year}: ${esc(pname(r.party))} ${r.total_seats} seats"><title>${esc(pname(r.party))} ${r.total_seats}</title></rect>`; x += w; return s }).join('');
+    const mx = x0 + (Math.floor(tot / 2) + 1) * sc; return `<text x="0" y="${y + 17}">${e.year}</text>${segs}<line class="majtick" x1="${mx.toFixed(1)}" x2="${mx.toFixed(1)}" y1="${y - 3}" y2="${y + bh + 3}"/>` }).join('')}<text x="${x0}" y="${H - 4}">Black tick: seats needed to govern. Parties left to right as they usually sit.</text></svg>`;
+  const tw = 520, th = 210, pad = 36, xs = i => pad + 16 + i * (tw - pad - 40) / Math.max(1, els.length - 1), ys = v => th - 26 - v / 100 * (th - 44);
+  const waste = els.map(e => e.wasted_party_vote_pct != null ? e.wasted_party_vote_pct : (e.parties || []).filter(r => !r.total_seats).reduce((a, r) => a + (r.party_vote_pct || 0), 0));
+  const turn = `<svg class="chart chart--past" viewBox="0 0 ${tw} ${th}" role="img" aria-label="Turnout and wasted party vote at each election since 2008"><g class="grid">${[0, 25, 50, 75, 100].map(v => `<line x1="${pad}" x2="${tw - 10}" y1="${ys(v)}" y2="${ys(v)}"/>`).join('')}</g>${[0, 25, 50, 75, 100].map(v => `<text x="${pad - 6}" y="${ys(v) + 4}" text-anchor="end">${v}%</text>`).join('')}
+    ${els.map((e, i) => `<rect class="waste" x="${xs(i) - 12}" y="${ys(waste[i])}" width="24" height="${Math.max(0, ys(0) - ys(waste[i]))}" rx="3" data-tip="${e.year}: wasted party vote ${fmt(waste[i])}%"></rect><text x="${xs(i)}" y="${th - 8}" text-anchor="middle">${e.year}</text>`).join('')}
+    <polyline class="turn" points="${els.map((e, i) => `${xs(i)},${ys(e.turnout_pct || 0)}`).join(' ')}"/>${els.map((e, i) => `<circle class="turn-pt" cx="${xs(i)}" cy="${ys(e.turnout_pct || 0)}" r="5" data-tip="${e.year}: turnout ${fmt(e.turnout_pct)}%"></circle>`).join('')}</svg>`;
+  return `<div class="cols cols--2"><figure class="stack stack--s"><h3 class="h4">Seats after each election</h3>${seats}</figure>
+    <figure class="stack stack--s"><h3 class="h4">Turnout and wasted vote</h3>${turn}<figcaption class="micro muted">Line: turnout of enrolled voters. Bars: "wasted" party vote, for parties that won no seats.</figcaption></figure></div>
+    <p class="srcline" id="ppast-tip" aria-live="polite">Tap a bar or point for its number. Source: official results, Electoral Commission.</p>` }

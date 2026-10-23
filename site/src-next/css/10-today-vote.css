@@ -1,0 +1,68 @@
+/* ===== Today + Vote + Your electorate (tokens only; both themes come from the tokens) ===== */
+.notec p { margin: 0; color: var(--text-3) }
+
+/* checklist tick as a real checkbox */
+.check__tick { position: relative; display: grid; place-items: center; cursor: pointer; align-self: start; margin-top: -2px }
+.check__tick input:focus-visible ~ .tick { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 50% }
+.check__tick:hover .tick circle { stroke: var(--text-3) }
+.vsteps { margin: 0; padding-left: 1.4em; display: grid; gap: var(--s-3) }
+.vsteps li { padding-left: 2px } .vsteps li p { margin: 0 } .vsteps li p + p { margin-top: 4px }
+.vsteps li::marker { font-weight: 800; color: var(--text) }
+.vnotes { margin: 0; padding-left: 1.2em; display: grid; gap: 4px }
+.vdates { list-style: none; margin: 0; padding: 0; display: grid }
+.vdates li { display: grid; grid-template-columns: 4.2rem minmax(0, 1fr); gap: var(--s-3); padding: var(--s-2) 0; border-bottom: 1px solid var(--line) }
+.vdates li .num { font-weight: 800; font-size: var(--t-small) }
+.vdates li.is-eday .num { color: var(--signal-text) }
+.dl dd { overflow-wrap: anywhere }
+
+/* plan builder */
+.plan .chips--scroll { margin-inline: 0; padding-inline: 0 }
+.plan__lbl { font: 700 var(--t-micro)/1 var(--font-body); letter-spacing: var(--track-eyebrow); text-transform: uppercase; color: var(--text-3) }
+#pl-text { overflow-wrap: anywhere }
+
+/* glossary */
+.gloss__find { max-width: 26rem }
+.gloss { margin: 0; display: grid; border-top: var(--rule) solid var(--rule-ink) }
+.gloss__row { display: grid; gap: 4px; padding: var(--s-4) 0; border-bottom: 1px solid var(--line); scroll-margin-top: calc(var(--mast-h) + 56px) }
+.gloss__row[hidden] { display: none }
+.gloss dt { font: 800 var(--t-h4)/1.2 var(--font-display) }
+.gloss dd { margin: 0; color: var(--text-2); max-width: var(--measure) }
+@media (min-width: 720px) { .gloss__row { grid-template-columns: 14rem minmax(0, 1fr); gap: var(--s-5) } }
+
+/* ballot illustration (Vote › How MMP works) */
+.ballot-fig { margin: 0 }
+.ballot { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); border: 1.5px solid var(--text); border-radius: var(--r-m); background: var(--surface); overflow: hidden }
+.ballot__col { display: grid; grid-template-rows: auto minmax(0, 1fr); min-width: 0 }
+.ballot__col + .ballot__col { border-left: 1.5px dashed var(--line-strong) }
+.ballot__h { font: 800 var(--t-micro)/1 var(--font-body); letter-spacing: var(--track-eyebrow); text-transform: uppercase; padding: var(--s-3); border-bottom: 1px solid var(--line); background: var(--sunk) }
+.ballot__list { position: relative; height: 15rem; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin }
+.ballot__opt { display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); padding: 9px var(--s-3); border-bottom: 1px solid var(--line); font-size: var(--t-small); line-height: 1.25 }
+.ballot__name { display: flex; align-items: center; gap: 7px; min-width: 0 }
+.ballot__box { flex: none; width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--control) }
+.ballot__tick { position: absolute; right: calc(var(--s-3)); top: 0; width: 22px; height: 22px; opacity: 0; pointer-events: none; transition: top var(--dur-4) var(--ease-in-out), opacity var(--dur-2) }
+.ballot__tick.on { opacity: 1 }
+.ballot__tick .tick { width: 22px; height: 22px }
+
+/* electorate */
+.el-sugg { border-top: 0 } .el-sugg__h { padding: var(--s-2) 2px }
+.el-find > summary { font-size: var(--t-small) }
+.el-find__in { max-width: 32rem }
+button.cand { width: 100%; background: none; border: 0; border-bottom: 1px solid var(--line); text-align: left; font: inherit; color: var(--text); cursor: pointer }
+button.cand:hover .cand__name { text-decoration: underline; text-decoration-color: var(--link-underline); text-decoration-thickness: 2px }
+.cand > .i { color: var(--text-3) }
+.history > div { min-width: 0; overflow-wrap: anywhere }
+.el-print-head { display: none }
+
+@media print {
+  body:has(.el-page) .mast, body:has(.el-page) .phase, body:has(.el-page) .tabbar, body:has(.el-page) .colophon, body:has(.el-page) .subnav,
+  .el-page .finder, .el-page .el-find, .el-page .el-actions, .el-page .pagehead .lede, .el-page .disclose:not([open]), .el-page .cand > .i { display: none !important }
+  body:has(.el-page) { padding: 0 !important; background: Canvas }
+  .el-page .el-print-head { display: block; font-size: 11px; border-bottom: 1px solid CanvasText; padding-bottom: 6px }
+  .el-page .found { background: none; color: CanvasText; border: 2px solid CanvasText; padding: 12px }
+  .el-page .found h2, .el-page .found .eyebrow, .el-page .found__alt, .el-page .found__alt b, .el-page .found a { color: CanvasText }
+  .el-page .split { display: block } .el-page .split > * + * { margin-top: 16px }
+  .el-page .cand { break-inside: avoid; padding: 6px 0 } .el-page .face { width: 40px; height: 40px }
+  .el-page .bar > i, .el-page .history i { -webkit-print-color-adjust: exact; print-color-adjust: exact }
+  .el-page a { color: CanvasText }
+}
+@media (max-width: 719px) { .vhelp { grid-template-columns: minmax(0, 1fr); gap: 2px } .vhelp dd { margin-bottom: var(--s-2) } }

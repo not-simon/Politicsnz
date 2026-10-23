@@ -1,0 +1,55 @@
+/* ---------- Parties section: small additions to the design system (tokens only, both themes) ---------- */
+/* Party list rows */
+.party-row .rowlink__sub { display: block; margin-top: 4px; color: var(--text-2) }
+.party-row .ptag { font-size: 17px }
+.party-row .sw { width: 14px; height: 14px }
+
+/* Party header: one or two leader faces, same crop, slight overlap for co-leaders */
+.phead__faces { display: flex; align-items: center }
+.phead__faces > * + * { margin-left: -18px }
+@media (max-width: 719px) { .phead__faces .face--l { width: 64px; height: 64px } .phead__faces > * + * { margin-left: -14px } }
+.phead__src { text-transform: none; letter-spacing: 0; font-weight: 500 }
+.phead__src a { color: inherit }
+.party-body { display: grid; gap: var(--s-6); min-width: 0 }
+.idea__t { font-weight: 600 }
+@media (min-width: 1024px) { .party-layout--history { grid-template-areas: "main side"; grid-template-rows: auto } }
+
+/* Results bars: year · bar · value at every width */
+.rrow--yr { grid-template-columns: 3rem minmax(0, 1fr) 6.5rem; grid-template-areas: "n b v" }
+.rrow--yr .rrow__v span { display: block; margin-left: 0 }
+
+/* Policy rows */
+.pol .pol__m .ptag { font-weight: 600 }
+.disclose--pol { border-bottom: 0 }
+.disclose--pol > summary { padding: 4px 0; font-size: var(--t-small); justify-content: flex-start }
+.disclose--pol > summary::after { width: 20px; height: 20px; order: -1 }
+.disclose--pol > .disclose__body { padding-bottom: var(--s-2) }
+.pcols .pgroup .pol:last-child { border-bottom: 0 }
+.src .linkbtn { color: var(--text); font-size: 13px }
+.src-list { padding-left: 1.1em; display: grid; gap: 6px; overflow-wrap: anywhere }
+.doc-row, .pick-row { background: none; border: 0; border-bottom: 1px solid var(--line); width: 100%; text-align: left; font: inherit; color: var(--text) }
+.pick-row[aria-current="true"] { background: var(--signal-soft) }
+
+/* People */
+.alpha span { width: 30px; height: 30px; display: grid; place-items: center; font: 700 13px/1 var(--font-body); color: var(--text-3); opacity: .45 }
+.person .badge { height: 20px; font-size: 11px }
+.person-sheet { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--s-4); align-items: start }
+@media (max-width: 479px) { .person-sheet { grid-template-columns: minmax(0, 1fr) } }
+.person-roles { padding-left: 1.1em; display: grid; gap: 4px }
+
+/* Promises */
+.promises .promise { gap: 6px; padding-block: var(--s-4) }
+.rubric { list-style: none; padding: 0; display: grid; gap: 8px }
+.rubric .verdict { margin-right: 6px }
+.vdot { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--v-soft); color: var(--v) }
+.term-cell { min-width: 150px; white-space: normal }
+.term__h .ptag { font-size: 15px }
+
+/* Newsroom */
+.news-cols { row-gap: var(--s-7) }
+.pgroup--gov { border-top-style: dashed }
+.follow__row .linkbtn { text-align: left }
+a.pchip { color: var(--text) } a.pchip:not(.pchip--no) { text-decoration: none } a.pchip:hover { border-color: var(--text-3) }
+.party-body .prose, .sheet .prose { overflow-wrap: anywhere; min-width: 0 }
+.party-body .prose table, .sheet .prose table { display: block; max-width: 100%; overflow-x: auto }
+.party-body .prose pre, .sheet .prose pre { max-width: 100%; overflow-x: auto; white-space: pre-wrap }

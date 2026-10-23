@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Seats section (polls, map, parliament, coalition, calculator, results).
+   Tokens only; both themes come from 00-tokens.css. Party colour only via --pc.
+   ========================================================================== */
+
+/* Hemicycle extras: dimmed seats (coalition builder), focus and selection, caption */
+.hemi circle.is-dim { opacity: .16 }
+.hemi circle[tabindex] { cursor: pointer; outline: none }
+.hemi circle[tabindex]:focus-visible, .hemi circle.is-sel { stroke: var(--text); stroke-width: 2.4 }
+.hemi .hemi__n { font-family: var(--font-display); font-variation-settings: "wdth" var(--wdth-figure); font-weight: 800; font-size: 36px; fill: var(--text); font-variant-numeric: tabular-nums }
+.hemi .hemi__l { font: 600 13px var(--font-body); fill: var(--text-3) }
+.hemi .hemi__maj { font: 700 13px var(--font-body); fill: var(--text-2); font-variant-numeric: tabular-nums }
+
+/* Scrubber stops can be tapped too (the range takes the keyboard) */
+.scrubber__stops span { cursor: pointer }
+
+/* Map: the seat sheet's candidate faces; current row in the list view */
+.mapfaces { display: flex; flex-wrap: wrap; gap: 8px }
+.mapface { width: 40px; height: 40px }
+.table tr[aria-current="true"] td { background: var(--sunk) }
+.mapsplit { align-items: start }
+@media (max-width: 1023px) { .seatsheet--float { max-height: 62vh; overflow: auto } }
+
+/* Range legend keys (polls, results) */
+.lg-band { display: inline-block; width: 26px; height: 10px; border-radius: 3px; background: var(--viz-band); box-shadow: inset 0 0 0 1px var(--line-strong) }
+.lg-mean { display: inline-block; width: 3px; height: 14px; border-radius: 2px; background: var(--text) }
+.lg-thr { display: inline-block; width: 0; height: 14px; border-left: 1.5px dashed var(--viz-axis) }
+.rbar__band--ghost { background: color-mix(in srgb, var(--pc) 16%, transparent); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--pc) 55%, transparent) }
+
+/* Trend and past-election charts */
+.chart .dot { cursor: pointer }
+.chart .res { fill: var(--pc); stroke: var(--surface); stroke-width: 2; cursor: pointer }
+.chart .elx { fill: none; stroke: var(--pc); stroke-width: 1.5; stroke-dasharray: 4 3; opacity: .8 }
+.chart--past text { font-size: 16px }
+.chart .stk { fill: var(--pc); stroke: var(--surface); stroke-width: 1; cursor: pointer }
+.chart .majtick { stroke: var(--text); stroke-width: 2.5 }
+.chart .waste { fill: var(--viz-empty); cursor: pointer }
+.chart .turn { fill: none; stroke: var(--viz-ink); stroke-width: 3; stroke-linejoin: round }
+.chart .turn-pt { fill: var(--viz-ink); stroke: var(--surface); stroke-width: 2; cursor: pointer }
+
+/* Coalition builder: stacked bar of the chosen parties with the majority mark */
+.cbar { position: relative; display: flex; gap: 2px; height: 30px; margin-top: 26px; border-radius: var(--r-xs); background: var(--sunk) }
+.cbar > i { min-width: 0; background: var(--pc); box-shadow: inset 0 0 0 1px var(--ring); transition: flex-grow var(--dur-3) var(--ease-out) }
+.cbar > i:first-child { border-radius: var(--r-xs) 0 0 var(--r-xs) }
+.cbar > i.cbar__rest { background: transparent; box-shadow: none }
+.cbar__maj { position: absolute; top: -6px; bottom: -6px; width: 0; border-left: 2px dashed var(--text) }
+.cbar__maj span { position: absolute; bottom: 100%; left: 0; transform: translateX(-50%); padding-bottom: 2px; font: 700 12px/1 var(--font-body); color: var(--text); font-variant-numeric: tabular-nums }
+
+/* Seat calculator rows */
+.calc { display: grid; border-top: 1px solid var(--line) }
+.calc__row { display: grid; gap: 2px; padding-block: 10px; border-bottom: 1px solid var(--line) }
+.calc__head { display: flex; justify-content: space-between; align-items: center; gap: var(--s-3) }
+.calc__v { font-weight: 800; font-size: 16px; font-variant-numeric: tabular-nums }
+.calc__elec { display: flex; align-items: center; gap: var(--s-2) }
+.calc__elec > span { margin-right: auto }
+.calc__elec .iconbtn { width: 36px; height: 36px; font: 700 18px/1 var(--font-body) }
+.calc__elec output { min-width: 2ch; text-align: center; font-weight: 700 }
+
+/* Results: countdown and counting steps */
+.rcount { display: grid; gap: 6px; justify-items: start; padding-top: var(--s-2) }
+.rcount__u { font: 700 .36em var(--font-body); color: var(--text-3); margin-left: 3px; letter-spacing: 0 }
+.rsteps { display: grid; gap: var(--s-4); padding-left: 1.3em; max-width: var(--measure) }
+.rsteps li { padding-left: .3em; color: var(--text-2) }
+.rsteps li b { color: var(--text) }
+.rsteps li::marker { font-weight: 800; color: var(--text) }
+.rmap .nzmap { max-width: 520px }
+
+/* Source line that mixes text and links (the shared .src is a flex row of separate items) */
+.srcline { font-size: var(--t-micro); line-height: 1.5; color: var(--text-3); max-width: 75ch }
+.srcline a { color: var(--text-3); text-decoration-color: var(--line-strong); text-decoration-thickness: 1px }
+.srcline a:hover { color: var(--text) }
+/* Inset labels sit on a surface chip so they read over any party fill */
+.insets .inset > span { z-index: 1; background: var(--surface); color: var(--text); padding: 2px 6px; border-radius: var(--r-xs) }
+.chart .avg, .chart .elx, .chart .end, .chart .thr, .chart .eday, .chart text { pointer-events: none }
