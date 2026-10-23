@@ -591,6 +591,61 @@ function startBallot() { if (S.ballotTimer) clearInterval(S.ballotTimer); if (ma
     const top = r.offsetTop - c.list.clientHeight / 2 + r.offsetHeight / 2; c.list.scrollTo({ top: Math.max(0, top), behavior: 'smooth' }) };
   cols.forEach(place);
   S.ballotTimer = setInterval(() => { cols.forEach(c => { const n = c.list.querySelectorAll('.opt').length; if (n < 2) return; let j; do { j = Math.floor(Math.random() * n) } while (j === c.i); c.i = j; place(c) }) }, 1700) }
+
+/* ----- how to vote ----- */
+V.vote = () => { const H = G().howtovote || {}; const secs = H.sections || []; const ph = electionPhase();
+  if (!secs.length) { $('#main').innerHTML = `<section class="view"><h2>How to vote</h2><p class="empty">The guide is being verified. Meanwhile: enrol or check your details at <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or call 0800 36 76 56.</p></section>`; return }
+  let st; try { st = JSON.parse(store.get('votecheck') || '{}') } catch { st = {} }
+  const SIT = [['all', 'Just the basics'], ['first-time voters', 'My first time'], ['people who have not voted for a while', "Haven't voted in a while"], ['people away from home on election day', 'Away from home'], ['overseas voters', 'Overseas'], ['disabled voters', 'I need help to vote'], ['new residents', 'New to New Zealand']];
+  let sit = store.get('votesit') || 'all';
+  const top = { enrol: `<b>Enrolment closes midnight this Sunday, 25 October.</b> There is no enrolling on election day this year. If you're not sure you're enrolled, check now: it takes two minutes.`, advance: `<b>Voting is open now.</b> You can vote at any voting place in the country until Friday 6 November, or on election day, Saturday 7 November, 9am–7pm.`, electionday: `<b>Today is election day.</b> Voting places are open 9am–7pm. You don't need ID or your EasyVote card.`, results: `Voting has closed. Results are being counted.`, after: `The 2026 election has been held.` }[ph];
+  const matches = sec => sit === 'all' ? ['eligible', 'enrol', 'when-where', 'first-time'].includes(sec.id) : (sec.who_its_for || []).some(w => w.toLowerCase().includes(sit.split(' ')[0].toLowerCase()) || w.toLowerCase() === sit) || ['eligible', 'enrol', 'when-where'].includes(sec.id);
+  const render = () => { const shown = secs.filter(matches);
+    $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Voting in 2026, step by step</div><h2>How to vote</h2><p class="lede">Everything checked against the Electoral Commission and the law, written plainly. Pick what fits you and we'll show the steps that matter.</p></div>
+      <p class="note">${top}</p>
+      <div class="situ">${SIT.map(([k, l]) => `<button class="chip" data-sit="${esc(k)}" aria-pressed="${sit === k}">${l}</button>`).join('')}</div>
+      <div class="split"><div class="stack" style="gap:18px">
+        <div class="card stack"><h3>Your checklist</h3><div class="check">${(H.checklist || []).map((c, i) => `<label class="${st[i] ? 'done' : ''}"><input type="checkbox" data-ck="${i}" ${st[i] ? 'checked' : ''}><span><b>${esc(c.step)}</b><br><span class="small muted">${esc(c.done_when)}</span>${c.url ? ` <a class="small" href="${esc(c.url)}" target="_blank" rel="noopener">Do it</a>` : ''}</span></label>`).join('')}</div></div>
+        ${shown.map(sec => `<details class="card" ${(sec.id === 'enrol' && ph === 'enrol') || (sec.id === 'when-where' && ph !== 'enrol') ? 'open' : ''}><summary style="cursor:pointer;font:700 17px var(--f-display)">${esc(sec.title.replace(/^\d+\.\s*/, ''))}</summary><div class="stack" style="margin-top:12px">${(sec.steps || []).map((x, i) => `<div class="row" style="flex-wrap:nowrap;align-items:flex-start"><span class="stepnum">${i + 1}</span><div><p class="read" style="font-size:16px">${esc(x.text)}${x.date ? ` <span class="badge">${esc(x.date)}</span>` : ''}</p>${x.url ? `<a class="tiny" href="${esc(x.url)}" target="_blank" rel="noopener">${esc((x.source || 'source').split(',')[0])}</a>` : ''}</div></div>`).join('')}${(sec.notes || []).length ? `<ul class="small muted">${sec.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}</div></details>`).join('')}</div>
+      <div class="stack" style="gap:18px">
+        <div class="card stack"><h3>Find a voting place</h3><p class="small">The official finder shows every voting place with its opening days and hours, and lets you filter for wheelchair access. Hours differ from place to place during advance voting; on election day everywhere is open 9am–7pm.</p><div class="row"><a class="btn sun" href="${esc((H.voting_places || {}).official_finder || 'https://map.vote.nz')}" target="_blank" rel="noopener">Open the voting-place finder</a><a class="btn sm" href="${esc((H.voting_places || {}).official_finder_list_view || 'https://vote.nz')}" target="_blank" rel="noopener">List view</a></div><p class="tiny muted">You can vote at any voting place in New Zealand, not just in your own electorate.</p></div>
+        <div class="card stack"><h3>Need a hand?</h3>${Object.entries(H.contacts || {}).slice(0, 5).map(([k, v]) => `<p class="small"><b>${esc(k.replace(/_/g, ' ').replace(/^\w/, c => c.toUpperCase()))}:</b> ${esc(v)}</p>`).join('')}</div>
+        <div class="card stack"><h3>Key dates</h3><div class="hist">${(H.key_dates || []).filter(d => d.date >= '2026-10-20').map(d => `<div><span class="num muted">${esc(d.date.slice(5).replace('-', '/'))}</span><span class="dot" style="background:${d.date === '2026-11-07' ? 'var(--sun)' : 'var(--rule)'}"></span><span class="small">${esc(d.event)}</span></div>`).join('')}</div></div>
+        ${locateBlock('loc-vote')}
+        <p class="tiny muted">Verified ${esc(H.as_of || '')} against vote.nz, elections.nz and the Electoral Act 1993. Every step links to its source. ${(H.could_not_verify || []).length ? `<button class="btn ghost sm" data-page="guide/how-to-vote.md">Full guide and what we couldn't verify</button>` : ''}</p></div></div></section>`;
+    $('#main').querySelectorAll('[data-sit]').forEach(b => b.onclick = () => { sit = b.dataset.sit; store.set('votesit', sit); render() });
+    $('#main').querySelectorAll('[data-ck]').forEach(c => c.onchange = () => { st[c.dataset.ck] = c.checked; store.set('votecheck', JSON.stringify(st)); c.closest('label').classList.toggle('done', c.checked) }) };
+  render() };
+
+/* ----- electorate ----- */
+V.electorate = async slug => {
+  await loadPeople(); const E = (S.data.electorates || []).slice().sort((a, b) => a.name.localeCompare(b.name));
+  const sel = slug || store.get('myElectorate') || '';
+  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Your local vote</div><h2>Who's standing where you live</h2>
+    <p class="lede">Choose your electorate to meet the candidates. Not sure which one you're in? Look up your address at vote.nz.</p>${NOT_EC}</div>
+    ${locateBlock('loc-el')}
+    <div class="toolbar"><select id="esel" aria-label="Electorate"><option value="">Choose your electorate…</option>
+      ${['general', 'maori'].map(t => `<optgroup label="${t === 'maori' ? 'Māori electorates' : 'General electorates'}">${E.filter(e => (e.type || 'general') === t).map(e => `<option value="${esc(e.slug)}" ${e.slug === sel ? 'selected' : ''}>${esc(e.name)}</option>`).join('')}</optgroup>`).join('')}</select></div>
+    <div id="ebody"></div></section>`;
+  const draw = () => { const v = $('#esel').value; store.set('myElectorate', v); const e = E.find(x => x.slug === v); const b = $('#ebody');
+    if (!e) { b.innerHTML = E.length ? (isElectionDay() ? `<div class="grid">${E.map(x => `<button class="starter" style="padding:14px" data-elec="${esc(x.slug)}"><h4>${esc(x.name)}</h4></button>`).join('')}</div>` : `<div class="grid">${E.filter(x => x.marginal).slice(0, 9).map(x => `<button class="starter" data-elec="${esc(x.slug)}"><div class="kicker">Battleground</div><h3>${esc(x.name)}</h3><p class="small muted">${esc(x.contest_notes || '')}</p></button>`).join('')}</div>`) : '<p class="empty">Electorate guides are still being built.</p>'; return }
+    const r = e.result_2023 || {};
+    b.innerHTML = `<div class="split"><div class="stack" style="gap:16px"><div class="card stack"><h2>${esc(e.name)}</h2>${e.description ? `<p class="read">${esc(e.description)}</p><p class="tiny muted">Description from policy.nz.</p>` : ''}
+        ${(e.description_fact_check || []).length ? `<details class="small"><summary style="cursor:pointer;color:var(--primary);font-weight:700">Fact-check notes on this description (${e.description_fact_check.length})</summary><ul>${e.description_fact_check.map(f => `<li>${esc(typeof f === 'string' ? f : (f.note || f.correction || f.text || JSON.stringify(f)))}</li>`).join('')}</ul></details>` : ''}
+        ${e.contest_notes && !isElectionDay() ? `<p class="note">${esc(e.contest_notes)}</p>` : ''}</div>
+      <div class="stack"><h3>${(e.candidates || []).length} candidates</h3><div class="people">${(e.candidates || []).map(c => { const p = findPerson(c.slug, c.name) || { name: c.name, party: c.party };
+        return `<button class="person" data-person="${esc(c.slug)}">${faceHTML(p, c.party)}<span class="nm">${esc(c.name)}</span><span class="row tiny muted" style="gap:5px;justify-content:center"><span class="dot" style="background:${pcolor(c.party)}"></span>${esc(pname(c.party))}</span>${isMP(p.status) ? '<span class="status mp">Sitting MP</span>' : ''}</button>` }).join('')}</div></div></div>
+      <div class="stack" style="gap:16px">${e.sitting_mp ? `<div class="card stack"><h3>Current MP</h3><p>${esc(e.sitting_mp.name)} (${esc(pname(e.sitting_mp.party))})${e.mp_standing_again === false ? ' is not standing again.' : ''}</p></div>` : ''}
+        ${r.winner ? `<div class="card stack"><h3>Last time (2023)</h3><p class="small">${esc(r.winner)} (${esc(pname(r.party))}) won${r.majority ? ` by <b class="num">${Number(r.majority).toLocaleString('en-NZ')}</b> votes` : ''}${r.runner_up ? ` over ${esc(r.runner_up)} (${esc(pname(r.runner_up_party))})` : ''}.</p>
+          ${r.party_vote_pct ? '<p class="tiny muted">Party vote in this area</p>' : ''}${r.party_vote_pct ? Object.entries(r.party_vote_pct).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([p, v]) => `<div class="row" style="flex-wrap:nowrap"><span class="small" style="width:110px">${esc(pname(p))}</span><div class="meter" style="flex:1"><span style="width:${v}%;background:${pcolor(p)}"></span></div><span class="num tiny" style="width:44px;text-align:right">${fmt(v)}%</span></div>`).join('') : ''}
+          ${r.for_predecessor_seat || (e.predecessor_seats || []).some(x => x !== e.name) ? `<p class="tiny muted">Based on ${esc((e.predecessor_seats || []).join(', ') || r.seat || '')} before the 2025 boundary changes.</p>` : ''}</div>` : ''}
+        <button class="btn sm" data-page="electorates/${esc(e.slug)}.md" style="justify-self:start">Full electorate guide</button></div></div>`;
+    b.querySelectorAll('[data-person]').forEach(x => x.onclick = () => { const p = findPerson(x.dataset.person); if (p) openPerson(p) }) };
+  $('#esel').onchange = draw;
+  $('#ebody').addEventListener('click', e => { const b = e.target.closest('[data-elec]'); if (b) { $('#esel').value = b.dataset.elec; draw() } });
+  draw();
+};
+
 function partyOrder() {
   const gp = (G().parties || []).map(p => p.slug);
   const known = Object.keys(S.data.parties).filter(s => gp.includes(s) || P(s).policy_count > 0);
@@ -672,60 +727,6 @@ function partyResultsMini(s, big = false) {
   const max = Math.max(10, ...rows.map(([, r]) => r ? r.party_vote_pct : 0));
   return `<div class="card stack"><h3>Election results</h3><div class="stack" style="gap:6px">${rows.map(([y, r]) => `<div class="row" style="flex-wrap:nowrap"><span class="num small" style="width:44px">${y}</span><div class="meter" style="flex:1;height:12px"><span style="width:${r ? r.party_vote_pct / max * 100 : 0}%;background:${pcolor(s)}"></span></div><span class="num small" style="width:${big ? 150 : 132}px;text-align:right;white-space:nowrap">${r ? fmt(r.party_vote_pct) + '% · ' + (r.total_seats || 0) + ' seats' : 'did not stand'}</span></div>`).join('')}</div></div>`;
 }
-
-/* ----- how to vote ----- */
-V.vote = () => { const H = G().howtovote || {}; const secs = H.sections || []; const ph = electionPhase();
-  if (!secs.length) { $('#main').innerHTML = `<section class="view"><h2>How to vote</h2><p class="empty">The guide is being verified. Meanwhile: enrol or check your details at <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or call 0800 36 76 56.</p></section>`; return }
-  let st; try { st = JSON.parse(store.get('votecheck') || '{}') } catch { st = {} }
-  const SIT = [['all', 'Just the basics'], ['first-time voters', 'My first time'], ['people who have not voted for a while', "Haven't voted in a while"], ['people away from home on election day', 'Away from home'], ['overseas voters', 'Overseas'], ['disabled voters', 'I need help to vote'], ['new residents', 'New to New Zealand']];
-  let sit = store.get('votesit') || 'all';
-  const top = { enrol: `<b>Enrolment closes midnight this Sunday, 25 October.</b> There is no enrolling on election day this year. If you're not sure you're enrolled, check now: it takes two minutes.`, advance: `<b>Voting is open now.</b> You can vote at any voting place in the country until Friday 6 November, or on election day, Saturday 7 November, 9am–7pm.`, electionday: `<b>Today is election day.</b> Voting places are open 9am–7pm. You don't need ID or your EasyVote card.`, results: `Voting has closed. Results are being counted.`, after: `The 2026 election has been held.` }[ph];
-  const matches = sec => sit === 'all' ? ['eligible', 'enrol', 'when-where', 'first-time'].includes(sec.id) : (sec.who_its_for || []).some(w => w.toLowerCase().includes(sit.split(' ')[0].toLowerCase()) || w.toLowerCase() === sit) || ['eligible', 'enrol', 'when-where'].includes(sec.id);
-  const render = () => { const shown = secs.filter(matches);
-    $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Voting in 2026, step by step</div><h2>How to vote</h2><p class="lede">Everything checked against the Electoral Commission and the law, written plainly. Pick what fits you and we'll show the steps that matter.</p></div>
-      <p class="note">${top}</p>
-      <div class="situ">${SIT.map(([k, l]) => `<button class="chip" data-sit="${esc(k)}" aria-pressed="${sit === k}">${l}</button>`).join('')}</div>
-      <div class="split"><div class="stack" style="gap:18px">
-        <div class="card stack"><h3>Your checklist</h3><div class="check">${(H.checklist || []).map((c, i) => `<label class="${st[i] ? 'done' : ''}"><input type="checkbox" data-ck="${i}" ${st[i] ? 'checked' : ''}><span><b>${esc(c.step)}</b><br><span class="small muted">${esc(c.done_when)}</span>${c.url ? ` <a class="small" href="${esc(c.url)}" target="_blank" rel="noopener">Do it</a>` : ''}</span></label>`).join('')}</div></div>
-        ${shown.map(sec => `<details class="card" ${(sec.id === 'enrol' && ph === 'enrol') || (sec.id === 'when-where' && ph !== 'enrol') ? 'open' : ''}><summary style="cursor:pointer;font:700 17px var(--f-display)">${esc(sec.title.replace(/^\d+\.\s*/, ''))}</summary><div class="stack" style="margin-top:12px">${(sec.steps || []).map((x, i) => `<div class="row" style="flex-wrap:nowrap;align-items:flex-start"><span class="stepnum">${i + 1}</span><div><p class="read" style="font-size:16px">${esc(x.text)}${x.date ? ` <span class="badge">${esc(x.date)}</span>` : ''}</p>${x.url ? `<a class="tiny" href="${esc(x.url)}" target="_blank" rel="noopener">${esc((x.source || 'source').split(',')[0])}</a>` : ''}</div></div>`).join('')}${(sec.notes || []).length ? `<ul class="small muted">${sec.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}</div></details>`).join('')}</div>
-      <div class="stack" style="gap:18px">
-        <div class="card stack"><h3>Find a voting place</h3><p class="small">The official finder shows every voting place with its opening days and hours, and lets you filter for wheelchair access. Hours differ from place to place during advance voting; on election day everywhere is open 9am–7pm.</p><div class="row"><a class="btn sun" href="${esc((H.voting_places || {}).official_finder || 'https://map.vote.nz')}" target="_blank" rel="noopener">Open the voting-place finder</a><a class="btn sm" href="${esc((H.voting_places || {}).official_finder_list_view || 'https://vote.nz')}" target="_blank" rel="noopener">List view</a></div><p class="tiny muted">You can vote at any voting place in New Zealand, not just in your own electorate.</p></div>
-        <div class="card stack"><h3>Need a hand?</h3>${Object.entries(H.contacts || {}).slice(0, 5).map(([k, v]) => `<p class="small"><b>${esc(k.replace(/_/g, ' ').replace(/^\w/, c => c.toUpperCase()))}:</b> ${esc(v)}</p>`).join('')}</div>
-        <div class="card stack"><h3>Key dates</h3><div class="hist">${(H.key_dates || []).filter(d => d.date >= '2026-10-20').map(d => `<div><span class="num muted">${esc(d.date.slice(5).replace('-', '/'))}</span><span class="dot" style="background:${d.date === '2026-11-07' ? 'var(--sun)' : 'var(--rule)'}"></span><span class="small">${esc(d.event)}</span></div>`).join('')}</div></div>
-        ${locateBlock('loc-vote')}
-        <p class="tiny muted">Verified ${esc(H.as_of || '')} against vote.nz, elections.nz and the Electoral Act 1993. Every step links to its source. ${(H.could_not_verify || []).length ? `<button class="btn ghost sm" data-page="guide/how-to-vote.md">Full guide and what we couldn't verify</button>` : ''}</p></div></div></section>`;
-    $('#main').querySelectorAll('[data-sit]').forEach(b => b.onclick = () => { sit = b.dataset.sit; store.set('votesit', sit); render() });
-    $('#main').querySelectorAll('[data-ck]').forEach(c => c.onchange = () => { st[c.dataset.ck] = c.checked; store.set('votecheck', JSON.stringify(st)); c.closest('label').classList.toggle('done', c.checked) }) };
-  render() };
-
-/* ----- electorate ----- */
-V.electorate = async slug => {
-  await loadPeople(); const E = (S.data.electorates || []).slice().sort((a, b) => a.name.localeCompare(b.name));
-  const sel = slug || store.get('myElectorate') || '';
-  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Your local vote</div><h2>Who's standing where you live</h2>
-    <p class="lede">Choose your electorate to meet the candidates. Not sure which one you're in? Look up your address at vote.nz.</p>${NOT_EC}</div>
-    ${locateBlock('loc-el')}
-    <div class="toolbar"><select id="esel" aria-label="Electorate"><option value="">Choose your electorate…</option>
-      ${['general', 'maori'].map(t => `<optgroup label="${t === 'maori' ? 'Māori electorates' : 'General electorates'}">${E.filter(e => (e.type || 'general') === t).map(e => `<option value="${esc(e.slug)}" ${e.slug === sel ? 'selected' : ''}>${esc(e.name)}</option>`).join('')}</optgroup>`).join('')}</select></div>
-    <div id="ebody"></div></section>`;
-  const draw = () => { const v = $('#esel').value; store.set('myElectorate', v); const e = E.find(x => x.slug === v); const b = $('#ebody');
-    if (!e) { b.innerHTML = E.length ? (isElectionDay() ? `<div class="grid">${E.map(x => `<button class="starter" style="padding:14px" data-elec="${esc(x.slug)}"><h4>${esc(x.name)}</h4></button>`).join('')}</div>` : `<div class="grid">${E.filter(x => x.marginal).slice(0, 9).map(x => `<button class="starter" data-elec="${esc(x.slug)}"><div class="kicker">Battleground</div><h3>${esc(x.name)}</h3><p class="small muted">${esc(x.contest_notes || '')}</p></button>`).join('')}</div>`) : '<p class="empty">Electorate guides are still being built.</p>'; return }
-    const r = e.result_2023 || {};
-    b.innerHTML = `<div class="split"><div class="stack" style="gap:16px"><div class="card stack"><h2>${esc(e.name)}</h2>${e.description ? `<p class="read">${esc(e.description)}</p><p class="tiny muted">Description from policy.nz.</p>` : ''}
-        ${(e.description_fact_check || []).length ? `<details class="small"><summary style="cursor:pointer;color:var(--primary);font-weight:700">Fact-check notes on this description (${e.description_fact_check.length})</summary><ul>${e.description_fact_check.map(f => `<li>${esc(typeof f === 'string' ? f : (f.note || f.correction || f.text || JSON.stringify(f)))}</li>`).join('')}</ul></details>` : ''}
-        ${e.contest_notes && !isElectionDay() ? `<p class="note">${esc(e.contest_notes)}</p>` : ''}</div>
-      <div class="stack"><h3>${(e.candidates || []).length} candidates</h3><div class="people">${(e.candidates || []).map(c => { const p = findPerson(c.slug, c.name) || { name: c.name, party: c.party };
-        return `<button class="person" data-person="${esc(c.slug)}">${faceHTML(p, c.party)}<span class="nm">${esc(c.name)}</span><span class="row tiny muted" style="gap:5px;justify-content:center"><span class="dot" style="background:${pcolor(c.party)}"></span>${esc(pname(c.party))}</span>${isMP(p.status) ? '<span class="status mp">Sitting MP</span>' : ''}</button>` }).join('')}</div></div></div>
-      <div class="stack" style="gap:16px">${e.sitting_mp ? `<div class="card stack"><h3>Current MP</h3><p>${esc(e.sitting_mp.name)} (${esc(pname(e.sitting_mp.party))})${e.mp_standing_again === false ? ' is not standing again.' : ''}</p></div>` : ''}
-        ${r.winner ? `<div class="card stack"><h3>Last time (2023)</h3><p class="small">${esc(r.winner)} (${esc(pname(r.party))}) won${r.majority ? ` by <b class="num">${Number(r.majority).toLocaleString('en-NZ')}</b> votes` : ''}${r.runner_up ? ` over ${esc(r.runner_up)} (${esc(pname(r.runner_up_party))})` : ''}.</p>
-          ${r.party_vote_pct ? '<p class="tiny muted">Party vote in this area</p>' : ''}${r.party_vote_pct ? Object.entries(r.party_vote_pct).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([p, v]) => `<div class="row" style="flex-wrap:nowrap"><span class="small" style="width:110px">${esc(pname(p))}</span><div class="meter" style="flex:1"><span style="width:${v}%;background:${pcolor(p)}"></span></div><span class="num tiny" style="width:44px;text-align:right">${fmt(v)}%</span></div>`).join('') : ''}
-          ${r.for_predecessor_seat || (e.predecessor_seats || []).some(x => x !== e.name) ? `<p class="tiny muted">Based on ${esc((e.predecessor_seats || []).join(', ') || r.seat || '')} before the 2025 boundary changes.</p>` : ''}</div>` : ''}
-        <button class="btn sm" data-page="electorates/${esc(e.slug)}.md" style="justify-self:start">Full electorate guide</button></div></div>`;
-    b.querySelectorAll('[data-person]').forEach(x => x.onclick = () => { const p = findPerson(x.dataset.person); if (p) openPerson(p) }) };
-  $('#esel').onchange = draw;
-  $('#ebody').addEventListener('click', e => { const b = e.target.closest('[data-elec]'); if (b) { $('#esel').value = b.dataset.elec; draw() } });
-  draw();
-};
 
 /* ----- policy browser (shared) ----- */
 const TOPIC_NAMES = { economy: 'Economy & tax', health: 'Health', education: 'Education', housing: 'Housing', environment: 'Environment & climate', 'law-justice-and-government': 'Law, justice & government',
