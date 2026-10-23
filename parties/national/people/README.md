@@ -29,7 +29,7 @@ Sorted by 2026 list rank, with unranked (retiring) MPs last.
 | <img src="mark-mitchell/photo.jpg" width="48" alt=""> | [Mark Mitchell](mark-mitchell/) | MP, standing 2026 | Whangaparāoa | 8 | Minister of Police (2023–); Minister of Corrections (2023–); Minister for Emergency Management and Recovery (2023–) … |
 | <img src="gerry-brownlee/photo.jpg" width="48" alt=""> | [Gerry Brownlee](gerry-brownlee/) | MP, standing 2026 | List | 9 | Speaker of the House of Representatives (2023–); Father of the House (2022–); Deputy Leader of the National Party (2003–2006; Jul–Nov 2020) … |
 | <img src="todd-mcclay/photo.jpg" width="48" alt=""> | [Todd McClay](todd-mcclay/) | MP, standing 2026 | Rotorua | 10 | Minister for Trade and Investment (2023–); Minister of Agriculture (2023–); Minister of Forestry (2023–) … |
-| <img src="tama-potaka/photo.jpg" width="48" alt=""> | [Tama Potaka](tama-potaka/) | MP, standing 2026 | List (2026: Hamilton West) | 11 | Minister of Conservation (2023–); Minister for Māori Development (2023–); Minister for Māori Crown Relations: Te Arawhiti (2023–) … |
+| <img src="tama-potaka/photo.jpg" width="48" alt=""> | [Tama Potaka](tama-potaka/) | MP, standing 2026 | Hamilton West | 11 | Minister of Conservation (2023–); Minister for Māori Development (2023–); Minister for Māori Crown Relations: Te Arawhiti (2023–) … |
 | <img src="matt-doocey/photo.jpg" width="48" alt=""> | [Matt Doocey](matt-doocey/) | MP, standing 2026 | Waimakariri | 12 | Minister for Mental Health (2023–); Associate Minister of Health (2023–); Associate Minister of Transport (appointed 2023) … |
 | <img src="simon-watts/photo.jpg" width="48" alt=""> | [Simon Watts](simon-watts/) | MP, standing 2026 | North Shore | 13 | Minister of Climate Change (2023–); Minister of Revenue (2023–); Minister of Local Government (2025–) … |
 | <img src="penny-simmonds/photo.jpg" width="48" alt=""> | [Penny Simmonds](penny-simmonds/) | MP, standing 2026 | Invercargill | 14 | Minister of Science, Innovation and Technology (2026–); Minister for Tertiary Education (and Skills) (2023–); Minister for the Environment (2023–2026) … |
@@ -37,7 +37,7 @@ Sorted by 2026 list rank, with unranked (retiring) MPs last.
 | <img src="nicola-grigg/photo.jpg" width="48" alt=""> | [Nicola Grigg](nicola-grigg/) | MP, standing 2026 | Selwyn | 16 | Minister for the Environment (2026–); Minister for Women (2023–); Minister of State for Trade and Investment (2023–) … |
 | <img src="james-meager/photo.jpg" width="48" alt=""> | [James Meager](james-meager/) | MP, standing 2026 | Rangitata | 17 | Minister for Youth (2025–); Minister for Hunting and Fishing (2025–); Minister for the South Island (2025–) … |
 | <img src="scott-simpson/photo.jpg" width="48" alt=""> | [Scott Simpson](scott-simpson/) | MP, standing 2026 | Coromandel | 18 | Minister for ACC (2025–); Minister of Statistics (2017; 2026–); Deputy Leader of the House (2026–) … |
-| <img src="cameron-brewer/photo.jpg" width="48" alt=""> | [Cameron Brewer](cameron-brewer/) | MP, standing 2026 | List (2026: Upper Harbour) | 19 | Minister of Commerce and Consumer Affairs (2026–); Minister for Small Business and Manufacturing (2026–); Associate Minister of Immigration (2026–) … |
+| <img src="cameron-brewer/photo.jpg" width="48" alt=""> | [Cameron Brewer](cameron-brewer/) | MP, standing 2026 | Upper Harbour | 19 | Minister of Commerce and Consumer Affairs (2026–); Minister for Small Business and Manufacturing (2026–); Associate Minister of Immigration (2026–) … |
 | <img src="mike-butterick/photo.jpg" width="48" alt=""> | [Mike Butterick](mike-butterick/) | MP, standing 2026 | Wairarapa | 20 | Minister for Land Information (2026–); Associate Minister of Agriculture (2026–); MP for Wairarapa (2023–) |
 | <img src="stuart-smith/photo.jpg" width="48" alt=""> | [Stuart Smith](stuart-smith/) | MP, standing 2026 | Kaikōura | 21 | Chief Government Whip / National Senior Whip (2025–); Chair, Finance and Expenditure Committee (2023–2025); National spokesperson for civil defence, EQC, immigration, viticulture, climate change, energy (various, 2017–2023) … |
 | <img src="katie-nimon/photo.jpg" width="48" alt=""> | [Katie Nimon](katie-nimon/) | MP, standing 2026 | Napier | 26 | MP for Napier (2023–) |
@@ -73,30 +73,30 @@ Sorted by 2026 list rank, with unranked (retiring) MPs last.
 | Photo | Name | Status | Electorate | 2026 list # | Roles |
 |---|---|---|---|---|---|
 | <img src="dale-stephens/photo.jpg" width="48" alt=""> | [Dale Stephens](dale-stephens/) | 2026 candidate | Christchurch Central | 22 |  |
-| <img src="mahesh-muralidhar/photo.jpg" width="48" alt=""> | [Mahesh Muralidhar](mahesh-muralidhar/) | 2026 candidate | Tāmaki | 23 |  |
+| <img src="mahesh-muralidhar/photo.jpg" width="48" alt=""> | [Mahesh Muralidhar](mahesh-muralidhar/) | 2026 candidate | Tāmaki | 23 | Before politics: Startup executive and investor |
 | <img src="katie-milne/photo.jpg" width="48" alt=""> | [Katie Milne](katie-milne/) | 2026 candidate | West Coast-Tasman | 24 |  |
 | <img src="angee-nicholas/photo.jpg" width="48" alt=""> | [Angee Nicholas](angee-nicholas/) | 2026 candidate | Henderson | 25 |  |
-| <img src="rosemary-bourke/photo.jpg" width="48" alt=""> | [Rosemary Bourke](rosemary-bourke/) | 2026 candidate | Māngere | 39 |  |
+| <img src="rosemary-bourke/photo.jpg" width="48" alt=""> | [Rosemary Bourke](rosemary-bourke/) | 2026 candidate | Māngere | 39 | Before politics: Operations Scheduler |
 | <img src="blair-cameron/photo.jpg" width="48" alt=""> | [Blair Cameron](blair-cameron/) | 2026 candidate | Nelson | 40 |  |
-| <img src="kristine-asuncion/photo.jpg" width="48" alt=""> | [Kristine Asuncion](kristine-asuncion/) | 2026 candidate | Dunedin | 41 |  |
+| <img src="kristine-asuncion/photo.jpg" width="48" alt=""> | [Kristine Asuncion](kristine-asuncion/) | 2026 candidate | Dunedin | 41 | Before politics: People and Culture Advisor |
 | <img src="emma-chatterton/photo.jpg" width="48" alt=""> | [Emma Chatterton](emma-chatterton/) | 2026 candidate | Papakura | 51 |  |
 | <img src="ankit-bansal/photo.jpg" width="48" alt=""> | [Ankit Bansal](ankit-bansal/) | 2026 candidate | Palmerston North | 52 |  |
-| <img src="matthew-french/photo.jpg" width="48" alt=""> | [Matthew French](matthew-french/) | 2026 candidate | Taieri | 53 |  |
+| <img src="matthew-french/photo.jpg" width="48" alt=""> | [Matthew French](matthew-french/) | 2026 candidate | Taieri | 53 | Before politics: Branch Manager wills/estate |
 | <img src="candace-kinser/photo.jpg" width="48" alt=""> | [Candace Kinser](candace-kinser/) | 2026 candidate | Auckland Central | 54 |  |
 | <img src="coral-raukawa/photo.jpg" width="48" alt=""> | [Coral Raukawa](coral-raukawa/) | 2026 candidate | Te Tai Hauāuru | 55 |  |
 | <img src="tracy-summerfield/photo.jpg" width="48" alt=""> | [Tracy Summerfield](tracy-summerfield/) | 2026 candidate | Wigram | 56 |  |
 | <img src="agnes-loheni/photo.jpg" width="48" alt=""> | [Agnes Loheni](agnes-loheni/) | 2026 candidate (former MP 2019–20) | Waitākere | 57 | List MP (2019–2020); Associate spokesperson, small business and Pacific peoples (2019–2020) |
 | <img src="lalit-arya/photo.jpg" width="48" alt=""> | [Lalit Arya](lalit-arya/) | 2026 candidate | Ōtāhuhu | 58 |  |
-| <img src="matthew-evetts/photo.jpg" width="48" alt=""> | [Matthew Evetts](matthew-evetts/) | 2026 candidate | Kenepuru | 59 |  |
-| <img src="lloyd-budd/photo.jpg" width="48" alt=""> | [Lloyd Budd](lloyd-budd/) | 2026 candidate | Whangārei | 60 |  |
-| <img src="matthew-paul/photo.jpg" width="48" alt=""> | [Matthew Paul](matthew-paul/) | 2026 candidate | Port Waikato | 61 |  |
+| <img src="matthew-evetts/photo.jpg" width="48" alt=""> | [Matthew Evetts](matthew-evetts/) | 2026 candidate | Kenepuru | 59 | Before politics: Business & Technology Leader |
+| <img src="lloyd-budd/photo.jpg" width="48" alt=""> | [Lloyd Budd](lloyd-budd/) | 2026 candidate | Whangārei | 60 | Before politics: CEO Real Estate |
+| <img src="matthew-paul/photo.jpg" width="48" alt=""> | [Matthew Paul](matthew-paul/) | 2026 candidate | Port Waikato | 61 | Before politics: Environmental Consultant |
 | <img src="sunil-kumar/photo.jpg" width="48" alt=""> | [Sunil Kumar](sunil-kumar/) | 2026 candidate | Glendene | 62 |  |
 | <img src="karuna-muthu/photo.jpg" width="48" alt=""> | [Karunā Muthu](karuna-muthu/) | 2026 candidate | Wellington Bays | 63 |  |
 | <img src="alexandra-davids/photo.jpg" width="48" alt=""> | [Alexandra Davids](alexandra-davids/) | 2026 candidate | Christchurch East | 64 |  |
 | <img src="ghouse-majeed/photo.jpg" width="48" alt=""> | [Ghouse Majeed](ghouse-majeed/) | 2026 candidate | Manurewa | 65 |  |
 | <img src="jonathan-pitts/photo.jpg" width="48" alt=""> | [Jonathan Pitts](jonathan-pitts/) | 2026 candidate | Wellington North | 66 |  |
-| <img src="zabeen-lateef/photo.jpg" width="48" alt=""> | [Zabeen Lateef](zabeen-lateef/) | 2026 candidate | Remutaka | 67 |  |
-| <img src="jessica-rowe/photo.jpg" width="48" alt=""> | [Jessica Rowe](jessica-rowe/) | 2026 candidate | Kaipara ki Mahurangi | 68 |  |
+| <img src="zabeen-lateef/photo.jpg" width="48" alt=""> | [Zabeen Lateef](zabeen-lateef/) | 2026 candidate | Remutaka | 67 | Before politics: Senior Strategic Adviser |
+| <img src="jessica-rowe/photo.jpg" width="48" alt=""> | [Jessica Rowe](jessica-rowe/) | 2026 candidate | Kaipara ki Mahurangi | 68 | Before politics: Foreign Affairs |
 |  | [Troy Elliott](troy-elliott/) | 2026 candidate | List only | 69 |  |
 | <img src="robin-atwall/photo.jpg" width="48" alt=""> | [Robin Atwall](robin-atwall/) | 2026 candidate | List only | 70 |  |
 | <img src="ash-nayyar/photo.jpg" width="48" alt=""> | [Ash Nayyar](ash-nayyar/) | 2026 candidate | List only | 71 |  |
@@ -116,7 +116,7 @@ Includes MPs who left before or during the 50th–54th Parliaments. Sorted by su
 | <img src="maggie-barry/photo.jpg" width="48" alt=""> | [Maggie Barry](maggie-barry/) | Former MP | List |  | Minister of Conservation (2014–2017); Minister for Arts, Culture and Heritage (2014–2017); Minister for Senior Citizens (2014–2017) … |
 |  | [David Bennett](david-bennett/) | Former MP | Hamilton East |  | Minister for Food Safety; Veterans' Affairs; Racing (2016–2017); Associate Minister of Transport (2016–2017); Chair, Finance and Expenditure Committee (2015–2017); Transport and Industrial Relations Committee (2011–2014) … |
 | <img src="paula-bennett/photo.jpg" width="48" alt=""> | [Paula Bennett](paula-bennett/) | Former MP | Waitakere, Upper Harbour |  | Deputy Prime Minister (2016–2017); Deputy Leader of the National Party (2016–2020); Minister of Police; Women; Tourism (2016–2017) … |
-| <img src="jackie-blue/photo.jpg" width="48" alt=""> | [Jackie Blue](jackie-blue/) | Former MP | List |  | List MP (2005–2013); Equal Employment Opportunities Commissioner, Human Rights Commission (2013–2018) |
+| <img src="jackie-blue/photo.jpg" width="48" alt=""> | [Jackie Blue](jackie-blue/) | Former MP — now TOP | List |  | List MP (2005–2013); Equal Employment Opportunities Commissioner, Human Rights Commission (2013–2018) |
 | <img src="chester-borrows/photo.jpg" width="48" alt=""> | [Chester Borrows](chester-borrows/) | Deceased | Whanganui |  | Deputy Speaker (2014–2017); Minister for Courts (2011–2014); Associate Minister of Justice; Social Development (2011–2014) … |
 | <img src="simon-bridges/photo.jpg" width="48" alt=""> | [Simon Bridges](simon-bridges/) | Former MP | Tauranga |  | Leader of the National Party and Leader of the Opposition (2018–2020); Leader of the House (May–Oct 2017); Minister of Transport (2014–2017) … |
 |  | [Cam Calder](cam-calder/) | Former MP | List |  | List MP (2009–2014); Chair, Education and Science Committee (2013–2014) |

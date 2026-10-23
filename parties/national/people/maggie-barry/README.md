@@ -8,6 +8,7 @@
 | **Status** | Former MP |
 | **Now (Oct 2026)** | Did not seek re-election in 2020 (announced Nov 2019). Broadcaster and long-time NZ Listener gardening columnist; current activities not otherwise verified. |
 | **Parliaments** | 50th, 51st, 52nd |
+| **First elected** | 2011 |
 | **Born** | 1959-10-05 — Thorndon, Wellington, New Zealand |
 | **Wikipedia** | [Maggie Barry](https://en.wikipedia.org/wiki/Maggie_Barry) |
 

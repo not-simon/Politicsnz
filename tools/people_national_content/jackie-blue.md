@@ -1,13 +1,4 @@
-{"status": "former-mp",
- "party_history": [{"party": "national", "from": "2005", "to": "2026-03"}, {"party": "opportunity", "from": "2026-03", "to": null}],
- "party_label": "Formerly National (list MP 2005–2013); joined The Opportunity Party (TOP) in March 2026",
- "status_detail": "Former National list MP (2005–2013) and EEO Commissioner (2013–2018). Quit National in March 2026 over pay-equity changes and joined The Opportunity Party to mentor its leader Qiulae Wong.",
- "roles": ["List MP (2005–2013)", "Equal Employment Opportunities Commissioner, Human Rights Commission (2013–2018)"],
- "born": "1956-06-02",
- "electorates_label": "List MP (2005–2013); contested Mt Roskill 2005, 2008, 2011",
- "parliaments": [48, 49, 50],
- "first_elected": "2005",
- "sources": ["https://www.rnz.co.nz/news/political/588802/former-mp-jackie-blue-quits-national-to-join-opportunity-party", "https://en.wikipedia.org/wiki/Jackie_Blue"]}
+{"status": "former-mp", "party_history": [{"party": "national", "from": "2005", "to": "2026-03"}, {"party": "opportunity", "from": "2026-03", "to": null}], "party_label": "Formerly National (list MP 2005–2013); joined The Opportunity Party (TOP) in March 2026", "status_detail": "Former National list MP (2005–2013) and EEO Commissioner (2013–2018). Quit National in March 2026 over pay-equity changes and joined The Opportunity Party to mentor its leader Qiulae Wong.", "roles": ["List MP (2005–2013)", "Equal Employment Opportunities Commissioner, Human Rights Commission (2013–2018)"], "born": "1956-06-02", "electorates_label": "List MP (2005–2013); contested Mt Roskill 2005, 2008, 2011", "parliaments": [48, 49, 50], "first_elected": "2005", "sources": ["https://www.rnz.co.nz/news/political/588802/former-mp-jackie-blue-quits-national-to-join-opportunity-party", "https://en.wikipedia.org/wiki/Jackie_Blue"], "party": "opportunity"}
 ---
 ## Current status
 

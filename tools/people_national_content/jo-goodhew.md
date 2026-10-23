@@ -1,8 +1,4 @@
-{"status": "former-mp",
- "status_detail": "Retired from Parliament at the 2017 election; elected to the South Canterbury District Health Board in 2019 (DHBs were abolished in 2022). Current activities not detailed in the sources consulted.",
- "roles": ["Minister for the Community and Voluntary Sector (2011–2016)", "Minister for Food Safety (2014–2016)", "Minister for Senior Citizens; Women's Affairs (2011–2014)", "National junior whip (2009–2011)", "MP for Aoraki (2005–2008)", "MP for Rangitata (2008–2017)"],
- "born": "1961",
- "sources": ["https://en.wikipedia.org/wiki/Jo_Goodhew"]}
+{"status": "former-mp", "status_detail": "Retired from Parliament at the 2017 election; elected to the South Canterbury District Health Board in 2019 (DHBs were abolished in 2022). Current activities not detailed in the sources consulted.", "roles": ["Minister for the Community and Voluntary Sector (2011–2016)", "Minister for Food Safety (2014–2016)", "Minister for Senior Citizens; Women's Affairs (2011–2014)", "National junior whip (2009–2011)", "MP for Aoraki (2005–2008)", "MP for Rangitata (2008–2017)"], "born": "1961", "sources": ["https://en.wikipedia.org/wiki/Jo_Goodhew"], "parliaments": [48, 49, 50, 51], "first_elected": 2005}
 ---
 ## Current status
 

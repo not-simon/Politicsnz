@@ -8,7 +8,8 @@
 | **Status** | Current MP — standing in 2026 |
 | **Now (Oct 2026)** | Backbench list MP (since 2008); former Minister for Economic Development, Ethnic Communities and Media & Communications (2023–2025); #29 on National's 2026 list and contesting Mount Albert again. |
 | **Electorate(s)** | List MP throughout; contested Mount Albert (2009 by-election, 2011, 2014, 2017, 2020, 2023 — lost by 18 votes after recount) |
-| **Parliaments** | 50th, 51st, 52nd, 53rd, 54th |
+| **Parliaments** | 49th, 50th, 51st, 52nd, 53rd, 54th |
+| **First elected** | 2008 |
 | **Born** | 1966 — South Korea |
 | **2026 election** | list #29, standing in Mt Albert |
 | **Wikipedia** | [Melissa Lee](https://en.wikipedia.org/wiki/Melissa_Lee) |

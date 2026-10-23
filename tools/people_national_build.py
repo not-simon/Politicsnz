@@ -6,7 +6,7 @@ Inputs: raw/people/national/derived.json (tools/people_national_extract.py), raw
         '## Current status', '## Biography', '## Political career', '## Record & notable actions', '## Controversies').
 Keeps existing policy.nz fields in person.json and the <!-- GENERATED:2026-candidacy --> block in README.md verbatim.
 Never overwrites an existing photo.jpg."""
-import json, os, re, sys, io, glob, datetime
+import json, os, re, sys, io, glob, datetime, urllib.parse
 from PIL import Image
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from people_national_wiki import fetch_bytes
@@ -90,6 +90,9 @@ for slug in sorted(slugs):
     terms, electorates = [], []
     for o in dv.get('offices', []):
         c = o.get('constituency')
+        if not c and o.get('office'):
+            mm = re.match(r'Member of (?:the New Zealand )?Parliament for (.+)', o['office'])
+            if mm: c = mm.group(1).strip()
         if not c: continue
         s0, e0 = pdate(o['term_start']), pdate(o['term_end']) if o['term_end'] else None
         parts = [x.strip(' ,') for x in c.split(';') if x.strip(' ,')]
@@ -105,8 +108,9 @@ for slug in sorted(slugs):
             else:
                 nm, a, b = re.sub(r'\s*\(.*?\)', '', part).strip(), s0, e0
             terms.append((a, b))
-            if not re.search(r'\blist\b', nm, re.I) and nm.lower() not in ('national', 'national party'):
+            if nm and not re.search(r'\blist\b', nm, re.I) and nm.lower() not in ('national', 'national party'):
                 electorates.append({'electorate': nm, 'from': a, 'to': b, 'majority': o.get('majority') if not multi else None})
+    if 'electorates' in hand: electorates = hand['electorates']
     roles = []
     for o in dv.get('offices', []):
         if o.get('office'):
@@ -157,7 +161,7 @@ for slug in sorted(slugs):
     if p.get('born'): facts.append(('Born', p['born'] + (f" — {dv['birth_place']}" if dv.get('birth_place') else '')))
     if p.get('died'): facts.append(('Died', p['died']))
     if rank or p.get('electorate_2026'): facts.append(('2026 election', ', '.join(x for x in [f'list #{rank}' if rank else '', f"standing in {p['electorate_2026']}" if p.get('electorate_2026') else ''] if x)))
-    if p.get('wikipedia'): facts.append(('Wikipedia', f"[{p['wikipedia'].rsplit('/', 1)[-1].replace('_', ' ')}]({p['wikipedia']})"))
+    if p.get('wikipedia'): facts.append(('Wikipedia', f"[{urllib.parse.unquote(p['wikipedia'].rsplit('/', 1)[-1]).replace('_', ' ')}]({p['wikipedia']})"))
     L += ['| | |', '|---|---|'] + [f'| **{k}** | {v} |' for k, v in facts] + ['']
     if rank and p.get('list_rank_2026') and p['list_rank_2026'] != rank:
         L += [f"> **List rank note:** policy.nz (in the 2026 candidacy section below) gives #{p['list_rank_2026']}. The Electoral Commission's official National list gives **#{rank}**. From #14 down, policy.nz's numbering appears to still include Chris Penk, who withdrew. ([Electoral Commission](https://vote.nz/2026-general-election/voting-in-the-election/party-lists))", '']

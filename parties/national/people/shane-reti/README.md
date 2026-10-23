@@ -9,7 +9,7 @@
 | **Now (Oct 2026)** | MP for Whangārei, retiring at the 7 Nov 2026 election (announced 10 Mar 2026). Left the ministry in the 2 Apr 2026 reshuffle; granted the title 'The Honourable' for life (7 Apr 2026). Not on National's 2026 list. |
 | **Electorate(s)** | Whangārei (2023–) |
 | **Parliaments** | 51st, 52nd, 53rd, 54th |
-| **First elected** | 2020 |
+| **First elected** | 2014 |
 | **Born** | 1963-06-05 — Hamilton, New Zealand |
 | **Wikipedia** | [Shane Reti](https://en.wikipedia.org/wiki/Shane_Reti) |
 

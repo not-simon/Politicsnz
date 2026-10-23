@@ -8,7 +8,8 @@
 | **Status** | Former MP |
 | **Now (Oct 2026)** | Chancellor of the University of Canterbury (since March 2022; reappointed to council Sept 2025); chair of the Gas Industry Company (since Feb 2025); Crown facilitator at Waitaki District Council for Local Water Done Well (appointed Oct 2025); former Health NZ board member (2021–); volunteer ambulance officer. |
 | **Electorate(s)** | Selwyn (2008–2020) |
-| **Parliaments** | 50th, 51st, 52nd |
+| **Parliaments** | 49th, 50th, 51st, 52nd |
+| **First elected** | 2008 |
 | **Born** | 1971-05-19 — Auckland, New Zealand |
 | **Wikipedia** | [Amy Adams (politician)](https://en.wikipedia.org/wiki/Amy_Adams_(politician)) |
 

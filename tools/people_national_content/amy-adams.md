@@ -1,16 +1,4 @@
-{"status": "former-mp",
- "status_detail": "Chancellor of the University of Canterbury (since March 2022; reappointed to council Sept 2025); chair of the Gas Industry Company (since Feb 2025); Crown facilitator at Waitaki District Council for Local Water Done Well (appointed Oct 2025); former Health NZ board member (2021–); volunteer ambulance officer.",
- "roles": ["Minister of Justice; Courts (2014–2017)", "Minister for Social Housing; Social Investment; Associate Finance (2016–2017)", "Minister for the Environment (2012–2014)", "Minister of Internal Affairs (2011–2012)", "Minister for Communications and IT / Broadcasting (2011–2017)", "National finance spokesperson (2018–2019); shadow Attorney-General (2019)", "Chair, Finance and Expenditure Committee (2011)", "MP for Selwyn (2008–2020)"],
- "born": "1971-05-19",
- "electorates_label": "Selwyn (2008–2020)",
- "sources": ["http://electionresults.govt.nz/electionresults_2014/electorate-48.html",
-  "https://www.tvnz.co.nz/one-news/new-zealand/watch-moment-amy-adams-apologises-behalf-government-convicting-gay-men-homosexual-acts-prior-1986",
-  "https://www.rnz.co.nz/news/political/421312/live-updates-nikki-kaye-quitting-politics-amy-adams-follows",
-  "https://www.stuff.co.nz/national/health/126467568/health-new-zealand-and-mori-health-authority-board-members-announced",
-  "https://www.canterbury.ac.nz/news-and-events/news/new-chancellor-amy-adams-appointed-at-the-university-of-canterbu",
-  "https://www.beehive.govt.nz/release/canterbury-and-waikato-university-appointments",
-  "https://www.gasindustry.co.nz/about-us/news-and-publications/news/new-blog-post-2/",
-  "https://www.rnz.co.nz/news/political/576548/coalition-appoints-crown-facilitator-at-waitaki-district-council"]}
+{"status": "former-mp", "status_detail": "Chancellor of the University of Canterbury (since March 2022; reappointed to council Sept 2025); chair of the Gas Industry Company (since Feb 2025); Crown facilitator at Waitaki District Council for Local Water Done Well (appointed Oct 2025); former Health NZ board member (2021–); volunteer ambulance officer.", "roles": ["Minister of Justice; Courts (2014–2017)", "Minister for Social Housing; Social Investment; Associate Finance (2016–2017)", "Minister for the Environment (2012–2014)", "Minister of Internal Affairs (2011–2012)", "Minister for Communications and IT / Broadcasting (2011–2017)", "National finance spokesperson (2018–2019); shadow Attorney-General (2019)", "Chair, Finance and Expenditure Committee (2011)", "MP for Selwyn (2008–2020)"], "born": "1971-05-19", "electorates_label": "Selwyn (2008–2020)", "sources": ["http://electionresults.govt.nz/electionresults_2014/electorate-48.html", "https://www.tvnz.co.nz/one-news/new-zealand/watch-moment-amy-adams-apologises-behalf-government-convicting-gay-men-homosexual-acts-prior-1986", "https://www.rnz.co.nz/news/political/421312/live-updates-nikki-kaye-quitting-politics-amy-adams-follows", "https://www.stuff.co.nz/national/health/126467568/health-new-zealand-and-mori-health-authority-board-members-announced", "https://www.canterbury.ac.nz/news-and-events/news/new-chancellor-amy-adams-appointed-at-the-university-of-canterbu", "https://www.beehive.govt.nz/release/canterbury-and-waikato-university-appointments", "https://www.gasindustry.co.nz/about-us/news-and-publications/news/new-blog-post-2/", "https://www.rnz.co.nz/news/political/576548/coalition-appoints-crown-facilitator-at-waitaki-district-council"], "first_elected": 2008, "parliaments": [49, 50, 51, 52]}
 ---
 ## Current status
 

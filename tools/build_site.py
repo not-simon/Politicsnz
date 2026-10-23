@@ -124,6 +124,7 @@ for pj in sorted((ROOT / 'parties').glob('*/people/*/person.json')):
     rec = {k: p.get(k) for k in ('name', 'slug', 'party', 'status', 'status_detail', 'roles', 'parliaments', 'first_elected',
                                  'electorate_2026', 'list_rank_2026', 'leadership_label', 'wikipedia', 'party_history', 'born') if p.get(k)}
     rec['folder'] = str(d.relative_to(ROOT))
+    if p.get('list_rank_2026_official'): rec['list_rank_2026'] = p['list_rank_2026_official']
     rec['party'] = rec.get('party') or d.parent.parent.name
     rec['bio'] = bio_excerpt(readme)
     rec['has_profile'] = len(re.sub(r'<!-- GENERATED.*?END -->', '', readme, flags=re.S)) > 600
@@ -153,7 +154,8 @@ if isinstance(guide['parties'], dict): guide['parties'] = guide['parties'].get('
 if isinstance(guide['issues'], dict): guide['issues'] = guide['issues'].get('issues', [])
 electorates = load(ROOT / 'data' / 'electorates' / '2026.json', [])
 if isinstance(electorates, dict): electorates = electorates.get('electorates', [])
-bundle = {'upcoming': upcoming[0] if upcoming else None, 'guide': guide, 'electorates': electorates, 'generated': __import__('datetime').date.today().isoformat(), 'parties': parties, 'elections': elections,
+forecast = load(ROOT / 'data' / 'forecast.json', None)
+bundle = {'forecast': forecast, 'upcoming': upcoming[0] if upcoming else None, 'guide': guide, 'electorates': electorates, 'generated': __import__('datetime').date.today().isoformat(), 'parties': parties, 'elections': elections,
           'parliaments': parliaments, 'polls': polls, 'promises': promises}
 (OUT / 'bundle.json').write_text(dumps(bundle))
 (OUT / 'policies.json').write_text(dumps(policies))

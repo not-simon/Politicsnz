@@ -24,11 +24,13 @@ def elec(p, current):
     return ', '.join(es) or 'List'
 def roles(p, n=3):
     r = p.get('roles') or []
+    if not r and (p.get('questionnaire_2026') or {}).get('Before politics'):
+        return 'Before politics: ' + p['questionnaire_2026']['Before politics']
     return '; '.join(r[:n]) + (' …' if len(r) > n else '')
 def row(p, current=False):
     st = LBL.get(p['status'], p['status'])
     if p['slug'] == 'agnes-loheni': st += ' (former MP 2019–20)'
-    if p.get('party') not in (None, 'national'): st += f" — now {p['party'].replace('-', ' ').upper() if p['party'] in ('act',) else p['party'].replace('-', ' ').title().replace('Nz', 'NZ')}"
+    if p.get('party') not in (None, 'national'): st += f" — now {p['party'].replace('-', ' ').upper() if p['party'] in ('act',) else {'opportunity': 'TOP'}.get(p['party'], p['party'].replace('-', ' ').title().replace('Nz', 'NZ'))}"
     rk = p.get('list_rank_2026_official', '')
     return f"| {photo(p)} | [{esc(p['name'])}]({p['slug']}/) | {esc(st)} | {esc(elec(p, current))} | {rk} | {esc(roles(p))} |"
 H = ['| Photo | Name | Status | Electorate | 2026 list # | Roles |', '|---|---|---|---|---|---|']

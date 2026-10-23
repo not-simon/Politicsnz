@@ -9,7 +9,7 @@
 | **Now (Oct 2026)** | MP for West Coast-Tasman and Assistant Speaker (since Dec 2023), retiring at the 2026 election (announced 23 Jan 2026). Under a one-year Chinese entry ban (June 2026) after visiting Taiwan. |
 | **Electorate(s)** | List MP (Feb 2016–2017; Mar 2018–2023); West Coast-Tasman (2023–) |
 | **Parliaments** | 51st, 52nd, 53rd, 54th |
-| **First elected** | 2018 |
+| **First elected** | 2015 (list vacancy; sworn in Feb 2016) |
 | **Born** | 1958 — New Zealand |
 | **Wikipedia** | [Maureen Pugh](https://en.wikipedia.org/wiki/Maureen_Pugh) |
 

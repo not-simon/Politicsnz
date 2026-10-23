@@ -9,7 +9,7 @@
 | **Now (Oct 2026)** | MP for Port Waikato, retiring at the 2026 election (did not seek the seat or a list place; confirmed 20 Jun 2026; valedictory speech Sept 2026). Former minister (resigned Feb 2025); chair of the Justice Committee from April 2025. |
 | **Electorate(s)** | Hunua (2014–2020); Port Waikato (2020–2023, and from the 25 Nov 2023 by-election; briefly a list MP Oct–Nov 2023) |
 | **Parliaments** | 51st, 52nd, 53rd, 54th |
-| **First elected** | 2023 |
+| **First elected** | 2014 |
 | **Born** | 1962 — Whanganui, New Zealand |
 | **Wikipedia** | [Andrew Bayly](https://en.wikipedia.org/wiki/Andrew_Bayly) |
 

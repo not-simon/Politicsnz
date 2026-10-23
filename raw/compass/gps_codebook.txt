@@ -1,0 +1,6588 @@
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+Codebook
+
+www.GlobalPartySurvey.org
+Pippa Norris
+(Harvard and Sydney Universities)
+
+Version 1.0 Jan 2019
+@PippaN15
+Pippa_Norris@Harvard.edu
+Email: Administrator@GlobalPartySurvey.org
+Harvard’s Kennedy School of Government, Cambridge, MA 02138
+
+Users are requested to please use the following citation in any publications using this data:
+Pippa Norris. The Global Party Survey, 2019. V1.0 www.GlobalPartySurvey.org
+1
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+Table of Contents
+I: TECHNICAL NOTE: ........................................................................................................ 5
+AIMS ............................................................................................................................................................ 5
+METHODS ................................................................................................................................................ 5
+QUESTIONNAIRE DESIGN ............................................................................................................... 5
+PARTY COVERAGE .............................................................................................................................. 6
+COUNTRY COVERAGE ....................................................................................................................... 6
+EXPERTS ................................................................................................................................................... 7
+RESPONSE RATE ................................................................................................................................... 8
+THE CONCEPT OF POPULIST RHETORIC AND ITS MEASUREMENT........................... 9
+MEASURES AND CONSTRUCTED TYPOLOGIES .................................................................. 10
+ACKNOWLEDGMENTS .................................................................................................................... 11
+DATASETS .............................................................................................................................................. 11
+I: COUNTRY AND PARTY CODINGS ..............................................................................12
+ID_GPS ..................................................................................................................................................... 12
+ISO ............................................................................................................................................................. 12
+COUNTRY ............................................................................................................................................... 12
+PARTYNAME ......................................................................................................................................... 12
+PARTYABB .............................................................................................................................................. 12
+CPARTY.................................................................................................................................................... 12
+CPARTYABB ........................................................................................................................................... 12
+REGION ................................................................................................................................................... 12
+EXPERTS ................................................................................................................................................. 12
+MIN_EXPERTS ...................................................................................................................................... 12
+TYPE_VALUES ...................................................................................................................................... 12
+TYPE_POPULISM ................................................................................................................................. 12
+TYPE_POPULIST_VALUES .............................................................................................................. 12
+TYPE_PARTYSIZE_VOTES .............................................................................................................. 12
+TYPE_PARTYSIZE_SEATS ............................................................................................................... 13
+II: GENERAL SURVEY QUESTIONS ...............................................................................13
+V1 FAMILIARITY .................................................................................................................................. 13
+V2 PARTY UNITY ................................................................................................................................. 13
+V3 PROGRAM ........................................................................................................................................ 13
+III: IDEOLOGICAL VALUES .............................................................................................13
+V4 ECONOMIC LEFT-RIGHT.......................................................................................................... 13
+V5 L-R SALIENCY ................................................................................................................................ 13
+V6 SOCIAL LIBERALISM-CONSERVATISM ............................................................................... 13
+V7 SOCIAL VALUES SALIENCY ..................................................................................................... 14
+V8 POPULIST RHETORIC ................................................................................................................. 14
+V9 POPULIST SALIENCY .................................................................................................................. 14
+IV: POLICY ISSUES .............................................................................................................14
+V10 IMMIGRATION ............................................................................................................................ 14
+V11 SPENDING V. TAX ..................................................................................................................... 14
+V12 ENVIRONMENT .......................................................................................................................... 14
+V13 NATIONALISM ............................................................................................................................. 15
+V14 WOMEN’S RIGHTS ..................................................................................................................... 15
+V15 ETHNIC MINORITY RIGHTS ................................................................................................. 15
+V16 LIBERAL DEMOCRACY ............................................................................................................ 15
+V17 CLIENTALISM .............................................................................................................................. 15
+V: POPULIST RHETORIC .................................................................................................15
+V18 WILL OF THE PEOPLE ............................................................................................................. 15
+V19 PEOPLE SHOULD DECIDE .................................................................................................... 16
+V20 POLITICIANS CORRUPT .......................................................................................................... 16
+V21 STRONGMAN RULE .................................................................................................................. 16
+2
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+VI: PERSONAL BACKGROUND OF THE EXPERTS .....................................................16
+YOB ........................................................................................................................................................... 16
+GENDER ................................................................................................................................................. 16
+BORN ........................................................................................................................................................ 16
+CITIZEN .................................................................................................................................................. 16
+PARTYSUPPORT................................................................................................................................... 16
+IDEOLOGY ............................................................................................................................................ 16
+DIFFICULTY .......................................................................................................................................... 17
+LANGUAGE ........................................................................................................................................... 17
+VII: PARTY METADATA ....................................................................................................17
+Elec_code .................................................................................................................................................. 17
+Elec_year ................................................................................................................................................... 17
+PartyPerVote ............................................................................................................................................. 17
+PartyPerSeats............................................................................................................................................. 17
+ENEP ......................................................................................................................................................... 17
+ENPP ......................................................................................................................................................... 17
+LSQINDEX.............................................................................................................................................. 17
+CHES_lrecon ............................................................................................................................................ 17
+CHES_lrecon_salience ............................................................................................................................ 17
+CHES_galtan ............................................................................................................................................ 17
+CHES_galtan_salience............................................................................................................................. 17
+CHES_immigrate_policy ........................................................................................................................ 17
+CHES_ethnic_minorities ........................................................................................................................ 17
+CHES_people_vs_elite ........................................................................................................................... 17
+CHES_experts .......................................................................................................................................... 17
+CHES_vote ............................................................................................................................................... 17
+CHES_seat ................................................................................................................................................ 17
+CHES_electionyear .................................................................................................................................. 17
+CHES_family ............................................................................................................................................ 17
+CHES_govt ............................................................................................................................................... 18
+PG_family.................................................................................................................................................. 18
+PG_left_right ............................................................................................................................................ 18
+PG_state_market ...................................................................................................................................... 18
+PG_liberty_authority ............................................................................................................................... 18
+PG_eu_anti_pro ....................................................................................................................................... 18
+Popu_List .................................................................................................................................................. 18
+WVS_LR_PARTYVOTER .................................................................................................................... 18
+WVS_LibCon_PartyVoter ...................................................................................................................... 18
+WVS_Mistrust_PartyVoter ..................................................................................................................... 18
+WVS_LR_MedianVoter .......................................................................................................................... 18
+WVS_LibCon_MedianVoter .................................................................................................................. 18
+LRdistancemedianvoter ........................................................................................................................... 18
+LCdistancemedianvoter ........................................................................................................................... 18
+LRdistanceownvoters .............................................................................................................................. 18
+LCdistanceownvoters .............................................................................................................................. 18
+ID_ParlGov .............................................................................................................................................. 18
+ID_PartyFacts ........................................................................................................................................... 18
+ID_CHES .................................................................................................................................................. 19
+ID_ESS ...................................................................................................................................................... 19
+ID_CMP .................................................................................................................................................... 19
+ID_castles_mair ........................................................................................................................................ 19
+ID_huber_inglehart ................................................................................................................................. 19
+ID_ray ........................................................................................................................................................ 19
+ID_benoit_laver ....................................................................................................................................... 19
+ID_EES ..................................................................................................................................................... 19
+ID_WVS .................................................................................................................................................... 19
+3
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+VIII: COUNTRY METADATA........................................................................................... 20
+CountryName ........................................................................................................................................... 20
+ID_COW ................................................................................................................................................... 20
+ID_VDem ................................................................................................................................................. 20
+Region_9 .................................................................................................................................................... 20
+Region_10 .................................................................................................................................................. 20
+Region_19 .................................................................................................................................................. 20
+OECD ........................................................................................................................................................ 20
+Polity........................................................................................................................................................... 20
+Polity2 ........................................................................................................................................................ 20
+FH_Regime ............................................................................................................................................... 20
+FH_PoliticalRights ................................................................................................................................... 20
+FH_CivilLiberties ..................................................................................................................................... 21
+Area ............................................................................................................................................................ 21
+Pop1990 ..................................................................................................................................................... 21
+Pop2000 ..................................................................................................................................................... 21
+Pop2018 ..................................................................................................................................................... 21
+GDP ........................................................................................................................................................... 21
+Longevity ................................................................................................................................................... 21
+Corruption ................................................................................................................................................. 21
+Electoral_Integrity.................................................................................................................................... 21
+VDem_regime .......................................................................................................................................... 21
+v2x_polyarchy ........................................................................................................................................... 21
+v2x_libdem ................................................................................................................................................ 21
+v2xel_frefair .............................................................................................................................................. 21
+v2elfrfair..................................................................................................................................................... 21
+v2elfrfair_osp ............................................................................................................................................ 21
+v2elfrfair_ord ............................................................................................................................................ 21
+v2elloelsy.................................................................................................................................................... 21
+v2elparlel .................................................................................................................................................... 22
+v2elncbpr ................................................................................................................................................... 22
+v2eltrnout .................................................................................................................................................. 22
+v2elvaptrn .................................................................................................................................................. 22
+v2psbars ..................................................................................................................................................... 22
+v2psbars_osp ............................................................................................................................................ 22
+v2psbars_ord ............................................................................................................................................. 22
+v2psorgs ..................................................................................................................................................... 22
+v2psorgs_osp ............................................................................................................................................ 22
+v2psorgs_ord ............................................................................................................................................ 22
+v2psprbrch................................................................................................................................................. 22
+v2psprbrch_osp ........................................................................................................................................ 22
+v2psprbrch_ord ........................................................................................................................................ 22
+v2psprlnks ................................................................................................................................................. 22
+v2psprlnks_osp ......................................................................................................................................... 22
+v2psprlnks_ord ......................................................................................................................................... 23
+v2psplats .................................................................................................................................................... 23
+v2psplats_osp............................................................................................................................................ 23
+v2psplats_ord ............................................................................................................................................ 23
+v2xnp_client .............................................................................................................................................. 23
+v2xps_party ............................................................................................................................................... 23
+IX: ROBUSTNESS TESTS .................................................................................................. 24
+X: REFERENCES ............................................................................................................... 29
+APPENDIX A: LIST OF POLITICAL PARTIES ...............................................................31
+
+4
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+I: TECHNICAL NOTE:
+AIMS
+The Global Party Survey, 2019 (GPS) is an international expert survey directed by Pippa Norris
+(Harvard University). Drawing on 1,861 party and election experts, the Global Party Survey, 2019
+estimates key ideological values, issue positions, and populist rhetoric for 1,043 parties in 163 countries.
+The research project is designed to replicate the tried and tested methods of expert surveys, while
+simultaneously innovating and broadening the research agenda in several important ways.
+•
+•
+•
+•
+
+By expanding the geographic scope of coverage, including parties and countries in all inhabited
+continents, it allows users to move beyond the traditional focus on Europe.
+By incorporating continuous scaled measures of populist rhetoric, as well as ideological values,
+analysts can compare the degree to which all parties commonly adopt this discourse, not
+simply confining analysis to those designated a priori in binary categories as ‘populist’ parties.
+By including party codes used in many other related cross-national studies, the dataset
+facilitates easy merger for multilevel analysis, such as by comparing party positions with their
+institutional characteristics or with the attitudes of their voters.
+At the same time, however, sufficient continuity is preserved with prior research measuring
+party positions to facilitate comparison with these established datasets. Several robustness and
+validity tests increase confidence in the external validity of the new study.
+
+METHODS
+Expert surveys have been widely adopted within the global scientific and policy communities and used
+for constructing multiple international and domestic indicators, ratings and rankings, exemplified by the
+World Bank Institute Good Governance indices, the Varieties of Democracy project, Transparency
+International’s Corruption Perception Index, and the Electoral Integrity Project (Cooley and Snyder
+2015).
+This study builds in particular upon previous expert surveys designed to identify party ideological and
+issue positions. This includes research projects by Castles and Mair (1984), Huber and Inglehart in 42
+societies (1995), Ray (1999), and the series of Chapel Hill Expert Survey (CHES) conducted every four
+years since 1999 (Hooghe et al 2010; Bakker et al. 2012, 2015). For more details and technical
+documents, see www.GlobalPartySurvey.org
+QUESTIONNAIRE DESIGN
+The questionnaire for the Global Party Survey was administered through the Qualtrics platform. It
+includes 21 core items measured using ten-point continuous scales (illustrated in Figure 2 below). These
+were designed to identify each party’s current ideological values, their position on several issues such as
+immigration, nationalism and environmental protection, and their use of populist rhetoric. A copy can
+be downloaded from the project website.
+As well as the core items, the GPS survey also asked questions about the expert’s nationality and
+citizenship, gender, age, party preferences, and their self-reported L-R ideology, as well as their
+familiarity with each of the parties, and the degree of difficulty they experienced in completing the
+survey. Many more items were considered but eventually dropped as the final design sought to establish
+a judicious trade-off which balanced the length of the questionnaire with the likely fall in the response
+rate from using a longer survey. The questionnaire was professionally translated and made available
+5
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+through an optional drop-down menu in six major world languages (English, French, German, Spanish,
+Russian, Mandarin).
+Figure 1: Illustrating the question design format
+
+PARTY COVERAGE
+The survey sought to gather information about the position of parliamentary political parties
+represented in the lower (or single) House of Parliament/Congress in each country under comparison,
+thereby excluding parties which only contested presidential, supranational, and regional/local elections.
+It is challenging to identify a comprehensive, reliable and up-to-date list of political parties worldwide,
+however, as there is no single published resource. In addition, lists can quickly become out-of-date as
+the names (and acronyms) of loosely institutionalized ‘flash’ parties and unstable party coalitions can
+shift rapidly over time. Leadership parties, formed as loose campaigning factions around the time of
+an election, but with minimal organizational structure or mass membership, are common in many
+developing countries. Determining a reliable list of the largest ‘party blocs’ is challenging in states with
+formal legal bans on party organizations and many independent candidates, such as Kuwait.
+The project compiled a list of parliamentary parties (and their share of seat and vote) for each country
+running for election to the lower house of the legislature using the IFES Election Guide. The list of full
+party names (in English) for up to ten of the largest parties (with the highest number of legislators) was
+automatically merged as a field into the Qualtrics questionnaire and tailored for each country. Normally
+the party list reflected the legislative election closest to the starting date of the survey (Nov 2019), but
+in some cases the list in our records was compiled from an earlier election (specified in the dataset).
+In one or two cases, like Italy, the names of the main party coalitions on the Center-Left and CenterRight were used. In future surveys this practice will be discontinued by including the names of the
+individual parties, not least because of the volatility of coalitions over successive contests. In total, the
+survey covers 1,043 parties worldwide (listed in Appendix A).
+To facilitate merging and multilevel analysis, the dataset includes party metadata, such as each party’s
+share of votes and seats in recent national elections. Standard party identification codes allow users to
+match the GPS data easily with several other party-level datasets, such as Party Facts (Doring and Regel
+2019), CHES, the Political Party Database (Scarrow, Webb and Pogunte 2017), and ParlGov. Similarly
+integrated codes in the dataset also allow users to link GPS estimates of party values with party voters
+in cross-national surveys of the mass electorate, including the European Social Survey and World Values
+Survey.
+COUNTRY COVERAGE
+The project sought to cover independent nation-states worldwide, excluding micro-states (with
+populations less than 100,000, and those without de jure popular elections for the lower house of the
+6
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+national parliament and/or severe party bans. Several other cases were dropped from the final dataset
+due to non-response. The countries in the study are listed in Figure 2.
+Figure 2: Country coverage
+#
+194
+
+Definition and source
+Membership of the United Nations (plus
+Taiwan)
+
+Micro-states (pop less than 100,000)
+
+16
+
+Andorra, Dominica, Kiribati, Liechtenstein,
+Marshall Islands, Micronesia, Monaco, Nauru,
+Palau, San Marino, Seychelles, St. Lucia, St
+Vincent & Grenadines, St. Kitts and Nevis,
+Tonga, and Tuvalu.
+
+Without de jure direct (popular)
+elections for the lower house of the
+national legislature and/or severe legal
+bans on parties
+
+7
+
+Brunei Darussalam, China, Oman, Qatar, UAE,
+Democratic People’s Republic of Korea, and
+Saudi Arabia
+
+Lack of response
+
+8
+
+Cape Verde, CAR, Honduras, Liberia, Niger,
+Senegal, South Sudan, Sri Lanka
+
+Covered in the 2019 GPS dataset
+
+163
+
+84% of all nation-states
+
+Total number of independent nationstates
+Excluded categories
+
+The dataset includes country-level metadata, using the latest year available (usually 2018), including
+measures of levels of liberal and electoral democracy, the Regimes of the World typology, the type of
+electoral system, and several institutional party characteristics from the Varieties of Democracy project
+(Version 9.0), measure of democracy from Polity IV and Freedom House, as well as national-level
+measures from the World Bank Development Indicators of economic development (per capita GDP),
+area, and population size. Regional codes are included along with the Electoral Integrity Project index
+of Perceptions of Electoral Integrity. It also includes the standard country codes from the Correlates of
+War (COW) project, to facilitate merging other national-level data.
+EXPERTS
+Participation in the survey was by personal invitation only. Experts were defined as scholars of parties
+and elections selected for each country drawing upon the global database established since 2012 by the
+Electoral Integrity Project, checked and verified according to several criteria. Experts were defined as
+political scientists (or other social scientist in a related discipline) who had demonstrated knowledge of
+the electoral process and parties in a particular country, such as through publications, membership of a
+relevant research group, or university employment. This pool was supplemented in a few smaller
+countries, like island states in the Caribbean, by several additional scholarly party experts suggested by
+respondents using the ‘snowball’ technique.
+Expert surveys have greatly expanded in use during the last decade (Cooley and Snyder 2015). Like
+other approaches, however, there are many sources of potential bias in the estimates they produce
+(Martinez i Coma and Van Ham 2015). This includes errors of judgment arising from assessments of
+complex multidimensional phenomenon, varied contexts for party competition under different regimes,
+and the depth of scholars’ expertise on the topic.
+One classic issue which has arisen in cross-national surveys ever since Almond and Verba’s Civic
+Culture (1963) arises from the appropriate benchmarks which people may employ in making their
+assessments, for example whether current party positions are judged relative to their past positions, or
+compared with other parties within a country, or against other societies. The external validity of the
+measures can be examined most effectively by comparing the GPS estimates with similar independent
+studies, included in the dataset (see section IX: Robustness tests).
+To test for internal validity, the GPS expert-level dataset allows users to analyze whether estimates of
+party positions were systematically influenced by the background and personal characteristics of
+participants, such as their nationality, ideological leanings, gender, or age (Curini 2009).
+7
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+Two-thirds of respondents were born in their country of expertise, while three quarters are currently a
+citizen of that country. One quarter of the experts in the survey were female, reflecting gender disparities
+in the discipline. Respondents were asked to identify party positions in one country reflecting their
+primary area of published expertise, irrespective of their nationality or institutional location. The survey
+included both resident (domestic) and international experts (e.g. a scholar teaching at an American
+university who specializes in Egyptian or Liberian politics).
+Figure 3: Experts’ self-assessed difficult of completing the survey
+
+Overall, when asked about the difficulty or ease of completing the survey on a ten-point scale, most
+reported positively that it was fairly easy (Mean 7.82). There was usually greater familiarity with larger
+parties, however, suggesting caution is advisable when analyzing estimates for the smaller parties.
+The mean position of experts on the self-reported 10-point Left-Right ideological scale was 4.75, just
+below the mid-point.
+Figure 4: Expert’s left-right ideological position
+
+RESPONSE RATE
+Personalized survey invitations were distributed by email to experts, and responses collected online,
+through the Qualtrics platform. Fieldwork was conducted for one month, with an initial personal
+invitation to individual experts followed by two reminders, from 19 November to 20 December 2019.
+
+8
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+Responses were received from 1,891 experts in total, representing an overall response rate of 23%. On
+average, each country included replies from around a dozen experts, but the numbers varied a great
+deal.
+Like V-Dem, the GPS study aimed to include replies from a minimum of five experts per CountryParty. Sometimes we received fewer replies, however, especially in smaller developing societies in Africa
+and the Middle East; in states governed by autocratic regimes restricting freedom of expression; and in
+countries where fewer political scientists specialize in the study of parties and elections, and in ‘all of
+the above’. For example, on average around 19 experts responded to assess parties in liberal
+democracies. By contrast, around five expert estimates were gathered in many closed autocracies.
+There are obviously tensions between the desire for the broadest global coverage and the need for
+considerable caution about the reliability of the estimates for societies with few responses, generating
+large confidence intervals. Users can take several steps with these particular cases.
+Firstly, the number of experts per country is included as a variable in the dataset (Experts). Users may
+choose to adopt any minimum threshold. For example, the V-Dem project advises users to drop
+country cases in their dataset with three or fewer expert estimates. The variable (Min_experts) can be
+selected in GPS to filter out cases below 4.9 experts, removing 193 party estimates.
+Users may also choose to filter or weight the estimates based on several indicators. This includes a tenpoint scaled measure of expert familiarity with each political party in each country, which was included
+as the first item in the questionnaire, along with a 0-10 point scaled measure of the difficulty which experts
+reported at the end of the questionnaire after completing the survey.
+Finally, analysts may choose to aggregate across country cases, for example to compare world regions
+or party families.
+
+THE CONCEPT OF POPULIST RHETORIC AND ITS MEASUREMENT
+An important debate concerns the conceptualization, operationalization, and measurement of
+populism. Building upon our previous work (Norris and Inglehart 2019, Norris 2019), populism is
+conceptualized in the survey at a minimum as a form of discourse or rhetoric making two core claims,
+namely that: (i) the only legitimate democratic authority flows directly from the people, and (ii)
+establishment elites are corrupt, out of touch, and self-serving, betraying the public trust and thwarting
+the popular will. As discussed elsewhere, we argue:
+“In the political sphere, populist arguments challenge the legitimacy of intermediate power structures
+linking citizens and the state in liberal democracies, including that of elected representatives,
+mainstream political parties, elected assemblies and parliaments, as well as the courts, judges, and
+rule of law, and public sector bureaucrats and mainstream media, along with the broader range of
+policy technocrats, professional think-tanks, academic opinion-formers, and scientific consultants.
+The roots of populism can be traced back to concepts of direct democracy and the voice of the people
+in Jean-Jacques Rousseau’s The Social Contract (1762).
+In this regard, populism is treated not a distinct type of leadership, or even a family of political
+parties, as is often assumed, but rather as a discourse about governance that can be adopted by actors
+across the entire ideological spectrum. We reject the notion that populism, in itself, makes other
+ideological claims about substantive or programmatic claims about what should be done; instead it
+is a rhetoric about the rightful location of governance authority in any society.
+In Western democracies, the most common antithesis of populism is ‘Pluralism’, emphasizing the
+importance of tolerating multiculturalism and social diversity in society, governance through liberal
+democratic institutions, the role of checks and balances on executive powers, and respect for minority
+rights to counterbalance the majoritarian voice of the people.
+In non-democratic countries, however, populism may also be contested by those advocating ‘elitism’ –
+claiming that power should rest in the hands of a single leader, a leadership elite, or a predominant
+party.” (Norris and Inglehart 2019).
+Populism is therefore treated minimally in the GPS survey as a rhetoric making claims about the first
+order principles concerning the source of legitimate authority, emphasizing ‘power to the people’ and
+9
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+presenting a critique of the establishment, rather than presenting a set of coherent ideological beliefs
+about substantive public policies on issues like the economy, immigration, or nationalism. The
+chameleonic rhetoric is adaptable, and it is colored by second order principles, including varied social
+and economic values and programmatic policy positions.
+As a form of rhetorical appeal, the contrast between words and actions is a source of considerable
+misunderstanding and confusion. Parties and leaders who are progressive liberals seek to put populist
+discourse into action, redistributing power and authority to those previously excluded from decisionmaking processes, expanding democracy to the ‘left-behind’. More commonly, however, in practice
+populist discourse is deployed cynically as a façade to disguise the growing concentration of power in
+the hands of executive leaders, who claim to speak for the ‘people’, while dismantling pluralist checks
+and balances from counter-veiling institutions, including the courts, media, opposition parties, and the
+legislature, and simultaneously denigrating the rights of groups defined as outside the majority of ‘the
+people’. As such, an important distinction differentiates authoritarian-populists (where strongman
+leaders work to defend deeply conservative social values) versus libertarian-populists (advocating
+progressive social values and more inclusive forms of decision-making) (Norris and Inglehart 2019).
+The core measure operationalizing the minimalist conceptualization of populist rhetoric, treated as
+antithetical to pluralist rhetoric, uses the following measure (V8_scale):
+“Parties can also be classified by their current use of POPULIST OR PLURALIST rhetoric.
+POPULIST language typically challenges the legitimacy of established political institutions and
+emphasizes that the will of the people should prevail.
+By contrast, PLURALIST rhetoric rejects these ideas, believing that elected leaders should govern,
+constrained by minority rights, bargaining and compromise, as well as checks and balances on
+executive power.
+Where would you place each party on the following scale?
+0 Strongly favors pluralist rhetoric…10 Strongly favors populist rhetoric”
+Given continuing debate in the research literature, however, rather than relying upon a single measure,
+the GPS survey includes several alternative indicators of populism, many used in other surveys,
+including V9 (the salience of populist rhetoric), V18 (Will of the people), V19 (People should decide),
+V20 (Politicians corrupt), and V21 (Strongman rule)). This allows users to select the particular variables
+and to construct composite measures closest to alternative conceptual frameworks. By combining
+measures, the dataset helps users to identify varieties of populists, along with their underlying values.
+Table 8 tests how far these items are correlated with independent estimates of populist parties.
+MEASURES AND CONSTRUCTED TYPOLOGIES
+There remains debate about the pros and cons of using categories or continuous measures. The survey
+employs 0 to 10-point scales throughout the questionnaire, providing continuous measures. This
+facilitates more fine-grained estimates than categories, such as how far parties favor spending or tax
+cuts, nationalism or multiculturalism, or liberal or conservative social values. Often, party positions are
+far from black and white, and scales allow experts to take account of subtle variations among parties
+and shifts over time.
+Moreover, scales can always be converted subsequently into categories, for example to classify the most
+leftwing parties on the economy or the most egalitarian position towards women’s rights. The core
+measures in the survey, -- estimating the position of parties towards economic values (V4), social values
+(V6), and their use of populist rhetoric (V8) – are offered to analysts as continuous 10-point scales,
+binary (0/1) categories, and as 1-4 ordinal categories.
+Following the minimalist conceptualization in Norris and Inglehart (2019), populist rhetoric is measured
+in V8_scale as a matter of degree. The evidence suggests that the language can be adapted and used by
+multiple types of parties and leaders across the political spectrum. This marks a major point of departure
+
+10
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+from previous studies treating ‘populists’ as a distinct type of party family, leadership style, or ideology,
+a practice conventional in the research literature.
+Nevertheless, the Populist rhetoric scale can also be categorized (V8_Bin and V8_Ord) to analyze the
+characteristics of ‘moderate’ and ‘strongly’ populist parties, for users preferring categories and
+typologies. Robustness tests (see p.24) suggest that the category of ‘strongly populist parties’ based on
+this survey correlates closely with independent lists of ‘populist’ parties in Europe.
+The dataset offers users several alternative party typologies constructed by categorizing variables.
+Party Values (Type_Values)
+The Values typology combines the types of economic values (V4_bin) and types of social values (V6-Bin).
+Economic and social values are often closely correlated in many West European societies, but elsewhere
+these can often be observed to diverge.
+Populism (Type_Populism)
+The Populism typology is generated by categorizing the populist rhetoric scale (V8) into four ordinal
+groups (V8_Ord). This assumes that the degree of populist and pluralist rhetoric can vary among parties
+and leaders, rather than being a fixed and distinct type of party family.
+Populist Values (Type_Populist_Values)
+The Populist Values typology combines the type of pluralist or populist rhetoric used by each party with
+their liberal or conservative social values.
+Party-Voter comparisons
+The dataset also includes measures of the location of party voters on functionally equivalent Left-Right
+and Liberal-Conservative scales, derived from the World Values Survey/European Values Survey
+Waves 1-7. Users can compare the GPS expert estimates of party positions with the location of their
+own party voters, and the position of the median voter in each country, as well as measures calculating
+the distance of parties on these scales from their own voters and the median voter in each country.
+ACKNOWLEDGMENTS
+The survey was directed by Pippa Norris at Harvard and administered by Laura Welty at the University
+of Sydney. It was funded by the Australian Research Council Laureate award as part of the Electoral
+Integrity Project. The EIP expert database has been compiled since 2012 by a team of research assistants
+in Sydney led by several survey managers including Max Grömping, Ferran Martinez I Coma,
+Alessandro Nai, Richard Frank, and Thomas Wynter.
+The research design was developed in conjunction with colleagues at the Chapel Hill Expert Survey
+(CHES), Liesbet Hooghe, Gary Marks and Ryan Bakker, the team conducting a similar survey in Europe
+and Latin America. The study also benefited from several other scholars of parties and elections who
+were consulted about the early draft survey design and who generously offered invaluable suggestions,
+including Mark Franklin, David Farrell, Ioannis Andreadis, Tim Bale, and Susan Scarrow.
+Social media comments about the estimates from data visualization scatterplots in specific countries
+also proved very helpful for scrutinizing the face-validity of the results in particular cases. Further
+comments and corrections remain welcome for subsequent releases of the dataset.
+Finally, the research could not have been completed without the time and effort which all the experts
+invested in completing the survey – and everyone’s participation is greatly appreciated.
+DATASETS
+In February 2020, Version 1.0 of the dataset has been released in Excel, SPSS, Stata and .csv formats at
+the level of experts and parties, along with this Codebook and the Questionnaire. Files can be
+downloaded from: https://dataverse.harvard.edu/dataverse/GlobalPartySurvey. Any corrections will
+be amended in subsequent versions.
+Pippa Norris -- Cambridge, MA
+11
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+I: COUNTRY AND PARTY CODINGS
+Unique numeric code for each party in the GPS dataset
+ID_GPS
+
+1 to 1051
+
+ISO
+
+Standard country code (ISO 3166-1)
+https://www.iso.org/standard/63545.html
+
+3-letter code E.g. AFG
+
+COUNTRY
+
+Country name
+
+E.g. Afghanistan
+
+PARTYNAME
+
+Party name in English
+
+E.g. Islamic Society
+
+PARTYABB
+
+Party name abbreviation
+
+E.g. SPD
+
+CPARTY
+
+ISO+ full party name in English
+
+E.g. AFG_Islamic
+Society
+
+CPARTYABB
+
+ISO+ party acronym
+
+E.g. AFG_Jamiat
+
+REGION
+
+World Region (Politico-geographic) V-Dem9
+(https://www.v-dem.net/en/ )
+
+1 E. Europe & C. Asia
+2 Latin Am. & Carib
+3 MENA
+4 Sub-Saharan Africa
+5 W. Europe, N. America,
+Australia/NZ
+6 Asia-Pacific(not Aus/NZ)
+
+EXPERTS
+
+Number of expert responses per country
+
+#
+
+MIN_EXPERTS
+
+Use to select country cases with a minimum number of at
+least 5 expert assessments
+CONSTRUCTED CATEGORICAL TYPES
+The Party Values typology combines two binary variables for
+each party, namely whether types of economic values are Left
+(pro-state) or Right (pro-market) (V4_bin) and whether types
+of social values are Liberal or Conservative (V6-Bin). See
+below for the variable questions (V4 and V6) and coding.
+
+0. Less than 4.9
+1. Five or more
+
+TYPE_POPULISM
+
+The Party Populism typology categorizes whether parties
+favor the use of pluralism or populist rhetoric categorized
+into four groups (V8_Ord). See below for the variable
+question (V8) and coding.
+
+1. Strongly Pluralist
+2. Moderately Pluralist
+3. Moderately Populist
+4. Strongly Populist
+
+TYPE_POPULIST_VAL
+UES
+
+The Populist Values typology combines the categories of
+rhetoric (V8_Bin) and the social values (B6_Bin) for each
+party. See below for the variable questions and coding.
+
+1. Pluralist-Liberal
+2. Pluralist-Conservative
+3. Populist-Liberal
+4. Populist-Conservative
+
+TYPE_PARTYSIZE_VO
+TES
+
+The size of electoral parties is gauged by categorizing their
+share of the vote in contests for the lower house of the
+national parliament/congress for Elec_Code
+
+1. Fringe (0 thru 2.99%)
+2. Minor (3.0 thru
+9.99%)
+3. Major (10.0 thru high)
+
+TYPE_VALUES
+
+12
+
+1. Left-Liberal
+2. Left-Conservative
+3. Right-Liberal
+4. Right-Conservative
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+TYPE_PARTYSIZE_SEA
+TS
+
+www.GlobalPartySurvey.org
+
+The size of parliamentary parties is gauged by categorizing
+their share of seats in the lower house of the national
+parliament/congress for Elec_Code
+
+II: GENERAL SURVEY QUESTIONS
+V1 FAMILIARITY
+Q2.1 We start with a few general questions. First, how
+FAMILIAR are you with each of the following parties? Please
+indicate using the following scale.
+V2 PARTY UNITY
+
+Q2.2 How far are the following parties generally UNITED
+OR DIVIDED in their current policy positions? Where
+would you place each party on the following scale?
+
+V3 PROGRAM
+
+1. Fringe (0 thru 2.99%)
+2. Minor (3.0 thru
+9.99%)
+3. Major (10% thru high)
+0. Not very familiar
+10. Very familiar
+99. DK/MISSING
+0. Very divided
+10. Very united
+99.DK/NA/MISSING
+
+Q2.3 In their party manifestos and election platforms, how far
+do the following parties present detailed plans and specific
+policies, or else offer more general slogans and vague
+promises? Where would you place each party on the following
+scale?
+III: IDEOLOGICAL VALUES
+V4 ECONOMIC LEFTQ3.1 Parties can be classified by their current stance on
+RIGHT
+ECONOMIC ISSUES such as privatization, taxes, regulation,
+government spending, and the welfare state. Those on the
+economic LEFT want government to play an active role in
+the economy. Those on the economic RIGHT favor a
+reduced role for government. Where would you place each
+party on the following scale?
+Measured using three alternative variables:
+V4_Scale Continuous scale: from 0 to 10
+V4_Bin. Binary categories: 0 (0 thru 4.9), 1 (5.0 thru 10)
+V4_Ord Ordinal; categories: 1 (0 thru 2.49)/ 2 (2.5 thru
+4.9)/ 3 (5.0 thru 7.49)/ 4 (7.5 thru 10).
+
+0. Very detailed plans
+and specific policies
+10. Very general slogans
+and vague promises
+99. DK/NA/MISSING
+
+V5 L-R SALIENCY
+
+Q3.2 And how IMPORTANT are economic issues for each
+of the following parties? Where would you place each party
+on the following scale?
+
+0. No importance
+10. Great importance
+99. DK/NA/MISSING
+[+In CHES
+LRECON_SALIENCE]
+
+V6 SOCIAL
+LIBERALISMCONSERVATISM
+
+Q3.3 Parties can also be classified by their current social
+values. Those with LIBERAL values favor expanded
+personal freedoms, for example, on abortion rights, same-sex
+marriage, and democratic participation. Those with
+CONSERVATIVE values reject these ideas in favor of order,
+tradition and stability, believing that government should be a
+firm moral authority on social and cultural issues. Where
+would you place each party on the following scale?
+Measured using three alternative variables:
+V6_Scale Continuous scale: from 0 to 10
+V6_Bin. Binary categories: 0 (0 thru 4.9)/ 1 (5.0 thru 10)
+V6_Ord Ordinal Categories: 1 (0 thru 2.49)/ 2 (2.5 thru
+4.9)/ 3 (5.0 thru 7.49)/ 4 (7.5 thru 10).
+
+0. Very liberal
+10. Very conservative
+99. DK/NA/MISSING
+
+13
+
+0. Extreme economic
+left
+10. Extreme economic
+right
+99. DK/NA/MISSING
+[+In CHES 2-17 and
+2019 LRECON]
+
+(+In CHES 2017 and
+2019 GALTAN]
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+V7 SOCIAL VALUES
+SALIENCY
+
+Q3.4 And how IMPORTANT are liberal/conservative social
+values for each of the following parties? Where would you
+place each party on the following scale?
+
+0. No importance
+10. Great importance
+99. DK/NA/MISSING
+[+In CHES 2017 and
+2019
+GALTAN_SALIENCY]
+
+V8 POPULIST
+RHETORIC
+
+Q3.5 Parties can also be classified by their current use of
+POPULIST OR PLURALIST rhetoric. POPULIST language
+typically challenges the legitimacy of established political
+institutions and emphasizes that the will of the people should
+prevail. By contrast, PLURALIST rhetoric rejects these
+ideas, believing that elected leaders should govern,
+constrained by minority rights, bargaining and compromise,
+as well as checks and balances on executive power. Where
+would you place each party on the following scale?
+Measured using three alternative variables:
+V8_Scale Continuous scale: from 0 to 10
+V8_Bin. Binary categories: 0 (0 thru 4.9)/ 1 (5.0 thru 10)
+V8_Ord Ordinal categories: 1 (0 thru 2.49)/ 2 (2.5 thru
+4.9)/ 3 (5.0 thru 7.49)/ 4 (7.5 thru 10).
+
+0. Strongly favors
+pluralist rhetoric
+10. Strongly favors
+populist rhetoric
+99. DK/NA/MISSING
+
+V9 POPULIST
+SALIENCY
+
+Q3.6 And how IMPORTANT is populist rhetoric currently
+for each of the following parties? Where would you place
+each party on the following scale?
+
+0. No importance
+10. Great importance
+99.DK/NA/MISSING
+
+Q4.1 Turning now to party positions on specific political
+issues, where do parties currently stand on
+IMMIGRATION? Where would you place each party on the
+following scale?
+
+0. Strongly favors liberal
+immigration policies
+10. Strongly favors
+restrictive immigration
+policies
+99.DK/NA/MISSING
+[+In CHES 2017 and
+2019
+IMMIGRATE_POLIC
+Y]
+
+V11 SPENDING V. TAX
+
+Q4.2 Next, where do parties currently stand on PUBLIC
+SPENDING versus TAXATION? Where would you place
+each party on the following scale?
+
+0 Strongly favors
+increased public
+spending
+10 Strongly favors
+reduced taxation
+99.DK/NA/MISSING
+
+V12 ENVIRONMENT
+
+Q4.3 Next, where do parties currently stand on the issue of
+ENVIRONMENTAL PROTECTION? Where would you
+place each party on the following scale?
+
+0 Strongly favors
+environmental
+protection
+10 Strongly opposes
+environmental
+protection
+99.DK/NA/MISSING
+[+In CHES 2019]
+
+IV: POLICY ISSUES
+V10 IMMIGRATION
+
+14
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+V13 NATIONALISM
+
+Q4.4 Next, where do parties currently stand on
+NATIONALISM VERSUS MULTILATERALISM. Those
+favoring MULTILATERALISM seek to respect international
+treaties, engage with United Nations agencies, and collaborate
+with regional organizations like the EU, OAS, AU, ASEAN,
+and OSCE. Those favoring NATIONALISM reject these
+ideas. Where would you place each party on the following
+scale?
+
+0 Strongly favors
+nationalism
+10 Strongly favors
+multilateralism
+99.DK/NA/MISSING
+
+V14 WOMEN’S RIGHTS
+
+Q4.5 And where so parties currently stand on WOMEN’S
+RIGHTS? Where would you place each party on the
+following scale?
+
+0 Strongly favors
+women’s rights
+10 Strongly opposes
+women’s rights
+99.DK/NA/MISSING
+
+V15 ETHNIC
+MINORITY RIGHTS
+
+Q4.6 Next, where do parties currently stand on ETHNIC
+MINORITY RIGHTS? Where would you place each party on
+the following scale?
+
+0 Strongly favors ethnic
+minority rights
+10 Strongly opposes
+ethnic minority rights
+99.DK/NA/MISSING
+[+In CHES 2019]
+
+V16 LIBERAL
+DEMOCRACY
+
+Q4.7 Next, where do parties currently stand on LIBERAL
+DEMOCRATIC principles, norms and practices? Where
+would you place each party on the following scale?
+
+0: Strongly respects
+liberal democratic,
+principles, norms and
+practices
+10: Strongly undermines
+liberal democratic
+principles, norms and
+practices
+99.DK/NA/MISSING
+
+V17 CLIENTALISM
+
+Q4.8 Next, on clientelism, where do parties currently stand on
+DISTRIBUTING PUBLIC GOODS, like material benefits,
+subsidies, construction projects, and jobs. Do they favor
+giving universally to all citizens or else primarily to their own
+supporters? Where would you place each party on the
+following scale?
+
+0.Strongly favors
+universal distribution to
+all citizens
+10.Strongly favors
+distribution mainly to
+their own supporters
+99.DK/NA/MISSING
+
+V: POPULIST RHETORIC
+V18 WILL OF THE
+Q5.1 Next we seek to understand the type of rhetoric
+PEOPLE
+commonly used by each party, such as in their leadership
+speeches, rallies, press releases, party platforms, and campaign
+communications. Where would you place each party on the
+following scale?
+
+15
+
+0. Strongly emphasizes
+that politicians should
+follow the will of the
+people
+10. Strongly emphasizes
+that politicians should
+lead public opinion
+99.DK/NA/MISSING
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+V19 PEOPLE SHOULD
+DECIDE
+
+Q5.2 How would you characterize the rhetoric commonly
+used by various parties on whether the people or leaders
+should decide important issues? Where would you place each
+party on the following scale?
+
+0. Strongly emphasizes
+that ordinary people
+should decide important
+issues
+10. Strongly emphasizes
+that leaders should
+decide important issues
+99.DK/NA/MISSING
+[+In CHES 2017 and
+2019
+PEOPLE_VS_ELITE]
+
+V20 POLITICIANS
+CORRUPT
+
+Q5.3 How would you characterize the rhetoric commonly
+used by various parties on whether most politicians are honest
+or corrupt? Where would you place each party on the
+following scale?
+
+0 Strongly emphasizes
+that most politicians are
+honest and trustworthy
+10. Strongly emphasizes
+that most politicians are
+dishonest and corrupt
+99.DK/NA/MISSING
+
+V21 STRONGMAN
+RULE
+
+Q5.4 How would you characterize the rhetoric commonly
+used by various parties towards checks and balances on
+executive power? Where would you place each party on the
+following scale?
+
+0 Strongly favors checks
+and balances on
+executive power
+10. Strongly opposes
+checks and balances on
+executive power
+99.DK/NA/MISSING
+
+VI: PERSONAL BACKGROUND OF THE EXPERTS
+YOB
+Q6.1 Finally, we would like to ask you a few questions about
+your personal background. What is your year of birth?
+
+Year (1942 to 1992)
+9999.DK/NA/MISSIN
+G
+
+GENDER
+
+Q6.2 What is your gender?
+
+0 Women/1 Men
+Proportion of male
+respondents
+9 Other or prefer not to
+answer
+99.DK/NA/MISSING
+
+BORN
+
+Q6.3 Were you born in (the name of the country of expertise)
+
+0 No
+1 Yes
+99.DK/NA/MISSING
+
+CITIZEN
+
+Q6.4 Are you currently a citizen of (the name of the country
+of expertise)
+
+0 No
+1 Yes
+99.DK/NA/MISSING
+
+PARTYSUPPORT
+
+Q6.5 If you were able to participate in the last national
+election in (the name of the country of expertise), which
+political party, if any, did you generally support?
+
+Party name selected
+from the list
+99.DK/NA/MISSING
+
+IDEOLOGY
+
+Q6.6 Below is a 10-point scale on which your general political
+views can be arranged from LEFT to RIGHT. Where would
+you place your views on this scale?
+
+0 Very left
+10 Very right
+99 DK/NA/MISSING
+
+16
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+DIFFICULTY
+
+Q7.2 Overall, how easy or difficult did you find the
+questions? On a scale of 1 to 10 where 1 means the
+questionnaire was ‘very difficult to understand’ and 10 means
+the questionnaire was ‘very easy to understand’.
+
+0 Very difficult to
+understand
+10 Very easy to
+understand
+99.DK/NA/MISSING
+
+LANGUAGE
+
+User language from optional translations of the survey
+questionnaire
+
+EN English
+ES Spanish
+DE German
+RU Russian
+FR French
+
+VII: PARTY METADATA
+Legislative election code used for recording % Votes and %
+Elec_code
+Seats for each party
+Legislative election year used for recording the % Votes and
+Elec_year
+% Seats for each party
+Share of the vote recorded for each party in the legislative
+PartyPerVote
+election in Elec_code, from IFES Elections Guide
+http://www.electionguide.org/
+Share of seats recorded for each party in the legislative
+PartyPerSeats
+election in the lower house of parliament in Elec_code, from
+IFES Elections Guide http://www.electionguide.org/
+Effective number of electoral parties (ENEP) in Elec_code
+ENEP
+Effective number of parliamentary parties (ENPP) in
+ENPP
+Elec_code
+LSQ INDEX (Gallagher index of disproportionality) in
+LSQINDEX
+Elec_code
+Values: The party is left (0) or right (10) on economic issues
+CHES_lrecon
+(CHES-2017)
+Values: And how salient are economic issues for the party:
+CHES_lrecon_salience
+No importance (0) to great importance (10) (CHES-2017)
+Values: The party is liberal (0) or conservative (10) in their
+CHES_galtan
+social values (CHES-2017)
+Values: And how salient are liberal/conservative social values
+CHES_galtan_salience
+for the party: No importance (0) to great importance (10)
+(CHES-2017)
+Issues: Party favors liberal (0) or restrictive (10) immigration
+CHES_immigrate_policy
+policies (CHES-2017)
+Issues: Party favors (0) or opposes (10) ethnic minority rights
+CHES_ethnic_minorities
+(CHES-2017)
+Rhetoric: The people should decide important issues (0) or
+CHES_people_vs_elite
+leaders should decide (10) (CHES-2017)
+Number of experts (CHES-2017)
+CHES_experts
+% vote (CHES-2017)
+CHES_vote
+% seat (CHES-2017)
+CHES_seat
+electionyear (CHES-2017)
+CHES_electionyear
+Party family (CHES-2017)
+CHES_family
+
+17
+
+(ISO+DMY+Legislative
+round)
+Year 2003-2019
+% 0-100
+% 0-100
+1.18-23.43
+1.00-16.55
+0-33.28
+0-10
+0-10
+0-10
+0-10
+0-10
+0-10
+0-10
+#12 TO 22
+%
+%
+2013-2017
+1 Radical Right
+2 Conservative
+3 Liberal
+4 Christian Democratic
+5 Socialist
+6 Radical Left
+7 Green
+8 Regionalist
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+CHES_govt
+
+Party in government (CHES-2017)
+
+PG_family
+
+ParlGov Party Family (www.parlgov.org)
+
+PG_left_right
+
+ParlGov estimates of the position of parties.
+(www.parlgov.org)
+ParlGov estimates of the position of parties.
+(www.parlgov.org)
+ParlGov estimates of the position of parties.
+(www.parlgov.org)
+ParlGov estimates of the position of parties
+(www.parlgov.org)
+Popu-List classification of populist parties by Rooduijn et al
+2019. (www.popu-list.org)
+“In political matters, people talk of ‘the left’ and ‘the right.’ How would
+you place your views on this scale, generally speaking.” The mean
+position of party voters on this Left-Right scale (E033)
+(WVS_1-7) (www.worldvaluessurvey.org)
+“Please tell me for each of the following actions whether you think it can
+always be justified, never be justified, or something in between, using this
+card…. Abortion, Homosexuality, Divorce.” The mean position of
+party voters on the Liberal-Conservative scale (WVS_1-7)
+(www.worldvaluessurvey.org)
+“How much confidence do you have in the following? The government,
+political parties, parliament, and the courts.” These four items are
+recoded and combined into a standardized 10-pt scale. The
+mean position of party voters on the mistrust scale (in
+(WVS1-7) (www.worldvaluessurvey.org)
+Median voters' position in each country on the Left-Right
+values scale (E033) (WVS1-7)
+Median voters' position in each country on the LiberalConservative social value scale (Homosexual rights, abortion,
+divorce) (WVS1-7)
+Distance of the party position (estimated by GPS experts)
+from the median voter position in each country (from
+WVS_1-7) on the Left-Right economic values scale
+Distance of the party position (estimated by GPS experts)
+from the median voter position in each country (from
+WVS_1-7) on the Liberal-Conservative social values scale
+Distance between the party position (estimated by GPS) and
+their own party voters (from WVS_1-7) on the Left-Right
+economic values scale
+Distance on Liberal-Conservative social values between the
+party position (estimated by GPS) and their own party voters
+(from WVS_1-7)
+PARTY IDENTIFIERS TO MERGE DATASETS
+Party ID ParlGov (www.parlgov.org)
+Party ID Party Facts
+(https://partyfacts.herokuapp.com/data/)
+
+PG_state_market
+PG_liberty_authority
+PG_eu_anti_pro
+Popu_List
+WVS_LR_PARTYVOTE
+R
+WVS_LibCon_PartyVoter
+
+WVS_Mistrust_PartyVoter
+
+WVS_LR_MedianVoter
+WVS_LibCon_MedianVot
+er
+LRdistancemedianvoter
+LCdistancemedianvoter
+LRdistanceownvoters
+LCdistanceownvoters
+
+ID_ParlGov
+ID_PartyFacts
+
+18
+
+0 No
+0.5 Coalition partner
+1 Government
+Agrarian
+Christian Democracy
+Communist/Socialist
+Green
+Liberal
+Other
+Rightwing
+Social Democracy
+0-10 left-right scale
+0-10 state regulation of
+the economy scale
+0-10 liberty-authority
+scale
+0-10 anti-pro EU scale
+0-1
+Left (1) to Right (10)
+
+Liberal (0) to
+Conservative (10)
+
+Low (1) to High
+Mistrust (10)
+
+Left (1) to Right (10)
+Liberal (0) to
+Conservative (10)
+Left (1) to Right (10)
+Liberal (0) to
+Conservative (10)
+Left (1) to Right (10)
+Liberal (0) to
+Conservative (10)
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+ID_CHES
+ID_ESS
+ID_CMP
+ID_castles_mair
+ID_huber_inglehart
+ID_ray
+ID_benoit_laver
+ID_EES
+ID_WVS
+
+www.GlobalPartySurvey.org
+
+Party ID Chapel Hill Expert Survey, 1999 – 2017
+(https://www.chesdata.eu/)
+Party ID European Social Survey (ESS)
+(http://www.europeansocialsurvey.org)
+Party ID Comparative Manifesto Project
+(https://manifestoproject.wzb.eu/)
+Party ID Castles and Mair, 1984
+https://ejpr.onlinelibrary.wiley.com/doi/abs/10.1111/j.14756765.1984.tb00080.x
+Party ID Huber and Inglehart, 1995
+https://journals.sagepub.com/doi/abs/10.1177/1354068895
+001001004
+Party ID Ray, 1999
+https://link.springer.com/article/10.1023/A:1007009106184
+Party ID Benoit and Laver, 2006,
+https://www.tcd.ie/Political_Science/ppmd/
+Party ID European Election Study
+Party ID for the World Values Survey
+
+19
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+VIII: COUNTRY METADATA
+Country Name
+CountryName
+COW Nation id: Correlates of War project
+ID_COW
+(https://correlatesofwar.org/)
+Varieties of Democracy Nation id (https://www.vID_VDem
+dem.net/en/)
+Region_9
+Global region (World Bank, 9 cat)
+
+Region_10
+
+Region (politico-geographic-10 Categories) V-Dem9
+(https://www.v-dem.net/en/)
+
+Region_19
+
+Region (geographic-19 categories) V-Dem9 (https://www.vdem.net/en/)
+
+OECD
+
+OECD Member state (https://www.oecd.org/about/membersand-partners/)
+Polity combined score for autocracy-democracy, (Polity IV)
+2018
+Polity combined score for autocracy-democracy with mean
+substitution for missing codes, 2018 (Polity IV)
+Type of regime (Freedom House) www.freedomhouse.org
+
+Polity
+Polity2
+FH_Regime
+FH_PoliticalRights
+
+Political rights 7-point scale (Freedom House)
+www.freedomhouse.org
+20
+
+Text
+3-digit
+3-Digit
+1 E & S Asia
+2 W & C Africa
+3 E. Asia &Pac
+4 S. Asia
+5 E. Europe
+6 W. Europe
+7 M. East
+8 N. Africa
+9 Americas
+1 E. Europe and C. Asia
+2 Latin America
+3 Middle East/N. Africa
+4 Sub-Saharan Africa
+5 W. Europe, N. America,
+Australia/NZ
+6 East Asia
+7 SE Asia
+8 S. Asia
+9 Pacific (not Aus/NZ)
+10 Caribbean
+1 Western Europe
+2 Northern Europe
+3 Southern Europe
+4 Eastern Europe
+5 Northern Africa
+6 Western Africa
+7 Central Africa
+8 Eastern Africa
+9 Southern Africa
+10 Western Asia
+11 Central Asia
+12 East Asia
+13 South-East Asia
+14 South Asia
+15 Oceania
+16 North America
+17 Central America
+18 South America
+19 Caribbean
+0/1
+(-10->+10)
+(-10->+10)
+0 Free,
+1 Partly Free,
+2 Not Free
+1 High to 7 Low
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+FH_CivilLiberties
+Area
+Pop1990
+Pop2000
+Pop2018
+GDP
+Longevity
+Corruption
+Electoral_Integrity
+
+VDem_regime
+
+www.GlobalPartySurvey.org
+
+Civil Liberties 7-point scale (Freedom House)
+www.freedomhouse.org
+Land area of the country, 2018 (World Bank)
+Total population, 1990 (World Bank)
+Total population, 2000 (World Bank)
+Total Population 2018 (World Bank)
+Per capita GDP in purchasing power parity, 2yr.lag to election
+year) (World Bank)
+Life expectancy, 2018 (V-Dem-9)
+Corruption perception index, 2018 (Transparency International)
+Index of Perceptions of Electoral Integrity, (0-100), imputed
+(Electoral Integrity Project 7.0, 2019)
+VARIETIES OF DEMOCRACY (V-Dem 9.0, 2018)
+No suffix= Measurement Model Output: (like Z scores) used
+for regression
+_osp=Original Scale — Linearized Original Scale Posterior
+Prediction:
+_ord=Ordinal Scale — Measurement Model Estimates of
+Original Scale Value: categories used for description
+See the Vdem codebook (pp29-30) for more details.
+Type of regime, 2018 (Regimes of the World, V-Dem-9)
+
+v2elfrfair_osp
+v2elfrfair_ord
+
+Electoral democracy index, 2018 (V-Dem-9) To what extent
+is the ideal of electoral democracy in its fullest sense achieved?
+Liberal democracy index, 2018 (V-Dem-9) To what extent is
+the ideal of liberal democracy achieved?
+Clean elections index: ‘To what extent are elections free and fair?’
+Composite measure (V-Dem 9.0)
+Election free and fair: “Taking all aspects of the pre-election period,
+election day, and the post-election process into account, would you consider
+this national election to be free and fair?”
+Election free and fair: continuous scale (V-Dem 9.0)
+Election free and fair: categories (V-Dem 9.0)
+
+v2elloelsy
+
+Lower chamber electoral system (V-Dem 9.0)
+
+v2x_polyarchy
+v2x_libdem
+v2xel_frefair
+v2elfrfair
+
+21
+
+1 High to 7 Low
+Sq Km
+millions
+millions
+millions
+Constant 2011 intl $
+Years
+0-100
+0-100
+
+0 Absolute autocracy
+1 Electoral autocracy
+2 Electoral democracy
+3 Liberal democracy
+0/1
+0/1
+0-1 scale
+-5 to +5 scale
+0 to 4
+0 Not at all
+1 Not really
+2 Ambiguous
+3 Yes somewhat
+4 Yes
+0 FPTP
+1 Two round single member
+2 Two round multimember
+3 Block vote
+4 Block vote
+5 Parallel
+6 Mixed-member
+proportional
+7 List PR small DM
+8 List PR large DM
+9 STV
+10 SNTV
+11 Borda count
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+v2elparlel
+
+Type of lower chamber electoral system (V-Dem 9.0)
+
+v2elncbpr
+
+Parties in cabinet government (V-Dem 9.0)
+
+v2eltrnout
+
+Election VEP turnout: ‘In this national election, what percentage (%)
+of all registered voters cast a vote according to official results?’ (Valid
+ballots cast/Voting Eligible population) (V-Dem 9.0)
+Election VAP turnout (Valid ballots cast/Voting Age
+Population) (V-Dem 9.0)
+Barriers to parties: “How restrictive are the barriers to forming a
+party? Barriers include legal requirements such as requirements for
+membership or financial deposits, as well as harassment.” (V-Dem 9.0)
+
+v2elvaptrn
+v2psbars
+
+v2psbars_osp
+v2psbars_ord
+v2psorgs
+v2psorgs_osp
+v2psorgs_ord
+
+v2psprbrch
+v2psprbrch_osp
+v2psprbrch_ord
+
+v2psprlnks
+v2psprlnks_osp
+
+Barriers to parties: Continuous scale (V-Dem 9.0)
+Barriers to parties: Categories (V-Dem 9.0)
+Party organizations: ‘How many political parties for national-level
+office have permanent organizations? ‘(V-Dem 9.0)
+Party organizations: Continuous scale (V-Dem 9.0)
+Party organizations: Categories (V-Dem 9.0)
+
+Party branches: ‘How many parties have permanent local party
+branches?’ (V-Dem 9.0)
+Party branches: Continuous scale (V-Dem 9.0)
+Party branches: categories (V-Dem 9.0)
+
+Party linkages: ‘Among the major parties, what is the main or most
+common form of linkage to their constituents?’ (V-Dem 9.0)
+Party linkages: continuous scale (V-Dem 9.0)
+
+22
+
+0 Majoritarian
+1 Proportional
+2 Mixed
+3 Other
+0 Parties not allowed
+1 One party
+2 Two party
+3 Three parties
+4 Four or more parties
+% 28.8- 93.0%
+% 21.5-100%
+0 Parties are not allowed
+1 Only governmentaffiliated parties can form
+by law
+2 Parties face significant
+obstacles
+3 Parties face modest
+barriers
+4 No barriers
+
+0 No parties
+1 Fewer than half
+2 About half
+3 More than half
+4. All parties
+
+0 No parties
+1 Fewer than half
+2 About half
+3 More than half
+4. All parties
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+v2psprlnks_ord
+
+Party linkages: categories (V-Dem 9.0)
+
+v2psplats
+
+Distinct party platforms: ‘How many political parties with
+representation in the national legislature or presidency have publicly
+available party platforms (manifestos) that are publicized and relatively
+distinct from one another?’ (V-Dem 9.0)
+Distinct party platforms: continuous scale (V-Dem 9.0)
+Distinct party platforms: categories (V-Dem 9.0)
+
+v2psplats_osp
+v2psplats_ord
+
+v2xnp_client
+v2xps_party
+
+Clientelism Index: ‘To what extent are politics based on clientelist
+relationships?’ Composite index (V-Dem 9.0)
+Party institutionalization index: ‘To what extent are political
+parties institutionalized?’ (V-Dem 9.0)
+
+23
+
+0 Clientelistic. Constituents
+are rewarded with goods,
+cash, and/or jobs.
+1: Mixed clientelistic and
+local collective.
+2: Local collective.
+Constituents are rewarded
+with local collective goods
+3: Mixed local collective and
+policy/ programmatic.
+4: Policy/programmatic.
+Constituents respond to a
+party’s positions on national
+policies, general party
+programs, and visions for
+society.
+
+0-4
+0 No parties
+1 Fewer than half
+2 About half
+3 More than half
+4. All parties
+0-1
+0-1
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+IX: ROBUSTNESS TESTS
+Does the data provide reliable and valid measures of party ideological values, issue positions and
+populist rhetoric? Alternative approaches to identifying party positions have been employed in the
+research literature, such as expert and mass surveys, content analysis of party documents and leadership
+speeches, and analysis of legislative roll call votes, each with potential strengths and weaknesses (Laver
+2001; Norris 2020).
+Comparison across datasets provide health checks of the reliability and robustness of the estimates in
+this survey. The CHES estimates have been compared, for example, with data from party manifestos,
+surveys of MPs, and other expert studies (Bakker et al. 2012; Hooghe et al., 2010; Marks et al., 2007;
+Netjes and Binnema, 2007; Steenbergen and Marks, 2007; Whitefield et al., 2007).
+Nevertheless, studies can be expected to vary in their estimates for various reasons, not least the use
+different question wordings, party lists, and methods. Parties are also far from static in their positions
+and ideological values, whether responding to leadership turnover, the shifting saliency of issues on the
+policy agenda, changes in their electoral fortunes, or new patterns of party competition. Where studies
+conducted within a few years of each other can be compared, however, this helps to assess the external
+validity and robustness of several key GPS estimates.
+ELITE SURVEYS:
+Common methods in party research involves elite-level surveys such as asking independent experts to
+monitor perceptions of party issue positions. Other elite-level studies have monitored the attitudes and
+values of party members and supporters (van Haute and Gauja 2015), party elites like the Comparative
+Candidate Survey, and legislators in national and European parliaments (Norris and Lovenduski 1995;
+Katz and Wessels 1999; Schmitt and Thomassen 1999; Bailer 2014).
+International expert surveys have become one of the most common tools in the social and policy
+sciences, used to measure and rank everything from perceptions of corruption to levels of democracy
+and human rights, press freedom, good governance, rule of law, and electoral integrity (Cooley and
+Snyder 2015).
+CHES-2017
+Accordingly, the results in this study can be compared with the Chapel Hill Expert Survey, established
+to compare the issue position of European parties every four years since 1995. For comparison with
+the most recently-available estimates, the CHES-2017 dataset contains seven identical (or functionally
+equivalent) items designed to measure ideological values and issue positions. Comparing the estimates
+in both studies generates remarkably strong and significant correlations in 84 European parties
+contained in both studies (See Figures 5 and 6). Despite differences in the timing, selection of experts,
+and fieldwork methods, in fact both studies produce very similar estimates of party positions.
+Figure 5: Comparing GPS and CHES estimates
+V4 Values: The party is left (0) or right (10) on economic issues
+V5 Saliency: The importance of economic issues
+V6 Values: The party is liberal (0) or conservative (10) in their social values
+V7: Saliency: The importance of social values
+V10 Issues: Party favors liberal (0) or restrictive (10) immigration policies
+V15 Issues: Party favors (0) or opposes (10) ethnic minority rights
+V19 Rhetoric: The people should decide important issues (0) or leaders should decide (10)
+
+24
+
+R
+0.848
+0.822
+0.939
+0.788
+0.936
+0.885
+0.598
+
+Sig
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+Figure 6: Correlations between the GPS-2019 and CHES-2017 estimates, 84 parties
+
+Note: Q: “Parties can also be classified by their current social values. Those with LIBERAL values favor expanded
+personal freedoms, for example, on abortion rights, same-sex marriage, and democratic participation. Those with
+CONSERVATIVE values reject these ideas in favor of order, tradition and stability, believing that government should
+be a firm moral authority on social and cultural issues. Where would you place each party on the following scale?”
+Sources: www.GlobalPartySurvey.org CHES-2017
+ParlGov
+Comparisons can also be drawn for 192 parties in this study with estimates in the Parliaments and
+Government (ParlGov) database (Döring and Manow 2019). The position of political parties was
+estimated in ParlGov by combining data from previous expert surveys conducted by Castles/Mair 1983,
+Huber/Inglehart 1995, Benoit/Laver 2006, and CHES 2010.
+The GPS estimates of the Left-Right economic position of parties was strongly correlated with the
+ParlGov left-right estimates (R=0.739***). Similarly, ParlGov’s 10-point value scale for the position of
+parties on the ‘libertarian/authoritarian’ dimension was strongly related to the GPS’s estimate on this
+dimension (R=0.828 ***). Given the differences in time periods and measures used, this is a remarkably
+strong correlation.
+Comparative Manifesto Project
+Another common approach has sought to identify where parties stand on policy issues through
+extracting data from hand and automatic textual coding of party platforms, exemplified by the longstanding Comparative Manifesto Project (Budge 2000; Budge et al 2001; Klingemann et al 2006; Benoit
+and Laver 2007; Krouwel and Elrinkhof 2014).
+This approach is most suitable for comparing programmatic parties, such as the manifestos published
+in established parliamentary democracies in Western Europe. But collective party platforms and
+manifesto documents may not function as important guides to party policy or values in other cases,
+25
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+such as in countries with personalistic presidential executives, clientelist party campaigns, or where new
+parties are poorly institutionalized.
+The GPS measure of Left-Right economic values can also be compared with the Comparative
+Manifestoes Project Left-Right ideological party positions, based on textual analysis of the salience of
+issues in party platforms. The CMP data was averaged for parliamentary election held from 2014-19.
+The results showed a moderately strong correlation between GPS and these CMP estimates (R=.569**,
+N. 157), still statistically significant, but a weaker fit than with the CHES and PG expert surveys.
+Popu-List
+The position of populist parties has been subject to considerable debate in recent years, not least the
+European tradition of classifying these using legacy concepts as part of the ‘extreme right’, ‘far right’,
+or ‘radical right’ party family. The Popu-List project (Rooduijn et al 2019) provides a test of the facevalidity of the GPS estimates. The study consulted thirty scholars of populism to classify the position
+of 127 European parties with at least 2% of the vote in a national parliamentary election since 1998.
+Parties were categorized using simple (0/1) binary codes into the four dimensions, namely as populist,
+far right, far left, and Eurosceptic (Rooduijn et al 2019). Where comparisons could be drawn, Figure 7
+shows the Popu-list classification of populist parties (highlighted in red) is strongly correlated with the
+GPS scaled estimates of populism, using the core V8 pluralism-populism scale.
+Fig 7. Comparing the GPS pluralism-populism scale and the Popu-List classification of
+populist parties
+
+Notes: V8 Populism scale: “We seek to understand the type of rhetoric commonly used by each party, such as in their
+leadership speeches, rallies, press releases, party platforms, and campaign communications. Vertical Axis: Parties can be
+classified by their current use of POPULIST OR PLURALIST rhetoric. POPULIST language typically challenges
+the legitimacy of established political institutions and emphasizes that the will of the people should prevail. By contrast,
+PLURALIST rhetoric rejects these ideas, believing that elected leaders should govern, constrained by minority rights,
+bargaining and compromise, as well as checks and balances on executive power. Where would you place each party on the
+following 0-10 scales? And how important is populist rhetoric for each of these parties?” Parties in RED are identified
+as populist by the Popu-List project. Source: https://popu-list.org/ www.GlobalPartySurvey.org
+
+26
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+Moreover, to examine this further, the Popu-List classification of populist parties in Europe can be
+compared against all the measures in the GPS survey. As shown in Figure 8, the V8 scale measure of
+pluralism-populism proved to be the single measure most strongly correlated with parties classified as
+populist by the Popu-List project. Several other items in the GPS survey were also strongly correlated
+with the Popu-List classification, such as whether party rhetoric emphasized the ‘will of the people’ and
+political corruption, as well as issues such as opposition to ethnic minority rights and immigration, as
+shown in Figure 8. By contrast, economic values were unrelated to the Popu-List classification of
+populist parties.
+Figure 8: Correlations of GPS items with the Popu-List classification of populist parties.
+R
+Sig
+V8_scale
+
+Party favors pluralist or populist rhetoric
+
+0.542
+
+***
+
+V13
+
+Party favors multilateralism or nationalism
+
+0.509
+
+***
+
+V18
+
+Party rhetoric strongly emphasizes that politicians should follow
+the will of the people
+Party respects or undermines liberal democratic principles
+
+0.496
+
+***
+
+0.436
+
+***
+
+Party rhetoric emphasizes that most politicians are dishonest and
+corrupt
+Party opposes ethnic minority rights
+
+0.457
+
+***
+
+0.425
+
+***
+
+0.380
+
+***
+
+V21
+
+Party rhetoric emphasizes that the people should decide
+important issues
+Party rhetoric opposes checks and balances on executive power
+
+0.369
+
+***
+
+V10
+
+Party favors liberal or restrictive immigration policies
+
+0.366
+
+***
+
+V14
+
+Party opposes women's rights
+
+0.333
+
+***
+
+V12
+
+Party opposes environmental protection
+
+0.330
+
+***
+
+V17
+
+0.296
+
+***
+
+0.258
+
+***
+
+V6
+
+Party favors distribution of public goods mainly to their own
+supporters (clientelism)
+Party presents detailed plans or more general slogans and vague
+promises
+Party is conservative in their social values
+
+0.256
+
+***
+
+V11
+
+Party favors increased public spending or reduced taxation
+
+0.052
+
+N/s
+
+V4
+
+Party is leftwing or rightwing in their economic values
+
+0.004
+
+N/s
+
+V16
+V20
+V15
+V19
+
+V3
+
+Source: https://popu-list.org/ www.GlobalPartySurvey.org
+The World Values Survey/European Values Survey, 1981-2020.
+Finally, comparisons can also be drawn between the GPS estimates on major ideological values and the
+position of voters for each party, using the World Value Survey/European Values Survey (World Values
+Survey). This dataset was pooled over all seven waves, to maximize the number of respondents who
+reported voting for smaller parties, although this generates less up-to-date estimates than using only the
+most recent wave.
+The Left-Right scale in the WVS/EVS has asked respondents to identify their ideological position based
+on the following question: “In political matters, people talk of ‘the left’ and ‘the right.’ How would you place your
+views on this scale, generally speaking.” Coded Left (1) to Right (10).
+The Liberal-Conservative social values scale was constructed from adding responses to three items then
+converting to a 10-point scale: “Please tell me for each of the following actions whether you think it can always be
+justified, never be justified, or something in between, using this card….Abortion, Homosexuality, Divorce.” This was
+coded from ‘Always justifiable’ (1) to ‘Never justifiable’ (10) for each item. This is similar but obviously
+not identical to the CHES/GPS measure of Liberal-Conservative social values (known as the Gal/tan
+scale).
+27
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+Strong and significant correlation (R.477*** N. 401 parties) link the GPS expert estimates of party
+locations on the Left-Right scale (horizontal axis below) with where party voters placed themselves on
+the same scale in the WVS/EVS (vertical axis below). Moreover, the correlation strengthened
+(R=.632***) when comparing the subset of 157 parties within the liberal democracies, with more stable
+and institutionalized party systems.
+Figure 9: Comparing expert estimates of party positions with each party’s own voters on the
+Left-Right scale, OECD only
+
+Note: Vertical axis=WVS_LR_PARTYVOTER. Horizontal Axis=V4_scale. Colors by Type_Values
+Crimson =Left-Liberal/ Umber=Left-Conservative/ Azure=Right-Liberal/ Royal Blue=RightConservative. Sources: GPS 2019 and WVS/EVS 1-7.
+Similar patterns can be observed when comparing voter’s social values with the position of parties on
+the liberal-conservative social values scale (R=.483*** N. 416 parties).
+Overall therefore, where comparisons could be drawn with a wide range of independent evidence, the
+robustness tests serve as a health check confirming the external validity of the GPS estimates. The
+inclusion of several independent estimates in the GPS dataset allows analysts to make their own further
+comparisons, for example by global region or party type. At the same time, however, as discussed
+earlier, there remains a health warning about the size of the margin of error of the GPS estimates in
+parties and countries with few respondents. Replication of the survey in future years would help to
+provide further cross-checks on the robustness of the estimates.
+28
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+X: REFERENCES
+Bailer, S. (2014). ‘Interviews and surveys in legislative research.’ In S. Martin, T. Saalfeld, and K.
+Strom. (eds) The Oxford Handbook of Legislative Studies. Oxford: Oxford University Press.
+Bakker, Ryan et al. (2012). ‘Measuring party positions in Europe: The Chapel Hill expert survey trend
+file, 1999–2010.’ Party Politics 21(1).
+Bakker, Ryan, de Vries, Catherine, Edwards, Erica, et al. (2015). ‘Measuring party positions in Europe:
+The Chapel Hill expert survey trend file, 1999-2010.’ Party Politics 21(1): 143-152.
+Benoit, Kenneth and Michael Laver (2006) Party Policy in Modern Democracies. London: Routledge.
+Bonikowski, Bart and Noam Gidron. (2016). ‘The populist style in American politics.’ Social Forces
+94(4) 1593–1621.
+Budge, Ian. (2000) ‘Expert Judgments of Party Policy Positions: Uses and Limitations in Political
+Research’, European Journal of Political Research 37(1): 103-13.
+Budge, Ian, Hans-Dieter Klingemann, A. Volkens, Judith Bara, and Eric Tanenbaum. (2001) Mapping
+Policy Preferences: Estimates for Parties, Electors, and Governments 1945–1998. NY: Oxford
+University Press.
+Carroll, R. and Keith Poole. (2014) ‘Roll call analysis and the study of legislatures.’ Oxford Handbook of
+Legislative Studies pp.103-124. Oxford: Oxford University Press.
+Castles, Frank and Peter Mair (1984) ‘Left-Right Political Scales: Some Expert Judgements’, European
+Journal of Political Research 12: 73-88.
+Cooley, Alexander and Jack Snyder. Eds. 2005. Ranking the World. NY: Cambridge University Press.
+Curini, Luigi. (2009) ‘Experts’ Political Preferences and Their Impact on Ideological Bias: An
+Unfolding Analysis based on a Benoit-Laver Expert Survey.’ Party Politics 16(3)
+https://doi.org/10.1177/1354068809341051
+Doring, Herbert and Sven Regel. (2019). ‘Party Facts: A database of political parties worldwide.’ Party
+Politics 25(2): 97-109.
+Hawkins, Kirk A., Rosario Aguilar, Erin Jenne, Bojana Kocijan, Cristóbal Rovira Kaltwasser, Bruno
+Castanho Silva. (2019). Global Populism Database: Populism Dataset for Leaders 1.0. Team
+Populus. https://populism.byu.edu/Pages/Data
+Hawkins, Kirk A. (2009). ‘Is Chávez populist? Measuring populist discourse in comparative
+perspective’ Comparative Political Studies, 42(8): 1040-1067.
+Hawkins, Kirk A. et al. (2019a). Measuring Populist Discourse: The Global Populism Database. Paper
+presented at the 2019 EPSA Annual Conference in Belfast, UK, June 20-22.
+https://populism.byu.edu/App_Data/Publications/Global%20Populism%20Database%20
+Paper.pdf
+Hawkins, Kirk A., Rosario Aguilar, Bruno Castanho Silva, Erin K. Jenne, Bojana Kocijan, and
+Cristóbal Rovira Kaltwasser, (2019b), Global Populism Database, v1
+https://doi.org/10.7910/DVN/LFTQEZ Harvard Dataverse, V1.
+Hooghe, Liesbet, Gary Marks, Carole J. Wilson. (2002). ‘Does Left/Right Structure Party Positions on
+European Integration?’ Comparative Political Studies 35(8).
+Hooghe, Liesbet, Ryan Bakker and A. Brigevich. (2010) ‘Reliability and validity of measuring party
+positions: The Chapel Hill Expert Surveys of 2002 and 2006.’ European Journal of Political
+Research 49(5): 687–703.
+Huber, John and Ronald Inglehart (1995) ‘Expert Interpretations of Party Space and Party Locations
+in 42 Societies.’ Party Politics 1: 73-111.
+Katz, Richard S. and Bernhard Wessels (eds) (1999) The European Parliament, the National Parliaments,
+and European Integration. Oxford: Oxford University Press.
+29
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+Keman, Hans (2007) ‘Experts and Manifestos: Different Sources - Same Results for Comparative
+Research?’, Electoral Studies 26: 76-89.
+Klingemann, Hans-Dieter, Andrea Volkens, Judith Bara, Ian Budge, and Michael McDonald. (2006).
+Mapping Policy Preferences II: Estimates for Parties, Electors, and Governments in Eastern Europe,
+European Union and OECD 1990–2003. Oxford University Press, Oxford
+Krouwel, André and Annemarie van Elfrinkhof. (2014). ‘Combining strengths of methods of party
+positioning to counter their weaknesses.’ Quality & Quantity 48: 1455-1472.
+Kyle, Jordan and Limor Gultchin. 2018. Populists in Power Around the World. Tony Blair Institute.
+https://institute.global/sites/default/files/articles/Populists-in-Power-Around-the-World.pdf
+Laver, Michael. (ed.) (2001). Estimating the Policy Positions of Political Actors. London: Routledge.
+Mair, Peter (2001) ‘Searching for the Positions of Political Actors: A Review of Approaches and a
+Critical Evaluation of Expert Surveys.’ In Michael Laver (ed) Estimating the Policy Position of
+Political Actors, pp. 10-30. New York: Routledge.
+Marks, Gary, Liesbet Hooghe, Marco R. Steenbergen, and Ryan Bakker. (2007). ‘Cross-validating data
+on party positioning on European integration.’ Electoral Studies 26 (1): 23-38.
+Martinez I Coma, Ferran and Carolien Van Ham. (2015). ‘Can experts judge elections? Testing the
+validity of expert judgments for measuring election integrity.’ European Journal of Political
+Research 54(2): 305-325.
+Netjes, C, and H. A. Binnema. (2007) ‘The salience of the European integration issue: Three data
+sources compared.’ Electoral Studies 26(1): 39–49.
+Norris, Pippa and Joni Lovenduski. (1995). Political Recruitment: Gender, Race and Class In the British
+Parliament. Cambridge: Cambridge University Press.
+Norris, Pippa and Ronald Inglehart. (2019). Cultural Backlash. New York: Cambridge University Press.
+Norris, Pippa. (2020). ‘Populists around the World.’ HKS Research Paper.
+Norris, Pippa. (2020) ‘Measuring populism’. HKS Research Paper.
+Norris, Pippa. (2019). ‘Varieties of populist parties.’ Philosophy & Social Criticism 45(9-10): 981-1012.
+Poole, Keith T. and H. Rosenthal. (2001) ‘D-Nominate after 10 years: a comparative update to
+Congress: a political-economic history of roll call voting.’ Legislative Studies Q. 26(1), 5–29
+Ray, Leonard. (1999). ‘Measuring party orientations towards European integration: Results from an
+expert survey.’ European Journal of Political Research, 36, 283-306.
+Rooduijn, M., Van Kessel, S., Froio, C., Pirro, A., De Lange, S., Halikiopoulou, D., Lewis, P., Mudde,
+C. & Taggart, P. (2019). The PopuList: An Overview of Populist, Far Right, Far Left and Eurosceptic
+Parties in Europe. http://www.popu-list.org
+Scarrow, Susan E., Paul D. Webb and Thomas Poguntke. (2017). Organizing Political Parties
+Representation, Participation, and Power. Oxford: Oxford University Press.
+Schmitt, Hermann and Jacques Thomassen (eds) (1999) Political Representation and Legitimacy in the
+European Union. Oxford: Oxford University Press.
+Steenbergen, Marco R. and Gary Marks (2007) ‘Evaluating Expert Judgements’, European Journal of
+Political Research 46(3): 347-66.
+van Haute, Emily and Anika Gauja. (2015) Party Members and Activists. Abingdon: Routledge.
+Whitefield, Stephen, Vachudova, Milada Anna, Steenbergen, Marco R., Rohrschneider, Robert, Marks,
+Gary, Loveless, Matthew P. and Hooghe, Liesbet. (2007). ‘Do expert surveys produce
+consistent estimates of party stances on European integration? Comparing expert surveys in
+the difficult case of Central and Eastern Europe.’ Electoral Studies 26(1): 50-61.
+
+30
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+APPENDIX A: LIST OF POLITICAL PARTIES
+ID_G
+PS
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+
+Country
+Afghanistan
+Afghanistan
+Afghanistan
+Afghanistan
+Afghanistan
+Angola
+Angola
+Angola
+Angola
+Angola
+Albania
+Albania
+Albania
+Albania
+Albania
+Albania
+Argentina
+Argentina
+Argentina
+Argentina
+Argentina
+Argentina
+Argentina
+Argentina
+Argentina
+Argentina
+Armenia
+Armenia
+Armenia
+Australia
+Australia
+Australia
+Australia
+Australia
+Australia
+Australia
+Australia
+Austria
+Austria
+Austria
+Austria
+Austria
+Austria
+Azerbaijan
+Azerbaijan
+
+Party name
+Islamic Society
+Islamic Unity Party of Afghanistan
+National Islamic Movement of Afghanistan
+People's Islamic Unity Party of Afghanistan
+Republican Party of Afghanistan
+Broad Convergence for the Salvation of Angola – Electoral Coalition
+National Front for the Liberation of Angola
+National Union for the Total Independence of Angola
+People's Movement for the Liberation of Angola
+Social Renewal Party
+Democratic Party of Albania
+Libra Party
+Party for Justice, Integration and Unity
+Social Democratic Party of Albania
+Socialist Movement for Integration
+Socialist Party of Albania
+Cambiemos
+Citizen's Unity
+Civic Front for Santiago
+Evolución
+Front for the Renewal of Concord
+Justicialist Party
+Progressive, Civic and Social Front
+Union for Córdoba
+United for a New Alternative
+Workers' Left Front
+Bright Armenia
+My Step Alliance
+Prosperous Armenia
+Australia Greens
+Australian Labor Party
+Independent
+Katters Australia Party
+Liberal National Party
+Liberal Party of Australia
+National Party of Australia
+Nick Xenophon
+Austrian People's Party
+Freedom Party of Austria
+NEOS – The New Austria
+Peter Pilz List
+Social Democratic Party of Austria
+The Greens – The Green Alternative
+Independents
+New Azerbaijan Party
+
+46
+
+Burundi
+
+Front for Democracy in Burundi
+
+47
+48
+49
+50
+51
+52
+53
+54
+
+Burundi
+Burundi
+Belgium
+Belgium
+Belgium
+Belgium
+Belgium
+Belgium
+
+National Council for the Defense of Democracy
+Union for National Progress
+Christian Democrats and Flemish
+Flemish Interest
+Francophone Reformist Movement
+Green
+Humanist Democratic Centre
+New Flemish Alliance
+
+55
+56
+57
+
+Belgium
+Belgium
+Belgium
+
+Open Flemish Liberals and Democrats
+Socialist Party
+Socialist Party Differently
+31
+
+Partyabb
+JI
+HWIA
+Junbish
+PIUPA
+RPA
+CASA-CE
+FNLA
+UNITA
+MPLA
+PRS
+PD
+LIBRA
+PDIU
+PSD
+LSI
+PS
+PRO-UCR
+UC
+FCpS
+Evolucion
+FR
+PJ
+FPCyS
+UpC
+1País
+FIT
+BA
+IKD
+PAP
+AG
+ALP
+Ind.
+KAP
+LNP
+LP
+NAT
+NXT
+ÖVP
+FPÖ
+NEOS
+PILZ
+SPÖ
+GRÜNE
+Ind.
+YAP
+FRODEB
+U
+CNDDFDD
+UPRONA
+CD&V
+VB
+PRL/MR
+Groen
+cdH
+N-VA
+OpenVLD
+PS
+SPA
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+
+Belgium
+Benin
+Benin
+Benin
+Benin
+Benin
+Benin
+Benin
+Benin
+Benin
+Benin
+
+Worker's Party
+Alliance nationale pour le developpement et la democratie
+Alliance pour un Benin triomphant
+Alliance Soleil
+Build the Nation Union
+Cauri Forces for an Emerging Benin
+Eclaireur
+Forces democratiques unies
+Party of Democratic Renovation
+Renaissance du Benin-Reveil Patriotique
+Union for Benin
+
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+
+Burkina Faso
+Burkina Faso
+Burkina Faso
+Burkina Faso
+Burkina Faso
+Burkina Faso
+Burkina Faso
+Burkina Faso
+Burkina Faso
+Burkina Faso
+Bangladesh
+Bangladesh
+Bangladesh
+Bangladesh
+Bangladesh
+Bangladesh
+Bangladesh
+Bulgaria
+Bulgaria
+Bulgaria
+Bulgaria
+Bulgaria
+Bahrain
+Bahrain
+Bahrain
+Bahamas
+Bahamas
+Bahamas
+Bosnia and Herzegovina
+Bosnia and Herzegovina
+Bosnia and Herzegovina
+
+Alliance for Democracy
+Congress for Democracy and Progress
+Convention of the Democratic Forces
+Organisation for Democracy and Labour
+Party for Democracy and Socialism
+The Other Burkina Faso
+Union for Democracy and Development
+Union for Progress and Change
+Union for Rebirth-Sankarist
+Union for the Republic
+Bangladesh Awami League
+Bangladesh Nationalist Party
+Bangladesh Tarikat Federation
+Jatiya Party
+Jatiya Party (Manju)
+Jatiyo Samajtantrik Dal
+Worker's Party of Bangladesh
+Bulgarian Socialist Party
+Citizens for European Development of Bulgaria
+Movement for Rights and Freedoms (DPS)
+United Patriots
+Will
+National Islamic Al-Menbar
+Independents
+Islamic Al Asalah
+Democratic National Alliance
+Free National Movement
+Progressive Liberal Party
+Alliance of Independent Social Democrats
+Democratic Front
+Democratic People's Alliance
+
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+
+Bosnia and Herzegovina
+Bosnia and Herzegovina
+Bosnia and Herzegovina
+Bosnia and Herzegovina
+Bosnia and Herzegovina
+Bosnia and Herzegovina
+Bosnia and Herzegovina
+Belarus
+Belarus
+Belarus
+Belarus
+Belarus
+Belarus
+Belize
+Belize
+Belize
+Bolivia
+Bolivia
+Bolivia
+
+HDZ-HSS-HSP-HNS-HKDU-HSP-AS BiH-HDU BiH
+Our Party
+Party of Democratic Action
+Party of Democratic Progress
+SDS-NDP-NS-SRS
+Social Democratic Party of Bosnia and Herzegovina
+Union for a Better Future of BiH
+Belarusian Patriotic Party
+Communist Party of Belarus
+Liberal Democratic Party of Belarus
+Non-partisans
+Republican Party of Labour and Justice
+United Civil Party
+Others
+People's United Party
+United Democratic Party
+Christian Democratic Party
+Movement for Socialism
+National Unity Front
+32
+
+PA-PTB
+AND
+ABT
+AS
+UN
+FCBE
+AE
+FDU
+PRD
+RB-RP
+UB
+ADFRDA
+CDP
+CFDB
+ODT
+PDS
+FA
+UDD
+UPC
+UPR-PS
+UPR
+AL
+BNP
+BTF
+JP
+JP(M)
+JSD
+WPB
+BSP
+GERB
+DPS
+UP
+Volya
+AM
+Ind.
+AA
+DNA
+FNM
+PLP
+SNSD
+DF
+DNS
+HDZHSSNS
+SDA
+PDP
+SDS-List
+SDP
+SBB-BiH
+BPR
+PKB
+LDPB
+Non-Part
+RPTS
+UCP
+Other
+PUP
+UDP
+PDC
+MAS
+UN
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+122
+119
+120
+121
+123
+125
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+
+Brazil
+Brazil
+Brazil
+Brazil
+Brazil
+Brazil
+Brazil
+Brazil
+Barbados
+Barbados
+Bhutan
+Bhutan
+Botswana
+Botswana
+Botswana
+Canada
+Canada
+Canada
+Canada
+Canada
+Switzerland
+Switzerland
+Switzerland
+Switzerland
+Switzerland
+Switzerland
+Switzerland
+Switzerland
+Switzerland
+Switzerland
+Chile
+Chile
+Chile
+Chile
+Cote d'Ivoire
+Cote d'Ivoire
+Cote d'Ivoire
+Cote d'Ivoire
+Cote d'Ivoire
+Cameroon
+Cameroon
+Cameroon
+Cameroon
+Cameroon
+Cameroon
+Cameroon
+Democratic Republic of the
+Congo
+Democratic Republic of the
+Congo
+Democratic Republic of the
+Congo
+Republic of the Congo
+Republic of the Congo
+Republic of the Congo
+Republic of the Congo
+Republic of the Congo
+Republic of the Congo
+Republic of the Congo
+Republic of the Congo
+Republic of the Congo
+Republic of the Congo
+Colombia
+
+www.GlobalPartySurvey.org
+
+Brazilian Democratic Movement
+Brazilian Republican Party
+Brazilian Socialist Party
+Democrats
+Progressive Party
+Social Democracy Party
+Social Liberal Party
+Workers' Party
+Barbados Labor Party
+Democratic Labor Party
+Bhutan United
+Peace and Prosperity
+Botswana Congress Party
+Botswana Democratic Party
+Umbrella for Democratic Change
+Bloc Quebecois
+Conservative Party
+Green Party
+Liberal Party
+New Democratic Party
+Christian Democratic People's Party
+Conservative Democratic Party of Switzerland
+Evangelical People's Party of Switzerland
+The Liberals
+Green Liberal Party of Switzerland
+Green Party of Switzerland
+Social Democratic Party
+Swiss Party of Labour
+Swiss People's Party
+Ticino League
+Broad Front
+Chile Let's Go
+Democratic Convergence
+The Force of the Majority
+Independents
+Ivorian Popular Front
+Rally of Houphouetists for Democracy and Peace
+Union for Cote d'Ivoire
+Union for Democracy and Peace in Cote d'Ivoire
+Cameroon Democratic Union
+Cameroon People's Democratic Movement
+Cameroon Renaissance Movement
+Movement for the Defense of the Republic
+National Union for Democracy and Progress
+Social Democratic Front
+Union of the Peoples of Cameroon
+
+MDB
+PRB
+PSB
+DEM
+PP
+PSDB
+PSL
+PT
+BLP
+DLP
+DNT
+DPT
+BCP
+BDP
+UDC
+BQ
+CPC
+GPC
+LP
+NDP
+CVP
+BDP
+EVP
+FDP
+GPS
+GLP
+SP
+PdA
+SVP
+LdT
+FA
+CV
+DC
+FM
+Ind.
+FPI
+RHDP
+UPCI
+UDPCI
+UDC
+CPDM
+CRM
+MDR
+UNDP
+SDF
+UPC
+
+Heading for Change
+
+CACH
+
+Joint Front for Congo
+
+FCC
+
+Lamuka Coalition
+Action Movement for Renewal
+Club 2002 PUR
+Congolese Party of Labour
+Dynamic for the Republic and Recovery
+Independents
+Pan-African Union for Social Democracy
+Party for Agreement and Political Action
+Patriotic Front
+Rally for Democracy and Social Progress
+Union for a People's Movement
+Alternative Democratic Polo Party
+
+Lamuka
+MAR
+2002
+PCT
+DRD
+Ind.
+UPADS
+PAPA
+PA
+RPDS
+UPM
+PDA
+
+33
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+
+Colombia
+Colombia
+Colombia
+Colombia
+Colombia
+Colombia
+Colombia
+Colombia
+Colombia
+Comoros
+Comoros
+Comoros
+Comoros
+Comoros
+Comoros
+Comoros
+Cape Verde
+Cape Verde
+Cape Verde
+Cape Verde
+Cape Verde
+Cape Verde
+Costa Rica
+Costa Rica
+Costa Rica
+Costa Rica
+Costa Rica
+Costa Rica
+Costa Rica
+Costa Rica
+Costa Rica
+Costa Rica
+Cuba
+Cyprus
+Cyprus
+Cyprus
+Cyprus
+Cyprus
+Cyprus
+Cyprus
+Cyprus
+Czech Republic
+Czech Republic
+Czech Republic
+Czech Republic
+Czech Republic
+Czech Republic
+Czech Republic
+Czech Republic
+Czech Republic
+Germany
+Germany
+Germany
+Germany
+Germany
+Germany
+Germany
+Djibouti
+Djibouti
+Djibouti
+Denmark
+Denmark
+Denmark
+
+www.GlobalPartySurvey.org
+
+Citizen Option Party
+Coalition List of the Decency
+Colombian Conservative Party
+Colombian Liberal Party
+Democratic Center Party
+Green Alliance Party
+Independent Movement of Absolute Renovation
+National Unity Social Party / Party of the U
+Radical Change Party
+Convention for the Renewal of the Comoros
+Democratic Rally of the Comoros
+Independents
+JUWA party
+Party for the Harmony of the Comoros
+Rally for an Alternative of Harmonious and Integrated Development
+Union for the Development of the Comoros
+African Party for the Independence of Cape Verde
+Democratic and Independent Cape Verdean Union
+Labour and Solidarity Party
+Movement for Democracy
+People's Party
+Social Democratic Party
+Accessibility without Exclusion
+Broad Front
+Citizens Action Party
+Libertarian Movement Party
+National Integration
+National Liberation Party
+National Restoration
+New Generation Party
+Social Christian Unity Party
+Social-Christian Republican Party
+Communist Party
+Citizen's Alliance
+Democratic Alignment
+Democratic Rally
+Green Party - Citizen's Alliance
+Movement of Social Democrats
+National People's Front
+Progressive Party of the Working People
+Solidarity Movement
+ANO 2011
+Christian and Democratic Union – Czechoslovak People's Party
+Civic Democratic Party
+Communist Party of Bohemia and Moravia
+Czech Pirate Party
+Czech Social Democratic Party
+Freedom and Direct Democracy
+Mayors and Independents
+TOP 09
+Alliance 90/The Greens
+Alternative for Germany
+Christian Democratic Union
+Christian Social Union in Bavaria
+Free Democratic Party
+Social Democratic Party
+The Left
+Center of Unified Democrats
+Union for Democracy and Justice / Djibouti Development Party
+Union for the Presidential Majority
+Alternative
+Christian Democrats
+Conservative People's Party
+34
+
+OC
+List of
+PCC
+PLC
+PCD
+VA
+Mira
+la U
+CR
+CRC
+RDC
+Ind.
+Sun
+PEC
+RADHI
+UPDC
+PAICV
+UCID
+PTS
+MPD
+PP
+PSD
+AE
+FA
+PAC
+PML
+PIN
+PLN
+PREN
+PNG
+PUSC
+PRS
+PCC
+SYM
+DIKO
+DISY
+CG
+EDEK
+ELAM
+AKEL
+KINHMA
+ANO
+KDU–Č
+ODS
+KSČM
+Pi
+ČSSD
+SPD
+STAN
+TOP 09
+GRÜNE
+AfD
+CDU
+CSU
+FDP
+SPD
+DL
+CDU
+UDJ-PDD
+UMP
+A
+KD
+C
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+245
+247
+248
+249
+250
+251
+246
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+
+Denmark
+Denmark
+Denmark
+Denmark
+Denmark
+Denmark
+Denmark
+Dominican Republic
+Dominican Republic
+Dominican Republic
+Dominican Republic
+Dominican Republic
+Algeria
+Algeria
+Algeria
+Algeria
+Algeria
+Ecuador
+Ecuador
+Ecuador
+Ecuador
+Ecuador
+Ecuador
+Ecuador
+Egypt
+Egypt
+Egypt
+Egypt
+Egypt
+Egypt
+Egypt
+Egypt
+Egypt
+Egypt
+Eritrea
+Spain
+Spain
+Spain
+Spain
+Spain
+Spain
+Spain
+Spain
+Estonia
+Estonia
+Estonia
+Estonia
+Estonia
+Estonia
+Ethiopia
+Ethiopia
+Ethiopia
+Ethiopia
+Ethiopia
+Ethiopia
+Ethiopia
+Finland
+Finland
+Finland
+Finland
+Finland
+Finland
+Finland
+
+www.GlobalPartySurvey.org
+
+Danish People's Party
+Liberal Alliance
+Radical Left
+Social Democratic Party
+Socialist People's Party
+Unity List-Red Green Alliance
+Left, Liberal Party of Denmark
+Dominican Liberation Party
+Institutional Social Democratic Bloc
+Liberal Reformist Party
+Modern Revolutionary Party
+Social Christian Reformist Party
+HMS Alliance
+Nadha-Adala-Bina
+National Democratic Rally
+National Liberation Front
+Tajamoua Emel El Djazair
+Creating Opportunities Movement
+Fuerza Ecuador
+January 21 Patriotic Society Party
+Movimiento Alianza Pais
+Pachakutik Plurinational Unity Movement - New Country
+Party of the Democratic Left
+Social Christian Party
+Conference Party
+Conservative Party
+Democratic Peace Party
+Free Egyptians Party
+Guards of the Homeland
+Independents
+Nation's Future Party
+Party of the Light (Al-Nour)
+Republican People's Party
+The New Wafd Party
+People's Front for Democracy and Justice
+Basque Country Unite
+Citizens
+People's Party
+Republican Left of Catalonia
+Spanish Socialist Workers' Party
+Together for Catalonia
+Unidas Podemos
+Vox
+Conservative People's Party of Estonia
+Estonian Centre Party
+Estonian Free Party
+Estonian Reform Party
+Social-Democratic Party
+Union of Pro Patria and Res Publica
+Afar National Democratic Party
+Ethiopian People's Revolutionary Democratic Front
+Somali People's Democratic Party
+The Argoba People Democratic Organization
+The Benishangul Gumuz Peoples Democratic Party
+The Gambela People's Unity Democratic Movement
+The Harari National League
+Center Party
+Christian Democrats
+Green League
+Left Alliance
+National Coalition Party
+Others
+Social Democratic Party
+35
+
+DF
+LA
+RV
+SD
+SF
+En-O
+V
+PLD
+BIS
+PRL
+PRM
+PRSC
+TAJ
+NAB
+RND
+FLN
+MPA
+CREO
+FE
+PSP
+PAIS
+MUPP
+ID
+PSC
+Conferen
+Con
+DPP
+FEP
+Guards
+Ind.
+NFP
+HaN
+RPP
+Wafd
+PFDJ
+EHB
+Cs
+PP
+ERC
+PSOE
+JxCat
+UP
+VOX
+EKRE
+EK
+EFP
+ERP
+SDE/M
+IRL
+ANDP
+EPRDF
+SPDP
+ADPO
+BGPDP
+GPUDM
+HNL
+KESK
+KD
+Vihr
+Vas
+KOK
+Others
+SSDP
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+308
+309
+310
+311
+312
+313
+
+Finland
+Finland
+Fiji
+Fiji
+Fiji
+Fiji
+
+Swedish People's Party
+The Finns Party
+Fiji Labor Party
+FijiFirst
+HOPE Party
+National Federation Party
+
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+
+Fiji
+Fiji
+France
+France
+France
+France
+France
+France
+France
+Gabon
+Gabon
+Gabon
+United Kingdom
+United Kingdom
+United Kingdom
+United Kingdom
+United Kingdom
+United Kingdom
+United Kingdom
+United Kingdom
+United Kingdom
+United Kingdom
+Georgia
+Georgia
+Georgia
+Georgia
+Georgia
+Ghana
+Ghana
+Guinea
+Guinea
+Guinea
+Guinea
+Guinea
+Guinea
+the Gambia
+the Gambia
+the Gambia
+the Gambia
+the Gambia
+the Gambia
+Guinea-Bissau
+
+Social Democratic Liberal Party
+Unity Fiji Party
+Democratic Movement
+La France Insoumise
+La République En Marche
+National Rally
+Socialist Party
+The Republicans
+Union of Democrats and Independents
+Circle of Liberal Reformers
+Gabonese Democratic Party
+National Union
+Brexit Party
+Conservative and Unionist Party
+Democratic Unionist Party
+Green Party
+Labour Party
+Liberal Democrats
+Plaid Cymru
+Scottish National Party
+Sinn Féin
+UK Independence Party
+Free Democrats
+Georgian Dream
+Independents
+Topadze - Industrialists, Our Fatherland
+United National Movement
+National Democratic Congress
+New Patriotic Party
+New Generation for the Republic
+Party of Hope for National Development
+Rally of the Guinean People
+Union for the Progress of Guinea
+Union of Democratic Forces of Guinea
+Union of Republican Forces
+Alliance for Patriotic Reorientation and Construction
+Gambia Democratic Congress
+National Reconciliation Party
+People's Democratic Organization for Independence and Socialism
+People's Progressive Party
+United Democratic Party
+African Party for the Independence of Guinea-Bissau and Cape Verde
+
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+
+Guinea-Bissau
+Guinea-Bissau
+Guinea-Bissau
+Guinea-Bissau
+Guinea-Bissau
+Guinea-Bissau
+Equatorial Guinea
+Equatorial Guinea
+Equatorial Guinea
+Greece
+Greece
+Greece
+Greece
+
+Assembly of the People United–Democratic Party of Guinea-Bissau
+Madem-G15
+New Democracy Party
+Party for Democratic Convergence
+Party for Social Renewal
+Union for Change
+Citizens for Innovation
+Democratic Party of Equatorial Guinea
+Together We Can
+Communist Party of Greece
+Golden Dawn
+Independent Greeks
+New Democracy
+36
+
+RKP
+PS
+FLP
+FF
+HOPE
+NFP
+SODELP
+A
+UFP
+MoDem
+FI
+REM
+FN
+PS
+Rep
+UDI
+UNPR
+PDG
+RHM
+BRX
+CON
+DUP
+GRN
+Lab
+LD
+PC
+SNP
+SF
+UKIP
+FD
+GD
+Ind.
+Topadze
+UNM
+NDC
+NPP
+NGR
+PEDN
+RPG AR
+UPG
+UFDG
+UFR
+APRC
+GDC
+NRP
+PDOIS
+PPP
+UDP
+PAIGC
+APUPDGB
+Madem
+PND
+PCD
+PRS
+UM
+CI
+PDGE
+JP
+KKE
+XA
+ANEL
+ND
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+
+Greece
+Greece
+Greece
+Greece
+Grenada
+Guatemala
+Guatemala
+Guatemala
+Guatemala
+Guatemala
+Guatemala
+Guatemala
+Guatemala
+Guatemala
+Guatemala
+Guyana
+
+Pan Hellenic Socialist Movement
+Syriza Unionist Social Front
+The River
+Union of Centrists
+New National Party
+Commitment, Renewal, and Order Party
+Encounter for Guatemala
+Everyone Together for Guatemala
+Guatemalan National Revolutionary Unity
+National Convergence Front
+National Union for Change
+National Unity for Hope
+Patriot Party
+Renewed Democratic Liberty Party
+Vision with Values
+People’s Progressive Party – Civic
+
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+409
+407
+408
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+
+Guyana
+Croatia
+Croatia
+Croatia
+Croatia
+Croatia
+Croatia
+Croatia
+Croatia
+Croatia
+Croatia
+Haiti
+Haiti
+Haiti
+Haiti
+Haiti
+Haiti
+Haiti
+Haiti
+Haiti
+Haiti
+Hungary
+Hungary
+Hungary
+Hungary
+Hungary
+Hungary
+Hungary
+Hungary
+Indonesia
+Indonesia
+Indonesia
+Indonesia
+Indonesia
+Indonesia
+Indonesia
+Indonesia
+Indonesia
+Indonesia
+India
+India
+India
+India
+India
+India
+India
+
+United Guyana-National Unity (APNU)
+Bridge of Independent Lists
+Croatian Labourists - Labour Party
+Even Stronger Istria Coalition
+For Prime Minister Coalition
+HDSSB Coalition
+HDZ Coalition
+Homeland Coalition
+People's Coalition
+The Only Option Coalition
+Turn Croatia Around Coalition
+Alternative League for the Progress and Emancipation of Haiti
+Convention for Democratic Unity
+Fanmi Lavalas
+Haiti in Action
+Haitian Tet Kale Party
+Tet Kole sous Chimen Devlopman pou un Nord'Ouest uni et Renonve
+Organization of People in Struggle
+Patriotic Unity Party
+Regrouping of Social Democratic Fusion
+Truth
+Fidesz
+Hungarian Socialist Party - Dialogue for Hungary
+Independents
+Jobbik, Movement for a Better Hungary
+National Self-Government of Germans in Hungary
+Politics Can Be Different
+The Democratic Coalition
+Together – Party for a New Era
+Democratic Party
+Great Indonesia Movement Party
+Indonesian Democratic Party
+National Awakening Party
+National Democrat Party
+National Mandate Party
+Party of the Functional Groups
+People's Conscience Party
+Prosperous Justice Party
+United Development Party
+All India Anna Dravida Munnetra Kazhagam
+All India Trinamool Congress
+Bharatiya Janata Party
+Biju Janata Dal
+Communist Party of India
+Indian National Congress
+Shivsena
+37
+
+PASOK
+SYRIZA
+River
+EK
+NNP
+CREO
+EG
+Todos
+GNRU
+FCN
+UCN
+UNE
+PP
+LIDER
+Viva
+PPP-C
+APNU/A
+FC
+MOST
+CL-LP
+SIC
+PMC
+HDSSB
+HDZ
+HC
+SPH
+OOP
+TCAC
+LAPEH
+KID
+FL
+AAA
+PHTK
+MOSANO
+OPL
+IP
+RSDF
+Verite
+Fidesz
+MSZP-PM
+Ind.
+Jobbik
+MNOÖ
+LMP
+DK
+Együtt
+PD
+Gerindra
+PDI
+PKB
+NDP
+PAN
+Golkar
+Hanura
+PKS
+PPP
+ADMK
+AITC
+BJP
+BJD
+CP
+INC
+SHS
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+
+India
+India
+India
+Ireland
+Ireland
+Ireland
+Ireland
+Ireland
+Ireland
+Ireland
+Ireland
+Ireland
+Ireland
+Iran
+Iran
+Iran
+Iran
+Iraq
+Iraq
+Iraq
+Iraq
+Iraq
+Iraq
+Iraq
+Iraq
+
+Telangana Rashtra Samithi
+Telugu Desam
+Yuvajana Sramika Rythu Congress Party
+Anti-Austerity Alliance - People Before Profit
+Fianna Fail
+Fine Gael
+Green Party
+Independent Alliance
+Independents
+Labour Party
+Renua Ireland
+Sinn Fein
+Social Democrats
+Executives of Construction Party
+Front of Islamic Revolution Stability
+Islamic Iran Participation Front
+United Front of Principalists
+Fatah Alliance
+Kurdistan Democratic Party
+Marching Towards Reform
+Movement for Change
+National Coalition
+National Wisdom Movement
+Patriotic Union of Kurdistan
+State of Law Coalition
+
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+
+Iraq
+Iraq
+Iceland
+Iceland
+Iceland
+Iceland
+Iceland
+Iceland
+Iceland
+Iceland
+Iceland
+Israel
+Israel
+Israel
+Israel
+Israel
+Israel
+Israel
+Israel
+Israel
+Israel
+
+477
+478
+
+Italy
+Italy
+
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+
+Italy
+Italy
+Italy
+Italy
+Jamaica
+Jamaica
+Jamaica
+Jamaica
+Jordan
+Jordan
+Jordan
+Jordan
+
+Uniters for Reform Coalition
+Victory Alliance
+Bright Future
+Centre Party
+Independence Party
+Left-Green Movement
+People's Party
+Pirate Party
+Progressive Party
+Reform Party
+Social Democratic Alliance
+Jewish Home
+Joint List: Hadash, United Arab List, Balad, Taal
+Kulanu/All of Us
+Likud
+Meretz
+Shas
+United Torah Judaism
+There is a Future
+Israel is our Home
+Zionist Bloc
+Centre-Left Coalition (Democratic Party, More Europe,Together, Popular
+Civic, SVP-PATT)
+Associative Movement Italians Abroad
+Centre-Right Coalition (Lega Nord, Forza Italia, Brothers of Italy, Us with
+Italy)
+Five Star Movement
+Free and Equal
+South American Union of Italian Emigrants
+Jamaica Labour Party
+Marcus Garvey People's Political Party
+National Democratic Movement
+People's National Party
+Islamic Action Front
+Islamic Centrist Party
+National Union Party
+Stronger Jordan
+38
+
+TRS
+TDP
+YSRCP
+AAA
+FF
+FG
+Green
+NC
+Ind.
+Lab
+RI
+SF
+DS
+ECP
+FIRS
+IIPF
+UFP
+FA
+KDP
+Saairun
+BG
+AW
+NWM
+PUK
+SLC
+Muttahido
+on
+Victory
+BF
+M
+D
+VG
+FIF
+P
+FSF
+V
+XS
+HH
+JL
+Kulanu
+L
+Meretz
+Shas
+YH
+YA
+YB
+ZB
+CCS
+MAIE
+CD
+M5S
+LeU
+USEI
+JLP
+PPP
+NDM
+PNP
+IAF
+ICP
+NUP
+SJ
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+512
+509
+510
+511
+513
+514
+515
+516
+517
+518
+519
+520
+521
+
+Jordan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Japan
+Kazakhstan
+Kazakhstan
+Kazakhstan
+Kazakhstan
+Kazakhstan
+Kazakhstan
+Kenya
+Kenya
+Kenya
+Kenya
+Kenya
+Kenya
+Kenya
+Kenya
+Kenya
+Kyrgyzstan
+Kyrgyzstan
+Kyrgyzstan
+Kyrgyzstan
+Kyrgyzstan
+Kyrgyzstan
+Cambodia
+Cambodia
+
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+
+Cambodia
+Republic of Korea
+Republic of Korea
+Republic of Korea
+Republic of Korea
+Republic of Korea
+Kuwait
+Kuwait
+Kuwait
+Kuwait
+Kuwait
+Kuwait
+Kuwait
+Laos
+Laos
+Lebanon
+Lebanon
+Lebanon
+Lebanon
+Lebanon
+Lebanon
+Lebanon
+Lebanon
+Lebanon
+Lebanon
+Libya
+Libya
+Libya
+Libya
+Libya
+Libya
+
+www.GlobalPartySurvey.org
+
+The Homeland
+Constitutional Democratic Party of Japan
+Japanese Communist Party
+Komeitō
+Liberal Democratic Party
+Nippon Ishin no Kai
+Party of Hope
+Social Democratic Party
+Birlik
+Communist People's Party of Kazakhstan
+Democratic Party of Kazakhstan
+Kazakhstan Social and Democratic Party 'Auyl'
+Nationwide Social Democratic Party
+Nur Otan
+Amani Coalition
+Chama Cha Uzalendo
+Forum for the Restoration of Democracy-People
+Independents
+Jubilee
+Kenya African National Union
+Orange Democratic Movement
+Party for Development and Reform
+Wiper Democratic Movement - Kenya
+Kyrgyzstan Party
+Onuguu-Progress
+Respublika - Ata-Zhurt
+Social Democratic Party of Kyrgyzstan
+Socialist Party Ata Meken
+Stay United
+Cambodian People's Party
+League for Democracy Party
+National United Front for an Independent, Neutral, Peaceful &
+Cooperative Cambodia
+Independents
+Justice Party
+Minjoo Party
+New Frontier Party
+People's Party
+Hadas
+Islamic Salafi Alliance
+Justice and Peace Alliance
+Kuwait Democratic Forum
+National Democratic Alliance
+National Islamic Alliance
+Popular Action Bloc
+Independents
+Lao People's Revolutionary Party
+Amal Movement
+Azm Party
+Free Patriotic Movement
+Hezbollah
+Independents/Others
+Kataeb-Phalangist Party
+Progressive Socialist Party
+Tadamun Party (Solidarity)
+The Future Movement
+The Lebanese Forces
+Justice and Construction Party
+Libyan National Democratic Party
+National Centrist Party
+National Forces Alliance
+National Front Party
+National Party for Development and Welfare
+39
+
+Home
+CDP
+JCP
+NKP
+LDP
+JIP
+KnT
+SDP
+Birlik
+QKHP
+AQJOL
+Auyl
+ZSDP
+NO
+ANC
+CCM
+Ford Peo
+Ind.
+JP
+KANU
+ODM
+PDR
+WDM-K
+KP
+OP
+RAZ
+SDPK
+AM
+SU
+CPP
+LDP
+FUNCIN
+PE
+Ind.
+JP
+Minjoo
+NFP
+PP
+Ind.
+ISA
+JPA
+KDF
+NDA
+NIA
+PAB
+Ind.
+LPRP
+Amal
+Azm
+FPM
+HZ
+Ind.
+Kataeb
+PSP
+TP
+FM
+LF
+JCP
+LNDP
+NCP
+NFA
+NFP
+NPDW
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+570
+571
+573
+572
+574
+575
+576
+577
+578
+579
+580
+581
+582
+583
+584
+585
+586
+587
+588
+589
+590
+591
+592
+593
+594
+595
+596
+597
+598
+
+Libya
+Libya
+Libya
+Libya
+Lesotho
+Lesotho
+Lesotho
+Lesotho
+Lesotho
+Lesotho
+Lesotho
+Lesotho
+Lesotho
+Lesotho
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Lithuania
+Luxembourg
+Luxembourg
+Luxembourg
+Luxembourg
+Luxembourg
+Luxembourg
+Luxembourg
+Luxembourg
+Luxembourg
+Latvia
+Latvia
+Latvia
+Latvia
+Latvia
+Latvia
+Latvia
+Latvia
+Latvia
+North Macedonia
+North Macedonia
+North Macedonia
+North Macedonia
+
+599
+600
+601
+602
+603
+604
+605
+606
+607
+608
+609
+610
+611
+612
+613
+
+North Macedonia
+North Macedonia
+Morocco
+Morocco
+Morocco
+Morocco
+Morocco
+Morocco
+Morocco
+Morocco
+Morocco
+Morocco
+Moldova
+Moldova
+Moldova
+
+www.GlobalPartySurvey.org
+
+The Foundation
+The Message
+Union for Homeland
+Wadi al-Hiya Alliance
+All Basotho Convention
+Alliance of Democrats
+Basotho National Party
+Basutoland Congress Party
+Democratic Congress
+Lesotho Congress for Democracy
+Movement for Economic Change
+National Independent Party
+Popular Front for Democracy
+Reformed Congress of Lesotho
+Homeland Union – Lithuanian Christian Democrats
+Independents
+Labor Party
+Liberal Movement
+Lithuanian Center Party
+Lithuanian Peasant and Greens Union
+Lithuanian List
+Lithuanian Poles' Electoral Action - Christian Family
+Order and Justice
+Social Democratic Party of Lithuania
+Alternative Democratic Reform Party
+Christian Social People's Party
+Communist Party of Luxembourg
+Democratic Party
+Luxembourg Socialist Workers' Party
+Party for Complete Democracy
+Pirate Party
+The Green Alternative
+The Left
+For Development/For!
+From the Heart for Latvia
+Harmony
+Latvian Association of Regions
+National Alliance
+New Unity
+The New Conservative Party
+Union of Greens and Farmers
+Who Owns the State
+Alliance of Albanians
+Besa Movement
+Democratic Party of Albanians
+Democratic Union for Integration
+Internal Macedonian Revolutionary Organization-Democratic Party for
+Macedonia
+Social Democratic Union coalition
+Authenticity and Modernity Party
+Constitutional Union
+Democratic and Social Movement
+Federation of the Democratic Left
+Istiqlal Party
+Justice and Development Party
+National Rally of Independents
+Party of Progress and Socialism
+Popular Movement
+Socialist Union of Popular Forces
+Democratic Party of Moldova
+Liberal Democratic Party
+Liberal Party
+40
+
+Foundatio
+n
+Message
+UH
+WHA
+ABC
+AD
+BNP
+BAC
+DC
+LCD
+MEC
+NIP
+PFD
+RCL
+TS-LKD
+Ind.
+DP
+LRLS
+LCP
+LVŽS
+LL
+LLRA
+PTT
+LSDP
+ADR
+CSV
+KPL
+DP
+LSAP
+PID
+PP
+GAP
+DL
+AP!
+NSL
+SPDS
+LRA
+NA
+JV
+JKP
+ZZS
+KPV LV
+AA
+BESA
+PDSH
+BDI
+VMRODPM
+SDSM
+PAM
+CU
+DSM
+FDL
+PI
+JDP
+RNI
+PPS
+PM
+USFP
+PDM
+PLDM
+PL
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+614
+615
+616
+617
+
+Moldova
+Moldova
+Madagascar
+Madagascar
+
+Party of Communists
+Party of Socialists
+Andrin Ny Madagasikara
+Antoko Maitso
+
+618
+619
+620
+621
+622
+623
+
+Madagascar
+Madagascar
+Madagascar
+Madagascar
+Madagascar
+Madagascar
+
+Economic Liberalism and Democratic Action for National Recovery
+Hiaraka Isika
+Independents and Minor Parties
+Ravalomanana Movement
+Sambo Fiaran I Noe
+Trano Kasaka
+
+624
+625
+626
+627
+628
+629
+630
+
+Madagascar
+Madagascar
+Maldives
+Maldives
+Maldives
+Maldives
+Maldives
+
+Vondrona Politika Miara dia Malagasy Miara Miainga
+With President Andry Rajoelina
+Adhaalath Party
+Jumhooree Party
+Maldives Development Alliance
+Maldivian Democratic Party
+Progressive Party of Maldives
+
+631
+632
+633
+
+Mexico
+Mexico
+Mexico
+
+Coalición PRI-PVEM
+Independent
+Movimiento Ciudadano
+
+634
+635
+636
+637
+638
+639
+640
+641
+642
+643
+644
+645
+646
+647
+648
+649
+650
+651
+652
+653
+654
+655
+656
+657
+658
+659
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671
+672
+
+Mexico
+Mexico
+Mexico
+Mexico
+Mexico
+Mexico
+Mexico
+Mali
+Mali
+Mali
+Mali
+Mali
+Mali
+Mali
+Mali
+Mali
+Malta
+Malta
+Myanmar
+Myanmar
+Myanmar
+Myanmar
+Myanmar
+Myanmar
+Myanmar
+Myanmar
+Myanmar
+Myanmar
+Montenegro
+Montenegro
+Montenegro
+Montenegro
+Montenegro
+Montenegro
+Montenegro
+Montenegro
+Montenegro
+Mongolia
+Mongolia
+
+Movimiento Regeneracion Nacional
+Partido Accion Nacional
+Partido de la Revolucion Democrática
+Partido del Trabajo
+Partido Encuentro Social
+Partido Humanista
+Partido Nueva Alianza
+African Solidarity for Democracy and Independence
+Alliance for Democracy in Mali
+Alternative Forces for Renewal and Emergence
+Congress for Democratic Initiative
+Economic and Social Development Party
+Independents
+Rally for Mali
+Union for Democracy and Development
+Union for the Republic and Democracy
+Forza Nazzjonali
+Malta Labor Party
+Arakan National Party
+Kachin State Democracy Party
+Kokang Democracy and Unity Party
+Lisu National Development Party
+National League for Democracy
+Pa-O National Organization
+Shan Nationalities League for Democracy
+Ta-Arng Nationality Party
+Union Solidarity and Development Party
+Zomi Congress for Democracy
+Albanians Decisively
+Bosniak Party
+Croatian Civic Initiative
+Democratic Front
+Democratic Montenegro
+Democratic Party of Socialists
+Key Coalition
+Social Democratic Party
+Social Democrats of Montenegro
+Democratic Party
+Independents
+41
+
+PCRM
+PSRM
+ANM
+Greens
+LEADERF
+PHI
+Ind.
+MR
+SFN
+TK
+VPM
+MMM
+MAPAR
+AP
+JP
+MDA
+MDP
+PPM
+PRIPVEM
+Ind.
+MC
+MOREN
+A
+PAN
+PRD
+PT
+PES
+PH
+PANAL
+SADI
+ADEMA
+FARE
+CNID
+ESDP
+Ind.
+RPM
+UDD
+URD
+FN
+PL
+ANP
+KSDP
+KDUP
+LNDP
+NLD
+PNO
+SNLD
+TNP
+USDP
+ZCD
+AO
+BS
+CCI
+DF
+DCG
+DPS
+Kljuc
+SDP
+SD
+DP
+Ind.
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+673
+674
+
+Mongolia
+Mongolia
+
+Mongolian People's Revolutionary Party
+Mongolian People’s Party
+
+675
+
+Mozambique
+
+Mozambican Liberation Front
+
+676
+677
+678
+679
+680
+
+Mozambique
+Mozambique
+Mauritania
+Mauritania
+Mauritania
+
+Mozambican National Resistance
+Mozambique Democratic Movement
+National Rally for Reform and Development
+Other
+Union for the Republic
+
+681
+682
+
+Mauritius
+Mauritius
+
+Militant Socialist Movement- Maurition Social Democracy
+Rodrigues People's Organisation
+
+683
+684
+685
+686
+687
+688
+689
+690
+691
+694
+692
+693
+695
+696
+697
+698
+699
+700
+701
+702
+703
+704
+705
+706
+707
+708
+709
+710
+711
+712
+713
+714
+715
+716
+717
+718
+719
+720
+726
+721
+722
+723
+724
+725
+727
+728
+729
+730
+731
+
+Mauritius
+Malawi
+Malawi
+Malawi
+Malawi
+Malawi
+Malawi
+Malawi
+Malaysia
+Malaysia
+Malaysia
+Malaysia
+Malaysia
+Namibia
+Namibia
+Namibia
+Namibia
+Namibia
+Nigeria
+Nigeria
+Nigeria
+Nigeria
+Nigeria
+Nigeria
+Nigeria
+Nigeria
+Nigeria
+Nigeria
+Nicaragua
+Nicaragua
+Nicaragua
+Nicaragua
+Nicaragua
+Nicaragua
+Netherlands
+Netherlands
+Netherlands
+Netherlands
+Netherlands
+Netherlands
+Netherlands
+Netherlands
+Netherlands
+Netherlands
+Norway
+Norway
+Norway
+Norway
+Norway
+
+The Labor Party - Mauritian Militant Movement
+Alliance for Democracy
+Democratic Progressive Party
+Independents
+Malawi Congress Party
+People's Party
+United Democratic Front
+United Transformation Unit
+Alliance of Hope
+National Front
+Independents
+Malaysian Islamic Party
+Sabah Heritage Party
+All People's Party
+Democratic Turnhalle Alliance of Namibia
+Rally of Democracy and Progress
+SWAPO Party of Namibia
+United Democratic Front
+Action Alliance
+African Democratic Congress
+African Peoples Alliance
+All Progressives Congress
+Alliance For Democracy
+Allied Congress Party of Nigeria
+Citizens Popular Party
+National Conscience Party
+Peoples Democratic Party
+Peoples Party of Nigeria
+Alliance for the Republic
+Conservative Party of Nicaragua
+Independent Liberal Party
+Liberal Constitutionalist Party
+Nicaraguan Liberal Alliance
+Sandinista National Liberation Front
+50PLUS
+Christian Democratic Appeal
+Christian Union Party
+Democrats 66
+Green Left
+Labour Party
+Party for Freedom
+Party for the Animals
+People's Party for Freedom and Democracy
+Socialist Party
+Centre Party
+Christian Democratic Party
+Conservative Party
+Green Party
+Labour Party
+42
+
+MAXN
+MAN
+FRELIM
+O
+RENAM
+O
+MDM
+RNRD
+Other
+UPR
+MSMPMSD
+OPR
+PTRMMM
+AFORD
+DPP
+Ind.
+MCP
+PP
+UDF
+UTM
+PH
+BN
+Ind.
+PAS
+SABAH
+APP
+DTA
+RDP
+SWAPO
+UDF
+AA
+ADC
+APA
+APC
+AD
+ACPN
+CPP
+NCP
+PDP
+PPN
+APRE
+PC
+PLI
+PLC
+ALN
+FSLN
+50+
+CDA
+CU
+D66
+GL
+PvdA
+PVV
+PvdD
+VVD
+SP
+Sp
+KrF
+H
+MdG
+AP
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+732
+733
+734
+735
+737
+736
+738
+744
+743
+742
+740
+741
+739
+745
+746
+748
+749
+747
+750
+751
+752
+753
+754
+755
+756
+757
+758
+759
+760
+761
+762
+
+Norway
+Norway
+Norway
+Norway
+Nepal
+Nepal
+Nepal
+Nepal
+Nepal
+Nepal
+Nepal
+Nepal
+Nepal
+New Zealand
+New Zealand
+New Zealand
+New Zealand
+New Zealand
+Pakistan
+Pakistan
+Pakistan
+Pakistan
+Pakistan
+Pakistan
+Pakistan
+Pakistan
+Pakistan
+Pakistan
+Panama
+Panama
+Panama
+
+Liberal Party
+Progress Party
+Red Party
+Socialist Left Party
+Communist Party of Nepal
+Communist Party of Nepal (Maoist Centre)
+Federal Socialist Forum, Nepal
+National Democracy Party
+National Janata Party
+National People's Front
+Nepal Worker's Peasants Party
+Nepali Congress
+New Power Party
+ACT
+Green Party
+Labour Party
+National Party
+New Zealand First Party
+Awami National Party
+Balochistan Awami Party
+Grand Democratic Alliance
+Independents
+Movement for Justice
+Muttahida Majlis-e-Amal
+Muttahida Qaumi Movement
+Pakistan Muslim League-Qaid
+Pakistan Muslim League, Nawaz Sharif faction
+Pakistan People’s Party
+Democratic Change
+Democratic Revolutionary Party
+Independents
+
+763
+764
+765
+766
+767
+768
+769
+770
+771
+772
+773
+774
+775
+776
+777
+778
+779
+780
+781
+782
+783
+784
+785
+
+Panama
+Panama
+Peru
+Peru
+Peru
+Peru
+Peru
+Peru
+Philippines
+Philippines
+Philippines
+Philippines
+Philippines
+Philippines
+Philippines
+Papua New Guinea
+Papua New Guinea
+Papua New Guinea
+Papua New Guinea
+Papua New Guinea
+Papua New Guinea
+Papua New Guinea
+Papua New Guinea
+
+Liberal Republican Nationalist Movement
+Panemeñista Party
+Alliance for the Progress of Peru
+Broad Front
+Peruvians for Change
+Popular Action
+Popular Alliance
+Popular Force
+Independents
+Liberal Party
+Nacionalista Party
+Nationalist People’s Coalition
+Philippine Democratic Party-People's Power
+Struggle of Democratic Filipinos
+United Nationalist Alliance
+National Alliance Party
+Pangu Party
+Papua New Guinea Party
+People's Labour Party
+People's National Congress
+People's Progress Party
+PNG National Party
+Social Democratic Party
+
+786
+787
+788
+789
+790
+791
+792
+
+Papua New Guinea
+Papua New Guinea
+Poland
+Poland
+Poland
+Poland
+Portugal
+
+Triumph Heritage Empowerment Rural Party
+United Resources Party
+Civic Platform
+Independents
+Law and Justice
+Polish Peasant Party
+Democratic Unity Coalition
+43
+
+MdG
+Frp
+R
+SV
+UML
+CPN(M)
+FSFN
+RPP
+RJPN
+JMN
+NMN
+NC
+NSP
+ACTNZ
+Greens
+Labour
+Nats
+NZFirst
+ANP
+BAP
+GDA
+Ind.
+PTI
+MMA
+MQM
+Qaid
+PML-N
+PPP
+CD
+PRD
+Ind.
+MOLIRE
+NA
+PP
+APU
+FA
+PKK
+AP
+PCC
+FP
+Ind.
+LP
+NP
+NPC
+PDB LA
+LDP
+UNA
+NAP
+PP
+PNGP
+PLP
+PNC
+PPP
+PNG-Nat
+SDP
+T.H.E.Part
+y
+URP
+PO
+Ind.
+PiS
+PSL
+CDU
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+793
+794
+795
+796
+797
+798
+799
+800
+801
+802
+803
+804
+805
+806
+807
+808
+809
+810
+811
+812
+813
+814
+815
+816
+817
+818
+819
+820
+821
+823
+824
+822
+825
+826
+827
+828
+829
+830
+831
+832
+833
+834
+835
+836
+837
+838
+839
+840
+841
+842
+843
+844
+845
+846
+847
+848
+849
+850
+852
+853
+855
+858
+860
+
+Portugal
+Portugal
+Portugal
+Portugal
+Paraguay
+Paraguay
+Paraguay
+Paraguay
+Paraguay
+Paraguay
+Paraguay
+Romania
+Romania
+Romania
+Romania
+Romania
+Romania
+Russia
+Russia
+Russia
+Russia
+Russia
+Russia
+Russia
+Russia
+Russia
+Russia
+Rwanda
+Rwanda
+Rwanda
+Rwanda
+Rwanda
+Sudan
+Sudan
+Sudan
+Sudan
+Singapore
+Singapore
+Singapore
+Singapore
+Singapore
+Singapore
+Singapore
+Singapore
+Singapore
+Singapore
+Solomon Islands
+Solomon Islands
+Solomon Islands
+Solomon Islands
+Solomon Islands
+Solomon Islands
+Solomon Islands
+Sierra Leone
+Sierra Leone
+Sierra Leone
+Sierra Leone
+Sierra Leone
+El Salvador
+El Salvador
+El Salvador
+El Salvador
+El Salvador
+
+www.GlobalPartySurvey.org
+
+Left Bloc
+People-Animals-Nature
+Portugal Ahead
+Socialist Party
+Authentic Liberal Radical Party
+Beloved Fatherland
+Green Party
+Let's Do It
+National Crusade Movement
+National Encounter Party
+National Republican Association - Colorado Party
+Alliance of Liberals and Democrats
+Democratic Union of Hungarians in Romania
+National Liberal Party
+Party of Social Democracy of Romania - Social Democratic Party
+People's Movement Party
+Save Romania Union
+A Just Russia
+Liberal Democratic Party of Russia
+Party of Growth
+Party of People's Freedom
+Rodina
+Russian Ecological Party
+Russian Party of Pensioners for Justice
+The Communist Party of the Russian Federation
+United Russia
+Yabloko
+Democratic Green Party of Rwanda
+Liberal Party
+Rwanda Patriotic Front
+Social Democratic Party
+Party Imberakuri
+Democratic Unionist Party
+Democratic Unionist Party (led by Jalal al-Digair)
+Independents/Other Parties
+National Congress
+Independent
+National Solidarity Party
+People's Action Party
+People's Power Party
+Reform Party
+Singapore Democratic Alliance
+Singapore Democratic Party
+Singapore People’s Party
+Singaporeans First
+Workers' Party
+Democratic Alliance Party
+Independent
+Kadare Party of Solomon Islands
+People's Alliance Party
+Solomon Islands Party for Rural Advancement
+Solomon Islands People First Party
+United Democratic Party
+All People's Congress
+Coalition for Change
+Independents
+National Grand Coalition
+Sierra Leone People's Party
+Christian Democratic Party
+Farabundo Marti National Liberation Front
+Grand Alliance for National Unity
+National Coalition Party
+Nationalist Republican Alliance
+44
+
+BE
+PAN
+PàF
+PS
+PLRA
+PQ
+PVP
+PH
+MCN
+PEN
+ANR
+ALDE
+UDMR
+PNL
+PSD
+PMP
+USR
+CP
+LDPR
+Rosta
+PARNAS
+Rodina
+Greens
+CPl
+CPRF
+ER
+Yabloko
+DGPR
+PL
+RDF
+PSD
+PSI
+DUP
+DUP al-D
+Other
+NCP
+Ind.
+NSP
+PAP
+PPP
+RF
+SDA
+SDP
+SPP
+SF
+WP
+SIDP
+Ind.
+Kadare
+PAP
+SIPRA
+PFP
+UDP
+APC
+C4C
+Ind.
+NGC
+SLPP
+PDC
+FMLN
+GANA
+PCN
+ARENA
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+861
+862
+863
+864
+865
+866
+867
+868
+869
+870
+871
+872
+873
+874
+
+Somalia
+Somalia
+Somalia
+Somalia
+Somalia
+Somalia
+Somalia
+Serbia
+Serbia
+Serbia
+Serbia
+Serbia
+Serbia
+Serbia
+
+875
+876
+
+Sao Tome and Principe
+Sao Tome and Principe
+
+877
+878
+879
+880
+881
+882
+883
+885
+886
+884
+887
+888
+889
+890
+891
+892
+893
+894
+895
+896
+897
+898
+899
+900
+901
+902
+903
+904
+905
+906
+907
+908
+909
+910
+911
+912
+913
+914
+915
+916
+917
+918
+919
+920
+921
+
+Sao Tome and Principe
+Sao Tome and Principe
+Suriname
+Suriname
+Suriname
+Suriname
+Suriname
+Slovakia
+Slovakia
+Slovakia
+Slovakia
+Slovakia
+Slovakia
+Slovakia
+Slovakia
+Slovenia
+Slovenia
+Slovenia
+Slovenia
+Slovenia
+Slovenia
+Slovenia
+Slovenia
+Slovenia
+Sweden
+Sweden
+Sweden
+Sweden
+Sweden
+Sweden
+Sweden
+Sweden
+Sweden
+Eswatini
+Eswatini
+Eswatini
+Syrian Arab Republic
+Syrian Arab Republic
+Syrian Arab Republic
+Chad
+Chad
+Chad
+Chad
+Chad
+Chad
+
+www.GlobalPartySurvey.org
+
+Democratic Party of Somalia
+Greater Somalia League
+Peace and Development Party
+Somali African National Union
+Somali Youth League
+Somalia Green Party
+Tayo Party
+Coalition for a Better Serbia
+Democratic Party
+Democratic Party of Serbia-Dveri
+Enough is Enough
+Serbian Progressive Party
+Serbian Radical Party
+Socialist Party of Serbia
+Force for Change Democratic Movement - Democratic Convergence
+Party
+Independent Democratic Action
+Movement for the Liberation of Sao Tome & Principe-Social Democratic
+Party
+Sao Tome and Principe Independent Citizen Movement Party
+A Combination
+National Democratic Party
+Party for Democracy and Development through Unity
+Progressive Reform Party
+Progressive Workers' and Farmers' Union
+Direction Social Democracy
+Freedom and Solidarity
+Bridge
+Network
+Ordinary People and Independent Personalities
+People's Party - Our Slovakia
+Slovak National Party
+We are Family
+Alliance of Alenka BratuÅ¡ek
+Democratic Party of Pensioners of Slovenia
+Left
+List of Marjan Sarec
+New Slovenia - Christian Democrats
+Party of Modern Center
+Slovenian Democratic Party
+Slovenian National Party
+Social Democrats
+Center Party
+Christian Democrats
+Feminist Initiative
+Green Party
+Liberal Party
+Moderate Party
+Sweden Democrats
+Swedish Social Democratic Party
+The Left Party
+Communist Party
+Ngwane National Liberatory Congress
+People's United Democratic Movement
+Independents
+National Progressive Front
+Popular Front for Change and Liberation
+Chadian Convention for Peace and Development
+Democratic and Socialist Party for Alternation
+Federation Action for the Republic
+National Rally for Democracy in Chad
+National Rally for Development and Progress
+National Union for Democracy and Renewal
+45
+
+DPS
+GSL
+PDP
+SANU
+SYL
+SGP
+TPP
+CBS
+DS
+DSS-Dver
+DJB
+SNS
+SRS
+SPS
+MDFM/P
+L
+ADI
+MLSTPSD
+MCISTP
+AC
+NDP
+DOE
+VHP/V7
+PALU
+SMER
+SaS
+MH
+SIET
+OLaNO
+LsNS
+SNS
+SME
+ZAB
+DeSUS
+L
+LMS
+Nsi
+SMC
+SDS
+SNP
+AL/SD
+C
+KD
+FI
+MP
+SLP
+M
+SD
+S
+V
+CP
+NNLC
+PUDM
+Ind.
+NPF
+PFCL
+CCPD
+DSPA
+FAR
+le Réve
+NRDP
+UNDR
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+922
+923
+924
+925
+926
+927
+928
+929
+930
+931
+932
+933
+934
+935
+936
+937
+938
+939
+940
+941
+942
+943
+944
+945
+946
+947
+948
+949
+950
+951
+952
+953
+954
+955
+956
+957
+958
+959
+960
+961
+962
+963
+964
+965
+966
+967
+968
+969
+970
+971
+972
+973
+974
+975
+976
+977
+978
+979
+980
+981
+982
+983
+984
+
+Chad
+Chad
+Chad
+Chad
+Togo
+Togo
+Togo
+Togo
+Thailand
+Thailand
+Thailand
+Thailand
+Thailand
+Thailand
+Thailand
+Thailand
+Thailand
+Thailand
+Tajikistan
+Tajikistan
+Tajikistan
+Tajikistan
+Tajikistan
+Turkmenistan
+Turkmenistan
+Turkmenistan
+Timor Leste
+Timor Leste
+Timor Leste
+Timor Leste
+Timor Leste
+Timor Leste
+Timor Leste
+Timor Leste
+Trinidad and Tobago
+Trinidad and Tobago
+Trinidad and Tobago
+Tunisia
+Tunisia
+Tunisia
+Tunisia
+Tunisia
+Tunisia
+Turkey
+Turkey
+Turkey
+Turkey
+Taiwan
+Taiwan
+Taiwan
+Taiwan
+Taiwan
+Taiwan
+Taiwan
+Taiwan
+Taiwan
+Tanzania
+Tanzania
+Tanzania
+Tanzania
+Tanzania
+Uganda
+Uganda
+
+www.GlobalPartySurvey.org
+
+Party for Unity and Reconstruction
+Patriotic Salvation Movement
+Rally for Democracy and Progress
+Union for Renewal and Democracy
+Rainbow Coalition
+Save Togo Group
+Union for the Republic
+Union of Forces of Change
+Bhumjaithai Party
+Charthaipattana Party
+Democrat Party
+Future Forward
+New Economics Party
+Palang Pracharat Party
+Pheu Thai Party
+Prachachart Party
+Puea Chat Party
+Thai Liberal Party
+Agrarian Party of Tajikistan
+Communist Party of Tajikistan
+Party of Economic Reforms
+People's Democratic Party
+The Socialist Party
+Democratic Party
+Party of Agrarians and Citizens' Nominees
+Party of Industrialists and Entrepreneurs
+Change for Progress Alliance
+Democratic Development Front
+Hope of the Fatherland Party
+National Development Movement
+Republican Party
+Revolutionary Front for an Independent East Timor
+Social Democratic Movement
+Timorese Democratic Party
+Congress of the People
+People's National Movement
+United National Congress
+Afek Tounes
+Congress for the Republic
+Ennahda Movement
+Free Patriotic Union
+Nidaa Tounes
+Popular Front
+Justice and Development Party
+Nationalist Movement Party
+People’s Democratic Party
+Republican People's Party
+Chinese Nationalist Party
+Democratic Progressive Party
+Green-Social Democratic Coalition
+New Party
+New Power Party
+Non-Partisan Solidarity Union
+Other Parties
+People First Party
+Taiwan Solidarity Union
+Alliance for Change and Transparency
+Chama Cha Mapinduzi
+Civic United Front
+National Convention for Construction and Reform
+Party for Democracy and Development
+Democratic Party
+Forum for Democratic Change
+46
+
+PUR
+MPS
+RDP
+FAR
+CAEC
+CST
+UNIR
+UFC
+BJT
+CP
+PP
+PAM
+NEP
+PPRP
+PTP
+PPRP
+PTP
+TLP
+APT
+CPT
+PER
+PDP
+SP
+DPT
+ATP
+STP
+AMP
+FDD
+PEP
+MDN
+PR
+FRETIL
+MSD
+PD
+COP
+PNM
+UNC
+AT
+CPR
+E
+UPL
+NT
+FP
+AKP
+MHP
+HDP
+SHP/CHP
+KMT
+DPP
+PGC
+NP
+NPP
+NPSU
+Other
+PFP
+TSU
+ACT
+CCM
+CUF
+NCRR
+Chadema
+DP
+FDC
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+985
+986
+987
+988
+989
+990
+991
+992
+993
+994
+995
+996
+997
+998
+999
+1000
+1001
+1002
+
+Uganda
+Uganda
+Uganda
+Uganda
+Ukraine
+Ukraine
+Ukraine
+Ukraine
+Ukraine
+Ukraine
+Uruguay
+Uruguay
+Uruguay
+Uruguay
+Uruguay
+United States
+United States
+Uzbekistan
+
+1003
+1004
+1005
+1006
+1007
+
+Uzbekistan
+Uzbekistan
+Uzbekistan
+Venezuela
+Venezuela
+
+Independents
+National Resistance Movement
+Uganda People's Congress
+Uganda People's Defense Force
+All-Ukrainian Union 'Fatherland'
+Opposition Bloc
+People's Front
+Petro Poroshenko Bloc
+Radical Party of Oleh Lyashko
+Self Reliance Party
+Broad Front
+Colorado Party
+Independent Party
+National Party
+Popular Assembly
+Democratic Party
+Republican Party
+Democratic Party of Uzbekistan 'Milliy tiklanish'
+Movement of Entrepreneurs and Businesspeople - Liberal Democratic
+Party
+People's Democratic Party of Uzbekistan
+Social Democratic Party of Uzbekistan 'Adolat'
+Democratic Unity Roundtable
+Others
+
+1008
+1009
+1010
+1012
+1011
+1013
+1014
+1015
+1016
+1017
+1018
+1019
+1020
+1021
+1022
+1023
+1024
+1025
+1026
+1027
+1028
+1029
+1030
+1031
+1032
+1033
+1034
+1035
+1036
+1037
+1038
+1039
+1040
+1041
+1042
+1043
+1044
+1045
+
+Venezuela
+Viet Nam
+Viet Nam
+Vanuatu
+Vanuatu
+Vanuatu
+Vanuatu
+Vanuatu
+Vanuatu
+Vanuatu
+Vanuatu
+Vanuatu
+Vanuatu
+Samoa
+Samoa
+Yemen
+Yemen
+Yemen
+Yemen
+Yemen
+Yemen
+Yemen
+Yemen
+Yemen
+Yemen
+South Africa
+South Africa
+South Africa
+South Africa
+South Africa
+South Africa
+South Africa
+South Africa
+South Africa
+South Africa
+Zambia
+Zambia
+Zambia
+
+United Socialist Party of Venezuela/Great Patriotic Pole
+Communist Party
+Other
+Land and Justice Party
+Lauko Group
+Nagriamel
+Natatok Indiginous People's Democratic Party
+National United Party
+Our Land Party
+Peoples Progressive Party
+Reunification of Movements for Change
+Union of Moderate Parties
+Vanuatu National Development Party
+Human Rights Protection Party
+Tautua Samoa Party
+al-Haqq Party
+Al-Islah
+Arab Socialist Ba'ath Party
+Democratic Nasserist Party
+General People's Congress
+Hizb ut-Tahrir
+Nasserist Reform Organization
+Nasserist Unionist People's Organization
+South Yemen Movement
+Yemeni Socialist Party
+African Christian Democratic Party
+African Independent Congress
+African National Congress
+Congress of the People
+Democratic Alliance
+Economic Freedom Fighters
+Freedom Front Plus
+Inkatha Freedom Party
+National Freedom Party
+United Democratic Movement
+Forum for Democracy and Development Party
+Independents
+Movement for Multiparty Democracy
+47
+
+Ind.
+NRM
+UPC
+UPDF
+BA
+OB
+NF
+PPB
+RP
+SP
+FA
+PC
+PI
+PN
+AP
+Dem
+GOP
+OMTDP
+LDP
+PDP
+ASDP
+MUD
+Other
+PSUV/GP
+P
+CPV
+Other
+GJP
+IG
+N
+NIPDP
+NUP
+VP
+PPP
+RMC
+UMP
+VNDP
+HRPP
+TSP
+AH
+AI
+ASBP
+DNP
+GPC
+Tahrir
+NRO
+NUPO
+SYM
+YSP
+ACDP
+AIC
+ANC
+COPE
+DA
+EFF
+FF
+IFP
+NFP
+UDM
+FDD
+Ind.
+MMD
+
+GPS CODEBOOK: 2/10/20 8:26 PM
+
+www.GlobalPartySurvey.org
+
+1046
+1047
+1048
+1049
+1050
+
+Zambia
+Zambia
+Zimbabwe
+Zimbabwe
+Zimbabwe
+
+Patriotic Front
+United Party for National Development
+Independents
+Movement for Democratic Change
+Movement for Democratic Change Ncube
+
+1051
+
+Zimbabwe
+
+Zimbabwe African National Union – Patriotic Front
+
+48
+
+PF
+UPND
+Ind.
+MDC
+MDC-N
+ZANU
+PDF
+
+

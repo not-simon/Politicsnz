@@ -8,7 +8,7 @@
 | **Status** | Former MP |
 | **Now (Oct 2026)** | Retired from Parliament at the 2017 election; elected to the South Canterbury District Health Board in 2019 (DHBs were abolished in 2022). Current activities not detailed in the sources consulted. |
 | **Electorate(s)** | Aoraki (2005–2008); Rangitata (2008–2017) |
-| **Parliaments** | 47th, 48th, 49th, 50th, 51st |
+| **Parliaments** | 48th, 49th, 50th, 51st |
 | **First elected** | 2005 |
 | **Born** | 1961 — Temuka, New Zealand |
 | **Wikipedia** | [Jo Goodhew](https://en.wikipedia.org/wiki/Jo_Goodhew) |

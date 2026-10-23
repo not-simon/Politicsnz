@@ -7,7 +7,9 @@
 | **Party** | New Zealand National Party |
 | **Status** | Current MP — standing in 2026 |
 | **Now (Oct 2026)** | Minister of Commerce and Consumer Affairs, Minister for Small Business and Manufacturing and Associate Minister of Immigration (since Apr 2026); MP for Upper Harbour; #19 on National's 2026 list and re-contesting Upper Harbour. |
+| **Electorate(s)** | Upper Harbour (2023–) |
 | **Parliaments** | 54th |
+| **First elected** | 2023 |
 | **Born** | 1973-03-08 — Hāwera, New Zealand |
 | **2026 election** | list #19, standing in Upper Harbour |
 | **Wikipedia** | [Cameron Brewer](https://en.wikipedia.org/wiki/Cameron_Brewer) |

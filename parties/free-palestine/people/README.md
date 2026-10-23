@@ -6,7 +6,7 @@ Profiles of 2 people associated with Free Palestine: MPs who served in the 50thâ
 
 | | Name | Status | 2026 electorate | 2026 list # | Roles / notes |
 |---|---|---|---|---|---|
-|  | [John Minto](john-minto/README.md) | 2026 candidate |  | 1 | National chair, Halt All Racist Tours (from 1980); Chair/co-chair, Palestine Solidarity Network Aotearoa; Co-vice-president, Mana Movement |
+| <img src="john-minto/photo.jpg" width="48"> | [John Minto](john-minto/README.md) | 2026 candidate |  | 1 | National chair, Halt All Racist Tours (from 1980); Chair/co-chair, Palestine Solidarity Network Aotearoa; Co-vice-president, Mana Movement |
 |  | [William Donald Alexander](william-donald-alexander/README.md) | 2026 candidate | Wigram |  |  |
 
 _Built by `tools/people_others_index.py` from each profile's `person.json`. Candidate details come from policy.nz; MP histories from Wikipedia and the sources cited in each profile._

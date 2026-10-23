@@ -9,7 +9,7 @@
 | **Now (Oct 2026)** | Backbench MP for Northcote (2018–2020, and again since 2023); deputy chair of the Transport and Infrastructure Committee; #30 on National's 2026 list and re-contesting Northcote. |
 | **Electorate(s)** | Northcote (2018 by-election–2020; 2023–) |
 | **Parliaments** | 52nd, 54th |
-| **First elected** | 2023 |
+| **First elected** | 2018 (Northcote by-election) |
 | **Born** | 1983-02-24 — Auckland, New Zealand |
 | **2026 election** | list #30, standing in Northcote |
 | **Wikipedia** | [Dan Bidois](https://en.wikipedia.org/wiki/Dan_Bidois) |

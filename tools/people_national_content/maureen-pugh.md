@@ -1,21 +1,4 @@
-{"status": "current-mp-retiring",
- "status_detail": "MP for West Coast-Tasman and Assistant Speaker (since Dec 2023), retiring at the 2026 election (announced 23 Jan 2026). Under a one-year Chinese entry ban (June 2026) after visiting Taiwan.",
- "roles": ["Assistant Speaker of the House (2023–)", "Junior Whip, National Party (2020–2023)", "MP for West Coast-Tasman (2023–2026)", "List MP (2016–2017; 2018–2023)", "Mayor of Westland (2004–2013)", "Westland District Councillor (1998–2004)"],
- "born": "1958",
- "electorates_label": "List MP (Feb 2016–2017; Mar 2018–2023); West Coast-Tasman (2023–)",
- "sources": ["https://www.chrislynchmedia.com/news-items/west-coast-mp-maureen-pugh-to-retire-at-2026-election/",
-  "https://www.stuff.co.nz/nz-news/360928915/maureen-pugh-retire-politics-2026-election",
-  "https://www.rnz.co.nz/national/programmes/checkpoint/audio/2018769069/yo-yo-mp-maureen-pugh-not-counting-on-bounce-from-special-votes",
-  "https://www.stuff.co.nz/national/politics/101442769/maureen-pugh-back-in-parliament-after-bill-englishs-retirement",
-  "https://www.stuff.co.nz/business/107920843/simon-bridges-describes-mp-colleague-as-fing-useless-in-recorded-conversation.html",
-  "https://www.stuff.co.nz/national/politics/300514726/convoy-protest-national-mp-maureen-pugh-deletes-post-thanking-protesters-says-she-didnt-know-they-were-antivax",
-  "https://www.electionresults.govt.nz/electionresults_2023/electorate-details-61.html",
-  "https://www.newshub.co.nz/home/politics/2024/06/national-mp-maureen-pugh-allegedly-assaulted-in-t-kaka-by-anti-fast-track-protester.html",
-  "https://www.stuff.co.nz/politics/360987562/four-new-zealand-mps-banned-china-one-year-after-taiwan-visit",
-  "https://www.rnz.co.nz/news/political/597368/new-zealand-to-raise-china-s-entirely-inappropriate-ban-on-four-mps-directly-christopher-luxon-says",
-  "https://www.teaonews.co.nz/2026/09/17/te-pati-maori-co-leader-ejected-from-parliament-after-c-word-clash/",
-  "https://www.newshub.co.nz/home/politics/2016/06/west-coast-national-mp-maureen-pugh-doesnt-need-panadol.html",
-  "https://www.stuff.co.nz/national/politics/131287875/nationals-maureen-pugh-waiting-for-evidence-on-human-impact-on-climate-change"]}
+{"status": "current-mp-retiring", "status_detail": "MP for West Coast-Tasman and Assistant Speaker (since Dec 2023), retiring at the 2026 election (announced 23 Jan 2026). Under a one-year Chinese entry ban (June 2026) after visiting Taiwan.", "roles": ["Assistant Speaker of the House (2023–)", "Junior Whip, National Party (2020–2023)", "MP for West Coast-Tasman (2023–2026)", "List MP (2016–2017; 2018–2023)", "Mayor of Westland (2004–2013)", "Westland District Councillor (1998–2004)"], "born": "1958", "electorates_label": "List MP (Feb 2016–2017; Mar 2018–2023); West Coast-Tasman (2023–)", "sources": ["https://www.chrislynchmedia.com/news-items/west-coast-mp-maureen-pugh-to-retire-at-2026-election/", "https://www.stuff.co.nz/nz-news/360928915/maureen-pugh-retire-politics-2026-election", "https://www.rnz.co.nz/national/programmes/checkpoint/audio/2018769069/yo-yo-mp-maureen-pugh-not-counting-on-bounce-from-special-votes", "https://www.stuff.co.nz/national/politics/101442769/maureen-pugh-back-in-parliament-after-bill-englishs-retirement", "https://www.stuff.co.nz/business/107920843/simon-bridges-describes-mp-colleague-as-fing-useless-in-recorded-conversation.html", "https://www.stuff.co.nz/national/politics/300514726/convoy-protest-national-mp-maureen-pugh-deletes-post-thanking-protesters-says-she-didnt-know-they-were-antivax", "https://www.electionresults.govt.nz/electionresults_2023/electorate-details-61.html", "https://www.newshub.co.nz/home/politics/2024/06/national-mp-maureen-pugh-allegedly-assaulted-in-t-kaka-by-anti-fast-track-protester.html", "https://www.stuff.co.nz/politics/360987562/four-new-zealand-mps-banned-china-one-year-after-taiwan-visit", "https://www.rnz.co.nz/news/political/597368/new-zealand-to-raise-china-s-entirely-inappropriate-ban-on-four-mps-directly-christopher-luxon-says", "https://www.teaonews.co.nz/2026/09/17/te-pati-maori-co-leader-ejected-from-parliament-after-c-word-clash/", "https://www.newshub.co.nz/home/politics/2016/06/west-coast-national-mp-maureen-pugh-doesnt-need-panadol.html", "https://www.stuff.co.nz/national/politics/131287875/nationals-maureen-pugh-waiting-for-evidence-on-human-impact-on-climate-change"], "first_elected": "2015 (list vacancy; sworn in Feb 2016)", "parliaments": [51, 52, 53, 54]}
 ---
 ## Current status
 

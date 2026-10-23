@@ -11,7 +11,7 @@
 | **Parliaments** | 50th, 51st, 52nd, 53rd |
 | **First elected** | 2011 |
 | **Born** | 1976-02-25 |
-| **Wikipedia** | [Simon O%27Connor](https://en.wikipedia.org/wiki/Simon_O%27Connor) |
+| **Wikipedia** | [Simon O'Connor](https://en.wikipedia.org/wiki/Simon_O%27Connor) |
 
 ## Current status
 

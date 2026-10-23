@@ -1,13 +1,4 @@
-{"status": "current-mp-standing-2026",
- "status_detail": "Backbench MP for Northcote (2018–2020, and again since 2023); deputy chair of the Transport and Infrastructure Committee; #30 on National's 2026 list and re-contesting Northcote.",
- "roles": ["MP for Northcote (2018–2020, 2023–)", "Chair, Māori Affairs Committee (54th Parliament, earlier in the term)", "Deputy Chair, Transport and Infrastructure Committee", "National associate spokesperson for workplace relations and safety (2018–2020)"],
- "born": "1983-02-24",
- "electorates_label": "Northcote (2018 by-election–2020; 2023–)",
- "sources": ["https://www.elections.org.nz/news-media/northcote-election-official-results",
-  "https://www.electionresults.govt.nz/electionresults_2020/electorate-details-31.html",
-  "https://www.electionresults.govt.nz/electionresults_2023/electorate-details-31.html",
-  "https://bills.parliament.nz/v/6/3ca21699-2ee9-4fa9-82b3-e9cefd493724?Tab=history",
-  "https://legislation.govt.nz/act/public/2024/35/en/latest/#LMS950325"]}
+{"status": "current-mp-standing-2026", "status_detail": "Backbench MP for Northcote (2018–2020, and again since 2023); deputy chair of the Transport and Infrastructure Committee; #30 on National's 2026 list and re-contesting Northcote.", "roles": ["MP for Northcote (2018–2020, 2023–)", "Chair, Māori Affairs Committee (54th Parliament, earlier in the term)", "Deputy Chair, Transport and Infrastructure Committee", "National associate spokesperson for workplace relations and safety (2018–2020)"], "born": "1983-02-24", "electorates_label": "Northcote (2018 by-election–2020; 2023–)", "sources": ["https://www.elections.org.nz/news-media/northcote-election-official-results", "https://www.electionresults.govt.nz/electionresults_2020/electorate-details-31.html", "https://www.electionresults.govt.nz/electionresults_2023/electorate-details-31.html", "https://bills.parliament.nz/v/6/3ca21699-2ee9-4fa9-82b3-e9cefd493724?Tab=history", "https://legislation.govt.nz/act/public/2024/35/en/latest/#LMS950325"], "first_elected": "2018 (Northcote by-election)"}
 ---
 ## Current status
 

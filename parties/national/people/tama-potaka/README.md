@@ -7,7 +7,9 @@
 | **Party** | New Zealand National Party |
 | **Status** | Current MP — standing in 2026 |
 | **Now (Oct 2026)** | Minister of Conservation, Minister for Māori Development, Minister for Māori Crown Relations: Te Arawhiti, Minister for Whānau Ora and Associate Minister of Housing (Social Housing); MP for Hamilton West; #11 on National's 2026 list and re-contesting Hamilton West. |
+| **Electorate(s)** | Hamilton West (2022–) |
 | **Parliaments** | 53rd, 54th |
+| **First elected** | 2022 |
 | **Born** | 1976-01-08 — Raetihi, New Zealand |
 | **2026 election** | list #11, standing in Hamilton West |
 | **Wikipedia** | [Tama Potaka](https://en.wikipedia.org/wiki/Tama_Potaka) |

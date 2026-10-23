@@ -62,7 +62,7 @@ Profiles of 48 people associated with Independent: MPs who served in the 50th–
 
 | | Name | Status | 2026 electorate | 2026 list # | Roles / notes |
 |---|---|---|---|---|---|
-|  | [Darleen Tana](darleen-tana/README.md) | Former MP |  |  | Green spokesperson on oceans and fisheries, science, small business, media, internal affairs (Nov 2023 – Mar 2024) — Expelled from Parliament on 22 October 2024 under the Electoral (Integrity) Amendment Act 2018 ('waka-jumping' law) after resigning from the Green Party |
-|  | [Elizabeth Kerekere](elizabeth-kerekere/README.md) | Former MP |  |  | Green deputy musterer (whip) (2020–2023); Green spokesperson on health (until March 2022), arts, Māori development, rainbow communities, Whānau Ora; Founder, Tīwhanawhana Trust (2001) — Left Parliament at the 2023 election (did not stand) |
+| <img src="darleen-tana/photo.jpg" width="48"> | [Darleen Tana](darleen-tana/README.md) | Former MP |  |  | Green spokesperson on oceans and fisheries, science, small business, media, internal affairs (Nov 2023 – Mar 2024) — Expelled from Parliament on 22 October 2024 under the Electoral (Integrity) Amendment Act 2018 ('waka-jumping' law) after resigning from the Green Party |
+| <img src="elizabeth-kerekere/photo.jpg" width="48"> | [Elizabeth Kerekere](elizabeth-kerekere/README.md) | Former MP |  |  | Green deputy musterer (whip) (2020–2023); Green spokesperson on health (until March 2022), arts, Māori development, rainbow communities, Whānau Ora; Founder, Tīwhanawhana Trust (2001) — Left Parliament at the 2023 election (did not stand) |
 
 _Built by `tools/people_others_index.py` from each profile's `person.json`. Candidate details come from policy.nz; MP histories from Wikipedia and the sources cited in each profile._
