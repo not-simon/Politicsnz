@@ -2,13 +2,41 @@
  "name": "Michael Wood",
  "slug": "michael-wood",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2016",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "roles": [
+  "4th Minister for Workplace Relations and Safety (2020–2023)",
+  "58th Minister of Immigration (2022–2023)",
+  "2nd Minister for Auckland (2023)",
+  "28th Minister of Transport (2020–2023)",
+  "Deputy Leader of the House (2020–2022)",
+  "Chief Government Whip in the House of Representatives (2019–2020)",
+  "Parliamentary Under-Secretary ; for Ethnic Communities (2017–2019)"
+ ],
+ "parliaments": [
+  51,
+  52,
+  53
+ ],
+ "first_elected": 2016,
+ "electorates": [
+  "Mt Roskill"
+ ],
+ "electorate_2026": "Mt Roskill",
+ "born": "1980-05-10",
+ "wikipedia": "https://en.wikipedia.org/wiki/Michael_Wood_%28New_Zealand_politician%29",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/a9a5bebabcd5cee511f3c12acab7bca10f7a5a66-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Michael",
  "last_name": "Wood",
- "electorate_2026": "Mt Roskill",
  "candidacy_2026": "Candidate for the Mt Roskill electorate",
  "questionnaire_2026": {
   "Before politics": "Union leader.",
@@ -21,6 +49,7 @@
   "Twitter": "https://x.com/michaelwoodnz"
  },
  "sources": [
+  "https://en.wikipedia.org/wiki/Michael_Wood_%28New_Zealand_politician%29",
   "https://policy.nz/2026/party-vote/parties/labour-party"
  ]
 }

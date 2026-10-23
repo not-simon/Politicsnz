@@ -2,14 +2,37 @@
  "name": "Tangi Utikere",
  "slug": "tangi-utikere",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2020",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "roles": [
+  "Labour shadow cabinet #11 (as of 11 Mar 2026): Deputy Shadow Leader of the House; Spokesperson for Transport; Spokesperson for Local Government; Spokesperson for Racing; Spokesperson for State-Owned Enterprises",
+  "Deputy Mayor of Palmerston North (2016–2020)",
+  "Palmerston North City Councillor (2010–2020)"
+ ],
+ "parliaments": [
+  53,
+  54
+ ],
+ "first_elected": 2020,
+ "electorates": [
+  "Palmerston North"
+ ],
+ "electorate_2026": "Palmerston North",
+ "list_rank_2026": 14,
+ "born": "{{birth based on age as of date|40|2020|07|26}}",
+ "wikipedia": "https://en.wikipedia.org/wiki/Tangi_Utikere",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/e50c902298ccb767b29c1761cc89f10cecf24f05-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Tangi",
  "last_name": "Utikere",
- "electorate_2026": "Palmerston North",
- "list_rank_2026": 14,
  "candidacy_2026": "Candidate for the Palmerston North electorate",
  "questionnaire_2026": {
   "Before politics": "Deputy Mayor",
@@ -21,6 +44,8 @@
   "Instagram": "https://www.instagram.com/tangiutikere"
  },
  "sources": [
-  "https://policy.nz/2026/party-vote/parties/labour-party"
+  "https://en.wikipedia.org/wiki/Tangi_Utikere",
+  "https://policy.nz/2026/party-vote/parties/labour-party",
+  "https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins"
  ]
 }

@@ -37,9 +37,9 @@ A re-elected National Government will commit to three Budget Responsibility Rule
 
 “Credible and consistent fiscal policy matters now more than ever. That’s why, if re-elected, National will commit to three Budget Responsibility Rules.”
 
-- Prioritising a return to surplus in 2028/29 , and staying in surplus over time, sufficient to see the debt curve bend down.
+- Prioritising a return to surplus in 2028/29, and staying in surplus over time, sufficient to see the debt curve bend down.
 
-- Bending debt down below 40 per cent of GDP , and maintaining debt below that level over time.
+- Bending debt down below 40 per cent of GDP, and maintaining debt below that level over time.
 
 - Keeping taxes low by right-sizing government, with core Crown expenditure as a share of the economy declining towards 30 per cent of GDP.
 

@@ -37,7 +37,7 @@ Under Electrify NZ 2.0, a re-elected National Government will:
 
 - Make connections faster and cheaper by allowing Kiwis to choose an accredited contractor, not just the one their network hands them.
 
-- Let Kiwis sell power to the best buyer , so households and businesses with solar or a battery can sell to any power company, not just the one they buy from.
+- Let Kiwis sell power to the best buyer, so households and businesses with solar or a battery can sell to any power company, not just the one they buy from.
 
 - Address the dry year problem by levelling the playing field for backup power by opening the backup market.
 
@@ -47,9 +47,9 @@ Under Electrify NZ 2.0, a re-elected National Government will:
 
 - Cut more red tape holding back renewables so wind, solar, and hydro can be built faster.
 
-- Launch the Home Energy Fund , giving Kiwis low-interest, long-term loans to invest in their own power and cut their own bills, and enable plug-in solar.
+- Launch the Home Energy Fund, giving Kiwis low-interest, long-term loans to invest in their own power and cut their own bills, and enable plug-in solar.
 
-- Require AI data centres to bring their own new, firmed power , so new digital investment adds to the grid and creates jobs instead of pushing up prices.
+- Require AI data centres to bring their own new, firmed power, so new digital investment adds to the grid and creates jobs instead of pushing up prices.
 
 "New Zealand is experiencing its biggest renewables boom in a generation under National, with more new renewable generation built in the past three years than in the previous eight," Mr Brown says. "That's helped lower the price power companies pay for electricity, with significant reductions in wholesale prices in the past year. That supports businesses, and puts households on a path to more affordable power.
 

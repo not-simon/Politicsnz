@@ -62,7 +62,7 @@ Back the front line with the tools they need to do their job.
 
 Authorised by J de Joux, ps@national.org.nz
 
-1.	Restoring accountability and
+1.	 Restoring accountability and
 resetting the organisation.
 Fire and Emergency New Zealand is a Crown agent
 governed by a board and accountable through the
@@ -162,7 +162,7 @@ injuries for operational volunteers, giving
 volunteers and their families greater support
 and financial security.
 
-3.	Backing the frontline with the tools they need to do the job.
+3.	 Backing the frontline with the tools they need to do the job.
 Firefighters should have confidence that they have
 the tools for the job. They need to know that the
 truck in the bay will be available when the alarm
@@ -269,7 +269,7 @@ and pressures of the front line.
 
 Authorised by J de Joux, ps@national.org.nz
 
-1.	Restoring accountability and                           2. Supporting volunteer firefighters.
+1.	 Restoring accountability and                           2. Supporting volunteer firefighters.
     resetting the organisation.                            More than 11,000 volunteers serve communities from
                                                            over 600 stations. They step forward when their
 Fire and Emergency New Zealand is a Crown agent
@@ -334,7 +334,7 @@ Management and Recovery.                                   will help them access
   •   Meet all costs of this package of reforms
       within baselines.
 
-3.	Backing the frontline with the tools they need to do the job.
+3.	 Backing the frontline with the tools they need to do the job.
 Firefighters should have confidence that they have
 the tools for the job. They need to know that the          National will:
 truck in the bay will be available when the alarm          •   Ensure Fire and Emergency New Zealand

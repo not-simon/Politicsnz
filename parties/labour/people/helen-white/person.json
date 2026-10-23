@@ -2,14 +2,35 @@
  "name": "Helen White",
  "slug": "helen-white",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2020",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "roles": [
+  "Labour shadow cabinet #29 (as of 11 Mar 2026): Spokesperson for the Community and Voluntary Sector; Spokesperson for Prevention of Family and Sexual Violence"
+ ],
+ "parliaments": [
+  53,
+  54
+ ],
+ "first_elected": 2020,
+ "electorates": [
+  "Mount Albert"
+ ],
+ "electorate_2026": "Mt Albert",
+ "list_rank_2026": 38,
+ "born": "{{birth based on age as of date|52|2020}}",
+ "wikipedia": "https://en.wikipedia.org/wiki/Helen_White_%28politician%29",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/35528ded4c90a152979e728ac75320600d14ecd3-1856x1856.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Helen",
  "last_name": "White",
- "electorate_2026": "Mt Albert",
- "list_rank_2026": 38,
  "candidacy_2026": "Candidate for the Mt Albert electorate",
  "questionnaire_2026": {
   "Before politics": "Barrister in employment law",
@@ -21,6 +42,8 @@
   "Instagram": "https://www.instagram.com/helen_white_labour"
  },
  "sources": [
-  "https://policy.nz/2026/party-vote/parties/labour-party"
+  "https://en.wikipedia.org/wiki/Helen_White_%28politician%29",
+  "https://policy.nz/2026/party-vote/parties/labour-party",
+  "https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins"
  ]
 }

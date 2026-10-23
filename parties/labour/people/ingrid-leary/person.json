@@ -2,14 +2,35 @@
  "name": "Ingrid Leary",
  "slug": "ingrid-leary",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2020",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "roles": [
+  "Labour shadow cabinet #30 (as of 11 Mar 2026): Spokesperson for Seniors; Spokesperson for Mental Health"
+ ],
+ "parliaments": [
+  53,
+  54
+ ],
+ "first_elected": 2020,
+ "electorates": [
+  "Taieri"
+ ],
+ "electorate_2026": "Taieri",
+ "list_rank_2026": 39,
+ "born": "{{birth based on age as of date|52|2020|March|1}}",
+ "wikipedia": "https://en.wikipedia.org/wiki/Ingrid_Leary",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/d136289e725d98e4fe679bd3078194bfd185f3a8-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Ingrid",
  "last_name": "Leary",
- "electorate_2026": "Taieri",
- "list_rank_2026": 39,
  "candidacy_2026": "Candidate for the Taieri electorate",
  "questionnaire_2026": {
   "Before politics": "journalist and lawyer",
@@ -18,6 +39,8 @@
   "Public email": "Ingrid.Leary@parliament.govt.nz"
  },
  "sources": [
-  "https://policy.nz/2026/party-vote/parties/labour-party"
+  "https://en.wikipedia.org/wiki/Ingrid_Leary",
+  "https://policy.nz/2026/party-vote/parties/labour-party",
+  "https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins"
  ]
 }

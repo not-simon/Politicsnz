@@ -1,0 +1,2275 @@
+{
+ "title": "Opinion polls (party vote) for the 2026 New Zealand general election, since the 14 Oct 2023 election",
+ "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
+ "retrieved": "2026-10-23",
+ "parties": {
+  "NAT": "national",
+  "LAB": "labour",
+  "GRN": "green",
+  "ACT": "act",
+  "NZF": "nz-first",
+  "TPM": "te-pati-maori",
+  "OPP": "opportunity"
+ },
+ "notes": "Percentages as published. 'end_date' is the sort date used by Wikipedia (last fieldwork day or release date). Rows are newest first. 'others' = combined minor parties where listed. Poll sources: each row's source_url as linked on Wikipedia.",
+ "count": 129,
+ "polls": [
+  {
+   "date": "15–19 Oct 2026",
+   "end_date": "2026-10-19",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/",
+   "sample_size": 1003,
+   "results": {
+    "national": 32.0,
+    "labour": 27.0,
+    "green": 16.0,
+    "act": 11.0,
+    "nz-first": 8.0,
+    "te-pati-maori": 0.7,
+    "opportunity": 7.0
+   },
+   "others": 0.7
+  },
+  {
+   "date": "9–19 Oct 2026",
+   "end_date": "2026-10-19",
+   "pollster": "The Post/Freshwater Strategy",
+   "source_url": "https://www.thepost.co.nz/politics/361101225/postfreshwater-strategy-poll-fraction-point-could-decide-who-governs",
+   "sample_size": 1458,
+   "results": {
+    "national": 27.6,
+    "labour": 28.7,
+    "green": 14.3,
+    "act": 9.0,
+    "nz-first": 11.8,
+    "te-pati-maori": 2.0,
+    "opportunity": 5.4
+   },
+   "others": 1.2
+  },
+  {
+   "date": "8–12 Oct 2026",
+   "end_date": "2026-10-12",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.1news.co.nz/2026/10/13/poll-hipkins-and-luxon-now-neck-and-neck-opportunity-on-track-for-10-mps/",
+   "sample_size": 1007,
+   "results": {
+    "national": 28.0,
+    "labour": 28.0,
+    "green": 15.0,
+    "act": 10.0,
+    "nz-first": 10.0,
+    "te-pati-maori": 0.4,
+    "opportunity": 8.0
+   },
+   "others": 1.6
+  },
+  {
+   "date": "6–10 Oct 2026",
+   "end_date": "2026-10-10",
+   "pollster": "Anacta",
+   "source_url": "https://www.thepost.co.nz/nz-news/361100468/labour-and-national-below-30-labours-pollster-tells-corporate-clients",
+   "sample_size": 1352,
+   "results": {
+    "national": 28.0,
+    "labour": 29.0,
+    "green": 15.0,
+    "act": 9.0,
+    "nz-first": 10.0,
+    "te-pati-maori": 1.9,
+    "opportunity": 5.4
+   },
+   "others": null
+  },
+  {
+   "date": "1–5 Oct 2026",
+   "end_date": "2026-10-05",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/oct2026_nztucurpolljjhhfas",
+   "sample_size": 1000,
+   "results": {
+    "national": 28.5,
+    "labour": 28.2,
+    "green": 13.3,
+    "act": 9.2,
+    "nz-first": 12.0,
+    "te-pati-maori": 1.4,
+    "opportunity": 4.8
+   },
+   "others": 2.7
+  },
+  {
+   "date": "1–5 Oct 2026",
+   "end_date": "2026-10-05",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.1news.co.nz/2026/10/06/poll-opportunity-still-in-kingmaker-seat-as-greens-hold-strong/",
+   "sample_size": 1001,
+   "results": {
+    "national": 29.0,
+    "labour": 28.0,
+    "green": 16.0,
+    "act": 9.0,
+    "nz-first": 10.0,
+    "te-pati-maori": 0.6,
+    "opportunity": 7.0
+   },
+   "others": 0.8
+  },
+  {
+   "date": "24 Sep – 1 Oct 2026",
+   "end_date": "2026-10-01",
+   "pollster": "RNZ–Reid Research",
+   "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1749693/rnz-reid-research-poll-national-crashes-greens-surge-opportunity-kingmaker",
+   "sample_size": 1000,
+   "results": {
+    "national": 25.9,
+    "labour": 30.8,
+    "green": 14.8,
+    "act": 9.0,
+    "nz-first": 10.6,
+    "te-pati-maori": 2.0,
+    "opportunity": 5.5
+   },
+   "others": 0.7
+  },
+  {
+   "date": "23–27 Sep 2026",
+   "end_date": "2026-09-27",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.1news.co.nz/2026/09/28/poll-greens-surge-to-best-result-ever-as-national-labour-slide-further/",
+   "sample_size": 1004,
+   "results": {
+    "national": 28.0,
+    "labour": 28.0,
+    "green": 16.0,
+    "act": 11.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 1.2,
+    "opportunity": 6.0
+   },
+   "others": 1.0
+  },
+  {
+   "date": "31 Aug – 27 Sep 2026",
+   "end_date": "2026-09-27",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10351-nz-national-voting-intention-september-2026",
+   "sample_size": 859,
+   "results": {
+    "national": 31.0,
+    "labour": 23.5,
+    "green": 16.0,
+    "act": 11.0,
+    "nz-first": 10.0,
+    "te-pati-maori": 2.0,
+    "opportunity": 6.5
+   },
+   "others": 0.0
+  },
+  {
+   "date": "4–11 Sep 2026",
+   "end_date": "2026-09-11",
+   "pollster": "The Post/Freshwater Strategy",
+   "source_url": "https://freshwaterstrategy.com/2026/09/15/the-post-freshwater-strategy-september-polling-data/",
+   "sample_size": 1011,
+   "results": {
+    "national": 26.5,
+    "labour": 28.0,
+    "green": 13.6,
+    "act": 8.7,
+    "nz-first": 12.6,
+    "te-pati-maori": 2.2,
+    "opportunity": 6.3
+   },
+   "others": 2.1
+  },
+  {
+   "date": "4–10 Sep 2026",
+   "end_date": "2026-09-10",
+   "pollster": "Anacta",
+   "source_url": "https://www.nzherald.co.nz/nz/politics/labour-slumps-in-another-poll-but-still-ahead-of-national/HDUVF4SBJJHK3LYLGXLVLG3F7U/",
+   "sample_size": 1701,
+   "results": {
+    "national": 30.0,
+    "labour": 31.0,
+    "green": 12.0,
+    "act": 8.0,
+    "nz-first": 10.0,
+    "te-pati-maori": 2.0,
+    "opportunity": 7.0
+   },
+   "others": null
+  },
+  {
+   "date": "1–3 Sep 2026",
+   "end_date": "2026-09-03",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/sept26_pollnztughjkuhn?",
+   "sample_size": 1000,
+   "results": {
+    "national": 29.0,
+    "labour": 25.9,
+    "green": 13.9,
+    "act": 10.5,
+    "nz-first": 8.4,
+    "te-pati-maori": 2.0,
+    "opportunity": 4.5
+   },
+   "others": 5.9
+  },
+  {
+   "date": "27 Jul – 23 Aug 2026",
+   "end_date": "2026-08-23",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10321-nz-national-voting-intention-august-2026",
+   "sample_size": 858,
+   "results": {
+    "national": 31.0,
+    "labour": 24.0,
+    "green": 15.5,
+    "act": 10.5,
+    "nz-first": 7.5,
+    "te-pati-maori": 1.5,
+    "opportunity": 9.5
+   },
+   "others": 0.5
+  },
+  {
+   "date": "14–21 Aug 2026",
+   "end_date": "2026-08-21",
+   "pollster": "RNZ–Reid Research",
+   "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1093636/rnz-reid-research-poll-opportunity-in-kingmaker-position-luxon-and-hipkins-approval-slumps",
+   "sample_size": 1000,
+   "results": {
+    "national": 29.1,
+    "labour": 32.2,
+    "green": 10.2,
+    "act": 7.7,
+    "nz-first": 11.9,
+    "te-pati-maori": 3.0,
+    "opportunity": 5.3
+   },
+   "others": 0.6
+  },
+  {
+   "date": "8–11 Aug 2026",
+   "end_date": "2026-08-12",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/1073125712/8-11-August-2026-1-NEWS-Verian-Poll-Report",
+   "sample_size": 847,
+   "results": {
+    "national": 29.0,
+    "labour": 30.0,
+    "green": 12.0,
+    "act": 9.0,
+    "nz-first": 8.0,
+    "te-pati-maori": 1.1,
+    "opportunity": 8.0
+   },
+   "others": 2.7
+  },
+  {
+   "date": "1–11 Aug 2026",
+   "end_date": "2026-08-11",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.nzherald.co.nz/nz/politics/poll-national-down-and-out-of-government-in-new-talbot-mills-poll/XXSSJVLG35GP7C4NZTSALVAPGE/",
+   "sample_size": null,
+   "results": {
+    "national": 29.0,
+    "labour": 34.0,
+    "green": 8.0,
+    "act": 7.0,
+    "nz-first": 13.0,
+    "te-pati-maori": 3.0,
+    "opportunity": 5.2
+   },
+   "others": null
+  },
+  {
+   "date": "1–4 Aug 2026",
+   "end_date": "2026-08-04",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/aug2026_nztucurghs17668",
+   "sample_size": 1000,
+   "results": {
+    "national": 31.0,
+    "labour": 27.8,
+    "green": 10.1,
+    "act": 7.3,
+    "nz-first": 9.1,
+    "te-pati-maori": 1.5,
+    "opportunity": 6.1
+   },
+   "others": 2.2
+  },
+  {
+   "date": "29 Jun – 26 Jul 2026",
+   "end_date": "2026-07-26",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10281-nz-national-voting-intention-july-2026",
+   "sample_size": 881,
+   "results": {
+    "national": 32.0,
+    "labour": 25.5,
+    "green": 13.5,
+    "act": 8.5,
+    "nz-first": 8.5,
+    "te-pati-maori": 2.0,
+    "opportunity": 8.0
+   },
+   "others": 2.0
+  },
+  {
+   "date": "10–19 Jul 2026",
+   "end_date": "2026-07-19",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.thepost.co.nz/politics/361050346/new-poll-shows-coalition-victory-opportunity-close-upending-it-all",
+   "sample_size": null,
+   "results": {
+    "national": 31.0,
+    "labour": 33.0,
+    "green": 9.0,
+    "act": 7.0,
+    "nz-first": 12.0,
+    "te-pati-maori": 3.0,
+    "opportunity": 4.7
+   },
+   "others": null
+  },
+  {
+   "date": "2–9 Jul 2026",
+   "end_date": "2026-07-09",
+   "pollster": "RNZ–Reid Research",
+   "source_url": "https://www.rnz.co.nz/news/politics/713431/rnz-poll-national-hits-new-low-under-luxon-opportunity-nears-parliament",
+   "sample_size": 1000,
+   "results": {
+    "national": 28.7,
+    "labour": 34.0,
+    "green": 10.3,
+    "act": 7.8,
+    "nz-first": 11.5,
+    "te-pati-maori": 2.3,
+    "opportunity": 4.7
+   },
+   "others": 0.8
+  },
+  {
+   "date": "1–5 Jul 2026",
+   "end_date": "2026-07-05",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/july26_pollnztu",
+   "sample_size": 1000,
+   "results": {
+    "national": 30.5,
+    "labour": 31.5,
+    "green": 10.4,
+    "act": 6.9,
+    "nz-first": 10.8,
+    "te-pati-maori": 3.4,
+    "opportunity": 3.3
+   },
+   "others": 3.2
+  },
+  {
+   "date": "25 May – 21 Jun 2026",
+   "end_date": "2026-06-21",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10271-nz-national-voting-intention-june-2026",
+   "sample_size": 891,
+   "results": {
+    "national": 31.0,
+    "labour": 25.5,
+    "green": 13.5,
+    "act": 9.5,
+    "nz-first": 10.5,
+    "te-pati-maori": 3.0,
+    "opportunity": 6.5
+   },
+   "others": 0.5
+  },
+  {
+   "date": "13–17 Jun 2026",
+   "end_date": "2026-06-17",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/1054188547/13-17-June-2026-1-NEWS-Verian-Poll-Report?secret_password=oeKr2nNLrt3WFqTQNXzr",
+   "sample_size": 1001,
+   "results": {
+    "national": 29.0,
+    "labour": 32.0,
+    "green": 13.0,
+    "act": 6.0,
+    "nz-first": 11.0,
+    "te-pati-maori": 1.8,
+    "opportunity": 4.6
+   },
+   "others": 1.5
+  },
+  {
+   "date": "5–11 Jun 2026",
+   "end_date": "2026-06-11",
+   "pollster": "The Post/Freshwater Strategy",
+   "source_url": "https://freshwaterstrategy.com/2026/06/19/the-post-freshwater-strategy-june-polling-data-2/",
+   "sample_size": 1038,
+   "results": {
+    "national": 28.9,
+    "labour": 35.3,
+    "green": 10.4,
+    "act": 8.1,
+    "nz-first": 12.0,
+    "te-pati-maori": 2.1
+   },
+   "others": 3.2
+  },
+  {
+   "date": "1–10 Jun 2026",
+   "end_date": "2026-06-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.stuff.co.nz/politics/360993853/greens-surge-lifts-left-bloc-projected-majority-latest-political-poll",
+   "sample_size": 1021,
+   "results": {
+    "national": 29.0,
+    "labour": 34.0,
+    "green": 13.0,
+    "act": 6.0,
+    "nz-first": 12.0,
+    "te-pati-maori": 2.6,
+    "opportunity": 3.3
+   },
+   "others": null
+  },
+  {
+   "date": "4–8 Jun 2026",
+   "end_date": "2026-06-08",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/pollnztu_june2026",
+   "sample_size": 1000,
+   "results": {
+    "national": 30.1,
+    "labour": 32.2,
+    "green": 11.5,
+    "act": 7.8,
+    "nz-first": 11.4,
+    "te-pati-maori": 3.1,
+    "opportunity": 3.2
+   },
+   "others": 0.8
+  },
+  {
+   "date": "27 Apr – 24 May 2026",
+   "end_date": "2026-05-24",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10241-nz-national-voting-intention-may-2026",
+   "sample_size": 870,
+   "results": {
+    "national": 30.5,
+    "labour": 26.5,
+    "green": 12.5,
+    "act": 10.0,
+    "nz-first": 11.0,
+    "te-pati-maori": 2.5,
+    "opportunity": 6.0
+   },
+   "others": 1.0
+  },
+  {
+   "date": "1–10 May 2026",
+   "end_date": "2026-05-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.nzherald.co.nz/nz/politics/new-poll-keeps-national-in-the-20s-labour-retains-biggest-share-of-support/ECSCZV3ZQZETTDDOIRAEEW476A/",
+   "sample_size": null,
+   "results": {
+    "national": 29.0,
+    "labour": 36.0,
+    "green": 9.0,
+    "act": 7.0,
+    "nz-first": 14.0,
+    "te-pati-maori": 2.0
+   },
+   "others": null
+  },
+  {
+   "date": "3–7 May 2026",
+   "end_date": "2026-05-07",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/maypoll_2026tucur",
+   "sample_size": 1000,
+   "results": {
+    "national": 30.0,
+    "labour": 31.9,
+    "green": 9.7,
+    "act": 6.5,
+    "nz-first": 11.7,
+    "te-pati-maori": 4.1,
+    "opportunity": 2.8
+   },
+   "others": 3.3
+  },
+  {
+   "date": "30 Mar – 26 Apr 2026",
+   "end_date": "2026-04-26",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10211-nz-national-voting-intention-april-2026",
+   "sample_size": 887,
+   "results": {
+    "national": 25.5,
+    "labour": 34.0,
+    "green": 11.0,
+    "act": 10.5,
+    "nz-first": 11.5,
+    "te-pati-maori": 3.0,
+    "opportunity": 4.0
+   },
+   "others": 0.5
+  },
+  {
+   "date": "16 Apr 2026",
+   "end_date": "2026-04-16",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.stuff.co.nz/politics/360965723/new-zealand-first-soars-greens-plummet-new-poll-national-20s-again",
+   "sample_size": 1082,
+   "results": {
+    "national": 29.0,
+    "labour": 36.0,
+    "green": 7.0,
+    "act": 8.0,
+    "nz-first": 15.0,
+    "te-pati-maori": 1.9,
+    "opportunity": 2.3
+   },
+   "others": null
+  },
+  {
+   "date": "11–15 Apr 2026",
+   "end_date": "2026-04-15",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/1028300076/11-15-April-2026-1-NEWS-Verian-Poll-Report?secret_password=uSEdjxGxZpEOLgPn0lSr/",
+   "sample_size": 1010,
+   "results": {
+    "national": 30.0,
+    "labour": 37.0,
+    "green": 11.0,
+    "act": 7.0,
+    "nz-first": 10.0,
+    "te-pati-maori": 1.5,
+    "opportunity": 3.3
+   },
+   "others": 1.2
+  },
+  {
+   "date": "1–2 Apr 2026",
+   "end_date": "2026-04-02",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/easter_26_poll",
+   "sample_size": 1000,
+   "results": {
+    "national": 29.8,
+    "labour": 33.4,
+    "green": 7.8,
+    "act": 9.0,
+    "nz-first": 13.6,
+    "te-pati-maori": 2.6,
+    "opportunity": 2.6
+   },
+   "others": 1.3
+  },
+  {
+   "date": "23 Feb – 22 Mar 2026",
+   "end_date": "2026-03-22",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10181-nz-national-voting-intention-march-2026",
+   "sample_size": 872,
+   "results": {
+    "national": 26.5,
+    "labour": 34.0,
+    "green": 11.0,
+    "act": 10.0,
+    "nz-first": 11.0,
+    "te-pati-maori": 3.0,
+    "opportunity": 4.0
+   },
+   "others": 0.5
+  },
+  {
+   "date": "12–20 Mar 2026",
+   "end_date": "2026-03-20",
+   "pollster": "RNZ–Reid Research",
+   "source_url": "https://www.rnz.co.nz/news/political/590347/rnz-reid-research-poll-labour-extends-lead-over-national",
+   "sample_size": 1000,
+   "results": {
+    "national": 30.8,
+    "labour": 35.6,
+    "green": 10.1,
+    "act": 7.0,
+    "nz-first": 10.6,
+    "te-pati-maori": 3.2,
+    "opportunity": 2.0
+   },
+   "others": 0.7
+  },
+  {
+   "date": "2–12 Mar 2026",
+   "end_date": "2026-03-12",
+   "pollster": "Talbot Mills",
+   "source_url": "https://thespinoff.co.nz/politics/18-03-2026/new-poll-offers-solace-for-luxon-but-election-hangs-by-a-thread",
+   "sample_size": 1059,
+   "results": {
+    "national": 32.0,
+    "labour": 35.0,
+    "green": 11.0,
+    "act": 7.0,
+    "nz-first": 11.0,
+    "te-pati-maori": 1.7,
+    "opportunity": 2.4
+   },
+   "others": null
+  },
+  {
+   "date": "1–3 Mar 2026",
+   "end_date": "2026-03-03",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/tucur_mar2026poll",
+   "sample_size": 1000,
+   "results": {
+    "national": 28.4,
+    "labour": 34.4,
+    "green": 10.5,
+    "act": 7.5,
+    "nz-first": 9.7,
+    "te-pati-maori": 3.2,
+    "opportunity": 1.9
+   },
+   "others": 4.3
+  },
+  {
+   "date": "27 Jan – 22 Feb 2026",
+   "end_date": "2026-02-22",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10141-nz-national-voting-intention-february-2026",
+   "sample_size": 870,
+   "results": {
+    "national": 31.0,
+    "labour": 30.0,
+    "green": 14.5,
+    "act": 8.0,
+    "nz-first": 9.5,
+    "te-pati-maori": 2.5,
+    "opportunity": 4.0
+   },
+   "others": 0.5
+  },
+  {
+   "date": "6–12 Feb 2026",
+   "end_date": "2026-02-12",
+   "pollster": "The Post/Freshwater Strategy",
+   "source_url": "https://freshwaterstrategy.com/2026/02/25/the-post-freshwater-strategy-february-polling-data/",
+   "sample_size": 1039,
+   "results": {
+    "national": 30.0,
+    "labour": 37.4,
+    "green": 10.2,
+    "act": 6.4,
+    "nz-first": 10.5,
+    "te-pati-maori": 2.5
+   },
+   "others": 3.0
+  },
+  {
+   "date": "7–11 Feb 2026",
+   "end_date": "2026-02-11",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/998545712/7-11-Feb-2026-1-NEWS-Verian-Poll-Report?secret_password=EXlfqxw24XeRGhqBC25v",
+   "sample_size": 1003,
+   "results": {
+    "national": 34.0,
+    "labour": 32.0,
+    "green": 11.0,
+    "act": 9.0,
+    "nz-first": 10.0,
+    "te-pati-maori": 2.0,
+    "opportunity": 1.0
+   },
+   "others": 1.7
+  },
+  {
+   "date": "1–3 Feb 2026",
+   "end_date": "2026-02-03",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/0226_polltu",
+   "sample_size": 1000,
+   "results": {
+    "national": 31.3,
+    "labour": 34.1,
+    "green": 10.3,
+    "act": 6.7,
+    "nz-first": 10.5,
+    "te-pati-maori": 2.9,
+    "opportunity": 1.4
+   },
+   "others": 4.2
+  },
+  {
+   "date": "6–26 Jan 2026",
+   "end_date": "2026-01-26",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10111-nz-national-voting-intention-january-2026",
+   "sample_size": 881,
+   "results": {
+    "national": 34.5,
+    "labour": 30.5,
+    "green": 10.5,
+    "act": 8.5,
+    "nz-first": 9.0,
+    "te-pati-maori": 3.0,
+    "opportunity": 2.5
+   },
+   "others": 1.5
+  },
+  {
+   "date": "16–26 Jan 2026",
+   "end_date": "2026-01-26",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.thepost.co.nz/politics/360940554/labour-ahead-right-bloc-retains-governing-edge-latest-poll",
+   "sample_size": 1087,
+   "results": {
+    "national": 31.0,
+    "labour": 35.0,
+    "green": 10.0,
+    "act": 8.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 3.0
+   },
+   "others": null
+  },
+  {
+   "date": "15–22 Jan 2026",
+   "end_date": "2026-01-22",
+   "pollster": "RNZ–Reid Research",
+   "source_url": "https://www.rnz.co.nz/news/poll/556774/rnz-reid-research-poll-view-all-results-and-charts",
+   "sample_size": 1000,
+   "results": {
+    "national": 31.9,
+    "labour": 35.0,
+    "green": 9.6,
+    "act": 7.6,
+    "nz-first": 9.8,
+    "te-pati-maori": 3.0,
+    "opportunity": 2.3
+   },
+   "others": 0.9
+  },
+  {
+   "date": "14–18 Jan 2026",
+   "end_date": "2026-01-18",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/jan26poll_nztucuria",
+   "sample_size": 1000,
+   "results": {
+    "national": 31.5,
+    "labour": 34.4,
+    "green": 7.7,
+    "act": 7.0,
+    "nz-first": 11.9,
+    "te-pati-maori": 3.0,
+    "opportunity": 0.7
+   },
+   "others": 3.8
+  },
+  {
+   "date": "25 Nov – 21 Dec 2025",
+   "end_date": "2025-12-21",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10101-nz-national-voting-intention-december-2025",
+   "sample_size": 859,
+   "results": {
+    "national": 33.0,
+    "labour": 32.5,
+    "green": 12.0,
+    "act": 7.5,
+    "nz-first": 10.0,
+    "te-pati-maori": 2.5,
+    "opportunity": 2.5
+   },
+   "others": 0.0
+  },
+  {
+   "date": "5–10 Dec 2025",
+   "end_date": "2025-12-10",
+   "pollster": "The Post/Freshwater Strategy",
+   "source_url": "https://freshwaterstrategy.com/2026/01/05/the-post-freshwater-strategy-december-polling-data/",
+   "sample_size": 1031,
+   "results": {
+    "national": 30.0,
+    "labour": 38.4,
+    "green": 8.4,
+    "act": 7.7,
+    "nz-first": 9.1,
+    "te-pati-maori": 2.5
+   },
+   "others": 4.3
+  },
+  {
+   "date": "3–7 Dec 2025",
+   "end_date": "2025-12-07",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/25dec_polltucur",
+   "sample_size": 1000,
+   "results": {
+    "national": 30.0,
+    "labour": 31.6,
+    "green": 10.8,
+    "act": 8.9,
+    "nz-first": 8.1,
+    "te-pati-maori": 3.1,
+    "opportunity": 1.6
+   },
+   "others": 6.0
+  },
+  {
+   "date": "29 Nov – 3 Dec 2025",
+   "end_date": "2025-12-03",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/962599976/29-Nov-3-Dec-2025-1-NEWS-Verian-Poll-Report?secret_password=mTSJG82rhPxTLXSfT7AN",
+   "sample_size": 1007,
+   "results": {
+    "national": 36.0,
+    "labour": 35.0,
+    "green": 7.0,
+    "act": 10.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 0.6,
+    "opportunity": 0.4
+   },
+   "others": 2.4
+  },
+  {
+   "date": "27 Oct – 23 Nov 2025",
+   "end_date": "2025-11-23",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10094-nz-national-voting-intention-november-2025",
+   "sample_size": 829,
+   "results": {
+    "national": 33.0,
+    "labour": 28.0,
+    "green": 14.5,
+    "act": 8.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 2.0,
+    "opportunity": 2.5
+   },
+   "others": 3.0
+  },
+  {
+   "date": "1–10 Nov 2025",
+   "end_date": "2025-11-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.thepost.co.nz/politics/360885129/labour-surges-38-new-poll-still-needs-te-pati-maori",
+   "sample_size": 1000,
+   "results": {
+    "national": 33.0,
+    "labour": 38.0,
+    "green": 9.0,
+    "act": 7.0,
+    "nz-first": 8.0,
+    "te-pati-maori": 2.4
+   },
+   "others": null
+  },
+  {
+   "date": "2–6 Nov 2025",
+   "end_date": "2025-11-06",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/tucurpoll_nov2025",
+   "sample_size": 1000,
+   "results": {
+    "national": 30.2,
+    "labour": 33.3,
+    "green": 9.2,
+    "act": 8.6,
+    "nz-first": 9.1,
+    "te-pati-maori": 3.3,
+    "opportunity": 1.2
+   },
+   "others": 5.1
+  },
+  {
+   "date": "29 Sep – 26 Oct 2025",
+   "end_date": "2025-10-26",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10054-nz-national-voting-intention-october-2025",
+   "sample_size": 857,
+   "results": {
+    "national": 32.0,
+    "labour": 30.5,
+    "green": 12.0,
+    "act": 8.0,
+    "nz-first": 9.5,
+    "te-pati-maori": 2.5,
+    "opportunity": 2.5
+   },
+   "others": 3.0
+  },
+  {
+   "date": "1–10 Oct 2025",
+   "end_date": "2025-10-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.thepost.co.nz/politics/360855811/national-dips-below-30-second-poll",
+   "sample_size": 1097,
+   "results": {
+    "national": 29.0,
+    "labour": 35.0,
+    "green": 10.0,
+    "act": 8.0,
+    "nz-first": 12.0,
+    "te-pati-maori": 4.0
+   },
+   "others": null
+  },
+  {
+   "date": "4–8 Oct 2025",
+   "end_date": "2025-10-08",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/932137523/October-2025-1News-Verian-Poll-Report?secret_password=FF3tm28WHXxIwHVkQIVH",
+   "sample_size": 1014,
+   "results": {
+    "national": 34.0,
+    "labour": 32.0,
+    "green": 11.0,
+    "act": 8.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 2.8,
+    "opportunity": 0.8
+   },
+   "others": 2.4
+  },
+  {
+   "date": "3–8 Oct 2025",
+   "end_date": "2025-10-08",
+   "pollster": "The Post/Freshwater Strategy",
+   "source_url": "https://www.thepost.co.nz/politics/360853311/big-names-risk-labour-pulls-ahead-and-christopher-luxon-loses-ground",
+   "sample_size": 1050,
+   "results": {
+    "national": 31.0,
+    "labour": 34.0,
+    "green": 9.0,
+    "act": 9.0,
+    "nz-first": 11.0,
+    "te-pati-maori": 3.0
+   },
+   "others": 2.0
+  },
+  {
+   "date": "1–5 Oct 2025",
+   "end_date": "2025-10-05",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/2025polloct_taxpcur",
+   "sample_size": 1000,
+   "results": {
+    "national": 29.6,
+    "labour": 31.2,
+    "green": 12.0,
+    "act": 6.6,
+    "nz-first": 10.6,
+    "te-pati-maori": 4.4,
+    "opportunity": 1.6
+   },
+   "others": 4.0
+  },
+  {
+   "date": "25 Aug – 21 Sep 2025",
+   "end_date": "2025-09-21",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10034-nz-national-voting-intention-september-2025",
+   "sample_size": 870,
+   "results": {
+    "national": 31.5,
+    "labour": 28.5,
+    "green": 13.5,
+    "act": 9.0,
+    "nz-first": 8.0,
+    "te-pati-maori": 5.5,
+    "opportunity": 2.5
+   },
+   "others": 1.5
+  },
+  {
+   "date": "4–12 Sep 2025",
+   "end_date": "2025-09-12",
+   "pollster": "RNZ–Reid Research",
+   "source_url": "https://www.rnz.co.nz/news/political/573163/rnz-reid-research-political-poll-points-to-deadlocked-parliament",
+   "sample_size": 1000,
+   "results": {
+    "national": 32.5,
+    "labour": 34.3,
+    "green": 10.9,
+    "act": 7.2,
+    "nz-first": 8.7,
+    "te-pati-maori": 4.1,
+    "opportunity": 1.4
+   },
+   "others": 0.9
+  },
+  {
+   "date": "1–10 Sep 2025",
+   "end_date": "2025-09-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.thepost.co.nz/politics/360828447/weaker-expected-economy-political-polls-turn-pm",
+   "sample_size": 1000,
+   "results": {
+    "national": 31.0,
+    "labour": 35.0,
+    "green": 10.0,
+    "act": 7.0,
+    "nz-first": 10.0,
+    "te-pati-maori": 4.0
+   },
+   "others": null
+  },
+  {
+   "date": "31 Aug – 2 Sep 2025",
+   "end_date": "2025-09-02",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/sept2025_nztucurpoll",
+   "sample_size": 1000,
+   "results": {
+    "national": 33.1,
+    "labour": 33.8,
+    "green": 10.7,
+    "act": 6.7,
+    "nz-first": 8.1,
+    "te-pati-maori": 4.3,
+    "opportunity": 1.1
+   },
+   "others": 2.2
+  },
+  {
+   "date": "28 Jul – 24 Aug 2025",
+   "end_date": "2025-08-24",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10014-nz-national-voting-intention-august-2025",
+   "sample_size": 873,
+   "results": {
+    "national": 29.0,
+    "labour": 34.0,
+    "green": 13.5,
+    "act": 10.5,
+    "nz-first": 7.0,
+    "te-pati-maori": 2.5,
+    "opportunity": 3.0
+   },
+   "others": 0.5
+  },
+  {
+   "date": "1–10 Aug 2025",
+   "end_date": "2025-08-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.thepost.co.nz/politics/360806053/political-poll-offers-government-no-reprieve",
+   "sample_size": 1000,
+   "results": {
+    "national": 32.0,
+    "labour": 34.0,
+    "green": 11.0,
+    "act": 8.0,
+    "nz-first": 9.3,
+    "te-pati-maori": 4.4,
+    "opportunity": 2.8
+   },
+   "others": null
+  },
+  {
+   "date": "2–6 Aug 2025",
+   "end_date": "2025-08-06",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/899969344/2-6-Aug-2025-1News-Verian-Poll-Report?secret_password=bUx4gQvyCfXWbwgvufsx",
+   "sample_size": 1002,
+   "results": {
+    "national": 34.0,
+    "labour": 33.0,
+    "green": 10.0,
+    "act": 8.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 3.7,
+    "opportunity": 1.3
+   },
+   "others": 1.0
+  },
+  {
+   "date": "3–5 Aug 2025",
+   "end_date": "2025-08-05",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/augpoll2025_250808",
+   "sample_size": 1000,
+   "results": {
+    "national": 31.8,
+    "labour": 33.6,
+    "green": 9.8,
+    "act": 8.6,
+    "nz-first": 7.8,
+    "te-pati-maori": 3.2,
+    "opportunity": 2.6
+   },
+   "others": 2.6
+  },
+  {
+   "date": "30 Jun – 27 Jul 2025",
+   "end_date": "2025-07-27",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9984-nz-national-voting-intention-july-2025",
+   "sample_size": 832,
+   "results": {
+    "national": 31.0,
+    "labour": 31.0,
+    "green": 11.5,
+    "act": 10.5,
+    "nz-first": 9.5,
+    "te-pati-maori": 3.5,
+    "opportunity": 1.0
+   },
+   "others": 2.0
+  },
+  {
+   "date": "1–10 Jul 2025",
+   "end_date": "2025-07-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.thepost.co.nz/politics/360765524/poll-suggests-national-headed-one-term-government",
+   "sample_size": 1090,
+   "results": {
+    "national": 32.0,
+    "labour": 35.0,
+    "green": 12.0,
+    "act": 8.0,
+    "nz-first": 7.0,
+    "te-pati-maori": 3.8
+   },
+   "others": null
+  },
+  {
+   "date": "2–6 Jul 2025",
+   "end_date": "2025-07-06",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/pollnztu_20250710",
+   "sample_size": 1000,
+   "results": {
+    "national": 33.9,
+    "labour": 31.6,
+    "green": 9.4,
+    "act": 9.1,
+    "nz-first": 9.8,
+    "te-pati-maori": 3.5,
+    "opportunity": 1.2
+   },
+   "others": 1.5
+  },
+  {
+   "date": "26 May – 22 Jun 2025",
+   "end_date": "2025-06-22",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9983-nz-national-voting-intention-june-2025",
+   "sample_size": 812,
+   "results": {
+    "national": 32.0,
+    "labour": 28.5,
+    "green": 11.0,
+    "act": 11.5,
+    "nz-first": 8.0,
+    "te-pati-maori": 5.0,
+    "opportunity": 3.0
+   },
+   "others": 1.0
+  },
+  {
+   "date": "12–15 Jun 2025",
+   "end_date": "2025-06-15",
+   "pollster": "The Post/Freshwater Strategy",
+   "source_url": "https://www.stuff.co.nz/politics/360728540/post-freshwater-strategy-poll-labour-pulls-ahead-national",
+   "sample_size": 1150,
+   "results": {
+    "national": 32.0,
+    "labour": 34.0,
+    "green": 11.0,
+    "act": 8.0,
+    "nz-first": 8.0,
+    "te-pati-maori": 2.0
+   },
+   "others": 4.0
+  },
+  {
+   "date": "7–9 Jun 2025",
+   "end_date": "2025-06-09",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/2025ju_polldatanztu",
+   "sample_size": 1000,
+   "results": {
+    "national": 33.5,
+    "labour": 34.8,
+    "green": 8.2,
+    "act": 9.1,
+    "nz-first": 6.1,
+    "te-pati-maori": 3.3,
+    "opportunity": 1.8
+   },
+   "others": 3.2
+  },
+  {
+   "date": "23–30 May 2025",
+   "end_date": "2025-05-30",
+   "pollster": "RNZ–Reid Research",
+   "source_url": "https://www.rnz.co.nz/news/political/563006/left-bloc-would-have-enough-support-to-turf-coalition-government-out-of-power-poll",
+   "sample_size": 1008,
+   "results": {
+    "national": 30.7,
+    "labour": 33.2,
+    "green": 11.6,
+    "act": 6.6,
+    "nz-first": 9.1,
+    "te-pati-maori": 5.5,
+    "opportunity": 2.2
+   },
+   "others": 1.1
+  },
+  {
+   "date": "24–28 May 2025",
+   "end_date": "2025-05-28",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/871022558/24-28-May-2025-1News-Verian-Poll-Report?secret_password=ci42gaG8SMdwNUKesTw6",
+   "sample_size": 1002,
+   "results": {
+    "national": 34.0,
+    "labour": 29.0,
+    "green": 12.0,
+    "act": 8.0,
+    "nz-first": 8.0,
+    "te-pati-maori": 3.7,
+    "opportunity": 1.3
+   },
+   "others": 3.9
+  },
+  {
+   "date": "28 Apr – 25 May 2025",
+   "end_date": "2025-05-25",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9963-nz-national-voting-intention-may-2025",
+   "sample_size": 799,
+   "results": {
+    "national": 31.5,
+    "labour": 29.0,
+    "green": 11.5,
+    "act": 12.0,
+    "nz-first": 6.5,
+    "te-pati-maori": 4.5,
+    "opportunity": 3.0
+   },
+   "others": 2.0
+  },
+  {
+   "date": "30 Apr – 4 May 2025",
+   "end_date": "2025-05-04",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/polling_may07_2025tucur",
+   "sample_size": 1000,
+   "results": {
+    "national": 34.6,
+    "labour": 33.2,
+    "green": 9.1,
+    "act": 9.5,
+    "nz-first": 7.4,
+    "te-pati-maori": 3.9,
+    "opportunity": 0.5
+   },
+   "others": 1.8
+  },
+  {
+   "date": "24 Mar – 20 Apr 2025",
+   "end_date": "2025-04-20",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9903-nz-national-voting-intention-april-2025",
+   "sample_size": 829,
+   "results": {
+    "national": 31.0,
+    "labour": 28.5,
+    "green": 14.0,
+    "act": 9.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 4.5,
+    "opportunity": 2.5
+   },
+   "others": 1.5
+  },
+  {
+   "date": "29 Mar – 2 Apr 2025",
+   "end_date": "2025-04-02",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/846941432/29Mar-2Apr-2025-1-NEWS-Verian-Poll-First-Report?secret_password=EijSkHOb7Wmhl9Oxkk19",
+   "sample_size": 1000,
+   "results": {
+    "national": 36.0,
+    "labour": 32.0,
+    "green": 10.0,
+    "act": 9.0,
+    "nz-first": 7.0,
+    "te-pati-maori": 3.4,
+    "opportunity": 2.1
+   },
+   "others": 1.3
+  },
+  {
+   "date": "29 Mar – 1 Apr 2025",
+   "end_date": "2025-04-01",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.rnz.co.nz/news/national/557194/labour-te-pati-maori-lose-ground-april-taxpayers-union-curia-poll",
+   "sample_size": 1000,
+   "results": {
+    "national": 33.5,
+    "labour": 29.8,
+    "green": 11.0,
+    "act": 10.0,
+    "nz-first": 7.4,
+    "te-pati-maori": 4.3,
+    "opportunity": 1.5
+   },
+   "others": 1.4
+  },
+  {
+   "date": "21–27 Mar 2025",
+   "end_date": "2025-03-27",
+   "pollster": "RNZ–Reid Research",
+   "source_url": "https://www.rnz.co.nz/news/poll/556774/rnz-reid-research-poll-view-all-results-and-charts",
+   "sample_size": 1000,
+   "results": {
+    "national": 32.9,
+    "labour": 32.3,
+    "green": 10.0,
+    "act": 9.4,
+    "nz-first": 7.2,
+    "te-pati-maori": 5.0,
+    "opportunity": 1.8
+   },
+   "others": null
+  },
+  {
+   "date": "24 Feb – 23 Mar 2025",
+   "end_date": "2025-03-23",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9893-nz-national-voting-intention-march-2025",
+   "sample_size": 888,
+   "results": {
+    "national": 32.5,
+    "labour": 27.5,
+    "green": 14.5,
+    "act": 7.5,
+    "nz-first": 7.0,
+    "te-pati-maori": 5.5,
+    "opportunity": 4.0
+   },
+   "others": 1.5
+  },
+  {
+   "date": "1–10 Mar 2025",
+   "end_date": "2025-03-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.stuff.co.nz/politics/360615379/labours-lead-grows-over-national-latest-political-poll",
+   "sample_size": 1003,
+   "results": {
+    "national": 31.0,
+    "labour": 34.0,
+    "green": 10.0,
+    "act": 10.0,
+    "nz-first": 6.1,
+    "te-pati-maori": 4.4
+   },
+   "others": null
+  },
+  {
+   "date": "2–4 Mar 2025",
+   "end_date": "2025-03-04",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/march25_nztupollsuhg",
+   "sample_size": 1000,
+   "results": {
+    "national": 33.6,
+    "labour": 34.1,
+    "green": 10.0,
+    "act": 7.7,
+    "nz-first": 5.1,
+    "te-pati-maori": 6.5,
+    "opportunity": 0.5
+   },
+   "others": 2.5
+  },
+  {
+   "date": "27 Jan – 23 Feb 2025",
+   "end_date": "2025-02-23",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9863-nz-national-voting-intention-february-2025",
+   "sample_size": 888,
+   "results": {
+    "national": 30.5,
+    "labour": 29.0,
+    "green": 15.5,
+    "act": 11.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 3.0,
+    "opportunity": 2.5
+   },
+   "others": 2.5
+  },
+  {
+   "date": "3–7 Feb 2025",
+   "end_date": "2025-02-07",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/826079900/3-7-Feb-2025-1-NEWS-Verian-Poll-Report?secret_password=MBl28mhMYWzI9ffKIOFU",
+   "sample_size": 1002,
+   "results": {
+    "national": 34.0,
+    "labour": 33.0,
+    "green": 10.0,
+    "act": 9.0,
+    "nz-first": 5.0,
+    "te-pati-maori": 3.7,
+    "opportunity": 1.9
+   },
+   "others": 3.6
+  },
+  {
+   "date": "2–4 Feb 2025",
+   "end_date": "2025-02-04",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/poll_feb_25_basjfgas",
+   "sample_size": 1000,
+   "results": {
+    "national": 31.9,
+    "labour": 31.3,
+    "green": 13.2,
+    "act": 10.0,
+    "nz-first": 6.4,
+    "te-pati-maori": 4.4,
+    "opportunity": 0.5
+   },
+   "others": 2.2
+  },
+  {
+   "date": "7–27 Jan 2025",
+   "end_date": "2025-01-27",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.thepost.co.nz/politics/360568711/another-poll-puts-labour-support-ahead-national",
+   "sample_size": 1049,
+   "results": {
+    "national": 33.0,
+    "labour": 34.0,
+    "green": 12.0,
+    "act": 9.0,
+    "nz-first": 5.2,
+    "te-pati-maori": 4.6
+   },
+   "others": null
+  },
+  {
+   "date": "2–26 Jan 2025",
+   "end_date": "2025-01-26",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9833-nz-national-voting-intention-january-2025",
+   "sample_size": 885,
+   "results": {
+    "national": 32.5,
+    "labour": 28.5,
+    "green": 11.5,
+    "act": 9.0,
+    "nz-first": 8.5,
+    "te-pati-maori": 6.5,
+    "opportunity": 1.5
+   },
+   "others": 2.0
+  },
+  {
+   "date": "9–13 Jan 2025",
+   "end_date": "2025-01-13",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/25jan_tuc_poll",
+   "sample_size": 1000,
+   "results": {
+    "national": 29.6,
+    "labour": 30.9,
+    "green": 9.5,
+    "act": 10.8,
+    "nz-first": 8.1,
+    "te-pati-maori": 5.3,
+    "opportunity": 2.1
+   },
+   "others": 3.7
+  },
+  {
+   "date": "25 Nov – 15 Dec 2024",
+   "end_date": "2024-12-15",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9813-nz-national-voting-intention-december-2024",
+   "sample_size": 885,
+   "results": {
+    "national": 31.0,
+    "labour": 26.0,
+    "green": 13.5,
+    "act": 13.0,
+    "nz-first": 7.5,
+    "te-pati-maori": 5.5,
+    "opportunity": 1.0
+   },
+   "others": 2.5
+  },
+  {
+   "date": "30 Nov – 4 Dec 2024",
+   "end_date": "2024-12-04",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/802497790/30-Nov-4-Dec-2024-1-NEWS-Verian-Poll-Report-Short-Report",
+   "sample_size": 1006,
+   "results": {
+    "national": 37.0,
+    "labour": 29.0,
+    "green": 10.0,
+    "act": 8.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 7.0,
+    "opportunity": 1.5
+   },
+   "others": 2.0
+  },
+  {
+   "date": "1–3 Dec 2024",
+   "end_date": "2024-12-03",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/final_poll_dec2024",
+   "sample_size": 1000,
+   "results": {
+    "national": 34.2,
+    "labour": 26.9,
+    "green": 8.3,
+    "act": 13.0,
+    "nz-first": 5.4,
+    "te-pati-maori": 5.5,
+    "opportunity": 1.1
+   },
+   "others": 2.2
+  },
+  {
+   "date": "22–28 Nov 2024",
+   "end_date": "2024-11-28",
+   "pollster": "Labour–Talbot Mills",
+   "source_url": "https://www.stuff.co.nz/politics/360505907/labour-leader-chris-hipkins-starts-his-pitch-tax-reform",
+   "sample_size": null,
+   "results": {
+    "national": 31.0,
+    "labour": 32.0,
+    "green": 10.0,
+    "act": 10.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 7.0
+   },
+   "others": null
+  },
+  {
+   "date": "26–27 Nov 2024",
+   "end_date": "2024-11-27",
+   "pollster": "The Post/Freshwater Strategy",
+   "source_url": "https://www.stuff.co.nz/nz-news/360507840/new-poll-delivers-hung-parliament-bad-news-christopher-luxon-preferred-pm",
+   "sample_size": 1150,
+   "results": {
+    "national": 34.0,
+    "labour": 31.0,
+    "green": 13.0,
+    "act": 8.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 4.0
+   },
+   "others": null
+  },
+  {
+   "date": "28 Oct – 24 Nov 2024",
+   "end_date": "2024-11-24",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9773-nz-national-voting-intention-november-2024",
+   "sample_size": 866,
+   "results": {
+    "national": 28.5,
+    "labour": 28.0,
+    "green": 13.5,
+    "act": 9.0,
+    "nz-first": 6.5,
+    "te-pati-maori": 9.0,
+    "opportunity": 3.5
+   },
+   "others": 2.0
+  },
+  {
+   "date": "6–10 Nov 2024",
+   "end_date": "2024-11-10",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/poll_nov2024_cutunz",
+   "sample_size": 1000,
+   "results": {
+    "national": 38.8,
+    "labour": 31.5,
+    "green": 9.3,
+    "act": 8.5,
+    "nz-first": 6.5,
+    "te-pati-maori": 2.5,
+    "opportunity": 0.9
+   },
+   "others": 2.1
+  },
+  {
+   "date": "1–10 Nov 2024",
+   "end_date": "2024-11-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.nzherald.co.nz/nz/politics/hikois-influence-will-be-felt-for-years-but-treaty-bill-still-popular-thomas-couglan/ZGRV4ECOE5CJJAUZNHRDFFM4YA/",
+   "sample_size": null,
+   "results": {
+    "national": 34.0,
+    "labour": 33.0,
+    "green": 10.0,
+    "act": 10.0,
+    "nz-first": 7.0,
+    "te-pati-maori": 3.3
+   },
+   "others": null
+  },
+  {
+   "date": "23 Sep – 20 Oct 2024",
+   "end_date": "2024-10-20",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/national-support-down-significantly-in-october-after-the-sinking-of-hmnzs-manawanui-in-samoa",
+   "sample_size": 883,
+   "results": {
+    "national": 31.0,
+    "labour": 29.0,
+    "green": 14.0,
+    "act": 9.0,
+    "nz-first": 7.0,
+    "te-pati-maori": 5.0,
+    "opportunity": 2.0
+   },
+   "others": 3.0
+  },
+  {
+   "date": "5–9 Oct 2024",
+   "end_date": "2024-10-09",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/779677361/5-9-Oct-2024-1-NEWS-Verian-Poll-Report-Short-Report?secret_password=gKuXTjvqiaosgIZHNhQY",
+   "sample_size": 1000,
+   "results": {
+    "national": 37.0,
+    "labour": 29.0,
+    "green": 12.0,
+    "act": 8.0,
+    "nz-first": 5.0,
+    "te-pati-maori": 3.8,
+    "opportunity": 2.6
+   },
+   "others": 2.3
+  },
+  {
+   "date": "3–7 Oct 2024",
+   "end_date": "2024-10-07",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/oct2024_polling",
+   "sample_size": 1000,
+   "results": {
+    "national": 34.9,
+    "labour": 30.3,
+    "green": 10.4,
+    "act": 9.7,
+    "nz-first": 7.6,
+    "te-pati-maori": 3.0,
+    "opportunity": 2.5
+   },
+   "others": 1.6
+  },
+  {
+   "date": "26 Aug – 22 Sep 2024",
+   "end_date": "2024-09-22",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9693-nz-national-voting-intention-september-2024",
+   "sample_size": 902,
+   "results": {
+    "national": 37.5,
+    "labour": 23.0,
+    "green": 14.0,
+    "act": 10.0,
+    "nz-first": 7.5,
+    "te-pati-maori": 4.0,
+    "opportunity": 2.5
+   },
+   "others": 1.5
+  },
+  {
+   "date": "8–10 Sep 2024",
+   "end_date": "2024-09-10",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/poll_sept2024",
+   "sample_size": 1000,
+   "results": {
+    "national": 39.0,
+    "labour": 26.7,
+    "green": 11.0,
+    "act": 8.8,
+    "nz-first": 6.8,
+    "te-pati-maori": 5.0,
+    "opportunity": 1.1
+   },
+   "others": 2.4
+  },
+  {
+   "date": "1–10 Sep 2024",
+   "end_date": "2024-09-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.nzherald.co.nz/nz/politics/new-poll-results-show-closer-fight-between-chris-hipkins-christopher-luxon-for-preferred-prime-minister/NSG6OIVZWFBORAPPGLXAVHY2DE/",
+   "sample_size": null,
+   "results": {
+    "national": 37.0,
+    "labour": 32.0,
+    "green": 10.0,
+    "act": 8.0,
+    "nz-first": 6.1,
+    "te-pati-maori": 3.9
+   },
+   "others": null
+  },
+  {
+   "date": "29 Jul – 25 Aug 2024",
+   "end_date": "2024-08-25",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9663-nz-national-voting-intention-august-2024",
+   "sample_size": 898,
+   "results": {
+    "national": 36.0,
+    "labour": 26.5,
+    "green": 13.0,
+    "act": 9.5,
+    "nz-first": 7.5,
+    "te-pati-maori": 3.5,
+    "opportunity": 2.5
+   },
+   "others": 1.5
+  },
+  {
+   "date": "10–14 Aug 2024",
+   "end_date": "2024-08-14",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/760275508/10-14Aug-2024-1-NEWS-Verian-Poll-Report-Short-Report?secret_password=h40G0FbN0NhwWzFYNdld",
+   "sample_size": 1001,
+   "results": {
+    "national": 38.0,
+    "labour": 30.0,
+    "green": 11.0,
+    "act": 7.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 4.2,
+    "opportunity": 1.1
+   },
+   "others": 2.8
+  },
+  {
+   "date": "24 Jun – 21 Jul 2024",
+   "end_date": "2024-07-21",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9643-nz-national-voting-intention-july-2024",
+   "sample_size": 930,
+   "results": {
+    "national": 32.5,
+    "labour": 24.0,
+    "green": 14.0,
+    "act": 11.0,
+    "nz-first": 6.5,
+    "te-pati-maori": 6.0,
+    "opportunity": 4.5
+   },
+   "others": 1.5
+  },
+  {
+   "date": "4–8 Jul 2024",
+   "end_date": "2024-07-08",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/nztu_curia_poll_2407",
+   "sample_size": 1000,
+   "results": {
+    "national": 37.6,
+    "labour": 25.9,
+    "green": 12.5,
+    "act": 9.1,
+    "nz-first": 7.3,
+    "te-pati-maori": 3.5,
+    "opportunity": 2.4
+   },
+   "others": 1.8
+  },
+  {
+   "date": "27 May – 23 Jun 2024",
+   "end_date": "2024-06-23",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9623-nz-national-voting-intention-june-2024",
+   "sample_size": 930,
+   "results": {
+    "national": 35.0,
+    "labour": 27.5,
+    "green": 14.5,
+    "act": 9.0,
+    "nz-first": 5.5,
+    "te-pati-maori": 3.5,
+    "opportunity": 2.5
+   },
+   "others": 2.5
+  },
+  {
+   "date": "15–19 Jun 2024",
+   "end_date": "2024-06-19",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/745142232/15-19-Jun-2024-1-NEWS-Verian-Poll-Report-Short-Report?secret_password=fUV0qiPSdWnmeblTBKmt",
+   "sample_size": 1002,
+   "results": {
+    "national": 38.0,
+    "labour": 29.0,
+    "green": 13.0,
+    "act": 7.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 3.3,
+    "opportunity": 1.5
+   },
+   "others": 2.1
+  },
+  {
+   "date": "4–6 Jun 2024",
+   "end_date": "2024-06-06",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/nztu_curia_2406_poll",
+   "sample_size": 1000,
+   "results": {
+    "national": 35.4,
+    "labour": 29.4,
+    "green": 12.7,
+    "act": 9.7,
+    "nz-first": 5.6,
+    "te-pati-maori": 4.0,
+    "opportunity": 0.8
+   },
+   "others": 2.4
+  },
+  {
+   "date": "22 Apr – 19 May 2024",
+   "end_date": "2024-05-19",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/nz-national-voting-intention-may-2024",
+   "sample_size": 925,
+   "results": {
+    "national": 33.5,
+    "labour": 30.0,
+    "green": 14.0,
+    "act": 9.5,
+    "nz-first": 5.5,
+    "te-pati-maori": 3.0,
+    "opportunity": 3.0
+   },
+   "others": 1.5
+  },
+  {
+   "date": "1–10 May 2024",
+   "end_date": "2024-05-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.thepost.co.nz/politics/350282502/are-tax-cuts-boost-economy-needs",
+   "sample_size": null,
+   "results": {
+    "national": 35.0,
+    "labour": 32.0
+   },
+   "others": null
+  },
+  {
+   "date": "5–7 May 2024",
+   "end_date": "2024-05-07",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/taxpayers_union_curia_poll_may_2024",
+   "sample_size": 1000,
+   "results": {
+    "national": 37.3,
+    "labour": 30.0,
+    "green": 10.2,
+    "act": 9.4,
+    "nz-first": 5.5,
+    "te-pati-maori": 3.1,
+    "opportunity": 1.4
+   },
+   "others": 3.1
+  },
+  {
+   "date": "30 Apr 2024",
+   "end_date": "2024-04-30",
+   "pollster": "Labour–Talbot Mills",
+   "source_url": "https://www.nzherald.co.nz/nz/political-roundup-discontent-and-gloom-dominate-nzs-political-mood/BJONTIXBCJHT7M4XLWZAWWUY7U/",
+   "sample_size": null,
+   "results": {
+    "national": 34.0,
+    "labour": 33.0,
+    "green": 12.0,
+    "act": 7.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 4.0
+   },
+   "others": null
+  },
+  {
+   "date": "20–24 Apr 2024",
+   "end_date": "2024-04-24",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.1news.co.nz/2024/04/29/poll-labour-could-return-to-power-if-election-held-today/",
+   "sample_size": 1000,
+   "results": {
+    "national": 36.0,
+    "labour": 30.0,
+    "green": 14.0,
+    "act": 7.0,
+    "nz-first": 4.2,
+    "te-pati-maori": 3.7,
+    "opportunity": 1.2
+   },
+   "others": 3.7
+  },
+  {
+   "date": "25 Mar – 21 Apr 2024",
+   "end_date": "2024-04-21",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/nz-national-voting-intention-april-2024",
+   "sample_size": 934,
+   "results": {
+    "national": 36.5,
+    "labour": 24.5,
+    "green": 13.0,
+    "act": 11.0,
+    "nz-first": 5.5,
+    "te-pati-maori": 5.5,
+    "opportunity": 2.0
+   },
+   "others": 2.0
+  },
+  {
+   "date": "2–4 Apr 2024",
+   "end_date": "2024-04-04",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/poll_april_2024",
+   "sample_size": 1000,
+   "results": {
+    "national": 37.1,
+    "labour": 25.7,
+    "green": 14.6,
+    "act": 7.2,
+    "nz-first": 6.3,
+    "te-pati-maori": 4.6,
+    "opportunity": 1.6
+   },
+   "others": 3.0
+  },
+  {
+   "date": "26 Feb – 24 Mar 2024",
+   "end_date": "2024-03-24",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/national-act-nz-first-56-increase-lead-over-labour-greens-maori-on-40-5-now-at-15-5-points",
+   "sample_size": 931,
+   "results": {
+    "national": 38.0,
+    "labour": 23.0,
+    "green": 13.5,
+    "act": 11.5,
+    "nz-first": 6.5,
+    "te-pati-maori": 3.5,
+    "opportunity": 2.5
+   },
+   "others": 1.0
+  },
+  {
+   "date": "1–10 Mar 2024",
+   "end_date": "2024-03-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://businessdesk.co.nz/article/politics/christopher-luxon-struggling-to-connect-leaked-poll",
+   "sample_size": 1000,
+   "results": {
+    "national": 38.0,
+    "labour": 28.0,
+    "green": 14.0,
+    "act": 8.0,
+    "nz-first": 6.0
+   },
+   "others": null
+  },
+  {
+   "date": "3–5 Mar 2024",
+   "end_date": "2024-03-05",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/taxpayers_union_curia_poll_march_2024",
+   "sample_size": 1000,
+   "results": {
+    "national": 37.4,
+    "labour": 25.3,
+    "green": 11.3,
+    "act": 10.0,
+    "nz-first": 7.4,
+    "te-pati-maori": 2.5,
+    "opportunity": 2.1
+   },
+   "others": 4.0
+  },
+  {
+   "date": "29 Jan – 25 Feb 2024",
+   "end_date": "2024-02-25",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9483-nz-national-voting-intention-february-2024",
+   "sample_size": 935,
+   "results": {
+    "national": 35.5,
+    "labour": 21.5,
+    "green": 15.5,
+    "act": 12.0,
+    "nz-first": 7.5,
+    "te-pati-maori": 4.0,
+    "opportunity": 2.5
+   },
+   "others": 1.5
+  },
+  {
+   "date": "10–14 Feb 2024",
+   "end_date": "2024-02-14",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.scribd.com/document/706701545/10-14Feb-2024-1-NEWS-Verian-Poll-Report-Short-Report/",
+   "sample_size": 1002,
+   "results": {
+    "national": 38.0,
+    "labour": 28.0,
+    "green": 12.0,
+    "act": 8.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 3.7,
+    "opportunity": 1.9
+   },
+   "others": 2.6
+  },
+  {
+   "date": "1–10 Feb 2024",
+   "end_date": "2024-02-10",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.nzherald.co.nz/nz/politics/national-extends-lead-in-latest-poll-chris-hipkins-falls/FEFRB553ZZC37PSDUO7HQQB7EA/",
+   "sample_size": null,
+   "results": {
+    "national": 38.0,
+    "labour": 29.0,
+    "green": 12.0,
+    "act": 7.0,
+    "nz-first": 6.2,
+    "te-pati-maori": 4.9,
+    "opportunity": 1.4
+   },
+   "others": null
+  },
+  {
+   "date": "1–7 Feb 2024",
+   "end_date": "2024-02-07",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/nztucuria2402poll",
+   "sample_size": 1000,
+   "results": {
+    "national": 39.6,
+    "labour": 27.9,
+    "green": 9.0,
+    "act": 13.7,
+    "nz-first": 5.0,
+    "te-pati-maori": 2.3
+   },
+   "others": 2.5
+  },
+  {
+   "date": "8–28 Jan 2024",
+   "end_date": "2024-01-31",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9443-nz-national-voting-intention-january-2024",
+   "sample_size": 947,
+   "results": {
+    "national": 38.0,
+    "labour": 22.0,
+    "green": 15.5,
+    "act": 7.5,
+    "nz-first": 6.0,
+    "te-pati-maori": 4.5,
+    "opportunity": 4.5
+   },
+   "others": 2.0
+  },
+  {
+   "date": "8–10 Jan 2024",
+   "end_date": "2024-01-10",
+   "pollster": "Curia",
+   "source_url": "https://www.nzherald.co.nz/nz/politics/national-soars-in-new-poll-as-voters-agree-country-is-on-track-chris-hipkins-crashes-record-low/TNS4GGJHIFDTZNGMKPQLNJOGJA/",
+   "sample_size": 1000,
+   "results": {
+    "national": 41.0,
+    "labour": 28.4,
+    "green": 9.5,
+    "act": 7.8,
+    "nz-first": 5.6,
+    "te-pati-maori": 3.6
+   },
+   "others": null
+  },
+  {
+   "date": "27 Nov – 17 Dec 2023",
+   "end_date": "2023-12-31",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/9433-nz-national-voting-intention-december-2023",
+   "sample_size": 947,
+   "results": {
+    "national": 36.0,
+    "labour": 22.0,
+    "green": 15.5,
+    "act": 9.5,
+    "nz-first": 6.0,
+    "te-pati-maori": 5.0,
+    "opportunity": 4.0
+   },
+   "others": 2.0
+  },
+  {
+   "date": "3–5 Dec 2023",
+   "end_date": "2023-12-05",
+   "pollster": "Curia",
+   "source_url": "https://www.nzherald.co.nz/nz/politics/honeymoon-over-christopher-luxon-takes-a-dive-nz-first-overtakes-act-in-new-poll/NTXYYSEQBNCN7MJD3THKJXGRVA/",
+   "sample_size": null,
+   "results": {
+    "national": 36.5,
+    "labour": 28.8,
+    "green": 10.8,
+    "act": 6.2,
+    "nz-first": 8.1,
+    "te-pati-maori": 5.0
+   },
+   "others": 4.6
+  },
+  {
+   "date": "30 Oct – 26 Nov 2023",
+   "end_date": "2023-11-30",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/roy-morgan-nz-election-november-2023",
+   "sample_size": 920,
+   "results": {
+    "national": 37.5,
+    "labour": 21.0,
+    "green": 12.5,
+    "act": 12.5,
+    "nz-first": 8.0,
+    "te-pati-maori": 2.5,
+    "opportunity": 3.5
+   },
+   "others": 2.5
+  },
+  {
+   "date": "1–6 Nov 2023",
+   "end_date": "2023-11-06",
+   "pollster": "Taxpayers' Union–Curia",
+   "source_url": "https://www.taxpayers.org.nz/nztu_poll_23_11_09_curia_nov_2023",
+   "sample_size": 1000,
+   "results": {
+    "national": 37.0,
+    "labour": 28.3,
+    "green": 13.8,
+    "act": 8.1,
+    "nz-first": 6.0,
+    "te-pati-maori": 3.4,
+    "opportunity": 2.9
+   },
+   "others": 3.7
+  },
+  {
+   "date": "14 Oct 2023",
+   "end_date": "2023-10-14",
+   "pollster": "2023 election result",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 38.08,
+    "labour": 26.92,
+    "green": 11.61,
+    "act": 8.64,
+    "nz-first": 6.09,
+    "te-pati-maori": 3.08,
+    "opportunity": 2.22
+   },
+   "is_election_result": true,
+   "others": 3.36
+  }
+ ],
+ "events": [
+  {
+   "date": "12 Aug 2026",
+   "event": "Prime Minister and National Party leader Christopher Luxon survives a second party leadership vote."
+  },
+  {
+   "date": "28 May 2026",
+   "event": "Budget 2026 is delivered."
+  },
+  {
+   "date": "11 May 2026",
+   "event": "Mariameno Kapa-Kingi exits Te Pāti Māori to start Te Tai Tokerau Party."
+  },
+  {
+   "date": "21 Apr 2026",
+   "event": "Prime Minister and National Party leader Christopher Luxon survives a party leadership vote called by himself."
+  },
+  {
+   "date": "2 Mar 2026",
+   "event": "The Strait of Hormuz is closed as part of the Iran war, causing an incoming fuel crisis affecting New Zealand."
+  },
+  {
+   "date": "21 Jan 2026",
+   "event": "Prime Minister Christopher Luxon announces that the election will be held on 7 November 2026."
+  },
+  {
+   "date": "5 Dec 2025",
+   "event": "Mariameno Kapa-Kingi reinstated as a member of Te Pāti Māori by the High Court."
+  },
+  {
+   "date": "16 Nov 2025",
+   "event": "Qiulae Wong becomes leader of The Opportunity Party."
+  },
+  {
+   "date": "10 Nov 2025",
+   "event": "Tākuta Ferris and Mariameno Kapa-Kingi are expelled from Te Pāti Māori."
+  },
+  {
+   "date": "6 Sep 2025",
+   "event": "Oriini Kaipara of Te Pāti Māori wins the Tāmaki Makaurau by-election."
+  },
+  {
+   "date": "31 May 2025",
+   "event": "David Seymour of the ACT party becomes Deputy Prime Minister, replacing Winston Peters of NZ First."
+  },
+  {
+   "date": "22 May 2025",
+   "event": "Budget 2025 is delivered."
+  },
+  {
+   "date": "10–19 Nov 2024",
+   "event": "Hīkoi mō te Tiriti protest against the Treaty Principles Bill."
+  },
+  {
+   "date": "30 May 2024",
+   "event": "Budget 2024 is delivered."
+  },
+  {
+   "date": "10 Mar 2024",
+   "event": "Chlöe Swarbrick is elected as co-leader of the Green Party."
+  },
+  {
+   "date": "30 Jan 2024",
+   "event": "James Shaw announces his intention to resign as co-leader of the Green Party in March 2024."
+  },
+  {
+   "date": "3 Dec 2023",
+   "event": "Raf Manji resigns as leader of The Opportunities Party."
+  },
+  {
+   "date": "27 Nov 2023",
+   "event": "Christopher Luxon is sworn in as Prime Minister of New Zealand."
+  }
+ ]
+}

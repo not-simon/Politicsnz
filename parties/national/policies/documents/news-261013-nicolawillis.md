@@ -39,9 +39,9 @@ These five commitments are:
 
 - Extending paid parental leave from 26 weeks to 30 weeks within three years so that parents have more financial security while caring for their baby
 
-- Strengthening KiwiSaver , including a $1500 Baby Boost payment and changes to contributions for parents on paid parental leave, so people can build bigger savings nest eggs to ensure greater financial security
+- Strengthening KiwiSaver, including a $1500 Baby Boost payment and changes to contributions for parents on paid parental leave, so people can build bigger savings nest eggs to ensure greater financial security
 
-- Prioritising and expediting work and visitor visas for partners of New Zealand citizens , so Kiwis who meet their partners overseas can bring them home when they return.
+- Prioritising and expediting work and visitor visas for partners of New Zealand citizens, so Kiwis who meet their partners overseas can bring them home when they return.
 
 Each commitment has been fully funded to commence by 1 July 2027 in National’s fiscal plan (some may be earlier). Where a legislative change is needed to implement a commitment, National will pass the legislation in its first 100 days.
 

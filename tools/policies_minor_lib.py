@@ -66,8 +66,14 @@ def links(path, base):
 def html_to_md(el):
     """Convert a bs4 element to Markdown, keeping all text (only markup normalised)."""
     from markdownify import markdownify
+    from bs4 import NavigableString, Comment
     for bad in el.find_all(["script", "style", "noscript", "form", "iframe", "svg", "button"]):
         bad.decompose()
+    for c in el.find_all(string=lambda x: isinstance(x, Comment)):
+        c.extract()
+    for t in el.find_all(string=True):
+        if isinstance(t, NavigableString) and not t.find_parent("pre") and "\n" in t:
+            t.replace_with(re.sub(r"\s*\n\s*", " ", str(t)))
     md = markdownify(str(el), heading_style="ATX", bullets="-", strip=["img"])
     md = re.sub(r"[ \t]+\n", "\n", md)
     md = re.sub(r"\n{3,}", "\n\n", md)
@@ -91,9 +97,9 @@ def main_md(path, selectors=("main", "article", "#content", ".content", "body"),
     return title, html_to_md(el)
 
 
-def pdf_text(path):
-    r = subprocess.run(["pdftotext", "-layout", path, "-"], capture_output=True, text=True)
-    t = r.stdout
+def pdf_text(path, layout=False):
+    r = subprocess.run(["pdftotext"] + (["-layout"] if layout else []) + [path, "-"], capture_output=True, text=True)
+    t = r.stdout.replace("\u200b", "").replace("\f", "\n\n")
     t = re.sub(r"[ \t]+\n", "\n", t)
     t = re.sub(r"\n{4,}", "\n\n\n", t)
     return t.strip() + "\n"
@@ -142,3 +148,70 @@ if __name__ == "__main__":
                 print(h, "|", t[:80])
     elif p and cmd == "md":
         print(main_md(p)[1])
+
+
+def scoop_md(path):
+    """Extract (title, date/byline, markdown body) of a Scoop press release."""
+    from bs4 import Comment
+    s = soup(path)
+    art = s.select_one("#article")
+    title = art.select_one("h1").get_text(" ", strip=True)
+    by = art.select_one(".byline")
+    byline = by.get_text(" ", strip=True) if by else ""
+    top = art.select_one(".story-top")
+    if top:
+        top.decompose()
+    for bq in art.find_all("blockquote"):
+        bq.unwrap()
+    for sel in [".article-left-box-wrapper", "#story-footer", "#byline-block", ".byline-block", "script", "style"]:
+        for t in art.select(sel):
+            t.decompose()
+    for c in art.find_all(string=lambda x: isinstance(x, Comment)):
+        c.extract()
+    for a in art.find_all("a"):
+        if "scoop.co.nz/about/terms" in (a.get("href") or ""):
+            a.decompose()
+    md = html_to_md(art)
+    md = re.sub(r"(?m)^\s*>\s*$", "", md)
+    # rejoin hard-wrapped lines inside paragraphs (Scoop wraps at ~60 chars)
+    paras = re.split(r"\n\s*\n", md)
+    out = []
+    for p in paras:
+        lines = p.split("\n")
+        if all(not re.match(r"\s*([-*]|\d+\.|#|>|\|)", l) for l in lines[1:]):
+            p = " ".join(l.strip() for l in lines)
+        out.append(p.strip())
+    md = "\n\n".join(x for x in out if x)
+    return title, byline, md.strip() + "\n"
+
+
+def pdf_md(path):
+    """pdftotext -layout, lightly normalised to Markdown: bullets become '-', indentation removed,
+    page-break form feeds become a horizontal rule. Words are unchanged."""
+    r = subprocess.run(["pdftotext", "-layout", path, "-"], capture_output=True, text=True)
+    t = r.stdout.replace("​", "")
+    pages = t.split("\f")
+    out_pages = []
+    for pg in pages:
+        lines = []
+        for raw in pg.split("\n"):
+            s = raw.rstrip()
+            ind = len(s) - len(s.lstrip())
+            s = s.strip()
+            m = re.match(r"^([•●▪■◦○\-–])\s+(.*)$", s)
+            if m and m.group(1) in "•●▪■":
+                s = "- " + m.group(2)
+            elif m and m.group(1) in "◦○":
+                s = "    - " + m.group(2)
+            s = re.sub(r"\s{3,}", "  ", s)
+            lines.append(s)
+        txt = "\n".join(lines)
+        txt = re.sub(r"\n{3,}", "\n\n", txt).strip()
+        if txt:
+            out_pages.append(txt)
+    return ("\n\n---\n\n".join(out_pages)).strip() + "\n"
+
+
+def soup_from_html(h):
+    from bs4 import BeautifulSoup
+    return BeautifulSoup("<div>" + h + "</div>", "html.parser").div

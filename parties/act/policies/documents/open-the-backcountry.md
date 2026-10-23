@@ -1,0 +1,65 @@
+---
+title: "Open the Backcountry"
+party: act
+source_url: https://www.act.org.nz/open-the-backcountry
+retrieved: 2026-10-23
+format: html
+fetch_method: curl (direct from origin), main content extracted with BeautifulSoup (tools/policies_act_fetch.py)
+document_type: policy page
+raw_file: raw/party-docs/act/html/open-the-backcountry.html.gz
+cited_by_policy_nz: true
+---
+
+# Open the Backcountry
+
+*ACT New Zealand policy page. Source: <https://www.act.org.nz/open-the-backcountry> (retrieved 2026-10-23).*
+
+## Full text
+
+> Verbatim text as published; only whitespace and markup have been normalised.
+
+###### Hunters and Firearms
+
+## Open the Backcountry
+
+Much of New Zealand’s public land is difficult to reach. In rugged country such as Fiordland, a helicopter can be the only practical way in, yet large areas remain closed by no-fly and no-landing lines with no clear conservation or safety reason.
+
+Commercial venison recovery is also caught between DOC rules and aviation regulation. DOC can dictate the type of helicopter an operator uses even though aircraft safety is already regulated by the Civil Aviation Authority.
+
+ACT would make access decisions clear and defensible, leave aviation safety to the aviation regulator and give hunters a proper role in balancing recreational hunting with commercial recovery.
+
+Read the full policy
+
+#### ACT will:
+
+- Allow the Game Animal Council to designate sensible and accessible helicopter landing sites.
+- Require DOC to use clear, public and consistent tests when deciding where aircraft may land.
+- Direct the Outdoor Access Commission to make hunting access a priority in its work programme.
+- Stop DOC dictating which helicopters commercial venison recovery operators can use, leaving aircraft safety to the Civil Aviation Authority.
+- Allow the Game Animal Council to restrict commercial take by animal gender when necessary, so recreational hunters and recovery operators can fairly share a well-managed resource.
+
+#### In our team's words:
+
+ACT Deputy Leader Nicole McKee says:
+
+“Public conservation land belongs to New Zealanders, but large parts of it are effectively closed off. In country such as Fiordland, a helicopter can be the only realistic way in. Access restrictions should have a clear conservation or safety reason, not survive because of an old line on a map.
+
+“Better access is not a licence to ignore conservation limits. It means opening the country New Zealanders already own under rules that are clear, justified and fair to the people who use it.”
+
+ACT Conservation spokesperson Cameron Luxton says:
+
+“ACT would let the Game Animal Council identify sensible landing sites and require DOC to use a clear and public test. We would also tell the Outdoor Access Commission to prioritise hunting access when it works to secure routes onto public land.
+
+“DOC currently makes commercial venison recovery operators use expensive turbine helicopters. Aircraft safety is the Civil Aviation Authority’s job. DOC should manage conservation effects and leave aircraft standards to the regulator established for that purpose.
+
+“Current permits can also let commercial operators strip out the trophy stags recreational hunters value most. Where necessary, the Game Animal Council would be able to restrict take by animal gender so commercial recovery and recreational hunting can share the resource fairly.”
+
+---
+
+**Links in the original text:**
+
+- Read the full policy → <https://act.org.nz/hunters>
+
+---
+
+**Full policy document linked from this page:** [Backing Hunters](pdf-policy-backing-hunters-02-2.md)

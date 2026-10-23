@@ -35,7 +35,7 @@ This means that: • An early career accountant earning $75,000 per year will ke
 
 ### Introduce tougher measures to recover student loan debt from people who move overseas
 
-New financial penalties: 1 per cent added to annual interest on overseas-based borrower balances, taking it to 6.6 per cent, with tiered penalties for sustained default, on top of existing late payment interest. Restricted KiwiSaver withdrawals , so people who move overseas permanently must clear their student loan before accessing KiwiSaver. Tighter arrest settings , so arrest warrants can be sought for serious, sustained default without needing to prove a borrower knowingly refused to pay.
+New financial penalties: 1 per cent added to annual interest on overseas-based borrower balances, taking it to 6.6 per cent, with tiered penalties for sustained default, on top of existing late payment interest. Restricted KiwiSaver withdrawals, so people who move overseas permanently must clear their student loan before accessing KiwiSaver. Tighter arrest settings, so arrest warrants can be sought for serious, sustained default without needing to prove a borrower knowingly refused to pay.
 
 ## Back Pocket Boost for Graduates
 

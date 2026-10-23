@@ -53,19 +53,19 @@ Completed an FTA with India, which eliminates or reduces tariffs on 95% of our e
 
 •
 
- rought the NZ–EU Free Trade Agreement into force ahead of schedule, supporting an additional $3 billion in
+  rought the NZ–EU Free Trade Agreement into force ahead of schedule, supporting an additional $3 billion in
 B
 exports to the European Union.
 
 •
 
- ompleted New Zealand’s first FTA in the Middle East with the UAE, which eliminates duties on 98.5% of
+  ompleted New Zealand’s first FTA in the Middle East with the UAE, which eliminates duties on 98.5% of
 C
 exports, supporting a 37.9% growth in exports since the deal was signed.
 
 •
 
- ompleted negotiations with the six-nation Gulf Cooperation Council, an economic bloc worth $4 trillion in
+  ompleted negotiations with the six-nation Gulf Cooperation Council, an economic bloc worth $4 trillion in
 C
 GDP, which eliminates duties for 99% of our exports over 10 years.
 
@@ -89,7 +89,7 @@ Prioritising new trade deals with European, South American, African and Asian co
 
 •
 
- egotiating new essential supplies agreements with like-minded partners, using the NZ–Singapore AOTES
+  egotiating new essential supplies agreements with like-minded partners, using the NZ–Singapore AOTES
 N
 agreement as the template.
 
@@ -108,13 +108,13 @@ Creating new tools for businesses to help streamline their export experience.
 
 •
 
- iving New Zealand Trade and Enterprise a sharper mandate – leading Kiwi businesses to new opportunities
+  iving New Zealand Trade and Enterprise a sharper mandate – leading Kiwi businesses to new opportunities
 G
 and backing the next generation of exporters.
 
 •
 
- ompleting at least 23 trade missions over the next term, with a sharper focus on sector-specific missions and
+  ompleting at least 23 trade missions over the next term, with a sharper focus on sector-specific missions and
 C
 measurable commercial outcomes.
 
@@ -576,13 +576,13 @@ That’s why in our first term, National has been relentlessly focused on making
 competitive offshore. In the last three years, National has:
 
 •   Completed an FTA with India, which eliminates or reduces tariffs on 95% of our exports.
-•    rought the NZ–EU Free Trade Agreement into force ahead of schedule, supporting an additional $3 billion in
+•     rought the NZ–EU Free Trade Agreement into force ahead of schedule, supporting an additional $3 billion in
     B
     exports to the European Union.
-•    ompleted New Zealand’s first FTA in the Middle East with the UAE, which eliminates duties on 98.5% of
+•     ompleted New Zealand’s first FTA in the Middle East with the UAE, which eliminates duties on 98.5% of
     C
     exports, supporting a 37.9% growth in exports since the deal was signed.
-•    ompleted negotiations with the six-nation Gulf Cooperation Council, an economic bloc worth $4 trillion in
+•     ompleted negotiations with the six-nation Gulf Cooperation Council, an economic bloc worth $4 trillion in
     C
     GDP, which eliminates duties for 99% of our exports over 10 years.
 •   Completed 23 trade missions to 18 countries, generating $2 billion of deals and commitments.
@@ -599,7 +599,7 @@ Now, National is announcing how we secure New Zealand’s Next Billion Customers
 We will do this by:
 
 •   Prioritising new trade deals with European, South American, African and Asian countries.
-•    egotiating new essential supplies agreements with like-minded partners, using the NZ–Singapore AOTES
+•     egotiating new essential supplies agreements with like-minded partners, using the NZ–Singapore AOTES
     N
     agreement as the template.
 •   Cutting red tape by expanding paperless trade and digital customs, eliminating $1 billion in non-tariff barriers.
@@ -609,10 +609,10 @@ We will do this by:
 Building the Future:                                                                   New Zealand’s Next Billion Customers
 
 •     Creating new tools for businesses to help streamline their export experience.
-•      iving New Zealand Trade and Enterprise a sharper mandate – leading Kiwi businesses to new opportunities
+•       iving New Zealand Trade and Enterprise a sharper mandate – leading Kiwi businesses to new opportunities
       G
       and backing the next generation of exporters.
-•      ompleting at least 23 trade missions over the next term, with a sharper focus on sector-specific missions and
+•       ompleting at least 23 trade missions over the next term, with a sharper focus on sector-specific missions and
       C
       measurable commercial outcomes.
 •     Re-affirm our commitment to doubling the value of exports by 2034.

@@ -4,16 +4,16 @@ into raw/people/others/. Usage: python3 tools/people_others_fetch.py "Title" ...
 import sys, json, os, re, time, requests
 UA = {"User-Agent": "PoliticsNZResearch/1.0 (personal research)"}
 API = "https://en.wikipedia.org/w/api.php"
-OUT = os.path.join(os.path.dirname(__file__), "..", "raw", "people", "others")
+OUT = os.environ.get("OUT") or os.path.join(os.path.dirname(__file__), "..", "raw", "people", "others")
 os.makedirs(OUT, exist_ok=True)
 def fn(t): return re.sub(r"[^A-Za-z0-9]+", "_", t).strip("_")
 def get(params):
-    for a in range(5):
+    for a in range(10):
         try:
             r = requests.get(API, params={**params, "format": "json", "formatversion": 2}, headers=UA, timeout=90)
             return r.json()
         except Exception as e:
-            print("retry", e, file=sys.stderr); time.sleep(4 * (a + 1))
+            print("retry", e, file=sys.stderr); time.sleep(5 + 5 * a)
 for title in [a for a in sys.argv[1:] if not a.startswith("--")]:
     base = os.path.join(OUT, fn(title))
     if os.path.exists(base + ".meta.json") and "--force" not in sys.argv:
@@ -23,6 +23,7 @@ for title in [a for a in sys.argv[1:] if not a.startswith("--")]:
     p = j["parse"]
     q = get({"action": "query", "titles": p["title"], "prop": "extracts|pageimages|pageprops", "explaintext": 1,
              "piprop": "original|name", "redirects": 1})
+    if not q: print("ERR query", title); continue
     pg = q["query"]["pages"][0]
     open(base + ".wikitext", "w").write(p["wikitext"])
     open(base + ".txt", "w").write(pg.get("extract", ""))
@@ -30,4 +31,4 @@ for title in [a for a in sys.argv[1:] if not a.startswith("--")]:
                "pageimage": pg.get("pageimage"), "original": pg.get("original"),
                "wikibase_item": pg.get("pageprops", {}).get("wikibase_item")}, open(base + ".meta.json", "w"), indent=1)
     print("OK", title, "->", p["title"], len(p["wikitext"]), pg.get("pageimage"))
-    time.sleep(1)
+    time.sleep(2)

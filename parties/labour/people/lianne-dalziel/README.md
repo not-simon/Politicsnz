@@ -1,0 +1,47 @@
+# Lianne Dalziel
+
+<img src="photo.jpg" width="200" align="right" alt="Lianne Dalziel">
+
+| | |
+|---|---|
+| **Party** | Labour |
+| **Status (Oct 2026)** | Former MP |
+| **Born** | 1960-06-07 — Christchurch, New Zealand |
+| **Electorate(s) held** | Christchurch East |
+| **Parliaments** | 49, 50 |
+| **First elected** | 2008 |
+| **Key roles** | 46th Mayor of Christchurch (2013–2022) |
+| **Wikipedia** | [Lianne Dalziel](https://en.wikipedia.org/wiki/Lianne_Dalziel) |
+
+## Current status
+
+Former MP
+
+## Political career
+
+### Parliamentary terms
+
+| Parliament | Years | Electorate | List position | Party |
+|---|---|---|---|---|
+| 49th | 2008–2011 | Christchurch East | 15 | Labour |
+| 50th | 2011–2013 | Christchurch East | none | Labour |
+
+_Source: Wikipedia parliamentary-term table._
+
+### Offices held
+
+| Office | From | To | Prime Minister at the time |
+|---|---|---|---|
+| 46th Mayor of Christchurch | 24 October 2013 | 8 October 2022 |  |
+
+_Source: Wikipedia infobox._
+
+## 2026 candidacy
+
+Not listed as a Labour candidate for the 2026 election on policy.nz (Oct 2026).
+
+## Sources
+
+- https://en.wikipedia.org/wiki/Lianne_Dalziel
+
+_Profile compiled 2026-10-23 from the sources above; Wikipedia tables parsed by tools/people_labour_build.py._

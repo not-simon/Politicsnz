@@ -34,24 +34,24 @@ recognising valued introduced species in law;
 
 •
 
- stablishing a clearer framework for wild animal
+  stablishing a clearer framework for wild animal
 e
 management;
 
 •
 
-s trengthening the Game Animal Council and
+s  trengthening the Game Animal Council and
 modernise Fish & Game;
 
 •
 
- xpanding hunter-led conservation and protect
+  xpanding hunter-led conservation and protect
 e
 recreational access; and
 
 •
 
-growing hunting-related jobs and exports.
+ growing hunting-related jobs and exports.
 
 Recognising valued introduced species
 New Zealand’s wild animals are managed through
@@ -194,19 +194,19 @@ A re-elected National Government will build on this by:
                                                            The Council will have a clearer role in managing
 •   recognising valued introduced species in law;
                                                            herds of special interest, developing national and
-•    stablishing a clearer framework for wild animal
+•     stablishing a clearer framework for wild animal
     e                                                      regional game animal management plans, and
     management;                                            supporting practical hunter-led conservation. It
                                                            will also help coordinate recreational, guided and
-•   s trengthening the Game Animal Council and
+•   s  trengthening the Game Animal Council and
                                                            commercial hunting on public conservation land,
      modernise Fish & Game;
                                                            improving monitoring and reducing conflict between
-•    xpanding hunter-led conservation and protect
+•     xpanding hunter-led conservation and protect
     e                                                      different users.
     recreational access; and
                                                            National will also pass legislation to modernise Fish
-•   growing hunting-related jobs and exports.
+•    growing hunting-related jobs and exports.
                                                            & Game New Zealand. The reforms will simplify
 Recognising valued introduced species                      administration, strengthen accountability to licence
                                                            holders and ensure resources are directed to the

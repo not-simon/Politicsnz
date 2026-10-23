@@ -2,14 +2,35 @@
  "name": "Arena Williams",
  "slug": "arena-williams",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2020",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "roles": [
+  "Labour shadow cabinet #24 (as of 11 Mar 2026): Spokesperson for Commerce and Consumer Affairs; Spokesperson for Building and Construction; Spokesperson for Youth"
+ ],
+ "parliaments": [
+  53,
+  54
+ ],
+ "first_elected": 2020,
+ "electorates": [
+  "Manurewa"
+ ],
+ "electorate_2026": "Manurewa",
+ "list_rank_2026": 41,
+ "born": "1990",
+ "wikipedia": "https://en.wikipedia.org/wiki/Arena_Williams",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/e59c8862d68058a28e3f9e0bd2871b764ce38334-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Arena",
  "last_name": "Williams",
- "electorate_2026": "Manurewa",
- "list_rank_2026": 41,
  "candidacy_2026": "Candidate for the Manurewa electorate",
  "questionnaire_2026": {
   "Residence": "Manurewa",
@@ -19,6 +40,8 @@
   "Instagram": "https://www.instagram.com/arenawilliams"
  },
  "sources": [
-  "https://policy.nz/2026/party-vote/parties/labour-party"
+  "https://en.wikipedia.org/wiki/Arena_Williams",
+  "https://policy.nz/2026/party-vote/parties/labour-party",
+  "https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins"
  ]
 }

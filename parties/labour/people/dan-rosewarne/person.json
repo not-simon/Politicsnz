@@ -2,14 +2,32 @@
  "name": "Dan Rosewarne",
  "slug": "dan-rosewarne",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2022",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "roles": [
+  "Labour shadow cabinet #33 (as of 11 Mar 2026): Spokesperson for Rural Communities; Spokesperson for Small Business"
+ ],
+ "parliaments": [
+  53,
+  54
+ ],
+ "first_elected": 2022,
+ "electorate_2026": "Waimakariri",
+ "list_rank_2026": 36,
+ "born": "1981",
+ "wikipedia": "https://en.wikipedia.org/wiki/Dan_Rosewarne",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/8d253a59cc20d09f6b81a6e96e183cf09e0525f3-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Dan",
  "last_name": "Rosewarne",
- "electorate_2026": "Waimakariri",
- "list_rank_2026": 36,
  "candidacy_2026": "Candidate for the Waimakariri electorate",
  "questionnaire_2026": {
   "Before politics": "Officer in the NZ Army",
@@ -21,6 +39,8 @@
   "Instagram": "https://www.instagram.com/@waimakariridanrosewarne"
  },
  "sources": [
-  "https://policy.nz/2026/party-vote/parties/labour-party"
+  "https://en.wikipedia.org/wiki/Dan_Rosewarne",
+  "https://policy.nz/2026/party-vote/parties/labour-party",
+  "https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins"
  ]
 }

@@ -78,6 +78,7 @@ def pdf_text(path, layout=False):
     args = ['pdftotext', '-enc', 'UTF-8'] + (['-layout'] if layout else []) + [path, '-']
     t = subprocess.run(args, capture_output=True, text=True).stdout
     t = t.replace('\f', '\n\n')
+    t = re.sub(r'[\x00-\x08\x0b\x0e-\x1f\x7f]', ' ', t)  # stray control chars (e.g. BEL used as tab)
     t = re.sub(r'[ \t]+\n', '\n', t)
     t = re.sub(r'\n{3,}', '\n\n', t)
     return t.strip()
@@ -163,6 +164,8 @@ def write_html_doc(url, cited_title=None, note=None):
         # drop RNZ page furniture before the headline
         i = next((k for k, (tag, _) in enumerate(bl) if tag in ('h1', 'h2')), 0)
         bl = [b for b in bl[i:] if not b[1].startswith(('Video player removed', 'https://players.brightcove'))]
+        j = next((k for k in range(1, len(bl)) if bl[k] == ('li', 'News')), len(bl))  # trailing page furniture
+        bl = bl[:j]
     else:
         title, bl = national_main(path); publisher = 'New Zealand National Party (national.org.nz)'
         title = re.sub(r'\s*\|\s*National Party$', '', title)

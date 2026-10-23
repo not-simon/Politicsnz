@@ -1,0 +1,46 @@
+---
+title: "Open, Not Owned: Alliance Party Announces Trade Policy"
+party: alliance
+source_url: https://allianceparty.nz/open-not-owned-alliance-trade-policy/
+retrieved: 2026-10-23
+format: html
+fetch_method: WordPress REST API (content.rendered)
+published: "2026-09-28T15:09:48"
+modified: "2026-09-28T15:09:53"
+---
+
+# Open, Not Owned: Alliance Party Announces Trade Policy
+
+## Full text (verbatim)
+
+The Alliance Party has announced the first installment in its Trade Policy, which will modernise Aotearoa New Zealand’s international trade regime, protect local industries, and take a stand for human rights around the world.
+
+Alliance Party trade spokesperson and candidate for Wellington North, Josh Harford, says international trade is rapidly becoming a race to the bottom.
+
+> “The craven, unrestrained obsession with maximising profits serves only to destroy local industry and bring misery on populations elsewhere in the world. Manufacturing in Aotearoa New Zealand once comprised one-quarter of all economic activity. Now, it is barely one-tenth.”
+
+The policy includes protectionist policies around manufacturing and industry to support economic sovereignty.
+
+> “In the past three years, we have seen factory after factory close their doors, usually in order to shift production overseas. This has damaged the economies of our regional centres, worsened unemployment, and deepened generational poverty for many. We cannot be a fully-employed nation when we ship so much economic potential offshore,” Mr Harford says.
+
+The policy includes guidelines for fair and managed trade, rather than free trade.
+
+> “Fair trade goes hand in hand with equality. Sweatshops around the world employ women and children in forced labour conditions, exploiting poverty conditions and societal barriers.”
+
+Mr Harford says the Alliance is not opposed to international trade, and recognises that Aotearoa New Zealand is a small market often at the end of a long and expansive supply chain.
+
+> “We do not believe in shutting off from the world, but right now we profit from modern slavery, outsource environmentally damaging manufacturing that we still rely on, all while undermining our economic and political sovereignty.”
+
+> “We believe in a diversified local economy: one that will take measures to protect critical industry, keep it on shore, and expand it,” Mr Harford says.
+
+Mr Harford took aim at existing regulations:
+
+> “We have a very weak trade framework, designed to maximise corporate profits with little regard for either domestic industry or human rights. Without a humanitarian approach to international trade and robust modern slavery legislation, we are rapidly becoming a global outlier.”
+
+> “This government has shown great vigour in fast-tracking legislation and using urgency for policies that harm Aotearoa New Zealand. The Alliance Party would bring that gusto to updating our modern slavery legislation and cracking down on exploitation in our trade settings.”
+
+Mr. Harford also observed that humanitarian trade policy benefits domestic workers just as much as those overseas:
+
+> “By cracking down on bad actors and unethical practices, we remove the financial incentive to exploit. This will help to restore industry and manufacturing on our shores. We can be a powerhouse of industry, but only if we have the right settings in place to protect those industries.”
+
+[Download the full Trade Policy (PDF, 5 pages)](https://allianceparty.nz/wp-content/uploads/2026/09/alliance-trade-policy-2026.pdf)

@@ -234,7 +234,7 @@ recreational fishers about the rules. Most spend more than 100 hours a year
 in the role, and together they complete between 11,000 to 14,000 inspections
 each year, around 40 percent of recreational compliance work.
 
-3.	Protecting our Exclusive Economic Zone (EEZ) and seamounts
+3.	 Protecting our Exclusive Economic Zone (EEZ) and seamounts
 There are over 1,900 seamounts and seamount-like
 features in New Zealand’s EEZ waters. They support
 diverse ecosystems and rare species such as stony
@@ -287,7 +287,7 @@ as other submarine features, such as underwater mounts of lesser elevations,
 including hills, knolls, banks, rises and peaks along oceanic ridge systems
 greater than 100m in height.
 
-4.	$20 million Fish Tech Innovation Fund
+4.	 $20 million Fish Tech Innovation Fund
 Commercial fishing is an important part of
 New Zealand’s economy. It supports thousands of
 jobs in coastal communities and provides high-quality,
@@ -353,10 +353,10 @@ Fund with the seafood sector to support new
 innovation that reduces seabed contact and
 protects sensitive habitats.
 
-5.	Sensible fisheries
+5.	 Sensible fisheries
 management reforms
 
-6.	High Seas Treaty and
+6.	 High Seas Treaty and
 International Agreements
 
 National will deliver better ecosystem outcomes
@@ -548,7 +548,7 @@ customary fishers.
                                                         in the role, and together they complete between 11,000 to 14,000 inspections
                                                         each year, around 40 percent of recreational compliance work.
 
-3.	Protecting our Exclusive Economic Zone (EEZ) and seamounts
+3.	 Protecting our Exclusive Economic Zone (EEZ) and seamounts
 There are over 1,900 seamounts and seamount-like              recreational and customary interests while protecting
 features in New Zealand’s EEZ waters. They support            this shared resource for future generations. Commercial
 diverse ecosystems and rare species such as stony             fishing is a significant contributor to New Zealand’s
@@ -575,7 +575,7 @@ confidence in how much fish is harvested and how our          as other submarine
 fisheries are managed. We must balance commercial,            including hills, knolls, banks, rises and peaks along oceanic ridge systems
                                                               greater than 100m in height.
 
-4.	$20 million Fish Tech Innovation Fund
+4.	 $20 million Fish Tech Innovation Fund
 Commercial fishing is an important part of                  The Fund will be targeted towards better fishing gear
 New Zealand’s economy. It supports thousands of             and practices, including reducing the impact of bottom
 jobs in coastal communities and provides high-quality,      trawling. It will also target science and research into
@@ -610,7 +610,7 @@ dollar-for-dollar any investment from the sector,                   Fund with th
 up to $10 million.                                                  innovation that reduces seabed contact and
                                                                     protects sensitive habitats.
 
-5.	Sensible fisheries                                     6.	High Seas Treaty and
+5.	 Sensible fisheries                                     6.	 High Seas Treaty and
     management reforms                                        International Agreements
 National will deliver better ecosystem outcomes            Many of the fish stocks we depend on move across
 through fisheries law reform by making sure our            national boundaries and into the high seas. That gives

@@ -31,6 +31,13 @@ for path, x in sorted(caps.items()):
             print('retry', path, e, file=sys.stderr); time.sleep(2 + i)
     if data is None: print('FAIL', path); continue
     body = data.split(b'\r\n\r\n', 2)[2]  # skip WARC header + HTTP header
+    if os.environ.get('MAIN_ONLY'):  # keep <title> + <main> only, to keep raw/ small
+        from bs4 import BeautifulSoup
+        sp = BeautifulSoup(body.decode('utf8', 'replace'), 'html.parser')
+        mn = sp.find('main')
+        if mn:
+            for t in mn(['script', 'style', 'noscript', 'link']): t.decompose()
+            body = ('<!-- trimmed to <main>; source %s CC %s -->\n<title>%s</title>\n%s' % (x['url'], x['timestamp'], sp.title.get_text() if sp.title else '', mn)).encode()
     fn = re.sub(r'[^A-Za-z0-9_.-]', '_', path) or 'index'
     open(os.path.join(HTML, fn + '.html'), 'wb').write(body)
     idx[path] = {'file': fn + '.html', 'url': x['url'], 'timestamp': x['timestamp'], 'warc': x['filename']}

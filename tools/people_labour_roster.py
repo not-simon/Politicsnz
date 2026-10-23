@@ -5,6 +5,7 @@ linked article, and keep those whose 'New Zealand Parliament' table has a Labour
 import json, re, sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from people_labour_wiki import raw, ROOT
+from people_labour_parse import parlbox
 OUT = ROOT / 'raw' / 'people' / 'labour' / 'work'
 ORD = {50: '50th', 51: '51st', 52: '52nd', 53: '53rd', 54: '54th'}
 links = {}
@@ -24,11 +25,10 @@ for i, tt in enumerate(sorted(links)):
     w = raw(tt); wt = w['wikitext']
     if 'New Zealand Labour Party' not in wt and 'Labour' not in wt: continue
     rows = {}
-    for m in re.finditer(r'\{\{NZ parlbox\s*\|(.*?)\}\}\s*\n', wt):
-        body = m.group(1)
-        tm = re.search(r'term\s*=\s*(\d+)', body); pm = re.search(r'party\s*=\s*([^|}]+)', body)
+    for r in parlbox(wt):
+        tm = re.match(r'(\d+)', r.get('term', ''))
         if tm and int(tm.group(1)) in ORD:
-            rows.setdefault(int(tm.group(1)), []).append(pm.group(1).strip() if pm else None)
+            rows.setdefault(int(tm.group(1)), []).append(r.get('party'))
     for n, o in ORD.items():
         for m in re.finditer(r'\[\[%s New Zealand Parliament\|%s\]\]' % (o, o), wt):
             seg = wt[m.end(): m.end() + 600].split('|-')[0]

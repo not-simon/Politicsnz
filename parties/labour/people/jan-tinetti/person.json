@@ -2,14 +2,33 @@
  "name": "Jan Tinetti",
  "slug": "jan-tinetti",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2017",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "roles": [
+  "Labour shadow cabinet #10 (as of 11 Mar 2026): Spokesperson for Workplace Relations and Safety; Spokesperson for Social Investment; Spokesperson for Early Childhood Education; Spokesperson for Child Poverty Reduction"
+ ],
+ "parliaments": [
+  52,
+  53,
+  54
+ ],
+ "first_elected": 2017,
+ "electorate_2026": "Tauranga",
+ "list_rank_2026": 15,
+ "born": "1968",
+ "wikipedia": "https://en.wikipedia.org/wiki/Jan_Tinetti",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/ac0f57f980f30e1e94319aaae58a3a7d930235dc-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Jan",
  "last_name": "Tinetti",
- "electorate_2026": "Tauranga",
- "list_rank_2026": 15,
  "candidacy_2026": "Candidate for the Tauranga electorate",
  "questionnaire_2026": {
   "Before politics": "Primary School Principal",
@@ -21,6 +40,8 @@
   "Instagram": "https://www.instagram.com/jan.tinetti"
  },
  "sources": [
-  "https://policy.nz/2026/party-vote/parties/labour-party"
+  "https://en.wikipedia.org/wiki/Jan_Tinetti",
+  "https://policy.nz/2026/party-vote/parties/labour-party",
+  "https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins"
  ]
 }

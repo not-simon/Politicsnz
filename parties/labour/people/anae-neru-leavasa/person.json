@@ -2,14 +2,31 @@
  "name": "Anae Neru LEAVASA",
  "slug": "anae-neru-leavasa",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2020",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "parliaments": [
+  53
+ ],
+ "first_elected": 2020,
+ "electorates": [
+  "Takanini"
+ ],
+ "electorate_2026": "Botany",
+ "list_rank_2026": 32,
+ "born": "{{birth based on age as of date|36|2020}}",
+ "wikipedia": "https://en.wikipedia.org/wiki/Neru_Leavasa",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/8fbf2c1d24bba52a4c9c2a9c399171f4e5c4d8f8-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Anae Neru",
  "last_name": "LEAVASA",
- "electorate_2026": "Botany",
- "list_rank_2026": 32,
  "candidacy_2026": "Candidate for the Botany electorate",
  "questionnaire_2026": {
   "Before politics": "Specialist GP",
@@ -19,6 +36,7 @@
   "Instagram": "https://www.instagram.com/dr_anae_neru_leavasa/?hl=en"
  },
  "sources": [
+  "https://en.wikipedia.org/wiki/Neru_Leavasa",
   "https://policy.nz/2026/party-vote/parties/labour-party"
  ]
 }

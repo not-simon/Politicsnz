@@ -39,7 +39,7 @@ A re-elected National Government will help seniors enjoy a more secure and indep
 
 National will:
 
-- Establish a dedicated pipeline of affordable housing for seniors , by ringfencing at least 20 per cent of places to seniors housing from the Housing Flexible Fund.
+- Establish a dedicated pipeline of affordable housing for seniors, by ringfencing at least 20 per cent of places to seniors housing from the Housing Flexible Fund.
 
 - Expand our successful granny flats policy so more can be built, faster, and cheaper.
 
@@ -61,7 +61,7 @@ A re-elected National Government will also:
 
 - Strengthen protections against elder abuse and financial exploitation by reviewing the Enduring Powers of Attorney framework and considering further measures including law changes to better protect seniors from economic harm.
 
-- Extend compulsory employer KiwiSaver contributions to contributing members aged over 65 from 1 July 2027 , ensuring those who choose to keep working receive the same employer contributions as everyone else.
+- Extend compulsory employer KiwiSaver contributions to contributing members aged over 65 from 1 July 2027, ensuring those who choose to keep working receive the same employer contributions as everyone else.
 
 - Introduce no new taxes, protecting the savings seniors have worked a lifetime to build.
 

@@ -1,0 +1,605 @@
+{
+ "2011": {
+  "parties": [
+   {
+    "name": "National",
+    "slug": "national",
+    "party_votes": 1058636.0,
+    "party_vote_pct": 47.31,
+    "total_seats": 59
+   },
+   {
+    "name": "Labour",
+    "slug": "labour",
+    "party_votes": 614937.0,
+    "party_vote_pct": 27.48,
+    "total_seats": 34
+   },
+   {
+    "name": "Green",
+    "slug": "green",
+    "party_votes": 247372.0,
+    "party_vote_pct": 11.06,
+    "total_seats": 14
+   },
+   {
+    "name": "NZ First",
+    "slug": "nz-first",
+    "party_votes": 147544.0,
+    "party_vote_pct": 6.59,
+    "total_seats": 8
+   },
+   {
+    "name": "Māori Party",
+    "slug": "te-pati-maori",
+    "party_votes": 31982.0,
+    "party_vote_pct": 1.43,
+    "total_seats": 3
+   },
+   {
+    "name": "Mana",
+    "slug": "mana",
+    "party_votes": 24168.0,
+    "party_vote_pct": 1.08,
+    "total_seats": 1
+   },
+   {
+    "name": "ACT",
+    "slug": "act",
+    "party_votes": 23889.0,
+    "party_vote_pct": 1.07,
+    "total_seats": 1
+   },
+   {
+    "name": "United Future",
+    "slug": "united-future",
+    "party_votes": 13443.0,
+    "party_vote_pct": 0.6,
+    "total_seats": 1
+   },
+   {
+    "name": "Conservative",
+    "slug": "conservative",
+    "party_votes": 59237.0,
+    "party_vote_pct": 2.65,
+    "total_seats": 0
+   },
+   {
+    "name": "Legalise Cannabis",
+    "slug": "legalise-cannabis",
+    "party_votes": 11738.0,
+    "party_vote_pct": 0.52,
+    "total_seats": 0
+   },
+   {
+    "name": "Democrats",
+    "slug": "social-credit",
+    "party_votes": 1714.0,
+    "party_vote_pct": 0.08,
+    "total_seats": 0
+   },
+   {
+    "name": "Libertarianz",
+    "slug": "libertarianz",
+    "party_votes": 1595.0,
+    "party_vote_pct": 0.07,
+    "total_seats": 0
+   },
+   {
+    "name": "Alliance",
+    "slug": "alliance",
+    "party_votes": 1209.0,
+    "party_vote_pct": 0.05,
+    "total_seats": 0
+   }
+  ],
+  "total_party_votes_cast": 2278989.0,
+  "valid_party_votes": 2237464.0,
+  "wasted_votes": 75493.0,
+  "wasted_pct_of_total": 3.31,
+  "wasted_pct_of_valid": 3.37,
+  "source": "https://en.wikipedia.org/wiki/2011_New_Zealand_general_election (summary table citing electionresults.govt.nz)"
+ },
+ "2014": {
+  "parties": [
+   {
+    "name": "National",
+    "slug": "national",
+    "party_votes": 1131501.0,
+    "party_vote_pct": 47.04,
+    "total_seats": 60
+   },
+   {
+    "name": "Labour",
+    "slug": "labour",
+    "party_votes": 604535.0,
+    "party_vote_pct": 25.13,
+    "total_seats": 32
+   },
+   {
+    "name": "Green",
+    "slug": "green",
+    "party_votes": 257359.0,
+    "party_vote_pct": 10.7,
+    "total_seats": 14
+   },
+   {
+    "name": "NZ First",
+    "slug": "nz-first",
+    "party_votes": 208300.0,
+    "party_vote_pct": 8.66,
+    "total_seats": 11
+   },
+   {
+    "name": "Māori Party",
+    "slug": "te-pati-maori",
+    "party_votes": 31849.0,
+    "party_vote_pct": 1.32,
+    "total_seats": 2
+   },
+   {
+    "name": "ACT",
+    "slug": "act",
+    "party_votes": 16689.0,
+    "party_vote_pct": 0.69,
+    "total_seats": 1
+   },
+   {
+    "name": "United Future",
+    "slug": "united-future",
+    "party_votes": 5286.0,
+    "party_vote_pct": 0.22,
+    "total_seats": 1
+   },
+   {
+    "name": "Conservative",
+    "slug": "conservative",
+    "party_votes": 95598.0,
+    "party_vote_pct": 3.97,
+    "total_seats": 0
+   },
+   {
+    "name": "Internet Mana",
+    "slug": "internet-party",
+    "party_votes": 34094.0,
+    "party_vote_pct": 1.42,
+    "total_seats": 0
+   },
+   {
+    "name": "Legalise Cannabis",
+    "slug": "legalise-cannabis",
+    "party_votes": 10961.0,
+    "party_vote_pct": 0.46,
+    "total_seats": 0
+   },
+   {
+    "name": "Ban 1080",
+    "slug": "ban-1080",
+    "party_votes": 5113.0,
+    "party_vote_pct": 0.21,
+    "total_seats": 0
+   },
+   {
+    "name": "Democrats",
+    "slug": "social-credit",
+    "party_votes": 1730.0,
+    "party_vote_pct": 0.07,
+    "total_seats": 0
+   },
+   {
+    "name": "Civilian",
+    "slug": "civilian",
+    "party_votes": 1096.0,
+    "party_vote_pct": 0.05,
+    "total_seats": 0
+   },
+   {
+    "name": "Independent Coalition",
+    "slug": "nz-independent-coalition",
+    "party_votes": 872.0,
+    "party_vote_pct": 0.04,
+    "total_seats": 0
+   },
+   {
+    "name": "Focus",
+    "slug": "focus-nz",
+    "party_votes": 639.0,
+    "party_vote_pct": 0.03,
+    "total_seats": 0
+   },
+   {
+    "name": "Alliance",
+    "slug": "alliance",
+    "party_votes": null,
+    "party_vote_pct": null,
+    "total_seats": 0
+   }
+  ],
+  "total_party_votes_cast": 2446297.0,
+  "valid_party_votes": 2405622.0,
+  "wasted_votes": 150103.0,
+  "wasted_pct_of_total": 6.14,
+  "wasted_pct_of_valid": 6.24,
+  "source": "https://en.wikipedia.org/wiki/2014_New_Zealand_general_election (summary table citing electionresults.govt.nz)"
+ },
+ "2017": {
+  "parties": [
+   {
+    "name": "National",
+    "slug": "national",
+    "party_votes": 1152075.0,
+    "party_vote_pct": 44.45,
+    "total_seats": 56
+   },
+   {
+    "name": "Labour",
+    "slug": "labour",
+    "party_votes": 956184.0,
+    "party_vote_pct": 36.89,
+    "total_seats": 46
+   },
+   {
+    "name": "NZ First",
+    "slug": "nz-first",
+    "party_votes": 186706.0,
+    "party_vote_pct": 7.2,
+    "total_seats": 9
+   },
+   {
+    "name": "Green",
+    "slug": "green",
+    "party_votes": 162443.0,
+    "party_vote_pct": 6.27,
+    "total_seats": 8
+   },
+   {
+    "name": "ACT",
+    "slug": "act",
+    "party_votes": 13075.0,
+    "party_vote_pct": 0.5,
+    "total_seats": 1
+   },
+   {
+    "name": "Opportunities",
+    "slug": "opportunity",
+    "party_votes": 63261.0,
+    "party_vote_pct": 2.44,
+    "total_seats": 0
+   },
+   {
+    "name": "Māori Party",
+    "slug": "te-pati-maori",
+    "party_votes": 30580.0,
+    "party_vote_pct": 1.18,
+    "total_seats": 0
+   },
+   {
+    "name": "Legalise Cannabis",
+    "slug": "legalise-cannabis",
+    "party_votes": 8075.0,
+    "party_vote_pct": 0.31,
+    "total_seats": 0
+   },
+   {
+    "name": "Conservative",
+    "slug": "conservative",
+    "party_votes": 6253.0,
+    "party_vote_pct": 0.24,
+    "total_seats": 0
+   },
+   {
+    "name": "Mana",
+    "slug": "mana",
+    "party_votes": 3642.0,
+    "party_vote_pct": 0.14,
+    "total_seats": 0
+   },
+   {
+    "name": "Ban 1080",
+    "slug": "ban-1080",
+    "party_votes": 3005.0,
+    "party_vote_pct": 0.12,
+    "total_seats": 0
+   },
+   {
+    "name": "People's Party",
+    "slug": "nz-peoples-party",
+    "party_votes": 1890.0,
+    "party_vote_pct": 0.07,
+    "total_seats": 0
+   },
+   {
+    "name": "United Future",
+    "slug": "united-future",
+    "party_votes": 1782.0,
+    "party_vote_pct": 0.07,
+    "total_seats": 0
+   },
+   {
+    "name": "Outdoors",
+    "slug": "nz-outdoors-freedom",
+    "party_votes": 1620.0,
+    "party_vote_pct": 0.06,
+    "total_seats": 0
+   },
+   {
+    "name": "Democrats",
+    "slug": "social-credit",
+    "party_votes": 806.0,
+    "party_vote_pct": 0.03,
+    "total_seats": 0
+   },
+   {
+    "name": "Internet",
+    "slug": "internet-party",
+    "party_votes": 499.0,
+    "party_vote_pct": 0.02,
+    "total_seats": 0
+   }
+  ],
+  "total_party_votes_cast": 2630173.0,
+  "valid_party_votes": 2591896.0,
+  "wasted_votes": 121413.0,
+  "wasted_pct_of_total": 4.62,
+  "wasted_pct_of_valid": 4.68,
+  "source": "https://en.wikipedia.org/wiki/2017_New_Zealand_general_election (summary table citing electionresults.govt.nz)"
+ },
+ "2020": {
+  "parties": [
+   {
+    "name": "Labour",
+    "slug": "labour",
+    "party_votes": 1443545.0,
+    "party_vote_pct": 50.01,
+    "total_seats": 65
+   },
+   {
+    "name": "National",
+    "slug": "national",
+    "party_votes": 738275.0,
+    "party_vote_pct": 25.58,
+    "total_seats": 33
+   },
+   {
+    "name": "Green",
+    "slug": "green",
+    "party_votes": 226757.0,
+    "party_vote_pct": 7.86,
+    "total_seats": 10
+   },
+   {
+    "name": "ACT",
+    "slug": "act",
+    "party_votes": 219031.0,
+    "party_vote_pct": 7.59,
+    "total_seats": 10
+   },
+   {
+    "name": "NZ First",
+    "slug": "nz-first",
+    "party_votes": 75020.0,
+    "party_vote_pct": 2.6,
+    "total_seats": 0
+   },
+   {
+    "name": "Opportunities (TOP)",
+    "slug": "opportunity",
+    "party_votes": 43449.0,
+    "party_vote_pct": 1.51,
+    "total_seats": 0
+   },
+   {
+    "name": "New Conservative",
+    "slug": "conservative",
+    "party_votes": 42613.0,
+    "party_vote_pct": 1.48,
+    "total_seats": 0
+   },
+   {
+    "name": "Māori Party",
+    "slug": "te-pati-maori",
+    "party_votes": 33630.0,
+    "party_vote_pct": 1.17,
+    "total_seats": 2
+   },
+   {
+    "name": "Advance NZ",
+    "slug": "advance-nz",
+    "party_votes": 28429.0,
+    "party_vote_pct": 0.98,
+    "total_seats": 0
+   },
+   {
+    "name": "Legalise Cannabis",
+    "slug": "legalise-cannabis",
+    "party_votes": 13329.0,
+    "party_vote_pct": 0.46,
+    "total_seats": 0
+   },
+   {
+    "name": "ONE",
+    "slug": "newzeal",
+    "party_votes": 8121.0,
+    "party_vote_pct": 0.28,
+    "total_seats": 0
+   },
+   {
+    "name": "Vision NZ",
+    "slug": "vision-nz",
+    "party_votes": 4237.0,
+    "party_vote_pct": 0.15,
+    "total_seats": 0
+   },
+   {
+    "name": "Outdoors",
+    "slug": "nz-outdoors-freedom",
+    "party_votes": 3256.0,
+    "party_vote_pct": 0.11,
+    "total_seats": 0
+   },
+   {
+    "name": "TEA",
+    "slug": "nz-tea-party",
+    "party_votes": 2414.0,
+    "party_vote_pct": 0.08,
+    "total_seats": 0
+   },
+   {
+    "name": "Sustainable NZ",
+    "slug": "sustainable-nz",
+    "party_votes": 1880.0,
+    "party_vote_pct": 0.07,
+    "total_seats": 0
+   },
+   {
+    "name": "Social Credit",
+    "slug": "social-credit",
+    "party_votes": 1520.0,
+    "party_vote_pct": 0.05,
+    "total_seats": 0
+   },
+   {
+    "name": "Heartland",
+    "slug": "heartland",
+    "party_votes": 914.0,
+    "party_vote_pct": 0.03,
+    "total_seats": 0
+   }
+  ],
+  "total_party_votes_cast": 2919073.0,
+  "valid_party_votes": 2886420.0,
+  "wasted_votes": 225182.0,
+  "wasted_pct_of_total": 7.71,
+  "wasted_pct_of_valid": 7.8,
+  "source": "https://en.wikipedia.org/wiki/2020_New_Zealand_general_election (summary table citing electionresults.govt.nz)"
+ },
+ "2023": {
+  "parties": [
+   {
+    "name": "National",
+    "slug": "national",
+    "party_votes": 1085851.0,
+    "party_vote_pct": 38.08,
+    "total_seats": 48
+   },
+   {
+    "name": "Labour",
+    "slug": "labour",
+    "party_votes": 767540.0,
+    "party_vote_pct": 26.92,
+    "total_seats": 34
+   },
+   {
+    "name": "Green",
+    "slug": "green",
+    "party_votes": 330907.0,
+    "party_vote_pct": 11.61,
+    "total_seats": 15
+   },
+   {
+    "name": "ACT",
+    "slug": "act",
+    "party_votes": 246473.0,
+    "party_vote_pct": 8.64,
+    "total_seats": 11
+   },
+   {
+    "name": "NZ First",
+    "slug": "nz-first",
+    "party_votes": 173553.0,
+    "party_vote_pct": 6.09,
+    "total_seats": 8
+   },
+   {
+    "name": "Te Pāti Māori",
+    "slug": "te-pati-maori",
+    "party_votes": 87844.0,
+    "party_vote_pct": 3.08,
+    "total_seats": 6
+   },
+   {
+    "name": "Opportunities (TOP)",
+    "slug": "opportunity",
+    "party_votes": 63344.0,
+    "party_vote_pct": 2.22,
+    "total_seats": 0
+   },
+   {
+    "name": "NZ Loyal",
+    "slug": "nz-loyal",
+    "party_votes": 34478.0,
+    "party_vote_pct": 1.21,
+    "total_seats": 0
+   },
+   {
+    "name": "NewZeal",
+    "slug": "newzeal",
+    "party_votes": 16126.0,
+    "party_vote_pct": 0.57,
+    "total_seats": 0
+   },
+   {
+    "name": "Legalise Cannabis",
+    "slug": "legalise-cannabis",
+    "party_votes": 13025.0,
+    "party_vote_pct": 0.46,
+    "total_seats": 0
+   },
+   {
+    "name": "Freedoms NZ",
+    "slug": "freedoms-nz",
+    "party_votes": 9586.0,
+    "party_vote_pct": 0.34,
+    "total_seats": 0
+   },
+   {
+    "name": "DemocracyNZ",
+    "slug": "democracynz",
+    "party_votes": 6786.0,
+    "party_vote_pct": 0.24,
+    "total_seats": 0
+   },
+   {
+    "name": "Animal Justice",
+    "slug": "animal-justice",
+    "party_votes": 5018.0,
+    "party_vote_pct": 0.18,
+    "total_seats": 0
+   },
+   {
+    "name": "New Conservative",
+    "slug": "conservative",
+    "party_votes": 4532.0,
+    "party_vote_pct": 0.16,
+    "total_seats": 0
+   },
+   {
+    "name": "Women's Rights",
+    "slug": "womens-rights",
+    "party_votes": 2513.0,
+    "party_vote_pct": 0.09,
+    "total_seats": 0
+   },
+   {
+    "name": "Leighton Baker Party",
+    "slug": "leighton-baker",
+    "party_votes": 2105.0,
+    "party_vote_pct": 0.07,
+    "total_seats": 0
+   },
+   {
+    "name": "New Nation",
+    "slug": "new-nation",
+    "party_votes": 1530.0,
+    "party_vote_pct": 0.05,
+    "total_seats": 0
+   }
+  ],
+  "total_party_votes_cast": 2884111.0,
+  "valid_party_votes": 2851211.0,
+  "wasted_votes": 159043.0,
+  "wasted_pct_of_total": 5.51,
+  "wasted_pct_of_valid": 5.58,
+  "source": "https://en.wikipedia.org/wiki/2023_New_Zealand_general_election (summary table citing electionresults.govt.nz)"
+ }
+}

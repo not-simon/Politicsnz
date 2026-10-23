@@ -2,17 +2,33 @@
  "name": "Anahila Kanongata'a",
  "slug": "anahila-kanongataa",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2017",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "parliaments": [
+  52,
+  53
+ ],
+ "first_elected": 2017,
+ "electorate_2026": "Papakura",
+ "list_rank_2026": 48,
+ "born": "1969",
+ "wikipedia": "https://en.wikipedia.org/wiki/Anahila_Kanongata%27a",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/09eeee450103555c9f47f3e2f57525c56210d4db-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Anahila",
  "last_name": "Kanongata'a",
- "electorate_2026": "Papakura",
- "list_rank_2026": 48,
  "candidacy_2026": "Candidate for the Papakura electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Anahila_Kanongata%27a",
   "https://policy.nz/2026/party-vote/parties/labour-party"
  ]
 }

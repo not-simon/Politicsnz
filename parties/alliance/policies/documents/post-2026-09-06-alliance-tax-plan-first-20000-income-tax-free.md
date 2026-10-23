@@ -1,0 +1,44 @@
+---
+title: "Our Tax Plan Makes First $20,000 Income Tax-Free, Funded by Wealth Tax"
+party: alliance
+source_url: https://allianceparty.nz/alliance-tax-plan-first-20000-income-tax-free/
+retrieved: 2026-10-23
+format: html
+fetch_method: WordPress REST API (content.rendered)
+published: "2026-09-06T09:00:00"
+modified: "2026-09-23T18:52:59"
+---
+
+# Our Tax Plan Makes First $20,000 Income Tax-Free, Funded by Wealth Tax
+
+## Full text (verbatim)
+
+**Alliance Party Media Release**
+FOR IMMEDIATE RELEASE
+Sunday 6 September 2026
+
+The Alliance Party has unveiled its tax package, proposing to make the first $20,000 of every person’s income completely tax-free. Under the proposed scale, an everyday worker earning $65,000 would keep an extra $2,408 a year.
+
+## Download the policy documents
+
+- [**Tax Justice and Cost of Living Policy**](https://allianceparty.nz/wp-content/uploads/2026/09/alliance-tax-justice-cost-of-living-policy-2026.pdf)PDF, 4 pages, 135 KB
+- [**Tax Policy Costings: The Numbers**](https://allianceparty.nz/wp-content/uploads/2026/09/alliance-tax-policy-costings-2026.pdf)PDF, 5 pages, 195 KB
+
+The package combines taxes on wealth, realised capital gains, and financial transactions with a 30% corporate tax rate and a rebalanced income tax scale. The Alliance’s costings estimate a net revenue surplus in both the first term and at year 10.
+
+- **$20,000 Tax-Free Threshold:** Universal, automatic, and permanent relief. All earners below the $178,150 break-even point pay less income tax. Proposed upper rates are 34% from $78,100 to $150,000; 39% from $150,000 to $250,000; and 47% above $250,000.
+- **2.5% Wealth Tax:** An annual tax on individual net wealth above $2 million, estimated to raise $6.59 billion annually. A couple pays nothing on combined net wealth up to $4 million. A companion trust tax is estimated to raise a further $0.11 billion.
+- **33% Capital Gains Tax:** Applies to realised gains accruing after the tax begins, fully excluding the family home. Estimated annual revenue rises from a first-term average of $0.54 billion to $2.22 billion at year 10.
+- **Financial Transactions Levy:** A 0.1% levy covering equity and onshore foreign exchange turnover, estimated to raise $0.64 billion annually. Everyday household payments, wages, bills, and KiwiSaver contributions are strictly exempt.
+
+Alliance Finance and Economy Spokesperson Quentin Findlay says the central focus of the policy is taxing wealth, not work.
+
+> “Aotearoa New Zealand currently taxes income from the very first dollar earned, while untaxed wealth multiplies without effort.
+>
+> “The Alliance is offering a completely different set of priorities to provide working people and their families with security in a cost-of-living crisis.
+>
+> “By shifting the tax burden onto those who already hold extensive wealth, an essential worker on $65,000 keeps an extra $2,408 every year. This is about ensuring our economy serves the people who actually do the work.”
+
+**ENDS**
+
+For more information contact Alliance Party Finance and Economy Spokesperson Quentin Findlay on Mobile [021 326 443](tel:+6421326443)

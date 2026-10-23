@@ -2,14 +2,35 @@
  "name": "Shanan Halbert",
  "slug": "shanan-halbert",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2020",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "roles": [
+  "Labour shadow cabinet #28 (as of 11 Mar 2026): Spokesperson for Tertiary Education; Spokesperson for Whānau Ora"
+ ],
+ "parliaments": [
+  53,
+  54
+ ],
+ "first_elected": 2020,
+ "electorates": [
+  "Northcote"
+ ],
+ "electorate_2026": "Northcote",
+ "list_rank_2026": 19,
+ "born": "1982-04-24",
+ "wikipedia": "https://en.wikipedia.org/wiki/Shanan_Halbert",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/c04de372e1c61f106c951e4deec6841b3d4c4323-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Shanan",
  "last_name": "Halbert",
- "electorate_2026": "Northcote",
- "list_rank_2026": 19,
  "candidacy_2026": "Candidate for the Northcote electorate",
  "questionnaire_2026": {
   "Before politics": "Tertiary Sector Management",
@@ -22,6 +43,8 @@
   "Twitter": "https://x.com/shananhalbert"
  },
  "sources": [
-  "https://policy.nz/2026/party-vote/parties/labour-party"
+  "https://en.wikipedia.org/wiki/Shanan_Halbert",
+  "https://policy.nz/2026/party-vote/parties/labour-party",
+  "https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins"
  ]
 }

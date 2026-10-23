@@ -1,0 +1,19 @@
+---
+wikipedia: Jan Tinetti
+status: current-mp-standing-2026
+status_detail: Labour list MP (54th Parliament); spokesperson for workplace relations and safety, social investment, early childhood education and child poverty reduction. Standing in Tauranga and ranked 15 on Labour's 2026 list.
+---
+## Current status
+Tinetti is No. 10 in Labour's shadow cabinet, with workplace relations and safety, social investment, early childhood education and child poverty reduction since March 2025, and is again Labour's candidate in Tauranga (list No. 15) ([policy.nz](https://policy.nz/2026/party-vote/parties/labour-party)).
+
+## Biography
+Born in Hokitika in 1968, Tinetti grew up inside Templeton Hospital and Training School near Christchurch, where her father was secretary — an experience of an institution for people with intellectual disabilities she cited in her maiden statement ([Hansard](https://www.parliament.nz/mi/pb/hansard-debates/rhr/document/HansS_20171116_056700000/tinetti-jan)). She trained at Christchurch College of Education (1990), taught in Southland, Greymouth and Tauranga, and was a primary principal for 20 years, latterly at Merivale School, Tauranga; she served on the NZEI national executive and holds a Master of Education (Canterbury, 2016). She is married to David Merton and has two children; she was treated for breast cancer in 2019 ([Newsroom](https://www.newsroom.co.nz/new-minister-driven-by-injustices-witnessed-as-a-child)).
+
+## Political career
+- **Tauranga candidate** in 2017, 2020, the 2022 by-election and 2023, losing to Simon Bridges (by 11,252 in 2017 and 1,856 in 2020) and then Sam Uffindell (by-election 2022; by 9,370 in 2023); a list MP since 2017 ([2020](https://www.electionresults.govt.nz/electionresults_2020/electorate-details-52.html); [2023](https://www.electionresults.govt.nz/electionresults_2023/electorate-details-52.html); [RNZ by-election](https://www.rnz.co.nz/news/political/469380/national-s-uffindell-easily-wins-tauranga-by-election)).
+- **Minister, 2020–2023:** Minister of Internal Affairs, Minister for Women and Associate Minister of Education (Nov 2020); Minister of Education and Child Poverty Reduction (No. 6 in Cabinet) from 31 January 2023 ([Beehive list](https://www.beehive.govt.nz/sites/default/files/2023-01/Ministerial%20List%20as%20announced%20on%2031%20January%202023.pdf)).
+- **Opposition:** education and women (2023–2025); workplace relations, social investment, ECE and child poverty (from March 2025).
+
+## Controversies
+- **Privileges Committee referral (2023):** Speaker Adrian Rurawhe referred her to the Privileges Committee after she delayed correcting a February 2023 statement to the House that she had no role in the timing of school attendance data release; she was told of the error but did not correct it until 2 May. On 29 June 2023 the committee found she had not intentionally misled the House but had acted with a "high degree of negligence", and required her to apologise to the House. Hipkins kept her as minister ([RNZ](https://www.rnz.co.nz/news/political/490981/education-minister-jan-tinetti-s-delay-in-correcting-record-to-be-investigated); [RNZ report](https://www.rnz.co.nz/news/political/492852/jan-tinetti-made-error-of-judgement-that-misled-parliament-privileges-committee-finds)). During the hearing National's Michael Woodhouse apologised for calling her a "good girl" ([RNZ](https://www.rnz.co.nz/news/political/491860/senior-national-mp-michael-woodhouse-apologises-for-calling-education-minister-jan-tinetti-a-good-girl)).
+- After losing Tauranga in 2023 she said a "weight had been lifted", a remark criticised by breakfast-TV hosts ([Newshub](https://www.newshub.co.nz/home/politics/2023/10/election-2023-am-hosts-slam-bizarre-reactions-from-ousted-labour-mps-jan-tinetti-dan-rosewarne.html)).

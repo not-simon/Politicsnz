@@ -29,7 +29,7 @@ National has released its Economic Plan to ensure hardworking New Zealanders can
 
 The Economic Plan lays out National’s practical approach to growing the economy:
 
-- Responsibly managing the books , including a return to surplus in 2028/29.
+- Responsibly managing the books, including a return to surplus in 2028/29.
 
 - Reducing red tape and supporting innovation, including the replacement of the Resource Management Act.
 

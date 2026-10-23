@@ -51,7 +51,7 @@ by providing councils with funding that can be used for conservation and tourism
 
 ### Provide certainty for tourism growth
 
-by committing that there will be no increase in the International Visitor Levy for at least the next three years , while continuing to support sustainable tourism growth.
+by committing that there will be no increase in the International Visitor Levy for at least the next three years, while continuing to support sustainable tourism growth.
 
 ## International Visitor Levy reset to keep taxes low
 

@@ -2,14 +2,35 @@
  "name": "Rachel Brooking",
  "slug": "rachel-brooking",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2020",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "roles": [
+  "Labour shadow cabinet #17 (as of 11 Mar 2026): Spokesperson for the Environment; Spokesperson for Food Safety; Spokesperson for Space; Spokesperson for RMA Reform"
+ ],
+ "parliaments": [
+  53,
+  54
+ ],
+ "first_elected": 2020,
+ "electorates": [
+  "Dunedin"
+ ],
+ "electorate_2026": "Dunedin",
+ "list_rank_2026": 11,
+ "born": "1975-10-18",
+ "wikipedia": "https://en.wikipedia.org/wiki/Rachel_Brooking",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/a6c618e93ad7a1b5f7520ffdd913585b59e0994a-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Rachel",
  "last_name": "Brooking",
- "electorate_2026": "Dunedin",
- "list_rank_2026": 11,
  "candidacy_2026": "Candidate for the Dunedin electorate",
  "questionnaire_2026": {
   "Before politics": "Lawyer",
@@ -20,6 +41,8 @@
   "Instagram": "https://www.instagram.com/rachelbrookingmp"
  },
  "sources": [
-  "https://policy.nz/2026/party-vote/parties/labour-party"
+  "https://en.wikipedia.org/wiki/Rachel_Brooking",
+  "https://policy.nz/2026/party-vote/parties/labour-party",
+  "https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins"
  ]
 }

@@ -2,14 +2,37 @@
  "name": "Jo Luxton",
  "slug": "jo-luxton",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2017",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "roles": [
+  "Labour shadow cabinet #15 (as of 11 Mar 2026): Spokesperson for Agriculture; Spokesperson for Biosecurity; Spokesperson for Customs",
+  "66th Minister of Customs (2023)"
+ ],
+ "parliaments": [
+  52,
+  53,
+  54
+ ],
+ "first_elected": 2017,
+ "electorates": [
+  "Rangitata"
+ ],
+ "electorate_2026": "East Cape",
+ "list_rank_2026": 17,
+ "born": "1973",
+ "wikipedia": "https://en.wikipedia.org/wiki/Jo_Luxton",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/75f91de90ae3d27d88e5586bb787e53fd3b2a4a5-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Jo",
  "last_name": "Luxton",
- "electorate_2026": "East Cape",
- "list_rank_2026": 17,
  "candidacy_2026": "Candidate for the East Cape electorate",
  "questionnaire_2026": {
   "Before politics": "ECE Founder & Business Owner",
@@ -21,6 +44,8 @@
   "Instagram": "@joluxton_mp"
  },
  "sources": [
-  "https://policy.nz/2026/party-vote/parties/labour-party"
+  "https://en.wikipedia.org/wiki/Jo_Luxton",
+  "https://policy.nz/2026/party-vote/parties/labour-party",
+  "https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins"
  ]
 }

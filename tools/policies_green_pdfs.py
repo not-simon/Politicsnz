@@ -8,7 +8,8 @@ man = json.load(open(mf)) if os.path.exists(mf) else {}
 for url in [l.strip() for l in open(sys.argv[1]) if l.strip().startswith('http')]:
     if url in man and os.path.exists(os.path.join(OUT, man[url]['file'])): continue
     name = urllib.parse.unquote(urllib.parse.urlparse(url).path.rsplit('/', 1)[1])
-    name = name.replace("'", '').replace(' ', '_')
+    import unicodedata
+    name = unicodedata.normalize('NFKD', name).encode('ascii', 'ignore').decode().replace("'", '').replace(' ', '_')
     for i in range(5):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 PoliticsNZResearch/1.0'}), timeout=120) as r:

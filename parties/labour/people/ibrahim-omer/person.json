@@ -2,16 +2,31 @@
  "name": "Ibrahim Omer",
  "slug": "ibrahim-omer",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2020",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "parliaments": [
+  53
+ ],
+ "first_elected": 2020,
+ "list_rank_2026": 31,
+ "born": "{{birth based on age as of date|40|2020}}",
+ "wikipedia": "https://en.wikipedia.org/wiki/Ibrahim_Omer",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/0893cb97a55c7445ba82c0bb8af05bac5fc94336-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Ibrahim",
  "last_name": "Omer",
- "list_rank_2026": 31,
  "candidacy_2026": "List only candidate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Ibrahim_Omer",
   "https://policy.nz/2026/party-vote/parties/labour-party"
  ]
 }

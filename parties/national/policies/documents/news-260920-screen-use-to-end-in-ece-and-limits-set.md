@@ -35,7 +35,7 @@ National’s Education spokesperson Erica Stanford says these changes will form 
 
 “Technology still has a place in education, but it should enhance learning, not become the default way children learn.
 
-“That is why we are introducing Set up for Success , a series of steps that will ensure your child is school ready,” Ms Stanford says.
+“That is why we are introducing Set up for Success, a series of steps that will ensure your child is school ready,” Ms Stanford says.
 
 A re-elected National Government will:
 

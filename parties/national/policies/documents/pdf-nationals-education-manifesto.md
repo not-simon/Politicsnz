@@ -335,7 +335,7 @@ teachers need continued support to deliver them.
 National will stay the course, build on what is working
 and keep raising achievement for every child.
 
-2. Our 2026 policy: Set Up for Success
+2.  Our 2026 policy: Set Up for Success
 Every parent wants their child to start school ready
 to learn, ready to participate and confident about
 the next step. The early years lay the foundations
@@ -399,7 +399,7 @@ Set Up for Success will give parents greater clarity,
 educators shared expectations and children a stronger
 start to their school journey.
 
-3. Our 2026 policy: More Time Learning
+3.  Our 2026 policy: More Time Learning
 National will give more young people time to build
 the knowledge and skills they need for a successful
 future, and make the school calendar more consistent
@@ -651,7 +651,7 @@ from 30 to 36 per cent in mathematics and from 33 to
                                                             and keep raising achievement for every child.
 38 per cent in writing: gains of six and five percentage
 
-2. Our 2026 policy: Set Up for Success
+2.  Our 2026 policy: Set Up for Success
 Every parent wants their child to start school ready        Clearer milestones and earlier support
 to learn, ready to participate and confident about
 the next step. The early years lay the foundations          National will establish clearer developmental
@@ -687,7 +687,7 @@ their circumstances.                                          assessments comple
                                                             educators shared expectations and children a stronger
                                                             start to their school journey.
 
-3. Our 2026 policy: More Time Learning
+3.  Our 2026 policy: More Time Learning
 National will give more young people time to build            The existing early leaving exemption will remain for
 the knowledge and skills they need for a successful           a very small number of students each year.
 future, and make the school calendar more consistent

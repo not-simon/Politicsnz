@@ -7,6 +7,13 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / 'site' / 'data'; OUT.mkdir(parents=True, exist_ok=True)
 (OUT / 'fulltext').mkdir(exist_ok=True)
 
+import math
+def clean(o):
+    if isinstance(o, float) and (math.isnan(o) or math.isinf(o)): return None
+    if isinstance(o, dict): return {k: clean(v) for k, v in o.items()}
+    if isinstance(o, list): return [clean(v) for v in o]
+    return o
+def dumps(o): return json.dumps(clean(o), ensure_ascii=False, allow_nan=False)
 def load(p, default=None):
     try: return json.loads(pathlib.Path(p).read_text())
     except Exception: return default
@@ -26,7 +33,13 @@ elections = sorted([load(f) for f in glob.glob(str(ROOT / 'data' / 'elections' /
 elections = [e for e in elections if e]
 parliaments = sorted([load(f) for f in glob.glob(str(ROOT / 'data' / 'parliaments' / '*.json'))], key=lambda p: p.get('parliament', 0) if p else 0)
 parliaments = [p for p in parliaments if p]
-polls = load(ROOT / 'data' / 'polls-2026.json', [])
+polls_raw = load(ROOT / 'data' / 'polls-2026.json', [])
+if isinstance(polls_raw, dict): polls_raw = polls_raw.get('polls', [])
+polls = []
+for x in polls_raw or []:
+    d = x.get('end_date') or x.get('date'); res = x.get('results') or x.get('parties') or {}
+    if d and re.match(r'\d{4}-\d{2}-\d{2}', str(d)) and res:
+        polls.append({'date': d, 'pollster': x.get('pollster'), 'parties': {k: v for k, v in res.items() if isinstance(v, (int, float))}, 'source_url': x.get('source_url')})
 promises = {pathlib.Path(f).stem: load(f, []) for f in glob.glob(str(ROOT / 'data' / 'promises' / '*.json'))}
 
 # --- parties
@@ -46,6 +59,9 @@ for d in sorted((ROOT / 'parties').iterdir()):
                   'short': m.get('short') or s.replace('-', ' ').title(), 'color': m.get('color', '#A7ADB5'),
                   'order': m.get('order', 90), 'intro': intro[:900], 'policy_count': len(pols), 'people_count': people_n,
                   'has_readme': bool(readme), 'has_track_record': (d / 'track-record.md').exists()}
+
+for s, m in meta.items():
+    if s not in parties: parties[s] = {'slug': s, 'name': m['name'], 'short': m['short'], 'color': m['color'], 'order': m.get('order', 90), 'intro': '', 'policy_count': 0, 'people_count': 0, 'has_readme': False, 'has_track_record': False}
 
 # --- policies + full texts
 policies = {}
@@ -79,6 +95,7 @@ for pj in sorted((ROOT / 'parties').glob('*/people/*/person.json')):
     rec['folder'] = str(d.relative_to(ROOT))
     rec['party'] = rec.get('party') or d.parent.parent.name
     rec['bio'] = bio_excerpt(readme)
+    rec['has_profile'] = len(re.sub(r'<!-- GENERATED.*?END -->', '', readme, flags=re.S)) > 600
     if q.get("Why I'm standing"): rec['why'] = q["Why I'm standing"][:600]
     if q.get('Before politics'): rec['before'] = q['Before politics']
     ph = d / (p.get('photo') or 'photo.jpg')
@@ -94,14 +111,22 @@ for pj in sorted((ROOT / 'parties').glob('*/people/*/person.json')):
 # --- readable pages (markdown) for the in-app reader
 pages = {}
 for f in [ROOT / 'REPORT.md', ROOT / 'README.md'] + sorted((ROOT / 'elections').glob('*.md')) + sorted((ROOT / 'parties').glob('*/README.md')) \
-         + sorted((ROOT / 'parties').glob('*/track-record.md')) + [ROOT / 'parties' / 'MINOR_PARTIES.md']:
+         + sorted((ROOT / 'parties').glob('*/track-record.md')) + [ROOT / 'parties' / 'MINOR_PARTIES.md'] \
+         + sorted((ROOT / 'parties').glob('*/policies/README.md')) + sorted((ROOT / 'guide').glob('*.md')) + sorted((ROOT / 'electorates').glob('*.md')) \
+         + sorted((ROOT / 'parties').glob('*/people/*/README.md')):
     if f.exists(): pages[str(f.relative_to(ROOT))] = f.read_text()
 
-bundle = {'generated': __import__('datetime').date.today().isoformat(), 'parties': parties, 'elections': elections,
+guide = {'parties': load(ROOT / 'data' / 'guide' / 'parties.json', []), 'issues': load(ROOT / 'data' / 'guide' / 'issues.json', []),
+         'quiz': load(ROOT / 'data' / 'guide' / 'quiz.json', {})}
+if isinstance(guide['parties'], dict): guide['parties'] = guide['parties'].get('parties', [])
+if isinstance(guide['issues'], dict): guide['issues'] = guide['issues'].get('issues', [])
+electorates = load(ROOT / 'data' / 'electorates' / '2026.json', [])
+if isinstance(electorates, dict): electorates = electorates.get('electorates', [])
+bundle = {'guide': guide, 'electorates': electorates, 'generated': __import__('datetime').date.today().isoformat(), 'parties': parties, 'elections': elections,
           'parliaments': parliaments, 'polls': polls, 'promises': promises}
-(OUT / 'bundle.json').write_text(json.dumps(bundle, ensure_ascii=False))
-(OUT / 'policies.json').write_text(json.dumps(policies, ensure_ascii=False))
-(OUT / 'people.json').write_text(json.dumps(people, ensure_ascii=False))
+(OUT / 'bundle.json').write_text(dumps(bundle))
+(OUT / 'policies.json').write_text(dumps(policies))
+(OUT / 'people.json').write_text(dumps(people))
 (OUT / 'thumbs.json').write_text(json.dumps(thumbs))
 (OUT / 'pages.json').write_text(json.dumps(pages, ensure_ascii=False))
 

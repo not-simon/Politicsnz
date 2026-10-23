@@ -59,7 +59,7 @@ National’s three-point plan will:
 
 “Firefighters deserve reliable trucks, proper training, practical support and an organisation accountable for delivering them. A re-elected National Government will make that happen,” Mr Mitchell says.
 
-Read more about National’s three-point plan to back firefighters and fix FENZ in the policy document HERE .
+Read more about National’s three-point plan to back firefighters and fix FENZ in the policy document HERE.
 
 ## Linked policy documents (PDF)
 

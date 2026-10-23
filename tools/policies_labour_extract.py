@@ -11,9 +11,19 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, 'raw', 'party-docs', 'labour')
 OUT = os.path.join(ROOT, 'parties', 'labour', 'policies', 'documents')
 
-BLOCK = {'p', 'div', 'section', 'article', 'header', 'footer', 'main', 'aside', 'ul', 'ol', 'li', 'table', 'thead', 'tbody',
+BLOCK = {'td', 'th', 'p', 'div', 'section', 'article', 'header', 'footer', 'main', 'aside', 'ul', 'ol', 'li', 'table', 'thead', 'tbody',
          'tr', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote', 'figure', 'figcaption', 'dl', 'dt', 'dd', 'details',
          'summary', 'br', 'hr', 'form', 'nav', 'button'}
+
+
+PDF_TITLES = {
+    'https://www.labour.org.nz/media/dbskvb1y/backinglocaldoctors.pdf': 'Labour: Backing local doctors (Family Doctor Loan Scheme) - PDF',
+    'https://www.labour.org.nz/media/pfvguai5/labour-cgt.pdf': 'Labour: Capital gains tax - PDF',
+    'https://www.labour.org.nz/media/prhel1zq/cervical-screening-factsheet.pdf': 'Labour: Free cervical screening factsheet - PDF',
+    'https://www.labour.org.nz/media/vbyf0pxe/the-new-zealand-future-fund.pdf': 'Labour: The New Zealand Future Fund - PDF',
+    'https://www.labour.org.nz/media/vtbneplb/labour-free-doctors-visits.pdf': 'Labour: Free doctor\'s visits (Medicard) - PDF',
+    'https://img.scoop.co.nz/media/pdfs/2610/Factsheet__School_Costs.pdf': 'Labour factsheet: School costs (PDF attached to Scoop release)',
+}
 
 
 def norm(t):
@@ -41,6 +51,11 @@ class MD:
                 continue
             name = ch.name
             if name in ('br',):
+                self.flush(prefix)
+                continue
+            if name == 'table' and max([len(tr.find_all(['td', 'th'], recursive=False)) for tr in ch.find_all('tr')] or [0]) <= 1:
+                self.flush(prefix)
+                self.walk(ch, prefix)
                 self.flush(prefix)
                 continue
             if name == 'table':
@@ -80,7 +95,7 @@ class MD:
                 self.flush(prefix)
                 self.walk(ch, prefix)
                 self.flush(prefix)
-                if name in ('p', 'blockquote', 'ul', 'ol', 'figure', 'div', 'section', 'details', 'dd'):
+                if name in ('p', 'blockquote', 'ul', 'ol', 'figure', 'div', 'section', 'details', 'dd', 'td', 'tr'):
                     self.lines.append('')
                 continue
             self.buf += ch.get_text()
@@ -138,6 +153,8 @@ def main():
         path = os.path.join(ROOT, rec['file']) if rec.get('file') else None
         front = {'title': '', 'party': 'labour', 'source_url': url, 'retrieved': rec.get('retrieved', ''),
                  'format': 'pdf' if path and path.endswith('.pdf') else 'html', 'fetch_method': 'curl (direct, original URL)'}
+        if path and not os.path.exists(path) and os.path.exists(path + '.gz'):
+            path = path + '.gz'  # raw HTML is stored gzipped to keep the repo small
         if rec.get('status') != '200' or not path or not os.path.exists(path):
             front['title'] = 'NOT RETRIEVABLE: ' + url
             write_doc(slug, front, '# Not retrievable\n\nThe source %s could not be fetched (HTTP status %s; %s). '
@@ -145,11 +162,17 @@ def main():
             docmap[url] = {'doc': 'documents/%s.md' % slug, 'title': front['title'], 'ok': False}
             continue
         if path.endswith('.pdf'):
-            txt = subprocess.run(['pdftotext', '-layout', path, '-'], capture_output=True, text=True).stdout
-            front['title'] = os.path.basename(path)
-            body = '# ' + front['title'] + '\n\n```text\n' + txt.strip() + '\n```\n'
+            txt = subprocess.run(['pdftotext', path, '-'], capture_output=True, text=True).stdout
+            front['title'] = PDF_TITLES.get(url, os.path.basename(path))
+            front['pdf_copy'] = os.path.relpath(path, ROOT)
+            body = ('# ' + front['title'] + '\n\nText extracted with `pdftotext` in reading order (verbatim; page breaks removed; table columns may not line up - see the PDF). '
+                    'Original PDF kept at `' + front['pdf_copy'] + '`.\n\n```text\n' + txt.replace('\f', '\n').strip() + '\n```\n')
         else:
-            html = open(path, encoding='utf-8', errors='replace').read()
+            if path.endswith('.gz'):
+                import gzip
+                html = gzip.open(path, 'rt', encoding='utf-8', errors='replace').read()
+            else:
+                html = open(path, encoding='utf-8', errors='replace').read()
             soup = BeautifulSoup(html, 'html.parser')
             front['title'] = page_title(soup)
             host = url.split('/')[2]

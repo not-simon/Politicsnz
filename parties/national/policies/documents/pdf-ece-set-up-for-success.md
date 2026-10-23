@@ -375,51 +375,51 @@ Add a paper-based writing component to twiceyearly primary progress checks.
 Sources and links
 1.
 
- ducation Review Office Let’s Keep Talking
+  ducation Review Office Let’s Keep Talking
 E
 Oral Language Development in the Early Years.
 Published in 2024
 
 2. E
- ducation Review Office Starting School Together
+  ducation Review Office Starting School Together
 What Do We Know. Published in 2022
 3. Ministry of Education About Kōwhiti Whakapae
-4. 	Law and others Associations Between Infant
+4. 	 Law and others Associations Between Infant
 Screen Use EEG Markers and Cognitive Outcomes.
 GUSTO cohort study published in 2023
-5. 	Yang and others Screen Viewing Time and
+5. 	 Yang and others Screen Viewing Time and
 Subsequent Academic Performance and Working
 Memory. GUSTO cohort study published in 2026
-6. 	Mallawaarachchi and others Early Childhood
+6. 	 Mallawaarachchi and others Early Childhood
 Screen Use Contexts and Cognitive and
 Psychosocial Outcomes. Systematic review
 published in 2024
-7. 	Madigan and others Associations Between Screen
+7. 	 Madigan and others Associations Between Screen
 Use and Child Language Skills. Meta-analysis
 published in 2020
-8. 	World Health Organization Guidelines for Children
+8. 	 World Health Organization Guidelines for Children
 Under Five. Published in 2019
 
 9. O
- ECD PISA 2025 Results New Zealand Country
+  ECD PISA 2025 Results New Zealand Country
 Note. Published in 2026
-10. 	Santangelo and Graham A Comprehensive Metaanalysis of Handwriting Instruction. Published in
+10. 	 Santangelo and Graham A Comprehensive Metaanalysis of Handwriting Instruction. Published in
 2016
-11. 	Berninger and others Comparison of Pen and
+11. 	 Berninger and others Comparison of Pen and
 Keyboard Transcription Modes in Children.
 Published in 2009
-12. 	James and Engelhardt The Effects of Handwriting
+12. 	 James and Engelhardt The Effects of Handwriting
 Experience on Functional Brain Development.
 Published in 2012
-13. 	Jared Cooney Horvath Written Testimony to the
+13. 	 Jared Cooney Horvath Written Testimony to the
 United States Senate Committee on Commerce
 Science and Transportation. Submitted in 2026
-14. Flanigan and others Typed Versus Handwritten
+14.  Flanigan and others Typed Versus Handwritten
 Lecture Notes and College Student Achievement.
 Meta-analysis published in 2024
-15. 	New South Wales Department of Education Screen
+15. 	 New South Wales Department of Education Screen
 Time Guidelines. Announced in 2026
-16. Victoria Department of Education Digital Learning
+16.  Victoria Department of Education Digital Learning
 Policy
 
 ## Full text (page-layout rendering)
@@ -620,36 +620,36 @@ wrote letters by hand, but not when they typed or
 traced them. [10][12]
 
 Sources and links
-1.    ducation Review Office Let’s Keep Talking
+1.     ducation Review Office Let’s Keep Talking
      E                                                   9. O
-                                                             ECD PISA 2025 Results New Zealand Country
+                                                              ECD PISA 2025 Results New Zealand Country
      Oral Language Development in the Early Years.          Note. Published in 2026
      Published in 2024
-                                                         10. 	Santangelo and Graham A Comprehensive Meta-
+                                                         10. 	 Santangelo and Graham A Comprehensive Meta-
 2. E
-    ducation Review Office Starting School Together           analysis of Handwriting Instruction. Published in
+     ducation Review Office Starting School Together           analysis of Handwriting Instruction. Published in
    What Do We Know. Published in 2022                          2016
-3. Ministry of Education About Kōwhiti Whakapae          11. 	Berninger and others Comparison of Pen and
+3. Ministry of Education About Kōwhiti Whakapae          11. 	 Berninger and others Comparison of Pen and
                                                                Keyboard Transcription Modes in Children.
-4. 	Law and others Associations Between Infant
+4. 	 Law and others Associations Between Infant
                                                                Published in 2009
      Screen Use EEG Markers and Cognitive Outcomes.
-     GUSTO cohort study published in 2023                12. 	James and Engelhardt The Effects of Handwriting
+     GUSTO cohort study published in 2023                12. 	 James and Engelhardt The Effects of Handwriting
                                                                Experience on Functional Brain Development.
-5. 	Yang and others Screen Viewing Time and
+5. 	 Yang and others Screen Viewing Time and
                                                                Published in 2012
      Subsequent Academic Performance and Working
-     Memory. GUSTO cohort study published in 2026        13. 	Jared Cooney Horvath Written Testimony to the
+     Memory. GUSTO cohort study published in 2026        13. 	 Jared Cooney Horvath Written Testimony to the
                                                                United States Senate Committee on Commerce
-6. 	Mallawaarachchi and others Early Childhood
+6. 	 Mallawaarachchi and others Early Childhood
                                                                Science and Transportation. Submitted in 2026
      Screen Use Contexts and Cognitive and
-     Psychosocial Outcomes. Systematic review            14. Flanigan and others Typed Versus Handwritten
+     Psychosocial Outcomes. Systematic review            14.  Flanigan and others Typed Versus Handwritten
      published in 2024                                        Lecture Notes and College Student Achievement.
                                                               Meta-analysis published in 2024
-7. 	Madigan and others Associations Between Screen
-     Use and Child Language Skills. Meta-analysis        15. 	New South Wales Department of Education Screen
+7. 	 Madigan and others Associations Between Screen
+     Use and Child Language Skills. Meta-analysis        15. 	 New South Wales Department of Education Screen
      published in 2020                                         Time Guidelines. Announced in 2026
-8. 	World Health Organization Guidelines for Children   16. Victoria Department of Education Digital Learning
+8. 	 World Health Organization Guidelines for Children   16.  Victoria Department of Education Digital Learning
      Under Five. Published in 2019                            Policy
 ```

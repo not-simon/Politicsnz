@@ -105,7 +105,7 @@ more confidence to employ someone, more room
 to invest and grow, and more opportunities to sell to
 customers here and around the world.
 
-A. Making it easier to employ and
+A.  Making it easier to employ and
 train employees
 National is making it easier for small businesses to
 employ people and grow, with clearer rules and more
@@ -186,17 +186,17 @@ worked examples and coordinated support for
 employers and payroll providers.
 
 National will:
-1.	Introduce a First Employee Support Package
+1.	 Introduce a First Employee Support Package
 with practical first-year guidance and reduced
 penalties for genuine administrative mistakes;
-2.	Make repeat seasonal hiring easier with a
+2.	 Make repeat seasonal hiring easier with a
 standard recurring seasonal agreement and
 shorter renewal process, while retaining the
 requirement for a genuine seasonal reason;
-3.	Make apprenticeship record-keeping simpler
+3.	 Make apprenticeship record-keeping simpler
 with consistent digital competency records
 and electronic sign-off; and
-4.	Deliver the transition to the new employment
+4.	 Deliver the transition to the new employment
 leave system with early guidance, worked
 payroll examples and coordinated
 implementation support.
@@ -240,15 +240,15 @@ carefully considering the fiscal cost and wider impacts
 of any change.
 
 National will:
-5.	Review the compulsory GST registration
+5.	 Review the compulsory GST registration
 threshold, examining options to reduce
 compliance and remove barriers to smallbusiness growth; and
-6.	Keep Investment Boost, retaining the
+6.	 Keep Investment Boost, retaining the
 immediate 20 per cent deduction for eligible
 productive assets of any value and businesses
 of every size.
 
-C. Resolving employment disputes
+C.  Resolving employment disputes
 faster and more fairly
 Employment disputes are stressful for everyone
 involved. For a small-business owner, months spent
@@ -421,54 +421,54 @@ helping businesses focus their effort on the risks that
 can actually cause harm.
 
 National will:
-7.	Develop a fast-track process for suitable minor
+7.	 Develop a fast-track process for suitable minor
 employment disputes, through a simplified
 Employment Relations Authority pathway, with
 clear eligibility, proportionate procedures,
 firm decision timeframes and fair-hearing
 safeguards;
-8.	Make better use of mediation to resolve minor
+8.	 Make better use of mediation to resolve minor
 disputes early, including requiring mediator
 recommendations and available binding
 options to be clearly explained and offered in
 suitable cases;
-9.	Require Employment Relations Authority
+9.	 Require Employment Relations Authority
 determinations within one month of the
 investigation meeting or final submissions,
 and track delays across the full process from
 filing to decision;
-10.	Require the Authority to record oral evidence
+10.	 Require the Authority to record oral evidence
 so it can be reused where lawful and fair,
 reducing unnecessary repetition;
-11.	Strengthen the Employment Relations
+11.	 Strengthen the Employment Relations
 Authority’s powers to keep cases moving, and
 deal with unnecessary procedural delays;
-12.	Review the Employment Relations Authority’s
+12.	 Review the Employment Relations Authority’s
 enforcement powers, including whether it
 should be able to enforce more of its own
 orders without requiring parties to begin
 avoidable proceedings in another court;
-13.	Introduce proportionate regulation of paid
+13.	 Introduce proportionate regulation of paid
 employment advocates, covering conduct,
 competence, transparent fees and complaints;
-14.	Require a minimum level of employee
+14.	 Require a minimum level of employee
 support before new collective bargaining can
 begin, proposing a threshold of the lesser
 of 10 employees or 20 per cent of those
 proposed to be covered, with a minimum
 of two employees, and consulting on its
 implementation;
-15.	Create a clearer early process for resolving
+15.	 Create a clearer early process for resolving
 disputed employment status under section 6,
 consistent with the contractor gateway;
-16.	Prepare and introduce an Employment
+16.	 Prepare and introduce an Employment
 Relations Consolidation Bill in the next term to
 simplify the legislative framework; and
-17.	Rewrite priority health and safety codes
+17.	 Rewrite priority health and safety codes
 and guidance in plain English, with practical
 examples for small businesses.
 
-D. Giving business owners their time
+D.  Giving business owners their time
 back
 For many small-business owners, the paperwork starts
 when the working day ends. After serving customers,
@@ -585,42 +585,42 @@ unnecessary forms and more time spent running and
 growing the business.
 
 National will:
-18.	Build a Tell Government Once service around
+18.	 Build a Tell Government Once service around
 the NZBN, so core business information
 can be updated once and shared across
 participating agencies and councils;
-19.	Make business renewals simpler and better
+19.	 Make business renewals simpler and better
 coordinated by aligning renewal dates
 where practical and introducing automatic
 or simplified renewals for suitable low-risk
 businesses with strong compliance records;
-20.	Implement the announced alcohol-licensing
+20.	 Implement the announced alcohol-licensing
 reforms to simplify applications and renewals,
 extend suitable renewal periods and reform
 fees;
-21.	Allow eligible chartered accountants to
+21.	 Allow eligible chartered accountants to
 administer statutory declarations, making it
 easier for small businesses to complete official
 paperwork through a trusted professional they
 already use;
-22.	Remove unjustified paper-retention
+22.	 Remove unjustified paper-retention
 requirements and publish consistent guidance
 on accepting lawful electronic records and
 evidence;
-23.	Modernise remaining licence and vehicleinformation display rules where accessible
+23.	 Modernise remaining licence and vehicleinformation display rules where accessible
 digital alternatives preserve consumer and
 enforcement access;
-24.	Replace unnecessary compulsory newspaper
+24.	 Replace unnecessary compulsory newspaper
 notices with searchable online publication and
 appropriate community notification;
-25.	Remove obsolete fax, telex and paper
+25.	 Remove obsolete fax, telex and paper
 requirements that impose a real compliance
 burden; and
-26.	Publish clearer small-business guidance
+26.	 Publish clearer small-business guidance
 on fire evacuation requirements, approved
 schemes and available templates.
 
-E. Improving cashflow and lowering
+E.  Improving cashflow and lowering
 costs for businesses
 
 What National will do if re-elected…
@@ -703,32 +703,32 @@ proportionate to the size and risk of the contract
 being offered.
 
 National will:
-27.	Build on the Government’s prompt-payment
+27.	 Build on the Government’s prompt-payment
 reforms by holding agencies to account for
 low performance, tackling persistent delays
 and enforcing fair payment terms through
 procurement supply chains;
-28.	Complete the industry-led prompt-payment
+28.	 Complete the industry-led prompt-payment
 programme and expand eInvoicing with
 BusinessNZ, accounting providers and
 business organisations;
-29.	Keep driving down payment costs by
+29.	 Keep driving down payment costs by
 improving fee transparency, monitoring
 whether regulated savings reach businesses
 and supporting further evidence-based
 reductions;
-30.	Complete the rollout of modern business
+30.	 Complete the rollout of modern business
 payments, including regulated open
 banking and the Reserve Bank’s payments
 modernisation programme;
-31.	Progress Dan Bidois’ motor-vehicle repairinformation reform to give independent
+31.	 Progress Dan Bidois’ motor-vehicle repairinformation reform to give independent
 workshops better access to manufacturers’
 information; and
-32.	Deliver the Government’s expanded AI
+32.	 Deliver the Government’s expanded AI
 support for small businesses, including the AI
 Advisory Pilot.
 
-F. Backing the businesses that build
+F.  Backing the businesses that build
 and produce
 A builder will not take on another apprentice without
 confidence the next job can proceed. A manufacturer
@@ -795,33 +795,33 @@ reach new customers and create skilled jobs in
 their communities.
 
 National will:
-33.	Deliver the replacement planning system with
+33.	 Deliver the replacement planning system with
 consistent national rules, fewer unnecessary
 consents and practical support through the
 transition;
-34.	Deliver building-consent reforms that enable
+34.	 Deliver building-consent reforms that enable
 greater consolidation of consenting functions
 and more consistent decisions;
-35.	Cut Project Information Memorandum
+35.	 Cut Project Information Memorandum
 processing times from 20 to 10 working days
 as part of the building-system reforms;
-36.	Deliver proportionate building liability, backed
+36.	 Deliver proportionate building liability, backed
 by professional indemnity insurance and
 home warranties;
-37.	Require regulators to reuse current, relevant
+37.	 Require regulators to reuse current, relevant
 certified engineering and geotechnical reports
 where they remain fit for purpose;
-38.	Continue expanding recognition of trusted
+38.	 Continue expanding recognition of trusted
 overseas building products and standards that
 meet New Zealand’s requirements;
-39.	Deliver capital-market reforms to make it
+39.	 Deliver capital-market reforms to make it
 easier for growing businesses to raise equity
 and debt; and
-40.	Use Invest New Zealand to connect
+40.	 Use Invest New Zealand to connect
 productive businesses with international
 investment, skills and commercial partners.
 
-G. Taking more New Zealand
+G.  Taking more New Zealand
 businesses to the world
 A small New Zealand business can have a product the
 world wants but lack the contacts, time or expertise to
@@ -897,29 +897,29 @@ keep operating when international supply chains
 are disrupted.
 
 National will:
-41.	Establish the Next 200 program, providing
+41.	 Establish the Next 200 program, providing
 intensive NZTE support for 200 high-potential
 small and medium-sized exporters;
-42.	Create an AI-powered export navigator
+42.	 Create an AI-powered export navigator
 covering tariffs, rules of origin and marketaccess requirements, linked to official
 information and specialist support;
-43.	Expand paperless trade and digital
+43.	 Expand paperless trade and digital
 certification, including pursuing real-time
 electronic certification with close trading
 partners;
-44.	Create a trusted-exporter fast lane through
+44.	 Create a trusted-exporter fast lane through
 the Secure Exports Scheme, making it easier
 for eligible smaller firms to participate and
 reducing duplicated documentation.
-45.	Remove a further $1 billion in non-tariff barriers
+45.	 Remove a further $1 billion in non-tariff barriers
 by 2030, prioritising restrictions identified with
 New Zealand exporters;
-46.	Open more markets for small businesses
+46.	 Open more markets for small businesses
 by helping firms use the India and Gulf
 agreements, pursuing the next group of
 priority markets, and expanding digital and
 services trade arrangements; and
-47.	Strengthen New Zealand’s trade resilience by
+47.	 Strengthen New Zealand’s trade resilience by
 pursuing essential-supplies agreements that
 help businesses maintain access to critical
 goods during disruption.
@@ -982,7 +982,7 @@ navigate requirements around payroll, employment          customers here and aro
 
 Authorised by J de Joux, ps@national.org.nz
 
-A. Making it easier to employ and                         Each fixed term will still need a genuine seasonal
+A.  Making it easier to employ and                         Each fixed term will still need a genuine seasonal
                                                            reason and existing employee rights will remain.
     train employees
 National is making it easier for small businesses to       Making apprenticeship paperwork simpler
@@ -1017,23 +1017,23 @@ National wants more successful sole traders to have
 the confidence to take that step.
                                                              National will:
 We will introduce a First Employee Support Package
-                                                             1.	Introduce a First Employee Support Package
+                                                             1.	 Introduce a First Employee Support Package
 that brings the essentials together in one place.
                                                                  with practical first-year guidance and reduced
 This will ensure any new employer get the basics right           penalties for genuine administrative mistakes;
 from day one and have somewhere to turn before a
-                                                             2.	Make repeat seasonal hiring easier with a
+                                                             2.	 Make repeat seasonal hiring easier with a
 small uncertainty becomes an expensive mistake.
                                                                  standard recurring seasonal agreement and
 We will also reduce penalties for genuine first-year             shorter renewal process, while retaining the
 administrative errors where no worker has been                   requirement for a genuine seasonal reason;
 harmed and the employer moves quickly to put things
-                                                             3.	Make apprenticeship record-keeping simpler
+                                                             3.	 Make apprenticeship record-keeping simpler
 right. Workers’ pay, entitlements and safety protections
                                                                  with consistent digital competency records
 will remain unchanged.
                                                                  and electronic sign-off; and
-Making repeat seasonal hiring easier                         4.	Deliver the transition to the new employment
+Making repeat seasonal hiring easier                         4.	 Deliver the transition to the new employment
 Growers, vineyards and other seasonal businesses often           leave system with early guidance, worked
 bring back the same workers year after year. Both sides          payroll examples and coordinated
 may know the job and each other well, but still have to          implementation support.
@@ -1061,19 +1061,19 @@ builder, new equipment for a café, or machinery that     of any change.
 allows a manufacturer to fill a larger order.
 Early evidence suggests businesses are responding.
 Inland Revenue found 40 per cent of surveyed               National will:
-businesses that had invested and understood                5.	Review the compulsory GST registration
+businesses that had invested and understood                5.	 Review the compulsory GST registration
 Investment Boost said it had increased their                   threshold, examining options to reduce
 investment spending.                                           compliance and remove barriers to small-
                                                                business growth; and
 What National will do if re-elected…
-                                                           6.	Keep Investment Boost, retaining the
+                                                           6.	 Keep Investment Boost, retaining the
 Giving small businesses more room to grow                      immediate 20 per cent deduction for eligible
 The compulsory GST registration threshold has                  productive assets of any value and businesses
 remained at $60,000 since 2009. Inflation has steadily         of every size.
 eroded its real value, meaning businesses are reaching
 the threshold at a much earlier stage of their growth.
 
-C. Resolving employment disputes                            Serious, complex or precedent-setting cases will remain
+C.  Resolving employment disputes                            Serious, complex or precedent-setting cases will remain
                                                              on the appropriate existing pathway, and fair-hearing
     faster and more fairly                                   and challenge rights will be preserved.
 Employment disputes are stressful for everyone
@@ -1149,41 +1149,41 @@ standards of competence, conduct and transparency.
 
 Earlier certainty over who is an employee
 National has already introduced the contractor               National will:
-gateway, which came into force in February 2026.             7.	Develop a fast-track process for suitable minor
+gateway, which came into force in February 2026.             7.	 Develop a fast-track process for suitable minor
 Where all of the gateway criteria are met, a worker is           employment disputes, through a simplified
 treated as a contractor. Where they are not, the existing        Employment Relations Authority pathway, with
 common-law test continues to apply.                              clear eligibility, proportionate procedures,
 But where employment status remains genuinely                    firm decision timeframes and fair-hearing
 disputed, resolving that question early can prevent              safeguards;
-the rest of the dispute becoming more complicated            8.	Make better use of mediation to resolve minor
+the rest of the dispute becoming more complicated            8.	 Make better use of mediation to resolve minor
 and expensive.                                                   disputes early, including requiring mediator
 National will create a clearer early process for                 recommendations and available binding
 determining disputed employment status under section             options to be clearly explained and offered in
 6 of the Employment Relations Act, consistent with the           suitable cases;
-contractor gateway. The objective is to give both sides      9.	Require Employment Relations Authority
+contractor gateway. The objective is to give both sides      9.	 Require Employment Relations Authority
 earlier certainty about which rights and obligations             determinations within one month of the
 apply before they incur the cost of litigating the rest of       investigation meeting or final submissions,
 the dispute.                                                     and track delays across the full process from
                                                                  filing to decision;
 Employment law people can actually
-                                                             10.	Require the Authority to record oral evidence
+                                                             10.	 Require the Authority to record oral evidence
 navigate
                                                                   so it can be reused where lawful and fair,
 New Zealand’s employment framework has                            reducing unnecessary repetition;
 accumulated across multiple statutes over many years.
-We currently have a system where obligations are             11.	Strengthen the Employment Relations
+We currently have a system where obligations are             11.	 Strengthen the Employment Relations
 spread across a range of Acts, making it particularly             Authority’s powers to keep cases moving, and
 difficult for small businesses and employees without              deal with unnecessary procedural delays;
-specialist legal support to work out what applies.           12.	Review the Employment Relations Authority’s
+specialist legal support to work out what applies.           12.	 Review the Employment Relations Authority’s
 National will progress an Employment Relations                    enforcement powers, including whether it
 Consolidation Bill in the next parliamentary term. The            should be able to enforce more of its own
 purpose will be to bring the core employment-law                  orders without requiring parties to begin
 framework into a clearer and more coherent legislative            avoidable proceedings in another court;
-structure, reduce unnecessary cross-references and           13.	Introduce proportionate regulation of paid
+structure, reduce unnecessary cross-references and           13.	 Introduce proportionate regulation of paid
 make rights and obligations easier to find.                       employment advocates, covering conduct,
                                                                   competence, transparent fees and complaints;
 Health and safety rules that make sense on
-                                                             14.	Require a minimum level of employee
+                                                             14.	 Require a minimum level of employee
 the shop floor
                                                                   support before new collective bargaining can
 The same principle applies to health and safety. A                begin, proposing a threshold of the lesser
@@ -1191,19 +1191,19 @@ workshop, café or construction business should be able            of 10 employe
 to understand what it needs to do to keep people safe.            proposed to be covered, with a minimum
 National will rewrite priority health and safety codes            of two employees, and consulting on its
 and guidance in plain English, with practical examples            implementation;
-developed alongside small businesses, workers and            15.	Create a clearer early process for resolving
+developed alongside small businesses, workers and            15.	 Create a clearer early process for resolving
 industry experts. Too often, outdated and difficult-to-           disputed employment status under section 6,
 understand guidance adds an unnecessary layer of                  consistent with the contractor gateway;
 compliance difficulty.
-                                                             16.	Prepare and introduce an Employment
+                                                             16.	 Prepare and introduce an Employment
 This will support the Government’s wider health and               Relations Consolidation Bill in the next term to
 safety reforms by making expectations clearer and                 simplify the legislative framework; and
 helping businesses focus their effort on the risks that
-can actually cause harm.                                     17.	Rewrite priority health and safety codes
+can actually cause harm.                                     17.	 Rewrite priority health and safety codes
                                                                   and guidance in plain English, with practical
                                                                   examples for small businesses.
 
-D. Giving business owners their time                     Simpler renewals for reliable businesses
+D.  Giving business owners their time                     Simpler renewals for reliable businesses
     back                                                  A café can have separate renewal dates for food
                                                           registration, alcohol licensing, outdoor dining and
 For many small-business owners, the paperwork starts      signage. Keeping track of different forms, invoices
@@ -1245,22 +1245,22 @@ information shared.                                       on those existing opti
 
 Making digital the default
 Businesses increasingly keep records, sign                   National will:
-documents and serve customers digitally. Government          18.	Build a Tell Government Once service around
+documents and serve customers digitally. Government          18.	 Build a Tell Government Once service around
 requirements should make it easy to use reliable                  the NZBN, so core business information
 technology rather than forcing businesses back                    can be updated once and shared across
 onto paper.                                                       participating agencies and councils;
-National will make clear that secure and accessible          19.	Make business renewals simpler and better
+National will make clear that secure and accessible          19.	 Make business renewals simpler and better
 electronic records can satisfy document-retention                 coordinated by aligning renewal dates
 requirements wherever a physical original is not                  where practical and introducing automatic
 genuinely necessary. We will also remove remaining                or simplified renewals for suitable low-risk
 statutory exceptions and inconsistent agency practices            businesses with strong compliance records;
 that unnecessarily require paper.
-                                                             20.	Implement the announced alcohol-licensing
+                                                             20.	 Implement the announced alcohol-licensing
 That will include modernising physical-display rules              reforms to simplify applications and renewals,
 for alcohol licences and vehicle consumer information             extend suitable renewal periods and reform
 where accessible digital alternatives can provide                 fees;
 the same information to customers and enforcement
-                                                             21.	Allow eligible chartered accountants to
+                                                             21.	 Allow eligible chartered accountants to
 officers. We will also make clear that suitable electronic
                                                                   administer statutory declarations, making it
 proof of delivery, including app confirmations,
@@ -1270,25 +1270,25 @@ photographs and secure tracking records, can meet
 relevant requirements, and that accurate electronic
                                                                   already use;
 hazardous-substance records can be used where
-they remain readily accessible onsite, including in          22.	Remove unjustified paper-retention
+they remain readily accessible onsite, including in          22.	 Remove unjustified paper-retention
 an emergency.                                                     requirements and publish consistent guidance
                                                                   on accepting lawful electronic records and
 National will replace unnecessary compulsory
                                                                   evidence;
 newspaper notices with searchable online publication,
-while keeping appropriate ways to inform affected            23.	Modernise remaining licence and vehicle-
+while keeping appropriate ways to inform affected            23.	 Modernise remaining licence and vehicle-
 communities. We will also remove obsolete fax, telex              information display rules where accessible
 and other paper-based requirements that create a real             digital alternatives preserve consumer and
 compliance burden.                                                enforcement access;
-Where digital options already exist, we will make their      24.	Replace unnecessary compulsory newspaper
+Where digital options already exist, we will make their      24.	 Replace unnecessary compulsory newspaper
 acceptance clearer and more consistent.                           notices with searchable online publication and
                                                                   appropriate community notification;
 Clearer fire-safety guidance
-                                                             25.	Remove obsolete fax, telex and paper
+                                                             25.	 Remove obsolete fax, telex and paper
 Small-business owners should be able to understand                requirements that impose a real compliance
 their fire-safety obligations without needing to become           burden; and
 experts in the system.
-                                                             26.	Publish clearer small-business guidance
+                                                             26.	 Publish clearer small-business guidance
 National will publish clearer guidance on existing                on fire evacuation requirements, approved
 evacuation requirements, approved schemes and                     schemes and available templates.
 available templates, helping businesses understand
@@ -1298,7 +1298,7 @@ less time navigating government processes, fewer
 unnecessary forms and more time spent running and
 growing the business.
 
-E. Improving cashflow and lowering                        What National will do if re-elected…
+E.  Improving cashflow and lowering                        What National will do if re-elected…
     costs for businesses                                   Lower-cost, more competitive payments
 Labour’s Business Payment Practices Act would have         Payment fees take a slice out of every sale. The
 required large businesses to report their payment          Commerce Commission’s implemented interchange-fee
@@ -1337,37 +1337,37 @@ deliver up to $800 million a year in productivity gains.
 
 Putting useful technology within reach
 Small-business owners can see the potential of AI, but   National will:
-often lack the time or expertise to work out where to    27.	Build on the Government’s prompt-payment
+often lack the time or expertise to work out where to    27.	 Build on the Government’s prompt-payment
 start. The AI Advisory Pilot helps businesses identify        reforms by holding agencies to account for
 useful applications and put them into practice, co-           low performance, tackling persistent delays
 funding up to 50 per cent of eligible expert support.         and enforcing fair payment terms through
 Around 150 businesses have already joined, another            procurement supply chains;
-120 places have been announced, and around 650           28.	Complete the industry-led prompt-payment
+120 places have been announced, and around 650           28.	 Complete the industry-led prompt-payment
 businesses received co-funded support for AI-related          programme and expand eInvoicing with
 courses between July 2025 and June 2026.                      BusinessNZ, accounting providers and
                                                               business organisations;
 Giving smaller firms a fair shot at government
-                                                         29.	Keep driving down payment costs by
+                                                         29.	 Keep driving down payment costs by
 work
                                                               improving fee transparency, monitoring
 Government procurement reforms introduced in                  whether regulated savings reach businesses
 December 2025 reduced the main rulebook from 71               and supporting further evidence-based
 rules to 47 and introduced a minimum 10 per cent              reductions;
 weighting for economic benefits to New Zealand in
-covered procurement evaluations.                         30.	Complete the rollout of modern business
+covered procurement evaluations.                         30.	 Complete the rollout of modern business
                                                               payments, including regulated open
 National will monitor the reforms to ensure capable           banking and the Reserve Bank’s payments
 smaller New Zealand suppliers have genuine                    modernisation programme;
 opportunities to compete. Requirements around
-insurance, experience and reporting should be            31.	Progress Dan Bidois’ motor-vehicle repair-
+insurance, experience and reporting should be            31.	 Progress Dan Bidois’ motor-vehicle repair-
 proportionate to the size and risk of the contract            information reform to give independent
 being offered.                                                workshops better access to manufacturers’
                                                               information; and
-                                                         32.	Deliver the Government’s expanded AI
+                                                         32.	 Deliver the Government’s expanded AI
                                                               support for small businesses, including the AI
                                                               Advisory Pilot.
 
-F. Backing the businesses that build                      National has also opened the door to more trusted
+F.  Backing the businesses that build                      National has also opened the door to more trusted
                                                            overseas building products. Recognition of Australia’s
     and produce                                            WaterMark scheme alone made more than 90,000
 A builder will not take on another apprentice without      plumbing products available under the recognised
@@ -1407,33 +1407,33 @@ reach new customers and create skilled jobs in
 their communities.
 
   National will:
-  33.	Deliver the replacement planning system with
+  33.	 Deliver the replacement planning system with
        consistent national rules, fewer unnecessary
        consents and practical support through the
        transition;
-  34.	Deliver building-consent reforms that enable
+  34.	 Deliver building-consent reforms that enable
        greater consolidation of consenting functions
        and more consistent decisions;
-  35.	Cut Project Information Memorandum
+  35.	 Cut Project Information Memorandum
        processing times from 20 to 10 working days
        as part of the building-system reforms;
-  36.	Deliver proportionate building liability, backed
+  36.	 Deliver proportionate building liability, backed
        by professional indemnity insurance and
        home warranties;
-  37.	Require regulators to reuse current, relevant
+  37.	 Require regulators to reuse current, relevant
        certified engineering and geotechnical reports
        where they remain fit for purpose;
-  38.	Continue expanding recognition of trusted
+  38.	 Continue expanding recognition of trusted
        overseas building products and standards that
        meet New Zealand’s requirements;
-  39.	Deliver capital-market reforms to make it
+  39.	 Deliver capital-market reforms to make it
        easier for growing businesses to raise equity
        and debt; and
-  40.	Use Invest New Zealand to connect
+  40.	 Use Invest New Zealand to connect
        productive businesses with international
        investment, skills and commercial partners.
 
-G. Taking more New Zealand                                 What National will do if re-elected…
+G.  Taking more New Zealand                                 What National will do if re-elected…
     businesses to the world                                 Backing the next 200 exporters
 A small New Zealand business can have a product the         National’s Next 200 program will provide intensive
 world wants but lack the contacts, time or expertise to     support to 200 high-potential small and medium-
@@ -1460,33 +1460,33 @@ non-tariff barriers holding exporters back.                 to specialist help w
 
 We will expand paperless trade, digital certification and
 automated customs processes, including pursuing real-       National will:
-time electronic certification with the United Kingdom       41.	Establish the Next 200 program, providing
+time electronic certification with the United Kingdom       41.	 Establish the Next 200 program, providing
 and other close partners.                                        intensive NZTE support for 200 high-potential
 A trusted-exporter fast lane will build on Customs’              small and medium-sized exporters;
-existing Secure Exports Scheme. We will make its            42.	Create an AI-powered export navigator
+existing Secure Exports Scheme. We will make its            42.	 Create an AI-powered export navigator
 benefits easier for eligible smaller firms to use.               covering tariffs, rules of origin and market-
 National will pursue the removal of a $1 billion in non-         access requirements, linked to official
 tariff barriers by 2030, working with businesses to              information and specialist support;
-identify the certification, standards and market-access     43.	Expand paperless trade and digital
+identify the certification, standards and market-access     43.	 Expand paperless trade and digital
 problems stopping otherwise competitive products                 certification, including pursuing real-time
 from reaching customers.                                         electronic certification with close trading
                                                                  partners;
 More markets and stronger supply links
-                                                            44.	Create a trusted-exporter fast lane through
+                                                            44.	 Create a trusted-exporter fast lane through
 National will pursue the goal of doubling export                 the Secure Exports Scheme, making it easier
 value by 2034, help businesses use the India                     for eligible smaller firms to participate and
 agreement and progress the Gulf agreement into                   reducing duplicated documentation.
 force. We will pursue the next group of priority trade
-negotiations where they offer meaningful opportunities      45.	Remove a further $1 billion in non-tariff barriers
+negotiations where they offer meaningful opportunities      45.	 Remove a further $1 billion in non-tariff barriers
 for New Zealand exporters.                                       by 2030, prioritising restrictions identified with
                                                                  New Zealand exporters;
 We will modernise existing agreements, including
-services access with China, expand digital trade            46.	Open more markets for small businesses
+services access with China, expand digital trade            46.	 Open more markets for small businesses
 arrangements and support expansion of the CPTPP                  by helping firms use the India and Gulf
 and RCEP. Our goal of lifting services to 35 per cent            agreements, pursuing the next group of
 of export value by 2030 recognises the opportunities             priority markets, and expanding digital and
 for smaller technology, creative and professional                services trade arrangements; and
-businesses to sell internationally.                         47.	Strengthen New Zealand’s trade resilience by
+businesses to sell internationally.                         47.	 Strengthen New Zealand’s trade resilience by
 We will pursue essential-supplies agreements with                pursuing essential-supplies agreements that
 like-minded partners, using the Singapore agreement              help businesses maintain access to critical
 as a model. Reliable access to fuel, machinery parts             goods during disruption.

@@ -50,11 +50,11 @@ A re-elected National Government will let Kiwis with student loans who stay in N
 
 This includes:
 
-- New financial penalties : 1 per cent added to annual interest on overseas-based borrower balances, taking it to 6.6 per cent, with tiered penalties for sustained default, on top of existing late payment interest.
+- New financial penalties: 1 per cent added to annual interest on overseas-based borrower balances, taking it to 6.6 per cent, with tiered penalties for sustained default, on top of existing late payment interest.
 
-- Restricted KiwiSaver withdrawals , so people who move overseas permanently must clear their student loan before accessing KiwiSaver.
+- Restricted KiwiSaver withdrawals, so people who move overseas permanently must clear their student loan before accessing KiwiSaver.
 
-- Tighter arrest settings , so arrest warrants can be sought for serious, sustained default without needing to prove a borrower knowingly refused to pay.
+- Tighter arrest settings, so arrest warrants can be sought for serious, sustained default without needing to prove a borrower knowingly refused to pay.
 
 “National’s Back Pocket Boost for Graduates will reward young graduates who choose to stay in New Zealand, while pursuing those who leave and default.
 

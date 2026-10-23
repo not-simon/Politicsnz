@@ -84,19 +84,19 @@ Age-restricted platforms would need to:
 
 •
 
- ake reasonable steps to ensure under 16s
+  ake reasonable steps to ensure under 16s
 T
 could not hold an account.
 
 •
 
- omplete child safety risk assessments for all NZ users under 18 against a list of risk
+  omplete child safety risk assessments for all NZ users under 18 against a list of risk
 C
 factors.
 
 •
 
- rovide more than one way for a user to
+  rovide more than one way for a user to
 P
 determine their age (preventing them from
 solely relying on formal ID).
@@ -107,14 +107,14 @@ Update these assessments at least annually and provide them to the regulator.
 
 •
 
- bide by existing and additional privacy
+  bide by existing and additional privacy
 A
 protection requirements for personal
 information used in age assurance. There
 are significant penalties for failing to abide
 by privacy protection requirements.
 
- omplete a further risk assessment in advance of making a significant change to their
+  omplete a further risk assessment in advance of making a significant change to their
 C
 design or terms of use.
 
@@ -136,7 +136,7 @@ Illegal content and conduct in existing legislation.
 
 •
 
- armful content and conduct (e.g. grooming, cyberbullying, harassment, extortion,
+  armful content and conduct (e.g. grooming, cyberbullying, harassment, extortion,
 H
 sextortion, AI deepfakes, self-harm or suicide, violence, sexually explicit activity, false or
 misleading information and any other activity that may be a crime in NZ).
@@ -215,7 +215,7 @@ Access restriction (geo-blocking by ISPs and app stores).
 
 •
 
- riminal penalties for providing deliberately false or misleading information or refusing
+  riminal penalties for providing deliberately false or misleading information or refusing
 C
 to provide information (includes individual liability for nominated senior manager).
 
@@ -223,7 +223,7 @@ Fact Sheet
 What we know in New Zealand.
 •
 
- ne in three young New Zealanders spend at least five
+  ne in three young New Zealanders spend at least five
 O
 hours a day on social media. The 2025 Youth Health and
 Wellbeing Survey of around 9,400 young people aged 13–19
@@ -232,38 +232,38 @@ media use a day.
 
 •
 
- separate 2025 New Zealand survey of 540 teenagers
+  separate 2025 New Zealand survey of 540 teenagers
 A
 aged 13–17 found 90 per cent used social media, with most
 starting between the ages of 10 and 13.
 
 •
 
- alf of the teenagers surveyed felt they had been given
+  alf of the teenagers surveyed felt they had been given
 H
 access to social media too young.
 
 •
 
- 9 per cent said they wished social media had never been
+  9 per cent said they wished social media had never been
 3
 invented.
 
 •
 
- lmost half said social media disrupted daily life, including
+  lmost half said social media disrupted daily life, including
 A
 homework and schoolwork, family time, chores and sleep.
 
 •
 
- 2 per cent met the criteria for problematic social media
+  2 per cent met the criteria for problematic social media
 2
 use, with more than a third in a risky category.
 
 •
 
- oung people themselves are not universally opposed to
+  oung people themselves are not universally opposed to
 Y
 action. 47 per cent of teenagers supported increasing
 the minimum age to 16, compared with 25 per cent who
@@ -273,31 +273,31 @@ What does the Online Safety Bill do?
 •
 •
 
- equires age-restricted platforms to take reasonable steps
+  equires age-restricted platforms to take reasonable steps
 R
 to stop children under 16 from holding accounts.
- olds platforms accountable by requiring platforms to
+  olds platforms accountable by requiring platforms to
 H
 assess the risks their services pose to children and report
 on how those risks are being managed.
 
 •
 
- stablishes a regulator to monitor compliance, provide
+  stablishes a regulator to monitor compliance, provide
 E
 guidance, and act when platforms do not meet their
 obligations.
 
 •
 
- educes children’s exposure to harm on social media and
+  educes children’s exposure to harm on social media and
 R
 AI companion platforms.
 
 How will it work?
 •
 
- latforms will need to check if someone who is signing up
+  latforms will need to check if someone who is signing up
 P
 for an account or already holds one is older than 16. They
 will do this through a number of methods including; using
@@ -309,11 +309,11 @@ What platforms will be captured?
 
 •
 
- he Bill is intended to apply to at least the same platforms
+  he Bill is intended to apply to at least the same platforms
 T
 covered by Australia’s laws including – Instagram, Snapchat,
 TikTok, YouTube, Facebook and X.
- hildren under 16 will still be able to access messaging,
+  hildren under 16 will still be able to access messaging,
 C
 gaming, music and podcast platforms, as well as education,
 healthcare and professional networking services.
@@ -325,34 +325,34 @@ Will social media platforms be able to store users’
 information?
 •
 
- o. The Bill includes strict privacy protections that limit how
+  o. The Bill includes strict privacy protections that limit how
 N
 this information can be used and require it to be deleted
 when it is no longer needed.
 
 •
 
- latforms that fail to meet these privacy requirements can
+  latforms that fail to meet these privacy requirements can
 P
 face enforcement action and significant penalties.
 
 Won’t children just get around the rules?
 •
 
- latforms will not be able to rely solely on users entering
+  latforms will not be able to rely solely on users entering
 P
 a date of birth and claiming they are old enough.
 
 •
 
- latforms will be expected to use effective age-checking
+  latforms will be expected to use effective age-checking
 P
 systems and keep them up to date so they can detect and
 respond to attempts to get around the rules.
 
 •
 
- ut ultimately, no system is perfect, and some children will try
+  ut ultimately, no system is perfect, and some children will try
 B
 to get around the rules. But that is not a reason to do nothing.
 This is about changing expectations and social norms around
@@ -366,21 +366,21 @@ No, the Bill does not regulate VPNs at all.
 
 •
 
- e recognise the risk that some users may attempt to use
+  e recognise the risk that some users may attempt to use
 W
 tools such as VPNs to get around restrictions, and this has
 been considered in the design of the regime.
 
 •
 
- latforms can already use tools to help identify when users
+  latforms can already use tools to help identify when users
 P
 may be attempting to bypass restrictions by using a VPN and
 are expected to respond appropriately.
 
 •
 
- ecent evidence from Australia shows that VPN usage by
+  ecent evidence from Australia shows that VPN usage by
 R
 children to get around age restrictions is very low, only
 3 per cent.
@@ -388,38 +388,38 @@ children to get around age restrictions is very low, only
 What will the regulator do?
 •
 
- onitor whether platforms are meeting their legal
+  onitor whether platforms are meeting their legal
 M
 responsibilities and act when they do not.
 
 •
 
- ducate children, parents, caregivers and the wider public
+  ducate children, parents, caregivers and the wider public
 E
 about the new requirements.
 
 •
 
- equest information from platforms about how they meet
+  equest information from platforms about how they meet
 R
 their obligations.
 
 •
 
- ssess whether platforms have appropriate systems and
+  ssess whether platforms have appropriate systems and
 A
 processes in place to stop children under 16 from holding
 accounts and to identify, assess and manage risks to children.
 
 •
 
- ublish information about how platforms meet their
+  ublish information about how platforms meet their
 P
 obligations.
 
 •
 
- pply penalties to companies who do not comply with
+  pply penalties to companies who do not comply with
 A
 the law.
 
@@ -427,17 +427,17 @@ What has happened in Australia since their legislation was
 introduced?
 •
 
-Around 3 in 10 children no longer have accounts.
+ Around 3 in 10 children no longer have accounts.
 
 •
 
- etween December 2025 and February 2026, 4.7 million
+  etween December 2025 and February 2026, 4.7 million
 B
 accounts have been deactivated, removed or restricted.
 
 •
 
- o. If the platform already has accurate information
+  o. If the platform already has accurate information
 N
 indicating a user is over 16, that user should not be required
 to provide additional information.
@@ -446,20 +446,20 @@ to provide additional information.
 
 •
 
- or example, if someone has had an account since
+  or example, if someone has had an account since
 F
 Facebook started in New Zealand in 2006, Meta could
 reasonably assume they are older than 16 so no further
 check is needed.
 
- t the start of March 2026, over 310,000 additional
+  t the start of March 2026, over 310,000 additional
 A
 under 16 accounts in Australia were prevented from
 accessing platforms.
 
 •
 
- or New Zealand, a 30 per cent reduction could mean that
+  or New Zealand, a 30 per cent reduction could mean that
 F
 approximately 280,000 children are no longer accessing
 platforms associated with online harms.
@@ -658,22 +658,22 @@ Purpose: Reduce the risk of harm to children when online by imposing duties on o
  Platform Requirements
  Minimum age                                           Child safety risk assessments
  Age-restricted platforms would need to:               Age-restricted platforms would need to:
- •    ake reasonable steps to ensure under 16s
-     T                                                 •    omplete child safety risk assessments for all NZ users under 18 against a list of risk
+ •     ake reasonable steps to ensure under 16s
+     T                                                 •     omplete child safety risk assessments for all NZ users under 18 against a list of risk
                                                            C
      could not hold an account.                            factors.
- •    rovide more than one way for a user to
+ •     rovide more than one way for a user to
      P                                                 •   Update these assessments at least annually and provide them to the regulator.
-     determine their age (preventing them from         •    omplete a further risk assessment in advance of making a significant change to their
+     determine their age (preventing them from         •     omplete a further risk assessment in advance of making a significant change to their
                                                            C
      solely relying on formal ID).                         design or terms of use.
- •    bide by existing and additional privacy
+ •     bide by existing and additional privacy
      A                                                 •   Nominate a senior manager responsible for the assessment’s accuracy.
      protection requirements for personal
                                                        List of risks to assess and report mitigations of:
      information used in age assurance. There
      are significant penalties for failing to abide    •   Illegal content and conduct in existing legislation.
-     by privacy protection requirements.               •    armful content and conduct (e.g. grooming, cyberbullying, harassment, extortion,
+     by privacy protection requirements.               •     armful content and conduct (e.g. grooming, cyberbullying, harassment, extortion,
                                                            H
                                                            sextortion, AI deepfakes, self-harm or suicide, violence, sexually explicit activity, false or
  Age-restricted platforms are prohibited from
@@ -705,108 +705,108 @@ Purpose: Reduce the risk of harm to children when online by imposing duties on o
                                                        •   Financial penalties (based on a percentage of the platform’s global annual revenue).
                                                        •   Service restriction (inability to work with NZ companies and limiting monetisation in NZ).
                                                        •   Access restriction (geo-blocking by ISPs and app stores).
-                                                       •    riminal penalties for providing deliberately false or misleading information or refusing
+                                                       •     riminal penalties for providing deliberately false or misleading information or refusing
                                                            C
                                                            to provide information (includes individual liability for nominated senior manager).
 
 Fact Sheet
 What we know in New Zealand.                                          Will social media platforms be able to store users’
-•    ne in three young New Zealanders spend at least five
+•     ne in three young New Zealanders spend at least five
     O                                                                 information?
-    hours a day on social media. The 2025 Youth Health and            •     o. The Bill includes strict privacy protections that limit how
+    hours a day on social media. The 2025 Youth Health and            •      o. The Bill includes strict privacy protections that limit how
                                                                            N
     Wellbeing Survey of around 9,400 young people aged 13–19               this information can be used and require it to be deleted
     found 33.5 per cent reported five or more hours of social              when it is no longer needed.
-    media use a day.                                                  •     latforms that fail to meet these privacy requirements can
+    media use a day.                                                  •      latforms that fail to meet these privacy requirements can
                                                                            P
-•    separate 2025 New Zealand survey of 540 teenagers
+•     separate 2025 New Zealand survey of 540 teenagers
     A                                                                      face enforcement action and significant penalties.
     aged 13–17 found 90 per cent used social media, with most
     starting between the ages of 10 and 13.                           Won’t children just get around the rules?
-•    alf of the teenagers surveyed felt they had been given
-    H                                                                 •    latforms will not be able to rely solely on users entering
+•     alf of the teenagers surveyed felt they had been given
+    H                                                                 •     latforms will not be able to rely solely on users entering
                                                                           P
     access to social media too young.                                     a date of birth and claiming they are old enough.
-•    9 per cent said they wished social media had never been
-    3                                                                 •    latforms will be expected to use effective age-checking
+•     9 per cent said they wished social media had never been
+    3                                                                 •     latforms will be expected to use effective age-checking
                                                                           P
     invented.                                                             systems and keep them up to date so they can detect and
                                                                           respond to attempts to get around the rules.
-•    lmost half said social media disrupted daily life, including
+•     lmost half said social media disrupted daily life, including
     A
-    homework and schoolwork, family time, chores and sleep.           •    ut ultimately, no system is perfect, and some children will try
+    homework and schoolwork, family time, chores and sleep.           •     ut ultimately, no system is perfect, and some children will try
                                                                           B
                                                                           to get around the rules. But that is not a reason to do nothing.
-•    2 per cent met the criteria for problematic social media
+•     2 per cent met the criteria for problematic social media
     2                                                                     This is about changing expectations and social norms around
     use, with more than a third in a risky category.                      children’s access to social media.
-•    oung people themselves are not universally opposed to
+•     oung people themselves are not universally opposed to
     Y
     action. 47 per cent of teenagers supported increasing             Will this Bill regulate VPNs? Won’t children just use them to
     the minimum age to 16, compared with 25 per cent who              get around the rules?
     opposed it. Among caregivers, support was 77 per cent.            •   No, the Bill does not regulate VPNs at all.
-                                                                      •    e recognise the risk that some users may attempt to use
+                                                                      •     e recognise the risk that some users may attempt to use
                                                                           W
 What does the Online Safety Bill do?
                                                                           tools such as VPNs to get around restrictions, and this has
-•    equires age-restricted platforms to take reasonable steps
+•     equires age-restricted platforms to take reasonable steps
     R                                                                     been considered in the design of the regime.
     to stop children under 16 from holding accounts.
-                                                                      •    latforms can already use tools to help identify when users
+                                                                      •     latforms can already use tools to help identify when users
                                                                           P
-•    olds platforms accountable by requiring platforms to
+•     olds platforms accountable by requiring platforms to
     H                                                                     may be attempting to bypass restrictions by using a VPN and
     assess the risks their services pose to children and report           are expected to respond appropriately.
     on how those risks are being managed.
-                                                                      •    ecent evidence from Australia shows that VPN usage by
+                                                                      •     ecent evidence from Australia shows that VPN usage by
                                                                           R
-•    stablishes a regulator to monitor compliance, provide
+•     stablishes a regulator to monitor compliance, provide
     E                                                                     children to get around age restrictions is very low, only
     guidance, and act when platforms do not meet their                    3 per cent.
     obligations.
                                                                       What will the regulator do?
-•    educes children’s exposure to harm on social media and
+•     educes children’s exposure to harm on social media and
     R
-    AI companion platforms.                                           •    onitor whether platforms are meeting their legal
+    AI companion platforms.                                           •     onitor whether platforms are meeting their legal
                                                                           M
                                                                           responsibilities and act when they do not.
-How will it work?                                                     •    ducate children, parents, caregivers and the wider public
+How will it work?                                                     •     ducate children, parents, caregivers and the wider public
                                                                           E
-•    latforms will need to check if someone who is signing up
+•     latforms will need to check if someone who is signing up
     P                                                                     about the new requirements.
-    for an account or already holds one is older than 16. They        •    equest information from platforms about how they meet
+    for an account or already holds one is older than 16. They        •     equest information from platforms about how they meet
                                                                           R
     will do this through a number of methods including; using             their obligations.
     existing account information, facial age estimation, digital ID
-                                                                      •    ssess whether platforms have appropriate systems and
+                                                                      •     ssess whether platforms have appropriate systems and
                                                                           A
     services and formal ID.
                                                                           processes in place to stop children under 16 from holding
 What platforms will be captured?                                          accounts and to identify, assess and manage risks to children.
-                                                                      •    ublish information about how platforms meet their
+                                                                      •     ublish information about how platforms meet their
                                                                           P
-•    he Bill is intended to apply to at least the same platforms
+•     he Bill is intended to apply to at least the same platforms
     T
                                                                           obligations.
     covered by Australia’s laws including – Instagram, Snapchat,
-    TikTok, YouTube, Facebook and X.                                  •    pply penalties to companies who do not comply with
+    TikTok, YouTube, Facebook and X.                                  •     pply penalties to companies who do not comply with
                                                                           A
                                                                           the law.
-•    hildren under 16 will still be able to access messaging,
+•     hildren under 16 will still be able to access messaging,
     C
     gaming, music and podcast platforms, as well as education,        What has happened in Australia since their legislation was
     healthcare and professional networking services.                  introduced?
-Will every New Zealander now have to prove their age and              •   Around 3 in 10 children no longer have accounts.
-date of birth to use social media if they are over 16?                •    etween December 2025 and February 2026, 4.7 million
+Will every New Zealander now have to prove their age and              •    Around 3 in 10 children no longer have accounts.
+date of birth to use social media if they are over 16?                •     etween December 2025 and February 2026, 4.7 million
                                                                           B
-•    o. If the platform already has accurate information
+•     o. If the platform already has accurate information
     N                                                                     accounts have been deactivated, removed or restricted.
-    indicating a user is over 16, that user should not be required    •    t the start of March 2026, over 310,000 additional
+    indicating a user is over 16, that user should not be required    •     t the start of March 2026, over 310,000 additional
                                                                           A
     to provide additional information.                                    under 16 accounts in Australia were prevented from
-•    or example, if someone has had an account since
+•     or example, if someone has had an account since
     F                                                                     accessing platforms.
-    Facebook started in New Zealand in 2006, Meta could               •    or New Zealand, a 30 per cent reduction could mean that
+    Facebook started in New Zealand in 2006, Meta could               •     or New Zealand, a 30 per cent reduction could mean that
                                                                           F
     reasonably assume they are older than 16 so no further                approximately 280,000 children are no longer accessing
     check is needed.                                                      platforms associated with online harms.

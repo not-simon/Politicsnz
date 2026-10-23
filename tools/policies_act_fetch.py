@@ -114,16 +114,39 @@ def scoop_extract(html, base_url):
     s = BeautifulSoup(html, 'html.parser')
     for t in s(['script', 'style', 'noscript', 'svg']):
         t.decompose()
-    art = s.find(id='article') or s.find('article') or s.find(class_='story-text') or s.body
+    art = s.find(id='article') or s.body
+    h1 = s.find('h1').get_text(' ', strip=True) if s.find('h1') else ''
+    by = art.find(class_='byline')
+    lines = []
+    if by:
+        lines.append(re.sub(r'\s+', ' ', by.get_text(' ', strip=True)))
+    for el in art.find_all(['h2', 'h3', 'p', 'li']):
+        if el.find(['p', 'li', 'h2', 'h3']):
+            continue  # keep innermost blocks only (Scoop markup has unclosed <p>)
+        txt = re.sub(r'\s+', ' ', el.get_text(' ', strip=True)).strip()
+        if not txt or txt.startswith('Advertisement - scroll'):
+            continue
+        if txt.startswith('© Scoop Media'):
+            break
+        lines.append(('### ' + txt) if el.name in ('h2', 'h3') else txt)
+    return {'page_title': s.title.get_text(strip=True) if s.title else '', 'h1': h1, 'blocks': lines, 'links': [], 'all_links': []}
+
+
+def generic_extract(html, base_url):
+    """Non-Framer, non-Scoop pages (e.g. the balancethebooks.nz microsite): every visible text node, in order."""
+    s = BeautifulSoup(html, 'html.parser')
+    for t in s(['script', 'style', 'noscript', 'svg', 'template']):
+        t.decompose()
     h1 = s.find('h1').get_text(' ', strip=True) if s.find('h1') else ''
     lines = []
-    for el in art.find_all(['h1', 'h2', 'h3', 'p', 'li']):
-        if el.find_parent(['p', 'li']):
-            continue
-        txt = re.sub(r'\s+', ' ', el.get_text(' ', strip=True)).strip()
-        if txt:
-            lines.append(('## ' + txt) if el.name in ('h1', 'h2', 'h3') else txt)
-    return {'page_title': s.title.get_text(strip=True) if s.title else '', 'h1': h1, 'blocks': lines, 'links': [], 'all_links': []}
+    for line in s.body.get_text('\n', strip=True).split('\n'):
+        line = re.sub(r'\s+', ' ', line).strip()
+        if line:
+            lines.append(line)
+    links = [{'text': a.get_text(' ', strip=True), 'href': urllib.parse.urljoin(base_url, a['href'])}
+             for a in s.find_all('a', href=True)]
+    return {'page_title': s.title.get_text(strip=True) if s.title else '', 'h1': h1, 'blocks': lines,
+            'links': links, 'all_links': [], 'extraction': 'all visible text nodes (interactive page; live counters show their initial value)'}
 
 
 def fetch(url, store, meta=None):
@@ -131,7 +154,7 @@ def fetch(url, store, meta=None):
         return store[url]
     slug = slug_for(url)
     is_pdf = '.pdf' in url.lower()
-    out = os.path.join(RAW, 'pdf' if is_pdf else 'html', slug + ('.pdf' if is_pdf else '.html'))
+    out = os.path.join(RAW, 'pdf' if is_pdf else 'html', slug + ('.pdf' if is_pdf else '.download'))
     code, eff, ctype, err = curl(url, out)
     rec = {'url': url, 'slug': slug, 'http': code, 'final_url': eff, 'content_type': ctype,
            'retrieved': time.strftime('%Y-%m-%d'), 'ok': False, 'error': err}
@@ -161,8 +184,15 @@ def fetch(url, store, meta=None):
             os.remove(out); rec['raw_file'] = None
     else:
         rec['kind'] = 'html'
+        newout = out[:-len('.download')] + '.html' if out.endswith('.download') else out
+        os.replace(out, newout); out = newout
         html = open(out, encoding='utf-8', errors='replace').read()
-        ex = scoop_extract(html, eff) if 'scoop.co.nz' in eff else framer_extract(html, eff)
+        if 'scoop.co.nz' in eff:
+            ex = scoop_extract(html, eff)
+        elif 'act.org.nz' in urllib.parse.urlparse(eff).netloc:
+            ex = framer_extract(html, eff)
+        else:
+            ex = generic_extract(html, eff)
         rec.update(ex)
         rec['raw_file'] = os.path.relpath(out, ROOT)
         rec['ok'] = len(ex['blocks']) > 0

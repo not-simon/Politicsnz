@@ -1,0 +1,254 @@
+---
+title: "ACT’s Plan to Make Farming Fun Again"
+party: act
+source_url: https://assets.nationbuilder.com/actnz/pages/37460/attachments/original/1789711573/ACT's_plan_to_Make_Farming_Fun_Again.pdf?1789711573
+also_published_at:
+  - https://www.act.org.nz/make_farming_fun_again
+retrieved: 2026-10-23
+format: pdf
+fetch_method: curl (direct from origin), text extracted with pdftotext (reading order; tables kept with -layout)
+document_type: policy document (PDF)
+pages: 18
+raw_file: raw/party-docs/act/pdf/make-farming-fun-again.pdf
+cited_by_policy_nz: false
+---
+
+# ACT’s Plan to Make Farming Fun Again
+
+*ACT New Zealand policy document (PDF). Source: <https://assets.nationbuilder.com/actnz/pages/37460/attachments/original/1789711573/ACT's_plan_to_Make_Farming_Fun_Again.pdf?1789711573> (retrieved 2026-10-23).*
+
+## Full text
+
+> Verbatim text as published; only whitespace and markup have been normalised. PDF page breaks are marked with HTML comments; tables are reproduced with their original layout.
+
+<!-- page 1 -->
+
+ACT’S PLAN to
+
+MAKE FARMING FUN AGAIN
+
+Authorised by C. Purves, w ww.act.org.nz
+
+20 . 09 . 26
+
+<!-- page 2 -->
+
+FOREWORD f r om ANDREW HOGGARD MP ACT Agriculture Spokesperson and dairy farmer
+
+ACT’S PLAN TO MAKE FARMING FUN AGAIN
+
+20 . 09 . 26
+
+<!-- page 3 -->
+
+I got into politics because confidence in rural New Zealand was at an all-time low. For years, farmers had been hit with one new rule after another. Freshwater regulations, Significant Natural Areas, winter grazing rules, emissions pricing proposals, the ute tax, firearms laws, health and safety paperwork, and layers of resource management red tape all added cost and uncertainty to running a farm. I had spent more than 20 years farming and had seen first-hand what happens when people in Wellington who don’t understand farming try to regulate every part of it. Things are much better now, thanks to ACT pushing the Government to go much further and faster in delivering real change for Rural New Zealand than it would have without ACT. The ute tax is gone. He Waka Eke Noa is gone. Agriculture has been kept out of the ETS. Freshwater farm plans are being simplified. The methane target has been halved. We have stopped the expansion of Significant Natural Areas, cut back unworkable winter grazing rules, restored 90day trials, and are replacing the Resource Management Act with new laws based on property rights. But there is much more to do. I want my daughters, if they choose farming, to have the freedom to farm well without the red tape I’ve faced for 20 years. That means getting the next big decisions right. Replacing the RMA is a major step forward. Further decisions about the national instruments and detailed standards under the new system will also have a significant impact on what farmers can do with their land. Freshwater rules still need to be rewritten. Te Mana o te Wai needs to be scrapped. Climate policy needs to reflect the science of methane and the fact that New Zealand is a world-leader in agricultural efficiency. ACT is the only party that has never supported introducing a price on agricultural emissions and we opposed the Zero Carbon Act when every other party supported it. I’m also acutely aware of the challenges facing rural communities in relation to rural school buses, access to healthcare, rural crime, and illegal rubbish dumping. ACT has a plan to address each of these important issues. Farmers do not need another politician telling them how to farm. They need a Government that respects property rights, sets clear rules around genuine environmental harm, and otherwise lets them get on with it. That is what this plan is about. Let farmers farm.
+
+Andrew Hoggard MP ACT Agriculture Spokesperson Dairy farmer
+
+Authorised by C. Purves, w ww.act.org.nz
+
+<!-- page 4 -->
+
+ACT’S RECORD f or RURAL NEW ZEALAND ACT went into Government promising to get Wellington off farmers’ backs. Since then, ACT has:
+
+- Replaced the Resource Management Act with a system based on property rights
+
+- Kept agriculture out of the ETS
+
+- Scrapped He Waka Eke Noa
+
+- Slashed Labour’s methane target
+
+- Axed Labour’s ute tax
+
+- Simplified freshwater farm plans
+
+- Wound back unworkable winter grazing regulations
+
+- Halted the expansion of Significant Natural Areas
+
+- Restored 90-day trials for every employer
+
+- Refocused health and safety laws on actual risk
+
+- Reformed agricultural chemical and veterinary medicine regulation
+
+- Delivered an additional $79 million in funding for wilding pine control
+
+- Replaced the Arms Act with a new law focused on targeting criminals rather than punishing licensed firearm owners The next job is to lock those gains in and go further.
+
+ACT’S PLAN TO MAKE FARMING FUN AGAIN
+
+20 . 09 . 26
+
+<!-- page 5 -->
+
+Authorised by C. Purves, w ww.act.org.nz
+
+<!-- page 6 -->
+
+1 KEEP WELLINGTON OUT of FARMING Replacing the Resource Management Act is one of the biggest wins for rural New Zealand in decades. The legislation puts property rights at the forefront, but further decisions will still matter greatly for how the new system works in practice. Key decisions will be made through the new system’s national instruments, including National Policy Direction and National Standards. ACT needs to be in a strong position in the next Government to ensure key decisions put rural New Zealand front of mind. ACT will:
+
+- ensure National Policy Direction puts property rights first and focuses on actual environmental harm;
+
+- make sure rules recognise local conditions instead of imposing one-size-fits-all solutions from Wellington;
+
+- keep standards clear, measurable and practical;
+
+- remove Te Mana o te Wai and other vague spiritual concepts from freshwater regulation while backing practical steps to improve water quality;
+
+- ensure those concepts do not simply reappear under another name in the new system;
+
+- protect farmers from a return of Labour-style Significant Natural Areas;
+
+- strengthen property rights through the New Zealand Bill of Rights Act; and
+
+- expand voluntary and incentive-based conservation, including biodiversity credits and mechanisms such as the QEII National Trust. The replacement RMA creates a huge opportunity. ACT will make sure the detailed rules and national instruments deliver on its promise of a simpler, property-rights-based system.
+
+ACT’S PLAN TO MAKE FARMING FUN AGAIN
+
+20 . 09 . 26
+
+<!-- page 7 -->
+
+Authorised by C. Purves, w ww.act.org.nz
+
+<!-- page 8 -->
+
+2 PRACTICAL ENVIRONMENTALISM Farmers have every incentive to look after the land and water their businesses depend on. ACT believes environmental policy should focus on outcomes, work with farmers and recognise that New Zealand is not one giant catchment. ACT will:
+
+- increase penalties for illegal rubbish dumping;
+
+- provide an additional $4.5 million a year for rural catchment groups to improve water quality, maintaining total funding at the current level of $13.5 million a year, with scope for further increases where groups can demonstrate strong results;1
+
+- keep freshwater farm plans workable, practical and affordable;
+
+- continue the war on wilding pines, building on the additional $79 million over three years already secured;
+
+- allow targeted grazing on suitable DOC land to control weeds, wilding pines and fire fuel; and
+
+- ensure permanent forest owners carry the long-term costs and risks created by their forests, including sufficient pest control
+
+1 This will be funded by reprioritising existing MPI spending, including from programmes such as the Primary Sector Growth Fund, which recently used taxpayer money to fund research for a private company into whether people sleep better on wool or synthetic bedding.
+
+ACT’S PLAN TO MAKE FARMING FUN AGAIN
+
+20 . 09 . 26
+
+<!-- page 9 -->
+
+Authorised by C. Purves, w ww.act.org.nz
+
+<!-- page 10 -->
+
+3 BACK FARMERS on CLIMATE New Zealand farmers produce food with some of the lowest emissions intensity in the world. Taxing production here does not stop people eating, it simply shifts production to countries that will produce the same food less efficiently. ACT is the only party that has never supported introducing a price on agricultural emissions. We stood alone against the Zero Carbon Act, opposed He Waka Eke Noa and successfully fought to keep agriculture out of the ETS. We will keep it that way. ACT will:
+
+- keep agriculture permanently out of the Emissions Trading Scheme;
+
+- oppose any agricultural emissions tax or pricing scheme;
+
+- scrap the Net Zero target;
+
+- repeal the Zero Carbon Act;
+
+- abolish the Climate Change Commission;
+
+- recognise the different warming effects of methane and carbon dioxide;
+
+- ensure New Zealand’s international climate commitments do not force our farmers to bear costs their overseas competitors avoid; and
+
+- scrap the artificial ETS price floor that props up the carbon price and makes blanket carbon farming artificially attractive. If New Zealand cannot secure a fair international climate deal, ACT is prepared to reconsider our participation in the Paris Agreement.
+
+ACT’S PLAN TO MAKE FARMING FUN AGAIN
+
+20 . 09 . 26
+
+<!-- page 11 -->
+
+Authorised by C. Purves, w ww.act.org.nz
+
+<!-- page 12 -->
+
+4 GIVE FARMERS THE TOOLS to GROW New Zealand farmers have always been early adopters of technology, often in spite of, not because of, the government. ACT will continue to cut red tape to make agri-innovation easier. ACT will:
+
+- speed up access to proven agricultural chemicals and veterinary medicines;
+
+- recognise trusted overseas approvals instead of forcing New Zealand to reinvent the wheel;
+
+- cut unnecessary restrictions on agricultural drones;
+
+- remove barriers to new farming technology;
+
+- maintain employment settings that make it easier for farmers to hire and give people opportunities; and
+
+- introduce a Rural Workforce Visa providing a reliable pathway for workers needed by farms and rural businesses.
+
+ACT’S PLAN TO MAKE FARMING FUN AGAIN
+
+20 . 09 . 26
+
+<!-- page 13 -->
+
+Authorised by C. Purves, w ww.act.org.nz
+
+<!-- page 14 -->
+
+5 BACK RURAL COMMUNITIES Rural New Zealand produces much of the wealth New Zealand depends on. It deserves public services that work. ACT will:
+
+- fund 100,000 additional rural Police patrol hours every year;
+
+- establish a dedicated rural crime unit;
+
+- strengthen offences and penalties for livestock theft and poaching;
+
+- extend Text 111 eligibility to rural areas where unreliable mobile coverage makes voice calls difficult;
+
+- introduce Three Strikes for Burglary, so repeat burglars face a minimum three-year prison sentence without parole on their third conviction;
+
+- introduce an Open Seat Rule so rural children can use spare seats on existing school buses going to nearby schools wherever practical;
+
+- allow pharmacists to provide more everyday healthcare and manage more stable long-term conditions removing pressure on hospitals and GPs;
+
+- enable 24-hour prescription e-lockers, making it easier for rural patients to collect medicines without a long trip during limited pharmacy opening hours; and
+
+- remove red tape relating to homekill and make it easier for farmers to sell their products direct to consumer.
+
+ACT’S PLAN TO MAKE FARMING FUN AGAIN
+
+20 . 09 . 26
+
+<!-- page 15 -->
+
+Authorised by C. Purves, w ww.act.org.nz
+
+<!-- page 16 -->
+
+6 RESPONSIBLE GOVERNANCE f or A STRONGER ECONOMY Farmers make long-term decisions about land, stock, machinery and staff. They need stable prices, lower interest rates and confidence that Government will live within its means and stay out of commercial decisions it has no business making. ACT will:
+
+- retain the Reserve Bank’s focus on keeping inflation under control so interest rates stay low;
+
+- balance the Government’s books without introducing new taxes;
+
+- return the books to surplus faster;
+
+- keep finding savings so debt can be paid down rather than passed on to the next generation;
+
+- maintain ACT’s commitment to No New Taxes; and
+
+- keep cutting unnecessary regulation that raises the cost of doing business.
+
+- respect the right of farmer-owned companies to make commercial decisions without politicians treating them as instruments of government policy.
+
+ACT’S PLAN TO MAKE FARMING FUN AGAIN
+
+20 . 09 . 26
+
+<!-- page 17 -->
+
+Authorised by C. Purves, w ww.act.org.nz
+
+<!-- page 18 -->
+
+ACT’S PLAN TO MAKE FARMING FUN AGAIN
+
+20 . 09 . 26

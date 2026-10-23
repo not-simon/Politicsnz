@@ -54,13 +54,17 @@ A Labour Government will:
 
 Five tests will guide the decisions a Labour Government makes:
 
-| Test |
-| --- |
-| 1. Are the gains shared beyond those who own the technology? |
-| 2. Do people have a real say in how AI is used in their workplaces? |
-| 3. Does a human still have meaningful oversight and accountability for government decisions that affect people's lives? |
-| 4. Are AI companies using energy, water and land responsibly and carrying their fair share of the costs? |
-| 5. Do New Zealanders retain control over our data, creative work and infrastructure? |
+Test
+
+1. Are the gains shared beyond those who own the technology?
+
+2. Do people have a real say in how AI is used in their workplaces?
+
+3. Does a human still have meaningful oversight and accountability for government decisions that affect people's lives?
+
+4. Are AI companies using energy, water and land responsibly and carrying their fair share of the costs?
+
+5. Do New Zealanders retain control over our data, creative work and infrastructure?
 
 ### Protect what matters
 

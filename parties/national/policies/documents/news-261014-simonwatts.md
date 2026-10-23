@@ -43,15 +43,15 @@ Today National is releasing its plan for Auckland, which will continue to get Au
 
 A re-elected National government will:
 
-- Plan ahead for Auckland’s future , working with Auckland Council through the Auckland Deal to align housing, infrastructure and economic growth.
+- Plan ahead for Auckland’s future, working with Auckland Council through the Auckland Deal to align housing, infrastructure and economic growth.
 
-- Build the infrastructure Auckland needs to grow , including SH1 Warkworth to Te Hana, stage one of Mill Road, the Eastern busway, 296 new classrooms, and further progressing a new hospital in Drury.
+- Build the infrastructure Auckland needs to grow, including SH1 Warkworth to Te Hana, stage one of Mill Road, the Eastern busway, 296 new classrooms, and further progressing a new hospital in Drury.
 
-- Back Auckland families with the cost of living , by growing the economy, supporting more housing and keeping pressure off household costs.
+- Back Auckland families with the cost of living, by growing the economy, supporting more housing and keeping pressure off household costs.
 
-- Keep driving crime down , with more visible Police, including on public transport, tougher consequences for serious and repeat offenders, and safer neighbourhoods and public spaces.
+- Keep driving crime down, with more visible Police, including on public transport, tougher consequences for serious and repeat offenders, and safer neighbourhoods and public spaces.
 
-- Keep lifting health and education performance , so patients are seen and treated sooner, more children are in school, and more young Aucklanders leave with the skills and qualifications they need.
+- Keep lifting health and education performance, so patients are seen and treated sooner, more children are in school, and more young Aucklanders leave with the skills and qualifications they need.
 
 In a further move to make Auckland commuters and residents’ lives easier, Chris Bishop says National will also abolish the blanket ban on minimum car parking requirements in city and district plans which were introduced in 2020.
 

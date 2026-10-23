@@ -49,20 +49,8 @@ It wasn't a project "starting from scratch".
 
 "Because of National's work in government, the project is ready to go and is the next investment-ready project on the Major Transport Projects Pipeline."
 
-The announcement comes after National also promised to start construction on south Auckland's Mill Road if it leads the next government .
+The announcement comes after National also promised to start construction on south Auckland's Mill Road if it leads the next government.
 
 It would allocate $1.75 billion in Budget 2028 so construction can begin in late 2028, and look to progress route protection on Stages Two and Three by allocating $100m.
 
 The Mill Road highway has been dogged in controversy for nearly two decades with political flip-flopping about building it, legal battles launched by climate advocacy groups and nearly 300 property owners left in uncertainty.
-
-- News
-
-- Politics
-
-- Election 2026
-
-5 October 2026, 9:58am
-
-$
-
-/$

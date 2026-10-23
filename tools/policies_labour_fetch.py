@@ -31,6 +31,8 @@ def slug_for(u):
     p = urlparse(u)
     host = p.netloc.replace('www.', '')
     path = p.path.strip('/')
+    if path.lower().endswith('.pdf'):
+        return 'pdf-' + re.sub(r'[^a-z0-9-]+', '-', os.path.basename(path)[:-4].lower()).strip('-')
     if host == 'labour.org.nz':
         s = path.replace('news/', '').replace('/', '-') or 'home'
     elif host == 'scoop.co.nz':
@@ -63,7 +65,15 @@ def main():
             if c.get('url'):
                 urls.append(original_url(c['url']))
     # policy hub pages
-    hub = open(os.path.join(RAW, 'html', 'policy.html')).read() if os.path.exists(os.path.join(RAW, 'html', 'policy.html')) else ''
+    hp = os.path.join(RAW, 'html', 'policy.html')
+    if os.path.exists(hp):
+        hub = open(hp).read()
+    elif os.path.exists(hp + '.gz'):
+        import gzip
+        hub = gzip.open(hp + '.gz', 'rt').read()
+    else:
+        hub = ''
+    # (raw HTML is gzipped after fetching: gzip -9 raw/party-docs/labour/html/*.html)
     skip = re.compile(r"^/(css|media|api|donate|join-labour|contact|shop|volunteer|privacy-policy|party-information|redirects|news/?$|our-policies|priority-pages|#|$)")
     for h in re.findall(r'href="(/[^"#?]*)', hub):
         if not skip.match(h) and h != '/':
@@ -73,6 +83,11 @@ def main():
                   'https://www.labour.org.nz/community-housing-and-retirement-villages']:
         urls.append(extra)
     urls.extend(sys.argv[1:])
+    # duplicates of pages already captured under another URL (same content / redirect) and non-policy items
+    DROP = {'https://www.labour.org.nz/ece',  # identical to /early-childhood-education
+            'https://www.labour.org.nz/news/release-labour-to-ensure-an-immigration-system-that-works-for-new-zealand/',
+            'https://www.labour.org.nz/news/free-doctors-visits/', 'https://www.labour.org.nz/news/new-zealand-future-fund/'}
+    urls = [u for u in urls if u not in DROP]
     idx_path = os.path.join(RAW, 'fetch_index.json')
     idx = json.load(open(idx_path)) if os.path.exists(idx_path) else {}
     seen = []

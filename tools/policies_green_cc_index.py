@@ -32,6 +32,6 @@ for c in sys.argv[1:]:
             surt, ts, js = row.split(' ', 2)
             d = json.loads(js)
             out.append({'url': d['url'], 'status': d.get('status'), 'timestamp': ts, 'filename': d['filename'],
-                        'offset': d['offset'], 'length': d['length'], 'mime': d.get('mime', '')})
+                        'offset': d['offset'], 'length': d['length'], 'mime': d.get('mime', ''), 'redirect': d.get('redirect')})
     open(os.path.join(OUT, c + '.jsonl'), 'w').write('\n'.join(json.dumps(x) for x in out) + '\n')
     print(c, len(sel), 'blocks', len(out), 'captures', flush=True)

@@ -39,7 +39,7 @@ A re-elected National Government will ensure the welfare system remains focused 
 
 - Investing earlier to help long-term Jobseekers into work. National will provide more intensive, work-focused support for 30,000 work-ready jobseekers who have been on Jobseeker for more than a year, before long-term dependency becomes entrenched, with greater funding for employment programmes that support young people into work.
 
-- Stronger expectations after two years . From 1 April 2028, those who have received Jobseeker for two of the previous three years will move to a lower rate of payment, with a smaller reduction for households with dependent children.
+- Stronger expectations after two years. From 1 April 2028, those who have received Jobseeker for two of the previous three years will move to a lower rate of payment, with a smaller reduction for households with dependent children.
 
 - Double the stand-down for repeated voluntary unemployment. People who repeatedly leave employment without good and sufficient reason will face a 26-week non-entitlement period, up from 13 weeks.
 

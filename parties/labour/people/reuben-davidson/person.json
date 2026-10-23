@@ -2,14 +2,33 @@
  "name": "Reuben Davidson",
  "slug": "reuben-davidson",
  "party": "labour",
+ "party_history": [
+  {
+   "party": "labour",
+   "from": "2023",
+   "to": ""
+  }
+ ],
  "status": "candidate-2026",
+ "roles": [
+  "Labour shadow cabinet #13 (as of 11 Mar 2026): Spokesperson for Economic Development; Spokesperson for Science, Technology and Innovation; Spokesperson for Broadcasting, Media and Creative Economy"
+ ],
+ "parliaments": [
+  54
+ ],
+ "first_elected": 2023,
+ "electorates": [
+  "Christchurch East"
+ ],
+ "electorate_2026": "Christchurch East",
+ "list_rank_2026": 21,
+ "wikipedia": "https://en.wikipedia.org/wiki/Reuben_Davidson",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/182c6f7a54078fcdb359365b1b0ebb97c50a6a8c-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
+ "photo_license": "Not stated (image supplied to policy.nz by the candidate/party)",
  "first_name": "Reuben",
  "last_name": "Davidson",
- "electorate_2026": "Christchurch East",
- "list_rank_2026": 21,
  "candidacy_2026": "Candidate for the Christchurch East electorate",
  "questionnaire_2026": {
   "Before politics": "Producer",
@@ -21,6 +40,8 @@
   "Instagram": "https://www.instagram.com/reuben4east"
  },
  "sources": [
-  "https://policy.nz/2026/party-vote/parties/labour-party"
+  "https://en.wikipedia.org/wiki/Reuben_Davidson",
+  "https://policy.nz/2026/party-vote/parties/labour-party",
+  "https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins"
  ]
 }

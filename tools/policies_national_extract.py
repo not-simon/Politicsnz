@@ -12,6 +12,7 @@ def _inline(el):
     """Text of an element with inline whitespace normalised."""
     t = el.get_text(' ', strip=False)
     t = re.sub(r'\s+', ' ', t).strip()
+    t = re.sub(r' (?=[,.;:!?](\s|$))', '', t)  # undo spaces introduced at inline-tag boundaries
     return t
 
 
