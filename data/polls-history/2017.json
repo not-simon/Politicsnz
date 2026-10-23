@@ -1,0 +1,1641 @@
+{
+ "title": "Opinion polls (party vote) for the 2017 New Zealand general election",
+ "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2017_New_Zealand_general_election",
+ "source_revid": 1350970470,
+ "retrieved": "2026-10-23",
+ "election_date": "2017-09-23",
+ "notes": "Parsed from Wikipedia by tools/polls_update.py. Rows newest first; 'end_date' = last fieldwork day where known (2011/2014 tables give no sample sizes). 'result' = official party vote from data/elections/<year>.json.",
+ "count": 79,
+ "result": {
+  "national": 44.45,
+  "labour": 36.89,
+  "nz-first": 7.2,
+  "green": 6.27,
+  "act": 0.5,
+  "opportunity": 2.44,
+  "te-pati-maori": 1.18,
+  "legalise-cannabis": 0.31,
+  "conservative": 0.24,
+  "mana": 0.14,
+  "ban-1080": 0.12,
+  "nz-peoples-party": 0.07,
+  "united-future": 0.07,
+  "nz-outdoors-freedom": 0.06,
+  "social-credit": 0.03,
+  "internet-party": 0.02
+ },
+ "polls": [
+  {
+   "date": "23 Sep 2017",
+   "end_date": "2017-09-23",
+   "pollster": "2017 election result",
+   "source_url": "https://en.wikipedia.org/wiki/2017_New_Zealand_general_election",
+   "sample_size": null,
+   "results": {
+    "national": 44.4,
+    "labour": 36.9,
+    "green": 6.3,
+    "nz-first": 7.2,
+    "te-pati-maori": 1.2,
+    "act": 0.5,
+    "united-future": 0.1,
+    "conservative": 0.2,
+    "mana": 0.1,
+    "opportunity": 2.4
+   },
+   "is_election_result": true,
+   "pollster_key": "2017 election result"
+  },
+  {
+   "date": "13–20 Sep 2017",
+   "end_date": "2017-09-20",
+   "pollster": "Newshub Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 45.8,
+    "labour": 37.3,
+    "green": 7.1,
+    "nz-first": 7.1,
+    "te-pati-maori": 0.4,
+    "act": 0.6,
+    "conservative": 0.6,
+    "mana": 0.1,
+    "opportunity": 0.9
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "15–19 Sep 2017",
+   "end_date": "2017-09-19",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 46.0,
+    "labour": 37.0,
+    "green": 8.0,
+    "nz-first": 4.9,
+    "te-pati-maori": 0.5,
+    "act": 0.3,
+    "opportunity": 2.3
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "9–13 Sep 2017",
+   "end_date": "2017-09-13",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 40.0,
+    "labour": 44.0,
+    "green": 7.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 0.9,
+    "act": 0.6,
+    "opportunity": 1.6
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "6–11 Sep 2017",
+   "end_date": "2017-09-11",
+   "pollster": "Newshub Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.3,
+    "labour": 37.8,
+    "green": 4.9,
+    "nz-first": 6.0,
+    "te-pati-maori": 1.1,
+    "act": 0.6,
+    "united-future": 0.1,
+    "conservative": 0.3,
+    "mana": 0.1,
+    "opportunity": 1.6
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "28 Aug – 10 Sep 2017",
+   "end_date": "2017-09-10",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 40.0,
+    "labour": 39.5,
+    "green": 9.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 2.0,
+    "act": 0.5,
+    "united-future": 0.0,
+    "conservative": 0.5,
+    "opportunity": 2.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "2–6 Sep 2017",
+   "end_date": "2017-09-06",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 39.0,
+    "labour": 43.0,
+    "green": 5.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 2.0,
+    "act": 0.1,
+    "opportunity": 1.9
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "4–6 Sep 2017",
+   "end_date": "2017-09-06",
+   "pollster": "Newsroom–SSI",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 30.0,
+    "labour": 45.0,
+    "green": 6.0,
+    "nz-first": 11.0,
+    "te-pati-maori": 2.0,
+    "act": 1.0,
+    "opportunity": 2.0
+   },
+   "pollster_key": "Newsroom–SSI"
+  },
+  {
+   "date": "1–5 Sep 2017",
+   "end_date": "2017-09-05",
+   "pollster": "Listener: Bauer Media Insights",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 38.9,
+    "labour": 41.1,
+    "green": 6.7,
+    "nz-first": 8.9,
+    "te-pati-maori": 1.1,
+    "act": 1.1,
+    "opportunity": 2.2
+   },
+   "pollster_key": "Listener: Bauer Media Insights"
+  },
+  {
+   "date": "22–30 Aug 2017",
+   "end_date": "2017-08-30",
+   "pollster": "Newshub Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 43.3,
+    "labour": 39.4,
+    "green": 6.1,
+    "nz-first": 6.6,
+    "te-pati-maori": 1.0,
+    "act": 0.6,
+    "united-future": 0.1,
+    "conservative": 0.3,
+    "mana": 0.0,
+    "opportunity": 1.9
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "26–30 Aug 2017",
+   "end_date": "2017-08-30",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 41.0,
+    "labour": 43.0,
+    "green": 5.0,
+    "nz-first": 8.0,
+    "te-pati-maori": 0.5,
+    "act": 0.3,
+    "opportunity": 0.9
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "12–16 Aug 2017",
+   "end_date": "2017-08-16",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 44.0,
+    "labour": 37.0,
+    "green": 4.3,
+    "nz-first": 10.0,
+    "te-pati-maori": 1.7,
+    "act": 0.4,
+    "united-future": 0.0,
+    "opportunity": 2.1
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "31 Jul – 13 Aug 2017",
+   "end_date": "2017-08-13",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 42.5,
+    "labour": 32.5,
+    "green": 9.0,
+    "nz-first": 11.5,
+    "te-pati-maori": 1.5,
+    "act": 0.5,
+    "united-future": 0.0,
+    "conservative": 0.0,
+    "mana": 0.0,
+    "opportunity": 2.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "2–8 Aug 2017",
+   "end_date": "2017-08-08",
+   "pollster": "Newshub Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 44.4,
+    "labour": 33.1,
+    "green": 8.3,
+    "nz-first": 9.2,
+    "te-pati-maori": 1.5,
+    "act": 0.6,
+    "united-future": 0.1,
+    "conservative": 0.3,
+    "mana": 0.3,
+    "opportunity": 2.0
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "1–2 Aug 2017",
+   "end_date": "2017-08-02",
+   "pollster": "Listener: Bauer Media Insights",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 45.42,
+    "labour": 26.79,
+    "green": 13.98,
+    "nz-first": 9.32,
+    "te-pati-maori": 0.0,
+    "act": 1.17,
+    "united-future": 0.0,
+    "conservative": 0.0,
+    "mana": 0.0,
+    "opportunity": 2.33
+   },
+   "pollster_key": "Listener: Bauer Media Insights"
+  },
+  {
+   "date": "20–28 Jul 2017",
+   "end_date": "2017-07-28",
+   "pollster": "Newshub Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 45.2,
+    "labour": 24.1,
+    "green": 13.0,
+    "nz-first": 13.0,
+    "te-pati-maori": 1.2,
+    "act": 0.5,
+    "united-future": 0.2,
+    "conservative": 0.2,
+    "mana": 0.2,
+    "opportunity": 2.0
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "22–27 Jul 2017",
+   "end_date": "2017-07-27",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.0,
+    "labour": 24.0,
+    "green": 15.0,
+    "nz-first": 11.0,
+    "te-pati-maori": 0.6,
+    "act": 0.3,
+    "united-future": 0.1,
+    "opportunity": 1.5
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "26 Jun – 9 Jul 2017",
+   "end_date": "2017-07-09",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 43.0,
+    "labour": 30.5,
+    "green": 13.5,
+    "nz-first": 8.0,
+    "te-pati-maori": 1.5,
+    "act": 1.0,
+    "united-future": 0.0,
+    "conservative": 0.0,
+    "mana": 0.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "1–5 Jul 2017",
+   "end_date": "2017-07-05",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.0,
+    "labour": 27.0,
+    "green": 11.0,
+    "nz-first": 11.0,
+    "te-pati-maori": 1.8,
+    "act": 0.3,
+    "united-future": 0.2,
+    "conservative": 0.1,
+    "mana": 0.3,
+    "opportunity": 1.1
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "12 Jun 2017",
+   "end_date": "2017-06-12",
+   "pollster": "Newshub Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.4,
+    "labour": 26.4,
+    "green": 12.5,
+    "nz-first": 9.4,
+    "te-pati-maori": 0.7,
+    "act": 0.9,
+    "united-future": 0.3,
+    "conservative": 0.8,
+    "mana": 0.3,
+    "opportunity": 0.8
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "29 May – 11 Jun 2017",
+   "end_date": "2017-06-11",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 46.5,
+    "labour": 25.5,
+    "green": 14.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 1.5,
+    "act": 1.0,
+    "united-future": 0.0,
+    "conservative": 0.0,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "21–31 May 2017",
+   "end_date": "2017-05-31",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 30.0,
+    "green": 9.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 0.6,
+    "act": 0.5,
+    "conservative": 0.1,
+    "opportunity": 1.4
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "19–24 May 2017",
+   "end_date": "2017-05-24",
+   "pollster": "Listener: Bauer Media Insights",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 43.75,
+    "labour": 23.75,
+    "green": 16.25,
+    "nz-first": 10.0,
+    "te-pati-maori": 1.25,
+    "act": 1.25,
+    "united-future": 0.0,
+    "conservative": 1.25,
+    "opportunity": 2.5
+   },
+   "pollster_key": "Listener: Bauer Media Insights"
+  },
+  {
+   "date": "1–14 May 2017",
+   "end_date": "2017-05-14",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 43.0,
+    "labour": 28.5,
+    "green": 14.0,
+    "nz-first": 10.0,
+    "te-pati-maori": 1.5,
+    "act": 0.5,
+    "united-future": 0.0,
+    "conservative": 0.0,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "3–16 Apr 2017",
+   "end_date": "2017-04-16",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 43.0,
+    "labour": 29.5,
+    "green": 13.0,
+    "nz-first": 10.5,
+    "te-pati-maori": 1.0,
+    "act": 1.5,
+    "united-future": 0.0,
+    "conservative": 0.5,
+    "mana": 0.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "18–22 Mar 2017",
+   "end_date": "2017-03-22",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 46.0,
+    "labour": 30.0,
+    "green": 11.0,
+    "nz-first": 8.0,
+    "te-pati-maori": 4.0,
+    "act": 0.4,
+    "conservative": 0.3,
+    "mana": 0.2,
+    "opportunity": 0.4
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "10–19 Mar 2017",
+   "end_date": "2017-03-19",
+   "pollster": "Newshub Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.1,
+    "labour": 30.8,
+    "green": 11.2,
+    "nz-first": 7.6,
+    "te-pati-maori": 0.7,
+    "act": 0.4,
+    "united-future": 0.4,
+    "conservative": 0.4,
+    "mana": 0.0,
+    "opportunity": 0.8
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "27 Feb – 12 Mar 2017",
+   "end_date": "2017-03-12",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 43.5,
+    "labour": 29.5,
+    "green": 14.5,
+    "nz-first": 7.5,
+    "te-pati-maori": 2.0,
+    "act": 0.5,
+    "united-future": 0.5,
+    "conservative": 0.5,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "11–15 Feb 2017",
+   "end_date": "2017-02-15",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 46.0,
+    "labour": 30.0,
+    "green": 11.0,
+    "nz-first": 11.0,
+    "te-pati-maori": 0.7,
+    "act": 0.8,
+    "united-future": 0.3,
+    "conservative": 0.2,
+    "mana": 0.8,
+    "opportunity": 0.0
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "30 Jan – 12 Feb 2017",
+   "end_date": "2017-02-12",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 48.0,
+    "labour": 26.0,
+    "green": 13.0,
+    "nz-first": 8.0,
+    "te-pati-maori": 2.0,
+    "act": 1.0,
+    "united-future": 0.0,
+    "conservative": 0.0,
+    "mana": 0.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "3–16 Jan 2017",
+   "end_date": "2017-01-16",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 46.0,
+    "labour": 27.0,
+    "green": 12.5,
+    "nz-first": 9.0,
+    "te-pati-maori": 2.0,
+    "act": 0.5,
+    "united-future": 0.5,
+    "conservative": 0.5,
+    "mana": 0.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "28 Nov – 11 Dec 2016",
+   "end_date": "2016-12-11",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 45.0,
+    "labour": 28.5,
+    "green": 14.5,
+    "nz-first": 7.5,
+    "te-pati-maori": 1.0,
+    "act": 0.5,
+    "united-future": 0.5,
+    "conservative": 0.5,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "12–23 Nov 2016",
+   "end_date": "2016-11-23",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.0,
+    "labour": 28.0,
+    "green": 11.0,
+    "nz-first": 10.0,
+    "te-pati-maori": 1.0,
+    "conservative": 0.2
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "24 Oct – 20 Nov 2016",
+   "end_date": "2016-11-20",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.5,
+    "labour": 23.0,
+    "green": 14.5,
+    "nz-first": 8.0,
+    "te-pati-maori": 1.5,
+    "act": 1.0,
+    "united-future": 0.5,
+    "conservative": 0.5,
+    "mana": 0.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "10–23 Oct 2016",
+   "end_date": "2016-10-23",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 48.0,
+    "labour": 26.5,
+    "green": 11.5,
+    "nz-first": 10.0,
+    "te-pati-maori": 1.5,
+    "act": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "5–18 Sep 2016",
+   "end_date": "2016-09-18",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 41.5,
+    "labour": 33.5,
+    "green": 12.0,
+    "nz-first": 8.5,
+    "te-pati-maori": 2.0,
+    "act": 1.0,
+    "conservative": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "8–16 Sep 2015",
+   "end_date": "2016-09-16",
+   "pollster": "3 News–Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.3,
+    "labour": 33.0,
+    "green": 10.0,
+    "nz-first": 7.9,
+    "te-pati-maori": 0.5,
+    "act": 0.6,
+    "conservative": 0.5
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "3–7 Sep 2016",
+   "end_date": "2016-09-07",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 48.0,
+    "labour": 26.0,
+    "green": 13.0,
+    "nz-first": 11.0,
+    "te-pati-maori": 2.0,
+    "conservative": 0.3
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "8–21 Aug 2016",
+   "end_date": "2016-08-21",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 46.0,
+    "labour": 25.5,
+    "green": 14.5,
+    "nz-first": 9.5,
+    "te-pati-maori": 1.5,
+    "act": 1.0,
+    "conservative": 1.0,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "22 Jul – 3 Aug 2016",
+   "end_date": "2016-08-03",
+   "pollster": "Newshub Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 45.1,
+    "labour": 32.7,
+    "green": 11.5,
+    "nz-first": 8.1,
+    "te-pati-maori": 1.3,
+    "act": 0.2,
+    "united-future": 0.1,
+    "conservative": 0.5,
+    "mana": 0.4
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "17 Jul 2016",
+   "end_date": "2016-07-17",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.0,
+    "labour": 25.5,
+    "green": 11.5,
+    "nz-first": 7.0,
+    "te-pati-maori": 0.5,
+    "act": 1.0,
+    "conservative": 0.5,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "12 Jun 2016",
+   "end_date": "2016-06-12",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 43.5,
+    "labour": 28.0,
+    "green": 14.5,
+    "nz-first": 9.0,
+    "te-pati-maori": 2.0,
+    "act": 0.5,
+    "conservative": 1.0,
+    "mana": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "28 May – 2 Jun 2016",
+   "end_date": "2016-06-02",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 48.0,
+    "labour": 29.0,
+    "green": 12.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 0.7,
+    "act": 0.3,
+    "conservative": 0.7,
+    "mana": 0.1
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "12–22 May 2016",
+   "end_date": "2016-05-22",
+   "pollster": "Newshub Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.0,
+    "labour": 31.3,
+    "green": 11.1,
+    "nz-first": 7.8,
+    "te-pati-maori": 1.0,
+    "act": 0.4,
+    "conservative": 0.6,
+    "mana": 0.1
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "2–15 May 2016",
+   "end_date": "2016-05-15",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 45.5,
+    "labour": 29.5,
+    "green": 12.0,
+    "nz-first": 9.5,
+    "te-pati-maori": 1.0,
+    "act": 1.0,
+    "united-future": 0.0,
+    "conservative": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "4–17 Apr 2016",
+   "end_date": "2016-04-17",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 42.5,
+    "labour": 26.0,
+    "green": 14.5,
+    "nz-first": 12.5,
+    "te-pati-maori": 1.5,
+    "act": 1.5,
+    "conservative": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "2–6 Apr 2016",
+   "end_date": "2016-04-06",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.0,
+    "labour": 28.0,
+    "green": 10.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 1.1,
+    "act": 0.7,
+    "conservative": 0.3
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "29 Feb – 13 Mar 2016",
+   "end_date": "2016-03-13",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 46.0,
+    "labour": 28.0,
+    "green": 14.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 1.0,
+    "act": 1.0,
+    "conservative": 0.5,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "1–14 Feb 2016",
+   "end_date": "2016-02-14",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 48.0,
+    "labour": 27.0,
+    "green": 14.5,
+    "nz-first": 6.0,
+    "te-pati-maori": 1.0,
+    "act": 0.5,
+    "conservative": 1.0,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "13–17 Feb 2016",
+   "end_date": "2016-02-07",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.0,
+    "labour": 32.0,
+    "green": 8.0,
+    "nz-first": 10.0,
+    "te-pati-maori": 1.1,
+    "act": 0.3,
+    "conservative": 0.6,
+    "mana": 0.3
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "4–17 Jan 2016",
+   "end_date": "2016-01-17",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.0,
+    "labour": 27.5,
+    "green": 14.0,
+    "nz-first": 6.5,
+    "te-pati-maori": 3.0,
+    "act": 0.5,
+    "conservative": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "4–14 Dec 2015",
+   "end_date": "2015-12-14",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.3,
+    "labour": 31.1,
+    "green": 8.2,
+    "nz-first": 5.7,
+    "te-pati-maori": 2.1,
+    "act": 0.8,
+    "united-future": 0.3
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "23 Nov – 6 Dec 2015",
+   "end_date": "2015-12-06",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 28.5,
+    "green": 13.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 1.5,
+    "act": 0.5,
+    "united-future": 0.5,
+    "conservative": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "10–14 Oct 2015",
+   "end_date": "2015-12-04",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.0,
+    "labour": 31.0,
+    "green": 12.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 0.8,
+    "act": 0.2,
+    "conservative": 0.4
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "9–17 Nov 2015",
+   "end_date": "2015-11-17",
+   "pollster": "3 News–Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 46.7,
+    "labour": 32.3,
+    "green": 10.2,
+    "nz-first": 7.5,
+    "te-pati-maori": 1.3,
+    "act": 0.8,
+    "conservative": 0.7,
+    "mana": 0.2
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "26 Oct – 8 Nov 2015",
+   "end_date": "2015-11-08",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 29.5,
+    "green": 12.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 2.0,
+    "act": 0.5,
+    "conservative": 0.5,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "31 Sep – 11 Oct 2015",
+   "end_date": "2015-10-11",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.0,
+    "labour": 29.0,
+    "green": 11.5,
+    "nz-first": 6.5,
+    "te-pati-maori": 0.5,
+    "act": 0.5,
+    "conservative": 0.5,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "31 Aug – 13 Sep 2015",
+   "end_date": "2015-09-13",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 44.5,
+    "labour": 31.0,
+    "green": 15.0,
+    "nz-first": 5.5,
+    "te-pati-maori": 1.5,
+    "act": 0.5,
+    "united-future": 0.5,
+    "conservative": 1.0,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "29 Aug – 2 Sep 2015",
+   "end_date": "2015-09-02",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.0,
+    "labour": 32.0,
+    "green": 12.0,
+    "nz-first": 7.0,
+    "te-pati-maori": 1.2,
+    "act": 0.1,
+    "conservative": 0.1,
+    "mana": 0.2
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "14–24 Aug 2015",
+   "end_date": "2015-08-24",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.8,
+    "labour": 31.0,
+    "green": 9.2,
+    "nz-first": 6.9,
+    "te-pati-maori": 1.0,
+    "act": 0.2,
+    "conservative": 0.6,
+    "mana": 0.2
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "3–16 Aug 2015",
+   "end_date": "2015-08-16",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.5,
+    "labour": 27.0,
+    "green": 11.0,
+    "nz-first": 8.0,
+    "te-pati-maori": 1.5,
+    "act": 0.5,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "15–22 Jul 2015",
+   "end_date": "2015-07-22",
+   "pollster": "3 News–Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.0,
+    "labour": 31.1,
+    "green": 11.4,
+    "nz-first": 8.4,
+    "te-pati-maori": 0.5,
+    "act": 0.5,
+    "united-future": 0.1,
+    "conservative": 0.7,
+    "mana": 0.2
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "29 Jun – 12 Jul 2015",
+   "end_date": "2015-07-12",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 43.0,
+    "labour": 32.0,
+    "green": 13.0,
+    "nz-first": 7.0,
+    "te-pati-maori": 1.5,
+    "act": 0.5,
+    "conservative": 1.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "11–15 Jul 2015",
+   "end_date": "2015-07-05",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.0,
+    "labour": 32.0,
+    "green": 13.0,
+    "nz-first": 7.0,
+    "te-pati-maori": 0.4,
+    "act": 0.4,
+    "mana": 0.5
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "8–21 Jun 2015",
+   "end_date": "2015-06-21",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.5,
+    "labour": 26.0,
+    "green": 13.0,
+    "nz-first": 6.5,
+    "te-pati-maori": 1.0,
+    "act": 1.0,
+    "conservative": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "23–27 May 2015",
+   "end_date": "2015-05-27",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 48.0,
+    "labour": 31.0,
+    "green": 10.0,
+    "nz-first": 7.0,
+    "te-pati-maori": 1.4,
+    "act": 0.1,
+    "conservative": 2.3
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "21–27 May 2015",
+   "end_date": "2015-05-27",
+   "pollster": "3 News–Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 46.4,
+    "labour": 30.4,
+    "green": 11.1,
+    "nz-first": 8.1,
+    "te-pati-maori": 1.1,
+    "act": 0.5,
+    "conservative": 1.9,
+    "mana": 0.1
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "4–17 May 2015",
+   "end_date": "2015-05-17",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 25.5,
+    "green": 10.5,
+    "nz-first": 6.0,
+    "te-pati-maori": 1.0,
+    "act": 1.0,
+    "united-future": 0.0,
+    "conservative": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "17–26 Apr 2015",
+   "end_date": "2015-04-26",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.0,
+    "labour": 28.7,
+    "green": 10.8,
+    "nz-first": 6.1,
+    "te-pati-maori": 0.8,
+    "act": 0.8,
+    "conservative": 1.1
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "6–19 Apr 2015",
+   "end_date": "2015-04-19",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 45.5,
+    "labour": 27.5,
+    "green": 13.5,
+    "nz-first": 8.0,
+    "te-pati-maori": 1.5,
+    "act": 1.0,
+    "conservative": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "11–15 Apr 2015",
+   "end_date": "2015-04-05",
+   "pollster": "One News–Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 31.0,
+    "green": 9.0,
+    "nz-first": 7.0,
+    "te-pati-maori": 0.8,
+    "act": 0.5,
+    "conservative": 1.5,
+    "mana": 1.1
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "2–15 Mar 2015",
+   "end_date": "2015-03-15",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 46.5,
+    "labour": 31.0,
+    "green": 11.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 2.0,
+    "act": 1.0,
+    "conservative": 1.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "14–18 Feb 2015",
+   "end_date": "2015-02-18",
+   "pollster": "One News – Colmar Brunton",
+   "source_url": "https://en.wikipedia.org/wiki/One_News_(New_Zealand)",
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 31.0,
+    "green": 10.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 1.5,
+    "act": 0.3,
+    "united-future": 0.0,
+    "conservative": 1.4,
+    "mana": 0.4
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "2–15 Feb 2015",
+   "end_date": "2015-02-15",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 30.0,
+    "green": 12.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 1.0,
+    "act": 0.0,
+    "united-future": 0.0,
+    "conservative": 1.5,
+    "mana": 0.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "20–28 Jan 2015",
+   "end_date": "2015-01-28",
+   "pollster": "3 News –Reid Research",
+   "source_url": "https://en.wikipedia.org/wiki/3_News",
+   "sample_size": null,
+   "results": {
+    "national": 49.8,
+    "labour": 29.1,
+    "green": 9.3,
+    "nz-first": 6.9,
+    "te-pati-maori": 1.3,
+    "act": 0.4,
+    "united-future": 0.0,
+    "conservative": 2.7,
+    "mana": 0.6
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "5–18 Jan 2015",
+   "end_date": "2015-01-18",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.0,
+    "labour": 26.0,
+    "green": 11.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 1.5,
+    "act": 1.0,
+    "united-future": 0.0,
+    "conservative": 2.0,
+    "mana": 0.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "8–21 Dec 2014",
+   "end_date": "2014-12-21",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.4,
+    "labour": 28.9,
+    "green": 9.5,
+    "nz-first": 5.6,
+    "te-pati-maori": 1.5,
+    "act": 0.4,
+    "united-future": 0.0,
+    "conservative": 2.9,
+    "mana": 0.2
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "24 Nov – 7 Dec 2014",
+   "end_date": "2014-12-07",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 46.0,
+    "labour": 27.0,
+    "green": 12.0,
+    "nz-first": 7.0,
+    "te-pati-maori": 2.0,
+    "act": 1.5,
+    "united-future": 0.0,
+    "conservative": 2.5,
+    "mana": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "27 Oct – 9 Nov 2014",
+   "end_date": "2014-11-09",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.5,
+    "labour": 24.0,
+    "green": 14.5,
+    "nz-first": 6.5,
+    "te-pati-maori": 1.0,
+    "act": 0.5,
+    "united-future": 0.0,
+    "conservative": 2.0,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "29 Sep – 12 Oct 2014",
+   "end_date": "2014-10-12",
+   "pollster": "Roy Morgan Research",
+   "source_url": "https://en.wikipedia.org/wiki/Roy_Morgan_Research",
+   "sample_size": null,
+   "results": {
+    "national": 43.5,
+    "labour": 22.5,
+    "green": 17.5,
+    "nz-first": 7.0,
+    "te-pati-maori": 2.0,
+    "act": 0.5,
+    "united-future": 0.5,
+    "conservative": 5.0,
+    "mana": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "20 Sep 2014",
+   "end_date": "2014-09-20",
+   "pollster": "2014 election result",
+   "source_url": "https://en.wikipedia.org/wiki/2014_New_Zealand_general_election",
+   "sample_size": null,
+   "results": {
+    "national": 47.04,
+    "labour": 25.13,
+    "green": 10.7,
+    "nz-first": 8.66,
+    "te-pati-maori": 1.32,
+    "act": 0.69,
+    "united-future": 0.22,
+    "conservative": 3.97,
+    "mana": 1.42
+   },
+   "is_election_result": true,
+   "pollster_key": "2014 election result"
+  }
+ ],
+ "events": [
+  {
+   "date": "28 Mar 2015",
+   "event": "The Northland by-election is won by New Zealand First leader Winston Peters .",
+   "end_date": "2015-03-28"
+  },
+  {
+   "date": "21 May 2015",
+   "event": "The 2015 Budget is delivered.",
+   "end_date": "2015-05-21"
+  },
+  {
+   "date": "30 May 2015",
+   "event": "James Shaw replaces Russel Norman as the Green Party co-leader.",
+   "end_date": "2015-05-30"
+  },
+  {
+   "date": "22–27 Jun 2015",
+   "event": "The Conservative Party disintegrates as leader Colin Craig and all board members resign. Acting leadership of the party is left unclear.",
+   "end_date": "2015-06-27"
+  },
+  {
+   "date": "4 Feb 2016",
+   "event": "The Trans-Pacific Partnership agreement is signed by the New Zealand government and 12 other partner countries.",
+   "end_date": "2016-02-04"
+  },
+  {
+   "date": "26 May 2016",
+   "event": "The 2016 Budget is delivered.",
+   "end_date": "2016-05-26"
+  },
+  {
+   "date": "31 May 2016",
+   "event": "The Labour and Green parties undertake a memorandum of understanding .",
+   "end_date": "2016-05-31"
+  },
+  {
+   "date": "14 Nov 2016",
+   "event": "A 7.8 magnitude earthquake hits the coastal town of Kaikōura .",
+   "end_date": "2016-11-14"
+  },
+  {
+   "date": "Nov 2016",
+   "event": "The Opportunities Party is inaugurated by Gareth Morgan .",
+   "end_date": "2016-11-30"
+  },
+  {
+   "date": "3 Dec 2016",
+   "event": "Labour's Michael Wood wins the Mount Roskill by-election .",
+   "end_date": "2016-12-03"
+  },
+  {
+   "date": "5 Dec 2016",
+   "event": "John Key announces that he will resign as Prime Minister of New Zealand , effective 12 December.",
+   "end_date": "2016-12-05"
+  },
+  {
+   "date": "12 Dec 2016",
+   "event": "Bill English replaces John Key as Prime Minister of New Zealand and Leader of the National Party. Paula Bennett becomes both Deputy Prime Minister and Deputy Leader.",
+   "end_date": "2016-12-12"
+  },
+  {
+   "date": "1 Feb 2017",
+   "event": "Prime Minister Bill English announces that the election will take place on 23 September 2017.",
+   "end_date": "2017-02-01"
+  },
+  {
+   "date": "25 Feb 2017",
+   "event": "Labour's Jacinda Ardern wins the Mount Albert by-election .",
+   "end_date": "2017-02-25"
+  },
+  {
+   "date": "1 Mar 2017",
+   "event": "Annette King steps down as Labour Party Deputy Leader and announces her retirement from Parliament, effective September. Mount Albert MP Jacinda Ardern is nominated as her successor and is confirmed six days later with the unanimous support of Labour's caucus.",
+   "end_date": "2017-03-01"
+  },
+  {
+   "date": "6 Mar 2017",
+   "event": "The Opportunities Party is registered by the Electoral Commission.",
+   "end_date": "2017-03-06"
+  },
+  {
+   "date": "25 May 2017",
+   "event": "The 2017 budget is delivered.",
+   "end_date": "2017-05-25"
+  },
+  {
+   "date": "21 Jun 2017",
+   "event": "National MP Todd Barclay announces he will not seek re-election after it was revealed that he secretly recorded a staff member's conversations without her consent. Police re-open their investigation five days later, after Bill English stated that Barclay had admitted to him that he made the recording.",
+   "end_date": "2017-06-21"
+  },
+  {
+   "date": "16 Jul 2017",
+   "event": "Green Party co-leader Metiria Turei admits to not disclosing to Work and Income New Zealand that she was accepting rent from flatmates while on the Domestic Purposes Benefit in the early 1990s.",
+   "end_date": "2017-07-16"
+  },
+  {
+   "date": "1 Aug 2017",
+   "event": "Labour Party leader Andrew Little resigns as Leader of the Labour Party following consecutive poll results that show Labour with low support. Jacinda Ardern is confirmed as Leader shortly after while Kelvin Davis assumes the role of Deputy Leader.",
+   "end_date": "2017-08-01"
+  },
+  {
+   "date": "3 Aug 2017",
+   "event": "Green Party co-leader Metiria Turei admits to registering a false residential address to vote for a friend who was running in the Mount Albert electorate in 1993. The controversy leads Green Party MPs David Clendon and Kennedy Graham to withdraw from the party list four days later.",
+   "end_date": "2017-08-03"
+  },
+  {
+   "date": "9 Aug 2017",
+   "event": "Green Party co-leader Metiria Turei resigns as co-leader and from the party list following her admission of benefit fraud.",
+   "end_date": "2017-08-09"
+  },
+  {
+   "date": "21 Aug 2017",
+   "event": "United Future leader and Minister of Internal Affairs Peter Dunne announces his retirement from politics. Damian Light (candidate for Botany ) is appointed leader 2 days later.",
+   "end_date": "2017-08-21"
+  },
+  {
+   "date": "27 Aug 2017",
+   "event": "Controversy arises after a leak reveals that NZ First leader Winston Peters was overpaid in his superannuation payments for years.",
+   "end_date": "2017-08-27"
+  },
+  {
+   "date": "11 Sep 2017",
+   "event": "Advance voting for the election begins. The Electoral Commission predicts up to 50% of voters will cast their vote before election day (up from 30% in 2014).",
+   "end_date": "2017-09-11"
+  },
+  {
+   "date": "23 Sep 2017",
+   "event": "Election day",
+   "end_date": "2017-09-23"
+  }
+ ]
+}

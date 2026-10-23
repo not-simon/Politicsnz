@@ -1,0 +1,953 @@
+{
+ "title": "Opinion polls (party vote) for the 2020 New Zealand general election",
+ "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2020_New_Zealand_general_election",
+ "source_revid": 1358476490,
+ "retrieved": "2026-10-23",
+ "election_date": "2020-10-17",
+ "notes": "Parsed from Wikipedia by tools/polls_update.py. Rows newest first; 'end_date' = last fieldwork day where known (2011/2014 tables give no sample sizes). 'result' = official party vote from data/elections/<year>.json.",
+ "count": 46,
+ "result": {
+  "labour": 50.01,
+  "national": 25.58,
+  "green": 7.86,
+  "act": 7.59,
+  "nz-first": 2.6,
+  "opportunity": 1.51,
+  "conservative": 1.48,
+  "te-pati-maori": 1.17,
+  "advance-nz": 0.98,
+  "legalise-cannabis": 0.46,
+  "one-party": 0.28,
+  "vision-nz": 0.15,
+  "nz-outdoors-freedom": 0.11,
+  "tea-party": 0.08,
+  "sustainable-nz": 0.07,
+  "social-credit": 0.05,
+  "heartland": 0.03
+ },
+ "polls": [
+  {
+   "date": "17 Oct 2020",
+   "end_date": "2020-10-17",
+   "pollster": "2020 election result",
+   "source_url": "https://en.wikipedia.org/wiki/2020_New_Zealand_general_election",
+   "sample_size": null,
+   "results": {
+    "national": 25.6,
+    "labour": 50.0,
+    "nz-first": 2.6,
+    "green": 7.9,
+    "act": 7.6,
+    "opportunity": 1.5,
+    "te-pati-maori": 1.2,
+    "conservative": 1.5,
+    "advance-nz": 1.0
+   },
+   "is_election_result": true,
+   "pollster_key": "2020 election result"
+  },
+  {
+   "date": "8–15 Oct 2020",
+   "end_date": "2020-10-15",
+   "pollster": "Newshub–Reid Research",
+   "source_url": "https://web.archive.org/web/20201017084650/https://www.newshub.co.nz/home/politics/2020/10/nz-election-2020-newshub-reid-research-poll-shows-labour-with-slim-majority-as-national-makes-slight-gain.html",
+   "sample_size": 1000,
+   "results": {
+    "national": 31.1,
+    "labour": 45.8,
+    "nz-first": 3.5,
+    "green": 6.3,
+    "act": 7.4,
+    "opportunity": 1.3,
+    "te-pati-maori": 0.6,
+    "conservative": 1.7,
+    "advance-nz": 0.3
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "10–14 Oct 2020",
+   "end_date": "2020-10-14",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://static.colmarbrunton.co.nz/wp-content/uploads/2019/05/10-14-October-2020_1-NEWS-Colmar-Brunton-Poll-report-1.pdf",
+   "sample_size": 1005,
+   "results": {
+    "national": 31.0,
+    "labour": 46.0,
+    "nz-first": 2.6,
+    "green": 8.0,
+    "act": 8.0,
+    "opportunity": 1.1,
+    "te-pati-maori": 0.6,
+    "conservative": 1.5,
+    "advance-nz": 0.9
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "3–7 Oct 2020",
+   "end_date": "2020-10-07",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://static.colmarbrunton.co.nz/wp-content/uploads/2019/05/3-7-October-2020_1-NEWS-Colmar-Brunton-Poll-report.pdf",
+   "sample_size": 1007,
+   "results": {
+    "national": 32.0,
+    "labour": 47.0,
+    "nz-first": 2.4,
+    "green": 6.0,
+    "act": 8.0,
+    "opportunity": 1.8,
+    "te-pati-maori": 0.2,
+    "conservative": 1.3,
+    "advance-nz": 0.9
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "Sep 2020",
+   "end_date": "2020-09-30",
+   "pollster": "Roy Morgan Research",
+   "source_url": "https://www.roymorgan.com/findings/8543-nz-national-voting-intention-september-2020-202010142349",
+   "sample_size": 911,
+   "results": {
+    "national": 28.5,
+    "labour": 47.5,
+    "nz-first": 2.5,
+    "green": 9.5,
+    "act": 7.0,
+    "opportunity": 1.5,
+    "te-pati-maori": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "23–27 Sep 2020",
+   "end_date": "2020-09-27",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://static.colmarbrunton.co.nz/wp-content/uploads/2019/05/PRELIM_23-27-September-2020_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1005,
+   "results": {
+    "national": 33.0,
+    "labour": 47.0,
+    "nz-first": 1.4,
+    "green": 7.0,
+    "act": 8.0,
+    "opportunity": 1.0,
+    "te-pati-maori": 0.8,
+    "conservative": 1.4,
+    "advance-nz": 0.6
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "16–23 Sep 2020",
+   "end_date": "2020-09-23",
+   "pollster": "Newshub–Reid Research",
+   "source_url": "https://web.archive.org/web/20201001152335/https://www.newshub.co.nz/home/politics/2020/09/nz-election-2020-newshub-reid-research-poll-shows-labour-governing-alone-as-national-languishes-in-the-20s.html",
+   "sample_size": 1000,
+   "results": {
+    "national": 29.6,
+    "labour": 50.1,
+    "nz-first": 1.9,
+    "green": 6.5,
+    "act": 6.3,
+    "opportunity": 0.9,
+    "te-pati-maori": 1.5,
+    "conservative": 2.1
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "17–21 Sep 2020",
+   "end_date": "2020-09-21",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://static.colmarbrunton.co.nz/wp-content/uploads/2019/05/PRELIM_17-21-September-2020_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1008,
+   "results": {
+    "national": 31.0,
+    "labour": 48.0,
+    "nz-first": 2.4,
+    "green": 6.0,
+    "act": 7.0,
+    "opportunity": 1.1,
+    "te-pati-maori": 0.9,
+    "conservative": 1.6,
+    "advance-nz": 0.8
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "Aug 2020",
+   "end_date": "2020-08-31",
+   "pollster": "Roy Morgan Research",
+   "source_url": "https://www.roymorgan.com/findings/8509-nz-national-voting-intention-august-2020-202008310343",
+   "sample_size": 897,
+   "results": {
+    "national": 28.5,
+    "labour": 48.0,
+    "nz-first": 2.5,
+    "green": 11.5,
+    "act": 6.0,
+    "opportunity": 1.0,
+    "te-pati-maori": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "Jul 2020",
+   "end_date": "2020-07-31",
+   "pollster": "Roy Morgan Research",
+   "source_url": "https://www.roymorgan.com/findings/8489-nz-national%20-voting-intention-july-2020-202008070802",
+   "sample_size": 899,
+   "results": {
+    "national": 26.5,
+    "labour": 53.5,
+    "nz-first": 1.5,
+    "green": 8.0,
+    "act": 6.5,
+    "opportunity": 1.5,
+    "te-pati-maori": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "25–29 Jul 2020",
+   "end_date": "2020-07-29",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://static.colmarbrunton.co.nz/wp-content/uploads/2019/05/Prelim_25-29-July-2020_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1004,
+   "results": {
+    "national": 32.0,
+    "labour": 53.0,
+    "nz-first": 2.0,
+    "green": 5.0,
+    "act": 4.8,
+    "opportunity": 0.1,
+    "te-pati-maori": 1.0,
+    "conservative": 1.2
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "16–24 Jul 2020",
+   "end_date": "2020-07-24",
+   "pollster": "Newshub–Reid Research",
+   "source_url": "https://web.archive.org/web/20200726060803/https://www.newshub.co.nz/home/politics/2020/07/newshub-reid-research-poll-the-destruction-of-national-under-judith-collins-as-party-sinks-to-25-percent.html",
+   "sample_size": 1000,
+   "results": {
+    "national": 25.1,
+    "labour": 60.9,
+    "nz-first": 2.0,
+    "green": 5.7,
+    "act": 3.3,
+    "opportunity": 0.4,
+    "te-pati-maori": 0.4,
+    "conservative": 0.9
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "Jun 2020",
+   "end_date": "2020-06-30",
+   "pollster": "Roy Morgan Research",
+   "source_url": "https://www.roymorgan.com/findings/8469-nz-national%20-voting-intention-june-2020-202007130649",
+   "sample_size": 879,
+   "results": {
+    "national": 27.0,
+    "labour": 54.5,
+    "nz-first": 1.5,
+    "green": 9.0,
+    "act": 5.0,
+    "opportunity": 1.5,
+    "te-pati-maori": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "20–24 Jun 2020",
+   "end_date": "2020-06-24",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://static.colmarbrunton.co.nz/wp-content/uploads/2019/05/V2-Prelim_20-24-June-2020_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1007,
+   "results": {
+    "national": 38.0,
+    "labour": 50.0,
+    "nz-first": 1.8,
+    "green": 6.0,
+    "act": 3.1,
+    "opportunity": 0.5,
+    "te-pati-maori": 0.9,
+    "conservative": 0.7
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "27 Apr – 24 May 2020",
+   "end_date": "2020-05-24",
+   "pollster": "Roy Morgan Research",
+   "source_url": "http://www.roymorgan.com/findings/8429-nz-national%20-voting-intention-may-2020-202006010651",
+   "sample_size": 894,
+   "results": {
+    "national": 26.5,
+    "labour": 56.5,
+    "nz-first": 2.5,
+    "green": 7.0,
+    "act": 3.5,
+    "opportunity": 1.0,
+    "te-pati-maori": 1.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "16–20 May 2020",
+   "end_date": "2020-05-20",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://static.colmarbrunton.co.nz/wp-content/uploads/2019/05/Prelim_16-20-May-2020_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1003,
+   "results": {
+    "national": 29.0,
+    "labour": 59.0,
+    "nz-first": 2.9,
+    "green": 4.7,
+    "act": 2.2,
+    "opportunity": 0.5,
+    "te-pati-maori": 1.2,
+    "conservative": 0.4
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "8–16 May 2020",
+   "end_date": "2020-05-16",
+   "pollster": "Newshub–Reid Research",
+   "source_url": "https://web.archive.org/web/20200521224140/https://www.newshub.co.nz/home/politics/2020/05/newshub-reid-research-poll-jacinda-ardern-goes-stratospheric-simon-bridges-is-annihilated.html",
+   "sample_size": 1000,
+   "results": {
+    "national": 30.6,
+    "labour": 56.5,
+    "nz-first": 2.7,
+    "green": 5.5,
+    "act": 1.8,
+    "opportunity": 0.1,
+    "te-pati-maori": 0.9,
+    "conservative": 1.0
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "Apr 2020",
+   "end_date": "2020-04-30",
+   "pollster": "Roy Morgan Research",
+   "source_url": "http://www.roymorgan.com/findings/8429-nz-national%20-voting-intention-may-2020-202006010651",
+   "sample_size": null,
+   "results": {
+    "national": 30.5,
+    "labour": 55.0,
+    "nz-first": 2.5,
+    "green": 7.0,
+    "act": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "Mar 2020",
+   "end_date": "2020-03-31",
+   "pollster": "Roy Morgan Research",
+   "source_url": "http://www.roymorgan.com/findings/8429-nz-national%20-voting-intention-may-2020-202006010651",
+   "sample_size": null,
+   "results": {
+    "national": 37.0,
+    "labour": 42.5,
+    "nz-first": 3.0,
+    "green": 11.5,
+    "act": 3.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "Feb 2020",
+   "end_date": "2020-02-29",
+   "pollster": "Roy Morgan Research",
+   "source_url": "http://www.roymorgan.com/findings/8429-nz-national%20-voting-intention-may-2020-202006010651",
+   "sample_size": null,
+   "results": {
+    "national": 37.0,
+    "labour": 40.5,
+    "nz-first": 5.0,
+    "green": 10.5,
+    "act": 3.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "8–12 Feb 2020",
+   "end_date": "2020-02-12",
+   "pollster": "1 News–Colmar Brunton [ permanent dead link ]",
+   "source_url": "https://static.colmarbrunton.co.nz/wp-content/uploads/2019/05/8-12-Feb-2020_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1004,
+   "results": {
+    "national": 46.0,
+    "labour": 41.0,
+    "nz-first": 3.3,
+    "green": 5.0,
+    "act": 1.7,
+    "opportunity": 0.1,
+    "te-pati-maori": 1.1,
+    "conservative": 0.8
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "23 Jan – 1 Feb 2020",
+   "end_date": "2020-02-01",
+   "pollster": "Newshub–Reid Research",
+   "source_url": "https://web.archive.org/web/20200209105821/https://www.newshub.co.nz/home/politics/2020/02/national-and-labour-neck-and-neck-in-new-newshub-reid-research-poll.html",
+   "sample_size": 1000,
+   "results": {
+    "national": 43.3,
+    "labour": 42.5,
+    "nz-first": 3.6,
+    "green": 5.6,
+    "act": 1.8,
+    "opportunity": 0.6,
+    "te-pati-maori": 0.9,
+    "conservative": 0.7
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "Jan 2020",
+   "end_date": "2020-01-31",
+   "pollster": "Roy Morgan Research",
+   "source_url": "http://www.roymorgan.com/findings/8429-nz-national%20-voting-intention-may-2020-202006010651",
+   "sample_size": null,
+   "results": {
+    "national": 40.0,
+    "labour": 40.0,
+    "nz-first": 2.5,
+    "green": 10.5,
+    "act": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "23–27 Nov 2019",
+   "end_date": "2019-11-27",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://static.colmarbrunton.co.nz/wp-content/uploads/2019/05/Prelim_23-27-Nov-2019_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1006,
+   "results": {
+    "national": 46.0,
+    "labour": 39.0,
+    "nz-first": 4.3,
+    "green": 7.0,
+    "act": 1.6,
+    "opportunity": 0.9,
+    "te-pati-maori": 0.5,
+    "conservative": 0.8
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "7–11 Nov 2019",
+   "end_date": "2019-11-11",
+   "pollster": "Stuff–YouGov",
+   "source_url": "https://www.stuff.co.nz/national/politics/117662933/labour-ahead-while-national-dips-below-40-in-new-stuff-poll",
+   "sample_size": 1005,
+   "results": {
+    "national": 38.0,
+    "labour": 41.0,
+    "nz-first": 8.0,
+    "green": 8.0,
+    "act": 2.0,
+    "opportunity": 1.0,
+    "te-pati-maori": 1.0
+   },
+   "pollster_key": "Stuff–YouGov"
+  },
+  {
+   "date": "5–9 Oct 2019",
+   "end_date": "2019-10-14",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://static.colmarbrunton.co.nz/wp-content/uploads/2019/05/Prelim_05-09-Oct-2019_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1008,
+   "results": {
+    "national": 47.0,
+    "labour": 40.0,
+    "nz-first": 4.2,
+    "green": 7.0,
+    "act": 0.9,
+    "opportunity": 0.5,
+    "te-pati-maori": 0.8,
+    "conservative": 0.4
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "2–9 Oct 2019",
+   "end_date": "2019-10-09",
+   "pollster": "Newshub–Reid Research",
+   "source_url": "https://web.archive.org/web/20191013062323/https://www.newshub.co.nz/home/politics/2019/10/jacinda-ardern-labour-take-massive-tumble-in-new-newshub-reid-research-poll.html",
+   "sample_size": 1000,
+   "results": {
+    "national": 43.9,
+    "labour": 41.6,
+    "nz-first": 4.0,
+    "green": 6.3,
+    "act": 1.4,
+    "opportunity": 1.1,
+    "te-pati-maori": 0.7,
+    "conservative": 1.0
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "20–24 Jul 2019",
+   "end_date": "2019-07-24",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://www.colmarbrunton.co.nz/wp-content/uploads/2019/07/Prelim_20-24-July-2019_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1003,
+   "results": {
+    "national": 45.0,
+    "labour": 43.0,
+    "nz-first": 3.3,
+    "green": 6.0,
+    "act": 1.0,
+    "opportunity": 0.5,
+    "te-pati-maori": 1.1,
+    "conservative": 0.8
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "4–8 Jun 2019",
+   "end_date": "2019-06-08",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://www.colmarbrunton.co.nz/wp-content/uploads/2019/06/Prelim_4-8-June-2019_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1002,
+   "results": {
+    "national": 44.0,
+    "labour": 42.0,
+    "nz-first": 5.0,
+    "green": 6.0,
+    "act": 0.7,
+    "opportunity": 0.5,
+    "te-pati-maori": 0.5,
+    "conservative": 0.6
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "30 May – 7 Jun 2019",
+   "end_date": "2019-06-07",
+   "pollster": "Newshub–Reid Research",
+   "source_url": "https://web.archive.org/web/20190609071305/https://www.newshub.co.nz/home/politics/2019/06/poll-national-nosedives-into-dreaded-30s-could-trigger-leadership-coup.html",
+   "sample_size": 1000,
+   "results": {
+    "national": 37.4,
+    "labour": 50.8,
+    "nz-first": 2.8,
+    "green": 6.2,
+    "act": 0.8,
+    "opportunity": 0.1,
+    "te-pati-maori": 0.5,
+    "conservative": 1.0
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "6–10 Apr 2019",
+   "end_date": "2019-04-10",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://www.colmarbrunton.co.nz/wp-content/uploads/2019/04/6-10-April-2019_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1009,
+   "results": {
+    "national": 40.0,
+    "labour": 48.0,
+    "nz-first": 4.3,
+    "green": 6.0,
+    "act": 0.7,
+    "te-pati-maori": 0.5,
+    "conservative": 0.4
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "15–23 Mar 2019",
+   "end_date": "2019-03-23",
+   "pollster": "Business NZ–Reid Research",
+   "source_url": "https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=12221107",
+   "sample_size": 1000,
+   "results": {
+    "national": 41.3,
+    "labour": 49.6,
+    "nz-first": 2.3,
+    "green": 3.9
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "9–13 Feb 2019",
+   "end_date": "2019-02-13",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://www.colmarbrunton.co.nz/wp-content/uploads/2019/02/Prelim_9-13-February-2019_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1006,
+   "results": {
+    "national": 42.0,
+    "labour": 45.0,
+    "nz-first": 3.0,
+    "green": 6.0,
+    "act": 0.9,
+    "opportunity": 0.6,
+    "te-pati-maori": 1.4,
+    "conservative": 0.2
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "24 Jan – 2 Feb 2019",
+   "end_date": "2019-02-02",
+   "pollster": "Newshub–Reid Research",
+   "source_url": "https://web.archive.org/web/20190211111431/https://www.newshub.co.nz/home/politics/2019/02/national-plunges-to-worst-result-in-over-a-decade-newshub-poll.html",
+   "sample_size": 1000,
+   "results": {
+    "national": 41.6,
+    "labour": 47.5,
+    "nz-first": 2.9,
+    "green": 5.1,
+    "act": 0.4,
+    "opportunity": 0.5,
+    "te-pati-maori": 0.8,
+    "conservative": 1.1
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "24–28 Nov 2018",
+   "end_date": "2018-11-28",
+   "pollster": "1 News–Colmar Brunton",
+   "source_url": "https://www.colmarbrunton.co.nz/wp-content/uploads/2018/12/Prelim_24-28-November-2018_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1008,
+   "results": {
+    "national": 46.0,
+    "labour": 43.0,
+    "nz-first": 4.0,
+    "green": 5.0,
+    "act": 0.6,
+    "opportunity": 0.3,
+    "te-pati-maori": 0.9
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "15–19 Oct 2018",
+   "end_date": "2018-10-19",
+   "pollster": "1 News–Colmar Brunton [ permanent dead link ]",
+   "source_url": "http://www.colmarbrunton.co.nz/wp-content/uploads/2018/10/Prelim_15-19-October-2018_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1006,
+   "results": {
+    "national": 43.0,
+    "labour": 45.0,
+    "nz-first": 5.0,
+    "green": 7.0,
+    "act": 0.3,
+    "opportunity": 0.3,
+    "te-pati-maori": 0.6,
+    "conservative": 0.3
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "28 Jul – 1 Aug 2018",
+   "end_date": "2018-08-01",
+   "pollster": "1 News–Colmar Brunton Archived 26 August 2018 at the Wayback Machine",
+   "source_url": "http://www.colmarbrunton.co.nz/wp-content/uploads/2018/08/Prelim_28-Jul-1-Aug-2018_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1007,
+   "results": {
+    "national": 45.0,
+    "labour": 42.0,
+    "nz-first": 5.0,
+    "green": 6.0,
+    "act": 1.1,
+    "opportunity": 0.4,
+    "te-pati-maori": 0.9,
+    "conservative": 0.1
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "17–24 May 2018",
+   "end_date": "2018-05-27",
+   "pollster": "Newshub–Reid Research",
+   "source_url": "https://web.archive.org/web/20180528012959/http://www.newshub.co.nz/home/politics/2018/05/simon-bridges-failing-to-connect-with-voters-newshub-poll.html",
+   "sample_size": 1000,
+   "results": {
+    "national": 45.1,
+    "labour": 42.6,
+    "nz-first": 2.4,
+    "green": 5.7,
+    "act": 0.2,
+    "opportunity": 1.6,
+    "te-pati-maori": 0.9,
+    "conservative": 1.1
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "19–23 May 2018",
+   "end_date": "2018-05-23",
+   "pollster": "1 News–Colmar Brunton [ permanent dead link ]",
+   "source_url": "http://www.colmarbrunton.co.nz/wp-content/uploads/2018/05/Prelim_19-23-May-2018_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1007,
+   "results": {
+    "national": 45.0,
+    "labour": 43.0,
+    "nz-first": 4.2,
+    "green": 5.0,
+    "act": 0.7,
+    "opportunity": 0.5,
+    "te-pati-maori": 0.9,
+    "conservative": 0.2
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "7–11 Apr 2018",
+   "end_date": "2018-04-11",
+   "pollster": "1 News–Colmar Brunton [ permanent dead link ]",
+   "source_url": "http://www.colmarbrunton.co.nz/wp-content/uploads/2018/04/Prelim_7-11-Apr-2018_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1007,
+   "results": {
+    "national": 44.0,
+    "labour": 43.0,
+    "nz-first": 5.0,
+    "green": 6.0,
+    "act": 0.3,
+    "opportunity": 0.4,
+    "te-pati-maori": 1.2,
+    "conservative": 0.2
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "10–14 Feb 2018",
+   "end_date": "2018-02-14",
+   "pollster": "1 News–Colmar Brunton [ permanent dead link ]",
+   "source_url": "http://www.colmarbrunton.co.nz/wp-content/uploads/2018/02/Prelim_10-14-Feb-2018_1-NEWS-Colmar-Brunton-Poll-report-.pdf",
+   "sample_size": 1007,
+   "results": {
+    "national": 43.0,
+    "labour": 48.0,
+    "nz-first": 2.6,
+    "green": 5.0,
+    "act": 0.5,
+    "opportunity": 0.6,
+    "te-pati-maori": 0.7,
+    "conservative": 0.1
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "18–28 Jan 2018",
+   "end_date": "2018-01-28",
+   "pollster": "Newshub–Reid Research",
+   "source_url": "https://web.archive.org/web/20180131084225/http://www.newshub.co.nz/home/politics/2018/01/newshub-poll-labour-soars-to-popularity-not-seen-for-a-decade.html",
+   "sample_size": 1000,
+   "results": {
+    "national": 44.5,
+    "labour": 42.3,
+    "nz-first": 3.8,
+    "green": 6.0,
+    "act": 0.2,
+    "opportunity": 1.4,
+    "te-pati-maori": 0.8,
+    "conservative": 0.3
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "2–28 Jan 2018",
+   "end_date": "2018-01-28",
+   "pollster": "Roy Morgan Research",
+   "source_url": "https://www.roymorgan.com/findings/8469-nz-national%20-voting-intention-june-2020-202007130649",
+   "sample_size": 1000,
+   "results": {
+    "national": 39.0,
+    "labour": 42.5,
+    "nz-first": 6.0,
+    "green": 9.0,
+    "act": 0.5,
+    "opportunity": 1.5,
+    "te-pati-maori": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "27 Nov – 10 Dec 2017",
+   "end_date": "2017-12-10",
+   "pollster": "Roy Morgan Research",
+   "source_url": "http://www.roymorgan.com/findings/8429-nz-national%20-voting-intention-may-2020-202006010651",
+   "sample_size": null,
+   "results": {
+    "national": 40.5,
+    "labour": 37.0,
+    "nz-first": 8.0,
+    "green": 10.0,
+    "act": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "29 Nov – 5 Dec 2017",
+   "end_date": "2017-12-05",
+   "pollster": "1 News–Colmar Brunton [ permanent dead link ]",
+   "source_url": "http://www.colmarbrunton.co.nz/wp-content/uploads/2017/12/Website_QA-Colmar-Brunton-Poll-report-Dec-2017.pdf",
+   "sample_size": 1007,
+   "results": {
+    "national": 46.0,
+    "labour": 39.0,
+    "nz-first": 5.0,
+    "green": 7.0,
+    "act": 0.1,
+    "opportunity": 1.2,
+    "te-pati-maori": 0.9
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "30 Oct – 12 Nov 2017",
+   "end_date": "2017-11-12",
+   "pollster": "Roy Morgan Research Archived 6 July 2018 at the Wayback Machine",
+   "source_url": "http://www.roymorgan.com/findings/7419-roy-morgan-new-zealand-voting-intention-november-2017-201711220740",
+   "sample_size": 887,
+   "results": {
+    "national": 40.5,
+    "labour": 39.5,
+    "nz-first": 5.0,
+    "green": 10.0,
+    "act": 0.5,
+    "opportunity": 2.0,
+    "te-pati-maori": 1.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "2–15 Oct 2017",
+   "end_date": "2017-10-15",
+   "pollster": "Roy Morgan Research Archived 23 October 2021 at the Wayback Machine",
+   "source_url": "http://www.roymorgan.com/findings/7379-roy-morgan-new-zealand-voting-intention-october-2017-201710270443",
+   "sample_size": 894,
+   "results": {
+    "national": 46.0,
+    "labour": 31.0,
+    "nz-first": 6.5,
+    "green": 11.0,
+    "act": 0.5,
+    "opportunity": 2.0,
+    "te-pati-maori": 1.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "23 Sep 2017",
+   "end_date": "2017-09-23",
+   "pollster": "2017 election result",
+   "source_url": "https://en.wikipedia.org/wiki/2017_New_Zealand_general_election",
+   "sample_size": null,
+   "results": {
+    "national": 44.4,
+    "labour": 36.9,
+    "nz-first": 7.2,
+    "green": 6.3,
+    "act": 0.5,
+    "opportunity": 2.4,
+    "te-pati-maori": 1.2,
+    "conservative": 0.2
+   },
+   "is_election_result": true,
+   "pollster_key": "2017 election result"
+  }
+ ],
+ "events": [
+  {
+   "date": "3 Oct 2020",
+   "event": "Advance voting for the election begins. The Electoral Commission estimates 60% of voters will cast their vote before election day.",
+   "end_date": "2020-10-03"
+  },
+  {
+   "date": "17 Aug 2020",
+   "event": "Jacinda Ardern announces the election is postponed to 17 October 2020, over concerns relating to a recent rise in cases of COVID-19 .",
+   "end_date": "2020-08-17"
+  },
+  {
+   "date": "14 Jul 2020",
+   "event": "Todd Muller resigns and Judith Collins is elected as leader of the National Party .",
+   "end_date": "2020-07-14"
+  },
+  {
+   "date": "22 May 2020",
+   "event": "Todd Muller is elected leader of the National Party, replacing Simon Bridges .",
+   "end_date": "2020-05-22"
+  },
+  {
+   "date": "14 May 2020",
+   "event": "2020 Budget is delivered.",
+   "end_date": "2020-05-14"
+  },
+  {
+   "date": "25 Mar 2020",
+   "event": "Nationwide Level 4 restrictions are implemented due to the COVID-19 pandemic .",
+   "end_date": "2020-03-25"
+  },
+  {
+   "date": "28 Jan 2020",
+   "event": "Prime Minister Jacinda Ardern announces that the election will take place on 19 September 2020.",
+   "end_date": "2020-01-28"
+  },
+  {
+   "date": "30 May 2019",
+   "event": "The 2019 Budget is delivered.",
+   "end_date": "2019-05-30"
+  },
+  {
+   "date": "15 Mar 2019",
+   "event": "Christchurch shootings targeting mosques kill 51 people and injure a further 49. Terror threat level is raised from low to high.",
+   "end_date": "2019-03-15"
+  },
+  {
+   "date": "2 Aug 2018",
+   "event": "Ardern returns as Prime Minister after six weeks of maternity leave.",
+   "end_date": "2018-08-02"
+  },
+  {
+   "date": "21 Jun 2018",
+   "event": "Ardern gives birth. Winston Peters becomes Acting Prime Minister.",
+   "end_date": "2018-06-21"
+  },
+  {
+   "date": "17 May 2018",
+   "event": "The 2018 Budget is delivered.",
+   "end_date": "2018-05-17"
+  },
+  {
+   "date": "8 Apr 2018",
+   "event": "Marama Davidson is elected co-leader of the Green Party.",
+   "end_date": "2018-04-08"
+  },
+  {
+   "date": "27 Feb 2018",
+   "event": "Simon Bridges is elected leader of the National Party.",
+   "end_date": "2018-02-27"
+  },
+  {
+   "date": "13 Feb 2018",
+   "event": "Bill English announces he will stand down as National leader and resign from Parliament.",
+   "end_date": "2018-02-13"
+  },
+  {
+   "date": "26 Oct 2017",
+   "event": "Jacinda Ardern is sworn in as Prime Minister of New Zealand .",
+   "end_date": "2017-10-26"
+  }
+ ]
+}

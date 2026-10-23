@@ -1,0 +1,2404 @@
+{
+ "title": "Opinion polls (party vote) for the 2011 New Zealand general election",
+ "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2011_New_Zealand_general_election",
+ "source_revid": 1379490239,
+ "retrieved": "2026-10-23",
+ "election_date": "2011-11-26",
+ "notes": "Parsed from Wikipedia by tools/polls_update.py. Rows newest first; 'end_date' = last fieldwork day where known (2011/2014 tables give no sample sizes). 'result' = official party vote from data/elections/<year>.json.",
+ "count": 127,
+ "result": {
+  "national": 47.31,
+  "labour": 27.48,
+  "green": 11.06,
+  "nz-first": 6.59,
+  "te-pati-maori": 1.43,
+  "mana": 1.08,
+  "act": 1.07,
+  "united-future": 0.6,
+  "conservative": 2.65,
+  "legalise-cannabis": 0.52,
+  "social-credit": 0.08,
+  "libertarianz": 0.07,
+  "alliance": 0.05
+ },
+ "polls": [
+  {
+   "date": "26 Nov 2011",
+   "end_date": "2011-11-26",
+   "pollster": "2011 election result",
+   "source_url": "https://en.wikipedia.org/wiki/2011_New_Zealand_general_election",
+   "sample_size": null,
+   "results": {
+    "national": 47.31,
+    "labour": 27.48,
+    "green": 11.06,
+    "act": 1.07,
+    "te-pati-maori": 1.43,
+    "united-future": 0.6,
+    "nz-first": 6.59,
+    "mana": 1.08,
+    "conservative": 2.65
+   },
+   "is_election_result": true,
+   "pollster_key": "2011 election result"
+  },
+  {
+   "date": "24 Nov 2011",
+   "end_date": "2011-11-24",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.0,
+    "labour": 28.0,
+    "green": 10.0,
+    "act": 1.7,
+    "te-pati-maori": 2.0,
+    "united-future": 0.1,
+    "nz-first": 4.2,
+    "mana": 1.0,
+    "conservative": 2.4
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "24 Nov 2011",
+   "end_date": "2011-11-24",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.8,
+    "labour": 26.0,
+    "green": 13.4,
+    "act": 1.0,
+    "te-pati-maori": 1.5,
+    "united-future": 0.0,
+    "nz-first": 3.1,
+    "mana": 1.1,
+    "conservative": 1.8
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "22 – 24 Nov 2011",
+   "end_date": "2011-11-24",
+   "pollster": "Roy Morgan Research [note b]",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.5,
+    "labour": 23.5,
+    "green": 14.5,
+    "act": 1.5,
+    "te-pati-maori": 1.0,
+    "united-future": 0.5,
+    "nz-first": 6.5,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "17 – 23 Nov 2011",
+   "end_date": "2011-11-23",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.9,
+    "labour": 28.0,
+    "green": 11.8,
+    "act": 1.8,
+    "te-pati-maori": 0.4,
+    "united-future": 0.0,
+    "nz-first": 5.2,
+    "mana": 0.3,
+    "conservative": 1.3
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "17 – 21 Nov 2011",
+   "end_date": "2011-11-21",
+   "pollster": "Fairfax Media–Research International",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 26.0,
+    "green": 12.0,
+    "act": 0.7,
+    "te-pati-maori": 1.1,
+    "progressive": 0.0,
+    "united-future": 0.1,
+    "nz-first": 4.0,
+    "mana": 1.1
+   },
+   "pollster_key": "Fairfax Media–Ipsos"
+  },
+  {
+   "date": "7 – 18 Nov 2011",
+   "end_date": "2011-11-18",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.0,
+    "labour": 24.5,
+    "green": 13.0,
+    "act": 1.5,
+    "te-pati-maori": 3.0,
+    "united-future": 0.0,
+    "nz-first": 3.0,
+    "mana": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "17 Nov 2011",
+   "end_date": "2011-11-17",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.0,
+    "labour": 26.0,
+    "green": 13.0,
+    "act": 1.6,
+    "te-pati-maori": 1.6,
+    "united-future": 0.3,
+    "nz-first": 2.2,
+    "mana": 1.3,
+    "conservative": 1.4
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "17 Nov 2011",
+   "end_date": "2011-11-17",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.2,
+    "labour": 27.4,
+    "green": 13.0,
+    "act": 1.8,
+    "te-pati-maori": 1.3,
+    "united-future": 0.0,
+    "nz-first": 3.5,
+    "mana": 1.0,
+    "conservative": 1.1
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "10–16 Nov 2011",
+   "end_date": "2011-11-16",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.9,
+    "labour": 29.1,
+    "green": 12.6,
+    "act": 1.7,
+    "te-pati-maori": 0.7,
+    "united-future": 0.1,
+    "nz-first": 4.9,
+    "mana": 0.4,
+    "conservative": 0.6
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "13 Nov 2011",
+   "end_date": "2011-11-13",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.3,
+    "labour": 29.9,
+    "green": 10.2,
+    "act": 0.7,
+    "te-pati-maori": 1.4,
+    "united-future": 0.0,
+    "nz-first": 2.4,
+    "mana": 1.0
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "10 Nov 2011",
+   "end_date": "2011-11-10",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 28.0,
+    "green": 9.0,
+    "act": 1.5,
+    "te-pati-maori": 2.1,
+    "united-future": 0.8,
+    "nz-first": 2.9,
+    "mana": 0.2,
+    "conservative": 0.5
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "3–9 Nov 2011",
+   "end_date": "2011-11-09",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.5,
+    "labour": 28.7,
+    "green": 12.6,
+    "act": 1.5,
+    "te-pati-maori": 0.5,
+    "united-future": 0.7,
+    "nz-first": 3.7,
+    "mana": 0.7,
+    "conservative": 1.0
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "3–7 Nov 2011",
+   "end_date": "2011-11-07",
+   "pollster": "Fairfax Media–Research International",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.5,
+    "labour": 25.9,
+    "green": 12.6,
+    "act": 1.0,
+    "te-pati-maori": 1.5,
+    "progressive": 0.2,
+    "united-future": 0.3,
+    "nz-first": 2.8,
+    "mana": 0.7
+   },
+   "pollster_key": "Fairfax Media–Ipsos"
+  },
+  {
+   "date": "24 Oct – 6 Nov 2011",
+   "end_date": "2011-11-06",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.0,
+    "labour": 26.0,
+    "green": 12.0,
+    "act": 1.0,
+    "te-pati-maori": 2.0,
+    "united-future": 0.0,
+    "nz-first": 4.5,
+    "mana": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "3 Nov 2011",
+   "end_date": "2011-11-03",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 56.0,
+    "labour": 30.0,
+    "green": 9.0,
+    "act": 0.9,
+    "te-pati-maori": 1.3,
+    "united-future": 0.1,
+    "nz-first": 2.2,
+    "mana": 0.3
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "28 Oct – 2 Nov 2011",
+   "end_date": "2011-11-02",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.2,
+    "labour": 29.1,
+    "green": 10.1,
+    "act": 0.9,
+    "te-pati-maori": 1.9,
+    "united-future": 0.5,
+    "nz-first": 1.7,
+    "mana": 0.1,
+    "conservative": 1.1
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "27–31 Oct 2011",
+   "end_date": "2011-10-31",
+   "pollster": "Fairfax Media–Research International",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.6,
+    "labour": 31.3,
+    "green": 9.7,
+    "act": 1.2,
+    "te-pati-maori": 1.2,
+    "progressive": 0.2,
+    "united-future": 0.1,
+    "nz-first": 1.5,
+    "mana": 1.1
+   },
+   "pollster_key": "Fairfax Media–Ipsos"
+  },
+  {
+   "date": "30 Oct 2011",
+   "end_date": "2011-10-30",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.3,
+    "labour": 30.2,
+    "green": 9.4,
+    "act": 1.5,
+    "te-pati-maori": 1.4,
+    "united-future": 0.0,
+    "nz-first": 2.4,
+    "mana": 0.9
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "20–27 Oct 2011",
+   "end_date": "2011-10-27",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.5,
+    "labour": 30.3,
+    "green": 9.5,
+    "act": 1.5,
+    "te-pati-maori": 1.2,
+    "united-future": 0.1,
+    "nz-first": 2.8,
+    "mana": 0.1
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "10–23 Oct 2011",
+   "end_date": "2011-10-23",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.5,
+    "labour": 29.5,
+    "green": 9.5,
+    "act": 1.0,
+    "te-pati-maori": 2.0,
+    "united-future": 1.0,
+    "nz-first": 2.5,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "26 Sep – 9 Oct 2011",
+   "end_date": "2011-10-09",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 55.5,
+    "labour": 28.0,
+    "green": 9.5,
+    "act": 1.5,
+    "te-pati-maori": 2.0,
+    "united-future": 0.5,
+    "nz-first": 2.0,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "2 Oct 2011",
+   "end_date": "2011-10-02",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 56.0,
+    "labour": 29.0,
+    "green": 9.0,
+    "act": 1.3,
+    "te-pati-maori": 1.1,
+    "united-future": 0.0,
+    "nz-first": 1.9,
+    "mana": 0.6
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "2 Oct 2011",
+   "end_date": "2011-10-02",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 57.4,
+    "labour": 26.6,
+    "green": 9.8,
+    "act": 1.6,
+    "te-pati-maori": 0.8,
+    "united-future": 0.0,
+    "nz-first": 1.9,
+    "mana": 0.0
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "28 Sep 2011",
+   "end_date": "2011-09-28",
+   "pollster": "Fairfax Media–Research International",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 28.0,
+    "green": 10.0,
+    "act": 1.5,
+    "te-pati-maori": 1.3,
+    "united-future": 0.4,
+    "nz-first": 2.3,
+    "mana": 0.2
+   },
+   "pollster_key": "Fairfax Media–Ipsos"
+  },
+  {
+   "date": "12 – 25 Sep 2011",
+   "end_date": "2011-09-25",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.0,
+    "labour": 30.5,
+    "green": 11.5,
+    "act": 1.5,
+    "te-pati-maori": 2.5,
+    "united-future": 0.5,
+    "nz-first": 1.0,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "29 Aug – 11 Sep 2011",
+   "end_date": "2011-09-11",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 57.0,
+    "labour": 26.0,
+    "green": 7.5,
+    "act": 1.5,
+    "te-pati-maori": 2.5,
+    "united-future": 0.5,
+    "nz-first": 3.5,
+    "mana": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "25–29 Aug 2011",
+   "end_date": "2011-08-29",
+   "pollster": "Fairfax Media–Research International",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 57.1,
+    "labour": 25.7,
+    "green": 11.0,
+    "act": 1.1,
+    "te-pati-maori": 1.6,
+    "united-future": 0.1,
+    "nz-first": 2.2,
+    "mana": 0.6
+   },
+   "pollster_key": "Fairfax Media–Ipsos"
+  },
+  {
+   "date": "15 – 28 Aug 2011",
+   "end_date": "2011-08-28",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.0,
+    "labour": 29.5,
+    "green": 9.0,
+    "act": 2.0,
+    "te-pati-maori": 1.5,
+    "united-future": 0.5,
+    "nz-first": 3.5,
+    "mana": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "19–26 Aug 2011",
+   "end_date": "2011-08-26",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.0,
+    "labour": 31.5,
+    "green": 9.8,
+    "act": 1.2,
+    "te-pati-maori": 1.8,
+    "united-future": 0.1,
+    "nz-first": 2.4,
+    "mana": 0.2
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "21 Aug 2011",
+   "end_date": "2011-08-21",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 56.0,
+    "labour": 30.0,
+    "green": 6.0,
+    "act": 1.7,
+    "te-pati-maori": 1.4,
+    "united-future": 0.5,
+    "nz-first": 2.3,
+    "mana": 0.9
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "21 Aug 2011",
+   "end_date": "2011-08-21",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 28.8,
+    "green": 9.3,
+    "act": 2.2,
+    "te-pati-maori": 1.5,
+    "united-future": 0.0,
+    "nz-first": 2.2,
+    "mana": 0.9
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "25 Jul – 7 Aug 2011",
+   "end_date": "2011-08-07",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.5,
+    "labour": 32.0,
+    "green": 7.0,
+    "act": 2.0,
+    "te-pati-maori": 1.5,
+    "united-future": 0.5,
+    "nz-first": 4.0,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "30 Jul 2011",
+   "end_date": "2011-07-30",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.3,
+    "labour": 33.1,
+    "green": 8.3,
+    "act": 1.4,
+    "te-pati-maori": 2.0,
+    "nz-first": 0.9,
+    "mana": 0.6
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "21–25 Jul 2011",
+   "end_date": "2011-07-25",
+   "pollster": "Fairfax Media–Research International",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 56.0,
+    "labour": 29.0,
+    "green": 6.4,
+    "act": 2.2,
+    "te-pati-maori": 1.2,
+    "progressive": 0.2,
+    "nz-first": 2.0,
+    "mana": 0.2
+   },
+   "pollster_key": "Fairfax Media–Ipsos"
+  },
+  {
+   "date": "11–24 Jul 2011",
+   "end_date": "2011-07-24",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.0,
+    "labour": 31.5,
+    "green": 7.5,
+    "act": 2.0,
+    "te-pati-maori": 3.0,
+    "united-future": 0.5,
+    "nz-first": 2.5,
+    "mana": 0.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "17 Jul 2011",
+   "end_date": "2011-07-17",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.0,
+    "labour": 27.0,
+    "green": 10.0,
+    "act": 3.1,
+    "te-pati-maori": 3.0,
+    "united-future": 0.3,
+    "nz-first": 2.4,
+    "mana": 0.5
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "27 Jun – 10 Jul 2011",
+   "end_date": "2011-07-10",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 33.5,
+    "green": 7.5,
+    "act": 3.0,
+    "te-pati-maori": 2.5,
+    "united-future": 0.5,
+    "nz-first": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "10 Jul 2011",
+   "end_date": "2011-07-10",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 55.1,
+    "labour": 29.9,
+    "green": 9.1,
+    "act": 1.7,
+    "te-pati-maori": 0.8,
+    "united-future": 0.0,
+    "nz-first": 2.2,
+    "mana": 0.7
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "27 Jun 2011",
+   "end_date": "2011-06-27",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.2,
+    "labour": 36.1,
+    "green": 6.6,
+    "act": 1.9,
+    "te-pati-maori": 1.7,
+    "nz-first": 1.2,
+    "mana": 0.5
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "13–26 Jun 2011",
+   "end_date": "2011-06-26",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 30.5,
+    "green": 5.5,
+    "act": 2.5,
+    "te-pati-maori": 3.0,
+    "united-future": 0.5,
+    "nz-first": 3.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "30 May – 12 Jun 2011",
+   "end_date": "2011-06-12",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.0,
+    "labour": 30.0,
+    "green": 7.0,
+    "act": 3.0,
+    "te-pati-maori": 3.0,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "29 May 2011",
+   "end_date": "2011-05-29",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.0,
+    "labour": 34.0,
+    "green": 6.0,
+    "act": 2.5,
+    "te-pati-maori": 1.4,
+    "nz-first": 1.6,
+    "mana": 0.9
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "29 May 2011",
+   "end_date": "2011-05-29",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.0,
+    "labour": 32.8,
+    "green": 6.5,
+    "act": 2.2,
+    "te-pati-maori": 1.6,
+    "united-future": 0.2,
+    "nz-first": 2.4,
+    "mana": 0.5
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "16–29 May 2011",
+   "end_date": "2011-05-29",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 36.0,
+    "green": 6.5,
+    "act": 1.5,
+    "te-pati-maori": 2.5,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "19–25 May 2011",
+   "end_date": "2011-05-25",
+   "pollster": "Herald–DigiPoll",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.4,
+    "labour": 33.7,
+    "green": 5.5,
+    "act": 1.7,
+    "te-pati-maori": 1.5,
+    "progressive": 0.0,
+    "united-future": 0.0,
+    "nz-first": 2.7
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "2–15 May 2011",
+   "end_date": "2011-05-15",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.0,
+    "labour": 28.0,
+    "green": 10.0,
+    "act": 2.0,
+    "te-pati-maori": 2.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "18 Apr – 1 May 2011",
+   "end_date": "2011-05-01",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.5,
+    "labour": 31.0,
+    "green": 7.5,
+    "act": 1.0,
+    "te-pati-maori": 2.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 4.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "17 Apr 2011",
+   "end_date": "2011-04-17",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 57.5,
+    "labour": 27.1,
+    "green": 7.7,
+    "act": 1.7,
+    "te-pati-maori": 2.5,
+    "united-future": 0.2,
+    "nz-first": 2.8
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "4–17 Apr 2011",
+   "end_date": "2011-04-17",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.0,
+    "labour": 32.0,
+    "green": 8.0,
+    "act": 1.0,
+    "te-pati-maori": 3.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "10 Apr 2011",
+   "end_date": "2011-04-10",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 34.0,
+    "green": 6.0,
+    "act": 1.1,
+    "te-pati-maori": 1.4,
+    "nz-first": 2.7
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "21 Mar – 3 Apr 2011",
+   "end_date": "2011-04-03",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.0,
+    "labour": 31.5,
+    "green": 8.0,
+    "act": 2.0,
+    "te-pati-maori": 1.5,
+    "united-future": 0.5,
+    "nz-first": 5.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "28 Feb – 13 Mar 2011",
+   "end_date": "2011-03-13",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.5,
+    "labour": 32.5,
+    "green": 8.0,
+    "act": 0.5,
+    "te-pati-maori": 1.5,
+    "progressive": 0.5,
+    "nz-first": 4.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "14–27 Feb 2011",
+   "end_date": "2011-02-27",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 35.0,
+    "green": 8.0,
+    "act": 1.5,
+    "te-pati-maori": 3.0,
+    "nz-first": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "20 Feb 2011",
+   "end_date": "2011-02-20",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.0,
+    "labour": 33.0,
+    "green": 8.0,
+    "act": 1.3,
+    "te-pati-maori": 2.3,
+    "nz-first": 3.6
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "20 Feb 2011",
+   "end_date": "2011-02-20",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.6,
+    "labour": 30.9,
+    "green": 8.2,
+    "act": 0.6,
+    "te-pati-maori": 2.3,
+    "nz-first": 3.3
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "31 Jan – 13 Feb 2011",
+   "end_date": "2011-02-13",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.5,
+    "labour": 33.5,
+    "green": 8.5,
+    "act": 0.5,
+    "te-pati-maori": 1.5,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "17–30 Jan 2011",
+   "end_date": "2011-01-30",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 34.5,
+    "green": 6.5,
+    "act": 1.0,
+    "te-pati-maori": 3.0,
+    "nz-first": 5.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "4–16 Jan 2011",
+   "end_date": "2011-01-16",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 55.0,
+    "labour": 29.0,
+    "green": 7.0,
+    "act": 1.5,
+    "te-pati-maori": 2.5,
+    "united-future": 0.5,
+    "nz-first": 4.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "30 Dec 2010",
+   "end_date": "2010-12-30",
+   "pollster": "Herald –DigiPoll",
+   "source_url": "https://en.wikipedia.org/wiki/The_New_Zealand_Herald",
+   "sample_size": null,
+   "results": {
+    "national": 52.4,
+    "labour": 37.2,
+    "green": 5.3,
+    "act": 0.9,
+    "te-pati-maori": 1.2,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "19 Dec 2010",
+   "end_date": "2010-12-19",
+   "pollster": "One News Colmar Brunton",
+   "source_url": "https://en.wikipedia.org/wiki/One_News_(New_Zealand)",
+   "sample_size": null,
+   "results": {
+    "national": 55.0,
+    "labour": 33.0,
+    "green": 4.5,
+    "act": 0.9,
+    "te-pati-maori": 2.2,
+    "nz-first": 3.1
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "13 Dec 2010",
+   "end_date": "2010-12-13",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 55.5,
+    "labour": 31.2,
+    "green": 7.3,
+    "act": 1.3,
+    "te-pati-maori": 1.7,
+    "united-future": 0.1,
+    "nz-first": 1.9
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "29 Nov – 12 Dec 2010",
+   "end_date": "2010-12-12",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 48.5,
+    "labour": 35.0,
+    "green": 7.0,
+    "act": 1.5,
+    "te-pati-maori": 2.5,
+    "progressive": 0.5,
+    "united-future": 1.0,
+    "nz-first": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "15–28 Nov 2010",
+   "end_date": "2010-11-28",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.0,
+    "labour": 33.0,
+    "green": 7.0,
+    "act": 1.0,
+    "te-pati-maori": 3.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "1–14 Nov 2010",
+   "end_date": "2010-11-14",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.0,
+    "labour": 32.5,
+    "green": 9.0,
+    "act": 1.0,
+    "te-pati-maori": 2.5,
+    "united-future": 0.5,
+    "nz-first": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "18–31 Oct 2010",
+   "end_date": "2010-10-31",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.5,
+    "labour": 33.0,
+    "green": 8.5,
+    "act": 1.5,
+    "te-pati-maori": 3.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "4–17 Oct 2010",
+   "end_date": "2010-10-17",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.5,
+    "labour": 33.0,
+    "green": 8.5,
+    "act": 0.5,
+    "te-pati-maori": 1.5,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "11 Oct 2010",
+   "end_date": "2010-10-11",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.8,
+    "labour": 32.6,
+    "green": 7.6,
+    "act": 0.9,
+    "te-pati-maori": 2.4,
+    "united-future": 0.3,
+    "nz-first": 1.2
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "20 Sep – 3 Oct 2010",
+   "end_date": "2010-10-03",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.5,
+    "labour": 36.5,
+    "green": 8.0,
+    "act": 0.5,
+    "te-pati-maori": 2.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "26 Sep 2010",
+   "end_date": "2010-09-26",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 32.0,
+    "green": 8.0,
+    "act": 1.1,
+    "te-pati-maori": 2.3,
+    "nz-first": 2.4
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "30 Aug – 12 Sep 2010",
+   "end_date": "2010-09-12",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 48.5,
+    "labour": 34.0,
+    "green": 8.0,
+    "act": 2.0,
+    "te-pati-maori": 1.5,
+    "progressive": 0.5,
+    "united-future": 1.0,
+    "nz-first": 4.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "16–29 Aug 2010",
+   "end_date": "2010-08-29",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.5,
+    "labour": 32.5,
+    "green": 8.5,
+    "act": 1.0,
+    "te-pati-maori": 3.0,
+    "united-future": 1.0,
+    "nz-first": 3.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "2–15 Aug 2010",
+   "end_date": "2010-08-15",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.0,
+    "labour": 33.5,
+    "green": 7.5,
+    "act": 1.5,
+    "te-pati-maori": 3.0,
+    "united-future": 0.5,
+    "nz-first": 3.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "8 Aug 2010",
+   "end_date": "2010-08-08",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 35.0,
+    "green": 7.0,
+    "act": 2.7,
+    "te-pati-maori": 2.3,
+    "nz-first": 2.3
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "8 Aug 2010",
+   "end_date": "2010-08-08",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.5,
+    "labour": 30.6,
+    "green": 8.5,
+    "act": 2.2,
+    "te-pati-maori": 1.5,
+    "united-future": 0.2,
+    "nz-first": 1.5
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "19 Jul – 1 Aug 2010",
+   "end_date": "2010-08-01",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.0,
+    "labour": 33.5,
+    "green": 6.5,
+    "act": 2.0,
+    "te-pati-maori": 3.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "5–18 Jul 2010",
+   "end_date": "2010-07-18",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 31.5,
+    "green": 9.0,
+    "act": 2.0,
+    "te-pati-maori": 3.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 4.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "21 Jun – 4 Jul 2010",
+   "end_date": "2010-07-04",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.0,
+    "labour": 29.0,
+    "green": 8.5,
+    "act": 2.0,
+    "te-pati-maori": 3.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "31 May – 13 Jun 2010",
+   "end_date": "2010-06-13",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.5,
+    "labour": 33.0,
+    "green": 9.5,
+    "act": 1.0,
+    "te-pati-maori": 3.0,
+    "progressive": 0.5,
+    "united-future": 1.0,
+    "nz-first": 1.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "17–30 May 2010",
+   "end_date": "2010-05-30",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.5,
+    "labour": 30.0,
+    "green": 9.5,
+    "act": 1.0,
+    "te-pati-maori": 3.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "30 May 2010",
+   "end_date": "2010-05-30",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 33.0,
+    "green": 7.0,
+    "act": 1.6,
+    "te-pati-maori": 3.6
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "3–16 May 2010",
+   "end_date": "2010-05-16",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 48.5,
+    "labour": 33.5,
+    "green": 9.0,
+    "act": 2.5,
+    "te-pati-maori": 2.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "25 Apr 2010",
+   "end_date": "2010-04-25",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.1,
+    "labour": 33.8,
+    "green": 8.2,
+    "act": 1.6,
+    "te-pati-maori": 1.9,
+    "united-future": 0.5,
+    "nz-first": 1.5
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "5–18 Apr 2010",
+   "end_date": "2010-04-18",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.5,
+    "labour": 34.0,
+    "green": 7.5,
+    "act": 1.0,
+    "te-pati-maori": 4.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "10–14 Apr 2010",
+   "end_date": "2010-04-14",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 33.0,
+    "green": 5.0,
+    "act": 2.0,
+    "te-pati-maori": 2.0
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "22 Mar – 4 Apr 2010",
+   "end_date": "2010-04-04",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 49.0,
+    "labour": 33.0,
+    "green": 7.5,
+    "act": 2.0,
+    "te-pati-maori": 3.0,
+    "progressive": 0.5,
+    "united-future": 1.0,
+    "nz-first": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "1–14 Mar 2010",
+   "end_date": "2010-03-14",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.5,
+    "labour": 33.5,
+    "green": 6.5,
+    "act": 2.5,
+    "te-pati-maori": 2.0,
+    "progressive": 1.0,
+    "united-future": 0.5,
+    "nz-first": 2.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "15–28 Feb 2010",
+   "end_date": "2010-02-28",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.5,
+    "labour": 31.5,
+    "green": 8.0,
+    "act": 1.5,
+    "te-pati-maori": 2.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "14–17 Feb 2010",
+   "end_date": "2010-02-17",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 34.0,
+    "green": 5.0,
+    "act": 2.0,
+    "te-pati-maori": 2.0,
+    "nz-first": 2.0
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "16 Feb 2010",
+   "end_date": "2010-02-16",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 56.3,
+    "labour": 29.6,
+    "green": 7.3,
+    "act": 1.6,
+    "te-pati-maori": 2.4,
+    "progressive": 0.2,
+    "united-future": 0.2,
+    "nz-first": 1.5
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "1–14 Feb 2010",
+   "end_date": "2010-02-14",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.0,
+    "labour": 33.0,
+    "green": 8.0,
+    "act": 1.5,
+    "te-pati-maori": 2.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "29 Jan – 10 Feb 2010",
+   "end_date": "2010-02-10",
+   "pollster": "Herald –DigiPoll",
+   "source_url": "https://en.wikipedia.org/wiki/The_New_Zealand_Herald",
+   "sample_size": null,
+   "results": {
+    "national": 56.0,
+    "labour": 34.0,
+    "green": 4.6,
+    "act": 1.0,
+    "te-pati-maori": 2.8,
+    "progressive": 1.0,
+    "united-future": 1.0,
+    "nz-first": 1.7
+   },
+   "pollster_key": "Herald–DigiPoll"
+  },
+  {
+   "date": "18–31 Jan 2010",
+   "end_date": "2010-01-31",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.0,
+    "labour": 32.0,
+    "green": 6.0,
+    "act": 2.0,
+    "te-pati-maori": 3.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 3.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "4–17 Jan 2010",
+   "end_date": "2010-01-17",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.0,
+    "labour": 30.0,
+    "green": 8.0,
+    "act": 2.0,
+    "te-pati-maori": 2.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "13 Dec 2009",
+   "end_date": "2009-12-13",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 55.2,
+    "labour": 30.8,
+    "green": 7.8,
+    "act": 1.8,
+    "te-pati-maori": 1.7,
+    "united-future": 0.1,
+    "nz-first": 1.5
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "30 Nov – 13 Dec 2009",
+   "end_date": "2009-12-13",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 27.5,
+    "green": 9.5,
+    "act": 1.5,
+    "te-pati-maori": 1.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 4.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "16–29 Nov 2009",
+   "end_date": "2009-11-29",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.5,
+    "labour": 30.5,
+    "green": 7.0,
+    "act": 1.5,
+    "te-pati-maori": 3.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "21–25 Nov 2009",
+   "end_date": "2009-11-25",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.0,
+    "labour": 31.0,
+    "green": 7.0,
+    "act": 2.0,
+    "te-pati-maori": 3.0,
+    "nz-first": 1.0
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "2–15 Nov 2009",
+   "end_date": "2009-11-15",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.5,
+    "labour": 33.0,
+    "green": 6.5,
+    "act": 2.5,
+    "te-pati-maori": 2.0,
+    "progressive": 1.0,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "19 Oct – 1 Nov 2009",
+   "end_date": "2009-11-01",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 55.5,
+    "labour": 29.0,
+    "green": 7.5,
+    "act": 1.0,
+    "te-pati-maori": 3.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 1.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "18 Oct 2009",
+   "end_date": "2009-10-18",
+   "pollster": "3 News Reid Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 59.9,
+    "labour": 27.2,
+    "green": 6.9,
+    "act": 1.7,
+    "te-pati-maori": 2.4,
+    "nz-first": 1.0
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "5–18 Oct 2009",
+   "end_date": "2009-10-18",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.0,
+    "labour": 30.0,
+    "green": 7.5,
+    "act": 2.5,
+    "te-pati-maori": 3.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "21 Sep – 4 Oct 2009",
+   "end_date": "2009-10-04",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 57.5,
+    "labour": 28.0,
+    "green": 6.5,
+    "act": 1.5,
+    "te-pati-maori": 2.5,
+    "progressive": 1.0,
+    "united-future": 0.5,
+    "nz-first": 2.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "19–24 Sep 2009",
+   "end_date": "2009-09-24",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 33.0,
+    "green": 4.0,
+    "act": 3.0,
+    "te-pati-maori": 3.0,
+    "nz-first": 2.0
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "31 Aug – 13 Sep 2009",
+   "end_date": "2009-09-13",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 51.5,
+    "labour": 33.0,
+    "green": 7.5,
+    "act": 2.0,
+    "te-pati-maori": 2.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "17–30 Aug 2009",
+   "end_date": "2009-08-30",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 56.5,
+    "labour": 29.5,
+    "green": 8.0,
+    "act": 1.5,
+    "te-pati-maori": 1.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 1.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "3–16 Aug 2009",
+   "end_date": "2009-08-16",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.5,
+    "labour": 32.5,
+    "green": 8.5,
+    "act": 1.0,
+    "te-pati-maori": 2.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "20 Jul – 2 Aug 2009",
+   "end_date": "2009-08-02",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 53.5,
+    "labour": 34.0,
+    "green": 7.0,
+    "act": 2.5,
+    "te-pati-maori": 1.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "25–29 Jul 2009",
+   "end_date": "2009-07-29",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 56.0,
+    "labour": 31.0,
+    "green": 7.0,
+    "act": 1.0,
+    "te-pati-maori": 3.1
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "6–19 Jul 2009",
+   "end_date": "2009-07-19",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.0,
+    "labour": 30.0,
+    "green": 10.0,
+    "act": 1.0,
+    "te-pati-maori": 3.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "22 Jun – 5 Jul 2009",
+   "end_date": "2009-07-05",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.0,
+    "labour": 31.5,
+    "green": 8.0,
+    "act": 1.0,
+    "te-pati-maori": 3.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "1–14 Jun 2009",
+   "end_date": "2009-06-14",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.0,
+    "labour": 33.0,
+    "green": 7.5,
+    "act": 2.5,
+    "te-pati-maori": 2.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "18–31 May 2009",
+   "end_date": "2009-05-31",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.0,
+    "labour": 31.0,
+    "green": 8.5,
+    "act": 2.0,
+    "te-pati-maori": 2.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "4–17 May 2009",
+   "end_date": "2009-05-17",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 52.0,
+    "labour": 31.5,
+    "green": 9.5,
+    "act": 2.0,
+    "te-pati-maori": 2.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 1.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "20 Apr – 3 May 2009",
+   "end_date": "2009-05-03",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 55.0,
+    "labour": 30.5,
+    "green": 7.0,
+    "act": 2.0,
+    "te-pati-maori": 2.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "6–19 Apr 2009",
+   "end_date": "2009-04-19",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.0,
+    "labour": 32.5,
+    "green": 8.5,
+    "act": 2.5,
+    "te-pati-maori": 3.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "23 Mar – 5 Apr 2009",
+   "end_date": "2009-04-05",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 50.5,
+    "labour": 28.0,
+    "green": 9.5,
+    "act": 4.0,
+    "te-pati-maori": 3.5,
+    "progressive": 1.0,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "5 Apr 2009",
+   "end_date": "2009-04-05",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 57.0,
+    "labour": 31.0,
+    "green": 7.0,
+    "act": 2.0,
+    "te-pati-maori": 2.0
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "28 Mar – 1 Apr 2009",
+   "end_date": "2009-04-01",
+   "pollster": "One News Colmar Brunton",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 56.0,
+    "labour": 28.0,
+    "green": 6.0,
+    "act": 3.0,
+    "te-pati-maori": 3.0,
+    "nz-first": 1.0
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "2–15 Mar 2009",
+   "end_date": "2009-03-15",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 54.5,
+    "labour": 29.0,
+    "green": 8.0,
+    "act": 2.5,
+    "te-pati-maori": 2.0,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "16 Feb – 1 Mar 2009",
+   "end_date": "2009-03-01",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 56.0,
+    "labour": 26.0,
+    "green": 8.5,
+    "act": 1.5,
+    "te-pati-maori": 3.5,
+    "progressive": 0.5,
+    "united-future": 0.5,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "14–19 Feb 2009",
+   "end_date": "2009-02-19",
+   "pollster": "One News Colmar Brunton",
+   "source_url": "https://en.wikipedia.org/wiki/One_News_(New_Zealand)",
+   "sample_size": null,
+   "results": {
+    "national": 57.0,
+    "labour": 31.0,
+    "green": 7.0,
+    "act": 2.0,
+    "te-pati-maori": 2.0,
+    "nz-first": 1.0
+   },
+   "pollster_key": "1 News–Verian"
+  },
+  {
+   "date": "18 Feb 2009",
+   "end_date": "2009-02-18",
+   "pollster": "3 News Reid Research",
+   "source_url": "https://en.wikipedia.org/wiki/3_News",
+   "sample_size": null,
+   "results": {
+    "national": 60.0,
+    "labour": 27.0,
+    "green": 7.0,
+    "act": 1.2,
+    "te-pati-maori": 2.1,
+    "united-future": 0.2,
+    "nz-first": 1.6
+   },
+   "pollster_key": "RNZ–Reid Research"
+  },
+  {
+   "date": "2–15 Feb 2009",
+   "end_date": "2009-02-15",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 48.5,
+    "labour": 32.0,
+    "green": 8.5,
+    "act": 2.5,
+    "te-pati-maori": 3.5,
+    "progressive": 0.5,
+    "united-future": 1.0,
+    "nz-first": 1.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "19 Jan – 1 Feb 2009",
+   "end_date": "2009-02-01",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 48.0,
+    "labour": 31.0,
+    "green": 9.0,
+    "act": 3.5,
+    "te-pati-maori": 3.5,
+    "progressive": 0.5,
+    "united-future": 1.0,
+    "nz-first": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "2–18 Jan 2009",
+   "end_date": "2009-01-18",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 48.0,
+    "labour": 33.0,
+    "green": 8.0,
+    "act": 3.0,
+    "te-pati-maori": 3.5,
+    "progressive": 0.5,
+    "united-future": 1.0,
+    "nz-first": 2.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "1–14 Dec 2008",
+   "end_date": "2008-12-14",
+   "pollster": "Roy Morgan Research",
+   "source_url": null,
+   "sample_size": null,
+   "results": {
+    "national": 47.0,
+    "labour": 31.5,
+    "green": 9.5,
+    "act": 4.0,
+    "te-pati-maori": 2.0,
+    "progressive": 0.5,
+    "united-future": 1.0,
+    "nz-first": 3.0
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "17–30 Nov 2008",
+   "end_date": "2008-11-30",
+   "pollster": "Roy Morgan Research",
+   "source_url": "https://en.wikipedia.org/wiki/Roy_Morgan_Research",
+   "sample_size": null,
+   "results": {
+    "national": 44.0,
+    "labour": 32.5,
+    "green": 9.5,
+    "act": 4.0,
+    "te-pati-maori": 3.5,
+    "progressive": 0.5,
+    "united-future": 1.0,
+    "nz-first": 3.5
+   },
+   "pollster_key": "Roy Morgan"
+  },
+  {
+   "date": "8 Nov 2008",
+   "end_date": "2008-11-08",
+   "pollster": "2008 election result",
+   "source_url": "https://en.wikipedia.org/wiki/2008_New_Zealand_general_election",
+   "sample_size": null,
+   "results": {
+    "national": 44.93,
+    "labour": 33.99,
+    "green": 6.72,
+    "act": 3.65,
+    "te-pati-maori": 2.39,
+    "progressive": 0.91,
+    "united-future": 0.87,
+    "nz-first": 4.07
+   },
+   "is_election_result": true,
+   "pollster_key": "2008 election result"
+  }
+ ],
+ "events": [
+  {
+   "date": "11 Nov 2008",
+   "event": "Phil Goff replaces Helen Clark as leader of Labour Party. 19 Nov 2008 – National Party leader John Key is sworn in as Prime Minister of New Zealand.",
+   "end_date": "2008-11-11"
+  },
+  {
+   "date": "28 May 2009",
+   "event": "2009 New Zealand budget presented to Parliament. 30 May 2009 – Metiria Turei replaces Jeanette Fitzsimons as female co-leader of the Green Party. 13 Jun 2009 – Mount Albert by-election : David Shearer retains the seat for Labour.",
+   "end_date": "2009-05-28"
+  },
+  {
+   "date": "21 Aug 2009",
+   "event": "The citizens-initiated corporal punishment referendum is held, with voters responding 87.4% \"No\" to the question \"Should a smack as part of good parental correction be a criminal offence in New Zealand?\"",
+   "end_date": "2009-08-21"
+  },
+  {
+   "date": "26 Nov 2009",
+   "event": "Labour leader Phil Goff makes race-related \"nationhood\" speech.",
+   "end_date": "2009-11-26"
+  },
+  {
+   "date": "20 May 2010",
+   "event": "2010 New Zealand budget presented to Parliament.",
+   "end_date": "2010-05-20"
+  },
+  {
+   "date": "17 Aug 2010",
+   "event": "Chris Carter is removed from the Labour caucus and becomes an independent MP. Labour is reduced to 42 seats but the Opposition remains at 53 seats.",
+   "end_date": "2010-08-17"
+  },
+  {
+   "date": "4 Sep 2010",
+   "event": "A 7.1-magnitude earthquake strikes Canterbury .",
+   "end_date": "2010-09-04"
+  },
+  {
+   "date": "20 Nov 2010",
+   "event": "Mana by-election : Kris Faafoi retains the seat for Labour, but with a significantly reduced majority.",
+   "end_date": "2010-11-20"
+  },
+  {
+   "date": "26 Jan 2011",
+   "event": "John Key announces policy of partial privatisation of some state-owned assets.",
+   "end_date": "2011-01-26"
+  },
+  {
+   "date": "2 February 2011",
+   "event": "John Key announces the election will be held on 26 November 2011.",
+   "end_date": "2011-02-02"
+  },
+  {
+   "date": "22 Feb 2011",
+   "event": "A 6.3-magnitude earthquake strikes Canterbury , with 181 casualties. 23 Feb 2011 – Hone Harawira defects from Maori Party to become an independent MP, and later forming the Mana Party . Government majority reduced from 16 to 14 seats; Maori Party reduced to four seats. 5 Mar 2011 – Botany by-election : Jami-Lee Ross retains the seat for National, but with a reduced majority.",
+   "end_date": "2011-02-22"
+  },
+  {
+   "date": "30 Apr 2011",
+   "event": "Don Brash replaces Rodney Hide as leader of the ACT Party.",
+   "end_date": "2011-04-30"
+  },
+  {
+   "date": "19 May 2011",
+   "event": "2011 New Zealand budget is presented to Parliament.",
+   "end_date": "2011-05-19"
+  },
+  {
+   "date": "25 Jun 2011",
+   "event": "Te Tai Tokerau by-election : Hone Harawira is re-elected under the Mana Party .",
+   "end_date": "2011-06-25"
+  },
+  {
+   "date": "14 Jul 2011",
+   "event": "Labour releases their proposed tax package, including the introduction of a capital gains tax .",
+   "end_date": "2011-07-14"
+  },
+  {
+   "date": "9 September 2011",
+   "event": "The 2011 Rugby World Cup opens in Auckland, with unexpected overcrowding of the Auckland Waterfront fan zone and transport delays resulting in some people missing the opening ceremony and game. 13 September 2011 – The Government takes control of the Auckland Waterfront fan zone from Auckland Council.",
+   "end_date": "2011-09-09"
+  },
+  {
+   "date": "30 Sep 2011",
+   "event": "Credit agencies Fitch and Standard & Poor's both downgrade New Zealand's long-term credit rating from AA+ to AA.",
+   "end_date": "2011-09-30"
+  },
+  {
+   "date": "5 Oct 2011",
+   "event": "MV Rena runs aground on the Astrolabe Reef causing an oil spill in Tauranga , described as New Zealand's worst environmental disaster.",
+   "end_date": "2011-10-05"
+  },
+  {
+   "date": "26 Oct 2011",
+   "event": "Writ Day: The writ of election is issued by the Chief Justice on behalf of the Governor General, instructing the Electoral Commission to conduct the election. Electoral roll closes for printing with 3.01 million eligible voters. [note a] Main campaigning season begins.",
+   "end_date": "2011-10-26"
+  },
+  {
+   "date": "11 Nov 2011",
+   "event": "A potentially damaging conversation between John Key and political ally John Banks is recorded without their knowledge.",
+   "end_date": "2011-11-11"
+  },
+  {
+   "date": "26 Nov 2011",
+   "event": "Election Day: A total of 3,049,212 voters were registered to vote in the election. A total of 2,257,336 votes were cast, including the 188,730 advance votes, with a turnout of 73.5%.",
+   "end_date": "2011-11-26"
+  }
+ ]
+}

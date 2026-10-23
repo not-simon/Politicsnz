@@ -11,26 +11,9 @@
   "TPM": "te-pati-maori",
   "OPP": "opportunity"
  },
- "notes": "Percentages as published. 'end_date' is the sort date used by Wikipedia (last fieldwork day or release date). Rows are newest first. 'others' = combined minor parties where listed. Poll sources: each row's source_url as linked on Wikipedia.",
+ "notes": "Percentages as published (decided voters; undecided excluded by every pollster). 'end_date' is the sort date used by Wikipedia (last fieldwork day or release date). Rows are newest first. 'others' = combined minor parties where listed. 'pollster_key' groups series that changed name; 'internal' marks party/corporate-client polls that are published selectively. Poll sources: each row's source_url as linked on Wikipedia. Refreshed by tools/polls_update.py.",
  "count": 129,
  "polls": [
-  {
-   "date": "15–19 Oct 2026",
-   "end_date": "2026-10-19",
-   "pollster": "1 News–Verian",
-   "source_url": "https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/",
-   "sample_size": 1003,
-   "results": {
-    "national": 32.0,
-    "labour": 27.0,
-    "green": 16.0,
-    "act": 11.0,
-    "nz-first": 8.0,
-    "te-pati-maori": 0.7,
-    "opportunity": 7.0
-   },
-   "others": 0.7
-  },
   {
    "date": "9–19 Oct 2026",
    "end_date": "2026-10-19",
@@ -46,7 +29,28 @@
     "te-pati-maori": 2.0,
     "opportunity": 5.4
    },
-   "others": 1.2
+   "others": 1.2,
+   "pollster_key": "The Post/Freshwater Strategy",
+   "internal": false
+  },
+  {
+   "date": "15–19 Oct 2026",
+   "end_date": "2026-10-19",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/",
+   "sample_size": 1003,
+   "results": {
+    "national": 32.0,
+    "labour": 27.0,
+    "green": 16.0,
+    "act": 11.0,
+    "nz-first": 8.0,
+    "te-pati-maori": 0.7,
+    "opportunity": 7.0
+   },
+   "others": 0.7,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "8–12 Oct 2026",
@@ -63,7 +67,9 @@
     "te-pati-maori": 0.4,
     "opportunity": 8.0
    },
-   "others": 1.6
+   "others": 1.6,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "6–10 Oct 2026",
@@ -80,7 +86,9 @@
     "te-pati-maori": 1.9,
     "opportunity": 5.4
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Anacta",
+   "internal": true
   },
   {
    "date": "1–5 Oct 2026",
@@ -97,7 +105,9 @@
     "te-pati-maori": 1.4,
     "opportunity": 4.8
    },
-   "others": 2.7
+   "others": 2.7,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "1–5 Oct 2026",
@@ -114,7 +124,9 @@
     "te-pati-maori": 0.6,
     "opportunity": 7.0
    },
-   "others": 0.8
+   "others": 0.8,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "24 Sep – 1 Oct 2026",
@@ -131,24 +143,9 @@
     "te-pati-maori": 2.0,
     "opportunity": 5.5
    },
-   "others": 0.7
-  },
-  {
-   "date": "23–27 Sep 2026",
-   "end_date": "2026-09-27",
-   "pollster": "1 News–Verian",
-   "source_url": "https://www.1news.co.nz/2026/09/28/poll-greens-surge-to-best-result-ever-as-national-labour-slide-further/",
-   "sample_size": 1004,
-   "results": {
-    "national": 28.0,
-    "labour": 28.0,
-    "green": 16.0,
-    "act": 11.0,
-    "nz-first": 9.0,
-    "te-pati-maori": 1.2,
-    "opportunity": 6.0
-   },
-   "others": 1.0
+   "others": 0.7,
+   "pollster_key": "RNZ–Reid Research",
+   "internal": false
   },
   {
    "date": "31 Aug – 27 Sep 2026",
@@ -165,7 +162,28 @@
     "te-pati-maori": 2.0,
     "opportunity": 6.5
    },
-   "others": 0.0
+   "others": 0.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
+  },
+  {
+   "date": "23–27 Sep 2026",
+   "end_date": "2026-09-27",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.1news.co.nz/2026/09/28/poll-greens-surge-to-best-result-ever-as-national-labour-slide-further/",
+   "sample_size": 1004,
+   "results": {
+    "national": 28.0,
+    "labour": 28.0,
+    "green": 16.0,
+    "act": 11.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 1.2,
+    "opportunity": 6.0
+   },
+   "others": 1.0,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "4–11 Sep 2026",
@@ -182,7 +200,9 @@
     "te-pati-maori": 2.2,
     "opportunity": 6.3
    },
-   "others": 2.1
+   "others": 2.1,
+   "pollster_key": "The Post/Freshwater Strategy",
+   "internal": false
   },
   {
    "date": "4–10 Sep 2026",
@@ -199,7 +219,9 @@
     "te-pati-maori": 2.0,
     "opportunity": 7.0
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Anacta",
+   "internal": true
   },
   {
    "date": "1–3 Sep 2026",
@@ -216,7 +238,9 @@
     "te-pati-maori": 2.0,
     "opportunity": 4.5
    },
-   "others": 5.9
+   "others": 5.9,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "27 Jul – 23 Aug 2026",
@@ -233,7 +257,9 @@
     "te-pati-maori": 1.5,
     "opportunity": 9.5
    },
-   "others": 0.5
+   "others": 0.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "14–21 Aug 2026",
@@ -250,7 +276,9 @@
     "te-pati-maori": 3.0,
     "opportunity": 5.3
    },
-   "others": 0.6
+   "others": 0.6,
+   "pollster_key": "RNZ–Reid Research",
+   "internal": false
   },
   {
    "date": "8–11 Aug 2026",
@@ -267,7 +295,9 @@
     "te-pati-maori": 1.1,
     "opportunity": 8.0
    },
-   "others": 2.7
+   "others": 2.7,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "1–11 Aug 2026",
@@ -284,7 +314,9 @@
     "te-pati-maori": 3.0,
     "opportunity": 5.2
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "1–4 Aug 2026",
@@ -301,7 +333,9 @@
     "te-pati-maori": 1.5,
     "opportunity": 6.1
    },
-   "others": 2.2
+   "others": 2.2,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "29 Jun – 26 Jul 2026",
@@ -318,7 +352,9 @@
     "te-pati-maori": 2.0,
     "opportunity": 8.0
    },
-   "others": 2.0
+   "others": 2.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "10–19 Jul 2026",
@@ -335,7 +371,9 @@
     "te-pati-maori": 3.0,
     "opportunity": 4.7
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "2–9 Jul 2026",
@@ -352,7 +390,9 @@
     "te-pati-maori": 2.3,
     "opportunity": 4.7
    },
-   "others": 0.8
+   "others": 0.8,
+   "pollster_key": "RNZ–Reid Research",
+   "internal": false
   },
   {
    "date": "1–5 Jul 2026",
@@ -369,7 +409,9 @@
     "te-pati-maori": 3.4,
     "opportunity": 3.3
    },
-   "others": 3.2
+   "others": 3.2,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "25 May – 21 Jun 2026",
@@ -386,7 +428,9 @@
     "te-pati-maori": 3.0,
     "opportunity": 6.5
    },
-   "others": 0.5
+   "others": 0.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "13–17 Jun 2026",
@@ -403,7 +447,9 @@
     "te-pati-maori": 1.8,
     "opportunity": 4.6
    },
-   "others": 1.5
+   "others": 1.5,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "5–11 Jun 2026",
@@ -419,7 +465,9 @@
     "nz-first": 12.0,
     "te-pati-maori": 2.1
    },
-   "others": 3.2
+   "others": 3.2,
+   "pollster_key": "The Post/Freshwater Strategy",
+   "internal": false
   },
   {
    "date": "1–10 Jun 2026",
@@ -436,7 +484,9 @@
     "te-pati-maori": 2.6,
     "opportunity": 3.3
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "4–8 Jun 2026",
@@ -453,7 +503,9 @@
     "te-pati-maori": 3.1,
     "opportunity": 3.2
    },
-   "others": 0.8
+   "others": 0.8,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "27 Apr – 24 May 2026",
@@ -470,7 +522,9 @@
     "te-pati-maori": 2.5,
     "opportunity": 6.0
    },
-   "others": 1.0
+   "others": 1.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "1–10 May 2026",
@@ -486,7 +540,9 @@
     "nz-first": 14.0,
     "te-pati-maori": 2.0
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "3–7 May 2026",
@@ -503,7 +559,9 @@
     "te-pati-maori": 4.1,
     "opportunity": 2.8
    },
-   "others": 3.3
+   "others": 3.3,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "30 Mar – 26 Apr 2026",
@@ -520,7 +578,9 @@
     "te-pati-maori": 3.0,
     "opportunity": 4.0
    },
-   "others": 0.5
+   "others": 0.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "16 Apr 2026",
@@ -537,7 +597,9 @@
     "te-pati-maori": 1.9,
     "opportunity": 2.3
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "11–15 Apr 2026",
@@ -554,7 +616,9 @@
     "te-pati-maori": 1.5,
     "opportunity": 3.3
    },
-   "others": 1.2
+   "others": 1.2,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "1–2 Apr 2026",
@@ -571,7 +635,9 @@
     "te-pati-maori": 2.6,
     "opportunity": 2.6
    },
-   "others": 1.3
+   "others": 1.3,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "23 Feb – 22 Mar 2026",
@@ -588,7 +654,9 @@
     "te-pati-maori": 3.0,
     "opportunity": 4.0
    },
-   "others": 0.5
+   "others": 0.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "12–20 Mar 2026",
@@ -605,7 +673,9 @@
     "te-pati-maori": 3.2,
     "opportunity": 2.0
    },
-   "others": 0.7
+   "others": 0.7,
+   "pollster_key": "RNZ–Reid Research",
+   "internal": false
   },
   {
    "date": "2–12 Mar 2026",
@@ -622,7 +692,9 @@
     "te-pati-maori": 1.7,
     "opportunity": 2.4
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "1–3 Mar 2026",
@@ -639,7 +711,9 @@
     "te-pati-maori": 3.2,
     "opportunity": 1.9
    },
-   "others": 4.3
+   "others": 4.3,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "27 Jan – 22 Feb 2026",
@@ -656,7 +730,9 @@
     "te-pati-maori": 2.5,
     "opportunity": 4.0
    },
-   "others": 0.5
+   "others": 0.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "6–12 Feb 2026",
@@ -672,7 +748,9 @@
     "nz-first": 10.5,
     "te-pati-maori": 2.5
    },
-   "others": 3.0
+   "others": 3.0,
+   "pollster_key": "The Post/Freshwater Strategy",
+   "internal": false
   },
   {
    "date": "7–11 Feb 2026",
@@ -689,7 +767,9 @@
     "te-pati-maori": 2.0,
     "opportunity": 1.0
    },
-   "others": 1.7
+   "others": 1.7,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "1–3 Feb 2026",
@@ -706,7 +786,27 @@
     "te-pati-maori": 2.9,
     "opportunity": 1.4
    },
-   "others": 4.2
+   "others": 4.2,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
+  },
+  {
+   "date": "16–26 Jan 2026",
+   "end_date": "2026-01-26",
+   "pollster": "Talbot Mills",
+   "source_url": "https://www.thepost.co.nz/politics/360940554/labour-ahead-right-bloc-retains-governing-edge-latest-poll",
+   "sample_size": 1087,
+   "results": {
+    "national": 31.0,
+    "labour": 35.0,
+    "green": 10.0,
+    "act": 8.0,
+    "nz-first": 9.0,
+    "te-pati-maori": 3.0
+   },
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "6–26 Jan 2026",
@@ -723,23 +823,9 @@
     "te-pati-maori": 3.0,
     "opportunity": 2.5
    },
-   "others": 1.5
-  },
-  {
-   "date": "16–26 Jan 2026",
-   "end_date": "2026-01-26",
-   "pollster": "Talbot Mills",
-   "source_url": "https://www.thepost.co.nz/politics/360940554/labour-ahead-right-bloc-retains-governing-edge-latest-poll",
-   "sample_size": 1087,
-   "results": {
-    "national": 31.0,
-    "labour": 35.0,
-    "green": 10.0,
-    "act": 8.0,
-    "nz-first": 9.0,
-    "te-pati-maori": 3.0
-   },
-   "others": null
+   "others": 1.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "15–22 Jan 2026",
@@ -756,7 +842,9 @@
     "te-pati-maori": 3.0,
     "opportunity": 2.3
    },
-   "others": 0.9
+   "others": 0.9,
+   "pollster_key": "RNZ–Reid Research",
+   "internal": false
   },
   {
    "date": "14–18 Jan 2026",
@@ -773,7 +861,9 @@
     "te-pati-maori": 3.0,
     "opportunity": 0.7
    },
-   "others": 3.8
+   "others": 3.8,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "25 Nov – 21 Dec 2025",
@@ -790,7 +880,9 @@
     "te-pati-maori": 2.5,
     "opportunity": 2.5
    },
-   "others": 0.0
+   "others": 0.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "5–10 Dec 2025",
@@ -806,7 +898,9 @@
     "nz-first": 9.1,
     "te-pati-maori": 2.5
    },
-   "others": 4.3
+   "others": 4.3,
+   "pollster_key": "The Post/Freshwater Strategy",
+   "internal": false
   },
   {
    "date": "3–7 Dec 2025",
@@ -823,7 +917,9 @@
     "te-pati-maori": 3.1,
     "opportunity": 1.6
    },
-   "others": 6.0
+   "others": 6.0,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "29 Nov – 3 Dec 2025",
@@ -840,7 +936,9 @@
     "te-pati-maori": 0.6,
     "opportunity": 0.4
    },
-   "others": 2.4
+   "others": 2.4,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "27 Oct – 23 Nov 2025",
@@ -857,7 +955,9 @@
     "te-pati-maori": 2.0,
     "opportunity": 2.5
    },
-   "others": 3.0
+   "others": 3.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "1–10 Nov 2025",
@@ -873,7 +973,9 @@
     "nz-first": 8.0,
     "te-pati-maori": 2.4
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "2–6 Nov 2025",
@@ -890,7 +992,9 @@
     "te-pati-maori": 3.3,
     "opportunity": 1.2
    },
-   "others": 5.1
+   "others": 5.1,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "29 Sep – 26 Oct 2025",
@@ -907,7 +1011,9 @@
     "te-pati-maori": 2.5,
     "opportunity": 2.5
    },
-   "others": 3.0
+   "others": 3.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "1–10 Oct 2025",
@@ -923,7 +1029,27 @@
     "nz-first": 12.0,
     "te-pati-maori": 4.0
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
+  },
+  {
+   "date": "3–8 Oct 2025",
+   "end_date": "2025-10-08",
+   "pollster": "The Post/Freshwater Strategy",
+   "source_url": "https://www.thepost.co.nz/politics/360853311/big-names-risk-labour-pulls-ahead-and-christopher-luxon-loses-ground",
+   "sample_size": 1050,
+   "results": {
+    "national": 31.0,
+    "labour": 34.0,
+    "green": 9.0,
+    "act": 9.0,
+    "nz-first": 11.0,
+    "te-pati-maori": 3.0
+   },
+   "others": 2.0,
+   "pollster_key": "The Post/Freshwater Strategy",
+   "internal": false
   },
   {
    "date": "4–8 Oct 2025",
@@ -940,23 +1066,9 @@
     "te-pati-maori": 2.8,
     "opportunity": 0.8
    },
-   "others": 2.4
-  },
-  {
-   "date": "3–8 Oct 2025",
-   "end_date": "2025-10-08",
-   "pollster": "The Post/Freshwater Strategy",
-   "source_url": "https://www.thepost.co.nz/politics/360853311/big-names-risk-labour-pulls-ahead-and-christopher-luxon-loses-ground",
-   "sample_size": 1050,
-   "results": {
-    "national": 31.0,
-    "labour": 34.0,
-    "green": 9.0,
-    "act": 9.0,
-    "nz-first": 11.0,
-    "te-pati-maori": 3.0
-   },
-   "others": 2.0
+   "others": 2.4,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "1–5 Oct 2025",
@@ -973,7 +1085,9 @@
     "te-pati-maori": 4.4,
     "opportunity": 1.6
    },
-   "others": 4.0
+   "others": 4.0,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "25 Aug – 21 Sep 2025",
@@ -990,7 +1104,9 @@
     "te-pati-maori": 5.5,
     "opportunity": 2.5
    },
-   "others": 1.5
+   "others": 1.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "4–12 Sep 2025",
@@ -1007,7 +1123,9 @@
     "te-pati-maori": 4.1,
     "opportunity": 1.4
    },
-   "others": 0.9
+   "others": 0.9,
+   "pollster_key": "RNZ–Reid Research",
+   "internal": false
   },
   {
    "date": "1–10 Sep 2025",
@@ -1023,7 +1141,9 @@
     "nz-first": 10.0,
     "te-pati-maori": 4.0
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "31 Aug – 2 Sep 2025",
@@ -1040,7 +1160,9 @@
     "te-pati-maori": 4.3,
     "opportunity": 1.1
    },
-   "others": 2.2
+   "others": 2.2,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "28 Jul – 24 Aug 2025",
@@ -1057,7 +1179,9 @@
     "te-pati-maori": 2.5,
     "opportunity": 3.0
    },
-   "others": 0.5
+   "others": 0.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "1–10 Aug 2025",
@@ -1074,7 +1198,9 @@
     "te-pati-maori": 4.4,
     "opportunity": 2.8
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "2–6 Aug 2025",
@@ -1091,7 +1217,9 @@
     "te-pati-maori": 3.7,
     "opportunity": 1.3
    },
-   "others": 1.0
+   "others": 1.0,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "3–5 Aug 2025",
@@ -1108,7 +1236,9 @@
     "te-pati-maori": 3.2,
     "opportunity": 2.6
    },
-   "others": 2.6
+   "others": 2.6,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "30 Jun – 27 Jul 2025",
@@ -1125,7 +1255,9 @@
     "te-pati-maori": 3.5,
     "opportunity": 1.0
    },
-   "others": 2.0
+   "others": 2.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "1–10 Jul 2025",
@@ -1141,7 +1273,9 @@
     "nz-first": 7.0,
     "te-pati-maori": 3.8
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "2–6 Jul 2025",
@@ -1158,7 +1292,9 @@
     "te-pati-maori": 3.5,
     "opportunity": 1.2
    },
-   "others": 1.5
+   "others": 1.5,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "26 May – 22 Jun 2025",
@@ -1175,7 +1311,9 @@
     "te-pati-maori": 5.0,
     "opportunity": 3.0
    },
-   "others": 1.0
+   "others": 1.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "12–15 Jun 2025",
@@ -1191,7 +1329,9 @@
     "nz-first": 8.0,
     "te-pati-maori": 2.0
    },
-   "others": 4.0
+   "others": 4.0,
+   "pollster_key": "The Post/Freshwater Strategy",
+   "internal": false
   },
   {
    "date": "7–9 Jun 2025",
@@ -1208,7 +1348,9 @@
     "te-pati-maori": 3.3,
     "opportunity": 1.8
    },
-   "others": 3.2
+   "others": 3.2,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "23–30 May 2025",
@@ -1225,7 +1367,9 @@
     "te-pati-maori": 5.5,
     "opportunity": 2.2
    },
-   "others": 1.1
+   "others": 1.1,
+   "pollster_key": "RNZ–Reid Research",
+   "internal": false
   },
   {
    "date": "24–28 May 2025",
@@ -1242,7 +1386,9 @@
     "te-pati-maori": 3.7,
     "opportunity": 1.3
    },
-   "others": 3.9
+   "others": 3.9,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "28 Apr – 25 May 2025",
@@ -1259,7 +1405,9 @@
     "te-pati-maori": 4.5,
     "opportunity": 3.0
    },
-   "others": 2.0
+   "others": 2.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "30 Apr – 4 May 2025",
@@ -1276,7 +1424,9 @@
     "te-pati-maori": 3.9,
     "opportunity": 0.5
    },
-   "others": 1.8
+   "others": 1.8,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "24 Mar – 20 Apr 2025",
@@ -1293,7 +1443,9 @@
     "te-pati-maori": 4.5,
     "opportunity": 2.5
    },
-   "others": 1.5
+   "others": 1.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "29 Mar – 2 Apr 2025",
@@ -1310,7 +1462,9 @@
     "te-pati-maori": 3.4,
     "opportunity": 2.1
    },
-   "others": 1.3
+   "others": 1.3,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "29 Mar – 1 Apr 2025",
@@ -1327,7 +1481,9 @@
     "te-pati-maori": 4.3,
     "opportunity": 1.5
    },
-   "others": 1.4
+   "others": 1.4,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "21–27 Mar 2025",
@@ -1344,7 +1500,9 @@
     "te-pati-maori": 5.0,
     "opportunity": 1.8
    },
-   "others": null
+   "others": null,
+   "pollster_key": "RNZ–Reid Research",
+   "internal": false
   },
   {
    "date": "24 Feb – 23 Mar 2025",
@@ -1361,7 +1519,9 @@
     "te-pati-maori": 5.5,
     "opportunity": 4.0
    },
-   "others": 1.5
+   "others": 1.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "1–10 Mar 2025",
@@ -1377,7 +1537,9 @@
     "nz-first": 6.1,
     "te-pati-maori": 4.4
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "2–4 Mar 2025",
@@ -1394,7 +1556,9 @@
     "te-pati-maori": 6.5,
     "opportunity": 0.5
    },
-   "others": 2.5
+   "others": 2.5,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "27 Jan – 23 Feb 2025",
@@ -1411,7 +1575,9 @@
     "te-pati-maori": 3.0,
     "opportunity": 2.5
    },
-   "others": 2.5
+   "others": 2.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "3–7 Feb 2025",
@@ -1428,7 +1594,9 @@
     "te-pati-maori": 3.7,
     "opportunity": 1.9
    },
-   "others": 3.6
+   "others": 3.6,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "2–4 Feb 2025",
@@ -1445,7 +1613,9 @@
     "te-pati-maori": 4.4,
     "opportunity": 0.5
    },
-   "others": 2.2
+   "others": 2.2,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "7–27 Jan 2025",
@@ -1461,7 +1631,9 @@
     "nz-first": 5.2,
     "te-pati-maori": 4.6
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "2–26 Jan 2025",
@@ -1478,7 +1650,9 @@
     "te-pati-maori": 6.5,
     "opportunity": 1.5
    },
-   "others": 2.0
+   "others": 2.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "9–13 Jan 2025",
@@ -1495,7 +1669,9 @@
     "te-pati-maori": 5.3,
     "opportunity": 2.1
    },
-   "others": 3.7
+   "others": 3.7,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "25 Nov – 15 Dec 2024",
@@ -1512,7 +1688,9 @@
     "te-pati-maori": 5.5,
     "opportunity": 1.0
    },
-   "others": 2.5
+   "others": 2.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "30 Nov – 4 Dec 2024",
@@ -1529,7 +1707,9 @@
     "te-pati-maori": 7.0,
     "opportunity": 1.5
    },
-   "others": 2.0
+   "others": 2.0,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "1–3 Dec 2024",
@@ -1546,7 +1726,9 @@
     "te-pati-maori": 5.5,
     "opportunity": 1.1
    },
-   "others": 2.2
+   "others": 2.2,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "22–28 Nov 2024",
@@ -1562,7 +1744,9 @@
     "nz-first": 6.0,
     "te-pati-maori": 7.0
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "26–27 Nov 2024",
@@ -1578,7 +1762,9 @@
     "nz-first": 6.0,
     "te-pati-maori": 4.0
    },
-   "others": null
+   "others": null,
+   "pollster_key": "The Post/Freshwater Strategy",
+   "internal": false
   },
   {
    "date": "28 Oct – 24 Nov 2024",
@@ -1595,7 +1781,9 @@
     "te-pati-maori": 9.0,
     "opportunity": 3.5
    },
-   "others": 2.0
+   "others": 2.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "6–10 Nov 2024",
@@ -1612,7 +1800,9 @@
     "te-pati-maori": 2.5,
     "opportunity": 0.9
    },
-   "others": 2.1
+   "others": 2.1,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "1–10 Nov 2024",
@@ -1628,7 +1818,9 @@
     "nz-first": 7.0,
     "te-pati-maori": 3.3
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "23 Sep – 20 Oct 2024",
@@ -1645,7 +1837,9 @@
     "te-pati-maori": 5.0,
     "opportunity": 2.0
    },
-   "others": 3.0
+   "others": 3.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "5–9 Oct 2024",
@@ -1662,7 +1856,9 @@
     "te-pati-maori": 3.8,
     "opportunity": 2.6
    },
-   "others": 2.3
+   "others": 2.3,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "3–7 Oct 2024",
@@ -1679,7 +1875,9 @@
     "te-pati-maori": 3.0,
     "opportunity": 2.5
    },
-   "others": 1.6
+   "others": 1.6,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "26 Aug – 22 Sep 2024",
@@ -1696,7 +1894,9 @@
     "te-pati-maori": 4.0,
     "opportunity": 2.5
    },
-   "others": 1.5
+   "others": 1.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "8–10 Sep 2024",
@@ -1713,7 +1913,9 @@
     "te-pati-maori": 5.0,
     "opportunity": 1.1
    },
-   "others": 2.4
+   "others": 2.4,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "1–10 Sep 2024",
@@ -1729,7 +1931,9 @@
     "nz-first": 6.1,
     "te-pati-maori": 3.9
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "29 Jul – 25 Aug 2024",
@@ -1746,7 +1950,9 @@
     "te-pati-maori": 3.5,
     "opportunity": 2.5
    },
-   "others": 1.5
+   "others": 1.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "10–14 Aug 2024",
@@ -1763,7 +1969,9 @@
     "te-pati-maori": 4.2,
     "opportunity": 1.1
    },
-   "others": 2.8
+   "others": 2.8,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "24 Jun – 21 Jul 2024",
@@ -1780,7 +1988,9 @@
     "te-pati-maori": 6.0,
     "opportunity": 4.5
    },
-   "others": 1.5
+   "others": 1.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "4–8 Jul 2024",
@@ -1797,7 +2007,9 @@
     "te-pati-maori": 3.5,
     "opportunity": 2.4
    },
-   "others": 1.8
+   "others": 1.8,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "27 May – 23 Jun 2024",
@@ -1814,7 +2026,9 @@
     "te-pati-maori": 3.5,
     "opportunity": 2.5
    },
-   "others": 2.5
+   "others": 2.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "15–19 Jun 2024",
@@ -1831,7 +2045,9 @@
     "te-pati-maori": 3.3,
     "opportunity": 1.5
    },
-   "others": 2.1
+   "others": 2.1,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "4–6 Jun 2024",
@@ -1848,7 +2064,9 @@
     "te-pati-maori": 4.0,
     "opportunity": 0.8
    },
-   "others": 2.4
+   "others": 2.4,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "22 Apr – 19 May 2024",
@@ -1865,7 +2083,9 @@
     "te-pati-maori": 3.0,
     "opportunity": 3.0
    },
-   "others": 1.5
+   "others": 1.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "1–10 May 2024",
@@ -1877,7 +2097,9 @@
     "national": 35.0,
     "labour": 32.0
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "5–7 May 2024",
@@ -1894,7 +2116,9 @@
     "te-pati-maori": 3.1,
     "opportunity": 1.4
    },
-   "others": 3.1
+   "others": 3.1,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "30 Apr 2024",
@@ -1910,7 +2134,9 @@
     "nz-first": 6.0,
     "te-pati-maori": 4.0
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "20–24 Apr 2024",
@@ -1927,7 +2153,9 @@
     "te-pati-maori": 3.7,
     "opportunity": 1.2
    },
-   "others": 3.7
+   "others": 3.7,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "25 Mar – 21 Apr 2024",
@@ -1944,7 +2172,9 @@
     "te-pati-maori": 5.5,
     "opportunity": 2.0
    },
-   "others": 2.0
+   "others": 2.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "2–4 Apr 2024",
@@ -1961,7 +2191,9 @@
     "te-pati-maori": 4.6,
     "opportunity": 1.6
    },
-   "others": 3.0
+   "others": 3.0,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "26 Feb – 24 Mar 2024",
@@ -1978,7 +2210,9 @@
     "te-pati-maori": 3.5,
     "opportunity": 2.5
    },
-   "others": 1.0
+   "others": 1.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "1–10 Mar 2024",
@@ -1993,7 +2227,9 @@
     "act": 8.0,
     "nz-first": 6.0
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "3–5 Mar 2024",
@@ -2010,7 +2246,9 @@
     "te-pati-maori": 2.5,
     "opportunity": 2.1
    },
-   "others": 4.0
+   "others": 4.0,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "29 Jan – 25 Feb 2024",
@@ -2027,7 +2265,9 @@
     "te-pati-maori": 4.0,
     "opportunity": 2.5
    },
-   "others": 1.5
+   "others": 1.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "10–14 Feb 2024",
@@ -2044,7 +2284,9 @@
     "te-pati-maori": 3.7,
     "opportunity": 1.9
    },
-   "others": 2.6
+   "others": 2.6,
+   "pollster_key": "1 News–Verian",
+   "internal": false
   },
   {
    "date": "1–10 Feb 2024",
@@ -2061,7 +2303,9 @@
     "te-pati-maori": 4.9,
     "opportunity": 1.4
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Talbot Mills",
+   "internal": true
   },
   {
    "date": "1–7 Feb 2024",
@@ -2077,7 +2321,9 @@
     "nz-first": 5.0,
     "te-pati-maori": 2.3
    },
-   "others": 2.5
+   "others": 2.5,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "8–28 Jan 2024",
@@ -2094,7 +2340,9 @@
     "te-pati-maori": 4.5,
     "opportunity": 4.5
    },
-   "others": 2.0
+   "others": 2.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "8–10 Jan 2024",
@@ -2110,7 +2358,9 @@
     "nz-first": 5.6,
     "te-pati-maori": 3.6
    },
-   "others": null
+   "others": null,
+   "pollster_key": "Curia",
+   "internal": true
   },
   {
    "date": "27 Nov – 17 Dec 2023",
@@ -2127,7 +2377,9 @@
     "te-pati-maori": 5.0,
     "opportunity": 4.0
    },
-   "others": 2.0
+   "others": 2.0,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "3–5 Dec 2023",
@@ -2143,7 +2395,9 @@
     "nz-first": 8.1,
     "te-pati-maori": 5.0
    },
-   "others": 4.6
+   "others": 4.6,
+   "pollster_key": "Curia",
+   "internal": true
   },
   {
    "date": "30 Oct – 26 Nov 2023",
@@ -2160,7 +2414,9 @@
     "te-pati-maori": 2.5,
     "opportunity": 3.5
    },
-   "others": 2.5
+   "others": 2.5,
+   "pollster_key": "Roy Morgan",
+   "internal": false
   },
   {
    "date": "1–6 Nov 2023",
@@ -2177,13 +2433,15 @@
     "te-pati-maori": 3.4,
     "opportunity": 2.9
    },
-   "others": 3.7
+   "others": 3.7,
+   "pollster_key": "Taxpayers' Union–Curia",
+   "internal": false
   },
   {
    "date": "14 Oct 2023",
    "end_date": "2023-10-14",
    "pollster": "2023 election result",
-   "source_url": null,
+   "source_url": "https://en.wikipedia.org/wiki/Results_of_the_2023_New_Zealand_general_election",
    "sample_size": null,
    "results": {
     "national": 38.08,
@@ -2195,81 +2453,725 @@
     "opportunity": 2.22
    },
    "is_election_result": true,
-   "others": 3.36
+   "others": 3.36,
+   "pollster_key": "2023 election result",
+   "internal": false
   }
  ],
  "events": [
   {
    "date": "12 Aug 2026",
-   "event": "Prime Minister and National Party leader Christopher Luxon survives a second party leadership vote."
+   "event": "Prime Minister and National Party leader Christopher Luxon survives a second party leadership vote .",
+   "end_date": "2026-08-12"
   },
   {
    "date": "28 May 2026",
-   "event": "Budget 2026 is delivered."
+   "event": "Budget 2026 is delivered.",
+   "end_date": "2026-05-28"
   },
   {
    "date": "11 May 2026",
-   "event": "Mariameno Kapa-Kingi exits Te Pāti Māori to start Te Tai Tokerau Party."
+   "event": "Mariameno Kapa-Kingi exits Te Pāti Māori to start Te Tai Tokerau Party .",
+   "end_date": "2026-05-11"
   },
   {
    "date": "21 Apr 2026",
-   "event": "Prime Minister and National Party leader Christopher Luxon survives a party leadership vote called by himself."
+   "event": "Prime Minister and National Party leader Christopher Luxon survives a party leadership vote called by himself.",
+   "end_date": "2026-04-21"
   },
   {
    "date": "2 Mar 2026",
-   "event": "The Strait of Hormuz is closed as part of the Iran war, causing an incoming fuel crisis affecting New Zealand."
+   "event": "The Strait of Hormuz is closed as part of the Iran war , causing an incoming fuel crisis affecting New Zealand.",
+   "end_date": "2026-03-02"
   },
   {
    "date": "21 Jan 2026",
-   "event": "Prime Minister Christopher Luxon announces that the election will be held on 7 November 2026."
+   "event": "Prime Minister Christopher Luxon announces that the election will be held on 7 November 2026.",
+   "end_date": "2026-01-21"
   },
   {
    "date": "5 Dec 2025",
-   "event": "Mariameno Kapa-Kingi reinstated as a member of Te Pāti Māori by the High Court."
+   "event": "Mariameno Kapa-Kingi reinstated as a member of Te Pāti Māori by the High Court.",
+   "end_date": "2025-12-05"
   },
   {
    "date": "16 Nov 2025",
-   "event": "Qiulae Wong becomes leader of The Opportunity Party."
+   "event": "Qiulae Wong becomes leader of The Opportunity Party .",
+   "end_date": "2025-11-16"
   },
   {
    "date": "10 Nov 2025",
-   "event": "Tākuta Ferris and Mariameno Kapa-Kingi are expelled from Te Pāti Māori."
+   "event": "Tākuta Ferris and Mariameno Kapa-Kingi are expelled from Te Pāti Māori.",
+   "end_date": "2025-11-10"
   },
   {
    "date": "6 Sep 2025",
-   "event": "Oriini Kaipara of Te Pāti Māori wins the Tāmaki Makaurau by-election."
+   "event": "Oriini Kaipara of Te Pāti Māori wins the Tāmaki Makaurau by-election .",
+   "end_date": "2025-09-06"
   },
   {
    "date": "31 May 2025",
-   "event": "David Seymour of the ACT party becomes Deputy Prime Minister, replacing Winston Peters of NZ First."
+   "event": "David Seymour of the ACT party becomes Deputy Prime Minister, replacing Winston Peters of NZ First.",
+   "end_date": "2025-05-31"
   },
   {
    "date": "22 May 2025",
-   "event": "Budget 2025 is delivered."
+   "event": "Budget 2025 is delivered.",
+   "end_date": "2025-05-22"
   },
   {
    "date": "10–19 Nov 2024",
-   "event": "Hīkoi mō te Tiriti protest against the Treaty Principles Bill."
+   "event": "Hīkoi mō te Tiriti protest against the Treaty Principles Bill .",
+   "end_date": "2024-11-19"
   },
   {
    "date": "30 May 2024",
-   "event": "Budget 2024 is delivered."
+   "event": "Budget 2024 is delivered.",
+   "end_date": "2024-05-30"
   },
   {
    "date": "10 Mar 2024",
-   "event": "Chlöe Swarbrick is elected as co-leader of the Green Party."
+   "event": "Chlöe Swarbrick is elected as co-leader of the Green Party .",
+   "end_date": "2024-03-10"
   },
   {
    "date": "30 Jan 2024",
-   "event": "James Shaw announces his intention to resign as co-leader of the Green Party in March 2024."
+   "event": "James Shaw announces his intention to resign as co-leader of the Green Party in March 2024.",
+   "end_date": "2024-01-30"
   },
   {
    "date": "3 Dec 2023",
-   "event": "Raf Manji resigns as leader of The Opportunities Party."
+   "event": "Raf Manji resigns as leader of The Opportunities Party .",
+   "end_date": "2023-12-03"
   },
   {
    "date": "27 Nov 2023",
-   "event": "Christopher Luxon is sworn in as Prime Minister of New Zealand."
+   "event": "Christopher Luxon is sworn in as Prime Minister of New Zealand .",
+   "end_date": "2023-11-27"
   }
- ]
+ ],
+ "source_revid": 1381492171,
+ "pollsters": {
+  "1 News–Verian": {
+   "commissioner": "TVNZ 1News",
+   "fieldwork_company": "Verian (formerly Colmar Brunton / Kantar Public)",
+   "method": "Landline + mobile CATI and online panel, n≈1,000, max. sampling error ±3.1 pts at 95%",
+   "type": "public-media",
+   "history": "Same series as 1 News–Colmar Brunton (to 2021) and 1 News–Kantar Public (2021–23)",
+   "n_polls": 20
+  },
+  "RNZ–Reid Research": {
+   "commissioner": "RNZ (previously Newshub, to 2024)",
+   "fieldwork_company": "Reid Research",
+   "method": "Online panel + telephone, n≈1,000, ±3.1 pts",
+   "type": "public-media",
+   "n_polls": 8
+  },
+  "Taxpayers' Union–Curia": {
+   "commissioner": "New Zealand Taxpayers' Union (advocacy group)",
+   "fieldwork_company": "Curia Market Research (David Farrar)",
+   "method": "Phone + online panel, n≈1,000, ±3.1 pts; Curia left RANZ in 2024",
+   "type": "public-sponsored",
+   "n_polls": 33
+  },
+  "Roy Morgan": {
+   "commissioner": "Roy Morgan Research (self-published)",
+   "fieldwork_company": "Roy Morgan",
+   "method": "Telephone/online, fieldwork spans the whole month, n≈800–1,000",
+   "type": "public-self",
+   "n_polls": 35
+  },
+  "The Post/Freshwater Strategy": {
+   "commissioner": "The Post (Stuff)",
+   "fieldwork_company": "Freshwater Strategy",
+   "method": "Online panel, n≈1,000–1,500",
+   "type": "public-media",
+   "n_polls": 8
+  },
+  "Talbot Mills": {
+   "commissioner": "Talbot Mills Research (corporate-client poll; also Labour's pollster, formerly UMR)",
+   "fieldwork_company": "Talbot Mills",
+   "method": "Online panel, n≈1,000; results leaked/published irregularly",
+   "type": "internal-leaked",
+   "n_polls": 21
+  },
+  "Anacta": {
+   "commissioner": "Anacta Consulting (corporate clients; has polled for Labour)",
+   "fieldwork_company": "Anacta",
+   "method": "Online, n≈1,300–1,700; published via NZ Herald / The Post",
+   "type": "internal-leaked",
+   "n_polls": 2
+  },
+  "Curia": {
+   "commissioner": "Curia Market Research (National's pollster) - publicly released polls not sponsored by the Taxpayers' Union",
+   "fieldwork_company": "Curia",
+   "method": "Phone + online",
+   "type": "internal-leaked",
+   "n_polls": 2
+  }
+ },
+ "electorate_polls": [
+  {
+   "electorate": "Auckland Central",
+   "date": "22–29 Jul 2026",
+   "end_date": "2026-07-29",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "national": 28.0,
+    "green": 24.0,
+    "labour": 28.0,
+    "act": 7.0,
+    "nz-first": 9.0,
+    "opportunity": 3.0,
+    "te-pati-maori": 2.0
+   }
+  },
+  {
+   "electorate": "Auckland Central",
+   "date": "22–29 Jul 2026",
+   "end_date": "2026-07-29",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "national": 30.0,
+    "green": 25.0,
+    "labour": 23.0
+   }
+  },
+  {
+   "electorate": "Hutt South",
+   "date": "17–19 Sep 2026",
+   "end_date": "2026-09-19",
+   "pollster": "Victor Consulting",
+   "sample_size": 533,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "labour": 36.0,
+    "national": 17.0,
+    "green": 18.5,
+    "opportunity": 9.0,
+    "nz-first": 8.0,
+    "act": 3.0,
+    "te-pati-maori": 3.0
+   }
+  },
+  {
+   "electorate": "Hutt South",
+   "date": "17–19 Sep 2026",
+   "end_date": "2026-09-19",
+   "pollster": "Victor Consulting",
+   "sample_size": 533,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "labour": 42.0,
+    "national": 30.0,
+    "green": 9.0
+   }
+  },
+  {
+   "electorate": "Kāpiti",
+   "date": "Sep 2026",
+   "end_date": "2026-09-30",
+   "pollster": "Curia",
+   "sample_size": null,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "national": 43.0,
+    "labour": 36.0
+   }
+  },
+  {
+   "electorate": "Kāpiti",
+   "date": "29–31 Jul 2026",
+   "end_date": "2026-07-31",
+   "pollster": "Community Engagement Limited",
+   "sample_size": 821,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "national": 24.1,
+    "labour": 31.5,
+    "green": 14.0,
+    "opportunity": 6.5,
+    "nz-first": 9.7,
+    "act": 5.8,
+    "te-pati-maori": 1.4
+   }
+  },
+  {
+   "electorate": "Kāpiti",
+   "date": "29–31 Jul 2026",
+   "end_date": "2026-07-31",
+   "pollster": "Community Engagement Limited",
+   "sample_size": 821,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "national": 33.6,
+    "labour": 37.5,
+    "green": 5.9,
+    "opportunity": 4.1
+   }
+  },
+  {
+   "electorate": "Mount Albert",
+   "date": "1–5 Oct 2026",
+   "end_date": "2026-10-05",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "labour": 31.0,
+    "national": 28.0,
+    "green": 17.0,
+    "opportunity": 6.0,
+    "nz-first": 7.0,
+    "act": 7.0
+   }
+  },
+  {
+   "electorate": "Mount Albert",
+   "date": "1–5 Oct 2026",
+   "end_date": "2026-10-05",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "labour": 31.0,
+    "national": 26.0,
+    "green": 18.0,
+    "opportunity": 8.0
+   }
+  },
+  {
+   "electorate": "Mount Albert",
+   "date": "21–28 Sep 2026",
+   "end_date": "2026-09-28",
+   "pollster": "Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "labour": 32.0,
+    "national": 32.0,
+    "green": 19.0,
+    "opportunity": 6.0,
+    "nz-first": 6.0,
+    "act": 3.0,
+    "te-pati-maori": 2.0
+   }
+  },
+  {
+   "electorate": "Mount Albert",
+   "date": "21–28 Sep 2026",
+   "end_date": "2026-09-28",
+   "pollster": "Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "labour": 33.0,
+    "national": 32.0,
+    "green": 14.0,
+    "opportunity": 10.0,
+    "nz-first": 5.0,
+    "act": 3.0,
+    "te-pati-maori": 2.0
+   }
+  },
+  {
+   "electorate": "Mount Roskill",
+   "date": "1–12 Oct 2026",
+   "end_date": "2026-10-12",
+   "pollster": "Community Engagement Limited",
+   "sample_size": 520,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "labour": 36.7,
+    "national": 21.6,
+    "green": 16.7,
+    "act": 7.2,
+    "opportunity": 5.4,
+    "nz-first": 5.7,
+    "te-pati-maori": 5.4
+   }
+  },
+  {
+   "electorate": "Mount Roskill",
+   "date": "1–12 Oct 2026",
+   "end_date": "2026-10-12",
+   "pollster": "Community Engagement Limited",
+   "sample_size": 520,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "labour": 47.0,
+    "national": 29.9,
+    "green": 4.2,
+    "act": 3.6,
+    "opportunity": 2.8
+   }
+  },
+  {
+   "electorate": "Waitaki",
+   "date": "18–25 Sep 2026",
+   "end_date": "2026-09-25",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "national": 32.0,
+    "labour": 19.0,
+    "nz-first": 8.0,
+    "act": 19.0,
+    "green": 13.0,
+    "te-pati-maori": 4.0,
+    "opportunity": 4.0,
+    "others": 1.0
+   }
+  },
+  {
+   "electorate": "Waitaki",
+   "date": "18–25 Sep 2026",
+   "end_date": "2026-09-25",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "national": 44.0,
+    "labour": 21.0,
+    "nz-first": 18.0,
+    "act": 5.0,
+    "green": 7.0,
+    "te-pati-maori": 2.0,
+    "opportunity": 2.0
+   }
+  },
+  {
+   "electorate": "Wellington Bays",
+   "date": "4–10 Sep 2026",
+   "end_date": "2026-09-10",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "green": 31.0,
+    "labour": 29.0,
+    "national": 13.0,
+    "act": 7.0,
+    "nz-first": 7.0,
+    "opportunity": 5.0
+   }
+  },
+  {
+   "electorate": "Wellington Bays",
+   "date": "4–10 Sep 2026",
+   "end_date": "2026-09-10",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "green": 29.0,
+    "labour": 29.0,
+    "national": 15.0,
+    "act": 5.0,
+    "nz-first": 5.0,
+    "opportunity": 3.0
+   }
+  },
+  {
+   "electorate": "West Coast-Tasman",
+   "date": "10–17 Sep 2026",
+   "end_date": "2026-09-17",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "national": 26.0,
+    "labour": 25.0,
+    "nz-first": 15.0,
+    "act": 15.0,
+    "green": 11.0,
+    "opportunity": 6.0,
+    "te-pati-maori": 1.0,
+    "others": 1.0
+   }
+  },
+  {
+   "electorate": "West Coast-Tasman",
+   "date": "10–17 Sep 2026",
+   "end_date": "2026-09-17",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "national": 36.0,
+    "labour": 30.0,
+    "nz-first": 15.0,
+    "act": 7.0,
+    "green": 6.0,
+    "opportunity": 4.0,
+    "others": 2.0
+   }
+  },
+  {
+   "electorate": "Hauraki-Waikato",
+   "date": "21 Sep – 1 Oct 2026",
+   "end_date": "2026-10-01",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "te-pati-maori": 26.0,
+    "labour": 24.0,
+    "green": 19.0
+   }
+  },
+  {
+   "electorate": "Hauraki-Waikato",
+   "date": "21 Sep – 1 Oct 2026",
+   "end_date": "2026-10-01",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "te-pati-maori": 54.0,
+    "labour": 31.0
+   }
+  },
+  {
+   "electorate": "Ikaroa-Rāwhiti",
+   "date": "28 Sep – 8 Oct 2026",
+   "end_date": "2026-10-08",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "labour": 47.0,
+    "te-pati-maori": 11.0,
+    "green": 29.0
+   }
+  },
+  {
+   "electorate": "Ikaroa-Rāwhiti",
+   "date": "28 Sep – 8 Oct 2026",
+   "end_date": "2026-10-08",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "labour": 40.0,
+    "te-pati-maori": 19.0,
+    "green": 15.0
+   }
+  },
+  {
+   "electorate": "Tāmaki Makaurau",
+   "date": "5–15 Oct 2026",
+   "end_date": "2026-10-15",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "te-pati-maori": 11.0,
+    "labour": 31.0,
+    "green": 19.0
+   }
+  },
+  {
+   "electorate": "Tāmaki Makaurau",
+   "date": "5–15 Oct 2026",
+   "end_date": "2026-10-15",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "te-pati-maori": 36.0,
+    "labour": 34.0,
+    "green": 23.0
+   }
+  },
+  {
+   "electorate": "Tāmaki Makaurau",
+   "date": "25 Sep – 9 Oct 2026",
+   "end_date": "2026-10-09",
+   "pollster": "Mata–Horizon",
+   "sample_size": 711,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "te-pati-maori": 30.0,
+    "labour": 38.0
+   }
+  },
+  {
+   "electorate": "Te Tai Hauāuru",
+   "date": "14–24 Sep 2026",
+   "end_date": "2026-09-24",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "te-pati-maori": 18.0,
+    "labour": 30.0,
+    "national": 6.0,
+    "green": 22.0,
+    "nz-first": 4.0,
+    "opportunity": 4.0,
+    "act": 1.0
+   }
+  },
+  {
+   "electorate": "Te Tai Hauāuru",
+   "date": "14–24 Sep 2026",
+   "end_date": "2026-09-24",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "te-pati-maori": 46.0,
+    "labour": 34.0,
+    "national": 13.0
+   }
+  },
+  {
+   "electorate": "Te Tai Tokerau",
+   "date": "5 Oct – 15 Oct 2026",
+   "end_date": "2026-10-15",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "green": 25.0,
+    "labour": 27.0,
+    "te-pati-maori": 11.0,
+    "te-tai-tokerau-party": 3.0,
+    "nz-first": 6.0,
+    "national": 4.0,
+    "opportunity": 3.0
+   }
+  },
+  {
+   "electorate": "Te Tai Tokerau",
+   "date": "5 Oct – 15 Oct 2026",
+   "end_date": "2026-10-15",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "green": 24.0,
+    "labour": 18.0,
+    "te-pati-maori": 17.0,
+    "te-tai-tokerau-party": 12.0
+   }
+  },
+  {
+   "electorate": "Te Tai Tokerau",
+   "date": "25 Sep – 9 Oct 2026",
+   "end_date": "2026-10-09",
+   "pollster": "Mata–Horizon",
+   "sample_size": 711,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "green": 23.0,
+    "labour": 27.0,
+    "te-pati-maori": 19.0,
+    "te-tai-tokerau-party": 11.0
+   }
+  },
+  {
+   "electorate": "Te Tai Tonga",
+   "date": "14–24 Sep 2026",
+   "end_date": "2026-09-24",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "labour": 31.0,
+    "te-pati-maori": 12.0,
+    "green": 16.0,
+    "nz-first": 7.0,
+    "national": 6.0,
+    "opportunity": 4.0,
+    "act": 3.0
+   }
+  },
+  {
+   "electorate": "Te Tai Tonga",
+   "date": "14–24 Sep 2026",
+   "end_date": "2026-09-24",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "labour": 36.0,
+    "te-pati-maori": 21.0,
+    "green": 19.0,
+    "independent": 18.0
+   }
+  },
+  {
+   "electorate": "Waiariki",
+   "date": "21 Sep – 1 Oct 2026",
+   "end_date": "2026-10-01",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "te-pati-maori": 27.0,
+    "green": 25.0,
+    "labour": 28.0,
+    "nz-first": 5.0,
+    "national": 5.0,
+    "act": 1.0
+   }
+  },
+  {
+   "electorate": "Waiariki",
+   "date": "21 Sep – 1 Oct 2026",
+   "end_date": "2026-10-01",
+   "pollster": "Whakaata Māori–Curia",
+   "sample_size": 500,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "te-pati-maori": 52.0,
+    "green": 20.0,
+    "labour": 18.0,
+    "opportunity": 3.0
+   }
+  }
+ ],
+ "electorate_polls_note": "Electorate-level polls from the same Wikipedia article (section 'Electorate polling'). 'vote' = party or electorate (candidate) vote. Small samples (n≈400–800); treat as indicative only."
 }
