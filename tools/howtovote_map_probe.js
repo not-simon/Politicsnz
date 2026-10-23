@@ -19,12 +19,12 @@ const path = require('path');
       const ct = (resp.headers()['content-type'] || '').toLowerCase();
       const u = resp.url();
       let body = null;
-      if (/json|csv|geo|octet|text\/plain/.test(ct) && !/\.(js|css|png|jpg|woff2?)(\?|$)/.test(u)) {
+      if ((/json|csv|geo|octet|text\/plain/.test(ct) && !/\.(js|css|png|jpg|woff2?)(\?|$)/.test(u)) || /votelocations\/dist/.test(u)) {
         body = await resp.body().catch(() => null);
       }
       log.push(`${resp.status()} ${ct} ${body ? body.length : '-'} ${u}`);
       if (body && body.length > 200) {
-        const ext = /json/.test(ct) ? 'json' : /csv/.test(ct) ? 'csv' : 'txt';
+        const ext = /json/.test(ct) ? 'json' : /csv/.test(ct) ? 'csv' : /javascript/.test(ct) ? 'js' : 'txt';
         fs.writeFileSync(path.join(outdir, `resp-${String(++n).padStart(3, '0')}.${ext}`), body);
         fs.appendFileSync(path.join(outdir, 'index.txt'), `resp-${String(n).padStart(3, '0')}.${ext} ${u}\n`);
       }

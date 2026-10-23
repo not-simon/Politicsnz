@@ -925,6 +925,9 @@ footer .logo { font-size: 1rem; }
 <style id="glue">
 /* Glue: classes from the app that sit outside the design-system contract, written against its tokens. */
 /* adapt the app's markup to the design's component grids */
+button.lnk { background: none; border: 0; padding: 0; font: inherit; color: var(--link, var(--text)); text-decoration: underline; text-decoration-color: var(--link-underline, var(--line-strong)); text-underline-offset: 2px; cursor: pointer }
+button.lnk:hover { text-decoration-color: currentColor }
+.locate { display: grid; gap: 8px } .locate .found { font-size: var(--t-small) }
 .starter { grid-template-columns: auto 1fr auto; grid-template-rows: auto auto; row-gap: 2px }
 .starter .ic { grid-row: 1 / span 2 } .starter h3 { grid-column: 2; margin: 0; font: 700 var(--t-body) var(--font-body) } .starter p { grid-column: 2; margin: 0 }
 .starter .go { grid-column: 3; grid-row: 1 / span 2; width: auto; height: auto; white-space: nowrap; font: 600 var(--t-small) var(--font-body) }
@@ -1136,6 +1139,7 @@ V.home = async () => {
       <button class="starter" data-go="issues"><span class="ic">${ic('issues')}</span><h3>Compare on the issues</h3><p class="muted small">Cost of living, housing, health and more, with every party's position side by side.</p><span class="go">See the issues →</span></button>
       <button class="starter" data-go="electorate"><span class="ic">${ic('parties')}</span><h3>Meet your local candidates</h3><p class="muted small">Pick your electorate to see who's standing, with photos, in their own words.</p><span class="go">Find your electorate →</span></button></div>
 
+    ${locateBlock('loc-home')}
     <div class="stack" style="gap:16px"><div class="row" style="justify-content:space-between"><div><div class="kicker">On the ballot</div><h2>The parties</h2></div><button class="btn sm" data-go="parties">All ${Object.keys(S.data.parties).filter(s => (guideParty(s) || P(s).policy_count)).length || ''} parties</button></div>
       <div class="grid">${partyOrder().slice(0, 6).map(partyCard).join('')}</div></div>
 
@@ -1344,6 +1348,41 @@ function renderBanner() { const ph = electionPhase(); let el = $('#banner'); if 
     results: 'Voting has closed. Preliminary results are being counted; official results on 27 November.', after: '' }[ph];
   if (!msg) { el.hidden = true; return } el.hidden = false; el.innerHTML = `<div class="wrap"><span>${msg}</span><button aria-label="Dismiss" id="banner-x">×</button></div>`; $('#banner-x').onclick = () => { store.set(key, 'x'); el.hidden = true } }
 function blockedToday(view) { return electionPhase() === 'electionday' && ['match', 'compass', 'swipe', 'swipe-tally', 'polls', 'trends'].includes(view) }
+
+/* ----- find my electorate from location (device-side only) ----- */
+function pointInRing(pt, ring) { let inside = false; const [x, y] = pt; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) { const [xi, yi] = ring[i], [xj, yj] = ring[j]; if (((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi)) inside = !inside } return inside }
+function featureContains(f, lon, lat) { const polys = f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates; for (const poly of polys) { if (pointInRing([lon, lat], poly[0])) { for (let k = 1; k < poly.length; k++) if (pointInRing([lon, lat], poly[k])) return false; return true } } return false }
+async function locateElectorate() { if (!navigator.geolocation) throw new Error('Your browser does not offer location.');
+  const pos = await new Promise((ok, no) => navigator.geolocation.getCurrentPosition(ok, no, { enableHighAccuracy: false, timeout: 12000, maximumAge: 300000 }));
+  let { longitude: lon, latitude: lat } = pos.coords; if (lon < 0) lon += 360;
+  await loadGeo(2025); const hit = t => (S.geo[`${t}-2025`].features || []).find(f => featureContains(f, lon, lat));
+  return { general: hit('general'), maori: hit('maori'), accuracy: pos.coords.accuracy } }
+function locateBlock(id) { return `<div class="card locate" id="${id}"><div class="row" style="justify-content:space-between"><div><h3>Where do you live?</h3><p class="small muted">Use your location to find your electorate and the people standing there. The check happens on your device; your location is not sent or stored.</p></div><button class="btn primary sm" data-locate="${id}">Use my location</button></div><div class="found" id="${id}-out"></div></div>` }
+async function runLocate(id) { const out = $('#' + id + '-out'); out.innerHTML = '<span class="muted small">Finding your electorate…</span>';
+  try { const r = await locateElectorate(); if (!r.general && !r.maori) { out.innerHTML = '<span class="small">That location is outside New Zealand’s electorates.</span>'; return }
+    const E = S.data.electorates || []; const link = f => { const e = E.find(x => slugify(x.slug) === f.properties.slug || slugify(x.name) === f.properties.slug); return e ? `<button class="btn sm" data-go="electorate-${esc(e.slug)}">${esc(f.properties.name)} · ${(e.candidates || []).length} candidates</button>` : `<b>${esc(f.properties.name)}</b>` };
+    out.innerHTML = `<p class="small">You're in the <b>${r.general ? esc(r.general.properties.name) : '–'}</b> general electorate${r.maori ? ` and the <b>${esc(r.maori.properties.name)}</b> Māori electorate` : ''}. Which one you vote in depends on which roll you're on.</p><div class="row">${r.general ? link(r.general) : ''}${r.maori ? link(r.maori) : ''}</div>${r.accuracy > 2000 ? `<p class="tiny muted">Location accuracy is about ${Math.round(r.accuracy / 1000)} km, so near a boundary the result may be wrong; check at vote.nz.</p>` : ''}` }
+  catch (e) { out.innerHTML = `<span class="small">Couldn't get your location (${esc(e.message || 'permission denied')}). Pick your electorate from the list instead, or look up your address at vote.nz.</span>` } }
+
+/* ----- auto-link party and politician names in text ----- */
+function buildLinker() { if (S.linker !== undefined) return S.linker; const names = [];
+  for (const [slug, p] of Object.entries(S.data.parties)) { for (const n of [p.name, p.short]) if (n && n.length > 3 && !/^(Independent|Other)$/i.test(n)) names.push([n, 'party-' + slug]) }
+  for (const p of (S.people || [])) if (p.name && p.name.trim().split(/\s+/).length >= 2) names.push([p.name, 'person:' + p.folder]);
+  names.sort((a, b) => b[0].length - a[0].length); const map = Object.fromEntries(names);
+  const re = new RegExp('(?<![\\w-])(' + names.map(([n]) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')(?![\\w-])', 'g');
+  S.linker = names.length ? { re, map } : null; return S.linker }
+function autolink(root) { const L = buildLinker(); if (!L || !root) return; const skip = 'A, BUTTON, H1, H2, H3, H4, .nm, .st, .who, .pcard, .person, .seatcard, .match, .scard, .legend, .tabs, select, input, code, pre';
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: n => (n.nodeValue.trim().length > 3 && !n.parentElement.closest(skip)) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
+  const nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+  for (const n of nodes) { L.re.lastIndex = 0; if (!L.re.test(n.nodeValue)) continue; const frag = document.createDocumentFragment(); let last = 0; L.re.lastIndex = 0; let m;
+    while ((m = L.re.exec(n.nodeValue))) { frag.appendChild(document.createTextNode(n.nodeValue.slice(last, m.index))); const b = document.createElement('button'); b.className = 'lnk'; b.type = 'button'; b.textContent = m[0];
+      const t = L.map[m[0]]; if (t.startsWith('person:')) b.dataset.person = t.slice(7); else b.dataset.go = t; frag.appendChild(b); last = m.index + m[0].length }
+    frag.appendChild(document.createTextNode(n.nodeValue.slice(last))); n.parentNode.replaceChild(frag, n) } }
+
+/* ----- export / import saved results ----- */
+const SAVE_KEYS = ['quiz', 'quiz2', 'compass', 'swipe', 'myElectorate', 'bb-theme'];
+function exportSaved() { const o = {}; for (const k of SAVE_KEYS) { const v = store.get(k); if (v) o[k] = v } return btoa(unescape(encodeURIComponent(JSON.stringify(o)))) }
+function importSaved(code) { const o = JSON.parse(decodeURIComponent(escape(atob(code.trim())))); for (const [k, v] of Object.entries(o)) if (SAVE_KEYS.includes(k)) store.set(k, v) }
 
 /* ----- political compass ----- */
 function compassState() { try { return JSON.parse(store.get('compass') || '{}') } catch { return {} } }
@@ -1667,6 +1706,7 @@ V.electorate = async slug => {
   const sel = slug || store.get('myElectorate') || '';
   $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Your local vote</div><h2>Who's standing where you live</h2>
     <p class="lede">Choose your electorate to meet the candidates. Not sure which one you're in? Look up your address at vote.nz.</p></div>
+    ${locateBlock('loc-el')}
     <div class="toolbar"><select id="esel" aria-label="Electorate"><option value="">Choose your electorate…</option>
       ${['general', 'maori'].map(t => `<optgroup label="${t === 'maori' ? 'Māori electorates' : 'General electorates'}">${E.filter(e => (e.type || 'general') === t).map(e => `<option value="${esc(e.slug)}" ${e.slug === sel ? 'selected' : ''}>${esc(e.name)}</option>`).join('')}</optgroup>`).join('')}</select></div>
     <div id="ebody"></div></section>`;
@@ -1914,7 +1954,10 @@ V.more = async () => { await loadPages(); const keys = Object.keys(S.pages);
     ${group('Elections 2011–2026', k => k.startsWith('elections/') && !k.endsWith('README.md'))}
     ${group('Party profiles', k => /^parties\/[^/]+\/README\.md$/.test(k))}
     ${group('Track records', k => k.endsWith('track-record.md'))}
-    <div class="card stack"><h3>About this guide</h3><p class="small">Ballot Book is an independent, non-partisan research archive. It isn't affiliated with any party. Summaries are written to be neutral and every fact links to a source: party websites and policy documents, the Electoral Commission, Parliament, Wikipedia, policy.nz and news reports. Party policy texts are reproduced as published, for reference. If you spot an error, the files are plain text in the GitHub repository.</p></div></section>` };
+    <div class="card stack"><h3>Your saved answers</h3><p class="small">Quiz, swipe and compass answers are saved on this device only. To move them to another device, copy this code and paste it there.</p><div class="row"><button class="btn sm" id="exp">Copy my code</button><input type="search" id="impcode" placeholder="Paste a code" aria-label="Import code" style="flex:1 1 200px"><button class="btn sm" id="imp">Import</button><span class="tiny muted" id="expmsg"></span></div></div>
+    <div class="card stack"><h3>About this guide</h3><p class="small">Ballot Book is an independent, non-partisan research archive. It isn't affiliated with any party. Summaries are written to be neutral and every fact links to a source: party websites and policy documents, the Electoral Commission, Parliament, Wikipedia, policy.nz and news reports. Party policy texts are reproduced as published, for reference. If you spot an error, the files are plain text in the GitHub repository.</p></div></section>`;
+  $('#exp').onclick = async () => { const code = exportSaved(); try { await navigator.clipboard.writeText(code); $('#expmsg').textContent = 'Copied' } catch { $('#impcode').value = code; $('#impcode').select(); $('#expmsg').textContent = 'Select and copy the code' } };
+  $('#imp').onclick = () => { try { importSaved($('#impcode').value); $('#expmsg').textContent = 'Imported. Your saved answers are restored.' } catch { $('#expmsg').textContent = 'That code didn’t work.' } } };
 function pageTitle(k) { const t = (S.pages[k] || '').match(/^#\s+(.+)$/m); return t ? t[1].replace(/[*_`]/g, '') : k }
 async function openPage(k) { await loadPages(); const t = S.pages[k];
   if (!t) { openDialog('Not written yet', `<p>${esc(k)} isn't in this version of the guide yet.</p>`); return }
@@ -1922,10 +1965,13 @@ async function openPage(k) { await loadPages(); const t = S.pages[k];
 function md(t) { try { return DOMPurify.sanitize(marked.parse(String(t || ''))) } catch { return `<pre>${esc(t)}</pre>` } }
 
 /* ===== shell ===== */
-function openDialog(title, html) { $('#dlg-title').textContent = title; $('#dlg-body').innerHTML = html; const d = $('#dlg'); if (!d.open) d.showModal(); $('#dlg-body').scrollTop = 0; d.scrollTop = 0 }
+function openDialog(title, html) { $('#dlg-title').textContent = title; $('#dlg-body').innerHTML = html; const d = $('#dlg'); if (!d.open) d.showModal(); $('#dlg-body').scrollTop = 0; d.scrollTop = 0; loadPeople().then(() => autolink($('#dlg-body'))) }
+async function openPersonByFolder(folder) { await loadPeople(); const p = S.people.find(x => x.folder === folder); if (p) openPerson(p) }
 $('#dlg-close').onclick = () => $('#dlg').close();
 $('#dlg').addEventListener('click', e => { if (e.target === $('#dlg')) $('#dlg').close() });
 document.addEventListener('click', e => {
+  const pl = e.target.closest('button.lnk[data-person]'); if (pl) { openPersonByFolder(pl.dataset.person); return }
+  const lc = e.target.closest('[data-locate]'); if (lc) { runLocate(lc.dataset.locate); return }
   const go = e.target.closest('[data-go]'); if (go) { if ($('#dlg').open) $('#dlg').close(); route(go.dataset.go); return }
   const d = e.target.closest('[data-doc]'); if (d) { const [p, path] = d.dataset.doc.split('|'); openDoc(p, path); return }
   const ip = e.target.closest('[data-issuepol]'); if (ip) { const [p, ids] = ip.dataset.issuepol.split('|'); showIssuePolicies(p, ids); return }
@@ -1945,7 +1991,7 @@ function route(r) {
   const navKey = { party: 'parties', issue: 'issues', 'swipe-tally': 'swipe', electorate: 'map', policies: 'more', people: 'more', promises: 'more' }[view] || view;
   document.querySelectorAll('#nav button, #bnav button').forEach(b => b.setAttribute('aria-current', b.dataset.go === navKey ? 'page' : 'false'));
   S.route = r; try { history.replaceState(null, '', '#' + r) } catch {}
-  window.scrollTo(0, 0); V[view](arg);
+  window.scrollTo(0, 0); Promise.resolve(V[view](arg)).then(() => loadPeople().then(() => { if (S.route === r) $('#main').querySelectorAll('.read, .quote, .pol p, .lede, #ctx, .mapside').forEach(autolink) }));
 }
 (async () => {
   try { const t = localStorage.getItem('bb-theme'); if (t) document.documentElement.dataset.theme = t } catch {}
