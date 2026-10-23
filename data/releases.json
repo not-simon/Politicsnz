@@ -1,0 +1,2046 @@
+{
+ "updated": "2026-10-23T12:52:49Z",
+ "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
+ "window_days": 60,
+ "election_date": "2026-11-07",
+ "terms_note": "Scoop: headlines, links, dates and the first ~200 characters of Scoop's own teaser are taken from Scoop's public InfoPages and section RSS feeds (https://www.scoop.co.nz/about/rss.html), with attribution to Scoop on every item; release text is not reproduced. Scoop's terms (https://www.scoop.co.nz/about/terms.html, retrieved 2026-10-23; copy in raw/releases/scoop_terms_2026-10-23.txt) license Scoop content 'freely to personal and private users' who attribute Scoop and have 'no commercial purposes' (cl. 3.1), restrict unlicensed use 'in any professional capacity' by organisations including not-for-profits (cl. 3.3), count 'direct linking' and automated extraction as 'use' (cl. 3.3.2) and prohibit unlicensed media-monitoring redistribution (cl. 4). The feeds' own copyright line is 'Scoop Media Ltd and/or its contributors'. This guide is a non-commercial volunteer project showing headline + link + short attributed snippet, which is the use RSS is published for; whether that falls under cl. 3.1 or needs a licence has not been confirmed with Scoop (licensing@scoop.co.nz). The Scoop channel can be switched off with --no-scoop, leaving Beehive and the parties' own newsroom links. Beehive: ministerial releases are Crown copyright; beehive.govt.nz says its content is released under a Creative Commons Attribution licence, but the copyright page could not be re-read by script on 2026-10-23 (it returned a script-only response), so check https://www.beehive.govt.nz/copyright. The copyright in each party release belongs to the party that issued it. Items are never fact-checked: they are the party's or minister's own words.",
+ "parties": {
+  "national": {
+   "name": "New Zealand National Party",
+   "website": "https://www.national.org.nz/",
+   "newsroom_url": "https://www.national.org.nz/news",
+   "newsroom_verified": true,
+   "scoop_infopage": "https://info.scoop.co.nz/New_Zealand_National_Party"
+  },
+  "labour": {
+   "name": "New Zealand Labour Party",
+   "website": "https://www.labour.org.nz/",
+   "newsroom_url": "https://www.labour.org.nz/news",
+   "newsroom_verified": true,
+   "scoop_infopage": "https://info.scoop.co.nz/New_Zealand_Labour_Party"
+  },
+  "green": {
+   "name": "Green Party of Aotearoa New Zealand",
+   "website": "https://www.greens.org.nz/",
+   "newsroom_url": "https://www.greens.org.nz/news",
+   "newsroom_verified": false,
+   "scoop_infopage": "https://info.scoop.co.nz/Green_Party"
+  },
+  "act": {
+   "name": "ACT New Zealand",
+   "website": "https://www.act.org.nz/",
+   "newsroom_url": "https://www.act.org.nz/news",
+   "newsroom_verified": true,
+   "scoop_infopage": "https://info.scoop.co.nz/ACT_New_Zealand"
+  },
+  "nz-first": {
+   "name": "New Zealand First",
+   "website": "https://www.nzfirst.nz/",
+   "newsroom_url": "https://www.nzfirst.nz/news",
+   "newsroom_verified": false,
+   "scoop_infopage": "https://info.scoop.co.nz/New_Zealand_First_Party"
+  },
+  "te-pati-maori": {
+   "name": "Te Pāti Māori",
+   "website": "https://www.maoriparty.org.nz/",
+   "newsroom_url": "https://www.maoriparty.org.nz/",
+   "newsroom_verified": false,
+   "scoop_infopage": "https://info.scoop.co.nz/Te_Pati_Maori"
+  },
+  "opportunity": {
+   "name": "Opportunity Party",
+   "website": "https://www.opportunity.org.nz/",
+   "newsroom_url": "https://www.opportunity.org.nz/",
+   "newsroom_verified": false,
+   "scoop_infopage": "https://info.scoop.co.nz/The_Opportunities_Party"
+  },
+  "nz-loyal": {
+   "name": "New Zealand Loyal",
+   "website": "https://nzloyal.com/",
+   "newsroom_url": "https://nzloyal.com/",
+   "newsroom_verified": false,
+   "scoop_infopage": "https://info.scoop.co.nz/NZ_Loyal"
+  },
+  "nz-outdoors-freedom": {
+   "name": "NZ Outdoors & Freedom Party",
+   "website": "https://freedom.kiwi/",
+   "newsroom_url": "https://freedom.kiwi/media",
+   "newsroom_verified": true,
+   "scoop_infopage": "https://info.scoop.co.nz/NZ_Outdoors_and_Freedom_Party"
+  },
+  "legalise-cannabis": {
+   "name": "Aotearoa Legalise Cannabis Party",
+   "website": "https://alcp.org.nz/",
+   "newsroom_url": "https://alcp.org.nz/news",
+   "newsroom_verified": true,
+   "scoop_infopage": "https://info.scoop.co.nz/Aotearoa_Legalise_Cannabis_Party"
+  },
+  "animal-justice": {
+   "name": "Animal Justice Party Aotearoa New Zealand",
+   "website": "https://animaljustice.org.nz/",
+   "newsroom_url": "https://animaljustice.org.nz/news/",
+   "newsroom_verified": true,
+   "scoop_infopage": null
+  },
+  "alliance": {
+   "name": "Alliance Party of Aotearoa New Zealand",
+   "website": "https://allianceparty.nz/",
+   "newsroom_url": "https://allianceparty.nz/news/",
+   "newsroom_verified": true,
+   "scoop_infopage": null
+  },
+  "conservative": {
+   "name": "Conservative Party NZ",
+   "website": "https://www.conservatives.nz/",
+   "newsroom_url": "https://www.conservatives.nz/news",
+   "newsroom_verified": true,
+   "scoop_infopage": "https://info.scoop.co.nz/Conservative_Party"
+  },
+  "womens-rights": {
+   "name": "Women's Rights Party",
+   "website": "https://womensrightsparty.nz/",
+   "newsroom_url": "https://womensrightsparty.nz/news/",
+   "newsroom_verified": true,
+   "scoop_infopage": "https://info.scoop.co.nz/Women%27s_Rights_Party"
+  },
+  "vision-nz": {
+   "name": "Vision New Zealand",
+   "website": "https://vision.org.nz/",
+   "newsroom_url": "https://vision.org.nz/news",
+   "newsroom_verified": true,
+   "scoop_infopage": "https://info.scoop.co.nz/Vision_NZ"
+  },
+  "free-palestine": {
+   "name": "Free Palestine (Palestine Free from the River to the Sea Party)",
+   "website": "https://palfree.nz/",
+   "newsroom_url": "https://palfree.nz/",
+   "newsroom_verified": true,
+   "scoop_infopage": "https://info.scoop.co.nz/Free_Palestine_Party"
+  },
+  "te-tai-tokerau-party": {
+   "name": "Te Tai Tokerau Party",
+   "website": "https://tetaitokerauparty.org.nz/",
+   "newsroom_url": "https://tetaitokerauparty.org.nz/",
+   "newsroom_verified": true,
+   "scoop_infopage": "https://info.scoop.co.nz/Te_Tai_Tokerau_Party"
+  }
+ },
+ "counts": {
+  "items": 166,
+  "per_party": {
+   "act": 20,
+   "conservative": 16,
+   "free-palestine": 2,
+   "government": 30,
+   "green": 20,
+   "labour": 20,
+   "national": 20,
+   "nz-first": 20,
+   "nz-loyal": 1,
+   "te-pati-maori": 14,
+   "womens-rights": 3
+  }
+ },
+ "sources": [
+  {
+   "id": "scoop:national",
+   "party": "national",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/New_Zealand_National_Party",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 20,
+   "newsroom_url": "https://www.national.org.nz/news",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:labour",
+   "party": "labour",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/New_Zealand_Labour_Party",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 20,
+   "newsroom_url": "https://www.labour.org.nz/news",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:green",
+   "party": "green",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/Green_Party",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 20,
+   "newsroom_url": "https://www.greens.org.nz/news",
+   "newsroom_verified": false,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:act",
+   "party": "act",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/ACT_New_Zealand",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 20,
+   "newsroom_url": "https://www.act.org.nz/news",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:nz-first",
+   "party": "nz-first",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/New_Zealand_First_Party",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 20,
+   "newsroom_url": "https://www.nzfirst.nz/news",
+   "newsroom_verified": false,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:te-pati-maori",
+   "party": "te-pati-maori",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/Te_Pati_Maori",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 20,
+   "newsroom_url": "https://www.maoriparty.org.nz/",
+   "newsroom_verified": false,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:opportunity",
+   "party": "opportunity",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/The_Opportunities_Party",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 20,
+   "newsroom_url": "https://www.opportunity.org.nz/",
+   "newsroom_verified": false,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:nz-loyal",
+   "party": "nz-loyal",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/NZ_Loyal",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 2,
+   "newsroom_url": "https://nzloyal.com/",
+   "newsroom_verified": false,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:nz-outdoors-freedom",
+   "party": "nz-outdoors-freedom",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/NZ_Outdoors_and_Freedom_Party",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 20,
+   "newsroom_url": "https://freedom.kiwi/media",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:legalise-cannabis",
+   "party": "legalise-cannabis",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/Aotearoa_Legalise_Cannabis_Party",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 20,
+   "newsroom_url": "https://alcp.org.nz/news",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:animal-justice",
+   "party": "animal-justice",
+   "source": "Scoop",
+   "feed_url": null,
+   "feed_type": "none",
+   "status": "no Scoop InfoPage found for this party (names tried 2026-10-23)",
+   "items_in_feed": 0,
+   "newsroom_url": "https://animaljustice.org.nz/news/",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "n/a; link to the party's own newsroom"
+  },
+  {
+   "id": "scoop:alliance",
+   "party": "alliance",
+   "source": "Scoop",
+   "feed_url": null,
+   "feed_type": "none",
+   "status": "no Scoop InfoPage found for this party (names tried 2026-10-23)",
+   "items_in_feed": 0,
+   "newsroom_url": "https://allianceparty.nz/news/",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "n/a; link to the party's own newsroom"
+  },
+  {
+   "id": "scoop:conservative",
+   "party": "conservative",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/Conservative_Party",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 20,
+   "newsroom_url": "https://www.conservatives.nz/news",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:womens-rights",
+   "party": "womens-rights",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/Women%27s_Rights_Party",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 20,
+   "newsroom_url": "https://womensrightsparty.nz/news/",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:vision-nz",
+   "party": "vision-nz",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/Vision_NZ",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 6,
+   "newsroom_url": "https://vision.org.nz/news",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:free-palestine",
+   "party": "free-palestine",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/Free_Palestine_Party",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 3,
+   "newsroom_url": "https://palfree.nz/",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:te-tai-tokerau-party",
+   "party": "te-tai-tokerau-party",
+   "source": "Scoop",
+   "feed_url": "https://info.scoop.co.nz/Te_Tai_Tokerau_Party",
+   "feed_type": "html-infopage (no per-organisation RSS exists)",
+   "status": "ok",
+   "items_in_feed": 2,
+   "newsroom_url": "https://tetaitokerauparty.org.nz/",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
+  },
+  {
+   "id": "scoop:section:PA",
+   "party": null,
+   "source": "Scoop",
+   "feed_url": "https://www.scoop.co.nz/storyindex/index.rss?s.c=PA",
+   "feed_type": "rss (section feed; no organisation field)",
+   "status": "ok",
+   "items_in_feed": 15,
+   "items_matched_to_a_party": 13,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
+  },
+  {
+   "id": "scoop:section:PO",
+   "party": null,
+   "source": "Scoop",
+   "feed_url": "https://www.scoop.co.nz/storyindex/index.rss?s.c=PO",
+   "feed_type": "rss (section feed; no organisation field)",
+   "status": "ok",
+   "items_in_feed": 15,
+   "items_matched_to_a_party": 2,
+   "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
+  },
+  {
+   "id": "beehive",
+   "party": "government",
+   "source": "Beehive",
+   "feed_url": "https://www.beehive.govt.nz/rss.xml",
+   "feed_type": "rss",
+   "status": "ok",
+   "items_in_feed": 30,
+   "newsroom_url": "https://www.beehive.govt.nz/releases",
+   "newsroom_verified": true,
+   "licence_or_terms_note": "Crown copyright; beehive.govt.nz states a Creative Commons Attribution licence for its content (re-check https://www.beehive.govt.nz/copyright); headline + link + <=200-char snippet only"
+  }
+ ],
+ "items": [
+  {
+   "party": "government",
+   "title": "Chief of Defence resigns",
+   "date": "2026-10-23T16:58+13:00",
+   "url": "https://www.beehive.govt.nz/release/chief-defence-resigns",
+   "summary": "The Chief of Defence Force, Air Marshal Tony Davies MNZM is resigning, Defence Minister Paul Goldsmith says. “Air Marshal Tony Davies has informed me that he’ll be resigning from his position as…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZFirst Policy Announcement: 50% Targeted Accelerated Depreciation For Manufacturing And Export Sector",
+   "date": "2026-10-23T15:43+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00209/nzfirst-policy-announcement-50-targeted-accelerated-depreciation-for-manufacturing-and-export-sector.htm",
+   "summary": "The Government introduced Investment Boost in Budget 2025, allowing businesses to deduct 20% of the cost of eligible new investment assets upfront, followed by normal depreciation on the remaining…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "government",
+   "title": "Pharmac extends limit for cancer medicine to be funded in private hospitals",
+   "date": "2026-10-23T15:07+13:00",
+   "url": "https://www.beehive.govt.nz/release/pharmac-extends-limit-cancer-medicine-be-funded-private-hospitals",
+   "summary": "Associate Health Minister David Seymour has today welcomed Pharmac’s decision to extend the 12-month transitional access funding limit for Pertuzumab with trastuzumab (Phesgo) for people receiving…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "“Our Whānau Are Not Political Footballs\" Te Pāti Māori Responds To Leoni Resignation",
+   "date": "2026-10-23T13:59+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00207/our-whanau-are-not-political-footballs-te-pati-maori-responds-to-leoni-resignation.htm",
+   "summary": "\"This is a sad day for Māori when our own people are placed in a position where they must choose between a political party line and standing alongside their own people\" said Te Pāti Māori Co-Leader…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "national",
+   "title": "Fixing The Basics And Building The Future: National’s Plan For Young Adults",
+   "date": "2026-10-23T13:44+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00206/fixing-the-basics-and-building-the-future-nationals-plan-for-young-adults.htm",
+   "summary": "“This election, there is a clear choice between sticking with National’s plan for a more secure future, no matter the stage of your life, with a growing economy, less debt, more jobs, higher wages…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "womens-rights",
+   "title": "‘Gutless’ Ministry Of Health Is Responsible For High Court Ruling Against Puberty Blockers Ban",
+   "date": "2026-10-23T13:30+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00159/gutless-ministry-of-health-is-responsible-for-high-court-ruling-against-puberty-blockers-ban.htm",
+   "summary": "“To be clear, as the Court found, it is the role of the Minister and Cabinet to decide what, if any, restrictions should be placed on access to puberty blockers for what Justice La Hood terms ‘gender…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Women's Rights Party"
+  },
+  {
+   "party": "act",
+   "title": "David Seymour - The Future Of Health",
+   "date": "2026-10-23T13:17+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00205/david-seymour-the-future-of-health.htm",
+   "summary": "New Zealand is not the wealthy nation it once was and healthcare is one area where the effects are most evident. We need more productivity in this country if we’re going to afford the first world…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "act",
+   "title": "Greens' Plan Shows What’s At Stake This Election: $39 Billion More Debt Than ACT's",
+   "date": "2026-10-23T12:27+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00204/greens-plan-shows-whats-at-stake-this-election-39-billion-more-debt-than-acts.htm",
+   "summary": "\"Taxpayers already pay $1.2 million every hour covering interest on the debt. The Greens seem to think that’s not enough,\" says ACT Leader David Seymour.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "Greens Literally Campaigning On Nine New Taxes",
+   "date": "2026-10-23T12:19+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00203/greens-literally-campaigning-on-nine-new-taxes.htm",
+   "summary": "“A Labour-Greens coalition with Chloe Swarbrick as Finance Minister, backed by Te Pati Māori & Opportunity, would undo the last three years of progress & make everyone poorer with at least nine new…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "government",
+   "title": "SH76 Brougham Street upgrade moving to next stage",
+   "date": "2026-10-23T11:27+13:00",
+   "url": "https://www.beehive.govt.nz/release/sh76-brougham-street-upgrade-moving-next-stage",
+   "summary": "A major upgrade of State Highway 76 Brougham Street in Christchurch is set to move into its second stage of key roading improvements, as a new pedestrian and cycle bridge prepares to open, Transport…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "District Court Judge Appointed",
+   "date": "2026-10-23T11:26+13:00",
+   "url": "https://www.beehive.govt.nz/release/district-court-judge-appointed-29",
+   "summary": "Attorney-General Hon Chris Bishop has announced the appointment of Vanessa Curac as a District Court Judge. Ms Curac has been practising law for 25 years, having started out as a solicitor for Oranga…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "RIF grants fund completion of marae projects",
+   "date": "2026-10-23T11:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/rif-grants-fund-completion-marae-projects",
+   "summary": "Grants from the Regional Infrastructure Fund will support two marae to strengthen their ability to serve as community hubs and offer refuge in times of emergency, Associate Regional Development…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Investment in vital bridge to Monowai Valley",
+   "date": "2026-10-23T10:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/investment-vital-bridge-monowai-valley",
+   "summary": "The Regional Infrastructure Fund will invest $6 million towards replacing the Monowai Suspension Bridge in western Southland, Associate Regional Development Minister Mark Patterson and South Island…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "conservative",
+   "title": "Civil Wars, Chaos And Anarchy",
+   "date": "2026-10-23T09:09+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00157/civil-wars-chaos-and-anarchy.htm",
+   "summary": "Immigration must never come at the cost of our national identity, social cohesion or the safety of our communities.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "act",
+   "title": "Labour Caught Out Courting Gang Votes",
+   "date": "2026-10-22T21:01+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00202/labour-caught-out-courting-gang-votes.htm",
+   "summary": "Chris Hipkins can't distance himself from his own candidates when they have been caught soliciting votes and fundraising from gangs, says ACT Deputy Leader Nicole McKee.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "Labour’s Mongrel Mob Denial Unravels",
+   "date": "2026-10-22T20:54+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00201/labours-mongrel-mob-denial-unravels.htm",
+   "summary": "National is restoring law and order in New Zealand and cracking down on gangs, says National’s Campaign Chair Simeon Brown.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZFirst Law And Order Policy Announcement: Tougher Sentences, Degrees Of Murder, Smashing Organised Crime",
+   "date": "2026-10-22T18:08+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00200/nzfirst-law-and-order-policy-announcement-tougher-sentences-degrees-of-murder-smashing-organised-crime.htm",
+   "summary": "To build safer communities, the government must ensure that the NZ Police have the resources and tools to do their job.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "act",
+   "title": "Factcheck - Cynical Chris Gets Charter School Costs Wrong",
+   "date": "2026-10-22T17:15+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00199/factcheck-cynical-chris-gets-charter-school-costs-wrong.htm",
+   "summary": "Cynical Chris says charter schools cost four times as much as state schools. In reality, they cost broadly the same, and slightly less when you calculate all the figures.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "Labour Is Still Married To The Mob",
+   "date": "2026-10-22T15:30+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00198/labour-is-still-married-to-the-mob.htm",
+   "summary": "Chris Hipkins can try to talk tough, but Labour’s record on gangs tells a very different story, National’s Campaign Chair Simeon Brown says.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "government",
+   "title": "Cabinet agrees to enable nature-based early childhood education",
+   "date": "2026-10-22T14:51+13:00",
+   "url": "https://www.beehive.govt.nz/release/cabinet-agrees-enable-nature-based-early-childhood-education",
+   "summary": "The Government is taking steps to formally recognise and enable nature-based early childhood education in New Zealand, Associate Education Minister David Seymour says. “I’m pleased to announce that…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Government backs oyster industry resilience",
+   "date": "2026-10-22T14:19+13:00",
+   "url": "https://www.beehive.govt.nz/release/government-backs-oyster-industry-resilience",
+   "summary": "A $2.8 million investment from the Regional Infrastructure Fund will help support the long-term resilience of the Northland oyster sector while backing economic opportunities for local communities…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "act",
+   "title": "ACT Will Drive Down Costs For Farmers",
+   "date": "2026-10-22T13:45+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00197/act-will-drive-down-costs-for-farmers.htm",
+   "summary": "ACT understands farming because we have farmers in our team. We know how decisions made in Wellington flow through to bills at the kitchen table, says ACT Agriculture spokesperson Andrew Hoggard.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "act",
+   "title": "ACT Campaigning To Transform 10,000 Lives",
+   "date": "2026-10-22T12:51+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00196/act-campaigning-to-transform-10000-lives.htm",
+   "summary": "\"ACT will not only protect charter schools from Labour's attempts to shut them down, we will expand them so that thousands more young New Zealanders can benefit\", says ACT Leader David Seymour.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "labour",
+   "title": "Luxon’s Broken Promise On The Cost Of Living",
+   "date": "2026-10-22T12:37+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00194/luxons-broken-promise-on-the-cost-of-living.htm",
+   "summary": "\"Inflation is 3.7%, outside the Reserve Bank’s target band, and economists are warning prices could climb even further before Christmas\", says Labour finance and economy spokesperson Barbara Edmonds",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "labour",
+   "title": "National Fails To Get Kiwis Back Into Work",
+   "date": "2026-10-22T12:08+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00193/national-fails-to-get-kiwis-back-into-work.htm",
+   "summary": "Kiwis want the dignity of work, a secure income and the ability to provide for their families. They can’t afford another three years of broken promises\", says Labour social development and employment…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "labour",
+   "title": "Labour To Provide More Help In The Classroom",
+   "date": "2026-10-22T12:02+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00192/labour-to-provide-more-help-in-the-classroom.htm",
+   "summary": "“Every child deserves the support they need to reach their potential. Investing in our kids is investing in New Zealand’s future,” says Labour education spokesperson Ginny Andersen.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "national",
+   "title": "Inflation Down But Labour Will Put Progress At Risk",
+   "date": "2026-10-22T11:46+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00191/inflation-down-but-labour-will-put-progress-at-risk.htm",
+   "summary": "\"Inflation hit 7.3 per cent, mortgage rates skyrocketed, food prices rose 12.5 per cent in a year, and rents increased by $180 a week on average\", says National’s Finance spokesperson Nicola Willis.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "national",
+   "title": "Fixing The Basics And Building The Future: National’s Plan For Retirement",
+   "date": "2026-10-22T11:38+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00190/fixing-the-basics-and-building-the-future-nationals-plan-for-retirement.htm",
+   "summary": "\"National wants seniors to be able to live with dignity as they age, in warm, dry, affordable homes\", says National Leader Christopher Luxon.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "act",
+   "title": "Easing Inflation No Excuse To Take Foot Off The Pedal",
+   "date": "2026-10-22T11:03+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00189/easing-inflation-no-excuse-to-take-foot-off-the-pedal.htm",
+   "summary": "Elections are a dangerous time for taxpayers. As the day draws nearer and the polls tighten, politicians will throw money at every passing car.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "act",
+   "title": "No Jobs In The Smoko Room Without Successful Businesses",
+   "date": "2026-10-22T10:43+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00188/no-jobs-in-the-smoko-room-without-successful-businesses.htm",
+   "summary": "The smoko room becomes pretty empty when businesses can't afford to grow, hire people, or keep their doors open.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "government",
+   "title": "Charter school roll surpasses 2,100 students",
+   "date": "2026-10-22T10:33+13:00",
+   "url": "https://www.beehive.govt.nz/release/charter-school-roll-surpasses-2100-students",
+   "summary": "September’s roll return data tells us what we already knew; families want schooling options that reflect the needs of their children, says Associate Education Minister David Seymour. Data released…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "labour",
+   "title": "Sophie Handford Calls For Community-Led Plan For Kāpiti Airport’s Future",
+   "date": "2026-10-22T09:54+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00186/sophie-handford-calls-for-community-led-plan-for-kapiti-airports-future.htm",
+   "summary": "The privately owned airport has faced ongoing uncertainty, with its owners exploring housing development on the site, and Air Chathams ending its Kāpiti to Auckland service in July.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "green",
+   "title": "Greens Call Out Luxon's Coalition Proposing Welfare For The Wealthiest",
+   "date": "2026-10-22T09:46+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00185/greens-call-out-luxons-coalition-proposing-welfare-for-the-wealthiest.htm",
+   "summary": "“When ACT released their fiscals, quick calculations made it clear their plan was welfare for the wealthiest,” says Green Party Co-leader Chlöe Swarbrick.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "government",
+   "title": "Papakura courthouse on time, on budget, and focused on victims",
+   "date": "2026-10-22T08:27+13:00",
+   "url": "https://www.beehive.govt.nz/release/papakura-courthouse-time-budget-and-focused-victims",
+   "summary": "Papakura’s new courthouse remains on time and on budget, with construction complete and preparations underway to open a safer, higher-capacity court in January 2027, say Courts Minister Nicole McKee…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Government delivers more learning support for thousands of children",
+   "date": "2026-10-22T07:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/government-delivers-more-learning-support-thousands-children",
+   "summary": "Thousands more children are getting the help they need at school as the Government's record investment in learning support delivers real results, Education Minister Erica Stanford says. “Last year…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "nz-first",
+   "title": "On The High Courts Ruling To Overturn The Govt’s Decision To Ban The Use Of Puberty Blocker Chemicals In Children",
+   "date": "2026-10-21T19:36+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00182/on-the-high-courtsruling-to-overturn-the-govtsdecision-to-ban-the-use-ofpuberty-blocker-chemicals-in-children.htm",
+   "summary": "We will demand that this decision be immediately appealed by the Minister of Health.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "green",
+   "title": "Greens Make Christchurch Central A Key Election Focus",
+   "date": "2026-10-21T14:49+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00181/greens-make-christchurch-central-a-key-election-focus.htm",
+   "summary": "In 2020, Chlöe Swarbrick made history by winning Auckland Central. In 2023, the Greens expanded their central electorate representation further, winning Wellington Central and Rongotai while…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "national",
+   "title": "Fixing The Basics And Building The Future: National’s Plan For Kiwi Kids",
+   "date": "2026-10-21T13:16+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00180/fixing-the-basics-and-building-the-future-nationals-plan-for-kiwi-kids.htm",
+   "summary": "“We are starting to see results. The latest Progressive Achievement Test (PAT) data shows a significant improvement in mathematics, and improvements in reading comprehension and vocabulary.\"",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "government",
+   "title": "Major milestone reached in Waioweka Gorge recovery",
+   "date": "2026-10-21T12:55+13:00",
+   "url": "https://www.beehive.govt.nz/release/major-milestone-reached-waioweka-gorge-recovery",
+   "summary": "The installation of a new rockfall protection system at the Goldsmith slip site is a major milestone in the recovery of State Highway 2 through the Waioweka Gorge, with two-way traffic expected to…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Government backs restoration of Lake Ōmāpere",
+   "date": "2026-10-21T11:45+13:00",
+   "url": "https://www.beehive.govt.nz/release/government-backs-restoration-lake-omapere",
+   "summary": "A project to restore Northland’s largest lake, Lake Ōmāpere, will receive a $3 million grant from the Government’s Regional Infrastructure Fund, Regional Development Minister Shane Jones and…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "act",
+   "title": "Kiwis Overseas - Your Vote Starts Here",
+   "date": "2026-10-21T11:10+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00179/kiwis-overseas-your-vote-starts-here.htm",
+   "summary": "“ACT will keep standing up for Kiwis overseas - just as we stood with stranded New Zealanders against the cruel MIQ lottery that shut them out of their own country,\" says ACT Leader David Seymour.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "act",
+   "title": "Record Retail Theft Charges Show Why Security Guards Need Real Powers",
+   "date": "2026-10-21T11:05+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00178/record-retail-theft-charges-show-why-security-guards-need-real-powers.htm",
+   "summary": "“These powers would be subject to strict training, vetting, and safeguards, including limits on the use of force,\" says ACT Leader David Seymour.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "Chris Hipkins’ $47 Billion Green Problem",
+   "date": "2026-10-21T11:01+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00177/chris-hipkins-47-billion-green-problem.htm",
+   "summary": "“Of the policies the Greens have bothered to cost themselves, they are proposing $47 billion in additional spending,\" says National’s Campaign Chair Simeon Brown",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "conservative",
+   "title": "Fixing Our Broken Healthcare System",
+   "date": "2026-10-21T08:53+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00133/fixing-our-broken-healthcare-system.htm",
+   "summary": "Elect the Conservatives to Parliament, and we will ensure that outcomes in the public health sector and in ACC-funded healthcare are measured and monitored.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "labour",
+   "title": "Christopher Luxon Out Of Touch And Out Of Time",
+   "date": "2026-10-21T08:18+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00176/christopher-luxon-out-of-touch-and-out-of-time.htm",
+   "summary": "New Zealand cannot afford another three years of Christopher Luxon. He has had his chance, and three debates have only reinforced why it's time for a change, Labour Campaign Chair Kieran McAnulty…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "act",
+   "title": "Debt Platitudes Won’t Reassure The World",
+   "date": "2026-10-21T08:09+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00175/debt-platitudes-wont-reassure-the-world.htm",
+   "summary": "New Zealand taxpayers are paying more than $1 million an hour just servicing interest on Government debt. That’s money that could be going towards better healthcare, education, infrastructure, or tax…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZFirst To Fund NZs Gaming Industry Sector, Keeping Talent And Companies In NZ",
+   "date": "2026-10-20T16:17+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00174/nzfirst-to-fund-nzs-gaming-industry-sector-keeping-talent-and-companies-in-nz.htm",
+   "summary": "Video Games are now the largest entertainment industry in the world and New Zealand has an opportunity to massively benefit economically from that industry.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "act",
+   "title": "ACT Will Put Trades On An Equal Footing With University",
+   "date": "2026-10-20T15:08+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00173/act-will-put-trades-on-an-equal-footing-with-university.htm",
+   "summary": "ACT will unlock New Zealand’s potential by helping every young person realise their own potential and not pushing everyone down the same path.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "government",
+   "title": "Chief Freshwater Commissioner and commissioners appointed",
+   "date": "2026-10-20T14:18+13:00",
+   "url": "https://www.beehive.govt.nz/release/chief-freshwater-commissioner-and-commissioners-appointed",
+   "summary": "A Chief Freshwater Commissioner and five freshwater commissioners have been appointed to complete planning work under the Resource Management Act 1991 during the transition to the new planning…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "conservative",
+   "title": "Powering New Zealand Forward. The Conservative Party Electricity Policy",
+   "date": "2026-10-20T13:17+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00129/powering-new-zealand-forward-the-conservative-party-electricity-policy.htm",
+   "summary": "The wind doesn’t always blow, and rotating blades are a danger to flying wildlife. Environmental concerns such as the disposal of old turbine blades and potential asbestos exposure are yet to be…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "national",
+   "title": "National Party Pays Tribute To Former President Geoff Thompson CNZM",
+   "date": "2026-10-20T12:21+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00172/national-party-pays-tribute-to-former-president-geoff-thompson-cnzm.htm",
+   "summary": "\"Geoff's commitment to National never wavered\", says National Party President Sylvia Wood.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "government",
+   "title": "Senior NZ Army officer to lead longstanding mission in Sinai",
+   "date": "2026-10-20T10:56+13:00",
+   "url": "https://www.beehive.govt.nz/release/senior-nz-army-officer-lead-longstanding-mission-sinai",
+   "summary": "The Government has approved the deployment of New Zealand Army officer Brigadier Grant Motley to the role of Force Commander of the Multinational Force and Observers (MFO) in the Sinai Peninsula…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "act",
+   "title": "Minister For Ram Raids’ Record Speaks For Itself",
+   "date": "2026-10-20T10:52+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00171/minister-for-ram-raids-record-speaks-for-itself.htm",
+   "summary": "No wonder Labour won't go near law and order this election. If Chris Hipkins seriously wants to govern again, he needs to be able to assure New Zealanders they will be safe in their homes, businesses…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "labour",
+   "title": "Labour Will Get Emergency Departments Moving",
+   "date": "2026-10-20T10:07+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00170/labour-will-get-emergency-departments-moving.htm",
+   "summary": "“Patients are waiting too long, emergency departments are overcrowded, and nurses and doctors are under enormous pressure. Labour has a plan to fix it,” Labour Leader Chris Hipkins said.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "act",
+   "title": "Seymour Offers To Sub For Cynical Chris Hipkins Health Debate",
+   "date": "2026-10-20T09:55+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00169/seymour-offers-to-sub-for-cynical-chris-hipkins-health-debate.htm",
+   "summary": "“Before people vote, it’s worth remembering what is at stake. In health, let’s remember what a walking disaster Hipkins was, both as COVID-19 response Minister and Minister of Health, and then as…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "conservative",
+   "title": "Politicians Need To Respect Democracy Instead Of Abusing It, Says The Conservative Party",
+   "date": "2026-10-20T08:45+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00123/politicians-need-to-respect-democracy-instead-of-abusing-it-says-the-conservative-party.htm",
+   "summary": "Even with a select committee operating, bills can be passed despite being almost unanimously opposed by submitters. The Regulatory Standards Bill 2025 was passed despite 98 percent of public…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "government",
+   "title": "Kāinga Ora turnaround plan continues to deliver",
+   "date": "2026-10-20T08:15+13:00",
+   "url": "https://www.beehive.govt.nz/release/kainga-ora-turnaround-plan-continues-deliver",
+   "summary": "Kāinga Ora has smashed its savings target, significantly reduced the cost of building social homes, and improved its performance as a landlord, Housing Minister Chris Bishop and Associate Housing…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "India FTA now open for business",
+   "date": "2026-10-20T05:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/india-fta-now-open-business",
+   "summary": "New Zealand exporters can start using the New Zealand-India Free Trade Agreement from today, with tariffs removed on more than half of New Zealand’s exports to India, Trade and Investment Minister…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "New Zealand and Brazil agree Trade and Investment Dialogue",
+   "date": "2026-10-20T04:59+13:00",
+   "url": "https://www.beehive.govt.nz/release/new-zealand-and-brazil-agree-trade-and-investment-dialogue",
+   "summary": "New Zealand and Brazil have agreed to set up a Trade and Investment Dialogue to grow trade and investment between the two countries, Trade and Investment Minister Todd McClay says. “By setting up…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Canada, NZ agree to boost trade and investment",
+   "date": "2026-10-20T04:59+13:00",
+   "url": "https://www.beehive.govt.nz/release/canada-nz-agree-boost-trade-and-investment",
+   "summary": "New Zealand and Canada will set up an annual Trade and Investment Dialogue to grow trade and lift exports, Trade and Investment Minister Todd McClay says. “Canada represents a market of nearly 42…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "conservative",
+   "title": "Conservatives Call For A Halt To Carbon Farming \"Failure And Disaster\"",
+   "date": "2026-10-19T17:46+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00122/conservatives-call-for-a-halt-to-carbon-farming-failure-and-disaster.htm",
+   "summary": "Helen Houghton Conservative Party leader said the practice of carbon farming under the flawed Emissions Trading Scheme (ETS) was a failure economically and environmentally.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "labour",
+   "title": "Labour Leader Challenges Luxon To Debate The Health Crisis",
+   "date": "2026-10-19T17:29+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00165/labour-leader-challenges-luxon-to-debate-the-health-crisis.htm",
+   "summary": "New Zealanders deserve straight answers about the state of their health system and what the future holds, Chris Hipkins said.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "government",
+   "title": "Driving productivity with heavy vehicle changes",
+   "date": "2026-10-19T14:34+13:00",
+   "url": "https://www.beehive.govt.nz/release/driving-productivity-heavy-vehicle-changes",
+   "summary": "28 proposals to change heavy vehicle rules will reduce compliance costs and improve productivity for New Zealand’s transport operators, Associate Transport Minister James Meager has confirmed. Mr…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "act",
+   "title": "Putting Primary Healthcare First",
+   "date": "2026-10-19T14:26+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00164/putting-primary-healthcare-first.htm",
+   "summary": "Primary care has been in free fall this century. In 2000, 40 per cent of doctors were GPs. Now it is only 25 per cent. Back then GPs worked 42 hours a week on average. Now it is 35 hours a week.…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "act",
+   "title": "Speech To Paul Henry Unlocked Tour, Whitianga - One Law For All",
+   "date": "2026-10-19T14:21+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00163/speech-to-paul-henry-unlocked-tour-whitianga-one-law-for-all.htm",
+   "summary": "Your legal and political rights shouldn't come from who your ancestors were. They come from the fact that you're a human being, and a citizen of a country that ought to give you a fair shot.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "conservative",
+   "title": "Conservative Party Update",
+   "date": "2026-10-19T13:42+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00114/conservative-party-update.htm",
+   "summary": "The Conservative Party are releasing a number of policies this week.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "Statement On Labour’s Proposed Social Media Ban For Under-16s",
+   "date": "2026-10-19T13:32+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00162/statement-on-labours-proposed-social-media-ban-for-under-16s.htm",
+   "summary": "\"The failure in Australia to implement such laws highlights this and Labour knows it,\" says Rt Hon Winston Peters.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "act",
+   "title": "The Mongrel Mob Have No Mana",
+   "date": "2026-10-19T12:25+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00161/the-mongrel-mob-have-no-mana.htm",
+   "summary": "“Te Pāti Māori say they want to restore their mana. They have none. They lost it when they chose a life where their profits come from the misery of others,\" says ACT Deputy Leader Nicole McKee.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "Backing Waikato: Investing In Growth",
+   "date": "2026-10-19T12:07+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00160/backing-waikato-investing-in-growth.htm",
+   "summary": "“National wants to build on those strengths and make Waikato an even better place to invest, grow a business, raise a family and get ahead,\" says National’s Infrastructure spokesman Chris Bishop.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "labour",
+   "title": "Labour To Make It Safer For Kiwis Online",
+   "date": "2026-10-19T11:03+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00159/labour-to-make-it-safer-for-kiwis-online.htm",
+   "summary": "“Labour will put basic rules in place for big technology companies, give people more control over their online experience, and strengthen protections against harmful content,” said Labour Leader…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "government",
+   "title": "Rollout of more new classrooms to keep pace with roll growth",
+   "date": "2026-10-19T10:42+13:00",
+   "url": "https://www.beehive.govt.nz/release/rollout-more-new-classrooms-keep-pace-roll-growth",
+   "summary": "Education Minister Erica Stanford today joined students and staff at Northcross Intermediate in Browns Bay, Auckland, to open eight new classrooms delivered on time and under budget to meet…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Regulatory Standards Board makes first findings",
+   "date": "2026-10-19T10:07+13:00",
+   "url": "https://www.beehive.govt.nz/release/regulatory-standards-board-makes-first-findings",
+   "summary": "Minister for Regulation David Seymour has today welcomed the publication of the first report by the Regulatory Standards Board (the Board), which shows why council disclosure rules should be brought…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "labour",
+   "title": "National’s Hiring Freeze Puts Lives At Risk",
+   "date": "2026-10-19T09:03+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00157/nationals-hiring-freeze-puts-lives-at-risk.htm",
+   "summary": "“For two years, nurses have warned about severe staffing shortages, while hospitals have been blocked from filling vacant positions,” Labour health spokesperson Dr Ayesha Verrall said.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "conservative",
+   "title": "Warning Contentious Fisheries/Conservation Law Changes Are Not Dead",
+   "date": "2026-10-19T08:33+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00105/warning-contentious-fisheriesconservation-law-changes-are-not-dead.htm",
+   "summary": "“Don’t be fooled by government ministers put them on the back burner. It’s simply an election ploy. It’s safe bet those ministers if in government in 2027 will ram them through.”",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "national",
+   "title": "Labour Out Of Ideas On Education",
+   "date": "2026-10-18T16:13+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00156/labour-out-of-ideas-on-education.htm",
+   "summary": "National will keep building on the reforms that are lifting achievement, says National’s Education spokesperson Erica Stanford.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZFirst Campaign Announcement: Commuter Rail For Christchurch, Reinstate Southerner Train",
+   "date": "2026-10-18T14:29+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00155/nzfirst-campaign-announcement-commuter-rail-for-christchurch-reinstate-southerner-train.htm",
+   "summary": "Our ambition is to get passengers from Rolleston to central Christchurch in around 20 minutes by train, instead of spending up to 50 minutes on the road.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "labour",
+   "title": "Getting Kids Off Screens And Back To Being Kids",
+   "date": "2026-10-18T14:25+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00154/getting-kids-off-screens-and-back-to-being-kids.htm",
+   "summary": "Technology has its place, but it shouldn’t come at the expense of childhood. New Zealand is the best place in the world to raise children, and I want us to keep it that way, Chris Hipkins said.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "act",
+   "title": "ACT Will Invest $400 Million To Get Kiwis More GP Appointments",
+   "date": "2026-10-18T14:04+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00153/act-will-invest-400-million-to-get-kiwis-more-gp-appointments.htm",
+   "summary": "The funding will be an ongoing $100 million annual boost to general practice, on top of normal capitation increases, totalling $400 million over the first four years.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "National To Remove Right To Silence When A Child Is Murdered",
+   "date": "2026-10-18T14:01+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00152/national-to-remove-right-to-silence-when-a-child-is-murdered.htm",
+   "summary": "This will place perpetrators, and their accomplices, into a corner where they will eventually call each other out, because if they don’t, they will all face the consequences, National’s Justice…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "labour",
+   "title": "Labour Calculator Shows How Families Can Save",
+   "date": "2026-10-17T14:16+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00151/labour-calculator-shows-how-families-can-save.htm",
+   "summary": "Labour has a plan to bring down costs, deliver fairer grocery prices, back good jobs and give working people a fairer deal.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "green",
+   "title": "Green Party To Abolish Training Wage And Provide More Support For Apprentices",
+   "date": "2026-10-17T14:14+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00150/green-party-to-abolish-training-wage-and-provide-more-support-for-apprentices.htm",
+   "summary": "The Green Party has a plan that will create good jobs in our vital industries. We can support our people and communities by incentivising the skills we need right now and for years to come.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "national",
+   "title": "Australian CGT Case Study For New Zealand",
+   "date": "2026-10-17T14:09+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00149/australian-cgt-case-study-for-new-zealand.htm",
+   "summary": "This election will be tight and New Zealanders have a clear choice between sticking with the plan that is working and giving it three more years to bed in, or going backwards with Labour and undoing…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "national",
+   "title": "New Surveys Show National’s Plan Is Working",
+   "date": "2026-10-16T15:04+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00148/new-surveys-show-nationals-plan-is-working.htm",
+   "summary": "“The result shows manufacturing has now had 15 consecutive months in expansion, despite global headwinds including the fuel crisis,” National’s Economic Growth spokesperson Nicola Willis says.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "act",
+   "title": "ACT Welcomes National Backing ACT’s Plan To Cut Farm Red Tape",
+   "date": "2026-10-16T13:36+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00147/act-welcomes-national-backing-acts-plan-to-cut-farm-red-tape.htm",
+   "summary": "“ACT is happy to share the praise when it means relief for farmers and growers who spend far too much time and money wading through needless bureaucracy.\"",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "National Sets Out Plan To Double Exports By 2034",
+   "date": "2026-10-16T13:18+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00146/national-sets-out-plan-to-double-exports-by-2034.htm",
+   "summary": "“Food and Fibre exports have just hit a record $65.2 billion, and which shows our transformative work in the primary sector is paying real dividends.\"",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZ First Will Immediately Reverse This Week’s Decision By The Minister Of Consumer Affairs",
+   "date": "2026-10-16T13:13+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00145/nz-first-will-immediately-reverse-this-weeks-decision-by-the-minister-of-consumer-affairs.htm",
+   "summary": "The decision to not impose safeguards leaves NZ companies using aluminium extrusions with no trade remedy against many inferior products flooding the market.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "government",
+   "title": "KiwiRail to fund additional ferries works in Picton",
+   "date": "2026-10-16T13:07+13:00",
+   "url": "https://www.beehive.govt.nz/release/kiwirail-fund-additional-ferries-works-picton",
+   "summary": "KiwiRail will directly fund up to $37.5 million for Picton rail yard upgrades and adding auto-mooring technology to the new wharf as part of the New Ferries project, Rail Minister Winston Peters…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "green",
+   "title": "Greens Announce Paid Placements For Nurses, Teachers, And Social Workers",
+   "date": "2026-10-16T12:24+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00143/greens-announce-paid-placements-for-nurses-teachers-and-social-workers.htm",
+   "summary": "The Green Party will also support students who need to relocate for their placement, making training more accessible for students in the regions.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "labour",
+   "title": "Everything Costs More Under National",
+   "date": "2026-10-16T12:16+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00142/everything-costs-more-under-national.htm",
+   "summary": "“Food and fuel are just part of the everyday costs Kiwis are facing. Power, rates, the doctor, getting the kids to school. Under National, it’s all costing more\" said Labour finance and economy…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "government",
+   "title": "Resilience work underway for key South Island route",
+   "date": "2026-10-16T11:57+13:00",
+   "url": "https://www.beehive.govt.nz/release/resilience-work-underway-key-south-island-route",
+   "summary": "Work to bolster the resilience of a key South Island route vital to New Zealand tourism will soon begin, South Island and Associate Transport Minister James Meager says. “The Government allocated…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "national",
+   "title": "Questions Remain On Labour’s Approach To Gangs",
+   "date": "2026-10-16T11:05+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00140/questions-remain-on-labours-approach-to-gangs.htm",
+   "summary": "“With Labour failing to release a single law and order policy, there remain several unanswered questions about Labour’s soft approach to gangs,\" says National’s Justice spokesperson Paul Goldsmith.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "government",
+   "title": "King’s Counsel appointments 2026",
+   "date": "2026-10-16T10:52+13:00",
+   "url": "https://www.beehive.govt.nz/release/kings-counsel-appointments-2026",
+   "summary": "Attorney-General Chris Bishop today announced the appointments of 12 King’s Counsel. The rank of King’s Counsel is primarily awarded to barristers sole who have met the overarching criteria of…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Levy reduction for cruise industry",
+   "date": "2026-10-16T10:40+13:00",
+   "url": "https://www.beehive.govt.nz/release/levy-reduction-cruise-industry",
+   "summary": "Cruise ship passengers will pay significantly lower Border Processing Levy rates from 1 July 2027, Customs Minister Casey Costello said today. From 1 July 2027, cruise passengers will see a net…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "New construction ACOP to bring health and safety clarity",
+   "date": "2026-10-16T10:22+13:00",
+   "url": "https://www.beehive.govt.nz/release/new-construction-acop-bring-health-and-safety-clarity",
+   "summary": "Workplace Relations and Safety Minister Brooke van Velden today launched a new Approved Code of Practice (ACOP) that outlines practical steps businesses and workers can take to meet their health and…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "West Coast infrastructure upgrades on course",
+   "date": "2026-10-16T09:30+13:00",
+   "url": "https://www.beehive.govt.nz/release/west-coast-infrastructure-upgrades-course",
+   "summary": "Investment from the Regional Infrastructure Fund is delivering progress on key projects on the West Coast, Associate Regional Development Minister Mark Patterson says. \"Improvements to key shipping…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "act",
+   "title": "Harsher Penalties For Trashing Communities",
+   "date": "2026-10-16T09:22+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00138/harsher-penalties-for-trashing-communities.htm",
+   "summary": "Illegal dumping is vandalism by another name. It's unfair on ratepayers, damaging to the environment, and shows a complete disregard for people who take pride in their communities, says Andrew…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "Plug-In Solar For Kiwi Homes Next Year",
+   "date": "2026-10-15T15:26+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00137/plug-in-solar-for-kiwi-homes-next-year.htm",
+   "summary": "Plug-in solar is just the start. Rooftop solar can save the average household $1,000 or more a year on power, and National’s Home Energy Fund will put it within reach of more homeowners, National’s…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZ First To Increase Funding And Support To NZ Coastguard",
+   "date": "2026-10-15T13:51+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00135/nz-first-to-increase-funding-and-support-to-nz-coastguard.htm",
+   "summary": "New Zealand First believes the Government must ensure this essential national service has the funding, equipment, and support it needs to continue saving lives of New Zealanders.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "green",
+   "title": "Greens Promise To Reverse National’s Public Service Cuts",
+   "date": "2026-10-15T13:48+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00134/greens-promise-to-reverse-nationals-public-service-cuts.htm",
+   "summary": "The Greens will always stand on the side of a strong, skilled, hard-working public service that works for all of Aotearoa, says Green Party Co-leader Marama Davidson.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZ First Announces Overhaul To Regulate Combat Sports",
+   "date": "2026-10-15T13:35+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00133/nz-first-announces-overhaul-to-regulate-combat-sports.htm",
+   "summary": "The lack of modern regulation creates severe risks for athletes and undermines legitimate clubs. NZ First will establish a Combat Sports Commission to oversee nationwide event licensing and…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "government",
+   "title": "Hunua Quarry development fast-tracked",
+   "date": "2026-10-15T12:38+13:00",
+   "url": "https://www.beehive.govt.nz/release/hunua-quarry-development-fast-tracked",
+   "summary": "A third substantial Auckland quarry project has gained Fast-track approval to expand operations, Infrastructure Minister Chris Bishop and Resources Minister Shane Jones say. This is the 37th project…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "national",
+   "title": "What Will Be The Rate Of Labour’s Bed Tax?",
+   "date": "2026-10-15T11:59+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00131/what-will-be-the-rate-of-labours-bed-tax.htm",
+   "summary": "“Now that its coalition partners in the Greens and Opportunity have signed on, it’s time to explain to New Zealanders how the tax will work and how much it will cost\", says National's Campaign Chair…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "labour",
+   "title": "Calculator Exposes The Cost Of National",
+   "date": "2026-10-15T10:50+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00130/calculator-exposes-the-cost-of-national.htm",
+   "summary": "Labour has a practical plan to get the cost of living under control. We'll cap public transport fares, provide three free GP visits a year, freeze fuel tax and crack down on price gouging.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "government",
+   "title": "SH54 resilience improvements on the way",
+   "date": "2026-10-15T10:30+13:00",
+   "url": "https://www.beehive.govt.nz/release/sh54-resilience-improvements-way",
+   "summary": "A crash-prone bridge in Manawatū currently down to one lane is set to be replaced with funding from the Regional Infrastructure Fund, Regional Development Minister Shane Jones and Transport Minister…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "labour",
+   "title": "National’s Hiring Freeze Leaves Kids With Cancer Waiting For Treatment",
+   "date": "2026-10-15T09:16+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00128/nationals-hiring-freeze-leaves-kids-with-cancer-waiting-for-treatment.htm",
+   "summary": "“Today’s news that children’s cancer treatments have been delayed shows just how severe the crisis in our hospitals has become,” Labour health spokesperson Dr Ayesha Verrall said.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "national",
+   "title": "Hipkins Flip-Flops On Labour’s Education Flip-Flop",
+   "date": "2026-10-15T08:16+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00127/hipkins-flip-flops-on-labours-education-flip-flop.htm",
+   "summary": "Labour is asking New Zealanders to put them back in charge of education, but they can’t even agree among themselves what their education policy is.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "labour",
+   "title": "Labour’s Plan To Grow The Economy From The Grassroots Up",
+   "date": "2026-10-14T14:52+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00122/labours-plan-to-grow-the-economy-from-the-grassroots-up.htm",
+   "summary": "“Kiwis deserve an economy where hard work gets you ahead,” Labour finance and economy spokesperson Barbara Edmonds said.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "national",
+   "title": "IMF Forecasts NZ To Outperform Other Advanced Economies",
+   "date": "2026-10-14T14:20+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00121/imf-forecasts-nz-to-outperform-other-advanced-economies.htm",
+   "summary": "“The International Monetary Fund is forecasting growth in New Zealand to accelerate to 2.6 per cent next year while growth in other advanced economies declines or flatlines.\"",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "green",
+   "title": "If AI Takes Our Jobs, Who Pays The Bills?",
+   "date": "2026-10-14T14:00+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00120/if-ai-takes-our-jobs-who-pays-the-bills.htm",
+   "summary": "If businesses can produce more while employing fewer people, what happens to those who lose their incomes? And how will governments fund hospitals, schools and essential services if fewer people are…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "labour",
+   "title": "National’s Answer To The Health Crisis? Train Fewer Nurses",
+   "date": "2026-10-14T11:45+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00118/nationals-answer-to-the-health-crisis-train-fewer-nurses.htm",
+   "summary": "“Labour wants to build up our health workforce, while National runs it down. National is cutting training for nurses. Labour will not,\" said Labour campaign chair Kieran McAnulty",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZFirst Policy Announcement: Changes To Fast-Track Residential Approvals",
+   "date": "2026-10-14T08:53+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00112/nzfirst-policy-announcement-changes-to-fast-track-residential-approvals.htm",
+   "summary": "The policy will bring a suite of changes to the current fast-track regime to ensure housing developments do not create more problems than they solve.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "conservative",
+   "title": "Teaching Council Must Put Child Safety Ahead Of Ideological Policing",
+   "date": "2026-10-13T20:16+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00079/teaching-council-must-put-child-safety-ahead-of-ideological-policing.htm",
+   "summary": "Helen Houghton said the case demands a serious examination of how the Teaching Council allocates its attention, resources and disciplinary powers.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "Statement On The Decision By The Minister Of Consumer Affairs Regarding Imported Aluminium Extrusions",
+   "date": "2026-10-13T13:17+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00110/statement-on-the-decision-by-the-minister-of-consumer-affairs-regarding-imported-aluminium-extrusions.htm",
+   "summary": "Tiwai Point makes the finest aluminium in the world, and there is no reason for New Zealand to allow the importation of inferior product, particularly when health and safety issues are involved.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "green",
+   "title": "Greens’ Economic Development Plan Will Create 284,000 Jobs",
+   "date": "2026-10-13T11:46+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00106/greens-economic-development-plan-will-create-284000-jobs.htm",
+   "summary": "“We have no shortage of talent, creativity, and hard work in this beautiful country, whether it’s in a South Auckland garage or a lab in Otago,\" says Green Party Co-leader Marama Davidson.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "labour",
+   "title": "The Cost Of Luxon Hits $6,000+ A Year",
+   "date": "2026-10-13T10:51+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00103/the-cost-of-luxon-hits-6000-a-year.htm",
+   "summary": "“He promised to fix the cost of living. Three years on, a typical Auckland family with two kids is paying $6,302 more a year just to get by,\" Labour Campaign Chair Kieran McAnulty said.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "Te Pāti Māori Announces Toi Māori Authority And Artist Income Programme",
+   "date": "2026-10-12T15:17+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00101/te-pati-maori-announces-toi-maori-authority-and-artist-income-programme.htm",
+   "summary": "The income programme will support 1,000 artists at a time, providing paid work for 30 hours a week over two years. Places will then rotate to a new cohort of artists.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "labour",
+   "title": "Kiwis Can’t Afford Another Three Years Of Hunger",
+   "date": "2026-10-12T14:39+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00100/kiwis-cant-afford-another-three-years-of-hunger.htm",
+   "summary": "“After three years of National, too many families are still struggling to put food on the table. Christopher Luxon promised to fix the cost of living and he has failed,” Labour social development and…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "labour",
+   "title": "National's Fiscal Plan: More Cuts, More Chaos, No Cost Of Living Relief",
+   "date": "2026-10-12T13:13+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00098/nationals-fiscal-plan-more-cuts-more-chaos-no-cost-of-living-relief.htm",
+   "summary": "“NZ'ers have seen this all before. Last time, National promised families up to $250 a fortnight, only later to admit they couldn't find a single family that received the full amount,\" said Labour…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "green",
+   "title": "Greens Will Regulate AI For The Public Good",
+   "date": "2026-10-12T12:44+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00096/greens-will-regulate-ai-for-the-public-good.htm",
+   "summary": "“This is exactly why Government is supposed to exist, to regulate what needs regulating, to ensure benefits are appropriately shared and harms minimised,” says Green Party Co-leader Chlöe Swarbrick.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "labour",
+   "title": "National Hides More Job Cuts Until After The Election",
+   "date": "2026-10-12T12:39+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00095/national-hides-more-job-cuts-until-after-the-election.htm",
+   "summary": "“Today we learned that staff at the Ministry for Cities, Environment and Transport are facing a restructure, but the ministry won’t say how many jobs are at risk or what services could be cut,\" said…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "conservative",
+   "title": "Right To Life And Legal Recognition Of The Unborn Child In The Third Trimester Policy Principle",
+   "date": "2026-10-12T10:03+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00065/right-to-life-and-legal-recognition-of-the-unborn-child-in-the-third-trimester-policy-principle.htm",
+   "summary": "We will introduce legislation recognising an unborn child from the beginning of the third trimester, defined for the purposes of the legislation as 28 weeks gestation, as a distinct human life…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "green",
+   "title": "ACT’s Welfare For The Wealthiest",
+   "date": "2026-10-11T15:29+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00090/acts-welfare-for-the-wealthiest.htm",
+   "summary": "“The cutting of KiwiSaver Government contributions and removal of tax on gains will most benefit the richest, and they know it.,\" says Green Party Co-leader Chlöe Swarbrick.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZFirst To Scrap Accredited Working Visa Model",
+   "date": "2026-10-11T14:09+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00087/nzfirst-to-scrap-accredited-working-visa-model.htm",
+   "summary": "Immigration must serve New Zealand’s economic interests, fill identifiable shortages, and complement our workforce, not become a general source of labour for ordinary jobs.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZ First To Increase Working For Families, Minimum Wage",
+   "date": "2026-10-10T15:33+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00084/nz-first-to-increase-working-for-families-minimum-wage.htm",
+   "summary": "As a government we cannot just view the economic recovery from a national level, it needs to start with our workers who are the backbone of our communities, says Winston Peters, NZ First Leader.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "Te Pāti Māori Launches New Tool Putting Whānau Priorities First",
+   "date": "2026-10-09T13:46+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00079/te-pati-maori-launches-new-tool-putting-whanau-priorities-first.htm",
+   "summary": "\"It takes less than a minute to complete, nothing is stored, and nothing is sent anywhere. It's simply a way for whānau to explore our kaupapa and see how it connects to their everyday lives.\"",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZFirst To Ban Public Sales Of Fireworks",
+   "date": "2026-10-09T10:13+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00076/nzfirst-to-ban-public-sales-of-fireworks.htm",
+   "summary": "The taxpayer should not be spending millions on something that drastically impacts pets, causes the inevitable fires, and causes havoc for our emergency services.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "free-palestine",
+   "title": "The Free Palestine Party Celebrates The Victory Of The Resistance On October 7th 2023",
+   "date": "2026-10-08T13:01+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00045/the-free-palestine-party-celebrates-the-victory-of-the-resistance-on-october-7th-2023.htm",
+   "summary": "The Free Palestine Party celebrates the Victory of the courageous resistance fighters of the Gaza Strip on October 7th, and their continuing resistance to the ongoing genocide of the aparthied regime.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Free Palestine Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "New Zealand First Announces Party List",
+   "date": "2026-10-07T14:02+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00062/new-zealand-first-announces-party-list.htm",
+   "summary": "New Zealand First has officially released its party list, presenting a formidable lineup of experienced, talented, and principled leaders ready to put New Zealanders First.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "conservative",
+   "title": "Conservative Party Raises Concerns Over Electoral Commission Invoice Payments",
+   "date": "2026-10-07T11:29+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00035/conservative-party-raises-concerns-over-electoral-commission-invoice-payments.htm",
+   "summary": "We believe the Electoral Commission needs to be transparent about its processes and ensure that all political parties are treated fairly and consistently.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "Te Pāti Māori Backs Kōhanga Reo And Kura With Long-Term Investment",
+   "date": "2026-10-06T19:49+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00052/te-pati-maori-backs-kohanga-reo-and-kura-with-long-term-investment.htm",
+   "summary": "Te Pāti Māori will establish a Te Kōhanga Reo Act and lock in secure annual baseline funding for kōhanga reo.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "green",
+   "title": "Greens Announce Plans To Protect The Hauraki Gulf",
+   "date": "2026-10-06T11:51+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00048/greens-announce-plans-to-protect-the-hauraki-gulf.htm",
+   "summary": "“The Greens will fix the rules and ensure politics backs up the immense local effort by community, iwi, hapū, conservationists and recreational fishers to support the restoration of our Hauraki,”…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "green",
+   "title": "Greens Commit To Funding And Delivering Level Crossing Removals",
+   "date": "2026-10-05T11:50+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00037/greens-commit-to-funding-and-delivering-level-crossing-removals.htm",
+   "summary": "“This is fundamentally about safety. Right now, these crossings create risks for people every single day, whether they're walking, cycling, driving, or catching public transport,\" says Green Party…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "green",
+   "title": "Green Party Launches The Transport Plan To Combat Fossil Fuel Crisis",
+   "date": "2026-10-04T14:32+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00027/green-party-launches-the-transport-plan-to-combat-fossil-fuel-crisis.htm",
+   "summary": "In the middle of a fossil fuel crisis, these common sense investments will save New Zealanders money, stress and time. It’ll cut emissions and improve quality of life, says Green Party Co-leader…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "Te Pāti Māori Puts Its Money Where Its Mouth Is With One-Person Party List",
+   "date": "2026-10-04T14:21+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00026/te-pati-maori-puts-its-money-where-its-mouth-is-with-one-person-party-list.htm",
+   "summary": "Lance Norman, General Secretary of Te Pāti Māori, was selected unanimously as the Party’s additional list candidate.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "green",
+   "title": "Green Party Announce Plan For Passenger Rail Between Major NZ Cities",
+   "date": "2026-10-03T18:43+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00024/green-party-announce-plan-for-passenger-rail-between-major-nz-cities.htm",
+   "summary": "Restoring commuter rail will give smaller regions and towns the benefits of more travellers stopping at their town stations, creating more economic opportunities and connecting them to main centres…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "green",
+   "title": "National Must Come Clean On Climate",
+   "date": "2026-10-02T12:59+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00018/national-must-come-clean-on-climate.htm",
+   "summary": "“Luxon's Government is blaming everyone else for the consequences of their own decisions to shred climate action, instead of looking in the mirror and doing the right thing,” says Green Party…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "green",
+   "title": "Kahu Carter To Host Christchurch Hui On Clean, Healthy Waterways",
+   "date": "2026-10-02T12:40+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00017/kahu-carter-to-host-christchurch-hui-on-clean-healthy-waterways.htm",
+   "summary": "“Our rivers should be places where people can swim, gather kai and connect with nature without worrying about pollution or whether the water is safe,\" says Green MP and Christchurch Central candidate…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "free-palestine",
+   "title": "New Zealand's Gutless Response At UN",
+   "date": "2026-10-01T10:48+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00001/new-zealands-gutless-response-at-un.htm",
+   "summary": "The New Zealand government's lack of a spine or any sort of independent foreign policy means that we are actively assisting in this evil arising in the world.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Free Palestine Party"
+  },
+  {
+   "party": "green",
+   "title": "Health And Wellbeing Should Be For All Of Us",
+   "date": "2026-10-01T09:22+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00002/health-and-wellbeing-should-be-for-all-of-us.htm",
+   "summary": "For many people, getting healthcare can mean travelling considerable distances, taking time away from work, finding transport or relying on somebody else to get them there.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "Statement From Rt Hon Winston Peters",
+   "date": "2026-09-30T13:35+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00312/statement-from-rt-hon-winston-peters.htm",
+   "summary": "Mr Rurawhe was a respected colleague and friend to MPs from both sides of Parliament who had the pleasure to know him. He was a much-loved member of the Ratana faith and a softly spoken but staunch…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "green",
+   "title": "He Maimai Aroha Ki A Rt Hon Adrian Rurawhe",
+   "date": "2026-09-30T13:24+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00311/he-maimai-aroha-ki-a-rt-hon-adrian-rurawhe.htm",
+   "summary": "The Green Party sends our love to Adrian’s whānau, and the extended whānau of Rātana Pā,” says Marama Davidson on behalf of the Green Party caucus.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "Chloe Swarbrick Shows Blistering Ignorance With Paris Accord Accusation",
+   "date": "2026-09-30T13:21+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00310/chloe-swarbrick-shows-blistering-ignorance-with-paris-accord-accusation.htm",
+   "summary": "\"After all her time in parliament she has proven she has learnt nothing. This is from someone who wants to be the Minister of Finance sitting around Cabinet making decisions for New Zealand.\"",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "Te Pāti Māori Mourns The Passing Of The Right Honourable Adrian Paki Rurawhe",
+   "date": "2026-09-30T12:37+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00308/te-pati-maori-mourns-the-passing-of-the-right-honourable-adrian-paki-rurawhe.htm",
+   "summary": "Our thoughts and prayers are with his whānau, the people of Rātana Pā, Ngāti Apa, and all those mourning his loss.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "Te Pāti Māori Mourns The Passing Of The Right Honourable Adrian Paki Rurawhe",
+   "date": "2026-09-30T12:36+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00307/te-pati-maori-mourns-the-passing-of-the-right-honourable-adrian-paki-rurawhe.htm",
+   "summary": "Our thoughts and prayers are with his whānau, the people of Rātana Pā, Ngāti Apa, and all those mourning his loss.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "green",
+   "title": "Foreign Affairs Minister Fails To Seek Advice On Leaving Paris Agreement",
+   "date": "2026-09-30T11:40+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00306/foreign-affairs-minister-fails-to-seek-advice-on-leaving-paris-agreement.htm",
+   "summary": "Good climate policy reduces the cost of living, supports jobs and builds our country's resilience. The Luxon Government has managed to both tank the economy and undermine climate commitments, says…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "conservative",
+   "title": "Conservative NZ Announces 2026 Party List",
+   "date": "2026-09-30T09:11+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2609/S00250/conservative-nz-announces-2026-party-list.htm",
+   "summary": "Party Leader Helen Houghton says the decision to place a small number of highly capable people at the top of the list reflects the party’s commitment to quality, experience, and effective…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "green",
+   "title": "Luxon Undermines Economic Resilience",
+   "date": "2026-09-29T13:13+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00292/luxon-undermines-economic-resilience.htm",
+   "summary": "“NZers expect a responsible Govt to step in & control what we can control. That’s why the Greens have a real economic plan to invest in what is broken, aid job creation & reduce our exposure to…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "conservative",
+   "title": "We Conservatives Are The Opposite Of The Opportunity Party",
+   "date": "2026-09-29T08:32+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2609/S00239/we-conservatives-are-the-opposite-of-the-opportunity-party.htm",
+   "summary": "We stand for Polices That Work (pragmatic policies that have been shown to work - whether in New Zealand or overseas).",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "green",
+   "title": "Greens Commercial Rent Reforms Target Empty Shops In Christchurch",
+   "date": "2026-09-28T14:49+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00285/greens-commercial-rent-reforms-target-empty-shops-in-christchurch.htm",
+   "summary": "Green Party Christchurch Central candidate Kahu Carter says the policy is particularly relevant to a city that has spent years working to bring people, businesses and life back into its centre.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "womens-rights",
+   "title": "Women’s Rights Party Announces Its List For Election 2026",
+   "date": "2026-09-28T12:58+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2609/S00230/womens-rights-party-announces-its-list-for-election-2026.htm",
+   "summary": "The Party’s candidates met on Saturday to share their experiences in the Election campaign so far, and to plan their activities over the next six weeks.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Women's Rights Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZFirst Policy Announcement: Ending The Waitangi Make-Work Industry",
+   "date": "2026-09-26T16:33+12:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00277/nzfirst-policy-announcement-ending-the-waitangi-make-work-industry.htm",
+   "summary": "New Zealand First will table legislation within the first 100 days after the next election to immediately abolish the Waitangi Tribunal, and replace it with the Treaty of Waitangi Completion…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "Winston Peters' Speech - “Ending The Waitangi Make-Work Industry”",
+   "date": "2026-09-26T16:31+12:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00276/winston-peters-speech-ending-the-waitangi-make-work-industry.htm",
+   "summary": "New Zealand First today is announcing its plan to end the Treaty of Waitangi grievance industry and get back to all being equal citizens with equal rights in our country.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "New Plymouth Deputy Mayor Murray Chong To Stand For NZFirst",
+   "date": "2026-09-25T12:47+12:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00269/new-plymouth-deputy-mayor-murray-chong-to-stand-for-nzfirst.htm",
+   "summary": "He is a dedicated local advocate, Deputy Mayor of New Plymouth District Council, previous business owner, and lifelong resident of the New Plymouth District. He comes from several generations of…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "Te Pāti Māori Launches Mana Takatāpui Policy",
+   "date": "2026-09-23T12:40+12:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00245/te-pati-maori-launches-mana-takatapui-policy.htm",
+   "summary": "“We are not creating another advisory group that Government can choose to listen to or ignore. We are establishing an independent Takatāpui governed Commission with authority and guaranteed, ring…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "Te Pāti Māori Launches Kai Sovereignty Policy",
+   "date": "2026-09-21T14:24+12:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00211/te-pati-maori-launches-kai-sovereignty-policy.htm",
+   "summary": "The policy sets out a pathway from kai dependency to kai sovereignty by delivering immediate cost-of-living relief, investing in community and Māori food production, and building Māori ownership…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "conservative",
+   "title": "Immigration And Employment Practices — Time For Transparency",
+   "date": "2026-09-16T16:31+12:00",
+   "url": "https://www.scoop.co.nz/stories/PO2609/S00122/immigration-and-employment-practices-time-for-transparency.htm",
+   "summary": "This is not an attack on Indian people, Indian businesses or any other ethnic community. New Zealand welcomes people who come here legally, contribute to our economy and abide by our laws.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "We Want Cheaper Power And We Want Our People To Own It",
+   "date": "2026-09-16T12:11+12:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00161/we-want-cheaper-power-and-we-want-our-people-to-own-it.htm",
+   "summary": "“Every party is talking about generating more electricity. We’re asking the question they keep avoiding: who will own it?” said Te Pāti Co-Leader Rawiri Waititi",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "womens-rights",
+   "title": "Historic Flag Raising Commemorates Women’s Suffrage",
+   "date": "2026-09-16T12:03+12:00",
+   "url": "https://www.scoop.co.nz/stories/PO2609/S00118/historic-flag-raising-commemorates-womens-suffrage.htm",
+   "summary": "New Zealand became the first self-governing country in the world where all adult women gained the right to vote in general elections.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Women's Rights Party"
+  },
+  {
+   "party": "conservative",
+   "title": "A Win For Free Speech: Helen Houghton Challenges ‘Extremist’ Label And Secures Public Apology",
+   "date": "2026-09-15T15:58+12:00",
+   "url": "https://www.scoop.co.nz/stories/PO2609/S00108/a-win-for-free-speech-helen-houghton-challenges-extremist-label-and-secures-public-apology.htm",
+   "summary": "Conservatives believe that people should be free to express their political, religious and social views without being vilified or falsely associated with movements or ideologies they do not support.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "Government's Last Act Is Another Attack On Te Tiriti",
+   "date": "2026-09-15T11:03+12:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00152/governments-last-act-is-another-attack-on-te-tiriti.htm",
+   "summary": "\"Govt sees Te Tiriti as a problem to be managed. In their last days they could be focused on the cost of living, housing, healthcare & the real pressures facing whānau. Instead, they have chosen…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "conservative",
+   "title": "Condemnation Of Real Estate Authority’s Decision: Breach Of Fundamental Rights And Failure To Uphold The Law",
+   "date": "2026-09-04T13:26+12:00",
+   "url": "https://www.scoop.co.nz/stories/PO2609/S00030/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
+   "summary": "By compelling Dickson to engage with beliefs and practices contrary to her own, the Authority has acted in a manner inconsistent with the Bill of Rights, as argued by her counsel.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "conservative",
+   "title": "Condemnation Of Real Estate Authority’s Decision: Breach Of Fundamental Rights And Failure To Uphold The Law",
+   "date": "2026-09-04T08:56+12:00",
+   "url": "https://www.scoop.co.nz/stories/PO2609/S00028/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
+   "summary": "The Real Estate Authority must be held accountable for its disregard of statutory limits, human rights, and procedural fairness.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "Te Pāti Māori Launches Te Tiriti Entrenchment Policy",
+   "date": "2026-09-01T12:47+12:00",
+   "url": "https://www.scoop.co.nz/stories/PA2609/S00008/te-pati-maori-launches-te-tiriti-entrenchment-policy.htm",
+   "summary": "Te Tiriti is the constitutional foundation of Aotearoa. Its mana does not rise and fall depending on who forms the Government, Te Pāti Māori Co-Leader Rawiri Waititi said.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "nz-loyal",
+   "title": "Alex Hislop Announced As West Coast-Tasman Candidate",
+   "date": "2026-08-31T11:04+12:00",
+   "url": "https://www.scoop.co.nz/stories/PO2608/S00215/alex-hislop-announced-as-west-coast-tasman-candidate.htm",
+   "summary": "Alex is the first of many talented candidates who will be announced by NZ Loyal in the coming weeks.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "NZ Loyal"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "Pūtea Back In Your Pocket: TPM Unveils A Kiwi Tax Plan For Everyone",
+   "date": "2026-08-26T15:38+12:00",
+   "url": "https://www.scoop.co.nz/stories/PA2608/S00238/putea-back-in-your-pocket-tpm-unveils-a-kiwi-tax-plan-for-everyone.htm",
+   "summary": "The targeted wealth tax will affect only the wealthiest 3% of people, while 97% will pay no wealth tax at all.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  },
+  {
+   "party": "te-pati-maori",
+   "title": "MP For Hauraki-Waikato Hana-Rawhiti Calls On Govt To Honour Its Commitments To Waikato And Waipaa Awa",
+   "date": "2026-08-24T16:44+12:00",
+   "url": "https://www.scoop.co.nz/stories/PA2608/S00223/mp-for-hauraki-waikato-hana-rawhiti-calls-on-govt-to-honour-its-commitments-to-waikato-and-waipaa-awa.htm",
+   "summary": "Te Paati Maaori stands with Waikato-Tainui and the iwi and hapuu of Waikato in upholding their responsibilities to their pepeha.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Te Pati Maori"
+  }
+ ]
+}

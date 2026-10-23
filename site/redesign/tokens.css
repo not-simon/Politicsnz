@@ -148,6 +148,9 @@
   --shadow-float: 0 1px 2px rgb(23 23 28 / .06), 0 18px 48px -12px rgb(23 23 28 / .28);
   --shadow-card: 0 1px 0 rgb(23 23 28 / .04), 0 10px 30px -14px rgb(23 23 28 / .30);
   --hatch: repeating-linear-gradient(135deg, var(--line-strong) 0 1.5px, transparent 1.5px 6px);
+  --shadow-tint: rgb(23 23 28 / .18);
+  --print-paper: #FFFFFF;
+  --print-ink: #000000;
 }
 
 /* ================== COLOUR: DARK (system preference) ====================== */
@@ -198,6 +201,7 @@
     --scrim: rgb(0 0 0 / .62);
     --shadow-float: 0 1px 2px rgb(0 0 0 / .4), 0 18px 48px -12px rgb(0 0 0 / .7);
     --shadow-card: 0 1px 0 rgb(0 0 0 / .3), 0 10px 30px -14px rgb(0 0 0 / .8);
+    --shadow-tint: rgb(0 0 0 / .45);
     color-scheme: dark;
   }
 }
@@ -249,6 +253,7 @@
   --scrim: rgb(0 0 0 / .62);
   --shadow-float: 0 1px 2px rgb(0 0 0 / .4), 0 18px 48px -12px rgb(0 0 0 / .7);
   --shadow-card: 0 1px 0 rgb(0 0 0 / .3), 0 10px 30px -14px rgb(0 0 0 / .8);
+  --shadow-tint: rgb(0 0 0 / .45);
   color-scheme: dark;
 }
 

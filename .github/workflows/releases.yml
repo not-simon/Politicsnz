@@ -1,0 +1,46 @@
+# Refreshes the party newsroom feed (data/releases.json) every hour (and on demand).
+#
+# Requires GitHub Actions to be enabled for the repository (Settings -> Actions -> General -> "Allow all actions"),
+# and "Workflow permissions" set to "Read and write" (or rely on the `permissions: contents: write` block below).
+# It runs tools/releases_update.py (Scoop InfoPages + Scoop Parliament/Politics RSS + Beehive RSS -> data/releases.json,
+# 60-day window, de-duplicated by URL), then tools/build_site.py, and commits only if something changed.
+# Safe to run repeatedly: the script is idempotent (a run that finds nothing new leaves data/releases.json byte-identical, so
+# no commit is made); a failed fetch keeps the previously stored items for that source and records the error in `sources`.
+# One request per feed per run with a fixed User-Agent. Scoop's terms are recorded in the file's `terms_note`; to drop the Scoop
+# channel and keep only Beehive + party newsroom links, change the first run step to `python3 tools/releases_update.py --no-scoop`.
+# The follow directory (data/guide/follow.json) is rebuilt by hand with `--follow`; it has no feed to poll.
+name: Update party releases
+on:
+  schedule:
+    - cron: '41 * * * *'   # hourly (UTC); the odd minute avoids the top-of-hour rush
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: releases
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh party and ministerial releases
+        run: python3 tools/releases_update.py
+      - name: Rebuild the site bundle
+        run: python3 tools/build_site.py
+      - name: Commit and push if anything changed
+        run: |
+          git add data/releases.json site
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "releases-bot"
+          git config user.email "releases-bot@users.noreply.github.com"
+          git commit -m "Update party releases ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git push
