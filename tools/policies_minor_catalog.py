@@ -495,3 +495,215 @@ CATALOG["socialist-equality-group"] = [
       "The SEG says $129 billion is held by 150 families and that the wealth was created by the working class.",
       "Establish a 'workers' government' after the working class takes political power.", SEG, key=True),
 ]
+
+# ------------------------------------------------------------------------------------------------ Progressive Aotearoa NZ
+PR = ["policies"]
+META["progressive-aotearoa-new-zealand"] = {
+    "name": "Progressive Aotearoa New Zealand (Progressive Party, PPANZ)", "website": "https://www.progressiveparty.co.nz/",
+    "registered": "Not a registered party; electorate candidates only (Nelson: Bruce Dyer; West Coast-Tasman: Kevin Rooke; Kāpiti: Michael Walker — per policy.nz)",
+    "intro": "The Progressive Party (PPANZ) publishes a 'Policies' page with sections on health, housing, education, justice, "
+             "Māori policy, animals and plants, agriculture, climate change, industry, taxation and social boards, each "
+             "beginning 'The Progressive Party advocates…', plus a longer 'PPANZ Manifesto' (marked as a work in progress, "
+             "including a Covid-19 strategy white paper). The main advocated positions are listed below.",
+    "gaps": "Undated pages; no costings. The manifesto is captured in full but its points largely repeat the Policies page.",
+}
+_pr = "The Progressive Party says economic and political power should serve people rather than concentrated wealth (its stated philosophy draws on economic democracy and 'neohumanism')."
+CATALOG["progressive-aotearoa-new-zealand"] = [
+    P("PPA-01", "Guarantee access to food, clothing, housing, education and healthcare", ["community-and-inclusion", "incomes-and-employment"], _pr, "Listed in the health, housing and education sections as guarantees for everyone.", PR, key=True),
+    P("PPA-02", "Create an independent National Health Board outside the Health Ministry to oversee Te Whatu Ora", ["health", "health-services"], "The party says this would counterbalance political influence on health priorities.", "A board of health experts with elected and appointed members, plus co-operative primary and residential care, Māori-for-Māori services and higher taxes on harmful products ring-fenced for health.", PR),
+    P("PPA-03", "Legalise cannabis as a health issue and support the End-of-Life Choice Act", ["health", "alcohol-and-drugs"], None, "Tax revenue from cannabis would go to health, with research on benefits and harms; the party also lists voluntary vaccination and a review of Covid-era measures for future pandemics.", PR),
+    P("PPA-04", "Offer state-funded mortgages, a state-owned house-building enterprise and limit home ownership to NZ residents", ["housing", "housing-affordability"], "The party says leaving housing to the market 'amounts to a dereliction of duty'.", "Also long-term leasing, co-operative housing and co-housing options, and a capital gains tax to curb speculation.", PR, key=True),
+    P("PPA-05", "Make te reo Māori compulsory in primary and secondary schools, aiming for a bilingual Aotearoa", ["te-ao-maori", "te-reo-maori-and-culture", "education"], None, "Language parity with English, plus full teaching of New Zealand history and the constitutional documents (Te Tiriti and He Whakaputanga).", PR),
+    P("PPA-06", "Entrench the Māori seats in Parliament", ["te-ao-maori", "parliament-and-democracy"], None, "Give the Māori seats the same entrenched protection as general seats.", PR),
+    P("PPA-07", "Move schooling from national standards to child-centred, experiential learning including meditation and mindfulness", ["education", "schools"], None, "Learning based on each child's needs, parents as active partners, restorative behaviour management and a Hauora (holistic wellbeing) approach.", PR),
+    P("PPA-08", "Focus prisons on rehabilitation, education and restorative justice, and end for-profit prisons", ["law-justice-and-government", "criminal-justice"], "The party views crime as rooted in social and economic conditions.", "Skills training and tikanga Māori in prisons, mental-health services, restorative justice, community reintegration support, and terminating private prison arrangements.", PR),
+    P("PPA-09", "Establish a Ministry for Animal and Plant Welfare and extend legal advocacy to nature", ["environment", "conservation", "community-and-inclusion"], None, "Building on Te Urewera's legal personhood and animals' legal recognition as sentient.", PR),
+    P("PPA-10", "Shift farming to co-operatives and plant-based protein", ["economy", "agriculture"], None, "Incentivise farmers to move to plant protein (including lab-grown meat) and regenerative, ethical farming models; co-operatives at all levels of agriculture.", PR),
+    P("PPA-11", "Build a government-backed renewables industry and prepare to move infrastructure 10 metres above sea level", ["environment", "emissions-reduction", "climate-adaptation", "energy"], None, "Electrify transport, convert sewage and organic waste to biogas and biodiesel, raise eco-housing standards, phase out gas appliances, and redirect foreign aid toward emissions cuts in the Pacific.", PR),
+    P("PPA-12", "Run businesses with more than nine employees as worker co-operatives and state-manage monopolistic key industries", ["economy", "economic-development-and-industry"], None, "A Minister, Ministry and Centre for Cooperative Studies; railways, power and mining state-managed; a nationwide co-operative supermarket to cut living costs.", PR, key=True),
+    P("PPA-13", "Phase out income tax in favour of taxes on production, remove GST from fresh produce and introduce a capital gains tax", ["incomes-and-employment", "tax-and-income-support"], None, "Income tax would become a mechanism capping salaries at a maximum linked to the minimum wage, set by a Wages and Salary Commission.", PR),
+    P("PPA-14", "Create Social Boards of respected community members to advise local and national government", ["law-justice-and-government", "parliament-and-democracy"], "The party says they would moderate lobby groups' influence.", None, PR),
+]
+
+# ------------------------------------------------------------------------------------------------ electorate-only groups with no published policy
+_none = ("No party website, policy page or published platform could be found for this group (checked policy.nz candidate "
+         "data, which lists no policies or profile text, and web search before search capacity ran out on 2026-10-23). If the "
+         "group publishes policies, they should be added here.")
+for slug, name, who in [
+    ("balance-new-zealand", "Balance New Zealand", "Whanganui: Juan Charles Coffey"),
+    ("build-the-nation", "Build the Nation", "Northland: Richard McIntosh"),
+    ("jobseeker-party", "Jobseeker Party", "Henderson: Kelso Papali'i"),
+    ("money-free-party", "Money Free Party", "West Coast-Tasman: Richard Francis Osmaston; Wellington Bays: Liam Anderson; Whangārei: Luke Beharrell"),
+    ("new-world-order-mccann-party", "New World Order McCann Party", "Hamilton West: Nathan Lee Couper"),
+    ("nz-economic-euthenics-party", "NZ Economic Euthenics Party", "Christchurch Central: Tubby Hansen"),
+    ("peoples-party-new-zealand", "People's Party New Zealand", "Māngere: Alani Fisher Taione; Ōtāhuhu: Eseta Haunga"),
+    ("te-pati-hira", "Te Pāti Hira", "Wairarapa: Jared Warren Gardner"),
+    ("your-pic-party", "Your PIC Party", "Te Tai Tokerau: Karl Barkley"),
+    ("independent-taranaki", "Independent Taranaki", "New Plymouth: Rusty Kane"),
+]:
+    META[slug] = {"name": name, "website": None,
+                  "registered": f"Not a registered party; electorate candidate(s) only ({who} — per policy.nz)",
+                  "intro": f"{name} is an electorate-only label used by candidate(s) in the 2026 election. It is not on the "
+                           "Electoral Commission's register of parties and does not contest the party vote.",
+                  "gaps": _none}
+    CATALOG[slug] = []
+META["money-free-party"]["gaps"] = _none + (" Background: the Money Free movement (led by Richard Osmaston) has long argued "
+    "that money itself drives problems such as climate change and homelessness (Wikipedia, 'Money Free movement'); no 2026 "
+    "policy document was found.")
+META["balance-new-zealand"]["gaps"] = _none + (" A Facebook-page mirror (govserv.org) shows posts describing the group as "
+    "centrist and discussing permanent residents' voting rights and MPs' entitlements, but this could not be verified "
+    "against a party policy document, so nothing is listed.")
+
+# ------------------------------------------------------------------------------------------------ NZ Outdoors & Freedom Party
+META["nz-outdoors-freedom"] = {
+    "name": "NZ Outdoors & Freedom Party ('freedom')", "website": "https://freedom.kiwi/ (registered as www.nzofp.co.nz, which serves the same site)",
+    "registered": "11 August 2017 (Electoral Commission register)",
+    "intro": "The NZ Outdoors & Freedom Party (leader Sue Grey) now brands itself 'freedom'. Its Policies page links ten "
+             "policy pages: Direct Democracy (its 'new core pillar'), Agriculture, Housing, Open Source First, Cannabis, "
+             "Anti-Bullying, the ACC Justice & Accountability statement, Education, Fisheries, and Outdoors Recreation & "
+             "Wildlife. Each distinct commitment on those pages is listed below.",
+    "gaps": "The home page renders almost no text without JavaScript (captured as-is). Pages are undated; costings appear "
+            "only in the ACC statement. Positions on 1080, fluoride and 5G described in media coverage were not found on "
+            "the current policy pages, so are not listed.",
+}
+DD, AG, HO, OS, CA, AB, ACC, ED, FI, RW = (["direct-democracy"], ["agriculture-policy"], ["housing-policy"], ["open-source-policy"],
+    ["cannabis-policy"], ["anti-bullying-policy"], ["the-acc-justice-accountability-policy-statement"], ["education-policy"],
+    ["nzofp-fisheries-policy"], ["outdoors-recreation-and-wildlife-policy"])
+_dd = "The party says Covid-era measures showed fundamental rights could be overridden by a simple parliamentary majority and that select-committee consultation is 'a toothless illusion'."
+CATALOG["nz-outdoors-freedom"] = [
+    P("OFP-01", "Entrench the NZ Bill of Rights Act as supreme law", ["law-justice-and-government", "parliament-and-democracy"], _dd,
+      "Make the Bill of Rights the constitutional bedrock so no government or emergency declaration can override rights such as free speech, movement, assembly and the right to refuse medical treatment.", DD, key=True),
+    P("OFP-02", "Introduce Swiss-style binding citizens' referendums: a citizens' veto on laws and citizen-initiated laws", ["law-justice-and-government", "parliament-and-democracy"], _dd,
+      "Citizens could gather signatures to force a binding nationwide vote to strike down a law, or to put their own draft law on the ballot, with a lower signature threshold than the current 10% for non-binding referendums.", DD, key=True),
+    P("OFP-03", "Decentralise government under a 'subsidiarity' principle and let regions keep part of the GST and tax raised locally", ["law-justice-and-government", "local-government", "regional-development"], _dd,
+      "Return decisions on local infrastructure, land management and regional development to communities, shrink central ministries and give regions financial autonomy.", DD),
+    P("OFP-04", "Withdraw from the Paris Agreement and focus on flood management and carbon-rich soils", ["environment", "emissions-reduction", "agriculture"],
+      "The party says farm animals cannot release more carbon than they eat and that extreme weather is 'nature, not climate change'.",
+      "Exit Paris (it says staying would cost more than leaving), maintain river flows and channels to reduce flood risk, and support ecological agriculture with minimal synthetic inputs.", AG, key=True),
+    P("OFP-05", "Replace the EPA with an independent Health-Environment Protection Agency and apply the precautionary principle to new technology", ["environment", "public-health", "agriculture"], None,
+      "New technologies and products only with full liability for the business introducing them; independent biosecurity at every entry point.", AG),
+    P("OFP-06", "Leave the CPTPP (TPPA) and RCEP and pursue 'fair trade' bilateral deals", ["defence-and-foreign-affairs", "international-relations", "economy"], None,
+      "Withdraw from agreements that limit New Zealand's ability to legislate, increase Pacific trade, strengthen anti-monopoly law and place a moratorium on sales of farmland, forestry, housing and infrastructure to non-tax-residents.", AG),
+    P("OFP-07", "Free up land and revise the RMA to speed house building, with a mix of public and private housing", ["housing", "housing-affordability", "urban-planning-and-resource-management"],
+      "The party says every citizen should have access to an affordable, warm, dry home.", "Identify land for subdivision, sequence servicing and construction, and have the Ministry of Housing take a hands-on role.", HO),
+    P("OFP-08", "Require high standards for new homes (R5 insulation, rainwater and greywater systems, energy efficiency) and fund hempcrete building", ["housing", "housing-quality", "construction"], None,
+      "Also solar or micro-generation, green space for gardens, recycling of building materials, lower consent costs for sustainable materials, and a funding scheme for hempcrete homes.", HO),
+    P("OFP-09", "Fully fund night shelters and low-cost living spaces for homeless people", ["housing", "community-and-inclusion"], None, "Shelters would provide two nutritious meals a day and supplements; the party also wants to restore New Zealand's leadership in social housing.", HO),
+    P("OFP-10", "Adopt an 'Open Source First' rule for government software procurement", ["economy", "internet-and-digital-technologies", "public-sector"],
+      "The party says dependence on multinational software vendors is a hidden import cost and a resilience risk.", "Agencies must check for a suitable open-source option before buying proprietary software, compare whole-of-life costs, and use New Zealand providers for support.", OS),
+    P("OFP-11", "Decriminalise personal cannabis use and cultivation and support medicinal cannabis and hemp", ["health", "alcohol-and-drugs", "law-justice-and-government"], None,
+      "No criminal offence for personal possession or growing; support home-grown medicinal cannabis and small NZ suppliers over 'Big Pharma', with lower licensing barriers; update law to support hemp products.", CA),
+    P("OFP-12", "Create a nationwide anti-bullying strategy treating bullying as a public-health issue", ["health", "mental-health", "education"], None,
+      "Awareness programmes in schools and communities, leadership training for teachers and managers, bullying questions in routine health screening, and treatment of psychological effects.", AB),
+    P("OFP-13", "Make one doctor's injury diagnosis final for ACC and abolish ACC's review and dispute machinery", ["health", "health-services", "public-sector"],
+      "The party says ACC 'expert shopping' is used to decline claims.", "Disestablish ACC review specialists and investigators, cancel contracts with FairWay and ICRA, stop paying external consultants to contest diagnoses; it claims $61.5m a year savings to redirect to surgery, rehabilitation and disability support.", ACC),
+    P("OFP-14", "Pursue Pfizer for breach of contract over Covid-19 vaccines and recover ACC vaccine-injury costs", ["health", "law-justice-and-government"], None,
+      "Release the full NZ Pfizer contract, bring a Crown claim to recover the $16.8m ACC has paid for vaccine injuries, guarantee ACC compensation for long-term vaccine harm, give ACC a statutory right of recourse against manufacturers, and review ACC law to cover distress and loss of enjoyment of life.", ACC),
+    P("OFP-15", "Make early childhood centres and primary schools Wi-Fi free, using wired connections", ["education", "schools", "public-health"], None, "Minimise Wi-Fi in high schools too and work with Chorus on wired fibre connections.", ED),
+    P("OFP-16", "Invest heavily in education with an outdoors- and community-focused curriculum, implementing the Tomorrow's Schools Review", ["education", "schools"], None, None, ED),
+    P("OFP-17", "Replace the fisheries Quota Management System with a LegaSea-style system keeping fisheries in public ownership", ["economy", "fisheries", "environment"],
+      "The party says the QMS has depleted fish stocks, privatised a public resource and priced locals out.",
+      "Tendered commercial permits with no private sale of fishing rights, catches landed and processed in NZ, only NZ-owned operators, fleet separation in the territorial sea, and more recreational and customary inshore access.", FI),
+    P("OFP-18", "Replace DOC with a Department of Outdoors – Wildlife, Recreation & Nature (DOWRN)", ["environment", "conservation", "sports-and-recreation"],
+      "The party says governments have undervalued New Zealanders' outdoors culture and access.", "A department promoting access to all public land, coasts and rivers, poison-free conservation (trapping rather than poisons), food gathering on public land, and early public engagement on access decisions.", RW, key=True),
+]
+
+# ------------------------------------------------------------------------------------------------ Conservative Party NZ
+META["conservative"] = {
+    "name": "Conservative Party NZ (Conservatives NZ)", "website": "https://www.conservatives.nz/ (2026 campaign site: https://conservatives.org.nz/)",
+    "registered": "6 October 2011 (Electoral Commission register)",
+    "intro": "The Conservative Party NZ (called the New Conservatives in 2020–2023; leader Helen Houghton) has two websites: the "
+             "party site conservatives.nz (policy summary, principles, and policy press releases from 2025–26) and a separate "
+             "2026 campaign site conservatives.org.nz, linked from the main site, with 14 policy pages (Overview, Health, Economy, "
+             "Bureaucracy, Environment, Immigration, Policing, Climate, Agriculture, Child Protection, Tax Relief, Right to Life, "
+             "Natural Resources, Energy). Both are captured; policies are listed below with the campaign page as the main source.",
+    "gaps": "Wix blog posts on conservatives.nz are rendered client-side; their text was recovered from the page's embedded "
+            "data. The campaign Energy page's layout table extracted poorly (text is present but jumbled). Tax wording differs: "
+            "the economy page says 'lower tax rate', a 2025 press release says 'flat tax rate'.",
+}
+C = lambda *x: ["campaign-" + i for i in x]
+CATALOG["conservative"] = [
+    P("CON-01", "Cut personal and company tax, align the company rate with the top personal rate, and lower GST to 12.5%", ["incomes-and-employment", "tax-and-income-support", "economy"],
+      "The party says lower taxes improve compliance and investment and that New Zealand's rates should be no higher than Australia's.", "Also tackle public debt; a 2025 release calls for a 'flat tax rate' for individuals and companies.", C("economy-1") + ["news-new-policies-announcement"], key=True),
+    P("CON-02", "Stop taxing NZ Super (including for over-65s still working) and boarders' income in private homes", ["incomes-and-employment", "superannuation-and-savings", "tax-and-income-support"], None,
+      "Remove NZ Super from taxable income, and exempt genuine home-sharing/boarder income with safeguards against commercial use.", C("superannuation"), key=True),
+    P("CON-03", "Let mayors become full-time council CEOs and give ministers power to appoint and sack senior public servants", ["law-justice-and-government", "public-sector", "local-government"],
+      "The party says unelected bureaucrats and advisers usurp the mandate of elected representatives.", "Elected representatives at local and national level would get wide powers to dismiss obstructive or incompetent staff; legislate to curtail 'unconstitutional bureaucratic power'.", C("bureaucracy") + ["news-has-new-zealand-lost-control-of-its-own-government"]),
+    P("CON-04", "Make cutting hospital waiting times the top health priority, funded from bureaucracy, procurement and productivity savings", ["health", "health-services", "health-funding-and-workforce"],
+      "The party says the key issue is whether patients are treated in time, not how much is spent.", "Measure waits for elective surgery, specialists, diagnostics, cancer and ED; buy private capacity where it is quicker and competitive; grow the domestic workforce; link any extra funding to measurable results.", C("health")),
+    P("CON-05", "Tighten immigration toward skilled migrants and cap other net migration by the supply of housing, doctors and school places", ["migration"],
+      "The party says population growing faster than 'social goods' makes everyone poorer.", "A stable points system; end 'golden' investor visas; NZ licence tests for foreign truck drivers; tougher document checks and audits; report GDP per capita.", C("immigration"), key=True),
+    P("CON-06", "Hold a Royal Commission of Inquiry into police under-performance and corruption", ["law-justice-and-government", "policing"],
+      "The party cites fabricated drink-drive tests and lost public trust.", "Also: refer prima facie criminal allegations against police and all deaths caused by police action to the courts; protect identities of police witnesses in international drug cases; review drone laws.", C("policing") + ["news-police-policy-announcement"]),
+    P("CON-07", "Strengthen the IPCA: double its staff, quadruple its budget, and let it prosecute and name officers", ["law-justice-and-government", "policing"], None, "As set out in its 'Sharpening the Teeth of the IPCA' statement.", ["news-sharpening-the-teeth-of-the-ipca"]),
+    P("CON-08", "Improve access to justice for self-represented litigants", ["law-justice-and-government", "civil-justice"], None,
+      "Procedural changes, support services, legal aid reform, tax deductions and cost awards for pro bono work, and wider Family Dispute Resolution.", ["news-press-release-improving-access-to-justice-for-self-represented-litigan"]),
+    P("CON-09", "Leave the Paris Agreement, scrap the ETS and repeal all 'climate'-based taxes, laws and agencies", ["environment", "emissions-reduction"],
+      "The party says there is no climate emergency and that climate policies raise food and energy costs and hurt the poor most.", "Remove fossil-fuel taxes and restrictions, abolish climate units in government, end energy subsidies of any kind, and stop public funding of methane research such as AgriZero.", C("climate", "agriculture"), key=True),
+    P("CON-10", "Oppose converting farmland to carbon forestry and oppose the Gene Technology Bill", ["economy", "agriculture"], None,
+      "No incentives for permanent carbon forestry on productive land; keep restrictions on GMO field trials and release; revisit the Planning and Natural Environment Bills to make them workable and protect property rights.", C("agriculture") + ["news-policy-clarification-on-rural-environmental-and-agricultural-issues"]),
+    P("CON-11", "Encourage oil and gas exploration with a Norway-style resource joint venture and sovereign investment fund", ["economy", "oil-gas-and-mining"],
+      "The party says New Zealand has failed to secure a fair share of its resources.", "Public-private resource partnerships, royalties shared with local communities, environmental bonds, returns held in a New Zealand Investment Fund.", C("natural-resources"), key=True),
+    P("CON-12", "Buy a fleet of oil tankers and build new oil refineries for fuel security", ["transport-and-infrastructure", "energy", "oil-gas-and-mining"], None,
+      "Tankers would guarantee supply and floating storage until refineries able to process local and Pacific crude are built; also bring back manufacturing.", C("natural-resources", "agriculture")),
+    P("CON-13", "Ensure 'cheap, reliable and abundant' energy without relying solely on solar and wind", ["transport-and-infrastructure", "energy"], None, "Renewables have a role but cannot be relied on alone because of variability.", C("energy")),
+    P("CON-14", "Create a Kermadec Ocean Sanctuary and overhaul fisheries management with cameras on all commercial vessels", ["environment", "oceans", "fisheries"],
+      "The party says the sustainable fisheries regime is widely abused.", "Promote the Kermadec Ocean Sanctuary Bill and reinstall surveillance cameras on commercial vessels.", C("environment") + ["news-has-new-zealand-failed-its-oceans"]),
+    P("CON-15", "Increase penalties for child sexual offending and online exploitation", ["law-justice-and-government", "criminal-justice", "family-justice-and-safety"], None,
+      "Longer sentences for serious and repeat offenders, review of sentence reductions, better monitoring after release, more online-exploitation investigation resources and victim support.", C("child-protection")),
+    P("CON-16", "Restrict irreversible gender-related medical procedures for minors and require parental involvement", ["health", "young-people", "community-and-inclusion"], None,
+      "Independent assessment before significant intervention, evidence-based practice, parental involvement subject to safeguards, and independent review mechanisms.", C("child-protection")),
+    P("CON-17", "Recognise an unborn child as a legal person from the third trimester", ["health", "community-and-inclusion", "law-justice-and-government"],
+      "The party says every human life has inherent dignity.", "An Unborn Child (Legal Personhood and Rights) Act with a protected right to life, without criminalising pregnant women, plus a Pregnancy and Family Support Programme (support payment, housing security, support services, adoption options).", C("right-to-life"), key=True),
+    P("CON-18", "Review all trade agreements and pursue a neutral foreign policy with a support- and reconstruction-focused military", ["defence-and-foreign-affairs", "international-relations"], None,
+      "Seek a balance between free trade and protectionism ('Trade before War'); avoid being drawn into conflicts that do not threaten NZ territory.", ["news-new-policies-announcement"]),
+    P("CON-19", "Employment and services based on merit, 'one law for all', and 'a man is a man, and a woman is a woman'", ["community-and-inclusion", "te-ao-maori"],
+      "The party opposes policies that divide people by race, ancestry, sex or identity.", "Listed among its 'policies that work' alongside limiting unskilled immigration and defending free speech and Judeo-Christian traditions.", ["site-policy", "campaign-overview"]),
+]
+
+# ------------------------------------------------------------------------------------------------ Women's Rights Party
+META["womens-rights"] = {
+    "name": "Women's Rights Party", "website": "https://womensrightsparty.nz/",
+    "registered": "28 August 2023 (Electoral Commission register)",
+    "intro": "The Women's Rights Party, a sex-based-rights feminist party, publishes 13 'policy proposal' pages (each with a "
+             "Proposal and Rationale), an 'Our Priorities' page and a downloadable full policy document (Word file dated "
+             "4 Nov 2025, which also contains members' policy-amendment proposals). Each distinct policy is listed below.",
+    "gaps": "The full policy document is a Word file converted with pandoc; its proposal forms are tables, kept as HTML "
+            "tables. No 2026-specific manifesto or costings were found; the web policy pages are undated.",
+}
+W = lambda x: ["proposal-" + x]
+FULL = ["full-policy-docx-2025"]
+_wr = "The party says women's rights must be based on biological sex rather than gender identity."
+CATALOG["womens-rights"] = [
+    P("WRP-01", "Ban puberty blockers and cross-sex hormones for under-18s with 'sex-related distress' and restrict funded gender surgery to over-25s", ["health", "young-people"], _wr,
+      "Also an inquiry into Health NZ's contracting of PATHA to write gender-affirming care guidelines, which it notes scored poorly in the Cass Report assessment.", W("puberty-blockers-hormones-and-surgery") + FULL, key=True),
+    P("WRP-02", "Record biological sex on birth certificates and repeal sex self-identification", ["community-and-inclusion", "law-justice-and-government"], _wr,
+      "Amend the Births, Deaths, Marriages and Relationships Registration Act 2021 to remove 'nominated sex'; sex could be corrected only if originally recorded wrongly (e.g. undetected DSD).", FULL, key=True),
+    P("WRP-03", "Oppose adding 'gender identity and gender expression' to the Human Rights Act", ["community-and-inclusion", "law-justice-and-government"],
+      "The party says it could undermine sex-based exceptions.", None, W("human-rights-act") + FULL),
+    P("WRP-04", "Remove 'gender, gender identity and gender expression' from the Conversion Practices Prohibition Act", ["community-and-inclusion", "law-justice-and-government"],
+      "It supports protecting lesbian, gay and bisexual people from conversion practices but says 'gender' is not a clear concept for law.", None, W("conversion-practices") + FULL),
+    P("WRP-05", "Replace the Prostitution Reform Act with the 'Nordic' Equality Model criminalising buyers and brothel owners", ["law-justice-and-government", "criminal-justice", "women"], None,
+      "Decriminalise the prostituted person, criminalise exploiters, fund exit services; meanwhile keep section 19 (barring temporary-visa holders from sex work) to deter trafficking.", W("prostitution") + FULL, key=True),
+    P("WRP-06", "Ban the 'rough sex' defence in murder and serious-harm cases", ["law-justice-and-government", "criminal-justice", "family-justice-and-safety"], "The party opposes pornography involving strangulation and violence.", None, W("rough-sex-murder-defence") + FULL),
+    P("WRP-07", "Keep commercial surrogacy illegal, ban international surrogacy by New Zealanders and lengthen the birth mother's decision period", ["community-and-inclusion", "women", "law-justice-and-government"],
+      "The party says surrogacy cannot be free of exploitation and having a baby by surrogacy is not a human right.", "Keep the birth mother as first legal parent with longer than seven days to decide; children should be able to learn their origins.", FULL),
+    P("WRP-08", "Add 'sex' to the Sentencing Act's aggravating factors instead of creating new hate-crime laws", ["law-justice-and-government", "criminal-justice"], None,
+      "Amend section 9(1)(h) to include sex, oppose 'gender identity' as an aggravating factor and oppose new hate-crime offences.", FULL),
+    P("WRP-09", "Protect single-sex spaces and keep biological males out of women's prisons", ["community-and-inclusion", "women", "criminal-justice"], _wr,
+      "Single-sex toilets, changing rooms, refuges, wards, sports and women-only groups (including online); school privacy from the opposite sex; supportive conditions for pregnant prisoners and mothers.", W("exit-services-for-women-leaving-gangs-religious-cults-and-se") + FULL),
+    P("WRP-10", "Fund women-only refuges, exit services for women leaving gangs or cults, and support for detransitioners", ["community-and-inclusion", "family-justice-and-safety", "women"], None,
+      "More resources to leave domestic violence and accessible, affordable, enforced protection orders.", W("exit-services-for-women-leaving-gangs-religious-cults-and-se")),
+    P("WRP-11", "Require parents to be told what is taught in sexuality education and stop schools supporting 'social transition'", ["education", "schools"],
+      "The party broadly supports the new RSE Framework because it recognises biological sex.", "Full disclosure to parents, no outside agencies such as InsideOut, teach that under-16s cannot consent, refer distressed children to professionals with parents involved.", W("educating-our-young-people") + FULL),
+    P("WRP-12", "Extend paid parental leave from six to 12 months, reform Working for Families and fund continuity of midwifery care", ["incomes-and-employment", "benefits", "health"],
+      "The party says mothering and caring is work that contributes to society.", "Partner leave in addition to the mother's, CPAG-style WFF reform removing discrimination against beneficiary families, wrap-around support for vulnerable mothers, free or affordable childcare and a review of for-profit ECE.", W("working-for-families-reform") + FULL, key=True),
+    P("WRP-13", "Deliver pay equity in the public and private sectors and reinstate Fair Pay Agreements", ["incomes-and-employment", "wages-and-working-conditions", "women"],
+      "The party says about 150,000 women's pay-equity claims were extinguished by the 2025 law change.", "A strong onus on employers and publication of average hourly pay by occupation, sex and ethnicity.", W("pay-equity") + FULL),
+    P("WRP-14", "Raise minimum wages and benefits and provide free financial advice to secure older women's incomes", ["incomes-and-employment", "superannuation-and-savings", "women"],
+      "The party says older women are the fastest-growing group in poverty globally.", "Living incomes, affordable housing and work with the Office for Seniors on solutions to the retirement savings gap.", W("financial-stability-for-women-in-older-age") + FULL),
+    P("WRP-15", "Add a principle of the right to a clean and safe natural environment", ["environment"], None, None, W("environmental")),
+    P("WRP-16", "Stand with women denied education, work and safety worldwide", ["defence-and-foreign-affairs", "international-relations", "women"], None, "Its international policy statement.", W("international")),
+    P("WRP-17", "Use language in law, health and education that defines women as adult human females and motherhood as exclusively female", ["community-and-inclusion", "women"], _wr,
+      "Keep words such as 'mother', 'woman' and 'breastfeeding' in maternity services.", ["our-priorities"] + FULL + W("advocating-for-women")),
+]

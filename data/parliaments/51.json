@@ -35,6 +35,20 @@
  },
  "total_start": 121,
  "total_now_or_end": 119,
+ "vacancies_at_end": [
+  {
+   "seat": "Helensville",
+   "vacated": "2017-04-14",
+   "former_member": "John Key",
+   "note": "No by-election: vacancy arose within six months of a general election"
+  },
+  {
+   "seat": "New Lynn",
+   "vacated": "2017-04-23",
+   "former_member": "David Cunliffe",
+   "note": "No by-election: vacancy arose within six months of a general election"
+  }
+ ],
  "members": [
   {
    "name": "Nikki Kaye",
@@ -1416,7 +1430,7 @@
    "left_reason": "Resigned to take up position as Chief Executive of Greenpeace Aotearoa New Zealand.",
    "party_changes": [],
    "notes": "",
-   "repo_folder": null,
+   "repo_folder": "parties/green/people/russel-norman",
    "list_rank": 2,
    "party_now_or_end": "green"
   },

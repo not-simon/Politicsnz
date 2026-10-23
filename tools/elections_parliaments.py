@@ -41,8 +41,8 @@ EXTRA_CHANGES = {  # party-affiliation changes not in the Wikipedia changes tabl
  ],
 }
 NOTES = {
- "Mariameno Kapa-Kingi": "Suspended by Te Pāti Māori 23 Oct 2025 and expelled 10 Nov 2025. Wikipedia's 54th Parliament changes table records her return to the party on 5 Dec 2025 (after she sought a High Court injunction, filed 4 Dec 2025); her own article says the High Court ruled the expulsion unlawful on 10 Mar 2026. Sources therefore differ on when she was formally reinstated. She left on 11 May 2026 to found the Te Tai Tokerau Party.",
- "Tākuta Ferris": "Expelled from Te Pāti Māori 10 Nov 2025; independent thereafter. Announced (21 Mar 2026) he would contest Te Tai Tonga as an independent in 2026.",
+ "Mariameno Kapa-Kingi": "Suspended by Te Pāti Māori 23 Oct 2025 and expelled 10 Nov 2025. Wikipedia's 54th Parliament changes table records her return to the party on 5 Dec 2025 (after she sought a High Court injunction, filed 4 Dec 2025); her own article says the High Court ruled the expulsion unlawful on 10 Mar 2026. Sources therefore differ on when she was formally reinstated. She left on 11 May 2026 to found the Te Tai Tokerau Party (registration applied for June 2026, approved August 2026) and sat as an independent MP until dissolution; she leads that party at the 2026 election.",
+ "Tākuta Ferris": "Expelled from Te Pāti Māori 10 Nov 2025; sat as an independent MP for the rest of the term. Announced (21 Mar 2026) he would contest Te Tai Tonga as an independent in 2026.",
  "Jami-Lee Ross": "Left National 19 Oct 2018 amid a dispute with leader Simon Bridges; sat as an independent. In 2020 he co-led the new Advance New Zealand party (outside Parliament's party recognition) and lost Botany at the 2020 election.",
  "Meka Whaitiri": "Resigned from Labour 3 May 2023 and joined Te Pāti Māori; under the waka-jumping rules she remained recorded as an independent in Parliament for the rest of the term. Lost Ikaroa-Rāwhiti for Te Pāti Māori in 2023? -> No: see 2023 results (Cushla Tangaere-Manuel, Labour, won).",
  "Elizabeth Kerekere": "Resigned from the Green Party 5 May 2023 after a bullying complaint process; independent for the rest of the term.",
@@ -157,6 +157,9 @@ def build(n):
            "composition_start_note": ("Counted on 14 Dec 2023, once the Port Waikato by-election result had flowed through (Nancy Lu sworn in from National's list); this matches the 123-seat House." if n == 54 else "Counted at the start of term (first sitting)."),
            "composition_now_or_end": comp(end_members),
            "total_start": len(start_members), "total_now_or_end": len(end_members),
+           "vacancies_at_end": [{"seat": r["seat"], "vacated": r["date_vacated"], "former_member": r["incumbent"],
+                                 "note": "No by-election: vacancy arose within six months of a general election"}
+                                for r in ch if not r.get("replacement")],
            "members": order, "changes": changes,
            "sources": [W + c["art"], W + c["listsrc"], W + str(c["year"]) + "_New_Zealand_general_election"] + sorted({r["src"] for r in ch if r.get("src")})}
     return out

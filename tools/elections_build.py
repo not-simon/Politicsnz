@@ -56,6 +56,41 @@ YEARS = {
    sources_extra=[W + "Sixth_National_Government_of_New_Zealand", W + "2023_Port_Waikato_by-election"]),
 }
 
+def _k(n):
+    from elections_common import person_slug
+    return person_slug(n.replace("Mt ", "Mount "))
+
+def overlay_official(year, els):
+    """Replace majority/runner-up with official per-electorate counts (raw/elections/electorates_official.json)."""
+    off = json.load(open(os.path.join(RAW, "electorates_official.json"))).get(str(year), {})
+    off = {_k(k): v for k, v in off.items()}
+    corr = []
+    for e in els:
+        r = off.get(_k(e["name"]))
+        if not r or len(r["candidates"]) < 2:
+            e["majority_source"] = "Wikipedia national results table (no official per-electorate table parsed)"; continue
+        c1, c2 = r["candidates"][0], r["candidates"][1]
+        if _k(c1["candidate"]) != _k(e["winner"]) and c1["candidate"].split()[-1].lower() != e["winner"].split()[-1].lower():
+            corr.append({"electorate": e["name"], "issue": f"official table top candidate {c1['candidate']} != winner {e['winner']}; left unchanged"}); continue
+        comp, box, summ = c1["votes"] - c2["votes"], r["majority"], e["majority"]
+        # majority = the value at least two of {summary table, article majority box, computed from candidate votes} agree on
+        if comp == box or comp == summ: m = comp
+        elif box is not None and box == summ: m = box
+        else: m = comp
+        if m != summ or len({comp, box, summ} - {None}) > 1:
+            corr.append({"electorate": e["name"], "summary_table_majority": summ, "article_majority_box": box,
+                         "computed_from_candidate_votes": comp, "used": m,
+                         "status": "corrected" if m != summ else "kept (two sources agree; third differs – unresolved)"})
+        e["majority"] = m
+        if _k(c2["candidate"]) != _k(e["runner_up"] or ""):
+            corr.append({"electorate": e["name"], "runner_up_was": e["runner_up"], "runner_up_official": c2["candidate"]})
+            e["runner_up"] = c2["candidate"]
+            if isinstance(c2["party"], str) and c2["party"] in set(__import__("elections_common").PARTY.values()): e["runner_up_party"] = c2["party"]
+        e["winner_votes"], e["runner_up_votes"] = c1["votes"], c2["votes"]
+        e["candidates"] = [{"name": c["candidate"], "party": c["party"], "votes": c["votes"]} for c in r["candidates"]]
+        e["majority_source"] = "official count via " + r["article"]
+    return corr
+
 def build(year):
     c = YEARS[year]
     rows, meta = summary_table(os.path.join(RAW, c["page"] + ".html"))
@@ -63,6 +98,9 @@ def build(year):
     for e in els:
         e["type"] = "maori" if e["name"] in MAORI else "general"
     notes = []
+    corrections = overlay_official(year, els)
+    if corrections:
+        notes.append(f"Electorate majorities/runners-up are taken from the official-count vote tables in each electorate's Wikipedia article (which cite the Electoral Commission's official results pages); where the summary table, the article's majority box and the candidate vote counts disagree, the value two of them agree on is used – see 'majority_corrections'.")
     parties = []
     for r in rows:
         p = {"party": r["party"], "name": r["display"], "party_votes": r["party_votes"], "party_vote_pct": r["party_vote_pct"],
@@ -104,7 +142,16 @@ def build(year):
     out["parties"] = parties
     out["government"] = c["government"]
     out["electorates"] = els
+    off = json.load(open(os.path.join(RAW, "electorates_official.json"))).get(str(year), {})
+    tot = {}
+    for r in off.values():
+        for k, v in r["party_votes"].items(): tot[k] = tot.get(k, 0) + v
+    diffs = {p["party"]: p["party_votes"] - tot.get(p["party"], 0) for p in parties if p["party_votes"] and p["party_votes"] > 20000}
+    worst = max(diffs.items(), key=lambda x: abs(x[1]))
+    notes.append(f"Cross-check: national party-vote totals vs the sum of per-electorate official party votes in the electorate articles – largest gap {worst[1]:+d} votes ({worst[0]}, {100*abs(worst[1])/meta['valid_party_votes']:.2f}% of valid votes); gaps are attributed to transcription errors in individual electorate articles, and the national (Electoral Commission summary) figures are used.")
+    out["party_vote_crosscheck"] = diffs
     out["notes"] = notes
+    out["majority_corrections"] = corrections
     out["sources"] = [W + c["page"], W + c["el"] if c["el"] != c["page"] else None, c["official"] + " (official Electoral Commission results; blocked by Cloudflare from this environment, values taken via Wikipedia which cites it)"] + c["sources_extra"]
     out["sources"] = [s for s in out["sources"] if s]
     return out

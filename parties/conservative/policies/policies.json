@@ -1,0 +1,468 @@
+[
+ {
+  "id": "CON-01",
+  "statement": "Cut personal and company tax, align the company rate with the top personal rate, and lower GST to 12.5%",
+  "topics": [
+   "incomes-and-employment",
+   "tax-and-income-support",
+   "economy"
+  ],
+  "topic_group": "incomes-and-employment",
+  "key_policy": true,
+  "summary": {
+   "why": "The party says lower taxes improve compliance and investment and that New Zealand's rates should be no higher than Australia's.",
+   "how": "Also tackle public debt; a 2025 release calls for a 'flat tax rate' for individuals and companies."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Economy (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/economy-1/",
+    "document": "documents/campaign-economy-1.md"
+   },
+   {
+    "title": "Economic and Trade Policy",
+    "url": "https://www.conservatives.nz/news/new-policies-announcement",
+    "document": "documents/news-new-policies-announcement.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-02",
+  "statement": "Stop taxing NZ Super (including for over-65s still working) and boarders' income in private homes",
+  "topics": [
+   "incomes-and-employment",
+   "superannuation-and-savings",
+   "tax-and-income-support"
+  ],
+  "topic_group": "incomes-and-employment",
+  "key_policy": true,
+  "summary": {
+   "why": null,
+   "how": "Remove NZ Super from taxable income, and exempt genuine home-sharing/boarder income with safeguards against commercial use."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Tax Relief (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/superannuation/",
+    "document": "documents/campaign-superannuation.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-03",
+  "statement": "Let mayors become full-time council CEOs and give ministers power to appoint and sack senior public servants",
+  "topics": [
+   "law-justice-and-government",
+   "public-sector",
+   "local-government"
+  ],
+  "topic_group": "law-justice-and-government",
+  "key_policy": false,
+  "summary": {
+   "why": "The party says unelected bureaucrats and advisers usurp the mandate of elected representatives.",
+   "how": "Elected representatives at local and national level would get wide powers to dismiss obstructive or incompetent staff; legislate to curtail 'unconstitutional bureaucratic power'."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Bureaucracy (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/bureaucracy/",
+    "document": "documents/campaign-bureaucracy.md"
+   },
+   {
+    "title": "Has New Zealand Lost Control of Its Own Government?",
+    "url": "https://www.conservatives.nz/news/has-new-zealand-lost-control-of-its-own-government",
+    "document": "documents/news-has-new-zealand-lost-control-of-its-own-government.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-04",
+  "statement": "Make cutting hospital waiting times the top health priority, funded from bureaucracy, procurement and productivity savings",
+  "topics": [
+   "health",
+   "health-services",
+   "health-funding-and-workforce"
+  ],
+  "topic_group": "health",
+  "key_policy": false,
+  "summary": {
+   "why": "The party says the key issue is whether patients are treated in time, not how much is spent.",
+   "how": "Measure waits for elective surgery, specialists, diagnostics, cancer and ED; buy private capacity where it is quicker and competitive; grow the domestic workforce; link any extra funding to measurable results."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Health (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/health/",
+    "document": "documents/campaign-health.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-05",
+  "statement": "Tighten immigration toward skilled migrants and cap other net migration by the supply of housing, doctors and school places",
+  "topics": [
+   "migration"
+  ],
+  "topic_group": "migration",
+  "key_policy": true,
+  "summary": {
+   "why": "The party says population growing faster than 'social goods' makes everyone poorer.",
+   "how": "A stable points system; end 'golden' investor visas; NZ licence tests for foreign truck drivers; tougher document checks and audits; report GDP per capita."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Immigration (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/immigration/",
+    "document": "documents/campaign-immigration.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-06",
+  "statement": "Hold a Royal Commission of Inquiry into police under-performance and corruption",
+  "topics": [
+   "law-justice-and-government",
+   "policing"
+  ],
+  "topic_group": "law-justice-and-government",
+  "key_policy": false,
+  "summary": {
+   "why": "The party cites fabricated drink-drive tests and lost public trust.",
+   "how": "Also: refer prima facie criminal allegations against police and all deaths caused by police action to the courts; protect identities of police witnesses in international drug cases; review drone laws."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Policing (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/policing/",
+    "document": "documents/campaign-policing.md"
+   },
+   {
+    "title": "Announcement: Police Policy - Commission Of Inquiry Into Under Performance And Corruption",
+    "url": "https://www.conservatives.nz/news/police-policy-announcement",
+    "document": "documents/news-police-policy-announcement.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-07",
+  "statement": "Strengthen the IPCA: double its staff, quadruple its budget, and let it prosecute and name officers",
+  "topics": [
+   "law-justice-and-government",
+   "policing"
+  ],
+  "topic_group": "law-justice-and-government",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "As set out in its 'Sharpening the Teeth of the IPCA' statement."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Law & Justice Policy Statement: Sharpening the Teeth of the IPCA",
+    "url": "https://www.conservatives.nz/news/sharpening-the-teeth-of-the-ipca",
+    "document": "documents/news-sharpening-the-teeth-of-the-ipca.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-08",
+  "statement": "Improve access to justice for self-represented litigants",
+  "topics": [
+   "law-justice-and-government",
+   "civil-justice"
+  ],
+  "topic_group": "law-justice-and-government",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Procedural changes, support services, legal aid reform, tax deductions and cost awards for pro bono work, and wider Family Dispute Resolution."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Improving Access to Justice for Self-Represented Litigants",
+    "url": "https://www.conservatives.nz/news/press-release---improving-access-to-justice-for-self-represented-litigants",
+    "document": "documents/news-press-release-improving-access-to-justice-for-self-represented-litigan.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-09",
+  "statement": "Leave the Paris Agreement, scrap the ETS and repeal all 'climate'-based taxes, laws and agencies",
+  "topics": [
+   "environment",
+   "emissions-reduction"
+  ],
+  "topic_group": "environment",
+  "key_policy": true,
+  "summary": {
+   "why": "The party says there is no climate emergency and that climate policies raise food and energy costs and hurt the poor most.",
+   "how": "Remove fossil-fuel taxes and restrictions, abolish climate units in government, end energy subsidies of any kind, and stop public funding of methane research such as AgriZero."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Climate (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/climate/",
+    "document": "documents/campaign-climate.md"
+   },
+   {
+    "title": "Agriculture (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/agriculture/",
+    "document": "documents/campaign-agriculture.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-10",
+  "statement": "Oppose converting farmland to carbon forestry and oppose the Gene Technology Bill",
+  "topics": [
+   "economy",
+   "agriculture"
+  ],
+  "topic_group": "economy",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "No incentives for permanent carbon forestry on productive land; keep restrictions on GMO field trials and release; revisit the Planning and Natural Environment Bills to make them workable and protect property rights."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Agriculture (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/agriculture/",
+    "document": "documents/campaign-agriculture.md"
+   },
+   {
+    "title": "Policy clarification on rural, environmental, and agricultural issues",
+    "url": "https://www.conservatives.nz/news/policy-clarification-on-rural%2C-environmental%2C-and-agricultural-issues",
+    "document": "documents/news-policy-clarification-on-rural-environmental-and-agricultural-issues.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-11",
+  "statement": "Encourage oil and gas exploration with a Norway-style resource joint venture and sovereign investment fund",
+  "topics": [
+   "economy",
+   "oil-gas-and-mining"
+  ],
+  "topic_group": "economy",
+  "key_policy": true,
+  "summary": {
+   "why": "The party says New Zealand has failed to secure a fair share of its resources.",
+   "how": "Public-private resource partnerships, royalties shared with local communities, environmental bonds, returns held in a New Zealand Investment Fund."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Natural Resources (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/natural-resources/",
+    "document": "documents/campaign-natural-resources.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-12",
+  "statement": "Buy a fleet of oil tankers and build new oil refineries for fuel security",
+  "topics": [
+   "transport-and-infrastructure",
+   "energy",
+   "oil-gas-and-mining"
+  ],
+  "topic_group": "transport-and-infrastructure",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Tankers would guarantee supply and floating storage until refineries able to process local and Pacific crude are built; also bring back manufacturing."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Natural Resources (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/natural-resources/",
+    "document": "documents/campaign-natural-resources.md"
+   },
+   {
+    "title": "Agriculture (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/agriculture/",
+    "document": "documents/campaign-agriculture.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-13",
+  "statement": "Ensure 'cheap, reliable and abundant' energy without relying solely on solar and wind",
+  "topics": [
+   "transport-and-infrastructure",
+   "energy"
+  ],
+  "topic_group": "transport-and-infrastructure",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Renewables have a role but cannot be relied on alone because of variability."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Energy (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/energy/",
+    "document": "documents/campaign-energy.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-14",
+  "statement": "Create a Kermadec Ocean Sanctuary and overhaul fisheries management with cameras on all commercial vessels",
+  "topics": [
+   "environment",
+   "oceans",
+   "fisheries"
+  ],
+  "topic_group": "environment",
+  "key_policy": false,
+  "summary": {
+   "why": "The party says the sustainable fisheries regime is widely abused.",
+   "how": "Promote the Kermadec Ocean Sanctuary Bill and reinstall surveillance cameras on commercial vessels."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Environment (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/environment/",
+    "document": "documents/campaign-environment.md"
+   },
+   {
+    "title": "Has New Zealand Failed Its Oceans? Conservative Party Says Yes - Environment Policy update",
+    "url": "https://www.conservatives.nz/news/has-new-zealand-failed-its-oceans",
+    "document": "documents/news-has-new-zealand-failed-its-oceans.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-15",
+  "statement": "Increase penalties for child sexual offending and online exploitation",
+  "topics": [
+   "law-justice-and-government",
+   "criminal-justice",
+   "family-justice-and-safety"
+  ],
+  "topic_group": "law-justice-and-government",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Longer sentences for serious and repeat offenders, review of sentence reductions, better monitoring after release, more online-exploitation investigation resources and victim support."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Child Protection (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/child-protection/",
+    "document": "documents/campaign-child-protection.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-16",
+  "statement": "Restrict irreversible gender-related medical procedures for minors and require parental involvement",
+  "topics": [
+   "health",
+   "young-people",
+   "community-and-inclusion"
+  ],
+  "topic_group": "health",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Independent assessment before significant intervention, evidence-based practice, parental involvement subject to safeguards, and independent review mechanisms."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Child Protection (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/child-protection/",
+    "document": "documents/campaign-child-protection.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-17",
+  "statement": "Recognise an unborn child as a legal person from the third trimester",
+  "topics": [
+   "health",
+   "community-and-inclusion",
+   "law-justice-and-government"
+  ],
+  "topic_group": "health",
+  "key_policy": true,
+  "summary": {
+   "why": "The party says every human life has inherent dignity.",
+   "how": "An Unborn Child (Legal Personhood and Rights) Act with a protected right to life, without criminalising pregnant women, plus a Pregnancy and Family Support Programme (support payment, housing security, support services, adoption options)."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Right to life (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/right-to-life/",
+    "document": "documents/campaign-right-to-life.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-18",
+  "statement": "Review all trade agreements and pursue a neutral foreign policy with a support- and reconstruction-focused military",
+  "topics": [
+   "defence-and-foreign-affairs",
+   "international-relations"
+  ],
+  "topic_group": "defence-and-foreign-affairs",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Seek a balance between free trade and protectionism ('Trade before War'); avoid being drawn into conflicts that do not threaten NZ territory."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Economic and Trade Policy",
+    "url": "https://www.conservatives.nz/news/new-policies-announcement",
+    "document": "documents/news-new-policies-announcement.md"
+   }
+  ]
+ },
+ {
+  "id": "CON-19",
+  "statement": "Employment and services based on merit, 'one law for all', and 'a man is a man, and a woman is a woman'",
+  "topics": [
+   "community-and-inclusion",
+   "te-ao-maori"
+  ],
+  "topic_group": "community-and-inclusion",
+  "key_policy": false,
+  "summary": {
+   "why": "The party opposes policies that divide people by race, ancestry, sex or identity.",
+   "how": "Listed among its 'policies that work' alongside limiting unskilled immigration and defending free speech and Judeo-Christian traditions."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Our Policies",
+    "url": "https://www.conservatives.nz/policy",
+    "document": "documents/site-policy.md"
+   },
+   {
+    "title": "Overview (2026 campaign site)",
+    "url": "https://conservatives.org.nz/policies/overview/",
+    "document": "documents/campaign-overview.md"
+   }
+  ]
+ }
+]

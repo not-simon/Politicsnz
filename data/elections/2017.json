@@ -234,7 +234,52 @@
    "result": "hold",
    "incumbent": "Nikki Kaye",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 13198,
+   "runner_up_votes": 11617,
+   "candidates": [
+    {
+     "name": "Nikki Kaye",
+     "party": "national",
+     "votes": 13198
+    },
+    {
+     "name": "Helen White",
+     "party": "labour",
+     "votes": 11617
+    },
+    {
+     "name": "Denise Roche",
+     "party": "green",
+     "votes": 2838
+    },
+    {
+     "name": "Mika Haka",
+     "party": "opportunity",
+     "votes": 681
+    },
+    {
+     "name": "Frank Edwards",
+     "party": "nz-first",
+     "votes": 578
+    },
+    {
+     "name": "Brooke van Velden",
+     "party": "act",
+     "votes": 151
+    },
+    {
+     "name": "Leslie Jones",
+     "party": "Climate First",
+     "votes": 55
+    },
+    {
+     "name": "Stephen Greenfield",
+     "party": "conservative",
+     "votes": 52
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Auckland_Central_%28electorate%29"
   },
   {
    "name": "Bay of Plenty",
@@ -248,7 +293,37 @@
    "result": "hold",
    "incumbent": "Todd Muller",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 25352,
+   "runner_up_votes": 11356,
+   "candidates": [
+    {
+     "name": "Todd Muller",
+     "party": "national",
+     "votes": 25352
+    },
+    {
+     "name": "Angie Warren-Clark",
+     "party": "labour",
+     "votes": 11356
+    },
+    {
+     "name": "Lester Gray",
+     "party": "nz-first",
+     "votes": 4060
+    },
+    {
+     "name": "Raewyn Bennett",
+     "party": "te-pati-maori",
+     "votes": 563
+    },
+    {
+     "name": "Bruce Carley",
+     "party": "act",
+     "votes": 195
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Bay_of_Plenty_%28electorate%29"
   },
   {
    "name": "Botany",
@@ -262,7 +337,42 @@
    "result": "hold",
    "incumbent": "Jami-Lee Ross",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 21378,
+   "runner_up_votes": 8539,
+   "candidates": [
+    {
+     "name": "Jami-Lee Ross",
+     "party": "national",
+     "votes": 21378
+    },
+    {
+     "name": "Tofik Mamedov",
+     "party": "labour",
+     "votes": 8539
+    },
+    {
+     "name": "Julie Zhu",
+     "party": "green",
+     "votes": 2103
+    },
+    {
+     "name": "Wetex Kang",
+     "party": "te-pati-maori",
+     "votes": 1165
+    },
+    {
+     "name": "Damian Light",
+     "party": "united-future",
+     "votes": 500
+    },
+    {
+     "name": "Sam Singh",
+     "party": "act",
+     "votes": 330
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Botany_%28New_Zealand_electorate%29"
   },
   {
    "name": "Christchurch Central",
@@ -276,7 +386,47 @@
    "result": "change",
    "incumbent": "Nicky Wagner",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 16631,
+   "runner_up_votes": 13760,
+   "candidates": [
+    {
+     "name": "Duncan Webb",
+     "party": "labour",
+     "votes": 16631
+    },
+    {
+     "name": "Nicky Wagner",
+     "party": "national",
+     "votes": 13760
+    },
+    {
+     "name": "Peter Richardson",
+     "party": "green",
+     "votes": 1957
+    },
+    {
+     "name": "Phil Robinson",
+     "party": "nz-first",
+     "votes": 1091
+    },
+    {
+     "name": "Doug Hill",
+     "party": "opportunity",
+     "votes": 879
+    },
+    {
+     "name": "Janine Shufflebotham",
+     "party": "legalise-cannabis",
+     "votes": 304
+    },
+    {
+     "name": "Ian Gaskin",
+     "party": "united-future",
+     "votes": 80
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Christchurch_Central"
   },
   {
    "name": "Christchurch East",
@@ -290,7 +440,47 @@
    "result": "hold",
    "incumbent": "Poto Williams",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 18439,
+   "runner_up_votes": 10959,
+   "candidates": [
+    {
+     "name": "Poto Williams",
+     "party": "labour",
+     "votes": 18439
+    },
+    {
+     "name": "Jo Hayes",
+     "party": "national",
+     "votes": 10959
+    },
+    {
+     "name": "Cathy Sweet",
+     "party": "green",
+     "votes": 2018
+    },
+    {
+     "name": "Melanie Mark-Shadbolt",
+     "party": "nz-first",
+     "votes": 1529
+    },
+    {
+     "name": "Paula Lambert",
+     "party": "legalise-cannabis",
+     "votes": 547
+    },
+    {
+     "name": "Chris Brosnan",
+     "party": "conservative",
+     "votes": 242
+    },
+    {
+     "name": "Toni Severin",
+     "party": "act",
+     "votes": 137
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Christchurch_East"
   },
   {
    "name": "Clutha-Southland",
@@ -304,7 +494,47 @@
    "result": "change",
    "incumbent": "Todd Barclay",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 21819,
+   "runner_up_votes": 7465,
+   "candidates": [
+    {
+     "name": "Hamish Walker",
+     "party": "national",
+     "votes": 21819
+    },
+    {
+     "name": "Cherie Chapman",
+     "party": "labour",
+     "votes": 7465
+    },
+    {
+     "name": "Mark Patterson",
+     "party": "nz-first",
+     "votes": 3485
+    },
+    {
+     "name": "Rachael Goldsmith",
+     "party": "green",
+     "votes": 2650
+    },
+    {
+     "name": "Brian Adams",
+     "party": "ban-1080",
+     "votes": 674
+    },
+    {
+     "name": "Joe Stringer",
+     "party": "independent",
+     "votes": 200
+    },
+    {
+     "name": "Lachie Ashton",
+     "party": "conservative",
+     "votes": 141
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Clutha-Southland"
   },
   {
    "name": "Coromandel",
@@ -318,7 +548,37 @@
    "result": "hold",
    "incumbent": "Scott Simpson",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 23053,
+   "runner_up_votes": 8727,
+   "candidates": [
+    {
+     "name": "Scott Simpson",
+     "party": "national",
+     "votes": 23053
+    },
+    {
+     "name": "Nathaniel Blomfield",
+     "party": "labour",
+     "votes": 8727
+    },
+    {
+     "name": "Scott Summerfield",
+     "party": "green",
+     "votes": 5066
+    },
+    {
+     "name": "Anna-Marie Andrews",
+     "party": "nz-first",
+     "votes": 4142
+    },
+    {
+     "name": "Clyde Graf",
+     "party": "ban-1080",
+     "votes": 859
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Coromandel_%28electorate%29"
   },
   {
    "name": "Dunedin North",
@@ -332,7 +592,52 @@
    "result": "hold",
    "incumbent": "David Clark",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 21259,
+   "runner_up_votes": 9505,
+   "candidates": [
+    {
+     "name": "David Clark",
+     "party": "labour",
+     "votes": 21259
+    },
+    {
+     "name": "Michael Woodhouse",
+     "party": "national",
+     "votes": 9505
+    },
+    {
+     "name": "Niki Bould",
+     "party": "green",
+     "votes": 3053
+    },
+    {
+     "name": "Abe Gray",
+     "party": "opportunity",
+     "votes": 1645
+    },
+    {
+     "name": "Warren Voight",
+     "party": "nz-first",
+     "votes": 1069
+    },
+    {
+     "name": "Sam Purchas",
+     "party": "act",
+     "votes": 150
+    },
+    {
+     "name": "Adrian Daegal Graamans",
+     "party": "independent",
+     "votes": 71
+    },
+    {
+     "name": "Stan Lusby",
+     "party": "independent",
+     "votes": 38
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Dunedin_North_%28electorate%29"
   },
   {
    "name": "Dunedin South",
@@ -346,7 +651,47 @@
    "result": "hold",
    "incumbent": "Clare Curran",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 21404,
+   "runner_up_votes": 12687,
+   "candidates": [
+    {
+     "name": "Clare Curran",
+     "party": "labour",
+     "votes": 21404
+    },
+    {
+     "name": "Matt Gregory",
+     "party": "national",
+     "votes": 12687
+    },
+    {
+     "name": "Shane Gallagher",
+     "party": "green",
+     "votes": 2002
+    },
+    {
+     "name": "Kerry Maria Rushton",
+     "party": "nz-first",
+     "votes": 1591
+    },
+    {
+     "name": "Lindsay Smith",
+     "party": "opportunity",
+     "votes": 1067
+    },
+    {
+     "name": "Adrian McDermott",
+     "party": "legalise-cannabis",
+     "votes": 332
+    },
+    {
+     "name": "Daniel Doughty",
+     "party": "act",
+     "votes": 128
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Dunedin_South"
   },
   {
    "name": "East Coast",
@@ -360,7 +705,47 @@
    "result": "hold",
    "incumbent": "Anne Tolley",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 17517,
+   "runner_up_votes": 12710,
+   "candidates": [
+    {
+     "name": "Anne Tolley",
+     "party": "national",
+     "votes": 17517
+    },
+    {
+     "name": "Kiri Allan",
+     "party": "labour",
+     "votes": 12710
+    },
+    {
+     "name": "Julian Tilley",
+     "party": "nz-first",
+     "votes": 2916
+    },
+    {
+     "name": "Gareth Hughes",
+     "party": "green",
+     "votes": 2705
+    },
+    {
+     "name": "Lesley Immink",
+     "party": "opportunity",
+     "votes": 1142
+    },
+    {
+     "name": "Rihi Vercoe",
+     "party": "te-pati-maori",
+     "votes": 468
+    },
+    {
+     "name": "Tekawe Terence Ratu",
+     "party": "independent",
+     "votes": 52
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/East_Coast_%28electorate%29"
   },
   {
    "name": "East Coast Bays",
@@ -374,7 +759,42 @@
    "result": "change",
    "incumbent": "Murray McCully",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 22731,
+   "runner_up_votes": 6441,
+   "candidates": [
+    {
+     "name": "Erica Stanford",
+     "party": "national",
+     "votes": 22731
+    },
+    {
+     "name": "Naisi Chen",
+     "party": "labour",
+     "votes": 6441
+    },
+    {
+     "name": "Nicholas Mayne",
+     "party": "green",
+     "votes": 2306
+    },
+    {
+     "name": "Teresa Moore",
+     "party": "opportunity",
+     "votes": 1289
+    },
+    {
+     "name": "Ilja Ruppeldt",
+     "party": "nz-first",
+     "votes": 1254
+    },
+    {
+     "name": "Stephen Berry",
+     "party": "act",
+     "votes": 389
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/East_Coast_Bays_%28electorate%29"
   },
   {
    "name": "Epsom",
@@ -388,7 +808,42 @@
    "result": "hold",
    "incumbent": "David Seymour",
    "incumbent_party": "act",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 16505,
+   "runner_up_votes": 10986,
+   "candidates": [
+    {
+     "name": "David Seymour",
+     "party": "act",
+     "votes": 16505
+    },
+    {
+     "name": "Paul Goldsmith",
+     "party": "national",
+     "votes": 10986
+    },
+    {
+     "name": "David Parker",
+     "party": "labour",
+     "votes": 7067
+    },
+    {
+     "name": "Barry Coates",
+     "party": "green",
+     "votes": 2785
+    },
+    {
+     "name": "Julian Paul",
+     "party": "nz-first",
+     "votes": 657
+    },
+    {
+     "name": "Leighton Baker",
+     "party": "conservative",
+     "votes": 230
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Epsom_%28New_Zealand_electorate%29"
   },
   {
    "name": "Hamilton East",
@@ -402,7 +857,42 @@
    "result": "hold",
    "incumbent": "David Bennett",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 18975,
+   "runner_up_votes": 13165,
+   "candidates": [
+    {
+     "name": "David Bennett",
+     "party": "national",
+     "votes": 18975
+    },
+    {
+     "name": "Jamie Strange",
+     "party": "labour",
+     "votes": 13165
+    },
+    {
+     "name": "Sam Taylor",
+     "party": "green",
+     "votes": 2048
+    },
+    {
+     "name": "Pita Paraone",
+     "party": "nz-first",
+     "votes": 1113
+    },
+    {
+     "name": "James McDowall",
+     "party": "act",
+     "votes": 140
+    },
+    {
+     "name": "Jack Gielen",
+     "party": "republic-of-nz",
+     "votes": 65
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Hamilton_East_%28New_Zealand_electorate%29"
   },
   {
    "name": "Hamilton West",
@@ -416,7 +906,57 @@
    "result": "hold",
    "incumbent": "Tim Macindoe",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 18842,
+   "runner_up_votes": 11111,
+   "candidates": [
+    {
+     "name": "Tim Macindoe",
+     "party": "national",
+     "votes": 18842
+    },
+    {
+     "name": "Gaurav Sharma",
+     "party": "labour",
+     "votes": 11111
+    },
+    {
+     "name": "Jo Wrigley",
+     "party": "green",
+     "votes": 2355
+    },
+    {
+     "name": "Shayne Wihongi",
+     "party": "nz-first",
+     "votes": 2133
+    },
+    {
+     "name": "Donna Pokere-Phillips",
+     "party": "opportunity",
+     "votes": 809
+    },
+    {
+     "name": "Boris Samujh",
+     "party": "te-pati-maori",
+     "votes": 251
+    },
+    {
+     "name": "Roger Stratford",
+     "party": "independent",
+     "votes": 82
+    },
+    {
+     "name": "Quentin Todd",
+     "party": "united-future",
+     "votes": 61
+    },
+    {
+     "name": "Vin Tomar",
+     "party": "independent",
+     "votes": 28
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Hamilton_West_%28New_Zealand_electorate%29"
   },
   {
    "name": "Helensville",
@@ -430,7 +970,42 @@
    "result": "change",
    "incumbent": "Vacant",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 21704,
+   "runner_up_votes": 7096,
+   "candidates": [
+    {
+     "name": "Chris Penk",
+     "party": "national",
+     "votes": 21704
+    },
+    {
+     "name": "Kurt Taogaga",
+     "party": "labour",
+     "votes": 7096
+    },
+    {
+     "name": "Hayley Holt",
+     "party": "green",
+     "votes": 6758
+    },
+    {
+     "name": "Helen Peterson",
+     "party": "nz-first",
+     "votes": 2403
+    },
+    {
+     "name": "Alex Evans",
+     "party": "act",
+     "votes": 284
+    },
+    {
+     "name": "Brendan Whyte",
+     "party": "conservative",
+     "votes": 167
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Helensville_%28electorate%29"
   },
   {
    "name": "Hunua",
@@ -444,7 +1019,42 @@
    "result": "hold",
    "incumbent": "Andrew Bayly",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 26825,
+   "runner_up_votes": 7382,
+   "candidates": [
+    {
+     "name": "Andrew Bayly",
+     "party": "national",
+     "votes": 26825
+    },
+    {
+     "name": "Baljit Kaur",
+     "party": "labour",
+     "votes": 7382
+    },
+    {
+     "name": "Jon Reeves",
+     "party": "nz-first",
+     "votes": 3077
+    },
+    {
+     "name": "Phil McCabe",
+     "party": "green",
+     "votes": 2002
+    },
+    {
+     "name": "Ian Cummings",
+     "party": "independent",
+     "votes": 710
+    },
+    {
+     "name": "Anthony Smith",
+     "party": "act",
+     "votes": 274
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Hunua_%28electorate%29"
   },
   {
    "name": "Hutt South",
@@ -458,7 +1068,52 @@
    "result": "change",
    "incumbent": "Trevor Mallard",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 19643,
+   "runner_up_votes": 18113,
+   "candidates": [
+    {
+     "name": "Chris Bishop",
+     "party": "national",
+     "votes": 19643
+    },
+    {
+     "name": "Ginny Andersen",
+     "party": "labour",
+     "votes": 18113
+    },
+    {
+     "name": "Virginia Horrocks",
+     "party": "green",
+     "votes": 1331
+    },
+    {
+     "name": "Alok Gupta",
+     "party": "nz-first",
+     "votes": 887
+    },
+    {
+     "name": "Richard Warwick",
+     "party": "opportunity",
+     "votes": 792
+    },
+    {
+     "name": "Wilf Bearman-Riedel",
+     "party": "nz-outdoors-freedom",
+     "votes": 112
+    },
+    {
+     "name": "Andy Parkins",
+     "party": "act",
+     "votes": 89
+    },
+    {
+     "name": "Dorothy Frances Fox",
+     "party": "independent",
+     "votes": 58
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Hutt_South"
   },
   {
    "name": "Ilam",
@@ -472,7 +1127,47 @@
    "result": "hold",
    "incumbent": "Gerry Brownlee",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 16577,
+   "runner_up_votes": 8321,
+   "candidates": [
+    {
+     "name": "Gerry Brownlee",
+     "party": "national",
+     "votes": 16577
+    },
+    {
+     "name": "Raf Manji",
+     "party": "independent",
+     "votes": 8321
+    },
+    {
+     "name": "Anthony Rimell",
+     "party": "labour",
+     "votes": 7662
+    },
+    {
+     "name": "David Lee",
+     "party": "green",
+     "votes": 2359
+    },
+    {
+     "name": "Paul Gilbert",
+     "party": "act",
+     "votes": 235
+    },
+    {
+     "name": "Martin Frauenstein",
+     "party": "conservative",
+     "votes": 225
+    },
+    {
+     "name": "Martin Thomas Francis",
+     "party": "independent",
+     "votes": 195
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Ilam_%28electorate%29"
   },
   {
    "name": "Invercargill",
@@ -486,7 +1181,32 @@
    "result": "hold",
    "incumbent": "Sarah Dowie",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 18102,
+   "runner_up_votes": 12523,
+   "candidates": [
+    {
+     "name": "Sarah Dowie",
+     "party": "national",
+     "votes": 18102
+    },
+    {
+     "name": "Liz Craig",
+     "party": "labour",
+     "votes": 12523
+    },
+    {
+     "name": "Ria Bond",
+     "party": "nz-first",
+     "votes": 3214
+    },
+    {
+     "name": "Rochelle Surendran",
+     "party": "green",
+     "votes": 1623
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Invercargill_%28electorate%29"
   },
   {
    "name": "Kaikoura",
@@ -500,7 +1220,57 @@
    "result": "hold",
    "incumbent": "Stuart Smith",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 20594,
+   "runner_up_votes": 10401,
+   "candidates": [
+    {
+     "name": "Stuart Smith",
+     "party": "national",
+     "votes": 20594
+    },
+    {
+     "name": "Janette Walker",
+     "party": "labour",
+     "votes": 10401
+    },
+    {
+     "name": "Jamie Arbuckle",
+     "party": "nz-first",
+     "votes": 4201
+    },
+    {
+     "name": "Richard McCubbin",
+     "party": "green",
+     "votes": 2865
+    },
+    {
+     "name": "David Greensdale",
+     "party": "conservative",
+     "votes": 218
+    },
+    {
+     "name": "Richard Evans",
+     "party": "act",
+     "votes": 210
+    },
+    {
+     "name": "John McCaskey",
+     "party": "social-credit",
+     "votes": 131
+    },
+    {
+     "name": "Charlotte Osmaston",
+     "party": "Money Free Party",
+     "votes": 53
+    },
+    {
+     "name": "John Truman Foster",
+     "party": "united-future",
+     "votes": 51
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Kaik%C5%8Dura_%28electorate%29"
   },
   {
    "name": "Kelston",
@@ -514,7 +1284,47 @@
    "result": "hold",
    "incumbent": "Carmel Sepuloni",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 16789,
+   "runner_up_votes": 9520,
+   "candidates": [
+    {
+     "name": "Carmel Sepuloni",
+     "party": "labour",
+     "votes": 16789
+    },
+    {
+     "name": "Bala Beeram",
+     "party": "national",
+     "votes": 9520
+    },
+    {
+     "name": "Nicola Smith",
+     "party": "green",
+     "votes": 1984
+    },
+    {
+     "name": "Anne Degia-Pala",
+     "party": "nz-first",
+     "votes": 1467
+    },
+    {
+     "name": "Jeff Lye",
+     "party": "legalise-cannabis",
+     "votes": 350
+    },
+    {
+     "name": "Cinnamon Whitlock",
+     "party": "te-pati-maori",
+     "votes": 288
+    },
+    {
+     "name": "Warren Knott",
+     "party": "conservative",
+     "votes": 213
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Kelston_%28New_Zealand_electorate%29"
   },
   {
    "name": "Mana",
@@ -528,7 +1338,47 @@
    "result": "hold",
    "incumbent": "Kris Faafoi",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 22709,
+   "runner_up_votes": 11729,
+   "candidates": [
+    {
+     "name": "Kris Faafoi",
+     "party": "labour",
+     "votes": 22709
+    },
+    {
+     "name": "Euon Murrell",
+     "party": "national",
+     "votes": 11729
+    },
+    {
+     "name": "Jan Logie",
+     "party": "green",
+     "votes": 3011
+    },
+    {
+     "name": "Shan Ng",
+     "party": "act",
+     "votes": 264
+    },
+    {
+     "name": "Kelleigh Sheffield-Cranstoun",
+     "party": "united-future",
+     "votes": 219
+    },
+    {
+     "name": "Gordon Marshall",
+     "party": "independent",
+     "votes": 214
+    },
+    {
+     "name": "Richard Goode",
+     "party": "Not A Party",
+     "votes": 112
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Mana_%28electorate%29"
   },
   {
    "name": "Māngere",
@@ -542,7 +1392,52 @@
    "result": "hold",
    "incumbent": "William Sio",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 18810,
+   "runner_up_votes": 4213,
+   "candidates": [
+    {
+     "name": "William Sio",
+     "party": "labour",
+     "votes": 18810
+    },
+    {
+     "name": "Agnes Loheni",
+     "party": "national",
+     "votes": 4213
+    },
+    {
+     "name": "Elaine Dyett",
+     "party": "green",
+     "votes": 1203
+    },
+    {
+     "name": "Mataroa Paroro",
+     "party": "nz-first",
+     "votes": 1097
+    },
+    {
+     "name": "Esther Tofilau-Tevaga",
+     "party": "te-pati-maori",
+     "votes": 880
+    },
+    {
+     "name": "James Papali'i",
+     "party": "mana",
+     "votes": 330
+    },
+    {
+     "name": "Kevin Stitt",
+     "party": "conservative",
+     "votes": 189
+    },
+    {
+     "name": "Felicity Coggan",
+     "party": "Communist League",
+     "votes": 48
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/M%C4%81ngere_%28electorate%29"
   },
   {
    "name": "Manukau East",
@@ -556,7 +1451,52 @@
    "result": "hold",
    "incumbent": "Jenny Salesa",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 17402,
+   "runner_up_votes": 4813,
+   "candidates": [
+    {
+     "name": "Jenny Salesa",
+     "party": "labour",
+     "votes": 17402
+    },
+    {
+     "name": "Kanwaljit Singh Bakshi",
+     "party": "national",
+     "votes": 4813
+    },
+    {
+     "name": "William Flesher",
+     "party": "nz-first",
+     "votes": 1511
+    },
+    {
+     "name": "Tuilagi Esera",
+     "party": "te-pati-maori",
+     "votes": 698
+    },
+    {
+     "name": "Raj Singh",
+     "party": "green",
+     "votes": 650
+    },
+    {
+     "name": "Ted Johnston",
+     "party": "opportunity",
+     "votes": 308
+    },
+    {
+     "name": "Bhupinder Singh",
+     "party": "act",
+     "votes": 201
+    },
+    {
+     "name": "Tamatoa Richmond",
+     "party": "independent",
+     "votes": 80
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Manukau_East"
   },
   {
    "name": "Manurewa",
@@ -570,7 +1510,42 @@
    "result": "hold",
    "incumbent": "Louisa Wall",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 15577,
+   "runner_up_votes": 7203,
+   "candidates": [
+    {
+     "name": "Louisa Wall",
+     "party": "labour",
+     "votes": 15577
+    },
+    {
+     "name": "Katrina Bungard",
+     "party": "national",
+     "votes": 7203
+    },
+    {
+     "name": "John Hall",
+     "party": "nz-first",
+     "votes": 1691
+    },
+    {
+     "name": "Teanau Tuiono",
+     "party": "green",
+     "votes": 880
+    },
+    {
+     "name": "Tasha Hohaia",
+     "party": "te-pati-maori",
+     "votes": 806
+    },
+    {
+     "name": "Elliot Ikilei",
+     "party": "conservative",
+     "votes": 342
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Manurewa_%28electorate%29"
   },
   {
    "name": "Maungakiekie",
@@ -584,7 +1559,47 @@
    "result": "change",
    "incumbent": "Sam Lotu-Iiga",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 15063,
+   "runner_up_votes": 12906,
+   "candidates": [
+    {
+     "name": "Denise Lee",
+     "party": "national",
+     "votes": 15063
+    },
+    {
+     "name": "Priyanca Radhakrishnan",
+     "party": "labour",
+     "votes": 12906
+    },
+    {
+     "name": "Chlöe Swarbrick",
+     "party": "green",
+     "votes": 4060
+    },
+    {
+     "name": "Ken Mahon",
+     "party": "nz-first",
+     "votes": 1299
+    },
+    {
+     "name": "Manase Lua",
+     "party": "te-pati-maori",
+     "votes": 731
+    },
+    {
+     "name": "Derrick Paull",
+     "party": "nz-outdoors-freedom",
+     "votes": 108
+    },
+    {
+     "name": "Michael Tucker",
+     "party": "Communist League",
+     "votes": 61
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Maungakiekie_%28electorate%29"
   },
   {
    "name": "Mount Albert",
@@ -598,7 +1613,52 @@
    "result": "hold",
    "incumbent": "Jacinda Ardern",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 24416,
+   "runner_up_votes": 9152,
+   "candidates": [
+    {
+     "name": "Jacinda Ardern",
+     "party": "labour",
+     "votes": 24416
+    },
+    {
+     "name": "Melissa Lee",
+     "party": "national",
+     "votes": 9152
+    },
+    {
+     "name": "Julie Anne Genter",
+     "party": "green",
+     "votes": 2438
+    },
+    {
+     "name": "Dan Thurston",
+     "party": "opportunity",
+     "votes": 924
+    },
+    {
+     "name": "Andrew Littlejohn",
+     "party": "nz-first",
+     "votes": 724
+    },
+    {
+     "name": "Jeff Johnson",
+     "party": "conservative",
+     "votes": 117
+    },
+    {
+     "name": "Bruce Stockman",
+     "party": "independent",
+     "votes": 66
+    },
+    {
+     "name": "Anthony Van den Heuvel",
+     "party": "Human Rights Party",
+     "votes": 28
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Mount_Albert_%28New_Zealand_electorate%29"
   },
   {
    "name": "Mount Roskill",
@@ -612,7 +1672,57 @@
    "result": "hold",
    "incumbent": "Michael Wood",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 19094,
+   "runner_up_votes": 12196,
+   "candidates": [
+    {
+     "name": "Michael Wood",
+     "party": "labour",
+     "votes": 19094
+    },
+    {
+     "name": "Parmjeet Parmar",
+     "party": "national",
+     "votes": 12196
+    },
+    {
+     "name": "Ricardo Menéndez March",
+     "party": "green",
+     "votes": 1254
+    },
+    {
+     "name": "Mahesh Bindra",
+     "party": "nz-first",
+     "votes": 846
+    },
+    {
+     "name": "Clint Ulyatt",
+     "party": "opportunity",
+     "votes": 564
+    },
+    {
+     "name": "Kathryn Davie",
+     "party": "conservative",
+     "votes": 263
+    },
+    {
+     "name": "John Kiria",
+     "party": "te-pati-maori",
+     "votes": 245
+    },
+    {
+     "name": "Andrew Leitch",
+     "party": "social-credit",
+     "votes": 56
+    },
+    {
+     "name": "Bishrul Hafi Ameer Izadeen",
+     "party": "independent",
+     "votes": 35
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Mount_Roskill_%28electorate%29"
   },
   {
    "name": "Napier",
@@ -626,7 +1736,42 @@
    "result": "hold",
    "incumbent": "Stuart Nash",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 20677,
+   "runner_up_votes": 15457,
+   "candidates": [
+    {
+     "name": "Stuart Nash",
+     "party": "labour",
+     "votes": 20677
+    },
+    {
+     "name": "David Elliott",
+     "party": "national",
+     "votes": 15457
+    },
+    {
+     "name": "Damon Rusden",
+     "party": "green",
+     "votes": 1386
+    },
+    {
+     "name": "Maryanne Marsters",
+     "party": "te-pati-maori",
+     "votes": 308
+    },
+    {
+     "name": "Laurence Day",
+     "party": "conservative",
+     "votes": 230
+    },
+    {
+     "name": "Karl Matthys",
+     "party": "social-credit",
+     "votes": 72
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Napier_%28New_Zealand_electorate%29"
   },
   {
    "name": "Nelson",
@@ -640,7 +1785,52 @@
    "result": "hold",
    "incumbent": "Nick Smith",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 16735,
+   "runner_up_votes": 12452,
+   "candidates": [
+    {
+     "name": "Nick Smith",
+     "party": "national",
+     "votes": 16735
+    },
+    {
+     "name": "Rachel Boyack",
+     "party": "labour",
+     "votes": 12452
+    },
+    {
+     "name": "Matt Lawrey",
+     "party": "green",
+     "votes": 9746
+    },
+    {
+     "name": "Susan Sara",
+     "party": "nz-first",
+     "votes": 1429
+    },
+    {
+     "name": "David Haynes",
+     "party": "nz-outdoors-freedom",
+     "votes": 323
+    },
+    {
+     "name": "Simon Gutschlag",
+     "party": "conservative",
+     "votes": 246
+    },
+    {
+     "name": "Paul Hufflett",
+     "party": "act",
+     "votes": 152
+    },
+    {
+     "name": "Richard Osmaston",
+     "party": "Money Free",
+     "votes": 48
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Nelson_%28New_Zealand_electorate%29"
   },
   {
    "name": "New Lynn",
@@ -654,7 +1844,57 @@
    "result": "change",
    "incumbent": "David Cunliffe",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 15840,
+   "runner_up_votes": 13015,
+   "candidates": [
+    {
+     "name": "Deborah Russell",
+     "party": "labour",
+     "votes": 15840
+    },
+    {
+     "name": "Paulo Garcia",
+     "party": "national",
+     "votes": 13015
+    },
+    {
+     "name": "Leilani Tamu",
+     "party": "green",
+     "votes": 2210
+    },
+    {
+     "name": "Peter Chan",
+     "party": "nz-first",
+     "votes": 1709
+    },
+    {
+     "name": "Paul Davie",
+     "party": "conservative",
+     "votes": 297
+    },
+    {
+     "name": "Karen Williams",
+     "party": "te-pati-maori",
+     "votes": 291
+    },
+    {
+     "name": "Richard Wells",
+     "party": "act",
+     "votes": 259
+    },
+    {
+     "name": "Scott MacArthur",
+     "party": "social-credit",
+     "votes": 82
+    },
+    {
+     "name": "John Hubscher",
+     "party": "united-future",
+     "votes": 62
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/New_Lynn_%28New_Zealand_electorate%29"
   },
   {
    "name": "New Plymouth",
@@ -668,7 +1908,42 @@
    "result": "hold",
    "incumbent": "Jonathan Young",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 20711,
+   "runner_up_votes": 12978,
+   "candidates": [
+    {
+     "name": "Jonathan Young",
+     "party": "national",
+     "votes": 20711
+    },
+    {
+     "name": "Corie Haddock",
+     "party": "labour",
+     "votes": 12978
+    },
+    {
+     "name": "Murray Chong",
+     "party": "nz-first",
+     "votes": 3041
+    },
+    {
+     "name": "Stuart Jeanne Bramhall",
+     "party": "green",
+     "votes": 2070
+    },
+    {
+     "name": "Anneka Carlson",
+     "party": "act",
+     "votes": 434
+    },
+    {
+     "name": "Basil Lawrence",
+     "party": "independent",
+     "votes": 148
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/New_Plymouth_%28electorate%29"
   },
   {
    "name": "North Shore",
@@ -682,7 +1957,42 @@
    "result": "hold",
    "incumbent": "Maggie Barry",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 23564,
+   "runner_up_votes": 10848,
+   "candidates": [
+    {
+     "name": "Maggie Barry",
+     "party": "national",
+     "votes": 23564
+    },
+    {
+     "name": "Romy Udanga",
+     "party": "labour",
+     "votes": 10848
+    },
+    {
+     "name": "Josh Hubbard",
+     "party": "nz-first",
+     "votes": 2108
+    },
+    {
+     "name": "Matt Isbister",
+     "party": "opportunity",
+     "votes": 1639
+    },
+    {
+     "name": "Nick Kearney",
+     "party": "act",
+     "votes": 621
+    },
+    {
+     "name": "Miriam Clements",
+     "party": "Logic Party",
+     "votes": 166
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/North_Shore_%28New_Zealand_electorate%29"
   },
   {
    "name": "Northcote",
@@ -696,7 +2006,42 @@
    "result": "hold",
    "incumbent": "Jonathan Coleman",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 19072,
+   "runner_up_votes": 12862,
+   "candidates": [
+    {
+     "name": "Jonathan Coleman",
+     "party": "national",
+     "votes": 19072
+    },
+    {
+     "name": "Shanan Halbert",
+     "party": "labour",
+     "votes": 12862
+    },
+    {
+     "name": "Rebekah Jaung",
+     "party": "green",
+     "votes": 2457
+    },
+    {
+     "name": "Kym Koloni",
+     "party": "nz-first",
+     "votes": 1362
+    },
+    {
+     "name": "Tim Kronfeld",
+     "party": "act",
+     "votes": 296
+    },
+    {
+     "name": "Tricia Cheel",
+     "party": "Democrats for Social Credit",
+     "votes": 92
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Northcote_%28New_Zealand_electorate%29"
   },
   {
    "name": "Northland",
@@ -710,7 +2055,42 @@
    "result": "change",
    "incumbent": "Winston Peters",
    "incumbent_party": "nz-first",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 15243,
+   "runner_up_votes": 13854,
+   "candidates": [
+    {
+     "name": "Matt King",
+     "party": "national",
+     "votes": 15243
+    },
+    {
+     "name": "Winston Peters",
+     "party": "nz-first",
+     "votes": 13854
+    },
+    {
+     "name": "Willow-Jean Prime",
+     "party": "labour",
+     "votes": 8599
+    },
+    {
+     "name": "Peter Hughes",
+     "party": "green",
+     "votes": 1794
+    },
+    {
+     "name": "Mel Taylor",
+     "party": "conservative",
+     "votes": 185
+    },
+    {
+     "name": "Craig Nelson",
+     "party": "act",
+     "votes": 121
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Northland_%28electorate%29"
   },
   {
    "name": "Ōhāriu",
@@ -724,7 +2104,47 @@
    "result": "change",
    "incumbent": "Peter Dunne",
    "incumbent_party": "united-future",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 17084,
+   "runner_up_votes": 16033,
+   "candidates": [
+    {
+     "name": "Greg O'Connor",
+     "party": "labour",
+     "votes": 17084
+    },
+    {
+     "name": "Brett Hudson",
+     "party": "national",
+     "votes": 16033
+    },
+    {
+     "name": "Jessica Hammond",
+     "party": "opportunity",
+     "votes": 2898
+    },
+    {
+     "name": "Tane Woodley",
+     "party": "green",
+     "votes": 2522
+    },
+    {
+     "name": "Lisa Close",
+     "party": "nz-first",
+     "votes": 751
+    },
+    {
+     "name": "Bale Nadakuitavuki",
+     "party": "united-future",
+     "votes": 284
+    },
+    {
+     "name": "Andie Moore",
+     "party": "act",
+     "votes": 185
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/%C5%8Ch%C4%81riu_%28electorate%29"
   },
   {
    "name": "Ōtaki",
@@ -738,7 +2158,47 @@
    "result": "hold",
    "incumbent": "Nathan Guy",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 20725,
+   "runner_up_votes": 14569,
+   "candidates": [
+    {
+     "name": "Nathan Guy",
+     "party": "national",
+     "votes": 20725
+    },
+    {
+     "name": "Rob McCann",
+     "party": "labour",
+     "votes": 14569
+    },
+    {
+     "name": "Sam Ferguson",
+     "party": "green",
+     "votes": 2167
+    },
+    {
+     "name": "Romuald Edward Rudzki",
+     "party": "nz-first",
+     "votes": 1680
+    },
+    {
+     "name": "Piri-Hira Tukapua",
+     "party": "opportunity",
+     "votes": 1051
+    },
+    {
+     "name": "Sam Jennings",
+     "party": "independent",
+     "votes": 504
+    },
+    {
+     "name": "Wayne Desmond Grattan",
+     "party": "act",
+     "votes": 105
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/%C5%8Ctaki_%28electorate%29"
   },
   {
    "name": "Pakuranga",
@@ -752,7 +2212,37 @@
    "result": "change",
    "incumbent": "Maurice Williamson",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 22663,
+   "runner_up_votes": 7777,
+   "candidates": [
+    {
+     "name": "Simeon Brown",
+     "party": "national",
+     "votes": 22663
+    },
+    {
+     "name": "Barry Kirker",
+     "party": "labour",
+     "votes": 7777
+    },
+    {
+     "name": "Suzanne Kelly",
+     "party": "nz-first",
+     "votes": 2039
+    },
+    {
+     "name": "Guy Hunt",
+     "party": "green",
+     "votes": 2018
+    },
+    {
+     "name": "Carrie Stoddart-Smith",
+     "party": "te-pati-maori",
+     "votes": 419
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Pakuranga_%28electorate%29"
   },
   {
    "name": "Palmerston North",
@@ -766,7 +2256,37 @@
    "result": "hold",
    "incumbent": "Iain Lees-Galloway",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 18388,
+   "runner_up_votes": 11946,
+   "candidates": [
+    {
+     "name": "Iain Lees-Galloway",
+     "party": "labour",
+     "votes": 18388
+    },
+    {
+     "name": "Adrienne Pierce",
+     "party": "national",
+     "votes": 11946
+    },
+    {
+     "name": "Darroch Ball",
+     "party": "nz-first",
+     "votes": 2155
+    },
+    {
+     "name": "Thomas Nash",
+     "party": "green",
+     "votes": 1960
+    },
+    {
+     "name": "Scott Andrew",
+     "party": "Money Free",
+     "votes": 142
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Palmerston_North_%28electorate%29"
   },
   {
    "name": "Papakura",
@@ -780,7 +2300,32 @@
    "result": "hold",
    "incumbent": "Judith Collins",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 20266,
+   "runner_up_votes": 12780,
+   "candidates": [
+    {
+     "name": "Judith Collins",
+     "party": "national",
+     "votes": 20266
+    },
+    {
+     "name": "Jesse Pabla",
+     "party": "labour",
+     "votes": 12780
+    },
+    {
+     "name": "Toa Greening",
+     "party": "nz-first",
+     "votes": 2778
+    },
+    {
+     "name": "Raewyn Teresa Bhana",
+     "party": "te-pati-maori",
+     "votes": 607
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Papakura_%28electorate%29"
   },
   {
    "name": "Port Hills",
@@ -794,7 +2339,42 @@
    "result": "hold",
    "incumbent": "Ruth Dyson",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 22603,
+   "runner_up_votes": 14687,
+   "candidates": [
+    {
+     "name": "Ruth Dyson",
+     "party": "labour",
+     "votes": 22603
+    },
+    {
+     "name": "Nuk Korako",
+     "party": "national",
+     "votes": 14687
+    },
+    {
+     "name": "Eugenie Sage",
+     "party": "green",
+     "votes": 3143
+    },
+    {
+     "name": "Denis O'Rourke",
+     "party": "nz-first",
+     "votes": 1258
+    },
+    {
+     "name": "David Fox",
+     "party": "act",
+     "votes": 189
+    },
+    {
+     "name": "Gary Gribben",
+     "party": "social-credit",
+     "votes": 60
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Port_Hills_%28electorate%29"
   },
   {
    "name": "Rangitata",
@@ -808,7 +2388,37 @@
    "result": "change",
    "incumbent": "Jo Goodhew",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 19994,
+   "runner_up_votes": 13663,
+   "candidates": [
+    {
+     "name": "Andrew Falloon",
+     "party": "national",
+     "votes": 19994
+    },
+    {
+     "name": "Jo Luxton",
+     "party": "labour",
+     "votes": 13663
+    },
+    {
+     "name": "Olly Wilson",
+     "party": "opportunity",
+     "votes": 1828
+    },
+    {
+     "name": "Mojo Mathers",
+     "party": "green",
+     "votes": 1583
+    },
+    {
+     "name": "Tom Corbett",
+     "party": "act",
+     "votes": 262
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Rangitata_%28electorate%29"
   },
   {
    "name": "Rangitīkei",
@@ -822,7 +2432,42 @@
    "result": "hold",
    "incumbent": "Ian McKelvie",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 20809,
+   "runner_up_votes": 10519,
+   "candidates": [
+    {
+     "name": "Ian McKelvie",
+     "party": "national",
+     "votes": 20809
+    },
+    {
+     "name": "Heather Warren",
+     "party": "labour",
+     "votes": 10519
+    },
+    {
+     "name": "Rob Stevenson",
+     "party": "nz-first",
+     "votes": 2923
+    },
+    {
+     "name": "Robin McCandless",
+     "party": "green",
+     "votes": 2082
+    },
+    {
+     "name": "Cedric Backhouse",
+     "party": "conservative",
+     "votes": 221
+    },
+    {
+     "name": "Neil Wilson",
+     "party": "act",
+     "votes": 217
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Rangit%C4%ABkei_%28electorate%29"
   },
   {
    "name": "Rimutaka",
@@ -836,7 +2481,42 @@
    "result": "hold",
    "incumbent": "Chris Hipkins",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 21725,
+   "runner_up_votes": 13116,
+   "candidates": [
+    {
+     "name": "Chris Hipkins",
+     "party": "labour",
+     "votes": 21725
+    },
+    {
+     "name": "Carolyn O'Fallon",
+     "party": "national",
+     "votes": 13116
+    },
+    {
+     "name": "Stefan Grand-Meyer",
+     "party": "green",
+     "votes": 1815
+    },
+    {
+     "name": "Talani Meikle",
+     "party": "nz-first",
+     "votes": 1604
+    },
+    {
+     "name": "Philip Lynch",
+     "party": "conservative",
+     "votes": 356
+    },
+    {
+     "name": "Grae O'Sullivan",
+     "party": "act",
+     "votes": 190
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Remutaka_%28electorate%29"
   },
   {
    "name": "Rodney",
@@ -850,7 +2530,37 @@
    "result": "hold",
    "incumbent": "Mark Mitchell",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 28140,
+   "runner_up_votes": 8579,
+   "candidates": [
+    {
+     "name": "Mark Mitchell",
+     "party": "national",
+     "votes": 28140
+    },
+    {
+     "name": "Marja Lubeck",
+     "party": "labour",
+     "votes": 8579
+    },
+    {
+     "name": "Tracey Martin",
+     "party": "nz-first",
+     "votes": 4381
+    },
+    {
+     "name": "Harrison Burnard",
+     "party": "green",
+     "votes": 2503
+    },
+    {
+     "name": "Brittany Owens",
+     "party": "opportunity",
+     "votes": 963
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Rodney_%28New_Zealand_electorate%29"
   },
   {
    "name": "Rongotai",
@@ -864,7 +2574,52 @@
    "result": "change",
    "incumbent": "Annette King",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 21146,
+   "runner_up_votes": 10246,
+   "candidates": [
+    {
+     "name": "Paul Eagle",
+     "party": "labour",
+     "votes": 21146
+    },
+    {
+     "name": "Chris Finlayson",
+     "party": "national",
+     "votes": 10246
+    },
+    {
+     "name": "Teall Crossen",
+     "party": "green",
+     "votes": 6115
+    },
+    {
+     "name": "Paddy Plunket",
+     "party": "opportunity",
+     "votes": 1676
+    },
+    {
+     "name": "Geoffrey John Mills",
+     "party": "nz-first",
+     "votes": 851
+    },
+    {
+     "name": "Bruce Welsh",
+     "party": "conservative",
+     "votes": 225
+    },
+    {
+     "name": "Chris Sole",
+     "party": "act",
+     "votes": 114
+    },
+    {
+     "name": "Simon Smythe",
+     "party": "Not A Party",
+     "votes": 31
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Rongotai_%28electorate%29"
   },
   {
    "name": "Rotorua",
@@ -878,7 +2633,47 @@
    "result": "hold",
    "incumbent": "Todd McClay",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 18788,
+   "runner_up_votes": 10887,
+   "candidates": [
+    {
+     "name": "Todd McClay",
+     "party": "national",
+     "votes": 18788
+    },
+    {
+     "name": "Ben Sandford",
+     "party": "labour",
+     "votes": 10887
+    },
+    {
+     "name": "Fletcher Tabuteau",
+     "party": "nz-first",
+     "votes": 3062
+    },
+    {
+     "name": "Richard Gillies",
+     "party": "green",
+     "votes": 1491
+    },
+    {
+     "name": "Wendy Biddle",
+     "party": "te-pati-maori",
+     "votes": 702
+    },
+    {
+     "name": "Rachel Clark",
+     "party": "independent",
+     "votes": 162
+    },
+    {
+     "name": "Owen Patterson",
+     "party": "conservative",
+     "votes": 114
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Rotorua_%28electorate%29"
   },
   {
    "name": "Selwyn",
@@ -892,7 +2687,42 @@
    "result": "hold",
    "incumbent": "Amy Adams",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 28686,
+   "runner_up_votes": 9047,
+   "candidates": [
+    {
+     "name": "Amy Adams",
+     "party": "national",
+     "votes": 28686
+    },
+    {
+     "name": "Tony Condon",
+     "party": "labour",
+     "votes": 9047
+    },
+    {
+     "name": "Chrys Horn",
+     "party": "green",
+     "votes": 2772
+    },
+    {
+     "name": "Lindy Michelle Palmer",
+     "party": "nz-first",
+     "votes": 1345
+    },
+    {
+     "name": "Nicky Snoyink",
+     "party": "opportunity",
+     "votes": 1270
+    },
+    {
+     "name": "Brian Davidson",
+     "party": "act",
+     "votes": 198
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Selwyn_%28electorate%29"
   },
   {
    "name": "Tāmaki",
@@ -906,7 +2736,47 @@
    "result": "hold",
    "incumbent": "Simon O'Connor",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 24026,
+   "runner_up_votes": 8624,
+   "candidates": [
+    {
+     "name": "Simon O'Connor",
+     "party": "national",
+     "votes": 24026
+    },
+    {
+     "name": "Sam McDonald",
+     "party": "labour",
+     "votes": 8624
+    },
+    {
+     "name": "Richard Leckinger",
+     "party": "green",
+     "votes": 2567
+    },
+    {
+     "name": "Jenny Marcroft",
+     "party": "nz-first",
+     "votes": 1080
+    },
+    {
+     "name": "Mike Milne",
+     "party": "act",
+     "votes": 529
+    },
+    {
+     "name": "Mele Pepa",
+     "party": "te-pati-maori",
+     "votes": 392
+    },
+    {
+     "name": "Penny Bright",
+     "party": "independent",
+     "votes": 244
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/T%C4%81maki_%28electorate%29"
   },
   {
    "name": "Taranaki-King Country",
@@ -920,7 +2790,32 @@
    "result": "hold",
    "incumbent": "Barbara Kuriger",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 23854,
+   "runner_up_votes": 8595,
+   "candidates": [
+    {
+     "name": "Barbara Kuriger",
+     "party": "national",
+     "votes": 23854
+    },
+    {
+     "name": "Hilary Humphrey",
+     "party": "labour",
+     "votes": 8595
+    },
+    {
+     "name": "Robert Moore",
+     "party": "green",
+     "votes": 2900
+    },
+    {
+     "name": "Allan Thomson",
+     "party": "conservative",
+     "votes": 568
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Taranaki-King_Country"
   },
   {
    "name": "Taupō",
@@ -934,7 +2829,37 @@
    "result": "hold",
    "incumbent": "Louise Upston",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 24611,
+   "runner_up_votes": 10276,
+   "candidates": [
+    {
+     "name": "Louise Upston",
+     "party": "national",
+     "votes": 24611
+    },
+    {
+     "name": "Ala Al-Bustanji",
+     "party": "labour",
+     "votes": 10276
+    },
+    {
+     "name": "Julie Sandilands",
+     "party": "green",
+     "votes": 3118
+    },
+    {
+     "name": "Alan Frank Simmons",
+     "party": "nz-outdoors-freedom",
+     "votes": 814
+    },
+    {
+     "name": "Denis Shuker",
+     "party": "conservative",
+     "votes": 321
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Taup%C5%8D_%28electorate%29"
   },
   {
    "name": "Tauranga",
@@ -948,7 +2873,67 @@
    "result": "hold",
    "incumbent": "Simon Bridges",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 21499,
+   "runner_up_votes": 10247,
+   "candidates": [
+    {
+     "name": "Simon Bridges",
+     "party": "national",
+     "votes": 21499
+    },
+    {
+     "name": "Jan Tinetti",
+     "party": "labour",
+     "votes": 10247
+    },
+    {
+     "name": "Clayton Mitchell",
+     "party": "nz-first",
+     "votes": 4829
+    },
+    {
+     "name": "Emma-Leigh Hodge",
+     "party": "green",
+     "votes": 1935
+    },
+    {
+     "name": "Joseph James Borell",
+     "party": "te-pati-maori",
+     "votes": 267
+    },
+    {
+     "name": "Stuart Pedersen",
+     "party": "act",
+     "votes": 205
+    },
+    {
+     "name": "Rusty Kane",
+     "party": "independent",
+     "votes": 72
+    },
+    {
+     "name": "Ben Rickard",
+     "party": "united-future",
+     "votes": 64
+    },
+    {
+     "name": "Yvette Lamare",
+     "party": "independent",
+     "votes": 50
+    },
+    {
+     "name": "Hugh E Robb",
+     "party": "independent",
+     "votes": 49
+    },
+    {
+     "name": "Jason Jobsis",
+     "party": "Democrats for Social Credit",
+     "votes": 33
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Tauranga_%28electorate%29"
   },
   {
    "name": "Te Atatū",
@@ -962,7 +2947,47 @@
    "result": "hold",
    "incumbent": "Phil Twyford",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 16774,
+   "runner_up_votes": 13590,
+   "candidates": [
+    {
+     "name": "Phil Twyford",
+     "party": "labour",
+     "votes": 16774
+    },
+    {
+     "name": "Alfred Ngaro",
+     "party": "national",
+     "votes": 13590
+    },
+    {
+     "name": "David Wilson",
+     "party": "nz-first",
+     "votes": 1609
+    },
+    {
+     "name": "Golriz Ghahraman",
+     "party": "green",
+     "votes": 1413
+    },
+    {
+     "name": "Stephen Fletcher",
+     "party": "act",
+     "votes": 240
+    },
+    {
+     "name": "Marilyn Johnson",
+     "party": "conservative",
+     "votes": 164
+    },
+    {
+     "name": "Tua Schuster",
+     "party": "independent",
+     "votes": 133
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Te_Atat%C5%AB_%28electorate%29"
   },
   {
    "name": "Tukituki",
@@ -976,7 +3001,47 @@
    "result": "change",
    "incumbent": "Craig Foss",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 18280,
+   "runner_up_votes": 15467,
+   "candidates": [
+    {
+     "name": "Lawrence Yule",
+     "party": "national",
+     "votes": 18280
+    },
+    {
+     "name": "Anna Lorck",
+     "party": "labour",
+     "votes": 15467
+    },
+    {
+     "name": "Joe Kairau",
+     "party": "nz-first",
+     "votes": 2027
+    },
+    {
+     "name": "Chris Perley",
+     "party": "green",
+     "votes": 1977
+    },
+    {
+     "name": "Roger Larkins",
+     "party": "conservative",
+     "votes": 209
+    },
+    {
+     "name": "Allister David Tosh",
+     "party": "Future Youth",
+     "votes": 82
+    },
+    {
+     "name": "Dick Ryan",
+     "party": "Democrats for Social Credit",
+     "votes": 51
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Tukituki_%28electorate%29"
   },
   {
    "name": "Upper Harbour",
@@ -990,7 +3055,37 @@
    "result": "hold",
    "incumbent": "Paula Bennett",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 19857,
+   "runner_up_votes": 10301,
+   "candidates": [
+    {
+     "name": "Paula Bennett",
+     "party": "national",
+     "votes": 19857
+    },
+    {
+     "name": "Jin An",
+     "party": "labour",
+     "votes": 10301
+    },
+    {
+     "name": "James Goodhue",
+     "party": "green",
+     "votes": 2688
+    },
+    {
+     "name": "Jane Johnston",
+     "party": "nz-first",
+     "votes": 2192
+    },
+    {
+     "name": "Bruce Haycock",
+     "party": "act",
+     "votes": 358
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Upper_Harbour_%28New_Zealand_electorate%29"
   },
   {
    "name": "Waikato",
@@ -1004,7 +3099,32 @@
    "result": "change",
    "incumbent": "Lindsay Tisch",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 24560,
+   "runner_up_votes": 9108,
+   "candidates": [
+    {
+     "name": "Tim van de Molen",
+     "party": "national",
+     "votes": 24560
+    },
+    {
+     "name": "Brooke Loader",
+     "party": "labour",
+     "votes": 9108
+    },
+    {
+     "name": "Stu Husband",
+     "party": "nz-first",
+     "votes": 3716
+    },
+    {
+     "name": "Philippa Stevenson",
+     "party": "green",
+     "votes": 2113
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Waikato_%28electorate%29"
   },
   {
    "name": "Waimakariri",
@@ -1018,7 +3138,62 @@
    "result": "hold",
    "incumbent": "Matt Doocey",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 22657,
+   "runner_up_votes": 11891,
+   "candidates": [
+    {
+     "name": "Matt Doocey",
+     "party": "national",
+     "votes": 22657
+    },
+    {
+     "name": "Dan Rosewarne",
+     "party": "labour",
+     "votes": 11891
+    },
+    {
+     "name": "Nikki Berry",
+     "party": "green",
+     "votes": 1799
+    },
+    {
+     "name": "Richard Prosser",
+     "party": "nz-first",
+     "votes": 1771
+    },
+    {
+     "name": "Nicola Glenjarman",
+     "party": "opportunity",
+     "votes": 583
+    },
+    {
+     "name": "Benjamin Price",
+     "party": "conservative",
+     "votes": 265
+    },
+    {
+     "name": "Aroha Reriti-Crofts",
+     "party": "te-pati-maori",
+     "votes": 122
+    },
+    {
+     "name": "Destiny Wiringi",
+     "party": "independent",
+     "votes": 99
+    },
+    {
+     "name": "Stuart Hawkins",
+     "party": "act",
+     "votes": 92
+    },
+    {
+     "name": "Peter Adcock-White",
+     "party": "social-credit",
+     "votes": 55
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Waimakariri_%28electorate%29"
   },
   {
    "name": "Wairarapa",
@@ -1032,7 +3207,42 @@
    "result": "hold",
    "incumbent": "Alastair Scott",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 16514,
+   "runner_up_votes": 13642,
+   "candidates": [
+    {
+     "name": "Alastair Scott",
+     "party": "national",
+     "votes": 16514
+    },
+    {
+     "name": "Kieran McAnulty",
+     "party": "labour",
+     "votes": 13642
+    },
+    {
+     "name": "Ron Mark",
+     "party": "nz-first",
+     "votes": 7753
+    },
+    {
+     "name": "John Hart",
+     "party": "green",
+     "votes": 1683
+    },
+    {
+     "name": "James Harold",
+     "party": "independent",
+     "votes": 164
+    },
+    {
+     "name": "Roger Greenslade",
+     "party": "act",
+     "votes": 130
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Wairarapa_%28electorate%29"
   },
   {
    "name": "Waitaki",
@@ -1046,7 +3256,47 @@
    "result": "hold",
    "incumbent": "Jacqui Dean",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 24870,
+   "runner_up_votes": 12054,
+   "candidates": [
+    {
+     "name": "Jacqui Dean",
+     "party": "national",
+     "votes": 24870
+    },
+    {
+     "name": "Zélie Allan",
+     "party": "labour",
+     "votes": 12054
+    },
+    {
+     "name": "Pat Wall",
+     "party": "green",
+     "votes": 2498
+    },
+    {
+     "name": "Alex Familton",
+     "party": "nz-first",
+     "votes": 2473
+    },
+    {
+     "name": "Kevin Neill",
+     "party": "opportunity",
+     "votes": 1134
+    },
+    {
+     "name": "Raymond Lum",
+     "party": "conservative",
+     "votes": 157
+    },
+    {
+     "name": "Hessel Van Wieren",
+     "party": "social-credit",
+     "votes": 95
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Waitaki_%28electorate%29"
   },
   {
    "name": "Wellington Central",
@@ -1060,7 +3310,57 @@
    "result": "hold",
    "incumbent": "Grant Robertson",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 20873,
+   "runner_up_votes": 10910,
+   "candidates": [
+    {
+     "name": "Grant Robertson",
+     "party": "labour",
+     "votes": 20873
+    },
+    {
+     "name": "Nicola Willis",
+     "party": "national",
+     "votes": 10910
+    },
+    {
+     "name": "James Shaw",
+     "party": "green",
+     "votes": 6520
+    },
+    {
+     "name": "Geoff Simmons",
+     "party": "opportunity",
+     "votes": 2892
+    },
+    {
+     "name": "Andy Foster",
+     "party": "nz-first",
+     "votes": 797
+    },
+    {
+     "name": "Gayaal Iddamalgoda",
+     "party": "independent",
+     "votes": 161
+    },
+    {
+     "name": "Michael Warren",
+     "party": "act",
+     "votes": 131
+    },
+    {
+     "name": "Peter Robinson",
+     "party": "independent",
+     "votes": 71
+    },
+    {
+     "name": "Bob Wessex",
+     "party": "Not A Party",
+     "votes": 19
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Wellington_Central_%28electorate%29"
   },
   {
    "name": "West Coast-Tasman",
@@ -1074,7 +3374,62 @@
    "result": "hold",
    "incumbent": "Damien O'Connor",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 18488,
+   "runner_up_votes": 12895,
+   "candidates": [
+    {
+     "name": "Damien O'Connor",
+     "party": "labour",
+     "votes": 18488
+    },
+    {
+     "name": "Maureen Pugh",
+     "party": "national",
+     "votes": 12895
+    },
+    {
+     "name": "Kate Fulton",
+     "party": "green",
+     "votes": 2230
+    },
+    {
+     "name": "Jackie Farrelly",
+     "party": "nz-first",
+     "votes": 1787
+    },
+    {
+     "name": "Pete Salter",
+     "party": "ban-1080",
+     "votes": 1470
+    },
+    {
+     "name": "Zeb Markland",
+     "party": "act",
+     "votes": 154
+    },
+    {
+     "name": "Steven Wilkinson",
+     "party": "independent",
+     "votes": 137
+    },
+    {
+     "name": "Claire Holley",
+     "party": "GOdsownNZ",
+     "votes": 72
+    },
+    {
+     "name": "Liam Anderson",
+     "party": "Money Free",
+     "votes": 50
+    },
+    {
+     "name": "Jack Collin",
+     "party": "social-credit",
+     "votes": 38
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/West_Coast-Tasman"
   },
   {
    "name": "Whanganui",
@@ -1088,21 +3443,96 @@
    "result": "change",
    "incumbent": "Chester Borrows",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 16751,
+   "runner_up_votes": 15045,
+   "candidates": [
+    {
+     "name": "Harete Hipango",
+     "party": "national",
+     "votes": 16751
+    },
+    {
+     "name": "Steph Lewis",
+     "party": "labour",
+     "votes": 15045
+    },
+    {
+     "name": "Reg Skipworth",
+     "party": "nz-first",
+     "votes": 2580
+    },
+    {
+     "name": "Nicola Patrick",
+     "party": "green",
+     "votes": 2067
+    },
+    {
+     "name": "Alan Davidson",
+     "party": "act",
+     "votes": 294
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Whanganui_%28electorate%29"
   },
   {
    "name": "Whangarei",
    "winner": "Shane Reti",
    "party": "national",
    "majority": 10967,
-   "runner_up": "Tony Savage",
+   "runner_up": "Tony John Savage",
    "runner_up_party": "labour",
    "third": "Shane Jones",
    "third_party": "nz-first",
    "result": "hold",
    "incumbent": "Shane Reti",
    "incumbent_party": "national",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 18734,
+   "runner_up_votes": 7767,
+   "candidates": [
+    {
+     "name": "Shane Reti",
+     "party": "national",
+     "votes": 18734
+    },
+    {
+     "name": "Tony John Savage",
+     "party": "labour",
+     "votes": 7767
+    },
+    {
+     "name": "Shane Jones",
+     "party": "nz-first",
+     "votes": 7651
+    },
+    {
+     "name": "Ash Holwell",
+     "party": "green",
+     "votes": 4868
+    },
+    {
+     "name": "Chris Leitch",
+     "party": "Democrats for Social Credit",
+     "votes": 994
+    },
+    {
+     "name": "Robin Grieve",
+     "party": "act",
+     "votes": 188
+    },
+    {
+     "name": "Jim Taylor",
+     "party": "conservative",
+     "votes": 158
+    },
+    {
+     "name": "Marie Minhinnick",
+     "party": "independent",
+     "votes": 110
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Whang%C4%81rei_%28electorate%29"
   },
   {
    "name": "Wigram",
@@ -1116,21 +3546,81 @@
    "result": "hold",
    "incumbent": "Megan Woods",
    "incumbent_party": "labour",
-   "type": "general"
+   "type": "general",
+   "winner_votes": 17001,
+   "runner_up_votes": 12407,
+   "candidates": [
+    {
+     "name": "Megan Woods",
+     "party": "labour",
+     "votes": 17001
+    },
+    {
+     "name": "David Hiatt",
+     "party": "national",
+     "votes": 12407
+    },
+    {
+     "name": "Richard Wesley",
+     "party": "green",
+     "votes": 1623
+    },
+    {
+     "name": "Tane Apanui",
+     "party": "nz-first",
+     "votes": 1186
+    },
+    {
+     "name": "Ruth Knights",
+     "party": "act",
+     "votes": 125
+    },
+    {
+     "name": "Geoff McTague",
+     "party": "independent",
+     "votes": 85
+    },
+    {
+     "name": "Tubby Hansen",
+     "party": "Economic Euthenics",
+     "votes": 41
+    },
+    {
+     "name": "John Ring",
+     "party": "social-credit",
+     "votes": 35
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Wigram_%28electorate%29"
   },
   {
    "name": "Hauraki-Waikato",
    "winner": "Nanaia Mahuta",
    "party": "labour",
    "majority": 9223,
-   "runner_up": "Rahui Papa",
+   "runner_up": "Stanley Rahui Papa",
    "runner_up_party": "te-pati-maori",
    "third": "n/a",
    "third_party": null,
    "result": "hold",
    "incumbent": "Nanaia Mahuta",
    "incumbent_party": "labour",
-   "type": "maori"
+   "type": "maori",
+   "winner_votes": 15306,
+   "runner_up_votes": 6083,
+   "candidates": [
+    {
+     "name": "Nanaia Mahuta",
+     "party": "labour",
+     "votes": 15306
+    },
+    {
+     "name": "Stanley Rahui Papa",
+     "party": "te-pati-maori",
+     "votes": 6083
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Hauraki-Waikato"
   },
   {
    "name": "Ikaroa-Rāwhiti",
@@ -1144,7 +3634,27 @@
    "result": "hold",
    "incumbent": "Meka Whaitiri",
    "incumbent_party": "labour",
-   "type": "maori"
+   "type": "maori",
+   "winner_votes": 12274,
+   "runner_up_votes": 8064,
+   "candidates": [
+    {
+     "name": "Meka Whaitiri",
+     "party": "labour",
+     "votes": 12274
+    },
+    {
+     "name": "Marama Fox",
+     "party": "te-pati-maori",
+     "votes": 8064
+    },
+    {
+     "name": "Elizabeth Kerekere",
+     "party": "green",
+     "votes": 1924
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Ikaroa-R%C4%81whiti"
   },
   {
    "name": "Tāmaki Makaurau",
@@ -1158,7 +3668,27 @@
    "result": "hold",
    "incumbent": "Peeni Henare",
    "incumbent_party": "labour",
-   "type": "maori"
+   "type": "maori",
+   "winner_votes": 9396,
+   "runner_up_votes": 5587,
+   "candidates": [
+    {
+     "name": "Peeni Henare",
+     "party": "labour",
+     "votes": 9396
+    },
+    {
+     "name": "Shane Taurima",
+     "party": "te-pati-maori",
+     "votes": 5587
+    },
+    {
+     "name": "Marama Davidson",
+     "party": "green",
+     "votes": 4268
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/T%C4%81maki_Makaurau_%28electorate%29"
   },
   {
    "name": "Te Tai Hauāuru",
@@ -1172,7 +3702,32 @@
    "result": "hold",
    "incumbent": "Adrian Rurawhe",
    "incumbent_party": "labour",
-   "type": "maori"
+   "type": "maori",
+   "winner_votes": 9791,
+   "runner_up_votes": 8752,
+   "candidates": [
+    {
+     "name": "Adrian Rurawhe",
+     "party": "labour",
+     "votes": 9791
+    },
+    {
+     "name": "Howie Tamati",
+     "party": "te-pati-maori",
+     "votes": 8752
+    },
+    {
+     "name": "Jack McDonald",
+     "party": "green",
+     "votes": 2798
+    },
+    {
+     "name": "Wikitoria Waitai-Rapana",
+     "party": "independent",
+     "votes": 410
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Te_Tai_Hau%C4%81uru"
   },
   {
    "name": "Te Tai Tokerau",
@@ -1186,7 +3741,32 @@
    "result": "hold",
    "incumbent": "Kelvin Davis",
    "incumbent_party": "labour",
-   "type": "maori"
+   "type": "maori",
+   "winner_votes": 12673,
+   "runner_up_votes": 7866,
+   "candidates": [
+    {
+     "name": "Kelvin Davis",
+     "party": "labour",
+     "votes": 12673
+    },
+    {
+     "name": "Hone Harawira",
+     "party": "mana",
+     "votes": 7866
+    },
+    {
+     "name": "Godfrey James Rudolph",
+     "party": "green",
+     "votes": 1958
+    },
+    {
+     "name": "Maki Herbert",
+     "party": "legalise-cannabis",
+     "votes": 986
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Te_Tai_Tokerau"
   },
   {
    "name": "Te Tai Tonga",
@@ -1200,7 +3780,32 @@
    "result": "hold",
    "incumbent": "Rino Tirikatene",
    "incumbent_party": "labour",
-   "type": "maori"
+   "type": "maori",
+   "winner_votes": 10416,
+   "runner_up_votes": 5740,
+   "candidates": [
+    {
+     "name": "Rino Tirikatene",
+     "party": "labour",
+     "votes": 10416
+    },
+    {
+     "name": "Metiria Turei",
+     "party": "green",
+     "votes": 5740
+    },
+    {
+     "name": "Mei Reedy-Taare",
+     "party": "te-pati-maori",
+     "votes": 4915
+    },
+    {
+     "name": "Emma-Jane Mihaere Kingi",
+     "party": "legalise-cannabis",
+     "votes": 1625
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Te_Tai_Tonga"
   },
   {
    "name": "Waiariki",
@@ -1214,10 +3819,96 @@
    "result": "change",
    "incumbent": "Te Ururoa Flavell",
    "incumbent_party": "te-pati-maori",
-   "type": "maori"
+   "type": "maori",
+   "winner_votes": 12362,
+   "runner_up_votes": 10643,
+   "candidates": [
+    {
+     "name": "Tāmati Coffey",
+     "party": "labour",
+     "votes": 12362
+    },
+    {
+     "name": "Te Ururoa Flavell",
+     "party": "te-pati-maori",
+     "votes": 10643
+    }
+   ],
+   "majority_source": "official count via https://en.wikipedia.org/wiki/Waiariki_%28electorate%29"
   }
  ],
- "notes": [],
+ "party_vote_crosscheck": {
+  "national": -175,
+  "labour": 0,
+  "nz-first": 0,
+  "green": 0,
+  "opportunity": 0,
+  "te-pati-maori": 52
+ },
+ "notes": [
+  "Electorate majorities/runners-up are taken from the official-count vote tables in each electorate's Wikipedia article (which cite the Electoral Commission's official results pages); where the summary table, the article's majority box and the candidate vote counts disagree, the value two of them agree on is used – see 'majority_corrections'.",
+  "Cross-check: national party-vote totals vs the sum of per-electorate official party votes in the electorate articles – largest gap -175 votes (national, 0.01% of valid votes); gaps are attributed to transcription errors in individual electorate articles, and the national (Electoral Commission summary) figures are used."
+ ],
+ "majority_corrections": [
+  {
+   "electorate": "Auckland Central",
+   "summary_table_majority": 1581,
+   "article_majority_box": 1519,
+   "computed_from_candidate_votes": 1581,
+   "used": 1581,
+   "status": "kept (two sources agree; third differs – unresolved)"
+  },
+  {
+   "electorate": "Coromandel",
+   "summary_table_majority": 14326,
+   "article_majority_box": 14236,
+   "computed_from_candidate_votes": 14326,
+   "used": 14326,
+   "status": "kept (two sources agree; third differs – unresolved)"
+  },
+  {
+   "electorate": "Ilam",
+   "summary_table_majority": 8256,
+   "article_majority_box": 8236,
+   "computed_from_candidate_votes": 8256,
+   "used": 8256,
+   "status": "kept (two sources agree; third differs – unresolved)"
+  },
+  {
+   "electorate": "Kaikoura",
+   "summary_table_majority": 10553,
+   "article_majority_box": 10553,
+   "computed_from_candidate_votes": 10193,
+   "used": 10553,
+   "status": "kept (two sources agree; third differs – unresolved)"
+  },
+  {
+   "electorate": "Māngere",
+   "summary_table_majority": 14597,
+   "article_majority_box": 14957,
+   "computed_from_candidate_votes": 14597,
+   "used": 14597,
+   "status": "kept (two sources agree; third differs – unresolved)"
+  },
+  {
+   "electorate": "Palmerston North",
+   "summary_table_majority": 6392,
+   "article_majority_box": 6392,
+   "computed_from_candidate_votes": 6442,
+   "used": 6392,
+   "status": "kept (two sources agree; third differs – unresolved)"
+  },
+  {
+   "electorate": "Whangarei",
+   "runner_up_was": "Tony Savage",
+   "runner_up_official": "Tony John Savage"
+  },
+  {
+   "electorate": "Hauraki-Waikato",
+   "runner_up_was": "Rahui Papa",
+   "runner_up_official": "Stanley Rahui Papa"
+  }
+ ],
  "sources": [
   "https://en.wikipedia.org/wiki/Results_of_the_2017_New_Zealand_general_election",
   "https://archive.electionresults.govt.nz/electionresults_2017/statistics/overall-results-summary.html (official Electoral Commission results; blocked by Cloudflare from this environment, values taken via Wikipedia which cites it)",

@@ -33,6 +33,14 @@
  },
  "total_start": 123,
  "total_now_or_end": 122,
+ "vacancies_at_end": [
+  {
+   "seat": "Papakura",
+   "vacated": "2026-05-14",
+   "former_member": "Judith Collins",
+   "note": "No by-election: vacancy arose within six months of a general election"
+  }
+ ],
  "members": [
   {
    "name": "Chlöe Swarbrick",
@@ -1001,7 +1009,7 @@
      "reason": "Left Te Pāti Māori and announced the new Te Tai Tokerau Party (registered Aug 2026); sat as an independent MP for the rest of the term"
     }
    ],
-   "notes": "Suspended by Te Pāti Māori 23 Oct 2025 and expelled 10 Nov 2025. Wikipedia's 54th Parliament changes table records her return to the party on 5 Dec 2025 (after she sought a High Court injunction, filed 4 Dec 2025); her own article says the High Court ruled the expulsion unlawful on 10 Mar 2026. Sources therefore differ on when she was formally reinstated. She left on 11 May 2026 to found the Te Tai Tokerau Party.",
+   "notes": "Suspended by Te Pāti Māori 23 Oct 2025 and expelled 10 Nov 2025. Wikipedia's 54th Parliament changes table records her return to the party on 5 Dec 2025 (after she sought a High Court injunction, filed 4 Dec 2025); her own article says the High Court ruled the expulsion unlawful on 10 Mar 2026. Sources therefore differ on when she was formally reinstated. She left on 11 May 2026 to found the Te Tai Tokerau Party (registration applied for June 2026, approved August 2026) and sat as an independent MP until dissolution; she leads that party at the 2026 election.",
    "repo_folder": "parties/te-tai-tokerau-party/people/mariameno-kapa-kingi",
    "party_now_or_end": "independent"
   },
@@ -1022,7 +1030,7 @@
      "reason": "Expelled from Te Pāti Māori"
     }
    ],
-   "notes": "Expelled from Te Pāti Māori 10 Nov 2025; independent thereafter. Announced (21 Mar 2026) he would contest Te Tai Tonga as an independent in 2026.",
+   "notes": "Expelled from Te Pāti Māori 10 Nov 2025; sat as an independent MP for the rest of the term. Announced (21 Mar 2026) he would contest Te Tai Tonga as an independent in 2026.",
    "repo_folder": "parties/independent/people/takuta-ferris",
    "party_now_or_end": "independent"
   },

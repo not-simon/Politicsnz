@@ -1,6 +1,6 @@
 ---
 wikipedia: Michael Wood (New Zealand politician)
-status: former-mp
+status: candidate-2026
 status_detail: Former MP for Mount Roskill (2016–2023) and Cabinet minister; lost the seat in 2023 and became a negotiation specialist at the E tū union. Labour's 2026 candidate for Mt Roskill (electorate-only, not on the list).
 ---
 ## Current status

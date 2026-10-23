@@ -57,3 +57,29 @@ def extract(html):
 if __name__ == "__main__":
     m, t, p, l = extract(open(sys.argv[1], encoding="utf-8", errors="replace").read())
     print(m); print(p); print(t)
+
+
+def extract_nb(html):
+    """Main content of a NationBuilder page (nzfirst.nz / maoriparty.org.nz Common Crawl capture), whitespace
+    normalised. Removes share widgets, breadcrumbs, navigation, forms and scripts. Returns (title, text, links)."""
+    s = BeautifulSoup(html, "html.parser")
+    title = _clean(s.title.get_text(" ")) if s.title else ""
+    root = s.find("main") or s.find(id="content") or s.body
+    for j in root.find_all(True):
+        if j.decomposed if hasattr(j, "decomposed") else False: continue
+        attrs = " ".join([" ".join(j.get("class", []) or []), j.get("id", "") or ""]).lower()
+        if j.name in ("script", "style", "nav", "form", "button", "noscript", "iframe", "svg", "select") or \
+           re.search(r"share|breadcrumb|social|sharing|skip-link|signup-form|donate-form|filter|pagination", attrs):
+            j.decompose()
+    links = [(_clean(a.get_text(" ")), a["href"]) for a in root.find_all("a", href=True)]
+    for br in root.find_all("br"): br.replace_with("\n")
+    for li in root.find_all("li"): li.insert(0, NavigableString("⁣- "))
+    for h in root.find_all(["h1", "h2", "h3", "h4", "h5", "h6"]): h.insert(0, NavigableString("⁣### "))
+    for b in root.find_all(BLOCKS + ["section", "article", "header", "main"]):
+        b.insert(0, NavigableString("⁢")); b.append(NavigableString("⁢"))
+    paras = []
+    for chunk in root.get_text().split("⁢"):
+        t = _clean(chunk.replace("\n", " ")).replace("⁣", "")
+        if t and t not in ("###", "-") and not (paras and paras[-1] == t):
+            paras.append(t)
+    return title, "\n\n".join(paras), links

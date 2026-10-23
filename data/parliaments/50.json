@@ -38,6 +38,14 @@
  },
  "total_start": 121,
  "total_now_or_end": 120,
+ "vacancies_at_end": [
+  {
+   "seat": "Epsom",
+   "vacated": "2014-06-08",
+   "former_member": "John Banks",
+   "note": "No by-election: vacancy arose within six months of a general election"
+  }
+ ],
  "members": [
   {
    "name": "Nikki Kaye",
@@ -1493,7 +1501,7 @@
    "left_reason": null,
    "party_changes": [],
    "notes": "",
-   "repo_folder": null,
+   "repo_folder": "parties/green/people/russel-norman",
    "list_rank": 2,
    "party_now_or_end": "green"
   },

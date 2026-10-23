@@ -157,9 +157,9 @@ def parties_2026():
 def fill(path, blocks):
     s = open(path).read()
     for k, v in blocks.items():
-        pat = re.compile(r"(<!-- GENERATED:%s START -->\n).*?(\n<!-- GENERATED:%s END -->)" % (re.escape(k), re.escape(k)), re.S)
+        pat = re.compile(r"(<!-- GENERATED:%s START -->\n).*?(<!-- GENERATED:%s END -->)" % (re.escape(k), re.escape(k)), re.S)
         if not pat.search(s): print("missing block", k, "in", path); continue
-        s = pat.sub(lambda m: m.group(1) + v.rstrip() + m.group(2), s)
+        s = pat.sub(lambda m: m.group(1) + v.rstrip() + "\n" + m.group(2), s)
     open(path, "w").write(s)
 
 if __name__ == "__main__":
