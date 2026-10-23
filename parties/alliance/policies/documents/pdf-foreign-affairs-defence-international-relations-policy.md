@@ -1,0 +1,258 @@
+---
+title: "Alliance Foreign Affairs, Defence and International Relations Policy 2026 (PDF)"
+party: alliance
+source_url: https://allianceparty.nz/wp-content/uploads/2026/10/alliance-foreign-affairs-defence-international-relations-policy-2026.pdf
+retrieved: 2026-10-23
+format: pdf
+fetch_method: curl + pdftotext -layout
+---
+
+# Alliance Foreign Affairs, Defence and International Relations Policy 2026 (PDF)
+
+> Archive note: Uploaded 2026-10-04; linked from the matching policy post. Text extracted from the party's PDF with pdftotext; bullets normalised to Markdown, page breaks shown as horizontal rules; images/graphics not reproduced.
+
+## Full text (verbatim)
+
+Alliance Party of Aotearoa New Zealand
+
+Alliance Foreign Affairs, Defence, and
+International Relations Policy
+A Sovereign, Independent, and Peaceful Aotearoa New Zealand
+The Alliance believes that Aotearoa New Zealand should be an independent,
+non-aligned, and peaceful nation, committed to international cooperation, human
+rights, self-determination, nuclear disarmament, and economic sovereignty.
+Our foreign policy should be based on our own national interests and values rather
+than the strategic interests of larger military powers or multinational corporations.
+We reject the idea that security is achieved through military alliances, overseas
+intervention, and the constant expansion of offensive military capability.
+Instead, New Zealand should use its independence to become a strong voice for
+peace, disarmament, human rights, environmental protection, and social justice,
+particularly in the Pacific and wider Asia-Pacific region.
+
+1. An Independent and Non-Aligned Country
+The Alliance will establish Aotearoa New Zealand as a genuinely non-aligned nation.
+We will not participate in military alliances or foreign military arrangements that
+compromise our independent foreign policy, or oblige us to participate in wars fought
+in the interests of other powers.
+The Alliance will:
+- withdraw from military alliances inconsistent with an independent foreign
+policy;
+- reject participation in foreign wars and military interventions;
+- ensure that decisions about the deployment of our military personnel are
+made independently;
+- strengthen the countries’ role in the United Nations and other international
+organisations;
+- promote negotiation, mediation, and peaceful resolution of international
+disputes.
+Our independence should mean more than the ability to make our own economic
+decisions. We must also have the freedom to decide for ourselves when and how
+our country participates in international affairs.
+
+1
+
+---
+
+2. Defence For Peace, Not War
+The Alliance will fundamentally restructure Aotearoa New Zealand's defence forces
+around peacekeeping, humanitarian assistance, disaster relief, and the protection of
+our territory and people.
+We do not require an offensive military capability designed to fight major overseas
+wars.
+The Alliance will therefore remove offensive war-fighting capabilities that are
+inconsistent with an independent, peace-oriented defence policy, including major
+offensive weapons systems designed primarily for overseas warfare.
+New Zealand's defence capability will instead concentrate on:
+- peacekeeping;
+- humanitarian assistance;
+- disaster response;
+- search and rescue;
+- maritime surveillance;
+- protection of New Zealand's territorial waters;
+- support for Pacific neighbours during emergencies;
+- international mediation and conflict prevention.
+Where existing civilian agencies can perform functions more appropriately, functions
+such as fisheries protection and disaster response will be civilianised and properly
+resourced.
+The purpose of defence should be to protect people and support peace, not to
+prepare to participate in other countries’ wars.
+
+3. End Foreign Military and Intelligence Facilities
+National sovereignty requires control over the facilities and infrastructure operating
+within our territory.
+The Alliance will review and, where necessary, close foreign military and intelligence
+facilities that compromise Aotearoa New Zealand's independence.
+This includes facilities associated with foreign military and intelligence operations at
+Tangimoana, Waihopai, Black Birch, and the recently established FBI office.
+The Harewood facility will be demilitarised and restricted to appropriate scientific and
+Antarctic research purposes.
+Our territory should not be used to facilitate foreign military operations or intelligence
+activities inconsistent with our independent foreign policy.
+We will withdraw Aotearoa New Zealand from the Five Eyes (FVEY) intelligence
+alliance.
+
+2
+
+---
+
+4. A Nuclear-Free Region
+Our country has a proud history of opposing nuclear weapons and nuclear testing.
+The Alliance will extend that commitment internationally.
+We will work to:
+- strengthen the South Pacific Nuclear Free Zone;
+- promote a Pacific completely free of nuclear weapons;
+- oppose nuclear weapons testing;
+- oppose nuclear weapons tracking and associated military infrastructure in
+the Pacific;
+- oppose nuclear dumping and nuclear exploration at sea;
+- promote international nuclear disarmament;
+- support global efforts to eliminate nuclear weapons.
+We will use our independent status to lead rather than follow on nuclear
+disarmament.
+Our nuclear-free policy should be a contribution to a wider international movement
+for a world free from nuclear weapons.
+
+5. Peace, Self-Determination, and Opposition to Military
+Intervention
+The Alliance opposes military intervention by powerful nations in the affairs of other
+countries.
+The right of peoples to determine their own political future must be respected.
+Aotearoa New Zealand will support peaceful self-determination and independence
+movements where they are consistent with democratic rights and international law.
+The Alliance will support a principled approach to international conflicts, including
+opposition to occupation, colonialism, and military intervention.
+Our foreign policy will consistently defend:
+- national self-determination;
+- human rights;
+- democracy;
+- freedom from foreign occupation;
+- peaceful resolution of disputes.
+Our position will not depend on whether the country involved is a friend or adversary
+of a major power. The same principles must apply to everyone.
+
+6. A Just and Independent Foreign Policy
+
+3
+
+---
+
+Aotearoa New Zealand should not remain silent when serious human rights abuses
+occur simply because powerful countries support those responsible.
+The Alliance will develop a foreign policy based on consistent principles of human
+rights and international law.
+This includes:
+- refusing political support for oppressive regimes;
+- supporting democratic and human rights movements;
+- opposing apartheid, occupation, and political repression;
+- supporting peaceful political settlements;
+- using diplomatic and economic measures where appropriate to pressure
+governments responsible for serious abuses.
+In the Middle East, we will support a just and lasting peace including the right of
+Palestinians to self-determination, with a right of return for the Palestinian diaspora.
+
+7. Development Assistance, Internationalism, and Solidarity
+As a wealthy country, Aotearoa New Zealand has a responsibility to contribute to the
+development and wellbeing of poorer nations.
+The Alliance will substantially increase our overseas development assistance,
+progressively increasing aid towards the internationally recognised target of at least
+0.7 percent of GNI.
+Development assistance will prioritise:
+- Pacific Island nations;
+- countries rebuilding following war and conflict;
+- poverty reduction;
+- health;
+- education;
+- sustainable economic development;
+- community-led development.
+A significant proportion of development assistance will be delivered through
+reputable non-government organisations and community-based organisations with
+strong connections to the people they are assisting.
+We are an internationalist party and see the interests of ordinary kiwis as directly
+linked with the interests of people across the world. We will build relationships based
+on solidarity, justice, and cooperation, and we reject the zero-sum assumptions of
+competition and imperial capital.
+Aid should empower communities rather than create dependency or simply advance
+the commercial interests of donor countries.
+
+4
+
+---
+
+8. Historical Responsibility
+Aotearoa New Zealand's international responsibilities include recognising the
+consequences of our own history.
+The Alliance recognises a particular responsibility arising from our involvement in the
+wars of Indochina.
+We will therefore support enhanced development assistance to Vietnam and
+Cambodia, recognising a moral responsibility to contribute to rebuilding and
+development following the destruction caused by those conflicts.
+Our country should be prepared to acknowledge where its own actions have
+contributed to international harm and respond through practical assistance and
+solidarity.
+
+9. Cancellation of Developing-Country Debt
+The Alliance supports the cancellation of unsustainable Global South debt.
+Developing nations should not be trapped in cycles of debt repayment that prevent
+them from providing basic services, investing in their people, or developing
+sustainable economies.
+We will advocate internationally for debt cancellation and for a fairer international
+financial system.
+Development should be based on cooperation and solidarity rather than financial
+dependency.
+
+10. A Pacific Nation
+New Zealand is a Pacific country and should conduct its foreign policy accordingly.
+The Alliance recognises that Aotearoa New Zealand is part of Polynesia and has
+deep historical, cultural, economic, and family relationships throughout the Pacific.
+Our Pacific relationships should be based on:
+- mutual respect;
+- partnership;
+- self-determination;
+- economic cooperation;
+- development assistance;
+- climate and environmental cooperation;
+- cultural connections;
+- freedom of movement and family relationships.
+The Alliance will review and reduce unnecessary barriers to migration from
+neighbouring Pacific Island countries.
+
+5
+
+---
+
+Our relationship with the Pacific should be based on partnership rather than
+paternalism.
+
+11. A New Role for New Zealand in the World
+The Alliance believes New Zealand's greatest international contribution will not come
+from the size of our military.
+It will come from the strength of our independence, diplomacy, humanitarianism,
+and commitment to peace.
+We will use our position to:
+- mediate international disputes;
+- support peace negotiations;
+- contribute to United Nations peacekeeping;
+- provide humanitarian assistance;
+- promote nuclear disarmament;
+- defend human rights;
+- support self-determination;
+- protect the Pacific;
+- defend the global environment;
+- advocate for a fairer international economic system.
+
+Our International Vision
+The Alliance will build a New Zealand that is:
+- Independent rather than aligned.
+- Peaceful rather than interventionist.
+- Nuclear-free rather than nuclear-dependent.
+- Cooperative rather than imperial.
+- Economically sovereign rather than subordinate to multinational corporations.
+- Based on internationalism rather than globalisation.
+- A Pacific nation rather than an outpost of distant military powers.
+Our security will ultimately come not from preparing to fight other people’s wars, but
+from peace, independence, strong international relationships, economic resilience,
+environmental protection, and the wellbeing of our own people and our Pacific
+neighbours.
+Aotearoa should be a small country with a big voice for peace, prosperity, and
+justice.
+
+6

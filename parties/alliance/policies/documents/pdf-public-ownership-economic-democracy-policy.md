@@ -1,0 +1,349 @@
+---
+title: "Alliance Public Ownership and Economic Democracy Policy 2026 (PDF)"
+party: alliance
+source_url: https://allianceparty.nz/wp-content/uploads/2026/10/alliance-public-ownership-economic-democracy-policy-2026.pdf
+retrieved: 2026-10-23
+format: pdf
+fetch_method: curl + pdftotext -layout
+---
+
+# Alliance Public Ownership and Economic Democracy Policy 2026 (PDF)
+
+> Archive note: Uploaded 2026-10-02; linked from the matching policy post. Text extracted from the party's PDF with pdftotext; bullets normalised to Markdown, page breaks shown as horizontal rules; images/graphics not reproduced.
+
+## Full text (verbatim)
+
+Alliance Party of Aotearoa New Zealand
+
+Alliance Public Ownership and Economic
+Democracy Policy
+Taking Control of Our Essential Infrastructure
+The Alliance believes that the essential infrastructure of a modern nation should
+serve the people who depend on it, not private shareholders seeking to maximise
+profits.
+The privatisation programme of the 1980s and 1990s transferred ownership and
+control of important New Zealand assets away from the public. It fragmented
+essential services, weakened democratic accountability, and allowed private and
+overseas interests to gain control over infrastructure fundamental to our economic
+and social wellbeing.
+The Alliance will reverse this process.
+We will protect the public assets that remain in public ownership, prevent further
+privatisation and progressively return strategically important infrastructure to public
+ownership.
+Our objective is not state ownership for its own sake. It is to ensure that essential
+services are affordable, reliable, environmentally sustainable, democratically
+accountable, and operated in the public interest.
+
+1. Public Ownership of Strategic Assets
+The Alliance will establish a clear principle that strategic national infrastructure
+should be publicly owned.
+The immediate priority will be to protect existing public assets from privatisation and
+identify assets that should be progressively returned to public ownership.
+This will include consideration of:
+- electricity generation, transmission, and distribution;
+- ports and strategic transport infrastructure;
+- water infrastructure;
+- telecommunications infrastructure;
+- other natural monopolies and essential services where private ownership
+is inconsistent with the public interest.
+The Alliance will establish a programme of reverse privatisation, progressively
+purchasing strategic assets where necessary to restore democratic public
+ownership.
+
+1
+
+---
+
+Assets sold below their underlying public value, and assets where private ownership
+has driven up the cost to consumers, will be the first priority for acquisition.
+We will retain public ownership and ensure these assets operate as genuine public
+services; with their success measured by the benefits they provide to New Zealand
+rather than simply by commercial returns.
+
+2. Stop Further Privatisation
+There will be no further sale of strategic state assets.
+The Alliance will prevent the sale, partial privatisation, or fragmentation of essential
+public infrastructure.
+We will also oppose arrangements that achieve privatisation by other means,
+including:
+- public-private partnerships where they transfer public assets or excessive
+returns to private interests;
+- contracting out essential public functions where this undermines
+accountability;
+- long-term concessions that effectively transfer public control;
+- joint ventures designed primarily to introduce private ownership into
+strategic infrastructure.
+Public ownership must mean genuine public control, not simply government
+retaining a minority share while private interests control the operation.
+
+3. Electricity: Public Ownership and Affordable Power
+Electricity is an essential service and a foundation of the modern economy.
+The Alliance will re-integrate electricity generation, transmission, distribution, and
+retail under public ownership and democratic control.
+Our objectives will be:
+- affordable electricity for households;
+- reliable supply for businesses;
+- secure national energy infrastructure;
+- investment in renewable generation;
+- improved energy efficiency;
+- reduced energy poverty;
+- long-term protection of New Zealand's energy security.
+Electricity infrastructure should not be managed primarily as a vehicle for extracting
+dividends from consumers.
+Public ownership will allow investment decisions to be based on long-term national
+need rather than short-term shareholder returns.
+
+2
+
+---
+
+4. Ports and Strategic Transport Infrastructure
+New Zealand's ports are critical national infrastructure.
+The Alliance will progressively restore public ownership of strategically important
+ports where they have been privatised or corporatised in ways that undermine public
+control.
+Ports should operate as part of an integrated national transport and economic
+development strategy.
+Public ownership will allow us to coordinate:
+- ports;
+- rail;
+- coastal shipping;
+- roads;
+- regional development.
+As a single system rather than allowing each part of the system to operate primarily
+according to separate commercial interests.
+The objective is an efficient national freight system that supports exporters, workers,
+regional economies and consumers.
+
+5. KiwiRail and Air New Zealand
+Rail is in full public ownership. Air New Zealand is majority Crown-owned.
+The Alliance will retain rail in full public ownership and will move Air New Zealand
+from majority Crown control to full public ownership.
+These assets should be operated in the national interest and integrated into wider
+economic, transport, and regional development strategies.
+Rail will play a central role in moving freight and passengers, while Air New Zealand
+will provide an essential national and international transport connection.
+Public ownership gives New Zealand the opportunity to make long-term decisions
+about these services, without the requirement to maximise returns to private
+shareholders.
+
+3
+
+---
+
+6. Water Belongs to the People
+Water is a fundamental public resource and must remain under public and
+community control.
+The Alliance will ensure that water services cannot be converted into private
+profit-making utilities.
+We will oppose:
+- privatisation;
+- commercialisation that places profit ahead of public need;
+- contracting out essential water services;
+- private control of strategic water infrastructure.
+Water services will be managed through accountable public and community
+institutions, with local communities having a meaningful role in decisions affecting
+them.
+Water is a public good, not a commodity.
+
+7. Public Telecommunications and the Digital Commons
+Modern telecommunications infrastructure is as important to New Zealand's
+economy as roads, rail, and electricity.
+The Alliance will return strategically important telecommunications infrastructure to
+public ownership.
+Particular priority will be given to infrastructure that functions as a natural
+monopoly, including the essential “last mile” connecting households and
+businesses.
+The objective will be universal access to:
+- affordable internet;
+- reliable telecommunications;
+- modern digital infrastructure;
+- high-quality services regardless of geographic location.
+No New Zealander should be excluded from full participation in society because they
+live in a rural community or cannot afford essential communications services.
+
+4
+
+---
+
+8. Public Ownership Must Be Democratic
+Public ownership alone does not guarantee public control.
+The Alliance will establish strong democratic accountability over publicly owned
+enterprises.
+Public enterprises will be required to:
+- operate transparently;
+- publish meaningful information about their operations;
+- engage with workers and their unions;
+- consult affected communities;
+- be accountable to parliament and the public;
+- pursue social and environmental as well as economic objectives.
+State-owned enterprises are already subject to the Official Information Act. We will
+extend it to publicly listed companies in which the Crown holds a controlling stake,
+which currently sit outside it, and narrow the grounds for withholding access to
+information across the entities already covered.
+Community and regional representation will be strengthened in decisions affecting
+essential services.
+
+9. Workers Should Have a Voice in Public Enterprises
+The people who work in public enterprises have an important role in ensuring those
+enterprises operate effectively.
+The Alliance will introduce stronger forms of workplace democracy, including:
+- work councils in larger enterprises;
+- worker representation on the boards of major public enterprises;
+- meaningful consultation with unions;
+- access to relevant information about the operation of public enterprises.
+Workers should not be treated simply as a cost to be minimised.
+They are participants in the operation of the enterprise and should have a genuine
+voice in its future.
+
+10. Public Ownership and the Environment
+Public ownership provides an opportunity to make long-term environmental decisions
+that private markets may not adequately recognise.
+All publicly owned infrastructure will be required to operate within strong
+environmental standards.
+Investment decisions will take account of:
+
+5
+
+---
+
+- climate change;
+- biodiversity;
+- resource conservation;
+- energy efficiency;
+- pollution;
+- long-term sustainability.
+The Alliance's economic policy will be guided by the principle that economic activity
+must operate within the ecological limits of the natural world.
+Strategic public ownership will therefore be used not only to improve affordability and
+accountability, but also to support New Zealand's transition to a sustainable
+economy.
+
+11. Public Ownership and Regional Development
+Strategic infrastructure should support every part of New Zealand, not simply the
+areas offering the highest immediate commercial return. Our new ministry of works,
+KiwiWorks, will be the vehicle for delivery of infrastructure in our country.
+Public enterprises will be required to consider regional development as part of their
+responsibilities.
+Government will coordinate investment in:
+- transport;
+- energy;
+- telecommunications;
+- water;
+- ports;
+- regional infrastructure.
+This will support employment, local businesses, and regional economic
+development.
+Economic development should ensure that the costs and benefits of development
+are shared across all regions of New Zealand.
+
+12. A Development Bank and National Development Strategy
+Public ownership should form part of a wider economic strategy.
+The Alliance will establish a Ministry of Development responsible for coordinating
+national, regional, and community development.
+The Ministry will develop a long-term New Zealand Development Strategy focused
+on:
+- full employment;
+- productive investment;
+
+6
+
+---
+
+- regional development;
+- technological development;
+- infrastructure;
+- environmental sustainability;
+- economic resilience.
+A publicly owned Development Bank will provide concessional finance and venture
+capital for productive investment, including cooperatives, young farmers, and
+small-scale, appropriate technology projects.
+This will ensure public ownership is complemented by public investment in the
+productive economy.
+
+13. Economic Democracy Rather Than Market Dominance
+The Alliance believes the market should be a tool of economic policy, not the
+master of it.
+Where markets operate effectively and competitively, they can have a role.
+But essential services and natural monopolies are different.
+Where the public depends upon an infrastructure network for basic needs ­–
+electricity, water, transport or communications ­– the overriding consideration must be
+public benefit.
+The Alliance will therefore reject the idea that everything should be bought, sold, and
+managed according to commercial returns.
+Economic policy should instead pursue:
+- full employment;
+- social wellbeing;
+- regional development;
+- environmental sustainability;
+- democratic ownership.
+
+14. A Fair Approach to Restoring Public Ownership
+Returning assets to public ownership will require significant investment.
+The Alliance will therefore develop a long-term public ownership programme,
+prioritising assets according to:
+- their strategic importance;
+- their role as natural monopolies;
+- their importance to essential services;
+- the extent of private market failure;
+- the cost to consumers;
+
+7
+
+---
+
+- their importance to national security and resilience;
+- their environmental significance;
+- the feasibility and cost of acquisition.
+Public ownership will be pursued progressively and responsibly rather than through
+an arbitrary programme of acquisitions.
+Where appropriate, the Crown will purchase assets at fair value, use existing public
+investment vehicles, or establish new public entities to bring infrastructure under
+public control.
+
+15. Economic Resilience and the Protection of Critical Industries
+The Alliance will develop a process by which the government identifies industries
+and firms considered critical for reasons of national security, economic resilience,
+local employment, and environmental stewardship.
+In order to retain economic sovereignty, the government will have the ability to enact
+a “first right of refusal” on the sale or liquidation of identified firms for the reasons
+mentioned above, depending on fiscal viability. From there, the government may
+facilitate transition to workers’ cooperatives or operate those businesses as a public
+enterprise.
+International markets operate in cycles of boom and bust, but as a small and
+relatively isolated island nation, maintaining our strategic manufacturing and
+industrial base at a level that can serve the domestic market in times of uncertainty is
+critical.
+
+Our Vision
+The Alliance believes that the wealth and infrastructure of New Zealand should
+work for New Zealanders.
+We will protect the public ownership we have retained, including rail and the Crown's
+majority holding in Air New Zealand, and progressively restore public ownership of
+other strategic assets that were sold.
+We will return to public ownership of:
+- electricity generation and distribution;
+- ports;
+- water and telecommunications infrastructure.
+We will build a system in which public enterprises are not simply government-owned
+corporations operating according to private-sector principles, but democratically
+accountable public institutions with social, economic, and environmental
+responsibilities.
+The Alliance's vision is an economy in which:
+
+8
+
+---
+
+- essential services are publicly owned;
+- strategic infrastructure is democratically controlled;
+- workers have a voice;
+- communities have a say;
+- profits do not determine access to basic necessities;
+- investment serves long-term national interests;
+- and economic development operates within environmental limits.
+Public ownership is not an end in itself. It is the means by which New Zealanders
+can regain democratic control over the infrastructure on which our collective future
+depends.
+
+9

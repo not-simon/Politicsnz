@@ -68,6 +68,10 @@ def animal_justice():
                           selectors=("#brx-content", "main")))
     for sl, ti in [("policy-framework", "Policy Framework"), ("what-shapes-our-policy", "What Shapes Our Policy")]:
         items.append(page_doc(P, sl, f"{base}/policy/{sl}/", ti, selectors=("#brx-content", "main")))
+    for fn, ti in [("AJP-2026-Policy-platform-election-2026.pdf", "AJP 2026 Policy Platform — Election 2026 (PDF)"),
+                   ("AJP-2026-policy-platform-summary.pdf", "AJP 2026 Policy Platform Summary (PDF)")]:
+        items.append(pdf_doc(P, "pdf-" + slugify(fn[:-4]), base + "/wp-content/uploads/2026/09/" + fn, ti,
+                             note="Uploaded 2026-09-15 to the party's media library."))
     pols = wp_json(base, "policies?per_page=100", P)
     try:
         cats = {c["id"]: html.unescape(c["name"]) for c in wp_json(base, "policy-category?per_page=100", P)}
@@ -134,6 +138,13 @@ def alliance():
         rel = L.write_doc(P, "post-" + p["date"][:10] + "-" + slugify(sl, 50), title, p["link"], md,
                           method="WordPress REST API (content.rendered)", extra={"published": p["date"], "modified": p["modified"]})
         items.append({"url": p["link"], "doc": rel, "title": title, "date": p["date"][:10]})
+    # full policy PDFs ("Read the full policy" / "Download the policy documents" links), via the media library
+    for m in wp_json(base, "media?per_page=100&mime_type=application/pdf", P):
+        u = m["source_url"]
+        if re.search(r"alliance-.*(policy|costings).*\.pdf$", u):
+            sl = "pdf-" + slugify(u.rsplit("/", 1)[-1][:-4].replace("alliance-", "").replace("-2026", ""), 60)
+            items.append(pdf_doc(P, sl, u, html.unescape(m["title"]["rendered"]) + " (PDF)",
+                                 note=f"Uploaded {m['date'][:10]}; linked from the matching policy post."))
     save_index(P, items)
 
 

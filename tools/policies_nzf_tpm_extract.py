@@ -69,7 +69,7 @@ def extract_nb(html):
         if j.decomposed if hasattr(j, "decomposed") else False: continue
         attrs = " ".join([" ".join(j.get("class", []) or []), j.get("id", "") or ""]).lower()
         if j.name in ("script", "style", "nav", "form", "button", "noscript", "iframe", "svg", "select") or \
-           re.search(r"share|breadcrumb|social|sharing|skip-link|signup-form|donate-form|filter|pagination", attrs):
+           re.search(r"share|breadcrumb|social|sharing|skip-link|signup-form|donate-form|pagination", attrs):
             j.decompose()
     links = [(_clean(a.get_text(" ")), a["href"]) for a in root.find_all("a", href=True)]
     for br in root.find_all("br"): br.replace_with("\n")
