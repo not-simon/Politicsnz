@@ -290,7 +290,7 @@ footer { color: var(--muted); font-size: 13px; padding-block: 24px 40px; border-
   dialog[open] { animation: pop .25s cubic-bezier(.2,.7,.2,1) both } dialog::backdrop { animation: fadeIn .25s both } @keyframes fadeIn { from { opacity: 0 } }
   .tabs button { transition: color .15s, border-color .15s }
   .stat b { animation: fadeUp .5s both }
-  .pop { animation: pop .5s both }
+  .pop { animation: pop .3s both }
   @keyframes pop { from { transform: scale(.4); opacity: 0 } to { transform: scale(1); opacity: 1 } }
 }
 </style>
@@ -379,7 +379,7 @@ function chamberSVG(seatList, { highlight = null, label = 'Seats', animate = fal
   const n = seatList.length; if (!n) return '<p class="empty">No seat data yet.</p>';
   const { pts, dot } = hemicycle(n), R = 185, cx = 200, cy = 200;
   const c = pts.map((p, i) => { const s = seatList[i]; const dim = highlight && !highlight.has(s.party) ? ' dim' : '';
-    return `<circle class="seat${dim}${animate ? ' pop' : ''}" style="${animate ? `animation-delay:${(i * 6)}ms;transform-origin:${(cx + p.x * R).toFixed(1)}px ${(cy - p.y * R).toFixed(1)}px` : ''}" tabindex="0" data-i="${i}" cx="${(cx + p.x * R).toFixed(1)}" cy="${(cy - p.y * R).toFixed(1)}" r="${(dot * R).toFixed(2)}" fill="${pcolor(s.party)}"><title>${esc(s.name || pname(s.party))}</title></circle>` }).join('');
+    return `<circle class="seat${dim}${animate ? ' pop' : ''}" style="${animate ? `animation-delay:${Math.min(400, i * 2.5)}ms;transform-origin:${(cx + p.x * R).toFixed(1)}px ${(cy - p.y * R).toFixed(1)}px` : ''}" tabindex="0" data-i="${i}" cx="${(cx + p.x * R).toFixed(1)}" cy="${(cy - p.y * R).toFixed(1)}" r="${(dot * R).toFixed(2)}" fill="${pcolor(s.party)}"><title>${esc(s.name || pname(s.party))}</title></circle>` }).join('');
   const maj = Math.floor(n / 2) + 1;
   return `<svg viewBox="0 0 400 ${caption ? 216 : 204}" role="img" aria-label="${esc(label)}">${c}${caption ? `<text x="200" y="194" text-anchor="middle" style="font:800 34px var(--f-display);fill:var(--ink)">${n}</text><text x="200" y="212" text-anchor="middle" style="font:600 11px var(--f-ui);fill:var(--muted)">seats · ${maj} to govern</text>` : ''}</svg>` }
 function chamberUpdate(container, seatList, opts = {}) { // animate fills in place when the seat count is unchanged
@@ -1084,7 +1084,8 @@ function scoreOf(L) { const c = v => L.filter(x => x.status === v).length; const
 function verdictMeter(L, h = 14) { const n = L.length || 1; return `<div class="meter" style="height:${h}px">${VERDICTS.map(v => `<span class="v-${v}" style="width:${L.filter(x => x.status === v).length / n * 100}%"></span>`).join('')}</div>` }
 function byTermTable(parties, pr) { return `<div class="scroll"><table><thead><tr><th>Party</th>${TERMS.map(([, l]) => `<th>${l}</th>`).join('')}</tr></thead><tbody>${parties.map(p => `<tr><td><span class="row" style="gap:6px;flex-wrap:nowrap"><span class="dot" style="background:${pcolor(p)}"></span><b>${esc(pname(p))}</b></span></td>${TERMS.map(([k]) => { const L = (pr[p] || []).filter(x => periodOf(x) === k); if (!L.length) return '<td class="muted tiny">–</td>'; const sc = scoreOf(L); return `<td style="min-width:130px">${verdictMeter(L, 10)}<div class="tiny muted" style="margin-top:3px">${sc.n} checked${sc.score != null ? ` · <b>${sc.score}%</b> kept` : ' · not yet due'}</div></td>` }).join('')}</tr>`).join('')}</tbody></table></div>
   <p class="tiny muted">"% kept" counts a partly kept promise as half and leaves out promises still in progress or not yet due. Terms are when the promise was made: 2008–17 covers the National-led years, 2017–23 the Labour-led years, 2023–26 the current term.</p>` }
-V.promises = () => { const pr = S.data.promises || {}; const parties = Object.keys(pr).filter(p => (pr[p] || []).length).sort((a, b) => P(a).order - P(b).order);
+const MAIN7 = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'];
+V.promises = () => { const pr = S.data.promises || {}; const parties = Object.keys(pr).filter(p => (pr[p] || []).length).sort((a, b) => (MAIN7.includes(a) ? 0 : 1) - (MAIN7.includes(b) ? 0 : 1) || P(a).order - P(b).order);
   $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Keeping their word</div><h2>Promises against delivery</h2><p class="lede">Promises from past campaigns and coalition deals, each checked against what happened, with sources. Choose a period: the whole record, the last two governments, or just the current term.</p></div>
     ${periodBar('prper')}<div class="card scroll anim" id="prtable"></div><div id="pl"></div></section>`;
   const drawTable = () => { const per = S.promPeriod || 'all'; const t = $('#prtable');
