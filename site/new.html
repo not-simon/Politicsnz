@@ -1566,7 +1566,7 @@ function buildLinker() { if (S.linker !== undefined) return S.linker; const name
   names.sort((a, b) => b[0].length - a[0].length); const map = Object.fromEntries(names);
   const re = new RegExp('(?<![\\w-])(' + names.map(([n]) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')(?![\\w-])', 'g');
   S.linker = names.length ? { re, map } : null; return S.linker }
-function autolink(root) { const L = buildLinker(); if (!L || !root) return; const skip = 'A, BUTTON, H1, H2, H3, H4, .nm, .st, .who, .pcard, .person, .seatcard, .match, .scard, .legend, .tabs, .statement, .scard__s, .potd__s, .release__t, .ptag, .phead, .brand, select, input, code, pre';
+function autolink(root) { const L = buildLinker(); if (!L || !root) return; const skip = 'A, BUTTON, H1, H2, H3, H4, .nm, .st, .who, .pcard, .person, .seatcard, .match, .scard, .legend, .tabs, .statement, .scard__s, .potd__s, .release__t, .ptag, .phead, .brand, .src, .release__m, .person__meta, select, input, code, pre';
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: n => (n.nodeValue.trim().length > 3 && !n.parentElement.closest(skip)) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
   const nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
   for (const n of nodes) { L.re.lastIndex = 0; if (!L.re.test(n.nodeValue)) continue; const frag = document.createDocumentFragment(); let last = 0; L.re.lastIndex = 0; let m;
