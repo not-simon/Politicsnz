@@ -73,7 +73,9 @@ for s in parties:
     if pols: policies[s] = pols
     docs = {}
     for f in sorted((d / 'documents').glob('*.md')) if (d / 'documents').exists() else []:
-        fm, body = frontmatter(f.read_text(errors='replace'))
+        raw = f.read_text(errors='replace')
+        if '\ufffd' in raw: raise SystemExit(f'{f}: contains U+FFFD (undecoded PDF glyph) at {raw.find(chr(0xfffd))} - fix the source text')
+        fm, body = frontmatter(raw)
         docs['documents/' + f.name] = {'title': fm.get('title', f.stem), 'source_url': fm.get('source_url', ''),
                                        'retrieved': fm.get('retrieved', ''), 'text': body}
     if docs: (OUT / 'fulltext' / f'{s}.json').write_text(json.dumps(docs, ensure_ascii=False))

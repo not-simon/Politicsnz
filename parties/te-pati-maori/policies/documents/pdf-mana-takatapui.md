@@ -191,7 +191,7 @@ sex characteristics
 • Name and respond to the specific needs
 of Takatāpui rangatahi currently in Oranga
 Tamariki care and youth justice settings
-• Name and respond to the speci�c needs of
+• Name and respond to the specific needs of
 Takatāpui whaikaha/whānau hauā currently
 experiencing residential care.
 3. Grow Takatāpui Cultural Leadership
