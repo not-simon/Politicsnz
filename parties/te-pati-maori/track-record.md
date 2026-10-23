@@ -75,11 +75,10 @@ said any future deal with National would have to be "a big deal".
   Palestinian self-determination motion (2021).
 
 ### 2023–2026: opposition (6 MPs, then 4)
-- **Votes:** consistently opposed the coalition on the Treaty Principles Bill, Te Aka Whai Ora's abolition, Māori
-  wards referendums, the Oranga Tamariki s7AA repeal, the takutai moana amendment, the Clean Car Discount repeal and
-  the Electoral Amendment Act 2025.
-- **Protest:** the Treaty Principles haka (November 2024) led to the longest privileges suspensions on record (7 and 21
-  days, imposed 5 June 2025). The party boycotted the hearing.
+- **Votes:** consistently opposed the coalition on the Treaty Principles Bill, Māori wards referendums, the
+  takutai moana amendment, the Clean Car Discount repeal, three strikes and the Electoral Amendment Act 2025.
+- **Protest:** the Treaty Principles haka (November 2024) led to the harshest privileges punishment on record (suspensions
+  of 7 and 21 days, imposed 5 June 2025). The party boycotted the hearing.
 - **Electoral success:** held Tāmaki Makaurau at the 2025 by-election by a big margin (6,948 to 3,429).
 - **Breakdown:** the expulsions of Kapa-Kingi and Ferris (November 2025). The High Court ruled the expulsion of
   Kapa-Kingi **unlawful** under the party's own rules (March 2026). Two electorate organisations walked out.
@@ -152,5 +151,6 @@ Full URLs are in [`data/promises/te-pati-maori.json`](../../data/promises/te-pat
 - Palestine motion (2021): https://www.rnz.co.nz/news/political/442887/green-party-motion-to-call-for-recognition-of-palestine-s-right-to-self-determination
 - Clean Car Discount repeal vote: https://www.stuff.co.nz/national/politics/301027372/government-repeals-clean-car-discount
 - Māori wards vote: https://www.rnz.co.nz/news/te-manu-korihi/523622/maori-wards-bill-passes-third-reading
+- Three strikes vote: https://en.wikipedia.org/wiki/Sixth_National_Government_of_New_Zealand
 - Electoral Amendment Act 2025 vote: https://www.rnz.co.nz/news/political/582069/electoral-amendment-bill-passes-its-third-reading-in-parliament
 - Flavell criticism of the expulsions: https://www.rnz.co.nz/news/political/578450/te-pati-maori-mps-expulsions-questioned-by-law-expert-former-co-leader · Harawira: https://www.rnz.co.nz/news/te-manu-korihi/579326/former-mp-hone-harawira-weighs-in-on-te-pati-maori-turmoil

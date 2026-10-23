@@ -1,16 +1,46 @@
 ---
-title: "opportunity.org.nz: /charitable_giving_tax_credit_cap"
+title: "Charitable Giving Tax Credit Cap - Opportunity Party"
 party: opportunity
 source_url: https://www.opportunity.org.nz/charitable_giving_tax_credit_cap
 retrieved: 2026-10-23
 format: html
-fetch_method: curl and headless Chromium both blocked
+fetch_method: Common Crawl WARC capture (tools/policies_minor_cc.py); live site Cloudflare-blocked
+captured: "2026-07-14"
+cc_timestamp: "20260714215514"
+cc_warc: "crawl-data/CC-MAIN-2026-30/segments/1783663951725.21/warc/CC-MAIN-20260714212152-20260715002152-00812.warc.gz"
 ---
 
-# opportunity.org.nz: /charitable_giving_tax_credit_cap
+# Charitable Giving Tax Credit Cap - Opportunity Party
 
-> Archive note: www.opportunity.org.nz returns HTTP 403 (Cloudflare 'Just a moment...' bot challenge) to curl and to headless Chromium (tools/fetch_page.js) as of 2026-10-23, and web.archive.org (where policy.nz archived this page) is not reachable from this environment (connection reset). The page's text is therefore NOT reproduced here. Where the same policy is published as a PDF on cdn.opportunity.org.nz or as a press release on scoop.co.nz, see the linked documents. policy.nz's own summary of what this page says is recorded in ../policies.json (summary_source: policy.nz).
+> Archive note: Text of www.opportunity.org.nz/charitable_giving_tax_credit_cap as captured by Common Crawl on 2026-07-14 (20260714215514, CC-MAIN-2026-30). The live page may have changed since.
 
-## Full text
+## Full text (verbatim)
 
-**Not retrievable.** The full text could not be captured; see the archive note above. Nothing in this file is a paraphrase of the original.
+## Charitable giving tax credit cap
+
+---
+
+### Key Details
+
+- If elected, Opportunity will repeal the cap on donations eligible for the 33% donation tax credit.
+- New Zealand's charitable sector has real regulatory problems. Opportunity would instruct the Law Commission to undertake a comprehensive, independent review of charitable regulation in New Zealand.
+
+Budget 2026 introduced a $100,000 annual cap on donations eligible for the 33% donation tax credit — a credit that was previously unlimited (up to the level of a donor's taxable income). The Government's decision to introduce this cap is a blunt instrument that will harm revenue for the charity sector. The real problems in charitable regulation deserve a proper, comprehensive response, not a rushed tax tweak.
+
+### The Cap Puts Critical Social Services at Risk
+
+Many New Zealand charities deliver critical services upon which individuals and communities depend, including food banks, support for people sleeping rough, health services and research, environmental resilience and more. Potentially limiting individual donations to $100,000/year could put these services at risk, ultimately harming some of the most vulnerable members of our communities. Without a clear plan for how the Government proposes to fill that gap, this cap is reckless and will ultimately cost the taxpayer more in the form of increased demand for publicly funded services. 
+
+### The Cap Gets the Balance Wrong
+
+The Government projects this will save just $51.8 million over three years, at an administration cost of $1.5 million. Officials have acknowledged that the change is likely to reduce very high-value donations to arts, culture, and other charities that depend on major gifts.
+
+There are genuine integrity issues in charitable giving. In particular, situations where donors give to charities they control and benefit from tax credits on funds that effectively remain at their disposal. But the cap is not a targeted solution to that problem. It applies regardless of whether a donation is arm's-length or donor-controlled, and will inevitably reduce giving by New Zealand's most generous donors. The biggest donors give the biggest amounts. A chilling effect on major philanthropists will have an outsized impact on the organisations they support and the good work they do in the community.
+
+The Government has chosen the cheapest and easiest path, not the right one.
+
+### Real Reform Is Needed
+
+New Zealand's charitable sector has real regulatory problems. The country lacks a clear and modern legal framework defining what constitutes a charity, what public benefit a charity must provide to justify tax concessions, and what governance standards are required . There are legitimate concerns about donor-controlled charities, related-party transactions, excessive executive remuneration, and the indefinite accumulation of tax-advantaged assets without meaningful charitable distribution.
+
+These are serious issues that require serious solutions. Opportunity would refer this matter to the Law Commission to undertake a comprehensive, independent review of charitable regulation in New Zealand. Such a review should establish clear statutory definitions of charitable status and public benefit, strengthen rules on donor control, related-party transactions, and remuneration transparency and introduce minimum charitable distribution requirements to ensure that tax-advantaged assets are actively delivering public benefit rather than sitting idle.

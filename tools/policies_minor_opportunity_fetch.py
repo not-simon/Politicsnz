@@ -1,7 +1,8 @@
 """Opportunity (TOP): build parties/opportunity/policies/documents/ from
  - policy PDFs on cdn.opportunity.org.nz (reachable; www.opportunity.org.nz is Cloudflare-blocked),
  - TOP press releases mirrored on scoop.co.nz,
- - explicit "not retrievable" stubs for every www.opportunity.org.nz page cited by policy.nz.
+ - www.opportunity.org.nz pages recovered from Common Crawl WARC captures (tools/policies_minor_cc.py; the live
+   site is Cloudflare-blocked), and explicit "not retrievable" stubs for cited pages with no Common Crawl capture.
 Run: python3 -I tools/policies_minor_opportunity_fetch.py
 """
 import json, os, re, sys
@@ -21,7 +22,13 @@ PDFS = [  # (doc slug, title, file name on CDN)
     ("pdf-breakthrough-economy", "Breakthrough Economy (policy overview)", "breakthrough-economy-policy-overview.pdf"),
     ("pdf-citizens-voice", "Citizens' Voice (policy document)", "citizens-voice-policy.pdf"),
     ("pdf-healthy-oceans", "Healthy Oceans (policy document)", "oceans-policy.pdf"),
+    ("pdf-abundant-energy-paper", "Abundant Energy - Opportunity Party Policy (policy paper)", "Abundant Energy - Opportunity Party Policy.pdf"),
+    ("pdf-future-fit-education", "Future-Fit Education Policy Paper", "Future-Fit Education Policy Paper.pdf"),
+    ("pdf-honouring-te-tiriti", "Honouring Te Tiriti Policy Paper", "Honouring Te Tiriti Policy Paper.pdf"),
+    ("pdf-digital-future", "Digital Future (policy document)", "Opportunity Policy - Digital Future.pdf"),
+    ("pdf-tax-reset-transition-plan", "Tax Reset Transition Plan (policy document)", "Opportunity Policy - Tax Reset Transition Plan.pdf"),
 ]
+CC_SKIP = {"statements"}  # index page only
 SCOOP = [  # (doc slug, url)
     ("release-2026-02-state-of-the-nation", "https://www.scoop.co.nz/stories/PO2602/S00118/we-are-the-next-generation-of-leaders-says-qiulae-wong.htm"),
     ("release-2026-04-healthy-oceans-dunedin", "https://www.scoop.co.nz/stories/PO2604/S00041/opportunity-party-candidate-david-bainbridge-zafar-champions-healthy-oceans-policy-for-dunedin.htm"),
@@ -77,10 +84,30 @@ def main():
             orig = re.sub(r"^/web/\d+/", "", orig)
             if "www.opportunity.org.nz" in orig or orig.startswith("https://opportunity.org.nz"):
                 pages.add(orig.rstrip("/"))
+    ccdir = os.path.join(L.raw_dir(P), "cc-html")
+    ccidx = json.load(open(os.path.join(ccdir, "index.json"))) if os.path.exists(os.path.join(ccdir, "index.json")) else {}
+    for path, meta in ccidx.items():
+        if path in CC_SKIP or meta["file"].endswith(".pdf"):
+            continue
+        orig = "https://www.opportunity.org.nz/" + path
+        pages.add(orig)
     for orig in sorted(pages):
         slug = site_stub_slug(orig)
-        L.write_doc(P, slug, "opportunity.org.nz: /" + orig.split("opportunity.org.nz/")[-1], orig, None,
-                    method="curl and headless Chromium both blocked", note=BLOCK_NOTE)
+        path = orig.split("opportunity.org.nz/")[-1].strip("/")
+        meta = ccidx.get(path)
+        if meta:
+            t, md = L.main_md(os.path.join(ccdir, meta["file"]), selectors=("main", "#content", "body"))
+            ts = meta["timestamp"]
+            cap = f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}"
+            L.write_doc(P, slug, t.replace(" - The Opportunity Party", "").strip() or path, orig, md,
+                        method="Common Crawl WARC capture (tools/policies_minor_cc.py); live site Cloudflare-blocked",
+                        note=f"Text of www.opportunity.org.nz/{path} as captured by Common Crawl on {cap} "
+                             f"({meta['timestamp']}, {meta['warc'].split('/')[1]}). The live page may have changed since.",
+                        extra={"captured": cap, "cc_timestamp": meta["timestamp"], "cc_warc": meta["warc"]})
+        else:
+            L.write_doc(P, slug, "opportunity.org.nz: /" + path, orig, None,
+                        method="curl, headless Chromium and Common Crawl all failed", note=BLOCK_NOTE +
+                        " No Common Crawl capture (CC-MAIN-2026-30/34/39/43) with HTTP 200 exists for this URL.")
         index[orig] = "documents/" + slug + ".md"
     json.dump(index, open(os.path.join(L.raw_dir(P), "doc-index.json"), "w"), indent=1)
     print(len(index), "documents")

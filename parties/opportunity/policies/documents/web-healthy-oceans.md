@@ -1,16 +1,124 @@
 ---
-title: "opportunity.org.nz: /healthy-oceans"
+title: "Oceans"
 party: opportunity
 source_url: https://www.opportunity.org.nz/healthy-oceans
 retrieved: 2026-10-23
 format: html
-fetch_method: curl and headless Chromium both blocked
+fetch_method: Common Crawl WARC capture (tools/policies_minor_cc.py); live site Cloudflare-blocked
+captured: "2026-08-12"
+cc_timestamp: "20260812062135"
+cc_warc: "crawl-data/CC-MAIN-2026-34/segments/1786091385452.6/warc/CC-MAIN-20260812044543-20260812074543-00772.warc.gz"
 ---
 
-# opportunity.org.nz: /healthy-oceans
+# Oceans
 
-> Archive note: www.opportunity.org.nz returns HTTP 403 (Cloudflare 'Just a moment...' bot challenge) to curl and to headless Chromium (tools/fetch_page.js) as of 2026-10-23, and web.archive.org (where policy.nz archived this page) is not reachable from this environment (connection reset). The page's text is therefore NOT reproduced here. Where the same policy is published as a PDF on cdn.opportunity.org.nz or as a press release on scoop.co.nz, see the linked documents. policy.nz's own summary of what this page says is recorded in ../policies.json (summary_source: policy.nz).
+> Archive note: Text of www.opportunity.org.nz/healthy-oceans as captured by Common Crawl on 2026-08-12 (20260812062135, CC-MAIN-2026-34). The live page may have changed since.
 
-## Full text
+## Full text (verbatim)
 
-**Not retrievable.** The full text could not be captured; see the archive note above. Nothing in this file is a paraphrase of the original.
+# Healthy Oceans
+
+The ocean defines us as Kiwis. It's time to restore our precious marine ecosystems and grow a sustainable blue economy.
+
+### Ripping up our seabeds to sell a few more boxes of fish fingers is not a strategy for prosperity.
+
+Our seas are hitting their ecological and economic limits. Many of our fish species are collapsing under a non-functional quota management system and we protect just 0.5% of our ocean territory as marine reserve.
+
+For the next generation of Kiwis to fish, swim and earn a living from the sea, we need to end destructive practices like bottom trawling and transform the blue economy.
+
+Healthy Oceans is a generational investment that puts biodiversity at the heart of marine policy. It's about transforming fisheries management for genuine sustainability, expanding marine and coastal protection, investing in the blue economy and governing our seas for the long-haul — all in a way that honours our obligations to nature and Te Tiriti o Waitangi.
+
+## What will Healthy Oceans deliver?
+
+- The return of abundant fish stocks for commercial, recreational and customary fishers.
+- 30% of our ocean territory protected as marine reserve by 2035.
+- 10,000+ hectares of restored coastal habitat.
+- $500 million per year in additional blue economy revenue, using sustainable practices.
+- 100% transparency and accountability for commercial fishing operations.
+
+## How will Healthy Oceans work?
+
+To deliver on its goals and pass on thriving seas to the next generation, Healthy Oceans will:
+
+- **Transform fisheries management** by shifting from single-species quotas to ecosystem-based approaches, raising the baseline measure for sustainable fish stocks, installing cameras on commercial fishing boats and phasing out bottom trawling.
+- **Expand marine protection areas** by reforming the marine reserves act, partnering with coastal communities, increasing funding for targeted species conservation, supporting migratory corridor protected areas in the Pacific and opposing all seabed mining.
+- **Invest in the blue economy** by expanding sustainable aquaculture, tourism and marine biotechnology, restoring coastlines as a nature-based climate solution, supporting iwi and hapū led initiatives and adding value to exports.
+- **Establish integrated ocean governance** by reinstating an Ocean's Secretariat, investing in open-access marine research and developing a community-level oceans plan.
+
+### Read our full policy paper
+
+[Download the full policy paper](https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf)
+
+## Frequently Asked Questions
+
+How much will Healthy Oceans cost?
+
+This policy includes both operational expenditure and strategic investments that will be largely cost-neutral or positive to the Crown in the long term. Some costs will be able to be cost-recovered from the commercial fishing industry.
+
+In the short term we estimate an overall annual cost to government of no more than $100 million. Larger items within this total include funding for coastal ecosystem restoration, marine research and blue economy development initiatives.
+
+ How will this affect recreational fishers?
+
+Recreational fishing will improve significantly under these reforms. By raising sustainability baselines from 40% to 50% of virgin biomass, phasing out destructive bottom trawling, and protecting critical habitats, we will restore fish abundance throughout New Zealand waters.
+
+Marine protected areas, while restricting fishing in specific locations, create "spillover effects" where increased fish populations inside reserves seed adjacent areas with more and larger fish. International evidence consistently shows that well-designed marine protection benefits recreational fishing.
+
+The transition away from bottom trawling will particularly benefit recreational fishers by protecting seafloor habitats that juvenile fish depend on, leading to better catch rates across popular recreational species.
+
+ How will this affect commercial fishing operators?
+
+The reforms are designed to ensure long-term viability of commercial fishing by maintaining healthy ecosystems and abundant fish stocks. Research shows we can protect 86% of threatened species with just a 14% reduction in the current fishing catch. The commercial fishing sector as a whole will benefit from:
+
+More abundant and stable fish stocks due to higher sustainability baselines
+
+Enhanced international reputation and market access from world-leading sustainability standards
+
+Reduced risk of ecosystem collapse that would trigger much more severe restrictions
+
+Support for value-added processing that increases revenue per tonne of catch
+
+Three companies currently control 60% of fishing quota, meaning much of any short-term adjustment will fall on large, well-resourced corporations rather than small operators.
+
+ What about iwi interests in commercial fishing?
+
+Māori have a significant interest in commercial fishing and are therefore likely to be significantly affected by our reforms. Opportunity fully supports maintaining the integrity of the Māori Fisheries Settlement through a transition in our fishing practices. But that does not mean the transition does not need to happen; including to ensure the sustained operation of commercial fisheries themselves.
+
+We have proposed a range of measures to support the transition that are likely to directly benefit hapū and iwi, including community-based planning, direct support for more sustainable blue economy activities and coastal regeneration initiatives.
+
+ What about Māori customary fishing rights?
+
+All reforms will be implemented in a manner fully respecting Māori fishing rights established under the Treaty of Waitangi (Fisheries Claims) Settlement Act 1992 and related agreements. This includes protecting customary fishing rights (and in fact benefiting them from increased fish abundance).
+
+Māori will also be full partners in marine protection planning processes. Many iwi and hapū are already leading innovative marine management that exceeds government standards. These reforms will support and learn from that leadership rather than override it.
+
+ What about jobs in fishing communities?
+
+This policy will create more jobs in coastal communities, not fewer. While some employment will shift from destructive practices toward sustainable alternatives, total marine sector employment will grow through:
+
+Expanded sustainable aquaculture creating new high-value jobs
+
+Coastal restoration programmes employing local workers
+
+Value-added seafood processing replacing commodity exports
+
+Marine research and monitoring generating skilled positions
+
+Ocean-based tourism benefiting from healthier marine environments
+
+Blue economy innovation in marine biotechnology and related sectors
+
+Transition support for workers affected by bottom trawling phase-outs will ensure nobody is left behind, with retraining and alternative employment assistance for those who need it.
+
+ How does this relate to climate change?
+
+Healthy oceans are critical in the fight against climate change. This policy supports climate action through:
+
+**Blue carbon sequestration** — restored coastal wetlands, mangroves, and seagrass meadows sequester carbon at rates exceeding terrestrial forests
+
+**Reduced emissions** — phasing out bottom trawling eliminates carbon dioxide release from disturbed seabed sediments
+
+**Climate resilience** — healthy ecosystems are more resilient to marine heatwaves, ocean acidification, and other climate impacts.
+
+### Check out more policies
+
+[Clean Up Politics](/clean_up_politics) [Honouring Te Tiriti](/honouring_te_tiriti) [Tax Reset](/tax-reset) [Healthy Land](/healthy_land)
