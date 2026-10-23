@@ -1,0 +1,249 @@
+---
+title: "Housing — Te Pāti Māori Policy Manifesto 2026"
+party: "te-pati-maori"
+source_url: "https://drive.google.com/file/d/1T8WiwxG9nIDnDEjyVujLZKvoNWp7i0Oh/view"
+retrieved: "2026-10-23"
+format: "pdf"
+fetch_method: "curl download; text extracted with `pdftotext -raw` (tools/policies_nzf_tpm_pdftext.py)"
+local_copy: "raw/party-docs/te-pati-maori/drive/1T8WiwxG9nIDnDEjyVujLZKvoNWp7i0Oh.pdf"
+note: "Te Pāti Māori Policy Manifesto 2026 chapter, Google Drive file linked ('Click here' / full policy) from the party's policy page maoriparty.org.nz/housing (PDF created 5 Oct 2026)."
+---
+
+# Housing — Te Pāti Māori Policy Manifesto 2026
+
+Source: [https://drive.google.com/file/d/1T8WiwxG9nIDnDEjyVujLZKvoNWp7i0Oh/view](https://drive.google.com/file/d/1T8WiwxG9nIDnDEjyVujLZKvoNWp7i0Oh/view). Te Pāti Māori Policy Manifesto 2026 chapter, Google Drive file linked ('Click here' / full policy) from the party's policy page maoriparty.org.nz/housing (PDF created 5 Oct 2026).
+
+> Extraction notes: text is reproduced in the PDF's content-stream order, page by page. Only whitespace and glyph markup were normalised (bullet glyphs shown as •, decorative icons removed). Designed layouts mean page headers, side labels and table cells can appear out of visual order; consult the PDF for layout. No words were added, removed or reworded.
+
+## Full text
+
+### Page 1
+
+```text
+Te Pāti Māori Policy Manifesto 2026
+19
+H
+O
+U
+S
+I
+N
+G
+Housing
+Everyone has the right to a consistent, warm,
+dry, and secure home in Aotearoa. All tamariki
+deserve to grow up in housing that supports
+their health, learning, and wellbeing.
+For Māori, housing is inseparable from
+whakapapa. Whare, whenua, and whānau
+exist in relationship with each other. When
+housing fails, it fractures whānau stability,
+disrupts education, undermines hauora, and
+weakens intergenerational wellbeing.
+Te Pāti Māori’s housing policy is grounded in
+rangatiratanga: restoring Māori control,
+prioritising whānau needs, and correcting
+long-standing structural injustices.
+Executive
+Summary
+```
+
+### Page 2
+
+```text
+20
+Housing
+Any housing policy must begin with tangata
+whenua.
+Māori must no longer be treated as an
+afterthought in our own land, but as a
+permanent people for which Aotearoa is our
+permanent home. Whānau need certainty,
+stability, and reconnection.
+Housing is a foundation policy. Without secure
+housing, gains in health, education, justice, and
+employment cannot be sustained.
+Te Pāti Māori affirms that the Crown has an
+obligation under Te Tiriti o Waitangi to actively
+protect Māori housing outcomes and to
+support whānau-led solutions grounded in
+whenua, whakapapa, and papakāinga
+development.
+Māori experience the sharpest edge of the
+housing crisis.
+Over 35,000 of our people are facing severe
+housing insecurity or homelessness, and one
+in three tamariki Māori live in homes that are
+damp, mouldy, overcrowded, or unsafe.
+Since 1986, the proportion of Māori
+households forced into renting has almost
+doubled. Over 70% of whānau Māori now live
+in rental accommodation, with limited security
+and rising costs.
+Tangata whenua make up half of the social
+housing waiting list and are almost twice as
+likely to be forced to shift residence every year.
+Housing insecurity destabilises employment,
+schooling, and whānau networks.
+In total, over 112,000 people in Aotearoa wake
+up every day not knowing where they are going
+to sleep. At the same time, there are 112,000
+vacant houses nationwide. This is
+unacceptable.
+Housing scarcity is the result of policy settings
+that prioritise speculative ownership over
+whānau need, and overseas wealth,
+investment and ownership over tangata
+whenua; many of whom have nowhere else to
+go and for which Aotearoa is their only home.
+Context
+Our Position
+```
+
+### Page 3
+
+```text
+Te Pāti Māori Policy Manifesto 2026
+21
+H
+O
+U
+S
+I
+N
+G
+Te Pāti Māori will...
+1. Build 2,000 homes on ancestral Māori
+2. Boost Kāinga Ora Social Housing
+Investment
+A failure to invest in affordable homes has
+intensified the housing crisis.
+The coalition government is continuing to
+sell almost 1,000 state houses each year
+to wealthy investors for a fraction of their
+value.
+We are committed to building more social
+housing in Aotearoa and to stopping the
+discount sale of existing state homes to
+private investors.
+3. Allocate 50 percent of all new social
+housing to Māori
+As Māori make up 50% of the social housing
+waiting list, we must ensure that half of all
+new social housing is allocated to whānau
+Māori.
+Secure housing provides the foundation
+for improved education, health, and
+employment outcomes. Long-term tenancy
+stability enables whānau to plan, grow, and
+thrive.
+land within four years
+We will build 2,000 homes on Māori
+ancestral land as a direct investment in
+whānau stability and whenua reconnection.
+These homes will support papakāinga
+development and marae-centred
+communities disrupted by historic land loss
+and urbanisation.
+Māori construction workers, apprentices,
+and trainees will lead these builds, growing
+Māori capability across the housing and
+trades sector.
+6. Introduce a Vacant House Tax
+A 2% annual tax will apply to the capital
+value of residential homes left vacant for
+more than three months in any year.
+This policy is expected to release tens
+of thousands of empty homes back into
+active use, easing housing pressure and
+discouraging land banking.
+Housing must be lived in; not hoarded.
+4. Ensure all new builds are accessible
+Māori directly or indirectly experience
+disability at a higher rate than any other
+population group in Aotearoa.
+Te Pāti Māori will ensure that all new
+government builds are designed to
+accommodate all whānau, because housing
+should not discriminate.
+5. End all sales of freehold land to offshore
+foreign interests
+Not one more acre.
+Freehold ownership will be replaced with
+leasehold arrangements only.
+Land in Aotearoa must serve the people
+who live here, not function as a speculative
+asset class for overseas wealth.
+```
+
+### Page 4
+
+```text
+22
+Housing
+Te Pāti Māori will...
+7. Repeal Interest Deductibility
+8. Enact Universal Rent Control
+Since 2000, the median rent in Aotearoa
+has more than tripled, from $195 per week
+to $600, rising far faster than inflation.
+We will freeze all rents across Aotearoa to
+stop landlords exploiting whānau who are
+desperate for housing.
+Once frozen, rents will only be allowed
+to increase by the rate of inflation each
+year unless the owner makes significant
+improvements to the property.
+The coalition government made it a priority
+to give already-wealthy landlords a $3
+billion tax break at the beginning of their
+term.
+Interest deductibility enables mega
+landlords to take out hundreds of interest-
+only loans to pay for hundreds of houses.
+This will push home ownership further out
+of reach for our hardworking whānau.
+We will repeal interest deductibility to
+de-commodify housing in Aotearoa and
+redistribute this $3 billion to help fund our
+social housing and papakāinga policies.
+10. Increase funding for Sustaining
+Tenancies
+Strengthening the last line of defence
+against homelessness
+Sustaining tenancies is a service for tenants
+who are at risk of losing their home. They
+help to advocate, they help to budget, and
+they offer life skills coaching.
+9. Repeal no-cause evictions
+In our first 100 days in Government, we will
+repeal no-cause evictions and restore some
+security to our whānau who are renting.
+This vital service must be properly funded
+to help all our vulnerable people from
+slipping through the cracks.
+This policy is a commitment to dignity.
+It restores Māori authority over housing
+solutions, reconnects whānau to whenua,
+and ensures that every child grows up with
+the security of a safe home.
+Te Pāti Māori will not accept a housing system
+that profits from scarcity while whānau sleep
+in cars, garages, or overcrowded homes.
+11. End Youth Homelessness
+Half of all people experiencing
+homelessness in Aotearoa are under
+the age of 25. Currently, government
+agencies are under no obligation to prevent
+homelessness.
+We will establish a new agency called
+Rangatahi Ora with functions, duties, and
+powers to prevent youth homelessness.
+We will create a legal duty to assist,
+meaning that government agencies will be
+required to do everything in their power to
+end a young person’s homelessness, or to
+stabilise their housing.
+Our Commitment
+```
+
