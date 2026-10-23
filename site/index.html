@@ -196,7 +196,8 @@ td.n, th.n { text-align: right; font-family: var(--f-num); font-variant-numeric:
 /* compass */
 .compass svg { width: 100%; height: auto; display: block }
 .compass .me { fill: var(--sun); stroke: var(--ink); stroke-width: 2 }
-.compass .party { stroke: var(--surface); stroke-width: 1.5; cursor: pointer }
+.compass .party circle { stroke: var(--surface); stroke-width: 1.5; cursor: pointer }
+.compass .party text { paint-order: stroke; stroke: var(--sunk); stroke-width: 3px; fill: var(--ink); font-weight: 600 }
 .compass text { font: 11px var(--f-ui); fill: var(--muted) }
 .compass .axl { font: 700 11px var(--f-ui); fill: var(--ink); letter-spacing: .04em }
 .banner { background: var(--sun); color: var(--sun-ink); font: 600 14px var(--f-ui); }
@@ -692,7 +693,7 @@ function compassPlot(me, parties, { showMe = true } = {}) { const W = 560, H = 5
   for (let v = -10; v <= 10; v += 5) g += `<line class="grid-l" x1="${sx(v)}" x2="${sx(v)}" y1="${pad}" y2="${H - pad}" stroke="var(--line)"/><line class="grid-l" y1="${sy(v)}" y2="${sy(v)}" x1="${pad}" x2="${W - pad}" stroke="var(--line)"/>`;
   g += `<line x1="${sx(0)}" x2="${sx(0)}" y1="${pad}" y2="${H - pad}" stroke="var(--muted)"/><line y1="${sy(0)}" y2="${sy(0)}" x1="${pad}" x2="${W - pad}" stroke="var(--muted)"/>`;
   g += `<text class="axl" x="${pad + 8}" y="${pad + 18}">AUTHORITARIAN · TRADITIONAL</text><text class="axl" x="${pad + 8}" y="${H - pad - 8}">LIBERTARIAN · PLURALIST</text><text class="axl" x="${pad + 8}" y="${H / 2 - 8}">LEFT</text><text class="axl" x="${W - pad - 8}" y="${H / 2 - 8}" text-anchor="end">RIGHT</text>`;
-  g += parties.filter(p => p.x != null && p.y != null).map(p => `<g class="party" data-p="${p.slug}"><circle cx="${sx(p.x)}" cy="${sy(p.y)}" r="9" fill="${pcolor(p.slug)}"><title>${esc(pname(p.slug))}: economic ${fmt(p.x)}, social ${fmt(p.y)}</title></circle><text x="${sx(p.x) + 12}" y="${sy(p.y) + 4}" style="fill:var(--ink);font-weight:600">${esc(pname(p.slug))}</text></g>`).join('');
+  g += parties.filter(p => p.x != null && p.y != null).map(p => `<g class="party" data-p="${p.slug}"><circle cx="${sx(p.x)}" cy="${sy(p.y)}" r="9" fill="${pcolor(p.slug)}"><title>${esc(pname(p.slug))}: economic ${fmt(p.x)}, social ${fmt(p.y)}</title></circle><text x="${Math.min(sx(p.x) + 12, W - pad - 90)}" y="${Math.max(pad + 14, Math.min(H - pad - 6, sy(p.y) + 4))}">${esc(pname(p.slug))}</text></g>`).join('');
   if (showMe && me && me.x && me.y) g += `<rect x="${sx(me.x.score - me.x.half)}" y="${sy(me.y.score + me.y.half)}" width="${sx(me.x.score + me.x.half) - sx(me.x.score - me.x.half)}" height="${sy(me.y.score - me.y.half) - sy(me.y.score + me.y.half)}" fill="var(--sun)" opacity=".18" rx="8"/><circle class="me" cx="${sx(me.x.score)}" cy="${sy(me.y.score)}" r="11"><title>You</title></circle><text x="${sx(me.x.score)}" y="${sy(me.y.score) - 16}" text-anchor="middle" style="fill:var(--ink);font-weight:800">You</text>`;
   return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Political compass">${g}</svg>` }
 V.compass = () => {
