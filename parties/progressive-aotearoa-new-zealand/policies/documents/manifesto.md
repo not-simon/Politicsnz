@@ -25,7 +25,7 @@ Manifesto\* of The Progressive Party of Aotearoa New Zealand
 
 # How can we do that?
 
-In order to shape such a society, it is necessary for us and especially the leaders, to think and act for the well-being of all. Such a society can come about when principles of morality and Neohumanism, are infused into all social institutions, especially education and government institutions.
+In order to shape such a society, it is necessary for us and especially the leaders, to think and act for the well-being of all. Such a society can come about when principles of morality and Neohumanism, are infused into all social institutions, especially education and government institutions.\
  Neohumanism recognises that in addition to human beings, we need to take responsibility for the welfare of all living beings including animals and plants. It is not just an idea but also a practice – to train the mind to see oneness in all. Training the mind in this way is facilitated by practices such as introspection, meditation and mindfulness. **[Talk on The Consciousness Frontier by NZ yogi, Dada Gunamuktananda (18 minutes)](https://www.youtube.com/watch?v=lo0X2ZdElQ4)**
 
 # The Progressive Party
@@ -55,8 +55,8 @@ Access to quality healthcare is one of the fundamental requirements of any Socie
 
 **Health Research:** Health care is delivered based on evidence of real-world health outcomes. With funding from targeted taxes, Aotearoa NZ can develop a world class health research sector, can become a knowledge exporter, can specifically target research to broaden healthcare system – e.g.Maori Health practices/medicines, Naturopathy etc…
 
-**Diversified Healthcare system:** A Progressive government will develop an integrated healthcare system incorporating the best of all health and wellness modalities. Include branches of healthcare not normally considered “mainstream” –e.g. Maori Health practices/medicines, Naturopathy etc… The Progressive Party is outcome focussed, not ideologically driven. Active research sector will constantly inform healthcare delivery system.
- Culturally based service delivery is integrated into sector – people are able to choose those services that suit their needs.
+**Diversified Healthcare system:** A Progressive government will develop an integrated healthcare system incorporating the best of all health and wellness modalities. Include branches of healthcare not normally considered “mainstream” –e.g. Maori Health practices/medicines, Naturopathy etc… The Progressive Party is outcome focussed, not ideologically driven. Active research sector will constantly inform healthcare delivery system.\
+ Culturally based service delivery is integrated into sector – people are able to choose those services that suit their needs.\
  Practitioner bodies supported to professionalise and develop systems of registration in line with current registered health professions.
 
 **Purchasing capacity:** Funding is to be shifted toward the community and the Primary Health sector – out of DHBs. Primary health includes a wide range of health providers (not just GPs and medical practices). Good quality Primary health delivery is cost effective as it reduces the need for more expensive tertiary level services (hospitals and specialist services). People have a determined level of funding attached to them and they are able to opt into health services that suit them through “enrolment.” Broadening of health funding will allow access to a wider range of evidence-based health services for people.

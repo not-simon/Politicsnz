@@ -1,5 +1,5 @@
 ---
-title: "Biodiversity and Environmental (Green Party policy document)"
+title: "Biodiversity and Environmental Regeneration Policy (Green Party policy document)"
 party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/64514/attachments/original/1778624595/Policy-Greens_Biodiversity_Environmental_Regenration_Policy_2025-2026.pdf"
 retrieved: "2026-10-23"
@@ -10,7 +10,7 @@ policy_version: "09 March 2026"
 local_copy: "raw/party-docs/green/pdf/Policy-Greens_Biodiversity_Environmental_Regenration_Policy_2025-2026.pdf"
 sha1: "bc2dada7b1d951175abd34e54162caf76db8fa8c"
 ---
-# Biodiversity and Environmental (Green Party policy document)
+# Biodiversity and Environmental Regeneration Policy (Green Party policy document)
 
 <!-- page 1 -->
 

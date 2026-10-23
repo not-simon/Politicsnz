@@ -35,8 +35,8 @@ Access to quality healthcare is one of the fundamental requirements of any socie
 
 **Health Research:** Health care is delivered based on evidence of real-world health outcomes. With funding from targeted taxes, Aotearoa NZ can develop a world class health research sector, can become a knowledge exporter, can specifically target research to broaden healthcare system – e.g.Māori Health practices/medicines, Naturopathy, nutrition etc…
 
-**Diversified Healthcare system:** A Progressive government will develop an integrated healthcare system incorporating the best of all health and wellness modalities. Include branches of healthcare not normally considered “mainstream” e.g., Māori health practices/medicines, naturopathy etc…. Active research sector will constantly inform healthcare delivery system.
- Culturally based service delivery is integrated into sector – people are able to choose those services that suit their needs.
+**Diversified Healthcare system:** A Progressive government will develop an integrated healthcare system incorporating the best of all health and wellness modalities. Include branches of healthcare not normally considered “mainstream” e.g., Māori health practices/medicines, naturopathy etc…. Active research sector will constantly inform healthcare delivery system.\
+ Culturally based service delivery is integrated into sector – people are able to choose those services that suit their needs.\
  Practitioner bodies supported to professionalise and develop systems of registration in line with current registered health professions.
 
 **Purchasing capacity:** Funding is to be shifted toward the community and the Primary health sector – out of big hospitals and tertiary care. Primary health includes a wide range of health providers (not just GPs and medical practices). Good quality Primary health delivery is cost effective as it reduces the need for more expensive tertiary level services (hospitals and specialist services). People have a determined level of funding attached to them and they can opt into health services that suit them through “enrolment.” This would see an extension of the present enrolment system that operates with privately-owned medical centres/gp practices, to for example, a natural health centre. Broadening of health funding in this way will allow access to a wider range of evidence-based health services for people.
@@ -296,43 +296,43 @@ Income tax will be transformed into a mechanism which caps salaries at a predete
 
 The Progressive Party prefers taxing accumulated wealth, speculation and waste rather than productivity and economic initiative. To encourage productivity and initiative a Progressive government will become a major business equity provider and use this equity provision to shape the direction of the New Zealand economy to be more self-reliant, sustainable, efficient, equitable and respond to emerging technologies.
 
-**GST Reform** GST will be removed from fresh fruit and vegetables in line with public expectations in these financially very tough times.
+**GST Reform\** GST will be removed from fresh fruit and vegetables in line with public expectations in these financially very tough times.
 
-**Income Tax** Income tax will eventually be phased out by raising the tax-free threshold over time. Initiallythe tax-free threshold will be set at $30 000. To replace the tax income lost by this change, tax rates on higher brackets will be raised. Corporate tax will also be raised and tax evasion will be policed more vigorously. The Party will establish a new Inter-generational wealth transfer tax.
+**Income Tax\** Income tax will eventually be phased out by raising the tax-free threshold over time. Initiallythe tax-free threshold will be set at $30 000. To replace the tax income lost by this change, tax rates on higher brackets will be raised. Corporate tax will also be raised and tax evasion will be policed more vigorously. The Party will establish a new Inter-generational wealth transfer tax.
 
 **2024 Tax Brackets**
 
-$0 – $30k                            0% \*
- $30k – $60k                       15%
- $60k – $90k                       33%
- $90k – $180k                     39%
- $180k – $300k                   42%
+$0 – $30k                            0% \*\
+ $30k – $60k                       15%\
+ $60k – $90k                       33%\
+ $90k – $180k                     39%\
+ $180k – $300k                   42%\
  $300k +                              48%
 
-**Inter-generational Wealth Transfers**\*\*
+**Inter-generational Wealth Transfers**\*\*\
  Inter-generational wealth transfers are the leading contributor to inequality in New Zealand. Inter-generational wealth transfers either as accumulated gifts or inheritance will be taxed as if they are income by the recipient. Gifts and inheritance passed to their immediate spouse will not be taxed as this is not an inter-generational transfer. Trusts will also account for these transfers as if they were income and be taxed accordingly. In the end a dollar coming in is a dollar coming in, be it from wages, investments, gifts or inheritance.
 
-**Trusts** Family trusts are normally taxed at the highest individual income tax rate which is at present39%. This will increase to 48% with the establishment of our new higher tax bracket.
+**Trusts\** Family trusts are normally taxed at the highest individual income tax rate which is at present39%. This will increase to 48% with the establishment of our new higher tax bracket.
 
-**Standard Wealth Tax** A Progressive government will introduce a flat 2.5% wealth tax on net worth. The threshold for this wealth tax applying will be net worth of $10M for couples and $5M for individuals\*\*\*.
+**Standard Wealth Tax\** A Progressive government will introduce a flat 2.5% wealth tax on net worth. The threshold for this wealth tax applying will be net worth of $10M for couples and $5M for individuals\*\*\*.
 
-**Capital Gains Tax** A Progressive government will establish a capital gains tax after sufficient research has been done on reducing its impact on those on lower and middle-incomes. A capital gains tax needs to have flexibility and will do a disservice to the people if it is utilised as a blunt instrument. The capital gains tax will be introduced after our other tax reforms are established effectively.
+**Capital Gains Tax\** A Progressive government will establish a capital gains tax after sufficient research has been done on reducing its impact on those on lower and middle-incomes. A capital gains tax needs to have flexibility and will do a disservice to the people if it is utilised as a blunt instrument. The capital gains tax will be introduced after our other tax reforms are established effectively.
 
-**Waste Taxes** Waste taxes will make up increasingly more of the government’s tax revenue until closed loop economies can be established in each sector. The goal is to have systems with zero waste. Natural systems do this effectively 100% of the time and our economy needs to follow this example. Waste taxes will therefore constitute a temporary source of government funding.
+**Waste Taxes\** Waste taxes will make up increasingly more of the government’s tax revenue until closed loop economies can be established in each sector. The goal is to have systems with zero waste. Natural systems do this effectively 100% of the time and our economy needs to follow this example. Waste taxes will therefore constitute a temporary source of government funding.
 
-**Excise Taxes** Taxes levied on health damaging products to reduce their use will be extended from alcohol and tobacco use to sugar in foods and beverages and legalised marijuana. Marijuana industries overseas have generated large flows of revenue for the government from licensing
- production and distribution as well as taxing products. Taxes on gambling will be increased
+**Excise Taxes\** Taxes levied on health damaging products to reduce their use will be extended from alcohol and tobacco use to sugar in foods and beverages and legalised marijuana. Marijuana industries overseas have generated large flows of revenue for the government from licensing\
+ production and distribution as well as taxing products. Taxes on gambling will be increased\
  and supports reduced for gambling industry activities like horse or greyhound racing.
 
-**Speculation Taxes** Speculation in the real economy will be discouraged as it is a major driver of economic
- instability. Taxes and all other means necessary will be utilised to reduce speculation in the
+**Speculation Taxes\** Speculation in the real economy will be discouraged as it is a major driver of economic\
+ instability. Taxes and all other means necessary will be utilised to reduce speculation in the\
  economy. If people want to gamble, they can do so using one of the gambling modes, but not on housing or other important commodities that people depend on for their daily living. A Progressive government will move to identify and deflate speculative bubbles as they emerge.
 
-**Company Tax** Change company tax from 29% to 38%. 5% above its previous level of 33%.
+**Company Tax\** Change company tax from 29% to 38%. 5% above its previous level of 33%.
 
-\*Australia also operates an income tax free threshold
- \*\*Ireland also has a Capital Gains Tax and an inter-generational wealth transfer tax called CAT Capital Acquisition Tax which is set at 33%.
- \*\*\* The Greens are proposing a wealth tax of 2.5% but with a threshold of net worth of
+\*Australia also operates an income tax free threshold\
+ \*\*Ireland also has a Capital Gains Tax and an inter-generational wealth transfer tax called CAT Capital Acquisition Tax which is set at 33%.\
+ \*\*\* The Greens are proposing a wealth tax of 2.5% but with a threshold of net worth of\
  $4M couples and $2M individuals which we think is too low and will affect small and medium business development. 3 of 36 OECD countries still have net wealth taxes. Switzerland’s net wealth tax provides 3.9% of its tax revenues.
 
 ## Social Boards

@@ -23,7 +23,7 @@ The Conservative Party’s Natural Resource Policy will give New Zealand control
 
 Norway has used its oil and gas resources and created the worlds largest sovereign wealth fund - now worth around US$2.3 trillion. The fund owns about 1.5% of the world’s share markets. This is the model our scheme is based on.
 
-If New Zealanders want meaningful investment in Health, Education, Superannuation, Infrastructure, and to return to surplus, this is the way to do it. We would promote investment into New Zealand and create high paid jobs directly and indirectly. This will incentivise many New Zealanders, with these specialised skills, to return home from overseas. 
+If New Zealanders want meaningful investment in Health, Education, Superannuation, Infrastructure, and to return to surplus, this is the way to do it. We would promote investment into New Zealand and create high paid jobs directly and indirectly. This will incentivise many New Zealanders, with these specialised skills, to return home from overseas.
 
 ## Development of our Resources
 

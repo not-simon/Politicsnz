@@ -19,7 +19,7 @@ The proposal is at the core of the Alliance’s new Environmental, Climate, and 
 
 ## Read the full policy
 
-Environmental, Climate, and Sustainable Economy Policy
+Environmental, Climate, and Sustainable Economy Policy\
 PDF, 11 pages, 211 KB
 
 [Download policy PDF](https://allianceparty.nz/wp-content/uploads/2026/09/alliance-environment-climate-sustainable-economy-policy-2026.pdf)

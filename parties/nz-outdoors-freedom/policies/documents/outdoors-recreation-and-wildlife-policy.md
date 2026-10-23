@@ -23,7 +23,7 @@ fetch_method: curl (desktop Chrome user-agent)
 
 *We will Replace the Department of Conservation with a new Department of Outdoors – Wildlife, Recreation and Nature (“DOWRN pronounced DAWN”).*
 
-*The purpose of DOWRN  is to*
+*The purpose of DOWRN  is to*\
 
 *a)     Encourage New Zealanders to get Outdoors and enjoy a range of activities for physical, mental and spiritual well-being including for fun, recreation, education and relaxation.*
 

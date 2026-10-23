@@ -27,6 +27,7 @@ These values must not be symbolic. They must be actively embodied in behaviour, 
 
 ### Te Ture Mokopuna — The Mokopuna Act
 
+\
 Flagship Policy
 
 Te Tai Tokerau Party is committed to introducing **Te Ture Mokopuna (The Mokopuna Act)** — legislation that would require the Government and all departments to take into consideration the wellbeing of all mokopuna, both those living today and those yet to be born, in law, budgets and major decisions.

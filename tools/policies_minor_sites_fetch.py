@@ -294,8 +294,15 @@ def nap():
 def seg():
     P = "socialist-equality-group"
     u = "https://www.wsws.org/en/articles/2026/10/14/cjbj-o14.html"
-    items = [page_doc(P, "election-statement-2026-10-13", u, "Fight against war and for international socialism! (SEG election statement, 13 Oct 2026)",
-                      selectors=("article", "main"), cut_after="Read more")]
+    path, code = L.fetch(u, P)
+    t, md = L.main_md(path, selectors=("article", "main"))
+    md = md[:md.index("Sign up for the WSWS email newsletter")] if "Sign up for the WSWS email newsletter" in md else md
+    md = re.sub(r"\[Socialism AI.*?Ask more questions at SocialismAI\.com\]\([^)]*\)\n", "", md, flags=re.S)
+    items = [{"url": u, "title": "Fight against war and for international socialism! (SEG election statement, 13 Oct 2026)",
+              "doc": L.write_doc(P, "election-statement-2026-10-13", "Fight against war and for international socialism! "
+                                 "Reject all capitalist parties and support the Socialist Equality Group in New Zealand's election!",
+                                 u, md, method=UA_NOTE, note="Published on the World Socialist Web Site (wsws.org), the SEG's "
+                                 "international publication, dated 13 October 2026. The site's 'Socialism AI' widget and footer were removed.")}]
     save_index(P, items)
 
 

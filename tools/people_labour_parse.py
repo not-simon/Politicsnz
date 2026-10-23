@@ -46,7 +46,9 @@ def simple_templates(t):
     t = re.sub(r'\{\{NZ election link year\|(\d{4})\}\}', r'\1', t)
     t = re.sub(r'\{\{(?:birth date and age|birth date|death date and age|death date)\|(?:[a-z]+=[a-z]+\|)*(\d{4})\|(\d{1,2})\|(\d{1,2})[^{}]*\}\}',
                lambda m: f'{int(m.group(1)):04d}-{int(m.group(2)):02d}-{int(m.group(3)):02d}', t, flags=re.I)
-    t = re.sub(r'\{\{(?:birth year and age|birth based on age as of date)\|(\d{4})[^{}]*\}\}', r'\1', t, flags=re.I)
+    t = re.sub(r'\{\{birth based on age as of date\|(\d{1,3})\|(\d{4})[^{}]*\}\}',
+               lambda m: f'{int(m.group(2)) - int(m.group(1)) - 1} or {int(m.group(2)) - int(m.group(1))}', t, flags=re.I)
+    t = re.sub(r'\{\{(?:birth year and age)\|(\d{4})[^{}]*\}\}', r'\1', t, flags=re.I)
     t = re.sub(r'\{\{post-nominals[^{}]*\}\}', '', t, flags=re.I)
     t = re.sub(r'\{\{(?:lang|langx)\|[a-z]+\|([^{}|]*)[^{}]*\}\}', r'\1', t, flags=re.I)
     t = re.sub(r'\{\{(?:ndash|snd|spaced ndash)\}\}', '–', t, flags=re.I)

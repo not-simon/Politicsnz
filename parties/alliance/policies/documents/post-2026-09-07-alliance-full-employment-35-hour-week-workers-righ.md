@@ -13,17 +13,17 @@ modified: "2026-09-23T18:53:00"
 
 ## Full text (verbatim)
 
-**Alliance Party Media Release**
+**Alliance Party Media Release**\
 Monday, 7 September 2026, 7:58 am
 
 The Alliance Party has released its policy for employment relations and workers’ rights.
 
 ## Read the full policy
 
-**Workers’ Rights and Employment Policy**
+**Workers’ Rights and Employment Policy**\
 PDF, 10 pages, 195 KB
 
-[Download policy PDF](https://allianceparty.nz/wp-content/uploads/2026/09/alliance-workers-rights-employment-policy-2026.pdf)
+[Download policy PDF](https://allianceparty.nz/wp-content/uploads/2026/09/alliance-workers-rights-employment-policy-2026.pdf)\
 
 Alliance employment relations spokesperson and candidate for Selwyn, Jesse Luke, says the policy is “pro-worker, pro-union, and pro-jobs.”
 

@@ -25,6 +25,7 @@ We do not believe cultivation or possession of cannabis for personal use should 
 
 We support home grown medicinal cannabis and will encourage small New Zealand owned companies.
 
+\
 We discourage the capture of cannabis by Big Phama and the imposition of excessive licensing fees that will block access to family and community based suppliers.
 
 ## Update legislation to support NZ grown hemp

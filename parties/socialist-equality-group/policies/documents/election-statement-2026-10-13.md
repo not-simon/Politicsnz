@@ -1,5 +1,5 @@
 ---
-title: "Fight against war and for international socialism! (SEG election statement, 13 Oct 2026)"
+title: "Fight against war and for international socialism! Reject all capitalist parties and support the Socialist Equality Group in New Zealand's election!"
 party: socialist-equality-group
 source_url: https://www.wsws.org/en/articles/2026/10/14/cjbj-o14.html
 retrieved: 2026-10-23
@@ -7,7 +7,9 @@ format: html
 fetch_method: curl (desktop Chrome user-agent)
 ---
 
-# Fight against war and for international socialism! (SEG election statement, 13 Oct 2026)
+# Fight against war and for international socialism! Reject all capitalist parties and support the Socialist Equality Group in New Zealand's election!
+
+> Archive note: Published on the World Socialist Web Site (wsws.org), the SEG's international publication, dated 13 October 2026. The site's 'Socialism AI' widget and footer were removed.
 
 ## Full text (verbatim)
 
@@ -64,7 +66,7 @@ To return to power, the Labour Party will have to form a coalition with two or t
 - A full-time, permanent job on decent wages for all who want one; a living income for those unable to work.
 - Cancel student debt and restore free tertiary education.
 - Free, universal healthcare; reverse the slashing of health and education workers’ wages and the sacking of thousands of public servants.
-- To carry out a real struggle against wage cuts, job losses and the militarisation of society, workers must rebel against the trade union bureaucracy. The unions ceased to be workers’ organisations decades ago and now function as an industrial police force for the state and big business.
+- To carry out a real struggle against wage cuts, job losses and the militarisation of society, workers must rebel against the trade union bureaucracy. The unions ceased to be workers’ organisations decades ago and now function as an industrial police force for the state and big business.\
  Workers must build rank-and-file committees, democratically controlled and independent of the union apparatus and the capitalist parties. These committees must unite workers in New Zealand across all industries and with workers in Australia, Asia, the Pacific and throughout the world, through the International Workers’ Alliance of Rank-and-File Committees.
 
 #### The Greens, Te Pāti Māori and the Opportunity Party
@@ -73,15 +75,6 @@ The Green Party and the Māori nationalist Te Pāti Māori (TPM) are positioning
 
 In the Ardern government, the Greens loyally backed Labour’s budgets, which boosted military spending while starving education, healthcare and other services. TPM was part of the 2008–2017 National Party-led government which increased GST, slashed welfare entitlements and partially privatised electricity companies.
 
-[Socialism AI
-
-by the WSWS](https://ai.wsws.org/en?utm_source=wsws&utm_medium=sai-bridge&utm_campaign=article&utm_content=%2Fen%2Farticles%2F2026%2F10%2F14%2Fcjbj-o14.html)[SocialismAI.com](https://ai.wsws.org/en?utm_source=wsws&utm_medium=sai-bridge&utm_campaign=article&utm_content=%2Fen%2Farticles%2F2026%2F10%2F14%2Fcjbj-o14.html)
-
-Questions about this article? Ask Socialism AI
-
-[What is the historical origin and purpose of the International Committee of the Fourth International, and how does it differ from other groups that call themselves socialist or Trotskyist?](https://ai.wsws.org/en?q=V2hhdCBpcyB0aGUgaGlzdG9yaWNhbCBvcmlnaW4gYW5kIHB1cnBvc2Ugb2YgdGhlIEludGVybmF0aW9uYWwgQ29tbWl0dGVlIG9mIHRoZSBGb3VydGggSW50ZXJuYXRpb25hbCwgYW5kIGhvdyBkb2VzIGl0IGRpZmZlciBmcm9tIG90aGVyIGdyb3VwcyB0aGF0IGNhbGwgdGhlbXNlbHZlcyBzb2NpYWxpc3Qgb3IgVHJvdHNreWlzdD8&utm_source=wsws&utm_medium=sai-bridge&utm_campaign=article&utm_content=%2Fen%2Farticles%2F2026%2F10%2F14%2Fcjbj-o14.html)[Can you explain the Labour government's 1980s 'Rogernomics' reforms in New Zealand and how they compare to Reaganism and Thatcherism elsewhere?](https://ai.wsws.org/en?q=Q2FuIHlvdSBleHBsYWluIHRoZSBMYWJvdXIgZ292ZXJubWVudCdzIDE5ODBzICdSb2dlcm5vbWljcycgcmVmb3JtcyBpbiBOZXcgWmVhbGFuZCBhbmQgaG93IHRoZXkgY29tcGFyZSB0byBSZWFnYW5pc20gYW5kIFRoYXRjaGVyaXNtIGVsc2V3aGVyZT8&utm_source=wsws&utm_medium=sai-bridge&utm_campaign=article&utm_content=%2Fen%2Farticles%2F2026%2F10%2F14%2Fcjbj-o14.html)[How did the Stalinist-led union bureaucracies historically come to suppress class struggle, and what does that history explain about the role of unions in New Zealand today?](https://ai.wsws.org/en?q=SG93IGRpZCB0aGUgU3RhbGluaXN0LWxlZCB1bmlvbiBidXJlYXVjcmFjaWVzIGhpc3RvcmljYWxseSBjb21lIHRvIHN1cHByZXNzIGNsYXNzIHN0cnVnZ2xlLCBhbmQgd2hhdCBkb2VzIHRoYXQgaGlzdG9yeSBleHBsYWluIGFib3V0IHRoZSByb2xlIG9mIHVuaW9ucyBpbiBOZXcgWmVhbGFuZCB0b2RheT8&utm_source=wsws&utm_medium=sai-bridge&utm_campaign=article&utm_content=%2Fen%2Farticles%2F2026%2F10%2F14%2Fcjbj-o14.html)
-
-[Ask more questions at SocialismAI.com](https://ai.wsws.org/en?utm_source=wsws&utm_medium=sai-bridge&utm_campaign=article&utm_content=%2Fen%2Farticles%2F2026%2F10%2F14%2Fcjbj-o14.html)
 
 The Greens and TPM, along with the pseudo-lefts, promote reactionary forms of identity politics based on nationality, race and gender, which divides the working class and obscures the most important division in society: the gulf between workers and capitalists. TPM speaks for Māori tribal-based capitalists seeking a greater share of the wealth extracted from the working class. Their interests are opposed to those of Māori workers, who are among the most exploited in the country.
 
@@ -111,13 +104,3 @@ Tom Petterson is standing in this election to fight for this program—to build 
 **Vote for Tom Petterson in Hutt South. Attend our** [**public meeting**](https://docs.google.com/forms/d/e/1FAIpQLSee4_dBhNRlitH2ZuX8PdxBKh570KTh-e5Ch5GEyu3EfGC-nA/viewform?usp=header) **on November 1. Join the Socialist Equality Group—for the revolutionary unity of the working class in the Pacific, in Asia and throughout the world. For world socialism!**
 
 *Authorised by Tom Petterson, sep.wellington@gmail.com*
-
-Sign up for the WSWS email newsletter
-
-[Contact us](/en/special/pages/contact.html)
-
-Related Topics
-
-Find out more about these topics:
-
-[New Zealand](/en/topics/country/au-nz)[Asia and the Pacific](/en/topics/continent/asia)[International Committee of the Fourth International](/en/topics/icfiCategory/icfi)

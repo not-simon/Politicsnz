@@ -13,8 +13,8 @@ modified: "2026-09-23T18:52:59"
 
 ## Full text (verbatim)
 
-**Alliance Party Media Release**
-FOR IMMEDIATE RELEASE
+**Alliance Party Media Release**\
+FOR IMMEDIATE RELEASE\
 Sunday 6 September 2026
 
 The Alliance Party has unveiled its tax package, proposing to make the first $20,000 of every person’s income completely tax-free. Under the proposed scale, an everyday worker earning $65,000 would keep an extra $2,408 a year.

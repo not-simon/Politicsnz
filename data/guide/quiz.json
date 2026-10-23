@@ -1,0 +1,2381 @@
+{
+ "version": "2026-10",
+ "generated": "2026-10-23",
+ "scale": "-2 = strongly disagree, -1 = disagree, 0 = neutral/mixed, +1 = agree, +2 = strongly agree; null = the party has no public position we could find (never guessed). Positions are the party's, relative to the statement text.",
+ "scoring": {
+  "method": "For each statement both the user and the party answered: agreement = 1 - |user - party| / 4. Weighted average over those statements using user importance weights (default 1; suggest 0.5/1/2). Report coverage = statements the party has a position on, out of statements the user answered; flag matches with coverage below 10 statements, and blend toward 0.5 (neutral) by adjusted = (sum_w*agree + k*0.5) / (sum_w + k) with k = 3 so thin records are not over-rewarded.",
+  "see": "guide/quiz-method.md"
+ },
+ "parties": {
+  "national": {
+   "name": "National",
+   "positions_recorded": 31
+  },
+  "labour": {
+   "name": "Labour",
+   "positions_recorded": 29
+  },
+  "green": {
+   "name": "Green",
+   "positions_recorded": 40
+  },
+  "act": {
+   "name": "ACT",
+   "positions_recorded": 31
+  },
+  "nz-first": {
+   "name": "NZ First",
+   "positions_recorded": 28
+  },
+  "te-pati-maori": {
+   "name": "Te Pāti Māori",
+   "positions_recorded": 20
+  },
+  "opportunity": {
+   "name": "Opportunity (TOP)",
+   "positions_recorded": 21
+  },
+  "nz-loyal": {
+   "name": "NZ Loyal",
+   "positions_recorded": 3
+  },
+  "nz-outdoors-freedom": {
+   "name": "NZ Outdoors & Freedom",
+   "positions_recorded": 2
+  },
+  "legalise-cannabis": {
+   "name": "Legalise Cannabis",
+   "positions_recorded": 2
+  },
+  "animal-justice": {
+   "name": "Animal Justice",
+   "positions_recorded": 6
+  },
+  "alliance": {
+   "name": "Alliance",
+   "positions_recorded": 22
+  },
+  "conservative": {
+   "name": "Conservative",
+   "positions_recorded": 11
+  },
+  "womens-rights": {
+   "name": "Women's Rights",
+   "positions_recorded": 5
+  },
+  "vision-nz": {
+   "name": "Vision NZ",
+   "positions_recorded": 8
+  },
+  "free-palestine": {
+   "name": "Free Palestine",
+   "positions_recorded": 2
+  },
+  "te-tai-tokerau-party": {
+   "name": "Te Tai Tokerau Party",
+   "positions_recorded": 7
+  }
+ },
+ "statements": [
+  {
+   "id": "q01",
+   "issue": "tax",
+   "text": "New Zealand should introduce a capital gains tax (for example on investment and commercial property).",
+   "explainer": "New Zealand has no general capital gains tax; Labour is campaigning on a 28% tax on gains from investment and commercial property (family homes, farms, shares and KiwiSaver excluded).",
+   "positions": {
+    "national": {
+     "position": -2,
+     "evidence": "\"No new taxes, including no capital gains tax.\"",
+     "source_url": "https://assets.national.org.nz/web/prod/National%27s%20Economic%20Plan.pdf?v=1790557287"
+    },
+    "labour": {
+     "position": 2,
+     "evidence": "Create a 28% capital gains tax on commercial and residential property, excluding the family home, from 1 July 2027.",
+     "source_url": "https://www.labour.org.nz/capitalgainstax",
+     "policy_id": "POL54670"
+    },
+    "green": {
+     "position": 1,
+     "evidence": "Prefers wider wealth taxes; Green MP Teanau Tuiono called Labour's CGT \"quite narrow\" and said the Greens' wealth tax would be more effective. Greens also propose a 33% capital acquisitions (inheritance/gift) tax.",
+     "source_url": "https://pmn.co.nz/read/political/greens-criticise-labour-s-limited-capital-gains-tax-plan"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "KPMG 2026 tax tracker lists ACT: \"No capital gains tax\" (plus a crypto capital-gains exemption).",
+     "source_url": "https://assets.kpmg.com/content/dam/kpmgsites/nz/pdf/2026/09/2026-election-policy-tracker-v4.pdf"
+    },
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "\"The Alliance will introduce a broad-based capital gains tax, covering investment property, shares...\" (33%, excluding the family home).",
+     "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-tax-justice-cost-of-living-policy-2026.pdf"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q02",
+   "issue": "tax",
+   "text": "There should be an annual wealth tax on people with very large fortunes (for example net wealth over $2–10 million).",
+   "explainer": "Greens propose 2.5% on net wealth over $10m; Te Pāti Māori a tiered tax from $2m; Labour has ruled a wealth tax out.",
+   "positions": {
+    "national": {
+     "position": -2,
+     "evidence": "National's Economic Plan lists the Greens/Te Pāti Māori \"Asset Tax\" among \"nine new taxes\" it opposes; promises \"no new taxes\".",
+     "source_url": "https://assets.national.org.nz/web/prod/National%27s%20Economic%20Plan.pdf?v=1790557287"
+    },
+    "labour": {
+     "position": -2,
+     "evidence": "KPMG tracker: \"Chris Hipkins has ruled out a wealth/inheritance tax.\"",
+     "source_url": "https://assets.kpmg.com/content/dam/kpmgsites/nz/pdf/2026/09/2026-election-policy-tracker-v4.pdf"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Introduce a 2.5% tax on net wealth over $10 million (family homes exempt).",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_income",
+     "policy_id": "POL55135"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "KPMG tracker lists ACT: \"No wealth tax/inheritance tax.\"",
+     "source_url": "https://assets.kpmg.com/content/dam/kpmgsites/nz/pdf/2026/09/2026-election-policy-tracker-v4.pdf"
+    },
+    "nz-first": {
+     "position": -1,
+     "evidence": "KPMG tracker: NZ First position \"Not stated, has previously opposed such taxes.\"",
+     "source_url": "https://assets.kpmg.com/content/dam/kpmgsites/nz/pdf/2026/09/2026-election-policy-tracker-v4.pdf"
+    },
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "Implement a targeted wealth tax: 1.5% on net assets $2–5m, 2% on $5–10m, 2.5% over $10m (\"A Kiwi Tax Plan\").",
+     "source_url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf",
+     "policy_id": "POL54939"
+    },
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "\"2.5% Wealth Tax: An annual tax on individual net wealth above $2 million.\"",
+     "source_url": "https://allianceparty.nz/alliance-tax-plan-first-20000-income-tax-free/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q03",
+   "issue": "cost-of-living",
+   "text": "GST should be removed from food such as fresh fruit and vegetables.",
+   "explainer": "GST is charged at 15% on almost all food. Removing it from some food was debated in 2023; in 2026 Te Pāti Māori offers a \"No GST on Kai\" credit instead.",
+   "positions": {
+    "national": null,
+    "labour": null,
+    "green": null,
+    "act": null,
+    "nz-first": null,
+    "te-pati-maori": {
+     "position": 1,
+     "evidence": "\"Remove GST costs from kai\" — delivered as an income-tax \"Kai Credit\" worth about eight weeks of groceries for people earning under $60,000, rather than a GST exemption at the till.",
+     "source_url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf",
+     "policy_id": "POL54938"
+    },
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": {
+     "position": 2,
+     "evidence": "\"Remove GST from fruits, vegetables, legumes, nuts and other core plant-based foods.\"",
+     "source_url": "https://animaljustice.org.nz/policies/policy-summary/"
+    },
+    "alliance": null,
+    "conservative": {
+     "position": -1,
+     "evidence": "Favours a lower overall GST rate (12.5%) rather than food exemptions: \"A lower rate of GST -12.5% is favoured.\"",
+     "source_url": "https://conservatives.org.nz/policies/economy-1/"
+    },
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q04",
+   "issue": "tax",
+   "text": "The first slice of everyone's income (e.g. the first $10,000 or more) should be tax-free.",
+   "explainer": "NZ taxes income from the first dollar (10.5% up to $15,600). Several parties propose a tax-free threshold paid for by other taxes.",
+   "positions": {
+    "national": null,
+    "labour": null,
+    "green": {
+     "position": 2,
+     "evidence": "Make the first $10,000 people earn tax-free.",
+     "source_url": "https://assets.nationbuilder.com/beachheroes/pages/71965/attachments/original/1782084525/GreensTaxPolicy2026.pdf?1782084525",
+     "policy_id": "POL54735"
+    },
+    "act": null,
+    "nz-first": {
+     "position": 2,
+     "evidence": "KPMG tracker: NZ First would \"make the lowest tax bracket (currently $14,000 pa) of income tax-free no later than 1 April 2027.\"",
+     "source_url": "https://assets.kpmg.com/content/dam/kpmgsites/nz/pdf/2026/09/2026-election-policy-tracker-v4.pdf"
+    },
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "Make the first $30,000 earned tax-free.",
+     "source_url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf",
+     "policy_id": "POL54812"
+    },
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "\"Make the first $20,000 of every person's income completely tax-free.\"",
+     "source_url": "https://allianceparty.nz/alliance-tax-plan-first-20000-income-tax-free/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": {
+     "position": 2,
+     "evidence": "\"Make the first $25,000 of personal income completely tax-free.\"",
+     "source_url": "https://www.vision.org.nz/visionpolicies"
+    },
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q05",
+   "issue": "cost-of-living",
+   "text": "The government should force the big supermarket chains to be broken up or restructured to increase competition.",
+   "explainer": "Two groups (Foodstuffs and Woolworths) dominate groceries. Proposals range from splitting Foodstuffs to a state-owned supermarket, versus easing entry for new competitors.",
+   "positions": {
+    "national": {
+     "position": 1,
+     "evidence": "Separate the Foodstuffs business into two nationwide cooperatives (a targeted restructure rather than a full break-up).",
+     "source_url": "https://assets.national.org.nz/web/prod/More%20Grocery%20Competition.pdf?v=1789522994",
+     "policy_id": "POL55014"
+    },
+    "labour": {
+     "position": 2,
+     "evidence": "Separate wholesale food businesses from the retail supermarket sector.",
+     "source_url": "https://www.labour.org.nz/news/release-labour-will-make-price-gouging-illegal/",
+     "policy_id": "POL55092"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Break up the supermarket duopoly and use part of it to create a government-owned supermarket.",
+     "source_url": "https://www.greens.org.nz/greens_launch_plan_to_break_up_the_supermarket_duopoly_and_bring_down_the_price_of_food",
+     "policy_id": "POL55032"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "\"While other parties destroy investor confidence by proposing break-ups, price controls, or state-run alternatives, ACT will focus on the barriers that make it hard for new competitors to enter.\"",
+     "source_url": "https://www.act.org.nz/news/act%E2%80%99s-plan-to-increase-supermarket-competition",
+     "policy_id": "POL55160"
+    },
+    "nz-first": {
+     "position": 2,
+     "evidence": "Separate the Foodstuffs supermarket chain into two national cooperatives and give the Grocery Commissioner more powers.",
+     "source_url": "https://www.nzfirst.nz/break_up_the_supermarket_duopoly",
+     "policy_id": "POL54658"
+    },
+    "te-pati-maori": null,
+    "opportunity": {
+     "position": 1,
+     "evidence": "Give the Commerce Commission greater powers and more market support to small businesses (no specific break-up).",
+     "source_url": "https://www.opportunity.org.nz/breakthrough-economy",
+     "policy_id": "POL54824"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q06",
+   "issue": "work",
+   "text": "The minimum wage should rise every year by at least the rate of inflation.",
+   "explainer": "Minimum-wage rises since 2023 have been below inflation. ACT proposes a three-year freeze.",
+   "positions": {
+    "national": null,
+    "labour": {
+     "position": 2,
+     "evidence": "Increase the minimum wage every year; answered \"Yes\" to NZCTU: set the minimum wage above inflation for the next 3 years.",
+     "source_url": "https://www.tvnz.co.nz/tvseries/1-news-leaders-debate",
+     "policy_id": "POL55238"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "NZCTU scorecard: \"Yes\" to setting the minimum wage above inflation for the next three years.",
+     "source_url": "https://union.org.nz/wp-content/uploads/2026/10/NZCTU-Scorecards-2.pdf"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Freeze the minimum wage for three years.",
+     "source_url": "https://assets.nationbuilder.com/actnz/pages/37328/attachments/original/1789360133/Let_small_business_get_on_with_business.pdf?1789360133",
+     "policy_id": "POL54990"
+    },
+    "nz-first": {
+     "position": 2,
+     "evidence": "Increase the minimum wage in line with inflation; answered \"Yes\" to the NZCTU scorecard question.",
+     "source_url": "https://www.nzfirst.nz/nz_first_to_increase_working_for_families_minimum_wage",
+     "policy_id": "POL55258"
+    },
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "NZCTU scorecard: \"Yes\" to setting the minimum wage above inflation for the next three years.",
+     "source_url": "https://union.org.nz/wp-content/uploads/2026/10/NZCTU-Scorecards-2.pdf"
+    },
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "NZCTU scorecard: \"Yes\" to setting the minimum wage above inflation for the next three years.",
+     "source_url": "https://union.org.nz/wp-content/uploads/2026/10/NZCTU-Scorecards-2.pdf"
+    },
+    "conservative": null,
+    "womens-rights": {
+     "position": 1,
+     "evidence": "\"Minimum wages and benefits need to be increased so that all people have living incomes.\"",
+     "source_url": "https://womensrightsparty.nz/policy/"
+    },
+    "vision-nz": {
+     "position": 2,
+     "evidence": "\"Legislate the transition from the minimum wage to an annually adjusted Living Wage to protect working families from inflation.\"",
+     "source_url": "https://www.vision.org.nz/visionpolicies"
+    },
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q07",
+   "issue": "work",
+   "text": "Fair Pay Agreements (industry-wide minimum pay and conditions negotiated by unions and employers) should be brought back.",
+   "explainer": "Labour introduced Fair Pay Agreements in 2022; the National-led government repealed them in December 2023.",
+   "positions": {
+    "national": {
+     "position": -2,
+     "evidence": "Repealed the Fair Pay Agreements Act in December 2023 (all National MPs voted for repeal); NZCTU scorecard \"No\".",
+     "source_url": "https://union.org.nz/election-scorecards-26/"
+    },
+    "labour": {
+     "position": 2,
+     "evidence": "NZCTU scorecard: \"Yes\" to restoring Fair Pay Agreements in the first 100 days.",
+     "source_url": "https://union.org.nz/wp-content/uploads/2026/10/NZCTU-Scorecards-2.pdf"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Reverse changes to pay equity and fair pay agreements; NZCTU scorecard \"Yes\".",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_gender_equity",
+     "policy_id": "POL55104"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Supported the 2023 repeal; NZCTU scorecard \"No\".",
+     "source_url": "https://union.org.nz/election-scorecards-26/"
+    },
+    "nz-first": {
+     "position": -2,
+     "evidence": "NZCTU scorecard: \"No\" to restoring Fair Pay Agreements.",
+     "source_url": "https://union.org.nz/wp-content/uploads/2026/10/NZCTU-Scorecards-2.pdf"
+    },
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "NZCTU scorecard: \"Yes\" to restoring Fair Pay Agreements in the first 100 days.",
+     "source_url": "https://union.org.nz/wp-content/uploads/2026/10/NZCTU-Scorecards-2.pdf"
+    },
+    "opportunity": {
+     "position": -1,
+     "evidence": "NZCTU scorecard: \"No\" to restoring Fair Pay Agreements in the first 100 days.",
+     "source_url": "https://union.org.nz/wp-content/uploads/2026/10/NZCTU-Scorecards-2.pdf"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "NZCTU scorecard: \"Yes\" to restoring Fair Pay Agreements in the first 100 days.",
+     "source_url": "https://union.org.nz/wp-content/uploads/2026/10/NZCTU-Scorecards-2.pdf"
+    },
+    "conservative": null,
+    "womens-rights": {
+     "position": 2,
+     "evidence": "Advocates \"reinstatement of legislative support for Fair Pay Agreements.\"",
+     "source_url": "https://womensrightsparty.nz/policy/"
+    },
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q08",
+   "issue": "housing",
+   "text": "Annual rent increases should be capped by law.",
+   "explainer": "There is currently no cap on how much rent can rise (only one increase per 12 months). The Greens propose a 2% annual cap.",
+   "positions": {
+    "national": {
+     "position": -1,
+     "evidence": "Focuses on building more homes \"rather than controlling rents\" (Salient 2026 guide); points to rent increases at a 25-year low.",
+     "source_url": "https://salient.org.nz/post/which-party-should-i-vote-for-your-guide-to-the-2026-election"
+    },
+    "labour": {
+     "position": -1,
+     "evidence": "In 2023 Chris Hipkins ruled out the Greens' rent cap, saying it was not under consideration \"and would not be in the future\"; Labour's 2026 rent pledge covers only state/social housing tenants.",
+     "source_url": "https://www.teaonews.co.nz/2023/07/04/pm-rules-out-greens-rental-cap/"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Limit annual rent increases to 2 percent.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_housing",
+     "policy_id": "POL55082"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Favours increasing supply through deregulation and property rights \"rather than measures such as rent controls\" (Salient 2026 guide).",
+     "source_url": "https://salient.org.nz/post/which-party-should-i-vote-for-your-guide-to-the-2026-election"
+    },
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 1,
+     "evidence": "Caps social-housing rent at 25% of income (state-owned housing only).",
+     "source_url": "https://allianceparty.nz/the-right-to-a-roof-alliance-housing-policy/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q09",
+   "issue": "housing",
+   "text": "The government should build a lot more state and public housing.",
+   "explainer": "Kāinga Ora's building programme was scaled back after 2023; the government has focused on community housing providers and private supply.",
+   "positions": {
+    "national": {
+     "position": -1,
+     "evidence": "\"Focused primarily on building more homes rather than controlling rents... free up land, streamline planning and consenting\" — supply-led, not a state building programme (Salient guide).",
+     "source_url": "https://salient.org.nz/post/which-party-should-i-vote-for-your-guide-to-the-2026-election"
+    },
+    "labour": {
+     "position": 2,
+     "evidence": "Add at least 6,000 more social housing places over the next four years.",
+     "source_url": "https://www.labour.org.nz/maori-trades-training",
+     "policy_id": "POL55151"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Increase public housing supply and housing support.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_housing",
+     "policy_id": "POL55081"
+    },
+    "act": {
+     "position": -1,
+     "evidence": "Favours \"increasing supply through deregulation, stronger property rights and easier consenting\" and \"greater faith in private investment... than in direct government provision\".",
+     "source_url": "https://salient.org.nz/post/which-party-should-i-vote-for-your-guide-to-the-2026-election"
+    },
+    "nz-first": null,
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "Increase the supply of housing in both the public and private sector; wants more public and affordable housing.",
+     "source_url": "https://www.maoriparty.org.nz/housing",
+     "policy_id": "POL55071"
+    },
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "\"A five-year housing plan: a massive public building programme led by Kāinga Ora, alongside a newly established Ministry of Works.\"",
+     "source_url": "https://allianceparty.nz/the-right-to-a-roof-alliance-housing-policy/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": {
+     "position": 1,
+     "evidence": "Mana Taumaru local build policy: hemp-panel homes built by local trainees on papakāinga, allocated to families in overcrowded or substandard housing.",
+     "source_url": "https://tetaitokerauparty.org.nz/our-policies/"
+    }
+   }
+  },
+  {
+   "id": "q10",
+   "issue": "housing",
+   "text": "Councils should have to allow more and denser housing, such as townhouses and apartments, in our cities.",
+   "explainer": "Zoning rules decide how many homes can be built. Recent reforms (MDRS, \"Going for Housing Growth\") push councils to allow more density.",
+   "positions": {
+    "national": {
+     "position": 2,
+     "evidence": "Wants to \"free up land, streamline planning and consenting, and finance the infrastructure needed for development\" (Salient guide); removing the ban on minimum car-parking is the only partial exception.",
+     "source_url": "https://salient.org.nz/post/which-party-should-i-vote-for-your-guide-to-the-2026-election"
+    },
+    "labour": null,
+    "green": {
+     "position": 1,
+     "evidence": "Encourage mixed-use areas and walkability in new housing developments.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_housing",
+     "policy_id": "POL55084"
+    },
+    "act": {
+     "position": 2,
+     "evidence": "Favours increasing supply through deregulation and easier consenting (Salient guide).",
+     "source_url": "https://salient.org.nz/post/which-party-should-i-vote-for-your-guide-to-the-2026-election"
+    },
+    "nz-first": {
+     "position": -1,
+     "evidence": "Add infrastructure and service-capacity requirements to residential fast-track permissions (growth only where infrastructure keeps up).",
+     "source_url": "https://www.nzfirst.nz/nzfirst_policy_announcement_changes_to_fast_track_residential_approvals",
+     "policy_id": "POL55305"
+    },
+    "te-pati-maori": null,
+    "opportunity": {
+     "position": 2,
+     "evidence": "Revamp zoning to reduce house prices.",
+     "source_url": "https://www.opportunity.org.nz/affordable_housing",
+     "policy_id": "POL54853"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q11",
+   "issue": "health",
+   "text": "Some GP visits each year should be free for everyone.",
+   "explainer": "Most adults pay $20–$80+ per GP visit. Labour proposes a \"Medicard\" with three free visits a year, funded by its capital gains tax.",
+   "positions": {
+    "national": {
+     "position": -1,
+     "evidence": "Says Labour's \"free\" promises (including the Medicard) total $18 billion and would need \"nine new taxes\"; offers rural doctor funding and pharmacist access instead.",
+     "source_url": "https://assets.national.org.nz/web/prod/National%27s%20Economic%20Plan.pdf?v=1790557287"
+    },
+    "labour": {
+     "position": 2,
+     "evidence": "Make up to three GP visits a year free with a Medicard.",
+     "source_url": "https://www.labour.org.nz/medicard",
+     "policy_id": "POL54669"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Increase free public health services.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_health",
+     "policy_id": "POL55118"
+    },
+    "act": null,
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "\"Elimination of costs for GP visits, dental, optical, and audiology services.\"",
+     "source_url": "https://allianceparty.nz/alliance-health-policy-free-gp-dental-optical-audiology/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q12",
+   "issue": "health",
+   "text": "The $5 prescription charge should be scrapped.",
+   "explainer": "The previous government removed the $5 prescription co-payment in 2023; the current government reinstated it for most adults in 2024.",
+   "positions": {
+    "national": {
+     "position": -1,
+     "evidence": "Keeps the $5 charge it reinstated in 2024 for most adults, with \"targeted free prescriptions to seniors\" instead of universal free prescriptions.",
+     "source_url": "https://www.national.org.nz/news/20261022-retirement"
+    },
+    "labour": {
+     "position": 2,
+     "evidence": "Remove the $5 charge for prescriptions (restore universal free prescriptions).",
+     "source_url": "https://www.labour.org.nz/prescriptions",
+     "policy_id": "POL54665"
+    },
+    "green": null,
+    "act": null,
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q13",
+   "issue": "education",
+   "text": "Free school lunches should be expanded and made more generous, even if it costs more.",
+   "explainer": "Ka Ora, Ka Ako school lunches were kept but cut to roughly $3 a meal in 2024 under a model designed by ACT's David Seymour.",
+   "positions": {
+    "national": null,
+    "labour": {
+     "position": 2,
+     "evidence": "Pay for school lunches that cost $5 per meal and ensure schools provide locally made lunches.",
+     "source_url": "https://www.scoop.co.nz/stories/PA2610/S00093/labour-will-cut-the-cost-of-getting-kids-back-to-school.htm?_gl=1%2Awh2xs%2A_gcl_au%2AMjA5OTAyMjU5NC4xNzg5MzYwOTI0%2A_ga%2AOTkyMDg3MDU1LjE3ODkzNjA5MjM.%2A_ga_GGVMM3MB82%2AczE3OTE3NzkwNzAkbzE3JGcxJHQxNzkxNzc5MDk4JGozMiRsMCRoMA..",
+     "policy_id": "POL55284"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Keep and expand the free school lunches programme.",
+     "source_url": "https://www.greens.org.nz/green_party_announces_plan_for_free_and_nutritious_school_lunches",
+     "policy_id": "POL54722"
+    },
+    "act": null,
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": {
+     "position": 2,
+     "evidence": "Rebuild the school lunch programme.",
+     "source_url": "https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education",
+     "policy_id": "POL54887"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q14",
+   "issue": "education",
+   "text": "Charter (partnership) schools should be allowed to continue.",
+   "explainer": "Charter schools are state-funded but privately run. They were reintroduced in 2025 by the National-ACT-NZ First government.",
+   "positions": {
+    "national": null,
+    "labour": {
+     "position": -2,
+     "evidence": "Labour vowed in 2024 to \"get rid of\" charter schools if returned to government.",
+     "source_url": "https://www.1news.co.nz/2024/08/12/labour-vows-to-get-rid-of-charter-schools-if-it-regains-power/"
+    },
+    "green": {
+     "position": -2,
+     "evidence": "Green alternative Budget 2025 includes \"Abolition of Charter Schools Agency\".",
+     "source_url": "https://assets.nationbuilder.com/beachheroes/pages/39988/attachments/original/1756800427/Budget_Print_MW_version_5-08-25_web.pdf?1756800427"
+    },
+    "act": {
+     "position": 2,
+     "evidence": "ACT campaigns on expanding charter schools.",
+     "source_url": "https://www.act.org.nz/expanding-charter-schools"
+    },
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q15",
+   "issue": "education",
+   "text": "University and polytechnic study should be fees-free.",
+   "explainer": "Fees-free first-year study (2018) was replaced in 2025 by a smaller final-year scheme.",
+   "positions": {
+    "national": {
+     "position": -1,
+     "evidence": "National's student policy is lowering the student-loan repayment rate to 10%, not fees-free study.",
+     "source_url": "https://assets.national.org.nz/web/prod/Back%20Pocket%20Boost%20for%20Graduates.pdf?v=1788119937",
+     "policy_id": "POL54813"
+    },
+    "labour": {
+     "position": -1,
+     "evidence": "Labour's 2026 student offer is a 10% student-loan cut for graduates who did not get Fees Free, not a return to fees-free study.",
+     "source_url": "https://www.labour.org.nz/cutting-student-debt"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Introduce fees-free tertiary education, universal student allowances and paid placements.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_tertiary_education",
+     "policy_id": "POL55035"
+    },
+    "act": null,
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "Platform promises \"free education and healthcare\" (RNZ summary of the Alliance).",
+     "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q16",
+   "issue": "crime-justice",
+   "text": "Repeat serious offenders should face mandatory longer sentences under a \"three strikes\" law.",
+   "explainer": "Labour repealed three strikes in 2022; the current government reinstated a version in December 2024.",
+   "positions": {
+    "national": {
+     "position": 2,
+     "evidence": "Voted for the Sentencing (Reinstating Three Strikes) Amendment Act 2024 at every reading.",
+     "source_url": "https://en.wikipedia.org/wiki/Sentencing_(Reinstating_Three_Strikes)_Amendment_Act_2024"
+    },
+    "labour": {
+     "position": -2,
+     "evidence": "Voted against reinstatement; justice spokesperson Duncan Webb said three-strikes regimes did little to reduce serious crime.",
+     "source_url": "https://en.wikipedia.org/wiki/Sentencing_(Reinstating_Three_Strikes)_Amendment_Act_2024"
+    },
+    "green": {
+     "position": -2,
+     "evidence": "Voted against; Tamatha Paul said it would disproportionately target Māori and increase incarceration.",
+     "source_url": "https://en.wikipedia.org/wiki/Sentencing_(Reinstating_Three_Strikes)_Amendment_Act_2024"
+    },
+    "act": {
+     "position": 2,
+     "evidence": "Voted for reinstating three strikes; 2026 policy adds a minimum three-year sentence for a third burglary conviction.",
+     "source_url": "https://en.wikipedia.org/wiki/Sentencing_(Reinstating_Three_Strikes)_Amendment_Act_2024",
+     "policy_id": "POL54644"
+    },
+    "nz-first": {
+     "position": 2,
+     "evidence": "Voted for the Reinstating Three Strikes Amendment Act 2024.",
+     "source_url": "https://en.wikipedia.org/wiki/Sentencing_(Reinstating_Three_Strikes)_Amendment_Act_2024"
+    },
+    "te-pati-maori": {
+     "position": -2,
+     "evidence": "Voted against the Reinstating Three Strikes Bill.",
+     "source_url": "https://en.wikipedia.org/wiki/Sentencing_(Reinstating_Three_Strikes)_Amendment_Act_2024"
+    },
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": -1,
+     "evidence": "Justice policy reframes it as \"Three strikes and into treatment\" — prevention and rehabilitation rather than longer sentences.",
+     "source_url": "https://allianceparty.nz/alliance-justice-policy-three-strikes-into-treatment/"
+    },
+    "conservative": {
+     "position": 1,
+     "evidence": "Wants \"meaningful consequences for serious and repeat offending\" and longer sentences for repeat child sex offenders.",
+     "source_url": "https://conservatives.org.nz/policies/overview/"
+    },
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q17",
+   "issue": "crime-justice",
+   "text": "We should send fewer people to prison and put more into rehabilitation and community alternatives.",
+   "explainer": "NZ has one of the higher imprisonment rates in the OECD, and the prison population has been rising.",
+   "positions": {
+    "national": {
+     "position": -1,
+     "evidence": "Add 240 beds to Christchurch Men's Prison; backs tougher sentencing (three strikes).",
+     "source_url": "https://assets.national.org.nz/web/prod/National%27s%20South%20Island%20Plan.pdf?v=1786659579",
+     "policy_id": "POL54705"
+    },
+    "labour": null,
+    "green": {
+     "position": 2,
+     "evidence": "Prioritise rehabilitation for convicted offenders; reduce restrictions on judges' decisions.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_justice_and_community_safety",
+     "policy_id": "POL55138"
+    },
+    "act": {
+     "position": -1,
+     "evidence": "Tougher sentencing, including a mandatory minimum for a third burglary conviction.",
+     "source_url": "https://www.act.org.nz/burglary",
+     "policy_id": "POL54644"
+    },
+    "nz-first": null,
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "Abolish prisons by 2040 and move towards restorative justice.",
+     "source_url": "https://drive.google.com/file/d/1PhB4PNA7fE9Ipj5SXhRRCrmgywM-MhAx/view",
+     "policy_id": "POL55283"
+    },
+    "opportunity": {
+     "position": 2,
+     "evidence": "Boost court and rehabilitation funding to reduce reoffending.",
+     "source_url": "https://www.opportunity.org.nz/smart_on_crime",
+     "policy_id": "POL54854"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": {
+     "position": 1,
+     "evidence": "\"Education not incarceration\" — redirect money from prohibition enforcement to health and education.",
+     "source_url": "https://www.alcp.org.nz/policy"
+    },
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "\"Three strikes and into treatment. Prevent harm, rehabilitate, support victims.\"",
+     "source_url": "https://allianceparty.nz/alliance-justice-policy-three-strikes-into-treatment/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": {
+     "position": 2,
+     "evidence": "\"Prison Sinking Lid Policy\" — shift non-violent offenders with addiction and mental-health needs out of prison into localised rehabilitation.",
+     "source_url": "https://tetaitokerauparty.org.nz/our-policies/"
+    }
+   }
+  },
+  {
+   "id": "q18",
+   "issue": "climate",
+   "text": "Farmers should pay for their greenhouse gas emissions, for example by bringing agriculture into the Emissions Trading Scheme.",
+   "explainer": "Agriculture produces about half of NZ's emissions but is not priced. The government dropped plans to price farm emissions before 2030.",
+   "positions": {
+    "national": {
+     "position": -2,
+     "evidence": "Maintain the current position of agricultural emissions not being priced or offset through the ETS.",
+     "source_url": "https://assets.national.org.nz/web/prod/Growing%20More%20to%20Feed%20the%20World.pdf?v=1792108210",
+     "policy_id": "POL55319"
+    },
+    "labour": {
+     "position": -1,
+     "evidence": "Made no commitment to price farm emissions: \"in government Labour will urgently review the ETS\" (Greenpeace survey answer).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "\"We will bring agricultural emissions into the ETS\" (answer to Greenpeace 2026 survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf",
+     "policy_id": "POL54834"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Ensure agriculture is not part of the emissions trading scheme.",
+     "source_url": "https://www.act.org.nz/paris",
+     "policy_id": "POL54666"
+    },
+    "nz-first": {
+     "position": -2,
+     "evidence": "\"No, NZ First does not support emissions pricing in any form unless adopted by key trading partners\" (Greenpeace survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "Answered \"Yes\" to bringing agriculture into the ETS by mid-2027 (Greenpeace 2026 survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "opportunity": {
+     "position": 1,
+     "evidence": "Strengthen the ETS and include agriculture; told Greenpeace it \"will explore a cap-and-trade market or novel levy structure\" for biogenic methane.",
+     "source_url": "https://www.opportunity.org.nz/climate_action",
+     "policy_id": "POL54810"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": {
+     "position": 1,
+     "evidence": "Wants to \"redirect funds away from animal agriculture, through taxes\" and transition farmers to plant-based agriculture.",
+     "source_url": "https://animaljustice.org.nz/policies/ajp-animal-policies/"
+    },
+    "alliance": {
+     "position": 1,
+     "evidence": "Replace the ETS with a carbon tax on a polluter-pays principle (no specific farm carve-out stated).",
+     "source_url": "https://allianceparty.nz/alliance-environment-climate-sustainable-economy-policy/"
+    },
+    "conservative": {
+     "position": -2,
+     "evidence": "\"There is no climate emergency... Laws/agreements like the Paris Accord, Zero Carbon Act, and Emissions Trading Scheme impose significant costs.\"",
+     "source_url": "https://conservatives.org.nz/policies/agriculture/"
+    },
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q19",
+   "issue": "climate",
+   "text": "New Zealand should keep its legal net-zero 2050 target and stay in the Paris Agreement.",
+   "explainer": "The Zero Carbon Act (2019, passed almost unanimously) sets a net-zero target for 2050; NZ is a party to the 2015 Paris Agreement.",
+   "positions": {
+    "national": null,
+    "labour": {
+     "position": 2,
+     "evidence": "\"Labour is fully committed to the Paris Agreement and will put New Zealand on course to meet its targets.\"",
+     "source_url": "https://www.labour.org.nz/fixing-the-ets"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Enforce timely implementation of climate legislation and increase Zero Carbon Act reporting and transparency.",
+     "source_url": "https://www.greens.org.nz/manifesto_2020_climate_action_emissions_reduction",
+     "policy_id": "POL54859"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Repeal the Zero Carbon Act and NZ's net-zero goal.",
+     "source_url": "https://assets.nationbuilder.com/actnz/pages/37031/attachments/original/1788642905/Scrap_Net_Zero_policy_09.pdf?1788642905",
+     "policy_id": "POL55046"
+    },
+    "nz-first": {
+     "position": -2,
+     "evidence": "Says it would withdraw New Zealand from the Paris Agreement (Salient guide; KPMG tracker: \"Campaigned to leave the Paris Accord\").",
+     "source_url": "https://salient.org.nz/post/which-party-should-i-vote-for-your-guide-to-the-2026-election"
+    },
+    "te-pati-maori": null,
+    "opportunity": {
+     "position": 2,
+     "evidence": "Retain the Climate Change Commission and ensure NZ's emissions goals align with the Paris Agreement.",
+     "source_url": "https://www.opportunity.org.nz/climate_action",
+     "policy_id": "POL55169"
+    },
+    "nz-loyal": {
+     "position": -2,
+     "evidence": "\"End climate accords based on faulty science\" (party website as quoted by RNZ).",
+     "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+    },
+    "nz-outdoors-freedom": {
+     "position": -2,
+     "evidence": "\"Let's get out of Paris accord and work for solutions to mitigate weather risks.\"",
+     "source_url": "https://freedom.kiwi/agriculture-policy"
+    },
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": {
+     "position": -2,
+     "evidence": "\"New Zealand should leave the Paris Agreement\"; all climate legislation \"should be repealed or withdrawn\".",
+     "source_url": "https://conservatives.org.nz/policies/climate/"
+    },
+    "womens-rights": null,
+    "vision-nz": {
+     "position": -2,
+     "evidence": "\"Restore absolute national sovereignty by leaving the United Nations and the Paris Accord.\"",
+     "source_url": "https://www.vision.org.nz/visionpolicies"
+    },
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q20",
+   "issue": "environment",
+   "text": "Ministers should be able to fast-track big infrastructure, mining and development projects past the normal consent process.",
+   "explainer": "The Fast-track Approvals Act 2024 lets listed projects skip the usual Resource Management Act process, with expert panels making the decisions.",
+   "positions": {
+    "national": {
+     "position": 2,
+     "evidence": "Passed the Fast-track Approvals Act 2024 (supported at every reading) and proposes a fast-track policy statement for mining.",
+     "source_url": "https://en.wikipedia.org/wiki/Fast-track_Approvals_Act_2024",
+     "policy_id": "POL54701"
+    },
+    "labour": {
+     "position": -1,
+     "evidence": "Voted against the Act; \"Labour will fix the Fast-track Approvals Act so that environmental protections are not overridden, there is public participation\" (keeps a fast-track, but changed).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "green": {
+     "position": -2,
+     "evidence": "Repeal the Fast-track Approvals Act.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_environmental_protection",
+     "policy_id": "POL55095"
+    },
+    "act": {
+     "position": 2,
+     "evidence": "Supported the Fast-track Approvals Act at every reading.",
+     "source_url": "https://en.wikipedia.org/wiki/Fast-track_Approvals_Act_2024"
+    },
+    "nz-first": {
+     "position": 2,
+     "evidence": "The Act was part of NZ First's coalition agreement; supported at every reading.",
+     "source_url": "https://en.wikipedia.org/wiki/Fast-track_Approvals_Act_2024"
+    },
+    "te-pati-maori": {
+     "position": -2,
+     "evidence": "Voted against the Fast-track Approvals Act at all three readings.",
+     "source_url": "https://en.wikipedia.org/wiki/Fast-track_Approvals_Act_2024"
+    },
+    "opportunity": {
+     "position": -1,
+     "evidence": "Answered \"Yes\" to restoring strong environmental protections and public participation in all resource consenting (Greenpeace survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": -1,
+     "evidence": "Criticises the government for \"fast-tracking legislation and using urgency for policies that harm Aotearoa New Zealand\".",
+     "source_url": "https://allianceparty.nz/open-not-owned-alliance-trade-policy/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q21",
+   "issue": "environment",
+   "text": "Seabed mining should be banned in New Zealand waters.",
+   "explainer": "Trans-Tasman Resources' South Taranaki iron-sands project has applied through fast-track; several parties want a permanent ban.",
+   "positions": {
+    "national": {
+     "position": -2,
+     "evidence": "Voted against members' bills to ban seabed mining (2023) and created the fast-track pathway used by seabed miners (Greenpeace assessment).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "labour": {
+     "position": 2,
+     "evidence": "Answered \"Yes\" to banning seabed mining (Greenpeace 2026 survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Answered \"Yes\" to banning seabed mining (Greenpeace 2026 survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Voted against seabed-mining ban bills (2023); vocal pro-mining stance (Greenpeace assessment).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "nz-first": {
+     "position": -2,
+     "evidence": "\"No, NZ First does not support a ban; instead, we advocate for higher government levies on minerals extracted from coastal seabed iron sands.\"",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "Ban seabed mining.",
+     "source_url": "https://www.maoriparty.org.nz/climate",
+     "policy_id": "POL54680"
+    },
+    "opportunity": {
+     "position": 2,
+     "evidence": "Permanently ban seabed mining in NZ waters.",
+     "source_url": "https://www.opportunity.org.nz/healthy-oceans",
+     "policy_id": "POL54827"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": {
+     "position": 1,
+     "evidence": "Key objective: \"Restrict seabed mining\" (restriction rather than outright ban).",
+     "source_url": "https://animaljustice.org.nz/policies/ajp-animal-policies/"
+    },
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q22",
+   "issue": "energy",
+   "text": "The ban on new offshore oil and gas exploration should be brought back.",
+   "explainer": "Labour banned new offshore oil and gas permits in 2018; the Crown Minerals Amendment Act 2025 reversed the ban.",
+   "positions": {
+    "national": {
+     "position": -2,
+     "evidence": "Voted to repeal the ban (Crown Minerals Amendment Act 2025).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "labour": {
+     "position": 2,
+     "evidence": "Answered \"Yes\" to bringing back the ban (Greenpeace survey); Hipkins has said Labour would reinstate it while honouring existing permits.",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "\"Yes. The Green Party wants to see new fossil fuel extraction ended in Aotearoa.\"",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Voted to repeal the ban (Crown Minerals Amendment Act 2025).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "nz-first": {
+     "position": -2,
+     "evidence": "\"No. NZ First does not support reinstating a blanket ban on oil and gas exploration.\"",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "Answered \"Yes\" to reinstating the ban (Greenpeace survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "opportunity": {
+     "position": 0,
+     "evidence": "Would \"not oppose a reinstatement\" but considers it \"probably unnecessary\" and would not progress it itself.",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "nz-loyal": {
+     "position": -2,
+     "evidence": "\"Establish energy independence, including oil and gas\" (party website as quoted by RNZ).",
+     "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+    },
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": {
+     "position": 2,
+     "evidence": "\"Reverse the lifting of the offshore exploration ban and reinstate the moratorium on new fossil fuel permits.\"",
+     "source_url": "https://animaljustice.org.nz/policies/ajp-environmental-and-economic-policies/"
+    },
+    "alliance": null,
+    "conservative": {
+     "position": -2,
+     "evidence": "\"Actively encourage commercial oil and gas exploration.\"",
+     "source_url": "https://conservatives.org.nz/policies/natural-resources/"
+    },
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q23",
+   "issue": "energy",
+   "text": "The government should take a bigger direct role in electricity, such as a new state-owned power company or splitting up the big power companies.",
+   "explainer": "Four \"gentailers\" (Meridian, Mercury, Genesis, Contact) both generate and retail most power. A 2025 government review rejected structural separation.",
+   "positions": {
+    "national": {
+     "position": -1,
+     "evidence": "The National-led government's 2025 electricity review response did not include structural separation; Nicola Willis argued splitting the gentailers risked \"massive instability\".",
+     "source_url": "https://www.odt.co.nz/news/national/govt-stops-short-major-energy-reform-rnz"
+    },
+    "labour": null,
+    "green": {
+     "position": 2,
+     "evidence": "Establish a publicly owned Crown entity (\"Kiwipower\") to invest in renewable generation.",
+     "source_url": "https://assets.nationbuilder.com/beachheroes/pages/74612/attachments/original/1784510079/The_Greens%27_Full_Power_Policy.pdf?1784510079",
+     "policy_id": "POL54766"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Open power transmission to private investment; opposes break-ups and state-run alternatives.",
+     "source_url": "https://assets.nationbuilder.com/actnz/pages/37361/attachments/original/1789601230/Stability__investment__affordability.pdf?1789601230",
+     "policy_id": "POL55163"
+    },
+    "nz-first": {
+     "position": 2,
+     "evidence": "Divide the \"generation\" and \"retail\" arms of power companies.",
+     "source_url": "https://www.nzfirst.nz/breaking_up_the_gentailers",
+     "policy_id": "POL54656"
+    },
+    "te-pati-maori": null,
+    "opportunity": {
+     "position": 1,
+     "evidence": "Restructure the electricity market to bring prices down; use the Crown's gentailer stakes to fund renewables.",
+     "source_url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
+     "policy_id": "POL54806"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "\"100 percent public ownership of electricity generation, transmission, distribution, and retail.\"",
+     "source_url": "https://allianceparty.nz/alliance-environment-climate-sustainable-economy-policy/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q24",
+   "issue": "te-tiriti",
+   "text": "Parliament should define the principles of the Treaty of Waitangi in law, as ACT's Treaty Principles Bill proposed.",
+   "explainer": "The Treaty Principles Bill was voted down 112–11 at its second reading in April 2025; only ACT voted for it.",
+   "positions": {
+    "national": {
+     "position": -2,
+     "evidence": "Voted against the Bill at its second reading after supporting it only to select committee; Luxon pledged to refuse a Treaty referendum.",
+     "source_url": "https://en.wikipedia.org/wiki/Treaty_Principles_Bill"
+    },
+    "labour": {
+     "position": -2,
+     "evidence": "Voted against at both readings; said the Bill's principles \"did not match the principles of the Treaty\".",
+     "source_url": "https://en.wikipedia.org/wiki/Treaty_Principles_Bill"
+    },
+    "green": {
+     "position": -2,
+     "evidence": "Voted against at both readings.",
+     "source_url": "https://en.wikipedia.org/wiki/Treaty_Principles_Bill"
+    },
+    "act": {
+     "position": 2,
+     "evidence": "Sponsored the Treaty Principles Bill; its 11 MPs were the only votes in favour at the second reading (10 April 2025).",
+     "source_url": "https://en.wikipedia.org/wiki/Treaty_Principles_Bill"
+    },
+    "nz-first": {
+     "position": -1,
+     "evidence": "Voted against at the second reading, but its own policy is to remove references to \"the principles of the Treaty\" from legislation.",
+     "source_url": "https://en.wikipedia.org/wiki/Treaty_Principles_Bill"
+    },
+    "te-pati-maori": {
+     "position": -2,
+     "evidence": "Voted against at both readings; MPs led the haka protest at the first reading.",
+     "source_url": "https://en.wikipedia.org/wiki/Treaty_Principles_Bill"
+    },
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q25",
+   "issue": "te-tiriti",
+   "text": "The Waitangi Tribunal should be abolished or replaced once historical claims are settled.",
+   "explainer": "The Waitangi Tribunal (1975) investigates Crown breaches of the Treaty and makes mostly non-binding recommendations.",
+   "positions": {
+    "national": null,
+    "labour": null,
+    "green": {
+     "position": -2,
+     "evidence": "Implement Waitangi Tribunal recommendations; uphold te Tiriti across government decision-making.",
+     "source_url": "https://www.greens.org.nz/agriculture_policy",
+     "policy_id": "POL54902"
+    },
+    "act": {
+     "position": 2,
+     "evidence": "Abolish the Waitangi Tribunal once historical claims are resolved.",
+     "source_url": "https://www.act.org.nz/news/finish-the-settlements-wind-up-the-waitangi-tribunal",
+     "policy_id": "POL54960"
+    },
+    "nz-first": {
+     "position": 2,
+     "evidence": "Replace the Waitangi Tribunal with a Treaty of Waitangi Completion Commission.",
+     "source_url": "https://www.nzfirst.nz/winston_peters_ending_the_waitangi_make_work_industry",
+     "policy_id": "POL55157"
+    },
+    "te-pati-maori": {
+     "position": -2,
+     "evidence": "Make Waitangi Tribunal recommendations binding.",
+     "source_url": "https://www.scoop.co.nz/stories/PA2608/S00044/te-pati-maori-will-make-the-waitangi-tribunal-recommendations-binding.htm?_gl=1%2A161whb7%2A_gcl_au%2AMTk4NTg5NzkzNi4xNzg2NDAxNDc5%2A_ga%2AMTA2ODM2Mjg3Mi4xNzg2NDAxNDc5%2A_ga_GGVMM3MB82%2AczE3ODY0MTg1OTkkbzIkZzAkdDE3ODY0MTg2MDIkajU3JGwwJGgw",
+     "policy_id": "POL54795"
+    },
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": {
+     "position": -2,
+     "evidence": "Increase and entrench Waitangi Tribunal funding and extend its binding jurisdiction on the Crown.",
+     "source_url": "https://tetaitokerauparty.org.nz/our-policies/"
+    }
+   }
+  },
+  {
+   "id": "q26",
+   "issue": "te-tiriti",
+   "text": "The Māori electorates should be abolished, or their future put to a referendum.",
+   "explainer": "Seven Māori electorates are elected by voters on the Māori roll. Abolishing or entrenching them is a recurring debate.",
+   "positions": {
+    "national": null,
+    "labour": null,
+    "green": {
+     "position": -2,
+     "evidence": "Entrench the Māori electoral seats.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_democracy",
+     "policy_id": "POL54982"
+    },
+    "act": null,
+    "nz-first": {
+     "position": 2,
+     "evidence": "Introduce a binding referendum on the Māori seats.",
+     "source_url": "https://www.nzfirst.nz/referendum_on_maori_seats",
+     "policy_id": "POL54757"
+    },
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q27",
+   "issue": "te-tiriti",
+   "text": "Government services should be allocated by need alone, without Māori- or ethnicity-specific programmes.",
+   "explainer": "Since 2023 the government has removed some ethnicity-based targeting (e.g. disestablishing Te Aka Whai Ora, the Māori Health Authority).",
+   "positions": {
+    "national": null,
+    "labour": {
+     "position": -1,
+     "evidence": "Introduce a Māori-led job training programme and fund; allocate 5% of government procurement to Māori businesses.",
+     "source_url": "https://www.labour.org.nz/maori-trades-training",
+     "policy_id": "POL54819"
+    },
+    "green": {
+     "position": -2,
+     "evidence": "Simplify funding for Hauora Māori providers; create a Māori Education Authority.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_health",
+     "policy_id": "POL55119"
+    },
+    "act": {
+     "position": 2,
+     "evidence": "Remove ethnicity-based criteria for delivering public services.",
+     "source_url": "https://assets.nationbuilder.com/actnz/mailings/59226/attachments/original/PublicService_policy_03.pdf?1786679526",
+     "policy_id": "POL54839"
+    },
+    "nz-first": {
+     "position": 1,
+     "evidence": "Disestablish the Independent Māori Statutory Board from Auckland Council; policy is to remove \"principles of the Treaty\" references from environmental laws.",
+     "source_url": "https://www.nzfirst.nz/disestablish_auckland_s_independent_maori_statutory_board",
+     "policy_id": "POL54668"
+    },
+    "te-pati-maori": {
+     "position": -2,
+     "evidence": "Invest in Māori health outcomes; Māori-led health, education, disability and justice systems.",
+     "source_url": "https://www.maoriparty.org.nz/health",
+     "policy_id": "POL55066"
+    },
+    "opportunity": null,
+    "nz-loyal": {
+     "position": 2,
+     "evidence": "\"Scrap all race-based policies\" (party website as quoted by RNZ).",
+     "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+    },
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": -1,
+     "evidence": "Māori health providers keep the option to remain independent with full funding; constitutional change with Te Tiriti at the centre.",
+     "source_url": "https://allianceparty.nz/alliance-health-policy-free-gp-dental-optical-audiology/"
+    },
+    "conservative": {
+     "position": 2,
+     "evidence": "\"Employment, promotion and access to public services should be based on individual need, ability and merit.\"",
+     "source_url": "https://conservatives.org.nz/policies/overview/"
+    },
+    "womens-rights": null,
+    "vision-nz": {
+     "position": 2,
+     "evidence": "\"Completely remove all race-based targeted policies and spending within the healthcare sector\"; \"End all race-based politics.\"",
+     "source_url": "https://www.vision.org.nz/visionpolicies"
+    },
+    "free-palestine": null,
+    "te-tai-tokerau-party": {
+     "position": -2,
+     "evidence": "\"Te Aka Motuhake\" — an autonomous, state-funded, iwi-governed Māori health authority.",
+     "source_url": "https://tetaitokerauparty.org.nz/our-policies/"
+    }
+   }
+  },
+  {
+   "id": "q28",
+   "issue": "democracy",
+   "text": "The Regulatory Standards Act 2025 should be repealed.",
+   "explainer": "ACT's Regulatory Standards Act sets \"principles of responsible regulation\" that new laws are checked against. It passed 68–55 in November 2025.",
+   "positions": {
+    "national": {
+     "position": -2,
+     "evidence": "Voted for the Bill at all three readings; did not answer Greenpeace's repeal question.",
+     "source_url": "https://en.wikipedia.org/wiki/Regulatory_Standards_Bill"
+    },
+    "labour": {
+     "position": 2,
+     "evidence": "Lodged a member's bill to repeal it (Nov 2025); \"Yes\" to repealing it in the Greenpeace survey.",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "\"Yes\" to repealing the Regulatory Standards Act (Greenpeace survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Wrote and sponsored the Act (David Seymour, Minister for Regulation).",
+     "source_url": "https://en.wikipedia.org/wiki/Regulatory_Standards_Bill"
+    },
+    "nz-first": {
+     "position": 0,
+     "evidence": "Mixed: voted for it in 2025, Winston Peters then said NZ First would repeal it, but its 2026 Greenpeace survey answer did not commit to repeal.",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "\"Yes\" to repealing the Regulatory Standards Act (Greenpeace survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "opportunity": {
+     "position": 2,
+     "evidence": "\"Yes\" to repealing the Regulatory Standards Act (Greenpeace survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": {
+     "position": 2,
+     "evidence": "\"As a matter of priority, vote to repeal both the Regulatory Standards Act 2025 and the Treaty Clauses Review.\"",
+     "source_url": "https://tetaitokerauparty.org.nz/our-policies/"
+    }
+   }
+  },
+  {
+   "id": "q29",
+   "issue": "democracy",
+   "text": "Political donations should be capped, with only New Zealand voters allowed to donate.",
+   "explainer": "There is no cap on how much a person can donate to a party; companies, trusts and unions can donate.",
+   "positions": {
+    "national": null,
+    "labour": {
+     "position": 0,
+     "evidence": "No commitment: \"Labour believes in transparent and fair rules for political party donations\" (Greenpeace survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "\"Yes\"; also \"capping a donor's donations at a level that does not risk donor influence over policy.\"",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "act": null,
+    "nz-first": {
+     "position": 0,
+     "evidence": "Supports \"electoral integrity and transparency\" but has no policy restricting donations to voters (Greenpeace survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "\"Yes\" to limiting donations to registered voters (Greenpeace survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "opportunity": {
+     "position": 2,
+     "evidence": "Cap donations at $30,000 per donor per election and ban donations from companies and trusts.",
+     "source_url": "https://www.opportunity.org.nz/clean_up_politics",
+     "policy_id": "POL54809"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": {
+     "position": 1,
+     "evidence": "Committed to \"getting money out of politics\" (no specific cap stated).",
+     "source_url": "https://animaljustice.org.nz/election-2026/election-manifesto/"
+    },
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q30",
+   "issue": "local-government",
+   "text": "Central government should cap how much councils can raise rates each year.",
+   "explainer": "National proposes keeping annual rates rises within 2–4%; councils argue they need more funding tools for infrastructure.",
+   "positions": {
+    "national": {
+     "position": 2,
+     "evidence": "Instruct councils to keep annual rate increases between 2 and 4 percent.",
+     "source_url": "https://www.national.org.nz/news/260826-simonwatts",
+     "policy_id": "POL54817"
+    },
+    "labour": null,
+    "green": {
+     "position": -2,
+     "evidence": "Reject the proposed rates cap and allow councils to use more funding tools.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_local_government",
+     "policy_id": "POL55056"
+    },
+    "act": null,
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": {
+     "position": -1,
+     "evidence": "Give councils more tools to invest in infrastructure (rather than limiting revenue).",
+     "source_url": "https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf",
+     "policy_id": "POL54811"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q31",
+   "issue": "immigration",
+   "text": "Overall immigration to New Zealand should be reduced.",
+   "explainer": "Net migration hit records in 2023 and then fell sharply as more New Zealanders left for Australia.",
+   "positions": {
+    "national": null,
+    "labour": null,
+    "green": {
+     "position": -1,
+     "evidence": "Increase the refugee quota and support migrant workers to residency.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_immigration_and_refugees",
+     "policy_id": "POL55127"
+    },
+    "act": null,
+    "nz-first": {
+     "position": 2,
+     "evidence": "Replace the Accredited Employer Work Visa with a shortage-led skilled visa; remove automatic student-visa work rights; tie immigration to genuine labour shortages.",
+     "source_url": "https://www.nzfirst.nz/nzfirst_to_scrap_accredited_working_visa_model",
+     "policy_id": "POL55262"
+    },
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": {
+     "position": 1,
+     "evidence": "Cap net immigration of unskilled and semi-skilled workers (zero if social goods are not increasing), while welcoming skilled migrants.",
+     "source_url": "https://conservatives.org.nz/policies/immigration/"
+    },
+    "womens-rights": null,
+    "vision-nz": {
+     "position": 2,
+     "evidence": "\"Pause mass immigration immediately to review visa policies and relieve pressure on local infrastructure.\"",
+     "source_url": "https://www.vision.org.nz/visionpolicies"
+    },
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q32",
+   "issue": "immigration",
+   "text": "New residents should have to wait longer (five years or more) before they can get most benefits.",
+   "explainer": "Most benefits currently need two years' residence. National proposes five; NZ First ten.",
+   "positions": {
+    "national": {
+     "position": 2,
+     "evidence": "Change entitlements for benefits for new NZ residents to five years.",
+     "source_url": "https://assets.national.org.nz/web/prod/A%20firm,%20fair%20and%20affordable%20welfare%20system.pdf?v=1791407915",
+     "policy_id": "POL55230"
+    },
+    "labour": null,
+    "green": null,
+    "act": {
+     "position": 2,
+     "evidence": "\"ACT will introduce a five-year welfare stand-down for residence class visa holders\" (2026 Fiscal Plan).",
+     "source_url": "https://assets.nationbuilder.com/actnz/pages/38747/attachments/original/1791599898/ACT_2026_Fiscal_Plan.pdf?1791599898",
+     "policy_id": "POL54881"
+    },
+    "nz-first": {
+     "position": 2,
+     "evidence": "A benefit stand-down period of ten years for migrants, and longer residency for citizenship.",
+     "source_url": "https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies",
+     "policy_id": "POL54965"
+    },
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q33",
+   "issue": "superannuation",
+   "text": "The age of eligibility for NZ Superannuation should stay at 65.",
+   "explainer": "NZ Super is paid to everyone 65+ regardless of income. ACT proposes 67 by 2035; National supports raising it eventually but its 2026 policy is cross-party talks.",
+   "positions": {
+    "national": {
+     "position": -1,
+     "evidence": "Would \"have liked to make change\" and has long backed 67 from a future date, but its 2026 election policy is only to hold cross-party accord talks on the retirement system.",
+     "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1865995/national-adamant-its-superannuation-stance-has-not-changed"
+    },
+    "labour": {
+     "position": 2,
+     "evidence": "\"Labour has been clear that it will not means test New Zealand superannuation or increase the age of eligibility.\"",
+     "source_url": "https://www.greypower.co.nz/assets/default/documents/Labour-Response-Grey-Power-Election-Policy-2026.pdf"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "\"Yes. We will retain NZ Superannuation as a universal entitlement from age 65.\"",
+     "source_url": "https://www.greypower.co.nz/assets/default/documents/Green-Response-Grey-Power-Election-Policy-2026.pdf"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Raise the retirement age to 67 by 2035 (three months a year).",
+     "source_url": "https://assets.nationbuilder.com/actnz/pages/38747/attachments/original/1791599898/ACT_2026_Fiscal_Plan.pdf?1791599898",
+     "policy_id": "POL55275"
+    },
+    "nz-first": {
+     "position": 2,
+     "evidence": "\"New Zealand First will not support changes to the entitlement or eligibility of New Zealand Superannuation.\"",
+     "source_url": "https://www.greypower.co.nz/assets/default/documents/NZ-First-Response-Grey-Power-Election-Policy-2026.pdf"
+    },
+    "te-pati-maori": null,
+    "opportunity": {
+     "position": 2,
+     "evidence": "Answered \"Yes\" to retaining the eligibility age at 65 (Grey Power survey).",
+     "source_url": "https://www.greypower.co.nz/assets/default/documents/Opportunity-Response-Grey-Power-Election-Policy-2026.pdf"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "\"Keeps the age of entitlement for Super at 65.\"",
+     "source_url": "https://allianceparty.nz/alliance-retirement-aged-care-kiwisaver-policy/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q34",
+   "issue": "welfare",
+   "text": "Main benefits should be substantially increased.",
+   "explainer": "Benefits were indexed to wages from 2023, then changed back to inflation indexation by the current government.",
+   "positions": {
+    "national": {
+     "position": -1,
+     "evidence": "Reduce benefit payments for people receiving support for more than two years.",
+     "source_url": "https://assets.national.org.nz/web/prod/A%20firm,%20fair%20and%20affordable%20welfare%20system.pdf?v=1791407915",
+     "policy_id": "POL55227"
+    },
+    "labour": null,
+    "green": {
+     "position": 2,
+     "evidence": "Increase benefit payments and improve standards for beneficiaries.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_income",
+     "policy_id": "POL55132"
+    },
+    "act": {
+     "position": -1,
+     "evidence": "ACT's 2026 Fiscal Plan has no benefit increases; it tightens eligibility (independent medical certification for health and disability benefits, a five-year stand-down for new residents).",
+     "source_url": "https://assets.nationbuilder.com/actnz/pages/38747/attachments/original/1791599898/ACT_2026_Fiscal_Plan.pdf?1791599898",
+     "policy_id": "POL54864"
+    },
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": {
+     "position": 1,
+     "evidence": "A universal Citizens' Income of up to $370 a week, replacing many main benefits.",
+     "source_url": "https://web.archive.org/save/https://www.opportunity.org.nz/tax-reset",
+     "policy_id": "POL54816"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "Proposes a Universal Benefit, individual entitlements, universal child payments and an end to benefit sanctions.",
+     "source_url": "https://allianceparty.nz/alliance-plan-to-rebuild-universal-social-security/"
+    },
+    "conservative": null,
+    "womens-rights": {
+     "position": 2,
+     "evidence": "\"Minimum wages and benefits need to be increased so that all people have living incomes.\"",
+     "source_url": "https://womensrightsparty.nz/policy/"
+    },
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": {
+     "position": 2,
+     "evidence": "Replace the \"complex, punitive benefit system\" with a non-taxable Universal Whānau Allowance and wipe MSD/IRD debt for low-income whānau.",
+     "source_url": "https://tetaitokerauparty.org.nz/our-policies/"
+    }
+   }
+  },
+  {
+   "id": "q35",
+   "issue": "welfare",
+   "text": "Beneficiaries should face tougher obligations and sanctions, such as drug tests or payment cuts.",
+   "explainer": "The government introduced a traffic-light sanctions system in 2025. National proposes drug testing and cuts after two years on a benefit.",
+   "positions": {
+    "national": {
+     "position": 2,
+     "evidence": "Introduce drug testing for people receiving benefits; reduce payments after two years on a benefit; longer stand-downs.",
+     "source_url": "https://www.national.org.nz/news/261008-louiseupston",
+     "policy_id": "POL55228"
+    },
+    "labour": null,
+    "green": {
+     "position": -2,
+     "evidence": "Increase benefit payments and improve standards for beneficiaries; refuse to use AI for welfare decisions.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_income",
+     "policy_id": "POL55132"
+    },
+    "act": {
+     "position": 2,
+     "evidence": "Restrict medical certification for health-related benefits and monitor spending of long-term jobseekers.",
+     "source_url": "https://www.act.org.nz/news/act-announces-policy-to-make-benefits-a-hand-up-not-a-way-of-life",
+     "policy_id": "POL54866"
+    },
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": -2,
+     "evidence": "\"An end to benefit sanctions.\"",
+     "source_url": "https://allianceparty.nz/alliance-plan-to-rebuild-universal-social-security/"
+    },
+    "conservative": {
+     "position": 1,
+     "evidence": "\"Welfare: Reform is needed. Fifty years of expanding welfare has undermined our families and created an underclass.\"",
+     "source_url": "https://www.conservatives.nz/policy"
+    },
+    "womens-rights": null,
+    "vision-nz": {
+     "position": 1,
+     "evidence": "\"Dismantle state dependency\"; \"Slash state dependency by eliminating financial rules that disincentivise marriage.\"",
+     "source_url": "https://www.vision.org.nz/visionpolicies"
+    },
+    "free-palestine": null,
+    "te-tai-tokerau-party": {
+     "position": -2,
+     "evidence": "Replace the \"punitive benefit system\" and end \"relationship status\" policing.",
+     "source_url": "https://tetaitokerauparty.org.nz/our-policies/"
+    }
+   }
+  },
+  {
+   "id": "q36",
+   "issue": "transport",
+   "text": "Transport money should go mainly to public transport and rail rather than new highways.",
+   "explainer": "The government's priority is \"Roads of National Significance\"; others favour rapid transit, rail and cheaper fares.",
+   "positions": {
+    "national": {
+     "position": -2,
+     "evidence": "Complete construction of the next set of Roads of National Significance; fund the $800m Christchurch Northern Motorway extension.",
+     "source_url": "https://assets.national.org.nz/web/prod/National%27s%20Economic%20Plan.pdf?v=1790557287",
+     "policy_id": "POL55177"
+    },
+    "labour": {
+     "position": 1,
+     "evidence": "Introduce a $20 weekly public-transport fare cap in the main cities ($10 elsewhere).",
+     "source_url": "https://www.labour.org.nz/farecap",
+     "policy_id": "POL54685"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Build mass rapid transit in three major cities and invest in better rail and bus links; free or $2 fares.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_transport",
+     "policy_id": "POL55030"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Focus the National Land Transport Fund on road infrastructure only.",
+     "source_url": "https://assets.nationbuilder.com/actnz/pages/36934/attachments/original/1788396907/Keep_New_Zealand_Moving.pdf?1788396907",
+     "policy_id": "POL54974"
+    },
+    "nz-first": {
+     "position": 1,
+     "evidence": "Establish a 12-month trial of commuter rail in Canterbury and further south.",
+     "source_url": "https://www.scoop.co.nz/stories/PA2610/S00155/nzfirst-campaign-announcement-commuter-rail-for-christchurch-reinstate-southerner-train.htm",
+     "policy_id": "POL55310"
+    },
+    "te-pati-maori": null,
+    "opportunity": {
+     "position": 2,
+     "evidence": "Make public transport free.",
+     "source_url": "https://www.opportunity.org.nz/free_public_transport",
+     "policy_id": "POL54786"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "Publicly owned rail and coastal shipping as \"twin backbones\" of freight, more public-transport funding.",
+     "source_url": "https://allianceparty.nz/alliance-national-transport-strategy/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q37",
+   "issue": "agriculture",
+   "text": "Rules limiting farm pollution of rivers (such as nitrogen limits) should be strengthened rather than loosened.",
+   "explainer": "The government has loosened some freshwater rules (e.g. Te Mana o te Wai, intensification limits) and is rewriting the RMA.",
+   "positions": {
+    "national": {
+     "position": -2,
+     "evidence": "Supported blocking regional freshwater plans and let restrictions on intensification lapse (Greenpeace assessment).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "labour": {
+     "position": 1,
+     "evidence": "Says \"freshwater limits should be national bottom lines\" and wants councils able to implement the 2020 freshwater policy, but would not commit to lowering the nitrogen cap.",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Impose nitrogen caps on all agricultural practices; phase out synthetic nitrogen fertiliser.",
+     "source_url": "https://www.greens.org.nz/agriculture_policy",
+     "policy_id": "POL54906"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Replace Te Mana o te Wai with measurable freshwater outcomes.",
+     "source_url": "https://www.act.org.nz/news/leave-spirituality-out-of-infrastructure",
+     "policy_id": "POL55193"
+    },
+    "nz-first": {
+     "position": -2,
+     "evidence": "\"No. Our approach is for practical, science-based freshwater management that balances environmental outcomes with productive land use.\"",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "Answered \"Yes\" to immediately lowering the synthetic nitrogen fertiliser cap and banning new dairy conversions (Greenpeace survey).",
+     "source_url": "https://www.greenpeace.org/static/planet4-aotearoa-stateless/2026/10/8f5b71d1-election-2026-scorecard-ranking-methodology.pdf"
+    },
+    "opportunity": {
+     "position": 1,
+     "evidence": "Tighten rules on water quality and reinstate Te Mana o te Wai, but did not back a lower fertiliser cap.",
+     "source_url": "https://www.opportunity.org.nz/healthy_land",
+     "policy_id": "POL54797"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": {
+     "position": 1,
+     "evidence": "Links intensive dairying to \"degradation of waterways\"; seeks to transition away from animal agriculture.",
+     "source_url": "https://animaljustice.org.nz/policies/ajp-animal-policies/"
+    },
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q38",
+   "issue": "agriculture",
+   "text": "Rules on gene technology (genetic modification) should be relaxed.",
+   "explainer": "The Gene Technology Bill would end the effective ban on GM outside the lab; it stalled in 2025–26 after NZ First withheld support.",
+   "positions": {
+    "national": {
+     "position": 2,
+     "evidence": "Introduced the Gene Technology Bill and remains in favour.",
+     "source_url": "https://agscience.org.nz/?p=16163"
+    },
+    "labour": {
+     "position": -1,
+     "evidence": "Withheld support at select committee citing limited consultation and lack of regulatory independence.",
+     "source_url": "https://agscience.org.nz/?p=16163"
+    },
+    "green": {
+     "position": -2,
+     "evidence": "Withheld support for the Gene Technology Bill at select committee.",
+     "source_url": "https://agscience.org.nz/?p=16163"
+    },
+    "act": {
+     "position": 2,
+     "evidence": "Supports the Gene Technology Bill (with objections to its Māori advisory committee).",
+     "source_url": "https://agscience.org.nz/?p=16163"
+    },
+    "nz-first": {
+     "position": -1,
+     "evidence": "Would not support the Bill into law without major changes, calling it \"far too liberal\" and lacking safeguards.",
+     "source_url": "https://www.odt.co.nz/news/national/nz-first-withhold-support-gene-tech-bill-unless-major-changes-made-rnz"
+    },
+    "te-pati-maori": {
+     "position": -2,
+     "evidence": "Withheld support for the Gene Technology Bill at select committee.",
+     "source_url": "https://agscience.org.nz/?p=16163"
+    },
+    "opportunity": {
+     "position": 2,
+     "evidence": "Rewrite gene technology regulations to enable modern gene technologies.",
+     "source_url": "https://www.opportunity.org.nz/gene_technology_policy",
+     "policy_id": "POL54842"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": {
+     "position": -2,
+     "evidence": "\"We oppose the current government's move to end the long-standing restrictions placed on field trials and the release of genetically modified organisms.\"",
+     "source_url": "https://conservatives.org.nz/policies/agriculture/"
+    },
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q39",
+   "issue": "foreign-policy",
+   "text": "New Zealand should formally recognise the State of Palestine now.",
+   "explainer": "In September 2025 the government decided not to recognise Palestine \"yet\", unlike the UK, Canada and Australia.",
+   "positions": {
+    "national": {
+     "position": -1,
+     "evidence": "Government (PM Luxon, Foreign Minister Peters) decided in Sept 2025 not to recognise Palestine \"yet\", calling recognition inevitable but premature while Hamas remains.",
+     "source_url": "https://www.1news.co.nz/2025/09/27/nz-will-not-yet-recognise-palestinian-statehood-peters-says-in-un-speech"
+    },
+    "labour": {
+     "position": 2,
+     "evidence": "\"Labour will recognise the State of Palestine\" and place economic sanctions on Israel.",
+     "source_url": "https://www.labour.org.nz/foreign-affairs",
+     "policy_id": "POL55131"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Recognise Palestine as a state and sanction Israel.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_global_affairs_and_trade",
+     "policy_id": "POL55113"
+    },
+    "act": null,
+    "nz-first": {
+     "position": -1,
+     "evidence": "Winston Peters announced at the UN in Sept 2025: \"we do not think that time is now.\"",
+     "source_url": "https://www.1news.co.nz/2025/09/27/nz-will-not-yet-recognise-palestinian-statehood-peters-says-in-un-speech"
+    },
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 2,
+     "evidence": "\"We must demand self-determination for Palestinians and the right to return to their homeland.\"",
+     "source_url": "https://allianceparty.nz/alliance-foreign-affairs-defence-international-relations-policy/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": {
+     "position": 2,
+     "evidence": "Party exists to press NZ to \"uphold its obligations under international law with respect to Palestine\"; seeks a single democratic state.",
+     "source_url": "https://palfree.nz/"
+    },
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q40",
+   "issue": "defence",
+   "text": "Defence spending should rise substantially, towards 2% of GDP.",
+   "explainer": "The 2025 Defence Capability Plan aims to lift defence spending from about 1% to 2% of GDP by the early 2030s.",
+   "positions": {
+    "national": {
+     "position": 2,
+     "evidence": "National-led government's Defence Capability Plan targets 2% of GDP by 2032/33; Defence Minister Chris Penk reaffirmed \"a smooth and steady upward trajectory to 2 percent\" in May 2026.",
+     "source_url": "https://newswire.co.nz/2026/05/chris-penk-defence-spending-2-percent-gdp-2033/"
+    },
+    "labour": null,
+    "green": {
+     "position": -1,
+     "evidence": "Security policy prioritises peacekeeping and \"prevention over military force\" and would withdraw NZ from the Five Eyes network; no increase in military spending proposed.",
+     "source_url": "https://assets.nationbuilder.com/beachheroes/pages/64948/attachments/original/1778624615/Policy-Greens_Security_Defence_Policy_2011-2026.pdf",
+     "policy_id": "POL55114"
+    },
+    "act": {
+     "position": 2,
+     "evidence": "ACT's fiscal plan protects all spending growth in defence while cutting elsewhere, and ACT has called for a \"real\" pathway to 2% of GDP.",
+     "source_url": "https://www.act.org.nz/real_change_to_take_defence_seriously"
+    },
+    "nz-first": null,
+    "te-pati-maori": {
+     "position": -2,
+     "evidence": "Declare NZ a \"military neutral\" country and focus the Defence Force on protection, disaster response and the Pacific.",
+     "source_url": "https://www.maoriparty.org.nz/military_neutrality",
+     "policy_id": "POL54684"
+    },
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": -2,
+     "evidence": "A \"peace-focused defence force\", non-alignment and an end to intelligence sharing with the US.",
+     "source_url": "https://allianceparty.nz/alliance-foreign-affairs-defence-international-relations-policy/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": {
+     "position": -1,
+     "evidence": "NZ should withdraw \"from any formal security alliances with the U.S.\" and distance itself from \"military interventionism\".",
+     "source_url": "https://palfree.nz/"
+    },
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q41",
+   "issue": "foreign-policy",
+   "text": "New Zealand should increase its overseas aid budget.",
+   "explainer": "NZ spends about 0.25–0.3% of national income on aid; the UN target is 0.7%.",
+   "positions": {
+    "national": null,
+    "labour": {
+     "position": 2,
+     "evidence": "Increase foreign aid to 0.7 percent of GDP.",
+     "source_url": "https://www.labour.org.nz/news/speech-labours-foreign-policy/",
+     "policy_id": "POL55129"
+    },
+    "green": {
+     "position": 2,
+     "evidence": "Increase climate aid funding to the Pacific.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_pacific_peoples",
+     "policy_id": "POL55034"
+    },
+    "act": {
+     "position": -2,
+     "evidence": "Reduce NZ's foreign aid to 2017 levels.",
+     "source_url": "https://www.act.org.nz/news/new-zealand-can-t-keep-exporting-taxpayers-money",
+     "policy_id": "POL55266"
+    },
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": {
+     "position": 1,
+     "evidence": "Developed nations should cancel Global South debts \"as a form of reparation\".",
+     "source_url": "https://allianceparty.nz/alliance-foreign-affairs-defence-international-relations-policy/"
+    },
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q42",
+   "issue": "drugs",
+   "text": "Cannabis should be legalised or decriminalised for personal use.",
+   "explainer": "A 2020 referendum on legal cannabis narrowly failed (48.4% yes). Medicinal cannabis is legal on prescription.",
+   "positions": {
+    "national": null,
+    "labour": null,
+    "green": {
+     "position": 2,
+     "evidence": "Decriminalise cannabis for personal use; long-term policy is a legal, regulated cannabis market.",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_drug_law_reform",
+     "policy_id": "POL55117"
+    },
+    "act": null,
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": {
+     "position": 2,
+     "evidence": "Decriminalise drug possession (but not supply).",
+     "source_url": "https://www.opportunity.org.nz/smart_on_crime",
+     "policy_id": "POL54855"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": {
+     "position": 1,
+     "evidence": "Supports medicinal use of cannabis for humans, pets and livestock (full legalisation not stated).",
+     "source_url": "https://freedom.kiwi/cannabis-policy"
+    },
+    "legalise-cannabis": {
+     "position": 2,
+     "evidence": "\"That the possession, cultivation and use of pure cannabis... be free from prosecution\" and a regulated R18 cannabis market.",
+     "source_url": "https://www.alcp.org.nz/policy"
+    },
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q43",
+   "issue": "social-issues",
+   "text": "Children under 16 should be banned from social media.",
+   "explainer": "National's Online Safety bill would make platforms take reasonable steps to keep under-16s off; ACT and NZ First oppose it.",
+   "positions": {
+    "national": {
+     "position": 2,
+     "evidence": "Ban under-16 year olds from social media (Online Safety (Minimum Age...) Bill).",
+     "source_url": "https://www.national.org.nz/news/260824-christopherluxon",
+     "policy_id": "POL54815"
+    },
+    "labour": {
+     "position": 1,
+     "evidence": "Backed the bill to pass its first reading and go to select committee, wanting it \"substantially improved\".",
+     "source_url": "https://www.1news.co.nz/2026/08/25/labour-backs-under-16s-social-media-ban-handing-luxon-lifeline/",
+     "policy_id": "POL54753"
+    },
+    "green": null,
+    "act": {
+     "position": -2,
+     "evidence": "Will vote against: \"The ban they propose won't work, and the side effects will leave us worse off\" (David Seymour).",
+     "source_url": "https://www.1news.co.nz/2026/08/24/luxon-moves-to-ban-under-16s-from-social-media-but-act-nz-first-say-no/"
+    },
+    "nz-first": {
+     "position": -2,
+     "evidence": "Winston Peters said NZ First would \"never support this\", citing a slippery slope.",
+     "source_url": "https://www.1news.co.nz/2026/08/24/luxon-moves-to-ban-under-16s-from-social-media-but-act-nz-first-say-no/"
+    },
+    "te-pati-maori": null,
+    "opportunity": {
+     "position": 1,
+     "evidence": "Support the online safety bill on an under-16 ban going to select committee.",
+     "source_url": "https://www.opportunity.org.nz/opportunity_to_support_online_safety_bill_to_select_committee",
+     "policy_id": "POL54783"
+    },
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": null,
+    "womens-rights": null,
+    "vision-nz": null,
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q44",
+   "issue": "social-issues",
+   "text": "Puberty blockers and other medical gender-transition treatments should not be available to under-18s.",
+   "explainer": "In December 2025 the government stopped new prescriptions of puberty blockers for gender dysphoria, following the UK.",
+   "positions": {
+    "national": {
+     "position": 2,
+     "evidence": "Health Minister Simeon Brown halted new puberty-blocker prescriptions for gender dysphoria from 19 Dec 2025 as a \"precautionary approach\".",
+     "source_url": "https://www.1news.co.nz/2025/11/19/govt-halts-puberty-blockers-for-new-gender-dysphoria-patients"
+    },
+    "labour": null,
+    "green": {
+     "position": -2,
+     "evidence": "Free access to gender-affirming health care \"including reversal of the ban on puberty blockers\".",
+     "source_url": "https://www.greens.org.nz/manifesto_2026_rainbow_communities",
+     "policy_id": "POL55010"
+    },
+    "act": null,
+    "nz-first": {
+     "position": 2,
+     "evidence": "Campaigned for the ban and announced it ahead of the Ministry; Peters: \"we never stopped fighting to make this happen.\"",
+     "source_url": "https://www.1news.co.nz/2025/11/19/govt-halts-puberty-blockers-for-new-gender-dysphoria-patients"
+    },
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": {
+     "position": 1,
+     "evidence": "Restrict irreversible procedures to alter a child's sex characteristics \"where there is no clear medical necessity\" and require independent assessment.",
+     "source_url": "https://conservatives.org.nz/policies/child-protection/"
+    },
+    "womens-rights": {
+     "position": 2,
+     "evidence": "Supports the puberty-blocker ban and would extend it to cross-sex hormones for under-18s and surgery for under-25s.",
+     "source_url": "https://womensrightsparty.nz/policy/"
+    },
+    "vision-nz": {
+     "position": 2,
+     "evidence": "\"Prohibit all medical interventions for gender transition in minors.\"",
+     "source_url": "https://www.vision.org.nz/visionpolicies"
+    },
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  },
+  {
+   "id": "q45",
+   "issue": "social-issues",
+   "text": "Abortion law should be made more restrictive.",
+   "explainer": "Abortion was decriminalised in 2020 (conscience vote). Most parties treat it as a conscience issue and have no party position.",
+   "positions": {
+    "national": null,
+    "labour": null,
+    "green": null,
+    "act": null,
+    "nz-first": null,
+    "te-pati-maori": null,
+    "opportunity": null,
+    "nz-loyal": null,
+    "nz-outdoors-freedom": null,
+    "legalise-cannabis": null,
+    "animal-justice": null,
+    "alliance": null,
+    "conservative": {
+     "position": 2,
+     "evidence": "Introduce an Unborn Child (Legal Personhood and Rights) Act recognising an unborn child as a legal person from the third trimester (28 weeks).",
+     "source_url": "https://conservatives.org.nz/policies/right-to-life/"
+    },
+    "womens-rights": {
+     "position": -2,
+     "evidence": "Lists \"the right to have control of our own bodies, including reproductive autonomy\" among the rights it exists to protect.",
+     "source_url": "https://womensrightsparty.nz/our-priorities/"
+    },
+    "vision-nz": {
+     "position": 1,
+     "evidence": "Healthcare policy commits to \"protecting the sanctity of human life\" (no specific abortion law change stated).",
+     "source_url": "https://www.vision.org.nz/visionpolicies"
+    },
+    "free-palestine": null,
+    "te-tai-tokerau-party": null
+   }
+  }
+ ]
+}

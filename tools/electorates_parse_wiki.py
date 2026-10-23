@@ -62,6 +62,9 @@ print(len(cands), len(res), len(pv))
 
 # --- per-electorate Wikipedia pages: official 2023 boxes (candidate votes + party votes) and by-elections
 def num(x):
+    m = re.match(r'\{\{\s*percentage\s*\|\s*([\d,]+)\s*\|\s*([\d,]+)\s*(?:\|\s*(\d+))?\s*\}\}', (x or '').strip(), re.I)
+    if m:
+        return round(int(m.group(1).replace(',', '')) / int(m.group(2).replace(',', '')) * 100, int(m.group(3) or 2))
     x = (x or '').replace(',', '').strip()
     try: return float(x) if '.' in x else int(x)
     except ValueError: return None

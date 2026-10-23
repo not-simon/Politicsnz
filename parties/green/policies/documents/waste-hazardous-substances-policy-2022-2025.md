@@ -1,5 +1,5 @@
 ---
-title: "Waste and Hazardous Substances (Green Party policy document)"
+title: "Waste and Hazardous Substances Policy (Green Party policy document)"
 party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/65046/attachments/original/1778624620/Policy-Greens_Waste_Hazardous_Substances_Policy_2022-2025.pdf"
 retrieved: "2026-10-23"
@@ -10,7 +10,7 @@ policy_version: "17 December 2025"
 local_copy: "raw/party-docs/green/pdf/Policy-Greens_Waste_Hazardous_Substances_Policy_2022-2025.pdf"
 sha1: "4f5f0f8533d1b9922946355b2b17956a103c2e97"
 ---
-# Waste and Hazardous Substances (Green Party policy document)
+# Waste and Hazardous Substances Policy (Green Party policy document)
 
 <!-- page 1 -->
 

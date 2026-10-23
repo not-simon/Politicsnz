@@ -72,7 +72,7 @@ def html_to_md(el):
     """Convert a bs4 element to Markdown, keeping all text (only markup normalised)."""
     from markdownify import markdownify
     from bs4 import NavigableString, Comment
-    for bad in el.find_all(["script", "style", "noscript", "form", "iframe", "svg", "button"]):
+    for bad in el.find_all(["script", "style", "noscript", "form", "iframe", "svg", "button", "img", "picture", "video"]):
         bad.decompose()
     for c in el.find_all(string=lambda x: isinstance(x, Comment)):
         c.extract()

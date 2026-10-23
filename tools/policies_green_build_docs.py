@@ -19,7 +19,7 @@ POLICY_PAGE_RE = re.compile(r'^(manifesto_2026.*|manifesto_2020_climate_action_e
                             r'policy_announcements|nature_and_climate|people_and_communities|services_and_systems|'
                             r'te_tiriti_o_waitangi|affordable_food_for_all_of_us|connect_aotearoa|drink_swim_fish|'
                             r'power_for_all_of_us|tax_system_for_all|te_waonui_a_taane)$')
-EXCLUDE = {'privacy_policy', 'greens_back_waitangi_tribunal_inquiry_into_climate_change_policy',
+EXCLUDE = {'privacy_policy', 'nz_must_pursue_independent_foreign_policy', 'greens_back_waitangi_tribunal_inquiry_into_climate_change_policy',
            'greens_stand_with_coromandel_locals_against_luxon_s_destructive_mining_policy'}
 ANNOUNCE_FILE = os.path.join(BASE, 'tools', 'policies_green_announcements.txt')  # curated list of 2026 policy press releases
 
@@ -150,7 +150,11 @@ for url, v in man.items():
     text, pages, ptitle, tables = pdf_doc(os.path.join(RAW, 'pdf', fn), url, v)
     first = next((l.strip() for l in text.split('\n') if l.strip() and not l.startswith('<!--')), stem)
     title = ptitle if ptitle and len(ptitle) > 4 and not ptitle.lower().startswith(('microsoft', 'untitled', 'canva')) else first
-    if fn.startswith('Policy-Greens_'): title = re.sub(r'\s+\d+$', '', first) + ' (Green Party policy document)'
+    if fn.startswith('Policy-Greens_'):
+        ls = [l.strip() for l in text.split('\n') if l.strip() and not l.startswith('<!--')]
+        first = re.sub(r'\s+\d+$', '', ls[0])
+        if not first.endswith('Policy') and len(ls) > 1 and ls[1].endswith('Policy'): first += ' ' + ls[1]
+        title = first + ' (Green Party policy document)'
     if fn in DESIGNED: slug, title = DESIGNED[fn]
     ver = re.search(r'Version:\s*([0-9]{1,2} [A-Z][a-z]+ 20\d\d)', text)
     d = {'title': title, 'party': 'green', 'source_url': url, 'retrieved': v['retrieved'], 'format': 'pdf',

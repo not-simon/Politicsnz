@@ -1,5 +1,5 @@
 ---
-title: "Housing and Sustainable (Green Party policy document)"
+title: "Housing and Sustainable Communities Policy (Green Party policy document)"
 party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/64752/attachments/original/1781650001/Policy-Greens_Housing_and_Sustainable_Communities_Policy_2022-2026.pdf?1781650001"
 retrieved: "2026-10-23"
@@ -10,7 +10,7 @@ policy_version: "17 June 2026"
 local_copy: "raw/party-docs/green/pdf/Policy-Greens_Housing_and_Sustainable_Communities_Policy_2022-2026.pdf"
 sha1: "7162f20a375c1144e6e0254edf52aa61fcb6373b"
 ---
-# Housing and Sustainable (Green Party policy document)
+# Housing and Sustainable Communities Policy (Green Party policy document)
 
 <!-- page 1 -->
 

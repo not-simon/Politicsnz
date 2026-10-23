@@ -11,7 +11,7 @@ fetch_method: curl (desktop Chrome user-agent)
 
 ## Full text (verbatim)
 
-MEDIA RELEASE
+MEDIA RELEASE\
  Not A Party (NAP)
 
 7 October 2026
@@ -52,7 +52,7 @@ The political parties can keep arguing about who should run the country.
 
 What if we stopped trying to run the country through parties at all?
 
-**Not a new party.
+**Not a new party.\
  A new question.**
 
 ENDS

@@ -199,16 +199,16 @@ References:
 
 **Definition of Bullying** (adapted from Safe Work Australia’s definition)
 
-Workplace bullying is: repeated and unreasonable behaviour directed towards a worker or group of workers that can lead to physical or psychological harm.  
-**Repeated** behaviour is persistent (occurs more than once) and can involve a range of actions over time
-**Unreasonable** behaviour means actions that reasonable person in the same circumstances would see as unreasonable.  It includes victimising, humiliating, intimidating or threatening a person
+Workplace bullying is: repeated and unreasonable behaviour directed towards a worker or group of workers that can lead to physical or psychological harm.  \
+**Repeated** behaviour is persistent (occurs more than once) and can involve a range of actions over time\
+**Unreasonable** behaviour means actions that reasonable person in the same circumstances would see as unreasonable.  It includes victimising, humiliating, intimidating or threatening a person\
 **Bullying** may also include harassment, discrimination or violence
 
-**Workplace** bullying is not**:** One-off or occasional instances of forgetfulness, rudeness or tactlessness
-Setting high performance standards
-Constructive feedback and legitimate advice or peer review
-A manager requiring reasonable verbal or written work instruction to be carried out
-Warning or disciplining workers in line with the business or undertaking’s code of conduct
-A single incident of unreasonable behaviour
-Reasonable management actions delivered in a reasonable way
+**Workplace** bullying is not**:** One-off or occasional instances of forgetfulness, rudeness or tactlessness\
+Setting high performance standards\
+Constructive feedback and legitimate advice or peer review\
+A manager requiring reasonable verbal or written work instruction to be carried out\
+Warning or disciplining workers in line with the business or undertaking’s code of conduct\
+A single incident of unreasonable behaviour\
+Reasonable management actions delivered in a reasonable way\
 Differences in opinion or personality clashes that do not escalate into bullying, harassment or violence

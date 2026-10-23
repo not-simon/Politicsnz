@@ -23,14 +23,14 @@ The centrepiece of the Alliance policy is a five-year housing plan: a massive pu
 
 > “We will clear the social housing register, while creating decent jobs in construction and building high-quality homes that last,” Mr Moss said.
 
-From the archives · 1937 / 1978A Housing Corporation album marking the completion of the 100,000th state house. This page pairs the 1937 Miramar house with the 100,000th, built in Hornby, Christchurch, in 1978.
+From the archives · 1937 / 1978A Housing Corporation album marking the completion of the 100,000th state house. This page pairs the 1937 Miramar house with the 100,000th, built in Hornby, Christchurch, in 1978.\
 Housing Corporation album, [Archives New Zealand](https://www.flickr.com/photos/archivesnz/28172650979/), BAAM 4371/1/a. [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).
 
 The Alliance policy caps social housing rent at 25 percent of income, and establishes state backed mortgages and co-ownership models to help working people get into housing.
 
 > “Our economy has been reliant on property speculation for too long, but the commodification of housing does enormous harm to our communities. The Alliance believes housing is a public good, and will implement lending criteria that favours owner-occupiers while discouraging property speculators.”
 
-Palmerston North · c. 1937R B Hammond’s plan for Savage Crescent, Palmerston North, around 1937. The neighbourhood was designed around a shared recreation area, with gardens and houses positioned for sunlight. By 1944, 245 state houses had been built.
+Palmerston North · c. 1937R B Hammond’s plan for Savage Crescent, Palmerston North, around 1937. The neighbourhood was designed around a shared recreation area, with gardens and houses positioned for sunlight. By 1944, 245 state houses had been built.\
 [Manawatū Heritage, Ian Matheson City Archives](https://manawatuheritage.pncc.govt.nz/item/3546bb62-48eb-43de-9886-0773e8ec3a17).
 
 > “We won’t build a productive economy by buying and selling houses to one another. The state must intervene in the housing market significantly to provide a real reset, and encourage investment into higher productivity sectors,” Mr Moss said.
