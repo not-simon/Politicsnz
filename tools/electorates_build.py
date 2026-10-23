@@ -17,6 +17,7 @@ from electorates_meta import SRC, REGION, CHANGES, ABOLISHED, SITTING_OVERRIDE, 
 from bs4 import BeautifulSoup
 
 TODAY = '2026-10-23'
+CAND_NOTE = {'kerrin-leoni': 'Resigned as Labour’s candidate on 23 Oct 2026 after footage of her campaigning with Mongrel Mob members emerged; her name remains on the ballot (RNZ). Contested Waikato in 2020.'}
 def norm(s):
     return re.sub(r'[^a-z]', '', unicodedata.normalize('NFKD', s or '').encode('ascii', 'ignore').decode().lower())
 def slugify(s):
@@ -29,7 +30,9 @@ PARTY_NAMES = {'national': 'National', 'labour': 'Labour', 'green': 'Green', 'ac
                'nz-outdoors-freedom': 'NZ Outdoors & Freedom', 'legalise-cannabis': 'Legalise Cannabis',
                'animal-justice': 'Animal Justice', 'alliance': 'Alliance', 'conservative': 'Conservative',
                'womens-rights': "Women's Rights", 'vision-nz': 'Vision NZ', 'free-palestine': 'Free Palestine',
-               'te-tai-tokerau-party': 'Te Tai Tokerau Party', 'independent': 'Independent'}
+               'te-tai-tokerau-party': 'Te Tai Tokerau Party', 'independent': 'Independent', 'newzeal': 'NewZeal',
+               'democracynz': 'DemocracyNZ', 'freedoms-nz': 'Freedoms NZ', 'new-conservative': 'New Conservative',
+               'leighton-baker': 'Leighton Baker Party'}
 def wiki_party(name):
     n = (name or '').lower()
     for k, v in [('national', 'national'), ('labour', 'labour'), ('green', 'green'), ('act new zealand', 'act'),
@@ -145,7 +148,7 @@ for f in sorted(glob.glob(str(ROOT / 'raw/policy.nz/electorates/*-electorate.jso
         cands.append({'name': match['name'] if match else nm, 'slug': per['slug'], 'party': party,
                       'party_name': (per.get('party') or {}).get('name') or 'Independent',
                       'list_rank_2026': rank, 'folder': find_folder(party, per['slug']),
-                      'wikipedia_note': (match or {}).get('notes') or None,
+                      'wikipedia_note': CAND_NOTE.get(per['slug']) or (match or {}).get('notes') or None,
                       'incumbent': bool(match and match['incumbent'])})
     order = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity']
     cands.sort(key=lambda c: (order.index(c['party']) if c['party'] in order else 99, c['name']))
@@ -179,7 +182,7 @@ for f in sorted(glob.glob(str(ROOT / 'raw/policy.nz/electorates/*-electorate.jso
     marginal = bool((maj is not None and maj < 2000) or bg)
     basis = []
     if maj is not None and maj < 2000: basis.append(f'2023 majority {maj:,} (<2,000)' + (f' in predecessor {result_seat}' if ch else ''))
-    if bg: basis.append('identified as a seat to watch by media analysis: ' + bg[1])
+    if bg: basis.append('identified as a seat to watch by media analysis: ' + bg[1].rstrip('.'))
     if slug == 'tamaki-makaurau': basis.append('2025 by-election majority was 3,519')
     # contest notes
     if slug in NOTES:
@@ -275,7 +278,7 @@ for e in out:
     else:
         L.append('**Vacant**')
     if e['sitting_mp_note']: L += ['', e['sitting_mp_note']]
-    if e['mp_not_standing_note']: L += ['', e['mp_not_standing_note']]
+    if e['mp_not_standing_note'] and not e['sitting_mp_note']: L += ['', e['mp_not_standing_note']]
     if e['predecessor_mps']:
         L += ['', '| Predecessor seat | MP elected 2023 | Party | 2023 majority | Standing here? |', '|---|---|---|---|---|']
         for p in e['predecessor_mps']:
@@ -288,7 +291,7 @@ for e in out:
               '| Candidate | Party | Votes | % |', '|---|---|---:|---:|']
         for c in r['candidates'][:6]:
             L.append(f"| {c['name']} | {pname(c['party'])} | {fmt(c['votes'])} | {c['pct'] if c['pct'] is not None else '—'} |")
-        if len(r['candidates']) > 6: L.append(f"| _{len(r['candidates']) - 6} others_ | | | |")
+        if len(r['candidates']) > 6: n = len(r['candidates']) - 6; L.append(f"| _{n} other{'s' if n > 1 else ''}_ | | | |")
         if r.get('party_vote_pct'):
             L += ['', '**Party vote 2023 (%):** ' + ', '.join(f"{pname(k)} {v}" for k, v in sorted(r['party_vote_pct'].items(), key=lambda kv: -kv[1]))]
             if r['seat'] == 'Port Waikato': L.append('_Party vote is from the 14 October 2023 general election (the party vote was not cancelled)._')

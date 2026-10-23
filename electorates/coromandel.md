@@ -37,7 +37,7 @@ _2023 general election (14 Oct 2023). Winner **Scott Simpson** (National), major
 | Calleb Ansell | NZ First | 3,145 | 6.73 |
 | Joanna Verberg | ACT | 2,725 | 5.83 |
 | Ray Cobb | NZ Loyal | 2,315 | 4.95 |
-| _1 others_ | | | |
+| _1 other_ | | | |
 
 **Party vote 2023 (%):** National 42.83, Labour 19.55, ACT 11.84, NZ First 10.37, Green 7.78, NZ Loyal 3.34, Opportunity (TOP) 1.07, Te Pāti Māori 0.76
 

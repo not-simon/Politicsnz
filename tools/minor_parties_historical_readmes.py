@@ -88,6 +88,7 @@ P["nz-independent-coalition"] = dict(
 dying mother's bank account. He formed the party for the 2014 election on the slogan "safe children, safe whanau, safe
 society". It won 872 votes (0.04%) and Horan left Parliament. [1][2]""",
     notes={}, sources=[WP + "NZ_Independent_Coalition", "RNZ, \"Brendan Horan launches new party\" (30 Jul 2014) — http://www.radionz.co.nz/news/political/250964/brendan-horan-launches-new-party ; Electoral Commission, \"Registration of NZ Independent Coalition and Logo\" (24 Jul 2014) http://www.elections.org.nz/news-media/registration-nz-independent-coalition-and-logo", RESULTS_SRC])
+P["nz-independent-coalition"]["mps"] = "None elected under its banner. Leader Brendan Horan was already a sitting MP (elected on NZ First's list in 2011; independent from December 2012) and left Parliament at the 2014 election."
 P["civilian"] = dict(
     title="The Civilian Party",
     facts=[("Status (Oct 2026)", "**Deregistered** at its own request on 5 May 2015"), ("Founded", "Announced June 2013 by satirist Ben Uffindell (editor of *The Civilian* satirical website); registered 11 August 2014"),
@@ -121,7 +122,7 @@ P["advance-nz"] = dict(
            ("Ideology", "Billed by Ross as centrist and anti-corruption; campaigned largely on COVID-19 and vaccine conspiracy claims, 5G, 1080 and opposition to lockdowns"), ("Seats", "None won (Ross lost his seat)")],
     body="""Jami-Lee Ross, MP for Botany, left National in 2018 after accusing leader Simon Bridges of corruption over a
 $100,000 donation; he was later himself charged by the Serious Fraud Office over the donation scheme and was acquitted
-in 2022 while three co-defendants were convicted. In July 2020 Advance merged campaigns with Billy Te Kahika's NZ Public
+at a High Court trial that began in July 2022, while three co-defendants were convicted. In July 2020 Advance merged campaigns with Billy Te Kahika's NZ Public
 Party, a party known for spreading COVID-19 "plandemic" misinformation; other component parties were the NZ People's
 Party, Reset NZ and Direct Democracy NZ. [1][2]
 
@@ -133,6 +134,7 @@ Public Party split from Advance on 26 October 2020 and Te Kahika shut it down in
 convicted (and discharged on appeal) of breaching COVID-19 lockdown rules. [1][3][4]""",
     notes={}, sources=[WP + "Advance_New_Zealand", WP + "Jami-Lee_Ross", WP + "Billy_Te_Kahika",
                        "RNZ, \"Billy Te Kahika quits politics, shuts down New Zealand Public Party\" (19 Feb 2021) — https://www.rnz.co.nz/news/political/436757/billy-te-kahika-quits-politics-shuts-down-new-zealand-public-party ; Wikipedia \"New Zealand Public Party\" " + WP + "New_Zealand_Public_Party", RESULTS_SRC])
+P["advance-nz"]["mps"] = "None elected. Co-leader Jami-Lee Ross was the sitting (independent, ex-National) MP for Botany when he founded Advance; he chose not to defend Botany and left Parliament in 2020."
 P["heartland"] = dict(
     title="Heartland New Zealand Party (HeartlandNZ)",
     facts=[("Status (Oct 2026)", "**Deregistered** at its own request in June 2023; did not stand in 2023 or 2026"), ("Founded", "2019/2020 (sources differ); registered 6 August 2020"),
@@ -222,7 +224,7 @@ for slug, p in P.items():
     os.makedirs(d, exist_ok=True)
     facts = "\n".join(f"| **{k}** | {v} |" for k, v in p["facts"])
     md = f"# {p['title']}\n\n| | |\n|---|---|\n{facts}\n\n## History\n\n{p['body']}\n\n## Election results (2011–2023)\n\n"
-    md += result_rows(slug, p["notes"]) + "\n\n## MPs\n\nNone elected for this party.\n\n## Sources\n\n"
+    md += result_rows(slug, p["notes"]) + "\n\n## MPs\n\n" + p.get("mps", "None elected for this party.") + "\n\n## Sources\n\n"
     md += "\n".join(f"{i}. {s if not s.startswith('http') else 'Wikipedia — ' + s}" for i, s in enumerate(p["sources"], 1))
     md += "\n\nLocal copies of the Wikipedia articles: `raw/minor-parties/wiki/`. Electoral Commission pages are cited as referenced by Wikipedia (elections.nz blocks automated access from this environment).\n"
     open(os.path.join(d, "README.md"), "w").write(md)

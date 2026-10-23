@@ -35,7 +35,7 @@ _2023 general election (14 Oct 2023). Winner **Duncan Webb** (Labour), majority 
 | Mark Arneil | NZ First | 1,563 | 3.98 |
 | Matthew Fisken | ACT | 1,395 | 3.55 |
 | Michael Britnell | Legalise Cannabis | 680 | 1.73 |
-| _1 others_ | | | |
+| _1 other_ | | | |
 
 **Party vote 2023 (%):** National 31.11, Labour 28.49, Green 19.43, ACT 6.63, NZ First 5.2, Opportunity (TOP) 5.12, Te Pāti Māori 1.01, NZ Loyal 0.63
 

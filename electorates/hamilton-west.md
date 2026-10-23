@@ -62,7 +62,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - A classic bellwether: commentators note Hamilton West has been won by the largest party at every MMP election.
-- **Marginal / battleground:** identified as a seat to watch by media analysis: Bellwether..
+- **Marginal / battleground:** identified as a seat to watch by media analysis: Bellwether.
 
 ## Sources
 

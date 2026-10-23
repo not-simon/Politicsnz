@@ -47,7 +47,7 @@ out = {
   {"party": "nz-first", "name": "NZ First", "leader": "Winston Peters", "seats_2023": 8, "seats_at_dissolution": 8, "status": "government (coalition)"},
   {"party": "te-pati-maori", "name": "Te Pāti Māori", "leader": "Debbie Ngarewa-Packer & Rawiri Waititi (co-leaders)", "seats_2023": 6, "seats_at_dissolution": 4, "status": "opposition"},
   {"party": "opportunity", "name": "The Opportunity Party (TOP)", "leader": "Qiulae Wong", "seats_2023": 0, "status": "extra-parliamentary"},
-  {"party": "nz-loyal", "name": "New Zealand Loyal", "leader": "Kelvyn Alp", "seats_2023": 0, "status": "extra-parliamentary", "note": "Deregistered 26 Jul 2024, re-registered for 2026"},
+  {"party": "nz-loyal", "name": "New Zealand Loyal", "leader": "Kelvyn Alp", "seats_2023": 0, "status": "extra-parliamentary", "note": "Deregistered 26 Jul 2024 (non-renewal); listed again among the parties contesting the 2026 party vote (Wikipedia; policy.nz)"},
   {"party": "legalise-cannabis", "name": "Aotearoa Legalise Cannabis Party", "leader": "Maki Herbert & Michael Appleby", "seats_2023": 0, "status": "extra-parliamentary"},
   {"party": "nz-outdoors-freedom", "name": "NZ Outdoors & Freedom Party", "leader": "Sue Grey", "seats_2023": 0, "status": "extra-parliamentary", "note": "Part of the Freedoms NZ umbrella in 2023"},
   {"party": "vision-nz", "name": "Vision NZ", "leader": "Hannah Tamaki", "seats_2023": 0, "status": "extra-parliamentary", "note": "Part of the Freedoms NZ umbrella in 2023"},

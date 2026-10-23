@@ -35,7 +35,7 @@ _2023 general election (14 Oct 2023). Winner **Chris Hipkins** (Labour), majorit
 | Emma Chatterton | National | 13,485 | 32.34 |
 | Chris Norton | Green | 2,794 | 6.7 |
 | Michael Hurle | ACT | 1,261 | 3.02 |
-| Tony Pitiroi | Newzeal | 899 | 2.15 |
+| Tony Pitiroi | NewZeal | 899 | 2.15 |
 | Heker Robertson | Vision NZ | 409 | 0.98 |
 
 **Party vote 2023 (%):** Labour 36.84, National 29.3, Green 11.66, ACT 5.7, NZ First 5.62, Opportunity (TOP) 2.64, Te Pāti Māori 1.17, NZ Loyal 0.6

@@ -61,7 +61,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - Long a Labour stronghold, but the Greens’ Francisco Hernandez is mounting a serious challenge to Rachel Brooking, according to commentator Michael Swanson.
-- **Marginal / battleground:** identified as a seat to watch by media analysis: Greens targeting a Labour stronghold..
+- **Marginal / battleground:** identified as a seat to watch by media analysis: Greens targeting a Labour stronghold.
 
 ## Sources
 

@@ -61,7 +61,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - A long-time bellwether: Chris Bishop (National) won by 1,332 in 2023, and commentators say the new boundaries (which bring in Newlands) shift it modestly left, giving Labour’s Ginny Andersen a strong chance.
-- **Marginal / battleground:** 2023 majority 1,332 (<2,000); identified as a seat to watch by media analysis: Bellwether; boundary change brings in Newlands..
+- **Marginal / battleground:** 2023 majority 1,332 (<2,000); identified as a seat to watch by media analysis: Bellwether; boundary change brings in Newlands.
 
 ## Sources
 

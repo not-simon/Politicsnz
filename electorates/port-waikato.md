@@ -23,8 +23,6 @@ Standing again here in 2026: **no**
 
 The 2023 general-election electorate vote was cancelled after the death of ACT candidate Neil Christensen; Andrew Bayly (National) won the 25 November 2023 by-election. Bayly is retiring in 2026.
 
-Andrew Bayly (National) is leaving Parliament (announced 20 June 2026).
-
 ## 2023 result
 
 _2023 Port Waikato by-election (25 Nov 2023). Winner **Andrew Bayly** (National), majority **11,432**._
@@ -33,10 +31,10 @@ _2023 Port Waikato by-election (25 Nov 2023). Winner **Andrew Bayly** (National)
 |---|---|---:|---:|
 | Andrew Bayly | National | 14,296 | 76.33 |
 | Casey Costello | NZ First | 2,864 | 15.29 |
-| Alfred Ngaro | Newzeal | 409 | 2.18 |
+| Alfred Ngaro | NewZeal | 409 | 2.18 |
 | Anna Rippon | Animal Justice | 297 | 1.59 |
 | Kim Turner | NZ Loyal | 237 | 1.27 |
-| Scotty Bright | Democracynz | 225 | 1.2 |
+| Scotty Bright | DemocracyNZ | 225 | 1.2 |
 | _3 others_ | | | |
 
 **Party vote 2023 (%):** National 49.88, Labour 18.56, ACT 11.97, NZ First 7.38, Green 5.83, NZ Loyal 1.29, Opportunity (TOP) 1.19, Te Pāti Māori 0.89

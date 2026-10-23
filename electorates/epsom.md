@@ -37,7 +37,7 @@ _2023 general election (14 Oct 2023). Winner **David Seymour** (ACT), majority *
 | Lawrence Xu-Nan | Green | 3,537 | 8.81 |
 | Nina Su | Opportunity (TOP) | 1,803 | 4.49 |
 | Tanya Unkovich | NZ First | 573 | 1.42 |
-| _1 others_ | | | |
+| _1 other_ | | | |
 
 **Party vote 2023 (%):** National 51.54, Labour 14.62, Green 13.55, ACT 12.4, Opportunity (TOP) 3.21, NZ First 2.6, Te Pāti Māori 0.73, NZ Loyal 0.3
 
@@ -60,7 +60,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - No longer a quiet “deal” seat: National’s Paul Goldsmith says he is contesting to win against ACT leader David Seymour, who has held Epsom since 2014; commentators describe it as do-or-die for Goldsmith because of National’s list position.
-- **Marginal / battleground:** identified as a seat to watch by media analysis: National’s Goldsmith openly contesting ACT leader Seymour’s seat..
+- **Marginal / battleground:** identified as a seat to watch by media analysis: National’s Goldsmith openly contesting ACT leader Seymour’s seat.
 
 ## Sources
 

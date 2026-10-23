@@ -37,7 +37,7 @@ _2023 general election (14 Oct 2023). Winner **Lemauga Lydia Sosene** (Labour), 
 | Hilda Peters | Te Pāti Māori | 934 | 3.21 |
 | Pothen Joseph | ACT | 670 | 2.3 |
 | Fuiavailili Alailima | Vision NZ | 535 | 1.84 |
-| _1 others_ | | | |
+| _1 other_ | | | |
 
 **Party vote 2023 (%):** Labour 60.72, National 19.03, Green 7.76, NZ First 3.27, Te Pāti Māori 2.11, ACT 2.1, Opportunity (TOP) 0.91, NZ Loyal 0.31
 

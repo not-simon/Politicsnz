@@ -34,7 +34,7 @@ _2023 general election (14 Oct 2023). Winner **Erica Stanford** (National), majo
 | Erica Stanford | National | 27,687 | 71.52 |
 | Naisi Chen | Labour | 7,334 | 18.94 |
 | Michael McCook | ACT | 1,584 | 4.09 |
-| Paul Adams | Newzeal | 890 | 2.29 |
+| Paul Adams | NewZeal | 890 | 2.29 |
 | Bill Dyet | NZ Loyal | 710 | 1.83 |
 
 **Party vote 2023 (%):** National 57.59, Labour 14.62, ACT 9.65, Green 8.85, NZ First 3.92, Opportunity (TOP) 1.65, NZ Loyal 0.98, Te Pāti Māori 0.35

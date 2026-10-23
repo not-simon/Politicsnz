@@ -38,7 +38,7 @@ _2023 general election (14 Oct 2023). Winner **Chris Penk** (National), majority
 | Zephyr Brown | Green | 4,739 | 9.65 |
 | Brent Bailey | ACT | 2,970 | 6.04 |
 | Jenny Marcroft | NZ First | 2,531 | 5.15 |
-| Sarah Brewer | Democracynz | 1,292 | 2.63 |
+| Sarah Brewer | DemocracyNZ | 1,292 | 2.63 |
 
 **Party vote 2023 (%):** National 47.63, Labour 16.96, ACT 12.06, Green 9.57, NZ First 6.64, Opportunity (TOP) 1.83, NZ Loyal 1.75, Te Pāti Māori 0.67
 

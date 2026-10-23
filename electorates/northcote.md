@@ -62,7 +62,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - Fourth contest between National’s Dan Bidois and Labour’s Shanan Halbert; the seat swung to Labour in 2020 and back to National in 2023.
-- **Marginal / battleground:** identified as a seat to watch by media analysis: Bidois v Halbert, fourth contest..
+- **Marginal / battleground:** identified as a seat to watch by media analysis: Bidois v Halbert, fourth contest.
 
 ## Sources
 

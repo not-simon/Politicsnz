@@ -59,7 +59,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - Open seat after ACT’s Brooke van Velden retired: ACT’s James Christmas, National’s Mahesh Muralidhar and Labour’s Max Harris are contesting a seat National held for decades before ACT’s 2023 upset. Farrar rates it marginal. Brooke van Velden (ACT) is retiring (announced 24 March 2026).
-- **Marginal / battleground:** identified as a seat to watch by media analysis: Open seat, ACT v National v Labour..
+- **Marginal / battleground:** identified as a seat to watch by media analysis: Open seat, ACT v National v Labour.
 
 ## Sources
 

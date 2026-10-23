@@ -65,7 +65,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - Rematch of the 2023 Te Atatū contest: Labour’s Phil Twyford beat National’s Angee Nicholas by just 131 votes there, and the two face off again on the new boundaries.
-- **Marginal / battleground:** 2023 majority 131 (<2,000) in predecessor Te Atatū; identified as a seat to watch by media analysis: Twyford v Nicholas rematch after a 131-vote Te Atatū result..
+- **Marginal / battleground:** 2023 majority 131 (<2,000) in predecessor Te Atatū; identified as a seat to watch by media analysis: Twyford v Nicholas rematch after a 131-vote Te Atatū result.
 
 ## Sources
 

@@ -59,7 +59,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - Green co-leader Chlöe Swarbrick seeks a third win against National’s Candace Kinser and Labour’s Naisi Chen; her 2023 majority was nearly 4,000 but in 2020 she beat Labour by just over 1,000. Pollster David Farrar says all three Green-held seats could be regarded as marginal.
-- **Marginal / battleground:** identified as a seat to watch by media analysis: Green co-leader v National and Labour..
+- **Marginal / battleground:** identified as a seat to watch by media analysis: Green co-leader v National and Labour.
 
 ## Sources
 

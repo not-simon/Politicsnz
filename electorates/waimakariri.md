@@ -34,8 +34,8 @@ _2023 general election (14 Oct 2023). Winner **Matt Doocey** (National), majorit
 | Matt Doocey | National | 26,816 | 57.66 |
 | Dan Rosewarne | Labour | 13,806 | 29.69 |
 | Ross Eric Campbell | ACT | 2,066 | 4.44 |
-| Leighton Baker | Leighton Baker | 1,815 | 3.9 |
-| Gordon Malcolm | Democracynz | 1,530 | 3.29 |
+| Leighton Baker | Leighton Baker Party | 1,815 | 3.9 |
+| Gordon Malcolm | DemocracyNZ | 1,530 | 3.29 |
 
 **Party vote 2023 (%):** National 42.61, Labour 24.15, ACT 10.54, Green 8.53, NZ First 7.01, Opportunity (TOP) 2.21, NZ Loyal 0.94, Te Pāti Māori 0.51
 

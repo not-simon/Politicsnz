@@ -132,8 +132,9 @@ def build(slug, title=None, roster_entry=None):
     p = dict(ex)
     p['name'] = name; p['slug'] = slug
     p['party'] = fm.get('party') or ex.get('party') or 'labour'
-    rows = [r for r in (w['parlbox'] if w else []) if r.get('term') in ORDN]
-    parls = sorted({ORDN[r['term']] for r in rows}) or fm.get('parliaments') or []
+    allrows = [r for r in (w['parlbox'] if w else []) if re.match(r'\d+', r.get('term', ''))]
+    rows = allrows
+    parls = sorted({int(re.match(r'\d+', r['term']).group()) for r in rows}) or fm.get('parliaments') or []
     if roster_entry:
         parls = sorted(set(parls) | set(roster_entry.get('labour_parls', [])))
     if parls: p['parliaments'] = parls
@@ -234,11 +235,13 @@ def build(slug, title=None, roster_entry=None):
             L += ['### Opposition portfolios (as of 11 March 2026)', '', f"Rank {sh['rank']} in Chris Hipkins' shadow cabinet:", '']
             L += [f'- {x}' for x in sh['portfolios']]
             L += ['', '_Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins), list as of 11 March 2026._', '']
-        if secs.get('Political career'): L += [secs['Political career'], '']
+        if secs.get('Political career'): L += ['### Career summary', '', secs['Political career'], '']
     for s in ('Record & notable actions', 'Controversies'):
         if secs.get(s): L += [f'## {s}', '', secs[s], '']
     for s, v in secs.items():
-        if s not in ('Current status', 'Biography', 'Political career', 'Record & notable actions', 'Controversies', 'Sources'):
+        if s.startswith('Controversies') and s != 'Controversies':
+            L += [f'## {s}', '', v, '']; continue
+        if s not in ('Current status', 'Biography', 'Political career', 'Record & notable actions', 'Controversies', 'Sources', '2026 candidacy note'):
             L += [f'## {s}', '', v, '']
     if block:
         L += [block, '']

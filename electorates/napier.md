@@ -36,8 +36,8 @@ _2023 general election (14 Oct 2023). Winner **Katie Nimon** (National), majorit
 | Julienne Dickey | Green | 2,190 | 5.42 |
 | Laurie Turnbull | NZ First | 1,729 | 4.28 |
 | Pawel Milewski | ACT | 1,211 | 3.0 |
-| Martin Langford | Democracynz | 765 | 1.9 |
-| _1 others_ | | | |
+| Martin Langford | DemocracyNZ | 765 | 1.9 |
+| _1 other_ | | | |
 
 **Party vote 2023 (%):** National 40.76, Labour 26.43, ACT 11.01, Green 8.5, NZ First 6.83, Opportunity (TOP) 1.52, NZ Loyal 1.26, Te Pāti Māori 0.93
 

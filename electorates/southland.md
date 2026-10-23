@@ -37,7 +37,7 @@ _2023 general election (14 Oct 2023). Winner **Joseph Mooney** (National), major
 | Todd Stephenson | ACT | 2,807 | 7.11 |
 | Logan Evans | NZ Loyal | 2,172 | 5.5 |
 | Anntwinette Grumball | Legalise Cannabis | 687 | 1.74 |
-| _1 others_ | | | |
+| _1 other_ | | | |
 
 **Party vote 2023 (%):** National 48.25, Labour 16.43, ACT 13.58, Green 8.74, NZ First 5.66, NZ Loyal 2.44, Opportunity (TOP) 2.03, Te Pāti Māori 0.47
 

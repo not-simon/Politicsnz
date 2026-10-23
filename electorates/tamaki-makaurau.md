@@ -43,7 +43,7 @@ _Source: [Wikipedia — Tāmaki Makaurau](https://en.wikipedia.org/wiki/T%C4%81m
 
 | Candidate | Party | List rank | Notes |
 |---|---|---:|---|
-| [Kerrin Leoni](../parties/labour/people/kerrin-leoni/) | Labour Party | 43 | Contested Waikato in 2020 |
+| [Kerrin Leoni](../parties/labour/people/kerrin-leoni/) | Labour Party | 43 | Resigned as Labour’s candidate on 23 Oct 2026 after footage of her campaigning with Mongrel Mob members emerged; her name remains on the ballot (RNZ). Contested Waikato in 2020. |
 | [Florence Te Ohaere](../parties/green/people/florence-te-ohaere/) | Green Party | 44 |  |
 | [Oriini Kaipara](../parties/te-pati-maori/people/oriini-kaipara/) | Te Pāti Māori | — | **Sitting MP.** |
 
@@ -52,7 +52,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - Won by 42 votes in 2023 and held by Te Pāti Māori’s Oriini Kaipara at the 2025 by-election. Labour candidate Kerrin Leoni resigned on 23 October 2026 after footage of her campaigning with Mongrel Mob members emerged; her name stays on the ballot.
-- **Marginal / battleground:** 2023 majority 42 (<2,000); identified as a seat to watch by media analysis: 42-vote seat in 2023; Labour candidate resigned 23 Oct 2026.; 2025 by-election majority was 3,519.
+- **Marginal / battleground:** 2023 majority 42 (<2,000); identified as a seat to watch by media analysis: 42-vote seat in 2023; Labour candidate resigned 23 Oct 2026; 2025 by-election majority was 3,519.
 
 ## Sources
 

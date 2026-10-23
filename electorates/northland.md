@@ -34,7 +34,7 @@ _2023 general election (14 Oct 2023). Winner **Grant McCallum** (National), majo
 | Grant McCallum | National | 16,272 | 35.63 |
 | Willow-Jean Prime | Labour | 10,185 | 22.3 |
 | Shane Jones | NZ First | 8,143 | 17.83 |
-| Matt King | Democracynz | 3,812 | 8.35 |
+| Matt King | DemocracyNZ | 3,812 | 8.35 |
 | Reina Tuai Penney | Green | 2,424 | 5.31 |
 | Mark Cameron | ACT | 2,135 | 4.67 |
 | _3 others_ | | | |

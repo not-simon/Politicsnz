@@ -37,7 +37,7 @@ _2023 general election (14 Oct 2023). Winner **Greg Fleming** (National), majori
 | Margo Onishchenko | ACT | 1,291 | 3.63 |
 | Andrew Hogg | NZ First | 920 | 2.58 |
 | Philip Bridge | Independent | 249 | 0.7 |
-| _1 others_ | | | |
+| _1 other_ | | | |
 
 **Party vote 2023 (%):** National 41.43, Labour 27.19, Green 13.77, ACT 7.94, NZ First 3.82, Opportunity (TOP) 2.64, Te Pāti Māori 0.93, NZ Loyal 0.43
 
@@ -59,7 +59,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - A bellwether that has changed hands with the government; National’s Greg Fleming took it from Labour in 2023, after Labour had won it in 2020.
-- **Marginal / battleground:** identified as a seat to watch by media analysis: Bellwether..
+- **Marginal / battleground:** identified as a seat to watch by media analysis: Bellwether.
 
 ## Sources
 

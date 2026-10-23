@@ -43,7 +43,7 @@ _2023 general election (14 Oct 2023). Winner **Tom Rutherford** (National), majo
 | Cameron Luxton | ACT | 4,202 | 9.31 |
 | Matthew MacMillan | Green | 4,036 | 8.94 |
 | Kirsten Murfitt | NZ First | 4,025 | 8.02 |
-| Wendy Gillespie | Leighton Baker | 524 | 1.16 |
+| Wendy Gillespie | Leighton Baker Party | 524 | 1.16 |
 | _2 others_ | | | |
 
 **Party vote 2023 (%):** National 46.98, Labour 17.31, ACT 11.41, NZ First 8.66, Green 7.96, Opportunity (TOP) 1.96, NZ Loyal 1.56, Te Pāti Māori 1.26

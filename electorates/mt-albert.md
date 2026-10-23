@@ -37,7 +37,7 @@ _2023 general election (14 Oct 2023). Winner **Helen White** (Labour), majority 
 | Ollie Murphy | ACT | 1,485 | 3.78 |
 | Ciara Swords | Opportunity (TOP) | 1,318 | 3.36 |
 | Tesi Naufahu | Independent | 155 | 0.4 |
-| _1 others_ | | | |
+| _1 other_ | | | |
 
 **Party vote 2023 (%):** National 31.94, Labour 26.0, Green 25.21, ACT 6.74, Opportunity (TOP) 3.71, NZ First 3.07, Te Pāti Māori 1.61, NZ Loyal 0.37
 
@@ -60,7 +60,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - One of the tightest seats in the country: Labour’s Helen White held it by 18 votes in 2023 while National won the party vote. In 2026 it is a four-way contest with National’s Melissa Lee, the Greens’ Ricardo Menéndez March and Opportunity leader Qiulae Wong; a Taxpayers’ Union–Curia poll reported by Stuff in October had White just five points ahead of Lee.
-- **Marginal / battleground:** 2023 majority 18 (<2,000); identified as a seat to watch by media analysis: Four-way race; Labour held it by 18 votes in 2023..
+- **Marginal / battleground:** 2023 majority 18 (<2,000); identified as a seat to watch by media analysis: Four-way race; Labour held it by 18 votes in 2023.
 
 ## Sources
 

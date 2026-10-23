@@ -36,7 +36,7 @@ _2023 general election (14 Oct 2023). Winner **Mark Mitchell** (National), major
 | Lorraine Newman | Green | 3,487 | 7.53 |
 | Simon Angelo | ACT | 2,522 | 5.45 |
 | Jeanette Wilson | NZ Loyal | 1,489 | 3.21 |
-| Craig Laybourn | Democracynz | 652 | 1.4 |
+| Craig Laybourn | DemocracyNZ | 652 | 1.4 |
 
 **Party vote 2023 (%):** National 53.2, Labour 15.27, ACT 11.93, Green 7.6, NZ First 6.26, Opportunity (TOP) 1.63, NZ Loyal 1.33, Te Pāti Māori 0.47
 

@@ -65,7 +65,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - Open seat after Shane Reti’s retirement; National’s Lloyd Budd faces Labour’s Gary Payinda. Commentators treat it as a gauge of National’s strength. Shane Reti (National) is retiring (announced 10 March 2026).
-- **Marginal / battleground:** identified as a seat to watch by media analysis: Open seat; gauge of National’s strength..
+- **Marginal / battleground:** identified as a seat to watch by media analysis: Open seat; gauge of National’s strength.
 
 ## Sources
 

@@ -27,8 +27,6 @@ _Description quoted from [policy.nz](https://policy.nz/2026/papakura-electorate)
 
 Vacant: Judith Collins (National) resigned on 14 May 2026 to become President of the Law Commission; no by-election was required because the vacancy arose less than six months before the general election.
 
-Seat vacant since Judith Collins resigned (14 May 2026).
-
 ## 2023 result
 
 _2023 general election (14 Oct 2023). Winner **Judith Collins** (National), majority **13,519**._
@@ -41,7 +39,7 @@ _2023 general election (14 Oct 2023). Winner **Judith Collins** (National), majo
 | Robert Monds | NZ First | 1,728 | 4.14 |
 | Donna Kouka | NZ Loyal | 636 | 1.52 |
 | Kathy Harvey | Vision NZ | 444 | 1.06 |
-| _1 others_ | | | |
+| _1 other_ | | | |
 
 **Party vote 2023 (%):** National 51.67, Labour 20.84, ACT 10, Green 6.35, NZ First 5.25, Opportunity (TOP) 1.27, Te Pāti Māori 1.06, NZ Loyal 0.98
 

@@ -58,7 +58,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - RNZ calls the race “wide open”: sitting MP Tākuta Ferris (now independent) faces Te Pāti Māori’s Lisa Marie Murch, Labour’s Mananui Ramsden and the Greens’ Lisa Te Morenga, none of whom has a list place to fall back on.
-- **Marginal / battleground:** identified as a seat to watch by media analysis: Ferris (now independent) v his former party, Labour and Greens..
+- **Marginal / battleground:** identified as a seat to watch by media analysis: Ferris (now independent) v his former party, Labour and Greens.
 
 ## Sources
 

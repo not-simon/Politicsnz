@@ -35,7 +35,7 @@ _2023 general election (14 Oct 2023). Winner **Todd McClay** (National), majorit
 | Ben Sandford | Labour | 10,416 | 28.52 |
 | Merepeka Raukawa-Tait | Te Pāti Māori | 2,731 | 7.48 |
 | Marten Rozeboom | ACT | 1,732 | 4.74 |
-| Kariana Black-Vercoe | Newzeal | 1,252 | 3.43 |
+| Kariana Black-Vercoe | NewZeal | 1,252 | 3.43 |
 | John Naera | Independent | 354 | 0.97 |
 
 **Party vote 2023 (%):** National 41.36, Labour 24.09, ACT 9.57, Green 7.79, NZ First 7.66, Te Pāti Māori 2.3, Opportunity (TOP) 1.72, NZ Loyal 1.67

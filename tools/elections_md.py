@@ -139,6 +139,21 @@ def trends_blocks():
     out["polls"] = "\n".join(L) + "\n\nSimple unweighted mean of all published polls whose fieldwork ended in the quarter (from `data/polls-2026.json`); not a forecast.\n"
     return out
 
+def latest_polls(n):
+    polls = [p for p in json.load(open(D("data", "polls-2026.json")))["polls"] if not p.get("is_election_result")][:n]
+    parties = ["national", "labour", "green", "act", "nz-first", "te-pati-maori", "opportunity"]
+    L = ["| Fieldwork | Pollster | n | " + " | ".join(nm(s).split(' /')[0] for s in parties) + " |", "|---|---|---:|" + "---:|" * len(parties)]
+    for p in polls:
+        L.append(f"| {p['date']} | [{p['pollster']}]({p['source_url']}) | {fmt(p['sample_size'])} | " + " | ".join(str(p['results'].get(s, '–')) for s in parties) + " |")
+    return "\n".join(L) + "\n"
+
+def parties_2026():
+    d = json.load(open(D("data", "elections", "2026.json")))
+    L = ["| Party | Leader(s) | 2023 seats | Seats at dissolution | Status |", "|---|---|---:|---:|---|"]
+    for p in d["registered_parties_party_vote"]:
+        L.append(f"| {p['name']} (`{p['party']}`) | {p['leader']} | {p.get('seats_2023', 0)} | {p.get('seats_at_dissolution', 0)} | {p['status']}{' – ' + p['note'] if p.get('note') else ''} |")
+    return "\n".join(L) + "\n"
+
 def fill(path, blocks):
     s = open(path).read()
     for k, v in blocks.items():
@@ -152,5 +167,8 @@ if __name__ == "__main__":
         f = D("elections", f"{y}.md")
         if os.path.exists(f):
             fill(f, {"results": results_block(y), "electorates": electorates_block(y), "parliament": parliament_block(y)})
-    if os.path.exists(D("elections", "trends.md")): fill(D("elections", "trends.md"), trends_blocks())
+    tb = trends_blocks()
+    if os.path.exists(D("elections", "trends.md")): fill(D("elections", "trends.md"), tb)
+    if os.path.exists(D("elections", "2026.md")):
+        fill(D("elections", "2026.md"), {"polls": tb["polls"], "latest-polls": latest_polls(12), "parties-2026": parties_2026()})
     print("ok")

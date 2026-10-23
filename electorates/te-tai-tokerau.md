@@ -55,7 +55,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - Four-way contest: a Curia poll for Whakaata Māori reported by the Herald (Oct 2026) had the Greens’ Hūhana Lyndon on 24%, Labour’s Willow-Jean Prime 18%, Te Pāti Māori’s Aperahama Edwards 17% and sitting MP Mariameno Kapa-Kingi (Te Tai Tokerau Party) 12%.
-- **Marginal / battleground:** 2023 majority 517 (<2,000); identified as a seat to watch by media analysis: Four-way Māori seat; Green candidate led a Curia poll..
+- **Marginal / battleground:** 2023 majority 517 (<2,000); identified as a seat to watch by media analysis: Four-way Māori seat; Green candidate led a Curia poll.
 
 ## Sources
 

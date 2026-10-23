@@ -58,7 +58,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - Former Labour minister Michael Wood is trying to win back the seat he lost to National’s Carlos Cheung by 1,564 votes in 2023.
-- **Marginal / battleground:** 2023 majority 1,564 (<2,000); identified as a seat to watch by media analysis: Cheung v Wood rematch (1,564 in 2023)..
+- **Marginal / battleground:** 2023 majority 1,564 (<2,000); identified as a seat to watch by media analysis: Cheung v Wood rematch (1,564 in 2023).
 
 ## Sources
 

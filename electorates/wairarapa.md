@@ -37,7 +37,7 @@ _2023 general election (14 Oct 2023). Winner **Mike Butterick** (National), majo
 | Celia Wade-Brown | Green | 1,832 | 4.15 |
 | Pete Arnott | NZ Loyal | 1,737 | 3.94 |
 | Te Whakapono Waikare | Te Pāti Māori | 517 | 1.17 |
-| _1 others_ | | | |
+| _1 other_ | | | |
 
 **Party vote 2023 (%):** National 38.94, Labour 27.36, ACT 10.63, Green 8.22, NZ First 8.18, NZ Loyal 2.29, Opportunity (TOP) 1.58, Te Pāti Māori 1.01
 

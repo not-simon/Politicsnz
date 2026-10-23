@@ -36,7 +36,7 @@ _2023 general election (14 Oct 2023). Winner **Vanessa Weenink** (National), maj
 | Lan Pham | Green | 8,325 | 17.02 |
 | Laura Trask | ACT | 2,073 | 4.24 |
 | Lindsay Kerslake | NZ First | 1,598 | 3.27 |
-| Lisa Mead | Newzeal | 544 | 1.11 |
+| Lisa Mead | NewZeal | 544 | 1.11 |
 | _3 others_ | | | |
 
 **Party vote 2023 (%):** National 31.97, Labour 26.66, Green 19.71, ACT 7.92, NZ First 5.37, Opportunity (TOP) 4.85, NZ Loyal 0.79, Te Pāti Māori 0.78

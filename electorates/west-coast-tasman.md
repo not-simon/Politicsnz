@@ -67,7 +67,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - Open seat with no sitting MP standing for the first time under MMP: National’s Katie Milne, NZ First’s Jamie Cleine, ACT’s Janelle Hocking and Labour’s Rory Paterson are among the candidates; National held it by 1,017 in 2023. Maureen Pugh (National) is retiring (announced 23 January 2026); Labour’s Damien O’Connor, the long-time former MP here, is contesting Waitaki instead.
-- **Marginal / battleground:** 2023 majority 1,017 (<2,000); identified as a seat to watch by media analysis: Open seat, crowded centre-right field..
+- **Marginal / battleground:** 2023 majority 1,017 (<2,000); identified as a seat to watch by media analysis: Open seat, crowded centre-right field.
 
 ## Sources
 

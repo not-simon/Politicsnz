@@ -69,7 +69,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 ## What to watch
 
 - Green MP Julie Anne Genter, who won Rongotai in 2023, faces Labour’s Craig Renney, who at #50 on Labour’s list needs to win the seat; Farrar thinks the boundary changes may help Labour.
-- **Marginal / battleground:** identified as a seat to watch by media analysis: Green-held; Labour’s Craig Renney must win to enter Parliament..
+- **Marginal / battleground:** identified as a seat to watch by media analysis: Green-held; Labour’s Craig Renney must win to enter Parliament.
 
 ## Sources
 

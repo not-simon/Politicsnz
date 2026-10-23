@@ -36,8 +36,8 @@ _2023 general election (14 Oct 2023). Winner **Hamish Campbell** (National), maj
 | Sarah Pallett | Labour | 9,010 | 21.21 |
 | Mike Davidson | Green | 2,391 | 5.63 |
 | Irinka Britnell | Legalise Cannabis | 488 | 1.15 |
-| Juanita O'Connell | Democracynz | 329 | 0.77 |
-| _1 others_ | | | |
+| Juanita O'Connell | DemocracyNZ | 329 | 0.77 |
+| _1 other_ | | | |
 
 **Party vote 2023 (%):** National 43.01, Labour 21.9, Green 14.92, ACT 8.29, Opportunity (TOP) 4.98, NZ First 4.03, Te Pāti Māori 0.62, NZ Loyal 0.35
 
