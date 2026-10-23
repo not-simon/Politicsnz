@@ -322,6 +322,10 @@ footer { color: var(--muted); font-size: 13px; padding-block: 24px 40px; border-
 .scrubber .years span { white-space: nowrap }
 .stack, .split > *, .grid > *, .card, .scrubber > div, .cols > div, .view > * { min-width: 0 }
 .view { grid-template-columns: minmax(0, 1fr) }
+.check { display: grid; gap: 8px } .check label { display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); cursor: pointer }
+.check input { width: 22px; height: 22px; margin-top: 2px; accent-color: var(--ok) } .check label.done { opacity: .7; text-decoration: none } .check label.done b { text-decoration: line-through }
+.situ { display: flex; gap: 6px; flex-wrap: wrap }
+.stepnum { width: 28px; height: 28px; border-radius: 50%; background: var(--sun); color: var(--sun-ink); font: 800 14px/28px var(--f-display); text-align: center; flex: none }
 button.lnk { background: none; border: 0; padding: 0; font: inherit; color: var(--link, var(--text)); text-decoration: underline; text-decoration-color: var(--link-underline, var(--line-strong)); text-underline-offset: 2px; cursor: pointer }
 button.lnk:hover { text-decoration-color: currentColor }
 .locate { display: grid; gap: 8px } .locate .found { font-size: var(--t-small) }
@@ -357,13 +361,14 @@ const KEY_DATES = [['2026-10-25', 'Last day to enrol', 'There is no enrolling on
   ['2026-10-26', 'Advance voting opens', 'Vote early at any voting place in the country.'],
   ['2026-11-07', 'Election day', 'Voting places open 9am to 7pm. Results start coming in that night.'],
   ['2026-11-27', 'Official results', 'Special votes are counted and the final seat count is confirmed (approx. 3 weeks later).']];
-const NAV = [['home', 'Home'], ['match', 'Match'], ['swipe', 'Swipe'], ['compass', 'Compass'], ['polls', 'Polls'], ['map', 'Map'], ['game', 'Game'], ['parties', 'Parties'], ['issues', 'Issues'], ['parliament', 'Parliament'], ['more', 'More']];
+const NAV = [['home', 'Home'], ['vote', 'How to vote'], ['match', 'Match'], ['swipe', 'Swipe'], ['compass', 'Compass'], ['polls', 'Polls'], ['map', 'Map'], ['game', 'Game'], ['parties', 'Parties'], ['issues', 'Issues'], ['parliament', 'Parliament'], ['more', 'More']];
 const ICON = {
   home: '<path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/>',
   match: '<path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/>',
   parties: '<circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M2 20c0-3 3-5 6-5s6 2 6 5M12 20c0-3 3-5 6-5s4 1.5 4 3"/>',
   issues: '<path d="M4 5h16M4 12h16M4 19h10"/>',
   polls: '<path d="M4 19h16M6 16V9M11 16V5M16 16v-6M20 16v-3"/>',
+  vote: '<path d="M4 11h16v9H4zM8 11V5h8v6M9.5 8l1.5 1.5L14 6.5"/>',
   map: '<path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/>',
   game: '<rect x="3" y="7" width="18" height="11" rx="3"/><path d="M8 11v3M6.5 12.5h3M15 11h.01M17.5 13.5h.01"/>',
   compass: '<circle cx="12" cy="12" r="9"/><path d="m15 9-2 6-4 0 2-6z" fill="currentColor"/>',
@@ -483,6 +488,7 @@ V.home = async () => {
       <div class="card chamber" style="padding:16px 16px 8px">${parl ? chamberSVG(parliamentSeats(parl, 'now'), { label: 'Parliament today', animate: true }) : ''}
         <p class="tiny muted" style="text-align:center;margin-top:4px">Parliament as it stands today. <button class="btn ghost sm" data-go="parliament">Explore every Parliament since 2011</button></p></div></div>
 
+    <div class="card" style="display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;border-left:6px solid var(--sun)"><span class="ic" style="width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:color-mix(in srgb, var(--sun) 30%, transparent)">${ic('vote')}</span><div><h3>First time voting, or haven't voted in a while?</h3><p class="small muted" style="margin:0">A plain, step-by-step guide: check you're enrolled, find a voting place, know what to bring and what the two ticks mean.</p></div><button class="btn sun" data-go="vote">How to vote</button></div>
     <div class="starters">
       <button class="starter" data-go="match"><span class="ic sun">${ic('match')}</span><h3>Find your match</h3><p class="muted small">Answer ${(G().quiz && G().quiz.statements || []).length || 'about 40'} quick questions, written without naming any party, and see who agrees with you and on what.</p><span class="go">Start the quiz →</span></button>
       <button class="starter" data-go="swipe"><span class="ic">${ic('swipe')}</span><h3>Policy swipe</h3><p class="muted small">Agree or disagree with real 2026 policies, one at a time, with no party names. Find out whose it was after you decide.</p><span class="go">Start swiping →</span></button>
@@ -1275,6 +1281,31 @@ function promiseList(el, party, parties = null) { const pr = S.data.promises || 
   $('#prtr', el).onclick = () => openPage(`parties/${parties ? $('#prp', el).value : party}/track-record.md`);
   draw() }
 
+/* ----- how to vote ----- */
+V.vote = () => { const H = G().howtovote || {}; const secs = H.sections || []; const ph = electionPhase();
+  if (!secs.length) { $('#main').innerHTML = `<section class="view"><h2>How to vote</h2><p class="empty">The guide is being verified. Meanwhile: enrol or check your details at <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or call 0800 36 76 56.</p></section>`; return }
+  let st; try { st = JSON.parse(store.get('votecheck') || '{}') } catch { st = {} }
+  const SIT = [['all', 'Just the basics'], ['first-time voters', 'My first time'], ['people who have not voted for a while', "Haven't voted in a while"], ['people away from home on election day', 'Away from home'], ['overseas voters', 'Overseas'], ['disabled voters', 'I need help to vote'], ['new residents', 'New to New Zealand']];
+  let sit = store.get('votesit') || 'all';
+  const top = { enrol: `<b>Enrolment closes midnight this Sunday, 25 October.</b> There is no enrolling on election day this year. If you're not sure you're enrolled, check now: it takes two minutes.`, advance: `<b>Voting is open now.</b> You can vote at any voting place in the country until Friday 6 November, or on election day, Saturday 7 November, 9am–7pm.`, electionday: `<b>Today is election day.</b> Voting places are open 9am–7pm. You don't need ID or your EasyVote card.`, results: `Voting has closed. Results are being counted.`, after: `The 2026 election has been held.` }[ph];
+  const matches = sec => sit === 'all' ? ['eligible', 'enrol', 'when-where', 'first-time'].includes(sec.id) : (sec.who_its_for || []).some(w => w.toLowerCase().includes(sit.split(' ')[0].toLowerCase()) || w.toLowerCase() === sit) || ['eligible', 'enrol', 'when-where'].includes(sec.id);
+  const render = () => { const shown = secs.filter(matches);
+    $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Voting in 2026, step by step</div><h2>How to vote</h2><p class="lede">Everything checked against the Electoral Commission and the law, written plainly. Pick what fits you and we'll show the steps that matter.</p></div>
+      <p class="note">${top}</p>
+      <div class="situ">${SIT.map(([k, l]) => `<button class="chip" data-sit="${esc(k)}" aria-pressed="${sit === k}">${l}</button>`).join('')}</div>
+      <div class="split"><div class="stack" style="gap:18px">
+        <div class="card stack"><h3>Your checklist</h3><div class="check">${(H.checklist || []).map((c, i) => `<label class="${st[i] ? 'done' : ''}"><input type="checkbox" data-ck="${i}" ${st[i] ? 'checked' : ''}><span><b>${esc(c.step)}</b><br><span class="small muted">${esc(c.done_when)}</span>${c.url ? ` <a class="small" href="${esc(c.url)}" target="_blank" rel="noopener">Do it</a>` : ''}</span></label>`).join('')}</div></div>
+        ${shown.map(sec => `<details class="card" ${['eligible', 'enrol'].includes(sec.id) && ph === 'enrol' ? 'open' : ''}><summary style="cursor:pointer;font:700 17px var(--f-display)">${esc(sec.title.replace(/^\d+\.\s*/, ''))}</summary><div class="stack" style="margin-top:12px">${(sec.steps || []).map((x, i) => `<div class="row" style="flex-wrap:nowrap;align-items:flex-start"><span class="stepnum">${i + 1}</span><div><p class="read" style="font-size:16px">${esc(x.text)}${x.date ? ` <span class="badge">${esc(x.date)}</span>` : ''}</p>${x.url ? `<a class="tiny" href="${esc(x.url)}" target="_blank" rel="noopener">${esc((x.source || 'source').split(',')[0])}</a>` : ''}</div></div>`).join('')}${(sec.notes || []).length ? `<ul class="small muted">${sec.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}</div></details>`).join('')}</div>
+      <div class="stack" style="gap:18px">
+        <div class="card stack"><h3>Find a voting place</h3><p class="small">The official finder shows every voting place with its opening days and hours, and lets you filter for wheelchair access. Hours differ from place to place during advance voting; on election day everywhere is open 9am–7pm.</p><div class="row"><a class="btn sun" href="${esc((H.voting_places || {}).official_finder || 'https://map.vote.nz')}" target="_blank" rel="noopener">Open the voting-place finder</a><a class="btn sm" href="${esc((H.voting_places || {}).official_finder_list_view || 'https://vote.nz')}" target="_blank" rel="noopener">List view</a></div><p class="tiny muted">You can vote at any voting place in New Zealand, not just in your own electorate.</p></div>
+        <div class="card stack"><h3>Need a hand?</h3>${Object.entries(H.contacts || {}).slice(0, 5).map(([k, v]) => `<p class="small"><b>${esc(k.replace(/_/g, ' ').replace(/^\w/, c => c.toUpperCase()))}:</b> ${esc(v)}</p>`).join('')}</div>
+        <div class="card stack"><h3>Key dates</h3><div class="hist">${(H.key_dates || []).filter(d => d.date >= '2026-10-20').map(d => `<div><span class="num muted">${esc(d.date.slice(5).replace('-', '/'))}</span><span class="dot" style="background:${d.date === '2026-11-07' ? 'var(--sun)' : 'var(--rule)'}"></span><span class="small">${esc(d.event)}</span></div>`).join('')}</div></div>
+        ${locateBlock('loc-vote')}
+        <p class="tiny muted">Verified ${esc(H.as_of || '')} against vote.nz, elections.nz and the Electoral Act 1993. Every step links to its source. ${(H.could_not_verify || []).length ? `<button class="btn ghost sm" data-page="guide/how-to-vote.md">Full guide and what we couldn't verify</button>` : ''}</p></div></div></section>`;
+    $('#main').querySelectorAll('[data-sit]').forEach(b => b.onclick = () => { sit = b.dataset.sit; store.set('votesit', sit); render() });
+    $('#main').querySelectorAll('[data-ck]').forEach(c => c.onchange = () => { st[c.dataset.ck] = c.checked; store.set('votecheck', JSON.stringify(st)); c.closest('label').classList.toggle('done', c.checked) }) };
+  render() };
+
 /* ----- Whose policy? pass-the-phone game ----- */
 const GAME_PARTIES = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'];
 V.game = async () => {
@@ -1380,7 +1411,7 @@ function route(r) {
   if (!V[view]) { view = 'home'; r = 'home' }
   renderBanner();
   if (blockedToday(view) || blockedToday(r)) { document.querySelectorAll('#nav button, #bnav button').forEach(b => b.setAttribute('aria-current', 'false')); S.route = r; window.scrollTo(0, 0); $('#main').innerHTML = `<section class="view"><div class="card stack"><h2>Hidden until 7pm</h2><p>${ELECTION_DAY_BLOCK}</p><p class="small muted">Everything else — parties, policies, candidates, your electorate, how to vote — stays available.</p><div class="row"><button class="btn primary" data-go="electorate">Your electorate</button><button class="btn" data-go="parties">Parties</button></div></div></section>`; return }
-  const navKey = { party: 'parties', issue: 'issues', 'swipe-tally': 'swipe', electorate: 'map', policies: 'more', people: 'more', promises: 'more' }[view] || view;
+  const navKey = { party: 'parties', issue: 'issues', 'swipe-tally': 'swipe', electorate: 'map', polls: 'more', trends: 'more', policies: 'more', people: 'more', promises: 'more' }[view] || view;
   document.querySelectorAll('#nav button, #bnav button').forEach(b => b.setAttribute('aria-current', b.dataset.go === navKey ? 'page' : 'false'));
   S.route = r; try { history.replaceState(null, '', '#' + r) } catch {}
   window.scrollTo(0, 0); Promise.resolve(V[view](arg)).then(() => loadPeople().then(() => { if (S.route === r) $('#main').querySelectorAll('.read, .quote, .pol p, .lede, #ctx, .mapside').forEach(autolink) }));
@@ -1389,7 +1420,7 @@ function route(r) {
   try { const t = localStorage.getItem('bb-theme'); if (t) document.documentElement.dataset.theme = t } catch {}
   $('#themebtn').onclick = () => { const r = document.documentElement; const dark = r.dataset.theme === 'dark' || (!r.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches); r.dataset.theme = dark ? 'light' : 'dark'; try { localStorage.setItem('bb-theme', r.dataset.theme) } catch {} };
   $('#nav').innerHTML = NAV.map(([k, l]) => `<button data-go="${k}">${l}</button>`).join('');
-  $('#bnav').innerHTML = [['home', 'Home'], ['match', 'Match'], ['swipe', 'Swipe'], ['polls', 'Polls'], ['parties', 'Parties'], ['more', 'More']].map(([k, l]) => `<button data-go="${k}">${ic(k)}<span>${l}</span></button>`).join('');
+  $('#bnav').innerHTML = [['home', 'Home'], ['vote', 'Vote'], ['match', 'Match'], ['swipe', 'Swipe'], ['parties', 'Parties'], ['more', 'More']].map(([k, l]) => `<button data-go="${k}">${ic(k)}<span>${l}</span></button>`).join('');
   try { S.data = await getJSON('data/bundle.json') } catch (e) { $('#main').innerHTML = `<p class="empty">The guide's data didn't load (${esc(e.message)}).</p>`; return }
   loadPeople().then(() => { if ((location.hash || '#home') === '#home' || !location.hash) { /* refresh faces on home */ const h = location.hash.slice(1) || 'home'; if (['home', 'parties'].includes(h)) route(h) } });
   $('#foot').innerHTML = `<p><b>Ballot Book NZ</b> is an independent, non-partisan guide. It does not tell you how to vote. Built ${esc(S.data.generated)}. <button class="btn ghost sm" data-go="trust">Why trust this?</button> <button class="btn ghost sm" data-page="docs/EDITORIAL_STANDARDS.md">Standards</button> <a class="btn ghost sm" href="https://github.com/not-simon/Politicsnz/issues/new?template=correction.yml" target="_blank" rel="noopener">Report an error</a> <a class="btn ghost sm" href="https://vote.nz" target="_blank" rel="noopener">Enrol / find a voting place</a></p>`;
