@@ -84,10 +84,26 @@
    "axis": "economic",
    "direction": -1,
    "text": "Incomes should be made more equal.",
-   "scale": "Q106 (pole 1)",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "wvs_economic_values",
-   "item_ref": "Opposing pole in WVS: \"There should be greater incentives for individual effort.\"",
-   "note": null,
+   "item_ref": "Q106 (pole 1)",
+   "note": "Opposing pole in WVS: \"There should be greater incentives for individual effort.\"",
    "source": {
     "instrument": "World Values Survey Wave 7 (2017-2022) master questionnaire",
     "citation": "Haerpfer, C., Inglehart, R., Moreno, A., Welzel, C., Kizilova, K., Diez-Medrano J., M. Lagos, P. Norris, E. Ponarin & B. Puranen (eds.). 2022. World Values Survey: Round Seven. WVS Wave 7 Master Survey Questionnaire, items Q106-Q109 (economic values).",
@@ -103,10 +119,26 @@
    "axis": "economic",
    "direction": 1,
    "text": "Private ownership of business and industry should be increased.",
-   "scale": "Q107 (pole 1)",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "wvs_economic_values",
-   "item_ref": "Opposing pole in WVS: \"Government ownership of business and industry should be increased.\"",
-   "note": null,
+   "item_ref": "Q107 (pole 1)",
+   "note": "Opposing pole in WVS: \"Government ownership of business and industry should be increased.\"",
    "source": {
     "instrument": "World Values Survey Wave 7 (2017-2022) master questionnaire",
     "citation": "Haerpfer, C., Inglehart, R., Moreno, A., Welzel, C., Kizilova, K., Diez-Medrano J., M. Lagos, P. Norris, E. Ponarin & B. Puranen (eds.). 2022. World Values Survey: Round Seven. WVS Wave 7 Master Survey Questionnaire, items Q106-Q109 (economic values).",
@@ -122,10 +154,26 @@
    "axis": "economic",
    "direction": -1,
    "text": "Government should take more responsibility to ensure that everyone is provided for.",
-   "scale": "Q108 (pole 1)",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "wvs_economic_values",
-   "item_ref": "Opposing pole in WVS: \"People should take more responsibility to provide for themselves.\"",
-   "note": null,
+   "item_ref": "Q108 (pole 1)",
+   "note": "Opposing pole in WVS: \"People should take more responsibility to provide for themselves.\"",
    "source": {
     "instrument": "World Values Survey Wave 7 (2017-2022) master questionnaire",
     "citation": "Haerpfer, C., Inglehart, R., Moreno, A., Welzel, C., Kizilova, K., Diez-Medrano J., M. Lagos, P. Norris, E. Ponarin & B. Puranen (eds.). 2022. World Values Survey: Round Seven. WVS Wave 7 Master Survey Questionnaire, items Q106-Q109 (economic values).",
@@ -141,10 +189,26 @@
    "axis": "economic",
    "direction": 1,
    "text": "Competition is good.",
-   "scale": "Q109 (pole 1)",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "wvs_economic_values",
-   "item_ref": "Opposing pole in WVS: \"Competition is harmful.\" The Wave 7 master questionnaire fielded in Great Britain gives only these short pole labels.",
-   "note": null,
+   "item_ref": "Q109 (pole 1)",
+   "note": "Opposing pole in WVS: \"Competition is harmful.\" The Wave 7 master questionnaire fielded in Great Britain gives only these short pole labels.",
    "source": {
     "instrument": "World Values Survey Wave 7 (2017-2022) master questionnaire",
     "citation": "Haerpfer, C., Inglehart, R., Moreno, A., Welzel, C., Kizilova, K., Diez-Medrano J., M. Lagos, P. Norris, E. Ponarin & B. Puranen (eds.). 2022. World Values Survey: Round Seven. WVS Wave 7 Master Survey Questionnaire, items Q106-Q109 (economic values).",
@@ -160,10 +224,26 @@
    "axis": "economic",
    "direction": -1,
    "text": "The government should take measures to reduce differences in income levels.",
-   "scale": "Q08",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "cses_redistribution",
-   "item_ref": "Identical wording is used in ESS core item B33 (gincdif) and NZES 2023 item C6a, so NZ population benchmarks exist.",
-   "note": null,
+   "item_ref": "Q08",
+   "note": "Identical wording is used in ESS core item B33 (gincdif) and NZES 2023 item C6a, so NZ population benchmarks exist.",
    "source": {
     "instrument": "Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire",
     "citation": "The Comparative Study of Electoral Systems (www.cses.org). CSES Module 5 Questionnaire (final, 2016). Variables Q04a-Q04g (attitudes about elites), Q05b-Q05d (out-group attitudes), Q08 (government action on income differences).",
@@ -179,10 +259,26 @@
    "axis": "economic",
    "direction": -1,
    "text": "Privatisation of state-owned enterprises has gone too far.",
-   "scale": "C6c",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "nzes_economic",
-   "item_ref": "Long-running NZES item (asked since the 1990s).",
-   "note": null,
+   "item_ref": "C6c",
+   "note": "Long-running NZES item (asked since the 1990s).",
    "source": {
     "instrument": "New Zealand Election Study 2023 mass survey questionnaire",
     "citation": "Vowles, J. et al. (2024). The 2023 New Zealand Election Study: questionnaire. Items C6c and C12e (section C, \"Your opinions\").",
@@ -198,9 +294,25 @@
    "axis": "economic",
    "direction": -1,
    "text": "Big business in New Zealand has too much power.",
-   "scale": "C12e",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "nzes_economic",
-   "item_ref": null,
+   "item_ref": "C12e",
    "note": null,
    "source": {
     "instrument": "New Zealand Election Study 2023 mass survey questionnaire",
@@ -217,10 +329,7 @@
    "axis": "economic",
    "direction": 1,
    "text": "Limited government",
-   "scale": "SECS item 5",
-   "subscale": "secs_economic",
-   "item_ref": null,
-   "note": {
+   "scale": {
     "type": "feeling5",
     "prompt": "How positive or negative do you feel about:",
     "labels": [
@@ -239,6 +348,9 @@
     ],
     "note": "Adapted from the SECS 0-100 feeling thermometer."
    },
+   "subscale": "secs_economic",
+   "item_ref": "SECS item 5",
+   "note": null,
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
@@ -254,10 +366,7 @@
    "axis": "economic",
    "direction": -1,
    "text": "Welfare benefits",
-   "scale": "SECS item 2 (reverse scored)",
-   "subscale": "secs_economic",
-   "item_ref": null,
-   "note": {
+   "scale": {
     "type": "feeling5",
     "prompt": "How positive or negative do you feel about:",
     "labels": [
@@ -276,6 +385,9 @@
     ],
     "note": "Adapted from the SECS 0-100 feeling thermometer."
    },
+   "subscale": "secs_economic",
+   "item_ref": "SECS item 2 (reverse scored)",
+   "note": null,
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
@@ -291,10 +403,7 @@
    "axis": "economic",
    "direction": 1,
    "text": "Business",
-   "scale": "SECS item 12",
-   "subscale": "secs_economic",
-   "item_ref": null,
-   "note": {
+   "scale": {
     "type": "feeling5",
     "prompt": "How positive or negative do you feel about:",
     "labels": [
@@ -313,6 +422,9 @@
     ],
     "note": "Adapted from the SECS 0-100 feeling thermometer."
    },
+   "subscale": "secs_economic",
+   "item_ref": "SECS item 12",
+   "note": null,
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
@@ -328,10 +440,7 @@
    "axis": "economic",
    "direction": 1,
    "text": "Fiscal responsibility",
-   "scale": "SECS item 11",
-   "subscale": "secs_economic",
-   "item_ref": null,
-   "note": {
+   "scale": {
     "type": "feeling5",
     "prompt": "How positive or negative do you feel about:",
     "labels": [
@@ -350,6 +459,9 @@
     ],
     "note": "Adapted from the SECS 0-100 feeling thermometer."
    },
+   "subscale": "secs_economic",
+   "item_ref": "SECS item 11",
+   "note": null,
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
@@ -365,10 +477,7 @@
    "axis": "economic",
    "direction": 1,
    "text": "Gun ownership",
-   "scale": "SECS item 8",
-   "subscale": "secs_economic",
-   "item_ref": "Everett (2013) acknowledges this item is American in flavour; it is kept so the SECS economic subscale is complete, and it is flagged in the method page.",
-   "note": {
+   "scale": {
     "type": "feeling5",
     "prompt": "How positive or negative do you feel about:",
     "labels": [
@@ -387,6 +496,9 @@
     ],
     "note": "Adapted from the SECS 0-100 feeling thermometer."
    },
+   "subscale": "secs_economic",
+   "item_ref": "SECS item 8",
+   "note": "Everett (2013) acknowledges this item is American in flavour; it is kept so the SECS economic subscale is complete, and it is flagged in the method page.",
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
@@ -402,9 +514,25 @@
    "axis": "social",
    "direction": -1,
    "text": "It's great that many young people today are prepared to defy authority.",
-   "scale": "VSA item 1 (Conservatism / Authoritarian Submission; reverse scored)",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "vsa_authoritarianism",
-   "item_ref": null,
+   "item_ref": "VSA item 1 (Conservatism / Authoritarian Submission; reverse scored)",
    "note": null,
    "source": {
     "instrument": "Very Short Authoritarianism (VSA) scale, 6 items",
@@ -421,9 +549,25 @@
    "axis": "social",
    "direction": 1,
    "text": "What our country needs most is discipline, with everyone following our leaders in unity.",
-   "scale": "VSA item 2 (Conservatism / Authoritarian Submission)",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "vsa_authoritarianism",
-   "item_ref": null,
+   "item_ref": "VSA item 2 (Conservatism / Authoritarian Submission)",
    "note": null,
    "source": {
     "instrument": "Very Short Authoritarianism (VSA) scale, 6 items",
@@ -440,9 +584,25 @@
    "axis": "social",
    "direction": 1,
    "text": "God's laws about abortion, pornography, and marriage must be strictly followed before it is too late.",
-   "scale": "VSA item 3 (Traditionalism / Conventionalism)",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "vsa_authoritarianism",
-   "item_ref": null,
+   "item_ref": "VSA item 3 (Traditionalism / Conventionalism)",
    "note": null,
    "source": {
     "instrument": "Very Short Authoritarianism (VSA) scale, 6 items",
@@ -459,9 +619,25 @@
    "axis": "social",
    "direction": -1,
    "text": "There is nothing wrong with premarital sexual intercourse.",
-   "scale": "VSA item 4 (Traditionalism / Conventionalism; reverse scored)",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "vsa_authoritarianism",
-   "item_ref": null,
+   "item_ref": "VSA item 4 (Traditionalism / Conventionalism; reverse scored)",
    "note": null,
    "source": {
     "instrument": "Very Short Authoritarianism (VSA) scale, 6 items",
@@ -478,9 +654,25 @@
    "axis": "social",
    "direction": -1,
    "text": "Our society does NOT need tougher government and stricter laws.",
-   "scale": "VSA item 5 (Authoritarianism / Authoritarian Aggression; reverse scored)",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "vsa_authoritarianism",
-   "item_ref": null,
+   "item_ref": "VSA item 5 (Authoritarianism / Authoritarian Aggression; reverse scored)",
    "note": null,
    "source": {
     "instrument": "Very Short Authoritarianism (VSA) scale, 6 items",
@@ -497,10 +689,26 @@
    "axis": "social",
    "direction": 1,
    "text": "The facts on crime and the recent public disorders show we have to crack down harder on troublemakers, if we are going preserve law and order.",
-   "scale": "VSA item 6 (Authoritarianism / Authoritarian Aggression)",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "vsa_authoritarianism",
-   "item_ref": "Wording exactly as printed in Appendix A of Bizumic & Duckitt (2018).",
-   "note": null,
+   "item_ref": "VSA item 6 (Authoritarianism / Authoritarian Aggression)",
+   "note": "Wording exactly as printed in Appendix A of Bizumic & Duckitt (2018).",
    "source": {
     "instrument": "Very Short Authoritarianism (VSA) scale, 6 items",
     "citation": "Bizumic, B., & Duckitt, J. (2018). Investigating Right Wing Authoritarianism With a Very Short Authoritarianism Scale. Journal of Social and Political Psychology, 6(1), 129-150.",
@@ -516,10 +724,7 @@
    "axis": "social",
    "direction": -1,
    "text": "Abortion",
-   "scale": "SECS item 1 (reverse scored)",
-   "subscale": "secs_social",
-   "item_ref": null,
-   "note": {
+   "scale": {
     "type": "feeling5",
     "prompt": "How positive or negative do you feel about:",
     "labels": [
@@ -538,6 +743,9 @@
     ],
     "note": "Adapted from the SECS 0-100 feeling thermometer."
    },
+   "subscale": "secs_social",
+   "item_ref": "SECS item 1 (reverse scored)",
+   "note": null,
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
@@ -553,10 +761,7 @@
    "axis": "social",
    "direction": 1,
    "text": "Religion",
-   "scale": "SECS item 7",
-   "subscale": "secs_social",
-   "item_ref": null,
-   "note": {
+   "scale": {
     "type": "feeling5",
     "prompt": "How positive or negative do you feel about:",
     "labels": [
@@ -575,6 +780,9 @@
     ],
     "note": "Adapted from the SECS 0-100 feeling thermometer."
    },
+   "subscale": "secs_social",
+   "item_ref": "SECS item 7",
+   "note": null,
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
@@ -590,10 +798,7 @@
    "axis": "social",
    "direction": 1,
    "text": "Traditional marriage",
-   "scale": "SECS item 9",
-   "subscale": "secs_social",
-   "item_ref": null,
-   "note": {
+   "scale": {
     "type": "feeling5",
     "prompt": "How positive or negative do you feel about:",
     "labels": [
@@ -612,6 +817,9 @@
     ],
     "note": "Adapted from the SECS 0-100 feeling thermometer."
    },
+   "subscale": "secs_social",
+   "item_ref": "SECS item 9",
+   "note": null,
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
@@ -627,10 +835,7 @@
    "axis": "social",
    "direction": 1,
    "text": "Traditional values",
-   "scale": "SECS item 10",
-   "subscale": "secs_social",
-   "item_ref": null,
-   "note": {
+   "scale": {
     "type": "feeling5",
     "prompt": "How positive or negative do you feel about:",
     "labels": [
@@ -649,6 +854,9 @@
     ],
     "note": "Adapted from the SECS 0-100 feeling thermometer."
    },
+   "subscale": "secs_social",
+   "item_ref": "SECS item 10",
+   "note": null,
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
@@ -664,10 +872,7 @@
    "axis": "social",
    "direction": 1,
    "text": "The family unit",
-   "scale": "SECS item 13",
-   "subscale": "secs_social",
-   "item_ref": null,
-   "note": {
+   "scale": {
     "type": "feeling5",
     "prompt": "How positive or negative do you feel about:",
     "labels": [
@@ -686,6 +891,9 @@
     ],
     "note": "Adapted from the SECS 0-100 feeling thermometer."
    },
+   "subscale": "secs_social",
+   "item_ref": "SECS item 13",
+   "note": null,
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
@@ -701,10 +909,7 @@
    "axis": "social",
    "direction": 1,
    "text": "Patriotism",
-   "scale": "SECS item 14",
-   "subscale": "secs_social",
-   "item_ref": null,
-   "note": {
+   "scale": {
     "type": "feeling5",
     "prompt": "How positive or negative do you feel about:",
     "labels": [
@@ -723,6 +928,9 @@
     ],
     "note": "Adapted from the SECS 0-100 feeling thermometer."
    },
+   "subscale": "secs_social",
+   "item_ref": "SECS item 14",
+   "note": null,
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
@@ -738,10 +946,7 @@
    "axis": "social",
    "direction": 1,
    "text": "Military and national security",
-   "scale": "SECS item 6",
-   "subscale": "secs_social",
-   "item_ref": null,
-   "note": {
+   "scale": {
     "type": "feeling5",
     "prompt": "How positive or negative do you feel about:",
     "labels": [
@@ -760,6 +965,9 @@
     ],
     "note": "Adapted from the SECS 0-100 feeling thermometer."
    },
+   "subscale": "secs_social",
+   "item_ref": "SECS item 6",
+   "note": null,
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
@@ -775,9 +983,25 @@
    "axis": "social",
    "direction": -1,
    "text": "Gay men and lesbians should be free to live their own life as they wish.",
-   "scale": "B34 (freehms)",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "ess_social_values",
-   "item_ref": null,
+   "item_ref": "B34 (freehms)",
    "note": null,
    "source": {
     "instrument": "European Social Survey (ESS) core questionnaire, Round 9 (2018) source questionnaire",
@@ -794,10 +1018,26 @@
    "axis": "social",
    "direction": -1,
    "text": "Immigrants are generally good for New Zealand's economy.",
-   "scale": "Q05c",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "cses_outgroup",
-   "item_ref": "[COUNTRY] = New Zealand.",
-   "note": null,
+   "item_ref": "Q05c",
+   "note": "[COUNTRY] = New Zealand.",
    "source": {
     "instrument": "Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire",
     "citation": "The Comparative Study of Electoral Systems (www.cses.org). CSES Module 5 Questionnaire (final, 2016). Variables Q04a-Q04g (attitudes about elites), Q05b-Q05d (out-group attitudes), Q08 (government action on income differences).",
@@ -813,10 +1053,26 @@
    "axis": "social",
    "direction": 1,
    "text": "New Zealand's culture is generally harmed by immigrants.",
-   "scale": "Q05d",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "cses_outgroup",
-   "item_ref": "[COUNTRY] = New Zealand.",
-   "note": null,
+   "item_ref": "Q05d",
+   "note": "[COUNTRY] = New Zealand.",
    "source": {
     "instrument": "Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire",
     "citation": "The Comparative Study of Electoral Systems (www.cses.org). CSES Module 5 Questionnaire (final, 2016). Variables Q04a-Q04g (attitudes about elites), Q05b-Q05d (out-group attitudes), Q08 (government action on income differences).",
@@ -832,9 +1088,25 @@
    "axis": "populism",
    "direction": 1,
    "text": "What people call compromise in politics is really just selling out on one's principles.",
-   "scale": "Q04a",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "cses_populism",
-   "item_ref": null,
+   "item_ref": "Q04a",
    "note": null,
    "source": {
     "instrument": "Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire",
@@ -851,9 +1123,25 @@
    "axis": "populism",
    "direction": 1,
    "text": "Most politicians do not care about the people.",
-   "scale": "Q04b",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "cses_populism",
-   "item_ref": null,
+   "item_ref": "Q04b",
    "note": null,
    "source": {
     "instrument": "Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire",
@@ -870,9 +1158,25 @@
    "axis": "populism",
    "direction": -1,
    "text": "Most politicians are trustworthy.",
-   "scale": "Q04c (reverse scored)",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "cses_populism",
-   "item_ref": null,
+   "item_ref": "Q04c (reverse scored)",
    "note": null,
    "source": {
     "instrument": "Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire",
@@ -889,10 +1193,26 @@
    "axis": "populism",
    "direction": 1,
    "text": "Politicians are the main problem in New Zealand.",
-   "scale": "Q04d",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "cses_populism",
-   "item_ref": "[COUNTRY] = New Zealand.",
-   "note": null,
+   "item_ref": "Q04d",
+   "note": "[COUNTRY] = New Zealand.",
    "source": {
     "instrument": "Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire",
     "citation": "The Comparative Study of Electoral Systems (www.cses.org). CSES Module 5 Questionnaire (final, 2016). Variables Q04a-Q04g (attitudes about elites), Q05b-Q05d (out-group attitudes), Q08 (government action on income differences).",
@@ -908,10 +1228,26 @@
    "axis": "populism",
    "direction": 1,
    "text": "Having a strong leader in government is good for New Zealand even if the leader bends the rules to get things done.",
-   "scale": "Q04e",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "cses_populism",
-   "item_ref": "[COUNTRY] = New Zealand.",
-   "note": null,
+   "item_ref": "Q04e",
+   "note": "[COUNTRY] = New Zealand.",
    "source": {
     "instrument": "Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire",
     "citation": "The Comparative Study of Electoral Systems (www.cses.org). CSES Module 5 Questionnaire (final, 2016). Variables Q04a-Q04g (attitudes about elites), Q05b-Q05d (out-group attitudes), Q08 (government action on income differences).",
@@ -927,9 +1263,25 @@
    "axis": "populism",
    "direction": 1,
    "text": "The people, and not politicians, should make our most important policy decisions.",
-   "scale": "Q04f",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "cses_populism",
-   "item_ref": null,
+   "item_ref": "Q04f",
    "note": null,
    "source": {
     "instrument": "Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire",
@@ -946,9 +1298,25 @@
    "axis": "populism",
    "direction": 1,
    "text": "Most politicians care only about the interests of the rich and powerful.",
-   "scale": "Q04g",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "cses_populism",
-   "item_ref": null,
+   "item_ref": "Q04g",
    "note": null,
    "source": {
     "instrument": "Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire",
@@ -965,10 +1333,26 @@
    "axis": "populism",
    "direction": 1,
    "text": "The will of the majority should always prevail, even over the rights of minorities.",
-   "scale": "Q05b",
+   "scale": {
+    "type": "likert5",
+    "labels": [
+     "Strongly disagree",
+     "Disagree",
+     "Neither agree nor disagree",
+     "Agree",
+     "Strongly agree"
+    ],
+    "values": [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ]
+   },
    "subscale": "cses_antipluralism",
-   "item_ref": "Kept on the populism axis as its anti-pluralist component (Mudde 2004; the Global Party Survey populism definition); not part of the CSES Q04 elite battery.",
-   "note": null,
+   "item_ref": "Q05b",
+   "note": "Kept on the populism axis as its anti-pluralist component (Mudde 2004; the Global Party Survey populism definition); not part of the CSES Q04 elite battery.",
    "source": {
     "instrument": "Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire",
     "citation": "The Comparative Study of Electoral Systems (www.cses.org). CSES Module 5 Questionnaire (final, 2016). Variables Q04a-Q04g (attitudes about elites), Q05b-Q05d (out-group attitudes), Q08 (government action on income differences).",

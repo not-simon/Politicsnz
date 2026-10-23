@@ -557,49 +557,49 @@
      {
       "election_year": 2023,
       "item": "B5",
-      "mean_left_right_0_10_weighted": 5.5,
-      "sd": 2.5,
-      "weighted_n_placing": 583.2,
+      "mean_left_right_0_10_weighted": 6.99,
+      "sd": 2.26,
+      "weighted_n_placing": 1593.9,
       "dont_know_pct": 18.38,
       "distribution_weighted_freq": {
-       "0": 53.8,
-       "1": 10.0,
-       "2": 10.9,
-       "3": 37.8,
-       "4": 21.0,
-       "5": 109.1,
-       "6": 88.4,
-       "7": 197.8,
-       "8": 9.3,
-       "9": 9.1,
-       "10": 36.0
+       "0": 60.4,
+       "1": 9.2,
+       "2": 9.4,
+       "3": 32.9,
+       "4": 25.9,
+       "5": 128.2,
+       "6": 295.7,
+       "7": 395.0,
+       "8": 258.3,
+       "9": 128.1,
+       "10": 250.8
       },
       "rescaled": {
-       "general_left_right_voters": 1.0
+       "general_left_right_voters": 3.98
       }
      },
      {
       "election_year": 2020,
       "item": "B7",
-      "mean_left_right_0_10_weighted": 5.72,
-      "sd": 2.32,
-      "weighted_n_placing": 2127.5,
+      "mean_left_right_0_10_weighted": 6.92,
+      "sd": 2.47,
+      "weighted_n_placing": 2566.5,
       "dont_know_pct": 26.96,
       "distribution_weighted_freq": {
-       "0": 100.1,
-       "1": 37.3,
-       "2": 66.8,
-       "3": 89.1,
-       "4": 146.0,
-       "5": 571.3,
-       "6": 332.4,
-       "7": 289.5,
-       "8": 274.0,
-       "9": 122.7,
-       "10": 98.3
+       "0": 131.6,
+       "1": 27.1,
+       "2": 49.8,
+       "3": 39.5,
+       "4": 45.6,
+       "5": 134.3,
+       "6": 458.2,
+       "7": 566.7,
+       "8": 465.6,
+       "9": 254.0,
+       "10": 394.0
       },
       "rescaled": {
-       "general_left_right_voters": 1.44
+       "general_left_right_voters": 3.84
       }
      }
     ],
@@ -662,7 +662,7 @@
     },
     "nzes2023_voters_general_left_right": {
      "ours_economic": 6.82,
-     "published_general_left_right": 1.0,
+     "published_general_left_right": 3.98,
      "note": "voters' general left-right placement, not an economic-only scale"
     }
    }
@@ -1087,49 +1087,49 @@
      {
       "election_year": 2023,
       "item": "B5",
-      "mean_left_right_0_10_weighted": 4.04,
-      "sd": 3.58,
-      "weighted_n_placing": 2115.5,
+      "mean_left_right_0_10_weighted": 3.35,
+      "sd": 2.39,
+      "weighted_n_placing": 1615.7,
       "dont_know_pct": 17.64,
       "distribution_weighted_freq": {
-       "0": 413.8,
-       "1": 256.2,
-       "2": 329.9,
-       "3": 224.3,
-       "4": 98.9,
-       "5": 121.8,
-       "6": 16.1,
-       "7": 17.4,
-       "8": 258.3,
-       "9": 128.1,
-       "10": 250.8
+       "0": 248.4,
+       "1": 83.9,
+       "2": 190.4,
+       "3": 385.6,
+       "4": 349.7,
+       "5": 179.3,
+       "6": 39.4,
+       "7": 32.4,
+       "8": 17.3,
+       "9": 4.7,
+       "10": 84.7
       },
       "rescaled": {
-       "general_left_right_voters": -1.92
+       "general_left_right_voters": -3.3
       }
      },
      {
       "election_year": 2020,
       "item": "B7",
-      "mean_left_right_0_10_weighted": 2.37,
-      "sd": 2.28,
-      "weighted_n_placing": 2398.6,
+      "mean_left_right_0_10_weighted": 3.78,
+      "sd": 2.64,
+      "weighted_n_placing": 2612.1,
       "dont_know_pct": 25.97,
       "distribution_weighted_freq": {
-       "0": 561.9,
-       "1": 400.5,
-       "2": 536.5,
-       "3": 357.5,
-       "4": 163.3,
-       "5": 184.5,
-       "6": 50.0,
-       "7": 32.1,
-       "8": 34.5,
-       "9": 21.8,
-       "10": 55.9
+       "0": 344.5,
+       "1": 130.4,
+       "2": 263.9,
+       "3": 533.5,
+       "4": 610.7,
+       "5": 294.1,
+       "6": 71.9,
+       "7": 72.5,
+       "8": 53.6,
+       "9": 48.2,
+       "10": 188.9
       },
       "rescaled": {
-       "general_left_right_voters": -5.26
+       "general_left_right_voters": -2.44
       }
      }
     ],
@@ -1192,7 +1192,7 @@
     },
     "nzes2023_voters_general_left_right": {
      "ours_economic": -2.08,
-     "published_general_left_right": -1.92,
+     "published_general_left_right": -3.3,
      "note": "voters' general left-right placement, not an economic-only scale"
     }
    }
@@ -1632,49 +1632,49 @@
      {
       "election_year": 2023,
       "item": "B5",
-      "mean_left_right_0_10_weighted": 7.12,
-      "sd": 2.36,
-      "weighted_n_placing": 1958.3,
+      "mean_left_right_0_10_weighted": 2.17,
+      "sd": 2.19,
+      "weighted_n_placing": 1532.8,
       "dont_know_pct": 21.17,
       "distribution_weighted_freq": {
-       "0": 46.9,
-       "1": 7.2,
-       "2": 23.5,
-       "3": 41.8,
-       "4": 54.6,
-       "5": 375.7,
-       "6": 222.6,
-       "7": 196.5,
-       "8": 333.4,
-       "9": 266.6,
-       "10": 389.4
+       "0": 413.8,
+       "1": 256.2,
+       "2": 329.9,
+       "3": 224.3,
+       "4": 98.9,
+       "5": 121.8,
+       "6": 16.1,
+       "7": 17.4,
+       "8": 9.3,
+       "9": 9.1,
+       "10": 36.0
       },
       "rescaled": {
-       "general_left_right_voters": 4.24
+       "general_left_right_voters": -5.66
       }
      },
      {
       "election_year": 2020,
       "item": "B7",
-      "mean_left_right_0_10_weighted": 7.11,
-      "sd": 2.55,
-      "weighted_n_placing": 2145.7,
+      "mean_left_right_0_10_weighted": 2.37,
+      "sd": 2.28,
+      "weighted_n_placing": 2398.6,
       "dont_know_pct": 31.28,
       "distribution_weighted_freq": {
-       "0": 81.2,
-       "1": 32.7,
-       "2": 68.3,
-       "3": 51.4,
-       "4": 45.7,
-       "5": 193.2,
-       "6": 161.5,
-       "7": 336.2,
-       "8": 463.6,
-       "9": 377.0,
-       "10": 335.0
+       "0": 561.9,
+       "1": 400.5,
+       "2": 536.5,
+       "3": 357.5,
+       "4": 163.3,
+       "5": 184.5,
+       "6": 50.0,
+       "7": 32.1,
+       "8": 34.5,
+       "9": 21.8,
+       "10": 55.9
       },
       "rescaled": {
-       "general_left_right_voters": 4.22
+       "general_left_right_voters": -5.26
       }
      }
     ],
@@ -1735,7 +1735,7 @@
     },
     "nzes2023_voters_general_left_right": {
      "ours_economic": -7.5,
-     "published_general_left_right": 4.24,
+     "published_general_left_right": -5.66,
      "note": "voters' general left-right placement, not an economic-only scale"
     }
    }
@@ -2075,49 +2075,49 @@
      {
       "election_year": 2023,
       "item": "B5",
-      "mean_left_right_0_10_weighted": 3.8,
-      "sd": 3.44,
-      "weighted_n_placing": 1649.8,
+      "mean_left_right_0_10_weighted": 7.67,
+      "sd": 2.41,
+      "weighted_n_placing": 1518.2,
       "dont_know_pct": 21.78,
       "distribution_weighted_freq": {
-       "0": 340.3,
-       "1": 214.2,
-       "2": 232.6,
-       "3": 188.1,
-       "4": 84.1,
-       "5": 128.4,
-       "6": 13.7,
-       "7": 13.3,
-       "8": 178.8,
-       "9": 116.3,
-       "10": 140.0
+       "0": 53.8,
+       "1": 10.0,
+       "2": 10.9,
+       "3": 37.8,
+       "4": 21.0,
+       "5": 109.1,
+       "6": 88.4,
+       "7": 197.8,
+       "8": 333.4,
+       "9": 266.6,
+       "10": 389.4
       },
       "rescaled": {
-       "general_left_right_voters": -2.4
+       "general_left_right_voters": 5.34
       }
      },
      {
       "election_year": 2020,
       "item": "B7",
-      "mean_left_right_0_10_weighted": 7.31,
-      "sd": 3.44,
-      "weighted_n_placing": 1513.1,
+      "mean_left_right_0_10_weighted": 7.11,
+      "sd": 2.55,
+      "weighted_n_placing": 2145.7,
       "dont_know_pct": 38.3,
       "distribution_weighted_freq": {
-       "0": 147.4,
-       "1": 41.8,
-       "2": 59.0,
-       "3": 30.5,
-       "4": 30.6,
-       "5": 80.0,
-       "6": 52.1,
-       "7": 79.7,
-       "8": 154.0,
-       "9": 202.5,
-       "10": 635.6
+       "0": 81.2,
+       "1": 32.7,
+       "2": 68.3,
+       "3": 51.4,
+       "4": 45.7,
+       "5": 193.2,
+       "6": 161.5,
+       "7": 336.2,
+       "8": 463.6,
+       "9": 377.0,
+       "10": 335.0
       },
       "rescaled": {
-       "general_left_right_voters": 4.62
+       "general_left_right_voters": 4.22
       }
      }
     ],
@@ -2168,7 +2168,7 @@
     },
     "nzes2023_voters_general_left_right": {
      "ours_economic": 8.33,
-     "published_general_left_right": -2.4,
+     "published_general_left_right": 5.34,
      "note": "voters' general left-right placement, not an economic-only scale"
     }
    }
@@ -2614,49 +2614,49 @@
      {
       "election_year": 2023,
       "item": "B5",
-      "mean_left_right_0_10_weighted": 4.07,
-      "sd": 2.64,
-      "weighted_n_placing": 785.3,
+      "mean_left_right_0_10_weighted": 6.31,
+      "sd": 2.28,
+      "weighted_n_placing": 1404.0,
       "dont_know_pct": 27.56,
       "distribution_weighted_freq": {
-       "0": 116.5,
-       "1": 38.0,
-       "2": 53.0,
-       "3": 94.9,
-       "4": 96.9,
-       "5": 213.9,
-       "6": 61.8,
-       "7": 44.7,
-       "8": 9.9,
-       "9": 6.5,
-       "10": 49.2
+       "0": 46.9,
+       "1": 7.2,
+       "2": 23.5,
+       "3": 41.8,
+       "4": 54.6,
+       "5": 375.7,
+       "6": 222.6,
+       "7": 196.5,
+       "8": 178.8,
+       "9": 116.3,
+       "10": 140.0
       },
       "rescaled": {
-       "general_left_right_voters": -1.86
+       "general_left_right_voters": 2.62
       }
      },
      {
       "election_year": 2020,
       "item": "B7",
-      "mean_left_right_0_10_weighted": 3.38,
-      "sd": 2.26,
-      "weighted_n_placing": 1843.6,
+      "mean_left_right_0_10_weighted": 5.72,
+      "sd": 2.32,
+      "weighted_n_placing": 2127.5,
       "dont_know_pct": 38.68,
       "distribution_weighted_freq": {
-       "0": 224.2,
-       "1": 153.4,
-       "2": 305.5,
-       "3": 316.6,
-       "4": 278.9,
-       "5": 346.5,
-       "6": 61.1,
-       "7": 62.4,
-       "8": 31.2,
-       "9": 27.9,
-       "10": 35.8
+       "0": 100.1,
+       "1": 37.3,
+       "2": 66.8,
+       "3": 89.1,
+       "4": 146.0,
+       "5": 571.3,
+       "6": 332.4,
+       "7": 289.5,
+       "8": 274.0,
+       "9": 122.7,
+       "10": 98.3
       },
       "rescaled": {
-       "general_left_right_voters": -3.24
+       "general_left_right_voters": 1.44
       }
      }
     ],
@@ -2717,7 +2717,7 @@
     },
     "nzes2023_voters_general_left_right": {
      "ours_economic": -0.83,
-     "published_general_left_right": -1.86,
+     "published_general_left_right": 2.62,
      "note": "voters' general left-right placement, not an economic-only scale"
     }
    }
@@ -2990,49 +2990,49 @@
      {
       "election_year": 2023,
       "item": "B5",
-      "mean_left_right_0_10_weighted": 4.59,
-      "sd": 2.37,
-      "weighted_n_placing": 1352.0,
+      "mean_left_right_0_10_weighted": 2.36,
+      "sd": 2.41,
+      "weighted_n_placing": 1280.3,
       "dont_know_pct": 34.01,
       "distribution_weighted_freq": {
-       "0": 77.5,
-       "1": 71.4,
-       "2": 126.2,
-       "3": 187.2,
-       "4": 112.9,
-       "5": 306.0,
-       "6": 177.8,
-       "7": 185.3,
-       "8": 35.4,
-       "9": 32.4,
-       "10": 40.0
+       "0": 340.3,
+       "1": 214.2,
+       "2": 232.6,
+       "3": 188.1,
+       "4": 84.1,
+       "5": 128.4,
+       "6": 13.7,
+       "7": 13.3,
+       "8": 9.9,
+       "9": 6.5,
+       "10": 49.2
       },
       "rescaled": {
-       "general_left_right_voters": -0.82
+       "general_left_right_voters": -5.28
       }
      },
      {
       "election_year": 2020,
       "item": "B7",
-      "mean_left_right_0_10_weighted": 4.44,
-      "sd": 3.05,
-      "weighted_n_placing": 1185.8,
+      "mean_left_right_0_10_weighted": 3.38,
+      "sd": 2.26,
+      "weighted_n_placing": 1843.6,
       "dont_know_pct": 46.93,
       "distribution_weighted_freq": {
-       "0": 174.1,
-       "1": 74.6,
-       "2": 97.0,
-       "3": 135.4,
-       "4": 98.9,
-       "5": 216.4,
-       "6": 89.6,
-       "7": 74.7,
-       "8": 68.0,
-       "9": 62.7,
-       "10": 94.4
+       "0": 224.2,
+       "1": 153.4,
+       "2": 305.5,
+       "3": 316.6,
+       "4": 278.9,
+       "5": 346.5,
+       "6": 61.1,
+       "7": 62.4,
+       "8": 31.2,
+       "9": 27.9,
+       "10": 35.8
       },
       "rescaled": {
-       "general_left_right_voters": -1.12
+       "general_left_right_voters": -3.24
       }
      }
     ],
@@ -3056,7 +3056,7 @@
    "comparison": {
     "nzes2023_voters_general_left_right": {
      "ours_economic": -7.22,
-     "published_general_left_right": -0.82,
+     "published_general_left_right": -5.28,
      "note": "voters' general left-right placement, not an economic-only scale"
     }
    }
@@ -3332,49 +3332,49 @@
      {
       "election_year": 2023,
       "item": "B5",
-      "mean_left_right_0_10_weighted": 5.33,
+      "mean_left_right_0_10_weighted": 4.28,
       "sd": 2.72,
-      "weighted_n_placing": 1635.8,
+      "weighted_n_placing": 827.5,
       "dont_know_pct": 57.16,
       "distribution_weighted_freq": {
-       "0": 77.5,
-       "1": 71.4,
-       "2": 126.2,
-       "3": 187.2,
-       "4": 112.9,
-       "5": 306.0,
-       "6": 177.8,
-       "7": 185.3,
-       "8": 179.7,
-       "9": 71.0,
-       "10": 140.8
+       "0": 116.5,
+       "1": 38.0,
+       "2": 53.0,
+       "3": 94.9,
+       "4": 96.9,
+       "5": 213.9,
+       "6": 61.8,
+       "7": 44.7,
+       "8": 35.4,
+       "9": 32.4,
+       "10": 40.0
       },
       "rescaled": {
-       "general_left_right_voters": 0.66
+       "general_left_right_voters": -1.44
       }
      },
      {
       "election_year": 2020,
       "item": "B7",
-      "mean_left_right_0_10_weighted": 5.43,
-      "sd": 2.46,
-      "weighted_n_placing": 2582.9,
+      "mean_left_right_0_10_weighted": 4.44,
+      "sd": 3.05,
+      "weighted_n_placing": 1185.8,
       "dont_know_pct": 65.84,
       "distribution_weighted_freq": {
-       "0": 76.3,
-       "1": 105.1,
-       "2": 140.7,
-       "3": 273.6,
-       "4": 276.4,
-       "5": 409.4,
-       "6": 438.6,
-       "7": 283.2,
-       "8": 309.3,
-       "9": 131.5,
-       "10": 139.0
+       "0": 174.1,
+       "1": 74.6,
+       "2": 97.0,
+       "3": 135.4,
+       "4": 98.9,
+       "5": 216.4,
+       "6": 89.6,
+       "7": 74.7,
+       "8": 68.0,
+       "9": 62.7,
+       "10": 94.4
       },
       "rescaled": {
-       "general_left_right_voters": 0.86
+       "general_left_right_voters": -1.12
       }
      }
     ],
@@ -3398,7 +3398,7 @@
    "comparison": {
     "nzes2023_voters_general_left_right": {
      "ours_economic": -1.67,
-     "published_general_left_right": 0.66,
+     "published_general_left_right": -1.44,
      "note": "voters' general left-right placement, not an economic-only scale"
     }
    }
@@ -4744,25 +4744,25 @@
      {
       "election_year": 2020,
       "item": "B7",
-      "mean_left_right_0_10_weighted": 5.74,
-      "sd": 3.77,
-      "weighted_n_placing": 887.5,
+      "mean_left_right_0_10_weighted": 7.31,
+      "sd": 3.44,
+      "weighted_n_placing": 1513.1,
       "dont_know_pct": 56.5,
       "distribution_weighted_freq": {
-       "0": 154.1,
-       "1": 35.6,
-       "2": 59.5,
-       "3": 28.3,
-       "4": 28.1,
-       "5": 97.1,
-       "6": 69.1,
-       "7": 45.6,
-       "8": 54.1,
-       "9": 70.2,
-       "10": 245.9
+       "0": 147.4,
+       "1": 41.8,
+       "2": 59.0,
+       "3": 30.5,
+       "4": 30.6,
+       "5": 80.0,
+       "6": 52.1,
+       "7": 79.7,
+       "8": 154.0,
+       "9": 202.5,
+       "10": 635.6
       },
       "rescaled": {
-       "general_left_right_voters": 1.48
+       "general_left_right_voters": 4.62
       },
       "party_name_in_source": "new-conservative"
      }

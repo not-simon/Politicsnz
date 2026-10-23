@@ -80,7 +80,7 @@ def nzes_table(text, key):
     seg = seg[:nxt] if nxt > 0 else seg
     vals = {}
     for line in seg.split('\n'):
-        mm = re.match(r'^\s*(\d+)\.(?:\s*\d+)?\s*(?:Left|Right|Centre)?\s*\|\s*([\d.,]+)\s+([\d.]+)', line)
+        mm = re.match(r'^\s*(\d+)\.?(?:\s+\d+)?\s*(?:Left|Right|Centre)?\s*\|\s*([\d.,]+)\s+([\d.]+)', line)
         if mm and int(mm.group(1)) <= 10:
             vals[int(mm.group(1))] = float(mm.group(2).replace(',', ''))
     dk = re.search(r'(?:Don.t know|DK)\s*\|\s*([\d.,]+)\s+([\d.]+)', seg)

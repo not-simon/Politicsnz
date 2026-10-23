@@ -83,7 +83,7 @@ SCALE_THERMO = {
 
 ITEMS = []
 
-def I(id, axis, direction, text, source, subscale, scale=SCALE_LIKERT, item_ref=None, note=None):
+def I(id, axis, direction, text, source, subscale, item_ref=None, note=None, scale=SCALE_LIKERT):
     ITEMS.append({
         'id': id, 'axis': axis, 'direction': direction, 'text': text,
         'subscale': subscale, 'item_ref': item_ref, 'note': note,
