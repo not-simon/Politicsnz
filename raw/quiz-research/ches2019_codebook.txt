@@ -1,0 +1,930 @@
+                                       Codebook
+                              2019 Chapel Hill Expert Survey
+
+                                                 May 2020
+                                               Version 2019.3
+
+This dataset provides the data for the 2019 Chapel Hill Expert Survey on the positioning of 277
+political parties on political ideology, European integration, and policy positions in 32 countries,
+including all EU member states.1 The survey also incorporates parties in Iceland, Norway, Switzer-
+land and Turkey. The survey was administered between February 2020 to May 2020 to 421 experts
+specializing in political parties and European integration in one of the countries considered.2
+
+The Chapel Hill expert survey was conducted by Ryan Bakker, Liesbet Hooghe, Seth Jolly, Gary
+Marks, Jonathan Polk, Jan Rovny, Marco Steenbergen and Milada Anna Vachudova. The CHES
+team gratefully acknowledges research assistance from Stephanie Shady and Courtney Blackington.
+In addition, we acknowledge funding from the following organizations and grants.
+
+       • The University of North Carolina at Chapel Hill’s European Union Center of Excellence and
+         the W.R. Kenan and Burton Craige Research Funds.
+
+       • The European Union’s Horizon 2020 research and innovation programme (No. 649281).
+
+       • The Robert Schuman Centre for Advanced Studies, EUI, Florence.
+
+       • A public grant overseen by the French National Research Agency (ANR) as part of the “In-
+         vestissements d’Avenir” program LIEPP (ANR-11-LABX-0091, ANR-11-IDEX-0005-02).
+
+       • Swedish Research Council, grant number: 2016-01810.
+
+       • The Maxwell School of Syracuse University’s Appleby-Mosher Fund.
+
+
+The 2019_CHES_dataset_means.dta Stata file contains average expert judgments per political
+party. The 2019_CHES_dataset_expert-level.dta dataset provides information at the level of the
+individual expert and allows researchers to aggregate expert scores and estimate standard deviations
+among expert judgments. The survey questionnaire specifies the full question format.3
+
+*In papers or publications utilizing this dataset, we ask users to refer to the dataset as the 2019
+Chapel Hill expert survey and cite documentation as follows (this citation will be replaced by the
+article of record for the data set when information is available):
+
+Ryan Bakker, Liesbet Hooghe, Seth Jolly, Gary Marks, Jonathan Polk, Jan Rovny, Marco Steen-
+bergen, and Milada Vachudova. 2020. “2019 Chapel Hill Expert Survey.” Version 2019.3. Available
+on chesdata.eu. Chapel Hill, NC: University of North Carolina, Chapel Hill.4
+   1
+     Luxembourg and Cyprus are included, but users should note that only 2 surveys were completed for each country.
+Iceland also has a low response rate, with only 5 complete surveys.
+   2
+     1803 experts were contacted and 421 surveys were completed, yielding a 23.3 percent response rate.
+   3
+     The dataset files and sample questionnaire are available on the website (chesdata.eu) in Stata (.dta) and .csv
+formats.
+   4
+     Version control. V1 was the initial release. V2 Updated party acronyms and the country code for Spanish PdeCat
+
+
+                                                        1
+General Questions
+
+COUNTRY = unique identifier for each country.
+
+
+    Country ID       Country             Country                Country ID       Country             Country
+                     Abbreviation                                                Abbreviation
+          1          BE                  Belgium                      22         EST                 Estonia
+          2          DK                  Denmark                      23         HUN                 Hungary
+          3          GE                  Germany                      24         LAT                 Latvia
+          4          GR                  Greece                       25         LITH                Lithuania
+          5          ESP                 Spain                        26         POL                 Poland
+          6          FR                  France                       27         ROM                 Romania
+          7          IRL                 Ireland                      28         SLO                 Slovakia
+          8          IT                  Italy                        29         SLE                 Slovenia
+          10         NL                  Netherlands                  31         CRO                 Croatia
+          11         UK                  United Kingdom               34         TUR                 Turkey
+          12         POR                 Portugal                     35         NOR                 Norway
+          13         AUS                 Austria                      36         SWI                 Switzerland
+          14         FIN                 Finland                      37         MAL                 Malta
+          16         SV                  Sweden                       38         LUX                 Luxembourg
+          20         BUL                 Bulgaria                     40         CYP                 Cyprus
+          21         CZ                  Czech Republic               45         ICE                 Iceland
+
+
+EASTWEST = 0: party from Central/Eastern Europe, 1: party from EU-15
+PARTY_ID = unique identifier for each party.5
+PARTY = party abbreviation.
+
+
+
+
+(550). V3 Corrected galtan value for CDV, GLP/PVL abbreviation for Swiss Greens, and party code for Brothers of
+Italy (844).
+   5
+     Included are political parties that obtain at least 3 percent of the vote in the national election immediately prior
+to the survey year or that elect at least one representative to the national or European parliament.
+
+
+                                                           2
+    PARTY = party abbreviation
+    Country Party ID Party Abbrev   Party Name                                                      Party Name (English)
+    BE      102       PS            Parti Socialiste                                                Socialist Party
+            103       SPA           Socialistische Partij Anders                                    Socialist Party Differently
+            104       ECOLO         Ecolo                                                           Ecolo
+            105       Groen         Groen                                                           Green
+            106       MR            Mouvement Réformateur                                           Reformist Movement
+            107       VLD           Open Vlaamse Liberalen en Democraten                            Open Flemish Liberals and Democrats
+            108       cdH           Centre Démocrate Humaniste                                      Humanist Democratic Centre
+            109       CD&V          Christen-Democratisch en Vlaams                                 Christian Democratic and Flemish
+            110       NVA           Nieuw-Vlaamse Alliantie                                         New Flemish Alliance
+            112       VB            Vlaams Belang                                                   Flemish Interest
+            119       PVDA-PTB      Partij van de Arbeid van België; Parti du Travail de Belgique   Workers’ Party of Belgium
+
+    DK      201       SD            Socialdemokraterne                                              Social Democracy
+            202       RV            Det Radikale Venstre                                            Radical Left-Social Liberal Party
+            203       KF            Det Konservative Folkeparti                                     Conservative People’s Party
+            206       SF            Socialistisk Folkeparti                                         Socialist People’s Party
+            211       V             Venstre, Danmarks Liberale Parti                                Venstre, Liberal Party of Denmark
+            213       EL            Enhedslisten—De Rød-Grønne                                      Unity List/Red-Green Alliance
+            215       DF            Dansk Folkeparti                                                Danish People’s Party
+3
+
+
+
+
+            218       LA            Liberal Alliance                                                Liberal Alliance
+            219       A             Alternativet                                                    The Alternative
+            220       NB            Nye Borgerlige                                                  The New Right
+
+    GE      301       CDU           Christlich Demokratische Union Deutschlands                     Christian Democratic Union of Germany
+            302       SPD           Sozialdemokratische Partei Deutschlands                         Social Democratic Party of Germany
+            303       FDP           Freie Demokratische Partei                                      Free Democratic Party
+            304       Grunen        Bündnis 90/Die Grünen                                           Alliance ’90/The Greens
+            306       Linke         Die Linke                                                       The Left
+            308       CSU           Christlich Soziale Union in Bayern                              Christian Social Union in Bavaria
+            310       AfD           Alternative für Deutschland                                     Alternative for Germany
+            311       Piraten       Piratenpartei Deutschland                                       Pirate Party of Germany
+            312       DieTier       Mensch Umwelt Tierschutz                                        Human Environment Animal Protection
+
+                                                                                                                                   Continued on next page
+    PARTY = party abbreviation (continued from previous page)
+    Country Party ID Party Abbrev       Party Name                               Party Name (English)
+    GR       401       PASOK           Panellinio Sosialistikó Kínima            Panhellenic Socialist Movement
+             402       ND              Néa Dimokratía                            New Democracy
+             403       SYRIZA          Synaspismós Rizospastikís Aristerás       Coalition of the Radical Left
+             404       KKE             Kommounistikó Kómma Elládas               Communist Party of Greece
+             415       XA              Laïkós Sýndesmos—Chrysí Avgí              Popular Association—Golden Dawn
+             416       EL              Elliniki Lisi                             Greek Solution
+             417       MR25            Métopo Evropaikís Realistikís Anypakoís   European Realistic Disobedience Front [MeRa25]
+             418       KIDISO          Kinima Dimokraton Sosialiston             Movement of Democratic Socialists
+
+    ESP      501       PSOE            Partido Socialista Obrero Español         Spanish Socialist Workers’ Party
+             502       PPP             Partido Popular                           People’s Party
+             504       IU              Izquierda Unida                           United Left
+             506       PNV             Partido Nacionalista Vasco                Basque Nationalist Party
+             511       ERC             Esquerra Republicana de Catalunya         Republican Left of Catalonia
+             513       BNG             Bloque Nacionalista Galego                Galician Nationalist Bloc
+             517       CC              Coalición Canaria                         Canarian Coalition
+             524       EHB             Euskal Herria Bildu                       Basque Country Unite/Gather
+             525       Podemos         Podemos; Unidas Podemos                   We Can
+             526       Cs              Ciudadanos—Partido de la Ciudadanía       Citizens—Party of the Citizenry
+4
+
+
+
+
+             527       Vox             Vox                                       Voice (Latin)
+             528       Pais            Más Pais                                  More Country
+             550       PdeCat          Partit Demócrata Europeu Catalá           Catalan European Democratic Party
+                                       (Junts per Cataluyna)                     (Together for Catalonia partner)
+
+    FR       601       PCF             Parti Communiste Français                 French Communist Party
+             602       PS              Parti Socialiste                          Socialist Party
+             605       EELV            Europe Écologie Les Verts                 Europe Ecology—The Greens
+             609       LR              Les Républicains                          The Republicans
+             610       RN              Rassemblement national                    National Rally
+             613       MoDem           Mouvement Démocrate                       Democratic Movement
+             626       LREM            La République En Marche                   The Republic Forward
+             627       FI              La France Insourmise                      Unbowed France
+             628       DLF             Debout la France                          France Arise
+
+                                                                                                               Continued on next page
+    PARTY = party abbreviation (continued from previous page)
+    Country Party ID Party Abbrev       Party Name                               Party Name (English)
+    IRL      701       FF              Fianna Fáil                               Soldiers of Destiny
+             702       FG              Fine Gael                                 Family of the Irish
+             703       Lab             Páirti Lucht Oibre                        Labour
+             705       GP              Comhaontas Glas                           Green Party
+             707       SF              Sinn Féin                                 We Ourselves
+             709       S-PBP           Dlúthphairtíocht–Pobal Roimh Bhrabús      Solidarity—People Before Profit
+             710       DS              Daonlathaigh Shóisialta                   Social Democrats
+             711       I4C             Independents for Change                   Independents for Change
+             712       RI              Renua Ireland                             Renua Ireland
+
+    IT       811       LN              Lega Nord                                 Northern League
+             813       RI              Radicali Italiani                         Italian Radicals
+             815       FI              Forza Italia                              Forward Italy
+             827       SVP             Südtiroler Volkspartei                    South Tyrolean People’s Party
+             837       PD              Partito Democratico                       Democratic Party
+             838       SI              Sinistra Italiana                         Italian Left—Left Ecology Freedom
+             844       FdI             Fratelli d’Italia                         Brothers of Italy
+             845       M5S             MoVimento Cinque Stelle                   Five Star Movement
+5
+
+
+
+
+    NL       1001      CDA             Christen-Democratisch Appél               Christian Democratic Appeal
+             1002      PvdA            Partij van de Arbeid                      Labour Party
+             1003      VVD             Volkspartij voor Vrijheid en Democratie   People’s Party for Freedom and Democracy
+             1004      D66             Democraten 66                             Democrats 66
+             1005      GL              GroenLinks                                GreenLeft
+             1006      SGP             Staatkundig Gereformeerde Partij          Reformed Political Party
+             1014      SP              Socialistische Partij                     Socialist Party
+             1016      CU              ChristenUnie                              Christian Union
+             1017      PVV             Partij voor de Vrijheid                   Party for Freedom
+             1018      PvdD            Partij voor de Dieren                     Party for the Animals
+             1020      50PLUS          50PLUS                                    50PLUS
+             1050      DENK            Beweging DENK                             Think
+             1051      FvD             Forum voor Democratie                     Forum for Democracy
+
+                                                                                                                   Continued on next page
+    PARTY = party abbreviation (continued from previous page)
+    Country Party ID Party Abbrev       Party Name                                                     Party Name (English)
+    UK       1101      Cons            Conservative Party                                              Conservative Party
+             1102      Lab             Labour Party                                                    Labour Party
+             1104      LibDem          Liberal Democratic Party                                        Liberal Democratic Party
+             1105      SNP             Scottish National Party                                         Scottish National Party
+             1106      Plaid           Plaid Cymru                                                     Party of Wales
+             1107      Green           Green Party                                                     Green Party
+             1108      UKIP            United Kingdom Independence Party                               United Kingdom Independence Party
+             1110      Brexit          Brexit Party                                                    Brexit Party
+
+    POR      1201      CDU             Coligação Democrática Unitária                                  Democratic Unitarian Coalition
+             1202      CDS-PP          Centro Democrático e Social—Partido Popular                     CDS—People’s Party
+             1205      PS              Partido Socialista                                              Socialist Party
+             1206      PSD             Partido Social Democrata                                        Social Democratic Party
+             1208      BE              Bloco de Esquerda                                               Left Bloc
+             1210      PCP             Partido Comunista Português                                     Portuguese Communist Party
+             1211      PEV             Partido Ecologista “Os Verdes”                                  Ecologist Party “The Greens”
+             1250      PAN             Pessosas—Animais—Natureza                                       People—Animals—Nature
+
+    AUS      1301      SPÖ             Sozialdemokratische Partei Österreichs                         Social Democratic Party of Austria
+6
+
+
+
+
+             1302      ÖVP             Österreichische Volkspartei                                    Austrian People’s Party
+             1303      FPÖ             Freiheitliche Partei Österreichs                       Freedom Party of Austria
+             1304      Grüne           Die Grünen— Die Grünen Alternative                     The Greens—The Green Alternative
+             1306      NEOS            NEOS—Das Neue Österreich und Liberales Forum           NEOS—The New Austria and Liberal Forum
+
+    FIN      1401      SDP             Suomen Sosialidemokraattinen Puolue                    Social Democratic Party of Finland
+             1402      KOK             Kansallinen Kokoomus                                   National Coalition Party
+             1403      KESK            Suomen Keskusta                                        Centre Party
+             1404      VAS             Vasemmistoliitto                                       Left Alliance
+             1405      PS              Perussuomalaiset                                       The Finns Party
+             1406      SFP             Suomen ruotsalainen kansanpuolue/Svenska folkpartiet   The Swedish People’s Party of Finland
+                                       i Finland
+             1408      VIHR            Vihreä Liitto                                          Green League
+             1409      KD              Kristillisdemokraatit                                  Christian Democrats
+
+                                                                                                                                        Continued on next page
+    PARTY = party abbreviation (continued from previous page)
+    Country Party ID Party Abbrev       Party Name                                               Party Name (English)
+    SV       1601      V                Vänsterpartiet                                  Left Party
+             1602      S/SAP            Sveriges Socialdemokratiska Arbetareparti       Swedish Social Democratic Party
+             1603      C                Centerpartiet                                   Center Party
+             1604      L                Liberalerna                                     Liberal People’s Party
+             1605      M                Moderata Samlingspartiet                        Moderate Party
+             1606      KD               Kristdemokraterna                               Christian Democrats
+             1607      MP               Miljöepartiet de Gröna                          Environment Party—The Greens
+             1610      SD               Sverigedemokraterna                             Sweden Democrats
+
+    BUL      2003      BSP              Balgarska sotsialisticheska partiya             Bulgarian Socialist Party
+             2004      DPS              Dvizhenie za Prava i Svobodi                    Movement for Rights and Freedoms
+             2005      BMRO             BMRO - Balgarsko natsionalno dvizhenie          Bulgarian National Movement
+             2007      Ataka            Ataka                                           Attack
+             2008      DSB              Demokrati za Silna Bǎlgarija                   Democrats for a Strong Bulgaria
+             2010      GERB             Grazhdani za evropeysko razvitie na Balgariya   Citizens for European Development of Bulgaria
+             2014      NFSB             Natsionalen front za spasenie na Balgariya      National Front for the Salvation of Bulgaria
+             2017      Volya            Volya                                           Will
+             2018      DB               Da Bulgaria                                     Yes, Bulgaria!
+             2019      Slavi Trifonov   Slavi Trifonov                                  Party of Slavi Trifonov
+7
+
+
+
+
+    CZ       2101      CSSD             C̆eská strana sociálnĕ demokratická            Czech Social Democratic Party
+             2102      ODS              Obc̆anská demokratická strana                   Civic Democratic Party
+             2103      KSCM             Komunistická strana C̆ech a Moravy              Communist Party of Bohemia and Moravia
+             2104      KDU-CSL          Kr̆esťanská demokratická unie -                 Christian Democratic Union-
+                                        C̆eskoslovenská strana lidová                   Czechoslovak People’s Party
+             2109      TOP09            Tradice Odpovĕdnost Prosperita 09              Tradition Responsibility Prosperity 09
+             2111      ANO2011          Akce nespokojených obc̆anů                      Action of Dissatisfied Citizens
+             2114      Pirates          Ceska piratska strana                           Czech Pirate Party
+             2115      SPD              Svoboda a pr̆ímá demokracie Tomio Okamura       Freedom and Direct Democracy Tomio Okamura
+             2116      STAN             Starostové a nezávislí                          Mayors and Independents
+
+                                                                                                                                Continued on next page
+    PARTY = party abbreviation (continued from previous page)
+    Country Party ID Party Abbrev       Party Name                                          Party Name (English)
+    EST      2201      IRL             Erakond Isamaa ja Res Publica Liit          Pro Patria and Res Publica Union
+             2202      EK              Eesti Keskerakond                           Estonian Center Party
+             2203      ER              Eesti Reformierakond                        Estonian Reform Party
+             2204      SDE             Sotsiaaldemokraatlik Erakond                Social Democratic Party
+             2209      EKRE            Eesti Konservatiivne Rahvaerakond           Conservative People’s Party
+             2210      E200            Erakond Eesti 200                           Estonia 200
+
+    HUNG     2301      MSzP            Magyar Szocialista Párt                     Hungarian Socialist Party
+             2302      Fidesz-KDNP     Fidesz—Magyar Polgári Szövetség             Fidesz—Hungarian Civic Union
+                                       Kereszténydemokrata Néppárt                 Christian Democratic People’s Party
+             2308      JOBBIK          Jobbik Magyarországért Mozgalom             Jobbik—Movement for a Better Hungary
+             2309      LMP             Lehet Más a Politika                        Politics Can Be Different
+             2310      E14             Együtt 2019                                 Together 2019
+             2311      DK              Demokratikus Koalíció                       Democratic Coalition
+             2314      MM              Momentum Mozgalom                           Momentum Movement
+
+    LAT      2402      LKS             Latvijas Krievu savienı̄ba                  Latvian Russian Union
+             2405      ZZS             Zal, o un Zemnieku Savienı̄ba               Union of Greens and Farmers
+             2406      NA              Nacionālā apvienı̄ba                      National Alliance
+8
+
+
+
+
+                                       Tēvzemei un Brı̄vı̄bai/LNNK                For Fatherland and Freedom/LNNK
+             2410      SDPS            Sociāldemokrātiskā Partija “Saskan, a"   Social Democratic Party “Harmony”
+             2412      V               Vienotı̄ba                                  Unity
+             2414      LRA             Latvijas Reǵionu apvienība                Latvian Association of Regions
+             2415      KPV LV          Kam pieder valsts?                          Who owns the state?
+             2416      JKP             Jaunā konservatı̄vā partija               New Conservative Party
+             2417      AP!             Attı̄stı̄bai/Par!                           Development/For!
+
+    LITH     2501      LSDP            Lietuvos socialdemokratu˛ partija           Social Democratic Party of Lithuania
+             2506      TS-LKD          Tėvynės sąjunga                           Homeland Union
+             2507      LVZS            Lietuvos valstiečiu̧ sąjunga                Lithuanian Peasant Union
+             2511      LLRA            Lietuvos lenku˛ rinkimu˛ akcija             Electoral Action of Lithuania’s Poles
+             2515      TT              Tvarka ir Teisingumas                       Order and Justice
+             2516      DP              Darbo Partija                               Labour Party
+             2518      LRLS            Lietuvos Respublikos Liberalu˛ Sąjūdis     Liberal Movement of the Republic of Lithuania
+             2521      LCP             Lietuvos Centro Partija                     Lithuanian Centre Party
+             2522      LZP             Lietuvos žalioji partija                    Lithuanian Green Party
+             2523      VKM-AMT         Visuomeninis rinkimu˛ komitetas             Public election committee
+                                       “Aušros Maldeikienės traukinys”            “Aušra Maldeikienė’s Train”
+
+                                                                                                                           Continued on next page
+    PARTY = party abbreviation (continued from previous page)
+    Country Party ID Party Abbrev       Party Name                                              Party Name (English)
+    POL      2601      SLD             Sojusz Lewicy Demokratycznej                    Democratic Left Alliance
+             2603      PO              Platforma Obywatelska                           Civic Platform
+             2605      PiS             Prawo i Sprawiedliwość                          Law and Justice Party
+             2606      PSL             Polskie Stronnictwo Ludowe                      Polish People’s Party
+             2617      Kukiz           Kukiz ’15                                       Kukiz ’15
+             2618      Nowo            Nowoczesna                                      Modern
+             2619      Konfederacia    Konfederacja Wolność i Niepodległość            Confederation Liberty and Independence
+             2620      Lewica Razem    Lewica Razem                                    Left Together
+             2621      Wiosnia         Wiosna                                          Spring
+
+    ROM      2701      PSD             Partidul Social Democrat                        Social Democratic Party
+             2705      PNL             Partidul Naţional Liberal                       National Liberal Party
+             2706      UDMR            Uniunea Democratǎ Maghiarǎ din România        Hungarian Democratic Union of Romania
+             2711      PMP             Partidul Mis˛carea Popularǎ                    People’s Movement Party
+             2712      ALDE            Aliant, a Liberalilor şi Democrat, ilor         Alliance of Liberals and Democrats
+             2713      USR             Uniunea Salvat, i România                       Save Romania Union
+             2714      PRO             PRO România                                     PRO Romania
+
+    SLO      2803      Smer-SD         Smer—sociálna demokrçacia                       Direction—Social Democracy
+9
+
+
+
+
+             2804      SMK-MKP         Maďarskej kooalície/Magyar kooalície            Hungarian Coalition
+             2805      KDH             Kresťanskodemokratické hnutie                   Christian Democratic Movement
+             2809      SNS             Slovenská národná strana                        Slovak National Party
+             2812      SaS             Sloboda a Solidarita                            Freedom and Solidarity
+             2813      MH              Most-Híd                                        Bridge
+             2814      OLaNO           Obyčajní Ľudia a nezávislé osobnosti            Ordinary People and Independent
+             2816      Siet            Sieť                                            Network
+             2817      LSNS            Ĺudová strana Naše Slovensko (Marian Kotleba)   People’s Party—Our Slovakia
+             2818      Sme Rodina      Sme Rodina—Boris Kollár                         We are family—Boris Kollar
+             2819      PS              Progresívne Slovensko                           Progressive Slovakia
+             2820      SPOLU           SPOLU—občianska demokracia                      TOGETHER—Civic Democracy
+             2821      Za Ludi         Za Ĺudí (Andrej Kiska)                          For the People
+
+                                                                                                                                Continued on next page
+     PARTY = party abbreviation (continued from previous page)
+     Country Party ID Party Abbrev       Party Name                                                Party Name (English)
+     SLE      2902      SDS               Slovenska Demokratska Stranka                   Slovenian Democratic Party
+              2903      SD                Socialni Demokrati                              Social Democrats
+              2905      NSI               Nova Slovenija-Kršcanska Ljudska Stranka        New Slovenia-Christian People’s Party
+              2906      DeSUS             Demokratična Stranka Upokojencev Slovenije      Democratic Party of Pensioners of Slovenia
+              2907      SNS               Slovenska nacionalna stranka                    Slovenian National Party
+              2911      SMC               Stranka Mira Cerarja                            Party of Miro Cerar
+              2912      Levica            Levica                                          The Left
+              2913      Alenka Bratusek   Stranka Alenke Bratušek                         Party of Alenka Bratusek
+              2915      LMS               Lista Marjana Šarca                             List of Marjan Sarec
+
+     CRO      3101      HDZ               Hrvatska Demokratska Zajednica                  Croatian Democratic Union
+              3102      SDP               Socialdemokratska Partija Hrvatske              Social Democratic Party of Croatia
+              3103      HSS               Hrvatska Seljačka Stranka                       Croatian Peasant Party
+              3104      HSLS              Hrvatska Socijalno Liberalna Stranka            Croatian Social Liberal Party
+              3105      HNS               Hrvatska Narodna Stranka—Liberalni Demokrati    Croatian People’s Party—Liberal Democrats
+              3106      IDS               Istarski Demokratski Sabor                      Istrian Democratic Assembly
+              3107      HDSSB             Hrvatski Demokrtski Sabor Slavonije i Baranje   Croatian Democratic Assembly of Slavonija and Baranja
+              3108      HSU               Hrvatska stranka umirovljenika                  Croatian Party of Pensioners
+              3110      SDSS              Samostalna demokratska srpska stranka           Independent Democratic Serb Party
+10
+
+
+
+
+              3115      Most              Most nezavisnih lista                           Bridge of Independent Lists
+              3116      ZZ                Živi zid                                        Human Shield
+              3117      MB 365            Milan Bandić 365—Stranka rada i solidarnosti    Milan Bandic 365—The Party of Labour and Solidarity
+              3118      NS-R              Narodna stranka-Reformisti                      People’s Party-Reformists
+              3119      HKS               Hrvatska konzervativna stranka                  Croatian Conservative Party
+
+     TUR      3401      AKP               Adalet ve Kalkinma Partisi                      Justice and Development Party
+              3402      CHP               Cumhuriyet Halk Patisi                          Republican People’s Party
+              3403      MHP               Milliyetci Hareket Partisi                      Nationalist Movement Party
+              3407      HDP               Halklarin Demokratik Partisi                    Peoples’ Democratic Party
+              3408      IYI               İyi Parti                                       Good Party
+
+     NOR      3501      Ap                Arbeiderpartiet                                 Labour Party
+              3502      FrP               Fremskrittspartiet                              Progress Party
+              3503      H                 Høyre                                           Conservative Party
+              3504      SV                Sosialistisk Venstreparti                       Socialist Left Party
+              3505      Sp                Senterpartiet                                   Centre Party
+              3506      KrF               Kristelig Folkeparti                            Christian Democratic Party
+              3507      V                 Venstre                                         Liberal Party
+              3508      MDG               Miljøpartiet De Grønne                          Green Party
+                                                                                                                                   Continued on next page
+     PARTY = party abbreviation (continued from previous page)
+     Country Party ID Party Abbrev       Party Name                                            Party Name (English)
+              3509      RV              Raudt                                         Red Party
+     SWI      3601      SVP/UDC                                                       Swiss People’s Party
+              3602      SP/PS                                                         Social Democratic Party of Switzerland
+              3603      FDP/PLR                                                       FDP. The Liberals
+              3604      CVP/PVC                                                       Christian Democratic People’s Party
+              3605      GPS/PES                                                       Green Party
+              3606      GLP/PVL                                                       Green Liberal Party
+              3607      EVP/PEV                                                       Evangelical People’s Party
+              3612      BDP/PBD                                                       Conservative Democratic Party
+
+     MAL      3701      PL              Partit Laburista                              Labour Party
+              3702      PN              Partit Nazzjonalista                          Nationalist Party
+
+     LUX      3801      CSV             Chrëschtlech Sozial Vollekspartei             Christian Social People’s Party
+              3802      Greng           Déi Gréng                                     The Greens
+              3803      DP              Demokratesch Partei                           Democratic Party
+              3804      LSAP            Lëtzebuerger Sozialistesch Aarbechterpartei   Luxembourg Socialist Workers’ Party
+              3805      ADR             Alternativ Demokratesch Reformpartei          Alternative Democratic Reform Party
+              3806      DL              Déi Lénk                                      The Left
+11
+
+
+
+
+              3807      PPLU            Piratepartei Lëtzebuerg                       Pirate Party Luxembourg
+
+     CYP      4001      DISY            Dimokratikós Sinagermós                       Democratic Rally
+              4003      AKEL            Anorthotikó Kómma Ergazómenou Laoú            Progressive Party of Working People
+              4004      DIKO            Dimokratikó Kómma                             Democratic Party
+              4005      EDEK            Kinima Sosialdimokraton EDEK                  Movement for Social Democracy EDEK
+              4006      KOP             Kinima Oikologon Perivallontiston             Ecological and Environmental Movement
+              4007      SYM             Symmachía Politón                             Citizens’ Alliance
+              4008      Kinhma          Kinima Allilengyu                             Solidarity Movement
+              4009      ELAM            Ethniko Laiko Metopo                          National Popular Front
+
+     ICE      4501      Sj              Sjálfstæðisflokkurinn                         Independence Party
+              4502      Graen           Vinstrihreyfingin—grænt framboð               Left-Green Movement
+              4503      F               Framsóknarflokkurinn                          Progressive Party
+              4504      M               Miðflokkurinn                                 Centre Party
+              4505      Sam             Samfylkingin                                  Social Democratic Alliance
+              4506      Pi              Píratar                                       Pirate Party
+              4507      V               Viðreisn                                      Reform Party
+              4508      FIF             Flokkur fólksins                              People’s Party
+Entries for the questions on the following pages are the mean of expert responses for a particular
+party.
+
+
+
+General Questions on European Integration
+
+EU_POSITION = overall orientation of the party leadership towards European integration in
+2019.
+
+
+     1 = Strongly opposed
+     2 = Opposed
+     3 = Somewhat opposed
+     4 = Neutral
+     5 = Somewhat in favor
+     6 = In favor
+     7 = Strongly in favor
+
+
+EU_POSITION_SD = standard deviation of expert placement of overall orientation of the party
+leadership towards European integration in 2019.
+
+EU_SALIENCE = relative salience of European integration in the party’s public stance in 2019.
+
+
+     0 = European Integration is of no importance.
+     :
+     10 = European Integration is of great importance.
+
+
+EU_DISSENT = degree of dissent on European integration in 2019.
+
+
+     0 = Party was completely united.
+     :
+     10 = Party was extremely divided.
+
+
+EU_BLUR = how blurry was each party’s position on on European integration in 2019.
+
+
+     0 = Not at all blurred.
+     :
+     10 = Extremely blurred.
+
+
+
+
+                                               12
+Specific EU Policy Questions
+
+EU_COHESION = position of the party leadership in 2019 on EU cohesion or regional policy
+(e.g. the structural funds).
+
+
+     1 = Strongly opposes
+     :
+     7 = Strongly favors
+
+
+EU_FOREIGN = position of the party leadership in 2019 on EU foreign and security policy.
+
+
+     1 = Strongly opposes
+     :
+     7 = Strongly favors
+
+
+EU_INTMARK = position of the party leadership in 2019 on the internal market (i.e. free
+movement of goods, services, capital and labor).
+
+
+     1 = Strongly opposes
+     :
+     7 = Strongly favors
+
+
+EU_BUDGETS = position of the party leadership in 2019 on EU authority over economic and
+budgetary policy.
+
+
+     1 = Strongly opposes
+     :
+     7 = Strongly favors
+
+
+EU_ASYLUM = position of the party leadership in 2019 on EU authority over asylum policy.
+
+
+     1 = Strongly opposes
+     :
+     7 = Strongly favors
+
+
+
+
+                                            13
+Ideological Questions
+
+LRGEN = position of the party in 2019 in terms of its overall ideological stance.
+
+
+     0 = Extreme left
+     :
+     5 = Center
+     :
+     10 = Extreme right
+
+
+LRECON = position of the party in 2019 in terms of its ideological stance on economic issues.
+Parties can be classified in terms of their stance on economic issues such as privatization, taxes,
+regulation, government spending, and the welfare state. Parties on the economic left want govern-
+ment to play an active role in the economy. Parties on the economic right want a reduced role for
+government.
+
+
+     0 = extreme left
+     :
+     5 = center
+     :
+     10 = extreme right
+
+
+LRECON_SD = standard deviation of expert placement of the party in 2019 in terms of its
+ideological stance on economic issues.
+
+LRECON_SALIENCE = relative salience of economic issues in the party’s public stance in
+2019.
+
+
+     0 = No importance.
+     :
+     10 = Great importance.
+
+
+LRECON_DISSENT = degree of dissent on economic issues in 2019.
+
+
+     0 = Party was completely united.
+     :
+     10 = Party was extremely divided.
+
+
+LRECON_BLUR = how blurry was each party’s position on economic issues in 2019.
+
+
+     0 = Not at all blurred.
+     :
+     10 = Extremely blurred.
+
+
+                                                14
+GALTAN = position of the party in 2019 in terms of their views on social and cultural values.
+“Libertarian” or “postmaterialist” parties favor expanded personal freedoms, for example, abortion
+rights, divorce, and same-sex marriage. “Traditional” or “authoritarian” parties reject these ideas
+in favor of order, tradition, and stability, believing that the government should be a firm moral
+authority on social and cultural issues.
+
+
+     0 = Libertarian/Postmaterialist
+     :
+     5 = center
+     :
+     10 = Traditional/Authoritarian
+
+
+GALTAN_SD = standard deviation of expert placement of the party in 2019 in terms of their
+views on democratic freedoms and rights.
+
+GALTAN_SALIENCE = relative salience of libertarian/traditional issues in the party’s public
+stance in 2019.
+
+
+     0 = No importance.
+     :
+     10 = Great importance.
+
+
+GALTAN_DISSENT = degree of dissent on libertarian/traditional issues in 2019.
+
+
+     0 = Party was completely united.
+     :
+     10 = Party was extremely divided.
+
+
+GALTAN_BLUR = how blurry was each party’s position on libertarian/traditional issues in
+2019.
+
+
+     0 = Not at all blurred.
+     :
+     10 = Extremely blurred.
+
+
+
+Policy Dimensions
+
+IMMIGRATE_POLICY = position on immigration policy.
+
+
+     0 = Strongly favors a liberal policy on immigration
+     :
+     10 = Strongly favors a restrictive policy on immigration
+
+
+                                                15
+IMMIGRATE_SALIENCE = relative salience of imigration policy in the party’s public stance
+in 2019.
+
+     0 = No importance.
+     :
+     10 = Great importance.
+
+IMMIGRATE_DISSENT = degree of dissent on immigration policy in 2019.
+
+     0 = Party was completely united.
+     :
+     10 = Party was extremely divided.
+
+MULTICULTURALISM = position on integration of immigrants and asylum seekers (multicul-
+turalism vs. assimilation).
+
+     0 = Strongly favors multiculturalism
+     :
+     10 = Strongly favors assimilation
+
+MULTICULT_SALIENCE = relative salience of immigrants and asylum seekers issues in the
+party’s public stance in 2019.
+
+     0 = No importance.
+     :
+     10 = Great importance.
+
+MULTICULT_DISSENT = degree of dissent on immigrants and asylum seekers issues in 2019.
+
+     0 = Party was completely united.
+     :
+     10 = Party was extremely divided.
+
+REDISTRIBUTION = position on redistribution of wealth from the rich to the poor. poor.
+
+     0 = Strongly favors redistribution :
+     10 = Strongly opposes redistribution
+
+REDIST_SALIENCE = relative salience of redistribution in the party’s public stance in 2019.
+
+     0 = No importance.
+     :
+     10 = Great importance.
+
+                                            16
+ENVIRONMENT = position towards environmental sustainability.
+
+
+     0 = Strongly supports environmental protection even at the cost of economic growth
+     :
+     10 = Strongly supports economic growth even at the cost of environmental protection.
+
+
+ENVIRO_SALIENCE = relative salience of environmental sustainability in the party’s public
+stance in 2019.
+
+
+     0 = No importance.
+     :
+     10 = Great importance.
+
+
+SPENDVTAX = position on improving public services vs. reducing taxes during 2019.
+
+
+     0 = Strongly favors improving public services
+     :
+     10 = Strongly favors reducing taxes.
+
+
+DEREGULATION = position on deregulation of markets.
+
+
+     0 = Strongly opposes deregulation of markets
+     :
+     10 = Strongly favors deregulation of markets
+
+
+ECON_INTERVEN = position on state intervention in the economy.
+
+
+     0 = Fully in favor of state intervention
+     :
+     10 = Fully opposed to state intervention
+
+
+CIVLIB_LAWORDER = position on civil liberties vs. law and order.
+
+
+     0 = Strongly favors civil liberties
+     :
+     10 = Strongly favors tough measures to fight crime
+
+
+SOCIALLIFESTYLE = position on social lifestyle (e.g. rights for homosexuals, gender equality).
+
+
+     0 = Strongly supports liberal policies
+     :
+     10 = Strongly opposes liberal policies
+
+                                                17
+RELIGIOUS_PRINCIPLES = position on role of religious principles in politics.
+
+
+     0 = Strongly opposes religious principles in politics
+     :
+     10 = Strongly supports religious principles in politics
+
+
+ETHNIC_MINORITIES = position towards ethnic minority rights.
+
+
+     0 = Strongly favors more rights for ethnic minorities
+     :
+     10 = Strongly opposes more rights for ethnic minorities
+
+
+NATIONALISM = position towards cosmopolitanism vs. nationalism.
+
+
+     0 = Strongly promotes cosmopolitan conceptions of society
+     :
+     10 = Strongly promotes nationalist conceptions of society
+
+
+URBAN_RURAL = position on urban/rural interests.
+
+
+     0 = Strongly supports urban interests
+     :
+     10 = Strongly supports rural interests.
+
+
+PROTECTIONISM = position towards trade liberalization/protectionism.
+
+
+     0 = Strongly favors trade liberalization
+     :
+     10 = Strongly favors protection of domestic producers.
+
+
+REGIONS = position on political decentralization to regions/localities.
+
+
+     0 = Strongly favors political decentralization
+     :
+     10 = Strongly opposes political decentralization.
+
+
+RUSSIAN_INTERFERENCE = salience of Russian interference in domestic affairs for the
+party leadership.
+
+
+     0 = No importance
+     :
+     10 = Great importance.
+
+                                                18
+ANTI_ISLAM_RHETORIC = salience of anti-Islam rhetoric for the party leadership.
+
+
+     0 = Not important at all
+     :
+     10 = Extremely important.
+
+
+
+Party characteristics
+
+PEOPLE_VS_ELITE = position on people vs elected representatives. Some political parties
+take the position that ‘the people’ should have the final say on the most important issues, for
+example, by voting directly in referendums. At the opposite pole are political parties that believe
+that elected representatives should make the most important political decisions.
+
+
+     0 = Elected office holders should make the most important decisions
+     :
+     10 = ‘The people’, not politicians, should make the most important decisions.
+
+
+ANTIELITE_SALIENCE = salience of anti-establishment and anti-elite rhetoric.
+
+
+     0 = Not important at all
+     :
+     10 = Extremely important
+
+
+CORRUPT_SALIENCE = salience of reducing political corruption.
+
+
+     0 = Not important at all
+     :
+     10 = Extremely important
+
+
+MEMBERS_VS_LEADERSHIP = position on party leadership vs. members/activists mak-
+ing party policy choices.
+
+
+     0 = Members/activists have complete control over policy choices
+     :
+     10 = Leadership has complete control over policy choices.
+
+
+
+
+                                                19
+EU questions for Turkey
+
+EU_ECON_REQUIRE = position on fulfilling the economic requirements of EU membership.
+
+
+     1 = Strongly opposed to fulfilling economic requirements
+     :
+     7 = Strongly in favor of fulfilling economic requirements.
+
+
+EU_POLITICAL_REQUIRE = position on fulfilling the political requirements of EU mem-
+bership.
+
+
+     1 = Strongly opposed to fulfilling political requirements
+     :
+     7 = Strongly in favor of fulfilling political requirements.
+
+
+EU_GOOGOV_REQUIRE = position on fulfilling the good governance requirements of EU
+membership.
+
+
+     1 = Strongly opposed to fulfilling good governance requirements
+     :
+     7 = Strongly in favor of fulfilling good governance requirements.
+
+
+
+
+Last updated: November 2, 2020.
+
+                                                 20
+
