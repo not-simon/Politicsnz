@@ -146,7 +146,7 @@ pages = {}
 for f in [ROOT / 'REPORT.md', ROOT / 'README.md'] + sorted((ROOT / 'elections').glob('*.md')) + sorted((ROOT / 'parties').glob('*/README.md')) \
          + sorted((ROOT / 'parties').glob('*/track-record.md')) + [ROOT / 'parties' / 'MINOR_PARTIES.md'] \
          + sorted((ROOT / 'parties').glob('*/policies/README.md')) + sorted((ROOT / 'guide').glob('*.md')) + sorted((ROOT / 'electorates').glob('*.md')) \
-         + sorted((ROOT / 'parties').glob('*/people/*/README.md')):
+         + sorted((ROOT / 'parties').glob('*/people/*/README.md')) + sorted((ROOT / 'docs').glob('*.md')) + [ROOT / 'NOTICE.md', ROOT / 'CONTRIBUTING.md']:
     if f.exists(): pages[str(f.relative_to(ROOT))] = f.read_text()
 
 guide = {'parties': load(ROOT / 'data' / 'guide' / 'parties.json', []), 'issues': load(ROOT / 'data' / 'guide' / 'issues.json', []),
