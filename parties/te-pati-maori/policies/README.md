@@ -5,7 +5,7 @@ Every 2026 policy of Te Pāti Māori that this archive could find, with a short 
 ## At a glance
 
 - **65 policies** listed: 45 from [policy.nz](https://policy.nz) (all of its 45 Te Pāti Māori statements, with its Why/How summaries) + 20 more found in the party's own releases, speeches and policy PDFs (marked *archive*; summaries written for this archive).
-- **30 full-text documents** archived (24 press releases/speeches, 6 PDFs) + 18 placeholder files for cited pages that could not be retrieved.
+- **29 full-text documents** archived (23 press releases/speeches, 6 PDFs) + 18 placeholder files for cited pages that could not be retrieved.
 - 50 policies have at least one retrieved party text; 15 rely only on a page that could not be retrieved.
 
 ## Method & sources
@@ -241,6 +241,8 @@ Every 2026 policy of Te Pāti Māori that this archive could find, with a short 
   - ['We Want Cheaper Power and We Want Our People To Own It ', 16 September 2026 (accessed 21 September 2026)](https://www.maoriparty.org.nz/we_want_cheaper_power_and_we_want_our_people_to_own_it) — full text **not retrieved** ([why](documents/not-retrieved-maoriparty-we-want-cheaper-power-and-we-want-our-people-to-own-it.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260921002528/https://www.maoriparty.org.nz/we_want_cheaper_power_and_we_want_our_people_to_own_it)
   - [Energy Sovereignty Policy 2026 (PDF)](https://img.scoop.co.nz/media/pdfs/2609/Te_Pti_Mori_Energy_Sovereignty_Policy_FINAL.pdf) — [full text](documents/pdf-te-pti-mori-energy-sovereignty-policy-final.md)
   - [We Want Cheaper Power And We Want Our People To Own It (Press release, 2026-09-16)](https://www.scoop.co.nz/stories/PA2609/S00161/we-want-cheaper-power-and-we-want-our-people-to-own-it.htm) — [full text](documents/2026-09-16-we-want-cheaper-power-and-we-want-our-people-to-own-it.md)
+  - [We Must Act Now On Energy Sovereignty- Every Household Is Paying The Price (Press release, 2026-04-09)](https://www.scoop.co.nz/stories/PA2604/S00042/we-must-act-now-on-energy-sovereignty-every-household-is-paying-the-price.htm) — [full text](documents/2026-04-09-we-must-act-now-on-energy-sovereignty-every-household-is-pay.md)
+  - [If The Government Really Wants To Lower Power Bills, This Is The Way (Press release, 2026-06-09)](https://www.scoop.co.nz/stories/PA2606/S00066/if-the-government-really-wants-to-lower-power-bills-this-is-the-way.htm) — [full text](documents/2026-06-09-if-the-government-really-wants-to-lower-power-bills-this-is.md)
 
 ### POL55061: Build rural energy capability and on-farm generation
 
@@ -725,6 +727,7 @@ Every 2026 policy of Te Pāti Māori that this archive could find, with a short 
 - **Sources:**
   - ['Te Tiriti Entrenchment Policy', undated (accessed 09 September 2026)](https://img.scoop.co.nz/media/pdfs/2609/TIRITI_ENTRENCHMENT_POLICY.pdf) — [full text](documents/pdf-tiriti-entrenchment-policy.md)
   - [Te Pāti Māori Launches Te Tiriti Entrenchment Policy (Press release, 2026-09-01)](https://www.scoop.co.nz/stories/PA2609/S00008/te-pati-maori-launches-te-tiriti-entrenchment-policy.htm) — [full text](documents/2026-09-01-te-pati-maori-launches-te-tiriti-entrenchment-policy.md)
+  - [TPM To Entrench Te Tiriti: Government’s Tiriti Purge Is Constitutional Vandalism (Press release, 2026-05-15)](https://www.scoop.co.nz/stories/PA2605/S00134/tpm-to-entrench-te-tiriti-governments-tiriti-purge-is-constitutional-vandalism.htm) — [full text](documents/2026-05-15-tpm-to-entrench-te-tiriti-governments-tiriti-purge-is-consti.md)
 
 ### POL54919: Implement the United Nations Declaration on the Rights of Indigenous Peoples
 
@@ -813,7 +816,6 @@ Every 2026 policy of Te Pāti Māori that this archive could find, with a short 
 | 2026-09-23 | Press release | [Te Pāti Māori Launches Mana Takatāpui Policy](documents/2026-09-23-te-pati-maori-launches-mana-takatapui-policy.md) | [link](https://www.scoop.co.nz/stories/PA2609/S00245/te-pati-maori-launches-mana-takatapui-policy.htm) |
 | 2026-10-04 | Press release | [Te Pāti Māori Puts Its Money Where Its Mouth Is With One-Person Party List](documents/2026-10-04-te-pati-maori-puts-its-money-where-its-mouth-is-with-one-per.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00026/te-pati-maori-puts-its-money-where-its-mouth-is-with-one-person-party-list.htm) |
 | 2026-10-06 | Press release | [Te Pāti Māori Backs Kōhanga Reo And Kura With Long-Term Investment](documents/2026-10-06-te-pati-maori-backs-kohanga-reo-and-kura-with-long-term-inve.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00052/te-pati-maori-backs-kohanga-reo-and-kura-with-long-term-investment.htm) |
-| 2026-10-09 | Press release | [Te Pāti Māori Launches New Tool Putting Whānau Priorities First](documents/2026-10-09-te-pati-maori-launches-new-tool-putting-whanau-priorities-fi.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00079/te-pati-maori-launches-new-tool-putting-whanau-priorities-first.htm) |
 | 2026-10-12 | Press release | [Te Pāti Māori Announces Toi Māori Authority And Artist Income Programme](documents/2026-10-12-te-pati-maori-announces-toi-maori-authority-and-artist-incom.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00101/te-pati-maori-announces-toi-maori-authority-and-artist-income-programme.htm) |
 | — | Not retrieved | ['Disabilities', undated (accessed 10 August 2026)](documents/not-retrieved-maoriparty-disabilities.md) | [link](https://www.maoriparty.org.nz/disabilities) |
 | — | Not retrieved | ['Kai Sovereignty', 6 June 2026 (accessed 10 August 2026)](documents/not-retrieved-maoriparty-kai-sovereignt.md) | [link](https://www.maoriparty.org.nz/kai_sovereignt) |

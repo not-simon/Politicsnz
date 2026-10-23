@@ -644,6 +644,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Sources:**
   - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nz-first-announces-immigration-reform-policies.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
   - [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](https://www.scoop.co.nz/stories/PA2609/S00118/nz-first-announces-immigration-reform-policies.htm) — [full text](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md)
+  - [Winston Peters' Speech - "Cool Heads, Rational Judgement" (Speech, 2026-09-13)](https://www.scoop.co.nz/stories/PA2609/S00134/winston-peters-speech-cool-heads-rational-judgement.htm) — [full text](documents/2026-09-13-winston-peters-speech-cool-heads-rational-judgement.md)
 
 ### POL54963: Allow a two-year amnesty on overstayers if they self-deport
 
