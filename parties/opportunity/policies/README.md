@@ -1,18 +1,21 @@
-# Opportunity (TOP) — 2026 election policies
+# Opportunity (The Opportunity Party, TOP) — 2026 election policies
 
-Every policy of **Opportunity (TOP)** for the 7 November 2026 general election that this archive could find: **56 policies** listed (56 from [policy.nz](https://policy.nz/2026/party-vote/parties/opportunity-party), 0 added by this archive from the party's own documents), backed by **17 full-text source documents** and 24 documented-as-unretrievable sources.
+Every policy of **Opportunity (The Opportunity Party, TOP)** for the 7 November 2026 general election that this archive could find: **77 policies** listed (56 from [policy.nz](https://policy.nz/2026/party-vote/parties/opportunity-party), 21 added by this archive from the party's own documents), backed by **64 full-text source documents** and 3 documented-as-unretrievable sources.
 
 - Party website: <https://www.opportunity.org.nz/>
+- Registration: 6 March 2017 (Electoral Commission register)
 
 ## About this list
 
-TBD
+Opportunity (leader Qiulae Wong) publishes its platform as 15 policy pages (priority policies: Abundant Energy, Breakthrough Economy, Clean Up Politics, Healthy Oceans, Tax Reset; plus Citizens' Voice, Future-fit Education, Healthy People, Honouring Te Tiriti, Smart on Crime, Affordable Housing, Digital Future, Inter-Generational Infrastructure, Climate Action, Healthy Land & Water), most with a downloadable PDF policy paper, plus statements and five election "bottom lines". The list below starts from policy.nz's 56 statements for the party (with policy.nz's own Why/How text) and adds policies from TOP's documents that policy.nz does not list (IDs OPP-A..).
+
+**How the text was obtained.** www.opportunity.org.nz is behind a Cloudflare bot challenge (HTTP 403 to curl and headless Chromium) and web.archive.org is unreachable from this environment, so web pages were recovered from **Common Crawl** WARC captures (crawls CC-MAIN-2026-30/34/39/43; capture date in each document's front matter) via [`tools/policies_minor_cc.py`](../../../tools/policies_minor_cc.py). The 15 policy PDFs were downloaded directly from cdn.opportunity.org.nz (not blocked). Press releases are also taken from their scoop.co.nz mirrors.
 
 **Method.** Pages and PDFs were downloaded on 2026-10-23 by [`tools/policies_minor_sites_fetch.py`](../../../tools/policies_minor_sites_fetch.py) / [`tools/policies_minor_opportunity_fetch.py`](../../../tools/policies_minor_opportunity_fetch.py) (raw copies in `raw/party-docs/opportunity/`) and reduced to their main text in [`documents/`](documents/) (markup and whitespace normalised only). The list and summaries are built by [`tools/policies_minor_build.py`](../../../tools/policies_minor_build.py) from [`tools/policies_minor_catalog.py`](../../../tools/policies_minor_catalog.py).
 
 Summaries marked *policy.nz* are policy.nz's neutral "This party says…" text, reproduced unchanged. Summaries marked *archive* were written for this archive from the linked full text: one to three neutral sentences; "Why" is the party's own stated reason, "How" what it says it would do.
 
-**Gaps and caveats.** TBD
+**Gaps and caveats.** Three pages cited by policy.nz have no Common Crawl capture and could not be retrieved: /healthy_land (Healthy Land & Water policy — water quality, gene technology context), /disability_statement and /arts_and_culture_statement; their documents say so explicitly, and the policy.nz summaries are kept. Common Crawl captures date from July–October 2026 and may predate later edits. Note that the Citizens' Voice PDF is dated June 2025. The NZ Herald reported (Oct 2026) that tax reform is not among TOP's five bottom lines; the Tax Reset remains on its policy page. Web search capacity ran out during research, so further Scoop mirrors were not sought.
 
 ## Headline policies
 
@@ -45,20 +48,22 @@ Summaries marked *policy.nz* are policy.nz's neutral "This party says…" text, 
 - [Limit the lobbying power of the tobacco, alcohol and unhealthy food industries](#limit-the-lobbying-power-of-the-tobacco-alcohol-and-unhealthy-food-industries-pol54888) — Health
 - [Ensure NZ's emissions goals align with the Paris Agreement](#ensure-nzs-emissions-goals-align-with-the-paris-agreement-pol55169) — Environment
 - [Oppose disabled people being paid less than minimum wage](#oppose-disabled-people-being-paid-less-than-minimum-wage-pol55269) — Community & inclusion
+- [Five 'bottom lines' for supporting any government: Commerce Commission break-up powers, lobbying and donation reform, a 10-year health plan, ending bottom trawling, and Paris/Climate Commission commitments](#five-bottom-lines-for-supporting-any-government-commerce-commission-break-up-powers-lobbying-and-donation-reform-a-10-year-health-plan-ending-bottom-trawling-and-parisclimate-commission-commitments-opp-a01) — Law, justice & government
 
 ## Contents by topic
 
 - [Community & inclusion](#community--inclusion) (6)
-- [Economy](#economy) (9)
-- [Education](#education) (5)
+- [Economy](#economy) (14)
+- [Education](#education) (8)
 - [Environment](#environment) (9)
-- [Health](#health) (5)
+- [Health](#health) (6)
 - [Housing](#housing) (3)
-- [Incomes & employment](#incomes--employment) (5)
-- [Law, justice & government](#law-justice--government) (5)
+- [Incomes & employment](#incomes--employment) (8)
+- [Law, justice & government](#law-justice--government) (10)
 - [Media, culture & recreation](#media-culture--recreation) (1)
-- [Te ao Māori](#te-ao-māori) (3)
-- [Transport & infrastructure](#transport--infrastructure) (5)
+- [Migration](#migration) (1)
+- [Te ao Māori](#te-ao-māori) (5)
+- [Transport & infrastructure](#transport--infrastructure) (6)
 
 ## Community & inclusion
 
@@ -119,7 +124,7 @@ Full text: ['Disability Statement', 12 October 2026 (accessed 12 October 2026)](
 
 **How** (*policy.nz*): This party would increase innovation by lifting science funding to 2 percent of GDP. It would also turn polytechs into regional innovation hubs, offer incentives to invest in technology and beef up proven accelerator programmes. The wider innovation plan would cost an additional $1.33bn but create $4bn revenue annually.
 
-Full text: ['Breakthrough Economy', undated (accessed 19 August 2026)](documents/web-breakthrough-economy.md) ([original](https://www.opportunity.org.nz/breakthrough-economy)); ['Breakthrough Economy Overview' (PDF), 1 July 2026 (accessed 19 August 2026)](documents/pdf-breakthrough-economy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf))
+Full text: ['Breakthrough Economy', undated (accessed 19 August 2026)](documents/web-breakthrough-economy.md) ([original](https://www.opportunity.org.nz/breakthrough-economy)); ['Breakthrough Economy Overview' (PDF), 1 July 2026 (accessed 19 August 2026)](documents/pdf-breakthrough-economy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf)); [Innovation, Fairness And Small Business: Opportunity’s Breakthrough Economy Policy](documents/release-2026-07-breakthrough-economy.md) ([original](https://www.scoop.co.nz/stories/PO2607/S00015/innovation-fairness-and-small-business-opportunitys-breakthrough-economy-policy.htm)); [Digital Future (policy document)](documents/pdf-digital-future.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Digital%20Future.pdf))
 
 ### Enforce and fund a 30-year infrastructure plan (POL54785)
 
@@ -127,7 +132,7 @@ Full text: ['Breakthrough Economy', undated (accessed 19 August 2026)](documents
 
 **How** (*policy.nz*): This party would lock into law the 30-year National Infrastructure Plan published by Te Waihanga, which would also be put in charge of the funding and delivery of projects. Major projects, where the government is investing over $250m, would require a bill through Parliament to cancel. This policy would cost around $27 million annually for the enhanced infrastructure commission and ties in with a $150m free public transport policy and a $60bn infrastructure capital fund.
 
-Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)](https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf)
+Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)](documents/pdf-intergenerational-infrastructure.md) ([original](https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf)); [Intergenerational Infrastructure (policy document)](documents/pdf-intergenerational-infrastructure.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf)); [Opportunity Launches Intergenerational Infrastructure Policy](documents/release-2026-08-intergenerational-infrastructure.md) ([original](https://www.scoop.co.nz/stories/PO2608/S00027/opportunity-launches-intergenerational-infrastructure-policy.htm))
 
 ### Give councils more tools to invest in infrastructure (POL54811)
 
@@ -137,7 +142,7 @@ Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 11 Augus
 Council spending would be overseen by an expanded Infrastructure Commission.
 Other sources of funding could include a Local Government Regeneration Fund, a new NZ Infrastructure Fund and a full-scale Ratepayer Assistance Scheme. All three funds would be covered by a $60bn infrastructure capital fund.
 
-Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)](https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf)
+Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)](documents/pdf-intergenerational-infrastructure.md) ([original](https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf)); [Intergenerational Infrastructure (policy document)](documents/pdf-intergenerational-infrastructure.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf)); [Opportunity Launches Intergenerational Infrastructure Policy](documents/release-2026-08-intergenerational-infrastructure.md) ([original](https://www.scoop.co.nz/stories/PO2608/S00027/opportunity-launches-intergenerational-infrastructure-policy.htm))
 
 ### Give the Commerce Commission greater powers and more market support to small businesses (POL54824)
 
@@ -145,7 +150,7 @@ Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 11 Augus
 
 **How** (*policy.nz*): This party would give the Commerce Commission greater powers to investigate, intervene and force structural separation of anti-competitive businesses across the economy. It would also boost R&D tax credits for small businesses and offer budgeting help. It would also ensure fairness for small businesses in the ACC and retail payment systems. This is part of a wider innovation plan which would cost an additional $1.33bn but create $4 billion revenue annually.
 
-Full text: ['Breakthrough Economy', undated (accessed 19 August 2026)](documents/web-breakthrough-economy.md) ([original](https://www.opportunity.org.nz/breakthrough-economy)); ['Breakthrough Economy Overview' (PDF), 1 July 2026 (accessed 19 August 2026)](documents/pdf-breakthrough-economy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+Full text: ['Breakthrough Economy', undated (accessed 19 August 2026)](documents/web-breakthrough-economy.md) ([original](https://www.opportunity.org.nz/breakthrough-economy)); ['Breakthrough Economy Overview' (PDF), 1 July 2026 (accessed 19 August 2026)](documents/pdf-breakthrough-economy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); [Innovation, Fairness And Small Business: Opportunity’s Breakthrough Economy Policy](documents/release-2026-07-breakthrough-economy.md) ([original](https://www.scoop.co.nz/stories/PO2607/S00015/innovation-fairness-and-small-business-opportunitys-breakthrough-economy-policy.htm))
 
 ### Invest in sustainable ocean industries beyond fishing (POL54826)
 
@@ -153,7 +158,7 @@ Full text: ['Breakthrough Economy', undated (accessed 19 August 2026)](documents
 
 **How** (*policy.nz*): This party would invest in sustainable aquaculture, marine research and tourism initiatives, with the aim of creating $500m per year in additional “blue economy” revenue. The party's wider ocean policy also addresses fisheries management, expanding NZ's marine reserves and protecting coastal habitats. The short-term cost of these policies is expected to be no more than $100m a year, some of which would be recovered from the commercial fishing industry.
 
-Full text: ['Healthy Oceans', undated (accessed 19 August 2026)](documents/web-healthy-oceans.md) ([original](https://www.opportunity.org.nz/healthy-oceans)); ['Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)](documents/pdf-healthy-oceans.md) ([original](https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+Full text: ['Healthy Oceans', undated (accessed 19 August 2026)](documents/web-healthy-oceans.md) ([original](https://www.opportunity.org.nz/healthy-oceans)); ['Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)](documents/pdf-healthy-oceans.md) ([original](https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); [Opportunity Party Candidate David Bainbridge-Zafar Champions Healthy Oceans Policy For Dunedin](documents/release-2026-04-healthy-oceans-dunedin.md) ([original](https://www.scoop.co.nz/stories/PO2604/S00041/opportunity-party-candidate-david-bainbridge-zafar-champions-healthy-oceans-policy-for-dunedin.htm))
 
 ### Permanently ban seabed mining in NZ waters (POL54827)
 
@@ -161,7 +166,7 @@ Full text: ['Healthy Oceans', undated (accessed 19 August 2026)](documents/web-h
 
 **How** (*policy.nz*): This party would permanently ban seabed mining in New Zealand waters as part of a broader set of coastal and marine protection measures. It would also establish integrated ocean governance through a reinstated Ocean Secretariat. The party's wider ocean policy also addresses fisheries management, sustainable aquaculture, marine research and marine tourism. The short-term cost of the oceans policy is expected to be no more than $100m a year, with some of this cost recovered from the commercial fishing industry.
 
-Full text: ['Healthy Oceans', undated (accessed 19 August 2026)](documents/web-healthy-oceans.md) ([original](https://www.opportunity.org.nz/healthy-oceans)); ['Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)](documents/pdf-healthy-oceans.md) ([original](https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+Full text: ['Healthy Oceans', undated (accessed 19 August 2026)](documents/web-healthy-oceans.md) ([original](https://www.opportunity.org.nz/healthy-oceans)); ['Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)](documents/pdf-healthy-oceans.md) ([original](https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); [Opportunity Party Candidate David Bainbridge-Zafar Champions Healthy Oceans Policy For Dunedin](documents/release-2026-04-healthy-oceans-dunedin.md) ([original](https://www.scoop.co.nz/stories/PO2604/S00041/opportunity-party-candidate-david-bainbridge-zafar-champions-healthy-oceans-policy-for-dunedin.htm))
 
 ### Rewrite gene technology regulations (POL54842)
 
@@ -178,7 +183,7 @@ Full text: ['Gene Technology Policy', undated (accessed 19 August 2026)](documen
 **How** (*policy.nz*): This party would put the Infrastructure Commission's 30-year National Infrastructure Plan into law, with a heavy focus on maintenance and infrastructure finance. Sixty percent of the future infrastructure spend would go towards maintenance and renewal. There would also be  greater accountability, with a register of public assets, improvements to procurement and project planning skills across government departments, and scorecards which would show the progress towards infrastructure at 100 days, 12 month and three year intervals. 
 The Infrastructure Commission would have a much greater role, costing another $27m annually.
 
-Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 04 September 2026)](documents/pdf-intergenerational-infrastructure.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf))
+Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 04 September 2026)](documents/pdf-intergenerational-infrastructure.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf)); [Opportunity Launches Intergenerational Infrastructure Policy](documents/release-2026-08-intergenerational-infrastructure.md) ([original](https://www.scoop.co.nz/stories/PO2608/S00027/opportunity-launches-intergenerational-infrastructure-policy.htm))
 
 ### Raise up to $60b to finance infrastructure (POL54875)
 
@@ -186,7 +191,37 @@ Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 04 Septe
 
 **How** (*policy.nz*): This party would raise up to $60b over ten years through a new Infrastructure Fund, with interest costs under 1 percent of GDP. It would borrow at Crown rates instead of costly private finance, and issue bonds that KiwiSaver funds can invest in. It will also back councils with grants, not just loans, plus new funding tools so those who benefit contribute and ratepayers don't carry the load.
 
-Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 04 September 2026)](documents/pdf-intergenerational-infrastructure.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf))
+Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 04 September 2026)](documents/pdf-intergenerational-infrastructure.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf)); [Opportunity Launches Intergenerational Infrastructure Policy](documents/release-2026-08-intergenerational-infrastructure.md) ([original](https://www.scoop.co.nz/stories/PO2608/S00027/opportunity-launches-intergenerational-infrastructure-policy.htm))
+
+### Require AI data centres to fund their own clean energy, pay full grid-connection costs and report energy and water use (OPP-A09)
+
+**Why** (*archive*): Part of Digital Future, which Opportunity says sets guardrails to protect people, data and the environment.
+
+Full text: [Digital Future - Opportunity Party](documents/web-digital-future.md) ([original](https://www.opportunity.org.nz/digital-future)); [Digital Future (policy document)](documents/pdf-digital-future.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Digital%20Future.pdf))
+
+### Require New Zealanders' critical data to be hosted onshore and favour local and open-source suppliers in government tech purchasing (OPP-A10)
+
+**How** (*archive*): Also: a public register of government technology projects, recognition of Māori Data Sovereignty Principles in public-sector AI procurement, more cyber-security funding and a review of rights in an AI world (algorithmic bias, copyright).
+
+Full text: [Digital Future - Opportunity Party](documents/web-digital-future.md) ([original](https://www.opportunity.org.nz/digital-future)); [Digital Future (policy document)](documents/pdf-digital-future.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Digital%20Future.pdf))
+
+### Introduce a 25% tax credit for small businesses adopting new technology and a cross-party national AI framework (OPP-A11)
+
+**How** (*archive*): A tax credit to help SMEs adopt cutting-edge tools and a national framework on data rights, IP and investment 'shaped by the New Zealand public directly'.
+
+Full text: [Digital Future - Opportunity Party](documents/web-digital-future.md) ([original](https://www.opportunity.org.nz/digital-future)); [Breakthrough Economy (policy overview)](documents/pdf-breakthrough-economy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf))
+
+### Double government funding for start-up incubators, accelerators, deep-tech programmes and Young Enterprise (OPP-A13)
+
+**How** (*archive*): As stated in the Breakthrough Economy policy.
+
+Full text: [Breakthrough Economy (policy overview)](documents/pdf-breakthrough-economy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf))
+
+### Create an 'Impact Company' legal structure and expand support for small businesses (OPP-A15)
+
+**How** (*archive*): Amend the Companies Act for a for-profit entity with social purpose; fund FinCap and financial-capability services; review ACC levies toward risk-weighting; reverse the ban on merchant surcharges; speed up R&D tax credit processing; and create a Consumer Advocacy Fund.
+
+Full text: [Breakthrough Economy (policy overview)](documents/pdf-breakthrough-economy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf))
 
 ## Education
 
@@ -196,7 +231,7 @@ Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 04 Septe
 
 **How** (*policy.nz*): This party would roll back the student loan interest of returning Kiwis on up to 3 years spent overseas. This would apply to both newly graduates and those currently overseas. The rollback would be applied at the end of their loan repayment, and conditional on being resident in New Zealand when the loan is repaid. This policy would cost an estimated $95m.
 
-Full text: ['Breakthrough Economy Overview' (PDF), 1 July 2026 (accessed 19 August 2026)](documents/pdf-breakthrough-economy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf)); ['Breakthrough Economy', undated (accessed 19 August 2026)](documents/web-breakthrough-economy.md) ([original](https://www.opportunity.org.nz/breakthrough-economy))
+Full text: ['Breakthrough Economy Overview' (PDF), 1 July 2026 (accessed 19 August 2026)](documents/pdf-breakthrough-economy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf)); ['Breakthrough Economy', undated (accessed 19 August 2026)](documents/web-breakthrough-economy.md) ([original](https://www.opportunity.org.nz/breakthrough-economy)); [Innovation, Fairness And Small Business: Opportunity’s Breakthrough Economy Policy](documents/release-2026-07-breakthrough-economy.md) ([original](https://www.scoop.co.nz/stories/PO2607/S00015/innovation-fairness-and-small-business-opportunitys-breakthrough-economy-policy.htm))
 
 ### Create a 10-year education plan (POL54860)
 
@@ -204,7 +239,7 @@ Full text: ['Breakthrough Economy Overview' (PDF), 1 July 2026 (accessed 19 Augu
 
 **How** (*policy.nz*): This party would create a 10-year cross-party education plan. It would include an independent council to oversee curriculum and assessment design, including a review of the government’s replacement of NCEA with NZCE/NZACE. It would also promote the purposeful use of technology and expand access to te reo Māori learning. The costs would be spread over 10 years, and many parts of the plan would not require extra funding.
 
-Full text: ['Future Fit Education', undated (accessed 19 August 2026)](documents/web-future-fit-education.md) ([original](https://www.opportunity.org.nz/future_fit_education)); ['10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)](documents/web-10-year-plans-to-strengthen-health-and-education.md) ([original](https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education)); ['Honouring Te Tiriti', undated (accessed 11 August 2026)](documents/web-honouring-te-tiriti.md) ([original](https://www.opportunity.org.nz/honouring_te_tiriti))
+Full text: ['Future Fit Education', undated (accessed 19 August 2026)](documents/web-future-fit-education.md) ([original](https://www.opportunity.org.nz/future_fit_education)); ['10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)](documents/web-10-year-plans-to-strengthen-health-and-education.md) ([original](https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education)); ['Honouring Te Tiriti', undated (accessed 11 August 2026)](documents/web-honouring-te-tiriti.md) ([original](https://www.opportunity.org.nz/honouring_te_tiriti)); [Future-Fit Education Policy Paper](documents/pdf-future-fit-education.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf))
 
 ### Allocate more support and staffing to early childhood education (POL54861)
 
@@ -212,7 +247,7 @@ Full text: ['Future Fit Education', undated (accessed 19 August 2026)](documents
 
 **How** (*policy.nz*): This party would introduce a 10-year education plan with cross-party support. The plan would include modernising early childhood education, by providing ensuring better staff-to-child ratios, better spaces and more core funding for community-owned services like playcentres, kōhanga reo, and kindergartens. It would also encourage the inclusion of early childhood-trained teachers in primary schools, to ease the transition for children. The cost would be spread over the 10 years of the plan and in many cases, would require no direct increase in funding.
 
-Full text: ['Future Fit Education', undated (accessed 19 August 2026)](documents/web-future-fit-education.md) ([original](https://www.opportunity.org.nz/future_fit_education)); ['Honouring Te Tiriti', undated (accessed 11 August 2026)](documents/web-honouring-te-tiriti.md) ([original](https://www.opportunity.org.nz/honouring_te_tiriti)); ['10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)](documents/web-10-year-plans-to-strengthen-health-and-education.md) ([original](https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education))
+Full text: ['Future Fit Education', undated (accessed 19 August 2026)](documents/web-future-fit-education.md) ([original](https://www.opportunity.org.nz/future_fit_education)); ['Honouring Te Tiriti', undated (accessed 11 August 2026)](documents/web-honouring-te-tiriti.md) ([original](https://www.opportunity.org.nz/honouring_te_tiriti)); ['10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)](documents/web-10-year-plans-to-strengthen-health-and-education.md) ([original](https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education)); [Future-Fit Education Policy Paper](documents/pdf-future-fit-education.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf))
 
 ### Introduce a 20-year resource and research plan for the tertiary sector (POL54862)
 
@@ -221,7 +256,7 @@ Full text: ['Future Fit Education', undated (accessed 19 August 2026)](documents
 **How** (*policy.nz*): This party would push for a 20-year Skills and Learning Accord which would smooth the pathway between vocational and academic learning. This plan would aim for sustainable funding, coherent strategy and investment in research capabilities for universities, wānanga, and polytechs. 
 The cost would be spread and in many cases, would require no direct increase in funding.
 
-Full text: ['Future Fit Education', undated (accessed 19 August 2026)](documents/web-future-fit-education.md) ([original](https://www.opportunity.org.nz/future_fit_education))
+Full text: ['Future Fit Education', undated (accessed 19 August 2026)](documents/web-future-fit-education.md) ([original](https://www.opportunity.org.nz/future_fit_education)); [Future-Fit Education Policy Paper](documents/pdf-future-fit-education.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf))
 
 ### Restore adult education programmes (POL54869)
 
@@ -229,7 +264,27 @@ Full text: ['Future Fit Education', undated (accessed 19 August 2026)](documents
 
 **How** (*policy.nz*): This party would restore adult and community education. This is part of its push for cross-party agreement on a 10-year plan for the wider education sector. This long-term plan would focus on stability for students, support for teachers and modernising learning for the future.
 
-Full text: ['10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)](documents/web-10-year-plans-to-strengthen-health-and-education.md) ([original](https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education)); ['Future Fit Education', undated (accessed 19 August 2026)](documents/web-future-fit-education.md) ([original](https://www.opportunity.org.nz/future_fit_education))
+Full text: ['10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)](documents/web-10-year-plans-to-strengthen-health-and-education.md) ([original](https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education)); ['Future Fit Education', undated (accessed 19 August 2026)](documents/web-future-fit-education.md) ([original](https://www.opportunity.org.nz/future_fit_education)); [Future-Fit Education Policy Paper](documents/pdf-future-fit-education.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf))
+
+### Restore polytechnic baseline funding and give polytechs a mandate to lead regional productivity (OPP-A12)
+
+**Why** (*archive*): Opportunity says polytechnics can anchor regional, job-focused training and help local businesses.
+
+**How** (*archive*): Restore funding cut by the current government and bulk-fund polytechnics and public research organisations for technology transfer.
+
+Full text: [Breakthrough Economy (policy overview)](documents/pdf-breakthrough-economy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf))
+
+### Restore an independent Teaching Council and raise entry standards for teacher training (OPP-A18)
+
+**How** (*archive*): Higher initial teacher-education entry requirements, funded professional development and induction, a restored independent Teaching Council with elected members, and an empowered Curriculum and Assessment Council.
+
+Full text: [Future-Fit Education Policy Paper](documents/pdf-future-fit-education.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf))
+
+### Set minimum child-to-teacher ratios in early childhood education (1:3 under twos) and move to quality-based contracting (OPP-A19)
+
+**How** (*archive*): Ratios of 1:3 for under-twos, 1:5 for 2–3 year-olds and 1:8 for older children, maximum group sizes, 80% qualified staff in teacher-led services, and more core funding for community-owned services.
+
+Full text: [Future-Fit Education Policy Paper](documents/pdf-future-fit-education.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf))
 
 ## Environment
 
@@ -240,7 +295,7 @@ Full text: ['10-year plans to strengthen health and education', 2 September 2026
 **How** (*policy.nz*): This party would change the fisheries management system and make it more transparent. This includes the phasing out bottom trawling in all inshore areas by 2030 and installing cameras on commercial fishing boats. It would also move away from single-species quotas towards an ecosystem-based approach, and raise the baseline for sustainable fish stocks. 
 In the short-term, the party says its wider oceans policy would cost no more than $100m a year, with some costs recovered from the commercial fishing industry.
 
-Full text: ['Healthy Oceans', undated (accessed 19 August 2026)](documents/web-healthy-oceans.md) ([original](https://www.opportunity.org.nz/healthy-oceans)); ['Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)](documents/pdf-healthy-oceans.md) ([original](https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+Full text: ['Healthy Oceans', undated (accessed 19 August 2026)](documents/web-healthy-oceans.md) ([original](https://www.opportunity.org.nz/healthy-oceans)); ['Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)](documents/pdf-healthy-oceans.md) ([original](https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); [Opportunity Party Candidate David Bainbridge-Zafar Champions Healthy Oceans Policy For Dunedin](documents/release-2026-04-healthy-oceans-dunedin.md) ([original](https://www.scoop.co.nz/stories/PO2604/S00041/opportunity-party-candidate-david-bainbridge-zafar-champions-healthy-oceans-policy-for-dunedin.htm))
 
 ### Retain the Climate Change Commission (POL54782)
 
@@ -248,7 +303,7 @@ Full text: ['Healthy Oceans', undated (accessed 19 August 2026)](documents/web-h
 
 **How** (*policy.nz*): This party would keep the Climate Change Commission and ensure that budgets are set to maintain accountability. This is in response to the Act Party's claim that the commission's costs are excessive and that it duplicates MCERT's work.
 
-Full text: ['Opportunity will defend Climate Change Commission from ACT', 26 August 2026 (accessed 28 August 2026)](documents/web-opportunity-will-defend-climate-change-commission-in-national-led-government.md) ([original](https://www.opportunity.org.nz/opportunity_will_defend_climate_change_commission_in_national_led_government))
+Full text: ['Opportunity will defend Climate Change Commission from ACT', 26 August 2026 (accessed 28 August 2026)](documents/web-opportunity-will-defend-climate-change-commission-in-national-led-government.md) ([original](https://www.opportunity.org.nz/opportunity_will_defend_climate_change_commission_in_national_led_government)); [Climate Action (policy document)](documents/pdf-climate-action.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf)); [Bottom Lines - Opportunity Party](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
 
 ### Support sectors and councils with climate change action (POL54791)
 
@@ -256,7 +311,7 @@ Full text: ['Opportunity will defend Climate Change Commission from ACT', 26 Aug
 
 **How** (*policy.nz*): This party would focus on helping sectors to cut emissions and adapt to change. It would offer incentives to improve air quality and reward efforts to sequester carbon with biodiversity alternatives to pine trees. It would also support local government in finding nature-based solutions to flooding and heat stress; this policy would cost $5b. In addition, there would be subsidies for households and businesses to go electric or solar as part of its energy policy.
 
-Full text: ['Climate Action', undated (accessed 19 August 2026)](documents/web-climate-action.md) ([original](https://www.opportunity.org.nz/climate_action))
+Full text: ['Climate Action', undated (accessed 19 August 2026)](documents/web-climate-action.md) ([original](https://www.opportunity.org.nz/climate_action)); [Climate Action (policy document)](documents/pdf-climate-action.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf))
 
 ### Support a circular plastics economy (POL54803)
 
@@ -272,7 +327,7 @@ Full text: ['Healthy Land', undated (accessed 11 August 2026)](documents/web-hea
 
 **How** (*policy.nz*): This party would strengthen the Emissions Trading Scheme by adding a mechanism for agricultural emissions and excluding new exotic forestry. It would also ensure the Climate Change Commission sets budgets.
 
-Full text: ['Climate Action', undated (accessed 19 August 2026)](documents/web-climate-action.md) ([original](https://www.opportunity.org.nz/climate_action)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+Full text: ['Climate Action', undated (accessed 19 August 2026)](documents/web-climate-action.md) ([original](https://www.opportunity.org.nz/climate_action)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); [Climate Action (policy document)](documents/pdf-climate-action.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf))
 
 ### Increase NZ's marine reserves to 30 percent of our ocean territory, and protect coastal habitats (POL54825)
 
@@ -281,7 +336,7 @@ Full text: ['Climate Action', undated (accessed 19 August 2026)](documents/web-c
 **How** (*policy.nz*): This party would increase NZ's marine reserves to 30% of its ocean territory by 2035 and replace the Marine Reserves Act 1971. The party also aims to deliver at least 10,000 hectares of restored coastal habitat.  It would also establish integrated ocean governance through a reinstated Ocean Secretariat.
 These moves fit within a wider ocean policy. The short-term cost is expected to be no more than $100m a year, some of which would be recovered from the commercial fishing industry.
 
-Full text: ['Healthy Oceans', undated (accessed 19 August 2026)](documents/web-healthy-oceans.md) ([original](https://www.opportunity.org.nz/healthy-oceans)); ['Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)](documents/pdf-healthy-oceans.md) ([original](https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+Full text: ['Healthy Oceans', undated (accessed 19 August 2026)](documents/web-healthy-oceans.md) ([original](https://www.opportunity.org.nz/healthy-oceans)); ['Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)](documents/pdf-healthy-oceans.md) ([original](https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); [Opportunity Party Candidate David Bainbridge-Zafar Champions Healthy Oceans Policy For Dunedin](documents/release-2026-04-healthy-oceans-dunedin.md) ([original](https://www.scoop.co.nz/stories/PO2604/S00041/opportunity-party-candidate-david-bainbridge-zafar-champions-healthy-oceans-policy-for-dunedin.htm))
 
 ### Increase conservation funding (POL54865)
 
@@ -297,7 +352,7 @@ Full text: ['Healthy Land', undated (accessed 11 August 2026)](documents/web-hea
 
 **How** (*policy.nz*): This party would restore the link between NZ's national emissions budgets with our Nationally Determined Contribution and the Paris Agreement's goal of limiting global warming to 1.5°C above pre‑industrial levels. It would also record the cost as a liability on the Crown balance sheet, and would implement the Climate Change Commission's advice on amendments to the 2050 emissions targets, which include international aviation and shipping emissions.
 
-Full text: ['Climate Action', undated (accessed 19 August 2026)](documents/web-climate-action.md) ([original](https://www.opportunity.org.nz/climate_action)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+Full text: ['Climate Action', undated (accessed 19 August 2026)](documents/web-climate-action.md) ([original](https://www.opportunity.org.nz/climate_action)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); [Climate Action (policy document)](documents/pdf-climate-action.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf))
 
 ### Build a $5bn fund to support climate resilience, including $500m for nature-based solutions (POL55175)
 
@@ -305,7 +360,7 @@ Full text: ['Climate Action', undated (accessed 19 August 2026)](documents/web-c
 
 **How** (*policy.nz*): This party would create a $5bn climate resilience fund for climate adaptation, including $500m for nature-based solutions which reduce emissions and increase climate change resilience. This would include support for local government in managing flood resilience and heat stress. More widely, this party aims to help all sectors with adaptation and emissions reduction.
 
-Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)](https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf); ['Climate Action: Emissions Reduction', undated (accessed 13 August 2026)](https://www.greens.org.nz/manifesto_2020_climate_action_emissions_reduction); ['Climate Action: Resilience and Adaptation', undated (accessed 13 August 2026)](https://www.greens.org.nz/manifesto_2026_climate_action_resilience_adaptation); ['Healthy Land', undated (accessed 11 August 2026)](documents/web-healthy-land.md) ([original](https://www.opportunity.org.nz/healthy_land)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+Full text: ['Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)](documents/pdf-intergenerational-infrastructure.md) ([original](https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf)); ['Climate Action: Emissions Reduction', undated (accessed 13 August 2026)](https://www.greens.org.nz/manifesto_2020_climate_action_emissions_reduction); ['Climate Action: Resilience and Adaptation', undated (accessed 13 August 2026)](https://www.greens.org.nz/manifesto_2026_climate_action_resilience_adaptation); ['Healthy Land', undated (accessed 11 August 2026)](documents/web-healthy-land.md) ([original](https://www.opportunity.org.nz/healthy_land)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); [Climate Action (policy document)](documents/pdf-climate-action.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf))
 
 ## Health
 
@@ -323,7 +378,7 @@ Full text: ['10-year plans to strengthen health and education', 2 September 2026
 
 **How** (*policy.nz*): This party would It would de-criminalise drug possession (but not supply), and shift to a health-led response to drug issues.
 
-Full text: ['Smart on Crime', undated (accessed 19 August 2026)](documents/web-smart-on-crime.md) ([original](https://www.opportunity.org.nz/smart_on_crime))
+Full text: ['Smart on Crime', undated (accessed 19 August 2026)](documents/web-smart-on-crime.md) ([original](https://www.opportunity.org.nz/smart_on_crime)); [Smart on Crime (policy document)](documents/pdf-smart-on-crime.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Smart%20on%20Crime.pdf))
 
 ### Lift health funding to 9 percent of GDP (POL54871)
 
@@ -349,6 +404,12 @@ Full text: ['10-year plans to strengthen health and education', 2 September 2026
 
 Full text: ['Healthy People ', undated (accessed 19 August 2026)](documents/web-healthy-people.md) ([original](https://www.opportunity.org.nz/healthy_people)); ['10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)](documents/web-10-year-plans-to-strengthen-health-and-education.md) ([original](https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education)); ['Clean Up Politics', undated (accessed 19 August 2026)](documents/web-clean-up-politics.md) ([original](https://www.opportunity.org.nz/clean_up_politics)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
 
+### Reinstate the Smokefree 2025 legislation (OPP-A20)
+
+**How** (*archive*): Listed on the Healthy People policy page.
+
+Full text: [Healthy People](documents/web-healthy-people.md) ([original](https://www.opportunity.org.nz/healthy_people))
+
 ## Housing
 
 ### Introduce a land value tax of 1.75 percent (POL54777)
@@ -358,7 +419,7 @@ Full text: ['Healthy People ', undated (accessed 19 August 2026)](documents/web-
 **How** (*policy.nz*): An annual land value tax of 1.75 percent on urban land - and 0.5% on rural land - would be part of a wider tax reset aimed at incomes, house prices and retirement savings. The land value tax would lower house prices an estimated 10-15 percent and discourage land-banking and large property portfolios. There would be potential exemptions for farmers, retirees and other "land rich, cash poor" land owners. 
 This tax would fund a universal citizen's income, with an extra $4bn for other uses. The tax system would also be simplified, with the number of tax brackets reduced to three - 28 percent, 34 percent and 39 percent
 
-Full text: ['Tax Reset - Opportunity Party', undated (accessed 06 August 2026)](documents/web-tax-reset.md) ([original](https://web.archive.org/save/https://www.opportunity.org.nz/tax-reset))
+Full text: ['Tax Reset - Opportunity Party', undated (accessed 06 August 2026)](documents/web-tax-reset.md) ([original](https://www.opportunity.org.nz/tax-reset)); [Tax Reset (policy document)](documents/pdf-tax-reset.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf)); [Tax Reset Transition Plan (policy document)](documents/pdf-tax-reset-transition-plan.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset%20Transition%20Plan.pdf)); [Opportunity’s Tax Reset: The Largest Tax Cut For Low-income Working Kiwis In History](documents/release-2026-05-tax-reset.md) ([original](https://www.scoop.co.nz/stories/PO2605/S00043/opportunitys-tax-reset-the-largest-tax-cut-for-low-income-working-kiwis-in-history.htm))
 
 ### Revamp zoning to reduce house prices (POL54853)
 
@@ -367,7 +428,7 @@ Full text: ['Tax Reset - Opportunity Party', undated (accessed 06 August 2026)](
 **How** (*policy.nz*): This party would simplify zoning, creting a smaller, consistent set of zones for productive farmland, civic spaces and heritage buildings. Medium density housing, mixed-used and extensions to public and retail spaces would be encouraged, and the party would streamline the processes for building tiny homes, sleepouts and extensions. 
 These measures, along with a 1.75% tax on land values and more support for the construction sector, would help increase house supply, bring down house prices, and make landbanking less attractive.
 
-Full text: ['Affordable Housing', undated (accessed 19 August 2026)](documents/web-affordable-housing.md) ([original](https://www.opportunity.org.nz/affordable_housing)); ['Build Today, Breakthrough Tomorrow', undated (accessed 19 August 2026)](documents/web-build-today-breakthrough-tomorrow.md) ([original](https://www.opportunity.org.nz/build_today_breakthrough_tomorrow))
+Full text: ['Affordable Housing', undated (accessed 19 August 2026)](documents/web-affordable-housing.md) ([original](https://www.opportunity.org.nz/affordable_housing)); ['Build Today, Breakthrough Tomorrow', undated (accessed 19 August 2026)](documents/web-build-today-breakthrough-tomorrow.md) ([original](https://www.opportunity.org.nz/build_today_breakthrough_tomorrow)); [Affordable Housing (policy document)](documents/pdf-affordable-housing.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Affordable%20Housing.pdf))
 
 ### Make housing more affordable with targeted construction support (POL54873)
 
@@ -376,7 +437,7 @@ Full text: ['Affordable Housing', undated (accessed 19 August 2026)](documents/w
 **How** (*policy.nz*): This party would back reputable affordable housing developments by underwriting to smooth out the 'boom-bust' cycle. It would also support offsite builders who take on apprentices. Housing quality would be encouraged with low-cost loans, and by refunding GST collected during construction to councils for environmentally high standard builds. 
 These moves would be in tandem with zoning changes and a 1.75 percent urban land tax, which together would lower house prices and discourage land banking.
 
-Full text: ['Affordable Housing', undated (accessed 19 August 2026)](documents/web-affordable-housing.md) ([original](https://www.opportunity.org.nz/affordable_housing))
+Full text: ['Affordable Housing', undated (accessed 19 August 2026)](documents/web-affordable-housing.md) ([original](https://www.opportunity.org.nz/affordable_housing)); [Affordable Housing (policy document)](documents/pdf-affordable-housing.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Affordable%20Housing.pdf))
 
 ## Incomes & employment
 
@@ -394,7 +455,7 @@ Full text: ['Charitable Giving Tax Credit Cap', 19 June 2026 (accessed 06 August
 
 **How** (*policy.nz*): This party would make public transport universally free. It notes that the government already funds 90 percent of the cost of public transport from taxes and rates - fares only cover about 10 percent of operating costs. By scrapping ticketing systems, free public transport has an estimated net cost of about $150m per year.
 
-Full text: ['Free Public Transport', undated (accessed 19 August 2026)](documents/web-free-public-transport.md) ([original](https://www.opportunity.org.nz/free_public_transport))
+Full text: ['Free Public Transport', undated (accessed 19 August 2026)](documents/web-free-public-transport.md) ([original](https://www.opportunity.org.nz/free_public_transport)); [It’s Time For Permanent, Free Public Transport](documents/release-2026-04-free-public-transport.md) ([original](https://www.scoop.co.nz/stories/PO2604/S00050/its-time-for-permanent-free-public-transport.htm))
 
 ### Restructure the electricity market to bring prices down (POL54806)
 
@@ -402,7 +463,7 @@ Full text: ['Free Public Transport', undated (accessed 19 August 2026)](document
 
 **How** (*policy.nz*): This party would consolidate the energy industry, merging the four energy regulatory agencies into one, and shrink the number of energy distributors from 29 to no more than 8. It believes this policy would help make electricity more affordable. The party's full energy plan would be funded from about $500m in dividends from government stakes in electricity gentailers.
 
-Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf)
+Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](documents/pdf-abundant-energy-paper.md) ([original](https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf)); [Abundant Energy (policy document)](documents/pdf-abundant-energy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Abundant%20Energy.pdf)); [Abundant Energy - Opportunity Party Policy (policy paper)](documents/pdf-abundant-energy-paper.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Abundant%20Energy%20-%20Opportunity%20Party%20Policy.pdf))
 
 ### Introduce a universal income for citizens of up to $370 a week (POL54816)
 
@@ -410,7 +471,7 @@ Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](h
 
 **How** (*policy.nz*): This party would gradually introduce a universal citizen's income of up to $370 a week for almost all adults. This would replace most benefits, with top-up support available for retirees, parents and others. The Citizen’s Income would lift incomes but is not enough to live on. This retains the incentive to work and reduces barriers for beneficiaries wanting to earn more. The Citizens Income would be funded by a 1.75 percent annual tax on urban land values and 0.5 percent on rural land. Tax brackets would also be simplified to 28 percent, 34 percent and 39 percent.
 
-Full text: ['Tax Reset - Opportunity Party', undated (accessed 06 August 2026)](documents/web-tax-reset.md) ([original](https://web.archive.org/save/https://www.opportunity.org.nz/tax-reset))
+Full text: ['Tax Reset - Opportunity Party', undated (accessed 06 August 2026)](documents/web-tax-reset.md) ([original](https://www.opportunity.org.nz/tax-reset)); [Tax Reset (policy document)](documents/pdf-tax-reset.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf)); [Tax Reset Transition Plan (policy document)](documents/pdf-tax-reset-transition-plan.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset%20Transition%20Plan.pdf)); [Opportunity’s Tax Reset: The Largest Tax Cut For Low-income Working Kiwis In History](documents/release-2026-05-tax-reset.md) ([original](https://www.scoop.co.nz/stories/PO2605/S00043/opportunitys-tax-reset-the-largest-tax-cut-for-low-income-working-kiwis-in-history.htm))
 
 ### Gradually raise Kiwisaver to 6 percent and make it compulsory (POL54818)
 
@@ -418,7 +479,31 @@ Full text: ['Tax Reset - Opportunity Party', undated (accessed 06 August 2026)](
 
 **How** (*policy.nz*): This party would bring in a compulsory retirement savings scheme. Over eight years, employee and employer contribution rates would rise to 6%, bringing the total contribution to 12%. This would build a trillion-dollar capital pool to fund infrastructure and national development.
 
-Full text: ['Tax Reset - Opportunity Party', undated (accessed 06 August 2026)](documents/web-tax-reset.md) ([original](https://web.archive.org/save/https://www.opportunity.org.nz/tax-reset))
+Full text: ['Tax Reset - Opportunity Party', undated (accessed 06 August 2026)](documents/web-tax-reset.md) ([original](https://www.opportunity.org.nz/tax-reset)); [Tax Reset (policy document)](documents/pdf-tax-reset.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf)); [Tax Reset Transition Plan (policy document)](documents/pdf-tax-reset-transition-plan.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset%20Transition%20Plan.pdf)); [Opportunity’s Tax Reset: The Largest Tax Cut For Low-income Working Kiwis In History](documents/release-2026-05-tax-reset.md) ([original](https://www.scoop.co.nz/stories/PO2605/S00043/opportunitys-tax-reset-the-largest-tax-cut-for-low-income-working-kiwis-in-history.htm))
+
+### Realign income tax to three rates: 28% up to $50,000, 34% to $200,000 and 39% above (OPP-A02)
+
+**Why** (*archive*): Part of the Tax Reset, which Opportunity says simplifies tax and removes secondary tax rates.
+
+**How** (*archive*): New brackets alongside the Citizen's Income, Land Value Tax and KiwiSaver 2.0.
+
+Full text: [Tax Reset (policy document)](documents/pdf-tax-reset.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf))
+
+### Replace Working for Families and most benefits with tax-free Child Support Incomes and fixed top-ups (OPP-A03)
+
+**Why** (*archive*): Opportunity says the benefit system traps people in poverty with effective marginal tax rates of up to 90%.
+
+**How** (*archive*): Per-child payments starting at $18,250 for a first child in the first year and falling to $7,750 for ages 4–18, plus a $9,500 sole-parent allowance, a $6,000 disability allowance, superannuitant top-ups and regional Housing Support Income payments.
+
+Full text: [Tax Reset (policy document)](documents/pdf-tax-reset.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf))
+
+### Phase in the Tax Reset over about a decade, starting with 18–29-year-olds and a 0.5% urban-only land tax (OPP-A04)
+
+**Why** (*archive*): Opportunity says changes of this scale must be introduced carefully to avoid inflation and disruption.
+
+**How** (*archive*): Two years of planning first; Citizen's Income rolled out in age tranches of about 25% of the population; Land Value Tax starting at 0.5% on urban land and rising to 1.75%/0.5% rural by year 6; KiwiSaver 2.0 contributions rising 1% a year over six years.
+
+Full text: [Tax Reset Transition Plan (policy document)](documents/pdf-tax-reset-transition-plan.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset%20Transition%20Plan.pdf))
 
 ## Law, justice & government
 
@@ -428,7 +513,7 @@ Full text: ['Tax Reset - Opportunity Party', undated (accessed 06 August 2026)](
 
 **How** (*policy.nz*): This party would regulate lobbying, including a one-year cooling off period for ministers becoming lobbyists, and a public register for lobbying groups. This would be part of a fuller political integrity package which would cost about $52m a year.
 
-Full text: ['Clean Up Politics', undated (accessed 19 August 2026)](documents/web-clean-up-politics.md) ([original](https://www.opportunity.org.nz/clean_up_politics)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+Full text: ['Clean Up Politics', undated (accessed 19 August 2026)](documents/web-clean-up-politics.md) ([original](https://www.opportunity.org.nz/clean_up_politics)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); [Clean Up Politics (policy document)](documents/pdf-clean-up-politics.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf))
 
 ### Establish citizens' assemblies for major decisions (POL54784)
 
@@ -437,7 +522,7 @@ Full text: ['Clean Up Politics', undated (accessed 19 August 2026)](documents/we
 **How** (*policy.nz*): This party would select, at random, groups of ordinary people who would serve for a year. The number of people would mirror the number of MPs. They would be compensated for their time and listen to experts, organisations and affected parties on topics that politicians have struggled to find consensus on. The assemblies would work to find common ground and set the policy direction for the politicians to respond to. 
 This policy could cost $10-$15m a year, depending on how many assemblies are held.
 
-Full text: ['Citizens Voice Policy ' (PDF), undated (accessed 07 August 2026)](documents/pdf-citizens-voice.md) ([original](https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/citizens-voice-policy.pdf))
+Full text: ['Citizens Voice Policy ' (PDF), undated (accessed 07 August 2026)](documents/pdf-citizens-voice.md) ([original](https://cdn.opportunity.org.nz/documents/policy/citizens-voice-policy.pdf))
 
 ### Create a political corruption watchdog (POL54808)
 
@@ -445,7 +530,7 @@ Full text: ['Citizens Voice Policy ' (PDF), undated (accessed 07 August 2026)](d
 
 **How** (*policy.nz*): This party would create an independent body to investigate political corruption and a party policy costing unit to verify policy claims. Other moves to strengthen political integrity include a ban on misleading election ads and strengthening the Official Information Act and whistleblowing laws. The anti-corruption body would cost $40m annually, part of a wider political integrity package which would cost around $52m a year.
 
-Full text: ['Clean Up Politics', undated (accessed 19 August 2026)](documents/web-clean-up-politics.md) ([original](https://www.opportunity.org.nz/clean_up_politics)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+Full text: ['Clean Up Politics', undated (accessed 19 August 2026)](documents/web-clean-up-politics.md) ([original](https://www.opportunity.org.nz/clean_up_politics)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); [Clean Up Politics (policy document)](documents/pdf-clean-up-politics.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf))
 
 ### Cap political donations at $30,000 per donor (POL54809)
 
@@ -453,7 +538,7 @@ Full text: ['Clean Up Politics', undated (accessed 19 August 2026)](documents/we
 
 **How** (*policy.nz*): This party would cap political donations at $30,000 per party per donor per election. Donations from companies and trusts would be banned, so only registered voters could donate. This is part of a political integrity package which would cost around $52m a year.
 
-Full text: ['Clean Up Politics', undated (accessed 19 August 2026)](documents/web-clean-up-politics.md) ([original](https://www.opportunity.org.nz/clean_up_politics)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+Full text: ['Clean Up Politics', undated (accessed 19 August 2026)](documents/web-clean-up-politics.md) ([original](https://www.opportunity.org.nz/clean_up_politics)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); [Clean Up Politics (policy document)](documents/pdf-clean-up-politics.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf))
 
 ### Boost court and rehabilitation funding to reduce reoffending (POL54854)
 
@@ -461,7 +546,45 @@ Full text: ['Clean Up Politics', undated (accessed 19 August 2026)](documents/we
 
 **How** (*policy.nz*): This party would introduce a suite of measures including increased funding for the courts and probation services, to get remand prisoner numbers down. It would expand mental health programmes for prisoners dealing with past family violence. It would raise the age of the youth court jurisdiction, in line with developmental science, and expand drug and mental health court pilot programmes. It would take a health-led response to drug issues, including decriminalising drug possession but not supply.
 
-Full text: ['Smart on Crime', undated (accessed 19 August 2026)](documents/web-smart-on-crime.md) ([original](https://www.opportunity.org.nz/smart_on_crime))
+Full text: ['Smart on Crime', undated (accessed 19 August 2026)](documents/web-smart-on-crime.md) ([original](https://www.opportunity.org.nz/smart_on_crime)); [Smart on Crime (policy document)](documents/pdf-smart-on-crime.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Smart%20on%20Crime.pdf))
+
+### Five 'bottom lines' for supporting any government: Commerce Commission break-up powers, lobbying and donation reform, a 10-year health plan, ending bottom trawling, and Paris/Climate Commission commitments (OPP-A01)
+
+**Why** (*archive*): Opportunity says no party can achieve its whole platform under MMP, so it names five non-negotiable policies any governing partner must accept.
+
+**How** (*archive*): (1) empower the Commerce Commission to investigate, intervene and force structural separation; (2) a mandatory lobbyist register and code of conduct and a per-donor cap with donations from registered voters only; (3) a 10-year cross-party health plan; (4) an immediate end to bottom trawling in the most damaged inshore areas such as the Hauraki Gulf, then a staged phase-out; (5) recommit to Paris obligations and protect the Climate Change Commission. It adds that honouring Te Tiriti is an approach it will bring to negotiations.
+
+Full text: [Bottom Lines - Opportunity Party](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+
+### Allow only registered voters to donate to parties, cut the disclosure threshold to $1,000 and cap spending across the whole electoral cycle (OPP-A05)
+
+**Why** (*archive*): Opportunity says it wants to 'sever the link' between donations and political influence.
+
+**How** (*archive*): Ban donations from companies, trusts and other entities and from non-voters; require audited annual party statements; apply advertising spending limits over the full three-year cycle with quarterly Electoral Commission summaries.
+
+Full text: [Clean Up Politics (policy document)](documents/pdf-clean-up-politics.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf))
+
+### Impose a one-year cooling-off period before ministers, senior staff and officials can become lobbyists (OPP-A06)
+
+**How** (*archive*): Part of its lobbying regulation, alongside a statutory code of conduct, a ban on contingency fees and foreign-lobbying disclosure.
+
+Full text: [Clean Up Politics (policy document)](documents/pdf-clean-up-politics.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf))
+
+### Strengthen the Official Information Act, MPs' pecuniary-interest rules and whistleblower protections, and create an independent policy costing unit (OPP-A07)
+
+**Why** (*archive*): Opportunity says good rules mean little without institutions that enforce them.
+
+**How** (*archive*): Narrower OIA withholding grounds, lower pecuniary-interest thresholds, broader whistleblower coverage, a better-funded Electoral Commission and a costing unit available to all registered parties.
+
+Full text: [Clean Up Politics (policy document)](documents/pdf-clean-up-politics.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf))
+
+### Require Opportunity MPs to rent from unrelated parties rather than use allowances on property they own, and seek a full review of MP entitlements (OPP-A08)
+
+**Why** (*archive*): Opportunity says public money should not build MPs' private property wealth or flow back to parties or donors.
+
+**How** (*archive*): Its MPs would only claim actual, reasonable accommodation costs paid to an unrelated third party and would not lease property linked to the MP, party or major donors; it would seek a review of allowances including those for former MPs and spouses.
+
+Full text: [Opportunity MPs accommodation allowance policy - Opportunity Party](documents/web-opportunity-accommodation-allowance-policy.md) ([original](https://www.opportunity.org.nz/opportunity_accommodation_allowance_policy)); [Opportunity MPs Will Not Use Taxpayer-Funded Allowances To Build Private Property Wealth](documents/release-2026-06-mp-allowances.md) ([original](https://www.scoop.co.nz/stories/PO2606/S00107/opportunity-mps-will-not-use-taxpayer-funded-allowances-to-build-private-property-wealth.htm))
 
 ## Media, culture & recreation
 
@@ -472,6 +595,16 @@ Full text: ['Smart on Crime', undated (accessed 19 August 2026)](documents/web-s
 **How** (*policy.nz*): This party would address the precarity of an artist's income firstly with its universal citizen’s income policy, which would enable artists to take a financial gamble on their career. Tax reforms would help over irregular income and free up charitable giving by repealing the cap on charitable donations. This party would more broadly support the arts through other policies such as an AI framework and revamp of the polytech sector, which would address copyright exploitation and recognise the arts in innovation funding.
 
 Full text: ['Arts and culture statement', 19 October 2026 (accessed 20 October 2026)](documents/web-arts-and-culture-statement.md) ([original](https://www.opportunity.org.nz/arts_and_culture_statement)); ['Charitable Giving Tax Credit Cap', 19 June 2026 (accessed 06 August 2026)](documents/web-charitable-giving-tax-credit-cap.md) ([original](https://www.opportunity.org.nz/charitable_giving_tax_credit_cap))
+
+## Migration
+
+### Agree a population policy for stable long-term immigration (OPP-A14)
+
+**Why** (*archive*): Opportunity says immigration brings skills and capital but has not been matched by infrastructure and planning.
+
+**How** (*archive*): A population policy linking immigration to investment in infrastructure, planning and social programmes.
+
+Full text: [Breakthrough Economy (policy overview)](documents/pdf-breakthrough-economy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf))
 
 ## Te ao Māori
 
@@ -489,7 +622,7 @@ Full text: ['Healthy Land', undated (accessed 11 August 2026)](documents/web-hea
 
 **How** (*policy.nz*): This party would ensure Aotearoa history, including Te Tiriti, is part of the education system and support the growth of te reo teachers.
 
-Full text: ['Honouring Te Tiriti', undated (accessed 11 August 2026)](documents/web-honouring-te-tiriti.md) ([original](https://www.opportunity.org.nz/honouring_te_tiriti))
+Full text: ['Honouring Te Tiriti', undated (accessed 11 August 2026)](documents/web-honouring-te-tiriti.md) ([original](https://www.opportunity.org.nz/honouring_te_tiriti)); [Future-Fit Education Policy Paper](documents/pdf-future-fit-education.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf)); [Honouring Te Tiriti Policy Paper](documents/pdf-honouring-te-tiriti.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Honouring%20Te%20Tiriti%20Policy%20Paper.pdf))
 
 ### Repeal legislation around customary marine title (POL54829)
 
@@ -497,7 +630,19 @@ Full text: ['Honouring Te Tiriti', undated (accessed 11 August 2026)](documents/
 
 **How** (*policy.nz*): This party would repeal the the Marine and Coastal Area (Takutai Moana) (Customary Marine Title) Amendment Act passed last year, which tightens the criteria for recognition of Māori marine customary rights. This is part of a wider marine policy which includes modernising legislation, recognising Māori customary management tools and including Māori as full partners in marine protection planning processes.
 
-Full text: ['Honouring Te Tiriti', undated (accessed 11 August 2026)](documents/web-honouring-te-tiriti.md) ([original](https://www.opportunity.org.nz/honouring_te_tiriti)); ['Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)](documents/pdf-healthy-oceans.md) ([original](https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf)); ['Healthy Oceans', undated (accessed 19 August 2026)](documents/web-healthy-oceans.md) ([original](https://www.opportunity.org.nz/healthy-oceans)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines))
+Full text: ['Honouring Te Tiriti', undated (accessed 11 August 2026)](documents/web-honouring-te-tiriti.md) ([original](https://www.opportunity.org.nz/honouring_te_tiriti)); ['Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)](documents/pdf-healthy-oceans.md) ([original](https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf)); ['Healthy Oceans', undated (accessed 19 August 2026)](documents/web-healthy-oceans.md) ([original](https://www.opportunity.org.nz/healthy-oceans)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); [Honouring Te Tiriti Policy Paper](documents/pdf-honouring-te-tiriti.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Honouring%20Te%20Tiriti%20Policy%20Paper.pdf))
+
+### Restore pre-2025 customary marine title settings and review recent changes to statutory Treaty clauses (OPP-A16)
+
+**How** (*archive*): Honour existing settlements and complete outstanding ones; restore pre-2025 Marine and Coastal Area settings; review Treaty provisions statute by statute; support a national constitutional conversation using deliberative processes with Māori as Treaty partner.
+
+Full text: [Honouring Te Tiriti Policy Paper](documents/pdf-honouring-te-tiriti.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Honouring%20Te%20Tiriti%20Policy%20Paper.pdf)); [Honouring Te Tiriti](documents/web-honouring-te-tiriti.md) ([original](https://www.opportunity.org.nz/honouring_te_tiriti))
+
+### Adopt a presumption in favour of devolving services to Māori organisations where it improves outcomes, and improve Māori access to capital (OPP-A17)
+
+**How** (*archive*): Match Māori decision-making authority to the issue, give devolved bodies operational autonomy and longer-term funding, evaluate and expand what works, and support financing models for Māori assets.
+
+Full text: [Honouring Te Tiriti Policy Paper](documents/pdf-honouring-te-tiriti.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Honouring%20Te%20Tiriti%20Policy%20Paper.pdf))
 
 ## Transport & infrastructure
 
@@ -507,7 +652,7 @@ Full text: ['Honouring Te Tiriti', undated (accessed 11 August 2026)](documents/
 
 **How** (*policy.nz*): This party would incentivise the electrification of industries and housing. Low-interest loans and funding would be made available for households, community energy projects and public transport.  This would include an expansion of EECA’s Warmer Kiwi Homes subsidies ($80m annually) for household solar and electricity initiatives, and low-interest electrification loans via the national Ratepayer Assistance Scheme.
 
-Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf); ['Climate Action', undated (accessed 19 August 2026)](documents/web-climate-action.md) ([original](https://www.opportunity.org.nz/climate_action)); ['Industry Energy Resilience Fund', 8 September 2026 (accessed 09 September 2026)](documents/web-industry-energy-resilience-fund.md) ([original](https://www.opportunity.org.nz/industry_energy_resilience_fund))
+Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](documents/pdf-abundant-energy-paper.md) ([original](https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf)); ['Climate Action', undated (accessed 19 August 2026)](documents/web-climate-action.md) ([original](https://www.opportunity.org.nz/climate_action)); ['Industry Energy Resilience Fund', 8 September 2026 (accessed 09 September 2026)](documents/web-industry-energy-resilience-fund.md) ([original](https://www.opportunity.org.nz/industry_energy_resilience_fund)); [Abundant Energy (policy document)](documents/pdf-abundant-energy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Abundant%20Energy.pdf)); [Abundant Energy - Opportunity Party Policy (policy paper)](documents/pdf-abundant-energy-paper.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Abundant%20Energy%20-%20Opportunity%20Party%20Policy.pdf))
 
 ### Increase the energy grid up to 30GW by 2050 (POL54807)
 
@@ -515,7 +660,7 @@ Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](h
 
 **How** (*policy.nz*): This party would push for cross-party agreement to boost renewable energy by adding 19GW of new renewable generation capacity to the grid by 2050, bringing it up to 30GW. It would also launch a capacity investment scheme like Australia's to unlock capital and encourage industries to electrify their processes. The party's full energy policy would be funded through ringfenced government dividends from electricity generators.
 
-Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf); ['Climate Action', undated (accessed 19 August 2026)](documents/web-climate-action.md) ([original](https://www.opportunity.org.nz/climate_action)); ['Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)](https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf)
+Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](documents/pdf-abundant-energy-paper.md) ([original](https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf)); ['Climate Action', undated (accessed 19 August 2026)](documents/web-climate-action.md) ([original](https://www.opportunity.org.nz/climate_action)); ['Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)](documents/pdf-intergenerational-infrastructure.md) ([original](https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf)); [Abundant Energy (policy document)](documents/pdf-abundant-energy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Abundant%20Energy.pdf)); [Abundant Energy - Opportunity Party Policy (policy paper)](documents/pdf-abundant-energy-paper.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Abundant%20Energy%20-%20Opportunity%20Party%20Policy.pdf))
 
 ### Offer incentives to businesses to buy electric vehicles (POL54876)
 
@@ -525,7 +670,7 @@ Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](h
 The fringe benefit tax exemption is expected to cost $31m a year, growing to $155m as uptake increases. 
 The impact of accelerated depreciation will start at about $95m a year, but much of it will be recovered as depreciation timing unwinds. Both will be funded from ringfenced dividends from state gentailers.
 
-Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf); ['Accelerating EV Uptake', undated (accessed 19 August 2026)](documents/web-accelerating-ev-uptake.md) ([original](https://www.opportunity.org.nz/accelerating_ev_uptake))
+Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](documents/pdf-abundant-energy-paper.md) ([original](https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf)); ['Accelerating EV Uptake', undated (accessed 19 August 2026)](documents/web-accelerating-ev-uptake.md) ([original](https://www.opportunity.org.nz/accelerating_ev_uptake)); [Climate Action (policy document)](documents/pdf-climate-action.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf))
 
 ### Help industries decarbonise with a new fund (POL54900)
 
@@ -535,7 +680,7 @@ Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](h
 IERF will offer a greater mix of instruments than GIDI , with grants reserved for smaller targeted uses. 
 Money collected from selling carbon units would be used to fight climate change, putting it into IERF by law so businesses could plan ahead.
 
-Full text: ['Industry Energy Resilience Fund', 8 September 2026 (accessed 09 September 2026)](documents/web-industry-energy-resilience-fund.md) ([original](https://www.opportunity.org.nz/industry_energy_resilience_fund))
+Full text: ['Industry Energy Resilience Fund', 8 September 2026 (accessed 09 September 2026)](documents/web-industry-energy-resilience-fund.md) ([original](https://www.opportunity.org.nz/industry_energy_resilience_fund)); [Climate Action (policy document)](documents/pdf-climate-action.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf))
 
 ### Use the money received from stakes in gentailers to fund renewable energy (POL55049)
 
@@ -543,21 +688,34 @@ Full text: ['Industry Energy Resilience Fund', 8 September 2026 (accessed 09 Sep
 
 **How** (*policy.nz*): This party would add 30 gigawatts of renewable energy to the grid by 2050. This ambitious target will require building just over 556 megawatts of electricity generation to the country every year. The government currently receives approximately $500m from stakes in the electricity gentailers each year. This money would be ringfenced for investment in generation so that there is no incentive to maintain high prices. Electricity distributors would be consolidated and all electricity regulation would fall under one regulator. This party estimates that this policy would cost 500 m.
 
-Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf)
+Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](documents/pdf-abundant-energy-paper.md) ([original](https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf)); [Abundant Energy (policy document)](documents/pdf-abundant-energy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Abundant%20Energy.pdf)); [Abundant Energy - Opportunity Party Policy (policy paper)](documents/pdf-abundant-energy-paper.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Abundant%20Energy%20-%20Opportunity%20Party%20Policy.pdf))
+
+### Reverse the Government's plan for an LNG import terminal in Taranaki (OPP-A21)
+
+**Why** (*archive*): Opportunity says tying the grid to volatile imported gas would not serve communities or businesses.
+
+**How** (*archive*): Calls on the Government to reverse the decision and points to its Abundant Energy plan.
+
+Full text: [Call for Government reversal on LNG terminal](documents/web-call-for-government-reversal-on-lng-terminal.md) ([original](https://www.opportunity.org.nz/call_for_government_reversal_on_lng_terminal))
 
 ## Source documents
 
 | Document | Original | Words | Status |
 | --- | --- | --- | --- |
+| [Abundant Energy - Opportunity Party Policy (policy paper)](documents/pdf-abundant-energy-paper.md) | [link](https://cdn.opportunity.org.nz/documents/policy/Abundant%20Energy%20-%20Opportunity%20Party%20Policy.pdf) | 2249 | full text |
 | [Abundant Energy (policy document)](documents/pdf-abundant-energy.md) | [link](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Abundant%20Energy.pdf) | 2244 | full text |
 | [Affordable Housing (policy document)](documents/pdf-affordable-housing.md) | [link](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Affordable%20Housing.pdf) | 2697 | full text |
 | [Breakthrough Economy (policy overview)](documents/pdf-breakthrough-economy.md) | [link](https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf) | 3334 | full text |
 | [Citizens' Voice (policy document)](documents/pdf-citizens-voice.md) | [link](https://cdn.opportunity.org.nz/documents/policy/citizens-voice-policy.pdf) | 1313 | full text |
 | [Clean Up Politics (policy document)](documents/pdf-clean-up-politics.md) | [link](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf) | 1036 | full text |
 | [Climate Action (policy document)](documents/pdf-climate-action.md) | [link](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf) | 2206 | full text |
+| [Digital Future (policy document)](documents/pdf-digital-future.md) | [link](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Digital%20Future.pdf) | 1537 | full text |
+| [Future-Fit Education Policy Paper](documents/pdf-future-fit-education.md) | [link](https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf) | 1513 | full text |
 | [Healthy Oceans (policy document)](documents/pdf-healthy-oceans.md) | [link](https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf) | 4163 | full text |
+| [Honouring Te Tiriti Policy Paper](documents/pdf-honouring-te-tiriti.md) | [link](https://cdn.opportunity.org.nz/documents/policy/Honouring%20Te%20Tiriti%20Policy%20Paper.pdf) | 798 | full text |
 | [Intergenerational Infrastructure (policy document)](documents/pdf-intergenerational-infrastructure.md) | [link](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf) | 3385 | full text |
 | [Smart on Crime (policy document)](documents/pdf-smart-on-crime.md) | [link](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Smart%20on%20Crime.pdf) | 998 | full text |
+| [Tax Reset Transition Plan (policy document)](documents/pdf-tax-reset-transition-plan.md) | [link](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset%20Transition%20Plan.pdf) | 493 | full text |
 | [Tax Reset (policy document)](documents/pdf-tax-reset.md) | [link](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf) | 6146 | full text |
 | [“We Are The Next Generation Of Leaders” Says Qiulae Wong](documents/release-2026-02-state-of-the-nation.md) | [link](https://www.scoop.co.nz/stories/PO2602/S00118/we-are-the-next-generation-of-leaders-says-qiulae-wong.htm) | 552 | full text |
 | [It’s Time For Permanent, Free Public Transport](documents/release-2026-04-free-public-transport.md) | [link](https://www.scoop.co.nz/stories/PO2604/S00050/its-time-for-permanent-free-public-transport.htm) | 307 | full text |
@@ -566,30 +724,51 @@ Full text: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](h
 | [Opportunity MPs Will Not Use Taxpayer-Funded Allowances To Build Private Property Wealth](documents/release-2026-06-mp-allowances.md) | [link](https://www.scoop.co.nz/stories/PO2606/S00107/opportunity-mps-will-not-use-taxpayer-funded-allowances-to-build-private-property-wealth.htm) | 475 | full text |
 | [Innovation, Fairness And Small Business: Opportunity’s Breakthrough Economy Policy](documents/release-2026-07-breakthrough-economy.md) | [link](https://www.scoop.co.nz/stories/PO2607/S00015/innovation-fairness-and-small-business-opportunitys-breakthrough-economy-policy.htm) | 494 | full text |
 | [Opportunity Launches Intergenerational Infrastructure Policy](documents/release-2026-08-intergenerational-infrastructure.md) | [link](https://www.scoop.co.nz/stories/PO2608/S00027/opportunity-launches-intergenerational-infrastructure-policy.htm) | 489 | full text |
-| [opportunity.org.nz: /10_year_plans_to_strengthen_health_and_education](documents/web-10-year-plans-to-strengthen-health-and-education.md) | [link](https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education) | 132 | **not retrievable** |
-| [opportunity.org.nz: /accelerating_ev_uptake](documents/web-accelerating-ev-uptake.md) | [link](https://www.opportunity.org.nz/accelerating_ev_uptake) | 132 | **not retrievable** |
-| [opportunity.org.nz: /affordable_housing](documents/web-affordable-housing.md) | [link](https://www.opportunity.org.nz/affordable_housing) | 132 | **not retrievable** |
-| [opportunity.org.nz: /arts_and_culture_statement](documents/web-arts-and-culture-statement.md) | [link](https://www.opportunity.org.nz/arts_and_culture_statement) | 132 | **not retrievable** |
-| [opportunity.org.nz: /bottom_lines](documents/web-bottom-lines.md) | [link](https://www.opportunity.org.nz/bottom_lines) | 132 | **not retrievable** |
-| [opportunity.org.nz: /breakthrough-economy](documents/web-breakthrough-economy.md) | [link](https://www.opportunity.org.nz/breakthrough-economy) | 132 | **not retrievable** |
-| [opportunity.org.nz: /build_today_breakthrough_tomorrow](documents/web-build-today-breakthrough-tomorrow.md) | [link](https://www.opportunity.org.nz/build_today_breakthrough_tomorrow) | 132 | **not retrievable** |
-| [opportunity.org.nz: /charitable_giving_tax_credit_cap](documents/web-charitable-giving-tax-credit-cap.md) | [link](https://www.opportunity.org.nz/charitable_giving_tax_credit_cap) | 132 | **not retrievable** |
-| [opportunity.org.nz: /clean_up_politics](documents/web-clean-up-politics.md) | [link](https://www.opportunity.org.nz/clean_up_politics) | 132 | **not retrievable** |
-| [opportunity.org.nz: /climate_action](documents/web-climate-action.md) | [link](https://www.opportunity.org.nz/climate_action) | 132 | **not retrievable** |
-| [opportunity.org.nz: /disability_statement](documents/web-disability-statement.md) | [link](https://www.opportunity.org.nz/disability_statement) | 132 | **not retrievable** |
-| [opportunity.org.nz: /free_public_transport](documents/web-free-public-transport.md) | [link](https://www.opportunity.org.nz/free_public_transport) | 132 | **not retrievable** |
-| [opportunity.org.nz: /future_fit_education](documents/web-future-fit-education.md) | [link](https://www.opportunity.org.nz/future_fit_education) | 132 | **not retrievable** |
-| [opportunity.org.nz: /gene_technology_policy](documents/web-gene-technology-policy.md) | [link](https://www.opportunity.org.nz/gene_technology_policy) | 132 | **not retrievable** |
-| [opportunity.org.nz: /healthy_land](documents/web-healthy-land.md) | [link](https://www.opportunity.org.nz/healthy_land) | 132 | **not retrievable** |
-| [opportunity.org.nz: /healthy-oceans](documents/web-healthy-oceans.md) | [link](https://www.opportunity.org.nz/healthy-oceans) | 132 | **not retrievable** |
-| [opportunity.org.nz: /healthy_people](documents/web-healthy-people.md) | [link](https://www.opportunity.org.nz/healthy_people) | 132 | **not retrievable** |
-| [opportunity.org.nz: /honouring_te_tiriti](documents/web-honouring-te-tiriti.md) | [link](https://www.opportunity.org.nz/honouring_te_tiriti) | 132 | **not retrievable** |
-| [opportunity.org.nz: /industry_energy_resilience_fund](documents/web-industry-energy-resilience-fund.md) | [link](https://www.opportunity.org.nz/industry_energy_resilience_fund) | 132 | **not retrievable** |
-| [opportunity.org.nz: /opportunity_to_support_online_safety_bill_to_select_committee](documents/web-opportunity-to-support-online-safety-bill-to-select-committee.md) | [link](https://www.opportunity.org.nz/opportunity_to_support_online_safety_bill_to_select_committee) | 132 | **not retrievable** |
-| [opportunity.org.nz: /opportunity_will_defend_climate_change_commission_in_national_led_government](documents/web-opportunity-will-defend-climate-change-commission-in-national-led-government.md) | [link](https://www.opportunity.org.nz/opportunity_will_defend_climate_change_commission_in_national_led_government) | 132 | **not retrievable** |
-| [opportunity.org.nz: /smart_on_crime](documents/web-smart-on-crime.md) | [link](https://www.opportunity.org.nz/smart_on_crime) | 132 | **not retrievable** |
-| [opportunity.org.nz: /tax-reset](documents/web-tax-reset.md) | [link](https://web.archive.org/save/https://www.opportunity.org.nz/tax-reset) | 132 | **not retrievable** |
-| [opportunity.org.nz: /who_s_listening_to_our_disability_advocates](documents/web-who-s-listening-to-our-disability-advocates.md) | [link](https://www.opportunity.org.nz/who_s_listening_to_our_disability_advocates) | 132 | **not retrievable** |
+| [10-year plans to strengthen health and education - Opportunity Party](documents/web-10-year-plans-to-strengthen-health-and-education.md) | [link](https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education) | 420 | full text |
+| [Q's reflections from Waitangi](documents/web-5-reflections-from-waitangi.md) | [link](https://www.opportunity.org.nz/5_reflections_from_waitangi) | 680 | full text |
+| [Abundant Energy](documents/web-abundant-energy.md) | [link](https://www.opportunity.org.nz/abundant-energy) | 789 | full text |
+| [Accelerating EV uptake  - Opportunity Party](documents/web-accelerating-ev-uptake.md) | [link](https://www.opportunity.org.nz/accelerating_ev_uptake) | 362 | full text |
+| [Affordable Housing](documents/web-affordable-housing.md) | [link](https://www.opportunity.org.nz/affordable_housing) | 585 | full text |
+| [opportunity.org.nz: /arts_and_culture_statement](documents/web-arts-and-culture-statement.md) | [link](https://www.opportunity.org.nz/arts_and_culture_statement) | 146 | **not retrievable** |
+| [Bottom Lines - Opportunity Party](documents/web-bottom-lines.md) | [link](https://www.opportunity.org.nz/bottom_lines) | 653 | full text |
+| [Breakthrough Economy](documents/web-breakthrough-economy.md) | [link](https://www.opportunity.org.nz/breakthrough-economy) | 1323 | full text |
+| [Build today. Breakthrough tomorrow. - Opportunity Party](documents/web-build-today-breakthrough-tomorrow.md) | [link](https://www.opportunity.org.nz/build_today_breakthrough_tomorrow) | 704 | full text |
+| [Call for Government reversal on LNG terminal](documents/web-call-for-government-reversal-on-lng-terminal.md) | [link](https://www.opportunity.org.nz/call_for_government_reversal_on_lng_terminal) | 278 | full text |
+| [Charitable Giving Tax Credit Cap - Opportunity Party](documents/web-charitable-giving-tax-credit-cap.md) | [link](https://www.opportunity.org.nz/charitable_giving_tax_credit_cap) | 585 | full text |
+| [Citizens Voice](documents/web-citizens-voice.md) | [link](https://www.opportunity.org.nz/citizens-voice) | 1943 | full text |
+| [Clean-up Politics](documents/web-clean-up-politics.md) | [link](https://www.opportunity.org.nz/clean_up_politics) | 1852 | full text |
+| [Climate Action](documents/web-climate-action.md) | [link](https://www.opportunity.org.nz/climate_action) | 645 | full text |
+| [Digital Future - Opportunity Party](documents/web-digital-future.md) | [link](https://www.opportunity.org.nz/digital-future) | 593 | full text |
+| [opportunity.org.nz: /disability_statement](documents/web-disability-statement.md) | [link](https://www.opportunity.org.nz/disability_statement) | 146 | **not retrievable** |
+| [Free Public Transport](documents/web-free-public-transport.md) | [link](https://www.opportunity.org.nz/free_public_transport) | 919 | full text |
+| [Future fit Education](documents/web-future-fit-education.md) | [link](https://www.opportunity.org.nz/future_fit_education) | 791 | full text |
+| [Gene Technology Policy - Opportunity Party](documents/web-gene-technology-policy.md) | [link](https://www.opportunity.org.nz/gene_technology_policy) | 1085 | full text |
+| [opportunity.org.nz: /healthy_land](documents/web-healthy-land.md) | [link](https://www.opportunity.org.nz/healthy_land) | 146 | **not retrievable** |
+| [Oceans](documents/web-healthy-oceans.md) | [link](https://www.opportunity.org.nz/healthy-oceans) | 1122 | full text |
+| [Healthy People](documents/web-healthy-people.md) | [link](https://www.opportunity.org.nz/healthy_people) | 291 | full text |
+| [Honouring Te Tiriti](documents/web-honouring-te-tiriti.md) | [link](https://www.opportunity.org.nz/honouring_te_tiriti) | 705 | full text |
+| [Industry Energy Resilience Fund (IERF) - Opportunity Party](documents/web-industry-energy-resilience-fund.md) | [link](https://www.opportunity.org.nz/industry_energy_resilience_fund) | 769 | full text |
+| [Intergenerational Infrastructure](documents/web-intergenerational-infrastructure.md) | [link](https://www.opportunity.org.nz/intergenerational_infrastructure) | 2062 | full text |
+| [‘Left-right politics is failing New Zealand’ Why Opportunity won’t pick a side.  - Opportunity Party](documents/web-left-right-politics-is-failing-new-zealand.md) | [link](https://www.opportunity.org.nz/_left_right_politics_is_failing_new_zealand) | 567 | full text |
+| [On the hunt for New Zealand’s North Star](documents/web-on-the-hunt-for-new-zealand-s-north-star.md) | [link](https://www.opportunity.org.nz/on_the_hunt_for_new_zealand_s_north_star) | 998 | full text |
+| [Opportunity MPs accommodation allowance policy - Opportunity Party](documents/web-opportunity-accommodation-allowance-policy.md) | [link](https://www.opportunity.org.nz/opportunity_accommodation_allowance_policy) | 443 | full text |
+| [Opportunity launches plan to clean up politics and restore trust in government - Opportunity Party](documents/web-opportunity-launches-plan-to-clean-up-politics-and-restore-trust-in-government.md) | [link](https://www.opportunity.org.nz/opportunity_launches_plan_to_clean_up_politics_and_restore_trust_in_government) | 265 | full text |
+| [Opportunity to support online safety bill to select committee - Opportunity Party](documents/web-opportunity-to-support-online-safety-bill-to-select-committee.md) | [link](https://www.opportunity.org.nz/opportunity_to_support_online_safety_bill_to_select_committee) | 266 | full text |
+| [Opportunity will defend Climate Change Commission from ACT - Opportunity Party](documents/web-opportunity-will-defend-climate-change-commission-in-national-led-government.md) | [link](https://www.opportunity.org.nz/opportunity_will_defend_climate_change_commission_in_national_led_government) | 241 | full text |
+| [The Opportunity Party calls for bipartisanship on policy costing unit - The Opportunities Party](documents/web-policy-costing-unit.md) | [link](https://www.opportunity.org.nz/policy-costing-unit) | 456 | full text |
+| [Policy](documents/web-policy.md) | [link](https://www.opportunity.org.nz/policy) | 126 | full text |
+| [Prosperity doesn’t start with a shredder - Opportunity Party](documents/web-prosperity-doesn-t-start-with-a-shredder.md) | [link](https://www.opportunity.org.nz/prosperity_doesn_t_start_with_a_shredder) | 485 | full text |
+| [Statement on the situation in Gaza](documents/web-situation-in-gaza.md) | [link](https://www.opportunity.org.nz/situation_in_gaza) | 319 | full text |
+| [Smart on Crime](documents/web-smart-on-crime.md) | [link](https://www.opportunity.org.nz/smart_on_crime) | 657 | full text |
+| [Statement on Middle East Crisis](documents/web-statement-on-middle-east-crisis.md) | [link](https://www.opportunity.org.nz/statement_on_middle_east_crisis) | 108 | full text |
+| [Statement on the Fisheries Amendment Bill](documents/web-statement-on-the-fisheries-amendment-bill.md) | [link](https://www.opportunity.org.nz/statement_on_the_fisheries_amendment_bill) | 324 | full text |
+| [Tax Reset](documents/web-tax-reset-basic.md) | [link](https://www.opportunity.org.nz/tax-reset-basic) | 135 | full text |
+| [Tax Reset - Opportunity Party](documents/web-tax-reset.md) | [link](https://www.opportunity.org.nz/tax-reset) | 5537 | full text |
+| [The Pray and Delay Budget - Opportunity Party](documents/web-the-pray-and-delay-budget.md) | [link](https://www.opportunity.org.nz/the_pray_and_delay_budget) | 820 | full text |
+| [The State of the Nation](documents/web-the-state-of-the-nation.md) | [link](https://www.opportunity.org.nz/the-state-of-the-nation) | 2894 | full text |
+| [Time for an honest conversation about transport funding - Opportunity Party](documents/web-time-for-an-honest-conversation-about-transport-funding.md) | [link](https://www.opportunity.org.nz/time_for_an_honest_conversation_about_transport_funding) | 293 | full text |
+| [When the bill comes due - Opportunity Party](documents/web-when-the-bill-comes-due.md) | [link](https://www.opportunity.org.nz/when_the_bill_comes_due) | 1065 | full text |
+| [Who’s listening to our disability advocates? - Opportunity Party](documents/web-who-s-listening-to-our-disability-advocates.md) | [link](https://www.opportunity.org.nz/who_s_listening_to_our_disability_advocates) | 682 | full text |
 
 ---
 

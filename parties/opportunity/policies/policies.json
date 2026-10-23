@@ -55,9 +55,10 @@
   "sources": [
    {
     "title": "'Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)",
-    "url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
     "cited_by": "policy.nz",
-    "note": "cited by policy.nz; not a TOP document (or not archived here)"
+    "document": "documents/pdf-abundant-energy-paper.md",
+    "note": "this URL returned HTTP 404 on 2026-10-23; the linked document is the party's current PDF of the same policy"
    },
    {
     "title": "'Climate Action', undated (accessed 19 August 2026)",
@@ -70,6 +71,18 @@
     "url": "https://www.opportunity.org.nz/industry_energy_resilience_fund",
     "document": "documents/web-industry-energy-resilience-fund.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Abundant Energy (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Abundant%20Energy.pdf",
+    "document": "documents/pdf-abundant-energy.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Abundant Energy - Opportunity Party Policy (policy paper)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Abundant%20Energy%20-%20Opportunity%20Party%20Policy.pdf",
+    "document": "documents/pdf-abundant-energy-paper.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -108,6 +121,12 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Opportunity Party Candidate David Bainbridge-Zafar Champions Healthy Oceans Policy For Dunedin",
+    "url": "https://www.scoop.co.nz/stories/PO2604/S00041/opportunity-party-candidate-david-bainbridge-zafar-champions-healthy-oceans-policy-for-dunedin.htm",
+    "document": "documents/release-2026-04-healthy-oceans-dunedin.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -132,9 +151,27 @@
   "sources": [
    {
     "title": "'Tax Reset - Opportunity Party', undated (accessed 06 August 2026)",
-    "url": "https://web.archive.org/save/https://www.opportunity.org.nz/tax-reset",
+    "url": "https://www.opportunity.org.nz/tax-reset",
     "document": "documents/web-tax-reset.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Tax Reset (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf",
+    "document": "documents/pdf-tax-reset.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Tax Reset Transition Plan (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset%20Transition%20Plan.pdf",
+    "document": "documents/pdf-tax-reset-transition-plan.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Opportunity’s Tax Reset: The Largest Tax Cut For Low-income Working Kiwis In History",
+    "url": "https://www.scoop.co.nz/stories/PO2605/S00043/opportunitys-tax-reset-the-largest-tax-cut-for-low-income-working-kiwis-in-history.htm",
+    "document": "documents/release-2026-05-tax-reset.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -165,6 +202,12 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Clean Up Politics (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf",
+    "document": "documents/pdf-clean-up-politics.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -196,6 +239,18 @@
     "url": "https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf",
     "document": "documents/pdf-breakthrough-economy.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Innovation, Fairness And Small Business: Opportunity’s Breakthrough Economy Policy",
+    "url": "https://www.scoop.co.nz/stories/PO2607/S00015/innovation-fairness-and-small-business-opportunitys-breakthrough-economy-policy.htm",
+    "document": "documents/release-2026-07-breakthrough-economy.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Digital Future (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Digital%20Future.pdf",
+    "document": "documents/pdf-digital-future.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -220,6 +275,18 @@
     "url": "https://www.opportunity.org.nz/opportunity_will_defend_climate_change_commission_in_national_led_government",
     "document": "documents/web-opportunity-will-defend-climate-change-commission-in-national-led-government.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Climate Action (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf",
+    "document": "documents/pdf-climate-action.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Bottom Lines - Opportunity Party",
+    "url": "https://www.opportunity.org.nz/bottom_lines",
+    "document": "documents/web-bottom-lines.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -268,7 +335,7 @@
   "sources": [
    {
     "title": "'Citizens Voice Policy ' (PDF), undated (accessed 07 August 2026)",
-    "url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/citizens-voice-policy.pdf",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/citizens-voice-policy.pdf",
     "document": "documents/pdf-citizens-voice.md",
     "cited_by": "policy.nz"
    }
@@ -297,7 +364,20 @@
     "title": "'Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)",
     "url": "https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf",
     "cited_by": "policy.nz",
-    "note": "cited by policy.nz; not a TOP document (or not archived here)"
+    "document": "documents/pdf-intergenerational-infrastructure.md",
+    "note": "this URL returned HTTP 404 on 2026-10-23; the linked document is the party's current PDF of the same policy"
+   },
+   {
+    "title": "Intergenerational Infrastructure (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf",
+    "document": "documents/pdf-intergenerational-infrastructure.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Opportunity Launches Intergenerational Infrastructure Policy",
+    "url": "https://www.scoop.co.nz/stories/PO2608/S00027/opportunity-launches-intergenerational-infrastructure-policy.htm",
+    "document": "documents/release-2026-08-intergenerational-infrastructure.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -323,6 +403,12 @@
     "url": "https://www.opportunity.org.nz/free_public_transport",
     "document": "documents/web-free-public-transport.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "It’s Time For Permanent, Free Public Transport",
+    "url": "https://www.scoop.co.nz/stories/PO2604/S00050/its-time-for-permanent-free-public-transport.htm",
+    "document": "documents/release-2026-04-free-public-transport.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -351,6 +437,12 @@
     "url": "https://www.opportunity.org.nz/climate_action",
     "document": "documents/web-climate-action.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Climate Action (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf",
+    "document": "documents/pdf-climate-action.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -431,9 +523,22 @@
   "sources": [
    {
     "title": "'Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)",
-    "url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
     "cited_by": "policy.nz",
-    "note": "cited by policy.nz; not a TOP document (or not archived here)"
+    "document": "documents/pdf-abundant-energy-paper.md",
+    "note": "this URL returned HTTP 404 on 2026-10-23; the linked document is the party's current PDF of the same policy"
+   },
+   {
+    "title": "Abundant Energy (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Abundant%20Energy.pdf",
+    "document": "documents/pdf-abundant-energy.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Abundant Energy - Opportunity Party Policy (policy paper)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Abundant%20Energy%20-%20Opportunity%20Party%20Policy.pdf",
+    "document": "documents/pdf-abundant-energy-paper.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -460,9 +565,10 @@
   "sources": [
    {
     "title": "'Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)",
-    "url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
     "cited_by": "policy.nz",
-    "note": "cited by policy.nz; not a TOP document (or not archived here)"
+    "document": "documents/pdf-abundant-energy-paper.md",
+    "note": "this URL returned HTTP 404 on 2026-10-23; the linked document is the party's current PDF of the same policy"
    },
    {
     "title": "'Climate Action', undated (accessed 19 August 2026)",
@@ -474,7 +580,20 @@
     "title": "'Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)",
     "url": "https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf",
     "cited_by": "policy.nz",
-    "note": "cited by policy.nz; not a TOP document (or not archived here)"
+    "document": "documents/pdf-intergenerational-infrastructure.md",
+    "note": "this URL returned HTTP 404 on 2026-10-23; the linked document is the party's current PDF of the same policy"
+   },
+   {
+    "title": "Abundant Energy (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Abundant%20Energy.pdf",
+    "document": "documents/pdf-abundant-energy.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Abundant Energy - Opportunity Party Policy (policy paper)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Abundant%20Energy%20-%20Opportunity%20Party%20Policy.pdf",
+    "document": "documents/pdf-abundant-energy-paper.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -504,6 +623,12 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Clean Up Politics (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf",
+    "document": "documents/pdf-clean-up-politics.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -533,6 +658,12 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Clean Up Politics (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf",
+    "document": "documents/pdf-clean-up-politics.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -567,6 +698,12 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Climate Action (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf",
+    "document": "documents/pdf-climate-action.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -594,7 +731,20 @@
     "title": "'Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)",
     "url": "https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf",
     "cited_by": "policy.nz",
-    "note": "cited by policy.nz; not a TOP document (or not archived here)"
+    "document": "documents/pdf-intergenerational-infrastructure.md",
+    "note": "this URL returned HTTP 404 on 2026-10-23; the linked document is the party's current PDF of the same policy"
+   },
+   {
+    "title": "Intergenerational Infrastructure (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf",
+    "document": "documents/pdf-intergenerational-infrastructure.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Opportunity Launches Intergenerational Infrastructure Policy",
+    "url": "https://www.scoop.co.nz/stories/PO2608/S00027/opportunity-launches-intergenerational-infrastructure-policy.htm",
+    "document": "documents/release-2026-08-intergenerational-infrastructure.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -619,9 +769,27 @@
   "sources": [
    {
     "title": "'Tax Reset - Opportunity Party', undated (accessed 06 August 2026)",
-    "url": "https://web.archive.org/save/https://www.opportunity.org.nz/tax-reset",
+    "url": "https://www.opportunity.org.nz/tax-reset",
     "document": "documents/web-tax-reset.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Tax Reset (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf",
+    "document": "documents/pdf-tax-reset.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Tax Reset Transition Plan (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset%20Transition%20Plan.pdf",
+    "document": "documents/pdf-tax-reset-transition-plan.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Opportunity’s Tax Reset: The Largest Tax Cut For Low-income Working Kiwis In History",
+    "url": "https://www.scoop.co.nz/stories/PO2605/S00043/opportunitys-tax-reset-the-largest-tax-cut-for-low-income-working-kiwis-in-history.htm",
+    "document": "documents/release-2026-05-tax-reset.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -644,9 +812,27 @@
   "sources": [
    {
     "title": "'Tax Reset - Opportunity Party', undated (accessed 06 August 2026)",
-    "url": "https://web.archive.org/save/https://www.opportunity.org.nz/tax-reset",
+    "url": "https://www.opportunity.org.nz/tax-reset",
     "document": "documents/web-tax-reset.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Tax Reset (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf",
+    "document": "documents/pdf-tax-reset.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Tax Reset Transition Plan (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset%20Transition%20Plan.pdf",
+    "document": "documents/pdf-tax-reset-transition-plan.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Opportunity’s Tax Reset: The Largest Tax Cut For Low-income Working Kiwis In History",
+    "url": "https://www.scoop.co.nz/stories/PO2605/S00043/opportunitys-tax-reset-the-largest-tax-cut-for-low-income-working-kiwis-in-history.htm",
+    "document": "documents/release-2026-05-tax-reset.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -725,6 +911,12 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Innovation, Fairness And Small Business: Opportunity’s Breakthrough Economy Policy",
+    "url": "https://www.scoop.co.nz/stories/PO2607/S00015/innovation-fairness-and-small-business-opportunitys-breakthrough-economy-policy.htm",
+    "document": "documents/release-2026-07-breakthrough-economy.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -765,6 +957,12 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Opportunity Party Candidate David Bainbridge-Zafar Champions Healthy Oceans Policy For Dunedin",
+    "url": "https://www.scoop.co.nz/stories/PO2604/S00041/opportunity-party-candidate-david-bainbridge-zafar-champions-healthy-oceans-policy-for-dunedin.htm",
+    "document": "documents/release-2026-04-healthy-oceans-dunedin.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -804,6 +1002,12 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Opportunity Party Candidate David Bainbridge-Zafar Champions Healthy Oceans Policy For Dunedin",
+    "url": "https://www.scoop.co.nz/stories/PO2604/S00041/opportunity-party-candidate-david-bainbridge-zafar-champions-healthy-oceans-policy-for-dunedin.htm",
+    "document": "documents/release-2026-04-healthy-oceans-dunedin.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -843,6 +1047,12 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Opportunity Party Candidate David Bainbridge-Zafar Champions Healthy Oceans Policy For Dunedin",
+    "url": "https://www.scoop.co.nz/stories/PO2604/S00041/opportunity-party-candidate-david-bainbridge-zafar-champions-healthy-oceans-policy-for-dunedin.htm",
+    "document": "documents/release-2026-04-healthy-oceans-dunedin.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -870,6 +1080,18 @@
     "url": "https://www.opportunity.org.nz/honouring_te_tiriti",
     "document": "documents/web-honouring-te-tiriti.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Future-Fit Education Policy Paper",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf",
+    "document": "documents/pdf-future-fit-education.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Honouring Te Tiriti Policy Paper",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Honouring%20Te%20Tiriti%20Policy%20Paper.pdf",
+    "document": "documents/pdf-honouring-te-tiriti.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -916,6 +1138,12 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Honouring Te Tiriti Policy Paper",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Honouring%20Te%20Tiriti%20Policy%20Paper.pdf",
+    "document": "documents/pdf-honouring-te-tiriti.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -972,6 +1200,12 @@
     "url": "https://www.opportunity.org.nz/breakthrough-economy",
     "document": "documents/web-breakthrough-economy.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Innovation, Fairness And Small Business: Opportunity’s Breakthrough Economy Policy",
+    "url": "https://www.scoop.co.nz/stories/PO2607/S00015/innovation-fairness-and-small-business-opportunitys-breakthrough-economy-policy.htm",
+    "document": "documents/release-2026-07-breakthrough-economy.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1008,6 +1242,12 @@
     "url": "https://www.opportunity.org.nz/build_today_breakthrough_tomorrow",
     "document": "documents/web-build-today-breakthrough-tomorrow.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Affordable Housing (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Affordable%20Housing.pdf",
+    "document": "documents/pdf-affordable-housing.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1036,6 +1276,12 @@
     "url": "https://www.opportunity.org.nz/smart_on_crime",
     "document": "documents/web-smart-on-crime.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Smart on Crime (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Smart%20on%20Crime.pdf",
+    "document": "documents/pdf-smart-on-crime.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1064,6 +1310,12 @@
     "url": "https://www.opportunity.org.nz/smart_on_crime",
     "document": "documents/web-smart-on-crime.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Smart on Crime (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Smart%20on%20Crime.pdf",
+    "document": "documents/pdf-smart-on-crime.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1102,6 +1354,12 @@
     "url": "https://www.opportunity.org.nz/honouring_te_tiriti",
     "document": "documents/web-honouring-te-tiriti.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Future-Fit Education Policy Paper",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf",
+    "document": "documents/pdf-future-fit-education.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1138,6 +1396,12 @@
     "url": "https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education",
     "document": "documents/web-10-year-plans-to-strengthen-health-and-education.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Future-Fit Education Policy Paper",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf",
+    "document": "documents/pdf-future-fit-education.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1162,6 +1426,12 @@
     "url": "https://www.opportunity.org.nz/future_fit_education",
     "document": "documents/web-future-fit-education.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Future-Fit Education Policy Paper",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf",
+    "document": "documents/pdf-future-fit-education.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1217,6 +1487,12 @@
     "url": "https://www.opportunity.org.nz/future_fit_education",
     "document": "documents/web-future-fit-education.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Future-Fit Education Policy Paper",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf",
+    "document": "documents/pdf-future-fit-education.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1284,6 +1560,12 @@
     "url": "https://www.opportunity.org.nz/affordable_housing",
     "document": "documents/web-affordable-housing.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Affordable Housing (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Affordable%20Housing.pdf",
+    "document": "documents/pdf-affordable-housing.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1312,6 +1594,12 @@
     "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf",
     "document": "documents/pdf-intergenerational-infrastructure.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Opportunity Launches Intergenerational Infrastructure Policy",
+    "url": "https://www.scoop.co.nz/stories/PO2608/S00027/opportunity-launches-intergenerational-infrastructure-policy.htm",
+    "document": "documents/release-2026-08-intergenerational-infrastructure.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1342,6 +1630,12 @@
     "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf",
     "document": "documents/pdf-intergenerational-infrastructure.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Opportunity Launches Intergenerational Infrastructure Policy",
+    "url": "https://www.scoop.co.nz/stories/PO2608/S00027/opportunity-launches-intergenerational-infrastructure-policy.htm",
+    "document": "documents/release-2026-08-intergenerational-infrastructure.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1368,15 +1662,22 @@
   "sources": [
    {
     "title": "'Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)",
-    "url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
     "cited_by": "policy.nz",
-    "note": "cited by policy.nz; not a TOP document (or not archived here)"
+    "document": "documents/pdf-abundant-energy-paper.md",
+    "note": "this URL returned HTTP 404 on 2026-10-23; the linked document is the party's current PDF of the same policy"
    },
    {
     "title": "'Accelerating EV Uptake', undated (accessed 19 August 2026)",
     "url": "https://www.opportunity.org.nz/accelerating_ev_uptake",
     "document": "documents/web-accelerating-ev-uptake.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Climate Action (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf",
+    "document": "documents/pdf-climate-action.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1516,6 +1817,12 @@
     "url": "https://www.opportunity.org.nz/industry_energy_resilience_fund",
     "document": "documents/web-industry-energy-resilience-fund.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Climate Action (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf",
+    "document": "documents/pdf-climate-action.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1540,9 +1847,22 @@
   "sources": [
    {
     "title": "'Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)",
-    "url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
     "cited_by": "policy.nz",
-    "note": "cited by policy.nz; not a TOP document (or not archived here)"
+    "document": "documents/pdf-abundant-energy-paper.md",
+    "note": "this URL returned HTTP 404 on 2026-10-23; the linked document is the party's current PDF of the same policy"
+   },
+   {
+    "title": "Abundant Energy (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Abundant%20Energy.pdf",
+    "document": "documents/pdf-abundant-energy.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Abundant Energy - Opportunity Party Policy (policy paper)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Abundant%20Energy%20-%20Opportunity%20Party%20Policy.pdf",
+    "document": "documents/pdf-abundant-energy-paper.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1577,6 +1897,12 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Climate Action (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf",
+    "document": "documents/pdf-climate-action.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1602,19 +1928,20 @@
     "title": "'Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)",
     "url": "https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf",
     "cited_by": "policy.nz",
-    "note": "cited by policy.nz; not a TOP document (or not archived here)"
+    "document": "documents/pdf-intergenerational-infrastructure.md",
+    "note": "this URL returned HTTP 404 on 2026-10-23; the linked document is the party's current PDF of the same policy"
    },
    {
     "title": "'Climate Action: Emissions Reduction', undated (accessed 13 August 2026)",
     "url": "https://www.greens.org.nz/manifesto_2020_climate_action_emissions_reduction",
     "cited_by": "policy.nz",
-    "note": "cited by policy.nz; not a TOP document (or not archived here)"
+    "note": "cited by policy.nz; not a TOP document (policy.nz cites Green Party pages here)"
    },
    {
     "title": "'Climate Action: Resilience and Adaptation', undated (accessed 13 August 2026)",
     "url": "https://www.greens.org.nz/manifesto_2026_climate_action_resilience_adaptation",
     "cited_by": "policy.nz",
-    "note": "cited by policy.nz; not a TOP document (or not archived here)"
+    "note": "cited by policy.nz; not a TOP document (policy.nz cites Green Party pages here)"
    },
    {
     "title": "'Healthy Land', undated (accessed 11 August 2026)",
@@ -1627,6 +1954,12 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "Climate Action (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Climate%20Action.pdf",
+    "document": "documents/pdf-climate-action.md",
+    "cited_by": "archive"
    }
   ]
  },
@@ -1789,6 +2122,525 @@
     "url": "https://www.opportunity.org.nz/charitable_giving_tax_credit_cap",
     "document": "documents/web-charitable-giving-tax-credit-cap.md",
     "cited_by": "policy.nz"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A01",
+  "statement": "Five 'bottom lines' for supporting any government: Commerce Commission break-up powers, lobbying and donation reform, a 10-year health plan, ending bottom trawling, and Paris/Climate Commission commitments",
+  "topics": [
+   "law-justice-and-government",
+   "parliament-and-democracy"
+  ],
+  "topic_group": "law-justice-and-government",
+  "key_policy": true,
+  "summary": {
+   "why": "Opportunity says no party can achieve its whole platform under MMP, so it names five non-negotiable policies any governing partner must accept.",
+   "how": "(1) empower the Commerce Commission to investigate, intervene and force structural separation; (2) a mandatory lobbyist register and code of conduct and a per-donor cap with donations from registered voters only; (3) a 10-year cross-party health plan; (4) an immediate end to bottom trawling in the most damaged inshore areas such as the Hauraki Gulf, then a staged phase-out; (5) recommit to Paris obligations and protect the Climate Change Commission. It adds that honouring Te Tiriti is an approach it will bring to negotiations."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Bottom Lines - Opportunity Party",
+    "url": "https://www.opportunity.org.nz/bottom_lines",
+    "document": "documents/web-bottom-lines.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A02",
+  "statement": "Realign income tax to three rates: 28% up to $50,000, 34% to $200,000 and 39% above",
+  "topics": [
+   "incomes-and-employment",
+   "tax-and-income-support"
+  ],
+  "topic_group": "incomes-and-employment",
+  "key_policy": false,
+  "summary": {
+   "why": "Part of the Tax Reset, which Opportunity says simplifies tax and removes secondary tax rates.",
+   "how": "New brackets alongside the Citizen's Income, Land Value Tax and KiwiSaver 2.0."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Tax Reset (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf",
+    "document": "documents/pdf-tax-reset.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A03",
+  "statement": "Replace Working for Families and most benefits with tax-free Child Support Incomes and fixed top-ups",
+  "topics": [
+   "incomes-and-employment",
+   "benefits"
+  ],
+  "topic_group": "incomes-and-employment",
+  "key_policy": false,
+  "summary": {
+   "why": "Opportunity says the benefit system traps people in poverty with effective marginal tax rates of up to 90%.",
+   "how": "Per-child payments starting at $18,250 for a first child in the first year and falling to $7,750 for ages 4–18, plus a $9,500 sole-parent allowance, a $6,000 disability allowance, superannuitant top-ups and regional Housing Support Income payments."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Tax Reset (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf",
+    "document": "documents/pdf-tax-reset.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A04",
+  "statement": "Phase in the Tax Reset over about a decade, starting with 18–29-year-olds and a 0.5% urban-only land tax",
+  "topics": [
+   "incomes-and-employment",
+   "tax-and-income-support",
+   "economy"
+  ],
+  "topic_group": "incomes-and-employment",
+  "key_policy": false,
+  "summary": {
+   "why": "Opportunity says changes of this scale must be introduced carefully to avoid inflation and disruption.",
+   "how": "Two years of planning first; Citizen's Income rolled out in age tranches of about 25% of the population; Land Value Tax starting at 0.5% on urban land and rising to 1.75%/0.5% rural by year 6; KiwiSaver 2.0 contributions rising 1% a year over six years."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Tax Reset Transition Plan (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset%20Transition%20Plan.pdf",
+    "document": "documents/pdf-tax-reset-transition-plan.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A05",
+  "statement": "Allow only registered voters to donate to parties, cut the disclosure threshold to $1,000 and cap spending across the whole electoral cycle",
+  "topics": [
+   "law-justice-and-government",
+   "parliament-and-democracy"
+  ],
+  "topic_group": "law-justice-and-government",
+  "key_policy": false,
+  "summary": {
+   "why": "Opportunity says it wants to 'sever the link' between donations and political influence.",
+   "how": "Ban donations from companies, trusts and other entities and from non-voters; require audited annual party statements; apply advertising spending limits over the full three-year cycle with quarterly Electoral Commission summaries."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Clean Up Politics (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf",
+    "document": "documents/pdf-clean-up-politics.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A06",
+  "statement": "Impose a one-year cooling-off period before ministers, senior staff and officials can become lobbyists",
+  "topics": [
+   "law-justice-and-government",
+   "parliament-and-democracy",
+   "public-sector"
+  ],
+  "topic_group": "law-justice-and-government",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Part of its lobbying regulation, alongside a statutory code of conduct, a ban on contingency fees and foreign-lobbying disclosure."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Clean Up Politics (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf",
+    "document": "documents/pdf-clean-up-politics.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A07",
+  "statement": "Strengthen the Official Information Act, MPs' pecuniary-interest rules and whistleblower protections, and create an independent policy costing unit",
+  "topics": [
+   "law-justice-and-government",
+   "parliament-and-democracy",
+   "public-sector"
+  ],
+  "topic_group": "law-justice-and-government",
+  "key_policy": false,
+  "summary": {
+   "why": "Opportunity says good rules mean little without institutions that enforce them.",
+   "how": "Narrower OIA withholding grounds, lower pecuniary-interest thresholds, broader whistleblower coverage, a better-funded Electoral Commission and a costing unit available to all registered parties."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Clean Up Politics (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Clean%20Up%20Politics.pdf",
+    "document": "documents/pdf-clean-up-politics.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A08",
+  "statement": "Require Opportunity MPs to rent from unrelated parties rather than use allowances on property they own, and seek a full review of MP entitlements",
+  "topics": [
+   "law-justice-and-government",
+   "parliament-and-democracy"
+  ],
+  "topic_group": "law-justice-and-government",
+  "key_policy": false,
+  "summary": {
+   "why": "Opportunity says public money should not build MPs' private property wealth or flow back to parties or donors.",
+   "how": "Its MPs would only claim actual, reasonable accommodation costs paid to an unrelated third party and would not lease property linked to the MP, party or major donors; it would seek a review of allowances including those for former MPs and spouses."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Opportunity MPs accommodation allowance policy - Opportunity Party",
+    "url": "https://www.opportunity.org.nz/opportunity_accommodation_allowance_policy",
+    "document": "documents/web-opportunity-accommodation-allowance-policy.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Opportunity MPs Will Not Use Taxpayer-Funded Allowances To Build Private Property Wealth",
+    "url": "https://www.scoop.co.nz/stories/PO2606/S00107/opportunity-mps-will-not-use-taxpayer-funded-allowances-to-build-private-property-wealth.htm",
+    "document": "documents/release-2026-06-mp-allowances.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A09",
+  "statement": "Require AI data centres to fund their own clean energy, pay full grid-connection costs and report energy and water use",
+  "topics": [
+   "economy",
+   "internet-and-digital-technologies",
+   "energy"
+  ],
+  "topic_group": "economy",
+  "key_policy": false,
+  "summary": {
+   "why": "Part of Digital Future, which Opportunity says sets guardrails to protect people, data and the environment.",
+   "how": null
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Digital Future - Opportunity Party",
+    "url": "https://www.opportunity.org.nz/digital-future",
+    "document": "documents/web-digital-future.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Digital Future (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Digital%20Future.pdf",
+    "document": "documents/pdf-digital-future.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A10",
+  "statement": "Require New Zealanders' critical data to be hosted onshore and favour local and open-source suppliers in government tech purchasing",
+  "topics": [
+   "economy",
+   "internet-and-digital-technologies",
+   "public-sector"
+  ],
+  "topic_group": "economy",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Also: a public register of government technology projects, recognition of Māori Data Sovereignty Principles in public-sector AI procurement, more cyber-security funding and a review of rights in an AI world (algorithmic bias, copyright)."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Digital Future - Opportunity Party",
+    "url": "https://www.opportunity.org.nz/digital-future",
+    "document": "documents/web-digital-future.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Digital Future (policy document)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Digital%20Future.pdf",
+    "document": "documents/pdf-digital-future.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A11",
+  "statement": "Introduce a 25% tax credit for small businesses adopting new technology and a cross-party national AI framework",
+  "topics": [
+   "economy",
+   "business-support",
+   "internet-and-digital-technologies"
+  ],
+  "topic_group": "economy",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "A tax credit to help SMEs adopt cutting-edge tools and a national framework on data rights, IP and investment 'shaped by the New Zealand public directly'."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Digital Future - Opportunity Party",
+    "url": "https://www.opportunity.org.nz/digital-future",
+    "document": "documents/web-digital-future.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Breakthrough Economy (policy overview)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf",
+    "document": "documents/pdf-breakthrough-economy.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A12",
+  "statement": "Restore polytechnic baseline funding and give polytechs a mandate to lead regional productivity",
+  "topics": [
+   "education",
+   "trades-and-vocational-education",
+   "economy"
+  ],
+  "topic_group": "education",
+  "key_policy": false,
+  "summary": {
+   "why": "Opportunity says polytechnics can anchor regional, job-focused training and help local businesses.",
+   "how": "Restore funding cut by the current government and bulk-fund polytechnics and public research organisations for technology transfer."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Breakthrough Economy (policy overview)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf",
+    "document": "documents/pdf-breakthrough-economy.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A13",
+  "statement": "Double government funding for start-up incubators, accelerators, deep-tech programmes and Young Enterprise",
+  "topics": [
+   "economy",
+   "business-support"
+  ],
+  "topic_group": "economy",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "As stated in the Breakthrough Economy policy."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Breakthrough Economy (policy overview)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf",
+    "document": "documents/pdf-breakthrough-economy.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A14",
+  "statement": "Agree a population policy for stable long-term immigration",
+  "topics": [
+   "migration"
+  ],
+  "topic_group": "migration",
+  "key_policy": false,
+  "summary": {
+   "why": "Opportunity says immigration brings skills and capital but has not been matched by infrastructure and planning.",
+   "how": "A population policy linking immigration to investment in infrastructure, planning and social programmes."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Breakthrough Economy (policy overview)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf",
+    "document": "documents/pdf-breakthrough-economy.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A15",
+  "statement": "Create an 'Impact Company' legal structure and expand support for small businesses",
+  "topics": [
+   "economy",
+   "business-support"
+  ],
+  "topic_group": "economy",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Amend the Companies Act for a for-profit entity with social purpose; fund FinCap and financial-capability services; review ACC levies toward risk-weighting; reverse the ban on merchant surcharges; speed up R&D tax credit processing; and create a Consumer Advocacy Fund."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Breakthrough Economy (policy overview)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf",
+    "document": "documents/pdf-breakthrough-economy.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A16",
+  "statement": "Restore pre-2025 customary marine title settings and review recent changes to statutory Treaty clauses",
+  "topics": [
+   "te-ao-maori",
+   "te-tiriti-o-waitangi-and-governance"
+  ],
+  "topic_group": "te-ao-maori",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Honour existing settlements and complete outstanding ones; restore pre-2025 Marine and Coastal Area settings; review Treaty provisions statute by statute; support a national constitutional conversation using deliberative processes with Māori as Treaty partner."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Honouring Te Tiriti Policy Paper",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Honouring%20Te%20Tiriti%20Policy%20Paper.pdf",
+    "document": "documents/pdf-honouring-te-tiriti.md",
+    "cited_by": "archive"
+   },
+   {
+    "title": "Honouring Te Tiriti",
+    "url": "https://www.opportunity.org.nz/honouring_te_tiriti",
+    "document": "documents/web-honouring-te-tiriti.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A17",
+  "statement": "Adopt a presumption in favour of devolving services to Māori organisations where it improves outcomes, and improve Māori access to capital",
+  "topics": [
+   "te-ao-maori",
+   "public-sector"
+  ],
+  "topic_group": "te-ao-maori",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Match Māori decision-making authority to the issue, give devolved bodies operational autonomy and longer-term funding, evaluate and expand what works, and support financing models for Māori assets."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Honouring Te Tiriti Policy Paper",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Honouring%20Te%20Tiriti%20Policy%20Paper.pdf",
+    "document": "documents/pdf-honouring-te-tiriti.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A18",
+  "statement": "Restore an independent Teaching Council and raise entry standards for teacher training",
+  "topics": [
+   "education",
+   "schools"
+  ],
+  "topic_group": "education",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Higher initial teacher-education entry requirements, funded professional development and induction, a restored independent Teaching Council with elected members, and an empowered Curriculum and Assessment Council."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Future-Fit Education Policy Paper",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf",
+    "document": "documents/pdf-future-fit-education.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A19",
+  "statement": "Set minimum child-to-teacher ratios in early childhood education (1:3 under twos) and move to quality-based contracting",
+  "topics": [
+   "education",
+   "early-childhood-education"
+  ],
+  "topic_group": "education",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Ratios of 1:3 for under-twos, 1:5 for 2–3 year-olds and 1:8 for older children, maximum group sizes, 80% qualified staff in teacher-led services, and more core funding for community-owned services."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Future-Fit Education Policy Paper",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf",
+    "document": "documents/pdf-future-fit-education.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A20",
+  "statement": "Reinstate the Smokefree 2025 legislation",
+  "topics": [
+   "health",
+   "public-health"
+  ],
+  "topic_group": "health",
+  "key_policy": false,
+  "summary": {
+   "why": null,
+   "how": "Listed on the Healthy People policy page."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Healthy People",
+    "url": "https://www.opportunity.org.nz/healthy_people",
+    "document": "documents/web-healthy-people.md",
+    "cited_by": "archive"
+   }
+  ]
+ },
+ {
+  "id": "OPP-A21",
+  "statement": "Reverse the Government's plan for an LNG import terminal in Taranaki",
+  "topics": [
+   "transport-and-infrastructure",
+   "energy"
+  ],
+  "topic_group": "transport-and-infrastructure",
+  "key_policy": false,
+  "summary": {
+   "why": "Opportunity says tying the grid to volatile imported gas would not serve communities or businesses.",
+   "how": "Calls on the Government to reverse the decision and points to its Abundant Energy plan."
+  },
+  "summary_source": "archive",
+  "sources": [
+   {
+    "title": "Call for Government reversal on LNG terminal",
+    "url": "https://www.opportunity.org.nz/call_for_government_reversal_on_lng_terminal",
+    "document": "documents/web-call-for-government-reversal-on-lng-terminal.md",
+    "cited_by": "archive"
    }
   ]
  }

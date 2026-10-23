@@ -189,6 +189,8 @@ leverage. Shaw survived two leadership challenges, in 2021 and 2022
 
 ## Sources
 
+> **Link note (checked 23 Oct 2026):** some older links no longer open directly. These are NZ Herald `article.cfm` URLs from before 2019, old parliament.nz Hansard and bill pages, old TVNZ pages, and a few others. They are cited as Wikipedia cites them, and the original articles can usually be found through the Internet Archive (web.archive.org). greens.org.nz and maoriparty.org.nz block automated access, so they could not be checked.
+
 All URLs are in [`data/promises/green.json`](../../data/promises/green.json) and the [profile](./README.md#sources). Additional sources:
 - Shaw's environmental Bill of Rights bill defeated: https://www.thepost.co.nz/politics/350241840/james-shaws-political-retirement-set-motion
 - Iraq withdrawal claim: https://www.nzherald.co.nz/nz/winston-peters-a-bit-hard-to-argue-decision-to-bring-kiwi-troops-home-was-a-green-win/WHWKCWTU2CI5CJIN3QWPCIEPZY/ · Hansard 18 Sep 2018: https://www.parliament.nz/en/pb/hansard-debates/rhr/document/HansS_20180918_051450000/4-question-no-4-defence

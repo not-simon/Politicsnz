@@ -9,6 +9,8 @@ import policies_minor_lib as L
 from policies_minor_catalog import CATALOG, META, OPP_RELATED
 
 ROOT = L.ROOT
+OPP_GONE = {"https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf": "pdf-abundant-energy-paper",
+            "https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf": "pdf-intergenerational-infrastructure"}
 GROUPS = json.load(open(os.path.join(ROOT, "raw", "policy.nz", "party-vote-election.json")))["topicsList"]
 GROUP_NAMES = {
     "community-and-inclusion": "Community & inclusion", "defence-and-foreign-affairs": "Defence & foreign affairs",
@@ -178,7 +180,7 @@ def opportunity():
         tg = next((t[len("key-policies-"):] for t in topics if t.startswith("key-policies-")), None) or next((t for t in topics if t in GROUPS), None)
         sources, seen = [], set()
         for c in pol.get("citations", []):
-            orig = re.sub(r"^https?://web\.archive\.org/web/\d+/", "", c["url"])
+            orig = re.sub(r"^https?://web\.archive\.org/(web/\d+|save)/", "", c["url"])
             orig = re.sub(r"^/web/\d+/", "", orig).rstrip("/")
             slug = url2slug.get(orig) or url2slug.get(orig.replace("%20", " "))
             if not slug:
@@ -189,9 +191,12 @@ def opportunity():
                 if slug not in seen:
                     seen.add(slug)
                     sources.append({"title": c["title"], "url": orig, "document": f"documents/{slug}.md", "cited_by": "policy.nz"})
+            elif orig in OPP_GONE:
+                sources.append({"title": c["title"], "url": orig, "cited_by": "policy.nz", "document": f"documents/{OPP_GONE[orig]}.md",
+                                "note": "this URL returned HTTP 404 on 2026-10-23; the linked document is the party's current PDF of the same policy"})
             else:
                 sources.append({"title": c["title"], "url": orig, "cited_by": "policy.nz",
-                                "note": "cited by policy.nz; not a TOP document (or not archived here)"})
+                                "note": "cited by policy.nz; not a TOP document (policy.nz cites Green Party pages here)"})
         for slug in OPP_RELATED.get(pol["reference"], []):
             if slug not in seen:
                 seen.add(slug)

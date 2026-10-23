@@ -139,9 +139,108 @@ CATALOG["te-tai-tokerau-party"] = [
 ]
 
 # ------------------------------------------------------------------------------------------------ Opportunity (TOP)
-OPP_RELATED = {}
-META["opportunity"] = {"name": "Opportunity (TOP)", "website": "https://www.opportunity.org.nz/", "intro": "TBD", "gaps": "TBD"}
-CATALOG["opportunity"] = []
+_tax = ["pdf-tax-reset", "pdf-tax-reset-transition-plan", "release-2026-05-tax-reset"]
+_en = ["pdf-abundant-energy", "pdf-abundant-energy-paper"]
+_oc = ["pdf-healthy-oceans", "release-2026-04-healthy-oceans-dunedin"]
+_pol = ["pdf-clean-up-politics", "web-bottom-lines"]
+_inf = ["pdf-intergenerational-infrastructure", "release-2026-08-intergenerational-infrastructure"]
+_cl = ["pdf-climate-action"]
+_ed = ["pdf-future-fit-education"]
+_be = ["pdf-breakthrough-economy", "release-2026-07-breakthrough-economy"]
+OPP_RELATED = {
+    "POL54777": _tax, "POL54816": _tax, "POL54818": _tax,
+    "POL54770": _en, "POL54806": _en, "POL54807": _en, "POL55049": _en,
+    "POL54776": _oc + ["web-bottom-lines"], "POL54825": _oc, "POL54826": _oc, "POL54827": _oc,
+    "POL54778": _pol, "POL54808": _pol, "POL54809": _pol, "POL54784": ["pdf-citizens-voice"],
+    "POL54779": _be + ["pdf-digital-future"], "POL54824": _be + ["web-bottom-lines"], "POL54852": _be,
+    "POL54785": _inf, "POL54874": _inf, "POL54875": _inf, "POL54811": _inf,
+    "POL54786": ["release-2026-04-free-public-transport"],
+    "POL54853": ["pdf-affordable-housing"], "POL54873": ["pdf-affordable-housing"],
+    "POL54854": ["pdf-smart-on-crime"], "POL54855": ["pdf-smart-on-crime"],
+    "POL54810": _cl, "POL54782": _cl + ["web-bottom-lines"], "POL55169": _cl + ["web-bottom-lines"], "POL55175": _cl,
+    "POL54791": _cl, "POL54876": _cl, "POL54900": _cl + ["web-industry-energy-resilience-fund"],
+    "POL54823": ["web-healthy-people", "web-bottom-lines"], "POL54871": ["web-healthy-people", "web-bottom-lines"],
+    "POL54885": ["web-healthy-people"],
+    "POL54860": _ed, "POL54861": _ed, "POL54862": _ed, "POL54869": _ed,
+    "POL54828": _ed + ["pdf-honouring-te-tiriti"], "POL54829": ["pdf-honouring-te-tiriti"],
+}
+META["opportunity"] = {
+    "name": "Opportunity (The Opportunity Party, TOP)", "website": "https://www.opportunity.org.nz/",
+    "registered": "6 March 2017 (Electoral Commission register)",
+    "intro": "Opportunity (leader Qiulae Wong) publishes its platform as 15 policy pages (priority policies: Abundant Energy, "
+             "Breakthrough Economy, Clean Up Politics, Healthy Oceans, Tax Reset; plus Citizens' Voice, Future-fit Education, "
+             "Healthy People, Honouring Te Tiriti, Smart on Crime, Affordable Housing, Digital Future, Inter-Generational "
+             "Infrastructure, Climate Action, Healthy Land & Water), most with a downloadable PDF policy paper, plus statements "
+             "and five election \"bottom lines\". The list below starts from policy.nz's 56 statements for the party (with "
+             "policy.nz's own Why/How text) and adds policies from TOP's documents that policy.nz does not list (IDs OPP-A..).\n\n"
+             "**How the text was obtained.** www.opportunity.org.nz is behind a Cloudflare bot challenge (HTTP 403 to curl and "
+             "headless Chromium) and web.archive.org is unreachable from this environment, so web pages were recovered from "
+             "**Common Crawl** WARC captures (crawls CC-MAIN-2026-30/34/39/43; capture date in each document's front matter) via "
+             "[`tools/policies_minor_cc.py`](../../../tools/policies_minor_cc.py). The 15 policy PDFs were downloaded directly from "
+             "cdn.opportunity.org.nz (not blocked). Press releases are also taken from their scoop.co.nz mirrors.",
+    "gaps": "Three pages cited by policy.nz have no Common Crawl capture and could not be retrieved: /healthy_land "
+            "(Healthy Land & Water policy — water quality, gene technology context), /disability_statement and "
+            "/arts_and_culture_statement; their documents say so explicitly, and the policy.nz summaries are kept. Common "
+            "Crawl captures date from July–October 2026 and may predate later edits. Note that the Citizens' Voice PDF is dated "
+            "June 2025. The NZ Herald reported (Oct 2026) that tax reform is not among TOP's five bottom lines; the Tax Reset "
+            "remains on its policy page. Web search capacity ran out during research, so further Scoop mirrors were not sought.",
+}
+CATALOG["opportunity"] = [
+    P("OPP-A01", "Five 'bottom lines' for supporting any government: Commerce Commission break-up powers, lobbying and donation reform, a 10-year health plan, ending bottom trawling, and Paris/Climate Commission commitments",
+      ["law-justice-and-government", "parliament-and-democracy"],
+      "Opportunity says no party can achieve its whole platform under MMP, so it names five non-negotiable policies any governing partner must accept.",
+      "(1) empower the Commerce Commission to investigate, intervene and force structural separation; (2) a mandatory lobbyist register and code of conduct and a per-donor cap with donations from registered voters only; (3) a 10-year cross-party health plan; (4) an immediate end to bottom trawling in the most damaged inshore areas such as the Hauraki Gulf, then a staged phase-out; (5) recommit to Paris obligations and protect the Climate Change Commission. It adds that honouring Te Tiriti is an approach it will bring to negotiations.",
+      ["web-bottom-lines"], key=True),
+    P("OPP-A02", "Realign income tax to three rates: 28% up to $50,000, 34% to $200,000 and 39% above", ["incomes-and-employment", "tax-and-income-support"],
+      "Part of the Tax Reset, which Opportunity says simplifies tax and removes secondary tax rates.", "New brackets alongside the Citizen's Income, Land Value Tax and KiwiSaver 2.0.", ["pdf-tax-reset"]),
+    P("OPP-A03", "Replace Working for Families and most benefits with tax-free Child Support Incomes and fixed top-ups", ["incomes-and-employment", "benefits"],
+      "Opportunity says the benefit system traps people in poverty with effective marginal tax rates of up to 90%.",
+      "Per-child payments starting at $18,250 for a first child in the first year and falling to $7,750 for ages 4–18, plus a $9,500 sole-parent allowance, a $6,000 disability allowance, superannuitant top-ups and regional Housing Support Income payments.",
+      ["pdf-tax-reset"]),
+    P("OPP-A04", "Phase in the Tax Reset over about a decade, starting with 18–29-year-olds and a 0.5% urban-only land tax", ["incomes-and-employment", "tax-and-income-support", "economy"],
+      "Opportunity says changes of this scale must be introduced carefully to avoid inflation and disruption.",
+      "Two years of planning first; Citizen's Income rolled out in age tranches of about 25% of the population; Land Value Tax starting at 0.5% on urban land and rising to 1.75%/0.5% rural by year 6; KiwiSaver 2.0 contributions rising 1% a year over six years.",
+      ["pdf-tax-reset-transition-plan"]),
+    P("OPP-A05", "Allow only registered voters to donate to parties, cut the disclosure threshold to $1,000 and cap spending across the whole electoral cycle", ["law-justice-and-government", "parliament-and-democracy"],
+      "Opportunity says it wants to 'sever the link' between donations and political influence.",
+      "Ban donations from companies, trusts and other entities and from non-voters; require audited annual party statements; apply advertising spending limits over the full three-year cycle with quarterly Electoral Commission summaries.",
+      ["pdf-clean-up-politics"]),
+    P("OPP-A06", "Impose a one-year cooling-off period before ministers, senior staff and officials can become lobbyists", ["law-justice-and-government", "parliament-and-democracy", "public-sector"],
+      None, "Part of its lobbying regulation, alongside a statutory code of conduct, a ban on contingency fees and foreign-lobbying disclosure.", ["pdf-clean-up-politics"]),
+    P("OPP-A07", "Strengthen the Official Information Act, MPs' pecuniary-interest rules and whistleblower protections, and create an independent policy costing unit", ["law-justice-and-government", "parliament-and-democracy", "public-sector"],
+      "Opportunity says good rules mean little without institutions that enforce them.",
+      "Narrower OIA withholding grounds, lower pecuniary-interest thresholds, broader whistleblower coverage, a better-funded Electoral Commission and a costing unit available to all registered parties.",
+      ["pdf-clean-up-politics"]),
+    P("OPP-A08", "Require Opportunity MPs to rent from unrelated parties rather than use allowances on property they own, and seek a full review of MP entitlements", ["law-justice-and-government", "parliament-and-democracy"],
+      "Opportunity says public money should not build MPs' private property wealth or flow back to parties or donors.",
+      "Its MPs would only claim actual, reasonable accommodation costs paid to an unrelated third party and would not lease property linked to the MP, party or major donors; it would seek a review of allowances including those for former MPs and spouses.",
+      ["web-opportunity-accommodation-allowance-policy", "release-2026-06-mp-allowances"]),
+    P("OPP-A09", "Require AI data centres to fund their own clean energy, pay full grid-connection costs and report energy and water use", ["economy", "internet-and-digital-technologies", "energy"],
+      "Part of Digital Future, which Opportunity says sets guardrails to protect people, data and the environment.", None, ["web-digital-future", "pdf-digital-future"]),
+    P("OPP-A10", "Require New Zealanders' critical data to be hosted onshore and favour local and open-source suppliers in government tech purchasing", ["economy", "internet-and-digital-technologies", "public-sector"],
+      None, "Also: a public register of government technology projects, recognition of Māori Data Sovereignty Principles in public-sector AI procurement, more cyber-security funding and a review of rights in an AI world (algorithmic bias, copyright).",
+      ["web-digital-future", "pdf-digital-future"]),
+    P("OPP-A11", "Introduce a 25% tax credit for small businesses adopting new technology and a cross-party national AI framework", ["economy", "business-support", "internet-and-digital-technologies"],
+      None, "A tax credit to help SMEs adopt cutting-edge tools and a national framework on data rights, IP and investment 'shaped by the New Zealand public directly'.", ["web-digital-future", "pdf-breakthrough-economy"]),
+    P("OPP-A12", "Restore polytechnic baseline funding and give polytechs a mandate to lead regional productivity", ["education", "trades-and-vocational-education", "economy"],
+      "Opportunity says polytechnics can anchor regional, job-focused training and help local businesses.", "Restore funding cut by the current government and bulk-fund polytechnics and public research organisations for technology transfer.", ["pdf-breakthrough-economy"]),
+    P("OPP-A13", "Double government funding for start-up incubators, accelerators, deep-tech programmes and Young Enterprise", ["economy", "business-support"], None, "As stated in the Breakthrough Economy policy.", ["pdf-breakthrough-economy"]),
+    P("OPP-A14", "Agree a population policy for stable long-term immigration", ["migration"],
+      "Opportunity says immigration brings skills and capital but has not been matched by infrastructure and planning.", "A population policy linking immigration to investment in infrastructure, planning and social programmes.", ["pdf-breakthrough-economy"]),
+    P("OPP-A15", "Create an 'Impact Company' legal structure and expand support for small businesses", ["economy", "business-support"], None,
+      "Amend the Companies Act for a for-profit entity with social purpose; fund FinCap and financial-capability services; review ACC levies toward risk-weighting; reverse the ban on merchant surcharges; speed up R&D tax credit processing; and create a Consumer Advocacy Fund.", ["pdf-breakthrough-economy"]),
+    P("OPP-A16", "Restore pre-2025 customary marine title settings and review recent changes to statutory Treaty clauses", ["te-ao-maori", "te-tiriti-o-waitangi-and-governance"],
+      None, "Honour existing settlements and complete outstanding ones; restore pre-2025 Marine and Coastal Area settings; review Treaty provisions statute by statute; support a national constitutional conversation using deliberative processes with Māori as Treaty partner.", ["pdf-honouring-te-tiriti", "web-honouring-te-tiriti"]),
+    P("OPP-A17", "Adopt a presumption in favour of devolving services to Māori organisations where it improves outcomes, and improve Māori access to capital", ["te-ao-maori", "public-sector"],
+      None, "Match Māori decision-making authority to the issue, give devolved bodies operational autonomy and longer-term funding, evaluate and expand what works, and support financing models for Māori assets.", ["pdf-honouring-te-tiriti"]),
+    P("OPP-A18", "Restore an independent Teaching Council and raise entry standards for teacher training", ["education", "schools"],
+      None, "Higher initial teacher-education entry requirements, funded professional development and induction, a restored independent Teaching Council with elected members, and an empowered Curriculum and Assessment Council.", ["pdf-future-fit-education"]),
+    P("OPP-A19", "Set minimum child-to-teacher ratios in early childhood education (1:3 under twos) and move to quality-based contracting", ["education", "early-childhood-education"],
+      None, "Ratios of 1:3 for under-twos, 1:5 for 2–3 year-olds and 1:8 for older children, maximum group sizes, 80% qualified staff in teacher-led services, and more core funding for community-owned services.", ["pdf-future-fit-education"]),
+    P("OPP-A20", "Reinstate the Smokefree 2025 legislation", ["health", "public-health"], None, "Listed on the Healthy People policy page.", ["web-healthy-people"]),
+    P("OPP-A21", "Reverse the Government's plan for an LNG import terminal in Taranaki", ["transport-and-infrastructure", "energy"],
+      "Opportunity says tying the grid to volatile imported gas would not serve communities or businesses.", "Calls on the Government to reverse the decision and points to its Abundant Energy plan.", ["web-call-for-government-reversal-on-lng-terminal"]),
+]
 
 # ------------------------------------------------------------------------------------------------ Vision NZ
 VIS = ["vision-policies"]

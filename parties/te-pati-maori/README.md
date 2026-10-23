@@ -269,6 +269,8 @@ The Greens say the constitutional package fits their own Te Tiriti policies. ACT
 
 ## Sources
 
+> **Link note (checked 23 Oct 2026):** some older links no longer open directly. These are NZ Herald `article.cfm` URLs from before 2019, old parliament.nz Hansard and bill pages, old TVNZ pages, and a few others. They are cited as Wikipedia cites them, and the original articles can usually be found through the Internet Archive (web.archive.org). greens.org.nz and maoriparty.org.nz block automated access, so they could not be checked.
+
 Retrieved October 2026. Wikipedia articles (finding aids) are saved in `raw/record/green-tpm/`.
 maoriparty.org.nz blocks automated access, so party-site citations come from secondary sources.
 

@@ -142,6 +142,8 @@ said any future deal with National would have to be "a big deal".
 
 ## Sources
 
+> **Link note (checked 23 Oct 2026):** some older links no longer open directly. These are NZ Herald `article.cfm` URLs from before 2019, old parliament.nz Hansard and bill pages, old TVNZ pages, and a few others. They are cited as Wikipedia cites them, and the original articles can usually be found through the Internet Archive (web.archive.org). greens.org.nz and maoriparty.org.nz block automated access, so they could not be checked.
+
 Full URLs are in [`data/promises/te-pati-maori.json`](../../data/promises/te-pati-maori.json) and the
 [profile sources](./README.md#sources). Additional sources:
 - 2005 line ("a vote for the Māori Party is a vote for National") and the Rātana episode: http://www.nzherald.co.nz/category/story.cfm?c_id=280&ObjectID=10365240
