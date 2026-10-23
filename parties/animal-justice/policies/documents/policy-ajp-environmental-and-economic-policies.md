@@ -28,22 +28,22 @@ Download the AJP Environmental and Economic policies pack PDF below
 
 Environment and Economy1
 
-Environment and Economy  1
-Urgently addressing Climate Change  2
-Climate leadership  3
-Reducing Climate-Harming Emissions Energy  4
-Climate Change Adaptation  5
-Protecting Ecosystems and Biodiversity  6
-Comprehensive Waste Minimisation at Source  7
-Single-Use Plastic Elimination  8
-Comprehensive Zero Waste Systems  9
-Urban Biodiversity and Natural Infrastructure  12
-Protecting Insects from Human-Caused Harms  14
-Strengthening Environmental Enforcement in Aotearoa  16
-Economic Sufficiency Within Planetary Boundaries  17
-Economy Within Ecological Limits  18
-Sharing Economy and Community Abundance  19
-Circular Economy and Community Resilience  22
+Environment and Economy 1
+Urgently addressing Climate Change 2
+Climate leadership 3
+Reducing Climate-Harming Emissions Energy 4
+Climate Change Adaptation 5
+Protecting Ecosystems and Biodiversity 6
+Comprehensive Waste Minimisation at Source 7
+Single-Use Plastic Elimination 8
+Comprehensive Zero Waste Systems 9
+Urban Biodiversity and Natural Infrastructure 12
+Protecting Insects from Human-Caused Harms 14
+Strengthening Environmental Enforcement in Aotearoa 16
+Economic Sufficiency Within Planetary Boundaries 17
+Economy Within Ecological Limits 18
+Sharing Economy and Community Abundance 19
+Circular Economy and Community Resilience 22
 
 1
 Transition to a Plant-based economy policies can be found in a separate policy pack
@@ -566,7 +566,7 @@ food sources and safe corridors are widely available.
 of conservation efforts.
 9. Introduce educational programs in schools and communities to highlight the
 importance of insects. See policy Compassionate Education policy.
-10.Conduct national awareness-raising campaigns on the role of pollinators in
+10. Conduct national awareness-raising campaigns on the role of pollinators in
 maintaining biodiversity and food security.
 
 animaljustice.org.nz | party@animaljusticeparty.org.nz

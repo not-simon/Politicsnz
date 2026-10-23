@@ -238,7 +238,9 @@ def free_palestine():
                            "membership form, electoral-enrolment instructions and donation bank details; those non-policy "
                            "sections are omitted here (see source_url).")]
     items.append(pdf_doc(P, "constitution-june-2026", "https://elections.nz/assets/Party-rules/FPP-Constitution-June-2026.pdf",
-                         "Free Palestine Party Constitution (June 2026, as lodged with the Electoral Commission)"))
+                         "Free Palestine Party Constitution (June 2026, as lodged with the Electoral Commission)",
+                         note="elections.nz is behind an Incapsula bot check; the PDF was downloaded with headless Chromium "
+                              "(node tools/policies_minor_fetch_binary.js <register page> <pdf> <out>) and cached in raw/."))
     sp, code = L.fetch("https://www.scoop.co.nz/stories/PO2608/S00073/the-free-palestine-party-the-newest-political-party-in-aotearoa.htm", P)
     if sp:
         t, by, md = L.scoop_md(sp)

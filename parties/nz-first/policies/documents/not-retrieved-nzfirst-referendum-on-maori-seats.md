@@ -19,9 +19,9 @@ Archived copy cited by policy.nz: <https://web.archive.org/web/20260813014751/ht
 
 The full text of this page is therefore **not** reproduced here, and nothing in this file is a paraphrase of it.
 
-Policies that cite this page: `POL54757`, `POL54757`.
+Policies that cite this page: `POL54757`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [New Zealand First To Campaign For Referendum On Māori Seats (Press release, 2026-02-12)](../documents/2026-02-12-new-zealand-first-to-campaign-for-referendum-on-maori-seats.md) 
-- [NZ First Bill To Enable Binding Referendum On Māori Seats At 2026 Election (Press release, 2026-02-18)](../documents/2026-02-18-nz-first-bill-to-enable-binding-referendum-on-maori-seats-at.md) 
+- [New Zealand First To Campaign For Referendum On Māori Seats (Press release, 2026-02-12)](2026-02-12-new-zealand-first-to-campaign-for-referendum-on-maori-seats.md)
+- [NZ First Bill To Enable Binding Referendum On Māori Seats At 2026 Election (Press release, 2026-02-18)](2026-02-18-nz-first-bill-to-enable-binding-referendum-on-maori-seats-at.md)

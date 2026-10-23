@@ -95,9 +95,10 @@ We’re here because the animals don’t have a vote, and someone needs to speak
 
 If that sounds like your kind of politics, we’d love your support.
 
-Danette Wereta and Rob McNeil
-Co-Leaders, Animal Justice Party
-
+Danette Wereta and Rob McNeil\
+Co-Leaders, Animal Justice Party\
+\
+\
 Want more detail on our policies? [Read our 2026 policy summary](https://animaljustice.org.nz/policies/policy-summary/) or the [policy platform PDF](https://drive.google.com/file/d/1U0yXwLQojMLxFXFI1EwWoX7132f86Lag/view?usp=sharing).
 
 ---

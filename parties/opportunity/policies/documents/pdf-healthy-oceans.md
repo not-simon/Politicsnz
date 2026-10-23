@@ -13,11 +13,11 @@ fetch_method: curl + pdftotext -layout (poppler)
 
 ## Full text (verbatim)
 
-Date  February 2026
+Date February 2026
 
-Policy  Healthy Oceans
+Policy Healthy Oceans
 
-Document Type  Policy Overview
+Document Type Policy Overview
 
 Healthy Oceans
 New Zealand is responsible for one of the world’s largest
@@ -60,7 +60,7 @@ to ensure transparency and responsible fishing practice
 with cross-agency coordination
 - Permanently ban seabed mining in New Zealand waters
 
-Opportunity Party  Oceans  Page 1
+Opportunity Party Oceans Page 1
 
 ---
 
@@ -94,7 +94,7 @@ problem is our quota management system, which is not functional.
 At the same time, New Zealand is an outlier among our friends in allowing
 indiscriminate, destructive practices like bottom-trawling. Destruction of coral reefs
 
-Opportunity Party  Oceans  Page 2
+Opportunity Party Oceans Page 2
 
 ---
 
@@ -133,14 +133,14 @@ treatment, creating sediment plumes visible from space after heavy rainfall even
 
 The Healthy Oceans policy pillars
 
-1.  Transform fisheries management for genuine
+1. Transform fisheries management for genuine
 sustainability
-1.1  Shift from quota management to ecosystem-based fisheries management
+1.1 Shift from quota management to ecosystem-based fisheries management
 The current Quota Management System focuses on managing individual species in
 isolation, missing crucial ecosystem relationships and cumulative impacts. We will
 implement a comprehensive review of fisheries management to enable ecosystem-
 
-Opportunity Party  Oceans  Page 3
+Opportunity Party Oceans Page 3
 
 ---
 
@@ -182,7 +182,7 @@ maintain programmes for independent observers on commercial boats to provide
 detailed scientific data, monitor compliance, and ensure fishers operate according to
 best practices.
 
-Opportunity Party  Oceans  Page 4
+Opportunity Party Oceans Page 4
 
 ---
 
@@ -217,7 +217,7 @@ protected area management, threatened species recovery programmes, habitat
 restoration, and research to ensure commercially fished ecosystems remain healthy
 and productive for future generations.
 
-Opportunity Party  Oceans  Page 5
+Opportunity Party Oceans Page 5
 
 ---
 
@@ -270,7 +270,7 @@ processes bringing together:
 - Commercial and recreational fishing communities
 - Tourism operators and marine industries
 
-Opportunity Party  Oceans  Page 6
+Opportunity Party Oceans Page 6
 
 ---
 
@@ -296,7 +296,7 @@ These programmes will combine spatial protection, bycatch reduction, predator
 control, habitat restoration, food source management and where needed, direct
 population management to bring threatened species back from the brink.
 
-2.5  Support blue corridors for migratory species in the Pacific and ratify the
+2.5 Support blue corridors for migratory species in the Pacific and ratify the
 High Seas Treaty
 As a nation with deep Pacific connections, extensive fishing interests, and world-
 leading marine science capability, New Zealand should be at the forefront of global
@@ -322,7 +322,7 @@ The ecological risks of seabed mining are profound, the potential benefits are
 speculative, and once ecosystems are destroyed, restoration may be impossible. We
 will oppose all seabed mining applications in New Zealand’s territorial sea and EEZ.
 
-Opportunity Party  Oceans  Page 7
+Opportunity Party Oceans Page 7
 
 ---
 
@@ -373,7 +373,7 @@ sinks
 - Riparian planting along waterways to reduce sediment and nutrient runoff before
 it reaches the ocean
 
-Opportunity Party  Oceans  Page 8
+Opportunity Party Oceans Page 8
 
 ---
 
@@ -425,7 +425,7 @@ agencies to ensure that fisheries decisions account for ecosystem health, marine
 protection planning considers economic impacts, and coastal development respects
 marine biodiversity. It will be an independent, cross-sector convening body resourced
 
-Opportunity Party  Oceans  Page 9
+Opportunity Party Oceans Page 9
 
 ---
 
@@ -475,7 +475,7 @@ sustainability baselines from 40% to 50% of virgin biomass, phasing out destruct
 bottom trawling, and protecting critical habitats, we will restore fish abundance
 throughout New Zealand waters.
 
-Opportunity Party  Oceans  Page 10
+Opportunity Party Oceans Page 10
 
 ---
 
@@ -529,7 +529,7 @@ hapū are already leading innovative marine management that exceeds government
 standards. These reforms will support and learn from that leadership rather than
 override it.
 
-Opportunity Party  Oceans  Page 11
+Opportunity Party Oceans Page 11
 
 ---
 
@@ -579,7 +579,7 @@ ocean uses are integrated rather than treated in isolation
 
 For detail on offshore renewable energy development, see our Energy policy.
 
-Opportunity Party  Oceans  Page 12
+Opportunity Party Oceans Page 12
 
 ---
 
@@ -603,4 +603,4 @@ For example, when there are not enough reef predators like snapper and crayfish,
 conditions are right for kina barrens, where sea urchins graze down the kelp and leave
 bare rock. Other organisms leave because they have no shelter and diversity declines.
 
-Opportunity Party  Oceans  Page 13
+Opportunity Party Oceans Page 13

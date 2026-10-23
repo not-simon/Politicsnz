@@ -23,4 +23,4 @@ Policies that cite this page: `POL55070`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [Justice — Te Pāti Māori Policy Manifesto 2026 (PDF)](../documents/pdf-justice-1phb4pna7fe9ipj5sxhrrcrmgywm-mhax.md) 
+- [Justice — Te Pāti Māori Policy Manifesto 2026 (PDF)](pdf-justice-1phb4pna7fe9ipj5sxhrrcrmgywm-mhax.md)

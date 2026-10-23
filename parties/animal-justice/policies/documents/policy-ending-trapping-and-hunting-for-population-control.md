@@ -80,7 +80,7 @@ Ministry for Primary Industries. (n.d.). Traps and devices used to manage pests.
 https://www.mpi.govt.nz/animals/animal-welfare/animal-welfare-and-pest-management/traps-and-devices-used-to-ma
 nage-pests/
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -126,4 +126,4 @@ Ending trapping and hunting for population control policy | Created August 2025
 5
 E.g. see https://thesavemovement.org/help-us-ban-violent-childrens-hunting-in-aotearoa-new-zealand/
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2

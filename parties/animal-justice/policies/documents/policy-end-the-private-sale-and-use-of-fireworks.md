@@ -18,7 +18,7 @@ categories: ["Animals"]
 
 ### Web page text
 
-Fireworks cause preventable environmental damage, wildlife harm and animal distress across Aotearoa. The science is clear, and the public demand for change is overwhelming. This policy addresses the urgent need to protect our marine ecosystems, wildlife and companion animals from the harmful effects of explosive celebrations. 
+Fireworks cause preventable environmental damage, wildlife harm and animal distress across Aotearoa. The science is clear, and the public demand for change is overwhelming. This policy addresses the urgent need to protect our marine ecosystems, wildlife and companion animals from the harmful effects of explosive celebrations. \
 The private use of fireworks in residential areas and sensitive environments creates unnecessary suffering and environmental contamination that is entirely preventable. By ending private fireworks sales and use, we can eliminate the majority of fireworks-related harm while transitioning to sustainable and animal friendly celebration alternatives.
 
 *See our policy document [**PDF**](https://drive.google.com/file/d/1Z5bYYjypqhJ9DS-idX9t2lAezT_25AzV/view?usp=sharing) for the full policy.*

@@ -28,3 +28,5 @@ The policy also commits to restoring 10,000+ hectares of coastal habitat and est
 For Dunedin specifically, the policy has direct relevance to Port Chalmers, the fishing industry, and coastal communities. The commitment to marine conservation aligns with Dunedin's identity as a coastal city and university hub focused on marine research and sustainability.
 
 "Dunedin and the wider Otago Southland region has the expertise, the location, and the community commitment to lead New Zealand's blue economy. Look at the great work that Great South are doing with their Aquaculture Pathway. We know how to do it, Opportunity's Healthy Oceans policy gives us the framework to do it all around New Zealand's coastal communities and oceans," Bainbridge-Zafar concludes.
+
+\

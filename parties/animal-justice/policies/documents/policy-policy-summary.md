@@ -122,7 +122,7 @@ For many people, a companion animal is part of the family. We want statutory ber
 - Up to three days’ leave when a new companion animal joins the family
 - Emergency leave provisions that cover urgent animal care alongside human care
 
-*This is a summary. Every commitment above is backed by detailed policy, evidence and legislative proposals in our full 2026 policy platform. If you’d like the short version of why we exist, start with our* [*election manifesto*](https://animaljustice.org.nz/election-2026/election-manifesto/)*.*
+*This is a summary. Every commitment above is backed by detailed policy, evidence and legislative proposals in our full 2026 policy platform. If you’d like the short version of why we exist, start with our* [*election manifesto*](https://animaljustice.org.nz/election-2026/election-manifesto/)*.*\
 *[This summary can be downloaded as a PDF.](https://drive.google.com/file/d/17bmtPsoUKDi05ugU50QkI7xTFoEgMTXh/view?usp=sharing)*
 
 Download the AJP full policy platform PDF below
@@ -130,35 +130,35 @@ Download the AJP full policy platform PDF below
 ### PDF version: https://animaljustice.org.nz/wp-content/uploads/2026/09/AJP-2026-Policy-platform-election-2026.pdf
 
 Policy platform - Election 2026
-Policy focus Election 2026  0
-1. Ban the most intensive and harmful forms of animal farming and fishing  1
-2. Strengthening the Animal Welfare Act (Sentience & Rights)  3
-Legislative Foundations  3
-Legislation and Regulation Reform for Animal Protection  5
-3. AJP Overview for a Plant-Based Economic Transition  8
-Objective 1: Increase consumption of plant-based foods  14
-Make plant-based foods the default option for public institutions  14
-Ensure fair and transparent labelling  16
-Introduce plant-based eating initiatives and improve guidelines  18
-Improve access to nutritious food  20
-Objective 2: Use land and water sustainably and compassionately  23
-Ban the most intensive and harmful forms of animal farming and fishing  23
-Introduce tighter standards and enforcement for agricultural pollution  23
-Provide financial incentives for good environmental practices  25
-Objective 3: Support farmers, workers and communities to transition  27
-Introduce a farm transition scheme  27
-Support for rural economies to thrive without animal agriculture  29
-Reskill workers within, and supporting, the industrial animal system  31
-Objective 4: Develop long-term economic alternatives  33
-Identify our biggest land-use and bioeconomy opportunities  33
-Become a leader in alternative proteins  36
-4. Commissioner for Animals  39
-5. Compassionate Pound and Shelter Reform  42
-6. Cats, Conservation and Better Solutions  47
-7. Universal Veterinary Care - Ensuring Wellbeing for All Animals  50
-8. Getting Money Out of Politics - Restoring Democratic Equality  53
-9. Artificial Intelligence and Animal Welfare  55
-10. Companion Animal Bereavement and Parental Leave  65
+Policy focus Election 2026 0
+1. Ban the most intensive and harmful forms of animal farming and fishing 1
+2. Strengthening the Animal Welfare Act (Sentience & Rights) 3
+Legislative Foundations 3
+Legislation and Regulation Reform for Animal Protection 5
+3. AJP Overview for a Plant-Based Economic Transition 8
+Objective 1: Increase consumption of plant-based foods 14
+Make plant-based foods the default option for public institutions 14
+Ensure fair and transparent labelling 16
+Introduce plant-based eating initiatives and improve guidelines 18
+Improve access to nutritious food 20
+Objective 2: Use land and water sustainably and compassionately 23
+Ban the most intensive and harmful forms of animal farming and fishing 23
+Introduce tighter standards and enforcement for agricultural pollution 23
+Provide financial incentives for good environmental practices 25
+Objective 3: Support farmers, workers and communities to transition 27
+Introduce a farm transition scheme 27
+Support for rural economies to thrive without animal agriculture 29
+Reskill workers within, and supporting, the industrial animal system 31
+Objective 4: Develop long-term economic alternatives 33
+Identify our biggest land-use and bioeconomy opportunities 33
+Become a leader in alternative proteins 36
+4. Commissioner for Animals 39
+5. Compassionate Pound and Shelter Reform 42
+6. Cats, Conservation and Better Solutions 47
+7. Universal Veterinary Care - Ensuring Wellbeing for All Animals 50
+8. Getting Money Out of Politics - Restoring Democratic Equality 53
+9. Artificial Intelligence and Animal Welfare 55
+10. Companion Animal Bereavement and Parental Leave 65
 
 ---
 
@@ -206,7 +206,7 @@ Zealand Herald.
 https://www.nzherald.co.nz/nz/animal-cruelty-ageing-farmers-struggles-linked-to-mistreatment-of-animals/QT4PNR
 5JINC6HIWEQUFOUEWHSY/
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -219,7 +219,7 @@ the Rights of Farmed Animals and Ensuring the Welfare and Protection of Marine L
 
 Ban the most intensive and harmful forms of animal farming and fishing policy | Created April 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2
 
 ---
 
@@ -265,7 +265,7 @@ therefore require stringent legal protection. They are entitled to the same leve
 3
 Ferrere, M.B. R. (2022). The (Symbolic) Legislative Recognition of Animal Sentience, 28 Animal L. Rev. 117
 Available at: https://lawcommons.lclark.edu/alr/vol28/iss1/6
-animaljustice.org.nz | party@animaljusticeparty.org.nz  3
+animaljustice.org.nz | party@animaljusticeparty.org.nz 3
 
 ---
 
@@ -294,7 +294,7 @@ internationally appropriate precedents as guidance
 
 Legislation Foundations Policy | Created January 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  4
+animaljustice.org.nz | party@animaljusticeparty.org.nz 4
 
 ---
 
@@ -342,7 +342,7 @@ https://royalsocietypublishing.org/doi/epdf/10.1098/rsbl.2024.0382.
 Animal Protection Index (2020). Despite often being lauded as a leader in animal welfare and protection, New
 Zealand has a very low ranking in global animal welfare indices:
 https://api.worldanimalprotection.org/country/new-zealand
-animaljustice.org.nz | party@animaljusticeparty.org.nz  5
+animaljustice.org.nz | party@animaljusticeparty.org.nz 5
 
 ---
 
@@ -393,7 +393,7 @@ Reveals.
 https://www.scoop.co.nz/stories/PO2309/S00145/political-parties-neglect-animal-welfare-survey-reveals.htm
 7
 HorizonPoll incorporating ShapeNZ. (2023). https://www.horizonpoll.co.nz/page/675/80-say-impo_
-animaljustice.org.nz | party@animaljusticeparty.org.nz  6
+animaljustice.org.nz | party@animaljusticeparty.org.nz 6
 
 ---
 
@@ -411,7 +411,7 @@ Legislation and Regulation Reform for Animal Protection Policy | Created January
 8
 Animal Policy International (2024). Closing the Welfare Gap: Why New Zealand Must Apply Its Animal Protection
 Standards to Imports. https://www.animalpolicyinternational.org/closing-the-welfare-gap
-animaljustice.org.nz | party@animaljusticeparty.org.nz  7
+animaljustice.org.nz | party@animaljusticeparty.org.nz 7
 
 ---
 
@@ -459,7 +459,7 @@ animal suffering whilst also addressing many of our most urgent economic, social
 Klerkx, L., Turner, J., & Percy, H. (2022, December 28) Navigating the rapids of agrifood systems transformation:
 reflections on Aotearoa New Zealand’s emerging mission oriented agrifood innovation system. Taylor & Francis
 Online. https://www.tandfonline.com/doi/full/10.1080/00779954.2022.2158489
-animaljustice.org.nz | party@animaljusticeparty.org.nz  8
+animaljustice.org.nz | party@animaljusticeparty.org.nz 8
 
 ---
 
@@ -512,7 +512,7 @@ land systems. The close alignment between agricultural and state interests has h
 10
 For an industry perspective see: Sense Partners. (2023). Dairy’s economic contribution to New
 Zealand. https://www.dairynz.co.nz/media/0oibxesz/solid-foundations-4-september-2023.pdf
-animaljustice.org.nz | party@animaljusticeparty.org.nz  9
+animaljustice.org.nz | party@animaljusticeparty.org.nz 9
 
 ---
 
@@ -569,7 +569,7 @@ e-gas-emissions
 New Zealand Agricultural Greenhouse Gas Research Centre (2024). Race on to reduce emissions from New
 Zealand livestock. Accessed April 2025.
 https://www.nzagrc.org.nz/news-and-events/race-on-to-reduce-emissions-from-new-zealand-livestock/
-animaljustice.org.nz | party@animaljusticeparty.org.nz  10
+animaljustice.org.nz | party@animaljusticeparty.org.nz 10
 
 ---
 
@@ -628,7 +628,7 @@ per%20-%20Towards%20a%20more%20plant-based%20diet%20-%20Dutch%20Nutrition%20Cent
 Neuenschwander, M., Stadelmaier, J., Eble, J. et al. (2023). Substitution of animal-based with plant-based foods
 on cardiometabolic health and all-cause mortality: a systematic review and meta-analysis of prospective studies.
 BMC Med 21, 404. https://doi.org/10.1186/s12916-023-03093-1
-animaljustice.org.nz | party@animaljusticeparty.org.nz  11
+animaljustice.org.nz | party@animaljusticeparty.org.nz 11
 
 ---
 
@@ -692,7 +692,7 @@ rink-watermelon-seed-milk-future-food-weekly
 29
 The Vegan review. (2021). France adopts climate law that reduces meat on school menus.
 https://www.theveganreview.com/france-climate-change-resilience-law-reduces-meat-school-menus/
-animaljustice.org.nz | party@animaljusticeparty.org.nz  12
+animaljustice.org.nz | party@animaljusticeparty.org.nz 12
 
 ---
 
@@ -740,7 +740,7 @@ Rethink Priorities. (2024). Shallow overview of institutional plant-based meal c
 Europe. https://rethinkpriorities.org/research-area/plant-based-meal-campaigns-in-the-us-western-europe/
 33
 Plant Based Treaty. (n.d.). https://plantbasedtreaty.org/ Accessed April 2025.
-animaljustice.org.nz | party@animaljusticeparty.org.nz  13
+animaljustice.org.nz | party@animaljusticeparty.org.nz 13
 
 ---
 
@@ -793,7 +793,7 @@ Guardian.
 https://www.theguardian.com/world/2018/may/09/incredible-edible-yorkshire-towns-food-growing-scheme-takes-roo
 t-worldwide
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  14
+animaljustice.org.nz | party@animaljusticeparty.org.nz 14
 
 ---
 
@@ -811,7 +811,7 @@ for animal-based foods.
 
 Make plant-based foods the default option for public institutions policy | Created April 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  15
+animaljustice.org.nz | party@animaljusticeparty.org.nz 15
 
 ---
 
@@ -860,7 +860,7 @@ Boseley, S. (2015, October 26). Processed meats rank alongside smoking as cancer
 Guardian.
 https://www.theguardian.com/society/2015/oct/26/bacon-ham-sausages-processed-meats-cancer-risk-smoking-say
 s-who
-animaljustice.org.nz | party@animaljusticeparty.org.nz  16
+animaljustice.org.nz | party@animaljusticeparty.org.nz 16
 
 ---
 
@@ -870,7 +870,7 @@ to domestic production (see Legislation and Regulation Reform for Animal Protect
 
 Ensure fair and transparent labelling policy | Created April 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  17
+animaljustice.org.nz | party@animaljusticeparty.org.nz 17
 
 ---
 
@@ -918,7 +918,7 @@ can bring. In recent years many countries have amended their dietary guidelines 
 Knellera, K., Garton, K., Exeter, D. J., & Egli,V. (2024, May 7). Mapping the extent of unhealthy food adverts around
 schools in Tāmaki Makaurau/Auckland. Taylor & Francis Online.
 Vol 20, Issue1, Pg 65-82. https://www.tandfonline.com/doi/full/10.1080/1177083X.2024.2344510#abstract
-animaljustice.org.nz | party@animaljusticeparty.org.nz  18
+animaljustice.org.nz | party@animaljusticeparty.org.nz 18
 
 ---
 
@@ -971,7 +971,7 @@ https://www.escoffier.edu/blog/world-food-drink/how-plant-based-dishes-are-shapi
 45
 VegMed is Europe’s largest medical conference on plant-based nutrition, bringing together top experts in the field
 of science, health and nutrition. https://vegmed.org/
-animaljustice.org.nz | party@animaljusticeparty.org.nz  19
+animaljustice.org.nz | party@animaljusticeparty.org.nz 19
 
 ---
 
@@ -1027,7 +1027,7 @@ rse
 51
 Ministry of Health (2024). Annual Update of Key Results 2023/24: New Zealand Health Survey.
 https://www.health.govt.nz/publications/annual-update-of-key-results-202324-new-zealand-health-survey
-animaljustice.org.nz | party@animaljusticeparty.org.nz  20
+animaljustice.org.nz | party@animaljusticeparty.org.nz 20
 
 ---
 
@@ -1084,7 +1084,7 @@ https://www.agrifood4netzero.net/resources/digest-national-food-strategy-an-upda
 56
 Public Health Advisory Committee. 2024. Rebalancing our food system. Wellington: Ministry of Health.
 https://www.health.govt.nz/publications/rebalancing-our-food-system
-animaljustice.org.nz | party@animaljusticeparty.org.nz  21
+animaljustice.org.nz | party@animaljusticeparty.org.nz 21
 
 ---
 
@@ -1104,7 +1104,7 @@ Improve access to nutritious food policy | Created April 2025
 Klerkx, L., Turner, J., & Percy, H. (2022, December 28) Navigating the rapids of agrifood systems transformation:
 reflections on Aotearoa New Zealand’s emerging mission oriented agrifood innovation system. Taylor & Francis
 Online. https://www.tandfonline.com/doi/full/10.1080/00779954.2022.2158489
-animaljustice.org.nz | party@animaljusticeparty.org.nz  22
+animaljustice.org.nz | party@animaljusticeparty.org.nz 22
 
 ---
 
@@ -1151,7 +1151,7 @@ https://www.nzagrc.org.nz/news-and-events/race-on-to-reduce-emissions-from-new-z
 Parliamentary Commissioner for the Environment (2024, May 22). Going with the grain: Changing land uses to fit a
 changing landscape.
 https://pce.parliament.nz/publications/going-with-the-grain-changing-land-uses-to-fit-a-changing-landscape/
-animaljustice.org.nz | party@animaljusticeparty.org.nz  23
+animaljustice.org.nz | party@animaljusticeparty.org.nz 23
 
 ---
 
@@ -1193,7 +1193,7 @@ are supported in exercising kaitiakitanga.
 
 Introduce tighter standards and enforcement for agricultural pollution policy | Created April 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  24
+animaljustice.org.nz | party@animaljusticeparty.org.nz 24
 
 ---
 
@@ -1240,7 +1240,7 @@ Levitt, T. (2021, December 15). Netherlands announces €25bn plan to radically 
 Guardian. Animals farmed, Netherlands.
 https://www.theguardian.com/environment/2021/dec/15/netherlands-announces-25bn-plan-to-radically-reduce-lives
 tock-numbers
-animaljustice.org.nz | party@animaljusticeparty.org.nz  25
+animaljustice.org.nz | party@animaljusticeparty.org.nz 25
 
 ---
 
@@ -1257,7 +1257,7 @@ protect biodiversity.
 
 Provide financial incentives for good environmental practices policy | Created April 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  26
+animaljustice.org.nz | party@animaljusticeparty.org.nz 26
 
 ---
 
@@ -1309,7 +1309,7 @@ Griffin,C., Wreford, A., & Cradock-Henry, N. A. (2023, February). ‘As a farmer
 Understanding dairy farmers' perceptions of climate change and adaptation decisions in the lower South Island of
 Aotearoa-New Zealand. Science Direct Journal of Rural Studies, 98, 147-158.
 https://doi.org/10.1016/j.jrurstud.2023.02.001
-animaljustice.org.nz | party@animaljusticeparty.org.nz  27
+animaljustice.org.nz | party@animaljusticeparty.org.nz 27
 
 ---
 
@@ -1355,7 +1355,7 @@ implementation of the scheme.
 
 Introduce a farm transition scheme policy | Created April 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  28
+animaljustice.org.nz | party@animaljusticeparty.org.nz 28
 
 ---
 
@@ -1404,7 +1404,7 @@ Ministry of Business, Innovation & Employment. (2021). Queenstown Economic Trans
 Fund.
 https://www.mbie.govt.nz/immigration-and-tourism/tourism/tourism-recovery/tourism-communities-support-recovery
 -and-re-set-plan/queenstown-economic-transformation-and-resilience-fund
-animaljustice.org.nz | party@animaljusticeparty.org.nz  29
+animaljustice.org.nz | party@animaljusticeparty.org.nz 29
 
 ---
 
@@ -1424,7 +1424,7 @@ businesses; alongside investments in local infrastructure.
 
 Support for rural economies to thrive without animal agriculture policy | Created April 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  30
+animaljustice.org.nz | party@animaljusticeparty.org.nz 30
 
 ---
 
@@ -1470,7 +1470,7 @@ Griffin, C., Wreford, A., & Cradock-Henry, N. A. (2023, February 26). ‘As a fa
 cope’: Understanding dairy farmers' perceptions of climate change and adaptation decisions in the lower South
 Island of Aotearoa-New Zealand. Journal of Rural Studies, 98, 147-158, Science Direct.
 https://doi.org/10.1016/j.jrurstud.2023.02.001
-animaljustice.org.nz | party@animaljusticeparty.org.nz  31
+animaljustice.org.nz | party@animaljusticeparty.org.nz 31
 
 ---
 
@@ -1483,7 +1483,7 @@ principles.
 
 Reskill workers within, and supporting, the industrial animal system policy | Created April 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  32
+animaljustice.org.nz | party@animaljusticeparty.org.nz 32
 
 ---
 
@@ -1524,7 +1524,7 @@ removing barriers, changing regulations and introducing incentives etc.
 economists, academics, and the businesses and innovators that are actively developing
 plant-based products.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  33
+animaljustice.org.nz | party@animaljusticeparty.org.nz 33
 
 ---
 
@@ -1580,7 +1580,7 @@ Parliamentary Commissioner for the Environment. (2024). Going with the grain: Ch
 changing landscape. This report has been produced pursuant to subsections 16(1)(a) to (c) of the Environment Act
 1986.
 https://pce.parliament.nz/media/qfxluadl/going-with-the-grain-changing-land-uses-to-fit-a-changing-landscape.pdf
-animaljustice.org.nz | party@animaljusticeparty.org.nz  34
+animaljustice.org.nz | party@animaljusticeparty.org.nz 34
 
 ---
 
@@ -1590,7 +1590,7 @@ and reducing dependence on volatile export markets.
 
 Identify our biggest land-use and bioeconomy opportunities policy | Created April 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  35
+animaljustice.org.nz | party@animaljusticeparty.org.nz 35
 
 ---
 
@@ -1646,7 +1646,7 @@ Available at www.productivity.govt.nz/inquiries/frontier-firms/
 https://www.treasury.govt.nz/sites/default/files/2024-05/pc-inq-nzfrff-final-report-frontier-firms.pdf
 76
 Vegan Society NZ. (2024). The Green Protein Report. https://vegansociety.org.nz/green-protein-report/
-animaljustice.org.nz | party@animaljusticeparty.org.nz  36
+animaljustice.org.nz | party@animaljusticeparty.org.nz 36
 
 ---
 
@@ -1696,7 +1696,7 @@ https://www.treasury.govt.nz/sites/default/files/2024-05/pc-inq-nzfrff-frontier-
 78
 Beehive. (The Official website of the New Zealand Government). (2024). Agriculture to come out of the ETS.
 https://www.beehive.govt.nz/release/agriculture-come-out-ets
-animaljustice.org.nz | party@animaljusticeparty.org.nz  37
+animaljustice.org.nz | party@animaljusticeparty.org.nz 37
 
 ---
 
@@ -1727,7 +1727,7 @@ favored traditional primary sector activities.
 treating them as temporary disruptions.
 Become a leader in alternative proteins policy | Created April 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  38
+animaljustice.org.nz | party@animaljusticeparty.org.nz 38
 
 ---
 
@@ -1781,7 +1781,7 @@ MPI stats
 Animal Welfare Strategy
 81
 Animal Welfare Act Ref
-animaljustice.org.nz | party@animaljusticeparty.org.nz  39
+animaljustice.org.nz | party@animaljusticeparty.org.nz 39
 
 ---
 
@@ -1845,7 +1845,7 @@ NZALA
 HUHA
 91
 NZAVS
-animaljustice.org.nz | party@animaljusticeparty.org.nz  40
+animaljustice.org.nz | party@animaljusticeparty.org.nz 40
 
 ---
 
@@ -1870,7 +1870,7 @@ https://www.mpi.govt.nz/dmsdocument/3963-Animal-Welfare-Matters-New-Zealand-Anim
 Commissioner for Animals Policy, created September 2023, updated April 2025
 Commissioner for Animals policy | Created September 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  41
+animaljustice.org.nz | party@animaljusticeparty.org.nz 41
 
 ---
 
@@ -1908,19 +1908,19 @@ foster environments
 and support for rehoming facilities
 8. Formalise relationships with rescues and shelters
 9. Foster community-led animal welfare initiatives across Aotearoa
-10.Promote and invest in widespread, accessible desexing programmes
-11.End breed-based euthanasia and ensure all dogs are assessed as individuals
+10. Promote and invest in widespread, accessible desexing programmes
+11. End breed-based euthanasia and ensure all dogs are assessed as individuals
 
 92
 Pūrongo ā-Tau Annual Report. (2024).
 https://ourauckland.aucklandcouncil.govt.nz/media/0yjcq3gt/final_animal-management-annual-report-20
 24-2025_29-08-25.pdf
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  42
+animaljustice.org.nz | party@animaljusticeparty.org.nz 42
 
 ---
 
-12.Ensure euthanasia is only ever used as an absolute last resort, and never on a healthy
+12. Ensure euthanasia is only ever used as an absolute last resort, and never on a healthy
 dog. Where it is required, it must be carried out in a way that minimises suffering.
 
 Background
@@ -1959,7 +1959,7 @@ OurAuckland. (n.d.). Animal Management annual report reveals impact of COVID-19 
 OurAuckland.
 https://ourauckland.aucklandcouncil.govt.nz/news/2022/09/animal-management-annual-report-reveals-im
 pact-of-covid-19-pandemic/
-animaljustice.org.nz | party@animaljusticeparty.org.nz  43
+animaljustice.org.nz | party@animaljusticeparty.org.nz 43
 
 ---
 
@@ -2005,7 +2005,7 @@ https://www.legislation.govt.nz/act/public/1996/13/en/latest
 Government orders review of Dog Control Act. (2026, March 21). The Beehive.
 https://www.beehive.govt.nz/release/government-orders-review-dog-control-a
 ct
-animaljustice.org.nz | party@animaljusticeparty.org.nz  44
+animaljustice.org.nz | party@animaljusticeparty.org.nz 44
 
 ---
 
@@ -2048,7 +2048,7 @@ AJP recommends replacing bolt guns with humane euthanasia methods that ensure ra
 of consciousness and minimal distress, thereby reducing suffering for animals and trauma for
 staff. AJP also opposes breed-based euthanasia. A dog's life should never be ended on the
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  45
+animaljustice.org.nz | party@animaljusticeparty.org.nz 45
 
 ---
 
@@ -2091,7 +2091,7 @@ and respect they deserve.
 
 Compassionate Pound and Shelter Reform | Created July 2026
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  46
+animaljustice.org.nz | party@animaljusticeparty.org.nz 46
 
 ---
 
@@ -2143,7 +2143,7 @@ New Zealand's unbreakable bond with pets: Insights from the latest Companion Ani
 Shelter Register Aotearoa — Companion Animals New Zealand
 101
 Code of Welfare: Companion Cats | NZ Government
-animaljustice.org.nz | party@animaljusticeparty.org.nz  47
+animaljustice.org.nz | party@animaljusticeparty.org.nz 47
 
 ---
 
@@ -2192,7 +2192,7 @@ animals distracts from the human activities most responsible for ecological harm
 An independent Commissioner for Animals and mandatory live cameras on traps would ensure
 that animal welfare decisions are made free from commercial or political pressure.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  48
+animaljustice.org.nz | party@animaljusticeparty.org.nz 48
 
 ---
 
@@ -2236,7 +2236,7 @@ Aotearoa can be a compassionate nation for all its animals, native and introduce
 not a compromise. It is a higher standard.
 Cats, Conservation and Better Solutions policy position | Created June 2026
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  49
+animaljustice.org.nz | party@animaljusticeparty.org.nz 49
 
 ---
 
@@ -2286,7 +2286,7 @@ threatens our native wildlife.
 This policy also addresses the exploitation of veterinary professionals themselves. The current
 system transforms dedicated animal carers into gatekeepers of treatment based on payment,
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  50
+animaljustice.org.nz | party@animaljusticeparty.org.nz 50
 
 ---
 
@@ -2338,17 +2338,17 @@ services, and payment options in te reo Māori and community languages
 9. Implement strong regulations against price exploitation by corporate veterinary chains to
 protect independent practices and affordable community care
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  51
+animaljustice.org.nz | party@animaljusticeparty.org.nz 51
 
 ---
 
-10.Establish community oversight through local animal welfare councils with power to direct
+10. Establish community oversight through local animal welfare councils with power to direct
 resources to areas of greatest need and ensure meaningful representation from Māori,
 Pasifika and diverse communities
 
 Universal Veterinary Care - Ensuring Wellbeing for All Animals policy | Created October 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  52
+animaljustice.org.nz | party@animaljusticeparty.org.nz 52
 
 ---
 
@@ -2400,7 +2400,7 @@ https://theintegrityinstitute.substack.com/p/federated-farmers
 https://en.wikipedia.org/wiki/Andrew_Hoggard
 106
 https://www.beehive.govt.nz/minister/biography/andrew-hoggard
-animaljustice.org.nz | party@animaljusticeparty.org.nz  53
+animaljustice.org.nz | party@animaljusticeparty.org.nz 53
 
 ---
 
@@ -2440,17 +2440,17 @@ Democratic Participation & Campaign Equality
 9. Establish maximum membership fee caps for all political parties with low-income options,
 preventing wealthy parties from creating financial barriers while ensuring participation is
 based on community support rather than wealth.
-10.Level broadcasting allocation between parties, distributing funding more evenly rather
+10. Level broadcasting allocation between parties, distributing funding more evenly rather
 than concentrating it among established parties, and expand eligible spending to include
 TV, radio, digital ads, leaflets, print materials, direct mail, accessibility services,
 community media partnerships, shared infrastructure and small-party participation in
 debates.
-11.Require at least 50% of public campaign funding to be spent with New Zealand
+11. Require at least 50% of public campaign funding to be spent with New Zealand
 businesses rather than overseas platforms.
-12.Create infrastructure for small-party participation in televised and public debates.
+12. Create infrastructure for small-party participation in televised and public debates.
 
 Getting Money Out of Politics - Restoring Democratic Equality | Created October 2025
-animaljustice.org.nz | party@animaljusticeparty.org.nz  54
+animaljustice.org.nz | party@animaljusticeparty.org.nz 54
 
 ---
 
@@ -2498,7 +2498,7 @@ production
 - Aquaculture management: Machine learning for biomass measurement, feeding
 optimisation and water quality monitoring
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  55
+animaljustice.org.nz | party@animaljusticeparty.org.nz 55
 
 ---
 
@@ -2547,7 +2547,7 @@ stating these "should have more generic application than only virtual fencing an
 any future technology proposed for animal management"
 - Early 2024: A petition called for a parliamentary inquiry into virtual fencing technology
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  56
+animaljustice.org.nz | party@animaljusticeparty.org.nz 56
 
 ---
 
@@ -2596,7 +2596,7 @@ more efficient rather than more humane. It integrates best with intensive, cage-
 systems that have the worst welfare conditions, enabling higher stocking densities and
 more intensive confinement, whilst appearing to ensure individualised care.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  57
+animaljustice.org.nz | party@animaljusticeparty.org.nz 57
 
 ---
 
@@ -2645,7 +2645,7 @@ Connection to Existing AJP Policies
 Several existing AJP policies already provide a foundation for addressing AI systems and
 improving animal welfare:
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  58
+animaljustice.org.nz | party@animaljusticeparty.org.nz 58
 
 ---
 
@@ -2668,183 +2668,183 @@ Key Objectives:
 
 1. Amend the Animal Welfare Act 1999 to explicitly address AI applications affecting
 animals, including:
-  - Specific welfare and protection provisions for AI systems in both farming and
+ - Specific welfare and protection provisions for AI systems in both farming and
 introduced species control contexts
-  - Mandatory independent validation of AI welfare monitoring systems before
+ - Mandatory independent validation of AI welfare monitoring systems before
 commercial deployment
-  - Requirements for human oversight alongside AI systems automation, ensuring
+ - Requirements for human oversight alongside AI systems automation, ensuring
 that critical welfare decisions are not delegated entirely to algorithms
-  - Mandatory welfare impact assessments for new AI technologies before
+ - Mandatory welfare impact assessments for new AI technologies before
 deployment at commercial scale
-  - Prohibition of AI systems that conceal, normalise or facilitate harm or cruelty
-  - Clear accountability frameworks establishing who is responsible when AI
+ - Prohibition of AI systems that conceal, normalise or facilitate harm or cruelty
+ - Clear accountability frameworks establishing who is responsible when AI
 management systems decisions cause animal harm or welfare failures
 2. Update Codes of Welfare to include AI-specific guidance, beginning with the Code of
 Welfare: Dairy Cattle to address virtual fencing and AI-driven monitoring systems. All
 Codes should include:
-  - Generic safeguards applicable to any future technology proposed for animal
+ - Generic safeguards applicable to any future technology proposed for animal
 management
-  - Standards for AI-enabled welfare monitoring to ensure systems genuinely improve
+ - Standards for AI-enabled welfare monitoring to ensure systems genuinely improve
 outcomes rather than simply measure declining welfare more precisely
-  - Requirements for validated welfare benefits before widespread adoption
-  - Mandatory human competency and oversight requirements
+ - Requirements for validated welfare benefits before widespread adoption
+ - Mandatory human competency and oversight requirements
 3. Establish an animal-centred design framework for AI systems affecting animals, requiring
 that:
-  - Systems must be explicitly designed for animal welfare, competence and
+ - Systems must be explicitly designed for animal welfare, competence and
 protection, not merely economic efficiency
-  - Design processes incorporate the Five Domains Model of positive animal welfare
+ - Design processes incorporate the Five Domains Model of positive animal welfare
 (Nutrition, Environment, Health, Behavioural Interactions, Mental State)
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  59
+animaljustice.org.nz | party@animaljusticeparty.org.nz 59
 
 ---
 
 - Systems actively enhance animals' choice, control, variety, complexity and
 competence rather than simply monitoring their decline
-  - Welfare outcomes are validated independently before and after deployment
-  - Animals' behavioural, physical and mental needs are prioritised above productivity
+ - Welfare outcomes are validated independently before and after deployment
+ - Animals' behavioural, physical and mental needs are prioritised above productivity
 metrics
-  - Beneficial AI research and development is supported, including non-lethal,
+ - Beneficial AI research and development is supported, including non-lethal,
 humane alternatives for managing human-wildlife conflict, and technologies that
 facilitate transition to plan-based food systems.
 4. Create an Inter-agency AI-Animal Welfare Working Group chaired by the Commissioner
 for Animals, with representatives from agencies, including (but not limited to) the Ministry
 for Primary Industries, Department of Conservation, Environmental Protection Authority,
 Civil Aviation Authority and Commerce Commission, to:
-  - Develop consistent guidelines and protection mechanisms across existing
+ - Develop consistent guidelines and protection mechanisms across existing
 legislation and regulation
-  - Coordinate enforcement protocols and information sharing between agencies
-  - Apply One Welfare principles integrating animal welfare, human wellbeing and
+ - Coordinate enforcement protocols and information sharing between agencies
+ - Apply One Welfare principles integrating animal welfare, human wellbeing and
 environmental considerations before AI systems are deployed
-  - Report annually on AI systems developments, regulatory gaps and welfare
+ - Report annually on AI systems developments, regulatory gaps and welfare
 outcomes
-  - Monitor emerging AI technologies and assess their welfare implications before
+ - Monitor emerging AI technologies and assess their welfare implications before
 widespread deployment
 5. Build regulatory capacity to assess and monitor AI technologies by:
-  - Develop AI literacy programmes for Ministry for Primary Industries inspectors and
+ - Develop AI literacy programmes for Ministry for Primary Industries inspectors and
 Department of Conservation staff, enabling them to evaluate AI-based animal
 management systems
-  - Create farmer and animal manager education programmes ensuring those who
+ - Create farmer and animal manager education programmes ensuring those who
 deploy AI can interpret outputs, recognise system failures and maintain
 appropriate human oversight
-  - Develop assessment tools and criteria for evaluating AI-based welfare systems
-  - Provide agencies with ongoing resources to understand rapidly evolving AI
+ - Develop assessment tools and criteria for evaluating AI-based welfare systems
+ - Provide agencies with ongoing resources to understand rapidly evolving AI
 technologies and improve governance frameworks
 6. Leverage existing legislative frameworks to address AI-animal welfare intersections
 immediately, without waiting for new legislation, including:
-  - Privacy Act 2020: Extend data protection to animal-derived biometric data,
+ - Privacy Act 2020: Extend data protection to animal-derived biometric data,
 ensuring commercial interests cannot exploit animal data without welfare
 safeguards and protection
-  - Fair Trading Act 1986: Strengthen enforcement against misleading welfare claims,
+ - Fair Trading Act 1986: Strengthen enforcement against misleading welfare claims,
 particularly "welfare washing" where AI systems monitoring is marketed as welfare
 improvement without evidencing genuine benefit to animals
-  - Consumer Guarantees Act 1993: Ensure AI animal management systems meet
+ - Consumer Guarantees Act 1993: Ensure AI animal management systems meet
 fitness-for-purpose standards when welfare outcomes are promised
-  - Resource Management Act 1991: Include animal welfare and protection in
+ - Resource Management Act 1991: Include animal welfare and protection in
 environmental impact assessments for AI systems
-  - Health and Safety at Work Act 2015: Include animal welfare considerations in
+ - Health and Safety at Work Act 2015: Include animal welfare considerations in
 automated system safety assessments
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  60
+animaljustice.org.nz | party@animaljusticeparty.org.nz 60
 
 ---
 
 - Hazardous Substances and New Organisms (HSNO) Act 1996 and Agricultural
 Compounds and Veterinary Medicines (ACVM) Act 1997: Require welfare impact
 assessments for AI systems for all new technological interventions
-  - Biosecurity Act 1993: Integrate welfare standards into AI-powered introduced
+ - Biosecurity Act 1993: Integrate welfare standards into AI-powered introduced
 species control programmes
-  - Civil Aviation Act 1990: Mandate welfare protocols for drone-based animal
+ - Civil Aviation Act 1990: Mandate welfare protocols for drone-based animal
 operations, including both monitoring and lethal control applications
-  - Wildlife Act 1953: Establish ‘humane’ standards for AI-enabled introduced species
+ - Wildlife Act 1953: Establish ‘humane’ standards for AI-enabled introduced species
 control technologies, recognising that automation does not eliminate legal and
 ethical obligations
-  - Conservation Act 1987: Ensure the Department of Conservation's AI systems
+ - Conservation Act 1987: Ensure the Department of Conservation's AI systems
 deployment prioritises conservation and welfare outcomes over operational
 efficiency
 7. Establish transparency and accountability requirements for AI systems affecting animals:
-  - Mandatory public reporting of AI deployment scale, including the number of
+ - Mandatory public reporting of AI deployment scale, including the number of
 animals affected and the types of systems used
-  - Accessible data on welfare outcomes, system failures and interventions
-  - Clear pathways for reporting, and addressing, welfare concerns related to AI
+ - Accessible data on welfare outcomes, system failures and interventions
+ - Clear pathways for reporting, and addressing, welfare concerns related to AI
 systems
-  - Protection for whistleblowers who expose AI systems-related welfare failures
-  - Public registers of validated AI welfare management systems
-  - Consolidated national statistics on introduced species control methods, kill
+ - Protection for whistleblowers who expose AI systems-related welfare failures
+ - Public registers of validated AI welfare management systems
+ - Consolidated national statistics on introduced species control methods, kill
 numbers and welfare outcomes to enable comprehensive assessment of both
 traditional and AI-enabled systems
 8. Prohibit AI applications that:
-  - Enable increased stocking densities or more intensive confinement
-  - Reduce human-animal contact below minimum welfare standards
-  - Make autonomous lethal decisions without human oversight
-  - Prioritise economic optimisation at the expense of animal welfare and protection
-  - Conceal or normalise practices that would otherwise be recognised as harmful or
+ - Enable increased stocking densities or more intensive confinement
+ - Reduce human-animal contact below minimum welfare standards
+ - Make autonomous lethal decisions without human oversight
+ - Prioritise economic optimisation at the expense of animal welfare and protection
+ - Conceal or normalise practices that would otherwise be recognised as harmful or
 cruel
 9. Ensure AI governance frameworks address sentience comprehensively:
-  - Expand explicit species coverage in animal welfare legislation to reflect current
+ - Expand explicit species coverage in animal welfare legislation to reflect current
 scientific understanding of sentience, including cephalopods, decapods, fishes
 and other invertebrates (as outlined in existing AJP policy on animal sentience
 and legal status)
-  - Regulate AI systems affecting aquaculture and commercial fishing with the same
+ - Regulate AI systems affecting aquaculture and commercial fishing with the same
 rigour as terrestrial animal systems
-  - Require that AI design processes acknowledge and respond to positive
+ - Require that AI design processes acknowledge and respond to positive
 species-specific behavioural and cognitive needs
 
 Interim Measures
 While comprehensive legislative amendments are developed and implemented, AJP supports
 immediate actions to reduce harm:
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  61
+animaljustice.org.nz | party@animaljusticeparty.org.nz 61
 
 ---
 
-10.Issue urgent guidance under existing legislation to all research facilities, farms and
+10. Issue urgent guidance under existing legislation to all research facilities, farms and
 conservation operations using AI systems, requiring:
-  - Immediate risk and animal impact assessments of current AI deployments
-  - Enhanced human oversight protocols
-  - Mandatory reporting of welfare failures related to AI systems
-  - Suspension of AI systems that cannot demonstrate welfare benefits
-11.Implement emergency protocols for deployed AI systems:
-  - Mandatory backup systems ensuring animal care safely continues during
+ - Immediate risk and animal impact assessments of current AI deployments
+ - Enhanced human oversight protocols
+ - Mandatory reporting of welfare failures related to AI systems
+ - Suspension of AI systems that cannot demonstrate welfare benefits
+11. Implement emergency protocols for deployed AI systems:
+ - Mandatory backup systems ensuring animal care safely continues during
 technological failures
-  - Clear escalation and resolution procedures when AI systems indicate welfare
+ - Clear escalation and resolution procedures when AI systems indicate welfare
 problems
-  - Regular audits of AI systems decision-making to identify and rectify harmful
+ - Regular audits of AI systems decision-making to identify and rectify harmful
 patterns
-  - Immediate intervention and resolution requirements when AI systems recommend
+ - Immediate intervention and resolution requirements when AI systems recommend
 actions contrary to animal welfare.
-12.Fast-track regulatory capacity building by establishing an AI literacy programme for
+12. Fast-track regulatory capacity building by establishing an AI literacy programme for
 Ministry for Primary Industries inspectors and Department of Conservation staff, a rapid
 response team with expertise in both AI technology and animal welfare and interim
 assessment tools for currently deployed AI systems.
-13.Prioritise virtual fencing regulation as a test case for broader AI governance:
-  - Implement NAWAC's recommended safeguards immediately through the Code of
+13. Prioritise virtual fencing regulation as a test case for broader AI governance:
+ - Implement NAWAC's recommended safeguards immediately through the Code of
 Welfare: Dairy Cattle (on the assumption they are reasonable in relation to the
 code of ethical conduct developed by the Veterinarians for Animal Welfare
 Aotearoa)
-  - Require independent welfare validation of existing virtual fencing systems
-  - Establish clear standards for appropriate use, system maintenance and animal
+ - Require independent welfare validation of existing virtual fencing systems
+ - Establish clear standards for appropriate use, system maintenance and animal
 conditioning
-  - Prohibit use near milking sheds and in situations where animals cannot retreat
+ - Prohibit use near milking sheds and in situations where animals cannot retreat
 from stimuli
-14.Conduct comprehensive AI systems deployment mapping across all animal management
+14. Conduct comprehensive AI systems deployment mapping across all animal management
 sectors to identify the current scale and scope of AI systems use, assess the welfare
 risks, prioritise regulatory intervention and establish transparent baseline data for
 measuring regulatory effectiveness.
-15.Establish interim consultation processes ensuring:
-  - Animal welfare organisations are consulted on AI technology development and
+15. Establish interim consultation processes ensuring:
+ - Animal welfare organisations are consulted on AI technology development and
 deployment
-  - Welfare and protection considerations are integrated into industry AI systems
+ - Welfare and protection considerations are integrated into industry AI systems
 adoption decisions
-  - Public input is sought and integrated for AI technologies affecting animals
-  - Affected communities, including farmers and conservation practitioners, contribute
+ - Public input is sought and integrated for AI technologies affecting animals
+ - Affected communities, including farmers and conservation practitioners, contribute
 to ongoing regulatory development.
 
 References
 Adisasmito, W. B., Almuhairi, S., Behravesh, C. B., Bilivogui, P., Bukachi, S. A., et al. (2022).
 One Health: A new definition for a sustainable and healthy future. One Health High-Level Expert
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  62
+animaljustice.org.nz | party@animaljusticeparty.org.nz 62
 
 ---
 
@@ -2894,7 +2894,7 @@ Precedence Research (2024). Artificial intelligence (AI) in animal health market
 trends 2024 to 2034.
 https://www.precedenceresearch.com/artificial-intelligence-in-animal-health-market
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  63
+animaljustice.org.nz | party@animaljusticeparty.org.nz 63
 
 ---
 
@@ -2925,7 +2925,7 @@ https://pubmed.ncbi.nlm.nih.gov/32002203/
 
 Artificial Intelligence and Animal Welfare policy | Created March 2026
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  64
+animaljustice.org.nz | party@animaljusticeparty.org.nz 64
 
 ---
 
@@ -2979,7 +2979,7 @@ Housekeeping. https://www.goodhousekeeping.com/uk/news/a561203/pawternity-leave-
 111
 World Animal Protection NZ. (n.d.). Work with us. Retrieved October 14, 2025, from
 https://www.worldanimalprotection.org.nz/about-us/work-with-us/
-animaljustice.org.nz | party@animaljusticeparty.org.nz  65
+animaljustice.org.nz | party@animaljusticeparty.org.nz 65
 
 ---
 
@@ -2987,22 +2987,22 @@ Policy Framework
 
 - Bereavement Leave
 
-  - Up to 5 days paid leave available as a single entitlement for use following the
+ - Up to 5 days paid leave available as a single entitlement for use following the
 death of a close human family member or a companion animal.
-  - Flexible timing to cover funerals, tangihanga, memorials, veterinary appointments,
+ - Flexible timing to cover funerals, tangihanga, memorials, veterinary appointments,
 or grieving.
-  - Self-declaration only, no burdensome paperwork.
+ - Self-declaration only, no burdensome paperwork.
 
 - Parental (“Pawternity”) Leave
 
-  - Up to 3 days paid leave available when a new family member joins the household,
+ - Up to 3 days paid leave available when a new family member joins the household,
 whether a baby or an adopted companion animal.
-  - Additional unpaid leave (up to 2 weeks) available for animals with special needs or
+ - Additional unpaid leave (up to 2 weeks) available for animals with special needs or
 trauma histories.
 
 - Emergency Care Leave
 
-  - Employees may take reasonable time off to respond to urgent medical
+ - Employees may take reasonable time off to respond to urgent medical
 emergencies, end-of-life decision-making, or intensive care needs - for human or
 animal family members.
 
@@ -3028,4 +3028,4 @@ family
 
 Companion Animal Bereavement and Parental Leave policy | Created October 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  66
+animaljustice.org.nz | party@animaljusticeparty.org.nz 66

@@ -23,5 +23,5 @@ Policies that cite this page: `POL55234`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZFirst To Ban Public Sales Of Fireworks (Press release, 2026-10-09)](../documents/2026-10-09-nzfirst-to-ban-public-sales-of-fireworks.md) 
-- [NZ First Introduces Bill To Ban Public Sales Of Fireworks (Press release, 2025-11-04)](../documents/2025-11-04-nz-first-introduces-bill-to-ban-public-sales-of-fireworks.md) 
+- [NZFirst To Ban Public Sales Of Fireworks (Press release, 2026-10-09)](2026-10-09-nzfirst-to-ban-public-sales-of-fireworks.md)
+- [NZ First Introduces Bill To Ban Public Sales Of Fireworks (Press release, 2025-11-04)](2025-11-04-nz-first-introduces-bill-to-ban-public-sales-of-fireworks.md)

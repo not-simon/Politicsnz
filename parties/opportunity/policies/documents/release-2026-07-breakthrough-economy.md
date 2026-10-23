@@ -40,3 +40,5 @@ Opportunity says the Breakthrough Economy policy sits alongside its Abundant Ene
 About Opportunity:
 
 Opportunity was founded in 2017 to address systemic barriers to fairness in New Zealand through bold, evidence-based policy. The party advocates for strengthening democracy, fairer tax systems, affordable housing, climate action and investing in future generations. For more information, visit www.opportunity.org.nz.
+
+\

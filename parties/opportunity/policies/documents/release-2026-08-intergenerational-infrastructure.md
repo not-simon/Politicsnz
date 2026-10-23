@@ -36,3 +36,5 @@ Opportunity says the programme is fiscally measured and will lift infrastructure
 Intergenerational Infrastructure sits alongside Opportunity's Abundant Energy, Climate Action and Affordable Housing policies as a broad policy package to address systemic built environment issues in New Zealand.
 
 **About Opportunity.** Opportunity was founded in 2017 to address systemic barriers to fairness in New Zealand through bold, evidence-based policy. The party advocates for strengthening democracy, fairer tax systems, affordable housing, climate action and investing in future generations.
+
+\

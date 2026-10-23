@@ -23,4 +23,4 @@ Policies that cite this page: `POL54656`, `POL54657`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [Winston Peters - State Of The Nation 2026 "Power To The People" (Speech, 2026-03-22)](../documents/2026-03-22-winston-peters-state-of-the-nation-2026-power-to-the-people.md) 
+- [Winston Peters - State Of The Nation 2026 "Power To The People" (Speech, 2026-03-22)](2026-03-22-winston-peters-state-of-the-nation-2026-power-to-the-people.md)

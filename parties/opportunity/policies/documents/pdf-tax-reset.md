@@ -13,11 +13,11 @@ fetch_method: curl + pdftotext -layout (poppler)
 
 ## Full text (verbatim)
 
-Date  May 2026
+Date May 2026
 
-Policy  Tax Reset
+Policy Tax Reset
 
-Document Type  Policy Overview
+Document Type Policy Overview
 
 It’s time for a Tax Reset
 New Zealand has a tax and welfare system stuck in the past
@@ -61,7 +61,7 @@ Our reforms will:
 - Replace most main benefits and streamline the welfare system, cutting
 bureaucracy
 
-Opportunity Party  Tax  Page 1
+Opportunity Party Tax Page 1
 
 ---
 
@@ -94,7 +94,7 @@ lifetime contributions
 availability of capital and lessening our reliance on offshore borrowing and
 strengthening our financial resilience
 
-Opportunity Party  Tax  Page 2
+Opportunity Party Tax Page 2
 
 ---
 
@@ -145,7 +145,7 @@ Without reform, we face three unpalatable choices: raise taxes substantially on
 working-age New Zealanders, cut superannuation benefits for retirees or reduce
 other essential public services. None of these options is acceptable.
 
-Opportunity Party  Tax  Page 3
+Opportunity Party Tax Page 3
 
 ---
 
@@ -154,11 +154,11 @@ productive investment domestically. We remain heavily reliant on offshore capita
 exposing us to external shocks and limiting our ability to finance infrastructure and
 economic transformation on our own terms.
 
-1.  Give every Kiwi the basics to live well and contribute
+1. Give every Kiwi the basics to live well and contribute
 The Citizen’s Income is a tax-free universal payment that ensures every New
 Zealander has the financial foundation to participate fully in society.
 
-1.1  The Citizen’s Income
+1.1 The Citizen’s Income
 Every New Zealand Citizen and resident aged 18 and over receives an annual amount
 equivalent to the Jobseeker benefit; currently $19,400 annually, paid fortnightly
 into their bank account. No forms to fill in, no Work and Income appointments, no
@@ -183,7 +183,7 @@ at all income levels, with the largest reductions at lower income levels where i
 needed.Those earning less than $60,000 per year will pay less income tax than the
 Citizens’ Income they receive.
 
-Opportunity Party  Tax  Page 4
+Opportunity Party Tax Page 4
 
 ---
 
@@ -235,7 +235,7 @@ productively
 - Productive use is rewarded, as farms and businesses generate income to pay the
 tax.
 
-Opportunity Party  Tax  Page 5
+Opportunity Party Tax Page 5
 
 ---
 
@@ -270,7 +270,7 @@ Exemptions to the land value tax will apply for:
 - Treaty settlement land (subject to consultation with iwi), and
 - Social housing.
 
-Opportunity Party  Tax  Page 6
+Opportunity Party Tax Page 6
 
 ---
 
@@ -320,7 +320,7 @@ be exempt from income tax. This provides substantial tax relief whilst encouragi
 long-term retirement savings. Tax on income earned within KiwiSaver 2.0 funds will be
 progressively reduced, with all fund income becoming tax-exempt after twenty years.
 
-Opportunity Party  Tax  Page 7
+Opportunity Party Tax Page 7
 
 ---
 
@@ -331,26 +331,26 @@ The policy as a whole is fiscally positive. Based on 2024 numbers, the Land Valu
 Tax pays for the Citizen’s Income with around $4 billion extra annually in net Crown
 revenue.
 
-Cost  $m  Revenue  $m
+Cost $m Revenue $m
 
-Net cost of CI  13637  Land Value Tax  24323
+Net cost of CI 13637 Land Value Tax 24323
 
-Headline CI Cost  69648  Administration Savings  1742
+Headline CI Cost 69648 Administration Savings 1742
 (MSD, IRD)
 
-Less Income Tax Clawback  (23381)
+Less Income Tax Clawback (23381)
 
-Less student loan and main benefit  (32630)
+Less student loan and main benefit (32630)
 replacement (Jobseeker, NZ Super, Supported
 Living, Sole Parent, Student Allowance)
 
-Net Supplementary Support cost  8279
+Net Supplementary Support cost 8279
 
-Additional benefits cost  15614
+Additional benefits cost 15614
 
-Less additional benefits replaced  (7335)
+Less additional benefits replaced (7335)
 
-Total cost  21916  Total revenue  25997
+Total cost 21916 Total revenue 25997
 
 Previous versions of this table used incorrect data that did not materially alter the overall balance.
 This was most recently amended on 7/08/2026.
@@ -377,7 +377,7 @@ basic security needed to retrain for better jobs, start businesses, take time to
 find the right job (rather than the first job) or care for children or family without
 going broke.
 
-Opportunity Party  Tax  Page 8
+Opportunity Party Tax Page 8
 
 ---
 
@@ -397,21 +397,21 @@ across multiple departments, with the greatest efficiencies in the Ministry for 
 Development and the Inland Revenue Department. This table provides a topline
 breakdown of the projected savings in administration costs.
 
-Organisation  Current operating  Projected operating
-expenditure ($m)  saving ($m)
+Organisation Current operating Projected operating
+expenditure ($m) saving ($m)
 
-Ministry of Social Development  1,631.0  977.0
+Ministry of Social Development 1,631.0 977.0
 
-Inland Revenue  755.0  255.0
+Inland Revenue 755.0 255.0
 
-Ministry of Business, Innovation and  1,200.0  150.0
+Ministry of Business, Innovation and 1,200.0 150.0
 Employment
 
-Oranga Tamariki  1,559.0  151.5
+Oranga Tamariki 1,559.0 151.5
 
-Ministry of Justice  942.3  213.8
+Ministry of Justice 942.3 213.8
 
-Total Administrative Savings  6,087.3  1,747.3
+Total Administrative Savings 6,087.3 1,747.3
 
 What will happen to people with disabilities living on benefits?
 No one on a current benefit will receive less income than they do currently - including
@@ -432,7 +432,7 @@ benefit from more affordable housing.
 Most homeowners will either get a smaller tax cut, stay the same or see a small tax
 increase - depending on their income and property value.
 
-Opportunity Party  Tax  Page 9
+Opportunity Party Tax Page 9
 
 ---
 
@@ -486,7 +486,7 @@ potential – it’s time to bring it back at the national level.
 The Citizen’s Income (otherwise known as a Universal Basic Income) is a newer idea.
 Countries like Finland and Ireland are expanding trials of the system after seeing how
 
-Opportunity Party  Tax  Page 10
+Opportunity Party Tax Page 10
 
 ---
 
@@ -541,7 +541,7 @@ though payments may go to the caregivers of their children. Temporary or RSE
 workers will also require extra considerations and provisions in the Tax Reset policy,
 which we’ll work with impacted sectors to design.
 
-Opportunity Party  Tax  Page 11
+Opportunity Party Tax Page 11
 
 ---
 
@@ -593,7 +593,7 @@ jobs out of desperation. Employers will need to offer decent pay and conditions 
 attract workers. To ensure the benefits of the Citizen’s Income aren’t captured by
 employers, we would retain minimum wage protections.
 
-Opportunity Party  Tax  Page 12
+Opportunity Party Tax Page 12
 
 ---
 
@@ -645,7 +645,7 @@ home). This kind of price volatility is specifically what the Tax Reset is desig
 Many of these Kiwis will benefit from higher incomes thanks to the Citizen’s Income,
 which will give them more flexibility to decide to stay in the housing market or leave it.
 
-Opportunity Party  Tax  Page 13
+Opportunity Party Tax Page 13
 
 ---
 
@@ -698,7 +698,7 @@ time to plan and build up their savings. Older people who have moved out of the
 labour market are generally not able to use employment to compensate for a loss of
 net income. The Retirement Commission recently recommended a ‘ten year roadmap’
 
-Opportunity Party  Tax  Page 14
+Opportunity Party Tax Page 14
 
 ---
 
@@ -748,4 +748,4 @@ She actively encouraged and supported her partner Owen Shaw to work
 on this policy, despite facing a terminal illness herself. She is greatly
 missed by all who knew her in Opportunity.
 
-Opportunity Party  Tax  Page 15
+Opportunity Party Tax Page 15

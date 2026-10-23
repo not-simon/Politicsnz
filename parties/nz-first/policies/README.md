@@ -29,7 +29,7 @@ Every 2026 policy of New Zealand First that this archive could find, with a shor
   - ['NZ First launches 'Use It or Lose It' dairy policy', 20 August 2026 (accessed 26 August 2026)](documents/not-retrieved-nzfirst-nz-first-launches-use-it-or-lose-it-dairy-policy.md) — <https://www.nzfirst.nz/nz_first_launches_use_it_or_lose_it_dairy_policy> (policies: POL54754)
   - ['Establishing a Special Economic Zone At Marsden Point', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-establishing-a-special-economic-zone-at-marsden-point.md) — <https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point> (policies: POL54755)
   - ['Complete the Christchurch Cathedral', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-complete-the-christchurch-cathedral.md) — <https://www.nzfirst.nz/complete_the_christchurch_cathedral> (policies: POL54756)
-  - ['Referendum on Maori Seats', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-referendum-on-maori-seats.md) — <https://www.nzfirst.nz/referendum_on_maori_seats> (policies: POL54757, POL54757)
+  - ['Referendum on Maori Seats', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-referendum-on-maori-seats.md) — <https://www.nzfirst.nz/referendum_on_maori_seats> (policies: POL54757)
   - ['Citizen’s Only Voting', undated (accessed 27 August 2026)](documents/not-retrieved-nzfirst-citizens-only-voting.md) — <https://www.nzfirst.nz/citizens_only_voting> (policies: POL54759)
   - ['NZFirst Campaign Announcement: NZ Super for Citizens Only ', 6 September 2026 (accessed 11 September 2026)](documents/not-retrieved-nzfirst-nzfirst-campaign-announcement-nz-super-for-citizens-only.md) — <https://www.nzfirst.nz/nzfirst_campaign_announcement_nz_super_for_citizens_only> (policies: POL54961)
   - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](documents/not-retrieved-nzfirst-nz-first-announces-immigration-reform-policies.md) — <https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies> (policies: POL54962, POL54963, POL54964, POL54965, POL54966, POL54967)
@@ -55,29 +55,29 @@ Every 2026 policy of New Zealand First that this archive could find, with a shor
 - **Immigration portfolio:** “It is imperative that a New Zealand First Minister holds the Immigration portfolio when part of the next coalition government to ensure the oversight, control and reform of the immigration system.” — [source](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md)
 - **First 100 days:** Legislation to abolish the Waitangi Tribunal and replace it with a Treaty of Waitangi Completion Commission, and the fireworks ban bill, “will be tabled … within the first hundred days”. — [source](documents/2026-09-26-nzfirst-policy-announcement-ending-the-waitangi-make-work-in.md), [source](documents/2026-10-09-nzfirst-to-ban-public-sales-of-fireworks.md)
 
-**Signature policies:** [Divide the "generation" and "retail" aspects of power companies](#pol54656-divide-the-generation-and-retail-aspects-of-power-companies); [Separate the Foodstuffs supermarket chain into two national cooperatives](#pol54658-separate-the-foodstuffs-supermarket-chain-into-two-national-cooperatives); [Return BNZ to NZ ownership](#pol54663-return-bnz-to-nz-ownership); [Return at least 50 percent of mining project royalties to the region where mining took place](#pol54661-return-at-least-50-percent-of-mining-project-royalties-to-the-region-where-mining); [Enrol New Zealand citizens in Kiwisaver at birth](#pol54664-enrol-new-zealand-citizens-in-kiwisaver-at-birth); [Establish a $100 billion NZ Future Fund to finance a 30-year infrastructure plan](#nzf-a01-establish-a-100-billion-nz-future-fund-to-finance-a-30-year-infrastructure-plan); [Withdraw New Zealand from the Paris Agreement](#nzf-a03-withdraw-new-zealand-from-the-paris-agreement); [Ensure that only NZ citizens can vote](#pol54759-ensure-that-only-nz-citizens-can-vote); [Provide superannuation only to NZ citizens](#pol54961-provide-superannuation-only-to-nz-citizens); [Introduce a binding referendum on the Māori seats](#pol54757-introduce-a-binding-referendum-on-the-maori-seats); [Replace the Waitangi Tribunal with a Treaty of Waitangi Completion Commission](#pol55157-replace-the-waitangi-tribunal-with-a-treaty-of-waitangi-completion-commission); [Invest $1 billion in a 'National Subsurface Development Survey' to find and develop oil, gas, geothermal and CO2-storage resources](#nzf-a02-invest-1-billion-in-a-national-subsurface-development-survey-to-find-and-develop-o); [Support new parents with a $5000 grant for the first three years of their child's life](#pol54746-support-new-parents-with-a-5000-grant-for-the-first-three-years-of-their-childs-l); [Lower the corporate tax rate to 20% for small businesses](#pol55155-lower-the-corporate-tax-rate-to-20-for-small-businesses).
+**Signature policies:** [Divide the "generation" and "retail" aspects of power companies](#pol54656-divide-the-generation-and-retail-aspects-of-power-companies); [Separate the Foodstuffs supermarket chain into two national cooperatives](#pol54658-separate-the-foodstuffs-supermarket-chain-into-two-national-cooperatives); [Return BNZ to NZ ownership](#pol54663-return-bnz-to-nz-ownership); [Return at least 50 percent of mining project royalties to the region where mining took place](#pol54661-return-at-least-50-percent-of-mining-project-royalties-to-the-region-where-mining-took-place); [Enrol New Zealand citizens in Kiwisaver at birth](#pol54664-enrol-new-zealand-citizens-in-kiwisaver-at-birth); [Establish a $100 billion NZ Future Fund to finance a 30-year infrastructure plan](#nzf-a01-establish-a-100-billion-nz-future-fund-to-finance-a-30-year-infrastructure-plan); [Withdraw New Zealand from the Paris Agreement](#nzf-a03-withdraw-new-zealand-from-the-paris-agreement); [Ensure that only NZ citizens can vote](#pol54759-ensure-that-only-nz-citizens-can-vote); [Provide superannuation only to NZ citizens](#pol54961-provide-superannuation-only-to-nz-citizens); [Introduce a binding referendum on the Māori seats](#pol54757-introduce-a-binding-referendum-on-the-māori-seats); [Replace the Waitangi Tribunal with a Treaty of Waitangi Completion Commission](#pol55157-replace-the-waitangi-tribunal-with-a-treaty-of-waitangi-completion-commission); [Invest $1 billion in a 'National Subsurface Development Survey' to find and develop oil, gas, geothermal and CO2-storage resources](#nzf-a02-invest-1-billion-in-a-national-subsurface-development-survey-to-find-and-develop-oil-gas-geothermal-and-co2-storage-resources); [Support new parents with a $5000 grant for the first three years of their child's life](#pol54746-support-new-parents-with-a-5000-grant-for-the-first-three-years-of-their-childs-life); [Lower the corporate tax rate to 20% for small businesses](#pol55155-lower-the-corporate-tax-rate-to-20-for-small-businesses).
 
 ## Contents
 
-- [Community, culture, safety & recreation](#community-culture-safety-recreation) (6)
-- [Cost of living, competition & banking](#cost-of-living-competition-banking) (6)
-- [Democracy, the Treaty & Māori affairs](#democracy-the-treaty-maori-affairs) (4)
-- [Economy, tax & business](#economy-tax-business) (9)
-- [Environment, climate & farming rules](#environment-climate-farming-rules) (4)
-- [Families, incomes, savings & super](#families-incomes-savings-super) (7)
+- [Community, culture, safety & recreation](#community-culture-safety--recreation) (6)
+- [Cost of living, competition & banking](#cost-of-living-competition--banking) (6)
+- [Democracy, the Treaty & Māori affairs](#democracy-the-treaty--māori-affairs) (4)
+- [Economy, tax & business](#economy-tax--business) (9)
+- [Environment, climate & farming rules](#environment-climate--farming-rules) (4)
+- [Families, incomes, savings & super](#families-incomes-savings--super) (7)
 - [Health](#health) (7)
-- [Housing, infrastructure & transport](#housing-infrastructure-transport) (5)
-- [Immigration & citizenship](#immigration-citizenship) (11)
-- [Law & order](#law-order) (5)
-- [Mining, energy & resources](#mining-energy-resources) (5)
+- [Housing, infrastructure & transport](#housing-infrastructure--transport) (5)
+- [Immigration & citizenship](#immigration--citizenship) (11)
+- [Law & order](#law--order) (5)
+- [Mining, energy & resources](#mining-energy--resources) (5)
 - [Document index](#document-index)
 
 ## Community, culture, safety & recreation
 
 ### POL54756: Complete the reconstruction of Christchurch Cathedral
 
-<a id="pol54756-complete-the-reconstruction-of-christchurch-cathedral"></a>**Statement:** Complete the reconstruction of Christchurch Cathedral  
-*Summary source: policy.nz* · topics: media-culture-and-recreation, law-justice-and-government, arts-culture-and-heritage, local-government, key-policies-media-culture-and-recreation
+**Statement:** Complete the reconstruction of Christchurch Cathedral  
+*Summary source: policy.nz* · topics: media-culture-and-recreation, law-justice-and-government, arts-culture-and-heritage, local-government
 
 - **Why:** This party claims the rebuild is representative of Christchurch's earthquake recovery. Completing the rebuild would restore a symbol of the city's heritage and be a boost for local tourism and business in the city.
 - **How:** The party has pledged $15m dollars to Christ Church Cathedral Reinstatement Ltd to complete the company's proposed pathway. The funding would be alongside money Christchurch City Council, not instead of. 
@@ -93,7 +93,7 @@ The additional government funding would help complete the first stage of the new
 
 ### POL55234: Ban public sales of fireworks
 
-<a id="pol55234-ban-public-sales-of-fireworks"></a>**Statement:** Ban public sales of fireworks  
+**Statement:** Ban public sales of fireworks  
 *Summary source: policy.nz* · topics: law-justice-and-government, media-culture-and-recreation, family-justice-and-safety, sports-and-recreation
 
 - **Why:** This party says that the fireworks cause distress for pets, fires, and lead to increased use of emergency response resources. This leads to healthcare and ACC costs.
@@ -105,7 +105,7 @@ The additional government funding would help complete the first stage of the new
 
 ### POL55304: Increase the funding for the NZ Coastguard
 
-<a id="pol55304-increase-the-funding-for-the-nz-coastguard"></a>**Statement:** Increase the funding for the NZ Coastguard  
+**Statement:** Increase the funding for the NZ Coastguard  
 *Summary source: policy.nz* · topics: law-justice-and-government, environment, family-justice-and-safety, oceans
 
 - **Why:** This party says that Coastguard, as an organisation, is funded only 40% by the government. 60% of its funding comes from public donations. The party argues that an essential service needs a more reliable funding model, so the organisation has greater certainty.
@@ -116,7 +116,7 @@ The additional government funding would help complete the first stage of the new
 
 ### POL55309: Establish a combat sport commission
 
-<a id="pol55309-establish-a-combat-sport-commission"></a>**Statement:** Establish a combat sport commission  
+**Statement:** Establish a combat sport commission  
 *Summary source: policy.nz* · topics: media-culture-and-recreation, law-justice-and-government, sports-and-recreation, public-sector
 
 - **Why:** This party says that the coroner's report on the killing of Kain Parsons, in conjunction with concerns of illegal underground fight clubs involved in organised crime, requires expanded regulation of combat sports.
@@ -127,7 +127,7 @@ The additional government funding would help complete the first stage of the new
 
 ### NZF-A28: Set national accessibility standards (Accessibility Standards Bill)
 
-<a id="nzf-a28-set-national-accessibility-standards-accessibility-standards-bill"></a>**Statement:** Set national accessibility standards (Accessibility Standards Bill)  
+**Statement:** Set national accessibility standards (Accessibility Standards Bill)  
 *Summary source: archive* · topics: disability, community-and-inclusion
 
 - **Why:** The party says about 17% of New Zealanders are disabled and face avoidable barriers.
@@ -138,7 +138,7 @@ The additional government funding would help complete the first stage of the new
 
 ### NZF-A29: Oppose a social media ban for under-16s
 
-<a id="nzf-a29-oppose-a-social-media-ban-for-under-16s"></a>**Statement:** Oppose a social media ban for under-16s  
+**Statement:** Oppose a social media ban for under-16s  
 *Summary source: archive* · topics: internet-and-digital-technologies, young-people
 
 - **Why:** The party says such a ban cannot work without banning VPNs or requiring digital ID, which would erode privacy, freedoms and parental rights.
@@ -151,7 +151,7 @@ The additional government funding would help complete the first stage of the new
 
 ### POL54656: Divide the "generation" and "retail" aspects of power companies
 
-<a id="pol54656-divide-the-generation-and-retail-aspects-of-power-companies"></a>**Statement:** Divide the "generation" and "retail" aspects of power companies  
+**Statement:** Divide the "generation" and "retail" aspects of power companies  
 *Summary source: policy.nz* · topics: transport-and-infrastructure, incomes-and-employment, economy, energy, prices, economic-development-and-industry
 
 - **Why:** This party says that New Zealanders are paying too much for power, because four large companies generate 90 percent of NZ's power, controlling the supply and selling the power directly to customers. The party says that this situation results in high prices for households and industry, leading to companies closing down and job losses.
@@ -162,8 +162,8 @@ The additional government funding would help complete the first stage of the new
 
 ### POL54657: Guarantee fixed-price contracts for new electricity generation projects
 
-<a id="pol54657-guarantee-fixed-price-contracts-for-new-electricity-generation-projects"></a>**Statement:** Guarantee fixed-price contracts for new electricity generation projects  
-*Summary source: policy.nz* · topics: transport-and-infrastructure, incomes-and-employment, energy, infrastructure-funding-and-planning, prices, key-policies-transport-and-infrastructure
+**Statement:** Guarantee fixed-price contracts for new electricity generation projects  
+*Summary source: policy.nz* · topics: transport-and-infrastructure, incomes-and-employment, energy, infrastructure-funding-and-planning, prices
 
 - **Why:** This party says that prices for electricity are too high in NZ. Because of the structure of the market with four major companies, it is hard for competitors to enter the market. The "gentailer" companies can hold back supply, making electricity more expensive, instead of investing in more power generation.
 - **How:** This party would guarantee long-term, fixed-price contractions for building new electricity generation. The companies building this infrastructure would receive guarantees that their power would be the first to be used when needed. This would make it easier for investors to fund electricity generation projects, and increase New Zealand's energy security and resilience.
@@ -175,8 +175,8 @@ The additional government funding would help complete the first stage of the new
 
 ### POL54658: Separate the Foodstuffs supermarket chain into two national cooperatives
 
-<a id="pol54658-separate-the-foodstuffs-supermarket-chain-into-two-national-cooperatives"></a>**Statement:** Separate the Foodstuffs supermarket chain into two national cooperatives  
-*Summary source: policy.nz* · topics: incomes-and-employment, economy, prices, business-support, economic-development-and-industry, key-policies-economy
+**Statement:** Separate the Foodstuffs supermarket chain into two national cooperatives  
+*Summary source: policy.nz* · topics: incomes-and-employment, economy, prices, business-support, economic-development-and-industry
 
 - **Why:** This party says that food prices are too high in New Zealand, as a result of a supermarket duopoly controlling 80% of the grocery market. Food producers and households do not get a good deal from this system. Creating more competition will drive prices down.
 - **How:** This party would introduce legislation to split the Foodstuffs brands into two cooperatives; one for New World and Four Square and the other for Pak'n'Save. This would create more competition with Woolworths and result in lower prices and fairer deals for producers. This would create more certainty for major businesses like McCains and Heinz Watties, which have experienced job losses as a result of a poorly functioning system.
@@ -186,7 +186,7 @@ The additional government funding would help complete the first stage of the new
 
 ### POL54659: Give the Commerce Commission and Grocery Commissioner more powers
 
-<a id="pol54659-give-the-commerce-commission-and-grocery-commissioner-more-powers"></a>**Statement:** Give the Commerce Commission and Grocery Commissioner more powers  
+**Statement:** Give the Commerce Commission and Grocery Commissioner more powers  
 *Summary source: policy.nz* · topics: incomes-and-employment, economy, law-justice-and-government, prices, economic-development-and-industry, criminal-justice
 
 - **Why:** This party says that the current Grocery Commissioner does not have the power to enforce the sector properly. The Commerce Commission cannot apply penalties as high as its counterpoint in Australia, investigations are often slow, and penalties are not enforced.
@@ -197,7 +197,7 @@ The additional government funding would help complete the first stage of the new
 
 ### POL54660: Make it easier for small food suppliers to compete on supermarket shelves
 
-<a id="pol54660-make-it-easier-for-small-food-suppliers-to-compete-on-supermarket-shelves"></a>**Statement:** Make it easier for small food suppliers to compete on supermarket shelves  
+**Statement:** Make it easier for small food suppliers to compete on supermarket shelves  
 *Summary source: policy.nz* · topics: incomes-and-employment, economy, prices, agriculture
 
 - **Why:** This party says that prices for food are too high in NZ, in part because supermarkets limit small food providers' access to customers. The supermarkets control suppliers' access to the market, favouring larger providers.
@@ -208,7 +208,7 @@ The additional government funding would help complete the first stage of the new
 
 ### POL54663: Return BNZ to NZ ownership
 
-<a id="pol54663-return-bnz-to-nz-ownership"></a>**Statement:** Return BNZ to NZ ownership  
+**Statement:** Return BNZ to NZ ownership  
 *Summary source: policy.nz* · topics: incomes-and-employment, economy, prices, superannuation-and-savings, government-revenue-and-finance
 
 - **Why:** This party says that 85 percent of New Zealand banks are owned by Australian companies, and lending is offered at margins higher than Australia. Domestically-owned Kiwibank has just 8 percent of the mortgage market. A New Zealand bank of a similar scale would compete with these major Australian banks and promote economic sovereignty.
@@ -222,8 +222,8 @@ The additional government funding would help complete the first stage of the new
 
 ### POL54668: Disestablish the Independent Māori Statutory Board from Auckland Council
 
-<a id="pol54668-disestablish-the-independent-maori-statutory-board-from-auckland-council"></a>**Statement:** Disestablish the Independent Māori Statutory Board from Auckland Council  
-*Summary source: policy.nz* · topics: law-justice-and-government, te-ao-maori, economy, local-government, te-tiriti-o-waitangi-and-governance, key-policies-te-ao-maori
+**Statement:** Disestablish the Independent Māori Statutory Board from Auckland Council  
+*Summary source: policy.nz* · topics: law-justice-and-government, te-ao-maori, economy, local-government, te-tiriti-o-waitangi-and-governance, regional-development
 
 - **Why:** This party says that this board is not accountable to ratepayers, yet influences decisions that are part of Auckland Council. The board is not elected and cost $3.5m last year. It says that Auckland Council can engage with Māori and recognise their interests but that this engagement should happen through people who are elected.
 - **How:** This party would introduce a members bill to disestablish the Independent Māori Statutory Board. All functions of the board would be returned to the main body of Auckland Council.
@@ -233,8 +233,8 @@ The additional government funding would help complete the first stage of the new
 
 ### POL54757: Introduce a binding referendum on the Māori seats
 
-<a id="pol54757-introduce-a-binding-referendum-on-the-maori-seats"></a>**Statement:** Introduce a binding referendum on the Māori seats  
-*Summary source: policy.nz* · topics: te-ao-maori, law-justice-and-government, te-tiriti-o-waitangi-and-governance, parliament-and-democracy, key-policies-law-justice-and-government, key-policies-te-ao-maori
+**Statement:** Introduce a binding referendum on the Māori seats  
+*Summary source: policy.nz* · topics: te-ao-maori, law-justice-and-government, te-tiriti-o-waitangi-and-governance, parliament-and-democracy
 
 - **Why:** This party says that Māori have been better represented since the establishment of MMP. When MMP was introduced, a report recommended scrapping the old Māori seats because Māori would be better represented. The party argues that a referendum is needed to justify the seats' existence and so the issue can be settled. It also cites the conduct of Te Pati Māori in Parliament as justifying the need for a referendum.
 - **How:** This party would introduce legislation to run a public referendum on the Māori seats at the next general election. It says the referendum would have no extra costs if it could be included on the ballot papers at the next general election. The result would not affect the outcomes of that election, but the following election three years later.
@@ -246,8 +246,8 @@ The additional government funding would help complete the first stage of the new
 
 ### POL54759: Ensure that only NZ citizens can vote
 
-<a id="pol54759-ensure-that-only-nz-citizens-can-vote"></a>**Statement:** Ensure that only NZ citizens can vote  
-*Summary source: policy.nz* · topics: te-ao-maori, law-justice-and-government, te-tiriti-o-waitangi-and-governance, parliament-and-democracy, key-policies-law-justice-and-government, key-policies-te-ao-maori
+**Statement:** Ensure that only NZ citizens can vote  
+*Summary source: policy.nz* · topics: te-ao-maori, law-justice-and-government, te-tiriti-o-waitangi-and-governance, parliament-and-democracy
 
 - **Why:** This party says that it is a problem that after two years of living in NZ, someone can claim permanent residency and vote. For visa holders who have no expiry date for their visa, they can technically vote after one year. It says that only those who are natural-born citizens and have sworn allegiance to NZ should be able to vote for who governs the country and in referendums that can change NZ.
 - **How:** This party would restrict voting rights for all referenda and levels of government (including local government) to those with legal citizenship.
@@ -260,7 +260,7 @@ Permanent residents will still retain other rights such as the right to live, wo
 
 ### POL55157: Replace the Waitangi Tribunal with a Treaty of Waitangi Completion Commission
 
-<a id="pol55157-replace-the-waitangi-tribunal-with-a-treaty-of-waitangi-completion-commission"></a>**Statement:** Replace the Waitangi Tribunal with a Treaty of Waitangi Completion Commission  
+**Statement:** Replace the Waitangi Tribunal with a Treaty of Waitangi Completion Commission  
 *Summary source: policy.nz* · topics: te-ao-maori, law-justice-and-government, te-tiriti-o-waitangi-and-governance, public-sector, parliament-and-democracy
 
 - **Why:** This party says that the Waitangi Tribunal, in its capacity to hear alleged ongoing breaches of the Treaty, is beginning to violate Parliament's sovereignty and voters' rights through its criticism of government policy.
@@ -275,7 +275,7 @@ Permanent residents will still retain other rights such as the right to live, wo
 
 ### POL54754: Increase the milk quantity guaranteed to NZ dairy manufacturing
 
-<a id="pol54754-increase-the-milk-quantity-guaranteed-to-nz-dairy-manufacturing"></a>**Statement:** Increase the milk quantity guaranteed to NZ dairy manufacturing  
+**Statement:** Increase the milk quantity guaranteed to NZ dairy manufacturing  
 *Summary source: policy.nz* · topics: economy, agriculture, trade-and-exports, economic-development-and-industry
 
 - **Why:** This party says that the present 50 million litres per year is too low to incentivise production at a large scale. The status-quo supports New Zealand-based dairy manufacturers, but does not support these firms to scale to size, which disincentives investment into Fonterra. 
@@ -289,7 +289,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL54755: Establish a Special Economic Zone at Marsden Point
 
-<a id="pol54755-establish-a-special-economic-zone-at-marsden-point"></a>**Statement:** Establish a Special Economic Zone at Marsden Point  
+**Statement:** Establish a Special Economic Zone at Marsden Point  
 *Summary source: policy.nz* · topics: economy, transport-and-infrastructure, economic-development-and-industry, energy, business-support, regional-development
 
 - **Why:** This party says Marsden Point should be allowed to operate under a lighter regulatory framework to support domestic energy production. The party argues that, with rising global tensions and increasing energy costs, New Zealand needs to better ensure itself against spikes in global fuel prices. Establishing a special economic zone (SEZ) will attract foreign investment.
@@ -300,7 +300,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL55155: Lower the corporate tax rate to 20% for small businesses
 
-<a id="pol55155-lower-the-corporate-tax-rate-to-20-for-small-businesses"></a>**Statement:** Lower the corporate tax rate to 20% for small businesses  
+**Statement:** Lower the corporate tax rate to 20% for small businesses  
 *Summary source: policy.nz* · topics: incomes-and-employment, economy, tax-and-income-support, business-support, economic-development-and-industry
 
 - **Why:** This party says that NZ firms need support for greater productivity and growth. The party argues that small businesses operating on thin margins need additional support to invest, develop, and start up.
@@ -311,7 +311,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL55308: Impose trade barriers to protect NZ-produced aluminium
 
-<a id="pol55308-impose-trade-barriers-to-protect-nz-produced-aluminium"></a>**Statement:** Impose trade barriers to protect NZ-produced aluminium  
+**Statement:** Impose trade barriers to protect NZ-produced aluminium  
 *Summary source: policy.nz* · topics: economy, incomes-and-employment, trade-and-exports, business-support, jobs-and-employment
 
 - **Why:** This party says that other countries such as Australia, the UK, the US, the EU, and Canada have imposed trade protections on aluminium. The party says jobs at 9 producers across NZ are at risk.
@@ -323,7 +323,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A01: Establish a $100 billion NZ Future Fund to finance a 30-year infrastructure plan
 
-<a id="nzf-a01-establish-a-100-billion-nz-future-fund-to-finance-a-30-year-infrastructure-plan"></a>**Statement:** Establish a $100 billion NZ Future Fund to finance a 30-year infrastructure plan  
+**Statement:** Establish a $100 billion NZ Future Fund to finance a 30-year infrastructure plan  
 *Summary source: archive* · topics: economy, infrastructure-funding-and-planning
 
 - **Why:** The party says New Zealand needs a long-term, non-political way to pay for infrastructure instead of an 'on-off approach'.
@@ -337,7 +337,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A06: Allow 50% first-year depreciation on new plant and machinery for manufacturers and export sectors
 
-<a id="nzf-a06-allow-50-first-year-depreciation-on-new-plant-and-machinery-for-manufacturers-and"></a>**Statement:** Allow 50% first-year depreciation on new plant and machinery for manufacturers and export sectors  
+**Statement:** Allow 50% first-year depreciation on new plant and machinery for manufacturers and export sectors  
 *Summary source: archive* · topics: economy, business-support, government-revenue-and-finance
 
 - **Why:** The party says weak productivity and low business investment hold New Zealand back, and that front-loaded depreciation lifts investment and GDP.
@@ -347,7 +347,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A07: Expand the Game Development Sector Rebate and baseline funding for the Centre of Digital Excellence (CODE)
 
-<a id="nzf-a07-expand-the-game-development-sector-rebate-and-baseline-funding-for-the-centre-of-d"></a>**Statement:** Expand the Game Development Sector Rebate and baseline funding for the Centre of Digital Excellence (CODE)  
+**Statement:** Expand the Game Development Sector Rebate and baseline funding for the Centre of Digital Excellence (CODE)  
 *Summary source: archive* · topics: economy, business-support, arts-culture-and-heritage
 
 - **Why:** The party says the video-game industry is growing fast but local talent is being lost to Australia because of limits on the current rebate.
@@ -357,7 +357,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A27: Make banks liable for preventable payment scams (Preventing Payment Scams bill)
 
-<a id="nzf-a27-make-banks-liable-for-preventable-payment-scams-preventing-payment-scams-bill"></a>**Statement:** Make banks liable for preventable payment scams (Preventing Payment Scams bill)  
+**Statement:** Make banks liable for preventable payment scams (Preventing Payment Scams bill)  
 *Summary source: archive* · topics: economy, business-support, criminal-justice
 
 - **Why:** The party says the banks' own code on scams is 'by banks for banks' and too weak.
@@ -368,7 +368,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A30: Oppose the New Zealand–India free trade agreement
 
-<a id="nzf-a30-oppose-the-new-zealand-india-free-trade-agreement"></a>**Statement:** Oppose the New Zealand–India free trade agreement  
+**Statement:** Oppose the New Zealand–India free trade agreement  
 *Summary source: archive* · topics: trade-and-exports, migration, international-relations
 
 - **Why:** The party says the deal includes immigration and Paris Agreement clauses and investment commitments that are bad for New Zealand.
@@ -381,7 +381,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A03: Withdraw New Zealand from the Paris Agreement
 
-<a id="nzf-a03-withdraw-new-zealand-from-the-paris-agreement"></a>**Statement:** Withdraw New Zealand from the Paris Agreement  
+**Statement:** Withdraw New Zealand from the Paris Agreement  
 *Summary source: archive* · topics: environment, emissions-reduction, international-relations
 
 - **Why:** The party says meeting Paris commitments could send up to $22 billion of taxpayers' money offshore while New Zealand produces about 0.17% of global emissions.
@@ -393,7 +393,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A24: Introduce a nationwide container return scheme
 
-<a id="nzf-a24-introduce-a-nationwide-container-return-scheme"></a>**Statement:** Introduce a nationwide container return scheme  
+**Statement:** Introduce a nationwide container return scheme  
 *Summary source: archive* · topics: environment, fresh-water-and-pollution, local-government
 
 - **Why:** The party says billions of beverage containers end up as litter and ratepayers carry the cost.
@@ -403,7 +403,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A25: Pause Waikato Regional Council's Plan Change 1 farm rules
 
-<a id="nzf-a25-pause-waikato-regional-councils-plan-change-1-farm-rules"></a>**Statement:** Pause Waikato Regional Council's Plan Change 1 farm rules  
+**Statement:** Pause Waikato Regional Council's Plan Change 1 farm rules  
 *Summary source: archive* · topics: agriculture, fresh-water-and-pollution, local-government
 
 - **Why:** The party says Plan Change 1 would force thousands of Waikato and Waipā farms into costly consents under a planning system that is being replaced.
@@ -413,7 +413,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A26: Oppose liberalising genetic engineering without adequate safeguards
 
-<a id="nzf-a26-oppose-liberalising-genetic-engineering-without-adequate-safeguards"></a>**Statement:** Oppose liberalising genetic engineering without adequate safeguards  
+**Statement:** Oppose liberalising genetic engineering without adequate safeguards  
 *Summary source: archive* · topics: agriculture, environment, trade-and-exports
 
 - **Why:** The party says New Zealand's export reputation is built on its GE-free label.
@@ -425,8 +425,8 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL54664: Enrol New Zealand citizens in Kiwisaver at birth
 
-<a id="pol54664-enrol-new-zealand-citizens-in-kiwisaver-at-birth"></a>**Statement:** Enrol New Zealand citizens in Kiwisaver at birth  
-*Summary source: policy.nz* · topics: incomes-and-employment, community-and-inclusion, superannuation-and-savings, seniors, young-people, key-policies-incomes-and-employment
+**Statement:** Enrol New Zealand citizens in Kiwisaver at birth  
+*Summary source: policy.nz* · topics: incomes-and-employment, community-and-inclusion, superannuation-and-savings, seniors, young-people
 
 - **Why:** This party says that ensuring children are enrolled in Kiwisaver would create benefits that compound for decades. Birth enrollment ensures that all New Zealanders can participate, and an up-front government contribution of $1,000 would mean that all citizens will enter adulthood with savings.
 - **How:** This party would enrol all New Zealand citizens in Kiwisaver at birth and provide a $1,000 contribution to all these accounts from the Crown. This would complement other Kiwisaver policies, including increasing employee and employer contribution to 8% and 10% and making enrolment compulsory for all people in the workforce.
@@ -436,8 +436,8 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL54746: Support new parents with a $5000 grant for the first three years of their child's life
 
-<a id="pol54746-support-new-parents-with-a-5000-grant-for-the-first-three-years-of-their-childs-l"></a>**Statement:** Support new parents with a $5000 grant for the first three years of their child's life  
-*Summary source: policy.nz* · topics: incomes-and-employment, community-and-inclusion, benefits, young-people, tax-and-income-support, key-policies-incomes-and-employment
+**Statement:** Support new parents with a $5000 grant for the first three years of their child's life  
+*Summary source: policy.nz* · topics: incomes-and-employment, community-and-inclusion, benefits, young-people, tax-and-income-support
 
 - **Why:** This party says that New Zealand's birth rate is only 1.53 children per woman, when the replacement rate is 2.1 children per woman. If something is not done, this party says New Zealand may become entirely dependent on immigration in the future.
 - **How:** This party would offer all new parents (where at least one is a New Zealand citizen) a $5000 grant per year for the first three years of their child's life. This grant would apply to the first, second, and third children which the couple have. The grant would be tax free and not replace any current support.  This party estimates that this policy would cost $400 million per three-year-cycle.
@@ -448,8 +448,8 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL54961: Provide superannuation only to NZ citizens
 
-<a id="pol54961-provide-superannuation-only-to-nz-citizens"></a>**Statement:** Provide superannuation only to NZ citizens  
-*Summary source: policy.nz* · topics: incomes-and-employment, migration, superannuation-and-savings, benefits, key-policies-incomes-and-employment, key-policies-migration
+**Statement:** Provide superannuation only to NZ citizens  
+*Summary source: policy.nz* · topics: incomes-and-employment, migration, superannuation-and-savings, benefits
 
 - **Why:** The party says that New Zealanders who have worked since they were teenagers deserve security in retirement. As superannuation becomes harder to pay for as the population ages, it's unfair for people who have lived and worked in the country for a lot less time to receive the same payments.
 - **How:** The party would phase in the demand that one be a citizen to be eligible for superannuation over three years. It would amend the eligibility criteria to remove access to NZ Super for permanent residents.
@@ -461,7 +461,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL55257: Increase In-Work-Family-Tax-Credit by $70 a week
 
-<a id="pol55257-increase-in-work-family-tax-credit-by-70-a-week"></a>**Statement:** Increase In-Work-Family-Tax-Credit by $70 a week  
+**Statement:** Increase In-Work-Family-Tax-Credit by $70 a week  
 *Summary source: policy.nz* · topics: incomes-and-employment, community-and-inclusion, benefits, tax-and-income-support, young-people
 
 - **Why:** This party says that working parents are struggling to get by and afford the essentials. The party cites the additional, but temporary, $50 added to the IWFTC by the government this year as needing to be increased and made permanent. The party says such changes will turn the temporary relief into a long-term pathway for parents in work to be able to plan for their families’ future.
@@ -472,7 +472,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL55258: Increase the minimum wage in line with inflation
 
-<a id="pol55258-increase-the-minimum-wage-in-line-with-inflation"></a>**Statement:** Increase the minimum wage in line with inflation  
+**Statement:** Increase the minimum wage in line with inflation  
 *Summary source: policy.nz* · topics: incomes-and-employment, wages-and-working-conditions, jobs-and-employment
 
 - **Why:** This party says that workers need their wages to not fall below inflation. The party says it has advocated for this in coalitions before and would do so again.
@@ -483,7 +483,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A19: Keep NZ Super universal at 65 with no means testing, and no asset sales
 
-<a id="nzf-a19-keep-nz-super-universal-at-65-with-no-means-testing-and-no-asset-sales"></a>**Statement:** Keep NZ Super universal at 65 with no means testing, and no asset sales  
+**Statement:** Keep NZ Super universal at 65 with no means testing, and no asset sales  
 *Summary source: archive* · topics: seniors, benefits, economy
 
 - **Why:** The party presents itself as the defender of superannuitants and opposes privatisation.
@@ -493,11 +493,11 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A20: Reform retirement village law without retrospective three-month buy-backs
 
-<a id="nzf-a20-reform-retirement-village-law-without-retrospective-three-month-buy-backs"></a>**Statement:** Reform retirement village law without retrospective three-month buy-backs  
+**Statement:** Reform retirement village law without retrospective three-month buy-backs  
 *Summary source: archive* · topics: seniors, housing
 
 - **Why:** The party says retirement villages are an important housing option for seniors but residents need more protection and choice.
-- **How:** This party would introduce Retirement Villages Amendment legislation next term that protects residents and supports the sector, and opposes proposals for retrospective three-month buy-backs.
+- **How:** The party backs the Retirement Villages Amendment Bill announced for introduction next term, says it will deliver reform that protects residents and keeps the sector sustainable, and opposes proposals for retrospective three-month buy-backs.
 - **Sources:**
   - [Common Sense Must Prevail For Retirement Village Reform (Press release, 2026-09-18)](https://www.scoop.co.nz/stories/PA2609/S00193/common-sense-must-prevail-for-retirement-village-reform.htm) — [full text](documents/2026-09-18-common-sense-must-prevail-for-retirement-village-reform.md)
 
@@ -505,7 +505,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL55057: Promote healthy eating as preventative healthcare
 
-<a id="pol55057-promote-healthy-eating-as-preventative-healthcare"></a>**Statement:** Promote healthy eating as preventative healthcare  
+**Statement:** Promote healthy eating as preventative healthcare  
 *Summary source: policy.nz* · topics: health, education, health-services, public-health, early-childhood-education, schools
 
 - **Why:** This party says that too large a share of NZ health spending goes towards caring for people once they're sick, as opposed to before. The party claims that 59% of health spending is spent treating chronic illness, and only 1.75% on the prevention of such conditions.
@@ -516,7 +516,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL55073: Make health coaches an integrated part of primary care
 
-<a id="pol55073-make-health-coaches-an-integrated-part-of-primary-care"></a>**Statement:** Make health coaches an integrated part of primary care  
+**Statement:** Make health coaches an integrated part of primary care  
 *Summary source: policy.nz* · topics: health, health-services, health-funding-and-workforce, public-health
 
 - **Why:** This party says that the healthcare system responds to crises without dealing with the underlying causes, such as poor nutrition. It claims the incorporation of health coaches can help educate patients on how to better avoid underlying causes of illness.
@@ -527,8 +527,8 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL55076: Fund organic and nutrient-based health interventions
 
-<a id="pol55076-fund-organic-and-nutrient-based-health-interventions"></a>**Statement:** Fund organic and nutrient-based health interventions  
-*Summary source: policy.nz* · topics: economy, health, business-support, public-health, mental-health, key-policies-health
+**Statement:** Fund organic and nutrient-based health interventions  
+*Summary source: policy.nz* · topics: economy, health, business-support, public-health, mental-health
 
 - **Why:** This party says that there is too little investment in preventive care. Poor nutrition is a driver of underlying conditions that lead people to need expensive healthcare.
 - **How:** This party would fund NZ scientists to assess nutritional interventions for preventing and treating mental illness. It would remove Medsafe/Pharmac barriers to recognising safe nutrients and invest in hospital trials that assess the effectiveness of intravenous vitamin C to treat infections. Farmers would be supported by to invest in the research of alternatives to potentially harmful agricultural sprays. It would fund development in agricultural tech and cut regulatory barriers to help grow markets for organic food items.
@@ -538,7 +538,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL55077: Commission a full and independent review of NZ's nutritional guidelines and education
 
-<a id="pol55077-commission-a-full-and-independent-review-of-nzs-nutritional-guidelines-and-educat"></a>**Statement:** Commission a full and independent review of NZ's nutritional guidelines and education  
+**Statement:** Commission a full and independent review of NZ's nutritional guidelines and education  
 *Summary source: policy.nz* · topics: health, education, medicines, tertiary-education-and-research, public-health, health-services
 
 - **Why:** This party says that too large a share of NZ health spending goes towards caring for people once they're sick, as opposed to before. The party claims that 59% of health spending is spent treating chronic illness, and only 1.75% is spent on the prevention of such conditions. Better education and info can help inform people of how they can best make healthier decisions.
@@ -550,8 +550,8 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL55078: Increase autonomy and reduce administration for general practitioners
 
-<a id="pol55078-increase-autonomy-and-reduce-administration-for-general-practitioners"></a>**Statement:** Increase autonomy and reduce administration for general practitioners  
-*Summary source: policy.nz* · topics: health, public-health, health-funding-and-workforce, key-policies-health
+**Statement:** Increase autonomy and reduce administration for general practitioners  
+*Summary source: policy.nz* · topics: health, public-health, health-funding-and-workforce
 
 - **Why:** This party says that preventive care is underemphasised as part of the NZ health system. Regulatory barriers can increase costs for doctors, and professional standards are seen as too restrictive from the party's perspective.
 - **How:** This party would reduce the regulatory burden on doctors in primary care. It would also allow greater diversity of medical viewpoints in professional standards.
@@ -561,7 +561,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A17: Other 'Make NZ Healthy' commitments: informed consent, metabolic health, recognising nurses, vitamin D review, research on agricultural sprays
 
-<a id="nzf-a17-other-make-nz-healthy-commitments-informed-consent-metabolic-health-recognising-nu"></a>**Statement:** Other 'Make NZ Healthy' commitments: informed consent, metabolic health, recognising nurses, vitamin D review, research on agricultural sprays  
+**Statement:** Other 'Make NZ Healthy' commitments: informed consent, metabolic health, recognising nurses, vitamin D review, research on agricultural sprays  
 *Summary source: archive* · topics: health, public-health, agriculture
 
 - **Why:** The party says the health system spends almost all its money treating illness rather than preventing it.
@@ -571,10 +571,10 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A18: Hold a select committee inquiry into COVID-19 vaccine injuries
 
-<a id="nzf-a18-hold-a-select-committee-inquiry-into-covid-19-vaccine-injuries"></a>**Statement:** Hold a select committee inquiry into COVID-19 vaccine injuries  
+**Statement:** Hold a select committee inquiry into COVID-19 vaccine injuries  
 *Summary source: archive* · topics: health, parliament-and-democracy
 
-- **Why:** The party says the Royal Commission on COVID-19 did not go far enough on vaccine safety and who was affected.
+- **Why:** The party says the recent COVID-19 inquiry report did not go far enough on vaccine safety and who was affected.
 - **How:** This party would establish a select committee inquiry into injuries the vaccine 'may have caused', so that those affected can give evidence publicly and decision-makers can be held to account.
 - **Sources:**
   - [NZ First Calls For Select Committee Inquiry Into Vaccine Injuries (Press release, 2026-03-11)](https://www.scoop.co.nz/stories/PA2603/S00062/nz-first-calls-for-select-committee-inquiry-into-vaccine-injuries.htm) — [full text](documents/2026-03-11-nz-first-calls-for-select-committee-inquiry-into-vaccine-inj.md)
@@ -583,7 +583,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL55305: Add infrastructure and service capacity requirements to residential fast-track permissions
 
-<a id="pol55305-add-infrastructure-and-service-capacity-requirements-to-residential-fast-track-pe"></a>**Statement:** Add infrastructure and service capacity requirements to residential fast-track permissions  
+**Statement:** Add infrastructure and service capacity requirements to residential fast-track permissions  
 *Summary source: policy.nz* · topics: housing, transport-and-infrastructure, housing-affordability, urban-planning-and-resource-management, infrastructure-funding-and-planning
 
 - **Why:** This party says that they support increasing housing supply, but do not want the increase in housing to come at the expense of the quality of public infrastructure or access to services for those who have already lived in affected communities.
@@ -594,7 +594,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL55310: Establish a 12-month trial for commuter rail in Canterbury and further south
 
-<a id="pol55310-establish-a-12-month-trial-for-commuter-rail-in-canterbury-and-further-south"></a>**Statement:** Establish a 12-month trial for commuter rail in Canterbury and further south  
+**Statement:** Establish a 12-month trial for commuter rail in Canterbury and further south  
 *Summary source: policy.nz* · topics: transport-and-infrastructure, public-transport-cycling-and-walking, infrastructure-funding-and-planning, urban-planning-and-resource-management
 
 - **Why:** This party says that traffic wait times are too great between Christchurch and the wider Canterbury region. The party says there are existing rail lines between Christchurch and Dunedin, which are owned by the government and should be delivering for the public.  The party wants the trial to determine a business case for permanent passenger rail.
@@ -604,7 +604,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A21: Bring back the Southerner passenger train and make the Mainlander more frequent
 
-<a id="nzf-a21-bring-back-the-southerner-passenger-train-and-make-the-mainlander-more-frequent"></a>**Statement:** Bring back the Southerner passenger train and make the Mainlander more frequent  
+**Statement:** Bring back the Southerner passenger train and make the Mainlander more frequent  
 *Summary source: archive* · topics: public-transport-cycling-and-walking, transport-and-infrastructure
 
 - **Why:** The party says South Island cities and towns should be reconnected by rail.
@@ -614,7 +614,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A22: Make the Mill Road extension in South Auckland a priority
 
-<a id="nzf-a22-make-the-mill-road-extension-in-south-auckland-a-priority"></a>**Statement:** Make the Mill Road extension in South Auckland a priority  
+**Statement:** Make the Mill Road extension in South Auckland a priority  
 *Summary source: archive* · topics: transport-and-infrastructure, infrastructure-funding-and-planning
 
 - **Why:** The party says South Auckland has grown without the roads it needs.
@@ -624,7 +624,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A23: Regional infrastructure: new Matakana Island wharf and support for Sun Air's Bay of Plenty services
 
-<a id="nzf-a23-regional-infrastructure-new-matakana-island-wharf-and-support-for-sun-airs-bay-of"></a>**Statement:** Regional infrastructure: new Matakana Island wharf and support for Sun Air's Bay of Plenty services  
+**Statement:** Regional infrastructure: new Matakana Island wharf and support for Sun Air's Bay of Plenty services  
 *Summary source: archive* · topics: transport-and-infrastructure, economic-development-and-industry
 
 - **Why:** The party describes a 'Regional Infrastructure Plan' to back the provinces.
@@ -636,8 +636,8 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL54962: Reserve social housing for NZ citizens first
 
-<a id="pol54962-reserve-social-housing-for-nz-citizens-first"></a>**Statement:** Reserve social housing for NZ citizens first  
-*Summary source: policy.nz* · topics: housing, migration, social-and-public-housing, key-policies-housing
+**Statement:** Reserve social housing for NZ citizens first  
+*Summary source: policy.nz* · topics: housing, migration, social-and-public-housing
 
 - **Why:** This party says that housing is becoming more expensive and that there's a greater need for social housing. The party claims that it is unjust not to distinguish between a citizen and someone yet to become a citizen when providing a scarce resource like social housing.
 - **How:** This party would amend legislation to prioritise NZ citizens in the allocation of social housing. Resident class visa holders will retain eligibility to be on the waitlist, but NZ citizens will be fast-tracked up the waitlist for social housing.
@@ -648,7 +648,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL54963: Allow a two-year amnesty on overstayers if they self-deport
 
-<a id="pol54963-allow-a-two-year-amnesty-on-overstayers-if-they-self-deport"></a>**Statement:** Allow a two-year amnesty on overstayers if they self-deport  
+**Statement:** Allow a two-year amnesty on overstayers if they self-deport  
 *Summary source: policy.nz* · topics: migration, community-and-inclusion, pasifika
 
 - **Why:** This party says that the illegal overstaying of visas by migrants is causing public distrust of the immigration system. However, people have built a life here and are discouraged by bans on re-entering the country if caught and deported.
@@ -659,8 +659,8 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL54964: Remove automatic work rights from student visas
 
-<a id="pol54964-remove-automatic-work-rights-from-student-visas"></a>**Statement:** Remove automatic work rights from student visas  
-*Summary source: policy.nz* · topics: education, migration, incomes-and-employment, tertiary-fees-and-student-support, key-policies-education, wages-and-working-conditions
+**Statement:** Remove automatic work rights from student visas  
+*Summary source: policy.nz* · topics: education, migration, incomes-and-employment, tertiary-fees-and-student-support, wages-and-working-conditions
 
 - **Why:** This party says that student visa holders compete in the competitive graduate job market and can take jobs from New Zealanders. It stays the intent of international education is for overseas economies to give money to NZ by paying for their education, not to provide automatic work rights and residence pathways. The party also cites broader concern with net numbers of migrants entering New Zealand and sees changes to student visas as a way of reducing net migration and its effect on infrastructure.
 - **How:** This party would have student visa holders lose their automatic right to work. To be allowed to work, student visa holders would have to fulfil strict conditions to ensure they are not doing work that could be done by NZ citizens. People who have been on student visas and want to transition to another visa would have to leave NZ and reapply for a new visa from overseas.
@@ -670,8 +670,8 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL54965: Create a benefit stand-down period of ten years for migrants and lengthen residency and citizenship eligibility
 
-<a id="pol54965-create-a-benefit-stand-down-period-of-ten-years-for-migrants-and-lengthen-residen"></a>**Statement:** Create a benefit stand-down period of ten years for migrants and lengthen residency and citizenship eligibility  
-*Summary source: policy.nz* · topics: migration, incomes-and-employment, benefits, tax-and-income-support, key-policies-migration
+**Statement:** Create a benefit stand-down period of ten years for migrants and lengthen residency and citizenship eligibility  
+*Summary source: policy.nz* · topics: migration, incomes-and-employment, benefits, tax-and-income-support
 
 - **Why:** This party says that benefit support comes with the rights and responsibilities of being a New Zealander. It wants to prevent the use of benefits by migrants yet to become citizens and to slow down net migration.
 - **How:** This party would implement a benefit stand-down period of ten years. This period would be in line with the additional changes to citizenship and permanent residency, where the required period to qualify for citizenship would double from five years to a minimum of ten years and from two years to five years for permanent residency.
@@ -681,8 +681,8 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL54966: Expand criteria for deportation
 
-<a id="pol54966-expand-criteria-for-deportation"></a>**Statement:** Expand criteria for deportation  
-*Summary source: policy.nz* · topics: migration, law-justice-and-government, criminal-justice, key-policies-law-justice-and-government, key-policies-migration
+**Statement:** Expand criteria for deportation  
+*Summary source: policy.nz* · topics: migration, law-justice-and-government, criminal-justice
 
 - **Why:** This party says that that public trust in the immigration system requires trust that violent offenders would be deported. Immigration to NZ is a privilege, not a right.
 - **How:** This party would widen the criteria for deportation liability to cover any offence for which imprisonment is available as a sentence. Automatic deportation will be applied to those found guilty of violent or sexual crimes, fraud, participating in an organised criminal group, money laundering, or exploiting migrants.
@@ -692,7 +692,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL54967: Raise citizenship and permanent residence application fees
 
-<a id="pol54967-raise-citizenship-and-permanent-residence-application-fees"></a>**Statement:** Raise citizenship and permanent residence application fees  
+**Statement:** Raise citizenship and permanent residence application fees  
 *Summary source: policy.nz* · topics: migration
 
 - **Why:** This party says that application fees will be increased to fund the additional administrative burden of its other immigration reforms. Such increases should be accepted by applicants, as, according to the party, immigration to NZ is a privilege, not a right. The party claims that the application fee should be reflective of the value of becoming a New Zealander.
@@ -703,7 +703,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL55262: Replace the Accredited Employer Work Visa with a shortage-led skilled work visa
 
-<a id="pol55262-replace-the-accredited-employer-work-visa-with-a-shortage-led-skilled-work-visa"></a>**Statement:** Replace the Accredited Employer Work Visa with a shortage-led skilled work visa  
+**Statement:** Replace the Accredited Employer Work Visa with a shortage-led skilled work visa  
 *Summary source: policy.nz* · topics: migration, incomes-and-employment, economy, jobs-and-employment, business-support
 
 - **Why:** This party says that NZ's immigration system should be used to manage genuine workforce shortages.  However, it says that instead the accredited employer work visa has too often been used as a means to simply find a preferable candidate and is a risk for the workers themselves, who can find themselves with less protection from exploitation.
@@ -714,7 +714,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A13: Grant automatic citizenship at birth only to children of citizens
 
-<a id="nzf-a13-grant-automatic-citizenship-at-birth-only-to-children-of-citizens"></a>**Statement:** Grant automatic citizenship at birth only to children of citizens  
+**Statement:** Grant automatic citizenship at birth only to children of citizens  
 *Summary source: archive* · topics: migration
 
 - **Why:** The party says permanent residence is easy to get and children of non-citizens currently become citizens automatically.
@@ -724,17 +724,17 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A14: Make refugee/protected-person status temporary and tighten asylum rules
 
-<a id="nzf-a14-make-refugee-protected-person-status-temporary-and-tighten-asylum-rules"></a>**Statement:** Make refugee/protected-person status temporary and tighten asylum rules  
+**Statement:** Make refugee/protected-person status temporary and tighten asylum rules  
 *Summary source: archive* · topics: migration, international-relations
 
 - **Why:** The party says asylum claims have risen and the system cannot distinguish genuine claims from people using it as another immigration pathway.
-- **How:** This party would give refugees and protected persons a renewable 24-month residence permit reviewed against conditions in their home country (modelled on Denmark), bar asylum claims from people already here on work visas, and stop temporary work rights during assessment being used as a stepping-stone to another visa.
+- **How:** This party would give refugees and protected persons a renewable 24-month residence permit reviewed against conditions in their home country (modelled on Denmark), bar asylum claims from people in New Zealand on a 'working-class visa', and stop temporary work rights during assessment being used as a stepping-stone to another visa.
 - **Sources:**
   - [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](https://www.scoop.co.nz/stories/PA2609/S00118/nz-first-announces-immigration-reform-policies.htm) — [full text](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md)
 
 ### NZF-A15: Hold a referendum on a legislated cap of 20,000 resident visas a year
 
-<a id="nzf-a15-hold-a-referendum-on-a-legislated-cap-of-20-000-resident-visas-a-year"></a>**Statement:** Hold a referendum on a legislated cap of 20,000 resident visas a year  
+**Statement:** Hold a referendum on a legislated cap of 20,000 resident visas a year  
 *Summary source: archive* · topics: migration, infrastructure-funding-and-planning, parliament-and-democracy
 
 - **Why:** The party says population growth must not outpace infrastructure and New Zealanders should decide the size of the country.
@@ -744,7 +744,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A16: Require student visa holders to leave New Zealand before applying for a different visa
 
-<a id="nzf-a16-require-student-visa-holders-to-leave-new-zealand-before-applying-for-a-different"></a>**Statement:** Require student visa holders to leave New Zealand before applying for a different visa  
+**Statement:** Require student visa holders to leave New Zealand before applying for a different visa  
 *Summary source: archive* · topics: migration, education
 
 - **Why:** The party says export education is being used as a route to work and residence.
@@ -756,7 +756,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A08: 'Life means life': degrees of murder, whole-of-life sentences for first-degree murder and child rape
 
-<a id="nzf-a08-life-means-life-degrees-of-murder-whole-of-life-sentences-for-first-degree-murder"></a>**Statement:** 'Life means life': degrees of murder, whole-of-life sentences for first-degree murder and child rape  
+**Statement:** 'Life means life': degrees of murder, whole-of-life sentences for first-degree murder and child rape  
 *Summary source: archive* · topics: criminal-justice, law-justice-and-government
 
 - **Why:** The party says the justice system too often fails to hold offenders to account and victims should come before offenders.
@@ -766,7 +766,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A09: More mandatory minimum sentences, tougher parole and limits on sentence discounts
 
-<a id="nzf-a09-more-mandatory-minimum-sentences-tougher-parole-and-limits-on-sentence-discounts"></a>**Statement:** More mandatory minimum sentences, tougher parole and limits on sentence discounts  
+**Statement:** More mandatory minimum sentences, tougher parole and limits on sentence discounts  
 *Summary source: archive* · topics: criminal-justice
 
 - **Why:** The party says sentencing has not delivered justice for victims.
@@ -776,7 +776,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A10: Create a dedicated organised-crime agency and fold the Serious Fraud Office into Police
 
-<a id="nzf-a10-create-a-dedicated-organised-crime-agency-and-fold-the-serious-fraud-office-into-p"></a>**Statement:** Create a dedicated organised-crime agency and fold the Serious Fraud Office into Police  
+**Statement:** Create a dedicated organised-crime agency and fold the Serious Fraud Office into Police  
 *Summary source: archive* · topics: criminal-justice, public-sector
 
 - **Why:** The party says transnational organised crime is growing and needs to be dismantled.
@@ -786,7 +786,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A11: Strengthen self-defence protections, including investigating 'Castle Doctrine' laws
 
-<a id="nzf-a11-strengthen-self-defence-protections-including-investigating-castle-doctrine-laws"></a>**Statement:** Strengthen self-defence protections, including investigating 'Castle Doctrine' laws  
+**Statement:** Strengthen self-defence protections, including investigating 'Castle Doctrine' laws  
 *Summary source: archive* · topics: criminal-justice, family-justice-and-safety
 
 - **Why:** The party says people should be able to defend themselves and their property in their home or business.
@@ -796,7 +796,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A12: State-funded immediate reparation for victims, faster publication of sentencing notes, less name suppression
 
-<a id="nzf-a12-state-funded-immediate-reparation-for-victims-faster-publication-of-sentencing-not"></a>**Statement:** State-funded immediate reparation for victims, faster publication of sentencing notes, less name suppression  
+**Statement:** State-funded immediate reparation for victims, faster publication of sentencing notes, less name suppression  
 *Summary source: archive* · topics: criminal-justice, civil-justice
 
 - **Why:** The party says victims should come first and the courts should be more open.
@@ -808,7 +808,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL54661: Return at least 50 percent of mining project royalties to the region where mining took place
 
-<a id="pol54661-return-at-least-50-percent-of-mining-project-royalties-to-the-region-where-mining"></a>**Statement:** Return at least 50 percent of mining project royalties to the region where mining took place  
+**Statement:** Return at least 50 percent of mining project royalties to the region where mining took place  
 *Summary source: policy.nz* · topics: economy, te-ao-maori, oil-gas-and-mining, economic-development-and-industry, regional-development, land-and-resources
 
 - **Why:** This party says that mining plays a vital role in NZ's economy and regions as one of the country's most productive sectors. The benefits of mining do not always stay in these regions, and communities should directly benefit from local mining projects. If mining expands, infrastructure and development in the regions must grow too.
@@ -820,8 +820,8 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### POL54662: Survey all of NZ to look for minerals
 
-<a id="pol54662-survey-all-of-nz-to-look-for-minerals"></a>**Statement:** Survey all of NZ to look for minerals  
-*Summary source: policy.nz* · topics: economy, te-ao-maori, oil-gas-and-mining, economic-development-and-industry, key-policies-economy, land-and-resources
+**Statement:** Survey all of NZ to look for minerals  
+*Summary source: policy.nz* · topics: economy, te-ao-maori, oil-gas-and-mining, economic-development-and-industry, land-and-resources
 
 - **Why:** This party says that NZ needs to gain the maximum benefit from its resources. Knowing which resources are available is a key step for making decisions about future mining projects. Investing in science, technology and the mining workforce will protect the benefits of mining into the future.
 - **How:** This party would invest in advanced core-scanning technology and pay for a modern geological survey to be done throughout NZ. It would also reopen the School of Mines to build the mining workforce and ensure that money made in the mining industry stays in NZ. Building on policies like Fast-track, this would make it easier for new mines to be created.
@@ -832,7 +832,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A02: Invest $1 billion in a 'National Subsurface Development Survey' to find and develop oil, gas, geothermal and CO2-storage resources
 
-<a id="nzf-a02-invest-1-billion-in-a-national-subsurface-development-survey-to-find-and-develop-o"></a>**Statement:** Invest $1 billion in a 'National Subsurface Development Survey' to find and develop oil, gas, geothermal and CO2-storage resources  
+**Statement:** Invest $1 billion in a 'National Subsurface Development Survey' to find and develop oil, gas, geothermal and CO2-storage resources  
 *Summary source: archive* · topics: energy, land-and-resources, economy
 
 - **Why:** The party says New Zealand should identify and use its own energy reserves for fuel security, citing disruption in the Strait of Hormuz.
@@ -844,7 +844,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A04: Create a National Energy Strategy and stop power companies holding back supply to raise prices
 
-<a id="nzf-a04-create-a-national-energy-strategy-and-stop-power-companies-holding-back-supply-to"></a>**Statement:** Create a National Energy Strategy and stop power companies holding back supply to raise prices  
+**Statement:** Create a National Energy Strategy and stop power companies holding back supply to raise prices  
 *Summary source: archive* · topics: energy, prices
 
 - **Why:** The party says power companies control both supply and price, driving up costs for households and industry.
@@ -854,7 +854,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 
 ### NZF-A05: Set mining zones, longer permits, reopen the School of Mines and refocus the Department of Conservation
 
-<a id="nzf-a05-set-mining-zones-longer-permits-reopen-the-school-of-mines-and-refocus-the-departm"></a>**Statement:** Set mining zones, longer permits, reopen the School of Mines and refocus the Department of Conservation  
+**Statement:** Set mining zones, longer permits, reopen the School of Mines and refocus the Department of Conservation  
 *Summary source: archive* · topics: land-and-resources, economy, conservation, education
 
 - **Why:** The party says mining rules are duplicated, slow and inconsistent and are stopping investment and jobs.

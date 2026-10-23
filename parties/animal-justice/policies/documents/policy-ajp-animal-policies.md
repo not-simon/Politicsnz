@@ -25,64 +25,64 @@ Download the complete AJP Animal policies pack PDF below
 ### PDF version: https://animaljustice.org.nz/wp-content/uploads/2026/09/AJP-Animal-policies-portfolio-SEPT-2026.pdf
 
 Compassion and protection for animals
-Compassion and protection for animals  1
-Protecting the rights of farmed animals  3
-Abolish all farming of animals  4
-Independent Animal Welfare Governance to Reduce Harm  8
-Ensuring Humane Transport Conditions  10
-Extending the Live Export Ban  12
-Ensuring Adequate Living Conditions and Environmental Standards  19
-Ensuring Adequate Nutrition and Health Standards  21
-Animal Breeding and Reproduction Reform  23
-Ensuring Humane Handling and Management  25
-Minimising Animal Suffering during Slaughter  27
-Position Statement: Towards a Cruelty-Free and Sustainable Fashion Industry  29
-Ensuring the welfare and protection of companion animals  30
-Ending Exploitative Breeding and Trade of cats and dogs  30
-Promoting Responsible Ownership and Care  35
-Compassionate Pound and Shelter Reform  35
-Ensuring the welfare and protection of aquatic species  42
-Equitable Protection for Aquatic Animals  42
-Phasing Out Aquaculture and Fish Farming  44
-Humane Treatment Standards for Aquatic Animals (Interim until phasing out occurs)  48
-Marine and Freshwater Habitat Conservation  48
-International Marine Animal Protection  49
-Eliminating the Use of Animals in Science  53
-Ending Animal Testing  53
-The environmental impacts of animal-based research  58
-Eliminating the Use of Animals in Entertainment  61
-Ban Greyhound Racing Banned from effect August 1, 2026  62
-Ban Horse Racing  64
-Ban Rodeo  66
-Ban Recreational Hunting and Hunting Competitions  68
-Ban Recreational Fishing and Fishing Competitions  70
-Ending the Use of All Animals for ‘Entertainment’  71
-The Future of Zoos and Aquariums  73
-Addressing and ensuring a good quality of life for working animals  79
+Compassion and protection for animals 1
+Protecting the rights of farmed animals 3
+Abolish all farming of animals 4
+Independent Animal Welfare Governance to Reduce Harm 8
+Ensuring Humane Transport Conditions 10
+Extending the Live Export Ban 12
+Ensuring Adequate Living Conditions and Environmental Standards 19
+Ensuring Adequate Nutrition and Health Standards 21
+Animal Breeding and Reproduction Reform 23
+Ensuring Humane Handling and Management 25
+Minimising Animal Suffering during Slaughter 27
+Position Statement: Towards a Cruelty-Free and Sustainable Fashion Industry 29
+Ensuring the welfare and protection of companion animals 30
+Ending Exploitative Breeding and Trade of cats and dogs 30
+Promoting Responsible Ownership and Care 35
+Compassionate Pound and Shelter Reform 35
+Ensuring the welfare and protection of aquatic species 42
+Equitable Protection for Aquatic Animals 42
+Phasing Out Aquaculture and Fish Farming 44
+Humane Treatment Standards for Aquatic Animals (Interim until phasing out occurs) 48
+Marine and Freshwater Habitat Conservation 48
+International Marine Animal Protection 49
+Eliminating the Use of Animals in Science 53
+Ending Animal Testing 53
+The environmental impacts of animal-based research 58
+Eliminating the Use of Animals in Entertainment 61
+Ban Greyhound Racing Banned from effect August 1, 2026 62
+Ban Horse Racing 64
+Ban Rodeo 66
+Ban Recreational Hunting and Hunting Competitions 68
+Ban Recreational Fishing and Fishing Competitions 70
+Ending the Use of All Animals for ‘Entertainment’ 71
+The Future of Zoos and Aquariums 73
+Addressing and ensuring a good quality of life for working animals 79
 
 animaljustice.org.nz | party@animaljusticeparty.org.nz
 1
 
 ---
 
-Working Animal Welfare and Retirement  79
-Equine Retirement and End-of-Life Care  79
-City Farm and Sanctuary Standards  79
-Protection of indigenous and non-indigenous wild animals  80
-Humane management of introduced species  82
-Ending the use of lethal biological agents and poisons for population control  84
-Ending trapping and hunting for population control  87
-Protect and restore natural habitats  89
-Protect wildlife from anthropogenic harms  91
-Mitigate natural threats to wild animals  93
-Cats, Conservation and Better Solutions  95
-Legislation and Regulation Reform for Animal Protection  99
-Legislative Foundations  103
-Regulatory Oversight and Enforcement  105
-International Considerations  107
-Commissioner for Animals  110
-End the Private Sale and Use of Fireworks  113
-Artificial Intelligence and Animal Welfare  118
+Working Animal Welfare and Retirement 79
+Equine Retirement and End-of-Life Care 79
+City Farm and Sanctuary Standards 79
+Protection of indigenous and non-indigenous wild animals 80
+Humane management of introduced species 82
+Ending the use of lethal biological agents and poisons for population control 84
+Ending trapping and hunting for population control 87
+Protect and restore natural habitats 89
+Protect wildlife from anthropogenic harms 91
+Mitigate natural threats to wild animals 93
+Cats, Conservation and Better Solutions 95
+Legislation and Regulation Reform for Animal Protection 99
+Legislative Foundations 103
+Regulatory Oversight and Enforcement 105
+International Considerations 107
+Commissioner for Animals 110
+End the Private Sale and Use of Fireworks 113
+Artificial Intelligence and Animal Welfare 118
 
 Collated September 2026
 
@@ -500,7 +500,7 @@ animaljustice.org.nz | party@animaljusticeparty.org.nz
 
 ---
 
-Key issues with live export by sea:  very lowest scores in the
+Key issues with live export by sea: very lowest scores in the
 world.21
 1. The conditions on board are not
 6. Animals from New Zealand
@@ -519,45 +519,45 @@ that New Zealand sent to China
 number of deaths due to
 originated in Scotland.22
 infection and heat stress.
-Comparing mortality on board20  Key issues with live export by air:
+Comparing mortality on board20 Key issues with live export by air:
 with cattle living on land, as
-many industry supporters have,  1. 3.4 million day-old chicks are
-underestimates  the  overall  sent overseas each year. While
-suffering (morbidity) of the cattle  colony cages are still legal in
-on board, many of whom are  New Zealand, some of the
-also pregnant.  exported chickens will live in
-4. There is no requirement that the  cages that have been outlawed
-animals in the destination  in New Zealand. Many will be
-country are treated according to  slaughtered without stunning,
-New Zealand standards.  which is illegal in New
-5. Most of the cows exported went  Zealand.23
-to  China.  World  Animal  2. Aside from horses, the Ministry
-Protection  has  assessed
+many industry supporters have, 1. 3.4 million day-old chicks are
+underestimates the overall sent overseas each year. While
+suffering (morbidity) of the cattle colony cages are still legal in
+on board, many of whom are New Zealand, some of the
+also pregnant. exported chickens will live in
+4. There is no requirement that the cages that have been outlawed
+animals in the destination in New Zealand. Many will be
+country are treated according to slaughtered without stunning,
+New Zealand standards. which is illegal in New
+5. Most of the cows exported went Zealand.23
+to China. World Animal 2. Aside from horses, the Ministry
+Protection has assessed
 for Primary Industries does not
-Chinese  laws  in  areas
+Chinese laws in areas
 require official oversight of
 preventing animal suffering,
 animals during flight to ensure
 protecting animals used in
-farming  and  government  they are protected from
-accountability  for  animal  potential injury and death.
-welfare, as having one of the  3. There is no requirement that the
+farming and government they are protected from
+accountability for animal potential injury and death.
+welfare, as having one of the 3. There is no requirement that the
 animals in the destination
 
 21
 
 https://api.worldanimalprotection.org/compar
 e
-19  22
+19 22
 
-https://www.mpi.govt.nz/dmsdocument/911/  https://www.globaltimes.cn/page/202301/128
-direct  4569.shtml
+https://www.mpi.govt.nz/dmsdocument/911/ https://www.globaltimes.cn/page/202301/128
+direct 4569.shtml
 20
 
 23
 https://www.mpi.govt.nz/export/animals/live-
-animal-and-germplasm-export-statistics-and-r  https://www.ciwf.org.uk/media/5235309/Welf
-eports/  are-sheet-Broiler-chickens.pdf
+animal-and-germplasm-export-statistics-and-r https://www.ciwf.org.uk/media/5235309/Welf
+eports/ are-sheet-Broiler-chickens.pdf
 
 animaljustice.org.nz | party@animaljusticeparty.org.nz
 14
@@ -569,7 +569,7 @@ New Zealand standards.
 4. It is an offence to boil sentient
 crayfish alive in New Zealand,
 carrying a fine of up to
-$25,000.24  This is not
+$25,000.24 This is not
 necessarily the case in the
 destination country.
 5. Crayfish and eels do not even
@@ -580,10 +580,10 @@ Our values
 The AJP party ethos is built on five
 guiding principles that shape our
 positionality in response to current and
-emerging  issues  affecting New
+emerging issues affecting New
 Zealanders within the animal welfare
 policy space. Our values are
-interwoven  to  produce  robust
+interwoven to produce robust
 evidence-based policies, reflecting the
 views of national and international
 industry leaders in research and
@@ -712,7 +712,7 @@ animaljustice.org.nz | party@animaljusticeparty.org.nz
 
 ---
 
-Ensuring Adequate  Living  Conditions  and  Environmental
+Ensuring Adequate Living Conditions and Environmental
 Standards
 The Animal Justice Party Aotearoa NZ (AJP) is working towards a future without animal
 agriculture. In the meantime, we are committed to addressing the widespread neglect of
@@ -1174,7 +1174,7 @@ are enabled to inspect shelter, water and food receptacles, alongside the
 inspection of animals, and allocate sufficient resources to enforce animal
 protection laws, including annual inspections and audits of breeders and
 breeding facilities.
-10.Update current legislation in regard to ‘infringeable offence for failing to comply
+10. Update current legislation in regard to ‘infringeable offence for failing to comply
 with a notice of instruction’ under Section 130 of the Animal Welfare Act 1999,
 with the aim of increasing penalties such as lifelong bans on breeding and
 owning animals, offering reoffending prevention and rehabilitation programmes
@@ -1368,9 +1368,9 @@ home-like foster environments
 funding and support for rehoming facilities
 8. Formalise relationships with rescues and shelters
 9. Foster community-led animal welfare initiatives across Aotearoa
-10.Promote and invest in widespread, accessible desexing programmes
-11.End breed-based euthanasia and ensure all dogs are assessed as individuals
-12.Ensure euthanasia is only ever used as an absolute last resort, and never on a
+10. Promote and invest in widespread, accessible desexing programmes
+11. End breed-based euthanasia and ensure all dogs are assessed as individuals
+12. Ensure euthanasia is only ever used as an absolute last resort, and never on a
 healthy dog. Where it is required, it must be carried out in a way that minimises
 suffering.
 
@@ -1789,12 +1789,12 @@ plant-based macroalgae/seaweed production, ocean restoration, and wild sanctuary
 monitoring).
 
 References:
-·  Animals Aotearoa
-·  Radio NZ
+· Animals Aotearoa
+· Radio NZ
 https://www.rnz.co.nz/news/politics/562801/aquaculture-animal-welfare-code-anti-
 kiwi-oceans-and-fisheries-minister-shane-jones-says
-·  The Fish Site
-·  VAWA (Veterinarians for Animal Welfare Aotearoa)
+· The Fish Site
+· VAWA (Veterinarians for Animal Welfare Aotearoa)
 https://www.vawa.co.nz/post/octopus-farming-that-s-a-no
 
 animaljustice.org.nz | party@animaljusticeparty.org.nz
@@ -2263,7 +2263,7 @@ number of animals used. Strengthen the adherence to the 3Rs.
 dispose of hazardous and biological waste in compliance with regulations and implement
 sustainable alternatives for animal bedding and feed where feasible.
 
-7. Energy and Resource Efficiency:  Utilise energy-efficient equipment and lighting in
+7. Energy and Resource Efficiency: Utilise energy-efficient equipment and lighting in
 animal research facilities and optimise water usage in cleaning, animal care and
 laboratory operations.
 
@@ -2344,24 +2344,24 @@ exploit and undermine animals’ well-being.
 
 Key Objectives:
 
-10.Ban all forms of greyhound racing in Aotearoa NZ.
-11.Support the Animal Agencies (SPCA, SAFE, HUHA, DOGWATCH) who are
+10. Ban all forms of greyhound racing in Aotearoa NZ.
+11. Support the Animal Agencies (SPCA, SAFE, HUHA, DOGWATCH) who are
 committed to finding loving homes for greyhounds when a ban is enacted.
 
 Interim measures, while we work towards the ban, include:
-12.Promote transparency and accountability in relation to deaths and injuries of all
+12. Promote transparency and accountability in relation to deaths and injuries of all
 greyhounds born into the racing industry both on and off the track.
-13.Recommend immediate restrictions to curb the breeding of greyhounds.
-14.Call for a reduction on the number of greyhounds each racing kennel is permitted
+13. Recommend immediate restrictions to curb the breeding of greyhounds.
+14. Call for a reduction on the number of greyhounds each racing kennel is permitted
 to own.
-15.Support the SPCA’s ‘Good Life’ Recommendation.
+15. Support the SPCA’s ‘Good Life’ Recommendation.
 
 animaljustice.org.nz | party@animaljusticeparty.org.nz
 62
 
 ---
 
-16.Reallocate government funding and subsidies to transition those employed by
+16. Reallocate government funding and subsidies to transition those employed by
 the industry into non-exploitative jobs and careers.
 
 August 2025
@@ -2398,13 +2398,13 @@ exploit and undermine animals’ well-being
 
 Key Objectives:
 
-10.Ban all forms of horse racing in Aotearoa NZ.
+10. Ban all forms of horse racing in Aotearoa NZ.
 
 Interim measures, while we work towards the ban, include:
-11.Ensure full transparency and accountability by having a public birth to death
+11. Ensure full transparency and accountability by having a public birth to death
 registry for all horses born into the racing industry, whether these horses perform
 in official events or not.
-12.Decrease the number of race meetings to alleviate the pressure on horses and
+12. Decrease the number of race meetings to alleviate the pressure on horses and
 reduce the frequency of injuries and fatalities associated with racing.
 
 animaljustice.org.nz | party@animaljusticeparty.org.nz
@@ -2412,13 +2412,13 @@ animaljustice.org.nz | party@animaljusticeparty.org.nz
 
 ---
 
-13.Prohibit cruel practices and tools, such as the use of whips, tongue ties and
+13. Prohibit cruel practices and tools, such as the use of whips, tongue ties and
 spurs.
-14.Prohibit the racing of horses under three years of age.
-15.End the slaughter of ex-racehorses.
-16.Provide ex-racehorses with proper care, rehabilitation and rehoming for fulfilling
+14. Prohibit the racing of horses under three years of age.
+15. End the slaughter of ex-racehorses.
+16. Provide ex-racehorses with proper care, rehabilitation and rehoming for fulfilling
 post-racing life.
-17.Reallocate government funding and subsidies to transition those employed by
+17. Reallocate government funding and subsidies to transition those employed by
 the industry into non-exploitative jobs and careers.
 
 September 2024
@@ -2472,10 +2472,10 @@ animaljustice.org.nz | party@animaljusticeparty.org.nz
 
 Interim measures, while we work towards the ban, include:
 
-10.Change advertising practices to remove 'family-friendly' messaging.
-11.Implement a rapid phase-out of all rodeo events within a specified timeframe to
+10. Change advertising practices to remove 'family-friendly' messaging.
+11. Implement a rapid phase-out of all rodeo events within a specified timeframe to
 eliminate this source of animal cruelty.
-12.Increase funding and support for cruelty-free community sporting events.
+12. Increase funding and support for cruelty-free community sporting events.
 
 September 2024
 
@@ -2552,10 +2552,10 @@ Key Objectives:
 
 Interim measures, while we work towards the ban, include:
 9. Call for an immediate ban on duck shooting.
-10.Call for an immediate ban on the hunting of feral cats.
-11.Enforce regulations to prevent children from participating in hunting activities,
+10. Call for an immediate ban on the hunting of feral cats.
+11. Enforce regulations to prevent children from participating in hunting activities,
 including ‘school gala days’.
-12.Strengthen enforcement of existing animal welfare laws.
+12. Strengthen enforcement of existing animal welfare laws.
 
 September 2024
 
@@ -2730,12 +2730,12 @@ technologies as humane alternatives to live animal displays.
 Mandate full disclosure of animal origins, health status and life histories and
 prohibit the commercial import and export of live animals for profit.
 
-10.Regulate Sanctuaries
+10. Regulate Sanctuaries
 Establish clear legal definitions and accreditation systems to distinguish genuine
 sanctuaries from commercial enterprises, ensuring animal interests are
 paramount.
 
-11.Enhance Welfare Standards
+11. Enhance Welfare Standards
 Introduce stringent, enforceable welfare standards, particularly for animals
 exposed to public viewing, recognising the stress associated with human
 interaction.
@@ -2745,19 +2745,19 @@ animaljustice.org.nz | party@animaljusticeparty.org.nz
 
 ---
 
-12.Prohibit Animal Performances
+12. Prohibit Animal Performances
 Ban the use of animals in performances, displays or interactive experiences that
 compromise their wellbeing.
 
-13.Redirect Public Investment
+13. Redirect Public Investment
 Prioritise support for wildlife rescue organisations, veterinary services, and
 rehabilitation programmes over traditional zoos.
 
-14.Support Ethical Transition Pathways
+14. Support Ethical Transition Pathways
 Provide assistance to operators seeking to transition toward non-exploitative
 models, including the adoption of virtual and educational alternatives.
 
-15.Promote Ethical and Sustainable Practices
+15. Promote Ethical and Sustainable Practices
 Encourage facilities to align all operations, including food provision, with
 principles of animal justice and environmental sustainability through adopting
 plant-based options.
@@ -3221,9 +3221,9 @@ Disease (RHDV).
 2. Cease the use of all poisons, including 1080 and Brodifacoum aerial drops.
 3. Fund research into ethical, non-lethal alternatives for managing introduced
 species, such as:
-  - Immunocontraceptives for population control
-  - Fencing and habitat modification to prevent overpopulation
-  - Non-toxic deterrents and repellents
+ - Immunocontraceptives for population control
+ - Fencing and habitat modification to prevent overpopulation
+ - Non-toxic deterrents and repellents
 4. Ensure conservation efforts align with compassionate principles and recognise
 the sentience and intrinsic value of all animals.
 August 2025

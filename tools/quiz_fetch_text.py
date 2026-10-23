@@ -24,4 +24,4 @@ if len(sys.argv) > 2:
         last = m.end() + ctx
         print('...', txt[max(0, m.start()-ctx):m.end()+ctx].replace('\n', ' '), '...\n')
 else:
-    print(txt[:8000])
+    print(txt if os.environ.get("FULL") else txt[:8000])

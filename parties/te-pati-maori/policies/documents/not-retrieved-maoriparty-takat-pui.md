@@ -23,4 +23,4 @@ Policies that cite this page: `POL55086`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [Te Pāti Māori Launches Mana Takatāpui Policy (Press release, 2026-09-23)](../documents/2026-09-23-te-pati-maori-launches-mana-takatapui-policy.md) 
+- [Te Pāti Māori Launches Mana Takatāpui Policy (Press release, 2026-09-23)](2026-09-23-te-pati-maori-launches-mana-takatapui-policy.md)

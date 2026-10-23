@@ -23,5 +23,5 @@ Policies that cite this page: `POL54661`, `POL54662`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZ First Campaign Announcement: 50% Mining Royalties To Be Returned To Regions – Not Wellington (Press release, 2026-03-29)](../documents/2026-03-29-nz-first-campaign-announcement-50-mining-royalties-to-be-ret.md) 
-- [SPEECH: Winston Peters - Fair Share For The Regions (Speech, 2026-03-29)](../documents/2026-03-29-speech-winston-peters-fair-share-for-the-regions.md) 
+- [NZ First Campaign Announcement: 50% Mining Royalties To Be Returned To Regions – Not Wellington (Press release, 2026-03-29)](2026-03-29-nz-first-campaign-announcement-50-mining-royalties-to-be-ret.md)
+- [SPEECH: Winston Peters - Fair Share For The Regions (Speech, 2026-03-29)](2026-03-29-speech-winston-peters-fair-share-for-the-regions.md)

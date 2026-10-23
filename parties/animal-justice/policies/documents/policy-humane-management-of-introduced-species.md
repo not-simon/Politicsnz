@@ -73,7 +73,7 @@ Vertebrate toxic agents and kill traps in mammal species (MAF Biosecurity New Ze
 2011/01). Wellington: MAFBNZ; Parliamentary Commissioner for the Environment. (2011). Evaluating the
 use of 1080: Predators, poisons and silent forests. Wellington: PCE.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -96,4 +96,4 @@ See: Compassionate Education policy.
 
 Humane management of introduced species policy | Created August 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2

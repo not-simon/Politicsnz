@@ -23,7 +23,7 @@ Policies that cite this page: `POL55058`, `POL55059`, `POL55060`, `POL55061`, `P
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [Energy Sovereignty Policy 2026 (PDF)](../documents/pdf-te-pti-mori-energy-sovereignty-policy-final.md) 
-- [We Want Cheaper Power And We Want Our People To Own It (Press release, 2026-09-16)](../documents/2026-09-16-we-want-cheaper-power-and-we-want-our-people-to-own-it.md) 
-- [We Must Act Now On Energy Sovereignty- Every Household Is Paying The Price (Press release, 2026-04-09)](../documents/2026-04-09-we-must-act-now-on-energy-sovereignty-every-household-is-pay.md) 
-- [If The Government Really Wants To Lower Power Bills, This Is The Way (Press release, 2026-06-09)](../documents/2026-06-09-if-the-government-really-wants-to-lower-power-bills-this-is.md) 
+- [Energy Sovereignty Policy 2026 (PDF)](pdf-te-pti-mori-energy-sovereignty-policy-final.md)
+- [We Want Cheaper Power And We Want Our People To Own It (Press release, 2026-09-16)](2026-09-16-we-want-cheaper-power-and-we-want-our-people-to-own-it.md)
+- [We Must Act Now On Energy Sovereignty- Every Household Is Paying The Price (Press release, 2026-04-09)](2026-04-09-we-must-act-now-on-energy-sovereignty-every-household-is-pay.md)
+- [If The Government Really Wants To Lower Power Bills, This Is The Way (Press release, 2026-06-09)](2026-06-09-if-the-government-really-wants-to-lower-power-bills-this-is.md)

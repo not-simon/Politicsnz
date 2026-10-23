@@ -62,7 +62,7 @@ A
 ‭These‬ ‭reforms‬ ‭are‬‭essential‬‭steps‬‭in‬‭our‬‭broader‬‭mission‬‭to‬‭replace‬‭animal‬‭agriculture‬
 ‭with compassionate, sustainable systems that respect the rights and lives of all animals.‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭1‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭1‬
 
 ---
 
@@ -81,4 +81,4 @@ A
 ‭‭M
 ‬ inimising animal suffering‬‭during slaughter policy | Created May 2025‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭2‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭2‬

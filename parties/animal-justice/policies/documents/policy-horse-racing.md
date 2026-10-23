@@ -53,17 +53,17 @@ is committed to eliminating the use of animals for human ‘sport’ and ‘ente
 orse racing for profit includes flat racing, jumps racing, and harness racing. Horse
 H
 racing in New Zealand is less associated with a sense of glamour of the past and is
-increasingly controversial owing to the inherent cruelty and risksinvolved.Everyyear,
+increasingly controversial owing to the inherent cruelty and risks involved. Every year,
 despite efforts to improve safety and regulate the industry, hundreds of horses suffer
 pain, stress, injuries, and even death as a result of being raced.
 
-ontrarytopopularbelief,horsesdonotwillinglyparticipateinracing;manyhavetobe
+ontrary to popular belief, horses do not willingly participate in racing; many have to be
 C
 coerced into the starting gates, highlighting the inherent lack of consent in the activity.
 
-heuseofwhips,tongueties,spurs,andothertools,includingperformance-enhancing
+he use of whips, tongue ties, spurs, and other tools, including performance-enhancing
 T
-drugs, to control and push horses to their limits only exacerbates their suffering,both
+drugs, to control and push horses to their limits only exacerbates their suffering, both
 physically and psychologically. For example, in July 2024, in one week two
 thoroughbreds collapsed and died at the end of their races from heart attacks. The
 practice of "wastage," where uncompetitive or excess animals are killed, further
@@ -74,7 +74,7 @@ A
 society’s progressive concerns and higher ethical and moral principles, and does not
 exploit and undermine animals’ well-being.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -84,19 +84,19 @@ Key Objectives:
 
 Interim measures, while we work towards the ban, include:
 2. Ensure full transparency and accountability by having a public birth to death
-registry forallhorsesbornintotheracingindustry,whetherthesehorsesperform
+registry for all horses born into the racing industry, whether these horses perform
 in official events or not.
-3. Decrease the number of race meetings to alleviatethepressureonhorsesand
+3. Decrease the number of race meetings to alleviate the pressure on horses and
 reduce the frequency of injuries and fatalities associated with racing.
 4. Prohibit cruel practices and tools, such as the use of whips, tongue ties and
 spurs.
 5. Prohibit the racing of horses under three years of age.
 6. End the slaughter of ex-racehorses.
-7. Provide ex-racehorses with proper care,rehabilitationandrehomingforfulfilling
+7. Provide ex-racehorses with proper care, rehabilitation and rehoming for fulfilling
 post-racing life.
 8. Reallocate government funding and subsidies to transition those employed by
 the industry into non-exploitative jobs and careers.
 
 Ban Horse Racing Policy | Created September 2024
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2

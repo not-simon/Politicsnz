@@ -17,6 +17,6 @@ Source page: <https://www.maoriparty.org.nz/mokopuna_m_ori>
 
 The full text of this page is therefore **not** reproduced here, and nothing in this file is a paraphrase of it.
 
-Policies that cite this page: `POL55000`, `POL55067`, `POL55067`.
+Policies that cite this page: `POL55000`, `POL55067`.
 
 No other party-published text on these policies was found.

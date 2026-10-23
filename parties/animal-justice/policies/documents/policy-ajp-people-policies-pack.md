@@ -25,33 +25,33 @@ Download the AJP people and communities policies pack PDF below
 ### PDF version: https://animaljustice.org.nz/wp-content/uploads/2026/09/AJP-People-policies-and-communities-policy-pack.pdf
 
 People and communities policies
-People and communities policies  1
-People Category  2
-Policy framework  2
-People policies summary  4
-Strengthening Partnership with Tangata Whenua  6
-Addressing Colonial Impacts on Māori Health and Food Systems  7
-1. Democratic Reform and Participation  9
-Getting Money Out of Politics - Restoring Democratic Equality  9
-Democratic Representation for All Voices  12
-Participatory Democracy for Complex Societal Issues  14
-Comprehensive Wellbeing Data Framework  16
-2. Worker Rights and Just Transition  18
+People and communities policies 1
+People Category 2
+Policy framework 2
+People policies summary 4
+Strengthening Partnership with Tangata Whenua 6
+Addressing Colonial Impacts on Māori Health and Food Systems 7
+1. Democratic Reform and Participation 9
+Getting Money Out of Politics - Restoring Democratic Equality 9
+Democratic Representation for All Voices 12
+Participatory Democracy for Complex Societal Issues 14
+Comprehensive Wellbeing Data Framework 16
+2. Worker Rights and Just Transition 18
 Mental Health Support and Just Transition for Workers in Violent / Exploitative
-Industries  18
-Ethical Procurement and Fair Employment  22
-Companion Animal Bereavement and Parental Leave  23
-Making Work Fair for All  26
-3. Economic Justice and Fairness  28
+Industries 18
+Ethical Procurement and Fair Employment 22
+Companion Animal Bereavement and Parental Leave 23
+Making Work Fair for All 26
+3. Economic Justice and Fairness 28
 Ethical Advertising Standards - Protecting Communities from Harmful Marketing
 28
-Non-discrimination against tenants and companion animals  31
-Universal Veterinary Care - Ensuring Wellbeing for All Animals  39
-4. Protection and Advocacy Rights  42
-Comprehensive Whistleblower Protection and Peaceful Protest Rights  42
-Breaking the Cycle - Pet Refuge Support for Domestic Violence Survivors  44
-5. Education and Community Building  46
-Compassionate Education - Building Empathy Through Learning  46
+Non-discrimination against tenants and companion animals 31
+Universal Veterinary Care - Ensuring Wellbeing for All Animals 39
+4. Protection and Advocacy Rights 42
+Comprehensive Whistleblower Protection and Peaceful Protest Rights 42
+Breaking the Cycle - Pet Refuge Support for Domestic Violence Survivors 44
+5. Education and Community Building 46
+Compassionate Education - Building Empathy Through Learning 46
 
 ---
 
@@ -95,7 +95,7 @@ The current economic system perpetuates harm to non-human animals whilst
 contributing to the exploitation and detriment of human well-being within these
 industries.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2
 
 ---
 
@@ -115,7 +115,7 @@ healthy diet and exercise opportunities for everyone.
 We support a compassionate approach to all our interactions with each other, human
 or non-human animal.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  3
+animaljustice.org.nz | party@animaljusticeparty.org.nz 3
 
 ---
 
@@ -162,7 +162,7 @@ influence while supporting the transition to a more compassionate society.
 
 Protecting vulnerable people and animals from harm while safeguarding the
 democratic rights of those who speak up for others. These policies ensure that
-animaljustice.org.nz | party@animaljusticeparty.org.nz  4
+animaljustice.org.nz | party@animaljusticeparty.org.nz 4
 
 ---
 
@@ -176,7 +176,7 @@ living beings from early childhood through to tertiary study. This foundation cr
 the next generation of citizens equipped with the compassion and critical thinking
 skills necessary for building a just society that values all sentient beings.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  5
+animaljustice.org.nz | party@animaljusticeparty.org.nz 5
 
 ---
 
@@ -221,7 +221,7 @@ solutions.
 - Restore degraded ecosystems through collaborative approaches that honour both
 scientific understanding and traditional ecological knowledge.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  6
+animaljustice.org.nz | party@animaljusticeparty.org.nz 6
 
 ---
 
@@ -276,7 +276,7 @@ ts-getting-worse
 4
 See: MfE (2020): https://environment.govt.nz/publications/our-freshwater-2020/
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  7
+animaljustice.org.nz | party@animaljusticeparty.org.nz 7
 
 ---
 
@@ -289,7 +289,7 @@ developed in partnership with iwi and hapū to address health inequities and foo
 access issues that disproportionately affect Māori communities. (Transition to a Plant
 Based Economy policy objectives)
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  8
+animaljustice.org.nz | party@animaljusticeparty.org.nz 8
 
 ---
 
@@ -339,7 +339,7 @@ https://theintegrityinstitute.substack.com/p/federated-farmers
 https://en.wikipedia.org/wiki/Andrew_Hoggard
 9
 https://www.beehive.govt.nz/minister/biography/andrew-hoggard
-animaljustice.org.nz | party@animaljusticeparty.org.nz  9
+animaljustice.org.nz | party@animaljusticeparty.org.nz 9
 
 ---
 
@@ -386,24 +386,24 @@ while ensuring equal access to democratic processes
 
 Democratic Participation & Campaign Equality
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  10
+animaljustice.org.nz | party@animaljusticeparty.org.nz 10
 
 ---
 
 9. Establish maximum membership fee caps for all political parties with
 low-income options, preventing wealthy parties from creating financial barriers
 while ensuring participation is based on community support rather than wealth
-10.Level broadcasting allocation between parties, distributing funding more
+10. Level broadcasting allocation between parties, distributing funding more
 evenly rather than concentrating it among established parties, and expand
 eligible spending to include TV, radio, digital ads, leaflets, print materials,
 direct mail, accessibility services, community media partnerships, shared
 infrastructure and small-party participation in debates
-11.Require at least 50% of public campaign funding to be spent with New
+11. Require at least 50% of public campaign funding to be spent with New
 Zealand businesses rather than overseas platforms
-12.Create infrastructure for small-party participation in televised and public
+12. Create infrastructure for small-party participation in televised and public
 debates.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  11
+animaljustice.org.nz | party@animaljusticeparty.org.nz 11
 
 ---
 
@@ -452,7 +452,7 @@ Setting the electoral threshold | RNZ
 
 https://s3.ap-southeast-2.amazonaws.com/nzdoctor.files/production/public/2024-01/Independent-Elect
 oral-Review-Final-Report-November-2023.pdf
-animaljustice.org.nz | party@animaljusticeparty.org.nz  12
+animaljustice.org.nz | party@animaljusticeparty.org.nz 12
 
 ---
 
@@ -465,7 +465,7 @@ and non-human beings in democratic processes
 4. Promote electoral education programmes that help communities understand
 how threshold changes affect representation
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  13
+animaljustice.org.nz | party@animaljusticeparty.org.nz 13
 
 ---
 
@@ -515,7 +515,7 @@ Simon Wright, Tatjana Buklijas, and Max Rashbrooke, “The Rise, Fall and Re-Ris
 Democracy in New Zealand,” Policy Quarterly 20, no. 2 (May 2024): 3–11,
 https://doi.org/10.26686/pq.v20i2.9478.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  14
+animaljustice.org.nz | party@animaljusticeparty.org.nz 14
 
 ---
 
@@ -532,7 +532,7 @@ development
 6. Introduce deliberative polling on complex social issues to inform government
 decision-making
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  15
+animaljustice.org.nz | party@animaljusticeparty.org.nz 15
 
 ---
 
@@ -585,7 +585,7 @@ https://www.treasury.govt.nz/publications/wellbeing-budget/wellbeing-budget-2022
 New Zealand – Implementing the Wellbeing Budget
 19
 GNH HAPPINESS INDEX
-animaljustice.org.nz | party@animaljusticeparty.org.nz  16
+animaljustice.org.nz | party@animaljusticeparty.org.nz 16
 
 ---
 
@@ -600,7 +600,7 @@ people's relationship with animals and nature
 6. Create publicly accessible dashboards showing progress on wellbeing
 indicators at local and national levels
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  17
+animaljustice.org.nz | party@animaljusticeparty.org.nz 17
 
 ---
 
@@ -644,7 +644,7 @@ Bryant research (2025). The Hidden Toll of Slaughter on Farmers’ Mental Health
 https://bryantresearch.co.uk/insight-items/farmer-mental-health/
 22
 https://bitesizevegan.org/ptsd-in-slaughterhouse-workers/
-animaljustice.org.nz | party@animaljusticeparty.org.nz  18
+animaljustice.org.nz | party@animaljusticeparty.org.nz 18
 
 ---
 
@@ -668,9 +668,9 @@ In Aotearoa New Zealand, the scale of this industry is substantial:
 - ~145,349 people: This figure represents the estimated employment for the
 broad Agriculture, Forestry, and Fishing (ANZSIC Level 1) sector in New
 Zealand,29 including:
-  - Over 25,000 workers in meat processing across 60 locations
+ - Over 25,000 workers in meat processing across 60 locations
 nationally30
-  - 3,500 people employed in the poultry industry31
+ - 3,500 people employed in the poultry industry31
 
 These workers process in 2023, figures included 5.9 million dairy cattle, 3.7 million
 beef cattle, 24.4 million sheep and 740,000 deer32 and the slaughter of over 124
@@ -706,7 +706,7 @@ https://www.pianz.org.nz/nz-chicken/#nz-chicken-section-2 Retrieved 14 October 2
 https://www.stats.govt.nz/indicators/livestock-numbers-data-to-2023/
 33
 https://ourworldindata.org/grapher/animals-slaughtered-for-meat?country=~NZL
-animaljustice.org.nz | party@animaljusticeparty.org.nz  19
+animaljustice.org.nz | party@animaljusticeparty.org.nz 19
 
 ---
 
@@ -754,7 +754,7 @@ emotional detachment, self-medication with drugs and alcohol, and in some cases
 aggressive or violent behaviour, with documented psychosocial consequences such
 as domestic violence and community level crime. By addressing these harms, we
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  20
+animaljustice.org.nz | party@animaljusticeparty.org.nz 20
 
 ---
 
@@ -787,7 +787,7 @@ Dillard, J. (2008). A slaughterhouse nightmare: Psychological harm suffered by s
 employees and the possibility of redress through legal reform. Georgetown Journal on Poverty Law
 & Policy, 15, 391–408.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  21
+animaljustice.org.nz | party@animaljusticeparty.org.nz 21
 
 ---
 
@@ -835,7 +835,7 @@ people, planet, and animals over profit margins
 Ministry of Business, Innovation and Employment. (2025). Te Ōhanga Māori – The Māori Economy
 2023 report. https://www.mbie.govt.nz/assets/te-ohanga-maori-2023-report.pdf Retrieved 14 october
 2025.
-animaljustice.org.nz | party@animaljusticeparty.org.nz  22
+animaljustice.org.nz | party@animaljusticeparty.org.nz 22
 
 ---
 
@@ -885,7 +885,7 @@ https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1160&context=paij
 Chandler, V. (2016, May 16). Companies are now offering Pawternity leave to new pet owners.
 Good Housekeeping.
 https://www.goodhousekeeping.com/uk/news/a561203/pawternity-leave-new-pets/
-animaljustice.org.nz | party@animaljusticeparty.org.nz  23
+animaljustice.org.nz | party@animaljusticeparty.org.nz 23
 
 ---
 
@@ -900,21 +900,21 @@ Policy Framework
 
 - Bereavement Leave
 
-  - Up to 5 days paid leave available as a single entitlement for use
+ - Up to 5 days paid leave available as a single entitlement for use
 following the death of a close human family member or a companion
 animal.
-  - Flexible timing to cover funerals, tangihanga, memorials, veterinary
+ - Flexible timing to cover funerals, tangihanga, memorials, veterinary
 appointments, or grieving.
-  - Self-declaration only—no burdensome paperwork.
+ - Self-declaration only—no burdensome paperwork.
 - Parental (“Pawternity”) Leave
 
-  - Up to 3 days paid leave available when a new family member joins the
+ - Up to 3 days paid leave available when a new family member joins the
 household, whether a baby or an adopted companion animal.
-  - Additional unpaid leave (up to 2 weeks) available for animals with
+ - Additional unpaid leave (up to 2 weeks) available for animals with
 special needs or trauma histories.
 - Emergency Care Leave
 
-  - Employees may take reasonable time off to respond to urgent medical
+ - Employees may take reasonable time off to respond to urgent medical
 emergencies, end-of-life decision-making, or intensive care needs—for
 human or animal family members.
 
@@ -934,7 +934,7 @@ Key Objectives:
 40
 World Animal Protection NZ. (n.d.). Work with us. Retrieved October 14, 2025, from
 https://www.worldanimalprotection.org.nz/about-us/work-with-us/
-animaljustice.org.nz | party@animaljusticeparty.org.nz  24
+animaljustice.org.nz | party@animaljusticeparty.org.nz 24
 
 ---
 
@@ -946,7 +946,7 @@ including companion animals
 nonhuman family
 4. Ensure leave entitlements apply equally to all recognised forms of family life
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  25
+animaljustice.org.nz | party@animaljusticeparty.org.nz 25
 
 ---
 
@@ -993,7 +993,7 @@ maximisation from animal exploitation.
 
 Key Objectives:
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  26
+animaljustice.org.nz | party@animaljusticeparty.org.nz 26
 
 ---
 
@@ -1008,7 +1008,7 @@ employment, including those in the gig economy and on zero-hours contracts
 6. Establish just transition support for workers moving from animal exploitation
 industries
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  27
+animaljustice.org.nz | party@animaljusticeparty.org.nz 27
 
 ---
 
@@ -1054,7 +1054,7 @@ Without Fossil Ads. Retrieved October 24, 2025, from https://verbiedfossielerecl
 42
 Plant Based Treaty. (2025, March 28). Nijmegen endorses Plant Based Treaty and bans meat
 advertisements. Retrieved October 24, 2025, from https://plantbasedtreaty.org/nijmegen/
-animaljustice.org.nz | party@animaljusticeparty.org.nz  28
+animaljustice.org.nz | party@animaljusticeparty.org.nz 28
 
 ---
 
@@ -1106,11 +1106,11 @@ Kasser, T. (2002). The high price of materialism. MIT Press.
 46
 McNeill, S. (2023, May 30). Australia's crackdown on climate activists Human Rights Watch.
 https://www.hrw.org/news/2023/05/30/australias-crackdown-climate-activists
-animaljustice.org.nz | party@animaljusticeparty.org.nz  29
+animaljustice.org.nz | party@animaljusticeparty.org.nz 29
 
 ---
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  30
+animaljustice.org.nz | party@animaljusticeparty.org.nz 30
 
 ---
 
@@ -1155,7 +1155,7 @@ friendly rest homes.
 8. Repeal the “no cause” termination and reinstate protections against arbitrary
 evictions.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  31
+animaljustice.org.nz | party@animaljusticeparty.org.nz 31
 
 ---
 
@@ -1203,7 +1203,7 @@ n-last-six-months
 51
 New Zealand Stats (2019). Renting vs owning in NZ.
 https://www.stats.govt.nz/infographics/renting-vs-owning-in-nz
-animaljustice.org.nz | party@animaljusticeparty.org.nz  32
+animaljustice.org.nz | party@animaljusticeparty.org.nz 32
 
 ---
 
@@ -1255,7 +1255,7 @@ Housing Policy, https://www.tandfonline.com/doi/pdf/10.1080/19491247.2024.230871
 Allen, K. et al. (2013): Pet ownership and cardiovascular risk: A scientific statement from the
 American heart association. Circulation Vol 127, 23.
 https://www.ahajournals.org/doi/full/10.1161/CIR.0b013e31829201e1
-animaljustice.org.nz | party@animaljusticeparty.org.nz  33
+animaljustice.org.nz | party@animaljusticeparty.org.nz 33
 
 ---
 
@@ -1304,7 +1304,7 @@ https://www.spca.nz/about/reporting-back
 60
 Residential Tenancies Amendment Bill 2024, Section 18AA. Pet Bonds
 https://www.legislation.govt.nz/bill/government/2024/0045/latest/whole.html#LMS960526
-animaljustice.org.nz | party@animaljusticeparty.org.nz  34
+animaljustice.org.nz | party@animaljusticeparty.org.nz 34
 
 ---
 
@@ -1353,7 +1353,7 @@ https://www.stats.govt.nz/news/household-living-costs-increase-7-0-percent/
 Residential Tenancies Act 1986
 https://legislation.govt.nz/act/public/1986/0120/latest/whole.html?search=sw_096be8ed81d2fc65_chat
 tels_25_se&p=1#DLM94283
-animaljustice.org.nz | party@animaljusticeparty.org.nz  35
+animaljustice.org.nz | party@animaljusticeparty.org.nz 35
 
 ---
 
@@ -1397,7 +1397,7 @@ desexed, microchipped and registered will allow landlords to be more assured of 
 companion animal guardians’ commitment to the welfare of the animals and
 compliance with legal requirements.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  36
+animaljustice.org.nz | party@animaljusticeparty.org.nz 36
 
 ---
 
@@ -1444,7 +1444,7 @@ https://www.spcapetinsurance.co.nz/pet-insurance/the-good-life/pet-cv-renting
 Best Friends (n.d.). Pet-Friendly Rentals Increase Profitability for Landlords
 https://bestfriends.org/pet-care-resources/pet-friendly-rentals-increase-profitability-landlords
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  37
+animaljustice.org.nz | party@animaljusticeparty.org.nz 37
 
 ---
 
@@ -1488,7 +1488,7 @@ change to allow tenants to enjoy a life with their furry friends.
 
 66
 https://thespinoff.co.nz/partner/03-07-2024/renting-in-auckland-sucks-but-it-doesnt-have-to
-animaljustice.org.nz | party@animaljusticeparty.org.nz  38
+animaljustice.org.nz | party@animaljusticeparty.org.nz 38
 
 ---
 
@@ -1532,7 +1532,7 @@ and high fees create artificial scarcity that drives up costs and restricts work
 growth. Emergency procedures can cost thousands of dollars, forcing people to
 choose between insurmountable debt or euthanasia, while preventative care like
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  39
+animaljustice.org.nz | party@animaljusticeparty.org.nz 39
 
 ---
 
@@ -1579,7 +1579,7 @@ their calling without the moral injury of profit-driven gatekeeping. This is not
 is recognition that animals' right to medical care should not depend on economic
 circumstance or postcode.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  40
+animaljustice.org.nz | party@animaljusticeparty.org.nz 40
 
 ---
 
@@ -1608,11 +1608,11 @@ languages
 9. Implement strong regulations against price exploitation by corporate
 veterinary chains to protect independent practices and affordable community
 care
-10.Establish community oversight through local animal welfare councils with
+10. Establish community oversight through local animal welfare councils with
 power to direct resources to areas of greatest need and ensure meaningful
 representation from Māori, Pasifika and diverse communities
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  41
+animaljustice.org.nz | party@animaljusticeparty.org.nz 41
 
 ---
 
@@ -1660,7 +1660,7 @@ https://plantbasednews.org/culture/law-and-politics/australia-farm-trespass-law-
 69
 Australian Broadcasting Corporation (ABC). (2023, May 19). Unions and human rights groups slam
 SA protest law change rushed through parliament. ABC News.
-animaljustice.org.nz | party@animaljusticeparty.org.nz  42
+animaljustice.org.nz | party@animaljusticeparty.org.nz 42
 
 ---
 
@@ -1712,7 +1712,7 @@ https://www.hrw.org/news/2023/05/30/australias-crackdown-climate-activists
 International Covenant on Civil and Political Rights, G.A. Res. 2200A (XXI), 21 U.N. GAOR Supp.
 (No. 16) at 52, U.N. Doc. A/6316 (1966) (entered into force Mar. 23, 1976).
 https://doi.org/10.1093/rsq/hdi031
-animaljustice.org.nz | party@animaljusticeparty.org.nz  43
+animaljustice.org.nz | party@animaljusticeparty.org.nz 43
 
 ---
 
@@ -1763,7 +1763,7 @@ Chhour, K. (2025, June 4). Protecting Families by Protecting Pets – a national
 release]. New Zealand Government.
 https://www.beehive.govt.nz/release/protecting-families-protecting-pets-%E2%80%93-national-call-act
 ion
-animaljustice.org.nz | party@animaljusticeparty.org.nz  44
+animaljustice.org.nz | party@animaljusticeparty.org.nz 44
 
 ---
 
@@ -1810,7 +1810,7 @@ as tools of domestic control
 78
 Seah, N.. (2022, March 29). The hidden victims of family violence. The Spinoff.
 https://thespinoff.co.nz/society/29-03-2022/the-hidden-victims-of-family-violence-2
-animaljustice.org.nz | party@animaljusticeparty.org.nz  45
+animaljustice.org.nz | party@animaljusticeparty.org.nz 45
 
 ---
 
@@ -1858,7 +1858,7 @@ ibid
 82
 PETA. (n.d.). Animals used in education. Retrieved October 24, 2025, from
 https://www.peta.org/issues/animals-used-for-experimentation/classroom-dissection/
-animaljustice.org.nz | party@animaljusticeparty.org.nz  46
+animaljustice.org.nz | party@animaljusticeparty.org.nz 46
 
 ---
 
@@ -1909,7 +1909,7 @@ e-of-animals-in-research-testing-and-teaching
 84
 New Zealand Anti-Vivisection Society. (n.d.). Ending animal dissections in NZ schools. Retrieved
 October 24, 2025, from https://www.nzavs.org.nz/our-work/kind-education
-animaljustice.org.nz | party@animaljusticeparty.org.nz  47
+animaljustice.org.nz | party@animaljusticeparty.org.nz 47
 
 ---
 
@@ -1958,7 +1958,7 @@ sustainable food systems
 - Legislated ethical review requirements for any research involving animals,
 with animal testing only to be used as a last resort where non-animal methods
 are not available
-animaljustice.org.nz | party@animaljusticeparty.org.nz  48
+animaljustice.org.nz | party@animaljusticeparty.org.nz 48
 
 ---
 
@@ -2005,7 +2005,7 @@ production and animal welfare
 Teacher Support and Resources:
 
 Curriculum Development:
-animaljustice.org.nz | party@animaljusticeparty.org.nz  49
+animaljustice.org.nz | party@animaljusticeparty.org.nz 49
 
 ---
 
@@ -2045,4 +2045,4 @@ welfare without exploiting live animals
 4. Transform animal science education to focus on compassionate management
 rather than exploitation of animals
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  50
+animaljustice.org.nz | party@animaljusticeparty.org.nz 50

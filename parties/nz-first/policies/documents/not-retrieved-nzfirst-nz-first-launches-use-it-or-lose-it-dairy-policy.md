@@ -23,5 +23,5 @@ Policies that cite this page: `POL54754`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZ First Launches 'Use It Or Lose It' Dairy Policy (Press release, 2026-08-20)](../documents/2026-08-20-nz-first-launches-use-it-or-lose-it-dairy-policy.md) 
-- [Winston Peters' Speech - “Adding Real Export Value – Use It Or Lose It” (Speech, 2026-08-22)](../documents/2026-08-22-winston-peters-speech-adding-real-export-value-use-it-or-los.md) 
+- [NZ First Launches 'Use It Or Lose It' Dairy Policy (Press release, 2026-08-20)](2026-08-20-nz-first-launches-use-it-or-lose-it-dairy-policy.md)
+- [Winston Peters' Speech - “Adding Real Export Value – Use It Or Lose It” (Speech, 2026-08-22)](2026-08-22-winston-peters-speech-adding-real-export-value-use-it-or-los.md)

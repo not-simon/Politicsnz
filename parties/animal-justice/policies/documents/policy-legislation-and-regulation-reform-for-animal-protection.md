@@ -36,9 +36,9 @@ harm or cruelty. It is imperative that animal welfare and protection legislation
 adequately resourced and equipped with robust compliance monitoring, appropriate
 penalties and regulatory enforcement capabilities.
 
-nimalwelfarelegislationshouldbedraftedwiththesoleintentionofrecognisinganimal
+nimal welfare legislation should be drafted with the sole intention of recognising animal
 A
-sentienceandprotectinganimals,withoutinfluencefromindustriesthatprofitfromtheir
+sentience and protecting animals, without influence from industries that profit from their
 exploitation. The principles enshrined in the Animal Welfare Act 1999 must be
 enforceable, without loopholes that allow industries to evade responsibility by
 self-regulation. Until adequate animal protection legislation is in place, AJP will also
@@ -47,53 +47,53 @@ cruelty to occur (for example, codes of practice for the “welfare” of farmed
 
 JP supports a legal framework that reflects a societal commitment to valuing,
 A
-protecting and respecting animals, fosteringresponsibleandcompassionatetreatment
+protecting and respecting animals, fostering responsible and compassionate treatment
 in all contexts and industries. Without stringent, and enforceable, legal protection,
 animals remain vulnerable to cruelty and exploitation, their welfare jeopardised by
-profit-driven motives. Empowering and resourcing authorities to shareinformationand
-enforce legislation and regulations is essential, ensuring individuals andorganisations
+profit-driven motives. Empowering and resourcing authorities to share information and
+enforce legislation and regulations is essential, ensuring individuals and organisations
 are held accountable for infringements. Championing animal-centric legislation paves
-the way to a more just and humane society where positive animal welfare1 is legally
+the way to a more just and humane society where positive animal welfare 1 is legally
 recognised and animals are granted by the law the dignity and protection they deserve.
 
 1
 A scientific network entitled ‘Laying the foundations for positive animal welfare’ has been established to
-dvance its scientific understanding (https://LIFTanimalwelfare.eu/).This network comprises more than
+dvance its scientific understanding ( https://LIFTanimalwelfare.eu/ ). This network comprises more than
 a
 330 scientists from 42 countries. The resulting definition is “Positive animal welfare is defined as the
 animal flourishing through the experience of predominantly positive mental states and the development of
-competence and resilience”https://royalsocietypublishing.org/doi/epdf/10.1098/rsbl.2024.0382.
+competence and resilience” https://royalsocietypublishing.org/doi/epdf/10.1098/rsbl.2024.0382.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
-nimal welfare has become a global concern,whichfirstrequiresadequateregulation
+nimal welfare has become a global concern, which first requires adequate regulation
 A
 at a national level.
 
 here is an urgent need to overhaul New Zealand’s animal welfare governance
 T
 system to enable a paradigm shift in the value of animals and human responsibility
-towards them.2 It is crucialthatimprovedanimalwelfareandprotectionisprioritised
+towards them. 2 It is crucial that improved animal welfare and protection is prioritised
 by legislative reform and strengthened regulatory enforcement to avoid ongoing
 exploitation and harm at human hands.
 
-Kantar Poll conductednationwideinApril2023showedthatthewelfareortreatment
+Kantar Poll conducted nationwide in April 2023 showed that the welfare or treatment
 A
-of animals is extremely, or very, important to three in four New Zealanders.3
+of animals is extremely, or very, important to three in four New Zealanders. 3
 
-Horizon Research poll conducted nationwide in June 2023 shows that 90%ofNew
+Horizon Research poll conducted nationwide in June 2023 shows that 90% of New
 A
 Zealanders believe it is important to protect the welfare of animals farmed in New
 Zealand and 71% agree that the Government should do more to promote greater
-awareness of farmed animal welfare internationally.4
+awareness of farmed animal welfare internationally. 4
 
 Purpose and Objectives of the Animal Protection Policy
 
-JP advocates for a newlegalframeworkthatrecognisesanimals'righttolivewithout
+JP advocates for a new legal framework that recognises animals' right to live without
 A
-sufferingharmfromhumansandensuresthattheirlivesandwell-beingareprotectedby
+suffering harm from humans and ensures that their lives and well-being are protected by
 the advancement of New Zealand’s legal system.
 
 The core purpose of the animal protection policy is:
@@ -107,26 +107,26 @@ entertainment, research, etc.)
 - To protect endangered species and their habitats
 
 2
-Animal Protection Index (2020). Despite often beinglauded as a leader in animal welfare and protection,
+Animal Protection Index (2020). Despite often being lauded as a leader in animal welfare and protection,
 ew Zealand has a very low ranking in global animal welfare indices:
 N
 https://api.worldanimalprotection.org/country/new-zealand
 3
-Press Release: SAFE for Animals. (2023, September 19).Political Parties Neglect Animal Welfare,
+Press Release: SAFE for Animals. (2023, September 19). Political Parties Neglect Animal Welfare,
 Survey Reveals.
 https://www.scoop.co.nz/stories/PO2309/S00145/political-parties-neglect-animal-welfare-survey-reveals.h
 tm
 4
-HorizonPoll incorporating ShapeNZ. (2023).https://www.horizonpoll.co.nz/page/675/80-say-impo_
+HorizonPoll incorporating ShapeNZ. (2023). https://www.horizonpoll.co.nz/page/675/80-say-impo_
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2
 
 ---
 
-JP opposes all exploitation of animals andadvocatesfortheirethicaltreatmentinall
+JP opposes all exploitation of animals and advocates for their ethical treatment in all
 A
-human-animalinteractions.Westandagainstallpracticesthatsubjectanimalstostress
-and/or harm. Our vision is for a societythatplacesvalueonthewell-beingofanimals
+human-animal interactions. We stand against all practices that subject animals to stress
+and/or harm. Our vision is for a society that places value on the well-being of animals
 and prohibits all practices that exploit or harm them.
 
 ur advocacy entails the development and promotion of policies that end harmful
@@ -138,27 +138,27 @@ behaviours.
 Key Objectives
 
 1. Appoint a dedicated Commissioner for Animals, responsible for overseeing the
-implementation, monitoring andenforcementofanimalwelfareandprotectionlaws,
-to coordinate andleadanimalprotectionefforts(seeseparatepolicyCommissioner
-for Animals).
-2. Abolishtheclassificationofanimalsaspropertyandintroduceconsistentlegislation
+implementation, monitoring and enforcement of animal welfare and protection laws,
+to coordinate and lead animal protection efforts (see separate policy Commissioner
+for Animals) .
+2. Abolish the classification of animals as property and introduce consistent legislation
 that defines and acknowledges animal sentience, ensuring legal protection from
 harm
-3. Whileuniformanimalprotectionlawsarebeingdeveloped,campaignfortheremoval
-andprohibitionofexemptionsorambiguitiesthatenablecrueltytoanimals,suchas
+3. While uniform animal protection laws are being developed, campaign for the removal
+and prohibition of exemptions or ambiguities that enable cruelty to animals, such as
 Codes of Practice for the supposed “welfare” of farmed animals
-4. Promote collaboration between law enforcement agenciestocombatanimalabuse
+4. Promote collaboration between law enforcement agencies to combat animal abuse
 and its links to interpersonal violence.
 5. Apply import or sales restrictions on animal products sourced from outside New
-Zealand that do not meetthefarmedanimalwelfarestandardsappliedtodomestic
-production.5
+Zealand that do not meet the farmed animal welfare standards applied to domestic
+production. 5
 6. Advocate for the creation and implementation of an international treaty on animal
 rights
 
 Legislation and Regulation Reform for Animal Protection Policy | Created January 2025
 
 5
-Animal Policy International (2024).Closing the WelfareGap: Why New Zealand Must Apply Its Animal
-Protection Standards to Imports.https://www.animalpolicyinternational.org/closing-the-welfare-gap
+Animal Policy International (2024). Closing the Welfare Gap: Why New Zealand Must Apply Its Animal
+Protection Standards to Imports . https://www.animalpolicyinternational.org/closing-the-welfare-gap
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  3
+animaljustice.org.nz | party@animaljusticeparty.org.nz 3

@@ -23,4 +23,4 @@ Policies that cite this page: `POL54680`, `POL54681`, `POL54682`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [Seabed Mining Banned In Aotearoa Under Reintroduced Member’s Bill (Press release, 2026-02-08)](../documents/2026-02-08-seabed-mining-banned-in-aotearoa-under-reintroduced-members.md) 
+- [Seabed Mining Banned In Aotearoa Under Reintroduced Member’s Bill (Press release, 2026-02-08)](2026-02-08-seabed-mining-banned-in-aotearoa-under-reintroduced-members.md)

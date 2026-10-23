@@ -26,3 +26,5 @@ The Party projects the initiative would have a net cost of $150 million per year
 “It’s a good investment” says Wong. “We already fund around 90% of the cost of public transport from taxes and rates - this additional $150 million per year buys New Zealand a wide range of savings over time - like productivity gains from less traffic, less road wear and tear and health savings (from both air pollution and road traffic accidents). In the long-term, that $150 million a year will likely pay for itself.”
 
 The party cites a range of benefits of the policy - including easing the cost-of-living crisis, reducing traffic, increasing productivity, removing the need for ticketing infrastructure and improving health.
+
+\

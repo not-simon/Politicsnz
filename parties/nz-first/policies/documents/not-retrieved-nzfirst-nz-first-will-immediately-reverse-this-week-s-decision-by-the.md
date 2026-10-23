@@ -23,5 +23,5 @@ Policies that cite this page: `POL55308`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZ First Will Immediately Reverse This Week’s Decision By The Minister Of Consumer Affairs (Press release, 2026-10-16)](../documents/2026-10-16-nz-first-will-immediately-reverse-this-weeks-decision-by-the.md) 
-- [Statement On The Decision By The Minister Of Consumer Affairs Regarding Imported Aluminium Extrusions (Press release, 2026-10-13)](../documents/2026-10-13-statement-on-the-decision-by-the-minister-of-consumer-affair.md) 
+- [NZ First Will Immediately Reverse This Week’s Decision By The Minister Of Consumer Affairs (Press release, 2026-10-16)](2026-10-16-nz-first-will-immediately-reverse-this-weeks-decision-by-the.md)
+- [Statement On The Decision By The Minister Of Consumer Affairs Regarding Imported Aluminium Extrusions (Press release, 2026-10-13)](2026-10-13-statement-on-the-decision-by-the-minister-of-consumer-affair.md)

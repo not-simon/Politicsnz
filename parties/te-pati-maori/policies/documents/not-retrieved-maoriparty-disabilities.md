@@ -5,13 +5,11 @@ source_url: "https://www.maoriparty.org.nz/disabilities"
 retrieved: "2026-10-23"
 format: "html"
 fetch_method: "not-retrieved"
-archived_url: "https://web.archive.org/save/https://www.maoriparty.org.nz/disabilities"
 ---
 
 # 'Disabilities', undated (accessed 10 August 2026)
 
-Source page: <https://www.maoriparty.org.nz/disabilities>  
-Archived copy cited by policy.nz: <https://web.archive.org/save/https://www.maoriparty.org.nz/disabilities>
+Source page: <https://www.maoriparty.org.nz/disabilities>
 
 ## Full text
 

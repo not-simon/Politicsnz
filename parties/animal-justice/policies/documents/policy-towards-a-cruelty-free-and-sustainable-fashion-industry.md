@@ -57,4 +57,4 @@ T
 ‭‭P
 ‬ rotecting the rights of farmed animals policy | Created May 2025‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭1‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭1‬

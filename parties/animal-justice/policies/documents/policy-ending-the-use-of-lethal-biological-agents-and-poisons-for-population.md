@@ -28,9 +28,9 @@ Poisons and biological agents used for population control frequently cause inten
 
 2. Cease the use of all poisons, including 1080 and Brodifacoum aerial drops.
 
-3. Fund research into ethical, non-lethal alternatives for managing introduced species, such as:
-a. Immunocontraceptives for population control 
-b. Fencing and habitat modification to prevent overpopulation 
+3. Fund research into ethical, non-lethal alternatives for managing introduced species, such as: \
+a. Immunocontraceptives for population control \
+b. Fencing and habitat modification to prevent overpopulation \
 c. Non-toxic deterrents and repellents
 
 4. Ensure conservation efforts align with compassionate principles and recognise the sentience and intrinsic value of all animals.
@@ -80,7 +80,7 @@ https://www.ospri.co.nz/assets/ResourcePDFs/Manaaki-Whenua-Landcare-Research-Mol
 7
 Peterson, A. J. (2014). The long-term impacts of an aerial 1080 application on non-target forest species.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -144,7 +144,7 @@ Warburton, B., Eason, C., Fisher, P., Hancox, N., Hopkins, B., Nugent, G., ... &
 mammal pest control in New Zealand in the context of concerns about 1080 toxicant (sodium fluoroacetate). New
 Zealand Journal of Zoology, 49(2), 79-121.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2
 
 ---
 
@@ -167,4 +167,4 @@ the sentience and intrinsic value of all animals.
 
 Ending the use of lethal biological agents and poisons for population control policy | Created August 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  3
+animaljustice.org.nz | party@animaljusticeparty.org.nz 3

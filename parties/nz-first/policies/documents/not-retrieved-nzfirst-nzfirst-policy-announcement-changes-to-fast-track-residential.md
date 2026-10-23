@@ -23,4 +23,4 @@ Policies that cite this page: `POL55305`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZFirst Policy Announcement: Changes To Fast-Track Residential Approvals (Press release, 2026-10-14)](../documents/2026-10-14-nzfirst-policy-announcement-changes-to-fast-track-residentia.md) 
+- [NZFirst Policy Announcement: Changes To Fast-Track Residential Approvals (Press release, 2026-10-14)](2026-10-14-nzfirst-policy-announcement-changes-to-fast-track-residentia.md)

@@ -23,4 +23,4 @@ Policies that cite this page: `POL55309`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZ First Announces Overhaul To Regulate Combat Sports (Press release, 2026-10-15)](../documents/2026-10-15-nz-first-announces-overhaul-to-regulate-combat-sports.md) 
+- [NZ First Announces Overhaul To Regulate Combat Sports (Press release, 2026-10-15)](2026-10-15-nz-first-announces-overhaul-to-regulate-combat-sports.md)

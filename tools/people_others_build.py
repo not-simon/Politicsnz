@@ -27,7 +27,7 @@ def build(f):
     folder = meta.pop("folder"); slug = meta["slug"]; photo_file = meta.pop("photo_file", None)
     d = ROOT / "parties" / folder / "people" / slug; d.mkdir(parents=True, exist_ok=True)
     pj = d / "person.json"; ex = json.loads(pj.read_text()) if pj.exists() else {}
-    if photo_file and not (d / "photo.jpg").exists():
+    if photo_file and not (d / "photo.jpg").exists() and PHOTOS:
         out = subprocess.run([sys.executable, str(ROOT / "tools/people_others_photo.py"), photo_file, str(d)], capture_output=True, text=True)
         if out.returncode == 0: meta.update({k: v for k, v in json.loads(out.stdout).items() if k != "skipped"})
         else: print("PHOTO FAIL", slug, out.stderr[-300:], file=sys.stderr)
@@ -65,7 +65,8 @@ def build(f):
     L += ["## Sources", ""] + [f"- {s}" for s in srcs] + [""]
     rd.write_text("\n".join(L))
     return folder, slug
-targets = sys.argv[1:]
+PHOTOS = "--photos" in sys.argv
+targets = [a for a in sys.argv[1:] if not a.startswith("--")]
 for f in sorted(C.glob("*.md")):
     if targets and f.stem not in targets: continue
     print("built", *build(f))

@@ -30,10 +30,10 @@ AJP supports greater protection and restoration of natural habitats and ecosyste
 
 3. **Restrict** seabed mining
 
-4. **Redirect** funds away from animal agriculture, through taxes and regulations, and towards plant-based agriculture and habitat restoration projects and practices, as outlined in our ‘*Introduce tighter standards and enforcement for agricultural pollution’ and ‘Provide financial incentives for good environmental practices’ sub-policies under Objective 2 in our ‘Just Transition to a Plant-Based Economy’ policy*. This redirection of funds would enable:
-a. Reserves: Stronger protection of, and creation of more, land and marine reserves (including more Highly Protected Marine Areas) 
-b. Restoration: Roll out restoration projects to restore habitats, including mangroves, peat bogs, forests, marine habitats and other natural ecosystems. Subsidise farmers and landowners actively restoring the land and associated ecosystems. 
-c. Subsidise green community projects 
+4. **Redirect** funds away from animal agriculture, through taxes and regulations, and towards plant-based agriculture and habitat restoration projects and practices, as outlined in our ‘*Introduce tighter standards and enforcement for agricultural pollution’ and ‘Provide financial incentives for good environmental practices’ sub-policies under Objective 2 in our ‘Just Transition to a Plant-Based Economy’ policy*. This redirection of funds would enable: \
+a. Reserves: Stronger protection of, and creation of more, land and marine reserves (including more Highly Protected Marine Areas) \
+b. Restoration: Roll out restoration projects to restore habitats, including mangroves, peat bogs, forests, marine habitats and other natural ecosystems. Subsidise farmers and landowners actively restoring the land and associated ecosystems. \
+c. Subsidise green community projects \
 d. Create wildlife corridors (link to Objective 3: *Protect Wildlife From Anthropogenic Harms*)
 
 5. **Implement** educational programmes in schools, universities, and communities to promote awareness of the importance of living within our ecological limits, for the purpose of avoiding, remedying and mitigating the destruction of natural environments in which animals live. *See Compassionate Education policy.*
@@ -83,7 +83,7 @@ Jennings, S., & Kaiser, M. J. (2017). The effects of fishing on marine ecosystem
 74(9), 2283-2297; Oberle, F. K. J., Storlazzi, C. D., & Hanebuth, T. J. J. (2016). What a drag—Quantifying the global
 impact of chronic bottom trawling on continental shelf sediment. Journal of Marine Systems, 154, 243-257.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -135,4 +135,4 @@ Assessment, 28, 939–960. https://doi.org/10.1007/s10666-023-09905-1
 Wang, W. F. (2024). Eutrophication mechanisms and their impacts on coastal marine ecosystems. International
 Journal of Marine Science, 14(4), 285–294. https://doi.org/10.5376/ijms.2024.14.0032
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2

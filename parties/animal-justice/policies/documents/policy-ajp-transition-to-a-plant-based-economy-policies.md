@@ -25,35 +25,35 @@ Download the AJP Transition to a plant-based economy policies pack PDF below
 ### PDF version: https://animaljustice.org.nz/wp-content/uploads/2026/09/AJP-Transition-to-Plant-based-economy-policies.pdf
 
 A just transition to a plant-based economy
-A just transition to a plant-based economy  1
-Just transition to a plant-based economy  1
-Four overarching objectives  2
-The ‘value’ of animal exploitation to New Zealand’s economy  2
-Impacts on animals  3
-Impacts on the environment  4
-Impacts on human health  4
-Other voices for change  6
-A Treaty-Based Approach to Economic Transition  7
-Objective 1: Increase consumption of plant-based foods  8
-Make plant-based foods the default option for public institutions  8
-Ensure fair and transparent labelling  10
-Introduce plant-based eating initiatives and improve guidelines  12
-Improve access to nutritious food  15
-Objective 2: Use land and water sustainably and compassionately  18
-Ban the most intensive and harmful forms of animal farming and fishing  18
-Introduce tighter standards and enforcement for agricultural pollution  20
-Provide financial incentives for good environmental practices  22
-Objective 3: Support farmers, workers and communities to transition  24
-Introduce a farm transition scheme  24
-Support for rural economies to thrive without animal agriculture  27
-Reskill workers within, and supporting, the industrial animal system  29
-Objective 4: Develop long-term economic alternatives  31
-Identify our biggest land-use and bioeconomy opportunities  31
-Become a leader in alternative proteins  34
+A just transition to a plant-based economy 1
+Just transition to a plant-based economy 1
+Four overarching objectives 2
+The ‘value’ of animal exploitation to New Zealand’s economy 2
+Impacts on animals 3
+Impacts on the environment 4
+Impacts on human health 4
+Other voices for change 6
+A Treaty-Based Approach to Economic Transition 7
+Objective 1: Increase consumption of plant-based foods 8
+Make plant-based foods the default option for public institutions 8
+Ensure fair and transparent labelling 10
+Introduce plant-based eating initiatives and improve guidelines 12
+Improve access to nutritious food 15
+Objective 2: Use land and water sustainably and compassionately 18
+Ban the most intensive and harmful forms of animal farming and fishing 18
+Introduce tighter standards and enforcement for agricultural pollution 20
+Provide financial incentives for good environmental practices 22
+Objective 3: Support farmers, workers and communities to transition 24
+Introduce a farm transition scheme 24
+Support for rural economies to thrive without animal agriculture 27
+Reskill workers within, and supporting, the industrial animal system 29
+Objective 4: Develop long-term economic alternatives 31
+Identify our biggest land-use and bioeconomy opportunities 31
+Become a leader in alternative proteins 34
 
 Version 3 – 13.04.25
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -97,7 +97,7 @@ innovation in food tech, and promoting and incentivising more compassionate and
 Klerkx, L., Turner, J., & Percy, H. (2023) Navigating the rapids of agrifood systems transformation:
 reflections on Aotearoa New Zealand’s emerging mission oriented agrifood innovation system
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -144,7 +144,7 @@ Despite its well documented negative impacts, animal agriculture occupies a prom
 position in New Zealand's economy and national identity. While agriculture is often
 described as the foundation of New Zealand's economic prosperity, contributing to GDP,
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2
 
 ---
 
@@ -195,7 +195,7 @@ See: https://figure.nz/chart/3MTXwpL6IC7HriMp (sheep), https://figure.nz/chart/s
 (livestock), https://figure.nz/chart/MvEo5sIoSRn18Ofd (cattle), https://figure.nz/chart/tkWQS2fpbiLVpF7N
 (pigs) and https://animalsaotearoa.org/learn/how-chickens-suffer-at-slaughter/ (chickens).
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  3
+animaljustice.org.nz | party@animaljusticeparty.org.nz 3
 
 ---
 
@@ -248,7 +248,7 @@ See: https://www.ehinz.ac.nz/assets/Factsheets/Released_2021/Agricultural-Land-U
 9
 See: MfE (2020): https://environment.govt.nz/publications/our-freshwater-2020/
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  4
+animaljustice.org.nz | party@animaljusticeparty.org.nz 4
 
 ---
 
@@ -300,7 +300,7 @@ https://doi.org/10.3390/su142113900
 Zhang, T. et al. (2024). The impacts of animal agriculture on One Health—Bacterial zoonosis,
 antimicrobial resistance, and beyond. One Health, vol 18 https://doi.org/10.1016/j.onehlt.2024.100748
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  5
+animaljustice.org.nz | party@animaljusticeparty.org.nz 5
 
 ---
 
@@ -360,7 +360,7 @@ as-primary-dinner-option-for-inpatients-at-all-of-its-11-public-hospitals/
 24
 https://rethinkpriorities.org/research-area/plant-based-meal-campaigns-in-the-us-western-europe/
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  6
+animaljustice.org.nz | party@animaljusticeparty.org.nz 6
 
 ---
 
@@ -389,7 +389,7 @@ transition.)”
 25
 https://plantbasedtreaty.org/
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  7
+animaljustice.org.nz | party@animaljusticeparty.org.nz 7
 
 ---
 
@@ -438,7 +438,7 @@ https://www.ediblegardencity.com/key-projects
 https://www.theguardian.com/world/2018/may/09/incredible-edible-yorkshire-towns-food-growing-scheme-
 takes-root-worldwide
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  8
+animaljustice.org.nz | party@animaljusticeparty.org.nz 8
 
 ---
 
@@ -460,7 +460,7 @@ plant-based food the default option (animal-based options available on request).
 demand for animal-based foods.
 3. Support the Plant Based Treaty.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  9
+animaljustice.org.nz | party@animaljusticeparty.org.nz 9
 
 ---
 
@@ -507,7 +507,7 @@ review and network meta-analysis. PLoS Med. 2021 Oct; 18(10): e1003765
 https://www.theguardian.com/society/2015/oct/26/bacon-ham-sausages-processed-meats-cancer-risk-sm
 oking-says-who
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  10
+animaljustice.org.nz | party@animaljusticeparty.org.nz 10
 
 ---
 
@@ -519,7 +519,7 @@ import or sales restrictions on animal products that do not meet animal welfare
 standards applied to domestic production (see Legislation and Regulation
 Reform for Animal Protection).
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  11
+animaljustice.org.nz | party@animaljusticeparty.org.nz 11
 
 ---
 
@@ -564,7 +564,7 @@ reflect the diversity of New Zealand society and current health inequalities.
 32
 https://www.tandfonline.com/doi/full/10.1080/1177083X.2024.2344510#abstract
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  12
+animaljustice.org.nz | party@animaljusticeparty.org.nz 12
 
 ---
 
@@ -615,14 +615,14 @@ https://www.escoffier.edu/blog/world-food-drink/how-plant-based-dishes-are-shapi
 37
 https://vegmed.org/
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  13
+animaljustice.org.nz | party@animaljusticeparty.org.nz 13
 
 ---
 
-5. Implement comprehensive restrictions  on  the  marketing  of  unhealthy
+5. Implement comprehensive restrictions on the marketing of unhealthy
 animal-based food and beverages.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  14
+animaljustice.org.nz | party@animaljusticeparty.org.nz 14
 
 ---
 
@@ -672,7 +672,7 @@ https://www.phcc.org.nz/briefing/food-poverty-nz-teens-creating-achievement-lag-
 https://thespinoff.co.nz/kai/31-07-2024/around-the-world-food-insecurity-is-improving-in-new-zealand-its-g
 etting-worse
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  15
+animaljustice.org.nz | party@animaljusticeparty.org.nz 15
 
 ---
 
@@ -723,7 +723,7 @@ https://epha.org/wp-content/uploads/2023/06/epha_2023_the_illusion_of_choice_rep
 47
 https://www.agrifood4netzero.net/resources/digest-national-food-strategy-an-update/
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  16
+animaljustice.org.nz | party@animaljusticeparty.org.nz 16
 
 ---
 
@@ -758,7 +758,7 @@ Public Health Advisory Committee. 2024. Rebalancing our food system. Wellington:
 Klerkx, L., Turner, J., & Percy, H. (2023) Navigating the rapids of agrifood systems transformation:
 reflections on Aotearoa New Zealand’s emerging mission oriented agrifood innovation system
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  17
+animaljustice.org.nz | party@animaljusticeparty.org.nz 17
 
 ---
 
@@ -801,7 +801,7 @@ https://www.mpi.govt.nz/about-mpi/
 https://www.nzherald.co.nz/nz/animal-cruelty-ageing-farmers-struggles-linked-to-mistreatment-of-animals/
 QT4PNR5JINC6HIWEQUFOUEWHSY/
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  18
+animaljustice.org.nz | party@animaljusticeparty.org.nz 18
 
 ---
 
@@ -822,11 +822,11 @@ for Animal Protection policy overviews.
 Protecting the Rights of Farmed Animals and Ensuring the Welfare and
 Protection of Marine Life.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  19
+animaljustice.org.nz | party@animaljusticeparty.org.nz 19
 
 ---
 
-Introduce tighter standards  and  enforcement  for
+Introduce tighter standards and enforcement for
 agricultural pollution
 
 The AJP seeks to address the environmental harm caused by agricultural practices
@@ -869,7 +869,7 @@ https://www.nzagrc.org.nz/news-and-events/race-on-to-reduce-emissions-from-new-z
 Parliamentary Commissioner for the Environment Going with the grain Changing land uses to fit a
 changing landscape May 2024
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  20
+animaljustice.org.nz | party@animaljusticeparty.org.nz 20
 
 ---
 
@@ -905,7 +905,7 @@ revenue streams to support regional control and decision-making.
 4. Ensure that Māori landholders are not disproportionately impacted by policy
 changes and are supported in exercising kaitiakitanga.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  21
+animaljustice.org.nz | party@animaljusticeparty.org.nz 21
 
 ---
 
@@ -948,7 +948,7 @@ include the UK’s Environmental Land Management Scheme (based on the principle 
 under the EU Common Agricultural Policy. In the Netherlands, 25 billion Euros has been
 budgeted to support herd reduction to address water pollution from agricultural
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  22
+animaljustice.org.nz | party@animaljusticeparty.org.nz 22
 
 ---
 
@@ -972,7 +972,7 @@ ecosystems and protect biodiversity.
 https://www.theguardian.com/environment/2021/dec/15/netherlands-announces-25bn-plan-to-radically-re
 duce-livestock-numbers
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  23
+animaljustice.org.nz | party@animaljusticeparty.org.nz 23
 
 ---
 
@@ -1020,7 +1020,7 @@ Griffin, C., et al (2023). ‘As a farmer you've just got to learn to cope’: U
 perceptions of climate change and adaptation decisions in the lower South Island of Aotearoa-New
 Zealand. Journal of Rural Studies, 98, 147-158.https://doi.org/10.1016/j.jrurstud.2023.02.001
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  24
+animaljustice.org.nz | party@animaljusticeparty.org.nz 24
 
 ---
 
@@ -1063,7 +1063,7 @@ national scheme to provide direct support to animal farmers who wish to
 transition to plant farming or other economic activities and identify potential
 opportunities and barriers.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  25
+animaljustice.org.nz | party@animaljusticeparty.org.nz 25
 
 ---
 
@@ -1073,7 +1073,7 @@ restructuring.
 3. Ensure meaningful Māori participation and partnership throughout the
 development and implementation of the scheme.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  26
+animaljustice.org.nz | party@animaljusticeparty.org.nz 26
 
 ---
 
@@ -1120,7 +1120,7 @@ https://www.mpi.govt.nz/dmsdocument/48136-Facilitating-the-growth-in-the-New-Zea
 MacDonald, B. (2018). Southland eyes oats instead of dairy.
 https://www.newsroom.co.nz/2018/02/18/89428/southland-eyes-oats-instead-of-dairy
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  27
+animaljustice.org.nz | party@animaljusticeparty.org.nz 27
 
 ---
 
@@ -1155,7 +1155,7 @@ businesses; alongside investments in local infrastructure.
 https://www.mbie.govt.nz/immigration-and-tourism/tourism/tourism-recovery/tourism-communities-support
 -recovery-and-re-set-plan/queenstown-economic-transformation-and-resilience-fund
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  28
+animaljustice.org.nz | party@animaljusticeparty.org.nz 28
 
 ---
 
@@ -1199,7 +1199,7 @@ Griffin, C., et al (2023). ‘As a farmer you've just got to learn to cope’: U
 perceptions of climate change and adaptation decisions in the lower South Island of Aotearoa-New
 Zealand. Journal of Rural Studies, 98, 147-158.https://doi.org/10.1016/j.jrurstud.2023.02.001
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  29
+animaljustice.org.nz | party@animaljusticeparty.org.nz 29
 
 ---
 
@@ -1217,12 +1217,12 @@ opportunities in plant-based sectors.
 2. Support a just transition that leaves no-one behind and honors Te Tiriti o
 Waitangi principles.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  30
+animaljustice.org.nz | party@animaljusticeparty.org.nz 30
 
 ---
 
 Objective 4: Develop long-term economic alternatives
-Identify our  biggest  land-use  and  bioeconomy
+Identify our biggest land-use and bioeconomy
 opportunities
 
 The AJP believes that the Government should convene a national process of
@@ -1258,7 +1258,7 @@ climates and cultural contexts.
 - Identify the key steps the Government can take to support these opportunities -
 such as removing barriers, changing regulations and introducing incentives etc.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  31
+animaljustice.org.nz | party@animaljusticeparty.org.nz 31
 
 ---
 
@@ -1311,7 +1311,7 @@ https://newsroom.co.nz/2024/11/12/the-case-for-feeding-our-5-million-first-befor
 https://pce.parliament.nz/media/qfxluadl/going-with-the-grain-changing-land-uses-to-fit-a-changing-landsc
 ape.pdf
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  32
+animaljustice.org.nz | party@animaljusticeparty.org.nz 32
 
 ---
 
@@ -1324,7 +1324,7 @@ rangatiratanga while achieving economic benefits.
 supermarket duopoly and their centralised approach, strengthening regional
 economies and reducing dependence on volatile export markets.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  33
+animaljustice.org.nz | party@animaljusticeparty.org.nz 33
 
 ---
 
@@ -1374,7 +1374,7 @@ report. Wellington: New Zealand Productivity Commission.
 72
 The Green Protein Report
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  34
+animaljustice.org.nz | party@animaljusticeparty.org.nz 34
 
 ---
 
@@ -1422,7 +1422,7 @@ Landfall Strategy Group.
 74
 https://www.beehive.govt.nz/release/agriculture-come-out-ets
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  35
+animaljustice.org.nz | party@animaljusticeparty.org.nz 35
 
 ---
 
@@ -1467,4 +1467,4 @@ has favored traditional primary sector activities.
 5. Position New Zealand to proactively adapt to structural market changes rather
 than treating them as temporary disruptions.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  36
+animaljustice.org.nz | party@animaljusticeparty.org.nz 36

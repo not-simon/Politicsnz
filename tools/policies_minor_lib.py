@@ -194,7 +194,7 @@ def pdf_md(path):
     """pdftotext -layout, lightly normalised to Markdown: bullets become '-', indentation removed,
     page-break form feeds become a horizontal rule. Words are unchanged."""
     r = subprocess.run(["pdftotext", "-layout", path, "-"], capture_output=True, text=True)
-    t = r.stdout.replace("​", "")
+    t = r.stdout.replace("\u200b", " ")
     pages = t.split("\f")
     out_pages = []
     for pg in pages:
@@ -208,7 +208,7 @@ def pdf_md(path):
                 s = "- " + m.group(2)
             elif m and m.group(1) in "◦○":
                 s = "    - " + m.group(2)
-            s = re.sub(r"\s{3,}", "  ", s)
+            s = re.sub(r"\s{2,}", " ", s)
             lines.append(s)
         txt = "\n".join(lines)
         txt = re.sub(r"\n{3,}", "\n\n", txt).strip()

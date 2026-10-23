@@ -13,11 +13,11 @@ fetch_method: curl + pdftotext -layout (poppler)
 
 ## Full text (verbatim)
 
-Date  September 2026
+Date September 2026
 
-Policy  Climate Action
+Policy Climate Action
 
-Document Type  Policy Overview
+Document Type Policy Overview
 
 Climate Resilient Aotearoa
 The decisions we make this decade will impact generations to
@@ -88,7 +88,7 @@ domestically produced low-emissions energy will strengthen energy security, redu
 price shocks, keep more investment in New Zealand, and give businesses more
 predictable long-term costs.
 
-Opportunity Party | Climate Action  Page 2
+Opportunity Party | Climate Action Page 2
 
 ---
 
@@ -120,7 +120,7 @@ Opportunity will:
 vegetation, riparian planting and other ecosystem services. See our Healthy Land
 policy for more.
 
-Opportunity Party | Climate Action  Page 3
+Opportunity Party | Climate Action Page 3
 
 ---
 
@@ -164,7 +164,7 @@ relocation.
 - create a National Insurance Support Framework with national rules for identifying
 and managing insurance retreat, transparent forward-looking risk assessments for
 
-Opportunity Party | Climate Action  Page 4
+Opportunity Party | Climate Action Page 4
 
 ---
 
@@ -208,7 +208,7 @@ infrastructure, and heat-stress mitigation for livestock; backing research into
 drought-tolerant crops, efficient irrigation, and regenerative land management;
 and, supporting the rewetting of peatlands and restoration of wetlands – critical,
 
-Opportunity Party | Climate Action  Page 5
+Opportunity Party | Climate Action Page 5
 
 ---
 
@@ -238,7 +238,7 @@ locks up productive land, harms biodiversity, and clogs waterways.
 A well-functioning carbon price signal will influence strategic investment decisions that
 will help us transition to a low carbon economy.
 
-Opportunity Party | Climate Action  Page 6
+Opportunity Party | Climate Action Page 6
 
 ---
 
@@ -281,7 +281,7 @@ record the cost as a liability on the Crown balance sheet.
 emissions reductions targets, including international aviation and shipping
 emissions.
 
-Opportunity Party | Climate Action  Page 7
+Opportunity Party | Climate Action Page 7
 
 ---
 
@@ -310,4 +310,4 @@ In December 2025 the Government cut the 2050 methane target from 24 to 47% below
 with proven technology, ecosystem payments and a pricing mechanism that starts only
 when the tools exist.
 
-Opportunity Party | Climate Action  Page 8
+Opportunity Party | Climate Action Page 8

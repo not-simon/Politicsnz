@@ -60,7 +60,7 @@ B
 ‭interim measures alongside transparent reporting of bobby calf statistics, enhanced‬
 ‭monitoring of welfare standards and significant penalties for non-compliance.‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭1‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭1‬
 
 ---
 
@@ -112,4 +112,4 @@ A
 b
 ‭https://www.tierschutzbund.de/en/animals-topics/animal-welfare-in-everyday-life/merino-wool/‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭2‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭2‬

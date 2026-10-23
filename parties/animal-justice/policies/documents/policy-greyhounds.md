@@ -45,15 +45,15 @@ Eliminating the Use of Animals in Entertainment
 Ban Greyhound Racing
 he Animal Justice Party Aotearoa NZ (AJP) is opposed to greyhound racing and is
 T
-committed to an immediate and complete ban, reflecting our commitment toeliminate
+committed to an immediate and complete ban, reflecting our commitment to eliminate
 the use of animals for human ‘sport’ and ‘entertainment’.
 
-reyhound racinginvolvesgreyhoundschasingamotorisedlureathighspeedaround
+reyhound racing involves greyhounds chasing a motorised lure at high speed around
 G
-or along a specialised track whilespectatorsplacebetsonparticulardogstowin.The
+or along a specialised track while spectators place bets on particular dogs to win. The
 inherently risky nature of racing, coupled with the industry's dependence on
 over-breeding, gambling revenue and the incentive to win prize money, has led to a
-situation where the welfare of racing greyhounds is compromised. Over40percentof
+situation where the welfare of racing greyhounds is compromised. Over 40 percent of
 racing greyhounds suffer injuries while racing; some serious, some lethal. This is the
 case wherever it occurs, and as a result, greyhound racing remains legal in only a
 handful of countries.
@@ -62,7 +62,7 @@ e do not believe that the greyhound racing industry can be safely regulated for 
 W
 animals. We also acknowledge the negative impacts of gambling on human mental
 health, domestic relationships, and financial stability. Over the past decade, three
-reviewshaveshedlightonconcerningpracticeswithinthegreyhoundracingindustryin
+reviews have shed light on concerning practices within the greyhound racing industry in
 New Zealand, following which the industry has lost its social licence.
 
 JP advocates for non-violent, community-friendly entertainment that aligns with
@@ -70,7 +70,7 @@ A
 society’s progressive concerns and higher ethical and moral principles and does not
 exploit and undermine animals’ well-being.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -79,10 +79,10 @@ Key Objectives:
 1. Ban all forms of greyhound racing in Aotearoa NZ.
 
 Interim measures, while we work towards the ban, include:
-2. Promote full transparencyandaccountabilityinrelationtodeathsandinjuriesof
+2. Promote full transparency and accountability in relation to deaths and injuries of
 all greyhounds born into the racing industry, both on and off the track.
 3. Recommend immediate restrictions to curb the breeding of greyhounds.
-4. Callforareductiononthenumberofgreyhoundseachracingkennelispermitted
+4. Call for a reduction on the number of greyhounds each racing kennel is permitted
 to own.
 5. Support the SPCA’s ‘Good Life’ Recommendation.
 6. Support the animal advocacy agencies (SPCA, SAFE, HUHA, Dogwatch) who
@@ -92,4 +92,4 @@ the industry into non-exploitative jobs and careers.
 
 Ban Greyhound Racing Policy | Created September 2024
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2

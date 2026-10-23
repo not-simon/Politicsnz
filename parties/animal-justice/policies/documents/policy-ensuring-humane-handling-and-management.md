@@ -63,7 +63,7 @@ F
 ‭legislation. AJP supports the implementation of humane practices in aquaculture,‬
 ‭including:‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭1‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭1‬
 
 ---
 
@@ -94,4 +94,4 @@ A
 ‭‭E
 ‬ nsuring humane handling‬‭and management policy | Created May 2025‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭2‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭2‬

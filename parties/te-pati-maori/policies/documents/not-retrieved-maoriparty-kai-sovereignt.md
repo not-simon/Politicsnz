@@ -23,5 +23,5 @@ Policies that cite this page: `POL54649`, `POL54650`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [Kai Sovereignty Policy 2026 (PDF)](../documents/pdf-kai-sovereignty-policy-2026.md) 
-- [Te Pāti Māori Launches Kai Sovereignty Policy (Press release, 2026-09-21)](../documents/2026-09-21-te-pati-maori-launches-kai-sovereignty-policy.md) 
+- [Kai Sovereignty Policy 2026 (PDF)](pdf-kai-sovereignty-policy-2026.md)
+- [Te Pāti Māori Launches Kai Sovereignty Policy (Press release, 2026-09-21)](2026-09-21-te-pati-maori-launches-kai-sovereignty-policy.md)

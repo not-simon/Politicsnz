@@ -23,4 +23,4 @@ Policies that cite this page: `POL55072`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [Te Pāti Māori Announces Toi Māori Authority And Artist Income Programme (Press release, 2026-10-12)](../documents/2026-10-12-te-pati-maori-announces-toi-maori-authority-and-artist-incom.md) 
+- [Te Pāti Māori Announces Toi Māori Authority And Artist Income Programme (Press release, 2026-10-12)](2026-10-12-te-pati-maori-announces-toi-maori-authority-and-artist-incom.md)

@@ -23,4 +23,4 @@ Policies that cite this page: `POL55257`, `POL55258`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZ First To Increase Working For Families, Minimum Wage (Press release, 2026-10-10)](../documents/2026-10-10-nz-first-to-increase-working-for-families-minimum-wage.md) 
+- [NZ First To Increase Working For Families, Minimum Wage (Press release, 2026-10-10)](2026-10-10-nz-first-to-increase-working-for-families-minimum-wage.md)

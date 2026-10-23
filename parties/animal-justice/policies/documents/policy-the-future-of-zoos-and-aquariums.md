@@ -59,7 +59,7 @@ circumstances where approval is considered, require rigorous pre-licensing
 assessments, including detailed evaluation of operator suitability, financial
 capacity and contingency planning for animal care.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -96,14 +96,14 @@ technologies as humane alternatives to live animal displays.
 Mandate full disclosure of animal origins, health status and life histories and
 prohibit the commercial import and export of live animals for profit.
 
-10.Regulate Sanctuaries
+10. Regulate Sanctuaries
 Establish clear legal definitions and accreditation systems to distinguish genuine
 sanctuaries from commercial enterprises, ensuring animal interests are
 paramount.
 
-11.Enhance Welfare Standards
+11. Enhance Welfare Standards
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2
 
 ---
 
@@ -111,19 +111,19 @@ Introduce stringent, enforceable welfare standards, particularly for animals
 exposed to public viewing, recognising the stress associated with human
 interaction.
 
-12.Prohibit Animal Performances
+12. Prohibit Animal Performances
 Ban the use of animals in performances, displays or interactive experiences that
 compromise their wellbeing.
 
-13.Redirect Public Investment
+13. Redirect Public Investment
 Prioritise support for wildlife rescue organisations, veterinary services, and
 rehabilitation programmes over traditional zoos.
 
-14.Support Ethical Transition Pathways
+14. Support Ethical Transition Pathways
 Provide assistance to operators seeking to transition toward non-exploitative
 models, including the adoption of virtual and educational alternatives.
 
-15.Promote Ethical and Sustainable Practices
+15. Promote Ethical and Sustainable Practices
 Encourage facilities to align all operations, including food provision, with
 principles of animal justice and environmental sustainability through adopting
 plant-based options.
@@ -146,7 +146,7 @@ Effective conservation must prioritise the protection and restoration of natural
 Without suitable environments for animals to return to, captive breeding programmes
 offer limited value and may, in some cases, perpetuate harm. Moreover, zoos tend to
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  3
+animaljustice.org.nz | party@animaljusticeparty.org.nz 3
 
 ---
 
@@ -186,7 +186,7 @@ changing conservation perspectives - Gilbert - 2017 - International Zoo Yearbook
 
 An analysis of zoo visitors' favourite and least favourite animals - ScienceDirect
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  4
+animaljustice.org.nz | party@animaljusticeparty.org.nz 4
 
 ---
 
@@ -236,7 +236,7 @@ Influence of enclosure size on the distances covered and paced by captive tigers
 ScienceDirect
 Slow violence against animals: Unseen spectacles in racing and at zoos - ScienceDirect
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  5
+animaljustice.org.nz | party@animaljusticeparty.org.nz 5
 
 ---
 
@@ -278,4 +278,4 @@ https://doi.org/10.1089/eco.2010.0079.
 A Case Study Exploring the Use of Virtual Reality in the Zoo Context — Animal Behavior and Cognition
 Launch of Europe's first virtual zoo | Eurogroup for Animals
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  6
+animaljustice.org.nz | party@animaljusticeparty.org.nz 6

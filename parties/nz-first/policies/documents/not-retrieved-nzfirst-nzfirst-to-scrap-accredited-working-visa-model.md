@@ -23,4 +23,4 @@ Policies that cite this page: `POL55262`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZFirst To Scrap Accredited Working Visa Model (Press release, 2026-10-11)](../documents/2026-10-11-nzfirst-to-scrap-accredited-working-visa-model.md) 
+- [NZFirst To Scrap Accredited Working Visa Model (Press release, 2026-10-11)](2026-10-11-nzfirst-to-scrap-accredited-working-visa-model.md)

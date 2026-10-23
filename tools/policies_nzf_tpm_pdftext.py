@@ -13,6 +13,7 @@ def pdf_text(path):
         p = re.sub(r"\x07[ \t]*\n?[ \t]*", "• ", p)
         p = re.sub(r"(?m)^•[ \t]*\n(?=•)", "", p)                       # empty bullet before a bullet
         p = re.sub(r"• ([A-ZĀĒĪŌŪ])\n• ([a-zāēīōū])", r"• \1\2", p)      # drop-cap split across bullets
+        p = re.sub(r"•(?:[ \t]*•)+", "•", p)                              # repeated bullet glyphs
         p = re.sub(r"[ \t]+\n", "\n", p)
         p = re.sub(r"\n{3,}", "\n\n", p).strip()
         if p: pages.append(p)

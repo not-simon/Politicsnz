@@ -86,7 +86,7 @@ https://doi.org/10.1002/aqc.3122
 Dowding, J. E., et al. (2020). Survival and breeding success of wrybills (Anarhynchus frontalis) in the Tekapo and
 Tasman Rivers, South Canterbury, New Zealand. Notornis, 67, 755–764.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -138,4 +138,4 @@ Horta, O. (2017). Animal suffering in nature: The case for intervention. Environ
 For a definition and explanation of wild animal welfare science, see
 https://www.wildanimalinitiative.org/research-priorities#introduction
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2

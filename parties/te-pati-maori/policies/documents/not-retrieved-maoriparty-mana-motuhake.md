@@ -23,6 +23,5 @@ Policies that cite this page: `POL54921`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- ['Te Tiriti Entrenchment Policy', undated (accessed 09 September 2026)](../documents/pdf-tiriti-entrenchment-policy.md) 
-- [Te Pāti Māori Launches Te Tiriti Entrenchment Policy (Press release, 2026-09-01)](../documents/2026-09-01-te-pati-maori-launches-te-tiriti-entrenchment-policy.md) 
-- [Mana Motuhake Policy (2023 document — NOT confirmed as 2026 policy) (PDF)](../documents/pdf-mana-motuhake-1y9gti2vgayijygamaq5e-wvclylcoytl.md) 
+- ['Te Tiriti Entrenchment Policy', undated (accessed 09 September 2026)](pdf-tiriti-entrenchment-policy.md)
+- [Te Pāti Māori Launches Te Tiriti Entrenchment Policy (Press release, 2026-09-01)](2026-09-01-te-pati-maori-launches-te-tiriti-entrenchment-policy.md)

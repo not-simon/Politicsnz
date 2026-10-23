@@ -23,4 +23,4 @@ Policies that cite this page: `POL55071`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [Oriini Kaipara: Prime Minister’s ‘Progress’ Ignores Housing Crisis Facing Māori And Rangatahi (Press release, 2026-01-29)](../documents/2026-01-29-oriini-kaipara-prime-ministers-progress-ignores-housing-cris.md) 
+- [Oriini Kaipara: Prime Minister’s ‘Progress’ Ignores Housing Crisis Facing Māori And Rangatahi (Press release, 2026-01-29)](2026-01-29-oriini-kaipara-prime-ministers-progress-ignores-housing-cris.md)

@@ -64,7 +64,7 @@ h
 ‭2‬
 ‭See AJP policy‬‭Commissioner for animals‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭1‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭1‬
 
 ---
 
@@ -112,4 +112,4 @@ a
 ‭https://ourarchive.otago.ac.nz/esploro/outputs/report/Animal-Welfare-in-New-Zealand-Oversight/9926479‬
 ‭549501891/filesAndLinks?index=0‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭2‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭2‬

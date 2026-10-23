@@ -23,4 +23,4 @@ Policies that cite this page: `POL55304`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZ First To Increase Funding And Support To NZ Coastguard (Press release, 2026-10-15)](../documents/2026-10-15-nz-first-to-increase-funding-and-support-to-nz-coastguard.md) 
+- [NZ First To Increase Funding And Support To NZ Coastguard (Press release, 2026-10-15)](2026-10-15-nz-first-to-increase-funding-and-support-to-nz-coastguard.md)

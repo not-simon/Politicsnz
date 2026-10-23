@@ -23,4 +23,4 @@ Policies that cite this page: `POL54679`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- ['Te Pāti Māori Announces a Māori Education Authority ', 2 August 2026 (accessed 11 August 2026)](../documents/2026-08-02-te-pati-maori-announces-maori-education-authority-to-restore.md) 
+- ['Te Pāti Māori Announces a Māori Education Authority ', 2 August 2026 (accessed 11 August 2026)](2026-08-02-te-pati-maori-announces-maori-education-authority-to-restore.md)

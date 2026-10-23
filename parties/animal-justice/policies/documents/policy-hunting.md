@@ -55,45 +55,45 @@ Competitions
 he Animal Justice Party Aotearoa NZ (AJP) is opposed to recreational hunting,
 T
 including hunting competitions, and is committed to a complete ban. Recreational
-huntingandhuntingcompetitionscausedeathandsufferingtoanimals,andundermine
+hunting and hunting competitions cause death and suffering to animals, and undermine
 efforts to promote respect and compassion for all.
 
-ecreational huntinginvolvesthepursuitandkillingofanimalsfor‘sport’.Thispractice
+ecreational hunting involves the pursuit and killing of animals for ‘sport’. This practice
 R
-not only causesunnecessarysufferingtoanimalsbutalsofostersacultureofviolence
+not only causes unnecessary suffering to animals but also fosters a culture of violence
 and desensitisation towards animal life. Significant suffering is inflicted upon animals:
 they may endure prolonged pain from injuries before dying, and non-target species
 often become unintended victims.
 
-untingcompetitionsexacerbateethicalconcernsbyincentivisingtherapid,large-scale
+unting competitions exacerbate ethical concerns by incentivising the rapid, large-scale
 H
 killing of animals for prizes and recognition. This pressure often leads to inhumane
-practices and a disregard for animal welfare. Current practices in some NewZealand
-schoolsencouragechildrentoparticipateinthemasskillingofanimals,oftenframedas
+practices and a disregard for animal welfare. Current practices in some New Zealand
+schools encourage children to participate in the mass killing of animals, often framed as
 a game or competition, in which violence is normalised and young minds become
-desensitised to the suffering of living creatures. Activities like 'Toss the Poss'notonly
+desensitised to the suffering of living creatures. Activities like 'Toss the Poss' not only
 disrespect animal life but also teach children to view certain species as disposable,
 rather than as sentient beings with lives of inherent worth.
 
-unting promotes andnormalisesviolenceagainstanimals,dullingsociety’ssensitivity
+unting promotes and normalises violence against animals, dulling society’s sensitivity
 H
 to animal suffering. Instead of fostering a connection with nature and teaching
-responsible environmental stewardship,huntingpromotesaharmfulandoversimplified
+responsible environmental stewardship, hunting promotes a harmful and oversimplified
 approach to wildlife management.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
-ewZealandallowsthehuntingofanarbitraryandwiderangeofanimalsincluding,to
+ew Zealand allows the hunting of an arbitrary and wide range of animals including, to
 N
-name a few, deer,pigs,free-roamingcats,rabbitsandvarious birdspecies.Seasonal
+name a few, deer, pigs, free-roaming cats, rabbits and various bird species. Seasonal
 restrictions may apply or licences may be required.
 
-untingpracticescausesignificantsufferingacrossvariousspecies.Forexample:many
+unting practices cause significant suffering across various species. For example: many
 H
 animals are not killed instantly, resulting in painful wounds and prolonged suffering;
-injured animals that escape often face a slow, agonising death and theuseofcertain
+injured animals that escape often face a slow, agonising death and the use of certain
 hunting methods, such as traps or particular types of ammunition, can increase the
 likelihood of non-fatal injuries. In the case of duck hunting, a seasonal activity, an
 estimated one million birds are affected annually, highlighting the scale of the issue.
@@ -102,10 +102,10 @@ forms of hunting.
 
 he practice of hunting also disrupts local ecosystems and harms other wildlife in
 T
-severalways:Itcanleadtohabitatdestructionormodificationashunterscreateaccess
+several ways: It can lead to habitat destruction or modification as hunters create access
 points or use methods that impact the environment; Non-target species may be
-accidentallyinjuredorkilledandthepresenceofhuntersandtheirequipmentcancause
-stress and behavioral changes in animals, affecting their naturalpatterns.Importantly,
+accidentally injured or killed and the presence of hunters and their equipment can cause
+stress and behavioral changes in animals, affecting their natural patterns. Importantly,
 these harmful practices are unnecessary for wildlife management. New technologies,
 such as wildlife contraception, offer more humane methods for managing wildlife
 populations without lethal means, and these approaches tend to be more effective at
@@ -133,4 +133,4 @@ including ‘school gala days’.
 
 Ban Recreational Hunting and Hunting Competitions Policy | Created September 2024
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2

@@ -38,3 +38,5 @@ The Teal Roundtable and State of the Nation event was attended by conservation a
 Saturday’s address follows a busy month for the party - including a major donation, positive momentum in the polls and increased media coverage.
 
 “It’s a long road to November 7. But make no mistake. We are on a roll and we’re not stopping until we send a new generation of leaders to Wellington” says Wong.
+
+\

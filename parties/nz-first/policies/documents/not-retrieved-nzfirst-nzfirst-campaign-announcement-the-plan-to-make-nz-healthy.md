@@ -23,4 +23,4 @@ Policies that cite this page: `POL55057`, `POL55073`, `POL55076`, `POL55078`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZ First Campaign Announcement: The Plan To “Make NZ Healthy” (Press release, 2026-09-20)](../documents/2026-09-20-nz-first-campaign-announcement-the-plan-to-make-nz-healthy.md) 
+- [NZ First Campaign Announcement: The Plan To “Make NZ Healthy” (Press release, 2026-09-20)](2026-09-20-nz-first-campaign-announcement-the-plan-to-make-nz-healthy.md)

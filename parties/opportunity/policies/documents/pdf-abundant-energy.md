@@ -13,11 +13,11 @@ fetch_method: curl + pdftotext -layout (poppler)
 
 ## Full text (verbatim)
 
-Date  September 2026
+Date September 2026
 
-Policy  Abundant Energy
+Policy Abundant Energy
 
-Document Type  Policy Overview
+Document Type Policy Overview
 
 Abundant Energy
 In brief - New Zealand is an energy-rich country that
@@ -43,7 +43,7 @@ consumers first
 This is an investment in lower household bills, more manufacturing, higher wages, better
 health, and a safer climate.
 
-Opportunity Party | Abundant Energy  Page 1
+Opportunity Party | Abundant Energy Page 1
 
 ---
 
@@ -81,7 +81,7 @@ private investment over an extended period. And that requires certainty - no mor
 on-again off-again pumped hydro or LNG terminals. That’s why we’ll work across parties
 to lock in a 25-year Energy Strategy.
 
-Opportunity Party | Smart on Crime  Page 2
+Opportunity Party | Smart on Crime Page 2
 
 ---
 
@@ -118,7 +118,7 @@ energy infrastructure. We need to align the way our markets work to make sure th
 electricity generators, distributors and retailers are all working towards the energy future
 we want to see.
 
-Opportunity Party | Smart on Crime  Page 3
+Opportunity Party | Smart on Crime Page 3
 
 ---
 
@@ -157,7 +157,7 @@ Commission's regulatory approach has constrained kept capital investments below 
 levels demanded in distributors’ own asset management plans. At the same time,
 complex compliance burdens smaller distributors disproportionately.
 
-Opportunity Party | Smart on Crime  Page 4
+Opportunity Party | Smart on Crime Page 4
 
 ---
 
@@ -191,7 +191,7 @@ supported within the wider electricity grid
 Government will directly co-invest in small-scale (up to 15 MW) community-owned
 generation and storage initiatives
 
-Opportunity Party | Smart on Crime  Page 5
+Opportunity Party | Smart on Crime Page 5
 
 ---
 
@@ -222,7 +222,7 @@ to the secondhand market. Accelerated depreciation and fringe benefit tax exempt
 for business electric vehicles worth up to $50,000 (or $75,000 for utes and vans) will
 encourage businesses to upgrade their fleets to electric.
 
-Opportunity Party | Smart on Crime  Page 6
+Opportunity Party | Smart on Crime Page 6
 
 ---
 
@@ -259,7 +259,7 @@ The main source of grid stability in our proposal comes from overbuilding renewa
 having more renewable capacity available than current grid needs. This means that
 variable renewable sources like wind and solar can be used ahead of hydro. Leaving
 
-Opportunity Party | Smart on Crime  Page 7
+Opportunity Party | Smart on Crime Page 7
 
 ---
 
@@ -284,4 +284,4 @@ No. This locks us in to long-term reliance on imported LNG. In addition to the
 environmental impacts, this puts us at the mercy of potentially volatile international
 prices.
 
-Opportunity Party | Smart on Crime  Page 8
+Opportunity Party | Smart on Crime Page 8

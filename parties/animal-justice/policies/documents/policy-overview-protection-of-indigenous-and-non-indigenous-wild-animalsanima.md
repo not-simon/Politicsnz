@@ -70,7 +70,7 @@ government / 60% industry split. See OSPRI. (n.d.). Funding the TBfree programme
 https://www.ospri.co.nz/our-programmes/the-tbfree-programme/funding/; New Zealand Treasury. (2025).
 Supplementary Estimates of Appropriations 2024/25: Vote Agriculture, Biosecurity, Fisheries and Food Safety
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -118,7 +118,7 @@ elaborated under Objective 2.
 Wang, W. F. (2024). Eutrophication mechanisms and their impacts on coastal marine ecosystems. International
 Journal of Marine Science, 14(4), 285–294. https://doi.org/10.5376/ijms.2024.14.0032
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2
 
 ---
 
@@ -129,4 +129,4 @@ processes.
 
 Overview - Protection of indigenous and non-indigenous wild animals | Created August 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  3
+animaljustice.org.nz | party@animaljusticeparty.org.nz 3

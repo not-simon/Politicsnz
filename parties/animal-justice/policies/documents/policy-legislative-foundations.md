@@ -42,7 +42,7 @@ Legislative Foundations
 o create a comprehensive and effective Animal Protection Policy, a new legislative
 T
 framework must be established. This framework should address animal welfare,
-conservation,ethicaltreatment,andtheenforcementoflawstoensurethatanimalsare
+conservation, ethical treatment, and the enforcement of laws to ensure that animals are
 protected from cruelty and exploitation. Below is a proposed structure for legislative
 foundations that could guide the formulation of such a policy:
 
@@ -50,48 +50,48 @@ foundations that could guide the formulation of such a policy:
 1
 2. Strengthen legal protections recognising animals as sentient beings
 3. Propose a new legislative framework with positive welfare obligations
-4. Constitutional rights for nature: advocate for legal personhood for ecosystemsand
+4. Constitutional rights for nature: advocate for legal personhood for ecosystems and
 species
 5. Abolish the legal classification of animals as property and grant animals legal rights
 
-his will be achieved through dialogue, research,analysisandsolutions-basedreform
+his will be achieved through dialogue, research, analysis and solutions-based reform
 T
 proposals to inform legislative and policy change and to enable greater political
 accountability and more inclusive and just governance.
 
-awandpolicyreformswillbesecuredtocreateananimalwelfaregovernancesystem
+aw and policy reforms will be secured to create an animal welfare governance system
 L
 that is transparent, in line with contemporary science and public expectations, and
-focusesonthewellbeingandprotectionofanimals. ThesereformsinNewZealandwill
+focuses on the wellbeing and protection of animals. These reforms in New Zealand will
 have the potential to set a precedent for the creation of large-scale change globally.
 
 Sentience
 
-he acknowledgement of animals as sentient inanamendmenttotheAnimalWelfare
+he acknowledgement of animals as sentient in an amendment to the Animal Welfare
 T
 Act 1999 (the “Act”) in 2015 was the first of its kind in a common law jurisdiction.
-However,itslocationinthelongtitleistelling–itsimplystateswhattheActisaboutand
-isnotdefinedorincorporatedintotheoffencesections.TheNewZealandGovernment
+However, its location in the long title is telling – it simply states what the Act is about and
+is not defined or incorporated into the offence sections. The New Zealand Government
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
 as openly stated it is a “symbolic” change only and creates no legal or enforceable
 h
-responsibility.1
+responsibility. 1
 
 Property
 
-omesticandwildanimalsareextremelyvulnerablemembersofNewZealandsociety,
+omestic and wild animals are extremely vulnerable members of New Zealand society,
 D
-and therefore require stringent legal protection. They are entitled to the samelevelof
+and therefore require stringent legal protection. They are entitled to the same level of
 protection and rights under the law as humans and it is the antithesis of social
 justice that their vulnerability is not adequately legally protected.
 
 urrently classed as the property of humans, animals have no legal rights, and
 C
-therefore require AJP’s advocacy, to ensure that they receivethefullprotectionofthe
+therefore require AJP’s advocacy, to ensure that they receive the full protection of the
 law.
 
 Interim measures, while we work towards legislative change, include:
@@ -99,7 +99,7 @@ Interim measures, while we work towards legislative change, include:
 - C ommunication with politicians to secure reform commitments, writing
 submissions and reports to Select Committees, the National Animal Welfare
 Advisory Committee (NAWAC) and the National Animal Ethics Advisory
-Committee(NAEAC)onActs,Regulations,CodesofAnimalWelfareandother
+Committee (NAEAC) on Acts, Regulations, Codes of Animal Welfare and other
 laws and policies affecting animals
 
 - R eviewing current animal welfare laws and providing proposals to ensure
@@ -115,7 +115,7 @@ models, and internationally appropriate precedents as guidance
 Legislation Foundations Policy | Created January 2025
 
 1
-Ferrere, M.B. R. (2022).The (Symbolic) Legislative Recognition of Animal Sentience,28 Animal L. Rev.
-117 Available at:https://lawcommons.lclark.edu/alr/vol28/iss1/6
+Ferrere, M.B. R. (2022). The (Symbolic) Legislative Recognition of Animal Sentience, 28 Animal L. Rev.
+117 Available at: https://lawcommons.lclark.edu/alr/vol28/iss1/6
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2

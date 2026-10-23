@@ -13,11 +13,11 @@ fetch_method: curl + pdftotext -layout (poppler)
 
 ## Full text (verbatim)
 
-Date  August 2026
+Date August 2026
 
-Policy  Affordable Housing
+Policy Affordable Housing
 
-Document Type  Policy Overview
+Document Type Policy Overview
 
 Affordable Housing
 A home is security and stability — the place we build good,
@@ -39,7 +39,7 @@ We need to permanently narrow the gap between wages and house prices by stabilis
 market while we lift incomes and we have to build better homes, a lot faster. Opportunity’s
 Affordable Housing policy presents a plan to do just that: Faster, Better, Cheaper.
 
-1.  Faster (Planning, Consenting & Systemic Pre‑Approval)
+1. Faster (Planning, Consenting & Systemic Pre‑Approval)
 With over 1,000 disparate regional zones, developers face an administrative minefield.
 Innovative pre-fabricated and off-site manufacturing methods are stalled by slow council
 consent, localised design reviews, and endless Requests for Information. To build more and
@@ -59,7 +59,7 @@ delays.
 more diverse mix of homes, including everything from home offices and shop fronts to
 co-housing, housing co-ops, Papakāinga, and multi-generational homes.
 
-Opportunity Party  Housing  Page 1
+Opportunity Party Housing Page 1
 
 ---
 
@@ -93,7 +93,7 @@ Residential construction is plagued by financial volatility, and has fallen well
 When lending conditions tighten, private developers go under, skilled tradespeople flee to
 Australia, and New Zealand is left with a chronic housing shortage.
 
-Opportunity Party  Housing  Page 2
+Opportunity Party Housing Page 2
 
 ---
 
@@ -132,25 +132,25 @@ upfront cash from the budget. Instead, they are funded by issuing targeted Housi
 Climate Bonds, leveraging the Crown’s balance sheet as a contingent liability.
 Additional annual operating costs of $311 million are made up of the following:
 
-Element  Estimated Annual Cost  Notes
+Element Estimated Annual Cost Notes
 
-National Pre-Approval  $15 million  Costed against standard MBIE/Commerce Commission
-Unit  unit setups. Covers national modular certification, factory
+National Pre-Approval $15 million Costed against standard MBIE/Commerce Commission
+Unit unit setups. Covers national modular certification, factory
 audits, and digital consenting templates. Becomes partially
 self-funding over time via manufacturer certification fees.
 
-Crown Build Guarantee &  $30 million  An underlying $500m revolving development fund sits on
-Housing Fund  the Crown balance sheet and is capital-neutral (loans are
+Crown Build Guarantee & $30 million An underlying $500m revolving development fund sits on
+Housing Fund the Crown balance sheet and is capital-neutral (loans are
 repaid). The $30m budget line represents a 3% annual risk
 provision.
 
-Opportunity Party  Housing  Page 3
+Opportunity Party Housing Page 3
 
 ---
 
-Element  Estimated Annual Cost  Notes
+Element Estimated Annual Cost Notes
 
-Council GST share  $266 million  We estimate renewed construction generating
+Council GST share $266 million We estimate renewed construction generating
 approximately 44,000 new builds at a total cost of $12.6
 billion generating $1.9 billion in GST. Assuming 14% meet
 quality standards results in GST rebates of $266 million.
@@ -198,7 +198,7 @@ social housing of their own.
 Second, by giving councils low-cost development loans, we dramatically reduce their
 financial risk.
 
-Opportunity Party  Housing  Page 4
+Opportunity Party Housing Page 4
 
 ---
 
@@ -253,7 +253,7 @@ household financial security.
 - Lowering the cost to build: Alongside our Next Economy policies, our focus is on
 stripping out the unnecessary bureaucratic costs of delivering new housing. By
 
-Opportunity Party  Housing  Page 5
+Opportunity Party Housing Page 5
 
 ---
 
@@ -306,7 +306,7 @@ The New Zealand construction sector has a productivity problem because we treat 
 every house like a bespoke project, built outside in the rain, the same way we have for
 hundreds of years.
 
-Opportunity Party  Housing  Page 6
+Opportunity Party Housing Page 6
 
 ---
 
@@ -324,4 +324,4 @@ performance.
 New Zealand, they can confidently invest in advanced automation and machinery,
 permanently driving down the per-square-meter cost of building.
 
-Opportunity Party  Housing  Page 7
+Opportunity Party Housing Page 7

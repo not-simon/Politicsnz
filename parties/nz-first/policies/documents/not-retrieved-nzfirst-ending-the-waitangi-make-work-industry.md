@@ -23,5 +23,5 @@ Policies that cite this page: `POL55157`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZFirst Policy Announcement: Ending The Waitangi Make-Work Industry (Press release, 2026-09-26)](../documents/2026-09-26-nzfirst-policy-announcement-ending-the-waitangi-make-work-in.md) 
-- [Winston Peters' Speech - “Ending The Waitangi Make-Work Industry” (Speech, 2026-09-26)](../documents/2026-09-26-winston-peters-speech-ending-the-waitangi-make-work-industry.md) 
+- [NZFirst Policy Announcement: Ending The Waitangi Make-Work Industry (Press release, 2026-09-26)](2026-09-26-nzfirst-policy-announcement-ending-the-waitangi-make-work-in.md)
+- [Winston Peters' Speech - “Ending The Waitangi Make-Work Industry” (Speech, 2026-09-26)](2026-09-26-winston-peters-speech-ending-the-waitangi-make-work-industry.md)

@@ -23,4 +23,4 @@ Policies that cite this page: `POL54664`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [Winston Peters' Speech - "By Their Deeds You Will Know Them" (Speech, 2026-05-17)](../documents/2026-05-17-winston-peters-speech-by-their-deeds-you-will-know-them.md) 
+- [Winston Peters' Speech - "By Their Deeds You Will Know Them" (Speech, 2026-05-17)](2026-05-17-winston-peters-speech-by-their-deeds-you-will-know-them.md)

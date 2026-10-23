@@ -71,7 +71,7 @@ See e.g. Rytwinski, T., Soanes, K., Jaeger, J. A. G., Fahrig, L., Findlay, C. S.
 der Grift, E. A. (2016). How effective is road mitigation at reducing road-kill? A meta-analysis. PLOS ONE, 11(11),
 e0166941. https://doi.org/10.1371/journal.pone.0166941
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -98,4 +98,4 @@ impacts.
 
 Protect wildlife from anthropogenic harms policy | Created August 2025
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2

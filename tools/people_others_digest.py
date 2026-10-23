@@ -3,7 +3,7 @@
 Usage: python3 -I tools/people_others_digest.py <cache basename> [maxchars]"""
 import sys, json, re, os
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "raw", "people", "others", "wiki")
-b = sys.argv[1]; mx = int(sys.argv[2]) if len(sys.argv) > 2 else 12000
+b = sys.argv[1]; mx = int(sys.argv[2]) if len(sys.argv) > 2 else 14000
 m = json.load(open(f"{D}/{b}.meta.json")); w = open(f"{D}/{b}.wikitext").read(); t = open(f"{D}/{b}.txt").read()
 print("META", m["title"], m["revid"], m["url"], "IMG:", m.get("pageimage"))
 ib = re.search(r"\{\{Infobox.*?\n\}\}", w, re.S)
@@ -17,7 +17,7 @@ print("TEXT", len(t)); print(t[:mx])
 urls = re.findall(r"\|\s*title\s*=\s*([^|}]+?)\s*\|[^}]*?\burl\s*=\s*(https?://[^\s|}]+)|\burl\s*=\s*(https?://[^\s|}]+)[^}]*?\|\s*title\s*=\s*([^|}]+)", w)
 print("REFS")
 seen=set()
-for a,b2,c,d in urls:
+for a,b2,c,d in urls[:int(os.environ.get("NREF","25"))]:
     u=b2 or c; ti=a or d
     if u in seen: continue
     seen.add(u); print(" -", ti.strip()[:110], "|", u)

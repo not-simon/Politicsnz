@@ -60,7 +60,7 @@ I‭ntensive winter grazing represents one of New Zealand's most pressing animal
 ‭Ministry for Primary Industries. (2019).‬‭Code of‬‭welfare for dairy cattle.‬
 ‭https://www.mpi.govt.nz/dmsdocument/46024-Code-of-Welfare-Dairy-cattle‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭1‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭1‬
 
 ---
 
@@ -104,4 +104,4 @@ A
 
 ‭Ensuring adequate living conditions and environmental standards policy | Created May 2025‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭2‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭2‬

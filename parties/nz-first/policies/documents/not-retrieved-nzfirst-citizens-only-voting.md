@@ -23,5 +23,5 @@ Policies that cite this page: `POL54759`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [New Zealand First To Campaign On ‘Citizens Only Voting’ (Press release, 2026-07-05)](../documents/2026-07-05-new-zealand-first-to-campaign-on-citizens-only-voting.md) 
-- [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](../documents/2026-09-11-nz-first-announces-immigration-reform-policies.md) 
+- [New Zealand First To Campaign On ‘Citizens Only Voting’ (Press release, 2026-07-05)](2026-07-05-new-zealand-first-to-campaign-on-citizens-only-voting.md)
+- [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](2026-09-11-nz-first-announces-immigration-reform-policies.md)

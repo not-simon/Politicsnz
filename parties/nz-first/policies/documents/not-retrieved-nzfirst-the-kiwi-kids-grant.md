@@ -23,5 +23,5 @@ Policies that cite this page: `POL54746`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZFirst Announces Policy To Encourage Kiwis To Have More Kids (Press release, 2026-08-02)](../documents/2026-08-02-nzfirst-announces-policy-to-encourage-kiwis-to-have-more-kid.md) 
-- [Winston Peters' Speech: “New Zealand In Its Eleventh Hour” (Speech, 2026-08-02)](../documents/2026-08-02-winston-peters-speech-new-zealand-in-its-eleventh-hour.md) 
+- [NZFirst Announces Policy To Encourage Kiwis To Have More Kids (Press release, 2026-08-02)](2026-08-02-nzfirst-announces-policy-to-encourage-kiwis-to-have-more-kid.md)
+- [Winston Peters' Speech: “New Zealand In Its Eleventh Hour” (Speech, 2026-08-02)](2026-08-02-winston-peters-speech-new-zealand-in-its-eleventh-hour.md)

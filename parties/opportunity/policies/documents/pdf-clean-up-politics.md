@@ -13,11 +13,11 @@ fetch_method: curl + pdftotext -layout (poppler)
 
 ## Full text (verbatim)
 
-Date  August 2026
+Date August 2026
 
-Policy  Clean Up Politics
+Policy Clean Up Politics
 
-Document Type  Policy Overview
+Document Type Policy Overview
 
 Clean Up Politics
 Democracy means rule by the people. Clean Up Politics is
@@ -46,11 +46,11 @@ and public perceptions of policy being ‘for sale’.
 Opportunity will work across Parliament to lock in a bold, long-term package of
 reforms built on three pillars.
 
-Opportunity Party  Democracy  Page 1
+Opportunity Party Democracy Page 1
 
 ---
 
-1.  Regulate lobbying
+1. Regulate lobbying
 Recent controversies have shown how difficult it can be for the public to see who
 influences important government decisions, what interests they represent, and what
 contact they have had with decision-makers. Opportunity will introduce a Political
@@ -95,7 +95,7 @@ $1,000 and require parties to publish audited annual statements.
 limits will apply across the full three-year electoral cycle, not just the final three
 months, with the Electoral Commission publishing quarterly spending summaries.
 
-Opportunity Party  Democracy  Page 2
+Opportunity Party Democracy Page 2
 
 ---
 
@@ -139,4 +139,4 @@ rules in real time.
 - An independent policy costing unit available to all registered parties, to reduce
 fiscal ‘spin wars’ and improve the quality of election debates.
 
-Opportunity Party  Democracy  Page 3
+Opportunity Party Democracy Page 3

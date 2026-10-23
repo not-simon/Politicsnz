@@ -13,11 +13,11 @@ fetch_method: curl + pdftotext -layout (poppler)
 
 ## Full text (verbatim)
 
-Date  September 2026
+Date September 2026
 
-Policy  Smart on Crime
+Policy Smart on Crime
 
-Document Type  Policy Overview
+Document Type Policy Overview
 
 Smart on Crime
 Prevention – Rehabilitation – Victim focused – Reintegration
@@ -44,13 +44,13 @@ step in. Opportunity will:
 - Offer voluntary interventions, starting with the very first Oranga Tamariki Report of
 Concern, where there are established risk factors for offending.
 - Expand the capacity and reach of programmes that demonstrate results, including:
-  - Parenting courses, such as Incredible Years, with proven impact on risk factors
+ - Parenting courses, such as Incredible Years, with proven impact on risk factors
 of offending.
 
 ---
 
 - Youth mentoring programmes.
-  - Trauma counselling services.
+ - Trauma counselling services.
 - Expand the Te Pae Oranga programme for low-level adult offenders to include more
 offences, widen mentoring support to include peer-to-peer, and increase overall
 capacity.
@@ -65,15 +65,15 @@ Opportunity will target investment into the drivers of crime, including:
 
 - Progressively expanding specialist courts and practices designed to address specific
 types of offending:
-  - The Alcohol and Other Drug Treatment Court (currently limited to three sites);
-  - The New Beginnings Court/Te Kooti o Timatanga Hou and the Court of Special
+ - The Alcohol and Other Drug Treatment Court (currently limited to three sites);
+ - The New Beginnings Court/Te Kooti o Timatanga Hou and the Court of Special
 Circumstances for addressing offending related to homelessness (currently
 only available in Auckland and Wellington);
-  - The Matariki Court, a Māori customary and community-oriented process
+ - The Matariki Court, a Māori customary and community-oriented process
 (currently only in Kaikohe)
-  - The Young Adult List (an approach that provides supports to reduce
+ - The Young Adult List (an approach that provides supports to reduce
 reoffending among young adults) (currently four locations)
-  - Te Ao Mārama - the Chief District Court Judge’s initiative to universalise key
+ - Te Ao Mārama - the Chief District Court Judge’s initiative to universalise key
 lessons from specialist jurisdictions
 - Expand the availability of drug-treatment programmes within the health system to
 support police discretion provisions in the Misuse of Drugs Amendment Act 2019
@@ -82,7 +82,7 @@ support police discretion provisions in the Misuse of Drugs Amendment Act 2019
 dedicated pathways to economic independence for women in custody, projected to
 be the fastest-growing part of the prison population.
 
-Opportunity Party | Smart on Crime  Page 2
+Opportunity Party | Smart on Crime Page 2
 
 ---
 
@@ -116,7 +116,7 @@ accommodation, employment and practical support after release.
 
 To better reintegrate former prisoners into a productive role in society, Opportunity will:
 
-Opportunity Party | Smart on Crime  Page 3
+Opportunity Party | Smart on Crime Page 3
 
 ---
 
@@ -140,4 +140,4 @@ from demonstrably ineffective programmes like the current government’s “boot
 committing to allocate a portion of ongoing cost pressure growth in the Corrections budget
 to rehabilitation and prevention measures
 
-Opportunity Party | Smart on Crime  Page 4
+Opportunity Party | Smart on Crime Page 4

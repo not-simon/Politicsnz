@@ -13,11 +13,11 @@ fetch_method: curl + pdftotext -layout (poppler)
 
 ## Full text (verbatim)
 
-Date  August 2026
+Date August 2026
 
-Policy  Intergenerational Infrastructure
+Policy Intergenerational Infrastructure
 
-Document Type  Policy Overview
+Document Type Policy Overview
 
 Intergenerational Infrastructure
 Infrastructure is what makes a country work. Roads, water
@@ -59,7 +59,7 @@ implementation. Opportunity will go further:
 — with a mandate that extends from planning to coordination of funding and
 delivery across the entire public sector.
 
-Opportunity Party  Infrastructure  Page 1
+Opportunity Party Infrastructure Page 1
 
 ---
 
@@ -94,7 +94,7 @@ Ministries failed to meet the basic requirement of having an asset register. Thi
 a minor administrative failure: it means New Zealand is running its infrastructure blind
 and it must stop.
 
-Opportunity Party  Infrastructure  Page 2
+Opportunity Party Infrastructure Page 2
 
 ---
 
@@ -146,7 +146,7 @@ countries. Opportunity - with the support of many economists - proposes that New
 Zealand can safely issue up to an additional 15% of GDP in special infrastructure debt
 (approximately $60 billion at current levels), built up over 5–10 years. The interest
 
-Opportunity Party  Infrastructure  Page 3
+Opportunity Party Infrastructure Page 3
 
 ---
 
@@ -157,7 +157,7 @@ infrastructure; this will lift us to 6–7%.
 Opportunity will invest this $60 billion into New Zealand’s infrastructure future in the
 following ways:
 
-Element  Total Capital Funding
+Element Total Capital Funding
 
 The New Zealand Infrastructure Fund will subsume and extend the roles of the Local $32 billion
 Government Funding Agency (current lending book approaching $30 billion) and
@@ -172,7 +172,7 @@ directly recovered.
 - Continue and expand LGFA’s lending to councils and Council Controlled
 Organisations.
 
-The Local Government Regeneration Fund will address local government’s  $15 billion
+The Local Government Regeneration Fund will address local government’s $15 billion
 maintenance backlog, including climate-related infrastructure needs. It will:
 
 - Be capped at 3.5% of GDP (approximately $15 billion at 2026 values), built up over
@@ -181,25 +181,25 @@ approximately five years.
 standards set by Te Waihanga and demonstrate adequate financial, social and
 environmental returns.
 
-The Climate Resilience Fund will invest in nature-based solutions to reduce  $5 billion
+The Climate Resilience Fund will invest in nature-based solutions to reduce $5 billion
 emissions and make communities more resilient to the effects of climate change. See
 our Climate Action policy for more detail.
 
-National Land Transport Fund  $3 billion
+National Land Transport Fund $3 billion
 Capital injections ringfenced to boost investments in rail, active transport and public
 transport.
 
-Full-scale Ratepayer Assistance Scheme  $5.3 billion
+Full-scale Ratepayer Assistance Scheme $5.3 billion
 Implement the full Local Government New Zealand Ratepayer Assistance Scheme,
 covering rates deferrals and development contributions, in addition to the solar
 upgrades referenced in our Abundant Energy policy.
 The business case for the RAS estimates this as the total borrowing across the three
 elements of the scheme: solar installation, rates deferral and developer credit.
 
-Crown Build Guarantee & Housing Fund  $0.5 billion
+Crown Build Guarantee & Housing Fund $0.5 billion
 See our Housing Policy for more detail.
 
-Opportunity Party  Infrastructure  Page 4
+Opportunity Party Infrastructure Page 4
 
 ---
 
@@ -242,7 +242,7 @@ based rates for their specific community demographic.
 - Technical and commercial support to smaller or rural councils undertaking
 complex procurement or financing.
 
-Opportunity Party  Infrastructure  Page 5
+Opportunity Party Infrastructure Page 5
 
 ---
 
@@ -256,10 +256,10 @@ document.
 In addition, operating expenses of approximately $167 million annually are made up of
 the following element:
 
-Element  Annual Cost  Notes
+Element Annual Cost Notes
 
-Enhanced Te Waihanga role  $27 million  We estimate total core operating costs for
-funding  an expanded agency to be $80 million, based
+Enhanced Te Waihanga role $27 million We estimate total core operating costs for
+funding an expanded agency to be $80 million, based
 on the budget for the UK’s new combined
 infrastructure agency. This would be made up of
 existing core funding for Te Waihanga, National
@@ -267,7 +267,7 @@ Infrastructure Funding and Financing and Crown
 Infrastructure Delivery of approximately $53
 million. This figure represents the difference.
 
-Free public transport  $150 million (net of savings)  Total Passenger Fare Revenue is currently
+Free public transport $150 million (net of savings) Total Passenger Fare Revenue is currently
 approximately $300 million per year.
 Removing the government’s own estimated 14
 year costs for a national ticketing system saves
@@ -296,7 +296,7 @@ invisibly on future generations as degraded assets, higher remediation costs, an
 reduced productive capacity. Opportunity’s proposed envelope, built up over 5–10
 years, lifts infrastructure spending from roughly 5–6% of GDP to 6–7%: a measured
 
-Opportunity Party  Infrastructure  Page 6
+Opportunity Party Infrastructure Page 6
 
 ---
 
@@ -350,7 +350,7 @@ Projects that do not pass independent readiness review, cost-benefit analysis un
 the CBAx framework, or the 60%-maintenance threshold simply do not proceed.
 The National Infrastructure Plan itself called for exactly this kind of sequenced,
 
-Opportunity Party  Infrastructure  Page 7
+Opportunity Party Infrastructure Page 7
 
 ---
 
@@ -382,7 +382,7 @@ forces a discipline that current incentives do not: politicians find it far easi
 a ribbon on a new building than to fund a pipe replacement programme that no one
 photographs.
 
-Opportunity Party  Infrastructure  Page 8
+Opportunity Party Infrastructure Page 8
 
 ---
 
@@ -434,4 +434,4 @@ securities to invest in. Infrastructure bonds — owned by New Zealanders — ke
 cashflows domestic, reduce reliance on offshore debt markets, and provide citizens
 with a direct stake in the assets being built for their future.
 
-Opportunity Party  Infrastructure  Page 9
+Opportunity Party Infrastructure Page 9

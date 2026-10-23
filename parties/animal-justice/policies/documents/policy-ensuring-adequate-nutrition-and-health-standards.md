@@ -64,7 +64,7 @@ h
 ‭University of Aberdeen. (Oct 2022).‬‭Why are chickens‬‭used for breeding kept hungry?‬
 ‭https://www.abdn.ac.uk/news/opinion/why-are-chickens-used-for-breeding-kept-hungry/‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭1‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭1‬
 
 ---
 
@@ -115,4 +115,4 @@ A
 ‭SAFE for animals.‬‭Mud farming in New Zealand‬
 ‭https://safe.org.nz/our-work/animals-in-aotearoa/mud-farming/‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭2‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭2‬

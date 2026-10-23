@@ -35,3 +35,5 @@ The Free Palestine Party is bringing this issue to the centre of New Zealand pol
 The Free Palestine Party thanks all its members and supporters that helped it become a registered party. Thanks to their efforts the party will receive $82 000 dollars in public funding, the same as all other new list parties, to help us achieve our goals.
 
 Resistance Until Victory!
+
+\

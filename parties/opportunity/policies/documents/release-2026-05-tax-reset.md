@@ -38,3 +38,5 @@ The party projects that the Tax Reset would lift 50,000 Kiwi families out of pov
 “New Zealanders have a choice this election. We can pass on a broken tax system to the next generation and continue to ignore the fiscal crises ahead. Or we can reset tax” says Wong.
 
 People interested in the Tax Reset proposal can try the party’s tax calculator to estimate their new tax bill, or pick a character from the ‘Kiwis of Tomorrow: Life when we invest in people over property’ comic series.
+
+\

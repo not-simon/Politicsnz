@@ -63,7 +63,7 @@ T
 ‭https://www.ceicdata.com/en/new-zealand/agricultural-production-and-consumption/nz-aquaculture-produ‬
 ‭ction‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭1‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭1‬
 
 ---
 
@@ -112,7 +112,7 @@ A
 ‭Stats NZ. (2023, May 22).‬‭Fewer sheep and dairy‬‭cattle in 2022‬‭.‬
 ‭https://www.stats.govt.nz/news/fewer-sheep-and-dairy-cattle-in-2022/‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭2‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭2‬
 
 ---
 
@@ -159,7 +159,7 @@ I‭n‬ ‭order‬ ‭to‬ ‭protect‬ ‭the‬ ‭rights‬ ‭of‬ ‭a
 ‭World Health Organization. (2023).‬‭Antimicrobial‬‭resistance.‬‭[Fact sheet].‬
 ‭https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭3‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭3‬
 
 ---
 
@@ -206,4 +206,4 @@ i‭n Cephalopod Molluscs and Decapod Crustaceans. London School of Economics an
 ‭https://www.lse.ac.uk/business/consulting/assets/documents/Sentience-in-Cephalopod-Molluscs-and-Dec‬
 ‭apod-Crustaceans-Final-Report-November-2021.pdf‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭4‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭4‬

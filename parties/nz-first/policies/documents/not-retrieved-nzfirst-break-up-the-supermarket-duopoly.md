@@ -23,4 +23,4 @@ Policies that cite this page: `POL54658`, `POL54659`, `POL54660`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZ First Campaign Policy Announcement: NZ First Will Break Up The Supermarket Duopoly, Bring Food Prices Down For Kiwis (Press release, 2026-04-19)](../documents/2026-04-19-nz-first-campaign-policy-announcement-nz-first-will-break-up.md) 
+- [NZ First Campaign Policy Announcement: NZ First Will Break Up The Supermarket Duopoly, Bring Food Prices Down For Kiwis (Press release, 2026-04-19)](2026-04-19-nz-first-campaign-policy-announcement-nz-first-will-break-up.md)

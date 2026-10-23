@@ -23,4 +23,4 @@ Policies that cite this page: `POL54755`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [“No More Cinderella City” - Winston Peters' Speech (Speech, 2026-05-24)](../documents/2026-05-24-no-more-cinderella-city-winston-peters-speech.md) 
+- [“No More Cinderella City” - Winston Peters' Speech (Speech, 2026-05-24)](2026-05-24-no-more-cinderella-city-winston-peters-speech.md)

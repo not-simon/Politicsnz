@@ -23,6 +23,6 @@ Policies that cite this page: `POL54961`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZ First Campaign Announcement: NZ Super For Citizens Only (Press release, 2026-09-06)](../documents/2026-09-06-nz-first-campaign-announcement-nz-super-for-citizens-only.md) 
-- [Winston Peters' Speech - “Citizenship And Superannuation” (Speech, 2026-09-06)](../documents/2026-09-06-winston-peters-speech-citizenship-and-superannuation.md) 
-- [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](../documents/2026-09-11-nz-first-announces-immigration-reform-policies.md) 
+- [NZ First Campaign Announcement: NZ Super For Citizens Only (Press release, 2026-09-06)](2026-09-06-nz-first-campaign-announcement-nz-super-for-citizens-only.md)
+- [Winston Peters' Speech - “Citizenship And Superannuation” (Speech, 2026-09-06)](2026-09-06-winston-peters-speech-citizenship-and-superannuation.md)
+- [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](2026-09-11-nz-first-announces-immigration-reform-policies.md)

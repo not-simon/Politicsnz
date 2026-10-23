@@ -18,6 +18,6 @@ categories: ["People"]
 
 ### Web page text
 
-Policy category summary: Te Tiriti o Waitangi holds profound significance for Aotearoa New Zealand, shaping the nation’s foundation and fostering principles of justice, inclusivity, and cooperation. The AJP embraces this treaty and acknowledges its importance in guiding a compassionate, just and equitable relationship with animals. The treaty’s commitment to non-violent conflict resolution aligns with the AJP’s advocacy for compassionate conservation, emphasising ecological sustainability and social responsibility.
+Policy category summary: Te Tiriti o Waitangi holds profound significance for Aotearoa New Zealand, shaping the nation’s foundation and fostering principles of justice, inclusivity, and cooperation. The AJP embraces this treaty and acknowledges its importance in guiding a compassionate, just and equitable relationship with animals. The treaty’s commitment to non-violent conflict resolution aligns with the AJP’s advocacy for compassionate conservation, emphasising ecological sustainability and social responsibility.\
 
 A just transition to a plant-based Aotearoa New Zealand reflects the essence of Te Tiriti o Waitangi, promoting harmony and respect for all beings within the nation’s diverse tapestry. Test

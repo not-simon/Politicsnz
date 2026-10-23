@@ -13,11 +13,11 @@ fetch_method: curl + pdftotext -layout (poppler)
 
 ## Full text (verbatim)
 
-Date  July 2026
+Date July 2026
 
-Policy  Breakthrough Economy
+Policy Breakthrough Economy
 
-Document Type  Policy Overview
+Document Type Policy Overview
 
 Breakthrough Economy
 New Zealand’s economy is stuck in low gear. But we have the
@@ -38,7 +38,7 @@ overcome our distance from major markets and offer better wages and conditions f
 New Zealand workers. They also have far less of an impact on our environment, and in
 many cases can contribute to solutions to improve it.
 
-1.  Build New Zealand’s Innovation Engine
+1. Build New Zealand’s Innovation Engine
 Just like starting a business, building the future economy New Zealanders deserve
 will require us to invest: in the science, innovation and skills that breakthrough
 companies need to thrive.
@@ -58,11 +58,11 @@ many graduates head offshore to higher‑paying labour markets, often carrying l
 student debt that makes it harder for them to return. There are also overseas skills we
 need to harness.
 
-Opportunity Party  Economy  Page 1
+Opportunity Party Economy Page 1
 
 ---
 
-1.1  Boost core science and technology transfer funding
+1.1 Boost core science and technology transfer funding
 At Opportunity we want a long term strategy to boost the level of R&D in New Zealand.
 We will re-commit to the previous target of 2% of GDP (with at least 0.6% made up of
 public science) within the next ten years. But we will also set a longer-term objective
@@ -92,7 +92,7 @@ It will allow claiming back as a tax credit up to 25% of the cost of rolling out
 solutions such as AI and digital platforms, new plant and machinery and networked or
 autonomous equipment.
 
-Opportunity Party  Economy  Page 2
+Opportunity Party Economy Page 2
 
 ---
 
@@ -111,7 +111,7 @@ business enquiry - to work with real-world business problems
 - Empower polytechs with a mandate to lead regional productivity growth,
 including by acting as hubs for sector-level initiatives
 
-1.4  Double funding to incubator, accelerator, and deep tech programmes as
+1.4 Double funding to incubator, accelerator, and deep tech programmes as
 well as young enterprise
 Opportunity will double total Government funding to the start-up ecosystem,
 including existing and new incubator and accelerator arrangements and the young
@@ -145,7 +145,7 @@ breakthrough economy.
 But immigration also needs to be accounted for in our investment in infrastructure,
 planning and social programmes. It hasn’t in recent decades.
 
-Opportunity Party  Economy  Page 3
+Opportunity Party Economy Page 3
 
 ---
 
@@ -181,7 +181,7 @@ assets, separate business operations, or require access to key infrastructure
 when market power has become too concentrated and other remedies have
 failed.
 
-Opportunity Party  Economy  Page 4
+Opportunity Party Economy Page 4
 
 ---
 
@@ -233,7 +233,7 @@ Bill if passed, and review competition within our payment infrastructure general
 requirements and a special track with simplified compliance requirements
 for spending below $250,000 and improving outreach and support to smaller
 
-Opportunity Party  Economy  Page 5
+Opportunity Party Economy Page 5
 
 ---
 
@@ -263,91 +263,91 @@ How much will this cost?
 The total estimated cost to the Crown of this policy is $1.33 billion of additional annual
 operational funding. This is made up of the following components:
 
-Policy Element  Annual Cost  Assumptions
+Policy Element Annual Cost Assumptions
 
-Restore core science operational  $125 million  Aggregate figures from the Save Science Coalition and
-funding cut in recent budgets  public reporting suggest total cuts (including the non-
+Restore core science operational $125 million Aggregate figures from the Save Science Coalition and
+funding cut in recent budgets public reporting suggest total cuts (including the non-
 replacement of the National Science Challenges) of
 around $125 million per annum.
 
-Tax credit for technology  $600 million  Uptake is difficult to predict. This cost estimate is roughly
-adoption  the current total annual cost of the current R&D tax
+Tax credit for technology $600 million Uptake is difficult to predict. This cost estimate is roughly
+adoption the current total annual cost of the current R&D tax
 incentive. We expect some substitution effect between
 the two programmes.
 
-Funding for early and mid career  $100 million  This figure is a rough estimate for a credible initial
-researchers  programme.
+Funding for early and mid career $100 million This figure is a rough estimate for a credible initial
+researchers programme.
 
-Expanded funding to major  $175 million  Inflation adjusting 2018/2019 figures for Vote Science
-contestable funds  gives a total of $1.574 billion, around $400 million
+Expanded funding to major $175 million Inflation adjusting 2018/2019 figures for Vote Science
+contestable funds gives a total of $1.574 billion, around $400 million
 more than current funding levels. Accounting for the
 restoration of explicit cuts and additional targeted
 spending on early and mid career researchers this still
 leaves a shortfall of approximately $175 million.
 
-Restore Polytech Funding  $80 million  Public reporting indicated that Te Pukenga’s funding for
+Restore Polytech Funding $80 million Public reporting indicated that Te Pukenga’s funding for
 2025 had been reduced by $80 million, resulting in large
 scale layoffs.
 
-Opportunity Party  Economy  Page 6
+Opportunity Party Economy Page 6
 
 ---
 
-Policy Element  Annual Cost  Assumptions
+Policy Element Annual Cost Assumptions
 
-Polytech and PRO bulk funding for  $20 million  Uptake is difficult to predict. This figure assumes 2,000
-business support  enquiries across Polytechs and PROs at the full $10,000
+Polytech and PRO bulk funding for $20 million Uptake is difficult to predict. This figure assumes 2,000
+business support enquiries across Polytechs and PROs at the full $10,000
 value the programme enables.
 
-Double funding of incubators,  $26.5 million  Annual costs are hard to estimate as expenditure is a
-accelerators and youth enterprise  mixture of repayable grants and standard operational
-initiatives  funding. We have assumed a doubling of the entire
+Double funding of incubators, $26.5 million Annual costs are hard to estimate as expenditure is a
+accelerators and youth enterprise mixture of repayable grants and standard operational
+initiatives funding. We have assumed a doubling of the entire
 $20 - 25 million grants programme formerly operated by
 Callaghan Innovation.
 Doubling current Ministry of Youth Development
 enterprise programmes represents a further $1.5 million.
 
-Student Loan Working Overseas  $95 million  Total overseas loan balances of approximately $4.3 billion
-Forgiveness  imply headline interest accrual of $170–$215 million
+Student Loan Working Overseas $95 million Total overseas loan balances of approximately $4.3 billion
+Forgiveness imply headline interest accrual of $170–$215 million
 annually. Much of this is paper accrual against loans
 in default, but borrower behaviour could change with
 a forgiveness programme. We have conservatively
 assumed half of the total interest accrual as annual
 programme cost.
 
-Commerce Commission Budget  $20 million  Current total budget (including levy revenue) is
-Uplift  approximately $90 million - reasonably generous by
+Commerce Commission Budget $20 million Current total budget (including levy revenue) is
+Uplift approximately $90 million - reasonably generous by
 international standards. Additional funding is an arbitrary
 figure of around 20% of current funding to account for
 additional enforcement activity.
 
-Consumer Advocacy Fund  $5 million  This figure is roughly based on comparisons to the
+Consumer Advocacy Fund $5 million This figure is roughly based on comparisons to the
 now-disestablished Consumer Advocacy Council
 for electricity, the MBIE appropriation for Consumer
 Information and overseas comparators.
 
-Expanded FinCap capability to  $20 million  The Ministry of Social Development provides $19.5
-support small business owners  million of sustainable funding for 181.5 FTE financial
+Expanded FinCap capability to $20 million The Ministry of Social Development provides $19.5
+support small business owners million of sustainable funding for 181.5 FTE financial
 mentoring roles. Doubling this funding would enable a
 similar number of staff to enable nationwide coverage
 for business mentoring services, although these
 would realistically be integrated with existing financial
 mentoring functions.
 
-Widened R&D tax credit  $30 million  Additional uptake is hard to predict but is likely to be
+Widened R&D tax credit $30 million Additional uptake is hard to predict but is likely to be
 small as changes target improving access for smaller
 businesses. Current expenditure on R&D tax credits
 is approximately $600 million (24/25 Supplementary
 Estimates). Additional $30 million represents an arbitrary
 5% expansion.
 
-Tax deductibility for impact  $34 million  Uptake is difficult to predict. This figure assumes
-company investments  1,000 investors at the maximum allowable deduction
+Tax deductibility for impact $34 million Uptake is difficult to predict. This figure assumes
+company investments 1,000 investors at the maximum allowable deduction
 of $100,000 (for a total of $100 million of annual
 investment) and with an average marginal tax rate of
 34%.
 
-Opportunity Party  Economy  Page 7
+Opportunity Party Economy Page 7
 
 ---
 
@@ -401,7 +401,7 @@ removed hundreds of millions from the Science, Innovation and Technology portfol
 It allowed inflation to erode baselines, wound up the National Science Challenges
 programme, and cancelled future rounds of several key funds. Experts estimate this
 
-Opportunity Party  Economy  Page 8
+Opportunity Party Economy Page 8
 
 ---
 
@@ -438,4 +438,4 @@ Court means they can also go after the many other highly concentrated sectors th
 don’t receive much political or media attention, but do impose significant costs on
 New Zealand consumers.
 
-Opportunity Party  Economy  Page 9
+Opportunity Party Economy Page 9

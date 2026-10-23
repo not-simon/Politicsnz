@@ -23,4 +23,4 @@ Policies that cite this page: `POL54668`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZFirst To Campaign On Disestablishment Of Auckland Council’s ‘Independent Māori Statutory Board’ (Press release, 2026-06-18)](../documents/2026-06-18-nzfirst-to-campaign-on-disestablishment-of-auckland-councils.md) 
+- [NZFirst To Campaign On Disestablishment Of Auckland Council’s ‘Independent Māori Statutory Board’ (Press release, 2026-06-18)](2026-06-18-nzfirst-to-campaign-on-disestablishment-of-auckland-councils.md)

@@ -35,9 +35,15 @@ def slugify(s, n=70):
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
     return s[:n].rstrip("-")
 
+def gh_anchor(s):
+    """GitHub heading anchor: lowercase, drop punctuation (keep letters incl. macrons, digits, space, -, _), spaces -> -."""
+    return re.sub(r"[^\w\- ]", "", s.lower(), flags=re.UNICODE).replace(" ", "-")
+
 def orig_url(u):
     u = u.strip()
     m = re.search(r"(?:web\.archive\.org)?/(?:web/\d+[a-z_]*|save)/(https?://.+)$", u)
+    if m and "/save/" in u:     # a "save page now" request URL, not an archived snapshot
+        return m.group(1).strip(), None
     return (m.group(1) if m else u).strip(), (u if m else None)
 
 def yaml_str(s):
@@ -129,7 +135,8 @@ def build(party):
                 src["document"] = "documents/" + docs[direct]["slug"] + ".md"; used.add(direct)
             elif host in (P["site"],):
                 bslug = "not-retrieved-" + slugify(host.split(".")[0] + "-" + o.split(host, 1)[1], 70)
-                blocked.setdefault(o, dict(slug=bslug, title=title, arch=src.get("archived_url"), policies=[]))["policies"].append(pid)
+                blocked.setdefault(o, dict(slug=bslug, title=title, arch=src.get("archived_url"), policies=[]))["policies"]
+                if pid not in blocked[o]["policies"]: blocked[o]["policies"].append(pid)
                 src["document"] = "documents/" + bslug + ".md"; src["retrieved"] = False
             else:
                 src["note"] = "Not an %s source (cited by policy.nz); not archived here." % P["short"]
@@ -172,7 +179,7 @@ def build(party):
         body += "Policies that cite this page: " + ", ".join(f"`{i}`" for i in b["policies"]) + ".\n\n"
         if related:
             body += "Other party-published texts on the same policies that *were* retrieved (they may differ from this page):\n\n"
-            body += "".join(f"- [{t}](../{d}) \n" for d, t in related.items())
+            body += "".join(f"- [{t}]({d[len('documents/'):]})\n" for d, t in related.items())
         else:
             body += "No other party-published text on these policies was found.\n"
         open(os.path.join(docdir, b["slug"] + ".md"), "w").write(body)
@@ -190,7 +197,7 @@ def write_readme(party, P, policies, docs, blocked, base):
     for p in policies: groups.setdefault(p["group"], []).append(p)
     groups = OrderedDict(sorted(groups.items()))
     byid = {p["id"]: p for p in policies}
-    anchor = lambda p: slugify(p["id"] + "-" + p["statement"], 90)
+    anchor = lambda p: gh_anchor(f"{p['id']}: {p['statement']}")
     L = []
     L.append(f"# {P['name']} — 2026 election policies\n")
     L.append(f"Every 2026 policy of {P['name']} that this archive could find, with a short neutral summary (**Why** — the "
@@ -241,14 +248,15 @@ def write_readme(party, P, policies, docs, blocked, base):
     L.append("\n**Signature policies:** " + "; ".join(f"[{byid[i]['statement']}](#{anchor(byid[i])})" for i in P["signature"] if i in byid) + ".\n")
     L.append("## Contents\n")
     for g, ps in groups.items():
-        L.append(f"- [{g}](#{slugify(g, 90)}) ({len(ps)})")
+        L.append(f"- [{g}](#{gh_anchor(g)}) ({len(ps)})")
     L.append("- [Document index](#document-index)\n")
     for g, ps in groups.items():
         L.append(f"## {g}\n")
         for p in ps:
             L.append(f"### {p['id']}: {p['statement']}\n")
-            L.append(f"<a id=\"{anchor(p)}\"></a>**Statement:** {p['statement']}  ")
-            L.append(f"*Summary source: {p['summary_source']}* · topics: {', '.join(p['topics'][:6])}\n")
+            L.append(f"**Statement:** {p['statement']}  ")
+            shown = [t for t in p['topics'] if not t.startswith('key-policies')]
+            L.append(f"*Summary source: {p['summary_source']}* · topics: {', '.join(shown[:6])}\n")
             L.append(f"- **Why:** {p['summary']['why'] or '—'}")
             L.append(f"- **How:** {p['summary']['how'] or '—'}")
             if p.get("note"): L.append(f"- **Note:** {p['note']}")

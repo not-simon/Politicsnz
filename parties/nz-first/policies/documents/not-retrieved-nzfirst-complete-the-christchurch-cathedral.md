@@ -23,4 +23,4 @@ Policies that cite this page: `POL54756`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZ First Campaign Announcement: Funding For Christ Church Cathedral Rebuild (Press release, 2026-03-27)](../documents/2026-03-27-nz-first-campaign-announcement-funding-for-christ-church-cat.md) 
+- [NZ First Campaign Announcement: Funding For Christ Church Cathedral Rebuild (Press release, 2026-03-27)](2026-03-27-nz-first-campaign-announcement-funding-for-christ-church-cat.md)

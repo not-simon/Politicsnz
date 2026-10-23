@@ -23,4 +23,4 @@ Policies that cite this page: `POL55155`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZFirst To Campaign On 20% Tax Rate For SMEs (Press release, 2026-09-24)](../documents/2026-09-24-nzfirst-to-campaign-on-20-tax-rate-for-smes.md) 
+- [NZFirst To Campaign On 20% Tax Rate For SMEs (Press release, 2026-09-24)](2026-09-24-nzfirst-to-campaign-on-20-tax-rate-for-smes.md)

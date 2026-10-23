@@ -63,7 +63,7 @@ T
 ‭Animal Humane Society. (n.d.).‬‭The Five Freedoms‬‭for Animals.‬
 ‭https://www.animalhumanesociety.org/health/five-freedoms-animals‬‭Accessed May 2025‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭1‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭1‬
 
 ---
 
@@ -90,4 +90,4 @@ A
 ‭‭E
 ‬ nsuring humane transport‬‭conditions policy | Created May 2025‬
 
-‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬  ‭2‬
+‭animaljustice.org.nz | party@animaljusticeparty.org.nz‬ ‭2‬

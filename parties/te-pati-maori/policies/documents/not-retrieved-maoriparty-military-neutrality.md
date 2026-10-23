@@ -23,4 +23,4 @@ Policies that cite this page: `POL54683`, `POL54684`, `POL54688`, `POL54690`.
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [Te Pāti Māori Statement: Aotearoa Must Stand For Peace (Press release, 2026-03-01)](../documents/2026-03-01-te-pati-maori-statement-aotearoa-must-stand-for-peace.md) 
+- [Te Pāti Māori Statement: Aotearoa Must Stand For Peace (Press release, 2026-03-01)](2026-03-01-te-pati-maori-statement-aotearoa-must-stand-for-peace.md)

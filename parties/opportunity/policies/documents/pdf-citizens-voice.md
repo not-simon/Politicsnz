@@ -13,11 +13,11 @@ fetch_method: curl + pdftotext -layout (poppler)
 
 ## Full text (verbatim)
 
-Date  June 2025
+Date June 2025
 
-Policy  Citizen's Voice
+Policy Citizen's Voice
 
-Document Type  Policy Overview
+Document Type Policy Overview
 
 Direct democracy
 Right now, big decisions are often made without fully hearing
@@ -57,7 +57,7 @@ enable citizen participation tailored to the issue being considered. These could
 include online surveys and digital deliberation tools as well as in-person public
 forums and hui.
 
-Opportunity Party  Direct Democracy  Page 1
+Opportunity Party Direct Democracy Page 1
 
 ---
 
@@ -87,7 +87,7 @@ crisis, or require solutions that cannot be implemented within one Parliamentary
 term. Current examples include the housing crisis, climate change and the impacts of
 our ageing population.
 
-Opportunity Party  Direct Democracy  Page 2
+Opportunity Party Direct Democracy Page 2
 
 ---
 
@@ -131,7 +131,7 @@ to involve all New Zealanders – and most especially the two parties to the Tre
 has the potential to shape how we define ourselves as a nation for generations to
 come – far too important an issue to leave to the politicians.
 
-Opportunity Party  Direct Democracy  Page 3
+Opportunity Party Direct Democracy Page 3
 
 ---
 
@@ -175,4 +175,4 @@ The Commissioner will monitor Parliament’s responses to recommendations, track
 actions taken, and producing annual reports on the outcomes. These reports will be
 made public to ensure transparency and accountability.
 
-Opportunity Party  Direct Democracy  Page 4
+Opportunity Party Direct Democracy Page 4

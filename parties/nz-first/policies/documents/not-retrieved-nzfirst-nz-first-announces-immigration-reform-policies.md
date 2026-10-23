@@ -23,5 +23,5 @@ Policies that cite this page: `POL54962`, `POL54963`, `POL54964`, `POL54965`, `P
 
 Other party-published texts on the same policies that *were* retrieved (they may differ from this page):
 
-- [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](../documents/2026-09-11-nz-first-announces-immigration-reform-policies.md) 
-- [Winston Peters' Speech - "Cool Heads, Rational Judgement" (Speech, 2026-09-13)](../documents/2026-09-13-winston-peters-speech-cool-heads-rational-judgement.md) 
+- [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](2026-09-11-nz-first-announces-immigration-reform-policies.md)
+- [Winston Peters' Speech - "Cool Heads, Rational Judgement" (Speech, 2026-09-13)](2026-09-13-winston-peters-speech-cool-heads-rational-judgement.md)

@@ -47,26 +47,26 @@ distress and suffering to fish and other marine life. Fishing competitions exace
 these issues by encouraging the mass capture and killing of fish for prizes and
 recognition.
 
-ecreationalfishinginflictsconsiderablesufferingonfish,whocanexperiencepainand
+ecreational fishing inflicts considerable suffering on fish, who can experience pain and
 R
 distress from being hooked, handled, and often released back into the water injured.
 Non-target species, such as birds, turtles, and marine mammals, can also become
-unintendedvictimsthroughbycatch,andentanglementinlost,abandonedordiscarded
+unintended victims through bycatch, and entanglement in lost, abandoned or discarded
 equipment, leading to injuries or death.
 
 ishing competitions promote the capture of large numbers of fish in a short period,
 F
-oftenresultinginunethicalpracticesandsignificantharmtofishpopulations.Manyfish
-caught in these events suffer prolonged pain and stress,andtheirsurvivalratesupon
+often resulting in unethical practices and significant harm to fish populations. Many fish
+caught in these events suffer prolonged pain and stress, and their survival rates upon
 release are low, contributing to ecological imbalance.
 
 ecreational fishing and fishing competitions are ethically indefensible and cause
 R
 significant suffering to marine life. AJP advocates for non-violent, community-friendly
-entertainment that aligns with society’sconcernsandethicalandmoralprinciples,and
+entertainment that aligns with society’s concerns and ethical and moral principles, and
 does not exploit and undermine animals’ well-being.
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  1
+animaljustice.org.nz | party@animaljusticeparty.org.nz 1
 
 ---
 
@@ -77,9 +77,9 @@ Key Objectives:
 2. Ban fishing competitions.
 
 Interim measures, while we work towards the ban, include:
-3. Enforceregulationsthatpreventchildrenfromparticipatinginrecreationalfishing
+3. Enforce regulations that prevent children from participating in recreational fishing
 or fishing competitions.
 
 Ban Recreational Fishing and Fishing Competitions Policy | Created September 2024
 
-animaljustice.org.nz | party@animaljusticeparty.org.nz  2
+animaljustice.org.nz | party@animaljusticeparty.org.nz 2

@@ -18,8 +18,8 @@ categories: ["People"]
 
 ### Web page text
 
-The AJP is committed to eliminating barriers that prevent people from escaping domestic violence, recognising that the safety of beloved companion animals is often the deciding factor that keeps victims trapped in dangerous situations. We acknowledge that New Zealand has the highest rate of domestic violence among OECD countries, combined with one of the highest rates of pet ownership globally, yet we have only one pet refuge service operating in Auckland. We propose establishing a nationwide network of pet refuge facilities to ensure no family stays in danger because they cannot safely care for their animals.
-
+The AJP is committed to eliminating barriers that prevent people from escaping domestic violence, recognising that the safety of beloved companion animals is often the deciding factor that keeps victims trapped in dangerous situations. We acknowledge that New Zealand has the highest rate of domestic violence among OECD countries, combined with one of the highest rates of pet ownership globally, yet we have only one pet refuge service operating in Auckland. We propose establishing a nationwide network of pet refuge facilities to ensure no family stays in danger because they cannot safely care for their animals.\
+\
 **Key Objectives:**
 
 1. Advocacy for stronger legal penalties for those who threaten or harm animals as tools of domestic control.
