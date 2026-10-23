@@ -69,7 +69,7 @@ Minister of Finance since 27 November 2023, and also Minister for Economic Growt
   - In December 2023 she declined KiwiRail's request for NZ$1.47b more for the iReX project, which ended it. Cancellation costs were put at about NZ$300m.
   - A replacement procurement through a new company was announced in December 2024, with new ships expected around 2029. ([RNZ](https://www.rnz.co.nz/news/national/504650/interislander-ferry-fleet-project-to-wind-down-after-being-denied-further-government-funding))
 - **Cost of living and competition:**
-  - Took FamilyBoost and Working for Families changes through Budget 2024.
+  - Budget 2024 raised the Working for Families in-work tax credit, worth up to NZ$50 a fortnight for about 160,000 families.
   - Announced an "express lane" consenting regime (2025) to bring new supermarket competitors in.
   - In 2026 accused Foodstuffs and Woolworths of a "full-court press" lobbying campaign against reforms to break up the duopoly. ([1News](https://www.1news.co.nz/2025/08/27/express-lane-reforms-to-increase-supermarket-competition-willis/))
 - **Other decisions:**
