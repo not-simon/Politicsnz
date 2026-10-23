@@ -1,5 +1,7 @@
 # Tariana Turia
 
+<img src="photo.jpg" width="200" align="right" alt="Tariana Turia">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Te Pāti Māori |
@@ -12,6 +14,8 @@
 | **Born** | 1944-04-08, Pūtiki, Whanganui |
 | **Died** | 2025-01-03, Whangaehu |
 | **Wikipedia** | [Tariana Turia](https://en.wikipedia.org/wiki/Tariana_Turia) |
+
+<sub>Photo: Office of the Governor-General of New Zealand — CC BY 4.0 — [source](https://commons.wikimedia.org/wiki/File:Tariana_Turia_alt_2018_%28cropped%29.jpg)</sub>
 
 ## Current status
 

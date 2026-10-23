@@ -1,5 +1,7 @@
 # Takutai Tarsh Kemp
 
+<img src="photo.jpg" width="200" align="right" alt="Takutai Tarsh Kemp">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Te Pāti Māori |
@@ -12,6 +14,8 @@
 | **Born** | 1975-06-20 |
 | **Died** | 2025-06-26, Auckland |
 | **Wikipedia** | [Takutai Tarsh Kemp](https://en.wikipedia.org/wiki/Takutai_Tarsh_Kemp) |
+
+<sub>Photo: Office of the Clerk of the House of Representatives of New Zealand — CC BY 4.0 — [source](https://commons.wikimedia.org/wiki/File:Takutai_Moana_Kemp_2023_%28wider%29.jpg)</sub>
 
 ## Current status
 

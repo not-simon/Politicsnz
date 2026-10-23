@@ -1,5 +1,7 @@
 # Winston Peters
 
+<img src="photo.jpg" width="200" align="right" alt="Winston Peters">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | New Zealand First |
@@ -12,6 +14,8 @@
 | **Born** | 1945-04-11, Whangārei |
 | **2026 election** | list #1 |
 | **Wikipedia** | [Winston Peters](https://en.wikipedia.org/wiki/Winston_Peters) |
+
+<sub>Photo: US Embassy from New Zealand — Public domain — [source](https://commons.wikimedia.org/wiki/File:Winston_Peters_2024_US_Deputy_Secretary_visit_%28further_crop%29.jpg)</sub>
 
 ## Current status
 

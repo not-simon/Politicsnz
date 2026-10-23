@@ -1,5 +1,7 @@
 # Tracey Martin
 
+<img src="photo.jpg" width="200" align="right" alt="Tracey Martin">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | New Zealand First |
@@ -10,6 +12,8 @@
 | **Key roles** | Minister for Children (2017–2020)<br>Minister of Internal Affairs (2017–2020)<br>Minister for Seniors (2017–2020)<br>Associate Minister of Education (2018–2020)<br>Deputy Leader of NZ First (2013–2015)<br>Rodney Local Board (2010–2013) |
 | **Born** | 1964-07-01, Levin |
 | **Wikipedia** | [Tracey Martin](https://en.wikipedia.org/wiki/Tracey_Martin) |
+
+<sub>Photo: Tertiary Education Union — CC BY-SA 2.0 — [source](https://commons.wikimedia.org/wiki/File:Tracey_Martin.jpg)</sub>
 
 ## Current status
 

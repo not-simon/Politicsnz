@@ -1,5 +1,7 @@
 # Steffan Browning
 
+<img src="photo.jpg" width="200" align="right" alt="Steffan Browning">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Green spokesperson on organics, food safety and (until Nov 2014) natural health products<br>Soil & Health Association spokesperson (from 2003) |
 | **Born** | 1954-07-03, Clyde |
 | **Wikipedia** | [Steffan Browning](https://en.wikipedia.org/wiki/Steffan_Browning) |
+
+<sub>Photo: Green Party NZ — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Steffan_Browning.jpg)</sub>
 
 ## Current status
 

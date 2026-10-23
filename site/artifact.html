@@ -576,7 +576,7 @@ V.match = () => {
     $('#main').innerHTML = `<section class="view"><div class="quiz">
       <div class="row" style="justify-content:space-between"><div class="kicker">Question ${i + 1} of ${Q.length} · ${esc((q.issue || '').replace(/-/g, ' '))}</div><button class="btn ghost sm" id="qres">See results so far</button></div>
       <div class="progress"><span style="width:${i / Q.length * 100}%"></span></div>
-      <div class="qcard"><div class="qtext">${esc(q.text)}</div>${q.explainer ? `<p class="muted">${esc(q.explainer)}</p>` : ''}
+      <div class="qcard"><div class="qtext">${esc(q.text)}</div>
         <div class="scale">${SCALE.map(([v, l]) => `<button data-v="${v}" aria-pressed="${a === v}">${l}</button>`).join('')}</div>
         <div class="row" style="justify-content:space-between"><label class="row small" style="gap:6px"><input type="checkbox" id="qimp" ${st.weights[q.id] === 2 ? 'checked' : ''}> This matters a lot to me</label>
         <div class="row"><button class="btn sm" id="qback" ${i === 0 ? 'disabled' : ''}>Back</button><button class="btn sm" id="qskip">Skip</button></div></div></div>
@@ -606,7 +606,7 @@ V.match = () => {
     $('#main').querySelectorAll('[data-why]').forEach(b => b.onclick = () => { const p = b.dataset.why;
       openDialog(`You and ${pname(p)}`, `<div class="stack">${answered.map(q => { const x = (q.positions || {})[p]; const u = st.answers[q.id];
         const lab = v => (SCALE.find(s => s[0] === v) || [0, '–'])[1];
-        return `<div class="pol"><div class="st">${esc(q.text)}</div><div class="row small"><span>You: <b>${lab(u)}</b></span><span>${esc(pname(p))}: <b>${x && typeof x.position === 'number' ? lab(x.position) : 'no public position'}</b></span></div>
+        return `<div class="pol"><div class="st">${esc(q.text)}</div>${q.explainer ? `<p class="tiny muted">${esc(q.explainer)}</p>` : ''}<div class="row small"><span>You: <b>${lab(u)}</b></span><span>${esc(pname(p))}: <b>${x && typeof x.position === 'number' ? lab(x.position) : 'no public position'}</b></span></div>
           ${x && x.evidence ? `<p class="small muted">${esc(x.evidence)}${x.source_url ? ` <a href="${esc(x.source_url)}" target="_blank" rel="noopener">source</a>` : ''}</p>` : ''}</div>` }).join('')}</div>`) });
   };
   render();

@@ -1,5 +1,7 @@
 # Tanya Unkovich
 
+<img src="photo.jpg" width="200" align="right" alt="Tanya Unkovich">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | New Zealand First |
@@ -10,6 +12,8 @@
 | **Key roles** | Host of NZ First podcast FirstHand (2023–) |
 | **Born** | Dargaville |
 | **Wikipedia** | [Tanya Unkovich](https://en.wikipedia.org/wiki/Tanya_Unkovich) |
+
+<sub>Photo: Office of the Clerk of the House of Representatives of New Zealand — CC BY 4.0 — [source](https://commons.wikimedia.org/wiki/File:Tanya_Unkovich.jpg)</sub>
 
 ## Current status
 

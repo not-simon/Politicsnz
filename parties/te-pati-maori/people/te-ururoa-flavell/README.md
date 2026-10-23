@@ -1,5 +1,7 @@
 # Te Ururoa Flavell
 
+<img src="photo.jpg" width="200" align="right" alt="Te Ururoa Flavell">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Te Pāti Māori |
@@ -11,6 +13,8 @@
 | **Key roles** | Co-leader of the Māori Party (2013–2018)<br>Minister for Māori Development (2014–2017)<br>Minister for Whānau Ora (2014–2017)<br>MP for Waiariki (2005–2017)<br>CEO, Te Wānanga o Aotearoa (2018–2021) |
 | **Born** | 1955-12-07, Tokoroa |
 | **Wikipedia** | [Te Ururoa Flavell](https://en.wikipedia.org/wiki/Te_Ururoa_Flavell) |
+
+<sub>Photo: Superu NZ — CC BY 3.0 — [source](https://commons.wikimedia.org/wiki/File:Hon_Te_Ururoa_Flavell%2C_Te_Ritorito_2017_%28cropped%29.png)</sub>
 
 ## Current status
 
