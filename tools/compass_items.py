@@ -109,8 +109,7 @@ I('econ_secs_limited_government', 'economic', +1, 'Limited government', SECS, 's
 I('econ_secs_welfare_benefits', 'economic', -1, 'Welfare benefits', SECS, 'secs_economic', 'SECS item 2 (reverse scored)', None, SCALE_THERMO)
 I('econ_secs_business', 'economic', +1, 'Business', SECS, 'secs_economic', 'SECS item 12', None, SCALE_THERMO)
 I('econ_secs_fiscal_responsibility', 'economic', +1, 'Fiscal responsibility', SECS, 'secs_economic', 'SECS item 11', None, SCALE_THERMO)
-I('econ_secs_gun_ownership', 'economic', +1, 'Gun ownership', SECS, 'secs_economic', 'SECS item 8',
-  'Everett (2013) acknowledges this item is American in flavour; it is kept so the SECS economic subscale is complete, and it is flagged in the method page.', SCALE_THERMO)
+# SECS item 8 (gun ownership) omitted: a US-specific item with no NZ political meaning (flagged by coder).
 
 # =============================================================== SOCIAL: GAL-TAN / libertarian-authoritarian (16; 10 keyed TAN, 6 keyed GAL)
 I('soc_vsa_defy_authority', 'social', -1, "It's great that many young people today are prepared to defy authority.", VSA, 'vsa_authoritarianism',

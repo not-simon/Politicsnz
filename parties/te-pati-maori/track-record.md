@@ -56,8 +56,8 @@ Of the 15 commitments that can be assessed, **11 (73%) were kept or partially ke
 ### 2014–2017: third agreement (2 MPs; Flavell Minister for Māori Development and Whānau Ora)
 - **Delivered:** Te Ture mō Te Reo Māori 2016 (Te Mātāwai), enacted in both te reo Māori and English. Work towards
   recognising the New Zealand Wars; the national commemoration day began in 2017.
-- **Not delivered:** the Te Ture Whenua Māori land reform bill. It was controversial, had not passed by 2017, and was
-  withdrawn.
+- **Not delivered:** the Te Ture Whenua Māori land reform bill. It had not passed by the 2017 election and was
+  withdrawn by the incoming Labour-led government.
 - **Result:** wiped out in 2017. The Mana pact failed, and Labour took all seven Māori seats.
 
 ### 2017–2020: outside Parliament

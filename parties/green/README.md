@@ -97,7 +97,7 @@ The Greens also got one select-committee chair and one deputy-chair role. Former
 
 What the Greens actually delivered in these terms, and where they fell short, is assessed in the [track record](./track-record.md).
 
-## 6. Caucus turmoil, 2023–2026
+## 6. Caucus departures and discipline, 2023–2026
 
 The Greens have lost or disciplined more MPs this term than any other party. In date order, with sources:
 
@@ -114,7 +114,7 @@ The Greens have lost or disciplined more MPs this term than any other party. In 
   - 12–13 August 2025: ordered out for saying "If we find 6 of 68 Government MPs with a spine…" during a Palestine debate. She refused to apologise and was "named", which meant a suspension with docked pay.
   - 4 August 2026: ejected for accusing the Speaker of "double standards" over Winston Peters telling Green MP Lawrence Xu-Nan to "go back to your own country".
 - **Marama Davidson**. In 2023, as a minister, she said at a protest that "white cis men" cause violence, then clarified the remark. She was ejected in June 2023 for accusing ACT of racist questioning. She was treated for breast cancer from June 2024 and returned at Waitangi in February 2025.
-- **NZ First attacks on migrant-background Green MPs**, 2025–26. Targets included Ricardo Menéndez March ("sending Mexicans home"), Xu-Nan, Hernandez and Teanau Tuiono. The Prime Minister called Peters' July 2026 remark racist but kept him as Foreign Minister.
+- **NZ First remarks about migrant-background Green MPs**, 2025–26. Targets included Ricardo Menéndez March ("sending Mexicans home"), Xu-Nan, Hernandez and Teanau Tuiono. The Prime Minister called Peters' July 2026 remark racist but kept him as Foreign Minister.
 - **October 2026: Mongrel Mob meeting**. Green MP Hūhana Lyndon and Te Pāti Māori MPs met Mongrel Mob members at a South Auckland election meeting and were photographed with them. National attacked the meeting, and Newsroom said it could put the Greens' poll gains at risk. The Greens were "unapologetic".
 
 Not every episode above involves wrongdoing. Doyle, Collins and the NZ First remarks do not. They are listed because together they shaped the caucus this term. Integrity issues measured against Green values are discussed in the [track record](./track-record.md#5-actions-vs-values).
@@ -167,7 +167,7 @@ On these numbers the Greens would get roughly 17–20 seats (our estimate). With
 
 ## 10. 2026 pitch and headline promises
 
-The campaign slogan is **"For All of Us"**. The Greens' manifesto was launched at a packed AGM in Auckland in July 2026. It combines climate and environment policy with an economic-populist offer on cost of living: taxing the very wealthy and corporations to pay for a "floor" of food, shelter and jobs. Headline commitments:
+The campaign slogan is **"For All of Us"**. The Greens' manifesto was launched at its AGM in Auckland in July 2026. It combines climate and environment policy with cost-of-living policies funded by taxing the very wealthy and corporations to pay for a "floor" of food, shelter and jobs. Headline commitments:
 
 - **Tax**:
   - 2.5% tax on net wealth over $10m, plus an inheritance tax on large estates;

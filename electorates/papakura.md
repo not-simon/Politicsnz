@@ -61,12 +61,13 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 
 ## What to watch
 
-- Open seat (vacant since Judith Collins resigned in May 2026); National’s Emma Chatterton faces Labour’s Anahila Kanongata’a and Vision NZ leader Hannah Tamaki in a seat National won by 13,519 in 2023. Seat vacant since Judith Collins resigned (14 May 2026).
+- Open seat (vacant since Judith Collins resigned in May 2026); National’s Emma Chatterton faces Labour’s Anahila Kanongata’a and Vision NZ leader Hannah Tamaki in a seat National won by 13,519 in 2023. NZ First has no candidate here: [George Ngatai](../parties/nz-first/people/george-ngatai/), announced as its Papakura candidate in July 2026, stepped down on 26 August 2026 after confirming he had earlier approached other parties about standing for them; nominations had not yet closed, so he is not on the ballot ([RNZ, 26 Aug 2026](https://www.rnz.co.nz/news/politics_election-2026/1136184/nz-first-candidate-steps-down-after-earlier-shopping-himself-around-to-other-parties)). Seat vacant since Judith Collins resigned (14 May 2026).
 
 ## Sources
 
 - https://policy.nz/2026/papakura-electorate
 - https://en.wikipedia.org/wiki/Candidates_in_the_2026_New_Zealand_general_election_by_electorate
+- https://www.rnz.co.nz/news/politics_election-2026/1136184/nz-first-candidate-steps-down-after-earlier-shopping-himself-around-to-other-parties
 - https://elections.nz/democracy-in-nz/historical-events/boundary-review-2025/electorate-maps
 - https://en.wikipedia.org/wiki/Papakura_%28electorate%29
 - https://en.wikipedia.org/wiki/54th_New_Zealand_Parliament

@@ -10,7 +10,7 @@
 
 **Labour's record over the last five elections splits sharply in two.**
 
-1. **In opposition (2011, 2014)** Labour ran on bold, unpopular-but-"responsible" policies — a capital gains tax, raising the pension age to 67, NZ Power, KiwiAssure — lost twice, and **dropped every one of them** before 2017. The CGT has returned in 2026 in a narrower form.
+1. **In opposition (2011, 2014)** Labour ran on a capital gains tax, raising the pension age to 67, NZ Power and KiwiAssure, lost twice, and **dropped every one of them** before 2017. The CGT has returned in 2026 in a narrower form.
 2. **In government (2017–2023)** Labour delivered most of its *legislative and money-transfer* promises — the 100-day plan, Families Package, fees-free first year, minimum wage to $20, Healthy Homes, foreign-buyer ban, Zero Carbon Act, 10 sick days, Matariki, Fair Pay Agreements, 39% top tax rate. But it **failed on most of its big physical-delivery targets** — KiwiBuild's 100,000 homes, Auckland light rail (promised twice), the migration cut — and only partly met its child-poverty, mental-health, police and tree-planting targets.
 
 | Scored promises (testable in office) | Number | Share |
@@ -233,7 +233,7 @@ At least 15 kept promises were reversed or substantially wound back by the 2023�
 | **End child poverty / wellbeing** | Families Package, Best Start, benefit increases and wage indexation, free school lunches, free period products in schools, Child Poverty Reduction Act, wellbeing budgets ([Wikipedia](https://en.wikipedia.org/wiki/Sixth_Labour_Government_of_New_Zealand)) | Material hardship rose again in 2022/23; most targets for the second period missed |
 | **Workers and unions** | Minimum wage raised from $15.75 to $20 (2017–21), FPAs, sick leave, pay equity settlements, 90-day trial limits | Social insurance scheme dropped |
 | **Climate leadership ("nuclear-free moment")** | Zero Carbon Act, oil & gas ban, ETS reform, Clean Car standard, 2030 target raised to a 50% net cut ([Wikipedia](https://en.wikipedia.org/wiki/Sixth_Labour_Government_of_New_Zealand)) | Biofuel mandate and Clean Car Upgrade dropped in 2023 to ease costs; oil and gas ban was not in the 2017 manifesto |
-| **Te Tiriti partnership** | Matariki holiday, Te Aka Whai Ora, Ihumātao purchase, iwi representation in water entities | Critics argued co-governance changes (Three Waters entities, Te Aka Whai Ora) had not been clearly put to voters in 2020; in 2023 Labour lost five Māori seats to Te Pāti Māori, keeping only Ikaroa-Rāwhiti ([Wikipedia](https://en.wikipedia.org/wiki/2023_New_Zealand_general_election)) |
+| **Te Tiriti partnership** | Matariki holiday, Te Aka Whai Ora, Ihumātao purchase, iwi representation in water entities | Wikipedia's account of the 2023 election records criticism that the shared-governance changes (Three Waters entities, Te Aka Whai Ora) had not been clearly put to voters in 2020; in 2023 Labour lost five Māori seats to Te Pāti Māori, keeping only Ikaroa-Rāwhiti ([Wikipedia](https://en.wikipedia.org/wiki/2023_New_Zealand_general_election)) |
 | **Transparency / "be kind"** | Wellbeing reporting; Royal Commissions (abuse in care, COVID) | Heavy use of urgency (criticised by the COVID Royal Commission); mandatory Three Waters after saying it was optional; Ardern's silence on cannabis until after the vote; several ministerial resignations |
 
 ### Notable U-turns

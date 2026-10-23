@@ -42,12 +42,12 @@ National is New Zealand's main centre-right party. It is the senior partner in t
 
 National's constitution lists these values: loyalty to country and Sovereign; "recognition of the Treaty of Waitangi as the founding document of New Zealand"; national and personal security; equal citizenship and opportunity; individual freedom and choice; personal responsibility; competitive enterprise; limited government; strong families; and sustainable development ([Wikipedia summary of party principles](https://en.wikipedia.org/wiki/New_Zealand_National_Party)).
 
-National is usually described as a **broad church**:
+National has been characterised as a **"broad church"** ([Wikipedia](https://en.wikipedia.org/wiki/New_Zealand_National_Party), citing political scientist Jack Vowles):
 - a **conservative** wing, with rural, provincial and socially conservative members;
 - a **liberal** wing, both economic (classical-liberal) and social;
 - smaller **populist** and **libertarian** tendencies.
 
-The party has a free conscience vote on moral issues. Its MPs split on same-sex marriage, and mostly opposed the Abortion Legislation Act 2020. The Key government was relatively centrist. Commentators describe the Luxon government as more right-leaning: welfare sanctions, deregulation, reversing many Labour-era Treaty and co-governance measures, and a return to oil and gas exploration.
+The party has a free conscience vote on moral issues. Its MPs split on same-sex marriage, and mostly opposed the Abortion Legislation Act 2020. Wikipedia says the Key-English government (2008–17) "took a relatively centrist position" (citing The Spinoff, 2016). The Luxon government's programme has included welfare sanctions, deregulation, the reversal of Labour-era Treaty-related and shared Māori–Crown governance measures (which the coalition parties call "co-governance"), and a return to oil and gas exploration; what it promised and delivered is assessed in the [track record](track-record.md).
 
 ## Organisation
 
@@ -172,7 +172,7 @@ National launched its campaign in Auckland on 27 September 2026. Luxon's "person
 3. **Compulsory KiwiSaver**, with higher contributions and a **$1,500 Baby Boost**
 4. **Paid parental leave** extended from 26 to 30 weeks
 5. Better school results, by **replacing NCEA**, with regular assessment and "teaching the basics brilliantly"
-6. Tougher consequences for criminals, and more police patrols
+6. "Tougher consequences for criminals" (its words), and more police patrols
 7. Faster healthcare and more medicines, on top of 33 new cancer medicines already funded
 8. Better infrastructure: Roads of National Significance, new classrooms, and new and upgraded hospitals
 9. A better deal at the supermarket, through more competition (including structural separation of Foodstuffs)
@@ -191,7 +191,7 @@ Later campaign releases added more ([plan for young adults](https://www.national
 The pitch rests on National's first-term record and on attacking the alternative:
 - **The record National claims**: tax relief "for the first time in 14 years"; 2.6% growth; ram raids down; school phone ban.
 - **The attack**: a "Labour–Greens–Te Pāti Māori–Opportunity" coalition with "at least nine new taxes".
-- **The independent picture** is more mixed. It is set out in the [track record](track-record.md): inflation was back up to 3.7% (year to September 2026), unemployment around 5.6%, and the deficit was still being closed.
+- **Official statistics and forecasts** (assessed promise by promise in the [track record](track-record.md)): annual CPI inflation fell to 2.2% in the September 2024 quarter and was 3.7% in the year to September 2026 ([interest.co.nz, 22 Oct 2026](https://www.interest.co.nz/economy/140742/annual-inflation-hits-37-september-quarter-petrol-continuing-lead-way-followed)); unemployment was 5.6% in the June 2026 quarter, an 11-year high ([1News, 5 Aug 2026](https://www.1news.co.nz/2026/08/05/nzs-unemployment-rate-hits-11-year-high-in-june-quarter/)); and Treasury's pre-election update forecast a return to surplus (on the government's OBEGALx measure) in 2028/29, with net debt peaking at 43.9% of GDP ([RNZ on PREFU 2026](https://www.rnz.co.nz/news/politics_election-2026/1647005/treasury-gives-willis-pre-election-boost-as-surplus-forecast-improves)).
 
 Full list of every 2026 policy, with source documents: **[policies/README.md](policies/README.md)**.
 

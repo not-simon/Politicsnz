@@ -1,6 +1,6 @@
 # New Zealand Labour Party (Rōpū Reipa o Aotearoa)
 
-> Centre-left, social-democratic party; New Zealand's oldest current political party (founded 1916).
+> New Zealand's oldest current political party (founded 1916); Wikipedia's infobox describes it as social-democratic and centre-left.
 > **Leader:** [Chris Hipkins](./people/chris-hipkins/) (since 22 Jan 2023) · **Deputy:** [Carmel Sepuloni](./people/carmel-sepuloni/) (since 7 Nov 2023) ·
 > **Finance spokesperson:** [Barbara Edmonds](./people/barbara-edmonds/) · **2026 slogan:** "Better Starts Now" ·
 > **Status (Oct 2026):** Official Opposition, 34 MPs · **Last in government:** 2017–2023
@@ -28,11 +28,11 @@
 
 ## History
 
-**Origins (1916–1935).** Labour was formed in 1916 as the political wing of the union movement. Its early leaders (Harry Holland, Peter Fraser, Bob Semple, Paddy Webb) opposed WWI conscription and some were jailed. It won 8 seats in 1919 and became the official Opposition in 1926; radical policies such as the "usehold" (state leasehold) land policy were dropped during the 1920s ([Wikipedia](https://en.wikipedia.org/wiki/New_Zealand_Labour_Party)).
+**Origins (1916–1935).** Labour was formed in 1916 as the political wing of the union movement. Its early leaders (Harry Holland, Peter Fraser, Bob Semple, Paddy Webb) opposed WWI conscription and some were jailed. It won 8 seats in 1919 and became the official Opposition in 1926; policies such as the "usehold" (state leasehold) land policy were dropped during the 1920s ([Wikipedia](https://en.wikipedia.org/wiki/New_Zealand_Labour_Party)).
 
 **First Labour Government (1935–1949)** under Michael Joseph Savage and Peter Fraser built the modern welfare state (state housing, social security, free health care). **Second (1957–60)** under Walter Nash and **Third (1972–75)** under Norman Kirk/Bill Rowling were single-term governments.
 
-**Fourth Labour Government (1984–1990)** under David Lange and Finance Minister Roger Douglas carried out sweeping market liberalisation ("Rogernomics") — deregulation, corporatisation and privatisation — which split the party and its union base, and also made New Zealand nuclear-free. Membership collapsed in the 1980s–90s ([Wikipedia](https://en.wikipedia.org/wiki/New_Zealand_Labour_Party)).
+**Fourth Labour Government (1984–1990)** under David Lange and Finance Minister Roger Douglas carried out wide-ranging market liberalisation ("Rogernomics") — deregulation, corporatisation and privatisation — which split the party and its union base, and also made New Zealand nuclear-free. Membership collapsed in the 1980s–90s ([Wikipedia](https://en.wikipedia.org/wiki/New_Zealand_Labour_Party)).
 
 **Fifth Labour Government (1999–2008)** under Helen Clark (three election wins) governed in MMP coalitions/support arrangements (Alliance, Progressives, United Future, NZ First, Greens). It introduced KiwiSaver, Working for Families, the NZ Super Fund, Kiwibank, interest-free student loans and NCEA; the 2004 foreshore and seabed controversy led to the breakaway Māori Party ([Wikipedia](https://en.wikipedia.org/wiki/New_Zealand_Labour_Party)).
 

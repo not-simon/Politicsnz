@@ -29,9 +29,9 @@
  "direction_key": "+1 = agreeing (or feeling positive) moves the respondent toward the right / TAN-authoritarian / populist pole; -1 = reverse-keyed item.",
  "balance": {
   "economic": {
-   "keyed_plus": 6,
+   "keyed_plus": 5,
    "keyed_minus": 6,
-   "total": 12
+   "total": 11
   },
   "social": {
    "keyed_plus": 10,
@@ -61,7 +61,7 @@
    "method": "half-width = max(1.0, 1.96 * 5 * sd(keyed_i) / sqrt(n))  where sd is the sample standard deviation of the keyed item scores on that axis and n the number answered. The floor of 1.0 reflects that even a complete, perfectly consistent set of 5-point answers cannot locate a person more finely than about one unit on a 20-unit axis.",
    "display": "Show the point with an error bar (or shaded band) of +/- half-width, and the text \"based on n of N items\". With all items answered and sd = 0 the band is +/-1.0.",
    "n_total": {
-    "economic": 12,
+    "economic": 11,
     "social": 16,
     "populism": 8
    }
@@ -462,43 +462,6 @@
    "subscale": "secs_economic",
    "item_ref": "SECS item 11",
    "note": null,
-   "source": {
-    "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
-    "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",
-    "url": "https://doi.org/10.1371/journal.pone.0082131",
-    "licence": "CC0 1.0 (the article states the work is made available under the Creative Commons CC0 public domain dedication)",
-    "original_format": "Feeling thermometer: \"How positive or negative do you feel about each issue on the scale of 0 to 100, where 0 represents very negative, and 100 represents very positive?\"",
-    "adaptation": "Rendered as a 5-point item (very negative / negative / neutral / positive / very positive) mapped to -2..+2. Subscale membership (social 7 items, economic 5 items) follows Everett 2013, Table 4.",
-    "archived_copy": "raw/compass/secs_everett2013.html"
-   }
-  },
-  {
-   "id": "econ_secs_gun_ownership",
-   "axis": "economic",
-   "direction": 1,
-   "text": "Gun ownership",
-   "scale": {
-    "type": "feeling5",
-    "prompt": "How positive or negative do you feel about:",
-    "labels": [
-     "Very negative",
-     "Negative",
-     "Neutral",
-     "Positive",
-     "Very positive"
-    ],
-    "values": [
-     -2,
-     -1,
-     0,
-     1,
-     2
-    ],
-    "note": "Adapted from the SECS 0-100 feeling thermometer."
-   },
-   "subscale": "secs_economic",
-   "item_ref": "SECS item 8",
-   "note": "Everett (2013) acknowledges this item is American in flavour; it is kept so the SECS economic subscale is complete, and it is flagged in the method page.",
    "source": {
     "instrument": "Social and Economic Conservatism Scale (SECS), 12 items",
     "citation": "Everett, J. A. C. (2013). The 12 Item Social and Economic Conservatism Scale (SECS). PLoS ONE 8(12): e82131.",

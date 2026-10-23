@@ -33,7 +33,7 @@ NZ First was in opposition from 2011 to 2017, in coalition with Labour from 2017
 
 **Summary.**
 - NZ First's pattern is distinctive. **What makes it into a coalition agreement usually gets delivered**: the PGF and the RIF, the minimum wage, waka-jumping, Pike River, super at 65, English as an official language, Māori-ward referendums, the COVID inquiry, and oil and gas exploration.
-- Its **most prominent and most divisive campaign promises are often traded away**. In 2017 that meant the Māori-seats and 100-MP referendums, the anti-smacking repeal and the 10,000 immigration cap. In 2023 it meant designating gangs as terrorists, withdrawing from UNDRIP and moving the port to Northport.
+- Its **most prominent campaign promises are often traded away**. In 2017 that meant the Māori-seats and 100-MP referendums, the anti-smacking repeal and the 10,000 immigration cap. In 2023 it meant designating gangs as terrorists, withdrawing from UNDRIP and moving the port to Northport.
 - Several of those traded promises reappear at the next election: the Māori-seats referendum (2017 → 2026) and Kiwi bank ownership (2017 → 2026).
 - Delivery in this term was also weakened by **missed targets**, notably 500 police by November 2025, and one **self-reversal**: Fees Free was moved to the final year in 2025, then scrapped in Budget 2026.
 
@@ -110,7 +110,7 @@ NZ First had no seats, so no promises from this election could be delivered.
 - **Tax.** It opposed a capital gains tax and in effect vetoed one in 2019.
 
 **Where actions diverged from words:**
-- **1996.** NZ First campaigned against National, then formed a coalition with it. Many commentators link the party's 1999 slump to this.
+- **1996.** NZ First campaigned against National, then formed a coalition with it. Wikipedia's account of the 1999 election, when the party fell to 4.3%, says some voters "had not forgiven Peters for forming a coalition with National after being led to believe that a vote for him would help get rid of National".
 - **2005.** Peters spoke of avoiding the "baubles of office", then became Foreign Minister.
 - **Regulatory Standards Act (2025).** NZ First voted it through all its stages, then pledged a week after the third reading to repeal it, saying it had only ever supported it because of ACT's deal. ACT called this bad faith.
 - **Oil and gas.** NZ First was part of the 2018 government that banned new offshore exploration, then repealed the ban in 2025.
@@ -124,7 +124,7 @@ NZ First had no seats, so no promises from this election could be delivered.
   - Labour's water levy (2017);
   - the clean-car feebate and clean-car standard (2020; later enacted by Labour alone in 2021);
   - the Auckland light-rail process (June 2020).
-  It forced a referendum on End of Life Choice but failed to get one on abortion. It supported the 2019 firearms ban, which analysts say pushed some gun-owning voters to ACT.
+  It forced a referendum on End of Life Choice but failed to get one on abortion. It supported the 2019 firearms ban; analysts cited by Wikipedia link that vote to gun owners moving to ACT in 2020 (see the [ACT profile](../act/README.md)).
 - **2023–26, as a brake on ACT and National.**
   - It allowed the Treaty Principles Bill only through first reading, then voted it down.
   - It invoked "agree to disagree" over the COVID inquiry scope, residency pathways, the India FTA and the under-16 social media ban.

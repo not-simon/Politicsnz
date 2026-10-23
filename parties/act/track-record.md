@@ -94,7 +94,7 @@ This page covers promises against delivery, reliability, how ACT's actions in go
 | Deputy PM rotation | ✅ kept | Seymour became Deputy PM on 31 May 2025 |
 
 ### 2026 (upcoming)
-Headline promises are listed as *not-yet-due* in the JSON: a gradual rise in the NZ Super age, a three-year minimum wage freeze, disestablishing the Waitangi Tribunal after settlements, tougher immigration, and "equal rights" entrenchment. See [policies/README.md](./policies/README.md).
+Headline promises are listed as *not-yet-due* in the JSON: a gradual rise in the NZ Super age, a three-year minimum wage freeze, disestablishing the Waitangi Tribunal after settlements, immigration restrictions, and "equal rights" entrenchment. See [policies/README.md](./policies/README.md).
 
 ## Alignment: did ACT's actions match its stated principles?
 
@@ -102,7 +102,7 @@ ACT's stated values are individual freedom, personal responsibility, "smaller, s
 
 **Strongly consistent:**
 - **Regulation and law-making quality.** ACT pursued this from Hide's 2006 bill through to the 2025 Act, and set up a dedicated ministry. It is the clearest example of a long-held policy turned into law.
-- **"One law for all" / equal treatment.** ACT carried the Treaty Principles Bill to a vote despite record opposition, pushed the "need not race" directive, repealed s7AA, and removed ACC's ethnic targets. Supporters see consistency; critics, including the Waitangi Tribunal and Te Pāti Māori, see a breach of Treaty obligations. Either way, the actions match the stated policy.
+- **"One law for all" / equal treatment.** ACT carried the Treaty Principles Bill to a vote despite record opposition, pushed the "need not race" directive, repealed s7AA, and removed ACC's ethnic targets. ACT presents these as applying its stated policy; critics, including the Waitangi Tribunal and Te Pāti Māori, see a breach of Treaty obligations. Either way, the actions match the stated policy.
 - **Liberty-based dissent inside the coalition.** ACT voted against or withheld support from measures it saw as intrusive or protectionist: the Fair Digital News Bargaining Bill (agree to disagree), the under-16 social media ban (2025 and 2026), the modern slavery bill, and gift-card expiry rules. It also opposed forced break-ups of supermarkets and power companies.
 - **Earlier record.** Seymour was the lone vote against the 2019 firearms ban and campaigned on the Arms Act rewrite he later helped deliver. He also championed End of Life Choice.
 
@@ -118,7 +118,7 @@ ACT's stated values are individual freedom, personal responsibility, "smaller, s
 1. **From vehicle to force.** ACT went from 1.07% (2011), 0.69% (2014) and 0.50% (2017), surviving only through the Epsom arrangement, to 7.58% (2020) and 8.64% (2023). It polls about 6–11% in 2026. Its influence shifted from a single member's bill to three Cabinet ministers and a Deputy PM.
 2. **Delivery improved with seats.** With one MP, ACT's main win was a conscience-vote member's bill (End of Life Choice) and a few concessions in support agreements (charter schools). With 11 MPs it secured and largely delivered about 20 coalition commitments within three years. Several of them (charter schools, the Regulatory Standards Act, three strikes) revived policies that a previous government had reversed.
 3. **Reversals.** ACT's signature policies have been reversed by Labour before: charter schools in 2018 and three strikes in 2022. Labour, the Greens and Te Pāti Māori opposed the 2024–25 versions, so their future depends on the 2026 result.
-4. **Consistent priorities.** Smaller government, deregulation, tougher sentencing, firearms-owner rights and "equal citizenship" run through every campaign since 2014. The Treaty and co-governance became the dominant theme from 2022.
+4. **Consistent priorities.** Smaller government, deregulation, longer sentences, firearms-owner rights and "equal citizenship" run through every campaign since 2014. The Treaty and co-governance became the dominant theme from 2022.
 5. **Party organisation.** ACT has gained donors and staff: it overtook Labour in 2025 donations, held a 2024 campaign-culture review, entered local government (ACT Local, 2025), and changed its deputy (McKee replaced van Velden in 2026).
 
 ## Sources

@@ -129,7 +129,7 @@ leverage. Shaw survived two leadership challenges, in 2021 and 2022
   notable cross-party vote: the Greens voted for the coalition's online casino bill at its first reading in July 2025
   ([RNZ](https://www.rnz.co.nz/news/political/566995/online-casino-bill-greens-vote-with-coalition-govt-to-pass-first-reading)).
   We did not find their stated reasons in this pass.
-- **Conduct:** more departures and scandals than any other caucus. See §5 and the [profile](./README.md#6-caucus-turmoil-20232026).
+- **Conduct:** more MPs lost or disciplined this term than any other party. See §5 and the [profile](./README.md#6-caucus-departures-and-discipline-20232026).
 
 ## 3. Reliability by term (qualitative)
 
@@ -150,25 +150,26 @@ leverage. Shaw survived two leadership challenges, in 2021 and 2022
   the referendum, Healthy Homes and the Mental Health Commission were all delivered.
 - **On process principles: not always.** The 2018 waka-jumping vote and the 2020 Green School grant broke stated Green
   positions to keep the government arrangement working or to win a local project. In 2024 the party used the
-  waka-jumping law itself to remove Tana. Supporters say this was consistent with the law's purpose of protecting
-  proportionality. Critics, including some Green members, called it opportunistic.
+  waka-jumping law itself to remove Tana, a law it had joined National in trying to repeal in 2020
+  ([Te Ao Māori News, 17 Oct 2024](https://teaonews.co.nz/2024/10/17/greens-unanimously-vote-to-remove-darleen-tana-from-parliament)).
+  Three senior Pasifika members resigned in protest (see the [profile, §6](./README.md#6-caucus-departures-and-discipline-20232026)).
 - **On economic promises: scaled back over time, then pushed forward again.** The 2020 wealth tax and the 2023
   Guaranteed Minimum Income were never achieved. The 2026 tax plan is noticeably more modest: the wealth tax
-  threshold rose from $2m to $10m. But the overall platform has moved left and populist, with KiwiMart, rent caps and
+  threshold rose from $2m to $10m. The 2026 platform adds new state intervention in markets: KiwiMart, rent caps and
   Kiwipower.
 
 ## 5. Actions vs values
 
 | Value or position | Action | Assessment |
 |---|---|---|
-| Grassroots democracy; MPs' freedom of conscience | Voted for the waka-jumping law in 2018 under the support agreement; voted to repeal it in 2020–21; used it against Tana in 2024 | Inconsistent. The party explained each step, but the sequence looks opportunistic. Fitzsimons opposed the 2018 vote. |
+| Grassroots democracy; MPs' freedom of conscience | Voted for the waka-jumping law in 2018 under the support agreement; voted to repeal it in 2020–21; used it against Tana in 2024 | Inconsistent: the party voted for the law in 2018, tried to repeal it in 2020–21, then used it in 2024, giving reasons at each step. Fitzsimons opposed the 2018 vote. |
 | Public education (no state money for private schools) | $11.7m Green School grant (2020) | Breach. The party admitted it and the grant became a loan. |
 | Non-violence and peace | Muted on troop extensions in government (2017–20); in 2026, ex-NZSAS candidate Josh Jacobsen ranked 25 | Mixed. Critics have questioned the candidacy (a blog post, not independent reporting; see the README sources). |
 | Social justice and workers' rights | Tana's role in the migrant-worker complaints at her husband's business (2024) | Breach by an individual MP. The party responded with an independent investigation, a call to resign, then expulsion. |
 | Integrity and honesty | Ghahraman shoplifting convictions (2024) | Breach by an individual MP. She resigned within a week of the first report. |
-| Safe, respectful workplaces | Bullying allegations against Kerekere (2023); Genter found in contempt (2024) | Breaches alleged or found. The party processes were criticised by Kerekere's supporters as unfair, and by others as slow. |
+| Safe, respectful workplaces | Bullying allegations against Kerekere (2023); Genter found in contempt (2024) | Breaches alleged or found. Kerekere said the process denied her natural justice, and Māori, Pasifika and Rainbow members defended her (see the profile, §6). |
 | Te Tiriti partnership | 2022 rule that one co-leader must be Māori; Māori electorate candidates in 2026; consistent votes against the Treaty Principles Bill | Consistent. Pasifika and Māori members who resigned in 2024 alleged that Māori and Pasifika MPs were mistreated. |
-| Palestinian self-determination | Consistent since 2021: motions, a sanctions bill, Swarbrick's 2025 suspension | Consistent. Swarbrick's 2023 "river to the sea" chant was criticised as divisive; she apologised to those offended but defended the phrase. |
+| Palestinian self-determination | Consistent since 2021: motions, a sanctions bill, Swarbrick's 2025 suspension | Consistent. The New Zealand Jewish Council objected to Swarbrick's November 2023 "river to the sea" chant, a phrase RNZ noted many Israelis regard as antisemitic ([RNZ Morning Report, 7 Nov 2023](https://www.rnz.co.nz/national/programmes/morningreport/audio/2018914306/nz-jewish-council-on-swarbrick-s-comments-at-palestinian-rally)); she apologised to those offended but defended the phrase. |
 | Climate | Zero Carbon Act; NDC raised; oil & gas ban; consistent opposition to rollbacks | Strongly consistent. The main gap was failing to get agricultural pricing in 2017–23. |
 
 ## 6. Trends

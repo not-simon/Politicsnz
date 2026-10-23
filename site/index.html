@@ -193,6 +193,16 @@ td.n, th.n { text-align: right; font-family: var(--f-num); font-variant-numeric:
 .status { font: 700 10.5px var(--f-ui); letter-spacing: .05em; text-transform: uppercase; border-radius: 6px; padding: 2px 7px; background: var(--sunk); color: var(--muted) }
 .status.mp { background: var(--brand); color: var(--brand-ink) }
 
+/* compass */
+.compass svg { width: 100%; height: auto; display: block }
+.compass .me { fill: var(--sun); stroke: var(--ink); stroke-width: 2 }
+.compass .party { stroke: var(--surface); stroke-width: 1.5; cursor: pointer }
+.compass text { font: 11px var(--f-ui); fill: var(--muted) }
+.compass .axl { font: 700 11px var(--f-ui); fill: var(--ink); letter-spacing: .04em }
+.banner { background: var(--sun); color: var(--sun-ink); font: 600 14px var(--f-ui); }
+.banner .wrap { display: flex; gap: 12px; align-items: center; padding-block: 8px }
+.banner a { color: inherit } .banner button { margin-left: auto; background: transparent; border: 0; font: 700 18px var(--f-ui); color: inherit; cursor: pointer }
+
 /* electorate map */
 .map svg { width: 100%; height: auto; display: block }
 .map path.el { stroke: var(--surface); stroke-width: .7; cursor: pointer; transition: opacity .2s }
@@ -322,7 +332,7 @@ const KEY_DATES = [['2026-10-25', 'Last day to enrol', 'There is no enrolling on
   ['2026-10-26', 'Advance voting opens', 'Vote early at any voting place in the country.'],
   ['2026-11-07', 'Election day', 'Voting places open 9am to 7pm. Results start coming in that night.'],
   ['2026-11-27', 'Official results', 'Special votes are counted and the final seat count is confirmed (approx. 3 weeks later).']];
-const NAV = [['home', 'Home'], ['match', 'Find your match'], ['swipe', 'Policy swipe'], ['polls', 'Polls & forecast'], ['map', 'Electorate map'], ['parties', 'Parties'], ['issues', 'Issues'], ['electorate', 'Your electorate'], ['parliament', 'Parliament'], ['more', 'More']];
+const NAV = [['home', 'Home'], ['match', 'Find your match'], ['swipe', 'Policy swipe'], ['polls', 'Polls & forecast'], ['compass', 'Compass'], ['map', 'Electorate map'], ['parties', 'Parties'], ['issues', 'Issues'], ['electorate', 'Your electorate'], ['parliament', 'Parliament'], ['more', 'More']];
 const ICON = {
   home: '<path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/>',
   match: '<path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/>',
@@ -330,6 +340,7 @@ const ICON = {
   issues: '<path d="M4 5h16M4 12h16M4 19h10"/>',
   polls: '<path d="M4 19h16M6 16V9M11 16V5M16 16v-6M20 16v-3"/>',
   map: '<path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/>',
+  compass: '<circle cx="12" cy="12" r="9"/><path d="m15 9-2 6-4 0 2-6z" fill="currentColor"/>',
   play: '<path d="M7 5v14l12-7z" fill="currentColor"/>', pause: '<path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/>',
   swipe: '<rect x="6" y="4" width="12" height="16" rx="2"/><path d="M3 8v10a2 2 0 0 0 2 2M21 8v10a2 2 0 0 1-2 2M9 15l2 2 4-5"/>',
   more: '<circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/>' };
@@ -449,6 +460,7 @@ V.home = async () => {
     <div class="starters">
       <button class="starter" data-go="match"><span class="ic sun">${ic('match')}</span><h3>Find your match</h3><p class="muted small">Answer ${(G().quiz && G().quiz.statements || []).length || 'about 40'} quick questions, written without naming any party, and see who agrees with you and on what.</p><span class="go">Start the quiz →</span></button>
       <button class="starter" data-go="swipe"><span class="ic">${ic('swipe')}</span><h3>Policy swipe</h3><p class="muted small">Agree or disagree with real 2026 policies, one at a time, with no party names. Find out whose it was after you decide.</p><span class="go">Start swiping →</span></button>
+      <button class="starter" data-go="compass"><span class="ic">${ic('compass')}</span><h3>Political compass</h3><p class="muted small">General value questions from academic surveys; see where you sit, and where the parties sit, on standard axes.</p><span class="go">Take the test →</span></button>
       <button class="starter" data-go="map"><span class="ic">${ic('map')}</span><h3>Electorate map</h3><p class="muted small">Every seat since 2011, coloured by who won. Scrub through the years and tap a seat.</p><span class="go">Open the map →</span></button>
       <button class="starter" data-go="issues"><span class="ic">${ic('issues')}</span><h3>Compare on the issues</h3><p class="muted small">Cost of living, housing, health and more, with every party's position side by side.</p><span class="go">See the issues →</span></button>
       <button class="starter" data-go="electorate"><span class="ic">${ic('parties')}</span><h3>Meet your local candidates</h3><p class="muted small">Pick your electorate to see who's standing, with photos, in their own words.</p><span class="go">Find your electorate →</span></button></div>
@@ -647,6 +659,74 @@ async function showIssuePolicies(p, ids) {
   if (!S.policies) S.policies = await getJSON('data/policies.json').catch(() => ({}));
   const set = new Set(ids.split(',')); const ps = (S.policies[p] || []).filter(x => set.has(x.id));
   openDialog(`${pname(p)}: related policies`, ps.length ? `<div class="stack">${ps.map(x => policyCard(p, x, false)).join('')}</div>` : '<p class="empty">These policies are still being added.</p>') }
+
+/* ----- election phase (NZ time) ----- */
+function nzNow() { return new Date(new Date().toLocaleString('en-US', { timeZone: 'Pacific/Auckland' })) }
+function electionPhase() { const t = nzNow(); const d = t.getFullYear() * 10000 + (t.getMonth() + 1) * 100 + t.getDate();
+  if (d < 20261026) return 'enrol'; if (d < 20261107) return 'advance'; if (d === 20261107) return t.getHours() < 19 ? 'electionday' : 'results'; return 'after' }
+const ELECTION_DAY_BLOCK = 'Today is election day. By law, material that could influence how people vote can’t be published until voting closes at 7pm, so match results, polls and the forecast are hidden until then. Voting places are open 9am–7pm.';
+function renderBanner() { const ph = electionPhase(); let el = $('#banner'); if (!el) { el = document.createElement('div'); el.id = 'banner'; el.className = 'banner'; document.querySelector('header.top').after(el) }
+  const key = 'banner-' + ph; if (store.get(key) === 'x') { el.hidden = true; return }
+  const msg = { enrol: 'Enrolment closes <b>midnight Sunday 25 October</b>. There is no enrolling on election day this year. <a href="https://vote.nz" target="_blank" rel="noopener">Check or update your enrolment at vote.nz</a>.',
+    advance: 'Voting is open. Vote early at any voting place until 6 November, or on election day Saturday 7 November (9am–7pm). <a href="https://vote.nz" target="_blank" rel="noopener">Find a voting place</a>.',
+    electionday: 'Election day: voting places are open 9am–7pm. Polls, forecasts and match results are hidden until 7pm.',
+    results: 'Voting has closed. Preliminary results are being counted; official results on 27 November.', after: '' }[ph];
+  if (!msg) { el.hidden = true; return } el.hidden = false; el.innerHTML = `<div class="wrap"><span>${msg}</span><button aria-label="Dismiss" id="banner-x">×</button></div>`; $('#banner-x').onclick = () => { store.set(key, 'x'); el.hidden = true } }
+function blockedToday(view) { return electionPhase() === 'electionday' && ['match', 'compass', 'swipe', 'swipe-tally', 'polls', 'trends'].includes(view) }
+
+/* ----- political compass ----- */
+function compassState() { try { return JSON.parse(store.get('compass') || '{}') } catch { return {} } }
+function axisScore(items, answers, axis, minItems) { const ks = items.filter(i => i.axis === axis && typeof answers[i.id] === 'number').map(i => i.direction * answers[i.id]);
+  if (ks.length < minItems) return null; const m = ks.reduce((a, b) => a + b, 0) / ks.length; const sd = Math.sqrt(ks.reduce((a, b) => a + (b - m) ** 2, 0) / Math.max(1, ks.length - 1));
+  return { score: 5 * m, n: ks.length, half: Math.max(1, 1.96 * 5 * sd / Math.sqrt(ks.length)) } }
+function partyCompassPoints(C, CP, source) { const out = [];
+  for (const [slug, p] of Object.entries((CP.parties || {}))) {
+    if (source === 'published') { const cmp = p.comparison || {}; const e = cmp.gps2019_economic, so = cmp.gps2019_social; if (e && so && e.published != null && so.published != null) out.push({ slug, x: e.published, y: so.published, pop: (cmp.gps2019_populism || {}).published }) ; continue }
+    const ans = {}; for (const [id, c] of Object.entries((p.coded || {}).items || {})) if (c && typeof c.position === 'number') ans[id] = c.position;
+    const mins = (C.scoring && C.scoring.min_items) || { economic: 6, social: 8, populism: 4 };
+    const ex = axisScore(C.items, ans, 'economic', mins.economic), sy = axisScore(C.items, ans, 'social', mins.social), pp = axisScore(C.items, ans, 'populism', mins.populism);
+    out.push({ slug, x: ex && ex.score, y: sy && sy.score, pop: pp && pp.score, n: Object.keys(ans).length }) }
+  return out }
+function compassPlot(me, parties, { showMe = true } = {}) { const W = 560, H = 560, pad = 40; const sx = v => pad + (v + 10) / 20 * (W - 2 * pad), sy = v => H - pad - (v + 10) / 20 * (H - 2 * pad);
+  let g = `<rect x="${pad}" y="${pad}" width="${W - 2 * pad}" height="${H - 2 * pad}" fill="var(--sunk)" rx="14"/>`;
+  for (let v = -10; v <= 10; v += 5) g += `<line class="grid-l" x1="${sx(v)}" x2="${sx(v)}" y1="${pad}" y2="${H - pad}" stroke="var(--line)"/><line class="grid-l" y1="${sy(v)}" y2="${sy(v)}" x1="${pad}" x2="${W - pad}" stroke="var(--line)"/>`;
+  g += `<line x1="${sx(0)}" x2="${sx(0)}" y1="${pad}" y2="${H - pad}" stroke="var(--muted)"/><line y1="${sy(0)}" y2="${sy(0)}" x1="${pad}" x2="${W - pad}" stroke="var(--muted)"/>`;
+  g += `<text class="axl" x="${pad + 8}" y="${pad + 18}">AUTHORITARIAN · TRADITIONAL</text><text class="axl" x="${pad + 8}" y="${H - pad - 8}">LIBERTARIAN · PLURALIST</text><text class="axl" x="${pad + 8}" y="${H / 2 - 8}">LEFT</text><text class="axl" x="${W - pad - 8}" y="${H / 2 - 8}" text-anchor="end">RIGHT</text>`;
+  g += parties.filter(p => p.x != null && p.y != null).map(p => `<g class="party" data-p="${p.slug}"><circle cx="${sx(p.x)}" cy="${sy(p.y)}" r="9" fill="${pcolor(p.slug)}"><title>${esc(pname(p.slug))}: economic ${fmt(p.x)}, social ${fmt(p.y)}</title></circle><text x="${sx(p.x) + 12}" y="${sy(p.y) + 4}" style="fill:var(--ink);font-weight:600">${esc(pname(p.slug))}</text></g>`).join('');
+  if (showMe && me && me.x && me.y) g += `<rect x="${sx(me.x.score - me.x.half)}" y="${sy(me.y.score + me.y.half)}" width="${sx(me.x.score + me.x.half) - sx(me.x.score - me.x.half)}" height="${sy(me.y.score - me.y.half) - sy(me.y.score + me.y.half)}" fill="var(--sun)" opacity=".18" rx="8"/><circle class="me" cx="${sx(me.x.score)}" cy="${sy(me.y.score)}" r="11"><title>You</title></circle><text x="${sx(me.x.score)}" y="${sy(me.y.score) - 16}" text-anchor="middle" style="fill:var(--ink);font-weight:800">You</text>`;
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Political compass">${g}</svg>` }
+V.compass = () => {
+  const C = G().compass || {}; const CP = G().compass_parties || {}; const items = C.items || [];
+  if (!items.length) { $('#main').innerHTML = `<section class="view"><h2>Political compass</h2><p class="empty">The compass questions are still being prepared.</p></section>`; return }
+  const st = compassState(); st.answers = st.answers || {}; let i = Math.min(st.i || 0, items.length); let source = st.source || 'coded';
+  const intro = () => { $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:720px"><div class="stack"><div class="kicker">Political compass · ${items.length} questions · about 6 minutes</div><h2>Where do your values sit?</h2>
+      <p class="lede">General questions about society, the economy and authority — nothing about New Zealand parties or current policies. They come from established academic surveys (the World Values Survey, the Comparative Study of Electoral Systems, the NZ Election Study and two published psychology scales), scored on the two axes political scientists use: economic left–right and social libertarian–authoritarian, plus a populism measure.</p>
+      <p class="small muted">At the end you'll see your position with the 17 registered parties plotted on the same axes, placed two ways: from their 2026 policy documents and votes, and from published expert surveys. <button class="btn ghost sm" data-page="guide/compass-method.md">How it works and where the questions come from</button></p>
+      <div class="row"><button class="btn sun" id="cstart">${Object.keys(st.answers).length ? 'Continue' : 'Start'}</button>${Object.keys(st.answers).length ? `<button class="btn" id="cres">See my results</button><button class="btn ghost" id="creset">Start over</button>` : ''}</div></div></div></section>`;
+    $('#cstart').onclick = () => render(); const r = $('#cres'); if (r) r.onclick = results; const z = $('#creset'); if (z) z.onclick = () => { st.answers = {}; st.i = 0; i = 0; store.set('compass', JSON.stringify(st)); intro() } };
+  const render = () => { if (i >= items.length) return results(); const q = items[i]; const a = st.answers[q.id]; const labels = (q.scale && q.scale.labels) || ['Strongly disagree', 'Disagree', 'Neither', 'Agree', 'Strongly agree']; const vals = (q.scale && q.scale.values) || [-2, -1, 0, 1, 2];
+    $('#main').innerHTML = `<section class="view"><div class="quiz"><div class="row" style="justify-content:space-between"><div class="kicker">Question ${i + 1} of ${items.length}</div><button class="btn ghost sm" id="qres">Results so far</button></div><div class="progress"><span style="width:${i / items.length * 100}%"></span></div>
+      <div class="qcard"><div class="qtext">${esc(q.text)}</div>${q.scale && q.scale.type === 'feeling5' ? `<p class="muted small">How do you feel about this?</p>` : ''}<div class="scale">${vals.map((v, k) => `<button data-v="${v}" aria-pressed="${a === v}">${esc(labels[k])}</button>`).join('')}</div>
+        <div class="row" style="justify-content:space-between"><button class="btn sm" id="qback" ${i === 0 ? 'disabled' : ''}>Back</button><button class="btn sm" id="qskip">No opinion / skip</button></div></div>
+      <p class="tiny muted" style="text-align:center">Your answers stay on this device. Source: ${esc((q.source && q.source.instrument) || '')}</p></div></section>`;
+    $('.scale').onclick = e => { const b = e.target.closest('[data-v]'); if (!b) return; st.answers[q.id] = +b.dataset.v; i++; st.i = i; store.set('compass', JSON.stringify(st)); render() };
+    $('#qskip').onclick = () => { delete st.answers[q.id]; i++; st.i = i; store.set('compass', JSON.stringify(st)); render() };
+    $('#qback').onclick = () => { i = Math.max(0, i - 1); st.i = i; store.set('compass', JSON.stringify(st)); render() }; $('#qres').onclick = results };
+  const results = () => { const mins = (C.scoring && C.scoring.min_items) || { economic: 6, social: 8, populism: 4 };
+    const me = { x: axisScore(items, st.answers, 'economic', mins.economic), y: axisScore(items, st.answers, 'social', mins.social), pop: axisScore(items, st.answers, 'populism', mins.populism) };
+    const parties = partyCompassPoints(C, CP, source); const answered = Object.keys(st.answers).length;
+    const word = (v, lo, hi) => v == null ? '' : Math.abs(v) < 2 ? 'near the centre' : (v < 0 ? lo : hi) + (Math.abs(v) >= 6 ? ' (strongly)' : '');
+    $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:860px"><div class="stack"><div class="kicker">Your results · ${answered} of ${items.length} answered</div><h2>Where you sit</h2>
+      <p class="muted">${me.x ? `Economically you lean <b>${word(me.x.score, 'left', 'right')}</b> (${fmt(me.x.score)} on a −10 to +10 scale). ` : 'Answer at least 6 economic questions to place yourself on the economic axis. '}${me.y ? `Socially you lean <b>${word(me.y.score, 'libertarian/pluralist', 'authoritarian/traditional')}</b> (${fmt(me.y.score)}). ` : 'Answer at least 8 social questions for the social axis. '}${me.pop ? `On populism: <b>${word(me.pop.score, 'pluralist', 'populist')}</b> (${fmt(me.pop.score)}).` : ''}</p></div>
+      <div class="card compass stack"><div class="row" style="justify-content:space-between"><span class="seg"><button data-src="coded" aria-pressed="${source === 'coded'}">Parties from their 2026 policies & votes</button><button data-src="published" aria-pressed="${source === 'published'}">Parties from expert surveys (2019)</button></span></div>
+        ${compassPlot(me, parties)}<p class="tiny muted">The shaded box around "You" is the uncertainty from the number of questions answered. ${source === 'coded' ? 'Party points: each party "answered" the same questions from its manifesto, policy documents, votes and leaders’ statements, with evidence for every cell; parties with too few evidenced answers on an axis are not shown.' : 'Party points: Global Party Survey 2019 (12 experts rated the five parliamentary parties of 2019; smaller parties and Te Pāti Māori were not rated), rescaled to these axes.'}</p></div>
+      ${me.pop || parties.some(p => p.pop != null) ? `<div class="card stack"><h3>Populism <span class="tiny muted">(secondary axis; higher = more anti-establishment)</span></h3>${me.pop ? `<div class="row" style="flex-wrap:nowrap"><span style="width:110px" class="small"><b>You</b></span><div class="meter" style="flex:1"><span style="width:${(me.pop.score + 10) / 20 * 100}%;background:var(--sun)"></span></div><span class="num small" style="width:48px;text-align:right">${fmt(me.pop.score)}</span></div>` : ''}${parties.filter(p => p.pop != null).sort((a, b) => b.pop - a.pop).map(p => `<div class="row" style="flex-wrap:nowrap"><span style="width:110px" class="small">${esc(pname(p.slug))}</span><div class="meter" style="flex:1"><span style="width:${(p.pop + 10) / 20 * 100}%;background:${pcolor(p.slug)}"></span></div><span class="num small" style="width:48px;text-align:right">${fmt(p.pop)}</span></div>`).join('')}</div>` : ''}
+      <div class="card stack"><h3>Read this carefully</h3><ul class="small"><li>A two-axis map flattens politics: parties and people differ on things it doesn't measure (Te Tiriti, environment, competence, who they'd work with).</li><li>Party positions coded from documents tend to look more polarised than expert ratings; both views are shown so you can see the gap.</li><li>This is not a voting recommendation. For 2026 policies, use <button class="btn ghost sm" data-go="match">Find your match</button>.</li></ul><button class="btn sm" data-page="guide/compass-method.md" style="justify-self:start">Full method, item sources and licences</button></div>
+      <div class="row"><button class="btn primary" id="cagain">${i >= items.length ? 'Change my answers' : 'Keep answering'}</button><button class="btn" id="creset2">Start over</button></div></div></section>`;
+    $('#main').querySelectorAll('[data-src]').forEach(b => b.onclick = () => { source = b.dataset.src; st.source = source; store.set('compass', JSON.stringify(st)); results() });
+    $('#cagain').onclick = () => { i = i >= items.length ? 0 : i; render() }; $('#creset2').onclick = () => { st.answers = {}; st.i = 0; i = 0; store.set('compass', JSON.stringify(st)); intro() } };
+  if (!Object.keys(st.answers).length && i === 0) intro(); else if (i >= items.length) results(); else render();
+};
 
 /* ----- electorate map ----- */
 const MAP_YEARS = [2011, 2014, 2017, 2020, 2023, 2026];
@@ -1135,7 +1215,8 @@ async function loadPages() { if (!S.pages) S.pages = await getJSON('data/pages.j
 V.more = async () => { await loadPages(); const keys = Object.keys(S.pages);
   const group = (title, f) => { const ks = keys.filter(f); return ks.length ? `<div class="stack"><h3>${title}</h3><div class="grid">${ks.map(k => `<button class="starter" style="padding:14px" data-page="${esc(k)}"><h4>${esc(pageTitle(k))}</h4><span class="tiny muted">${esc(k)}</span></button>`).join('')}</div></div>` : '' };
   $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Go deeper</div><h2>Everything else</h2></div>
-    <div class="starters"><button class="starter" data-go="map"><h3>Electorate map</h3><p class="small muted">Every seat since 2011, coloured by winner, with a time slider.</p><span class="go">Open →</span></button>
+    <div class="starters"><button class="starter" data-go="compass"><h3>Political compass</h3><p class="small muted">Your values on standard axes, with the parties plotted.</p><span class="go">Open →</span></button>
+      <button class="starter" data-go="map"><h3>Electorate map</h3><p class="small muted">Every seat since 2011, coloured by winner, with a time slider.</p><span class="go">Open →</span></button>
       <button class="starter" data-go="parliament"><h3>Parliament</h3><p class="small muted">Seat maps, poll trends, coalition builder and seat calculator.</p><span class="go">Open →</span></button>
       <button class="starter" data-go="electorate"><h3>Your electorate</h3><p class="small muted">Candidates where you live, with photos and the 2023 result.</p><span class="go">Open →</span></button>
       <button class="starter" data-go="issues"><h3>The big issues</h3><p class="small muted">Where every party stands, issue by issue.</p><span class="go">Open →</span></button>
@@ -1172,6 +1253,8 @@ function route(r) {
   for (const pre of ['party', 'issue', 'electorate']) if (r.startsWith(pre + '-')) { view = pre; arg = r.slice(pre.length + 1) }
   if (['chamber', 'trends', 'coalition', 'calculator'].includes(r)) { view = 'parliament'; arg = r }
   if (!V[view]) { view = 'home'; r = 'home' }
+  renderBanner();
+  if (blockedToday(view) || blockedToday(r)) { document.querySelectorAll('#nav button, #bnav button').forEach(b => b.setAttribute('aria-current', 'false')); S.route = r; window.scrollTo(0, 0); $('#main').innerHTML = `<section class="view"><div class="card stack"><h2>Hidden until 7pm</h2><p>${ELECTION_DAY_BLOCK}</p><p class="small muted">Everything else — parties, policies, candidates, your electorate, how to vote — stays available.</p><div class="row"><button class="btn primary" data-go="electorate">Your electorate</button><button class="btn" data-go="parties">Parties</button></div></div></section>`; return }
   const navKey = { party: 'parties', issue: 'issues', 'swipe-tally': 'swipe', policies: 'more', people: 'more', promises: 'more' }[view] || view;
   document.querySelectorAll('#nav button, #bnav button').forEach(b => b.setAttribute('aria-current', b.dataset.go === navKey ? 'page' : 'false'));
   S.route = r; try { history.replaceState(null, '', '#' + r) } catch {}

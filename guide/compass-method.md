@@ -152,31 +152,30 @@ Direction: +1 = agreeing (or feeling positive) scores toward the right / TAN-aut
 | 9 | economic | `econ_secs_welfare_benefits` | Welfare benefits | -1 | T | Social and Economic Conservatism Scale (SECS): SECS item 2 (reverse scored) | CC0 1.0 | 12 |
 | 10 | economic | `econ_secs_business` | Business | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 12 | CC0 1.0 | 10 |
 | 11 | economic | `econ_secs_fiscal_responsibility` | Fiscal responsibility | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 11 | CC0 1.0 | 8 |
-| 12 | economic | `econ_secs_gun_ownership` | Gun ownership | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 8 | CC0 1.0 | 5 |
-| 13 | social | `soc_vsa_defy_authority` | It's great that many young people today are prepared to defy authority. | -1 | L | Very Short Authoritarianism (VSA) scale: VSA item 1 (Conservatism / Authoritarian Submission; reverse scored) | CC BY 4.0 | 0 |
-| 14 | social | `soc_vsa_discipline` | What our country needs most is discipline, with everyone following our leaders in unity. | +1 | L | Very Short Authoritarianism (VSA) scale: VSA item 2 (Conservatism / Authoritarian Submission) | CC BY 4.0 | 5 |
-| 15 | social | `soc_vsa_gods_laws` | God's laws about abortion, pornography, and marriage must be strictly followed before it is too late. | +1 | L | Very Short Authoritarianism (VSA) scale: VSA item 3 (Traditionalism / Conventionalism) | CC BY 4.0 | 11 |
-| 16 | social | `soc_vsa_premarital` | There is nothing wrong with premarital sexual intercourse. | -1 | L | Very Short Authoritarianism (VSA) scale: VSA item 4 (Traditionalism / Conventionalism; reverse scored) | CC BY 4.0 | 0 |
-| 17 | social | `soc_vsa_not_tougher` | Our society does NOT need tougher government and stricter laws. | -1 | L | Very Short Authoritarianism (VSA) scale: VSA item 5 (Authoritarianism / Authoritarian Aggression; reverse scored) | CC BY 4.0 | 15 |
-| 18 | social | `soc_vsa_crack_down` | The facts on crime and the recent public disorders show we have to crack down harder on troublemakers, if we are going preserve law and order. | +1 | L | Very Short Authoritarianism (VSA) scale: VSA item 6 (Authoritarianism / Authoritarian Aggression) | CC BY 4.0 | 12 |
-| 19 | social | `soc_secs_abortion` | Abortion | -1 | T | Social and Economic Conservatism Scale (SECS): SECS item 1 (reverse scored) | CC0 1.0 | 9 |
-| 20 | social | `soc_secs_religion` | Religion | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 7 | CC0 1.0 | 4 |
-| 21 | social | `soc_secs_traditional_marriage` | Traditional marriage | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 9 | CC0 1.0 | 9 |
-| 22 | social | `soc_secs_traditional_values` | Traditional values | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 10 | CC0 1.0 | 8 |
-| 23 | social | `soc_secs_family_unit` | The family unit | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 13 | CC0 1.0 | 4 |
-| 24 | social | `soc_secs_patriotism` | Patriotism | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 14 | CC0 1.0 | 5 |
-| 25 | social | `soc_secs_military` | Military and national security | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 6 | CC0 1.0 | 9 |
-| 26 | social | `soc_ess_gay_free` | Gay men and lesbians should be free to live their own life as they wish. | -1 | L | European Social Survey (ESS) core questionnaire: B34 (freehms) | ESS documentation is licensed under CC BY-SA 4.0 | 11 |
-| 27 | social | `soc_cses_immigrants_economy` | Immigrants are generally good for New Zealand's economy. | -1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q05c | CSES data and documentation are made freely available for research and educational use with citation | 10 |
-| 28 | social | `soc_cses_culture_harmed` | New Zealand's culture is generally harmed by immigrants. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q05d | CSES data and documentation are made freely available for research and educational use with citation | 8 |
-| 29 | populism | `pop_cses_compromise` | What people call compromise in politics is really just selling out on one's principles. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04a | CSES data and documentation are made freely available for research and educational use with citation | 4 |
-| 30 | populism | `pop_cses_dont_care` | Most politicians do not care about the people. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04b | CSES data and documentation are made freely available for research and educational use with citation | 8 |
-| 31 | populism | `pop_cses_trustworthy` | Most politicians are trustworthy. | -1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04c (reverse scored) | CSES data and documentation are made freely available for research and educational use with citation | 5 |
-| 32 | populism | `pop_cses_main_problem` | Politicians are the main problem in New Zealand. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04d | CSES data and documentation are made freely available for research and educational use with citation | 3 |
-| 33 | populism | `pop_cses_strong_leader` | Having a strong leader in government is good for New Zealand even if the leader bends the rules to get things done. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04e | CSES data and documentation are made freely available for research and educational use with citation | 7 |
-| 34 | populism | `pop_cses_people_decide` | The people, and not politicians, should make our most important policy decisions. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04f | CSES data and documentation are made freely available for research and educational use with citation | 11 |
-| 35 | populism | `pop_cses_rich_powerful` | Most politicians care only about the interests of the rich and powerful. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04g | CSES data and documentation are made freely available for research and educational use with citation | 7 |
-| 36 | populism | `pop_cses_majority` | The will of the majority should always prevail, even over the rights of minorities. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q05b | CSES data and documentation are made freely available for research and educational use with citation | 12 |
+| 12 | social | `soc_vsa_defy_authority` | It's great that many young people today are prepared to defy authority. | -1 | L | Very Short Authoritarianism (VSA) scale: VSA item 1 (Conservatism / Authoritarian Submission; reverse scored) | CC BY 4.0 | 0 |
+| 13 | social | `soc_vsa_discipline` | What our country needs most is discipline, with everyone following our leaders in unity. | +1 | L | Very Short Authoritarianism (VSA) scale: VSA item 2 (Conservatism / Authoritarian Submission) | CC BY 4.0 | 5 |
+| 14 | social | `soc_vsa_gods_laws` | God's laws about abortion, pornography, and marriage must be strictly followed before it is too late. | +1 | L | Very Short Authoritarianism (VSA) scale: VSA item 3 (Traditionalism / Conventionalism) | CC BY 4.0 | 11 |
+| 15 | social | `soc_vsa_premarital` | There is nothing wrong with premarital sexual intercourse. | -1 | L | Very Short Authoritarianism (VSA) scale: VSA item 4 (Traditionalism / Conventionalism; reverse scored) | CC BY 4.0 | 0 |
+| 16 | social | `soc_vsa_not_tougher` | Our society does NOT need tougher government and stricter laws. | -1 | L | Very Short Authoritarianism (VSA) scale: VSA item 5 (Authoritarianism / Authoritarian Aggression; reverse scored) | CC BY 4.0 | 15 |
+| 17 | social | `soc_vsa_crack_down` | The facts on crime and the recent public disorders show we have to crack down harder on troublemakers, if we are going preserve law and order. | +1 | L | Very Short Authoritarianism (VSA) scale: VSA item 6 (Authoritarianism / Authoritarian Aggression) | CC BY 4.0 | 12 |
+| 18 | social | `soc_secs_abortion` | Abortion | -1 | T | Social and Economic Conservatism Scale (SECS): SECS item 1 (reverse scored) | CC0 1.0 | 9 |
+| 19 | social | `soc_secs_religion` | Religion | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 7 | CC0 1.0 | 4 |
+| 20 | social | `soc_secs_traditional_marriage` | Traditional marriage | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 9 | CC0 1.0 | 9 |
+| 21 | social | `soc_secs_traditional_values` | Traditional values | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 10 | CC0 1.0 | 8 |
+| 22 | social | `soc_secs_family_unit` | The family unit | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 13 | CC0 1.0 | 4 |
+| 23 | social | `soc_secs_patriotism` | Patriotism | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 14 | CC0 1.0 | 5 |
+| 24 | social | `soc_secs_military` | Military and national security | +1 | T | Social and Economic Conservatism Scale (SECS): SECS item 6 | CC0 1.0 | 9 |
+| 25 | social | `soc_ess_gay_free` | Gay men and lesbians should be free to live their own life as they wish. | -1 | L | European Social Survey (ESS) core questionnaire: B34 (freehms) | ESS documentation is licensed under CC BY-SA 4.0 | 11 |
+| 26 | social | `soc_cses_immigrants_economy` | Immigrants are generally good for New Zealand's economy. | -1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q05c | CSES data and documentation are made freely available for research and educational use with citation | 10 |
+| 27 | social | `soc_cses_culture_harmed` | New Zealand's culture is generally harmed by immigrants. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q05d | CSES data and documentation are made freely available for research and educational use with citation | 8 |
+| 28 | populism | `pop_cses_compromise` | What people call compromise in politics is really just selling out on one's principles. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04a | CSES data and documentation are made freely available for research and educational use with citation | 4 |
+| 29 | populism | `pop_cses_dont_care` | Most politicians do not care about the people. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04b | CSES data and documentation are made freely available for research and educational use with citation | 8 |
+| 30 | populism | `pop_cses_trustworthy` | Most politicians are trustworthy. | -1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04c (reverse scored) | CSES data and documentation are made freely available for research and educational use with citation | 5 |
+| 31 | populism | `pop_cses_main_problem` | Politicians are the main problem in New Zealand. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04d | CSES data and documentation are made freely available for research and educational use with citation | 3 |
+| 32 | populism | `pop_cses_strong_leader` | Having a strong leader in government is good for New Zealand even if the leader bends the rules to get things done. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04e | CSES data and documentation are made freely available for research and educational use with citation | 7 |
+| 33 | populism | `pop_cses_people_decide` | The people, and not politicians, should make our most important policy decisions. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04f | CSES data and documentation are made freely available for research and educational use with citation | 11 |
+| 34 | populism | `pop_cses_rich_powerful` | Most politicians care only about the interests of the rich and powerful. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q04g | CSES data and documentation are made freely available for research and educational use with citation | 7 |
+| 35 | populism | `pop_cses_majority` | The will of the majority should always prevail, even over the rights of minorities. | +1 | L | Comparative Study of Electoral Systems (CSES) Module 5 (2016-2021) questionnaire: Q05b | CSES data and documentation are made freely available for research and educational use with citation | 12 |
 
 ## Appendix B. Party coding coverage and axis scores (our coding)
 
@@ -184,11 +183,11 @@ Scores use the same formula as the user test; "-" means fewer items than the min
 
 | Party | Items coded (of 36) | high / medium / low | Economic (n) | Social (n) | Populism (n) |
 |---|---|---|---|---|---|
-| National | 23 | 9 / 6 / 8 | +6.8 ± 2.0 (11) | +3.6 ± 3.3 (11) | - (1) |
-| Labour | 23 | 3 / 16 / 4 | -2.1 ± 3.1 (12) | -5.0 ± 1.6 (9) | - (2) |
-| Green | 26 | 18 / 4 / 4 | -7.5 ± 2.3 (12) | -9.5 ± 1.0 (10) | -2.5 ± 6.3 (4) |
-| ACT | 25 | 11 / 10 / 4 | +8.3 ± 1.4 (12) | -1.5 ± 4.4 (10) | - (3) |
-| NZ First | 31 | 8 / 15 / 8 | -0.8 ± 3.1 (12) | +5.8 ± 2.0 (12) | +5.0 ± 3.0 (7) |
+| National | 22 | 9 / 5 / 8 | +7.0 ± 2.2 (10) | +3.6 ± 3.3 (11) | - (1) |
+| Labour | 22 | 3 / 15 / 4 | -1.8 ± 3.3 (11) | -5.0 ± 1.6 (9) | - (2) |
+| Green | 25 | 17 / 4 / 4 | -7.3 ± 2.4 (11) | -9.5 ± 1.0 (10) | -2.5 ± 6.3 (4) |
+| ACT | 24 | 10 / 10 / 4 | +8.2 ± 1.5 (11) | -1.5 ± 4.4 (10) | - (3) |
+| NZ First | 30 | 8 / 15 / 7 | -0.5 ± 3.4 (11) | +5.8 ± 2.0 (12) | +5.0 ± 3.0 (7) |
 | Te Pāti Māori | 20 | 10 / 6 / 4 | -7.2 ± 2.4 (9) | - (7) | -1.2 ± 7.3 (4) |
 | Opportunity (TOP) | 21 | 2 / 13 / 6 | -1.7 ± 4.0 (9) | - (6) | +1.7 ± 4.1 (6) |
 | NZ Loyal | 18 | 1 / 9 / 8 | - (4) | - (7) | +8.6 ± 1.8 (7) |
@@ -208,11 +207,11 @@ GPS = Global Party Survey 2019 (12 experts, 2017 parties); V-Party = V-Party v2 
 
 | Party | Ours econ / social / populism | GPS econ / social / populism | V-Party 2017 econ / populism | ParlGov state-market / liberty-authority | NZES voters 2023 (2020) | CSES expert 2020 (2017) |
 |---|---|---|---|---|---|---|
-| National | +6.8 / +3.6 / - | +4.8 / +3.7 / +1.7 | +3.2 / -4.7 | +4.5 / +3.8 | *+4.0* (*+3.8*) | *+4.0* (*+4.0*) |
-| Labour | -2.1 / -5.0 / - | -1.4 / -3.3 / -2.0 | -2.6 / -1.6 | -2.0 / -3.0 | *-3.3* (*-2.4*) | *-2.0* (*-2.0*) |
-| Green | -7.5 / -9.5 / -2.5 | -4.4 / -6.2 / -2.0 | -6.2 / -2.5 | -5.5 / -6.4 | *-5.7* (*-5.3*) | *-6.0* (*-4.0*) |
-| ACT | +8.3 / -1.5 / - | +6.6 / -2.6 / +2.0 | - | +8.0 / -2.8 | *+5.3* (*+4.2*) | *+6.0* (*+8.0*) |
-| NZ First | -0.8 / +5.8 / +5.0 | +2.8 / +5.8 / +6.4 | -0.7 / +8.1 | +0.9 / +3.8 | *+2.6* (*+1.4*) | *+2.0* (*+0.0*) |
+| National | +7.0 / +3.6 / - | +4.8 / +3.7 / +1.7 | +3.2 / -4.7 | +4.5 / +3.8 | *+4.0* (*+3.8*) | *+4.0* (*+4.0*) |
+| Labour | -1.8 / -5.0 / - | -1.4 / -3.3 / -2.0 | -2.6 / -1.6 | -2.0 / -3.0 | *-3.3* (*-2.4*) | *-2.0* (*-2.0*) |
+| Green | -7.3 / -9.5 / -2.5 | -4.4 / -6.2 / -2.0 | -6.2 / -2.5 | -5.5 / -6.4 | *-5.7* (*-5.3*) | *-6.0* (*-4.0*) |
+| ACT | +8.2 / -1.5 / - | +6.6 / -2.6 / +2.0 | - | +8.0 / -2.8 | *+5.3* (*+4.2*) | *+6.0* (*+8.0*) |
+| NZ First | -0.5 / +5.8 / +5.0 | +2.8 / +5.8 / +6.4 | -0.7 / +8.1 | +0.9 / +3.8 | *+2.6* (*+1.4*) | *+2.0* (*+0.0*) |
 | Te Pāti Māori | -7.2 / - / -1.2 | - | - | - | *-5.3* (*-3.2*) | *-6.0* (*+0.0*) |
 | Opportunity (TOP) | -1.7 / - / +1.7 | - | - | - | *-1.4* (*-1.1*) | *-2.0* (*+0.0*) |
 | NZ Loyal | - / - / +8.6 | - | - | - | - | - |

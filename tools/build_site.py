@@ -150,7 +150,8 @@ for f in [ROOT / 'REPORT.md', ROOT / 'README.md'] + sorted((ROOT / 'elections').
     if f.exists(): pages[str(f.relative_to(ROOT))] = f.read_text()
 
 guide = {'parties': load(ROOT / 'data' / 'guide' / 'parties.json', []), 'issues': load(ROOT / 'data' / 'guide' / 'issues.json', []),
-         'quiz': load(ROOT / 'data' / 'guide' / 'quiz.json', {})}
+         'quiz': load(ROOT / 'data' / 'guide' / 'quiz.json', {}),
+         'compass': load(ROOT / 'data' / 'guide' / 'compass.json', {}), 'compass_parties': load(ROOT / 'data' / 'guide' / 'compass-parties.json', {})}
 if isinstance(guide['parties'], dict): guide['parties'] = guide['parties'].get('parties', [])
 if isinstance(guide['issues'], dict): guide['issues'] = guide['issues'].get('issues', [])
 electorates = load(ROOT / 'data' / 'electorates' / '2026.json', [])

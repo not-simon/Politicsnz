@@ -1,6 +1,6 @@
 # ACT New Zealand
 
-> Classical-liberal / right-libertarian party, founded in 1994. It has been a junior partner in the National-led coalition since November 2023.
+> Party founded in 1994; Wikipedia's infobox describes it as classical-liberal and right-libertarian, and places it on the right. It has been a junior partner in the National-led coalition since November 2023.
 > **Leader:** [David Seymour](./people/david-seymour/README.md) (since October 2014). He has been Deputy Prime Minister since 31 May 2025 and is also Minister for Regulation.
 > **Deputy leader:** [Nicole McKee](./people/nicole-mckee/README.md) (since 28 June 2026, replacing Brooke van Velden, who is retiring at the election). **President:** John Windsor.
 
@@ -64,7 +64,7 @@
 
 **Controversies (factual):**
 - In June 2024 Stuff reported allegations of bullying and a "culture of fear" during ACT's 2023 campaign. The party said an independent review had been carried out and its recommendations accepted.
-- The 2025 Equal Pay Amendment Act, led by Brooke van Velden as Workplace Relations Minister, passed under urgency. It raised the thresholds for pay-equity claims, and critics say it ended 33 active claims ([Wikipedia](https://en.wikipedia.org/wiki/Equal_Pay_Amendment_Act_2025)).
+- The 2025 Equal Pay Amendment Act, led by Brooke van Velden as Workplace Relations Minister, passed under urgency. It raised the thresholds for pay-equity claims and discontinued the 33 claims then in progress ([Wikipedia](https://en.wikipedia.org/wiki/Equal_Pay_Amendment_Act_2025)).
 - The redesigned school lunch programme was criticised for meal quality.
 - In June 2026 Porirua candidate Lyra Yan Zhang left the list after failing to declare past membership of the China Zhi Gong Party.
 
@@ -82,7 +82,7 @@ The campaign was launched at Shed 10, Auckland, on 28 June 2026 under the theme 
 - **Fiscal plan (11 October 2026):** gradually raise the NZ Super age by three months a year; pause Super Fund contributions; return non-welfare spending to 2017 per-capita levels; $653m in disability-benefit savings through independent medical certification; abolish demographic ministries; cut foreign aid ([1News](https://www.1news.co.nz/2026/10/11/act-sets-out-plan-to-raise-retirement-age-cut-debt-and-spending/)).
 - Freeze the adult minimum wage for three years and introduce a training wage; no tax on KiwiSaver earnings; repeal the Zero Carbon Act and net-zero target; abolish the Climate Change Commission.
 - Disestablish the Waitangi Tribunal once historical claims are settled; entrench "equal rights" in constitutional statutes; end "race-based hiring" in the public service.
-- Tougher immigration: deport serious non-citizen offenders, a five-year benefit stand-down for new residents, a $6-a-day surcharge on temporary work visas, and abolition of the permanent-resident visa category.
+- Immigration restrictions: deport serious non-citizen offenders, a five-year benefit stand-down for new residents, a $6-a-day surcharge on temporary work visas, and abolition of the permanent-resident visa category.
 - Add burglary to three strikes; a $2b National Cancer Centre (Henry); raise Pharmac's share of the health budget; let pharmacists treat more conditions; supermarket competition through a one-stop consenting body, while opposing a forced break-up.
 
 ## Coalition stance for 2026

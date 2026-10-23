@@ -203,12 +203,6 @@
       "source_url": "https://www.national.org.nz/news/20260809-honnicolawillis",
       "confidence": "high"
      },
-     "econ_secs_gun_ownership": {
-      "position": 1,
-      "evidence": "Increase public access to shooting ranges and hunter training; supported the 2019 semi-automatic ban.",
-      "source_url": "https://assets.national.org.nz/web/prod/National%27s%20Plan%20for%20Hunting%20and%20Fishing.pdf?v=1785105126",
-      "confidence": "medium"
-     },
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": null,
      "soc_vsa_gods_laws": {
@@ -294,22 +288,22 @@
       "confidence": "medium"
      }
     },
-    "n_coded": 23,
-    "n_items": 36,
+    "n_coded": 22,
+    "n_items": 35,
     "confidence_counts": {
-     "medium": 6,
+     "medium": 5,
      "high": 9,
      "low": 8
     },
     "axes": {
      "economic": {
-      "score": 6.82,
-      "n_items": 11,
-      "n_total": 12,
+      "score": 7.0,
+      "n_items": 10,
+      "n_total": 11,
       "enough": true,
-      "half_width": 1.99,
-      "keyed_mean": 1.364,
-      "keyed_sd": 0.674
+      "half_width": 2.17,
+      "keyed_mean": 1.4,
+      "keyed_sd": 0.699
      },
      "social": {
       "score": 3.64,
@@ -350,11 +344,11 @@
       "shown": true
      },
      "secs_economic": {
-      "score": 9.0,
-      "n_items": 5,
-      "n_total": 5,
+      "score": 10.0,
+      "n_items": 4,
+      "n_total": 4,
       "shown": true,
-      "secs_0_100": 72.5
+      "secs_0_100": 75.0
      },
      "vsa_authoritarianism": {
       "score": 6.67,
@@ -626,9 +620,9 @@
    },
    "comparison": {
     "gps2019_economic": {
-     "ours": 6.82,
+     "ours": 7.0,
      "published": 4.75,
-     "difference_ours_minus_published": 2.07
+     "difference_ours_minus_published": 2.25
     },
     "gps2019_social": {
      "ours": 3.64,
@@ -641,9 +635,9 @@
      "difference_ours_minus_published": -1.67
     },
     "parlgov_economic": {
-     "ours": 6.82,
+     "ours": 7.0,
      "published": 4.46,
-     "difference_ours_minus_published": 2.36
+     "difference_ours_minus_published": 2.54
     },
     "parlgov_social": {
      "ours": 3.64,
@@ -651,9 +645,9 @@
      "difference_ours_minus_published": -0.16
     },
     "vparty2017_economic": {
-     "ours": 6.82,
+     "ours": 7.0,
      "published": 3.23,
-     "difference_ours_minus_published": 3.59
+     "difference_ours_minus_published": 3.77
     },
     "vparty2017_populism": {
      "ours": 0.0,
@@ -661,7 +655,7 @@
      "difference_ours_minus_published": 4.72
     },
     "nzes2023_voters_general_left_right": {
-     "ours_economic": 6.82,
+     "ours_economic": 7.0,
      "published_general_left_right": 3.98,
      "note": "voters' general left-right placement, not an economic-only scale"
     }
@@ -736,12 +730,6 @@
       "evidence": "\"Labour will balance the books, return to surplus by 2029/30, reduce net debt to 20% of GDP\".",
       "source_url": "https://www.labour.org.nz/fiscal-strategy",
       "confidence": "high"
-     },
-     "econ_secs_gun_ownership": {
-      "position": -1,
-      "evidence": "Led the 2019 semi-automatic firearms ban and registry.",
-      "source_url": "https://en.wikipedia.org/wiki/Sixth_Labour_Government_of_New_Zealand",
-      "confidence": "medium"
      },
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": null,
@@ -823,22 +811,22 @@
       "confidence": "low"
      }
     },
-    "n_coded": 23,
-    "n_items": 36,
+    "n_coded": 22,
+    "n_items": 35,
     "confidence_counts": {
-     "medium": 16,
+     "medium": 15,
      "high": 3,
      "low": 4
     },
     "axes": {
      "economic": {
-      "score": -2.08,
-      "n_items": 12,
-      "n_total": 12,
+      "score": -1.82,
+      "n_items": 11,
+      "n_total": 11,
       "enough": true,
-      "half_width": 3.07,
-      "keyed_mean": -0.417,
-      "keyed_sd": 1.084
+      "half_width": 3.31,
+      "keyed_mean": -0.364,
+      "keyed_sd": 1.12
      },
      "social": {
       "score": -5.0,
@@ -879,11 +867,11 @@
       "shown": true
      },
      "secs_economic": {
-      "score": 0.0,
-      "n_items": 5,
-      "n_total": 5,
+      "score": 1.25,
+      "n_items": 4,
+      "n_total": 4,
       "shown": true,
-      "secs_0_100": 50.0
+      "secs_0_100": 53.1
      },
      "vsa_authoritarianism": {
       "score": -5.0,
@@ -1156,9 +1144,9 @@
    },
    "comparison": {
     "gps2019_economic": {
-     "ours": -2.08,
+     "ours": -1.82,
      "published": -1.43,
-     "difference_ours_minus_published": -0.65
+     "difference_ours_minus_published": -0.39
     },
     "gps2019_social": {
      "ours": -5.0,
@@ -1171,9 +1159,9 @@
      "difference_ours_minus_published": -3.0
     },
     "parlgov_economic": {
-     "ours": -2.08,
+     "ours": -1.82,
      "published": -2.02,
-     "difference_ours_minus_published": -0.06
+     "difference_ours_minus_published": 0.2
     },
     "parlgov_social": {
      "ours": -5.0,
@@ -1181,9 +1169,9 @@
      "difference_ours_minus_published": -2.0
     },
     "vparty2017_economic": {
-     "ours": -2.08,
+     "ours": -1.82,
      "published": -2.63,
-     "difference_ours_minus_published": 0.55
+     "difference_ours_minus_published": 0.81
     },
     "vparty2017_populism": {
      "ours": -5.0,
@@ -1191,7 +1179,7 @@
      "difference_ours_minus_published": -3.44
     },
     "nzes2023_voters_general_left_right": {
-     "ours_economic": -2.08,
+     "ours_economic": -1.82,
      "published_general_left_right": -3.3,
      "note": "voters' general left-right placement, not an economic-only scale"
     }
@@ -1266,12 +1254,6 @@
       "evidence": "\"Enabling greater government borrowing for investing in infrastructure; Avoiding arbitrary limits on government debt and expenditure\".",
       "source_url": "https://assets.nationbuilder.com/beachheroes/pages/64724/attachments/original/1778624605/Policy-Greens_Government_Economy_Policy_2024-2026.pdf",
       "confidence": "medium"
-     },
-     "econ_secs_gun_ownership": {
-      "position": -2,
-      "evidence": "\"continuing to oppose possession of military-style semi-automatic firearms\"; robust licensing and registration.",
-      "source_url": "https://www.greens.org.nz/manifesto_2026_justice_and_community_safety",
-      "confidence": "high"
      },
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": null,
@@ -1368,22 +1350,22 @@
       "confidence": "high"
      }
     },
-    "n_coded": 26,
-    "n_items": 36,
+    "n_coded": 25,
+    "n_items": 35,
     "confidence_counts": {
-     "high": 18,
+     "high": 17,
      "medium": 4,
      "low": 4
     },
     "axes": {
      "economic": {
-      "score": -7.5,
-      "n_items": 12,
-      "n_total": 12,
+      "score": -7.27,
+      "n_items": 11,
+      "n_total": 11,
       "enough": true,
-      "half_width": 2.26,
-      "keyed_mean": -1.5,
-      "keyed_sd": 0.798
+      "half_width": 2.42,
+      "keyed_mean": -1.455,
+      "keyed_sd": 0.82
      },
      "social": {
       "score": -9.5,
@@ -1424,11 +1406,11 @@
       "shown": true
      },
      "secs_economic": {
-      "score": -7.0,
-      "n_items": 5,
-      "n_total": 5,
+      "score": -6.25,
+      "n_items": 4,
+      "n_total": 4,
       "shown": true,
-      "secs_0_100": 32.5
+      "secs_0_100": 34.4
      },
      "vsa_authoritarianism": {
       "score": -10.0,
@@ -1699,9 +1681,9 @@
    },
    "comparison": {
     "gps2019_economic": {
-     "ours": -7.5,
+     "ours": -7.27,
      "published": -4.44,
-     "difference_ours_minus_published": -3.06
+     "difference_ours_minus_published": -2.83
     },
     "gps2019_social": {
      "ours": -9.5,
@@ -1714,9 +1696,9 @@
      "difference_ours_minus_published": -0.5
     },
     "parlgov_economic": {
-     "ours": -7.5,
+     "ours": -7.27,
      "published": -5.51,
-     "difference_ours_minus_published": -1.99
+     "difference_ours_minus_published": -1.76
     },
     "parlgov_social": {
      "ours": -9.5,
@@ -1724,9 +1706,9 @@
      "difference_ours_minus_published": -3.1
     },
     "vparty2017_economic": {
-     "ours": -7.5,
+     "ours": -7.27,
      "published": -6.2,
-     "difference_ours_minus_published": -1.3
+     "difference_ours_minus_published": -1.07
     },
     "vparty2017_populism": {
      "ours": -2.5,
@@ -1734,7 +1716,7 @@
      "difference_ours_minus_published": -0.04
     },
     "nzes2023_voters_general_left_right": {
-     "ours_economic": -7.5,
+     "ours_economic": -7.27,
      "published_general_left_right": -5.66,
      "note": "voters' general left-right placement, not an economic-only scale"
     }
@@ -1808,12 +1790,6 @@
       "position": 2,
       "evidence": "\"Government has to do its part by living within its means\"; surplus in 2028/29 and $12.4b less debt by 2031.",
       "source_url": "https://balancethebooks.nz/",
-      "confidence": "high"
-     },
-     "econ_secs_gun_ownership": {
-      "position": 2,
-      "evidence": "\"restored common sense to firearms laws\"; policies to back hunters and make disrupting lawful hunters an offence.",
-      "source_url": "https://www.act.org.nz/news/act-will-make-farming-fun-again",
       "confidence": "high"
      },
      "soc_vsa_defy_authority": null,
@@ -1906,22 +1882,22 @@
       "confidence": "medium"
      }
     },
-    "n_coded": 25,
-    "n_items": 36,
+    "n_coded": 24,
+    "n_items": 35,
     "confidence_counts": {
      "medium": 10,
-     "high": 11,
+     "high": 10,
      "low": 4
     },
     "axes": {
      "economic": {
-      "score": 8.33,
-      "n_items": 12,
-      "n_total": 12,
+      "score": 8.18,
+      "n_items": 11,
+      "n_total": 11,
       "enough": true,
-      "half_width": 1.39,
-      "keyed_mean": 1.667,
-      "keyed_sd": 0.492
+      "half_width": 1.49,
+      "keyed_mean": 1.636,
+      "keyed_sd": 0.505
      },
      "social": {
       "score": -1.5,
@@ -1963,8 +1939,8 @@
      },
      "secs_economic": {
       "score": 10.0,
-      "n_items": 5,
-      "n_total": 5,
+      "n_items": 4,
+      "n_total": 4,
       "shown": true,
       "secs_0_100": 75.0
      },
@@ -2142,9 +2118,9 @@
    },
    "comparison": {
     "gps2019_economic": {
-     "ours": 8.33,
+     "ours": 8.18,
      "published": 6.6,
-     "difference_ours_minus_published": 1.73
+     "difference_ours_minus_published": 1.58
     },
     "gps2019_social": {
      "ours": -1.5,
@@ -2157,9 +2133,9 @@
      "difference_ours_minus_published": -2.0
     },
     "parlgov_economic": {
-     "ours": 8.33,
+     "ours": 8.18,
      "published": 7.95,
-     "difference_ours_minus_published": 0.38
+     "difference_ours_minus_published": 0.23
     },
     "parlgov_social": {
      "ours": -1.5,
@@ -2167,7 +2143,7 @@
      "difference_ours_minus_published": 1.3
     },
     "nzes2023_voters_general_left_right": {
-     "ours_economic": 8.33,
+     "ours_economic": 8.18,
      "published_general_left_right": 5.34,
      "note": "voters' general left-right placement, not an economic-only scale"
     }
@@ -2242,12 +2218,6 @@
       "evidence": "Attacks the previous government's \"massive overborrowing\"; Labour \"will tax more, spend more, and borrow more\".",
       "source_url": "https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm",
       "confidence": "medium"
-     },
-     "econ_secs_gun_ownership": {
-      "position": -1,
-      "evidence": "Supported the 2019 firearms ban in government.",
-      "source_url": "https://en.wikipedia.org/wiki/New_Zealand_First",
-      "confidence": "low"
      },
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": null,
@@ -2369,22 +2339,22 @@
       "confidence": "high"
      }
     },
-    "n_coded": 31,
-    "n_items": 36,
+    "n_coded": 30,
+    "n_items": 35,
     "confidence_counts": {
-     "low": 8,
+     "low": 7,
      "high": 8,
      "medium": 15
     },
     "axes": {
      "economic": {
-      "score": -0.83,
-      "n_items": 12,
-      "n_total": 12,
+      "score": -0.45,
+      "n_items": 11,
+      "n_total": 11,
       "enough": true,
-      "half_width": 3.15,
-      "keyed_mean": -0.167,
-      "keyed_sd": 1.115
+      "half_width": 3.36,
+      "keyed_mean": -0.091,
+      "keyed_sd": 1.136
      },
      "social": {
       "score": 5.83,
@@ -2425,11 +2395,11 @@
       "shown": true
      },
      "secs_economic": {
-      "score": 2.0,
-      "n_items": 5,
-      "n_total": 5,
+      "score": 3.75,
+      "n_items": 4,
+      "n_total": 4,
       "shown": true,
-      "secs_0_100": 55.0
+      "secs_0_100": 59.4
      },
      "vsa_authoritarianism": {
       "score": 6.67,
@@ -2681,9 +2651,9 @@
    },
    "comparison": {
     "gps2019_economic": {
-     "ours": -0.83,
+     "ours": -0.45,
      "published": 2.8,
-     "difference_ours_minus_published": -3.63
+     "difference_ours_minus_published": -3.25
     },
     "gps2019_social": {
      "ours": 5.83,
@@ -2696,9 +2666,9 @@
      "difference_ours_minus_published": -1.44
     },
     "parlgov_economic": {
-     "ours": -0.83,
+     "ours": -0.45,
      "published": 0.88,
-     "difference_ours_minus_published": -1.71
+     "difference_ours_minus_published": -1.33
     },
     "parlgov_social": {
      "ours": 5.83,
@@ -2706,9 +2676,9 @@
      "difference_ours_minus_published": 2.03
     },
     "vparty2017_economic": {
-     "ours": -0.83,
+     "ours": -0.45,
      "published": -0.68,
-     "difference_ours_minus_published": -0.15
+     "difference_ours_minus_published": 0.23
     },
     "vparty2017_populism": {
      "ours": 5.0,
@@ -2716,7 +2686,7 @@
      "difference_ours_minus_published": -3.08
     },
     "nzes2023_voters_general_left_right": {
-     "ours_economic": -0.83,
+     "ours_economic": -0.45,
      "published_general_left_right": 2.62,
      "note": "voters' general left-right placement, not an economic-only scale"
     }
@@ -2782,7 +2752,6 @@
       "confidence": "medium"
      },
      "econ_secs_fiscal_responsibility": null,
-     "econ_secs_gun_ownership": null,
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": null,
      "soc_vsa_gods_laws": {
@@ -2864,7 +2833,7 @@
      }
     },
     "n_coded": 20,
-    "n_items": 36,
+    "n_items": 35,
     "confidence_counts": {
      "high": 10,
      "medium": 6,
@@ -2874,7 +2843,7 @@
      "economic": {
       "score": -7.22,
       "n_items": 9,
-      "n_total": 12,
+      "n_total": 11,
       "enough": true,
       "half_width": 2.37,
       "keyed_mean": -1.444,
@@ -2921,7 +2890,7 @@
      "secs_economic": {
       "score": -5.0,
       "n_items": 3,
-      "n_total": 5,
+      "n_total": 4,
       "shown": true,
       "secs_0_100": 37.5
      },
@@ -3121,7 +3090,6 @@
       "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf",
       "confidence": "medium"
      },
-     "econ_secs_gun_ownership": null,
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": {
       "position": -1,
@@ -3208,7 +3176,7 @@
      "pop_cses_majority": null
     },
     "n_coded": 21,
-    "n_items": 36,
+    "n_items": 35,
     "confidence_counts": {
      "medium": 13,
      "high": 2,
@@ -3218,7 +3186,7 @@
      "economic": {
       "score": -1.67,
       "n_items": 9,
-      "n_total": 12,
+      "n_total": 11,
       "enough": true,
       "half_width": 4.0,
       "keyed_mean": -0.333,
@@ -3265,7 +3233,7 @@
      "secs_economic": {
       "score": 0.0,
       "n_items": 4,
-      "n_total": 5,
+      "n_total": 4,
       "shown": true,
       "secs_0_100": 50.0
      },
@@ -3438,7 +3406,6 @@
      "econ_secs_welfare_benefits": null,
      "econ_secs_business": null,
      "econ_secs_fiscal_responsibility": null,
-     "econ_secs_gun_ownership": null,
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": {
       "position": -1,
@@ -3535,7 +3502,7 @@
      }
     },
     "n_coded": 18,
-    "n_items": 36,
+    "n_items": 35,
     "confidence_counts": {
      "medium": 9,
      "low": 8,
@@ -3545,7 +3512,7 @@
      "economic": {
       "score": -5.0,
       "n_items": 4,
-      "n_total": 12,
+      "n_total": 11,
       "enough": false,
       "half_width": 6.93,
       "keyed_mean": -1.0,
@@ -3591,7 +3558,7 @@
      "secs_economic": {
       "score": 5.0,
       "n_items": 1,
-      "n_total": 5,
+      "n_total": 4,
       "shown": false,
       "secs_0_100": 62.5
      },
@@ -3676,7 +3643,6 @@
      "econ_secs_welfare_benefits": null,
      "econ_secs_business": null,
      "econ_secs_fiscal_responsibility": null,
-     "econ_secs_gun_ownership": null,
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": {
       "position": -2,
@@ -3758,7 +3724,7 @@
      }
     },
     "n_coded": 16,
-    "n_items": 36,
+    "n_items": 35,
     "confidence_counts": {
      "low": 8,
      "high": 3,
@@ -3768,7 +3734,7 @@
      "economic": {
       "score": 0.0,
       "n_items": 5,
-      "n_total": 12,
+      "n_total": 11,
       "enough": false,
       "half_width": 6.2,
       "keyed_mean": 0.0,
@@ -3814,7 +3780,7 @@
      "secs_economic": {
       "score": 10.0,
       "n_items": 1,
-      "n_total": 5,
+      "n_total": 4,
       "shown": false,
       "secs_0_100": 75.0
      },
@@ -3872,7 +3838,6 @@
      "econ_secs_welfare_benefits": null,
      "econ_secs_business": null,
      "econ_secs_fiscal_responsibility": null,
-     "econ_secs_gun_ownership": null,
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": null,
      "soc_vsa_gods_laws": null,
@@ -3909,7 +3874,7 @@
      "pop_cses_majority": null
     },
     "n_coded": 2,
-    "n_items": 36,
+    "n_items": 35,
     "confidence_counts": {
      "low": 2
     },
@@ -3917,7 +3882,7 @@
      "economic": {
       "score": null,
       "n_items": 0,
-      "n_total": 12,
+      "n_total": 11,
       "enough": false,
       "half_width": null
      },
@@ -3957,7 +3922,7 @@
      "secs_economic": {
       "score": null,
       "n_items": 0,
-      "n_total": 5
+      "n_total": 4
      },
      "vsa_authoritarianism": {
       "score": 0.0,
@@ -4042,7 +4007,6 @@
      "econ_secs_welfare_benefits": null,
      "econ_secs_business": null,
      "econ_secs_fiscal_responsibility": null,
-     "econ_secs_gun_ownership": null,
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": null,
      "soc_vsa_gods_laws": null,
@@ -4074,7 +4038,7 @@
      "pop_cses_majority": null
     },
     "n_coded": 4,
-    "n_items": 36,
+    "n_items": 35,
     "confidence_counts": {
      "low": 4
     },
@@ -4082,7 +4046,7 @@
      "economic": {
       "score": -5.0,
       "n_items": 3,
-      "n_total": 12,
+      "n_total": 11,
       "enough": false,
       "half_width": 1.0,
       "keyed_mean": -1.0,
@@ -4127,7 +4091,7 @@
      "secs_economic": {
       "score": null,
       "n_items": 0,
-      "n_total": 5
+      "n_total": 4
      },
      "vsa_authoritarianism": {
       "score": null,
@@ -4235,7 +4199,6 @@
       "source_url": "https://allianceparty.nz/wp-content/uploads/2026/09/alliance-tax-policy-costings-2026.pdf",
       "confidence": "low"
      },
-     "econ_secs_gun_ownership": null,
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": {
       "position": -1,
@@ -4342,7 +4305,7 @@
      }
     },
     "n_coded": 27,
-    "n_items": 36,
+    "n_items": 35,
     "confidence_counts": {
      "high": 15,
      "low": 11,
@@ -4352,7 +4315,7 @@
      "economic": {
       "score": -7.73,
       "n_items": 11,
-      "n_total": 12,
+      "n_total": 11,
       "enough": true,
       "half_width": 2.42,
       "keyed_mean": -1.545,
@@ -4399,7 +4362,7 @@
      "secs_economic": {
       "score": -5.0,
       "n_items": 4,
-      "n_total": 5,
+      "n_total": 4,
       "shown": true,
       "secs_0_100": 37.5
      },
@@ -4531,7 +4494,6 @@
       "source_url": "https://conservatives.org.nz/policies/overview/",
       "confidence": "medium"
      },
-     "econ_secs_gun_ownership": null,
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": null,
      "soc_vsa_gods_laws": {
@@ -4628,7 +4590,7 @@
      }
     },
     "n_coded": 22,
-    "n_items": 36,
+    "n_items": 35,
     "confidence_counts": {
      "low": 4,
      "high": 7,
@@ -4638,7 +4600,7 @@
      "economic": {
       "score": 7.5,
       "n_items": 8,
-      "n_total": 12,
+      "n_total": 11,
       "enough": true,
       "half_width": 1.85,
       "keyed_mean": 1.5,
@@ -4684,7 +4646,7 @@
      "secs_economic": {
       "score": 8.75,
       "n_items": 4,
-      "n_total": 5,
+      "n_total": 4,
       "shown": true,
       "secs_0_100": 71.9
      },
@@ -4836,7 +4798,6 @@
      },
      "econ_secs_business": null,
      "econ_secs_fiscal_responsibility": null,
-     "econ_secs_gun_ownership": null,
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": null,
      "soc_vsa_gods_laws": {
@@ -4883,7 +4844,7 @@
      "pop_cses_majority": null
     },
     "n_coded": 8,
-    "n_items": 36,
+    "n_items": 35,
     "confidence_counts": {
      "medium": 5,
      "low": 3
@@ -4892,7 +4853,7 @@
      "economic": {
       "score": -6.25,
       "n_items": 4,
-      "n_total": 12,
+      "n_total": 11,
       "enough": false,
       "half_width": 2.45,
       "keyed_mean": -1.25,
@@ -4936,7 +4897,7 @@
      "secs_economic": {
       "score": -10.0,
       "n_items": 1,
-      "n_total": 5,
+      "n_total": 4,
       "shown": false,
       "secs_0_100": 25.0
      },
@@ -5009,7 +4970,6 @@
      },
      "econ_secs_business": null,
      "econ_secs_fiscal_responsibility": null,
-     "econ_secs_gun_ownership": null,
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": {
       "position": 1,
@@ -5126,7 +5086,7 @@
      }
     },
     "n_coded": 21,
-    "n_items": 36,
+    "n_items": 35,
     "confidence_counts": {
      "medium": 5,
      "low": 6,
@@ -5136,7 +5096,7 @@
      "economic": {
       "score": 5.0,
       "n_items": 3,
-      "n_total": 12,
+      "n_total": 11,
       "enough": false,
       "half_width": 1.0,
       "keyed_mean": 1.0,
@@ -5181,8 +5141,8 @@
      "secs_economic": {
       "score": 5.0,
       "n_items": 2,
-      "n_total": 5,
-      "shown": false,
+      "n_total": 4,
+      "shown": true,
       "secs_0_100": 62.5
      },
      "vsa_authoritarianism": {
@@ -5242,7 +5202,6 @@
      "econ_secs_welfare_benefits": null,
      "econ_secs_business": null,
      "econ_secs_fiscal_responsibility": null,
-     "econ_secs_gun_ownership": null,
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": null,
      "soc_vsa_gods_laws": null,
@@ -5274,7 +5233,7 @@
      "pop_cses_majority": null
     },
     "n_coded": 1,
-    "n_items": 36,
+    "n_items": 35,
     "confidence_counts": {
      "medium": 1
     },
@@ -5282,7 +5241,7 @@
      "economic": {
       "score": null,
       "n_items": 0,
-      "n_total": 12,
+      "n_total": 11,
       "enough": false,
       "half_width": null
      },
@@ -5322,7 +5281,7 @@
      "secs_economic": {
       "score": null,
       "n_items": 0,
-      "n_total": 5
+      "n_total": 4
      },
      "vsa_authoritarianism": {
       "score": null,
@@ -5411,7 +5370,6 @@
       "confidence": "low"
      },
      "econ_secs_fiscal_responsibility": null,
-     "econ_secs_gun_ownership": null,
      "soc_vsa_defy_authority": null,
      "soc_vsa_discipline": null,
      "soc_vsa_gods_laws": null,
@@ -5458,7 +5416,7 @@
      }
     },
     "n_coded": 11,
-    "n_items": 36,
+    "n_items": 35,
     "confidence_counts": {
      "medium": 8,
      "low": 3
@@ -5467,7 +5425,7 @@
      "economic": {
       "score": -5.71,
       "n_items": 7,
-      "n_total": 12,
+      "n_total": 11,
       "enough": true,
       "half_width": 3.96,
       "keyed_mean": -1.143,
@@ -5514,8 +5472,8 @@
      "secs_economic": {
       "score": -2.5,
       "n_items": 2,
-      "n_total": 5,
-      "shown": false,
+      "n_total": 4,
+      "shown": true,
       "secs_0_100": 43.8
      },
      "vsa_authoritarianism": {

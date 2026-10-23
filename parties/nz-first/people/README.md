@@ -17,6 +17,8 @@ Profiles of 62 people associated with New Zealand First: MPs who served in the 5
 
 ## 2026 candidates (41)
 
+George Ngatai was announced as the Papakura candidate in July 2026 and stepped down on 26 August 2026, before nominations closed, so he is not on the ballot and NZ First has no Papakura candidate (see [his profile](george-ngatai/)).
+
 | | Name | Status | 2026 electorate | 2026 list # | Roles / notes |
 |---|---|---|---|---|---|
 | <img src="alfred-ngaro/photo.jpg" width="48"> | [Alfred Ngaro](alfred-ngaro/README.md) | 2026 candidate | Glendene | 5 | Minister for Pacific Peoples (2016–2017); Minister for the Community and Voluntary Sector (2016–2017); Associate Minister for Children and for Social Housing (2016–2017) |

@@ -26,7 +26,7 @@ phases:
    2004 Act, support for UNDRIP, a constitutional review, tobacco control and a new Māori language law. Its vote fell
    steadily (2.39% → 1.43% → 1.32% → 1.18%) and it lost all its seats in 2017. Metro and others called this a backlash
    against propping up National.
-3. **A more radical revival (2020–26).** Under Ngarewa-Packer and Waititi the party returned in 2020 and won a record
+3. **Revival (2020–26).** Under Ngarewa-Packer and Waititi the party returned in 2020 and won a record
    6 seats in 2023. In opposition it has relied on protest, from the Treaty Principles Bill haka to nationwide hīkoi.
    It has also faced serious problems:
    - Parliament's harshest-ever privileges suspensions (2025);
@@ -265,7 +265,13 @@ policies:
 - Labour is "dead-set against" abolishing prisons;
 - Labour has ruled out the Te Tiriti Commission and Mātike Mai (September 2026).
 
-The Greens say the constitutional package fits their own Te Tiriti policies. ACT and NZ First call it divisive.
+Reactions to the constitutional package when it was announced (1 September 2026): Green co-leader Marama Davidson said it
+aligned with "what we've had out there for years"; ACT leader David Seymour called the proposal "fundamentally
+undemocratic" and said "you can't take these guys seriously"; NZ First deputy leader Shane Jones called it
+"backward-looking", an "unnecessary burden on the economy", and said "I fear that it will further politicise the Treaty";
+National's Paul Goldsmith said he disagreed with the reforms and that National upheld "the foundations of our democracy"
+([RNZ, 1 Sep 2026](https://www.rnz.co.nz/news/politics_election-2026/1207353/te-pati-maori-vows-major-constitutional-reform-by-making-te-tiriti-binding-for-crown);
+[Te Ao Māori News, 2 Sep 2026](https://www.teaonews.co.nz/2026/09/02/te-pati-maoris-te-tiriti-entrenchment-plan-how-would-it-work-and-could-it-happen/)).
 
 ## Sources
 

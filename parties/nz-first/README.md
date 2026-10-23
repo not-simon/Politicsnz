@@ -1,6 +1,6 @@
 # New Zealand First (NZ First)
 
-> Nationalist, populist, socially conservative and economically interventionist party, founded in 1993 by **Winston Peters**, who has led it ever since. It has been a junior partner in the National-led coalition since November 2023.
+> Party founded in 1993 by **Winston Peters**, who has led it ever since; Wikipedia's infobox lists its ideology as right-wing populism, nationalism and social conservatism, and its economic policy is interventionist (see the ideology row below). It has been a junior partner in the National-led coalition since November 2023.
 > **Leader:** Winston Peters: Minister of Foreign Affairs; Deputy Prime Minister 27 Nov 2023 – 31 May 2025; Minister for Rail. **Deputy leader:** [Shane Jones](./people/shane-jones/README.md) (elected by caucus 17 Sept 2025): Minister for Regional Development, Resources, Oceans and Fisheries.
 
 - 2026 policies: **[./policies/README.md](./policies/README.md)**
@@ -66,7 +66,7 @@
 - In March 2024 Peters compared co-governance to Nazi race ideology; Luxon called the remarks unhelpful.
 - In April 2024 Shane Jones attacked the Waitangi Tribunal's summons process.
 - In 2023, media reported conspiracy-linked views held by several NZ First candidates.
-- In August 2026 Peters told Green MP Lawrence Xu-Nan to "go back to your own country". Labour then formally ruled out working with NZ First, citing "overt racism" ([1News](https://www.1news.co.nz/2026/08/10/labour-rules-out-nz-first-hipkins-says-caucus-call-was-unanimous/)).
+- On 29 July 2026 Peters told Green MP Lawrence Xu-Nan in Parliament to "go back to your own country" (details and sources in [his profile](./people/winston-peters/README.md#controversies)). On 10 August Labour formally ruled out working with NZ First, citing "overt racism" ([1News](https://www.1news.co.nz/2026/08/10/labour-rules-out-nz-first-hipkins-says-caucus-call-was-unanimous/)).
 
 ## Money: donations
 
