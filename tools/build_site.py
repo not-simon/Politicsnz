@@ -155,7 +155,9 @@ for f in [ROOT / 'REPORT.md', ROOT / 'README.md'] + sorted((ROOT / 'elections').
 guide = {'parties': load(ROOT / 'data' / 'guide' / 'parties.json', []), 'issues': load(ROOT / 'data' / 'guide' / 'issues.json', []),
          'quiz': load(ROOT / 'data' / 'guide' / 'quiz.json', {}),
          'howtovote': load(ROOT / 'data' / 'guide' / 'howtovote.json', {}),
-         'quiz2': (lambda q: {k: v for k, v in q.items() if k != 'reconciliation_log'})(load(ROOT / 'data' / 'guide' / 'quiz2.json', {})),
+         'quiz2': (lambda q, ex: ({**{k: v for k, v in q.items() if k != 'reconciliation_log'},
+                                   'statements': [{**st, **({'explainer': ex[st['id']]} if st.get('id') in ex else {})} for st in q.get('statements', [])]}))(
+             load(ROOT / 'data' / 'guide' / 'quiz2.json', {}), (load(ROOT / 'data' / 'guide' / 'quiz2-explainers.json', {}) or {}).get('explainers', {})),
          'compass': load(ROOT / 'data' / 'guide' / 'compass.json', {}), 'compass_parties': load(ROOT / 'data' / 'guide' / 'compass-parties.json', {})}
 if isinstance(guide['parties'], dict): guide['parties'] = guide['parties'].get('parties', [])
 if isinstance(guide['issues'], dict): guide['issues'] = guide['issues'].get('issues', [])

@@ -1039,6 +1039,13 @@ main { view-transition-name: main }
   a { color: var(--print-ink) }
 }
 
+/* ---------- long-form markdown: never wider than the page ------------------ */
+.prose table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; font-size: var(--t-small) }
+.prose th, .prose td { text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top }
+.prose pre { max-width: 100%; overflow-x: auto; padding: var(--s-3); background: var(--sunk); border-radius: var(--r-s) }
+.prose img { max-width: 100% }
+.prose, .prose p, .prose li { overflow-wrap: anywhere }
+
 /* ===== Choose section: small additions to components.css (tokens only, both themes) ===== */
 .quizq { padding-top: var(--s-2) }
 .quizq .statement:focus { outline: none }
