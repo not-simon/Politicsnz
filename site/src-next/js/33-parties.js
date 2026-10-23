@@ -52,7 +52,7 @@ V.party = async (s, tab = 'glance') => {
     <header class="phead" style="--pc:${pc}">
       <div class="phead__id"><span class="phead__faces">${faces.length ? faces.slice(0, 2).map(f => faceHTML(f, s, 'face face--l')).join('') : `<span class="face--none face face--l" style="--pc:${pc}" aria-hidden="true">${esc(initials(s))}</span>`}</span>
         <div class="stack stack--s"><p class="eyebrow">${label ? (/^no /i.test(label) ? 'No position label' : esc(label)) + ` <span class="phead__src">(${pos.source ? ptExt(pos.source, "Wikipedia's label") : "Wikipedia's label"})</span>` : ''}${g.founded ? ` · Founded ${esc(g.founded)}` : ''}</p>
-          <h1>${esc(g.name || pp.name)}</h1>${leaders.length ? `<p class="small soft">Led by ${leaders.join(' and ')}</p>` : ''}</div></div>
+          <h1>${esc(g.name || pp.name)}</h1>${leaders.length ? `<p class="small soft">${(g.leaders || []).length > 1 && g.leaders.every(l => /^co-?leader/i.test(l.role || '')) ? 'Led by co-leaders ' + g.leaders.map(l => esc(l.name) + (String(l.role).replace(/^co-?leader,?\s*/i, '') ? ` (${esc(String(l.role).replace(/^co-?leader,?\s*/i, ''))})` : '')).join(' and ') : 'Led by ' + leaders.join(' and ')}</p>` : ''}</div></div>
       ${g.tagline ? `<p class="phead__tag">${esc(g.tagline)}</p>` : ''}${pos.description ? `<p class="small soft">${esc(pos.description)}</p>` : ''}
       <div class="row"><a class="btn btn--s" href="#/choose/compare/${esc(s)}">${ic('swap', 'i--xs')} Compare with another party</a>${g.website ? `<a class="btn btn--s btn--quiet" href="${esc(g.website)}" target="_blank" rel="noopener">Party website ${ic('ext', 'i--xs')}</a>` : ''}</div>
     </header>

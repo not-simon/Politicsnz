@@ -2658,7 +2658,8 @@ function compassPlot(me, parties, { showMe = true, size = 'both' } = {}) {
   if (size === 'narrow') return one(360, 12, '');
   return one(360, 12, 'chart--narrow') + one(560, 13, 'chart--wide') }
 const compassWord = (v, lo, hi) => v == null ? '' : Math.abs(v) < 2 ? 'near the centre' : (v < 0 ? lo : hi) + (Math.abs(v) >= 6 ? ', strongly' : '');
-const compassRange = a => `${fmt(Math.max(-10, a.score - a.half), 0)} to ${fmt(Math.min(10, a.score + a.half), 0)}`.replace(/-/g, '−');
+const sgnInt = v => { const r = Math.round(v); return (r < 0 ? '−' : r > 0 ? '+' : '') + Math.abs(r) };
+const compassRange = a => `${sgnInt(Math.max(-10, a.score - a.half))} to ${sgnInt(Math.min(10, a.score + a.half))}`;
 function compassSentence(me) { return `${me.x ? `Economically you lean <b>${compassWord(me.x.score, 'left', 'right')}</b> (somewhere from ${compassRange(me.x)} on a −10 to +10 scale). ` : 'Answer at least 6 economic questions to place you on the economic axis. '}${me.y ? `Socially you lean <b>${compassWord(me.y.score, 'libertarian / pluralist', 'authoritarian / traditional')}</b> (${compassRange(me.y)}). ` : 'Answer at least 8 social questions for the social axis. '}${me.pop ? `On populism: <b>${compassWord(me.pop.score, 'pluralist', 'populist')}</b> (${compassRange(me.pop)}).` : ''}` }
 // Small summary for Your results.
 function compassSummaryHTML(st) { const C = G().compass || {}; const CP = G().compass_parties || {}; const me = compassMe(C, st.answers || {}); const n = Object.keys(st.answers || {}).length;
@@ -2711,11 +2712,11 @@ V.compass = (arg) => {
     const me = compassMe(C, st.answers); const parties = partyCompassPoints(C, CP, source); const answered = Object.keys(st.answers).length;
     const shown = parties.filter(p => p.x != null && p.y != null); const missing = chooseAZ(chooseParties().filter(s => !shown.some(p => p.slug === s)));
     const pops = chooseAZ(parties.filter(p => p.pop != null).map(p => p.slug)).map(s => parties.find(p => p.slug === s));
-    const popRow = (name, v, pc, you) => `<div class="tally__row" style="--pc:${pc}">${you ? `<span class="small"><b>${name}</b></span>` : `<span class="ptag ptag--s"><span class="sw"></span>${name}</span>`}<div class="bar" role="img" aria-label="${name}: ${fmt(v, 0)} on −10 to +10"><i style="--w:${Math.round((v + 10) / 20 * 100)}%"></i></div><span class="tally__v">${fmt(v, 0).replace('-', '−')}</span></div>`;
+    const popRow = (name, v, pc, you) => `<div class="tally__row" style="--pc:${pc}">${you ? `<span class="small"><b>${name}</b></span>` : `<span class="ptag ptag--s"><span class="sw"></span>${name}</span>`}<div class="bar" role="img" aria-label="${name}: ${fmt(v, 0)} on −10 to +10"><i style="--w:${Math.round((v + 10) / 20 * 100)}%"></i></div><span class="tally__v">${sgnInt(v)}</span></div>`;
     $('#main').innerHTML = sectionFrame('choose', 'choose/compass', `
       ${chooseHead('compass', `Choose · Values compass · ${answered} of ${items.length} answered`, 'Where you sit', '')}
       <p class="lede">${compassSentence(me)}</p>
-      <div class="row"><span class="micro muted">Place the parties</span><div class="seg" role="group" aria-label="How parties are placed"><button type="button" data-src="coded" aria-pressed="${source === 'coded'}">From 2026 policies &amp; votes</button><button type="button" data-src="published" aria-pressed="${source === 'published'}">From expert surveys (2019)</button></div></div>
+      <div class="row"><span class="micro muted">Place the parties</span><div class="seg" style="min-width:0" role="group" aria-label="How parties are placed"><button type="button" data-src="coded" aria-pressed="${source === 'coded'}">2026 policies &amp; votes</button><button type="button" data-src="published" aria-pressed="${source === 'published'}">Experts, 2019</button></div></div>
       <div class="split split--7-5">
         <section class="stack">
           <div class="cplot-wrap">${compassPlot(me, parties)}</div>
@@ -2723,7 +2724,7 @@ V.compass = (arg) => {
           ${missing.length ? `<p class="micro muted">Not placed (${source === 'coded' ? 'too few evidenced answers' : 'not rated'}): ${missing.map(s => esc(pname(s))).join(', ')}.</p>` : ''}
           <details class="disclose"><summary>Positions as a list</summary><div class="disclose__body"><div class="table-wrap"><table class="table"><thead><tr><th>Party (A–Z)</th><th class="n">Economic</th><th class="n">Social</th></tr></thead><tbody>
             ${me.x && me.y ? `<tr><td><b>You</b></td><td class="n">${compassRange(me.x)}</td><td class="n">${compassRange(me.y)}</td></tr>` : ''}
-            ${chooseAZ(shown.map(p => p.slug)).map(s => { const p = shown.find(x => x.slug === s); return `<tr><td><span class="sw" style="--pc:${pcolor(s)}"></span> ${esc(pname(s))}</td><td class="n">${fmt(p.x, 0).replace('-', '−')}</td><td class="n">${fmt(p.y, 0).replace('-', '−')}</td></tr>` }).join('')}</tbody></table></div><p class="micro muted">−10 = left / libertarian, +10 = right / authoritarian.</p></div></details>
+            ${chooseAZ(shown.map(p => p.slug)).map(s => { const p = shown.find(x => x.slug === s); return `<tr><td><span class="sw" style="--pc:${pcolor(s)}"></span> ${esc(pname(s))}</td><td class="n">${sgnInt(p.x)}</td><td class="n">${sgnInt(p.y)}</td></tr>` }).join('')}</tbody></table></div><p class="micro muted">−10 = left / libertarian, +10 = right / authoritarian.</p></div></details>
         </section>
         <aside class="stack stack--l">
           ${me.pop || pops.length ? `<section class="stack"><div class="shead"><h2 class="h3">Populism</h2></div><p class="small soft">A secondary measure: higher means more anti-establishment. Indicative only. A–Z.</p><div class="tally ctally">${me.pop ? popRow('You', me.pop.score, 'var(--signal)', true) : ''}${pops.map(p => popRow(esc(pname(p.slug)), p.pop, pcolor(p.slug))).join('')}</div></section>` : ''}
