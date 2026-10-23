@@ -285,5 +285,61 @@
   "timestamp": "20260714221921",
   "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663951725.21/warc/CC-MAIN-20260714212152-20260715002152-00109.warc.gz",
   "mime": "text/html"
+ },
+ "statements": {
+  "file": "statements.html",
+  "url": "https://www.opportunity.org.nz/statements",
+  "timestamp": "20260913134604",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492700348.60/warc/CC-MAIN-20260913133434-20260913163434-00811.warc.gz",
+  "mime": "text/html"
+ },
+ "tax-reset": {
+  "file": "tax-reset.html",
+  "url": "https://www.opportunity.org.nz/tax-reset",
+  "timestamp": "20260914143417",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492701162.69/warc/CC-MAIN-20260914140128-20260914170128-00910.warc.gz",
+  "mime": "text/html"
+ },
+ "tax-reset-basic": {
+  "file": "tax-reset-basic.html",
+  "url": "https://www.opportunity.org.nz/tax-reset-basic",
+  "timestamp": "20261016014952",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170344220.79/warc/CC-MAIN-20261016012506-20261016042506-00543.warc.gz",
+  "mime": "text/html"
+ },
+ "the-state-of-the-nation": {
+  "file": "the-state-of-the-nation.html",
+  "url": "https://www.opportunity.org.nz/the-state-of-the-nation",
+  "timestamp": "20260810234217",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091385385.9/warc/CC-MAIN-20260810221116-20260811011116-00810.warc.gz",
+  "mime": "text/html"
+ },
+ "the_pray_and_delay_budget": {
+  "file": "the_pray_and_delay_budget.html",
+  "url": "https://www.opportunity.org.nz/the_pray_and_delay_budget",
+  "timestamp": "20261015052925",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170057013.95/warc/CC-MAIN-20261015035910-20261015065910-00929.warc.gz",
+  "mime": "text/html"
+ },
+ "time_for_an_honest_conversation_about_transport_funding": {
+  "file": "time_for_an_honest_conversation_about_transport_funding.html",
+  "url": "https://www.opportunity.org.nz/time_for_an_honest_conversation_about_transport_funding",
+  "timestamp": "20260914153617",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492701162.69/warc/CC-MAIN-20260914140128-20260914170128-00448.warc.gz",
+  "mime": "text/html"
+ },
+ "when_the_bill_comes_due": {
+  "file": "when_the_bill_comes_due.html",
+  "url": "https://www.opportunity.org.nz/when_the_bill_comes_due",
+  "timestamp": "20261016015543",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170344220.79/warc/CC-MAIN-20261016012506-20261016042506-00232.warc.gz",
+  "mime": "text/html"
+ },
+ "who_s_listening_to_our_disability_advocates": {
+  "file": "who_s_listening_to_our_disability_advocates.html",
+  "url": "https://www.opportunity.org.nz/who_s_listening_to_our_disability_advocates",
+  "timestamp": "20260714223230",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663951725.21/warc/CC-MAIN-20260714212152-20260715002152-00116.warc.gz",
+  "mime": "text/html"
  }
 }

@@ -54,7 +54,7 @@ S('q01', 'tax', 'New Zealand should introduce a capital gains tax (for example o
   'labour': P(2, 'Create a 28% capital gains tax on commercial and residential property, excluding the family home, from 1 July 2027.', None, 'POL54670'),
   'national': P(-2, '"No new taxes, including no capital gains tax."', NAT_ECON),
   'act': P(-2, 'KPMG 2026 tax tracker lists ACT: "No capital gains tax" (plus a crypto capital-gains exemption).', KPMG),
-  'green': P(1, 'Prefers wider wealth taxes; Green MP Teanau Tuiono called Labour\'s CGT "quite narrow" and said the Greens\' wealth tax would be more effective. Greens also propose a 33% capital acquisitions (inheritance/gift) tax.', 'https://pmn.co.nz/read/political/greens-criticise-labour-s-limited-capital-gains-tax-plan'),
+  'green': P(1, 'Prefers wider wealth taxes; Green MP Teanau Tuiono called Labour\'s CGT "quite narrow" and said the Greens\' wealth tax would be more effective. Greens also propose a 33% capital acquisitions (inheritance/gift) tax and reversing the brightline-test changes (KPMG tracker).', 'https://pmn.co.nz/read/political/greens-criticise-labour-s-limited-capital-gains-tax-plan'),
   'alliance': P(2, '"The Alliance will introduce a broad-based capital gains tax, covering investment property, shares..." (33%, excluding the family home).', ALLIANCE_TAX),
 })
 
