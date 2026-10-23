@@ -186,6 +186,8 @@ def main(argv):
                     item["note"] = e["extra"]["note"]
             if e["extra"].get("nzhistory"):
                 item["nzhistory_url"] = e["extra"]["nzhistory"]
+            if e["extra"].get("upcoming"):
+                item["upcoming"] = True
             lst.append(item)
         m, d = int(key[:2]), int(key[3:])
         out_days[key] = lst

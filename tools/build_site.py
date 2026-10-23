@@ -175,6 +175,8 @@ newsroom = {'updated': rel.get('updated'), 'window_days': rel.get('window_days')
             'follow_parties': fol.get('parties') or {},
             'follow_people': [{k: v for k, v in pp.items() if k != 'email' or (v and not PERSONAL_MAIL.search(v))} for pp in (fol.get('people') or [])]}
 (OUT / 'newsroom.json').write_text(dumps(newsroom))
+otd = load(ROOT / 'data' / 'onthisday.json', None)
+if otd: (OUT / 'onthisday.json').write_text(dumps(otd))
 (OUT / 'policies.json').write_text(dumps(policies))
 (OUT / 'people.json').write_text(dumps(people))
 (OUT / 'thumbs.json').write_text(json.dumps(thumbs))

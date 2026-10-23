@@ -21,4 +21,5 @@ shows headline, date and link only, and is switched off on polling day.
 | Fonts | Google Fonts (Bricolage Grotesque, Figtree, Literata, JetBrains Mono) | SIL Open Font License. |
 | Libraries | marked, DOMPurify (cdnjs) | MIT / Apache-2.0. |
 | Party and ministerial release headlines (`data/releases.json`) | Scoop InfoPages and RSS (party releases, © the party; Scoop Media as mirror), beehive.govt.nz RSS (Crown copyright) | Headline, date and link only; Scoop's terms are recorded in the file's `terms_note`. |
+| "On this day" calendar (`data/onthisday.json`, `guide/on-this-day.md`) | Dates checked against Wikipedia articles (CC BY-SA 4.0), cited per entry; text written for this project; each day links to NZHistory's own "Today in history" page (no NZHistory text reproduced; NZHistory text is CC BY-NC 3.0 NZ, Ministry for Culture and Heritage) | Our text CC BY-SA 4.0; facts attributed per entry. |
 | Follow directory (`data/guide/follow.json`) | Candidates' own entries on policy.nz; party website footers; Wikidata | Public account links only; personal webmail addresses removed. |
