@@ -37,14 +37,14 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 - Petrol was the biggest driver, up 19.1% on a year earlier in the CPI; electricity was up 9.3% and council rates 6.2%. ([interest.co.nz](https://www.interest.co.nz/economy/140742/annual-inflation-hits-37-september-quarter-petrol-continuing-lead-way-followed))
 - Food prices rose 2.4% in the year to September 2026. ([thestar.com.my](https://www.thestar.com.my/news/world/2026/10/16/new-zealand-petrol-diesel-prices-rise-in-september))
 - 61% of people named cost of living as a top issue facing the country, more than any other issue (Ipsos, May 2026). It was still number one in September. ([rnz.co.nz](https://www.rnz.co.nz/news/political/596305/fuel-prices-become-fourth-biggest-issue-for-new-zealanders-poll-finds), [rnz.co.nz](https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey))
-- Two companies, Foodstuffs and Woolworths, have about 82% of the supermarket market, which the Commerce Commission calls a duopoly. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2026_New_Zealand_general_election), [thespinoff.co.nz](https://thespinoff.co.nz/vertical-videos/now-you-know/nzs-supermarket-duopoly-explained))
+- Two companies, Foodstuffs and Woolworths, have about 82% of the grocery market (2025 figure); the Commerce Commission's 2022 market study described the sector as a duopoly in which competition was 'not working well for consumers'. ([1news.co.nz](https://www.1news.co.nz/2026/09/22/each-party-has-a-supermarket-fix-what-if-we-combined-the-best-ideas/), [1news.co.nz](https://www.1news.co.nz/2022/03/08/supermarket-sector-competition-not-working-well-for-consumers/), [thespinoff.co.nz](https://thespinoff.co.nz/vertical-videos/now-you-know/nzs-supermarket-duopoly-explained))
 
 **Where the parties stand:**
 
 | Party | What they propose |
 |---|---|
 | [National](parties.md#national) | Split Foodstuffs into two competing companies, hold fuel tax and road user charges until 2028, and keep council rate rises between 2% and 4% a year. <sub>`POL55014` `POL54835` `POL54817`</sub> |
-| [Labour](parties.md#labour) | Make price gouging illegal, force the big supermarkets to separate wholesale from retail, cap public transport at $20 a week in the big cities, freeze fuel tax, and crack down on surprise fees and hard-to-cancel subscriptions. <sub>`POL55043` `POL55092` `POL54685` `POL54768` `POL55180`</sub> |
+| [Labour](parties.md#labour) | Make price gouging illegal, require the big supermarkets to separate wholesale from retail, cap public transport at $20 a week in the big cities, freeze fuel tax, and regulate hidden fees and hard-to-cancel subscriptions. <sub>`POL55043` `POL55092` `POL54685` `POL54768` `POL55180`</sub> |
 | [Greens](parties.md#green) | Create a government-owned supermarket chain ('KiwiMart') from 120 stores the big two must sell, $2 public transport fares, and make the first $10,000 of income tax-free. <sub>`POL55032` `POL55195` `POL54735`</sub> |
 | [ACT](parties.md#act) | Opposes breaking up the supermarkets; instead wants a one-stop consenting body so new competitors can open, and to accept overseas food labels by default. <sub>`POL55160` `ACT-A16`</sub> |
 | [NZ First](parties.md#nz-first) | Split Foodstuffs into two cooperatives, give the Commerce Commission and Grocery Commissioner more power, and raise the Working for Families in-work tax credit by $70 a week. <sub>`POL54658` `POL54659` `POL55257`</sub> |
@@ -61,7 +61,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 <a id="health"></a>
 ## ❤️ Health
 
-**Why it matters:** Health is voters' second-biggest worry. Emergency departments are often full and many people struggle to see a GP quickly or cheaply. Parties offer different mixes of free visits, more staff, more medicines funding and new ways of delivering care.
+**Why it matters:** Health is voters' second-biggest worry. About a quarter of emergency department patients wait more than six hours, and hospital beds per person have fallen over the past decade. Parties offer different mixes of free visits, more staff, more medicines funding and new ways of delivering care.
 
 **Key facts:**
 
@@ -99,8 +99,8 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 **Key facts:**
 
 - Unemployment was 5.6% in the June 2026 quarter (171,000 people), the highest since 2015. ([1news.co.nz](https://www.1news.co.nz/2026/08/05/nzs-unemployment-rate-hits-11-year-high-in-june-quarter/), [stats.govt.nz](https://www.stats.govt.nz/information-releases/labour-market-statistics-june-2026-quarter/))
-- The economy grew 0.2% in the June 2026 quarter and 1.7% over the year; GDP per person rose 0.1%. ([1news.co.nz](https://www.1news.co.nz/2026/09/17/gdp-economy-grows-02-in-june-quarter/))
-- Treasury's pre-election update (PREFU) forecasts the government's books returning to surplus in 2028/29. ([rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1733687/labour-s-fiscal-plan-national-s-claims-and-how-labour-is-defending-it))
+- The economy grew 0.2% in the June 2026 quarter and 1.7% over the year to June; GDP per person rose 0.1% over the year. ([1news.co.nz](https://www.1news.co.nz/2026/09/17/gdp-economy-grows-02-in-june-quarter/))
+- Treasury's pre-election update (PREFU, September 2026) forecasts the government's books returning to surplus in 2028/29, with net debt peaking at 43.9% of GDP in 2028. ([rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1647005/treasury-gives-willis-pre-election-boost-as-surplus-forecast-improves), [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1733687/labour-s-fiscal-plan-national-s-claims-and-how-labour-is-defending-it))
 - Unemployment rose from fifth to fourth place in voters' list of top concerns (Ipsos, Sept 2026). ([rnz.co.nz](https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey))
 
 **Where the parties stand:**
@@ -160,7 +160,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 
 **Key facts:**
 
-- New Zealand's top income tax rate is 39% on income over $180,000; there is no general capital gains tax, wealth tax or inheritance tax. ([ird.govt.nz](https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals))
+- New Zealand's top income tax rate is 39% on income over $180,000. There is no general capital gains tax (the 'bright-line' rule taxes gains on residential investment property sold within two years), and no wealth tax or inheritance tax. ([ird.govt.nz](https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals), [ird.govt.nz](https://www.ird.govt.nz/property/buying-and-selling/when-you-need-to-pay/the-brightline-property-rule))
 - 45% of people say they pay about the right amount of tax and 44% want to pay less (Ipsos, Sept 2026). ([rnz.co.nz](https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey))
 - In the same survey, 64% supported a 2.5% wealth tax on assets above $10 million (excluding family homes), 45% supported a capital gains tax on property (excluding the family home), and less than a quarter supported a land tax. ([rnz.co.nz](https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey))
 
@@ -187,7 +187,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 <a id="energy-and-fuel"></a>
 ## ⚡ Power bills and fuel prices
 
-**Why it matters:** A conflict in the Middle East pushed fuel prices up sharply this year, and power bills keep climbing. Fuel prices jumped into voters' top four worries in May. Parties disagree on breaking up the big power companies, public ownership, and how much to rely on solar, oil and gas.
+**Why it matters:** A conflict in the Middle East pushed fuel prices up sharply this year, and electricity prices rose 9.3% in a year. Fuel prices jumped into voters' top four worries in May. Parties disagree on breaking up the big power companies, public ownership, and how much to rely on solar, oil and gas.
 
 **Key facts:**
 
@@ -217,7 +217,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 <a id="welfare-and-poverty"></a>
 ## 🤝 Welfare and poverty
 
-**Why it matters:** More children are living without basics like enough food or warm clothes than at any time since 2015. More people are on benefits as unemployment rises. Parties split between tougher rules for beneficiaries and more generous support.
+**Why it matters:** More children are living without basics like enough food or warm clothes than at any time since 2015. More people are on benefits as unemployment rises. Parties split between stricter obligations for people on benefits and higher or more universal payments.
 
 **Key facts:**
 
@@ -246,7 +246,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 <a id="law-and-order"></a>
 ## 🛡️ Law and order
 
-**Why it matters:** Crime and safety matter to many voters, and the current government has passed tougher sentencing and anti-gang laws. The prison population is growing. Parties range from longer sentences and more police to abolishing prisons and focusing on rehabilitation.
+**Why it matters:** Crime and safety matter to many voters, and the current government has passed laws that lengthen sentences and restrict gangs. The prison population is growing. Parties range from longer sentences and more police to abolishing prisons and focusing on rehabilitation.
 
 **Key facts:**
 
@@ -282,7 +282,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 **Key facts:**
 
 - Agriculture makes up about half of New Zealand's gross greenhouse gas emissions. ([mpi.govt.nz](https://mpi.govt.nz/science/open-data-and-forecasting/greenhouse-gas-reporting))
-- In October 2025 the government set a new 2050 target to cut biogenic methane (mostly from farm animals) by 14-24% below 2017 levels, replacing the previous 24-47% range, and ruled out a tax on farm methane. ([national.org.nz](https://www.national.org.nz/news/20251012-hon-todd-mcclay-government-sets-methane-targets-for-2050))
+- In October 2025 the government set a new 2050 target to cut biogenic methane (mostly from farm animals) by 14-24% below 2017 levels, replacing the previous 24-47% range (enacted December 2025), and ruled out a tax on farm methane. ([national.org.nz](https://www.national.org.nz/news/20251012-hon-todd-mcclay-government-sets-methane-targets-for-2050), [legislation.govt.nz](https://legislation.govt.nz/act/public/2025/80/en/latest/))
 - Voters rated the Greens as most capable on climate change and the environment (Ipsos, Sept 2026). ([rnz.co.nz](https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey))
 
 **Where the parties stand:**
@@ -315,7 +315,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 **Key facts:**
 
 - 64.3% of students attended school regularly in Term 2 2026, up from 58.4% a year earlier; the government's target is 80%. ([dpmc.govt.nz](https://www.dpmc.govt.nz/sites/default/files/2026-09/gt-factsheet-target-6-jun26.pdf))
-- Voters rated Labour as most capable on education (Ipsos, Sept 2026). ([en.wikipedia.org](https://en.wikipedia.org/wiki/2026_New_Zealand_general_election))
+- Voters rated Labour as most capable on education (Ipsos, Sept 2026). ([rnz.co.nz](https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey), [en.wikipedia.org](https://en.wikipedia.org/wiki/2026_New_Zealand_general_election))
 
 **Where the parties stand:**
 
@@ -337,7 +337,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 <a id="te-tiriti-and-maori-issues"></a>
 ## 🪶 Te Tiriti o Waitangi and Māori issues
 
-**Why it matters:** How the Treaty of Waitangi is applied in law has been one of the most heated debates of this term. Some parties want to limit Treaty-based and race-based policies; others want Te Tiriti given more legal weight. The future of the Māori seats and the Waitangi Tribunal is also on the ballot.
+**Why it matters:** How the Treaty of Waitangi is applied in law has been one of the most debated questions of this term. Some parties want to limit Treaty clauses in law and programmes targeted by ethnicity (which they call 'race-based'); others want Te Tiriti given more legal weight. The future of the Māori seats and the Waitangi Tribunal is also on the ballot.
 
 **Key facts:**
 
@@ -349,7 +349,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 
 | Party | What they propose |
 |---|---|
-| [National](parties.md#national) | Voted against the Treaty Principles Bill; in the Herald leaders' debate Luxon suggested he could support a referendum on the Māori seats. <sub>[nzherald.co.nz](https://www.nzherald.co.nz/nz/politics/election-2026-labours-chris-hipkins-rules-out-greens-te-pati-maori-from-major-ministerial-roles-in-herald-debate/3GBPYMI6TJBKHLVNOSPGY6WTKA/), [1news.co.nz](https://www.1news.co.nz/2025/04/10/treaty-principles-bill-voted-down-amid-fiery-mp-debate)</sub> |
+| [National](parties.md#national) | Voted against the Treaty Principles Bill; in the Herald leaders' debate (14 Oct 2026) Luxon said he was willing to consider backing a referendum on the Māori seats. <sub>[nzherald.co.nz](https://www.nzherald.co.nz/nz/politics/election-2026-labours-chris-hipkins-rules-out-greens-te-pati-maori-from-major-ministerial-roles-in-herald-debate/3GBPYMI6TJBKHLVNOSPGY6WTKA/), [1news.co.nz](https://www.1news.co.nz/2025/04/10/treaty-principles-bill-voted-down-amid-fiery-mp-debate)</sub> |
 | [Labour](parties.md#labour) | Restore Te Tiriti obligations on school boards, restore iwi participation agreements in resource management, and direct 5% of government contracts to Māori businesses. <sub>`LAB-A08` `POL55147` `POL55306`</sub> |
 | [Greens](parties.md#green) | Entrench the Māori seats, uphold Te Tiriti across government, $200 million for te reo Māori, and a trust to support marae. <sub>`POL54982` `POL55039` `POL54979` `POL54767`</sub> |
 | [ACT](parties.md#act) | Scale back Treaty principles in law, remove ethnicity-based criteria from public services, and abolish the Waitangi Tribunal once historical claims are resolved. <sub>`POL54838` `POL54839` `POL54960`</sub> |
@@ -358,7 +358,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 | [Te Tai Tokerau Party](parties.md#te-tai-tokerau-party) | Constitutionally protect He Whakaputanga and Te Tiriti, repeal the Regulatory Standards Act, and make Waitangi Tribunal findings binding on the Crown. <sub>`TTP-13` `TTP-14` [tetaitokerauparty.org.nz](https://tetaitokerauparty.org.nz/our-policies/)</sub> |
 | [Opportunity (TOP)](parties.md#opportunity) | Teach Te Tiriti and Aotearoa history in schools, restore pre-2025 customary marine title settings, and not support a Treaty Principles bill. <sub>`POL54828` `OPP-A16` [1news.co.nz](https://www.1news.co.nz/2026/10/21/opportunity-would-have-walked-away-from-current-coalition/)</sub> |
 | [Conservatives](parties.md#conservative) | 'One people under one law': opposes policies that treat people differently by race or ancestry. <sub>`CON-19` [conservatives.org.nz](https://conservatives.org.nz/policies/overview/)</sub> |
-| [NZ Loyal](parties.md#nz-loyal) | Scrap all race-based policies. <sub>`NZL-06` [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election)</sub> |
+| [NZ Loyal](parties.md#nz-loyal) | Scrap what it calls 'race-based policies'. <sub>`NZL-06` [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election)</sub> |
 | [Vision NZ](parties.md#vision-nz) | End race-based policies and policies it links to the He Puapua report. <sub>`VIS-28` [vision.org.nz](https://www.vision.org.nz/visionpolicies)</sub> |
 
 <sub>No 2026 position found for: Alliance, Animal Justice, Free Palestine, Legalise Cannabis (ALCP), Outdoors & Freedom ('freedom'), Women's Rights.</sub>
@@ -368,7 +368,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 <a id="infrastructure-and-transport"></a>
 ## 🛣️ Infrastructure and transport
 
-**Why it matters:** Roads, rail, water pipes, hospitals and schools all need fixing or building, and the bill is huge. Much of what is planned has no money set aside yet. Parties differ on roads versus public transport and on how to pay.
+**Why it matters:** Roads, rail, water pipes, hospitals and schools all need fixing or building; planned projects are valued at about $275 billion. Much of what is planned has no money set aside yet. Parties differ on roads versus public transport and on how to pay.
 
 **Key facts:**
 
@@ -396,11 +396,11 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 <a id="immigration"></a>
 ## ✈️ Immigration
 
-**Why it matters:** Many New Zealanders are leaving for Australia while more migrants arrive. Some parties want much tighter rules on visas, benefits and citizenship. Others want easier paths to residency and family visas.
+**Why it matters:** More New Zealand citizens are leaving than returning, while migrant arrivals have risen. Some parties want tighter rules on visas, benefits and citizenship. Others want easier paths to residency and family visas.
 
 **Key facts:**
 
-- Net migration added 20,500 people in the year to August 2026, about double the year before but below the long-run average. ([newswire.co.nz](https://newswire.co.nz/2026/10/new-zealand-net-migration-gain-doubles-20500-august-2026-citizens-leaving/))
+- Net migration added 20,500 people in the year to August 2026, about double the year before but below the long-run average. ([newswire.co.nz](https://newswire.co.nz/2026/10/new-zealand-net-migration-gain-doubles-20500-august-2026-citizens-leaving/), [interest.co.nz](https://www.interest.co.nz/economy/140671/net-population-gain-migration-more-doubled-august-year-number-returning-nz-citizens))
 - New Zealand citizens had a net loss of 38,200 people (64,800 left long-term, 26,600 came home), while non-citizens had a net gain of 58,800. ([newswire.co.nz](https://newswire.co.nz/2026/10/new-zealand-net-migration-gain-doubles-20500-august-2026-citizens-leaving/))
 - 59% of people in a Taxpayers' Union-Curia poll favoured limiting general-election voting to citizens; 32% were opposed (August 2026). ([en.wikipedia.org](https://en.wikipedia.org/wiki/2026_New_Zealand_general_election))
 
@@ -414,7 +414,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 | [ACT](parties.md#act) | Deport serious non-citizen offenders, a $6-a-day infrastructure surcharge on temporary work visas, stronger English requirements, a physical-presence test for residents, and a Rural Workforce Visa. <sub>`POL54880` `POL54879` `POL54883` `POL54821` `ACT-A06`</sub> |
 | [NZ First](parties.md#nz-first) | Replace the Accredited Employer Work Visa with a shortage-led visa, remove automatic work rights for students, a 10-year benefit stand-down for migrants, a two-year amnesty for overstayers who leave, and higher citizenship fees. <sub>`POL55262` `POL54964` `POL54965` `POL54963` `POL54967`</sub> |
 | [Conservatives](parties.md#conservative) | Shift visas away from unskilled workers towards skilled professionals and entrepreneurs using a stable points system. <sub>`CON-05` [conservatives.org.nz](https://conservatives.org.nz/policies/immigration/)</sub> |
-| [Vision NZ](parties.md#vision-nz) | Pause mass immigration and extend the wait for citizenship to 10 years. <sub>`VIS-24` `VIS-26` [vision.org.nz](https://www.vision.org.nz/visionpolicies)</sub> |
+| [Vision NZ](parties.md#vision-nz) | Pause what it calls 'mass immigration' and extend the wait for citizenship to 10 years. <sub>`VIS-24` `VIS-26` [vision.org.nz](https://www.vision.org.nz/visionpolicies)</sub> |
 
 <sub>No 2026 position found for: Te Pāti Māori, Te Tai Tokerau Party, Opportunity (TOP), Alliance, Animal Justice, Free Palestine, Legalise Cannabis (ALCP), NZ Loyal, Outdoors & Freedom ('freedom'), Women's Rights.</sub>
 
@@ -455,7 +455,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 
 **Key facts:**
 
-- Food and fibre exports were forecast at a record $64.3 billion for the year to June 2026, up 6% (MPI). ([ruralnewsgroup.co.nz](https://www.ruralnewsgroup.co.nz/rural-news/rural-general-news/nz-primary-sector-exports-record-64-3-billion-2030-forecast))
+- Food and fibre exports were forecast at a record $64.3 billion for the year to June 2026, up 6% (MPI Situation and Outlook, June 2026). ([mpi.govt.nz](https://www.mpi.govt.nz/news-and-resources/economic-intelligence-unit/situation-and-outlook-for-primary-industries/), [ruralnewsgroup.co.nz](https://www.ruralnewsgroup.co.nz/rural-news/rural-general-news/nz-primary-sector-exports-record-64-3-billion-2030-forecast))
 - Agriculture produces about half of New Zealand's gross greenhouse gas emissions, and farm emissions are not priced in the emissions trading scheme. ([mpi.govt.nz](https://mpi.govt.nz/science/open-data-and-forecasting/greenhouse-gas-reporting), [national.org.nz](https://www.national.org.nz/news/20251012-hon-todd-mcclay-government-sets-methane-targets-for-2050))
 
 **Where the parties stand:**
@@ -484,7 +484,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 
 **Key facts:**
 
-- The 2025 Defence Capability Plan commits $12 billion over four years ($9 billion new) and aims to lift defence spending from about 1% to more than 2% of GDP within eight years. ([defence.govt.nz](https://defence.govt.nz/news/defence-capability-plan-released))
+- The 2025 Defence Capability Plan commits $12 billion over four years ($9 billion new) and aims to lift defence spending from just over 1% to more than 2% of GDP within eight years. ([defence.govt.nz](https://defence.govt.nz/news/defence-capability-plan-released), [national.org.nz](https://www.national.org.nz/news/20250407-multibilliondollardefenceplan))
 - New Zealand's free trade agreement with India came into force on 20 October 2026. ([1news.co.nz](https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/))
 - Voters rated National as most capable on defence and foreign affairs (Ipsos, Sept 2026). ([en.wikipedia.org](https://en.wikipedia.org/wiki/2026_New_Zealand_general_election))
 
@@ -512,7 +512,7 @@ Issues were chosen from what voters say matters most in the 2026 Ipsos Issues Mo
 <a id="democracy-and-government"></a>
 ## 🗳️ Democracy and how government works
 
-**Why it matters:** Several parties want to change how elections and Parliament work, from voting rules to political donations. This election is the first without same-day enrolment. Some proposals would change who can vote or how MPs are elected.
+**Why it matters:** Several parties want to change how elections and Parliament work, from voting rules to political donations. This is the first election since 2017 at which you cannot enrol on election day. Some proposals would change who can vote or how MPs are elected.
 
 **Key facts:**
 

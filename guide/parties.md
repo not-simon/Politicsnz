@@ -41,7 +41,7 @@
 
 > The largest party in Parliament, leading the current government, promising no new taxes and a return to surplus.
 
-**In a nutshell:** National leads the government now, with ACT and NZ First. It wants to keep taxes where they are, cut government debt and get the books back in surplus. It is promising compulsory KiwiSaver, longer paid parental leave and tougher sentencing for some crimes.
+**In a nutshell:** National leads the government now, with ACT and NZ First. It wants to keep taxes where they are, cut government debt and get the books back in surplus. It is promising compulsory KiwiSaver, longer paid parental leave and changes to sentencing and consent law.
 
 **Big ideas for 2026:**
 
@@ -49,9 +49,9 @@
 - Make KiwiSaver compulsory for workers and sign babies up at birth `POL54734`
 - Split Foodstuffs (New World, Pak'nSave, Four Square) into two separate companies to boost supermarket competition `POL55014`
 - Extend paid parental leave from 26 to 30 weeks `POL54715`
-- More money for medicines (Pharmac) and free bowel screening from age 50, paid for partly by cutting foreign aid outside the Pacific `POL55205` `POL55208` `POL55209` `NAT-ARC-32`
+- An extra $604 million for medicines (Pharmac) and free bowel screening from age 50, paid for partly by cutting foreign aid outside the Pacific `POL55205` `POL55208` `POL55209` `NAT-ARC-32`
 - Replace NCEA, make students finish Year 11, and limit screen time for young children at school `POL55174` `POL55259` `POL55050`
-- Tougher justice rules: no 'good character' sentence discounts for sex offending and a clear 'yes' needed for consent `POL54926` `POL54925` `POL55322`
+- Sentencing and consent law: no 'good character' sentence discounts for sexual offending, an active 'yes' required for consent, and a penalty for refusing to give information when a child has been killed `POL54926` `POL54925` `POL55322`
 
 **They say:** National's slogan is "Fixing the Basics, Building the Future"; its fiscal plan says a re-elected National government will "not impose new taxes" and will "return to surplus in 2028/29 and stay there". — *National Party (fiscal plan, 12 Oct 2026; slogan as reported by policy.nz)* ([assets.national.org.nz](https://assets.national.org.nz/web/prod/National's%20Fiscal%20Plan.pdf), [policy.nz](https://policy.nz/2026/party-vote/parties/national-party))
 
@@ -62,7 +62,7 @@
 | **Leader(s)** | Christopher Luxon (Leader, Prime Minister) |
 | **Founded** | 1936 |
 | **Position (Wikipedia)** | centre-right ([en.wikipedia.org](https://en.wikipedia.org/wiki/New_Zealand_National_Party)) |
-| **Seats now** | 48 of 122 — 49 won in 2023 (48 at the general election plus the Port Waikato by-election). Papakura has been vacant since Judith Collins resigned on 14 May 2026, so National holds 48 of 122 seats at dissolution (data/parliaments/54.json). |
+| **Seats now** | 48 of 123 — National won 49 seats in 2023 (48 at the general election plus the Port Waikato by-election). Papakura has been vacant since Judith Collins resigned on 14 May 2026 (no by-election is required within six months of a general election), so at dissolution National held 48 of the 122 sitting members in a 123-seat House (data/parliaments/54.json). |
 | **Polling** | 28.7% (average of 9 polls, 2026-09-23–2026-10-23; range 25.9–32.0%) |
 | **Coalition stance** | Wants to continue the current government with ACT and NZ First. Luxon ruled out a 'grand coalition' with Labour (May 2026) and formally ruled out any deal with Opportunity, including confidence and supply, from 27 July 2026, citing its plans to raise taxes; he repeated this through October. *(as at 2026-10-22)* [rnz.co.nz](https://www.rnz.co.nz/news/politics/809555/national-rules-out-working-with-opportunity-party), [bloomberg.com](https://www.bloomberg.com/news/articles/2026-05-11/new-zealand-pm-luxon-rules-out-grand-coalition-with-labour), [1news.co.nz](https://www.1news.co.nz/2026/10/22/analysis-the-real-roadblock-to-opportunity-isnt-luxon-its-peters/), [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1932454/four-headed-beast-act-leader-david-seymour-hints-at-potential-for-coalition-with-opportunity) |
 | **Costed fiscal plan?** | Yes. Its fiscal plan (12 Oct 2026) keeps new spending to $2.4b a year, leaves $7.5b of operating money unallocated over four years, and part-funds promises by cutting foreign aid. It includes $1.2m for an election policy costings unit. [assets.national.org.nz](https://assets.national.org.nz/web/prod/National's%20Fiscal%20Plan.pdf), [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1865939/fiscal-holes-unfunded-promises-economist-not-sure-any-of-it-matters) |
@@ -79,14 +79,14 @@
 
 > The main opposition party, campaigning on cheaper doctors' visits paid for by a capital gains tax on property.
 
-**In a nutshell:** Labour is the biggest opposition party and last governed from 2017 to 2023. It wants three free GP visits a year, paid for by a new tax on profits from selling property (not the family home). It also promises to restore pay equity and take on big companies over prices.
+**In a nutshell:** Labour is the biggest opposition party and last governed from 2017 to 2023. It wants three free GP visits a year, paid for by a new tax on profits from selling property (not the family home). It also promises to restore pay equity and to give the Commerce Commission new powers over large companies' prices.
 
 **Big ideas for 2026:**
 
-- Up to three free GP visits a year, paid for by a 28% capital gains tax on property sales (family homes excluded) `POL54669` `POL54670`
+- Up to three free GP visits a year, paid for by a 28% capital gains tax on property sales (family homes and farms excluded) `POL54669` `POL54670`
 - Free prescriptions, free cervical screening for ages 25-69 and free referred maternity scans `POL54665` `POL54689` `POL54686`
 - Restore the old pay-equity law and give 65,000 care and support workers a $4 an hour pay rise `POL55167` `POL55214`
-- Make price gouging illegal and force the supermarket giants to separate their wholesale and retail businesses `POL55043` `POL55092`
+- Make price gouging illegal and require Woolworths and Foodstuffs to run their wholesale and retail businesses separately `POL55043` `POL55092`
 - Cap public transport fares at $20 a week in the three biggest cities ($10 elsewhere) and freeze fuel tax for three years `POL54685` `POL54768`
 - A 'NZ Future Fund' to invest in New Zealand businesses and infrastructure `POL54687`
 - Wipe 10% off eligible graduates' student loans and build at least 6,000 more social homes `POL55158` `POL55151`
@@ -108,7 +108,9 @@
 | **Website** | [labour.org.nz](https://www.labour.org.nz) |
 | **Go deeper** | [profile](../parties/labour/README.md) · [all 2026 policies](../parties/labour/policies/README.md) · [track record](../parties/labour/track-record.md) · [policy.nz](https://policy.nz/2026/party-vote/parties/labour-party) |
 
-<sub>Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/New_Zealand_Labour_Party), [en.wikipedia.org](https://en.wikipedia.org/wiki/2026_New_Zealand_general_election), [policy.nz](https://policy.nz/2026/party-vote/parties/labour-party), [labour.org.nz](https://www.labour.org.nz/fiscal-plan), [elections.nz](https://elections.nz/democracy-in-nz/political-parties-in-new-zealand/register-of-political-parties)</sub>
+*Note: Campaign development, 23 Oct 2026: Labour's Tāmaki Makaurau candidate Kerrin Leoni resigned as a candidate after Te Ao Māori News published footage of her campaigning at a gathering attended by Mongrel Mob members. Hipkins said the footage was "inconsistent with the standards I expect of Labour candidates". Her name stays on the ballot because nominations had closed (1News, 23 Oct 2026). Candidate-level events for other parties are recorded in electorates/ and people profiles, not on these cards.*
+
+<sub>Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/New_Zealand_Labour_Party), [en.wikipedia.org](https://en.wikipedia.org/wiki/2026_New_Zealand_general_election), [policy.nz](https://policy.nz/2026/party-vote/parties/labour-party), [labour.org.nz](https://www.labour.org.nz/fiscal-plan), [elections.nz](https://elections.nz/democracy-in-nz/political-parties-in-new-zealand/register-of-political-parties), [1news.co.nz](https://www.1news.co.nz/2026/10/23/labours-leoni-resigns-after-gang-campaigning-video-emerges/)</sub>
 
 ---
 
@@ -123,7 +125,7 @@
 
 - A 2.5% yearly tax on wealth above $10 million and a tax on large inheritances and gifts, so most workers can get an income tax cut (first $10,000 tax-free) `POL55135` `POL54729` `POL54735` `POL54737`
 - Cap rent rises at 2% a year and build many more public homes `POL55082` `POL55081`
-- 'KiwiMart': force the supermarket giants to sell 120 stores to a new government-owned chain `POL55032`
+- 'KiwiMart': require Foodstuffs and Woolworths to sell at least 120 stores to a new government-owned supermarket chain `POL55032`
 - Free public transport for children, students, apprentices and Community Services Card holders, and $2 fares for everyone else `POL55195` `POL55029`
 - A new publicly owned company, 'Kiwipower', to build renewable energy `POL54766`
 - An extra $3 billion a year for health, and restore pay equity for care workers `POL55118` `POL55181`
@@ -155,7 +157,7 @@
 
 > A free-market party in the current government that wants a smaller state and lower government spending.
 
-**In a nutshell:** ACT is part of the current government with National and NZ First. It wants the government to spend less, have fewer ministries and treat everyone the same regardless of race. It would slowly raise the pension age to 67 and scrap the net-zero climate law.
+**In a nutshell:** ACT is part of the current government with National and NZ First. It wants the government to spend less, have fewer ministries and deliver public services by need rather than ethnicity (its phrase is 'one law for all'). It would slowly raise the pension age to 67 and scrap the net-zero climate law.
 
 **Big ideas for 2026:**
 
@@ -191,7 +193,7 @@
 <a id="nz-first"></a>
 ## NZ First — New Zealand First
 
-> A party led by Winston Peters, in the current government, focused on citizens-first policies and breaking up big companies.
+> A party led by Winston Peters, in the current government, campaigning on 'citizens first' rules for voting and benefits and on breaking up big power and grocery companies.
 
 **In a nutshell:** NZ First is part of the current government and has been in government with both Labour and National in the past. It wants some benefits, like the pension and voting, kept for citizens only. It also wants to break up the big power companies and buy back the BNZ bank.
 
@@ -207,7 +209,7 @@
 
 **They say:** Winston Peters says "what is needed more than anything else is serious skill, and serious experience in the next government" and that "It is vital that the left does not win." — *Winston Peters (speech, Masterton, 2 Aug 2026)* ([scoop.co.nz](https://www.scoop.co.nz/stories/PA2608/S00010/winston-peters-speech-new-zealand-in-its-eleventh-hour.htm))
 
-**Critics say:** The NZ Herald reports NZ First is the largest party in Parliament not publishing a fiscal plan; a Green Party analysis put its policies at about $71.6 billion over four years, which NZ First rejects without giving its own figures. Labour's Chris Hipkins accused the party of "overt racism" when ruling it out. — *NZ Herald; Green Party; Chris Hipkins (Labour)* ([nzherald.co.nz](https://www.nzherald.co.nz/nz/politics/nz-firsts-policies-could-cost-72b-and-that-doesnt-include-buying-back-the-bnz/premium/SMEMEEW25JE7DC4IQPTINQGFYA/), [nzherald.co.nz](https://www.nzherald.co.nz/nz/politics/its-clearly-not-going-to-happen-chris-hipkins-definitively-rules-out-nz-first/YGB36A3QYFF5RDBP6N7HGYV32Q/))
+**Critics say:** The NZ Herald reports NZ First is the largest party in Parliament not publishing a fiscal plan; a Green Party analysis put its policies at about $71.6 billion over four years, which NZ First rejects without giving its own figures. Labour's Chris Hipkins accused the party of "overt racism" when ruling it out. — *NZ Herald (22 Oct 2026); Green Party analysis; Chris Hipkins, Labour (10 Aug 2026)* ([nzherald.co.nz](https://www.nzherald.co.nz/nz/politics/nz-firsts-policies-could-cost-72b-and-that-doesnt-include-buying-back-the-bnz/premium/SMEMEEW25JE7DC4IQPTINQGFYA/), [nzherald.co.nz](https://www.nzherald.co.nz/nz/politics/its-clearly-not-going-to-happen-chris-hipkins-definitively-rules-out-nz-first/YGB36A3QYFF5RDBP6N7HGYV32Q/))
 
 | | |
 |---|---|
@@ -216,8 +218,8 @@
 | **Position (Wikipedia)** | no position label in Wikipedia infobox. Wikipedia's opening sentence calls it a "right-wing populist" party; the infobox lists right-wing populism, nationalism and social conservatism as its ideology. ([en.wikipedia.org](https://en.wikipedia.org/wiki/New_Zealand_First)) |
 | **Seats now** | 8 of 123 |
 | **Polling** | 10.2% (average of 9 polls, 2026-09-23–2026-10-23; range 8.0–12.0%) |
-| **Coalition stance** | Has repeatedly ruled out Labour. At the TVNZ multi-party debate Peters said he could work with 'the parties in government now' (National and ACT), and after the Herald debate (21 Oct 2026) said 'No, I can't' when asked if he could sit at a Cabinet table with Opportunity's Qiulae Wong. Labour has also ruled NZ First out. *(as at 2026-10-22)* [1news.co.nz](https://www.1news.co.nz/2026/10/22/analysis-the-real-roadblock-to-opportunity-isnt-luxon-its-peters/), [1news.co.nz](https://www.1news.co.nz/2026/06/28/labour-wont-work-with-act-but-nz-first-highly-unlikely-mcanulty/), [nzherald.co.nz](https://www.nzherald.co.nz/nz/politics/its-clearly-not-going-to-happen-chris-hipkins-definitively-rules-out-nz-first/YGB36A3QYFF5RDBP6N7HGYV32Q/) |
-| **Costed fiscal plan?** | No full fiscal plan. The NZ Herald (23 Oct 2026) says NZ First is the largest party in Parliament not publishing one. It has costed some items itself, e.g. about $1b a year for the small-business tax cut and $7.5b to buy back the BNZ (other estimates are as high as $24b). [nzherald.co.nz](https://www.nzherald.co.nz/nz/politics/nz-firsts-policies-could-cost-72b-and-that-doesnt-include-buying-back-the-bnz/premium/SMEMEEW25JE7DC4IQPTINQGFYA/) |
+| **Coalition stance** | Has repeatedly ruled out Labour and is campaigning to continue the current National-led government. After the NZ Herald 'power brokers' debate (21 Oct 2026) Peters said 'No, I can't' when asked if he could sit at a Cabinet table with Opportunity's Qiulae Wong. Labour has also ruled NZ First out (10 Aug 2026). *(as at 2026-10-22)* [1news.co.nz](https://www.1news.co.nz/2026/10/22/analysis-the-real-roadblock-to-opportunity-isnt-luxon-its-peters/), [1news.co.nz](https://www.1news.co.nz/2026/06/28/labour-wont-work-with-act-but-nz-first-highly-unlikely-mcanulty/), [nzherald.co.nz](https://www.nzherald.co.nz/nz/politics/its-clearly-not-going-to-happen-chris-hipkins-definitively-rules-out-nz-first/YGB36A3QYFF5RDBP6N7HGYV32Q/) |
+| **Costed fiscal plan?** | No full fiscal plan. The NZ Herald (22 Oct 2026) says NZ First is the largest party in Parliament not publishing one. It has costed some items itself, e.g. about $1b a year for the small-business tax cut and $7.5b to buy back the BNZ (the Herald reports other estimates as high as $24b, without naming their source). [nzherald.co.nz](https://www.nzherald.co.nz/nz/politics/nz-firsts-policies-could-cost-72b-and-that-doesnt-include-buying-back-the-bnz/premium/SMEMEEW25JE7DC4IQPTINQGFYA/) |
 | **Track record** | In government four times: with National (1996-98, 2023-26) and with Labour (confidence and supply 2005-08, coalition 2017-20). Of 43 past promises checked in this archive's tracker: 21 kept, 3 partly kept, 7 broken, 9 abandoned, 3 still in progress. (7 2026 promises are tracked but not yet due.) |
 | **Website** | [nzfirst.nz](https://www.nzfirst.nz) |
 | **Go deeper** | [profile](../parties/nz-first/README.md) · [all 2026 policies](../parties/nz-first/policies/README.md) · [track record](../parties/nz-first/track-record.md) · [policy.nz](https://policy.nz/2026/party-vote/parties/nz-first) |
@@ -269,7 +271,7 @@
 
 > A new Northland-based Māori party formed by sitting MP Mariameno Kapa-Kingi after her split from Te Pāti Māori.
 
-**In a nutshell:** This party was started in May 2026 by Mariameno Kapa-Kingi, the MP for Te Tai Tokerau, after she fell out with Te Pāti Māori. It puts children (mokopuna) and whānau wellbeing at the centre of its policies. It is standing two candidates.
+**In a nutshell:** This party was started in May 2026 by Mariameno Kapa-Kingi, the MP for Te Tai Tokerau, after Te Pāti Māori expelled her in November 2025 (the High Court later found that unlawful) and she then left the party. It puts children (mokopuna) and whānau wellbeing at the centre of its policies. It is standing two candidates.
 
 **Big ideas for 2026:**
 
@@ -281,7 +283,7 @@
 
 **They say:** "Mō ngā tamariki, mō ngā mokopuna te take. For our tamariki and mokopuna - that is the cause." — *Party website, as quoted by RNZ* ([rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election))
 
-**Critics say:** We found no prominent named criticism of the new party itself in campaign coverage. Kapa-Kingi was expelled by Te Pāti Māori in November 2025 over accusations of financial misconduct; the High Court ruled the suspension and expulsion unlawful. — *The Spinoff; RNZ* ([thespinoff.co.nz](https://thespinoff.co.nz/politics/12-05-2026/the-further-unravelling-of-te-pati-maori), [odt.co.nz](https://www.odt.co.nz/news/national/te-pati-maori-splits-as-kapa-kingi-forms-new-party-d3ovh5eh))
+**Critics say:** We found no prominent named criticism of the new party itself in campaign coverage (searched 23 Oct 2026). Te Pāti Māori expelled Kapa-Kingi in November 2025 over what The Spinoff reports as "accusations of financial misconduct"; she challenged this and the High Court found the suspension and expulsion unlawful (March 2026). — *The Spinoff (12 May 2026); Otago Daily Times (11 May 2026)* ([thespinoff.co.nz](https://thespinoff.co.nz/politics/12-05-2026/the-further-unravelling-of-te-pati-maori), [odt.co.nz](https://www.odt.co.nz/news/national/te-pati-maori-splits-as-kapa-kingi-forms-new-party-d3ovh5eh))
 
 | | |
 |---|---|
@@ -303,17 +305,17 @@
 <a id="opportunity"></a>
 ## Opportunity (TOP) — Opportunity Party
 
-> A centrist party, polling near or above 5%, proposing a land tax to fund a regular 'Citizen's Income' payment.
+> A centrist party, polling close to the 5% threshold, proposing a land tax to fund a regular 'Citizen's Income' payment.
 
-**In a nutshell:** Opportunity has never been in Parliament, but polls suggest it could get in and decide who governs. Its big idea is a weekly 'Citizen's Income' for most adults, paid for by a tax on land. It also wants to clean up political donations and lobbying and ban bottom trawling.
+**In a nutshell:** Opportunity has never been in Parliament, but polls suggest it could get in and decide who governs. Its big idea is a weekly 'Citizen's Income' for most adults, paid for by a tax on land. It also wants to cap political donations, register lobbyists and phase out inshore bottom trawling.
 
 **Big ideas for 2026:**
 
 - A 'Citizen's Income' of up to $370 a week for most adults, funded by a land value tax `POL54816` `POL54777`
-- Clean up politics: cap donations at $30,000, a lobbying register and an anti-corruption watchdog `POL54809` `POL54778` `POL54808`
+- Political reform: cap donations at $30,000 per donor, a lobbying register and an independent body to investigate political corruption `POL54809` `POL54778` `POL54808`
 - A 10-year plan for the health system, lifting health funding to 9% of GDP `POL54823` `POL54871`
 - Phase out inshore bottom trawling by 2030 and protect 30% of the ocean `POL54776` `POL54825`
-- Give the Commerce Commission more teeth against monopolies and duopolies `POL54824`
+- Give the Commerce Commission stronger powers, including forcing the break-up of businesses it finds anti-competitive `POL54824`
 - Bring farming into the emissions trading scheme and build a $5b climate-resilience fund `POL54810` `POL55175`
 - Make public transport free `POL54786`
 
@@ -328,7 +330,7 @@
 | **Position (Wikipedia)** | centre ([en.wikipedia.org](https://en.wikipedia.org/wiki/Opportunity_Party_(New_Zealand))) |
 | **Seats now** | 0 of 123 |
 | **Polling** | 6.2% (average of 9 polls, 2026-09-23–2026-10-23; range 4.8–8.0%) |
-| **Coalition stance** | Says it will talk to either side and will 'pick up the phone' to National if it is the largest party, but "we are not here to prop up the current coalition government" and would not support a Treaty Principles bill. It has ruled out a government with Winston Peters as Foreign Minister, and set five bottom lines (Commerce Commission powers, lobbying and donations reform, a 10-year health plan, phasing out bottom trawling, and Paris Agreement commitments). *(as at 2026-10-21)* [1news.co.nz](https://www.1news.co.nz/2026/10/21/opportunity-would-have-walked-away-from-current-coalition/), [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1932454/four-headed-beast-act-leader-david-seymour-hints-at-potential-for-coalition-with-opportunity), [1news.co.nz](https://www.1news.co.nz/2026/10/22/analysis-the-real-roadblock-to-opportunity-isnt-luxon-its-peters/), [rnz.co.nz](https://www.rnz.co.nz/news/politics/809555/national-rules-out-working-with-opportunity-party) |
+| **Coalition stance** | Says it will talk to either side and will 'pick up the phone' to National if it is the largest party, but "we are not here to prop up the current coalition government" and would not support a Treaty Principles bill (21 Oct 2026). In August 2026 Wong said Opportunity would not accept Winston Peters as Foreign Minister, while not ruling out other roles for NZ First. On 30 September it set five bottom lines (Commerce Commission powers, lobbying and donations reform, a 10-year health plan, phasing out bottom trawling, and climate commitments). *(as at 2026-10-21)* [1news.co.nz](https://www.1news.co.nz/2026/10/21/opportunity-would-have-walked-away-from-current-coalition/), [1news.co.nz](https://www.1news.co.nz/2026/08/13/opportunity-party-leader-on-poll-surge-working-with-winston-peters/), [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1932454/four-headed-beast-act-leader-david-seymour-hints-at-potential-for-coalition-with-opportunity), [1news.co.nz](https://www.1news.co.nz/2026/10/22/analysis-the-real-roadblock-to-opportunity-isnt-luxon-its-peters/), [rnz.co.nz](https://www.rnz.co.nz/news/politics/809555/national-rules-out-working-with-opportunity-party) |
 | **Costed fiscal plan?** | No full fiscal plan found. Its 'Tax Reset' policy says that, on 2024 numbers, the land value tax pays for the Citizen's Income with about $4b a year left over; independent commentators dispute parts of this. [cdn.opportunity.org.nz](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf), [grantduncanphd.substack.com](https://grantduncanphd.substack.com/p/opportunity-what-does-top-really) |
 | **Track record** | Has never had an MP, so has no record in Parliament; its best result was 2.4% in 2017. |
 | **Website** | [opportunity.org.nz](https://www.opportunity.org.nz) |
@@ -356,7 +358,7 @@
 
 **They say:** "We are a democratic socialist party building a fairer Aotearoa New Zealand." — *Party website, as quoted by RNZ* ([rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election))
 
-**Critics say:** We found no prominent named criticism of the party in 2026 campaign coverage. — *Archive note*
+**Critics say:** We found no prominent named criticism of the party in 2026 campaign coverage (searched 23 Oct 2026). — *Archive note*
 
 | | |
 |---|---|
@@ -393,7 +395,7 @@
 
 **They say:** "We're here because the animals don't have a vote, and someone needs to speak up for them honestly and without apology." — *Co-leaders Danette Wereta and Rob McNeil (2026 manifesto)* ([animaljustice.org.nz](https://animaljustice.org.nz/election-2026/election-manifesto/))
 
-**Critics say:** We found no prominent named criticism of the party in 2026 campaign coverage. — *Archive note*
+**Critics say:** We found no prominent named criticism of the party in 2026 campaign coverage (searched 23 Oct 2026). — *Archive note*
 
 | | |
 |---|---|
@@ -415,9 +417,9 @@
 <a id="conservative"></a>
 ## Conservatives — Conservative Party NZ
 
-> A socially conservative party for lower taxes, 'one law for all', and legal protection for the unborn.
+> A socially conservative party campaigning on lower taxes, 'one law for all', and legal personhood for unborn children from the third trimester.
 
-**In a nutshell:** The Conservatives (called New Conservatives in 2023) want smaller government and lower taxes. They oppose policies based on race or identity and want New Zealand to leave the Paris climate agreement. They also want the law to recognise an unborn child as a person from the last trimester.
+**In a nutshell:** The Conservatives (called New Conservatives in 2023) want smaller government and lower taxes. They oppose policies that treat people differently by race or identity, and want New Zealand to leave the Paris climate agreement. They also want the law to recognise an unborn child as a person from the last trimester of pregnancy.
 
 **Big ideas for 2026:**
 
@@ -430,7 +432,7 @@
 
 **They say:** "We are working to bring a conservative voice to Parliament, to turn back the 'woke' agenda and prevailing culture of death." — *Party website, as quoted by RNZ* ([rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election))
 
-**Critics say:** Wikipedia notes that some opponents and observers have described the party's policies as far-right; the party says it has moved to a 'more centrist' position under new leadership. — *Wikipedia summary of commentary* ([en.wikipedia.org](https://en.wikipedia.org/wiki/Conservative_Party_NZ))
+**Critics say:** Wikipedia summarises 2019-20 coverage (Stuff and others) in which some opponents and observers described the party's policies, under its New Conservative name, as far-right; the party says it has since moved to a 'more centrist' position. We found no prominent named criticism of the party in 2026 campaign coverage (searched 23 Oct 2026). — *Wikipedia (retrieved 23 Oct 2026), summarising 2019-20 commentary* ([en.wikipedia.org](https://en.wikipedia.org/wiki/Conservative_Party_NZ))
 
 | | |
 |---|---|
@@ -501,7 +503,7 @@
 
 **They say:** "ALCP exists to legalise, regulate, and normalise cannabis for medicinal, recreational, and industrial use, while reducing harm caused by prohibition." — *Party website, as quoted by RNZ* ([rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election))
 
-**Critics say:** We found no prominent named criticism of the party in 2026 campaign coverage. For context, voters narrowly rejected legalising recreational cannabis in the 2020 referendum. — *Archive note; Electoral Commission referendum result* ([en.wikipedia.org](https://en.wikipedia.org/wiki/2020_New_Zealand_cannabis_referendum))
+**Critics say:** We found no prominent named criticism of the party in 2026 campaign coverage (searched 23 Oct 2026). For context, 50.7% of voters voted against legalising recreational cannabis in the 2020 referendum and 48.4% for. — *Archive note; Electoral Commission referendum result* ([en.wikipedia.org](https://en.wikipedia.org/wiki/2020_New_Zealand_cannabis_referendum))
 
 | | |
 |---|---|
@@ -532,12 +534,12 @@
 - End New Zealand's participation in the UN, the World Economic Forum and the World Health Organization `NZL-01`
 - End climate agreements and pursue energy independence, including oil and gas `NZL-02` `NZL-03`
 - Scrap the current tax system `NZL-05`
-- Scrap all race-based policies and write a New Zealand constitution `NZL-06` `NZL-07`
+- Scrap what it calls 'race-based policies', and write a New Zealand constitution `NZL-06` `NZL-07`
 - Decentralise government and 'return power to the people' `NZL-10`
 
 **They say:** "We reject government overreach. We take our country back from foreign interests. We restore our freedoms. No compromise. No apologies." — *NZ Loyal website, as quoted by RNZ* ([rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election))
 
-**Critics say:** RNZ notes that leader Kelvyn Alp was arrested and charged with sharing the livestream of the 2019 Christchurch mosque attacks, and is a founder of the Counterspin platform, which RNZ describes as far-right. — *RNZ* ([rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election))
+**Critics say:** RNZ reports that leader Kelvyn Alp was charged with sharing the livestream of the 2019 Christchurch mosque attacks, and is a founder of the Counterspin platform, which RNZ describes as far-right. We found no named criticism of the party's 2026 policies themselves. — *RNZ (12 Oct 2026)* ([rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election))
 
 | | |
 |---|---|
@@ -575,7 +577,7 @@
 
 **They say:** "People hold the power. You choose the laws. Join the global movement striving for Direct Democracy." — *Party website, as quoted by RNZ* ([rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election))
 
-**Critics say:** After a group of the party's anti-vaccination activists (as Wikipedia's election article describes them) confronted Labour MP Ayesha Verrall at a Wellington candidates' meeting (8 Sept 2026), Labour leader Chris Hipkins said "some people had strong anti-science views and they did not represent the vast bulk of New Zealanders". — *Chris Hipkins, Labour (via RNZ)* ([rnz.co.nz](https://www.rnz.co.nz/news/politics/1310827/labour-s-chris-hipkins-says-his-party-won-t-be-intimidated-by-anti-science), [en.wikipedia.org](https://en.wikipedia.org/wiki/2026_New_Zealand_general_election))
+**Critics say:** After anti-vaccination activists linked to the party (as Wikipedia's election article describes them) confronted Labour MP Ayesha Verrall at a Wellington candidates' meeting on 8 September 2026, Labour leader Chris Hipkins said some people had strong 'anti-science' views that did not represent the 'vast bulk' of New Zealanders. We found no named criticism of the party's policies themselves. — *Chris Hipkins, Labour (RNZ, 9 Sep 2026)* ([rnz.co.nz](https://www.rnz.co.nz/news/politics/1310827/labour-s-chris-hipkins-says-his-party-won-t-be-intimidated-by-anti-science), [en.wikipedia.org](https://en.wikipedia.org/wiki/2026_New_Zealand_general_election))
 
 | | |
 |---|---|
@@ -597,22 +599,22 @@
 <a id="vision-nz"></a>
 ## Vision NZ — Vision New Zealand
 
-> A Christian conservative party linked to Destiny Church, focused on family values and pausing immigration.
+> A Christian conservative party linked to Destiny Church, campaigning on 'family values', a pause on immigration and leaving the Paris Agreement.
 
-**In a nutshell:** Vision NZ is led by Hannah Tamaki of Destiny Church. It says strong families should come first and the government should do less. It wants to pause mass immigration, leave the Paris climate agreement and make the first $25,000 of income tax-free.
+**In a nutshell:** Vision NZ is led by Hannah Tamaki of Destiny Church. It says strong families should come first and the government should do less. It wants to pause what it calls 'mass immigration', leave the Paris climate agreement and make the first $25,000 of income tax-free.
 
 **Big ideas for 2026:**
 
 - A Ministry for Families and a Parental Rights Bill `VIS-01` `VIS-30`
 - Make the first $25,000 of income tax-free, and stop taxing superannuation `VIS-10` `VIS-11`
-- Pause mass immigration and lengthen the wait for citizenship to 10 years `VIS-24` `VIS-26`
+- Pause what it calls 'mass immigration' and lengthen the wait for citizenship to 10 years `VIS-24` `VIS-26`
 - Leave the Paris Accord and suspend commitment to UN regulations `VIS-25`
 - Define sex in law as male and female and ban gender-transition treatment for minors `VIS-29` `VIS-30`
 - Abolish MMP party lists so only electorate winners sit in Parliament, cut the number of MPs, and add term limits `VIS-34` `VIS-35`
 
 **They say:** "We believe that the family is the ultimate cornerstone of society and the primary incubator for our nation's morals, which is why we will dismantle state dependency, strip away government overreach and restore parental authority to its rightful place." — *Party website, as quoted by RNZ* ([rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election))
 
-**Critics say:** Prime Minister Christopher Luxon said a February 2025 Destiny Church protest that disrupted a rainbow event at an Auckland library went "too far"; Auckland Mayor Wayne Brown called the behaviour "thuggery". — *Christopher Luxon; Wayne Brown (via 1News)* ([1news.co.nz](https://www.1news.co.nz/2025/02/16/destiny-church-protesters-at-pride-events-went-too-far-pm))
+**Critics say:** The criticism we found is aimed at Destiny Church, which Vision NZ's leader Hannah Tamaki co-leads, rather than at the party: Prime Minister Christopher Luxon said a February 2025 Destiny Church protest that disrupted a children's event at an Auckland library and the Auckland Rainbow Parade went "too far", and Auckland Mayor Wayne Brown said there was "absolutely no place for thuggery". We found no prominent named criticism of the party in 2026 campaign coverage (searched 23 Oct 2026). — *Christopher Luxon; Wayne Brown (1News, 16 Feb 2025)* ([1news.co.nz](https://www.1news.co.nz/2025/02/16/destiny-church-protesters-at-pride-events-went-too-far-pm))
 
 | | |
 |---|---|
@@ -642,13 +644,13 @@
 
 - Protect single-sex spaces for women and girls `WRP-09`
 - Extend the ban on puberty blockers to cross-sex hormones for under-18s, and limit gender surgery to over-25s `WRP-01`
-- Fair play in women's sport ([womensrightsparty.nz](https://womensrightsparty.nz/our-priorities/))
-- Clear, plain language about women in law, health care and the media `WRP-17`
-- Recognition and fair reward for women's paid and unpaid work ([womensrightsparty.nz](https://womensrightsparty.nz/our-priorities/))
+- Women's sport and other single-sex categories decided by biological sex (it calls this 'fair play in sports') `WRP-09`
+- Laws and health services that define 'woman' as an adult human female and keep words such as 'mother' and 'breastfeeding' `WRP-17`
+- 'Equitable reward and recognition' (its words) for women's paid and unpaid work, including paid parental leave of 12 months `WRP-12`
 
 **They say:** "We are women and men who believe in democracy, equality and biological reality." — *Party website, as quoted by RNZ* ([rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election))
 
-**Critics say:** Wikipedia describes co-leader Jill Ovens as an "anti-transgender activist"; the party rejects that description and has urged supporters to stop donating to Wikipedia over it. — *Wikipedia; Women's Rights Party response* ([en.wikipedia.org](https://en.wikipedia.org/wiki/Jill_Ovens), [womensrightsparty.nz](https://womensrightsparty.nz/?p=2720))
+**Critics say:** Wikipedia's article on co-leader Jill Ovens (retrieved 23 Oct 2026) describes her as an "anti-transgender activist" and the party as "anti-transgender"; the party disputes Wikipedia's characterisation of it and in October 2023 urged supporters to stop donating to Wikipedia. We found no prominent named criticism of the party in 2026 campaign coverage (searched 23 Oct 2026). — *Wikipedia (retrieved 23 Oct 2026); Women's Rights Party statement (30 Oct 2023)* ([en.wikipedia.org](https://en.wikipedia.org/wiki/Jill_Ovens), [womensrightsparty.nz](https://womensrightsparty.nz/?p=2720))
 
 | | |
 |---|---|

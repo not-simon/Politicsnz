@@ -44,10 +44,11 @@
           ]
         },
         {
-          "fact": "Two companies, Foodstuffs and Woolworths, have about 82% of the supermarket market, which the Commerce Commission calls a duopoly.",
+          "fact": "Two companies, Foodstuffs and Woolworths, have about 82% of the grocery market (2025 figure); the Commerce Commission's 2022 market study described the sector as a duopoly in which competition was 'not working well for consumers'.",
           "date": "2026-10-23",
           "sources": [
-            "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election",
+            "https://www.1news.co.nz/2026/09/22/each-party-has-a-supermarket-fix-what-if-we-combined-the-best-ideas/",
+            "https://www.1news.co.nz/2022/03/08/supermarket-sector-competition-not-working-well-for-consumers/",
             "https://thespinoff.co.nz/vertical-videos/now-you-know/nzs-supermarket-duopoly-explained"
           ]
         }
@@ -62,7 +63,7 @@
           ]
         },
         "labour": {
-          "summary": "Make price gouging illegal, force the big supermarkets to separate wholesale from retail, cap public transport at $20 a week in the big cities, freeze fuel tax, and crack down on surprise fees and hard-to-cancel subscriptions.",
+          "summary": "Make price gouging illegal, require the big supermarkets to separate wholesale from retail, cap public transport at $20 a week in the big cities, freeze fuel tax, and regulate hidden fees and hard-to-cancel subscriptions.",
           "policy_ids": [
             "POL55043",
             "POL55092",
@@ -148,7 +149,7 @@
       "slug": "health",
       "title": "Health",
       "icon": "heart",
-      "why_it_matters": "Health is voters' second-biggest worry. Emergency departments are often full and many people struggle to see a GP quickly or cheaply. Parties offer different mixes of free visits, more staff, more medicines funding and new ways of delivering care.",
+      "why_it_matters": "Health is voters' second-biggest worry. About a quarter of emergency department patients wait more than six hours, and hospital beds per person have fallen over the past decade. Parties offer different mixes of free visits, more staff, more medicines funding and new ways of delivering care.",
       "key_facts": [
         {
           "fact": "76.3% of emergency department patients were admitted, discharged or transferred within six hours in April-June 2026, up from 73.9% a year earlier; the government target is 95% by 2030.",
@@ -312,16 +313,17 @@
           ]
         },
         {
-          "fact": "The economy grew 0.2% in the June 2026 quarter and 1.7% over the year; GDP per person rose 0.1%.",
+          "fact": "The economy grew 0.2% in the June 2026 quarter and 1.7% over the year to June; GDP per person rose 0.1% over the year.",
           "date": "2026-09-17",
           "sources": [
             "https://www.1news.co.nz/2026/09/17/gdp-economy-grows-02-in-june-quarter/"
           ]
         },
         {
-          "fact": "Treasury's pre-election update (PREFU) forecasts the government's books returning to surplus in 2028/29.",
+          "fact": "Treasury's pre-election update (PREFU, September 2026) forecasts the government's books returning to surplus in 2028/29, with net debt peaking at 43.9% of GDP in 2028.",
           "date": "2026-10-05",
           "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1647005/treasury-gives-willis-pre-election-boost-as-surplus-forecast-improves",
             "https://www.rnz.co.nz/news/politics_election-2026/1733687/labour-s-fiscal-plan-national-s-claims-and-how-labour-is-defending-it"
           ]
         },
@@ -558,10 +560,11 @@
       "why_it_matters": "Tax is one of the clearest dividing lines this election. Some parties promise no new taxes; others want new taxes on wealth, property or land to pay for services or income tax cuts. Concern about tax has been rising in polls.",
       "key_facts": [
         {
-          "fact": "New Zealand's top income tax rate is 39% on income over $180,000; there is no general capital gains tax, wealth tax or inheritance tax.",
+          "fact": "New Zealand's top income tax rate is 39% on income over $180,000. There is no general capital gains tax (the 'bright-line' rule taxes gains on residential investment property sold within two years), and no wealth tax or inheritance tax.",
           "date": "2026-10-23",
           "sources": [
-            "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals"
+            "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+            "https://www.ird.govt.nz/property/buying-and-selling/when-you-need-to-pay/the-brightline-property-rule"
           ]
         },
         {
@@ -694,7 +697,7 @@
       "slug": "energy-and-fuel",
       "title": "Power bills and fuel prices",
       "icon": "bolt",
-      "why_it_matters": "A conflict in the Middle East pushed fuel prices up sharply this year, and power bills keep climbing. Fuel prices jumped into voters' top four worries in May. Parties disagree on breaking up the big power companies, public ownership, and how much to rely on solar, oil and gas.",
+      "why_it_matters": "A conflict in the Middle East pushed fuel prices up sharply this year, and electricity prices rose 9.3% in a year. Fuel prices jumped into voters' top four worries in May. Parties disagree on breaking up the big power companies, public ownership, and how much to rely on solar, oil and gas.",
       "key_facts": [
         {
           "fact": "Petrol prices were 24.3% higher and diesel 55.8% higher in September 2026 than a year earlier, though below their April peak (Stats NZ).",
@@ -816,7 +819,7 @@
       "slug": "welfare-and-poverty",
       "title": "Welfare and poverty",
       "icon": "hands",
-      "why_it_matters": "More children are living without basics like enough food or warm clothes than at any time since 2015. More people are on benefits as unemployment rises. Parties split between tougher rules for beneficiaries and more generous support.",
+      "why_it_matters": "More children are living without basics like enough food or warm clothes than at any time since 2015. More people are on benefits as unemployment rises. Parties split between stricter obligations for people on benefits and higher or more universal payments.",
       "key_facts": [
         {
           "fact": "14.3% of children (about 169,300) lived in material hardship in the year to June 2025, the highest rate Stats NZ has recorded since 2015.",
@@ -928,7 +931,7 @@
       "slug": "law-and-order",
       "title": "Law and order",
       "icon": "shield",
-      "why_it_matters": "Crime and safety matter to many voters, and the current government has passed tougher sentencing and anti-gang laws. The prison population is growing. Parties range from longer sentences and more police to abolishing prisons and focusing on rehabilitation.",
+      "why_it_matters": "Crime and safety matter to many voters, and the current government has passed laws that lengthen sentences and restrict gangs. The prison population is growing. Parties range from longer sentences and more police to abolishing prisons and focusing on rehabilitation.",
       "key_facts": [
         {
           "fact": "There were 11,240 people in prison in February 2026; the Ministry of Justice projects 15,200 by June 2036 if nothing changes, partly because of recent sentencing law changes.",
@@ -1070,10 +1073,11 @@
           ]
         },
         {
-          "fact": "In October 2025 the government set a new 2050 target to cut biogenic methane (mostly from farm animals) by 14-24% below 2017 levels, replacing the previous 24-47% range, and ruled out a tax on farm methane.",
+          "fact": "In October 2025 the government set a new 2050 target to cut biogenic methane (mostly from farm animals) by 14-24% below 2017 levels, replacing the previous 24-47% range (enacted December 2025), and ruled out a tax on farm methane.",
           "date": "2025-10-12",
           "sources": [
-            "https://www.national.org.nz/news/20251012-hon-todd-mcclay-government-sets-methane-targets-for-2050"
+            "https://www.national.org.nz/news/20251012-hon-todd-mcclay-government-sets-methane-targets-for-2050",
+            "https://legislation.govt.nz/act/public/2025/80/en/latest/"
           ]
         },
         {
@@ -1225,6 +1229,7 @@
           "fact": "Voters rated Labour as most capable on education (Ipsos, Sept 2026).",
           "date": "2026-09-25",
           "sources": [
+            "https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey",
             "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election"
           ]
         }
@@ -1309,7 +1314,7 @@
       "slug": "te-tiriti-and-maori-issues",
       "title": "Te Tiriti o Waitangi and Māori issues",
       "icon": "korowai",
-      "why_it_matters": "How the Treaty of Waitangi is applied in law has been one of the most heated debates of this term. Some parties want to limit Treaty-based and race-based policies; others want Te Tiriti given more legal weight. The future of the Māori seats and the Waitangi Tribunal is also on the ballot.",
+      "why_it_matters": "How the Treaty of Waitangi is applied in law has been one of the most debated questions of this term. Some parties want to limit Treaty clauses in law and programmes targeted by ethnicity (which they call 'race-based'); others want Te Tiriti given more legal weight. The future of the Māori seats and the Waitangi Tribunal is also on the ballot.",
       "key_facts": [
         {
           "fact": "ACT's Treaty Principles Bill was voted down 112 to 11 at its second reading on 10 April 2025; only ACT voted for it.",
@@ -1335,7 +1340,7 @@
       ],
       "positions": {
         "national": {
-          "summary": "Voted against the Treaty Principles Bill; in the Herald leaders' debate Luxon suggested he could support a referendum on the Māori seats.",
+          "summary": "Voted against the Treaty Principles Bill; in the Herald leaders' debate (14 Oct 2026) Luxon said he was willing to consider backing a referendum on the Māori seats.",
           "policy_ids": [],
           "sources": [
             "https://www.nzherald.co.nz/nz/politics/election-2026-labours-chris-hipkins-rules-out-greens-te-pati-maori-from-major-ministerial-roles-in-herald-debate/3GBPYMI6TJBKHLVNOSPGY6WTKA/",
@@ -1414,7 +1419,7 @@
           ]
         },
         "nz-loyal": {
-          "summary": "Scrap all race-based policies.",
+          "summary": "Scrap what it calls 'race-based policies'.",
           "policy_ids": [
             "NZL-06"
           ],
@@ -1441,7 +1446,7 @@
       "slug": "infrastructure-and-transport",
       "title": "Infrastructure and transport",
       "icon": "road",
-      "why_it_matters": "Roads, rail, water pipes, hospitals and schools all need fixing or building, and the bill is huge. Much of what is planned has no money set aside yet. Parties differ on roads versus public transport and on how to pay.",
+      "why_it_matters": "Roads, rail, water pipes, hospitals and schools all need fixing or building; planned projects are valued at about $275 billion. Much of what is planned has no money set aside yet. Parties differ on roads versus public transport and on how to pay.",
       "key_facts": [
         {
           "fact": "New Zealand spends over $20 billion a year on infrastructure but gets less for its money than many similar countries (Infrastructure Commission).",
@@ -1545,13 +1550,14 @@
       "slug": "immigration",
       "title": "Immigration",
       "icon": "plane",
-      "why_it_matters": "Many New Zealanders are leaving for Australia while more migrants arrive. Some parties want much tighter rules on visas, benefits and citizenship. Others want easier paths to residency and family visas.",
+      "why_it_matters": "More New Zealand citizens are leaving than returning, while migrant arrivals have risen. Some parties want tighter rules on visas, benefits and citizenship. Others want easier paths to residency and family visas.",
       "key_facts": [
         {
           "fact": "Net migration added 20,500 people in the year to August 2026, about double the year before but below the long-run average.",
           "date": "2026-10-14",
           "sources": [
-            "https://newswire.co.nz/2026/10/new-zealand-net-migration-gain-doubles-20500-august-2026-citizens-leaving/"
+            "https://newswire.co.nz/2026/10/new-zealand-net-migration-gain-doubles-20500-august-2026-citizens-leaving/",
+            "https://www.interest.co.nz/economy/140671/net-population-gain-migration-more-doubled-august-year-number-returning-nz-citizens"
           ]
         },
         {
@@ -1629,7 +1635,7 @@
           ]
         },
         "vision-nz": {
-          "summary": "Pause mass immigration and extend the wait for citizenship to 10 years.",
+          "summary": "Pause what it calls 'mass immigration' and extend the wait for citizenship to 10 years.",
           "policy_ids": [
             "VIS-24",
             "VIS-26"
@@ -1754,9 +1760,10 @@
       "why_it_matters": "Farming, food and forestry earn most of New Zealand's export income. Farmers face rules on water, emissions and land use that parties want to loosen or tighten. Rural communities also care about workers, water storage and services.",
       "key_facts": [
         {
-          "fact": "Food and fibre exports were forecast at a record $64.3 billion for the year to June 2026, up 6% (MPI).",
+          "fact": "Food and fibre exports were forecast at a record $64.3 billion for the year to June 2026, up 6% (MPI Situation and Outlook, June 2026).",
           "date": "2026-06-16",
           "sources": [
+            "https://www.mpi.govt.nz/news-and-resources/economic-intelligence-unit/situation-and-outlook-for-primary-industries/",
             "https://www.ruralnewsgroup.co.nz/rural-news/rural-general-news/nz-primary-sector-exports-record-64-3-billion-2030-forecast"
           ]
         },
@@ -1864,10 +1871,11 @@
       "why_it_matters": "War in the Middle East and tension in the Pacific have made foreign policy a bigger issue than usual. New Zealand is spending more on defence and signing new trade deals. Parties disagree on Israel and Palestine, AUKUS, foreign aid and military alliances.",
       "key_facts": [
         {
-          "fact": "The 2025 Defence Capability Plan commits $12 billion over four years ($9 billion new) and aims to lift defence spending from about 1% to more than 2% of GDP within eight years.",
+          "fact": "The 2025 Defence Capability Plan commits $12 billion over four years ($9 billion new) and aims to lift defence spending from just over 1% to more than 2% of GDP within eight years.",
           "date": "2025-04-07",
           "sources": [
-            "https://defence.govt.nz/news/defence-capability-plan-released"
+            "https://defence.govt.nz/news/defence-capability-plan-released",
+            "https://www.national.org.nz/news/20250407-multibilliondollardefenceplan"
           ]
         },
         {
@@ -1997,7 +2005,7 @@
       "slug": "democracy-and-government",
       "title": "Democracy and how government works",
       "icon": "ballot",
-      "why_it_matters": "Several parties want to change how elections and Parliament work, from voting rules to political donations. This election is the first without same-day enrolment. Some proposals would change who can vote or how MPs are elected.",
+      "why_it_matters": "Several parties want to change how elections and Parliament work, from voting rules to political donations. This is the first election since 2017 at which you cannot enrol on election day. Some proposals would change who can vote or how MPs are elected.",
       "key_facts": [
         {
           "fact": "You can no longer enrol on election day: enrolment for the 2026 election closes on 25 October 2026, before advance voting starts on 26 October.",
@@ -2135,5 +2143,11 @@
         "https://elections.nz/assets/2026-General-Election/2026-Factsheet-Make-Sure-Youre-Enrolled-for-the-2026-General-Election-v2.pdf"
       ]
     }
-  ]
+  ],
+  "editorial_review": {
+    "date": "2026-10-23",
+    "standards": "docs/EDITORIAL_STANDARDS.md",
+    "log": "docs/REVIEW_LOG.md",
+    "note": "Fact-check and neutrality review of every card: numbers and dates checked against the cited sources, evaluative wording replaced with description, contested-topic framing attributed to the party using it."
+  }
 }
