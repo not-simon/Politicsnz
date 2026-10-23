@@ -4,13 +4,12 @@
 #   1. Make the repo public (Settings -> General -> Danger Zone -> Change visibility), or upgrade the plan.
 #   2. Settings -> Pages -> Source: "GitHub Actions".
 #   3. Actions -> "Publish voter guide" -> Run workflow.
-# Until then the workflow only runs manually, so a failed setup does not email on every push.
-# After the first successful run, re-add the push trigger below to publish automatically:
-#   push:
-#     branches: [claude/nz-political-parties-research-hnn8ae, main]
-#     paths: ['site/**', '.github/workflows/pages.yml']
+# Setup done 23 Oct 2026; the site publishes automatically on every push that changes site/.
 name: Publish voter guide
 on:
+  push:
+    branches: [claude/nz-political-parties-research-hnn8ae, main]
+    paths: ['site/**', '.github/workflows/pages.yml']
   workflow_dispatch:
 permissions:
   contents: read

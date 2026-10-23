@@ -374,7 +374,7 @@ def build_layer(etype, bs, canon, aliases, budget):
         return doc, s, polys
 
     # search tolerance (deg^2) so that size <= budget
-    lo, hi = 1e-9, 1e-3
+    lo, hi = 1e-6, 1e-3  # floor 1e-6 deg^2 (~0.01 km^2): finer than that is wasted bytes
     best = None
     for _ in range(22):
         mid = math.sqrt(lo * hi)
@@ -390,6 +390,11 @@ def build_layer(etype, bs, canon, aliases, budget):
     if best is None:
         doc, s, polys = render(hi)
         best = (hi, doc, s, polys, len(s.encode("utf-8")))
+    if hi == 1e-6 and best[0] > 1e-6 + 1e-12:
+        pass
+    doc0, s0, polys0 = render(1e-6)
+    if len(s0.encode("utf-8")) <= budget:
+        best = (1e-6, doc0, s0, polys0, len(s0.encode("utf-8")))
     th, doc, s, polys, size = best
     # QA: area retention + vertex count
     worst = (1.0, "")
@@ -402,7 +407,7 @@ def build_layer(etype, bs, canon, aliases, budget):
             worst = (ratio, f["_name"])
         if not pl:
             raise RuntimeError(f"{f['_name']} collapsed")
-    print(f"   tolerance {th:.3g} deg^2 -> {size/1024:.0f} KB, {nverts} vertices; worst area retention {worst[0]:.3f} ({worst[1]})")
+    print(f"   tolerance {th:.3g} deg^2 -> {size/1024:.0f} KB, {nverts} vertices; worst area retention {worst[0]:.5f} ({worst[1]})")
     os.makedirs(OUT, exist_ok=True)
     with open(os.path.join(OUT, f"{etype}-{bs}.json"), "w", encoding="utf-8") as fh:
         fh.write(s)

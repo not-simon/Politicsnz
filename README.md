@@ -2,6 +2,8 @@
 
 A sourced, non-partisan research archive for voters in the **7 November 2026 general election**: every party, every 2026 policy (summary **and** full original text), every candidate and MP since 2011, how each party has kept its promises, and how Parliament has been made up at every election since 2011.
 
+**Live site: https://not-simon.github.io/Politicsnz/**
+
 It comes with an interactive, phone-friendly guide in [`site/`](site/) — find-your-match quiz, party pages, issue comparisons, your electorate's candidates, a tap-a-seat map of every Parliament, poll trends, a coalition builder and an MMP seat calculator.
 
 > Not affiliated with any party. Every fact links to its source. Party policy texts are reproduced as published, for reference. Enrol and find your voting place at **vote.nz**.
