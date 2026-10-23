@@ -172,6 +172,8 @@ for f in (ROOT / 'data' / 'geo').glob('*.json'): shutil.copy(f, OUT / 'geo' / f.
 
 # --- assemble pages: artifact fragment (no doctype) + standalone index.html
 src = (ROOT / 'site' / 'src' / 'app.html').read_text()
+design_css = (ROOT / 'site' / 'design' / 'tokens.css').read_text() + '\n' + (ROOT / 'site' / 'design' / 'components.css').read_text()
+src = src.replace('<!-- DESIGN_CSS -->', '<style>\n' + design_css + '\n</style>', 1)
 (ROOT / 'site' / 'artifact.html').write_text(src)
 (ROOT / 'site' / 'index.html').write_text('<!doctype html>\n<html lang="en"><head><meta charset="utf-8">'
     '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></head><body>\n' + src + '\n</body></html>\n')

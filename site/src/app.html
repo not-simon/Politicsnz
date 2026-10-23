@@ -3,318 +3,73 @@
 <meta name="description" content="A friendly, independent guide to New Zealand's 2026 election: every party, policy, candidate and track record.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,600&family=JetBrains+Mono:wght@500&display=swap">
-<style>
-/* Layout: a friendly magazine-style guide. Soft harbour-mist ground, white rounded cards, kōwhai yellow for the one bright moment
-   (ticks, highlights), harbour teal for actions. Party colours carry the data. Bottom tab bar on phones, top nav on desktop. */
-:root {
-  --bg: #F3F6FA; --surface: #FFFFFF; --sunk: #E9EEF5; --ink: #172036; --muted: #5A6478; --line: #DFE5EE;
-  --brand: #17687E; --brand-ink: #FFFFFF; --brand-soft: #DCEEF2; --sun: #F6C343; --sun-ink: #2A2100; --coral: #D9574B;
-  --ok: #1E8150; --warn: #B7791F; --bad: #C2413A; --info: #3569A8; --idle: #7D8795;
-  --seat-stroke: rgba(10,20,40,.16); --shadow: 0 1px 2px rgba(20,32,54,.06), 0 8px 24px rgba(20,32,54,.07);
-  --f-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
-  --f-ui: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --f-read: "Literata", Georgia, "Times New Roman", serif;
-  --f-num: "JetBrains Mono", ui-monospace, Menlo, monospace;
-  --r: 18px; --r-s: 10px;
-}
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --bg: #0D1220; --surface: #151C2D; --sunk: #1B2337; --ink: #E9EEF7; --muted: #A0A9BC; --line: #273149;
-  --brand: #5EC0D6; --brand-ink: #08131A; --brand-soft: #16323B; --sun: #F6C343; --sun-ink: #2A2100; --coral: #F08378;
-  --ok: #4CC183; --warn: #E3AE4F; --bad: #F06D64; --info: #7FA9E2; --idle: #8D97A6; --seat-stroke: rgba(255,255,255,.22);
-  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25); color-scheme: dark } }
-:root[data-theme="dark"] {
-  --bg: #0D1220; --surface: #151C2D; --sunk: #1B2337; --ink: #E9EEF7; --muted: #A0A9BC; --line: #273149;
-  --brand: #5EC0D6; --brand-ink: #08131A; --brand-soft: #16323B; --sun: #F6C343; --sun-ink: #2A2100; --coral: #F08378;
-  --ok: #4CC183; --warn: #E3AE4F; --bad: #F06D64; --info: #7FA9E2; --idle: #8D97A6; --seat-stroke: rgba(255,255,255,.22);
-  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25); color-scheme: dark }
-
-* { box-sizing: border-box }
-html { scroll-behavior: smooth }
-body { background: var(--bg); color: var(--ink); font: 16px/1.55 var(--f-ui); margin: 0; -webkit-font-smoothing: antialiased }
-body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--surface) }
-.wrap { max-width: 1140px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
-a { color: var(--brand) }
-button { font: inherit; color: inherit }
-:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; border-radius: 6px }
-
-/* header + nav */
-.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--surface) 92%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line) }
-.top .wrap { display: flex; align-items: center; gap: 16px; min-height: 60px }
-.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); background: none; border: 0; padding: 0; cursor: pointer }
-.logo b { font: 800 20px/1 var(--f-display); letter-spacing: -.01em }
-.logo small { display: block; font: 600 11px var(--f-ui); color: var(--muted); letter-spacing: .04em }
-.nav { display: flex; gap: 2px; margin-left: auto; flex-wrap: wrap }
-.nav button { background: none; border: 0; padding: 8px 12px; border-radius: 999px; font-weight: 600; font-size: 14.5px; color: var(--muted); cursor: pointer }
-.nav button:hover { color: var(--ink); background: var(--sunk) }
-.nav button[aria-current="page"] { color: var(--brand-ink); background: var(--brand) }
-.bottombar { display: none }
-@media (max-width: 860px) {
-  .nav { display: none }
-  .bottombar { display: grid; grid-template-columns: repeat(6, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 25; background: var(--surface);
-    border-top: 1px solid var(--line); padding: 6px max(8px, env(safe-area-inset-right, 0px)) calc(6px + env(safe-area-inset-bottom, 0px)) max(8px, env(safe-area-inset-left, 0px)) }
-  .bottombar button { background: none; border: 0; display: grid; justify-items: center; gap: 2px; font: 600 11px var(--f-ui); color: var(--muted); padding: 4px; cursor: pointer }
-  .bottombar svg { width: 24px; height: 24px }
-  .bottombar button[aria-current="page"] { color: var(--brand) }
-  main { padding-bottom: 84px }
-}
-main { padding-block: 28px 56px; min-height: 70vh }
-.view { display: grid; gap: 28px }
-
-/* type */
-h1, h2, h3, h4 { font-family: var(--f-display); margin: 0; text-wrap: balance; letter-spacing: -.01em }
-h1 { font-size: clamp(34px, 6vw, 58px); line-height: 1.02; font-weight: 800 }
-h2 { font-size: clamp(24px, 3.4vw, 32px); line-height: 1.12; font-weight: 800 }
-h3 { font-size: 19px; line-height: 1.25; font-weight: 700 }
-h4 { font-size: 16px; font-weight: 700 }
-p { margin: 0 }
-.lede { color: var(--muted); font-size: 17px; max-width: 62ch }
-.kicker { font: 700 12px var(--f-ui); letter-spacing: .09em; text-transform: uppercase; color: var(--brand) }
-.muted { color: var(--muted) } .small { font-size: 14px } .tiny { font-size: 12.5px }
-.num { font-family: var(--f-num); font-variant-numeric: tabular-nums }
-.read { font: 17px/1.7 var(--f-read); max-width: 68ch }
-
-/* surfaces */
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 20px; box-shadow: var(--shadow); min-width: 0 }
-.card.flat { box-shadow: none }
-.stack { display: grid; gap: 12px; align-content: start; min-width: 0 }
-.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center }
-.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)) }
-.grid.wide { grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)) }
-.split { display: grid; gap: 20px; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) }
-@media (max-width: 860px) { .split { grid-template-columns: minmax(0, 1fr) } }
-.scroll { overflow-x: auto }
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Atkinson+Hyperlegible+Next:wght@400..800&family=Geist+Mono:wght@400..600&display=swap">
+<!-- DESIGN_CSS -->
+<style id="glue">
+/* Glue: classes from the app that sit outside the design-system contract, written against its tokens. */
+/* adapt the app's markup to the design's component grids */
+.starter { grid-template-columns: auto 1fr auto; grid-template-rows: auto auto; row-gap: 2px }
+.starter .ic { grid-row: 1 / span 2 } .starter h3 { grid-column: 2; margin: 0; font: 700 var(--t-body) var(--font-body) } .starter p { grid-column: 2; margin: 0 }
+.starter .go { grid-column: 3; grid-row: 1 / span 2; width: auto; height: auto; white-space: nowrap; font: 600 var(--t-small) var(--font-body) }
+.starters { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)) }
+.pcard { grid-template-columns: 1fr } .pcard > * { grid-column: 1 } .pcard .who { display: flex; align-items: center; gap: var(--s-3) } .pcard h3 { font: 700 var(--t-body) var(--font-body); margin: 0 } .pcard p { margin: 0 }
+.tabs { display: flex; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none } .tabs::-webkit-scrollbar { display: none } .tabs button { flex: none }
+.ballot { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; max-width: none } .ballot > div { min-width: 0 }
+.party-hero { display: grid; gap: var(--s-4) }
+.row { display: flex; flex-wrap: wrap; gap: var(--s-3); align-items: center }
+.stats { display: flex; gap: var(--s-6); flex-wrap: wrap }
+.stack, .split > *, .grid > *, .card, .scrubber > div, .cols > div { min-width: 0 }
+.nav { flex-wrap: wrap }
+.scrubber .years { overflow: hidden } .scrubber .years span { white-space: nowrap; font-size: var(--t-tiny, 11px) }
+.scrubber input[type=range] { min-width: 0 }
+.view { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-6, 28px) }
+.view > *, .stack > *, #pbody, #pv { min-width: 0 }
+.read { font-size: var(--t-lede, 17px); line-height: var(--lh-body, 1.6); max-width: var(--measure, 68ch) }
+.n { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums }
 hr.soft { border: 0; border-top: 1px solid var(--line); margin: 4px 0 }
-
-/* controls */
-.btn { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 9px 16px; font-weight: 600; font-size: 14.5px; cursor: pointer; text-decoration: none }
-.btn:hover { border-color: var(--brand) }
-.btn.primary { background: var(--brand); color: var(--brand-ink); border-color: var(--brand) }
-.btn.sun { background: var(--sun); color: var(--sun-ink); border-color: var(--sun) }
-.btn.ghost { background: transparent; border-color: transparent; color: var(--brand); padding-inline: 8px }
-.btn.sm { padding: 6px 12px; font-size: 13.5px }
-select, input[type="search"], input[type="number"] { font: 15px var(--f-ui); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 9px 12px; max-width: 100% }
-.chip { display: inline-flex; align-items: center; gap: 7px; font: 600 13px var(--f-ui); border: 1px solid var(--line); border-radius: 999px; padding: 5px 11px 5px 7px; background: var(--surface); cursor: pointer; white-space: nowrap }
-.chip[aria-pressed="true"] { background: var(--brand-soft); border-color: var(--brand) }
-.chips { display: flex; gap: 6px; flex-wrap: wrap }
-.toolbar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center }
-.toolbar input[type="search"] { flex: 1 1 240px }
-.dot { width: 11px; height: 11px; border-radius: 50%; flex: none; box-shadow: 0 0 0 1px var(--seat-stroke) }
-.tabs { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--line) }
-.tabs::-webkit-scrollbar { display: none }
-.tabs button { flex: none; background: none; border: 0; border-bottom: 3px solid transparent; padding: 10px 14px; font-weight: 700; color: var(--muted); cursor: pointer }
-.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--sun) }
-
-/* hero */
-.hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 32px; align-items: center; padding-block: 8px 4px }
-@media (max-width: 860px) { .hero { grid-template-columns: minmax(0, 1fr); gap: 16px } }
-.hero h1 em { font-style: normal; background: linear-gradient(transparent 62%, var(--sun) 62%, var(--sun) 92%, transparent 92%); padding: 0 .06em }
-.hero .cta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px }
-.count { display: inline-flex; gap: 8px; align-items: baseline; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-weight: 600; font-size: 14px; width: fit-content }
-.count b { font: 800 20px var(--f-display); color: var(--brand) }
-.starters { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)) }
-@media (max-width: 860px) { .starters { grid-template-columns: minmax(0, 1fr) } }
-.starter { text-align: left; cursor: pointer; display: grid; gap: 8px; border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: 20px; box-shadow: var(--shadow); transition: transform .15s }
-.starter:hover { transform: translateY(-2px); border-color: var(--brand) }
-.starter .ic { width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; background: var(--brand-soft); color: var(--brand) }
-.starter .ic.sun { background: color-mix(in srgb, var(--sun) 30%, transparent); color: var(--ink) }
-.starter .go { color: var(--brand); font-weight: 700; font-size: 14px }
-.dates { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)) }
-.date { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: center }
-.date .cal { width: 52px; text-align: center; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); background: var(--surface) }
-.date .cal span { display: block; background: var(--coral); color: #fff; font: 700 11px var(--f-ui); letter-spacing: .06em; padding: 2px 0 }
-.date .cal b { display: block; font: 800 22px/1.4 var(--f-display) }
+.cta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px }
 .date.past { opacity: .55 }
-
-/* party cards */
-.pcard { display: grid; gap: 12px; text-align: left; cursor: pointer; border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: 18px; box-shadow: var(--shadow); position: relative; overflow: hidden }
-.pcard::before { content: ""; position: absolute; inset: 0 0 auto; height: 6px; background: var(--pc) }
-.pcard:hover { border-color: var(--pc) }
-.pcard .who { display: flex; gap: 12px; align-items: center }
-.face { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; background: var(--sunk); flex: none; border: 2px solid var(--surface); box-shadow: 0 0 0 2px var(--pc, var(--line)) }
-.faces { display: flex } .faces .face + .face { margin-left: -14px }
-.badge { display: inline-flex; align-items: center; gap: 6px; font: 700 12px var(--f-ui); border-radius: 999px; padding: 3px 10px; background: var(--sunk); color: var(--muted) }
-.badge.in { background: var(--brand-soft); color: var(--brand) }
-.mono { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; font: 800 18px var(--f-display); color: #fff; background: var(--pc); flex: none }
-.ideas { margin: 0; padding-left: 0; list-style: none; display: grid; gap: 8px }
-.ideas li { display: grid; grid-template-columns: 22px 1fr; gap: 8px; align-items: start }
-.ideas li::before { content: ""; width: 18px; height: 18px; margin-top: 3px; border-radius: 6px; background: var(--pc, var(--brand)) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3.2 3L15 6.5' fill='none' stroke='white' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat }
-.quote { border-left: 4px solid var(--pc, var(--line)); padding: 4px 0 4px 14px; font: 16px/1.6 var(--f-read) }
-.meter { height: 10px; border-radius: 99px; background: var(--sunk); overflow: hidden; display: flex }
-.meter > span { height: 100% }
-.party-hero { border-radius: var(--r); padding: 28px; background: linear-gradient(135deg, color-mix(in srgb, var(--pc) 18%, var(--surface)), var(--surface) 70%); border: 1px solid var(--line); display: grid; gap: 14px }
-.stat { display: grid; gap: 2px }
-.stat b { font: 800 26px/1 var(--f-display) }
-.stat span { font-size: 13px; color: var(--muted) }
-.stats { display: flex; gap: 28px; flex-wrap: wrap }
-
-/* chamber + charts */
-.chamber svg { width: 100%; height: auto; display: block }
-.seat { cursor: pointer; stroke: var(--seat-stroke); stroke-width: .6 }
-.seat.dim { opacity: .14 }
-.legend { display: flex; flex-wrap: wrap; gap: 6px 14px }
-.legend .item { display: inline-flex; gap: 6px; align-items: center; font-size: 13.5px }
-.chart svg { width: 100%; height: auto; display: block; overflow: visible }
-.chart text { fill: var(--muted); font: 11px var(--f-num) }
-.chart .grid-l { stroke: var(--line) }
-.tip { font-size: 13px; color: var(--muted); min-height: 1.5em }
-.bar { display: flex; height: 26px; border-radius: 8px; overflow: hidden; background: var(--sunk); position: relative }
-.bar > span { height: 100% }
-.bar .line { position: absolute; top: -4px; bottom: -4px; width: 3px; background: var(--ink); border-radius: 2px }
-.seatcard { display: flex; gap: 12px; align-items: center; min-height: 64px }
-
-/* tables */
-table { border-collapse: collapse; width: 100%; font-size: 14.5px }
-th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top }
-th { font: 700 11.5px var(--f-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--muted) }
-td.n, th.n { text-align: right; font-family: var(--f-num); font-variant-numeric: tabular-nums }
-
-/* policies & promises */
-.pol { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: grid; gap: 8px; min-width: 0 }
-.pol .head { display: flex; gap: 10px; align-items: flex-start }
-.pol .st { font-weight: 700; font-size: 16px; line-height: 1.35 }
-.pol details summary { cursor: pointer; color: var(--brand); font-weight: 700; font-size: 14px }
-.pol p { margin: 6px 0; font: 15.5px/1.6 var(--f-read); max-width: 70ch }
-.srcs { display: flex; gap: 6px; flex-wrap: wrap }
-.cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px; align-items: start }
-.cols > div { display: grid; gap: 10px; min-width: 0 }
-.verdict { font: 700 11px var(--f-ui); text-transform: uppercase; letter-spacing: .05em; padding: 3px 8px; border-radius: 6px; color: #fff; white-space: nowrap }
-.v-kept { background: var(--ok) } .v-partially-kept { background: var(--warn) } .v-broken { background: var(--bad) }
-.v-in-progress { background: var(--info) } .v-abandoned { background: #8E3B36 } .v-not-yet-due, .v-unknown { background: var(--idle) }
-
-/* people */
-.people { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px }
-.person { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 14px 10px; display: grid; gap: 6px; justify-items: center; text-align: center; cursor: pointer }
-.person:hover { border-color: var(--brand) }
-.person .face { width: 88px; height: 88px }
-.person .nm { font-weight: 700; font-size: 14.5px; line-height: 1.25 }
-.status { font: 700 10.5px var(--f-ui); letter-spacing: .05em; text-transform: uppercase; border-radius: 6px; padding: 2px 7px; background: var(--sunk); color: var(--muted) }
-.status.mp { background: var(--brand); color: var(--brand-ink) }
-
-/* compass */
-.compass svg { width: 100%; height: auto; display: block }
-.compass .me { fill: var(--sun); stroke: var(--ink); stroke-width: 2 }
-.compass .party circle { stroke: var(--surface); stroke-width: 1.5; cursor: pointer }
-.compass .party text { paint-order: stroke; stroke: var(--sunk); stroke-width: 3px; fill: var(--ink); font-weight: 600 }
-.compass text { font: 11px var(--f-ui); fill: var(--muted) }
-.compass .axl { font: 700 11px var(--f-ui); fill: var(--ink); letter-spacing: .04em }
-.banner { background: var(--sun); color: var(--sun-ink); font: 600 14px var(--f-ui); }
+.v-unknown { background: var(--v-not-yet-due) }
+.seg { display: inline-flex; background: var(--surface-2); border-radius: var(--r-pill, 999px); padding: 3px; gap: 2px; flex-wrap: wrap }
+.seg button { border: 0; background: transparent; border-radius: var(--r-pill, 999px); padding: 6px 12px; font: 600 var(--t-small, 14px) var(--font-body); color: var(--text-2); cursor: pointer }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: 0 0 0 1px var(--line) }
+.banner { background: var(--sun); color: var(--on-sun); font: 600 var(--t-small, 14px) var(--font-body) }
 .banner .wrap { display: flex; gap: 12px; align-items: center; padding-block: 8px }
-.banner a { color: inherit } .banner button { margin-left: auto; background: transparent; border: 0; font: 700 18px var(--f-ui); color: inherit; cursor: pointer }
-
-/* electorate map */
-.map svg { width: 100%; height: auto; display: block }
-.map path.el { stroke: var(--surface); stroke-width: .7; cursor: pointer; transition: opacity .2s }
-.map path.el:hover, .map path.el.sel { stroke: var(--ink); stroke-width: 1.6 }
-.map path.el.dimmed { opacity: .25 }
-.insets { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px }
-.inset { background: var(--sunk); border-radius: 12px; padding: 6px; position: relative }
-.inset .lab { position: absolute; top: 6px; left: 8px; font: 700 11px var(--f-ui); color: var(--muted) }
+.banner a { color: inherit } .banner button { margin-left: auto; background: transparent; border: 0; font: 700 18px var(--font-body); color: inherit; cursor: pointer }
 .scrubber { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: center }
-.scrubber .years span { cursor: pointer }
-.scrubber input[type=range] { width: 100%; accent-color: var(--brand) }
-.scrubber .years { display: flex; justify-content: space-between; font: 600 12px var(--f-num); color: var(--muted) }
-.scrubber .years span.on { color: var(--ink); font-weight: 800 }
-.playbtn { width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--brand); color: var(--brand-ink); display: grid; place-items: center; cursor: pointer }
-.mapside { display: grid; gap: 12px; align-content: start }
-.hist { display: grid; gap: 4px }
-.hist div { display: grid; grid-template-columns: 44px 12px 1fr; gap: 8px; align-items: center; font-size: 13.5px }
-
-/* policy swipe */
-.swipe-wrap { max-width: 560px; margin: 0 auto; width: 100%; display: grid; gap: 14px }
-.stage { position: relative; min-height: 500px; touch-action: pan-y }
-.scard { position: absolute; inset: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 24px; box-shadow: var(--shadow); display: grid; grid-template-rows: auto auto minmax(0, 1fr); gap: 14px; align-content: start; user-select: none; cursor: grab; overflow: hidden }
-.scard .body { overflow-y: auto; padding-right: 4px; min-height: 0 }
-.scard.reveal { grid-template-rows: none }
-.scard.back { transform: scale(.96) translateY(12px); opacity: .7; pointer-events: none }
-.scard.back2 { transform: scale(.92) translateY(24px); opacity: .4; pointer-events: none }
-.scard .stmt { font: 700 clamp(21px, 3.4vw, 27px)/1.22 var(--f-display) }
-.scard .body { font: 15.5px/1.55 var(--f-read); color: var(--ink); display: grid; gap: 8px }
-.scard .body b { font-family: var(--f-ui); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted) }
-.scard .stamp { position: absolute; top: 22px; font: 800 22px var(--f-display); letter-spacing: .06em; padding: 6px 14px; border: 4px solid; border-radius: 12px; opacity: 0; transform: rotate(-12deg) }
-.scard .stamp.yes { left: 18px; color: var(--ok); border-color: var(--ok) } .scard .stamp.no { right: 18px; color: var(--bad); border-color: var(--bad); transform: rotate(12deg) }
-.scard.reveal { cursor: default; border-top: 8px solid var(--pc) }
-.swipe-actions { display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: center }
-.swipe-actions .big { border-radius: 999px; padding: 14px 10px; font: 700 16px var(--f-ui); border: 2px solid; cursor: pointer; background: var(--surface) }
-.swipe-actions .no { color: var(--bad); border-color: var(--bad) } .swipe-actions .yes { color: var(--ok); border-color: var(--ok) }
-.swipe-actions .big:hover { color: #fff } .swipe-actions .no:hover { background: var(--bad) } .swipe-actions .yes:hover { background: var(--ok) }
-.tallybar { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; justify-content: space-between }
-.verdict-pill { display: inline-flex; align-items: center; gap: 6px; font: 700 13px var(--f-ui); border-radius: 999px; padding: 5px 12px; color: #fff }
-@media (prefers-reduced-motion: no-preference) { .scard { transition: transform .25s, opacity .25s } .scard.dragging { transition: none } .scard.fly { transition: transform .35s ease-in, opacity .35s } }
-
-/* quiz */
-.quiz { max-width: 720px; margin: 0 auto; width: 100%; display: grid; gap: 18px }
-.qcard { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); display: grid; gap: 18px }
-.qtext { font: 700 clamp(22px, 3.2vw, 30px)/1.2 var(--f-display) }
-.scale { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px }
-@media (max-width: 560px) { .scale { grid-template-columns: minmax(0, 1fr) } }
-.scale button { border: 2px solid var(--line); background: var(--surface); border-radius: 14px; padding: 12px 6px; font-weight: 700; font-size: 14px; cursor: pointer; display: grid; gap: 4px; justify-items: center }
-.scale button:hover { border-color: var(--brand) }
-.scale button[aria-pressed="true"] { background: var(--brand); color: var(--brand-ink); border-color: var(--brand) }
-.scale .face-ic { font-size: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--sunk) }
-.progress { height: 8px; border-radius: 99px; background: var(--sunk); overflow: hidden }
-.progress span { display: block; height: 100%; background: var(--sun); border-radius: 99px; transition: width .3s }
-.match { display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: center; padding: 14px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line) }
-.match .pct { font: 800 26px var(--f-display) }
-
-/* dialog */
-dialog { border: 0; border-radius: 22px; padding: 0; background: var(--surface); color: var(--ink); width: min(880px, 96vw); max-height: 90vh; box-shadow: 0 20px 60px rgba(0,0,0,.3) }
-dialog::backdrop { background: rgba(12,18,32,.55); backdrop-filter: blur(2px) }
-.dlg-head { position: sticky; top: 0; z-index: 2; background: var(--surface); border-bottom: 1px solid var(--line); padding: 14px 20px; display: flex; gap: 12px; align-items: center }
-.dlg-head h3 { flex: 1; min-width: 0 }
-.dlg-body { padding: 20px 24px 40px; overflow-wrap: anywhere }
-.prose { font: 17px/1.7 var(--f-read); max-width: 70ch }
-.prose h1, .prose h2, .prose h3, .prose h4 { font-family: var(--f-display); margin: 1.5em 0 .5em }
-.prose h1 { font-size: 30px } .prose h2 { font-size: 24px } .prose h3 { font-size: 19px }
-.prose table { font: 14px var(--f-ui); display: block; overflow-x: auto }
-.prose img { max-width: 150px; border-radius: 12px; float: right; margin: 0 0 10px 14px }
-.prose blockquote { border-left: 4px solid var(--sun); margin: 1em 0; padding: 2px 14px; color: var(--muted) }
-.prose pre { white-space: pre-wrap }
-.empty { color: var(--muted); font-style: italic }
-.note { background: color-mix(in srgb, var(--sun) 16%, var(--surface)); border: 1px solid color-mix(in srgb, var(--sun) 45%, var(--line)); border-radius: 14px; padding: 12px 16px; font-size: 14.5px }
-.steps { counter-reset: s; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)) }
-.steps > div { counter-increment: s; position: relative; padding-top: 44px }
-.steps > div::before { content: counter(s); position: absolute; top: 0; left: 0; width: 34px; height: 34px; border-radius: 50%; background: var(--sun); color: var(--sun-ink); font: 800 17px/34px var(--f-display); text-align: center }
-.ballot { display: grid; grid-template-columns: 1fr 1fr; border: 2px solid var(--ink); border-radius: 12px; overflow: hidden; font-size: 13.5px }
-.ballot > div { padding: 10px 12px; display: grid; gap: 6px; align-content: start }
-.ballot > div + div { border-left: 2px solid var(--ink) }
-.ballot .bh { font: 800 13px var(--f-display); text-transform: uppercase; letter-spacing: .05em }
-.ballot .opt { display: flex; justify-content: space-between; gap: 6px; align-items: center }
-.ballot .box { width: 20px; height: 20px; border: 2px solid var(--ink); border-radius: 50%; display: grid; place-items: center; flex: none }
+.scrubber input[type=range] { width: 100%; accent-color: var(--primary) }
+.scrubber .years { display: flex; justify-content: space-between; font: 500 var(--t-tiny, 12px) var(--font-mono); color: var(--text-2) }
+.scrubber .years span { cursor: pointer } .scrubber .years span.on { color: var(--text); font-weight: 700 }
+.playbtn { width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--primary); color: var(--on-primary); display: grid; place-items: center; cursor: pointer }
+.insets { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px }
+.inset { background: var(--surface-2); border-radius: var(--r, 8px); padding: 6px; position: relative }
+.inset .lab { position: absolute; top: 6px; left: 8px; font: 600 var(--t-tiny, 11px) var(--font-mono); color: var(--text-2); letter-spacing: .04em; text-transform: uppercase }
+.map path.el.dimmed { opacity: .25 }
+.hist { display: grid; gap: 4px } .hist div { display: grid; grid-template-columns: 44px 12px 1fr; gap: 8px; align-items: center; font-size: var(--t-small, 14px) }
+.compass .axl { font: 600 var(--t-tiny, 11px) var(--font-mono); fill: var(--text); letter-spacing: .06em }
+.ballot .bh { font: 700 var(--t-tiny, 11px) var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--text-2) }
 .ballot .list { position: relative; max-height: 232px; overflow-y: auto; scrollbar-width: thin; display: grid; gap: 6px; padding-right: 2px }
 .ballot .tick { position: absolute; right: 2px; width: 20px; height: 20px; display: grid; place-items: center; pointer-events: none; opacity: 0; transition: top .7s cubic-bezier(.4,0,.2,1), opacity .3s }
 .ballot .tick.on { opacity: 1 }
-.ballot .tick::after { content: ""; width: 12px; height: 7px; border-left: 3px solid var(--coral); border-bottom: 3px solid var(--coral); transform: rotate(-45deg) translate(1px, -1px) }
-@media (prefers-reduced-motion: reduce) { .ballot .tick { display: none } }
-footer { color: var(--muted); font-size: 13px; padding-block: 24px 40px; border-top: 1px solid var(--line) }
-@media (max-width: 860px) { footer { padding-bottom: 110px } }
-.seg { display: inline-flex; background: var(--sunk); border-radius: 999px; padding: 3px; gap: 2px; flex-wrap: wrap }
-.seg button { border: 0; background: transparent; border-radius: 999px; padding: 6px 12px; font: 600 13px var(--f-ui); color: var(--muted); cursor: pointer }
-.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow) }
+.ballot .tick::after { content: ""; width: 12px; height: 7px; border-left: 3px solid var(--sun); border-bottom: 3px solid var(--sun); transform: rotate(-45deg) translate(1px, -1px) }
+.scale .face-ic { display: none }
 @media (prefers-reduced-motion: no-preference) {
-  .view { animation: fadeUp .4s cubic-bezier(.2,.7,.2,1) both }
-  .anim { animation: fadeUp .35s cubic-bezier(.2,.7,.2,1) both }
+  .view, .anim { animation: fadeUp .4s cubic-bezier(.2,.7,.2,1) both }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
   .meter > span, .bar > span, .progress span { animation: grow .7s cubic-bezier(.2,.7,.2,1) both; transform-origin: left }
   @keyframes grow { from { transform: scaleX(0) } }
-  .seat { transition: fill .5s, opacity .25s }
-  .map path.el { transition: fill .55s, opacity .2s }
-  .starter, .pcard, .person { transition: transform .18s, box-shadow .18s, border-color .18s } .starter:hover, .pcard:hover, .person:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(20,32,54,.12) }
-  .btn { transition: transform .12s, background .15s, border-color .15s } .btn:active { transform: scale(.97) }
-  .chip { transition: background .15s, border-color .15s }
-  dialog[open] { animation: pop .25s cubic-bezier(.2,.7,.2,1) both } dialog::backdrop { animation: fadeIn .25s both } @keyframes fadeIn { from { opacity: 0 } }
-  .tabs button { transition: color .15s, border-color .15s }
-  .stat b { animation: fadeUp .5s both }
-  .pop { animation: pop .3s both }
-  @keyframes pop { from { transform: scale(.4); opacity: 0 } to { transform: scale(1); opacity: 1 } }
+  .pop { animation: pop .3s both } @keyframes pop { from { transform: scale(.4); opacity: 0 } to { transform: scale(1); opacity: 1 } }
+  .seat { transition: fill .5s, opacity .25s } .map path.el { transition: opacity .2s }
+  .scard { transition: transform .25s, opacity .25s } .scard.dragging { transition: none } .scard.fly { transition: transform .35s ease-in, opacity .35s }
 }
+@media (prefers-reduced-motion: reduce) { .ballot .tick { display: none } }
 </style>
 
-<header class="top"><div class="wrap">
-  <button class="logo" data-go="home" aria-label="Ballot Book home">
-    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M3 27a14 14 0 0 1 28 0" fill="none" stroke="var(--brand)" stroke-width="5" stroke-linecap="round"/><path d="M10 27a7 7 0 0 1 14 0" fill="none" stroke="var(--sun)" stroke-width="5" stroke-linecap="round"/></svg>
-    <span><b>Ballot Book</b><small>NZ ELECTION 2026</small></span></button>
-  <nav class="nav" id="nav"></nav>
+<header class="top"><div class="inner">
+  <button class="logo" data-go="home" aria-label="Ballot Book home"><span class="mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Ballot Book <span class="tag">NZ 2026</span></button>
+  <nav class="nav" id="nav" aria-label="Sections"></nav>
+  <span class="spacer"></span>
+  <button class="iconbtn" id="themebtn" type="button" aria-label="Toggle dark mode"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
 </div></header>
 <main class="wrap" id="main"><p class="empty">Loading the guide…</p></main>
 <footer><div class="wrap" id="foot"></div></footer>
@@ -331,7 +86,7 @@ const KEY_DATES = [['2026-10-25', 'Last day to enrol', 'There is no enrolling on
   ['2026-10-26', 'Advance voting opens', 'Vote early at any voting place in the country.'],
   ['2026-11-07', 'Election day', 'Voting places open 9am to 7pm. Results start coming in that night.'],
   ['2026-11-27', 'Official results', 'Special votes are counted and the final seat count is confirmed (approx. 3 weeks later).']];
-const NAV = [['home', 'Home'], ['match', 'Find your match'], ['swipe', 'Policy swipe'], ['polls', 'Polls & forecast'], ['compass', 'Compass'], ['map', 'Electorate map'], ['parties', 'Parties'], ['issues', 'Issues'], ['electorate', 'Your electorate'], ['parliament', 'Parliament'], ['more', 'More']];
+const NAV = [['home', 'Home'], ['match', 'Match'], ['swipe', 'Swipe'], ['compass', 'Compass'], ['polls', 'Polls'], ['map', 'Map'], ['parties', 'Parties'], ['issues', 'Issues'], ['parliament', 'Parliament'], ['more', 'More']];
 const ICON = {
   home: '<path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/>',
   match: '<path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/>',
@@ -395,9 +150,9 @@ function chamberSVG(seatList, { highlight = null, label = 'Seats', animate = fal
   const n = seatList.length; if (!n) return '<p class="empty">No seat data yet.</p>';
   const { pts, dot } = hemicycle(n), R = 185, cx = 200, cy = 200;
   const c = pts.map((p, i) => { const s = seatList[i]; const dim = highlight && !highlight.has(s.party) ? ' dim' : '';
-    return `<circle class="seat${dim}${animate ? ' pop' : ''}" style="${animate ? `animation-delay:${Math.min(400, i * 2.5)}ms;transform-origin:${(cx + p.x * R).toFixed(1)}px ${(cy - p.y * R).toFixed(1)}px` : ''}" tabindex="0" data-i="${i}" cx="${(cx + p.x * R).toFixed(1)}" cy="${(cy - p.y * R).toFixed(1)}" r="${(dot * R).toFixed(2)}" fill="${pcolor(s.party)}"><title>${esc(s.name || pname(s.party))}</title></circle>` }).join('');
+    const ring = ['nz-first', 'act'].includes(s.party) ? ' ring' : ''; return `<circle class="seat${dim}${ring}${animate ? ' pop' : ''}" style="${animate ? `animation-delay:${Math.min(400, i * 2.5)}ms;transform-origin:${(cx + p.x * R).toFixed(1)}px ${(cy - p.y * R).toFixed(1)}px` : ''}" tabindex="0" data-i="${i}" cx="${(cx + p.x * R).toFixed(1)}" cy="${(cy - p.y * R).toFixed(1)}" r="${(dot * R).toFixed(2)}" fill="${pcolor(s.party)}"><title>${esc(s.name || pname(s.party))}</title></circle>` }).join('');
   const maj = Math.floor(n / 2) + 1;
-  return `<svg viewBox="0 0 400 ${caption ? 216 : 204}" role="img" aria-label="${esc(label)}">${c}${caption ? `<text x="200" y="194" text-anchor="middle" style="font:800 34px var(--f-display);fill:var(--ink)">${n}</text><text x="200" y="212" text-anchor="middle" style="font:600 11px var(--f-ui);fill:var(--muted)">seats · ${maj} to govern</text>` : ''}</svg>` }
+  return `<svg viewBox="0 0 400 ${caption ? 240 : 204}" role="img" aria-label="${esc(label)}">${c}${caption ? `<text x="200" y="222" text-anchor="middle" style="font:800 30px var(--font-display);fill:var(--text)">${n}</text><text x="200" y="237" text-anchor="middle" style="font:600 11px var(--font-mono);fill:var(--text-2)">seats · ${maj} to govern</text>` : ''}</svg>` }
 function chamberUpdate(container, seatList, opts = {}) { // animate fills in place when the seat count is unchanged
   const svg = container.querySelector('svg'); const circles = svg ? svg.querySelectorAll('circle.seat') : [];
   if (!svg || circles.length !== seatList.length) { container.innerHTML = chamberSVG(seatList, { ...opts, animate: true }); return }
@@ -426,7 +181,7 @@ async function loadPeople() { if (!S.people) S.people = await getJSON('data/peop
 const STATUS = { 'current-mp': 'MP', 'current-mp-standing-2026': 'MP · standing', 'current-mp-retiring': 'MP · retiring', 'candidate-2026': 'Candidate', 'former-mp': 'Former MP', 'deceased': 'Deceased', 'party-official': 'Official' };
 const isMP = s => String(s || '').startsWith('current-mp');
 const findPerson = (slug, name) => (S.people || []).find(p => p.slug === slug) || (S.people || []).find(p => name && p.name === name);
-const faceHTML = (p, party, cls = 'face') => { const img = p && S.thumbs && S.thumbs[p.folder]; return img ? `<img class="${cls}" style="--pc:${pcolor(party || p.party)}" loading="lazy" src="${img}" alt="">` : `<span class="${cls}" style="--pc:${pcolor(party || (p && p.party))};display:grid;place-items:center;font:800 20px var(--f-display);color:var(--muted)">${esc(((p && p.name) || '?')[0])}</span>` };
+const faceHTML = (p, party, cls = 'face') => { const img = p && S.thumbs && S.thumbs[p.folder]; return img ? `<img class="${cls}" style="--pc:${pcolor(party || p.party)}" loading="lazy" src="${img}" alt="">` : `<span class="${cls}" style="--pc:${pcolor(party || (p && p.party))};display:grid;place-items:center;font:800 20px var(--font-display);color:var(--text-2)">${esc(((p && p.name) || '?')[0])}</span>` };
 function openPerson(p) {
   openDialog(p.name, `<div class="row" style="align-items:flex-start;gap:20px">${faceHTML(p, p.party, 'face" style="width:128px;height:128px;--pc:' + pcolor(p.party))}
     <div class="stack" style="flex:1;min-width:220px;gap:6px"><div class="row" style="gap:8px"><span class="dot" style="background:${pcolor(p.party)}"></span><b>${esc(P(p.party).name || pname(p.party))}</b><span class="status ${isMP(p.status) ? 'mp' : ''}">${esc(STATUS[p.status] || p.status || '')}</span></div>
@@ -535,8 +290,8 @@ V.party = async (s, tab = 'glance') => {
   $('#main').innerHTML = `<section class="view">
     <button class="btn ghost sm" data-go="parties" style="justify-self:start">← All parties</button>
     <div class="party-hero" style="--pc:${pcolor(s)}"><div class="row" style="gap:16px;flex-wrap:nowrap">${faces.length ? `<span class="faces">${faces.slice(0, 2).map(f => faceHTML(f, s, 'face" style="width:72px;height:72px;--pc:' + pcolor(s))).join('')}</span>` : `<span class="mono" style="width:72px;height:72px;font-size:24px">${esc(initials(s))}</span>`}
-      <div style="min-width:0"><div class="kicker" style="color:var(--ink)">${esc(T(g.position))}</div><h1 style="font-size:clamp(30px,5vw,46px)">${esc(g.name || pp.name)}</h1><div class="muted">${esc((g.leaders || []).map(l => l.name).join(' & '))}${g.founded ? ' · founded ' + esc(g.founded) : ''}</div></div></div>
-      ${g.tagline ? `<p class="lede" style="color:var(--ink)">${esc(g.tagline)}</p>` : ''}
+      <div style="min-width:0"><div class="kicker" style="color:var(--text)">${esc(T(g.position))}</div><h1 style="font-size:clamp(30px,5vw,46px)">${esc(g.name || pp.name)}</h1><div class="muted">${esc((g.leaders || []).map(l => l.name).join(' & '))}${g.founded ? ' · founded ' + esc(g.founded) : ''}</div></div></div>
+      ${g.tagline ? `<p class="lede" style="color:var(--text)">${esc(g.tagline)}</p>` : ''}
       <div class="stats"><div class="stat"><b>${seats}</b><span>MPs now</span></div>${poll ? `<div class="stat"><b>${fmt(poll)}%</b><span>poll average</span></div>` : ''}<div class="stat"><b>${pols.length}</b><span>2026 policies</span></div>${prom.length ? `<div class="stat"><b>${prom.length}</b><span>promises checked</span></div>` : ''}</div></div>
     <div class="tabs" role="tablist" id="ptabs">${tabs.map(([k, l]) => `<button role="tab" data-t="${k}" aria-selected="${k === tab}">${l}</button>`).join('')}</div>
     <div id="pbody"></div></section>`;
@@ -596,7 +351,7 @@ function docButtons(p, pol) {
 function policyCard(p, pol, showParty = true) {
   const sm = pol.summary || {};
   return `<article class="pol"><div class="head">${showParty ? `<span class="dot" style="background:${pcolor(p)};margin-top:6px"></span>` : ''}<div style="min-width:0"><div class="st">${esc(pol.statement)}</div>
-    <div class="tiny muted">${showParty ? esc(pname(p)) + ' · ' : ''}${esc(TOPIC_NAMES[topicOf(pol)] || 'Other')}${isKey(pol) ? ' · <b style="color:var(--brand)">headline policy</b>' : ''}</div></div></div>
+    <div class="tiny muted">${showParty ? esc(pname(p)) + ' · ' : ''}${esc(TOPIC_NAMES[topicOf(pol)] || 'Other')}${isKey(pol) ? ' · <b style="color:var(--primary)">headline policy</b>' : ''}</div></div></div>
     ${sm.why || sm.how || sm.text ? `<details><summary>Why and how</summary>${sm.why ? `<p><b>Why:</b> ${esc(sm.why)}</p>` : ''}${sm.how ? `<p><b>How:</b> ${esc(sm.how)}</p>` : ''}${sm.text ? `<p>${esc(sm.text)}</p>` : ''}${sm.cost || pol.costing ? `<p><b>Cost:</b> ${esc(sm.cost || (typeof pol.costing === 'string' ? pol.costing : JSON.stringify(pol.costing)))}</p>` : ''}</details>` : ''}
     ${docButtons(p, pol)}</article>`;
 }
@@ -687,12 +442,12 @@ function partyCompassPoints(C, CP, source) { const out = [];
     out.push({ slug, x: ex && ex.score, y: sy && sy.score, pop: pp && pp.score, n: Object.keys(ans).length }) }
   return out }
 function compassPlot(me, parties, { showMe = true } = {}) { const W = 560, H = 560, pad = 40; const sx = v => pad + (v + 10) / 20 * (W - 2 * pad), sy = v => H - pad - (v + 10) / 20 * (H - 2 * pad);
-  let g = `<rect x="${pad}" y="${pad}" width="${W - 2 * pad}" height="${H - 2 * pad}" fill="var(--sunk)" rx="14"/>`;
+  let g = `<rect x="${pad}" y="${pad}" width="${W - 2 * pad}" height="${H - 2 * pad}" fill="var(--surface-2)" rx="14"/>`;
   for (let v = -10; v <= 10; v += 5) g += `<line class="grid-l" x1="${sx(v)}" x2="${sx(v)}" y1="${pad}" y2="${H - pad}" stroke="var(--line)"/><line class="grid-l" y1="${sy(v)}" y2="${sy(v)}" x1="${pad}" x2="${W - pad}" stroke="var(--line)"/>`;
-  g += `<line x1="${sx(0)}" x2="${sx(0)}" y1="${pad}" y2="${H - pad}" stroke="var(--muted)"/><line y1="${sy(0)}" y2="${sy(0)}" x1="${pad}" x2="${W - pad}" stroke="var(--muted)"/>`;
+  g += `<line x1="${sx(0)}" x2="${sx(0)}" y1="${pad}" y2="${H - pad}" stroke="var(--text-2)"/><line y1="${sy(0)}" y2="${sy(0)}" x1="${pad}" x2="${W - pad}" stroke="var(--text-2)"/>`;
   g += `<text class="axl" x="${pad + 8}" y="${pad + 18}">AUTHORITARIAN · TRADITIONAL</text><text class="axl" x="${pad + 8}" y="${H - pad - 8}">LIBERTARIAN · PLURALIST</text><text class="axl" x="${pad + 8}" y="${H / 2 - 8}">LEFT</text><text class="axl" x="${W - pad - 8}" y="${H / 2 - 8}" text-anchor="end">RIGHT</text>`;
   g += parties.filter(p => p.x != null && p.y != null).map(p => `<g class="party" data-p="${p.slug}"><circle cx="${sx(p.x)}" cy="${sy(p.y)}" r="9" fill="${pcolor(p.slug)}"><title>${esc(pname(p.slug))}: economic ${fmt(p.x)}, social ${fmt(p.y)}</title></circle><text x="${Math.min(sx(p.x) + 12, W - pad - 90)}" y="${Math.max(pad + 14, Math.min(H - pad - 6, sy(p.y) + 4))}">${esc(pname(p.slug))}</text></g>`).join('');
-  if (showMe && me && me.x && me.y) g += `<rect x="${sx(me.x.score - me.x.half)}" y="${sy(me.y.score + me.y.half)}" width="${sx(me.x.score + me.x.half) - sx(me.x.score - me.x.half)}" height="${sy(me.y.score - me.y.half) - sy(me.y.score + me.y.half)}" fill="var(--sun)" opacity=".18" rx="8"/><circle class="me" cx="${sx(me.x.score)}" cy="${sy(me.y.score)}" r="11"><title>You</title></circle><text x="${sx(me.x.score)}" y="${sy(me.y.score) - 16}" text-anchor="middle" style="fill:var(--ink);font-weight:800">You</text>`;
+  if (showMe && me && me.x && me.y) g += `<rect x="${sx(me.x.score - me.x.half)}" y="${sy(me.y.score + me.y.half)}" width="${sx(me.x.score + me.x.half) - sx(me.x.score - me.x.half)}" height="${sy(me.y.score - me.y.half) - sy(me.y.score + me.y.half)}" fill="var(--sun)" opacity=".18" rx="8"/><circle class="me" cx="${sx(me.x.score)}" cy="${sy(me.y.score)}" r="11"><title>You</title></circle><text x="${sx(me.x.score)}" y="${sy(me.y.score) - 16}" text-anchor="middle" style="fill:var(--text);font-weight:800">You</text>`;
   return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Political compass">${g}</svg>` }
 V.compass = () => {
   const C = G().compass || {}; const CP = G().compass_parties || {}; const items = C.items || [];
@@ -758,12 +513,12 @@ V.map = async (startYear) => {
     const setId = idx.election_to_boundary_set[year]; await loadGeo(setId); const feats = S.geo[`${type}-${setId}`].features; const res = electorateResults(year);
     const aliases = ((idx.boundary_sets[setId] || {}).aliases) || {};
     const resFor = f => res[f.properties.slug] || res[aliases[f.properties.slug]] || res[slugify(f.properties.name)] || Object.values(res).find(r => r.e && slugify(r.e.name) === f.properties.slug) || null;
-    const colour = f => { const r = resFor(f); return r && r.party ? pcolor(r.party) : 'var(--sunk)' };
-    const render = (bbox, W, H) => { const proj = projector(bbox, W, H); return feats.map(f => `<path class="el ${sel === f.properties.slug ? 'sel' : ''}" data-slug="${esc(f.properties.slug)}" d="${featPath(f, proj, bbox)}" fill="${colour(f)}"><title>${esc(f.properties.name)}${(r => r ? ' · ' + esc(r.winner || '') + (r.party ? ' (' + esc(pname(r.party)) + ')' : '') : '')(resFor(f))}</title></path>`).join('') };
-    $('#mmain').innerHTML = `<svg viewBox="0 0 520 640" role="img" aria-label="Map of electorates, ${year}">${render(idx.bbox_mainland, 520, 640)}<text x="12" y="28" style="font:800 28px var(--f-display);fill:var(--ink)">${year}${year === 2026 ? ' · current MPs' : ''}</text></svg>`;
+    const colour = f => { const r = resFor(f); return r && r.party ? pcolor(r.party) : 'var(--surface-2)' };
+    const render = (bbox, W, H) => { const proj = projector(bbox, W, H); return feats.map(f => `<path class="el ${sel === f.properties.slug ? 'sel' : ''}" data-slug="${esc(f.properties.slug)}" d="${featPath(f, proj, bbox)}" style="${(r => r && r.party ? '--pc:' + pcolor(r.party) : '')(resFor(f))}"><title>${esc(f.properties.name)}${(r => r ? ' · ' + esc(r.winner || '') + (r.party ? ' (' + esc(pname(r.party)) + ')' : '') : '')(resFor(f))}</title></path>`).join('') };
+    $('#mmain').innerHTML = `<svg viewBox="0 0 520 640" role="img" aria-label="Map of electorates, ${year}">${render(idx.bbox_mainland, 520, 640)}<text x="12" y="28" style="font:800 28px var(--font-display);fill:var(--text)">${year}${year === 2026 ? ' · current MPs' : ''}</text></svg>`;
     $('#minsets').innerHTML = type === 'general' ? ['auckland', 'wellington', 'christchurch'].map(k => { const ins = idx.insets[k]; return `<div class="inset"><span class="lab">${esc(ins.label)}</span><svg viewBox="0 0 200 200">${render(ins.bbox, 200, 200)}</svg></div>` }).join('') : '';
     const counts = {}; feats.forEach(f => { const r = resFor(f); const p = r && r.party ? r.party : 'vacant'; counts[p] = (counts[p] || 0) + 1 });
-    $('#mlegend').innerHTML = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([p, n]) => `<span class="item"><span class="dot" style="background:${p === 'vacant' ? 'var(--sunk)' : pcolor(p)}"></span>${p === 'vacant' ? 'Vacant' : esc(pname(p))} <b class="num">${n}</b></span>`).join('');
+    $('#mlegend').innerHTML = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([p, n]) => `<span class="item"><span class="dot" style="background:${p === 'vacant' ? 'var(--surface-2)' : pcolor(p)}"></span>${p === 'vacant' ? 'Vacant' : esc(pname(p))} <b class="num">${n}</b></span>`).join('');
     $('#myear').value = MAP_YEARS.indexOf(year); document.querySelectorAll('.years span').forEach(x => x.classList.toggle('on', +x.dataset.y === year));
     $('#mt-g').setAttribute('aria-pressed', type === 'general'); $('#mt-m').setAttribute('aria-pressed', type === 'maori');
     if (sel) side(feats.find(f => f.properties.slug === sel), resFor) };
@@ -775,7 +530,7 @@ V.map = async (startYear) => {
         <button class="btn sm" data-go="electorate-${esc(e.slug)}" style="justify-self:start">Candidates & 2026 guide</button>` }
     else if (r) html += `<p><b>${year} winner:</b> ${esc(r.winner)} (${esc(pname(r.party))})${r.majority ? ` by <span class="num">${Number(r.majority).toLocaleString('en-NZ')}</span>` : ''}${r.runner_up ? ` over ${esc(r.runner_up)} (${esc(pname(r.runner_up_party))})` : ''}${r.result ? ` · <span class="badge">${esc(r.result)}</span>` : ''}</p>`;
     else html += `<p class="muted">No result on record for this boundary set.</p>`;
-    html += `<h4>History</h4><div class="hist">${hist.map(([y, h]) => `<div><span class="num muted">${y}</span><span class="dot" style="background:${h && h.party ? pcolor(h.party) : 'var(--sunk)'}"></span><span>${h ? esc(h.winner) + ' <span class="muted">· ' + esc(pname(h.party)) + '</span>' : '<span class="muted">seat did not exist</span>'}</span></div>`).join('')}</div>`;
+    html += `<h4>History</h4><div class="hist">${hist.map(([y, h]) => `<div><span class="num muted">${y}</span><span class="dot" style="background:${h && h.party ? pcolor(h.party) : 'var(--surface-2)'}"></span><span>${h ? esc(h.winner) + ' <span class="muted">· ' + esc(pname(h.party)) + '</span>' : '<span class="muted">seat did not exist</span>'}</span></div>`).join('')}</div>`;
     $('#mside').innerHTML = html };
   $('#main').addEventListener('click', e => { const p = e.target.closest('path.el'); if (!p) return; sel = p.dataset.slug; document.querySelectorAll('path.el').forEach(x => x.classList.toggle('sel', x.dataset.slug === sel)); draw() });
   $('#myear').oninput = () => { year = MAP_YEARS[+$('#myear').value]; draw() };
@@ -821,8 +576,8 @@ function pollChart(polls, parties, cw = 760) {
   const xs = d => L + (new Date(d).getTime() - t0) / (t1 - t0) * (W - L - R), maxV = 45, ys = v => T + (1 - v / maxV) * (H - T - B);
   let g = [0, 10, 20, 30, 40].map(v => `<line class="grid-l" x1="${L}" x2="${W - R}" y1="${ys(v)}" y2="${ys(v)}"/><text x="4" y="${ys(v) + 4}">${v}%</text>`).join('');
   for (let y = 2024; y <= 2026; y++) g += `<text x="${xs(y + '-01-01')}" y="${H - 6}" text-anchor="middle">${y}</text>`;
-  g += `<line x1="${xs('2026-11-07')}" x2="${xs('2026-11-07')}" y1="${T}" y2="${H - B}" stroke="var(--brand)" stroke-dasharray="3 3"/><text x="${xs('2026-11-07') - 4}" y="${T + 10}" text-anchor="end" style="fill:var(--brand);font-weight:700">election</text>`;
-  g += `<line x1="${L}" x2="${W - R}" y1="${ys(5)}" y2="${ys(5)}" stroke="var(--muted)" stroke-dasharray="2 4"/><text x="${L + 4}" y="${ys(5) - 4}">5% threshold</text>`;
+  g += `<line x1="${xs('2026-11-07')}" x2="${xs('2026-11-07')}" y1="${T}" y2="${H - B}" stroke="var(--primary)" stroke-dasharray="3 3"/><text x="${xs('2026-11-07') - 4}" y="${T + 10}" text-anchor="end" style="fill:var(--primary);font-weight:700">election</text>`;
+  g += `<line x1="${L}" x2="${W - R}" y1="${ys(5)}" y2="${ys(5)}" stroke="var(--text-2)" stroke-dasharray="2 4"/><text x="${L + 4}" y="${ys(5) - 4}">5% threshold</text>`;
   const sorted = polls.slice().sort((a, b) => a.date.localeCompare(b.date));
   const res2023 = (S.data.elections.find(e => e.year === 2023) || {}).parties || [];
   for (const p of parties) { const c = pcolor(p); const pp = sorted.filter(x => typeof x.parties[p] === 'number'); if (!pp.length) continue;
@@ -851,10 +606,10 @@ function forecastSummary(F) {
     <div class="split"><div class="stack"><h4>Coalition blocs</h4><div class="scroll"><table><thead><tr><th>Bloc</th><th class="n">Seats</th><th class="n">80% range</th><th class="n">Chance of majority</th></tr></thead><tbody>${blocs.map(b => `<tr><td>${esc(b.bloc)}</td><td class="n">${b.seats_expected}</td><td class="n">${(b.seats_80 || []).join('–')}</td><td class="n"><b>${pct(b.p_majority)}</b></td></tr>`).join('')}</tbody></table></div>
       <p class="tiny muted">${esc((F.majority_threshold || {}).note || '')}</p></div>
       ${mlp ? `<div class="stack chamber"><h4>Most likely Parliament <span class="tiny muted">(${fmt((F.most_likely_parliament.share_of_simulations || 0) * 100, 1)}% of simulations)</span></h4>${chamberSVG(seatsFromComposition(mlp, []), { label: 'Most likely parliament' })}<div class="legend">${Object.entries(mlp).filter(([, n]) => n).sort((a, b) => P(a[0]).order - P(b[0]).order).map(([p, n]) => `<span class="item"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))} <b class="num">${n}</b></span>`).join('')}</div></div>` : ''}</div>
-    ${Object.keys(maori).length ? `<details><summary style="cursor:pointer;color:var(--brand);font-weight:700">Māori electorates and Epsom: who is likely to win each seat</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Seat</th><th>Chance of winning</th></tr></thead><tbody>${Object.entries(maori).map(([seat, m]) => `<tr><td>${esc(seat)}</td><td>${Object.entries(m.p_win || {}).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= 1).map(([p, v]) => `<span class="row" style="display:inline-flex;gap:4px;margin-right:10px"><span class="dot" style="background:${pcolor(partyKey(p))}"></span>${esc(p)} <b class="num">${pct(v)}</b></span>`).join('')}</td></tr>`).join('')}${F.electorates.epsom ? `<tr><td>Epsom</td><td><span class="row" style="display:inline-flex;gap:4px"><span class="dot" style="background:${pcolor('act')}"></span>ACT <b class="num">${pct(F.electorates.epsom.p_act_wins)}</b></span> <span class="tiny muted">${esc(F.electorates.epsom.assumption || '')}</span></td></tr>` : ''}</tbody></table></div></details>` : ''}
-    ${(F.pollsters || []).length ? `<details><summary style="cursor:pointer;color:var(--brand);font-weight:700">Pollster house effects (how each pollster leans vs the pooled trend)</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Pollster</th><th class="n">Polls</th>${P7.map(x => `<th class="n"><span class="dot" title="${esc(pname(x.party))}" style="background:${pcolor(x.party)};display:inline-block"></span></th>`).join('')}</tr></thead><tbody>${F.pollsters.filter(q => q.n_polls_this_term).map(q => `<tr><td>${esc(q.pollster)}${q.internal ? ' <span class="tiny muted">(party-commissioned, half weight)</span>' : ''}</td><td class="n">${q.n_polls_this_term}</td>${P7.map(x => { const v = (q.house_effects || {})[x.party]; return `<td class="n">${v == null ? '–' : (v > 0 ? '+' : '') + fmt(v)}</td>` }).join('')}</tr>`).join('')}</tbody></table></div><p class="tiny muted">${esc(F.house_effects_note || '')}</p></details>` : ''}
-    ${track.length ? `<details><summary style="cursor:pointer;color:var(--brand);font-weight:700">Track record: what this model would have said two weeks before past elections</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Election</th><th class="n">Polls used</th><th>Results inside the 80% range</th><th>Inside the 95% range</th></tr></thead><tbody>${track.map(t => `<tr><td class="num">${t.election}</td><td class="n">${t.n_polls_used_120d ?? '–'}</td><td>${esc(t.coverage80 || '')}</td><td>${esc(t.coverage95 || '')}</td></tr>`).join('')}</tbody></table></div><p class="tiny muted">${esc(F.historical_track_record.note || '')} Overall: ${esc(F.historical_track_record.coverage80 || '')} of results fell inside the 80% range and ${esc(F.historical_track_record.coverage95 || '')} inside the 95% range.</p></details>` : ''}
-    <details><summary style="cursor:pointer;color:var(--brand);font-weight:700">How to read this, and what it can't tell you</summary><ul class="small" style="margin-top:8px">${(F.how_to_read || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul><h4>Caveats</h4><ul class="small">${(F.caveats || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></details>
+    ${Object.keys(maori).length ? `<details><summary style="cursor:pointer;color:var(--primary);font-weight:700">Māori electorates and Epsom: who is likely to win each seat</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Seat</th><th>Chance of winning</th></tr></thead><tbody>${Object.entries(maori).map(([seat, m]) => `<tr><td>${esc(seat)}</td><td>${Object.entries(m.p_win || {}).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= 1).map(([p, v]) => `<span class="row" style="display:inline-flex;gap:4px;margin-right:10px"><span class="dot" style="background:${pcolor(partyKey(p))}"></span>${esc(p)} <b class="num">${pct(v)}</b></span>`).join('')}</td></tr>`).join('')}${F.electorates.epsom ? `<tr><td>Epsom</td><td><span class="row" style="display:inline-flex;gap:4px"><span class="dot" style="background:${pcolor('act')}"></span>ACT <b class="num">${pct(F.electorates.epsom.p_act_wins)}</b></span> <span class="tiny muted">${esc(F.electorates.epsom.assumption || '')}</span></td></tr>` : ''}</tbody></table></div></details>` : ''}
+    ${(F.pollsters || []).length ? `<details><summary style="cursor:pointer;color:var(--primary);font-weight:700">Pollster house effects (how each pollster leans vs the pooled trend)</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Pollster</th><th class="n">Polls</th>${P7.map(x => `<th class="n"><span class="dot" title="${esc(pname(x.party))}" style="background:${pcolor(x.party)};display:inline-block"></span></th>`).join('')}</tr></thead><tbody>${F.pollsters.filter(q => q.n_polls_this_term).map(q => `<tr><td>${esc(q.pollster)}${q.internal ? ' <span class="tiny muted">(party-commissioned, half weight)</span>' : ''}</td><td class="n">${q.n_polls_this_term}</td>${P7.map(x => { const v = (q.house_effects || {})[x.party]; return `<td class="n">${v == null ? '–' : (v > 0 ? '+' : '') + fmt(v)}</td>` }).join('')}</tr>`).join('')}</tbody></table></div><p class="tiny muted">${esc(F.house_effects_note || '')}</p></details>` : ''}
+    ${track.length ? `<details><summary style="cursor:pointer;color:var(--primary);font-weight:700">Track record: what this model would have said two weeks before past elections</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Election</th><th class="n">Polls used</th><th>Results inside the 80% range</th><th>Inside the 95% range</th></tr></thead><tbody>${track.map(t => `<tr><td class="num">${t.election}</td><td class="n">${t.n_polls_used_120d ?? '–'}</td><td>${esc(t.coverage80 || '')}</td><td>${esc(t.coverage95 || '')}</td></tr>`).join('')}</tbody></table></div><p class="tiny muted">${esc(F.historical_track_record.note || '')} Overall: ${esc(F.historical_track_record.coverage80 || '')} of results fell inside the 80% range and ${esc(F.historical_track_record.coverage95 || '')} inside the 95% range.</p></details>` : ''}
+    <details><summary style="cursor:pointer;color:var(--primary);font-weight:700">How to read this, and what it can't tell you</summary><ul class="small" style="margin-top:8px">${(F.how_to_read || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul><h4>Caveats</h4><ul class="small">${(F.caveats || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></details>
     <p class="tiny muted">${esc(F.simulation ? F.simulation.draws.toLocaleString('en-NZ') + ' simulated elections' : '')} · poll-of-polls with recency weighting and pollster house effects, polling error calibrated on 2011–2023, seats by Sainte-Laguë with the 5% threshold and electorate seats. Probabilities are rounded to whole numbers on purpose.</p></div>` }
 
 /* ----- policy swipe ----- */
@@ -901,7 +656,7 @@ V.swipe = async () => {
     setTimeout(() => verdict === 'skip' ? (i++, render()) : reveal(c, verdict), 260) };
   const reveal = (c, verdict) => { revealed = true; $('#acts').hidden = true;
     const faces = leaderFaces(c.party); const tally = tallyFor(st, c.party);
-    stage.innerHTML = `<article class="scard reveal" style="position:relative;--pc:${pcolor(c.party)}"><div class="row" style="justify-content:space-between"><span class="verdict-pill" style="background:${verdict === 'agree' ? 'var(--ok)' : 'var(--bad)'}">${verdict === 'agree' ? '✓ You agreed' : '✕ You disagreed'}</span><span class="tiny muted">${esc(TOPIC_NAMES[c.topic] || 'Other')}</span></div>
+    stage.innerHTML = `<article class="scard reveal" style="position:relative;--pc:${pcolor(c.party)}"><div class="row" style="justify-content:space-between"><span class="verdict-pill" style="background:${verdict === 'agree' ? 'var(--v-kept)' : 'var(--v-broken)'}">${verdict === 'agree' ? '✓ You agreed' : '✕ You disagreed'}</span><span class="tiny muted">${esc(TOPIC_NAMES[c.topic] || 'Other')}</span></div>
       <div class="row" style="gap:12px">${faces.length ? `<span class="faces">${faces.slice(0, 2).map(f => faceHTML(f, c.party)).join('')}</span>` : `<span class="mono" style="--pc:${pcolor(c.party)}">${esc(initials(c.party))}</span>`}<div><div class="tiny muted">This is a policy of</div><h3>${esc(P(c.party).name)}</h3></div></div>
       <div class="stmt" style="font-size:19px">${esc(c.statement)}</div>
       <p class="small muted">So far you've agreed with <b>${tally.agree}</b> of the <b>${tally.n}</b> ${esc(pname(c.party))} policies you've seen.</p>
@@ -1002,7 +757,7 @@ V.electorate = async slug => {
     if (!e) { b.innerHTML = E.length ? `<div class="grid">${E.filter(x => x.marginal).slice(0, 9).map(x => `<button class="starter" data-elec="${esc(x.slug)}"><div class="kicker">Battleground</div><h3>${esc(x.name)}</h3><p class="small muted">${esc(x.contest_notes || '')}</p></button>`).join('')}</div>` : '<p class="empty">Electorate guides are still being built.</p>'; return }
     const r = e.result_2023 || {};
     b.innerHTML = `<div class="split"><div class="stack" style="gap:16px"><div class="card stack"><h2>${esc(e.name)}</h2>${e.description ? `<p class="read">${esc(e.description)}</p><p class="tiny muted">Description from policy.nz.</p>` : ''}
-        ${(e.description_fact_check || []).length ? `<details class="small"><summary style="cursor:pointer;color:var(--brand);font-weight:700">Fact-check notes on this description (${e.description_fact_check.length})</summary><ul>${e.description_fact_check.map(f => `<li>${esc(typeof f === 'string' ? f : (f.note || f.correction || f.text || JSON.stringify(f)))}</li>`).join('')}</ul></details>` : ''}
+        ${(e.description_fact_check || []).length ? `<details class="small"><summary style="cursor:pointer;color:var(--primary);font-weight:700">Fact-check notes on this description (${e.description_fact_check.length})</summary><ul>${e.description_fact_check.map(f => `<li>${esc(typeof f === 'string' ? f : (f.note || f.correction || f.text || JSON.stringify(f)))}</li>`).join('')}</ul></details>` : ''}
         ${e.contest_notes ? `<p class="note">${esc(e.contest_notes)}</p>` : ''}</div>
       <div class="stack"><h3>${(e.candidates || []).length} candidates</h3><div class="people">${(e.candidates || []).map(c => { const p = findPerson(c.slug, c.name) || { name: c.name, party: c.party };
         return `<button class="person" data-person="${esc(c.slug)}">${faceHTML(p, c.party)}<span class="nm">${esc(c.name)}</span><span class="row tiny muted" style="gap:5px;justify-content:center"><span class="dot" style="background:${pcolor(c.party)}"></span>${esc(pname(c.party))}</span>${isMP(p.status) ? '<span class="status mp">Sitting MP</span>' : ''}</button>` }).join('')}</div></div></div>
@@ -1031,7 +786,7 @@ SUB.chamber = el => {
   const steps = parls.map(p => ({ key: `p${p.parliament}`, label: String(p.election_year), parl: p })); steps.push({ key: 'proj', label: '2026', proj: true });
   let i = Math.max(0, steps.findIndex(x => x.key === (store.get('chamberSel') || `p${parls[parls.length - 1].parliament}`))); let mode = 'start'; let playing = null;
   el.innerHTML = `<div class="stack" style="gap:16px"><p class="lede">Every seat in every Parliament since 2011. Drag the slider or press play to watch the House change; tap a seat to see who held it.</p>
-    <div class="card scrubber"><button class="playbtn" id="cplay" aria-label="Play through the Parliaments">${ic('play', 22)}</button><div><input type="range" id="cyear" min="0" max="${steps.length - 1}" step="1" value="${i}" aria-label="Parliament"><div class="years">${steps.map((x, k) => `<span data-k="${k}">${x.label}${x.proj ? ' (polls)' : ''}</span>`).join('')}</div></div></div>
+    <div class="card scrubber"><button class="playbtn" id="cplay" aria-label="Play through the Parliaments">${ic('play', 22)}</button><div><input type="range" id="cyear" min="0" max="${steps.length - 1}" step="1" value="${i}" aria-label="Parliament"><div class="years">${steps.map((x, k) => `<span data-k="${k}" title="${x.proj ? 'Projection from the polls' : x.label + ' election'}">${x.label}${x.proj ? '*' : ''}</span>`).join('')}</div></div></div>
     <div class="row" style="justify-content:space-between"><span class="seg" id="modewrap"><button id="m-start" aria-pressed="true">After the election</button><button id="m-now" aria-pressed="false">End of term / today</button></span><div class="legend" id="legend"></div></div>
     <div class="split"><div class="card chamber"><div id="hemi"></div><div id="ctitle" class="row" style="justify-content:space-between;margin-top:6px"></div></div>
       <div class="card stack"><div id="seatinfo" class="seatcard muted small">Tap any seat to see who sat there.</div><hr class="soft"><div id="ctx" class="stack"></div></div></div>
@@ -1044,10 +799,10 @@ SUB.chamber = el => {
       const e = els.find(x => x.year === parl.election_year); const g = e && e.government;
       ctx = `<div class="kicker">${ordinal(parl.parliament)} Parliament · ${esc(parl.start || '')} to ${esc(parl.end || 'today')}</div>
         ${g ? `<p class="small"><b>Government:</b> ${esc(g.pm || '')}, ${esc((g.parties || []).map(pname).join(' + '))} (${esc(g.arrangement || '')})${(g.support || []).length ? ', with support from ' + esc(g.support.map(pname).join(', ')) : ''}.</p>${g.notes ? `<p class="small muted">${esc(g.notes)}</p>` : ''}` : ''}
-        ${(parl.changes || []).length ? `<details><summary class="small" style="cursor:pointer;color:var(--brand);font-weight:700">${parl.changes.length} changes during the term</summary><ul class="small">${parl.changes.map(c => `<li><span class="num">${esc(c.date)}</span> ${esc(c.description)}</li>`).join('')}</ul></details>` : ''}`;
+        ${(parl.changes || []).length ? `<details><summary class="small" style="cursor:pointer;color:var(--primary);font-weight:700">${parl.changes.length} changes during the term</summary><ul class="small">${parl.changes.map(c => `<li><span class="num">${esc(c.date)}</span> ${esc(c.description)}</li>`).join('')}</ul></details>` : ''}`;
       if (e) res = electionTable(e) }
     S.curSeats = seats; chamberUpdate($('#hemi'), seats, { label: 'Seat map' });
-    $('#ctitle').innerHTML = `<b style="font:800 20px var(--f-display)">${esc(st.label)}${st.proj ? ' · poll projection' : ' election'}</b><span class="tiny muted">${seats.length} seats · ${Math.floor(seats.length / 2) + 1} to govern</span>`;
+    $('#ctitle').innerHTML = `<b style="font:800 20px var(--font-display)">${esc(st.label)}${st.proj ? ' · poll projection' : ' election'}</b><span class="tiny muted">${seats.length} seats · ${Math.floor(seats.length / 2) + 1} to govern</span>`;
     const counts = {}; seats.forEach(s => counts[s.party] = (counts[s.party] || 0) + 1);
     $('#legend').innerHTML = Object.entries(counts).sort((a, b) => P(a[0]).order - P(b[0]).order).map(([p, n]) => `<span class="item"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))} <b class="num">${n}</b></span>`).join('');
     $('#ctx').innerHTML = ctx; const r = $('#results'); r.innerHTML = res || '<p class="empty">No results table for this view.</p>'; r.classList.remove('anim'); void r.offsetWidth; r.classList.add('anim');
@@ -1090,20 +845,20 @@ SUB.trends = el => {
   const W = 520, bh = 26, gap = 10, H = els.length * (bh + gap) + 20;
   $('#seatbars').innerHTML = `<svg viewBox="0 0 ${W} ${H}">${els.map((e, i) => { let x = 46; const tot = (e.parties || []).reduce((a, r) => a + (r.total_seats || 0), 0) || 120; const sc = (W - 56) / 125;
     const segs = (e.parties || []).filter(r => r.total_seats).sort((a, b) => P(a.party).order - P(b.party).order).map(r => { const w = r.total_seats * sc; const s = `<rect x="${x.toFixed(1)}" y="${i * (bh + gap)}" width="${w.toFixed(1)}" height="${bh}" fill="${pcolor(r.party)}" data-tip="${e.year}: ${esc(pname(r.party))} ${r.total_seats} seats"></rect>`; x += w; return s }).join('');
-    const mx = 46 + (Math.floor(tot / 2) + 1) * sc; return `<text x="0" y="${i * (bh + gap) + 17}">${e.year}</text>${segs}<line x1="${mx}" x2="${mx}" y1="${i * (bh + gap) - 3}" y2="${i * (bh + gap) + bh + 3}" stroke="var(--ink)" stroke-width="2"/>` }).join('')}<text x="46" y="${H - 2}">black tick = seats needed to govern</text></svg>`;
+    const mx = 46 + (Math.floor(tot / 2) + 1) * sc; return `<text x="0" y="${i * (bh + gap) + 17}">${e.year}</text>${segs}<line x1="${mx}" x2="${mx}" y1="${i * (bh + gap) - 3}" y2="${i * (bh + gap) + bh + 3}" stroke="var(--text)" stroke-width="2"/>` }).join('')}<text x="46" y="${H - 2}">black tick = seats needed to govern</text></svg>`;
   const tw = 520, th = 200, pad = 34, xs = i => pad + 12 + i * (tw - pad - 34) / Math.max(1, els.length - 1), ys = v => th - 24 - v / 100 * (th - 40);
   const waste = els.map(e => (e.parties || []).filter(r => !r.total_seats).reduce((a, r) => a + (r.party_vote_pct || 0), 0));
   $('#turn').innerHTML = `<svg viewBox="0 0 ${tw} ${th}">${[0, 25, 50, 75, 100].map(v => `<line class="grid-l" x1="${pad}" x2="${tw - 10}" y1="${ys(v)}" y2="${ys(v)}"/><text x="0" y="${ys(v) + 4}">${v}%</text>`).join('')}
-    ${els.map((e, i) => `<rect x="${xs(i) - 12}" y="${ys(waste[i])}" width="24" height="${Math.max(0, ys(0) - ys(waste[i]))}" rx="4" fill="var(--warn)" data-tip="${e.year}: wasted vote ${fmt(waste[i])}%"></rect><text x="${xs(i)}" y="${th - 6}" text-anchor="middle">${e.year}</text>`).join('')}
-    <polyline fill="none" stroke="var(--brand)" stroke-width="3" stroke-linejoin="round" points="${els.map((e, i) => `${xs(i)},${ys(e.turnout_pct || 0)}`).join(' ')}"/>
-    ${els.map((e, i) => `<circle cx="${xs(i)}" cy="${ys(e.turnout_pct || 0)}" r="5" fill="var(--brand)" stroke="var(--surface)" stroke-width="2" data-tip="${e.year}: turnout ${fmt(e.turnout_pct)}%"></circle>`).join('')}</svg>`;
+    ${els.map((e, i) => `<rect x="${xs(i) - 12}" y="${ys(waste[i])}" width="24" height="${Math.max(0, ys(0) - ys(waste[i]))}" rx="4" fill="var(--v-partially-kept)" data-tip="${e.year}: wasted vote ${fmt(waste[i])}%"></rect><text x="${xs(i)}" y="${th - 6}" text-anchor="middle">${e.year}</text>`).join('')}
+    <polyline fill="none" stroke="var(--primary)" stroke-width="3" stroke-linejoin="round" points="${els.map((e, i) => `${xs(i)},${ys(e.turnout_pct || 0)}`).join(' ')}"/>
+    ${els.map((e, i) => `<circle cx="${xs(i)}" cy="${ys(e.turnout_pct || 0)}" r="5" fill="var(--primary)" stroke="var(--surface)" stroke-width="2" data-tip="${e.year}: turnout ${fmt(e.turnout_pct)}%"></circle>`).join('')}</svg>`;
 };
 function lineChart(els, polls, parties, cw = 760) {
   const W = Math.max(440, Math.min(760, Math.round(cw * 1.25))), H = 330, L = 36, R = 34, T = 10, B = 26, t0 = new Date('2008-06-01').getTime(), t1 = new Date('2026-12-01').getTime();
   const xs = d => L + (new Date(d).getTime() - t0) / (t1 - t0) * (W - L - R), ys = v => T + (1 - v / 55) * (H - T - B);
   let g = [0, 10, 20, 30, 40, 50].map(v => `<line class="grid-l" x1="${L}" x2="${W - R}" y1="${ys(v)}" y2="${ys(v)}"/><text x="4" y="${ys(v) + 4}">${v}%</text>`).join('');
-  g += els.map(e => `<text x="${xs(e.date || e.year + '-11-01')}" y="${H - 6}" text-anchor="middle">${e.year}</text>`).join('') + `<text x="${xs('2026-11-07')}" y="${H - 6}" text-anchor="middle" style="fill:var(--brand);font-weight:700">2026</text>`;
-  g += `<line x1="${xs('2026-11-07')}" x2="${xs('2026-11-07')}" y1="${T}" y2="${H - B}" stroke="var(--brand)" stroke-dasharray="3 3"/><line x1="${L}" x2="${W - R}" y1="${ys(5)}" y2="${ys(5)}" stroke="var(--muted)" stroke-dasharray="2 4"/><text x="${L + 4}" y="${ys(5) - 4}">5% threshold</text>`;
+  g += els.map(e => `<text x="${xs(e.date || e.year + '-11-01')}" y="${H - 6}" text-anchor="middle">${e.year}</text>`).join('') + `<text x="${xs('2026-11-07')}" y="${H - 6}" text-anchor="middle" style="fill:var(--primary);font-weight:700">2026</text>`;
+  g += `<line x1="${xs('2026-11-07')}" x2="${xs('2026-11-07')}" y1="${T}" y2="${H - B}" stroke="var(--primary)" stroke-dasharray="3 3"/><line x1="${L}" x2="${W - R}" y1="${ys(5)}" y2="${ys(5)}" stroke="var(--text-2)" stroke-dasharray="2 4"/><text x="${L + 4}" y="${ys(5) - 4}">5% threshold</text>`;
   const sorted = polls.filter(p => p.date && p.parties).sort((a, b) => a.date.localeCompare(b.date));
   for (const p of parties) { const c = pcolor(p);
     const pts = els.map(e => { const r = (e.parties || []).find(x => x.party === p); return r ? [e.date || e.year + '-11-01', r.party_vote_pct, e.year] : null }).filter(Boolean);
@@ -1120,14 +875,14 @@ SUB.coalition = el => {
   el.innerHTML = `<div class="stack" style="gap:16px"><p class="lede">Pick a result, then tap parties to build a government. It needs more than half the seats to survive confidence votes.</p>
     <div class="row"><select id="csrc" aria-label="Result">${srcs.map(([v, l]) => `<option value="${v}">${l}</option>`).join('')}</select>
     <button class="btn sm" id="pre-right">National + ACT + NZ First</button><button class="btn sm" id="pre-left">Labour + Green + Te Pāti Māori</button><button class="btn sm" id="pre-clear">Clear</button></div>
-    <div class="card stack"><div class="chips" id="cchips"></div><div class="bar" id="cbar"></div><div id="cverdict" style="font:800 22px var(--f-display)"></div><div class="chamber" id="chemi"></div></div></div>`;
+    <div class="card stack"><div class="chips" id="cchips"></div><div class="bar" id="cbar"></div><div id="cverdict" style="font:800 22px var(--font-display)"></div><div class="chamber" id="chemi"></div></div></div>`;
   let bloc = new Set(['national', 'act', 'nz-first']);
   const seatsFor = v => v === 'proj' ? projection().seats : Object.fromEntries((els.find(e => `e${e.year}` === v).parties || []).filter(r => r.total_seats).map(r => [r.party, r.total_seats]));
   const draw = () => { const seats = seatsFor($('#csrc').value), total = Object.values(seats).reduce((a, b) => a + b, 0), maj = Math.floor(total / 2) + 1, ps = Object.keys(seats).sort((a, b) => P(a).order - P(b).order);
     $('#cchips').innerHTML = ps.map(p => `<button class="chip" data-p="${p}" aria-pressed="${bloc.has(p)}"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))} <span class="num">${seats[p]}</span></button>`).join('');
     const have = ps.filter(p => bloc.has(p)).reduce((a, p) => a + seats[p], 0);
     $('#cbar').innerHTML = ps.filter(p => bloc.has(p)).map(p => `<span style="width:${seats[p] / total * 100}%;background:${pcolor(p)}"></span>`).join('') + `<span class="line" style="left:${maj / total * 100}%"></span>`;
-    $('#cverdict').innerHTML = have >= maj ? `<span style="color:var(--ok)">${have} seats: a majority of ${total}</span>` : `${have} of ${total} seats, ${maj - have} short of ${maj}`;
+    $('#cverdict').innerHTML = have >= maj ? `<span style="color:var(--v-kept)">${have} seats: a majority of ${total}</span>` : `${have} of ${total} seats, ${maj - have} short of ${maj}`;
     $('#chemi').innerHTML = chamberSVG(seatsFromComposition(seats, []), { highlight: bloc, label: 'Coalition seats' }) };
   $('#cchips').onclick = e => { const b = e.target.closest('[data-p]'); if (!b) return; bloc.has(b.dataset.p) ? bloc.delete(b.dataset.p) : bloc.add(b.dataset.p); draw() };
   $('#csrc').onchange = draw; $('#pre-right').onclick = () => { bloc = new Set(['national', 'act', 'nz-first']); draw() };
@@ -1254,12 +1009,14 @@ function route(r) {
   if (!V[view]) { view = 'home'; r = 'home' }
   renderBanner();
   if (blockedToday(view) || blockedToday(r)) { document.querySelectorAll('#nav button, #bnav button').forEach(b => b.setAttribute('aria-current', 'false')); S.route = r; window.scrollTo(0, 0); $('#main').innerHTML = `<section class="view"><div class="card stack"><h2>Hidden until 7pm</h2><p>${ELECTION_DAY_BLOCK}</p><p class="small muted">Everything else — parties, policies, candidates, your electorate, how to vote — stays available.</p><div class="row"><button class="btn primary" data-go="electorate">Your electorate</button><button class="btn" data-go="parties">Parties</button></div></div></section>`; return }
-  const navKey = { party: 'parties', issue: 'issues', 'swipe-tally': 'swipe', policies: 'more', people: 'more', promises: 'more' }[view] || view;
+  const navKey = { party: 'parties', issue: 'issues', 'swipe-tally': 'swipe', electorate: 'map', policies: 'more', people: 'more', promises: 'more' }[view] || view;
   document.querySelectorAll('#nav button, #bnav button').forEach(b => b.setAttribute('aria-current', b.dataset.go === navKey ? 'page' : 'false'));
   S.route = r; try { history.replaceState(null, '', '#' + r) } catch {}
   window.scrollTo(0, 0); V[view](arg);
 }
 (async () => {
+  try { const t = localStorage.getItem('bb-theme'); if (t) document.documentElement.dataset.theme = t } catch {}
+  $('#themebtn').onclick = () => { const r = document.documentElement; const dark = r.dataset.theme === 'dark' || (!r.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches); r.dataset.theme = dark ? 'light' : 'dark'; try { localStorage.setItem('bb-theme', r.dataset.theme) } catch {} };
   $('#nav').innerHTML = NAV.map(([k, l]) => `<button data-go="${k}">${l}</button>`).join('');
   $('#bnav').innerHTML = [['home', 'Home'], ['match', 'Match'], ['swipe', 'Swipe'], ['polls', 'Polls'], ['parties', 'Parties'], ['more', 'More']].map(([k, l]) => `<button data-go="${k}">${ic(k)}<span>${l}</span></button>`).join('');
   try { S.data = await getJSON('data/bundle.json') } catch (e) { $('#main').innerHTML = `<p class="empty">The guide's data didn't load (${esc(e.message)}).</p>`; return }
