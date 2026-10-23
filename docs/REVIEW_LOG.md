@@ -10,13 +10,12 @@ Scope: `data/guide/parties.json`, `data/guide/issues.json` (and the rendered `gu
 |---|---:|
 | Loaded language / framing | 20 |
 | Equal treatment | 17 |
-| Fact | 14 |
+| Fact | 15 |
 | Fact (source) | 9 |
 | Loaded language | 8 |
 | Fact / framing | 6 |
 | Currency | 1 |
 | Fact (unsupported claim removed) | 1 |
-| Other | 1 |
 | **Guide JSON changes (total)** | **77** |
 | REPORT.md prose edits | 7 |
 | README.md edits | 2 |
@@ -172,7 +171,7 @@ Rendered pages `guide/parties.md` and `guide/issues.md` were regenerated from th
 | `issues.education.key_facts[1].fact` | Voters rated Labour as most capable on education (Ipsos, Sept 2026). | Voters rated Labour as most capable on education (Ipsos, Sept 2026). | Fact: wording aligned to what the cited source says |
 | `issues.education.key_facts[1].sources` | — | `https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey`<br>`https://en.wikipedia.org/wiki/2026_New_Zealand_general_election` | Source added so the figure can be checked against the primary release |
 | `issues.te-tiriti-and-maori-issues.why_it_matters` | How the Treaty of Waitangi is applied in law has been one of the most heated debates of this term. Some parties want to limit Treaty-based and race-based policies; others want Te Tiriti given more legal weight. The future of the Māori seats and the Waitangi Tribunal is also on the ballot. | How the Treaty of Waitangi is applied in law has been one of the most debated questions of this term. Some parties want to limit Treaty clauses in law and programmes targeted by ethnicity (which they call 'race-based'); others want Te Tiriti given more legal weight. The future of the Māori seats and the Waitangi Tribunal is also on the ballot. | Neutral, measurable wording in place of characterisation |
-| `issues.te-tiriti-and-maori-issues.national.summary` | Voted against the Treaty Principles Bill; in the Herald leaders' debate Luxon suggested he could support a referendum on the Māori seats. | Voted against the Treaty Principles Bill; in the Herald leaders' debate (14 Oct 2026) Luxon said he was willing to consider backing a referendum on the Māori seats. | Editorial |
+| `issues.te-tiriti-and-maori-issues.national.summary` | Voted against the Treaty Principles Bill; in the Herald leaders' debate Luxon suggested he could support a referendum on the Māori seats. | Voted against the Treaty Principles Bill; in the Herald leaders' debate (14 Oct 2026) Luxon said he was willing to consider backing a referendum on the Māori seats. | Fact: the Herald report says Luxon was "willing to consider backing" a referendum, not that he suggested support |
 | `issues.te-tiriti-and-maori-issues.nz-loyal.summary` | Scrap all race-based policies. | Scrap what it calls 'race-based policies'. | Loaded or one-sided wording replaced; contested labels attributed to the party that uses them |
 | `issues.infrastructure-and-transport.why_it_matters` | Roads, rail, water pipes, hospitals and schools all need fixing or building, and the bill is huge. Much of what is planned has no money set aside yet. Parties differ on roads versus public transport and on how to pay. | Roads, rail, water pipes, hospitals and schools all need fixing or building; planned projects are valued at about $275 billion. Much of what is planned has no money set aside yet. Parties differ on roads versus public transport and on how to pay. | Neutral, measurable wording in place of characterisation |
 | `issues.immigration.why_it_matters` | Many New Zealanders are leaving for Australia while more migrants arrive. Some parties want much tighter rules on visas, benefits and citizenship. Others want easier paths to residency and family visas. | More New Zealand citizens are leaving than returning, while migrant arrivals have risen. Some parties want tighter rules on visas, benefits and citizenship. Others want easier paths to residency and family visas. | Neutral, measurable wording in place of characterisation |
