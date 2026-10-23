@@ -1,7 +1,7 @@
 ---
 title: "Power for all of us — Lower bills. Cleaner energy. Public ownership."
 party: "green"
-source_url: "https://assets.nationbuilder.com/beachheroes/pages/74612/attachments/original/1784510079/The_Greens%27_Full_Power_Policy.pdf?1784510079"
+source_url: "https://assets.nationbuilder.com/beachheroes/pages/74612/attachments/original/1784510079/The_Greens'_Full_Power_Policy.pdf?1784510079"
 retrieved: "2026-10-23"
 format: "pdf"
 fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
