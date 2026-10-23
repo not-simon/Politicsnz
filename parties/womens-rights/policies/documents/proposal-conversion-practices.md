@@ -21,7 +21,7 @@ We call for the removal of all references to “gender, gender identity and gend
 
 ##### Rationale
 
-We support the aim of the Conversion Practices legislation to protect lesbians, bisexuals and gay people from conversion practices and to promote open and respectful discussions about sexuality.
+We support the aim of the Conversion Practices legislation to protect lesbians, bisexuals and gay people from conversion practices and to promote open and respectful discussions about sexuality.\
  We do not support the inclusion of “gender, gender identity and gender expression” in this legislation because “gender” is not a clear or helpful concept to include in law, and because promoting “gender identity” to children risks causing them permanent harm.
 
 The inclusion of “gender” in the legislation is likely to pressure therapists and medical professionals to practice “gender affirmative” treatment and to contribute to a culture of encouraging children to socially and medically transition.

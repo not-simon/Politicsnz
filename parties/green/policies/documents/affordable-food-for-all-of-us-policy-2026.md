@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/89620/attachments/original/1788650611/AFFORDABLE_FOOD_FOR_ALL_OF_US_POLICY_FINAL.pdf?1788650611"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 15
 local_copy: "raw/party-docs/green/pdf/AFFORDABLE_FOOD_FOR_ALL_OF_US_POLICY_FINAL.pdf"
 sha1: "2e0b82c51b604774c01071899543147aae6f1362"

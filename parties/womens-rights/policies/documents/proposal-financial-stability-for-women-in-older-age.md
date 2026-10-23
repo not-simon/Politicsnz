@@ -62,9 +62,9 @@ Politicisation of the idea of generational stages and their attributes (Gen Y, B
 
 #### Future Proofing Is Needed
 
-• Women earned 86.14% of men’s earnings (June 2018).
- • Average wages for women vary greatly depending on the industry/occupation they work in.
- • Earning capacity is affected by lower pay over working life, career interruptions, reliance on a pension that doesn’t cover costs.
+• Women earned 86.14% of men’s earnings (June 2018).\
+ • Average wages for women vary greatly depending on the industry/occupation they work in.\
+ • Earning capacity is affected by lower pay over working life, career interruptions, reliance on a pension that doesn’t cover costs.\
  • Covid-19 impacted on women’s financial position. How will this factor affect the financial wellbeing of women age 55 years and over who will be retiring within the next decade? One in 5 older women struggled to make ends meet.
 
 ### See the other policy proposals

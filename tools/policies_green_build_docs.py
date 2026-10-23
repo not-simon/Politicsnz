@@ -191,6 +191,8 @@ for key in sorted(a[6:] for a in ann if a.startswith('scoop:')):
     art = sp.find(id='article')
     for t in art(['script', 'style', 'noscript', 'iframe', 'img']): t.decompose()
     for t in art.find_all('div', class_='article-left-box-wrapper'): t.decompose()
+    from bs4 import Comment
+    for c in art.find_all(string=lambda x: isinstance(x, Comment)): c.extract()
     for a in art.find_all('a', href=re.compile(r'scoop\.co\.nz/about/terms')):
         for sib in list(a.find_all_next()): sib.decompose()
         a.decompose()

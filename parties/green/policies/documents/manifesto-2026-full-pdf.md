@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/78863/attachments/original/1786330483/2026_GREEN_PARTY_MANIFESTO.pdf?1786330483"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 23
 local_copy: "raw/party-docs/green/pdf/2026_GREEN_PARTY_MANIFESTO.pdf"
 sha1: "83daf036284c6c783ff306c7403a57b4bd4059f1"

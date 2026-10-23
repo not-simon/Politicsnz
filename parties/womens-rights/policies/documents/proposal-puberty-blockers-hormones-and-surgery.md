@@ -29,10 +29,10 @@ Increasingly European countries are choosing a more cautious approach to the use
 
 We are urging our own health authorities to take on board the findings of the Cass Report. The Ministry of Health has so far remained hostage to a vocal minority that has put our children’s health at risk of lifelong irreversible damage.
 
-The Cass Report found that that existing studies were of poor quality and lacked evidence on the long-term impact of taking hormones from an early age. Side effects include menopausal symptoms, weaker bone density and the potential impact on fertility, sexual
+The Cass Report found that that existing studies were of poor quality and lacked evidence on the long-term impact of taking hormones from an early age. Side effects include menopausal symptoms, weaker bone density and the potential impact on fertility, sexual\
  function and brain development.
 
-Cass concluded that the research has let all those involved down, and most importantly children and young people. Far from giving children “time to think”, the Cass Report found that puberty blockers effectively locked them into a medical pathway leading to
+Cass concluded that the research has let all those involved down, and most importantly children and young people. Far from giving children “time to think”, the Cass Report found that puberty blockers effectively locked them into a medical pathway leading to\
  cross-sex hormones and surgeries that are irreversible.
 
 The Women’s Rights Party already has policy opposing the use of puberty blockers and cross-sex hormones with children under 18. New Zealand is becoming more of an outlier in our increasing use of puberty blocking hormones. In 2022, 416 young people aged 12- 17 were taking puberty blocking hormones, compared to 48 in 2011, the first year of use for gender dysphoria. We have 11 times the rate of use as England: 110 per 100,000 versus 9 per 100,000. We also have no minimum age for prescribing. If puberty starts at 10 or 11, these children are eligible for blockers.

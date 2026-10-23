@@ -39,7 +39,7 @@ As a registered political party, the Women’s Rights Party focusses on legislat
 
 ##### Protection of sex-based rights
 
-Women’s and girls’ sex-based rights as biological females, need to be protected in policy and law, and this should be given precedence over any proposed provisions based on concepts of “gender identity”.
+Women’s and girls’ sex-based rights as biological females, need to be protected in policy and law, and this should be given precedence over any proposed provisions based on concepts of “gender identity”.\
 The rights of women and children to reject sex stereotypes without discrimination, labelling, or medical intervention to ‘fix’ them is paramount.
 
 ##### Conversion Practices legislation

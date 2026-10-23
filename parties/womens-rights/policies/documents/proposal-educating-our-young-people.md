@@ -47,7 +47,7 @@ In our submission on the new Framework, we supported the Resist Gender Education
 
 ## Parental rights are acknowledged
 
-The education of our children is vitally important to our members, as is the protection of parental rights, for example to know what is being taught in schools and to be able to take their children out of any part of sexuality education.
+The education of our children is vitally important to our members, as is the protection of parental rights, for example to know what is being taught in schools and to be able to take their children out of any part of sexuality education.\
  We are concerned at the influence of outside agencies with an agenda to promote “gender ideology” producing resources that would undermine the new RSE framework. We warned that there could be resources supplied by outside agencies hanging around in teachers’ resource rooms. Principals should ensure such materials are removed and destroyed.
 
 ### Issue of “consent”
