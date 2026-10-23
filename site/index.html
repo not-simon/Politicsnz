@@ -1133,7 +1133,11 @@ async function loadPages() { if (!S.pages) S.pages = await getJSON('data/pages.j
 V.more = async () => { await loadPages(); const keys = Object.keys(S.pages);
   const group = (title, f) => { const ks = keys.filter(f); return ks.length ? `<div class="stack"><h3>${title}</h3><div class="grid">${ks.map(k => `<button class="starter" style="padding:14px" data-page="${esc(k)}"><h4>${esc(pageTitle(k))}</h4><span class="tiny muted">${esc(k)}</span></button>`).join('')}</div></div>` : '' };
   $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Go deeper</div><h2>Everything else</h2></div>
-    <div class="starters"><button class="starter" data-go="policies"><h3>Every policy</h3><p class="small muted">Search and compare all parties' 2026 policies, with full original texts.</p><span class="go">Open →</span></button>
+    <div class="starters"><button class="starter" data-go="map"><h3>Electorate map</h3><p class="small muted">Every seat since 2011, coloured by winner, with a time slider.</p><span class="go">Open →</span></button>
+      <button class="starter" data-go="parliament"><h3>Parliament</h3><p class="small muted">Seat maps, poll trends, coalition builder and seat calculator.</p><span class="go">Open →</span></button>
+      <button class="starter" data-go="electorate"><h3>Your electorate</h3><p class="small muted">Candidates where you live, with photos and the 2023 result.</p><span class="go">Open →</span></button>
+      <button class="starter" data-go="issues"><h3>The big issues</h3><p class="small muted">Where every party stands, issue by issue.</p><span class="go">Open →</span></button>
+      <button class="starter" data-go="policies"><h3>Every policy</h3><p class="small muted">Search and compare all parties' 2026 policies, with full original texts.</p><span class="go">Open →</span></button>
       <button class="starter" data-go="people"><h3>People</h3><p class="small muted">Profiles and photos of MPs since 2011 and all 2026 candidates.</p><span class="go">Open →</span></button>
       <button class="starter" data-go="promises"><h3>Promise tracker</h3><p class="small muted">How each party has kept, broken or dropped its promises.</p><span class="go">Open →</span></button></div>
     ${group('Start here', k => ['REPORT.md', 'README.md'].includes(k) || k.startsWith('guide/') || k.endsWith('MINOR_PARTIES.md'))}
