@@ -86,17 +86,19 @@ def main():
                 pages.add(orig.rstrip("/"))
     ccdir = os.path.join(L.raw_dir(P), "cc-html")
     ccidx = json.load(open(os.path.join(ccdir, "index.json"))) if os.path.exists(os.path.join(ccdir, "index.json")) else {}
+    cited = set(pages)
     for path, meta in ccidx.items():
         if path in CC_SKIP or meta["file"].endswith(".pdf"):
             continue
-        orig = "https://www.opportunity.org.nz/" + path
-        pages.add(orig)
+        pages.add("https://www.opportunity.org.nz/" + path)
     for orig in sorted(pages):
         slug = site_stub_slug(orig)
         path = orig.split("opportunity.org.nz/")[-1].strip("/")
         meta = ccidx.get(path)
         if meta:
             t, md = L.main_md(os.path.join(ccdir, meta["file"]), selectors=("main", "#content", "body"))
+            if md.startswith("When ") and orig not in cited:  # NationBuilder event page, not policy
+                continue
             ts = meta["timestamp"]
             cap = f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}"
             L.write_doc(P, slug, t.replace(" - The Opportunity Party", "").strip() or path, orig, md,

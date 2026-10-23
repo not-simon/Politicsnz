@@ -406,5 +406,2805 @@
   "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00470.warc.gz",
   "offset": "733127112",
   "length": "10749"
+ },
+ "budget_2022": {
+  "file": "budget_2022.html",
+  "url": "https://www.nzfirst.nz/budget_2022",
+  "timestamp": "20260719220415",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00518.warc.gz",
+  "offset": "753004569",
+  "length": "10091"
+ },
+ "budget_2026_common_sense_wins_for_nz_first": {
+  "file": "budget_2026_common_sense_wins_for_nz_first.html",
+  "url": "https://www.nzfirst.nz/budget_2026_common_sense_wins_for_nz_first",
+  "timestamp": "20261011090248",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00067.warc.gz",
+  "offset": "773836562",
+  "length": "10920"
+ },
+ "calendar": {
+  "file": "calendar.html",
+  "url": "https://www.nzfirst.nz/calendar",
+  "timestamp": "20261011080522",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00288.warc.gz",
+  "offset": "788107389",
+  "length": "10939"
+ },
+ "campaign-support": {
+  "file": "campaign-support.html",
+  "url": "https://www.nzfirst.nz/campaign-support",
+  "timestamp": "20260818145749",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00132.warc.gz",
+  "offset": "747471370",
+  "length": "19411"
+ },
+ "campaign-updates": {
+  "file": "campaign-updates.html",
+  "url": "https://www.nzfirst.nz/campaign-updates",
+  "timestamp": "20260907062402",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00375.warc.gz",
+  "offset": "811560425",
+  "length": "9966"
+ },
+ "campaign_announcement_funding_for_christ_church_cathedral_rebuild": {
+  "file": "campaign_announcement_funding_for_christ_church_cathedral_rebuild.html",
+  "url": "https://www.nzfirst.nz/campaign_announcement_funding_for_christ_church_cathedral_rebuild",
+  "timestamp": "20261011085702",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00023.warc.gz",
+  "offset": "773808451",
+  "length": "10925"
+ },
+ "campaigns": {
+  "file": "campaigns.html",
+  "url": "https://www.nzfirst.nz/campaigns",
+  "timestamp": "20260818151026",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00249.warc.gz",
+  "offset": "762650330",
+  "length": "10471"
+ },
+ "candidate-applications": {
+  "file": "candidate-applications.html",
+  "url": "https://www.nzfirst.nz/candidate-applications",
+  "timestamp": "20260907063029",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00743.warc.gz",
+  "offset": "740522915",
+  "length": "13934"
+ },
+ "candidate_announcement_ron_mark_returns_for_nzfirst": {
+  "file": "candidate_announcement_ron_mark_returns_for_nzfirst.html",
+  "url": "https://www.nzfirst.nz/candidate_announcement_ron_mark_returns_for_nzfirst",
+  "timestamp": "20260907062610",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00160.warc.gz",
+  "offset": "784686099",
+  "length": "10233"
+ },
+ "candidate_announcement_west_coast_tasman": {
+  "file": "candidate_announcement_west_coast_tasman.html",
+  "url": "https://www.nzfirst.nz/candidate_announcement_west_coast_tasman",
+  "timestamp": "20261011085636",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00859.warc.gz",
+  "offset": "835929826",
+  "length": "10595"
+ },
+ "candidates_2023": {
+  "file": "candidates_2023.html",
+  "url": "https://www.nzfirst.nz/candidates_2023",
+  "timestamp": "20260818144152",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00332.warc.gz",
+  "offset": "798652634",
+  "length": "9661"
+ },
+ "casey-costello": {
+  "file": "casey-costello.html",
+  "url": "https://www.nzfirst.nz/casey-costello",
+  "timestamp": "20260907060752",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00837.warc.gz",
+  "offset": "746254297",
+  "length": "10133"
+ },
+ "casey-updates": {
+  "file": "casey-updates.html",
+  "url": "https://www.nzfirst.nz/casey-updates",
+  "timestamp": "20260907060137",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00068.warc.gz",
+  "offset": "761081986",
+  "length": "9977"
+ },
+ "cash_transactions_protection_bill": {
+  "file": "cash_transactions_protection_bill.html",
+  "url": "https://www.nzfirst.nz/cash_transactions_protection_bill",
+  "timestamp": "20260719211922",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00581.warc.gz",
+  "offset": "780334012",
+  "length": "9827"
+ },
+ "catherine_somerville_ryan": {
+  "file": "catherine_somerville_ryan.html",
+  "url": "https://www.nzfirst.nz/catherine_somerville_ryan",
+  "timestamp": "20260818140844",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00831.warc.gz",
+  "offset": "765865484",
+  "length": "9448"
+ },
+ "caution-rnz-your-bilious-bias-is-showing": {
+  "file": "caution-rnz-your-bilious-bias-is-showing.html",
+  "url": "https://www.nzfirst.nz/caution-rnz-your-bilious-bias-is-showing",
+  "timestamp": "20260719221025",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00403.warc.gz",
+  "offset": "787918852",
+  "length": "10748"
+ },
+ "cc-day-of-older-persons": {
+  "file": "cc-day-of-older-persons.html",
+  "url": "https://www.nzfirst.nz/cc-day-of-older-persons",
+  "timestamp": "20260907060035",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00627.warc.gz",
+  "offset": "765777611",
+  "length": "10355"
+ },
+ "cc-what-once-was": {
+  "file": "cc-what-once-was.html",
+  "url": "https://www.nzfirst.nz/cc-what-once-was",
+  "timestamp": "20260719221917",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00611.warc.gz",
+  "offset": "793230852",
+  "length": "10283"
+ },
+ "chloe_swarbrick_shows_blistering_ignorance_with_paris_accord_accusation": {
+  "file": "chloe_swarbrick_shows_blistering_ignorance_with_paris_accord_accusation.html",
+  "url": "https://www.nzfirst.nz/chloe_swarbrick_shows_blistering_ignorance_with_paris_accord_accusation",
+  "timestamp": "20261011092510",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00047.warc.gz",
+  "offset": "800748495",
+  "length": "11135"
+ },
+ "christchurch-april-24": {
+  "file": "christchurch-april-24.html",
+  "url": "https://www.nzfirst.nz/christchurch-april-24",
+  "timestamp": "20260410092533",
+  "warc": "crawl-data/CC-MAIN-2026-17/segments/1775805908305.14/warc/CC-MAIN-20260410081153-20260410111153-00880.warc.gz",
+  "offset": "843434618",
+  "length": "10753"
+ },
+ "christchurch-mayor-backs-nzfirsts-2026-commonwealth-games-bid": {
+  "file": "christchurch-mayor-backs-nzfirsts-2026-commonwealth-games-bid.html",
+  "url": "https://www.nzfirst.nz/christchurch-mayor-backs-nzfirsts-2026-commonwealth-games-bid",
+  "timestamp": "20261011083112",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00966.warc.gz",
+  "offset": "801572674",
+  "length": "10933"
+ },
+ "christchurch-policy-announcements": {
+  "file": "christchurch-policy-announcements.html",
+  "url": "https://www.nzfirst.nz/christchurch-policy-announcements",
+  "timestamp": "20260907055517",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00688.warc.gz",
+  "offset": "736200723",
+  "length": "10103"
+ },
+ "christchurch-public-meeting": {
+  "file": "christchurch-public-meeting.html",
+  "url": "https://www.nzfirst.nz/christchurch-public-meeting",
+  "timestamp": "20261011090726",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00406.warc.gz",
+  "offset": "848503212",
+  "length": "11080"
+ },
+ "citizens_only_voting": {
+  "file": "citizens_only_voting.html",
+  "url": "https://www.nzfirst.nz/citizens_only_voting",
+  "timestamp": "20260818143217",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00176.warc.gz",
+  "offset": "778188425",
+  "length": "9501"
+ },
+ "coalition": {
+  "file": "coalition.html",
+  "url": "https://www.nzfirst.nz/coalition",
+  "timestamp": "20260907071827",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00444.warc.gz",
+  "offset": "752842292",
+  "length": "10604"
+ },
+ "coalition-agreement": {
+  "file": "coalition-agreement.html",
+  "url": "https://www.nzfirst.nz/coalition-agreement",
+  "timestamp": "20261011085954",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00225.warc.gz",
+  "offset": "801912411",
+  "length": "9528"
+ },
+ "commerce-commission-banking-inquiry-labours-peak-faux-outrage": {
+  "file": "commerce-commission-banking-inquiry-labours-peak-faux-outrage.html",
+  "url": "https://www.nzfirst.nz/commerce-commission-banking-inquiry-labours-peak-faux-outrage",
+  "timestamp": "20261011084233",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00714.warc.gz",
+  "offset": "768051172",
+  "length": "10591"
+ },
+ "committee": {
+  "file": "committee.html",
+  "url": "https://www.nzfirst.nz/committee",
+  "timestamp": "20260907062708",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00779.warc.gz",
+  "offset": "725828867",
+  "length": "13614"
+ },
+ "committees-and-councils": {
+  "file": "committees-and-councils.html",
+  "url": "https://www.nzfirst.nz/committees-and-councils",
+  "timestamp": "20260513041245",
+  "warc": "crawl-data/CC-MAIN-2026-21/segments/1778213377561.52/warc/CC-MAIN-20260513025801-20260513055801-00381.warc.gz",
+  "offset": "834598814",
+  "length": "9699"
+ },
+ "complete_the_christchurch_cathedral": {
+  "file": "complete_the_christchurch_cathedral.html",
+  "url": "https://www.nzfirst.nz/complete_the_christchurch_cathedral",
+  "timestamp": "20260818140622",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00259.warc.gz",
+  "offset": "784381396",
+  "length": "9826"
+ },
+ "completing-the-first-100-days-plan": {
+  "file": "completing-the-first-100-days-plan.html",
+  "url": "https://www.nzfirst.nz/completing-the-first-100-days-plan",
+  "timestamp": "20261011085908",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00293.warc.gz",
+  "offset": "816904297",
+  "length": "10929"
+ },
+ "conscience-referendums-bill": {
+  "file": "conscience-referendums-bill.html",
+  "url": "https://www.nzfirst.nz/conscience-referendums-bill",
+  "timestamp": "20261011090841",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00149.warc.gz",
+  "offset": "792850735",
+  "length": "10481"
+ },
+ "contact": {
+  "file": "contact.html",
+  "url": "https://www.nzfirst.nz/contact",
+  "timestamp": "20260907061933",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00454.warc.gz",
+  "offset": "762632448",
+  "length": "9035"
+ },
+ "coping-reality": {
+  "file": "coping-reality.html",
+  "url": "https://www.nzfirst.nz/coping-reality",
+  "timestamp": "20260907063759",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00907.warc.gz",
+  "offset": "768650092",
+  "length": "9759"
+ },
+ "costello_defending_democracy": {
+  "file": "costello_defending_democracy.html",
+  "url": "https://www.nzfirst.nz/costello_defending_democracy",
+  "timestamp": "20260818141518",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00300.warc.gz",
+  "offset": "763557623",
+  "length": "10748"
+ },
+ "court-of-appeal-ruling-sfo-overreach": {
+  "file": "court-of-appeal-ruling-sfo-overreach.html",
+  "url": "https://www.nzfirst.nz/court-of-appeal-ruling-sfo-overreach",
+  "timestamp": "20260906121813",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699667.17/warc/CC-MAIN-20260906110016-20260906140016-00806.warc.gz",
+  "offset": "756175264",
+  "length": "11044"
+ },
+ "court-of-appeal-trifecta-of-victory-for-nzfirst-trifecta-of-failure-for-opponents": {
+  "file": "court-of-appeal-trifecta-of-victory-for-nzfirst-trifecta-of-failure-for-opponents.html",
+  "url": "https://www.nzfirst.nz/court-of-appeal-trifecta-of-victory-for-nzfirst-trifecta-of-failure-for-opponents",
+  "timestamp": "20260818135317",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00173.warc.gz",
+  "offset": "773102476",
+  "length": "10806"
+ },
+ "covid-19-inquiry-update": {
+  "file": "covid-19-inquiry-update.html",
+  "url": "https://www.nzfirst.nz/covid-19-inquiry-update",
+  "timestamp": "20261011083136",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00042.warc.gz",
+  "offset": "734687200",
+  "length": "10804"
+ },
+ "covid_modelling_data": {
+  "file": "covid_modelling_data.html",
+  "url": "https://www.nzfirst.nz/covid_modelling_data",
+  "timestamp": "20260907061030",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00222.warc.gz",
+  "offset": "718396628",
+  "length": "10655"
+ },
+ "craig_stobo": {
+  "file": "craig_stobo.html",
+  "url": "https://www.nzfirst.nz/craig_stobo",
+  "timestamp": "20260907052945",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00050.warc.gz",
+  "offset": "854162297",
+  "length": "9569"
+ },
+ "creating-opportunity-for-all": {
+  "file": "creating-opportunity-for-all.html",
+  "url": "https://www.nzfirst.nz/creating-opportunity-for-all",
+  "timestamp": "20260907055928",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00361.warc.gz",
+  "offset": "760330025",
+  "length": "12147"
+ },
+ "daryl_habraken": {
+  "file": "daryl_habraken.html",
+  "url": "https://www.nzfirst.nz/daryl_habraken",
+  "timestamp": "20260818152451",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00797.warc.gz",
+  "offset": "789152457",
+  "length": "9073"
+ },
+ "david-wilson": {
+  "file": "david-wilson.html",
+  "url": "https://www.nzfirst.nz/david-wilson",
+  "timestamp": "20260719220852",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00899.warc.gz",
+  "offset": "728619400",
+  "length": "9610"
+ },
+ "defending-freedom-and-democracy": {
+  "file": "defending-freedom-and-democracy.html",
+  "url": "https://www.nzfirst.nz/defending-freedom-and-democracy",
+  "timestamp": "20260907063749",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00133.warc.gz",
+  "offset": "769553000",
+  "length": "9976"
+ },
+ "definitions-woman-man-bill": {
+  "file": "definitions-woman-man-bill.html",
+  "url": "https://www.nzfirst.nz/definitions-woman-man-bill",
+  "timestamp": "20260907064611",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00220.warc.gz",
+  "offset": "795457148",
+  "length": "9980"
+ },
+ "demolition_by_neglect_stops_here": {
+  "file": "demolition_by_neglect_stops_here.html",
+  "url": "https://www.nzfirst.nz/demolition_by_neglect_stops_here",
+  "timestamp": "20260818143646",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00898.warc.gz",
+  "offset": "766737346",
+  "length": "12028"
+ },
+ "disestablish_auckland_s_independent_maori_statutory_board": {
+  "file": "disestablish_auckland_s_independent_maori_statutory_board.html",
+  "url": "https://www.nzfirst.nz/disestablish_auckland_s_independent_maori_statutory_board",
+  "timestamp": "20260818145712",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00318.warc.gz",
+  "offset": "776118238",
+  "length": "9801"
+ },
+ "disestablishment-of-auckland-transport-bill": {
+  "file": "disestablishment-of-auckland-transport-bill.html",
+  "url": "https://www.nzfirst.nz/disestablishment-of-auckland-transport-bill",
+  "timestamp": "20261011091600",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00933.warc.gz",
+  "offset": "822066502",
+  "length": "10321"
+ },
+ "display_of_flags_government_premises_bill": {
+  "file": "display_of_flags_government_premises_bill.html",
+  "url": "https://www.nzfirst.nz/display_of_flags_government_premises_bill",
+  "timestamp": "20260719220801",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00751.warc.gz",
+  "offset": "799715924",
+  "length": "9767"
+ },
+ "do_something_about_trees": {
+  "file": "do_something_about_trees.html",
+  "url": "https://www.nzfirst.nz/do_something_about_trees",
+  "timestamp": "20260818134617",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00964.warc.gz",
+  "offset": "752003890",
+  "length": "10914"
+ },
+ "dorothy-jones": {
+  "file": "dorothy-jones.html",
+  "url": "https://www.nzfirst.nz/dorothy-jones",
+  "timestamp": "20260719221855",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00565.warc.gz",
+  "offset": "767653617",
+  "length": "9314"
+ },
+ "elizabeth_mundt": {
+  "file": "elizabeth_mundt.html",
+  "url": "https://www.nzfirst.nz/elizabeth_mundt",
+  "timestamp": "20260818134122",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00229.warc.gz",
+  "offset": "731622204",
+  "length": "9583"
+ },
+ "elliot_ikilei": {
+  "file": "elliot_ikilei.html",
+  "url": "https://www.nzfirst.nz/elliot_ikilei",
+  "timestamp": "20260719214950",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00285.warc.gz",
+  "offset": "755091589",
+  "length": "9680"
+ },
+ "elliot_ikilei_to_stand_for_nzfirst": {
+  "file": "elliot_ikilei_to_stand_for_nzfirst.html",
+  "url": "https://www.nzfirst.nz/elliot_ikilei_to_stand_for_nzfirst",
+  "timestamp": "20260719214050",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00139.warc.gz",
+  "offset": "772177506",
+  "length": "10310"
+ },
+ "ending_the_waitangi_make_work_industry": {
+  "file": "ending_the_waitangi_make_work_industry.html",
+  "url": "https://www.nzfirst.nz/ending_the_waitangi_make_work_industry",
+  "timestamp": "20261011081420",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00810.warc.gz",
+  "offset": "860872388",
+  "length": "10922"
+ },
+ "ending_the_waitangi_makework_industry": {
+  "file": "ending_the_waitangi_makework_industry.html",
+  "url": "https://www.nzfirst.nz/ending_the_waitangi_makework_industry",
+  "timestamp": "20261011082214",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00119.warc.gz",
+  "offset": "788678778",
+  "length": "10156"
+ },
+ "enforce-not-dilute-the-law": {
+  "file": "enforce-not-dilute-the-law.html",
+  "url": "https://www.nzfirst.nz/enforce-not-dilute-the-law",
+  "timestamp": "20260719221448",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00887.warc.gz",
+  "offset": "750872317",
+  "length": "10789"
+ },
+ "english-language-bill-passes-first-reading": {
+  "file": "english-language-bill-passes-first-reading.html",
+  "url": "https://www.nzfirst.nz/english-language-bill-passes-first-reading",
+  "timestamp": "20261011081240",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00665.warc.gz",
+  "offset": "889895923",
+  "length": "10960"
+ },
+ "enough-of-failure-winston-peters-2022-conference-speech": {
+  "file": "enough-of-failure-winston-peters-2022-conference-speech.html",
+  "url": "https://www.nzfirst.nz/enough-of-failure-winston-peters-2022-conference-speech",
+  "timestamp": "20260818145333",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00531.warc.gz",
+  "offset": "765264456",
+  "length": "20063"
+ },
+ "establish-royal-commission-of-inquiry-into-media-bias-and-manipulation": {
+  "file": "establish-royal-commission-of-inquiry-into-media-bias-and-manipulation.html",
+  "url": "https://www.nzfirst.nz/establish-royal-commission-of-inquiry-into-media-bias-and-manipulation",
+  "timestamp": "20260907061903",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00623.warc.gz",
+  "offset": "757555817",
+  "length": "15351"
+ },
+ "establishing_a_kiwisaver_generation": {
+  "file": "establishing_a_kiwisaver_generation.html",
+  "url": "https://www.nzfirst.nz/establishing_a_kiwisaver_generation",
+  "timestamp": "20260818145049",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00644.warc.gz",
+  "offset": "778624193",
+  "length": "9395"
+ },
+ "establishing_a_special_economic_zone_at_marsden_point": {
+  "file": "establishing_a_special_economic_zone_at_marsden_point.html",
+  "url": "https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point",
+  "timestamp": "20260818144306",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00150.warc.gz",
+  "offset": "770346899",
+  "length": "9830"
+ },
+ "establishing_an_accessible_new_zealand_for_everyone": {
+  "file": "establishing_an_accessible_new_zealand_for_everyone.html",
+  "url": "https://www.nzfirst.nz/establishing_an_accessible_new_zealand_for_everyone",
+  "timestamp": "20260818083911",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677317.76/warc/CC-MAIN-20260818072149-20260818102149-00785.warc.gz",
+  "offset": "792038517",
+  "length": "10861"
+ },
+ "esther_tofilau_tevaga": {
+  "file": "esther_tofilau_tevaga.html",
+  "url": "https://www.nzfirst.nz/esther_tofilau_tevaga",
+  "timestamp": "20261011075846",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00065.warc.gz",
+  "offset": "781147603",
+  "length": "10131"
+ },
+ "fair-access-to-bathrooms": {
+  "file": "fair-access-to-bathrooms.html",
+  "url": "https://www.nzfirst.nz/fair-access-to-bathrooms",
+  "timestamp": "20261011092352",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00477.warc.gz",
+  "offset": "771116109",
+  "length": "10317"
+ },
+ "fast_tracking_for_170000_migrants": {
+  "file": "fast_tracking_for_170000_migrants.html",
+  "url": "https://www.nzfirst.nz/fast_tracking_for_170000_migrants",
+  "timestamp": "20260818144331",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00831.warc.gz",
+  "offset": "765875889",
+  "length": "10962"
+ },
+ "financial-markets-conduct": {
+  "file": "financial-markets-conduct.html",
+  "url": "https://www.nzfirst.nz/financial-markets-conduct",
+  "timestamp": "20260907071623",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00784.warc.gz",
+  "offset": "748367899",
+  "length": "10052"
+ },
+ "fluoridation-referendum-bill": {
+  "file": "fluoridation-referendum-bill.html",
+  "url": "https://www.nzfirst.nz/fluoridation-referendum-bill",
+  "timestamp": "20261011091044",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00350.warc.gz",
+  "offset": "819102164",
+  "length": "10283"
+ },
+ "focus_on_covid_hospitalisation": {
+  "file": "focus_on_covid_hospitalisation.html",
+  "url": "https://www.nzfirst.nz/focus_on_covid_hospitalisation",
+  "timestamp": "20260818140819",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00488.warc.gz",
+  "offset": "780815954",
+  "length": "10599"
+ },
+ "fonterra_must_answer_serious_questions_today": {
+  "file": "fonterra_must_answer_serious_questions_today.html",
+  "url": "https://www.nzfirst.nz/fonterra_must_answer_serious_questions_today",
+  "timestamp": "20260907071741",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00511.warc.gz",
+  "offset": "742636910",
+  "length": "10720"
+ },
+ "footer-menu": {
+  "file": "footer-menu.html",
+  "url": "https://www.nzfirst.nz/footer-menu",
+  "timestamp": "20261011084450",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00847.warc.gz",
+  "offset": "790074235",
+  "length": "9127"
+ },
+ "for-the-nation-the-whole-nation-and-nothing-but-the-nation": {
+  "file": "for-the-nation-the-whole-nation-and-nothing-but-the-nation.html",
+  "url": "https://www.nzfirst.nz/for-the-nation-the-whole-nation-and-nothing-but-the-nation",
+  "timestamp": "20260818134901",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00469.warc.gz",
+  "offset": "749784909",
+  "length": "20948"
+ },
+ "foreign-ministers-action-a-contempt-for-caretaker-government-convention": {
+  "file": "foreign-ministers-action-a-contempt-for-caretaker-government-convention.html",
+  "url": "https://www.nzfirst.nz/foreign-ministers-action-a-contempt-for-caretaker-government-convention",
+  "timestamp": "20260818141922",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00888.warc.gz",
+  "offset": "757218710",
+  "length": "11154"
+ },
+ "former-wellington-mayor-andy-foster-to-stand-for-new-zealand-first": {
+  "file": "former-wellington-mayor-andy-foster-to-stand-for-new-zealand-first.html",
+  "url": "https://www.nzfirst.nz/former-wellington-mayor-andy-foster-to-stand-for-new-zealand-first",
+  "timestamp": "20260818142536",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00734.warc.gz",
+  "offset": "753403393",
+  "length": "10709"
+ },
+ "former_fma_chair_craig_stobo_to_stand_for_nzfirst_in_botany": {
+  "file": "former_fma_chair_craig_stobo_to_stand_for_nzfirst_in_botany.html",
+  "url": "https://www.nzfirst.nz/former_fma_chair_craig_stobo_to_stand_for_nzfirst_in_botany",
+  "timestamp": "20260907055907",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00391.warc.gz",
+  "offset": "772717418",
+  "length": "10805"
+ },
+ "forms/shares/new": {
+  "file": "forms_shares_new.html",
+  "url": "https://www.nzfirst.nz/forms/shares/new?page_id=5296",
+  "timestamp": "20260313083408",
+  "warc": "crawl-data/CC-MAIN-2026-12/segments/1772687278411.59/warc/CC-MAIN-20260313070635-20260313100635-00404.warc.gz",
+  "offset": "726479912",
+  "length": "13418"
+ },
+ "freedom-of-speech-facing-biggest-threat": {
+  "file": "freedom-of-speech-facing-biggest-threat.html",
+  "url": "https://www.nzfirst.nz/freedom-of-speech-facing-biggest-threat",
+  "timestamp": "20260818143138",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00333.warc.gz",
+  "offset": "754589399",
+  "length": "10703"
+ },
+ "funding-for-mental-health": {
+  "file": "funding-for-mental-health.html",
+  "url": "https://www.nzfirst.nz/funding-for-mental-health",
+  "timestamp": "20261011083637",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00826.warc.gz",
+  "offset": "801466868",
+  "length": "10347"
+ },
+ "future_proofing_our_fuel_security": {
+  "file": "future_proofing_our_fuel_security.html",
+  "url": "https://www.nzfirst.nz/future_proofing_our_fuel_security",
+  "timestamp": "20260818151403",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00215.warc.gz",
+  "offset": "800730594",
+  "length": "10941"
+ },
+ "george_ngatai": {
+  "file": "george_ngatai.html",
+  "url": "https://www.nzfirst.nz/george_ngatai",
+  "timestamp": "20260818144029",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00034.warc.gz",
+  "offset": "794856021",
+  "length": "9070"
+ },
+ "gerald_warner": {
+  "file": "gerald_warner.html",
+  "url": "https://www.nzfirst.nz/gerald_warner",
+  "timestamp": "20260818143251",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00827.warc.gz",
+  "offset": "775448153",
+  "length": "8998"
+ },
+ "getting-tough-on-rising-crime": {
+  "file": "getting-tough-on-rising-crime.html",
+  "url": "https://www.nzfirst.nz/getting-tough-on-rising-crime",
+  "timestamp": "20260907060011",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00124.warc.gz",
+  "offset": "742262174",
+  "length": "10878"
+ },
+ "give-whangarei-and-northland-a_fair-go": {
+  "file": "give-whangarei-and-northland-a_fair-go.html",
+  "url": "https://www.nzfirst.nz/give-whangarei-and-northland-a_fair-go",
+  "timestamp": "20260719214109",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00903.warc.gz",
+  "offset": "785584001",
+  "length": "19831"
+ },
+ "glenfield-policy-announcement": {
+  "file": "glenfield-policy-announcement.html",
+  "url": "https://www.nzfirst.nz/glenfield-policy-announcement",
+  "timestamp": "20260907054604",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00319.warc.gz",
+  "offset": "806144962",
+  "length": "10461"
+ },
+ "gloriavale-slavery-warrants-commission-of-enquiry": {
+  "file": "gloriavale-slavery-warrants-commission-of-enquiry.html",
+  "url": "https://www.nzfirst.nz/gloriavale-slavery-warrants-commission-of-enquiry",
+  "timestamp": "20260907060252",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00526.warc.gz",
+  "offset": "756216838",
+  "length": "10565"
+ },
+ "government-must-speak-with-insurance-companies-now-to-avoid-another-christchurch": {
+  "file": "government-must-speak-with-insurance-companies-now-to-avoid-another-christchurch.html",
+  "url": "https://www.nzfirst.nz/government-must-speak-with-insurance-companies-now-to-avoid-another-christchurch",
+  "timestamp": "20260818144842",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00282.warc.gz",
+  "offset": "808563782",
+  "length": "10198"
+ },
+ "grave_disquiet_over_pike_river_development": {
+  "file": "grave_disquiet_over_pike_river_development.html",
+  "url": "https://www.nzfirst.nz/grave_disquiet_over_pike_river_development",
+  "timestamp": "20260719215429",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00162.warc.gz",
+  "offset": "796536558",
+  "length": "10574"
+ },
+ "green_party_anti_mining_plan_laughable": {
+  "file": "green_party_anti_mining_plan_laughable.html",
+  "url": "https://www.nzfirst.nz/green_party_anti_mining_plan_laughable",
+  "timestamp": "20260907060502",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00742.warc.gz",
+  "offset": "760443607",
+  "length": "10485"
+ },
+ "hamilton-public-meeting": {
+  "file": "hamilton-public-meeting.html",
+  "url": "https://www.nzfirst.nz/hamilton-public-meeting",
+  "timestamp": "20260907072446",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00254.warc.gz",
+  "offset": "736129935",
+  "length": "10723"
+ },
+ "harete_hipango-brownlie_why_the_conservative_maori_should_come_out_from_the_shadows": {
+  "file": "harete_hipango-brownlie_why_the_conservative_maori_should_come_out_from_the_shadows.html",
+  "url": "https://www.nzfirst.nz/harete_hipango-brownlie_why_the_conservative_maori_should_come_out_from_the_shadows",
+  "timestamp": "20260907063906",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00030.warc.gz",
+  "offset": "739607593",
+  "length": "11651"
+ },
+ "harete_hipango_brownlie": {
+  "file": "harete_hipango_brownlie.html",
+  "url": "https://www.nzfirst.nz/harete_hipango_brownlie",
+  "timestamp": "20260719211305",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00349.warc.gz",
+  "offset": "775475519",
+  "length": "9479"
+ },
+ "helma-vermeulen": {
+  "file": "helma-vermeulen.html",
+  "url": "https://www.nzfirst.nz/helma-vermeulen",
+  "timestamp": "20261011092623",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00111.warc.gz",
+  "offset": "775843239",
+  "length": "9546"
+ },
+ "helma_vermeulen": {
+  "file": "helma_vermeulen.html",
+  "url": "https://www.nzfirst.nz/helma_vermeulen",
+  "timestamp": "20260818153141",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00453.warc.gz",
+  "offset": "755234594",
+  "length": "9549"
+ },
+ "history": {
+  "file": "history.html",
+  "url": "https://www.nzfirst.nz/history",
+  "timestamp": "20260906110532",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699667.17/warc/CC-MAIN-20260906110016-20260906140016-00186.warc.gz",
+  "offset": "784334502",
+  "length": "11610"
+ },
+ "hold_mallard_to_account": {
+  "file": "hold_mallard_to_account.html",
+  "url": "https://www.nzfirst.nz/hold_mallard_to_account",
+  "timestamp": "20261011083341",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00335.warc.gz",
+  "offset": "816155789",
+  "length": "16607"
+ },
+ "holly-howard": {
+  "file": "holly-howard.html",
+  "url": "https://www.nzfirst.nz/holly-howard",
+  "timestamp": "20260907055627",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00200.warc.gz",
+  "offset": "789323189",
+  "length": "9104"
+ },
+ "home_slider": {
+  "file": "home_slider.html",
+  "url": "https://www.nzfirst.nz/home_slider",
+  "timestamp": "20260907063817",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00231.warc.gz",
+  "offset": "764956822",
+  "length": "10875"
+ },
+ "how_about_road_to_zero_potholes_instead": {
+  "file": "how_about_road_to_zero_potholes_instead.html",
+  "url": "https://www.nzfirst.nz/how_about_road_to_zero_potholes_instead",
+  "timestamp": "20260907053757",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00432.warc.gz",
+  "offset": "787338173",
+  "length": "9532"
+ },
+ "immigration_reform_policies": {
+  "file": "immigration_reform_policies.html",
+  "url": "https://www.nzfirst.nz/immigration_reform_policies",
+  "timestamp": "20261011092839",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00313.warc.gz",
+  "offset": "810982979",
+  "length": "11313"
+ },
+ "improving-access-to-palliative-care-bill": {
+  "file": "improving-access-to-palliative-care-bill.html",
+  "url": "https://www.nzfirst.nz/improving-access-to-palliative-care-bill",
+  "timestamp": "20260818141453",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00470.warc.gz",
+  "offset": "794289883",
+  "length": "10036"
+ },
+ "improving-the-lives-of-our-seniors": {
+  "file": "improving-the-lives-of-our-seniors.html",
+  "url": "https://www.nzfirst.nz/improving-the-lives-of-our-seniors",
+  "timestamp": "20260907062744",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00240.warc.gz",
+  "offset": "806121493",
+  "length": "10487"
+ },
+ "in-response-to-newshub-and-amelia-wades-obvious-attempt-at-a-political-hit-job": {
+  "file": "in-response-to-newshub-and-amelia-wades-obvious-attempt-at-a-political-hit-job.html",
+  "url": "https://www.nzfirst.nz/in-response-to-newshub-and-amelia-wades-obvious-attempt-at-a-political-hit-job",
+  "timestamp": "20260907072435",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00349.warc.gz",
+  "offset": "768027978",
+  "length": "10990"
+ },
+ "india_fta_a_bad_deal_for_new_zealand": {
+  "file": "india_fta_a_bad_deal_for_new_zealand.html",
+  "url": "https://www.nzfirst.nz/india_fta_a_bad_deal_for_new_zealand",
+  "timestamp": "20260907054031",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00551.warc.gz",
+  "offset": "752740805",
+  "length": "11910"
+ },
+ "inexcusable-andrew": {
+  "file": "inexcusable-andrew.html",
+  "url": "https://www.nzfirst.nz/inexcusable-andrew",
+  "timestamp": "20260907062318",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00841.warc.gz",
+  "offset": "751534102",
+  "length": "10014"
+ },
+ "innocent_again": {
+  "file": "innocent_again.html",
+  "url": "https://www.nzfirst.nz/innocent_again",
+  "timestamp": "20261011090607",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00889.warc.gz",
+  "offset": "813012241",
+  "length": "10899"
+ },
+ "invercargill-policy-announcements": {
+  "file": "invercargill-policy-announcements.html",
+  "url": "https://www.nzfirst.nz/invercargill-policy-announcements",
+  "timestamp": "20260818142637",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00436.warc.gz",
+  "offset": "774811783",
+  "length": "11251"
+ },
+ "invercargill-public-meeting": {
+  "file": "invercargill-public-meeting.html",
+  "url": "https://www.nzfirst.nz/invercargill-public-meeting",
+  "timestamp": "20260513042635",
+  "warc": "crawl-data/CC-MAIN-2026-21/segments/1778213377561.52/warc/CC-MAIN-20260513025801-20260513055801-00786.warc.gz",
+  "offset": "761926349",
+  "length": "11257"
+ },
+ "isaac_nicholson": {
+  "file": "isaac_nicholson.html",
+  "url": "https://www.nzfirst.nz/isaac_nicholson",
+  "timestamp": "20260818150933",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00445.warc.gz",
+  "offset": "780120161",
+  "length": "9474"
+ },
+ "it-never-has-been-aotearoa-in-fact-that-word-is-a-colonialist-construct-penned-in-the-1880s": {
+  "file": "it-never-has-been-aotearoa-in-fact-that-word-is-a-colonialist-construct-penned-in-the-1880s.html",
+  "url": "https://www.nzfirst.nz/it-never-has-been-aotearoa-in-fact-that-word-is-a-colonialist-construct-penned-in-the-1880s",
+  "timestamp": "20260907071552",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00832.warc.gz",
+  "offset": "801363926",
+  "length": "9767"
+ },
+ "iwi_roadblocks_are_racist": {
+  "file": "iwi_roadblocks_are_racist.html",
+  "url": "https://www.nzfirst.nz/iwi_roadblocks_are_racist",
+  "timestamp": "20260818145824",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00252.warc.gz",
+  "offset": "787449427",
+  "length": "10576"
+ },
+ "jackie_farrelly": {
+  "file": "jackie_farrelly.html",
+  "url": "https://www.nzfirst.nz/jackie_farrelly",
+  "timestamp": "20260818145004",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00969.warc.gz",
+  "offset": "740989428",
+  "length": "9602"
+ },
+ "jamie_arbuckle": {
+  "file": "jamie_arbuckle.html",
+  "url": "https://www.nzfirst.nz/jamie_arbuckle",
+  "timestamp": "20260818143056",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00244.warc.gz",
+  "offset": "740864249",
+  "length": "9545"
+ },
+ "jamie_arbuckle_inquiry_into_banking_competition": {
+  "file": "jamie_arbuckle_inquiry_into_banking_competition.html",
+  "url": "https://www.nzfirst.nz/jamie_arbuckle_inquiry_into_banking_competition",
+  "timestamp": "20260719212648",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00122.warc.gz",
+  "offset": "755614413",
+  "length": "10548"
+ },
+ "jamie_cleine": {
+  "file": "jamie_cleine.html",
+  "url": "https://www.nzfirst.nz/jamie_cleine",
+  "timestamp": "20260719212050",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00243.warc.gz",
+  "offset": "705121733",
+  "length": "9642"
+ },
+ "jason_herrick": {
+  "file": "jason_herrick.html",
+  "url": "https://www.nzfirst.nz/jason_herrick",
+  "timestamp": "20261014002335",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054922.10/warc/CC-MAIN-20261014002009-20261014032009-00534.warc.gz",
+  "offset": "785960682",
+  "length": "10106"
+ },
+ "jenny-marcroft": {
+  "file": "jenny-marcroft.html",
+  "url": "https://www.nzfirst.nz/jenny-marcroft",
+  "timestamp": "20260818141543",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00585.warc.gz",
+  "offset": "772352972",
+  "length": "9847"
+ },
+ "jon_blackshaw": {
+  "file": "jon_blackshaw.html",
+  "url": "https://www.nzfirst.nz/jon_blackshaw",
+  "timestamp": "20260818142503",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00898.warc.gz",
+  "offset": "766750282",
+  "length": "9473"
+ },
+ "jon_reeves": {
+  "file": "jon_reeves.html",
+  "url": "https://www.nzfirst.nz/jon_reeves",
+  "timestamp": "20260907053209",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00546.warc.gz",
+  "offset": "724012062",
+  "length": "9362"
+ },
+ "jones_speech_new_plymouth": {
+  "file": "jones_speech_new_plymouth.html",
+  "url": "https://www.nzfirst.nz/jones_speech_new_plymouth",
+  "timestamp": "20260719214747",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00724.warc.gz",
+  "offset": "792434953",
+  "length": "18468"
+ },
+ "julian-paul": {
+  "file": "julian-paul.html",
+  "url": "https://www.nzfirst.nz/julian-paul",
+  "timestamp": "20260907052311",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00270.warc.gz",
+  "offset": "786023294",
+  "length": "9178"
+ },
+ "justice-delayed-is-justice-denied": {
+  "file": "justice-delayed-is-justice-denied.html",
+  "url": "https://www.nzfirst.nz/justice-delayed-is-justice-denied",
+  "timestamp": "20260719220915",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00137.warc.gz",
+  "offset": "762362662",
+  "length": "10152"
+ },
+ "kainga_ora_gang_members": {
+  "file": "kainga_ora_gang_members.html",
+  "url": "https://www.nzfirst.nz/kainga_ora_gang_members",
+  "timestamp": "20260907063342",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00398.warc.gz",
+  "offset": "708892865",
+  "length": "10912"
+ },
+ "keegan_langeveld": {
+  "file": "keegan_langeveld.html",
+  "url": "https://www.nzfirst.nz/keegan_langeveld",
+  "timestamp": "20260818150225",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00074.warc.gz",
+  "offset": "777892983",
+  "length": "9054"
+ },
+ "keep_calm_and_carry_on": {
+  "file": "keep_calm_and_carry_on.html",
+  "url": "https://www.nzfirst.nz/keep_calm_and_carry_on",
+  "timestamp": "20260907055654",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00699.warc.gz",
+  "offset": "800441591",
+  "length": "9952"
+ },
+ "kelvin_davis_must_explain_letter": {
+  "file": "kelvin_davis_must_explain_letter.html",
+  "url": "https://www.nzfirst.nz/kelvin_davis_must_explain_letter",
+  "timestamp": "20261011092727",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00228.warc.gz",
+  "offset": "823028743",
+  "length": "11307"
+ },
+ "kevin_stone": {
+  "file": "kevin_stone.html",
+  "url": "https://www.nzfirst.nz/kevin_stone",
+  "timestamp": "20260719214613",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00757.warc.gz",
+  "offset": "729357263",
+  "length": "9353"
+ },
+ "kinleith-mill-speech": {
+  "file": "kinleith-mill-speech.html",
+  "url": "https://www.nzfirst.nz/kinleith-mill-speech",
+  "timestamp": "20261011083953",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00380.warc.gz",
+  "offset": "802114694",
+  "length": "13508"
+ },
+ "kiwi-housing-for-kiwis": {
+  "file": "kiwi-housing-for-kiwis.html",
+  "url": "https://www.nzfirst.nz/kiwi-housing-for-kiwis",
+  "timestamp": "20260719215509",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00564.warc.gz",
+  "offset": "795649005",
+  "length": "10186"
+ },
+ "kiwis_deserve_accountability_why_wont_they_front_up": {
+  "file": "kiwis_deserve_accountability_why_wont_they_front_up.html",
+  "url": "https://www.nzfirst.nz/kiwis_deserve_accountability_why_wont_they_front_up",
+  "timestamp": "20260720093157",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952438.3/warc/CC-MAIN-20260720091112-20260720121112-00697.warc.gz",
+  "offset": "748068174",
+  "length": "10851"
+ },
+ "kym_mcdonald_king": {
+  "file": "kym_mcdonald_king.html",
+  "url": "https://www.nzfirst.nz/kym_mcdonald_king",
+  "timestamp": "20260719215349",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00152.warc.gz",
+  "offset": "816621498",
+  "length": "9786"
+ },
+ "labour-has-done-nothing-since-this-youth-crime-wave-has-exploded": {
+  "file": "labour-has-done-nothing-since-this-youth-crime-wave-has-exploded.html",
+  "url": "https://www.nzfirst.nz/labour-has-done-nothing-since-this-youth-crime-wave-has-exploded",
+  "timestamp": "20260907055142",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00661.warc.gz",
+  "offset": "848488480",
+  "length": "9747"
+ },
+ "labour-media-parliament-play-fiddle-while-new-zealand-burns": {
+  "file": "labour-media-parliament-play-fiddle-while-new-zealand-burns.html",
+  "url": "https://www.nzfirst.nz/labour-media-parliament-play-fiddle-while-new-zealand-burns",
+  "timestamp": "20260907065728",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00456.warc.gz",
+  "offset": "745964532",
+  "length": "10064"
+ },
+ "labour_s_contradictions_on_gangs": {
+  "file": "labour_s_contradictions_on_gangs.html",
+  "url": "https://www.nzfirst.nz/labour_s_contradictions_on_gangs",
+  "timestamp": "20261011083822",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00227.warc.gz",
+  "offset": "789821969",
+  "length": "9929"
+ },
+ "labours-dirt-campaign-exposed-with-media-help": {
+  "file": "labours-dirt-campaign-exposed-with-media-help.html",
+  "url": "https://www.nzfirst.nz/labours-dirt-campaign-exposed-with-media-help",
+  "timestamp": "20260818144713",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00658.warc.gz",
+  "offset": "761830821",
+  "length": "11118"
+ },
+ "labours-new-farm-emissions-scheme-is-an-out-of-touch-policy-that-will-hit-both-maori-and-non-maori-alike-regardless-of-race": {
+  "file": "labours-new-farm-emissions-scheme-is-an-out-of-touch-policy-that-will-hit-both-maori-and-non-maori-alike-regardless-of-race.html",
+  "url": "https://www.nzfirst.nz/labours-new-farm-emissions-scheme-is-an-out-of-touch-policy-that-will-hit-both-maori-and-non-maori-alike-regardless-of-race",
+  "timestamp": "20260907054414",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00061.warc.gz",
+  "offset": "749891479",
+  "length": "9896"
+ },
+ "labours-pharmac-policy-a-placebo": {
+  "file": "labours-pharmac-policy-a-placebo.html",
+  "url": "https://www.nzfirst.nz/labours-pharmac-policy-a-placebo",
+  "timestamp": "20260907053127",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00015.warc.gz",
+  "offset": "773466351",
+  "length": "10400"
+ },
+ "labours-separatist-agenda-is-now-so-overt": {
+  "file": "labours-separatist-agenda-is-now-so-overt.html",
+  "url": "https://www.nzfirst.nz/labours-separatist-agenda-is-now-so-overt",
+  "timestamp": "20261011092049",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00610.warc.gz",
+  "offset": "809985137",
+  "length": "10283"
+ },
+ "latest-electoral-review-more-dangerous-woke-nonsense": {
+  "file": "latest-electoral-review-more-dangerous-woke-nonsense.html",
+  "url": "https://www.nzfirst.nz/latest-electoral-review-more-dangerous-woke-nonsense",
+  "timestamp": "20260907055452",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00922.warc.gz",
+  "offset": "759925274",
+  "length": "10307"
+ },
+ "learn-mor": {
+  "file": "learn-mor.html",
+  "url": "https://www.nzfirst.nz/learn-mor",
+  "timestamp": "20260907055739",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00493.warc.gz",
+  "offset": "772437730",
+  "length": "10040"
+ },
+ "learn-more": {
+  "file": "learn-more.html",
+  "url": "https://www.nzfirst.nz/learn-more",
+  "timestamp": "20261011090929",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00072.warc.gz",
+  "offset": "824507436",
+  "length": "12484"
+ },
+ "leave_us_a_birthday_message": {
+  "file": "leave_us_a_birthday_message.html",
+  "url": "https://www.nzfirst.nz/leave_us_a_birthday_message",
+  "timestamp": "20260818145703",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00482.warc.gz",
+  "offset": "777705786",
+  "length": "13163"
+ },
+ "lee_smith": {
+  "file": "lee_smith.html",
+  "url": "https://www.nzfirst.nz/lee_smith",
+  "timestamp": "20261011082256",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00582.warc.gz",
+  "offset": "791920984",
+  "length": "10219"
+ },
+ "let_all_kiwis_work": {
+  "file": "let_all_kiwis_work.html",
+  "url": "https://www.nzfirst.nz/let_all_kiwis_work",
+  "timestamp": "20260818141429",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00433.warc.gz",
+  "offset": "795933825",
+  "length": "10680"
+ },
+ "lets-take-back-our-country": {
+  "file": "lets-take-back-our-country.html",
+  "url": "https://www.nzfirst.nz/lets-take-back-our-country",
+  "timestamp": "20260818073328",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677317.76/warc/CC-MAIN-20260818072149-20260818102149-00618.warc.gz",
+  "offset": "751637240",
+  "length": "19116"
+ },
+ "lgnz_divisive": {
+  "file": "lgnz_divisive.html",
+  "url": "https://www.nzfirst.nz/lgnz_divisive",
+  "timestamp": "20260818140240",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00667.warc.gz",
+  "offset": "760361813",
+  "length": "10156"
+ },
+ "lgnz_inclusive_campaigning": {
+  "file": "lgnz_inclusive_campaigning.html",
+  "url": "https://www.nzfirst.nz/lgnz_inclusive_campaigning",
+  "timestamp": "20260818135244",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00137.warc.gz",
+  "offset": "770285924",
+  "length": "10476"
+ },
+ "light_rail_another_massive_cost_blowout_blunder": {
+  "file": "light_rail_another_massive_cost_blowout_blunder.html",
+  "url": "https://www.nzfirst.nz/light_rail_another_massive_cost_blowout_blunder",
+  "timestamp": "20260907062503",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00354.warc.gz",
+  "offset": "720989002",
+  "length": "10628"
+ },
+ "local-govt-min-dangerous-mistruths-in-three-waters-interview": {
+  "file": "local-govt-min-dangerous-mistruths-in-three-waters-interview.html",
+  "url": "https://www.nzfirst.nz/local-govt-min-dangerous-mistruths-in-three-waters-interview",
+  "timestamp": "20261011082721",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00768.warc.gz",
+  "offset": "795981494",
+  "length": "11126"
+ },
+ "local_government_auckland_council_disestablishment_of_imsb_amendment_bill": {
+  "file": "local_government_auckland_council_disestablishment_of_imsb_amendment_bill.html",
+  "url": "https://www.nzfirst.nz/local_government_auckland_council_disestablishment_of_imsb_amendment_bill",
+  "timestamp": "20260719214027",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00149.warc.gz",
+  "offset": "780896237",
+  "length": "10031"
+ },
+ "make-nz-first-again": {
+  "file": "make-nz-first-again.html",
+  "url": "https://www.nzfirst.nz/make-nz-first-again",
+  "timestamp": "20260907054537",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00367.warc.gz",
+  "offset": "772440421",
+  "length": "21110"
+ },
+ "making_new_zealand_and_new_zealanders_safer": {
+  "file": "making_new_zealand_and_new_zealanders_safer.html",
+  "url": "https://www.nzfirst.nz/making_new_zealand_and_new_zealanders_safer",
+  "timestamp": "20260907054847",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00977.warc.gz",
+  "offset": "715063425",
+  "length": "10611"
+ },
+ "mallard_loses_the_plot": {
+  "file": "mallard_loses_the_plot.html",
+  "url": "https://www.nzfirst.nz/mallard_loses_the_plot",
+  "timestamp": "20260907062104",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00506.warc.gz",
+  "offset": "758863883",
+  "length": "11023"
+ },
+ "mallard_must_be_held_to_account": {
+  "file": "mallard_must_be_held_to_account.html",
+  "url": "https://www.nzfirst.nz/mallard_must_be_held_to_account",
+  "timestamp": "20260907062921",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00459.warc.gz",
+  "offset": "793536159",
+  "length": "10414"
+ },
+ "mallard_resignation_a_cover_up": {
+  "file": "mallard_resignation_a_cover_up.html",
+  "url": "https://www.nzfirst.nz/mallard_resignation_a_cover_up",
+  "timestamp": "20260719213641",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00277.warc.gz",
+  "offset": "769048119",
+  "length": "10907"
+ },
+ "mallard_vote_of_no_confidence": {
+  "file": "mallard_vote_of_no_confidence.html",
+  "url": "https://www.nzfirst.nz/mallard_vote_of_no_confidence",
+  "timestamp": "20260818150923",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00379.warc.gz",
+  "offset": "750995361",
+  "length": "10611"
+ },
+ "mallards-apology-victory-for-kiwis": {
+  "file": "mallards-apology-victory-for-kiwis.html",
+  "url": "https://www.nzfirst.nz/mallards-apology-victory-for-kiwis",
+  "timestamp": "20260719221810",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00925.warc.gz",
+  "offset": "740504081",
+  "length": "11080"
+ },
+ "many-experienced-journalists-are-alarmed-at-the-destruction-of-the-fourth-estate": {
+  "file": "many-experienced-journalists-are-alarmed-at-the-destruction-of-the-fourth-estate.html",
+  "url": "https://www.nzfirst.nz/many-experienced-journalists-are-alarmed-at-the-destruction-of-the-fourth-estate",
+  "timestamp": "20261011091333",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00540.warc.gz",
+  "offset": "852675429",
+  "length": "10129"
+ },
+ "maori_party_is_the_pot_calling_the_kettle_white": {
+  "file": "maori_party_is_the_pot_calling_the_kettle_white.html",
+  "url": "https://www.nzfirst.nz/maori_party_is_the_pot_calling_the_kettle_white",
+  "timestamp": "20260818143017",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00163.warc.gz",
+  "offset": "801147128",
+  "length": "10498"
+ },
+ "maori_seats_referendum_bill": {
+  "file": "maori_seats_referendum_bill.html",
+  "url": "https://www.nzfirst.nz/maori_seats_referendum_bill",
+  "timestamp": "20261011080645",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00331.warc.gz",
+  "offset": "837516388",
+  "length": "10227"
+ },
+ "maori_ward_legislation": {
+  "file": "maori_ward_legislation.html",
+  "url": "https://www.nzfirst.nz/maori_ward_legislation",
+  "timestamp": "20260818142121",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00397.warc.gz",
+  "offset": "755635459",
+  "length": "10332"
+ },
+ "mark-arneil": {
+  "file": "mark-arneil.html",
+  "url": "https://www.nzfirst.nz/mark-arneil",
+  "timestamp": "20260719213702",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00497.warc.gz",
+  "offset": "780980067",
+  "length": "9286"
+ },
+ "mark-patterson": {
+  "file": "mark-patterson.html",
+  "url": "https://www.nzfirst.nz/mark-patterson",
+  "timestamp": "20260818144944",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00182.warc.gz",
+  "offset": "709907013",
+  "length": "9963"
+ },
+ "mark_arneil": {
+  "file": "mark_arneil.html",
+  "url": "https://www.nzfirst.nz/mark_arneil",
+  "timestamp": "20260818142020",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00939.warc.gz",
+  "offset": "798043973",
+  "length": "9513"
+ },
+ "mark_patterson_farmers_understand_we_have_their_backs": {
+  "file": "mark_patterson_farmers_understand_we_have_their_backs.html",
+  "url": "https://www.nzfirst.nz/mark_patterson_farmers_understand_we_have_their_backs",
+  "timestamp": "20260719211052",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00218.warc.gz",
+  "offset": "776755338",
+  "length": "10706"
+ },
+ "marsden_point_economic_treason": {
+  "file": "marsden_point_economic_treason.html",
+  "url": "https://www.nzfirst.nz/marsden_point_economic_treason",
+  "timestamp": "20260719212503",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00470.warc.gz",
+  "offset": "733150466",
+  "length": "10661"
+ },
+ "marsden_survey": {
+  "file": "marsden_survey.html",
+  "url": "https://www.nzfirst.nz/marsden_survey",
+  "timestamp": "20261011090046",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00451.warc.gz",
+  "offset": "810696470",
+  "length": "9663"
+ },
+ "martin_gummer": {
+  "file": "martin_gummer.html",
+  "url": "https://www.nzfirst.nz/martin_gummer",
+  "timestamp": "20260818134242",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00605.warc.gz",
+  "offset": "776667656",
+  "length": "8989"
+ },
+ "masterton-public-meeting": {
+  "file": "masterton-public-meeting.html",
+  "url": "https://www.nzfirst.nz/masterton-public-meeting",
+  "timestamp": "20260513041112",
+  "warc": "crawl-data/CC-MAIN-2026-21/segments/1778213377561.52/warc/CC-MAIN-20260513025801-20260513055801-00189.warc.gz",
+  "offset": "777735092",
+  "length": "11363"
+ },
+ "media": {
+  "file": "media.html",
+  "url": "https://www.nzfirst.nz/media",
+  "timestamp": "20260907061231",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00354.warc.gz",
+  "offset": "721000578",
+  "length": "13487"
+ },
+ "media-misrepresentation-inconsistency-and-dripping-bias": {
+  "file": "media-misrepresentation-inconsistency-and-dripping-bias.html",
+  "url": "https://www.nzfirst.nz/media-misrepresentation-inconsistency-and-dripping-bias",
+  "timestamp": "20261011083405",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00267.warc.gz",
+  "offset": "794124115",
+  "length": "11920"
+ },
+ "member-profile": {
+  "file": "member-profile.html",
+  "url": "https://www.nzfirst.nz/member-profile",
+  "timestamp": "20261011081836",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00656.warc.gz",
+  "offset": "822591009",
+  "length": "14673"
+ },
+ "michael_laws": {
+  "file": "michael_laws.html",
+  "url": "https://www.nzfirst.nz/michael_laws",
+  "timestamp": "20261011090905",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00755.warc.gz",
+  "offset": "810058771",
+  "length": "10289"
+ },
+ "michael_laws_to_stand_for_nz_first": {
+  "file": "michael_laws_to_stand_for_nz_first.html",
+  "url": "https://www.nzfirst.nz/michael_laws_to_stand_for_nz_first",
+  "timestamp": "20261014013627",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054922.10/warc/CC-MAIN-20261014002009-20261014032009-00532.warc.gz",
+  "offset": "784583205",
+  "length": "11010"
+ },
+ "ministerial_covid_statement_must_be_challenged": {
+  "file": "ministerial_covid_statement_must_be_challenged.html",
+  "url": "https://www.nzfirst.nz/ministerial_covid_statement_must_be_challenged",
+  "timestamp": "20260907053253",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00299.warc.gz",
+  "offset": "789873540",
+  "length": "11095"
+ },
+ "minster-davidson-must-resign-after-violence-comments": {
+  "file": "minster-davidson-must-resign-after-violence-comments.html",
+  "url": "https://www.nzfirst.nz/minster-davidson-must-resign-after-violence-comments",
+  "timestamp": "20261011085932",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00828.warc.gz",
+  "offset": "791247056",
+  "length": "10384"
+ },
+ "more-businesses-and-livelihoods-ruined-by-ram-raids-and-smash-and-grabs": {
+  "file": "more-businesses-and-livelihoods-ruined-by-ram-raids-and-smash-and-grabs.html",
+  "url": "https://www.nzfirst.nz/more-businesses-and-livelihoods-ruined-by-ram-raids-and-smash-and-grabs",
+  "timestamp": "20261011083925",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00257.warc.gz",
+  "offset": "835188013",
+  "length": "9910"
+ },
+ "morrinsville-public-meeting": {
+  "file": "morrinsville-public-meeting.html",
+  "url": "https://www.nzfirst.nz/morrinsville-public-meeting",
+  "timestamp": "20260410093159",
+  "warc": "crawl-data/CC-MAIN-2026-17/segments/1775805908305.14/warc/CC-MAIN-20260410081153-20260410111153-00188.warc.gz",
+  "offset": "771118485",
+  "length": "10426"
+ },
+ "motueka230626": {
+  "file": "motueka230626.html",
+  "url": "https://www.nzfirst.nz/motueka230626",
+  "timestamp": "20260719223008",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00873.warc.gz",
+  "offset": "766421314",
+  "length": "10705"
+ },
+ "move-to-green-light": {
+  "file": "move-to-green-light.html",
+  "url": "https://www.nzfirst.nz/move-to-green-light",
+  "timestamp": "20261014010104",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054922.10/warc/CC-MAIN-20261014002009-20261014032009-00404.warc.gz",
+  "offset": "792792339",
+  "length": "15413"
+ },
+ "mp-views-crime-infrastructure-easter": {
+  "file": "mp-views-crime-infrastructure-easter.html",
+  "url": "https://www.nzfirst.nz/mp-views-crime-infrastructure-easter",
+  "timestamp": "20260907062127",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00690.warc.gz",
+  "offset": "751667145",
+  "length": "12822"
+ },
+ "mp-views-golden-age": {
+  "file": "mp-views-golden-age.html",
+  "url": "https://www.nzfirst.nz/mp-views-golden-age",
+  "timestamp": "20260719212529",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00290.warc.gz",
+  "offset": "799237101",
+  "length": "12479"
+ },
+ "mp-views-the-golden-goose": {
+  "file": "mp-views-the-golden-goose.html",
+  "url": "https://www.nzfirst.nz/mp-views-the-golden-goose",
+  "timestamp": "20260719212315",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00144.warc.gz",
+  "offset": "787526602",
+  "length": "14568"
+ },
+ "mp-views-waitangi-2025": {
+  "file": "mp-views-waitangi-2025.html",
+  "url": "https://www.nzfirst.nz/mp-views-waitangi-2025",
+  "timestamp": "20261011083248",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00835.warc.gz",
+  "offset": "824606435",
+  "length": "13140"
+ },
+ "mt-albert-public-meeting": {
+  "file": "mt-albert-public-meeting.html",
+  "url": "https://www.nzfirst.nz/mt-albert-public-meeting",
+  "timestamp": "20260313072353",
+  "warc": "crawl-data/CC-MAIN-2026-12/segments/1772687278411.59/warc/CC-MAIN-20260313070635-20260313100635-00872.warc.gz",
+  "offset": "662540166",
+  "length": "10305"
+ },
+ "multibillion-dollar": {
+  "file": "multibillion-dollar.html",
+  "url": "https://www.nzfirst.nz/multibillion-dollar",
+  "timestamp": "20260907062802",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00951.warc.gz",
+  "offset": "777699504",
+  "length": "9885"
+ },
+ "nanaia_mahuta_must_address_nepotism": {
+  "file": "nanaia_mahuta_must_address_nepotism.html",
+  "url": "https://www.nzfirst.nz/nanaia_mahuta_must_address_nepotism",
+  "timestamp": "20260818143451",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00836.warc.gz",
+  "offset": "801493852",
+  "length": "10754"
+ },
+ "nathan_walton": {
+  "file": "nathan_walton.html",
+  "url": "https://www.nzfirst.nz/nathan_walton",
+  "timestamp": "20260818150520",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00346.warc.gz",
+  "offset": "779038825",
+  "length": "9349"
+ },
+ "nationals-tax-plan-rehashing-past-failures": {
+  "file": "nationals-tax-plan-rehashing-past-failures.html",
+  "url": "https://www.nzfirst.nz/nationals-tax-plan-rehashing-past-failures",
+  "timestamp": "20260907052615",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00068.warc.gz",
+  "offset": "761092914",
+  "length": "10443"
+ },
+ "nelson2206": {
+  "file": "nelson2206.html",
+  "url": "https://www.nzfirst.nz/nelson2206",
+  "timestamp": "20260719211002",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00229.warc.gz",
+  "offset": "746920874",
+  "length": "10708"
+ },
+ "new-plymouth-policy-announcement": {
+  "file": "new-plymouth-policy-announcement.html",
+  "url": "https://www.nzfirst.nz/new-plymouth-policy-announcement",
+  "timestamp": "20260818135728",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00582.warc.gz",
+  "offset": "769137176",
+  "length": "10455"
+ },
+ "new-plymouth-public-meeting": {
+  "file": "new-plymouth-public-meeting.html",
+  "url": "https://www.nzfirst.nz/new-plymouth-public-meeting",
+  "timestamp": "20260410085324",
+  "warc": "crawl-data/CC-MAIN-2026-17/segments/1775805908305.14/warc/CC-MAIN-20260410081153-20260410111153-00875.warc.gz",
+  "offset": "778407248",
+  "length": "11361"
+ },
+ "new-zealand-first-announces-kaikoura-candidate": {
+  "file": "new-zealand-first-announces-kaikoura-candidate.html",
+  "url": "https://www.nzfirst.nz/new-zealand-first-announces-kaikoura-candidate",
+  "timestamp": "20260818142431",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00502.warc.gz",
+  "offset": "792221219",
+  "length": "10090"
+ },
+ "new-zealand-first-members-bill-to-protect-freedom-of-speech": {
+  "file": "new-zealand-first-members-bill-to-protect-freedom-of-speech.html",
+  "url": "https://www.nzfirst.nz/new-zealand-first-members-bill-to-protect-freedom-of-speech",
+  "timestamp": "20261011083555",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00635.warc.gz",
+  "offset": "790530890",
+  "length": "11001"
+ },
+ "new-zealand-first-members-bill-to-protect-womens-spaces": {
+  "file": "new-zealand-first-members-bill-to-protect-womens-spaces.html",
+  "url": "https://www.nzfirst.nz/new-zealand-first-members-bill-to-protect-womens-spaces",
+  "timestamp": "20260719221940",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00871.warc.gz",
+  "offset": "806599366",
+  "length": "10568"
+ },
+ "new-zealand-first-party-list-2023": {
+  "file": "new-zealand-first-party-list-2023.html",
+  "url": "https://www.nzfirst.nz/new-zealand-first-party-list-2023",
+  "timestamp": "20261011083801",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00719.warc.gz",
+  "offset": "822985741",
+  "length": "10778"
+ },
+ "new-zealand-first-secure-1800-new-frontline-police-not-labour": {
+  "file": "new-zealand-first-secure-1800-new-frontline-police-not-labour.html",
+  "url": "https://www.nzfirst.nz/new-zealand-first-secure-1800-new-frontline-police-not-labour",
+  "timestamp": "20260818140939",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00571.warc.gz",
+  "offset": "784433441",
+  "length": "10029"
+ },
+ "new-zealand-is-quickly-turning": {
+  "file": "new-zealand-is-quickly-turning.html",
+  "url": "https://www.nzfirst.nz/new-zealand-is-quickly-turning",
+  "timestamp": "20260907062150",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00274.warc.gz",
+  "offset": "786035951",
+  "length": "10190"
+ },
+ "new-zealands-version-of-know-nothingism": {
+  "file": "new-zealands-version-of-know-nothingism.html",
+  "url": "https://www.nzfirst.nz/new-zealands-version-of-know-nothingism",
+  "timestamp": "20260907071509",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00603.warc.gz",
+  "offset": "740891758",
+  "length": "18623"
+ },
+ "new_iwi_roadblock_law": {
+  "file": "new_iwi_roadblock_law.html",
+  "url": "https://www.nzfirst.nz/new_iwi_roadblock_law",
+  "timestamp": "20261011080444",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00819.warc.gz",
+  "offset": "817773345",
+  "length": "11055"
+ },
+ "news": {
+  "file": "news.html",
+  "url": "https://www.nzfirst.nz/news",
+  "timestamp": "20260907060217",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00357.warc.gz",
+  "offset": "769552759",
+  "length": "168089"
+ },
+ "news-menu": {
+  "file": "news-menu.html",
+  "url": "https://www.nzfirst.nz/news-menu",
+  "timestamp": "20261011083426",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00559.warc.gz",
+  "offset": "840486224",
+  "length": "9126"
+ },
+ "news-no-one-gets-to-lie-to-me-twice-winston-peters-reveals-the-party-he-wont-work-with": {
+  "file": "news-no-one-gets-to-lie-to-me-twice-winston-peters-reveals-the-party-he-wont-work-with.html",
+  "url": "https://www.nzfirst.nz/news-no-one-gets-to-lie-to-me-twice-winston-peters-reveals-the-party-he-wont-work-with",
+  "timestamp": "20261011092656",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00622.warc.gz",
+  "offset": "768965143",
+  "length": "16213"
+ },
+ "news-winston-peters-what-happened-to-the-14-billion-covid-recovery-money": {
+  "file": "news-winston-peters-what-happened-to-the-14-billion-covid-recovery-money.html",
+  "url": "https://www.nzfirst.nz/news-winston-peters-what-happened-to-the-14-billion-covid-recovery-money",
+  "timestamp": "20261011091704",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00456.warc.gz",
+  "offset": "798508208",
+  "length": "12796"
+ },
+ "nicola_laboyrie": {
+  "file": "nicola_laboyrie.html",
+  "url": "https://www.nzfirst.nz/nicola_laboyrie",
+  "timestamp": "20260719221110",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00936.warc.gz",
+  "offset": "786917741",
+  "length": "9731"
+ },
+ "no_deal_on_fta_and_merry_christmas": {
+  "file": "no_deal_on_fta_and_merry_christmas.html",
+  "url": "https://www.nzfirst.nz/no_deal_on_fta_and_merry_christmas",
+  "timestamp": "20260818144601",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00879.warc.gz",
+  "offset": "748050539",
+  "length": "11434"
+ },
+ "northland-needs-performance-not-promise": {
+  "file": "northland-needs-performance-not-promise.html",
+  "url": "https://www.nzfirst.nz/northland-needs-performance-not-promise",
+  "timestamp": "20260907054510",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00237.warc.gz",
+  "offset": "774730765",
+  "length": "17615"
+ },
+ "nz-first-announces-casey-costello": {
+  "file": "nz-first-announces-casey-costello.html",
+  "url": "https://www.nzfirst.nz/nz-first-announces-casey-costello",
+  "timestamp": "20261011080403",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00986.warc.gz",
+  "offset": "797310240",
+  "length": "11253"
+ },
+ "nz-first-commonsense-fund": {
+  "file": "nz-first-commonsense-fund.html",
+  "url": "https://www.nzfirst.nz/nz-first-commonsense-fund",
+  "timestamp": "20260907053326",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00979.warc.gz",
+  "offset": "762170177",
+  "length": "17461"
+ },
+ "nz-first-convention-opening-address": {
+  "file": "nz-first-convention-opening-address.html",
+  "url": "https://www.nzfirst.nz/nz-first-convention-opening-address",
+  "timestamp": "20260907065755",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00303.warc.gz",
+  "offset": "796530034",
+  "length": "12358"
+ },
+ "nz-first-election-fund": {
+  "file": "nz-first-election-fund.html",
+  "url": "https://www.nzfirst.nz/nz-first-election-fund",
+  "timestamp": "20261011084118",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00789.warc.gz",
+  "offset": "810709759",
+  "length": "17498"
+ },
+ "nz-first-members-bill-to-disestablish-auckland-transport": {
+  "file": "nz-first-members-bill-to-disestablish-auckland-transport.html",
+  "url": "https://www.nzfirst.nz/nz-first-members-bill-to-disestablish-auckland-transport",
+  "timestamp": "20260818143715",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00009.warc.gz",
+  "offset": "759405146",
+  "length": "10397"
+ },
+ "nz-first-will-not-return-labour-to-power": {
+  "file": "nz-first-will-not-return-labour-to-power.html",
+  "url": "https://www.nzfirst.nz/nz-first-will-not-return-labour-to-power",
+  "timestamp": "20260719215216",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00685.warc.gz",
+  "offset": "746255377",
+  "length": "9924"
+ },
+ "nz_first_announces_immigration_reform_policies": {
+  "file": "nz_first_announces_immigration_reform_policies.html",
+  "url": "https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies",
+  "timestamp": "20261011090135",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00198.warc.gz",
+  "offset": "753403357",
+  "length": "12758"
+ },
+ "nz_first_bill_prostate_cancer_screening": {
+  "file": "nz_first_bill_prostate_cancer_screening.html",
+  "url": "https://www.nzfirst.nz/nz_first_bill_prostate_cancer_screening",
+  "timestamp": "20261011081618",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00194.warc.gz",
+  "offset": "775675940",
+  "length": "10522"
+ },
+ "nz_first_bill_to_ban_public_sales_of_fireworks": {
+  "file": "nz_first_bill_to_ban_public_sales_of_fireworks.html",
+  "url": "https://www.nzfirst.nz/nz_first_bill_to_ban_public_sales_of_fireworks",
+  "timestamp": "20260907054632",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00265.warc.gz",
+  "offset": "783571345",
+  "length": "10263"
+ },
+ "nz_first_bill_to_enable_binding_referendum_on_maori_seats_at_2026_election": {
+  "file": "nz_first_bill_to_enable_binding_referendum_on_maori_seats_at_2026_election.html",
+  "url": "https://www.nzfirst.nz/nz_first_bill_to_enable_binding_referendum_on_maori_seats_at_2026_election",
+  "timestamp": "20261011081057",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00582.warc.gz",
+  "offset": "791932174",
+  "length": "10496"
+ },
+ "nz_first_in_september": {
+  "file": "nz_first_in_september.html",
+  "url": "https://www.nzfirst.nz/nz_first_in_september",
+  "timestamp": "20261011083025",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00799.warc.gz",
+  "offset": "791785094",
+  "length": "16523"
+ },
+ "nz_first_introduces_anti_scamming_bill": {
+  "file": "nz_first_introduces_anti_scamming_bill.html",
+  "url": "https://www.nzfirst.nz/nz_first_introduces_anti_scamming_bill",
+  "timestamp": "20260410095800",
+  "warc": "crawl-data/CC-MAIN-2026-17/segments/1775805908305.14/warc/CC-MAIN-20260410081153-20260410111153-00179.warc.gz",
+  "offset": "822206975",
+  "length": "12798"
+ },
+ "nz_first_introduces_bill_to_implement_a_nationwide_container_return_scheme": {
+  "file": "nz_first_introduces_bill_to_implement_a_nationwide_container_return_scheme.html",
+  "url": "https://www.nzfirst.nz/nz_first_introduces_bill_to_implement_a_nationwide_container_return_scheme",
+  "timestamp": "20261011090401",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00378.warc.gz",
+  "offset": "785242282",
+  "length": "10665"
+ },
+ "nz_first_introduces_bill_to_protect_against_digital_id_overreach": {
+  "file": "nz_first_introduces_bill_to_protect_against_digital_id_overreach.html",
+  "url": "https://www.nzfirst.nz/nz_first_introduces_bill_to_protect_against_digital_id_overreach",
+  "timestamp": "20261011084339",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00991.warc.gz",
+  "offset": "769368785",
+  "length": "10634"
+ },
+ "nz_first_invokes_agree_to_disagree_on_skilled_migrant_visa_changes": {
+  "file": "nz_first_invokes_agree_to_disagree_on_skilled_migrant_visa_changes.html",
+  "url": "https://www.nzfirst.nz/nz_first_invokes_agree_to_disagree_on_skilled_migrant_visa_changes",
+  "timestamp": "20260907052022",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00367.warc.gz",
+  "offset": "772462498",
+  "length": "10362"
+ },
+ "nz_first_launches_use_it_or_lose_it_dairy_policy": {
+  "file": "nz_first_launches_use_it_or_lose_it_dairy_policy.html",
+  "url": "https://www.nzfirst.nz/nz_first_launches_use_it_or_lose_it_dairy_policy",
+  "timestamp": "20260907061401",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00278.warc.gz",
+  "offset": "761482215",
+  "length": "10938"
+ },
+ "nz_first_lodges_differing_view_on_the_gene_tech_bill": {
+  "file": "nz_first_lodges_differing_view_on_the_gene_tech_bill.html",
+  "url": "https://www.nzfirst.nz/nz_first_lodges_differing_view_on_the_gene_tech_bill",
+  "timestamp": "20260907063017",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00620.warc.gz",
+  "offset": "777894458",
+  "length": "10181"
+ },
+ "nz_first_to_campaign_for_referendum_on_maori_seats": {
+  "file": "nz_first_to_campaign_for_referendum_on_maori_seats.html",
+  "url": "https://www.nzfirst.nz/nz_first_to_campaign_for_referendum_on_maori_seats",
+  "timestamp": "20260907060157",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00868.warc.gz",
+  "offset": "746091432",
+  "length": "10526"
+ },
+ "nz_first_to_campaign_on_citizens_only_voting": {
+  "file": "nz_first_to_campaign_on_citizens_only_voting.html",
+  "url": "https://www.nzfirst.nz/nz_first_to_campaign_on_citizens_only_voting",
+  "timestamp": "20261011091746",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00091.warc.gz",
+  "offset": "819142241",
+  "length": "10589"
+ },
+ "nz_first_will_break_up_the_supermarket_duopoly": {
+  "file": "nz_first_will_break_up_the_supermarket_duopoly.html",
+  "url": "https://www.nzfirst.nz/nz_first_will_break_up_the_supermarket_duopoly",
+  "timestamp": "20260818135423",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00437.warc.gz",
+  "offset": "746645442",
+  "length": "10896"
+ },
+ "nz_first_will_not_let_waikato_farmers_be_buried_by_plan_change_1": {
+  "file": "nz_first_will_not_let_waikato_farmers_be_buried_by_plan_change_1.html",
+  "url": "https://www.nzfirst.nz/nz_first_will_not_let_waikato_farmers_be_buried_by_plan_change_1",
+  "timestamp": "20261011084521",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00317.warc.gz",
+  "offset": "793521738",
+  "length": "11066"
+ },
+ "nz_rejects_ihr_amendments": {
+  "file": "nz_rejects_ihr_amendments.html",
+  "url": "https://www.nzfirst.nz/nz_rejects_ihr_amendments",
+  "timestamp": "20261011092314",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00358.warc.gz",
+  "offset": "796869423",
+  "length": "10808"
+ },
+ "nz_super_for_citizens_only": {
+  "file": "nz_super_for_citizens_only.html",
+  "url": "https://www.nzfirst.nz/nz_super_for_citizens_only",
+  "timestamp": "20261011090336",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00525.warc.gz",
+  "offset": "812732148",
+  "length": "10690"
+ },
+ "nzdf_court_of_appeal": {
+  "file": "nzdf_court_of_appeal.html",
+  "url": "https://www.nzfirst.nz/nzdf_court_of_appeal",
+  "timestamp": "20260907063004",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00916.warc.gz",
+  "offset": "767245912",
+  "length": "10441"
+ },
+ "nzf-bill-defining-woman-man": {
+  "file": "nzf-bill-defining-woman-man.html",
+  "url": "https://www.nzfirst.nz/nzf-bill-defining-woman-man",
+  "timestamp": "20260818142044",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00699.warc.gz",
+  "offset": "754859609",
+  "length": "10606"
+ },
+ "nzf-bill-democracy-to-the-people": {
+  "file": "nzf-bill-democracy-to-the-people.html",
+  "url": "https://www.nzfirst.nz/nzf-bill-democracy-to-the-people",
+  "timestamp": "20260907053955",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00372.warc.gz",
+  "offset": "703783927",
+  "length": "10101"
+ },
+ "nzf-bill-to-improve-palliative-care": {
+  "file": "nzf-bill-to-improve-palliative-care.html",
+  "url": "https://www.nzfirst.nz/nzf-bill-to-improve-palliative-care",
+  "timestamp": "20261011092255",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00011.warc.gz",
+  "offset": "776016838",
+  "length": "10745"
+ },
+ "nzf-bill-to-protect-cash": {
+  "file": "nzf-bill-to-protect-cash.html",
+  "url": "https://www.nzfirst.nz/nzf-bill-to-protect-cash",
+  "timestamp": "20261011091354",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00082.warc.gz",
+  "offset": "804129886",
+  "length": "10522"
+ },
+ "nzf-in-government-270225": {
+  "file": "nzf-in-government-270225.html",
+  "url": "https://www.nzfirst.nz/nzf-in-government-270225",
+  "timestamp": "20261011075157",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00067.warc.gz",
+  "offset": "773848440",
+  "length": "12386"
+ },
+ "nzf-introduces-bill-to-fight-woke-banks": {
+  "file": "nzf-introduces-bill-to-fight-woke-banks.html",
+  "url": "https://www.nzfirst.nz/nzf-introduces-bill-to-fight-woke-banks",
+  "timestamp": "20260818143839",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00753.warc.gz",
+  "offset": "753952426",
+  "length": "10065"
+ },
+ "nzf-introduces-fluoridation-referendum-bill": {
+  "file": "nzf-introduces-fluoridation-referendum-bill.html",
+  "url": "https://www.nzfirst.nz/nzf-introduces-fluoridation-referendum-bill",
+  "timestamp": "20260719222047",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00232.warc.gz",
+  "offset": "752178455",
+  "length": "10192"
+ },
+ "nzf_bill_legislating_nzs_name": {
+  "file": "nzf_bill_legislating_nzs_name.html",
+  "url": "https://www.nzfirst.nz/nzf_bill_legislating_nzs_name",
+  "timestamp": "20260719214908",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00504.warc.gz",
+  "offset": "790857415",
+  "length": "10562"
+ },
+ "nzf_bill_only_official_nz_flag": {
+  "file": "nzf_bill_only_official_nz_flag.html",
+  "url": "https://www.nzfirst.nz/nzf_bill_only_official_nz_flag",
+  "timestamp": "20260907055846",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00469.warc.gz",
+  "offset": "854058164",
+  "length": "10190"
+ },
+ "nzf_pillars": {
+  "file": "nzf_pillars.html",
+  "url": "https://www.nzfirst.nz/nzf_pillars",
+  "timestamp": "20260907062235",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00418.warc.gz",
+  "offset": "787183888",
+  "length": "10891"
+ },
+ "nzfirst-hamilton-west-byelection": {
+  "file": "nzfirst-hamilton-west-byelection.html",
+  "url": "https://www.nzfirst.nz/nzfirst-hamilton-west-byelection",
+  "timestamp": "20261011092234",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00776.warc.gz",
+  "offset": "810672408",
+  "length": "10745"
+ },
+ "nzfirst_announces_next_tranche_of_candidates": {
+  "file": "nzfirst_announces_next_tranche_of_candidates.html",
+  "url": "https://www.nzfirst.nz/nzfirst_announces_next_tranche_of_candidates",
+  "timestamp": "20260719221157",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00292.warc.gz",
+  "offset": "748666384",
+  "length": "12883"
+ },
+ "nzfirst_announces_policy_to_encourage_kiwis_to_have_more_kids": {
+  "file": "nzfirst_announces_policy_to_encourage_kiwis_to_have_more_kids.html",
+  "url": "https://www.nzfirst.nz/nzfirst_announces_policy_to_encourage_kiwis_to_have_more_kids",
+  "timestamp": "20260907054755",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00093.warc.gz",
+  "offset": "716757719",
+  "length": "11061"
+ },
+ "nzfirst_campaign_announcement_nz_super_for_citizens_only": {
+  "file": "nzfirst_campaign_announcement_nz_super_for_citizens_only.html",
+  "url": "https://www.nzfirst.nz/nzfirst_campaign_announcement_nz_super_for_citizens_only",
+  "timestamp": "20261011090451",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00137.warc.gz",
+  "offset": "836098034",
+  "length": "11455"
+ },
+ "nzfirst_campaign_announcement_the_plan_to_make_nz_healthy": {
+  "file": "nzfirst_campaign_announcement_the_plan_to_make_nz_healthy.html",
+  "url": "https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy",
+  "timestamp": "20261011093128",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00225.warc.gz",
+  "offset": "801922870",
+  "length": "11828"
+ },
+ "nzfirst_candidate_for_hamilton_east_announced": {
+  "file": "nzfirst_candidate_for_hamilton_east_announced.html",
+  "url": "https://www.nzfirst.nz/nzfirst_candidate_for_hamilton_east_announced",
+  "timestamp": "20260719214501",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00557.warc.gz",
+  "offset": "755500358",
+  "length": "10396"
+ },
+ "nzfirst_candidate_for_taranaki_king_country_announced": {
+  "file": "nzfirst_candidate_for_taranaki_king_country_announced.html",
+  "url": "https://www.nzfirst.nz/nzfirst_candidate_for_taranaki_king_country_announced",
+  "timestamp": "20260719221423",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00509.warc.gz",
+  "offset": "795988102",
+  "length": "10436"
+ },
+ "nzfirst_invokes_agree_to_disagree_on_social_media_ban": {
+  "file": "nzfirst_invokes_agree_to_disagree_on_social_media_ban.html",
+  "url": "https://www.nzfirst.nz/nzfirst_invokes_agree_to_disagree_on_social_media_ban",
+  "timestamp": "20260907072152",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00065.warc.gz",
+  "offset": "773616534",
+  "length": "10363"
+ },
+ "nzfirst_to_campaign_on_20_tax_rate_for_smes": {
+  "file": "nzfirst_to_campaign_on_20_tax_rate_for_smes.html",
+  "url": "https://www.nzfirst.nz/nzfirst_to_campaign_on_20_tax_rate_for_smes",
+  "timestamp": "20261011083534",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00328.warc.gz",
+  "offset": "827925362",
+  "length": "10793"
+ },
+ "nzfirst_to_campaign_on_disestablishment_of_auckland_councils_imsb": {
+  "file": "nzfirst_to_campaign_on_disestablishment_of_auckland_councils_imsb.html",
+  "url": "https://www.nzfirst.nz/nzfirst_to_campaign_on_disestablishment_of_auckland_councils_imsb",
+  "timestamp": "20260719211742",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00826.warc.gz",
+  "offset": "805038303",
+  "length": "10659"
+ },
+ "one_clarion_call": {
+  "file": "one_clarion_call.html",
+  "url": "https://www.nzfirst.nz/one_clarion_call",
+  "timestamp": "20260818134333",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00018.warc.gz",
+  "offset": "795416753",
+  "length": "21789"
+ },
+ "oped-jm-supporting-oyster_farmers": {
+  "file": "oped-jm-supporting-oyster_farmers.html",
+  "url": "https://www.nzfirst.nz/oped-jm-supporting-oyster_farmers",
+  "timestamp": "20260719212557",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00028.warc.gz",
+  "offset": "726998753",
+  "length": "11612"
+ },
+ "oped_mark_patterson_regional_nz_is_world_class": {
+  "file": "oped_mark_patterson_regional_nz_is_world_class.html",
+  "url": "https://www.nzfirst.nz/oped_mark_patterson_regional_nz_is_world_class",
+  "timestamp": "20260818133914",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00041.warc.gz",
+  "offset": "792117842",
+  "length": "12157"
+ },
+ "open_letter_to_the_farmers": {
+  "file": "open_letter_to_the_farmers.html",
+  "url": "https://www.nzfirst.nz/open_letter_to_the_farmers",
+  "timestamp": "20260907072641",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00700.warc.gz",
+  "offset": "752523438",
+  "length": "12242"
+ },
+ "opinion-shane-jones-be-wary-of-hasty-judges-and-patsy-politicians": {
+  "file": "opinion-shane-jones-be-wary-of-hasty-judges-and-patsy-politicians.html",
+  "url": "https://www.nzfirst.nz/opinion-shane-jones-be-wary-of-hasty-judges-and-patsy-politicians",
+  "timestamp": "20260818145026",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00025.warc.gz",
+  "offset": "787765487",
+  "length": "12341"
+ },
+ "our-country-is-broke-of-ideas": {
+  "file": "our-country-is-broke-of-ideas.html",
+  "url": "https://www.nzfirst.nz/our-country-is-broke-of-ideas",
+  "timestamp": "20260818141607",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00491.warc.gz",
+  "offset": "776795127",
+  "length": "19402"
+ },
+ "our-members-bills": {
+  "file": "our-members-bills.html",
+  "url": "https://www.nzfirst.nz/our-members-bills",
+  "timestamp": "20261014011637",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054922.10/warc/CC-MAIN-20261014002009-20261014032009-00525.warc.gz",
+  "offset": "787055912",
+  "length": "11178"
+ },
+ "our-message-is-to-highlight-the-systemic-failures-of-this-government": {
+  "file": "our-message-is-to-highlight-the-systemic-failures-of-this-government.html",
+  "url": "https://www.nzfirst.nz/our-message-is-to-highlight-the-systemic-failures-of-this-government",
+  "timestamp": "20260818150244",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00343.warc.gz",
+  "offset": "775024684",
+  "length": "9682"
+ },
+ "our-preoccupation-with-maori-theatrics-while-sacrificing-economic-realism": {
+  "file": "our-preoccupation-with-maori-theatrics-while-sacrificing-economic-realism.html",
+  "url": "https://www.nzfirst.nz/our-preoccupation-with-maori-theatrics-while-sacrificing-economic-realism",
+  "timestamp": "20260818145634",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00802.warc.gz",
+  "offset": "764597875",
+  "length": "12327"
+ },
+ "our-representative-roles-overseas-should-be-held-by-seriously-qualified-and-experienced-foreign-affairs-personnel": {
+  "file": "our-representative-roles-overseas-should-be-held-by-seriously-qualified-and-experienced-foreign-affairs-personnel.html",
+  "url": "https://www.nzfirst.nz/our-representative-roles-overseas-should-be-held-by-seriously-qualified-and-experienced-foreign-affairs-personnel",
+  "timestamp": "20261011082027",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00944.warc.gz",
+  "offset": "812561665",
+  "length": "10082"
+ },
+ "our-society-will-never-rid-ourselves-of-our-youth-crime-problem-if-this-governments-answer-is-now-introducing-well-being-boards": {
+  "file": "our-society-will-never-rid-ourselves-of-our-youth-crime-problem-if-this-governments-answer-is-now-introducing-well-being-boards.html",
+  "url": "https://www.nzfirst.nz/our-society-will-never-rid-ourselves-of-our-youth-crime-problem-if-this-governments-answer-is-now-introducing-well-being-boards",
+  "timestamp": "20260719220649",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00685.warc.gz",
+  "offset": "746266322",
+  "length": "10148"
+ },
+ "our-team": {
+  "file": "our-team.html",
+  "url": "https://www.nzfirst.nz/our-team",
+  "timestamp": "20260907053507",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00696.warc.gz",
+  "offset": "759842540",
+  "length": "13838"
+ },
+ "our_achievements": {
+  "file": "our_achievements.html",
+  "url": "https://www.nzfirst.nz/our_achievements",
+  "timestamp": "20261011092712",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00305.warc.gz",
+  "offset": "840039215",
+  "length": "9902"
+ },
+ "our_founding_principles": {
+  "file": "our_founding_principles.html",
+  "url": "https://www.nzfirst.nz/our_founding_principles",
+  "timestamp": "20260818142755",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00465.warc.gz",
+  "offset": "806041433",
+  "length": "12470"
+ },
+ "our_story_backup": {
+  "file": "our_story_backup.html",
+  "url": "https://www.nzfirst.nz/our_story_backup",
+  "timestamp": "20260907052858",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00057.warc.gz",
+  "offset": "744600815",
+  "length": "11577"
+ },
+ "papamoa-public-meeting": {
+  "file": "papamoa-public-meeting.html",
+  "url": "https://www.nzfirst.nz/papamoa-public-meeting",
+  "timestamp": "20260313075323",
+  "warc": "crawl-data/CC-MAIN-2026-12/segments/1772687278411.59/warc/CC-MAIN-20260313070635-20260313100635-00313.warc.gz",
+  "offset": "720681085",
+  "length": "10909"
+ },
+ "parliamentary-privilege-defended-with-important-high-court-ruling": {
+  "file": "parliamentary-privilege-defended-with-important-high-court-ruling.html",
+  "url": "https://www.nzfirst.nz/parliamentary-privilege-defended-with-important-high-court-ruling",
+  "timestamp": "20260720100509",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952438.3/warc/CC-MAIN-20260720091112-20260720121112-00192.warc.gz",
+  "offset": "717829260",
+  "length": "10879"
+ },
+ "passing-of-charles-crofts": {
+  "file": "passing-of-charles-crofts.html",
+  "url": "https://www.nzfirst.nz/passing-of-charles-crofts",
+  "timestamp": "20260907063741",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00366.warc.gz",
+  "offset": "758597327",
+  "length": "10070"
+ },
+ "passing_of_queen_elizabeth_ii": {
+  "file": "passing_of_queen_elizabeth_ii.html",
+  "url": "https://www.nzfirst.nz/passing_of_queen_elizabeth_ii",
+  "timestamp": "20260818141338",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00148.warc.gz",
+  "offset": "746538862",
+  "length": "9897"
+ },
+ "past-performance-not-future-promises": {
+  "file": "past-performance-not-future-promises.html",
+  "url": "https://www.nzfirst.nz/past-performance-not-future-promises",
+  "timestamp": "20261011082907",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00874.warc.gz",
+  "offset": "834123925",
+  "length": "17584"
+ },
+ "penny_gaylor": {
+  "file": "penny_gaylor.html",
+  "url": "https://www.nzfirst.nz/penny_gaylor",
+  "timestamp": "20260907065055",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00789.warc.gz",
+  "offset": "745529322",
+  "length": "9682"
+ },
+ "people": {
+  "file": "people.html",
+  "url": "https://www.nzfirst.nz/people",
+  "timestamp": "20260818143812",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00521.warc.gz",
+  "offset": "808714927",
+  "length": "11013"
+ },
+ "people-are-sick-and-tired-of-these-never-ending-wokester-solutions": {
+  "file": "people-are-sick-and-tired-of-these-never-ending-wokester-solutions.html",
+  "url": "https://www.nzfirst.nz/people-are-sick-and-tired-of-these-never-ending-wokester-solutions",
+  "timestamp": "20260907055423",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00507.warc.gz",
+  "offset": "769696322",
+  "length": "9772"
+ },
+ "peters-in-taipei-yesterday-called-for-cooperation-between-like-minded-partners-for-a-peaceful-future": {
+  "file": "peters-in-taipei-yesterday-called-for-cooperation-between-like-minded-partners-for-a-peaceful-future.html",
+  "url": "https://www.nzfirst.nz/peters-in-taipei-yesterday-called-for-cooperation-between-like-minded-partners-for-a-peaceful-future",
+  "timestamp": "20260907055035",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00012.warc.gz",
+  "offset": "787510342",
+  "length": "9649"
+ },
+ "peters_acknowledges_the_passing_of_sir_tumu_te_heuheu": {
+  "file": "peters_acknowledges_the_passing_of_sir_tumu_te_heuheu.html",
+  "url": "https://www.nzfirst.nz/peters_acknowledges_the_passing_of_sir_tumu_te_heuheu",
+  "timestamp": "20261011081134",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00125.warc.gz",
+  "offset": "774138170",
+  "length": "10558"
+ },
+ "peters_action_against_speaker_justified_with_ruling": {
+  "file": "peters_action_against_speaker_justified_with_ruling.html",
+  "url": "https://www.nzfirst.nz/peters_action_against_speaker_justified_with_ruling",
+  "timestamp": "20261011081905",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00969.warc.gz",
+  "offset": "813076978",
+  "length": "10665"
+ },
+ "peters_announces_judicial_review_action": {
+  "file": "peters_announces_judicial_review_action.html",
+  "url": "https://www.nzfirst.nz/peters_announces_judicial_review_action",
+  "timestamp": "20260818135554",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00538.warc.gz",
+  "offset": "766318231",
+  "length": "10217"
+ },
+ "peters_speech_foreign_policy_class": {
+  "file": "peters_speech_foreign_policy_class.html",
+  "url": "https://www.nzfirst.nz/peters_speech_foreign_policy_class",
+  "timestamp": "20260818150618",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00997.warc.gz",
+  "offset": "771572681",
+  "length": "14678"
+ },
+ "petition_maori_seats_referendum": {
+  "file": "petition_maori_seats_referendum.html",
+  "url": "https://www.nzfirst.nz/petition_maori_seats_referendum",
+  "timestamp": "20260818142716",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00648.warc.gz",
+  "offset": "786982074",
+  "length": "10956"
+ },
+ "petition_reopen_marsden_point": {
+  "file": "petition_reopen_marsden_point.html",
+  "url": "https://www.nzfirst.nz/petition_reopen_marsden_point",
+  "timestamp": "20261011084203",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00606.warc.gz",
+  "offset": "795932584",
+  "length": "15355"
+ },
+ "pip-eyre": {
+  "file": "pip-eyre.html",
+  "url": "https://www.nzfirst.nz/pip-eyre",
+  "timestamp": "20261011083659",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00023.warc.gz",
+  "offset": "773820338",
+  "length": "9600"
+ },
+ "pm_in_on_the_deception": {
+  "file": "pm_in_on_the_deception.html",
+  "url": "https://www.nzfirst.nz/pm_in_on_the_deception",
+  "timestamp": "20260818135010",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00061.warc.gz",
+  "offset": "801178775",
+  "length": "11882"
+ },
+ "policy": {
+  "file": "policy.html",
+  "url": "https://www.nzfirst.nz/policy",
+  "timestamp": "20261011092431",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00372.warc.gz",
+  "offset": "806566809",
+  "length": "12588"
+ },
+ "policy-announcement-capped-time-period-for-job-seeker-beneficiaries": {
+  "file": "policy-announcement-capped-time-period-for-job-seeker-beneficiaries.html",
+  "url": "https://www.nzfirst.nz/policy-announcement-capped-time-period-for-job-seeker-beneficiaries",
+  "timestamp": "20260818140203",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00326.warc.gz",
+  "offset": "777524835",
+  "length": "10393"
+ },
+ "policy-announcement-no-men-in-womens-spaces-or-sports": {
+  "file": "policy-announcement-no-men-in-womens-spaces-or-sports.html",
+  "url": "https://www.nzfirst.nz/policy-announcement-no-men-in-womens-spaces-or-sports",
+  "timestamp": "20260818143934",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00087.warc.gz",
+  "offset": "767807743",
+  "length": "10588"
+ },
+ "policy-announcements-law-order-justice-courts-corrections": {
+  "file": "policy-announcements-law-order-justice-courts-corrections.html",
+  "url": "https://www.nzfirst.nz/policy-announcements-law-order-justice-courts-corrections",
+  "timestamp": "20260818140418",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00482.warc.gz",
+  "offset": "777719922",
+  "length": "11718"
+ },
+ "port-waikato-campaign-launch": {
+  "file": "port-waikato-campaign-launch.html",
+  "url": "https://www.nzfirst.nz/port-waikato-campaign-launch",
+  "timestamp": "20260513032607",
+  "warc": "crawl-data/CC-MAIN-2026-21/segments/1778213377561.52/warc/CC-MAIN-20260513025801-20260513055801-00313.warc.gz",
+  "offset": "755685795",
+  "length": "10699"
+ },
+ "power_to_the_people_sotn_2026": {
+  "file": "power_to_the_people_sotn_2026.html",
+  "url": "https://www.nzfirst.nz/power_to_the_people_sotn_2026",
+  "timestamp": "20260818141004",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00545.warc.gz",
+  "offset": "752800924",
+  "length": "23266"
+ },
+ "pr-democracy-matters": {
+  "file": "pr-democracy-matters.html",
+  "url": "https://www.nzfirst.nz/pr-democracy-matters",
+  "timestamp": "20261011085212",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00705.warc.gz",
+  "offset": "809244947",
+  "length": "10567"
+ },
+ "prefu-exposes-political-promises": {
+  "file": "prefu-exposes-political-promises.html",
+  "url": "https://www.nzfirst.nz/prefu-exposes-political-promises",
+  "timestamp": "20260907061047",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00115.warc.gz",
+  "offset": "768744275",
+  "length": "10437"
+ },
+ "preventing_payment_scams_bill": {
+  "file": "preventing_payment_scams_bill.html",
+  "url": "https://www.nzfirst.nz/preventing_payment_scams_bill",
+  "timestamp": "20261011085728",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00187.warc.gz",
+  "offset": "743187707",
+  "length": "10059"
+ },
+ "principle": {
+  "file": "principle.html",
+  "url": "https://www.nzfirst.nz/principle",
+  "timestamp": "20260818141247",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00218.warc.gz",
+  "offset": "776042691",
+  "length": "11786"
+ },
+ "prison_officers_have_lost_trust": {
+  "file": "prison_officers_have_lost_trust.html",
+  "url": "https://www.nzfirst.nz/prison_officers_have_lost_trust",
+  "timestamp": "20260818151703",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00548.warc.gz",
+  "offset": "789929242",
+  "length": "10756"
+ },
+ "privacy": {
+  "file": "privacy.html",
+  "url": "https://www.nzfirst.nz/privacy",
+  "timestamp": "20260907055715",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00854.warc.gz",
+  "offset": "763877011",
+  "length": "13589"
+ },
+ "prostate_cancer_screening_bill": {
+  "file": "prostate_cancer_screening_bill.html",
+  "url": "https://www.nzfirst.nz/prostate_cancer_screening_bill",
+  "timestamp": "20260719210813",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00566.warc.gz",
+  "offset": "807574745",
+  "length": "9947"
+ },
+ "protection-of-freedom-of-expression-bill": {
+  "file": "protection-of-freedom-of-expression-bill.html",
+  "url": "https://www.nzfirst.nz/protection-of-freedom-of-expression-bill",
+  "timestamp": "20260818141126",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00289.warc.gz",
+  "offset": "775433141",
+  "length": "9968"
+ },
+ "puberty-blockers-banned-for-children": {
+  "file": "puberty-blockers-banned-for-children.html",
+  "url": "https://www.nzfirst.nz/puberty-blockers-banned-for-children",
+  "timestamp": "20261011090753",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00998.warc.gz",
+  "offset": "810712787",
+  "length": "11871"
+ },
+ "pukekohe-policy-announcement": {
+  "file": "pukekohe-policy-announcement.html",
+  "url": "https://www.nzfirst.nz/pukekohe-policy-announcement",
+  "timestamp": "20260818144903",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00343.warc.gz",
+  "offset": "775035342",
+  "length": "10400"
+ },
+ "putting_new_zealand_first": {
+  "file": "putting_new_zealand_first.html",
+  "url": "https://www.nzfirst.nz/putting_new_zealand_first",
+  "timestamp": "20261011080319",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00255.warc.gz",
+  "offset": "776751680",
+  "length": "11303"
+ },
+ "pzifer_letter_never_brought_to_cabinet": {
+  "file": "pzifer_letter_never_brought_to_cabinet.html",
+  "url": "https://www.nzfirst.nz/pzifer_letter_never_brought_to_cabinet",
+  "timestamp": "20260818135209",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00657.warc.gz",
+  "offset": "821076480",
+  "length": "10533"
+ },
+ "rangiora-public-meeting": {
+  "file": "rangiora-public-meeting.html",
+  "url": "https://www.nzfirst.nz/rangiora-public-meeting",
+  "timestamp": "20261011090633",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00477.warc.gz",
+  "offset": "771127338",
+  "length": "11042"
+ },
+ "re-the-call-for-corporate-manslaughter-legislation": {
+  "file": "re-the-call-for-corporate-manslaughter-legislation.html",
+  "url": "https://www.nzfirst.nz/re-the-call-for-corporate-manslaughter-legislation",
+  "timestamp": "20260818140549",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00572.warc.gz",
+  "offset": "773694383",
+  "length": "10365"
+ },
+ "realism-and-commonsense-not-political-platitudes": {
+  "file": "realism-and-commonsense-not-political-platitudes.html",
+  "url": "https://www.nzfirst.nz/realism-and-commonsense-not-political-platitudes",
+  "timestamp": "20260818134736",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00251.warc.gz",
+  "offset": "732648595",
+  "length": "18193"
+ },
+ "recruit": {
+  "file": "recruit.html",
+  "url": "https://www.nzfirst.nz/recruit",
+  "timestamp": "20261014010630",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054922.10/warc/CC-MAIN-20261014002009-20261014032009-00716.warc.gz",
+  "offset": "724704985",
+  "length": "10379"
+ },
+ "referendum_on_maori_seats": {
+  "file": "referendum_on_maori_seats.html",
+  "url": "https://www.nzfirst.nz/referendum_on_maori_seats",
+  "timestamp": "20260818144056",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00667.warc.gz",
+  "offset": "760372876",
+  "length": "9728"
+ },
+ "removemandates": {
+  "file": "removemandates.html",
+  "url": "https://www.nzfirst.nz/removemandates",
+  "timestamp": "20260907060625",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00737.warc.gz",
+  "offset": "782665714",
+  "length": "11013"
+ },
+ "repeal-of-dei-requirements-bill": {
+  "file": "repeal-of-dei-requirements-bill.html",
+  "url": "https://www.nzfirst.nz/repeal-of-dei-requirements-bill",
+  "timestamp": "20261011091225",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00393.warc.gz",
+  "offset": "805445735",
+  "length": "10339"
+ },
+ "repeating-mass-immigration-mistakes-for-same-result": {
+  "file": "repeating-mass-immigration-mistakes-for-same-result.html",
+  "url": "https://www.nzfirst.nz/repeating-mass-immigration-mistakes-for-same-result",
+  "timestamp": "20260906120804",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699667.17/warc/CC-MAIN-20260906110016-20260906140016-00716.warc.gz",
+  "offset": "781383464",
+  "length": "10281"
+ },
+ "restoring-democracy-critical-in-restoring-new-zealands-economy": {
+  "file": "restoring-democracy-critical-in-restoring-new-zealands-economy.html",
+  "url": "https://www.nzfirst.nz/restoring-democracy-critical-in-restoring-new-zealands-economy",
+  "timestamp": "20260818144821",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00776.warc.gz",
+  "offset": "790060005",
+  "length": "16991"
+ },
+ "returning_50_of_mining_royalties_to_the_regions": {
+  "file": "returning_50_of_mining_royalties_to_the_regions.html",
+  "url": "https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions",
+  "timestamp": "20260818152307",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00398.warc.gz",
+  "offset": "790658387",
+  "length": "10858"
+ },
+ "road-to-0-potholes": {
+  "file": "road-to-0-potholes.html",
+  "url": "https://www.nzfirst.nz/road-to-0-potholes",
+  "timestamp": "20260719212838",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00330.warc.gz",
+  "offset": "786639829",
+  "length": "14964"
+ },
+ "robert_cookson": {
+  "file": "robert_cookson.html",
+  "url": "https://www.nzfirst.nz/robert_cookson",
+  "timestamp": "20260818135525",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00599.warc.gz",
+  "offset": "787863193",
+  "length": "9544"
+ },
+ "ron_mark": {
+  "file": "ron_mark.html",
+  "url": "https://www.nzfirst.nz/ron_mark",
+  "timestamp": "20260907064047",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00205.warc.gz",
+  "offset": "761677140",
+  "length": "9603"
+ },
+ "rt-hon-winston-peters": {
+  "file": "rt-hon-winston-peters.html",
+  "url": "https://www.nzfirst.nz/rt-hon-winston-peters",
+  "timestamp": "20260719213338",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00367.warc.gz",
+  "offset": "753319113",
+  "length": "10097"
+ },
+ "rules": {
+  "file": "rules.html",
+  "url": "https://www.nzfirst.nz/rules",
+  "timestamp": "20261011091200",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00197.warc.gz",
+  "offset": "831043470",
+  "length": "9362"
+ },
+ "sadness-at-the-passing-of-shinzo-abe": {
+  "file": "sadness-at-the-passing-of-shinzo-abe.html",
+  "url": "https://www.nzfirst.nz/sadness-at-the-passing-of-shinzo-abe",
+  "timestamp": "20260719214405",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00364.warc.gz",
+  "offset": "778014045",
+  "length": "10185"
+ },
+ "sailgp-debacle-a-disaster-for-new-zealands-future": {
+  "file": "sailgp-debacle-a-disaster-for-new-zealands-future.html",
+  "url": "https://www.nzfirst.nz/sailgp-debacle-a-disaster-for-new-zealands-future",
+  "timestamp": "20261011081448",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00823.warc.gz",
+  "offset": "815065477",
+  "length": "11024"
+ },
+ "separatist_three_waters_announcement": {
+  "file": "separatist_three_waters_announcement.html",
+  "url": "https://www.nzfirst.nz/separatist_three_waters_announcement",
+  "timestamp": "20261011090110",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00916.warc.gz",
+  "offset": "794285201",
+  "length": "11105"
+ },
+ "september_wrap_up_25": {
+  "file": "september_wrap_up_25.html",
+  "url": "https://www.nzfirst.nz/september_wrap_up_25",
+  "timestamp": "20260907065341",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00850.warc.gz",
+  "offset": "780784241",
+  "length": "17000"
+ },
+ "serious-questions-raised-by-ipca-report": {
+  "file": "serious-questions-raised-by-ipca-report.html",
+  "url": "https://www.nzfirst.nz/serious-questions-raised-by-ipca-report",
+  "timestamp": "20260719211823",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00952.warc.gz",
+  "offset": "809677462",
+  "length": "10788"
+ },
+ "serious_response_to_serious_problems": {
+  "file": "serious_response_to_serious_problems.html",
+  "url": "https://www.nzfirst.nz/serious_response_to_serious_problems",
+  "timestamp": "20260907054347",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00482.warc.gz",
+  "offset": "766451262",
+  "length": "10743"
+ },
+ "shane-jones": {
+  "file": "shane-jones.html",
+  "url": "https://www.nzfirst.nz/shane-jones",
+  "timestamp": "20260907055350",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00091.warc.gz",
+  "offset": "747394075",
+  "length": "10152"
+ },
+ "shane-jones-a-rerun-of-st-jacinda-and-labouring-on-with-salami-politics": {
+  "file": "shane-jones-a-rerun-of-st-jacinda-and-labouring-on-with-salami-politics.html",
+  "url": "https://www.nzfirst.nz/shane-jones-a-rerun-of-st-jacinda-and-labouring-on-with-salami-politics",
+  "timestamp": "20260907061334",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00710.warc.gz",
+  "offset": "745673416",
+  "length": "12795"
+ },
+ "shane-jones-government-is-chasing-its-ideological-tail": {
+  "file": "shane-jones-government-is-chasing-its-ideological-tail.html",
+  "url": "https://www.nzfirst.nz/shane-jones-government-is-chasing-its-ideological-tail",
+  "timestamp": "20260907061156",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00769.warc.gz",
+  "offset": "764687919",
+  "length": "12779"
+ },
+ "shane-jones-no-holds-barred-interview-on-the-country": {
+  "file": "shane-jones-no-holds-barred-interview-on-the-country.html",
+  "url": "https://www.nzfirst.nz/shane-jones-no-holds-barred-interview-on-the-country",
+  "timestamp": "20260818144509",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00924.warc.gz",
+  "offset": "799428215",
+  "length": "10090"
+ },
+ "shane-jones-no-more-treaty-clause-mission-creep": {
+  "file": "shane-jones-no-more-treaty-clause-mission-creep.html",
+  "url": "https://www.nzfirst.nz/shane-jones-no-more-treaty-clause-mission-creep",
+  "timestamp": "20260907072045",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00506.warc.gz",
+  "offset": "758875867",
+  "length": "15326"
+ },
+ "shane-jones-talks-northlands-crime-wave-with-dale-husband": {
+  "file": "shane-jones-talks-northlands-crime-wave-with-dale-husband.html",
+  "url": "https://www.nzfirst.nz/shane-jones-talks-northlands-crime-wave-with-dale-husband",
+  "timestamp": "20260907061453",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00356.warc.gz",
+  "offset": "803506039",
+  "length": "9948"
+ },
+ "shane-jones-voters-not-fooled-by-easter-bunnys-policy-eggs": {
+  "file": "shane-jones-voters-not-fooled-by-easter-bunnys-policy-eggs.html",
+  "url": "https://www.nzfirst.nz/shane-jones-voters-not-fooled-by-easter-bunnys-policy-eggs",
+  "timestamp": "20260818142352",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00364.warc.gz",
+  "offset": "797174414",
+  "length": "12307"
+ },
+ "shane-jones-world-health-organisation-needs-reform-not-fattening": {
+  "file": "shane-jones-world-health-organisation-needs-reform-not-fattening.html",
+  "url": "https://www.nzfirst.nz/shane-jones-world-health-organisation-needs-reform-not-fattening",
+  "timestamp": "20260907054252",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00181.warc.gz",
+  "offset": "785792250",
+  "length": "12485"
+ },
+ "shane_jones_announced_as_deputy_leader": {
+  "file": "shane_jones_announced_as_deputy_leader.html",
+  "url": "https://www.nzfirst.nz/shane_jones_announced_as_deputy_leader",
+  "timestamp": "20260818145146",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00570.warc.gz",
+  "offset": "781941939",
+  "length": "9954"
+ },
+ "shane_jones_nz_is_at_a_pivotal_point_in_our_economic_journey": {
+  "file": "shane_jones_nz_is_at_a_pivotal_point_in_our_economic_journey.html",
+  "url": "https://www.nzfirst.nz/shane_jones_nz_is_at_a_pivotal_point_in_our_economic_journey",
+  "timestamp": "20260719213122",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00832.warc.gz",
+  "offset": "762674593",
+  "length": "10593"
+ },
+ "shane_jones_we_have_our_own_nz_coal": {
+  "file": "shane_jones_we_have_our_own_nz_coal.html",
+  "url": "https://www.nzfirst.nz/shane_jones_we_have_our_own_nz_coal",
+  "timestamp": "20261014012231",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054922.10/warc/CC-MAIN-20261014002009-20261014032009-00370.warc.gz",
+  "offset": "788885365",
+  "length": "10748"
+ },
+ "shane_wiremu": {
+  "file": "shane_wiremu.html",
+  "url": "https://www.nzfirst.nz/shane_wiremu",
+  "timestamp": "20260818144444",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00011.warc.gz",
+  "offset": "740793326",
+  "length": "9031"
+ },
+ "shanejones": {
+  "file": "shanejones.html",
+  "url": "https://www.nzfirst.nz/shanejones",
+  "timestamp": "20260719215633",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00318.warc.gz",
+  "offset": "790429628",
+  "length": "10530"
+ },
+ "shareable_innocent_again": {
+  "file": "shareable_innocent_again.html",
+  "url": "https://www.nzfirst.nz/shareable_innocent_again",
+  "timestamp": "20261011092640",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00391.warc.gz",
+  "offset": "769638085",
+  "length": "10529"
+ },
+ "shareables": {
+  "file": "shareables.html",
+  "url": "https://www.nzfirst.nz/shareables",
+  "timestamp": "20260907064534",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00852.warc.gz",
+  "offset": "758786874",
+  "length": "20559"
+ },
+ "sheldon_eden_whaitiri": {
+  "file": "sheldon_eden_whaitiri.html",
+  "url": "https://www.nzfirst.nz/sheldon_eden_whaitiri",
+  "timestamp": "20260818143520",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00842.warc.gz",
+  "offset": "754058306",
+  "length": "9580"
+ },
+ "should-marama-davidson-resign": {
+  "file": "should-marama-davidson-resign.html",
+  "url": "https://www.nzfirst.nz/should-marama-davidson-resign",
+  "timestamp": "20260818134538",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00697.warc.gz",
+  "offset": "779896361",
+  "length": "9584"
+ },
+ "sir_wira_gardiner": {
+  "file": "sir_wira_gardiner.html",
+  "url": "https://www.nzfirst.nz/sir_wira_gardiner",
+  "timestamp": "20260907053538",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00959.warc.gz",
+  "offset": "744461875",
+  "length": "10546"
+ },
+ "sj-less-ccc-puffery-more-economic-realism": {
+  "file": "sj-less-ccc-puffery-more-economic-realism.html",
+  "url": "https://www.nzfirst.nz/sj-less-ccc-puffery-more-economic-realism",
+  "timestamp": "20260907055825",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00381.warc.gz",
+  "offset": "776946471",
+  "length": "12401"
+ },
+ "sj-maximise-our-trade-potential": {
+  "file": "sj-maximise-our-trade-potential.html",
+  "url": "https://www.nzfirst.nz/sj-maximise-our-trade-potential",
+  "timestamp": "20260818134654",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00102.warc.gz",
+  "offset": "769108124",
+  "length": "12223"
+ },
+ "sj-political-character-exposed-in-minor-mp-shenanigans": {
+  "file": "sj-political-character-exposed-in-minor-mp-shenanigans.html",
+  "url": "https://www.nzfirst.nz/sj-political-character-exposed-in-minor-mp-shenanigans",
+  "timestamp": "20260907071954",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00206.warc.gz",
+  "offset": "752105116",
+  "length": "12333"
+ },
+ "sj-taken-for-a-ride-on-a-political-hell-on-wheels": {
+  "file": "sj-taken-for-a-ride-on-a-political-hell-on-wheels.html",
+  "url": "https://www.nzfirst.nz/sj-taken-for-a-ride-on-a-political-hell-on-wheels",
+  "timestamp": "20260719220443",
+  "warc": "crawl-data/CC-MAIN-2026-30/segments/1783663952202.8/warc/CC-MAIN-20260719205533-20260719235533-00021.warc.gz",
+  "offset": "777588081",
+  "length": "12609"
+ },
+ "sj_dragon_in_pacific": {
+  "file": "sj_dragon_in_pacific.html",
+  "url": "https://www.nzfirst.nz/sj_dragon_in_pacific",
+  "timestamp": "20261011090542",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00101.warc.gz",
+  "offset": "799063564",
+  "length": "12697"
+ },
+ "sj_gang_warfare": {
+  "file": "sj_gang_warfare.html",
+  "url": "https://www.nzfirst.nz/sj_gang_warfare",
+  "timestamp": "20261011082840",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00320.warc.gz",
+  "offset": "824501158",
+  "length": "12762"
+ },
+ "sj_inflation_runs_amok": {
+  "file": "sj_inflation_runs_amok.html",
+  "url": "https://www.nzfirst.nz/sj_inflation_runs_amok",
+  "timestamp": "20260818134414",
+  "warc": "crawl-data/CC-MAIN-2026-34/segments/1786091677910.78/warc/CC-MAIN-20260818132700-20260818162700-00668.warc.gz",
+  "offset": "763944792",
+  "length": "12609"
+ },
+ "sj_labours_1b_budget": {
+  "file": "sj_labours_1b_budget.html",
+  "url": "https://www.nzfirst.nz/sj_labours_1b_budget",
+  "timestamp": "20260907063834",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00674.warc.gz",
+  "offset": "791307898",
+  "length": "12892"
+ },
+ "sj_pacific_island_forum": {
+  "file": "sj_pacific_island_forum.html",
+  "url": "https://www.nzfirst.nz/sj_pacific_island_forum",
+  "timestamp": "20261011085241",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00179.warc.gz",
+  "offset": "794713363",
+  "length": "13271"
+ },
+ "sj_political_stink_in_rotorua": {
+  "file": "sj_political_stink_in_rotorua.html",
+  "url": "https://www.nzfirst.nz/sj_political_stink_in_rotorua",
+  "timestamp": "20260907055803",
+  "warc": "crawl-data/CC-MAIN-2026-39/segments/1788492699715.20/warc/CC-MAIN-20260907051702-20260907081702-00334.warc.gz",
+  "offset": "772216437",
+  "length": "12715"
+ },
+ "sj_supermarket_duopoly": {
+  "file": "sj_supermarket_duopoly.html",
+  "url": "https://www.nzfirst.nz/sj_supermarket_duopoly",
+  "timestamp": "20261011082437",
+  "warc": "crawl-data/CC-MAIN-2026-43/segments/1791170054573.27/warc/CC-MAIN-20261011074633-20261011104633-00212.warc.gz",
+  "offset": "808854148",
+  "length": "13189"
  }
 }
