@@ -6,7 +6,7 @@ A sourced, non-partisan research archive for voters in the **7 November 2026 gen
 
 It comes with an interactive, phone-friendly guide in [`site/`](site/) — find-your-match quiz, party pages, issue comparisons, your electorate's candidates, a tap-a-seat map of every Parliament, poll trends, a coalition builder and an MMP seat calculator.
 
-> Not affiliated with any party. Every fact is meant to link to its source, and the same rules apply to every party ([editorial standards](docs/EDITORIAL_STANDARDS.md)). If you find an error, open a [Correction issue](https://github.com/simongeorgebrown/Politicsnz/issues/new/choose) or see [how to report an error](docs/EDITORIAL_STANDARDS.md#how-to-report-an-error). Party policy texts are reproduced as published, for reference. Enrol and find your voting place at **vote.nz**.
+> Not affiliated with any party. Every fact is meant to link to its source, and the same rules apply to every party ([editorial standards](docs/EDITORIAL_STANDARDS.md)). If you find an error, open a [Correction issue](https://github.com/not-simon/Politicsnz/issues/new/choose) or see [how to report an error](docs/EDITORIAL_STANDARDS.md#how-to-report-an-error). Party policy texts are reproduced as published, for reference. Enrol and find your voting place at **vote.nz**.
 
 ## Start here
 

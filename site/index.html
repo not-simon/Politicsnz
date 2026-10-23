@@ -272,7 +272,11 @@ dialog::backdrop { background: rgba(12,18,32,.55); backdrop-filter: blur(2px) }
 .ballot .bh { font: 800 13px var(--f-display); text-transform: uppercase; letter-spacing: .05em }
 .ballot .opt { display: flex; justify-content: space-between; gap: 6px; align-items: center }
 .ballot .box { width: 20px; height: 20px; border: 2px solid var(--ink); border-radius: 50%; display: grid; place-items: center; flex: none }
-.ballot .box.on::after { content: ""; width: 12px; height: 7px; border-left: 3px solid var(--coral); border-bottom: 3px solid var(--coral); transform: rotate(-45deg) translate(1px, -1px) }
+.ballot .list { position: relative; max-height: 232px; overflow-y: auto; scrollbar-width: thin; display: grid; gap: 6px; padding-right: 2px }
+.ballot .tick { position: absolute; right: 2px; width: 20px; height: 20px; display: grid; place-items: center; pointer-events: none; opacity: 0; transition: top .7s cubic-bezier(.4,0,.2,1), opacity .3s }
+.ballot .tick.on { opacity: 1 }
+.ballot .tick::after { content: ""; width: 12px; height: 7px; border-left: 3px solid var(--coral); border-bottom: 3px solid var(--coral); transform: rotate(-45deg) translate(1px, -1px) }
+@media (prefers-reduced-motion: reduce) { .ballot .tick { display: none } }
 footer { color: var(--muted); font-size: 13px; padding-block: 24px 40px; border-top: 1px solid var(--line) }
 @media (max-width: 860px) { footer { padding-bottom: 110px } }
 .seg { display: inline-flex; background: var(--sunk); border-radius: 999px; padding: 3px; gap: 2px; flex-wrap: wrap }
@@ -458,9 +462,9 @@ V.home = async () => {
         <div><h4>Electorate vote</h4><p class="small muted">This picks your local MP. Whoever gets the most votes in your area wins the seat.</p></div>
         <div><h4>The 5% rule</h4><p class="small muted">A party needs 5% of the party vote, or to win an electorate, to get its share of seats.</p></div>
         <div><h4>61 to govern</h4><p class="small muted">A government needs a majority of seats, usually 61 of 120. That's why parties form coalitions.</p></div></div>
-        <div class="stack"><div class="ballot" aria-label="Example ballot paper"><div><span class="bh">Party vote</span>${['national', 'labour', 'green', 'act', 'nz-first'].map((p, i) => `<span class="opt"><span class="row" style="gap:6px"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))}</span><span class="box ${i === 2 ? 'on' : ''}"></span></span>`).join('')}</div>
-          <div><span class="bh">Electorate vote</span>${['Candidate A', 'Candidate B', 'Candidate C', 'Candidate D'].map((c, i) => `<span class="opt">${c}<span class="box ${i === 0 ? 'on' : ''}"></span></span>`).join('')}</div></div>
-          <p class="tiny muted">Example only. You can split your votes between different parties. <button class="btn ghost sm" data-go="calculator">Try the seat calculator</button></p></div></div></div>
+        <div class="stack"><div class="ballot" aria-label="Example ballot paper (illustration; ticks move and do not indicate a choice)"><div><span class="bh">Party vote</span><div class="list" id="bl-p">${ballotParties().map(p => `<span class="opt"><span class="row" style="gap:6px;flex-wrap:nowrap"><span class="dot" style="background:${pcolor(p.slug)}"></span>${esc(p.name)}</span><span class="box"></span></span>`).join('')}<span class="tick" id="bt-p"></span></div></div>
+          <div><span class="bh">Electorate vote</span><div class="list" id="bl-e">${['Candidate A', 'Candidate B', 'Candidate C', 'Candidate D', 'Candidate E'].map(c => `<span class="opt">${c}<span class="box"></span></span>`).join('')}<span class="tick" id="bt-e"></span></div></div></div>
+          <p class="tiny muted">Illustration only: the ticks move and don't show a choice. All ${ballotParties().length} registered parties appear on the real paper, in alphabetical order. You can split your two votes between different parties. <button class="btn ghost sm" data-go="calculator">Try the seat calculator</button></p></div></div></div>
 
     <div class="stack"><div><div class="kicker">Key dates</div><h2>When to vote</h2></div>
       <div class="dates">${KEY_DATES.map(([dt, t, s]) => { const D = new Date(dt + 'T23:59:00+13:00'); const [, mo, dd] = dt.split('-'); return `<div class="date card flat ${D < Date.now() ? 'past' : ''}"><div class="cal"><span>${['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'][+mo - 1]}</span><b>${+dd}</b></div><div><h4>${t}</h4><p class="small muted">${s}</p></div></div>` }).join('')}</div>
@@ -470,8 +474,18 @@ V.home = async () => {
       <p class="small muted">Average of the ${proj.n} latest polls (${esc(proj.range)}). Polls have margins of error of about ±3 points.</p>
       ${Object.entries(proj.pct).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= 0.8).map(([p, v]) => `<div class="row" style="flex-wrap:nowrap"><span style="width:120px;flex:none" class="small"><b>${esc(pname(p))}</b></span><div class="meter" style="flex:1"><span style="width:${v / 50 * 100}%;background:${pcolor(p)}"></span></div><span class="num small" style="width:48px;text-align:right">${fmt(v)}%</span></div>`).join('')}</div>` : ''}
   </section>`;
+  requestAnimationFrame(startBallot);
 };
 
+function ballotParties() { const gp = (G().parties || []).map(p => ({ slug: p.slug, name: p.name || pname(p.slug) })); const list = gp.length ? gp : MAIN7.map(p => ({ slug: p, name: P(p).name }));
+  return list.sort((a, b) => a.name.localeCompare(b.name, 'en-NZ')) }
+function startBallot() { if (S.ballotTimer) clearInterval(S.ballotTimer); if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const cols = [['#bl-p', '#bt-p'], ['#bl-e', '#bt-e']].map(([l, t]) => ({ list: $(l), tick: $(t), i: 0 })).filter(c => c.list && c.tick);
+  if (!cols.length) return; cols[1] && (cols[1].i = 2);
+  const place = c => { const rows = c.list.querySelectorAll('.opt'); if (!rows.length) return; const r = rows[c.i % rows.length];
+    c.tick.style.top = (r.offsetTop + (r.offsetHeight - 20) / 2) + 'px'; c.tick.classList.add('on'); r.scrollIntoView({ block: 'nearest', behavior: 'smooth' }) };
+  cols.forEach(place);
+  S.ballotTimer = setInterval(() => { cols.forEach((c, k) => { const n = c.list.querySelectorAll('.opt').length; c.i = (c.i + (k ? 2 : 1)) % n; place(c) }) }, 1700) }
 function partyOrder() {
   const gp = (G().parties || []).map(p => p.slug);
   const known = Object.keys(S.data.parties).filter(s => gp.includes(s) || P(s).policy_count > 0);
@@ -1147,6 +1161,7 @@ document.addEventListener('click', e => {
       href.replace(/#.*$/, '').split('/').forEach(s => { if (s === '..') parts.pop(); else if (s && s !== '.') parts.push(s) }); let k = parts.join('/'); if (!/\.md$/.test(k)) k = k.replace(/\/?$/, '/README.md'); openPage(k) } }
 });
 function route(r) {
+  if (S.ballotTimer) { clearInterval(S.ballotTimer); S.ballotTimer = null }
   r = r || 'home'; let view = r, arg;
   for (const pre of ['party', 'issue', 'electorate']) if (r.startsWith(pre + '-')) { view = pre; arg = r.slice(pre.length + 1) }
   if (['chamber', 'trends', 'coalition', 'calculator'].includes(r)) { view = 'parliament'; arg = r }
