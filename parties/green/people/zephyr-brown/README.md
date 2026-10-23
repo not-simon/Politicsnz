@@ -10,7 +10,6 @@
 - **Electorate:** Kaipara ki Mahurangi
 - **List ranking:** 24
 - **Before politics:** Operations Manager
-- **Residence:** Ti Point
 - **Age:** 55
 - **Public email:** zephyr.brown@greens.org.nz
 - **Website:** https://www.greens.org.nz/zephyrbrown_2026

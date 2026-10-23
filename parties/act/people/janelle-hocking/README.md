@@ -10,7 +10,6 @@
 - **Electorate:** West Coast-Tasman
 - **List ranking:** 15
 - **Before politics:** Business owner
-- **Residence:** Murchison
 - **Age:** 42
 - **Public email:** janelle.hocking@act.org.nz
 - **Website:** https://www.facebook.com/janelle.hocking4wct

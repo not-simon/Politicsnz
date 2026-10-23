@@ -10,7 +10,6 @@
 - **Electorate:** Mt Albert
 - **List ranking:** 14
 - **Before politics:** Chief Executive
-- **Residence:** Meadowbank
 - **Age:** 60
 - **Public email:** alex.price@act.org.nz
 - **Website:** https://www.act.org.nz/

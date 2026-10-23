@@ -9,7 +9,6 @@
 
 - **Electorate:** Invercargill
 - **Before politics:** Not for profit governnance
-- **Residence:** Gladstone, Invercargill
 - **Age:** 67
 - **Public email:** dave.kennedy@greens.org.nz
 - **Website:** https://www.greens.org.nz/davekennedy_2026

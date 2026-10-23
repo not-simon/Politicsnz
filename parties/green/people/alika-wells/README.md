@@ -9,7 +9,6 @@
 
 - **Electorate:** Henderson
 - **List ranking:** 27
-- **Residence:** Henderson, West Auckland
 - **Age:** 32
 - **Public email:** alika.wells@greens.org.nz
 - **Website:** https://www.greens.org.nz/alikawells_2026

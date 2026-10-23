@@ -10,7 +10,6 @@
 - **Electorate:** Taupō
 - **List ranking:** 34
 - **Before politics:** Small Business Owner
-- **Residence:** Taupō
 - **Age:** 58
 - **Public email:** sam.plummer@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-sam-plummer

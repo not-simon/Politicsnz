@@ -83,7 +83,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Wairarapa
 - **List ranking:** 10
 - **Before politics:** Economic Development Manager
-- **Residence:** Masterton
 - **Age:** 41
 - **Public email:** kieran.mcanulty@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/hon-kieran-mcanulty/

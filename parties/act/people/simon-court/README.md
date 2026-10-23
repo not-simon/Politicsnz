@@ -44,7 +44,6 @@ Educated at Auckland Grammar School and Unitec (civil engineering). Worked as a 
 - **Electorate:** Kaipara ki Mahurangi
 - **List ranking:** 8
 - **Before politics:** Civil/Environmental Engineer
-- **Residence:** West Auckland
 - **Public email:** simon.court@parliament.govt.nz
 - **Website:** https://www.act.org.nz/people/simon-court
 - **Facebook:** https://www.facebook.com/simoncourtact

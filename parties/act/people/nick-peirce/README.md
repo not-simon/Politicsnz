@@ -10,7 +10,6 @@
 - **Electorate:** Henderson
 - **List ranking:** 34
 - **Before politics:** Revenue & Distribution Lead
-- **Residence:** Chatswood
 - **Age:** 51
 - **Public email:** nick.peirce@act.org.nz
 - **Website:** https://www.act.org.nz

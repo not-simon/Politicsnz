@@ -22,7 +22,6 @@ Hampton was born and raised in Christchurch. His Labour profile says he has work
 - **Electorate:** Christchurch Central
 - **List ranking:** 52
 - **Before politics:** Diplomat/Small Business Owner
-- **Residence:** Christchurch
 - **Age:** 44
 - **Public email:** George.hampton@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/george-hampton/

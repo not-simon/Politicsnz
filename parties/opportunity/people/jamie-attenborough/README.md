@@ -10,7 +10,6 @@
 - **Electorate:** Mt Roskill
 - **List ranking:** 29
 - **Before politics:** Quality Manager
-- **Residence:** Mt Roskill
 - **Age:** 32
 - **Public email:** jamie.attenborough@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-jamie-attenborough

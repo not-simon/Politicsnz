@@ -10,7 +10,6 @@
 - **Electorate:** Hamilton West
 - **List ranking:** 35
 - **Before politics:** Critical Care Paramedic
-- **Residence:** St Andrews
 - **Age:** 33
 - **Public email:** Blair.smith@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-blair-smith

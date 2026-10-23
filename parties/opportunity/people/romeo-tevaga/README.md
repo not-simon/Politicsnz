@@ -10,7 +10,6 @@
 - **Electorate:** Upper Harbour
 - **List ranking:** 12
 - **Before politics:** Government Policy Advisor
-- **Residence:** North Shore
 - **Age:** 35
 - **Public email:** romeo.tevaga@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-romeo-tevaga

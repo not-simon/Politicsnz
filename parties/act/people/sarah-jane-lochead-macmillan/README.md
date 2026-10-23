@@ -9,7 +9,6 @@
 
 - **Electorate:** Port Waikato
 - **Before politics:** Fractional GM
-- **Residence:** Waiuku
 - **Age:** 55
 - **Public email:** sarah.lochead-macmillan@act.org.nz
 - **Website:** www.act.org.nz

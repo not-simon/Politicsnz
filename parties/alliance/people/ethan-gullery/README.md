@@ -9,7 +9,6 @@
 
 - **Electorate:** Christchurch East
 - **Before politics:** Senior Data Analyst & Dev
-- **Residence:** Linwood
 - **Age:** 30
 - **Public email:** ethan.gullery@allianceparty.nz
 - **Website:** https://allianceparty.nz/candidates/christchurch-east/

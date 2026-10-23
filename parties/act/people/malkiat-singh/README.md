@@ -10,7 +10,6 @@
 - **Electorate:** Papakura
 - **List ranking:** 29
 - **Before politics:** Engineer+Agile coach+Farmer
-- **Residence:** Kingseat
 - **Age:** 41
 - **Public email:** malkiat.singh@act.org.nz
 - **Website:** https://malkiatsingh.com/

@@ -9,7 +9,6 @@
 
 - **Electorate:** Whangārei
 - **Before politics:** Bicycle Mechanic.
-- **Residence:** Kauri
 - **Age:** 52
 - **Public email:** simon.dellabarca@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-simon-dellabarca

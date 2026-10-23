@@ -10,7 +10,6 @@
 - **Electorate:** Māngere
 - **List ranking:** 26
 - **Before politics:** Owner Franchise Harcourts Ōtāhuhu
-- **Residence:** Papatoetoe
 - **Age:** 52
 - **Public email:** manu.singh@act.org.nz
 - **Website:** N/A

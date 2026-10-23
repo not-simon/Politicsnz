@@ -10,7 +10,6 @@
 - **Electorate:** Northcote
 - **List ranking:** 17
 - **Before politics:** Banking regulator
-- **Residence:** Auckland Central
 - **Age:** 33
 - **Public email:** bhen.goodsir@greens.org.nz
 - **Website:** https://www.greens.org.nz/bhengoodsir_2026

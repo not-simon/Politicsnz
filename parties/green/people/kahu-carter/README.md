@@ -44,7 +44,6 @@ Of Ngāti Maniapoto and Tainui descent; born 1983 or 1984 and raised in rural Wa
 - **Electorate:** Christchurch Central
 - **List ranking:** 11
 - **Before politics:** Public servant
-- **Residence:** Christchurch Central
 - **Age:** 42
 - **Public email:** kahu.carter@greens.org.nz
 - **Website:** https://www.greens.org.nz/kahurangicarter_2026

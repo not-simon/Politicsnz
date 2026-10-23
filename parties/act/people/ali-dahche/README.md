@@ -10,7 +10,6 @@
 - **Electorate:** Botany
 - **List ranking:** 28
 - **Before politics:** Entrepreneur/ Businessman
-- **Residence:** Botany
 - **Age:** 43
 - **Public email:** ali.dahche@act.org.nz
 - **Website:** alidahche.co.nz

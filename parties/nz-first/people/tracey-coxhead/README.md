@@ -9,7 +9,6 @@
 
 - **Electorate:** Mt Maunganui
 - **Before politics:** Councillor/Business owner
-- **Residence:** Te Puna, Tauranga
 - **Age:** 62
 - **Public email:** tracey.coxhead@nzfirst.nz
 - **Website:** NA

@@ -36,7 +36,6 @@ None of significance found in the sources consulted.
 
 - **Electorate:** Dunedin
 - **Before politics:** Maritime Union official
-- **Residence:** Clyde Hill
 - **Age:** 54
 - **Public email:** leader@allianceparty.nz
 - **Website:** https://allianceparty.nz/candidates/dunedin/

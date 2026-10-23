@@ -10,7 +10,6 @@
 - **Electorate:** Upper Harbour
 - **List ranking:** 36
 - **Before politics:** Principal Software Engineer
-- **Residence:** North Shore
 - **Age:** 41
 - **Public email:** panos.patros@act.org.nz
 - **Website:** https://www.act.org.nz/people/panos-patros

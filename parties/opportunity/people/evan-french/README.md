@@ -10,7 +10,6 @@
 - **Electorate:** Glendene
 - **List ranking:** 28
 - **Before politics:** Student
-- **Residence:** Auckland Central
 - **Age:** 22
 - **Public email:** evan.french@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-evan-french

@@ -44,7 +44,6 @@ A Ruawai dairy farmer who has farmed in Northland for about 30 years. Married wi
 
 - **Electorate:** Northland
 - **Before politics:** Dairy Farmer
-- **Residence:** Ruawai
 - **Age:** 53
 - **Public email:** mark.cameron@parliament.govt.nz
 - **Website:** https://www.act.org.nz/people/mark-cameron

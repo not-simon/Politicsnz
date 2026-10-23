@@ -9,7 +9,6 @@
 
 - **Electorate:** Dunedin
 - **Before politics:** Parliamentary Outreach Advisor
-- **Residence:** Wakari
 - **Age:** 53
 - **Public email:** kym.mcdonald@nzfirt.nz
 - **Website:** https://www.nzfirst.nz/kym_mcdonald_king

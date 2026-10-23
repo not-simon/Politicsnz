@@ -9,7 +9,6 @@
 
 - **Electorate:** Wairarapa
 - **Before politics:** Navigation Officer
-- **Residence:** Carterton
 - **Age:** 35
 - **Public email:** victoria.ale@allianceparty.nz
 - **Website:** victoria.ale@allianceparty.nz

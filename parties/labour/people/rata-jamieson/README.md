@@ -22,7 +22,6 @@ Jamieson, 21, is in the final year of a Bachelor of Fine Arts at the University 
 - **Electorate:** Ilam
 - **List ranking:** 56
 - **Before politics:** Student with part-time jobs
-- **Residence:** Ilam
 - **Age:** 21
 - **Public email:** rata.jamieson@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/rata-jamieson/

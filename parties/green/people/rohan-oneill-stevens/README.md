@@ -41,7 +41,6 @@ None of significance found in the sources consulted.
 - **Electorate:** Nelson
 - **List ranking:** 16
 - **Before politics:** Arts Development Director
-- **Residence:** Central Nelson
 - **Age:** 26
 - **Public email:** rohan.oneill-stevens@greens.org.nz
 - **Website:** https://www.greens.org.nz/rohanoneillstevens_2026

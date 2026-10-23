@@ -9,9 +9,7 @@
 
 - **Electorate:** Te Tai Tokerau
 - **List ranking:** 1
-- **Residence:** Mangamuka
 - **Age:** 67
-- **Public email:** makiherbert40@gmail.com
 - **Website:** www.alcp.org.nz
 - **Facebook:** The Cannabis Party
 

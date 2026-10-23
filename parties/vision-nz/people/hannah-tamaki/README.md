@@ -44,9 +44,7 @@ Born Hannah Lee in Tokoroa in 1960, of European and Māori descent. Married Bria
 
 - **Electorate:** Papakura
 - **Before politics:** People ministry for 45yrs
-- **Residence:** Papakura
 - **Age:** 65
-- **Public email:** hrhtamaki@yahoo.com
 - **Website:** vision.org.nz
 - **Facebook:** www.facebook.com/hrhtamaki
 - **Instagram:** https:instagram.com/visionzealand?

@@ -6,7 +6,6 @@
 ## 2026 candidacy
 
 - **Before politics:** Medical Doctor GP
-- **Residence:** Takaka, Tasman
 - **Age:** 68
 - **Public email:** contact@freedom.kiwi
 

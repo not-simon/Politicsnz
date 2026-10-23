@@ -9,9 +9,7 @@
 
 - **Electorate:** Manurewa
 - **Before politics:** Customer Care Team Leader
-- **Residence:** Manukau
 - **Age:** 63
-- **Public email:** a.tavui@xtra.co.nz
 - **Website:** https://animaljustice.org.nz/election-2026/2026-candidates/
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/animal-justice-party), retrieved Oct 2026._

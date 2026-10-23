@@ -9,7 +9,6 @@
 
 - **Electorate:** Christchurch East
 - **Before politics:** A school teacher for 16 years
-- **Residence:** Burwood
 - **Age:** 59
 - **Public email:** helen.houghton@conservatives.nz
 - **Website:** https://conservatives.org.nz/

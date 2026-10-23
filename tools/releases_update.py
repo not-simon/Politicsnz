@@ -87,7 +87,7 @@ PARTIES = [
      "website": "https://www.nzfirst.nz/", "newsroom": "https://www.nzfirst.nz/news", "newsroom_verified": False},
     {"slug": "te-pati-maori", "name": "Te Pāti Māori", "scoop": "Te_Pati_Maori",
      "website": "https://www.maoriparty.org.nz/", "newsroom": "https://www.maoriparty.org.nz/", "newsroom_verified": False},
-    {"slug": "opportunity", "name": "Opportunity Party", "scoop": "The_Opportunities_Party",
+    {"slug": "opportunity", "name": "Opportunity Party", "scoop": "The_Opportunity_Party",   # the older The_Opportunities_Party page stops at June 2025
      "website": "https://www.opportunity.org.nz/", "newsroom": "https://www.opportunity.org.nz/", "newsroom_verified": False},
     {"slug": "nz-loyal", "name": "New Zealand Loyal", "scoop": "NZ_Loyal",
      "website": "https://nzloyal.com/", "newsroom": "https://nzloyal.com/", "newsroom_verified": False},
@@ -381,7 +381,8 @@ FIELD_MAP = {"website": "website", "facebook": "facebook", "instagram": "instagr
 DOMAIN_FIELD = [("facebook.com", "facebook"), ("fb.com", "facebook"), ("fb.me", "facebook"), ("instagram.com", "instagram"),
                 ("x.com", "x"), ("twitter.com", "x"), ("tiktok.com", "tiktok"), ("youtube.com", "youtube"), ("youtu.be", "youtube"),
                 ("linkedin.com", "linkedin")]
-TYPO_FIXES = [(r"^(https?:/*)+", "https://"), (r"^https?//", "https://"), (r"^https?:(?!//)", "https://"),
+TYPO_FIXES = [(r"^(?:https?:/*)?(?:www\.)?(?=https?:)", ""), (r"^(https?:/*)+", "https://"), (r"^https?//", "https://"), (r"^https?:(?!//)", "https://"),
+              (r"^(https://)?(www\.)?labour\.co\.nz", "https://www.labour.org.nz"),
               (r"https://www\.instagram/", "https://www.instagram.com/"), (r"instgram\.com", "instagram.com"),
               (r"^(https://(?:www\.)?(?:facebook|instagram|x|twitter|tiktok|linkedin|youtube)\.com)(?=[A-Za-z0-9@_])", r"\1/"), (r"\?$", "")]
 HANDLE_BASE = {"x": "https://x.com/{}", "instagram": "https://www.instagram.com/{}", "tiktok": "https://www.tiktok.com/@{}",
@@ -404,11 +405,13 @@ def norm_url(raw, field):
         for dom, f in DOMAIN_FIELD:
             if re.match(r"https://(www\.|m\.|mobile\.)?" + re.escape(dom) + r"(/|$)", v, flags=re.I):
                 if f == "x": v = re.sub(r"https://(www\.|mobile\.)?(twitter|x)\.com", "https://x.com", v, flags=re.I)
+                if "profile.php" not in v: v = v.split("?")[0].split("#")[0]      # drop ?hl=, ?stkn= tracking parameters
+                if f == "x" and not re.match(r"^https://x\.com/[A-Za-z0-9_]{1,15}/?$", v): return None, None   # not a real X handle
                 return f, v
         return ("website", v) if field == "website" else ("other", v)   # a social slot holding a personal site, Bluesky, Substack...
     if field not in HANDLE_BASE or "/" in v: return None, None
     h = v.lstrip("@")
-    if re.match(r"^[A-Za-z0-9_.]+$", h): return field, HANDLE_BASE[field].format(h)
+    if re.match(r"^[A-Za-z0-9_]{1,15}$" if field == "x" else r"^[A-Za-z0-9_.]+$", h): return field, HANDLE_BASE[field].format(h)
     return None, None
 
 
@@ -439,7 +442,8 @@ def build_follow():
         rec = {"slug": d.get("slug") or os.path.basename(os.path.dirname(pj)), "party": party, "name": d.get("name", ""),
                "folder": os.path.relpath(os.path.dirname(pj), ROOT), "status": status,
                "electorate_2026": d.get("electorate_2026"), "list_rank_2026": d.get("list_rank_2026"),
-               "accounts": acc, "other": sorted(set(other)), "email": email,
+               "accounts": acc, "other": sorted({o for o in other if o.rstrip("/").lower() not in {u.rstrip("/").lower() for u in acc.values() if u}}),
+               "email": email,
                "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json" if q else "no questionnaire on file",
                "verified": False}
         people.append(rec)

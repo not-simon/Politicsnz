@@ -93,3 +93,20 @@ hardship rates) rather than characterisations.
 4. **Timing.** During the campaign, corrections to the voter-facing summaries take priority over all other work on the archive.
 
 *Last reviewed: 23 October 2026.*
+
+## Right of reply, corrections and items about people
+
+- **Reply within five working days.** Anyone named on the site who believes an item is wrong or unfair can open an issue (or use any
+  contact route on the site). We check the item against the published record, correct or remove it, and publish the person's reply
+  alongside the item if they want one. The target is a response within five working days (Defamation Act 1992 s 25 timeframe) and
+  an immediate fix for plain factual errors.
+- **Inclusion rules for criticism and "controversies".** An item about a person or party appears only if (1) it is on the public
+  record in at least two reputable sources or an official record, (2) it is relevant to fitness for public office or to the party's
+  conduct in office, (3) the outcome is stated (resolved, withdrawn, ongoing, finding made), and (4) the subject's own response is
+  included where one was given. Items that cannot meet all four are removed. Headings are descriptive ("Disputes and criticism").
+- **Name suppression.** Before any court-related item is added, check for suppression orders; nothing subject to suppression is
+  published, whatever its source.
+- **Privacy.** Candidates' home suburbs are never published and personal webmail addresses are not shown; only party, parliamentary
+  or campaign-domain contacts and public accounts the person listed themselves.
+- **Takedowns.** Owners of third-party material (party texts, photos) can ask for removal, correction or different attribution; during
+  the campaign requests are actioned within 24 hours.

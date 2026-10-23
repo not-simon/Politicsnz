@@ -10,7 +10,6 @@
 - **Electorate:** Banks Peninsula
 - **List ranking:** 31
 - **Before politics:** Electrician
-- **Residence:** Rural Banks Peninsula
 - **Age:** 29
 - **Public email:** zac.wellman@act.org.nz
 - **Website:** https://www.act.org.nz/people/zac-wellman

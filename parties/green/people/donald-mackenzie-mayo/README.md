@@ -9,7 +9,6 @@
 
 - **Electorate:** Tāmaki
 - **Before politics:** Medical Graduate and TV Writer
-- **Residence:** Auckland
 - **Age:** 26
 - **Public email:** donald.mackenziemayo@greens.org.nz
 - **Website:** greens.org.nz

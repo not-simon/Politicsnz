@@ -75,7 +75,6 @@ Backbench MP for Northcote since 2023. He previously held the seat from 2018 to 
 - **Electorate:** Northcote
 - **List ranking:** 31
 - **Before politics:** Strategy Manager - Foodstuffs
-- **Residence:** Birkenhead
 - **Age:** 43
 - **Public email:** dan.bidois@parliament.govt.nz
 - **Website:** https://www.national.org.nz/team/danbidois

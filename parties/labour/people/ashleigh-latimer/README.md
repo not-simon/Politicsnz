@@ -22,7 +22,6 @@ Latimer was born and raised in Northland. Her Labour profile describes more than
 - **Electorate:** Northland
 - **List ranking:** 55
 - **Before politics:** Community Health Leader
-- **Residence:** Whangārei
 - **Age:** 51
 - **Public email:** Ashleigh.Latimer@labour.org.nz
 - **Website:** https://labour.org.nz/AshleighLatimer

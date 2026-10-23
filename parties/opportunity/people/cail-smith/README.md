@@ -10,7 +10,6 @@
 - **Electorate:** East Cape
 - **List ranking:** 33
 - **Before politics:** HR and Operations Manager
-- **Residence:** Te Hapara
 - **Age:** 32
 - **Public email:** cail.smith@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-cail-smith

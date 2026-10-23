@@ -22,7 +22,6 @@ Baral arrived in Auckland from the Philippines in 1989 and holds a BA and a mast
 - **Electorate:** Upper Harbour
 - **List ranking:** 45
 - **Before politics:** CEO
-- **Residence:** West Auckland
 - **Age:** 55
 - **Public email:** hannahpia.baral@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/hannah-pia-baral/

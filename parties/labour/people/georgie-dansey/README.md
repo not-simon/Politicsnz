@@ -54,7 +54,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Hamilton East
 - **List ranking:** 33
 - **Before politics:** Union leader/Business owner
-- **Residence:** Hamilton East
 - **Age:** 39
 - **Public email:** georgie.dansey@labour.org.nz
 - **Website:** https://www.labour.org.nz/our-team/georgie-dansey/

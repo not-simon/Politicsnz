@@ -21,7 +21,6 @@ Scott, 22, grew up in Hawke's Bay and went to school in Taradale. His Labour pro
 
 - **Electorate:** Tukituki
 - **Before politics:** Meteorologist
-- **Residence:** Taradale
 - **Age:** 22
 - **Public email:** dan.scott@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/dan-scott/

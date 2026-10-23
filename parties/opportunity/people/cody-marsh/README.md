@@ -10,7 +10,6 @@
 - **Electorate:** Northcote
 - **List ranking:** 17
 - **Before politics:** Paramedic
-- **Residence:** Northcote Electorate
 - **Age:** 34
 - **Public email:** cody.marsh@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-cody-marsh

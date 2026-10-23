@@ -46,7 +46,6 @@ _Source: Wikipedia parliamentary-term table._
 - **Electorate:** Botany
 - **List ranking:** 32
 - **Before politics:** Specialist GP
-- **Public email:** dranae4botany@gmail.com
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/dr-anae-neru-leavasa/
 - **Facebook:** https://www.facebook.com/DrAnaeNeruLeavasa/
 - **Instagram:** https://www.instagram.com/dr_anae_neru_leavasa/?hl=en

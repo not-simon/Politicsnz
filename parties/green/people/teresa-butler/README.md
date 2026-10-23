@@ -9,7 +9,6 @@
 
 - **Electorate:** Christchurch East
 - **Before politics:** No
-- **Residence:** Ōtautahi
 - **Age:** 47
 - **Public email:** teresa.butler@greens.org.nz
 - **Website:** https://www.greens.org.nz/teresabutler_2026

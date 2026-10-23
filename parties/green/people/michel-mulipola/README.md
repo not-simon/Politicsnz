@@ -29,7 +29,6 @@ None of significance found in the sources consulted.
 
 - **Electorate:** Māngere
 - **Before politics:** Artist & illustrator
-- **Residence:** Māngere
 - **Age:** 45
 - **Public email:** michel.mulipola@greens.org.nz
 - **Website:** https://www.greens.org.nz/michelmulipola_2026

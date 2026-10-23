@@ -46,7 +46,6 @@ Tamatha-Kaye Erin Paul was born in South Auckland in 1997 and grew up in Christc
 - **Electorate:** Wellington North
 - **List ranking:** 4
 - **Before politics:** Wellington City Councillor
-- **Residence:** Karori
 - **Age:** 29
 - **Public email:** tamatha.paul@greens.org.nz
 - **Website:** tamathapaul.nz

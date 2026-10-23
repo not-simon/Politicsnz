@@ -21,7 +21,6 @@ Swinburn, who campaigns as Jo Swinburn, is a principal policy advisor at the Min
 
 - **Electorate:** Kaipara ki Mahurangi
 - **Before politics:** Principal Policy Advisor
-- **Residence:** Pakiri
 - **Age:** 40
 - **Public email:** jolyon.swinburn@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/jo-swinburn/

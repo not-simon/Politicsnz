@@ -10,7 +10,6 @@
 - **Electorate:** Auckland Central
 - **List ranking:** 36
 - **Before politics:** Content Producer
-- **Residence:** Auckland Central
 - **Age:** 38
 - **Public email:** johan.chang@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-johan-chang

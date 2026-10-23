@@ -60,7 +60,6 @@ Minister for Youth, Hunting and Fishing, and the South Island, and Associate Min
 - **Electorate:** Rangitata
 - **List ranking:** 18
 - **Before politics:** Lawyer
-- **Residence:** Timaru
 - **Age:** 39
 - **Public email:** james.meager@national.org.nz
 - **Website:** www.jamesmeager.nz

@@ -9,7 +9,6 @@
 
 - **Electorate:** Remutaka
 - **List ranking:** 23
-- **Residence:** Lower Hutt
 - **Age:** 64
 - **Public email:** nigel.elder@act.org.nz
 - **Facebook:** https://www.facebook.com/nigelelderact

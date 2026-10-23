@@ -48,7 +48,6 @@ Of Ngāpuhi descent; born in Australia and raised by grandparents in Kaeo before
 - **Electorate:** North Shore
 - **List ranking:** 5
 - **Before politics:** Self-employed and raising kids
-- **Residence:** North Shore
 - **Age:** 44
 - **Public email:** karen.chhour@parliament.govt.nz
 - **Website:** https://www.act.org.nz/people/karen-chhour

@@ -55,7 +55,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Waitākere
 - **List ranking:** 8
 - **Before politics:** Lawyer / Manager
-- **Residence:** Titirangi
 - **Age:** 45
 - **Public email:** Vanushi.Walters@parliament.govt.nz
 - **Website:** https://www.labour.org.nz/our-team/vanushi-walters/

@@ -10,7 +10,6 @@
 - **Electorate:** North Shore
 - **List ranking:** 9
 - **Before politics:** Executive Director
-- **Residence:** Devonport
 - **Public email:** holly.knill@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/
 - **Facebook:** https://www.facebook.com/hollyforopportunity/

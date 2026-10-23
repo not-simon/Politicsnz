@@ -9,7 +9,6 @@
 
 - **Electorate:** Northcote
 - **Before politics:** Commercial Director
-- **Residence:** Northcote
 - **Age:** 47
 - **Public email:** daryl.habraken@nzfirst.nz
 - **Website:** https://www.nzfirst.nz/daryl_habraken

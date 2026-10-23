@@ -55,7 +55,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Ikaroa-Rāwhiti
 - **List ranking:** 9
 - **Before politics:** NZ Rugby/ Maori Rugby Manager
-- **Residence:** Tikitiki
 - **Age:** 47
 - **Public email:** cushla.tangaere-manuel@parliament.govt.nz
 - **Website:** https://www.labour.org.nz/our-team/cushla-tangaere-manuel/

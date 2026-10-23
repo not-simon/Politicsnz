@@ -30,6 +30,8 @@ a:hover { text-decoration-thickness: 3px }
 /* ---------- 1. Layout ------------------------------------------------------ */
 .wrap { width: 100%; max-width: var(--page-max); margin-inline: auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r) }
 .page { padding-block: var(--s-6) var(--s-9); display: grid; gap: var(--s-8); min-width: 0 }
+.page--hero { padding-top: 0 }
+@media (min-width: 720px) { .page--hero { padding-top: var(--s-6) } }
 .page > *, .stack > *, .cols > *, .split > * { min-width: 0 }
 .stack { display: grid; gap: var(--s-4); align-content: start }
 .stack--s { gap: var(--s-2) } .stack--l { gap: var(--s-6) } .stack--xl { gap: var(--s-8) }
@@ -66,7 +68,7 @@ h1, h2, h3, h4, .h1, .h2, .h3 { margin: 0; font-family: var(--font-display); fon
 h1, .h1 { font-size: var(--t-h1); line-height: var(--lh-tight); font-weight: 800; letter-spacing: -0.018em }
 h2, .h2 { font-size: var(--t-h2); line-height: 1.1; font-weight: 800; letter-spacing: -0.012em }
 h3, .h3 { font-size: var(--t-h3); line-height: var(--lh-snug); font-weight: 700; letter-spacing: -0.005em }
-h4 { font: 700 var(--t-h4)/1.3 var(--font-body) }
+h4, .h4 { font: 700 var(--t-h4)/1.3 var(--font-body); font-variation-settings: normal; letter-spacing: 0 }
 .eyebrow { font: 700 var(--t-micro)/1.2 var(--font-body); letter-spacing: var(--track-eyebrow); text-transform: uppercase; color: var(--text-3); display: flex; gap: var(--s-2); align-items: center; flex-wrap: wrap }
 .eyebrow--signal { color: var(--signal-text) }
 .lede { font-size: var(--t-lede); line-height: 1.5; color: var(--text-2); max-width: var(--measure) }
@@ -89,7 +91,7 @@ h4 { font: 700 var(--t-h4)/1.3 var(--font-body) }
 .kbd, kbd { font: 600 11px/1 var(--font-body); padding: 3px 6px; border: 1px solid var(--line-strong); border-bottom-width: 2px; border-radius: 5px; color: var(--text-3) }
 
 /* ---------- 3. Icons ------------------------------------------------------- */
-.i { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round }
+.i { display: inline-block; vertical-align: middle; width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round }
 .i--s { width: 18px; height: 18px } .i--xs { width: 14px; height: 14px; stroke-width: 2.2 } .i--l { width: 32px; height: 32px; stroke-width: 1.5 }
 
 /* ---------- 4. Masthead ---------------------------------------------------- */
@@ -147,7 +149,7 @@ body.has-tabbar { padding-bottom: calc(var(--tabbar-h) + var(--gutter-b)) }
 @media (min-width: 1024px) { .tabbar { display: none } body.has-tabbar { padding-bottom: 0 } }
 
 /* ---------- 6. Sub-navigation (sections) ----------------------------------- */
-.subnav { display: flex; gap: var(--s-2); overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--gutter-l)) calc(-1 * var(--gutter-r)); padding-inline: var(--gutter-l) var(--gutter-r); scroll-snap-type: x proximity }
+.subnav { display: flex; gap: var(--s-2); overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--gutter-l)) calc(-1 * var(--gutter-r)); padding-inline: var(--gutter-l) var(--gutter-r); scroll-padding-inline: var(--gutter-l) var(--gutter-r); scroll-snap-type: x proximity }
 .subnav::-webkit-scrollbar { display: none }
 .subnav a { flex: none; scroll-snap-align: start; text-decoration: none; color: var(--text-2); font: 600 var(--t-small)/1 var(--font-body); padding: 10px 14px; border-radius: var(--r-pill); border: 1px solid var(--line-strong); background: var(--surface); white-space: nowrap }
 .subnav a[aria-current="page"] { background: var(--text); color: var(--bg); border-color: var(--text) }
@@ -179,7 +181,7 @@ body.has-tabbar { padding-bottom: calc(var(--tabbar-h) + var(--gutter-b)) }
 .btn[disabled] { opacity: .45; pointer-events: none }
 .btn .ext { opacity: .8 }
 .linkbtn { background: none; border: 0; padding: 0; font: inherit; font-weight: 700; color: var(--text); text-decoration: underline; text-decoration-color: var(--link-underline); text-decoration-thickness: 2px; text-underline-offset: 3px; cursor: pointer }
-.more { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: var(--text); text-decoration: none; border-bottom: 2px solid var(--link-underline); padding-bottom: 1px }
+.more { justify-self: start; width: fit-content; display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: var(--text); text-decoration: none; border-bottom: 2px solid var(--link-underline); padding-bottom: 1px }
 .more:hover { border-bottom-width: 3px }
 .more .i { transition: transform var(--dur-2) var(--ease-out) }
 .more:hover .i { transform: translateX(3px) }
@@ -194,8 +196,9 @@ body.has-tabbar { padding-bottom: calc(var(--tabbar-h) + var(--gutter-b)) }
 /* Segmented control */
 .seg { display: inline-flex; padding: 3px; gap: 2px; background: var(--sunk); border-radius: var(--r-s); max-width: 100%; overflow-x: auto; scrollbar-width: none }
 .seg button, .seg a { flex: none; border: 0; background: transparent; color: var(--text-2); font: 600 14px/1 var(--font-body); padding: 9px 13px; border-radius: 6px; text-decoration: none; white-space: nowrap; transition: background var(--dur-2), color var(--dur-2) }
+.seg--block { display: flex } .seg--block > button, .seg--block > a { flex: 1 1 0; text-align: center }
 .seg [aria-pressed="true"], .seg [aria-selected="true"], .seg [aria-current="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 2px var(--shadow-tint), inset 0 0 0 1px var(--line) }
-.seg--block { display: flex } .seg--block > * { flex: 1 }
+
 /* Filter chips */
 .chips { display: flex; gap: var(--s-2); flex-wrap: wrap }
 .chips--scroll { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--gutter-l)) calc(-1 * var(--gutter-r)); padding-inline: var(--gutter-l) var(--gutter-r) }
@@ -343,7 +346,8 @@ body.has-tabbar { padding-bottom: calc(var(--tabbar-h) + var(--gutter-b)) }
 .hero__count { display: flex; align-items: flex-end; gap: var(--s-3); flex-wrap: wrap }
 .hero__count .figure { font-size: clamp(5rem, 3.5rem + 7vw, 8.5rem); color: var(--signal-on-band) }
 .hero h1 { color: var(--on-band); font-size: clamp(2.125rem, 1.6rem + 2.4vw, 3.5rem) }
-.hero p { color: var(--on-band-2); max-width: 40ch; font-size: var(--t-lede) }
+.hero p:not(.eyebrow) { color: var(--on-band-2); max-width: 40ch; font-size: var(--t-lede) }
+.hero a:not(.btn), .found a:not(.btn) { color: var(--on-band); text-decoration-color: var(--signal-on-band) }
 .hero__ctas { display: flex; flex-wrap: wrap; gap: var(--s-3) }
 @media (min-width: 720px) { .hero { border-radius: var(--r-l); padding: var(--s-8) var(--s-8) var(--s-7) } .hero::after { width: 380px; height: 380px; border-width: 30px; right: -60px; top: -80px } }
 /* Phase track: where we are in the election calendar */
@@ -361,7 +365,9 @@ body.has-tabbar { padding-bottom: calc(var(--tabbar-h) + var(--gutter-b)) }
 .twovotes__k { font: 800 12px/1 var(--font-body); letter-spacing: var(--track-eyebrow); text-transform: uppercase; display: flex; gap: 8px; align-items: center }
 .twovotes__k .tick { width: 22px; height: 22px }
 .twovotes p { font-size: var(--t-small); color: var(--text-2) }
-.twovotes__big { font: 800 20px/1.1 var(--font-display); font-variation-settings: "wdth" 104 }
+.twovotes__big { font: 800 17px/1.15 var(--font-display); font-variation-settings: "wdth" 100 }
+@media (min-width: 720px) { .twovotes__big { font-size: 20px } }
+@media (max-width: 719px) { .twovotes > div { padding: var(--s-3) } .twovotes__k { font-size: 11px; letter-spacing: .03em } }
 /* Feed (Today): a dated column of small items separated by rules */
 .feed { display: grid; border-top: var(--rule) solid var(--rule-ink) }
 .feed__item { display: grid; gap: var(--s-2); padding: var(--s-5) 0; border-bottom: 1px solid var(--line) }
@@ -398,8 +404,7 @@ body.has-tabbar { padding-bottom: calc(var(--tabbar-h) + var(--gutter-b)) }
 .progress-line { display: flex; align-items: center; gap: var(--s-3); font-size: var(--t-small); color: var(--text-2) }
 .progress-line .bar { flex: 1; height: 8px } .progress-line .bar > i { background: var(--signal) }
 /* "Which of these are you?" chooser */
-.persona { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-2) }
-@media (min-width: 720px) { .persona { grid-template-columns: repeat(3, minmax(0, 1fr)) } }
+.persona { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 148px), 1fr)); gap: var(--s-2) }
 .persona button { display: grid; gap: 4px; justify-items: start; text-align: left; padding: var(--s-3) var(--s-3) var(--s-3) var(--s-4); min-height: 76px; border-radius: var(--r-m); border: 1px solid var(--line-strong); background: var(--surface); font-size: 15px; font-weight: 700; line-height: 1.25; transition: border-color var(--dur-2), background var(--dur-2) }
 .persona button span { font-weight: 400; font-size: 13px; color: var(--text-3) }
 .persona button[aria-pressed="true"] { border-color: var(--signal); background: var(--signal-soft); box-shadow: inset 0 0 0 1px var(--signal) }
@@ -439,20 +444,21 @@ body.has-tabbar { padding-bottom: calc(var(--tabbar-h) + var(--gutter-b)) }
 .tools { display: grid; gap: var(--s-3); grid-template-columns: minmax(0, 1fr) }
 @media (min-width: 720px) { .tools { grid-template-columns: repeat(2, minmax(0, 1fr)) } }
 @media (min-width: 1024px) { .tools { grid-template-columns: 1.25fr 1fr 1fr; grid-template-rows: auto auto } .tool--lead { grid-row: span 2 } }
-.tool { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 96px; gap: var(--s-3) var(--s-4); align-content: start; padding: var(--s-5); border-radius: var(--r-l); border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--text); overflow: hidden; transition: border-color var(--dur-2), transform var(--dur-2) var(--ease-out) }
+.tool { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 84px; grid-template-areas: "k art" "t art" "p p" "m m" "go go"; gap: var(--s-2) var(--s-4); align-content: start; padding: var(--s-5); border-radius: var(--r-l); border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--text); overflow: hidden; transition: border-color var(--dur-2), transform var(--dur-2) var(--ease-out) }
 .tool:hover { border-color: var(--text); transform: translateY(-2px) }
-.tool__k { grid-column: 1 / -1; display: flex; gap: 8px; align-items: center; flex-wrap: wrap }
-.tool h3 { font-size: clamp(1.375rem, 1.2rem + .6vw, 1.75rem) }
-.tool p { font-size: 15px; color: var(--text-2) }
-.tool__art { grid-row: 2 / span 2; grid-column: 2; align-self: start; width: 96px; height: 96px; color: var(--text) }
-.tool__meta { grid-column: 1 / -1; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--text-3) }
-.tool__go { grid-column: 1 / -1; margin-top: var(--s-2) }
+.tool__k { grid-area: k; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; align-self: start }
+.tool__t { grid-area: t; align-self: end; font-size: clamp(1.375rem, 1.2rem + .6vw, 1.75rem) }
+.tool__p { grid-area: p; font-size: 15px; color: var(--text-2); margin-top: var(--s-1) }
+.tool__art { grid-area: art; align-self: start; justify-self: end; width: 84px; height: 84px; color: var(--text) }
+.tool__meta { grid-area: m; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--text-3); margin-top: var(--s-2) }
+.tool__go { grid-area: go; margin-top: var(--s-3) }
 .tool--lead { background: var(--band); color: var(--on-band); border-color: var(--band) }
-.tool--lead h3 { color: var(--on-band); font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.5rem) }
-.tool--lead p, .tool--lead .tool__meta { color: var(--on-band-2) }
+.tool--lead .tool__t { color: var(--on-band); font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.5rem) }
+.tool--lead .tool__p, .tool--lead .tool__meta { color: var(--on-band-2) }
 .tool--lead .tool__art { color: var(--on-band) }
 .tool--lead:hover { border-color: var(--signal-on-band) }
-@media (min-width: 1024px) { .tool--lead { grid-template-columns: minmax(0, 1fr); } .tool--lead .tool__art { grid-row: auto; grid-column: 1; width: 100%; height: 150px; margin-block: var(--s-4) } }
+.tool--lead .badge--outline { color: var(--on-band-2); box-shadow: inset 0 0 0 1px var(--band-line) }
+@media (min-width: 1024px) { .tool--lead { grid-template-columns: minmax(0, 1fr); grid-template-areas: "k" "art" "t" "p" "m" "go" } .tool--lead .tool__art { width: 100%; height: 150px; justify-self: stretch; margin-block: var(--s-6) var(--s-4) } }
 .art-accent { stroke: var(--signal); fill: var(--signal) }
 .tool--lead .art-accent { stroke: var(--signal-on-band); fill: var(--signal-on-band) }
 .lens { width: 100%; border-collapse: collapse; font-size: var(--t-small) }
@@ -495,7 +501,7 @@ body.has-tabbar { padding-bottom: calc(var(--tabbar-h) + var(--gutter-b)) }
 .bucket--strong { background: var(--text); color: var(--bg) }
 .bucket--moderate { background: var(--sunk-2); color: var(--text) }
 .bucket--weak { background: transparent; color: var(--text-2); box-shadow: inset 0 0 0 1px var(--line-strong) }
-.bucket--thin { background: var(--hatch); color: var(--text-2); box-shadow: inset 0 0 0 1px var(--line-strong) }
+.bucket--thin { background: transparent; color: var(--text-3); outline: 1px dashed var(--line-strong); outline-offset: -1px }
 .mrow__bar { grid-column: 1 / -1; position: relative; height: 12px; border-radius: 12px; background: var(--sunk) }
 .mrow__bar > i { position: absolute; top: 0; bottom: 0; left: var(--lo); width: calc(var(--hi) - var(--lo)); border-radius: 12px; background: color-mix(in srgb, var(--pc) 45%, transparent); box-shadow: inset 0 0 0 1.5px var(--pc); animation: grow var(--dur-4) var(--ease-out) both; animation-delay: calc(var(--i, 0) * 50ms) }
 .mrow__bar > b { position: absolute; top: -3px; bottom: -3px; left: var(--m); width: 3px; margin-left: -1.5px; border-radius: 2px; background: var(--text) }
@@ -515,7 +521,7 @@ body.has-tabbar { padding-bottom: calc(var(--tabbar-h) + var(--gutter-b)) }
 .dim__ends span:last-child { text-align: right }
 
 /* ---------- 17. Swipe ---------------------------------------------------- */
-.deck { position: relative; display: grid; min-height: 460px; perspective: 1200px }
+.deck { position: relative; display: grid; padding-bottom: 30px; perspective: 1200px }
 .deck > .scard { grid-area: 1 / 1 }
 .scard { position: relative; display: grid; gap: var(--s-4); align-content: start; padding: var(--s-6) var(--s-5) var(--s-5); border-radius: var(--r-l); background: var(--surface); border: 1.5px solid var(--text); box-shadow: var(--shadow-card); transform-origin: 50% 120%; transition: transform var(--dur-3) var(--ease-spring), opacity var(--dur-3) }
 .scard--behind { transform: translateY(14px) scale(.955); opacity: .9; box-shadow: none; border-color: var(--line-strong) }
@@ -542,8 +548,8 @@ body.has-tabbar { padding-bottom: calc(var(--tabbar-h) + var(--gutter-b)) }
 .reveal__who::after { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: var(--pc) }
 .reveal__name { font: 800 22px/1.1 var(--font-display); font-variation-settings: "wdth" 104; animation: rise var(--dur-3) var(--ease-out) var(--dur-2) both }
 .tally { display: grid; gap: 2px }
-.tally__row { display: grid; grid-template-columns: 8rem minmax(0, 1fr) 4.5rem; gap: var(--s-3); align-items: center; font-size: var(--t-small); padding: 5px 0 }
-.tally__row .bar { height: 8px }
+.tally__row { display: grid; grid-template-columns: minmax(6rem, 10rem) minmax(0, 1fr) 3.5rem; gap: var(--s-3); align-items: center; font-size: var(--t-small); padding: 5px 0 }
+.tally__row .bar { height: 8px } .tally__row .ptag { white-space: normal; line-height: 1.2 }
 .tally__v { text-align: right; font-variant-numeric: tabular-nums; color: var(--text-2) }
 .tally__v b { color: var(--text) }
 
@@ -659,6 +665,10 @@ body.has-tabbar { padding-bottom: calc(var(--tabbar-h) + var(--gutter-b)) }
 .term { display: grid; gap: 6px }
 .term__h { display: flex; justify-content: space-between; gap: var(--s-3); font-size: var(--t-small) }
 .term__h b { font-size: 15px }
+.party-layout { display: grid; gap: var(--s-6) var(--col-gap); grid-template-columns: minmax(0, 1fr); grid-template-areas: "glance" "main" "side" }
+.party-layout > .glance { grid-area: glance } .party-layout__main { grid-area: main; min-width: 0 } .party-layout__side { grid-area: side; min-width: 0 }
+@media (min-width: 1024px) { .party-layout { grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); grid-template-areas: "main glance" "main side"; grid-template-rows: auto 1fr; align-items: start } }
+@media (max-width: 1023px) { .glance { grid-template-columns: 1fr 1fr } .glance > div { grid-template-columns: minmax(0, 1fr); border-right: 1px solid var(--line) } .glance > div:nth-child(2n) { border-right: 0 } .glance > div:nth-last-child(-n+2) { border-bottom: 0 } .glance dd { text-align: left; order: -1 } .glance dt { font-size: 13px } }
 .glance { display: grid; gap: 0; border: 1px solid var(--line); border-radius: var(--r-m); background: var(--surface) }
 .glance > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--s-3); padding: var(--s-3) var(--s-4); border-bottom: 1px solid var(--line); align-items: baseline }
 .glance > div:last-child { border-bottom: 0 }

@@ -58,7 +58,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Northcote
 - **List ranking:** 19
 - **Before politics:** Tertiary Sector Management
-- **Residence:** Birkenhead
 - **Age:** 44
 - **Public email:** shanan.halbert@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/shanan-halbert/

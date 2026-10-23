@@ -9,7 +9,6 @@
 
 - **Electorate:** Southland
 - **Before politics:** "Dairy farmer",
-- **Residence:** Rural Southland
 - **Age:** 48
 - **Public email:** jason.herrick@nzfirst.nz
 - **Facebook:** https://www.facebook.com/share/1HmnbddAmw/

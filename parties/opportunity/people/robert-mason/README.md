@@ -10,7 +10,6 @@
 - **Electorate:** Kenepuru
 - **List ranking:** 20
 - **Before politics:** Secondary school teacher
-- **Residence:** Ngaio
 - **Age:** 49
 - **Public email:** robert.mason@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-robert-mason

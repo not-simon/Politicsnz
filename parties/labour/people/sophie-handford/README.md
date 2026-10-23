@@ -31,7 +31,6 @@ Born in 2000 or 2001, Handford grew up on the Kāpiti Coast and was head girl of
 - **Electorate:** Kapiti
 - **List ranking:** 26
 - **Before politics:** NZ Nature Fund
-- **Residence:** Waikanae
 - **Age:** 25
 - **Public email:** sophie.handford@labour.org.nz
 - **Website:** https://sophiehandford.co.nz/

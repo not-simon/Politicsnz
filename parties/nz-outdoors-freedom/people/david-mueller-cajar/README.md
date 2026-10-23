@@ -8,9 +8,7 @@
 ## 2026 candidacy
 
 - **Electorate:** Christchurch East
-- **Residence:** Rolleston
 - **Age:** 38
-- **Public email:** davidcajar@gmail.com
 - **Facebook:** https://www.facebook.com/davidmcajar
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/nz-outdoors--freedom-party), retrieved Oct 2026._

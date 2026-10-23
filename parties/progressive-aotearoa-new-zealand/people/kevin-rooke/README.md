@@ -8,9 +8,7 @@
 ## 2026 candidacy
 
 - **Electorate:** West Coast-Tasman
-- **Residence:** Mahana
 - **Age:** 68
-- **Public email:** kevinrooke@proton.me
 - **Website:** https://www.progressiveparty.co.nz/
 - **Facebook:** https://www.facebook.com/share/1LzWgd2F2Y/?mibextid=wwXIfr
 - **Instagram:** https://www.instagram.com/lawstboy?stkn=OTN4d3l0dWF4aG9m&utm_source=qr

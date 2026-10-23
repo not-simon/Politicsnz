@@ -9,7 +9,6 @@
 
 - **Electorate:** Northcote
 - **Before politics:** Clinical Education Manager
-- **Residence:** Northcote
 - **Public email:** marie@conservatives.nz
 - **Website:** https://conservatives.org.nz/
 - **Facebook:** https://www.facebook.com/ConservativePartyNZ/

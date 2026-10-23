@@ -22,7 +22,6 @@ Collins grew up in Hamilton. His Labour profile says he spent 20 years in media 
 - **Electorate:** North Shore
 - **List ranking:** 63
 - **Before politics:** Small Business Owner (Media)
-- **Residence:** Long Bay
 - **Age:** 39
 - **Public email:** sam.collins@labour.org.nz
 - **Website:** https://labour.org.nz/samcollins

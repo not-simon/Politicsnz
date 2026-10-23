@@ -22,7 +22,6 @@ Yanzick grew up in Otekaieke, North Otago, the son of migrants from Germany and 
 - **Electorate:** Wigram
 - **List ranking:** 53
 - **Before politics:** Technology Project Manager
-- **Residence:** Spreydon
 - **Age:** 33
 - **Public email:** dominik.yanzick@labour.org.nz
 - **Website:** https://www.labour.org.nz/dominikyanzick

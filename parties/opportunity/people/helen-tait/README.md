@@ -10,7 +10,6 @@
 - **Electorate:** Waitaki
 - **List ranking:** 16
 - **Before politics:** Local government management
-- **Residence:** Wanaka
 - **Public email:** helen.tait@opportunity.org.nz
 - **Website:** www.opportunity.org.nz
 

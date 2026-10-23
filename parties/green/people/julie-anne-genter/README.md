@@ -52,7 +52,6 @@ Born 17 December 1979 in Rochester, Minnesota, and raised in Los Angeles; dual U
 - **Electorate:** Wellington Bays
 - **List ranking:** 5
 - **Before politics:** transportation planner
-- **Residence:** Berhampore, Wellington
 - **Age:** 46
 - **Public email:** julieanne.genter@parliament.govt.nz
 - **Website:** https://rongotai.greens.org.nz/about_me

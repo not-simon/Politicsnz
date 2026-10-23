@@ -139,6 +139,8 @@ for pj in sorted((ROOT / 'parties').glob('*/people/*/person.json')):
             im = im.crop(((w - s) // 2, max(0, (h - s) // 4), (w - s) // 2 + s, max(0, (h - s) // 4) + s)).resize((128, 128))
             b = io.BytesIO(); im.save(b, 'JPEG', quality=72); thumbs[rec['folder']] = 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
             rec['photo_credit'] = p.get('photo_credit') or ''
+            if p.get('photo_license'): rec['photo_license'] = p['photo_license']
+            if p.get('photo_license_url'): rec['photo_license_url'] = p['photo_license_url']
         except Exception: pass
     people.append(rec)
 
@@ -163,6 +165,16 @@ forecast = load(ROOT / 'data' / 'forecast.json', None)
 bundle = {'forecast': forecast, 'upcoming': upcoming[0] if upcoming else None, 'guide': guide, 'electorates': electorates, 'generated': __import__('datetime').date.today().isoformat(), 'parties': parties, 'elections': elections,
           'parliaments': parliaments, 'polls': polls, 'promises': promises}
 (OUT / 'bundle.json').write_text(dumps(bundle))
+# --- party newsroom: headline + date + link only (no teaser text; see docs/LEGAL_REVIEW.md S8), plus the follow directory
+rel = load(ROOT / 'data' / 'releases.json', {}) or {}
+fol = load(ROOT / 'data' / 'guide' / 'follow.json', {}) or {}
+PERSONAL_MAIL = re.compile(r'@(gmail|googlemail|hotmail|outlook|live|yahoo|xtra|icloud|me|protonmail|proton|aol|msn|slingshot|orcon|inspire|vodafone|spark|clear|paradise|ihug|windowslive)\.', re.I)
+newsroom = {'updated': rel.get('updated'), 'window_days': rel.get('window_days'),
+            'items': [{k: it.get(k) for k in ('party', 'title', 'date', 'url', 'source', 'ministerial', 'byline') if it.get(k) is not None} for it in rel.get('items', [])],
+            'parties': {k: {kk: v.get(kk) for kk in ('name', 'newsroom_url', 'newsroom_verified')} for k, v in (rel.get('parties') or {}).items()},
+            'follow_parties': fol.get('parties') or {},
+            'follow_people': [{k: v for k, v in pp.items() if k != 'email' or (v and not PERSONAL_MAIL.search(v))} for pp in (fol.get('people') or [])]}
+(OUT / 'newsroom.json').write_text(dumps(newsroom))
 (OUT / 'policies.json').write_text(dumps(policies))
 (OUT / 'people.json').write_text(dumps(people))
 (OUT / 'thumbs.json').write_text(json.dumps(thumbs))

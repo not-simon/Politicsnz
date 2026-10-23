@@ -21,6 +21,22 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ---
-Scope: this MIT licence covers the code (tools/, site/ source) and the original
-analysis written for this project (REPORT.md, guide/, track records, profiles).
-It does NOT cover third-party material reproduced for reference — see NOTICE.md.
+Scope of the licences in this repository
+
+1. Code (tools/, site/src/, .github/, build scripts): the MIT licence above.
+
+2. The project's own text and data (REPORT.md, guide/, elections/, electorates/,
+   parties/*/README.md, parties/*/track-record.md, people profiles, data/*.json
+   written for this project): Creative Commons Attribution-ShareAlike 4.0
+   International (CC BY-SA 4.0), https://creativecommons.org/licenses/by-sa/4.0/.
+   Parts of this material are adapted from Wikipedia (election tables and
+   biographies), which is itself CC BY-SA 4.0 and requires adaptations to carry
+   the same licence. Attribution: "Ballot Book NZ, https://github.com/not-simon/Politicsnz".
+
+3. Third-party material reproduced for reference (party policy documents and
+   releases in parties/*/policies/documents/ and site/data/fulltext/, photographs,
+   policy.nz questionnaire text, Stats NZ boundaries, survey instruments) is NOT
+   covered by either licence. It remains the property of its owners and is listed,
+   with its source and terms, in NOTICE.md. Owners can ask for removal or
+   correction by opening an issue; requests are actioned within 24 hours during
+   the election campaign.

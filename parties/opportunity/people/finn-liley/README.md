@@ -10,7 +10,6 @@
 - **Electorate:** Rotorua
 - **List ranking:** 27
 - **Before politics:** Emergency Medical Call Taker
-- **Residence:** Rotorua
 - **Age:** 22
 - **Public email:** finn.liley@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-finn-liley

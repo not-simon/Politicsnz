@@ -65,7 +65,6 @@ Since the 2 April 2026 reshuffle he has been Minister of Commerce and Consumer A
 - **Electorate:** Upper Harbour
 - **List ranking:** 20
 - **Before politics:** Small Business Owner
-- **Residence:** Hobsonville Point
 - **Age:** 53
 - **Public email:** cameron.brewer@national.org.nz
 - **Website:** https://www.national.org.nz/team/cameronbrewer

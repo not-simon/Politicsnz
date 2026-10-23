@@ -10,7 +10,6 @@
 - **Electorate:** Taieri
 - **List ranking:** 32
 - **Before politics:** Dairy Farmer
-- **Residence:** South Otago
 - **Age:** 38
 - **Public email:** robbie.byars@act.org.nz
 - **Website:** https://www.act.org.nz/people/robbie-byars

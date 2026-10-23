@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T12:52:49Z",
+ "updated": "2026-10-23T12:56:45Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -52,7 +52,7 @@
    "website": "https://www.opportunity.org.nz/",
    "newsroom_url": "https://www.opportunity.org.nz/",
    "newsroom_verified": false,
-   "scoop_infopage": "https://info.scoop.co.nz/The_Opportunities_Party"
+   "scoop_infopage": "https://info.scoop.co.nz/The_Opportunity_Party"
   },
   "nz-loyal": {
    "name": "New Zealand Loyal",
@@ -218,10 +218,10 @@
    "id": "scoop:opportunity",
    "party": "opportunity",
    "source": "Scoop",
-   "feed_url": "https://info.scoop.co.nz/The_Opportunities_Party",
+   "feed_url": "https://info.scoop.co.nz/The_Opportunity_Party",
    "feed_type": "html-infopage (no per-organisation RSS exists)",
    "status": "ok",
-   "items_in_feed": 20,
+   "items_in_feed": 12,
    "newsroom_url": "https://www.opportunity.org.nz/",
    "newsroom_verified": false,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"

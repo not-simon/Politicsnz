@@ -10,7 +10,6 @@
 - **Electorate:** Christchurch Central
 - **List ranking:** 5
 - **Before politics:** Policy analyst
-- **Residence:** Waltham
 - **Age:** 28
 - **Public email:** eden.skipper@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-eden-skipper

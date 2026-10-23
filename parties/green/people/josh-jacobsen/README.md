@@ -10,7 +10,6 @@
 - **Electorate:** North Shore
 - **List ranking:** 25
 - **Before politics:** Head of Software Engineering
-- **Residence:** Hauraki
 - **Age:** 40
 - **Public email:** josh.jacobsen@greens.org.nz
 - **Website:** https://www.greens.org.nz/joshjacobsen_2026

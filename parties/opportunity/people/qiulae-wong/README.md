@@ -39,7 +39,6 @@ None of significance found in the sources consulted.
 - **Electorate:** Mt Albert
 - **List ranking:** 1
 - **Before politics:** Sustainable Business Leader
-- **Residence:** Mt Albert
 - **Age:** 38
 - **Public email:** qiulae.wong@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/qiulae-wong-for-mt-albert

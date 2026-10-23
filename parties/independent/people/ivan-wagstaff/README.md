@@ -9,7 +9,6 @@
 
 - **Electorate:** Kaipara ki Mahurangi
 - **Before politics:** Business Owner
-- **Residence:** Warkworth
 - **Age:** 49
 - **Public email:** contact@ivanforrodney.nz
 - **Website:** www.ivanforrodney.nz

@@ -22,7 +22,6 @@ Singh describes himself on policy.nz as a business owner and in his Labour profi
 - **Electorate:** Takanini
 - **List ranking:** 61
 - **Before politics:** Business Owner
-- **Residence:** Manukau
 - **Public email:** kharag.singh@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/kharag-singh/
 - **Facebook:** https://www.facebook.com/kharag.singh.31/

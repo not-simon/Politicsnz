@@ -9,7 +9,6 @@
 
 - **Electorate:** Selwyn
 - **Before politics:** School assistant
-- **Residence:** Selwyn
 - **Age:** 95
 - **Public email:** Elizabeth.Mundt@nzfirst.nz
 - **Website:** https://nzfirst.nz

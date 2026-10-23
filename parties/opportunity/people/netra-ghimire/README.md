@@ -10,7 +10,6 @@
 - **Electorate:** Palmerston North
 - **List ranking:** 32
 - **Before politics:** High School Teacher
-- **Residence:** Palmerston North
 - **Age:** 28
 - **Public email:** netra.ghimire@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-netra-ghimire

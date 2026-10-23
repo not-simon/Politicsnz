@@ -22,7 +22,6 @@ Muller Pallarès grew up on the Hibiscus Coast and attended Gulf Harbour School 
 - **Electorate:** Whangaparāoa
 - **List ranking:** 47
 - **Before politics:** Environmental educator
-- **Residence:** -
 - **Age:** 29
 - **Public email:** estefania@labour.org.nz
 - **Facebook:** https://www.facebook.com/EstefaniaMullerPallaresLabour

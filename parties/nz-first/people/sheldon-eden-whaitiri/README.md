@@ -9,7 +9,6 @@
 
 - **Electorate:** Mt Albert
 - **Before politics:** NZME Media Specialist
-- **Residence:** Newmarket Auckland
 - **Age:** 41
 - **Public email:** sheldon.edenwhaitiri@nzfirst.nz
 - **Website:** n/a

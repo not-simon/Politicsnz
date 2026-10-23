@@ -57,7 +57,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 
 - **Electorate:** Manurewa
 - **List ranking:** 41
-- **Residence:** Manurewa
 - **Public email:** Arena.Williams@parliament.govt.nz
 - **Website:** https://www.arenawilliams.co.nz/
 - **Facebook:** https://www.facebook.com/ArenaWilliamsManurewa/

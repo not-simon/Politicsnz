@@ -28,7 +28,6 @@ Sources: [National Party candidate profile](https://www.national.org.nz/team/mat
 - **Electorate:** Kenepuru
 - **List ranking:** 60
 - **Before politics:** Business & Technology Leader
-- **Residence:** Tawa, Wellington
 - **Age:** 46
 - **Public email:** matthew.evetts@national.org.nz
 - **Website:** https://matthewevetts.nz/

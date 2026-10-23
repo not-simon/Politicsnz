@@ -54,7 +54,6 @@ _Source: Wikipedia infobox._
 - **Electorate:** Auckland Central
 - **List ranking:** 35
 - **Before politics:** HR/Employment Consultant
-- **Residence:** Parnell
 - **Age:** 32
 - **Public email:** naisi.chen@labour.org.nz
 - **Website:** https://www.labour.org.nz/naisichen

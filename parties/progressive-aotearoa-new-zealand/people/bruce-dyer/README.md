@@ -9,7 +9,6 @@
 
 - **Electorate:** Nelson
 - **Before politics:** Managing Nelson's Loan Trust
-- **Residence:** Tasman
 - **Age:** 84
 - **Public email:** bdyer@ts.co.nz
 - **Website:** www.progressiveparty.co.nz

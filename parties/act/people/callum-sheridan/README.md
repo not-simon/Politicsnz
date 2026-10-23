@@ -10,7 +10,6 @@
 - **Electorate:** Waitākere
 - **List ranking:** 20
 - **Before politics:** Builder, NZDA President
-- **Residence:** Waiatarua
 - **Age:** 38
 - **Public email:** callum.sheridan@act.org.nz
 - **Website:** https://www.act.org.nz/people/callum-sheridan

@@ -26,7 +26,6 @@ Sources: [National Party candidate profile](https://www.national.org.nz/team/jes
 
 - **Electorate:** Kaipara ki Mahurangi
 - **Before politics:** Foreign Affairs
-- **Residence:** Riverhead
 - **Public email:** jessica.rowe@national.org.nz
 - **Website:** https://www.national.org.nz/team/jessicarowe
 - **Facebook:** https://www.facebook.com/jessicarowenz

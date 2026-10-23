@@ -10,7 +10,6 @@
 - **Electorate:** Ōtāhuhu
 - **List ranking:** 21
 - **Before politics:** Real Estate Agent
-- **Residence:** Mt Wellington
 - **Age:** 42
 - **Public email:** henrietta.devoe@act.org.nz
 - **Facebook:** https://www.facebook.com/share/19LPNzsnSw/?mibextid=wwXIfr

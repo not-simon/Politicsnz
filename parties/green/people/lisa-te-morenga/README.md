@@ -33,7 +33,6 @@ None of significance found in the sources consulted.
 
 - **Electorate:** Te Tai Tonga
 - **Before politics:** University Professor
-- **Residence:** Newlands, Wellington
 - **Age:** 54
 - **Public email:** dr.lisa.temorenga@greens.co.nz
 - **Website:** https://www.greens.org.nz/lisatemorenga_2026

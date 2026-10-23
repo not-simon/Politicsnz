@@ -9,9 +9,7 @@
 
 - **Electorate:** Northland
 - **Before politics:** Small business owner
-- **Residence:** Herekino, Far North.
 - **Age:** 70
-- **Public email:** mikenorthlandgreens@proton.me
 - **Website:** https://www.greens.org.nz/mikefinlayson_2026
 - **Facebook:** https://www.facebook.com/Mikenorthlandgreens
 

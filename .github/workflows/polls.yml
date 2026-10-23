@@ -28,13 +28,24 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: python3 -m pip install --quiet numpy beautifulsoup4 lxml
+      - name: Polling-day freeze (Electoral Act 1993 s 197)
+        # Nothing new is published from 23:59 Fri 6 Nov to 19:00 Sat 7 Nov NZDT (10:59Z 6 Nov to 06:00Z 7 Nov).
+        run: |
+          now=$(date -u +%s)
+          if [ "$now" -ge "$(date -u -d '2026-11-06T10:59:00Z' +%s)" ] && [ "$now" -lt "$(date -u -d '2026-11-07T06:00:00Z' +%s)" ]; then
+            echo "Polling-day freeze: skipping this run."; echo "FREEZE=1" >> "$GITHUB_ENV"
+          fi
       - name: Refresh polls from Wikipedia
+        if: env.FREEZE != '1'
         run: python3 tools/polls_update.py
       - name: Run the forecast model
+        if: env.FREEZE != '1'
         run: python3 tools/forecast.py
       - name: Rebuild the site bundle
+        if: env.FREEZE != '1'
         run: python3 tools/build_site.py
       - name: Commit and push if anything changed
+        if: env.FREEZE != '1'
         run: |
           git add data/polls-2026.json data/forecast.json data/polls-history site raw/forecast/*.meta.json
           if git diff --cached --quiet; then

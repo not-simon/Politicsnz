@@ -9,7 +9,6 @@
 
 - **Electorate:** Taieri
 - **Before politics:** Translator
-- **Residence:** Waiputai / Warrington
 - **Age:** 47
 - **Public email:** anna.knight@allianceparty.nz
 - **Website:** https://allianceparty.nz/

@@ -35,7 +35,6 @@ None of significance found in the sources consulted.
 - **Electorate:** Wellington North
 - **List ranking:** 3
 - **Before politics:** Public servant (policy)
-- **Residence:** Wellington northern suburbs
 - **Age:** 47
 - **Public email:** jessica.hammond@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-jessica-hammond

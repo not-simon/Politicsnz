@@ -8,7 +8,6 @@
 ## 2026 candidacy
 
 - **Electorate:** Glendene
-- **Residence:** Glendene
 - **Age:** 60
 - **Public email:** finance@animaljusticeparty.org.nz
 - **Website:** https://animaljustice.org.nz/

@@ -48,7 +48,6 @@ Moved to New Zealand from Tijuana, Mexico, in 2006. Worked for a decade as a fil
 - **Electorate:** Mt Albert
 - **List ranking:** 9
 - **Before politics:** Community Advocate
-- **Residence:** Balmoral
 - **Age:** 38
 - **Public email:** mtalbert@greens.org.nz
 - **Website:** https://www.ricardo.nz

@@ -10,7 +10,6 @@
 - **Electorate:** Mt Roskill
 - **List ranking:** 17
 - **Before politics:** Director/Investor
-- **Residence:** Dairy Flat
 - **Age:** 31
 - **Public email:** yang.qu@act.org.nz
 - **Facebook:** https://www.facebook.com/yangquact

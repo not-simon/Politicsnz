@@ -10,7 +10,6 @@
 - **Electorate:** Southland
 - **List ranking:** 11
 - **Before politics:** Chair of Fired Up Stilettos
-- **Residence:** Queenstown
 - **Age:** 37
 - **Public email:** bianca.beebe@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-bianca-beebe

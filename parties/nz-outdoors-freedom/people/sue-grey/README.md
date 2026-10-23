@@ -42,7 +42,6 @@ Susan Jane Grey holds law and science (microbiology, biochemistry) degrees; admi
 
 - **Electorate:** West Coast-Tasman
 - **Before politics:** Self-employed lawyer
-- **Residence:** Dovedale Tasman
 - **Age:** 63
 - **Public email:** suegrey@freedom.kiwi
 - **Website:** Freedom.kiwi/2026-candidates

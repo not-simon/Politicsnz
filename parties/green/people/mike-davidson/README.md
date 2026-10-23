@@ -44,9 +44,7 @@ None of significance found in the sources consulted.
 - **Electorate:** Ilam
 - **List ranking:** 20
 - **Before politics:** Kaiwhakahaere, Whitiora Centre
-- **Residence:** Papanui
 - **Age:** 50
-- **Public email:** votemikedavidson@gmail.com
 - **Website:** https://www.greens.org.nz/mikedavidson_2026
 - **Facebook:** https://www.facebook.com/OtautahiMike
 - **Instagram:** https://www.instagram.com/otautahimike

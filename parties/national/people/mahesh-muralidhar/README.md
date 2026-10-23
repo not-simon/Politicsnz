@@ -34,7 +34,6 @@ Sources: [National Party candidate profile](https://www.national.org.nz/team/mah
 - **Electorate:** Tāmaki
 - **List ranking:** 24
 - **Before politics:** Startup executive and investor
-- **Residence:** Mission Bay
 - **Age:** 46
 - **Public email:** mahesh@national.org.nz
 - **Website:** https://www.national.org.nz/team/maheshmuralidhar

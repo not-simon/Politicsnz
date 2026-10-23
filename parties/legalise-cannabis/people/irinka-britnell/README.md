@@ -6,8 +6,6 @@
 ## 2026 candidacy
 
 - **List ranking:** 11
-- **Residence:** Linwood
-- **Public email:** avoncbakpak@gmail.com
 - **Website:** www.alcp.org.nz
 
 ### Why I'm standing

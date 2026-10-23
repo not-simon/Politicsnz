@@ -44,7 +44,6 @@ Born in Pembury, Kent, on 21 December 1961; moved to Wellington aged five and be
 
 - **Electorate:** Remutaka
 - **Before politics:** Mayor of Wellington
-- **Residence:** South Wairarapa
 - **Age:** 64
 - **Public email:** andy.foster@nzfirst.nz
 - **Website:** n/a

@@ -9,7 +9,6 @@
 
 - **Electorate:** Manurewa
 - **Before politics:** Volunteer and a business owner
-- **Residence:** Manurewa 
 - **Age:** 59
 - **Public email:** Esther.tofilautevaga@nzfirst.nz
 - **Facebook:** Esther Tofilau Tevaga for Manurewa

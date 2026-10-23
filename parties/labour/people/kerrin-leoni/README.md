@@ -47,9 +47,7 @@ _Source: Wikipedia infobox._
 
 - **Electorate:** Tāmaki Makaurau
 - **List ranking:** 43
-- **Residence:** Tāmaki Makaurau
 - **Age:** 46
-- **Public email:** kerrin.leonilabour@gmail.com
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/kerrin-leoni/
 - **Facebook:** www.facebook.com/kerrinleonitekaitonomootamakimakaurau
 - **Instagram:** https://www.instagram.com/kerrinleoni

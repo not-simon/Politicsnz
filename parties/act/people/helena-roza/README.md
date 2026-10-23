@@ -10,7 +10,6 @@
 - **Electorate:** Whangaparāoa
 - **List ranking:** 27
 - **Before politics:** Business owner/ Entrepreneur
-- **Residence:** Albany Heights
 - **Age:** 49
 - **Public email:** helena.roza@act.org.nz
 - **Website:** https://www.act.org.nz/people/helena-roza

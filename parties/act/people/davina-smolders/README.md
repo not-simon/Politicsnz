@@ -9,7 +9,6 @@
 
 - **List ranking:** 18
 - **Before politics:** Far North District Councillor
-- **Residence:** Far North
 - **Age:** 54
 - **Public email:** davina.smolders@act.org.nz
 - **Website:** https://www.act.org.nz/people/davina-smolders

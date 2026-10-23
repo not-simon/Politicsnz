@@ -68,7 +68,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** East Cape
 - **List ranking:** 17
 - **Before politics:** ECE Founder & Business Owner
-- **Residence:** Gisborne, Tairāwhiti
 - **Age:** 52
 - **Public email:** jo.luxton@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/hon-jo-luxton/

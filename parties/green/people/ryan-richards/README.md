@@ -9,7 +9,6 @@
 
 - **Electorate:** Upper Harbour
 - **Before politics:** Partnerships Manager
-- **Residence:** Ponsonby
 - **Age:** 42
 - **Public email:** ryan.richards@greens.org.nz
 - **Website:** https://www.greens.org.nz/ryanrichards_2026

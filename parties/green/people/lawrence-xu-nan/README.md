@@ -44,7 +44,6 @@ Lawrence Xi Xu-Nan was born in Tianjin, China, on 12 December 1986 and settled i
 - **Electorate:** Epsom
 - **List ranking:** 8
 - **Before politics:** Egyptologist
-- **Residence:** Mt Wellington
 - **Age:** 39
 - **Public email:** epsom@greens.org.nz
 - **Website:** https://www.greens.org.nz/lawrencexunan_2026

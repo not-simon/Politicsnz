@@ -9,9 +9,7 @@
 
 - **Electorate:** Christchurch Central
 - **Before politics:** Full time Student
-- **Residence:** Waltham
 - **Age:** 24
-- **Public email:** thereviewer812@gmail.com
 - **Facebook:** https://www.facebook.com/HaydenCentral26
 - **Twitter:** https://x.com/TheHaydog29
 

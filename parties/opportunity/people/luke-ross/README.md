@@ -10,7 +10,6 @@
 - **Electorate:** Remutaka
 - **List ranking:** 21
 - **Before politics:** Video Producer
-- **Residence:** Upper Hutt
 - **Age:** 29
 - **Public email:** luke.ross@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-luke-ross

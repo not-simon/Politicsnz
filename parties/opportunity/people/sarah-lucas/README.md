@@ -10,7 +10,6 @@
 - **Electorate:** New Plymouth
 - **List ranking:** 7
 - **Before politics:** Business person
-- **Residence:** Taranaki
 - **Age:** 50
 - **Public email:** sarah.lucas@opportunity.org.nz
 - **Website:** www.opportunity.org.nz

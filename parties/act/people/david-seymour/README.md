@@ -57,7 +57,6 @@ Born in Palmerston North on 24 June 1983 and raised in Whangārei; has Ngāpuhi 
 - **Electorate:** Epsom
 - **List ranking:** 1
 - **Before politics:** Electrical engineer
-- **Residence:** Epsom Electorate
 - **Age:** 43
 - **Public email:** david.seymour@parliament.govt.nz
 - **Website:** https://www.davidseymour.org.nz/

@@ -46,7 +46,6 @@ Born in Lumsden and educated at James Hargest College, Invercargill, and the Uni
 - **Electorate:** Southland
 - **List ranking:** 6
 - **Before politics:** Corporate Affairs
-- **Residence:** Queenstown
 - **Age:** 52
 - **Public email:** todd.stephenson@parliament.govt.nz
 - **Website:** https://www.act.org.nz/people/todd-stephenson

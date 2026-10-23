@@ -10,7 +10,6 @@
 - **Electorate:** Wellington North
 - **List ranking:** 33
 - **Before politics:** Lawyer
-- **Residence:** Miramar
 - **Age:** 40
 - **Public email:** matthew.hague@act.org.nz
 - **Website:** https://www.act.org.nz/people/matthew-hague

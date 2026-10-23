@@ -9,7 +9,6 @@
 
 - **Electorate:** Waimakariri
 - **List ranking:** 30
-- **Residence:** Waimakariri
 - **Public email:** ash.bettridge@act.org.nz
 - **Facebook:** https://www.facebook.com/ashbettridgeact/
 

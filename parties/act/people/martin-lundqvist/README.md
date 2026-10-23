@@ -9,7 +9,6 @@
 
 - **Electorate:** Northcote
 - **Before politics:** Registered Nurse
-- **Residence:** Northcote
 - **Public email:** martin.lundqvist@act.org.nz
 - **Website:** https://www.act.org.nz
 - **Facebook:** https://www.facebook.com/martinlundqvistact/

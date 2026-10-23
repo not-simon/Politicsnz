@@ -10,7 +10,6 @@
 - **Electorate:** Hutt South
 - **List ranking:** 13
 - **Before politics:** Physicist
-- **Residence:** Korokoro
 - **Age:** 39
 - **Public email:** ben.wylie-vaneerd@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-ben-wylie-van-eerd

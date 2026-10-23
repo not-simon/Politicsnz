@@ -10,7 +10,6 @@
 - **Electorate:** Rangitata
 - **List ranking:** 30
 - **Before politics:** Organisational change leader
-- **Residence:** Huntingdon, Mid Canterbury
 - **Age:** 54
 - **Public email:** matt.harris@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-matt-harris

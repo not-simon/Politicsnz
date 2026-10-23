@@ -10,7 +10,6 @@
 - **Electorate:** Maungakiekie
 - **List ranking:** 23
 - **Before politics:** Managing Director
-- **Residence:** Onehunga
 - **Age:** 49
 - **Public email:** derrick.paull@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-derrick-paull

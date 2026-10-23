@@ -10,7 +10,6 @@
 - **Electorate:** Tāmaki
 - **List ranking:** 7
 - **Before politics:** Lawyer
-- **Residence:** Auckland
 - **Age:** 40
 - **Public email:** james.christmas@act.org.nz
 - **Website:** https://www.jameschristmas.co.nz

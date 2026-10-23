@@ -9,7 +9,6 @@
 
 - **Electorate:** Māngere
 - **Before politics:** BID Manager
-- **Residence:** Māngere
 - **Public email:** vicky.hau@nzfirst.nz
 - **Facebook:** https://www.facebook.com/p/Vicky-Hau-NZ-First-Candidate-for-M%C4%81ngere-61591715260258/
 - **Instagram:** https://www.instagram.com/vickyhaunzf

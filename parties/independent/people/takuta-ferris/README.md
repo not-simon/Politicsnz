@@ -47,7 +47,6 @@ Tākuta "Doc" Ferris (born 1978; Ngāi Tahu, Ngāti Kuia, Ngāti Kahungunu, Ngā
 
 - **Electorate:** Te Tai Tonga
 - **Before politics:** Massey Principal Māori Advisor
-- **Residence:** Wellington Region
 - **Age:** 48
 - **Public email:** Takuta.Ferris@parliament.govt.nz
 - **Website:** www.takuta.co.nz

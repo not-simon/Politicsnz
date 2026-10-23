@@ -46,7 +46,6 @@ Born in India in 1970, the daughter of an Indian Air Force officer; master's in 
 - **Electorate:** Pakuranga
 - **List ranking:** 10
 - **Before politics:** Business owner
-- **Residence:** Auckland
 - **Age:** 56
 - **Public email:** parmjeet.parmar@parliament.govt.nz
 - **Website:** https://www.act.org.nz/people/parmjeet-parmar

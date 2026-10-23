@@ -10,7 +10,6 @@
 - **Electorate:** Tāmaki
 - **List ranking:** 31
 - **Before politics:** General Manager Business
-- **Residence:** Parnell
 - **Age:** 57
 - **Public email:** sacha.haskell@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-sacha-haskell

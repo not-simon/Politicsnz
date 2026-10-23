@@ -9,9 +9,7 @@
 
 - **Electorate:** Kaikōura
 - **Before politics:** business owner, consultant
-- **Residence:** Kaikoura
 - **Age:** 71
-- **Public email:** tedhow@gmail.com
 - **Website:** http://kaikoura.org/
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/independent), retrieved Oct 2026._

@@ -9,7 +9,6 @@
 
 - **Electorate:** Rangitīkei
 - **Before politics:** N/A
-- **Residence:** Feilding
 - **Age:** 56
 - **Public email:** Steve.gibson@nzfirst.nz
 - **Facebook:** https://www.facebook.com/votestevegibson

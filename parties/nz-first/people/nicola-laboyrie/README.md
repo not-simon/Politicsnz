@@ -9,7 +9,6 @@
 
 - **Electorate:** Hamilton East
 - **Before politics:** Self employed
-- **Residence:** Raglan
 - **Age:** 59
 - **Public email:** nicola.laboyrie@nzfirst.nz
 - **Website:** https://www.nzfirst.nz

@@ -9,7 +9,6 @@
 
 - **Electorate:** Christchurch East
 - **Before politics:** Operations Manager
-- **Residence:** Phillipstown Christchurch East
 - **Age:** 58
 - **Public email:** shane.wiremu@nzfirst.nz
 - **Facebook:** www.facebook.com/profile.php?id=61592646518833

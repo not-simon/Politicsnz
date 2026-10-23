@@ -10,7 +10,6 @@
 - **Electorate:** Coromandel
 - **List ranking:** 33
 - **Before politics:** Self-employed advocate/mentor
-- **Residence:** Kapanga/Coromandel Town
 - **Public email:** coromandel@greens.org.nz
 - **Website:** https://www.greens.org.nz/pamelagrealey_2026
 - **Facebook:** https://www.facebook.com/GreenPartyCoromandel

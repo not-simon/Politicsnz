@@ -10,7 +10,6 @@
 - **Electorate:** East Cape
 - **List ranking:** 35
 - **Before politics:** Mechanical Engineer/Director
-- **Residence:** Whakatane
 - **Age:** 56
 - **Public email:** darrin.hawkes@act.org.nz
 - **Website:** https://www.act.org.nz/people/darrin-hawkes

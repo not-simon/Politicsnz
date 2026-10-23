@@ -44,9 +44,7 @@ None of significance found in the sources consulted.
 - **Electorate:** Kenepuru
 - **List ranking:** 6
 - **Before politics:** Environment Advisor Ngāi Tahu
-- **Residence:** Pōneke
 - **Age:** 40
-- **Public email:** Lanphamelectioncampaign@gmail.com
 - **Website:** https://www.greens.org.nz/lanpham_2026
 - **Facebook:** https://www.facebook.com/LanPham.nz/
 - **Instagram:** https://www.instagram.com/lanpham.nz/?hl=en

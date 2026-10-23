@@ -22,9 +22,7 @@ McEnroe is a technology entrepreneur originally from Yorkshire, England. His Lab
 - **Electorate:** East Coast Bays
 - **List ranking:** 69
 - **Before politics:** Technologist Innovator
-- **Residence:** Torbay
 - **Age:** 55
-- **Public email:** brendan.mcenroe.labour@gmail.com
 - **Website:** https://linktr.ee/brendan.mcenroe.labour
 - **Facebook:** https://www.facebook.com/brendan.mcenroe.labour
 - **Instagram:** https://www.instagram.com/brendan.mcenroe.labour

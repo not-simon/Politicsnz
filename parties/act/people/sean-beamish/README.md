@@ -9,7 +9,6 @@
 
 - **Electorate:** Waitaki
 - **Before politics:** Maintenance Engineer
-- **Residence:** Lake Hawea
 - **Age:** 43
 - **Public email:** sean.beamish@act.org.nz
 - **Facebook:** https://www.facebook.com/seanbeamishact/

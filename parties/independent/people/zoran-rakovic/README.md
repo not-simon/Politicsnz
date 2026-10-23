@@ -9,9 +9,7 @@
 
 - **Electorate:** Selwyn
 - **Before politics:** Structural engineer
-- **Residence:** West Melton
 - **Age:** 57
-- **Public email:** zoran4selwyn@gmail.com
 - **Website:** https://www.zoran4selwyn.nz
 - **Facebook:** https://www.facebook.com/profile.php?id=61578722433122
 

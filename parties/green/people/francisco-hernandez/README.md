@@ -45,9 +45,7 @@ None of significance; in 2023 he was the target of an online attack by convicted
 - **Electorate:** Dunedin
 - **List ranking:** 10
 - **Before politics:** Principal Advisor - Climate
-- **Residence:** Dunedin Central
 - **Age:** 35
-- **Public email:** fran4dunedin@gmail.com
 - **Website:** https://www.greens.org.nz/francisco_hernandez
 - **Facebook:** https://www.facebook.com/FranciscoHernandezforDunedin
 - **Instagram:** https://www.instagram.com/fran4dunedin/

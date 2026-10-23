@@ -10,7 +10,6 @@
 - **Electorate:** Remutaka
 - **List ranking:** 35
 - **Before politics:** Senior Advisor (Tertiary Educ)
-- **Residence:** Naenae, Lower Hutt
 - **Age:** 57
 - **Public email:** chris.norton@greens.org.nz
 - **Website:** https://www.greens.org.nz/chrisnorton_2026

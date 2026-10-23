@@ -44,7 +44,6 @@ Grew up in a unionist, Labour-supporting household. Worked as a police officer f
 
 - **Electorate:** Nelson
 - **Before politics:** Publican
-- **Residence:** Stoke
 - **Age:** 54
 - **Public email:** chris.baillie@act.org.nz
 - **Website:** https://www.act.org.nz/people/chris-baillie

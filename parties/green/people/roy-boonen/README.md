@@ -9,7 +9,6 @@
 
 - **Electorate:** Napier
 - **Before politics:** Businessperson
-- **Residence:** Te Awanga
 - **Age:** 64
 - **Website:** https://www.greens.org.nz/royboonen_2026
 

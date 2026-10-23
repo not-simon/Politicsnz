@@ -9,7 +9,6 @@
 
 - **Electorate:** Napier
 - **Before politics:** Outreach Advisor & Councillor
-- **Residence:** Napier
 - **Age:** 41
 - **Public email:** tekira.lawrence@nzfirst.nz
 - **Website:** https://www.nzfirst.nz/te_kira_lawrence

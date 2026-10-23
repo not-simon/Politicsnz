@@ -9,7 +9,6 @@
 
 - **Electorate:** West Coast-Tasman
 - **Before politics:** Businessman
-- **Residence:** Murchison
 - **Age:** 59
 - **Public email:** alex.hislop@nzloyal.com
 - **Website:** https://www.nzloyal.com

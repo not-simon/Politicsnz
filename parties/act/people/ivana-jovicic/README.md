@@ -9,7 +9,6 @@
 
 - **Electorate:** Taranaki-King Country
 - **Before politics:** Clinical Pharmacist
-- **Residence:** Whatwhata
 - **Public email:** Ivana.jovicic@act.org.nz
 - **Facebook:** https://www.facebook.com/ivanajovicicact?
 - **Instagram:** https://www.instagram.com/ivanajovicicact?stkn=MTl4MjAyNXZubm1rMg%3D%3D&utm_source=qr

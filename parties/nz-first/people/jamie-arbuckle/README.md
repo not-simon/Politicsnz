@@ -43,7 +43,6 @@ Grew up on an apple and cherry orchard at Rapaura, Marlborough; diploma in manag
 
 - **Electorate:** Kaikōura
 - **Before politics:** District Councillor
-- **Residence:** Renwick Marlborough
 - **Age:** 47
 - **Public email:** jamie.arbuckle@nzfirst.nz
 - **Facebook:** https://www.facebook.com/jamiearbuckle.nzfirst?mibextid=wwXIfr&mibextid=wwXIfr

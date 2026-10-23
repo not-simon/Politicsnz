@@ -70,7 +70,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Palmerston North
 - **List ranking:** 14
 - **Before politics:** Deputy Mayor
-- **Residence:** Palmerston North
 - **Age:** 46
 - **Public email:** tangi.utikere@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/tangi-utikere/

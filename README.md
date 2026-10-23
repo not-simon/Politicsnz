@@ -77,6 +77,13 @@ docs/SCHEMA.md            data formats
 - To report an error: open an issue with the **Correction** template (say which page, what is wrong, what is right, and link a
   source), or email the maintainer. Corrections are checked against the party's own published text or the official source.
 
+## Licence, privacy and contact
+
+- Code is MIT; the project's own text and data are CC BY-SA 4.0 (parts are adapted from Wikipedia, which requires that); third-party material stays its owners' and is listed in [`NOTICE.md`](NOTICE.md). Owners can ask for removal or correction by [opening an issue](https://github.com/not-simon/Politicsnz/issues/new/choose); we act within 24 hours during the campaign.
+- Published by an unincorporated group of volunteers led by the repository owner. Not affiliated with any party, candidate or the Electoral Commission. Official voting information is at vote.nz.
+- The site has no accounts, cookies, server or analytics; answers are kept in the visitor's own browser. See the privacy statement on the site's *Why trust this?* page and the compliance notes in [`docs/LEGAL_REVIEW.md`](docs/LEGAL_REVIEW.md).
+- Automated updates (polls, releases) are paused from 23:59 Friday 6 November to 7pm Saturday 7 November (NZDT); on election day the site hides polls, forecasts, quiz results and the game until 7pm (Electoral Act 1993 s 197).
+
 ## Sources and method
 
 Sources include party websites and policy documents, policy.nz (structured 2026 policy and candidate data), the Electoral Commission, Parliament, the Beehive, Wikipedia (for election tables and biographies, with the primary sources it cites), and news media (RNZ, Stuff, NZ Herald, The Spinoff, interest.co.nz, 1News). Some party sites (Green, NZ First, Te Pāti Māori, TOP, NZ Loyal) block automated access; their texts came from Common Crawl archive captures, the parties' own releases on Scoop, and party PDFs — each document records how and when it was captured. Gaps and source disagreements are listed in each README rather than papered over. Retrieved 23 October 2026; policies may change before election day.

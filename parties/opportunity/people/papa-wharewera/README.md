@@ -10,7 +10,6 @@
 - **Electorate:** Waiariki
 - **List ranking:** 10
 - **Before politics:** LG Councillor, small business
-- **Residence:** Te Kaha East Coast SH35
 - **Age:** 34
 - **Public email:** papa.wharewera@opportunity.org.nz
 

@@ -70,7 +70,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Wellington North
 - **List ranking:** 6
 - **Before politics:** Specialist doctor
-- **Residence:** Brooklyn
 - **Age:** 47
 - **Public email:** ayesha.verrall@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/dr-ayesha-verrall/

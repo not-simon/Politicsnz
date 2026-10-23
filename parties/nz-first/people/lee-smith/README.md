@@ -9,7 +9,6 @@
 
 - **Electorate:** Taranaki-King Country
 - **Before politics:** Current Small Business Owner
-- **Residence:** Otorohanga
 - **Age:** 53
 - **Public email:** lee.smith@nzfirst.nz
 - **Website:** https://www.nzfirst.nz/

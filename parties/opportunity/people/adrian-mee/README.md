@@ -10,7 +10,6 @@
 - **Electorate:** Selwyn
 - **List ranking:** 38
 - **Before politics:** Medical Laboratory Scientist
-- **Residence:** Selwyn District
 - **Age:** 64
 - **Public email:** adrian.mee@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-adrian-mee

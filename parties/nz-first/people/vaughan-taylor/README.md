@@ -9,7 +9,6 @@
 
 - **Electorate:** East Coast Bays
 - **Before politics:** Prosecution Officer
-- **Residence:** Rosedale, Auckland
 - **Age:** 48
 - **Public email:** vaughan.taylor@nzfirst.nz
 - **Facebook:** https://www.facebook.com/share/19ha6bdRyQ/

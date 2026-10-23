@@ -10,7 +10,6 @@
 - **Electorate:** Wairarapa
 - **List ranking:** 24
 - **Before politics:** Relief School Teacher
-- **Residence:** Central Masterton
 - **Age:** 32
 - **Public email:** Matt.shepherd@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-matt-shepherd

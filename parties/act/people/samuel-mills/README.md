@@ -10,7 +10,6 @@
 - **Electorate:** East Coast Bays
 - **List ranking:** 22
 - **Before politics:** Principal Corrections Officer
-- **Residence:** Hibiscus Coast
 - **Age:** 38
 - **Public email:** sam.mills@act.org.nz
 - **Website:** https://www.act.org.nz/

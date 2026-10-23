@@ -48,7 +48,6 @@ Born 1974 or 1975; educated at Heretaunga College, Upper Hutt, and Massey Univer
 - **Electorate:** Rangitīkei
 - **List ranking:** 3
 - **Before politics:** Dairy Farmer
-- **Residence:** Feilding
 - **Age:** 51
 - **Public email:** andrew.hoggard@parliament.govt.nz
 - **Website:** https://www.act.org.nz/people/andrew-hoggard

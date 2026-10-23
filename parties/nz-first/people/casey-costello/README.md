@@ -49,7 +49,6 @@ Cassandra Jane "Casey" Costello (born 1965 or 1966) is the daughter of racing jo
 
 - **Electorate:** Port Waikato
 - **Before politics:** Management
-- **Residence:** Pokeno
 - **Age:** 60
 - **Public email:** casey.costello@nzfirst.nz
 - **Website:** www.nzfirst.nz

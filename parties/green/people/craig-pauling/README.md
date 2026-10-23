@@ -36,7 +36,6 @@ None of significance found in the sources consulted.
 - **Electorate:** Banks Peninsula
 - **List ranking:** 14
 - **Before politics:** Environmental Consultant
-- **Residence:** Halswell, Christchurch
 - **Age:** 49
 - **Public email:** craig@craigpauling.nz
 - **Website:** www.craigpauling.nz

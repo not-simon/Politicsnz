@@ -9,9 +9,7 @@
 
 - **List ranking:** 12
 - **Before politics:** Pilot driver
-- **Residence:** Pahiatua
 - **Age:** 56
-- **Public email:** unclebobnz@gmail.com
 
 ### Why I'm standing
 

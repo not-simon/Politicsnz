@@ -9,7 +9,6 @@
 
 - **Electorate:** Ilam
 - **Before politics:** Supervisor, Confectionary Chef
-- **Residence:** Diamond Harbour
 - **Age:** 58
 - **Public email:** ken.harpur@act.org.nz
 - **Facebook:** https://www.facebook.com/kenharpuract

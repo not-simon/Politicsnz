@@ -9,7 +9,6 @@
 
 - **Electorate:** Epsom
 - **Before politics:** Company managing director
-- **Residence:** Greenlane, Auckland
 - **Age:** 70
 - **Public email:** martin.gummer@nzfirst.nz
 - **Website:** https://www.nzfirst.nz/martin_gummer

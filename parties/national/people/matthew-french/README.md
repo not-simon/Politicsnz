@@ -29,7 +29,6 @@ Sources: [National Party candidate profile](https://www.national.org.nz/team/mat
 - **Electorate:** Taieri
 - **List ranking:** 54
 - **Before politics:** Branch Manager wills/estate
-- **Residence:** Corstorphine
 - **Age:** 45
 - **Public email:** matthew.french@national.org.nz
 - **Website:** https://www.national.org.nz/team/matthewfrench

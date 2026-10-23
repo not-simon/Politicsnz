@@ -10,7 +10,6 @@
 - **Electorate:** Glendene
 - **List ranking:** 18
 - **Before politics:** Union Organiser, ECE Teacher
-- **Residence:** West Auckland
 - **Age:** 29
 - **Public email:** yasmine.serhan@greens.org.nz
 - **Website:** https://www.greens.org.nz/yasmineserhan_2026

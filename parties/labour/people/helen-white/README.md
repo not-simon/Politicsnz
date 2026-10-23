@@ -57,7 +57,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Mt Albert
 - **List ranking:** 38
 - **Before politics:** Barrister in employment law
-- **Residence:** Sandringham/Morningside
 - **Age:** 58
 - **Public email:** helen.white@labour.org.nz
 - **Website:** https://www.labour.org.nz/helenwhite

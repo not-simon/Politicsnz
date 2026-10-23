@@ -9,7 +9,6 @@
 
 - **Electorate:** West Coast-Tasman
 - **Before politics:** Fibreglass Manufacturer
-- **Residence:** Karoro, Greymouth
 - **Age:** 42
 - **Public email:** cindie.uddstrom@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-cindie-uddstrom

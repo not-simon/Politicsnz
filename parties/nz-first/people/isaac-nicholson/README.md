@@ -9,7 +9,6 @@
 
 - **Electorate:** Rangitata
 - **Before politics:** Plumber, Gasfitter, Drainlayer
-- **Residence:** Timaru
 - **Age:** 45
 - **Public email:** isaac.nicholson@nzfirst.nz
 - **Website:** https://www.nzfirst.nz

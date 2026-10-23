@@ -10,7 +10,6 @@
 - **Electorate:** Tauranga
 - **List ranking:** 22
 - **Before politics:** Architectural Designer
-- **Residence:** Tauranga
 - **Age:** 32
 - **Public email:** michael.carter@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-michael-carter

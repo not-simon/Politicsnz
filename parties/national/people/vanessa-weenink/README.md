@@ -53,7 +53,6 @@ Backbench MP for Banks Peninsula since 2023. She is #38 on National's 2026 list 
 - **Electorate:** Banks Peninsula
 - **List ranking:** 39
 - **Before politics:** General Practitioner
-- **Residence:** St Martins
 - **Age:** 47
 - **Public email:** Vanessa.Weenink@National.org.nz
 - **Website:** https://www.national.org.nz/team/vanessaweenink

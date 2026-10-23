@@ -2,6 +2,8 @@
 """Create parties/<party>/people/<slug>/ for every 2026 candidate on policy.nz:
 person.json, README.md (generated questionnaire section), photo.jpg (400px).
 Never overwrites hand-written README content outside the GENERATED markers."""
+import re as _re
+PERSONAL_MAIL = _re.compile(r'@(gmail|googlemail|hotmail|outlook|live|yahoo|xtra|icloud|me|protonmail|proton|aol|msn|slingshot|orcon|inspire|vodafone|spark|clear|paradise|ihug|windowslive)\.', _re.I)
 import json, glob, pathlib, re, sys, io, urllib.request
 from PIL import Image
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
@@ -21,7 +23,9 @@ def add(c, party_slug, electorate=None, desc=None, rank=None, leader=None, cand_
     if leader: p['leadership_label'] = leader
     attrs = p.setdefault('questionnaire_2026', {})
     for a in c.get('attributes') or []:
-        if a.get('value'): attrs[a['name']] = a['value']
+        if not a.get('value') or a['name'] == 'Residence': continue   # home suburb is never stored or published
+        if a['name'] == 'Public email' and PERSONAL_MAIL.search(a['value']): continue   # personal webmail dropped
+        attrs[a['name']] = a['value']
     if cand_policies: p['candidate_policies_2026'] = cand_policies
 
 titles = {}
@@ -66,7 +70,11 @@ for (ps, slug), p in sorted(people.items()):
     if p.get('electorate_2026'): lines.append(f"- **Electorate:** {p['electorate_2026']}")
     if p.get('list_rank_2026'): lines.append(f"- **List ranking:** {p['list_rank_2026']}")
     if p.get('leadership_label'): lines.append(f"- **Role:** {p['leadership_label']}")
-    for k in ('Before politics', 'Residence', 'Age', 'Public email', 'Website', 'Facebook', 'Instagram', 'X', 'Twitter', 'LinkedIn', 'TikTok', 'YouTube'):
+    # Privacy: the candidate's home suburb ('Residence') is never published, and personal webmail addresses are dropped
+    # (Privacy Act 2020 IPP 11(1)(d); see docs/LEGAL_REVIEW.md M8/S9). Only party/parliament/campaign-domain emails are shown.
+    q.pop('Residence', None)
+    if q.get('Public email') and PERSONAL_MAIL.search(q['Public email']): q.pop('Public email')
+    for k in ('Before politics', 'Age', 'Public email', 'Website', 'Facebook', 'Instagram', 'X', 'Twitter', 'LinkedIn', 'TikTok', 'YouTube'):
         if k in q: lines.append(f'- **{k}:** {q[k]}')
     for k, v in q.items():
         if k in ('Before politics', 'Residence', 'Age', 'Public email', 'Website', 'Facebook', 'Instagram', 'X', 'Twitter', 'LinkedIn', 'TikTok', 'YouTube'): continue

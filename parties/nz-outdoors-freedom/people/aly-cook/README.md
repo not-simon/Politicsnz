@@ -6,7 +6,6 @@
 ## 2026 candidacy
 
 - **Before politics:** I am a business owner
-- **Residence:** Tasman
 - **Age:** 63
 - **Public email:** contact@freedom.kiwi
 - **Website:** https://freedom.kiwi

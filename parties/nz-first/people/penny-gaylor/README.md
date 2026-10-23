@@ -9,7 +9,6 @@
 
 - **Electorate:** Kapiti
 - **Before politics:** Councillor GWRC Kapiti Ward
-- **Residence:** Otaki, Kapiti Coast
 - **Public email:** penny.gaylor@nzfirst.nz
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/nz-first), retrieved Oct 2026._

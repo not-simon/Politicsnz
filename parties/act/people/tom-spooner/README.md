@@ -10,7 +10,6 @@
 - **Electorate:** Kaikōura
 - **List ranking:** 24
 - **Before politics:** Business owner - Engineer
-- **Residence:** Glasnevin
 - **Age:** 43
 - **Public email:** thomas.spooner@act.org.nz
 - **Website:** https://www.act.org.nz/people/tom-spooner

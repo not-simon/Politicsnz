@@ -22,9 +22,7 @@ Grey (Ngāti Tūwharetoa, Ngāti Porou, Ngāti Raukawa, Te Arawa) is a Rhodes Sc
 - **Electorate:** Mt Maunganui
 - **List ranking:** 65
 - **Before politics:** Policy Researcher
-- **Residence:** Pāpāmoa
 - **Age:** 29
-- **Public email:** rhieve4mtmaunganui@gmail.com
 - **Facebook:** https://www.facebook.com/rhievegrey4mtmaunganui/
 - **Instagram:** https://www.instagram.com/rhievegrey_labour/
 

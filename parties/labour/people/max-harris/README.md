@@ -22,7 +22,6 @@ Harris is a lawyer, campaigner and writer. His Labour profile says he was a Rhod
 - **Electorate:** Tāmaki
 - **List ranking:** 29
 - **Before politics:** Lawyer, campaigner, and writer
-- **Residence:** Onehunga
 - **Age:** 38
 - **Public email:** max.harris@labour.org.nz
 - **Website:** https://www.labour.org.nz/maxharris

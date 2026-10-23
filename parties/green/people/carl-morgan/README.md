@@ -10,9 +10,7 @@
 - **Electorate:** Port Waikato
 - **List ranking:** 28
 - **Before politics:** Conservation Advocate
-- **Residence:** Port Waikato
 - **Age:** 28
-- **Public email:** carlmorgan01@hotmail.co.uk
 - **Website:** https://www.greens.org.nz/carlmorgan_2026
 - **Facebook:** https://www.facebook.com/profile.php?id=61570754098167
 - **Instagram:** https://www.instagram.com/carl.morgan.nz/

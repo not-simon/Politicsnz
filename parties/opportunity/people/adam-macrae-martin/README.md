@@ -10,7 +10,6 @@
 - **Electorate:** Ōtāhuhu
 - **List ranking:** 18
 - **Before politics:** Lead Buyer
-- **Residence:** Ōtāhuhu
 - **Age:** 37
 - **Public email:** adam.macrae-martin@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-adam-macrae-martin

@@ -47,7 +47,6 @@ Born in Lower Hutt (1970s), grew up partly in Rotorua; of Ngāpuhi descent. Her 
 - **Electorate:** Wellington Bays
 - **List ranking:** 2
 - **Before politics:** Small Business owner
-- **Residence:** Hataitai
 - **Age:** 54
 - **Public email:** nicole.mckee@parliament.govt.nz
 - **Website:** https://www.act.org.nz/people/nicole-mckee

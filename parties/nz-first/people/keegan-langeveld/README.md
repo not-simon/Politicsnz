@@ -9,7 +9,6 @@
 
 - **Electorate:** Maungakiekie
 - **Before politics:** Communications Advisor
-- **Residence:** Wellington
 - **Age:** 25
 - **Public email:** keegan.langeveld@nzfirst.nz
 - **Website:** https://www.nzfirst.nz/keegan_langeveld

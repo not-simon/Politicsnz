@@ -56,7 +56,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Waimakariri
 - **List ranking:** 36
 - **Before politics:** Officer in the NZ Army
-- **Residence:** Waimakariri
 - **Age:** 45
 - **Public email:** dan.rosewarne@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/dan-rosewarne/

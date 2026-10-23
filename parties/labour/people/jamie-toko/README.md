@@ -21,7 +21,6 @@ Toko (Tainui, Ngāpuhi, Ngāti Whātua) gives his occupation on policy.nz as sen
 
 - **Electorate:** Waikato
 - **Before politics:** Senior Advisor: Business Owner
-- **Residence:** Nawton
 - **Public email:** jamie.toko@labour.org.nz
 - **Website:** labour.co.nz
 - **Facebook:** jamie.toko/WaikatoElectorate

@@ -54,7 +54,6 @@ Backbench MP for Bay of Plenty since 2023. He is #27 on National's 2026 list and
 - **Electorate:** Mt Maunganui
 - **List ranking:** 28
 - **Before politics:** Policy Analyst
-- **Residence:** Papamoa
 - **Age:** 29
 - **Public email:** tom.rutherford@national.org.nz
 - **Website:** https://www.national.org.nz/team/tomrutherford

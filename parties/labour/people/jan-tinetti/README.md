@@ -71,7 +71,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Tauranga
 - **List ranking:** 15
 - **Before politics:** Primary School Principal
-- **Residence:** Matua, Tauranga
 - **Age:** 58
 - **Public email:** jan.tinetti@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/hon-jan-tinetti/

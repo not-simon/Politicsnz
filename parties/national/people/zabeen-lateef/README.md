@@ -29,7 +29,6 @@ Sources: [National Party candidate profile](https://www.national.org.nz/team/zab
 - **Electorate:** Remutaka
 - **List ranking:** 68
 - **Before politics:** Senior Strategic Adviser
-- **Residence:** Avalon, Lower Hutt
 - **Age:** 49
 - **Public email:** zabeen.lateef@national.org.nz
 - **Facebook:** https://www.facebook.com/profile.php?id=61592095853669

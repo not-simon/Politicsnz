@@ -10,7 +10,6 @@
 - **Electorate:** Maungakiekie
 - **List ranking:** 25
 - **Before politics:** Engineer
-- **Residence:** Glendowie
 - **Age:** 36
 - **Public email:** juan.alvarezdelugo@act.org.nz
 - **Facebook:** https://www.facebook.com/juanalvarezdelugoact/

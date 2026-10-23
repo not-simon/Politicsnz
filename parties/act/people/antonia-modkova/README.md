@@ -10,7 +10,6 @@
 - **Electorate:** Auckland Central
 - **List ranking:** 13
 - **Before politics:** Patent Attorney
-- **Residence:** Epsom
 - **Age:** 35
 - **Public email:** antonia.modkova@act.org.nz
 - **Website:** https://www.act.org.nz/people/antonia-modkova

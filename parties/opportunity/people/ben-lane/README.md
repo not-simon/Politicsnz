@@ -10,7 +10,6 @@
 - **Electorate:** Māngere
 - **List ranking:** 25
 - **Before politics:** Tourism
-- **Residence:** Auckland
 - **Age:** 44
 - **Public email:** ben.lane@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-ben-lane

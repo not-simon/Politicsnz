@@ -68,7 +68,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Dunedin
 - **List ranking:** 11
 - **Before politics:** Lawyer
-- **Residence:** St Clair
 - **Age:** 50
 - **Public email:** rachel.brooking@labour.org.nz
 - **Facebook:** https://www.facebook.com/rachelbrookingmp

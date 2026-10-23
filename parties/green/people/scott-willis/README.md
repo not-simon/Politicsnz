@@ -43,7 +43,6 @@ None of significance found in the sources consulted.
 - **Electorate:** Taieri
 - **List ranking:** 15
 - **Before politics:** Consultant & Project Manager
-- **Residence:** Dunedin
 - **Age:** 57
 - **Public email:** scott.willis@parliament.govt.nz
 - **Website:** https://www.greens.org.nz/scott_willis

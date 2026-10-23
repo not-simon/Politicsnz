@@ -10,7 +10,6 @@
 - **Electorate:** Glendene
 - **List ranking:** 19
 - **Before politics:** Small Business Owner
-- **Residence:** Te Atatu Peninsula
 - **Age:** 44
 - **Public email:** amanda.roberts@act.org.nz
 - **Website:** www.act.org.nz

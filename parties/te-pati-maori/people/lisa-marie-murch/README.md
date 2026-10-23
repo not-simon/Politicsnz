@@ -9,7 +9,6 @@
 
 - **Electorate:** Te Tai Tonga
 - **Before politics:** Ministry of Education
-- **Residence:** Invercargill
 - **Age:** 47
 - **Public email:** lisamarie@maoriparty.org.nz
 - **Facebook:** https://www.facebook.com/share/19goqFmBkQ/

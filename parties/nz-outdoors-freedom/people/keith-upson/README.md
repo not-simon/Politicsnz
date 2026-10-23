@@ -6,7 +6,6 @@
 ## 2026 candidacy
 
 - **Before politics:** Manager, Director Engineering
-- **Residence:** Dovedale
 - **Age:** 51
 - **Public email:** contact@freedom.kiwi
 

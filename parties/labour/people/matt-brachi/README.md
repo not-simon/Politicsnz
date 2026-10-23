@@ -21,7 +21,6 @@ Brachi is a high school teacher in South Auckland and sits on a school board. Hi
 
 - **Electorate:** Port Waikato
 - **Before politics:** High School Educator
-- **Residence:** Buckland
 - **Age:** 44
 - **Public email:** matt.brachi@labour.org.nz
 - **Website:** www.labour.org.nz/mattbrachi

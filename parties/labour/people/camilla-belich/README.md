@@ -56,7 +56,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Epsom
 - **List ranking:** 23
 - **Before politics:** lawyer
-- **Residence:** Auckland
 - **Age:** 43
 - **Public email:** camilla.belich@labour.org.nz
 - **Website:** www.labour.org.nz/our-team/camilla-belich

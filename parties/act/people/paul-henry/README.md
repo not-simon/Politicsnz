@@ -37,7 +37,6 @@ Born Paul Henry Hopes in Auckland on 4 August 1960; moved to Bristol with his mo
 
 - **List ranking:** 4
 - **Before politics:** Broadcaster
-- **Residence:** Auckland
 - **Age:** 66
 - **Public email:** paul.henry@act.org.nz
 - **Website:** https://www.act.org.nz/people/paul-henry

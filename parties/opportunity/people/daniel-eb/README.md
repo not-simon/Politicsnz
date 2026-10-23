@@ -10,7 +10,6 @@
 - **Electorate:** Kaipara ki Mahurangi
 - **List ranking:** 2
 - **Before politics:** Business and impact founder
-- **Residence:** North-West Auckland
 - **Age:** 39
 - **Public email:** Daniel.Eb@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-daniel-eb

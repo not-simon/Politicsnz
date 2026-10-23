@@ -9,7 +9,6 @@
 
 - **Electorate:** West Coast-Tasman
 - **Before politics:** Software Developer/Parent
-- **Residence:** Riwaka
 - **Age:** 41
 - **Public email:** sara.dyatlova-murphy@allianceparty.nz
 - **Website:** https://allianceparty.nz/candidates/west-coast-tasman/

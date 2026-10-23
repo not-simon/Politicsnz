@@ -9,7 +9,6 @@
 
 - **Electorate:** Napier
 - **Before politics:** Business Development Executive
-- **Residence:** Havelock North
 - **Age:** 40
 - **Public email:** johno.ormond@act.org.nz
 - **Website:** https://www.act.org.nz/

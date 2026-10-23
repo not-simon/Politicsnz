@@ -9,7 +9,6 @@
 
 - **Electorate:** Rangitīkei
 - **Before politics:** Authorised Financial Adviser
-- **Residence:** Waitarere Beach
 - **Age:** 77
 - **Public email:** bernard.long@greens.org.nz
 - **Website:** https://www.greens.org.nz/bernardlong_2026

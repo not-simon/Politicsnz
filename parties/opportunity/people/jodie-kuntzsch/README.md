@@ -10,7 +10,6 @@
 - **Electorate:** Nelson
 - **List ranking:** 6
 - **Before politics:** Entrepreneur
-- **Residence:** Nelson
 - **Age:** 45
 - **Public email:** jodie.kuntzsch@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-jodie-kuntzsch

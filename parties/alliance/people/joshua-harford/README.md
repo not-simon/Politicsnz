@@ -9,7 +9,6 @@
 
 - **Electorate:** Wellington North
 - **Before politics:** Hospitality Worker
-- **Residence:** Northland
 - **Age:** 20
 - **Public email:** josh.harford@allianceparty.nz
 - **Website:** https://allianceparty.nz/candidates/wellington-north/

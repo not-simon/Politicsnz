@@ -52,7 +52,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Christchurch East
 - **List ranking:** 21
 - **Before politics:** Producer
-- **Residence:** Linwood
 - **Age:** 48
 - **Public email:** reuben.davidson@parliament.govt.nz
 - **Website:** https://www.labour.org.nz/our-team/reuben-davidson/

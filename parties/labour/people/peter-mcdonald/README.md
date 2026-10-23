@@ -22,9 +22,7 @@ McDonald is a farmer at Caroline Valley, near Dipton. His Labour profile says he
 - **Electorate:** Southland
 - **List ranking:** 58
 - **Before politics:** Farmer, this is still my job
-- **Residence:** Caroline Valley Dipton
 - **Age:** 59
-- **Public email:** peter.mcdonald6767@gmail.com
 - **Website:** www.labour.org.nz/petermcdonald
 - **Facebook:** https://www.labour.org.nz/2026-campaign/our-candidates/peter-mcdonald/
 

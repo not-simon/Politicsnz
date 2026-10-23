@@ -41,7 +41,6 @@ None of significance found in the sources consulted.
 
 - **Electorate:** Christchurch East
 - **Before politics:** Small Business Owner
-- **Residence:** Shirley, Christchurch East
 - **Public email:** toni.severin@act.org.nz
 - **Facebook:** https://www.facebook.com/toniseverinact/
 

@@ -9,7 +9,6 @@
 
 - **Electorate:** Northland
 - **Before politics:** Legal and community advocate
-- **Residence:** Waipu Caves
 - **Age:** 70
 - **Public email:** contact@freedom.kiwi
 - **Website:** https://freedom.kiwi

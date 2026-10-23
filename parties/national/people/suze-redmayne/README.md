@@ -52,7 +52,6 @@ MP for Rangitīkei since 2023 and the first woman to hold the seat. She is #31 o
 - **Electorate:** Rangitīkei
 - **List ranking:** 32
 - **Before politics:** Farmer, Community Trustee, JP
-- **Residence:** Turakina
 - **Age:** 59
 - **Public email:** Suze.Redmayne@national.org.nz
 - **Facebook:** https://www.facebook.com/suzeredmaynemp

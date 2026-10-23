@@ -9,7 +9,6 @@
 
 - **Electorate:** Tauranga
 - **Before politics:** Producer/Director
-- **Residence:** Mount Maunganui
 - **Age:** 75
 - **Public email:** Bryan.Norton@act.org.nz
 - **Facebook:** https://www.facebook.com/share/1K8P72xNcP/?mibextid=wwXIfr

@@ -9,7 +9,6 @@
 
 - **Electorate:** Waimakariri
 - **Before politics:** Tourism Business Owner
-- **Residence:** Ashley and the West Coast
 - **Age:** 62
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/nz-first), retrieved Oct 2026._

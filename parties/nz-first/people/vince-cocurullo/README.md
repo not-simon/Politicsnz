@@ -9,7 +9,6 @@
 
 - **Electorate:** Whangārei
 - **Before politics:** Business owner & former Mayor
-- **Residence:** Woodhill, Whangarei
 - **Age:** 52
 - **Public email:** vince.cocurullo@nzfirst.nz
 - **Website:** www.nzfirst.nz/vince_cocurullo

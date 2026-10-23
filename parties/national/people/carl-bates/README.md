@@ -58,7 +58,6 @@ Backbench MP for Whanganui since 2023. He is #28 on National's 2026 list and is 
 - **Electorate:** Whanganui
 - **List ranking:** 29
 - **Before politics:** Business owner and director
-- **Residence:** Durie Hill
 - **Age:** 43
 - **Public email:** carl.bates@national.org.nz
 - **Website:** https://www.national.org.nz/team/carlbates

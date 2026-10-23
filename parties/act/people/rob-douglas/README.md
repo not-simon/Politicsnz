@@ -9,7 +9,6 @@
 
 - **Electorate:** Tukituki
 - **Before politics:** Property Valuer
-- **Residence:** Havelock North
 - **Age:** 48
 - **Public email:** rob.douglas@act.org.nz
 - **Website:** https://www.act.org.nz/

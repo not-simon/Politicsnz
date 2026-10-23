@@ -56,7 +56,6 @@ Former MP. National selected her for Waitākere in April 2026, and she is #57 on
 - **Electorate:** Waitākere
 - **List ranking:** 58
 - **Before politics:** Small business owner
-- **Residence:** Titirangi
 - **Age:** 54
 - **Public email:** agnes.loheni@national.org.nz
 - **Website:** https://www.national.org.nz/team/agnesloheni

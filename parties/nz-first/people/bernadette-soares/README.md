@@ -9,7 +9,6 @@
 
 - **Electorate:** Upper Harbour
 - **Before politics:** Business Owner and Director
-- **Residence:** West Harbour, Auckland.
 - **Age:** 58
 - **Public email:** Bernadette.soares@nzfirst.nz
 - **Website:** Bernadettesoares.com

@@ -55,7 +55,6 @@ Born in Auckland on 26 June 1994; educated at Epsom Girls' Grammar and the Unive
 - **Electorate:** Auckland Central
 - **List ranking:** 2
 - **Before politics:** Art/coffee/donut shop owner
-- **Residence:** Auckland Central
 - **Age:** 32
 - **Public email:** chloe.swarbrick@parliament.govt.nz
 - **Website:** https://chloeswarbrick.co.nz/

@@ -9,7 +9,6 @@
 
 - **Electorate:** West Coast-Tasman
 - **Before politics:** Mayor of Buller District.
-- **Residence:** Westport
 - **Age:** 49
 - **Public email:** Jamie.cleine@nzfirst.nz
 - **Facebook:** https://www.facebook.com/JamieCleineNZFirstWestCoastTasman

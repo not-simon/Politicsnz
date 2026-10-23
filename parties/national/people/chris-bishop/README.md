@@ -108,7 +108,6 @@ In the 2 April 2026 reshuffle he gave up Leader of the House (to Louise Upston) 
 - **Electorate:** Hutt South
 - **List ranking:** 3
 - **Before politics:** Ministerial Advisor
-- **Residence:** Eastbourne
 - **Age:** 43
 - **Public email:** chris.bishop@national.org.nz
 - **Website:** https://www.national.org.nz/team/chrisbishop

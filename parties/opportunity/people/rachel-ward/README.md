@@ -10,7 +10,6 @@
 - **Electorate:** Tukituki
 - **List ranking:** 14
 - **Before politics:** General Manager - Conservation
-- **Residence:** Havelock North
 - **Age:** 40
 - **Public email:** rachel.ward@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-rachel-ward

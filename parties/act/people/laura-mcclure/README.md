@@ -45,7 +45,6 @@ None of significance beyond the above in the sources consulted.
 - **Electorate:** Wigram
 - **List ranking:** 9
 - **Before politics:** Small business owner
-- **Residence:** Halswell
 - **Age:** 41
 - **Public email:** laura.mcclure@parliament.govt.nz
 - **Website:** https://www.act.org.nz/people/laura-mcclure

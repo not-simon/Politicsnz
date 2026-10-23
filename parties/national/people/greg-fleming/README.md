@@ -58,7 +58,6 @@ Backbench MP for Maungakiekie since 2023. He is #43 on National's 2026 list and 
 - **Electorate:** Maungakiekie
 - **List ranking:** 44
 - **Before politics:** Non-profit CEO
-- **Residence:** Greenlane
 - **Age:** 56
 - **Public email:** greg.fleming@parliament.govt.nz
 - **Website:** https://www.national.org.nz/team/gregfleming

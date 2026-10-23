@@ -67,9 +67,7 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Ōtāhuhu
 - **List ranking:** 24
 - **Before politics:** Contracts Lawyer, Policy Analyst
-- **Residence:** Panmure
 - **Age:** 58
-- **Public email:** jenny4otahuhu@gmail.com
 - **Facebook:** https://www.facebook.com/jenny.salesa.labour/
 - **Instagram:** https://www.instagram.com/jennysalesamp
 

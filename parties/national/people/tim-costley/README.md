@@ -56,7 +56,6 @@ Backbench MP for Ōtaki since 2023. He sits on the Foreign Affairs, Defence and 
 - **Electorate:** Kapiti
 - **List ranking:** 38
 - **Before politics:** Air Force pilot and leader
-- **Residence:** Waikanae
 - **Age:** 46
 - **Public email:** tim.costley@national.org.nz
 - **Website:** https://www.national.org.nz/team/timcostley

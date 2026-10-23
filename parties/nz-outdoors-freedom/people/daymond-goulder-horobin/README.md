@@ -8,7 +8,6 @@
 ## 2026 candidacy
 
 - **Before politics:** Tech Entrepreneur
-- **Residence:** Waiuku
 - **Age:** 31
 - **Website:** https://daymondgoulder.com/
 - **Facebook:** https://www.facebook.com/DaymondGoulderHorobin/

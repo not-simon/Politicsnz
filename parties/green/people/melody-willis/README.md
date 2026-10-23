@@ -10,7 +10,6 @@
 - **Electorate:** Kapiti
 - **List ranking:** 31
 - **Before politics:** Public Servant and Student
-- **Residence:** Aro Valley, Wellington
 - **Age:** 34
 - **Public email:** melody.willis@greens.org.nz
 - **Website:** https://www.greens.org.nz/melodywillis_2026

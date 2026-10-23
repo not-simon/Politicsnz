@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-23T12:55:05Z",
- "_about": "Outbound links to official accounts only: the same fields for every party and every 2026 candidate / current MP, alphabetical by surname, no follower counts, no embeds. Party accounts were read from the party's own website on 2026-10-23 where it could be reached (verified true); where the site blocks automated access the account comes from the party's Wikidata item and is marked verified false. People's accounts are the ones they supplied to the policy.nz 2026 candidate questionnaire (via person.json), normalised to https URLs, not independently verified; free-text and 'n/a' answers are dropped. A platform outside the fixed set (Bluesky, Mastodon, Substack...) goes in `other`. Report a wrong link with the Correction issue template. Built by tools/releases_update.py --follow.",
+ "updated": "2026-10-23T12:57:23Z",
+ "_about": "Outbound links to official accounts only: the same fields for every party and every 2026 candidate / current MP, alphabetical by surname, no follower counts, no embeds. Party accounts were read from the party's own website on 2026-10-23 where it could be reached (verified true); where the site blocks automated access the account comes from the party's Wikidata item and is marked verified false. People's accounts are the ones they supplied to the policy.nz 2026 candidate questionnaire (via person.json), normalised to https URLs, not independently verified; free-text and 'n/a' answers are dropped. A platform outside the fixed set (Bluesky, Mastodon, Substack...) goes in `other`. Report a wrong link with the Correction issue template. Built by tools/releases_update.py --follow. Personal webmail addresses (gmail, hotmail, etc.) are removed; only party, parliamentary or campaign-domain addresses are kept.",
  "fields": [
   "website",
   "facebook",
@@ -858,7 +858,7 @@
    "list_rank_2026": 13,
    "accounts": {
     "website": null,
-    "facebook": "https://www.facebook.com/jamiearbuckle.nzfirst?mibextid=wwXIfr&mibextid=wwXIfr",
+    "facebook": "https://www.facebook.com/jamiearbuckle.nzfirst",
     "instagram": null,
     "x": null,
     "tiktok": null,
@@ -880,7 +880,7 @@
    "list_rank_2026": null,
    "accounts": {
     "website": null,
-    "facebook": "https://www.facebook.com/share/1C2PxmWCtz/?mibextid=wwXIfr",
+    "facebook": "https://www.facebook.com/share/1C2PxmWCtz/",
     "instagram": null,
     "x": null,
     "tiktok": null,
@@ -1262,7 +1262,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "andrew.c.beaumont@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -1277,7 +1277,7 @@
    "accounts": {
     "website": "https://www.opportunity.org.nz/candidate-bianca-beebe",
     "facebook": "https://www.facebook.com/BiancaBeebeforOpportunity/",
-    "instagram": "https://www.instagram.com/bianca_beebe_/?hl=en",
+    "instagram": "https://www.instagram.com/bianca_beebe_/",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -1543,7 +1543,7 @@
    "accounts": {
     "website": "https://www.national.org.nz/team/rosemarybourke",
     "facebook": "https://www.facebook.com/share/19MnH4kT3k/",
-    "instagram": "https://www.instagram.com/rosemarybourke4mangere?igsi=c3pjaDBpNHA1OG81",
+    "instagram": "https://www.instagram.com/rosemarybourke4mangere",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -1682,7 +1682,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "avoncbakpak@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -2247,15 +2247,13 @@
    "accounts": {
     "website": "https://www.jameschristmas.co.nz",
     "facebook": "https://www.facebook.com/christmasfortamaki",
-    "instagram": null,
+    "instagram": "https://www.instagram.com/christmasfortamaki",
     "x": "https://x.com/jamesxmasnz",
     "tiktok": null,
     "youtube": null,
     "linkedin": null
    },
-   "other": [
-    "https://www.https://www.instagram.com/christmasfortamaki"
-   ],
+   "other": [],
    "email": "james.christmas@act.org.nz",
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
@@ -2475,9 +2473,7 @@
     "youtube": null,
     "linkedin": null
    },
-   "other": [
-    "https://freedom.kiwi"
-   ],
+   "other": [],
    "email": "contact@freedom.kiwi",
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
@@ -2786,7 +2782,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "votemikedavidson@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -2932,7 +2928,7 @@
    "list_rank_2026": 21,
    "accounts": {
     "website": null,
-    "facebook": "https://www.facebook.com/share/19LPNzsnSw/?mibextid=wwXIfr",
+    "facebook": "https://www.facebook.com/share/19LPNzsnSw/",
     "instagram": null,
     "x": null,
     "tiktok": null,
@@ -3446,7 +3442,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "mikenorthlandgreens@proton.me",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -3505,7 +3501,7 @@
    "accounts": {
     "website": "https://www.national.org.nz/team/gregfleming",
     "facebook": "https://www.facebook.com/GregFlemingMaungakiekie/",
-    "instagram": "https://www.instagram.com/gflemingnational/?hl=en",
+    "instagram": "https://www.instagram.com/gflemingnational/",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -3732,7 +3728,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "sunita4selwyn@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -3790,8 +3786,8 @@
    "list_rank_2026": 32,
    "accounts": {
     "website": "https://www.opportunity.org.nz/candidate-netra-ghimire",
-    "facebook": "https://www.facebook.com/share/1ECyitY5Yb/?mibextid=wwXIfr",
-    "instagram": "https://www.instagram.com/netraforopportunity?igsh=amgwc25rcXdlNWcw&utm_source=qr",
+    "facebook": "https://www.facebook.com/share/1ECyitY5Yb/",
+    "instagram": "https://www.instagram.com/netraforopportunity",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -4040,7 +4036,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "rhieve4mtmaunganui@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -4056,7 +4052,7 @@
     "website": "https://Freedom.kiwi/2026-candidates",
     "facebook": "https://www.facebook.com/SueGreyforWestCoastTasman",
     "instagram": null,
-    "x": "https://x.com/freedom.kiwi",
+    "x": null,
     "tiktok": null,
     "youtube": null,
     "linkedin": null
@@ -4128,7 +4124,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "anntwinetteg@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -4539,7 +4535,7 @@
    "accounts": {
     "website": "https://www.act.org.nz/people/darrin-hawkes",
     "facebook": "https://www.facebook.com/darrinhawkesact",
-    "instagram": "https://www.instagram.com/darrinhawkesact/?hl=en",
+    "instagram": "https://www.instagram.com/darrinhawkesact/",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -4568,7 +4564,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "unclebobnz@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -4612,7 +4608,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "tanialhenare@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -4656,7 +4652,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "makiherbert40@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -4678,7 +4674,7 @@
     "linkedin": "https://www.linkedin.com/in/francisco-hernandez-2171b829/"
    },
    "other": [],
-   "email": "fran4dunedin@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -4898,7 +4894,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "tedhow@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -5045,7 +5041,7 @@
    "accounts": {
     "website": "https://www.nzfirst.nz/elliot_ikilei",
     "facebook": "https://www.facebook.com/ElliotIkileiConservative",
-    "instagram": "https://www.instagram.com/elliotikileipage?stkn=ajJyd2xrOXFyODQw",
+    "instagram": "https://www.instagram.com/elliotikileipage",
     "x": "https://x.com/ElliotIkilei",
     "tiktok": null,
     "youtube": null,
@@ -5245,7 +5241,7 @@
    "accounts": {
     "website": null,
     "facebook": "https://www.facebook.com/ivanajovicicact",
-    "instagram": "https://www.instagram.com/ivanajovicicact?stkn=MTl4MjAyNXZubm1rMg%3D%3D&utm_source=qr",
+    "instagram": "https://www.instagram.com/ivanajovicicact",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -5384,7 +5380,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "celinekearney14@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -5420,7 +5416,7 @@
    "list_rank_2026": 4,
    "accounts": {
     "website": "https://www.opportunity.org.nz/candidate-kayla-kingdon-bebb",
-    "facebook": "https://www.facebook.com/photo/?fbid=122094156602692948&set=a.122094156626692948",
+    "facebook": "https://www.facebook.com/photo/",
     "instagram": "https://www.instagram.com/itskaylakingdon/",
     "x": null,
     "tiktok": null,
@@ -5824,7 +5820,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "thereviewer812@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -5905,14 +5901,14 @@
    "accounts": {
     "website": "https://www.labour.org.nz/2026-campaign/our-candidates/dr-anae-neru-leavasa/",
     "facebook": "https://www.facebook.com/DrAnaeNeruLeavasa/",
-    "instagram": "https://www.instagram.com/dr_anae_neru_leavasa/?hl=en",
+    "instagram": "https://www.instagram.com/dr_anae_neru_leavasa/",
     "x": null,
     "tiktok": null,
     "youtube": null,
     "linkedin": null
    },
    "other": [],
-   "email": "dranae4botany@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -5934,7 +5930,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "labourinv@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -5978,7 +5974,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "kerrin.leonilabour@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -6410,7 +6406,7 @@
    "list_rank_2026": null,
    "accounts": {
     "website": "https://greens.org.nz",
-    "facebook": "https://www.facebook.com/share/1P6UtG1mdA/?mibextid=wwXIfr",
+    "facebook": "https://www.facebook.com/share/1P6UtG1mdA/",
     "instagram": "https://www.instagram.com/donaldmackenziemayo",
     "x": null,
     "tiktok": null,
@@ -6587,14 +6583,14 @@
    "accounts": {
     "website": "https://www.alcp.org.nz/2026-candidates",
     "facebook": "https://www.facebook.com/share/19Dx8dMcLw/",
-    "instagram": "https://www.instagram.com/hempstarchrist?stkn=ZnJ4bWNyZGxoNWVr",
+    "instagram": "https://www.instagram.com/hempstarchrist",
     "x": null,
     "tiktok": null,
     "youtube": null,
     "linkedin": null
    },
    "other": [],
-   "email": "hempstarchrist@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -6992,7 +6988,7 @@
    "other": [
     "https://www.labour.org.nz/2026-campaign/our-candidates/peter-mcdonald/"
    ],
-   "email": "peter.mcdonald6767@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -7036,7 +7032,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "brendan.mcenroe.labour@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -7117,7 +7113,7 @@
    "accounts": {
     "website": "https://www.act.org.nz/people/nicole-mckee",
     "facebook": "https://www.facebook.com/nicolemckeeact/",
-    "instagram": "https://www.instagram.com/actnewzealand/?hl=en",
+    "instagram": "https://www.instagram.com/actnewzealand/",
     "x": "https://x.com/NicoleMckeeMP",
     "tiktok": null,
     "youtube": null,
@@ -7476,7 +7472,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "carlmorgan01@hotmail.co.uk",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -7520,7 +7516,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "davidcajar@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -7623,7 +7619,7 @@
    "accounts": {
     "website": null,
     "facebook": "https://www.facebook.com/share/19goqFmBkQ/",
-    "instagram": "https://www.instagram.com/lisa_marie_murch_te_tai_tonga?stkn=NTVuMDl1djhiaTFi",
+    "instagram": "https://www.instagram.com/lisa_marie_murch_te_tai_tonga",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -7908,7 +7904,7 @@
    "list_rank_2026": null,
    "accounts": {
     "website": null,
-    "facebook": "https://www.facebook.com/share/1K8P72xNcP/?mibextid=wwXIfr",
+    "facebook": "https://www.facebook.com/share/1K8P72xNcP/",
     "instagram": null,
     "x": null,
     "tiktok": null,
@@ -8282,8 +8278,8 @@
    "list_rank_2026": 16,
    "accounts": {
     "website": "https://www.act.org.nz/people/ash-parmar",
-    "facebook": "https://www.facebook.com/share/14r8eJv3Gaw/?mibextid=wwXIfr",
-    "instagram": "https://www.instagram.com/ash_parmar_act_waikato?stkn=M2h1NXNkd2x0bzg%3D&utm_source=qr",
+    "facebook": "https://www.facebook.com/share/14r8eJv3Gaw/",
+    "instagram": "https://www.instagram.com/ash_parmar_act_waikato",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -8349,7 +8345,7 @@
    "accounts": {
     "website": "https://www.act.org.nz/people/panos-patros",
     "facebook": "https://www.facebook.com/share/1GgvZUA1iv/",
-    "instagram": "https://www.instagram.com/panospatrosact?stkn=MTBpaDV4MGV5ZWwwbA==",
+    "instagram": "https://www.instagram.com/panospatrosact",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -8679,14 +8675,14 @@
    "accounts": {
     "website": "https://www.greens.org.nz/lanpham_2026",
     "facebook": "https://www.facebook.com/LanPham.nz/",
-    "instagram": "https://www.instagram.com/lanpham.nz/?hl=en",
+    "instagram": "https://www.instagram.com/lanpham.nz/",
     "x": null,
     "tiktok": null,
     "youtube": null,
     "linkedin": null
    },
    "other": [],
-   "email": "Lanphamelectioncampaign@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -8789,7 +8785,7 @@
    "accounts": {
     "website": "https://www.opportunity.org.nz/candidate-naomi-pocock",
     "facebook": "https://www.facebook.com/NaomiPocockTOP",
-    "instagram": "https://www.instagram.com/naomiforopportunity/?hl=en",
+    "instagram": "https://www.instagram.com/naomiforopportunity/",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -8994,7 +8990,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "zoran4selwyn@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -9294,15 +9290,15 @@
    "list_rank_2026": null,
    "accounts": {
     "website": "https://www.progressiveparty.co.nz/",
-    "facebook": "https://www.facebook.com/share/1LzWgd2F2Y/?mibextid=wwXIfr",
-    "instagram": "https://www.instagram.com/lawstboy?stkn=OTN4d3l0dWF4aG9m&utm_source=qr",
+    "facebook": "https://www.facebook.com/share/1LzWgd2F2Y/",
+    "instagram": "https://www.instagram.com/lawstboy",
     "x": null,
     "tiktok": null,
     "youtube": null,
     "linkedin": null
    },
    "other": [],
-   "email": "kevinrooke@proton.me",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -9339,7 +9335,7 @@
    "accounts": {
     "website": "https://www.opportunity.org.nz/candidate-luke-ross",
     "facebook": "https://www.facebook.com/profile.php?id=61577823116057",
-    "instagram": "https://www.instagram.com/lukeforopportunity/?hl=en",
+    "instagram": "https://www.instagram.com/lukeforopportunity/",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -9478,7 +9474,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "jenny4otahuhu@gmail.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -9867,7 +9863,7 @@
    "accounts": {
     "website": null,
     "facebook": "https://www.facebook.com/manusinghmangere",
-    "instagram": "https://www.instagram.com/manu4mangere/?hl=en",
+    "instagram": "https://www.instagram.com/manu4mangere/",
     "x": "https://x.com/ManuSingh4ACT",
     "tiktok": null,
     "youtube": null,
@@ -9911,7 +9907,7 @@
    "accounts": {
     "website": "https://www.opportunity.org.nz/candidate-eden-skipper",
     "facebook": "https://www.facebook.com/profile.php?id=61577494432982",
-    "instagram": "https://www.instagram.com/edenskipper1/?hl=en",
+    "instagram": "https://www.instagram.com/edenskipper1/",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -9932,7 +9928,7 @@
    "list_rank_2026": 30,
    "accounts": {
     "website": "https://www.greens.org.nz/tewhatanuiskipwith_2026",
-    "facebook": "https://www.facebook.com/share/1BxYKMmFLW/?mibextid=wwXIfr",
+    "facebook": "https://www.facebook.com/share/1BxYKMmFLW/",
     "instagram": "https://www.instagram.com/tewhatanui.skipwith.greens",
     "x": null,
     "tiktok": null,
@@ -10490,7 +10486,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "hrhtamaki@yahoo.com",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -10534,7 +10530,7 @@
     "linkedin": null
    },
    "other": [],
-   "email": "a.tavui@xtra.co.nz",
+   "email": null,
    "source": "policy.nz 2026 candidate questionnaire (candidate-supplied), via person.json",
    "verified": false
   },
@@ -10723,7 +10719,7 @@
    "electorate_2026": "Waikato",
    "list_rank_2026": null,
    "accounts": {
-    "website": "https://labour.co.nz",
+    "website": "https://www.labour.org.nz",
     "facebook": null,
     "instagram": null,
     "x": null,
@@ -10769,7 +10765,7 @@
    "accounts": {
     "website": "https://www.greens.org.nz/teanau_tuiono",
     "facebook": "https://www.facebook.com/share/1Gv8HPVnb5/",
-    "instagram": "https://www.instagram.com/teanau_tuiono?stkn=MTU2dmlnaWJqM3Nleg==",
+    "instagram": "https://www.instagram.com/teanau_tuiono",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -11276,8 +11272,8 @@
    "list_rank_2026": 8,
    "accounts": {
     "website": "https://www.labour.org.nz/our-team/vanushi-walters/",
-    "facebook": "https://www.facebook.com/share/1CFxjVVEjP/?mibextid=wwXIfr",
-    "instagram": "https://www.instagram.com/vanushiwalters?stkn=MWw0OXdmaGNrdDAxdA%3D%3D&utm_source=qr",
+    "facebook": "https://www.facebook.com/share/1CFxjVVEjP/",
+    "instagram": "https://www.instagram.com/vanushiwalters",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -11806,7 +11802,7 @@
     "website": "https://www.greens.org.nz/scott_willis",
     "facebook": "https://facebook.com/ScottWillisforTaieri",
     "instagram": "https://www.instagram.com/scottwillisnz",
-    "x": "https://x.com/@ScottWillis50",
+    "x": null,
     "tiktok": null,
     "youtube": null,
     "linkedin": null
@@ -12003,7 +11999,7 @@
    "accounts": {
     "website": "https://www.labour.org.nz/dominikyanzick",
     "facebook": "https://www.facebook.com/DominikYanzickWigram/",
-    "instagram": "https://www.instagram.com/dominikyanzick/?hl=en",
+    "instagram": "https://www.instagram.com/dominikyanzick/",
     "x": null,
     "tiktok": null,
     "youtube": null,
@@ -12065,15 +12061,15 @@
   "fields": {
    "website": 228,
    "facebook": 236,
-   "instagram": 185,
-   "x": 52,
+   "instagram": 186,
+   "x": 50,
    "tiktok": 0,
    "youtube": 0,
    "linkedin": 1
   },
-  "other": 6,
+  "other": 4,
   "email": 271,
-  "dropped_values": 4,
+  "dropped_values": 6,
   "by_status": {
    "candidate-2026": 401,
    "current-mp-standing-2026": 113,

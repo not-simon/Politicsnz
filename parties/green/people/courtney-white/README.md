@@ -10,7 +10,6 @@
 - **Electorate:** Hutt South
 - **List ranking:** 29
 - **Before politics:** Communications specialist
-- **Residence:** Hutt South
 - **Age:** 38
 - **Public email:** courtney.white@greens.org.nz
 - **Website:** https://www.greens.org.nz/courtneywhite_2026

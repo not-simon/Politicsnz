@@ -48,7 +48,6 @@ Raised in Te Atatū by Cook Islands parents (a labourer/union delegate from Aitu
 
 - **Electorate:** Glendene
 - **Before politics:** Electrician, Pastor, MP
-- **Residence:** Te Atatu Peninsula
 - **Age:** 60
 - **Public email:** Alfred.ngaro@nzfirst.nz
 - **Facebook:** https://www.facebook.com/alfredNgaroMp

@@ -8,9 +8,7 @@
 - **Electorate:** Auckland Central
 - **List ranking:** 5
 - **Before politics:** Cannabis Analyst
-- **Residence:** New Lynn
 - **Age:** 47
-- **Public email:** hempstarchrist@gmail.com
 - **Website:** https://www.alcp.org.nz/2026-candidates
 - **Facebook:** https://www.facebook.com/share/19Dx8dMcLw/
 - **Instagram:** https://www.instagram.com/hempstarchrist?stkn=ZnJ4bWNyZGxoNWVr

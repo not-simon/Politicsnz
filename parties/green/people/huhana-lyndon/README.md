@@ -44,7 +44,6 @@ None of significance found in the sources consulted.
 - **Electorate:** Te Tai Tokerau
 - **List ranking:** 7
 - **Before politics:** CEO Ngātiwai Trust Board
-- **Residence:** Whangārei
 - **Age:** 48
 - **Public email:** huhana.lyndon@mail.greens.org.nz
 - **Website:** https://www.greens.org.nz/huhanalyndon_2026

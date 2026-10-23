@@ -60,7 +60,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Taieri
 - **List ranking:** 39
 - **Before politics:** journalist and lawyer
-- **Residence:** Kew in Dunedin
 - **Age:** 58
 - **Public email:** Ingrid.Leary@parliament.govt.nz
 

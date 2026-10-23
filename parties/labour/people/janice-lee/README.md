@@ -22,9 +22,7 @@ Lee (Ngāi Tahu, Kāti Māmoe, Waitaha, Ngāti Porou) founded Koha Kai, an Inver
 - **Electorate:** Invercargill
 - **List ranking:** 62
 - **Before politics:** Business Entrepreneur
-- **Residence:** South Invercargill
 - **Age:** 65
-- **Public email:** labourinv@gmail.com
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/janice-lee/
 - **Facebook:** https://www.facebook.com/janice.lee.invercargill/
 

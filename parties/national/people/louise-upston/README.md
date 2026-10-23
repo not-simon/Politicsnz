@@ -94,7 +94,6 @@ In September 2026, MSD released a review and apologised after new "Confirming Yo
 - **Electorate:** Taupō
 - **List ranking:** 7
 - **Before politics:** Project management consultant
-- **Residence:** Cambridge
 - **Age:** 55
 - **Public email:** louise.upston@national.org.nz
 - **Website:** www.louiseupston.co.nz

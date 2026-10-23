@@ -97,7 +97,6 @@ Media named her, with Chris Bishop, as one of the two most likely successors if 
 - **Electorate:** East Coast Bays
 - **List ranking:** 5
 - **Before politics:** Senior MP Support
-- **Residence:** East Coast Bays
 - **Public email:** office@ecbnational.org.nz
 - **Website:** https://www.ericastanfordmp.co.nz/vote
 - **Facebook:** https://www.facebook.com/EricaStanfordECB

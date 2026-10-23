@@ -40,7 +40,6 @@ Born 25 June 1977 and raised in Point England, Glen Innes and Mount Wellington, 
 
 - **Electorate:** Takanini
 - **Before politics:** Health and Safety Trainer
-- **Residence:** Flat Bush
 - **Age:** 49
 - **Public email:** Elliot.ikilei@nzfirst.nz
 - **Website:** https://www.nzfirst.nz/elliot_ikilei

@@ -8,7 +8,6 @@
 ## 2026 candidacy
 
 - **Electorate:** Rotorua
-- **Residence:** Rotorua
 - **Age:** 42
 - **Public email:** Billy.brown@nzfirst.nz
 - **Website:** https://www.billybrown.nz/

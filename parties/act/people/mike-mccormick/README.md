@@ -9,7 +9,6 @@
 
 - **Electorate:** Coromandel
 - **Before politics:** Truck Driver
-- **Residence:** Waitakaruru
 - **Age:** 58
 - **Public email:** mike.mccormick@act.org.nz
 - **Website:** https://www.act.org.nz/people/mike-mccormick

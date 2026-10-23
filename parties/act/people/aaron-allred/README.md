@@ -10,7 +10,6 @@
 - **Electorate:** Rangitata
 - **List ranking:** 37
 - **Before politics:** Chartered Accountant
-- **Residence:** Methven
 - **Age:** 53
 - **Public email:** aaron.allred@act.org.nz
 - **Facebook:** https//www.facebook.com/aaronallredact

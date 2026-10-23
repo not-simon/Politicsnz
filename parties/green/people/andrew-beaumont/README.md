@@ -9,9 +9,7 @@
 
 - **Electorate:** West Coast-Tasman
 - **Before politics:** Self employed coffee and food
-- **Residence:** West Coast
 - **Age:** 61
-- **Public email:** andrew.c.beaumont@gmail.com
 - **Facebook:** https://www.facebook.com/AndrewBeaumontGreens/ 
 - **Instagram:** https://www.instagram.com/andrewbeaumontgreens
 

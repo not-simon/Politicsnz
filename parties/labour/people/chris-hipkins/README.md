@@ -100,7 +100,6 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 - **Electorate:** Remutaka
 - **List ranking:** 1
 - **Before politics:** Policy Advisor
-- **Residence:** Upper Hutt
 - **Age:** 48
 - **Public email:** chris.hipkins@labour.org.nz
 - **Website:** https://www.labour.org.nz

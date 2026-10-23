@@ -9,7 +9,6 @@
 
 - **Electorate:** Ilam
 - **Before politics:** Group Sustainability Manager
-- **Residence:** Phillipstown
 - **Age:** 31
 - **Public email:** courtney.fraser@allianceparty.nz
 - **Website:** https://allianceparty.nz/candidates/ilam/

@@ -22,7 +22,6 @@ Severinsen grew up in rural Hawke's Bay in a single-parent home. His Labour prof
 - **Electorate:** Rangitīkei
 - **List ranking:** 66
 - **Before politics:** General Mananger Mental Health
-- **Residence:** Linton
 - **Age:** 47
 - **Public email:** karl.severinsen@labour.org.nz
 - **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/karl-severinsen/

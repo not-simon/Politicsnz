@@ -9,7 +9,6 @@
 
 - **Electorate:** Kenepuru
 - **Before politics:** Registered Social Worker
-- **Residence:** Eastern Porirua
 - **Age:** 58
 - **Public email:** jon.blackshaw@nzfirst.nz
 - **Website:** https://www.nzfirst.nz/jon_blackshaw

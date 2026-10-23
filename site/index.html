@@ -3,6 +3,7 @@
 <title>Ballot Book NZ</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="A friendly, independent guide to New Zealand's 2026 election: every party, policy, candidate and track record.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%230f766e%27/%3E%3Cpath d=%27M8 17l5 5 11-12%27 stroke=%27%23fde68a%27 stroke-width=%274%27 fill=%27none%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,600&family=JetBrains+Mono:wght@500&display=swap">
@@ -394,7 +395,7 @@ const srcLinks = v => { const a = srcOf(v); return a.length ? ` <span class="tin
 const guideParty = s => ((G().parties || []).find(p => p.slug === s) || null);
 const initials = s => (pname(s) || '?').replace(/[^A-Za-zĀ-ū ]/g, '').split(' ').filter(Boolean).slice(0, 2).map(w => w[0]).join('').toUpperCase();
 function ordinal(n) { const s = ['th', 'st', 'nd', 'rd'], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]) }
-const daysLeft = () => Math.ceil((ELECTION_DAY - Date.now()) / 864e5);
+const daysLeft = () => { const t = nzNow(); const today = Date.UTC(t.getFullYear(), t.getMonth(), t.getDate()); return Math.round((Date.UTC(2026, 10, 7) - today) / 864e5) };
 
 /* ===== MMP maths ===== */
 function sainteLague(votes, seats) { const out = {}; Object.keys(votes).forEach(p => out[p] = 0);
@@ -473,7 +474,7 @@ function openPerson(p) {
     ${p.bio ? `<h4 style="margin-top:16px">Profile</h4><p class="read">${esc(p.bio)}</p>` : ''}
     ${p.why ? `<h4 style="margin-top:16px">In their words: why they're standing</h4><p class="read">${esc(p.why)}</p>` : ''}
     ${p.has_profile ? `<p style="margin-top:16px"><button class="btn sm" data-page="${esc(p.folder)}/README.md">Read full profile</button></p>` : ''}
-    <p class="tiny muted" style="margin-top:16px">${p.photo_credit ? 'Photo: ' + esc(p.photo_credit) : ''}</p>`) }
+    <p class="tiny muted" style="margin-top:16px">${p.photo_credit ? 'Photo: ' + esc(p.photo_credit) + (p.photo_license ? ' · ' + (p.photo_license_url ? `<a href="${esc(p.photo_license_url)}" target="_blank" rel="noopener">${esc(p.photo_license)}</a>` : esc(p.photo_license)) : '') + (/wikimedia|commons/i.test(p.photo_credit) ? ', cropped' : '') : ''}${p.wikipedia && p.has_profile ? `${p.photo_credit ? ' · ' : ''}Biography adapted from <a href="${esc(p.wikipedia)}" target="_blank" rel="noopener">Wikipedia</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, and the sources it cites.` : ''} · <a href="https://github.com/not-simon/Politicsnz/issues/new?template=correction.yml" target="_blank" rel="noopener">Correct or reply</a></p>`) }
 
 /* ===== views ===== */
 const V = {};
@@ -486,7 +487,7 @@ V.home = async () => {
       <span class="count">${d > 0 ? `<b>${d}</b> days until election day, Saturday 7 November` : d === 0 ? '<b>Today</b> is election day' : 'The 2026 election was held on 7 November'}</span>
       <h1>Your two votes. <em>Your call.</em></h1>
       <p class="lede">A friendly, independent guide to New Zealand's 2026 election. Start simple with plain-English summaries, then dig into every policy, every candidate and how each party has kept its promises.</p>
-      <div class="cta"><button class="btn sun" data-go="match">Find your match</button><button class="btn" data-go="parties">Meet the parties</button></div></div>
+      <div class="cta"><button class="btn sun" data-go="match">Find your match</button><button class="btn" data-go="parties">Meet the parties</button></div>${NOT_EC}</div>
       <div class="card chamber" style="padding:16px 16px 8px">${parl ? chamberSVG(parliamentSeats(parl, 'now'), { label: 'Parliament today', animate: true }) : ''}
         <p class="tiny muted" style="text-align:center;margin-top:4px">Parliament as it stands today. <button class="btn ghost sm" data-go="parliament">Explore every Parliament since 2011</button></p></div></div>
 
@@ -518,7 +519,7 @@ V.home = async () => {
       <div class="dates">${KEY_DATES.map(([dt, t, s]) => { const D = new Date(dt + 'T23:59:00+13:00'); const [, mo, dd] = dt.split('-'); return `<div class="date card flat ${D < Date.now() ? 'past' : ''}"><div class="cal"><span>${['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'][+mo - 1]}</span><b>${+dd}</b></div><div><h4>${t}</h4><p class="small muted">${s}</p></div></div>` }).join('')}</div>
       <p class="note">Check you're enrolled and find your voting place at <b>vote.nz</b> or call 0800 36 76 56. Enrolment closes on Sunday 25 October. You need to be 18+, a citizen or permanent resident, and have lived in New Zealand for a year at some point.</p></div>
 
-    ${proj.n ? `<div class="card stack"><div class="row" style="justify-content:space-between"><div><div class="kicker">The polls</div><h2>Where things stand</h2></div><button class="btn sm" data-go="polls">Polls & forecast</button></div>
+    ${proj.n && !isElectionDay() ? `<div class="card stack"><div class="row" style="justify-content:space-between"><div><div class="kicker">The polls</div><h2>Where things stand</h2></div><button class="btn sm" data-go="polls">Polls & forecast</button></div>
       <p class="small muted">Average of the ${proj.n} latest polls (${esc(proj.range)}). Polls have margins of error of about ±3 points.</p>
       ${Object.entries(proj.pct).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= 0.8).map(([p, v]) => `<div class="row" style="flex-wrap:nowrap"><span style="width:120px;flex:none" class="small"><b>${esc(pname(p))}</b></span><div class="meter" style="flex:1"><span style="width:${v / 50 * 100}%;background:${pcolor(p)}"></span></div><span class="num small" style="width:48px;text-align:right">${fmt(v)}%</span></div>`).join('')}</div>` : ''}
   </section>`;
@@ -539,7 +540,7 @@ function startBallot() { if (S.ballotTimer) clearInterval(S.ballotTimer); if (ma
 function partyOrder() {
   const gp = (G().parties || []).map(p => p.slug);
   const known = Object.keys(S.data.parties).filter(s => gp.includes(s) || P(s).policy_count > 0);
-  const poll = projection().pct;
+  const poll = isElectionDay() ? {} : projection().pct;
   return [...new Set([...gp, ...known])].filter(s => S.data.parties[s] || guideParty(s)).sort((a, b) => (poll[b] || 0) - (poll[a] || 0) || (P(a).policy_count ? 0 : 1) - (P(b).policy_count ? 0 : 1) || pname(a).localeCompare(pname(b)));
 }
 function leaderFaces(s) { const g = guideParty(s); const ls = (g && g.leaders) || []; return ls.map(l => findPerson(l.slug, l.name)).filter(Boolean) }
@@ -550,7 +551,7 @@ function partyCard(s) {
     <div class="who">${faces.length ? `<span class="faces">${faces.slice(0, 2).map(f => faceHTML(f, s)).join('')}</span>` : `<span class="mono">${esc(initials(s))}</span>`}
       <div style="min-width:0"><h3>${esc(g.name || pp.name)}</h3><div class="tiny muted">${esc((g.leaders || []).map(l => l.name).join(' & ') || '')}</div></div></div>
     <p class="small">${esc(g.tagline || pp.intro || '').slice(0, 220)}</p>
-    <div class="row">${seats ? `<span class="badge in">${seats} MPs</span>` : '<span class="badge">Not in Parliament</span>'}${poll ? `<span class="badge">Polling ${fmt(poll)}%</span>` : ''}${pp.policy_count ? `<span class="badge">${pp.policy_count} policies</span>` : ''}</div></button>`;
+    <div class="row">${seats ? `<span class="badge in">${seats} MPs</span>` : '<span class="badge">Not in Parliament</span>'}${poll && !isElectionDay() ? `<span class="badge">Polling ${fmt(poll)}%</span>` : ''}${pp.policy_count ? `<span class="badge">${pp.policy_count} policies</span>` : ''}</div></button>`;
 }
 
 V.parties = async () => {
@@ -559,7 +560,7 @@ V.parties = async () => {
   $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Election 2026</div><h2>Meet the parties</h2>
     <p class="lede">Every party on the 2026 party-vote ballot. Tap a party for a plain summary, then go as deep as you like: every policy, their people and their record.</p></div>
     <div class="grid">${order.map(partyCard).join('')}</div>
-    <p class="small muted">Sorted by current polling. Former parties from 2011 to 2023 are in <button class="btn ghost sm" data-page="parties/MINOR_PARTIES.md">the minor parties overview</button>.</p></section>`;
+    <p class="small muted">${isElectionDay() ? 'Sorted alphabetically today.' : 'Sorted by current polling.'} Former parties from 2011 to 2023 are in <button class="btn ghost sm" data-page="parties/MINOR_PARTIES.md">the minor parties overview</button>.</p></section>`;
 };
 
 V.party = async (s, tab = 'glance') => {
@@ -574,7 +575,7 @@ V.party = async (s, tab = 'glance') => {
     <div class="party-hero" style="--pc:${pcolor(s)}"><div class="row" style="gap:16px;flex-wrap:nowrap">${faces.length ? `<span class="faces">${faces.slice(0, 2).map(f => faceHTML(f, s, 'face" style="width:72px;height:72px;--pc:' + pcolor(s))).join('')}</span>` : `<span class="mono" style="width:72px;height:72px;font-size:24px">${esc(initials(s))}</span>`}
       <div style="min-width:0"><div class="kicker" style="color:var(--text)">${esc(T(g.position))}</div><h1 style="font-size:clamp(30px,5vw,46px)">${esc(g.name || pp.name)}</h1><div class="muted">${esc((g.leaders || []).map(l => l.name).join(' & '))}${g.founded ? ' · founded ' + esc(g.founded) : ''}</div></div></div>
       ${g.tagline ? `<p class="lede" style="color:var(--text)">${esc(g.tagline)}</p>` : ''}
-      <div class="stats"><div class="stat"><b>${seats}</b><span>MPs now</span></div>${poll ? `<div class="stat"><b>${fmt(poll)}%</b><span>poll average</span></div>` : ''}<div class="stat"><b>${pols.length}</b><span>2026 policies</span></div>${prom.length ? `<div class="stat"><b>${prom.length}</b><span>promises checked</span></div>` : ''}</div></div>
+      <div class="stats"><div class="stat"><b>${seats}</b><span>MPs now</span></div>${poll && !isElectionDay() ? `<div class="stat"><b>${fmt(poll)}%</b><span>poll average</span></div>` : ''}<div class="stat"><b>${pols.length}</b><span>2026 policies</span></div>${prom.length ? `<div class="stat"><b>${prom.length}</b><span>promises checked</span></div>` : ''}</div></div>
     <div class="tabs" role="tablist" id="ptabs">${tabs.map(([k, l]) => `<button role="tab" data-t="${k}" aria-selected="${k === tab}">${l}</button>`).join('')}</div>
     <div id="pbody"></div></section>`;
   const body = $('#pbody');
@@ -589,7 +590,7 @@ V.party = async (s, tab = 'glance') => {
         ${recordSummary(s)}
         ${T(g.costings) ? `<div class="card stack"><h3>Are the numbers costed?</h3><p class="small">${esc(T(g.costings))}${srcLinks(g.costings)}</p></div>` : ''}
         ${partyResultsMini(s)}
-        <div class="card stack"><h3>Go deeper</h3><div class="row">${pp.has_readme ? `<button class="btn sm" data-page="parties/${s}/README.md">Full party profile</button>` : ''}${pp.has_track_record ? `<button class="btn sm" data-page="parties/${s}/track-record.md">Full track record</button>` : ''}<button class="btn sm" data-page="parties/${s}/policies/README.md">Policy index</button>${g.website ? `<a class="btn sm" href="${esc(g.website)}" target="_blank" rel="noopener">Party website</a>` : ''}</div></div>
+        <div class="card stack"><h3>Go deeper</h3><div class="row">${pp.has_readme ? `<button class="btn sm" data-page="parties/${s}/README.md">Full party profile</button>` : ''}${pp.has_track_record ? `<button class="btn sm" data-page="parties/${s}/track-record.md">Full track record</button>` : ''}<button class="btn sm" data-page="parties/${s}/policies/README.md">Policy index</button><button class="btn sm" data-go="newsroom-${s}">Newsroom &amp; follow</button>${g.website ? `<a class="btn sm" href="${esc(g.website)}" target="_blank" rel="noopener">Party website</a>` : ''}</div></div>
         ${(g.sources || []).length ? `<details class="tiny muted"><summary>Sources for this summary</summary><ul>${g.sources.map(u => `<li><a href="${esc(typeof u === 'string' ? u : u.url)}" target="_blank" rel="noopener">${esc(typeof u === 'string' ? u : (u.title || u.url))}</a></li>`).join('')}</ul></details>` : ''}</div></div>`;
     if (t === 'policies') policyBrowser(body, [s]);
     if (t === 'record') promiseList(body, s);
@@ -701,15 +702,20 @@ async function showIssuePolicies(p, ids) {
 function nzNow() { return new Date(new Date().toLocaleString('en-US', { timeZone: 'Pacific/Auckland' })) }
 function electionPhase() { const t = nzNow(); const d = t.getFullYear() * 10000 + (t.getMonth() + 1) * 100 + t.getDate();
   if (d < 20261026) return 'enrol'; if (d < 20261107) return 'advance'; if (d === 20261107) return t.getHours() < 19 ? 'electionday' : 'results'; return 'after' }
-const ELECTION_DAY_BLOCK = 'Today is election day. By law, material that could influence how people vote can’t be published until voting closes at 7pm, so match results, polls and the forecast are hidden until then. Voting places are open 9am–7pm.';
+const ELECTION_DAY_BLOCK = 'Today is election day. By law, material that could influence how people vote can’t be published until voting closes at 7pm, so the match quiz, swipe, compass, game, polls, forecast and party newsroom are hidden until then. Voting places are open 9am–7pm.';
 function renderBanner() { const ph = electionPhase(); let el = $('#banner'); if (!el) { el = document.createElement('div'); el.id = 'banner'; el.className = 'banner'; document.querySelector('header.top').after(el) }
   const key = 'banner-' + ph; if (store.get(key) === 'x') { el.hidden = true; return }
   const msg = { enrol: 'Enrolment closes <b>midnight Sunday 25 October</b>. There is no enrolling on election day this year. <a href="https://vote.nz" target="_blank" rel="noopener">Check or update your enrolment at vote.nz</a>.',
     advance: 'Voting is open. Vote early at any voting place until 6 November, or on election day Saturday 7 November (9am–7pm). <a href="https://vote.nz" target="_blank" rel="noopener">Find a voting place</a>.',
-    electionday: 'Election day: voting places are open 9am–7pm. Polls, forecasts and match results are hidden until 7pm.',
+    electionday: 'Election day: voting places are open 9am–7pm. Polls, forecasts, quiz results and the game are hidden until 7pm.',
     results: 'Voting has closed. Preliminary results are being counted; official results on 27 November.', after: '' }[ph];
   if (!msg) { el.hidden = true; return } el.hidden = false; el.innerHTML = `<div class="wrap"><span>${msg}</span><button aria-label="Dismiss" id="banner-x">×</button></div>`; $('#banner-x').onclick = () => { store.set(key, 'x'); el.hidden = true } }
-function blockedToday(view) { return electionPhase() === 'electionday' && ['match', 'compass', 'swipe', 'swipe-tally', 'polls', 'trends'].includes(view) }
+function blockedToday(view) { return electionPhase() === 'electionday' && ['match', 'compass', 'swipe', 'swipe-tally', 'polls', 'trends', 'game', 'newsroom'].includes(view) }
+const BLOCKED_PAGES = /^(REPORT\.md|elections\/2026\.md|elections\/trends\.md|guide\/parties\.md|guide\/forecast-method\.md|guide\/quiz-method\.md|guide\/quiz-research\.md|guide\/compass-method\.md)$/;
+function blockedPage(k) { return electionPhase() === 'electionday' && BLOCKED_PAGES.test(k) }
+const isElectionDay = () => electionPhase() === 'electionday';
+const RESULT_DISCLAIMER = `<p class="small muted" style="border-top:1px solid var(--line);padding-top:10px">This shows how closely your answers line up with each party's published positions on the questions you answered. It is information, not advice: it does not take account of candidates, coalitions, trust, or the issues we did not ask about, and it is not a recommendation about how to vote. Every party is listed. Read the party pages and the original policy texts before deciding. Ballot Book NZ is independent and not affiliated with any party, candidate or the Electoral Commission.</p>`;
+const NOT_EC = `<p class="tiny muted">Independent and non-partisan. Not the Electoral Commission: for official information on enrolling, voting places and hours, go to <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or call 0800 36 76 56.</p>`;
 
 /* ----- find my electorate from location (device-side only) ----- */
 function pointInRing(pt, ring) { let inside = false; const [x, y] = pt; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) { const [xi, yi] = ring[i], [xj, yj] = ring[j]; if (((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi)) inside = !inside } return inside }
@@ -719,7 +725,7 @@ async function locateElectorate() { if (!navigator.geolocation) throw new Error(
   let { longitude: lon, latitude: lat } = pos.coords; if (lon < 0) lon += 360;
   await loadGeo(2025); const hit = t => (S.geo[`${t}-2025`].features || []).find(f => featureContains(f, lon, lat));
   return { general: hit('general'), maori: hit('maori'), accuracy: pos.coords.accuracy } }
-function locateBlock(id) { return `<div class="card locate" id="${id}"><div class="row" style="justify-content:space-between"><div><h3>Where do you live?</h3><p class="small muted">Use your location to find your electorate and the people standing there. The check happens on your device; your location is not sent or stored.</p></div><button class="btn primary sm" data-locate="${id}">Use my location</button></div><div class="found" id="${id}-out"></div></div>` }
+function locateBlock(id) { return `<div class="card locate" id="${id}"><div class="row" style="justify-content:space-between"><div><h3>Where do you live?</h3><p class="small muted">Use your location to find your electorate and the people standing there. Your browser will ask for permission. Your location is checked against the electorate map on this device only; it is not stored or sent anywhere. You can also just choose your electorate from the list.</p></div><button class="btn primary sm" data-locate="${id}">Use my location</button></div><div class="found" id="${id}-out"></div></div>` }
 async function runLocate(id) { const out = $('#' + id + '-out'); out.innerHTML = '<span class="muted small">Finding your electorate…</span>';
   try { const r = await locateElectorate(); if (!r.general && !r.maori) { out.innerHTML = '<span class="small">That location is outside New Zealand’s electorates.</span>'; return }
     const E = S.data.electorates || []; const link = f => { const e = E.find(x => slugify(x.slug) === f.properties.slug || slugify(x.name) === f.properties.slug); return e ? `<button class="btn sm" data-go="electorate-${esc(e.slug)}">${esc(f.properties.name)} · ${(e.candidates || []).length} candidates</button>` : `<b>${esc(f.properties.name)}</b>` };
@@ -789,7 +795,7 @@ V.compass = () => {
     const parties = partyCompassPoints(C, CP, source); const answered = Object.keys(st.answers).length;
     const word = (v, lo, hi) => v == null ? '' : Math.abs(v) < 2 ? 'near the centre' : (v < 0 ? lo : hi) + (Math.abs(v) >= 6 ? ' (strongly)' : '');
     $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:860px"><div class="stack"><div class="kicker">Your results · ${answered} of ${items.length} answered</div><h2>Where you sit</h2>
-      <p class="muted">${me.x ? `Economically you lean <b>${word(me.x.score, 'left', 'right')}</b> (${fmt(me.x.score)} on a −10 to +10 scale). ` : 'Answer at least 6 economic questions to place yourself on the economic axis. '}${me.y ? `Socially you lean <b>${word(me.y.score, 'libertarian/pluralist', 'authoritarian/traditional')}</b> (${fmt(me.y.score)}). ` : 'Answer at least 8 social questions for the social axis. '}${me.pop ? `On populism: <b>${word(me.pop.score, 'pluralist', 'populist')}</b> (${fmt(me.pop.score)}).` : ''}</p></div>
+      <p class="muted">${me.x ? `Economically you lean <b>${word(me.x.score, 'left', 'right')}</b> (${fmt(me.x.score)} on a −10 to +10 scale). ` : 'Answer at least 6 economic questions to place yourself on the economic axis. '}${me.y ? `Socially you lean <b>${word(me.y.score, 'libertarian/pluralist', 'authoritarian/traditional')}</b> (${fmt(me.y.score)}). ` : 'Answer at least 8 social questions for the social axis. '}${me.pop ? `On populism: <b>${word(me.pop.score, 'pluralist', 'populist')}</b> (${fmt(me.pop.score)}).` : ''}</p>${RESULT_DISCLAIMER}</div>
       <div class="card compass stack"><div class="row" style="justify-content:space-between"><span class="seg"><button data-src="coded" aria-pressed="${source === 'coded'}">Parties from their 2026 policies & votes</button><button data-src="published" aria-pressed="${source === 'published'}">Parties from expert surveys (2019)</button></span></div>
         ${compassPlot(me, parties)}<p class="tiny muted">The shaded box around "You" is the uncertainty from the number of questions answered. ${source === 'coded' ? 'Party points: each party "answered" the same questions from its manifesto, policy documents, votes and leaders’ statements, with evidence for every cell; parties with too few evidenced answers on an axis are not shown.' : 'Party points: Global Party Survey 2019 (12 experts rated the five parliamentary parties of 2019; smaller parties and Te Pāti Māori were not rated), rescaled to these axes.'}</p></div>
       ${me.pop || parties.some(p => p.pop != null) ? `<div class="card stack"><h3>Populism <span class="tiny muted">(secondary axis; higher = more anti-establishment)</span></h3>${me.pop ? `<div class="row" style="flex-wrap:nowrap"><span style="width:110px" class="small"><b>You</b></span><div class="meter" style="flex:1"><span style="width:${(me.pop.score + 10) / 20 * 100}%;background:var(--sun)"></span></div><span class="num small" style="width:48px;text-align:right">${fmt(me.pop.score)}</span></div>` : ''}${parties.filter(p => p.pop != null).sort((a, b) => b.pop - a.pop).map(p => `<div class="row" style="flex-wrap:nowrap"><span style="width:110px" class="small">${esc(pname(p.slug))}</span><div class="meter" style="flex:1"><span style="width:${(p.pop + 10) / 20 * 100}%;background:${pcolor(p.slug)}"></span></div><span class="num small" style="width:48px;text-align:right">${fmt(p.pop)}</span></div>`).join('')}</div>` : ''}
@@ -1004,7 +1010,7 @@ V['swipe-tally'] = async () => {
   const liked = Object.entries(done).filter(([, d]) => d.v === 'agree').map(([id]) => byId[id]).filter(Boolean);
   $('#main').innerHTML = `<section class="view"><div class="swipe-wrap" style="max-width:760px">
     <button class="btn ghost sm" data-go="swipe" style="justify-self:start">← Keep swiping</button>
-    <div><div class="kicker">Your tally</div><h2>You agreed with ${agreed} of ${total} policies</h2><p class="muted">How often you agreed with each party's policies among the cards you've seen. It's a reflection of the cards you happened to get, not a full comparison; the Find your match quiz is the more careful tool.</p></div>
+    <div><div class="kicker">Your tally</div><h2>You agreed with ${agreed} of ${total} policies</h2><p class="muted">How often you agreed with each party's policies among the cards you've seen. It's a reflection of the cards you happened to get, not a full comparison; the Find your match quiz is the more careful tool.</p>${RESULT_DISCLAIMER}</div>
     ${rows.length ? `<div class="card stack">${rows.map(r => `<div class="row" style="flex-wrap:nowrap"><span style="width:130px;flex:none" class="small"><b>${esc(pname(r.p))}</b></span><div class="meter" style="flex:1;height:14px"><span style="width:${r.agree / r.n * 100}%;background:${pcolor(r.p)}"></span></div><span class="num small" style="width:140px;text-align:right;white-space:nowrap">${r.agree}/${r.n} · ${Math.round(r.agree / r.n * 100)}%${r.n < 3 ? ' <span class="tiny muted">(few)</span>' : ''}</span></div>`).join('')}</div>` : '<p class="empty">No cards swiped yet.</p>'}
     ${liked.length ? `<div class="stack"><h3>Policies you agreed with (${liked.length})</h3><div class="stack" style="gap:8px">${liked.slice().reverse().map(c => `<div class="pol"><div class="head"><span class="dot" style="background:${pcolor(c.party)};margin-top:6px"></span><div><div class="st" style="font-size:15px">${esc(c.statement)}</div><div class="tiny muted">${esc(pname(c.party))} · ${esc(TOPIC_NAMES[c.topic] || 'Other')}</div></div></div>${c.doc ? `<div class="srcs"><button class="btn sm" data-doc="${esc(c.party)}|${esc(c.doc)}">Read the full policy</button></div>` : ''}</div>`).join('')}</div></div>` : ''}
     <div class="row"><button class="btn" id="sw-reset">Start over</button></div></div></section>`;
@@ -1055,7 +1061,7 @@ V.match = () => {
         <div style="min-width:0"><h3>${esc(pname(x.slug))}</h3><div class="meter" style="margin-top:6px"><span style="width:${x.match * 100}%;background:${pcolor(x.slug)}"></span></div><div class="tiny muted">Based on ${x.n} of your ${M} answers${band >= .02 ? ` · ±${Math.round(band * 100)} if low-confidence positions are set aside` : ''}${x.inRanking ? '' : ' · <span class="badge">limited information</span>'}</div></div>
         <div class="stack" style="justify-items:end;gap:4px"><span class="pct">${Math.round(x.match * 100)}%</span><button class="btn sm" data-why="${x.slug}">Why</button></div></div>` };
     $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:840px"><div class="stack"><div class="kicker">Your results · ${M} of ${Q.statements.length} answered</div><h2>How closely each party matches you</h2>
-      <p class="muted">Agreement is measured only on statements where a party has an evidenced position, weighted by how much each mattered to you, and pulled toward 50% by four "neutral" phantom statements so thin records can't win by luck. Differences of a few points are not meaningful. This is information, not a recommendation.</p></div>
+      <p class="muted">Agreement is measured only on statements where a party has an evidenced position, weighted by how much each mattered to you, and pulled toward 50% by four "neutral" phantom statements so thin records can't win by luck. Differences of a few points are not meaningful.</p>${RESULT_DISCLAIMER}</div>
       ${M ? (main.length ? main.map(row).join('') : '<p class="empty">Answer at least 10 statements to rank the parties.</p>') : '<p class="empty">Answer a few statements first.</p>'}
       ${few.length && M ? `<details class="card flat"><summary style="cursor:pointer"><b>${few.length} parties with few public positions</b> <span class="small muted">· matched on fewer than ${Math.max(10, Math.ceil(0.5 * M))} of your answers, so not ranked</span></summary><div class="stack" style="margin-top:12px">${few.map(row).join('')}</div></details>` : ''}
       ${M ? `<div class="card stack"><h3>Where you sit, dimension by dimension</h3><p class="small muted">Your average answer on each group of statements, with the parties' coded positions. Left and right here are the two poles of each dimension, not left and right wing.</p>
@@ -1076,17 +1082,17 @@ V.electorate = async slug => {
   await loadPeople(); const E = (S.data.electorates || []).slice().sort((a, b) => a.name.localeCompare(b.name));
   const sel = slug || store.get('myElectorate') || '';
   $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Your local vote</div><h2>Who's standing where you live</h2>
-    <p class="lede">Choose your electorate to meet the candidates. Not sure which one you're in? Look up your address at vote.nz.</p></div>
+    <p class="lede">Choose your electorate to meet the candidates. Not sure which one you're in? Look up your address at vote.nz.</p>${NOT_EC}</div>
     ${locateBlock('loc-el')}
     <div class="toolbar"><select id="esel" aria-label="Electorate"><option value="">Choose your electorate…</option>
       ${['general', 'maori'].map(t => `<optgroup label="${t === 'maori' ? 'Māori electorates' : 'General electorates'}">${E.filter(e => (e.type || 'general') === t).map(e => `<option value="${esc(e.slug)}" ${e.slug === sel ? 'selected' : ''}>${esc(e.name)}</option>`).join('')}</optgroup>`).join('')}</select></div>
     <div id="ebody"></div></section>`;
   const draw = () => { const v = $('#esel').value; store.set('myElectorate', v); const e = E.find(x => x.slug === v); const b = $('#ebody');
-    if (!e) { b.innerHTML = E.length ? `<div class="grid">${E.filter(x => x.marginal).slice(0, 9).map(x => `<button class="starter" data-elec="${esc(x.slug)}"><div class="kicker">Battleground</div><h3>${esc(x.name)}</h3><p class="small muted">${esc(x.contest_notes || '')}</p></button>`).join('')}</div>` : '<p class="empty">Electorate guides are still being built.</p>'; return }
+    if (!e) { b.innerHTML = E.length ? (isElectionDay() ? `<div class="grid">${E.map(x => `<button class="starter" style="padding:14px" data-elec="${esc(x.slug)}"><h4>${esc(x.name)}</h4></button>`).join('')}</div>` : `<div class="grid">${E.filter(x => x.marginal).slice(0, 9).map(x => `<button class="starter" data-elec="${esc(x.slug)}"><div class="kicker">Battleground</div><h3>${esc(x.name)}</h3><p class="small muted">${esc(x.contest_notes || '')}</p></button>`).join('')}</div>`) : '<p class="empty">Electorate guides are still being built.</p>'; return }
     const r = e.result_2023 || {};
     b.innerHTML = `<div class="split"><div class="stack" style="gap:16px"><div class="card stack"><h2>${esc(e.name)}</h2>${e.description ? `<p class="read">${esc(e.description)}</p><p class="tiny muted">Description from policy.nz.</p>` : ''}
         ${(e.description_fact_check || []).length ? `<details class="small"><summary style="cursor:pointer;color:var(--primary);font-weight:700">Fact-check notes on this description (${e.description_fact_check.length})</summary><ul>${e.description_fact_check.map(f => `<li>${esc(typeof f === 'string' ? f : (f.note || f.correction || f.text || JSON.stringify(f)))}</li>`).join('')}</ul></details>` : ''}
-        ${e.contest_notes ? `<p class="note">${esc(e.contest_notes)}</p>` : ''}</div>
+        ${e.contest_notes && !isElectionDay() ? `<p class="note">${esc(e.contest_notes)}</p>` : ''}</div>
       <div class="stack"><h3>${(e.candidates || []).length} candidates</h3><div class="people">${(e.candidates || []).map(c => { const p = findPerson(c.slug, c.name) || { name: c.name, party: c.party };
         return `<button class="person" data-person="${esc(c.slug)}">${faceHTML(p, c.party)}<span class="nm">${esc(c.name)}</span><span class="row tiny muted" style="gap:5px;justify-content:center"><span class="dot" style="background:${pcolor(c.party)}"></span>${esc(pname(c.party))}</span>${isMP(p.status) ? '<span class="status mp">Sitting MP</span>' : ''}</button>` }).join('')}</div></div></div>
       <div class="stack" style="gap:16px">${e.sitting_mp ? `<div class="card stack"><h3>Current MP</h3><p>${esc(e.sitting_mp.name)} (${esc(pname(e.sitting_mp.party))})${e.mp_standing_again === false ? ' is not standing again.' : ''}</p></div>` : ''}
@@ -1319,6 +1325,45 @@ V.vote = () => { const H = G().howtovote || {}; const secs = H.sections || []; c
 
 /* ----- Whose policy? pass-the-phone game ----- */
 const GAME_PARTIES = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'];
+/* ----- party newsroom + follow directory (headline, date, link only) ----- */
+const ACCT_LABEL = { website: 'Website', facebook: 'Facebook', instagram: 'Instagram', x: 'X', tiktok: 'TikTok', youtube: 'YouTube', linkedin: 'LinkedIn' };
+function acctLinks(a, extra = []) { const out = Object.entries(a || {}).filter(([, u]) => u).map(([k, u]) => `<a class="btn sm ghost" href="${esc(u)}" target="_blank" rel="noopener nofollow">${ACCT_LABEL[k] || k}</a>`);
+  for (const e of extra || []) out.push(`<a class="btn sm ghost" href="${esc(e.url || e)}" target="_blank" rel="noopener nofollow">${esc(e.label || e.kind || 'Other')}</a>`); return out.join('') }
+V.newsroom = async party => {
+  if (!S.news) S.news = await getJSON('data/newsroom.json').catch(() => null);
+  const N = S.news; if (!N || !N.items) { $('#main').innerHTML = '<section class="view"><p class="empty">The newsroom feed isn’t available in this build.</p></section>'; return }
+  const parties = partyOrder().filter(p => N.parties[p] || N.follow_parties[p]);
+  const sel = party && (N.parties[party] || N.follow_parties[party]) ? party : (S.newsSel || 'all'); S.newsSel = sel;
+  const fmtD = d => { const t = new Date(d); return isNaN(t) ? '' : t.toLocaleDateString('en-NZ', { day: 'numeric', month: 'short' }) };
+  const items = N.items.filter(i => i.party !== 'government').sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  const gov = N.items.filter(i => i.party === 'government').sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  const row = i => `<a class="pol" style="text-decoration:none;color:inherit" href="${esc(i.url)}" target="_blank" rel="noopener nofollow"><div class="head"><span class="dot" style="background:${pcolor(i.party)};margin-top:6px"></span><div><div class="st" style="font-size:15px">${esc(i.title)}</div><div class="tiny muted">${esc(i.party === 'government' ? 'Minister’s release' : pname(i.party))} · ${fmtD(i.date)} · via ${esc(i.source || '')} ↗</div></div></div></a>`;
+  let feed;
+  if (sel === 'all') { // equal slots per party first (latest 3 each), then everything newest-first
+    const top = [], seen = new Set();
+    for (const p of parties) for (const i of items.filter(x => x.party === p).slice(0, 3)) { top.push(i); seen.add(i.url) }
+    top.sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    const rest = items.filter(i => !seen.has(i.url));
+    const quiet = parties.filter(p => !items.some(i => i.party === p) && N.parties[p]);
+    feed = `<div class="stack" style="gap:8px">${top.map(row).join('')}</div>
+      ${quiet.length ? `<p class="small muted">No release in the last ${N.window_days || 60} days from: ${quiet.map(p => N.parties[p].newsroom_url ? `<a href="${esc(N.parties[p].newsroom_url)}" target="_blank" rel="noopener nofollow">${esc(pname(p))}</a>` : esc(pname(p))).join(', ')} (links go to their own newsrooms).</p>` : ''}
+      ${rest.length ? `<details class="card flat"><summary style="cursor:pointer"><b>Everything else, newest first</b> <span class="small muted">· ${rest.length} more</span></summary><div class="stack" style="gap:8px;margin-top:12px">${rest.map(row).join('')}</div></details>` : ''}`;
+  } else { const mine = items.filter(i => i.party === sel); const pm = N.parties[sel] || {};
+    feed = mine.length ? `<div class="stack" style="gap:8px">${mine.map(row).join('')}</div>` : `<p class="empty">No release from ${esc(pname(sel))} in the last ${N.window_days || 60} days in the feeds we read.${pm.newsroom_url ? ` <a href="${esc(pm.newsroom_url)}" target="_blank" rel="noopener nofollow">Their own newsroom ↗</a>` : ''}</p>` }
+  const fp = sel !== 'all' ? N.follow_parties[sel] : null;
+  const people = sel !== 'all' ? (N.follow_people || []).filter(p => p.party === sel) : [];
+  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">In their own words</div><h2>Party newsroom</h2>
+    <p class="lede">The latest releases from each party, as the parties wrote them. Headlines link to the original. Nothing here is fact-checked by us; for what the parties have actually done, see the <button class="btn ghost sm" data-go="promises">promise tracker</button>.</p>
+    <p class="tiny muted">Updated ${esc(String(N.updated || '').slice(0, 16).replace('T', ' '))}. Sources: party releases as published by the parties on Scoop and the Beehive; links go to the original pages. Equal space for every party first, then everything newest-first.</p></div>
+    <div class="toolbar"><div class="chips">${[['all', 'All parties'], ...parties.map(p => [p, pname(p)])].map(([k, l]) => `<button class="chip" data-news="${esc(k)}" aria-pressed="${k === sel}" ${k !== 'all' ? `style="--pc:${pcolor(k)}"` : ''}>${esc(l)}</button>`).join('')}</div></div>
+    ${feed}
+    ${sel !== 'all' ? `<div class="card stack"><h3>Follow ${esc(pname(sel))}</h3>${fp ? `<div class="row">${acctLinks(fp.accounts)}${fp.newsroom_url ? `<a class="btn sm" href="${esc(fp.newsroom_url)}" target="_blank" rel="noopener nofollow">Newsroom</a>` : ''}</div>${Object.values(fp.verified || {}).some(v => v === false) ? '<p class="tiny muted">Some account links could not be checked against the party’s own website (it blocks automated access) and come from Wikidata.</p>' : ''}` : '<p class="small muted">No account links recorded.</p>'}
+      ${people.length ? `<details><summary style="cursor:pointer"><b>Candidates and MPs (${people.length})</b> <span class="small muted">· public accounts they listed themselves</span></summary><div class="stack" style="gap:6px;margin-top:12px">${people.sort((a, b) => a.name.localeCompare(b.name)).map(p => { const links = acctLinks(p.accounts, p.other) + (p.email ? `<a class="btn sm ghost" href="mailto:${esc(p.email)}">Email</a>` : ''); return `<div class="row" style="justify-content:space-between;gap:8px"><span class="small"><button class="lnk" data-person="${esc(p.folder)}">${esc(p.name)}</button>${p.electorate_2026 ? ` <span class="tiny muted">· ${esc(p.electorate_2026)}</span>` : ''}</span><span class="row" style="gap:4px">${links || '<span class="tiny muted">no public accounts listed</span>'}</span></div>` }).join('')}</div></details>` : ''}</div>` : ''}
+    ${gov.length && (sel === 'all') ? `<details class="card flat"><summary style="cursor:pointer"><b>Ministers’ releases (Beehive)</b> <span class="small muted">· ${gov.length}, official government announcements, not party releases</span></summary><div class="stack" style="gap:8px;margin-top:12px">${gov.slice(0, 30).map(row).join('')}</div></details>` : ''}
+    <p class="tiny muted">Account links are as the parties and candidates published them (party websites, candidates’ policy.nz entries, Wikidata where a site blocks access) and are not endorsements. Personal email addresses are not shown. Ask for a correction via the repository.</p></section>`;
+  $('#main').querySelectorAll('[data-news]').forEach(b => b.onclick = () => { S.newsSel = b.dataset.news; route(b.dataset.news === 'all' ? 'newsroom' : 'newsroom-' + b.dataset.news) });
+};
+
 V.game = async () => {
   if (!S.swipe) S.swipe = await getJSON('data/swipe.json').catch(() => []);
   await loadPeople();
@@ -1358,15 +1403,18 @@ V.game = async () => {
 V.trust = () => { $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">About this guide</div><h2>Why trust this?</h2>
   <p class="lede">Ballot Book is an independent, non-partisan guide. It doesn't tell you how to vote. Here is who made it, how it's funded, the rules it follows and how to check or correct anything in it.</p></div>
   <div class="grid wide">
-    <div class="card stack"><h3>Who and why</h3><p class="small">Made by a New Zealand voter, with AI research assistance, as a public-interest project to help people choose between parties on substance. It is not affiliated with, funded by, or endorsed by any party, candidate, union, lobby group, media company or government body.</p></div>
-    <div class="card stack"><h3>Money</h3><p class="small">No funding, no advertising, no sponsorship, no paid placement. The site is free, open source and carries no tracking or analytics. Nothing you do here is sent anywhere.</p></div>
+    <div class="card stack" id="contact"><h3>Who we are and how to contact us</h3><p class="small"><b>Ballot Book NZ</b> is published by an unincorporated group of volunteers led by the repository owner (GitHub: <a href="https://github.com/not-simon" target="_blank" rel="noopener">not-simon</a>), with AI research assistance, as a public-interest project to help people choose between parties on substance. Contact: <a href="https://github.com/not-simon/Politicsnz/issues/new/choose" target="_blank" rel="noopener">open an issue</a> on the public repository at github.com/not-simon/Politicsnz. We are not affiliated with any political party, candidate or the Electoral Commission. Official information about enrolling and voting is at <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a>.</p></div>
+    <div class="card stack"><h3>Money</h3><p class="small">No funding, no advertising, no sponsorship, no paid placement. The site is free, open source and carries no tracking or analytics. Nothing you do here is sent to us.</p></div>
+    <div class="card stack" id="privacy"><h3>Privacy</h3><p class="small">Ballot Book NZ has no accounts, no server of its own, no cookies and no analytics. Your quiz answers, your chosen electorate and your display settings are stored only in your own browser (localStorage) and are never sent to us; clear your browser data, or use the reset buttons, to remove them. If you use "find my electorate", your browser asks your permission and your location is compared with electorate boundaries on your device only; it is not stored or sent. The site is hosted on GitHub Pages and loads fonts from Google Fonts and two code libraries from cdnjs (Cloudflare); those services receive your IP address when pages load, under their own privacy policies. Information about politicians and candidates comes from public sources (Parliament, party websites, policy.nz, Wikipedia, news reports). If you are a candidate or MP and want something corrected or removed, or have a question about privacy, <a href="https://github.com/not-simon/Politicsnz/issues/new/choose" target="_blank" rel="noopener">contact us</a>.</p></div>
+    <div class="card stack" id="takedown"><h3>Third-party material and takedowns</h3><p class="small">Party documents, photographs and other material on this site belong to their owners and are reproduced for public reference with attribution and a link to the original. If you own something here and want it removed, corrected or attributed differently, <a href="https://github.com/not-simon/Politicsnz/issues/new/choose" target="_blank" rel="noopener">open an issue</a>; we act within 24 hours during the campaign.</p><button class="btn sm" data-page="NOTICE.md" style="justify-self:start">Full attribution notice</button></div>
+    <div class="card stack" id="reply"><h3>Right of reply and corrections</h3><p class="small">If you are named on this site and believe something is wrong or unfair, tell us within five working days of noticing it and we will check it against the published record, correct it or remove it, and publish your reply alongside the item if you want one. Items about people are limited to matters on the public record in reputable sources, relevant to public office, with the outcome and the person's own response included.</p></div>
     <div class="card stack"><h3>Editorial rules</h3><p class="small">Describe, don't judge. Every party held to the same standard. Every factual claim dated and linked to a source. Contested topics described in each side's own terms. Party documents reproduced exactly as published.</p><button class="btn sm" data-page="docs/EDITORIAL_STANDARDS.md" style="justify-self:start">Read the standards</button></div>
     <div class="card stack"><h3>Independent checks</h3><p class="small">All voter-facing summaries were fact-checked and reviewed for neutrality by a reviewer working separately from the writers: every number traced to its source, loaded wording removed, criticism attributed. Every change is logged publicly.</p><button class="btn sm" data-page="docs/REVIEW_LOG.md" style="justify-self:start">Read the review log</button></div>
     <div class="card stack"><h3>How the tools work</h3><p class="small">Each tool has a published method and its limits are stated on the page.</p><div class="row"><button class="btn sm" data-page="guide/quiz-research.md">Match quiz</button><button class="btn sm" data-page="guide/compass-method.md">Compass</button><button class="btn sm" data-page="guide/forecast-method.md">Forecast</button></div></div>
     <div class="card stack"><h3>Sources</h3><p class="small">Party websites and policy documents; the Electoral Commission; Parliament and the Beehive; Wikipedia for election tables and biographies (with the primary sources it cites); policy.nz for 2026 candidate and policy data; the pollsters' own releases; Stats NZ for boundaries; and news reporting from RNZ, 1News, Stuff, the NZ Herald, The Spinoff, interest.co.nz and others. Each page links its sources.</p></div>
     <div class="card stack"><h3>What this guide is not</h3><p class="small">Not a recommendation. The quiz, swipe and compass show agreement on the questions asked, nothing more. The forecast is a model of polling with stated error, not a prediction of certainty. Party positions change during a campaign; everything carries an "as of" date.</p></div>
     <div class="card stack"><h3>Spotted an error?</h3><p class="small">Every page is a plain file in a public repository. Open a correction with a source and it will be checked against the party's own published text.</p><div class="row"><a class="btn sm" href="https://github.com/not-simon/Politicsnz/issues/new?template=correction.yml" target="_blank" rel="noopener">Report a correction</a><a class="btn sm ghost" href="https://github.com/not-simon/Politicsnz" target="_blank" rel="noopener">Source and data</a></div></div>
-    <div class="card stack"><h3>Licences</h3><p class="small">Code and original analysis: MIT licence. Party documents, photos and other third-party material remain their owners' and are reproduced for reference with attribution; see the NOTICE file. Electorate boundaries: Stats NZ, CC BY 4.0.</p><button class="btn sm" data-page="NOTICE.md" style="justify-self:start">Attribution notice</button></div>
+    <div class="card stack"><h3>Licences</h3><p class="small">Code: MIT licence. The project's own text and data (summaries, track records, profiles, election tables): Creative Commons Attribution-ShareAlike 4.0, the same licence as the Wikipedia material parts of it are adapted from. Party documents, photos and other third-party material remain their owners' and are reproduced for reference with attribution; see the NOTICE file. Electorate boundaries: this work is based on Stats NZ's data, which are licensed by Stats NZ for reuse under the Creative Commons Attribution 4.0 International licence; simplified for web display.</p><button class="btn sm" data-page="NOTICE.md" style="justify-self:start">Attribution notice</button></div>
   </div></section>` };
 
 /* ----- more / learn ----- */
@@ -1383,7 +1431,8 @@ V.more = async () => { await loadPages(); const keys = Object.keys(S.pages);
       <button class="starter" data-go="issues"><h3>The big issues</h3><p class="small muted">Where every party stands, issue by issue.</p><span class="go">Open →</span></button>
       <button class="starter" data-go="policies"><h3>Every policy</h3><p class="small muted">Search and compare all parties' 2026 policies, with full original texts.</p><span class="go">Open →</span></button>
       <button class="starter" data-go="people"><h3>People</h3><p class="small muted">Profiles and photos of MPs since 2011 and all 2026 candidates.</p><span class="go">Open →</span></button>
-      <button class="starter" data-go="promises"><h3>Promise tracker</h3><p class="small muted">How each party has kept, broken or dropped its promises.</p><span class="go">Open →</span></button></div>
+      <button class="starter" data-go="promises"><h3>Promise tracker</h3><p class="small muted">How each party has kept, broken or dropped its promises.</p><span class="go">Open →</span></button>
+      <button class="starter" data-go="newsroom"><h3>Newsroom &amp; follow</h3><p class="small muted">The latest releases from every party, in their own words, and where to follow each party and candidate.</p><span class="go">Open →</span></button></div>
     ${group('Start here', k => ['REPORT.md', 'README.md'].includes(k) || k.startsWith('guide/') || k.endsWith('MINOR_PARTIES.md'))}
     ${group('Elections 2011–2026', k => k.startsWith('elections/') && !k.endsWith('README.md'))}
     ${group('Party profiles', k => /^parties\/[^/]+\/README\.md$/.test(k))}
@@ -1394,6 +1443,7 @@ V.more = async () => { await loadPages(); const keys = Object.keys(S.pages);
   $('#imp').onclick = () => { try { importSaved($('#impcode').value); $('#expmsg').textContent = 'Imported. Your saved answers are restored.' } catch { $('#expmsg').textContent = 'That code didn’t work.' } } };
 function pageTitle(k) { const t = (S.pages[k] || '').match(/^#\s+(.+)$/m); return t ? t[1].replace(/[*_`]/g, '') : k }
 async function openPage(k) { await loadPages(); const t = S.pages[k];
+  if (blockedPage(k)) { openDialog('Hidden until 7pm', `<p>${ELECTION_DAY_BLOCK}</p>`); return }
   if (!t) { openDialog('Not written yet', `<p>${esc(k)} isn't in this version of the guide yet.</p>`); return }
   openDialog(pageTitle(k), `<div class="prose" data-base="${esc(k)}">${md(t.replace(/^#\s+.+\n/, ''))}</div>`) }
 function md(t) { try { return DOMPurify.sanitize(marked.parse(String(t || ''))) } catch { return `<pre>${esc(t)}</pre>` } }
@@ -1417,12 +1467,12 @@ document.addEventListener('click', e => {
 function route(r) {
   if (S.ballotTimer) { clearInterval(S.ballotTimer); S.ballotTimer = null }
   r = r || 'home'; let view = r, arg;
-  for (const pre of ['party', 'issue', 'electorate']) if (r.startsWith(pre + '-')) { view = pre; arg = r.slice(pre.length + 1) }
+  for (const pre of ['party', 'issue', 'electorate', 'newsroom']) if (r.startsWith(pre + '-')) { view = pre; arg = r.slice(pre.length + 1) }
   if (['chamber', 'trends', 'coalition', 'calculator'].includes(r)) { view = 'parliament'; arg = r }
   if (!V[view]) { view = 'home'; r = 'home' }
   renderBanner();
   if (blockedToday(view) || blockedToday(r)) { document.querySelectorAll('#nav button, #bnav button').forEach(b => b.setAttribute('aria-current', 'false')); S.route = r; window.scrollTo(0, 0); $('#main').innerHTML = `<section class="view"><div class="card stack"><h2>Hidden until 7pm</h2><p>${ELECTION_DAY_BLOCK}</p><p class="small muted">Everything else — parties, policies, candidates, your electorate, how to vote — stays available.</p><div class="row"><button class="btn primary" data-go="electorate">Your electorate</button><button class="btn" data-go="parties">Parties</button></div></div></section>`; return }
-  const navKey = { party: 'parties', issue: 'issues', 'swipe-tally': 'swipe', electorate: 'map', polls: 'more', trends: 'more', policies: 'more', people: 'more', promises: 'more' }[view] || view;
+  const navKey = { party: 'parties', issue: 'issues', 'swipe-tally': 'swipe', electorate: 'map', newsroom: 'more', polls: 'more', trends: 'more', policies: 'more', people: 'more', promises: 'more' }[view] || view;
   document.querySelectorAll('#nav button, #bnav button').forEach(b => b.setAttribute('aria-current', b.dataset.go === navKey ? 'page' : 'false'));
   S.route = r; try { history.replaceState(null, '', '#' + r) } catch {}
   window.scrollTo(0, 0); Promise.resolve(V[view](arg)).then(() => loadPeople().then(() => { if (S.route === r) $('#main').querySelectorAll('.read, .quote, .pol p, .lede, #ctx, .mapside').forEach(autolink) }));
@@ -1434,7 +1484,7 @@ function route(r) {
   $('#bnav').innerHTML = [['home', 'Home'], ['vote', 'Vote'], ['match', 'Match'], ['swipe', 'Swipe'], ['parties', 'Parties'], ['more', 'More']].map(([k, l]) => `<button data-go="${k}">${ic(k)}<span>${l}</span></button>`).join('');
   try { S.data = await getJSON('data/bundle.json') } catch (e) { $('#main').innerHTML = `<p class="empty">The guide's data didn't load (${esc(e.message)}).</p>`; return }
   loadPeople().then(() => { if ((location.hash || '#home') === '#home' || !location.hash) { /* refresh faces on home */ const h = location.hash.slice(1) || 'home'; if (['home', 'parties'].includes(h)) route(h) } });
-  $('#foot').innerHTML = `<p><b>Ballot Book NZ</b> is an independent, non-partisan guide. It does not tell you how to vote. Built ${esc(S.data.generated)}. <button class="btn ghost sm" data-go="trust">Why trust this?</button> <button class="btn ghost sm" data-page="docs/EDITORIAL_STANDARDS.md">Standards</button> <a class="btn ghost sm" href="https://github.com/not-simon/Politicsnz/issues/new?template=correction.yml" target="_blank" rel="noopener">Report an error</a> <a class="btn ghost sm" href="https://vote.nz" target="_blank" rel="noopener">Enrol / find a voting place</a></p>`;
+  $('#foot').innerHTML = `<p><b>Ballot Book NZ</b> is an independent, non-partisan guide. It does not tell you how to vote. Built ${esc(S.data.generated)}. <button class="btn ghost sm" data-go="trust">Why trust this?</button> <button class="btn ghost sm" data-page="docs/EDITORIAL_STANDARDS.md">Standards</button> <button class="btn ghost sm" data-go="trust">Privacy &amp; contact</button> <a class="btn ghost sm" href="https://github.com/not-simon/Politicsnz/issues/new?template=correction.yml" target="_blank" rel="noopener">Report an error</a> <a class="btn ghost sm" href="https://vote.nz" target="_blank" rel="noopener">Enrol / find a voting place</a></p><p class="tiny muted">Not the Electoral Commission. For official information on enrolling, voting places and hours, go to vote.nz or call 0800 36 76 56. Party documents, photos and other third-party material belong to their owners; owners can ask for removal or correction and we act within 24 hours during the campaign.</p>`;
   window.addEventListener('hashchange', () => { const h = location.hash.slice(1); if (h && h !== S.route) route(h) });
   route((location.hash || '').slice(1) || 'home');
 })();

@@ -44,7 +44,6 @@ Raised in Pāpāmoa and educated at Mount Maunganui College. Spent seven years d
 - **Electorate:** Mt Maunganui
 - **List ranking:** 12
 - **Before politics:** Builder / Small business owner
-- **Residence:** Papamoa
 - **Age:** 37
 - **Public email:** cameron.luxton@parliament.govt.nz
 - **Website:** https://www.act.org.nz/people/cameron-luxton

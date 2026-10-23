@@ -9,7 +9,6 @@
 
 - **Electorate:** Palmerston North
 - **Before politics:** Student and part-time worker
-- **Residence:** Fitzherbert
 - **Age:** 21
 - **Public email:** joshua.moss@allianceparty.nz
 - **Website:** https://allianceparty.nz/candidates/palmerston-north/

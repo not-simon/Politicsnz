@@ -9,7 +9,6 @@
 
 - **Electorate:** Hutt South
 - **Before politics:** Managing Director
-- **Residence:** Khandallah
 - **Age:** 61
 - **Public email:** alistair.boyce@nzfirst.nz
 - **Website:** nzfirst.nz

@@ -22,7 +22,6 @@ Hedley is a doctor training as a public health medicine specialist in Hawke's Ba
 - **Electorate:** Napier
 - **List ranking:** 50
 - **Before politics:** Public Health Medicine Doctor
-- **Residence:** Hospital Hill
 - **Age:** 35
 - **Public email:** Alex.hedley@labour.org.nz
 - **Website:** https://www.labour.org.nz/alexhedley

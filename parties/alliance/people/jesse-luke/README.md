@@ -9,7 +9,6 @@
 
 - **Electorate:** Selwyn
 - **Before politics:** Warehouse Operator
-- **Residence:** Rolleston
 - **Age:** 26
 - **Public email:** jesse.luke@allianceparty.nz
 - **Website:** https://allianceparty.nz/candidates/selwyn/

@@ -9,7 +9,6 @@
 
 - **Electorate:** Maungakiekie
 - **Before politics:** Primary School Teacher
-- **Residence:** Maungakiekie
 - **Age:** 32
 - **Public email:** adam.powell@greens.org.nz
 - **Website:** https://www.greens.org.nz/adampowell_2026

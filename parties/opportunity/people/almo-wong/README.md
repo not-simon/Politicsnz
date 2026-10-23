@@ -10,7 +10,6 @@
 - **Electorate:** Henderson
 - **List ranking:** 37
 - **Before politics:** Delivery Manager
-- **Residence:** West Auckland
 - **Age:** 33
 - **Public email:** almo.wong@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-almo-wong

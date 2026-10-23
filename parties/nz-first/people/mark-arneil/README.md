@@ -9,7 +9,6 @@
 
 - **Electorate:** Christchurch Central
 - **Before politics:** Digital Business Partner
-- **Residence:** Saint Albans
 - **Age:** 64
 - **Public email:** mark.arneil@nzfirst.nz
 - **Facebook:** https://www.facebook.com/share/1C2PxmWCtz/?mibextid=wwXIfr

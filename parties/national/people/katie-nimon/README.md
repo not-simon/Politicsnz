@@ -55,7 +55,6 @@ Backbench MP for Napier since 2023. She is #26 on National's 2026 list and is re
 - **Electorate:** Napier
 - **List ranking:** 27
 - **Before politics:** Transport Manager
-- **Residence:** Marewa
 - **Age:** 35
 - **Public email:** katie.nimon@national.org.nz
 - **Website:** https://www.national.org.nz/team/katienimon

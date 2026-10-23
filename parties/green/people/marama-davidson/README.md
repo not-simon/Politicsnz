@@ -51,7 +51,6 @@ Marama Mere-Ana Davidson (née Paratene), born in Auckland on 29 December 1973, 
 
 - **List ranking:** 1
 - **Before politics:** Community Development
-- **Residence:** Manurewa
 - **Age:** 52
 - **Public email:** Marama.Davidson@parliament.govt.nz
 - **Website:** https://www.greens.org.nz/maramadavidson_2026

@@ -9,7 +9,6 @@
 
 - **Electorate:** Palmerston North
 - **Before politics:** Businessperson
-- **Residence:** Palmerston North City
 - **Website:** https://www.act.org.nz/people/bruce-mcgechan
 - **Facebook:** https://www.facebook.com/brucemcgechanact
 

@@ -29,7 +29,6 @@ Sources: [National Party candidate profile](https://www.national.org.nz/team/ros
 - **Electorate:** Māngere
 - **List ranking:** 40
 - **Before politics:** Operations Scheduler
-- **Residence:** Māngere
 - **Age:** 54
 - **Public email:** rosemary.bourke@national.org.nz
 - **Website:** https://www.national.org.nz/team/rosemarybourke

@@ -46,7 +46,6 @@ Born in Henderson, West Auckland, on 25 December 1972 to a Māori mother (Ngāpu
 - **Electorate:** Palmerston North
 - **List ranking:** 3
 - **Before politics:** Publishing
-- **Residence:** Manawatū
 - **Age:** 53
 - **Public email:** Teanau.Tuiono@parliament.govt.nz
 - **Website:** https://www.greens.org.nz/teanau_tuiono

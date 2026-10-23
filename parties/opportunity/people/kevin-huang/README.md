@@ -10,7 +10,6 @@
 - **Electorate:** Pakuranga
 - **List ranking:** 40
 - **Before politics:** Pharmacist
-- **Residence:** Howick
 - **Age:** 26
 - **Public email:** kevin.huang@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-kevin-huang

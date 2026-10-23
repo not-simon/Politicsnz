@@ -72,7 +72,6 @@ _Source: Wikipedia infobox._
 
 - **Electorate:** Mt Roskill
 - **Before politics:** Union leader.
-- **Residence:** Waikowhai, Mt Roskill
 - **Age:** 46
 - **Public email:** michael.wood@labour.org.nz
 - **Website:** https://www.michaelwood.nz/

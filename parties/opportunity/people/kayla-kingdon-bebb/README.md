@@ -10,7 +10,6 @@
 - **Electorate:** Wellington Bays
 - **List ranking:** 4
 - **Before politics:** Chief Executive
-- **Residence:** Wellington Bays
 - **Age:** 40
 - **Public email:** kayla.kingdon-bebb@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-kayla-kingdon-bebb

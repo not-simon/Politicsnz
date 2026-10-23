@@ -10,7 +10,6 @@
 - **Electorate:** Dunedin
 - **List ranking:** 8
 - **Before politics:** GM - Local Government
-- **Residence:** Dunedin
 - **Age:** 42
 - **Public email:** david.bainbridge-zafar@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-dave-bainbridge-zafar

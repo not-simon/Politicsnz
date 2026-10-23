@@ -10,7 +10,6 @@
 - **Electorate:** Ōtāhuhu
 - **List ranking:** 30
 - **Before politics:** Community support/youth worker
-- **Residence:** West Harbour
 - **Age:** 41
 - **Public email:** tewhatanui.skipwith@greens.org.nz
 - **Website:** https://www.greens.org.nz/tewhatanuiskipwith_2026

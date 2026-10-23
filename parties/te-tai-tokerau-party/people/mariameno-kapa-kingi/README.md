@@ -46,7 +46,6 @@ Born at Te Kao (Te Aupōuri; Ngāti Kahu ki Whangaroa) and raised in Onerahi, Wh
 
 - **Electorate:** Te Tai Tokerau
 - **Before politics:** CEO of Te Aupōuri
-- **Residence:** Onerahi/Te Tai Tokerau
 - **Age:** 65
 - **Public email:** mariameno.kapa-kingi@parliament.govt.nz
 - **Website:** https://tetaitokerauparty.org.nz/

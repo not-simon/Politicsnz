@@ -30,7 +30,6 @@ Sources: [National Party candidate profile](https://www.national.org.nz/team/llo
 - **Electorate:** Whangārei
 - **List ranking:** 61
 - **Before politics:** CEO Real Estate
-- **Residence:** Whangarei
 - **Age:** 43
 - **Public email:** lloyd.budd@national.org.nz
 - **Website:** https://www.national.org.nz/team/lloydbudd

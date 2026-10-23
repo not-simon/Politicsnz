@@ -31,7 +31,6 @@ Sources: [National Party candidate profile](https://www.national.org.nz/team/mat
 - **Electorate:** Port Waikato
 - **List ranking:** 62
 - **Before politics:** Environmental Consultant
-- **Residence:** Pukekohe
 - **Age:** 41
 - **Public email:** Matthew.Paul@National.org.nz
 - **Website:** https://www.national.org.nz/team/matthewpaul

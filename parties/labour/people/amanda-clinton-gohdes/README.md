@@ -22,7 +22,6 @@ Clinton-Gohdes served two terms on the New Plymouth District Council. Her Labour
 - **Electorate:** New Plymouth
 - **List ranking:** 59
 - **Before politics:** Councillor
-- **Residence:** New Plymouth
 - **Age:** 39
 - **Public email:** Amanda.Clinton-Gohdes@labour.org.nz
 - **Website:** https://www.labour.org.nz/amandaclintongohdes

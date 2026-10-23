@@ -9,7 +9,6 @@
 
 - **Electorate:** Christchurch Central
 - **Before politics:** General Manager Environmental
-- **Residence:** Waltham
 - **Age:** 65
 - **Public email:** greg.byrnes@allianceparty.nz
 - **Website:** https://my.wordpress.com/domains/gregbyrnes4alliance.com

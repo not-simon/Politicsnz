@@ -36,7 +36,6 @@ Born 27 March 1971. Set up the "New Zealand Armed Intervention Force" in 1996 as
 
 - **Electorate:** Māngere
 - **Before politics:** Security Consultant
-- **Residence:** Mangere
 - **Age:** 55
 - **Public email:** leader@nzloyal.com
 - **Website:** nzloyal.com

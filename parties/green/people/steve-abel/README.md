@@ -44,7 +44,6 @@ Stephen George Bremner Abel is an environmental activist and musician. He campai
 - **Electorate:** Waitākere
 - **List ranking:** 12
 - **Before politics:** Greenpeace Campaigner
-- **Residence:** Green Bay in West Auckland
 - **Age:** 56
 - **Public email:** steve.abel@parliament.govt.nz
 - **Facebook:** https://www.facebook.com/SteveAbelGreens/

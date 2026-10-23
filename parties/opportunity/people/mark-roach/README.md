@@ -10,7 +10,6 @@
 - **Electorate:** Waitākere
 - **List ranking:** 19
 - **Before politics:** Designer & Industry Consultant
-- **Residence:** New Lynn
 - **Public email:** mark.roach@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-mark-roach
 - **Facebook:** https://www.facebook.com/markroachforwaitakere

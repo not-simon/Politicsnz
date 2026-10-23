@@ -10,7 +10,6 @@
 - **Electorate:** Kapiti
 - **List ranking:** 26
 - **Before politics:** Journalist, Nurse, Strategist
-- **Residence:** Brooklyn, Wellington
 - **Age:** 49
 - **Public email:** ck.sng@opportunity.org.nz
 - **Website:** https://www.opportunity.org.nz/candidate-chee-khiang-sng

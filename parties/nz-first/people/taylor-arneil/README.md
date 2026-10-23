@@ -9,7 +9,6 @@
 
 - **Electorate:** Wellington North
 - **Before politics:** Contractor and lifeguard
-- **Residence:** Wellington
 - **Age:** 31
 - **Public email:** taylor.arneil@nzfirst.nz
 - **Website:** https://www.nzfirst.nz/taylor_arneil
