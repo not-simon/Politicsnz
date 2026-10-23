@@ -1,0 +1,730 @@
+VU Research Portal
+
+
+
+Genuine effects of vote advice applications on party choice
+Kleinnijenhuis, Jan; van de Pol, Jasper; van Hoof, Anita M.J.; Krouwel, André P.M.
+
+
+
+published in
+Party Politics
+2019
+
+DOI (link to publisher)
+10.1177/1354068817713121
+
+
+document version
+Publisher's PDF, also known as Version of record
+
+document license
+Article 25fa Dutch Copyright Act
+
+
+Link to publication in VU Research Portal
+
+
+
+
+citation for published version (APA)
+Kleinnijenhuis, J., van de Pol, J., van Hoof, A. M. J., & Krouwel, A. P. M. (2019). Genuine effects of vote advice
+applications on party choice: Filtering out factors that affect both the advice obtained and the vote. Party Politics,
+25(3), 291-302. https://doi.org/10.1177/1354068817713121
+
+
+
+
+General rights
+Copyright and moral rights for the publications made accessible in the public portal are retained by the authors and/or other copyright owners
+and it is a condition of accessing publications that users recognise and abide by the legal requirements associated with these rights.
+
+       • Users may download and print one copy of any publication from the public portal for the purpose of private study or research.
+       • You may not further distribute the material or use it for any profit-making activity or commercial gain
+       • You may freely distribute the URL identifying the publication in the public portal
+
+Take down policy
+If you believe that this document breaches copyright please contact us providing details, and we will remove access to the work immediately
+and investigate your claim.
+
+
+E-mail address:
+vuresearchportal.ub@vu.nl
+
+
+
+
+Download date: 23. Oct. 2026
+Article
+                                                                                                                                Party Politics
+                                                                                                                   2019, Vol. 25(3) 291–302
+Genuine effects of vote advice                                                                                       ª The Author(s) 2017
+                                                                                                                     Article reuse guidelines:
+applications on party choice:                                                                              sagepub.com/journals-permissions
+                                                                                                           DOI: 10.1177/1354068817713121
+                                                                                                             journals.sagepub.com/home/ppq
+Filtering out factors that affect both
+the advice obtained and the vote
+
+Jan Kleinnijenhuis
+Vrije Universiteit Amsterdam, the Netherlands
+
+Jasper van de Pol
+University of Amsterdam, the Netherlands
+
+Anita MJ van Hoof and André PM Krouwel
+Vrije Universiteit Amsterdam, the Netherlands
+
+
+
+Abstract
+Previous research shows effects of the advice from voting advice applications (VAAs) on party choice. These effects could
+be spurious because common antecedent factors like prior voting, a voter’s prior issue positions and election campaign
+news may explain both party choice and the opinions someone reports to the VAA, and hence the voting advice obtained
+from the VAA. Often VAAs will advise users to opt for parties that they were already likely to vote for, based on
+antecedent factors. Here, three-wave panel surveys and media content data for the Dutch national election campaigns of
+2010 and 2012 are employed. In spite of spurious correlations resulting from common antecedent factors, genuine VAA
+effects show up, especially for doubting voters. Party change based on positive VAA-advice for a party is least likely (a) for
+voters who already have an abundance of antecedent factors in favour of that party anyway, and (b) for those without a
+single antecedent factor in favour of that party. Genuine VAA effects imply that VAAs make it less easy for political parties
+to neglect each other’s owned issues, because VAAs weigh issues equally for each party.
+
+Keywords
+elections, issue voting, media effects, vote advice applications
+
+
+An increasing number of voters make their voting decision             Scientific interest into the usage and effects of VAAs
+not until the election campaign has started (Krouwel, 2012;        can be seen from a growing number of research articles and
+Rose and McAllister, 1986; Weßels et al., 2014). To make an        overviews thereof, such as Garzia and Marschall (2012:
+informed choice – based on the relevant issues in the cam-         368), Garzia et al. (2014) and Rosema et al. (2014). Starting
+paign – millions of voters have come to use voting advice          from different election campaigns, different methods and
+applications (VAAs) such as the EUprofiler and EUvox in            different samples, most studies found that VAAs enhance
+the 2009 and 2014 European Elections, the Swiss Smartvote,         interest in the political campaign and increase political
+German Wahl-O-Mat and the Dutch Stemwijzer and Kies-
+kompas. VAA websites offer a personalized ‘voting advice’
+based on a match between the issue preferences retrieved           Paper submitted 28 August 2016; accepted for publication 9 May 2017
+from the user and the official positions of parties or candi-
+dates on salient political issues. As Garzia, Trechsel, Vassil     Corresponding author:
+                                                                   Jan Kleinnijenhuis, Department of Communication Science, Vrije
+et.al. (2014) and others argue, VAAs ‘take the burden of           Universiteit Amsterdam, De Boelelaan 1081, Amsterdam 1081 HV, the
+informing themselves out of the voters’ hands and deliver          Netherlands.
+concise, easy to interpret and readily digestible information’.    Email: j.kleinnijenhuis@vu.nl
+292                                                                                                           Party Politics 25(3)
+
+
+knowledge (Kamoen et al., 2015) as well as turnout (Dinas         although voters are inclined to judge each party on salient
+et al., 2014; Ladner and Pianzola, 2010; Marschall and            party-specific issues in short on ‘owned’ issues (Budge and
+Schultze, 2012; Pianzola, 2014b; Ruusuvirta and Rosema,           Farlie, 1983). Only a minority of voters instruct a VAA to
+2009) with some exceptions (Enyedi, 2015). The obtained           not consider issues that they would not have considered
+advice to vote for a specific party appears to affect the vote.   spontaneously. The new information that users of VAAs
+The number of studies that found a substantial VAA influ-         receive may also draw attention to previously unknown
+ence on the likelihood of voting for the advised party            parties (Garzia et al., 2012). Other reasons why VAAs may
+(Kleinnijenhuis et al., 2007a; Ladner et al., 2012; Marschall     have an additional effect on the vote is that the VAA result
+and Schultze, 2012; Pianzola, 2014a, 2014b; Ruusuvirta            is not only dependent on users’ opinions but also on design
+and Rosema, 2009; Wall et al., 2014) exceeds the number           aspects such as the selection of issue statements (Lefevere
+of studies that did not (Enyedi, 2015; Kamoen et al., 2015;       and Walgrave, 2014; Walgrave et al., 2009), specific state-
+Walgrave et al., 2008).                                           ment wordings (Holleman et al., 2016), and on a specific
+   The vast majority of studies that showed that issue-           choice from a variety of matching algorithms (Louwerse
+based advice from a VAA affected the vote, however, did           and Rosema, 2014; Otjes and Louwerse, 2014).
+neglect the funnel of causality. The authors of The Amer-             The core expectation on the basis of this literature is that
+ican Voter (Campbell et al., 1960) showed that issue con-         the obtained advice from a VAA to vote for a party adds to
+cerns immediately affect vote choice for some voters, but         the explanation of vote choice (hypothesis 1a), whereas
+that these opinions on issues are partly shaped by antece-        VAA use resulting in a ‘negative’ advice, that is, to vote
+dent factors culminating in a long-standing party attach-         for another party, decreases the likelihood to vote for this
+ment, and by newsworthy events in the unfolding                   party (hypothesis 1b). In many elections, voters may con-
+campaign. The studies that showed an effect of issue-             sult more than one VAA because more VAAs are available.
+based advice from a VAA on the vote did, however, not             Inconsistent voting advice from different VAAs may
+take into account how party attachment could affect the           reduce the likelihood that the advice will be followed
+opinions voters have on issues covered by VAAs, which             (Enyedi, 2015) because their inconsistency may prompt
+subsequently affect the VAA advice. Additionally, these           users to resort to other information (Israel et al., 2016).
+previous studies also neglected effects of information and        These expectations are summarized in hypothesis 1.
+communication, like media influence.
+   In this study, we seek to isolate the effect of advice            H1: VAA advice to vote for a party increases the
+obtained from a VAA on vote choice from the effects of               likelihood to vote for this party at the upcoming elec-
+antecedent factors that produce a spurious correlation               tions (hypothesis 1a); negative advice (hypothesis 1b)
+between advice from a VAA and the vote. A spurious cor-              and inconsistent advice (hypothesis 1c) decrease this
+relation between VAA advice and the vote arises when                 likelihood.
+voters ‘self-select’ the advice they obtain by feeding the
+VAA with opinions that would have driven them anyhow to
+the party advised by the VAA (Levendusky, 2011; Pian-             Antecedents that affect both VAA advice
+zola, 2014a, 2014b). As Andreadis and Wall (2014) note,           and the vote
+we need to study ‘the factors that exacerbate or minimise’        The question how to isolate the genuine effect of advice
+the impact of VAAs. Our research question reads: Does             from VAAs on vote choice starts from theories about ante-
+advice from a VAA exert an influence on vote choice in            cedent factors that may affect both the VAA advice
+addition to other, antecedent factors, when the dependency        obtained and the ultimate vote choice. Starting from The
+of VAA advice on these antecedent factors is taken into           American Voter (1960), many studies showed that the vote
+account?                                                          is embedded in a historical record of party identification
+                                                                  and party attachment, which in turn may be based on long-
+Why advice from a VAA may affect                                  standing value orientations, political socialization and
+the vote                                                          dominant social divisions. Since party identification/
+                                                                  attachment is not a very distinctive concept in a multiparty
+As Garzia (2010) and others argue, autonomous VAA                 systems (Berglund et al., 2005; Thomassen, 1976), we will
+effects on the vote may appear because VAAs offer voters          consider previous party choice instead. Our twofold first
+a convenient shortcut to find out about all party positions       hypothesis therefore reads:
+on pressing issues. As compared to voters’ spontaneous
+agreement on the issues with parties, VAAs include more              H2: Having voted for a party at the preceding elections
+and different issues than voters originally had in mind,             increases the likelihood to vote for this party at the
+including other issues than the issues on which specific             upcoming elections (hypothesis 2a) and the likelihood
+parties focused in their campaign. The issues that are               to obtain VAA advice to vote for this party (hypoth-
+included in a VAA bear the same weight for each party,               esis 2b).
+Kleinnijenhuis et al.                                                                                                         293
+
+
+   Many voters change party preferences already before                  Horse race news in the media reflects impressions of
+the next election campaign (Rattinger and Wiegand,                  momentum in the polls, debates and public appearances.
+2014), which is also obvious from the electoral outcomes            It signals which candidate is considered most competent to
+of many midterm elections. Since one’s party preference at          win the elections and to rule the nation. Previous research
+the start of the new election campaign is a more proximate          shows that news about successes and failures of parties
+cause in the funnel of causality than prior party choice, it is     exerts a stronger effect on party choice than news about
+to be expected that party preference at the start of the            the issue positions of parties (which fosters prospective
+election campaign also affects VAA advice and party                 voting), about real-world cues and issue developments
+choice.                                                             (which fosters retrospective voting) and attack news (which
+                                                                    fosters voting based on social identification and cognitive
+   H3: The intention to vote for a party at the start of an         balance) (Kleinnijenhuis et al., 2007b). Horse race news
+   election campaign increases the likelihood to vote for           attracts news consumers (Iyengar et al., 2003) and directs
+   this party at the upcoming elections (hypothesis 3a) and         their attention also to other election messages, including
+   the likelihood to obtain VAA advice to vote for this             issue information (Bleske and Zhao, 1998). In line with
+   party (hypothesis 3b).                                           Walgrave et al. (2008), we expect that the effect of a VAA
+                                                                    is strong when it confirms general trends, when it reinforces
+   In the final months leading up to the election, voters           the winner and causes a bandwagon effect. This leads to our
+respond strongly to the issues and the candidates put for-          fifth hypothesis:
+ward by the parties. Even voters who shift to another party
+in a multiparty system usually shift to a party with similar           H5: Exposure to horse race news (news about success
+issue positions (Dassonneville and Dejaeghere, 2014; Van               and failure) during the election campaign in favour of a
+der Meer et al., 2015). We expect therefore that issue pre-            party increases the likelihood to vote for this party at the
+ferences at the start of the campaign affect the personal              upcoming elections (hypothesis 5a) and to obtain VAA
+opinions fed into a VAA, and consequently the VAA                      advice to vote for this party (hypothesis 5b).
+advice obtained, and ultimately one’s final party choice.
+Spontaneous issue agreement is conceptualized here as the
+extent to which a voter agrees with a party on salient issues
+they associate with that party. According to the theory of          The user perspective
+issue ownership (Budge and Farlie, 1983; Petrocik, 1996;            The impact of VAA advice on the actual party choice will
+Walgrave et al., 2012), historical social cleavages (e.g.           probably not be the same for each voter. A study of use
+rural vs. urban, poor vs. rich) gave rise to the birth of parties   patterns showed that VAAs are used by different types of
+that thereafter consistently promoted specific interests with       users for different reasons (van de Pol et al., 2014). The
+which they are associated by voters.                                largest group of users can be characterized as politically
+                                                                    sophisticated voters who are relatively certain about their
+   H4: Agreement on the issues with a party at the start of         vote choice. VAAs are mainly used by them to affirm that
+   the election campaign increases the likelihood to vote           their views correspond with those of their favourite party.
+   for this party at the upcoming elections (hypothesis 4a)         Van de Pol et al. (2014) labelled this type of users ‘check-
+   and to obtain VAA advice to vote for this party (hypoth-         ers’. Since checkers very often already have decided which
+   esis 4b).                                                        party to vote for independent of VAAs, we expect that
+                                                                    checkers change their vote choice least often in accordance
+   Voters react to context variation. Which party they vote         with VAA advice. VAAs were also found to be consulted
+for, whether VAAs are available, whether voters make use            by a, somewhat smaller, group of users who could be
+of VAAs, and with which preferences they feed VAAs,                 described as possessing less political sophistication and
+depends on the prevailing political system, the party land-         interest, and as being very uncertain on which party to vote
+scape, the candidates and on which party gains momentum             for. This group could further be subdivided into ‘seekers’, a
+during the campaign. This study is based on a most similar          rather efficacious but uncertain group (they put a lot of
+design with two subsequent parliamentary elections in               importance on the voting advice they receive) and ‘doubt-
+2010 and 2012 in the Netherlands. In 2010 and 2012, the             ers’, who are much less efficacious and more cynical about
+same three parties competed: the liberal party VVD, lead            their possibilities of affecting political decision-making.
+by Mark Rutte, the most important challenger, the PVV, by           We expect the seekers to be most affected, since they are
+Geert Wilders, and the second largest party, the Labour             still undecided but motivated to make the ‘right’ decision.
+Party (PvdA). To capture the remaining contextual varia-
+tion between elections and between parties, we will focus              H6: As compared to checkers (the baseline), seekers
+on ‘horse race news’ (Banducci and Hanretty, 2014; Mutz,               (hypothesis 6a) most often bring their vote choice in line
+1997; Patterson, 1993).                                                with VAA advice, followed by doubters (hypothesis 6b).
+294                                                                                                        Party Politics 25(3)
+
+
+
+
+Figure 1. Conceptual model.
+
+
+Towards a conceptual model                                         Three-wave panel survey data also allow for the dis-
+                                                                tinction between potential effects of VAA-advice, like in
+Figure 1 combines the hypotheses in a conceptual model
+                                                                experimental research, and genuine effects that take into
+and shows in addition in which of the three waves the
+                                                                account the actual use of VAAs and the actual correspon-
+variables in the model are measured.
+                                                                dence of VAA advice with a voter’s prior considerations.
+   Figure 1 shows how the research model predicts the
+                                                                Panel data are worthwhile furthermore to re-check to what
+effect of VAA advice on the vote (hypothesis 1) on top
+                                                                extent effects of self-reported VAA-advice persist until
+of the vote at the previous election (hypothesis 2), prior
+                                                                after the elections (Hanel and Schultze, 2014). Recording
+vote intentions (hypothesis 3), prior issue agreement
+                                                                the self-reports about VAA use and the VAA advice at
+(hypothesis 4) and news about successes and failures of
+                                                                time 2, just before the elections, makes it unlikely that
+parties (hypothesis 5) and how these independent variables
+                                                                VAA advice is forgotten already and also unlikely that
+(considerations) are placed in time. The effect of VAAs is
+                                                                these self-reports are fabricated to justify one’s vote
+moderated by the nature of VAA users (hypothesis 6): see-
+                                                                choice, since the latter is recorded at time 3, after the
+kers and doubters, with checkers as the reference category.
+                                                                elections.
+                                                                   The polling company GfK conducted such panel surveys
+Method                                                          both for the 2010 and 2012 elections in the Netherlands in
+                                                                line with ESOMAR and ISO 26362 guidelines for repre-
+Data                                                            sentative computer-assisted web interviewing panels. The
+The aim of this study is to isolate genuine VAA effects on      respondents in the first wave of these panel survey studies
+vote choice when both the obtained VAA advice and vote          represent a stratified sample of a large multi-access panel
+choice depend also on common antecedent factors. A three-       (MAP) of respondents (N about 100,000). The MAP rests
+wave panel survey study with a wave before the campaign,        on multiple recruitment strategies to enable large-scale
+a wave before the elections and a wave just after the elec-     samples that match population characteristics of the Dutch
+tions (Huckfeldt and Sprague, 1995) allows for the detec-       population (95% Internet penetration) including a not-so-
+tion of self-selection that occurs when a voter with specific   heavy internet use on the average. About 31% of MAP
+predispositions at time 1 reverts to these predispositions      respondents were recruited by a targeted search in various
+when answering VAA questions at time 2, which results           difficult to reach subgroups of the population. Stratification
+in a vote choice at time 3 that is both consistent with pre-    for the first wave of the 2010 and 2012 three-wave panel
+dispositions and the obtained VAA advice. We label these        survey studies was based on turnout and voting choice at
+three waves as the pre-campaign wave, the pre-election          the previous election, age, education, gender and Nielsen
+wave and the post-election wave, or alternatively, as wave      regions. The stratification guaranteed that difficult to reach
+1, wave 2 and wave 3.                                           groups such as non-voters, new voters and voters for parties
+Kleinnijenhuis et al.                                                                                                    295
+
+
+with many less educated voters were proportionally repre-       Vote. In the post-election wave, respondents were asked
+sented in the 2010 and 2012 election campaign panel sur-        whether they had voted at the last election. If they did, the
+vey studies. The number of respondents in the first waves       follow-up question asked which party they had voted for.
+of the two panel studies amounted to N ¼ 1801 and
+N ¼ 1805, respectively.                                         Voting advice applications. In the second wave, voters was
+   The first wave was administered in a weekend at the          asked whether they had used the most popular VAA in the
+start of the election campaigns leading up to the national      Netherlands, that is, whether they had used Stemwijzer and
+parliamentary elections of 2010 and 2012 (first weekend of      whether they had used Kieskompas. Voters who had used
+April 2010/of July 2012) and contained questions on media       one or both applications also answered the question: ‘What
+exposure, political knowledge, a retrospective question on      was the advice you obtained from [VAA]?’ with the parties
+the vote cast at the previous elections and the party pre-      as answer options. For each combination of voters and
+ference at this stage. The second wave, carried out in the      parties, three dichotomous variables were construed to
+4 days immediately before the elections (second weekend         assess VAA-effects. The first indicates whether a party was
+of June 2010/of September 2012), captures whether or not        recommended by any VAA: either two VAAs were used
+respondents used one or multiple VAAs and, if they did,         which all recommended voting for this party or only one
+what was the voting advice provided by the VAAs. The            VAA was used that recommended this party. The second
+third wave, administered after Election Day (9 June 2010/       variable indicates whether all VAAs that were used advised
+12 September 2012), assessed whether the respondent             another party than the party at hand. The third variable
+voted, and if so, for which party. Reminder emails were         indicates whether voters received inconsistent advice: one
+sent to increase the response rate.                             VAA recommended the party and the other VAA did not.
+   The analyses are based on the subset of respondents who
+participated not only in the pre-campaign wave but also in      Issue agreement. In the pre-election wave, respondents were
+the pre-election wave and the post-election wave of the         asked which issues came to mind when considering each of
+panel survey studies. The final numbers of respondents in       the parties. Issues could be listed freely, but 97% of the
+the analyses amount to N ¼ 1159 in 2010 and N ¼ 1243 in         respondents chose issues from a list of suggestions. For
+2012. Since panel attrition was only weakly correlated with     each party, two different issues could be selected. Next,
+party choice (measured in the post-election wave)1, respon-     voters were asked whether they disagreed completely
+dents who participated in one or two waves only could be        (1), disagreed (0,5), nor agreed nor disagreed (0),
+excluded from the study without having to resort to data        agreed (0,5) or agreed completely (1) with that party with
+imputation methods or to analyses based on varying num-         respect to these issues (Kleinnijenhuis and Pennings,
+bers of respondents.                                            2001). Issue agreement was computed as summated issue
+   The analyses are based on the parties that managed to        agreement per issue.
+gain seats in the Dutch parliament with its electoral thresh-
+old of 0.67% only: GroenLinks (ecologists), Partij voor de      Tone of success and failure news. A content analysis of all
+Dieren (animal rights), SP (socialists), PvdA (Social-          political news items from five national newspapers, two
+Democrats), D66 (liberal democrats), CDA (Christian             free dailies and two television news programmes (one from
+Democrats), CU (orthodox Christians), SGP (orthodox             a public and one from a commercial broadcaster) was con-
+Christians), VVD (right-wing liberals) and PVV (anti-           ducted to measure the tone of the news. The tone of this
+immigration) both in 2010 and 2012 50þ (elderly) was            news was indicated for each specific medium by the num-
+added in 2012. A new party, 50þ (elderly), was added in         ber of statements about successes minus the number of
+2012.                                                           statements about failures during the entire election cam-
+                                                                paign. This type of news deals with performance attribu-
+                                                                tions, for example on the basis of policy failures and
+Measures                                                        successes, or of performance in debates, in the polls, or
+Vote at previous elections. In the pre-election wave, respon-   in television programs. In the relatively long 2010 cam-
+dents were asked which party they had voted for at the          paign, n ¼ 2732 statements in the investigated media dealt
+previous election. For respondents who had already parti-       with party successes or failures, as compared to n ¼ 1924 in
+cipated in GfK research, the vote at the previous elections     the shorter post-summer 2012 campaign. Experienced stu-
+was based on the earliest measurement.                          dent coders coded the weekly news during each week of the
+                                                                election campaigns. This resulted in sufficiently reliable
+Vote intention at the start of the campaign. In the pre-        coding results as measured by Krippendorff’s a (a ¼ 0.79
+campaign wave, voters were asked whether they intended          for 2010 and a ¼ 0.92 for 2012). The tone of the success or
+to cast their vote, and if so, they were asked: ‘For which      failure news in a medium was assigned only to its readers or
+party would you vote if elections were held today?’ with        watchers (e.g. Boomgaarden et al., 2011; Kleinnijenhuis
+the parties as answer options.                                  et al., 2007a). Therefore, respondents were asked which
+296                                                                                                      Party Politics 25(3)
+
+
+specific newspaper and television news programmes they          previous vote, one’s vote intention at the start of the cam-
+used during the last week, and how often. About 90% of the      paign, the tone of success and failure news during the cam-
+respondents stated to have read or watched one of the           paign, one’s issue agreement with parties and the voting
+investigated media during the last week at least once.          advice provided by VAAs as measured shortly before elec-
+Success and failure for a specific party in the news was        tions, on the final vote choice. In this model, parties are
+measured by the number of statements about successes            nested within individuals. The variables in the two multi-
+minus the number of statements about failures during            level regression equations vary both between respondents
+the entire election campaign in the media that were             and between parties, except for the seeker and doubter
+actually used by a respondent. Voters who followed              variables, which vary between respondents only. The inter-
+none of the investigated media were assigned a neutral          cept in the multilevel regression models is allowed to vary
+score, which reflects that they did neither obtain news         between parties.4 Since the estimated model is basically an
+about successes nor about failures of parties. To obtain an     autoregression equation in which the vote depends on the
+independent variable for which logistic regression coeffi-      previous vote, the estimated effects of the other variables
+cients could be interpreted, the resulting variable was stan-   can be interpreted as dynamic effects on party change
+dardized by taking z-values. Social media are not included,     rather than as static effects on party choice.
+because we do not dispose of measures of the political             Multilevel logistic regression coefficients do however
+Facebook or Twitter content followed by individual users.       provide limited information about actual effect sizes
+Effects of social media on party choice should not be           (Mughan, 2015). The regression estimates give at best an
+exaggerated since even in 2017 less than 20%, even of           indication of potential VAA effects. Therefore, we include
+the youngest category of voters, obtained political infor-      an additional analysis to assess genuine VAA effects. Gen-
+mation through social media and less than 5% exclusively        uine effects differ from potential effects because they do
+through social media.                                           not assume that a stimulus, like an advice to vote for a
+                                                                specific party, is administered to 100% of the respondents
+Type of VAA user. The categorization of voters into checkers,   in a given experimental condition. Rather they take into
+seekers and doubters is based on data from the first wave.      account the probability that the stimulus was actually admi-
+Checkers were defined as the reference category of respon-      nistered. A VAA is typically not used by all voters and
+dents who intended to vote for the same party they had          typically does not recommend a specific party to all voters.
+voted for at the previous national elections and did not also   The data and the syntax files used are permanently avail-
+consider voting for another party. The latter is determined     able from https://dataverse.nl/dataset.xhtml?persisten
+by comparing the respondents’ propensity to vote for this       tId=hdl:10411/77APHO.
+party with that of all other parties. Seekers and doubters
+were defined as non-checkers; seekers were further distin-
+guished from doubters by relatively high scores on the          Results
+weighted average of news exposure (weight ¼ 1) and polit-
+ical interest (weight ¼ 1) and a relatively low score on        VAA users and VAA impact
+cynicism (weight ¼ 2). Cynicism was weighted double             Table 1 presents elementary data on the overall usage of
+because it acts as a single counter weight against political    VAAs and the aggregate relation between VAA advice and
+interest and news exposure that tap more or less the same       the final vote by focusing on the differences between the
+concept. The cut-off point on the combined political inter-     three types of VAA users: checkers, seekers and doubters.
+est–news exposure–cynicism scale to distinguish seekers            The table shows that Stemwijzer is more often used than
+from doubters was brought in line with the 3:1 ratio of         Kieskompas. Seekers use Stemwijzer and Kieskompas
+seekers versus doubters in previous research (van de Pol        more often than checkers, who in turn use them more often
+et al., 2014). The underlying variable news exposure was        than doubters.
+measured using the question how often the respondent had           The last two columns of Table 1 refer to those who
+followed the news during the previous week. Political           voted in line with the VAA advice in the final count as a
+interest was measured using three items in the pre-             percentage of all VAA users who voted against their pre-
+campaign wave. Cronbach’s a for 2010 amounts to 0.78            ference at the start of the campaign. The percentages show
+and for 2012 to 0.77.2 Political cynicism was measured          that doubters, who were least inclined to use a VAA, seem
+using five items in the pre-campaign wave.3 Cronbach’s          to be most susceptible to their advice, once they decide to
+a for 2010 amounts to 0.78 and for 2012 to 0.80.                use a VAA. Seekers, who were most inclined to use a
+                                                                VAA, were less susceptible to VAA advice than doubters,
+                                                                but still more susceptible than checkers. These differences
+Data analysis                                                   between seekers and doubters show that very different
+A multilevel random intercepts logistic regression model        motives play a role in using a VAA and following the
+was estimated in order to analyse the effect of one’s           advice from a VAA.
+Kleinnijenhuis et al.                                                                                                                              297
+
+
+Table 1. VAA use and VAA impact for checkers, seekers and doubters.*
+
+                                                                         VAA users who vote in line with the VAA advice obtained as a % of
+                          VAA user            VAA users as                VAA users who received an advice that was different from their
+                         type in year     a % of all respondents                     preference at the start of the campaign1
+
+VAA user type Year             %         Stemwijzer Kieskompas                       Stemwijzer                                Kieskompas
+
+Checkers          2010         33             32            12                          13                                         9
+                  2012         23             35            13                          11                                        12
+Seekers           2010         47             45            18                          27                                        20
+                  2012         42             46            16                          28                                        17
+Doubters          2010         20             30             8                          34                                        20
+                  2012         35             32             9                          34                                        14
+
+Note: VAA: voting advice applications.
+*Number of respondents: 2010 n ¼ 1159; 2012 n ¼ 1243. Stemwijzer users 2010: n ¼ 313; 2012 n ¼ 344. Kieskompas users 2010: n ¼ 113;
+2012: n ¼ 119. F-tests (not reported here) show that differences due to VAA user type are significant.
+
+
+
+Table 2. Random intercept models to explain the vote.
+
+                                                            Obtained VAA advice                          Vote choice
+
+                                                       empty model                             empty model
+
+Dependent variable                                      (1a)                 (1b)                 (2a)                 (2b)             (2c)
+
+H2    Prior vote                                                              0.98     ***                              1.98     ***        1.90   ***
+H3    Pre-campaign vote intention                                             0.93     ***                              2.93     ***        2.93   ***
+H4    Prior issue agreement                                                   0.55     ***                              0.59     ***        0.57   ***
+H5    News success/failure                                                    0.03     ns                               0.10     **         0.10   **
+H1    VAA advice
+      H1a Advised by VAA                                                                                                                1.09       ***
+      H1b Not advised by any VAA                                                                                                       0.25       ***
+      H1c Inconstency VAAs                                                                                                             0.59       *
+      H6a Advised by VAA to a seeker                                                                                                    0.74       **
+      H6b Advised by VAA to a doubter                                                                                                   1.33       ***
+Intercept                                              2.58       ***      2.95      ***     3.04         ***       4.07     ***   4.08       ***
+
+Variance of intercept across parties (n ¼ 11)            0.93                 0.67                2.05                  0.96                0.84
+n cross-nested
+Year-party-respondent observations                     10,092               10,092            25,263               25,263              25,263
+Goodness-of-fit
+      AIC                                               6020                 5298             13,158                   7612             7348
+      DIC                                               5907                 5187             13,018                   7491             7220
+Note: VAA: voting advice applications; AIC: Akaike information criterion; DIC: deviance information criterion.
+*p < 0.05; **p < 0.01; ***p < 0.001.
+
+
+
+Model test                                                                   agreement (hypothesis 4b) and news about party successes
+Table 2 shows estimates for regression models to explain                     in one’s media (hypothesis 5b). The regression estimates
+VAA advice for a party (models 1a, 1b) along with esti-                      show that the obtained VAA advice follows from one’s
+mates for models to explain the vote for a party (models 2a,                 prior vote, one’s pre-campaign vote intention and prior
+2b, 2c). The number of observations for models 1a and 1b                     issue agreement with a party, but VAA advice is not
+(n ¼ 10,092) is lower than for models 2a, 2b and 2c (n ¼                     affected by news about successes and failures. The good
+25,263) because only respondents who used a VAA are                          news here is that one’s political predispositions are at the
+included in models 1a and 1b.                                                heart of the obtained advice from a VAA, but that this
+   Model 1b from Table 2 explains the obtained VAA                           advice is independent of the attributed momentum to polit-
+advice to vote for a specific party from structural charac-                  ical parties in the media.
+teristics, notably from one’s prior vote (hypothesis 2b),                       Model 2b shows that the vote for a specific party is
+pre-campaign vote intention (hypothesis 3b), prior issue                     influenced by the same three structural characteristics as
+298                                                                                                                     Party Politics 25(3)
+
+
+
+
+Figure 2. Effect of party considerations on VAA advice and effects of VAA advice. The slopes of the five lines show how the effect of
+VAA advice to choose a party shortly before the elections (x-axis) on the probability to vote for that party at the elections (y-axis) is
+moderated by the number of prior positive considerations to vote for that party. The potential effect of obtaining VAA advice to vote
+for a specific party for a voter with only one positive considerations to vote for that party amounts to 31.8%. The genuine effect is
+limited to 5.2% (blank dot) if the fairly low probability is taken into account that a voter with only one positive considerations regarding a
+specific party would receive such VAA advice and to 2.1% (black dot) only if it is taken into account moreover that the majority of voters
+do not use a VAA. VAA: voting advice applications.
+
+
+
+VAA advice, but unlike the obtained VAA advice party                    final models explain moreover differences between parties,
+choice depends also in part on news about party successes               since extending the empty model with additional factors
+and failures according to the news. Although the same                   decreases the variance of the intercept across parties.
+structural determinants affect both VAA advice (model
+1b) and party choice (model 2b), model 2c shows that the
+obtained VAA advice adds significantly to the explanation               Potential effect size and genuine effect size
+of party choice. Voting for a party becomes more likely if              Regression coefficients from a multilevel logistic regres-
+the party was advised by any VAA (hypothesis 1a), but                   sion model are hard to interpret, among others because of
+decreases in case the party was not advised by any VAA                  their non-linearity. Moreover, they represent potential
+(hypothesis 1b) and in case of inconsistent advice from                 effects that indicate the difference between those who did
+different VAAs (hypothesis 1c). The negative coefficient                obtain a specific advice from a VAA and those who did not,
+for inconsistency (hypothesis 1c) is less strong than the               which easily leads to an overestimation of effect sizes as
+positive coefficient of VAA advice to vote for a party                  compared to the common sense notion of effect sizes. There-
+(hypothesis 1a), which implies that a party benefits from               fore, Figure 2 presents an analysis of genuine effects in
+recommendations from a VAA, even if another VAA does                    addition to potential effects. The genuine effect of a VAA
+not recommend the party. As compared to the effect of                   on the probability to switch parties is more modest than its
+VAA advice on party choice for the baseline category of                 potential effect for two reasons. First, the majority of voters
+checkers, the effect of VAA advice is stronger for the cate-            still does not use a VAA. Next, the probability to obtain
+gory of seekers (hypothesis 6a) and especially for the cate-            advice from a VAA to vote for a specific party is lowered
+gory of doubters (hypothesis 6b).                                       by a priori considerations in favour of other parties.
+   In short, VAA advice matters for party choice, even                      Figure 2 resembles the figures that are common in
+when controlled for structural determinants (hypotheses                 experimental research to show the potential effects of a
+hypothesis 2 to hypothesis 5) that affect both VAA advice               stimulus for various groups, with on the x-axis the distinc-
+and party choice. This conclusion is warranted also by other            tion between voters who did not and voters who did receive
+indicators of model fit. Since lower values of Akaike infor-            VAA advice to vote for a party. Figure 2 is based on aver-
+mation criterion (AIC) and deviance information criterion               age scores across parties and across elections. The values at
+(DIC) indicate a better fit, the final models 1b and 2c are             0% represent the potential chance to vote for a party, in the
+indeed superior to models 1a, respectively, 2a and 2b. The              case that none of the voters obtained a VAA advice.
+Kleinnijenhuis et al.                                                                                                         299
+
+
+Likewise, the values at 100% represent the potential chance         effects were smaller than for seekers and doubters. Genuine
+to vote for a party in the case all voters obtained a VAA           VAA effects are strongest if a voter holds no less and no
+advice. The five lines in Figure 2 represent the number of          more than one or two positive considerations towards a
+positive considerations to vote for a party, apart from VAA-        party – for example, prior vote choice, but undecided for
+advice. To enable a count of whether voters have 0, 1, 2, 3         which party to vote at the start of the campaign. For these
+or 4 positive considerations to vote for a party, the four          voters, the genuine effect of VAA advice amounts to 2.1%,
+considerations according to the multilevel regression               respectively, 2.5% – or three or four seats in the 150 seats
+results presented in Table 2 are weighted equally heavy             Parliament. Such large effects occur especially for large
+in Figure 2: party choice at the previous elections (hypoth-        parties, since having voted for a party at the previous elec-
+esis 2), the intention to vote for this party at the start of the   tions is already one positive consideration to vote once
+campaign (hypothesis 3), agreement with that party on               more for the same party.
+salient issues (hypothesis 4), and news about successes rather
+than failures of this party in one’s media (hypothesis 5).
+Figure 2 is therefore based on a dichotomization of the             Discussion
+continuum of values for issue agreement and news about              This article addressed the potential and genuine effect of an
+successes and failure. Figure 2 does not directly account           advice from voting advice applications (VAAs) on party
+for the difference between checkers, seekers and doubters           choice, while taking the ‘self-selection’ of advice from a
+nor for additional effects of using more than one VAA.              VAA into account. Self-selection of an obtained voting
+   The potential effect of VAA advice is simply the differ-         advice from a VAA means that voters with many prior pos-
+ence between the predicted values at 0% (voter did not use          itive considerations to vote for a party are also likely to
+a VAA or the party was not advised by the VAA) and 100%             obtain advice from a VAA to vote for that party. To tackle
+(party advised by VAA).5 The slopes of the five lines tell          self-selection effects, the current study employs two repre-
+already that the potential effect of VAA advice is strongest,       sentative three-wave panel survey studies in the Netherlands
+for voters with one positive consideration to vote for a            in the context of the 2010 and 2012 parliamentary elections
+party: due to positive VAA advice, their likelihood to vote         with a pre-campaign wave to tap antecedent variables that
+for the party increases with 31.8%, as compared to 15.9%,           affect both the VAA advice obtained and the final party
+16.7%, 5.2% and 5.2% for voters with zero, two, three or            choice, a wave immediately before the elections to tap VAA
+four positive considerations.                                       advice, and a post-election wave to tap party choice.
+   Let us now turn to the genuine effects that are repre-               Multilevel regression analysis shows that both party
+sented by the percentages associated with the black dots in         choice and the advice obtained from a VAA to vote for a
+the figure. Whether potential effects result in genuine             specific party depend in part on the same positive antece-
+effects is determined by the actual use of a VAA (40% of            dent considerations: the party voted for at the previous
+the voters) in combination with the likelihood that the VAA         elections, the party preferred at the start of the election
+gives a positive advice. Only 2.5% of voters without a              campaign, the party one agreed most with on salient issues
+single positive consideration to vote for a party use a VAA         at the start of the campaign and the party to which suc-
+and receive moreover advice to vote for that party, as can          cesses were attributed in self-selected media during the
+be seen from the horizontal position of the black dot on the        campaign – the effect of the latter on the obtained VAA
+zero positive considerations line. The corresponding genu-          advice was however insignificant. In spite of their common
+ine effect of a VAA amounts to 0.4% only, as compared to            origin in positive antecedent considerations, VAA advice
+the potential effect of 15.9%. The percentages at the blank         adds nevertheless significantly to an explanation of the
+dots show VAA effects that would have occurred if instead           final party choice.
+of 40% of the voters all voters would have used a VAA,                  Starting from a threefold typology based on previous
+with an unaltered distribution of VAA advice.                       research (van de Pol et al., 2014), effects were especially
+   Figure 2 shows that genuine effects of VAAs are dam-             strong for ‘seekers’ and ‘doubters’ as compared to check-
+pened for two different reasons: without any positive con-          ers. Politically sophisticated seekers most often use VAAs,
+siderations to vote for a party, the likelihood to vote for a       but less sophisticated doubters are influenced most heavily
+party increases only with 0.4% because the likelihood to            by the VAA advice, whereas checkers tend to vote for their
+obtain VAA advice in favour of that party is low. But with          favourite party even in the case of VAA advice in favour of
+more than two positive considerations to vote for a party, a        another party. The study shows moreover that advice from
+VAA advice in favour of a party adds only 1.0%, respec-             a VAA to vote for another party and inconsistent advice
+tively, 1.5% to the final vote choice because the majority of       from multiple VAAs diminish the probability to vote for a
+these voters will vote for that party even in the absence of        party.
+VAA advice. Voters with many positive considerations                    We delved into the question whether potential effects of
+already were defined as the reference category of ‘check-           obtaining the advice to vote for a specific party materialized
+ers’ in the multilevel model in Table 2, for whom VAA               as genuine effects, that is, whether voters actually used a
+300                                                                                                                      Party Politics 25(3)
+
+
+VAA and whether they obtained such advice. Genuine                       Notes
+effects were especially strong for voters who had enough                 1. Panel attrition was 35.6% and 31.1%, respectively. The insig-
+positive considerations in advance to obtain VAA advice                     nificant correlation coefficients between attrition after the first
+to vote for that party, but not enough positive considerations              or second wave with the intention to vote for a specific party as
+to vote for that party without additional VAA advice. Similar               measured in the first wave of the panel survey study shows that
+curvilinear effects have been demonstrated for effects of                   panel attrition did not affect the dependent variable in the
+political news on political behaviour (Zaller, 1992).                       research model.
+   The current individual level study on the impact of                   2. The three items were: When newspapers report about national
+VAAs on the vote given antecedent factors that affect both                  news, for example, news about government issues, how often
+the VAA advice obtained and electoral choice did not                        do you read that? If problems in our country are discussed in
+include factors at the party level and the level of VAA                     your presence, do you usually participate in the conversation,
+design. This study did not look, for example, at the issues                 do you listen with interest, don’t you listen or are you not
+that were addressed by VAAs, although the choice of issues                  interested? Are you very interested in political issues, fairly
+is extremely important in the light of agenda setting and                   interested, or not interested?
+issue ownership theories (Walgrave et al., 2009). The study              3. The five items were: Against all knowledge politicians prom-
+did not look at the question for which party a VAA was                      ise more than they can deliver.
+detrimental or beneficial (Alvarez et al., 2014).                           Ministers and State Secretaries pursue their own interests
+   The core message of this study is that VAAs exert a                      above all.
+small effect both on voters with predispositions that turn                  One becomes an MP through your political friends rather than
+them either into strong proponents or into strong opponents                 your abilities.
+of a party, but a strong effect on voters with no more and no               Most politicians are competent people who know what they
+less than one or two positive considerations to vote for a                  are doing.
+party. This result suggests a reason why VAAs may be used                   Politicians are able to resolve the most important problems.
+more often and may have stronger effects in multiparty                   4. This analysis is performed on a stacked ‘long’ data set with a
+systems than in majoritarian two-party systems in which                     row for each possible combination of respondents, parties and
+voters trust that they do dispose already over many con-                    election years, and as dependent variable a binary yes/no-vote
+siderations to vote for one of the two parties VAAs lead to                 variable. An alternative approach would have been to analyse a
+party switching especially if their advice is confirmed by                  ‘wide’ dataset with one row per respondent and party choice as
+other recent cues in the political campaign, for example, by                a nominal dependent variable in a multinomial logistic regres-
+trends in horse race news (Walgrave et al., 2008) as was                    sion. However, a multinomial model also estimates theoreti-
+shown in this study, or – although this was not investi-                    cally implausible cross-party influences, such as the extent to
+gated in the current study – by retrospective news about                    which the probability of voting for Labour is influenced by
+the performance of governing parties with respect to the                    news about successes for the Christian Democrats and a VAA
+issues of the campaign (Fiorina, 1981; Sanders and Gavin,                   advice to vote for the extreme right. We also tested random
+2004). VAAs make issues important for each of the cam-                      slope models with party-dependent slopes for VAA advice
+paigning parties, beyond owned issues on which they tra-                    effects, but these models did not add significantly to the expla-
+ditionally tend to focus (Budge and Farlie, 1983). VAAs                     natory power of a random intercept model (as measured by the
+may broaden the political debate by fostering parties to                    decrease of AIC and DIC).
+take issue positions on issues on which they would not                   5. As an alternative for multivariate regression models to esti-
+focus otherwise.                                                            mate potential effects, balanced entropy weighting has been
+                                                                            proposed as a way to simulate an experiment. The idea of
+Acknowledgements                                                            balanced entropy weighting is to simulate random assignment
+The authors would like to thank Wouter van Atteveldt and Yordan             to experimental stimuli by reweighting the many respondents
+Kutyiski for helpful assistance and the reviewers of Party Politics         in a (panel) survey (Hainmueller, 2012). Applied to this article
+for their very helpful comments.                                            respondents should be reweighted in such a way that VAA
+                                                                            users who obtained VAA advice to vote for a specific party
+                                                                            are statistically indiscernible from other voters with regard to
+Declaration of Conflicting Interests
+                                                                            the mean values of other independent variables (cf. hypotheses
+The author(s) declared no potential conflicts of interest with respect      2 to hypothesis 5) and possibly also with regard to their var-
+to the research, authorship, and/or publication of this article.
+                                                                            iance and their mutual correlations. This reweighting proce-
+                                                                            dure resulted in a highly significant logistic regression
+Funding                                                                     coefficient to measure the influence of a positive VAA advice
+The author(s) received no financial support for the research,               on the vote (t ¼ 10.0, p < 0.0001), corresponding to a potential
+authorship, and/or publication of this article.                             effect of VAA advice of 16%. The test shows to be robust for
+Kleinnijenhuis et al.                                                                                                                 301
+
+
+   differences in balanced reweighting schemes (means only, also          in observational studies. Political Analysis 20: 25–46. DOI:
+   variances, also correlations).                                         10.1093/pan/mpr025.
+                                                                      Hanel K and Schultze M (2014) Analyzing the political commu-
+                                                                          nication patterns of voting advice application users. Interna-
+References                                                                tional Journal of Internet Science 9: 31–51.
+Alvarez RM, Levin I, Mair P, et al. (2014) Party preferences in the   Holleman B, Kamoen N, Krouwel A, et al. (2016) Positive vs.
+   digital age: the impact of voting advice applications. Party           Negative: the impact of question polarity in voting advice
+   Politics 20: 227–236.                                                  applications. PloS One 11: e0164184.
+Andreadis I. and Wall M. (2014). The impact of voting advice          Huckfeldt RR and Sprague J (1995) Citizens, Politics and Social
+   applications on vote choice. In Garzia D. and Marschall S.             Communication: Information and Influence in an Election
+   (eds) Voting Advice Applications in a Comparative Perspec-             Campaign. Cambridge: Cambridge University Press.
+   tive. Colchester: ECPR Press, pp. 115–128.                         Israel J, Marschall S and Schultze M (2016) Cognitive dissonance
+Banducci S and Hanretty C (2014) Comparative determinants of              and the effects of voting advice applications on voting beha-
+   horse-race coverage. European Political Science Review 6:              viour: evidence from a laboratory experiment at the European
+   621–640.                                                               elections 2014. Journal of Elections, Public Opinion and
+Berglund F, Holmberg S, Schmitt H, et al. (2005) Party identifi-          Parties 27: 56–74. DOI: 10.1080/17457289.2016.1268142.
+   cation and party choice. In: Thomassen JJA (ed.) The               Iyengar S, Norpoth H and Hahn KS (2003) Consumer demand
+   European Voter: A Comparative Study of Modern Democra-                 for election news: the horse race sells. Journal of Politics 66:
+   cies. Oxford: Oxford University Press, pp. 106–123.                    157–175.
+Bleske GL and Zhao X (1998) Horse-race polls and audience             Kamoen N, Holleman B, Krouwel A, et al. (2015) The effect of
+   issue learning. The Harvard International Journal of Press/            voting advice applications on political knowledge and vote
+   Politics 3: 13–34.                                                     choice. Irish Political Studies 30: 595–618.
+Boomgaarden HG, Schuck ART, Elenbaas M, et al. (2011) Map-            Kleinnijenhuis J and Pennings P. (2001) Measurement of party
+   ping EU attitudes: conceptual and empirical dimensions of              positions on the basis of party programmes, media coverage
+   Euroscepticism and EU support. European Union Politics                 and voter perceptions. In: Laver M (ed.) Estimating the Policy
+   12: 241–266.                                                           Positions of Political Actors. London and New York: Routle-
+Budge I and Farlie DJ (1983) Explaining and Predicting Elec-              dge, pp. 162–182.
+   tions: Issues Effects and Party Strategies in Twenty-Three         Kleinnijenhuis J, Scholten O, van Atteveldt W, et al. (2007a)
+   Democracies. London: George, Allen and Urwin.                          Nederland vijfstromenland: de rol van media en stemwijzers
+Campbell A, Converse PE, Miller WE, et al. (1960) The American            bij de verkiezingen in 2006. Amsterdam: Bert Bakker.
+   Voter. New York: Wiley.                                            Kleinnijenhuis J, Van Hoof AMJ, Oegema D, et al. (2007b) A test of
+Dassonneville R and Dejaeghere Y (2014) Bridging the ideologi-            rivaling approaches to explain news effects: news on issue posi-
+   cal space: a cross-national analysis of the distance of party          tions of parties, real world developments, support and criticism,
+   switching. European Journal of Political Research 53: 580–             and success and failure. Journal of Communication 57: 366–384.
+   599.                                                               Krouwel A (2012) Party Transformations in European Democra-
+Dinas E, Trechsel AH and Vassil K (2014) A look into the mirror           cies. Albany: SUNY Press.
+   preferences, representation and electoral participation.           Ladner A, Fivaz J and Pianzola J (2012) Voting advice applications
+   Electoral Studies 36: 290–297.                                         and party choice: evidence from smartvote users in Switzerland.
+Enyedi Z (2016) The influence of voting advice applications on            International Journal of Electronic Governance 5: 367–387.
+   preferences, loyalties and turnout: an experimental study.         Ladner A and Pianzola J (2010) Do voting advice applications
+   Political Studies 64: 1000–1015. DOI: 10.1111/1467-9248.               have an effect on electoral participation and voter turnout?
+   12213.                                                                 Evidence from the 2007 Swiss federal elections. In: Tambouris
+Fiorina M (1981) Retrospective Voting in American National                E, Macintosh A and Glassey O (eds.), Electronic Participa-
+   Elections. New Haven: Yale University Press.                           tion. Berlin / Heidelberg / New York: Springer, pp. 211–224.
+Garzia D and Marschall S (2012) Voting advice applications            Lefevere J and Walgrave S (2014). A perfect match? The impact
+   under review: the state of research. International Journal of          of statement selection on voting advice applications’ ability to
+   Electronic Governance 5: 203–222. DOI: 10.1504/IJEG.2012.              match voters and parties. Electoral Studies, 36: 252–262. DOI:
+   051309.                                                                10.1016/j.electstud.2014.04.002.
+Garzia D, Trechsel AH, Vassil K, et al. (2014) Indirect campaign-     Levendusky MS (2011) Rethinking the role of political informa-
+   ing: past, present and future of voting advice applications. In:       tion. The Public Opinion Quarterly 75: 42–64.
+   Grofman B, Trechsel A and Franklin MN (eds.) The Internet          Louwerse T and Rosema M (2014) The design effects of voting
+   and Democracy in Global Perspective. Heidelberg / New York             advice applications: comparing methods of calculating
+   / Dordrecht / London: Springer, pp. 25–41.                             matches. Acta Politica 49: 286–312.
+Hainmueller J (2012). Entropy balancing for causal effects: A         Marschall S and Schultze M (2012) Voting advice applications
+   multivariate reweighting method to produce balanced samples            and their effect on voter turnout: the case of the German Wahl–
+302                                                                                                                      Party Politics 25(3)
+
+
+   O–Mat. International Journal of Electronic Governance 5:               Van der Meer TWG, van Elsas E, Lubbe R, et al. (2015) Are
+   349–366.                                                                  volatile voters erratic, whimsical or seriously picky? A panel
+Mughan A (2015) Parties, conditionality and leader effects in                study of 58 waves into the nature of electoral volatility (The
+   parliamentary elections. Party Politics 21: 28–39.                        Netherlands 2006–2010). Party Politics 21: 100–114.
+Mutz DC. (1997) Mechanisms of momentum: does thinking make                Walgrave S, Lefevere J and Tresch A (2012) The associative
+   it so? The Journal of Politics 59: 104–125.                               dimension of issue ownership. Public Opinion Quarterly 76:
+Otjes S and Louwerse T. (2014) Spatial models in voting advice               771–782.
+   applications. Electoral Studies 36: 263–271.                           Walgrave S, Nuytemans M and Pepermans K (2009) Voting aid
+Patterson TE (1993) Out of Order. New York: Knopf.                           applications and the effect of statement selection. West
+Petrocik JR (1996) Issue ownership in presidential elections, with           European Politics 32: 1161–1180.
+   a 1980 case study. American Journal of Political Science 40:           Walgrave S, Van Aelst P and Nuytemans M (2008) ‘Do the vote
+   825–850.                                                                  test’: the electoral effects of a popular vote advice application
+Pianzola J (2014a) Selection biases in voting advice application             at the 2004 Belgian elections. Acta Politica 43: 50–70.
+   research. Electoral Studies 36: 272–280.                               Wall M, Krouwel A and Vitiello T (2014) Do voters follow
+Pianzola J (2014b) Swing voting due to smartvote use? Evidence               the recommendations of voter advice application websites?
+   from the 2011 Swiss federal elections. Swiss Political Science            A study of the effects of kieskompas.nl on its users’ vote
+   Review 20: 651–677.                                                       choices in the 2010 Dutch legislative elections. Party
+Rattinger H and Wiegand E (2014) Volatility on the Rise? Attitu-             Politics 20: 416–428.
+   dinal stability, attitudinal change and voter volatility. In: Weßels   Webels B, Rattinger H, Robteutscher S, et al. (2014) The chang-
+   B, Rattinger H, Roßteutscher S, et al. (eds) Voters on the Move           ing context and outlook of voting. In: Webels B, Rattinger H
+   or on the Run. Oxford: Oxford University Press, pp. 287–309.              and Robteutscher S. (eds.), Voters on the Move or on the Run?
+Rose R and McAllister I (1986) Voters Begin to Choose: From                  Oxford: Oxford University Press, pp. 3–14.
+   Closed Class to Open Elections in Britain. London: Sage                Zaller JR (1992) The Nature and Origins of Mass Opinion.
+   Publications.                                                             Cambridge: Cambridge University Press.
+Rosema M, Anderson J and Walgrave S (2014) The design, pur-
+   pose, and effects of voting advice applications. Electoral Stud-       Author biographies
+   ies 36: 240–243. DOI: 10.1016/j.electstud.2014.04.003.
+Ruusuvirta O and Rosema M (2009) Do online vote selectors                 Jan Kleinnijenhuis (PhD 1990, Vrije Universiteit) is a professor
+   influence electoral participation and the direction of the vote?       of communication science at the Vrije Universiteit Amsterdam.
+   Paper presented at the ECPR General Conference, Potsdam,               Jasper van de Pol (PhD 2016, University of Amsterdam) is a
+   10-12 September 2009.                                                  university lecturer at the Amsterdam School of Communication
+Sanders D and Gavin N (2004) Television news, economic per-               Research at the University of Amsterdam.
+   ceptions and political preferences in Britain, 1997–2001. The
+                                                                          Anita MJ van Hoof (PhD 2000, Radboud University Nijmegen)
+   Journal of Politics 66: 1245–1266.
+                                                                          is an assistant professor at the department of Communication
+Thomassen JJA (1976) Party identification as a cross-national con-        Science at the Vrije Universiteit Amsterdam.
+   cept: its meaning in the Netherlands. In: Budge I, Crewe I and
+   Farlie DJ (eds) Party Identification and Beyond, Representations       André PM Krouwel (PhD 1999, Vrije Universiteit Amsterdam)
+   of Voting and Party Competition. London: Wiley, pp. 63–79.             is an associate professor at the departments of Communication
+van de Pol J, Holleman B, Kamoen N, et al. (2014) Beyond young,           Science and Political Science at the Vrije Universiteit Amsterdam,
+                                                                          the developer of the Dutch Vote Advice Application Kieskompas
+   higher educated males: a typology of VAA users. Journal of
+                                                                          and a co-developer of vote advice applications like Electoral
+   Information Technology & Politics 11: 397–411.
+                                                                          Compass, EUProfiler and EUVox.
+

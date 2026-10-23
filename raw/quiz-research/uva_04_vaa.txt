@@ -1,0 +1,808 @@
+UvA-DARE (Digital Academic Repository)
+
+
+
+
+Voting wiser
+The effect of Voting Advice Applications on political understanding
+van de Pol, J.
+
+
+Publication date
+2016
+Document Version
+Other version
+License
+Other
+Link to publication
+
+
+Citation for published version (APA):
+van de Pol, J. (2016). Voting wiser: The effect of Voting Advice Applications on political
+understanding. [Thesis, fully internal, Universiteit van Amsterdam].
+
+
+
+
+General rights
+It is not permitted to download or to forward/distribute the text or part of it without the consent of the author(s)
+and/or copyright holder(s), other than for strictly personal, individual use, unless the work is under an open
+content license (like Creative Commons).
+
+
+Disclaimer/Complaints regulations
+If you believe that digital publication of certain material infringes any of your rights or (privacy) interests, please
+let the Library know, stating your reasons. In case of a legitimate complaint, the Library will make the material
+inaccessible and/or remove it from the website. Please Ask the Library: https://uba.uva.nl/en/contact, or a letter
+to: Library of the University of Amsterdam, Secretariat, P.O. Box 19185, 1000 GD Amsterdam, The Netherlands.
+You will be contacted as soon as possible.
+
+
+
+
+UvA-DARE is a service provided by the library of the University of Amsterdam (https://dare.uva.nl)
+
+
+Download date:23 10月 2026
+Chapter 4
+
+Pushing the Voting Advice Left
+or Right:
+Identifying Framing Effects in
+a Field Experiment
+
+
+
+
+             78
+                                                                4.1. Introduction         79
+
+
+    Abstract
+
+    The rise of Voting Advice Applications (VAAs) is one of the most significant devel-
+    opments in internet-based political communication over the past decade. VAAs
+    provide voting recommendations to millions of people. As these voting recom-
+    mendations are based on users’ answers to attitude questions, framing these ques-
+    tions can have far-reaching consequences. In a large-scale randomized field exper-
+    iment using an actual VAA, we studied the effects of minimal differences in the way
+    attitude questions are framed. We found a modest across-the-board effect of issue
+    framing on the answers that was in line with our expectations. The study is a first
+    demonstration of how framing differences may affect people’s political attitudes
+    in a natural political choice environment.
+
+
+4.1 Introduction
+
+    Framing can shape public opinion through individuals’ perceptions of political issues
+    and choices in many ways. Framing effects, though, might also be directly relevant to
+    the voting considerations of large groups. Voting Advice Applications (VAAs) form
+    an important context in which framing effects can have direct and far-reaching con-
+    sequences. Before casting their ballot, a large and increasing number of voters in and
+    beyond Europe pay a visit to these web applications in order to receive a voting advice.
+    VAAs ask their users to report their attitudes to a set of policy statements. An algo-
+    rithm compares users’ attitudes to party positions, after which the VAA tells its users
+    which party matches their issue positions best, and to what extent users agree with all
+    other competing parties. Most of these VAAs have self-proclaimed aims of providing
+    a neutral and balanced overview of the issue agreement with each party (Garzia &
+    Marschall, 2014; Van Camp, Lefevere, & Walgrave, 2014). Since the VAA recommen-
+    dations are based on policy statements, the framing of these statements potentially
+    impacts the attitudes people report, and hence the voting advice a substantial share of
+    the electorate receives from these applications.
+        The way an issue or attitude question is framed can greatly affect people’s attitudes
+    (Chong & Druckman, 2007). More people, for instance, are willing to tolerate a Ku
+    Klux Klan meeting if this is framed as a free speech issue than when framed as a threat
+    to public order (Nelson, Clawson, & Oxley, 1997); more egalitarians agree with govern-
+    ment support for poor people if that action is framed as giving them a ‘better chance
+    of getting ahead’ rather than when it is framed as leading to higher taxes (Sniderman
+    & Theriault, 2004); and ‘climate change’ is considered an actual phenomenon by more
+    Republicans than ‘global warming’ is (Schuldt, Konrath, & Schwarz, 2011). The atti-
+    tude questions or statements included in Voting Advice Applications have the same
+    80       Chapter 4. Pushing the Voting Advice Left or Right
+
+
+    potential of steering the attitudes people report to them. Each policy issue is captured
+    in a statement of one or two sentences, often accompanied by a few keywords classify-
+    ing the policy theme of the issue. When answering these statements, users have little
+    information to navigate on. If a particular frame directs people’s attitudes in a certain
+    direction, this will affect the voting advice that people receive. This is relevant since
+    several studies found evidence of a persuasive effect of this voting advice on people’s
+    actual vote choices (Alvarez, Levin, Mair, & Trechsel, 2014; Wall, Krouwel, & Vitiello,
+    2012). Yet there is a paucity of knowledge about the extent to which the framing of
+    policy statements in VAAs affects reported attitudes. This is exactly the aim of our
+    study: A large-scale randomized field experiment using a real-world VAA is carried
+    out to, for the first time, test framing effects of VAA statements. The field experiment
+    allows us to test framing effects in an unobtrusive way, in a naturalistic setting, with
+    great internal and ecological validity, combining the advantages of experiments with
+    the call for increased realism in framing research (e.g. De Vreese, 2012). Our research
+    question is: To what extent does the way issues are framed in VAAs affect the attitudes
+    people report towards these issues?
+         Apart from applying and testing framing theory in this potentially highly relevant,
+    natural context, this study is also important to the emerging field of VAA research.
+    Extant research has shown that aspects of the VAA design influence the voting advice
+    people receive, such as the selection and number of statements (Lefevere & Walgrave,
+    2014), the way the match between users and each party is presented, and the algorithm
+    used to calculate this match (Louwerse & Rosema, 2014). Statement framing is a cru-
+    cial way in which design aspects of VAAs can – intentionally or not – affect the voting
+    recommendations received. The fact that VAAs are frequented by large numbers of
+    people – up to 52% of voters during Dutch national elections (Stemwijzer), 30% in
+    Germany (Wahl-O-Mat), 36% in Finland (Vaalikone), and 30% in Sweden (Valkom-
+    passen) (Marschall, 2014) stresses the urgency of studying framing effects in VAAs.
+
+
+4.2 Issue Framing
+
+    Voting Advice Applications are intended to make politics more comprehensible for the
+    general public (De Graaf, 2010; Garzia & Marschall, 2014). The way political issues
+    are perceived depends on the problem definitions that are put forward by different
+    frames (Entman, 1993). When VAA developers formulate issue statements, inevitably
+    they offer users a frame. For instance, consider the statement, “Free market competi-
+    tion makes the health care system function better” (http://www.euvox2014.eu/):
+    This formulation surely activates different associations and considerations compared
+    to an alternative statement, “Nationalization of health care companies leads to a bet-
+    ter functioning health care system”. Likewise, the headers many VAAs provide with
+                                                          4.2. Issue Framing         81
+
+
+the statements also carry a particular problem definition. The statement mentioned
+before had a header indicating this is an Economy issue, but it could equally well have
+been Health care, which might have highlighted different aspects of the issue.
+     Different headings and different ways of phrasing the statements are examples of
+frames employed by statements in VAAs. Over the past decades, scholars have gath-
+ered a vast amount of evidence of the effect of framing on public opinion (Chong &
+Druckman, 2007; De Vreese, 2012; Druckman, 2001a). Within political communica-
+tion, framing effects have been classified in two broad categories (Borah, 2011; Cac-
+ciatore, Scheufele, & Iyengar, 2016; Druckman, 2001b; Matthes, 2007). Equivalence
+framing, often found in psychological research and economic rational-choice litera-
+ture, exists of “two logically equivalent (but not transparently equivalent) statements
+of a problem [that] lead decision makers to different options” (Rabin, 1998, p. 36).
+The famous experiment by Kahneman and Tversky (1979) is often cited in this con-
+text, in which was demonstrated that people are inclined to be risk averse if a dilemma
+is framed in terms of gains and risk taking if the same dilemma is framed in terms of
+losses.
+     The second category of framing research, called emphasis framing, is most often
+studied within the field of media effects (Matthes, 2007) and uses a more relaxed def-
+inition of framing which supposedly better reflects the “complexity of everyday com-
+munication environments, where attitude formation is likely driven by an interplay of
+complementary or competing frames” (Matthes, 2007, p. 5) and is therefore more re-
+flective of most actual political communication (Druckman, 2001a; Scheufele & Iyen-
+gar, 2012). Many studies in this field use the definition of framing by Gamson and
+Mogdiliani (1987, p. 143): Framing as a “central organizing idea or story line that
+provides meaning to an unfolding strip of events, weaving a connection among them.
+The frame suggests what the controversy is about, the essence of the issue”. For ex-
+ample, Valkenburg, Semetko, and De Vreese (1999) found that news stories with a
+human-interest frame, emphasizing an individual’s story or emotional aspects of the
+issue, made readers focus on individual implications and emotions more often in their
+responses. The same story with a frame emphasizing conflict between involved parties
+inspired readers to report thoughts about conflicts more often. Literature on empha-
+sis framing has often received the criticism that their definition of framing is too re-
+laxed and inclusive (Entman, 1993; Scheufele, 1999; Scheufele & Iyengar, 2012). Oper-
+ationalizations are context-specific and the distinction between frames and messages
+has become thin, which hinders the generalizability of framing effects.
+     In our field experiment, we overcome these drawbacks by using an operational-
+ization of emphasis framing that is close to equivalence framing: We study the effect
+of changing the header that comes with the VAA question, while keeping the attitude
+question the same, so nothing is changed to the underlying issue. The headers em-
+82       Chapter 4. Pushing the Voting Advice Left or Right
+
+
+phasize one side of the issue and ignore other considerations people might have with
+regard to the issue. In this way, we argue, we employ an internally valid test of the em-
+phasis framing effect in a real-world context, and comply with the notion of framing
+in the ‘strict sense’, as Sniderman and Theriault (2004) put it: “Semantically distinct
+conceptions of exactly the same course of action which induce preference reversals”.
+In many previous emphasis-framing studies, subjects might have reported different
+attitudes in response to different frames, not because their opinion are affected in re-
+sponse to the frame, but because the content or issue they were responding to was
+slightly different across frames (Cacciatore et al., 2016). Using our operationalization,
+any effect of framing would demonstrate that users of a VAA form their opinions in
+response to the framing of questions the application asks, rather than revealing pre-
+existing ‘true attitudes’ (cf. Zaller, 1992, p. 33).
+     Druckman (2001a) argues that if people’s opinions are partly dependent on the
+way issues are framed, this raises concerns regarding the competence of citizens to
+fulfill the role they have been ascribed in a democracy. Two broadly shared criteria
+of citizen competence are that people’s political opinions should not be subject to “ar-
+bitrary aspects of how an issue or problem is described” or to “elite manipulation”
+(2001a, 232–233). These criteria are especially relevant to the study of framing effects
+in VAAs: The point of departure of VAAs is people’s political opinions. VAAs assume
+that the attitudes reported by users reflect their authentic opinions on the matter (An-
+derson & Fossen, 2014) and base their voting recommendations on this assumption.
+Any persuasive effect of the voting advice on people’s vote choices would be problem-
+atic if users’ responses to the statements in VAAs do reflect other factors than just the
+users’ pre-existing attitudes.
+     Nonetheless, the general finding in framing research is that people tend to adapt
+their opinion in the direction of a frame: If a frame motivates them to think positively
+about a course of action, people are inclined to agree with it; if a frame draws attention
+to negative aspects or consequences, people will more likely oppose (Sniderman and
+Theriault 2004; Zaller 1992). Previous literature has suggested several models of the
+mechanisms driving framing effects – some of which assume direct effects on public
+opinion and some assuming indirect effects (De Vreese, Boomgaarden, & Semetko,
+2011). One account of an indirect framing effect is that a change in opinion is driven
+by a change to the weight of considerations (reasons to favor or oppose an issue) peo-
+ple hold about the issue at hand. Frames increase the weight or importance of particu-
+lar considerations by emphasizing a certain aspect of an issue and downplaying other
+aspects (Gamson & Mogdiliani, 1987; Nelson, Oxley, & Clawson, 1997). Another indi-
+rect framing effect, suggested by, amongst others, Cappella and Jamieson (1997) is that
+frames make certain considerations more accessible. Frames could also affect opinions
+in a direct way by changing the content of considerations about the issue. Especially
+                                                           4.2. Issue Framing         83
+
+
+when an issue is new for citizens, frames can add new considerations and links be-
+tween considerations, changing the balance of considerations in people’s minds and
+altering the attitudes people hold (De Vreese et al., 2011; Lecheler & De Vreese, 2012;
+Slothuus, 2008; Zaller, 1992, p. 119). Empirical evidence on which mechanism is
+driving framing effects on opinion is yet inconclusive (De Vreese, Boomgaarden, and
+Semetko, 2011), but scholars agree on the outcome of the process: Frames generally
+have the power to push people’s attitudes in the suggested direction.
+     This ‘direction’ could be conceptualized in several ways. Within VAAs, many is-
+sues can be organized along the left-right continuum (Van Camp et al., 2014). Like
+in many Western democracies, in the Netherlands this is the dominant way political
+views are organized (De Vries, Hakhverdian, & Lancee, 2013; Van der Eijk, Schmitt,
+& Binder, 2005). It is therefore possible to heap together a variety of political per-
+spectives under the categories “left” and “right” in a fairly consistent way, and study
+whether people tend to follow these frames. Slothuus and De Vreese (2010) find that
+people are inclined to follow frames supported by different political parties on this
+left-right axis, regardless of their own political orientation. Similarly, and consistent
+with previous research on issue framing, we expect VAA users to report more right-
+wing opinions when the statement is presented with a header emphasizing right-wing
+considerations to an issue. In contrast, when a statement comes along with a header
+emphasizing left-wing aspects to an issue, we expect users to report on average more
+left-wing opinions in VAAs.
+
+ H1    When exposed to a right-wing frame, VAA users report more right-wing
+       opinions than when exposed to a left-wing frame and vice versa.
+
+As Entman (1993) notes, it is certainly possible that people recall facts and make asso-
+ciations not suggested by the frame, and therefore the particular framing of a subject
+would not affect their thoughts about the topic. Users might have crystallized opinions
+about certain issues that are covered by VAAs, especially when statements are about
+key issues in the election campaign. After all, issues in VAAs are selected based on po-
+litical salience (Van Camp, Lefevere, and Walgrave 2014). If users do have very clear
+opinions about an issue, they should be more resistant to the framing of this issue, and
+this is more likely to happen if someone is more politically interested or aware (cf. Con-
+verse, 1964). Those with more interest will usually more often follow political news,
+more often inform themselves about parties and issues, and have more discussions
+about politics with people around them. Hence, they are more likely to have thought
+about political issues, before they are asked about these issues in VAAs. Delli Carpini
+and Keeter (1996) indeed found self-reported political interest to correlate strongly
+with all dimensions of political knowledge. Zaller (1992) and Sniderman and Theri-
+ault (2004) argue that people who are more interested in and informed about politics
+    84       Chapter 4. Pushing the Voting Advice Left or Right
+
+
+    are more likely to have opinions that are stable and consistent with their ideology, and
+    also find support for this. Regardless of the framing condition, Sniderman and The-
+    riault (2004) found that better-informed citizens more often report opinions that are
+    consistent with underlying principles they endorse. This would also be in line with the
+    theory, discussed above, that framing effects are driven by a change to the content of
+    people’s considerations: Since less interested citizens have fewer considerations about
+    issues included in VAAs, they will be more susceptible to new considerations offered
+    by the frame. Hence, we predict the following:
+
+     H2a    Political interest moderates the framing effect such that the less one is inter-
+            ested in politics, the stronger one is affected by the framing.
+
+    By contrast, if framing effects are driven by a change in the weight of considerations
+    in people’s minds, those who are more interested in politics should be affected more
+    strongly by the framing of issues. Slothuus (2008) and Nelson et al. (1997) argue
+    that before a frame or message could change the weight of considerations in people’s
+    minds, they need to be equipped with issue-relevant considerations in the first place.
+    Cacciatore, Scheufele and Iyengar (2016) also argue that “an audience member’s pre-
+    existing cognitive schema or knowledge structures will determine the degree to which
+    a frame will resonate” (p. 13). More politically aware or interested citizens are more
+    likely to be exposed to and actively process political messages, and will more often be
+    able to comprehend frames and relate them to their own cognitive schemas or consid-
+    erations (see also Lecheler & De Vreese, 2012). Support for this theory was reported
+    by Nelson et al. (1997) and Slothuus (2008): Both found that informed citizens put
+    more weight on the considerations on welfare spending suggested by the frame, while
+    uninformed citizens were not susceptible to the framing of the issue. Lecheler and
+    De Vreese (2012), however, found that the most politically aware citizens most often
+    showed a change in the content of considerations. These findings, however, all point
+    towards a stronger framing effect among citizens with more political interest. Our
+    alternative hypothesis therefore is:
+
+     H2b    Political interest moderates the framing effect such that the more one is in-
+            terested in politics, the stronger one is affected by the framing.
+
+
+
+4.3 Methods
+
+    To test our hypotheses, a randomized field experiment was carried out during the cam-
+    paign for the municipality elections in Utrecht, a large Dutch city. For this experiment
+    we collaborated with the Voting Advice Application Kieskompas, which is the second
+                                                                               4.3. Methods              85
+
+
+most well-known VAA in the Netherlands (after Stemwijzer)1 . Kieskompas was online
+for 30 days, during which 41,505 people accessed the website . People who visited the
+website were randomly assigned to one of five versions of the website2 . Like many
+VAAs, Kieskompas places a header above every statement indicating the issue theme,
+e.g., ‘Economy’ or ‘Nature & Environment’. We operationalized the framing of the
+statements by manipulating the headers. Each manipulated statement had either a
+right-wing or a left-wing header. To ensure ecological validity, we only used headers
+that normally would be used by a VAA, and that were relevant to the issue at stake.
+The left-wing headers we used are Nature & Environment, Social policy and Culture &
+Education. Right-wing headers are Mobility, Safety, Building & Living, Finances and
+Economy. Studies of issue ownership confirm these are the issues associated with left-
+wing and right-wing parties (e.g., Walgrave, Lefevere, & Tresch, 2012)3 . Figure 4.1
+shows an example of the stimulus material for one of the 17 manipulated statements.
+     Version A of the VAA was developed according to the standard procedure at Kies-
+kompas (see for a discussion on this procedure: Krouwel, Vitiello, & Wall, 2012), and
+did not include headers. Based on this benchmark version, four alternative versions
+(B-E) were created in which issue framing and polarity was varied, in a 2 (left-wing
+and right-wing framing) × 2 (polarity) design. Polarity was manipulated by present-
+ing either positively or negatively formulated statements; this is not reported in this
+study4 . An overview of all 17 manipulated statements and corresponding left-wing
+and right-wing headers, translated from Dutch, is shown in Table 4.1. Users of the
+VAA were asked to what extent they agree with each statement, on a five-point scale
+from ‘completely agree’ to ‘completely disagree’ (or ‘no opinion’). The dependent vari-
+able in this study is the score on this variable: We test whether people, in a left-wing
+framing condition, more often agree with a left-wing statement and more often dis-
+agree with a right-wing statement. Similarly, we expect people to more agree with a
+right-wing statement in a right-wing framing condition. The moderator political in-
+terest was measured before Kieskompas users were directed to the statements (“How
+
+    1
+       Utrecht University, the Dutch Science Foundation and the Utrecht City Council approved the
+project description prior to fielding the study. Participation in the survey was voluntarily and partici-
+pants could stop at any time.
+     2
+       In the municipality of Utrecht, 258,087 people were eligible to vote and 139,989 eventually did cast
+a vote. If all visitors to Kieskompas would be unique visitors, 29.7% of the voters consulted Kieskompas
+     3
+       Left-wing parties are associated with more state intervention and ensuring equal opportunities
+through education and social support while right-wing parties usually emphasize smaller governments,
+economic growth and less regulations. Walgrave et al. (2012) observed in Belgium (which has an elec-
+toral system comparable to the Dutch) that left-wing parties such as the Greens and the Socialists are
+associated with issues like environment, social security and culture, while right-wing parties such as the
+Liberals are associated with issues like taxes, economy and crime
+     4
+       As the effect of question headings interacted with the effect of the polarity for only two statements,
+which is what one could expect based on chance, we decided to report the effect of polarity elsewhere.
+86       Chapter 4. Pushing the Voting Advice Left or Right
+
+
+
+
+Figure 4.1: Issue frames for statement 2. The statement says “The charges for parking
+can be raised”; the left-wing heading is “Nature and environment” and the right-wing
+heading is “Mobility”
+                                                                                   4.3. Methods             87
+
+
+      interested are you in politics?” – M = 3.3, SD = 0.8, range 1 – 5). This question was
+      answered by 70.7% of the people included in our analyses.
+
+
+4.3.1 Participants
+      A total of 41,505 people visited Kieskompas. We included in our analyses those who
+      were eligible to vote (18 years or older), who took more than two minutes to fill out all
+      statements, and who did not give show straight-lining behavior. In addition, we only
+      included people who were assigned to one of the four experimental conditions instead
+      of the benchmark version. Since the benchmark version does not feature any headers,
+      we are not comparing frames when we include this version in the analyses5 . The result-
+      ing sample consists of 31,112 Kieskompas users. Except for people who were excluded
+      because of the reasons listed above6 , the respondents make up the complete popula-
+      tion of users of one of the two major VAAs available in the municipality elections of
+      the city of Utrecht.
+          Our experiment is naturalistic in every dimension. The intervention we are study-
+      ing resembles a real-world phenomenon (framing by headers in VAAs), the partici-
+      pants are those who would normally encounter these frames, the context is an actual
+      VAA and the outcome we measure is the exact outcome of interest: attitudes reported
+      to VAA statements (cf. Gerber & Green, 2012).
+          A randomization check showed that VAA users in the different conditions did not
+      differ significantly, or substantially, on age (F (3, 22207) = 1.58; p = .19), gender (χ 2 (3)
+      = 2.90; p = .41), educational level (χ 2 (3) = 11.90; p = .85) or interest in politics (F (3,
+      21990) = 0.34; p = .80).
+
+
+4.3.2 Analysis
+      The dependent variable in this study is the opinion reported by users of the VAA on
+      a series of statements. Two kinds of analyses were carried out. Firstly, a multivariate
+      regression is performed for the framing effect on each statement, and secondly, the
+      framing effect is considered for all statements at once in an inclusive cross-classified
+      multilevel model. The multivariate regression, in which the framing condition is the
+      only independent variable and the opinion on each statement is a separate dependent
+          5
+             In addition, the polarity of statements in the benchmark version does not align with two of the
+      four experimental versions (for some statements the polarity in version A aligns with version B and D,
+      for other statements with the polarity in version C and E). For this reason it is not possible to include
+      version A in a ML analysis.
+           6
+             By far the largest portion of the excluded respondents was excluded because they were in the bench-
+      mark condition, which means they are a completely random subsample of the population of Kieskompas-
+      users.
+      88       Chapter 4. Pushing the Voting Advice Left or Right
+
+
+      variable, has as advantage that the framing effect could be tested for each statement,
+      while preventing an inflation of Type I error chance. The advantage of the second
+      analysis is that an estimation of the general effect is obtained (also preventing a Type
+      I-error-inflation); however, this also brings some challenges. The statements of VAAs
+      are selected to cover a wide range of issues and to discriminate between parties (Van
+      Camp, Lefevere, and Walgrave 2014), which results in small correlations between an-
+      swers to each statement. This large between-statement variance, together with the
+      small number of statements, makes it difficult to isolate a general framing effect across
+      the statements. On the other hand, the large N in our study allows for very precise es-
+      timation of this effect (Hox, 2010).
+
+
+ 4.4 Results
+
+4.4.1 Single statements
+      Table 4.1 provides an overview of all 17 statements included in the framing experiment,
+      the averages for both framing conditions, and the results of a multivariate regression
+      analysis comparing these averages. Figure 4.2 shows the confidence intervals for the
+      framing effect on each statement.
+           In about one-third of the statements, we find significant differences. More people
+      agree to the statement “Cars that pollute most should be banned from the city center”
+      if the header indicates this is a Nature & Environment issue, compared to a Mobility
+      issue (b = 0.041, p = .018). Second, more people agree with the statement “In bad
+      neighborhoods, the municipality is allowed to tear down social housing” if the accom-
+      panying frame is Social policy instead of Safety (b = 0.067, p < .001). Third, there is a
+      framing effect for the statement “The municipality can build houses in the Rijnenburg
+      polder”; more people agree if this is framed as a Building & Living issue instead of a
+      Nature & Environment issue (b = 0.031, p = .023). Fourth, when framed as a Culture
+      & Education issue instead of a Finance issue, more people agree that “The municipal-
+      ity should invest extra money to fight children’s language deficiencies” (b = 0.085, p
+      < .001). And fifth, more people agree to the statement “Everyone on social security
+      should be forced to do volunteering work, or his benefits will be cut back” if this was
+      accompanied by the frame Economy instead of Social policy (b = 0.027, p = .049). For
+      other statements the framing did not significantly affect reported opinions. Except for
+      the statement about tearing down social housing, all effects were in the expected direc-
+      tion of a more right-wing opinion in the right-wing framing condition. In summary,
+      we have some evidence for Hypothesis 1, but the effect size is very small. The largest
+      effect is 0.085 on a 5-point scale, meaning a difference between “neutral” and “agree”
+      (or between “completely disagree” and “disagree”) for every 12th VAA user.
+                                                     Table 4.1: Framing effect per statement
+№      Statement                                                                  Left    M      SD     Right      M      SD      b       s.e.   p
+                                                                                  frame                 frame
+1      The A27 highway should be broadened at Amelisweerd                         N&E     2.54   1.28   M          2.54   1.28    0.01    0.02   0.790
+2      Parking charges can be raised in the city of Utrecht                       N&E     2.22   1.15   M          2.21   1.15    0.01    0.02   0.623
+3      Cars that pollute most (older than EURO 3 for diesel and EURO 0            N&E     3.39   1.23   M          3.37   1.23    0.04    0.02   0.018
+       for gasoline) should be allowed in the city center
+4      The budget for improving neighborhood livability (the livability bud-      SP      2.35   0.97   F          2.36   0.96    0.01    0.01   0.595
+       get) should be abolished
+5      In disadvantaged neighborhoods, the municipality can tear down so-         SP      3.16   1.12   S          3.09   1.12    -0.07   0.02   0.000
+       cial housing
+6      The municipality can cut down on social work                               SP      2.52   1.02   F          2.53   1.03    0.01    0.01   0.459
+7      The municipality can build houses in the Rijnenburg polder                 N&E     2.92   0.98   B&L        2.95   0.99    0.03    0.01   0.023
+8      The municipality should invest money to build a bicycle bridge over        N&E     3.39   1.11   F          3.39   1.11    0.00    0.02   0.960
+       the Amsterdam-Rijn canal between Oog in Al and Leidsche Rijn
+9      The municipality should invest extra money to fight children’s lan-        C&E     3.75   1.00   F          3.68   1.04    0.09    0.01   0.000
+       guage deficiencies
+10     Waste charges should be abolished                                          N&E     2.62   1.03   F          2.63   1.03    0.01    0.01   0.458
+11     The municipality can cut down on art and culture                           C&E     2.84   1.20   F          2.83   1.21    0.01    0.02   0.686
+12     Taxes may be increased for measures for the environment                    N&E     3.03   1.09   F          3.02   1.10    0.00    0.02   0.798
+13     The municipality may force businesses to take energy-saving mea-           N&E     3.47   1.10   E          3.45   1.10    0.01    0.02   0.450
+       sures
+14     A wind park can be built at the Lage Weide industrial zone                 N&E     3.57   1.15   B&L        3.59   1.14    0.01    0.02   0.438
+15     The municipality should spend more money to fight poverty, even if         SP      3.02   1.07   E          3.01   1.08    0.01    0.01   0.415
+       taxes should be increased for this
+16     It’s better if the municipality has temporary deficits instead of having   SP      2.98   1.09   E          2.98   1.09    0.01    0.01   0.678
+       to cut down on social services
+17     Everyone on social benefits should be forced to do volunteering            SP      3.44   1.19   E          3.47   1.20    0.03    0.01   0.049
+       work, or their benefits will be cut back
+*
+    N = 21029. For the multivariate regression (column b), the dependent variable is coded such that a higher value indicates a higher agreement with the
+    right-wing direction.
+    Abbreviations: N&E = Nature & Environment, SP = Social policy, C&E = Culture & Education, M = Mobility, F = Finances, S = Safety,
+    B&L = Building & Living, E = Economy.
+       90      Chapter 4. Pushing the Voting Advice Left or Right
+
+
+
+
+      Figure 4.2: Confidence intervals for framing effects for each statement. Opinions and
+      framing effects were coded in the same direction: a higher value means a more right-
+      wing opinion. The point estimates indicate the mean differences between the right-
+      wing and the left-wing framing condition.
+
+
+
+4.4.2 Cross-classified multilevel model
+
+      In the cross-classified multilevel analysis, opinions are nested within people and si-
+      multaneously within statements. This means that the analysis assumes that variation
+      in opinions can be explained by the individual reporting the opinions (i.e., some peo-
+      ple tend to have more right-wing opinions than others) and by the statements the
+      opinions are reported towards (i.e., people will on average agree more with some state-
+      ments than with others). However, the analysis does not assume that statements are
+      nested within individuals or the other way around, which means that individuals and
+      statements are both on the second level. To test our hypotheses, we include on the
+      attitude level (the first level) the framing predictor. This variable varies among indi-
+      viduals and statements. On the second level, we include political interest, which only
+      varies among individuals. The attitudes are recoded such that a higher value always
+      indicates a more right-wing opinion. The framing predictor is a dummy variable indi-
+      cating per statement which condition had the right-wing frame (the left-wing frame
+      is the reference category, thus had value 0). Political interest is grand-mean centered
+      for a better interpretation of the moderation effect.
+           Table 4.2 shows the results of the multilevel analyses. The models are fitted on a
+      subsample of the data with only valid responses to the manipulated statements and to
+                                                                              4.4. Results            91
+
+
+the political interest question (N = 21,981)7 . The first model does not estimate any
+effects, but merely decomposes the variance at the different levels. The intercept of
+2.79 is the overall average attitude score (on a scale from 1 – 5). The random part of
+the model shows the standard deviations that belong to each level of the model. The
+subscripts of the standard deviations refer to the part of the model of which the vari-
+ance is estimated: σy is the extent to which the intercept of the attitude varies due to
+different statements; the standard deviation σi refers to the variation on the level of
+individual and σs to the variation between statements. The estimated residual stan-
+dard deviations at the attitude level, the individual and the statement level are σy =
+1.01, σi = 0.44, and σs = 0.40. Thus, the variation among attitudes is largest – only
+a part of the total variation can be attributed to individual differences or differences
+between statements. In fact, the intra-class correlation (ICC)8 for individuals is 0.160,
+which means that differences between individuals account for 16.0% of the total vari-
+ance. The ICC for statements is 0.137. Taken together, the statements and individuals
+account for 29.6% of the total variance. The following models will show the extent to
+which this percentage can be attributed to framing differences.
+
+
+
+
+    7
+      Of all respondents to the statements, 29.3% did not respond to the political interest question, and
+could therefore not be included in Model 5. To enable comparison across models, we fitted all models
+on the subsample of those who answered the interest question. The results of Model 1 – 4 were the same
+when fitted on the full sample of N = 31,112.
+    8
+      The ICC (for individuals) is calculated using the formula: σi2 /(σi2 + σy2 )
+                           Table 4.2: Results multilevel analysis of reported opinions
+                      Model 1                  Model 2                 Model 3                     Model 4
+                      Intercept only           + Framing effect        + Random effect framing     + Interaction framing
+                                                                                                   × political interest
+                      Coeff. (s.e.)    t       Coeff. (s.e.)   t       Coeff. (s.e.)   t           Coeff. (s.e.)      t
+Fixed part
+Intercept             2.789 (0.098)    28.59   2.783 (0.098)   28.54   2.784 (0.098)   28.54       2.784 (0.098)    28.54
+Right-wing frame                               0.011 (0.003)   3.11    0.011 (0.003)   3.11        0.011 (0.003)    3.12
+Political interest                                                                                 -0.026 (0.005)   -5.54
+Frame × interest                                                                                   -0.006 (0.004)   -1.53
+
+Random part
+σy                    1.010                    1.010                   1.010                       1.010
+σi                    0.440                    0.440                   0.441                       0.441
+σs                    0.402                    0.402                   0.402                       0.402
+σf                                                                     0.001                       0.002
+
+Deviance              1048599.8                1048590.2               1048590.1                   1048539.2
+N                     21981                    21981                   21981                       21981
+*
+    Opinions are nested within individuals and within statements. A higher value on the dependent variable indicates a more
+    right-wing opinion. Political interest is grand mean centered. N = number of individuals.
+                                                                    4.5. Discussion         93
+
+
+         In Model 2, the framing of the statements is taken into account. This improves the
+    model slightly, as is clear by the decrease of the deviance. Framing has a significant
+    effect on the opinion (t = 3.11), which means that a right-wing frame leads to more
+    right-wing opinions across all statements and individuals. However, this significant
+    average effect is not very large: On a five-point scale, people’s reported attitudes are
+    in general 0.01 point more right wing because of a right-wing frame. The inclusion
+    of the framing predictor in the equation does not noticeably explain variance at the
+    level of statements, individuals or attitudes. In sum, the model provides evidence for
+    hypothesis 1, but shows a very modest effect size.
+         In order to test the rivaling hypotheses H2a and H2b and study whether the effect
+    of framing is stronger for people with either more or less political interest (i.e., on the
+    level of individuals), we estimated a random slope for the framing effect in Model 3.
+    The variance in framing effect across individuals is σf = 0.001, which is negligible.
+    This means there is hardly any variance in the framing effect across individuals that
+    can further be explained by another variable. In other words, the framing effect is
+    too similar for different people to further analyze how the effect differs for different
+    people. Indeed, when an interaction between the individual-level variable political
+    interest and framing is added in Model 4, this interaction shows to be nor substantial
+    nor significant (t = 1.53). We can therefore find no evidence of a stronger effect among
+    either more of less politically interested VAA users.
+
+
+4.5 Discussion
+
+    This study tests the effects of issue framing in the new context of Voting Advice Ap-
+    plications (VAAs). We carried out a large-scale randomized field experiment during
+    local elections in the Netherlands. By changing the headers of the statements in the
+    VAA, we framed these statements either as a right-wing or as a left-wing issue. Ana-
+    lyzed on an item-by-item basis, we found differences for 5 out of 17 statements. These
+    were generally in line with our expectation that right-wing frames would cause people
+    to report more right-wing attitudes than left-wing frames, and vice versa. However,
+    the size of these framing effects is small. Multilevel analyses considering all statements
+    at once confirmed this conclusion: Framing the VAA statements has a small, but sig-
+    nificant, across-the-board effect. On a 5-point scale, people’s attitudes are on average
+    0.01 point more right wing, and the largest effect for a single statement would mean
+    that every 12th user would shift one category on the answer scale, like from “neutral”
+    to “agree”. Given the sheer amount of real world users however, we do not consider
+    this inconsequential or trivial.
+        We formulated two rivaling hypotheses about who is more likely to be affected by
+    the framing of issues: Either the least politically interested users or the most politically
+94       Chapter 4. Pushing the Voting Advice Left or Right
+
+
+interested users. On the one hand, people with more interest are assumed to have more
+crystallized opinions, which are more consistent with general principles. On the other
+hand, in order for frames to affect considerations users hold towards issues, users need
+to have considerations toward the issue in the first place, which is more likely if they
+are more interested in politics. Our findings, however, do not support either of these
+hypotheses. The framing effect did not vary much between users, so one’s political
+interest could not explain variance in framing effects. One explanation of this lack
+of variation in susceptibility to framing might be that both mechanisms are at work
+and balance out against each other: Less interested people would be more susceptible
+to how issues are framed but often failed to recognize how the header was relating
+to the issue; more interested people better understood this association but also had
+crystallized opinions about the issues more often. Another explanation could be that
+less politically interested citizens are less likely to use a VAA, leaving us with a group
+of relatively interested users, and within this group there is not enough variance in
+interest to observe differential susceptibility to framing effects.
+     By manipulating the header of the statements in the VAA and keeping the state-
+ments identical, our study can be regarded as an emphasis-framing study using a nar-
+row operationalization of framing: We changed the issue frames while keeping the un-
+derlying issue or message exactly the same. Doing this we have overcome some critics
+of emphasis framing research that the definition of framing has become too inclusive
+(e.g., Cacciatore et al., 2016; Scheufele, 1999): As it is often hard to keep the content
+of messages similar while changing the frames, emphasis-framing studies cannot rule
+out the possibility that attitude changes are attributable to differences in message con-
+tents rather than frames (see also Scheufele and Iyengar 2012; Zaller 1992). The effects
+in this study, however, demonstrate that people change their opinion in response to
+frames even when the underlying issue remains exactly the same.
+     The other side of the bargain is that our manipulation of issue framing is quite
+minimalistic. It might therefore be the case that users have overlooked these head-
+ings, and that a manipulation of the framing of statements themselves would yield
+stronger effects. However, manipulating issue frames in the statements of an actual
+VAA would not be desirable, given the large effects this could have on VAA results.
+The conclusion, in any case, should not be that framing of VAA statements does not
+matter. Previous research has shown the power of simple adjustments to attitude ques-
+tions; we speculate that with more obtrusive manipulations of VAA statements, effects
+of a larger magnitude can also be expected in such a context. Future studies could test
+to what extent people notice the headers and take their suggestions into account in
+reporting opinions.
+     Because of the wide reach of VAAs (Marschall 2014) and the persuasive effects
+their advice has on the party preferences of some users (Wall, Krouwel, and Vitiello
+                                                               4.5. Discussion        95
+
+
+2012) it would not be desirable for these voting advices to reflect anything else than
+the match between users’ opinions and party positions. However, this study presents
+new evidence of design aspects affecting the vote advice, in addition to the selection
+of statements (Lefevere and Walgrave 2014) and the choice for a matching algorithm
+(Louwerse and Rosema 2014). If VAA developers want to offer applications that are as
+objective and neutral as possible, they need to find out how to avoid steering people’s
+attitudes in any direction.
+     On a final note, while previous framing effects research mostly relied on lab ex-
+periments or survey-based experimentation, this study provides some evidence for
+the effect of framing on public opinion that is innovative in two regards: First, it finds
+evidence for framing effects in the new context of VAAs. Users of VAAs have other
+objectives for filling out survey questions (or statements) than respondents in a regular
+survey: they take the test spontaneously and out of interest rather than feeling obliged,
+or in order to receive an incentive. Second, the experiment provides evidence of the
+issue framing effect with great ecological validity, next to the high internal validity
+warranted by the experimental set-up. But most importantly, this study shows that if
+VAA developers want to help citizens to make informed vote choices, and in that way
+improve democratic representation, they should be aware of the potential powers of
+framing.
+    96       Chapter 4. Pushing the Voting Advice Left or Right
+
+
+4.6 References
+
+
+    Alvarez, R. M., Levin, I., Mair, P., & Trechsel, A. H. (2014). Party preferences in
+          the digital age: The impact of Voting Advice Applications. Party Politics, 20(2),
+          227–236. doi: 10.1177/1354068813519960
+    Anderson, J., & Fossen, T. (2014). Voting Advice Applications and Political The-
+          ory: Citizenship, Participation, and Representation. In D. Garzia & S. Marschall
+          (Eds.), Matching voters with parties and candidates. Voting Advice Applications in
+          Comparative Perspective (pp. 217–226). Colchester, UK: ECPR Press.
+    Borah, P. (2011). Conceptual Issues in Framing Theory: A Systematic Examination of
+          a Decade’s Literature. Journal of Communication, 61(2), 246–263. doi: 10.1111/
+          j.1460-2466.2011.01539.x
+    Cacciatore, M. A., Scheufele, D. A., & Iyengar, S. (2016). The End of Framing as we
+          Know it … and the Future of Media Effects. Mass Communication and Society,
+          19(1), 7–23. doi: 10.1080/15205436.2015.1068811
+    Cappella, J. N., & Jamieson, K. H. (1997). Spiral of cynicism: The press and the public
+          good. New York, US: Oxford University Press.
+    Chong, D., & Druckman, J. N. (2007). A theory of framing and opinion formation in
+          competitive elite environments. Journal of Communication, 57(1), 99–118. doi:
+          10.1111/j.1460-2466.2006.00331.x
+    Converse, P. (1964). The nature of belief systems in mass publics. In D. Apter (Ed.),
+          Ideology and discontent. New York: Free Press.
+    De Graaf, J. (2010). The irresistible rise of Stemwijzer. In L. Cedroni & D. Garzia (Eds.),
+          Voting Advice Applications in Europe: The state of the art (pp. 35–46). Naples,
+          Italy: ScriptaWeb.
+    De Vreese, C. H. (2012). New Avenues for Framing Research. American Behavioral
+          Scientist, 56(3), 365–375. doi: 10.1177/0002764211426331
+    De Vreese, C. H., Boomgaarden, H. G., & Semetko, H. A. (2011). (In)direct Fram-
+          ing Effects: The Effects of News Media Framing on Public Support for Turkish
+          Membership in the European Union. Communication Research, 38(2), 179–205.
+          doi: 10.1177/0093650210384934
+    De Vries, C. E., Hakhverdian, A., & Lancee, B. (2013). The Dynamics of Voters’
+          Left/Right Identification: The Role of Economic and Cultural Attitudes. Politi-
+          cal Science Research and Methods, 1(02), 223–238. doi: 10.1017/psrm.2013.4
+    Delli Carpini, M. X., & Keeter, S. (1996). What Americans know about politics and
+          why it matters. New Haven: Yale University Press.
+    Druckman, J. N. (2001a). The implications of framing effects for citizen competence.
+          Political Behavior, 23(3), 225–256.
+    Druckman, J. N. (2001b). On the limits of framing effects: Who can frame? Journal
+                                                               4.6. References        97
+
+
+     of Politics, 63(4), 1041–1066.
+Entman, R. M. (1993). Framing : Toward Clarification of a Fractured Paradigm.
+     Journal of Communication, 43(4), 51–58.
+Gamson, W. A., & Mogdiliani, A. (1987). The Changing Culture of Affirmative Action.
+     In R. Braungart (Ed.), Research in political sociology. Bingley, UK: JAI Press.
+Garzia, D., & Marschall, S. (2014). The Lausanne declaration on Voting Advice Ap-
+     plications. In D. Garzia & S. Marschall (Eds.), Matching voters with parties and
+     candidates. Voting Advice Applications in Comparative Perspective (pp. 227–228).
+     Colchester, UK: ECPR Press.
+Gerber, A. S., & Green, D. P. (2012). Field experiments: Design, analysis, and interpre-
+     tation. New York, US: WW Norton.
+Hox, J. J. (2010). Multilevel Analysis. Techniques and applications. New York, US:
+     Routeledge.
+Kahneman, D., & Tversky, A. (1979). Prospect theory: An analysis of decision under
+     risk. Econometrica, 47(2), 263–292.
+Krouwel, A., Vitiello, T., & Wall, M. (2012). The practicalities of issuing vote advice: A
+     new methodology for profiling and matching. International Journal of Electronic
+     Governance, 5(3/4), 223–243. doi: 10.1504/IJEG.2012.051308
+Lecheler, S., & De Vreese, C. H. (2012). News Framing and Public Opinion: A Me-
+     diation Analysis of Framing Effects on Political Attitudes. Journalism & Mass
+     Communication Quarterly, 89(2), 185–204. doi: 10.1177/1077699011430064
+Lefevere, J., & Walgrave, S. (2014). A perfect match? The impact of statement selection
+     on Voting Advice Applications’ ability to match voters and parties. Electoral
+     Studies, 36, 252–262. doi: 10.1016/j.electstud.2014.04.002
+Louwerse, T., & Rosema, M. (2014). The design effects of Voting Advice Applications:
+     Comparing methods of calculating matches. Acta Politica, 49, 1–27. doi: 10
+     .1057/ap.2013.30
+Marschall, S. (2014). Profiling Users. In D. Garzia & S. Marschall (Eds.), Matching
+     Voters with Parties and Candidates. Voting Advice Applications in Comparative
+     Perspective (pp. 93–104). Colchester, UK: ECPR Press.
+Matthes, J. (2007). Beyond accessibility? Toward an on-line and memory-based model
+     of framing effects. Communications, 32(1). doi: 10.1515/COMMUN.2007.003
+Nelson, T. E., Clawson, R. A., & Oxley, Z. M. (1997). Media Framing of a Civil Liberties
+     Conflict and Its Effect on Tolerance. American Political Science Review, 91(3),
+     567–583.
+Nelson, T. E., Oxley, Z. M., & Clawson, R. A. (1997). Toward a psychology of framing
+     effects. Political behavior, 19(3), 221–246.
+Rabin, M. (1998). Psychology and Economics. Journal of Economic Literature, 36,
+     11–46.
+98       Chapter 4. Pushing the Voting Advice Left or Right
+
+
+Scheufele, D. A. (1999). Framing as a Theory of Media Effects. Journal of Communi-
+      cation, 49(1), 103–122.
+Scheufele, D. A., & Iyengar, S. (2012). The State of Framing Research: A Call for New
+      Directions. The Oxford Handbook of Political Communication Theories, 1–27.
+      doi: 10.1093/oxfordhb/9780199793471.013.47
+Schuldt, J. P., Konrath, S. H., & Schwarz, N. (2011). “Global warming” or “climate
+      change”? Whether the planet is warming depends on question wording. Public
+      Opinion Quarterly, 75(1), 115–124. doi: 10.1093/poq/nfq073
+Slothuus, R. (2008). More Than Weighting Cognitive Importance: A Dual-Process
+      Model of Issue Framing Effects. Political Psychology, 29(1), 1–28. doi: 10.1111/
+      j.1467-9221.2007.00610.x
+Slothuus, R., & De Vreese, C. H. (2010). Political Parties, Motivated Reasoning, and
+      Issue Framing Effects. The Journal of Politics, 72(3), 630–645. doi: 10.1017/
+      S002238161000006X
+Sniderman, P. M., & Theriault, S. M. (2004). The Structure of Polical Argument and
+      the Logic of Issue Framing. In W. E. Saris & P. Sniderman (Eds.), Studies in
+      public opinion: Attitudes, nonattitudes, measurement error, and change (Vol. 3,
+      pp. 133–65). Princeton, US: Princeton University Press.
+Valkenburg, P. M., Semetko, H. A., & De Vreese, C. H. (1999). The Effects of News
+      Frames on Readers’ Thoughs and Recall. Communication Research, 26(5), 550–
+      569. doi: 10.1177/009365099026005002
+Van Camp, K., Lefevere, J., & Walgrave, S. (2014). The content and formulation of
+      statements in Voting Advice Applications. A comparative analysis of 26 VAAs.
+      In D. Garzia & S. Marschall (Eds.), Matching voters with parties and candidates.
+      Voting Advice Applications in Comparative Perspective (pp. 11–32). Colchester,
+      UK: ECPR Press.
+Van der Eijk, C., Schmitt, H., & Binder, T. (2005). Left–right orientations and party
+      choice. In J. J. A. Thomassen (Ed.), The European voter: A comparative study of
+      modern democracies. Oxford: Oxford Scholarship Online.
+Walgrave, S., Lefevere, J., & Tresch, A. (2012). The Associative Dimension of Issue
+      Ownership. Public Opinion Quarterly, 76(4), 771–782. doi: 10.1093/poq/nfs023
+Wall, M., Krouwel, A., & Vitiello, T. (2012). Do voters follow the recommendations
+      of Voter Advice Application websites? A study of the effects of Kieskompas.nl
+      on its users’ vote choices in the 2010 Dutch legislative elections. Party Politics,
+      30(3), 416–428. doi: 10.1177/1354068811436054
+Zaller, J. R. (1992). The Nature and Origins of Mass Opinion. New York, US: Cambridge
+      University Press.
+
