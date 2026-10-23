@@ -93,8 +93,7 @@ V.compass = (arg) => {
     const pops = chooseAZ(parties.filter(p => p.pop != null).map(p => p.slug)).map(s => parties.find(p => p.slug === s));
     const popRow = (name, v, pc, you) => `<div class="tally__row" style="--pc:${pc}">${you ? `<span class="small"><b>${name}</b></span>` : `<span class="ptag ptag--s"><span class="sw"></span>${name}</span>`}<div class="bar" role="img" aria-label="${name}: ${fmt(v, 0)} on −10 to +10"><i style="--w:${Math.round((v + 10) / 20 * 100)}%"></i></div><span class="tally__v">${sgnInt(v)}</span></div>`;
     $('#main').innerHTML = sectionFrame('choose', 'choose/compass', `
-      ${chooseHead('compass', `Choose · Values compass · ${answered} of ${items.length} answered`, 'Where you sit', '')}
-      <p class="lede">${compassSentence(me)}</p>
+      ${chooseHead('compass', 'Choose · Values compass', 'Where you sit', compassSentence(me), `<p class="micro muted">${answered} of ${items.length} answered · your answers stay on this device</p>`)}
       <div class="row"><span class="micro muted">Place the parties</span><div class="seg" style="min-width:0" role="group" aria-label="How parties are placed"><button type="button" data-src="coded" aria-pressed="${source === 'coded'}">2026 policies &amp; votes</button><button type="button" data-src="published" aria-pressed="${source === 'published'}">Experts, 2019</button></div></div>
       <div class="split split--7-5">
         <section class="stack">

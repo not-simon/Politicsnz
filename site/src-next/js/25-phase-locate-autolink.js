@@ -8,7 +8,7 @@ const PHASE_MSG = () => ({
   enrol: ['Enrolment closes ' + (daysTo('2026-10-25') === 0 ? 'tonight.' : daysTo('2026-10-25') === 1 ? 'tomorrow.' : 'in ' + daysTo('2026-10-25') + ' days.'), 'Midnight Sunday 25 October. No enrolling at voting places this year.', 'Check at vote.nz', 'https://vote.nz'],
   advance: ['Voting is open.', 'Vote early at any voting place until Friday 6 November, or on Saturday 7 November 9am–7pm.', 'Find a voting place', 'https://map.vote.nz'],
   electionday: ['Election day: voting closes at 7pm.', 'Results, polls, the quiz and the forecast are hidden until then.', 'Find a voting place', 'https://map.vote.nz'],
-  results: ['Results are coming in.', 'Preliminary count tonight; special votes are counted later.', 'Seats', '#/seats/parliament'],
+  results: ['Results are coming in.', 'Preliminary count tonight; special votes are counted later.', 'Live results', '#/seats/results'],
   after: ['Special votes are being counted.', 'Final result Friday 27 November.', 'What could change', '#/vote/specials'] });
 function daysTo(iso) { const t = nzNow(); const today = Date.UTC(t.getFullYear(), t.getMonth(), t.getDate()); const [y, m, d] = iso.split('-').map(Number); return Math.round((Date.UTC(y, m - 1, d) - today) / 864e5) }
 function renderPhase() { const ph = electionPhase(); const el = $('#phase'); if (!el) return; const m = PHASE_MSG()[ph]; if (!m) { el.hidden = true; return }

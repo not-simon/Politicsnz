@@ -1530,7 +1530,7 @@ const PHASE_MSG = () => ({
   enrol: ['Enrolment closes ' + (daysTo('2026-10-25') === 0 ? 'tonight.' : daysTo('2026-10-25') === 1 ? 'tomorrow.' : 'in ' + daysTo('2026-10-25') + ' days.'), 'Midnight Sunday 25 October. No enrolling at voting places this year.', 'Check at vote.nz', 'https://vote.nz'],
   advance: ['Voting is open.', 'Vote early at any voting place until Friday 6 November, or on Saturday 7 November 9am–7pm.', 'Find a voting place', 'https://map.vote.nz'],
   electionday: ['Election day: voting closes at 7pm.', 'Results, polls, the quiz and the forecast are hidden until then.', 'Find a voting place', 'https://map.vote.nz'],
-  results: ['Results are coming in.', 'Preliminary count tonight; special votes are counted later.', 'Seats', '#/seats/parliament'],
+  results: ['Results are coming in.', 'Preliminary count tonight; special votes are counted later.', 'Live results', '#/seats/results'],
   after: ['Special votes are being counted.', 'Final result Friday 27 November.', 'What could change', '#/vote/specials'] });
 function daysTo(iso) { const t = nzNow(); const today = Date.UTC(t.getFullYear(), t.getMonth(), t.getDate()); const [y, m, d] = iso.split('-').map(Number); return Math.round((Date.UTC(y, m - 1, d) - today) / 864e5) }
 function renderPhase() { const ph = electionPhase(); const el = $('#phase'); if (!el) return; const m = PHASE_MSG()[ph]; if (!m) { el.hidden = true; return }
@@ -2234,7 +2234,7 @@ V.party = async (s, tab = 'glance') => {
     <header class="phead" style="--pc:${pc}">
       <div class="phead__id"><span class="phead__faces">${faces.length ? faces.slice(0, 2).map(f => faceHTML(f, s, 'face face--l')).join('') : `<span class="face--none face face--l" style="--pc:${pc}" aria-hidden="true">${esc(initials(s))}</span>`}</span>
         <div class="stack stack--s"><p class="eyebrow">${label ? (/^no /i.test(label) ? 'No position label' : esc(label)) + ` <span class="phead__src">(${pos.source ? ptExt(pos.source, "Wikipedia's label") : "Wikipedia's label"})</span>` : ''}${g.founded ? ` · Founded ${esc(g.founded)}` : ''}</p>
-          <h1>${esc(g.name || pp.name)}</h1>${leaders.length ? `<p class="small soft">Led by ${leaders.join(' and ')}</p>` : ''}</div></div>
+          <h1>${esc(g.name || pp.name)}</h1>${leaders.length ? `<p class="small soft">${(g.leaders || []).length > 1 && g.leaders.every(l => /^co-?leader/i.test(l.role || '')) ? 'Led by co-leaders ' + g.leaders.map(l => esc(l.name) + (String(l.role).replace(/^co-?leader,?\s*/i, '') ? ` (${esc(String(l.role).replace(/^co-?leader,?\s*/i, ''))})` : '')).join(' and ') : 'Led by ' + leaders.join(' and ')}</p>` : ''}</div></div>
       ${g.tagline ? `<p class="phead__tag">${esc(g.tagline)}</p>` : ''}${pos.description ? `<p class="small soft">${esc(pos.description)}</p>` : ''}
       <div class="row"><a class="btn btn--s" href="#/choose/compare/${esc(s)}">${ic('swap', 'i--xs')} Compare with another party</a>${g.website ? `<a class="btn btn--s btn--quiet" href="${esc(g.website)}" target="_blank" rel="noopener">Party website ${ic('ext', 'i--xs')}</a>` : ''}</div>
     </header>
@@ -2714,8 +2714,7 @@ V.compass = (arg) => {
     const pops = chooseAZ(parties.filter(p => p.pop != null).map(p => p.slug)).map(s => parties.find(p => p.slug === s));
     const popRow = (name, v, pc, you) => `<div class="tally__row" style="--pc:${pc}">${you ? `<span class="small"><b>${name}</b></span>` : `<span class="ptag ptag--s"><span class="sw"></span>${name}</span>`}<div class="bar" role="img" aria-label="${name}: ${fmt(v, 0)} on −10 to +10"><i style="--w:${Math.round((v + 10) / 20 * 100)}%"></i></div><span class="tally__v">${sgnInt(v)}</span></div>`;
     $('#main').innerHTML = sectionFrame('choose', 'choose/compass', `
-      ${chooseHead('compass', `Choose · Values compass · ${answered} of ${items.length} answered`, 'Where you sit', '')}
-      <p class="lede">${compassSentence(me)}</p>
+      ${chooseHead('compass', 'Choose · Values compass', 'Where you sit', compassSentence(me), `<p class="micro muted">${answered} of ${items.length} answered · your answers stay on this device</p>`)}
       <div class="row"><span class="micro muted">Place the parties</span><div class="seg" style="min-width:0" role="group" aria-label="How parties are placed"><button type="button" data-src="coded" aria-pressed="${source === 'coded'}">2026 policies &amp; votes</button><button type="button" data-src="published" aria-pressed="${source === 'published'}">Experts, 2019</button></div></div>
       <div class="split split--7-5">
         <section class="stack">
@@ -3441,7 +3440,7 @@ function parlChamber() {
   const resetSeat = () => { $('#seatinfo').innerHTML = `<p class="eyebrow">Seat details</p><p class="small soft">Tap or select any seat to see who sat there. Seats are grouped by party, left to right as the parties usually sit.</p>` };
   const draw = () => { const st = steps[i]; store.set('chamberSel', st.key); let seats, ctx = '', table = '';
     if (st.p26) { const x = st.p26; seats = seatsFromComposition(x.comp, []); $('#cmode').hidden = true;
-      if (x.kind === 'result') { ctx = `<p class="eyebrow">55th Parliament · ${esc(x.note)}</p><p class="small">Seats from the Electoral Commission's ${x.R.official ? 'official' : 'preliminary'} count. Preliminary results leave out special votes, which can move a seat or two; the official result is due on 27 November.</p><a class="more small" href="#/seats/results">Election night results ${ic('chev', 'i--xs')}</a>`; table = electionTableHTML({ year: 2026, date: x.R.date, parties: x.R.parties }, 'votes') }
+      if (x.kind === 'result') { ctx = `<p class="eyebrow">55th Parliament · ${esc(x.note)}</p><p class="small">Seats from the Electoral Commission's ${x.R.official ? 'official' : 'preliminary'} count. Preliminary results leave out special votes, which can move a seat or two; the official result is due on 27 November.</p><a class="more small" href="#/seats/results">Election night results ${ic('chev', 'i--xs')}</a>`; table = electionTableHTML({ year: 2026, date: x.R.date, parties: x.R.parties, official: x.R.official }) }
       else if (x.kind === 'forecast') { const F = S.data.forecast;
         ctx = `<p class="eyebrow">2026 · ${esc(x.note)}</p><p class="small">${esc(F.most_likely_parliament.note || '')}</p><p class="small soft">Every party's likely range, and how often each group reaches a majority, is on the polls page.</p><a class="more small" href="#/seats/polls">Polls &amp; forecast ${ic('chev', 'i--xs')}</a>` }
       else { const pr = x.pr; ctx = `<p class="eyebrow">2026 · ${esc(x.note)}</p><p class="small">Average of the ${pr.n} latest polls (${esc(pr.range)}), turned into seats with the Sainte-Laguë formula. Assumed electorate wins: ${esc(Object.entries(pr.elec).map(([p, n]) => pname(p) + ' ' + n).join(', ') || 'none')}.</p><a class="more small" href="#/seats/polls">Polls &amp; forecast ${ic('chev', 'i--xs')}</a>` } }
@@ -3481,11 +3480,11 @@ function electionTableHTML(el, sort = 'az') {
   <div class="table-wrap"><table class="table"><thead><tr><th>Party</th><th class="n">Party vote</th><th class="n">Votes</th><th class="n">Electorate</th><th class="n">List</th><th class="n">Seats</th></tr></thead><tbody>
   ${rows.map(r => `<tr><td>${ptagHTML(r.party, r.name || pname(r.party))}</td><td class="n">${r.party_vote_pct != null ? fmt(r.party_vote_pct, 2) + '%' : '–'}</td><td class="n">${r.party_votes ? Number(r.party_votes).toLocaleString('en-NZ') : '–'}</td><td class="n">${r.electorate_seats ?? 0}</td><td class="n">${r.list_seats ?? 0}</td><td class="n"><b>${r.total_seats ?? 0}</b></td></tr>`).join('')}
   </tbody></table></div>
-  <p class="srcline">Official results, Electoral Commission${(el.sources || []).length ? ` · <a href="${esc(typeof el.sources[0] === 'string' ? el.sources[0] : el.sources[0].url)}" target="_blank" rel="noopener">source</a>` : ''}</p>
+  <p class="srcline">${el.year === 2026 && !el.official ? 'Preliminary count (special votes not yet included)' : 'Official results'}, Electoral Commission${(el.sources || []).length ? ` · <a href="${esc(typeof el.sources[0] === 'string' ? el.sources[0] : el.sources[0].url)}" target="_blank" rel="noopener">source</a>` : ''}</p>
   ${el.year < 2026 ? `<div class="row"><button class="btn btn--s" type="button" data-page="elections/${el.year}.md">Read the story of the ${el.year} election</button></div>` : ''}` }
 const electionTable = el => electionTableHTML(el);
 function bindElectionTable(box) { box.onclick = e => { const b = e.target.closest('[data-sort]'); if (!b) return; const y = +b.closest('[data-year]').dataset.year;
-  const el = y === 2026 ? (() => { const R = results2026(); return R && { year: 2026, date: R.date, parties: R.parties } })() : (S.data.elections || []).find(x => x.year === y); if (el) box.innerHTML = electionTableHTML(el, b.dataset.sort) } }
+  const el = y === 2026 ? (() => { const R = results2026(); return R && { year: 2026, date: R.date, parties: R.parties, official: R.official } })() : (S.data.elections || []).find(x => x.year === y); if (el) box.innerHTML = electionTableHTML(el, b.dataset.sort) } }
 
 /* ----- coalition builder ----- */
 function parlCoalition() {
@@ -3829,7 +3828,7 @@ function resultsLive(R) {
         return `<div class="rrow" style="--pc:${pcolor(r.party)}">${ptagHTML(r.party, r.name || pname(r.party))}<div class="rbar" style="${f ? `--lo:${pc(f.forecast_vote_80[0])};--hi:${pc(f.forecast_vote_80[1])};` : '--lo:0%;--hi:0%;'}--m:${pc(v)};--x:${pc(5)}" role="img" aria-label="${esc(pname(r.party))}: ${fmt(v)}% counted${f ? `; the forecast said ${Math.round(f.forecast_vote_80[0])} to ${Math.round(f.forecast_vote_80[1])}%` : ''}"><span class="rbar__mark"></span>${f ? '<span class="rbar__band rbar__band--ghost"></span>' : ''}<span class="rbar__mean"></span></div><span class="rrow__v"><b>${fmt(v)}%</b><span>${r.total_seats || 0} seats${r.electorate_seats ? ` · ${r.electorate_seats} elec.` : ''}</span></span></div>` }).join('')}</div>
       <div class="legend small"><span><span class="lg-mean"></span> the count says</span>${F ? '<span><span class="lg-band"></span> the forecast said (8 in 10 range, 23 Oct)</span>' : ''}<span><span class="lg-thr"></span> 5% threshold</span></div></section>
     ${(R.electorates || []).length ? `<section class="stack" aria-labelledby="h-rmap"><div class="shead"><div class="shead__row"><h2 id="h-rmap">Electorates</h2><a class="more small" href="#/seats/map/2026">Explore the map ${ic('chev', 'i--xs')}</a></div></div><div class="mapstage rmap"><div id="rmap"><p class="muted small">Loading the map…</p></div><div class="legend" id="rmapleg"></div></div></section>` : `<div class="row"><a class="more" href="#/seats/map/2026">Electorate map ${ic('chev', 'i--xs')}</a></div>`}
-    <section class="stack" id="rtable">${electionTableHTML({ year: 2026, date: R.date, parties: R.parties })}</section>
+    <section class="stack" id="rtable">${electionTableHTML({ year: 2026, date: R.date, parties: R.parties, official: R.official })}</section>
     ${R.official ? '' : COUNTING_HTML}` }
 
 /* ----- why trust this ----- */
