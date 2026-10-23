@@ -13,7 +13,7 @@
   },
   "labour": {
    "name": "Labour",
-   "positions_recorded": 29
+   "positions_recorded": 30
   },
   "green": {
    "name": "Green",
@@ -25,15 +25,15 @@
   },
   "nz-first": {
    "name": "NZ First",
-   "positions_recorded": 28
+   "positions_recorded": 27
   },
   "te-pati-maori": {
    "name": "Te Pāti Māori",
-   "positions_recorded": 20
+   "positions_recorded": 23
   },
   "opportunity": {
    "name": "Opportunity (TOP)",
-   "positions_recorded": 21
+   "positions_recorded": 22
   },
   "nz-loyal": {
    "name": "NZ Loyal",
@@ -565,12 +565,7 @@
      "evidence": "Favours increasing supply through deregulation and easier consenting (Salient guide).",
      "source_url": "https://salient.org.nz/post/which-party-should-i-vote-for-your-guide-to-the-2026-election"
     },
-    "nz-first": {
-     "position": -1,
-     "evidence": "Add infrastructure and service-capacity requirements to residential fast-track permissions (growth only where infrastructure keeps up).",
-     "source_url": "https://www.nzfirst.nz/nzfirst_policy_announcement_changes_to_fast_track_residential_approvals",
-     "policy_id": "POL55305"
-    },
+    "nz-first": null,
     "te-pati-maori": null,
     "opportunity": {
      "position": 2,
@@ -1598,7 +1593,11 @@
      "source_url": "https://www.national.org.nz/news/260826-simonwatts",
      "policy_id": "POL54817"
     },
-    "labour": null,
+    "labour": {
+     "position": 0,
+     "evidence": "Mixed: Barbara Edmonds said Labour supported the rates-cap bill to its first reading, while Tangi Utikere said in Dec 2025 \"we don't support this rates cap\" (both as quoted by National).",
+     "source_url": "https://www.national.org.nz/news/260826-simeonbrown-1"
+    },
     "green": {
      "position": -2,
      "evidence": "Reject the proposed rates cap and allow councils to use more funding tools.",
@@ -1741,7 +1740,11 @@
      "evidence": "\"New Zealand First will not support changes to the entitlement or eligibility of New Zealand Superannuation.\"",
      "source_url": "https://www.greypower.co.nz/assets/default/documents/NZ-First-Response-Grey-Power-Election-Policy-2026.pdf"
     },
-    "te-pati-maori": null,
+    "te-pati-maori": {
+     "position": 2,
+     "evidence": "Says the age of eligibility \"should not be raised at all\" and should be lower for Māori because of lower life expectancy (May 2023 statement; no newer position found).",
+     "source_url": "https://interest.co.nz/public-policy/121598/maori-party-says-age-eligibility-superannuation-should-not-be-raised-all-and"
+    },
     "opportunity": {
      "position": 2,
      "evidence": "Answered \"Yes\" to retaining the eligibility age at 65 (Grey Power survey).",
@@ -1789,7 +1792,11 @@
      "policy_id": "POL54864"
     },
     "nz-first": null,
-    "te-pati-maori": null,
+    "te-pati-maori": {
+     "position": 1,
+     "evidence": "\"We will scrap benefit sanctions and ensure everybody is paid enough to live with dignity, whether they are in employment or not\" (Oct 2024 press release).",
+     "source_url": "https://scoop.co.nz/stories/PA202410/S00184.htm"
+    },
     "opportunity": {
      "position": 1,
      "evidence": "A universal Citizens' Income of up to $370 a week, replacing many main benefits.",
@@ -1846,8 +1853,16 @@
      "policy_id": "POL54866"
     },
     "nz-first": null,
-    "te-pati-maori": null,
-    "opportunity": null,
+    "te-pati-maori": {
+     "position": -2,
+     "evidence": "\"We will scrap benefit sanctions\"; called the traffic-light sanctions system \"a tool designed to punish whānau\" (Oct 2024 press release).",
+     "source_url": "https://scoop.co.nz/stories/PA202410/S00184.htm"
+    },
+    "opportunity": {
+     "position": -2,
+     "evidence": "Citizen's Income replaces most main benefits: \"no Work and Income appointments, no relationship status checks—just a guaranteed payment\".",
+     "source_url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf"
+    },
     "nz-loyal": null,
     "nz-outdoors-freedom": null,
     "legalise-cannabis": null,
@@ -2003,8 +2018,8 @@
    "positions": {
     "national": {
      "position": 2,
-     "evidence": "Introduced the Gene Technology Bill and remains in favour.",
-     "source_url": "https://agscience.org.nz/?p=16163"
+     "evidence": "The Gene Technology Bill is a National-led government bill; National remains in favour (it lacks NZ First's votes to pass).",
+     "source_url": "https://www.odt.co.nz/news/national/nz-first-withhold-support-gene-tech-bill-unless-major-changes-made-rnz"
     },
     "labour": {
      "position": -1,
@@ -2013,7 +2028,7 @@
     },
     "green": {
      "position": -2,
-     "evidence": "Withheld support for the Gene Technology Bill at select committee.",
+     "evidence": "Called the Bill a \"radical liberalisation and deregulation of GM technology\" and withheld support.",
      "source_url": "https://agscience.org.nz/?p=16163"
     },
     "act": {
@@ -2028,7 +2043,7 @@
     },
     "te-pati-maori": {
      "position": -2,
-     "evidence": "Withheld support for the Gene Technology Bill at select committee.",
+     "evidence": "Told RNZ it \"remained opposed to the bill\".",
      "source_url": "https://agscience.org.nz/?p=16163"
     },
     "opportunity": {
@@ -2123,9 +2138,9 @@
      "policy_id": "POL55114"
     },
     "act": {
-     "position": 2,
-     "evidence": "ACT's fiscal plan protects all spending growth in defence while cutting elsewhere, and ACT has called for a \"real\" pathway to 2% of GDP.",
-     "source_url": "https://www.act.org.nz/real_change_to_take_defence_seriously"
+     "position": 1,
+     "evidence": "ACT's 2026 Fiscal Plan cuts non-frontline spending but protects \"the spending growth since 2017 in core frontline services such as health, education, defence\" (no specific 2% target found in its 2026 documents).",
+     "source_url": "https://assets.nationbuilder.com/actnz/pages/38747/attachments/original/1791599898/ACT_2026_Fiscal_Plan.pdf?1791599898"
     },
     "nz-first": null,
     "te-pati-maori": {
@@ -2224,8 +2239,8 @@
     },
     "nz-loyal": null,
     "nz-outdoors-freedom": {
-     "position": 1,
-     "evidence": "Supports medicinal use of cannabis for humans, pets and livestock (full legalisation not stated).",
+     "position": 2,
+     "evidence": "\"We do not believe cultivation or possession of cannabis for personal use should be a criminal offense.\"",
      "source_url": "https://freedom.kiwi/cannabis-policy"
     },
     "legalise-cannabis": {

@@ -148,7 +148,6 @@ S('q10', 'housing', 'Councils should have to allow more and denser housing, such
   'national': P(2, 'Wants to "free up land, streamline planning and consenting, and finance the infrastructure needed for development" (Salient guide); removing the ban on minimum car-parking is the only partial exception.', SALIENT),
   'act': P(2, 'Favours increasing supply through deregulation and easier consenting (Salient guide).', SALIENT),
   'green': P(1, 'Encourage mixed-use areas and walkability in new housing developments.', None, 'POL55084'),
-  'nz-first': P(-1, 'Add infrastructure and service-capacity requirements to residential fast-track permissions (growth only where infrastructure keeps up).', None, 'POL55305'),
 })
 
 # =========================================================================== HEALTH
@@ -359,6 +358,7 @@ S('q30', 'local-government', 'Central government should cap how much councils ca
   'national': P(2, 'Instruct councils to keep annual rate increases between 2 and 4 percent.', None, 'POL54817'),
   'green': P(-2, 'Reject the proposed rates cap and allow councils to use more funding tools.', None, 'POL55056'),
   'opportunity': P(-1, 'Give councils more tools to invest in infrastructure (rather than limiting revenue).', None, 'POL54811'),
+  'labour': P(0, 'Mixed: Barbara Edmonds said Labour supported the rates-cap bill to its first reading, while Tangi Utikere said in Dec 2025 "we don\'t support this rates cap" (both as quoted by National).', 'https://www.national.org.nz/news/260826-simeonbrown-1'),
 })
 
 # =========================================================================== IMMIGRATION
@@ -385,6 +385,7 @@ S('q33', 'superannuation', 'The age of eligibility for NZ Superannuation should 
   'nz-first': P(2, '"New Zealand First will not support changes to the entitlement or eligibility of New Zealand Superannuation."', GREY.format('NZ-First')),
   'opportunity': P(2, 'Answered "Yes" to retaining the eligibility age at 65 (Grey Power survey).', GREY.format('Opportunity')),
   'alliance': P(2, '"Keeps the age of entitlement for Super at 65."', ALLIANCE.format('alliance-retirement-aged-care-kiwisaver-policy')),
+  'te-pati-maori': P(2, 'Says the age of eligibility "should not be raised at all" and should be lower for Māori because of lower life expectancy (May 2023 statement; no newer position found).', 'https://interest.co.nz/public-policy/121598/maori-party-says-age-eligibility-superannuation-should-not-be-raised-all-and'),
   'act': P(-2, 'Raise the retirement age to 67 by 2035 (three months a year).', None, 'POL55275'),
   'national': P(-1, 'Would "have liked to make change" and has long backed 67 from a future date, but its 2026 election policy is only to hold cross-party accord talks on the retirement system.', RNZ_SUPER),
 })
@@ -396,6 +397,7 @@ S('q34', 'welfare', 'Main benefits should be substantially increased.',
   'alliance': P(2, 'Proposes a Universal Benefit, individual entitlements, universal child payments and an end to benefit sanctions.', ALLIANCE.format('alliance-plan-to-rebuild-universal-social-security')),
   'womens-rights': P(2, '"Minimum wages and benefits need to be increased so that all people have living incomes."', WRP),
   'te-tai-tokerau-party': P(2, 'Replace the "complex, punitive benefit system" with a non-taxable Universal Whānau Allowance and wipe MSD/IRD debt for low-income whānau.', TTT),
+  'te-pati-maori': P(1, '"We will scrap benefit sanctions and ensure everybody is paid enough to live with dignity, whether they are in employment or not" (Oct 2024 press release).', 'https://scoop.co.nz/stories/PA202410/S00184.htm'),
   'opportunity': P(1, 'A universal Citizens\' Income of up to $370 a week, replacing many main benefits.', None, 'POL54816'),
   'act': P(-1, 'ACT\'s 2026 Fiscal Plan has no benefit increases; it tightens eligibility (independent medical certification for health and disability benefits, a five-year stand-down for new residents).', 'doc:act/pdf-act-2026-fiscal-plan.md', 'POL54864'),
   'national': P(-1, 'Reduce benefit payments for people receiving support for more than two years.', None, 'POL55227'),
@@ -408,6 +410,8 @@ S('q35', 'welfare', 'Beneficiaries should face tougher obligations and sanctions
   'green': P(-2, 'Increase benefit payments and improve standards for beneficiaries; refuse to use AI for welfare decisions.', None, 'POL55132'),
   'alliance': P(-2, '"An end to benefit sanctions."', ALLIANCE.format('alliance-plan-to-rebuild-universal-social-security')),
   'te-tai-tokerau-party': P(-2, 'Replace the "punitive benefit system" and end "relationship status" policing.', TTT),
+  'te-pati-maori': P(-2, '"We will scrap benefit sanctions"; called the traffic-light sanctions system "a tool designed to punish whānau" (Oct 2024 press release).', 'https://scoop.co.nz/stories/PA202410/S00184.htm'),
+  'opportunity': P(-2, 'Citizen\'s Income replaces most main benefits: "no Work and Income appointments, no relationship status checks—just a guaranteed payment".', 'doc:opportunity/pdf-tax-reset.md'),
   'vision-nz': P(1, '"Dismantle state dependency"; "Slash state dependency by eliminating financial rules that disincentivise marriage."', VISION),
   'conservative': P(1, '"Welfare: Reform is needed. Fifty years of expanding welfare has undermined our families and created an underclass."', 'https://www.conservatives.nz/policy'),
 })
@@ -439,13 +443,13 @@ S('q37', 'agriculture', 'Rules limiting farm pollution of rivers (such as nitrog
 
 S('q38', 'agriculture', 'Rules on gene technology (genetic modification) should be relaxed.',
   'The Gene Technology Bill would end the effective ban on GM outside the lab; it stalled in 2025–26 after NZ First withheld support.', {
-  'national': P(2, 'Introduced the Gene Technology Bill and remains in favour.', GENETECH_AG),
+  'national': P(2, 'The Gene Technology Bill is a National-led government bill; National remains in favour (it lacks NZ First\'s votes to pass).', GENETECH_NZF),
   'act': P(2, 'Supports the Gene Technology Bill (with objections to its Māori advisory committee).', GENETECH_AG),
   'opportunity': P(2, 'Rewrite gene technology regulations to enable modern gene technologies.', None, 'POL54842'),
   'nz-first': P(-1, 'Would not support the Bill into law without major changes, calling it "far too liberal" and lacking safeguards.', GENETECH_NZF),
   'labour': P(-1, 'Withheld support at select committee citing limited consultation and lack of regulatory independence.', GENETECH_AG),
-  'green': P(-2, 'Withheld support for the Gene Technology Bill at select committee.', GENETECH_AG),
-  'te-pati-maori': P(-2, 'Withheld support for the Gene Technology Bill at select committee.', GENETECH_AG),
+  'green': P(-2, 'Called the Bill a "radical liberalisation and deregulation of GM technology" and withheld support.', GENETECH_AG),
+  'te-pati-maori': P(-2, 'Told RNZ it "remained opposed to the bill".', GENETECH_AG),
   'conservative': P(-2, '"We oppose the current government\'s move to end the long-standing restrictions placed on field trials and the release of genetically modified organisms."', CONS.format('agriculture')),
 })
 
@@ -463,7 +467,7 @@ S('q39', 'foreign-policy', 'New Zealand should formally recognise the State of P
 S('q40', 'defence', 'Defence spending should rise substantially, towards 2% of GDP.',
   'The 2025 Defence Capability Plan aims to lift defence spending from about 1% to 2% of GDP by the early 2030s.', {
   'national': P(2, 'National-led government\'s Defence Capability Plan targets 2% of GDP by 2032/33; Defence Minister Chris Penk reaffirmed "a smooth and steady upward trajectory to 2 percent" in May 2026.', 'https://newswire.co.nz/2026/05/chris-penk-defence-spending-2-percent-gdp-2033/'),
-  'act': P(2, 'ACT\'s fiscal plan protects all spending growth in defence while cutting elsewhere, and ACT has called for a "real" pathway to 2% of GDP.', 'https://www.act.org.nz/real_change_to_take_defence_seriously'),
+  'act': P(1, 'ACT\'s 2026 Fiscal Plan cuts non-frontline spending but protects "the spending growth since 2017 in core frontline services such as health, education, defence" (no specific 2% target found in its 2026 documents).', 'doc:act/pdf-act-2026-fiscal-plan.md'),
   'te-pati-maori': P(-2, 'Declare NZ a "military neutral" country and focus the Defence Force on protection, disaster response and the Pacific.', None, 'POL54684'),
   'green': P(-1, 'Security policy prioritises peacekeeping and "prevention over military force" and would withdraw NZ from the Five Eyes network; no increase in military spending proposed.', 'doc:green/security-defence-policy-2011-2026.md', 'POL55114'),
   'alliance': P(-2, 'A "peace-focused defence force", non-alignment and an end to intelligence sharing with the US.', ALLIANCE.format('alliance-foreign-affairs-defence-international-relations-policy')),
@@ -484,7 +488,7 @@ S('q42', 'drugs', 'Cannabis should be legalised or decriminalised for personal u
   'green': P(2, 'Decriminalise cannabis for personal use; long-term policy is a legal, regulated cannabis market.', None, 'POL55117'),
   'opportunity': P(2, 'Decriminalise drug possession (but not supply).', None, 'POL54855'),
   'legalise-cannabis': P(2, '"That the possession, cultivation and use of pure cannabis... be free from prosecution" and a regulated R18 cannabis market.', ALCP),
-  'nz-outdoors-freedom': P(1, 'Supports medicinal use of cannabis for humans, pets and livestock (full legalisation not stated).', NZOFP.format('cannabis-policy')),
+  'nz-outdoors-freedom': P(2, '"We do not believe cultivation or possession of cannabis for personal use should be a criminal offense."', NZOFP.format('cannabis-policy')),
 })
 
 # =========================================================================== SOCIAL ISSUES

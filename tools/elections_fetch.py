@@ -6,6 +6,8 @@ Usage: python3 tools/elections_fetch.py [--html] [--force] "Page title" ...
 import sys, json, os, re, time, datetime, urllib.parse, requests
 UA = {"User-Agent": "PoliticsNZResearch/1.0 (personal research)"}
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "raw", "elections")
+for a in sys.argv[1:]:
+    if a.startswith("--out="): OUT = os.path.join(OUT, a[6:])
 os.makedirs(OUT, exist_ok=True)
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 HTML, FORCE = "--html" in sys.argv, "--force" in sys.argv
