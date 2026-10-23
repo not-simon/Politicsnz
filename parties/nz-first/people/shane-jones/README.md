@@ -1,5 +1,7 @@
 # Shane Jones
 
+<img src="photo.jpg" width="200" align="right" alt="Shane Jones">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | New Zealand First |
@@ -11,6 +13,8 @@
 | **Born** | 1959-09-03, Awanui |
 | **2026 election** | contesting Northland, list #2 |
 | **Wikipedia** | [Shane Jones](https://en.wikipedia.org/wiki/Shane_Jones) |
+
+<sub>Photo: Stuartyeates — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Shane_Jones_2018_5.jpg)</sub>
 
 ## Current status
 

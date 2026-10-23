@@ -43,7 +43,8 @@ polls = []
 for x in polls_raw or []:
     d = x.get('end_date') or x.get('date'); res = x.get('results') or x.get('parties') or {}
     if d and re.match(r'\d{4}-\d{2}-\d{2}', str(d)) and res:
-        polls.append({'date': d, 'pollster': x.get('pollster'), 'parties': {k: v for k, v in res.items() if isinstance(v, (int, float))}, 'source_url': x.get('source_url')})
+        polls.append({'date': d, 'pollster': x.get('pollster'), 'parties': {k: v for k, v in res.items() if isinstance(v, (int, float))}, 'source_url': x.get('source_url'),
+                      'sample_size': x.get('sample_size'), 'fieldwork': x.get('date')})
 promises = {pathlib.Path(f).stem: load(f, []) for f in glob.glob(str(ROOT / 'data' / 'promises' / '*.json'))}
 
 # --- parties

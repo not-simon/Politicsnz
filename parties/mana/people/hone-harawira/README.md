@@ -1,5 +1,7 @@
 # Hone Harawira
 
+<img src="photo.jpg" width="200" align="right" alt="Hone Harawira">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Mana Movement |
@@ -11,6 +13,8 @@
 | **Key roles** | Leader of the Mana Movement (2011–2021)<br>MP for Te Tai Tokerau (2005–2014)<br>Columnist, The Northland Age |
 | **Born** | 1955-01-06, Whangārei |
 | **Wikipedia** | [Hone Harawira](https://en.wikipedia.org/wiki/Hone_Harawira) |
+
+<sub>Photo: Socialist Aotearoa — CC BY-SA 1.0 — [source](https://commons.wikimedia.org/wiki/File:Hone_Harawira%2C_Mana_Party_leader.jpg)</sub>
 
 ## Current status
 
