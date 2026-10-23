@@ -4,7 +4,7 @@ A sourced, non-partisan research archive for voters in the **7 November 2026 gen
 
 **Live site: https://not-simon.github.io/Politicsnz/**
 
-It comes with an interactive, phone-friendly guide in [`site/`](site/) — find-your-match quiz, party pages, issue comparisons, your electorate's candidates, a tap-a-seat map of every Parliament, poll trends, a coalition builder and an MMP seat calculator.
+It comes with an interactive, phone-friendly guide in [`site/`](site/), organised around five questions: **Today** (what to do now, what's new), **Vote** (am I enrolled, how and where do I vote, who's standing where I live), **Choose** (policy swipe, find-your-match quiz, values compass, a two-player game, compare two parties), **Parties** (every party, policy, issue, person, promise and press release) and **Seats** (polls and forecast, the electorate map since 2011, Parliament, coalition builder, seat calculator, election-night results). Design notes are in [`site/redesign/`](site/redesign/IA.md).
 
 > Not affiliated with any party. Every fact is meant to link to its source, and the same rules apply to every party ([editorial standards](docs/EDITORIAL_STANDARDS.md)). If you find an error, open a [Correction issue](https://github.com/not-simon/Politicsnz/issues/new/choose) or see [how to report an error](docs/EDITORIAL_STANDARDS.md#how-to-report-an-error). Party policy texts are reproduced as published, for reference. Enrol and find your voting place at **vote.nz**.
 

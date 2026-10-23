@@ -191,22 +191,19 @@ for f in (ROOT / 'data' / 'geo').glob('*.json'): shutil.copy(f, OUT / 'geo' / f.
 
 # --- assemble pages: artifact fragment (no doctype) + standalone index.html
 # The app source is modular: site/src/shell.html (markup) + site/src/css/*.css + site/src/js/*.js, concatenated in
-# filename order into one single-file page. site/src/app.html is no longer read (kept out of the tree since 23 Oct 2026).
+# filename order into one single-file page (the redesign of 23-24 Oct 2026; see site/redesign/ and docs/PORT_PLAN.md).
 SRC = ROOT / 'site' / 'src'
 css = '\n'.join(f.read_text() for f in sorted((SRC / 'css').glob('*.css')))
 js = '\n'.join(f.read_text() for f in sorted((SRC / 'js').glob('*.js')))
 src = (SRC / 'shell.html').read_text().replace('/* @CSS */', css).replace('/* @JS */', js)
-# While the redesign is being ported, site/src-next/ builds to site/new.html (same data/ paths) so the live page stays intact.
-NEXT = ROOT / 'site' / 'src-next'
-if NEXT.exists():
-    ncss = '\n'.join(f.read_text() for f in sorted((NEXT / 'css').glob('*.css')))
-    njs = '\n'.join(f.read_text() for f in sorted((NEXT / 'js').glob('*.js')))
-    nsrc = (NEXT / 'shell.html').read_text().replace('/* @CSS */', ncss).replace('/* @JS */', njs)
-    (ROOT / 'site' / 'new.html').write_text('<!doctype html>\n<html lang="en-NZ"><head><meta charset="utf-8"><title>Ballot Book NZ</title>'
-        '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></head><body>\n' + nsrc + '\n</body></html>\n')
+HEAD = ('<!doctype html>\n<html lang="en-NZ"><head><meta charset="utf-8"><title>Ballot Book NZ — an independent guide to the 2026 election</title>'
+        '<meta name="description" content="Independent, non-partisan guide to New Zealand\'s 7 November 2026 general election: how to vote, your electorate, every party and policy, polls and Parliament.">'
+        '<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3E%3Ccircle cx=%2713%27 cy=%2716%27 r=%2711%27 fill=%27none%27 stroke=%27%23181a1f%27 stroke-width=%273%27/%3E%3Cpath d=%27M7.5 15.5l4.5 4.5L27 3.5%27 fill=%27none%27 stroke=%27%23d6246e%27 stroke-width=%273.5%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">'
+        '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></head><body>\n')
 (ROOT / 'site' / 'artifact.html').write_text(src)
-(ROOT / 'site' / 'index.html').write_text('<!doctype html>\n<html lang="en"><head><meta charset="utf-8">'
-    '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></head><body>\n' + src + '\n</body></html>\n')
+(ROOT / 'site' / 'index.html').write_text(HEAD + src + '\n</body></html>\n')
+# new.html was the preview address during the port; keep it as a redirect so shared links still work
+(ROOT / 'site' / 'new.html').write_text('<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./index.html"><title>Ballot Book NZ</title><a href="./index.html">Ballot Book NZ has moved to index.html</a>\n')
 sz = {f.name: f.stat().st_size for f in OUT.rglob('*.json')}
 print('parties', len(parties), 'policies', sum(len(v) for v in policies.values()), 'people', len(people), 'thumbs', len(thumbs),
       'elections', len(elections), 'parliaments', len(parliaments), 'pages', len(pages))

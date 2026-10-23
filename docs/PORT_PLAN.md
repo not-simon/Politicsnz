@@ -1,3 +1,5 @@
+> **Status (24 Oct 2026): the port is complete.** `site/src/` is now the redesigned app and `site/index.html` is built from it. This file is kept as the record of how the port was organised.
+
 # Porting the redesign — shared brief for the view agents
 
 Read first: `site/redesign/IA.md` (why), `site/redesign/PORTING.md` (how: shell, routes, class names, per-view changes,
@@ -6,7 +8,7 @@ neutrality checklist, QA list), the mockup HTML for your screens in `site/redesi
 
 ## Where things are
 
-- **Source being ported:** `site/src-next/` — `shell.html` + `css/*.css` + `js/*.js`, concatenated in filename order by
+- **Source being ported (now `site/src/`):** `site/src-next/` — `shell.html` + `css/*.css` + `js/*.js`, concatenated in filename order by
   `python3 tools/build_site.py` into `site/new.html` (preview). The live site (`site/index.html`) is built from `site/src/`
   and must not be touched. Every function is global across files; keep names unique.
 - **Already done (stage 1, do not edit):** `shell.html`, `css/00-tokens.css`, `css/01-components.css`, `js/00-core.js`,

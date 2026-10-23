@@ -28,3 +28,10 @@ async function openPage(k) { await loadPages(); const t = S.pages[k];
   if (!t) { openDialog('Not written yet', `<p>${esc(k)} isn't in this version of the guide yet.</p>`); return }
   openDialog(pageTitle(k), `<div class="prose" data-base="${esc(k)}">${md(t.replace(/^#\s+.+\n/, ''))}</div>`) }
 function md(t) { try { return DOMPurify.sanitize(marked.parse(String(t || ''))) } catch { return `<pre>${esc(t)}</pre>` } }
+
+// Layer-2 page for long-form markdown (footer links, "about" routes): rendered in the page, not a sheet.
+V.page = async key => { await loadPages(); const t = S.pages[key];
+  if (blockedPage(key)) { $('#main').innerHTML = `<div class="lock">${ic('lock')}<h2 class="h3">Hidden until 7pm</h2><p>${ELECTION_DAY_BLOCK}</p></div>`; return }
+  $('#main').innerHTML = `<article class="stack stack--l" style="max-width:760px"><header class="pagehead"><p class="eyebrow">${esc(key.split('/')[0] === 'docs' ? 'About this guide' : key.split('/')[0])}</p><h1>${esc(t ? pageTitle(key) : 'Not written yet')}</h1></header>
+    <div class="prose" data-base="${esc(key)}">${t ? md(t.replace(/^#\s+.+\n/, '')) : `<p>${esc(key)} isn't in this version of the guide yet.</p>`}</div>
+    <p class="src">Plain-text source: <a href="https://github.com/not-simon/Politicsnz/blob/main/${esc(key)}" target="_blank" rel="noopener">${esc(key)}</a></p></article>` };

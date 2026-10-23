@@ -1,0 +1,3 @@
+/* Small aliases kept for shared helpers that predate the design system. */
+.tiny { font-size: var(--t-micro) }
+.empty { color: var(--text-3); font-size: var(--t-small); padding: var(--s-4) 0 }

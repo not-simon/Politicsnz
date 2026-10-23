@@ -3,19 +3,24 @@ function nzNow() { return new Date(new Date().toLocaleString('en-US', { timeZone
 function electionPhase() { const t = nzNow(); const d = t.getFullYear() * 10000 + (t.getMonth() + 1) * 100 + t.getDate();
   if (d < 20261026) return 'enrol'; if (d < 20261107) return 'advance'; if (d === 20261107) return t.getHours() < 19 ? 'electionday' : 'results'; return 'after' }
 const ELECTION_DAY_BLOCK = 'Today is election day. By law, material that could influence how people vote can’t be published until voting closes at 7pm, so the match quiz, swipe, compass, game, polls, forecast and party newsroom are hidden until then. Voting places are open 9am–7pm.';
-function renderBanner() { const ph = electionPhase(); let el = $('#banner'); if (!el) { el = document.createElement('div'); el.id = 'banner'; el.className = 'banner'; document.querySelector('header.top').after(el) }
-  const key = 'banner-' + ph; if (store.get(key) === 'x') { el.hidden = true; return }
-  const msg = { enrol: 'Enrolment closes <b>midnight Sunday 25 October</b>. There is no enrolling on election day this year. <a href="https://vote.nz" target="_blank" rel="noopener">Check or update your enrolment at vote.nz</a>.',
-    advance: 'Voting is open. Vote early at any voting place until 6 November, or on election day Saturday 7 November (9am–7pm). <a href="https://vote.nz" target="_blank" rel="noopener">Find a voting place</a>.',
-    electionday: 'Election day: voting places are open 9am–7pm. Polls, forecasts, quiz results and the game are hidden until 7pm.',
-    results: 'Voting has closed. Preliminary results are being counted; official results on 27 November.', after: '' }[ph];
-  if (!msg) { el.hidden = true; return } el.hidden = false; el.innerHTML = `<div class="wrap"><span>${msg}</span><button aria-label="Dismiss" id="banner-x">×</button></div>`; $('#banner-x').onclick = () => { store.set(key, 'x'); el.hidden = true } }
+// Phase ribbon under the masthead (replaces the old dismissible banner). Not dismissible; one line + one action.
+const PHASE_MSG = () => ({
+  enrol: ['Enrolment closes ' + (daysTo('2026-10-25') === 0 ? 'tonight.' : daysTo('2026-10-25') === 1 ? 'tomorrow.' : 'in ' + daysTo('2026-10-25') + ' days.'), 'Midnight Sunday 25 October. No enrolling at voting places this year.', 'Check at vote.nz', 'https://vote.nz'],
+  advance: ['Voting is open.', 'Vote early at any voting place until Friday 6 November, or on Saturday 7 November 9am–7pm.', 'Find a voting place', 'https://map.vote.nz'],
+  electionday: ['Election day: voting closes at 7pm.', 'Results, polls, the quiz and the forecast are hidden until then.', 'Find a voting place', 'https://map.vote.nz'],
+  results: ['Results are coming in.', 'Preliminary count tonight; special votes are counted later.', 'Live results', '#/seats/results'],
+  after: ['Special votes are being counted.', 'Final result Friday 27 November.', 'What could change', '#/vote/specials'] });
+function daysTo(iso) { const t = nzNow(); const today = Date.UTC(t.getFullYear(), t.getMonth(), t.getDate()); const [y, m, d] = iso.split('-').map(Number); return Math.round((Date.UTC(y, m - 1, d) - today) / 864e5) }
+function renderPhase() { const ph = electionPhase(); const el = $('#phase'); if (!el) return; const m = PHASE_MSG()[ph]; if (!m) { el.hidden = true; return }
+  el.hidden = false; el.dataset.phase = ph;
+  el.innerHTML = `<div class="wrap phase__in"><span class="phase__dot" aria-hidden="true"></span><span><b>${m[0]}</b> <span class="phase__more">${m[1]}</span></span><a href="${m[3]}"${m[3].startsWith('http') ? ' target="_blank" rel="noopener"' : ''}>${m[2]}</a></div>` }
+const renderBanner = renderPhase;
 function blockedToday(view) { return electionPhase() === 'electionday' && ['match', 'compass', 'swipe', 'swipe-tally', 'polls', 'trends', 'game', 'newsroom'].includes(view) }
 const BLOCKED_PAGES = /^(REPORT\.md|elections\/2026\.md|elections\/trends\.md|guide\/parties\.md|guide\/forecast-method\.md|guide\/quiz-method\.md|guide\/quiz-research\.md|guide\/compass-method\.md)$/;
 function blockedPage(k) { return electionPhase() === 'electionday' && BLOCKED_PAGES.test(k) }
 const isElectionDay = () => electionPhase() === 'electionday';
 const RESULT_DISCLAIMER = `<p class="small muted" style="border-top:1px solid var(--line);padding-top:10px">This shows how closely your answers line up with each party's published positions on the questions you answered. It is information, not advice: it does not take account of candidates, coalitions, trust, or the issues we did not ask about, and it is not a recommendation about how to vote. Every party is listed. Read the party pages and the original policy texts before deciding. Ballot Book NZ is independent and not affiliated with any party, candidate or the Electoral Commission.</p>`;
-const NOT_EC = `<p class="tiny muted">Independent and non-partisan. Not the Electoral Commission: for official information on enrolling, voting places and hours, go to <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or call 0800 36 76 56.</p>`;
+const NOT_EC = `<p class="micro muted">Independent and non-partisan. Not the Electoral Commission: for official information on enrolling, voting places and hours, go to <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or call 0800 36 76 56.</p>`;
 
 /* ----- find my electorate from location (device-side only) ----- */
 function pointInRing(pt, ring) { let inside = false; const [x, y] = pt; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) { const [xi, yi] = ring[i], [xj, yj] = ring[j]; if (((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi)) inside = !inside } return inside }
@@ -39,11 +44,11 @@ function buildLinker() { if (S.linker !== undefined) return S.linker; const name
   names.sort((a, b) => b[0].length - a[0].length); const map = Object.fromEntries(names);
   const re = new RegExp('(?<![\\w-])(' + names.map(([n]) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')(?![\\w-])', 'g');
   S.linker = names.length ? { re, map } : null; return S.linker }
-function autolink(root) { const L = buildLinker(); if (!L || !root) return; const skip = 'A, BUTTON, H1, H2, H3, H4, .nm, .st, .who, .pcard, .person, .seatcard, .match, .scard, .legend, .tabs, select, input, code, pre';
+function autolink(root) { const L = buildLinker(); if (!L || !root) return; const skip = 'A, BUTTON, H1, H2, H3, H4, .nm, .st, .who, .pcard, .person, .seatcard, .match, .scard, .legend, .tabs, .statement, .scard__s, .potd__s, .release__t, .ptag, .phead, .brand, .src, .release__m, .person__meta, select, input, code, pre';
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: n => (n.nodeValue.trim().length > 3 && !n.parentElement.closest(skip)) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
   const nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
   for (const n of nodes) { L.re.lastIndex = 0; if (!L.re.test(n.nodeValue)) continue; const frag = document.createDocumentFragment(); let last = 0; L.re.lastIndex = 0; let m;
-    while ((m = L.re.exec(n.nodeValue))) { frag.appendChild(document.createTextNode(n.nodeValue.slice(last, m.index))); const b = document.createElement('button'); b.className = 'lnk'; b.type = 'button'; b.textContent = m[0];
+    while ((m = L.re.exec(n.nodeValue))) { frag.appendChild(document.createTextNode(n.nodeValue.slice(last, m.index))); const b = document.createElement('button'); b.className = 'linkbtn'; b.type = 'button'; b.textContent = m[0];
       const t = L.map[m[0]]; if (t.startsWith('person:')) b.dataset.person = t.slice(7); else b.dataset.go = t; frag.appendChild(b); last = m.index + m[0].length }
     frag.appendChild(document.createTextNode(n.nodeValue.slice(last))); n.parentNode.replaceChild(frag, n) } }
 
