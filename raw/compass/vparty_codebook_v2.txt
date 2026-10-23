@@ -1,0 +1,2144 @@
+Codebook Varieties of Party
+Identity and Organization
+(V-Party)
+
+
+
+
+v2 - February 2022
+
+
+
+  Copyright © University of Gothenburg, V-Dem Institute
+  All rights reserved
+Suggested citation: Staffan I. Lindberg, Nils Düpont, Masaaki Higashijima, Yaman Berker Kava-
+soglu, Kyle L. Marquardt, Michael Bernhard, Holger Döring, Allen Hicken, Melis Laebens, Juraj
+Medzihorsky, Anja Neundorf, Ora John Reuter, Saskia Ruth–Lovell, Keith R. Weghorst, Nina Wiese-
+homeier, Joseph Wright, Nazifa Alizada, Paul Bederke, Lisa Gastaldi, Sandra Grahn, Garry Hindle,
+Nina Ilchenko, Johannes von Römer, Steven Wilson, Daniel Pemstein, and Brigitte Seim. 2022.
+“Codebook Varieties of Party Identity and Organization (V–Party) V2”. Varieties of Democracy
+(V–Dem) Project. https://doi.org/10.23696/vpartydsv2
+Main coders of factual (A/A*) data: Paul Bederke, Holger Döring, Nils Düpont, Masaaki
+Higashijima, Tsubasa Nishimura, Fatemah Soleiman, Ken Yoshioka.
+Other coders of factual (A/A*) data: Lisa Gastaldi, Dominik Hindorf, Ana Andrade Good God.
+
+
+Funders: We are very grateful for our funders’ support over the years, which has made this venture
+possible. To learn more about our funders, please visit: https://www.v-dem.net/funders.html
+For data enquires: contact@v–dem.net
+
+
+
+
+                                                                                                1
+Table of Contents
+1 Explanatory Notes                                                                                     5
+  1.1 Introduction to V–Party . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     5
+  1.2 Version 2 Updates and Improvements . . . . . . . . . . . . . . . . . . . . . . . . . . .          6
+  1.3 Cautionary Notes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    6
+  1.4 Suggested Citation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    7
+  1.5 Variable Information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    8
+      1.5.1 Variable Types . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      8
+      1.5.2 Number of Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       8
+      1.5.3 Variable Versions and Suffixes . . . . . . . . . . . . . . . . . . . . . . . . . . . .      9
+      1.5.4 Variable Tags . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    10
+      1.5.5 Variable Entry Clarifications . . . . . . . . . . . . . . . . . . . . . . . . . . . .      11
+  1.6 Country Coverage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     13
+  1.7 Identifier Variables in the V–Party Dataset . . . . . . . . . . . . . . . . . . . . . . . .      15
+      1.7.1 Party name, English (A*) (v2paenname) . . . . . . . . . . . . . . . . . . . . .            15
+      1.7.2 Party name, original (A*) (v2paorname) . . . . . . . . . . . . . . . . . . . . .           15
+      1.7.3 Party short name (A*) (v2pashname) . . . . . . . . . . . . . . . . . . . . . . .           15
+      1.7.4 Numeric party identifier (A*) (v2paid) . . . . . . . . . . . . . . . . . . . . . .         15
+      1.7.5 Party Facts ID (A*) (pf_party_id) . . . . . . . . . . . . . . . . . . . . . . . .          15
+      1.7.6 Start and end year of gap in party coding (A*) (party_gaps) . . . . . . . . . .            16
+      1.7.7 Party Facts URL (A*) (pf_url) . . . . . . . . . . . . . . . . . . . . . . . . . .          16
+      1.7.8 Country name (A*) (country_name) . . . . . . . . . . . . . . . . . . . . . . .             16
+      1.7.9 Gap index (A*) (gap_index) . . . . . . . . . . . . . . . . . . . . . . . . . . . .         16
+      1.7.10 Time–Specific Country Name (A*) (histname) . . . . . . . . . . . . . . . . . .            16
+      1.7.11 V–Dem country ID (A*) (country_id) . . . . . . . . . . . . . . . . . . . . . .            16
+      1.7.12 Country name abbreviation (A*) (country_text_id) . . . . . . . . . . . . . . .            17
+      1.7.13 Year (A*) (year) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    17
+      1.7.14 Historical Date (A*) (historical_date) . . . . . . . . . . . . . . . . . . . . . . .      17
+      1.7.15 Start of coding period (A*) (codingstart) . . . . . . . . . . . . . . . . . . . . .       17
+      1.7.16 Gap in coding period starts (A*) (gapstart) . . . . . . . . . . . . . . . . . . .         17
+      1.7.17 Gap in coding period ends (A*) (gapend) . . . . . . . . . . . . . . . . . . . . .         17
+      1.7.18 End of coding period (A*) (codingend) . . . . . . . . . . . . . . . . . . . . . .         18
+      1.7.19 V–Dem Project (A*) (project) . . . . . . . . . . . . . . . . . . . . . . . . . . .        18
+      1.7.20 COW Country Code (E) (COWcode) . . . . . . . . . . . . . . . . . . . . . . .              18
+      1.7.21 Region (geographic) (E) (e_regiongeo) . . . . . . . . . . . . . . . . . . . . . .         18
+      1.7.22 Region (politico-geographic) (E) (e_regionpol) . . . . . . . . . . . . . . . . . .        19
+      1.7.23 Region (politico-geographic 6-category) (E) (e_regionpol_6C) . . . . . . . . .            19
+      1.7.24 CHES Party Code (E) (CHES_ID) . . . . . . . . . . . . . . . . . . . . . . . .             20
+      1.7.25 GPS Party Code (E) (GPS_ID) . . . . . . . . . . . . . . . . . . . . . . . . . .           20
+
+2 Indices                                                                                       21
+  2.1 Anti-Pluralism Index (D) (v2xpa_antiplural) . . . . . . . . . . . . . . . . . . . . . . . 21
+  2.2 Populism Index (D) (v2xpa_popul) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+3 Indicators                                                                                           22
+  3.1 Party Basics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+       3.1.1 Seat share (A) (v2paseatshare) . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+       3.1.2 Seat number (A) (v2panumbseat) . . . . . . . . . . . . . . . . . . . . . . . . . 22
+       3.1.3 Seats total (A) (v2patotalseat) . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+       3.1.4 Vote share (A) (v2pavote) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+       3.1.5 Temporary pre-electoral alliance (A) (v2paallian) . . . . . . . . . . . . . . . . 23
+       3.1.6 Name of temporary pre-electoral alliance (A) (v2panaallian) . . . . . . . . . . 23
+       3.1.7 Vote share of temporary pre-electoral alliance (A) (v2pavallian) . . . . . . . . 23
+
+                                                                                                       2
+         3.1.8 Seats of temporary pre-electoral alliance (A) (v2panoallian) . . . . . . . . . .             23
+         3.1.9 Party continuation (C) (v2paelcont) . . . . . . . . . . . . . . . . . . . . . . . .          24
+         3.1.10 Government support (A,C) (v2pagovsup) . . . . . . . . . . . . . . . . . . . . .             24
+         3.1.11 Pariah party (C) (v2papariah) . . . . . . . . . . . . . . . . . . . . . . . . . . .         24
+   3.2   Party Identity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   26
+         3.2.1 Anti-elitism (C) (v2paanteli) . . . . . . . . . . . . . . . . . . . . . . . . . . . .        26
+         3.2.2 People-centrism (C) (v2papeople) . . . . . . . . . . . . . . . . . . . . . . . . .           26
+         3.2.3 Political opponents (C) (v2paopresp) . . . . . . . . . . . . . . . . . . . . . . .           27
+         3.2.4 Political pluralism (C) (v2paplur) . . . . . . . . . . . . . . . . . . . . . . . . .         27
+         3.2.5 Minority rights (C) (v2paminor) . . . . . . . . . . . . . . . . . . . . . . . . . .          27
+         3.2.6 Rejection of political violence (C) (v2paviol) . . . . . . . . . . . . . . . . . . .         28
+         3.2.7 Immigration (C) (v2paimmig) . . . . . . . . . . . . . . . . . . . . . . . . . . .            28
+         3.2.8 LGBT social equality (C) (v2palgbt) . . . . . . . . . . . . . . . . . . . . . . .            29
+         3.2.9 Cultural superiority (C) (v2paculsup) . . . . . . . . . . . . . . . . . . . . . . .          29
+         3.2.10 Religious principles (C) (v2parelig) . . . . . . . . . . . . . . . . . . . . . . . .        29
+         3.2.11 Gender equality (C) (v2pagender) . . . . . . . . . . . . . . . . . . . . . . . . .          30
+         3.2.12 Working women (C) (v2pawomlab) . . . . . . . . . . . . . . . . . . . . . . . .              30
+         3.2.13 Economic left-right scale (C) (v2pariglef) . . . . . . . . . . . . . . . . . . . . .        30
+         3.2.14 Welfare (C) (v2pawelf) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        31
+         3.2.15 Clientelism (C) (v2paclient) . . . . . . . . . . . . . . . . . . . . . . . . . . . .        31
+         3.2.16 Salience and mobilization (C) (v2pasalie) . . . . . . . . . . . . . . . . . . . . .         32
+         3.2.17 Other salient issues (C) (v2paaspoth) . . . . . . . . . . . . . . . . . . . . . . .         32
+   3.3   Party Organisation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     33
+         3.3.1 Party support group (C) (v2pagroup) . . . . . . . . . . . . . . . . . . . . . . .            33
+         3.3.2 Party support group name (C) (v2paothgr) . . . . . . . . . . . . . . . . . . . .             33
+         3.3.3 Local party office (C) (v2palocoff) . . . . . . . . . . . . . . . . . . . . . . . . .        33
+         3.3.4 Local organizational strength (C) (v2paactcom) . . . . . . . . . . . . . . . . .             34
+         3.3.5 Affiliate organizations (C) (v2pasoctie) . . . . . . . . . . . . . . . . . . . . . .         34
+         3.3.6 Candidate nomination (C) (v2panom) . . . . . . . . . . . . . . . . . . . . . . .             34
+         3.3.7 Internal cohesion (C) (v2padisa) . . . . . . . . . . . . . . . . . . . . . . . . . .         35
+         3.3.8 Personalization of party (C) (v2paind) . . . . . . . . . . . . . . . . . . . . . .           35
+         3.3.9 Party resources (C) (v2pafunds) . . . . . . . . . . . . . . . . . . . . . . . . . .          36
+
+4 External Party–Level Data                                                                          37
+  4.1 Populism . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+      4.1.1 Salience of anti–establishment rhetoric (E) (ep_antielite_salience) . . . . . . . 37
+      4.1.2 Salience of reducing political corruption (E) (ep_corrupt_salience) . . . . . . 37
+      4.1.3 Members vs. leadership party policy choices (E) (ep_members_vs_leadership) 37
+      4.1.4 Position on direct vs. representative democracy (E) (ep_people_vs_elite) . . 37
+      4.1.5 Populism type (E) (ep_type_populism) . . . . . . . . . . . . . . . . . . . . . 37
+      4.1.6 Populist values type (E) (ep_type_populist_values) . . . . . . . . . . . . . . 38
+      4.1.7 Populist rhetoric (E) (ep_v8_popul_rhetoric) . . . . . . . . . . . . . . . . . . 38
+      4.1.8 Populist saliency (E) (ep_v9_popul_saliency) . . . . . . . . . . . . . . . . . . 38
+  4.2 Liberal–Traditional Scaling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+      4.2.1 Position on democratic freedoms and rights (E) (ep_galtan) . . . . . . . . . . 38
+      4.2.2 Salience of libertarian or traditional issues (E) (ep_galtan_salience) . . . . . . 39
+      4.2.3 Social Liberalism-Conservatism (E) (ep_v6_lib_cons) . . . . . . . . . . . . . 39
+      4.2.4 Social values saliency (E) (ep_v7_lib_cons_saliency) . . . . . . . . . . . . . . 39
+
+5 Bibliography                                                                                              40
+
+Appendix A Glossary                                                                                         42
+
+Appendix B Comments Section                                                               43
+  B.1 Comments on A–data for the Party Survey (A) (v2padatacom) . . . . . . . . . . . . . 43
+                                                                                                             3
+B.2   Party Basics Comments (C) (v2paccpar) . . . . . . . . . . . . . . . . . . . . . . . . .   43
+
+
+
+
+                                                                                                 4
+Explanatory Notes
+
+
+
+
+1     Explanatory Notes
+1.1     Introduction to V–Party
+The V-Party dataset is the result of a truly collaborative endeavour. Building on the experiences and
+the infrastructure of the V–Dem Project and Institute (Coppedge, Gerring, et al., 2020; Pemstein
+et al., 2020), existing party datasets such as CHES (Bakker et al., 2015; Polk et al., 2017; Bakker
+et al., 2020), DALP (Kitchelt, 2014), Mair and Katz (1992), Janda (1980), PPLA (Wiesehomeier and
+Benoit, 2009), PREPPS (Wiesehomeier et al., 2019), and academic literature (e.g. Wiesehomeier,
+2018; Rooduijn, 2014; Poguntke et al., 2016; Norris and Inglehart, 2019; Mudde and Kaltwasser, 2013;
+Gunther and Diamond, 2003; Hooghe et al., 2002), we developed the questionnaire for the V-Party
+dataset in a series of consultative meetings between 2017 and 2019.1
+The project joined forces with Nils Düpont and Holger Döring of the University of Bremen. Along
+with other colleagues, they created PartyFacts (Döring and Regel, 2019) — an online database on
+political parties — and compiled a dataset with election results globally from 1880 to 2015 (Döring
+and Düpont, 2020). In a joint effort, we updated and completed their data together with Michael
+Bernhard and Masaaki Higashijima and their research assistants. As a result of these efforts, the
+present dataset includes factual data on virtually all political parties represented in parliaments,
+their vote and seat share for all V–Dem countries during the period 1900–2019 (See Düpont et al.,
+2020).
+For the time period 1970–2019, we offer expert–coded assessments of party organization and identity
+for most parties in most countries. Using V–Dem methodology (Coppedge, Gerring, et al., 2020), in
+January 2020 and 2021, 711 experts rated the policy positions and organizational capacity of political
+parties across elections in a given country. Specifically, as the general rule experts coded data for
+all parties that reached more than 5% of the vote share at a given election 2 . We aggregated the
+expert-coded data using V–Dem’s Bayesian Item Response Theory measurement model (Pemstein
+et al., 2020), unless noted otherwise.3 The result is data on 3467 political parties across 3151 elections
+in 178 countries; in total 11898 party-election year units. Typically, at least 4 coders provided their
+assessment per observation.
+
+
+
+
+   1 We would like to thank Tarik Abou–Chadi, Fernando Casal Bertoa, Michael Coppedge, Sarah Engler, Herbert
+
+Kitschelt, Andrej Kokkonen, John Gerring, Kirk Hawkins, Sebastian Hellmeier, Pippa Norris, Jonathan Polk, Sérgio
+Praça, Robert Rohrschneider, Yi–ting Wang for their generous comments and feedback to this project. We also thank
+participants of the Varieties of Autocracy workshops in Gothenburg in May 2017 and Nottingham in June 2018 and of
+the 2019 V–Dem Annual Conference as well as of a Virtual Workshop with Party Experts in May 2019.
+   2 This also includes alliances and coalitions. In some cases the expert–coded data was collected only for the major
+
+parties in the alliances.
+   3 We aggregate the data from all coders who completed their coding task for a given country–variable; we remove
+
+country–variable codings of 72 experts who only coded one election year for that country–variable. Additional infor-
+mation on the criteria and procedure for removing these data available upon request.
+
+                                                                                                                    5
+Explanatory Notes
+  1.2 Version 2 Updates and Improvements
+
+
+
+1.2   Version 2 Updates and Improvements
+  • Index v2xpa_illiberal (Illiberalism) is renamed as v2xpa_antiplural (Anti–pluralism).
+  • v2pagovsup is classified as “A,C” variable: it was coded by party experts but the aggregated
+    result was cross–checked by Research Assistant.
+
+  • Some party IDs were changed to be in line with the Party Facts project party IDs. In some
+    cases it resulted in obsolete expert coded data, hence it was not included in the dataset.
+  • The data on seat and vote share for some of the parties was corrected.
+  • Minor inconsistencies in the variable descriptions in the codebook were corrected.
+
+1.3   Cautionary Notes
+V–Dem is firmly committed to full transparency and release of the data we have. We ask users to
+take the following cautions into consideration when using the dataset.
+
+  • The V-Dem Methodology assumes five or more coders. In the V–Party dataset it has for a few
+    country–variable combinations been impossible to achieve that target. We have found that this
+    at times result in significant changes in point estimates as a consequence of self–selected attrition
+    of Country Experts, rather than actual changes in the country. We therefore strongly advise
+    against using point estimates for country–variable–years with three or fewer (≤ 3) ratings. We
+    suggest to filter these out before conducting any type of analysis. For this purpose, a special
+    count–variable for each Country–Expert coded variable, which is suffixed with “_nr”, is included
+    in the dataset.
+
+  • All expert–coded variables save v2paplur and v2papariah converged according to strict V-Dem
+    convergence criteria (no more than 5% of any set of parameters had Gelman-Rubin diagnostic
+    values greater than 1.01). It appears that much of the lack of convergence in v2paplur and
+    v2papariah is due to great expert disagreement in several countries. Users of these two variables
+    should be particularly attentive to uncertainty about latent estimates.
+
+
+
+
+                                                                                                       6
+Explanatory Notes
+  1.4 Suggested Citation
+
+
+
+1.4    Suggested Citation
+Nota bene: If a variable drawn from the V–Dem dataset plays an important role in your project
+(published or unpublished), please use the applicable citations below:
+
+  • V–Dem Varieties of Party Identity and Organization (V–Party) Dataset:
+      Staffan I. Lindberg, Nils Düpont, Masaaki Higashijima, Yaman Berker Kavasoglu, Kyle L.
+      Marquardt, Michael Bernhard, Holger Döring, Allen Hicken, Melis Laebens, Juraj Medzihorsky,
+      Anja Neundorf, Ora John Reuter, Saskia Ruth–Lovell, Keith R. Weghorst, Nina Wiesehomeier,
+      Joseph Wright, Nazifa Alizada, Paul Bederke, Lisa Gastaldi, Sandra Grahn, Garry Hindle,
+      Nina Ilchenko, Johannes von Römer, Steven Wilson, Daniel Pemstein, and Brigitte Seim. 2022.
+      “Varieties of Party Identity and Organization (V–Party) Dataset V2". Varieties of Democracy
+      (V-Dem) Project. https://doi.org/10.23696/vpartydsv2
+      and:
+      Pemstein, Daniel, Kyle. L. Marquardt, Eitan Tselgov, Yi–ting Wang, Juraj Medzihorsky, Joshua
+      Krusell, Farhad Miri, and Johannes von Römer. 2020. “The V–Dem Measurement Model:
+      Latent Variable Analysis for Cross–National and Cross–Temporal Expert–Coded Data”. V–
+      Dem Working Paper No. 21. 5th edition. University of Gothenburg: Varieties of Democracy
+      Institute.
+
+  • V–Dem Party Codebook:
+      Staffan I. Lindberg, Nils Düpont, Masaaki Higashijima, Yaman Berker Kavasoglu, Kyle L.
+      Marquardt, Michael Bernhard, Holger Döring, Allen Hicken, Melis Laebens, Juraj Medzihorsky,
+      Anja Neundorf, Ora John Reuter, Saskia Ruth–Lovell, Keith R. Weghorst, Nina Wiesehomeier,
+      Joseph Wright, Nazifa Alizada, Paul Bederke, Lisa Gastaldi, Sandra Grahn, Garry Hindle,
+      Nina Ilchenko, Johannes von Römer, Steven Wilson, Daniel Pemstein, and Brigitte Seim. 2022.
+      “Codebook Varieties of Party Identity and Organization (V-Party) V2” Varieties of Democracy
+      (V–Dem) Project.
+  • V–Dem Methodology:
+      Coppedge, Michael, John Gerring, Carl Henrik Knutsen, Staffan I. Lindberg, Jan Teorell, Kyle
+      L. Marquardt, Juraj Medzihorsky, Daniel Pemstein, Nazifa Alizada, Lisa Gastaldi, Garry Hin-
+      dle, Johannes von Römer, Eitan Tzelgov, Yi–ting Wang, and Steven Wilson. 2021. “V-Dem
+      Methodology v11” Varieties of Democracy (V–Dem) Project.
+  • V–Dem Party Coding Units:
+      Staffan I. Lindberg, Nils Düpont, Masaaki Higashijima, Yaman Berker Kavasoglu, Kyle L.
+      Marquardt, Michael Bernhard, Holger Döring, Allen Hicken, Melis Laebens, Juraj Medzihorsky,
+      Anja Neundorf, Ora John Reuter, Saskia Ruth–Lovell, Keith R. Weghorst, Nina Wiesehomeier,
+      Joseph Wright, Nazifa Alizada, Paul Bederke, Lisa Gastaldi, Sandra Grahn, Garry Hindle,
+      Nina Ilchenko, Johannes von Römer, Steven Wilson, Daniel Pemstein, and Brigitte Seim. 2022.
+      “V–Dem Party Coding Units V2” Varieties of Democracy (V–Dem) Project.
+
+  • V–Dem Country Coding Units:
+      Coppedge, Michael, John Gerring, Carl Henrik Knutsen, Staffan I. Lindberg, Jan Teorell, and
+      Lisa Gastaldi. 2021. “V-Dem Country Coding Units v11” Varieties of Democracy (V–Dem)
+      Project.
+  • V–Dem Organization and Management:
+      Coppedge, Michael, John Gerring, Carl Henrik Knutsen, Staffan I. Lindberg, Jan Teorell, Nazifa
+      Alizada, Lisa Gastaldi, Garry Hindle, Nina Ilchenko, and Johannes von Römer. 2021. “V-Dem
+      Organization and Management v11” Varieties of Democracy (V–Dem) Project.
+
+
+
+
+                                                                                                  7
+Explanatory Notes
+  1.5 Variable Information
+
+
+
+1.5      Variable Information
+1.5.1     Variable Types
+The V–Dem Codebook divides variables into the following variable types:
+
+  • Type A*: Variables coded by Research Assistants
+        This data is based on extant sources and is factual in nature. Country Experts indicate their
+        confidence for this pre-coded data.
+  • Type A: Variables coded by Project Managers and Research Assistants
+        This data is based on extant sources and is factual in nature.
+  • Type B: Variables coded by Country Coordinators or Research Assistants
+        The coder is typically a graduate student or recent graduate from the country in question.
+        These variables are factual in nature.
+  • Type C: Variables coded by Country Experts
+        A Country Expert is typically a scholar or professional with deep knowledge of a country and
+        of a particular political institution. Furthermore, the expert is usually a citizen or resident of
+        the country. Multiple experts (usually 5 or more) code each variable. More information about
+        the Country Experts can be found in the V–Dem Methodology document.
+
+  • Type A,C: Variables coded by Country Experts and crosschecked by Research
+    Assistants
+  • Type D: Indices
+        Variables composed of type A, B, or C variables. This data may be accomplished by adding
+        a denominator (e.g., per capita), by creating a cumulative scale (total number of. . . ), or by
+        aggregating larger concepts (e.g., components or indices of democracy).
+  • Type E: Non–V–Dem variables
+        If we import a variable from another source without doing any original coding, except for
+        perhaps imputing missing data, it is not considered a V–Dem product. These variables are
+        found in the section of the Codebook labeled External Party–Level Data. If, however, we gather
+        data from a number of sources and combine them in a more than purely mechanical fashion
+        (requiring some judgment on our part), we regard this as a V–Dem product and classify it as
+        type A, B, or C.
+
+1.5.2     Number of Variables
+
+                 Table 1: Summary of the variables of each type per codebook sections.
+
+             Sections                                       Variable Type           Total, col.
+                                                 A*/A/B/A,C        C     D   E
+             Identifier Variables                      21                    6          27
+             Indices                                                     2               2
+             Party Basics                               8          3                    11
+             Party Identity                                        17                   17
+             Party Organization                                    9                     9
+             External Party–Level Data                                       12         12
+
+             Total, rows                               29          29    2   18         78
+
+
+
+
+                                                                                                        8
+Explanatory Notes
+  1.5 Variable Information
+
+
+
+1.5.3     Variable Versions and Suffixes
+The V–Party Dataset contains several versions of C–class variables coded by country experts.
+
+  • Model Estimates
+        “Model Estimates” — Measurement Model Output:
+        This version has no special suffix (e.g. v2elmulpar). This version of the variables provides
+        country–party–year (country–date in the alternative dataset) point estimates from the V–Dem
+        measurement model (see Pemstein et al. 2019). The measurement model aggregates the ratings
+        provided by multiple country experts and, taking disagreement and measurement error into
+        account, produces a probability distribution over country–party–year scores on a standardized
+        interval scale (see the V–Dem Methodology document). The point estimates are the median
+        values of these distributions for each country–party–year. The scale of a measurement model
+        variable is similar to a normal (“Z”) score (e.g. typically between -5 and 5, with 0 approximately
+        representing the mean for all country–party–years in the sample) though it does not necessarily
+        follow a normal distribution. For most purposes, these are the preferred versions of the variables
+        for time series regression and other estimation strategies.
+        “Model Estimates Measure of Uncertainty” — Measurement Model Highest Posterior Density
+        (HPD) Intervals:
+        This version has the suffixes: “codelow” (e.g. v2elmulpar_codelow) and “codehigh” (e.g.
+        v2elmulpar_codehigh). These two kinds of variables (“code low” and “code high”) demar-
+        cate the interval in which the measurement model places 68% of the probability mass for each
+        country–party–year score, which is approximately equivalent to one standard deviation upper
+        and lower bounds. If the underlying posterior distribution is skewed, the HPDs reflect this
+        with unequal distances between the point estimate and the high and low estimates. We also
+        provide a standard calculation for standard deviation which is marked with the suffix “sd”
+        (e.g., v2elmulpar_sd). The SD might be used to compute the standard frequentist confidence
+        intervals.
+  • Original Scale (*_osp)
+        “Original Scale” — Linearized Original Scale Posterior Prediction:
+        This version has the suffix “_osp,” (e.g. v2elmulpar_osp). In this version of the variables, we
+        have linearly translated the measurement model point estimates back to the original ordinal
+        scale of each variable (e.g. 0–4 for v2elmulpar_osp) as an interval measure. The decimals in
+        the _osp version roughly indicate the distance between the point estimate from the linearized
+        measurement model posterior prediction and the threshold for reaching the next level on the
+        original ordinal scale. Thus, a _osp value of 1.25 indicates that the median measurement
+        model posterior predicted value was closer to the ordinal value of 1 than 2 on the original scale.
+        Technically, it calculates the sum of the posterior probabilities that the estimate is in a particular
+        category: If a particular country–party–year–variable has a probability of 90% to be in category
+        “4”, a 10% probability of being in category “3”, and 0% probability of being in categories “2”,
+        “1”, and “0”, the result is a value of 3.9 (4 ∗ 0.9 + 3 ∗ 0.1 = 3.6 + 0.3). Since there is no
+        conventional theoretical justification for linearly mapping ordinal posterior predictions onto an
+        interval scale, these scores should primarily be used for heuristic purposes. Using the “Ordinal
+        Scale” estimates — or incorporating the properties of ordinal probit models into the estimation
+        procedure — is thus preferable to using the _osp estimates in statistical analyses. However,
+        since the _osp version maps onto the coding criteria found in the V–Dem Codebook, and is
+        strongly correlated with the Measurement Model output (typically at 0.98 or higher), some
+        users may find the _osp version useful in estimating quantities such as marginal effects with a
+        clear substantive interpretation. If a user uses _osp data in statistical analyses it is imperative
+        that she confirm that the results are compatible with estimations using Measurement Model
+        output.
+        “Original Scale Measure of Uncertainty” — Linearized Original Scale HPD Intervals:
+        This version has the suffixes – “codelow” and “codehigh” (e.g. v2elmulpar_osp_codelow and
+        v2elmulpar_osp_codehigh). We estimate these quantities in a similar manner as the Measure-
+        ment Model Highest Posterior Density Intervals. These two variables [“code low” and “code
+
+                                                                                                            9
+Explanatory Notes
+  1.5 Variable Information
+
+
+
+        high”] demarcate the interval in which the measurement model places 70% of the probability
+        mass for each country–party–year score, which is approximately equivalent to one standard de-
+        viation upper and lower bounds. If the underlying posterior distribution is skewed, the HPDs
+        reflect this with unequal distances between the point estimate and the high and low estimates.
+        We also provide a standard calculation for standard deviation which is marked with the suffix
+        “sd” (e.g., v2elmulpar_osp_sd). The SD might be used to compute the standard frequentist
+        confidence intervals.
+  • Ordinal Scale (*_ord)
+        “Ordinal Scale” — Measurement Model Estimates of Original Scale Value:
+        This version has the suffix “_ord” (e.g. v2elmulpar_ord). This method translates the mea-
+        surement model estimates back to the original ordinal scale of a variable (as represented in
+        the Codebook) after taking coder disagreement and measurement error into account. More
+        precisely, it represents the most likely ordinal value on the original codebook scale into which a
+        country–party–year would fall, given the average coder’s usage of that scale. More specifically,
+        we assign each country–party–year a value that corresponds to its integerized median ordinal
+        highest posterior probability category over Measurement Model output.
+        “Ordinal Scale Measure of Uncertainty” — Original Scale Value HPD Intervals:
+        This version has the suffixes — “codelow” and “codehigh” (e.g. v2elmulpar_ord_codelow and
+        v2elmulpar_ord_codehigh). We estimate these values in a similar manner as the Measurement
+        Model Highest Posterior Density Intervals. These two variables [“code low” and “code high”]
+        demarcate the interval in which the measurement model places 70% of the probability mass
+        for each country–party–year score, which is approximately equivalent to one standard deviation
+        upper and lower bounds. If the underlying posterior distribution is skewed, the HPDs reflect
+        this with unequal distances between the point estimate and the high and low estimates. We also
+        provide a standard calculation for standard deviation which is marked with the suffix “sd” (e.g.
+        v2elmulpar_ord_sd). The SD might be used to compute the standard frequentist confidence
+        intervals.
+  • Number of Coders per Country, Party, Variable and Year (*_nr)
+        The number of V–Dem Country Experts (regular coders, bridge- and lateral coders) who pro-
+        vided data on country, party, variable and year. V-Dem’s methodology is based on the assump-
+        tion that we have a minimum of five Country Experts for every single country–variable–year.
+        Sometimes, however, we end up with fewer than five Country Experts. By providing the num-
+        ber of Country Experts for each variable–country–party–year, we suggest that users primarily
+        base analyses on observations based on five or more coders. We strongly advise against using
+        observations based on three or fewer coders. This concerns all C type variables.
+  • Arithmetic Mean of Coder Answers per Country–Party–Year (*_mean)
+        It is commonplace to aggregate respondents’ data to the level of country or country–year using
+        arithmetic mean in order to merge it with other country–level data. V–Dem provides such
+        variables for every expert–coded variable aggregated by the Measurement Model in Country–
+        Party–Date/Year dataset. In the case of V–Party, the level of aggregation is country–party–
+        year/date, which provides additional granularity of the data compared with other datasets
+        focused on political parties.
+
+1.5.4     Variable Tags
+Every variable has a name and a tag. The tag consists of three or four parts and has the following
+structure:
+
+                    Prefix + Index (if V–Dem index) + Section + Abbreviated title
+
+While the prefix specifies the variable type, the letters that follow indicate which section the variable
+belongs to.
+Prefixes
+
+  • v2: V–Dem variables (A, B, C);
+                                                                                                       10
+Explanatory Notes
+  1.5 Variable Information
+
+
+
+  • v3: Historical V–Dem only variables (A, B, C);
+  • v2x_: Main indicies and component–indices;
+  • v2x[two–letter designation]_: Indicies specific for certain areas (see below). For example,
+    v2xel_ would be an index in the election–specific area. Sometimes used in aggregations of
+    higher–level indices (i.e. v2x_ type indices D);
+  • e_: Non–V–Dem variables (E) and ordinal versions of V–Dem indices. The exception to this
+    rule is COWcode, which for usability is not prefixed with “e_”.
+
+Sections
+
+  • pa: Party survey
+
+1.5.5   Variable Entry Clarifications
+The following information is available per variable (if applicable):
+Additional versions: Indicates if the variable is also available in the following versions: *_osp, *_-
+ord, *_codelow, *_codehigh, *_sd, *_mean and/or *_nr. Detailed information about the different
+versions can be found in section 1.5.3 (Variable Versions and Suffixes).
+Available versions: Lists the available variable types (only applicable for ordinalized versions of
+indices).
+Question: The question that the variable attempts to measure.
+Clarification: Definition of key terms, clarification of scope–conditions, contexts, and any other
+features needed to understand the question (if any). All key terms appear in the Glossary (Appendix
+A), unless they are specific to a single section (in which case they only appear in the introduction
+to that section or in the clarifications for particular questions). Key terms are sometimes cross–
+referenced with hypertext.
+Responses: Numeric, Percentage, Text, Date, Countries, or specific response categories (listed below
+under “Answer–types” and “Scales”).
+Answer–Types:
+Multiple–choice: Where a coder can select only one answer. This is the usual protocol and is therefore
+not noted.
+Multiple–selection: Where a coder can select more than one answer. For most multiple–selection
+variables, the dataset contains both the original variable as well as a set of dummies for each of the
+responses.
+Ordering (only applicable to a selection of C variables): This relates to the ordering of
+questions when the coding of one indicator depends upon the coding of other indicators (i.e., whenever
+there is some alteration of the serial ordering of questions as listed in this document).
+Aggregation (only applicable to indices): Explanation of how an index is constructed.
+Scale: Dichotomous, Nominal, Ordinal, or Interval/Ratio (Extra response options such as N/A or
+Other, are not counted as part of this classification).
+Cross–Coder Aggregation (only applicable to C variables): IRT, Bayesian ordinal item re-
+sponse theory measurement model (see the V-Dem Methodology document). Available in mode and
+mean.
+Data release: Indicates dataset version (1–9). Versions respond to changes to the dataset for V–Dem
+variables (A, B, C, D), including new variables, new indices, corrections to existing variables, and new
+iterations of the measurement model. Changes are synchronized with Codebook and Methodology
+documents so that they all share the same version number. The second number (after the decimal
+point), refers to sub–versions of the data.
+Sources: Citations for type–A* and A variables are listed, wherever possible, with complete ref-
+erences in the Bibliography. Note that this coding sometimes rests on numerous country–specific
+                                                                                                     11
+Explanatory Notes
+  1.5 Variable Information
+
+
+
+sources, in which case it has not been possible to include all citations. Composite indices (type–D)
+build on other variables in the V–Dem database, which are therefore listed as the source for that
+index.
+Date specific: Specifies if observations are coded on specific dates only e.g. election dates.
+Cleaning: Specifies if observations are set to missing based on values from other variables.
+Citation: Suggested citation when using the specific variable.
+Years: Available coverage for the respective variable. For more information on country–specific year
+coverage, see the country table.
+Notes: Additional information about the variable.
+
+
+
+
+                                                                                                 12
+Explanatory Notes
+  1.6 Country Coverage
+
+
+
+1.6    Country Coverage
+The following figures contain all countries, number of elections per country (in round brackets), and
+year coverage from the V–Dem Party Identity and Organization dataset broken down by six geo–
+political regions. Some countries are coded prior to independence, and some have gaps in their coding
+periods. The coverage indicates beginning and end of coding with or without gaps, but the dataset
+itself includes information at the country–party–election level. For a more detailed description of the
+country and party year coverage for this dataset, please, consult the V–Dem Party Coding Units
+document. Note that expert–coded data is available generally since 1970.
+
+
+
+
+                                                                                                    13
+Explanatory Notes
+  1.6 Country Coverage
+
+
+
+
+                         14
+Explanatory Notes
+  1.7 Identifier Variables in the V–Party Dataset
+
+
+
+1.7     Identifier Variables in the V–Party Dataset
+1.7.1    Party name, English (A*) (v2paenname)
+Question: Harmonized English name.
+Clarification: The most common English name for this party in political science datasets as recorded
+       in Party Facts’ core parties (Döring and Regel 2019).
+Responses:
+       Text
+Source(s): Party Facts (Döring and Regel 2019). For a full list of names used by a wide range
+       of academic sources for the party in question see https://partyfacts.herokuapp.com/data/
+       partycodes/.
+Data release: 1-2.
+
+1.7.2    Party name, original (A*) (v2paorname)
+Question: Harmonized original party name
+Clarification: The most common original name for this party in political science datasets as recorded
+       in Party Facts’ core parties (Döring and Regel 2019).
+Responses:
+       Text
+Source(s): Party Facts (Döring and Regel 2019). For a full list of names used by a wide range
+       of academic sources for the party in question see https://partyfacts.herokuapp.com/data/
+       partycodes/.
+Data release: 1-2.
+
+1.7.3    Party short name (A*) (v2pashname)
+Question: Harmonized short name
+Clarification: Harmonized short name.
+Responses:
+       Text
+Source(s): Party Facts (Döring and Regel 2019). For a full list of names used by a wide range
+       of academic sources for the party in question see https://partyfacts.herokuapp.com/data/
+       partycodes/.
+Data release: 1-2.
+
+1.7.4    Numeric party identifier (A*) (v2paid)
+Question: Unique identifier for each party.
+Clarification: Unique, numeric identificator for each party as recorded in Party Facts’ core parties
+       dataset (Döring and Regel 2019). In case a party changed names of scholars, sources, etc. used
+       (slightly) different names when referring to this entity.)
+Responses:
+       Numeric
+Source(s): Party Facts (Döring and Regel 2019). For a full list of names used by a wide range
+       of academic sources for the party in question see https://partyfacts.herokuapp.com/data/
+       partycodes/.
+Data release: 1-2.
+
+1.7.5    Party Facts ID (A*) (pf_party_id)
+Question: Party Facts ID
+Scale: Numeric
+Source(s): Party Facts (Döring and Regel 2019).
+Data release: 1-2.
+
+
+
+                                                                                                  15
+Explanatory Notes
+  1.7 Identifier Variables in the V–Party Dataset
+
+
+
+1.7.6    Start and end year of gap in party coding (A*) (party_gaps)
+Question: The starting and ending year in which the party was out of national legislature.
+Clarification: The default format is YYYY–YYYY. Several time spans can be listed in this manner
+       and are separated by comma. The starting year indicates the first year after the available
+       election year for a party. The ending gap year is specified as the last year before available
+       election for the party in question.
+Responses:
+       Text
+Data release: 1-2.
+
+1.7.7    Party Facts URL (A*) (pf_url)
+Question: URL to party’s webpage at Party Facts website
+Scale: Text
+Source(s): Party Facts (Döring and Regel 2019).
+Data release: 1-2.
+
+1.7.8    Country name (A*) (country_name)
+Question: Name of coded country.
+Clarification: A V–Dem country is a political unit enjoying at least some degree of functional and/or
+       formal sovereignty.
+Responses:
+       Text
+Notes: For more details on country units consult the V–Dem Country Coding Units document.
+Data release: 1-2.
+Citation: V-Dem Codebook (see suggested citation at the top of this document).
+
+1.7.9    Gap index (A*) (gap_index)
+Clarification: Indication that party was not present in national legislature.
+Responses:
+       Numeric
+Data release: 2.
+
+1.7.10    Time–Specific Country Name (A*) (histname)
+Question: Name of coded country at different dates.
+Responses:
+       Text
+Answer-type: Text
+Notes: For more details on country units consult the V–Dem Country Coding Units document.
+Data release: 1-2.
+Citation: V-Dem Codebook (see suggested citation at the top of this document).
+
+1.7.11    V–Dem country ID (A*) (country_id)
+Question: Unique country ID designated for each country.
+Responses:
+       Numeric
+Notes: A list of countries and their corresponding IDs used in the V–Dem dataset can be found in
+       the country table in the codebook, as well as in the V–Dem Country Coding Units document.
+Data release: 1-2.
+Citation: V-Dem Codebook (see suggested citation at the top of this document).
+
+
+
+
+                                                                                                  16
+Explanatory Notes
+  1.7 Identifier Variables in the V–Party Dataset
+
+
+
+1.7.12    Country name abbreviation (A*) (country_text_id)
+Question: Abbreviated country names.
+Responses:
+       Text
+Data release: 1-2.
+Citation: V-Dem Codebook (see suggested citation at the top of this document).
+
+1.7.13    Year (A*) (year)
+Question: Four–digit designation of the year for which an observation is given that ranges from the
+       start to the end of the coding period.
+Responses:
+       Numeric
+Notes: This variable is included in the V–Dem Country Year as well as Country Date datasets.
+Data release: 1-2.
+Citation: V-Dem Codebook (see suggested citation at the top of this document).
+
+1.7.14    Historical Date (A*) (historical_date)
+Question: Variable designating the date for which observation is given.
+Clarification: The date is coded in YYYY-MM-DD format. December 31st observation always refers
+       to the situation at the end of the year. There can be observations on other dates signifying
+       other events, i.e. elections or executive appointments.
+Responses:
+       Date
+Notes: This variable is included in the V–Dem Country Date dataset.
+Data release: 1-2.
+Citation: V-Dem Codebook (see suggested citation at the top of this document).
+
+1.7.15    Start of coding period (A*) (codingstart)
+Question: Year in which coding of the country in question starts.
+Clarification: V–Dem country coding starts in 1789, or from when a country first enjoyed at least
+       some degree of functional and/or formal sovereignty.
+Responses:
+       Numeric
+Notes: For detailed information, please see the V–Dem Country Coding Units document.
+Data release: 1-2.
+Citation: V-Dem Codebook (see suggested citation at the top of this document).
+
+1.7.16    Gap in coding period starts (A*) (gapstart)
+Question: The starting year in which country in question does not conform to V-Dem definition of
+       an independent state in between the starting and ending year of coding.
+Clarification: Year that indicates the gap start is the last date coded before the gap.
+Responses:
+       Numeric
+Notes: For more details about V–Dem country coding periods, please see the V–Dem Country Coding
+       Units document.
+Data release: 1-2.
+Citation: V-Dem Codebook (see suggested citation at the top of this document).
+
+1.7.17    Gap in coding period ends (A*) (gapend)
+Question: The ending year in which country in question does not conform to V-Dem definition of an
+      independent state in between the starting and ending year of coding.
+
+                                                                                                17
+Explanatory Notes
+  1.7 Identifier Variables in the V–Party Dataset
+
+
+
+Clarification: Year that indicates the gap end is the last date coded after the gap.
+Responses:
+       Numeric
+Notes: For more details about V–Dem country coding periods, please see the V–Dem Country Coding
+       Units document.
+Data release: 1-2.
+Citation: V-Dem Codebook (see suggested citation at the top of this document).
+
+1.7.18    End of coding period (A*) (codingend)
+Question: Either a maximum year of country coding period or the year when the country ceased to
+       exist because it lost functional or formal sovereignty.
+Responses:
+       Numeric
+Notes: For more details about V–Dem country coding periods, please see the V–Dem Country Coding
+       Units document.
+Data release: 1-2.
+Citation: V-Dem Codebook (see suggested citation at the top of this document).
+
+1.7.19    V–Dem Project (A*) (project)
+Question: Indication what project team has coded country in respective year.
+Responses:
+       0: Contemporary.
+       1: Historical.
+       2: Both (overlap).
+Data release: 1-2.
+Citation: V-Dem Codebook (see suggested citation at the top of this document).
+
+1.7.20    COW Country Code (E) (COWcode)
+Question: Correlates of War (COW) project country codes.
+Responses:
+       Numeric
+Source(s): Correlates of War Project (2017)
+Data release: 1-2.
+Citation: Correlates of War Project (2017)
+Years: 1789-2020
+
+1.7.21    Region (geographic) (E) (e_regiongeo)
+Question: In which geographic region is this country located?
+Clarification: Regions are described based on geographic location.
+Responses:
+       1: Western Europe
+       2: Northern Europe
+       3: Southern Europe
+       4: Eastern Europe
+       5: Northern Africa
+       6: Western Africa
+       7: Middle Africa
+       8: Eastern Africa
+       9: Southern Africa
+       10: Western Asia
+       11: Central Asia
+       12: Eastern Asia
+       13: South-Eastern Asia
+
+                                                                                            18
+Explanatory Notes
+  1.7 Identifier Variables in the V–Party Dataset
+
+
+
+       14: Southern Asia
+       15: Oceania (including Australia and the Pacific)
+       16: North America
+       17: Central America
+       18: South America
+       19: Caribbean (including Belize, Cuba, Haiti, Dominican Republic and Guyana)
+Source(s): United Nations Statistics Division (2013).
+Notes: For the countries coded only in the historical project or for which the UN does not have
+       the code, the region is coded by V-Dem Data Manager in accordance with the position of the
+       neighboring countries.
+Data release: 1-2.
+Citation: United Nations Statistics Division (2013).
+Years: 1789-2020
+
+1.7.22    Region (politico-geographic) (E) (e_regionpol)
+Question: In which politico-geographic region is this country located?
+Clarification: This is a tenfold politico-geographic classification of world regions, based on a mixture
+       of two considerations: geographical proximity (with Cyprus, German Democratic Republic,
+       and Mongolia being recoded from original coding) and demarcation by area specialists having
+       contributed to a regional understanding of democratization. The categories are as follow:
+Responses:
+       1: Eastern Europe and post Soviet Union (including Central Asia, Mongolia, and German
+       Democratic Republic)
+       2: Latin America (including Cuba, Haiti, and the Dominican Republic)
+       3: North Africa and the Middle East (including Israel and Turkey, but excluding Cyprus)
+       4: Sub–Saharan Africa
+       5: Western Europe and North America (including Australia, New Zealand, and Cyprus, but
+       excluding German Democratic Republic)
+       6: Eastern Asia (including Japan, excluding Mongolia)
+       7: South–Eastern Asia
+       8: Southern Asia
+       9: The Pacific (excluding Australia and New Zealand)
+       10: The Caribbean (including Guyana and Suriname, but excluding Cuba, Haiti, and the
+       Dominican Republic)
+Source(s): Quality of Government Standard Dataset (2019).
+Notes: The values are filled backwards to the first year of coding.
+Data release: 1-2.
+Citation: Teorell et al. (2018).
+Years: 1789-2020
+
+1.7.23    Region (politico-geographic 6-category) (E) (e_regionpol_6C)
+Question: In which politico-geographic region is this country located?
+Clarification: Regions are described as politico-geographic in the sense that they are based on ge-
+       ographical proximity as well as characteristics that contribute to regional understanding as
+       identified by scholars in studies of democratization (e.g. post-Communist). This is a modifi-
+       cation of e_regionpol above.
+Responses:
+       1: Eastern Europe and Central Asia (including Mongolia and German Democratic Republic)
+       2: Latin America and the Caribbean
+       3: The Middle East and North Africa (including Israel and Turkey, excluding Cyprus)
+       4: Sub-Saharan Africa
+       5: Western Europe and North America (including Cyprus, Australia and New Zealand, but
+       excluding German Democratic Republic)
+       6: Asia and Pacific (excluding Australia and New Zealand; see 5)
+Source(s): Quality of Government Standard Dataset (2019).
+
+                                                                                                     19
+Explanatory Notes
+  1.7 Identifier Variables in the V–Party Dataset
+
+
+
+Notes: The values are filled backwards to the first year of coding.
+Data release: 1-2.
+Citation: V-Dem Codebook (see suggested citation at the top of this document); Teorell et al. (2018).
+Years: 1789-2020
+
+1.7.24    CHES Party Code (E) (CHES_ID)
+Question: Unique identifier for each party from Chapel Hill Expert Survey (CHES).
+Responses:
+       Numeric
+Source(s): Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+Data release: 1-2.
+Citation: Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+
+1.7.25    GPS Party Code (E) (GPS_ID)
+Question: Unique numeric code for each party in the Global Party Survey (GPS) dataset.
+Responses:
+       Numeric
+Source(s): Norris (2020)
+Data release: 1-2.
+Citation: Norris (2020)
+
+
+
+
+                                                                                                  20
+Indices
+
+
+
+
+2     Indices
+2.1        Anti-Pluralism Index (D) (v2xpa_antiplural)
+Additional versions: *_codelow, *_codehigh
+Question: To what extent does the party show a lacking commitment to democratic norms prior to
+       elections?
+Scale: Interval, from low to high (0-1)
+Source(s): v2paopresp v2paplur v2paminor v2paviol
+Data release: 1-2.
+Aggregation: The index is computed as a transformed weighted average of the input variables using
+       the following formula:
+                                                                                                
+                                      0.5 ∗ v2paoprespi + 2 ∗ v2papluri + v2paminori + v2pavioli
+         v2xpa_antiplurali = 1 − Φ                                                                 ,
+                                                                  4.5
+          where i indexes observations and Φ is the standard normal cummulative density function.
+          For each observation, the posterior distribution of the index is obtained by computing the
+          value of the index for each draw from the posterior distributions of v2paoprespi , v2papluri ,
+          v2paminori and v2pavioli , and then summarized.
+
+2.2        Populism Index (D) (v2xpa_popul)
+Additional versions: *_codelow, *_codehigh
+Question: To what extent do representatives of the party use populist rhetoric (narrowly defined)?
+Scale: Interval, from low to high (0-1)
+Source(s): v2paanteli v2papeople
+Data release: 1-2.
+Aggregation: The index is computed as the harmonic mean of rescaled v2paanteli_osp and v2papeople_-
+       osp posterior distributions, using the following formula:
+                                                                   2
+                                              v2xpa_populi =    1    1 ,
+                                                                xi + yi
+
+          where i indexes each observation,
+                                                     1
+                                              xi =     v2paanteli_ospi ,
+                                                     4
+          and
+                                                     1
+                                              yi =     v2papeople_ospi .
+                                                     4
+
+          For each observation, the posterior distribution of the index is obtained by computing the
+          value of the index for each draw from the posterior distributions of v2paanteli_ospi and
+          v2papeople_ospi , and then summarized.
+
+
+
+
+                                                                                                     21
+Indicators
+
+
+
+
+3       Indicators
+Instructions to the coders (as shown in the surveys)
+In this questionnaire, we ask you to assess the identity and organization of major political parties
+before a specific election. We provide you with a list of parties that reached more than 5% of the
+vote share at the election in question. If you have any comments to the pre–coded party data, please
+provide them in the comments field at the end of the Party Basics survey.
+Please consider the policy positions and capacity of a party before the election in question. There
+are four exceptions to this rule:
+
+    1. Longstanding pre–electoral alliances: In some countries, political parties form a firm,
+       longstanding pre–electoral alliance, which makes them difficult to disentangle (for example
+       CDU and CSU in Germany). In this case, we show you the name of the longstanding alliance
+       (e.g. “CDU/CSU” in Germany) and not that of the individual parties.
+        Code the most common practice among the major party/parties of the alliance.
+        Other alliances are loose, election-specific alliances. Here, we ask you to code the individual
+        parties.
+    2. One–party regimes without elections: In some countries — in particularly communist
+       countries — no elections are held, but one party is in charge of the regime. In these cases we
+       ask you to assess the identity and organization of the party in regular intervals.
+    3. More than one lower chamber election per year: We show you the results of the last
+       election in a year and ask you to assess the party characteristics relevant at this point in time.
+
+    4. No vote share data available: For some elections, no data on vote share is available. Here
+       we show you the names of those parties that reached more than 5% of the seats in parliament.
+
+3.1      Party Basics
+Instructions to the coders (as shown in the surveys)
+On this page you see a table with political parties and years. The years are in almost all cases election
+years. Kindly consider the policy positions and capacity of a party before the election in question.
+The parties listed are the ones that reached more than 5% of the vote share at the election in question.
+If a party has not reached 5% of the vote share, you will not be able to code it. Comments to this
+pre–coded party data can be provided in the comments field at the end of the Party Basics survey.
+You can find more information in the coding tutorial.
+
+3.1.1      Seat share (A) (v2paseatshare)
+Question: Seat share the party gained in the election to the lower chamber.
+Responses:
+      Numeric
+Source(s): Döring & Düpont (2020).
+Data release: 1-2.
+Date specific: Election-specific dates.
+
+3.1.2      Seat number (A) (v2panumbseat)
+Question: Number of seats the party gained in the election to the lower chamber.
+Responses:
+      Numeric
+Source(s): Döring & Düpont (2020).
+Data release: 1-2.
+Date specific: Election-specific dates.
+
+
+
+                                                                                                      22
+Indicators
+  3.1 Party Basics
+
+
+
+3.1.3    Seats total (A) (v2patotalseat)
+Question: Total number of seats in the lower chamber.
+Responses:
+      Numeric
+Source(s): Döring & Düpont (2020).
+Data release: 1-2.
+Date specific: Election-specific dates.
+
+3.1.4    Vote share (A) (v2pavote)
+Question: Vote share the party gained in the election to the lower chamber.
+Responses:
+      Numeric
+Source(s): Döring & Düpont (2020).
+Data release: 1-2.
+Date specific: Election-specific dates.
+
+3.1.5    Temporary pre-electoral alliance (A) (v2paallian)
+Question: Was the party part of a temporary pre-electoral alliance in this national election or is the
+      entity actually an alliance?
+Responses:
+      0: No.
+      1: Yes, party was part of an alliance.
+      2: Yes, entity is an alliance of two or more parties.
+Source(s): Döring & Düpont (2020).
+Data release: 1-2.
+Date specific: Election-specific dates.
+
+3.1.6    Name of temporary pre-electoral alliance (A) (v2panaallian)
+Question: If the party was part of a temporary pre-electoral temporary alliance, what was the name
+      of that alliance?
+Responses:
+      Text
+Data release: 1-2.
+Date specific: Election-specific dates.
+Cleaning: Set to missing where v2paallian is 0.
+
+3.1.7    Vote share of temporary pre-electoral alliance (A) (v2pavallian)
+Question: If the party was part of a temporary pre-electoral temporary alliance, what was the vote
+      share of the alliance?
+Responses:
+      Numeric
+Data release: 1-2.
+Date specific: Election-specific dates.
+Cleaning: Set to missing where v2paallian is 0.
+
+3.1.8    Seats of temporary pre-electoral alliance (A) (v2panoallian)
+Question: If the party was part of a temporary pre-electoral temporary alliance, how many seats did
+      the alliance gain?
+Responses:
+      Numeric
+Data release: 1-2.
+
+                                                                                                   23
+Indicators
+  3.1 Party Basics
+
+
+
+Date specific: Election-specific dates.
+Cleaning: Set to missing where v2paallian is 0.
+
+3.1.9    Party continuation (C) (v2paelcont)
+Additional versions: *_nr
+Question: Did the party participate in the previous election under its current name?
+Clarification: This question concerns the election prior to the one you are coding. If you choose
+       option 2, please provide the previous party name in the comments field.
+Responses:
+       0: Yes, party participated in the previous election under the same name.
+       1: No, party did not participate in the previous election.
+       2: No, but the party participated in the previous election under a different name.
+Data release: 1-2.
+Cross–coder aggregation: Mode
+Date specific: Election-specific dates.
+
+3.1.10    Government support (A,C) (v2pagovsup)
+Question: Does this party support the government formed immediately after this election?
+Clarification: This question refers to the initial support, by the party, of the first government formed
+       based on this election. It does not include caretaker cabinets that are in office until the first
+       cabinet forms.
+Responses:
+       0: Yes, as senior partner. The Head of Government belongs to this party.
+       1: Yes, as junior partner. The Head of Government does not belong to this party, but one or
+       more cabinet ministers do.
+       2: Yes, but the party is not officially represented in government.
+       3: No, party is in opposition to the government.
+       4: Not applicable. No government took office based on this election (yet).
+Notes: The data collected using expert survey and aggregated by mode was cross–checked by a
+       research assistant.
+Data release: 1-2.
+Cross–coder aggregation: Mode
+Date specific: Election-specific dates.
+
+3.1.11    Pariah party (C) (v2papariah)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: In the years before this election, to what extent have other parties distanced themselves
+      from this party?
+Responses:
+      0: Entirely. All other parties are unwilling to accept formal or informal parliamentary support
+      from this party (e.g. joint legislative initiative; toleration).
+      1: To a great extent. One or more parties has accepted informal parliamentary support from
+      this party (e.g. joint legislative initiative; toleration) or has signaled that it would be willing
+      to do so. No party is willing to accept formal support from this party.
+      2: To some extent. One or more parties has accepted formal parliamentary support from
+      this party (e.g. formed a coalition) or has signaled that it would be willing to do so. Most
+      other parties are not willing to accept informal support from this party (e.g. joint legislative
+      initiative; toleration).
+      3: Not at all. One or more parties has accepted formal parliamentary support from this party
+      (e.g. coalition) or has signaled that it would be willing to do so. Most other parties are willing
+      to accept informal support from this party (e.g. joint legislative initiative; toleration).
+Notes: We show the following question for coding only for election years during which more than two
+      parties won a substantial seat share (more than 5%) in the election.
+Data release: 1-2.
+
+                                                                                                      24
+Indicators
+  3.1 Party Basics
+
+
+
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+      ogy).
+Date specific: Election-specific dates.
+
+
+
+
+                                                                                          25
+Indicators
+  3.2 Party Identity
+
+
+
+3.2     Party Identity
+Instructions to the coders (as shown in the surveys)
+The questions in this section relate to the positions that a party expressed before the election through
+official communication, e.g. election manifesto, press releases, official speeches and media interviews.
+Some party identity issues are more relevant than others. Therefore, at the end of the questionnaire
+you will be able to indicate which three issues were most relevant for a party’s mobilization strategy
+(salience).
+
+3.2.1    Anti-elitism (C) (v2paanteli)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: How important is anti-elite rhetoric for this party?
+Clarification: Elites are relatively small groups that have a greater say in society than others, for
+       instance due to their political power, wealth or societal standing. The specific groups considered
+       to be the elite may vary by country and even from party to party within the same country as
+       do the terms used to describe them. In some cases, “elites” can also refer to an international
+       elite.
+Responses:
+       0: Not at all important. The leadership of this party never makes statements against the elite.
+       1: Not important. The leadership of this party rarely makes statements against the elite.
+       2: Somewhat important. The leadership of this party sometimes makes statements against the
+       elite.
+       3: Important. The leadership of this party often makes statements against the elite.
+       4: Very important. The leadership of this party makes statements against the elite whenever
+       possible.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+
+3.2.2    People-centrism (C) (v2papeople)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: Do leaders of this party glorify the ordinary people and identify themselves as part of
+       them?
+Clarification: Many parties and leaders make reference to the “people”, but only some party leaders
+       describe the ordinary people specifically as a homogenous group and emphasize/claim that
+       they are part of this group and represent it. This means that they do not acknowledge the
+       existence of divergent interests and values in society, but rather suggest that the “people” have
+       a unified political will which should guide all political action. Often this group is glorified
+       and romanticized, describing an ideal-typical ordinary person/commoner, who embodies the
+       national ideal.
+Responses:
+       0: Never. The party leadership never glorifies and identifies with the ordinary people.
+       1: Usually not. The party leadership generally does not glorify and identify with the ordinary
+       people.
+       2: About half of the time. The party leadership sometimes glorifies and identifies with the
+       ordinary people.
+       3: Usually. The party leadership generally glorifies and identifies with the ordinary people,
+       which they claim to represent.
+       4: Always. The party leadership always glorifies and identifies with the ordinary people, which
+       they claim to represent.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+
+                                                                                                      26
+Indicators
+  3.2 Party Identity
+
+
+
+3.2.3    Political opponents (C) (v2paopresp)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: Prior to this election, have leaders of this party used severe personal attacks or tactics of
+       demonization against their opponents?
+Clarification: Severe personal attacks and demonization includes dehumanizing opponents or describ-
+       ing them as an existential threat or as subversive, criminal or foreign agents.
+Responses:
+       0: Always. Party leaders always used severe personal attacks or tactics of demonization against
+       their opponents
+       1: Usually. Party leaders usually used severe personal attacks or tactics of demonization against
+       their opponents
+       2: About half of the time. Party leaders sometimes used severe personal attacks or tactics of
+       demonization against their opponents.
+       3: Usually not. Party leaders usually did not use severe personal attacks or tactics of demo-
+       nization against their opponents.
+       4: Never. Party leaders never used severe personal attacks or tactics of demonization against
+       their opponents.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+Cleaning: Set to missing when there are more than two answers per coder for this question for a
+       particular date, country, and party.
+
+3.2.4    Political pluralism (C) (v2paplur)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: Prior to this election, to what extent was the leadership of this political party clearly
+       committed to free and fair elections with multiple parties, freedom of speech, media, assembly
+       and association?
+Clarification: Party leaders show no commitment to such principles if they openly support an au-
+       tocratic form of government without elections or freedom of speech, assembly and association
+       (e.g. theocracy; single-party rule; revolutionary regime). Party leaders show a full commit-
+       ment to key democratic principles if they unambiguously support freedom of speech, media,
+       assembly and association and pledge to accept defeat in free and fair elections.
+Responses:
+       0: Not at all committed. The party leadership was not at all committed to free and fair,
+       multi-party elections, freedom of speech, media, assembly and association.
+       1: Not committed. The party leadership was not committed to free and fair, multi-party
+       elections, freedom of speech, media, assembly and association.
+       2: Weakly committed. The party leadership was weakly committed to free and fair, multi-
+       party elections, freedom of speech, media, assembly and association.
+       3: Committed. The party leadership was committed to free and fair, multi-party elections,
+       freedom of speech, media, assembly and association.
+       4: Fully committed. The party leadership was fully committed to free and fair, multi-party
+       elections, freedom of speech, media, assembly and association.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+
+3.2.5    Minority rights (C) (v2paminor)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: According to the leadership of this party, how often should the will of the majority be
+      implemented even if doing so would violate the rights of minorities?
+
+
+                                                                                                     27
+Indicators
+  3.2 Party Identity
+
+
+
+Clarification: This concerns the rights enshrined in the Universal Declaration of Human Rights,
+       which apply to everyone “without distinction of any kind, such as race, colour, sex, language,
+       religion, political or other opinion, national or social origin, property, birth or other status.” The
+       declaration protects - among others - freedom of speech, property, religion, peaceful assembly
+       and association.
+Responses:
+       0: Always. The leadership of this party argues that the will of the majority should always
+       determine policy even if such policy violates minority rights.
+       1: Usually. The leadership of this party argues that the will of the majority should usually
+       determine policy even if such policy violates minority rights.
+       2: Half of the time. The leadership of this party argues that the will of the majority should
+       about half of the time determine policy even if such policy violate minority rights.
+       3: Usually not. The leadership of this party argues that the will of the majority should usually
+       not determine policy if such policy violates minority rights.
+       4: Never. The leadership of this party argues that the will of the majority should never
+       determine policy if such policy violates minority rights.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+
+3.2.6    Rejection of political violence (C) (v2paviol)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: To what extent does the leadership of this party explicitly discourage the use of violence
+       against domestic political opponents?
+Clarification: “Domestic political opponents” refers to all political opponents, with the exception of
+       those who are engaged in an armed conflict with the state. They may be other political parties
+       or other political groups and movements.
+Responses:
+       0: Encourages. Leaders of this party often encourage the use of violence against domestic
+       political opponents.
+       1: Sometimes encourages. Leaders of this party sometimes encourage the use of violence against
+       domestic political opponents and generally refrain from discouraging it.
+       2: Discourages about half of the time. Leaders of this party occasionally discourage the use of
+       violence against domestic political opponents, and do not encourage it.
+       3: Generally discourages. Leaders of this party often discourage the use of violence against its
+       domestic political opponents.
+       4: Consistently discourages. Leaders of this party consistently reject the use of violence against
+       its domestic political opponents.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+
+3.2.7    Immigration (C) (v2paimmig)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: What is the party’s position regarding immigration into the country?
+Clarification: Immigration refers to individuals entering the country for an indefinite, long-term or
+       permanent period of time.
+Responses:
+       0: Strongly opposes. This party strongly opposes all or almost all forms of immigration into
+       the country.
+       1: Opposes. This party opposes most forms of immigration into the country.
+       2: Ambiguous/No position. This party has no clear policy with regard to immigration into the
+       country.
+
+                                                                                                          28
+Indicators
+  3.2 Party Identity
+
+
+
+      3: Supports. This party supports most forms of immigration into the country.
+      4: Strongly supports. This party strongly supports all or almost all forms of immigration into
+      the country.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+      ogy).
+Date specific: Election-specific dates.
+
+3.2.8    LGBT social equality (C) (v2palgbt)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: What is this party’s position toward social equality for the lesbian, gay, bisexual, and
+      transgender (LGBT) community?
+Responses:
+      0: Strongly opposes. This party is strongly opposed to LGBT social equality.
+      1: Opposes. This party is opposed to LGBT social equality.
+      2: Ambiguous/No position. This party has no clear policy with regard to LGBT social equality.
+      3: Supports. This party supports LGBT social equality.
+      4: Strongly supports. This party strongly supports LGBT social equality.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+      ogy).
+Date specific: Election-specific dates.
+
+3.2.9    Cultural superiority (C) (v2paculsup)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: To what extent does the party leadership promote the cultural superiority of a specific
+       social group or the nation as a whole?
+Clarification: This question refers to key non-economic cleavages in society, which could, for example,
+       be based on caste, ethnicity, language, race, region, religion, or some combination thereof. This
+       question further refers to cultural issues related to the national history and identity of a country.
+       This question does not pertain to social groups based on gender or sexual orientation.
+Responses:
+       0: Strongly promotes. The party strongly promotes the cultural superiority of a specific social
+       group or the nation as a whole.
+       1: Promotes. The party promotes the cultural superiority of a specific social group or the
+       nation as a whole.
+       2: Ambiguous. The party does not take a specific position on the cultural superiority of a
+       specific social group or the nation as a whole.
+       3: Opposes. The party opposes the promotion of the cultural superiority of a specific social
+       group or the nation as a whole.
+       4: Strongly opposes. The party strongly opposes the promotion of the cultural superiority of
+       a specific social group or the nation as a whole.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+
+3.2.10     Religious principles (C) (v2parelig)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: To what extent does this party invoke God, religion, or sacred/religious texts to justify its
+      positions?
+Responses:
+      0: Always, or almost always. The party almost always invokes God, religion, or sacred/religious
+      texts to justify its positions.
+
+                                                                                                         29
+Indicators
+  3.2 Party Identity
+
+
+
+      1: Often, but not always. The party often, but not always, invokes God, religion, or religious
+      texts to justify its positions.
+      2: About half of the time. The party about half of the time invokes God, religion, or religious
+      texts to justify its positions.
+      3: Rarely. The party rarely invokes God, religion, or religious texts to justify its positions.
+      4: Never. The party never invokes God, religion, or religious texts to justify its positions.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+      ogy).
+Date specific: Election-specific dates.
+
+3.2.11    Gender equality (C) (v2pagender)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: What is the share of women in national-level leadership positions of this political party?
+Clarification: This question does NOT concern the share of women in the legislature.
+Responses:
+       0: None.
+       1: Small minority (about 1-15%).
+       2: Medium minority (about 16-25%).
+       3: Large minority (about 26-39%).
+       4: Balanced (about 40% or more).
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+
+3.2.12    Working women (C) (v2pawomlab)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: To what extent does this party support the equal participation of women in the labor
+       market?
+Clarification: Measures that support the equal participation of women in the labor market include -
+       but are not limited to - legal provisions on equal treatment and pay, parental leave and financial
+       support for child care.
+Responses:
+       0: Strongly opposes. This party strongly opposes all or almost all types of measures that
+       support the equal participation of women in the labor market.
+       1: Opposes. This party opposes most types of measures that support the equal participation
+       of women in the labor market.
+       2: Ambiguous/No position. This party has no clear policy with regard to measures that
+       support the equal participation of women in the labor market.
+       3: Supports. This party supports most types of measures that support the equal participation
+       of women in the labor market.
+       4: Strongly supports. This party strongly supports all or almost all types of measures that
+       support the equal participation of women in the labor market.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+
+3.2.13    Economic left-right scale (C) (v2pariglef)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: Please locate the party in terms of its overall ideological stance on economic issues.
+Clarification: Parties on the economic left want government to play an active role in the economy.
+       This includes higher taxes, more regulation and government spending and a more generous
+
+                                                                                                      30
+Indicators
+  3.2 Party Identity
+
+
+
+      welfare state. Parties on the economic right emphasize a reduced economic role for government:
+      privatization, lower taxes, less regulation, less government spending, and a leaner welfare state.
+Responses:
+      0: Far-left.
+      1: Left.
+      2: Center-left.
+      3: Center.
+      4: Center-right.
+      5: Right.
+      6: Far-right.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+      ogy).
+Date specific: Election-specific dates.
+
+3.2.14    Welfare (C) (v2pawelf)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: To what extent does the party promote means-tested or universalistic welfare policies?
+Responses:
+      0: The party does not support either type of policies and opposes any public welfare policy.
+      1: The party solely promotes means-tested welfare policies.
+      2: The party mainly promotes means-tested policies, but a significant portion (e.g. 1/4 or 1/3)
+      is universalistic and potentially benefits everyone in the population.
+      3: The party roughly equally supports means-tested and universalistic welfare policies.
+      4: The party mainly promotes universalistic policies, but a significant portion (e.g. 1/4 or 1/3)
+      of its policies are means-tested.
+      5: The party solely promotes universalistic welfare policies for all groups of the society.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+      ogy).
+Date specific: Election-specific dates.
+
+3.2.15    Clientelism (C) (v2paclient)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: To what extent do the party and its candidates provide targeted and excludable (clientelis-
+       tic) goods and benefits - such as consumer goods, cash or preferential access to government
+       services - in an effort to keep and gain votes?
+Clarification: In some cases, parties and their candidates deliver targeted and excludable goods and
+       benefits directly to individual voters with the explicit intention to keep or gain votes. In other
+       cases, they rely on brokers or companies as intermediaries. In some countries, candidates
+       promise procurement contracts or favorable regulatory decisions to companies in exchange
+       for ensuring their workers vote for the party/candidate. Such efforts count as an instance of
+       clientelism, if they are clearly targeted at one specific company and excludable. On the other
+       hand, handing out of small gifts can be common in some contexts without the intention to
+       “buy votes” but rather as courtesy or part of what all candidates do (“entry ticket”). Such
+       activities do not count as attempts to “keep or gain votes”.
+Responses:
+       0: Not at all. The party and its candidates do not provide targeted goods and benefits in order
+       to keep and gain votes.
+       1: A minor extent. The party and its candidates provide targeted goods and benefits to a
+       minor extent in order to keep and gain votes.
+       2: A moderate extent. The party and its candidates provide targeted goods and benefits to a
+       moderate extent in order to keep and gain votes.
+       3: A large extent. The party and its candidates provide targeted goods and benefits to a
+       sizeable extent in order to keep and gain votes.
+
+                                                                                                      31
+Indicators
+  3.2 Party Identity
+
+
+
+      4: As its main effort. The party and its candidates provide targeted goods and benefits to the
+      extent that it constitutes the party’s main effort in order to keep and gain votes.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+      ogy).
+Date specific: Election-specific dates.
+
+3.2.16    Salience and mobilization (C) (v2pasalie)
+Additional versions: *_nr
+Question: Which of the following issues are most relevant for the party’s effort to gain and keep
+       voters?
+Clarification: Choose only the key issue(s). Though you may choose up to three issues, if only one
+       issue is most relevant, choose only that issue. Most of these issues have been covered in this
+       survey; if you need additional clarification as to what a category represents, you can return to
+       the relevant question.
+Responses:
+       0: Anti-elitism. (0=No, 1=Yes) [v2pasalie_0]
+       1: People-centrism. (0=No, 1=Yes) [v2pasalie_1]
+       2: Political pluralism (pro or contra). (0=No, 1=Yes) [v2pasalie_2]
+       3: Minority rights (pro or contra). (0=No, 1=Yes) [v2pasalie_3]
+       4: Immigration (pro or contra). (0=No, 1=Yes) [v2pasalie_4]
+       5: LGBT social equality (pro or contra). (0=No, 1=Yes) [v2pasalie_5]
+       6: Cultural superiority (pro or contra). (0=No, 1=Yes) [v2pasalie_6]
+       7: Religious principles (pro or contra). (0=No, 1=Yes) [v2pasalie_7]
+       8: Gender equality (pro or contra). (0=No, 1=Yes) [v2pasalie_8]
+       9: Welfare. (0=No, 1=Yes) [v2pasalie_9]
+       10: Economic issues (including infrastructure and taxes). (0=No, 1=Yes) [v2pasalie_10]
+       11: Clientelism in order to keep or gain votes (the distribution of targeted and excludable
+       benefits towards supporters). (0=No, 1=Yes) [v2pasalie_11]
+       12: Environmental protection. (0=No, 1=Yes) [v2pasalie_12]
+       13: Farmers’ issues. (0=No, 1=Yes) [v2pasalie_13]
+       14: The leader. (0=No, 1=Yes) [v2pasalie_14]
+       15: Anti-corruption. (0=No, 1=Yes) [v2pasalie_15]
+       16: Intimidation/violence. (0=No, 1=Yes) [v2pasalie_16]
+       17: Other. (0=No, 1=Yes) [v2pasalie_17]
+Data release: 1-2.
+Cross–coder aggregation: Mean
+Date specific: Election-specific dates.
+
+3.2.17    Other salient issues (C) (v2paaspoth)
+Question: Which other issues are most relevant for the party’s mobilization strategy, if any?
+Responses:
+      Text
+Data release: 1-2. Available upon request, subject to review and approval
+Date specific: Election-specific dates.
+
+
+
+
+                                                                                                    32
+Indicators
+  3.3 Party Organisation
+
+
+
+3.3     Party Organisation
+Instructions to the coders (as shown in the surveys)
+If the “party” you are asked to code is actually an alliance of several parties, code the most common
+practice among the major party/parties of the alliance.
+
+3.3.1    Party support group (C) (v2pagroup)
+Additional versions: *_nr
+Question: To which particular group in society does the core membership and supporters of this
+       party belong?
+Clarification: Choose only the key groups. Though you may choose up to three groups, if only one
+       group is most relevant, please only choose that group.
+Responses:
+       0: No specific, clearly identifiable group. (0=No, 1=Yes) [v2pagroup_0]
+       1: The aristocracy, including high status hereditary social groups and castes. (0=No, 1=Yes)
+       [v2pagroup_1]
+       2: Agrarian elites, including rich peasants and large landholders. (0=No, 1=Yes) [v2pagroup_-
+       2]
+       3: Business elites. (0=No, 1=Yes) [v2pagroup_3]
+       4: The military. (0=No, 1=Yes) [v2pagroup_4]
+       5: An ethnic or racial group(s). (0=No, 1=Yes) [v2pagroup_5]
+       6: A religious group(s). (0=No, 1=Yes) [v2pagroup_6]
+       7: Local elites, including customary chiefs. (0=No, 1=Yes) [v2pagroup_7]
+       8: Urban working classes, including labor unions. (0=No, 1=Yes) [v2pagroup_8]
+       9: Urban middle classes. (0=No, 1=Yes) [v2pagroup_9]
+       10: Rural working classes (e.g., peasants). (0=No, 1=Yes) [v2pagroup_10]
+       11: Rural middle classes (e.g., family farmers). (0=No, 1=Yes) [v2pagroup_11]
+       12: Regional groups or separatists. (0=No, 1=Yes) [v2pagroup_12]
+       13: Women. (0=No, 1=Yes) [v2pagroup_13]
+       14: Other specific groups. (0=No, 1=Yes) [v2pagroup_14]
+Data release: 1-2.
+Cross–coder aggregation: Mean
+Date specific: Election-specific dates.
+
+3.3.2    Party support group name (C) (v2paothgr)
+Question: If you selected “other” on the prior question, what are the two most relevant groups in
+      society that the core membership and supporters of this party identify with?
+Responses:
+      Text
+Data release: 1-2. Available upon request, subject to review and approval
+Date specific: Election-specific dates.
+Cleaning: Set to missing when v2pagroup is not 14.
+
+3.3.3    Local party office (C) (v2palocoff)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: Does this party maintain permanent offices that operate outside of election campaigns at
+       the local or municipal-level?
+Clarification: By “local or municipal” we mean low level administrative divisions that are ranked
+       below regions, provinces, or states. We refer to offices that ensure professional personal and
+       continued interaction of the party with citizens. Permanent offices operate outside of election
+       campaigns.
+Responses:
+       0: The party does not have permanent local offices.
+       1: The party has permanent local offices in few municipalities.
+
+                                                                                                   33
+Indicators
+  3.3 Party Organisation
+
+
+
+      2: The party has permanent local offices in some municipalities.
+      3: The party has permanent local offices in most municipalities.
+      4: The party has permanent local offices in all or almost all municipalities.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+      ogy).
+Date specific: Election-specific dates.
+
+3.3.4    Local organizational strength (C) (v2paactcom)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: To what degree are party activists and personnel permanently active in local communities?
+Clarification: Please consider the degree to which party activists and personnel are active both during
+       election and non-election periods. Party personnel refers to paid staff.
+Responses:
+       0: There is negligible permanent presence of party activists and personnel in local communities.
+       1: There is minor permanent presence of party activists and personnel in local communities.
+       2: There is noticeable permanent presence of party activists and personnel in local communi-
+       ties.
+       3: There is significant permanent presence of party activists and personnel in local communi-
+       ties.
+       4: There is widespread permanent presence of party activists and personnel in local communi-
+       ties.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+
+3.3.5    Affiliate organizations (C) (v2pasoctie)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: To what extent does this party maintain ties to prominent social organizations?
+Clarification: When evaluating the strength of ties between the party and social organizations please
+       consider the degree to which social organizations contribute to party operations by providing
+       material and personnel resources, propagating the party’s message to its members and beyond,
+       as well as by directly participating in the party’s electoral campaign and/or mobilization efforts.
+       Social organizations include: Religious organizations (e.g. churches, sects, charities), trade
+       unions/syndical organizations or cooperatives, cultural and social associations (e.g. sports
+       clubs, neighborhood associations), political associations (e.g. environmental protection) and
+       professional and business associations. Social organizations do not include paramilitary units
+       or militias.
+Responses:
+       0: The party does not maintain ties to any prominent social organization.
+       1: The party maintains weak ties to prominent social organizations.
+       2: The party maintains moderate ties to prominent social organizations.
+       3: The party maintains strong ties to prominent social organizations.
+       4: The party controls prominent social organizations.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+
+3.3.6    Candidate nomination (C) (v2panom)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: Which of the following options best describes the process by which the party decides on
+      candidates for the national legislative elections?
+
+                                                                                                       34
+Indicators
+  3.3 Party Organisation
+
+
+
+Clarification: If nomination procedures vary across constituencies consider the most common practice.
+Responses:
+       0: The party leader unilaterally decides on which candidates will run for the party in national
+       legislative elections.
+       1: The national party leadership (i.e. an executive committee) collectively decides which
+       candidates will run for the party in national legislative elections.
+       2: Delegates of local/regional organizations decide which candidates will run for the party in
+       national legislative elections.
+       3: All party members decide on which candidates will run for the party in national legislative
+       elections in primaries/caucuses.
+       4: All registered voters decide on which candidates will run for the party in national legislative
+       elections in primaries/caucuses.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+
+3.3.7    Internal cohesion (C) (v2padisa)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: To what extent do the elites in this party display disagreement over party strategies?
+Clarification: Party strategies include election campaign strategy, policy stance, distribution of party
+       financial resources, cooperation with other parties (i.e. coalition formation), and the selection
+       of legislative and presidential candidates as well as the party leader. Party elites are prominent
+       and influential party members such as current and former ministers, members of parliament
+       or the party leadership, regional and municipal leaders, and opinion leaders. They do not
+       necessarily have to be the part of the official party leadership.
+Responses:
+       0: Party elites display almost complete disagreement over party strategies and many party
+       elites have left the party.
+       1: Party elites display a high level of visible disagreement over party strategies and some of
+       them have left the party.
+       2: Party elites display some visible disagreement over party strategies, but none of them have
+       left the party.
+       3: Party elites display negligible visible disagreement over party strategies.
+       4: Party elites display virtually no visible disagreement over party strategies.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+       ogy).
+Date specific: Election-specific dates.
+
+3.3.8    Personalization of party (C) (v2paind)
+Additional versions: *_osp, *_ord, *_codelow, *_codehigh, *_sd, *_mean, *_nr
+Question: To what extent is this party a vehicle for the personal will and priorities of one individual
+      leader?
+Responses:
+      0: The party is not focused on the personal will and priorities of one individual leader.
+      1: The party is occasionally focused on the personal will and priorities of one individual party
+      leader.
+      2: The party is somewhat focused on the personal will and priorities of one individual party
+      leader.
+      3: The party is mainly focused on the personal will and priorities of one individual party leader.
+      4: The party is solely focused on the personal will and priorities of one individual party leader.
+Data release: 1-2.
+Cross–coder aggregation: Bayesian item response theory measurement model (see V–Dem Methodol-
+      ogy).
+
+                                                                                                      35
+Indicators
+  3.3 Party Organisation
+
+
+
+Date specific: Election-specific dates.
+
+3.3.9    Party resources (C) (v2pafunds)
+Additional versions: *_nr
+Question: What were the major sources of party funds for this election campaign?
+Clarification: Choose up to three most important ones. If a main source of funding for this campaign
+       comes from the party’s assets such as properties and stocks, please code where these assets
+       originally came from.
+Responses:
+       0: Formal state subsidies for political parties. (0=No, 1=Yes) [v2pafunds_0]
+       1: Large-scale donations from individuals. (0=No, 1=Yes) [v2pafunds_1]
+       2: Large-scale donations from companies. (0=No, 1=Yes) [v2pafunds_2]
+       3: Large-scale donations from civil society organizations (including trade unions). (0=No,
+       1=Yes) [v2pafunds_3]
+       4: Membership fees and small-scale supporters’ donations. (0=No, 1=Yes) [v2pafunds_4]
+       5: Informal use of state resources as incumbent party. (0=No, 1=Yes) [v2pafunds_5]
+       6: Funds of the party leader. (0=No, 1=Yes) [v2pafunds_6]
+       7: Funds of candidates. (0=No, 1=Yes) [v2pafunds_7]
+Data release: 1-2.
+Cross–coder aggregation: Mean
+Date specific: Election-specific dates.
+
+
+
+
+                                                                                                 36
+External Party–Level Data
+
+
+
+
+4       External Party–Level Data
+4.1     Populism
+4.1.1    Salience of anti–establishment rhetoric (E) (ep_antielite_salience)
+Question: What is the salience of anti–establishment and anti–elite rhetoric?
+Responses:
+       Numeric
+Scale: Interval, from “Not important at all” to “Extremely important” (0–10)
+Source(s): Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+Data release: 1-2.
+Citation: Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+
+4.1.2    Salience of reducing political corruption (E) (ep_corrupt_salience)
+Question: What is the salience of reducing political corruption?
+Responses:
+       Numeric
+Scale: Interval, from “Not important at all” to “Extremely important” (0–10)
+Source(s): Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+Data release: 1-2.
+Citation: Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+
+4.1.3    Members vs. leadership party policy choices (E) (ep_members_vs_leadership)
+Question: What is the position on whether members/activists or leadership has control over party
+       policy choices?
+Responses:
+       Numeric
+Scale: Interval, from “Members/activists have complete control over party policy choices” to “Lead-
+       ership had complete control over party policy choices” (0–10).
+Source(s): Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+Data release: 1-2.
+Citation: Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+
+4.1.4    Position on direct vs. representative democracy (E) (ep_people_vs_elite)
+Question: What is the position on direct vs. representative democracy?
+Clarification: Some political parties take the position that “the people” should have the final say on
+       the most important issues, for example, by voting directly in referendums. At the opposite pole
+       are political parties that believe that elected representatives should make the most important
+       political decisions.
+Responses:
+       Numeric
+Scale: Interval, from “Elected office holders should make the most important decisions” to “«The
+       people», not politicians, should make the most important decisions” (0–10).
+Source(s): Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+Notes: In CHES 2019 survey words “direct” and “representative democracy” are changed to “people”
+       and “elected representatives” accordingly. For this codebook, the entry in CHES 2017 survey
+       was used.
+Data release: 1-2.
+Citation: Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+
+4.1.5    Populism type (E) (ep_type_populism)
+Question: The Party Populism typology categorizes whether parties favor the use of pluralism or
+      populist rhetoric categorized into four groups (V8_Ord).
+                                                                                                   37
+External Party–Level Data
+  4.2 Liberal–Traditional Scaling
+
+
+
+Responses:
+       1: Strongly Pluralist.
+       2: Moderately Pluralist.
+       3: Moderately Populist.
+       4: Strongly Populist.
+Scale: Ordinal.
+Source(s): Norris (2020)
+Data release: 1-2.
+Citation: Norris (2020)
+
+4.1.6    Populist values type (E) (ep_type_populist_values)
+Question: The Populist Values typology combines the categories of rhetoric (V8_Bin) and the social
+       values (B6_Bin) for each party.
+Responses:
+       1: Pluralist–Liberal.
+       2: Pluralist–Conservative.
+       3: Populist–Liberal.
+       4: Populist–Conservative.
+Scale: Ordinal.
+Source(s): Norris (2020)
+Data release: 1-2.
+Citation: Norris (2020)
+
+4.1.7    Populist rhetoric (E) (ep_v8_popul_rhetoric)
+Question: Where would you place each party on the following scale?
+Clarification: Parties can also be classified by their current use of populist or pluralist rhetoric.
+       Populist language typically challenges the legitimacy of established political institutions and
+       emphasizes that the will of the people should prevail. By contrast, pluralist rhetoric rejects
+       these ideas, believing that elected leaders should govern, constrained by minority rights, bar-
+       gaining and compromise, as well as checks and balances on executive power.
+Responses:
+       Numeric
+Scale: Interval, from “Strongly favors pluralist rhetoric” to “Strongly favors populist rhetoric” (0–10).
+Source(s): Norris (2020)
+Data release: 1-2.
+Citation: Norris (2020)
+
+4.1.8    Populist saliency (E) (ep_v9_popul_saliency)
+Question: And how important is populist rhetoric currently for each of the following parties? Where
+       would you place each party on the following scale?
+Responses:
+       Numeric
+Scale: Interval, from “No importance” to “Great importance” (0–10).
+Source(s): Norris (2020)
+Data release: 1-2.
+Citation: Norris (2020)
+
+4.2     Liberal–Traditional Scaling
+4.2.1    Position on democratic freedoms and rights (E) (ep_galtan)
+Question: What is the position of the party in a particular year in terms of their views on democratic
+      freedoms and rights?
+
+
+                                                                                                      38
+External Party–Level Data
+  4.2 Liberal–Traditional Scaling
+
+
+
+Clarification: “Libertarian” or “postmaterialist” parties favor expanded personal freedoms, for ex-
+       ample, access to abortion, active euthanasia, same-sex marriage, or greater democratic par-
+       ticipation. “Traditional” or “authoritarian” parties often reject these ideas; they value order,
+       tradition, and stability, and believe that the government should be a firm moral authority on
+       social and cultural issues.
+Responses:
+       Numeric
+Scale: Interval, from “Libertarian/Postmaterialist” to “Traditional/Authoritarian” (0–10).
+Source(s): Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+Notes: In CHES 2019 survey words “democratic freedoms” and “rights” in the wording of the question
+       are changed to “social” and “cultural values” accordingly. The formulation of the clarification
+       section is also nonsignificantly different in comparison with CHES 1999-2017, which is used in
+       this codebook.
+Data release: 1-2.
+Citation: Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+
+4.2.2    Salience of libertarian or traditional issues (E) (ep_galtan_salience)
+Question: What is the relative salience of libertarian/traditional issues in the party’s public stance
+       in a particular year?
+Responses:
+       Numeric
+Scale: Interval, from “No importance” to “Great importance” (0–10).
+Source(s): Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+Data release: 1-2.
+Citation: Bakker et al. (2015), Polk et al. (2017), Bakker et al. (2020)
+
+4.2.3    Social Liberalism-Conservatism (E) (ep_v6_lib_cons)
+Question: Where would you place each party on the following scale?
+Clarification: Parties can also be classified by their current social values. Those with liberal values
+       favor expanded personal freedoms, for example, on abortion rights, same–sex marriage, and
+       democratic participation. Those with conservative values reject these ideas in favor of order,
+       tradition and stability, believing that government should be a firm moral authority on social
+       and cultural issues.
+Responses:
+       Numeric
+Scale: Interval, from “Very liberal” to “Very conservative” (0–10).
+Source(s): Norris (2020)
+Notes: Only original score is included.
+Data release: 1-2.
+Citation: Norris (2020)
+
+4.2.4    Social values saliency (E) (ep_v7_lib_cons_saliency)
+Question: And how important are liberal/conservative social values for each of the following parties?
+       Where would you place each party on the following scale?
+Responses:
+       Numeric
+Scale: Interval, from “No importance” to “Great importance” (0–10).
+Source(s): Norris (2020)
+Data release: 1-2.
+Citation: Norris (2020)
+
+
+
+
+                                                                                                    39
+Bibliography
+
+
+
+
+5    Bibliography
+Bakker, R., De Vries, C., Edwards, E., Hooghe, L., Jolly, S., Marks, G., Polk, J., Rovny, J., Steen-
+        bergen, M., & Vachudova, M. A. (2015). Measuring party positions in Europe: The Chapel
+        Hill expert survey trend file, 1999–2014. Party Politics, 21 (1), 143–152.
+
+Bakker, R., Hooghe, L., Marks, G., Polk, J., Rovny, J., Steenbergen, M., & Vachudova, M. A. (2020).
+        2019 Chapel Hill Expert Survey [Version 2019.1]. https://www.chesdata.eu/2019- chapel-
+        hill-expert-survey
+
+Barbieri, Katherine and Keshk, Omar M. G. (2016). Correlates of War Project Trade Data Set
+        Codebook [Version 4.0.]. http://correlatesofwar.org
+
+Coppedge, M., Gerring, J., Knutsen, C. H., Lindberg, S. I., Teorell, J., Altman, D., Bernhard, M.,
+       Fish, M. S., Glynn, A., Hicken, A., Lührmann, A., Marquardt, K. L., McMann, K., Paxton,
+       P., Pemstein, D., Seim, B., Sigman, R., Skaaning, S.-.-E., Staton, J., . . . Ziblatt, D. (2020).
+       V-Dem [Country–Year/Country–Date] Dataset v10. https://doi.org/10.23696/vdemds20
+
+Coppedge, M., Gerring, M. J., Knutsen, C. H., Lindberg, S. I., Teorell, J., Marquardt, K. L., Medz-
+       ihorsky, J., Pemstein, D., Alizada, N., Gastaldi, L., Hindle, G., von Römer, J., Tzelgov, E.,
+       Wang, Y.-.-t., & Wilson, S. (2020). V–Dem Methodology v10 [Varieties of Democracy (V–
+       Dem) Project].
+
+Döring, H., & Düpont, N. (2020). Elections Global: Election results in 207 countries, 1880–2015
+        [Harvard Dataverse, V2]. https://doi.org/10.7910/DVN/OGOURC
+
+Döring, H., & Regel, S. (2019). Party facts: A database of political parties worldwide. Party Politics,
+        25 (2), 97–109. https://doi.org/10.1177/1354068818820671
+
+Düpont, N., Higahijima, M., Kavasoglu, Y. B., Marquardt, K. L., Bernhard, M., Döring, H., Hicken,
+       A., Laebens, M., Lindberg, S. I., Medzihorsky, J., Neundorf, A., Ruth–Lovell, S., Weghorst,
+       K. R., Wiesehomeier, N., Wright, J., Reuter, O. J., Alizada, N., Bederke, P., Gastaldi, L., . . .
+       Seim, B. (2020). V–Dem Party Coding Units V1. Varieties of Democracy (V–Dem) Project.
+
+Gunther, R., & Diamond, L. (2003). Species of political parties: A new typology. Party politics, 9 (2),
+       167–199.
+
+Hooghe, L., Marks, G., & Wilson, C. J. (2002). Does left/right structure party positions on European
+       integration? Comparative Political Studies, 35 (8), 965–989.
+
+Janda, K. (1980). Political Parties: A Cross–National survey. New York: Free Press; London: Collier
+        Macmillan.
+
+Kitchelt, H. (2014). Democratic Accountability and Linkage Project (DALP). https://sites.duke.
+        edu/democracylinkage/data/
+
+Mair, P., & Katz, R. S. (1992). Party Organizations: A Data Handbook on Party Organizations in
+        Western Democracies, 1960–90. Sage.
+
+Mudde, C., & Kaltwasser, C. R. (2013). Exclusionary vs. Inclusionary Populism: Comparing Con-
+       temporary Europe and Latin America. Government and opposition, 48 (2), 147–174.
+
+Norris, P. (2020). Global Party Survey, 2019 [Harvard Dataverse, V3]. https://doi.org/10.7910/
+        DVN/WMGTNS
+
+Norris, P., & Inglehart, R. (2019). Cultural backlash: Trump, Brexit, and authoritarian populism.
+        Cambridge University Press.
+
+Pemstein, D., Marquardt, K. L., Tzelgov, E., Wang, Y.-.-t., Medzihorsky, J., Krusell, J., Miri, F.,
+       & von Römer, J. (2020). The V-Dem Measurement Model: Latent Variable Analysis for
+       Cross-National and Cross-Temporal Expert-Coded Data [5th Edition]. V-Dem Working Paper
+       Series, 2020 (21). https://doi.org/10.2139/ssrn.3395892
+
+
+                                                                                                     40
+Bibliography
+
+
+
+
+Poguntke, T., Scarrow, S. E., Webb, P. D., Allern, E. H., Aylott, N., Van Biezen, I., Calossi, E.,
+       Lobo, M. C., Cross, W. P., Deschouwer, K., Enyedi, Z., Fabre, E., Farrell, D. M., Gauja,
+       A., Pizzimenti, E., Kopecký, P., Koole, R., Müller, W. C., Kosiara–Pedersen, K., . . . Verge,
+       T. (2016). Party rules, party resources and the politics of parliamentary democracies: How
+       parties organize in the 21st century. Party politics, 22 (6), 661–678.
+
+Polk, J., Rovny, J., Bakker, R., Edwards, E., Hooghe, L., Jolly, S., Koedam, J., Kostelka, F., Marks,
+         G., Schumacher, G., Steenbergen, M., & Vachudova, M. A. (2017). Explaining the salience of
+         anti–elitism and reducing political corruption for political parties in Europe with the Chapel
+         Hill Expert Survey. Research & Politics, 1–9.
+
+Project Correlates of War. (2017). State System Membership List [v2016].
+
+Rooduijn, M. (2014). The Nucleus of Populism: In Search of the Lowest Common Denominator.
+       Government and Opposition, 49 (4), 573–599.
+
+Swedish National Infrastructure for Computing. (2021). Tetralith HPC Cluster [Project IDs: SNIC
+       2021/5-504, SNIC 2021/23-608]. https://www.snic.se/
+
+Teorell, J., Dahlberg, S., Holmberg, S., Rothstein, B., Pachon, N. A., & Axelsson, S. (2020). The
+         Quality of Government Standard Dataset [Version January, 2020]. University of Gothenburg:
+         The Quality of Government Institute. https://doi.org/10.18157/qogstdjan20
+
+United Nations Statistics Division. (2013). Methodology. Retrieved March 15, 2018, from https :
+       //unstats.un.org/unsd/methodology/m49/
+
+Wiesehomeier, N. (2018). Expert surveys. In K. A. Hawkins, R. Carlin, L. Littvay, & C. R. Kaltwasser
+       (Eds.). Routledge.
+
+Wiesehomeier, N., & Benoit, K. (2009). Presidents, Parties, and Policy Competition. The Journal of
+       Politics, 71 (4), 1435–1447.
+
+Wiesehomeier, N., Singer, M., & Ruth–Lovell, S. (2019). Political Representation, Executives, and
+       Political Parties Survey: Data from Expert Surveys in 18 Latin American Countries, 2018-
+       2019. PREPPS Latam V1 [Harvard Dataverse, V1]. https://doi.org/10.7910/DVN/Z5DESA
+
+
+
+
+                                                                                                    41
+Glossary
+
+
+
+
+A     Glossary
+Party elites: Party elites are prominent and influential party members such as current and former
+ministers, members of parliament or the party leadership, regional and municipal leaders, and opinion
+leaders. They do not necessarily have to be part of the official party leadership.
+Party leadership: The leadership of a political party consists of the party’s national elite (as
+distinct from the party base or local and regional party officials) such as the party chair, the party
+presidium or executive committee, the leadership of the parliamentary caucus or candidates for the
+chief executive of a country (president/prime minister).
+Political party: An organization that nominates candidates for public office. The term includes a
+longstanding coalition such as the CDU/CSU in Germany if that coalition functions in most respects
+like a single party. Sometimes, the identity of a party is obscured by name changes. However, if the
+party changes names but retains key personnel and is still run by and for the same constituencies
+then it should be considered the same organization.
+Pre–electoral alliance: There are three types of pre–electoral alliances between independent par-
+ties: (1) longstanding alliances, (2) temporary alliances, and (3) loose alliances.
+
+  1. Longstanding alliances are united for more than one election and the election results are reported
+     only or mainly jointly for the parties included in those alliances. Thus, they are difficult to
+     disaggregate. We treat the alliance “as–if” it was a party and report it as a party in our data
+     set. Examples include the CDU/CSU in Germany.
+  2. Temporary alliances are formed typically for one election only and it is possible to obtain
+     the names of the parties included. Here we treat the parties as individual entities and create
+     additional variables that indicate if the party in question was part of such a temporary alliance
+     and what the alliances’ name, seats and vote share were.
+  3. Loose alliances might persist for several electoral cycles, but the election results are always
+     available for the individual parties and also most commonly reported that way. An example
+     includes the Alliance in Sweden. We do not capture loose alliances in our data set.
+
+
+
+
+                                                                                                    42
+Comments Section
+
+
+
+
+B     Comments Section
+Coders are provided with the possibility to leave comments in the end of the surveys. This section
+lists how the request for comments were phrased in each survey. Comments made by coders are
+not included in the V–Dem Dataset but may be provided on request (subject to review and ethics
+approval).
+
+B.1     Comments on A–data for the Party Survey (A) (v2padatacom)
+Question: Comments on the party data
+Clarification: This variable gives additional information on the A-data on political parties when
+       needed.
+Responses:
+       Text
+Data release: 1-2. Available upon request, subject to review and approval
+Date specific: Election-specific dates.
+
+B.2     Party Basics Comments (C) (v2paccpar)
+Question: Add here any comments you have about any of the previous questions on party basics in
+      particular on the accuracy of the pre–coded data on political parties.
+Responses:
+      Text
+Notes: Please, do not include any personal identifiable information (PII) — information which can
+      identify who you are.
+Data release: 1-2. Available upon request, subject to review and approval
+Date specific: Election-specific dates.
+
+
+
+
+                                                                                               43
+

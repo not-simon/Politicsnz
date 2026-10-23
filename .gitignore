@@ -10,3 +10,7 @@ raw/**/*.wiki
 raw/people/
 raw/record/
 raw/elections/
+
+# Large third-party survey datasets (re-downloadable; >100MB GitHub limit)
+raw/compass/cses5_csv/
+raw/**/*.csv

@@ -390,8 +390,7 @@ def build_layer(etype, bs, canon, aliases, budget):
     if best is None:
         doc, s, polys = render(hi)
         best = (hi, doc, s, polys, len(s.encode("utf-8")))
-    if hi == 1e-6 and best[0] > 1e-6 + 1e-12:
-        pass
+    # if the floor tolerance already fits the budget, use it (stops the search over-fitting)
     doc0, s0, polys0 = render(1e-6)
     if len(s0.encode("utf-8")) <= budget:
         best = (1e-6, doc0, s0, polys0, len(s0.encode("utf-8")))
