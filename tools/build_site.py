@@ -29,6 +29,8 @@ def frontmatter(text):
     return meta, text
 
 meta = load(ROOT / 'data' / 'parties-meta.json', {'parties': {}})['parties']
+TOPIC_LIST = ['economy', 'health', 'education', 'housing', 'environment', 'law-justice-and-government', 'community-and-inclusion', 'te-ao-maori', 'migration',
+              'transport-and-infrastructure', 'incomes-and-employment', 'defence-and-foreign-affairs', 'media-culture-and-recreation']
 elections = sorted([load(f) for f in glob.glob(str(ROOT / 'data' / 'elections' / '*.json'))], key=lambda e: e.get('year', 0) if e else 0)
 elections = [e for e in elections if e]
 upcoming = [e for e in elections if not any(isinstance(r, dict) and r.get('party_vote_pct') is not None for r in e.get('parties') or [])]
@@ -80,6 +82,31 @@ for s in parties:
                                        'retrieved': fm.get('retrieved', ''), 'text': body}
     if docs: (OUT / 'fulltext' / f'{s}.json').write_text(json.dumps(docs, ensure_ascii=False))
     parties[s]['document_count'] = len(docs)
+
+# --- policy swipe deck: party-blind cards (statement + summary), leak-filtered
+LEAK_NAMES = re.compile(r"\b(National|Labour|Greens?|ACT|NZ First|New Zealand First|Te P[āa]ti M[āa]ori|M[āa]ori Party|TOP|Opportunities Party|Alliance|Conservatives?|Vision NZ|NZ Loyal|Animal Justice|Women's Rights Party|"
+    r"Luxon|Hipkins|Seymour|Peters|Swarbrick|Davidson|Waititi|Ngarewa-Packer|Willis|van Velden|Bishop|Brown|Jones|Costello|Doocey|Reti|Stanford|Upston|Robertson|Ardern|Edmonds|Sepuloni|Jackson|Kapa-Kingi|Ferris|Maipi-Clarke|Manji|Minto)\b")
+LEAK_TERMS = re.compile(r"coalition|current Government|this Government|the Government's|Luxon Government|National-led|Labour-led|our party|our government|we will|we would|we are|Green Budget|KiwiMart|Kiwipower|Future Fund|Medicard|LabourSaver|FamilyBoost|Treaty Principles Bill|Regulatory Standards|Fast-track Approvals Act|Three Strikes|Fair Pay Agreements?|Roads of National Significance|Te Aka Whai Ora|Whānau Ora|Mana Motuhake|kaupapa M[āa]ori", re.I)
+def leaks(t): return bool(LEAK_NAMES.search(t) or LEAK_TERMS.search(t))
+MAIN = {'national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'}
+swipe, seen_stmt = [], set()
+for s, pols in policies.items():
+    for pol in pols:
+        sm = pol.get('summary') or {}
+        why, how, text = (sm.get('why') or '').strip(), (sm.get('how') or '').strip(), (sm.get('text') or '').strip()
+        st = (pol.get('statement') or '').strip()
+        if not st or not (why or how or text): continue
+        blob = ' '.join([st, why, how, text])
+        if leaks(blob): continue
+        key = re.sub(r'\W+', ' ', st.lower()).strip()
+        if key in seen_stmt: continue
+        seen_stmt.add(key)
+        doc = next((x.get('document') for x in pol.get('sources') or [] if x.get('document')), None)
+        topic = next((t for t in pol.get('topics') or [] if t in TOPIC_LIST), 'other')
+        swipe.append({'id': pol.get('id'), 'party': s, 'statement': st, 'why': why[:600], 'how': (how or text)[:600], 'topic': topic, 'doc': doc,
+                      'weight': 3 if s in MAIN else 1})
+(OUT / 'swipe.json').write_text(dumps(swipe))
+print('swipe cards', len(swipe), {s: sum(1 for c in swipe if c['party'] == s) for s in sorted({c['party'] for c in swipe})})
 
 # --- people
 def bio_excerpt(readme):

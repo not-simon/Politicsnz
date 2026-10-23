@@ -1,0 +1,165 @@
+         AUSTRALIA
+
+
+
+
+              Methodology for the Voting Advice / Matching
+
+
+                                        5 April 2019
+
+
+Introduction
+
+smartvote Australia is a so-called Voting Advice Application (VAA). It allows voters to
+compare their own policy preferences with those of candidates and political parties based
+on a comprehensive questionnaire. After answering the questionnaire voters receive a list of
+candidates and/or political parties ranked according to their congruence with the voter’s
+answers.
+
+
+Questionnaire
+
+In Australia, the smartvote questionnaire includes 35 questions on a wide range of policy
+issues. It has been drafted by an Australian National University (ANU) team at the School of
+Politics and International Relations also responsible for the Australian National Study (which
+has been running a representative sample survey after all federal elections since 1987, see
+https://australianelectionstudy.org). The questions are primarily focused specific policy
+issues, only a few questions relate to more general ideological positions. Our hope with this
+is to help shift the focus of voters away from personal characteristics, media presence, and
+party affiliation and towards an issue-based discourse.
+
+Since some policy issues may not be widely understood, a short text containing factual
+information on the issue is provided next to the question. Candidates and parties have the
+option of commenting on each of their answer to provide it more nuance or clarity.
+
+There are two types of questions: Standard questions, which require approval or disapproval
+of a specific policy proposal (4 answer categories). Budget questions, which ask if one thinks
+a department’s budget should be increased, decreased or kept at the same level (5 answer
+categories).
+
+All candidates and parties running for the 2019 Federal election have been invited to
+participate to the tool. In order to be present on smartvote Australia, candidates and parties
+have to answer all questions. Voters on the other hand can decide to skip some questions.
+Those to which they did not respond will not be taken into account in their proximity results
+with candidates and parties. The tool thus allows voters to concentrate on some policy areas
+for instance but responding to more questions will provide more precise results.
+
+                                             1/4
+         AUSTRALIA
+
+
+
+
+The following table summarizes the answer options available to candidates/parties and
+voters as well as the numerical values assigned to these answer options:
+
+Table 1: Answer options and their numerical values
+
+Question/Answer options                Candidates/parties                       Voters
+
+Standard questions
+“Definitely yes”                               100                               100
+“Mostly yes”                                    75                                75
+“Mostly no”                                     25                                25
+“Definitely no”                                 0                                 0
+“No answer”                                                                       X
+
+Budget questions
+“Much more (++)”                               100                               100
+“Somewhat more (+)”                             75                                75
+“Same (=)”                                      50                                50
+“Somewhat less (-)”                             25                                25
+“Much less (--)”                                0                                 0
+“No answer”                                                                       X
+
+In addition, voters have the possibility of weighting their answers.1 Table 2 shows the
+available weighting options and their numerical values.
+
+Table 2: Weighting options and their numerical values
+
+Weighting options                      Candidates/parties                       Voters
+
+“More important (+)”                            X                                 2
+“Normal weight / Default (=)”                   X                                 1
+“Less important (-)”                            X                                0.5
+
+
+
+
+1
+ Candidates and parties are also invited to weight the questions. That data is however only collected
+for further scientific publications and does not affect the matching score of voters.
+                                                 2/4
+         AUSTRALIA
+
+
+
+
+Calculating the matching
+
+To calculate the congruence between a voter and a candidate or a party smartvote Australia
+uses the Euclidean distance (geometric distance in a multidimensional space) as a measure.
+
+In a first step we calculate the total distance between a voter and candidate taking into
+account all questions answered by the voter:
+
+                                               1
+
+                              𝐷𝑖𝑠𝑡(𝑣, 𝑐) = +,(𝑤. (𝑣. − 𝑐. ))0
+                                              .23
+
+
+Dist(v,c): Total distance between a voter (v) and a candidate (c) over i questions.
+vi: Voter’s answer on question i.
+ci: Candidate’s answer on question i.
+wi: Voter’s weight for question i.
+
+In a second step we calculate the (theoretically possible) maximum distance between the
+voter and the candidate as the sum of 100 multiplied with the specific weights per question
+over all questions answered by the voter.
+                                                1
+
+                                  𝑀𝑎𝑥𝐷𝑖𝑠𝑡 = ,(100 ∗ 𝑤. )
+                                               .23
+
+
+MaxDist: Maximum distance between a voter (v) and a candidate (c) over n questions.
+wi: Voter’s weight for question i.
+
+Finally, we subtract the total distance normalized by the maximum distance from 1 in order
+to receive a congruence measure instead of a distance measure. This measure is multiplied
+by 100 and presented as a matching in percentage.
+
+                                                          𝐷𝑖𝑠𝑡(𝑣, 𝑐)
+                         𝑀𝑎𝑡𝑐ℎ𝑖𝑛𝑔(𝑣, 𝑐) = 100 ∗ (1 − (               ))
+                                                          𝑀𝑎𝑥𝐷𝑖𝑠𝑡
+
+It is important to note that this value represents a measure of geometric correspondence.
+This value cannot therefore be considered as the proportion of the questionnaire proposals
+to which the users responded in the same way as the candidates. Thus, a 70% match
+between two profiles does not mean that a candidate has answered 70% of the questions in
+the same way as a user.
+
+
+
+                                              3/4
+        AUSTRALIA
+
+
+
+
+Matching for parties
+
+Parties are also invited to answer the smartvote Australia questionnaire. This allows to
+provide matchings between voters and parties based the on parties’ official answers for the
+Senate election. The same steps as for the calculation of the congruence with candidates are
+taken to produce the matching scores for parties.
+
+For more information on the methodology, please contact: smartvote@anu.edu.au.
+
+
+
+
+                                            4/4
+

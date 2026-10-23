@@ -1,0 +1,787 @@
+VU Research Portal
+
+
+
+Mapping parties in a multidimensional European political space
+Reiljan, Andres; Kutiyski, Yordan; Krouwel, A.P.M.
+
+
+
+published in
+Party Politics
+2020
+
+DOI (link to publisher)
+10.1177/1354068818812209
+
+
+document version
+Publisher's PDF, also known as Version of record
+
+
+
+
+Link to publication in VU Research Portal
+
+
+
+
+citation for published version (APA)
+Reiljan, A., Kutiyski, Y., & Krouwel, A. P. M. (2020). Mapping parties in a multidimensional European political
+space: A comparative study of the EUvox and EUandI party-position data sets. Party Politics, 26(5), 651-663.
+https://doi.org/10.1177/1354068818812209
+
+
+
+
+General rights
+Copyright and moral rights for the publications made accessible in the public portal are retained by the authors and/or other copyright owners
+and it is a condition of accessing publications that users recognise and abide by the legal requirements associated with these rights.
+
+       • Users may download and print one copy of any publication from the public portal for the purpose of private study or research.
+       • You may not further distribute the material or use it for any profit-making activity or commercial gain
+       • You may freely distribute the URL identifying the publication in the public portal
+
+Take down policy
+If you believe that this document breaches copyright please contact us providing details, and we will remove access to the work immediately
+and investigate your claim.
+
+
+E-mail address:
+vuresearchportal.ub@vu.nl
+
+
+
+
+Download date: 23. Oct. 2026
+Article
+                                                                                                                               Party Politics
+                                                                                                                                       1–13
+Mapping parties in a multidimensional                                                                                  ª The Author(s) 2019
+
+European political space: A comparative                                                                                Article reuse guidelines:
+                                                                                                             sagepub.com/journals-permissions
+study of the EUvox and euandi party                                                                          DOI: 10.1177/1354068818812209
+                                                                                                               journals.sagepub.com/home/ppq
+
+position data sets
+
+Andres Reiljan
+European University Institute, Italy
+
+Yordan Kutiyski
+Kieskompas (Election Compass), The Netherlands
+
+André Krouwel
+Vrije Universiteit Amsterdam, The Netherlands
+
+
+
+Abstract
+This study compares the spatial positioning of over 200 political parties across 28 European Union (EU) member states in
+two cross-national voting advice applications (VAAs) developed for the 2014 European elections: EUvox and euandi. We
+find that the two VAAs show highly similar results in terms of party positioning on the cultural liberal-conservative and
+pro-anti EU dimensions, while economic left–right placements converge less, especially concerning right-wing parties. Our
+analyses reveal that the higher overlap on the cultural and EU dimensions is a result, at least partially, of the inclusion of
+similar items used to measure these concepts, while most of the systematic divergence between the two VAAs in left–
+right placements stems from problematic issue-statements used in the dimensional calculations. We demonstrate how
+certain items can cause bias in the placements of specific party families by (1) not aligning with other statements that
+measure the same latent construct; (2) tapping into other latent constructs, in addition to the one they are supposed to
+measure; and (3) not inducing sufficient polarization between parties.
+
+Keywords
+ideological space, political parties, reliability, spatial positions, voting advice applications
+
+
+
+Introduction                                                       parties on overarching political dimensions, such as
+                                                                   socio-economic left–right or cultural liberal–conservative,
+As voting advice applications (VAAs) appear in more and
+                                                                   VAAs partake in the same endeavour as other more con-
+more electoral contexts and their usage is on the rise, the
+                                                                   ventional methods of party positioning like manifesto
+quality of such online platforms has increasingly become
+the focus of academic interest and scrutiny (Cedroni and
+Garzia, 2010; Garzia and Marschall, 2014; Kleinnijenhuis           Paper submitted 19 October 2017; accepted for publication 11 October
+et al., 2017; Wall et al., 2014). While initially VAAs pro-        2018
+vided simple agreement scores between voters and parties,          Corresponding author:
+during the last decade, a new generation of VAAs has               Andres Reiljan, European University Institute, Badia Fiesolana - Via dei
+emerged; the latter attach issue-statements to the deeper          Roccettini 9 Fiesole, Toscana 50014, Italy.
+lying divisions or cleavages of the political system and           Email: andres.reiljan@gmail.com
+generate low-dimensional spatial maps on which voters and          André Krouwel, Vrije Universiteit Amsterdam, De Boelelaan 1081,
+parties/candidates are positioned (Garzia and Marschall,           Amsterdam, North Holland 1054JM, The Netherlands.
+2012; Krouwel and Wall, 2014). By placing political                Email: andre.krouwel@vu.nl
+2                                                                                                            Party Politics XX(X)
+
+
+coding, expert surveys and public opinion aggregation (see          notable divergence between the party placements is likely
+Krouwel, 2012; Krouwel and van Elfrinkhof, 2014; Marks,             to be caused by suboptimal statements in one or both of the
+2007). As we still lack a so-called ‘gold standard’ of party        studied VAAs. However, the main aim of the article is to
+positioning (Garzia et al., 2017; Pennings, 2011), it is            evaluate how similar the party placements in EUvox and
+important to study the strengths and weaknesses of the              euandi are, and, subsequently, explain the findings. We will
+VAA method and outline possibilities to improve the qual-           not provide a detailed analysis of every single issue-
+ity of party placement in VAAs.                                     statement, but rather concentrate on the problematic items
+    As Garzia and Marschall (2012: 214) contend, the ‘party         that are possibly causing placement divergence between the
+dimension’ of VAA research remains largely unexplored,              two VAAs. Therefore, this article should be considered a
+since most scholars focus on analysing user data. This is           general comparison of two party data sets, not an exhaus-
+likely because most national VAAs include no more than              tive judgement on the reliability and validity of all three
+five to ten parties which is insufficient to adequately assess      ideological scales in both applications.
+the quality of party positioning using statistical methods
+(Germann et al., 2015). Thus, although there have been some
+articles that compare the VAA estimates of party positions          Low-dimensional spatial models, party
+with other methods of party placement (see Gemenis, 2013;
+                                                                    placement methodology and statement
+Wagner and Ruusuvirta, 2012), there is a lack of studies that
+compare the positions of the same political parties at the same     selection in VAAs
+point of time in different VAAs. This is a significant gap, as it   The most widely used spatial framework in VAAs is the
+is problematic to evaluate the reliability of the VAA method        two-dimensional model consisting of socio-economic and
+of party positioning if we do not know whether different            cultural axes (Germann et al., 2015; Louwerse and Otjes,
+VAAs locate the same parties similarly in the political space.      2014). This corresponds to the main findings of party sys-
+VAAs developed for cross-national elections, like the ones          tem research from the last few decades: Although Downs
+for the European Parliament (EP), can remedy this problem,          (1957) – the pioneer of party system spatial modelling –
+as they generate large data sets on the policy positions of         distributed parties on a single left–right axis, more recent
+political parties valuable for comparative party research.          studies have shown that the left–right dimension, based on
+    The goal of this study is to address this gap and compare       the extent of state intervention in the economy, is cross-cut
+party positioning in the low-dimensional political space in         by a cultural liberal-conservative dimension that deals with
+cross-national VAAs. We use the party position data of two          issues related to moral values (Kitschelt and McGann,
+pan-European VAAs developed prior to the 2014 EP elec-              1997; Kriesi et al., 2008). This cultural axis has often been
+tions: EUvox1 and euandi.2 As both VAAs use the same                referred to as a Green/Alternative/Libertarian (GAL) – Tra-
+three-dimensional spatial model comprised of ‘left–right’,          ditional/Authoritarian/Nationalist (TAN) dimension
+‘liberal–conservative/traditionalist’ and ‘pro–anti-                (Hooghe et al., 2002). We will use the terms ‘GAL-TAN’,
+European Union’ dimensions, these cross-national data sets          ‘cultural’ and ‘liberal-conservative/traditional’ dimension
+provide a unique opportunity to compare the positioning of          interchangeably in this article, as the exact wording often
+over 200 political parties across the European Union (EU).          varies among different authors and VAAs.3 The VAAs
+To the best of our knowledge, this is the most large-scale          under review in this article also include a third dimension:
+comparison of VAA party placements that has been con-               A pro/anti-European (Union) integration axis related to the
+ducted so far. Our study is exploratory in its nature – we          nature of the electoral competition for which these VAAs
+analyse the results that the comparison of the two data sets        were designed – the EP elections.
+reveals, without setting a priori expectations. We compare             The way VAAs estimate party positions on the previ-
+the aggregate party placements of both data sets and ana-           ously described latent ideological dimensions is rather dif-
+lyse the differences in party positioning across various            ferent from other methods of party placement. VAAs use an
+party families to determine whether the positioning of par-         indirect approach, as they place parties on a number of
+ties belonging to certain groups diverges to a greater extent.      issues considered partial indicators of each policy dimen-
+    In addition to comparing, we also seek to explain the           sion (Gemenis, 2013). On these issues, parties are posi-
+(in)consistencies between the party positions in EUvox and          tioned on the basis of their perceived (dis)agreement with
+euandi. We focus on the element deemed the most crucial             the proposed statement. Some VAAs use a simple three-
+part of any VAA – the issue-statements (Garzia et al., 2017;        point agree/disagree/neutral answer pattern, whereas more
+Louwerse and Otjes, 2012; Van Camp et al., 2014). The               elaborate ones employ five-point Likert-type scales which
+way statements are selected, formulated and assigned to             capture not just the (dis)agreement with any specific pro-
+dimensions is decisive for the correct party placement in           position, but also the degree of (dis)agreement (Garzia and
+a low-dimensional political space, as answers to the state-         Marschall, 2012). The parties’ dimensional positions sig-
+ments are used for calculating the spatial positions (Ger-          nify their average aggregate scores on all items assigned to
+mann et al., 2015; Otjes and Louwerse, 2014). Thus, any             the respective dimension. This method was developed by
+Reiljan et al.                                                                                                                     3
+
+
+the Dutch Kieskompas in 2006 (see Kleinnijenhuis et al.,            electorate either agrees or disagrees (Garzia et al., 2017:
+2007) and has been subsequently applied to many other               336). The other way a statement can fail in terms of suffi-
+VAAs (Trechsel and Mair, 2011), including the two we                ciently discriminating between parties is if parties are
+compare in this study.                                              highly concentrated to the centre of the coding scale, tak-
+    There are certain differences among VAAs regarding              ing a neutral or an unclear stance on an issue. To avoid
+the procedure of coding the party positions on the issues           that, the statements should have high salience in the elec-
+that are chosen to indicate the ideological dimensions.             tion campaign, which makes it more likely for parties to
+Although some VAAs let parties determine their own posi-            have a clear stance (ibid.). As De Sio and Weber (2014:
+tions without any scrutiny (Garzia and Marschall, 2012),            872) point out, there can be a large cross-national varia-
+most of them also rely on the input of experts. The so-called       tion in policy support: An issue that is divisive in one
+Kieskompas method combines the two approaches, as the               country can have almost unified support/opposition in
+party self-placements are reviewed and – if necessary –             another context. The same applies to the salience of dif-
+corrected by experts who use parties’ election manifestos,          ferent topics. Thus, coming up with issue-statements that
+other campaign material or the speeches and media appear-           are divisive and salient in all or most European party
+ances of their leaders to validate party positions (Krouwel         systems can be considerably challenging.
+et al., 2012; Trechsel and Mair, 2011). The Delphi method              It is crucial for VAA developers to ensure that the
+relies exclusively on expert judgements (Garzia and                 dimensional scales they construct meet the aforementioned
+Marschall, 2012) and uses the process of ‘structured beha-          criteria. In this study, we elaborate this argument and
+vioural aggregation’ to reach consensus over party posi-            demonstrate how statements that violate these conditions
+tions among a panel of experts (Gemenis, 2015).                     can bias the placements of parties, depending on the latter’s
+    Regardless of the way in which the party positions are          ideological inclinations.
+coded or the dimensions of the political space defined, the
+selection of issue-statements has a decisive impact on the
+resulting VAA spatial maps (Garzia et al., 2017; Lefevere           The EUvox and euandi data sets
+and Walgrave, 2014; Louwerse and Rosema, 2014; Walgrave             We utilize data from two pan-European VAAs developed
+et al., 2009). Party placements on the ideological dimensions       for the 2014 EP elections: EUvox and euandi. Both were
+are derived from aggregate positions on single issue-               accessible to the citizens of all 28 EU member states and
+statements; thus, if the statements are not selected, formulated    use the same three-dimensional spatial model for placing
+and assigned to the dimensions equitably, the composite score       users and parties, consisting of economic left–right, cul-
+will also be inaccurate. In this article, we evaluate the VAA       tural liberal-traditional/conservative and pro/more-
+statements on criteria that can be directly measured and com-       against/less EU integration dimensions. To ensure data
+pared in a quantitative way. We focus on the dimensionality         comparability, we only analyse the placements of the 205
+of the statements and assess whether the statements succeed         parties that were included in both VAAs.
+in discriminating/polarizing between the parties sufficiently.         Both VAAs employed five-point Likert-type scales as
+    Regarding dimensionality, two sub-criteria should be            statement answer categories – a party could be coded as
+considered. First, it is crucial that the statement taps into the   either in complete or partial (dis)agreement with the pro-
+expected policy dimension – it has to align with the other          posed statement or as neutral. Both VAAs also have a ‘no
+items that measure the same dimension. Violating this cri-          opinion’ option, used when parties do not have any stance on
+terion results in dimensional scales that do not meet basic         a given issue. To make the interpretation of results more
+scalability requirements, and therefore, in spatial models that     convenient, the statements are scaled to range from 0 to 1:
+misrepresent the differences between political parties (Otjes       Complete disagreement corresponds to ‘0’; complete agree-
+and Louwerse, 2014: 264; 268–270). Second, the statements           ment to ‘1’; partial (dis)agreement to ‘0.25’ or ‘0.75’ and the
+should not tap into any other latent construct(s), that is, they    neutral position to ‘0.5’. The dimensions are scaled as fol-
+must be unidimensional. This criterion is breached, for             lows: left–right: 0 ¼ left, 1 ¼ right; cultural: 0 ¼ liberal, 1 ¼
+instance, when an issue-statement measures party position           conservative/traditional and EU: 0 ¼ anti, 1 ¼ pro.
+on both the economic left–right and the cultural liberal-              The dimension score of each party is the arithmetic
+conservative dimension. Such items tend to induce ambigu-           mean of its placement on all the statements that were
+ity in the composite score and result in imprecise VAA              assigned to each respective dimension. If a party was coded
+spatial maps. Therefore, the statements that are assigned to        as having “no opinion” on a statement, this statement was
+indicate a certain policy dimension should be unidimen-             left out of the calculation for the respective party. Some
+sional in their content (Germann et al., 2015).                     statement scores were reversed to ensure that each item has
+    Second, the statements should involve some contro-              the same polarity. As issue salience is not taken into
+versy, so that there are parties in favour as well as parties       account, all statements have the same relative weight.
+against. VAA developers should not include so-called                   Although both EUvox and euandi use a questionnaire
+valence issues, that is, issues on which (almost) the entire        with 30 issue-statements, the proportion of cross-national
+4                                                                                                             Party Politics XX(X)
+
+
+Table 1. General comparison of euandi and Euvox.
+
+                                  Euandi            EUvox
+
+N of countries                   28                   28
+N of parties                     242                  228
+N of statements                  30                   30
+N of cross-national              28                   21
+  statements
+N of political dimensions         3                    3
+Answer pattern            Five-point Likert-   Five-point Likert-
+                               type scale           type scale
+Party coding method          Kieskompas         Delphi method
+                                method
+Source: EUvox and euandi, 2014.
+
+
+and country-specific statements differs. While euandi has a
+questionnaire with 28 cross-national and two country-
+specific statements, EUvox contains 21 items identical for
+all countries and 9 country- or region-specific statements.
+Replicating the original party placements in euandi was
+simple, as they have clearly indicated which statements are
+assigned to which dimension. According to the euandi web-
+site, they use 27 of 28 cross-national statements in their
+dimensional calculations and country-specific items are not
+included. EUvox, conversely, has not explained how the
+three-dimensional political space was calculated. Based
+on information obtained from the developers of EUvox, it
+appears that they used both the cross-national and country-
+specific statements to calculate the dimensions and that
+some items were removed in the countries where initial
+user results proved that they do not align with the expected
+dimension (indicating that the method of dynamic scale
+validation was used; see Germann and Mendez, 2016 and
+Germann et al., 2015). As we are conducting a cross-
+national comparison, we use only the common statements
+to calculate party positions. Consequently, the party place-
+ments we use do not completely mirror the ones which
+were visible to users after completing the 30-statement
+EUvox survey. According to our information, 20 of 21
+EUvox cross-national statements were at least initially used
+in dimensional calculations.4 The statements used to calcu-
+late the dimension scores and their respective polarities are
+presented in the Online Appendix A.
+    There is also a difference between the party coding
+methodologies of EUvox and euandi, as the former uses
+the Kieskompas method, whereas the latter employs the
+Delphi method. The general comparison of the two VAAs               Figure 1. Scatterplots of party placement convergence in euandi
+is presented in Table 1.                                            and EUvox on left–right, cultural and EU dimensions.
+                                                                    Source: EUvox and euandi, 2014. EU: European Union.
+Results and analyses
+                                                                    dimensions. Figure 1 plots euandi placements (x-axis)
+Overlap between EUvox and EUandi party
+                                                                    against EUvox placements (y-axis), each data point repre-
+placements                                                          senting a political party. As Figure 1 indicates, party place-
+We start by assessing the general overlap between the               ments are strongly and positively correlated on all
+EUvox and euandi party placements on the three political            dimensions. However, clear differences in terms of the
+Reiljan et al.                                                                                                                 5
+
+
+                                                                  and Louwerse analyse the internal coherence of the scales,
+                                                                  it is reasonable to expect that the two are correlated: If the
+                                                                  scales are less consistent internally, one would also assume
+                                                                  that the overlap with other VAA placements is lower,
+                                                                  unless both use invalid, but similar scales.
+                                                                      To provide a more detailed comparison of the party
+                                                                  placements in the two VAAs, we also examine the party
+                                                                  placement divergence for different party families to assess
+                                                                  whether some parties are more problematic for placement
+Figure 2. Mean dimensional scores of EUvox and euandi.            in VAA generated spatial maps. We distinguish seven
+Source: EUvox and euandi, 2014.
+                                                                  party families, mostly based on their affiliations with EP
+                                                                  party groups and other international networks. The Online
+strength of correlation can also be observed. The linear          Appendix B contains the lists of parties in each of the
+relationship is strongest on the cultural dimension (R2 ¼         groups and the exact classification criteria. To analyse the
+0.71) and most of the data points are gathered closely            convergence between EUvox and euandi placements
+around the regression diagonal. On the EU dimension, most         within party families, we compare the dimensional mean
+parties are located on the pro-EU side of the scale in both       scores, as we previously did for the whole party sample
+VAAs, and the parties’ EU dimension placement in one              (see Figure 2). The means comparison reveals whether
+VAA explains 70% of the variance in the positioning in            there is any systematic bias between the EUvox and
+the other (R2 ¼ 0.70). On the left–right dimension, the           euandi placements among different party groups. Correla-
+convergence between the placements in the two VAAs is             tion coefficients are not used for this analysis, as there is
+notably weaker than the two other scales (R2 ¼ 0.61).             significantly less variation within party families compared
+   It is possible that, although the party placement scores       to the whole party sample, which makes it difficult to
+correlate strongly, they are still systematically different.      detect covariation.
+Therefore, we also compare the mean dimensional scores                Figure 3 depicts the two-dimensional political maps of
+for the entire party set. Figure 2 demonstrates that the slight   the average positions of party families in EUvox and
+differences in party placements tend to balance out, lacking      euandi. In the upper part of the figure, the left–right dimen-
+notable systematic inconsistencies. For some parties, the         sion is plotted against the cultural and on the lower part
+euandi score is slightly more right-wing, conservative or         against the EU axis. The ellipses represent the standard
+pro-EU than in EUvox, whereas for others it is the other          deviations (SDs) of the party placements within each group
+way around. Thus, when the average scores of the entire           on both axes, with the average party group position located
+party data sets for each dimension are compared, the high-        in the centre of the ellipse. Figure 3 confirms that the most
+est statistically significant difference is on the economic       divergent dimension between the two VAAs is the eco-
+dimension: in EUvox, the parties are, on average, placed          nomic one. EUvox gives a clearly more polarized percep-
+4% more to the right than in euandi. On the EU dimension,         tion of the European party landscape in terms of left–right
+we can also detect a statistically significant divergence, as     placements, as it puts the most right-wing party groups
+in EUvox, the average score is almost 3% more pro-EU. On          more to the right, while placing radical left parties closer
+the cultural axis, the average scores of the full party data      to the left extreme. On a scale from 0 (left) to 1 (right), the
+sets are almost indistinguishable, with the difference being      distance between the two furthest groups in euandi is 0.46
+less than 2% and statistically insignificant.                     (far left parties are, on average, placed at 0.12; European
+   The indicators presented on Figures 1 and 2 demonstrate        Conservatives and Reformists [ECR] parties at 0.58), while
+that the economic left–right dimension clearly has the low-       in EUvox, it is 0.59 (far left at 0.06; liberals 0.65).
+est degree of convergence between EUvox and euandi. On                If for the whole party data set these differences almost
+the EU dimension, there is a statistically significant differ-    balance out, significantly higher discrepancies are visible
+ence between the average placement of the parties, yet,           across party families on the economic dimension, as the
+overall, the match between party placements is still very         placement bias is not unidirectional across party groups:
+high. The cultural dimension placements converge best             Some groups are more right-wing in EUvox, while others
+according to both indicators, as they have the strongest          in euandi. In a nutshell, parties that are closer to the polit-
+correlation and no statistically significant difference in the    ical centre (centre-right (European People’s Party [EPP]),
+average placements of the party sets. This result is rather       centre-left (Progressive Alliance of Socialists and Demo-
+surprising considering the findings of Otjes and Louwerse         crats [PES])5 and liberals (Alliance of Liberals and Demo-
+(2014) which indicate that the liberal-conservative dimen-        crats for Europe [ALDE])), as well as green parties, have a
+sion performs rather weakly compared to the economic              significantly more right-wing placement in EUvox,
+dimension, in terms of scaling reliability. Although we           whereas both populist right and radical left parties are sig-
+study the external validity of the two VAAs, while Otjes          nificantly more to the right in euandi. The largest difference
+6                                                                                                                    Party Politics XX(X)
+
+
+
+
+Figure 3. Two-dimensional political landscapes in euandi and EUvox according to average party family placements. Note: The average
+party positions are in the centres of the ellipses. The ellipses represent the SDs of party placements within groups. The width of the
+ellipse indicates one SD on the economic left–right axes, while the height of the ellipse indicates one SD on the liberal-conservative/pro-
+anti EU axis. SD: standard deviation; EU: European Union.
+
+
+is observed among populist right and liberal parties, which            described as being either left- or right-wing, such discre-
+are both positioned 13% more to the right in euandi and                pancies can cause notable confusion. For example, 8 of 41
+EUvox, respectively. Right-populist parties are the only               centre-right (EPP) and 6 of 29 liberal (ALDE) parties are
+group for which the average placement is on different sides            positioned as economically left-wing in euandi, while
+of the centre-point in the two VAAs (left in EUvox and                 occupying a right-wing position in EUvox. Left-wing par-
+right in euandi). For green parties, the divergence is over            ties, however, are consistently placed on the left side of the
+10% as well, while centre-right and centre-left parties are            political landscape.
+positioned slightly less than 10% more to the left in euandi              Regarding the EU dimension, Figure 3 reveals that the
+compared to EUvox. Altogether, six of seven party groups               convergence between party family positions in the two
+have a statistically significant difference in their average           VAAs is generally much higher compared to the left–right
+left–right placement. Since political parties are often                axis. Centre-left, liberal, green and centre-right party
+Reiljan et al.                                                                                                            7
+
+
+families are placed conveniently at the pro-EU side of the     statement about the euro currency; member state veto pow-
+continuum in both VAAs, where they are usually presumed        ers; common EU foreign policy, and a general statement on
+to be. Right-populist and ECR parties are also positioned at   whether EU integration is a good thing (euandi) or whether
+the expected against EU side in both applications, and pla-    EU membership has been bad for the country (EUvox).
+cement divergence is almost non-existent. Very notable         Contrary to the other two dimensions, the economic left–
+outliers from this pattern of high convergence are far-left    right positions are measured by almost entirely different
+parties which are, on average, 16% more pro-EU in EUvox.       statements in both VAAs. The statement ‘Governments
+This is the highest divergence in party family placements      should reduce workers’ protection regulations in order to
+across all three dimensions and is very problematic in sub-    fight unemployment’ is included in euandi, while in
+stantive terms. While in EUvox, the average left-radical       EUvox, a similar statement is framed as ‘It should be easy
+party placement on EU dimension is precisely in the middle     for companies to fire people’. This goes closest to an item
+of the axis (0.50), indicating a neutral take on EU integra-   overlap on the left–right dimension. Thus, we can con-
+tion, in euandi, the average placement is 0.34, which is       clude that there is a much higher degree of consensus
+clearly an anti-EU position, not very distant from the Euro-   between the two VAA developers regarding which state-
+sceptic right-populist parties (average placement 0.24).       ments best capture the cultural and the EU dimensions.
+    Finally, on the cultural dimension, the placements are     Regarding some similar statements, party placements
+highly consistent across the two VAAs, the only exception      diverge due to formulation differences7 but, generally,
+being ECR parties. As Figure 3 demonstrates, these parties     parties are coded very similarly on matching statements
+are significantly closer to the conservative endpoint of the   in the two VAAs. Based on this, we can argue that the high
+cultural scale in euandi. Such a discrepancy is rather sur-    overlap between party placements on the cultural and
+prising, given that these parties often employ rigid conser-   (slightly less) on the EU dimension can, at least partially,
+vative positions and should not be too difficult to place on
+                                                               be attributed to the similar items used by the two VAAs to
+this dimension. However, the problem is not very dramatic,
+                                                               measure these constructs.
+as most ECR parties are consistently placed on the conser-
+                                                                   However, this addresses only one part of the empirical
+vative side of the continuum in each VAA, corresponding
+                                                               puzzle, as it tells nothing about the systematic party place-
+to the general intuition of where they should reside in the
+                                                               ment differences between the two VAAs – most notably on
+political space.
+                                                               the economic left–right dimension. If all the items success-
+    In sum, the comparison of the EUvox and euandi data
+                                                               fully measure the same latent concept (while not tapping
+sets reveals that both VAAs manage to place most parties
+                                                               into any other dimension) and manage to discriminate
+similarly and to the quadrants in the political space where
+                                                               between the parties sufficiently, it should not matter that
+these parties are usually perceived to be. However, there is
+still some confusion and systematic differences evident        the specific content of the statements differs: Dimensional
+(mostly on socio-economic left–right dimension), and this      party placements should still be similar. Thus, to uncover
+finding cannot be overlooked.                                  what could cause the systematic differences between the
+                                                               two VAAs, we single out statements that we deem to be in
+                                                               violation of these criteria. Table 2 lists all the statements
+Explaining the overlap and divergences in party                that fail in terms of dimensionality or sufficient polariza-
+placements                                                     tion between parties. Altogether, we have identified 10
+This section deals with a more thorough focus into the         suboptimal statements (6 in euandi and 4 in EUvox) of a
+previously described findings, indicating that the lowest      total of 47 (27 in euandi and 20 in EUvox).
+convergence between the EUvox and euandi party place-              To evaluate the performance of different statements
+ments is on the economic dimension, while the highest is on    regarding dimensionality, we ran a principal component
+the cultural issue-dimension. As indicated in the introduc-    analysis (PCA) with pairwise deletion (to avoid losing too
+tion, we focus on the issue-statements used to calculate the   many cases due to missing codings) and varimax rotation.
+dimensional positions.                                         In Table 2, we list the component loadings of the state-
+   A first notable observation is that the statements          ments on the expected dimension(s) and the highest loading
+assigned to the cultural and EU dimensions are much more       on any of the other two components (the loadings on each
+similar between the two VAAs compared to the left–right        dimension for all statements in both VAAs are presented in
+axis. On the cultural dimension, there are six survey items    the Online Appendix C). Following the suggestion of Hair
+that address the same or almost the same issue.6 These         et al. (1998), we draw the threshold of a sufficient loading
+statements concern cannabis/soft drugs legalization, same      coefficient at 0.4, considering that our sample size is
+sex marriage, abortion, immigration, citizen privacy and       approximately 200. We have, therefore, singled out state-
+punishment of criminals (see the Online Appendix A).           ments that either have a loading of less than 0.4 on the
+On the EU dimension, there are four items that address the     expected construct, have a loading of 0.4 or more on any
+same or a very similar issue: Both VAAs have included a        of the two other dimensions, or both.
+8                                                                                                                                Party Politics XX(X)
+
+
+Table 2. List of problematic statements in EUvox and euandi.
+
+                                                                         Dimensionality criteria                       Polarization criteria
+
+                                                Dimension(s)    Loading     Highest loading       Percentage of    Standard deviation
+                                                  to which      on the        on another      parties on the same        of party
+                                                 statement     expected       dimension        side of the centre-     placements
+Statement                              VAA       is assigned dimension(s) (unidimensionality)    point (valence)      (dispersion)
+
+External loans from institutions EUvox Left–right                      0.39                0.60                     48%                     0.30
+   such as the IMF are a good
+   solution to crisis situations
+It should be harder for EU         euandi Left–right and            0.33/0.33              0.62                     63%                     0.36
+   immigrants working or                    EU
+   staying in [your country] to
+   get access to social assistance
+   benefits than it is for [your
+   country’s] citizens
+To tackle the sovereign debt       euandi EU                            0.58               0.51                     48%                     0.41
+   crisis, the member states of
+   the Eurozone should be
+   allowed to issue common
+   bonds (Eurobonds)
+The EU should redistribute         EUvox EU                             0.54               0.52                     74%                     0.28
+   resources from richer to
+   poorer EU regions
+Less serious crimes should be EUvox Cultural                            0.44               0.48                     68%                     0.26
+   punished with community
+   service, not imprisonment
+The promotion of public            euandi Left–right and            0.34/0.35               0.21                    58%                     0.34
+   transport should be fostered             cultural
+   through green taxes (e.g.
+   road taxing)
+Renewable sources of energy        euandi Left–right and            0.31/0.34               0.32                    55%                     0.30
+   (e.g. solar or wind energy)              cultural
+   should be supported even if
+   this means higher energy costs
+Restrictions of personal privacy euandi Cultural                       0.38                 0.25                    75%                     0.25
+   on the Internet should be
+   accepted for public security
+   reasons
+Pension benefits should be         euandi Left–right                    0.43                0.15                    81%                     0.26
+   reduced to limit the state
+   debt in [your country]
+Restrictions on citizen privacy EUvox Cultural                          0.60                0.14                    56%                     0.27
+   are acceptable in order to
+   combat crime
+
+VAA: voting advice application; EU: European Union.
+Note: All values that violate the criteria are marked in bold. The dimensionality of the statements was determined by a principal component analysis (with
+pairwise deletion and varimax rotation) of all statements in euandi and EUvox (separately). Alignment with the expected dimension(s) indicates the
+component loading on the dimension(s) the statement was assigned to; loading coefficients below 0.4 are considered as breaching the criterion;
+regarding the unidimensionality criterion, we look at the highest component loading on any other dimension. Loading coefficients above 0.4 are
+considered as breaching the unidimensionality criterion. The polarization criteria consist of a valence criterion, which is violated when 75% or more of
+the parties are on the same side of the centre-point on a statement; and dispersion, which is measured by the standard deviation of party placements.
+
+
+
+    As Table 2 indicates, eight statements (five in euandi and                 solution to crisis situations – it is assigned to the economic
+three in EUvox) have problems with dimensionality. Two                         left–right dimension in EUvox. According to PCA, this
+items are at odds with both sub-criteria by not loading suffi-                 item aligns better with the EU dimension (component
+ciently on the expected dimension, while showing a signif-                     loading 0.60), while falling short on the 0.4 criterion on
+icantly higher alignment with another component. The first                     the left–right dimension (0.39). Another statement that
+of these statements proposes that external loans are a good                    fails in terms of both dimensionality criteria concerns
+Reiljan et al.                                                                                                                  9
+
+
+access to welfare benefits of EU immigrants. This euandi          left–right dimension statement ‘Pension benefits should be
+statement breaches the unidimensionality criterion already a      reduced to limit the state debt in [country]’; 81% of the
+priori, as it is assigned to left–right and EU dimensions.        parties that have been coded on that issue completely dis-
+However, its loadings on the expected constructs are insuf-       agree (56%) or tend to disagree (25%) with the proposal,
+ficient, whereas it aligns strongly with the items that capture   while only 10% support it. A previously mentioned euandi
+the parties’ cultural liberal-conservative position.              statement on Internet privacy restrictions also breaches the
+    There are six more statements that violate one of the two     threshold, as 75.3% of the coded parties are against the
+dimensionality criteria. As for undimensionality, the             proposition and only 12% support it. However, there is a
+EUvox statement on whether the EU should redistribute its         high amount of missing codings (25%) on this statement. If
+resources from richer to poorer countries and the euandi          the missing cases are included, the percentage of parties on
+statement proposing Eurobonds as an option to solve the           the ‘against’ side of the scale is much lower. Also consid-
+debt crisis load sufficiently on the expected EU dimension,       ering that on this item the modal category is ‘tend to dis-
+but are also attached to the left–right component, as left-       agree’, we find that the ‘internet privacy’ statement is
+wing parties are more prone to agree to such proposals.           actually more problematic in terms of dispersion, not the
+Somewhat surprisingly, the EUvox cultural dimension               valence criterion.
+statement regarding punishing criminals aligns too strongly           As for the condition of sufficient dispersion between
+with EU issues. In this formulation, only right-populist          parties, we compare the SDs on each statement. Euandi
+parties, on average, take the conservative (tougher punish-       coders have more frequently used complete agreement/dis-
+ments) position on that issue, which probably causes the          agreement categories, making the average SD higher in
+violation in terms of unidimensionality, although the word-       euandi (0.35, compared to 0.31 in EUvox).8 Although we
+ing does not suggest that the statement also measures atti-       lack a particular benchmark, several items clearly stand out
+tudes towards EU. Three statements do not align                   (see the SDs of all statements in the Online Appendix C).
+sufficiently with any of the three dimensions. Two of these       Unsurprisingly, the SD of the pension reduction statement
+items, both included in euandi, address green/ecological          is very low (0.26), as most parties are strongly against the
+issues. Regarding these items, the unidimensionality criter-      proposal. However, the SD of the previously mentioned
+ion was, again, already a priori breached, as they are            Internet privacy statement is even lower: 0.25 – the lowest
+assigned to both the economic and cultural dimensions.            value among the 47 statements. A very similar statement in
+This is a questionable decision, as green issues are usually      EUvox (‘Restrictions on citizen privacy are acceptable
+considered part of the cultural GAL-TAN dimension, and            in order to combat crime’) also has one of the lowest SDs
+there seems to be no clear reason to also include them in the     in the whole sample (0.27) and is listed as problematic in
+economic left–right calculation. However, the PCA indi-           terms of dispersion, although it manages to meet all other
+cates that the two items do not load sufficiently on either       criteria. Only 3% of the parties in EUvox completely agree
+the economic or cultural component. Finally, the euandi           with restricting privacy and 14% are completely against
+statement on Internet privacy restrictions narrowly misses        this proposition, while 83% of the parties are placed into
+the 0.4 loading coefficient threshold on the cultural dimen-      the three middle categories (no other statement in either
+sion, while not aligning with any other construct.                VAA has less parties in the complete dis(agreement) cate-
+    To assess whether statements polarize sufficiently            gories). Thus, although the Internet privacy issue is highly
+between parties, we lack such widely accepted benchmarks          salient, it is difficult to determine the party positions on the
+as with dimensionality. Regarding the valence criterion, we       topic. A similar problem is evident with the EUvox state-
+follow the approach of De Sio (2010) and De Sio and               ment on punishing criminals. It has an SD of 0.26, 21% of
+Weber (2014) who contend that whether a specific political        parties have been coded as ‘neutral’ (highest value in the
+issue in a given context can be considered as positional or       sample) and 79% are in the three middle categories.
+valence in its nature, should be determined on empirical              To elaborate on the difference between the valence and
+grounds, based on the level of support a particular policy        dispersion criteria, we briefly discuss five other statements –
+currently has among the population. Following the sugges-         all concerning European integration/EU issues – that come
+tion of De Sio (2010), we drew the line of valence criterion      very close to violating the valence criteria, as 72–74% of the
+to 75%: If more than 75% of the party sample (which in our        parties are on one side of the scale (see the Online Appendix
+study is the population) are on the same side regarding a         C). Substantively, there is not much difference whether a
+proposal, we consider that it breaches the valence criterion.     statement is supported/rejected by 74% or 75% of the party
+As Table 2 reveals, both VAAs have been quite successful          sample, yet the situation regarding these statements is actu-
+in avoiding valence issues: Just two statements (both in          ally different compared to the ones described in the two
+euandi) of 47 have more than 75% of the whole party               previous paragraphs. Statements like ‘On foreign policy
+sample on the same side (see the Online Appendix C for            issues the EU should speak with one voice’ or ‘Overall,
+the respective percentages of all statements). The most           EU membership has been a bad thing for (Country)’ divide
+clear-cut case of a valence criterion violation is the euandi     parties asymmetrically, as most are on the pro-EU side of the
+10                                                                                                                Party Politics XX(X)
+
+
+
+
+Figure 4. Average party family placements on two problematic euandi left–right statements. Note: FL – far/radical left, G – greens, SD –
+centre-left, L – liberals (ALDE), EPP – centre-right, ECR – conservatives/eurosceptics and RP – right-populist/far right.
+
+
+
+continuum, but still invoke polarization. Although fewer in          most vivid examples of violating the two main criteria we
+number than the pro-EU camp, there is a considerable                 have outlined: dimensionality and polarization. The state-
+amount of parties that take a strong anti-EU stance (i.e.            ment ‘It should be harder for EU immigrants working or
+complete (dis)agreement with the proposal). These parties            staying in (country) to get access to social assistance ben-
+usually belong to the right-populist group, but the average          efits than it is for (country’s) citizens’ is assigned to both
+placement of far-left and ECR parties is usually also on the         left–right and EU dimensions and supporting this proposal
+anti-EU side. On the ‘pension reduction’ and ‘internet pri-          moves the party towards the right and anti-EU poles. How-
+vacy’ statements, we do not see such systematic polarization,        ever, in reality, the statement aligns best with the liberal-
+as no party family consistently occupies the more unpopular          conservative component. Problems with dimensionality
+side (supporting pension cuts and privacy restrictions) of the       seem to derive from the formulation of the statement, as
+scale. This difference is reflected in the SDs, which are much       it bundles together too many different ideological attitudes
+higher for these EU statements (see the Online Appendix C).          by mentioning the EU, immigrants and social benefits in
+Thus, these statements meet the polarization criteria,               one sentence. As Figure 4 demonstrates, only the two most
+although there is a clear majority of parties that are suppor-       conservative and Eurosceptic party groups – right-populists
+tive of European integration.                                        and ECR – are supportive of such measure, thus obtaining a
+    In sum, Table 2 demonstrates that there are problematic          right-wing position on that item. Centre-left, far left, green
+statements in both VAAs and on all three dimensions.                 and liberal (ALDE) parties are gathered into the most leftist
+However, two observations indicate that these flawed items           quarter of the scale, while centre-right parties are also posi-
+affect mostly the convergence between EUvox and euandi               tioned left-of-centre. The two groups that diverge from
+on the left–right dimension. First, there is a clear imbalance       their average euandi left–right position most are right-
+between the two VAAs in terms of problematic statements              populist (overall left–right mean score of 0.55; mean score
+on the left–right dimension: in euandi, there are four, while        on that issue 0.83) and liberals (0.52 and 0.25). It appears
+in EUvox only one left–right item that violates any of the           that the right-populist’s strong support for such a proposal
+outlined criteria. This suggests that the euandi left–right          rather expresses the anti-immigrant and anti-EU views of
+placements might be more inaccurate, which also corre-               those parties, while the clearly left-wing stance of ALDE
+sponds to the observations from the previous section –               parties probably stems from the socially liberal ideology
+several parties that are usually perceived to be right-wing          that is generally supportive of universal rights. This is an
+are placed as left-wing in euandi. On the cultural dimen-            example of why it is important that statements do not mea-
+sion, the ratio of problematic statements is 3 in euandi to 2        sure any other latent construct except the one they are
+in EUvox, and on the EU dimension, it is 2 to 1, respec-             supposed to measure. We urge VAA developers to not
+tively. Second, the statements that are most gravely in vio-         assign one statement to several ideological dimensions
+lation of the dimensionality and polarization criteria are all       simultaneously and leave multidimensional statements out
+assigned to the economic dimension. Subsequently, we                 of the dimensional calculations.
+demonstrate how these statements distort party placements                The second statement displayed on Figure 4 demon-
+depending on party ideology.                                         strates how breaching the valence criterion can distort party
+    Figure 4 displays the average party family placements            positions. Parties are clearly very reluctant to support pen-
+on the two euandi left–right statements which constitute the         sion reductions and all party families are on the left side of
+Reiljan et al.                                                                                                              11
+
+
+the scale. Differentiation between parties is very small, as    centre-point it should be placed: right-populist parties on
+the most leftist party family (far left) is placed at 0.06,     the left–right dimension. Even after removing the proble-
+while the most ‘rightist’ group (EPP) is at 0.27. No other      matic statements, the average placement of this group
+statement in either VAA has all seven party families gath-      remains left-of-centre in EUvox and right-of-centre in
+ered in such a short segment of the continuum. This state-      euandi, with nearly a 10% gap between the VAAs (see the
+ment, again, has a stronger distorting effect on the            Online Appendix D). Another very significant difference in
+presumably right-wing parties that are pushed significantly     party placements that also remains after the recalculations
+towards the left in the composite score. It remains ques-       pertains to far-left parties on the EU dimension: in euandi,
+tionable whether all party families have really taken a very    these parties are now placed as even more Eurosceptic
+similar and leftist stance on the pension issue, or if the      (0.26), while in EUvox, the average position is 17% more
+statement was simply composed in a suboptimal way. We           towards the centre-point of the scale (0.43), indicating just
+tend to incline towards the latter option. Possibly, just       a mildly negative attitude towards the EU. The similarity
+reversing the statement (propose increasing the pension         between these two party groups is that both seem to have an
+benefits instead of reducing) could bring out the ideological   issue-based approach towards the respective dimensions.
+differences between parties more clearly. In sum, the two       For example, populist right parties support increasing the
+statements displayed in Figure 4 significantly distort the      taxation on bank and stock market gains and relaxing EU
+placements of especially centre-right (EPP) and liberal         austerity policy – leftist policy proposals. On the other
+(ALDE) parties, pushing them towards the left side of the       hand, they also support cutting government spending and
+continuum in euandi calculations.                               reducing the number of public sector employees, while
+   To test whether problematic/flawed statements are            being against maintaining social programmes at the cost
+responsible for the divergences between EUvox and euandi        of higher taxes – all rightist policy stances. This indicates
+party placements, we recalculated all the placements with-      that right-populist parties lack a coherent economic policy
+out the items brought out in Table 2. Indeed, the recalcula-    and seem to be approaching each issue separately, aiming
+tions show a significant increase in convergence between        to resonate with public opinion. This finding conforms to
+EUvox and euandi placements on the left–right dimension,        some previous research that has shown how populist right
+mostly on the account of presumably right-wing parties          parties rely on a strategy of issue ‘blurring’ (see Rovny,
+moving more to the right in euandi (see the Online Appen-       2013) to appeal to as many voters as possible (de Lange,
+dix D for the comparison of the initial and modified            2007). As for left-radical parties, their issue-based
+dimensional calculations). For the whole party sample,          approach to European integration appears to be more ideo-
+the 4% bias has been reduced to 1%, with the difference         logically motivated and does not necessarily correspond to
+being statistically insignificant. For centre-right parties,    the public opinion. For example, these parties are firmly
+the 9% bias disappears completely, and the divergence           against common EU foreign and defence policies, while
+of liberal parties is now also much less severe, as only a      supporting distribution of resources from richer to poorer
+5% discrepancy remains, compared to the initial 13. For         EU regions and the workers’ right to work in other EU
+radical left parties, the 6% bias has decreased to 0 and for    countries. Thus, it is evident that because of such issue-
+the populist right from 13% to 9%. The difference has also      based approach, it is difficult to place right-populist parties
+decreased for green and centre-left parties, yet not signif-    on the left–right and far-left parties on the EU dimension,
+icantly. Moreover, the correlation between EUvox and            using VAA party placement methodology.
+euandi placements for the whole party sample is now
+much stronger, as the R2 has increased to 0.72, compared
+to the initial 0.61 (see Figure 1). On the cultural and EU      Discussion
+dimensions, removing the problematic statements does            The results presented in this article reveal that, overall, the
+not cause such significant changes in convergence               two cross-national VAAs – EUvox and euandi – have man-
+between the two VAAs. In fact, on the cultural dimension,       aged to place more than 200 parties from 28 EU countries
+the difference between the placements increases, although       in a highly similar way on each of the three main issue-
+not substantially. The correlation between the placements       dimensions structuring European politics. However, we
+remains roughly the same on other two dimensions after          also found some systematic divergence between the two
+the recalculation. These results again suggest that the high    applications, which is mostly evident on the economic
+overlap especially on the cultural dimension owes much to       left–right dimension and particularly with regard to right-
+a similarity in the items used to measure the concept,          wing parties. We demonstrated that such divergences are
+whereas the systematic differences on the left–right pla-       largely caused by suboptimal statements that violate the
+cements seem to be mostly the result of some suboptimal         dimensionality criteria or do not manage to polarize suffi-
+statements included in the calculations.                        ciently between parties. Excluding these problematic state-
+   Eventually, there is confusion regarding just one party      ments significantly improves the party placement
+group on one dimension in terms of which side of the            convergence. This indicates that if statements are selected
+12                                                                                                               Party Politics XX(X)
+
+
+and coded appropriately, different VAAs place most of the          Funding
+parties in the European political space consistently, even if      The author(s) received no financial support for the research,
+the specific content of the issue-statements differs. The          authorship, and/or publication of this article.
+only notable divergences in placement that remain even
+after removing the problematic items from the calculations         Supplemental material
+pertain to right-populist parties on the left–right and far-left   Supplemental material for this article is available online.
+parties on the pro-anti-EU dimension. Due to the issue-
+based approach of these parties, it is genuinely difficult         Notes
+to place them on these dimensions of political competition,        1. Data set available at: http://dx.doi.org/10.7802/1594
+suggesting that, in this case, VAA developers are not to           2. Data set available at: http://dx.doi.org/10.4232/1.12138
+blame for the divergence of party positioning.                     3. The wording differs slightly also in the two voting advice appli-
+   These findings corroborate with Germann et al. (2015)              cations under study in this article: euandi calls it the liberal-
+and Germann and Mendez (2016) who advocate for the use                traditional and EUvox liberal-conservative dimension.
+of dynamic scale validation based on the early user data to        4. In both euandi and EUvox, the one cross-national statement
+improve the quality of VAA spatial maps after the initial             that was not used in dimensional calculations addressed the
+tool launch. However, regarding cross-national VAAs, we               issue of whether new European Union treaties should be
+would suggest that the scales are validated before the appli-         subject to a referendum in a member state.
+cation is launched to the wider public, using the party pla-       5. S&D is the European Parliament party group of the Party of
+cements on all issue-statements. Validating national VAAs             European Socialists (PES). PES member parties which have
+in such way would not be feasible due to the small number             not gained seats in the EP are also included in this group (see
+of parties, but with data of over 200 European parties, one           Appendix B).
+could implement basic statistical procedures to detect items       6. Which is a very high number, considering that altogether there
+that do not meet the criteria and distort the scales. It would        were 7 cultural dimension statements in EUvox and 11 in euandi.
+have been possible to exclude the problematic statements           7. Mostly regarding the statements addressing citizen privacy,
+that we singled out in this article, based on party-level data.       punishing criminals and common European Union foreign
+Regarding cross-national comparison, it would be better if            policy.
+the validation is performed on the entire VAA party data,          8. As suggested by earlier work of Gemenis and van Ham (2014)
+not separately in each country.                                       on Dutch voting advice applications, this could derive from the
+   Finally, our findings show that VAAs should not only be            different coding procedures (Kieskompas method in euandi
+considered as educational tools, but also as a legitimate and         and Delphi method in EUvox), but this topic falls out of the
+accurate method of party placement on the underlying ideo-            scope of this article.
+logical dimensions structuring party systems. EUvox and
+euandi have provided a reliable estimate of where parties          References
+stand in a cross-national EU-wide political space. Both            Blasius J and Thiessen V (2012) Assessing the Quality of Survey
+VAAs have managed to position most of the parties where               Data. Thousand Oaks: Sage.
+they are usually perceived to be, in terms of economic left–       Cedroni L and Garzia D (2010) Voting Advice Applications in
+right standpoints, cultural/moral values and pro/anti-EU              Europe: The State of the Art. Napoli: ScriptaWeb.
+stances. To provide additional proof of the accuracy of            de Lange SL (2007) A new winning formula? The pragmatic
+these party placements, future research could compare                 appeal of the radical right. Party Politics 13(4): 411–435.
+EUvox and euandi positions with other more established             De Sio L (2010) Beyond position and valence. A unified frame-
+measures of party placements, such as expert surveys, dif-            work for the analysis of political issues. EUI Working Papers.
+ferent methods of manifesto coding, public opinion data               EUI Working Paper, RSCAS 2010/83. Robert Schuman Cen-
+aggregation and parliamentary roll-call votes (see Krouwel,           tre of Advanced Studies. EUDO - European Union Democracy
+2012). As the VAA method is clearly distinct from all other           Observatory.
+approaches, it can provide a valuable addition into the            De Sio L and Weber T (2014) Issue yield: a model of party
+debate over the validity and reliability of different party           strategy in multidimensional space. American Political Sci-
+positioning methods. We see no reason for VAAs not to                 ence Review 108(4): 870–885.
+be considered among the most prominent methodologies to            Downs A (1957) An Economic Theory of Democracy. New York:
+estimate party positions and as measures to analyse party             Harper & Row.
+competition in multidimensional issue-spaces.                      Garzia D and Marshall S (2012) Voting advice applications under
+                                                                      review: the state of research. International Journal of Elec-
+Declaration of Conflicting Interests                                  tronic Governance 5(3-4): 203–222.
+The author(s) declared no potential conflicts of interest with     Garzia D and Marschall S (eds) (2014) Matching Voters with
+respect to the research, authorship, and/or publication of this       Parties and Candidates: Voting Advice Applications in a Com-
+article.                                                              parative Perspective. Colchester: ECPR Press.
+Reiljan et al.                                                                                                                          13
+
+
+Garzia D, Trechsel A and De Sio L (2017) Party placement in            Lefevere J and Walgrave S (2014) A perfect match? The impact of
+   supranational elections: an introduction to the euandi 2014            statement selection on voting advice applications’ ability to
+   dataset. Party Politics 23(4): 333–341.                                match voters and parties. Electoral Studies 36: 252–262.
+Gemenis K (2013) Estimating parties’ policy positions through          Louwerse T and Otjes S (2012) Design challenges in cross-
+   voting advice applications: some methodological considera-             national VAAs: the case of the EU profiler. International
+   tions. Acta Politica 48(3): 268–295.                                   Journal of Electronic Governance 5(3): 279–297.
+Gemenis K (2015) An iterative expert survey approach for               Louwerse T and Rosema M (2014) The design effects of voting
+   estimating parties’ policy positions. Quality & Quantity               advice applications: comparing methods of calculating
+   49(6): 2291–2306.                                                      matches. Acta Politica 49(3): 286–312.
+Gemenis K and van Ham CT (2014) Comparing methods for                  Marks G (2007) Introduction: triangulation and the square-root
+   estimating parties’ positions in voting advice applications.           law. Electoral Studies 26(1): 1–10.
+   In: Garzia D and Marschall S (eds), Matching Voters with            Otjes S and Louwerse T (2014) Spatial models in voting advice
+   Parties and Candidates: Voting Advice Applications in Com-             applications. Electoral Studies 36(1): 263–271.
+   parative Perspective. Colchester: ECPR Press, pp. 33–48.            Pennings P (2011) Assessing the ‘Gold Standard’ of party policy
+Germann M and Mendez F (2016) Dynamic scale validation                    placements: is computerized replication possible? Electoral
+   reloaded. Quality & Quantity 50(3): 981–1007.                          Studies 30(3): 561–570.
+Germann M, Mendez F, Wheatley J, et al. (2015) Spatial maps in         Rovny J (2013) Where do radical parties stand? Position blurring
+   voting advice applications: the case for dynamic scale valida-         in multidimensional competition. European Political Science
+   tion. Acta Politica 50(2): 214–238.                                    Review 5(1): 1–26.
+Hair JF, Black WC, Babin BJ, et al. (1998) Multivariate Data           Trechsel A and Mair P (2011) When parties (also) position them-
+   Analysis (Vol. 5, No. 3). Upper Saddle River, NJ: Prentice             selves: an introduction to the EU profiler. Journal of Informa-
+   hall, pp. 207–219.                                                     tion Technology and Politics 8(1): 1–20.
+Hooghe L, Marks G and Wilson CJ (2002) Does left/right struc-          Van Camp K, Lefevere J and Walgrave S (2014) The content and
+   ture party positions on European integration? Comparative              formulation of statements in voting advice applications. A
+   Political Studies 35(8): 965–989.                                      comparative analysis of 26 VAAs. In Garzia D and Marschall
+Kitschelt H and McGann A (1997) The Radical Right in Western              S (eds) Matching Voters with Parties and Candidates: Voting
+   Europe. A Comparative Analysis. Ann Arbor: University of               Advice Applications in Comparative Perspective. Colchester:
+   Michigan Press.                                                        ECPR Press, pp. 11–31.
+Kleinnijenhuis J, Scholten O, Atteveldt WH, et al. (2007) Neder-       Wagner M and Ruusuvirta O (2012) Matching voters to parties:
+   landvijfstromenland: De rol Van De Media Enstemwijzersbij              voting advice applications and models of party choice. Acta
+   De Verkiezingen Van 2006. Amsterdam: Bert Bakker.                      Politica 47(4): 400–422.
+Kleinnijenhuis J, van de Pol J, van Hoof AMJ, et al. (2017) Gen-       Walgrave S, Nuytemans M and Pepermans K (2009) Voting aid
+   uine effects of vote advice applications on party choice: filter-      applications and the effect of statement selection. West Eur-
+   ing out factors that affect both the advice obtained and the           opean Politics 32(6): 1161–1180.
+   vote. Party Politics 1354068817713121.                              Wall M, Krouwel A and Vitiello T (2014) Do voters follow the
+Kriesi H, Grande E, Lachat R, et al. (2008) West European                 recommendations of voter advice application websites? A study
+   Politics in the Age of Globalization. Cambridge: Cambridge             of the effects of kieskompas.nl on its users’ vote choices in the
+   University Press.                                                      2010 Dutch legislative elections. Party Politics 20(3): 416–428.
+Krouwel APM (2012) Party Transformations in European
+   Democracies. Albany: SUNY Press (State University of New
+                                                                       Author biographies
+   York Press).
+Krouwel A and van Elfrinkhof A (2014) Combining strengths of           Andres Reiljan is a PhD researcher in the European University
+   methods of party positioning to counter their weaknesses: the       Institute in Florence, Italy. He holds an MRes degree in Social and
+   development of a new methodology to calibrate parties on            Political Sciences from the European University Institute and an
+                                                                       MA degree in Comparative Politics from the University of Tartu.
+   issues and ideological dimensions. Quality & Quantity
+   48(3): 1455–1472.                                                   Yordan Kutiyski is an MSc graduate of political science from
+Krouwel A and Wall M (2014) From text to the construction of           VU University Amsterdam and holds an MA degree in Latin
+   political party landscapes. In: Kaal B, Maks I and Elfrinkhof A     American studies from the Centre of Latin American Research
+   (eds), From Text to Political Positions: Text Analysis Across       and Documentation (CEDLA) at the University of Amsterdam.
+   Disciplines. Amsterdam: John Benjamins Publishing Com-              André Krouwel is an associate professor of political and com-
+   pany, pp. 275–296.                                                  munication science at VU University Amsterdam, teaches com-
+Krouwel A, Vitiello T and Wall M (2012) The practicalities of          parative political science and communication science at Vrije
+   issuing vote advice. International Journal of Electronic Gov-       Universiteit Amsterdam and is Founder of Kieskompas (Election
+   ernance 5(3-4): 223–243.                                            Compass).
+

@@ -1,0 +1,1036 @@
+                                         Recommender Systems for Democracy: Toward Adversarial Robustness in Voting
+                                                                   Advice Applications
+
+                                                        Frédéric Berdoz1 , Dustin Brunner , Yann Vonlanthen1 and Roger Wattenhofer
+                                                                                     ETH Zurich, Switzerland
+                                                                    fberdoz@ethz.ch, yvonlanthen@ethz.ch, wattenhofer@ethz.ch
+
+
+                                                                      Abstract
+arXiv:2505.13329v1 [cs.CY] 19 May 2025
+
+
+
+
+                                                                                                         candidates [Louwerse and Rosema, 2014]. In countries where
+                                                                                                         VAAs are currently in use, they are often consulted by 10-
+                                                 Voting advice applications (VAAs) help millions of      50% of voters [Terán, 2020], making them a highly popular
+                                                 voters understand which political parties or candi-     source of information. On top of that, the advice provided
+                                                 dates best align with their views. This paper ex-       by these applications has been shown to significantly influ-
+                                                 plores the potential risks these applications pose      ence both voter turnout and voter decisions [Munzert and
+                                                 to the democratic process when targeted by adver-       Ramirez-Ruiz, 2021]. In Switzerland specifically, Germann
+                                                 sarial entities. In particular, we expose 11 manip-     and Gemenis [2019] showed that the VAA mobilized 58,000
+                                                 ulation strategies and measure their impact using       additional voters in 2007, while Ladner and Pianzola [2010]
+                                                 data from Switzerland’s primary VAA, Smartvote,         reported that 67% of the users had stated that the VAA had
+                                                 collected during the last two national elections.       influenced their voting behavior. The profound impact of
+                                                 We find that altering application parameters, such      VAAs has gone as far as triggering a shift from representative
+                                                 as the matching method, can shift a party’s rec-        to promissory democracy, in which VAA profiles are inter-
+                                                 ommendation frequency by up to 105%. Cherry-            preted as electoral promises [Ladner, 2016]. This transition
+                                                 picking questionnaire items can increase party rec-     occurred without requiring any changes to constitutional or
+                                                 ommendation frequency by over 261%, while sub-          legal frameworks. While the benefits of VAAs are undeniable
+                                                 tle changes to parties’ or candidates’ responses can    and well-documented [Munzert and Ramirez-Ruiz, 2021], for
+                                                 lead to a 248% increase. To address these vulnera-      the first time, this study aims to shed light on their potential
+                                                 bilities, we propose adversarial robustness proper-     vulnerabilities. Specifically, we seek to quantify the impact
+                                                 ties VAAs should satisfy, introduce empirical met-      that a hypothetical adversarial actor could have on the rec-
+                                                 rics for assessing the resilience of various matching   ommendations. Toward this goal, we focus our analysis on
+                                                 methods, and suggest possible avenues for research      Smartvote, Switzerland’s primary VAA. In 2023, Smartvote
+                                                 toward mitigating the effect of manipulation. Our       was used by up to 20% of eligible Swiss voters, up from 17%
+                                                 framework is key to ensuring secure and reliable        in 2011. In 2023, a total of 2.1 million voting advice reports
+                                                 AI-based VAAs poised to emerge in the near future.      were created [Politools, 2024a]. Our contributions:
+                                                                                                          1. We propose three adversarial robustness properties for
+                                         1       Introduction                                                VAAs. Namely, robustness against manipulation by (i)
+                                         Recent advances in information technology have significantly        candidates and parties, (ii) platform operators, and (iii)
+                                         transformed our daily lives. One area that remains relatively       question designers (Section 2).
+                                         underexplored is digital democracy, which integrates digital     2. We empirically demonstrate the importance of these ro-
+                                         innovations into the political system. Among the most no-           bustness properties by leveraging two comprehensive
+                                         table developments in this field is the emergence of Voting         datasets collected by Smartvote during the Swiss na-
+                                         Advice Applications (VAAs). VAAs provide voters with per-           tional elections of 2019 and 2023. We uncover a total of
+                                         sonalized recommendations on which parties or candidates            11 vulnerabilities through which adversaries could ma-
+                                         best align with their preferences and policy stances. VAAs          nipulate the recommendations (Table 1 and App. C).
+                                         exist in as many as 30 countries across the world, including
+                                         the USA, Canada, Australia, as well as many European coun-       3. Based on the highest-risk vulnerabilities, we suggest 9
+                                         tries [Terán, 2020]. Interestingly, the legal basis of VAAs        metrics to compare the adversarial robustness of existing
+                                         varies widely from country to country, ranging from publicly        and newly proposed matching methods (Section 5).
+                                         governed and regulated entities to loosely controlled private    4. Finally, with input from Politools, the non-profit organi-
+                                         associations [Garzia and Marschall, 2012]. Strikingly, almost       zation behind Smartvote, we propose research directions
+                                         every country chooses a different method to match voters to         to mitigate these vulnerabilities, enabling the develop-
+                                             1                                                               ment of more robust VAAs in the future (Section 6).
+                                                 Corresponding authors.
+    Vulnerability           Adversary Type             Code       Section      Data         Benefactors       Visibility   Likelihood Impact
+                                                                                                               Gain
+    Answer Optimization     Candidates                 AO          4.1             ✓                           259%         Low          High
+    Answer Calibration      Candidates                 AC          4.1             p            b8            248%         High         High
+    Diversification         Candidates (Party)         DIV         4.1             p             b             345%        Medium        High
+    List Centralization     Candidates (Party)         LC         App. C           p                            -          Low          Low
+    Matching Method         Platform operator          MM          4.2             p               8           105%        Medium       Medium
+    Question Ordering       Platform operator          QO         App. C           ✓             b               6%         Low          Low
+    Weight Selection        Platform operator          WS          4.2             p               8           ≈15%         Low          Low
+    Similarity Score        Platform operator          SS          4.2             p             b8              -         Medium        Low
+    Tie-breaking            Platform operator          TB         App. C           p                           210%        Medium       Medium
+    Question Favoritism     Question designer          QF          4.3             ✓               b           261%         Low          High
+    Question Correlation    Question designer          QC          4.3             p               b             -         Medium       Medium
+
+Table 1: Overview of the main vulnerabilities associated with each type of adversary, with type-specific color codes for reference in the paper.
+The Data column indicates whether a strategy exploiting that vulnerability requires knowledge of the voters’ or candidates’ answers. For
+Benefactors,      denotes single candidates,  denotes lists, b denotes parties, and 8 denotes party coalitions (i.e., left, center, right as
+shown in Figure 5). The primary benefactor is highlighted in black, secondary benefactors are shown in gray. The Visibility Gain factor
+indicates its best-case potential relative increase in visibility in the VAA if that vulnerability is exploited, as estimated by our experiments
+throughout the paper (left blank if no experiment was conducted). The table also includes a subjective assessment of the Likelihood and
+Impact of each strategy.
+
+
+2      Background                                                           (R) Reproducibility: The VAA produces reproducible rec-
+                                                             N
+                                                                                ommendations, enabling users to verify the system’s re-
+                                                               q
+Most popular VAAs use a set of questions Q = {qt }t=1             to po-        liability.
+sition both candidates C = {cj }j=1 and voters V = {vi }N
+                                       Nc                              v
+                                                                     i=1
+                                                             Nq              (I) Interpretability: The rationale behind the VAA’s rec-
+within the high-dimensional Euclidean space R . For-
+                                                                                 ommendations is easily understandable and intuitive to
+mally, each question qt : V ∪ C → At assigns an answer
+                                                                                 users, including those with less technical expertise.
+to a given voter or candidate, with At ⊆ R being the set
+of allowable answers for that question (generally discrete                  (T) Transparency: The VAA’s matching algorithm and all
+and bounded). For example, the question “Are VAAs ro-                           factors influencing recommendations are open-source.
+bust?” might map the answers “No”, “Rather no”, “Rather                     (F) Fairness: The VAA is purely issue-based and does not
+yes”, and “Yes” to the numerical values 0, 25, 75, and                          consider any other characteristics of voters or candi-
+100, respectively. Additionally, for each question qt , vot-                    dates.
+ers can typically choose a numerical weight within a set of
+allowable values Wt ⊆ R to reflect how important each                       (E) Explainability: Voters receive clear and intuitive expla-
+question is to them. This weight is formally represented                        nations for candidate or list recommendations.
+as a mapping wt : V → Wt . Given a voter-candidate                          (P) Privacy: The VAA ensures the privacy and anonymity
+pair (vi , cj ) and their respective answer and weight vec-                     of users’ responses and preferences.
+tors vi = [q1 (vi ), ..., qNq (vi )]T , cj = [q1 (cj ), ..., qNq (cj )]T
+                                                                            Although the importance of these properties is clear, they do
+and wi = [w1 (vi ), ..., wNq (vi )]T , the VAA computes a sim-              not offer protection against malicious actors (i.e., adversaries)
+ilarity score s(vi , cj ) between vi ’s and cj ’s opinions using            aiming to manipulate the recommendations to favor a partic-
+a predefined weighted distance function d(vi , wi , cj ), with              ular candidate or party. From the above definitions, one can
+d : RNq × RNq × RNq → R+ . Lastly, for each voter vi , the                  identify three potential types of such adversaries: (i) The can-
+VAA provides a ranking ri ∈ R(C) based on these similar-                    didates providing their answer vectors, (ii) the platform op-
+ity scores, with R(C) the set of total orders on C. See Table               erator in charge of choosing d, {At }t=1
+                                                                                                                     Nq
+                                                                                                                        , {Wt }t=1
+                                                                                                                                  Nq
+                                                                                                                                     and all
+3 in the Appendix for a summary of how the most popular                     other aspects related to VAA’s interface (such as question or-
+VAAs align with this framework. As some of our analysis                     dering, tie-breaking, etc.), and (iii) the question designers
+will concern parties and lists, we also account for the fact that           writing the questions Q.2 In Section 4, we analyze the pri-
+candidates can belong to exactly one party p ∈ P and one                    mary dangers associated with each type of adversary, ground-
+list l ∈ L, with P and L being the set of all parties and lists,            ing our analysis in the two datasets from Smartvote presented
+respectively. In Swiss National Council elections, lists are                in Section 3. Then, in Section 6, we propose solutions to mit-
+party- or coalition-specific slates of candidates from which                igate these risks.
+voters choose or modify their preferred selections (see Ap-
+pendix A.1 for more details). A canonical set of properties                    2
+                                                                                 For Smartvote, the non-profit association Politools is responsi-
+that any safe VAA must satisfy commonly includes [Garzia                    ble for selecting the questions and operating the platform [Politools,
+and Marschall, 2014]:                                                       2024a].
+3       Dataset
+We empirically evaluate our claims using two comprehen-
+sive datasets collected by Smartvote [Politools, 2024a],
+which include questionnaire responses and metadata from
+both voters and candidates in the 2019 and 2023 Swiss
+National Council elections. In both elections, approximately
+85% of electable candidates participated by completing
+the questionnaire, and around 20% of eligible Swiss vot-
+ers used Smartvote for voting recommendations. These
+recent datasets provide a solid foundation for analyzing
+VAA robustness, capturing a significant portion of both
+voters and candidates. Smartvote contains Nq = 75 ques-
+tions with At = {0, 25, 75, 100} for questions 1 ≤ t ≤ 60
+(policy questions), At = {0, 17, 33, 50, 67, 83, 100} for
+                                                                        Figure 1: Visibility of crafted candidates (red) compared to all other
+61 ≤ t ≤ 67 (value questions) and At = {0, 25, 50, 75, 100}             candidates (blue) in the states of Zurich (k = 36), Bern (k = 24),
+for 68 ≤ t ≤ 75 (budget questions). For all questions, the              and St. Gallen (k = 12). The larger dots highlight the crafted and
+allowable values for the weights are Wt = {0, 0.5, 1, 2},               actual most visible candidates.
+with 1 being the default value for answered questions and 0
+the value automatically assigned to any unanswered question.
+The distance metric used in Smartvote is the L2 distance                that are occupied by members of that party. Finally, we de-
+                              v
+                              u Nq                                      fine the k-visibility of a list νk (l | L) as the frequency with
+                              uX                                        which l appears in the top k positions of the list rankings
+        dL2 (vi , wi , cj ) = t (wi,t (vi,t − cj,t ))2 , (1)            RL = {ri ∈ R(L) | vi ∈ V }. Throughout this work, unless
+                                 t=1                                    specified otherwise, we set k to the number of seats allocated
+                                                                        to the candidate’s state4 in the National Council, for both can-
+which is used to compute the normalized similarity scores               didate and party visibility. For lists, we use k = 1 by default,
+                     
+                               dL2 (vi , wi , cj )
+                                                                       as voters can only vote for one list. These default values also
+  s(vi , cj ) = 100 · 1 −                               , (2)           correspond to the number of candidates and lists visually put
+                          dL2 (100 · 1Nq , wi , 0Nq )
+                                                                        forward by Smartvote. Due to their specificity, we discuss the
+where 1Nq (respectively 0Nq ) denote the one-valued (respec-            list centralization (LC), the question ordering (QO), and the
+tively zero-valued) Nq dimensional vector. In addition to               tie-breaking (TB) vulnerabilities in Appendix C.
+candidate rankings, Smartvote also provides a list ranking by
+averaging the similarity scores
+                             P of all candidates on each list
+                                                                        4.1    Candidates and Parties
+                          1
+l ∈ L, i.e., s(vi , l) = |l|  c∈l s(vi , c). For a more detailed        Answer Optimization (AO)
+description of the Swiss political system and Smartvote, we
+refer the reader to Appendix A. In Appendix B, we provide               We start by investigating the potential for a single candidate
+a comprehensive description of the preprocessing applied to             to manipulate their answers to increase their popularity. The
+the two datasets, as well as an exploratory data analysis. We           computation of the provably optimal candidate is of combina-
+conducted all analyses and experiments on both datasets, but            torial complexity and thus infeasible, as pointed out by Etter
+present results from the more recent 2023 dataset, as the over-         et al. [2014]. However, we can find an approximate solution
+all findings are consistent across both elections.                      through randomized optimization. For each state, we craft an
+                                                                        artificial candidate c∗ using simulated annealing [Kirkpatrick
+                                                                        et al., 1983] and optimizing νk (c∗ | C ∪ {c∗ }). In almost
+4       Vulnerabilities                                                 all states, the crafted candidate appears in more than 50% of
+While Smartvote satisfies in large part3 all the safety prop-           top k recommendations, significantly outperforming the pre-
+erties listed in Section 2, its robustness to adversarial en-           viously crafted candidate by Etter et al. [2014], as well as
+tities remains unclear. In this section, we analyze the key             any actual candidate.5 Figure 1 shows that the crafted can-
+strategies that the different types of adversaries might use            didates in the states of Zurich, Bern, and St. Gallen easily
+to increase the visibility of a particular candidate or party.          surpass their competition in terms of visibility. Table 7 in
+Given a set of candidates C and a set of recommendations                Appendix C contains the popularity of our best crafted candi-
+(i.e., rankings) RC = {ri ∈ R(C) | vi ∈ V }, we define the              date for each state, as well as a comparison with other op-
+k-visibility of a candidate νk (c | C) as the frequency with            timization strategies. Specifically, it demonstrates that the
+which candidate c appears in the top k positions of the rank-           visibility of candidates crafted using only 1% of the voters’
+ings RC . Additionally, we define the k-visibility of a party           data is nearly as high as those optimized with the full dataset,
+νk (p | P ) as the fraction of the top k recommendations                achieving 51.70%, 50.66%, and 52.55% in Zurich, Bern, and
+    3                                                                      4
+     The fairness and reproducibility properties of Smartvote are not       Usually referred to as a canton in Switzerland
+                                                                           5
+fully met, as they break ties using last names and allowed some can-        Note that Etter et al. [2014] set k = 50 in the popularity metric,
+didates to overwrite their initial answers on a few questions.          while for us k ∈ {1, · · · , 36}. Our result is thus strictly stronger.
+Figure 2: Relationship between the answer strength of candidates, as        Figure 3: Comparison of actual and calibrated party visibility using
+defined in Eq. (3), and their visibility in the state of Zurich (k = 36).   the L1 and L2 distance metrics. To simulate this scenario, the an-
+Each dot shows a candidate and the black line represents an ordinary        swer profiles of all candidates in the party were adjusted to weaken
+least squares trend line.                                                   their responses (e.g., changing all “Yes” to “Rather yes”), and the
+                                                                            recommendations were recalculated using the L1 and L2 distance
+                                                                            metrics.
+St. Gallen, respectively. The analysis of the crafted candi-
+date’s profile reveals that almost no questions are answered
+on the answer spectrum’s extremities (e.g., only 2 out of 75                4.2   Platform Designers
+answers for the crafted candidate in Zurich). This points to                Matching Method (MM)
+a systematic bias toward candidates with moderate positions.                Louwerse and Rosema [2014] show how sensitive recom-
+We investigate this lead next.                                              mendations are to changes in the matching method. We ex-
+                                                                            tend these findings by quantitatively evaluating the bias and
+Answer Calibration (AC)
+                                                                            accuracy of each distance function in Table 2. Additionally,
+In Smartvote, candidates are provided with four or more re-                 in Table 8 of the Appendix, we show that some methods can
+sponse options. They can deliberately choose to respond                     disproportionately favor candidates at either end of the polit-
+“strongly” by selecting answers at the poles (0 or 100) or                  ical spectrum.
+“moderately” by choosing options closer to the middle of the
+answer spectrum (25 or 75).6 We define the strength σ of an                 Weight Selection (WS)
+answer cj by its deviation from the neutral position in abso-               In Smartvote, voters have the option to decrease or increase
+lute value, i.e.,                                                           the weight of each question qt , but without knowing the actual
+                        Nq
+                                                                            numerical weights Wt = {0, 21 , 1, 2} corresponding to these
+                1 X           1                                             actions.7 Figure 5 displays the relative change of the main
+       σ(cj ) =        |cj,t − (max At + min At )|.                  (3)    parties’ visibility (among voters that have weighted at least
+                Nq t=1        2
+                                                                            one question) if these values are changed.
+In Figure 2, we find that in Smartvote, candidates with mod-                Similarity Score (SS)
+erate answers (i.e., lower answer strength) are recommended
+                                                                            Apart from determining the ranking ri , the similarity scores
+significantly more often. This concerning trend suggests that
+                                                                            s(vi , cj ) can also be displayed to provide voters with a sense
+candidates can artificially boost their visibility by providing
+                                                                            of their relative proximity to different candidates. The exact
+moderate answers to all questions. This strategy is particu-
+                                                                            calculation of such a score is mostly arbitrary. In Smartvote,
+larly problematic because it can be executed with minimal de-
+                                                                            the Euclidean distance between the voter and candidate is
+viation from the true candidate’s position, making it difficult
+                                                                            scaled by the maximum possible distance between two an-
+to detect. Figure 3 reveals that with the current distance met-
+                                                                            swers, as specified in Eq. (2). Figure 6 shows that the simi-
+ric used in Smartvote (dL2 ), some parties can increase their
+                                                                            larity scores of the best-matching candidate vary by party and
+visibility fourfold by unilaterally adopting this strategy.
+                                                                            are generally quite low, which is in large part a consequence
+Diversification (DIV)                                                       of the curse of dimensionality [Thirey and Hickman, 2015].
+Figure 4 shows that parties with more candidates relative                   This disparity could ultimately influence voters from different
+to their vote share tend to receive disproportionately more                 parties in different ways.
+recommendations on Smartvote. This significant correlation
+suggests that having more candidates can skew recommenda-                   4.3   Question Designers
+tions, thereby providing an artificial advantage in voter out-              Question Favoritism (QF)
+reach and potentially electoral success.                                    Certain questions can significantly benefit specific parties by
+   6
+                                                                            aligning closely with their popular stances. Figure 7 shows
+     Answering moderately can be used to indicate a nuanced posi-
+                                                                               7
+tion, openness to compromise, or ambivalence. As such, the added                 These values are available on the About page on Smartvote, but
+expressivity is regarded to be beneficial [Batterton and Hale, 2017].       they are not displayed directly alongside the questions.
+Figure 4: Relationship between the number of candidates per per-           Figure 5: Relative visibility change of all parties if the avail-
+                                                                                                                            1
+cent of vote share and the ratio of visibility to vote share for parties   able question weights are set to Wt = {0, 10       , 1, 10} (strong) or
+                                                                                       9     10
+in the state of Zurich. The size of each dot represents the vote share     Wt = {0, 10 , 1, 9 } (weak). The visibility of each party is com-
+of the corresponding party. Vote shares are calculated based on the        puted using only the voters that have weighted at least one question.
+votes received by candidates participating in Smartvote for the 2023       Parties are listed according to their parliamentary seating arrange-
+National Council election. Exact values can be found in the column         ment, with traditional larger coalitions (left, center, right) shown
+Vote Share (adjusted) of Table 4 in the Appendix.                          at the top. As observed, the actual numerical value of the weights
+                                                                           can significantly favor certain coalitions, with center parties benefit-
+                                                                           ing from weak weights and left- and right-wing parties from strong
+the relative change in party visibility based on the size of al-           weights.
+ternative questionnaires. These questionnaires consist of a
+subset of questions from the original set, selected to bene-
+fit the respective parties the most during the elections in the            (CP-M) or the strong answering strategy (CP-S) weighted by
+state of St. Gallen. With this knowledge, an adversarial ques-             the adjusted voter shares of the parties in the 2023 election
+tion designer could favor questions that benefit their preferred           (see Table 4 in Appendix A for the exact values).
+party.
+                                                                           Answer Strength Correlation (ASC).
+Question Correlation (QC)                                                  This metric addresses the answer calibration manipulation
+If a question is advantageous for a particular party, introduc-            strategy. It is defined as the Pearson correlation between
+ing additional questions with answers highly correlated to this            the answer strength (defined in Eq. 3) and the expectation-
+question (among voters and candidates) implicitly increases                normalized visibility of candidates.         The expectation-
+its weight. For instance, asking the negation of a question                normalized visibility adjusts for the varying number of can-
+effectively doubles the original question’s weight. Although               didates in each state by multiplying the visibility by the ratio
+this strategy is inherently associated with question favoritism,           of the number of candidates to the number of available seats
+it has the potential to magnify its impact.                                in the state, ensuring comparability across different states. To
+                                                                           minimize the effectiveness of any answer calibration strategy
+5    Measuring Robustness                                                  regarding the answer strength, this metric should ideally be
+From Table 1, we note that three high-risk vulnerabilities,                close to zero, indicating no systematic bias toward candidates
+namely AC, AO, and MM, are highly dependent on the                         with moderate or strong answers.
+matching method. To assess the impact of matching methods                  Gini Coefficient (GIN).
+on robustness, we compare the five most commonly used dis-                 This metric measures the Gini coefficient of the expectation-
+tance functions and two novel proposals using various key ro-              normalized visibilities over all candidates, indicating how
+bustness metrics. A formal definition of these distance func-              evenly distributed the recommendations are among them. A
+tions is provided in Appendix D.3.                                         Gini coefficient of 0 represents a perfectly even distribution,
+Party Bias (BIA).                                                          and a coefficient of 1 indicates a completely uneven distribu-
+We assess the deviations in party visibility for each match-               tion. While there is no ideal Gini coefficient for a distance
+ing method relative to the median visibility observed across               method, and actual election votes are typically less evenly
+all other evaluated methods (see Appendix D.1 for a detailed               distributed than Smartvote recommendations (see Figure 20
+discussion). Here we consider the mean absolute deviation                  in the Appendix), the Gini coefficient offers insight into the
+(BIA1) and max deviation (BIA2) over the eight largest par-                differences in recommendation diversity between matching
+ties.                                                                      methods.
+Calibration Potential (CP).                                                Party Match Accuracy (ACC1).
+For each matching method, we repeat the analysis of Figure 3               This metric measures the proportion of voters whose top list
+and measure the average relative visibility gain or loss that re-          recommendation matches their preferred party. As manual
+sults from a party employing the moderate answering strategy               accuracy checks are impractical, comparing the voter’s stated
+Figure 6: Distribution of similarity scores between voters and their   Figure 7: Relative visibility gain for each party using a set of greed-
+top matching candidate, with colored histograms isolating voters       ily selected optimal questions to generate voting advice in the state
+whose top candidate is from a specific party. This histogram reveals   of St. Gallen. Each line represents a political party and shows its
+that the matching percentages vary significantly based on the party    increase in visibility as more and more favorable questions are in-
+of the top matching candidate. It also shows that for many voters,     cluded, compared to the baseline scenario with the full question-
+their top matching candidate is surprisingly low (below 70%).          naire. Circles indicate each party’s maximum attainable visibility
+                                                                       (e.g., when only choosing the best-aligned 12 questions, the Green
+                                                                       party can increase its visibility by 120%).
+preferred party with the party recommended by the algorithm
+is common for assessing the accuracy of VAAs [Garzia and
+Marschall, 2014]. For Smartvote, which does not directly rec-          with only minor reductions in ACC1 and ACC2. Therefore,
+ommend parties, we use the party from the best-matching list           we argue that any of these two methods is a viable robust sub-
+as a proxy. While this metric is appealing for its simplicity, it      stitution for L2. Alternatively, the Hybrid method appears to
+assumes that voters know the party that best represents them,          offer strong robustness properties with only a slight decrease
+which may not always be true.                                          in accuracy across all three metrics.
+Normalized Party Rank (ACC2).                                          Lower Expressivity (AC, AO).
+This metric provides deeper insight into the rankings of lists
+associated with voters’ preferred parties. It measures the av-         Reducing the number of allowable answers can reduce the
+erage normalized rank of the top list for the preferred party,         impact of many vulnerabilities by limiting opportunities for
+with normalization adjusting for the number of lists per state.        fine-grained manipulation. Since expressivity is important for
+A normalized rank of 0 means the list is recommended first,            voters, it could be reduced specifically for candidates. For ex-
+while a value of 1 means it is recommended last.                       ample, candidates could be restricted to answering “Yes” or
+                                                                       “No” for each question, while voters still have “Rather yes”
+Strong Disagreement Accuracy (ACC3).                                   and “Rather no” as options. This would effectively mitigate
+This metric measures the disagreements between voters and              the answer calibration strategy, which, based on our subjec-
+their recommended candidates. However, it specifically fo-             tive assessment in Table 1, poses the greatest risk.
+cuses on questions that voters weighted more strongly, indi-
+cating their greater importance. This metric should ideally be         Û Deal-breaker Filtering (WS).
+low, as voters likely expect their recommended candidates to           As demonstrated by the vulnerability to weight selection, vot-
+align with them on these high-priority questions.                      ers could easily misunderstand the effect of weighting ques-
+                                                                       tions. To address this issue, we propose to allow only the
+6    Future Work on Mitigation Approaches                              weights to Wt = {0, 1, ∞} for each question qt . Assign-
+                                                                       ing a weight ∞ to a question effectively treats it as a deal-
+Below, we present a series of possible mitigation strategies,
+                                                                       breaker [Isotalo, 2021], directly excluding all candidates who
+specifying the vulnerabilities they aim to address. We also
+                                                                       answered differently from the voter on that question. To avoid
+provide mitigations for TB, QO and LC in Appendix E. We
+                                                                       leaving voters without candidates due to excessive filtering,
+emphasize that these strategies have not been extensively
+                                                                       the matching algorithm could consider the number of dis-
+tested and may introduce unintended harms. We introduce
+                                                                       agreements on deal-breakers as the primary factor in deter-
+them here as a foundation for future work, aiming to facili-
+                                                                       mining the similarity scores. Alternatively, one could also
+tate systematic research in this direction. Mitigation strate-
+                                                                       allow voters to exclude all candidates not aligned with their
+gies currently under Politools review are marked with Û.
+                                                                       chosen side of the answer spectrum relative to the neutral re-
+Û L1 or Angular instead of L2 (AC, AO, MM).                            sponse.
+While each distance metric has its trade-offs, we find in Ta-
+ble 2 that L1 and Angular consistently offer better robustness         Û Selective Answering (QF, QC).
+than L2 without sacrificing accuracy. Specifically, L1 outper-         Voters should be informed that answering more questions
+forms L2 in ACC1 and ACC2, while Angular excels in ACC3                does not necessarily lead to a more accurate recommendation
+    Distance Function   BIA1            BIA2           CP-M       CP-S        ASC      GIN     ACC1      ACC2      ACC3          Used By
+    (See App. D.3)       |"|             |"|            "          "          |"|               (         "         "
+    L2                  23.0%      +40.7% (EVP)        +207%      -71%        -0.470   0.475   41.0%     0.103      7.8%        Smartvote
+    L1                  14.3%     +24.4% (Centre)      +46%       -50%        -0.280   0.373   41.8%     0.101     11.0%       Wahl-O-Mat
+    Angular              4.1%      -12.2% (GLP)         -27%      -13%        0.190    0.349   40.2%     0.109      7.0%            -
+    Agreement Count      3.6%       +7.8% (SVP)         -36%       -4%        0.256    0.317   35.7%     0.111     15.0%       Stemwijzer
+    Mahalanobis         29.2%      -47.2% (EDU)        +305%      -69%        0.044    0.523   29.0%     0.142     21.6%            -
+    L1 Bonus            15.5%      -27.1% (GLP)        -81%       +27%        0.583    0.387   37.9%     0.109     11.3%      Smartvote (old)
+    Hybrid               5.3%      -15.7% (GLP)        -55%       -12%        0.292    0.349   40.2%     0.106     10.1%         EUVox
+
+Table 2: Comparison of alternative distance functions based on various metrics defined in Section 5. The arrows indicate what is desired from
+the metric ((: Higher is better, ": Lower is better, |"|: Closer to 0 is better). The best value for each metric is highlighted in bold, and the
+worst value is underlined. The GIN metric is purely informational, with no suggestion that higher or lower values are better. Smartvote (old)
+refers to the Smartvote VAA until 2010. A detailed discussion about the counterintuitive CP-M and ASC value for Mahalanobis is provided
+in Appendix D.2.
+
+
+and may even distort the results. The user interface could in-            work discussion on the influence of VAAs on democratic in-
+stead promote a more selective approach to question selection             stitutions and their development is detailed in Appendix F.
+by each voter.
+                                                                          VAAs under Scrutiny.
+Distance to Party Mean (AC, AO).                                          Walgrave et al. [2009] show that the question selection has
+Voters often lack tools to assess a candidate’s honesty and               a substantial impact on the voting advice. Louwerse and
+determine if they have answered truthfully or exploited VAA               Rosema [2014] highlight the significant impact matching
+vulnerabilities to boost their visibility. One solution is to             methods (mainly L1 and L2) have on recommendations, us-
+display the distance between each candidate’s answers and                 ing StemWijzer as an example. We corroborate this finding
+their party’s mean answers. A large distance might prompt                 but crucially demonstrate that these matching methods be-
+voters to scrutinize the candidate’s responses more closely.              have differently in the presence of an adversary. Van der Lin-
+However, this metric would only be a proxy for honesty, as                den and Dufresne [2017] critically analyze current methods to
+some candidates may naturally deviate from their party’s po-              visualize aggregate results, and propose a technique based on
+sition [Schwarz et al., 2010].                                            learned dimensions to correct shortcomings. Finally, Isotalo
+                                                                          [2021] identifies several issues with Finnish VAAs, including
+Limiting the Number of Candidates (DIV).                                  lack of transparency, user interactivity, and problems in state-
+To prevent parties from disproportionately boosting their vis-            ment structure. Our work supports the effectiveness of their
+ibility by increasing candidate numbers, we propose limiting              suggested filtering method.
+the number of candidates from the same party that can be rec-
+ommended to any voter. This limit could be based on the sim-              Adversarial Robustness of Recommender Systems.
+ilarity score between the voter’s position and each party’s av-           Other applications have recognized the importance of ad-
+erage position. For instance, if two parties have the same sim-           versarial robustness [Hurley, 2011; Tang et al., 2019] and
+ilarity score with a given voter but one has more candidates,             the challenges of questionnaire design [Pasek and Krosnick,
+the top k recommendations should be evenly distributed be-                2010]. Ovaisi et al. [2022] provide a toolkit to compare the
+tween the parties, minimizing the risk of biased recommen-                robustness of learning-based recommender systems. Given
+dations arising from the diversification strategy.                        the much stricter requirements of recommender systems for
+                                                                          democracy (see Section 2), while our introduced metrics ap-
+Fair Answer Normalization (SS).                                           ply to all methods, we restrict our evaluation to non-learning-
+To avoid presenting varying similarity scores to voters from              based methods for now.
+different parties (as shown in Figure 6), we propose nor-
+malizing similarity scores relative to the top candidate for              8      Outlook
+each voter (who would always be considered a 100% match).
+While this would change the score’s meaning and might re-                 This study highlights critical vulnerabilities in voting ad-
+duce its overall usefulness, it would also eliminate bias.                vice applications (VAAs), providing empirical evidence that
+                                                                          malicious actors could pose a risk to democratic processes.
+                                                                          Crucially, many vulnerabilities also uncover the existence of
+7      Related Work                                                       strong biases in VAAs, even in the absence of adversarial en-
+VAAs emerged around 30 years ago and have quickly gained                  tities. We are convinced that VAAs are a highly desirable
+popularity since then. Garzia and Marschall [2012] provide                addition to the political landscape and believe that our pro-
+a comprehensive overview of existing VAAs, summarized in                  posed comparative metrics and mitigations can help guide fu-
+Table 3 in the Appendix. The voter data collected by VAAs                 ture VAA development toward more robust designs. As VAAs
+are a treasure trove, for political, social, and computer scien-          continue to evolve in the era of AI, future work should also
+tists alike. Etter et al. [2014] for example, extract valuable            aspire to extend our results to other types of political recom-
+data on the Swiss political landscape. An extended related                mender systems that fall outside our formalism.
+Ethical Statement                                                  Vincent Etter, Julien Herzen, Matthias Grossglauser, and
+                                                                     Patrick Thiran. Mining democracy. In Proceedings of the
+The dataset has been collected and anonymized by Poli-               second ACM conference on Online social networks, pages
+tools in accordance with the new Swiss Federal Act on Data           1–12, 2014.
+Protection (nFADP), the Telecommunications Act (TCA),
+and other applicable data protection regulations [Politools,       Diego Garzia and Stefan Marschall. Voting advice applica-
+2024b]. Further, we strictly follow the platform’s terms of          tions under review: the state of research. International
+use for data. As such, we do not publish results that may            Journal of Electronic Governance, 5(3-4):203–222, 2012.
+be attributed to specific individuals. In accordance with the      Diego Garzia and Stefan Marschall. Matching Voters With
+terms of use for research, the dataset is kept private, and we       Parties and Candidates. Voting Advice Applications in a
+adhere to established best practices for dealing with sensitive      Comparative Perspective. ECPR Press, 01 2014.
+data. While the dataset cannot be made accessible directly,
+it might be made available to researchers by Politools upon        Diego Garzia and Stefan Marschall. Voting advice applica-
+request [Politools, 2024a]. Given access to the data, all nu-        tions. Oxford University Press, 2019.
+merical results and figures can be easily reproduced using the
+                                                                   Micha Germann and Kostas Gemenis. Getting out the vote
+code in the supplementary material.
+                                                                    with voting advice applications. Political Communication,
+   In the absence of established Ethics guidelines, we fol-         36(1):149–170, 2019.
+low Menlo’s report on Computer Science research princi-
+ples [Kenneally and Dittrich, 2012]. Publicly disclosing all       Neil J Hurley. Robustness of recommender systems. In Pro-
+found vulnerabilities presents a risk, as various actors might       ceedings of the fifth ACM conference on Recommender sys-
+benefit from exploiting them. We mitigate these risks by pub-        tems, pages 9–10, 2011.
+lishing our results after Switzerland’s national election, leav-   Veikko Isotalo. Improving candidate-based voting advice ap-
+ing enough time to implement potential mitigation for the            plication design: The case of finland. Informaatiotutkimus,
+2027 elections. To the best of our knowledge, no countries           40(3):85–109, 2021.
+with popular VAAs that could be affected by our research will
+hold national elections in the months following the publica-       Dahyeon Jeong, Shilpa Aggarwal, Jonathan Robinson,
+tion of this work. Thus, we believe that this is the right time      Naresh Kumar, Alan Spearot, and David Sungho Park.
+to shed light on these vulnerabilities. Overall, we believe that     Exhaustive or exhausting? evidence on respondent fa-
+despite some inherent risks, this work will have a clear net         tigue in long surveys. Journal of Development Economics,
+positive social impact by providing tools to enhance the ro-         161:102992, 2023.
+bustness of VAAs, and consequently, democracies.
+                                                                   Erin Kenneally and David Dittrich. The menlo report: Ethical
+                                                                     principles guiding information and communication tech-
+Acknowledgments                                                      nology research. Available at SSRN 2445102, 2012.
+We thank Michael Erne and Daniel Schwarz from Politools            Scott Kirkpatrick, C Daniel Gelatt Jr, and Mario P Vec-
+for the uncomplicated and fruitful collaboration, as well as         chi. Optimization by simulated annealing. science,
+their helpful feedback. Our gratitude extends to Roger Ger-          220(4598):671–680, 1983.
+mann, Douglas Orsini-Rosenberg, Leon Plath, and Gina Stof-         Jan Kleinnijenhuis and Andre Krouwel. Dimensionality of
+fel, whose Bachelor and Master thesis contributed to our un-         the european issue space. In Political Representation,
+derstanding of VAAs and the success of this project. Finally,        pages 99–116. Routledge, 2016.
+we thank Judith Beestermöller and Robin Fritsch for their
+valuable input and guidance.                                       Yakov Kuzyakov, JK Friedel, and Karl Stahr. Review of
+                                                                     mechanisms and quantification of priming effects. Soil Bi-
+                                                                     ology and Biochemistry, 32(11-12):1485–1498, 2000.
+References
+                                                                   Andreas Ladner and Joëlle Pianzola. Do voting advice appli-
+R Michael Alvarez, Ines Levin, Peter Mair, and Alexander
+                                                                     cations have an effect on electoral participation and voter
+  Trechsel. Party preferences in the digital age: The impact
+                                                                     turnout? evidence from the 2007 swiss federal elections.
+  of voting advice applications. Party Politics, 20(2):227–
+                                                                     In Electronic Participation: Second IFIP WG 8.5 Inter-
+  236, 2014.
+                                                                     national Conference, ePart 2010, Lausanne, Switzerland,
+R Michael Alvarez, Ines Levin, Alexander H Trechsel, and             August 29–September 2, 2010. Proceedings 2, pages 211–
+  Kristjan Vassil. Voting advice applications: How useful            224. Springer, 2010.
+  and for whom? Journal of Information Technology & Pol-
+                                                                   Andreas Ladner, Jan Fivaz, and Joëlle Pianzola. Vot-
+  itics, 11(1):82–101, 2014.
+                                                                     ing advice applications and party choice: evidence from
+Solomon E Asch. Forming impressions of personality. The              smartvote users in switzerland. International Journal of
+  journal of abnormal and social psychology, 41(3):258,              Electronic Governance, 5(3-4):367–387, 2012.
+  1946.
+                                                                   Andreas Ladner. Do vaas encourage issue voting and promis-
+Katherine A Batterton and Kimberly N Hale. The likert scale          sory representation? evidence from the swiss smartvote.
+  what it is and how to use it. Phalanx, 50(2):32–39, 2017.          Policy & Internet, 8(4):412–430, 2016.
+Tom Louwerse and Martin Rosema. The design effects of
+  voting advice applications: Comparing methods of calcu-
+  lating matches. Acta politica, 49:286–312, 2014.
+Fernando Mendez. Matching voters with political parties and
+  candidates: an empirical test of four algorithms. Interna-
+  tional Journal of Electronic Governance, 5(3-4):264–278,
+  2012.
+Fernando Mendez. Modeling proximity and directional de-
+  cisional logic: What can we learn from applying statisti-
+  cal learning techniques to vaa-generated data? Journal of
+  Elections, Public Opinion and Parties, 27(1):31–55, 2017.
+Simon Munzert and Sebastian Ramirez-Ruiz. Meta-analysis
+  of the effects of voting advice applications. Political Com-
+  munication, 38(6):691–706, 2021.
+Zohreh Ovaisi, Shelby Heinecke, Jia Li, Yongfeng Zhang,
+  Elena Zheleva, and Caiming Xiong. Rgrecsys: A toolkit
+  for robustness evaluation of recommender systems. In Pro-
+  ceedings of the Fifteenth ACM International Conference on
+  Web Search and Data Mining, pages 1597–1600, 2022.
+Josh Pasek and Jon A Krosnick. Optimizing survey question-
+  naire design in political science: Insights from psychology.
+  The Oxford Handbook of American Elections and Political
+  Behavior, 2010.
+Politools. Smartvote. smartvote.ch, 2024.
+Politools. Terms of use and data protection. https://www.
+  smartvote.ch/en/wiki/anb-privacy, 2024.
+Daniel Schwarz, Lisa Schädel, and Andreas Ladner. Pre-
+  election positions and voting behaviour in parliament:
+  Consistency among swiss mps. Swiss Political Science Re-
+  view, 16(3):533–564, 2010.
+Jinhui Tang, Xiaoyu Du, Xiangnan He, Fajie Yuan, Qi Tian,
+   and Tat-Seng Chua. Adversarial training towards robust
+   multimedia recommender system. IEEE Transactions on
+   Knowledge and Data Engineering, 32(5):855–867, 2019.
+Luis Terán. Voting advice applications. Dynamic Profiles
+  for Voting Advice Applications: An Implementation for the
+  2017 Ecuador National Elections, pages 15–26, 2020.
+Benjamin Thirey and Randal Hickman. Distribution of eu-
+  clidean distances between randomly distributed gaussian
+  points in n-space. arXiv preprint arXiv:1508.02238, 2015.
+Clifton Van der Linden and Yannick Dufresne. The curse
+  of dimensionality in voting advice applications: reliabil-
+  ity and validity in algorithm design. Journal of Elections,
+  Public Opinion and Parties, 27(1):9–30, 2017.
+Stefaan Walgrave, Michiel Nuytemans, and Koen Pepermans.
+  Voting aid applications and the effect of statement selec-
+  tion. West European Politics, 32(6):1161–1180, 2009.
+A     Smartvote and Swiss Politics                                    Party                            Code Vote Share        Vote Share
+                                                                                                                              (adjusted)
+A.1    Swiss National Elections
+                                                                      Swiss People’s Party             SVP       27.9%          27.1%
+The Swiss parliament is composed of two chambers: the Na-             Social Democratic Party          SP        18.2%          19.1%
+tional Council and the Council of States. Together they hold          The Centre                       Centre    14.3%          14.7%
+the legislative power in Switzerland, meaning they are re-            FDP. The Liberals                FDP       14.1%          13.8%
+sponsible for passing laws and approving the federal budget.          Green Party                      Green      9.8%          10.4%
+The National Council is constituted of 200 seats, which are           Green Liberal Party              GLP        7.6%           8.0%
+assigned proportionally to the states’ populations (approxi-          Evangelical People’s Party       EVP        2.0%           2.0%
+mately). This proportional distribution of seats to the states        Federal Democratic Union         EDU        1.2%           1.1%
+ensures that each seat in the National Council represents ap-         Party of Labour                  PdA        0.7%           0.4%
+proximately the same number of voters.                                Lega dei Ticinesi                Lega       0.6%           0.2%
+   The distribution of seats in the National Council following        Geneva Citizens Movement         MCG        0.5%           0.3%
+the 2023 elections is illustrated in Figure 8. The largest party
+is the Swiss People’s Party (SVP), which holds 31% of the            Table 4: Overview of the major parties in the 2023 Swiss National
+                                                                     Council elections. The table displays the party names, their codes,
+seats, followed by the Social Democratic Party of Switzerland
+                                                                     their vote shares as a percentage of the total national vote, and their
+(SP) with 20.5%. Parliamentary elections are held every four         adjusted vote shares (calculated by excluding votes cast for candi-
+years, and the Swiss parliament is elected on a cantonal ba-         dates not registered in Smartvote). Tiny parties and candidates with-
+sis. This means voters can only cast votes for candidates who        out party affiliations are excluded, explaining why percentages may
+stand for election in the same state as their place of residence.    not add up to 100%.
+The number of candidates a voter can vote for is determined
+by the number of seats allocated to the state of residence of
+the voter in the National Council.                                   collection of question proposals from official party or govern-
+   In most states, candidates are required to form a coalition,      ment websites, media analysis, and public submissions. Over
+known as a candidate list, to be eligible to stand for election.     1,500 proposals were gathered for the 2019 Swiss federal
+Voters are then presented with the option of either voting for a     elections. The Smartvote team independently refines these
+predefined list of candidates or composing their custom list of      proposals into a 45 to 75-question survey, ensuring clarity,
+individual candidates. The number of candidates on a list cor-       neutrality, and relevance to current and future political discus-
+responds to the number of seats available in the state. Further-     sions. Finally, the draft questionnaire is quality-checked by
+more, voters have the option to give more weight to specific         experts from the scientific community and selected Smartvote
+candidates by placing a candidate’s name twice on the list,          users.
+effectively giving them two votes. The political landscape of           The final questionnaire consists of 75 questions
+Switzerland’s federal government comprises 11 major parties          split into three question types: 60 policy questions
+whose name, abbreviation, current number of seats, and vote          with At = {0, 25, 75, 100}, 7 value questions with
+share in the 2023 National Council elections are summarized          At = {0, 17, 33, 50, 67, 83, 100}, and 8 budget questions
+in Table 4.                                                          with At = {0, 25, 50, 75, 100}. Policy questions capture
+                                                                     positions on specific political issues (e.g., Do you support
+                                                                     an increase in the retirement age?). Value questions capture
+                                                                     agreement or disagreement with broad political principles
+                                                                     (e.g., What is your position on the following statement:
+                                                                     “In the long term, everyone benefits from a free market
+                                                                     economy.”?). Budget questions capture how the spending on
+                                                                     key federal budget items should be adjusted (e.g., Should the
+                                                                     federal government spend more or less in the area of social
+                                                                     services?).
+                                                                        Voters also have the option to complete a rapid version of
+                                                                     the questionnaire, which consists of the 30 policy questions
+                                                                     deemed most important by the questionnaire designers, as an
+                                                                     alternative to the full 75-question deluxe version.
+
+                                                                     A.3      Smartvote Usage
+Figure 8: Seat distribution of the National Council after the 2023
+                                                                     Before each National Council election cycle, candidates are
+elections.
+                                                                     invited to participate by filling out a detailed questionnaire.
+                                                                     This invitation process typically starts a few months before
+                                                                     the election, allowing candidates enough time to complete
+A.2    Questionnaire Design                                          their profiles. All candidates are required to answer all ques-
+The questionnaire is the core element for capturing political        tions in the questionnaire. Candidates then have time to com-
+positions and is newly created for each election. The creation       plete their profiles until the questionnaire is made public to
+process starts months before the elections and involves the          the voters. After the publications candidates are generally not
+ VAA Name                            Region                Type           |At |                  Wt                      Distance Metric
+
+ Smartvote                                                            4, 5, 7              {0, 0.5, 1, 2}                     L2
+ Wahl-O-Mat                                                       b        3                  {0, 1, 2}                        L1
+ StemWijzer (VoteMatch)                                           b        3                  {0, 1, 2}                 Agreement Count
+ Wahlkabine                                                       b        2         {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}     Agreement Count
+ VoteCompass                                                      b        5                    {0, 1}                         L1
+                                                                                                            8
+ Volkskabin, Politikkabine                                        b        2               {0, 0.5, 1, 2}             Agreement Count (adj.)
+ Manobalsas                                                       b        5                    {0, 1}                    L2 (low-dim.)
+ EU&I (Euandi)                                                    b        5                {0, 0.5, 1, 2}                     L1
+ EUVox 2014                                                       b        3                    {0, 1}                       Hybrid
+ iSideWith                                                                 2          5 weights (undisclosed)         Agreement Count (adj.)
+
+
+
+Table 3: The table includes the name, region (flags), type of recommendation ( : candidates,  : lists, b : parties), number of answer
+options, question weights, and distance metric used by some of the most popular VAAs globally.
+
+
+allowed to adjust their answers anymore. In individual, justi-        best efforts, we encountered certain limitations. A small num-
+fied exceptional cases, however, corrections have been made           ber of candidates deleted their profiles after the publication
+after publication in the case of clear errors.                        of Smartvote, which meant that recommendations involving
+   Once the candidate profiles are finalized, Smartvote is            them were not fully reproducible. Additionally, 17 candidates
+made available to the public. Voters can then access the plat-        were allowed to correct their responses after the publication
+form, fill out the questionnaire, and receive voting advice           due to clear errors, making the recommendations involving
+based on the candidate’s responses. Additionally, voters have         them before the corrections not fully reproducible.
+the option to provide metadata such as demographic details,
+political preferences, and their interest in politics before com-     B        Dataset (continued)
+pleting the questionnaire. Voters are free to use Smartvote as
+                                                                      B.1         Preprocessing & Cleaning
+often as they like until the election date, allowing them to
+make informed decisions based on the most up-to-date infor-           To enhance the quality of our data and prepare it for analysis,
+mation available. It is important to note that the voters using       we conducted thorough preprocessing on both the voter and
+Smartvote represent a biased sample of the Swiss voting pop-          candidate datasets from both elections. For the voter datasets,
+ulation. Our analysis indicates that Smartvote users are gen-         we first addressed corrupt entries by identifying and removing
+erally younger, more likely to reside in urban areas and have         those lacking essential information, such as the election ID.
+a preference for left-leaning parties compared to the overall         To ensure the reliability of our analysis, we excluded recom-
+voting population. This bias may influence the results and            mendations where voters answered fewer than 15 questions,
+should be considered when interpreting the data.                      which accounted for less than 1.3% of the dataset. Further re-
+                                                                      finement involved filtering out recommendations both before
+A.4    Smartvote UI                                                   the questionnaire went live and after the election date. This
+Figure 9a illustrates how candidate recommendations are dis-          step aimed to exclude recommendations intended for testing
+played on Smartvote. It shows how the top-ranked candidates           purposes and those no longer relevant to voting decisions. To
+are prominently featured based on the number of seats avail-          streamline our dataset, we implemented a deduplication pro-
+able in the state. This also demonstrates our definition of can-      cess. We retained only the most recent recommendations with
+didate visibility, determined by the proportion of voters for         the highest number of answered questions for each unique
+whom a candidate is prominently displayed. Similarly, Fig-            voter ID, ensuring data consistency. Lastly, to eliminate rec-
+ure 9b illustrates how list recommendations are presented to          ommendations resulting from random clicking behavior, we
+voters, effectively demonstrating the concept of list visibility,     filtered out those with more than 14 consecutive identical an-
+which is defined as the proportion of voters for whom a given         swers, which accounted for about 0.1% of the dataset. As for
+list is prominently displayed.                                        the candidate datasets, our preprocessing primarily involved
+                                                                      filtering out candidates who did not participate in Smartvote
+A.5    Limitations                                                    as the dataset included all candidates up for election. As part
+To validate our implementation of the matching algorithm              of the preprocessing, we ensured that all variables used in
+used by Smartvote and to ensure the integrity of the dataset,         our analysis contained valid and sensible values for all voters
+we tried to reproduce the recommendations from the 2023               and candidates. Additionally, we created a consolidated party
+Smartvote elections dataset, representing the exact recom-            variable by merging the youth wings of political parties with
+mendations voters were given on the platform. Despite our             their respective main parties, consistent with the preferred
+        (a) Smartvote UI for candidate recommendations.                                 (b) Smartvote UI for list recommendations.
+
+Figure 9: Screenshots of candidate and list recommendations on Smartvote for a voter in the state of Zug. Candidates and lists are ranked by
+their similarity score in descending order. Given that the state of Zug has three seats available in the National Council (which is also the list
+size for that state), the top three candidates and the first list are prominently displayed. This example also highlights how Smartvote resolves
+ties between candidates with identical similarity scores using their last names.
+
+
+party variable provided by users. For instance, JUSO (Young                the data, which are crucial for evaluating and improving the
+Socialists) was merged with SP (Social Democratic Party),                  matching algorithm.
+and JSVP (Young Swiss People’s Party) was combined with                       One of the key analyses involves visualizing the density
+SVP (Swiss People’s Party). Table 5 provides an overview of                distributions of voters and candidates in a two-dimensional
+how youth parties were mapped to the main parties.                         political space defined by the two first principal components
+                                                                           of the candidate answer profiles. These dimensions can be
+ Youth Party                         Main Party                            roughly interpreted as Left-Right and Conservative-Liberal.
+ JUSO                                SP                                    The first plot (Figure 10a) depicts the voter density for the
+ JG                                  Green                                 2023 election, showing how voters are distributed across this
+ JGLP                                GLP                                   political landscape. The second plot (Figure 10b) illustrates
+ JEVP                                EVP                                   the candidate density, highlighting where candidates position
+ JM                                  Centre                                themselves in the same political space. Comparing these plots
+ JFS                                 FDP                                   reveals the alignment or gaps between voter preferences and
+ JSVP                                SVP                                   candidate positions, providing valuable insights into the ef-
+                                                                           fectiveness of the VAA’s recommendations.
+Table 5: Party combinations showing how youth parties are com-
+bined into main parties.                                                      Additionally, Figure 11 shows the cumulative explained
+                                                                           variance of answers as a function of the number of princi-
+                                                                           pal components, for both voters and candidates. From this
+B.2     Exploratory Data Analysis                                          plot, we observe that while the first three principal compo-
+                                                                           nents capture more than 50% of the variance in the candidate
+                                                                           data, they only capture around 30% of the variance in the
+ Dataset # Rec.            Nv             Nc        Lists    Nq            voter data. This suggests that candidate responses are more
+ 2019      427,572         389,881        3,926     508      75            structured and consistent, likely due to alignment with party
+ 2023      1,662,683       485,838        4,983     623      75            platforms, whereas voters’ responses are more varied, reflect-
+                                                                           ing a broader range of opinions and requiring more principal
+Table 6: Dataset overview for the 2019 and 2023 National Coun-             components to capture the same variance. This observation
+cil elections. The table includes the number of voting recommenda-         aligns with findings by Kleinnijenhuis and Krouwel [2016],
+tions before cleaning (# Rec.), the number of recommendations after        who noted that voters’ policy preferences are not strongly
+cleaning (taken as the number of unique voters Nv ), the number of         structured and cannot be easily captured by low-dimensional
+participating candidates (Nc ), the number of lists, and the number        spatial models. We also visualize the positions of individual
+of questions in each dataset (Nq ).                                        candidates in a two-dimensional space. Figure 12 displays
+                                                                           the PCA plot of the candidates’ positions, colored by their re-
+   To gain a deeper understanding of the datasets and provide              spective parties. This visualization highlights the distribution
+intuition to the reader, we performed an exploratory data anal-            and clustering of candidates along the primary axes of polit-
+ysis built in large part around a Principal Component Analy-               ical orientation, which can be interpreted as Left-Right and
+sis (PCA) on the voter and candidate answer profiles. These                Conservative-Liberal [Garzia and Marschall, 2014; Politools,
+analyses help to uncover underlying patterns and structures in             2024a]. From the PCA plot, we can observe distinct cluster-
+                 (a) Voters’ answer distribution.                                        (b) Candidates’ answer distribution.
+
+Figure 10: Density plots of voters and candidates in the 2D political space for the 2023 election, showing the distribution of their answers
+along the two principal components dimensions of the candidate answers. These dimensions can be interpreted as economic Left-Right and
+social Conservative-Liberal [Garzia and Marschall, 2014; Politools, 2024a].
+
+
+ing patterns among different parties. For instance, the SP and
+PdA parties, represented in red, are predominantly situated in
+the left-wing quadrant. Conversely, the SVP, shown in green,
+occupies the right-wing, conservative area of the plot. The
+
+
+
+
+Figure 11: PCA explained variance for voter and candidate answer        Figure 12: PCA plot of candidate positions by party in the 2023
+profiles in the 2023 dataset. The plot shows the cumulative ex-         dataset, highlighting candidate clustering and each party’s political
+plained variance as a function of the number of principal compo-        orientation.
+nents for both voters and candidates.
+
+FDP party, colored in blue, is more dispersed but generally             supporting the fact that QC can have a non-negligible impact
+aligns with liberal positions. This differentiation underscores         on recommendations. We now expose three additional vul-
+the varying political ideologies and strategies of each party.          nerabilities, namely LC, QO and TB.
+                                                                        List Centralization (LC)
+C    Vulnerabilities (continued)                                        This danger pertains to the safety of the list recommendation
+Supplementary Material                                                  functionality of VAAs. We show that there exists a bias to-
+As additional material for the AO vulnerability, Table 7 pro-           ward favoring lists that group many candidates with similar
+vides the visibility of the crafted candidates for all states and       answer vectors compared to lists with more diversity. Fig-
+different optimization strategies. Concerning the MM vul-               ure 13 quantitatively demonstrates the impact of this bias for
+nerability, Table 8 provided detailed visibility measurement            some states. If parties are limited in their number of lists,
+for each party using several matching methods. Lastly, Fig-             this creates a trade-off with the diversification strategy (see
+ure 15 displays the correlation between the voters’ answers,            Section 4.1 in the main paper). However, in Smartvote, par-
+ State (canton)                     Nv           Nc           Seats       Highest Visibility    Visibility Optimized      Visibility Optimized
+                                                                                                      1% Data                  100% Data
+ Zurich                          104,826         1,029           36            24.77%                   51.70%                  53.43%
+ Bern                             89,378           685           24            29.87%                   50.66%                  53.71%
+ Aargau                           47,442           568           16            20.44%                   51.29%                  53.99%
+ Lucerne                          32,378           329            9            31.12%                   49.70%                  53.66%
+ St. Gallen                       27,421           288           12            32.19%                   52.55%                  61.71%
+ Vaud                             25,591           337           19            37.66%                   54.51%                  64.92%
+ Valais                           20,586           199            8            25.70%                   55.27%                  61.82%
+ Fribourg                         18,982           137            7            35.07%                   59.83%                  63.84%
+ Solothurn                        16,364           163            6            19.29%                   52.71%                  59.84%
+ Basel-Landschaft                 15,872           163            7            20.60%                   51.08%                  58.05%
+ Thurgau                          14,644           187            6            16.58%                   44.52%                  54.73%
+ Basel-Stadt                      13,233           107            4            18.07%                   46.91%                  57.10%
+ Graubünden                      10,666           109            5            36.27%                   55.93%                  61.92%
+ Geneva                            9,892           217           12            35.05%                   43.13%                  63.92%
+ Schwyz                            8,593            98            4            25.54%                   44.13%                  58.01%
+ Zug                               7,287            84            3            22.73%                   34.49%                  55.11%
+ Neuchâtel                        6,689            56            4            46.17%                   32.74%                  70.82%
+ Ticino                            5,023           144            8            29.94%                   25.22%                  58.21%
+ Schaffhausen                      3,257            36            2            33.93%                   41.63%                  64.05%
+ Jura                              3,039            34            2            16.75%                   33.30%                  60.09%
+ Appenzell Ausserrhoden            1,263             2            1            79.41%                   53.13%                  96.75%
+ Glarus                              892             3            1            51.79%                   21.19%                  76.01%
+ Nidwalden                           806             3            1            72.58%                   51.36%                  88.46%
+ Uri                                 699             2            1            72.53%                   66.95%                  95.42%
+ Obwalden                            662             2            1            75.83%                   77.49%                  96.22%
+ Appenzell Innerrhoden               353             1            1            100.0%                   79.89%                  100.0%
+
+Table 7: List of states along with their corresponding number of unique voters (Nv ), registered candidates (Nc ), and the number of available
+seats for the 2023 National Council elections. The highest visibility denotes the most visible candidate in the dataset. The last two columns
+show the visibility of candidates generated using the simulated annealing method [Kirkpatrick et al., 1983] with the first 1% of the data and
+with 100% of the data, respectively. The values in bold correspond to the red dots shown in Figure 1 of the main paper.
+
+
+ Distance Metric               SP        Green        PdA         GLP       EVP       Centre   FDP        MCG      Lega       SVP        EDU
+
+ Vote Share                  18.2%        9.8%         0.7%       7.6%     2.0%       14.3%    14.1%     0.5%     0.6%        27.9%      1.2%
+ Preferred Party             27.60%      14.28%       0.74%      18.27%    1.92%      11.01%   13.52%    0.02%    0.07%       9.79%      0.57%
+
+ L2                          14.79%      12.29%       0.69%      15.07%    8.49%      21.88%   7.97%     0.14%    0.06%       6.43%      2.85%
+ L1                          16.73%      14.21%       0.83%      14.2%     7.47%      19.69%   7.86%     0.16%    0.06%       7.27%      2.78%
+ Agreement Count             18.84%      16.54%       0.95%      12.97%    6.07%      16.1%    7.79%     0.19%    0.06%       8.32%      2.72%
+ Angular                     19.38%      17.29%       1.2%       11.92%    6.46%      15.83%   8.2%      0.19%    0.07%       8.26%      2.7%
+ Mahalanobis                 23.17%      23.26%       0.58%      15.75%    5.4%       14.7%    5.37%     0.05%    0.04%       4.38%      1.43%
+ L1 Bonus                    21.78%      20.09%       1.17%       9.9%     4.87%      13.06%   8.08%     0.21%    0.07%       8.97%      2.56%
+ Hybrid                      19.74%      18.25%       1.12%      11.44%    6.0%       15.82%   8.07%     0.19%    0.07%       8.16%      2.62%
+
+Table 8: Party visibilities when using different matching methods. The first two rows serve as references: the first row displays the parties’
+vote shares in the 2023 Swiss National Council elections, while the second row shows the distribution of preferred parties as indicated by
+voters. The cell colors indicate deviations from these preferences: higher values are green and lower values are red, with the saturation
+representing the magnitude of the deviation.
+
+
+ties are allowed to create many lists, making both strategies                 Tie-breaking (TB)
+exploitable simultaneously.                                                   With the extensive number of voters and candidates using
+                                                                              Smartvote, and considering that some voters answer only a
+                                                                          ten skipped or answered less thoughtfully, as illustrated in
+                                                                          Figure 16. These effects could easily be exploited by an ad-
+                                                                          versarial platform designer. To quantitatively understand the
+                                                                          potential impact of such a strategy, we perform the follow-
+                                                                          ing analysis. First, for each qt ∈ Q, we compute the frac-
+                                                                          tion ft of answer vectors for which qt was answered (the dots
+                                                                          on Figure 16) and we fit a function f (t) to these values (the
+                                                                          line on Figure 16). Then, for each party p, we rearranged all
+                                                                          complete answer vectors (i.e., the answer vectors of voters
+                                                                          in V c = {vi | wi,t ̸= 0, ∀t}) following the order shown in
+                                                                          Figure 7. Let vip be the answer vector of voter vi rearranged
+                                                                          according to p’s favorable ordering. Then, for each vi ∈ V c ,
+                                                                          we drop with probability 1 − f (t) the answer to question t in
+                                                                          vip (i.e., by setting wi,t = 0). Finally, we compare the visi-
+Figure 13: Relationship between the spread and visibility of lists in     bility gain of each party with respect to the party’s popularity
+the states of Zurich, Bern, and St. Gallen. The list spread is defined    resulting from the original ordering, only considering voters
+as the average (over questions) of the answers’ standard deviation        in V c . The results of this analysis are displayed in Figure 17.
+(across the candidates on the list).
+
+
+
+
+Figure 14: Distribution of relative changes in the visibility of candi-
+dates when switching from a fair proportional distribution of ties to     Figure 15: Absolute correlation between question responses in the
+Smartvote’s tie-breaking method. The x-axis represents the relative       voter dataset. The heatmap reveals clusters of highly correlated
+visibility change, while the logarithmic y-axis indicates the fraction    questions (≈ 0.8), suggesting that topics covered by these ques-
+of candidates affected.                                                   tions are implicitly weighted more heavily for the recommendation
+                                                                          calculation. This provides an advantage to parties that are typically
+                                                                          favored by these questions.
+limited number of questions, multiple candidates may end
+up at the same distance from a given voter. In such cases,
+Smartvote resolves ties by using the alphabetical order of the            D     Measuring Robustness (continued)
+candidates’ last names. This approach is problematic, as it
+systematically favors candidates with last names starting with            D.1    Party Bias (BIA)
+letters from the beginning of the alphabet over those with last           To quantify the bias of a distance function, we evaluate rel-
+names starting with letters from the end. Figure 14 shows                 ative changes in party visibilities when using this distance
+how the visibility of candidates differs between a fair distribu-         function compared to the median party visibility across all
+tion of ties and the Smartvote tie-breaking, revealing that cer-          other evaluated distance functions. BIA1 represents the av-
+tain candidates are significantly affected by this tie-breaking           erage of the absolute values of these relative changes in vis-
+methodology.                                                              ibility for the 8 largest parties, ensuring that smaller parties’
+                                                                          noisy relative changes do not disproportionally affect the met-
+Question Ordering (QO)                                                    ric. BIA2 captures the maximum absolute value of relative
+The order in which questions are presented can introduce bi-              change across the 8 largest parties, highlighting the most sig-
+ases such as the primacy effect [Asch, 1946], the priming ef-             nificant deviation.
+fect [Kuzyakov et al., 2000], and survey fatigue [Jeong et al.,              We define the visibility of a party p when using a specific
+2023]. The primacy effect indicates that early questions tend             distance function d as ν(p | P, d). Let D represent the set
+to be given more weight, while the priming effect suggests                of all evaluated distance functions, which includes L2, L1,
+that responses may vary depending on the order of questions.              Agreement Count, Angular, Mahalanobis, L1 Bonus, and Hy-
+Finally, survey fatigue indicates that later questions are of-            brid. Let P8 represent the set of the 8 largest parties, which
+                                                                         user base is inherently biased, with only about 85% of can-
+                                                                         didates participating in Smartvote and only around 20% of
+                                                                         eligible voters using the platform, not all of whom disclosed
+                                                                         their preferred party. A key indicator of this bias is the notable
+                                                                         difference between election vote shares and the distribution of
+                                                                         preferred parties among Smartvote users.
+
+                                                                         D.2     Answer Calibration Metrics (ASC, CP)
+                                                                         To assess the vulnerability of each matching method to an an-
+                                                                         swer calibration strategy, we employed the Answer Strength
+                                                                         Correlation (ASC) and Calibration Potential (CP) metrics.
+                                                                         These metrics generally align, meaning that if one suggests a
+                                                                         matching method is vulnerable, the other typically indicates
+Figure 16: Relationship between response frequency and question
+                                                                         the same. However, a notable exception is the Mahalanobis
+position in the deluxe questionnaire (all 75 questions). The black       matching method. As shown in Table 2, the ASC for Ma-
+line represents an Ordinary Least Squares (OLS) trend line with          halanobis is very low at 0.044, indicating a weak correlation
+equation f (t) = 96% − t · 0.12%, where t is the index of the ques-      between candidates’ answer strengths and their expectation-
+tion. The plot shows a pattern where later questions get answered        normalized visibilities. This suggests that an answer calibra-
+less frequently.                                                         tion strategy would likely be ineffective. In contrast, the CP
+                                                                         metric reveals that parties could increase their visibility by
+                                                                         over 300% when all candidates used the moderate answering
+                                                                         strategy. Although this result may initially appear counterin-
+                                                                         tuitive, further analysis offers an explanation: When analyz-
+                                                                         ing the ASC in scenarios where a party’s candidates adopt a
+                                                                         moderate answering strategy, the correlation becomes quite
+                                                                         negative, with values dropping below -0.6, varying by party.
+                                                                         We hypothesize that this is due to the alteration of the pre-
+                                                                         cision matrix (inverse covariance matrix), which plays a cru-
+                                                                         cial role in calculating the Mahalanobis distance. This alter-
+                                                                         ation leads to candidates using the neutral answering strategy
+                                                                         receiving a significantly increased number of recommenda-
+                                                                         tions.
+
+                                                                         D.3     Distance Metrics
+Figure 17: Relative visibility change for each political party result-   L1
+ing from ordering the questionnaire according to the most favorable
+questions for each party. The bars represent the average visibility      The L1 distance, also known as the City-Block or Manhattan
+change across 10 randomized trials, with error bars indicating the       distance (see Figure 18b), is defined as the sum of the abso-
+standard deviation. The figure highlights how certain parties, like      lute differences across all dimensions, making it a simple and
+EVP, could potentially benefit from favorable question orderings.        intuitive metric:
+                                                                                                           Nq
+                                                                                                           X
+includes SP, Green, GLP, EVP, Centre, FDP, SVP, and EDU.                           dL1 (vi , wi , cj ) =         wi,t · |vi,t − cj,t |.
+BIA1 and BIA2 are then defined as follows:                                                                 t=1
+
+                                                                         Agreement Count
+     Median(p | d) = med{ν(p | P, d′ ) | d′ ∈ D \ {d}},
+                                                                         The Agreement Count metric simply counts the agreements
+                      ν(p | P, d) − Median(p | d)                        between voter and candidate responses. To convert it into a
+        ∆rel (p, d) =                             ,
+                             Median(p | d)                               distance metric, we take the negative value of the count and
+              pmax = arg max |∆rel (p, d)| ,                             incorporate voter weights.
+                             p∈P8
+                                                                                                             Nq
+                          1 X                                                                                X
+           BIA1(d) =           |∆rel (p, d)| ,                                       dAC (vi , wi , cj ) =         −wi,t · δvi,t cj,t
+                         |P8 |
+                               p∈P8                                                                          t=1
+           BIA2(d) = ∆rel (pmax , d).
+                                                                         where
+Table 8 provides a detailed overview of how party visibilities
+                                                                                                     
+                                                                                                         1   if x = y,
+change based on the matching methods used for calculating                                    δxy =
+                                                                                                         0   otherwise.
+recommendations. When comparing these party visibilities
+with the references, it’s important to note that the Smartvote           A bias can be added to make the distance positive.
+              (a) L2                              (b) L1                            (c) Angular                           (d) Mahalanobis
+
+Figure 18: Visualizations of the L2, L1, Angular, and Mahalanobis distance metrics in a simplified answer space with two questions. The
+contour plot illustrates how the distance of a candidate behaves based on their relative position to the voter, who is represented as p. For the
+Mahalanobis distance, the positions of the candidates used for calculating the precision matrix are additionally visualized as small gray dots.
+
+
+Angular                                                                             q(c)
+                                                                                               0            25          50         75         100
+The Angular distance measures the angle between the                         q(v)
+dimension-weighted voter and candidate answer vectors.                      0                  0            125        150         175        200
+This metric captures the directional similarity between the                 25                125            75        125         150        175
+voter’s and candidate’s responses, putting less emphasis on                 50                150           125        100         125        150
+the magnitude of their deviation from the neutral point in                  75                175           150        125          75        125
+comparison to other distance metrics. Assuming that the neu-                100               200           175        150         125         0
+tral response vector 50·1Nq serves as the origin of the answer
+space, it is defined as                                                   Table 9: The L1 Bonus distance matrix used by Smartvote until
+                                                                          2010. The table shows how the distance between a voter and can-
+                                          
+                                               ṽi⊤ c̃j
+                                                                         didate is determined for all pairs of voter q(v) and candidate q(c)
+        dAngular (vi , wi , cj ) = arccos                     ,           responses to a question with five options.
+                                            ∥ṽi ∥ · ∥c̃j ∥
+
+where                                                                     L1 Bonus
+                                                                          Distance matrices offer an alternative approach to defining
+      ṽi = wi ⊙ (vi − 50),          c̃j = wi ⊙ (cj − 50).                distances by specifying the distance between every possible
+                                                                          pair of responses in a matrix format. Until 2010, Smartvote
+Here, ⊙ denotes element-wise multiplication. See Figure 18c
+                                                                          utilized a modified version of the L1 distance, known as L1
+for a visualization.
+                                                                          with Bonus, which employed such a distance matrix for cal-
+Mahalanobis                                                               culating recommendations. This method ensures that the row
+                                                                          and column sums of the distance matrix are equal by adding
+The Mahalanobis distance is a covariance-rescaled version of              a bonus when voters and candidates strongly agree on a ques-
+the Euclidean distance. It accounts for the correlations be-              tion. The distance for a voter i and candidate j under this
+tween questions based on the candidate answer vectors and                 method is given by:
+adjusts the importance of each dimension accordingly. Unlike
+the other distance metrics, the Mahalanobis distance does not                                               Nq
+                                                                                                            X
+take into account the question weights of voters. Figure 18d                  dL1 Bonus (vi , wi , cj ) =         wi,t · DL1 Bonus (vi,t , cj,t ),
+illustrates how the Mahalanobis distance behaves in a simpli-                                               t=1
+fied answer space.
+                                                                          where DL1 Bonus (vi,t , cj,t ) is the entry from the distance ma-
+                            q                                             trix DL1 Bonus corresponding to the voter’s response vi,t and
+   dMahalanobis (vi , cj ) = (vi − cj )⊤ Cov(C)−1 (vi − cj ),             the candidate’s response cj,t to question t. Table 9 illustrates
+                                                                          DL1 Bonus for questions with five answer options.
+where C is the candidate answer matrix, with Cj representing
+the j-th row of C, corresponding to the answer vector cj of               Hybrid
+candidate j. The covariance matrix Cov(C) is defined as                   The Hybrid distance method, used by the EUVox VAA in
+                                                                          2014 [Mendez, 2012], balances the proximity voting logic
+                           1                                              model, which generally focuses on how close candidate and
+           Cov(C) =             (C − C̄)⊤ (C − C̄),
+                         Nq − 1                                           voter answer vectors are, and the directional voting logic
+                                                                          model, which emphasizes their similarity in direction over
+with C̄ the matrix containing the column means of the candi-              the exact strength of the deviations from the neutral point.
+date answer matrix C.                                                     The Hybrid distance is calculated as the average of the L1
+and scalar distance matrices. The distance for a voter i and                        q(c)
+                                                                                               0         25        50         75        100
+candidate j under this method is given by                                  q(v)
+                                  Nq
+                                  X                                        0                  0          50        100       150        200
+      dHybrid (vi , wi , cj ) =         wi,t · DHybrid (vi,t , cj,t ),     25                 50       37.5         75      112.5       150
+                                  t=1
+                                                                           50                100         75         50        75        100
+                                                                           75                150       112.5        75      37.5         50
+where DHybrid (vi,t , cj,t ) is the entry from the Hybrid distance         100               200        150        100        50         0
+matrix DHybrid corresponding to the voter’s response vi,t and
+the candidate’s response cj,t to question t. Table 10 illustrates         Table 10: The Hybrid distance matrix used by the EUVox 2014
+DHybrid for questions with five answer options.                           VAA. The table shows how the distance between a voter and can-
+                                                                          didate is determined for all pairs of voter q(v) and candidate q(c)
+E    Mitigation Strategies (continued)                                    responses to a question with five options.
+Question Order Randomization (QO).
+The question order vulnerability can be effectively mitigated             and the list candidates, we propose ranking them by the simi-
+by randomizing the sequence of questions. Importantly, this               larity between the voter and the average answer vector of the
+randomization does not impact the reproducibility property as             candidates on the list. This approach would effectively neu-
+long as the matching method is permutation invariant. This is             tralize the impact of list centralization strategies.
+generally true for most VAAs, including Smartvote, as ob-
+served in Eq. (1) and (2).
+
+
+
+
+                                                                          Figure 20: Cumulative share of expectation-normalized visibility
+                                                                          and expectation-normalized actual votes over all candidates. The
+Figure 19: Impact of list centralization on recommendation out-           Lorenz curves illustrate that actual votes are distributed less evenly
+comes. This plot illustrates how a more centralized list, with can-       than Smartvote recommendations over all candidates.
+didates that have less spread (yellow), is closer to voters in a larger
+portion of the answer space compared to a list with more spread-out
+candidates (red).
+                                                                          F    Related Work (continued)
+                                                                          VAA Impact on Democracy.
+Fair Tie-Breaking (TB).
+To ensure fairness in tie-breaking and prevent systematic                 Post-electoral surveys analyzed by Ladner et al. [2012] in-
+bias (for instance based on candidates’ last names as in                  dicate that 67% of voters are influenced by Smartvote, with
+Smartvote), we propose generating random seeds for voters                 15% of voters stating they had adopted the recommendation
+based on their ID (to maintain reproducibility). This intro-              in its entirety. Moreover, the candidate recommendations by
+duces variability in tie-breaking, ensuring that ties between             Smartvote have been shown to be the most decisive factor
+candidates are not systematically resolved in favor of the                of electoral choice, ahead of e.g., party membership [Lad-
+same candidate for all voters.                                            ner, 2016]. Alvarez et al. [2014b] found that 4 out of 5 users
+                                                                          of the EU Profiler evaluated the VAA as useful. Interestingly,
+List Matching Score (LC).                                                 perceived usefulness decreased whenever a user’s preferences
+Smartvote ranks lists by computing the average similarity                 were less represented. For the same dataset, Alvarez et al.
+scores between the voter and the list candidates. Figure 19               [2014a] find that more than 4 in 5 voters were matched with a
+exposes the mechanism driving the list centralization bias:               party they did not initially prefer, with 8% of those voters sub-
+When candidates on a list have similar answer profiles, the av-           sequently changing their vote. Germann and Gemenis [2019]
+erage distance to the voter is minimized, increasing the like-            estimate that in 2007 a staggering 58’000 voters were added
+lihood of the list being recommended. In contrast, lists with             through the existence of smartvote, making up about 1.2% of
+diverse candidate responses incur a higher average distance,              the total tally. They compute the cost of each additional voter
+reducing their chances of recommendation. Instead of rank-                to be 7.5 USD, exceptionally low compared to costs averag-
+ing lists by the average similarity scores between the voter              ing between 38 and 90 USD in telephone campaigns. Finally,
+Munzert and Ramirez-Ruiz [2021] perform a meta-analysis
+of the effects of VAAs and show that there is significant ev-
+idence that VAAs increase voter turnout and influence vote
+choice.
+VAA Development.
+Garzia and Marschall [2014] collect an extensive overview of
+the state-of-the-art on VAA research. Mendez [2017] com-
+pares the predictive power of both high- and low-dimensional
+matching methods, by using the voter’s initial preferences as
+ground truth. Garzia and Marschall [2019] postulates a set
+of open questions in VAA research, underlining that identify-
+ing which matching algorithms are best suited is still an open
+question. Our study does not give all answers but provides
+strong evidence that certain matching algorithms should not
+be used.
+

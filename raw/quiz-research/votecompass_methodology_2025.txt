@@ -1,0 +1,841 @@
+Empowering
+Informed Decisions
+We build data-driven products that help individuals
+and communities navigate complex choices
+
+
+
+
+                                                      Used by 32 million +
+                                                      voters worldwide
+
+
+
+
+Vote Compass Methodology
+Version 2026.1
+Last update: June 2026
+Contents
+1   Understanding Vote Compass 🧭                                                                        1
+    1.1 What is Vote Compass? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     1
+    1.2 Who is responsible for Vote Compass? . . . . . . . . . . . . . . . . . . . . . . . . . .        1
+    1.3 Does Vote Compass tell me how to vote? . . . . . . . . . . . . . . . . . . . . . . . . .        1
+    1.4 What is Vote Compass not designed to do? . . . . . . . . . . . . . . . . . . . . . . . .        2
+    1.5 Who does Vote Compass partner with? . . . . . . . . . . . . . . . . . . . . . . . . . .         2
+    1.6 How do my responses to Vote Compass get used? . . . . . . . . . . . . . . . . . . .             2
+
+2 Development and design 📝                                                                             4
+  2.1 How are questions selected? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      4
+  2.2 Which parties or candidates are included in Vote Compass? . . . . . . . . . . . . .              4
+  2.3 How are party and candidate positions determined? . . . . . . . . . . . . . . . . . .            5
+      2.3.1 Calibration process . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      5
+      2.3.2 Consultation with the parties and candidates . . . . . . . . . . . . . . . . . .           6
+
+3 Vote Compass results and user reports 📈                                                               7
+  3.1 What do results look like? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    7
+  3.2 How does Vote Compass produce results for different groups in society? . . . . . .                9
+  3.3 Why do the charts show different results? . . . . . . . . . . . . . . . . . . . . . . . .        10
+
+4 Representations of the political landscape 📌                                                         10
+  4.1 Data reduction through factor analysis . . . . . . . . . . . . . . . . . . . . . . . . . .       10
+  4.2 Statistical modeling of latent positions . . . . . . . . . . . . . . . . . . . . . . . . . .     11
+  4.3 Estimation with maximum a posteriori (MAP) methods . . . . . . . . . . . . . . . . .             12
+
+5 Representations of the issues 🪧                                                                      12
+  5.1 Calculating users’ alignment with parties and candidates . . . . . . . . . . . . . . .           12
+  5.2 Weighting issue importance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       13
+
+6 Technical appendix 🔧                                                                                 14
+  6.1 Dimensionality reduction through factor analysis . . . . . . . . . . . . . . . . . . . .         14
+  6.2 Statistical modeling of latent positions . . . . . . . . . . . . . . . . . . . . . . . . . .     15
+  6.3 Estimation with maximum a posteriori methods . . . . . . . . . . . . . . . . . . . .             15
+  6.4 Calculating user scores . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    16
+  6.5 Weighting issue importance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       16
+
+
+
+
+                                                    i
+      Summary 📄
+
+      This document presents the purpose, design, and methodology of Vote Compass, an on-
+      line tool designed to foster voter engagement. Its central aim is to promote electoral
+      literacy and encourage public participation by helping users explore how their political
+      views align with those of parties or candidates during election campaigns. The document
+      details the process of question selection, the methods used to determine party and can-
+      didate positions, and the rigorous calibration and consultation procedures that ensure
+      accuracy and impartiality. It also outlines the statistical techniques employed to distill
+      complex political beliefs into a coherent set of ideological dimensions, enabling mean-
+      ingful comparisons between users and political actors.
+
+
+
+
+1      Understanding Vote Compass 🧭
+1.1 What is Vote Compass?
+Vote Compass© is a voter engagement application. Its objective is to promote electoral liter-
+acy and public participation during election campaigns. Based on a user’s survey responses
+on a series of propositions reflecting salient aspects of the campaign discourse, Vote Compass
+calculates the alignment between the user’s personal views and the positions of the political
+parties/candidates. It has been deployed in numerous countries around the world for a wide
+range of elections at various levels of government (see Table 1). Party positions are determined
+by way of a comprehensive review of public statements made by party officials on the topics
+included in Vote Compass. Each of the parties included in Vote Compass is directly consulted
+throughout this process and invited on multiple occasions to review the findings and provide
+feedback.
+
+1.2 Who is responsible for Vote Compass?
+Vote Compass is developed by the team of social scientists and data scientists at Vox Pop Labs,
+an independent, non-partisan social enterprise founded and operated by academics. Neither
+Vote Compass nor Vox Pop Labs are affiliated with any political organization or interest group.
+
+1.3     Does Vote Compass tell me how to vote?
+No. Vote Compass results are not intended and should not be interpreted as voting advice, nor as
+a prediction as to which candidate a given user intends to vote for. Every eligible voter decides
+for themselves which party is most appropriate to represent them based on variant criteria,
+not all of which are included in Vote Compass. The focus of Vote Compass is on public policy
+issues and how the candidates differ on these issues, both among themselves and in relation
+to individual voters. It is meant to serve as an entry point into an examination of parties differ
+across a suite of issues relevant to a given election campaign.
+
+
+
+
+                                                  1
+1.4 What is Vote Compass not designed to do?
+Vote Compass attempts to capture the complex information environment of an election cam-
+paign in a relatively brief survey with a finite set of questions. This simplification is necessary
+to allow the tool to be offered online to the general public. The aim of Vote Compass is to give
+users a sense of their position within the electoral landscape in a relatively short time; it is not
+to assess users’ alignment with parties and candidates on every possible policy issue. In an ideal
+scenario, a more comprehensive tool would include a greater number of statements and finer-
+grained distinctions. However, such complexity would compromise accessibility and usability
+for a general audience, undermining the tool’s core purpose. By design, Vote Compass simplifies
+political content to ensure broad engagement, yet it remains effective in reliably assessing users’
+policy preferences and aligning them with party or candidate positions.
+
+Furthermore, to facilitate meaningful comparison, Vote Compass has established standard ap-
+proaches to survey-based measurement by which to evaluate and contrast the policies of po-
+litical parties. We acknowledge that most political issues are more complex than can be fully
+captured on a five-category survey response scale. However, by reducing this complexity, the
+tool makes policy positions more accessible and enables a more accurate proximity estimate
+between users and parties. The five-point scale also allows users to qualify their responses be-
+yond a simple “Yes” or “No.” For instance, selecting ”somewhat agree” expresses a sentiment
+akin to “Yes, but...”, while ”somewhat disagree” suggests “No, but...”. Users can similarly indi-
+cate ambivalence (or indifference) on a policy issue by providing a midpoint “Neutral” response.
+This added nuance helps preserve the richness of user opinion while preserving the usability
+necessary for Vote Compass to reach a broad audience.
+
+1.5 Who does Vote Compass partner with?
+Vote Compass works in partnership with organizations around the world to make the tool avail-
+able to the voting public. Past editions of Vote Compass have been developed in partnership
+with the CBC and Radio-Canada in Canada, the ABC in Australia, the New Zealand Electoral Com-
+mission – Te Kaitiaki Take Kōwhiri, and GoodPower and the San Francisco Chronicle in the United
+States.
+
+1.6   How do my responses to Vote Compass get used?
+During an election campaign, researchers at Vox Pop Labs use the thousands of responses from
+Vote Compass to understand where the voting public stands on important issues and how voters
+respond to events during the campaign. These analyses are made available to the public through
+our media partners.
+
+Following an election, Vox Pop Labs engages in research collaborations with academics around
+the world to produce research that aims to understand election campaign dynamics, voting be-
+haviour, and public opinion on important policy issues. To date, Vote Compass data have been
+used in more than 20 peer-reviewed articles and book chapters that have been more than 600
+times.
+
+
+
+
+                                                 2
+                    Table 1. Previous Vote Compass editions
+
+Country            Type                                   Years
+
+  Canada           Federal Election                       2011, 2015, 2019, 2021, 2025
+
+                   Alberta Provincial Election            2012, 2015, 2019, 2023
+
+                   British Columbia Provincial Election   2013, 2017, 2020
+
+                   Manitoba Provincial Election           2016, 2023
+
+                   New Brunswick Provincial Election      2018
+
+                   Newfoundland Provincial Election       2021
+
+                   Nova Scotia Provincial Election        2021
+
+                   Ontario Provincial Election            2011, 2014, 2018, 2022
+
+                   Quebec Provincial Election             2012, 2014, 2018, 2022
+
+                   Saskatchewan Provincial Election       2016, 2020
+
+                   Hamilton Municipal Election            2022
+
+                   Toronto Mayoral Election               2014, 2018
+
+                   Toronto Mayoral By-Election            2023
+
+                   Toronto Municipal Election             2022
+
+                   Quebec Youth Edition                   2018
+
+  Australia        Federal Election                       2013, 2016, 2019, 2022, 2025
+
+                   New South Wales State Election         2015
+
+                   Queensland State Election              2015
+
+                   Victoria State Election                2014
+
+  United States    Presidential Election                  2012, 2016, 2024
+
+                   San Francisco Mayoral Election         2024
+
+  Brazil           Federal Election                       2018
+
+  France           Presidential Election                  2017
+
+  Germany          Federal Election                       2017
+
+  New Zealand      General Election                       2014, 2017, 2020, 2023
+
+  United Kingdom   General Election                       2024
+
+
+
+
+                                              3
+As a voter engagement tool, Vote Compass is not a traditional election poll. Its primary objective
+is not to make an estimate or forecast of the electorate’s voting intentions or the results of an
+election.
+
+It is important to note that all analyses of Vote Compass data are at the aggregate level only,
+and individuals’ responses are never disclosed. Full details of the Vox Pop Labs Privacy Policy
+are available online.
+
+
+2 Development and design 📝
+2.1     How are questions selected?
+Development of the Vote Compass questionnaire starts with a content analysis of the policy
+issues that figure most prominently in the platforms and public statements of the major political
+parties or candidates, and in the general media discourse.
+
+While the final Vote Compass questionnaire typically includes approximately 30 questions, many
+more candidate questions are tested in pilot studies. These pilot studies collect data from a
+demographically representative online sample of approximately 1,000 (or more) voting-eligible
+adults in the jurisdiction of the election, and can include as many as 100 candidate questions.
+
+The selection of questions for the final Vote Compass questionnaire is determined by multiple
+factors. A key factor is the ability of a survey question (as shown in the pilot study) to differentiate
+between parties or candidates and among voters. Questions that produce (near-) consensus
+responses or that deal with ”valence issues” about which all parties agree might be politically
+salient but are not ideal for inclusion in Vote Compass as they do not distinguish between parties
+or their supporters.
+
+Another key factor is the accessibility and comprehensibility of the question itself: it must be
+readily understood by the voting public. As a general rule, good survey questions (whether in
+a voter engagement tool or elsewhere) are clear, specific, and brief. Questions that deal with
+highly technical policy issues, that require lengthy explanations before soliciting a response
+from users, or that generate high levels of non-response (as determined in the pilot study) are
+not well-suited to Vote Compass.
+
+The final questionnaire must also reflect the breadth of policy issues that are at play in the
+upcoming election.
+
+2.2 Which parties or candidates are included in Vote Compass?
+As a general principle, all political parties or coalitions of political parties with at least 5 per
+cent national support in recent, recognised and published independent polls are included in
+Vote Compass if they meet the following criteria:
+
+      1. The party is registered under the relevant electoral authority.
+
+
+
+
+                                                   4
+   2. The party is likely to field candidates in a majority of constituencies.
+   3. The party has a fully developed policy platform.
+
+Sitting office-holders who are not endorsed by a political party that is included in Vote Compass
+(i.e., independent candidates) and who are recontesting their seat are invited to participate.
+Where they have declined to participate, this is reflected in Vote Compass.
+
+2.3 How are party and candidate positions determined?
+Party or candidate positions in the Vote Compass questionnaire are derived from the parties’ or
+candidates’ publicly-available statements.1 The Vote Compass research team undertakes a com-
+prehensive review of party or candidate documents, including manifestos, election platforms,
+websites, speeches, press releases, legislative debates, and statements to media, in order to
+impute an accurate representation of parties’ or candidates’ stances on the policy issues ex-
+plored in Vote Compass.
+
+Preference is accorded to public statements that are recent; come from either the parties or can-
+didates; and are directly relevant to the policy issue in question. Specifically, public statements
+are prioritized by date in the following order:
+
+   1. Election platforms
+   2. Official policy documents
+   3. Statements from the candidates or press releases from the party or candidate
+   4. Statements from Cabinet Ministers or party critics for the policy domain in question (Par-
+      liament transcripts, speeches, media, etc.)
+   5. Statements from other elected party or candidate representatives
+   6. Party constitution; member-passed resolutions
+
+Within these guidelines, allowances may be made for statements that most closely represent
+a party’s or candidate’s position on the exact phrasing of a particular Vote Compass proposi-
+tion. This calibration process is followed by a consultation with the parties and/or candidates
+themselves. These two steps are described in more detail below.
+
+2.3.1   Calibration process
+Based on the collected public statements, researchers from the Vote Compass team are assigned
+to code or calibrate a given party’s or candidate’s positions on each of the final questions in-
+cluded. To ensure inter-coder reliability, the researchers initially undertake this task separately
+and subsequently compare results for consistency. All response categories are presented as
+Likert-type (or rating) scales. Each level of policy position is based on explicit guidelines:
+
+        – Strongly dis-/agree, much less/more, many fewer/more, much harder/easier:
+          The party clearly emphasizes the issue in question and does not place any condi-
+   1
+    In cases of municipal Vote Compass deployment, candidates are invited to code themselves. No external
+validation of the candidate codes takes place, and candidate statements are reviewed only to ensure they adhere
+to submission guidelines.
+
+                                                      5
+           tions, qualifications, or restrictions on its position.
+
+        – Somewhat dis-/agree, somewhat less/more, somewhat fewer/more, somewhat
+          harder/easier:
+          The party does place conditions, qualifications, or restrictions on its position; or
+          emphasizes only part of the proposition.
+
+        – Neutral, about the same as now:
+          The party addresses the issue without consistent argumentation in favour or op-
+          position; defers taking a position; and/or mentions the issue indirectly.
+
+Calibrations on questions pertaining to taxes and spending are based on support for nominal
+change. In the event that a party or candidate supports an increase or decrease in taxes or
+spending that was passed in a prior sitting of the legislature but has yet to come into effect, this
+is still considered support for a nominal change.
+
+To ensure that the results of this process are transparent for users, all party and candidate
+positions and supporting public statements (with URLs) are made available in the Vote Compass
+tool under “You vs. Party” and “Party vs. Party” on the results page. This information enables
+users to compare their own responses to those of the parties or candidates, and to delve deeply
+into party or candidate platforms and public documents.
+
+2.3.2   Consultation with the parties and candidates
+In a next step, Vote Compass consults with the political parties or candidates themselves. Parties
+or candidates are first sent a copy of the Vote Compass questionnaire, and invited to position
+themselves on the initial list of questions. To encourage clear position-taking, they use the same
+response scales presented to respondents, except that the midpoint (i.e., neutral or no change
+options) is removed. Parties or candidates can nonetheless make the case for why they should
+be coded as neutral on a specific question by leaving a comment to that effect in the self-coding
+file provided to them.2 Upon receipt of a completed questionnaire, Vote Compass reconciles the
+party’s or candidate’s self-placements with the calibrations determined by the research team
+coders.
+
+In the majority of cases, the calibrations from the party or candidate and the Vote Compass
+research team are in agreement. If discrepancies exist, Vote Compass sends the party or candi-
+date a reconciliation report outlining the confirmed calibrations and the disputed ones across
+the final Vote Compass questionnaire. All discrepancies are flagged and justified with the party’s
+or candidate’s public statement collected by the research team which supports the calibration
+proposed by Vote Compass.
+   2
+     For propositions using an agree–disagree Likert scale in municipal Vote Compass deployments, the Candidate
+Self-Code Portal—through which candidates may submit their own responses—does not include a “Neutral” option
+or permit candidates to indicate neutrality in an accompanying comment. Candidates who believe that “Neutral”
+reflects a clear and substantive position may nevertheless contact the Vote Compass team by email. Each request is
+reviewed individually and, if approved, the response is entered manually outside the Portal.
+
+
+
+
+                                                        6
+The party or candidate is able to respond to each disputed calibration by clarifying its posi-
+tion and providing alternate public statements which support its self-placement on the issue
+in question. In cases where the party or candidate provides relevant policy statements which
+conclusively accord with its self-placement, Vote Compass will reposition the party or candidate
+on this issue.
+
+Where discrepancies are not resolved by this process, the disputed placements are sent for
+deliberation and final ruling to the Vote Compass Advisory Board, comprised of well-established
+scholars in electoral politics. Parties or candidates are then sent final calibrations for review.
+They are able to dispute these calibrations and supporting public statements throughout the
+entire run of Vote Compass.
+
+If a party’s or candidate’s stance on an issue changes or if a party or candidate wishes to provide
+additional official documentation not considered during the reconciliation process, we will re-
+visit the appropriate calibration to determine if a change is warranted. Whatever the reason, we
+encourage parties and candidates to consult with us over the course of the election campaign
+if necessary. Every effort is made throughout the electoral campaign to ensure the accuracy of
+party and candidate calibrations based on their publicly available statements.
+
+
+3 Vote Compass results and user reports 📈
+3.1   What do results look like?
+The Vote Compass results interface is designed to provide users with a clear, multidimensional
+understanding of their political alignment. It features two primary visualizations, each offering
+a distinct lens through which users can interpret their responses and compare them with those
+of political parties or candidates.
+
+The first of these is a multidimensional graph that situates the user and various parties or candi-
+dates within an abstract, multi-axis political space. It captures ideological proximity by plotting
+positions based on users’ and political actors’ aggregated responses. Each axis typically re-
+flects core political dimensions, such as attitudes toward economic regulation or social values,
+enabling users to see where they stand in relation to others across the broader political land-
+scape. The second is a bar graph that displays a user’s level of agreement with each party or
+candidate across multiple issues. See Figure 1 below for an example.
+
+
+The second of these are a series of single-dimension graphs that situate the user and par-
+ties/candidates with respect to specific topics. In this context, “topics” are specific policy is-
+sues that are measured using composite scores created from a small set of questions included
+in Vote Compass. They are designed consciously to occupy a middle ground – broader than a
+single question, but more focused than the overarching dimensions formed by all of the policy
+questions included in Vote Compass – and to provide users an opportunity to compare them-
+selves to the parties/candidates on specific policy issues. Topics will vary from one edition of
+Vote Compass to another. See Figure 2 below for an example.
+
+
+
+
+                                                7
+          Figure 1. Positioning in the political landscape
+
+
+
+
+Note. Example taken from the 2025 Canadian Federal Election Vote Compass.
+
+
+
+
+              Figure 2. Alignment by issue and topic
+
+
+
+
+Note. Example taken from the 2026 Quebec Provincial Election Vote Compass.
+
+
+
+
+                                    8
+3.2   How does Vote Compass produce results for different groups in society?
+In some editions of Vote Compass, the results interface will display the distribution of responses
+to questions for distinct demographic and political groups, as well as the distribution of re-
+sponses for the general electorate. The results interface will also display the distribution of
+scores for particular topics (composite scores created from a small set of questions included in
+Vote Compass). Examples of this are in Figure 3 below.
+
+
+                               Figure 3. Profile comparison features
+
+
+
+
+                Note. Example taken from the 2026 Quebec Provincial Election Vote Compass.
+
+
+
+The People Like Me tab allows users to see how their responses align with others who share
+their demographic characteristics, such as gender, age, educational attainment, mother tongue,
+racial-ethnic background, income, and voting intention in that particular election. In the All
+Groups tab, users are able to explore how their responses align with those of a range of groups
+within society—e.g., women and men, people from different age groups, with different levels
+of education or income, from different language or racial-ethnic backgrounds, from different
+regions, or supporters of different parties. Our intention in making these results available is
+to show users the diversity of opinion within particular groups as well as the differences and
+similarities across groups.
+
+When presenting results from specific groups in society, it is critically important that the results
+are accurate representations of the opinions of those groups, as well as society overall. With
+this in mind, Vox Pop Labs draws on the survey data from its pilot studies, which are calibrated
+statistically to ensure that the results are demographically and politically representative of the
+general electorate and the range of groups within the electorate. Where the sample size for
+a particular subgroup does not allow for a robust estimate of the opinions of that group, the
+
+
+
+
+                                                    9
+estimate is not made available in the Vote Compass results.
+
+3.3 Why do the charts show different results?
+The consequence of using multiple measures is that there will occasionally be disagreement
+between the party or candidate that appears “closest” in the political landscape and that which
+appears “closest” on the bar graph. One reason for this is that these graphs are representations
+of different concepts. It is also because there is no perfect measure of political distance, either
+ideologically or on individual issues.
+
+In a public tool of this nature, it is necessary to recognize the compromise between increased
+methodological sophistication and the ease with which a method can be understood by the
+public. The use of multiple measures admits as much. It is an acceptance of the reality that the
+political world—both among politicians and the public—is complex. But it is this complexity that
+makes politics so lively and contentious, and why successful policies and politics often require
+great imagination from the public and their political representatives.
+
+The purpose of Vote Compass is therefore to encourage users to think through this complexity;
+to learn where parties and candidates stand on the issues and the reasons why they do so; and
+to raise the level and quality of political information among the public more generally.
+
+For these reasons we encourage all users to read through the accompanying documentation on
+the Results page that shows how and why the parties and candidates were “coded” as they were
+on issues.
+
+
+4     Representations of the political landscape 📌
+Vote Compass positions users and political parties within a conceptual political space based on
+their responses to the Vote Compass questionnaire. Several questions also serve as indicators
+of the more focused topics. In both cases, these underlying dimensions are derived through
+empirical analysis of survey data that are also informed by social scientific theoretical frame-
+works. The aim is to identify where individuals and parties stand in a simplified but meaningful
+representation of the political landscape.
+
+4.1   Data reduction through factor analysis
+The questions included in Vote Compass are designed to reflect the complexity of political belief
+systems as well as the range of issues that exhibit differentiation between political parties. To
+represent this complexity in a more manageable and interpretable form, statistical methods are
+employed to reduce the number of dimensions. Factor analysis is used to achieve this goal. Fac-
+tor analysis is a technique that identifies a finite number of underlying dimensions — or factors
+— that account for patterns in the way people respond to survey questions. In Vote Compass,
+factor analysis is used at two levels of abstraction. At the highest level, these factors represent
+abstract concepts such as economic ideology or social conservatism. At the lower (topic) level,
+factors represent orientations toward more specific policy areas, such as, government spend-
+
+
+
+
+                                                10
+ing,public transportation, and housing. While such concepts cannot be observed directly, they
+manifest in consistent ways across multiple related questions. For example, someone’s stance
+on environmental regulation might correlate with their views on climate change, energy policy,
+and international environmental agreements. Factor analysis leverages these correlations to
+estimate individuals’ scores on these underlying dimensions.
+
+Each question’s contribution to the overall score on a given dimension (or on a given topic) dif-
+fers. Questions that are strongly associated with a particular dimension (or topic) carry more
+weight in positioning individuals along that dimension (or topic), while those with weaker as-
+sociations have a smaller influence — i.e., factor loadings vary across survey questions. This
+weighting (estimation of factor loadings) is determined by analyzing the pilot survey data. The
+result is a simplified, interpretable space that can be used to locate political attitudes clearly
+and consistently.
+
+
+   Additional information on factor analysis 🔧
+
+   See section 6.1 in the technical appendix.
+
+
+4.2   Statistical modeling of latent positions
+Once the relevant ideological dimensions have been identified through factor analysis, another
+model is used to estimate individual positions on each dimension. This is done through a statis-
+tical framework that treats responses to survey questions as ordered choices, such as levels of
+agreement or disagreement. The model assumes that each individual holds an internal position
+on each latent dimension, and this shapes the probability of selecting certain response options.
+
+This statistical approach falls under the category of ordered response models, specifically within
+a Bayesian framework. The model incorporates individual variation as well as the differing in-
+fluence of each question. Some questions are better at distinguishing between ideological po-
+sitions than others, and this is reflected in the model by assigning greater importance—or dis-
+criminatory power—to such questions.
+
+The structure of this model allows for the estimation of latent positions by analyzing how differ-
+ent response patterns correspond to different ideological stances. It also takes into account the
+thresholds that separate each answer category, acknowledging that people interpret response
+options in varied but systematic ways. These thresholds are estimated from the data and play a
+critical role in translating internal preferences into observed choices.
+
+
+   Additional information on ordinal response latent variable models 🔧
+
+   See section 6.2 in the technical appendix.
+
+
+
+
+                                                11
+4.3 Estimation with maximum a posteriori (MAP) methods
+To efficiently estimate where users fall on different ideological dimensions, Vote Compass uses
+a method called maximum a posteriori (MAP) estimation. This approach provides a single best
+guess of a user’s position, rather than calculating full probability distributions for every individ-
+ual—which would be too slow and resource-intensive to do in real time.
+
+MAP estimation is part of a Bayesian framework, which means it combines prior knowledge —
+drawn from the pilot survey — with each user’s responses to produce informed estimates. Be-
+hind the scenes, advanced statistical software fits a model to previously-collected survey data,
+generating a posterior distribution that reflects how likely different ideological positions are.
+MAP then selects the most probable position for each user based on that distribution.
+
+In other words, to quickly estimate where users fall on the political spectrum, Vote Compass uses
+a method that avoids doing complex calculations for each person in real time. Instead, it makes
+an informed guess based on patterns it has already learned from earlier survey data.
+
+This approach ensures that user placements are both statistically sound and computationally
+efficient, allowing for rapid processing without compromising accuracy. By grounding the esti-
+mations in rigorous statistical methods, Vote Compass offers a nuanced and data-driven repre-
+sentation of political preferences, distilled into a format that is both accessible and analytically
+robust.
+
+
+     Additional information on MAP methods 🔧
+
+     See section 6.3 in the technical appendix.
+
+
+
+5     Representations of the issues 🪧
+5.1 Calculating users’ alignment with parties and candidates
+In a user’s Vote Compass report, the bar graph displays the user’s proximity to (or distance from)
+each party’s or candidate’s policy positions. This is calculated using the absolute distance of
+the user’s positions on the issues from those of each party or candidate (also known as the
+Manhattan distance). For example, let us say that for a given question, there are 5 possible
+answers as follows, each of which are assigned a number (in parentheses below):
+
+                      Strongly       Somewhat                          Somewhat         Strongly
+    Answer choice                                      Neutral
+                       Agree           Agree                            Disagree        Disagree
+
+                                        User                            Party A          Party B
+      Answers           ...                              ...
+                                         (2)                              (4)              (5)
+
+
+Given these hypothetical user and party positions, we calculate the user to be 2 units away from
+
+
+
+
+                                                  12
+Party A (i.e., |2−4|) and 3 units away from Party B (i.e., |2−5|). The sum of these distances, as
+calculated for each question in the Vote Compass survey, and for each party or candidate, thus
+represents how far a user is from a given party or candidate overall.
+
+Because proximity to a party or candidate is more intuitive than distance, we subtract a user’s
+distance from a party from the maximum possible distance, and then divide by this maximum
+distance. If a user takes positions that are as far from a given party as possible, then the bar will
+read 0; if a user takes positions that exactly mirror those of a party, then the bar will read 100.
+
+
+   Additional information on user-party alignment 🔧
+
+   See section 6.4 in the technical appendix.
+
+
+5.2 Weighting issue importance
+We also account for the fact that users frequently place greater importance on some policy issues
+than others. We do this by allowing users of Vote Compass to adjust issue importance in the tool
+(if desired) to reflect their policy priorities, increasing or decreasing the importance ”weight”
+assigned to individual questions. When a user has provides these weights, the distances on the
+bar graph are reweighted accordingly: increasing issue importance causes the distances from
+a user to a party or candidate to be magnified while decreasing issue importance causes the
+distances to lessen.
+
+
+   Additional information on weighting issue importance 🔧
+
+   See section 6.5 in the technical appendix.
+
+
+
+
+                                                 13
+6 Technical appendix 🔧
+6.1 Dimensionality reduction through factor analysis
+As mentioned earlier, summarizing and distilling a large number of attitudinal and policy-related
+survey questions involves using a statistical technique called factor analysis. Factor analysis
+allows us to capture users’ and parties’ underlying positions on a small number of underlying
+dimensions (called “factors”).
+
+One can think of this as a position on a scale (for example, on social issues) which we cannot
+observe directly using a single survey question but which we can measure by asking a number of
+questions that are connected to it. This works because individuals’ attitudes on questions within
+a given policy area are often related to one another. Similarly, individuals’ attitudes on one policy
+issue are often associated with their attitudes on other issues. Latent variable techniques like
+factor analysis allow analysts to uncover these positions by using several questions together and
+capitalizing on the relationships between them. Survey responses that are highly associated with
+the latent dimension therefore receive greater weight in determining a user’s position on that
+dimension than those that are only weakly associated with it. To determine these dimensions,
+we analyze data collected in the pilot studies conducted prior to the launch of the Vote Compass
+application.
+
+As mentioned previously, factor analysis is used at two levels of abstraction in Vote Compass. At
+the highest level, the factors formed by analyzing all of the Vote Compass questions represent
+broad organizing concepts such as economic ideology or social conservatism. At the lower level,
+there are more specific factors formed by a small set of questions that represent positions on
+more specific topics. It is important to note that not all Vote Compass questions are included in
+these topic factor models. Further, higher and lower in this context does not imply a hierarchical
+or second-order factor model. Rather, the aim is to uncover latent dimensions that vary in their
+breadth to deliver different insights at different levels of generality to the user.
+
+Here, we lay out the model assumptions and main steps followed to derive these abstract polit-
+ical dimensions (factors). Denote p as the number of propositions. Let X be a vector of a user’s
+responses to p propositions where X ∈ Rp . Assume that we can find Z is a vector of k latent vari-
+ables (factors) that influence users’ responses, such that Z ∈ Rk . Then the relationship between
+X and Z can be expressed as follows:
+
+                                         X = µ + ΛZ + ,
+
+
+where Z ∼ N (0, 1),  ∼ N (0, Ψ) and Λ ∈ Rp×k is a matrix of the factor loadings. Moreover,
+we also assume that cov(Xi , Zj ) = 0 for i = 1, ..., p and j = 1, ..., k. From this follows for the
+distribution of X|Z:
+
+                                       X|Z ∼ N (µ + ΛZ, Ψ)
+
+
+
+
+                                                 14
+with the parameter Ψ as the matrix Ψ ∈ Rp×p . The loadings are estimated from this model
+using the maximum likelihood method, to which we apply the varimax rotation. We define each
+theoretical dimension on the basis of how well it loads on every proposition.
+
+Once the pool of propositions for a specific dimension has been determined, we inductively
+project this subset of propositions into a single dimension. Each dimension can be obtained
+using a Bayesian ideal point model.
+
+6.2 Statistical modeling of latent positions
+The assumptions under the Bayesian approach focus on an individual’s position θj on the latent
+dimension in question. Implicitly, it represents respondent j’s propensity to pick one specific
+answer from the ordinal choices. In the case of obtaining ideological estimates from a set of
+questions, θj can be expressed as follows:
+
+                                 θ j = β + i ,   where j = 1, ..., J
+
+with the respondent-specific error term i ∼ N (0, 1).
+
+β represents a vector of parameters, containing separate coefficients, or discrimination param-
+eters, for each item i as β1 , ...i. θj remains unobservable. The relationship between θj and a
+respondent’s observed answer yji can be determined with the help of κ = 1, ...5, which index
+the ordered response options to each proposition. The probability that a respondent selects a
+specific category on a specific item can be represented by an ordered probit model as:
+
+                                     P (yji = 1) = Φ(τi,1 − θji )
+                                                   ..
+                                                    .
+                            P (yji = k) = Φ(τik − θji ) − Φ(τi,k−1 − θji )
+                                                   ..
+                                                    .
+                                 P (yji = 5) = 1 − Φ(τi,5−1 − θji )
+
+where Φ(·) is the standard normal probability density function. τi is a vector of unobserved
+threshold values or “cut points” for i. The number of threshold values for each item is one less
+of the number of answer categories on the ordered scale. Propositions in Vote Compass with
+their five-category Likert-type scales thus have four cut points (τi,5−1 = τi,4 ).
+
+6.3 Estimation with maximum a posteriori methods
+For efficiency when calculating a user’s placement on the scale in the application, Vote Com-
+pass uses point estimates for the parameters in the Bayesian ordered probit model to calculate
+maximum a posteriori (MAP) estimates for the respondents’ values of θ. These are effectively nu-
+merically equivalent to estimates obtained from a fully Bayesian model. The necessary posterior
+
+
+
+
+                                                  15
+distributions to produce MAP estimates for new users are derived from the pilot sample. We use
+Stan and the R program for statistical computing to fit an ordered probit model and identify its
+posteriors.
+
+MAP estimations requires a log-likelihood function to estimate user positions θj . This log-
+likelihood function is:
+                             X                    X
+                  LogLik =       ln[P (yij )] =         ln[Φ(τik − θji ) − Φ(τi,k−1 − θji )]
+                             j                     j
+
+
+6.4 Calculating user scores
+Here, we formalize the steps used to calculate the bar graph. Let n be the number of propositions,
+and xij and xip be a user’s and a party’s or a candidate’s position to the i-th issue respectively.
+Hence, the absolute distance δjp of the user to the party or the candidate p can be expressed as
+follows:
+                                                   n
+                                                   X
+                                           δjp =             |xij −xip |
+                                                       i=1
+
+
+Next, we calculate the maximum possible distance the party or the candidate can be from the
+user max(δjp ), given the user’s responses (which are coded on a scale from 1 through 5):
+                                                        n
+                                                        X
+                                     max(δjp ) =          (|xij −3| + 2)
+                                                        i=1
+
+
+This equation centres the scale and takes the absolute value of a user’s response to determine
+its distance from the centre (=3). It adds 2, which is the maximum distance the party or the
+candidate can be from the centre. For example, if a user answers ‘1’, a party position of ‘5’ is the
+maximum distance |5−1| = 4 from the user. If a user answers ‘2’, a party position of ‘5’ is the
+maximum distance |5−2| = 3 from the user. If a user answers ‘3’, a party position of ‘1’ or ‘5’ is
+the maximum distance |1−3| = |5−3| = 2 from the user, etc. This equation finds the sum of the
+maximum distances a party can be from the user on each of the questions.
+
+The final agreement score between the party or the candidate p and the user j is
+                                                                           
+                                                                  δjp
+                                 agreementjp =             1−                   ×100
+                                                                max(δjp )
+
+6.5   Weighting issue importance
+When select issues are weighted by the user, with issue weight ωij as 0 ≥ ωij ≥ 10, the disagree-
+ment δjp and the maximum possible distance to the user’s position are determined via these
+adjusted formulas:
+
+
+
+
+                                                        16
+                                           n
+                                   wtd
+                                           X
+                                  δjp  =         |ωij xij − ωij xip |
+                                           i=1
+
+
+                                        n
+                               wtd
+                                        X
+                          max(δjp  )=         (|ωij xij − 3 · ωij | + 2 · ωij )
+                                        i=1
+
+
+The calculation of the weighted agreement score between party or candidate p and user j follows
+the same structure as the unweighted agreement score:
+
+                                                            wtd
+                                                                    !
+                                                           δjp
+                           agreementwtd
+                                    jp =         1−         wtd )
+                                                                        × 100
+                                                       max(δjp
+
+
+
+
+                                                  17
+About Vox Pop Labs
+Vox Pop Labs is an independent, non-partisan social enterprise founded and
+operated by academics that specializes in the analysis of public opinion and
+the development of data-driven civic engagement tools. Vox Pop Labs com-
+bines expertise in social science, data science, and survey research to help in-
+dividuals, organizations, and governments better understand public attitudes,
+individual and collective political behaviour, and policy preferences.
+
+Vox Pop Labs is best known for developing Vote Compass, an interactive ap-
+plication used by tens of millions of voters worldwide to explore how their
+views align with those of political parties and candidates during election cam-
+paigns. Through its research, analytics, and digital tools, Vox Pop Labs aims
+to improve electoral literacy, strengthen democratic participation, and provide
+reliable insights into the opinions and experiences of citizens.
+
+
+
+
+Follow Us
+

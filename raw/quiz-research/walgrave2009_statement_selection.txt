@@ -1,0 +1,971 @@
+This article was downloaded by: [Universiteit Antwerpen]
+On: 30 July 2014, At: 05:37
+Publisher: Routledge
+Informa Ltd Registered in England and Wales Registered Number: 1072954
+Registered office: Mortimer House, 37-41 Mortimer Street, London W1T 3JH,
+UK
+
+
+
+                                 West European Politics
+                                 Publication details, including instructions for authors
+                                 and subscription information:
+                                 http://www.tandfonline.com/loi/fwep20
+
+                                 Voting Aid Applications and the
+                                 Effect of Statement Selection
+                                 Stefaan Walgrave , Michiel Nuytemans & Koen
+                                 Pepermans
+                                 Published online: 27 Oct 2009.
+
+
+
+
+To cite this article: Stefaan Walgrave , Michiel Nuytemans & Koen Pepermans (2009)
+Voting Aid Applications and the Effect of Statement Selection, West European Politics,
+32:6, 1161-1180, DOI: 10.1080/01402380903230637
+
+To link to this article: http://dx.doi.org/10.1080/01402380903230637
+
+
+
+PLEASE SCROLL DOWN FOR ARTICLE
+
+Taylor & Francis makes every effort to ensure the accuracy of all the
+information (the “Content”) contained in the publications on our platform.
+However, Taylor & Francis, our agents, and our licensors make no
+representations or warranties whatsoever as to the accuracy, completeness, or
+suitability for any purpose of the Content. Any opinions and views expressed
+in this publication are the opinions and views of the authors, and are not the
+views of or endorsed by Taylor & Francis. The accuracy of the Content should
+not be relied upon and should be independently verified with primary sources
+of information. Taylor and Francis shall not be liable for any losses, actions,
+claims, proceedings, demands, costs, expenses, damages, and other liabilities
+whatsoever or howsoever caused arising directly or indirectly in connection
+with, in relation to or arising out of the use of the Content.
+
+This article may be used for research, teaching, and private study purposes.
+Any substantial or systematic reproduction, redistribution, reselling, loan, sub-
+licensing, systematic supply, or distribution in any form to anyone is expressly
+                                                               forbidden. Terms & Conditions of access and use can be found at http://
+                                                               www.tandfonline.com/page/terms-and-conditions
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+                                                               West European Politics,
+                                                               Vol. 32, No. 6, 1161–1180, November 2009
+
+
+
+
+                                                               Voting Aid Applications and the
+                                                               Eﬀect of Statement Selection
+                                                               STEFAAN WALGRAVE, MICHIEL NUYTEMANS and
+                                                               KOEN PEPERMANS
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               Voting Aid Applications (VAA) helping voters make their decision at the ballots have
+                                                               become more popular throughout Western Europe. They typically consist of a number
+                                                               of statements that are used to match voters with parties. Drawing on a large-scale
+                                                               simulation of 500,000 diﬀerent conﬁgurations of 36 statements and on a random sample
+                                                               of Belgian voters, the paper shows that many of these combinations produce diverging
+                                                               information for the participants. The study establishes that the speciﬁc selection of
+                                                               statements has a considerable impact on the ‘voting advice’ that is produced: some
+                                                               conﬁgurations favour certain parties, other conﬁgurations beneﬁt other parties.
+
+
+                                                               A new phenomenon in modern election campaigning, Voting Aid
+                                                               Applications (VAA) help voters cast their vote. Drawing upon an internet
+                                                               application, VAAs link a voter’s preferences – most of the time answers to
+                                                               precise issue-related questions – to parties’ policy proposals or general
+                                                               preferences. VAAs produce a sort of ‘advice’, or at least an aid, for the
+                                                               participating voter by highlighting the party that stands closest to his or her
+                                                               preferences. VAAs are spreading quickly to ever more countries. In some
+                                                               countries VAAs seem to have become one of the most important players in
+                                                               the election campaign. Not only are VAAs spreading to many European
+                                                               democracies, but also the number of voters participating in VAA and
+                                                               seeking voting advice is growing year by year (for an overview see Walgrave
+                                                               et al. 2008b). VAAs’ popularity raises important questions as to the value of
+                                                               the voting aid that is being produced by VAAs’ underlying algorithms.
+                                                               What is the quality of the aid voters get? Is it a consistent and reliable aid or
+                                                               are VAAs just entertaining games producing random answers to voters’
+                                                               questions for help?
+                                                                  Together with the spread of VAAs to ever more countries, the diversity of
+                                                               the applications has increased. Although basically doing the same thing –
+                                                               matching voters with parties based on both their preferences – the
+
+
+                                                               Correspondence Address: stefaan.walgrave@ua.ac.be
+
+                                                               ISSN 0140-2382 Print/1743-9655 Online ª 2009 Taylor & Francis
+                                                               DOI: 10.1080/01402380903230637
+                                                               1162   S. Walgrave et al.
+
+                                                               diﬀerences between VAAs abound. Some VAAs rely on parties’ explicit
+                                                               ‘authorisation’ concerning their stances, others draw on a detailed analysis
+                                                               of parties’ oﬃcial documents; some VAAs weight the statements according
+                                                               to the saliency attributed to the issue by voters or parties, other VAAs just
+                                                               add up all statements giving them equal weight; some VAAs categorise the
+                                                               political space in diﬀerent dimensions, other VAAs consider the political
+                                                               space as one-dimensional; some VAAs work with statements that tap very
+                                                               precise policy proposals, other VAAs rely on general and ideological
+                                                               statements (for an overview see Laros 2007). So, not all VAAs are based on
+                                                               the same principles. This diversity of VAA systems further underlines the
+                                                               need for a scientiﬁc reﬂection on VAAs’ outputs and the quality of the
+                                                               voting aid they produce.
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                                  In some of the countries with popular VAAs a political and societal
+                                                               controversy broke out. Some maintained that VAAs are a fraud and would
+                                                               never be able to give correct and neutral voting advice; others contended
+                                                               that these applications must be commended as they focus people’s attention
+                                                               on the party programmes and policy issues compelling parties to discuss
+                                                               substance instead of personalities, images, and campaign events (see for
+                                                               example, for the discussion in Belgium, Deschouwer and Nuytemans 2005;
+                                                               Swyngedouw and Goeminne 2005).
+                                                                  In sharp contrast to their amazing popularity, to the pertinent questions
+                                                               about VAA outputs, and to the ﬁerce political debate in some countries, the
+                                                               scientiﬁc debate about VAAs has hardly commenced. Political science seems
+                                                               to have been taken by surprise and has only just started to think about
+                                                               VAAs. Many political scientists have themselves been heavily engaged in
+                                                               designing VAAs. For some VAAs, political scientists even provide the basic
+                                                               party preference information: in their role of political experts, political
+                                                               scientists sometimes ‘estimate’ where parties are situated in the political
+                                                               space and what parties would answer when confronted with a certain
+                                                               statement (Teepe 2005). This involvement of political scientists in designing
+                                                               VAAs places them in an awkward position when it comes to critically
+                                                               evaluating VAAs and to feeding the debate about VAAs’ consequences
+                                                               (Ladner et al. 2008). Certainly, there have been some studies tackling the
+                                                               eﬀect of VAA advice on the voter but there have been studies hardly any
+                                                               focusing on the heart of the matter: how do VAAs work? What kind of aid
+                                                               do VAAs produce? And to what extent is the advice VAAs deliver consistent
+                                                               and reliable?
+                                                                  In this paper, we want to start this debate by pinpointing just one aspect
+                                                               of VAAs’ make-up: the selection of statements that are incorporated in a
+                                                               VAA system. VAAs typically link a voter’s answers to 30þ very speciﬁc
+                                                               statements on parties’ stances on these same topics. The statements are most
+                                                               of the time items maintaining a certain position and participants have to
+                                                               indicate whether they (totally) agree, neither agree nor disagree, or (totally)
+                                                               disagree with it. The topic, the exact wording, the direction, and the
+                                                               formulation of the statements may all produce diﬀerences in answers. Some
+                                                                                         Electoral Eﬀects of Voting Aid Applications      1163
+
+                                                               statements may beneﬁt some parties, while other statements may work to
+                                                               the advantage of others. Hence, it is not dangerous to hypothesise that
+                                                               selecting topics and formulating statements is key to devising a VAA system
+                                                               that does justice to parties’ programmes and gives them a fair chance to
+                                                               persuade the voters. Theoretically, the number of potential statements is
+                                                               inﬁnite and any statement incorporated in a VAA might be replaced by any
+                                                               other statement on the same or on a diﬀerent topic. No ‘natural’ or ﬁxed
+                                                               statements are by deﬁnition part of a VAA; building a VAA unavoidably
+                                                               means going through a selection process and choosing one statement above
+                                                               another. Apart from statement selection, there are of course many other
+                                                               aspects of VAAs’ internal machinery that are worth studying and that most
+                                                               likely aﬀect their output. But in this paper we claim statement selection to be
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               the key process.
+                                                                  The statements in a VAA determine the look and feel of the system; the
+                                                               statements form the most visible aspect of a VAA and they have sparked
+                                                               most discussion in countries where VAA has led to a debate. This is no
+                                                               coincidence as VAA statements form, so to say, the software of the system;
+                                                               they determine what kind of voter preference information gets fed into the
+                                                               system that calculates the best ﬁtting party. Diﬀerent statements entail that
+                                                               diﬀerent information is gathered from participants and this, as we will show
+                                                               in this paper, may lead to diﬀerent outputs. Therefore the question we tackle
+                                                               in this study is: to what extent is the output of Voting Aid Applications – that
+                                                               is: the individual voting aid participants get – determined by the speciﬁc
+                                                               selection of incorporated statements?
+                                                                  The data we use here have been used to build the Belgian1 VAA Doe De
+                                                               Stemtest for the general elections in June 2007. Doe De Stemtest consisted of
+                                                               36 statements. To arrive at this ﬁnal selection, a short-list of 50 statements
+                                                               was included in a survey applied to a random sample of 1,000 Belgian
+                                                               citizens. We use the answers of this sample of Belgian citizens to test whether
+                                                               selecting 36 statements out of the original list of 50 makes a diﬀerence. We
+                                                               will show that the range of possible VAA output distributions is substantial:
+                                                               any selection of 36 out of 50 statements yields diﬀerent results. That is to
+                                                               say, the share of advice to vote for a party diﬀers substantially across the
+                                                               many billions of possible 36-statement conﬁgurations.
+                                                                  The paper starts with documenting the spectacular spread of VAAs
+                                                               throughout Europe. Then we review the limited scientiﬁc literature about
+                                                               the workings of VAAs. We especially focus on the problem of selecting
+                                                               issues and statements. Next we present our evidence. Then we analyse our
+                                                               data and discuss the results. We ﬁnish with a conclusion and discussion
+                                                               section.
+
+                                                               Booming Vote Aid Applications across Europe2
+                                                               Vote Aid Applications have become increasingly popular in a large number
+                                                               of European countries over the last few years. Media companies and
+                                                               1164   S. Walgrave et al.
+
+                                                               independent agencies have set up popular websites oﬀering citizens
+                                                               information about which party programme is closest to their own
+                                                               preferences. In some countries, VAAs have even been launched by major
+                                                               TV shows giving viewers the chance to participate and to receive their voting
+                                                               advice while watching TV. Both the websites and the TV shows have often
+                                                               had impressive participation rates and viewing ﬁgures, which suggests that
+                                                               large numbers of electors have been exposed to them.
+                                                                  To get a raw picture of the spread of the VAA phenomenon, in 2007 we
+                                                               set up a small expert survey among a sample of political scientists from all
+                                                               European countries (via a web survey). We asked them to provide us with
+                                                               some information about the existence of Voting Aid Applications in their
+                                                               country; 38 academics responded, giving us a ﬁrst impression of the
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               situation in 22 countries. In 15 of the 22 countries there was an operational
+                                                               VAA at the last general election. This is the case in countries as diverse as
+                                                               Belgium, Bulgaria, the Czech Republic, Denmark, Finland, France,
+                                                               Germany, Greece, Italy, Hungary, Latvia, Norway, Slovakia, Sweden,
+                                                               Switzerland and the Netherlands.
+                                                                  With a ﬁrst VAA in use as early as in 1989, the Netherlands was the VAA
+                                                               pioneer. The Stemwijzer only reached 500 participants with a print-based
+                                                               version. The numbers radically changed with the rise of the Internet. In 1998
+                                                               the Stemwijzer went online for the ﬁrst time and several other VAAs
+                                                               followed suit. While in 1998 250,000 Dutch voters asked for voting aid, this
+                                                               ﬁgure exploded to 2.6 million users in 2002, that is an astonishing 25 per
+                                                               cent of the Dutch electorate. For the 2003 general elections eight diﬀerent
+                                                               VAAs were online in the Netherlands. Finland is another early adopter,
+                                                               with the ﬁrst and still most popular VAA starting as early as in 1995. Four
+                                                               years later, four television channels broadcast TV shows, each launching
+                                                               another VAA.
+                                                                  With the start of the new century, the successful Dutch Stemwijzer was
+                                                               exported to several other countries. The German Wahl-o-mat and the Swiss
+                                                               Politarena are licensed versions of the Stemwijzer. In 2002, the German
+                                                               Wahl-o-mat was used for the ﬁrst time, and to date it has attracted more than
+                                                               10 million users. It was most successful in 2005, when more than 5 million
+                                                               people participated (Marschall and Schmidt 2008). In Switzerland,
+                                                               Politarena and Smartvote both started in 2003, reaching 600,000 people.
+                                                               Since then more than 20 diﬀerent vote applications were designed for several
+                                                               local and national elections. Since Switzerland has a so-called ‘panachage’
+                                                               system, where voters can vote for candidates on more than one party list,
+                                                               Smartvote allows voters to create a list of candidates (of diﬀerent parties) that
+                                                               are closest to their opinion. Voters can even modify this list, print it out and
+                                                               take it with them when they go out to vote (Ladner et al. 2008). Apart from
+                                                               Switzerland and Germany, also Belgium (Flanders) has been inspired by the
+                                                               Dutch example. In 2003, 2004, and 2007 the Belgian public broadcaster VRT
+                                                               launched its Doe De Stemtest TV show annex VAA which was used by
+                                                               840,000 people in 2004 (Walgrave and Van Aelst 2005). Together with the
+                                                                                        Electoral Eﬀects of Voting Aid Applications     1165
+
+                                                               success of the VAA by the daily De Standaard, the number of users amounted
+                                                               to about 1 million in Belgium in 2004. The further growth and spread of the
+                                                               VAA phenomenon seems not to have come to an end yet. In countries where
+                                                               VAAs have been adopted early and appeared to be successful, the original
+                                                               VAAs have been joined by competitors. Also geographically VAAs are
+                                                               further spreading across Europe. In countries such as Sweden, Norway,
+                                                               Slovakia, the Czech Republic and Ireland, VAAs have been launched
+                                                               recently, always with high participation rates. In 2009, the European
+                                                               University Institute launched the EU Proﬁler, which is a EU-wide VAA for
+                                                               the European elections of June 2009. The EU Proﬁler was available in all
+                                                               national languages of the EU and was customised to each country’s national
+                                                               campaign context. There were 30 country versions, one for every EU member
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               state, and additional versions for Turkey, Switzerland and Croatia. In 2009,
+                                                               many initiatives other were taken by other institutes such as VoteMatch,
+                                                               MonVoteAMoi and Politikabine.
+                                                                  The reasons for VAAs’ growing popularity and spread through Europe
+                                                               are manifold and are related to structural political changes. As explaining
+                                                               VAAs’ success is not the main object of this paper, we brieﬂy mention just a
+                                                               few. First, the VAA boom is probably due to the international trend of
+                                                               dealignment and rising numbers of ﬂoating voters throughout Europe (see
+                                                               for example Dalton and Wattenberg 2000). As voters become more volatile
+                                                               they search for beacons to help them cast their vote. VAAs oﬀer low
+                                                               threshold and ready to use aid. Second, VAAs are compatible with the
+                                                               tendency towards ‘issue voting’. Scholars claim that voters’ choices may be
+                                                               less than before determined by structural features or party identiﬁcation but
+                                                               more by changing issues (see for example Aardal and van Wijnen 2005).
+                                                               VAAs provide an answer to that demand and oﬀer voters easily accessible
+                                                               information on parties’ issue positions. Third, not only the demand of voters
+                                                               for issue and party information but also the supply by independent agencies
+                                                               and media has increased. As mass media increasingly follow their own logic
+                                                               and have become autonomous players in the campaign, they increasingly
+                                                               oﬀer VAAs to their audience as an extension of their services and as a way
+                                                               to establish themselves as a trustworthy electoral guide (see for example
+                                                               Altheide and Snow 1979; Farrell and Schmitt-Beck 2008). Finally, it is hard
+                                                               to deny that the breakthrough of VAAs is also associated with the spread of
+                                                               the Internet. The simple availability of the technology made the production
+                                                               of VAAs easier and it especially provided the communication infrastructure
+                                                               to reach many voters without much eﬀort.
+                                                                  All these general elements leading to VAAs’ spread and popularity apply
+                                                               to most Western political systems to a more or less similar extent. Yet we
+                                                               suspect some speciﬁc features of political systems stimulate or hinder the
+                                                               establishment of successful VAAs. First, VAAs do seem to make less sense
+                                                               in two-party systems. The choice set of the electorate in two-party systems is
+                                                               less complicated and parties’ positions and voters’ identiﬁcations are
+                                                               relatively clear (Teepe and Hooghe 2005). Multi-party systems, in contrast,
+                                                               1166   S. Walgrave et al.
+
+                                                               often have multiple cleavages and voters have less intuitive understanding of
+                                                               what parties stand for; therefore voters need more ‘aid’. This might explain
+                                                               why in the United Kingdom or the United States (or in Ireland), usually
+                                                               trendsetters in campaign practices, VAAs are absent so far. It is no
+                                                               coincidence that VAAs are most popular in countries with a (highly)
+                                                               fragmented party system like the Netherlands. A second reason for the
+                                                               absence of a VAA in some countries may be related to the mass media.
+                                                               VAAs are mostly sponsored by newspapers or television stations. A VAA
+                                                               without media support would have diﬃculty ﬁnancing the system and
+                                                               attracting users. So, in countries in which press freedom is limited and state
+                                                               intervention a common feature, such as Russia and Belarus, we would not
+                                                               expect to see VAAs. The same applies to countries with highly partisan
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               media: a VAA sponsored by a partisan newspaper or television channel will
+                                                               fail to attract ﬂoating voters who search for a neutral voting aid.
+
+                                                               Statement Selection for Voting Aid Applications
+                                                               As mentioned earlier, VAAs’ spectacular rise stands in sharp contrast to the
+                                                               limited scientiﬁc literature on the topic; that is to say: the international,
+                                                               English literature on VAAs is very narrow. We suspect there is some
+                                                               scientiﬁc reﬂection in all countries where VAAs gained popularity, but that
+                                                               local literature is not accessible for us due to language reasons. Our
+                                                               overview below must thus remain conﬁned to the work in English (and
+                                                               Dutch) that we could access. Since this literature is just emerging, a
+                                                               considerable part of this work has not been published but is still in the form
+                                                               of manuscripts and working papers.
+                                                                  Most available (and accessible) work paid attention to the potential eﬀect
+                                                               of VAAs on citizens’ voting behaviour (see for example Kleinnijenhuis and
+                                                               Krouwel 2007; Kleinnijenhuis et al. 2007; Ladner et al. 2008; Laros 2007;
+                                                               Marschall and Schmidt 2008; Van Praag 2007; Walgrave et al. 2008a). Some
+                                                               other work has been done about the reasons people participate in VAAs
+                                                               (Boogers 2006; Hirzalla and Van Zoonen 2008) and about who the people
+                                                               are that use VAAs (Hooghe and Teepe 2007; Ladner et al. 2008; Teepe and
+                                                               Hooghe 2005). But the extant scientiﬁc literature has remained largely silent
+                                                               about how VAAs work, about their internal mechanics and make-up. The
+                                                               contributions focusing on the internal machinery of VAAs can be counted
+                                                               on the ﬁngers of one hand. Most important are two papers by
+                                                               Kleinnijenhuis and Krouwel (2007, 2008). They do not focus on the issue
+                                                               and statement selection process, though, but rather on the dimensionality of
+                                                               the political space in which voters are associated with political parties and
+                                                               on the added value of using weighted statements. In short, they focus on the
+                                                               internal decision rules of VAAs and their eﬀect on the output. What they
+                                                               call the best ‘Multi Attribute Utility Decision’ (MAUD) model ‘predicts’ a
+                                                               certain vote best (Kleinnijenhuis and Krouwel 2007). It is interesting to see
+                                                               what they consider to be the best models. The best models are those that are
+                                                                                         Electoral Eﬀects of Voting Aid Applications      1167
+
+                                                               better than other models at predicting a real past vote for a party. So, the
+                                                               more voting advice concurs with previous voting behaviour, the better the
+                                                               VAA performs, they contend. Kleinijenhuis and Krouwel rely on aggregate
+                                                               percentage distributions: does the advice given by a VAA following a
+                                                               speciﬁc MAUD model result in a distribution of advice that more or less
+                                                               resembles the real electoral strength of the parties? The more a VAA and its
+                                                               internal decision rule manage to generate an election result that
+                                                               approximates to the real election outcome, the better it performs.
+                                                                  That political scientists have barely bothered to examine how VAAs work
+                                                               and how this aﬀects the voting aids they produce is surprising as there are
+                                                               many examples showing that VAA outputs are not consistent but diﬀer
+                                                               across time and across VAAs. Let us give two examples from the
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               Netherlands, the country with the longest VAA tradition. First, Van Praag
+                                                               compared the voting advice given by the Dutch VAA Stemwijzer in 2002,
+                                                               2003, and 2006 (Van Praag 2007: 5). He found dramatic diﬀerences in
+                                                               parties’ share of voting advice between these three elections. The leftist party
+                                                               SP (Socialist Party) got 12 per cent in 2002, dropped to 8 per cent less than a
+                                                               year later in 2003, and got 15 per cent of the advice to vote for it in 2006.
+                                                               The Christian Democrats (CDA) had an even bumpier ride: 11 per cent in
+                                                               2002, barely 3 per cent a year later in 2003, and 15 per cent in 2006. The
+                                                               Dutch Labour Party (PvdA) saw its share of voting advice varying between
+                                                               10 per cent (2006) and 17 per cent (2003) and the Christian Staatkundig
+                                                               Gereformeerde Partij (SGP) between 2 per cent (2002) and 7 per cent (2003).
+                                                               It is hard to believe that, in just four years, the Dutch parties and the Dutch
+                                                               electorate would have changed so dramatically; it is much more likely that
+                                                               the particular conﬁguration of statements in the Stemwijzer varied greatly
+                                                               between 2002 and 2006 leading to oscillating results advantaging one party
+                                                               in a ﬁrst election, another in a second, and yet another one in a third
+                                                               election. It is probable that the real world did not change but rather the
+                                                               Stemwijzer changed in an inconsistent way.
+                                                                  Second, there is the comparison of the ‘advice’ given to a sample of the same
+                                                               citizens by two diﬀerent Dutch VAAs, Stemwijzer and Kieskompas, both for
+                                                               the 2006 Dutch elections (Kleinnijenhuis and Krouwel 2007: 4). Diﬀerences are
+                                                               large: 13 per cent of the advice given by Stemwijzer was in favour of the CDA,
+                                                               21 per cent from Kieskompas; while Stemwijzer sent 28 per cent of participants
+                                                               to SP, compared with only 12 per cent from Kieskompas; Stemwijzer advised 9
+                                                               per cent of the participants to vote for the Christian Union (CU), compared
+                                                               with 17 per cent from Kieskompas. ‘Only 43% of the respondents who used
+                                                               both Kieskompas and Stemwijzer received identical advice’ (Kleinnijenhuis
+                                                               and Krouwel 2007: 5). Again the same picture emerges: large diﬀerences
+                                                               between the outputs of diﬀerent VAAs. The point we want to make is simple:
+                                                               VAAs’ outcome is not stable but seems to change haphazardly from one year to
+                                                               another and from one VAA to the other.
+                                                                  How is it that VAAs yield such inconsistent results? Diverging statement
+                                                               selection is the most probable culprit as we will show in the next sections. To
+                                                               1168   S. Walgrave et al.
+
+                                                               make that point we need ﬁrst to explain how VAAs are generally built. A
+                                                               VAA building process typically consists of several steps. The most crucial
+                                                               step is the selection of the statements that form the heart of the system. VAA
+                                                               builders mostly use diﬀerent criteria to assess the suitability of statements
+                                                               and to make a selection out of an, in principle, inﬁnite number of possible
+                                                               statements (for a description of this process in several countries see
+                                                               Deschouwer and Nuytemans 2005; Krouwel and Fiers 2008; Laros 2007;
+                                                               Marschall and Schmidt 2008). First, statements should be politically
+                                                               relevant; they should deal with important political topics. Second,
+                                                               statements should be diverse and tackle a large number of diﬀerent issues.
+                                                               Third, statements should discriminate between parties; they should be able
+                                                               to distinguish one party from another. Fourth, in some cases, parties are
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               given the chance to veto some statements or to negotiate with the VAA
+                                                               designers about statement wording (Van Praag 2007: 5–8). Typically, the
+                                                               statement selection process starts with generating a long list of statements
+                                                               that is then gradually narrowed down to a short-list and then to a ﬁnal list of
+                                                               statements. In this selection process, the potential outcome – that is the
+                                                               distribution of ‘advice’ over the parties – is not taken systematically into
+                                                               account.
+                                                                  To our knowledge, only a single paper in the scientiﬁc literature refers to
+                                                               the crucial process of issue and statement selection for VAAs. Kleinnijenhuis
+                                                               et al. explicitly tackle the matter when they assert that some statements in the
+                                                               two most important Dutch VAAs for the 2006 general elections were
+                                                               diﬀerentially beneﬁting left-wing and right-wing parties (Kleinnijenhuis
+                                                               et al. 2007: 42–52). They contend that a non-equilibrated ‘left-wing’ or
+                                                               ‘right-wing’ formulation of statements and a disproportional under- or
+                                                               overrepresentation of issues in these VAAs structurally advantaged some
+                                                               Dutch parties at the expense of others. This can be explained by referring to
+                                                               the literature on issue competition and issue ownership (Budge and Farlie
+                                                               1983; Klingemann et al. 1994; Petrocik 1989). Some issues favour certain
+                                                               parties at the expense of others. This is the case because these parties ‘own’
+                                                               the issue at stake: they have acquired a strong reputation on the issue and
+                                                               their stance on the issue is popular (Walgrave and De Swert 2007). On other
+                                                               issues, the same party may have much more diﬃculty convincing the
+                                                               electorate. Statement selection for a VAA inevitably implies a selection of
+                                                               issues and thus a mix of favourable and less favourable issues for each
+                                                               party. In the end, it is very unlikely that a certain selection of statements
+                                                               perfectly balances favourable and unfavourable issues for a party and,
+                                                               consequently, the statement selection process almost inevitably leads to an
+                                                               expansion of ‘advice’ in favour of party A while decreasing that for party B.
+                                                               Added to that comes the fact that not only the underlying issues but also the
+                                                               statement wording advantages some parties and disadvantages others. In
+                                                               sum, statement selection (and statement wording) has the potential to
+                                                               substantially aﬀect the output of a VAA and to vary the distribution of
+                                                               ‘advice’ produced regarding the parties.
+                                                                                         Electoral Eﬀects of Voting Aid Applications      1169
+
+                                                               Data and Methods
+                                                               To take up these issues and to test whether statement selection makes a
+                                                               diﬀerence in terms of party advice output, we carried out a survey among a
+                                                               random sample of 1,000 Belgian citizens.3 Data are weighted on party
+                                                               preference (2004) and socio-demographics. A short-list of 50 potential VAA
+                                                               statements was presented to these 1,000 respondents. The 50 statements had
+                                                               been produced by the builders of the VAA Doe De Stemtest in 2007 –
+                                                               political scientists from four Belgian universities – and were equilibrated in
+                                                               terms of issues and direction. The statements had already been responded to
+                                                               by the political parties. They had been tested on students and were
+                                                               unambiguously formulated. The 50 statements tap a wide range of diﬀerent
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               issues with more important issues, for example welfare or immigration,
+                                                               being covered by more statements than less important issues, for example
+                                                               EU aﬀairs. Here are a few examples of the statements: ‘Also in bars and
+                                                               cafes smoking should be forbidden’; ‘Companies should be forced to hire a
+                                                               certain number of foreign immigrants’; ‘Gay couples should be allowed to
+                                                               adopt children’; ‘High pensions should be taxed more’. In sum, these 50
+                                                               statements match all the criteria that VAA builders typically use: they are
+                                                               relevant, discriminate between parties, cover a wide range of issue domains,
+                                                               and are accepted by the parties. The survey asked respondents to agree or
+                                                               disagree (or declare themselves neutral) with the statements.
+                                                                  A typical VAA consists of 30þ statements. We decided to test a large
+                                                               number of conﬁgurations of 36 statements by running a large number of
+                                                               simulations. Within a total of 50 statements there are 937 billion unique
+                                                               combinations of 36 statements. It is of course impossible to test all these
+                                                               conﬁgurations. Therefore, we take a random sample of 500,000 conﬁgura-
+                                                               tions of 36 statements.
+                                                                  We ﬁrst run simulations of a simple VAA system on the basis of all the
+                                                               random 36-statement conﬁgurations with unweighted statements. We do not
+                                                               distinguish diﬀerent dimensions in the statements. We simply calculate
+                                                               distances between parties and respondents: if a respondent agrees with a party
+                                                               on all 36 statements there is a 100 per cent match between them; if a respondent
+                                                               disagrees with a party on every statement there is a 0 per cent match. For each
+                                                               respondent we only take into account their ‘ﬁrst’ party, that is the party that
+                                                               most closely approximates their own opinions. We consider this as being the
+                                                               ‘voting advice’ that is given by the VAA. We acknowledge that only
+                                                               considering the ﬁrst party is a fairly strict criterion; one might think about
+                                                               considering the ﬁrst two or even the ﬁrst three parties as the ‘advice’ of a VAA.
+                                                               But for the sake of clarity we limit the output of a VAA here to the ﬁrst party,
+                                                               the party the system calculates to be the closest to a respondent’s preferences.
+                                                               Each simulation consists of ‘pushing’ the 1,000 respondents through the basic
+                                                               VAA – consisting of a random sample of 36 random statements – generating a
+                                                               certain voting advice output. So, each simulation generates what one could call
+                                                               a virtual election result for the 1,000 respondents with each party getting a
+                                                               1170   S. Walgrave et al.
+
+                                                               share of the votes – that is: a share of the voting advice (ﬁrst party in the party
+                                                               rank-order). We aggregate all results of all 500,000 randomly sampled
+                                                               simulations into a distribution of advice per party. We then scrutinise these
+                                                               distributions and compare them across parties.
+                                                                  Second, we follow an identical procedure with the same 500,000 random
+                                                               conﬁguration of statements but this time we weight the statements resulting
+                                                               in a more realistic simulation of what most VAAs really do. Indeed, most
+                                                               VAAs use some kind of weighting procedure; trying to simulate real voting,
+                                                               some statements get more weight than others. Weighting can be done by
+                                                               letting voters decide themselves what topics or statements are more
+                                                               important or, in contrast, by assessing the emphasis parties put on certain
+                                                               issues and topics in their manifestos. We decided to follow the last track
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               here. All party manifestos of the Flemish parties were entirely coded
+                                                               following the procedure of the Comparative Party Manifesto project in
+                                                               which each (quasi)sentence gets a topic code (Budge et al. 2001). The
+                                                               proportional issue scores are then used to weight the potential VAA
+                                                               statements about that issue. If a party in its manifesto devotes a lot of
+                                                               attention to the welfare issue, for example, the welfare statements in the
+                                                               VAA will get more weight for that party; if a respondent agrees with that
+                                                               party on the welfare statements this will boost that party’s score in the VAA
+                                                               output this respondent gets. In a nutshell, the weighting procedure we use
+                                                               here consists of an issue-speciﬁc weight per party generating a complex
+                                                               system of speciﬁc weights per statement and per party. This more
+                                                               complicated VAA system is also tested 500,000 times based on the same
+                                                               500,000 random conﬁgurations of statements. We expect this procedure to
+                                                               generate diﬀerent results than the simple ‘add-up’ version of the VAA.
+                                                                  In the analyses below we only take into account the ﬁve major Flemish
+                                                               parties or cartels competing in the 2007 general elections. Apart from the
+                                                               ecological party Groen! and the extreme-right Vlaams Belang, the three
+                                                               mainstream parties – socialists, liberals and Christian democrats – entered
+                                                               the electoral arena in a cartel with a smaller party: the CD&V-N-VA
+                                                               (Christian democrats), SP.A-Spirit (socialists) and VLD-Vivant (liberals).
+                                                               Our VAA simulation produces voting advice for each of these parties
+                                                               separately. Yet to be able to put the VAA output into perspective by
+                                                               comparing the VAA outputs with the real election results of 2004 and 2007 –
+                                                               we do not know what share of people voting for the CD&V-N-VA cartel
+                                                               actually voted for the CD&V or for the smaller N-VA, for example – we
+                                                               aggregate the advice for both cartel partners into one cartel advice. This also
+                                                               means that we will not deal with Lijst Dedecker, a newly founded (2007)
+                                                               liberal party that gained more than 6 per cent of the votes, nor with some
+                                                               other smaller parties. Table 1 documents the real electoral strength of the
+                                                               Belgian (Flemish) parties in 2004 and 2007.
+                                                                  In the next section we examine the distribution of advice to vote for a
+                                                               party as produced by 500,000 diﬀerent VAAs each time consisting of
+                                                               a diﬀerent conﬁguration of 36 statements. The main operational questions are
+                                                                                                 Electoral Eﬀects of Voting Aid Applications                      1171
+
+                                                                                                             T ABL E 1
+                                                                 R E A L E L E C T O R A L S T R E N G T H OF F L E M I S H P A R T IE S I N 20 0 4 A N D 2 0 07 ( % )
+
+                                                                                                                      2004                                         2007
+                                                               Groen!                                                   7.6                                          6.3
+                                                               CD&V-N-VA                                               26.1                                         29.6
+                                                               SP.A-Spirit                                             19.7                                         16.3
+                                                               Vlaams Belang                                           24.2                                         19.0
+                                                               VLD-Vivant                                              19.8                                         18.8
+                                                               Other parties                                            2.7                                         10.0
+                                                               Total                                                  100.0                                        100.0
+
+
+                                                               the following: what are the basic parameters of the distribution per party?
+                                                               What is the average score a party gets and how stretched is the distribution?
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               Does the distribution approach normality? What about the real electoral
+                                                               results of 2004 and 2007? In other words: how large is the variation in vote
+                                                               shares per party as produced by the 500,000 36-statement conﬁgurations? And
+                                                               what are the diﬀerences between unweighted and weighted VAAs?
+
+                                                               Results
+                                                               We focus in the ﬁrst instance on the simple VAA containing unweighted
+                                                               statements. In the graphs contained in Figure 1, we mark the real electoral
+                                                               strength of a party with a line labelled ‘2007’ on the left side and a line
+                                                               labelled ‘2004’ on the right side. We also mark the output of the actual
+                                                               selection of statements that was in reality used for Doe De Stemtest in 2007
+                                                               on the graphs with a line labelled ‘DDST 2007’.4
+                                                                  Each graph contains, per party, the distribution of the ‘advice’ to vote for
+                                                               that party – the party would appear as ‘the closest’ party if the VAA was
+                                                               based on that particular 36-statement conﬁguration – for all 500,000
+                                                               simulations. For example, the ﬁrst graph shows how many of the 36-
+                                                               statement combinations would result in advice to a certain proportion of
+                                                               participants to vote for the party Groen! The average of the distribution is
+                                                               3.8 per cent. This means that, over all possible 36-statement conﬁgurations
+                                                               in our sample, on average 3.8 per cent of the participants would get the
+                                                               advice to vote for the Flemish green party. Comparing that ﬁgure with the
+                                                               real election results in 2007 (6.3 per cent) and 2004 (7.6 per cent) shows that
+                                                               a large majority of conﬁgurations result in less advice in favour of Groen!
+                                                               than the real election strength of Groen! The histogram also shows the
+                                                               descriptors of the distribution, standard deviation and kurtosis.
+                                                                  The graphs in Figure 1 show that the distribution of vote shares per party is
+                                                               largely normal; this was to be expected according to the Central Limit
+                                                               Theorem (a large number of independent statements will aggregate in a normal
+                                                               distribution). The normality is grasped by the kurtosis statistic. If the kurtosis
+                                                               approaches zero the distribution is Gaussian. For all parties the kurtosis
+                                                               approximates zero, except for Groen! (where it is 7.34). The reason simply is
+                                                               that the distribution of the Flemish green party is heavily skewed due to its
+                                                               1172   S. Walgrave et al.
+
+                                                                                                   FI G U R E 1
+                                                                                   V O T I N G A DV I C E F O R E A C H PA R T Y
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+                                                               Electoral Eﬀects of Voting Aid Applications   1173
+
+                                                                      F I G UR E 1
+                                                                      (C o n t i n u e d )
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+                                                               1174   S. Walgrave et al.
+
+                                                                                                  F I G UR E 1
+                                                                                                  (C o n t i n u e d )
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               average close to zero and the impossibility of having negative values. So,
+                                                               Groen!’s distribution’s left tail is cut oﬀ leading to a fairly high kurtosis. The
+                                                               right tail of the distribution approaches normality. That all distributions are
+                                                               almost perfectly normally distributed is important: it establishes that for each
+                                                               party there is a central tendency in the 50 statements. The 50 statements tend to
+                                                               produce a voting advice output normally clustered around an average share of
+                                                               voting advice. Of course, 50 other statements would most likely lead to
+                                                               diﬀerent distributions with a diﬀerent mean but they would almost certainly be
+                                                               normally distributed too, with an inbuilt dominant tendency to yield a certain
+                                                               party a certain share of the votes.
+                                                                  The most important ﬁnding in the graphs is that the spread of the advice
+                                                               around the mean seems, purely statistically speaking, to be relatively
+                                                               narrow: standard deviations are not really large (between 2.5 and 7.2). The
+                                                               distributions seem to be highly peaked with steep slopes and relatively short
+                                                               tails. Only for SP.A-Spirit are outputs more dispersed. This makes sense as
+                                                               there is a strong association between means and standard deviations and as
+                                                               the mean of SP.A-Spirit is by far the highest (39.2 per cent). The statistical
+                                                               dispersion ﬁgures reinforce the point made above: there is not only a central
+                                                               tendency in the batch of 50 statements but this central tendency is quite
+                                                               strong. However, in real political terms the distributions point to a large
+                                                               variation in results. For example, some statement conﬁgurations yield the
+                                                                                          Electoral Eﬀects of Voting Aid Applications      1175
+
+                                                               CD&V-N-VA 5 per cent of the advice; in other conﬁgurations the party can
+                                                               boast 32 per cent of advice; VLD-Vivant varies between 0.3 per cent and 23
+                                                               per cent; Vlaams Blok between 4 and 26 per cent; etc. In the real political
+                                                               world, these diﬀerences are really substantial. A VAA producing 5 per cent
+                                                               advice to vote for the main party (CD&V-N-VA) and another VAA, based
+                                                               on the same short-list of statements, that yields more than 30 per cent of
+                                                               advice for the same party are simply very diﬀerent VAAs. The distributional
+                                                               analysis visibly explains how it is possible that diﬀerent VAAs produce
+                                                               diverging results: the statements incorporated in the system matter and
+                                                               determine the results. The analysis also explains why VAAs have become the
+                                                               object of a ﬁerce political debate in some countries: in political terms, their
+                                                               outputs diﬀer substantially and parties can easily feel handicapped or
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               favoured by speciﬁc VAAs. The distribution of advice may be normal and
+                                                               statistically speaking rather narrow, but statement selection can boost or
+                                                               curtail a party’s advice.
+                                                                  A secondary ﬁnding that reinforces the previous point about the
+                                                               dispersion of advice is that there is a considerable gap between the real
+                                                               election results of 2004 and 2007 and the advice produced by the
+                                                               simulations. The mean voting advice output for none of the parties
+                                                               approaches the real election results. This is shown in Figure 1 by the fact
+                                                               that the real election results are always situated at the far ends of the tails of
+                                                               the distributions. This was of course to be expected to some extent as VAAs
+                                                               are only based on parties’ issue positions and as political science has taught
+                                                               us that voters do not vote for parties only on the basis of their stances.
+                                                               Interestingly, diﬀerences between parties are substantial. Some parties
+                                                               receive more advice compared to their electoral strength, other parties tend
+                                                               to be seriously underrated. SP.A-Spirit, for example, receives a strikingly
+                                                               higher amount of advice to vote for it than its electoral strength would
+                                                               suggest; parties such as CD&V-N-VA and VLD-Vivant are electorally much
+                                                               stronger than the VAA simulations suggest.
+                                                                  What about the real Doe De Stemtest 2007 statement conﬁguration that
+                                                               was used in reality to advise a few hundred thousand Belgian voters at
+                                                               the 2007 elections? The line labelled ‘DDST 2007’ in the graphs marks the
+                                                               solution really used in 2007, although in the real system weighted statements
+                                                               were used. The actual 2007 conﬁguration is always situated close to the
+                                                               average, sometimes it produces results that are slightly closer to the election
+                                                               results (Groen!, CD&V-N-VA, Vlaams Belang), sometimes the 2007
+                                                               conﬁguration is further away from the elections than the mean (SP.A-Spirit
+                                                               and VLD-Vivant).
+                                                                  So far we have presented the results of the unweighted version of the
+                                                               simulated VAAs. Do more realistic simulations based on weighted
+                                                               statements lead to diﬀerent results? We do not show the graphs per party
+                                                               but summarise the basic statistics per party in Table 2.
+                                                                  Weighted VAAs produce results that are equally normally distributed
+                                                               (ﬁgures not given in Table 2). The means of the advice for all ﬁve major
+                                                               1176    S. Walgrave et al.
+
+                                                                                                    T ABL E 2
+                                                                 WE IG H TE D VE RSU S U NW EIG HT ED SIMU LA TION S (N ¼ 5 0 0 ,0 0 0 ) ; SU M M A R Y
+                                                                                       ST ATIST I CS OF DIST RIBUTIONS
+
+                                                                                                   Mean                           Standard deviation
+                                                               Party                  Unweighted          Weighted          Unweighted          Weighted
+                                                               Groen!                     3.8                3.5                2.5                2.0
+                                                               CD&V-N-VA                 16.0               12.9                4.1                5.1
+                                                               SP.A-Spirit               39.2               35.6                7.2                8.2
+                                                               Vlaams Belang             12.5               11.1                3.6                3.7
+                                                               VLD-Vivant                 6.8                7.0                3.9                8.4
+                                                               Average                   15.7               14.0                4.3                5.5
+
+
+                                                               parties slightly decrease; this implies that the smaller parties (not included in
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               Table 2) receive more advice. More importantly, the standard deviations
+                                                               increase from the unweighted to the weighted version of the same VAA.
+                                                               Weighted VAAs lead to ﬂatter distributions with longer tails and larger
+                                                               standard deviations: the average standard deviation goes up from 4.3 in the
+                                                               unweighted to 5.5 in the weighted simulations. This was to be expected. If
+                                                               some statements have more weight for some parties then the chances are
+                                                               high that their presence or absence in the conﬁguration aﬀects the result of
+                                                               this party more and leads to more variation. In sum, the impact of statement
+                                                               selection on the output further increases when statements are weighted.
+
+
+                                                               Conclusion and Discussion
+                                                               The aim of the study was to test empirically whether the speciﬁc statement
+                                                               conﬁguration incorporated in a Vote Aid Application (VAA) makes a
+                                                               diﬀerence. Departing from the absence of discussion and debate about
+                                                               VAAs among political scientists, our goal was to start the debate about the
+                                                               make-up of VAAs. To what extent is the output of VAAs – that is, the
+                                                               voting ‘advice’ they produce – aﬀected by the speciﬁc statements
+                                                               incorporated in the system? We sought the answer to that question drawing
+                                                               upon a random sample of the Belgian population and on the answers of
+                                                               1,000 citizens to 50 typical VAA statements, we ran 500,000 simulations of
+                                                               VAAs with diverging 36-statement conﬁgurations. We alternatively tested
+                                                               unweighted and weighted VAA conﬁgurations. Each time we calculated
+                                                               how many Belgian citizens would be advised to vote for a certain party and
+                                                               we analysed the distribution of advice per party.
+                                                                 We found that statements do indeed matter. There is a central tendency in
+                                                               the statements: there is variation in the distribution of advice but the
+                                                               variation is clustered around a dominant mean. This suggests that an
+                                                               indiscriminate batch of statements has an inbuilt tendency to favour certain
+                                                               parties in contrast to others. Another batch of statements may have an
+                                                               entirely diﬀerent in-built partisan bias. Although statistically speaking the
+                                                               variation in results seems not too large, in political terms the dispersion of
+                                                               the advice distribution is substantial. The outputs of advice to vote for a
+                                                                                         Electoral Eﬀects of Voting Aid Applications     1177
+
+                                                               certain party diﬀer across conﬁgurations. Some conﬁgurations generate
+                                                               hardly any advice to vote for a certain party, other conﬁgurations boost
+                                                               advice in favour of a party. Some parties’ vote shares more than sextuple
+                                                               between the least and the most favourable statement conﬁguration. The real
+                                                               electoral strength of parties does not seem to be related to the advice
+                                                               produced; distances between the vote advice distributions and real
+                                                               electoral strengths are large. Weighting the statements does not really
+                                                               change the output. The mean of the distributions moves just a little bit but
+                                                               the spread of the output distributions increases. This implies that the eﬀect
+                                                               of the statement selection process even increases when weighting the
+                                                               statements.
+                                                                  It may be the case, of course, that the key ﬁnding that statements matter is
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               the result of our particular batch of 50 statements. These 50 statements –
+                                                               they were all used to devise the real Doe De Stemtest in Belgium in 2007 –
+                                                               may have had particular characteristics and other statements, and statement
+                                                               conﬁgurations, may have produced entirely diﬀerent results. This possibility
+                                                               cannot be excluded. Yet the list of 50 statements we have worked with here
+                                                               was not just put together haphazardly, they were not randomly or carelessly
+                                                               selected. In contrast, they were carefully chosen by a team of four political
+                                                               scientists; they were balanced across issues; they were formulated in a
+                                                               balanced way trying to avoid bias in favour of left- or right-wing parties;
+                                                               they were agreed upon by the Belgian political parties. In short, the 50
+                                                               statements were selected according to all criteria that are typically used by
+                                                               VAA builders when choosing VAA statements (see above). So it seems
+                                                               unlikely that another batch of statements would lead to strongly diverging
+                                                               results in terms of the dispersion of advice outputs.
+                                                                  This study has only scratched the surface of an emerging ﬁeld of research.
+                                                               As VAAs are spreading to more countries and as the participation rates rise
+                                                               further, examining the mechanics of VAAs will gain relevance. Our
+                                                               contribution was modest: we merely showed that statements make a
+                                                               diﬀerence. Much remains to be done. We see several avenues for further
+                                                               research. First, we need more evidence of more VAAs in more diﬀerent
+                                                               political settings. It cannot be excluded that VAAs in less crowded and
+                                                               fragmented, or more polarised, party systems yield other results. It would be
+                                                               especially interesting to see what outputs VAAs yield in two-party systems.
+                                                               Second, we need to go beyond the ﬁnding that statement selection matters
+                                                               but need to investigate what VAA statements favour which parties and why.
+                                                               Following the political science literature on issue ownership, we expect that
+                                                               statements about issues that are owned by parties beneﬁt those parties. Also,
+                                                               statement wording needs more attention. Following the literature on
+                                                               questionnaire eﬀects, statements can probably be formulated in a ‘right-
+                                                               wing’ or a ‘left-wing’ way and this may determine the VAA outputs for
+                                                               right- and left-wing parties. Another hypothesis could be that parties proﬁt
+                                                               from a unique position and have to gain disproportionately when they stand
+                                                               alone with their position on a statement.
+                                                               1178    S. Walgrave et al.
+
+                                                                  We not only need more research about how VAAs work and how they
+                                                               produce advice but also about the role VAAs play in electoral campaigns.
+                                                               As voter realignment further increases, voters may become more reliant on
+                                                               VAAs to help them make their increasingly diﬃcult choice. Although extant
+                                                               work concluded that VAAs do not matter a lot for most voters, this may
+                                                               change in the future as the electorate becomes more volatile. VAAs may
+                                                               buttress the trend towards dealignment because VAAs explicitly rely on the
+                                                               issue positions of parties only and not on other, probably more stable,
+                                                               elements of party choice like voting habits, party identiﬁcation, and party
+                                                               ideology. Consequently, VAAs can also reinforce the tendency towards issue
+                                                               voting as they present their participants merely with parties’ issue positions
+                                                               and do not take into account either a party’s strength or its chances to
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               become part of government. Because VAAs neglect strategic motivations
+                                                               altogether, they may be especially advantageous for small parties and, as a
+                                                               consequence, lead to more fragmented electoral outcomes. Indeed, small
+                                                               parties, in the real world, have diﬃculties in drawing attention to their
+                                                               policy goals as they are considered to be irrelevant in the electoral struggle.
+                                                               VAAs may help small parties to overcome this strategic handicap by solely
+                                                               drawing voters’ attention to what these parties stand for and not to the slim
+                                                               chances that these parties stand to carry out their programme.
+                                                                  Finally, what do our ﬁndings mean for VAAs and for the political
+                                                               scientists who are often strongly engaged in building them? Are VAAs by
+                                                               deﬁnition unreliable, just an entertaining game that does not inform the
+                                                               voter about the match of their preferences with the parties’ oﬀer? Our results
+                                                               show that statement selection is the crux of the VAA-building exercise and
+                                                               that it should be undertaken with the greatest possible care; statements are
+                                                               too important to be selected carelessly. The care with which political
+                                                               scientists design their scientiﬁc surveys stands in sharp contrast to the
+                                                               carelessness with which some of them engage in devising VAAs. As VAAs
+                                                               may have real-world consequences one might expect rather the opposite to
+                                                               be the case. VAA-builders should be aware of these statement eﬀects. Acting
+                                                               as if statements are just statements and as if all selections would inevitably
+                                                               lead to the same or similar advice is unwise.
+
+                                                               Notes
+                                                               1. Doe De Stemtest 2007 was not a real Belgian VAA. It only targeted the Dutch-speaking part
+                                                                  of the Belgian population living in Flanders (North) and forming 60% of the Belgian
+                                                                  population.
+                                                               2. This section draws on Walgrave et al. (2008).
+                                                               3. The computer assisted telephone survey (CATI) was carried out by TNS-Media on a random
+                                                                  sample of 1,000 18þ year old Dutch speaking Belgians between 10 and 20 April 2007. The
+                                                                  survey was ordered by a consortium of four universities: University of Antwerp (Stefaan
+                                                                  Walgrave), Free University Brussels (Kris Deschouwer), Catholic University Leuven (Marc
+                                                                  Hooghe) and University of Ghent (Carl Devos). We thank these colleagues for letting us use
+                                                                  these data. The survey was used to benchmark the 2007 version of the VAA Doe De Stemtest
+                                                                  that was aired by the public broadcaster VRT in May.
+                                                                                               Electoral Eﬀects of Voting Aid Applications                1179
+
+                                                               4. Doe De Stemtest worked with weighted statements based on the party manifestos and on
+                                                                  people’s preferences. In the statement selection process the weight of the statements played a
+                                                                  decisive role. So, what we indicate in the graphs in Figure 1 is the output of the Doe De
+                                                                  Stemtest statement conﬁguration if the statements had not been weighted, which was not the
+                                                                  case.
+
+
+
+                                                               References
+                                                               Aardal, Bernt, and Pieter van Wijnen (2005). ‘Issue Voting’, in J. Thomassen (ed.), The
+                                                                 European Voter. Oxford: Oxford University Press, 192–213.
+                                                               Altheide, D., and R. Snow (1979). Media Logic. Beverly Hills, CA: Sage.
+                                                               Boogers, Marcel (2006). Enquête bezoekers Stemwijzer. Tilburg: Tilburgse school voor politiek
+                                                                 en bestuur.
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               Budge, Ian, and Dennis Farlie (1983). ‘Party Competition – Selective Emphasis or Direct
+                                                                 Confrontation? An Alternative View with Data’, in H. Daalder and P. Mair (eds.), West
+                                                                 European Party Systems. Continuity and Change. London: Sage, 267–305.
+                                                               Budge, Ian, Hans-Dieter Klingemann, Andrea Volkens, Judith Bara, and Eric Tanenbaum
+                                                                 (2001). Mapping Policy Preferences. Estimated for Parties, Electors and Governments 1945–
+                                                                 1998. Oxford: Oxford University Press.
+                                                               Dalton, J. Russel, and Martin Wattenberg (2000). Parties without Partisans. Political Change in
+                                                                 Advanced Industrial Democracies. Oxford: Oxford University Press.
+                                                               Deschouwer, Kris, and Michiel Nuytemans (2005). ‘De Stemtest van de VRT: een kijk in de
+                                                                 keuken’, Samenleving & Politiek, 12, 13–31.
+                                                               Farrell, David, and Rüdiger Schmitt-Beck (2008). Non-Party Actors in Electoral Politics. The
+                                                                 Role of Interest Groups and Independent Citizens in Contemporary Election Campaigns. Baden-
+                                                                 Baden: Nomos.
+                                                               Hirzalla, Fadi, and Liesbeth Van Zoonen (2008). ‘Usage of Online Voting Aid among Young
+                                                                 People in the Netherlands’, Paper presented at the conference Voting Advice Applications
+                                                                 between Charlatanism and Political Science, Antwerp, 16 May.
+                                                               Hooghe, Marc, and Wouter Teepe (2007). ‘Party Proﬁles on the Web. An Analysis of the
+                                                                 Logﬁles of Nonpartisan Interactive Political Internet Sites in the 2003 and 2004 Election
+                                                                 Campaigns in Belgium’, New Media and Society, 9, 965–85.
+                                                               Kleinnijenhuis, Jan, and André Krouwel (2007). ‘The Nature and Inﬂuence of Party
+                                                                 Proﬁling Websites’, Paper presented at the conference Politicologenetmaal, Nijmegen, 29–
+                                                                 30 May.
+                                                               Kleinnijenhuis, Jan, and André Krouwel (2008). ‘Simulation of Decision Rules for Party Advice
+                                                                 Websites’, Unpublished paper, Amsterdam.
+                                                               Kleinnijenhuis, Jan, Otto Scholten, Wouter van Atteveldt, Anita van Hoof, André Krouwel,
+                                                                 Dirk Oegema, Jan de Ridder, and Janet Takens (2007). Nederland vijfstromenland. De rol van
+                                                                 de media en stemwijzers bij de verkiezingen van 2006. Amsterdam: Bert Bakker.
+                                                               Klingemann, H., R. Hoﬀerbert, and I. Budge (1994). Parties, Policies and Democracy. Oxford:
+                                                                 Westview.
+                                                               Krouwel, André, and Stefaan Fiers (2008). ‘From Text to Position. Text-extraction and
+                                                                 Authorisation of Party Positions along Dimensions of Political Competition’, Paper
+                                                                 presented at the conference Voting Advice Applications between Charlatanism and Political
+                                                                 Science, Antwerp, 16 May.
+                                                               Ladner, Andreas, Gabriela Felder, and Jan Fivaz (2008). ‘Are Voting Advice Applications
+                                                                 More than Toys? First Findings on Impact and Accountability of VAAs’, Paper presented at
+                                                                 the conference Voting Advice Applications between Charlatanism and Political Science,
+                                                                 Antwerp, 16 May.
+                                                               Laros, Jasper (2007). ‘Kiezen voor Stemadvies. Over de eﬀecten van het gebruik van
+                                                                 stemadviesprogramma’s’, Unpublished Master’s thesis Politicologie, Free University of
+                                                                 Amsterdam, Amsterdam.
+                                                               1180    S. Walgrave et al.
+
+                                                               Marschall, Stefan, and Christian Schmidt (2008). ‘Preaching to the Converted or Making a
+                                                                 Diﬀerence? Mobilizing Eﬀects of an Internet Application at the German General Election
+                                                                 2005’, in D. Farrell and R. Schmitt-Beck (eds.), Non-party Actors in Electoral Politics. Baden-
+                                                                 Baden: Nomos, 259–78.
+                                                               Petrocik, John (1989). ‘The Theory of Issue Ownership: Issues, Agendas, and Electoral
+                                                                 Coalitions in the 1988 Elections’, Paper presented at the annual meeting of the American
+                                                                 Political Science Association, Atlanta, 2–5 September.
+                                                               Swyngedouw, Marc, and Bart Goeminne (2005). ‘Doe de stemtest: potentieel het machtigste
+                                                                 campagne-instrument!’, Samenleving en politiek, 12, 57–60.
+                                                               Teepe, Wouter (2005). ‘Persoonlijke partijproﬁelen: een analyse vanuit de kennistechnologie’,
+                                                                 Samenleving en politiek, 12, 2–12.
+                                                               Teepe, Wouter, and Marc Hooghe (2005). ‘Interactief Internetgebruik in tijden van
+                                                                 verkiezingskoorts. Een analyse van de gebruikers van ‘‘Wij kiezen partij voor u’’ in 2003
+                                                                 en 2004’, Samenleving & Politiek, 12, 73–88.
+Downloaded by [Universiteit Antwerpen] at 05:37 30 July 2014
+
+
+
+
+                                                               Van Praag, Philip (2007). ‘De Stemwijzer: hulpmiddel voor de kiezers of instrument van
+                                                                 manipulatie?’, Paper presented at the conference Politicologenetmaal, Nijmegen, 29–30 May.
+                                                               Walgrave, Stefaan, and Knut De Swert (2007). ‘Where does Issue Ownership come from? From
+                                                                 the Party or from the Media? Issue-party Identiﬁcations in Belgium (1991–2005)’, Harvard
+                                                                 International Journal of Press and Politics, 12, 37–67.
+                                                               Walgrave, Stefaan, and Peter Van Aelst (2005). ‘Much Ado About Almost Nothing. Over de
+                                                                 electorale eﬀecten van Doe de Stemtest 2004’, Samenleving en Politiek, 12, 61–72.
+                                                               Walgrave, Stefaan, Peter Van Aelst, and Michiel Nuytemans (2008a). ‘‘Do the Vote Test’’: The
+                                                                 Electoral Eﬀects of a Popular Vote Advice Application at the 2004 Belgian Elections’, Acta
+                                                                 Politica, 43, 50–70.
+                                                               Walgrave, Stefaan, Peter Van Aelst, and Michiel Nuytemans (2008b). ‘Vote Advice
+                                                                 Applications as New Campaign Players? The Electoral Eﬀects of the ‘‘Do the Vote Test’’
+                                                                 during the 2004 Regional Elections in Belgium’, in D. Farrell and R. Schmitt-Beck (eds.),
+                                                                 Non Party Actors in Electoral Politics. The Role of Interest Groups and Independent Citizens in
+                                                                 Contemporary Election Campaigns. Baden-Baden: Nomos, 237–58.
+
