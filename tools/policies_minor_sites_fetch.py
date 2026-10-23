@@ -158,16 +158,37 @@ def te_tai_tokerau():
 
 def conservative():
     P, b = "conservative", "https://www.conservatives.nz"
-    pages = [("policy", "Our Policies"), ("we-stand-for", "What We Stand For"), ("principles", "Our Principles"),
-             ("small-government", "Smaller Government"), ("familybuilder-old", "Family Values"),
-             ("news/new-policies-announcement", None), ("news/police-policy-announcement", None),
-             ("news/has-new-zealand-failed-its-oceans", None), ("news/has-new-zealand-lost-control-of-its-own-government", None),
-             ("news/policy-clarification-on-rural%2C-environmental%2C-and-agricultural-issues", None),
-             ("news/press-release---improving-access-to-justice-for-self-represented-litigants", None),
-             ("news/sharpening-the-teeth-of-the-ipca", None)]
     items = []
+    # 2026 campaign website (linked from conservatives.nz as "CLICK HERE FOR 2026 CAMPAIGN WEBSITE")
+    c = "https://conservatives.org.nz"
+    items.append(page_doc(P, "campaign-policies-index", c + "/policies/", "Conservative.NZ Party Policies (2026 campaign site)"))
+    lp, _ = L.fetch(c + "/policies/", P)
+    seen = []
+    for h, t in L.links(lp, c + "/policies/"):
+        if h.startswith(c + "/policies/") and h.rstrip("/") != c + "/policies" and h not in seen:
+            seen.append(h)
+            items.append(page_doc(P, "campaign-" + slugify(h.rstrip("/").split("/")[-1]), h, t + " (2026 campaign site)"))
+    # main party website (Wix). Blog-post bodies live in the page's wix-warmup-data JSON.
+    pages = [("policy", "Our Policies"), ("we-stand-for", "What We Stand For"), ("principles", "Our Principles"),
+             ("small-government", "Smaller Government"), ("familybuilder-old", "Family Values")]
     for sl, ti in pages:
-        items.append(page_doc(P, slugify(sl.replace("news/", "news-").replace("%2C", "")), f"{b}/{sl}", ti))
+        items.append(page_doc(P, "site-" + slugify(sl), f"{b}/{sl}", ti))
+    news = ["new-policies-announcement", "police-policy-announcement", "has-new-zealand-failed-its-oceans",
+            "has-new-zealand-lost-control-of-its-own-government",
+            "policy-clarification-on-rural%2C-environmental%2C-and-agricultural-issues",
+            "press-release---improving-access-to-justice-for-self-represented-litigants", "sharpening-the-teeth-of-the-ipca"]
+    for sl in news:
+        u = f"{b}/news/{sl}"
+        path, code = L.fetch(u, P)
+        if not path:
+            items.append({"url": u, "title": sl, "doc": L.write_doc(P, "news-" + slugify(sl.replace("%2C", "")), sl, u, None,
+                          note=f"HTTP {code}")})
+            continue
+        title = L.soup(path).title.get_text(strip=True).replace(" | CONSERVATIVES.NZ", "")
+        md = L.wix_blog_md(path)
+        items.append({"url": u, "title": title, "doc": L.write_doc(P, "news-" + slugify(sl.replace("%2C", "")), title, u, md,
+                      method="curl; post body read from the page's embedded wix-warmup-data JSON",
+                      note="Wix renders blog posts client-side; the text below is the post body embedded in the page source.")})
     save_index(P, items)
 
 

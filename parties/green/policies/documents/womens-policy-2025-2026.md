@@ -1,16 +1,16 @@
 ---
-title: "Women’s Policy 1 (Green Party policy document)"
+title: "Women’s Policy (Green Party policy document)"
 party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/65060/attachments/original/1779238542/Policy-Greens_Womens_Policy_2025-2026.pdf?1779238542"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 7
 policy_version: "20 May 2026"
 local_copy: "raw/party-docs/green/pdf/Policy-Greens_Womens_Policy_2025-2026.pdf"
 sha1: "a2715b285a99680c77ffc73812e96f949bb2e85e"
 ---
-# Women’s Policy 1 (Green Party policy document)
+# Women’s Policy (Green Party policy document)
 
 <!-- page 1 -->
 

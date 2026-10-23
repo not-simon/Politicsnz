@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/64962/attachments/original/1784591017/Policy-Greens_Seniors_Policy_2025-2026.pdf?1784591017"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 5
 policy_version: "21 July 2026"
 local_copy: "raw/party-docs/green/pdf/Policy-Greens_Seniors_Policy_2025-2026.pdf"

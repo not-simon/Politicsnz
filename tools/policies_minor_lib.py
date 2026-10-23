@@ -38,9 +38,14 @@ def fetch(url, slug, ext=".html", refresh=False, browser=False):
         r = subprocess.run(["timeout", "120", "node", os.path.join(ROOT, "tools", "fetch_page.js"), url, path],
                            env=env, capture_output=True, text=True)
         return (path if os.path.exists(path) else None), (200 if os.path.exists(path) else 0)
-    r = subprocess.run(["curl", "-sS", "-L", "--max-time", "60", "-A", UA, "-o", path, "-w", "%{http_code}", url],
-                       capture_output=True, text=True)
-    code = int(r.stdout.strip() or 0)
+    import time
+    for attempt in range(4):
+        r = subprocess.run(["curl", "-sS", "-L", "--max-time", "60", "-A", UA, "-o", path, "-w", "%{http_code}", url],
+                           capture_output=True, text=True)
+        code = int(r.stdout.strip() or 0)
+        if code not in (0, 429, 502, 503):
+            break
+        time.sleep(6 * (attempt + 1))
     if code != 200:
         try:
             os.remove(path)
@@ -74,7 +79,7 @@ def html_to_md(el):
     for t in el.find_all(string=True):
         if isinstance(t, NavigableString) and not t.find_parent("pre") and "\n" in t:
             t.replace_with(re.sub(r"\s*\n\s*", " ", str(t)))
-    md = markdownify(str(el), heading_style="ATX", bullets="-", strip=["img"])
+    md = markdownify(str(el), heading_style="ATX", bullets="-", strip=["img"], newline_style="backslash")
     md = re.sub(r"[ \t]+\n", "\n", md)
     md = re.sub(r"\n{3,}", "\n\n", md)
     md = re.sub(r"[ \t]{2,}", " ", md)
@@ -215,3 +220,66 @@ def pdf_md(path):
 def soup_from_html(h):
     from bs4 import BeautifulSoup
     return BeautifulSoup("<div>" + h + "</div>", "html.parser").div
+
+
+def wix_blog_md(path):
+    """Wix blog posts keep their body in the 'wix-warmup-data' JSON (Ricos nodes). Returns markdown or None."""
+    s = soup(path)
+    tag = s.find("script", id="wix-warmup-data")
+    if not tag:
+        return None
+    data = json.loads(tag.string)
+    out = []
+
+    def text_of(node):
+        if node.get("type") == "TEXT":
+            return node.get("textData", {}).get("text", "")
+        return "".join(text_of(n) for n in node.get("nodes", []))
+
+    def walk(node, depth=0):
+        t = node.get("type")
+        if t == "HTML":
+            h = node.get("htmlData", {}).get("html")
+            if h:
+                from bs4 import BeautifulSoup
+                hs = BeautifulSoup(h, "html.parser")
+                body = hs.body or hs
+                for x in body.select("style, script, head"):
+                    x.decompose()
+                for x in body.find_all(["td", "th"]):
+                    x.name = "div"
+                for x in body.find_all(["table", "tbody", "thead", "tr", "center"]):
+                    x.unwrap()
+                out.append(html_to_md(body))
+            return
+        if t == "HEADING":
+            lvl = node.get("headingData", {}).get("level", 2)
+            out.append("#" * min(lvl + 1, 6) + " " + text_of(node).strip())
+            return
+        if t == "PARAGRAPH":
+            out.append(text_of(node).strip())
+            return
+        if t in ("BULLETED_LIST", "ORDERED_LIST"):
+            for i, li in enumerate(node.get("nodes", []), 1):
+                out.append(("- " if t == "BULLETED_LIST" else f"{i}. ") + text_of(li).strip())
+            return
+        for n in node.get("nodes", []):
+            walk(n, depth + 1)
+
+    def find_contents(o):
+        if isinstance(o, dict):
+            if "nodes" in o and isinstance(o["nodes"], list) and o.get("nodes") and isinstance(o["nodes"][0], dict) and "type" in o["nodes"][0]:
+                yield o
+                return
+            for v in o.values():
+                yield from find_contents(v)
+        elif isinstance(o, list):
+            for v in o:
+                yield from find_contents(v)
+
+    for c in find_contents(data):
+        for n in c["nodes"]:
+            walk(n)
+    md = "\n\n".join(x for x in out if x and x.strip())
+    md = re.sub(r"\n{3,}", "\n\n", md)
+    return md.strip() + "\n" if md.strip() else None

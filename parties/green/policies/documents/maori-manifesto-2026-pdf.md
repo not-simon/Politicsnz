@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/78863/attachments/original/1785798775/Ma%CC%84ori_Manifesto_Web_Version.pdf?1785798775"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 34
 local_copy: "raw/party-docs/green/pdf/Maori_Manifesto_Web_Version.pdf"
 sha1: "9a3f3588d7cafd2a7037b9d34acf39929e01e1e1"

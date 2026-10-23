@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/97177/attachments/original/1791760041/AI_policy_2026_WEBSITE.pdf?1791760041"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 8
 local_copy: "raw/party-docs/green/pdf/AI_policy_2026_WEBSITE.pdf"
 sha1: "9f4b84bd437f25c9d7885ed3bfe6d44b3e7a6216"

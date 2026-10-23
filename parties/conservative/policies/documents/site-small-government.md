@@ -19,7 +19,7 @@ New Zealand is over-governed, over-regulated, and over-taxed
 
 ​
 
-Government is too big and wastes an extraordinary amount of money - and its debt levels are a crisis which needs to be addressed now, or it will strangle our children and grandchildren.
+Government is too big and wastes an extraordinary amount of money - and its debt levels are a crisis which needs to be addressed now, or it will strangle our children and grandchildren.\
 
 Much of what government now does is worse than useless - it is harmful to society.   The only solution is to shrink government, so that it focuses on its core business - justice, defence, border control, and critical infrastructure and services.
 
@@ -45,10 +45,12 @@ The ever expanding power of government must be reversed
 
 The growth in spending is largely because we have become ever more dependent on government, and allowed it to take over more and more of our lives.  Society works best when people are responsible for their own lives and free to decide how to run their own households and businesses.  Our people should be treated as adults - trusted and expected to spend their own money and provide for themselves and their families.
 
-We need more than platitudes and token reforms - the problems are deep-rooted and systemic.
+\
+ We need more than platitudes and token reforms - the problems are deep-rooted and systemic.\
  Overseas leaders have shown us that government doesn’t need to constantly grow – its spending, its borrowing, and its control over our lives.
 
-All that is needed is a mindset change.  The Conservatives offer that change. We will:
+\
+ All that is needed is a mindset change.  The Conservatives offer that change. We will:
 
 - [Legislate to curtail unconstitutional bureaucratic power](https://www.conservatives.nz/news/has-new-zealand-lost-control-of-its-own-government).
 - Radically reduce government by abolishing useless government agencies and programs and ending wasteful spending and unnecessary regulation.

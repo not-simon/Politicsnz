@@ -45,7 +45,7 @@ YEARS = {
    government={"formed": "2020-11-06", "pm": "Jacinda Ardern (to 25 Jan 2023), then Chris Hipkins", "parties": ["labour"], "arrangement": "single-party majority government",
      "support": [{"party": "green", "arrangement": "cooperation agreement"}],
      "name": "Sixth Labour Government (second term)",
-     "notes": "Labour won 65 of 120 seats, the first single-party majority under MMP. It nonetheless signed a 'cooperation agreement' with the Greens (31 Oct 2020) under which Green co-leaders James Shaw and Marama Davidson became ministers outside Cabinet; the Greens were not bound on confidence and supply beyond the agreement. Sworn in 6 Nov 2020. Ardern resigned in Jan 2023; Chris Hipkins became PM on 25 Jan 2023. Election held with the cannabis and End of Life Choice referendums; it was delayed from 19 Sep to 17 Oct because of COVID-19."},
+     "notes": "Labour won 65 of 120 seats, the first single-party majority under MMP. It nonetheless signed a 'cooperation agreement' with the Greens (31 Oct 2020) under which Green co-leaders James Shaw and Marama Davidson became ministers outside Cabinet; the Greens agreed to abstain (not oppose) on confidence and supply votes. Sworn in 6 Nov 2020. Ardern resigned in Jan 2023; Chris Hipkins became PM on 25 Jan 2023. Election held with the cannabis and End of Life Choice referendums; it was delayed from 19 Sep to 17 Oct because of COVID-19."},
    sources_extra=[W + "Sixth_Labour_Government_of_New_Zealand", W + "2020_New_Zealand_general_election"]),
  2023: dict(date="2023-10-14", parliament=54, page="2023_New_Zealand_general_election", el="2023_New_Zealand_general_election",
    official="https://www.electionresults.govt.nz/electionresults_2023/",

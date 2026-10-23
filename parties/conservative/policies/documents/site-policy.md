@@ -90,66 +90,66 @@ Our priorities are:
 
 Small Government
 
-Government spending, borrowing and control of our lives must be slashed.
+Government spending, borrowing and control of our lives must be slashed.\
 
 Fixing Democracy
 
-We will pursue wide-ranging reforms to clean up our democracy and give power back to the people.​
+We will pursue wide-ranging reforms to clean up our democracy and give power back to the people.​\
 
 Right to Life
 
-Human rights begin in the womb and government's first job is to protect the right to life of its people - otherwise it has failed at the most basic level.
+Human rights begin in the womb and government's first job is to protect the right to life of its people - otherwise it has failed at the most basic level.\
 
 Justice
 
-We aim to refocus the justice system on making New Zealanders safe again in our homes and businesses and on our streets.
+We aim to refocus the justice system on making New Zealanders safe again in our homes and businesses and on our streets.\
 
 Education
 
-New Zealand can have a world-leading educational system again.
-But the people who broke the system are not the ones to fix it.
+New Zealand can have a world-leading educational system again.\
+But the people who broke the system are not the ones to fix it.\
 
 Strengthen Families
 
-We differ from other parties because our policies are centred on the desire to rebuild a society that values family.
+We differ from other parties because our policies are centred on the desire to rebuild a society that values family.\
 
 Gender
 
-We will ensure that the definition of a woman is legally restricted to those born biologically female.
+We will ensure that the definition of a woman is legally restricted to those born biologically female.\
 
 One Nation
 
-We hold that New Zealanders are one people and will ensure that we all have our rights represented equally.
+We hold that New Zealanders are one people and will ensure that we all have our rights represented equally.\
 
 A Strong Economy
 
-We seek to secure the prosperity of our children and grandchildren.
+We seek to secure the prosperity of our children and grandchildren.\
 
 Infrastructure
 
-Government spending needs to be redirected towards building and maintaining critical infrastructure.
+Government spending needs to be redirected towards building and maintaining critical infrastructure.\
 
 Welfare
 
-Reform is needed. Fifty years of expanding welfare has undermined our families and created an underclass​.
+Reform is needed. Fifty years of expanding welfare has undermined our families and created an underclass​.\
 
 Inflation and Money
 
-We favour low inflation and more stable (predictable) interest rates.
+We favour low inflation and more stable (predictable) interest rates.\
 
 Housing
 
-We seek to reduce red tape and facilitate long-term increases in housing supply.
+We seek to reduce red tape and facilitate long-term increases in housing supply.\
 
 Conservation
 
-We are committed to conserving and enhancing our natural environment.
+We are committed to conserving and enhancing our natural environment.\
 
 Pandemics
 
-We stand for justice and against medical coercion and the extraordinary division of society into opposing camps.
+We stand for justice and against medical coercion and the extraordinary division of society into opposing camps.\
 
 Our Principles
 
-Right to life. Family building. Localism. Conservation. Equal justice.
-Individual rights & responsibilities. National sovereignty.
+Right to life. Family building. Localism. Conservation. Equal justice. \
+Individual rights & responsibilities. National sovereignty.\

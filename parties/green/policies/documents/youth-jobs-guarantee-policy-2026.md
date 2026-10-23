@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/96649/attachments/original/1791665775/a_job_for_every_young_person-policy.pdf?1791665775"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 7
 local_copy: "raw/party-docs/green/pdf/a_job_for_every_young_person-policy.pdf"
 sha1: "7d946572cf58c4e9e4c60566bfd6e222b20502a4"

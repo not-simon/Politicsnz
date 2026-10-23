@@ -54,7 +54,10 @@ def summary_table(path):
     def num(x, f=int):
         x = str(x).replace(",", "").strip()
         x = re.sub(r"\[.*?\]", "", x)
-        try: return f(float(x)) if f is int else float(x)
+        try:
+            v = float(x)
+            if v != v: return None
+            return int(v) if f is int else v
         except ValueError: return None
     for _, r in t.iloc[3:].iterrows():
         name = re.sub(r"\[.*?\]", "", str(r.iloc[1])).strip()

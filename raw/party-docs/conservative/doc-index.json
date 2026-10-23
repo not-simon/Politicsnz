@@ -1,57 +1,132 @@
 [
  {
+  "url": "https://conservatives.org.nz/policies/",
+  "doc": "documents/campaign-policies-index.md",
+  "title": "Conservative.NZ Party Policies (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/overview/",
+  "doc": "documents/campaign-overview.md",
+  "title": "Overview (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/health/",
+  "doc": "documents/campaign-health.md",
+  "title": "Health (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/economy-1/",
+  "doc": "documents/campaign-economy-1.md",
+  "title": "Economy (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/bureaucracy/",
+  "doc": "documents/campaign-bureaucracy.md",
+  "title": "Bureaucracy (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/environment/",
+  "doc": "documents/campaign-environment.md",
+  "title": "Environment (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/immigration/",
+  "doc": "documents/campaign-immigration.md",
+  "title": "Immigration (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/policing/",
+  "doc": "documents/campaign-policing.md",
+  "title": "Policing (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/climate/",
+  "doc": "documents/campaign-climate.md",
+  "title": "Climate (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/agriculture/",
+  "doc": "documents/campaign-agriculture.md",
+  "title": "Agriculture (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/child-protection/",
+  "doc": "documents/campaign-child-protection.md",
+  "title": "Child Protection (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/superannuation/",
+  "doc": "documents/campaign-superannuation.md",
+  "title": "Tax Relief (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/right-to-life/",
+  "doc": "documents/campaign-right-to-life.md",
+  "title": "Right to life (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/natural-resources/",
+  "doc": "documents/campaign-natural-resources.md",
+  "title": "Natural Resources (2026 campaign site)"
+ },
+ {
+  "url": "https://conservatives.org.nz/policies/energy/",
+  "doc": "documents/campaign-energy.md",
+  "title": "Energy (2026 campaign site)"
+ },
+ {
   "url": "https://www.conservatives.nz/policy",
-  "doc": "documents/policy.md",
+  "doc": "documents/site-policy.md",
   "title": "Our Policies"
  },
  {
   "url": "https://www.conservatives.nz/we-stand-for",
-  "doc": "documents/we-stand-for.md",
+  "doc": "documents/site-we-stand-for.md",
   "title": "What We Stand For"
  },
  {
   "url": "https://www.conservatives.nz/small-government",
-  "doc": "documents/small-government.md",
+  "doc": "documents/site-small-government.md",
   "title": "Smaller Government"
  },
  {
   "url": "https://www.conservatives.nz/familybuilder-old",
-  "doc": "documents/familybuilder-old.md",
+  "doc": "documents/site-familybuilder-old.md",
   "title": "Family Values"
  },
  {
   "url": "https://www.conservatives.nz/news/new-policies-announcement",
-  "doc": "documents/news-new-policies-announcement.md",
-  "title": "Economic and Trade Policy | CONSERVATIVES.NZ"
+  "title": "Economic and Trade Policy",
+  "doc": "documents/news-new-policies-announcement.md"
  },
  {
   "url": "https://www.conservatives.nz/news/police-policy-announcement",
-  "doc": "documents/news-police-policy-announcement.md",
-  "title": "Announcement: Police Policy - Commission Of Inquiry Into Under Performance And Corruption | CONSERVATIVES.NZ"
+  "title": "Announcement: Police Policy - Commission Of Inquiry Into Under Performance And Corruption",
+  "doc": "documents/news-police-policy-announcement.md"
  },
  {
   "url": "https://www.conservatives.nz/news/has-new-zealand-failed-its-oceans",
-  "doc": "documents/news-has-new-zealand-failed-its-oceans.md",
-  "title": "Has New Zealand Failed Its Oceans? Conservative Party Says Yes - Environment Policy update | CONSERVATIVES.NZ"
+  "title": "Has New Zealand Failed Its Oceans? Conservative Party Says Yes - Environment Policy update",
+  "doc": "documents/news-has-new-zealand-failed-its-oceans.md"
  },
  {
   "url": "https://www.conservatives.nz/news/has-new-zealand-lost-control-of-its-own-government",
-  "doc": "documents/news-has-new-zealand-lost-control-of-its-own-government.md",
-  "title": "Has New Zealand Lost Control of Its Own Government? | CONSERVATIVES.NZ"
+  "title": "Has New Zealand Lost Control of Its Own Government?",
+  "doc": "documents/news-has-new-zealand-lost-control-of-its-own-government.md"
  },
  {
   "url": "https://www.conservatives.nz/news/policy-clarification-on-rural%2C-environmental%2C-and-agricultural-issues",
-  "doc": "documents/news-policy-clarification-on-rural-environmental-and-agricultural-issu.md",
-  "title": "Policy clarification on rural, environmental, and agricultural issues | CONSERVATIVES.NZ"
+  "title": "Policy clarification on rural, environmental, and agricultural issues",
+  "doc": "documents/news-policy-clarification-on-rural-environmental-and-agricultural-issues.md"
  },
  {
   "url": "https://www.conservatives.nz/news/press-release---improving-access-to-justice-for-self-represented-litigants",
-  "doc": "documents/news-press-release-improving-access-to-justice-for-self-represented-li.md",
-  "title": "Improving Access to Justice for Self-Represented Litigants | CONSERVATIVES.NZ"
+  "title": "Improving Access to Justice for Self-Represented Litigants",
+  "doc": "documents/news-press-release-improving-access-to-justice-for-self-represented-litigan.md"
  },
  {
   "url": "https://www.conservatives.nz/news/sharpening-the-teeth-of-the-ipca",
-  "doc": "documents/news-sharpening-the-teeth-of-the-ipca.md",
-  "title": "Law & Justice Policy Statement: Sharpening the Teeth of the IPCA | CONSERVATIVES.NZ"
+  "title": "Law & Justice Policy Statement: Sharpening the Teeth of the IPCA",
+  "doc": "documents/news-sharpening-the-teeth-of-the-ipca.md"
  }
 ]

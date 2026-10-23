@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/81707/attachments/original/1786238613/TWT_policy_2026_ONLINE.pdf?1786238613"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 11
 local_copy: "raw/party-docs/green/pdf/TWT_policy_2026_ONLINE.pdf"
 sha1: "0896e5b35c8b2877cef00b0e7c186d170f5fdb49"

@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/64948/attachments/original/1778624615/Policy-Greens_Security_Defence_Policy_2011-2026.pdf"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 5
 policy_version: "02 March 2026"
 local_copy: "raw/party-docs/green/pdf/Policy-Greens_Security_Defence_Policy_2011-2026.pdf"

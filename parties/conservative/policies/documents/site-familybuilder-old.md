@@ -37,7 +37,8 @@ By cutting waste and improving efficiency, government can easily reduce spending
 
 ## First $20,000 Tax Free
 
-A tax-free threshold of $20,000 will give everyone a $2,400 tax cut. 
+\
+ A tax-free threshold of $20,000 will give everyone a $2,400 tax cut. 
 
 When combined with income splitting, this means a combined $40,000 tax free for a couple, whether one or both spouses are working.
 
@@ -53,7 +54,8 @@ We propose that families with children could divide their income between both pa
 
 ### Child Tax Credits
 
-We propose to implement a $3,000 child tax credit, available to each parent, for a total of $6,000 per child. This would replace the Working for Families "family tax credit" and "in-work tax credit".
+\
+ We propose to implement a $3,000 child tax credit, available to each parent, for a total of $6,000 per child. This would replace the Working for Families "family tax credit" and "in-work tax credit".
 
 ​
 

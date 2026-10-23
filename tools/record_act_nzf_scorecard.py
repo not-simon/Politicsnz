@@ -12,7 +12,9 @@ def term(entry):
         return "2026"
     if entry["made"].lower().startswith("long-standing"):
         return "long-standing"
-    years = [int(y) for y in re.findall(r"(?<!\d)(?:19|20)\d\d(?!\d)", entry["made"])]
+    head = re.split(r"[(;]", entry["made"])[0]  # ignore parenthetical/secondary dates
+    years = [int(y) for y in re.findall(r"(?<!\d)(?:19|20)\d\d(?!\d)", head)] or \
+            [int(y) for y in re.findall(r"(?<!\d)(?:19|20)\d\d(?!\d)", entry["made"])]
     y = max(years) if "coalition agreement" in entry["made"] else min(years)
     for start, label in [(2026, "2026"), (2023, "2023"), (2020, "2020"), (2017, "2017"), (2014, "2014"), (2011, "2011")]:
         if y >= start:
@@ -51,7 +53,7 @@ if __name__ == "__main__":
         path = os.path.join(ROOT, "parties", party, "track-record.md")
         if os.path.exists(path):
             s = open(path).read()
-            new = re.sub(r"(<!-- GENERATED:scorecard START -->\n).*?(\n<!-- GENERATED:scorecard END -->)",
-                         lambda m: m.group(1) + md + m.group(2), s, flags=re.S)
+            new = re.sub(r"(<!-- GENERATED:scorecard START -->\n).*?(<!-- GENERATED:scorecard END -->)",
+                         lambda m: m.group(1) + md + "\n" + m.group(2), s, flags=re.S)
             if new != s:
                 open(path, "w").write(new); print("updated", path)

@@ -126,8 +126,17 @@ DESIGNED = {
     'TWT_policy_2026_ONLINE.pdf': ('te-waonui-a-tane-policy-2026', 'Te Waonui a Tāne — Thriving Marae for Thriving Communities'),
     'a_job_for_every_young_person-policy.pdf': ('youth-jobs-guarantee-policy-2026', 'Youth Jobs Guarantee — A guaranteed job for every young person in Aotearoa'),
     'AI_policy_2026_WEBSITE.pdf': ('ai-policy-2026-safe-sovereign-ai', 'Safe, sovereign AI — An AI Plan for Aotearoa'),
+    'Green_Party__Paid_Placements__Apprenticeships_for_our_future_workforce_2026.pdf': ('paid-placements-apprenticeships-policy-2026', 'Paid Placements & Apprenticeships — For our future workforce'),
+    'Hauraki_Gulf___Tipaka_Moana_Marine_Protection.pdf': ('hauraki-gulf-restoration-of-high-protection-areas-bill-draft', 'Hauraki Gulf / Tīkapa Moana Marine Protection (Restoration of High Protection Areas) Amendment Bill (Green Party draft bill)'),
+    'Budget_Print_MW_version_5-08-25_web.pdf': ('green-budget-2025', 'Green Budget 2025 (the Greens’ costed alternative Budget, 2025)'),
     'AFFORDABLE_FOOD_FOR_ALL_OF_US_POLICY_FINAL.pdf': ('affordable-food-for-all-of-us-policy-2026', 'Affordable food for all of us — Reforming the food system'),
 }
+
+CITED = set()  # greens.org.nz paths cited by policy.nz
+for x in json.load(open(os.path.join(BASE, 'raw', 'policy.nz', 'parties', 'green-party.json')))['policies']:
+    for c in x.get('citations') or []:
+        m = re.search(r'greens\.org\.nz/([^?#]*)', c['url'])
+        if m: CITED.add(m.group(1).rstrip('/'))
 
 catalog = {}
 # ---------- PDFs ----------
@@ -145,9 +154,9 @@ for url, v in man.items():
     if fn in DESIGNED: slug, title = DESIGNED[fn]
     ver = re.search(r'Version:\s*([0-9]{1,2} [A-Z][a-z]+ 20\d\d)', text)
     d = {'title': title, 'party': 'green', 'source_url': url, 'retrieved': v['retrieved'], 'format': 'pdf',
-         'fetch_method': ('direct HTTPS download from assets.nationbuilder.com; image-only PDF, text transcribed manually from page images'
+         'fetch_method': ('direct HTTPS download from ' + url.split('/')[2] + '; image-only PDF, text transcribed manually from page images'
                           if text.startswith('> **Note:** this PDF consists of page images') else
-                          'direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, '
+                          'direct HTTPS download from ' + url.split('/')[2] + '; text by pdftotext (poppler, default reading order, '
                           'lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form'),
          'pages': pages, 'policy_version': ver.group(1) if ver else None,
          'local_copy': 'raw/party-docs/green/pdf/' + fn if v['bytes'] < 10_000_000 else None, 'sha1': v['sha1']}
@@ -160,7 +169,7 @@ ann = set()
 if os.path.exists(ANNOUNCE_FILE):
     ann = {l.split('#')[0].strip() for l in open(ANNOUNCE_FILE) if l.split('#')[0].strip()}
 for p, v in sorted(idx.items()):
-    if p in EXCLUDE or not (POLICY_PAGE_RE.match(p) or p in ann): continue
+    if p in EXCLUDE or not (POLICY_PAGE_RE.match(p) or p in ann or p in CITED): continue
     title, md, posted = html_main(os.path.join(RAW, 'html', v['file']))
     title = re.sub(r'\s*-\s*Green Party of Aotearoa New Zealand$', '', title)
     if len(md) < 200: print('WARN short page', p, len(md))
@@ -173,6 +182,37 @@ for p, v in sorted(idx.items()):
          'capture_date': '%s-%s-%s' % (ts[:4], ts[4:6], ts[6:8]), 'posted': posted}
     open(os.path.join(DOCS, slug + '.md'), 'w').write(fm(d) + md + '\n')
     catalog[slug] = {**d, 'kind': 'announcement' if p in ann else 'web', 'path': p, 'chars': len(md)}
+
+# ---------- scoop.co.nz mirrors ----------
+sidx = json.load(open(os.path.join(RAW, 'scoop', 'index.json')))
+for key in sorted(a[6:] for a in ann if a.startswith('scoop:')):
+    v = sidx[key]
+    sp = BeautifulSoup(open(os.path.join(RAW, 'scoop', v['file']), encoding='utf8').read(), 'html.parser')
+    art = sp.find(id='article')
+    for t in art(['script', 'style', 'noscript', 'iframe', 'img']): t.decompose()
+    for t in art.find_all('div', class_='article-left-box-wrapper'): t.decompose()
+    for a in art.find_all('a', href=re.compile(r'scoop\.co\.nz/about/terms')):
+        for sib in list(a.find_all_next()): sib.decompose()
+        a.decompose()
+    for t in art.find_all(string=True):  # Scoop hard-wraps text inside paragraphs: unwrap
+        if '\n' in t: t.replace_with(re.sub(r'\s*\n\s*', ' ', t))
+    md = markdownify.markdownify(str(art), heading_style='ATX', bullets='-')
+    md = '\n'.join(l.strip() for l in md.split('\n'))
+    md = re.sub(r'\n{3,}', '\n\n', md).strip()
+    title = v['title'].strip()
+    date = re.search(r'(\d{1,2} [A-Z][a-z]+ 20\d\d)', md)
+    slug = 'scoop-' + slugify(title)
+    d = {'title': title, 'party': 'green', 'source_url': v['url'], 'retrieved': TODAY, 'format': 'html',
+         'fetch_method': 'Green Party press release as published on scoop.co.nz (mirror; original greens.org.nz page is Cloudflare-blocked '
+                         'and not in Common Crawl); article body converted to Markdown, Scoop line-wrapping removed',
+         'posted': date.group(1) if date else None}
+    open(os.path.join(DOCS, slug + '.md'), 'w').write(fm(d) + md + '\n')
+    catalog[slug] = {**d, 'kind': 'announcement', 'scoop_key': key, 'chars': len(md)}
+
+# remove stale generated documents from earlier runs (only *.md files this script generates: pdf/web/scoop slugs)
+for f in os.listdir(DOCS):
+    if f.endswith('.md') and f[:-3] not in catalog and not f.startswith('unretrievable-'):
+        os.remove(os.path.join(DOCS, f))
 
 json.dump(catalog, open(os.path.join(DOCS, '_catalog.json'), 'w'), indent=1, ensure_ascii=False)
 print(len(catalog), 'documents')

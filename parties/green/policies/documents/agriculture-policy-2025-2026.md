@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/65102/attachments/original/1778624623/Policy-Greens_Agriculture_Policy_2025-2026.pdf"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 5
 policy_version: "09 March 2026"
 local_copy: "raw/party-docs/green/pdf/Policy-Greens_Agriculture_Policy_2025-2026.pdf"

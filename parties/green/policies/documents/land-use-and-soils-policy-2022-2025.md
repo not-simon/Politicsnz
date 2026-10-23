@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/64822/attachments/original/1778624608/Policy-Greens_Land_Use_and_Soils_Policy_2022-2025.pdf"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 8
 policy_version: "19 Sep 2025"
 local_copy: "raw/party-docs/green/pdf/Policy-Greens_Land_Use_and_Soils_Policy_2022-2025.pdf"

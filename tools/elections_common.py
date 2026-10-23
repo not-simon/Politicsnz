@@ -73,6 +73,8 @@ def party_slug(name):
     if n in PARTY: return PARTY[n]
     raise KeyError("unknown party: %r" % name)
 
+NAME_FIXES = {"Todd Mcclay": "Todd McClay", "Murray Mccully": "Murray McCully"}  # capitalisation typos in Wikipedia wikitext
+
 def clean(s):
     """wikitext -> plain text"""
     if s is None: return ""
@@ -94,7 +96,8 @@ def clean(s):
             code.replace(t, "")
     s = code.strip_code()
     s = re.sub(r"<[^>]+>", "", s)
-    return re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"\s+", " ", s).strip()
+    return NAME_FIXES.get(s, s)
 
 def person_slug(name):
     n = unicodedata.normalize("NFKD", name)

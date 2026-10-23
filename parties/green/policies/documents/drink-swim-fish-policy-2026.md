@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/74309/attachments/original/1783476578/DSF_Policy_2026.pdf?1783476578"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 4
 local_copy: "raw/party-docs/green/pdf/DSF_Policy_2026.pdf"
 sha1: "079505d372e329745fe6a6de5699a4af2f0c7c2c"

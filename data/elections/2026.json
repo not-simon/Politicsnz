@@ -1,0 +1,731 @@
+{
+ "year": 2026,
+ "date": "2026-11-07",
+ "parliament": 55,
+ "results": null,
+ "status": "upcoming (data as of 23 Oct 2026; advance voting opens 26 Oct)",
+ "seats": {
+  "electorates": 71,
+  "general_electorates": 64,
+  "north_island_general": 48,
+  "south_island_general": 16,
+  "maori_electorates": 7,
+  "list_seats": 49,
+  "total_before_overhang": 120,
+  "note": "After the 2023 Census the Representation Commission cut North Island general electorates from 49 to 48 (list seats up from 48 to 49). Draft boundaries 25 Mar 2025; final boundaries 8 Aug 2025."
+ },
+ "key_dates": [
+  {
+   "date": "2026-01-21",
+   "event": "PM Christopher Luxon announces the election date (7 Nov 2026)"
+  },
+  {
+   "date": "2026-08-06",
+   "event": "Last day for registration of parties and logos; last day for Māori voters to change roll type"
+  },
+  {
+   "date": "2026-08-07",
+   "event": "Regulated election advertising period begins"
+  },
+  {
+   "date": "2026-09-07",
+   "event": "Candidate nominations open"
+  },
+  {
+   "date": "2026-10-01",
+   "event": "54th Parliament dissolved"
+  },
+  {
+   "date": "2026-10-04",
+   "event": "Writ day; official campaign, radio/TV advertising begins; last day to enrol ordinarily (later enrolments cast special votes)"
+  },
+  {
+   "date": "2026-10-08",
+   "event": "Nominations close (12 noon)"
+  },
+  {
+   "date": "2026-10-21",
+   "event": "Overseas voting begins"
+  },
+  {
+   "date": "2026-10-25",
+   "event": "Last day to enrol to vote (enrolment closes 13 days before polling day under the Electoral Amendment Act 2025)"
+  },
+  {
+   "date": "2026-10-26",
+   "event": "Advance voting begins (Labour Day)"
+  },
+  {
+   "date": "2026-11-06",
+   "event": "Advance and overseas voting ends; regulated advertising period ends"
+  },
+  {
+   "date": "2026-11-07",
+   "event": "Election day: polls open 9am-7pm; preliminary results from 7pm"
+  },
+  {
+   "date": "2026-11-27",
+   "event": "Official results declared"
+  },
+  {
+   "date": "2026-12-03",
+   "event": "Writ returned (subject to judicial recounts)"
+  }
+ ],
+ "registered_parties_party_vote": [
+  {
+   "party": "national",
+   "name": "National",
+   "leader": "Christopher Luxon",
+   "seats_2023": 48,
+   "seats_at_dissolution": 48,
+   "status": "government (coalition)"
+  },
+  {
+   "party": "labour",
+   "name": "Labour",
+   "leader": "Chris Hipkins",
+   "seats_2023": 34,
+   "seats_at_dissolution": 34,
+   "status": "opposition"
+  },
+  {
+   "party": "green",
+   "name": "Green",
+   "leader": "Marama Davidson & Chlöe Swarbrick (co-leaders)",
+   "seats_2023": 15,
+   "seats_at_dissolution": 15,
+   "status": "opposition"
+  },
+  {
+   "party": "act",
+   "name": "ACT",
+   "leader": "David Seymour",
+   "seats_2023": 11,
+   "seats_at_dissolution": 11,
+   "status": "government (coalition)"
+  },
+  {
+   "party": "nz-first",
+   "name": "NZ First",
+   "leader": "Winston Peters",
+   "seats_2023": 8,
+   "seats_at_dissolution": 8,
+   "status": "government (coalition)"
+  },
+  {
+   "party": "te-pati-maori",
+   "name": "Te Pāti Māori",
+   "leader": "Debbie Ngarewa-Packer & Rawiri Waititi (co-leaders)",
+   "seats_2023": 6,
+   "seats_at_dissolution": 4,
+   "status": "opposition"
+  },
+  {
+   "party": "opportunity",
+   "name": "The Opportunity Party (TOP)",
+   "leader": "Qiulae Wong",
+   "seats_2023": 0,
+   "status": "extra-parliamentary"
+  },
+  {
+   "party": "nz-loyal",
+   "name": "New Zealand Loyal",
+   "leader": "Kelvyn Alp",
+   "seats_2023": 0,
+   "status": "extra-parliamentary",
+   "note": "Deregistered 26 Jul 2024, re-registered for 2026"
+  },
+  {
+   "party": "legalise-cannabis",
+   "name": "Aotearoa Legalise Cannabis Party",
+   "leader": "Maki Herbert & Michael Appleby",
+   "seats_2023": 0,
+   "status": "extra-parliamentary"
+  },
+  {
+   "party": "nz-outdoors-freedom",
+   "name": "NZ Outdoors & Freedom Party",
+   "leader": "Sue Grey",
+   "seats_2023": 0,
+   "status": "extra-parliamentary",
+   "note": "Part of the Freedoms NZ umbrella in 2023"
+  },
+  {
+   "party": "vision-nz",
+   "name": "Vision NZ",
+   "leader": "Hannah Tamaki",
+   "seats_2023": 0,
+   "status": "extra-parliamentary",
+   "note": "Part of the Freedoms NZ umbrella in 2023"
+  },
+  {
+   "party": "animal-justice",
+   "name": "Animal Justice Party",
+   "leader": "Robert McNeil & Dannette Wereta",
+   "seats_2023": 0,
+   "status": "extra-parliamentary"
+  },
+  {
+   "party": "conservative",
+   "name": "Conservative Party NZ",
+   "leader": "Helen Houghton",
+   "seats_2023": 0,
+   "status": "extra-parliamentary",
+   "note": "Founded 2011 (Conservative Party), renamed New Conservative 2017, now Conservative Party NZ; 0.16% in 2023"
+  },
+  {
+   "party": "womens-rights",
+   "name": "Women's Rights Party",
+   "leader": "Jill Ovens & Dawn Trenberth",
+   "seats_2023": 0,
+   "status": "extra-parliamentary"
+  },
+  {
+   "party": "alliance",
+   "name": "Alliance",
+   "leader": "Victor Billot",
+   "seats_2023": 0,
+   "status": "extra-parliamentary"
+  },
+  {
+   "party": "free-palestine",
+   "name": "Free Palestine Party",
+   "leader": "Paul Hopkinson",
+   "seats_2023": 0,
+   "status": "new (2026)"
+  },
+  {
+   "party": "te-tai-tokerau-party",
+   "name": "Te Tai Tokerau Party",
+   "leader": "Mariameno Kapa-Kingi",
+   "seats_2023": 0,
+   "seats_at_dissolution": 0,
+   "status": "new (2026); leader sat as an independent MP at dissolution"
+  }
+ ],
+ "registered_parties_count": 17,
+ "deregistered_since_2023": [
+  {
+   "name": "DemocracyNZ",
+   "date": "2024-02-15"
+  },
+  {
+   "name": "Leighton Baker Party",
+   "date": "2024-05-27"
+  },
+  {
+   "name": "New Zealand Loyal",
+   "date": "2024-07-26",
+   "note": "later re-registered; contesting 2026"
+  },
+  {
+   "name": "Democratic Alliance",
+   "date": "2024-11-27"
+  },
+  {
+   "name": "New Nation Party",
+   "date": "2025-01-29"
+  },
+  {
+   "name": "Freedoms New Zealand",
+   "date": "2025-05-01"
+  },
+  {
+   "name": "NewZeal",
+   "date": "2026-03-31"
+  }
+ ],
+ "candidates": {
+  "electorate_candidacies_policy_nz": 470,
+  "note": "Count of electorate candidacies listed on policy.nz (raw/policy.nz/electorates). The official Electoral Commission candidate totals (published after nominations closed 8 Oct 2026, with party lists) could not be fetched from elections.nz/electionresults.govt.nz from this environment (Incapsula/Cloudflare block), so this number is unverified. Wikipedia's 'Candidates ... by electorate' page was incomplete at retrieval (379 entries).",
+  "by_electorate": [
+   {
+    "name": "Auckland Central",
+    "slug": "auckland-central",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Banks Peninsula",
+    "slug": "banks-peninsula",
+    "candidates_listed_on_policy_nz": 8
+   },
+   {
+    "name": "Botany",
+    "slug": "botany",
+    "candidates_listed_on_policy_nz": 4
+   },
+   {
+    "name": "Christchurch Central",
+    "slug": "christchurch-central",
+    "candidates_listed_on_policy_nz": 9
+   },
+   {
+    "name": "Christchurch East",
+    "slug": "christchurch-east",
+    "candidates_listed_on_policy_nz": 11
+   },
+   {
+    "name": "Coromandel",
+    "slug": "coromandel",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "Dunedin",
+    "slug": "dunedin",
+    "candidates_listed_on_policy_nz": 8
+   },
+   {
+    "name": "East Cape",
+    "slug": "east-cape",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "East Coast Bays",
+    "slug": "east-coast-bays",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Epsom",
+    "slug": "epsom",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "Glendene",
+    "slug": "glendene",
+    "candidates_listed_on_policy_nz": 8
+   },
+   {
+    "name": "Hamilton East",
+    "slug": "hamilton-east",
+    "candidates_listed_on_policy_nz": 5
+   },
+   {
+    "name": "Hamilton West",
+    "slug": "hamilton-west",
+    "candidates_listed_on_policy_nz": 9
+   },
+   {
+    "name": "Hauraki-Waikato",
+    "slug": "hauraki-waikato",
+    "candidates_listed_on_policy_nz": 3
+   },
+   {
+    "name": "Henderson",
+    "slug": "henderson",
+    "candidates_listed_on_policy_nz": 9
+   },
+   {
+    "name": "Hutt South",
+    "slug": "hutt-south",
+    "candidates_listed_on_policy_nz": 8
+   },
+   {
+    "name": "Ikaroa-Rāwhiti",
+    "slug": "ikaroa-rawhiti",
+    "candidates_listed_on_policy_nz": 3
+   },
+   {
+    "name": "Ilam",
+    "slug": "ilam",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Invercargill",
+    "slug": "invercargill",
+    "candidates_listed_on_policy_nz": 5
+   },
+   {
+    "name": "Kaikōura",
+    "slug": "kaikoura",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "Kaipara ki Mahurangi",
+    "slug": "kaipara-ki-mahurangi",
+    "candidates_listed_on_policy_nz": 9
+   },
+   {
+    "name": "Kapiti",
+    "slug": "kapiti",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "Kenepuru",
+    "slug": "kenepuru",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Māngere",
+    "slug": "mangere",
+    "candidates_listed_on_policy_nz": 10
+   },
+   {
+    "name": "Manurewa",
+    "slug": "manurewa",
+    "candidates_listed_on_policy_nz": 4
+   },
+   {
+    "name": "Maungakiekie",
+    "slug": "maungakiekie",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Mt Albert",
+    "slug": "mt-albert",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "Mt Maunganui",
+    "slug": "mt-maunganui",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "Mt Roskill",
+    "slug": "mt-roskill",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Napier",
+    "slug": "napier",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Nelson",
+    "slug": "nelson",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "New Plymouth",
+    "slug": "new-plymouth",
+    "candidates_listed_on_policy_nz": 4
+   },
+   {
+    "name": "North Shore",
+    "slug": "north-shore",
+    "candidates_listed_on_policy_nz": 5
+   },
+   {
+    "name": "Northcote",
+    "slug": "northcote",
+    "candidates_listed_on_policy_nz": 9
+   },
+   {
+    "name": "Northland",
+    "slug": "northland",
+    "candidates_listed_on_policy_nz": 10
+   },
+   {
+    "name": "Ōtāhuhu",
+    "slug": "otahuhu",
+    "candidates_listed_on_policy_nz": 10
+   },
+   {
+    "name": "Pakuranga",
+    "slug": "pakuranga",
+    "candidates_listed_on_policy_nz": 4
+   },
+   {
+    "name": "Palmerston North",
+    "slug": "palmerston-north",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "Papakura",
+    "slug": "papakura",
+    "candidates_listed_on_policy_nz": 5
+   },
+   {
+    "name": "Port Waikato",
+    "slug": "port-waikato",
+    "candidates_listed_on_policy_nz": 5
+   },
+   {
+    "name": "Rangitata",
+    "slug": "rangitata",
+    "candidates_listed_on_policy_nz": 8
+   },
+   {
+    "name": "Rangitīkei",
+    "slug": "rangitikei",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "Remutaka",
+    "slug": "remutaka",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "Rotorua",
+    "slug": "rotorua",
+    "candidates_listed_on_policy_nz": 4
+   },
+   {
+    "name": "Selwyn",
+    "slug": "selwyn",
+    "candidates_listed_on_policy_nz": 8
+   },
+   {
+    "name": "Southland",
+    "slug": "southland",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Taieri",
+    "slug": "taieri",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Takanini",
+    "slug": "takanini",
+    "candidates_listed_on_policy_nz": 5
+   },
+   {
+    "name": "Tāmaki",
+    "slug": "tamaki",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "Tāmaki Makaurau",
+    "slug": "tamaki-makaurau",
+    "candidates_listed_on_policy_nz": 3
+   },
+   {
+    "name": "Taranaki-King Country",
+    "slug": "taranaki-king-country",
+    "candidates_listed_on_policy_nz": 5
+   },
+   {
+    "name": "Taupō",
+    "slug": "taupo",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Tauranga",
+    "slug": "tauranga",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "Te Tai Hauāuru",
+    "slug": "te-tai-hauauru",
+    "candidates_listed_on_policy_nz": 3
+   },
+   {
+    "name": "Te Tai Tokerau",
+    "slug": "te-tai-tokerau",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Te Tai Tonga",
+    "slug": "te-tai-tonga",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Tukituki",
+    "slug": "tukituki",
+    "candidates_listed_on_policy_nz": 9
+   },
+   {
+    "name": "Upper Harbour",
+    "slug": "upper-harbour",
+    "candidates_listed_on_policy_nz": 7
+   },
+   {
+    "name": "Waiariki",
+    "slug": "waiariki",
+    "candidates_listed_on_policy_nz": 4
+   },
+   {
+    "name": "Waikato",
+    "slug": "waikato",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Waimakariri",
+    "slug": "waimakariri",
+    "candidates_listed_on_policy_nz": 5
+   },
+   {
+    "name": "Wairarapa",
+    "slug": "wairarapa",
+    "candidates_listed_on_policy_nz": 8
+   },
+   {
+    "name": "Waitākere",
+    "slug": "waitakere",
+    "candidates_listed_on_policy_nz": 6
+   },
+   {
+    "name": "Waitaki",
+    "slug": "waitaki",
+    "candidates_listed_on_policy_nz": 8
+   },
+   {
+    "name": "Wellington Bays",
+    "slug": "wellington-bays",
+    "candidates_listed_on_policy_nz": 9
+   },
+   {
+    "name": "Wellington North",
+    "slug": "wellington-north",
+    "candidates_listed_on_policy_nz": 8
+   },
+   {
+    "name": "West Coast-Tasman",
+    "slug": "west-coast-tasman",
+    "candidates_listed_on_policy_nz": 11
+   },
+   {
+    "name": "Whanganui",
+    "slug": "whanganui",
+    "candidates_listed_on_policy_nz": 5
+   },
+   {
+    "name": "Whangaparāoa",
+    "slug": "whangaparaoa",
+    "candidates_listed_on_policy_nz": 4
+   },
+   {
+    "name": "Whangārei",
+    "slug": "whangarei",
+    "candidates_listed_on_policy_nz": 10
+   },
+   {
+    "name": "Wigram",
+    "slug": "wigram",
+    "candidates_listed_on_policy_nz": 7
+   }
+  ]
+ },
+ "electorate_changes": {
+  "new_or_renamed_2026": [
+   "East Cape",
+   "Glendene",
+   "Henderson",
+   "Kapiti",
+   "Kenepuru",
+   "Mt Maunganui",
+   "Waitākere",
+   "Wellington Bays",
+   "Wellington North",
+   "Ōtāhuhu"
+  ],
+  "abolished_or_renamed_from_2023": [
+   "Bay of Plenty",
+   "East Coast",
+   "Kelston",
+   "Mana",
+   "New Lynn",
+   "Panmure-Ōtāhuhu",
+   "Rongotai",
+   "Te Atatū",
+   "Wellington Central",
+   "Ōhāriu",
+   "Ōtaki"
+  ],
+  "details": [
+   "West Auckland: New Lynn, Kelston and Te Atatū reconfigured into Waitākere, Glendene and Henderson.",
+   "South Auckland: Panmure-Ōtāhuhu becomes Ōtāhuhu (loses Panmure).",
+   "Bay of Plenty: Tauranga and Bay of Plenty substantially redrawn; Bay of Plenty renamed Mount Maunganui.",
+   "East Coast renamed East Cape.",
+   "Lower North Island: Ōtaki, Mana and Ōhāriu reconfigured into Kenepuru and Kāpiti.",
+   "Wellington: Wellington Central and Rongotai substantially redrawn and renamed Wellington North and Wellington Bays.",
+   "Māori electorates stay at seven (boundaries adjusted)."
+  ]
+ },
+ "electoral_law_changes": [
+  "Electoral Amendment Act 2025 (passed 16 Dec 2025): enrolment closes 13 days before polling day (no election-day enrolment); prisoners barred from voting; donation disclosure threshold raised from $5,000 to $6,000; ban on distributing food and most drinks near polling places.",
+  "Electoral Commission defaults to emailing EasyVote information where it has a voter's email (announced 15 Jul 2026)."
+ ],
+ "incumbent_government": {
+  "pm": "Christopher Luxon",
+  "parties": [
+   "national",
+   "act",
+   "nz-first"
+  ],
+  "arrangement": "coalition",
+  "seats_at_dissolution": 67,
+  "house_at_dissolution": 122
+ },
+ "mps_retiring": [
+  {
+   "name": "Duncan Webb",
+   "party": "labour",
+   "seat": "Christchurch Central",
+   "announced": "2025-10-21"
+  },
+  {
+   "name": "Paulo Garcia",
+   "party": "national",
+   "seat": "New Lynn",
+   "announced": "2025-12-16"
+  },
+  {
+   "name": "Maureen Pugh",
+   "party": "national",
+   "seat": "West Coast-Tasman",
+   "announced": "2026-01-23"
+  },
+  {
+   "name": "Celia Wade-Brown",
+   "party": "green",
+   "seat": "List",
+   "announced": "2026-01-28"
+  },
+  {
+   "name": "Judith Collins",
+   "party": "national",
+   "seat": "Papakura",
+   "announced": "2026-01-28",
+   "note": "resigned from Parliament 14 May 2026 to become President of the Law Commission"
+  },
+  {
+   "name": "Shane Reti",
+   "party": "national",
+   "seat": "Whangārei",
+   "announced": "2026-03-10"
+  },
+  {
+   "name": "Brooke van Velden",
+   "party": "act",
+   "seat": "Tāmaki",
+   "announced": "2026-03-24"
+  },
+  {
+   "name": "Greg O'Connor",
+   "party": "labour",
+   "seat": "Ōhāriu",
+   "announced": "2026-06-08",
+   "note": "electorate abolished; did not seek a list place"
+  },
+  {
+   "name": "Andrew Bayly",
+   "party": "national",
+   "seat": "Port Waikato",
+   "announced": "2026-06-20"
+  },
+  {
+   "name": "Chris Penk",
+   "party": "national",
+   "seat": "Kaipara ki Mahurangi",
+   "announced": "2026-08-12",
+   "note": "after an unsuccessful leadership move against Luxon cost him his portfolios"
+  }
+ ],
+ "mps_list_only": [
+  "Megan Woods (labour)",
+  "Nicola Willis (national)",
+  "Deborah Russell (labour)",
+  "Gerry Brownlee (national)",
+  "Nancy Lu (national)"
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election",
+  "https://vote.nz/2026-general-election/about/overview/key-dates",
+  "https://en.wikipedia.org/wiki/Party_lists_in_the_2026_New_Zealand_general_election",
+  "https://en.wikipedia.org/wiki/Candidates_in_the_2026_New_Zealand_general_election_by_electorate",
+  "https://policy.nz/2026",
+  "https://en.wikipedia.org/wiki/Te_Tai_Tokerau_Party"
+ ]
+}

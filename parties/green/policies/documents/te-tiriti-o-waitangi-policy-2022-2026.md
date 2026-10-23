@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/64990/attachments/original/1781473524/Policy-Greens_Te_Tiriti_o_Waitangi_Policy_2022-2026.pdf?1781473524"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 3
 policy_version: "09 June 2026"
 local_copy: "raw/party-docs/green/pdf/Policy-Greens_Te_Tiriti_o_Waitangi_Policy_2022-2026.pdf"

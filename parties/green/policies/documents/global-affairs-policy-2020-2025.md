@@ -4,7 +4,7 @@ party: "green"
 source_url: "https://assets.nationbuilder.com/beachheroes/pages/64696/attachments/original/1778624603/Policy-Greens_Global_Affairs_Policy_2020-2025.pdf"
 retrieved: "2026-10-23"
 format: "pdf"
-fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext 24.x (default reading order, bullets re-joined); pages whose -layout output contains tables are repeated in layout form"
+fetch_method: "direct HTTPS download from assets.nationbuilder.com; text by pdftotext (poppler, default reading order, lone bullet glyphs re-joined to their text); pages whose -layout output contains tables are repeated in layout form"
 pages: 6
 policy_version: "17 December 2025"
 local_copy: "raw/party-docs/green/pdf/Policy-Greens_Global_Affairs_Policy_2020-2025.pdf"
