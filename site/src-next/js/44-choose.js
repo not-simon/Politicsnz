@@ -145,8 +145,6 @@ V.chooseResults = async () => {
     if (k === 'quiz2') { const st = q2State(); store.set('quiz2', JSON.stringify({ seed: st.seed })) } else if (k === 'swipe') { const st = swipeState(); store.set('swipe', JSON.stringify({ topic: st.topic || '' })) } else if (k === 'compass') { const st = compassState(); store.set('compass', JSON.stringify({ source: st.source })) } else store.set(k, 'null');
     chooseToast('Cleared.'); V.chooseResults() });
 };
-queueMicrotask(() => { const other = V.results; if (other && other !== V.chooseResults && !other.isChooseDispatch) V.seatsResults = other;
-  const dispatch = (...a) => String(S.route || '').startsWith('seats') && V.seatsResults ? V.seatsResults(...a) : V.chooseResults(...a); dispatch.isChooseDispatch = true; V.results = dispatch });
 
 /* ----- compare two parties ----- */
 V.compare = (arg) => {

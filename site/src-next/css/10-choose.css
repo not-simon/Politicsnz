@@ -23,7 +23,7 @@
 .cplot .grid line { stroke: var(--viz-grid) }
 .cplot__axis { stroke: var(--viz-axis); stroke-width: 1.2 }
 .cplot__ax text { fill: var(--text-3); font-weight: 700; letter-spacing: .04em }
-.cplot__p circle { fill: var(--pc); stroke: var(--surface); stroke-width: 2 }
+.cplot__p circle { fill: var(--pc); stroke: var(--ring); stroke-width: 1.5 }
 .cplot__p text { fill: var(--text-2); font-weight: 600; paint-order: stroke; stroke: var(--sunk); stroke-width: 3px; stroke-linejoin: round }
 .cplot__you { fill: var(--signal); fill-opacity: .16; stroke: var(--signal); stroke-width: 1.5 }
 .cplot__ring { fill: var(--surface); stroke: var(--signal); stroke-width: 4 }

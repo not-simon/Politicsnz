@@ -1064,7 +1064,7 @@ main { view-transition-name: main }
 .cplot .grid line { stroke: var(--viz-grid) }
 .cplot__axis { stroke: var(--viz-axis); stroke-width: 1.2 }
 .cplot__ax text { fill: var(--text-3); font-weight: 700; letter-spacing: .04em }
-.cplot__p circle { fill: var(--pc); stroke: var(--surface); stroke-width: 2 }
+.cplot__p circle { fill: var(--pc); stroke: var(--ring); stroke-width: 1.5 }
 .cplot__p text { fill: var(--text-2); font-weight: 600; paint-order: stroke; stroke: var(--sunk); stroke-width: 3px; stroke-linejoin: round }
 .cplot__you { fill: var(--signal); fill-opacity: .16; stroke: var(--signal); stroke-width: 1.5 }
 .cplot__ring { fill: var(--surface); stroke: var(--signal); stroke-width: 4 }
@@ -3250,8 +3250,6 @@ V.chooseResults = async () => {
     if (k === 'quiz2') { const st = q2State(); store.set('quiz2', JSON.stringify({ seed: st.seed })) } else if (k === 'swipe') { const st = swipeState(); store.set('swipe', JSON.stringify({ topic: st.topic || '' })) } else if (k === 'compass') { const st = compassState(); store.set('compass', JSON.stringify({ source: st.source })) } else store.set(k, 'null');
     chooseToast('Cleared.'); V.chooseResults() });
 };
-queueMicrotask(() => { const other = V.results; if (other && other !== V.chooseResults && !other.isChooseDispatch) V.seatsResults = other;
-  const dispatch = (...a) => String(S.route || '').startsWith('seats') && V.seatsResults ? V.seatsResults(...a) : V.chooseResults(...a); dispatch.isChooseDispatch = true; V.results = dispatch });
 
 /* ----- compare two parties ----- */
 V.compare = (arg) => {
@@ -3983,7 +3981,7 @@ function resolve(path) { const seg = path.split('/'); const [a, b, ...rest] = se
   if (a === 'search') return { sec: null, view: 'search', args: [b ? decodeURIComponent(b) : ''] };
   if (a === 'about') { if (!b || b === 'trust') return { sec: null, view: 'trust', args: [] }; if (b === 'page') return { sec: null, view: 'page', args: [arg] }; return { sec: null, view: 'trust', args: [] } }
   if (a === 'vote') { if (b === 'electorate') return { sec: 'vote', view: 'electorate', args: [arg], key: 'vote/electorate' }; return { sec: 'vote', view: 'vote', args: [b], key: 'vote' + (b ? '/' + b : '') } }
-  if (a === 'choose') { const v = { quiz: 'match', swipe: 'swipe', compass: 'compass', game: 'game', compare: 'compare', results: 'results' }[b]; return { sec: 'choose', view: v || 'choose', args: [arg], key: 'choose' + (b ? '/' + b : '') } }
+  if (a === 'choose') { const v = { quiz: 'match', swipe: 'swipe', compass: 'compass', game: 'game', compare: 'compare', results: 'chooseResults' }[b]; return { sec: 'choose', view: v || 'choose', args: [arg], key: 'choose' + (b ? '/' + b : '') } }
   if (a === 'parties') { if (!b) return { sec: 'parties', view: 'parties', args: [], key: 'parties' };
     if (b === 'issues') return { sec: 'parties', view: arg ? 'issue' : 'issues', args: [arg], key: 'parties/issues' };
     if (b === 'policies') return { sec: 'parties', view: 'policies', args: [arg], key: 'parties/policies' };

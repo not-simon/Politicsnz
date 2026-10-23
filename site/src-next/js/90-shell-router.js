@@ -64,7 +64,7 @@ function resolve(path) { const seg = path.split('/'); const [a, b, ...rest] = se
   if (a === 'search') return { sec: null, view: 'search', args: [b ? decodeURIComponent(b) : ''] };
   if (a === 'about') { if (!b || b === 'trust') return { sec: null, view: 'trust', args: [] }; if (b === 'page') return { sec: null, view: 'page', args: [arg] }; return { sec: null, view: 'trust', args: [] } }
   if (a === 'vote') { if (b === 'electorate') return { sec: 'vote', view: 'electorate', args: [arg], key: 'vote/electorate' }; return { sec: 'vote', view: 'vote', args: [b], key: 'vote' + (b ? '/' + b : '') } }
-  if (a === 'choose') { const v = { quiz: 'match', swipe: 'swipe', compass: 'compass', game: 'game', compare: 'compare', results: 'results' }[b]; return { sec: 'choose', view: v || 'choose', args: [arg], key: 'choose' + (b ? '/' + b : '') } }
+  if (a === 'choose') { const v = { quiz: 'match', swipe: 'swipe', compass: 'compass', game: 'game', compare: 'compare', results: 'chooseResults' }[b]; return { sec: 'choose', view: v || 'choose', args: [arg], key: 'choose' + (b ? '/' + b : '') } }
   if (a === 'parties') { if (!b) return { sec: 'parties', view: 'parties', args: [], key: 'parties' };
     if (b === 'issues') return { sec: 'parties', view: arg ? 'issue' : 'issues', args: [arg], key: 'parties/issues' };
     if (b === 'policies') return { sec: 'parties', view: 'policies', args: [arg], key: 'parties/policies' };
