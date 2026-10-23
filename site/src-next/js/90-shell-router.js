@@ -93,7 +93,9 @@ function render(path) {
   const swap = async () => {
     if (blockedToday(R.view) || blockedToday(path.split('/').pop())) { main.innerHTML = `<div class="lock">${ic('lock')}<h2 class="h3">Hidden until 7pm</h2><p>${ELECTION_DAY_BLOCK}</p><p class="small muted">Everything else — parties, policies, candidates, your electorate, how to vote — stays available.</p><div class="row"><a class="btn btn--primary" href="https://map.vote.nz" target="_blank" rel="noopener">Find a voting place</a><a class="btn" href="#/vote/electorate">Your electorate</a></div></div>`; return }
     await V[R.view](...R.args);
-    loadPeople().then(() => { if (S.route === path) main.querySelectorAll('.read, .prose, .quote, .pol p, .lede, #ctx, .mapside, .feed__t, .side, .nutshell').forEach(autolink) }) };
+    loadPeople().then(() => { if (S.route === path) main.querySelectorAll('.read, .prose, .quote, .pol p, .lede, #ctx, .mapside, .feed__t, .side, .nutshell').forEach(autolink);
+      // a page never links to itself
+      main.querySelectorAll('.linkbtn[data-go]').forEach(b => { if (normaliseRoute(b.dataset.go) === S.route.replace(/\/(glance|policies|record|people|history)$/, '')) b.replaceWith(document.createTextNode(b.textContent)) }) }) };
   const run = () => { window.scrollTo(0, 0); main.classList.remove('page-enter'); void main.offsetWidth; main.classList.add('page-enter'); return swap() };
   if (document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches) document.startViewTransition(run); else run();
 }
