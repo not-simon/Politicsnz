@@ -6,7 +6,7 @@ A sourced, non-partisan research archive for voters in the **7 November 2026 gen
 
 It comes with an interactive, phone-friendly guide in [`site/`](site/) — find-your-match quiz, party pages, issue comparisons, your electorate's candidates, a tap-a-seat map of every Parliament, poll trends, a coalition builder and an MMP seat calculator.
 
-> Not affiliated with any party. Every fact links to its source. Party policy texts are reproduced as published, for reference. Enrol and find your voting place at **vote.nz**.
+> Not affiliated with any party. Every fact is meant to link to its source, and the same rules apply to every party ([editorial standards](docs/EDITORIAL_STANDARDS.md)). If you find an error, open a [Correction issue](https://github.com/simongeorgebrown/Politicsnz/issues/new/choose) or see [how to report an error](docs/EDITORIAL_STANDARDS.md#how-to-report-an-error). Party policy texts are reproduced as published, for reference. Enrol and find your voting place at **vote.nz**.
 
 ## Start here
 
@@ -67,6 +67,15 @@ docs/SCHEMA.md            data formats
 - **Locally:** `cd site && python3 -m http.server` then open http://localhost:8000.
 - **GitHub Pages:** the workflow in `.github/workflows/pages.yml` publishes `site/` automatically. Turn it on under *Settings → Pages → Source: GitHub Actions*. (Pages on a private repository needs a paid GitHub plan; on a public repository it's free.)
 - **Rebuild after editing data:** `python3 tools/build_site.py`.
+
+## Editorial standards and corrections
+
+- The rules the guide is written to (neutral wording, equal treatment of every party, sourced and dated facts, attributed
+  criticism, plain English) are in [`docs/EDITORIAL_STANDARDS.md`](docs/EDITORIAL_STANDARDS.md).
+- Every change made in the pre-publication fact-check and neutrality review, with before/after wording and the reason, is in
+  [`docs/REVIEW_LOG.md`](docs/REVIEW_LOG.md). It also lists issues found outside the reviewed files that still need follow-up.
+- To report an error: open an issue with the **Correction** template (say which page, what is wrong, what is right, and link a
+  source), or email the maintainer. Corrections are checked against the party's own published text or the official source.
 
 ## Sources and method
 

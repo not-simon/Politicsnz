@@ -1,0 +1,229 @@
+/* ==========================================================================
+   Ballot Book NZ — design tokens
+   One source of truth for colour, type, space, radius, motion.
+   Light values live on bare :root; dark values follow the exact pattern
+   required by the app (media query guarded by :root:not([data-theme="light"]),
+   plus an explicit :root[data-theme="dark"] override).
+
+   Fonts (Google Fonts). Put this in <head>, before the stylesheets:
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Atkinson+Hyperlegible+Next:wght@400..800&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+   ========================================================================== */
+
+:root {
+  /* ---- Type families ------------------------------------------------- */
+  --font-display: "Bricolage Grotesque", "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  --font-body: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* ---- Type scale (fluid between 390px and 1200px) ------------------- */
+  --t-tiny: 0.75rem;                                   /* 12 */
+  --t-small: 0.84375rem;                               /* 13.5 */
+  --t-body: 1rem;                                      /* 16 */
+  --t-lede: clamp(1.0625rem, 0.98rem + 0.4vw, 1.25rem);/* 17 → 20 */
+  --t-h4: 1.0625rem;                                   /* 17 */
+  --t-h3: clamp(1.1875rem, 1.1rem + 0.35vw, 1.375rem); /* 19 → 22 */
+  --t-h2: clamp(1.5rem, 1.3rem + 0.8vw, 1.875rem);     /* 24 → 30 */
+  --t-h1: clamp(2rem, 1.5rem + 2.2vw, 3rem);           /* 32 → 48 */
+  --t-display: clamp(2.75rem, 2rem + 3.5vw, 4.5rem);   /* 44 → 72 (counts, hero numbers) */
+  --lh-tight: 1.1;
+  --lh-snug: 1.25;
+  --lh-body: 1.55;
+  --track-caps: 0.08em;
+
+  /* ---- Space (4px base) ---------------------------------------------- */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px;
+  --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px;
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --measure: 66ch;          /* prose width */
+  --wrap-max: 1200px;
+
+  /* ---- Radius / line / shadow --------------------------------------- */
+  --r-sm: 6px; --r: 10px; --r-lg: 16px; --r-pill: 999px;
+  --hair: 1px;
+  --shadow-pop: 0 10px 30px -10px rgb(23 29 28 / .25), 0 2px 6px -2px rgb(23 29 28 / .15);
+
+  /* ---- Motion -------------------------------------------------------- */
+  --ease: cubic-bezier(.2,.7,.2,1);
+  --dur: 180ms;
+  --dur-slow: 320ms;
+
+  /* ---- Colour: neutrals (light) -------------------------------------- */
+  color-scheme: light;
+  --bg: #F3F3EF;            /* page: warm stone, not cream */
+  --surface: #FFFFFF;       /* cards, header, dialogs */
+  --surface-2: #ECECE6;     /* sunken areas, tracks, table head */
+  --surface-3: #E2E3DC;     /* pressed / hover of surface-2 */
+  --text: #171D1C;          /* ink */
+  --text-2: #4A5250;        /* secondary */
+  --text-3: #5F6866;        /* muted — still ≥4.5:1 on bg, surface, surface-2 */
+  --line: #D9DAD3;          /* hairlines */
+  --line-strong: #B9BBB2;   /* control borders */
+  --ring: rgb(23 29 28 / .18);        /* 1px ring around party colour swatches */
+  --scrim: rgb(23 29 28 / .45);       /* dialog backdrop */
+  --hover: rgb(23 29 28 / .05);
+  --pressed: rgb(23 29 28 / .09);
+
+  /* ---- Colour: brand -------------------------------------------------- */
+  --primary: #171D1C;       /* main button fill (ink) */
+  --on-primary: #FFFFFF;
+  --sun: #E8600A;           /* the single warm highlight */
+  --on-sun: #1A1200;
+  --sun-text: #B9460A;      /* sun used *as text* on bg/surface */
+  --sun-soft: #FBE9DC;      /* tinted wash */
+  --focus: #E8600A;
+  --link: #171D1C;          /* links are ink with a sun underline */
+  --link-underline: #E8600A;
+
+  /* ---- Colour: semantic verdicts (always with a label, never alone) --- */
+  --v-kept: #1B7F4C;
+  --v-partially-kept: #9A6410;
+  --v-broken: #C2342B;
+  --v-abandoned: #5F6866;
+  --v-in-progress: #1A7A8A;
+  --v-not-yet-due: #B9BBB2;
+  --on-verdict: #FFFFFF;
+
+  /* ---- Colour: states -------------------------------------------------- */
+  --info-bg: #E7EEF2;  --info-text: #223C47;
+  --warn-bg: #FBEFD4;  --warn-text: #5A3E00;
+  --good-bg: #E1F2E7;  --good-text: #124F2F;
+  --bad-bg:  #F9E3E1;  --bad-text:  #6E1D17;
+
+  /* ---- Colour: charts -------------------------------------------------- */
+  --chart-grid: #E3E4DD;
+  --chart-axis: #B9BBB2;
+  --chart-text: #4A5250;
+  --chart-trend-dim: rgb(23 29 28 / .18); /* poll dots at rest */
+  --range-band: rgb(23 29 28 / .10);      /* 80% forecast ranges */
+  --majority: #171D1C;                    /* 61-seat line */
+  --map-empty: #E2E3DC;
+  --map-stroke: #FFFFFF;
+  --me: #171D1C;            /* "you" dot on compass */
+  --me-ring: #E8600A;
+
+  /* ---- Party colours (data — do not restyle) --------------------------- */
+  --p-national: #00529F;
+  --p-labour: #D82A20;
+  --p-green: #0B8A3E;
+  --p-act: #F2C300;
+  --p-nz-first: #2B2B2B;
+  --p-te-pati-maori: #B2001A;
+  --p-opportunity: #1FB5A3;
+  --p-other: #A7ADB5;
+}
+
+/* ---- Dark: follows system unless the user forced light ------------------ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #111514;
+    --surface: #1A1F1E;
+    --surface-2: #232928;
+    --surface-3: #2C3331;
+    --text: #ECEEEA;
+    --text-2: #B6BDB9;
+    --text-3: #8E9692;
+    --line: #2E3533;
+    --line-strong: #434B48;
+    --ring: rgb(236 238 234 / .28);
+    --scrim: rgb(0 0 0 / .6);
+    --hover: rgb(236 238 234 / .06);
+    --pressed: rgb(236 238 234 / .11);
+    --shadow-pop: 0 10px 30px -10px rgb(0 0 0 / .6), 0 2px 6px -2px rgb(0 0 0 / .4);
+
+    --primary: #ECEEEA;
+    --on-primary: #111514;
+    --sun: #F58A3C;
+    --on-sun: #1A1200;
+    --sun-text: #F58A3C;
+    --sun-soft: #3A2412;
+    --focus: #F58A3C;
+    --link: #ECEEEA;
+    --link-underline: #F58A3C;
+
+    --v-kept: #4CC27F;
+    --v-partially-kept: #E0A94A;
+    --v-broken: #F07167;
+    --v-abandoned: #9AA19D;
+    --v-in-progress: #5BBFD0;
+    --v-not-yet-due: #434B48;
+    --on-verdict: #111514;
+
+    --info-bg: #1E2E35;  --info-text: #CFE3EB;
+    --warn-bg: #3A2E12;  --warn-text: #F3DFAE;
+    --good-bg: #14301F;  --good-text: #BFE8CD;
+    --bad-bg:  #3B1A17;  --bad-text:  #F6C9C4;
+
+    --chart-grid: #262D2B;
+    --chart-axis: #434B48;
+    --chart-text: #B6BDB9;
+    --chart-trend-dim: rgb(236 238 234 / .22);
+    --range-band: rgb(236 238 234 / .14);
+    --majority: #ECEEEA;
+    --map-empty: #2C3331;
+    --map-stroke: #111514;
+    --me: #ECEEEA;
+    --me-ring: #F58A3C;
+  }
+}
+
+/* ---- Dark: forced by the user --------------------------------------------- */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111514;
+  --surface: #1A1F1E;
+  --surface-2: #232928;
+  --surface-3: #2C3331;
+  --text: #ECEEEA;
+  --text-2: #B6BDB9;
+  --text-3: #8E9692;
+  --line: #2E3533;
+  --line-strong: #434B48;
+  --ring: rgb(236 238 234 / .28);
+  --scrim: rgb(0 0 0 / .6);
+  --hover: rgb(236 238 234 / .06);
+  --pressed: rgb(236 238 234 / .11);
+  --shadow-pop: 0 10px 30px -10px rgb(0 0 0 / .6), 0 2px 6px -2px rgb(0 0 0 / .4);
+
+  --primary: #ECEEEA;
+  --on-primary: #111514;
+  --sun: #F58A3C;
+  --on-sun: #1A1200;
+  --sun-text: #F58A3C;
+  --sun-soft: #3A2412;
+  --focus: #F58A3C;
+  --link: #ECEEEA;
+  --link-underline: #F58A3C;
+
+  --v-kept: #4CC27F;
+  --v-partially-kept: #E0A94A;
+  --v-broken: #F07167;
+  --v-abandoned: #9AA19D;
+  --v-in-progress: #5BBFD0;
+  --v-not-yet-due: #434B48;
+  --on-verdict: #111514;
+
+  --info-bg: #1E2E35;  --info-text: #CFE3EB;
+  --warn-bg: #3A2E12;  --warn-text: #F3DFAE;
+  --good-bg: #14301F;  --good-text: #BFE8CD;
+  --bad-bg:  #3B1A17;  --bad-text:  #F6C9C4;
+
+  --chart-grid: #262D2B;
+  --chart-axis: #434B48;
+  --chart-text: #B6BDB9;
+  --chart-trend-dim: rgb(236 238 234 / .22);
+  --range-band: rgb(236 238 234 / .14);
+  --majority: #ECEEEA;
+  --map-empty: #2C3331;
+  --map-stroke: #111514;
+  --me: #ECEEEA;
+  --me-ring: #F58A3C;
+}
+
+/* ---- Motion preference ------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur: 0ms; --dur-slow: 0ms; }
+}

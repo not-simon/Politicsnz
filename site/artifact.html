@@ -200,6 +200,7 @@ td.n, th.n { text-align: right; font-family: var(--f-num); font-variant-numeric:
 .inset { background: var(--sunk); border-radius: 12px; padding: 6px; position: relative }
 .inset .lab { position: absolute; top: 6px; left: 8px; font: 700 11px var(--f-ui); color: var(--muted) }
 .scrubber { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: center }
+.scrubber .years span { cursor: pointer }
 .scrubber input[type=range] { width: 100%; accent-color: var(--brand) }
 .scrubber .years { display: flex; justify-content: space-between; font: 600 12px var(--f-num); color: var(--muted) }
 .scrubber .years span.on { color: var(--ink); font-weight: 800 }
@@ -272,8 +273,23 @@ dialog::backdrop { background: rgba(12,18,32,.55); backdrop-filter: blur(2px) }
 .ballot .box.on::after { content: ""; width: 12px; height: 7px; border-left: 3px solid var(--coral); border-bottom: 3px solid var(--coral); transform: rotate(-45deg) translate(1px, -1px) }
 footer { color: var(--muted); font-size: 13px; padding-block: 24px 40px; border-top: 1px solid var(--line) }
 @media (max-width: 860px) { footer { padding-bottom: 110px } }
+.seg { display: inline-flex; background: var(--sunk); border-radius: 999px; padding: 3px; gap: 2px; flex-wrap: wrap }
+.seg button { border: 0; background: transparent; border-radius: 999px; padding: 6px 12px; font: 600 13px var(--f-ui); color: var(--muted); cursor: pointer }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow) }
 @media (prefers-reduced-motion: no-preference) {
-  .seat { transition: opacity .25s }
+  .view { animation: fadeUp .4s cubic-bezier(.2,.7,.2,1) both }
+  .anim { animation: fadeUp .35s cubic-bezier(.2,.7,.2,1) both }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+  .meter > span, .bar > span, .progress span { animation: grow .7s cubic-bezier(.2,.7,.2,1) both; transform-origin: left }
+  @keyframes grow { from { transform: scaleX(0) } }
+  .seat { transition: fill .5s, opacity .25s }
+  .map path.el { transition: fill .55s, opacity .2s }
+  .starter, .pcard, .person { transition: transform .18s, box-shadow .18s, border-color .18s } .starter:hover, .pcard:hover, .person:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(20,32,54,.12) }
+  .btn { transition: transform .12s, background .15s, border-color .15s } .btn:active { transform: scale(.97) }
+  .chip { transition: background .15s, border-color .15s }
+  dialog[open] { animation: pop .25s cubic-bezier(.2,.7,.2,1) both } dialog::backdrop { animation: fadeIn .25s both } @keyframes fadeIn { from { opacity: 0 } }
+  .tabs button { transition: color .15s, border-color .15s }
+  .stat b { animation: fadeUp .5s both }
   .pop { animation: pop .5s both }
   @keyframes pop { from { transform: scale(.4); opacity: 0 } to { transform: scale(1); opacity: 1 } }
 }
@@ -366,6 +382,11 @@ function chamberSVG(seatList, { highlight = null, label = 'Seats', animate = fal
     return `<circle class="seat${dim}${animate ? ' pop' : ''}" style="${animate ? `animation-delay:${(i * 6)}ms;transform-origin:${(cx + p.x * R).toFixed(1)}px ${(cy - p.y * R).toFixed(1)}px` : ''}" tabindex="0" data-i="${i}" cx="${(cx + p.x * R).toFixed(1)}" cy="${(cy - p.y * R).toFixed(1)}" r="${(dot * R).toFixed(2)}" fill="${pcolor(s.party)}"><title>${esc(s.name || pname(s.party))}</title></circle>` }).join('');
   const maj = Math.floor(n / 2) + 1;
   return `<svg viewBox="0 0 400 ${caption ? 216 : 204}" role="img" aria-label="${esc(label)}">${c}${caption ? `<text x="200" y="194" text-anchor="middle" style="font:800 34px var(--f-display);fill:var(--ink)">${n}</text><text x="200" y="212" text-anchor="middle" style="font:600 11px var(--f-ui);fill:var(--muted)">seats · ${maj} to govern</text>` : ''}</svg>` }
+function chamberUpdate(container, seatList, opts = {}) { // animate fills in place when the seat count is unchanged
+  const svg = container.querySelector('svg'); const circles = svg ? svg.querySelectorAll('circle.seat') : [];
+  if (!svg || circles.length !== seatList.length) { container.innerHTML = chamberSVG(seatList, { ...opts, animate: true }); return }
+  circles.forEach((c, i) => { const s = seatList[i]; c.setAttribute('fill', pcolor(s.party)); c.querySelector('title').textContent = s.name || pname(s.party); c.classList.toggle('dim', !!(opts.highlight && !opts.highlight.has(s.party))) });
+}
 function seatsFromComposition(comp, members) {
   const parties = Object.keys(comp).filter(p => comp[p] > 0).sort((a, b) => P(a).order - P(b).order); const list = [];
   for (const p of parties) { const ms = (members || []).filter(m => m.party === p).sort((a, b) => (a.type === 'electorate' ? 0 : 1) - (b.type === 'electorate' ? 0 : 1) || String(a.name).localeCompare(b.name));
@@ -513,12 +534,15 @@ V.party = async (s, tab = 'glance') => {
   show(tab);
 };
 function recordSummary(s) {
-  const L = (S.data.promises || {})[s] || []; if (!L.length) return '';
-  const c = v => L.filter(x => x.status === v).length; const n = L.length; const g = guideParty(s) || {};
+  const all = (S.data.promises || {})[s] || []; if (!all.length) return '';
+  const g = guideParty(s) || {}; const cur = S.promPeriod || 'all';
+  const terms = TERMS.map(([k, l]) => [k, l, all.filter(x => periodOf(x) === k)]).filter(([, , L]) => L.length);
+  const sc = scoreOf(all);
   return `<div class="card stack"><h3>Keeping their word</h3>${T(g.track_record_line) ? `<p class="small">${esc(T(g.track_record_line))}</p>` : ''}
-    <div class="meter" style="height:14px">${VERDICTS.map(v => `<span class="v-${v}" style="width:${c(v) / n * 100}%"></span>`).join('')}</div>
-    <div class="row tiny">${VERDICTS.filter(v => c(v)).map(v => `<span class="row" style="gap:4px"><span class="verdict v-${v}">${c(v)}</span>${v.replace(/-/g, ' ')}</span>`).join('')}</div>
-    <p class="tiny muted">${n} promises from past campaigns checked against what happened.</p></div>`;
+    <div class="row" style="justify-content:space-between"><span class="small"><b>All time:</b> ${sc.n} promises checked${sc.score != null ? `, <b>${sc.score}%</b> kept` : ''}</span></div>${verdictMeter(all)}
+    <div class="row tiny">${VERDICTS.filter(v => all.some(x => x.status === v)).map(v => `<span class="row" style="gap:4px"><span class="verdict v-${v}">${all.filter(x => x.status === v).length}</span>${v.replace(/-/g, ' ')}</span>`).join('')}</div>
+    <h4 style="margin-top:6px">By term</h4><div class="stack" style="gap:8px">${terms.map(([k, l, L]) => { const t = scoreOf(L); return `<div><div class="row tiny" style="justify-content:space-between"><span><b>${l}</b> · ${t.n} checked</span><span>${t.score != null ? `<b>${t.score}%</b> kept` : 'not yet due'}</span></div>${verdictMeter(L, 9)}</div>` }).join('')}</div>
+    <p class="tiny muted">"% kept" counts partly kept as half and leaves out promises still in progress or not yet due.</p></div>`;
 }
 function partyResultsMini(s, big = false) {
   const els = S.data.elections.filter(e => e.year >= 2008); const rows = els.map(e => { const r = (e.parties || []).find(x => x.party === s); return [e.year, r] });
@@ -907,30 +931,34 @@ V.parliament = (sub = 'chamber') => {
 const SUB = {};
 SUB.chamber = el => {
   const parls = S.data.parliaments, els = S.data.elections;
-  const opts = parls.map(p => [`p${p.parliament}`, `${ordinal(p.parliament)} Parliament (elected ${p.election_year})`]); opts.push(['proj', '2026: projection from the polls']);
-  const sel = store.get('chamberSel') || (parls.length ? `p${parls[parls.length - 1].parliament}` : 'proj');
-  el.innerHTML = `<div class="stack" style="gap:16px"><p class="lede">Every seat in every Parliament since 2011. Tap a seat to see who held it.</p>
-    <div class="row"><select id="psel" aria-label="Parliament">${opts.map(([v, l]) => `<option value="${v}" ${v === sel ? 'selected' : ''}>${l}</option>`).join('')}</select>
-      <span id="modewrap" class="row"><button class="chip" id="m-start" aria-pressed="true">After the election</button><button class="chip" id="m-now" aria-pressed="false">At the end of the term / today</button></span></div>
-    <div class="split"><div class="card chamber"><div id="hemi"></div><div class="legend" id="legend"></div></div>
+  const steps = parls.map(p => ({ key: `p${p.parliament}`, label: String(p.election_year), parl: p })); steps.push({ key: 'proj', label: '2026', proj: true });
+  let i = Math.max(0, steps.findIndex(x => x.key === (store.get('chamberSel') || `p${parls[parls.length - 1].parliament}`))); let mode = 'start'; let playing = null;
+  el.innerHTML = `<div class="stack" style="gap:16px"><p class="lede">Every seat in every Parliament since 2011. Drag the slider or press play to watch the House change; tap a seat to see who held it.</p>
+    <div class="card scrubber"><button class="playbtn" id="cplay" aria-label="Play through the Parliaments">${ic('play', 22)}</button><div><input type="range" id="cyear" min="0" max="${steps.length - 1}" step="1" value="${i}" aria-label="Parliament"><div class="years">${steps.map((x, k) => `<span data-k="${k}">${x.label}${x.proj ? ' (polls)' : ''}</span>`).join('')}</div></div></div>
+    <div class="row" style="justify-content:space-between"><span class="seg" id="modewrap"><button id="m-start" aria-pressed="true">After the election</button><button id="m-now" aria-pressed="false">End of term / today</button></span><div class="legend" id="legend"></div></div>
+    <div class="split"><div class="card chamber"><div id="hemi"></div><div id="ctitle" class="row" style="justify-content:space-between;margin-top:6px"></div></div>
       <div class="card stack"><div id="seatinfo" class="seatcard muted small">Tap any seat to see who sat there.</div><hr class="soft"><div id="ctx" class="stack"></div></div></div>
-    <div class="card scroll" id="results"></div></div>`;
-  let mode = 'start';
-  const draw = () => { const v = $('#psel').value; store.set('chamberSel', v); let seats, ctx = '', res = '';
-    if (v === 'proj') { const pr = projection(); seats = seatsFromComposition(pr.seats, []); $('#modewrap').hidden = true;
-      ctx = `<h4>How this is built</h4><p class="small">Average of the ${pr.n} latest polls (${esc(pr.range)}), turned into seats with the Sainte-Laguë formula. Assumed electorate wins: ${esc(Object.entries(pr.elec).map(([p, n]) => pname(p) + ' ' + n).join(', ') || 'none')}. Change these in the seat calculator. An illustration, not a forecast.</p>`;
+    <div class="card scroll anim" id="results"></div></div>`;
+  const draw = () => { const st = steps[i]; store.set('chamberSel', st.key); let seats, ctx = '', res = '';
+    if (st.proj) { const pr = projection(); seats = seatsFromComposition(pr.seats, []); $('#modewrap').hidden = true;
+      ctx = `<h4>2026: projection from the polls</h4><p class="small">Average of the ${pr.n} latest polls (${esc(pr.range)}), turned into seats with the Sainte-Laguë formula. Assumed electorate wins: ${esc(Object.entries(pr.elec).map(([p, n]) => pname(p) + ' ' + n).join(', ') || 'none')}. An illustration, not a forecast — see <button class="btn ghost sm" data-go="polls">Polls & forecast</button>.</p>`;
       res = `<h3>Poll average</h3><table><thead><tr><th>Party</th><th class="n">Poll %</th><th class="n">Seats</th></tr></thead><tbody>${Object.entries(pr.pct).sort((a, b) => b[1] - a[1]).map(([p, x]) => `<tr><td><span class="row" style="gap:6px"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))}</span></td><td class="n">${fmt(x)}</td><td class="n">${pr.seats[p] || 0}</td></tr>`).join('')}</tbody></table>`;
-    } else { $('#modewrap').hidden = false; const parl = parls.find(p => `p${p.parliament}` === v); seats = parliamentSeats(parl, mode);
+    } else { $('#modewrap').hidden = false; const parl = st.parl; seats = parliamentSeats(parl, mode);
       const e = els.find(x => x.year === parl.election_year); const g = e && e.government;
       ctx = `<div class="kicker">${ordinal(parl.parliament)} Parliament · ${esc(parl.start || '')} to ${esc(parl.end || 'today')}</div>
         ${g ? `<p class="small"><b>Government:</b> ${esc(g.pm || '')}, ${esc((g.parties || []).map(pname).join(' + '))} (${esc(g.arrangement || '')})${(g.support || []).length ? ', with support from ' + esc(g.support.map(pname).join(', ')) : ''}.</p>${g.notes ? `<p class="small muted">${esc(g.notes)}</p>` : ''}` : ''}
         ${(parl.changes || []).length ? `<details><summary class="small" style="cursor:pointer;color:var(--brand);font-weight:700">${parl.changes.length} changes during the term</summary><ul class="small">${parl.changes.map(c => `<li><span class="num">${esc(c.date)}</span> ${esc(c.description)}</li>`).join('')}</ul></details>` : ''}`;
       if (e) res = electionTable(e) }
-    S.curSeats = seats; $('#hemi').innerHTML = chamberSVG(seats, { label: 'Seat map' });
+    S.curSeats = seats; chamberUpdate($('#hemi'), seats, { label: 'Seat map' });
+    $('#ctitle').innerHTML = `<b style="font:800 20px var(--f-display)">${esc(st.label)}${st.proj ? ' · poll projection' : ' election'}</b><span class="tiny muted">${seats.length} seats · ${Math.floor(seats.length / 2) + 1} to govern</span>`;
     const counts = {}; seats.forEach(s => counts[s.party] = (counts[s.party] || 0) + 1);
     $('#legend').innerHTML = Object.entries(counts).sort((a, b) => P(a[0]).order - P(b[0]).order).map(([p, n]) => `<span class="item"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))} <b class="num">${n}</b></span>`).join('');
-    $('#ctx').innerHTML = ctx; $('#results').innerHTML = res || '<p class="empty">No results table for this view.</p>' };
-  $('#psel').onchange = draw;
+    $('#ctx').innerHTML = ctx; const r = $('#results'); r.innerHTML = res || '<p class="empty">No results table for this view.</p>'; r.classList.remove('anim'); void r.offsetWidth; r.classList.add('anim');
+    $('#cyear').value = i; el.querySelectorAll('.years span').forEach(x => x.classList.toggle('on', +x.dataset.k === i)) };
+  $('#cyear').oninput = () => { i = +$('#cyear').value; draw() };
+  el.querySelector('.years').onclick = e => { const sp = e.target.closest('[data-k]'); if (sp) { i = +sp.dataset.k; draw() } };
+  $('#cplay').onclick = () => { if (playing) { clearInterval(playing); playing = null; $('#cplay').innerHTML = ic('play', 22); return }
+    $('#cplay').innerHTML = ic('pause', 22); i = 0; draw(); playing = setInterval(() => { if (i >= steps.length - 1) { clearInterval(playing); playing = null; $('#cplay').innerHTML = ic('play', 22); return } i++; draw() }, 1600) };
   $('#m-start').onclick = () => { mode = 'start'; $('#m-start').setAttribute('aria-pressed', 'true'); $('#m-now').setAttribute('aria-pressed', 'false'); draw() };
   $('#m-now').onclick = () => { mode = 'now'; $('#m-now').setAttribute('aria-pressed', 'true'); $('#m-start').setAttribute('aria-pressed', 'false'); draw() };
   const showSeat = e => { const c = e.target.closest('.seat'); if (c) seatInfo(S.curSeats[+c.dataset.i]) };
@@ -1045,21 +1073,40 @@ function peopleGrid(el, { party = '' } = {}) {
 
 /* ----- promises ----- */
 const VERDICTS = ['kept', 'partially-kept', 'in-progress', 'broken', 'abandoned', 'not-yet-due'];
+const TERMS = [['2008-17', '2008–17'], ['2017-23', '2017–23'], ['2023-26', '2023–26'], ['2026', '2026 campaign']];
+const PERIODS = [['all', 'All time'], ['since2017', 'Last two governments (2017 →)'], ['current', 'Current term (2023–26)'], ['2026', '2026 promises'], ['byterm', 'By term']];
+function periodOf(x) { const m = String((x.made || '') + ' ' + (x.term || '')).match(/\b(20[0-2]\d)\b/); if (!m) return 'other'; const y = +m[1];
+  return y <= 2016 ? '2008-17' : y <= 2022 ? '2017-23' : y <= 2025 ? '2023-26' : '2026' }
+function inPeriod(x, per) { const t = periodOf(x); return per === 'all' || per === 'byterm' ? true : per === 'since2017' ? (t === '2017-23' || t === '2023-26') : per === 'current' ? t === '2023-26' : per === '2026' ? t === '2026' : true }
+function periodBar(id) { const cur = S.promPeriod || 'all'; return `<div class="seg" id="${id}">${PERIODS.map(([k, l]) => `<button data-per="${k}" aria-pressed="${cur === k}">${l}</button>`).join('')}</div>` }
+function scoreOf(L) { const c = v => L.filter(x => x.status === v).length; const resolved = L.filter(x => ['kept', 'partially-kept', 'broken', 'abandoned'].includes(x.status)).length;
+  return { n: L.length, kept: c('kept'), partly: c('partially-kept'), broken: c('broken'), abandoned: c('abandoned'), progress: c('in-progress'), due: c('not-yet-due'), resolved, score: resolved ? Math.round((c('kept') + .5 * c('partially-kept')) / resolved * 100) : null } }
+function verdictMeter(L, h = 14) { const n = L.length || 1; return `<div class="meter" style="height:${h}px">${VERDICTS.map(v => `<span class="v-${v}" style="width:${L.filter(x => x.status === v).length / n * 100}%"></span>`).join('')}</div>` }
+function byTermTable(parties, pr) { return `<div class="scroll"><table><thead><tr><th>Party</th>${TERMS.map(([, l]) => `<th>${l}</th>`).join('')}</tr></thead><tbody>${parties.map(p => `<tr><td><span class="row" style="gap:6px;flex-wrap:nowrap"><span class="dot" style="background:${pcolor(p)}"></span><b>${esc(pname(p))}</b></span></td>${TERMS.map(([k]) => { const L = (pr[p] || []).filter(x => periodOf(x) === k); if (!L.length) return '<td class="muted tiny">–</td>'; const sc = scoreOf(L); return `<td style="min-width:130px">${verdictMeter(L, 10)}<div class="tiny muted" style="margin-top:3px">${sc.n} checked${sc.score != null ? ` · <b>${sc.score}%</b> kept` : ' · not yet due'}</div></td>` }).join('')}</tr>`).join('')}</tbody></table></div>
+  <p class="tiny muted">"% kept" counts a partly kept promise as half and leaves out promises still in progress or not yet due. Terms are when the promise was made: 2008–17 covers the National-led years, 2017–23 the Labour-led years, 2023–26 the current term.</p>` }
 V.promises = () => { const pr = S.data.promises || {}; const parties = Object.keys(pr).filter(p => (pr[p] || []).length).sort((a, b) => P(a).order - P(b).order);
-  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Keeping their word</div><h2>Promises against delivery</h2><p class="lede">Promises from past campaigns, each checked against what happened, with sources. Coalition deals and shocks like COVID are noted on each one.</p></div>
-    <div class="card scroll"><table><thead><tr><th>Party</th><th>Record</th><th class="n">Checked</th><th class="n">Kept</th><th class="n">Partly</th><th class="n">Broken or dropped</th></tr></thead><tbody>
-    ${parties.map(p => { const L = pr[p], c = v => L.filter(x => x.status === v).length, n = L.length; return `<tr><td><button class="btn ghost sm" data-go="party-${p}"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))}</button></td><td style="min-width:160px"><div class="meter" style="height:14px;margin-top:8px">${VERDICTS.map(v => `<span class="v-${v}" style="width:${c(v) / n * 100}%"></span>`).join('')}</div></td><td class="n">${n}</td><td class="n">${c('kept')}</td><td class="n">${c('partially-kept')}</td><td class="n">${c('broken') + c('abandoned')}</td></tr>` }).join('')}</tbody></table>
-    <p class="tiny muted" style="margin-top:10px">${VERDICTS.map(v => `<span class="verdict v-${v}">${v.replace(/-/g, ' ')}</span>`).join(' ')}</p></div><div id="pl"></div></section>`;
-  if (parties.length) promiseList($('#pl'), parties[0], parties) };
+  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Keeping their word</div><h2>Promises against delivery</h2><p class="lede">Promises from past campaigns and coalition deals, each checked against what happened, with sources. Choose a period: the whole record, the last two governments, or just the current term.</p></div>
+    ${periodBar('prper')}<div class="card scroll anim" id="prtable"></div><div id="pl"></div></section>`;
+  const drawTable = () => { const per = S.promPeriod || 'all'; const t = $('#prtable');
+    if (per === 'byterm') { t.innerHTML = `<h3>Term by term</h3>${byTermTable(parties, pr)}`; }
+    else { const rows = parties.map(p => ({ p, L: (pr[p] || []).filter(x => inPeriod(x, per)) })).filter(r => r.L.length);
+      t.innerHTML = `<table><thead><tr><th>Party</th><th>Record</th><th class="n">Checked</th><th class="n">Kept</th><th class="n">Partly</th><th class="n">Broken / dropped</th><th class="n">In progress</th><th class="n">% kept</th></tr></thead><tbody>
+      ${rows.map(({ p, L }) => { const sc = scoreOf(L); return `<tr><td><button class="btn ghost sm" data-go="party-${p}"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))}</button></td><td style="min-width:150px;padding-top:12px">${verdictMeter(L)}</td><td class="n">${sc.n}</td><td class="n">${sc.kept}</td><td class="n">${sc.partly}</td><td class="n">${sc.broken + sc.abandoned}</td><td class="n">${sc.progress + sc.due}</td><td class="n"><b>${sc.score == null ? '–' : sc.score + '%'}</b></td></tr>` }).join('')}</tbody></table>
+      <p class="tiny muted" style="margin-top:10px">${VERDICTS.map(v => `<span class="verdict v-${v}">${v.replace(/-/g, ' ')}</span>`).join(' ')} · "% kept" counts partly kept as half and excludes promises still in progress or not yet due. Parties were assessed on different numbers of promises and from different positions (government, support partner, opposition); read each party's track record for the context.</p>` }
+    t.classList.remove('anim'); void t.offsetWidth; t.classList.add('anim') };
+  $('#prper').onclick = e => { const b = e.target.closest('[data-per]'); if (!b) return; S.promPeriod = b.dataset.per; store.set('promPeriod', S.promPeriod); $('#prper').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.per === S.promPeriod)); drawTable(); if (parties.length) promiseList($('#pl'), $('#prp') ? $('#prp').value : parties[0], parties) };
+  S.promPeriod = store.get('promPeriod') || 'all'; $('#prper').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.per === S.promPeriod));
+  drawTable(); if (parties.length) promiseList($('#pl'), parties[0], parties) };
 function promiseList(el, party, parties = null) { const pr = S.data.promises || {};
   if (!(pr[party] || []).length) { el.innerHTML = `<p class="empty">The promise check for this party is still being researched.</p>${P(party).has_track_record ? `<button class="btn sm" data-page="parties/${party}/track-record.md">Read the track record</button>` : ''}`; return }
   el.innerHTML = `<div class="stack" style="gap:12px">${recordSummary(party)}<div class="toolbar">${parties ? `<select id="prp" aria-label="Party">${parties.map(p => `<option value="${p}" ${p === party ? 'selected' : ''}>${esc(pname(p))}</option>`).join('')}</select>` : ''}
     <select id="prv" aria-label="Verdict"><option value="">All verdicts</option>${VERDICTS.map(v => `<option value="${v}">${v.replace(/-/g, ' ')}</option>`).join('')}</select><input type="search" id="prq" placeholder="Search promises" aria-label="Search promises">
     <button class="btn sm" id="prtr">Read the full track record</button></div><div id="prlist" class="stack" style="gap:10px"></div></div>`;
   const draw = () => { const p = parties ? $('#prp', el).value : party, v = $('#prv', el).value, q = $('#prq', el).value.toLowerCase();
-    const L = (pr[p] || []).filter(x => (!v || x.status === v) && (!q || JSON.stringify(x).toLowerCase().includes(q)));
-    $('#prlist', el).innerHTML = L.map(x => `<article class="pol"><div class="head"><span class="verdict v-${esc(x.status || 'unknown')}">${esc((x.status || '?').replace(/-/g, ' '))}</span><div style="min-width:0"><div class="st">${esc(x.promise)}</div><div class="tiny muted">${esc(x.made || '')}${x.category ? ' · ' + esc(x.category) : ''}</div></div></div>
-      ${x.detail ? `<p>${esc(x.detail)}</p>` : ''}<div class="srcs">${(x.sources || []).slice(0, 6).map((s, i) => `<a class="tiny" href="${esc(typeof s === 'string' ? s : s.url)}" target="_blank" rel="noopener">source ${i + 1}</a>`).join(' ')}</div></article>`).join('') || '<p class="empty">No promises match.</p>' };
+    const per = S.promPeriod || 'all';
+    const L = (pr[p] || []).filter(x => inPeriod(x, per) && (!v || x.status === v) && (!q || JSON.stringify(x).toLowerCase().includes(q)));
+    $('#prlist', el).innerHTML = `<p class="small muted">${L.length} promises${per !== 'all' && per !== 'byterm' ? ' in this period' : ''}</p>` + L.map(x => `<article class="pol"><div class="head"><span class="verdict v-${esc(x.status || 'unknown')}">${esc((x.status || '?').replace(/-/g, ' '))}</span><div style="min-width:0"><div class="st">${esc(x.promise)}</div><div class="tiny muted">${esc(x.made || '')}${x.category ? ' · ' + esc(x.category) : ''}</div></div></div>
+      ${x.detail ? `<p>${esc(x.detail)}</p>` : ''}<div class="srcs">${(x.sources || []).slice(0, 6).map((s, i) => `<a class="tiny" href="${esc(typeof s === 'string' ? s : s.url)}" target="_blank" rel="noopener">source ${i + 1}</a>`).join(' ')}</div></article>`).join('') };
   el.querySelectorAll('input,select').forEach(x => x.addEventListener('input', () => { if (x.id === 'prp') { promiseList(el, x.value, parties); return } draw() }));
   $('#prtr', el).onclick = () => openPage(`parties/${parties ? $('#prp', el).value : party}/track-record.md`);
   draw() }

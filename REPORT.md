@@ -66,15 +66,15 @@ change the result.
 
 | Fieldwork | Pollster | Nat+ACT+NZF | Lab+Grn+TPM | TOP | House | Outcome |
 |---|---|---:|---:|---:|---:|---|
-| 23–27 Sep 2026 | [1 News–Verian](https://www.1news.co.nz/2026/09/28/poll-greens-surge-to-best-result-ever-as-national-labour-slide-further/) | 58 | 58 | 7 | 123 | TOP decides (either side + TOP) |
 | 31 Aug – 27 Sep 2026 | [Roy Morgan](https://www.roymorgan.com/findings/10351-nz-national-voting-intention-september-2026) | 63 | 51 | 8 | 122 | Nat+ACT+NZF majority |
+| 23–27 Sep 2026 | [1 News–Verian](https://www.1news.co.nz/2026/09/28/poll-greens-surge-to-best-result-ever-as-national-labour-slide-further/) | 58 | 58 | 7 | 123 | TOP decides (either side + TOP) |
 | 24 Sep – 1 Oct 2026 | [RNZ–Reid Research](https://www.rnz.co.nz/news/politics_election-2026/1749693/rnz-reid-research-poll-national-crashes-greens-surge-opportunity-kingmaker) | 56 | 59 | 7 | 122 | TOP decides (either side + TOP) |
 | 1–5 Oct 2026 | [Taxpayers' Union–Curia](https://www.taxpayers.org.nz/oct2026_nztucurpolljjhhfas) | 65 | 57 | 0 | 122 | Nat+ACT+NZF majority |
 | 1–5 Oct 2026 | [1 News–Verian](https://www.1news.co.nz/2026/10/06/poll-opportunity-still-in-kingmaker-seat-as-greens-hold-strong/) | 58 | 57 | 8 | 123 | TOP decides (either side + TOP) |
 | 6–10 Oct 2026 | [Anacta](https://www.thepost.co.nz/nz-news/361100468/labour-and-national-below-30-labours-pollster-tells-corporate-clients) | 57 | 58 | 7 | 122 | TOP decides (either side + TOP) |
 | 8–12 Oct 2026 | [1 News–Verian](https://www.1news.co.nz/2026/10/13/poll-hipkins-and-luxon-now-neck-and-neck-opportunity-on-track-for-10-mps/) | 58 | 56 | 10 | 124 | TOP decides (either side + TOP) |
-| 15–19 Oct 2026 | [1 News–Verian](https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/) | 60 | 55 | 8 | 123 | TOP decides (either side + TOP) |
 | 9–19 Oct 2026 | [The Post/Freshwater Strategy](https://www.thepost.co.nz/politics/361101225/postfreshwater-strategy-poll-fraction-point-could-decide-who-governs) | 59 | 56 | 7 | 122 | TOP decides (either side + TOP) |
+| 15–19 Oct 2026 | [1 News–Verian](https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/) | 60 | 55 | 8 | 123 | TOP decides (either side + TOP) |
 
 Tally: TOP decides (either side + TOP): 7; Nat+ACT+NZF majority: 2.
 <!-- GENERATED:report-seats END -->
@@ -189,8 +189,8 @@ Each profile below uses the same template:
 - **They say:** "Fixing the Basics, Building the Future"; it will "not impose new taxes". **Critics say:** Labour says "unemployment is
   higher, growth is weaker, debt has continued to rise" ([Labour fiscal plan](https://www.labour.org.nz/fiscal-plan)).
 - **Coalition:** wants to continue with ACT and NZ First; rules out Labour and TOP (see §1).
-- **Track record:** 61 resolved promises, delivery index 66% (§4). It was very reliable on repeal and legislation promises and
-  weaker on outcome targets: the surplus date, 500 police, fees-free and the Dunedin Hospital
+- **Track record:** 61 resolved promises, delivery index 66% (§4). It kept most of its repeal and legislation promises and
+  missed more of its outcome targets: the surplus date, 500 police, fees-free and the Dunedin Hospital
   ([track-record.md](parties/national/track-record.md#summary)).
 
 ### 2.2 Labour (centre-left) – leader Chris Hipkins
@@ -216,6 +216,10 @@ Each profile below uses the same template:
 - **Coalition:** will govern with the Greens and is open to TOP and (with limits) Te Pāti Māori. It rules out NZ First and ACT.
   Hipkins has ruled out giving the Greens or Te Pāti Māori the police or corrections portfolios
   ([NZ Herald](https://www.nzherald.co.nz/nz/politics/election-2026-labours-chris-hipkins-rules-out-greens-te-pati-maori-from-major-ministerial-roles-in-herald-debate/3GBPYMI6TJBKHLVNOSPGY6WTKA/)).
+- **Campaign note (23 Oct 2026):** Labour's Tāmaki Makaurau candidate Kerrin Leoni resigned as a candidate after footage showed her
+  campaigning at a gathering attended by Mongrel Mob members; Hipkins called it "inconsistent with the standards I expect of Labour
+  candidates". Her name stays on the ballot because nominations had closed
+  ([1News](https://www.1news.co.nz/2026/10/23/labours-leoni-resigns-after-gang-campaigning-video-emerges/)).
 - **Track record:** 61 scored promises from 2017–23, delivery index 67%. It reliably delivered laws and money transfers (about 71%
   kept outright) but kept only 2 of 13 big build or outcome targets outright (KiwiBuild, light rail, the migration cut)
   ([track-record.md](parties/labour/track-record.md#6-reliability-scorecard)). If Labour wins, the CGT will be its key test: the
@@ -276,8 +280,8 @@ Each profile below uses the same template:
 
 ### 2.5 NZ First (Wikipedia gives no infobox label; its opening sentence says "right-wing populist") – leader Winston Peters
 
-- **Stands for:** citizens-first policy, seniors and the regions, opposition to co-governance, and economic interventionism such as
-  breaking up big companies ([README](parties/nz-first/README.md); [Wikipedia](https://en.wikipedia.org/wiki/New_Zealand_First)).
+- **Stands for:** "citizens first" policy, seniors and the regions, opposition to what it calls "co-governance" (shared Māori–Crown
+  decision-making arrangements), and state intervention in the economy such as breaking up big companies ([README](parties/nz-first/README.md); [Wikipedia](https://en.wikipedia.org/wiki/New_Zealand_First)).
 - **Headline 2026 policies** ([79 policies](parties/nz-first/policies/README.md)):
   - split the "gentailer" power companies;
   - split Foodstuffs into two cooperatives;
@@ -289,8 +293,9 @@ Each profile below uses the same template:
   - repeal the Regulatory Standards Act it voted for.
 - **Costings:** no full fiscal plan. The NZ Herald calls it the largest party in Parliament not to publish one
   ([NZ Herald](https://www.nzherald.co.nz/nz/politics/nz-firsts-policies-could-cost-72b-and-that-doesnt-include-buying-back-the-bnz/premium/SMEMEEW25JE7DC4IQPTINQGFYA/)).
-  A Green analysis puts its policies at about $71.6b over four years, which NZ First rejects. Estimates of the cost of buying BNZ
-  range from $7.5b to $24b (same source).
+  A Green Party analysis puts its policies at about $71.6b over four years, which NZ First rejects without giving its own figures.
+  Estimates of the cost of buying BNZ range from NZ First's own $7.5b to $24b (the Herald does not name the source of the higher
+  figure) (same source, 22 Oct 2026).
 - **Coalition:** National and ACT only; rules out Labour and will not sit in Cabinet with TOP's leader (see §1).
 - **Track record:** delivery index 56% overall. The pattern: what gets into a coalition agreement is usually delivered (the PGF, the
   RIF, keeping super at 65), while the most divisive campaign promises are often traded away and then revived at the next election
@@ -298,7 +303,7 @@ Each profile below uses the same template:
 
 ### 2.6 The Opportunity Party (TOP) (centre) – leader Qiulae Wong
 
-- **Stands for:** what it calls "evidence-based" radical centrism. TOP has never been in Parliament
+- **Stands for:** policies it describes as evidence-based; Wikipedia and policy.nz label it "radical centrist". TOP has never been in Parliament
   ([README](parties/opportunity/README.md); [Wikipedia](https://en.wikipedia.org/wiki/Opportunity_Party_(New_Zealand))).
 - **Headline 2026 policies** ([77 policies](parties/opportunity/policies/README.md)):
   - a means-tested Citizen's Income of up to $370 a week for most adults, replacing most benefits and NZ Super, funded by a land value tax;
@@ -381,7 +386,7 @@ The long version, with key facts for every issue, is [guide/issues.md](guide/iss
 | **Law & order** | No "good character" discounts for sex offending; affirmative consent; more prison beds | Corporate manslaughter offence; end boot camps | Rehabilitation; coercive control offence; decriminalise cannabis | Three strikes for burglary; deport offenders | Wider deportation grounds; ban public fireworks sales | Abolish prisons by 2040 | More for courts and rehabilitation; decriminalise possession |
 | **Climate** | Farm emissions out of the ETS; 50% ocean protection by 2040 | Review the ETS; stay in Paris | Cut gross emissions incl. farming; repeal fast-track | Repeal Zero Carbon; abolish the Climate Commission | More mining, incl. conservation land | Ban seabed mining | Farming into the ETS; $5b resilience fund |
 | **Education** | Replace NCEA; compulsory to Year 11; lunches to 2029 | Pause NCEA scrapping; 1,000 teacher aides | Expand lunches; free ECE; fees-free tertiary | Expand charter schools | — | Māori Education Authority | 10-year plan; rebuild lunches |
-| **Te Tiriti** | Voted against the Treaty Principles Bill; Luxon open to a Māori-seats referendum | Restore Treaty clauses and iwi participation | Entrench the Māori seats; $200m for te reo | Scale back Treaty principles; close the Tribunal | Māori-seats referendum; replace the Tribunal | Te Tiriti Commission; binding Tribunal | Not support a Treaty Principles bill |
+| **Te Tiriti** | Voted against the Treaty Principles Bill; Luxon willing to consider a Māori-seats referendum | Restore Treaty clauses and iwi participation | Entrench the Māori seats; $200m for te reo | Scale back Treaty principles; close the Tribunal | Māori-seats referendum; replace the Tribunal | Te Tiriti Commission; binding Tribunal | Not support a Treaty Principles bill |
 | **Immigration** | Partner visa fast-track; 5-year wait for benefits | Citizenship for children born here; 4-year path to residence | Residency path for migrant workers; higher refugee quota | Visa surcharge; presence test | Shortage-led visas; overstayer amnesty-to-leave | — | — |
 | **Retirement** | Compulsory KiwiSaver; Baby Boost | Compulsory employer contributions | 10-year residency for Super | Super age 67 by 2035 | Super for citizens only | — | Compulsory KiwiSaver at 6% |
 | **Democracy** | MMP and 4-year-term referendums; costings unit | Same-day enrolment; repeal the RSA; lobbying register | $30k donation cap; no corporate donations | Merge departments; fewer ministers | Citizens-only voting | Te Tiriti Commissioner | Citizens' assemblies; donation cap |
@@ -392,50 +397,50 @@ neutral statements, from −2 to +2. Every cell has quoted evidence behind it.
 <!-- GENERATED:report-quiz START -->
 | # | Statement | Nat | Lab | Grn | ACT | NZF | TPM | TOP |
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| q01 | New Zealand should introduce a capital gains tax (for example on investment and commercial property). | **−−** | **++** | + | **−−** | · | · | · |
-| q02 | There should be an annual wealth tax on people with very large fortunes (for example net wealth over $2–10 million). | **−−** | **−−** | **++** | **−−** | − | **++** | · |
-| q03 | GST should be removed from food such as fresh fruit and vegetables. | · | · | · | · | · | + | · |
-| q04 | The first slice of everyone's income (e.g. the first $10,000 or more) should be tax-free. | · | · | **++** | · | **++** | **++** | · |
-| q05 | The government should force the big supermarket chains to be broken up or restructured to increase competition. | + | **++** | **++** | **−−** | **++** | · | + |
+| q01 | Profits from selling investment property and commercial property should be taxed, with the family home exempt. | **−−** | **++** | + | **−−** | · | · | · |
+| q02 | People with very large fortunes (for example net wealth above several million dollars) should pay an annual wealth tax. | **−−** | **−−** | **++** | **−−** | − | **++** | · |
+| q03 | GST should be taken off food such as fresh fruit and vegetables. | · | · | · | · | · | + | · |
+| q04 | The first slice of everyone's income (for example the first $10,000 or more) should be tax-free. | · | · | **++** | · | **++** | **++** | · |
+| q05 | The government should force the two big supermarket groups to be broken up or restructured so more chains compete. | + | **++** | **++** | **−−** | **++** | · | + |
 | q06 | The minimum wage should rise every year by at least the rate of inflation. | · | **++** | **++** | **−−** | **++** | **++** | · |
-| q07 | Fair Pay Agreements (industry-wide minimum pay and conditions negotiated by unions and employers) should be brought back. | **−−** | **++** | **++** | **−−** | **−−** | **++** | − |
-| q08 | Annual rent increases should be capped by law. | − | − | **++** | **−−** | · | · | · |
-| q09 | The government should build a lot more state and public housing. | − | **++** | **++** | − | · | **++** | · |
+| q07 | Pay and conditions should be able to be set for a whole industry at once (for example all cleaners or all supermarket workers) through compulsory bargaining between unions and employers. | **−−** | **++** | **++** | **−−** | **−−** | **++** | − |
+| q08 | There should be a legal limit on how much a landlord can raise the rent each year. | − | − | **++** | **−−** | · | · | · |
+| q09 | The government should build a lot more state and public housing itself. | − | **++** | **++** | − | · | **++** | · |
 | q10 | Councils should have to allow more and denser housing, such as townhouses and apartments, in our cities. | **++** | · | + | **++** | · | · | **++** |
-| q11 | Some GP visits each year should be free for everyone. | − | **++** | **++** | · | · | · | · |
-| q12 | The $5 prescription charge should be scrapped. | − | **++** | · | · | · | · | · |
+| q11 | Everyone should get some free GP visits each year, paid for by the government. | − | **++** | **++** | · | · | · | · |
+| q12 | The $5 charge for each prescription should be scrapped for everyone. | − | **++** | · | · | · | · | · |
 | q13 | Free school lunches should be expanded and made more generous, even if it costs more. | · | **++** | **++** | · | · | · | **++** |
-| q14 | Charter (partnership) schools should be allowed to continue. | · | **−−** | **−−** | **++** | · | · | · |
+| q14 | Privately run but publicly funded schools (charter schools) should continue to be allowed alongside state schools. | · | **−−** | **−−** | **++** | · | · | · |
 | q15 | University and polytechnic study should be fees-free. | − | − | **++** | · | · | · | · |
-| q16 | Repeat serious offenders should face mandatory longer sentences under a "three strikes" law. | **++** | **−−** | **−−** | **++** | **++** | **−−** | · |
-| q17 | We should send fewer people to prison and put more into rehabilitation and community alternatives. | − | · | **++** | − | · | **++** | **++** |
+| q16 | Anyone convicted of a third serious violent or sexual offence should get a mandatory longer sentence, with little room for the judge to decide otherwise. | **++** | **−−** | **−−** | **++** | **++** | **−−** | · |
+| q17 | We should send fewer people to prison and put more into rehabilitation and community-based sentences. | − | · | **++** | − | · | **++** | **++** |
 | q18 | Farmers should pay for their greenhouse gas emissions, for example by bringing agriculture into the Emissions Trading Scheme. | **−−** | − | **++** | **−−** | **−−** | **++** | + |
-| q19 | New Zealand should keep its legal net-zero 2050 target and stay in the Paris Agreement. | · | **++** | **++** | **−−** | **−−** | · | **++** |
-| q20 | Ministers should be able to fast-track big infrastructure, mining and development projects past the normal consent process. | **++** | − | **−−** | **++** | **++** | **−−** | − |
+| q19 | New Zealand should keep its legal target of net-zero emissions by 2050 and stay in the Paris climate agreement. | · | **++** | **++** | **−−** | **−−** | · | **++** |
+| q20 | Ministers should be able to approve big infrastructure, mining and development projects through a faster process that bypasses the normal environmental consent system. | **++** | − | **−−** | **++** | **++** | **−−** | − |
 | q21 | Seabed mining should be banned in New Zealand waters. | **−−** | **++** | **++** | **−−** | **−−** | **++** | **++** |
-| q22 | The ban on new offshore oil and gas exploration should be brought back. | **−−** | **++** | **++** | **−−** | **−−** | **++** | 0 |
-| q23 | The government should take a bigger direct role in electricity, such as a new state-owned power company or splitting up the big power companies. | − | · | **++** | **−−** | **++** | · | + |
-| q24 | Parliament should define the principles of the Treaty of Waitangi in law, as ACT's Treaty Principles Bill proposed. | **−−** | **−−** | **−−** | **++** | − | **−−** | · |
+| q22 | New offshore oil and gas exploration should be banned again. | **−−** | **++** | **++** | **−−** | **−−** | **++** | 0 |
+| q23 | The government should take a bigger direct role in electricity, such as setting up a new state-owned power company or splitting the big power companies into separate generators and retailers. | − | · | **++** | **−−** | **++** | · | + |
+| q24 | Parliament should write a single legal definition of the principles of the Treaty of Waitangi, rather than leaving the courts and the Waitangi Tribunal to interpret them case by case. | **−−** | **−−** | **−−** | **++** | − | **−−** | · |
 | q25 | The Waitangi Tribunal should be abolished or replaced once historical claims are settled. | · | · | **−−** | **++** | **++** | **−−** | · |
 | q26 | The Māori electorates should be abolished, or their future put to a referendum. | · | · | **−−** | · | **++** | · | · |
-| q27 | Government services should be allocated by need alone, without Māori- or ethnicity-specific programmes. | · | − | **−−** | **++** | + | **−−** | · |
-| q28 | The Regulatory Standards Act 2025 should be repealed. | **−−** | **++** | **++** | **−−** | 0 | **++** | **++** |
-| q29 | Political donations should be capped, with only New Zealand voters allowed to donate. | · | 0 | **++** | · | 0 | **++** | **++** |
+| q27 | Public services such as health should be targeted by need alone, with no programmes aimed specifically at Māori or other ethnic groups. | · | − | **−−** | **++** | + | **−−** | · |
+| q28 | A recent law that requires every new piece of legislation to be checked against a fixed list of "good regulation" principles, including protecting private property rights, should be scrapped. | **−−** | **++** | **++** | **−−** | 0 | **++** | **++** |
+| q29 | Political donations should be capped, and only individual New Zealand voters should be allowed to donate. | · | 0 | **++** | · | 0 | **++** | **++** |
 | q30 | Central government should cap how much councils can raise rates each year. | **++** | 0 | **−−** | · | · | · | − |
 | q31 | Overall immigration to New Zealand should be reduced. | · | · | − | · | **++** | · | · |
 | q32 | New residents should have to wait longer (five years or more) before they can get most benefits. | **++** | · | · | **++** | **++** | · | · |
-| q33 | The age of eligibility for NZ Superannuation should stay at 65. | − | **++** | **++** | **−−** | **++** | **++** | **++** |
-| q34 | Main benefits should be substantially increased. | − | · | **++** | − | · | + | + |
-| q35 | Beneficiaries should face tougher obligations and sanctions, such as drug tests or payment cuts. | **++** | · | **−−** | **++** | · | **−−** | **−−** |
-| q36 | Transport money should go mainly to public transport and rail rather than new highways. | **−−** | + | **++** | **−−** | + | · | **++** |
-| q37 | Rules limiting farm pollution of rivers (such as nitrogen limits) should be strengthened rather than loosened. | **−−** | + | **++** | **−−** | **−−** | **++** | + |
-| q38 | Rules on gene technology (genetic modification) should be relaxed. | **++** | − | **−−** | **++** | − | **−−** | **++** |
+| q33 | The age for receiving NZ Superannuation should stay at 65. | − | **++** | **++** | **−−** | **++** | **++** | **++** |
+| q34 | Main benefits (such as Jobseeker and Sole Parent Support) should be substantially increased. | − | · | **++** | − | · | + | + |
+| q35 | People on benefits should face tougher obligations and sanctions, such as drug testing or payment cuts if they do not meet requirements. | **++** | · | **−−** | **++** | · | **−−** | **−−** |
+| q36 | Transport money should go mainly to public transport, cycling and rail rather than new highways. | **−−** | + | **++** | **−−** | + | · | **++** |
+| q37 | Rules limiting farm pollution of rivers (such as limits on nitrogen fertiliser and stock numbers) should be strengthened rather than loosened. | **−−** | + | **++** | **−−** | **−−** | **++** | + |
+| q38 | Rules on gene technology (genetic modification) should be relaxed so modified crops and organisms can be used outside the laboratory. | **++** | − | **−−** | **++** | − | **−−** | **++** |
 | q39 | New Zealand should formally recognise the State of Palestine now. | − | **++** | **++** | · | − | · | · |
 | q40 | Defence spending should rise substantially, towards 2% of GDP. | **++** | · | − | + | · | **−−** | · |
 | q41 | New Zealand should increase its overseas aid budget. | · | **++** | **++** | **−−** | · | · | · |
 | q42 | Cannabis should be legalised or decriminalised for personal use. | · | · | **++** | · | · | · | **++** |
 | q43 | Children under 16 should be banned from social media. | **++** | + | · | **−−** | **−−** | · | + |
-| q44 | Puberty blockers and other medical gender-transition treatments should not be available to under-18s. | **++** | · | **−−** | · | **++** | · | · |
+| q44 | Puberty blockers and other medical gender-transition treatments should not be available to people under 18. | **++** | · | **−−** | · | **++** | · | · |
 
 ++ strongly agree · + agree · 0 neutral/mixed · − disagree · −− strongly disagree · "·" no public position found (never guessed). Every cell has a quoted piece of evidence and a source URL in [`data/guide/quiz.json`](data/guide/quiz.json); coding rules in [guide/quiz-method.md](guide/quiz-method.md). Statements on which none of the seven has a recorded position are omitted.
 <!-- GENERATED:report-quiz END -->
@@ -581,8 +586,8 @@ source for every item.
 - Fiscal prudence versus outcomes: promised a surplus in 2026/27; it is now forecast for 2028/29, on a new OBEGALx measure. Net debt
   is forecast to peak at 43.9% of GDP, above National's own 40% ceiling
   ([RNZ](https://www.rnz.co.nz/news/politics_election-2026/1647005/treasury-gives-willis-pre-election-boost-as-surplus-forecast-improves)).
-- Major changes passed under urgency without a campaign mandate: the smokefree repeal and the Equal Pay Amendment Act 2025, which
-  cancelled 33 pay-equity claims ([Wikipedia](https://en.wikipedia.org/wiki/Equal_Pay_Amendment_Act_2025)).
+- Major changes passed under urgency that had not been announced in National's 2023 campaign: the smokefree repeal and the Equal Pay
+  Amendment Act 2025, which cancelled 33 pay-equity claims ([Wikipedia](https://en.wikipedia.org/wiki/Equal_Pay_Amendment_Act_2025)).
 
 **Labour** ([full list](parties/labour/track-record.md#notable-u-turns))
 - Capital gains tax:
