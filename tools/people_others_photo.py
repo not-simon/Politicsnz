@@ -7,11 +7,13 @@ UA = {"User-Agent": "PoliticsNZResearch/1.0 (personal research)"}
 fname, dest = sys.argv[1], sys.argv[2]
 def strip(s): return html.unescape(re.sub(r"<[^>]+>", "", s or "")).strip()
 j = None
-for a in range(8):
+for a in range(15):
     try:
-        j = requests.get("https://commons.wikimedia.org/w/api.php", params={"action": "query", "titles": "File:" + fname,
+        r0 = requests.get("https://commons.wikimedia.org/w/api.php", params={"action": "query", "titles": "File:" + fname,
             "prop": "imageinfo", "iiprop": "url|extmetadata", "iiurlwidth": 400, "format": "json", "formatversion": 2},
-            headers=UA, timeout=60).json(); break
+            headers=UA, timeout=60)
+        if r0.status_code == 429: time.sleep(20 + 10 * a); continue
+        j = r0.json(); break
     except Exception: time.sleep(5 + 5 * a)
 if not j: sys.exit("meta fail")
 pg = j["query"]["pages"][0]
@@ -27,11 +29,11 @@ import os
 out = os.path.join(dest, "photo.jpg")
 if os.path.exists(out): meta["skipped"] = "photo exists"; print(json.dumps(meta)); sys.exit()
 url = ii.get("thumburl") or ii["url"]
-for a in range(8):
+for a in range(15):
     try:
         r = requests.get(url, headers=UA, timeout=60)
         if r.status_code == 200: break
     except Exception: pass
-    time.sleep(5 + 5 * a)
+    time.sleep(10 + 10 * a)
 im = Image.open(io.BytesIO(r.content)).convert("RGB"); im.thumbnail((400, 400)); im.save(out, "JPEG", quality=82)
 print(json.dumps(meta, ensure_ascii=False))

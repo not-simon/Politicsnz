@@ -257,7 +257,7 @@ footer { color: var(--muted); font-size: 13px; padding-block: 24px 40px; border-
 (() => {
 'use strict';
 const ELECTION_DAY = new Date('2026-11-07T19:00:00+13:00');
-const KEY_DATES = [['2026-10-25', 'Last day to enrol before advance voting', 'You can still enrol on election day, but do it early at vote.nz.'],
+const KEY_DATES = [['2026-10-25', 'Last day to enrol', 'There is no enrolling on election day this year. Enrol or update your details at vote.nz.'],
   ['2026-10-26', 'Advance voting opens', 'Vote early at any voting place in the country.'],
   ['2026-11-07', 'Election day', 'Voting places open 9am to 7pm. Results start coming in that night.'],
   ['2026-11-27', 'Official results', 'Special votes are counted and the final seat count is confirmed (approx. 3 weeks later).']];
@@ -396,7 +396,7 @@ V.home = async () => {
 
     <div class="stack"><div><div class="kicker">Key dates</div><h2>When to vote</h2></div>
       <div class="dates">${KEY_DATES.map(([dt, t, s]) => { const D = new Date(dt + 'T23:59:00+13:00'); const [, mo, dd] = dt.split('-'); return `<div class="date card flat ${D < Date.now() ? 'past' : ''}"><div class="cal"><span>${['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'][+mo - 1]}</span><b>${+dd}</b></div><div><h4>${t}</h4><p class="small muted">${s}</p></div></div>` }).join('')}</div>
-      <p class="note">Check you're enrolled and find your voting place at <b>vote.nz</b> or call 0800 36 76 56. You need to be 18+, a citizen or permanent resident, and have lived in New Zealand for a year at some point.</p></div>
+      <p class="note">Check you're enrolled and find your voting place at <b>vote.nz</b> or call 0800 36 76 56. Enrolment closes on Sunday 25 October. You need to be 18+, a citizen or permanent resident, and have lived in New Zealand for a year at some point.</p></div>
 
     ${proj.n ? `<div class="card stack"><div class="row" style="justify-content:space-between"><div><div class="kicker">The polls</div><h2>Where things stand</h2></div><button class="btn sm" data-go="trends">All the polls</button></div>
       <p class="small muted">Average of the ${proj.n} latest polls (${esc(proj.range)}). Polls have margins of error of about ±3 points.</p>

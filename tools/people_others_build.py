@@ -5,7 +5,7 @@ Content file: raw/people/others/content/<slug>.md  =  '---json\n{person fields i
 - Downloads Wikipedia lead image if no photo.jpg (fields photo_file) via tools/people_others_photo.py.
 - README = title, photo, quick facts, content sections, existing GENERATED:2026-candidacy block (verbatim), Sources.
 Usage: python3 tools/people_others_build.py [slug ...]"""
-import json, os, re, sys, glob, subprocess, pathlib
+import json, os, re, sys, glob, subprocess, pathlib, urllib.parse, time
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 C = ROOT / "raw/people/others/content"
 START, END = "<!-- GENERATED:2026-candidacy START -->", "<!-- GENERATED:2026-candidacy END -->"
@@ -31,6 +31,7 @@ def build(f):
         out = subprocess.run([sys.executable, str(ROOT / "tools/people_others_photo.py"), photo_file, str(d)], capture_output=True, text=True)
         if out.returncode == 0: meta.update({k: v for k, v in json.loads(out.stdout).items() if k != "skipped"})
         else: print("PHOTO FAIL", slug, out.stderr[-300:], file=sys.stderr)
+        time.sleep(2)
     elif (d / "photo.jpg").exists() and not ex.get("photo_source") and photo_file:
         pass
     srcs = list(dict.fromkeys(meta.pop("sources", []) + ex.get("sources", [])))
@@ -54,7 +55,7 @@ def build(f):
     if merged.get("electorate_2026") or merged.get("list_rank_2026"):
         q.append(("2026 election", ", ".join(x for x in [merged.get("electorate_2026") and f"contesting {merged['electorate_2026']}",
                   merged.get("list_rank_2026") and f"list #{merged['list_rank_2026']}"] if x)))
-    if merged.get("wikipedia"): q.append(("Wikipedia", f"[{merged['wikipedia'].rsplit('/',1)[-1].replace('_',' ')}]({merged['wikipedia']})"))
+    if merged.get("wikipedia"): q.append(("Wikipedia", f"[{urllib.parse.unquote(merged['wikipedia'].rsplit('/',1)[-1]).replace('_',' ')}]({merged['wikipedia']})"))
     L += ["| | |", "|---|---|"] + [f"| **{k}** | {v} |" for k, v in q] + [""]
     if merged.get("photo_source") and "policy.nz" not in merged.get("photo_credit", "") :
         L += [f"<sub>Photo: {merged.get('photo_credit') or 'unknown'} — {merged.get('photo_license') or 'see source'} — [source]({merged['photo_source']})</sub>", ""]
@@ -66,7 +67,8 @@ def build(f):
     rd.write_text("\n".join(L))
     return folder, slug
 PHOTOS = "--photos" in sys.argv
-targets = [a for a in sys.argv[1:] if not a.startswith("--")]
-for f in sorted(C.glob("*.md")):
-    if targets and f.stem not in targets: continue
-    print("built", *build(f))
+if __name__ == "__main__":
+    targets = [a for a in sys.argv[1:] if not a.startswith("--")]
+    for f in sorted(C.glob("*.md")):
+        if targets and f.stem not in targets: continue
+        print("built", *build(f))
