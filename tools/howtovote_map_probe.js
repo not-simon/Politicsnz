@@ -1,6 +1,8 @@
 // Probe the vote.nz voting-place finder (map.vote.nz) with headless Chromium and record the data endpoints it calls.
 // Usage: NODE_PATH=/opt/node22/lib/node_modules node tools/howtovote_map_probe.js <url> <outdir>
-// Writes <outdir>/requests.log (url, status, content-type, bytes) and saves JSON/CSV/GeoJSON responses as files.
+// Writes <outdir>/requests.log (url, status, content-type, bytes) and saves JSON/CSV data responses served by map.vote.nz itself.
+// Third-party responses (Mapbox tiles/styles) are not saved and any access_token query value is redacted from the log,
+// so nothing written here embeds an API key. The page HTML is NOT saved for the same reason.
 const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
@@ -17,7 +19,8 @@ const path = require('path');
   page.on('response', async (resp) => {
     try {
       const ct = (resp.headers()['content-type'] || '').toLowerCase();
-      const u = resp.url();
+      const u = resp.url().replace(/access_token=[^&]+/g, 'access_token=REDACTED');
+      if (!/^https:\/\/map\.vote\.nz\//.test(u)) { log.push(`${resp.status()} ${ct} - ${u}`); return; }
       let body = null;
       if ((/json|csv|geo|octet|text\/plain/.test(ct) && !/\.(js|css|png|jpg|woff2?)(\?|$)/.test(u)) || /votelocations\/dist/.test(u)) {
         body = await resp.body().catch(() => null);
@@ -34,7 +37,6 @@ const path = require('path');
   for (let i = 0; i < 12; i++) { const t = await page.title(); if (!/just a moment|attention required/i.test(t)) break; await page.waitForTimeout(2500); }
   await page.waitForTimeout(8000);
   console.error('TITLE', await page.title(), 'URL', page.url());
-  fs.writeFileSync(path.join(outdir, 'page.html'), await page.content());
   // try typing an address into any search box to trigger the search API
   const box = await page.$('input[type="search"], input[type="text"], input[placeholder*="address" i], input[placeholder*="search" i]');
   if (box) {

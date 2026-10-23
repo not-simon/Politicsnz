@@ -230,3 +230,191 @@ Effort: **S** = hours to a day, **M** = 2–4 days, **L** = a week or more. "Pro
 Ballot Book NZ already has more *content* than the voter needs. What it lacks is the thin layer that turns content into help at the three moments that matter: *can I vote* (this weekend), *how do I vote* (the fortnight), and *what happened* (the night and the three weeks after). Those three moments are also where every comparable product, from vote.nz to Democracy Club to the BBC, concentrates its effort, and where a static site can be genuinely excellent because the answers change slowly. Build the thin layer; then make the four matching tools honest about their uncertainty; then make the forecast humble. The depth will still be there for the journalists and students in December.
 
 *Sources consulted (public web, October 2026): vote.nz and elections.nz 2026 pages (key dates, enrol-by-25-October, what to expect at the voting place, what happens after the election, Access 2026 Accessibility Action Plan, accessible-formats pages, E78 change flyer, 2026 media kit); 1News Vote Compass 2026 coverage and "How the new enrolment rules could affect the election result" (16 Oct 2026); 1News "Disabled voters still hunting for accessible booths" (5 Oct 2026); Waatea News on the Commission's "Think before you share" campaign (30 Jul 2026); PMN and Newstalk ZB on the end of same-day enrolment; Victoria University / 1News on AI in the 2026 campaign; Berdoz et al., "Recommender Systems for Democracy: Toward Adversarial Robustness in Voting Advice Applications" (arXiv 2505.13329, 2025); Benesch et al. on smartvote (J. Politics 2023); Democracy Club 2026 post-election newsletter (WhereDoIVote 88% / WhoCanIVoteFor 77% satisfaction, >10M lookups); Wahl-O-Mat 2025 reporting (38 statements, ~26M uses); ABC Antony Green calculator documentation; policy.nz about page; Newsroom and Newstalk ZB special-votes explainers; AEC and NSWEC media-feed documentation (as models for results ingestion).*
+
+---
+
+# Round 2
+
+Written 23 October 2026, still blind to the implementation. Two parts: (1) further ideas beyond the Round 1 backlog, organised by the audiences that comparable products and the Electoral Commission's own data say are hardest to reach, plus what makes a site worth opening every day; (2) a verdict on each of the owner's seven proposals with the simplest good implementation on a static GitHub Pages site (no server, no accounts, no tracking), bias flags, and an S/M/L ranking.
+
+Two constraints shape everything below. First, **static means static**: anything "live" is a scheduled GitHub Action writing JSON into the repo, and anything "personal" lives in the visitor's `localStorage` or in the URL. Second, **the no-tracking promise is a feature**; it rules out third-party embeds (social posts, YouTube, most comment widgets) because they all load trackers.
+
+## R2.1 More ideas: audiences
+
+### People who rarely vote
+
+Turnout in 2023 fell to 78.2% of enrolled voters (Electoral Commission), and the people who don't vote are not short of information; they are short of a *reason* and a *plan*. The behavioural evidence (Nickerson & Rogers 2010 and the GOTV literature since) is that asking people to state *when, where and how* they will vote raises turnout more than any amount of persuasion.
+
+- **Voting plan builder** (S): three taps — "I'll vote on [date] at [voting place or 'near work/home'] with [alone / a friend]" — producing an `.ics` event, a pre-filled SMS/WhatsApp message (`sms:` / `https://wa.me/?text=`), and a printable card. No server needed. This is the single highest-leverage turnout feature a static site can offer and nobody in NZ does it.
+- **"It takes five minutes" myth-busting strip** (S): you don't need ID; you can vote at any voting place in the country; you don't need your EasyVote card; it's free; employers must allow time off on election day (Electoral Act s162 — check current wording); you can take notes in; you don't have to vote for both.
+- **"What actually changes for me"** persona entry points (M): renter, mortgage-holder, student, parent, superannuitant, small-business owner, farmer, new migrant, disabled person. Each pulls the tagged policies of *every* party into one scroll. Personas are how low-interest voters think; issues are how journalists think. Bias guard: tagging must be done for all 17 parties against the same rubric, and the persona page must show "N parties have no stated policy here" rather than hide them.
+- **"I don't follow politics" page** (S): a 300-word honest answer to "does my vote matter under MMP?" (yes, the party vote is national; one vote in 2.9 million moves a seat roughly every 25,000 votes), with no jargon, and a single next step.
+
+### Young and first-time voters
+
+18–24 turnout among the enrolled was 74.2% in 2023, better than the 25–44 bracket; the leak is at *enrolment*, which is why the 25 October cutoff is the story for this group.
+
+- **"Your first vote" walkthrough** (S–M): the full journey as a swipeable set of illustrated cards (enrolment → EasyVote → walk in → two ticks → fold → box), reusing your illustrative ballot. Export each card as a 1080×1920 image so it can be posted to an Instagram/TikTok story *as an image* (no third-party embed, no tracker). 1News filmed first-timers using Vote Compass; the finding was that the mechanics, not the policies, were the confusing part.
+- **Student mode** (S): enrolled at home or at uni? Vote anywhere; if your electorate is elsewhere you'll cast a special vote; what the Māori/general roll question means; link to your home electorate page.
+- **"What Parliament did to under-25s this term"** (M): a plain list from your promise and record data — student allowances/loans, minimum wage, youth payment, rental rules, public transport — with each party's 2026 position. This is a *record* page, not an opinion page; keep it to votes and legislation.
+- **Distribution, not features**: offer the quiz, swipe and how-to-vote pages as embeds to student associations, Student Volunteer Army, Rock Enrol-style campaigns and school civics teachers (NZ Curriculum social studies has a civics strand). An embed with a credit line costs nothing and is how Democracy Club gets most of its reach.
+
+### Māori audiences
+
+Māori-descent turnout fell to 70.3% in 2023; young Māori turnout *rose* (70.3%, from 54.9% in 2014). The seven Māori electorates also carry the overhang risk that makes the whole seat count uncertain.
+
+- **Māori electorates hub** (M): one page for the seven seats — candidates, 2023 results, the roll explanation (roll-switching has closed; explain what that means for 2026), why these seats can create an overhang, and the Māori-seat odds from your forecast *with their low-confidence label*. Te Pāti Māori, Labour, Greens, National, NZ First and ACT candidates shown identically.
+- **Te reo Māori as a first-class toggle** for the five critical paths (home, how-to-vote, your electorate, MMP explainer, glossary), not a machine translation. Macrons and place names already correct everywhere (Ōtaki, Whangārei, Tāmaki Makaurau). Ask a Māori media partner (Whakaata Māori, Waatea, Te Ao Māori News) to review the translations and to embed the Māori electorates widget.
+- **Te Tiriti issue page** (exists) should be the model for *every* issue page: sourced key facts, every party's position in their own words, "what critics say" from across the spectrum including iwi leaders and the Waitangi Tribunal, dated.
+
+### Pasifika audiences
+
+Pacific advocates (PMN, Waatea) say the end of same-day enrolment hits Pacific communities hardest: young, mobile, renting, often enrolled at an old address.
+
+- **Samoan and Tongan how-to-vote and "have you moved?" pages** (S–M for translation; content exists): these two languages cover most of the gap; add Cook Islands Māori, Fijian and Niuean if a community partner can review.
+- **Church and community printable** (S): A4, one side, big type: enrol by 25 Oct, vote 26 Oct–7 Nov, vote anywhere, bring nothing, phone 0800 36 76 56 — in English plus one Pacific language per sheet. Pacific churches and sports clubs *are* the distribution network; give them something to photocopy.
+- **Family voting plan** (S): the voting plan builder above with a "we're going together" variant.
+
+### Older voters
+
+Over-65s vote at the highest rate and are the least served by swipe-and-tap interfaces.
+
+- **Text-size control and a persistent "Print this page" button** (S) on every page; large-print PDF of the how-to-vote and electorate pages.
+- **"You don't need the internet"** page (S): rest-home and hospital voting (the Commission takes voting to residential facilities), postal options, the 0800 number, EasyVote by post, taking a support person in, telephone dictation for blind voters (confirm 2026 availability with the Commission).
+- **List alternatives for every swipe or scrubber interaction** so no information is reachable only by gesture.
+
+### Rural voters
+
+- **Low-data mode** (S–M): a toggle (or automatic on `navigator.connection.saveData`) that drops photos and map tiles. 685 photos and boundary polygons are expensive on rural 4G.
+- **Offline (PWA)** for how-to-vote, your electorate page and your saved results (already N1; promote it for rural users).
+- **Voting-place hours vary in small towns**; many advance voting places are open only certain days. Your voting-place handoff should warn "check hours; small-town advance places may not be open every day".
+- **Rural issue page** (M): water regulation, agricultural emissions, roading, rural health, with every party's position.
+
+### People with low literacy
+
+Roughly 40% of NZ adults read below the level needed for everyday tasks (OECD PIAAC). "Plain English" that tests at grade 12 is not plain.
+
+- **"Listen" button** (S): browser `SpeechSynthesis` reads the summary aloud — client-side, free, no third party, works offline. Add to every party summary, issue explainer and how-to-vote step.
+- **Easy Read versions** (M) of the how-to-vote and MMP pages in the Commission's Easy Read style (one idea per sentence, picture beside each paragraph). The Commission publishes an Easy Read guide; match its conventions so the two feel like one system.
+- **Reading-level gate in CI** (S): fail the build if any "plain-English summary" exceeds grade 9 on Flesch–Kincaid; the owner then rewrites.
+- **Icons for the 17 issues and the 17 parties' *topics*** (not logos) so pages scan without reading.
+
+## R2.2 More ideas: worth opening every day
+
+A reference site is visited once; a *daily* site has something new above the fold each morning and a reason to come back at a known time. Keep this respectful — no streaks, no badges for engagement, no notifications you did not ask for.
+
+1. **"Today" panel on the home page** (M, mostly assembly): days to enrol / days to vote; what changed in the last 24 hours (new polls, new policies, changed verdicts, new candidates, corrections); today's campaign events (debates — the final leaders' debate is 5 Nov 7pm on TVNZ 1; policy launches); a policy-of-the-day card; on-this-day (see R2.3.2). All of it generated by the existing scheduled jobs writing one `today.json`.
+2. **Policy of the day** (S): one real policy, party hidden, agree/disagree, reveal. One card, not twenty. Rotates by date-seeded random so every visitor sees the same card and can talk about it. Even sampling across parties over the fortnight (15 days, 17 parties — publish the rotation).
+3. **Poll watch** (S): "A new [pollster] poll is out: here's what Parliament would look like if it were the result, and here's what the pooled trend says" — auto-generated from existing data each time a poll lands. Journalists will link it.
+4. **Promise counter** (S): "2026 promises catalogued: N (+k today)"; "Verdicts updated: m". Neutral, factual, visible.
+5. **Weekly changelog + RSS** (S6 in Round 1) with a Friday "this week in the campaign" auto-digest.
+6. **Electorate watchlist** (S): star up to five electorates (localStorage); the home page and the election-night view show them first. Turns the 71-seat map into *your* map.
+7. **Election-night watch-party mode** (M): a big-screen layout (laptop on a TV, or phone cast) that auto-refreshes, cycles your watchlist, shows the national tally, "majority = 61", and a plain-language ticker ("Preliminary results exclude ~15–20% of votes: special votes. Official results 27 Nov."). Optional non-partisan bingo card for groups ("first seat called", "a party within 0.5% of 5%", "an overhang appears", "a list MP returns via a seat") — fun without cheering for anyone.
+8. **Special-votes countdown (8–27 Nov)** (S): what specials have done in every election since 1999, what the thresholds are this time ("Party X needs +0.3% from specials to reach 5%"), and the three most likely Parliaments after specials. This is the period when misinformation about the count peaks; be the calm explainer.
+9. **Post-election "what happens now" timeline** (S): return of the writ, official results, coalition talks, confidence-and-supply, swearing-in, Speaker election, Governor-General's commission — each dated as it happens. Reuses the glossary.
+10. **"Did it come true?" follow-ups** (S after results): forecast vs result scorecard, quiz-match vs seats, polls vs result by pollster. Publishing your own misses is the best trust-builder you have.
+
+## R2.3 Verdicts on the owner's proposals
+
+Ranked by value-for-effort for the final two weeks and election night. Effort: S = hours–1 day, M = 2–4 days, L = 1 week+.
+
+| Rank | Proposal | Verdict | Effort |
+|---|---|---|---|
+| 1 | Shareable result cards | **Do it** (Round 1 M11) | S–M |
+| 2 | Export/import saved quiz results | **Do it**; it is the same mechanism as the share link | S |
+| 3 | Geolocation → electorate → candidates | **Do it**, with a suburb-search fallback and a boundary-confidence warning; **link out** for nearest voting place | M |
+| 4 | Party press-release feed from Scoop RSS | **Do it**, with per-party equal-slot layout; **do not** build a live social feed | M |
+| 5 | Auto-linking party and politician names | **Do it at build time** with a stoplist; first mention per section only | S–M |
+| 6 | Politicians' social-media "follow" directory | **Do a directory of outbound links**; no embeds | S |
+| 7 | Pass-the-phone party-guessing game | **Do a single-device hot-seat version** with a seed-in-URL "same deck" challenge; proximity pairing confirmed impossible without a server | M |
+| 8 | "On this day in NZ politics" widget | **Nice-to-have**; fold into the "Today" panel; curate, don't scrape | S–M |
+
+### R2.3.1 Pass-the-phone party-guessing game (2+ players)
+
+**Confirmation:** automatic proximity pairing is not achievable on a static GitHub Pages site. Web Bluetooth and WebRTC both need a signalling/discovery step that requires either a server or a manual exchange; Web Bluetooth also has no iOS Safari support; the Web NFC API is Android-Chrome only; Nearby/AirDrop are not exposed to the web. A WebRTC "copy this blob to the other phone" handshake is technically serverless but is a worse experience than simply passing the phone. Rule it out and don't apologise for it.
+
+**Formats that work without a server, best first:**
+
+1. **Hot-seat on one phone.** Enter player names (local only), 10 rounds, the phone is passed after each answer. Round types to mix: *Whose policy?* (real policy text, pick the party from 4 options), *Which year?* (an election result or seat map, pick the year), *Higher or lower?* (did Party X get more or fewer party votes in 2020 than 2023?), *Which seat?* (an electorate description, pick it on the map), *Who's the MP?* (photo → name, from your 685 profiles, current MPs only). Avoid quote-guessing: quotes out of context are the mislead-vector, policies from the party's own document are not.
+2. **Shared screen, phones as controllers — not possible without a server.** The closest static equivalent is *shared screen, verbal answers*: cast the phone/laptop to a TV, the host reads, players shout, the host taps the winner's name to score. Design the game screen for a TV (big type, high contrast, 16:9) and this works for a flat.
+3. **"Same deck" challenge across devices.** Put the random seed and quiz version in the URL hash (`#deck=20261031-ab12`). Share the link or show a QR code; a friend on their own phone gets the identical 10 questions and compares scores. Asynchronous, serverless, and it is how Wordle spread.
+
+**Scoring:** 1 point per correct answer, +1 streak bonus from the third consecutive correct answer, a tie-break round from a different category; final scoreboard as a shareable image (same renderer as result cards). Do not score "agreement" — only knowledge. Keep a session to ~3 minutes.
+
+**Keeping it non-partisan and fun:** sample questions evenly across all 17 parties and across years, and publish the sampling rule; party options shown in random order; never use controversies, scandals or "gaffes" as question material; every reveal shows the source and the party's own wording; no question whose wrong answers imply ridicule of a party; no leaderboard beyond the room. Offer "learn more" on the reveal (link to the policy, seat or person). Because it teaches *who stands for what*, it is a civic feature, not a toy; say so on the intro screen.
+
+**Election-day caveat:** anything that reveals party positions is "likely to influence" and should be hidden under the election-day compliance flag (Round 1 M4).
+
+**Bias flags:** small-party overexposure (even sampling means ACT and NZ First appear as often as National — that is fine and arguably good, but say so); photo quality differences between MPs; policy text that is cut so short it changes meaning (use a minimum of one full sentence). **Effort: M.**
+
+### R2.3.2 "On this day in NZ politics" widget
+
+**Verdict:** pleasant, low-value in the final fortnight, but a cheap daily hook if folded into the "Today" panel. **Do not scrape nzhistory.govt.nz** (no API/RSS; Crown copyright on the text) or rely on Wikipedia's "On this day" (no NZ political focus). **Curate**: build a 365-entry JSON from data you already hold — election dates since 1853, by-elections, coalition agreement dates, Royal Assent dates of landmark Acts (MMP referendum 1993, Electoral Act 1993 commencement, Māori electorates 1867, women's suffrage 19 Sept 1893, voting age to 18 in 1974), party foundation dates, leaders' first days. Aim for ≥1 entry per day for the 15 days to the election and backfill the rest later. Each entry: one sentence, one source link, one "related page" link into your site.
+
+**Bias flag:** selection is editorial. Keep entries to *process and institutional* events (elections, laws, foundings, leadership changes), avoid anniversaries of scandals or "gaffes", and keep a rough balance across parties over any 30-day window. Show the source. **Effort: S for the fortnight, M for the full year.**
+
+### R2.3.3 Geolocation → your electorate → candidates, and nearest voting place
+
+**Verdict:** the electorate half is a strong feature and fully achievable client-side; the voting-place half should be a *handoff*, not a rebuild.
+
+**Simplest good implementation:**
+
+1. **Boundaries:** Stats NZ publishes "General Electorates 2025" (the 64 seats used for 2026) and the Māori electorates as ArcGIS feature services and on Datafinder (attribution: Representation Commission / Stats NZ). Export once, simplify with mapshaper or TopoJSON to ~1 MB total (the coastline is the expensive part; you can simplify aggressively because you only need point-in-polygon at street scale), and serve as a static TopoJSON. You probably already have this for the map.
+2. **Point-in-polygon:** `navigator.geolocation.getCurrentPosition` → a 30-line ray-casting test against the simplified polygons (or Turf's `booleanPointInPolygon`). Run it for *both* the general and Māori layers, and ask "Are you on the Māori roll or the general roll?" before showing the result, or show both ("Your general electorate is X; if you're on the Māori roll it's Y").
+3. **Fallback without GPS or on desktop:** a typeahead over ~3,500 suburbs/localities with centroids (LINZ Gazetteer / Stats NZ SA2 centroids, open data), then the same point-in-polygon. Do not attempt address geocoding client-side (the LINZ address dataset is ~2.3 million rows); for addresses, link to vote.nz's lookup.
+4. **Confidence:** compute the distance from the point to the nearest electorate boundary. If under ~1 km, show "You're close to a boundary — the 2025 boundary review moved lines here; confirm at vote.nz" and name both electorates. Boundary-change suburbs (Epsom/Mt Albert, the new/renamed seats) are exactly where people will be wrong.
+5. **Privacy:** the computation runs on the device; nothing leaves it. Say so in the button label ("Use my location — stays on your phone").
+6. **Nearest voting place:** I found no open CSV of 2026 voting places from the Commission; the official finder on vote.nz is the authoritative source and includes hours, which change daily during advance voting. Deep-link to it (with the electorate pre-selected if the URL scheme allows) rather than scraping a list that will go stale. If a usable open dataset appears, the client-side nearest-point calculation is trivial (haversine over ~2,500 points).
+
+**Bias/mislead flags:** wrong electorate near boundaries (mitigated above); wrong roll; implying a voter *must* vote at a particular place (they can vote anywhere). **Effort: M** (S if boundaries are already in the map bundle).
+
+### R2.3.4 Auto-linking party and politician names
+
+**Verdict:** yes, at *build time* (never at runtime; never on user-entered text), with discipline.
+
+**Implementation:** compile an alias table from your people and party index (full name, surname-with-title, known nicknames; party names, abbreviations like "TPM", "NZF"). Walk text nodes in rendered HTML (not inside `<a>`, `<h1-3>`, `<code>`, blockquotes of original documents, or alt text), longest-match first, **first occurrence per section only**, link to the profile/party page, add `title` with the person's current role. Maintain a **stoplist** for ambiguous tokens: "Green/green", "Labour/labour", "First", "ACT/act", "Brown", "Little", "Peters" vs "Peter", "National" the adjective. Test on a corpus of 200 paragraphs and publish the false-positive rate. Mark auto-links visually the same as hand links; don't underline every third word.
+
+**Bias flags:** link density is attention; a page about Labour's housing policy will link "National" every time it criticises them, which is fine, but do not auto-link *inside the parties' own policy documents* (their text should remain their text). Make sure every current MP and candidate resolves — a missing alias for a minor-party candidate is an unfair omission. **Effort: S–M** (the stoplist is the work).
+
+### R2.3.5 Exporting/importing saved quiz results
+
+**Verdict:** do it; it is also your share mechanism and your protection against the v1→v2 algorithm change.
+
+**Implementation:** encode `{version, answers[30] (0–4), weights[30] (0–2), timestamp}` as a compact base64url string in the URL hash (≈70 characters). "Copy my results link" *is* export; opening the link on another device *is* import (the result is recomputed client-side from the answers, so the matching stays auditable and the link never contains a "party"). Also offer "Download as JSON" and "Paste a link or JSON" for the people who want files, and a QR code for phone-to-laptop. Store the last result in `localStorage`; never store anything else. Keep a `version` field so a v1 link opened after v2 ships says "This result was computed with quiz v1 (45 statements). Here's your v1 result; retake v2 here."
+
+**Bias flags:** none beyond the share-card framing. **Effort: S.**
+
+### R2.3.6 Social-media "follow" directory + Scoop RSS press-release feed
+
+**Verdict:** split in two. The **directory** is a yes. A **live social feed is a no** on this stack and under this privacy promise. The **press-release feed** is a yes and is the better product anyway.
+
+*Why not a live social feed:* X has ended free read access; it is pay-per-read ($0.005/post read, no free tier for new apps as of 2026). Instagram's Graph API exposes only accounts you own or hashtag search after app review and business verification. TikTok's Research API is academic-only with a weeks-to-months approval. Facebook Page Public Content Access needs app review. Embedding individual posts via each platform's embed script is allowed but loads third-party trackers, which breaks the site's no-tracking promise, and embeds vanish when posts are deleted. Platform-provided RSS does not exist on any of them.
+
+*Directory (S):* for every party and every MP/candidate, outbound links to official accounts (verified against the party website and parliament.nz), plus parliament.nz profile, party page, public email. Same fields for everyone, alphabetical, no follower counts (follower counts are a popularity cue). Add "Report a wrong link".
+
+*Press-release feed (M):* a GitHub Action every 30–60 minutes fetches Scoop's Parliament section RSS (the feed that carries party and ministerial releases; verify the exact URL on scoop.co.nz) plus each party's own news-page RSS where one exists, normalises to `{party, title, date, url, 200-char excerpt}`, de-duplicates, and commits `releases.json`. Show headline, party, date and a link out; keep excerpts short (copyright and fairness). **Default view: the latest 3 per party, equal slots**, with a "chronological, all parties" tab second. Label clearly: "Party press releases — the party's own words, not fact-checked." Mark releases that make a checkable claim with a link to the matching promise or issue page where you have one.
+
+**Bias flags:** volume (National and Labour will issue 5× the releases of smaller parties; the equal-slot default fixes it); ministerial releases are government, not party, and should be tagged as such; Scoop's inclusion criteria are not yours — some fringe parties may appear more often than their vote share; the "follow" directory must not include unofficial fan or attack accounts. **Effort: S + M.**
+
+### R2.3.7 Shareable result cards
+
+**Verdict:** yes (Round 1 M11); the design decisions are the whole point.
+
+**Implementation on static:** render the card client-side on a `<canvas>` (or an inline SVG → canvas), `canvas.toBlob()` → `navigator.share({files:[...]})` on mobile (Web Share Level 2 is supported in Safari and Chrome Android), fallback to a download link. Open Graph images cannot be generated per result without a server; use one well-designed generic OG image for the quiz page and encourage sharing the PNG itself. Card content: the full 17-party bar distribution (not one party), bucketed strength (strong/moderate/weak), quiz version and date, "This is not a recommendation — see how it works at [URL]", and the result link (the hash-encoded one from R2.3.5). Optional "what I care about most" line from the importance weights. Offer the same renderer for swipe, compass, electorate watchlist, game scoreboard and election-night snapshots.
+
+**Bias flags:** single-winner cards ("I'm 78% ACT!") are the bandwagon mechanism Vote Compass deliberately avoids; show the distribution. Party colours and logos on cards create visual dominance for parties with strong brands; use uniform bars with the party name. Never include the forecast on a card during voting. **Effort: S–M.**
+
+## R2.4 Round 2 top-ten, in order
+
+1. Voting plan builder (.ics + SMS + print) — S
+2. Result cards with full distribution + hash-encoded share/export link (one build) — S–M
+3. Geolocation → electorate with boundary-confidence warning; vote.nz handoff for voting places — M
+4. "Today" panel: changes in 24h, events, policy of the day, poll watch — M
+5. Press-release feed (Scoop + party RSS, equal slots) + social-link directory — M + S
+6. "Listen" button and text-size control site-wide — S
+7. Māori electorates hub and te reo toggle for the five critical paths — M
+8. Samoan/Tongan how-to-vote + church/community printable — S–M
+9. Election-night watch-party mode + electorate watchlist — M
+10. Hot-seat party-guessing game with "same deck" link — M
+
+Everything above sits inside the Round 1 constraints: hide persuasive tools under the election-day flag, show distributions not winners, publish sampling rules, and keep the only data you hold about a visitor inside their own browser.

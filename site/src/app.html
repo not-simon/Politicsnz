@@ -8,6 +8,14 @@
 <style id="glue">
 /* Glue: classes from the app that sit outside the design-system contract, written against its tokens. */
 /* adapt the app's markup to the design's component grids */
+.gameboard { display: grid; gap: var(--s-4) }
+.pchoices { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); gap: 8px }
+.pchoices button { display: flex; align-items: center; gap: 8px; padding: 12px; border: var(--hair) solid var(--line); border-radius: var(--r); background: var(--surface); color: var(--text); font: 600 var(--t-small) var(--font-body); cursor: pointer; text-align: left }
+.pchoices button:hover { border-color: var(--line-strong) }
+.pchoices button.right { border-color: var(--v-kept); box-shadow: inset 0 0 0 2px var(--v-kept) } .pchoices button.wrong { border-color: var(--v-broken); box-shadow: inset 0 0 0 2px var(--v-broken) }
+.score { display: flex; gap: 8px; flex-wrap: wrap } .score span { font: 600 var(--t-small) var(--font-body); background: var(--surface-2); border-radius: var(--r-pill); padding: 4px 10px } .score span.turn { background: var(--sun); color: var(--on-sun) }
+.handoff { text-align: center; padding: var(--s-7) var(--s-4); display: grid; gap: var(--s-3); justify-items: center }
+.handoff .big { font: 800 var(--t-h1) var(--font-display) }
 button.lnk { background: none; border: 0; padding: 0; font: inherit; color: var(--link, var(--text)); text-decoration: underline; text-decoration-color: var(--link-underline, var(--line-strong)); text-underline-offset: 2px; cursor: pointer }
 button.lnk:hover { text-decoration-color: currentColor }
 .locate { display: grid; gap: 8px } .locate .found { font-size: var(--t-small) }
@@ -89,7 +97,7 @@ const KEY_DATES = [['2026-10-25', 'Last day to enrol', 'There is no enrolling on
   ['2026-10-26', 'Advance voting opens', 'Vote early at any voting place in the country.'],
   ['2026-11-07', 'Election day', 'Voting places open 9am to 7pm. Results start coming in that night.'],
   ['2026-11-27', 'Official results', 'Special votes are counted and the final seat count is confirmed (approx. 3 weeks later).']];
-const NAV = [['home', 'Home'], ['match', 'Match'], ['swipe', 'Swipe'], ['compass', 'Compass'], ['polls', 'Polls'], ['map', 'Map'], ['parties', 'Parties'], ['issues', 'Issues'], ['parliament', 'Parliament'], ['more', 'More']];
+const NAV = [['home', 'Home'], ['match', 'Match'], ['swipe', 'Swipe'], ['compass', 'Compass'], ['polls', 'Polls'], ['map', 'Map'], ['game', 'Game'], ['parties', 'Parties'], ['issues', 'Issues'], ['parliament', 'Parliament'], ['more', 'More']];
 const ICON = {
   home: '<path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/>',
   match: '<path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/>',
@@ -97,6 +105,7 @@ const ICON = {
   issues: '<path d="M4 5h16M4 12h16M4 19h10"/>',
   polls: '<path d="M4 19h16M6 16V9M11 16V5M16 16v-6M20 16v-3"/>',
   map: '<path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/>',
+  game: '<rect x="3" y="7" width="18" height="11" rx="3"/><path d="M8 11v3M6.5 12.5h3M15 11h.01M17.5 13.5h.01"/>',
   compass: '<circle cx="12" cy="12" r="9"/><path d="m15 9-2 6-4 0 2-6z" fill="currentColor"/>',
   play: '<path d="M7 5v14l12-7z" fill="currentColor"/>', pause: '<path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/>',
   swipe: '<rect x="6" y="4" width="12" height="16" rx="2"/><path d="M3 8v10a2 2 0 0 0 2 2M21 8v10a2 2 0 0 1-2 2M9 15l2 2 4-5"/>',
@@ -218,6 +227,7 @@ V.home = async () => {
       <button class="starter" data-go="match"><span class="ic sun">${ic('match')}</span><h3>Find your match</h3><p class="muted small">Answer ${(G().quiz && G().quiz.statements || []).length || 'about 40'} quick questions, written without naming any party, and see who agrees with you and on what.</p><span class="go">Start the quiz →</span></button>
       <button class="starter" data-go="swipe"><span class="ic">${ic('swipe')}</span><h3>Policy swipe</h3><p class="muted small">Agree or disagree with real 2026 policies, one at a time, with no party names. Find out whose it was after you decide.</p><span class="go">Start swiping →</span></button>
       <button class="starter" data-go="compass"><span class="ic">${ic('compass')}</span><h3>Political compass</h3><p class="muted small">General value questions from academic surveys; see where you sit, and where the parties sit, on standard axes.</p><span class="go">Take the test →</span></button>
+      <button class="starter" data-go="game"><span class="ic">${ic('game')}</span><h3>Whose policy? (game)</h3><p class="muted small">Pass the phone. Each player guesses which party a real policy belongs to. Two to six players.</p><span class="go">Play →</span></button>
       <button class="starter" data-go="map"><span class="ic">${ic('map')}</span><h3>Electorate map</h3><p class="muted small">Every seat since 2011, coloured by who won. Scrub through the years and tap a seat.</p><span class="go">Open the map →</span></button>
       <button class="starter" data-go="issues"><span class="ic">${ic('issues')}</span><h3>Compare on the issues</h3><p class="muted small">Cost of living, housing, health and more, with every party's position side by side.</p><span class="go">See the issues →</span></button>
       <button class="starter" data-go="electorate"><span class="ic">${ic('parties')}</span><h3>Meet your local candidates</h3><p class="muted small">Pick your electorate to see who's standing, with photos, in their own words.</p><span class="go">Find your electorate →</span></button></div>
@@ -1004,6 +1014,43 @@ function promiseList(el, party, parties = null) { const pr = S.data.promises || 
   $('#prtr', el).onclick = () => openPage(`parties/${parties ? $('#prp', el).value : party}/track-record.md`);
   draw() }
 
+/* ----- Whose policy? pass-the-phone game ----- */
+const GAME_PARTIES = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'];
+V.game = async () => {
+  if (!S.swipe) S.swipe = await getJSON('data/swipe.json').catch(() => []);
+  await loadPeople();
+  let g; try { g = JSON.parse(store.get('game') || 'null') } catch { g = null }
+  const setup = () => { $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:640px"><div class="stack"><div class="kicker">Pass-the-phone game · 2–6 players</div><h2>Whose policy?</h2>
+      <p class="lede">A real 2026 policy comes up with no party named. Guess whose it is, then pass the phone. The policies come from the seven parties polling highest, dealt evenly, so nobody can win by picking one party every time.</p></div>
+      <div class="card stack"><label class="small"><b>Players</b></label><div id="names" class="stack" style="gap:6px"></div><div class="row"><button class="btn sm" id="addp">Add a player</button><label class="row small" style="gap:6px">Rounds each <select id="rounds"><option>3</option><option selected>5</option><option>8</option></select></label></div>
+        <button class="btn sun" id="startg" style="justify-self:start">Start</button></div>
+      <p class="tiny muted">Just a game: it tests knowledge of what the parties are proposing, not what you think of them.</p></div></section>`;
+    const names = $('#names'); const addRow = v => { const i = names.children.length; if (i >= 6) return; const d = document.createElement('div'); d.innerHTML = `<input type="search" value="${esc(v || 'Player ' + (i + 1))}" aria-label="Player ${i + 1} name" style="width:100%">`; names.appendChild(d) };
+    addRow('Player 1'); addRow('Player 2'); $('#addp').onclick = () => addRow();
+    $('#startg').onclick = () => { const players = [...names.querySelectorAll('input')].map(x => x.value.trim() || 'Player').slice(0, 6); const rounds = +$('#rounds').value;
+      const pool = buildDeck(S.swipe.filter(c => GAME_PARTIES.includes(c.party) && c.statement.length < 140), {}, '').slice(0, players.length * rounds);
+      g = { players, rounds, deck: pool.map(c => c.id), turn: 0, scores: players.map(() => 0), phase: 'handoff' }; store.set('game', JSON.stringify(g)); play() } };
+  const card = id => S.swipe.find(c => c.id === id);
+  const play = () => { const total = g.players.length * g.rounds; if (g.turn >= total || g.turn >= g.deck.length) return finish();
+    const pi = g.turn % g.players.length; const c = card(g.deck[g.turn]); const round = Math.floor(g.turn / g.players.length) + 1;
+    const scoreHTML = `<div class="score">${g.players.map((n, i) => `<span class="${i === pi ? 'turn' : ''}">${esc(n)} <b class="num">${g.scores[i]}</b></span>`).join('')}</div>`;
+    if (g.phase === 'handoff') { $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:640px">${scoreHTML}<div class="card handoff"><div class="kicker">Round ${round} of ${g.rounds}</div><div class="big">${esc(g.players[pi])}</div><p class="muted">Your turn. Take the phone, then tap when you're ready.</p><button class="btn sun" id="ready">I'm ready</button></div><button class="btn ghost sm" id="quitg">End game</button></div></section>`;
+      $('#ready').onclick = () => { g.phase = 'guess'; store.set('game', JSON.stringify(g)); play() }; $('#quitg').onclick = finish; return }
+    $('#main').innerHTML = `<section class="view"><div class="quiz gameboard" style="max-width:640px">${scoreHTML}<div class="card stack"><div class="kicker">${esc(g.players[pi])} · whose policy is this?</div><div class="qtext">${esc(c.statement)}</div>${c.how ? `<p class="small muted">${esc(c.how.slice(0, 260))}${c.how.length > 260 ? '…' : ''}</p>` : ''}</div>
+      <div class="pchoices" id="choices">${GAME_PARTIES.map(p => `<button data-p="${p}"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))}</button>`).join('')}</div><div id="verdict"></div></div></section>`;
+    $('#choices').onclick = e => { const b = e.target.closest('[data-p]'); if (!b || $('#choices').dataset.done) return; $('#choices').dataset.done = '1'; const right = b.dataset.p === c.party; if (right) g.scores[pi]++;
+      $('#choices').querySelectorAll('button').forEach(x => { if (x.dataset.p === c.party) x.classList.add('right'); else if (x === b) x.classList.add('wrong') });
+      $('#verdict').innerHTML = `<div class="card stack"><div class="row"><span class="verdict-pill" style="background:${right ? 'var(--v-kept)' : 'var(--v-broken)'}">${right ? '✓ Correct' : '✕ Not quite'}</span><span>It's a <b>${esc(P(c.party).name)}</b> policy.</span></div><div class="row">${c.doc ? `<button class="btn sm" data-doc="${esc(c.party)}|${esc(c.doc)}">Read the full policy</button>` : ''}<button class="btn primary" id="nextturn" style="margin-left:auto">${g.turn + 1 >= Math.min(g.deck.length, g.players.length * g.rounds) ? 'See results' : 'Pass the phone →'}</button></div></div>`;
+      $('#nextturn').onclick = () => { g.turn++; g.phase = 'handoff'; store.set('game', JSON.stringify(g)); play() } } };
+  const finish = () => { const order = g.players.map((n, i) => [n, g.scores[i]]).sort((a, b) => b[1] - a[1]); const played = Math.min(g.turn, g.deck.length);
+    $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:640px"><div class="stack"><div class="kicker">Final scores · ${played} policies</div><h2>${esc(order[0][0])} ${order.length > 1 && order[0][1] === order[1][1] ? 'ties for the win' : 'wins'}</h2></div>
+      <div class="card stack">${order.map(([n, sc], i) => `<div class="row" style="flex-wrap:nowrap"><span style="width:28px" class="num muted">${i + 1}</span><span style="flex:1"><b>${esc(n)}</b></span><div class="meter" style="flex:2"><span style="width:${g.rounds ? sc / g.rounds * 100 : 0}%;background:var(--sun)"></span></div><span class="num" style="width:60px;text-align:right">${sc} / ${g.rounds}</span></div>`).join('')}</div>
+      <p class="small muted">Want to know more about the policies you saw? They're all in <button class="btn ghost sm" data-go="policies">the policy browser</button>, with the parties' full documents.</p>
+      <div class="row"><button class="btn sun" id="again">Play again</button><button class="btn" data-go="swipe">Try Policy swipe</button></div></div></section>`;
+    $('#again').onclick = () => { store.set('game', 'null'); g = null; setup() } };
+  if (g && g.deck && g.turn < g.players.length * g.rounds) play(); else setup();
+};
+
 /* ----- why trust this ----- */
 V.trust = () => { $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">About this guide</div><h2>Why trust this?</h2>
   <p class="lede">Ballot Book is an independent, non-partisan guide. It doesn't tell you how to vote. Here is who made it, how it's funded, the rules it follows and how to check or correct anything in it.</p></div>
@@ -1024,7 +1071,8 @@ async function loadPages() { if (!S.pages) S.pages = await getJSON('data/pages.j
 V.more = async () => { await loadPages(); const keys = Object.keys(S.pages);
   const group = (title, f) => { const ks = keys.filter(f); return ks.length ? `<div class="stack"><h3>${title}</h3><div class="grid">${ks.map(k => `<button class="starter" style="padding:14px" data-page="${esc(k)}"><h4>${esc(pageTitle(k))}</h4><span class="tiny muted">${esc(k)}</span></button>`).join('')}</div></div>` : '' };
   $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Go deeper</div><h2>Everything else</h2></div>
-    <div class="starters"><button class="starter" data-go="trust"><h3>Why trust this?</h3><p class="small muted">Who made it, how it's funded, the rules it follows, how to report an error.</p><span class="go">Open →</span></button>
+    <div class="starters"><button class="starter" data-go="game"><h3>Whose policy? (game)</h3><p class="small muted">Pass-the-phone party-guessing game for 2–6 players.</p><span class="go">Play →</span></button>
+      <button class="starter" data-go="trust"><h3>Why trust this?</h3><p class="small muted">Who made it, how it's funded, the rules it follows, how to report an error.</p><span class="go">Open →</span></button>
       <button class="starter" data-go="compass"><h3>Political compass</h3><p class="small muted">Your values on standard axes, with the parties plotted.</p><span class="go">Open →</span></button>
       <button class="starter" data-go="map"><h3>Electorate map</h3><p class="small muted">Every seat since 2011, coloured by winner, with a time slider.</p><span class="go">Open →</span></button>
       <button class="starter" data-go="parliament"><h3>Parliament</h3><p class="small muted">Seat maps, poll trends, coalition builder and seat calculator.</p><span class="go">Open →</span></button>

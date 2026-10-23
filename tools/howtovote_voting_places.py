@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Normalise the Electoral Commission's 2026 voting-place data (as loaded by the official finder at map.vote.nz)
+"""NOT RUN FOR PUBLICATION (23 Oct 2026): the Commission's voting-place data carries no licence statement, so the
+dataset is not stored in this repository; only the official finder deep-link is published (see data/guide/howtovote.json
+-> voting_places). Keep this script in case the Commission confirms reuse terms.
+
+Normalise the Electoral Commission's 2026 voting-place data (as loaded by the official finder at map.vote.nz)
 into data/guide/voting-places-2026.json.
 
 Input : raw/howtovote/voting-places-2026.json  (copy of https://map.vote.nz/assets/map-data/locations-<hash>.json,
