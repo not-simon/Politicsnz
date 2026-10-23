@@ -1,5 +1,7 @@
 # James Shaw
 
+<img src="photo.jpg" width="200" align="right" alt="James Shaw">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Green Party co-leader (2015–2024)<br>Minister for Climate Change (2017–2023)<br>Minister of Statistics (2017–2020)<br>Associate Minister of Finance (2017–2020)<br>Associate Minister for the Environment (Biodiversity) (2020–2023) |
 | **Born** | 1973-05-06, Wellington |
 | **Wikipedia** | [James Shaw (New Zealand politician)](https://en.wikipedia.org/wiki/James_Shaw_(New_Zealand_politician)) |
+
+<sub>Photo: Supplied by the Green Party; uploader will deal with VRT — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:James_Shaw_2023_%28cropped%29.jpg)</sub>
 
 ## Current status
 

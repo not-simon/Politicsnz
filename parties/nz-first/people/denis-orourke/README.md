@@ -1,5 +1,7 @@
 # Denis O'Rourke
 
+<img src="photo.jpg" width="200" align="right" alt="Denis O'Rourke">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | New Zealand First |
@@ -10,6 +12,8 @@
 | **Key roles** | Christchurch City Councillor (1989–2004)<br>Chair, CCC Sustainable Transport and Utilities Committee<br>NZ First spokesperson (transport, local government and others) |
 | **Born** | 1946-07-26, Christchurch |
 | **Wikipedia** | [Denis O'Rourke](https://en.wikipedia.org/wiki/Denis_O'Rourke) |
+
+<sub>Photo: Evan Davies — CC BY 2.0 — [source](https://commons.wikimedia.org/wiki/File:Denis_O%27Rourke%2C_2012.jpg)</sub>
 
 ## Current status
 

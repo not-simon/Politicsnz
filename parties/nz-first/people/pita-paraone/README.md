@@ -1,5 +1,7 @@
 # Pita Paraone
 
+<img src="photo.jpg" width="200" align="right" alt="Pita Paraone">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | New Zealand First |
@@ -11,6 +13,8 @@
 | **Born** | 1945-11-30, Kawakawa |
 | **Died** | 2019-08-26, Auckland |
 | **Wikipedia** | [Pita Paraone](https://en.wikipedia.org/wiki/Pita_Paraone) |
+
+<sub>Photo: Governor-General of New Zealand — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Pita_Paraone_crop.jpg)</sub>
 
 ## Current status
 

@@ -1,5 +1,7 @@
 # Pita Sharples
 
+<img src="photo.jpg" width="200" align="right" alt="Pita Sharples">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Te Pāti Māori |
@@ -11,6 +13,8 @@
 | **Key roles** | Co-leader of the Māori Party (2004–2013)<br>Minister of Māori Affairs (2008–2014)<br>MP for Tāmaki Makaurau (2005–2014) |
 | **Born** | 1941-07-20, Waipawa |
 | **Wikipedia** | [Pita Sharples](https://en.wikipedia.org/wiki/Pita_Sharples) |
+
+<sub>Photo: Office of the Governor-General of New Zealand — CC0 — [source](https://commons.wikimedia.org/wiki/File:Pita_Sharples_2024_%28cropped%29.jpg)</sub>
 
 ## Current status
 

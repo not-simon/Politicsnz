@@ -1,5 +1,7 @@
 # Holly Walker
 
+<img src="photo.jpg" width="200" align="right" alt="Holly Walker">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Green spokesperson on housing, electoral reform, children, open government, arts and students (2011–2014)<br>Deputy executive director, Helen Clark Foundation (2020–2022) |
 | **Born** | 1982-11-15, Lower Hutt |
 | **Wikipedia** | [Holly Walker](https://en.wikipedia.org/wiki/Holly_Walker) |
+
+<sub>Photo: Green Party NZ — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Holly_Walker.jpg)</sub>
 
 ## Current status
 

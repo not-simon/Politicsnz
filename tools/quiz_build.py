@@ -40,12 +40,26 @@ def doc_url(ref):
         raise SystemExit(f'no source_url in {path}')
     return m.group(1).strip()
 
+import re
+from quiz_blind_text import BLIND
+# Terms that would tell the voter which party a statement belongs to. Statement text and
+# explainers must not contain any of these; party positions/evidence (shown only after answering) may.
+BANNED_NAMES = re.compile(r"\b(National|Labour|Greens?|ACT|NZ First|New Zealand First|Te P[āa]ti M[āa]ori|M[āa]ori Party|TOP|Opportunities|Alliance|Conservatives?|Vision NZ|NZ Loyal|"
+    r"Luxon|Hipkins|Seymour|Peters|Swarbrick|Davidson|Waititi|Ngarewa-Packer|Willis|van Velden)\b")  # case-sensitive: 'national income', 'greenhouse', 'Crimes Act' are fine
+BANNED_TERMS = re.compile(r"coalition|government did|the government has|the government dropped|the current government|the previous government|Treaty Principles Bill|Regulatory Standards|"
+    r"Fast-track Approvals|Ka Ora|Medicard|KiwiMart|Kiwipower|Future Fund|FamilyBoost|Roads of National Significance|Te Aka Whai Ora|three strikes|Fair Pay Agreement|Gene Technology Bill|Online Safety bill", re.I)
+
 errors = []
 out = []
 ids = set()
 for st in Q.STATEMENTS:
     if st['id'] in ids: errors.append(f"duplicate id {st['id']}")
     ids.add(st['id'])
+    if st['id'] not in BLIND: errors.append(f"{st['id']}: no party-blind wording in quiz_blind_text.py")
+    else: st['text'], st['explainer'] = BLIND[st['id']]
+    for field in ('text', 'explainer'):
+        m = BANNED_NAMES.search(st[field]) or BANNED_TERMS.search(st[field])
+        if m: errors.append(f"{st['id']}: {field} names a party or branded policy: '{m.group(0)}'")
     positions = {}
     for party in st['positions']:
         if party not in PARTIES: errors.append(f"{st['id']}: unknown party {party}")
@@ -83,6 +97,8 @@ doc = {
     'scale': '-2 = strongly disagree, -1 = disagree, 0 = neutral/mixed, +1 = agree, +2 = strongly agree; '
              'null = the party has no public position we could find (never guessed). Positions are the party\'s, '
              'relative to the statement text.',
+    'blind': 'Statement text and explainers are written without party names or branded policy names (enforced by quiz_build.py), '
+             'so voters answer on the substance. Party positions and evidence are shown only after answering.',
     'scoring': {
         'method': 'For each statement both the user and the party answered: agreement = 1 - |user - party| / 4. '
                   'Weighted average over those statements using user importance weights (default 1; suggest 0.5/1/2). '

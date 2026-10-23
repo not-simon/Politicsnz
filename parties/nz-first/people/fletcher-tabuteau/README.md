@@ -1,5 +1,7 @@
 # Fletcher Tabuteau
 
+<img src="photo.jpg" width="200" align="right" alt="Fletcher Tabuteau">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | New Zealand First |
@@ -10,6 +12,8 @@
 | **Key roles** | Deputy Leader of NZ First (2018–2020)<br>Parliamentary Under-Secretary for Foreign Affairs, Regional Economic Development, and Disarmament and Arms Control (2017–2020)<br>Deputy chair, Finance and Expenditure Committee |
 | **Born** | 1974, Rotorua |
 | **Wikipedia** | [Fletcher Tabuteau](https://en.wikipedia.org/wiki/Fletcher_Tabuteau) |
+
+<sub>Photo: Michał Józefaciuk — CC BY-SA 3.0 pl — [source](https://commons.wikimedia.org/wiki/File:Fletcher_Tabuteau_crop.jpg)</sub>
 
 ## Current status
 

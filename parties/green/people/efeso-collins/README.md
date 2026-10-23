@@ -1,5 +1,7 @@
 # Efeso Collins
 
+<img src="photo.jpg" width="200" align="right" alt="Efeso Collins">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -11,6 +13,8 @@
 | **Born** | 1974-05-27, Ōtara, Auckland |
 | **Died** | 2024-02-21, Auckland |
 | **Wikipedia** | [Efeso Collins](https://en.wikipedia.org/wiki/Efeso_Collins) |
+
+<sub>Photo: Supplied by the Green Party; uploader will deal with VRT — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Efeso_Collins_%28cropped%29.jpg)</sub>
 
 ## Current status
 

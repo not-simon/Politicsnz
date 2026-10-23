@@ -1,5 +1,7 @@
 # Meka Whaitiri
 
+<img src="photo.jpg" width="200" align="right" alt="Meka Whaitiri">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Te Pāti Māori |
@@ -11,6 +13,8 @@
 | **Key roles** | Minister of Customs (2017–2018, 2020–2023)<br>Minister for Veterans (2020–2023)<br>Minister for Food Safety (2022–2023)<br>Associate Minister of Agriculture, Forestry, Local Government, Crown/Māori Relations, Statistics (various)<br>Lead cyclone recovery minister for Hawke's Bay (2023)<br>Chair, Justice Committee (2019–2020)<br>Co-chair, Labour Māori Caucus<br>CEO, Ngāti Kahungunu Iwi Inc (2009–2013) |
 | **Born** | 1965-01-11, Manutuke |
 | **Wikipedia** | [Meka Whaitiri](https://en.wikipedia.org/wiki/Meka_Whaitiri) |
+
+<sub>Photo: New Zealand Labour Party. — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Hon_Meka_Whaitiri.jpg)</sub>
 
 ## Current status
 

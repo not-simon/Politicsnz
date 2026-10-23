@@ -1,5 +1,7 @@
 # Mojo Mathers
 
+<img src="photo.jpg" width="200" align="right" alt="Mojo Mathers">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Green spokesperson on animal welfare, disability issues, commerce and consumer affairs, civil defence, food (2011–2017)<br>Chief executive, Disabled Persons Assembly NZ (2023–) |
 | **Born** | 1966-11-23, London, UK |
 | **Wikipedia** | [Mojo Mathers](https://en.wikipedia.org/wiki/Mojo_Mathers) |
+
+<sub>Photo: Photographer unidentified, Green Party NZ is copyright holder. — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Mojo_Mathers.jpg)</sub>
 
 ## Current status
 

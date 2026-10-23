@@ -2,7 +2,7 @@
  "name": "Mark Mitchell",
  "slug": "mark-mitchell",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/145740ad7beb6553bf9ef51c47458d5afa47d3a5-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -13,6 +13,75 @@
  "candidacy_2026": "Candidate for the Whangaparāoa electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://electionresults.govt.nz/electionresults_2011/electorate-44.html",
+  "https://www.electionresults.govt.nz/electionresults_2020/electorate-details-63.html",
+  "https://archive.electionresults.govt.nz/electionresults_2023/electorate-details-63.html",
+  "https://www.newshub.co.nz/home/politics/2018/02/national-leadership-hopeful-mark-mitchell-on-gay-marriage-and-war.html",
+  "https://www.tvnz.co.nz/one-news/new-zealand/mark-mitchell-rules-challenging-judith-collins-nationals-leadership",
+  "https://www.beehive.govt.nz/release/500-more-police-improve-public-safety",
+  "https://www.nzherald.co.nz/nz/politics/projected-date-to-reach-500-more-cops-relies-on-incredibly-ambitious-assumption-labour/66FKWIU3C5FDZGQRISUXFYSOZE/",
+  "https://www.1news.co.nz/2024/09/19/gang-patch-legislation-passed-into-law/",
+  "https://www.nzherald.co.nz/nz/politics/kahukura-funding-cut-for-mongrel-mob-led-drug-rehabilitation-programme/3PSWJQJGTJFFTLOU32CK6YHXAE/",
+  "https://www.wgtn.ac.nz/news/2024/06/boot-camps-for-young-offenders-are-backthe-psychological-evidence-they-dont-work-never-went-away",
+  "https://www.rnz.co.nz/news/national/510963/minister-completely-disagrees-with-boot-camp-critics",
+  "https://www.rnz.co.nz/news/national/559975/mark-mitchell-wants-short-prison-sentences-scrapped-in-hope-of-reducing-reoffending",
+  "https://www.nzherald.co.nz/nz/politics/short-jail-sentences-dont-work-why-corrections-minister-mark-mitchell-wants-them-longer-even-if-it-means-huge-prisoner-numbers/MUQD3MBCJREZ5EIJUCA2KN2S7E/",
+  "https://www.rnz.co.nz/news/political/567827/government-orders-sport-nz-to-scrap-transgender-inclusive-community-sport-guidelines",
+  "https://www.rnz.co.nz/news/political/528852/police-commissioner-andrew-coster-resigns-to-head-new-social-investment-agency",
+  "https://en.wikipedia.org/wiki/Mark_Mitchell_(New_Zealand_politician)",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "status_detail": "Minister of Police, Corrections, Emergency Management and Recovery, Ethnic Communities, and Sport and Recreation; MP for Whangaparāoa; #8 on National's 2026 list and re-contesting Whangaparāoa.",
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2011",
+   "to": null
+  }
+ ],
+ "roles": [
+  "Minister of Police (2023–)",
+  "Minister of Corrections (2023–)",
+  "Minister for Emergency Management and Recovery (2023–)",
+  "Minister for Ethnic Communities (2025–)",
+  "Minister for Sport and Recreation (2025–)",
+  "Minister of Defence (2017)",
+  "Minister for Land Information (2016–2017)",
+  "Minister of Statistics (2016–2017)",
+  "Chair, Foreign Affairs, Defence and Trade Committee (2014–2016)",
+  "National spokesperson for defence, justice, police (various, 2017–2023)",
+  "MP for Rodney (2011–2020)",
+  "MP for Whangaparāoa (2020–)"
+ ],
+ "parliaments": [
+  50,
+  51,
+  52,
+  53,
+  54
+ ],
+ "first_elected": 2011,
+ "electorates": [
+  {
+   "electorate": "Whangaparāoa",
+   "from": "2020-10-17",
+   "to": null,
+   "majority": null
+  },
+  {
+   "electorate": "Rodney",
+   "from": "2011-11-26",
+   "to": "2020-10-17",
+   "majority": null
+  }
+ ],
+ "born": "1968-05-22",
+ "wikipedia": "https://en.wikipedia.org/wiki/Mark_Mitchell_(New_Zealand_politician)",
+ "list_rank_2026_official": 8,
+ "conscience_votes": {
+  "marriage_equality_2013_third_reading": "against",
+  "end_of_life_choice_2019_third_reading": "for",
+  "abortion_legislation_2020_third_reading": "for"
+ },
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

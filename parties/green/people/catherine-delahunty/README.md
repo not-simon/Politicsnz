@@ -1,5 +1,7 @@
 # Catherine Delahunty
 
+<img src="photo.jpg" width="200" align="right" alt="Catherine Delahunty">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Green Party female co-convenor (2003–2005)<br>Green spokesperson on Education, Water, Toxics, Te Tiriti o Waitangi, Mining, Forestry, Disability Issues, Women's Affairs and others |
 | **Born** | 1953 |
 | **Wikipedia** | [Catherine Delahunty](https://en.wikipedia.org/wiki/Catherine_Delahunty) |
+
+<sub>Photo: Green Party of Aotearoa New Zealand — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Catherine_Delahunty.jpg)</sub>
 
 ## Current status
 

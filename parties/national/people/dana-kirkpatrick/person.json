@@ -2,7 +2,7 @@
  "name": "Dana Kirkpatrick",
  "slug": "dana-kirkpatrick",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/5319855d84a7e1d07b5a424be36246c9516cad10-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -13,6 +13,30 @@
  "candidacy_2026": "Candidate for the East Cape electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Dana_Kirkpatrick",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2023",
+   "to": null
+  }
+ ],
+ "roles": [],
+ "parliaments": [
+  54
+ ],
+ "first_elected": 2023,
+ "electorates": [
+  {
+   "electorate": "East Coast",
+   "from": "2023-10-14",
+   "to": null,
+   "majority": null
+  }
+ ],
+ "wikipedia": "https://en.wikipedia.org/wiki/Dana_Kirkpatrick",
+ "list_rank_2026_official": 32,
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

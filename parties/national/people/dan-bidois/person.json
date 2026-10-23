@@ -2,7 +2,7 @@
  "name": "Dan Bidois",
  "slug": "dan-bidois",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/fd32f048731155d4aad00de6b72af3dab3e1aabe-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -22,6 +22,36 @@
   "Twitter": "https://x.com/dan_bidois"
  },
  "sources": [
+  "https://en.wikipedia.org/wiki/Dan_Bidois",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2023",
+   "to": null
+  }
+ ],
+ "roles": [],
+ "parliaments": [
+  52,
+  54
+ ],
+ "first_elected": 2023,
+ "electorates": [
+  {
+   "electorate": "Northcote",
+   "from": "2023-10-14",
+   "to": null,
+   "majority": null
+  }
+ ],
+ "born": "1983-02-24",
+ "wikipedia": "https://en.wikipedia.org/wiki/Dan_Bidois",
+ "list_rank_2026_official": 30,
+ "conscience_votes": {
+  "end_of_life_choice_2019_third_reading": "against",
+  "abortion_legislation_2020_third_reading": "for"
+ },
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

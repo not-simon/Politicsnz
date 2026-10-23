@@ -6,7 +6,7 @@
 |---|---|
 | **Party** | New Zealand National Party |
 | **Status** | Former MP |
-| **Parliaments** | 49th |
+| **Parliaments** | 49th, 50th |
 | **First elected** | 2008 |
 | **Born** | 1973-08-26 — Christchurch, New Zealand |
 | **Wikipedia** | [Aaron Gilmore](https://en.wikipedia.org/wiki/Aaron_Gilmore) |

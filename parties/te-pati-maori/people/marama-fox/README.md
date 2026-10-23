@@ -1,5 +1,7 @@
 # Marama Fox
 
+<img src="photo.jpg" width="200" align="right" alt="Marama Fox">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Te Pāti Māori |
@@ -10,6 +12,8 @@
 | **Key roles** | Co-leader of the Māori Party (2014–2018) |
 | **Born** | Porirua |
 | **Wikipedia** | [Marama Fox](https://en.wikipedia.org/wiki/Marama_Fox) |
+
+<sub>Photo: Wiremu Stadtwald Demchick — CC BY 4.0 — [source](https://commons.wikimedia.org/wiki/File:2015_Portrait_of_Marama_Fox_01.JPG)</sub>
 
 ## Current status
 

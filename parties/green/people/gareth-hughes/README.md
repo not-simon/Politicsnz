@@ -1,5 +1,7 @@
 # Gareth Hughes
 
+<img src="photo.jpg" width="200" align="right" alt="Gareth Hughes">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Green Party musterer (whip) (2017–2020)<br>Green spokesperson on transport, energy, oceans, ICT, tertiary education and others |
 | **Born** | 1981-10-31 |
 | **Wikipedia** | [Gareth Hughes (politician)](https://en.wikipedia.org/wiki/Gareth_Hughes_(politician)) |
+
+<sub>Photo: Green Party of Aotearoa New Zealand — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Gareth_Hughes2.jpg)</sub>
 
 ## Current status
 

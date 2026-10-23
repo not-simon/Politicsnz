@@ -116,50 +116,50 @@ Statements: **45**. Cells filled: **272** of 765.
 
 | # | Issue | Statement | Parties with a position |
 |---|---|---|---:|
-| q01 | tax | New Zealand should introduce a capital gains tax (for example on investment and commercial property). | 5 |
-| q02 | tax | There should be an annual wealth tax on people with very large fortunes (for example net wealth over $2–10 million). | 7 |
-| q03 | cost-of-living | GST should be removed from food such as fresh fruit and vegetables. | 3 |
-| q04 | tax | The first slice of everyone's income (e.g. the first $10,000 or more) should be tax-free. | 5 |
-| q05 | cost-of-living | The government should force the big supermarket chains to be broken up or restructured to increase competition. | 6 |
+| q01 | tax | Profits from selling investment property and commercial property should be taxed, with the family home exempt. | 5 |
+| q02 | tax | People with very large fortunes (for example net wealth above several million dollars) should pay an annual wealth tax. | 7 |
+| q03 | cost-of-living | GST should be taken off food such as fresh fruit and vegetables. | 3 |
+| q04 | tax | The first slice of everyone's income (for example the first $10,000 or more) should be tax-free. | 5 |
+| q05 | cost-of-living | The government should force the two big supermarket groups to be broken up or restructured so more chains compete. | 6 |
 | q06 | work | The minimum wage should rise every year by at least the rate of inflation. | 8 |
-| q07 | work | Fair Pay Agreements (industry-wide minimum pay and conditions negotiated by unions and employers) should be brought back. | 9 |
-| q08 | housing | Annual rent increases should be capped by law. | 5 |
-| q09 | housing | The government should build a lot more state and public housing. | 7 |
+| q07 | work | Pay and conditions should be able to be set for a whole industry at once (for example all cleaners or all supermarket workers) through compulsory bargaining between unions and employers. | 9 |
+| q08 | housing | There should be a legal limit on how much a landlord can raise the rent each year. | 5 |
+| q09 | housing | The government should build a lot more state and public housing itself. | 7 |
 | q10 | housing | Councils should have to allow more and denser housing, such as townhouses and apartments, in our cities. | 4 |
-| q11 | health | Some GP visits each year should be free for everyone. | 4 |
-| q12 | health | The $5 prescription charge should be scrapped. | 2 |
+| q11 | health | Everyone should get some free GP visits each year, paid for by the government. | 4 |
+| q12 | health | The $5 charge for each prescription should be scrapped for everyone. | 2 |
 | q13 | education | Free school lunches should be expanded and made more generous, even if it costs more. | 3 |
-| q14 | education | Charter (partnership) schools should be allowed to continue. | 3 |
+| q14 | education | Privately run but publicly funded schools (charter schools) should continue to be allowed alongside state schools. | 3 |
 | q15 | education | University and polytechnic study should be fees-free. | 4 |
-| q16 | crime-justice | Repeat serious offenders should face mandatory longer sentences under a "three strikes" law. | 8 |
-| q17 | crime-justice | We should send fewer people to prison and put more into rehabilitation and community alternatives. | 8 |
+| q16 | crime-justice | Anyone convicted of a third serious violent or sexual offence should get a mandatory longer sentence, with little room for the judge to decide otherwise. | 8 |
+| q17 | crime-justice | We should send fewer people to prison and put more into rehabilitation and community-based sentences. | 8 |
 | q18 | climate | Farmers should pay for their greenhouse gas emissions, for example by bringing agriculture into the Emissions Trading Scheme. | 10 |
-| q19 | climate | New Zealand should keep its legal net-zero 2050 target and stay in the Paris Agreement. | 9 |
-| q20 | environment | Ministers should be able to fast-track big infrastructure, mining and development projects past the normal consent process. | 8 |
+| q19 | climate | New Zealand should keep its legal target of net-zero emissions by 2050 and stay in the Paris climate agreement. | 9 |
+| q20 | environment | Ministers should be able to approve big infrastructure, mining and development projects through a faster process that bypasses the normal environmental consent system. | 8 |
 | q21 | environment | Seabed mining should be banned in New Zealand waters. | 8 |
-| q22 | energy | The ban on new offshore oil and gas exploration should be brought back. | 10 |
-| q23 | energy | The government should take a bigger direct role in electricity, such as a new state-owned power company or splitting up the big power companies. | 6 |
-| q24 | te-tiriti | Parliament should define the principles of the Treaty of Waitangi in law, as ACT's Treaty Principles Bill proposed. | 6 |
+| q22 | energy | New offshore oil and gas exploration should be banned again. | 10 |
+| q23 | energy | The government should take a bigger direct role in electricity, such as setting up a new state-owned power company or splitting the big power companies into separate generators and retailers. | 6 |
+| q24 | te-tiriti | Parliament should write a single legal definition of the principles of the Treaty of Waitangi, rather than leaving the courts and the Waitangi Tribunal to interpret them case by case. | 6 |
 | q25 | te-tiriti | The Waitangi Tribunal should be abolished or replaced once historical claims are settled. | 5 |
 | q26 | te-tiriti | The Māori electorates should be abolished, or their future put to a referendum. | 2 |
-| q27 | te-tiriti | Government services should be allocated by need alone, without Māori- or ethnicity-specific programmes. | 10 |
-| q28 | democracy | The Regulatory Standards Act 2025 should be repealed. | 8 |
-| q29 | democracy | Political donations should be capped, with only New Zealand voters allowed to donate. | 6 |
+| q27 | te-tiriti | Public services such as health should be targeted by need alone, with no programmes aimed specifically at Māori or other ethnic groups. | 10 |
+| q28 | democracy | A recent law that requires every new piece of legislation to be checked against a fixed list of "good regulation" principles, including protecting private property rights, should be scrapped. | 8 |
+| q29 | democracy | Political donations should be capped, and only individual New Zealand voters should be allowed to donate. | 6 |
 | q30 | local-government | Central government should cap how much councils can raise rates each year. | 4 |
 | q31 | immigration | Overall immigration to New Zealand should be reduced. | 4 |
 | q32 | immigration | New residents should have to wait longer (five years or more) before they can get most benefits. | 3 |
-| q33 | superannuation | The age of eligibility for NZ Superannuation should stay at 65. | 8 |
-| q34 | welfare | Main benefits should be substantially increased. | 8 |
-| q35 | welfare | Beneficiaries should face tougher obligations and sanctions, such as drug tests or payment cuts. | 9 |
-| q36 | transport | Transport money should go mainly to public transport and rail rather than new highways. | 7 |
-| q37 | agriculture | Rules limiting farm pollution of rivers (such as nitrogen limits) should be strengthened rather than loosened. | 8 |
-| q38 | agriculture | Rules on gene technology (genetic modification) should be relaxed. | 8 |
+| q33 | superannuation | The age for receiving NZ Superannuation should stay at 65. | 8 |
+| q34 | welfare | Main benefits (such as Jobseeker and Sole Parent Support) should be substantially increased. | 8 |
+| q35 | welfare | People on benefits should face tougher obligations and sanctions, such as drug testing or payment cuts if they do not meet requirements. | 9 |
+| q36 | transport | Transport money should go mainly to public transport, cycling and rail rather than new highways. | 7 |
+| q37 | agriculture | Rules limiting farm pollution of rivers (such as limits on nitrogen fertiliser and stock numbers) should be strengthened rather than loosened. | 8 |
+| q38 | agriculture | Rules on gene technology (genetic modification) should be relaxed so modified crops and organisms can be used outside the laboratory. | 8 |
 | q39 | foreign-policy | New Zealand should formally recognise the State of Palestine now. | 6 |
 | q40 | defence | Defence spending should rise substantially, towards 2% of GDP. | 6 |
 | q41 | foreign-policy | New Zealand should increase its overseas aid budget. | 4 |
 | q42 | drugs | Cannabis should be legalised or decriminalised for personal use. | 4 |
 | q43 | social-issues | Children under 16 should be banned from social media. | 5 |
-| q44 | social-issues | Puberty blockers and other medical gender-transition treatments should not be available to under-18s. | 6 |
+| q44 | social-issues | Puberty blockers and other medical gender-transition treatments should not be available to people under 18. | 6 |
 | q45 | social-issues | Abortion law should be made more restrictive. | 3 |
 <!-- GENERATED:quiz-coverage END -->
 

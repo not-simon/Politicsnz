@@ -2,7 +2,7 @@
  "name": "Joseph Mooney",
  "slug": "joseph-mooney",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/006a01c9798e3762ef510c455668d6e333930d12-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -13,6 +13,31 @@
  "candidacy_2026": "Candidate for the Southland electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Joseph_Mooney_(New_Zealand_politician)",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2020",
+   "to": null
+  }
+ ],
+ "roles": [],
+ "parliaments": [
+  53,
+  54
+ ],
+ "first_elected": 2020,
+ "electorates": [
+  {
+   "electorate": "Southland",
+   "from": "2020-10-17",
+   "to": null,
+   "majority": null
+  }
+ ],
+ "wikipedia": "https://en.wikipedia.org/wiki/Joseph_Mooney_(New_Zealand_politician)",
+ "list_rank_2026_official": 49,
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

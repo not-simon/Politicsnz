@@ -1,5 +1,7 @@
 # Darleen Tana
 
+<img src="photo.jpg" width="200" align="right" alt="Darleen Tana">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Independent |
@@ -10,6 +12,8 @@
 | **Key roles** | Green spokesperson on oceans and fisheries, science, small business, media, internal affairs (Nov 2023 – Mar 2024) |
 | **Born** | Northland (year not published) |
 | **Wikipedia** | [Darleen Tana](https://en.wikipedia.org/wiki/Darleen_Tana) |
+
+<sub>Photo: Schwede66 — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Darleen_Tana_%28cropped%29.jpg)</sub>
 
 ## Current status
 

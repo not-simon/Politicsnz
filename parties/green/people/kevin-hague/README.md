@@ -1,5 +1,7 @@
 # Kevin Hague
 
+<img src="photo.jpg" width="200" align="right" alt="Kevin Hague">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Green spokesperson on health, conservation, biosecurity, rural affairs, rainbow issues and sport (2008–2016)<br>Chief executive, Forest & Bird (2016–2022)<br>Green Party chief of staff (2025–) |
 | **Born** | 1960-03-18, Aldershot, England |
 | **Wikipedia** | [Kevin Hague](https://en.wikipedia.org/wiki/Kevin_Hague) |
+
+<sub>Photo: Green Party of Aotearoa New Zealand — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Kevin_Hague.jpg)</sub>
 
 ## Current status
 

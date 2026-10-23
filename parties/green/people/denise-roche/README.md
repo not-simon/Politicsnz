@@ -1,5 +1,7 @@
 # Denise Roche
 
+<img src="photo.jpg" width="200" align="right" alt="Denise Roche">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Auckland City Councillor, Hauraki Gulf Islands (2007–2010)<br>Waiheke Local Board member (2010–2011)<br>Waitematā Local Board member (from 2018) |
 | **Born** | 1963-07-09, Helensville |
 | **Wikipedia** | [Denise Roche](https://en.wikipedia.org/wiki/Denise_Roche) |
+
+<sub>Photo: Maritime Union of New Zealand — CC BY 2.0 — [source](https://commons.wikimedia.org/wiki/File:Denise_Roche_%28cropped%29.jpg)</sub>
 
 ## Current status
 

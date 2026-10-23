@@ -1,5 +1,7 @@
 # John Minto
 
+<img src="photo.jpg" width="200" align="right" alt="John Minto">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Free Palestine |
@@ -8,6 +10,8 @@
 | **Key roles** | National chair, Halt All Racist Tours (from 1980)<br>Chair/co-chair, Palestine Solidarity Network Aotearoa<br>Co-vice-president, Mana Movement<br>Secondary teacher, Hornby High School (retired 2018) |
 | **2026 election** | list #1 |
 | **Wikipedia** | [John Minto](https://en.wikipedia.org/wiki/John_Minto) |
+
+<sub>Photo: John Darroch — CC BY 2.0 — [source](https://commons.wikimedia.org/wiki/File:John_Minto_speaking.jpg)</sub>
 
 ## Current status
 

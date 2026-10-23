@@ -1,5 +1,7 @@
 # Celia Wade-Brown
 
+<img src="photo.jpg" width="200" align="right" alt="Celia Wade-Brown">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Mayor of Wellington (2010–2016)<br>Wellington City Councillor, Southern Ward (1994–1998, 2001–2010)<br>Green spokesperson on democracy and electoral reform, local government, digitising government, tourism<br>Executive leader, Mayors for Peace (2014)<br>Founder, Living Streets Aotearoa (2002); founding member of InternetNZ |
 | **Born** | 1956-07-12, Paddington, London |
 | **Wikipedia** | [Celia Wade-Brown](https://en.wikipedia.org/wiki/Celia_Wade-Brown) |
+
+<sub>Photo: Supplied by the Green Party; uploader will deal with VRT — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Celia_Wade-Brown_%28cropped%29.jpg)</sub>
 
 ## Current status
 

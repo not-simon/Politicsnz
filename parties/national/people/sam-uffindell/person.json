@@ -2,7 +2,7 @@
  "name": "Sam Uffindell",
  "slug": "sam-uffindell",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/239f8723af271e80be9882b559e82df46c938331-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -13,6 +13,31 @@
  "candidacy_2026": "Candidate for the Tauranga electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Sam_Uffindell",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2022",
+   "to": null
+  }
+ ],
+ "roles": [],
+ "parliaments": [
+  53,
+  54
+ ],
+ "first_elected": 2022,
+ "electorates": [
+  {
+   "electorate": "Tauranga",
+   "from": "2022-06-18",
+   "to": null,
+   "majority": "9,370"
+  }
+ ],
+ "wikipedia": "https://en.wikipedia.org/wiki/Sam_Uffindell",
+ "list_rank_2026_official": 50,
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

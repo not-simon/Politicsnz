@@ -2,7 +2,7 @@
  "name": "Carl Bates",
  "slug": "carl-bates",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/89cdb56c66ab908fdf97d0b5747ff2422e20a255-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -22,6 +22,31 @@
   "Twitter": "https://x.com/CarlBates"
  },
  "sources": [
+  "https://en.wikipedia.org/wiki/Carl_Bates",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2023",
+   "to": null
+  }
+ ],
+ "roles": [],
+ "parliaments": [
+  54
+ ],
+ "first_elected": 2023,
+ "electorates": [
+  {
+   "electorate": "Whanganui",
+   "from": "2023-10-14",
+   "to": null,
+   "majority": null
+  }
+ ],
+ "born": "1983-03-13",
+ "wikipedia": "https://en.wikipedia.org/wiki/Carl_Bates",
+ "list_rank_2026_official": 28,
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

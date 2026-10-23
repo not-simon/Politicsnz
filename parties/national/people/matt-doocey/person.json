@@ -2,7 +2,7 @@
  "name": "Matt Doocey",
  "slug": "matt-doocey",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/a0a266232dc2c92a1c3441014e6712ab069e85ad-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -13,6 +13,43 @@
  "candidacy_2026": "Candidate for the Waimakariri electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Matt_Doocey",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2014",
+   "to": null
+  }
+ ],
+ "roles": [
+  "Minister for Mental Health (2023–)",
+  "Minister for ACC (2023–2025)",
+  "Minister of Tourism and Hospitality (2023–2025)",
+  "Minister for Youth (2023–2025)",
+  "Senior Whip of the National Party (2020–2021)"
+ ],
+ "parliaments": [
+  51,
+  52,
+  53,
+  54
+ ],
+ "first_elected": 2014,
+ "electorates": [
+  {
+   "electorate": "Waimakariri",
+   "from": "2014-09-20",
+   "to": null,
+   "majority": null
+  }
+ ],
+ "wikipedia": "https://en.wikipedia.org/wiki/Matt_Doocey",
+ "list_rank_2026_official": 12,
+ "conscience_votes": {
+  "end_of_life_choice_2019_third_reading": "for",
+  "abortion_legislation_2020_third_reading": "for"
+ },
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

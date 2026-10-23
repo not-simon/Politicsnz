@@ -1,5 +1,7 @@
 # Russel Norman
 
+<img src="photo.jpg" width="200" align="right" alt="Russel Norman">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Green Party co-leader (2006–2015)<br>Member of the Intelligence and Security Committee (as co-leader) |
 | **Born** | 1967-06-02, Brisbane, Australia |
 | **Wikipedia** | [Russel Norman](https://en.wikipedia.org/wiki/Russel_Norman) |
+
+<sub>Photo: Metiria_Turei_and_Russel_Norman.png : contract photographer derivative work: Schwede66 — CC BY-SA 3.0 — [source](https://commons.wikimedia.org/wiki/File:Russel_Norman2.jpg)</sub>
 
 ## Current status
 

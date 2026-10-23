@@ -2,7 +2,7 @@
  "name": "David MacLeod",
  "slug": "david-macleod",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/fbd066da887ec2de1e5b54e18b3b2b91154f0387-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -13,6 +13,30 @@
  "candidacy_2026": "Candidate for the New Plymouth electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/David_MacLeod",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2023",
+   "to": null
+  }
+ ],
+ "roles": [],
+ "parliaments": [
+  54
+ ],
+ "first_elected": 2023,
+ "electorates": [
+  {
+   "electorate": "New Plymouth",
+   "from": "2023-10-14",
+   "to": null,
+   "majority": null
+  }
+ ],
+ "wikipedia": "https://en.wikipedia.org/wiki/David_MacLeod",
+ "list_rank_2026_official": 45,
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

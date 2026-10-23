@@ -1,5 +1,7 @@
 # Elizabeth Kerekere
 
+<img src="photo.jpg" width="200" align="right" alt="Elizabeth Kerekere">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Independent |
@@ -10,6 +12,8 @@
 | **Key roles** | Green deputy musterer (whip) (2020–2023)<br>Green spokesperson on health (until March 2022), arts, Māori development, rainbow communities, Whānau Ora<br>Founder, Tīwhanawhana Trust (2001) |
 | **Born** | 1965 or 1966, Gisborne |
 | **Wikipedia** | [Elizabeth Kerekere](https://en.wikipedia.org/wiki/Elizabeth_Kerekere) |
+
+<sub>Photo: GreenPartyNZ — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Elizabeth_Kerekere.jpg)</sub>
 
 ## Current status
 

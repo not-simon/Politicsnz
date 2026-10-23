@@ -69,6 +69,7 @@ def strip_html(s): return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', s or '')).s
 
 derived = json.load(open(os.path.join(RAW, 'derived.json')))
 wiki = {os.path.basename(f)[:-5]: json.load(open(f)) for f in glob.glob(os.path.join(RAW, 'wiki', '*.json'))}
+photos = json.load(open(os.path.join(RAW, 'photos.json'))) if os.path.exists(os.path.join(RAW, 'photos.json')) else {}
 official = json.load(open(os.path.join(RAW, 'ec', 'national-list-2026.json')))  # slug -> rank (Electoral Commission, 9 Oct 2026)
 slugs = set(derived) | {s for s in os.listdir(PEOPLE) if os.path.isdir(os.path.join(PEOPLE, s))} | \
         {os.path.basename(f)[:-3] for f in glob.glob(os.path.join(CONTENT, '*.md'))}
@@ -89,17 +90,29 @@ for slug in sorted(slugs):
     terms, electorates = [], []
     for o in dv.get('offices', []):
         c = o.get('constituency')
-        if c:
-            s, e = pdate(o['term_start']), pdate(o['term_end']) if o['term_end'] else None
-            terms.append((s, e))
-            if 'list' not in c.lower():
-                electorates.append({'electorate': re.sub(r'\s*\(.*?\)', '', c).strip(), 'from': s, 'to': e, 'majority': o.get('majority')})
+        if not c: continue
+        s0, e0 = pdate(o['term_start']), pdate(o['term_end']) if o['term_end'] else None
+        parts = [x.strip(' ,') for x in c.split(';') if x.strip(' ,')]
+        multi = len(parts) > 1
+        for part in parts:
+            m = re.match(r'(.+?)\s*\((\d{4})\s*[–-]\s*(\d{2,4}|present)?\s*\)', part)
+            if m:
+                EY = {v[:4]: v for v in PARL.values()}
+                nm, a, b = m.group(1).strip(' ,'), EY.get(m.group(2), m.group(2) + '-06-30'), m.group(3)
+                b = None if (not b or b == 'present') else ((a[:2] + b) if len(b) == 2 else b)
+                b = EY.get(b, b + '-06-30') if b else None
+                a = s0 if (s0 and s0[:4] == a[:4]) else a
+            else:
+                nm, a, b = re.sub(r'\s*\(.*?\)', '', part).strip(), s0, e0
+            terms.append((a, b))
+            if not re.search(r'\blist\b', nm, re.I) and nm.lower() not in ('national', 'national party'):
+                electorates.append({'electorate': nm, 'from': a, 'to': b, 'majority': o.get('majority') if not multi else None})
     roles = []
     for o in dv.get('offices', []):
         if o.get('office'):
             a, b = year(o['term_start']), year(o['term_end']) if o['term_end'] else ''
             roles.append(f"{clean_office(o['office'])} ({a}–{b})" if a else clean_office(o['office']))
-    parls = hand.get('parliaments') or parliaments_for(terms) or dv.get('parliaments_50_54', [])
+    parls = hand.get('parliaments') or sorted(set(parliaments_for(terms)) | set(dv.get('parliaments_50_54', [])))
     in54 = 54 in dv.get('parliaments_50_54', [])
     sitting = in54 and any(e is None for s, e in terms)
     rank = official.get(slug)
@@ -123,17 +136,8 @@ for slug in sorted(slugs):
     if dv.get('votes'): p['conscience_votes'] = dv['votes']
     # photo
     photo = os.path.join(d, 'photo.jpg')
-    ii = w.get('imageinfo')
-    if not os.path.exists(photo) and ii and ii.get('thumburl') and not hand.get('no_wiki_photo'):
-        try:
-            save_photo(ii['thumburl'], photo)
-            m = ii.get('extmetadata', {})
-            p.update({'photo': 'photo.jpg', 'photo_source': ii.get('descriptionurl'),
-                      'photo_credit': strip_html(m.get('Artist', {}).get('value')) + (' — ' + strip_html(m.get('Credit', {}).get('value')) if m.get('Credit') else ''),
-                      'photo_license': strip_html(m.get('LicenseShortName', {}).get('value')),
-                      'photo_license_url': m.get('LicenseUrl', {}).get('value')})
-        except Exception as e:
-            print('photo fail', slug, e, file=sys.stderr)
+    if slug in photos and os.path.exists(photo) and not str(p.get('photo_source', '')).startswith('https://cdn.sanity.io'):
+        p.update(photos[slug])
     if p.get('photo_source', '').startswith('https://cdn.sanity.io') and not p.get('photo_license'):
         p['photo_license'] = 'Not stated (candidate photo supplied to policy.nz; used for identification)'
     srcs = list(dict.fromkeys(hand.get('sources', []) + ([p['wikipedia']] if p.get('wikipedia') else []) + p.get('sources', [])))
@@ -146,7 +150,8 @@ for slug in sorted(slugs):
     if os.path.exists(photo): L += [f'<img src="photo.jpg" width="200" align="right" alt="{name}">', '']
     facts = [('Party', hand.get('party_label') or 'New Zealand National Party'), ('Status', STATUS_LABEL.get(status, status))]
     if p.get('status_detail'): facts.append(('Now (Oct 2026)', p['status_detail']))
-    if electorates: facts.append(('Electorate(s)', '; '.join(f"{e['electorate']} ({(e['from'] or '')[:4]}–{(e['to'] or '')[:4]})" for e in electorates)))
+    if hand.get('electorates_label'): facts.append(('Electorate(s)', hand['electorates_label']))
+    elif electorates: facts.append(('Electorate(s)', '; '.join(f"{e['electorate']} ({(e['from'] or '')[:4]}–{(e['to'] or '')[:4]})" for e in sorted(electorates, key=lambda e: e['from'] or ''))))
     if p.get('parliaments'): facts.append(('Parliaments', ', '.join(f'{n}th' if n not in (51, 52, 53) else {51: '51st', 52: '52nd', 53: '53rd'}[n] for n in p['parliaments'])))
     if p.get('first_elected'): facts.append(('First elected', str(p['first_elected'])))
     if p.get('born'): facts.append(('Born', p['born'] + (f" — {dv['birth_place']}" if dv.get('birth_place') else '')))
@@ -157,7 +162,7 @@ for slug in sorted(slugs):
     for sec in ('Current status', 'Biography', 'Political career', 'Record & notable actions', 'Controversies'):
         txt = section(body, sec)
         if sec == 'Political career' and p['roles'] and not hand.get('roles_in_text'):
-            txt += ('\n\n' if txt else '') + '**Offices held** (from the Wikipedia infobox; dates are years):\n\n' + '\n'.join(f'- {r}' for r in p['roles'])
+            txt += ('\n\n' if txt else '') + ('**Roles held:**\n\n' if hand.get('roles') else '**Offices held** (from the Wikipedia infobox; dates are years):\n\n') + '\n'.join(f'- {r}' for r in p['roles'])
         if sec == 'Political career' and electorates and any(e.get('majority') for e in electorates):
             pass
         if sec == 'Record & notable actions' and dv.get('votes'):

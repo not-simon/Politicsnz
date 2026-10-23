@@ -1,5 +1,7 @@
 # Kennedy Graham
 
+<img src="photo.jpg" width="200" align="right" alt="Kennedy Graham">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Green Party whip/musterer (2008–2011)<br>Green spokesperson on foreign affairs, climate change, defence, disarmament, justice<br>Founder and chair of GLOBE-NZ cross-party climate group (2015)<br>Deputy chair, Foreign Affairs, Defence and Trade Committee |
 | **Born** | 1946 |
 | **Wikipedia** | [Kennedy Graham](https://en.wikipedia.org/wiki/Kennedy_Graham) |
+
+<sub>Photo: Green Party of Aotearoa New Zealand — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Kennedy_Graham.jpg)</sub>
 
 ## Current status
 

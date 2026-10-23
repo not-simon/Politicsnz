@@ -1,5 +1,7 @@
 # David Clendon
 
+<img src="photo.jpg" width="200" align="right" alt="David Clendon">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Green Party co-convenor (2001–2004)<br>Green Party musterer (whip) (2014–2017); deputy musterer (2010–2011)<br>Green spokesperson on corrections (2009–2017), police, courts<br>Far North District Councillor, Bay of Islands–Whangaroa ward (2019–2022) |
 | **Born** | 1955-09-11 |
 | **Wikipedia** | [David Clendon](https://en.wikipedia.org/wiki/David_Clendon) |
+
+<sub>Photo: Green Party of Aotearoa New Zealand — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:David_Clendon_%28cropped%29.jpg)</sub>
 
 ## Current status
 

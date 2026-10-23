@@ -2,7 +2,7 @@
  "name": "Gerry Brownlee",
  "slug": "gerry-brownlee",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/5aa16d95ca7a5eb41eb32327c2f17c058ddd61d7-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -12,6 +12,48 @@
  "candidacy_2026": "List only candidate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Gerry_Brownlee",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "1996",
+   "to": null
+  }
+ ],
+ "roles": [
+  "Speaker of the New Zealand House of Representatives (2023–)",
+  "Minister of Foreign Affairs (2017–2017)"
+ ],
+ "parliaments": [
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54
+ ],
+ "first_elected": 1996,
+ "electorates": [
+  {
+   "electorate": "Ilam",
+   "from": "1996-10-12",
+   "to": "2020-10-17",
+   "majority": null
+  }
+ ],
+ "born": "1956-02-04",
+ "wikipedia": "https://en.wikipedia.org/wiki/Gerry_Brownlee",
+ "list_rank_2026_official": 9,
+ "conscience_votes": {
+  "marriage_equality_2013_third_reading": "against",
+  "end_of_life_choice_2019_third_reading": "against",
+  "abortion_legislation_2020_third_reading": "against"
+ },
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

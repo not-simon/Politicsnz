@@ -1,5 +1,7 @@
 # Eugenie Sage
 
+<img src="photo.jpg" width="200" align="right" alt="Eugenie Sage">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Minister of Conservation (2017–2020)<br>Minister for Land Information (2017–2020)<br>Associate Minister for the Environment (2017–2020)<br>Acting Minister for Women (2018)<br>Chair, Environment Committee (2020–2023)<br>Environment Canterbury councillor (2007–2010) |
 | **Born** | 1958, Auckland |
 | **Wikipedia** | [Eugenie Sage](https://en.wikipedia.org/wiki/Eugenie_Sage) |
+
+<sub>Photo: Access Matters — CC BY-SA 2.0 — [source](https://commons.wikimedia.org/wiki/File:Eugenie_Sage_2023_%28cropped%29.jpg)</sub>
 
 ## Current status
 

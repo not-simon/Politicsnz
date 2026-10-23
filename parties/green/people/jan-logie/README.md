@@ -1,5 +1,7 @@
 # Jan Logie
 
+<img src="photo.jpg" width="200" align="right" alt="Jan Logie">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Parliamentary Under-Secretary to the Minister of Justice (domestic and sexual violence) (2017–2020)<br>Chair, Social Services and Community Committee<br>Green Party musterer (whip)<br>Green spokesperson on women, immigration, human rights, rainbow issues, children, social development |
 | **Born** | 1969-10-26, Invercargill |
 | **Wikipedia** | [Jan Logie](https://en.wikipedia.org/wiki/Jan_Logie) |
+
+<sub>Photo: Tim Onnes — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Jan_Logie_in_2019.jpg)</sub>
 
 ## Current status
 

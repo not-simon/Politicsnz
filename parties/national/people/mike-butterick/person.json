@@ -2,7 +2,7 @@
  "name": "Mike Butterick",
  "slug": "mike-butterick",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/cc4be4347e302204da229fe0a0fab44f45b4ae9b-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -13,6 +13,32 @@
  "candidacy_2026": "Candidate for the Wairarapa electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Mike_Butterick",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2023",
+   "to": null
+  }
+ ],
+ "roles": [
+  "Minister for Land Information (2026–)"
+ ],
+ "parliaments": [
+  54
+ ],
+ "first_elected": 2023,
+ "electorates": [
+  {
+   "electorate": "Wairarapa",
+   "from": "2023-10-14",
+   "to": null,
+   "majority": null
+  }
+ ],
+ "wikipedia": "https://en.wikipedia.org/wiki/Mike_Butterick",
+ "list_rank_2026_official": 20,
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

@@ -377,7 +377,7 @@ V.home = async () => {
         <p class="tiny muted" style="text-align:center;margin-top:4px">Parliament as it stands today. <button class="btn ghost sm" data-go="parliament">Explore every Parliament since 2011</button></p></div></div>
 
     <div class="starters">
-      <button class="starter" data-go="match"><span class="ic sun">${ic('match')}</span><h3>Find your match</h3><p class="muted small">Answer ${(G().quiz && G().quiz.statements || []).length || 'about 40'} quick questions and see which parties agree with you, and on what.</p><span class="go">Start the quiz →</span></button>
+      <button class="starter" data-go="match"><span class="ic sun">${ic('match')}</span><h3>Find your match</h3><p class="muted small">Answer ${(G().quiz && G().quiz.statements || []).length || 'about 40'} quick questions, written without naming any party, and see who agrees with you and on what.</p><span class="go">Start the quiz →</span></button>
       <button class="starter" data-go="issues"><span class="ic">${ic('issues')}</span><h3>Compare on the issues</h3><p class="muted small">Cost of living, housing, health and more, with every party's position side by side.</p><span class="go">See the issues →</span></button>
       <button class="starter" data-go="electorate"><span class="ic">${ic('parties')}</span><h3>Meet your local candidates</h3><p class="muted small">Pick your electorate to see who's standing, with photos, in their own words.</p><span class="go">Find your electorate →</span></button></div>
 
@@ -580,7 +580,7 @@ V.match = () => {
         <div class="scale">${SCALE.map(([v, l]) => `<button data-v="${v}" aria-pressed="${a === v}">${l}</button>`).join('')}</div>
         <div class="row" style="justify-content:space-between"><label class="row small" style="gap:6px"><input type="checkbox" id="qimp" ${st.weights[q.id] === 2 ? 'checked' : ''}> This matters a lot to me</label>
         <div class="row"><button class="btn sm" id="qback" ${i === 0 ? 'disabled' : ''}>Back</button><button class="btn sm" id="qskip">Skip</button></div></div></div>
-      <p class="tiny muted" style="text-align:center">Your answers stay on this device. <button class="btn ghost sm" data-page="guide/quiz-method.md">How matching works</button></p></div></section>`;
+      <p class="tiny muted" style="text-align:center">Statements are written without naming any party, so you can answer on the substance. Your answers stay on this device. <button class="btn ghost sm" data-page="guide/quiz-method.md">How matching works</button></p></div></section>`;
     $('.scale').onclick = e => { const b = e.target.closest('[data-v]'); if (!b) return; st.answers[q.id] = +b.dataset.v; st.weights[q.id] = $('#qimp').checked ? 2 : 1; i++; st.i = i; saveQuiz(st); render() };
     $('#qimp').onchange = () => { st.weights[q.id] = $('#qimp').checked ? 2 : 1; saveQuiz(st) };
     $('#qskip').onclick = () => { delete st.answers[q.id]; i++; st.i = i; saveQuiz(st); render() };

@@ -1,5 +1,7 @@
 # Jami-Lee Ross
 
+<img src="photo.jpg" width="200" align="right" alt="Jami-Lee Ross">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Advance New Zealand |
@@ -11,6 +13,8 @@
 | **Key roles** | Chief Government Whip (2017)<br>Deputy/Junior Government Whip (2014–2017)<br>National spokesperson for transport and infrastructure (2018)<br>Leader of Advance NZ (2020–2021)<br>Manukau City Councillor (2004–2010); Auckland Councillor (2010–2011) |
 | **Born** | 1985 |
 | **Wikipedia** | [Jami-Lee Ross](https://en.wikipedia.org/wiki/Jami-Lee_Ross) |
+
+<sub>Photo: Jami-Lee Ross — CC BY-SA 3.0 — [source](https://commons.wikimedia.org/wiki/File:Jami-Lee_Ross_Portrait.jpg)</sub>
 
 ## Current status
 

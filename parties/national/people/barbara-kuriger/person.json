@@ -2,7 +2,7 @@
  "name": "Barbara Kuriger",
  "slug": "barbara-kuriger",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/8ceab260d58b4574c21ff52d04f21d144c7a72b0-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -13,6 +13,39 @@
  "candidacy_2026": "Candidate for the Taranaki-King Country electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Barbara_Kuriger",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2014",
+   "to": null
+  }
+ ],
+ "roles": [
+  "Senior Whip of the National Party (2018–2020)"
+ ],
+ "parliaments": [
+  51,
+  52,
+  53,
+  54
+ ],
+ "first_elected": 2014,
+ "electorates": [
+  {
+   "electorate": "Taranaki-King Country",
+   "from": "2014-09-20",
+   "to": null,
+   "majority": null
+  }
+ ],
+ "wikipedia": "https://en.wikipedia.org/wiki/Barbara_Kuriger",
+ "list_rank_2026_official": 42,
+ "conscience_votes": {
+  "end_of_life_choice_2019_third_reading": "for",
+  "abortion_legislation_2020_third_reading": "for"
+ },
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

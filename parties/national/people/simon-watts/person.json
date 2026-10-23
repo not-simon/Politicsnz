@@ -2,7 +2,7 @@
  "name": "Simon Watts",
  "slug": "simon-watts",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/2a78ad4c35017bef8a6d520e79591c2e61ada2fa-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -13,6 +13,37 @@
  "candidacy_2026": "Candidate for the North Shore electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Simon_Watts",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2020",
+   "to": null
+  }
+ ],
+ "roles": [
+  "Minister of Revenue (2023–)",
+  "Minister of Climate Change (2023–)",
+  "Minister for Energy (2025–2026)",
+  "Minister of Local Government (2025–)",
+  "Minister for Auckland (2026–)"
+ ],
+ "parliaments": [
+  53,
+  54
+ ],
+ "first_elected": 2020,
+ "electorates": [
+  {
+   "electorate": "North Shore",
+   "from": "2020-10-17",
+   "to": null,
+   "majority": null
+  }
+ ],
+ "wikipedia": "https://en.wikipedia.org/wiki/Simon_Watts",
+ "list_rank_2026_official": 13,
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

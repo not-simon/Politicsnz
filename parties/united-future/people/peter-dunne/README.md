@@ -1,5 +1,7 @@
 # Peter Dunne
 
+<img src="photo.jpg" width="200" align="right" alt="Peter Dunne">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | United Future |
@@ -11,6 +13,8 @@
 | **Key roles** | Leader of United Future (2000–2017)<br>Minister of Internal Affairs (1996, 2014–2017)<br>Minister of Revenue (1996, 2005–2013)<br>Associate Minister of Health (drugs, mental health) and of Conservation (2008–2017)<br>Minister of Regional Development (1990) |
 | **Born** | 1954-03-17, Christchurch |
 | **Wikipedia** | [Peter Dunne](https://en.wikipedia.org/wiki/Peter_Dunne) |
+
+<sub>Photo: New Zealand Government, Office of the Governor-General — CC BY 4.0 — [source](https://commons.wikimedia.org/wiki/File:Peter_Dunne_2023_%28cropped%29.jpg)</sub>
 
 ## Current status
 

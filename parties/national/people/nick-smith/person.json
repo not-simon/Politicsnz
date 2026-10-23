@@ -1,0 +1,59 @@
+{
+ "name": "Nick Smith",
+ "slug": "nick-smith",
+ "party": "national",
+ "status": "former-mp",
+ "party_history": [
+  {
+   "party": "national",
+   "from": "1990",
+   "to": null
+  }
+ ],
+ "roles": [
+  "Deputy Leader of the National Party (2003–2003)"
+ ],
+ "parliaments": [
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53
+ ],
+ "first_elected": 1990,
+ "electorates": [
+  {
+   "electorate": "Nelson",
+   "from": "1996-10-12",
+   "to": "2020-10-17",
+   "majority": null
+  },
+  {
+   "electorate": "Tasman",
+   "from": "1990-10-27",
+   "to": "1996-10-12",
+   "majority": null
+  }
+ ],
+ "born": "1964-12-24",
+ "wikipedia": "https://en.wikipedia.org/wiki/Nick_Smith_(New_Zealand_politician)",
+ "conscience_votes": {
+  "marriage_equality_2013_third_reading": "against",
+  "end_of_life_choice_2019_third_reading": "against",
+  "abortion_legislation_2020_third_reading": "against"
+ },
+ "photo": "photo.jpg",
+ "photo_source": "https://commons.wikimedia.org/wiki/File:Nick_Smith_at_Lincoln_University,_2016.jpg",
+ "photo_credit": "David Hollander — https://livingheritage.lincoln.ac.nz/nodes/view/11961",
+ "photo_license": "CC BY-SA 3.0 nz",
+ "photo_license_url": "https://creativecommons.org/licenses/by-sa/3.0/nz/deed.en",
+ "sources": [
+  "https://en.wikipedia.org/wiki/Nick_Smith_(New_Zealand_politician)"
+ ]
+}

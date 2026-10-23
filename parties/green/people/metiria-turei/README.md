@@ -1,5 +1,7 @@
 # Metiria Turei
 
+<img src="photo.jpg" width="200" align="right" alt="Metiria Turei">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Green Party co-leader (2009–2017)<br>Green spokesperson on Inequality, Justice, Building and Housing |
 | **Born** | 1970-02-13, Palmerston North |
 | **Wikipedia** | [Metiria Turei](https://en.wikipedia.org/wiki/Metiria_Turei) |
+
+<sub>Photo: Metiria Turei — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Metiria_Stanton_Turei.jpg)</sub>
 
 ## Current status
 

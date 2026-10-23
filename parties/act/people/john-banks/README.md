@@ -1,5 +1,7 @@
 # John Banks
 
+<img src="photo.jpg" width="200" align="right" alt="John Banks">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | ACT New Zealand |
@@ -11,6 +13,8 @@
 | **Key roles** | Leader of ACT (2012–2014)<br>Minister for Regulatory Reform and Minister for Small Business (2011–2013)<br>Associate Minister of Commerce and of Education (2011–2013)<br>Minister of Police, Tourism and Sport (1990–1994/96)<br>Mayor of Auckland City (2001–2004, 2007–2010) |
 | **Born** | 1946-12-02, Wellington |
 | **Wikipedia** | [John Banks (New Zealand politician)](https://en.wikipedia.org/wiki/John_Banks_(New_Zealand_politician)) |
+
+<sub>Photo: Governor-General of New Zealand — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:John_Banks.jpg)</sub>
 
 ## Current status
 

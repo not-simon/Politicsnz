@@ -2,6 +2,7 @@
  "version": "2026-10",
  "generated": "2026-10-23",
  "scale": "-2 = strongly disagree, -1 = disagree, 0 = neutral/mixed, +1 = agree, +2 = strongly agree; null = the party has no public position we could find (never guessed). Positions are the party's, relative to the statement text.",
+ "blind": "Statement text and explainers are written without party names or branded policy names (enforced by quiz_build.py), so voters answer on the substance. Party positions and evidence are shown only after answering.",
  "scoring": {
   "method": "For each statement both the user and the party answered: agreement = 1 - |user - party| / 4. Weighted average over those statements using user importance weights (default 1; suggest 0.5/1/2). Report coverage = statements the party has a position on, out of statements the user answered; flag matches with coverage below 10 statements, and blend toward 0.5 (neutral) by adjusted = (sum_w*agree + k*0.5) / (sum_w + k) with k = 3 so thin records are not over-rewarded.",
   "see": "guide/quiz-method.md"
@@ -80,8 +81,8 @@
   {
    "id": "q01",
    "issue": "tax",
-   "text": "New Zealand should introduce a capital gains tax (for example on investment and commercial property).",
-   "explainer": "New Zealand has no general capital gains tax; Labour is campaigning on a 28% tax on gains from investment and commercial property (family homes, farms, shares and KiwiSaver excluded).",
+   "text": "Profits from selling investment property and commercial property should be taxed, with the family home exempt.",
+   "explainer": "New Zealand has no general tax on capital gains. A tax like this would apply when an investor or business sells property for more than they paid, raising money for public services; opponents say it discourages investment and is complex to run.",
    "positions": {
     "national": {
      "position": -2,
@@ -126,8 +127,8 @@
   {
    "id": "q02",
    "issue": "tax",
-   "text": "There should be an annual wealth tax on people with very large fortunes (for example net wealth over $2–10 million).",
-   "explainer": "Greens propose 2.5% on net wealth over $10m; Te Pāti Māori a tiered tax from $2m; Labour has ruled a wealth tax out.",
+   "text": "People with very large fortunes (for example net wealth above several million dollars) should pay an annual wealth tax.",
+   "explainer": "A wealth tax charges a small percentage each year on the total value of what someone owns (property, shares, businesses) above a high threshold. Supporters say it funds services and reduces inequality; opponents say it is hard to value assets and may push wealthy people and capital offshore.",
    "positions": {
     "national": {
      "position": -2,
@@ -181,8 +182,8 @@
   {
    "id": "q03",
    "issue": "cost-of-living",
-   "text": "GST should be removed from food such as fresh fruit and vegetables.",
-   "explainer": "GST is charged at 15% on almost all food. Removing it from some food was debated in 2023; in 2026 Te Pāti Māori offers a \"No GST on Kai\" credit instead.",
+   "text": "GST should be taken off food such as fresh fruit and vegetables.",
+   "explainer": "GST is charged at 15% on almost all food. Removing it would lower prices at the checkout if retailers pass the saving on, but would cost the government around a billion dollars a year and make the tax system more complicated.",
    "positions": {
     "national": null,
     "labour": null,
@@ -219,8 +220,8 @@
   {
    "id": "q04",
    "issue": "tax",
-   "text": "The first slice of everyone's income (e.g. the first $10,000 or more) should be tax-free.",
-   "explainer": "NZ taxes income from the first dollar (10.5% up to $15,600). Several parties propose a tax-free threshold paid for by other taxes.",
+   "text": "The first slice of everyone's income (for example the first $10,000 or more) should be tax-free.",
+   "explainer": "Income is currently taxed from the first dollar. A tax-free threshold gives every earner the same dollar saving, which is worth more to low earners in percentage terms; it has to be paid for by other taxes or by cutting spending.",
    "positions": {
     "national": null,
     "labour": null,
@@ -266,8 +267,8 @@
   {
    "id": "q05",
    "issue": "cost-of-living",
-   "text": "The government should force the big supermarket chains to be broken up or restructured to increase competition.",
-   "explainer": "Two groups (Foodstuffs and Woolworths) dominate groceries. Proposals range from splitting Foodstuffs to a state-owned supermarket, versus easing entry for new competitors.",
+   "text": "The government should force the two big supermarket groups to be broken up or restructured so more chains compete.",
+   "explainer": "Two groups own almost all supermarkets. Options range from making them sell off stores to a new competitor, through to a state-owned chain, versus simply making it easier for new entrants to set up. Breaking them up may lower prices but is legally and practically hard.",
    "positions": {
     "national": {
      "position": 1,
@@ -322,7 +323,7 @@
    "id": "q06",
    "issue": "work",
    "text": "The minimum wage should rise every year by at least the rate of inflation.",
-   "explainer": "Minimum-wage rises since 2023 have been below inflation. ACT proposes a three-year freeze.",
+   "explainer": "Automatic increases protect the lowest-paid from rising prices. Smaller or frozen increases make it cheaper to employ people and, some argue, protect jobs for young and low-skilled workers.",
    "positions": {
     "national": null,
     "labour": {
@@ -381,8 +382,8 @@
   {
    "id": "q07",
    "issue": "work",
-   "text": "Fair Pay Agreements (industry-wide minimum pay and conditions negotiated by unions and employers) should be brought back.",
-   "explainer": "Labour introduced Fair Pay Agreements in 2022; the National-led government repealed them in December 2023.",
+   "text": "Pay and conditions should be able to be set for a whole industry at once (for example all cleaners or all supermarket workers) through compulsory bargaining between unions and employers.",
+   "explainer": "Today pay is mostly set workplace by workplace or individually. Industry-wide agreements would set a floor for everyone in that job, lifting pay in low-wage sectors; employers say they remove flexibility and push up costs.",
    "positions": {
     "national": {
      "position": -2,
@@ -443,8 +444,8 @@
   {
    "id": "q08",
    "issue": "housing",
-   "text": "Annual rent increases should be capped by law.",
-   "explainer": "There is currently no cap on how much rent can rise (only one increase per 12 months). The Greens propose a 2% annual cap.",
+   "text": "There should be a legal limit on how much a landlord can raise the rent each year.",
+   "explainer": "Rent can currently rise by any amount, but only once every 12 months. A cap (for example tied to inflation) protects existing tenants from large jumps; critics say it discourages new rentals and maintenance.",
    "positions": {
     "national": {
      "position": -1,
@@ -489,8 +490,8 @@
   {
    "id": "q09",
    "issue": "housing",
-   "text": "The government should build a lot more state and public housing.",
-   "explainer": "Kāinga Ora's building programme was scaled back after 2023; the government has focused on community housing providers and private supply.",
+   "text": "The government should build a lot more state and public housing itself.",
+   "explainer": "State houses are owned by the government and rented at income-related rents. Building many more costs billions up front but houses people on the waiting list directly; the alternative is relying on community housing providers and private developers.",
    "positions": {
     "national": {
      "position": -1,
@@ -546,7 +547,7 @@
    "id": "q10",
    "issue": "housing",
    "text": "Councils should have to allow more and denser housing, such as townhouses and apartments, in our cities.",
-   "explainer": "Zoning rules decide how many homes can be built. Recent reforms (MDRS, \"Going for Housing Growth\") push councils to allow more density.",
+   "explainer": "Zoning rules decide how many homes can be built and how tall. Requiring more density tends to lower prices over time and reduce sprawl; some residents object to the change in their neighbourhoods and the strain on pipes and roads.",
    "positions": {
     "national": {
      "position": 2,
@@ -588,8 +589,8 @@
   {
    "id": "q11",
    "issue": "health",
-   "text": "Some GP visits each year should be free for everyone.",
-   "explainer": "Most adults pay $20–$80+ per GP visit. Labour proposes a \"Medicard\" with three free visits a year, funded by its capital gains tax.",
+   "text": "Everyone should get some free GP visits each year, paid for by the government.",
+   "explainer": "Most adults currently pay $20 to $80 or more per GP visit. Free visits would remove a cost barrier to seeing a doctor but would need hundreds of millions of dollars a year and more GPs to meet demand.",
    "positions": {
     "national": {
      "position": -1,
@@ -631,8 +632,8 @@
   {
    "id": "q12",
    "issue": "health",
-   "text": "The $5 prescription charge should be scrapped.",
-   "explainer": "The previous government removed the $5 prescription co-payment in 2023; the current government reinstated it for most adults in 2024.",
+   "text": "The $5 charge for each prescription should be scrapped for everyone.",
+   "explainer": "Most adults pay $5 per prescription item, with exemptions for children, Community Services Card holders and over-65s. Removing it for everyone costs roughly $150 million a year; supporters say it stops people skipping medicines, opponents say the money is better targeted.",
    "positions": {
     "national": {
      "position": -1,
@@ -666,7 +667,7 @@
    "id": "q13",
    "issue": "education",
    "text": "Free school lunches should be expanded and made more generous, even if it costs more.",
-   "explainer": "Ka Ora, Ka Ako school lunches were kept but cut to roughly $3 a meal in 2024 under a model designed by ACT's David Seymour.",
+   "explainer": "Schools in poorer areas get a free lunch programme funded at roughly $3 a meal. Expanding it to more schools or spending more per meal costs more each year; supporters point to attendance and learning, opponents to cost and food waste.",
    "positions": {
     "national": null,
     "labour": {
@@ -705,8 +706,8 @@
   {
    "id": "q14",
    "issue": "education",
-   "text": "Charter (partnership) schools should be allowed to continue.",
-   "explainer": "Charter schools are state-funded but privately run. They were reintroduced in 2025 by the National-ACT-NZ First government.",
+   "text": "Privately run but publicly funded schools (charter schools) should continue to be allowed alongside state schools.",
+   "explainer": "Charter schools receive government funding per student but are run by private operators with more freedom over curriculum, hours and teacher pay, and less direct oversight. Supporters say they give choice to families poorly served by state schools; opponents say they divert money and lack accountability.",
    "positions": {
     "national": null,
     "labour": {
@@ -743,7 +744,7 @@
    "id": "q15",
    "issue": "education",
    "text": "University and polytechnic study should be fees-free.",
-   "explainer": "Fees-free first-year study (2018) was replaced in 2025 by a smaller final-year scheme.",
+   "explainer": "Students currently borrow fees through the student loan scheme, with limited fees-free support. Making study free costs the government more each year and mostly benefits those who go on to tertiary study; supporters say it widens access and reduces debt.",
    "positions": {
     "national": {
      "position": -1,
@@ -785,8 +786,8 @@
   {
    "id": "q16",
    "issue": "crime-justice",
-   "text": "Repeat serious offenders should face mandatory longer sentences under a \"three strikes\" law.",
-   "explainer": "Labour repealed three strikes in 2022; the current government reinstated a version in December 2024.",
+   "text": "Anyone convicted of a third serious violent or sexual offence should get a mandatory longer sentence, with little room for the judge to decide otherwise.",
+   "explainer": "Mandatory sentencing laws set minimum penalties for repeat offenders. Supporters say they keep dangerous people off the streets and deter crime; critics say they fill prisons, remove judges' discretion and can lead to harsh results in unusual cases.",
    "positions": {
     "national": {
      "position": 2,
@@ -843,8 +844,8 @@
   {
    "id": "q17",
    "issue": "crime-justice",
-   "text": "We should send fewer people to prison and put more into rehabilitation and community alternatives.",
-   "explainer": "NZ has one of the higher imprisonment rates in the OECD, and the prison population has been rising.",
+   "text": "We should send fewer people to prison and put more into rehabilitation and community-based sentences.",
+   "explainer": "New Zealand imprisons more people per head than most comparable countries. Community sentences and rehabilitation cost less per person and may reduce reoffending; opponents say they are too lenient and put victims at risk.",
    "positions": {
     "national": {
      "position": -1,
@@ -906,7 +907,7 @@
    "id": "q18",
    "issue": "climate",
    "text": "Farmers should pay for their greenhouse gas emissions, for example by bringing agriculture into the Emissions Trading Scheme.",
-   "explainer": "Agriculture produces about half of NZ's emissions but is not priced. The government dropped plans to price farm emissions before 2030.",
+   "explainer": "Agriculture produces about half of New Zealand's emissions but, unlike other sectors, does not pay for them. Pricing them encourages lower-emission farming and helps meet climate targets; farmers say it would cut production and send farming offshore.",
    "positions": {
     "national": {
      "position": -2,
@@ -974,8 +975,8 @@
   {
    "id": "q19",
    "issue": "climate",
-   "text": "New Zealand should keep its legal net-zero 2050 target and stay in the Paris Agreement.",
-   "explainer": "The Zero Carbon Act (2019, passed almost unanimously) sets a net-zero target for 2050; NZ is a party to the 2015 Paris Agreement.",
+   "text": "New Zealand should keep its legal target of net-zero emissions by 2050 and stay in the Paris climate agreement.",
+   "explainer": "The 2050 target is written into law and the Paris agreement commits the country to international emissions pledges. Keeping them means ongoing costs and regulation; leaving or weakening them risks trade and reputational consequences.",
    "positions": {
     "national": null,
     "labour": {
@@ -1038,8 +1039,8 @@
   {
    "id": "q20",
    "issue": "environment",
-   "text": "Ministers should be able to fast-track big infrastructure, mining and development projects past the normal consent process.",
-   "explainer": "The Fast-track Approvals Act 2024 lets listed projects skip the usual Resource Management Act process, with expert panels making the decisions.",
+   "text": "Ministers should be able to approve big infrastructure, mining and development projects through a faster process that bypasses the normal environmental consent system.",
+   "explainer": "Normally projects need resource consents, with public input and the right to object. A fast-track lets selected projects be decided by expert panels or ministers in months rather than years; supporters say it gets things built, opponents say it cuts out communities and environmental checks.",
    "positions": {
     "national": {
      "position": 2,
@@ -1098,7 +1099,7 @@
    "id": "q21",
    "issue": "environment",
    "text": "Seabed mining should be banned in New Zealand waters.",
-   "explainer": "Trans-Tasman Resources' South Taranaki iron-sands project has applied through fast-track; several parties want a permanent ban.",
+   "explainer": "Companies want to mine iron sands and other minerals from the seafloor. A ban protects marine ecosystems and fisheries but forgoes export income and jobs in the regions involved.",
    "positions": {
     "national": {
      "position": -2,
@@ -1156,8 +1157,8 @@
   {
    "id": "q22",
    "issue": "energy",
-   "text": "The ban on new offshore oil and gas exploration should be brought back.",
-   "explainer": "Labour banned new offshore oil and gas permits in 2018; the Crown Minerals Amendment Act 2025 reversed the ban.",
+   "text": "New offshore oil and gas exploration should be banned again.",
+   "explainer": "A ban on new offshore exploration permits was in place for several years and has since been lifted. Reinstating it supports the move away from fossil fuels; opponents say it worsens gas shortages and pushes up power prices.",
    "positions": {
     "national": {
      "position": -2,
@@ -1221,8 +1222,8 @@
   {
    "id": "q23",
    "issue": "energy",
-   "text": "The government should take a bigger direct role in electricity, such as a new state-owned power company or splitting up the big power companies.",
-   "explainer": "Four \"gentailers\" (Meridian, Mercury, Genesis, Contact) both generate and retail most power. A 2025 government review rejected structural separation.",
+   "text": "The government should take a bigger direct role in electricity, such as setting up a new state-owned power company or splitting the big power companies into separate generators and retailers.",
+   "explainer": "Four large companies both generate and sell most of New Zealand's electricity. Breaking them up or adding a state competitor aims to lower prices; opponents say it would deter the investment needed for new generation.",
    "positions": {
     "national": {
      "position": -1,
@@ -1274,8 +1275,8 @@
   {
    "id": "q24",
    "issue": "te-tiriti",
-   "text": "Parliament should define the principles of the Treaty of Waitangi in law, as ACT's Treaty Principles Bill proposed.",
-   "explainer": "The Treaty Principles Bill was voted down 112–11 at its second reading in April 2025; only ACT voted for it.",
+   "text": "Parliament should write a single legal definition of the principles of the Treaty of Waitangi, rather than leaving the courts and the Waitangi Tribunal to interpret them case by case.",
+   "explainer": "The Treaty's \"principles\" are referred to in many laws but defined by courts and the Tribunal over time. Fixing them in statute would give Parliament the final say and could narrow Māori rights as currently understood; opponents say it rewrites a founding agreement without Māori consent.",
    "positions": {
     "national": {
      "position": -2,
@@ -1324,7 +1325,7 @@
    "id": "q25",
    "issue": "te-tiriti",
    "text": "The Waitangi Tribunal should be abolished or replaced once historical claims are settled.",
-   "explainer": "The Waitangi Tribunal (1975) investigates Crown breaches of the Treaty and makes mostly non-binding recommendations.",
+   "explainer": "The Tribunal investigates Crown breaches of the Treaty and makes mostly non-binding recommendations on both historical and current issues. Winding it up would end an independent check on government; supporters say its job is done once settlements finish.",
    "positions": {
     "national": null,
     "labour": null,
@@ -1373,7 +1374,7 @@
    "id": "q26",
    "issue": "te-tiriti",
    "text": "The Māori electorates should be abolished, or their future put to a referendum.",
-   "explainer": "Seven Māori electorates are elected by voters on the Māori roll. Abolishing or entrenching them is a recurring debate.",
+   "explainer": "Seven seats in Parliament are elected by voters on the Māori roll, guaranteeing Māori representation. Abolishing them, or asking all voters to decide, is argued as treating everyone the same; opponents say only Māori should decide the future of their seats.",
    "positions": {
     "national": null,
     "labour": null,
@@ -1407,8 +1408,8 @@
   {
    "id": "q27",
    "issue": "te-tiriti",
-   "text": "Government services should be allocated by need alone, without Māori- or ethnicity-specific programmes.",
-   "explainer": "Since 2023 the government has removed some ethnicity-based targeting (e.g. disestablishing Te Aka Whai Ora, the Māori Health Authority).",
+   "text": "Public services such as health should be targeted by need alone, with no programmes aimed specifically at Māori or other ethnic groups.",
+   "explainer": "Māori have worse outcomes on many measures. One view is that Māori-led or ethnicity-targeted services close those gaps faster; the other is that help should go to whoever needs it most regardless of ethnicity.",
    "positions": {
     "national": null,
     "labour": {
@@ -1477,8 +1478,8 @@
   {
    "id": "q28",
    "issue": "democracy",
-   "text": "The Regulatory Standards Act 2025 should be repealed.",
-   "explainer": "ACT's Regulatory Standards Act sets \"principles of responsible regulation\" that new laws are checked against. It passed 68–55 in November 2025.",
+   "text": "A recent law that requires every new piece of legislation to be checked against a fixed list of \"good regulation\" principles, including protecting private property rights, should be scrapped.",
+   "explainer": "The law sets up a board to report on whether new laws meet principles such as the rule of law, protection of property and compensation when rules reduce property values. Supporters say it stops bad regulation; opponents say it privileges property owners over the environment and the Treaty and lets an unelected board second-guess Parliament.",
    "positions": {
     "national": {
      "position": -2,
@@ -1534,8 +1535,8 @@
   {
    "id": "q29",
    "issue": "democracy",
-   "text": "Political donations should be capped, with only New Zealand voters allowed to donate.",
-   "explainer": "There is no cap on how much a person can donate to a party; companies, trusts and unions can donate.",
+   "text": "Political donations should be capped, and only individual New Zealand voters should be allowed to donate.",
+   "explainer": "There is currently no limit on how much a person can give to a party, and companies, trusts and unions can donate. Caps and a voters-only rule reduce the influence of wealthy donors; opponents say they restrict free participation and favour parties with many small donors.",
    "positions": {
     "national": null,
     "labour": {
@@ -1585,7 +1586,7 @@
    "id": "q30",
    "issue": "local-government",
    "text": "Central government should cap how much councils can raise rates each year.",
-   "explainer": "National proposes keeping annual rates rises within 2–4%; councils argue they need more funding tools for infrastructure.",
+   "explainer": "Rates are the main income for local councils and have been rising well above inflation. A cap protects ratepayers but leaves councils with less money for water pipes, roads and other infrastructure unless they are given other funding tools.",
    "positions": {
     "national": {
      "position": 2,
@@ -1629,7 +1630,7 @@
    "id": "q31",
    "issue": "immigration",
    "text": "Overall immigration to New Zealand should be reduced.",
-   "explainer": "Net migration hit records in 2023 and then fell sharply as more New Zealanders left for Australia.",
+   "explainer": "Migration adds workers, students and skills but also pressure on housing and infrastructure. Lower immigration eases that pressure; employers say it worsens labour shortages and slows growth.",
    "positions": {
     "national": null,
     "labour": null,
@@ -1672,7 +1673,7 @@
    "id": "q32",
    "issue": "immigration",
    "text": "New residents should have to wait longer (five years or more) before they can get most benefits.",
-   "explainer": "Most benefits currently need two years' residence. National proposes five; NZ First ten.",
+   "explainer": "Most benefits currently require two years' residence. A longer wait saves money and is argued to attract migrants who will not need support; critics say it leaves families with no safety net if they lose work.",
    "positions": {
     "national": {
      "position": 2,
@@ -1711,8 +1712,8 @@
   {
    "id": "q33",
    "issue": "superannuation",
-   "text": "The age of eligibility for NZ Superannuation should stay at 65.",
-   "explainer": "NZ Super is paid to everyone 65+ regardless of income. ACT proposes 67 by 2035; National supports raising it eventually but its 2026 policy is cross-party talks.",
+   "text": "The age for receiving NZ Superannuation should stay at 65.",
+   "explainer": "Super is paid to everyone from 65 regardless of income or wealth. Keeping 65 is the status quo; raising it (for example gradually to 67) saves billions as the population ages but is hardest on people in physical jobs and those with shorter life expectancy.",
    "positions": {
     "national": {
      "position": -1,
@@ -1769,8 +1770,8 @@
   {
    "id": "q34",
    "issue": "welfare",
-   "text": "Main benefits should be substantially increased.",
-   "explainer": "Benefits were indexed to wages from 2023, then changed back to inflation indexation by the current government.",
+   "text": "Main benefits (such as Jobseeker and Sole Parent Support) should be substantially increased.",
+   "explainer": "Benefit rates are adjusted each year and many recipients are below the poverty line. Larger increases reduce hardship directly but cost more and, some argue, reduce the incentive to work.",
    "positions": {
     "national": {
      "position": -1,
@@ -1830,8 +1831,8 @@
   {
    "id": "q35",
    "issue": "welfare",
-   "text": "Beneficiaries should face tougher obligations and sanctions, such as drug tests or payment cuts.",
-   "explainer": "The government introduced a traffic-light sanctions system in 2025. National proposes drug testing and cuts after two years on a benefit.",
+   "text": "People on benefits should face tougher obligations and sanctions, such as drug testing or payment cuts if they do not meet requirements.",
+   "explainer": "Sanctions reduce or suspend payments when obligations such as job-seeking are not met. Supporters say they move people into work; opponents say they punish children and people with health problems and do little to create jobs.",
    "positions": {
     "national": {
      "position": 2,
@@ -1894,8 +1895,8 @@
   {
    "id": "q36",
    "issue": "transport",
-   "text": "Transport money should go mainly to public transport and rail rather than new highways.",
-   "explainer": "The government's priority is \"Roads of National Significance\"; others favour rapid transit, rail and cheaper fares.",
+   "text": "Transport money should go mainly to public transport, cycling and rail rather than new highways.",
+   "explainer": "The national transport fund is limited, so spending on big new highways competes with buses, trains and cycleways. Roads suit freight and regions; public transport suits cities and reduces emissions and congestion.",
    "positions": {
     "national": {
      "position": -2,
@@ -1953,8 +1954,8 @@
   {
    "id": "q37",
    "issue": "agriculture",
-   "text": "Rules limiting farm pollution of rivers (such as nitrogen limits) should be strengthened rather than loosened.",
-   "explainer": "The government has loosened some freshwater rules (e.g. Te Mana o te Wai, intensification limits) and is rewriting the RMA.",
+   "text": "Rules limiting farm pollution of rivers (such as limits on nitrogen fertiliser and stock numbers) should be strengthened rather than loosened.",
+   "explainer": "Many rivers and lakes fail swimming or ecological standards, largely from farm run-off. Tighter rules improve water quality over time but raise costs for farmers; looser rules do the reverse.",
    "positions": {
     "national": {
      "position": -2,
@@ -2013,8 +2014,8 @@
   {
    "id": "q38",
    "issue": "agriculture",
-   "text": "Rules on gene technology (genetic modification) should be relaxed.",
-   "explainer": "The Gene Technology Bill would end the effective ban on GM outside the lab; it stalled in 2025–26 after NZ First withheld support.",
+   "text": "Rules on gene technology (genetic modification) should be relaxed so modified crops and organisms can be used outside the laboratory.",
+   "explainer": "Gene editing is currently effectively confined to the lab. Relaxing the rules could bring faster-growing crops, pest control and medical uses; opponents worry about the environment and about the \"GM-free\" image of New Zealand exports.",
    "positions": {
     "national": {
      "position": 2,
@@ -2072,7 +2073,7 @@
    "id": "q39",
    "issue": "foreign-policy",
    "text": "New Zealand should formally recognise the State of Palestine now.",
-   "explainer": "In September 2025 the government decided not to recognise Palestine \"yet\", unlike the UK, Canada and Australia.",
+   "explainer": "Recognition is a diplomatic step many countries, including Australia, Canada and the UK, have taken. Supporters see it as backing a two-state solution; opponents say it should wait for a negotiated settlement.",
    "positions": {
     "national": {
      "position": -1,
@@ -2123,7 +2124,7 @@
    "id": "q40",
    "issue": "defence",
    "text": "Defence spending should rise substantially, towards 2% of GDP.",
-   "explainer": "The 2025 Defence Capability Plan aims to lift defence spending from about 1% to 2% of GDP by the early 2030s.",
+   "explainer": "Defence spending is currently about 1% of national income. Doubling it over a decade means billions more for ships, aircraft and personnel, and less for other priorities, in return for a stronger military and closer alignment with allies.",
    "positions": {
     "national": {
      "position": 2,
@@ -2174,7 +2175,7 @@
    "id": "q41",
    "issue": "foreign-policy",
    "text": "New Zealand should increase its overseas aid budget.",
-   "explainer": "NZ spends about 0.25–0.3% of national income on aid; the UN target is 0.7%.",
+   "explainer": "Aid is about a quarter to a third of a percent of national income; the UN target is 0.7%. More aid supports Pacific neighbours and global standing; opponents say money should stay at home while there are needs here.",
    "positions": {
     "national": null,
     "labour": {
@@ -2218,7 +2219,7 @@
    "id": "q42",
    "issue": "drugs",
    "text": "Cannabis should be legalised or decriminalised for personal use.",
-   "explainer": "A 2020 referendum on legal cannabis narrowly failed (48.4% yes). Medicinal cannabis is legal on prescription.",
+   "explainer": "Possession is currently a crime, though police mostly use discretion. Legalising or decriminalising would end convictions for personal use and could be taxed and regulated; opponents point to health harms and youth use. A 2020 referendum narrowly rejected legalisation.",
    "positions": {
     "national": null,
     "labour": null,
@@ -2261,7 +2262,7 @@
    "id": "q43",
    "issue": "social-issues",
    "text": "Children under 16 should be banned from social media.",
-   "explainer": "National's Online Safety bill would make platforms take reasonable steps to keep under-16s off; ACT and NZ First oppose it.",
+   "explainer": "A ban would require platforms to verify ages and remove young users. Supporters cite mental health and online harm; opponents cite privacy risks of age checks, the practicality of enforcing it and parents' right to decide.",
    "positions": {
     "national": {
      "position": 2,
@@ -2308,8 +2309,8 @@
   {
    "id": "q44",
    "issue": "social-issues",
-   "text": "Puberty blockers and other medical gender-transition treatments should not be available to under-18s.",
-   "explainer": "In December 2025 the government stopped new prescriptions of puberty blockers for gender dysphoria, following the UK.",
+   "text": "Puberty blockers and other medical gender-transition treatments should not be available to people under 18.",
+   "explainer": "Puberty blockers delay physical changes for young people with gender dysphoria. Restricting them follows some other countries' caution over evidence; opponents say the decision should rest with young people, families and doctors.",
    "positions": {
     "national": {
      "position": 2,
@@ -2359,7 +2360,7 @@
    "id": "q45",
    "issue": "social-issues",
    "text": "Abortion law should be made more restrictive.",
-   "explainer": "Abortion was decriminalised in 2020 (conscience vote). Most parties treat it as a conscience issue and have no party position.",
+   "explainer": "Abortion was removed from the Crimes Act in 2020 and is available on request up to 20 weeks, with conditions after that. More restriction means tighter time limits or extra requirements; most parties treat this as a conscience issue rather than party policy.",
    "positions": {
     "national": null,
     "labour": null,

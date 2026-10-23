@@ -1,5 +1,7 @@
 # Mark Patterson
 
+<img src="photo.jpg" width="200" align="right" alt="Mark Patterson">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | New Zealand First |
@@ -11,6 +13,8 @@
 | **Born** | 1970, Canterbury |
 | **2026 election** | contesting Taieri, list #4 |
 | **Wikipedia** | [Mark Patterson (New Zealand politician)](https://en.wikipedia.org/wiki/Mark_Patterson_(New_Zealand_politician)) |
+
+<sub>Photo: US Embassy — Public domain — [source](https://commons.wikimedia.org/wiki/File:Mark_Patterson_2019.jpg)</sub>
 
 ## Current status
 

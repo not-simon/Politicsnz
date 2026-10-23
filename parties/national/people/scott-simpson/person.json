@@ -2,7 +2,7 @@
  "name": "Scott Simpson",
  "slug": "scott-simpson",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/6ab91e6c5a4a24102d1e26b46380360aa19f0145-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -13,6 +13,46 @@
  "candidacy_2026": "Candidate for the Coromandel electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Scott_Simpson_(politician)",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2011",
+   "to": null
+  }
+ ],
+ "roles": [
+  "Minister for ACC (2025–)",
+  "Minister of Statistics (2017–2017)",
+  "Minister of Commerce and Consumer Affairs (2025–)",
+  "Deputy Leader of the House (2026–)",
+  "Chief Government Whip in the House of Representatives (2023–2025)"
+ ],
+ "parliaments": [
+  50,
+  51,
+  52,
+  53,
+  54
+ ],
+ "first_elected": 2011,
+ "electorates": [
+  {
+   "electorate": "Coromandel",
+   "from": "2011-11-26",
+   "to": null,
+   "majority": "14,596"
+  }
+ ],
+ "born": "1959-11-04",
+ "wikipedia": "https://en.wikipedia.org/wiki/Scott_Simpson_(politician)",
+ "list_rank_2026_official": 18,
+ "conscience_votes": {
+  "marriage_equality_2013_third_reading": "for",
+  "end_of_life_choice_2019_third_reading": "for",
+  "abortion_legislation_2020_third_reading": "for"
+ },
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

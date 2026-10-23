@@ -1,5 +1,7 @@
 # Golriz Ghahraman
 
+<img src="photo.jpg" width="200" align="right" alt="Golriz Ghahraman">
+
 | | |
 |---|---|
 | **Party (current/most recent)** | Green Party |
@@ -10,6 +12,8 @@
 | **Key roles** | Green spokesperson on foreign affairs, defence and justice (2017–2024)<br>Green spokesperson on immigration (2017–2020), ethnic communities and refugees (2020–2024)<br>Member, Foreign Affairs, Defence and Trade Committee (2017–2024) |
 | **Born** | 1981, Iran |
 | **Wikipedia** | [Golriz Ghahraman](https://en.wikipedia.org/wiki/Golriz_Ghahraman) |
+
+<sub>Photo: Green Party — CC BY-SA 4.0 — [source](https://commons.wikimedia.org/wiki/File:Golriz_Ghahraman_%28cropped%29.jpg)</sub>
 
 ## Current status
 

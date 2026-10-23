@@ -2,7 +2,7 @@
  "name": "Tim van de Molen",
  "slug": "tim-van-de-molen",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/a8b6b952caa8478b25cc949783346373d06ff613-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -13,6 +13,36 @@
  "candidacy_2026": "Candidate for the Waikato electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Tim_van_de_Molen",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2017",
+   "to": null
+  }
+ ],
+ "roles": [],
+ "parliaments": [
+  52,
+  53,
+  54
+ ],
+ "first_elected": 2017,
+ "electorates": [
+  {
+   "electorate": "Waikato",
+   "from": "2017-09-23",
+   "to": null,
+   "majority": null
+  }
+ ],
+ "wikipedia": "https://en.wikipedia.org/wiki/Tim_van_de_Molen",
+ "list_rank_2026_official": 48,
+ "conscience_votes": {
+  "end_of_life_choice_2019_third_reading": "for",
+  "abortion_legislation_2020_third_reading": "against"
+ },
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }

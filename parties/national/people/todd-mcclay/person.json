@@ -2,7 +2,7 @@
  "name": "Todd McClay",
  "slug": "todd-mcclay",
  "party": "national",
- "status": "candidate-2026",
+ "status": "current-mp-standing-2026",
  "photo": "photo.jpg",
  "photo_source": "https://cdn.sanity.io/images/ubdwo62y/production/2983096e196077f2f113f800d6ba66d14c16e6ec-1024x1024.jpg",
  "photo_credit": "Supplied to policy.nz by the candidate/party",
@@ -13,6 +13,45 @@
  "candidacy_2026": "Candidate for the Rotorua electorate",
  "questionnaire_2026": {},
  "sources": [
+  "https://en.wikipedia.org/wiki/Todd_McClay",
   "https://policy.nz/2026/party-vote/parties/national-party"
- ]
+ ],
+ "party_history": [
+  {
+   "party": "national",
+   "from": "2008",
+   "to": null
+  }
+ ],
+ "roles": [
+  "Minister for Trade and Investment Minister of Agriculture Minister of Forestry (2023–)",
+  "Minister of Revenue (2013–2015)"
+ ],
+ "parliaments": [
+  49,
+  50,
+  51,
+  52,
+  53,
+  54
+ ],
+ "first_elected": 2008,
+ "electorates": [
+  {
+   "electorate": "Rotorua",
+   "from": "2008-12-08",
+   "to": null,
+   "majority": "8,923"
+  }
+ ],
+ "born": "1968-11-22",
+ "wikipedia": "https://en.wikipedia.org/wiki/Todd_McClay",
+ "list_rank_2026_official": 10,
+ "conscience_votes": {
+  "marriage_equality_2013_third_reading": "against",
+  "end_of_life_choice_2019_third_reading": "against",
+  "abortion_legislation_2020_third_reading": "against",
+  "conversion_practices_2022_third_reading": "against"
+ },
+ "photo_license": "Not stated (candidate photo supplied to policy.nz; used for identification)"
 }
