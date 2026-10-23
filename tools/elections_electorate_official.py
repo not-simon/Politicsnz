@@ -19,11 +19,12 @@ for f in sorted(glob.glob(os.path.join(RAW, "electorates", "*.wikitext"))):
     parts = re.split(r"\{\{\s*MMP election box begin", txt)
     for p in parts[1:]:
         head = p[:600]
-        m = re.search(r"\[\[(\d{4}) New Zealand general election", head)
-        if not m or int(m.group(1)) not in YEARS: continue
-        year = int(m.group(1))
-        tm = re.search(r"general election\]\]\s*:\s*([^\n}|<]+)", head)
-        el = tm.group(1).strip() if tm else meta["title"].replace(" (New Zealand electorate)", "")
+        m = re.search(r"\[\[(\d{4}) New Zealand general election(?:\|(\d{4}) general election)?", head)
+        if not m: continue
+        year = int(m.group(2) or m.group(1))   # display text wins (some articles mislink the year)
+        if year not in YEARS: continue
+        tm = re.search(r"general election\]\]\s*:\s*(\[\[[^\]]*\]\]|[^\n}|<\[]+)", head)
+        el = clean(tm.group(1)).strip() if tm else meta["title"].replace(" (New Zealand electorate)", "")
         end = re.search(r"\{\{\s*Election box end|\{\{\s*MMP election box end|\n==", p)
         body = p[: end.start()] if end else p
         code = mw.parse("{{X" + body)
