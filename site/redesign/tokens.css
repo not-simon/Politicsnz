@@ -99,7 +99,8 @@
   --text-2: #4A4A55;          /* secondary: 8.6:1 */
   --text-3: #5E5E6B;          /* muted: 6.4:1 on surface, 5.7:1 on sunk */
   --line: #E3E3E9;            /* hairlines */
-  --line-strong: #C6C6D0;     /* control borders, rules in tables */
+  --line-strong: #C6C6D0;     /* decorative rules, card edges (not relied on to find a control) */
+  --control: #84848F;         /* borders that identify a control: inputs, chips, scale circles, ticks (3.7:1) */
   --rule-ink: #17171C;        /* heavy section rule */
 
   /* Ink band: the dark civic panel used for time-critical moments */
@@ -165,6 +166,7 @@
     --text-3: #A2A2B0;
     --line: #2D2D36;
     --line-strong: #45454F;
+    --control: #7A7A86;
     --rule-ink: #F3F3F6;
     --band: #1F1D28;
     --band-2: #2A2834;
@@ -217,6 +219,7 @@
   --text-3: #A2A2B0;
   --line: #2D2D36;
   --line-strong: #45454F;
+  --control: #7A7A86;
   --rule-ink: #F3F3F6;
   --band: #1F1D28;
   --band-2: #2A2834;

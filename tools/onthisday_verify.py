@@ -41,6 +41,9 @@ def date_found(txt, y, m, d):
         rf"\b{d}(?:st|nd|rd|th)? (?:of )?{mon},? {y}\b",
         rf"\b{d}\s*[–-]\s*\d{{1,2}} {mon} {y}\b",   # "14–15 October 2023" (start of range)
         rf"\b\d{{1,2}}\s*[–-]\s*{d} {mon} {y}\b",   # end of range
+        rf"\b{d}(?:,? and |, )\d{{1,2}}(?:,? and \d{{1,2}})? {mon},? {y}\b",   # "4 and 15 January 1876"
+        rf"\b\d{{1,2}}(?:, \d{{1,2}})?,? and {d} {mon},? {y}\b",               # "13 and 14 May 1936"
+        rf"\b{d} {mon}\b[^.\n]{{0,40}}\b{y}\b",                                # "19 September, 1893"-ish
     ]
     for p in pats:
         if re.search(p, txt):

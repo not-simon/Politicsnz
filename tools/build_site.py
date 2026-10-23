@@ -186,8 +186,12 @@ import shutil
 for f in (ROOT / 'data' / 'geo').glob('*.json'): shutil.copy(f, OUT / 'geo' / f.name)
 
 # --- assemble pages: artifact fragment (no doctype) + standalone index.html
-src = (ROOT / 'site' / 'src' / 'app.html').read_text()
-# (design-system injection removed: the first redesign was reverted on 23 Oct 2026)
+# The app source is modular: site/src/shell.html (markup) + site/src/css/*.css + site/src/js/*.js, concatenated in
+# filename order into one single-file page. site/src/app.html is no longer read (kept out of the tree since 23 Oct 2026).
+SRC = ROOT / 'site' / 'src'
+css = '\n'.join(f.read_text() for f in sorted((SRC / 'css').glob('*.css')))
+js = '\n'.join(f.read_text() for f in sorted((SRC / 'js').glob('*.js')))
+src = (SRC / 'shell.html').read_text().replace('/* @CSS */', css).replace('/* @JS */', js)
 (ROOT / 'site' / 'artifact.html').write_text(src)
 (ROOT / 'site' / 'index.html').write_text('<!doctype html>\n<html lang="en"><head><meta charset="utf-8">'
     '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></head><body>\n' + src + '\n</body></html>\n')

@@ -338,6 +338,7 @@ button.lnk:hover { text-decoration-color: currentColor }
 .score { display: flex; gap: 8px; flex-wrap: wrap } .score span { font: 600 var(--t-small) var(--font-body); background: var(--surface-2); border-radius: var(--r-pill); padding: 4px 10px } .score span.turn { background: var(--sun); color: var(--on-sun) }
 .handoff { text-align: center; padding: var(--s-7) var(--s-4); display: grid; gap: var(--s-3); justify-items: center }
 .handoff .big { font: 800 var(--t-h1) var(--font-display) }
+
 </style>
 
 <header class="top"><div class="wrap">
@@ -394,6 +395,10 @@ const guideParty = s => ((G().parties || []).find(p => p.slug === s) || null);
 const initials = s => (pname(s) || '?').replace(/[^A-Za-zĀ-ū ]/g, '').split(' ').filter(Boolean).slice(0, 2).map(w => w[0]).join('').toUpperCase();
 function ordinal(n) { const s = ['th', 'st', 'nd', 'rd'], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]) }
 const daysLeft = () => { const t = nzNow(); const today = Date.UTC(t.getFullYear(), t.getMonth(), t.getDate()); return Math.round((Date.UTC(2026, 10, 7) - today) / 864e5) };
+
+
+/* ===== views ===== */
+const V = {};
 
 /* ===== MMP maths ===== */
 function sainteLague(votes, seats) { const out = {}; Object.keys(votes).forEach(p => out[p] = 0);
@@ -474,8 +479,59 @@ function openPerson(p) {
     ${p.has_profile ? `<p style="margin-top:16px"><button class="btn sm" data-page="${esc(p.folder)}/README.md">Read full profile</button></p>` : ''}
     <p class="tiny muted" style="margin-top:16px">${p.photo_credit ? 'Photo: ' + esc(p.photo_credit) + (p.photo_license ? ' · ' + (p.photo_license_url ? `<a href="${esc(p.photo_license_url)}" target="_blank" rel="noopener">${esc(p.photo_license)}</a>` : esc(p.photo_license)) : '') + (/wikimedia|commons/i.test(p.photo_credit) ? ', cropped' : '') : ''}${p.wikipedia && p.has_profile ? `${p.photo_credit ? ' · ' : ''}Biography adapted from <a href="${esc(p.wikipedia)}" target="_blank" rel="noopener">Wikipedia</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, and the sources it cites.` : ''} · <a href="https://github.com/not-simon/Politicsnz/issues/new?template=correction.yml" target="_blank" rel="noopener">Correct or reply</a></p>`) }
 
-/* ===== views ===== */
-const V = {};
+/* ----- election phase (NZ time) ----- */
+function nzNow() { return new Date(new Date().toLocaleString('en-US', { timeZone: 'Pacific/Auckland' })) }
+function electionPhase() { const t = nzNow(); const d = t.getFullYear() * 10000 + (t.getMonth() + 1) * 100 + t.getDate();
+  if (d < 20261026) return 'enrol'; if (d < 20261107) return 'advance'; if (d === 20261107) return t.getHours() < 19 ? 'electionday' : 'results'; return 'after' }
+const ELECTION_DAY_BLOCK = 'Today is election day. By law, material that could influence how people vote can’t be published until voting closes at 7pm, so the match quiz, swipe, compass, game, polls, forecast and party newsroom are hidden until then. Voting places are open 9am–7pm.';
+function renderBanner() { const ph = electionPhase(); let el = $('#banner'); if (!el) { el = document.createElement('div'); el.id = 'banner'; el.className = 'banner'; document.querySelector('header.top').after(el) }
+  const key = 'banner-' + ph; if (store.get(key) === 'x') { el.hidden = true; return }
+  const msg = { enrol: 'Enrolment closes <b>midnight Sunday 25 October</b>. There is no enrolling on election day this year. <a href="https://vote.nz" target="_blank" rel="noopener">Check or update your enrolment at vote.nz</a>.',
+    advance: 'Voting is open. Vote early at any voting place until 6 November, or on election day Saturday 7 November (9am–7pm). <a href="https://vote.nz" target="_blank" rel="noopener">Find a voting place</a>.',
+    electionday: 'Election day: voting places are open 9am–7pm. Polls, forecasts, quiz results and the game are hidden until 7pm.',
+    results: 'Voting has closed. Preliminary results are being counted; official results on 27 November.', after: '' }[ph];
+  if (!msg) { el.hidden = true; return } el.hidden = false; el.innerHTML = `<div class="wrap"><span>${msg}</span><button aria-label="Dismiss" id="banner-x">×</button></div>`; $('#banner-x').onclick = () => { store.set(key, 'x'); el.hidden = true } }
+function blockedToday(view) { return electionPhase() === 'electionday' && ['match', 'compass', 'swipe', 'swipe-tally', 'polls', 'trends', 'game', 'newsroom'].includes(view) }
+const BLOCKED_PAGES = /^(REPORT\.md|elections\/2026\.md|elections\/trends\.md|guide\/parties\.md|guide\/forecast-method\.md|guide\/quiz-method\.md|guide\/quiz-research\.md|guide\/compass-method\.md)$/;
+function blockedPage(k) { return electionPhase() === 'electionday' && BLOCKED_PAGES.test(k) }
+const isElectionDay = () => electionPhase() === 'electionday';
+const RESULT_DISCLAIMER = `<p class="small muted" style="border-top:1px solid var(--line);padding-top:10px">This shows how closely your answers line up with each party's published positions on the questions you answered. It is information, not advice: it does not take account of candidates, coalitions, trust, or the issues we did not ask about, and it is not a recommendation about how to vote. Every party is listed. Read the party pages and the original policy texts before deciding. Ballot Book NZ is independent and not affiliated with any party, candidate or the Electoral Commission.</p>`;
+const NOT_EC = `<p class="tiny muted">Independent and non-partisan. Not the Electoral Commission: for official information on enrolling, voting places and hours, go to <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or call 0800 36 76 56.</p>`;
+
+/* ----- find my electorate from location (device-side only) ----- */
+function pointInRing(pt, ring) { let inside = false; const [x, y] = pt; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) { const [xi, yi] = ring[i], [xj, yj] = ring[j]; if (((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi)) inside = !inside } return inside }
+function featureContains(f, lon, lat) { const polys = f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates; for (const poly of polys) { if (pointInRing([lon, lat], poly[0])) { for (let k = 1; k < poly.length; k++) if (pointInRing([lon, lat], poly[k])) return false; return true } } return false }
+async function locateElectorate() { if (!navigator.geolocation) throw new Error('Your browser does not offer location.');
+  const pos = await new Promise((ok, no) => navigator.geolocation.getCurrentPosition(ok, no, { enableHighAccuracy: false, timeout: 12000, maximumAge: 300000 }));
+  let { longitude: lon, latitude: lat } = pos.coords; if (lon < 0) lon += 360;
+  await loadGeo(2025); const hit = t => (S.geo[`${t}-2025`].features || []).find(f => featureContains(f, lon, lat));
+  return { general: hit('general'), maori: hit('maori'), accuracy: pos.coords.accuracy } }
+function locateBlock(id) { return `<div class="card locate" id="${id}"><div class="row" style="justify-content:space-between"><div><h3>Where do you live?</h3><p class="small muted">Use your location to find your electorate and the people standing there. Your browser will ask for permission. Your location is checked against the electorate map on this device only; it is not stored or sent anywhere. You can also just choose your electorate from the list.</p></div><button class="btn primary sm" data-locate="${id}">Use my location</button></div><div class="found" id="${id}-out"></div></div>` }
+async function runLocate(id) { const out = $('#' + id + '-out'); out.innerHTML = '<span class="muted small">Finding your electorate…</span>';
+  try { const r = await locateElectorate(); if (!r.general && !r.maori) { out.innerHTML = '<span class="small">That location is outside New Zealand’s electorates.</span>'; return }
+    const E = S.data.electorates || []; const link = f => { const e = E.find(x => slugify(x.slug) === f.properties.slug || slugify(x.name) === f.properties.slug); return e ? `<button class="btn sm" data-go="electorate-${esc(e.slug)}">${esc(f.properties.name)} · ${(e.candidates || []).length} candidates</button>` : `<b>${esc(f.properties.name)}</b>` };
+    out.innerHTML = `<p class="small">You're in the <b>${r.general ? esc(r.general.properties.name) : '–'}</b> general electorate${r.maori ? ` and the <b>${esc(r.maori.properties.name)}</b> Māori electorate` : ''}. Which one you vote in depends on which roll you're on.</p><div class="row">${r.general ? link(r.general) : ''}${r.maori ? link(r.maori) : ''}</div>${r.accuracy > 2000 ? `<p class="tiny muted">Location accuracy is about ${Math.round(r.accuracy / 1000)} km, so near a boundary the result may be wrong; check at vote.nz.</p>` : ''}` }
+  catch (e) { out.innerHTML = `<span class="small">Couldn't get your location (${esc(e.message || 'permission denied')}). Pick your electorate from the list instead, or look up your address at vote.nz.</span>` } }
+
+/* ----- auto-link party and politician names in text ----- */
+function buildLinker() { if (S.linker !== undefined) return S.linker; const names = [];
+  for (const [slug, p] of Object.entries(S.data.parties)) { for (const n of [p.name, p.short]) if (n && n.length > 3 && !/^(Independent|Other)$/i.test(n)) names.push([n, 'party-' + slug]) }
+  for (const p of (S.people || [])) if (p.name && p.name.trim().split(/\s+/).length >= 2) names.push([p.name, 'person:' + p.folder]);
+  names.sort((a, b) => b[0].length - a[0].length); const map = Object.fromEntries(names);
+  const re = new RegExp('(?<![\\w-])(' + names.map(([n]) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')(?![\\w-])', 'g');
+  S.linker = names.length ? { re, map } : null; return S.linker }
+function autolink(root) { const L = buildLinker(); if (!L || !root) return; const skip = 'A, BUTTON, H1, H2, H3, H4, .nm, .st, .who, .pcard, .person, .seatcard, .match, .scard, .legend, .tabs, select, input, code, pre';
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: n => (n.nodeValue.trim().length > 3 && !n.parentElement.closest(skip)) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
+  const nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+  for (const n of nodes) { L.re.lastIndex = 0; if (!L.re.test(n.nodeValue)) continue; const frag = document.createDocumentFragment(); let last = 0; L.re.lastIndex = 0; let m;
+    while ((m = L.re.exec(n.nodeValue))) { frag.appendChild(document.createTextNode(n.nodeValue.slice(last, m.index))); const b = document.createElement('button'); b.className = 'lnk'; b.type = 'button'; b.textContent = m[0];
+      const t = L.map[m[0]]; if (t.startsWith('person:')) b.dataset.person = t.slice(7); else b.dataset.go = t; frag.appendChild(b); last = m.index + m[0].length }
+    frag.appendChild(document.createTextNode(n.nodeValue.slice(last))); n.parentNode.replaceChild(frag, n) } }
+
+/* ----- export / import saved results ----- */
+const SAVE_KEYS = ['quiz', 'quiz2', 'compass', 'swipe', 'myElectorate', 'bb-theme'];
+function exportSaved() { const o = {}; for (const k of SAVE_KEYS) { const v = store.get(k); if (v) o[k] = v } return btoa(unescape(encodeURIComponent(JSON.stringify(o)))) }
+function importSaved(code) { const o = JSON.parse(decodeURIComponent(escape(atob(code.trim())))); for (const [k, v] of Object.entries(o)) if (SAVE_KEYS.includes(k)) store.set(k, v) }
 
 V.home = async () => {
   const d = daysLeft(); const parl = currentParl();
@@ -617,6 +673,60 @@ function partyResultsMini(s, big = false) {
   return `<div class="card stack"><h3>Election results</h3><div class="stack" style="gap:6px">${rows.map(([y, r]) => `<div class="row" style="flex-wrap:nowrap"><span class="num small" style="width:44px">${y}</span><div class="meter" style="flex:1;height:12px"><span style="width:${r ? r.party_vote_pct / max * 100 : 0}%;background:${pcolor(s)}"></span></div><span class="num small" style="width:${big ? 150 : 132}px;text-align:right;white-space:nowrap">${r ? fmt(r.party_vote_pct) + '% · ' + (r.total_seats || 0) + ' seats' : 'did not stand'}</span></div>`).join('')}</div></div>`;
 }
 
+/* ----- how to vote ----- */
+V.vote = () => { const H = G().howtovote || {}; const secs = H.sections || []; const ph = electionPhase();
+  if (!secs.length) { $('#main').innerHTML = `<section class="view"><h2>How to vote</h2><p class="empty">The guide is being verified. Meanwhile: enrol or check your details at <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or call 0800 36 76 56.</p></section>`; return }
+  let st; try { st = JSON.parse(store.get('votecheck') || '{}') } catch { st = {} }
+  const SIT = [['all', 'Just the basics'], ['first-time voters', 'My first time'], ['people who have not voted for a while', "Haven't voted in a while"], ['people away from home on election day', 'Away from home'], ['overseas voters', 'Overseas'], ['disabled voters', 'I need help to vote'], ['new residents', 'New to New Zealand']];
+  let sit = store.get('votesit') || 'all';
+  const top = { enrol: `<b>Enrolment closes midnight this Sunday, 25 October.</b> There is no enrolling on election day this year. If you're not sure you're enrolled, check now: it takes two minutes.`, advance: `<b>Voting is open now.</b> You can vote at any voting place in the country until Friday 6 November, or on election day, Saturday 7 November, 9am–7pm.`, electionday: `<b>Today is election day.</b> Voting places are open 9am–7pm. You don't need ID or your EasyVote card.`, results: `Voting has closed. Results are being counted.`, after: `The 2026 election has been held.` }[ph];
+  const matches = sec => sit === 'all' ? ['eligible', 'enrol', 'when-where', 'first-time'].includes(sec.id) : (sec.who_its_for || []).some(w => w.toLowerCase().includes(sit.split(' ')[0].toLowerCase()) || w.toLowerCase() === sit) || ['eligible', 'enrol', 'when-where'].includes(sec.id);
+  const render = () => { const shown = secs.filter(matches);
+    $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Voting in 2026, step by step</div><h2>How to vote</h2><p class="lede">Everything checked against the Electoral Commission and the law, written plainly. Pick what fits you and we'll show the steps that matter.</p></div>
+      <p class="note">${top}</p>
+      <div class="situ">${SIT.map(([k, l]) => `<button class="chip" data-sit="${esc(k)}" aria-pressed="${sit === k}">${l}</button>`).join('')}</div>
+      <div class="split"><div class="stack" style="gap:18px">
+        <div class="card stack"><h3>Your checklist</h3><div class="check">${(H.checklist || []).map((c, i) => `<label class="${st[i] ? 'done' : ''}"><input type="checkbox" data-ck="${i}" ${st[i] ? 'checked' : ''}><span><b>${esc(c.step)}</b><br><span class="small muted">${esc(c.done_when)}</span>${c.url ? ` <a class="small" href="${esc(c.url)}" target="_blank" rel="noopener">Do it</a>` : ''}</span></label>`).join('')}</div></div>
+        ${shown.map(sec => `<details class="card" ${(sec.id === 'enrol' && ph === 'enrol') || (sec.id === 'when-where' && ph !== 'enrol') ? 'open' : ''}><summary style="cursor:pointer;font:700 17px var(--f-display)">${esc(sec.title.replace(/^\d+\.\s*/, ''))}</summary><div class="stack" style="margin-top:12px">${(sec.steps || []).map((x, i) => `<div class="row" style="flex-wrap:nowrap;align-items:flex-start"><span class="stepnum">${i + 1}</span><div><p class="read" style="font-size:16px">${esc(x.text)}${x.date ? ` <span class="badge">${esc(x.date)}</span>` : ''}</p>${x.url ? `<a class="tiny" href="${esc(x.url)}" target="_blank" rel="noopener">${esc((x.source || 'source').split(',')[0])}</a>` : ''}</div></div>`).join('')}${(sec.notes || []).length ? `<ul class="small muted">${sec.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}</div></details>`).join('')}</div>
+      <div class="stack" style="gap:18px">
+        <div class="card stack"><h3>Find a voting place</h3><p class="small">The official finder shows every voting place with its opening days and hours, and lets you filter for wheelchair access. Hours differ from place to place during advance voting; on election day everywhere is open 9am–7pm.</p><div class="row"><a class="btn sun" href="${esc((H.voting_places || {}).official_finder || 'https://map.vote.nz')}" target="_blank" rel="noopener">Open the voting-place finder</a><a class="btn sm" href="${esc((H.voting_places || {}).official_finder_list_view || 'https://vote.nz')}" target="_blank" rel="noopener">List view</a></div><p class="tiny muted">You can vote at any voting place in New Zealand, not just in your own electorate.</p></div>
+        <div class="card stack"><h3>Need a hand?</h3>${Object.entries(H.contacts || {}).slice(0, 5).map(([k, v]) => `<p class="small"><b>${esc(k.replace(/_/g, ' ').replace(/^\w/, c => c.toUpperCase()))}:</b> ${esc(v)}</p>`).join('')}</div>
+        <div class="card stack"><h3>Key dates</h3><div class="hist">${(H.key_dates || []).filter(d => d.date >= '2026-10-20').map(d => `<div><span class="num muted">${esc(d.date.slice(5).replace('-', '/'))}</span><span class="dot" style="background:${d.date === '2026-11-07' ? 'var(--sun)' : 'var(--rule)'}"></span><span class="small">${esc(d.event)}</span></div>`).join('')}</div></div>
+        ${locateBlock('loc-vote')}
+        <p class="tiny muted">Verified ${esc(H.as_of || '')} against vote.nz, elections.nz and the Electoral Act 1993. Every step links to its source. ${(H.could_not_verify || []).length ? `<button class="btn ghost sm" data-page="guide/how-to-vote.md">Full guide and what we couldn't verify</button>` : ''}</p></div></div></section>`;
+    $('#main').querySelectorAll('[data-sit]').forEach(b => b.onclick = () => { sit = b.dataset.sit; store.set('votesit', sit); render() });
+    $('#main').querySelectorAll('[data-ck]').forEach(c => c.onchange = () => { st[c.dataset.ck] = c.checked; store.set('votecheck', JSON.stringify(st)); c.closest('label').classList.toggle('done', c.checked) }) };
+  render() };
+
+/* ----- electorate ----- */
+V.electorate = async slug => {
+  await loadPeople(); const E = (S.data.electorates || []).slice().sort((a, b) => a.name.localeCompare(b.name));
+  const sel = slug || store.get('myElectorate') || '';
+  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Your local vote</div><h2>Who's standing where you live</h2>
+    <p class="lede">Choose your electorate to meet the candidates. Not sure which one you're in? Look up your address at vote.nz.</p>${NOT_EC}</div>
+    ${locateBlock('loc-el')}
+    <div class="toolbar"><select id="esel" aria-label="Electorate"><option value="">Choose your electorate…</option>
+      ${['general', 'maori'].map(t => `<optgroup label="${t === 'maori' ? 'Māori electorates' : 'General electorates'}">${E.filter(e => (e.type || 'general') === t).map(e => `<option value="${esc(e.slug)}" ${e.slug === sel ? 'selected' : ''}>${esc(e.name)}</option>`).join('')}</optgroup>`).join('')}</select></div>
+    <div id="ebody"></div></section>`;
+  const draw = () => { const v = $('#esel').value; store.set('myElectorate', v); const e = E.find(x => x.slug === v); const b = $('#ebody');
+    if (!e) { b.innerHTML = E.length ? (isElectionDay() ? `<div class="grid">${E.map(x => `<button class="starter" style="padding:14px" data-elec="${esc(x.slug)}"><h4>${esc(x.name)}</h4></button>`).join('')}</div>` : `<div class="grid">${E.filter(x => x.marginal).slice(0, 9).map(x => `<button class="starter" data-elec="${esc(x.slug)}"><div class="kicker">Battleground</div><h3>${esc(x.name)}</h3><p class="small muted">${esc(x.contest_notes || '')}</p></button>`).join('')}</div>`) : '<p class="empty">Electorate guides are still being built.</p>'; return }
+    const r = e.result_2023 || {};
+    b.innerHTML = `<div class="split"><div class="stack" style="gap:16px"><div class="card stack"><h2>${esc(e.name)}</h2>${e.description ? `<p class="read">${esc(e.description)}</p><p class="tiny muted">Description from policy.nz.</p>` : ''}
+        ${(e.description_fact_check || []).length ? `<details class="small"><summary style="cursor:pointer;color:var(--primary);font-weight:700">Fact-check notes on this description (${e.description_fact_check.length})</summary><ul>${e.description_fact_check.map(f => `<li>${esc(typeof f === 'string' ? f : (f.note || f.correction || f.text || JSON.stringify(f)))}</li>`).join('')}</ul></details>` : ''}
+        ${e.contest_notes && !isElectionDay() ? `<p class="note">${esc(e.contest_notes)}</p>` : ''}</div>
+      <div class="stack"><h3>${(e.candidates || []).length} candidates</h3><div class="people">${(e.candidates || []).map(c => { const p = findPerson(c.slug, c.name) || { name: c.name, party: c.party };
+        return `<button class="person" data-person="${esc(c.slug)}">${faceHTML(p, c.party)}<span class="nm">${esc(c.name)}</span><span class="row tiny muted" style="gap:5px;justify-content:center"><span class="dot" style="background:${pcolor(c.party)}"></span>${esc(pname(c.party))}</span>${isMP(p.status) ? '<span class="status mp">Sitting MP</span>' : ''}</button>` }).join('')}</div></div></div>
+      <div class="stack" style="gap:16px">${e.sitting_mp ? `<div class="card stack"><h3>Current MP</h3><p>${esc(e.sitting_mp.name)} (${esc(pname(e.sitting_mp.party))})${e.mp_standing_again === false ? ' is not standing again.' : ''}</p></div>` : ''}
+        ${r.winner ? `<div class="card stack"><h3>Last time (2023)</h3><p class="small">${esc(r.winner)} (${esc(pname(r.party))}) won${r.majority ? ` by <b class="num">${Number(r.majority).toLocaleString('en-NZ')}</b> votes` : ''}${r.runner_up ? ` over ${esc(r.runner_up)} (${esc(pname(r.runner_up_party))})` : ''}.</p>
+          ${r.party_vote_pct ? '<p class="tiny muted">Party vote in this area</p>' : ''}${r.party_vote_pct ? Object.entries(r.party_vote_pct).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([p, v]) => `<div class="row" style="flex-wrap:nowrap"><span class="small" style="width:110px">${esc(pname(p))}</span><div class="meter" style="flex:1"><span style="width:${v}%;background:${pcolor(p)}"></span></div><span class="num tiny" style="width:44px;text-align:right">${fmt(v)}%</span></div>`).join('') : ''}
+          ${r.for_predecessor_seat || (e.predecessor_seats || []).some(x => x !== e.name) ? `<p class="tiny muted">Based on ${esc((e.predecessor_seats || []).join(', ') || r.seat || '')} before the 2025 boundary changes.</p>` : ''}</div>` : ''}
+        <button class="btn sm" data-page="electorates/${esc(e.slug)}.md" style="justify-self:start">Full electorate guide</button></div></div>`;
+    b.querySelectorAll('[data-person]').forEach(x => x.onclick = () => { const p = findPerson(x.dataset.person); if (p) openPerson(p) }) };
+  $('#esel').onchange = draw;
+  $('#ebody').addEventListener('click', e => { const b = e.target.closest('[data-elec]'); if (b) { $('#esel').value = b.dataset.elec; draw() } });
+  draw();
+};
+
 /* ----- policy browser (shared) ----- */
 const TOPIC_NAMES = { economy: 'Economy & tax', health: 'Health', education: 'Education', housing: 'Housing', environment: 'Environment & climate', 'law-justice-and-government': 'Law, justice & government',
   'community-and-inclusion': 'Community & inclusion', 'te-ao-maori': 'Te ao Māori', migration: 'Immigration', 'transport-and-infrastructure': 'Transport & infrastructure',
@@ -696,59 +806,106 @@ async function showIssuePolicies(p, ids) {
   const set = new Set(ids.split(',')); const ps = (S.policies[p] || []).filter(x => set.has(x.id));
   openDialog(`${pname(p)}: related policies`, ps.length ? `<div class="stack">${ps.map(x => policyCard(p, x, false)).join('')}</div>` : '<p class="empty">These policies are still being added.</p>') }
 
-/* ----- election phase (NZ time) ----- */
-function nzNow() { return new Date(new Date().toLocaleString('en-US', { timeZone: 'Pacific/Auckland' })) }
-function electionPhase() { const t = nzNow(); const d = t.getFullYear() * 10000 + (t.getMonth() + 1) * 100 + t.getDate();
-  if (d < 20261026) return 'enrol'; if (d < 20261107) return 'advance'; if (d === 20261107) return t.getHours() < 19 ? 'electionday' : 'results'; return 'after' }
-const ELECTION_DAY_BLOCK = 'Today is election day. By law, material that could influence how people vote can’t be published until voting closes at 7pm, so the match quiz, swipe, compass, game, polls, forecast and party newsroom are hidden until then. Voting places are open 9am–7pm.';
-function renderBanner() { const ph = electionPhase(); let el = $('#banner'); if (!el) { el = document.createElement('div'); el.id = 'banner'; el.className = 'banner'; document.querySelector('header.top').after(el) }
-  const key = 'banner-' + ph; if (store.get(key) === 'x') { el.hidden = true; return }
-  const msg = { enrol: 'Enrolment closes <b>midnight Sunday 25 October</b>. There is no enrolling on election day this year. <a href="https://vote.nz" target="_blank" rel="noopener">Check or update your enrolment at vote.nz</a>.',
-    advance: 'Voting is open. Vote early at any voting place until 6 November, or on election day Saturday 7 November (9am–7pm). <a href="https://vote.nz" target="_blank" rel="noopener">Find a voting place</a>.',
-    electionday: 'Election day: voting places are open 9am–7pm. Polls, forecasts, quiz results and the game are hidden until 7pm.',
-    results: 'Voting has closed. Preliminary results are being counted; official results on 27 November.', after: '' }[ph];
-  if (!msg) { el.hidden = true; return } el.hidden = false; el.innerHTML = `<div class="wrap"><span>${msg}</span><button aria-label="Dismiss" id="banner-x">×</button></div>`; $('#banner-x').onclick = () => { store.set(key, 'x'); el.hidden = true } }
-function blockedToday(view) { return electionPhase() === 'electionday' && ['match', 'compass', 'swipe', 'swipe-tally', 'polls', 'trends', 'game', 'newsroom'].includes(view) }
-const BLOCKED_PAGES = /^(REPORT\.md|elections\/2026\.md|elections\/trends\.md|guide\/parties\.md|guide\/forecast-method\.md|guide\/quiz-method\.md|guide\/quiz-research\.md|guide\/compass-method\.md)$/;
-function blockedPage(k) { return electionPhase() === 'electionday' && BLOCKED_PAGES.test(k) }
-const isElectionDay = () => electionPhase() === 'electionday';
-const RESULT_DISCLAIMER = `<p class="small muted" style="border-top:1px solid var(--line);padding-top:10px">This shows how closely your answers line up with each party's published positions on the questions you answered. It is information, not advice: it does not take account of candidates, coalitions, trust, or the issues we did not ask about, and it is not a recommendation about how to vote. Every party is listed. Read the party pages and the original policy texts before deciding. Ballot Book NZ is independent and not affiliated with any party, candidate or the Electoral Commission.</p>`;
-const NOT_EC = `<p class="tiny muted">Independent and non-partisan. Not the Electoral Commission: for official information on enrolling, voting places and hours, go to <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or call 0800 36 76 56.</p>`;
+/* ----- people ----- */
+V.people = async () => { await loadPeople();
+  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">${S.people.length} people</div><h2>MPs, former MPs and 2026 candidates</h2><p class="lede">Everyone who has sat in Parliament since 2011, and everyone standing in 2026. Tap a person for their profile and what they're doing now.</p></div><div id="pg"></div></section>`;
+  peopleGrid($('#pg')) };
+function peopleGrid(el, { party = '' } = {}) {
+  const parties = [...new Set(S.people.map(p => p.party))].sort((a, b) => P(a).order - P(b).order);
+  el.innerHTML = `<div class="stack" style="gap:14px"><div class="toolbar"><input type="search" id="pq" placeholder="Search name or electorate" aria-label="Search people">
+    ${party ? '' : `<select id="pp" aria-label="Party"><option value="">All parties</option>${parties.map(p => `<option value="${p}">${esc(pname(p))}</option>`).join('')}</select>`}
+    <select id="ps" aria-label="Status"><option value="">Everyone</option><option value="mp">Current MPs</option><option value="candidate-2026">New candidates</option><option value="former-mp">Former MPs</option></select></div><div id="plist2"></div></div>`;
+  let limit = 120;
+  const draw = () => { const q = $('#pq', el).value.trim().toLowerCase(), pa = party || ($('#pp', el) || {}).value, st = $('#ps', el).value;
+    const list = S.people.filter(p => (!pa || p.party === pa) && (!st || (st === 'mp' ? isMP(p.status) : p.status === st)) && (!q || (p.name + ' ' + (p.electorate_2026 || '')).toLowerCase().includes(q)))
+      .sort((a, b) => (isMP(b.status) - isMP(a.status)) || (P(a.party).order - P(b.party).order) || ((a.list_rank_2026 || 999) - (b.list_rank_2026 || 999)) || a.name.localeCompare(b.name));
+    $('#plist2', el).innerHTML = `<p class="small muted">${list.length} people</p><div class="people">${list.slice(0, limit).map(p => `<button class="person" data-i="${S.people.indexOf(p)}">${faceHTML(p, p.party)}<span class="nm">${esc(p.name)}</span>
+      <span class="row tiny muted" style="gap:5px;justify-content:center"><span class="dot" style="background:${pcolor(p.party)}"></span>${esc(pname(p.party))}</span><span class="status ${isMP(p.status) ? 'mp' : ''}">${esc(STATUS[p.status] || p.status || '')}</span>${p.list_rank_2026 ? `<span class="tiny muted">List #${p.list_rank_2026}</span>` : ''}</button>`).join('')}</div>
+      ${list.length > limit ? `<div class="row" style="justify-content:center;margin-top:12px"><button class="btn primary" id="pmore">Show more</button></div>` : ''}`;
+    const m = $('#pmore', el); if (m) m.onclick = () => { limit += 120; draw() } };
+  el.querySelectorAll('input,select').forEach(x => x.addEventListener('input', () => { limit = 120; draw() }));
+  el.addEventListener('click', e => { const b = e.target.closest('[data-i]'); if (b) openPerson(S.people[+b.dataset.i]) });
+  draw() }
 
-/* ----- find my electorate from location (device-side only) ----- */
-function pointInRing(pt, ring) { let inside = false; const [x, y] = pt; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) { const [xi, yi] = ring[i], [xj, yj] = ring[j]; if (((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi)) inside = !inside } return inside }
-function featureContains(f, lon, lat) { const polys = f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates; for (const poly of polys) { if (pointInRing([lon, lat], poly[0])) { for (let k = 1; k < poly.length; k++) if (pointInRing([lon, lat], poly[k])) return false; return true } } return false }
-async function locateElectorate() { if (!navigator.geolocation) throw new Error('Your browser does not offer location.');
-  const pos = await new Promise((ok, no) => navigator.geolocation.getCurrentPosition(ok, no, { enableHighAccuracy: false, timeout: 12000, maximumAge: 300000 }));
-  let { longitude: lon, latitude: lat } = pos.coords; if (lon < 0) lon += 360;
-  await loadGeo(2025); const hit = t => (S.geo[`${t}-2025`].features || []).find(f => featureContains(f, lon, lat));
-  return { general: hit('general'), maori: hit('maori'), accuracy: pos.coords.accuracy } }
-function locateBlock(id) { return `<div class="card locate" id="${id}"><div class="row" style="justify-content:space-between"><div><h3>Where do you live?</h3><p class="small muted">Use your location to find your electorate and the people standing there. Your browser will ask for permission. Your location is checked against the electorate map on this device only; it is not stored or sent anywhere. You can also just choose your electorate from the list.</p></div><button class="btn primary sm" data-locate="${id}">Use my location</button></div><div class="found" id="${id}-out"></div></div>` }
-async function runLocate(id) { const out = $('#' + id + '-out'); out.innerHTML = '<span class="muted small">Finding your electorate…</span>';
-  try { const r = await locateElectorate(); if (!r.general && !r.maori) { out.innerHTML = '<span class="small">That location is outside New Zealand’s electorates.</span>'; return }
-    const E = S.data.electorates || []; const link = f => { const e = E.find(x => slugify(x.slug) === f.properties.slug || slugify(x.name) === f.properties.slug); return e ? `<button class="btn sm" data-go="electorate-${esc(e.slug)}">${esc(f.properties.name)} · ${(e.candidates || []).length} candidates</button>` : `<b>${esc(f.properties.name)}</b>` };
-    out.innerHTML = `<p class="small">You're in the <b>${r.general ? esc(r.general.properties.name) : '–'}</b> general electorate${r.maori ? ` and the <b>${esc(r.maori.properties.name)}</b> Māori electorate` : ''}. Which one you vote in depends on which roll you're on.</p><div class="row">${r.general ? link(r.general) : ''}${r.maori ? link(r.maori) : ''}</div>${r.accuracy > 2000 ? `<p class="tiny muted">Location accuracy is about ${Math.round(r.accuracy / 1000)} km, so near a boundary the result may be wrong; check at vote.nz.</p>` : ''}` }
-  catch (e) { out.innerHTML = `<span class="small">Couldn't get your location (${esc(e.message || 'permission denied')}). Pick your electorate from the list instead, or look up your address at vote.nz.</span>` } }
+/* ----- promises ----- */
+const VERDICTS = ['kept', 'partially-kept', 'in-progress', 'broken', 'abandoned', 'not-yet-due'];
+const TERMS = [['2008-17', '2008–17'], ['2017-23', '2017–23'], ['2023-26', '2023–26'], ['2026', '2026 campaign']];
+const PERIODS = [['all', 'All time'], ['since2017', 'Last two governments (2017 →)'], ['current', 'Current term (2023–26)'], ['2026', '2026 promises'], ['byterm', 'By term']];
+function periodOf(x) { const m = String((x.made || '') + ' ' + (x.term || '')).match(/\b(20[0-2]\d)\b/); if (!m) return 'other'; const y = +m[1];
+  return y <= 2016 ? '2008-17' : y <= 2022 ? '2017-23' : y <= 2025 ? '2023-26' : '2026' }
+function inPeriod(x, per) { const t = periodOf(x); return per === 'all' || per === 'byterm' ? true : per === 'since2017' ? (t === '2017-23' || t === '2023-26') : per === 'current' ? t === '2023-26' : per === '2026' ? t === '2026' : true }
+function periodBar(id) { const cur = S.promPeriod || 'all'; return `<div class="seg" id="${id}">${PERIODS.map(([k, l]) => `<button data-per="${k}" aria-pressed="${cur === k}">${l}</button>`).join('')}</div>` }
+function scoreOf(L) { const c = v => L.filter(x => x.status === v).length; const resolved = L.filter(x => ['kept', 'partially-kept', 'broken', 'abandoned'].includes(x.status)).length;
+  return { n: L.length, kept: c('kept'), partly: c('partially-kept'), broken: c('broken'), abandoned: c('abandoned'), progress: c('in-progress'), due: c('not-yet-due'), resolved, score: resolved ? Math.round((c('kept') + .5 * c('partially-kept')) / resolved * 100) : null } }
+function verdictMeter(L, h = 14) { const n = L.length || 1; return `<div class="meter" style="height:${h}px">${VERDICTS.map(v => `<span class="v-${v}" style="width:${L.filter(x => x.status === v).length / n * 100}%"></span>`).join('')}</div>` }
+function byTermTable(parties, pr) { return `<div class="scroll"><table><thead><tr><th>Party</th>${TERMS.map(([, l]) => `<th>${l}</th>`).join('')}</tr></thead><tbody>${parties.map(p => `<tr><td><span class="row" style="gap:6px;flex-wrap:nowrap"><span class="dot" style="background:${pcolor(p)}"></span><b>${esc(pname(p))}</b></span></td>${TERMS.map(([k]) => { const L = (pr[p] || []).filter(x => periodOf(x) === k); if (!L.length) return '<td class="muted tiny">–</td>'; const sc = scoreOf(L); return `<td style="min-width:130px">${verdictMeter(L, 10)}<div class="tiny muted" style="margin-top:3px">${sc.n} checked${sc.score != null ? ` · <b>${sc.score}%</b> kept` : ' · not yet due'}</div></td>` }).join('')}</tr>`).join('')}</tbody></table></div>
+  <p class="tiny muted">"% kept" counts a partly kept promise as half and leaves out promises still in progress or not yet due. Terms are when the promise was made: 2008–17 covers the National-led years, 2017–23 the Labour-led years, 2023–26 the current term.</p>` }
+const MAIN7 = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'];
+V.promises = () => { const pr = S.data.promises || {}; const parties = Object.keys(pr).filter(p => (pr[p] || []).length).sort((a, b) => (MAIN7.includes(a) ? 0 : 1) - (MAIN7.includes(b) ? 0 : 1) || P(a).order - P(b).order);
+  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Keeping their word</div><h2>Promises against delivery</h2><p class="lede">Promises from past campaigns and coalition deals, each checked against what happened, with sources. Choose a period: the whole record, the last two governments, or just the current term.</p></div>
+    ${periodBar('prper')}<div class="card scroll anim" id="prtable"></div><div id="pl"></div></section>`;
+  const drawTable = () => { const per = S.promPeriod || 'all'; const t = $('#prtable');
+    if (per === 'byterm') { t.innerHTML = `<h3>Term by term</h3>${byTermTable(parties, pr)}`; }
+    else { const rows = parties.map(p => ({ p, L: (pr[p] || []).filter(x => inPeriod(x, per)) })).filter(r => r.L.length);
+      t.innerHTML = `<table><thead><tr><th>Party</th><th>Record</th><th class="n">Checked</th><th class="n">Kept</th><th class="n">Partly</th><th class="n">Broken / dropped</th><th class="n">In progress</th><th class="n">% kept</th></tr></thead><tbody>
+      ${rows.map(({ p, L }) => { const sc = scoreOf(L); return `<tr><td><button class="btn ghost sm" data-go="party-${p}"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))}</button></td><td style="min-width:150px;padding-top:12px">${verdictMeter(L)}</td><td class="n">${sc.n}</td><td class="n">${sc.kept}</td><td class="n">${sc.partly}</td><td class="n">${sc.broken + sc.abandoned}</td><td class="n">${sc.progress + sc.due}</td><td class="n"><b>${sc.score == null ? '–' : sc.score + '%'}</b></td></tr>` }).join('')}</tbody></table>
+      <p class="tiny muted" style="margin-top:10px">${VERDICTS.map(v => `<span class="verdict v-${v}">${v.replace(/-/g, ' ')}</span>`).join(' ')} · Every promise below shows what was said, what happened and the sources; verdicts use the same definitions for every party (kept = delivered in substance and on time; partly = in part, late or narrower; broken = not delivered while in a position to; abandoned = dropped by the party itself). "% kept" counts partly kept as half and excludes promises still in progress or not yet due. Parties were assessed on different numbers of promises and from different positions (government, support partner, opposition); read each party's track record for the context.</p>` }
+    t.classList.remove('anim'); void t.offsetWidth; t.classList.add('anim') };
+  $('#prper').onclick = e => { const b = e.target.closest('[data-per]'); if (!b) return; S.promPeriod = b.dataset.per; store.set('promPeriod', S.promPeriod); $('#prper').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.per === S.promPeriod)); drawTable(); if (parties.length) promiseList($('#pl'), $('#prp') ? $('#prp').value : parties[0], parties) };
+  S.promPeriod = store.get('promPeriod') || 'all'; $('#prper').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.per === S.promPeriod));
+  drawTable(); if (parties.length) promiseList($('#pl'), parties[0], parties) };
+function promiseList(el, party, parties = null) { const pr = S.data.promises || {};
+  if (!(pr[party] || []).length) { el.innerHTML = `<p class="empty">The promise check for this party is still being researched.</p>${P(party).has_track_record ? `<button class="btn sm" data-page="parties/${party}/track-record.md">Read the track record</button>` : ''}`; return }
+  el.innerHTML = `<div class="stack" style="gap:12px">${recordSummary(party)}<div class="toolbar">${parties ? `<select id="prp" aria-label="Party">${parties.map(p => `<option value="${p}" ${p === party ? 'selected' : ''}>${esc(pname(p))}</option>`).join('')}</select>` : ''}
+    <select id="prv" aria-label="Verdict"><option value="">All verdicts</option>${VERDICTS.map(v => `<option value="${v}">${v.replace(/-/g, ' ')}</option>`).join('')}</select><input type="search" id="prq" placeholder="Search promises" aria-label="Search promises">
+    <button class="btn sm" id="prtr">Read the full track record</button></div><div id="prlist" class="stack" style="gap:10px"></div></div>`;
+  const draw = () => { const p = parties ? $('#prp', el).value : party, v = $('#prv', el).value, q = $('#prq', el).value.toLowerCase();
+    const per = S.promPeriod || 'all';
+    const L = (pr[p] || []).filter(x => inPeriod(x, per) && (!v || x.status === v) && (!q || JSON.stringify(x).toLowerCase().includes(q)));
+    $('#prlist', el).innerHTML = `<p class="small muted">${L.length} promises${per !== 'all' && per !== 'byterm' ? ' in this period' : ''}</p>` + L.map(x => `<article class="pol"><div class="head"><span class="verdict v-${esc(x.status || 'unknown')}">${esc((x.status || '?').replace(/-/g, ' '))}</span><div style="min-width:0"><div class="st">${esc(x.promise)}</div><div class="tiny muted">${esc(x.made || '')}${x.category ? ' · ' + esc(x.category) : ''}</div></div></div>
+      ${x.detail ? `<p>${esc(x.detail)}</p>` : ''}<div class="srcs">${(x.sources || []).slice(0, 6).map((s, i) => `<a class="tiny" href="${esc(typeof s === 'string' ? s : s.url)}" target="_blank" rel="noopener">source ${i + 1}</a>`).join(' ')}</div></article>`).join('') };
+  el.querySelectorAll('input,select').forEach(x => x.addEventListener('input', () => { if (x.id === 'prp') { promiseList(el, x.value, parties); return } draw() }));
+  $('#prtr', el).onclick = () => openPage(`parties/${parties ? $('#prp', el).value : party}/track-record.md`);
+  draw() }
 
-/* ----- auto-link party and politician names in text ----- */
-function buildLinker() { if (S.linker !== undefined) return S.linker; const names = [];
-  for (const [slug, p] of Object.entries(S.data.parties)) { for (const n of [p.name, p.short]) if (n && n.length > 3 && !/^(Independent|Other)$/i.test(n)) names.push([n, 'party-' + slug]) }
-  for (const p of (S.people || [])) if (p.name && p.name.trim().split(/\s+/).length >= 2) names.push([p.name, 'person:' + p.folder]);
-  names.sort((a, b) => b[0].length - a[0].length); const map = Object.fromEntries(names);
-  const re = new RegExp('(?<![\\w-])(' + names.map(([n]) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')(?![\\w-])', 'g');
-  S.linker = names.length ? { re, map } : null; return S.linker }
-function autolink(root) { const L = buildLinker(); if (!L || !root) return; const skip = 'A, BUTTON, H1, H2, H3, H4, .nm, .st, .who, .pcard, .person, .seatcard, .match, .scard, .legend, .tabs, select, input, code, pre';
-  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: n => (n.nodeValue.trim().length > 3 && !n.parentElement.closest(skip)) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
-  const nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
-  for (const n of nodes) { L.re.lastIndex = 0; if (!L.re.test(n.nodeValue)) continue; const frag = document.createDocumentFragment(); let last = 0; L.re.lastIndex = 0; let m;
-    while ((m = L.re.exec(n.nodeValue))) { frag.appendChild(document.createTextNode(n.nodeValue.slice(last, m.index))); const b = document.createElement('button'); b.className = 'lnk'; b.type = 'button'; b.textContent = m[0];
-      const t = L.map[m[0]]; if (t.startsWith('person:')) b.dataset.person = t.slice(7); else b.dataset.go = t; frag.appendChild(b); last = m.index + m[0].length }
-    frag.appendChild(document.createTextNode(n.nodeValue.slice(last))); n.parentNode.replaceChild(frag, n) } }
-
-/* ----- export / import saved results ----- */
-const SAVE_KEYS = ['quiz', 'quiz2', 'compass', 'swipe', 'myElectorate', 'bb-theme'];
-function exportSaved() { const o = {}; for (const k of SAVE_KEYS) { const v = store.get(k); if (v) o[k] = v } return btoa(unescape(encodeURIComponent(JSON.stringify(o)))) }
-function importSaved(code) { const o = JSON.parse(decodeURIComponent(escape(atob(code.trim())))); for (const [k, v] of Object.entries(o)) if (SAVE_KEYS.includes(k)) store.set(k, v) }
+/* ----- party newsroom + follow directory (headline, date, link only) ----- */
+const ACCT_LABEL = { website: 'Website', facebook: 'Facebook', instagram: 'Instagram', x: 'X', tiktok: 'TikTok', youtube: 'YouTube', linkedin: 'LinkedIn' };
+function acctLinks(a, extra = []) { const out = Object.entries(a || {}).filter(([, u]) => u).map(([k, u]) => `<a class="btn sm ghost" href="${esc(u)}" target="_blank" rel="noopener nofollow">${ACCT_LABEL[k] || k}</a>`);
+  for (const e of extra || []) out.push(`<a class="btn sm ghost" href="${esc(e.url || e)}" target="_blank" rel="noopener nofollow">${esc(e.label || e.kind || 'Other')}</a>`); return out.join('') }
+V.newsroom = async party => {
+  if (!S.news) S.news = await getJSON('data/newsroom.json').catch(() => null);
+  const N = S.news; if (!N || !N.items) { $('#main').innerHTML = '<section class="view"><p class="empty">The newsroom feed isn’t available in this build.</p></section>'; return }
+  const parties = partyOrder().filter(p => N.parties[p] || N.follow_parties[p]);
+  const sel = party && (N.parties[party] || N.follow_parties[party]) ? party : (S.newsSel || 'all'); S.newsSel = sel;
+  const fmtD = d => { const t = new Date(d); return isNaN(t) ? '' : t.toLocaleDateString('en-NZ', { day: 'numeric', month: 'short' }) };
+  const items = N.items.filter(i => i.party !== 'government').sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  const gov = N.items.filter(i => i.party === 'government').sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  const row = i => `<a class="pol" style="text-decoration:none;color:inherit" href="${esc(i.url)}" target="_blank" rel="noopener nofollow"><div class="head"><span class="dot" style="background:${pcolor(i.party)};margin-top:6px"></span><div><div class="st" style="font-size:15px">${esc(i.title)}</div><div class="tiny muted">${esc(i.party === 'government' ? 'Minister’s release' : pname(i.party))} · ${fmtD(i.date)} · via ${esc(i.source || '')} ↗</div></div></div></a>`;
+  let feed;
+  if (sel === 'all') { // equal slots per party first (latest 3 each), then everything newest-first
+    const top = [], seen = new Set();
+    for (const p of parties) for (const i of items.filter(x => x.party === p).slice(0, 3)) { top.push(i); seen.add(i.url) }
+    top.sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    const rest = items.filter(i => !seen.has(i.url));
+    const quiet = parties.filter(p => !items.some(i => i.party === p) && N.parties[p]);
+    feed = `<div class="stack" style="gap:8px">${top.map(row).join('')}</div>
+      ${quiet.length ? `<p class="small muted">No release in the last ${N.window_days || 60} days from: ${quiet.map(p => N.parties[p].newsroom_url ? `<a href="${esc(N.parties[p].newsroom_url)}" target="_blank" rel="noopener nofollow">${esc(pname(p))}</a>` : esc(pname(p))).join(', ')} (links go to their own newsrooms).</p>` : ''}
+      ${rest.length ? `<details class="card flat"><summary style="cursor:pointer"><b>Everything else, newest first</b> <span class="small muted">· ${rest.length} more</span></summary><div class="stack" style="gap:8px;margin-top:12px">${rest.map(row).join('')}</div></details>` : ''}`;
+  } else { const mine = items.filter(i => i.party === sel); const pm = N.parties[sel] || {};
+    feed = mine.length ? `<div class="stack" style="gap:8px">${mine.map(row).join('')}</div>` : `<p class="empty">No release from ${esc(pname(sel))} in the last ${N.window_days || 60} days in the feeds we read.${pm.newsroom_url ? ` <a href="${esc(pm.newsroom_url)}" target="_blank" rel="noopener nofollow">Their own newsroom ↗</a>` : ''}</p>` }
+  const fp = sel !== 'all' ? N.follow_parties[sel] : null;
+  const people = sel !== 'all' ? (N.follow_people || []).filter(p => p.party === sel) : [];
+  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">In their own words</div><h2>Party newsroom</h2>
+    <p class="lede">The latest releases from each party, as the parties wrote them. Headlines link to the original. Nothing here is fact-checked by us; for what the parties have actually done, see the <button class="btn ghost sm" data-go="promises">promise tracker</button>.</p>
+    <p class="tiny muted">Updated ${esc(String(N.updated || '').slice(0, 16).replace('T', ' '))}. Sources: party releases as published by the parties on Scoop and the Beehive; links go to the original pages. Equal space for every party first, then everything newest-first.</p></div>
+    <div class="toolbar"><div class="chips">${[['all', 'All parties'], ...parties.map(p => [p, pname(p)])].map(([k, l]) => `<button class="chip" data-news="${esc(k)}" aria-pressed="${k === sel}" ${k !== 'all' ? `style="--pc:${pcolor(k)}"` : ''}>${esc(l)}</button>`).join('')}</div></div>
+    ${feed}
+    ${sel !== 'all' ? `<div class="card stack"><h3>Follow ${esc(pname(sel))}</h3>${fp ? `<div class="row">${acctLinks(fp.accounts)}${fp.newsroom_url ? `<a class="btn sm" href="${esc(fp.newsroom_url)}" target="_blank" rel="noopener nofollow">Newsroom</a>` : ''}</div>${Object.values(fp.verified || {}).some(v => v === false) ? '<p class="tiny muted">Some account links could not be checked against the party’s own website (it blocks automated access) and come from Wikidata.</p>' : ''}` : '<p class="small muted">No account links recorded.</p>'}
+      ${people.length ? `<details><summary style="cursor:pointer"><b>Candidates and MPs (${people.length})</b> <span class="small muted">· public accounts they listed themselves</span></summary><div class="stack" style="gap:6px;margin-top:12px">${people.sort((a, b) => a.name.localeCompare(b.name)).map(p => { const links = acctLinks(p.accounts, p.other) + (p.email ? `<a class="btn sm ghost" href="mailto:${esc(p.email)}">Email</a>` : ''); return `<div class="row" style="justify-content:space-between;gap:8px"><span class="small"><button class="lnk" data-person="${esc(p.folder)}">${esc(p.name)}</button>${p.electorate_2026 ? ` <span class="tiny muted">· ${esc(p.electorate_2026)}</span>` : ''}</span><span class="row" style="gap:4px">${links || '<span class="tiny muted">no public accounts listed</span>'}</span></div>` }).join('')}</div></details>` : ''}</div>` : ''}
+    ${gov.length && (sel === 'all') ? `<details class="card flat"><summary style="cursor:pointer"><b>Ministers’ releases (Beehive)</b> <span class="small muted">· ${gov.length}, official government announcements, not party releases</span></summary><div class="stack" style="gap:8px;margin-top:12px">${gov.slice(0, 30).map(row).join('')}</div></details>` : ''}
+    <p class="tiny muted">Account links are as the parties and candidates published them (party websites, candidates’ policy.nz entries, Wikidata where a site blocks access) and are not endorsements. Personal email addresses are not shown. Ask for a correction via the repository.</p></section>`;
+  $('#main').querySelectorAll('[data-news]').forEach(b => b.onclick = () => { S.newsSel = b.dataset.news; route(b.dataset.news === 'all' ? 'newsroom' : 'newsroom-' + b.dataset.news) });
+};
 
 /* ----- political compass ----- */
 function compassState() { try { return JSON.parse(store.get('compass') || '{}') } catch { return {} } }
@@ -804,135 +961,65 @@ V.compass = () => {
   if (!Object.keys(st.answers).length && i === 0) intro(); else if (i >= items.length) results(); else render();
 };
 
-/* ----- electorate map ----- */
-const MAP_YEARS = [2011, 2014, 2017, 2020, 2023, 2026];
-const slugify = n => String(n || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/^mount-|^mount /, 'mt-').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').replace(/^mount-/, 'mt-').replace(/-electorate$/, '');
-async function loadGeo(setId) { S.geo = S.geo || {}; if (!S.geo.index) S.geo.index = await getJSON('data/geo/index.json');
-  for (const t of ['general', 'maori']) { const k = `${t}-${setId}`; if (!S.geo[k]) S.geo[k] = await getJSON(`data/geo/${k}.json`).catch(() => ({ features: [] })) } return S.geo }
-function projector(bbox, W, H) { const [x0, y0, x1, y1] = bbox; const midLat = (y0 + y1) / 2, kx = Math.cos(midLat * Math.PI / 180);
-  const sw = (x1 - x0) * kx, sh = (y1 - y0), sc = Math.min(W / sw, H / sh); const ox = (W - sw * sc) / 2, oy = (H - sh * sc) / 2;
-  return ([lon, lat]) => [ox + (lon - x0) * kx * sc, oy + (y1 - lat) * sc] }
-function featPath(f, proj, bbox) { const polys = f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates; let d = '';
-  for (const poly of polys) { const ring = poly[0]; if (!ring || !ring.length) continue; if (ring[0][0] > 180 || ring[0][0] < bbox[0] - 1 || ring[0][0] > bbox[2] + 1 || ring[0][1] < bbox[1] - 1 || ring[0][1] > bbox[3] + 1) continue;
-    d += ring.map((c, i) => { const [x, y] = proj(c); return (i ? 'L' : 'M') + x.toFixed(1) + ' ' + y.toFixed(1) }).join('') + 'Z' } return d }
-function electorateResults(year) { // slug -> {party, winner, majority, runner_up, ...}
-  const out = {};
-  if (year === 2026) { for (const e of S.data.electorates || []) out[slugify(e.slug)] = { party: e.sitting_mp ? e.sitting_mp.party : null, winner: e.sitting_mp ? e.sitting_mp.name : 'Vacant', pending: true, e } ; return out }
-  const el = S.data.elections.find(x => x.year === year); for (const r of (el && el.electorates) || []) out[slugify(r.name)] = r; return out }
-V.map = async (startYear) => {
-  $('#main').innerHTML = `<section class="view"><p class="empty">Loading the map…</p></section>`;
-  await loadPeople();
-  let year = +startYear || +(store.get('mapYear') || 2023); let type = store.get('mapType') || 'general'; let sel = null; let playing = null;
-  const idx = (await loadGeo(S.geo && S.geo.index ? S.geo.index.election_to_boundary_set[2023] : 2020)).index;
-  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Every seat since 2011</div><h2>The electorate map</h2>
-    <p class="lede">Each electorate coloured by the party that won it. Drag the slider or press play to move through the elections, switch to the Māori electorates, and tap any seat for its story.</p></div>
-    <div class="row" style="justify-content:space-between"><div class="chips"><button class="chip" id="mt-g" aria-pressed="${type === 'general'}">General electorates</button><button class="chip" id="mt-m" aria-pressed="${type === 'maori'}">Māori electorates</button></div><div class="legend" id="mlegend"></div></div>
-    <div class="card scrubber"><button class="playbtn" id="mplay" aria-label="Play through the years">${ic('play', 22)}</button><div><input type="range" id="myear" min="0" max="${MAP_YEARS.length - 1}" step="1" value="${MAP_YEARS.indexOf(year)}" aria-label="Election year"><div class="years">${MAP_YEARS.map(y => `<span data-y="${y}">${y}</span>`).join('')}</div></div></div>
-    <div class="split" style="grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)"><div class="stack"><div class="card map" style="padding:8px" id="mmain"></div><div class="insets map" id="minsets"></div></div>
-      <div class="card mapside" id="mside"><p class="muted">Tap an electorate.</p></div></div>
-    <p class="tiny muted">Boundaries: Stats NZ / Representation Commission (CC BY 4.0), simplified; polygons extend offshore to the territorial-sea limit as published. Results: official counts via the archive's election data.</p></section>`;
-  const draw = async () => { store.set('mapYear', year); store.set('mapType', type);
-    const setId = idx.election_to_boundary_set[year]; await loadGeo(setId); const feats = S.geo[`${type}-${setId}`].features; const res = electorateResults(year);
-    const aliases = ((idx.boundary_sets[setId] || {}).aliases) || {};
-    const resFor = f => res[f.properties.slug] || res[aliases[f.properties.slug]] || res[slugify(f.properties.name)] || Object.values(res).find(r => r.e && slugify(r.e.name) === f.properties.slug) || null;
-    const colour = f => { const r = resFor(f); return r && r.party ? pcolor(r.party) : 'var(--surface-2)' };
-    const render = (bbox, W, H) => { const proj = projector(bbox, W, H); return feats.map(f => `<path class="el ${sel === f.properties.slug ? 'sel' : ''}" data-slug="${esc(f.properties.slug)}" d="${featPath(f, proj, bbox)}" fill="${colour(f)}"><title>${esc(f.properties.name)}${(r => r ? ' · ' + esc(r.winner || '') + (r.party ? ' (' + esc(pname(r.party)) + ')' : '') : '')(resFor(f))}</title></path>`).join('') };
-    $('#mmain').innerHTML = `<svg viewBox="0 0 520 640" role="img" aria-label="Map of electorates, ${year}">${render(idx.bbox_mainland, 520, 640)}<text x="12" y="28" style="font:800 28px var(--font-display);fill:var(--text)">${year}${year === 2026 ? ' · current MPs' : ''}</text></svg>`;
-    $('#minsets').innerHTML = type === 'general' ? ['auckland', 'wellington', 'christchurch'].map(k => { const ins = idx.insets[k]; return `<div class="inset"><span class="lab">${esc(ins.label)}</span><svg viewBox="0 0 200 200">${render(ins.bbox, 200, 200)}</svg></div>` }).join('') : '';
-    const counts = {}; feats.forEach(f => { const r = resFor(f); const p = r && r.party ? r.party : 'vacant'; counts[p] = (counts[p] || 0) + 1 });
-    $('#mlegend').innerHTML = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([p, n]) => `<span class="item"><span class="dot" style="background:${p === 'vacant' ? 'var(--surface-2)' : pcolor(p)}"></span>${p === 'vacant' ? 'Vacant' : esc(pname(p))} <b class="num">${n}</b></span>`).join('');
-    $('#myear').value = MAP_YEARS.indexOf(year); document.querySelectorAll('.years span').forEach(x => x.classList.toggle('on', +x.dataset.y === year));
-    $('#mt-g').setAttribute('aria-pressed', type === 'general'); $('#mt-m').setAttribute('aria-pressed', type === 'maori');
-    if (sel) side(feats.find(f => f.properties.slug === sel), resFor) };
-  const side = (f, resFor) => { if (!f) return; const r = resFor(f); const name = f.properties.name;
-    const hist = MAP_YEARS.filter(y => y !== 2026).map(y => { const rr = electorateResults(y); const h = rr[f.properties.slug] || rr[slugify(name)]; return [y, h] });
-    let html = `<div class="kicker">${type === 'maori' ? 'Māori electorate' : 'General electorate'}</div><h3>${esc(name)}</h3>`;
-    if (r && r.pending) { const e = r.e; html += `<p>${r.party ? `<b>Current MP:</b> ${esc(r.winner)} (${esc(pname(r.party))})` : '<b>Vacant</b>'}${e.mp_standing_again === false ? ' · not standing again' : ''}</p>
-        ${e.contest_notes ? `<p class="small muted">${esc(e.contest_notes)}</p>` : ''}<div class="tiny muted">${(e.candidates || []).length} candidates in 2026</div><div class="row" style="gap:6px">${(e.candidates || []).slice(0, 12).map(c => { const p = findPerson(c.slug, c.name) || { name: c.name, party: c.party }; return `<span title="${esc(c.name)} (${esc(pname(c.party))})">${faceHTML(p, c.party, 'face" style="width:40px;height:40px;--pc:' + pcolor(c.party))}</span>` }).join('')}</div>
-        <button class="btn sm" data-go="electorate-${esc(e.slug)}" style="justify-self:start">Candidates & 2026 guide</button>` }
-    else if (r) html += `<p><b>${year} winner:</b> ${esc(r.winner)} (${esc(pname(r.party))})${r.majority ? ` by <span class="num">${Number(r.majority).toLocaleString('en-NZ')}</span>` : ''}${r.runner_up ? ` over ${esc(r.runner_up)} (${esc(pname(r.runner_up_party))})` : ''}${r.result ? ` · <span class="badge">${esc(r.result)}</span>` : ''}</p>`;
-    else html += `<p class="muted">No result on record for this boundary set.</p>`;
-    html += `<h4>History</h4><div class="hist">${hist.map(([y, h]) => `<div><span class="num muted">${y}</span><span class="dot" style="background:${h && h.party ? pcolor(h.party) : 'var(--surface-2)'}"></span><span>${h ? esc(h.winner) + ' <span class="muted">· ' + esc(pname(h.party)) + '</span>' : '<span class="muted">seat did not exist</span>'}</span></div>`).join('')}</div>`;
-    $('#mside').innerHTML = html };
-  $('#main').addEventListener('click', e => { const p = e.target.closest('path.el'); if (!p) return; sel = p.dataset.slug; document.querySelectorAll('path.el').forEach(x => x.classList.toggle('sel', x.dataset.slug === sel)); draw() });
-  $('#myear').oninput = () => { year = MAP_YEARS[+$('#myear').value]; draw() };
-  $('#mt-g').onclick = () => { type = 'general'; sel = null; draw() }; $('#mt-m').onclick = () => { type = 'maori'; sel = null; draw() };
-  $('#mplay').onclick = () => { if (playing) { clearInterval(playing); playing = null; $('#mplay').innerHTML = ic('play', 22); return }
-    $('#mplay').innerHTML = ic('pause', 22); year = MAP_YEARS[0]; draw(); playing = setInterval(() => { const i = MAP_YEARS.indexOf(year); if (i >= MAP_YEARS.length - 1) { clearInterval(playing); playing = null; $('#mplay').innerHTML = ic('play', 22); return } year = MAP_YEARS[i + 1]; draw() }, 1400) };
-  draw();
+/* ----- quiz ----- */
+const SCALE = [[-2, 'Strongly disagree'], [-1, 'Disagree'], [0, 'Neutral'], [1, 'Agree'], [2, 'Strongly agree']];
+function quizState() { try { return JSON.parse(store.get('quiz') || '{}') } catch { return {} } }
+function saveQuiz(q) { store.set('quiz', JSON.stringify(q)) }
+const IMP = [['less', 'Matters less'], ['normal', 'Normal'], ['very', 'Matters a lot']];
+function q2State() { try { return JSON.parse(store.get('quiz2') || '{}') } catch { return {} } }
+function q2Save(st) { store.set('quiz2', JSON.stringify(st)) }
+function shuffled(ids, seed) { let x = seed || 1; const r = () => (x = (x * 1664525 + 1013904223) % 4294967296) / 4294967296; const a = ids.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a }
+function q2Scores(Q, st, { dropLow = false } = {}) { const W = { less: .5, normal: 1, very: 2 }; const k = ((Q.scoring || {}).shrinkage || {}).k ?? 4;
+  const answered = Q.statements.filter(q => typeof st.answers[q.id] === 'number'); const M = answered.length; const need = Math.max(10, Math.ceil(0.5 * M));
+  const out = []; for (const [slug, meta] of Object.entries(Q.parties || {})) { let num = 0, den = 0, n = 0; const byDim = {};
+    for (const q of answered) { const c = q.positions[slug]; if (!c || typeof c.position !== 'number') continue; if (dropLow && c.confidence === 'low') continue; const w = W[st.weights[q.id] || 'normal']; const a = 1 - Math.abs(st.answers[q.id] - c.position) / 4; num += w * a; den += w; n++; (byDim[q.dimension] = byDim[q.dimension] || []).push(a) }
+    if (!n) continue; out.push({ slug, name: meta.name, n, M, raw: num / den, match: (num + k * .5) / (den + k), inRanking: n >= need, dims: Object.fromEntries(Object.entries(byDim).map(([d, arr]) => [d, arr.reduce((x, y) => x + y, 0) / arr.length])) }) }
+  return out.sort((a, b) => b.match - a.match) }
+function dimPositions(Q, st) { const dims = {}; for (const q of Q.statements) { const d = dims[q.dimension] = dims[q.dimension] || { label: q.dimension_label, a: q.pole_a, b: q.pole_b, user: [], parties: {} };
+    if (typeof st.answers[q.id] === 'number') d.user.push(q.polarity_sign * st.answers[q.id]);
+    for (const [slug, c] of Object.entries(q.positions)) if (c && typeof c.position === 'number') (d.parties[slug] = d.parties[slug] || []).push(q.polarity_sign * c.position) }
+  const mean = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
+  return Object.fromEntries(Object.entries(dims).map(([k, d]) => [k, { ...d, user: d.user.length >= 2 ? mean(d.user) : null, parties: Object.fromEntries(Object.entries(d.parties).filter(([, a]) => a.length >= 2).map(([s, a]) => [s, mean(a)])) }])) }
+V.match = () => {
+  const Q = G().quiz2; if (!Q || !(Q.statements || []).length) { $('#main').innerHTML = `<section class="view"><h2>Find your match</h2><p class="empty">The quiz is being rebuilt on a published method. Check back soon.</p></section>`; return }
+  const st = q2State(); st.answers = st.answers || {}; st.weights = st.weights || {}; if (!st.seed) { st.seed = Math.floor(Math.random() * 1e9) + 1; q2Save(st) }
+  const order = shuffled(Q.statements.map(q => q.id), st.seed); const byId = Object.fromEntries(Q.statements.map(q => [q.id, q])); let i = Math.min(st.i || 0, order.length);
+  const intro = () => { const n = Object.keys(st.answers).length; $('#main').innerHTML = `<section class="view"><div class="quiz"><div class="stack"><div class="kicker">Find your match · ${Q.statements.length} statements · about 5 minutes</div><h2>Which parties think like you?</h2>
+      <p class="lede">Thirty statements about how New Zealand should work, each with its trade-off spelt out. No party is named. At the end you'll see how closely each party's published positions match yours, with the evidence for every one.</p>
+      <p class="small muted">Positions were placed by two independent coders from manifestos, recorded votes and leaders' statements, then reconciled (they agreed within one point on 99.6% of positions). Statements come in a random order; your answers stay on this device. <button class="btn ghost sm" data-page="guide/quiz-method.md">How it works</button></p>
+      <div class="row"><button class="btn sun" id="qstart">${n ? 'Continue' : 'Start'}</button>${n ? `<button class="btn" id="qres0">See my results</button><button class="btn ghost" id="qreset0">Start over</button>` : ''}</div></div></div></section>`;
+    $('#qstart').onclick = () => render(); const r = $('#qres0'); if (r) r.onclick = results; const z = $('#qreset0'); if (z) z.onclick = () => { st.answers = {}; st.weights = {}; st.i = 0; i = 0; q2Save(st); intro() } };
+  const render = () => { if (i >= order.length) return results(); const q = byId[order[i]]; const a = st.answers[q.id]; const w = st.weights[q.id] || 'normal';
+    $('#main').innerHTML = `<section class="view"><div class="quiz"><div class="row" style="justify-content:space-between"><div class="kicker">Statement ${i + 1} of ${order.length}</div><button class="btn ghost sm" id="qres">Results so far</button></div><div class="progress"><span style="width:${i / order.length * 100}%"></span></div>
+      <div class="qcard"><div class="qtext">${esc(q.text)}</div>
+        <div class="scale">${SCALE.map(([v, l]) => `<button data-v="${v}" aria-pressed="${a === v}">${l}</button>`).join('')}</div>
+        <div class="row" style="justify-content:space-between"><span class="seg" id="qimp">${IMP.map(([k, l]) => `<button data-w="${k}" aria-pressed="${w === k}">${l}</button>`).join('')}</span><div class="row"><button class="btn sm" id="qback" ${i === 0 ? 'disabled' : ''}>Back</button><button class="btn sm" id="qskip">No opinion</button></div></div></div>
+      <p class="tiny muted" style="text-align:center">Pick how much this matters to you before choosing, or leave it on Normal.</p></div></section>`;
+    $('.scale').onclick = e => { const b = e.target.closest('[data-v]'); if (!b) return; st.answers[q.id] = +b.dataset.v; i++; st.i = i; q2Save(st); render() };
+    $('#qimp').onclick = e => { const b = e.target.closest('[data-w]'); if (!b) return; st.weights[q.id] = b.dataset.w; q2Save(st); $('#qimp').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.w === b.dataset.w)) };
+    $('#qskip').onclick = () => { delete st.answers[q.id]; i++; st.i = i; q2Save(st); render() }; $('#qback').onclick = () => { i = Math.max(0, i - 1); st.i = i; q2Save(st); render() }; $('#qres').onclick = results };
+  const results = () => { const sc = q2Scores(Q, st); const scLow = Object.fromEntries(q2Scores(Q, st, { dropLow: true }).map(x => [x.slug, x.match])); const M = Object.keys(st.answers).filter(id => byId[id]).length;
+    const main = sc.filter(x => x.inRanking), few = sc.filter(x => !x.inRanking); const dims = dimPositions(Q, st);
+    const row = (x, idx) => { const band = scLow[x.slug] != null ? Math.abs(scLow[x.slug] - x.match) : 0; const gap = idx > 0 && main[idx - 1] ? Math.round((main[idx - 1].match - x.match) * 100) : null;
+      return `<div class="match" style="--pc:${pcolor(x.slug)}">${(() => { const f = leaderFaces(x.slug)[0]; return f ? faceHTML(f, x.slug) : `<span class="mono" style="--pc:${pcolor(x.slug)}">${esc(initials(x.slug))}</span>` })()}
+        <div style="min-width:0"><h3>${esc(pname(x.slug))}</h3><div class="meter" style="margin-top:6px"><span style="width:${x.match * 100}%;background:${pcolor(x.slug)}"></span></div><div class="tiny muted">Based on ${x.n} of your ${M} answers${band >= .02 ? ` · ±${Math.round(band * 100)} if low-confidence positions are set aside` : ''}${x.inRanking ? '' : ' · <span class="badge">limited information</span>'}</div></div>
+        <div class="stack" style="justify-items:end;gap:4px"><span class="pct">${Math.round(x.match * 100)}%</span><button class="btn sm" data-why="${x.slug}">Why</button></div></div>` };
+    $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:840px"><div class="stack"><div class="kicker">Your results · ${M} of ${Q.statements.length} answered</div><h2>How closely each party matches you</h2>
+      <p class="muted">Agreement is measured only on statements where a party has an evidenced position, weighted by how much each mattered to you, and pulled toward 50% by four "neutral" phantom statements so thin records can't win by luck. Differences of a few points are not meaningful.</p>${RESULT_DISCLAIMER}</div>
+      ${M ? (main.length ? main.map(row).join('') : '<p class="empty">Answer at least 10 statements to rank the parties.</p>') : '<p class="empty">Answer a few statements first.</p>'}
+      ${few.length && M ? `<details class="card flat"><summary style="cursor:pointer"><b>${few.length} parties with few public positions</b> <span class="small muted">· matched on fewer than ${Math.max(10, Math.ceil(0.5 * M))} of your answers, so not ranked</span></summary><div class="stack" style="margin-top:12px">${few.map(row).join('')}</div></details>` : ''}
+      ${M ? `<div class="card stack"><h3>Where you sit, dimension by dimension</h3><p class="small muted">Your average answer on each group of statements, with the parties' coded positions. Left and right here are the two poles of each dimension, not left and right wing.</p>
+        ${Object.entries(dims).map(([k, d]) => `<div class="stack" style="gap:4px"><div class="row" style="justify-content:space-between"><b class="small">${esc(d.label)}</b></div><div class="row tiny muted" style="justify-content:space-between"><span style="max-width:45%">${esc(d.a)}</span><span style="max-width:45%;text-align:right">${esc(d.b)}</span></div>
+          <div style="position:relative;height:34px;background:var(--sunk);border-radius:8px"><span style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--rule)"></span>${Object.entries(d.parties).map(([s, v]) => `<span title="${esc(pname(s))}" style="position:absolute;top:10px;left:calc(${(2 - v) / 4 * 100}% - 7px);width:14px;height:14px;border-radius:50%;background:${pcolor(s)};box-shadow:0 0 0 1px var(--seat-stroke)"></span>`).join('')}${d.user != null ? `<span style="position:absolute;top:3px;left:calc(${(2 - d.user) / 4 * 100}% - 12px);width:24px;height:28px;border-radius:8px;background:var(--sun);border:2px solid var(--ink);display:grid;place-items:center;font:800 11px var(--f-ui);color:var(--sun-ink)">You</span>` : ''}</div></div>`).join('')}
+        <div class="legend">${Object.keys(Q.parties).filter(s => Object.values(dims).some(d => d.parties[s] != null)).map(s => `<span class="item"><span class="dot" style="background:${pcolor(s)}"></span>${esc(pname(s))}</span>`).join('')}</div></div>` : ''}
+      <div class="row"><button class="btn primary" id="qagain">${i >= order.length ? 'Change my answers' : 'Keep answering'}</button><button class="btn" id="qreset">Start over</button><button class="btn ghost" data-page="guide/quiz-method.md">Method and full audit table</button></div></div></section>`;
+    $('#qagain').onclick = () => { i = i >= order.length ? 0 : i; render() }; $('#qreset').onclick = () => { st.answers = {}; st.weights = {}; st.i = 0; i = 0; q2Save(st); intro() };
+    $('#main').querySelectorAll('[data-why]').forEach(b => b.onclick = () => { const p = b.dataset.why; const lab = v => (SCALE.find(x => x[0] === v) || [0, '–'])[1];
+      openDialog(`You and ${pname(p)}`, `<p class="small muted">Each statement you answered, your answer, the party's coded position and the evidence behind it.</p><div class="stack">${order.filter(id => typeof st.answers[id] === 'number').map(id => { const q = byId[id]; const c = q.positions[p]; const u = st.answers[id];
+        return `<div class="pol"><div class="st">${esc(q.text)}</div><div class="row small"><span>You: <b>${lab(u)}</b></span><span>${esc(pname(p))}: <b>${c && typeof c.position === 'number' ? lab(c.position) + (c.position === 0 ? ' (argued neutral)' : '') : 'no evidenced position'}</b>${c && c.confidence ? ` <span class="tiny muted">· ${esc(c.confidence)} confidence</span>` : ''}</span></div>
+          ${c && c.evidence ? `<p class="small muted">${esc(c.evidence.length > 420 ? c.evidence.slice(0, 420) + '…' : c.evidence)}${c.source_url ? ` <a href="${esc(c.source_url)}" target="_blank" rel="noopener">source</a>` : ''}</p>` : ''}</div>` }).join('')}</div>`) }) };
+  if (!Object.keys(st.answers).length && i === 0) intro(); else if (i >= order.length) results(); else render();
 };
-
-/* ----- polls & forecast ----- */
-const isPollster = p => p.pollster && !/election result/i.test(p.pollster);
-V.polls = () => {
-  const polls = (S.data.polls || []).filter(isPollster).sort((a, b) => b.date.localeCompare(a.date));
-  const F = S.data.forecast; const pr = projection(8);
-  const pollsters = [...new Set(polls.map(p => p.pollster))];
-  const latestBy = pollsters.map(n => polls.find(p => p.pollster === n)).sort((a, b) => b.date.localeCompare(a.date));
-  const parties = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'];
-  const on = new Set(pollsters); const onP = new Set(parties.slice(0, 6));
-  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Polls & forecast · latest poll ${esc(polls[0] ? polls[0].date : '')}</div><h2>What the polls say</h2>
-    <p class="lede">Every public poll since the 2023 election, from ${pollsters.length} pollsters, with a pooled trend. Polls differ in method and have margins of error of around ±3 points, so look at the trend, not one number.</p></div>
-    ${F && F.parties ? forecastSummary(F) : `<div class="card stack"><div class="row" style="justify-content:space-between"><h3>Poll of polls</h3><span class="tiny muted">average of the ${pr.n} latest polls (${esc(pr.range)})</span></div>
-      ${Object.entries(pr.pct).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= 0.8).map(([p, v]) => `<div class="row" style="flex-wrap:nowrap"><span style="width:120px;flex:none" class="small"><b>${esc(pname(p))}</b></span><div class="meter" style="flex:1"><span style="width:${v / 50 * 100}%;background:${pcolor(p)}"></span></div><span class="num small" style="width:48px;text-align:right">${fmt(v)}%</span></div>`).join('')}
-      <p class="tiny muted">A full forecast model (house effects, calibrated error, 20,000 simulated elections) is being built and will appear here.</p></div>`}
-    <div class="card chart stack"><div class="row" style="justify-content:space-between"><h3>Trend since the 2023 election</h3><span class="tiny muted">dots = individual polls · line = 8-poll rolling average</span></div>
-      <div class="chips" id="pp-parties">${parties.map(p => `<button class="chip" data-p="${p}" aria-pressed="${onP.has(p)}"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))}</button>`).join('')}</div>
-      <div class="chips" id="pp-pollsters">${pollsters.map(n => `<button class="chip" data-n="${esc(n)}" aria-pressed="true">${esc(n)} <span class="num muted">${polls.filter(p => p.pollster === n).length}</span></button>`).join('')}</div>
-      <div id="pchart"></div><div class="tip" id="ptip">Tap a dot for the poll.</div></div>
-    <div class="card scroll stack"><h3>Latest poll from each pollster</h3><table><thead><tr><th>Pollster</th><th>Fieldwork ended</th>${parties.map(p => `<th class="n"><span class="dot" title="${esc(pname(p))}" style="background:${pcolor(p)};display:inline-block"></span></th>`).join('')}<th class="n">Sample</th><th></th></tr></thead>
-      <tbody>${latestBy.map(p => `<tr><td><b>${esc(p.pollster)}</b></td><td class="num">${esc(p.date)}</td>${parties.map(x => `<td class="n">${p.parties[x] != null ? fmt(p.parties[x]) : '–'}</td>`).join('')}<td class="n">${p.sample_size ? Number(p.sample_size).toLocaleString('en-NZ') : '–'}</td><td>${p.source_url ? `<a class="tiny" href="${esc(p.source_url)}" target="_blank" rel="noopener">source</a>` : ''}</td></tr>`).join('')}</tbody></table>
-      <p class="tiny muted">Columns: ${parties.map(pname).join(', ')}. ${F && F.house_effects ? 'House effects (how each pollster leans relative to the pooled trend) are shown in the forecast section.' : ''}</p></div>
-    <div class="card scroll stack"><h3>All ${polls.length} polls</h3><div id="palltable"></div></div>
-    <p class="small muted">Poll data is compiled from each pollster's published release (linked), via the public record on Wikipedia, and is refreshed automatically. <button class="btn ghost sm" data-page="guide/forecast-method.md">How the forecast works</button></p></section>`;
-  const draw = () => { const sel = polls.filter(p => on.has(p.pollster)); $('#pchart').innerHTML = pollChart(sel, [...onP], $('#pchart').clientWidth || 760) };
-  $('#pp-parties').onclick = e => { const b = e.target.closest('[data-p]'); if (!b) return; onP.has(b.dataset.p) ? onP.delete(b.dataset.p) : onP.add(b.dataset.p); b.setAttribute('aria-pressed', onP.has(b.dataset.p)); draw() };
-  $('#pp-pollsters').onclick = e => { const b = e.target.closest('[data-n]'); if (!b) return; on.has(b.dataset.n) ? on.delete(b.dataset.n) : on.add(b.dataset.n); b.setAttribute('aria-pressed', on.has(b.dataset.n)); draw() };
-  $('#pchart').onclick = e => { const c = e.target.closest('[data-tip]'); if (c) $('#ptip').textContent = c.dataset.tip };
-  let lim = 40; const all = () => { $('#palltable').innerHTML = `<table><thead><tr><th>Ended</th><th>Pollster</th>${parties.map(p => `<th class="n"><span class="dot" title="${esc(pname(p))}" style="background:${pcolor(p)};display:inline-block"></span></th>`).join('')}<th class="n">n</th></tr></thead><tbody>${polls.slice(0, lim).map(p => `<tr><td class="num">${esc(p.date)}</td><td>${p.source_url ? `<a href="${esc(p.source_url)}" target="_blank" rel="noopener">${esc(p.pollster)}</a>` : esc(p.pollster)}</td>${parties.map(x => `<td class="n">${p.parties[x] != null ? fmt(p.parties[x]) : '–'}</td>`).join('')}<td class="n">${p.sample_size || '–'}</td></tr>`).join('')}</tbody></table>${polls.length > lim ? `<div class="row" style="justify-content:center;margin-top:10px"><button class="btn sm" id="pmore2">Show more</button></div>` : ''}`; const m = $('#pmore2'); if (m) m.onclick = () => { lim += 40; all() } };
-  draw(); all();
-};
-function pollChart(polls, parties, cw = 760) {
-  const W = Math.max(440, Math.min(760, Math.round(cw * 1.25))), H = 320, L = 36, R = 34, T = 10, B = 26;
-  const t0 = new Date('2023-10-01').getTime(), t1 = new Date('2026-11-14').getTime();
-  const xs = d => L + (new Date(d).getTime() - t0) / (t1 - t0) * (W - L - R), maxV = 45, ys = v => T + (1 - v / maxV) * (H - T - B);
-  let g = [0, 10, 20, 30, 40].map(v => `<line class="grid-l" x1="${L}" x2="${W - R}" y1="${ys(v)}" y2="${ys(v)}"/><text x="4" y="${ys(v) + 4}">${v}%</text>`).join('');
-  for (let y = 2024; y <= 2026; y++) g += `<text x="${xs(y + '-01-01')}" y="${H - 6}" text-anchor="middle">${y}</text>`;
-  g += `<line x1="${xs('2026-11-07')}" x2="${xs('2026-11-07')}" y1="${T}" y2="${H - B}" stroke="var(--primary)" stroke-dasharray="3 3"/><text x="${xs('2026-11-07') - 4}" y="${T + 10}" text-anchor="end" style="fill:var(--primary);font-weight:700">election</text>`;
-  g += `<line x1="${L}" x2="${W - R}" y1="${ys(5)}" y2="${ys(5)}" stroke="var(--text-2)" stroke-dasharray="2 4"/><text x="${L + 4}" y="${ys(5) - 4}">5% threshold</text>`;
-  const sorted = polls.slice().sort((a, b) => a.date.localeCompare(b.date));
-  const res2023 = (S.data.elections.find(e => e.year === 2023) || {}).parties || [];
-  for (const p of parties) { const c = pcolor(p); const pp = sorted.filter(x => typeof x.parties[p] === 'number'); if (!pp.length) continue;
-    const r = res2023.find(x => x.party === p); if (r) g += `<circle cx="${xs('2023-10-14')}" cy="${ys(r.party_vote_pct)}" r="5" fill="${c}" stroke="var(--surface)" stroke-width="2" data-tip="2023 election result · ${esc(pname(p))} ${fmt(r.party_vote_pct, 2)}%"></circle>`;
-    g += pp.map(x => `<circle cx="${xs(x.date).toFixed(1)}" cy="${ys(x.parties[p]).toFixed(1)}" r="3" fill="${c}" opacity=".45" data-tip="${esc(x.pollster)} · ${esc(x.date)} · ${esc(pname(p))} ${fmt(x.parties[p])}%${x.sample_size ? ' · n=' + x.sample_size : ''}"></circle>`).join('');
-    if (pp.length > 3) { const avg = pp.map((x, i) => { const w = pp.slice(Math.max(0, i - 7), i + 1); return [x.date, w.reduce((a, y) => a + y.parties[p], 0) / w.length] });
-      g += `<polyline fill="none" stroke="${c}" stroke-width="2.6" stroke-linejoin="round" points="${avg.map(([d, v]) => `${xs(d).toFixed(1)},${ys(v).toFixed(1)}`).join(' ')}"/>`;
-      const [ld, lv] = avg[avg.length - 1]; g += `<text x="${(xs(ld) + 6).toFixed(1)}" y="${(ys(lv) + 4).toFixed(1)}" style="fill:${c};font-weight:700">${fmt(lv)}</text>` } }
-  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Polls since 2023">${g}</svg>` }
-function forecastSummary(F) {
-  const P7 = F.parties || []; const H = F.headline || {}; const blocs = F.blocs || [];
-  const pct = v => (v == null ? '–' : Math.round(v) + '%');
-  const tile = (v, l) => `<div class="stat"><b>${pct(v)}</b><span>${esc(l)}</span></div>`;
-  const band = (lo, hi, mean, max, c) => `<div class="meter" style="flex:1;position:relative;height:12px"><span style="position:absolute;left:${lo / max * 100}%;width:${Math.max(0.5, (hi - lo) / max * 100)}%;height:100%;background:${c};opacity:.35"></span><span style="position:absolute;left:${mean / max * 100}%;width:3px;height:100%;background:${c}"></span></div>`;
-  const lp = H.largest_party_probability || {};
-  const mlp = F.most_likely_parliament && F.most_likely_parliament.seats;
-  const maori = (F.electorates && F.electorates.maori_seats) || {};
-  const track = (F.historical_track_record && F.historical_track_record.elections) || [];
-  const partyKey = n => ({ 'National': 'national', 'Labour': 'labour', 'Green': 'green', 'ACT': 'act', 'NZ First': 'nz-first', 'Te Pāti Māori': 'te-pati-maori', 'TOP': 'opportunity', 'Te Tai Tokerau Party': 'te-tai-tokerau-party', 'Independent': 'independent' }[n] || n);
-  return `<div class="card stack" style="gap:18px"><div class="row" style="justify-content:space-between"><div><div class="kicker">Forecast · ${esc(F.days_to_election)} days to go · updated ${esc((F.generated || '').slice(0, 10))}</div><h3>If the election were held on current polling</h3></div><button class="btn sm" data-page="guide/forecast-method.md">How the model works</button></div>
-    <div class="stats">${tile(lp.national, 'National is the largest party')}${tile(lp.labour, 'Labour is the largest party')}${tile(H.p_right_bloc_majority_NAT_ACT_NZF, 'National + ACT + NZ First majority')}${tile(H.p_left_bloc_majority_LAB_GRN_TPM, 'Labour + Green + Te Pāti Māori majority')}${tile(H.p_no_bloc_majority ?? F.p_no_bloc_majority, 'Neither bloc has a majority')}${tile(H.p_TOP_over_5pct, 'TOP clears 5%')}${tile(H.p_TOP_holds_balance_of_power, 'TOP holds the balance of power')}</div>
-    <div class="split"><div class="stack"><h4>Party vote forecast <span class="tiny muted">(shaded = 80% range)</span></h4>
-      ${P7.slice().sort((a, b) => b.forecast_vote_mean - a.forecast_vote_mean).map(x => `<div class="row" style="flex-wrap:nowrap"><span style="width:104px;flex:none" class="small"><b>${esc(pname(x.party))}</b></span>${band(x.forecast_vote_80[0], x.forecast_vote_80[1], x.forecast_vote_mean, 45, pcolor(x.party))}<span class="num small" style="width:118px;text-align:right">${fmt(x.forecast_vote_mean)}% <span class="muted">${fmt(x.forecast_vote_80[0], 0)}–${fmt(x.forecast_vote_80[1], 0)}</span></span></div>`).join('')}</div>
-    <div class="stack"><h4>Seats <span class="tiny muted">(expected, with 80% range)</span></h4>
-      ${P7.slice().sort((a, b) => (b.seats_expected || 0) - (a.seats_expected || 0)).map(x => `<div class="row" style="flex-wrap:nowrap"><span style="width:104px;flex:none" class="small"><b>${esc(pname(x.party))}</b></span>${band((x.seats_80 || [0, 0])[0], (x.seats_80 || [0, 0])[1], x.seats_expected || 0, 70, pcolor(x.party))}<span class="num small" style="width:118px;text-align:right">${x.seats_expected ?? '–'} <span class="muted">${(x.seats_80 || []).join('–')}</span>${x.p_over_5pct != null && x.p_over_5pct < 99 ? ` <span class="tiny muted">· ${pct(x.p_over_5pct)} ≥5%</span>` : ''}</span></div>`).join('')}</div></div>
-    <div class="split"><div class="stack"><h4>Coalition blocs</h4><div class="scroll"><table><thead><tr><th>Bloc</th><th class="n">Seats</th><th class="n">80% range</th><th class="n">Chance of majority</th></tr></thead><tbody>${blocs.map(b => `<tr><td>${esc(b.bloc)}</td><td class="n">${b.seats_expected}</td><td class="n">${(b.seats_80 || []).join('–')}</td><td class="n"><b>${pct(b.p_majority)}</b></td></tr>`).join('')}</tbody></table></div>
-      <p class="tiny muted">${esc((F.majority_threshold || {}).note || '')}</p></div>
-      ${mlp ? `<div class="stack chamber"><h4>Most likely Parliament <span class="tiny muted">(${fmt((F.most_likely_parliament.share_of_simulations || 0) * 100, 1)}% of simulations)</span></h4>${chamberSVG(seatsFromComposition(mlp, []), { label: 'Most likely parliament' })}<div class="legend">${Object.entries(mlp).filter(([, n]) => n).sort((a, b) => P(a[0]).order - P(b[0]).order).map(([p, n]) => `<span class="item"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))} <b class="num">${n}</b></span>`).join('')}</div></div>` : ''}</div>
-    ${Object.keys(maori).length ? `<details><summary style="cursor:pointer;color:var(--primary);font-weight:700">Māori electorates and Epsom: who is likely to win each seat</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Seat</th><th>Chance of winning</th></tr></thead><tbody>${Object.entries(maori).map(([seat, m]) => `<tr><td>${esc(seat)}</td><td>${Object.entries(m.p_win || {}).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= 1).map(([p, v]) => `<span class="row" style="display:inline-flex;gap:4px;margin-right:10px"><span class="dot" style="background:${pcolor(partyKey(p))}"></span>${esc(p)} <b class="num">${pct(v)}</b></span>`).join('')}</td></tr>`).join('')}${F.electorates.epsom ? `<tr><td>Epsom</td><td><span class="row" style="display:inline-flex;gap:4px"><span class="dot" style="background:${pcolor('act')}"></span>ACT <b class="num">${pct(F.electorates.epsom.p_act_wins)}</b></span> <span class="tiny muted">${esc(F.electorates.epsom.assumption || '')}</span></td></tr>` : ''}</tbody></table></div></details>` : ''}
-    ${(F.pollsters || []).length ? `<details><summary style="cursor:pointer;color:var(--primary);font-weight:700">Pollster house effects (how each pollster leans vs the pooled trend)</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Pollster</th><th class="n">Polls</th>${P7.map(x => `<th class="n"><span class="dot" title="${esc(pname(x.party))}" style="background:${pcolor(x.party)};display:inline-block"></span></th>`).join('')}</tr></thead><tbody>${F.pollsters.filter(q => q.n_polls_this_term).map(q => `<tr><td>${esc(q.pollster)}${q.internal ? ' <span class="tiny muted">(party-commissioned, half weight)</span>' : ''}</td><td class="n">${q.n_polls_this_term}</td>${P7.map(x => { const v = (q.house_effects || {})[x.party]; return `<td class="n">${v == null ? '–' : (v > 0 ? '+' : '') + fmt(v)}</td>` }).join('')}</tr>`).join('')}</tbody></table></div><p class="tiny muted">${esc(F.house_effects_note || '')}</p></details>` : ''}
-    ${track.length ? `<details><summary style="cursor:pointer;color:var(--primary);font-weight:700">Track record: what this model would have said two weeks before past elections</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Election</th><th class="n">Polls used</th><th>Results inside the 80% range</th><th>Inside the 95% range</th></tr></thead><tbody>${track.map(t => `<tr><td class="num">${t.election}</td><td class="n">${t.n_polls_used_120d ?? '–'}</td><td>${esc(t.coverage80 || '')}</td><td>${esc(t.coverage95 || '')}</td></tr>`).join('')}</tbody></table></div><p class="tiny muted">${esc(F.historical_track_record.note || '')} Overall: ${esc(F.historical_track_record.coverage80 || '')} of results fell inside the 80% range and ${esc(F.historical_track_record.coverage95 || '')} inside the 95% range.</p></details>` : ''}
-    <details><summary style="cursor:pointer;color:var(--primary);font-weight:700">How to read this, and what it can't tell you</summary><ul class="small" style="margin-top:8px">${(F.how_to_read || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul><h4>Caveats</h4><ul class="small">${(F.caveats || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></details>
-    <p class="tiny muted">${esc(F.simulation ? F.simulation.draws.toLocaleString('en-NZ') + ' simulated elections' : '')} · poll-of-polls with recency weighting and pollster house effects, polling error calibrated on 2011–2023, seats by Sainte-Laguë with the 5% threshold and electorate seats. Probabilities are rounded to whole numbers on purpose.</p></div>` }
 
 /* ----- policy swipe ----- */
 function swipeState() { try { return JSON.parse(store.get('swipe') || '{}') } catch { return {} } }
@@ -1015,92 +1102,99 @@ V['swipe-tally'] = async () => {
   $('#sw-reset').onclick = () => { st.done = {}; saveSwipe(st); route('swipe') };
 };
 
-/* ----- quiz ----- */
-const SCALE = [[-2, 'Strongly disagree'], [-1, 'Disagree'], [0, 'Neutral'], [1, 'Agree'], [2, 'Strongly agree']];
-function quizState() { try { return JSON.parse(store.get('quiz') || '{}') } catch { return {} } }
-function saveQuiz(q) { store.set('quiz', JSON.stringify(q)) }
-const IMP = [['less', 'Matters less'], ['normal', 'Normal'], ['very', 'Matters a lot']];
-function q2State() { try { return JSON.parse(store.get('quiz2') || '{}') } catch { return {} } }
-function q2Save(st) { store.set('quiz2', JSON.stringify(st)) }
-function shuffled(ids, seed) { let x = seed || 1; const r = () => (x = (x * 1664525 + 1013904223) % 4294967296) / 4294967296; const a = ids.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a }
-function q2Scores(Q, st, { dropLow = false } = {}) { const W = { less: .5, normal: 1, very: 2 }; const k = ((Q.scoring || {}).shrinkage || {}).k ?? 4;
-  const answered = Q.statements.filter(q => typeof st.answers[q.id] === 'number'); const M = answered.length; const need = Math.max(10, Math.ceil(0.5 * M));
-  const out = []; for (const [slug, meta] of Object.entries(Q.parties || {})) { let num = 0, den = 0, n = 0; const byDim = {};
-    for (const q of answered) { const c = q.positions[slug]; if (!c || typeof c.position !== 'number') continue; if (dropLow && c.confidence === 'low') continue; const w = W[st.weights[q.id] || 'normal']; const a = 1 - Math.abs(st.answers[q.id] - c.position) / 4; num += w * a; den += w; n++; (byDim[q.dimension] = byDim[q.dimension] || []).push(a) }
-    if (!n) continue; out.push({ slug, name: meta.name, n, M, raw: num / den, match: (num + k * .5) / (den + k), inRanking: n >= need, dims: Object.fromEntries(Object.entries(byDim).map(([d, arr]) => [d, arr.reduce((x, y) => x + y, 0) / arr.length])) }) }
-  return out.sort((a, b) => b.match - a.match) }
-function dimPositions(Q, st) { const dims = {}; for (const q of Q.statements) { const d = dims[q.dimension] = dims[q.dimension] || { label: q.dimension_label, a: q.pole_a, b: q.pole_b, user: [], parties: {} };
-    if (typeof st.answers[q.id] === 'number') d.user.push(q.polarity_sign * st.answers[q.id]);
-    for (const [slug, c] of Object.entries(q.positions)) if (c && typeof c.position === 'number') (d.parties[slug] = d.parties[slug] || []).push(q.polarity_sign * c.position) }
-  const mean = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
-  return Object.fromEntries(Object.entries(dims).map(([k, d]) => [k, { ...d, user: d.user.length >= 2 ? mean(d.user) : null, parties: Object.fromEntries(Object.entries(d.parties).filter(([, a]) => a.length >= 2).map(([s, a]) => [s, mean(a)])) }])) }
-V.match = () => {
-  const Q = G().quiz2; if (!Q || !(Q.statements || []).length) { $('#main').innerHTML = `<section class="view"><h2>Find your match</h2><p class="empty">The quiz is being rebuilt on a published method. Check back soon.</p></section>`; return }
-  const st = q2State(); st.answers = st.answers || {}; st.weights = st.weights || {}; if (!st.seed) { st.seed = Math.floor(Math.random() * 1e9) + 1; q2Save(st) }
-  const order = shuffled(Q.statements.map(q => q.id), st.seed); const byId = Object.fromEntries(Q.statements.map(q => [q.id, q])); let i = Math.min(st.i || 0, order.length);
-  const intro = () => { const n = Object.keys(st.answers).length; $('#main').innerHTML = `<section class="view"><div class="quiz"><div class="stack"><div class="kicker">Find your match · ${Q.statements.length} statements · about 5 minutes</div><h2>Which parties think like you?</h2>
-      <p class="lede">Thirty statements about how New Zealand should work, each with its trade-off spelt out. No party is named. At the end you'll see how closely each party's published positions match yours, with the evidence for every one.</p>
-      <p class="small muted">Positions were placed by two independent coders from manifestos, recorded votes and leaders' statements, then reconciled (they agreed within one point on 99.6% of positions). Statements come in a random order; your answers stay on this device. <button class="btn ghost sm" data-page="guide/quiz-method.md">How it works</button></p>
-      <div class="row"><button class="btn sun" id="qstart">${n ? 'Continue' : 'Start'}</button>${n ? `<button class="btn" id="qres0">See my results</button><button class="btn ghost" id="qreset0">Start over</button>` : ''}</div></div></div></section>`;
-    $('#qstart').onclick = () => render(); const r = $('#qres0'); if (r) r.onclick = results; const z = $('#qreset0'); if (z) z.onclick = () => { st.answers = {}; st.weights = {}; st.i = 0; i = 0; q2Save(st); intro() } };
-  const render = () => { if (i >= order.length) return results(); const q = byId[order[i]]; const a = st.answers[q.id]; const w = st.weights[q.id] || 'normal';
-    $('#main').innerHTML = `<section class="view"><div class="quiz"><div class="row" style="justify-content:space-between"><div class="kicker">Statement ${i + 1} of ${order.length}</div><button class="btn ghost sm" id="qres">Results so far</button></div><div class="progress"><span style="width:${i / order.length * 100}%"></span></div>
-      <div class="qcard"><div class="qtext">${esc(q.text)}</div>
-        <div class="scale">${SCALE.map(([v, l]) => `<button data-v="${v}" aria-pressed="${a === v}">${l}</button>`).join('')}</div>
-        <div class="row" style="justify-content:space-between"><span class="seg" id="qimp">${IMP.map(([k, l]) => `<button data-w="${k}" aria-pressed="${w === k}">${l}</button>`).join('')}</span><div class="row"><button class="btn sm" id="qback" ${i === 0 ? 'disabled' : ''}>Back</button><button class="btn sm" id="qskip">No opinion</button></div></div></div>
-      <p class="tiny muted" style="text-align:center">Pick how much this matters to you before choosing, or leave it on Normal.</p></div></section>`;
-    $('.scale').onclick = e => { const b = e.target.closest('[data-v]'); if (!b) return; st.answers[q.id] = +b.dataset.v; i++; st.i = i; q2Save(st); render() };
-    $('#qimp').onclick = e => { const b = e.target.closest('[data-w]'); if (!b) return; st.weights[q.id] = b.dataset.w; q2Save(st); $('#qimp').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.w === b.dataset.w)) };
-    $('#qskip').onclick = () => { delete st.answers[q.id]; i++; st.i = i; q2Save(st); render() }; $('#qback').onclick = () => { i = Math.max(0, i - 1); st.i = i; q2Save(st); render() }; $('#qres').onclick = results };
-  const results = () => { const sc = q2Scores(Q, st); const scLow = Object.fromEntries(q2Scores(Q, st, { dropLow: true }).map(x => [x.slug, x.match])); const M = Object.keys(st.answers).filter(id => byId[id]).length;
-    const main = sc.filter(x => x.inRanking), few = sc.filter(x => !x.inRanking); const dims = dimPositions(Q, st);
-    const row = (x, idx) => { const band = scLow[x.slug] != null ? Math.abs(scLow[x.slug] - x.match) : 0; const gap = idx > 0 && main[idx - 1] ? Math.round((main[idx - 1].match - x.match) * 100) : null;
-      return `<div class="match" style="--pc:${pcolor(x.slug)}">${(() => { const f = leaderFaces(x.slug)[0]; return f ? faceHTML(f, x.slug) : `<span class="mono" style="--pc:${pcolor(x.slug)}">${esc(initials(x.slug))}</span>` })()}
-        <div style="min-width:0"><h3>${esc(pname(x.slug))}</h3><div class="meter" style="margin-top:6px"><span style="width:${x.match * 100}%;background:${pcolor(x.slug)}"></span></div><div class="tiny muted">Based on ${x.n} of your ${M} answers${band >= .02 ? ` · ±${Math.round(band * 100)} if low-confidence positions are set aside` : ''}${x.inRanking ? '' : ' · <span class="badge">limited information</span>'}</div></div>
-        <div class="stack" style="justify-items:end;gap:4px"><span class="pct">${Math.round(x.match * 100)}%</span><button class="btn sm" data-why="${x.slug}">Why</button></div></div>` };
-    $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:840px"><div class="stack"><div class="kicker">Your results · ${M} of ${Q.statements.length} answered</div><h2>How closely each party matches you</h2>
-      <p class="muted">Agreement is measured only on statements where a party has an evidenced position, weighted by how much each mattered to you, and pulled toward 50% by four "neutral" phantom statements so thin records can't win by luck. Differences of a few points are not meaningful.</p>${RESULT_DISCLAIMER}</div>
-      ${M ? (main.length ? main.map(row).join('') : '<p class="empty">Answer at least 10 statements to rank the parties.</p>') : '<p class="empty">Answer a few statements first.</p>'}
-      ${few.length && M ? `<details class="card flat"><summary style="cursor:pointer"><b>${few.length} parties with few public positions</b> <span class="small muted">· matched on fewer than ${Math.max(10, Math.ceil(0.5 * M))} of your answers, so not ranked</span></summary><div class="stack" style="margin-top:12px">${few.map(row).join('')}</div></details>` : ''}
-      ${M ? `<div class="card stack"><h3>Where you sit, dimension by dimension</h3><p class="small muted">Your average answer on each group of statements, with the parties' coded positions. Left and right here are the two poles of each dimension, not left and right wing.</p>
-        ${Object.entries(dims).map(([k, d]) => `<div class="stack" style="gap:4px"><div class="row" style="justify-content:space-between"><b class="small">${esc(d.label)}</b></div><div class="row tiny muted" style="justify-content:space-between"><span style="max-width:45%">${esc(d.a)}</span><span style="max-width:45%;text-align:right">${esc(d.b)}</span></div>
-          <div style="position:relative;height:34px;background:var(--sunk);border-radius:8px"><span style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--rule)"></span>${Object.entries(d.parties).map(([s, v]) => `<span title="${esc(pname(s))}" style="position:absolute;top:10px;left:calc(${(2 - v) / 4 * 100}% - 7px);width:14px;height:14px;border-radius:50%;background:${pcolor(s)};box-shadow:0 0 0 1px var(--seat-stroke)"></span>`).join('')}${d.user != null ? `<span style="position:absolute;top:3px;left:calc(${(2 - d.user) / 4 * 100}% - 12px);width:24px;height:28px;border-radius:8px;background:var(--sun);border:2px solid var(--ink);display:grid;place-items:center;font:800 11px var(--f-ui);color:var(--sun-ink)">You</span>` : ''}</div></div>`).join('')}
-        <div class="legend">${Object.keys(Q.parties).filter(s => Object.values(dims).some(d => d.parties[s] != null)).map(s => `<span class="item"><span class="dot" style="background:${pcolor(s)}"></span>${esc(pname(s))}</span>`).join('')}</div></div>` : ''}
-      <div class="row"><button class="btn primary" id="qagain">${i >= order.length ? 'Change my answers' : 'Keep answering'}</button><button class="btn" id="qreset">Start over</button><button class="btn ghost" data-page="guide/quiz-method.md">Method and full audit table</button></div></div></section>`;
-    $('#qagain').onclick = () => { i = i >= order.length ? 0 : i; render() }; $('#qreset').onclick = () => { st.answers = {}; st.weights = {}; st.i = 0; i = 0; q2Save(st); intro() };
-    $('#main').querySelectorAll('[data-why]').forEach(b => b.onclick = () => { const p = b.dataset.why; const lab = v => (SCALE.find(x => x[0] === v) || [0, '–'])[1];
-      openDialog(`You and ${pname(p)}`, `<p class="small muted">Each statement you answered, your answer, the party's coded position and the evidence behind it.</p><div class="stack">${order.filter(id => typeof st.answers[id] === 'number').map(id => { const q = byId[id]; const c = q.positions[p]; const u = st.answers[id];
-        return `<div class="pol"><div class="st">${esc(q.text)}</div><div class="row small"><span>You: <b>${lab(u)}</b></span><span>${esc(pname(p))}: <b>${c && typeof c.position === 'number' ? lab(c.position) + (c.position === 0 ? ' (argued neutral)' : '') : 'no evidenced position'}</b>${c && c.confidence ? ` <span class="tiny muted">· ${esc(c.confidence)} confidence</span>` : ''}</span></div>
-          ${c && c.evidence ? `<p class="small muted">${esc(c.evidence.length > 420 ? c.evidence.slice(0, 420) + '…' : c.evidence)}${c.source_url ? ` <a href="${esc(c.source_url)}" target="_blank" rel="noopener">source</a>` : ''}</p>` : ''}</div>` }).join('')}</div>`) }) };
-  if (!Object.keys(st.answers).length && i === 0) intro(); else if (i >= order.length) results(); else render();
+/* ----- Whose policy? pass-the-phone game ----- */
+const GAME_PARTIES = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'];
+
+V.game = async () => {
+  if (!S.swipe) S.swipe = await getJSON('data/swipe.json').catch(() => []);
+  await loadPeople();
+  let g; try { g = JSON.parse(store.get('game') || 'null') } catch { g = null }
+  const setup = () => { $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:640px"><div class="stack"><div class="kicker">Pass-the-phone game · 2–6 players</div><h2>Whose policy?</h2>
+      <p class="lede">A real 2026 policy comes up with no party named. Guess whose it is, then pass the phone. The policies come from the seven parties polling highest, dealt evenly, so nobody can win by picking one party every time.</p></div>
+      <div class="card stack"><label class="small"><b>Players</b></label><div id="names" class="stack" style="gap:6px"></div><div class="row"><button class="btn sm" id="addp">Add a player</button><label class="row small" style="gap:6px">Rounds each <select id="rounds"><option>3</option><option selected>5</option><option>8</option></select></label></div>
+        <button class="btn sun" id="startg" style="justify-self:start">Start</button></div>
+      <p class="tiny muted">Just a game: it tests knowledge of what the parties are proposing, not what you think of them.</p></div></section>`;
+    const names = $('#names'); const addRow = v => { const i = names.children.length; if (i >= 6) return; const d = document.createElement('div'); d.innerHTML = `<input type="search" value="${esc(v || 'Player ' + (i + 1))}" aria-label="Player ${i + 1} name" style="width:100%">`; names.appendChild(d) };
+    addRow('Player 1'); addRow('Player 2'); $('#addp').onclick = () => addRow();
+    $('#startg').onclick = () => { const players = [...names.querySelectorAll('input')].map(x => x.value.trim() || 'Player').slice(0, 6); const rounds = +$('#rounds').value;
+      const pool = buildDeck(S.swipe.filter(c => GAME_PARTIES.includes(c.party) && c.statement.length < 140), {}, '').slice(0, players.length * rounds);
+      g = { players, rounds, deck: pool.map(c => c.id), turn: 0, scores: players.map(() => 0), phase: 'handoff' }; store.set('game', JSON.stringify(g)); play() } };
+  const card = id => S.swipe.find(c => c.id === id);
+  const play = () => { const total = g.players.length * g.rounds; if (g.turn >= total || g.turn >= g.deck.length) return finish();
+    const pi = g.turn % g.players.length; const c = card(g.deck[g.turn]); const round = Math.floor(g.turn / g.players.length) + 1;
+    const scoreHTML = `<div class="score">${g.players.map((n, i) => `<span class="${i === pi ? 'turn' : ''}">${esc(n)} <b class="num">${g.scores[i]}</b></span>`).join('')}</div>`;
+    if (g.phase === 'handoff') { $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:640px">${scoreHTML}<div class="card handoff"><div class="kicker">Round ${round} of ${g.rounds}</div><div class="big">${esc(g.players[pi])}</div><p class="muted">Your turn. Take the phone, then tap when you're ready.</p><button class="btn sun" id="ready">I'm ready</button></div><button class="btn ghost sm" id="quitg">End game</button></div></section>`;
+      $('#ready').onclick = () => { g.phase = 'guess'; store.set('game', JSON.stringify(g)); play() }; $('#quitg').onclick = finish; return }
+    $('#main').innerHTML = `<section class="view"><div class="quiz gameboard" style="max-width:640px">${scoreHTML}<div class="card stack"><div class="kicker">${esc(g.players[pi])} · whose policy is this?</div><div class="qtext">${esc(c.statement)}</div>${c.how ? `<p class="small muted">${esc(c.how.slice(0, 260))}${c.how.length > 260 ? '…' : ''}</p>` : ''}</div>
+      <div class="pchoices" id="choices">${GAME_PARTIES.map(p => `<button data-p="${p}"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))}</button>`).join('')}</div><div id="verdict"></div></div></section>`;
+    $('#choices').onclick = e => { const b = e.target.closest('[data-p]'); if (!b || $('#choices').dataset.done) return; $('#choices').dataset.done = '1'; const right = b.dataset.p === c.party; if (right) g.scores[pi]++;
+      $('#choices').querySelectorAll('button').forEach(x => { if (x.dataset.p === c.party) x.classList.add('right'); else if (x === b) x.classList.add('wrong') });
+      $('#verdict').innerHTML = `<div class="card stack"><div class="row"><span class="verdict-pill" style="background:${right ? 'var(--v-kept)' : 'var(--v-broken)'}">${right ? '✓ Correct' : '✕ Not quite'}</span><span>It's a <b>${esc(P(c.party).name)}</b> policy.</span></div><div class="row">${c.doc ? `<button class="btn sm" data-doc="${esc(c.party)}|${esc(c.doc)}">Read the full policy</button>` : ''}<button class="btn primary" id="nextturn" style="margin-left:auto">${g.turn + 1 >= Math.min(g.deck.length, g.players.length * g.rounds) ? 'See results' : 'Pass the phone →'}</button></div></div>`;
+      $('#nextturn').onclick = () => { g.turn++; g.phase = 'handoff'; store.set('game', JSON.stringify(g)); play() } } };
+  const finish = () => { const order = g.players.map((n, i) => [n, g.scores[i]]).sort((a, b) => b[1] - a[1]); const played = Math.min(g.turn, g.deck.length);
+    $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:640px"><div class="stack"><div class="kicker">Final scores · ${played} policies</div><h2>${esc(order[0][0])} ${order.length > 1 && order[0][1] === order[1][1] ? 'ties for the win' : 'wins'}</h2></div>
+      <div class="card stack">${order.map(([n, sc], i) => `<div class="row" style="flex-wrap:nowrap"><span style="width:28px" class="num muted">${i + 1}</span><span style="flex:1"><b>${esc(n)}</b></span><div class="meter" style="flex:2"><span style="width:${g.rounds ? sc / g.rounds * 100 : 0}%;background:var(--sun)"></span></div><span class="num" style="width:60px;text-align:right">${sc} / ${g.rounds}</span></div>`).join('')}</div>
+      <p class="small muted">Want to know more about the policies you saw? They're all in <button class="btn ghost sm" data-go="policies">the policy browser</button>, with the parties' full documents.</p>
+      <div class="row"><button class="btn sun" id="again">Play again</button><button class="btn" data-go="swipe">Try Policy swipe</button></div></div></section>`;
+    $('#again').onclick = () => { store.set('game', 'null'); g = null; setup() } };
+  if (g && g.deck && g.turn < g.players.length * g.rounds) play(); else setup();
 };
 
-/* ----- electorate ----- */
-V.electorate = async slug => {
-  await loadPeople(); const E = (S.data.electorates || []).slice().sort((a, b) => a.name.localeCompare(b.name));
-  const sel = slug || store.get('myElectorate') || '';
-  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Your local vote</div><h2>Who's standing where you live</h2>
-    <p class="lede">Choose your electorate to meet the candidates. Not sure which one you're in? Look up your address at vote.nz.</p>${NOT_EC}</div>
-    ${locateBlock('loc-el')}
-    <div class="toolbar"><select id="esel" aria-label="Electorate"><option value="">Choose your electorate…</option>
-      ${['general', 'maori'].map(t => `<optgroup label="${t === 'maori' ? 'Māori electorates' : 'General electorates'}">${E.filter(e => (e.type || 'general') === t).map(e => `<option value="${esc(e.slug)}" ${e.slug === sel ? 'selected' : ''}>${esc(e.name)}</option>`).join('')}</optgroup>`).join('')}</select></div>
-    <div id="ebody"></div></section>`;
-  const draw = () => { const v = $('#esel').value; store.set('myElectorate', v); const e = E.find(x => x.slug === v); const b = $('#ebody');
-    if (!e) { b.innerHTML = E.length ? (isElectionDay() ? `<div class="grid">${E.map(x => `<button class="starter" style="padding:14px" data-elec="${esc(x.slug)}"><h4>${esc(x.name)}</h4></button>`).join('')}</div>` : `<div class="grid">${E.filter(x => x.marginal).slice(0, 9).map(x => `<button class="starter" data-elec="${esc(x.slug)}"><div class="kicker">Battleground</div><h3>${esc(x.name)}</h3><p class="small muted">${esc(x.contest_notes || '')}</p></button>`).join('')}</div>`) : '<p class="empty">Electorate guides are still being built.</p>'; return }
-    const r = e.result_2023 || {};
-    b.innerHTML = `<div class="split"><div class="stack" style="gap:16px"><div class="card stack"><h2>${esc(e.name)}</h2>${e.description ? `<p class="read">${esc(e.description)}</p><p class="tiny muted">Description from policy.nz.</p>` : ''}
-        ${(e.description_fact_check || []).length ? `<details class="small"><summary style="cursor:pointer;color:var(--primary);font-weight:700">Fact-check notes on this description (${e.description_fact_check.length})</summary><ul>${e.description_fact_check.map(f => `<li>${esc(typeof f === 'string' ? f : (f.note || f.correction || f.text || JSON.stringify(f)))}</li>`).join('')}</ul></details>` : ''}
-        ${e.contest_notes && !isElectionDay() ? `<p class="note">${esc(e.contest_notes)}</p>` : ''}</div>
-      <div class="stack"><h3>${(e.candidates || []).length} candidates</h3><div class="people">${(e.candidates || []).map(c => { const p = findPerson(c.slug, c.name) || { name: c.name, party: c.party };
-        return `<button class="person" data-person="${esc(c.slug)}">${faceHTML(p, c.party)}<span class="nm">${esc(c.name)}</span><span class="row tiny muted" style="gap:5px;justify-content:center"><span class="dot" style="background:${pcolor(c.party)}"></span>${esc(pname(c.party))}</span>${isMP(p.status) ? '<span class="status mp">Sitting MP</span>' : ''}</button>` }).join('')}</div></div></div>
-      <div class="stack" style="gap:16px">${e.sitting_mp ? `<div class="card stack"><h3>Current MP</h3><p>${esc(e.sitting_mp.name)} (${esc(pname(e.sitting_mp.party))})${e.mp_standing_again === false ? ' is not standing again.' : ''}</p></div>` : ''}
-        ${r.winner ? `<div class="card stack"><h3>Last time (2023)</h3><p class="small">${esc(r.winner)} (${esc(pname(r.party))}) won${r.majority ? ` by <b class="num">${Number(r.majority).toLocaleString('en-NZ')}</b> votes` : ''}${r.runner_up ? ` over ${esc(r.runner_up)} (${esc(pname(r.runner_up_party))})` : ''}.</p>
-          ${r.party_vote_pct ? '<p class="tiny muted">Party vote in this area</p>' : ''}${r.party_vote_pct ? Object.entries(r.party_vote_pct).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([p, v]) => `<div class="row" style="flex-wrap:nowrap"><span class="small" style="width:110px">${esc(pname(p))}</span><div class="meter" style="flex:1"><span style="width:${v}%;background:${pcolor(p)}"></span></div><span class="num tiny" style="width:44px;text-align:right">${fmt(v)}%</span></div>`).join('') : ''}
-          ${r.for_predecessor_seat || (e.predecessor_seats || []).some(x => x !== e.name) ? `<p class="tiny muted">Based on ${esc((e.predecessor_seats || []).join(', ') || r.seat || '')} before the 2025 boundary changes.</p>` : ''}</div>` : ''}
-        <button class="btn sm" data-page="electorates/${esc(e.slug)}.md" style="justify-self:start">Full electorate guide</button></div></div>`;
-    b.querySelectorAll('[data-person]').forEach(x => x.onclick = () => { const p = findPerson(x.dataset.person); if (p) openPerson(p) }) };
-  $('#esel').onchange = draw;
-  $('#ebody').addEventListener('click', e => { const b = e.target.closest('[data-elec]'); if (b) { $('#esel').value = b.dataset.elec; draw() } });
+/* ----- electorate map ----- */
+const MAP_YEARS = [2011, 2014, 2017, 2020, 2023, 2026];
+const slugify = n => String(n || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/^mount-|^mount /, 'mt-').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').replace(/^mount-/, 'mt-').replace(/-electorate$/, '');
+async function loadGeo(setId) { S.geo = S.geo || {}; if (!S.geo.index) S.geo.index = await getJSON('data/geo/index.json');
+  for (const t of ['general', 'maori']) { const k = `${t}-${setId}`; if (!S.geo[k]) S.geo[k] = await getJSON(`data/geo/${k}.json`).catch(() => ({ features: [] })) } return S.geo }
+function projector(bbox, W, H) { const [x0, y0, x1, y1] = bbox; const midLat = (y0 + y1) / 2, kx = Math.cos(midLat * Math.PI / 180);
+  const sw = (x1 - x0) * kx, sh = (y1 - y0), sc = Math.min(W / sw, H / sh); const ox = (W - sw * sc) / 2, oy = (H - sh * sc) / 2;
+  return ([lon, lat]) => [ox + (lon - x0) * kx * sc, oy + (y1 - lat) * sc] }
+function featPath(f, proj, bbox) { const polys = f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates; let d = '';
+  for (const poly of polys) { const ring = poly[0]; if (!ring || !ring.length) continue; if (ring[0][0] > 180 || ring[0][0] < bbox[0] - 1 || ring[0][0] > bbox[2] + 1 || ring[0][1] < bbox[1] - 1 || ring[0][1] > bbox[3] + 1) continue;
+    d += ring.map((c, i) => { const [x, y] = proj(c); return (i ? 'L' : 'M') + x.toFixed(1) + ' ' + y.toFixed(1) }).join('') + 'Z' } return d }
+function electorateResults(year) { // slug -> {party, winner, majority, runner_up, ...}
+  const out = {};
+  if (year === 2026) { for (const e of S.data.electorates || []) out[slugify(e.slug)] = { party: e.sitting_mp ? e.sitting_mp.party : null, winner: e.sitting_mp ? e.sitting_mp.name : 'Vacant', pending: true, e } ; return out }
+  const el = S.data.elections.find(x => x.year === year); for (const r of (el && el.electorates) || []) out[slugify(r.name)] = r; return out }
+V.map = async (startYear) => {
+  $('#main').innerHTML = `<section class="view"><p class="empty">Loading the map…</p></section>`;
+  await loadPeople();
+  let year = +startYear || +(store.get('mapYear') || 2023); let type = store.get('mapType') || 'general'; let sel = null; let playing = null;
+  const idx = (await loadGeo(S.geo && S.geo.index ? S.geo.index.election_to_boundary_set[2023] : 2020)).index;
+  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Every seat since 2011</div><h2>The electorate map</h2>
+    <p class="lede">Each electorate coloured by the party that won it. Drag the slider or press play to move through the elections, switch to the Māori electorates, and tap any seat for its story.</p></div>
+    <div class="row" style="justify-content:space-between"><div class="chips"><button class="chip" id="mt-g" aria-pressed="${type === 'general'}">General electorates</button><button class="chip" id="mt-m" aria-pressed="${type === 'maori'}">Māori electorates</button></div><div class="legend" id="mlegend"></div></div>
+    <div class="card scrubber"><button class="playbtn" id="mplay" aria-label="Play through the years">${ic('play', 22)}</button><div><input type="range" id="myear" min="0" max="${MAP_YEARS.length - 1}" step="1" value="${MAP_YEARS.indexOf(year)}" aria-label="Election year"><div class="years">${MAP_YEARS.map(y => `<span data-y="${y}">${y}</span>`).join('')}</div></div></div>
+    <div class="split" style="grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)"><div class="stack"><div class="card map" style="padding:8px" id="mmain"></div><div class="insets map" id="minsets"></div></div>
+      <div class="card mapside" id="mside"><p class="muted">Tap an electorate.</p></div></div>
+    <p class="tiny muted">Boundaries: Stats NZ / Representation Commission (CC BY 4.0), simplified; polygons extend offshore to the territorial-sea limit as published. Results: official counts via the archive's election data.</p></section>`;
+  const draw = async () => { store.set('mapYear', year); store.set('mapType', type);
+    const setId = idx.election_to_boundary_set[year]; await loadGeo(setId); const feats = S.geo[`${type}-${setId}`].features; const res = electorateResults(year);
+    const aliases = ((idx.boundary_sets[setId] || {}).aliases) || {};
+    const resFor = f => res[f.properties.slug] || res[aliases[f.properties.slug]] || res[slugify(f.properties.name)] || Object.values(res).find(r => r.e && slugify(r.e.name) === f.properties.slug) || null;
+    const colour = f => { const r = resFor(f); return r && r.party ? pcolor(r.party) : 'var(--surface-2)' };
+    const render = (bbox, W, H) => { const proj = projector(bbox, W, H); return feats.map(f => `<path class="el ${sel === f.properties.slug ? 'sel' : ''}" data-slug="${esc(f.properties.slug)}" d="${featPath(f, proj, bbox)}" fill="${colour(f)}"><title>${esc(f.properties.name)}${(r => r ? ' · ' + esc(r.winner || '') + (r.party ? ' (' + esc(pname(r.party)) + ')' : '') : '')(resFor(f))}</title></path>`).join('') };
+    $('#mmain').innerHTML = `<svg viewBox="0 0 520 640" role="img" aria-label="Map of electorates, ${year}">${render(idx.bbox_mainland, 520, 640)}<text x="12" y="28" style="font:800 28px var(--font-display);fill:var(--text)">${year}${year === 2026 ? ' · current MPs' : ''}</text></svg>`;
+    $('#minsets').innerHTML = type === 'general' ? ['auckland', 'wellington', 'christchurch'].map(k => { const ins = idx.insets[k]; return `<div class="inset"><span class="lab">${esc(ins.label)}</span><svg viewBox="0 0 200 200">${render(ins.bbox, 200, 200)}</svg></div>` }).join('') : '';
+    const counts = {}; feats.forEach(f => { const r = resFor(f); const p = r && r.party ? r.party : 'vacant'; counts[p] = (counts[p] || 0) + 1 });
+    $('#mlegend').innerHTML = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([p, n]) => `<span class="item"><span class="dot" style="background:${p === 'vacant' ? 'var(--surface-2)' : pcolor(p)}"></span>${p === 'vacant' ? 'Vacant' : esc(pname(p))} <b class="num">${n}</b></span>`).join('');
+    $('#myear').value = MAP_YEARS.indexOf(year); document.querySelectorAll('.years span').forEach(x => x.classList.toggle('on', +x.dataset.y === year));
+    $('#mt-g').setAttribute('aria-pressed', type === 'general'); $('#mt-m').setAttribute('aria-pressed', type === 'maori');
+    if (sel) side(feats.find(f => f.properties.slug === sel), resFor) };
+  const side = (f, resFor) => { if (!f) return; const r = resFor(f); const name = f.properties.name;
+    const hist = MAP_YEARS.filter(y => y !== 2026).map(y => { const rr = electorateResults(y); const h = rr[f.properties.slug] || rr[slugify(name)]; return [y, h] });
+    let html = `<div class="kicker">${type === 'maori' ? 'Māori electorate' : 'General electorate'}</div><h3>${esc(name)}</h3>`;
+    if (r && r.pending) { const e = r.e; html += `<p>${r.party ? `<b>Current MP:</b> ${esc(r.winner)} (${esc(pname(r.party))})` : '<b>Vacant</b>'}${e.mp_standing_again === false ? ' · not standing again' : ''}</p>
+        ${e.contest_notes ? `<p class="small muted">${esc(e.contest_notes)}</p>` : ''}<div class="tiny muted">${(e.candidates || []).length} candidates in 2026</div><div class="row" style="gap:6px">${(e.candidates || []).slice(0, 12).map(c => { const p = findPerson(c.slug, c.name) || { name: c.name, party: c.party }; return `<span title="${esc(c.name)} (${esc(pname(c.party))})">${faceHTML(p, c.party, 'face" style="width:40px;height:40px;--pc:' + pcolor(c.party))}</span>` }).join('')}</div>
+        <button class="btn sm" data-go="electorate-${esc(e.slug)}" style="justify-self:start">Candidates & 2026 guide</button>` }
+    else if (r) html += `<p><b>${year} winner:</b> ${esc(r.winner)} (${esc(pname(r.party))})${r.majority ? ` by <span class="num">${Number(r.majority).toLocaleString('en-NZ')}</span>` : ''}${r.runner_up ? ` over ${esc(r.runner_up)} (${esc(pname(r.runner_up_party))})` : ''}${r.result ? ` · <span class="badge">${esc(r.result)}</span>` : ''}</p>`;
+    else html += `<p class="muted">No result on record for this boundary set.</p>`;
+    html += `<h4>History</h4><div class="hist">${hist.map(([y, h]) => `<div><span class="num muted">${y}</span><span class="dot" style="background:${h && h.party ? pcolor(h.party) : 'var(--surface-2)'}"></span><span>${h ? esc(h.winner) + ' <span class="muted">· ' + esc(pname(h.party)) + '</span>' : '<span class="muted">seat did not exist</span>'}</span></div>`).join('')}</div>`;
+    $('#mside').innerHTML = html };
+  $('#main').addEventListener('click', e => { const p = e.target.closest('path.el'); if (!p) return; sel = p.dataset.slug; document.querySelectorAll('path.el').forEach(x => x.classList.toggle('sel', x.dataset.slug === sel)); draw() });
+  $('#myear').oninput = () => { year = MAP_YEARS[+$('#myear').value]; draw() };
+  $('#mt-g').onclick = () => { type = 'general'; sel = null; draw() }; $('#mt-m').onclick = () => { type = 'maori'; sel = null; draw() };
+  $('#mplay').onclick = () => { if (playing) { clearInterval(playing); playing = null; $('#mplay').innerHTML = ic('play', 22); return }
+    $('#mplay').innerHTML = ic('pause', 22); year = MAP_YEARS[0]; draw(); playing = setInterval(() => { const i = MAP_YEARS.indexOf(year); if (i >= MAP_YEARS.length - 1) { clearInterval(playing); playing = null; $('#mplay').innerHTML = ic('play', 22); return } year = MAP_YEARS[i + 1]; draw() }, 1400) };
   draw();
 };
 
@@ -1234,168 +1328,77 @@ SUB.calculator = el => {
     $('#calcleg').innerHTML = Object.entries(r.seats).filter(([, n]) => n).sort((a, b) => P(a[0]).order - P(b[0]).order).map(([p, n]) => `<span class="item"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))} <b class="num">${n}</b></span>`).join(''); return elec };
   $('#ctb').addEventListener('input', run); $('#cs-save').onclick = () => { store.set('elecAssume', JSON.stringify(run())); $('#cs-save').textContent = 'Saved' }; run() };
 
-/* ----- people ----- */
-V.people = async () => { await loadPeople();
-  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">${S.people.length} people</div><h2>MPs, former MPs and 2026 candidates</h2><p class="lede">Everyone who has sat in Parliament since 2011, and everyone standing in 2026. Tap a person for their profile and what they're doing now.</p></div><div id="pg"></div></section>`;
-  peopleGrid($('#pg')) };
-function peopleGrid(el, { party = '' } = {}) {
-  const parties = [...new Set(S.people.map(p => p.party))].sort((a, b) => P(a).order - P(b).order);
-  el.innerHTML = `<div class="stack" style="gap:14px"><div class="toolbar"><input type="search" id="pq" placeholder="Search name or electorate" aria-label="Search people">
-    ${party ? '' : `<select id="pp" aria-label="Party"><option value="">All parties</option>${parties.map(p => `<option value="${p}">${esc(pname(p))}</option>`).join('')}</select>`}
-    <select id="ps" aria-label="Status"><option value="">Everyone</option><option value="mp">Current MPs</option><option value="candidate-2026">New candidates</option><option value="former-mp">Former MPs</option></select></div><div id="plist2"></div></div>`;
-  let limit = 120;
-  const draw = () => { const q = $('#pq', el).value.trim().toLowerCase(), pa = party || ($('#pp', el) || {}).value, st = $('#ps', el).value;
-    const list = S.people.filter(p => (!pa || p.party === pa) && (!st || (st === 'mp' ? isMP(p.status) : p.status === st)) && (!q || (p.name + ' ' + (p.electorate_2026 || '')).toLowerCase().includes(q)))
-      .sort((a, b) => (isMP(b.status) - isMP(a.status)) || (P(a.party).order - P(b.party).order) || ((a.list_rank_2026 || 999) - (b.list_rank_2026 || 999)) || a.name.localeCompare(b.name));
-    $('#plist2', el).innerHTML = `<p class="small muted">${list.length} people</p><div class="people">${list.slice(0, limit).map(p => `<button class="person" data-i="${S.people.indexOf(p)}">${faceHTML(p, p.party)}<span class="nm">${esc(p.name)}</span>
-      <span class="row tiny muted" style="gap:5px;justify-content:center"><span class="dot" style="background:${pcolor(p.party)}"></span>${esc(pname(p.party))}</span><span class="status ${isMP(p.status) ? 'mp' : ''}">${esc(STATUS[p.status] || p.status || '')}</span>${p.list_rank_2026 ? `<span class="tiny muted">List #${p.list_rank_2026}</span>` : ''}</button>`).join('')}</div>
-      ${list.length > limit ? `<div class="row" style="justify-content:center;margin-top:12px"><button class="btn primary" id="pmore">Show more</button></div>` : ''}`;
-    const m = $('#pmore', el); if (m) m.onclick = () => { limit += 120; draw() } };
-  el.querySelectorAll('input,select').forEach(x => x.addEventListener('input', () => { limit = 120; draw() }));
-  el.addEventListener('click', e => { const b = e.target.closest('[data-i]'); if (b) openPerson(S.people[+b.dataset.i]) });
-  draw() }
-
-/* ----- promises ----- */
-const VERDICTS = ['kept', 'partially-kept', 'in-progress', 'broken', 'abandoned', 'not-yet-due'];
-const TERMS = [['2008-17', '2008–17'], ['2017-23', '2017–23'], ['2023-26', '2023–26'], ['2026', '2026 campaign']];
-const PERIODS = [['all', 'All time'], ['since2017', 'Last two governments (2017 →)'], ['current', 'Current term (2023–26)'], ['2026', '2026 promises'], ['byterm', 'By term']];
-function periodOf(x) { const m = String((x.made || '') + ' ' + (x.term || '')).match(/\b(20[0-2]\d)\b/); if (!m) return 'other'; const y = +m[1];
-  return y <= 2016 ? '2008-17' : y <= 2022 ? '2017-23' : y <= 2025 ? '2023-26' : '2026' }
-function inPeriod(x, per) { const t = periodOf(x); return per === 'all' || per === 'byterm' ? true : per === 'since2017' ? (t === '2017-23' || t === '2023-26') : per === 'current' ? t === '2023-26' : per === '2026' ? t === '2026' : true }
-function periodBar(id) { const cur = S.promPeriod || 'all'; return `<div class="seg" id="${id}">${PERIODS.map(([k, l]) => `<button data-per="${k}" aria-pressed="${cur === k}">${l}</button>`).join('')}</div>` }
-function scoreOf(L) { const c = v => L.filter(x => x.status === v).length; const resolved = L.filter(x => ['kept', 'partially-kept', 'broken', 'abandoned'].includes(x.status)).length;
-  return { n: L.length, kept: c('kept'), partly: c('partially-kept'), broken: c('broken'), abandoned: c('abandoned'), progress: c('in-progress'), due: c('not-yet-due'), resolved, score: resolved ? Math.round((c('kept') + .5 * c('partially-kept')) / resolved * 100) : null } }
-function verdictMeter(L, h = 14) { const n = L.length || 1; return `<div class="meter" style="height:${h}px">${VERDICTS.map(v => `<span class="v-${v}" style="width:${L.filter(x => x.status === v).length / n * 100}%"></span>`).join('')}</div>` }
-function byTermTable(parties, pr) { return `<div class="scroll"><table><thead><tr><th>Party</th>${TERMS.map(([, l]) => `<th>${l}</th>`).join('')}</tr></thead><tbody>${parties.map(p => `<tr><td><span class="row" style="gap:6px;flex-wrap:nowrap"><span class="dot" style="background:${pcolor(p)}"></span><b>${esc(pname(p))}</b></span></td>${TERMS.map(([k]) => { const L = (pr[p] || []).filter(x => periodOf(x) === k); if (!L.length) return '<td class="muted tiny">–</td>'; const sc = scoreOf(L); return `<td style="min-width:130px">${verdictMeter(L, 10)}<div class="tiny muted" style="margin-top:3px">${sc.n} checked${sc.score != null ? ` · <b>${sc.score}%</b> kept` : ' · not yet due'}</div></td>` }).join('')}</tr>`).join('')}</tbody></table></div>
-  <p class="tiny muted">"% kept" counts a partly kept promise as half and leaves out promises still in progress or not yet due. Terms are when the promise was made: 2008–17 covers the National-led years, 2017–23 the Labour-led years, 2023–26 the current term.</p>` }
-const MAIN7 = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'];
-V.promises = () => { const pr = S.data.promises || {}; const parties = Object.keys(pr).filter(p => (pr[p] || []).length).sort((a, b) => (MAIN7.includes(a) ? 0 : 1) - (MAIN7.includes(b) ? 0 : 1) || P(a).order - P(b).order);
-  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Keeping their word</div><h2>Promises against delivery</h2><p class="lede">Promises from past campaigns and coalition deals, each checked against what happened, with sources. Choose a period: the whole record, the last two governments, or just the current term.</p></div>
-    ${periodBar('prper')}<div class="card scroll anim" id="prtable"></div><div id="pl"></div></section>`;
-  const drawTable = () => { const per = S.promPeriod || 'all'; const t = $('#prtable');
-    if (per === 'byterm') { t.innerHTML = `<h3>Term by term</h3>${byTermTable(parties, pr)}`; }
-    else { const rows = parties.map(p => ({ p, L: (pr[p] || []).filter(x => inPeriod(x, per)) })).filter(r => r.L.length);
-      t.innerHTML = `<table><thead><tr><th>Party</th><th>Record</th><th class="n">Checked</th><th class="n">Kept</th><th class="n">Partly</th><th class="n">Broken / dropped</th><th class="n">In progress</th><th class="n">% kept</th></tr></thead><tbody>
-      ${rows.map(({ p, L }) => { const sc = scoreOf(L); return `<tr><td><button class="btn ghost sm" data-go="party-${p}"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))}</button></td><td style="min-width:150px;padding-top:12px">${verdictMeter(L)}</td><td class="n">${sc.n}</td><td class="n">${sc.kept}</td><td class="n">${sc.partly}</td><td class="n">${sc.broken + sc.abandoned}</td><td class="n">${sc.progress + sc.due}</td><td class="n"><b>${sc.score == null ? '–' : sc.score + '%'}</b></td></tr>` }).join('')}</tbody></table>
-      <p class="tiny muted" style="margin-top:10px">${VERDICTS.map(v => `<span class="verdict v-${v}">${v.replace(/-/g, ' ')}</span>`).join(' ')} · Every promise below shows what was said, what happened and the sources; verdicts use the same definitions for every party (kept = delivered in substance and on time; partly = in part, late or narrower; broken = not delivered while in a position to; abandoned = dropped by the party itself). "% kept" counts partly kept as half and excludes promises still in progress or not yet due. Parties were assessed on different numbers of promises and from different positions (government, support partner, opposition); read each party's track record for the context.</p>` }
-    t.classList.remove('anim'); void t.offsetWidth; t.classList.add('anim') };
-  $('#prper').onclick = e => { const b = e.target.closest('[data-per]'); if (!b) return; S.promPeriod = b.dataset.per; store.set('promPeriod', S.promPeriod); $('#prper').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.per === S.promPeriod)); drawTable(); if (parties.length) promiseList($('#pl'), $('#prp') ? $('#prp').value : parties[0], parties) };
-  S.promPeriod = store.get('promPeriod') || 'all'; $('#prper').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.per === S.promPeriod));
-  drawTable(); if (parties.length) promiseList($('#pl'), parties[0], parties) };
-function promiseList(el, party, parties = null) { const pr = S.data.promises || {};
-  if (!(pr[party] || []).length) { el.innerHTML = `<p class="empty">The promise check for this party is still being researched.</p>${P(party).has_track_record ? `<button class="btn sm" data-page="parties/${party}/track-record.md">Read the track record</button>` : ''}`; return }
-  el.innerHTML = `<div class="stack" style="gap:12px">${recordSummary(party)}<div class="toolbar">${parties ? `<select id="prp" aria-label="Party">${parties.map(p => `<option value="${p}" ${p === party ? 'selected' : ''}>${esc(pname(p))}</option>`).join('')}</select>` : ''}
-    <select id="prv" aria-label="Verdict"><option value="">All verdicts</option>${VERDICTS.map(v => `<option value="${v}">${v.replace(/-/g, ' ')}</option>`).join('')}</select><input type="search" id="prq" placeholder="Search promises" aria-label="Search promises">
-    <button class="btn sm" id="prtr">Read the full track record</button></div><div id="prlist" class="stack" style="gap:10px"></div></div>`;
-  const draw = () => { const p = parties ? $('#prp', el).value : party, v = $('#prv', el).value, q = $('#prq', el).value.toLowerCase();
-    const per = S.promPeriod || 'all';
-    const L = (pr[p] || []).filter(x => inPeriod(x, per) && (!v || x.status === v) && (!q || JSON.stringify(x).toLowerCase().includes(q)));
-    $('#prlist', el).innerHTML = `<p class="small muted">${L.length} promises${per !== 'all' && per !== 'byterm' ? ' in this period' : ''}</p>` + L.map(x => `<article class="pol"><div class="head"><span class="verdict v-${esc(x.status || 'unknown')}">${esc((x.status || '?').replace(/-/g, ' '))}</span><div style="min-width:0"><div class="st">${esc(x.promise)}</div><div class="tiny muted">${esc(x.made || '')}${x.category ? ' · ' + esc(x.category) : ''}</div></div></div>
-      ${x.detail ? `<p>${esc(x.detail)}</p>` : ''}<div class="srcs">${(x.sources || []).slice(0, 6).map((s, i) => `<a class="tiny" href="${esc(typeof s === 'string' ? s : s.url)}" target="_blank" rel="noopener">source ${i + 1}</a>`).join(' ')}</div></article>`).join('') };
-  el.querySelectorAll('input,select').forEach(x => x.addEventListener('input', () => { if (x.id === 'prp') { promiseList(el, x.value, parties); return } draw() }));
-  $('#prtr', el).onclick = () => openPage(`parties/${parties ? $('#prp', el).value : party}/track-record.md`);
-  draw() }
-
-/* ----- how to vote ----- */
-V.vote = () => { const H = G().howtovote || {}; const secs = H.sections || []; const ph = electionPhase();
-  if (!secs.length) { $('#main').innerHTML = `<section class="view"><h2>How to vote</h2><p class="empty">The guide is being verified. Meanwhile: enrol or check your details at <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or call 0800 36 76 56.</p></section>`; return }
-  let st; try { st = JSON.parse(store.get('votecheck') || '{}') } catch { st = {} }
-  const SIT = [['all', 'Just the basics'], ['first-time voters', 'My first time'], ['people who have not voted for a while', "Haven't voted in a while"], ['people away from home on election day', 'Away from home'], ['overseas voters', 'Overseas'], ['disabled voters', 'I need help to vote'], ['new residents', 'New to New Zealand']];
-  let sit = store.get('votesit') || 'all';
-  const top = { enrol: `<b>Enrolment closes midnight this Sunday, 25 October.</b> There is no enrolling on election day this year. If you're not sure you're enrolled, check now: it takes two minutes.`, advance: `<b>Voting is open now.</b> You can vote at any voting place in the country until Friday 6 November, or on election day, Saturday 7 November, 9am–7pm.`, electionday: `<b>Today is election day.</b> Voting places are open 9am–7pm. You don't need ID or your EasyVote card.`, results: `Voting has closed. Results are being counted.`, after: `The 2026 election has been held.` }[ph];
-  const matches = sec => sit === 'all' ? ['eligible', 'enrol', 'when-where', 'first-time'].includes(sec.id) : (sec.who_its_for || []).some(w => w.toLowerCase().includes(sit.split(' ')[0].toLowerCase()) || w.toLowerCase() === sit) || ['eligible', 'enrol', 'when-where'].includes(sec.id);
-  const render = () => { const shown = secs.filter(matches);
-    $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Voting in 2026, step by step</div><h2>How to vote</h2><p class="lede">Everything checked against the Electoral Commission and the law, written plainly. Pick what fits you and we'll show the steps that matter.</p></div>
-      <p class="note">${top}</p>
-      <div class="situ">${SIT.map(([k, l]) => `<button class="chip" data-sit="${esc(k)}" aria-pressed="${sit === k}">${l}</button>`).join('')}</div>
-      <div class="split"><div class="stack" style="gap:18px">
-        <div class="card stack"><h3>Your checklist</h3><div class="check">${(H.checklist || []).map((c, i) => `<label class="${st[i] ? 'done' : ''}"><input type="checkbox" data-ck="${i}" ${st[i] ? 'checked' : ''}><span><b>${esc(c.step)}</b><br><span class="small muted">${esc(c.done_when)}</span>${c.url ? ` <a class="small" href="${esc(c.url)}" target="_blank" rel="noopener">Do it</a>` : ''}</span></label>`).join('')}</div></div>
-        ${shown.map(sec => `<details class="card" ${(sec.id === 'enrol' && ph === 'enrol') || (sec.id === 'when-where' && ph !== 'enrol') ? 'open' : ''}><summary style="cursor:pointer;font:700 17px var(--f-display)">${esc(sec.title.replace(/^\d+\.\s*/, ''))}</summary><div class="stack" style="margin-top:12px">${(sec.steps || []).map((x, i) => `<div class="row" style="flex-wrap:nowrap;align-items:flex-start"><span class="stepnum">${i + 1}</span><div><p class="read" style="font-size:16px">${esc(x.text)}${x.date ? ` <span class="badge">${esc(x.date)}</span>` : ''}</p>${x.url ? `<a class="tiny" href="${esc(x.url)}" target="_blank" rel="noopener">${esc((x.source || 'source').split(',')[0])}</a>` : ''}</div></div>`).join('')}${(sec.notes || []).length ? `<ul class="small muted">${sec.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}</div></details>`).join('')}</div>
-      <div class="stack" style="gap:18px">
-        <div class="card stack"><h3>Find a voting place</h3><p class="small">The official finder shows every voting place with its opening days and hours, and lets you filter for wheelchair access. Hours differ from place to place during advance voting; on election day everywhere is open 9am–7pm.</p><div class="row"><a class="btn sun" href="${esc((H.voting_places || {}).official_finder || 'https://map.vote.nz')}" target="_blank" rel="noopener">Open the voting-place finder</a><a class="btn sm" href="${esc((H.voting_places || {}).official_finder_list_view || 'https://vote.nz')}" target="_blank" rel="noopener">List view</a></div><p class="tiny muted">You can vote at any voting place in New Zealand, not just in your own electorate.</p></div>
-        <div class="card stack"><h3>Need a hand?</h3>${Object.entries(H.contacts || {}).slice(0, 5).map(([k, v]) => `<p class="small"><b>${esc(k.replace(/_/g, ' ').replace(/^\w/, c => c.toUpperCase()))}:</b> ${esc(v)}</p>`).join('')}</div>
-        <div class="card stack"><h3>Key dates</h3><div class="hist">${(H.key_dates || []).filter(d => d.date >= '2026-10-20').map(d => `<div><span class="num muted">${esc(d.date.slice(5).replace('-', '/'))}</span><span class="dot" style="background:${d.date === '2026-11-07' ? 'var(--sun)' : 'var(--rule)'}"></span><span class="small">${esc(d.event)}</span></div>`).join('')}</div></div>
-        ${locateBlock('loc-vote')}
-        <p class="tiny muted">Verified ${esc(H.as_of || '')} against vote.nz, elections.nz and the Electoral Act 1993. Every step links to its source. ${(H.could_not_verify || []).length ? `<button class="btn ghost sm" data-page="guide/how-to-vote.md">Full guide and what we couldn't verify</button>` : ''}</p></div></div></section>`;
-    $('#main').querySelectorAll('[data-sit]').forEach(b => b.onclick = () => { sit = b.dataset.sit; store.set('votesit', sit); render() });
-    $('#main').querySelectorAll('[data-ck]').forEach(c => c.onchange = () => { st[c.dataset.ck] = c.checked; store.set('votecheck', JSON.stringify(st)); c.closest('label').classList.toggle('done', c.checked) }) };
-  render() };
-
-/* ----- Whose policy? pass-the-phone game ----- */
-const GAME_PARTIES = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'];
-/* ----- party newsroom + follow directory (headline, date, link only) ----- */
-const ACCT_LABEL = { website: 'Website', facebook: 'Facebook', instagram: 'Instagram', x: 'X', tiktok: 'TikTok', youtube: 'YouTube', linkedin: 'LinkedIn' };
-function acctLinks(a, extra = []) { const out = Object.entries(a || {}).filter(([, u]) => u).map(([k, u]) => `<a class="btn sm ghost" href="${esc(u)}" target="_blank" rel="noopener nofollow">${ACCT_LABEL[k] || k}</a>`);
-  for (const e of extra || []) out.push(`<a class="btn sm ghost" href="${esc(e.url || e)}" target="_blank" rel="noopener nofollow">${esc(e.label || e.kind || 'Other')}</a>`); return out.join('') }
-V.newsroom = async party => {
-  if (!S.news) S.news = await getJSON('data/newsroom.json').catch(() => null);
-  const N = S.news; if (!N || !N.items) { $('#main').innerHTML = '<section class="view"><p class="empty">The newsroom feed isn’t available in this build.</p></section>'; return }
-  const parties = partyOrder().filter(p => N.parties[p] || N.follow_parties[p]);
-  const sel = party && (N.parties[party] || N.follow_parties[party]) ? party : (S.newsSel || 'all'); S.newsSel = sel;
-  const fmtD = d => { const t = new Date(d); return isNaN(t) ? '' : t.toLocaleDateString('en-NZ', { day: 'numeric', month: 'short' }) };
-  const items = N.items.filter(i => i.party !== 'government').sort((a, b) => String(b.date).localeCompare(String(a.date)));
-  const gov = N.items.filter(i => i.party === 'government').sort((a, b) => String(b.date).localeCompare(String(a.date)));
-  const row = i => `<a class="pol" style="text-decoration:none;color:inherit" href="${esc(i.url)}" target="_blank" rel="noopener nofollow"><div class="head"><span class="dot" style="background:${pcolor(i.party)};margin-top:6px"></span><div><div class="st" style="font-size:15px">${esc(i.title)}</div><div class="tiny muted">${esc(i.party === 'government' ? 'Minister’s release' : pname(i.party))} · ${fmtD(i.date)} · via ${esc(i.source || '')} ↗</div></div></div></a>`;
-  let feed;
-  if (sel === 'all') { // equal slots per party first (latest 3 each), then everything newest-first
-    const top = [], seen = new Set();
-    for (const p of parties) for (const i of items.filter(x => x.party === p).slice(0, 3)) { top.push(i); seen.add(i.url) }
-    top.sort((a, b) => String(b.date).localeCompare(String(a.date)));
-    const rest = items.filter(i => !seen.has(i.url));
-    const quiet = parties.filter(p => !items.some(i => i.party === p) && N.parties[p]);
-    feed = `<div class="stack" style="gap:8px">${top.map(row).join('')}</div>
-      ${quiet.length ? `<p class="small muted">No release in the last ${N.window_days || 60} days from: ${quiet.map(p => N.parties[p].newsroom_url ? `<a href="${esc(N.parties[p].newsroom_url)}" target="_blank" rel="noopener nofollow">${esc(pname(p))}</a>` : esc(pname(p))).join(', ')} (links go to their own newsrooms).</p>` : ''}
-      ${rest.length ? `<details class="card flat"><summary style="cursor:pointer"><b>Everything else, newest first</b> <span class="small muted">· ${rest.length} more</span></summary><div class="stack" style="gap:8px;margin-top:12px">${rest.map(row).join('')}</div></details>` : ''}`;
-  } else { const mine = items.filter(i => i.party === sel); const pm = N.parties[sel] || {};
-    feed = mine.length ? `<div class="stack" style="gap:8px">${mine.map(row).join('')}</div>` : `<p class="empty">No release from ${esc(pname(sel))} in the last ${N.window_days || 60} days in the feeds we read.${pm.newsroom_url ? ` <a href="${esc(pm.newsroom_url)}" target="_blank" rel="noopener nofollow">Their own newsroom ↗</a>` : ''}</p>` }
-  const fp = sel !== 'all' ? N.follow_parties[sel] : null;
-  const people = sel !== 'all' ? (N.follow_people || []).filter(p => p.party === sel) : [];
-  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">In their own words</div><h2>Party newsroom</h2>
-    <p class="lede">The latest releases from each party, as the parties wrote them. Headlines link to the original. Nothing here is fact-checked by us; for what the parties have actually done, see the <button class="btn ghost sm" data-go="promises">promise tracker</button>.</p>
-    <p class="tiny muted">Updated ${esc(String(N.updated || '').slice(0, 16).replace('T', ' '))}. Sources: party releases as published by the parties on Scoop and the Beehive; links go to the original pages. Equal space for every party first, then everything newest-first.</p></div>
-    <div class="toolbar"><div class="chips">${[['all', 'All parties'], ...parties.map(p => [p, pname(p)])].map(([k, l]) => `<button class="chip" data-news="${esc(k)}" aria-pressed="${k === sel}" ${k !== 'all' ? `style="--pc:${pcolor(k)}"` : ''}>${esc(l)}</button>`).join('')}</div></div>
-    ${feed}
-    ${sel !== 'all' ? `<div class="card stack"><h3>Follow ${esc(pname(sel))}</h3>${fp ? `<div class="row">${acctLinks(fp.accounts)}${fp.newsroom_url ? `<a class="btn sm" href="${esc(fp.newsroom_url)}" target="_blank" rel="noopener nofollow">Newsroom</a>` : ''}</div>${Object.values(fp.verified || {}).some(v => v === false) ? '<p class="tiny muted">Some account links could not be checked against the party’s own website (it blocks automated access) and come from Wikidata.</p>' : ''}` : '<p class="small muted">No account links recorded.</p>'}
-      ${people.length ? `<details><summary style="cursor:pointer"><b>Candidates and MPs (${people.length})</b> <span class="small muted">· public accounts they listed themselves</span></summary><div class="stack" style="gap:6px;margin-top:12px">${people.sort((a, b) => a.name.localeCompare(b.name)).map(p => { const links = acctLinks(p.accounts, p.other) + (p.email ? `<a class="btn sm ghost" href="mailto:${esc(p.email)}">Email</a>` : ''); return `<div class="row" style="justify-content:space-between;gap:8px"><span class="small"><button class="lnk" data-person="${esc(p.folder)}">${esc(p.name)}</button>${p.electorate_2026 ? ` <span class="tiny muted">· ${esc(p.electorate_2026)}</span>` : ''}</span><span class="row" style="gap:4px">${links || '<span class="tiny muted">no public accounts listed</span>'}</span></div>` }).join('')}</div></details>` : ''}</div>` : ''}
-    ${gov.length && (sel === 'all') ? `<details class="card flat"><summary style="cursor:pointer"><b>Ministers’ releases (Beehive)</b> <span class="small muted">· ${gov.length}, official government announcements, not party releases</span></summary><div class="stack" style="gap:8px;margin-top:12px">${gov.slice(0, 30).map(row).join('')}</div></details>` : ''}
-    <p class="tiny muted">Account links are as the parties and candidates published them (party websites, candidates’ policy.nz entries, Wikidata where a site blocks access) and are not endorsements. Personal email addresses are not shown. Ask for a correction via the repository.</p></section>`;
-  $('#main').querySelectorAll('[data-news]').forEach(b => b.onclick = () => { S.newsSel = b.dataset.news; route(b.dataset.news === 'all' ? 'newsroom' : 'newsroom-' + b.dataset.news) });
+/* ----- polls & forecast ----- */
+const isPollster = p => p.pollster && !/election result/i.test(p.pollster);
+V.polls = () => {
+  const polls = (S.data.polls || []).filter(isPollster).sort((a, b) => b.date.localeCompare(a.date));
+  const F = S.data.forecast; const pr = projection(8);
+  const pollsters = [...new Set(polls.map(p => p.pollster))];
+  const latestBy = pollsters.map(n => polls.find(p => p.pollster === n)).sort((a, b) => b.date.localeCompare(a.date));
+  const parties = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'];
+  const on = new Set(pollsters); const onP = new Set(parties.slice(0, 6));
+  $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">Polls & forecast · latest poll ${esc(polls[0] ? polls[0].date : '')}</div><h2>What the polls say</h2>
+    <p class="lede">Every public poll since the 2023 election, from ${pollsters.length} pollsters, with a pooled trend. Polls differ in method and have margins of error of around ±3 points, so look at the trend, not one number.</p></div>
+    ${F && F.parties ? forecastSummary(F) : `<div class="card stack"><div class="row" style="justify-content:space-between"><h3>Poll of polls</h3><span class="tiny muted">average of the ${pr.n} latest polls (${esc(pr.range)})</span></div>
+      ${Object.entries(pr.pct).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= 0.8).map(([p, v]) => `<div class="row" style="flex-wrap:nowrap"><span style="width:120px;flex:none" class="small"><b>${esc(pname(p))}</b></span><div class="meter" style="flex:1"><span style="width:${v / 50 * 100}%;background:${pcolor(p)}"></span></div><span class="num small" style="width:48px;text-align:right">${fmt(v)}%</span></div>`).join('')}
+      <p class="tiny muted">A full forecast model (house effects, calibrated error, 20,000 simulated elections) is being built and will appear here.</p></div>`}
+    <div class="card chart stack"><div class="row" style="justify-content:space-between"><h3>Trend since the 2023 election</h3><span class="tiny muted">dots = individual polls · line = 8-poll rolling average</span></div>
+      <div class="chips" id="pp-parties">${parties.map(p => `<button class="chip" data-p="${p}" aria-pressed="${onP.has(p)}"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))}</button>`).join('')}</div>
+      <div class="chips" id="pp-pollsters">${pollsters.map(n => `<button class="chip" data-n="${esc(n)}" aria-pressed="true">${esc(n)} <span class="num muted">${polls.filter(p => p.pollster === n).length}</span></button>`).join('')}</div>
+      <div id="pchart"></div><div class="tip" id="ptip">Tap a dot for the poll.</div></div>
+    <div class="card scroll stack"><h3>Latest poll from each pollster</h3><table><thead><tr><th>Pollster</th><th>Fieldwork ended</th>${parties.map(p => `<th class="n"><span class="dot" title="${esc(pname(p))}" style="background:${pcolor(p)};display:inline-block"></span></th>`).join('')}<th class="n">Sample</th><th></th></tr></thead>
+      <tbody>${latestBy.map(p => `<tr><td><b>${esc(p.pollster)}</b></td><td class="num">${esc(p.date)}</td>${parties.map(x => `<td class="n">${p.parties[x] != null ? fmt(p.parties[x]) : '–'}</td>`).join('')}<td class="n">${p.sample_size ? Number(p.sample_size).toLocaleString('en-NZ') : '–'}</td><td>${p.source_url ? `<a class="tiny" href="${esc(p.source_url)}" target="_blank" rel="noopener">source</a>` : ''}</td></tr>`).join('')}</tbody></table>
+      <p class="tiny muted">Columns: ${parties.map(pname).join(', ')}. ${F && F.house_effects ? 'House effects (how each pollster leans relative to the pooled trend) are shown in the forecast section.' : ''}</p></div>
+    <div class="card scroll stack"><h3>All ${polls.length} polls</h3><div id="palltable"></div></div>
+    <p class="small muted">Poll data is compiled from each pollster's published release (linked), via the public record on Wikipedia, and is refreshed automatically. <button class="btn ghost sm" data-page="guide/forecast-method.md">How the forecast works</button></p></section>`;
+  const draw = () => { const sel = polls.filter(p => on.has(p.pollster)); $('#pchart').innerHTML = pollChart(sel, [...onP], $('#pchart').clientWidth || 760) };
+  $('#pp-parties').onclick = e => { const b = e.target.closest('[data-p]'); if (!b) return; onP.has(b.dataset.p) ? onP.delete(b.dataset.p) : onP.add(b.dataset.p); b.setAttribute('aria-pressed', onP.has(b.dataset.p)); draw() };
+  $('#pp-pollsters').onclick = e => { const b = e.target.closest('[data-n]'); if (!b) return; on.has(b.dataset.n) ? on.delete(b.dataset.n) : on.add(b.dataset.n); b.setAttribute('aria-pressed', on.has(b.dataset.n)); draw() };
+  $('#pchart').onclick = e => { const c = e.target.closest('[data-tip]'); if (c) $('#ptip').textContent = c.dataset.tip };
+  let lim = 40; const all = () => { $('#palltable').innerHTML = `<table><thead><tr><th>Ended</th><th>Pollster</th>${parties.map(p => `<th class="n"><span class="dot" title="${esc(pname(p))}" style="background:${pcolor(p)};display:inline-block"></span></th>`).join('')}<th class="n">n</th></tr></thead><tbody>${polls.slice(0, lim).map(p => `<tr><td class="num">${esc(p.date)}</td><td>${p.source_url ? `<a href="${esc(p.source_url)}" target="_blank" rel="noopener">${esc(p.pollster)}</a>` : esc(p.pollster)}</td>${parties.map(x => `<td class="n">${p.parties[x] != null ? fmt(p.parties[x]) : '–'}</td>`).join('')}<td class="n">${p.sample_size || '–'}</td></tr>`).join('')}</tbody></table>${polls.length > lim ? `<div class="row" style="justify-content:center;margin-top:10px"><button class="btn sm" id="pmore2">Show more</button></div>` : ''}`; const m = $('#pmore2'); if (m) m.onclick = () => { lim += 40; all() } };
+  draw(); all();
 };
-
-V.game = async () => {
-  if (!S.swipe) S.swipe = await getJSON('data/swipe.json').catch(() => []);
-  await loadPeople();
-  let g; try { g = JSON.parse(store.get('game') || 'null') } catch { g = null }
-  const setup = () => { $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:640px"><div class="stack"><div class="kicker">Pass-the-phone game · 2–6 players</div><h2>Whose policy?</h2>
-      <p class="lede">A real 2026 policy comes up with no party named. Guess whose it is, then pass the phone. The policies come from the seven parties polling highest, dealt evenly, so nobody can win by picking one party every time.</p></div>
-      <div class="card stack"><label class="small"><b>Players</b></label><div id="names" class="stack" style="gap:6px"></div><div class="row"><button class="btn sm" id="addp">Add a player</button><label class="row small" style="gap:6px">Rounds each <select id="rounds"><option>3</option><option selected>5</option><option>8</option></select></label></div>
-        <button class="btn sun" id="startg" style="justify-self:start">Start</button></div>
-      <p class="tiny muted">Just a game: it tests knowledge of what the parties are proposing, not what you think of them.</p></div></section>`;
-    const names = $('#names'); const addRow = v => { const i = names.children.length; if (i >= 6) return; const d = document.createElement('div'); d.innerHTML = `<input type="search" value="${esc(v || 'Player ' + (i + 1))}" aria-label="Player ${i + 1} name" style="width:100%">`; names.appendChild(d) };
-    addRow('Player 1'); addRow('Player 2'); $('#addp').onclick = () => addRow();
-    $('#startg').onclick = () => { const players = [...names.querySelectorAll('input')].map(x => x.value.trim() || 'Player').slice(0, 6); const rounds = +$('#rounds').value;
-      const pool = buildDeck(S.swipe.filter(c => GAME_PARTIES.includes(c.party) && c.statement.length < 140), {}, '').slice(0, players.length * rounds);
-      g = { players, rounds, deck: pool.map(c => c.id), turn: 0, scores: players.map(() => 0), phase: 'handoff' }; store.set('game', JSON.stringify(g)); play() } };
-  const card = id => S.swipe.find(c => c.id === id);
-  const play = () => { const total = g.players.length * g.rounds; if (g.turn >= total || g.turn >= g.deck.length) return finish();
-    const pi = g.turn % g.players.length; const c = card(g.deck[g.turn]); const round = Math.floor(g.turn / g.players.length) + 1;
-    const scoreHTML = `<div class="score">${g.players.map((n, i) => `<span class="${i === pi ? 'turn' : ''}">${esc(n)} <b class="num">${g.scores[i]}</b></span>`).join('')}</div>`;
-    if (g.phase === 'handoff') { $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:640px">${scoreHTML}<div class="card handoff"><div class="kicker">Round ${round} of ${g.rounds}</div><div class="big">${esc(g.players[pi])}</div><p class="muted">Your turn. Take the phone, then tap when you're ready.</p><button class="btn sun" id="ready">I'm ready</button></div><button class="btn ghost sm" id="quitg">End game</button></div></section>`;
-      $('#ready').onclick = () => { g.phase = 'guess'; store.set('game', JSON.stringify(g)); play() }; $('#quitg').onclick = finish; return }
-    $('#main').innerHTML = `<section class="view"><div class="quiz gameboard" style="max-width:640px">${scoreHTML}<div class="card stack"><div class="kicker">${esc(g.players[pi])} · whose policy is this?</div><div class="qtext">${esc(c.statement)}</div>${c.how ? `<p class="small muted">${esc(c.how.slice(0, 260))}${c.how.length > 260 ? '…' : ''}</p>` : ''}</div>
-      <div class="pchoices" id="choices">${GAME_PARTIES.map(p => `<button data-p="${p}"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))}</button>`).join('')}</div><div id="verdict"></div></div></section>`;
-    $('#choices').onclick = e => { const b = e.target.closest('[data-p]'); if (!b || $('#choices').dataset.done) return; $('#choices').dataset.done = '1'; const right = b.dataset.p === c.party; if (right) g.scores[pi]++;
-      $('#choices').querySelectorAll('button').forEach(x => { if (x.dataset.p === c.party) x.classList.add('right'); else if (x === b) x.classList.add('wrong') });
-      $('#verdict').innerHTML = `<div class="card stack"><div class="row"><span class="verdict-pill" style="background:${right ? 'var(--v-kept)' : 'var(--v-broken)'}">${right ? '✓ Correct' : '✕ Not quite'}</span><span>It's a <b>${esc(P(c.party).name)}</b> policy.</span></div><div class="row">${c.doc ? `<button class="btn sm" data-doc="${esc(c.party)}|${esc(c.doc)}">Read the full policy</button>` : ''}<button class="btn primary" id="nextturn" style="margin-left:auto">${g.turn + 1 >= Math.min(g.deck.length, g.players.length * g.rounds) ? 'See results' : 'Pass the phone →'}</button></div></div>`;
-      $('#nextturn').onclick = () => { g.turn++; g.phase = 'handoff'; store.set('game', JSON.stringify(g)); play() } } };
-  const finish = () => { const order = g.players.map((n, i) => [n, g.scores[i]]).sort((a, b) => b[1] - a[1]); const played = Math.min(g.turn, g.deck.length);
-    $('#main').innerHTML = `<section class="view"><div class="quiz" style="max-width:640px"><div class="stack"><div class="kicker">Final scores · ${played} policies</div><h2>${esc(order[0][0])} ${order.length > 1 && order[0][1] === order[1][1] ? 'ties for the win' : 'wins'}</h2></div>
-      <div class="card stack">${order.map(([n, sc], i) => `<div class="row" style="flex-wrap:nowrap"><span style="width:28px" class="num muted">${i + 1}</span><span style="flex:1"><b>${esc(n)}</b></span><div class="meter" style="flex:2"><span style="width:${g.rounds ? sc / g.rounds * 100 : 0}%;background:var(--sun)"></span></div><span class="num" style="width:60px;text-align:right">${sc} / ${g.rounds}</span></div>`).join('')}</div>
-      <p class="small muted">Want to know more about the policies you saw? They're all in <button class="btn ghost sm" data-go="policies">the policy browser</button>, with the parties' full documents.</p>
-      <div class="row"><button class="btn sun" id="again">Play again</button><button class="btn" data-go="swipe">Try Policy swipe</button></div></div></section>`;
-    $('#again').onclick = () => { store.set('game', 'null'); g = null; setup() } };
-  if (g && g.deck && g.turn < g.players.length * g.rounds) play(); else setup();
-};
+function pollChart(polls, parties, cw = 760) {
+  const W = Math.max(440, Math.min(760, Math.round(cw * 1.25))), H = 320, L = 36, R = 34, T = 10, B = 26;
+  const t0 = new Date('2023-10-01').getTime(), t1 = new Date('2026-11-14').getTime();
+  const xs = d => L + (new Date(d).getTime() - t0) / (t1 - t0) * (W - L - R), maxV = 45, ys = v => T + (1 - v / maxV) * (H - T - B);
+  let g = [0, 10, 20, 30, 40].map(v => `<line class="grid-l" x1="${L}" x2="${W - R}" y1="${ys(v)}" y2="${ys(v)}"/><text x="4" y="${ys(v) + 4}">${v}%</text>`).join('');
+  for (let y = 2024; y <= 2026; y++) g += `<text x="${xs(y + '-01-01')}" y="${H - 6}" text-anchor="middle">${y}</text>`;
+  g += `<line x1="${xs('2026-11-07')}" x2="${xs('2026-11-07')}" y1="${T}" y2="${H - B}" stroke="var(--primary)" stroke-dasharray="3 3"/><text x="${xs('2026-11-07') - 4}" y="${T + 10}" text-anchor="end" style="fill:var(--primary);font-weight:700">election</text>`;
+  g += `<line x1="${L}" x2="${W - R}" y1="${ys(5)}" y2="${ys(5)}" stroke="var(--text-2)" stroke-dasharray="2 4"/><text x="${L + 4}" y="${ys(5) - 4}">5% threshold</text>`;
+  const sorted = polls.slice().sort((a, b) => a.date.localeCompare(b.date));
+  const res2023 = (S.data.elections.find(e => e.year === 2023) || {}).parties || [];
+  for (const p of parties) { const c = pcolor(p); const pp = sorted.filter(x => typeof x.parties[p] === 'number'); if (!pp.length) continue;
+    const r = res2023.find(x => x.party === p); if (r) g += `<circle cx="${xs('2023-10-14')}" cy="${ys(r.party_vote_pct)}" r="5" fill="${c}" stroke="var(--surface)" stroke-width="2" data-tip="2023 election result · ${esc(pname(p))} ${fmt(r.party_vote_pct, 2)}%"></circle>`;
+    g += pp.map(x => `<circle cx="${xs(x.date).toFixed(1)}" cy="${ys(x.parties[p]).toFixed(1)}" r="3" fill="${c}" opacity=".45" data-tip="${esc(x.pollster)} · ${esc(x.date)} · ${esc(pname(p))} ${fmt(x.parties[p])}%${x.sample_size ? ' · n=' + x.sample_size : ''}"></circle>`).join('');
+    if (pp.length > 3) { const avg = pp.map((x, i) => { const w = pp.slice(Math.max(0, i - 7), i + 1); return [x.date, w.reduce((a, y) => a + y.parties[p], 0) / w.length] });
+      g += `<polyline fill="none" stroke="${c}" stroke-width="2.6" stroke-linejoin="round" points="${avg.map(([d, v]) => `${xs(d).toFixed(1)},${ys(v).toFixed(1)}`).join(' ')}"/>`;
+      const [ld, lv] = avg[avg.length - 1]; g += `<text x="${(xs(ld) + 6).toFixed(1)}" y="${(ys(lv) + 4).toFixed(1)}" style="fill:${c};font-weight:700">${fmt(lv)}</text>` } }
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Polls since 2023">${g}</svg>` }
+function forecastSummary(F) {
+  const P7 = F.parties || []; const H = F.headline || {}; const blocs = F.blocs || [];
+  const pct = v => (v == null ? '–' : Math.round(v) + '%');
+  const tile = (v, l) => `<div class="stat"><b>${pct(v)}</b><span>${esc(l)}</span></div>`;
+  const band = (lo, hi, mean, max, c) => `<div class="meter" style="flex:1;position:relative;height:12px"><span style="position:absolute;left:${lo / max * 100}%;width:${Math.max(0.5, (hi - lo) / max * 100)}%;height:100%;background:${c};opacity:.35"></span><span style="position:absolute;left:${mean / max * 100}%;width:3px;height:100%;background:${c}"></span></div>`;
+  const lp = H.largest_party_probability || {};
+  const mlp = F.most_likely_parliament && F.most_likely_parliament.seats;
+  const maori = (F.electorates && F.electorates.maori_seats) || {};
+  const track = (F.historical_track_record && F.historical_track_record.elections) || [];
+  const partyKey = n => ({ 'National': 'national', 'Labour': 'labour', 'Green': 'green', 'ACT': 'act', 'NZ First': 'nz-first', 'Te Pāti Māori': 'te-pati-maori', 'TOP': 'opportunity', 'Te Tai Tokerau Party': 'te-tai-tokerau-party', 'Independent': 'independent' }[n] || n);
+  return `<div class="card stack" style="gap:18px"><div class="row" style="justify-content:space-between"><div><div class="kicker">Forecast · ${esc(F.days_to_election)} days to go · updated ${esc((F.generated || '').slice(0, 10))}</div><h3>If the election were held on current polling</h3></div><button class="btn sm" data-page="guide/forecast-method.md">How the model works</button></div>
+    <div class="stats">${tile(lp.national, 'National is the largest party')}${tile(lp.labour, 'Labour is the largest party')}${tile(H.p_right_bloc_majority_NAT_ACT_NZF, 'National + ACT + NZ First majority')}${tile(H.p_left_bloc_majority_LAB_GRN_TPM, 'Labour + Green + Te Pāti Māori majority')}${tile(H.p_no_bloc_majority ?? F.p_no_bloc_majority, 'Neither bloc has a majority')}${tile(H.p_TOP_over_5pct, 'TOP clears 5%')}${tile(H.p_TOP_holds_balance_of_power, 'TOP holds the balance of power')}</div>
+    <div class="split"><div class="stack"><h4>Party vote forecast <span class="tiny muted">(shaded = 80% range)</span></h4>
+      ${P7.slice().sort((a, b) => b.forecast_vote_mean - a.forecast_vote_mean).map(x => `<div class="row" style="flex-wrap:nowrap"><span style="width:104px;flex:none" class="small"><b>${esc(pname(x.party))}</b></span>${band(x.forecast_vote_80[0], x.forecast_vote_80[1], x.forecast_vote_mean, 45, pcolor(x.party))}<span class="num small" style="width:118px;text-align:right">${fmt(x.forecast_vote_mean)}% <span class="muted">${fmt(x.forecast_vote_80[0], 0)}–${fmt(x.forecast_vote_80[1], 0)}</span></span></div>`).join('')}</div>
+    <div class="stack"><h4>Seats <span class="tiny muted">(expected, with 80% range)</span></h4>
+      ${P7.slice().sort((a, b) => (b.seats_expected || 0) - (a.seats_expected || 0)).map(x => `<div class="row" style="flex-wrap:nowrap"><span style="width:104px;flex:none" class="small"><b>${esc(pname(x.party))}</b></span>${band((x.seats_80 || [0, 0])[0], (x.seats_80 || [0, 0])[1], x.seats_expected || 0, 70, pcolor(x.party))}<span class="num small" style="width:118px;text-align:right">${x.seats_expected ?? '–'} <span class="muted">${(x.seats_80 || []).join('–')}</span>${x.p_over_5pct != null && x.p_over_5pct < 99 ? ` <span class="tiny muted">· ${pct(x.p_over_5pct)} ≥5%</span>` : ''}</span></div>`).join('')}</div></div>
+    <div class="split"><div class="stack"><h4>Coalition blocs</h4><div class="scroll"><table><thead><tr><th>Bloc</th><th class="n">Seats</th><th class="n">80% range</th><th class="n">Chance of majority</th></tr></thead><tbody>${blocs.map(b => `<tr><td>${esc(b.bloc)}</td><td class="n">${b.seats_expected}</td><td class="n">${(b.seats_80 || []).join('–')}</td><td class="n"><b>${pct(b.p_majority)}</b></td></tr>`).join('')}</tbody></table></div>
+      <p class="tiny muted">${esc((F.majority_threshold || {}).note || '')}</p></div>
+      ${mlp ? `<div class="stack chamber"><h4>Most likely Parliament <span class="tiny muted">(${fmt((F.most_likely_parliament.share_of_simulations || 0) * 100, 1)}% of simulations)</span></h4>${chamberSVG(seatsFromComposition(mlp, []), { label: 'Most likely parliament' })}<div class="legend">${Object.entries(mlp).filter(([, n]) => n).sort((a, b) => P(a[0]).order - P(b[0]).order).map(([p, n]) => `<span class="item"><span class="dot" style="background:${pcolor(p)}"></span>${esc(pname(p))} <b class="num">${n}</b></span>`).join('')}</div></div>` : ''}</div>
+    ${Object.keys(maori).length ? `<details><summary style="cursor:pointer;color:var(--primary);font-weight:700">Māori electorates and Epsom: who is likely to win each seat</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Seat</th><th>Chance of winning</th></tr></thead><tbody>${Object.entries(maori).map(([seat, m]) => `<tr><td>${esc(seat)}</td><td>${Object.entries(m.p_win || {}).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= 1).map(([p, v]) => `<span class="row" style="display:inline-flex;gap:4px;margin-right:10px"><span class="dot" style="background:${pcolor(partyKey(p))}"></span>${esc(p)} <b class="num">${pct(v)}</b></span>`).join('')}</td></tr>`).join('')}${F.electorates.epsom ? `<tr><td>Epsom</td><td><span class="row" style="display:inline-flex;gap:4px"><span class="dot" style="background:${pcolor('act')}"></span>ACT <b class="num">${pct(F.electorates.epsom.p_act_wins)}</b></span> <span class="tiny muted">${esc(F.electorates.epsom.assumption || '')}</span></td></tr>` : ''}</tbody></table></div></details>` : ''}
+    ${(F.pollsters || []).length ? `<details><summary style="cursor:pointer;color:var(--primary);font-weight:700">Pollster house effects (how each pollster leans vs the pooled trend)</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Pollster</th><th class="n">Polls</th>${P7.map(x => `<th class="n"><span class="dot" title="${esc(pname(x.party))}" style="background:${pcolor(x.party)};display:inline-block"></span></th>`).join('')}</tr></thead><tbody>${F.pollsters.filter(q => q.n_polls_this_term).map(q => `<tr><td>${esc(q.pollster)}${q.internal ? ' <span class="tiny muted">(party-commissioned, half weight)</span>' : ''}</td><td class="n">${q.n_polls_this_term}</td>${P7.map(x => { const v = (q.house_effects || {})[x.party]; return `<td class="n">${v == null ? '–' : (v > 0 ? '+' : '') + fmt(v)}</td>` }).join('')}</tr>`).join('')}</tbody></table></div><p class="tiny muted">${esc(F.house_effects_note || '')}</p></details>` : ''}
+    ${track.length ? `<details><summary style="cursor:pointer;color:var(--primary);font-weight:700">Track record: what this model would have said two weeks before past elections</summary><div class="scroll" style="margin-top:10px"><table><thead><tr><th>Election</th><th class="n">Polls used</th><th>Results inside the 80% range</th><th>Inside the 95% range</th></tr></thead><tbody>${track.map(t => `<tr><td class="num">${t.election}</td><td class="n">${t.n_polls_used_120d ?? '–'}</td><td>${esc(t.coverage80 || '')}</td><td>${esc(t.coverage95 || '')}</td></tr>`).join('')}</tbody></table></div><p class="tiny muted">${esc(F.historical_track_record.note || '')} Overall: ${esc(F.historical_track_record.coverage80 || '')} of results fell inside the 80% range and ${esc(F.historical_track_record.coverage95 || '')} inside the 95% range.</p></details>` : ''}
+    <details><summary style="cursor:pointer;color:var(--primary);font-weight:700">How to read this, and what it can't tell you</summary><ul class="small" style="margin-top:8px">${(F.how_to_read || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul><h4>Caveats</h4><ul class="small">${(F.caveats || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></details>
+    <p class="tiny muted">${esc(F.simulation ? F.simulation.draws.toLocaleString('en-NZ') + ' simulated elections' : '')} · poll-of-polls with recency weighting and pollster house effects, polling error calibrated on 2011–2023, seats by Sainte-Laguë with the 5% threshold and electorate seats. Probabilities are rounded to whole numbers on purpose.</p></div>` }
 
 /* ----- why trust this ----- */
 V.trust = () => { $('#main').innerHTML = `<section class="view"><div class="stack"><div class="kicker">About this guide</div><h2>Why trust this?</h2>
@@ -1487,4 +1490,5 @@ function route(r) {
   route((location.hash || '').slice(1) || 'home');
 })();
 })();
+
 </script>
