@@ -164,6 +164,11 @@ bundle = {'forecast': forecast, 'upcoming': upcoming[0] if upcoming else None, '
 (OUT / 'thumbs.json').write_text(json.dumps(thumbs))
 (OUT / 'pages.json').write_text(json.dumps(pages, ensure_ascii=False))
 
+# --- geo (electorate boundaries)
+import shutil
+(OUT / 'geo').mkdir(exist_ok=True)
+for f in (ROOT / 'data' / 'geo').glob('*.json'): shutil.copy(f, OUT / 'geo' / f.name)
+
 # --- assemble pages: artifact fragment (no doctype) + standalone index.html
 src = (ROOT / 'site' / 'src' / 'app.html').read_text()
 (ROOT / 'site' / 'artifact.html').write_text(src)

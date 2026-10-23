@@ -615,7 +615,7 @@ def main():
         "p_no_bloc_majority": pct(no_maj.mean()),
         "majority_threshold": {"usual": 61, "note": "61 of 120; one more for every two overhang seats (62 of 122-123)", "distribution_total_seats": hist_of(tot_seats)},
         "most_likely_parliament": {"seats": {p: mode_key[pidx[p]] for p in PARTIES}, "share_of_simulations": round(100 * mode_n / args.draws, 1),
-                                   "note": "The single most frequent exact seat combination; even the most likely one occurs in only a few per cent of simulations."},
+                                   "note": "The single most frequent exact seat combination across 40,000 simulations; with seven parties even the modal combination occurs in well under 1% of them, so read it as one plausible parliament, not a prediction."},
         "trend_weekly": trend,
         "pollsters": pollsters_out,
         "house_effects_note": ("House effect = that pollster's average deviation from the pooled trend this term, after shrinkage, in percentage points; "
