@@ -1,5 +1,8 @@
 # Shane Jones
 
+> **This person's current profile is under [nz-first](../../../nz-first/people/shane-jones/README.md).** They sat as a labour MP; this page is kept for their labour-era history and is not counted separately.
+
+
 <img src="photo.jpg" width="200" align="right" alt="Shane Jones">
 
 | | |

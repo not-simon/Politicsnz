@@ -1,5 +1,8 @@
 # Jami-Lee Ross
 
+> **This person's current profile is under [advance-nz](../../../advance-nz/people/jami-lee-ross/README.md).** They sat as a national MP; this page is kept for their national-era history and is not counted separately.
+
+
 <img src="photo.jpg" width="200" align="right" alt="Jami-Lee Ross">
 
 | | |

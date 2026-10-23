@@ -1,5 +1,8 @@
 # Meka Whaitiri
 
+> **This person's current profile is under [te-pati-maori](../../../te-pati-maori/people/meka-whaitiri/README.md).** They sat as a labour MP; this page is kept for their labour-era history and is not counted separately.
+
+
 <img src="photo.jpg" width="200" align="right" alt="Meka Whaitiri">
 
 | | |

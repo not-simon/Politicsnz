@@ -1,5 +1,8 @@
 # Parmjeet Parmar
 
+> **This person's current profile is under [act](../../../act/people/parmjeet-parmar/README.md).** They sat as a national MP; this page is kept for their national-era history and is not counted separately.
+
+
 <img src="photo.jpg" width="200" align="right" alt="Parmjeet Parmar">
 
 | | |
