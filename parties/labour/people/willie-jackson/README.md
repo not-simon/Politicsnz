@@ -7,8 +7,8 @@
 | **Party** | Labour |
 | **Status (Oct 2026)** | Current MP, standing in 2026 |
 | **Born** | 1961 |
-| **Parliaments** | 52, 53, 54 |
-| **First elected** | 2017 |
+| **Parliaments** | 46, 52, 53, 54 |
+| **First elected** | 1999 |
 | **2026 candidacy** | List only · list #4 |
 | **Key roles** | Labour shadow cabinet #5 (as of 11 Mar 2026): Spokesperson for Māori Development; Spokesperson for Māori Crown Relations; Associate Spokesperson for Health (Māori)<br>27th Minister of Broadcasting and Media (2022–2023)<br>45th Minister for Māori Development (2020–2023)<br>17th Minister of Employment (2017–2020)<br>3rd Leader of Mana Motuhake (2001–2003) |
 | **Wikipedia** | [Willie Jackson (politician)](https://en.wikipedia.org/wiki/Willie_Jackson_%28politician%29) |
@@ -27,6 +27,7 @@ Born in 1961 (Ngāti Maniapoto, Ngāti Porou), the son of urban Māori leaders D
 
 | Parliament | Years | Electorate | List position | Party |
 |---|---|---|---|---|
+| 46th | 1999–2002 | List | 9 | Alliance (New Zealand political party) |
 | 52nd | 2017–2020 | List | 22 | Labour |
 | 53rd | 2020–2023 | List | 19 | Labour |
 | 54th | 2023–present | List | 9 | Labour |
@@ -53,6 +54,8 @@ Rank 5 in Chris Hipkins' shadow cabinet:
 - Associate Spokesperson for Health (Māori)
 
 _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins), list as of 11 March 2026._
+
+### Career summary
 
 - **Alliance MP, 1999–2002** (Mana Motuhake); led Mana Motuhake from 2001 and was Alliance deputy leader at the 2002 election, when the party lost all its seats.
 - **Labour list MP, 2017–present.** Recruited by Andrew Little to run Labour's Māori-seat campaign in 2017, when Labour won all seven Māori electorates ([RNZ](http://www.radionz.co.nz/news/political/323829/willie-jackson-to-stand-for-labour)).

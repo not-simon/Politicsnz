@@ -1,0 +1,359 @@
+---
+title: "Alliance Workers’ Rights and Employment Policy 2026 (PDF)"
+party: alliance
+source_url: https://allianceparty.nz/wp-content/uploads/2026/09/alliance-workers-rights-employment-policy-2026.pdf
+retrieved: 2026-10-23
+format: pdf
+fetch_method: curl + pdftotext -layout
+---
+
+# Alliance Workers’ Rights and Employment Policy 2026 (PDF)
+
+> Archive note: Uploaded 2026-09-07; linked from the matching policy post. Text extracted from the party's PDF with pdftotext; bullets normalised to Markdown, page breaks shown as horizontal rules; images/graphics not reproduced.
+
+## Full text (verbatim)
+
+Alliance Party of Aotearoa New Zealand
+
+Workers' Rights and Employment Policy
+Decent Work, Fair Wages, and Democratic Workplaces
+The Alliance believes that secure, fairly paid, meaningful work is a basic human
+right.
+A prosperous society should not depend upon low wages, insecure employment, or
+the weakening of workers’ rights. Every person who works should be able to earn a
+decent living, work in a safe environment, spend time with their family, and
+participate meaningfully in decisions affecting their workplace.
+The Alliance rejects the idea that workers’ wages and conditions should be treated
+simply as costs to be minimised in a competitive labour market.
+We will rebuild the bargaining power of working people, strengthen trade unions,
+establish decent minimum standards, and give workers a genuine voice in the
+management and direction of their workplaces.
+
+1. Work Is a Basic Right
+Every person has the right to the opportunity for meaningful, secure, and fairly paid
+employment.
+The Alliance will pursue full employment as a central economic objective.
+Where the private economy fails to provide sufficient employment, the government
+will directly intervene through publicly funded apprenticeship, employment, and
+infrastructure programmes.
+These programmes will provide useful work in areas including:
+- infrastructure;
+- housing;
+- environmental restoration;
+- conservation;
+- community services;
+- public transport;
+- regional development.
+
+Unemployment should not be treated as an inevitable feature of the economy.
+A government committed to full employment must be prepared to create work where
+the market fails to do so.
+
+1
+
+---
+
+2. A 35-Hour Working Week
+The Alliance will establish a 35-hour standard working week without loss of earnings.
+The 35-hour week will be accompanied by appropriate protections to ensure that
+employers cannot simply increase work intensity or use unpaid overtime to
+circumvent the reduction in hours.
+Workers will have:
+- a statutory right to refuse unreasonable hours or shifts;
+- mandatory penal rates for overtime;
+- proper payment for all hours worked;
+- protection from pressure to work excessive hours.
+
+Reducing working hours should improve quality of life, family time, and community
+participation while allowing the benefits of increased productivity to be shared with
+workers.
+
+3. Five Weeks' Paid Annual Leave
+The Alliance will guarantee a minimum of five weeks’ paid annual leave for all
+workers.
+Annual leave is not simply a workplace benefit. It is essential to health, family life,
+and the ability of workers to participate fully in their communities.
+
+4. Paid Parental and Family Leave
+Workers should not have to choose between employment and their responsibilities to
+their families.
+The Alliance will provide 52 weeks of paid parental leave, available to all workers,
+including:
+- part-time workers;
+- casual workers;
+- seasonal workers.
+
+The Alliance will also establish paid compassionate leave for workers who need to
+attend funerals, tangi, or deal with serious family circumstances.
+Employment law will require employers to properly recognise and accommodate
+workers’ family and whānau responsibilities.
+The principle will be simple:
+Work should fit around family life, not family life around work.
+
+2
+
+---
+
+5. A Living Wage and Protection Against Inflation
+The minimum wage should provide a genuine standard of living rather than simply
+represent the minimum amount an employer can legally pay.
+The Alliance will immediately increase the adult minimum wage to two-thirds of the
+average wage, with the adult minimum applying to workers of all ages.
+From there we will establish mechanisms to protect workers’ purchasing power from
+inflation, including automatic annual wage adjustments linked to movements in the
+cost of living. This would include consideration of the consumer price index (CPI)
+and average ordinary time hourly earnings from the quarterly employment survey
+(QES).
+Economic growth should translate into rising living standards for working people.
+
+6. Equal Pay and Pay Equity
+Women and other groups of workers have historically been undervalued in the
+labour market.
+The Alliance supports the re-introduction of comprehensive Pay Equity legislation to
+ensure equal pay for work of equal value.
+The legislation will:
+- allow comparisons across different industries and occupations;
+- provide effective mechanisms for collective claims;
+- allow workers to pursue class-wide or occupational pay equity claims;
+- establish a clear process for resolving claims;
+- aim to achieve genuine pay equity within three years.
+
+Pay equity must address not only discrimination between people doing the same job,
+but the historical undervaluing of predominantly female occupations.
+
+7. Wage Theft Is Theft
+The deliberate underpayment of workers must be treated seriously. Employers who
+knowingly steal workers’' wages will face prosecution and meaningful penalties.
+Workers should not have to spend years pursuing money they have already earned.
+
+8. Investigation and Prosecution of Breaches
+The Alliance Party will support adequate funding and resourcing for bodies tasked
+with monitoring and making judicial decisions on Health & Safety, workplace
+conditions, breaches of employment law, and worker exploitation.
+Namely, we will ensure the Employment Relations Authority is given adequate
+resourcing and power so that cases are heard and ruled on in a timely manner. A
+new Workplace Safety Authority will be established to hear cases regarding health,
+3
+
+---
+
+safety, and wellbeing in the workplace and relieve the backlog of cases from the
+Employment Relations Authority. We will also increase the authority and size of the
+Labour Inspectorate.
+Working people must not wallow in unsafe, unfair, or unlawful conditions for
+extended periods of time waiting for justice.
+
+9. Restore Collective Bargaining Power
+Individual workers are rarely equal in bargaining power to their employer.
+Collective bargaining is therefore essential to achieving fair wages and decent
+conditions.
+The Alliance will restore and strengthen a coordinated national system of wage
+determination, providing minimum standards across industries and occupations.
+Collective agreements will provide a floor below which employment conditions
+cannot fall.
+The Alliance will strengthen the ability of workers to bargain collectively through their
+unions and will ensure that employment law supports rather than undermines
+collective organisation.
+
+10. A Strong and Democratic Trade Union Movement
+Trade unions are fundamental democratic institutions.
+The Alliance will protect workers’ rights to:
+- join a union;
+- form a union;
+- organise collectively;
+- bargain collectively;
+- participate in union activities;
+- vote on union membership arrangements;
+- receive union assistance at work.
+
+Unions will have the legal right to meet and organise workers in groups during
+working hours, subject to reasonable arrangements for the workplace.
+Pacific and migrant workers will have access to state-funded, mother-tongue
+interpreters where necessary to participate fully in union activities and employment
+negotiations.
+
+4
+
+---
+
+11. Restore the Right to Strike
+The right to withdraw labour is a fundamental democratic right.
+The Alliance will restore a broad right to strike, including protection for:
+- industrial action over employment conditions;
+- solidarity and sympathy strikes;
+- collective action in support of other workers;
+- appropriate political strikes.
+
+Workers should not be required to surrender their collective power simply because
+they enter employment.
+The right to strike is the necessary counterbalance to the power of employers.
+
+12. Workplace Democracy
+Workers should have a genuine voice in the decisions that affect their working lives.
+The Alliance will legislate for Work Councils in enterprises employing more than fifty
+workers.
+Work Councils will provide workers with a formal role in decisions concerning:
+- workplace organisation;
+- health and safety;
+- restructuring;
+- training;
+- technological change;
+- employment conditions;
+- major changes affecting the workforce.
+
+In enterprises employing more than 250 workers, workers will have the right to elect
+Worker Directors to the governing board.
+This will begin the transformation of workplaces from institutions where workers
+simply receive instructions into institutions in which workers have a genuine
+democratic voice.
+
+13. Protect Workers During Restructuring
+Workers should not be treated as disposable whenever a company experiences
+financial difficulties or decides to restructure.
+Where significant redundancies are proposed, employers will be required to:
+- provide workers and their representatives with relevant financial
+information;
+5
+
+---
+
+- negotiate alternatives to redundancy with unions;
+- provide at least one month’s notice of dismissal;
+- genuinely examine alternatives to job losses;
+- consider redeployment and retraining.
+
+Where a business is facing serious financial difficulty, workers and their
+representatives should have access to sufficient information to participate
+meaningfully in determining its future.
+
+14. A National Retraining and Redeployment Programme
+Where technological change, restructuring, or economic circumstances make jobs
+genuinely redundant, workers should not simply be left unemployed.
+The Alliance will establish state-funded retraining, redeployment, and relocation
+programmes.
+These programmes will help affected workers move into:
+- new occupations;
+- growing industries;
+- essential public services;
+- regional employment opportunities;
+- further education and vocational training.
+
+A dedicated employer contribution or levy will help fund the programme.
+The costs of economic restructuring should not be carried solely by the workers who
+lose their jobs.
+
+15. Protect Precarious and Vulnerable Workers
+Workers in insecure employment are particularly vulnerable to exploitation.
+The Alliance will establish a comprehensive Minimum Employment Code covering
+workers who are currently vulnerable because they are:
+- non-unionised;
+- employed through agencies;
+- contractors;
+- casual workers;
+- seasonal workers;
+- in other precarious forms of employment.
+
+6
+
+---
+
+Employment status must not be used as a mechanism for avoiding basic
+employment rights.
+
+The Alliance will ensure that workers performing essentially the same work receive
+comparable minimum protections regardless of the contractual structure used by
+their employer.
+
+16. Regulate Contracting and Labour Hire
+Employers should not be able to undermine wages and conditions simply by
+replacing permanent employees with contractors or labour-hire workers.
+The Alliance will strengthen regulation of:
+- labour-hire companies;
+- contracting arrangements;
+- dependent contractors;
+- casual employment;
+- outsourcing.
+
+Where contracting is used primarily to avoid employment obligations, workers will be
+entitled to appropriate protections.
+The objective is to ensure that employment status cannot become a loophole for
+exploitation.
+17. Work, Childcare and Community Life
+A decent employment system must recognise that workers have lives outside the
+workplace.
+The Alliance will establish non-profit, community-based 24-hour childcare, jointly
+funded by government and employers, to support workers whose employment
+requires non-standard hours.
+This will particularly assist:
+- shift workers;
+- night workers;
+- healthcare workers;
+- transport workers;
+- emergency workers;
+- hospitality and service workers;
+- single parents.
+
+7
+
+---
+
+Childcare should be treated as essential social infrastructure supporting both families
+and the economy.
+
+8
+
+---
+
+18. Health and Safety at Work
+Every worker has the right to return home safely at the end of the working day.
+The Alliance will restore and maintain strong statutory health and safety protections
+and ensure that workers and their unions have a meaningful role in workplace safety.
+Employers will be required to provide safe workplaces, appropriate training, and
+adequate resources to manage workplace risks.
+Workers will have effective rights to raise safety concerns without fear of retaliation.
+Health and safety representatives and unions will be supported in monitoring
+workplace safety.
+
+19. Workers’ Rights and Economic Policy
+Workers’ rights cannot be separated from wider economic policy.
+The Alliance will pursue an economic system based on:
+- full employment;
+- rising real wages;
+- strong collective bargaining;
+- public investment;
+- productive industry;
+- regional development;
+- worker participation;
+- economic security.
+
+We reject the concept of "labour market flexibility" when it is used to mean weaker
+wages, insecure work, fewer rights, and the transfer of economic risk from employers
+to workers.
+Flexibility should work for workers as well as employers.
+
+9
+
+---
+
+Our Vision for Work in Aotearoa New Zealand
+The Alliance believes that a decent society should guarantee that people who work
+can live with dignity.
+We will build an employment system in which:
+- work provides a living wage;
+- employment is secure;
+- hours are reasonable;
+- families have time together;
+- workers receive proper leave;
+- women receive equal pay for work of equal value;
+- unions have genuine power;
+- workers have a voice in their workplaces;
+- redundancy does not mean abandonment;
+- and no worker is exploited because of their employment status.
+
+The Alliance’s objective is not simply to improve employment law.
+It is to rebalance economic power between employers and workers.
+A productive economy should benefit the people who create its wealth. The people
+who work in our workplaces must have a fair share of that wealth, a genuine voice in
+its distribution, and democratic rights over the conditions under which they work.
+
+10

@@ -46,7 +46,9 @@ def simple_templates(t):
     t = re.sub(r'\{\{NZ election link year\|(\d{4})\}\}', r'\1', t)
     t = re.sub(r'\{\{(?:birth|death)[^|{}]*\|(?:\s*[a-z]+\s*=\s*[a-z]*\s*\|)*\s*(\d{4})\s*\|\s*(\d{1,2})\s*\|\s*(\d{1,2})[^{}]*\}\}',
                lambda m: f'{int(m.group(1)):04d}-{int(m.group(2)):02d}-{int(m.group(3)):02d}', t, flags=re.I)
-    t = re.sub(r'\{\{birth based on age as of date\|(\d{1,3})\|(\d{4})[^{}]*\}\}',
+    t = re.sub(r'\{\{\s*br\s*\}\}', ' ', t, flags=re.I)
+    t = re.sub(r'\{\{By-election link year\|[^{}|]*\|(\d{4})[^{}]*\}\}', r'\1 (by-election)', t, flags=re.I)
+    t = re.sub(r'\{\{birth based on age as of date\s*\|\s*(\d{1,3})\s*\|\s*(\d{4})[^{}]*\}\}',
                lambda m: f'{int(m.group(2)) - int(m.group(1)) - 1} or {int(m.group(2)) - int(m.group(1))}', t, flags=re.I)
     t = re.sub(r'\{\{(?:birth|death)[^|{}]*\|(?:\s*[a-z]+\s*=\s*[a-z]*\s*\|)*\s*(\d{4})[^{}]*\}\}', r'\1', t, flags=re.I)
     t = re.sub(r'\{\{post-nominals[^{}]*\}\}', '', t, flags=re.I)

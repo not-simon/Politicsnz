@@ -443,3 +443,253 @@ EXTRA_LINKS = {
                  "https://www.rnz.co.nz/news/politics_election-2026/1530281/te-pati-maori-promises-200-million-to-change-who-holds-power-for-decisions-about-takatapui")],
     "NZF-A01": [],
 }
+
+# ============================================================================ COMMON CRAWL ROUND (23 Oct 2026)
+# Pages captured by Common Crawl (raw/party-docs/<party>/cc_html/, see tools/policies_nzf_tpm_cc_*.py) archived as
+# documents in addition to every policy.nz-cited page that has a capture.
+NZF_CC = [
+    "policy", "breaking_up_the_gentailers", "break_up_the_supermarket_duopoly", "returning_50_of_mining_royalties_to_the_regions",
+    "establishing_a_kiwisaver_generation", "backing_a_new_zealand_owned_bank", "disestablish_auckland_s_independent_maori_statutory_board",
+    "referendum_on_maori_seats", "establishing_a_special_economic_zone_at_marsden_point", "complete_the_christchurch_cathedral",
+    "citizens_only_voting", "future_proofing_our_fuel_security", "the_kiwi_kids_grant", "use_it_or_lose_it_dairy_policy",
+    "withdraw_from_paris_accord", "the_100bn_new_zealand_future_fund", "nz_super_for_citizens_only", "immigration_reform_policies",
+    "the_plan_to_make_nz_healthy", "20_tax_rate_for_smes", "ending_the_waitangi_makework_industry",
+    "our-members-bills", "maori_seats_referendum_bill", "the_fireworks_prohibition_legislation_bill", "the_container_return_scheme_bill",
+    "local_government_auckland_council_disestablishment_of_imsb_amendment_bill", "preventing_payment_scams_bill",
+    "the_accessibility_standards_bill", "prostate_cancer_screening_bill", "nz_first_introduces_bill_to_protect_against_digital_id_overreach",
+    "nzf_bill_legislating_nzs_name", "cash_transactions_protection_bill", "definitions-woman-man-bill", "repeal-of-dei-requirements-bill",
+    "english-language-bill-passes-first-reading", "conscience-referendums-bill", "fluoridation-referendum-bill",
+    "display_of_flags_government_premises_bill", "nz_first_lodges_differing_view_on_the_gene_tech_bill",
+    "the_kiwisaver_generation_and_bnz_buy_back", "nzf_pillars",
+]
+TPM_CC = [
+    "policy", "energy_sovereignty", "te_tiriti_entrenchment", "tax", "takat_pui", "kai_sovereignt", "mokopuna_m_ori", "disabilities",
+    "housing", "education_training", "toi_maori", "te_reo_maori", "health", "mana_motuhake", "justice", "economic_development",
+    "cost_of_living", "military_neutrality", "freshwater_policy", "climate", "maori_sports", "mana_hau_policy",
+    "we_want_cheaper_power_and_we_want_our_people_to_own_it",
+]
+CC_TOOL = {"te-pati-maori": "what-matters-to-you"}   # page whose embedded manifesto data is archived specially
+
+NZF_PDFS.update({
+    "Fireworks_Prohibition_Legislation_Bill.pdf": ("Fireworks Prohibition Legislation Bill (NZ First member's bill)",
+        "https://assets.nationbuilder.com/nzfirst/pages/8447/attachments/original/1762913986/Fireworks_Prohibition_Legislation_Bill.pdf?1762913986",
+        "Linked from nzfirst.nz/the_fireworks_prohibition_legislation_bill; downloaded directly from assets.nationbuilder.com."),
+    "Container_Return_Scheme_Bill-v1.5_1.pdf": ("Container Return Scheme Bill (draft v1.5, NZ First member's bill)",
+        "https://assets.nationbuilder.com/nzfirst/pages/9701/attachments/original/1778203177/Container_Return_Scheme_Bill-v1.5_%281%29.pdf?1778203177",
+        "Linked from nzfirst.nz/the_container_return_scheme_bill; downloaded directly from assets.nationbuilder.com."),
+})
+_D = "Te Pāti Māori Policy Manifesto 2026 chapter, Google Drive file linked ('Click here' / full policy) from the party's policy page"
+def _drv(i): return f"https://drive.google.com/file/d/{i}/view"
+TPM_PDFS.update({
+    "drive/11dbbk3BTNigHUb4xANPnTKxb2TC9dAgg.pdf": ("Tax — Te Pāti Māori Policy Manifesto 2026 (Drive edition)", _drv("11dbbk3BTNigHUb4xANPnTKxb2TC9dAgg"), _D + " maoriparty.org.nz/tax. Same policy as the Scoop-hosted A Kiwi Tax Plan PDF; extraction differs slightly."),
+    "drive/1esXEFN0eAOtJFcdIYwYOzaVkyFtEx5vE.pdf": ("Te Tiriti Entrenchment — Te Pāti Māori Policy Manifesto 2026 (Drive edition)", _drv("1esXEFN0eAOtJFcdIYwYOzaVkyFtEx5vE"), _D + " maoriparty.org.nz/te_tiriti_entrenchment (PDF created 2 Sep 2026)."),
+    "drive/1CPy0C0flCQ71RKuSmtaD3CNsoShG7QAc.pdf": ("Energy Sovereignty — Te Pāti Māori Policy Manifesto 2026 (Drive edition)", _drv("1CPy0C0flCQ71RKuSmtaD3CNsoShG7QAc"), _D + " maoriparty.org.nz/energy_sovereignty (PDF created 21 Sep 2026)."),
+    "drive/12XBSiuPt6KrpmxoHovpWOhfrB5ngTYkY.pdf": ("Mana Motuhake — Te Pāti Māori Policy Manifesto 2026", _drv("12XBSiuPt6KrpmxoHovpWOhfrB5ngTYkY"), _D + " maoriparty.org.nz/mana_motuhake (PDF created 18 May 2026)."),
+    "drive/1CCbBwB6mcxNgPTDnycPkcgvVrUDY5ZmL.pdf": ("Military Neutrality — Te Pāti Māori Policy Manifesto 2026", _drv("1CCbBwB6mcxNgPTDnycPkcgvVrUDY5ZmL"), _D + " maoriparty.org.nz/military_neutrality (PDF created 18 May 2026)."),
+    "drive/1FzavJoSYNEzsVWhnS9sBMI3XENAb9-Dr.pdf": ("Climate — Te Pāti Māori Policy Manifesto 2026", _drv("1FzavJoSYNEzsVWhnS9sBMI3XENAb9-Dr"), _D + " maoriparty.org.nz/climate (PDF created 18 May 2026)."),
+    "drive/1Jc9cFUmV5YgkPg7tlKpojeiOSvXzJX1N.pdf": ("Toi Māori — Te Pāti Māori Policy Manifesto 2026", _drv("1Jc9cFUmV5YgkPg7tlKpojeiOSvXzJX1N"), _D + " maoriparty.org.nz/toi_maori (PDF created 18 May 2026)."),
+    "drive/1LPTzVr2sdxSNdfLF2DFLikHqr2zaeuBP.pdf": ("Freshwater — Te Pāti Māori Policy Manifesto 2026", _drv("1LPTzVr2sdxSNdfLF2DFLikHqr2zaeuBP"), _D + " maoriparty.org.nz/freshwater_policy (PDF created 18 May 2026)."),
+    "drive/1T8WiwxG9nIDnDEjyVujLZKvoNWp7i0Oh.pdf": ("Housing — Te Pāti Māori Policy Manifesto 2026", _drv("1T8WiwxG9nIDnDEjyVujLZKvoNWp7i0Oh"), _D + " maoriparty.org.nz/housing (PDF created 5 Oct 2026)."),
+    "drive/1dIy46mwnEg7G0oG-2r8xC5b0Be2Poegs.pdf": ("Mokopuna Māori — Te Pāti Māori Policy Manifesto 2026", _drv("1dIy46mwnEg7G0oG-2r8xC5b0Be2Poegs"), _D + " maoriparty.org.nz/mokopuna_m_ori (PDF created 18 May 2026)."),
+    "drive/1m8zZo4j-pzDqeQdFj_OcVTPjq6VgEHCh.pdf": ("Te Reo Māori — Te Pāti Māori Policy Manifesto 2026", _drv("1m8zZo4j-pzDqeQdFj_OcVTPjq6VgEHCh"), _D + " maoriparty.org.nz/te_reo_maori (PDF created 18 May 2026)."),
+    "drive/1qyqzCxGrLF067Q2S5ZafwQ1F_UDOpPj0.pdf": ("Mana Takatāpui — Te Pāti Māori Policy Manifesto 2026", _drv("1qyqzCxGrLF067Q2S5ZafwQ1F_UDOpPj0"), _D + " maoriparty.org.nz/takat_pui (PDF created 21 Sep 2026)."),
+    "drive/1IeJ-WmT2cwdeo6noqVaSRFk55dhQGpNl.pdf": ("Whānau Pakari – Sport and Wellbeing Policy (2020 document — NOT confirmed as 2026 policy)", _drv("1IeJ-WmT2cwdeo6noqVaSRFk55dhQGpNl"), "Google Drive file 'MP Sport Policy.pdf' linked from maoriparty.org.nz/maori_sports (page captured March 2026). PDF metadata: created 30 Aug 2020 — an earlier election's policy, included for reference only."),
+    "drive/1V1fVe2hhe5eNDVBuJYmxu3_07igGSiyo.pdf": ("Mana Hauā (Disability) Policy (2023 document — NOT confirmed as 2026 policy)", _drv("1V1fVe2hhe5eNDVBuJYmxu3_07igGSiyo"), "Google Drive file linked from maoriparty.org.nz/mana_hau_policy (page captured April 2026). PDF metadata: created 25 Aug 2023 — the 2023 policy, included for reference only; the 2026 'Disabilities' page and the 2026 'What matters to you?' tool are the current texts."),
+    "drive/1N9MFecQz4zJngdvZhP6HtqC6IjiP5bIz.pdf": ("Mokopuna Māori Policy (2023 document — superseded)", _drv("1N9MFecQz4zJngdvZhP6HtqC6IjiP5bIz"), "Google Drive file linked from a 2023 maoriparty.org.nz news page. PDF metadata: created 1 Aug 2023. Superseded by the 2026 Mokopuna Māori manifesto chapter; included for reference only."),
+})
+
+TOOL = "tool:what-matters-to-you"
+def _add(M, k, docs, note=None):
+    g, d, n = M[k]
+    M[k] = (g, d + [x for x in docs if x not in d], n if note is None else note)
+P_TAX, P_ENT, P_EN = "pdf:drive/11dbbk3BTNigHUb4xANPnTKxb2TC9dAgg.pdf", "pdf:drive/1esXEFN0eAOtJFcdIYwYOzaVkyFtEx5vE.pdf", "pdf:drive/1CPy0C0flCQ71RKuSmtaD3CNsoShG7QAc.pdf"
+P_MM, P_MIL, P_CLI = "pdf:drive/12XBSiuPt6KrpmxoHovpWOhfrB5ngTYkY.pdf", "pdf:drive/1CCbBwB6mcxNgPTDnycPkcgvVrUDY5ZmL.pdf", "pdf:drive/1FzavJoSYNEzsVWhnS9sBMI3XENAb9-Dr.pdf"
+P_TOI, P_FW, P_HOU = "pdf:drive/1Jc9cFUmV5YgkPg7tlKpojeiOSvXzJX1N.pdf", "pdf:drive/1LPTzVr2sdxSNdfLF2DFLikHqr2zaeuBP.pdf", "pdf:drive/1T8WiwxG9nIDnDEjyVujLZKvoNWp7i0Oh.pdf"
+P_MOK, P_REO, P_TAK = "pdf:drive/1dIy46mwnEg7G0oG-2r8xC5b0Be2Poegs.pdf", "pdf:drive/1m8zZo4j-pzDqeQdFj_OcVTPjq6VgEHCh.pdf", "pdf:drive/1qyqzCxGrLF067Q2S5ZafwQ1F_UDOpPj0.pdf"
+P_SPORT, P_HAUA = "pdf:drive/1IeJ-WmT2cwdeo6noqVaSRFk55dhQGpNl.pdf", "pdf:drive/1V1fVe2hhe5eNDVBuJYmxu3_07igGSiyo.pdf"
+for k in ["POL54812", "POL54938", "POL54939", "POL54940", "POL54941", "POL54942", "POL54943", "POL54968"]: _add(TPM_MAP, k, [P_TAX, "cc:tax"])
+for k in ["POL54917", "POL54919", "POL54795"]: _add(TPM_MAP, k, [P_ENT, "cc:te_tiriti_entrenchment"])
+for k in ["POL55058", "POL55059", "POL55060", "POL55061", "POL55062", "POL55063", "POL55064"]: _add(TPM_MAP, k, [P_EN, "cc:energy_sovereignty"])
+_add(TPM_MAP, "POL54921", [P_MM]); _add(TPM_MAP, "POL54647", [TOOL]); _add(TPM_MAP, "POL55001", [TOOL])
+for k in ["POL54680", "POL54681", "POL54682"]: _add(TPM_MAP, k, [P_CLI, TOOL])
+for k in ["POL54683", "POL54684", "POL54688", "POL54690"]: _add(TPM_MAP, k, [P_MIL])
+for k in ["POL55000", "POL55067"]: _add(TPM_MAP, k, [P_MOK, TOOL])
+_add(TPM_MAP, "POL55065", [P_REO, TOOL]); _add(TPM_MAP, "POL55066", [TOOL]); _add(TPM_MAP, "POL54679", ["cc:education_training", TOOL])
+_add(TPM_MAP, "POL55068", ["cc:policy", "cc:maori_sports", TOOL],
+     "policy.nz cites maoriparty.org.nz/sports, which Common Crawl did not capture; the party's policy index page (captured 8 Oct 2026) carries the same 'Sports' summary, and the party's 'What matters to you?' tool lists the Whānau Pakari sport fund.")
+_add(TPM_MAP, "POL55070", [TOOL]); _add(TPM_MAP, "POL55071", [P_HOU, TOOL]); _add(TPM_MAP, "POL55072", [P_TOI, TOOL])
+_add(TPM_MAP, "POL55085", [P_FW, TOOL]); _add(TPM_MAP, "POL55086", [P_TAK, TOOL]); _add(TPM_MAP, "POL55087", [TOOL]); _add(TPM_MAP, "POL55088", [TOOL])
+_add(TPM_MAP, "POL54649", [TOOL]); _add(TPM_MAP, "POL54650", [TOOL])
+for x in TPM_EXTRA:
+    if x["id"] in ("TPM-A01",): x["docs"] += [P_TAX, P_HOU, TOOL]
+    if x["id"] in ("TPM-A02",): x["docs"] += [P_TAX]
+    if x["id"] in ("TPM-A03",): x["docs"] += [P_ENT]
+    if x["id"] in ("TPM-A04",): x["docs"] += [P_MM]
+    if x["id"] == "TPM-A05":
+        x["docs"] += [P_MM, TOOL]
+        x["statement"] = "Entrench the Māori electorates and require Māori wards in every council"
+        x["how"] += " The 2026 Mana Motuhake chapter and the party's policy tool also commit to requiring Māori wards and mana whenua representation in all councils."
+    if x["id"] == "TPM-A06":
+        x["docs"] += [P_CLI, TOOL]
+        x["how"] += " The Climate chapter separately commits $300 million to Mātai Ahuwhenua and a five-year phase-out of synthetic fertilisers; the party's policy tool states '$400 million to help Māori farmers move to regenerative farming'."
+    if x["id"] in ("TPM-A08", "TPM-A09", "TPM-A10"): x["docs"] += [TOOL]
+    if x["id"] == "TPM-A11":
+        x["docs"] += [P_TOI, TOOL]
+        x["how"] += " The Toi Māori chapter also commits $19 million baseline funding for Te Matatini, $10 million for community, hapū and iwi kapa haka, a $10 million Toi Māori research fund, and a living wage for employed and contracted artists."
+    if x["id"] == "TPM-A12":
+        x["docs"] += [P_TAK, TOOL]
+        x["how"] += " The chapter also commits to updating the Human Rights Act for people of diverse genders, sexualities and sex characteristics."
+    if x["id"] in ("TPM-A13", "TPM-A14", "TPM-A15"): x["docs"] += [TOOL]
+    if x["id"] == "TPM-A16":
+        x["docs"] += [P_HOU, TOOL]
+        x["statement"] = "Freeze rents (then cap rises at inflation) and repeal no-cause evictions in the first 100 days"
+        x["how"] = "The 2026 Housing chapter says the party would freeze all rents, then allow increases only by the rate of inflation each year unless the owner makes significant improvements, and repeal no-cause evictions within its first 100 days in government. Earlier releases described this as 'universal rent control'."
+    if x["id"] == "TPM-A17":
+        x["docs"] += [P_HOU, TOOL]
+        x["how"] += " The 2026 Housing chapter sets the 2,000 papakāinga homes within four years and commits to stopping the discounted sale of state houses to private investors and increasing funding for Sustaining Tenancies."
+    if x["id"] == "TPM-A18": x["docs"] += [P_HOU, P_MM]
+    if x["id"] == "TPM-A19":
+        x["docs"] += [P_CLI, TOOL]
+        x["how"] += " The 2026 Climate chapter commits $100m to a 'Māori National Service Defence framework' giving hapū, iwi and urban Māori organisations the same access and resources as local government after natural disasters, and a $100m Māori Taiao relief fund to rebuild marae, urupā and papakāinga."
+        x["note"] = "First made as a call on the government (April 2026); now part of the 2026 Climate chapter."
+
+def _t(id_, group, statement, topics, why, how, docs, note=""):
+    return _x(id_, group, statement, topics, why, how, docs, note)
+TPM_EXTRA += [
+    _t("TPM-A21", "Kai, cost of living & economy", "Lift the minimum wage to the living wage ($28.95 an hour) and end youth rates", ["wages-and-working-conditions", "incomes-and-employment"],
+       "The party says no one should be paid less than what it costs to live.",
+       "The party's policy tool (from its 2026 manifesto) says the minimum wage would go 'straight up to the living wage', $28.95 an hour, and that youth and starting-out rates would end.", [TOOL]),
+    _t("TPM-A22", "Kai, cost of living & economy", "Double baseline benefits, remove sanctions and work-test obligations, cancel benefit debt", ["benefits", "tax-and-income-support"],
+       "The party says welfare should not punish whānau for being poor.",
+       "The party's policy tool lists doubling baseline benefits, removing sanctions and work-test obligations, cancelling benefit debt owed to the Crown, hardship grants that do not need to be repaid, and Special Needs Grants that cover cultural costs such as tangihanga and unveilings.", [TOOL, "cc:cost_of_living"]),
+    _t("TPM-A23", "Kai, cost of living & economy", "Free public transport for tamariki, students and Community Services Card holders, then for everyone within five years", ["public-transport-cycling-and-walking", "prices"],
+       "The party says transport costs are a major part of the cost of living.",
+       "The party's policy tool says public transport would be free immediately for tamariki, students (including tertiary) and Community Services Card holders, half price for everyone else, and free for everyone within five years.", [TOOL, "cc:cost_of_living"]),
+    _t("TPM-A24", "Housing", "Repeal interest deductibility for landlords and use the money for social housing and papakāinga", ["housing", "government-revenue-and-finance"],
+       "The party says restoring interest deductibility gave landlords a $3 billion tax break and pushes home ownership out of reach.",
+       "The 2026 Housing chapter says the party would repeal interest deductibility and redistribute the $3 billion to help fund its social housing and papakāinga policies.", [P_HOU]),
+    _t("TPM-A25", "Housing", "Create 'Rangatahi Ora' and a legal duty on government to end youth homelessness", ["housing", "young-people", "social-and-public-housing"],
+       "The party says half of homeless people are under 25 and agencies have no duty to prevent it.",
+       "The 2026 Housing chapter would set up a new agency, Rangatahi Ora, with functions, duties and powers to prevent youth homelessness, and a legal 'duty to assist' requiring agencies to end or stabilise a young person's homelessness (building on Oriini Kaipara's member's bill).", [P_HOU, TOOL, "scoop:PA2602-S00141"]),
+    _t("TPM-A26", "Health, disability & whānau", "End state care of mokopuna Māori and create a Mokopuna Māori Authority funded with ~70% of Oranga Tamariki's budget", ["family-justice-and-safety", "te-ao-maori", "community-and-inclusion"],
+       "The party says state care removes Māori children from their whakapapa and causes harm.",
+       "The 2026 Mokopuna Māori chapter commits to ending state care for mokopuna Māori, a Mokopuna Māori Act creating an independent authority, a three-year transition away from Oranga Tamariki with 70% of its budget (about $1 billion a year) reallocated, reinstating section 7AA, ending uplifts without whānau, hapū and iwi consent, closing youth care and protection residences, and implementing all 138 recommendations of the Royal Commission into Abuse in Care (Whanaketia).", [P_MOK, TOOL]),
+    _t("TPM-A27", "Education & te reo Māori", "Write off the living-cost part of student loans and pay every student a doubled student allowance", ["tertiary-education", "education"],
+       "The party says cost barriers block whānau from education and training.",
+       "The party's policy tool says the living-cost component of every student loan would be written off (working towards full write-offs for people who live and work here for five years), and every student would get a student allowance at double the rate, with the parental income test scrapped and allowances restored for postgraduate, part-time and long-course students.", [TOOL]),
+    _t("TPM-A28", "Education & te reo Māori", "Teachers' pay rises that keep up with inflation", ["schools", "wages-and-working-conditions"],
+       "The party says the education workforce needs support on pay and workload.",
+       "The party's policy tool lists pay rises for teachers that keep up with inflation, support for Māori teachers, kaiako and support staff, and action on pay inequity and workload; it also lists second-chance and adult education and kai-sovereignty scholarships and trades apprenticeships.", [TOOL]),
+    _t("TPM-A29", "Health, disability & whānau", "Free GP visits and free dental care for all whānau", ["health-services", "health"],
+       "The party says Māori die seven years earlier than non-Māori.",
+       "The party's policy tool lists free primary healthcare and free dental care for all whānau, clinics on marae, mobile health units and free delivery of medication, protecting rongoā Māori and funding more medicines through Pharmac.", [TOOL, "cc:health"]),
+    _t("TPM-A30", "Health, disability & whānau", "$500 million a year for kaupapa Māori mental health", ["mental-health", "health"],
+       "The party says mental health services must be culturally safe and accountable to Māori.",
+       "The party's policy tool lists $500 million a year for kaupapa Māori mental health, free community mental health services, and treating addiction as a health issue with double the funding for prevention, harm reduction and treatment.", [TOOL]),
+    _t("TPM-A31", "Health, disability & whānau", "Start bowel screening at 45 for everyone and 35 for Māori and Pacific peoples", ["public-health", "health-services"],
+       "The party says screening ages should reflect earlier onset among Māori and Pacific peoples.",
+       "The party's policy tool lists earlier bowel screening: from age 45 for everyone and from 35 for Māori and Pacific peoples.", [TOOL]),
+    _t("TPM-A32", "Health, disability & whānau", "Move a quarter of all health and ACC funding to Māori-led systems", ["health-funding-and-workforce", "te-ao-maori"],
+       "The party says a health system that does not understand Māori will keep failing Māori.",
+       "The party's policy tool states 'A quarter of all health and ACC funding moved to systems led by Māori.'", [TOOL, "cc:health"]),
+    _t("TPM-A33", "Health, disability & whānau", "Establish a Māori-led Mana Hauā Authority for disabled whānau and recognise unpaid care as work", ["disability", "te-ao-maori"],
+       "The party says disabled Māori should not have to fight a degrading system for support.",
+       "The party's policy tool lists a Mana Hauā Authority led by Māori, support that keeps Tangata Hauā with their whānau, recognising unpaid care as real work, and aligning disability support with income so no one is forced into poverty. (The party's 2023 Mana Hauā policy, archived for reference, set out a fuller list.)", [TOOL, "cc:disabilities", "cc:mana_hau_policy", P_HAUA]),
+    _t("TPM-A34", "Environment, climate & energy", "End new oil and gas exploration and withdraw existing permits within five years", ["emissions-reduction", "energy", "oceans"],
+       "The party says whenua and moana must be protected from extractive industries.",
+       "The 2026 Climate chapter commits to ending new oil and gas exploration, withdrawing existing on- and offshore permits within five years and decommissioning sites within ten, with planning and support for workers through a just transition.", [P_CLI, TOOL]),
+    _t("TPM-A35", "Environment, climate & energy", "Repeal the Fast-track Approvals Act and end mining on conservation land", ["conservation", "land-and-resources", "urban-planning-and-resource-management"],
+       "The party says fast-track consenting overrides mana whenua and the environment.",
+       "The 2026 Climate chapter commits to repealing the Fast-track Approvals Act and retrospectively revoking all fast-tracked mining consents, and ending mining on conservation land including reserves and Significant Natural Areas.", [P_CLI, TOOL]),
+    _t("TPM-A36", "Environment, climate & energy", "$1 billion Pūngao Auaha Fund for solar and insulation on marae, kura, papakāinga and homes", ["energy", "climate-adaptation", "housing"],
+       "The party says Māori communities should benefit from the energy transition.",
+       "The 2026 Climate chapter establishes a $1 billion Pūngao Auaha Fund to retrofit marae, kura, papakāinga and housing with solar and insulation, support Māori-led community energy and move Māori-owned businesses off coal and gas. (It is separate in the Climate chapter from the $1 billion Energy Sovereignty Fund in the Energy chapter; the documents do not say whether these overlap.)", [P_CLI, TOOL]),
+    _t("TPM-A37", "Environment, climate & energy", "Guarantee safe, affordable drinking water and ban the trading of water rights", ["fresh-water-and-pollution", "infrastructure-funding-and-planning"],
+       "The party says water is a taonga, not a market asset.",
+       "The 2026 Freshwater chapter commits to safe, affordable drinking water for all whānau, investment in water infrastructure, rejecting privatisation and trading of water rights, enforceable limits to restore waterways, and funding iwi, hapū and marae water initiatives.", [P_FW, TOOL]),
+    _t("TPM-A38", "Education & te reo Māori", "Make te reo Māori compulsory in education and require public agencies to work bilingually", ["te-reo-maori-and-culture", "schools", "public-sector"],
+       "The party says te reo should be part of everyday life, not something you have to ask for.",
+       "The 2026 Te Reo Māori chapter commits to compulsory te reo Māori in the education system with age-appropriate progression, bilingual public institutions, funding whānau-, marae-, hapū- and iwi-led reo initiatives, stronger Māori media and broadcasting, and protections against rollback of te reo commitments.", [P_REO, TOOL]),
+    _t("TPM-A39", "Arts, culture, sport & takatāpui", "A $100 million Whānau Pakari sport fund and Māori teams competing as Aotearoa Māori", ["sports-and-recreation", "young-people", "te-ao-maori"],
+       "The party says sport builds belonging, wellbeing and pathways for rangatahi.",
+       "The party's 2026 policy tool lists 'A $100 million Whānau Pakari fund for sport' (Māori sports academies, scholarships, funding for Pā Wars) and 'Māori teams competing overseas as Aotearoa Māori'. The fuller Whānau Pakari policy document the site links to dates from 2020.", [TOOL, "cc:maori_sports", P_SPORT]),
+    _t("TPM-A40", "Te Tiriti, constitution & democracy", "Land back: return the foreshore and seabed, conservation land and Crown and council land to mana whenua", ["land-and-resources", "te-tiriti-o-waitangi-and-governance"],
+       "The party says mana motuhake requires the return of land and authority.",
+       "The 2026 Mana Motuhake chapter commits to returning the foreshore and seabed, all conservation land and all central and local government land to mana whenua, a first right of refusal for mana whenua on all private land sales, ending perpetual leases, and ending foreign freehold land sales (leasehold only).", [P_MM, TOOL, "cc:mana_motuhake"]),
+    _t("TPM-A41", "Te Tiriti, constitution & democracy", "Establish a Māori Parliament", ["parliament-and-democracy", "te-ao-maori"],
+       "The party says Māori political authority must be restored.",
+       "The 2026 Mana Motuhake chapter (Stage 3) commits to establishing a Māori Parliament holding authority over Māori programmes, funding streams and governance structures accountable to Māori.", [P_MM]),
+    _t("TPM-A42", "Te Tiriti, constitution & democracy", "Remove the British monarch as head of state and make Aotearoa the official name", ["parliament-and-democracy", "te-reo-maori-and-culture"],
+       "The party frames these as part of Te Tiriti-based constitutional transformation.",
+       "The 2026 Mana Motuhake chapter (Stage 3) lists removing the British Royal Family as Head of State and recognising Aotearoa as the country's official name.", [P_MM]),
+    _t("TPM-A43", "Te Tiriti, constitution & democracy", "Reform Treaty settlements: end 'full and final' and 'large natural groupings' policies, add relativity clauses", ["te-tiriti-o-waitangi-and-governance"],
+       "The party says the settlement framework must be durable, just and recognise hapū-level authority.",
+       "The 2026 Mana Motuhake chapter commits to abolishing 'full and final' and 'large natural groupings' settlement policies and inserting retrospective relativity clauses into all Te Tiriti settlements.", [P_MM]),
+    _t("TPM-A44", "Kai, cost of living & economy", "A quarter of government contracts for Māori businesses and a $4.5 billion Oranga Whenua Oranga Tangata Fund", ["economic-development-and-industry", "business-support", "te-ao-maori"],
+       "The party says Māori prosperity needs Māori-led institutions and funds.",
+       "The party's policy tool says a quarter of all government spending on contracts would go to businesses fully owned and governed by Māori, plus a $4.5 billion Oranga Whenua Oranga Tangata Fund for Māori land, marae and business.", [TOOL, "cc:economic_development"]),
+    _t("TPM-A45", "Te Tiriti, constitution & democracy", "Lower the voting age to 16 and allow switching between Māori and general rolls at any time", ["parliament-and-democracy"],
+       "The party says electoral law should not exclude Māori and young people.",
+       "The party's policy tool and Justice chapter list lowering the voting age to 16, enrolment at any time, switching between the Māori and general rolls at any time, and restoring voting rights to people in prison.", [TOOL, "pdf:justice-drive-1PhB4PNA7fE9Ipj5SXhRRCrmgywM-MhAx.pdf"]),
+    _t("TPM-A46", "Kai, cost of living & economy", "Protect the right to sell homegrown and homekill kai locally", ["agriculture", "prices"],
+       "The party says communities should be able to feed each other.",
+       "The party's policy tool lists 'The right to sell homegrown and homekill kai locally', including roadside kai, 'without interference or tax', and more land set aside for rural and urban food farms.", [TOOL, "cc:kai_sovereignt"]),
+]
+for k in ["POL54684"]:
+    _add(TPM_MAP, k, [TOOL])
+
+# ---- NZ First: CC policy pages for existing items, and members' bills listed on nzfirst.nz
+for k, d in {"POL54664": ["cc:the_kiwisaver_generation_and_bnz_buy_back"], "POL54663": ["cc:the_kiwisaver_generation_and_bnz_buy_back"],
+             "POL54757": ["cc:maori_seats_referendum_bill"], "POL54668": ["cc:local_government_auckland_council_disestablishment_of_imsb_amendment_bill"],
+             "POL55234": ["cc:the_fireworks_prohibition_legislation_bill", "pdf:Fireworks_Prohibition_Legislation_Bill.pdf"],
+             "POL54754": ["cc:use_it_or_lose_it_dairy_policy"], "POL54961": ["cc:nz_super_for_citizens_only"],
+             "POL55157": ["cc:ending_the_waitangi_makework_industry"]}.items():
+    _add(NZF_MAP, k, d)
+for k in ["POL54962", "POL54963", "POL54964", "POL54965", "POL54966", "POL54967"]: _add(NZF_MAP, k, ["cc:immigration_reform_policies"])
+for k in ["POL55057", "POL55073", "POL55076", "POL55077", "POL55078"]: _add(NZF_MAP, k, ["cc:the_plan_to_make_nz_healthy"])
+for x in NZF_EXTRA:
+    if x["id"] == "NZF-A01":
+        x["docs"] = ["cc:the_100bn_new_zealand_future_fund"] + x["docs"]
+        x["note"] = "The party's policy page for the Future Fund was retrieved via Common Crawl (captured 7 Sep 2026)."
+        x["how"] = ("This party would establish a 'New Zealand Future Fund' of up to $100 billion to invest solely in a multi-decade infrastructure build, ring-fenced from politicians, on a model similar to Singapore's Temasek. "
+                    "Its policy page says the fund would be built by attracting international investment through 'taxation incentivisation'. The party says it would fund promised projects (for example the Hope Bypass).")
+    if x["id"] == "NZF-A02": x["docs"] = ["cc:future_proofing_our_fuel_security"] + x["docs"]
+    if x["id"] == "NZF-A03": x["docs"] = ["cc:withdraw_from_paris_accord"] + x["docs"]
+    if x["id"] == "NZF-A24": x["docs"] += ["cc:the_container_return_scheme_bill", "pdf:Container_Return_Scheme_Bill-v1.5_1.pdf"]
+    if x["id"] == "NZF-A26": x["docs"] += ["cc:nz_first_lodges_differing_view_on_the_gene_tech_bill"]
+    if x["id"] == "NZF-A27": x["docs"] += ["cc:preventing_payment_scams_bill"]
+    if x["id"] == "NZF-A28": x["docs"] += ["cc:the_accessibility_standards_bill"]
+_MB = "Members' bills on the party's books"
+NZF_EXTRA += [
+    _x("NZF-A31", _MB, "Free, structured prostate cancer screening for at-risk men (member's bill)", ["health", "public-health"],
+       "The party lists this among its current members' bills.",
+       "The Health (Prostate Cancer Screening Services) Amendment Bill (Sept 2025) 'will provide free, structured screening for at-risk men, using PSA testing, MRI scans, and targeted biopsies where needed.'", ["cc:prostate_cancer_screening_bill", "cc:our-members-bills"]),
+    _x("NZF-A32", _MB, "Require organisations to accept physical ID, not only digital ID (member's bill)", ["internet-and-digital-technologies", "civil-justice"],
+       "The party says physical identification must remain a valid and equal alternative to digital ID.",
+       "The Identification (Protection of Physical Identification Methods) Bill (Sept 2025) would require organisations to accept passports, driver licences, 18+ cards, school IDs and other prescribed physical documents whenever proof of age or identity is required.", ["cc:nz_first_introduces_bill_to_protect_against_digital_id_overreach", "cc:our-members-bills"]),
+    _x("NZF-A33", _MB, "Legislate 'New Zealand' as the country's official name (member's bill)", ["parliament-and-democracy", "arts-culture-and-heritage"],
+       "The party says officials have been changing the country's name 'by stealth'.",
+       "The New Zealand (Name of State) Bill (Aug 2025) would state in law that 'New Zealand' is the official geographic name of the country.", ["cc:nzf_bill_legislating_nzs_name", "cc:our-members-bills"],
+       "Contrast: Te Pāti Māori's Mana Motuhake chapter proposes recognising 'Aotearoa' as the official name."),
+    _x("NZF-A34", _MB, "Protect the right to pay with cash (member's bill)", ["economy", "prices"],
+       "The party says cash must remain a private, accessible and reliable way to pay.",
+       "The Cash Transactions Protection Bill (July 2025) would provide for the enduring use of cash as a method of payment.", ["cc:cash_transactions_protection_bill", "cc:our-members-bills"]),
+    _x("NZF-A35", _MB, "Define 'woman' and 'man' biologically in law (member's bill)", ["civil-justice", "community-and-inclusion"],
+       "The party says the law needs clarity and consistency.",
+       "The Legislation (Definitions of Woman and Man) Amendment Bill (April 2025) would define 'woman' as 'an adult human biological female' and 'man' as 'an adult human biological male' in the Legislation Act 2019.", ["cc:definitions-woman-man-bill"]),
+    _x("NZF-A36", _MB, "Repeal diversity and inclusion requirements in the public service (member's bill)", ["public-sector"],
+       "The party says public service employment should be based on merit, not DEI targets.",
+       "The Public Service (Repeal of Diversity and Inclusiveness Requirements) Amendment Bill (March 2025) would remove those requirements from the Public Service Act.", ["cc:repeal-of-dei-requirements-bill"]),
+    _x("NZF-A37", _MB, "Make English an official language of New Zealand (member's bill)", ["arts-culture-and-heritage", "parliament-and-democracy"],
+       "The party says the law should be clear about the official status of English.",
+       "NZ First's English Language Bill, which would make English an official language, passed its first reading in March 2026.", ["cc:english-language-bill-passes-first-reading"]),
+    _x("NZF-A38", _MB, "Require national referendums before conscience-vote issues become law (member's bill)", ["parliament-and-democracy"],
+       "The party says conscience issues should be decided by the people, not MPs' conscience votes.",
+       "The Conscience Acts Referendums Bill (March 2025) would require a mandatory national referendum before any conscience issue is passed into law.", ["cc:conscience-referendums-bill"]),
+    _x("NZF-A39", _MB, "Return fluoridation decisions to local communities by referendum (member's bill)", ["public-health", "local-government"],
+       "The party says fluoridation decisions were centralised without community say.",
+       "The Fluoridation (Referendum) Legislation Bill (Feb 2025) would repeal the Health (Fluoridation of Drinking Water) Amendment Act 2021 and restore local decision-making through referendums.", ["cc:fluoridation-referendum-bill"]),
+    _x("NZF-A40", _MB, "Only the official New Zealand flag on government buildings (member's bill)", ["public-sector", "arts-culture-and-heritage"],
+       "The party says government premises should display only the national flag.",
+       "The Display of Flags (Government Premises) Bill (July 2025) would make it law that government buildings can only display the official flag of New Zealand.", ["cc:display_of_flags_government_premises_bill"]),
+]

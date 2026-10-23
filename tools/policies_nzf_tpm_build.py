@@ -11,22 +11,23 @@ from collections import OrderedDict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import policies_nzf_tpm_config as C
-from policies_nzf_tpm_extract import extract
+from policies_nzf_tpm_extract import extract, extract_nb
 from policies_nzf_tpm_pdftext import pdf_text
 
 PARTIES = {
     "nz-first": dict(name="New Zealand First", short="NZ First", pnz="nz-first", scoop=C.NZF_SCOOP, pdfs=C.NZF_PDFS,
-                     map=C.NZF_MAP, extra=C.NZF_EXTRA, headline=C.NZF_HEADLINE, signature=C.NZF_SIGNATURE,
+                     map=C.NZF_MAP, extra=C.NZF_EXTRA, cc=C.NZF_CC, headline=C.NZF_HEADLINE, signature=C.NZF_SIGNATURE,
                      site="nzfirst.nz", scoop_org="https://info.scoop.co.nz/New_Zealand_First_Party"),
     "te-pati-maori": dict(name="Te Pāti Māori", short="Te Pāti Māori", pnz="te-pati-maori", scoop=C.TPM_SCOOP,
-                          pdfs=C.TPM_PDFS, map=C.TPM_MAP, extra=C.TPM_EXTRA, headline=C.TPM_HEADLINE,
+                          pdfs=C.TPM_PDFS, map=C.TPM_MAP, extra=C.TPM_EXTRA, cc=C.TPM_CC, headline=C.TPM_HEADLINE,
                           signature=C.TPM_SIGNATURE, site="maoriparty.org.nz",
                           scoop_org="https://info.scoop.co.nz/Te_Pati_Maori"),
 }
 BLOCK_REASON = ("{site} returns HTTP 403 (Cloudflare bot challenge) to direct requests and to a headless Chromium "
                 "browser (tools/fetch_page.js), tested 23 October 2026. The Internet Archive (web.archive.org) "
                 "snapshot cited by policy.nz could not be fetched either: connections to web.archive.org are reset "
-                "by this environment's network proxy. No other copy of this page's text was found.")
+                "by this environment's network proxy. Common Crawl's 2026 crawls (CC-MAIN-2026-12, -17, -21, -30, -34, -39, -43) "
+                "contain no capture of this URL. No other copy of this page's text was found.")
 
 def slugify(s, n=70):
     s = s.lower()
@@ -91,7 +92,8 @@ def build(party):
     # --- PDFs
     for fn, (title, url, note) in P["pdfs"].items():
         pages = pdf_text(os.path.join(ROOT, "raw/party-docs", party, fn))
-        slug = "pdf-" + slugify(os.path.splitext(fn)[0].replace("drive-", ""), 60)
+        slug = "pdf-" + slugify(re.sub(r"\(.*?\)|—.*$", "", title) if fn.startswith("drive/") else os.path.splitext(fn)[0].replace("drive-", ""), 60)
+        if any(d["slug"] == slug for d in docs.values()): slug += "-" + slugify(os.path.basename(fn), 8)
         docs["pdf:" + fn] = dict(slug=slug, title=title, url=url, date="", kind="PDF")
         body = front(OrderedDict(title=title, party=party, source_url=url, retrieved=C.RETRIEVED, format="pdf",
                                  fetch_method="curl download; text extracted with `pdftotext -raw` (tools/policies_nzf_tpm_pdftext.py)",
@@ -106,8 +108,74 @@ def build(party):
             body += f"### Page {n}\n\n```text\n{pg}\n```\n\n"
         open(os.path.join(docdir, slug + ".md"), "w").write(body)
 
-    # --- policy.nz items
+    # --- Common Crawl captures of the party website
+    ccidx = json.load(open(os.path.join(ROOT, "raw/party-docs", party, "cc_html", "index.json")))
     pnz = json.load(open(os.path.join(ROOT, "raw/policy.nz/parties", P["pnz"] + ".json")))
+    cited = []
+    for p in pnz["policies"]:
+        for c in p.get("citations") or []:
+            o, _ = orig_url(c.get("url") or "")
+            if P["site"] in o: cited.append(o.split(P["site"], 1)[1].strip("/"))
+    for path in list(OrderedDict.fromkeys(P["cc"] + cited)):
+        if path not in ccidx: continue
+        m = ccidx[path]
+        title, text, links = extract_nb(open(os.path.join(ROOT, "raw/party-docs", party, "cc_html", m["file"]), encoding="utf-8").read())
+        text = re.sub(r"^back to main page\s*", "", text)
+        for cut in ("### Get our newsletter", "See all pānui", "Do you like this page?"):
+            if cut in text: text = text.split(cut)[0]
+        text = text.strip()
+        ts = m["timestamp"]; cap = f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}T{ts[8:10]}:{ts[10:12]}:{ts[12:14]}Z"
+        crawl = re.search(r"CC-MAIN-\d{4}-\d{2}", m["warc"]).group(0)
+        title = re.sub(r"\s+-\s+(New Zealand First|NZ First|Te Pāti Māori)$", "", title)
+        slug = "site-" + slugify(path or "home", 70)
+        docs["cc:" + path] = dict(slug=slug, title=title, url=m["url"], date=cap[:10], kind="Party web page (Common Crawl)")
+        ext = [(t, h) for t, h in links if re.search(r"drive\.google|\.pdf", h)]
+        body = front(OrderedDict(title=title, party=party, source_url=m["url"], captured=cap, retrieved=C.RETRIEVED, format="html",
+                                 fetch_method=f"Common Crawl WARC record ({crawl}; {m['warc']} offset {m['offset']} length {m['length']}) via data.commoncrawl.org",
+                                 note=f"Verbatim text of the party's own web page as captured by Common Crawl on {cap[:10]}; {P['site']} itself blocks automated access. "
+                                      "Main content only (navigation, share buttons, sign-up forms and footers removed; whitespace normalised). The live page may have changed since capture."))
+        body += f"# {title}\n\nSource: <{m['url']}> — Common Crawl capture {cap}\n\n"
+        if ext:
+            body += "Documents linked from this page: " + ", ".join(f"[{(t or 'link')}]({h})" for t, h in OrderedDict((h, t) for t, h in ext).items().__iter__() and [(t, h) for h, t in OrderedDict((h, t) for t, h in ext).items()]) + "\n\n"
+        body += "## Full text\n\n" + text + "\n"
+        open(os.path.join(docdir, slug + ".md"), "w").write(body)
+    tool = C.CC_TOOL.get(party)
+    if tool and tool in ccidx:
+        m = ccidx[tool]; ts = m["timestamp"]; cap = f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}T{ts[8:10]}:{ts[10:12]}:{ts[12:14]}Z"
+        raw = open(os.path.join(ROOT, "raw/party-docs", party, "cc_html", tool + ".raw.html"), encoding="utf-8").read()
+        sl = "site-what-matters-to-you-manifesto-tool"
+        docs["tool:" + tool] = dict(slug=sl, title="“What matters to you?” policy tool (content from the Te Pāti Māori Policy Manifesto 2026)", url=m["url"], date=cap[:10], kind="Party web page (Common Crawl)")
+        q = r'"((?:[^"\\]|\\.)*)"'
+        blk = raw[raw.index("var AREAS"):raw.index("var GROUPS")]
+        parts = {"AREAS": "Part 1 — policies by area (“Pick your top three”)", "ABOUT": "Part 2 — what changes for you (“Which of these sounds like you or your whānau?”)",
+                 "BOTTOM": "Part 3 — “Everything else we’ll do”"}
+        out = []
+        tok = re.compile(r'var (AREAS|ABOUT|BOTTOM)\b|\{\s*((?:\w+:' + q + r'\s*,?\s*)+)\w+:\[|\[' + q + r'\s*,\s*' + q + r'\]')
+        for t in tok.finditer(blk):
+            if t.group(1):
+                out += ["", f"## {parts[t.group(1)]}", ""]
+            elif t.group(2):
+                head = dict(re.findall(r'(\w+):' + q, t.group(2)))
+                name = head.get("title") or head.get("label") or head.get("id")
+                out += ["", f"### {name}" + (f" ({head['reo']})" if head.get("reo") else ""), ""]
+                for k in ("why", "plain"):
+                    if head.get(k): out += [f"*{head[k]}*", ""]
+            else:
+                a_, b_ = t.group(4), t.group(5)
+                out.append(f"- **{a_}**" + (f" — {b_}" if b_ else ""))
+        npairs = len(re.findall(r'\[' + q + r'\s*,\s*' + q + r'\]', blk))
+        assert sum(1 for l in out if l.startswith("- **")) == npairs, "tool parse incomplete"
+        body = front(OrderedDict(title=docs["tool:" + tool]["title"], party=party, source_url=m["url"], captured=cap, retrieved=C.RETRIEVED,
+                                 format="html (embedded JavaScript data)",
+                                 fetch_method=f"Common Crawl WARC record ({re.search(r'CC-MAIN-[0-9-]+', m['warc']).group(0)}; {m['warc']} offset {m['offset']} length {m['length']})",
+                                 note="The page is an interactive tool; its content is a JavaScript data block headed 'CONTENT (from Te Pāti Māori Policy Manifesto 2026)'. "
+                                      "Every text string of that block is reproduced below in order (headline, then detail), only re-laid out as Markdown. The page footer reads: "
+                                      "'Everything here comes from the Te Pāti Māori Policy Manifesto 2026.'"))
+        body += f"# {docs['tool:' + tool]['title']}\n\nSource: <{m['url']}> — Common Crawl capture {cap}\n\n"
+        body += "## Full text\n" + "\n".join(out) + "\n"
+        open(os.path.join(docdir, sl + ".md"), "w").write(body)
+
+    # --- policy.nz items
     blocked = OrderedDict()
     policies = []
     for p in pnz["policies"]:
@@ -127,8 +195,13 @@ def build(party):
             for k, d in docs.items():
                 if k.startswith("scoop:") and k[6:].replace("-", "/") in o:
                     direct = k
-                if k.startswith("pdf:") and (d["url"].rstrip("/") == o.rstrip("/") or (("drive.google.com" in o) and k[4:].split("-")[-1].split(".")[0] in o)):
+                if k.startswith("pdf:") and d["url"].rstrip("/") == o.rstrip("/"):
                     direct = k
+                if k.startswith("pdf:") and "drive.google.com" in o:
+                    did = re.search(r"/d/([\w-]+)", o)
+                    if did and did.group(1) in d["url"]: direct = k
+            if host == P["site"] and "cc:" + o.split(host, 1)[1].strip("/") in docs:
+                direct = "cc:" + o.split(host, 1)[1].strip("/")
             if "community.scoop.co.nz" in o:
                 src["note"] = "Same release as the Scoop copy listed below."
             elif direct:

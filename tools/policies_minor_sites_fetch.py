@@ -125,7 +125,7 @@ def alliance():
     items = []
     posts = {p["slug"]: p for p in wp_json(base, "posts?per_page=100", P)}
     pages = {p["slug"]: p for p in wp_json(base, "pages?per_page=100", P)}
-    for sl in ["what-we-stand-for", "health-policy"]:
+    for sl in ["what-we-stand-for"]:
         p = pages[sl]
         md = L.html_to_md(L.soup_from_html(p["content"]["rendered"]))
         rel = L.write_doc(P, "page-" + sl, html.unescape(p["title"]["rendered"]), p["link"], md,

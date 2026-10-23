@@ -707,3 +707,163 @@ CATALOG["womens-rights"] = [
     P("WRP-17", "Use language in law, health and education that defines women as adult human females and motherhood as exclusively female", ["community-and-inclusion", "women"], _wr,
       "Keep words such as 'mother', 'woman' and 'breastfeeding' in maternity services.", ["our-priorities"] + FULL + W("advocating-for-women")),
 ]
+
+# ------------------------------------------------------------------------------------------------ Alliance
+META["alliance"] = {
+    "name": "Alliance Party of Aotearoa New Zealand", "website": "https://allianceparty.nz/",
+    "registered": "5 August 2026 (re-registered; Electoral Commission register)",
+    "intro": "The relaunched Alliance (leader Victor Billot) released its 2026 platform as a series of policy announcements "
+             "(September–October 2026), each with a full policy PDF: tax and costings, workers' rights, environment, health, "
+             "transport, social security, gender equality, small business, justice, child poverty, housing, retirement, Te "
+             "Tiriti and constitution, trade, public ownership, and foreign affairs and defence. All 17 PDFs and all policy "
+             "posts are captured. The main commitments of each document are listed below.",
+    "gaps": "Only the tax package has a separate costing document. Policy PDFs were extracted with pdftotext (page numbers "
+            "kept). Earlier 2026 posts responding to news are captured where they state policy (Universal Child Benefit, conference).",
+}
+A = lambda pdf, post: ["pdf-" + pdf] + ["post-" + post]
+TAX = A("tax-justice-cost-of-living-policy", "2026-09-06-alliance-tax-plan-first-20000-income-tax-free") + ["pdf-tax-policy-costings"]
+WRK = A("workers-rights-employment-policy", "2026-09-07-alliance-full-employment-35-hour-week-workers-righ")
+ENV = A("environment-climate-sustainable-economy-policy", "2026-09-08-alliance-environment-climate-sustainable-economy-p")
+HLT = A("health-policy", "2026-09-10-alliance-health-policy-free-gp-dental-optical-audi")
+TRN = A("transport-policy", "2026-09-12-alliance-national-transport-strategy")
+WEL = A("welfare-family-social-security-policy", "2026-09-14-alliance-plan-to-rebuild-universal-social-security")
+GEN = A("women-gender-equality-economic-security-policy", "2026-09-16-alliance-52-weeks-paid-parental-leave-gender-equal")
+SMB = A("small-business-local-enterprise-cooperative-policy", "2026-09-17-alliance-small-business-local-enterprise-cooperati")
+JUS = A("justice-policy", "2026-09-21-alliance-justice-policy-three-strikes-into-treatme")
+CHI = A("universal-child-benefit-and-child-poverty-policy", "2026-09-23-alliance-plan-to-eliminate-child-poverty") + ["post-2026-08-19-alliance-calls-for-universal-child-benefit"]
+HOU = A("housing-policy", "2026-09-23-the-right-to-a-roof-alliance-housing-policy")
+RET = A("retirement-and-aged-care-policy", "2026-09-25-alliance-retirement-aged-care-kiwisaver-policy")
+TIR = A("te-tiriti-democracy-constitutional-policy", "2026-09-26-alliance-te-tiriti-democracy-constitutional-policy")
+TRD = A("trade-policy", "2026-09-28-open-not-owned-alliance-trade-policy")
+PUB = A("public-ownership-economic-democracy-policy", "2026-10-02-alliance-public-ownership-economic-democracy-polic")
+FOR = A("foreign-affairs-defence-international-relations-policy", "2026-10-04-alliance-foreign-affairs-defence-international-rel")
+CATALOG["alliance"] = [
+    P("ALL-01", "Make the first $20,000 of everyone's income tax-free", ["incomes-and-employment", "tax-and-income-support"],
+      "The Alliance says income is taxed from the first dollar that pays for food, power and rent while wealth is lightly taxed.",
+      "A universal, automatic threshold; it says everyone earning under about $178,150 would pay less. Upper rates of 34% ($78,100–$150,000), 39% ($150,000–$250,000) and 47% above $250,000.", TAX, key=True),
+    P("ALL-02", "Introduce a 2.5% annual wealth tax on net wealth over $2 million, with a trust tax", ["incomes-and-employment", "tax-and-income-support", "government-revenue-and-finance"],
+      None, "A couple would pay nothing on combined net wealth up to $4 million; the party estimates $6.59 billion a year and would resource IRD to enforce it.", TAX, key=True),
+    P("ALL-03", "Introduce a 33% capital gains tax on realised gains, excluding the family home", ["incomes-and-employment", "tax-and-income-support", "housing"], None,
+      "Covers investment property, shares and business assets, applying only to gains after it starts; revenue estimated to build from $0.54bn to over $2bn a year.", TAX),
+    P("ALL-04", "Introduce a 0.1% financial transactions levy on equity and foreign-exchange turnover", ["economy", "government-revenue-and-finance"], None,
+      "Estimated at $0.64bn a year; wages, rent and mortgage payments, household bills and KiwiSaver contributions are excluded.", TAX),
+    P("ALL-05", "Make full employment a central goal, with a 35-hour week and five weeks' annual leave", ["incomes-and-employment", "jobs-and-employment", "wages-and-working-conditions"],
+      "The Alliance says work is a basic right.", "35 hours without loss of pay, penal rates for overtime, a right to refuse unreasonable hours, and public job creation in infrastructure, housing, conservation and services.", WRK, key=True),
+    P("ALL-06", "Raise the adult minimum wage immediately to two-thirds of the average wage and index it to inflation", ["incomes-and-employment", "wages-and-working-conditions"], None,
+      "Apply the adult rate to workers of all ages and adjust annually for the cost of living.", WRK),
+    P("ALL-07", "Provide 52 weeks' paid parental leave for all workers and paid compassionate leave", ["incomes-and-employment", "wages-and-working-conditions"], None,
+      "Including part-time, casual and seasonal workers.", WRK + GEN, key=True),
+    P("ALL-08", "Restore national collective bargaining, a broad right to strike and Work Councils in firms with over 50 staff", ["incomes-and-employment", "wages-and-working-conditions"], None,
+      "Coordinated wage bargaining, protection for solidarity and some political strikes, worker voice on restructuring and technology, a Minimum Employment Code covering contractors and labour hire, tougher action on wage theft, and a national retraining and redeployment programme.", WRK),
+    P("ALL-09", "Put all electricity generation, transmission, distribution and retail into full public ownership", ["transport-and-infrastructure", "energy", "prices"],
+      "The Alliance says public ownership allows long-term planning and affordable power.", "A 'reverse privatisation' programme buying back strategic assets at fair value, focused on renewables.", ENV + PUB, key=True),
+    P("ALL-10", "Replace the Emissions Trading Scheme with a carbon tax", ["environment", "emissions-reduction"], "The party says a carbon tax sets a transparent price that free allocation and offsets cannot undermine.",
+      "Revenue directed to renewables, public transport and emissions reduction; mandatory energy-efficiency standards for buildings, appliances, vehicles and industry.", ENV),
+    P("ALL-11", "Apply a strict polluter-pays principle and move to a zero-waste, circular economy", ["environment", "waste-management", "fresh-water-and-pollution"], None,
+      "Polluters pay full repair costs; ban non-recyclable plastic packaging, reusable packaging such as glass bottles, right to repair; keep water in public ownership with stronger pollution controls; a Genuine Progress Index alongside GDP.", ENV),
+    P("ALL-12", "Ban mining in national parks, conservation land and the Coromandel, and give the Conservation Minister a veto", ["environment", "conservation", "oil-gas-and-mining"], None,
+      "Restoration bonds for permitted mining, precaution on genetic modification, limits on sales of land and beaches to overseas buyers, and a reaffirmed nuclear-free policy.", ENV),
+    P("ALL-13", "Create a public Community Health Service with free GP, dental, optical, audiology and mental-health care", ["health", "health-services", "health-funding-and-workforce"],
+      "The Alliance says primary care is a fragmented network of struggling private practices.", "Fund care teams rather than appointments, bring allied services into public provision, give community health workers hospital-equivalent pay, uncap nurse-practitioner training, 'GP rescue' by taking over practice overheads, and local Community Health Boards.", HLT, key=True),
+    P("ALL-14", "Build a 100% publicly owned integrated transport system with a State Shipping Line and 'KiwiPort' national port network", ["transport-and-infrastructure", "infrastructure-funding-and-planning"], None,
+      "Rail and coastal shipping as freight backbones, full public ownership of Air New Zealand, close the coastal cargo (cabotage) exception, a national port hub-and-spoke model, and a National Transport Strategy replacing ad-hoc highway spending.", TRN),
+    P("ALL-15", "Move to affordable and eventually free public transport with restored regional passenger rail", ["transport-and-infrastructure", "public-transport-cycling-and-walking"], None,
+      "Integrated ticketing and timetables, rural services, separated cycleways and transit-oriented planning.", TRN),
+    P("ALL-16", "Introduce a Universal Benefit and abolish benefit sanctions, stand-downs and beneficiary debt", ["incomes-and-employment", "benefits"],
+      "The Alliance says welfare should provide security, not punishment.", "An adequate universal base payment, individualised entitlements regardless of relationship status, write-off of MSD debt, quarterly indexation to wages or CPI (whichever is higher), and payments to unpaid carers.", WEL, key=True),
+    P("ALL-17", "Restore a Universal Child Benefit paid to every child's main carer, plus a Universal Early Years Benefit for under-threes", ["incomes-and-employment", "benefits", "community-and-inclusion"],
+      "The party says Working for Families and the In-Work Tax Credit leave out some of the families most in need.", "Non-means-tested, paid directly to the primary carer and indexed to average weekly earnings, as part of a plan to eliminate child poverty.", CHI + WEL, key=True),
+    P("ALL-18", "Pay a universal student income equivalent to the unemployment benefit", ["education", "tertiary-fees-and-student-support"], None, "Independent of parental income, for tertiary and vocational students and trainees.", WEL),
+    P("ALL-19", "Guarantee free, accessible abortion and contraception and require gender-impact assessment of government decisions", ["community-and-inclusion", "women", "health"], None,
+      "A Gender Audit framework, a Pay Equity Bureau, secure non-contestable funding for women's refuges, affordable high-quality childcare, and support for informed-consent gender-affirming care.", GEN),
+    P("ALL-20", "Support small business with a public development bank, maximum payment terms and action against monopolies", ["economy", "business-support"], None,
+      "Legislated maximum payment terms for large firms and agencies, automatic interest on overdue invoices, published payment times, stronger competition law, and support for co-operatives and new enterprises.", SMB),
+    P("ALL-21", "'Three strikes and into treatment': rehabilitation-focused justice with no private prisons", ["law-justice-and-government", "criminal-justice"],
+      "The Alliance says justice is about prevention, rehabilitation and support for victims, not just punishment.", "Community care orders and habilitation centres, restorative and marae-based justice, a victim compensation scheme, prisons kept public, expanded legal aid and public defenders, and recognition of tikanga.", JUS, key=True),
+    P("ALL-22", "Clear the social housing waitlist in five years through a national state-house rebuilding programme", ["housing", "housing-affordability", "construction"],
+      "The Alliance says housing is a fundamental human right.", "Funding Kāinga Ora for large-scale building with local materials and labour, cap Kāinga Ora rents and state-backed mortgage payments at 25% of net household income, no-deposit low-interest state loans for low-income workers, co-operative housing, stronger tenancy protections and universal insulation.", HOU, key=True),
+    P("ALL-23", "Keep NZ Super at 65, raise the married rate to 72.5% of the after-tax average wage, and end means-testing for long-term aged care", ["incomes-and-employment", "superannuation-and-savings", "health"], None,
+      "Also a Ministry for Senior Citizens, independent advocates for older people, subsidised transport and internet, and strengthening KiwiSaver.", RET, key=True),
+    P("ALL-24", "Lower the MMP threshold to 3.5% and hold a public review toward a written constitution grounded in Te Tiriti", ["law-justice-and-government", "parliament-and-democracy", "te-ao-maori"], None,
+      "Strengthen the Waitangi Tribunal, consider Matike Mai recommendations, citizens' initiatives, a democratic decision on the monarchy, stronger select committees, OIA reform, conflict-of-interest rules and donation transparency and limits.", TIR),
+    P("ALL-25", "Refuse trade deals with investor–state dispute settlement and seek to remove it from existing deals", ["defence-and-foreign-affairs", "international-relations", "economy"], None,
+      "Trade policy that protects jobs, public services and the ability to regulate; retain tariffs as a sparing option; Māori consent on agreements affecting Māori interests; stronger buy-local procurement.", TRD),
+    P("ALL-26", "Stop all further privatisation and return ports, water, telecommunications and Air New Zealand to full public ownership", ["economy", "public-sector", "transport-and-infrastructure"], None,
+      "Democratic accountability for public enterprises (including extending the OIA to Crown-controlled listed companies), worker board representation, and a Ministry of Development and public development bank.", PUB),
+    P("ALL-27", "Make New Zealand non-aligned, restructure defence for peacekeeping and disaster response, and review foreign military and intelligence facilities", ["defence-and-foreign-affairs", "international-relations"], None,
+      "Withdraw from inconsistent military alliances, remove offensive capabilities, strengthen the nuclear-free Pacific, support Palestinian self-determination and right of return, cancel unsustainable Global South debt, raise aid toward 0.7% of GNI and ease Pacific migration barriers.", FOR, key=True),
+]
+
+# ------------------------------------------------------------------------------------------------ Animal Justice Party
+META["animal-justice"] = {
+    "name": "Animal Justice Party Aotearoa New Zealand (AJP)", "website": "https://animaljustice.org.nz/",
+    "registered": "16 August 2023 (Electoral Commission register)",
+    "intro": "The Animal Justice Party publishes an Election 2026 Manifesto, a plain-language Policy Summary (ten campaign "
+             "themes), a 2026 full policy platform PDF (~23,000 words), four policy packs, and 40+ individual policy pages, "
+             "most with their own PDF. All were captured (web text via the WordPress API plus each linked PDF). The list "
+             "below gives the ten summary themes (marked as headline policies) followed by each detailed policy page.",
+    "gaps": "Some individual policy PDFs date from 2024–2025 (publication dates are in each document's front matter); the "
+            "party presents them as current. PDF text extraction splits decorative drop-capitals onto their own line.",
+}
+SUM = ["policy-policy-summary", "election-2026-manifesto", "pdf-ajp-2026-policy-platform-election-2026"]
+pp = lambda *x: ["policy-" + i for i in x]
+_ab = "The AJP's long-term aim is to end all animal farming; it presents interim reforms to reduce suffering in the meantime."
+CATALOG["animal-justice"] = [
+    P("AJP-01", "Ban the cruellest farming and fishing practices first (intensive winter grazing, fast-growing chicken breeds, live export, mutilations, bottom trawling), with a funded farmer transition", ["economy", "agriculture", "community-and-inclusion"],
+      _ab, "Tighter standards and stronger enforcement of the Animal Welfare Act, and a farmer-led transition scheme with planning, financial help and debt restructuring for moves to plant-based or other land uses.", SUM, key=True),
+    P("AJP-02", "Recognise animals in law as sentient beings rather than property", ["community-and-inclusion", "law-justice-and-government"],
+      "The AJP says the property classification makes meaningful protection very hard.", "Write sentience into legislation with enforceable protections and end codes of practice that let industries sidestep the Animal Welfare Act.", SUM + pp("legislative-foundations"), key=True),
+    P("AJP-03", "Make plant-based meals the default in schools, hospitals and public institutions, and remove GST from fruit, vegetables, legumes and nuts", ["health", "public-health", "incomes-and-employment", "prices"],
+      "The AJP cites estimates that plant-rich diets could save the health system up to $22 billion.", "Other options would remain available; clearer food labelling with health and environmental information.", SUM, key=True),
+    P("AJP-04", "Create an independent Commissioner for Animals with investigative and enforcement powers", ["community-and-inclusion", "public-sector"],
+      "The AJP says welfare is overseen by MPI, the same ministry that promotes farm exports — a conflict of interest.", "Modelled on the Children's Commissioner, with funding for welfare research and accountability for enforcement agencies.", SUM + pp("commissioner-for-animals", "animal-rights-commissioner", "regulatory-oversight-and-enforcement"), key=True),
+    P("AJP-05", "Make rehoming the default in council pounds, with euthanasia only as a last resort", ["community-and-inclusion", "local-government"],
+      "The AJP says 60% of dogs impounded in Auckland last year were killed rather than rehomed.", "Public reporting of pound outcomes by every council, fairer reclaim processes and fees, funded foster networks and wide access to desexing.", SUM, key=True),
+    P("AJP-06", "End lethal and poison-based control of cats; use desexing, Trap-Neuter-Return and habitat restoration", ["environment", "conservation"],
+      "The AJP says there is no reliable way to tell a feral cat from a community or companion cat and that habitat loss drives native decline.", "Also predator-proof fencing and evidence-led conservation.", SUM, key=True),
+    P("AJP-07", "Remove GST from veterinary services and fund public and mobile vet clinics", ["community-and-inclusion", "prices"],
+      "The AJP says vet bills force impossible choices on families.", "A national network of publicly funded and mobile clinics plus guaranteed funding for injured wildlife care and desexing.", SUM, key=True),
+    P("AJP-08", "Get money out of politics: lower donation limits, real-time lobbying disclosure and cooling-off periods", ["law-justice-and-government", "parliament-and-democracy"],
+      "The AJP says animal-exploiting industries have outsized access to decision-makers.", "Also whistleblower protection and support for peaceful protest (manifesto).", SUM, key=True),
+    P("AJP-09", "Write animal welfare into AI governance and ban AI systems that increase confinement or remove human oversight", ["economy", "internet-and-digital-technologies", "agriculture"],
+      "The AJP says AI already manages hundreds of thousands of farmed animals with no law accounting for it.", "Independent validation of any AI marketed as improving welfare.", SUM, key=True),
+    P("AJP-10", "Give up to five days' bereavement leave for the loss of a companion animal and three days when a new one joins the family", ["incomes-and-employment", "wages-and-working-conditions"],
+      None, "Emergency leave would also cover urgent animal care.", SUM, key=True),
+    P("AJP-11", "Abolish all animal farming through a just transition to plant-based and cellular agriculture", ["economy", "agriculture"], _ab, None, pp("abolish-all-farming-of-animals", "plant-based-economy", "ajp-transition-to-a-plant-based-economy-policies"), key=True),
+    P("AJP-12", "Reform animal breeding and reproduction practices that put production and profit ahead of animal health", ["economy", "agriculture", "community-and-inclusion"], _ab, None, pp("animal-breeding-and-reproduction-reform")),
+    P("AJP-13", "Set legal minimums for farmed animals' shelter, space and environment", ["economy", "agriculture", "community-and-inclusion"], _ab, "Addressing exposure to weather, overcrowding and barren conditions.", pp("ensuring-adequate-living-conditions-and-environmental-standards")),
+    P("AJP-14", "Strengthen nutrition and health standards for farmed animals and reduce reliance on pharmaceuticals", ["economy", "agriculture", "community-and-inclusion"], _ab, None, pp("ensuring-adequate-nutrition-and-health-standards")),
+    P("AJP-15", "End painful procedures on farmed animals and guarantee prompt veterinary care", ["economy", "agriculture", "community-and-inclusion"], _ab, "Humane handling standards across farming.", pp("ensuring-humane-handling-and-management")),
+    P("AJP-16", "Tighten standards for transporting animals", ["economy", "agriculture", "community-and-inclusion"], _ab, None, pp("ensuring-humane-transport-conditions")),
+    P("AJP-17", "Extend the live-export ban to animals exported by air", ["economy", "agriculture", "community-and-inclusion"],
+      "The AJP says New Zealand has no control over animals' care once they reach their destination.", "Exceptions for relocating companion animals and conservation transfers.", pp("extending-the-live-export-ban")),
+    P("AJP-18", "Reform slaughter practices to minimise suffering while working toward ending slaughter", ["economy", "agriculture", "community-and-inclusion"],
+      "The AJP rejects the idea that killing animals can be truly humane.", None, pp("minimising-animal-suffering-during-slaughter")),
+    P("AJP-19", "Move animal-welfare oversight out of MPI into independent governance", ["community-and-inclusion", "public-sector"], None, None, pp("independent-animal-welfare-governance-to-reduce-harm", "legislation-and-regulation-reform-for-animal-protection")),
+    P("AJP-20", "Align New Zealand with international animal-welfare standards and treaties", ["defence-and-foreign-affairs", "international-relations", "community-and-inclusion"], None, None, pp("international-considerations")),
+    P("AJP-21", "Fund pet-inclusive refuges so domestic-violence victims can escape with their animals", ["community-and-inclusion", "family-justice-and-safety"],
+      "The AJP says the safety of companion animals often keeps victims in danger and that New Zealand has only one dedicated pet refuge.", None, pp("pet-refuge-support-for-domestic-violence-survivors")),
+    P("AJP-22", "End the private sale and use of fireworks", ["community-and-inclusion", "environment"], "The AJP cites harm to wildlife, marine ecosystems and companion animals.", "End private sales and use while moving to 'sustainable and animal friendly celebration alternatives'. (The full policy is a Google Drive PDF that was not captured.)", pp("end-the-private-sale-and-use-of-fireworks")),
+    P("AJP-23", "Ban greyhound racing", ["media-culture-and-recreation", "sports-and-recreation", "community-and-inclusion"],
+      "The AJP says over 40% of racing greyhounds suffer injuries and the industry has lost its social licence.", "Interim: transparency on deaths and injuries, breeding limits, kennel caps and funded transition for workers.", pp("greyhounds"), key=True),
+    P("AJP-24", "Ban horse racing", ["media-culture-and-recreation", "sports-and-recreation", "community-and-inclusion"], None, "Covers flat, jumps and harness racing.", pp("horse-racing")),
+    P("AJP-25", "Ban rodeo", ["media-culture-and-recreation", "sports-and-recreation", "community-and-inclusion"], "The AJP says rodeos cannot be made safe through regulation.", None, pp("rodeo")),
+    P("AJP-26", "Ban recreational hunting and hunting competitions", ["media-culture-and-recreation", "sports-and-recreation", "community-and-inclusion"], None, None, pp("hunting")),
+    P("AJP-27", "Ban recreational fishing and fishing competitions", ["media-culture-and-recreation", "sports-and-recreation", "fisheries"], None, "An immediate and complete ban.", pp("ban-recreational-fishing-and-fishing-competitions")),
+    P("AJP-28", "End the use of animals for entertainment and move zoos and aquariums to rescue and sanctuary roles", ["media-culture-and-recreation", "community-and-inclusion"], None, None, pp("ending-animals-entertainment", "the-future-of-zoos-and-aquariums")),
+    P("AJP-29", "Replace harmful animal experiments with non-animal research methods", ["education", "tertiary-education-and-research", "community-and-inclusion"],
+      "The AJP cites MPI figures of over 300,000 animals used in research, testing and teaching in 2021.", "More funding for alternatives, and consideration of research's environmental impacts.", pp("animal-experimentation", "the-environmental-impacts-of-animal-based-research")),
+    P("AJP-30", "Move toward a cruelty-free, sustainable fashion industry", ["economy", "economic-development-and-industry"], "The AJP says leather, wool, fur, down and exotic skins perpetuate cruel and unsustainable practices.", None, pp("towards-a-cruelty-free-and-sustainable-fashion-industry")),
+    P("AJP-31", "End 1080, brodifacoum and biological agents such as RHDV for pest control", ["environment", "conservation"],
+      "The AJP says these methods cause intense, prolonged suffering.", "Use humane, non-lethal, species-specific population management instead.", pp("ending-the-use-of-lethal-biological-agents-and-poisons-for-population")),
+    P("AJP-32", "Phase out trapping and hunting for 'pest control' in favour of humane management of introduced species", ["environment", "conservation"], None, None,
+      pp("ending-trapping-and-hunting-for-population-control", "humane-management-of-introduced-species", "overview-protection-of-indigenous-and-non-indigenous-wild-animalsanima")),
+    P("AJP-33", "Protect and restore natural habitats and design roads and cities to protect wildlife", ["environment", "conservation", "urban-planning-and-resource-management"], None,
+      "Wildlife impact assessments in urban planning and road design; help wild animals facing natural threats where appropriate.", pp("protect-and-restore-natural-habitats", "protect-wildlife-from-anthropogenic-harms", "mitigate-natural-threats-to-wild-animals", "ecosystems")),
+    P("AJP-34", "Cut emissions rapidly by shrinking animal agriculture", ["environment", "emissions-reduction"],
+      "The AJP says animal agriculture produces around half of New Zealand's emissions.", None, pp("urgently-addressing-climate-change", "ajp-environmental-and-economic-policies")),
+    P("AJP-35", "Shift to an economy of 'sufficiency within planetary boundaries' with circular and sharing economy policies", ["economy", "environment"], None, "Include environmental externalities in economic measures.", pp("economic-sufficiency")),
+    P("AJP-36", "Support workers leaving animal industries and improve human wellbeing", ["incomes-and-employment", "jobs-and-employment", "health"], None, None, pp("improving-well-being", "ajp-people-policies-pack")),
+    P("AJP-37", "Embed Te Tiriti o Waitangi in a compassionate, just relationship with animals", ["te-ao-maori", "te-tiriti-o-waitangi-and-governance"], None, None, pp("te-tiriti-o-waitangi")),
+    P("AJP-38", "Teach empathy, critical thinking and environmental awareness as a core of education", ["education", "schools"], None, None, ["election-2026-manifesto"]),
+]

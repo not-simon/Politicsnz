@@ -10,7 +10,11 @@
 
 ## Current status
 
-2026 candidate (not previously an MP)
+Labour candidate for North Shore, ranked 63 on the party list at the 7 November 2026 election (policy.nz candidate data). Not previously an MP.
+
+## Biography
+
+Collins grew up in Hamilton. His Labour profile says he spent 20 years in media organisations in New Zealand and the UK, now owns a small media business, and completed a Master of Public Policy at the University of Auckland in 2025. ([Labour candidate profile](https://labour.org.nz/samcollins), self-description; occupation also from the policy.nz questionnaire)
 
 <!-- GENERATED:2026-candidacy START -->
 ## 2026 candidacy
@@ -31,5 +35,6 @@ _Source: candidate questionnaire answers published on [policy.nz](https://policy
 ## Sources
 
 - https://policy.nz/2026/party-vote/parties/labour-party
+- https://labour.org.nz/samcollins
 
 _Profile compiled 2026-10-23 from the sources above; Wikipedia tables parsed by tools/people_labour_build.py._

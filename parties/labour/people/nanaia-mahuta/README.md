@@ -7,15 +7,19 @@
 | **Party** | Labour |
 | **Status (Oct 2026)** | Former MP |
 | **Born** | 1970-08-21 — Auckland, New Zealand |
-| **Electorate(s) held** | Hauraki-Waikato |
-| **Parliaments** | 49, 50, 51, 52, 53 |
-| **First elected** | 2008 |
+| **Electorate(s) held** | Te Tai Hauāuru, Tainui, Hauraki-Waikato |
+| **Parliaments** | 45, 46, 47, 48, 49, 50, 51, 52, 53 |
+| **First elected** | 1996 |
 | **Key roles** | 28th Minister of Foreign Affairs (2020–2023)<br>11th Minister of Disarmament and Arms Control (2023)<br>12th Minister of Local Government (2017–2023)<br>44th Minister for Māori Development (2017–2020) |
 | **Wikipedia** | [Nanaia Mahuta](https://en.wikipedia.org/wiki/Nanaia_Mahuta) |
 
 ## Current status
 
-Former MP
+Mahuta left Parliament after losing Hauraki-Waikato by 2,911 votes in 2023; she had not sought a list place ([2023 results](https://archive.electionresults.govt.nz/electionresults_2023/electorate-details-66.html)). She resigned her ministerial warrants on 11 November 2023 during the caretaker period. In 2025 she was one of ten current and former women MPs on the "People's Select Committee" convened by former National MP Marilyn Waring to hear submissions on the government's pay-equity changes ([RNZ](https://www.rnz.co.nz/news/national/562148/pay-equity-changes-people-s-select-committee-formed-to-gather-evidence-instead-of-high-flying-cliches)). She is not a 2026 candidate.
+
+## Biography
+
+Born 21 August 1970 in Auckland, Mahuta is the daughter of Sir Robert Mahuta (adopted son of Māori King Korokī) and a first cousin of the late Kiingi Tūheitia ([E-Tangata](https://e-tangata.co.nz/korero/no-silver-spoon/)). She was educated at Rakaumanga kura in Huntly and Waikato Diocesan School, and holds an MA (Hons) in social anthropology from the University of Auckland. She is married to Gannin Ormsby. In 2016 she became the first woman MP to wear a moko kauae ([Guardian](https://www.theguardian.com/world/2016/aug/11/first-woman-mp-maori-facial-tattoo-nz-parliament-moko-kauae)); she was named one of the BBC's 100 Women in 2018.
 
 ## Political career
 
@@ -23,6 +27,10 @@ Former MP
 
 | Parliament | Years | Electorate | List position | Party |
 |---|---|---|---|---|
+| 45th | 1996–1999 | List | 8 | Labour |
+| 46th | 1999–2002 | Te Tai Hauāuru | 10 | Labour |
+| 47th | 2002–2005 | Tainui | 19 | Labour |
+| 48th | 2005–2008 | Tainui | none | Labour |
 | 49th | 2008–2011 | Hauraki-Waikato | 10 | Labour |
 | 50th | 2011–2014 | Hauraki-Waikato | 12 | Labour |
 | 51st | 2014–2017 | Hauraki-Waikato | 6 | Labour |
@@ -42,6 +50,29 @@ _Source: Wikipedia parliamentary-term table._
 
 _Source: Wikipedia infobox._
 
+### Career summary
+
+- **MP 1996–2023:** elected on the list in 1996 aged 26 (then the youngest MP); MP for Te Tai Hauāuru (1999–2002), Tainui (2002–2008) and Hauraki-Waikato (2008–2023). Became Mother of the House in October 2022 ([Parliament](https://www.parliament.nz/en/visit-and-learn/mps-and-parliaments-1854-onwards/members-of-parliament-longest-shortest-oldest-youngest/)).
+- **Fifth Labour Government:** Minister of Customs and Youth Affairs (2005), Local Government (2007–2008).
+- **Opposition 2008–2017:** spokesperson for Māori affairs, education, energy and conservation; stood for leader in 2014, finishing fourth.
+- **Sixth Labour Government:** Minister of Local Government (2017–2023) and Māori Development (2017–2020); **Minister of Foreign Affairs, 6 Nov 2020 – Nov 2023** — the first woman and first Māori woman in the role ([Stuff](https://stuff.co.nz/national/politics/123271205/nanaia-mahuta-will-be-foreign-minister-and-the-first-woman-to-do-the-job)); Disarmament and Arms Control (2023).
+
+## Record & notable actions
+
+- **Three Waters:** led the reform to move council water services into four large entities with council/mana whenua co-governance; the Water Services Entities Act passed on 7 December 2022 with only Labour's votes. She later acknowledged underestimating public opposition and problems with the advertising campaign ([1News](https://www.1news.co.nz/2022/03/13/mahuta-admits-getting-things-wrong-with-three-waters-reform/); [Stuff](https://www.stuff.co.nz/national/politics/130704446/labour-alone-in-support-of-three-waters-bill-as-it-passes-into-law)). The reforms were restructured under Hipkins in 2023 and repealed by the National-led government's Water Services Acts Repeal Act 2024 ([Wikipedia: Three Waters reform programme](https://en.wikipedia.org/wiki/Three_Waters_reform_programme)).
+- **Māori wards:** passed the Local Electoral (Māori Wards and Māori Constituencies) Amendment Act 2021, removing the ability of local polls to overturn council decisions to create Māori wards ([RNZ](https://www.rnz.co.nz/news/political/437105/maori-wards-amendment-bill-passes-final-reading-in-parliament)).
+- **Foreign policy:** introduced the Russia Sanctions Act 2022 (passed unanimously on 9 March 2022); suspended high-level contact with Myanmar after the 2021 coup; joined Five Eyes statements on Hong Kong while saying New Zealand would not let Five Eyes dictate its China relationship (April 2021) ([Al Jazeera](https://www.aljazeera.com/news/2021/4/19/new-zealand-says-it-will-set-china-policy-not-us-led-five-eyes)).
+- Commissioned the Future for Local Government review (2021–2023) and appointed commissioners to run Tauranga City Council (2020), later extended to 2024.
+- **Conscience votes:** voted against the Abortion Legislation Act 2020 (but for safe-areas legislation in 2022); in 2004 voted against her party's foreshore and seabed bill at first and second reading, then for it at third reading.
+
+## Controversies
+
+- **Tauranga commissioners:** legal reviews commissioned by critics argued her decisions to install and then extend commissioners may have been unlawful; Local Government NZ's president called the extension "disgusting" ([RNZ](https://www.rnz.co.nz/news/political/463183/tauranga-city-commissioners-retained-until-july-2024-minister-says)).
+- **Family contracts (2022):** National questioned government contracts awarded to her husband's company and relatives; a Public Service Commission review found agencies had not properly managed conflicts but found "no evidence of favouritism, bias, or undue influence" ([NZ Herald](https://www.nzherald.co.nz/business/public-service-commission-finds-govt-agencies-were-substandard-in-their-processes-signing-contracts-with-companies-of-family-members-of-nanaia-mahuta/XAUV7FJUXJEWRGL72BRKC5NNJE/)).
+- **Entrenchment clause (Dec 2022):** supported a Green amendment entrenching water-asset ownership against Cabinet's position; Christopher Luxon called for her sacking, while Ardern defended her ([RNZ](https://www.rnz.co.nz/news/political/480290/christopher-luxon-calls-for-nanaia-mahuta-to-be-sacked-over-entrenchment-clause)).
+- **7 October 2023 statement:** her initial statement on the Hamas attack, which called for a halt to violence without condemning Hamas, was criticised; she later said she had rejected MFAT advice to use stronger language ([1News](https://www.1news.co.nz/2023/11/19/nanaia-mahuta-on-israel-gaza-tweet-cant-dwell-on-mistakes/)).
+- ACT criticised her limited overseas travel as foreign minister (2022) ([NZ Herald](https://www.nzherald.co.nz/nz/australias-foreign-minister-penny-wong-putting-nanaia-mahuta-to-shame-with-solomons-trip-act/M4UFDB5MY2ICPY7BDR7WFSIUQQ/)).
+
 ## 2026 candidacy
 
 Not listed as a Labour candidate for the 2026 election on policy.nz (Oct 2026).
@@ -49,5 +80,21 @@ Not listed as a Labour candidate for the 2026 election on policy.nz (Oct 2026).
 ## Sources
 
 - https://en.wikipedia.org/wiki/Nanaia_Mahuta
+- https://archive.electionresults.govt.nz/electionresults_2023/electorate-details-66.html
+- https://www.rnz.co.nz/news/national/562148/pay-equity-changes-people-s-select-committee-formed-to-gather-evidence-instead-of-high-flying-cliches
+- https://e-tangata.co.nz/korero/no-silver-spoon/
+- https://www.theguardian.com/world/2016/aug/11/first-woman-mp-maori-facial-tattoo-nz-parliament-moko-kauae
+- https://www.parliament.nz/en/visit-and-learn/mps-and-parliaments-1854-onwards/members-of-parliament-longest-shortest-oldest-youngest/
+- https://stuff.co.nz/national/politics/123271205/nanaia-mahuta-will-be-foreign-minister-and-the-first-woman-to-do-the-job
+- https://www.1news.co.nz/2022/03/13/mahuta-admits-getting-things-wrong-with-three-waters-reform/
+- https://www.stuff.co.nz/national/politics/130704446/labour-alone-in-support-of-three-waters-bill-as-it-passes-into-law
+- https://en.wikipedia.org/wiki/Three_Waters_reform_programme
+- https://www.rnz.co.nz/news/political/437105/maori-wards-amendment-bill-passes-final-reading-in-parliament
+- https://www.aljazeera.com/news/2021/4/19/new-zealand-says-it-will-set-china-policy-not-us-led-five-eyes
+- https://www.rnz.co.nz/news/political/463183/tauranga-city-commissioners-retained-until-july-2024-minister-says
+- https://www.nzherald.co.nz/business/public-service-commission-finds-govt-agencies-were-substandard-in-their-processes-signing-contracts-with-companies-of-family-members-of-nanaia-mahuta/XAUV7FJUXJEWRGL72BRKC5NNJE/
+- https://www.rnz.co.nz/news/political/480290/christopher-luxon-calls-for-nanaia-mahuta-to-be-sacked-over-entrenchment-clause
+- https://www.1news.co.nz/2023/11/19/nanaia-mahuta-on-israel-gaza-tweet-cant-dwell-on-mistakes/
+- https://www.nzherald.co.nz/nz/australias-foreign-minister-penny-wong-putting-nanaia-mahuta-to-shame-with-solomons-trip-act/M4UFDB5MY2ICPY7BDR7WFSIUQQ/
 
 _Profile compiled 2026-10-23 from the sources above; Wikipedia tables parsed by tools/people_labour_build.py._

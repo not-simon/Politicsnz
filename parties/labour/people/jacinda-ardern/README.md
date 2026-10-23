@@ -30,7 +30,7 @@ Born 26 July 1980 in Hamilton and raised in Morrinsville and Murupara (her fathe
 | 49th | 2008–2011 | List | 20 | Labour |
 | 50th | 2011–2014 | List | 13 | Labour |
 | 51st | 2014–2017 | List | 5 | Labour |
-| 51st | {{By-election link year|Mount Albert|2017}}– | Mount Albert |  | Labour |
+| 51st | 2017 (by-election)– | Mount Albert |  | Labour |
 | 52nd | 2017–2020 | Mount Albert | 1 | Labour |
 | 53rd | 2020–2023 | Mount Albert | 1 | Labour |
 
@@ -47,6 +47,8 @@ _Source: Wikipedia parliamentary-term table._
 | Member of the New Zealand Parliament | 8 November 2008 | 15 April 2023 |  |
 
 _Source: Wikipedia infobox._
+
+### Career summary
 
 - **List MP, 2008–2017.** Entered Parliament from list position 20 in 2008 (losing the Waikato electorate). Stood in Auckland Central in 2011 and 2014, losing to National's Nikki Kaye by 717 and then 600 votes ([2011 results](http://www.electionresults.org.nz/electionresults_2011/electorate-1.html), [2014 results](http://www.electionresults.org.nz/electionresults_2014/electorate-1.html)). Spokesperson for youth affairs (under Goff), social development (No. 4 in Shearer's shadow cabinet, 2011), then justice, children, small business and arts (under Little, 2014).
 - **Mount Albert, 2017–2023.** Won the February 2017 Mount Albert by-election with about 77% of the vote ([NZ Herald](http://www.nzherald.co.nz/politics/news/article.cfm?c_id=280&objectid=11807614)); majorities of 15,264 (2017) and 21,246 (2020) ([2017](https://www.electionresults.govt.nz/electionresults_2017/electorate-details-27.html), [2020](https://www.electionresults.govt.nz/electionresults_2020/electorate-details-24.html)).

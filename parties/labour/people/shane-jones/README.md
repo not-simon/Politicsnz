@@ -4,11 +4,11 @@
 
 | | |
 |---|---|
-| **Party** | nz-first (formerly Labour) |
+| **Party** | NZ First (formerly Labour) |
 | **Status (Oct 2026)** | Current MP, standing in 2026 |
 | **Born** | 1959-09-03 — Awanui, New Zealand |
-| **Parliaments** | 49, 50, 52, 54 |
-| **First elected** | 2008 |
+| **Parliaments** | 48, 49, 50, 52, 54 |
+| **First elected** | 2005 |
 | **Key roles** | 14th Minister for Oceans and Fisheries (2023–)<br>6th Deputy Leader of New Zealand First (2025–)<br>3rd Minister for Infrastructure (2017–2020)<br>31st Minister for Forestry (2017–2020)<br>1st Minister for Regional Economic Development (2017–2020)<br>Minister for Building and Construction (2007–2008) |
 | **Wikipedia** | [Shane Jones](https://en.wikipedia.org/wiki/Shane_Jones) |
 
@@ -26,6 +26,7 @@ Born 3 September 1959 in Awanui near Kaitaia (Te Aupōuri, Ngāi Takoto), Jones 
 
 | Parliament | Years | Electorate | List position | Party |
 |---|---|---|---|---|
+| 48th | 2005–2008 | List | 27 | Labour |
 | 49th | 2008–2011 | List | 16 | Labour |
 | 50th | 2011–2014 | List | 16 | Labour |
 | 52nd | 2017–2020 | List | 8 | New Zealand First |
@@ -45,6 +46,8 @@ _Source: Wikipedia parliamentary-term table._
 | Minister for Building and Construction | 31 October 2007 | 19 November 2008 | Helen Clark |
 
 _Source: Wikipedia infobox._
+
+### Career summary
 
 - **Labour list MP 2005–2014** (contested Northland and Tāmaki Makaurau); chair of the Finance and Expenditure Committee; **Minister for Building and Construction** (Oct 2007 – Nov 2008) with associate Treaty negotiations, immigration and trade roles.
 - Opposition spokesperson for economic development, fisheries, Māori affairs and other portfolios; stood for Labour leader in 2013, winning 7 of 34 caucus votes ([Stuff](http://www.stuff.co.nz/national/politics/9166765/Cunliffe-wins-Labour-leadership)).

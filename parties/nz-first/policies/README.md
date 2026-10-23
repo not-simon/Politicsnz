@@ -4,9 +4,9 @@ Every 2026 policy of New Zealand First that this archive could find, with a shor
 
 ## At a glance
 
-- **69 policies** listed: 39 from [policy.nz](https://policy.nz) (all of its 39 NZ First statements, with its Why/How summaries) + 30 more found in the party's own releases, speeches and policy PDFs (marked *archive*; summaries written for this archive).
-- **55 full-text documents** archived (53 press releases/speeches, 2 PDFs) + 25 placeholder files for cited pages that could not be retrieved.
-- 69 policies have at least one retrieved party text; 0 rely only on a page that could not be retrieved.
+- **79 policies** listed: 39 from [policy.nz](https://policy.nz) (all of its 39 NZ First statements, with its Why/How summaries) + 40 more found in the party's own releases, speeches and policy PDFs (marked *archive*; summaries written for this archive).
+- **104 full-text documents** archived (100 press releases/speeches, 4 PDFs) + 7 placeholder files for cited pages that could not be retrieved.
+- 79 policies have at least one retrieved party text; 0 rely only on a page that could not be retrieved.
 
 ## Method & sources
 
@@ -18,25 +18,7 @@ Every 2026 policy of New Zealand First that this archive could find, with a shor
 
 ### Retrieval gaps (read this)
 
-- **25 nzfirst.nz pages cited by policy.nz were not retrieved** (403 / archive unreachable). Where a party release covers the same policy it is linked, but the website page may contain details the release does not.
-  - ['Breaking up the Gentailers', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-breaking-up-the-gentailers.md) — <https://www.nzfirst.nz/breaking_up_the_gentailers> (policies: POL54656, POL54657)
-  - ['Break up the Supermarket Duopoly', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-break-up-the-supermarket-duopoly.md) — <https://www.nzfirst.nz/break_up_the_supermarket_duopoly> (policies: POL54658, POL54659, POL54660)
-  - ['Returning 50% of mining royalties to the regions', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-returning-50-of-mining-royalties-to-the-regions.md) — <https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions> (policies: POL54661, POL54662)
-  - ['Backing a New Zealand Owned Bank', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-backing-a-new-zealand-owned-bank.md) — <https://www.nzfirst.nz/backing_a_new_zealand_owned_bank> (policies: POL54663)
-  - ['Establishing a Kiwisaver Generation', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-establishing-a-kiwisaver-generation.md) — <https://www.nzfirst.nz/establishing_a_kiwisaver_generation> (policies: POL54664)
-  - ['Disestablish Auckland's 'Independent Maori Statutory Board'', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-disestablish-auckland-s-independent-maori-statutory-board.md) — <https://www.nzfirst.nz/disestablish_auckland_s_independent_maori_statutory_board> (policies: POL54668)
-  - ['The 'Kiwi Kids Grant'', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-the-kiwi-kids-grant.md) — <https://www.nzfirst.nz/the_kiwi_kids_grant> (policies: POL54746)
-  - ['NZ First launches 'Use It or Lose It' dairy policy', 20 August 2026 (accessed 26 August 2026)](documents/not-retrieved-nzfirst-nz-first-launches-use-it-or-lose-it-dairy-policy.md) — <https://www.nzfirst.nz/nz_first_launches_use_it_or_lose_it_dairy_policy> (policies: POL54754)
-  - ['Establishing a Special Economic Zone At Marsden Point', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-establishing-a-special-economic-zone-at-marsden-point.md) — <https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point> (policies: POL54755)
-  - ['Complete the Christchurch Cathedral', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-complete-the-christchurch-cathedral.md) — <https://www.nzfirst.nz/complete_the_christchurch_cathedral> (policies: POL54756)
-  - ['Referendum on Maori Seats', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-referendum-on-maori-seats.md) — <https://www.nzfirst.nz/referendum_on_maori_seats> (policies: POL54757)
-  - ['Citizen’s Only Voting', undated (accessed 27 August 2026)](documents/not-retrieved-nzfirst-citizens-only-voting.md) — <https://www.nzfirst.nz/citizens_only_voting> (policies: POL54759)
-  - ['NZFirst Campaign Announcement: NZ Super for Citizens Only ', 6 September 2026 (accessed 11 September 2026)](documents/not-retrieved-nzfirst-nzfirst-campaign-announcement-nz-super-for-citizens-only.md) — <https://www.nzfirst.nz/nzfirst_campaign_announcement_nz_super_for_citizens_only> (policies: POL54961)
-  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](documents/not-retrieved-nzfirst-nz-first-announces-immigration-reform-policies.md) — <https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies> (policies: POL54962, POL54963, POL54964, POL54965, POL54966, POL54967)
-  - ['NZFirst Campaign Announcement: The Plan to “Make NZ Healthy” ', 20 September 2026 (accessed 21 September 2026)](documents/not-retrieved-nzfirst-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md) — <https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy> (policies: POL55057, POL55073, POL55076, POL55078)
-  - ['Lowering Tax Rate for SMEs to 20%', undated (accessed 24 September 2026)](documents/not-retrieved-nzfirst-20-tax-rate-for-smes.md) — <https://www.nzfirst.nz/20_tax_rate_for_smes> (policies: POL55155)
-  - ['Winston Peters - “Ending the Waitangi Make-Work Industry”', 27 September 2026 (accessed 27 September 2026)](documents/not-retrieved-nzfirst-winston-peters-ending-the-waitangi-make-work-industry.md) — <https://www.nzfirst.nz/winston_peters_ending_the_waitangi_make_work_industry> (policies: POL55157)
-  - ['NZFirst to Campaign on Ending the Waitangi Make-Work Industry', 27 September 2026 (accessed 27 September 2026)](documents/not-retrieved-nzfirst-ending-the-waitangi-make-work-industry.md) — <https://www.nzfirst.nz/ending_the_waitangi_make_work_industry> (policies: POL55157)
+- **7 nzfirst.nz pages cited by policy.nz were not retrieved** (403 / archive unreachable). Where a party release covers the same policy it is linked, but the website page may contain details the release does not.
   - ['NZFirst to Ban Public Sales of Fireworks', 9 October 2026 (accessed 09 October 2026)](documents/not-retrieved-nzfirst-nzfirst-to-ban-public-sales-of-fireworks.md) — <https://www.nzfirst.nz/nzfirst_to_ban_public_sales_of_fireworks> (policies: POL55234)
   - ['NZ First to Increase Working for Families, Minimum Wage', 10 October 2026 (accessed 12 October 2026)](documents/not-retrieved-nzfirst-nz-first-to-increase-working-for-families-minimum-wage.md) — <https://www.nzfirst.nz/nz_first_to_increase_working_for_families_minimum_wage> (policies: POL55257, POL55258)
   - ['NZFirst to Scrap Accredited Working Visa Model', 11 October 2026 (accessed 12 October 2026)](documents/not-retrieved-nzfirst-nzfirst-to-scrap-accredited-working-visa-model.md) — <https://www.nzfirst.nz/nzfirst_to_scrap_accredited_working_visa_model> (policies: POL55262)
@@ -69,6 +51,7 @@ Every 2026 policy of New Zealand First that this archive could find, with a shor
 - [Housing, infrastructure & transport](#housing-infrastructure--transport) (5)
 - [Immigration & citizenship](#immigration--citizenship) (11)
 - [Law & order](#law--order) (5)
+- [Members' bills on the party's books](#members-bills-on-the-partys-books) (10)
 - [Mining, energy & resources](#mining-energy--resources) (5)
 - [Document index](#document-index)
 
@@ -87,7 +70,7 @@ The additional government funding would help complete the first stage of the new
  This party estimates that this policy would cost 15 million over one year.
 - **Note:** policy.nz's second citation is the same release on community.scoop.co.nz.
 - **Sources:**
-  - ['Complete the Christchurch Cathedral', undated (accessed 13 August 2026)](https://www.nzfirst.nz/complete_the_christchurch_cathedral) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-complete-the-christchurch-cathedral.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813015000/https://www.nzfirst.nz/complete_the_christchurch_cathedral)
+  - ['Complete the Christchurch Cathedral', undated (accessed 13 August 2026)](https://www.nzfirst.nz/complete_the_christchurch_cathedral) — [full text](documents/site-complete-the-christchurch-cathedral.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813015000/https://www.nzfirst.nz/complete_the_christchurch_cathedral)
   - ['NZ First Campaign Announcement: Funding For Christ Church Cathedral Rebuild', 27 March 2026 (accessed 27 August 2026)](https://community.scoop.co.nz/2026/03/nz-first-campaign-announcement-funding-for-christ-church-cathedral-rebuild/) · [archived copy cited by policy.nz](https://web.archive.org/web/20260827002604/https://community.scoop.co.nz/2026/03/nz-first-campaign-announcement-funding-for-christ-church-cathedral-rebuild/) — Same release as the Scoop copy listed below.
   - [NZ First Campaign Announcement: Funding For Christ Church Cathedral Rebuild (Press release, 2026-03-27)](https://www.scoop.co.nz/stories/PA2603/S00183/nz-first-campaign-announcement-funding-for-christ-church-cathedral-rebuild.htm) — [full text](documents/2026-03-27-nz-first-campaign-announcement-funding-for-christ-church-cat.md)
 
@@ -102,6 +85,8 @@ The additional government funding would help complete the first stage of the new
   - ['NZFirst to Ban Public Sales of Fireworks', 9 October 2026 (accessed 09 October 2026)](https://www.nzfirst.nz/nzfirst_to_ban_public_sales_of_fireworks) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nzfirst-to-ban-public-sales-of-fireworks.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20261009005530/https://www.nzfirst.nz/nzfirst_to_ban_public_sales_of_fireworks)
   - [NZFirst To Ban Public Sales Of Fireworks (Press release, 2026-10-09)](https://www.scoop.co.nz/stories/PA2610/S00076/nzfirst-to-ban-public-sales-of-fireworks.htm) — [full text](documents/2026-10-09-nzfirst-to-ban-public-sales-of-fireworks.md)
   - [NZ First Introduces Bill To Ban Public Sales Of Fireworks (Press release, 2025-11-04)](https://www.scoop.co.nz/stories/PA2511/S00018/nz-first-introduces-bill-to-ban-public-sales-of-fireworks.htm) — [full text](documents/2025-11-04-nz-first-introduces-bill-to-ban-public-sales-of-fireworks.md)
+  - [The Fireworks Prohibition Legislation Bill (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/the_fireworks_prohibition_legislation_bill) — [full text](documents/site-the-fireworks-prohibition-legislation-bill.md)
+  - [Fireworks Prohibition Legislation Bill (NZ First member's bill) (PDF)](https://assets.nationbuilder.com/nzfirst/pages/8447/attachments/original/1762913986/Fireworks_Prohibition_Legislation_Bill.pdf?1762913986) — [full text](documents/pdf-fireworks-prohibition-legislation-bill.md)
 
 ### POL55304: Increase the funding for the NZ Coastguard
 
@@ -135,6 +120,7 @@ The additional government funding would help complete the first stage of the new
 - **Sources:**
   - [Establishing An Accessible New Zealand For Everyone (Press release, 2026-07-08)](https://www.scoop.co.nz/stories/PA2607/S00069/establishing-an-accessible-new-zealand-for-everyone.htm) — [full text](documents/2026-07-08-establishing-an-accessible-new-zealand-for-everyone.md)
   - [Accessibility Standards Bill (draft v1.4, NZ First member's bill) (PDF)](https://img.scoop.co.nz/media/pdfs/2607/Accessibility_Standards_Billv1.4.pdf) — [full text](documents/pdf-accessibility-standards-billv1-4.md)
+  - [The Accessibility Standards Bill (Party web page (Common Crawl), 2026-10-14)](https://www.nzfirst.nz/the_accessibility_standards_bill) — [full text](documents/site-the-accessibility-standards-bill.md)
 
 ### NZF-A29: Oppose a social media ban for under-16s
 
@@ -157,7 +143,7 @@ The additional government funding would help complete the first stage of the new
 - **Why:** This party says that New Zealanders are paying too much for power, because four large companies generate 90 percent of NZ's power, controlling the supply and selling the power directly to customers. The party says that this situation results in high prices for households and industry, leading to companies closing down and job losses.
 - **How:** This party would replace the current system so that generation and retail are not done by the same companies. This would make sure that the most expensive generator would not set the price for the rest of the market.
 - **Sources:**
-  - ['Breaking up the Gentailers', undated (accessed 13 August 2026)](https://www.nzfirst.nz/breaking_up_the_gentailers) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-breaking-up-the-gentailers.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014033/https://www.nzfirst.nz/breaking_up_the_gentailers)
+  - ['Breaking up the Gentailers', undated (accessed 13 August 2026)](https://www.nzfirst.nz/breaking_up_the_gentailers) — [full text](documents/site-breaking-up-the-gentailers.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014033/https://www.nzfirst.nz/breaking_up_the_gentailers)
   - [Winston Peters - State Of The Nation 2026 "Power To The People" (Speech, 2026-03-22)](https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm) — [full text](documents/2026-03-22-winston-peters-state-of-the-nation-2026-power-to-the-people.md)
 
 ### POL54657: Guarantee fixed-price contracts for new electricity generation projects
@@ -169,7 +155,7 @@ The additional government funding would help complete the first stage of the new
 - **How:** This party would guarantee long-term, fixed-price contractions for building new electricity generation. The companies building this infrastructure would receive guarantees that their power would be the first to be used when needed. This would make it easier for investors to fund electricity generation projects, and increase New Zealand's energy security and resilience.
 - **Note:** policy.nz also cites a Labour Party release ('Labour will make price gouging illegal'); that is another party's page and is not an NZ First source.
 - **Sources:**
-  - ['Breaking up the Gentailers', undated (accessed 13 August 2026)](https://www.nzfirst.nz/breaking_up_the_gentailers) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-breaking-up-the-gentailers.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014033/https://www.nzfirst.nz/breaking_up_the_gentailers)
+  - ['Breaking up the Gentailers', undated (accessed 13 August 2026)](https://www.nzfirst.nz/breaking_up_the_gentailers) — [full text](documents/site-breaking-up-the-gentailers.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014033/https://www.nzfirst.nz/breaking_up_the_gentailers)
   - ['Release: Labour will make price gouging illegal', 16 September 2026 (accessed 16 September 2026)](https://www.labour.org.nz/news/release-labour-will-make-price-gouging-illegal/) · [archived copy cited by policy.nz](https://web.archive.org/web/20260916083128/https://www.labour.org.nz/news/release-labour-will-make-price-gouging-illegal/) — Not an NZ First source (cited by policy.nz); not archived here.
   - [Winston Peters - State Of The Nation 2026 "Power To The People" (Speech, 2026-03-22)](https://www.scoop.co.nz/stories/PA2603/S00137/winston-peters-state-of-the-nation-2026-power-to-the-people.htm) — [full text](documents/2026-03-22-winston-peters-state-of-the-nation-2026-power-to-the-people.md)
 
@@ -181,7 +167,7 @@ The additional government funding would help complete the first stage of the new
 - **Why:** This party says that food prices are too high in New Zealand, as a result of a supermarket duopoly controlling 80% of the grocery market. Food producers and households do not get a good deal from this system. Creating more competition will drive prices down.
 - **How:** This party would introduce legislation to split the Foodstuffs brands into two cooperatives; one for New World and Four Square and the other for Pak'n'Save. This would create more competition with Woolworths and result in lower prices and fairer deals for producers. This would create more certainty for major businesses like McCains and Heinz Watties, which have experienced job losses as a result of a poorly functioning system.
 - **Sources:**
-  - ['Break up the Supermarket Duopoly', undated (accessed 13 August 2026)](https://www.nzfirst.nz/break_up_the_supermarket_duopoly) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-break-up-the-supermarket-duopoly.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014141/https://www.nzfirst.nz/break_up_the_supermarket_duopoly)
+  - ['Break up the Supermarket Duopoly', undated (accessed 13 August 2026)](https://www.nzfirst.nz/break_up_the_supermarket_duopoly) — [full text](documents/site-break-up-the-supermarket-duopoly.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014141/https://www.nzfirst.nz/break_up_the_supermarket_duopoly)
   - [NZ First Campaign Policy Announcement: NZ First Will Break Up The Supermarket Duopoly, Bring Food Prices Down For Kiwis (Press release, 2026-04-19)](https://www.scoop.co.nz/stories/PA2604/S00094/nz-first-campaign-policy-announcement-nz-first-will-break-up-the-supermarket-duopoly-bring-food-prices-down-for-kiwis.htm) — [full text](documents/2026-04-19-nz-first-campaign-policy-announcement-nz-first-will-break-up.md)
 
 ### POL54659: Give the Commerce Commission and Grocery Commissioner more powers
@@ -192,7 +178,7 @@ The additional government funding would help complete the first stage of the new
 - **Why:** This party says that the current Grocery Commissioner does not have the power to enforce the sector properly. The Commerce Commission cannot apply penalties as high as its counterpoint in Australia, investigations are often slow, and penalties are not enforced.
 - **How:** This party would increase the powers assigned to the Commerce Commission and Grocery Commissioner. The Commerce Commission would be able to apply penalties for serious breaches of up to $10 million, three times the gain, or 10 percent of turnover. Investigations would be faster and enforcement stricter. The Grocery Commissioner would have powers to investigate, make binding decisions and apply penalties directly.
 - **Sources:**
-  - ['Break up the Supermarket Duopoly', undated (accessed 13 August 2026)](https://www.nzfirst.nz/break_up_the_supermarket_duopoly) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-break-up-the-supermarket-duopoly.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014141/https://www.nzfirst.nz/break_up_the_supermarket_duopoly)
+  - ['Break up the Supermarket Duopoly', undated (accessed 13 August 2026)](https://www.nzfirst.nz/break_up_the_supermarket_duopoly) — [full text](documents/site-break-up-the-supermarket-duopoly.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014141/https://www.nzfirst.nz/break_up_the_supermarket_duopoly)
   - [NZ First Campaign Policy Announcement: NZ First Will Break Up The Supermarket Duopoly, Bring Food Prices Down For Kiwis (Press release, 2026-04-19)](https://www.scoop.co.nz/stories/PA2604/S00094/nz-first-campaign-policy-announcement-nz-first-will-break-up-the-supermarket-duopoly-bring-food-prices-down-for-kiwis.htm) — [full text](documents/2026-04-19-nz-first-campaign-policy-announcement-nz-first-will-break-up.md)
 
 ### POL54660: Make it easier for small food suppliers to compete on supermarket shelves
@@ -203,7 +189,7 @@ The additional government funding would help complete the first stage of the new
 - **Why:** This party says that prices for food are too high in NZ, in part because supermarkets limit small food providers' access to customers. The supermarkets control suppliers' access to the market, favouring larger providers.
 - **How:** This party would introduce a new industry framework into the Commerce Act 1986 to fix competition issues quickly without waiting for legislative change. This would ensure producers are not pushed off supermarket shelves by larger players.
 - **Sources:**
-  - ['Break up the Supermarket Duopoly', undated (accessed 13 August 2026)](https://www.nzfirst.nz/break_up_the_supermarket_duopoly) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-break-up-the-supermarket-duopoly.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014141/https://www.nzfirst.nz/break_up_the_supermarket_duopoly)
+  - ['Break up the Supermarket Duopoly', undated (accessed 13 August 2026)](https://www.nzfirst.nz/break_up_the_supermarket_duopoly) — [full text](documents/site-break-up-the-supermarket-duopoly.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014141/https://www.nzfirst.nz/break_up_the_supermarket_duopoly)
   - [NZ First Campaign Policy Announcement: NZ First Will Break Up The Supermarket Duopoly, Bring Food Prices Down For Kiwis (Press release, 2026-04-19)](https://www.scoop.co.nz/stories/PA2604/S00094/nz-first-campaign-policy-announcement-nz-first-will-break-up-the-supermarket-duopoly-bring-food-prices-down-for-kiwis.htm) — [full text](documents/2026-04-19-nz-first-campaign-policy-announcement-nz-first-will-break-up.md)
 
 ### POL54663: Return BNZ to NZ ownership
@@ -214,9 +200,10 @@ The additional government funding would help complete the first stage of the new
 - **Why:** This party says that 85 percent of New Zealand banks are owned by Australian companies, and lending is offered at margins higher than Australia. Domestically-owned Kiwibank has just 8 percent of the mortgage market. A New Zealand bank of a similar scale would compete with these major Australian banks and promote economic sovereignty.
 - **How:** This party would use ACC, banking bonds, Crown debt and Kiwisaver capital to buy BNZ from the National Australia Bank. It would be combined with Kiwibank to form the fully Crown-owned National Bank of New Zealand. The profits generated by BNZ would finance the buy-back.
 - **Sources:**
-  - ['Backing a New Zealand Owned Bank', undated (accessed 13 August 2026)](https://www.nzfirst.nz/backing_a_new_zealand_owned_bank) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-backing-a-new-zealand-owned-bank.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014557/https://www.nzfirst.nz/backing_a_new_zealand_owned_bank)
+  - ['Backing a New Zealand Owned Bank', undated (accessed 13 August 2026)](https://www.nzfirst.nz/backing_a_new_zealand_owned_bank) — [full text](documents/site-backing-a-new-zealand-owned-bank.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014557/https://www.nzfirst.nz/backing_a_new_zealand_owned_bank)
   - [Winston Peters' Speech - "By Their Deeds You Will Know Them" (Speech, 2026-05-17)](https://www.scoop.co.nz/stories/PA2605/S00140/winston-peters-speech-by-their-deeds-you-will-know-them.htm) — [full text](documents/2026-05-17-winston-peters-speech-by-their-deeds-you-will-know-them.md)
   - [“No More Cinderella City” - Winston Peters' Speech (Speech, 2026-05-24)](https://www.scoop.co.nz/stories/PA2605/S00199/no-more-cinderella-city-winston-peters-speech.htm) — [full text](documents/2026-05-24-no-more-cinderella-city-winston-peters-speech.md)
+  - [The Kiwisaver Generation and BNZ Buy-Back (Party web page (Common Crawl), 2026-09-06)](https://www.nzfirst.nz/the_kiwisaver_generation_and_bnz_buy_back) — [full text](documents/site-the-kiwisaver-generation-and-bnz-buy-back.md)
 
 ## Democracy, the Treaty & Māori affairs
 
@@ -228,8 +215,9 @@ The additional government funding would help complete the first stage of the new
 - **Why:** This party says that this board is not accountable to ratepayers, yet influences decisions that are part of Auckland Council. The board is not elected and cost $3.5m last year. It says that Auckland Council can engage with Māori and recognise their interests but that this engagement should happen through people who are elected.
 - **How:** This party would introduce a members bill to disestablish the Independent Māori Statutory Board. All functions of the board would be returned to the main body of Auckland Council.
 - **Sources:**
-  - ['Disestablish Auckland's 'Independent Maori Statutory Board'', undated (accessed 13 August 2026)](https://www.nzfirst.nz/disestablish_auckland_s_independent_maori_statutory_board) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-disestablish-auckland-s-independent-maori-statutory-board.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014648/https://www.nzfirst.nz/disestablish_auckland_s_independent_maori_statutory_board)
+  - ['Disestablish Auckland's 'Independent Maori Statutory Board'', undated (accessed 13 August 2026)](https://www.nzfirst.nz/disestablish_auckland_s_independent_maori_statutory_board) — [full text](documents/site-disestablish-auckland-s-independent-maori-statutory-board.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014648/https://www.nzfirst.nz/disestablish_auckland_s_independent_maori_statutory_board)
   - [NZFirst To Campaign On Disestablishment Of Auckland Council’s ‘Independent Māori Statutory Board’ (Press release, 2026-06-18)](https://www.scoop.co.nz/stories/PA2606/S00132/nzfirst-to-campaign-on-disestablishment-of-auckland-councils-independent-maori-statutory-board.htm) — [full text](documents/2026-06-18-nzfirst-to-campaign-on-disestablishment-of-auckland-councils.md)
+  - [Local Government (Auckland Council) (Disestablishment of Independent Māori Statutory Board) Amendment Bill (Party web page (Common Crawl), 2026-07-19)](https://www.nzfirst.nz/local_government_auckland_council_disestablishment_of_imsb_amendment_bill) — [full text](documents/site-local-government-auckland-council-disestablishment-of-imsb-amendment-b.md)
 
 ### POL54757: Introduce a binding referendum on the Māori seats
 
@@ -239,10 +227,11 @@ The additional government funding would help complete the first stage of the new
 - **Why:** This party says that Māori have been better represented since the establishment of MMP. When MMP was introduced, a report recommended scrapping the old Māori seats because Māori would be better represented. The party argues that a referendum is needed to justify the seats' existence and so the issue can be settled. It also cites the conduct of Te Pati Māori in Parliament as justifying the need for a referendum.
 - **How:** This party would introduce legislation to run a public referendum on the Māori seats at the next general election. It says the referendum would have no extra costs if it could be included on the ballot papers at the next general election. The result would not affect the outcomes of that election, but the following election three years later.
 - **Sources:**
-  - ['Referendum on Maori Seats', undated (accessed 13 August 2026)](https://www.nzfirst.nz/referendum_on_maori_seats) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-referendum-on-maori-seats.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014751/https://www.nzfirst.nz/referendum_on_maori_seats)
-  - ['Referendum on Maori Seats ', undated (accessed 27 August 2026)](https://www.nzfirst.nz/referendum_on_maori_seats) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-referendum-on-maori-seats.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260827012337/https://www.nzfirst.nz/referendum_on_maori_seats)
+  - ['Referendum on Maori Seats', undated (accessed 13 August 2026)](https://www.nzfirst.nz/referendum_on_maori_seats) — [full text](documents/site-referendum-on-maori-seats.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014751/https://www.nzfirst.nz/referendum_on_maori_seats)
+  - ['Referendum on Maori Seats ', undated (accessed 27 August 2026)](https://www.nzfirst.nz/referendum_on_maori_seats) — [full text](documents/site-referendum-on-maori-seats.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260827012337/https://www.nzfirst.nz/referendum_on_maori_seats)
   - [New Zealand First To Campaign For Referendum On Māori Seats (Press release, 2026-02-12)](https://www.scoop.co.nz/stories/PA2602/S00071/new-zealand-first-to-campaign-for-referendum-on-maori-seats.htm) — [full text](documents/2026-02-12-new-zealand-first-to-campaign-for-referendum-on-maori-seats.md)
   - [NZ First Bill To Enable Binding Referendum On Māori Seats At 2026 Election (Press release, 2026-02-18)](https://www.scoop.co.nz/stories/PA2602/S00102/nz-first-bill-to-enable-binding-referendum-on-maori-seats-at-2026-election.htm) — [full text](documents/2026-02-18-nz-first-bill-to-enable-binding-referendum-on-maori-seats-at.md)
+  - [Māori Seats Referendum Bill (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/maori_seats_referendum_bill) — [full text](documents/site-maori-seats-referendum-bill.md)
 
 ### POL54759: Ensure that only NZ citizens can vote
 
@@ -254,7 +243,7 @@ The additional government funding would help complete the first stage of the new
 
 Permanent residents will still retain other rights such as the right to live, work, study, and access government support.
 - **Sources:**
-  - ['Citizen’s Only Voting', undated (accessed 27 August 2026)](https://www.nzfirst.nz/citizens_only_voting) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-citizens-only-voting.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260827014537/https://www.nzfirst.nz/citizens_only_voting)
+  - ['Citizen’s Only Voting', undated (accessed 27 August 2026)](https://www.nzfirst.nz/citizens_only_voting) — [full text](documents/site-citizens-only-voting.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260827014537/https://www.nzfirst.nz/citizens_only_voting)
   - [New Zealand First To Campaign On ‘Citizens Only Voting’ (Press release, 2026-07-05)](https://www.scoop.co.nz/stories/PA2607/S00039/new-zealand-first-to-campaign-on-citizens-only-voting.htm) — [full text](documents/2026-07-05-new-zealand-first-to-campaign-on-citizens-only-voting.md)
   - [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](https://www.scoop.co.nz/stories/PA2609/S00118/nz-first-announces-immigration-reform-policies.htm) — [full text](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md)
 
@@ -266,10 +255,11 @@ Permanent residents will still retain other rights such as the right to live, wo
 - **Why:** This party says that the Waitangi Tribunal, in its capacity to hear alleged ongoing breaches of the Treaty, is beginning to violate Parliament's sovereignty and voters' rights through its criticism of government policy.
 - **How:** This party would replace the Waitangi Tribunal with the Treaty of Waitangi Completion Commission, tasked with finalising all claims lodged before 2008.  It would implement this policy within the first hundred days of forming a government.
 - **Sources:**
-  - ['Winston Peters - “Ending the Waitangi Make-Work Industry”', 27 September 2026 (accessed 27 September 2026)](https://www.nzfirst.nz/winston_peters_ending_the_waitangi_make_work_industry) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-winston-peters-ending-the-waitangi-make-work-industry.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260927063935/https://www.nzfirst.nz/winston_peters_ending_the_waitangi_make_work_industry)
-  - ['NZFirst to Campaign on Ending the Waitangi Make-Work Industry', 27 September 2026 (accessed 27 September 2026)](https://www.nzfirst.nz/ending_the_waitangi_make_work_industry) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-ending-the-waitangi-make-work-industry.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260927064142/https://www.nzfirst.nz/ending_the_waitangi_make_work_industry)
+  - ['Winston Peters - “Ending the Waitangi Make-Work Industry”', 27 September 2026 (accessed 27 September 2026)](https://www.nzfirst.nz/winston_peters_ending_the_waitangi_make_work_industry) — [full text](documents/site-winston-peters-ending-the-waitangi-make-work-industry.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260927063935/https://www.nzfirst.nz/winston_peters_ending_the_waitangi_make_work_industry)
+  - ['NZFirst to Campaign on Ending the Waitangi Make-Work Industry', 27 September 2026 (accessed 27 September 2026)](https://www.nzfirst.nz/ending_the_waitangi_make_work_industry) — [full text](documents/site-ending-the-waitangi-make-work-industry.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260927064142/https://www.nzfirst.nz/ending_the_waitangi_make_work_industry)
   - [NZFirst Policy Announcement: Ending The Waitangi Make-Work Industry (Press release, 2026-09-26)](https://www.scoop.co.nz/stories/PA2609/S00277/nzfirst-policy-announcement-ending-the-waitangi-make-work-industry.htm) — [full text](documents/2026-09-26-nzfirst-policy-announcement-ending-the-waitangi-make-work-in.md)
   - [Winston Peters' Speech - “Ending The Waitangi Make-Work Industry” (Speech, 2026-09-26)](https://www.scoop.co.nz/stories/PA2609/S00276/winston-peters-speech-ending-the-waitangi-make-work-industry.htm) — [full text](documents/2026-09-26-winston-peters-speech-ending-the-waitangi-make-work-industry.md)
+  - [Ending the Waitangi Make-Work Industry (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/ending_the_waitangi_makework_industry) — [full text](documents/site-ending-the-waitangi-makework-industry.md)
 
 ## Economy, tax & business
 
@@ -283,9 +273,10 @@ Permanent residents will still retain other rights such as the right to live, wo
 Marketing ‘New Zealand Dairy’, this party sees this policy as a means of making NZ’s dairy manufacturing sector more competitive in export markets. It says it is important for the milk provision not to be a subsidy; dairy manufacturing firms would cover delivery and collection costs and pay farmers market rates.
 - **How:** This party would increase milk access from 50 million litres to 500 million litres per year over the first six years. From there, access would taper to 80 per cent, 60 per cent, 40 per cent and 20 per cent to encourage immediate investment. This would be done through changing the Dairy Industry Restructuring Act 2001.
 - **Sources:**
-  - ['NZ First launches 'Use It or Lose It' dairy policy', 20 August 2026 (accessed 26 August 2026)](https://www.nzfirst.nz/nz_first_launches_use_it_or_lose_it_dairy_policy) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nz-first-launches-use-it-or-lose-it-dairy-policy.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260823215053/https://www.nzfirst.nz/nz_first_launches_use_it_or_lose_it_dairy_policy)
+  - ['NZ First launches 'Use It or Lose It' dairy policy', 20 August 2026 (accessed 26 August 2026)](https://www.nzfirst.nz/nz_first_launches_use_it_or_lose_it_dairy_policy) — [full text](documents/site-nz-first-launches-use-it-or-lose-it-dairy-policy.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260823215053/https://www.nzfirst.nz/nz_first_launches_use_it_or_lose_it_dairy_policy)
   - [NZ First Launches 'Use It Or Lose It' Dairy Policy (Press release, 2026-08-20)](https://www.scoop.co.nz/stories/PA2608/S00184/nz-first-launches-use-it-or-lose-it-dairy-policy.htm) — [full text](documents/2026-08-20-nz-first-launches-use-it-or-lose-it-dairy-policy.md)
   - [Winston Peters' Speech - “Adding Real Export Value – Use It Or Lose It” (Speech, 2026-08-22)](https://www.scoop.co.nz/stories/PA2608/S00205/winston-peters-speech-adding-real-export-value-use-it-or-lose-it.htm) — [full text](documents/2026-08-22-winston-peters-speech-adding-real-export-value-use-it-or-los.md)
+  - ['Use It or Lose It' dairy policy (Party web page (Common Crawl), 2026-09-07)](https://www.nzfirst.nz/use_it_or_lose_it_dairy_policy) — [full text](documents/site-use-it-or-lose-it-dairy-policy.md)
 
 ### POL54755: Establish a Special Economic Zone at Marsden Point
 
@@ -295,7 +286,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says Marsden Point should be allowed to operate under a lighter regulatory framework to support domestic energy production. The party argues that, with rising global tensions and increasing energy costs, New Zealand needs to better ensure itself against spikes in global fuel prices. Establishing a special economic zone (SEZ) will attract foreign investment.
 - **How:** This party would establish a Special Economic Zone, which would see a combination of tax breaks, wage subsidies, and reduced regulation to incentivise the development of energy and port operations. The party says that the principal benefits of the economic zone would be the bypassing of planning regulations and the RMA. If elected, this party would consider providing additional funding to help local councils run services in the SEZ, such as investment in physical, transport or communications infrastructure.
 - **Sources:**
-  - ['Establishing a Special Economic Zone At Marsden Point', undated (accessed 13 August 2026)](https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-establishing-a-special-economic-zone-at-marsden-point.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014909/https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point)
+  - ['Establishing a Special Economic Zone At Marsden Point', undated (accessed 13 August 2026)](https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point) — [full text](documents/site-establishing-a-special-economic-zone-at-marsden-point.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014909/https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point)
   - [“No More Cinderella City” - Winston Peters' Speech (Speech, 2026-05-24)](https://www.scoop.co.nz/stories/PA2605/S00199/no-more-cinderella-city-winston-peters-speech.htm) — [full text](documents/2026-05-24-no-more-cinderella-city-winston-peters-speech.md)
 
 ### POL55155: Lower the corporate tax rate to 20% for small businesses
@@ -306,7 +297,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that NZ firms need support for greater productivity and growth. The party argues that small businesses operating on thin margins need additional support to invest, develop, and start up.
 - **How:** This party would lower the corporate tax rate for all firms with turnover less than $30 million. The party claims the cost would initially be $1 billion and that additional growth would cover additional costs over time.
 - **Sources:**
-  - ['Lowering Tax Rate for SMEs to 20%', undated (accessed 24 September 2026)](https://www.nzfirst.nz/20_tax_rate_for_smes) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-20-tax-rate-for-smes.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260924022431/https://www.nzfirst.nz/20_tax_rate_for_smes)
+  - ['Lowering Tax Rate for SMEs to 20%', undated (accessed 24 September 2026)](https://www.nzfirst.nz/20_tax_rate_for_smes) — [full text](documents/site-20-tax-rate-for-smes.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260924022431/https://www.nzfirst.nz/20_tax_rate_for_smes)
   - [NZFirst To Campaign On 20% Tax Rate For SMEs (Press release, 2026-09-24)](https://www.scoop.co.nz/stories/PA2609/S00261/nzfirst-to-campaign-on-20-tax-rate-for-smes.htm) — [full text](documents/2026-09-24-nzfirst-to-campaign-on-20-tax-rate-for-smes.md)
 
 ### POL55308: Impose trade barriers to protect NZ-produced aluminium
@@ -327,9 +318,10 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 *Summary source: archive* · topics: economy, infrastructure-funding-and-planning
 
 - **Why:** The party says New Zealand needs a long-term, non-political way to pay for infrastructure instead of an 'on-off approach'.
-- **How:** This party would set up a $100 billion 'Future Fund', run at arm's length from politicians on a model similar to Singapore's Temasek, to invest in a thirty-year infrastructure plan. The party says it would fund projects it has promised (for example the Hope Bypass). The party's releases seen for this archive do not set out how the fund's $100 billion would be raised.
-- **Note:** The original announcement release was not found on Scoop; the policy is described in the leader's speeches listed.
+- **How:** This party would establish a 'New Zealand Future Fund' of up to $100 billion to invest solely in a multi-decade infrastructure build, ring-fenced from politicians, on a model similar to Singapore's Temasek. Its policy page says the fund would be built by attracting international investment through 'taxation incentivisation'. The party says it would fund promised projects (for example the Hope Bypass).
+- **Note:** The party's policy page for the Future Fund was retrieved via Common Crawl (captured 7 Sep 2026).
 - **Sources:**
+  - [The $100bn New Zealand Future Fund (Party web page (Common Crawl), 2026-09-07)](https://www.nzfirst.nz/the_100bn_new_zealand_future_fund) — [full text](documents/site-the-100bn-new-zealand-future-fund.md)
   - [“Hope, And A Better Tomorrow” (Speech, 2026-07-19)](https://www.scoop.co.nz/stories/PA2607/S00134/hope-and-a-better-tomorrow.htm) — [full text](documents/2026-07-19-hope-and-a-better-tomorrow.md)
   - [Winston Peters' Speech: “The Labour, Green, Māori, Opportunity - Antipodean Animal Farm” (Speech, 2026-08-16)](https://www.scoop.co.nz/stories/PA2608/S00133/winston-peters-speech-the-labour-green-maori-opportunity-antipodean-animal-farm.htm) — [full text](documents/2026-08-16-winston-peters-speech-the-labour-green-maori-opportunity-ant.md)
   - [“Seniors Sole Defender”- Winston Peters (Speech, 2026-08-28)](https://www.scoop.co.nz/stories/PA2608/S00261/seniors-sole-defender-winston-peters.htm) — [full text](documents/2026-08-28-seniors-sole-defender-winston-peters.md)
@@ -365,6 +357,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Sources:**
   - [NZ First Introduces Anti-Scamming Bill (Press release, 2026-02-27)](https://www.scoop.co.nz/stories/PA2602/S00178/nz-first-introduces-anti-scamming-bill.htm) — [full text](documents/2026-02-27-nz-first-introduces-anti-scamming-bill.md)
   - [Financial Markets Conduct (Preventing Payment Scams) Amendment Bill (draft v1.5, NZ First member's bill) (PDF)](https://img.scoop.co.nz/media/pdfs/2602/Financial_Markets_Conduct_Preventing_Payment_Scamv1.5.pdf) — [full text](documents/pdf-financial-markets-conduct-preventing-payment-scamv1-5.md)
+  - [Financial Markets Conduct (Preventing Payment Scams) Amendment Bill (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/preventing_payment_scams_bill) — [full text](documents/site-preventing-payment-scams-bill.md)
 
 ### NZF-A30: Oppose the New Zealand–India free trade agreement
 
@@ -387,6 +380,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** The party says meeting Paris commitments could send up to $22 billion of taxpayers' money offshore while New Zealand produces about 0.17% of global emissions.
 - **How:** This party would take New Zealand out of the Paris Agreement and says it will campaign on this at the election.
 - **Sources:**
+  - [We Will Withdraw From The Paris Accord (Party web page (Common Crawl), 2026-09-07)](https://www.nzfirst.nz/withdraw_from_paris_accord) — [full text](documents/site-withdraw-from-paris-accord.md)
   - [Winston Peters' Speech - "Keep Hope Alive" (Speech, 2026-06-14)](https://www.scoop.co.nz/stories/PA2606/S00103/winston-peters-speech-keep-hope-alive.htm) — [full text](documents/2026-06-14-winston-peters-speech-keep-hope-alive.md)
   - [Winston Peters' Speech - “An Election Like No Other” (Speech, 2026-06-28)](https://www.scoop.co.nz/stories/PA2606/S00202/winston-peters-speech-an-election-like-no-other.htm) — [full text](documents/2026-06-28-winston-peters-speech-an-election-like-no-other.md)
   - [Winston Peters' Speech - “Continuing To Be The Voice Of Common Sense” (Speech, 2026-07-05)](https://www.scoop.co.nz/stories/PA2607/S00038/winston-peters-speech-continuing-to-be-the-voice-of-common-sense.htm) — [full text](documents/2026-07-05-winston-peters-speech-continuing-to-be-the-voice-of-common-s.md)
@@ -400,6 +394,8 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **How:** This party has introduced a member's bill for a scheme that puts a small refundable deposit on beverage containers, with operational details set by regulation.
 - **Sources:**
   - [New Zealand First Introduces Bill To Implement A Nationwide Container Return Scheme (Press release, 2026-05-08)](https://www.scoop.co.nz/stories/PA2605/S00060/new-zealand-first-introduces-bill-to-implement-a-nationwide-container-return-scheme.htm) — [full text](documents/2026-05-08-new-zealand-first-introduces-bill-to-implement-a-nationwide.md)
+  - [The Container Return Scheme Bill (Party web page (Common Crawl), 2026-09-07)](https://www.nzfirst.nz/the_container_return_scheme_bill) — [full text](documents/site-the-container-return-scheme-bill.md)
+  - [Container Return Scheme Bill (draft v1.5, NZ First member's bill) (PDF)](https://assets.nationbuilder.com/nzfirst/pages/9701/attachments/original/1778203177/Container_Return_Scheme_Bill-v1.5_%281%29.pdf?1778203177) — [full text](documents/pdf-container-return-scheme-bill-v1-5-1.md)
 
 ### NZF-A25: Pause Waikato Regional Council's Plan Change 1 farm rules
 
@@ -420,6 +416,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **How:** The party says it will not support the government's gene technology legislation as it stands and is against liberalisation without adequate safeguards.
 - **Sources:**
   - [Winston Peters' Speech - "Keep Hope Alive" (Speech, 2026-06-14)](https://www.scoop.co.nz/stories/PA2606/S00103/winston-peters-speech-keep-hope-alive.htm) — [full text](documents/2026-06-14-winston-peters-speech-keep-hope-alive.md)
+  - [New Zealand First lodges differing view on the Gene Tech Bill (Party web page (Common Crawl), 2026-09-07)](https://www.nzfirst.nz/nz_first_lodges_differing_view_on_the_gene_tech_bill) — [full text](documents/site-nz-first-lodges-differing-view-on-the-gene-tech-bill.md)
 
 ## Families, incomes, savings & super
 
@@ -431,8 +428,9 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that ensuring children are enrolled in Kiwisaver would create benefits that compound for decades. Birth enrollment ensures that all New Zealanders can participate, and an up-front government contribution of $1,000 would mean that all citizens will enter adulthood with savings.
 - **How:** This party would enrol all New Zealand citizens in Kiwisaver at birth and provide a $1,000 contribution to all these accounts from the Crown. This would complement other Kiwisaver policies, including increasing employee and employer contribution to 8% and 10% and making enrolment compulsory for all people in the workforce.
 - **Sources:**
-  - ['Establishing a Kiwisaver Generation', undated (accessed 13 August 2026)](https://www.nzfirst.nz/establishing_a_kiwisaver_generation) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-establishing-a-kiwisaver-generation.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014452/https://www.nzfirst.nz/establishing_a_kiwisaver_generation)
+  - ['Establishing a Kiwisaver Generation', undated (accessed 13 August 2026)](https://www.nzfirst.nz/establishing_a_kiwisaver_generation) — [full text](documents/site-establishing-a-kiwisaver-generation.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014452/https://www.nzfirst.nz/establishing_a_kiwisaver_generation)
   - [Winston Peters' Speech - "By Their Deeds You Will Know Them" (Speech, 2026-05-17)](https://www.scoop.co.nz/stories/PA2605/S00140/winston-peters-speech-by-their-deeds-you-will-know-them.htm) — [full text](documents/2026-05-17-winston-peters-speech-by-their-deeds-you-will-know-them.md)
+  - [The Kiwisaver Generation and BNZ Buy-Back (Party web page (Common Crawl), 2026-09-06)](https://www.nzfirst.nz/the_kiwisaver_generation_and_bnz_buy_back) — [full text](documents/site-the-kiwisaver-generation-and-bnz-buy-back.md)
 
 ### POL54746: Support new parents with a $5000 grant for the first three years of their child's life
 
@@ -442,7 +440,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that New Zealand's birth rate is only 1.53 children per woman, when the replacement rate is 2.1 children per woman. If something is not done, this party says New Zealand may become entirely dependent on immigration in the future.
 - **How:** This party would offer all new parents (where at least one is a New Zealand citizen) a $5000 grant per year for the first three years of their child's life. This grant would apply to the first, second, and third children which the couple have. The grant would be tax free and not replace any current support.  This party estimates that this policy would cost $400 million per three-year-cycle.
 - **Sources:**
-  - ['The 'Kiwi Kids Grant'', undated (accessed 13 August 2026)](https://www.nzfirst.nz/the_kiwi_kids_grant) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-the-kiwi-kids-grant.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813015246/https://www.nzfirst.nz/the_kiwi_kids_grant)
+  - ['The 'Kiwi Kids Grant'', undated (accessed 13 August 2026)](https://www.nzfirst.nz/the_kiwi_kids_grant) — [full text](documents/site-the-kiwi-kids-grant.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813015246/https://www.nzfirst.nz/the_kiwi_kids_grant)
   - [NZFirst Announces Policy To Encourage Kiwis To Have More Kids (Press release, 2026-08-02)](https://www.scoop.co.nz/stories/PA2608/S00008/nzfirst-announces-policy-to-encourage-kiwis-to-have-more-kids.htm) — [full text](documents/2026-08-02-nzfirst-announces-policy-to-encourage-kiwis-to-have-more-kid.md)
   - [Winston Peters' Speech: “New Zealand In Its Eleventh Hour” (Speech, 2026-08-02)](https://www.scoop.co.nz/stories/PA2608/S00010/winston-peters-speech-new-zealand-in-its-eleventh-hour.htm) — [full text](documents/2026-08-02-winston-peters-speech-new-zealand-in-its-eleventh-hour.md)
 
@@ -454,10 +452,11 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** The party says that New Zealanders who have worked since they were teenagers deserve security in retirement. As superannuation becomes harder to pay for as the population ages, it's unfair for people who have lived and worked in the country for a lot less time to receive the same payments.
 - **How:** The party would phase in the demand that one be a citizen to be eligible for superannuation over three years. It would amend the eligibility criteria to remove access to NZ Super for permanent residents.
 - **Sources:**
-  - ['NZFirst Campaign Announcement: NZ Super for Citizens Only ', 6 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_nz_super_for_citizens_only) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nzfirst-campaign-announcement-nz-super-for-citizens-only.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911012209/https://www.nzfirst.nz/nzfirst_campaign_announcement_nz_super_for_citizens_only)
+  - ['NZFirst Campaign Announcement: NZ Super for Citizens Only ', 6 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_nz_super_for_citizens_only) — [full text](documents/site-nzfirst-campaign-announcement-nz-super-for-citizens-only.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911012209/https://www.nzfirst.nz/nzfirst_campaign_announcement_nz_super_for_citizens_only)
   - [NZ First Campaign Announcement: NZ Super For Citizens Only (Press release, 2026-09-06)](https://www.scoop.co.nz/stories/PA2609/S00059/nz-first-campaign-announcement-nz-super-for-citizens-only.htm) — [full text](documents/2026-09-06-nz-first-campaign-announcement-nz-super-for-citizens-only.md)
   - [Winston Peters' Speech - “Citizenship And Superannuation” (Speech, 2026-09-06)](https://www.scoop.co.nz/stories/PA2609/S00058/winston-peters-speech-citizenship-and-superannuation.htm) — [full text](documents/2026-09-06-winston-peters-speech-citizenship-and-superannuation.md)
   - [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](https://www.scoop.co.nz/stories/PA2609/S00118/nz-first-announces-immigration-reform-policies.htm) — [full text](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md)
+  - [NZ Super for Citizens Only (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/nz_super_for_citizens_only) — [full text](documents/site-nz-super-for-citizens-only.md)
 
 ### POL55257: Increase In-Work-Family-Tax-Credit by $70 a week
 
@@ -511,8 +510,9 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that too large a share of NZ health spending goes towards caring for people once they're sick, as opposed to before. The party claims that 59% of health spending is spent treating chronic illness, and only 1.75% on the prevention of such conditions.
 - **How:** This party would promote nutrition from primary school to medical school, use health coaches in GP care, and require a full independent review of our dietary guidelines. It would fund research and development to better assess nutritional interventions for preventing and treating mental illness. It would fund development in agricultural tech and cut regulatory barriers to help grow markets for organic food items.  It would investigate how the use of vitamins in the delivery of healthcare can prevent people from getting sick again, including intravenous vitamin C pre- and post-surgery for preventing and treating infections.
 - **Sources:**
-  - ['NZFirst Campaign Announcement: The Plan to “Make NZ Healthy” ', 20 September 2026 (accessed 21 September 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260921001655/https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy)
+  - ['NZFirst Campaign Announcement: The Plan to “Make NZ Healthy” ', 20 September 2026 (accessed 21 September 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy) — [full text](documents/site-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260921001655/https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy)
   - [NZ First Campaign Announcement: The Plan To “Make NZ Healthy” (Press release, 2026-09-20)](https://www.scoop.co.nz/stories/PA2609/S00205/nz-first-campaign-announcement-the-plan-to-make-nz-healthy.htm) — [full text](documents/2026-09-20-nz-first-campaign-announcement-the-plan-to-make-nz-healthy.md)
+  - [The Plan to “Make NZ Healthy” (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/the_plan_to_make_nz_healthy) — [full text](documents/site-the-plan-to-make-nz-healthy.md)
 
 ### POL55073: Make health coaches an integrated part of primary care
 
@@ -522,8 +522,9 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that the healthcare system responds to crises without dealing with the underlying causes, such as poor nutrition. It claims the incorporation of health coaches can help educate patients on how to better avoid underlying causes of illness.
 - **How:** This party would fund health coaches to be staffed at local general practices.
 - **Sources:**
-  - ['NZFirst Campaign Announcement: The Plan to “Make NZ Healthy” ', 20 September 2026 (accessed 21 September 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260921001655/https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy)
+  - ['NZFirst Campaign Announcement: The Plan to “Make NZ Healthy” ', 20 September 2026 (accessed 21 September 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy) — [full text](documents/site-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260921001655/https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy)
   - [NZ First Campaign Announcement: The Plan To “Make NZ Healthy” (Press release, 2026-09-20)](https://www.scoop.co.nz/stories/PA2609/S00205/nz-first-campaign-announcement-the-plan-to-make-nz-healthy.htm) — [full text](documents/2026-09-20-nz-first-campaign-announcement-the-plan-to-make-nz-healthy.md)
+  - [The Plan to “Make NZ Healthy” (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/the_plan_to_make_nz_healthy) — [full text](documents/site-the-plan-to-make-nz-healthy.md)
 
 ### POL55076: Fund organic and nutrient-based health interventions
 
@@ -533,8 +534,9 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that there is too little investment in preventive care. Poor nutrition is a driver of underlying conditions that lead people to need expensive healthcare.
 - **How:** This party would fund NZ scientists to assess nutritional interventions for preventing and treating mental illness. It would remove Medsafe/Pharmac barriers to recognising safe nutrients and invest in hospital trials that assess the effectiveness of intravenous vitamin C to treat infections. Farmers would be supported by to invest in the research of alternatives to potentially harmful agricultural sprays. It would fund development in agricultural tech and cut regulatory barriers to help grow markets for organic food items.
 - **Sources:**
-  - ['NZFirst Campaign Announcement: The Plan to “Make NZ Healthy” ', 20 September 2026 (accessed 21 September 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260921001655/https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy)
+  - ['NZFirst Campaign Announcement: The Plan to “Make NZ Healthy” ', 20 September 2026 (accessed 21 September 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy) — [full text](documents/site-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260921001655/https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy)
   - [NZ First Campaign Announcement: The Plan To “Make NZ Healthy” (Press release, 2026-09-20)](https://www.scoop.co.nz/stories/PA2609/S00205/nz-first-campaign-announcement-the-plan-to-make-nz-healthy.htm) — [full text](documents/2026-09-20-nz-first-campaign-announcement-the-plan-to-make-nz-healthy.md)
+  - [The Plan to “Make NZ Healthy” (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/the_plan_to_make_nz_healthy) — [full text](documents/site-the-plan-to-make-nz-healthy.md)
 
 ### POL55077: Commission a full and independent review of NZ's nutritional guidelines and education
 
@@ -547,6 +549,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Sources:**
   - ['New Zealand First Makes Mill Road Extension A Priority For South Auckland', 17 August 2026 (accessed 24 August 2026)](https://www.scoop.co.nz/stories/PO2608/S00121/new-zealand-first-makes-mill-road-extension-a-priority-for-south-auckland.htm?_gl=1%2Ahky0cg%2A_gcl_au%2AMTk4NTg5NzkzNi4xNzg2NDAxNDc5%2A_ga%2AMTA2ODM2Mjg3Mi4xNzg2NDAxNDc5%2A_ga_GGVMM3MB82%2AczE3ODc1NDA1MjkkbzMkZzEkdDE3ODc1NDA1ODMkajYkbDAkaDA.) — [full text](documents/2026-08-17-new-zealand-first-makes-mill-road-extension-a-priority-for-s.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260824030425/https://www.scoop.co.nz/stories/PO2608/S00121/new-zealand-first-makes-mill-road-extension-a-priority-for-south-auckland.htm?_gl=1%2Ahky0cg%2A_gcl_au%2AMTk4NTg5NzkzNi4xNzg2NDAxNDc5%2A_ga%2AMTA2ODM2Mjg3Mi4xNzg2NDAxNDc5%2A_ga_GGVMM3MB82%2AczE3ODc1NDA1MjkkbzMkZzEkdDE3ODc1NDA1ODMkajYkbDAkaDA.)
   - [NZ First Campaign Announcement: The Plan To “Make NZ Healthy” (Press release, 2026-09-20)](https://www.scoop.co.nz/stories/PA2609/S00205/nz-first-campaign-announcement-the-plan-to-make-nz-healthy.htm) — [full text](documents/2026-09-20-nz-first-campaign-announcement-the-plan-to-make-nz-healthy.md)
+  - [The Plan to “Make NZ Healthy” (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/the_plan_to_make_nz_healthy) — [full text](documents/site-the-plan-to-make-nz-healthy.md)
 
 ### POL55078: Increase autonomy and reduce administration for general practitioners
 
@@ -556,8 +559,9 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that preventive care is underemphasised as part of the NZ health system. Regulatory barriers can increase costs for doctors, and professional standards are seen as too restrictive from the party's perspective.
 - **How:** This party would reduce the regulatory burden on doctors in primary care. It would also allow greater diversity of medical viewpoints in professional standards.
 - **Sources:**
-  - ['NZFirst Campaign Announcement: The Plan to “Make NZ Healthy” ', 20 September 2026 (accessed 21 September 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260921001655/https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy)
+  - ['NZFirst Campaign Announcement: The Plan to “Make NZ Healthy” ', 20 September 2026 (accessed 21 September 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy) — [full text](documents/site-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260921001655/https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy)
   - [NZ First Campaign Announcement: The Plan To “Make NZ Healthy” (Press release, 2026-09-20)](https://www.scoop.co.nz/stories/PA2609/S00205/nz-first-campaign-announcement-the-plan-to-make-nz-healthy.htm) — [full text](documents/2026-09-20-nz-first-campaign-announcement-the-plan-to-make-nz-healthy.md)
+  - [The Plan to “Make NZ Healthy” (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/the_plan_to_make_nz_healthy) — [full text](documents/site-the-plan-to-make-nz-healthy.md)
 
 ### NZF-A17: Other 'Make NZ Healthy' commitments: informed consent, metabolic health, recognising nurses, vitamin D review, research on agricultural sprays
 
@@ -642,9 +646,10 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that housing is becoming more expensive and that there's a greater need for social housing. The party claims that it is unjust not to distinguish between a citizen and someone yet to become a citizen when providing a scarce resource like social housing.
 - **How:** This party would amend legislation to prioritise NZ citizens in the allocation of social housing. Resident class visa holders will retain eligibility to be on the waitlist, but NZ citizens will be fast-tracked up the waitlist for social housing.
 - **Sources:**
-  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nz-first-announces-immigration-reform-policies.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
+  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — [full text](documents/site-nz-first-announces-immigration-reform-policies.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
   - [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](https://www.scoop.co.nz/stories/PA2609/S00118/nz-first-announces-immigration-reform-policies.htm) — [full text](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md)
   - [Winston Peters' Speech - "Cool Heads, Rational Judgement" (Speech, 2026-09-13)](https://www.scoop.co.nz/stories/PA2609/S00134/winston-peters-speech-cool-heads-rational-judgement.htm) — [full text](documents/2026-09-13-winston-peters-speech-cool-heads-rational-judgement.md)
+  - [Immigration Reform Policies (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/immigration_reform_policies) — [full text](documents/site-immigration-reform-policies.md)
 
 ### POL54963: Allow a two-year amnesty on overstayers if they self-deport
 
@@ -654,8 +659,9 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that the illegal overstaying of visas by migrants is causing public distrust of the immigration system. However, people have built a life here and are discouraged by bans on re-entering the country if caught and deported.
 - **How:** This party would provide a 24-month/two-year amnesty whereby, if one chooses to self-deport by leaving the country, they will be eligible to apply to immigrate to NZ legally. Any overstayer caught thereafter will receive a permanent ban from applying. Pacific overstayers will be able to apply for a legal visa right away and stay in NZ.
 - **Sources:**
-  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nz-first-announces-immigration-reform-policies.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
+  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — [full text](documents/site-nz-first-announces-immigration-reform-policies.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
   - [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](https://www.scoop.co.nz/stories/PA2609/S00118/nz-first-announces-immigration-reform-policies.htm) — [full text](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md)
+  - [Immigration Reform Policies (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/immigration_reform_policies) — [full text](documents/site-immigration-reform-policies.md)
 
 ### POL54964: Remove automatic work rights from student visas
 
@@ -665,8 +671,9 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that student visa holders compete in the competitive graduate job market and can take jobs from New Zealanders. It stays the intent of international education is for overseas economies to give money to NZ by paying for their education, not to provide automatic work rights and residence pathways. The party also cites broader concern with net numbers of migrants entering New Zealand and sees changes to student visas as a way of reducing net migration and its effect on infrastructure.
 - **How:** This party would have student visa holders lose their automatic right to work. To be allowed to work, student visa holders would have to fulfil strict conditions to ensure they are not doing work that could be done by NZ citizens. People who have been on student visas and want to transition to another visa would have to leave NZ and reapply for a new visa from overseas.
 - **Sources:**
-  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nz-first-announces-immigration-reform-policies.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
+  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — [full text](documents/site-nz-first-announces-immigration-reform-policies.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
   - [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](https://www.scoop.co.nz/stories/PA2609/S00118/nz-first-announces-immigration-reform-policies.htm) — [full text](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md)
+  - [Immigration Reform Policies (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/immigration_reform_policies) — [full text](documents/site-immigration-reform-policies.md)
 
 ### POL54965: Create a benefit stand-down period of ten years for migrants and lengthen residency and citizenship eligibility
 
@@ -676,8 +683,9 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that benefit support comes with the rights and responsibilities of being a New Zealander. It wants to prevent the use of benefits by migrants yet to become citizens and to slow down net migration.
 - **How:** This party would implement a benefit stand-down period of ten years. This period would be in line with the additional changes to citizenship and permanent residency, where the required period to qualify for citizenship would double from five years to a minimum of ten years and from two years to five years for permanent residency.
 - **Sources:**
-  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nz-first-announces-immigration-reform-policies.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
+  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — [full text](documents/site-nz-first-announces-immigration-reform-policies.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
   - [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](https://www.scoop.co.nz/stories/PA2609/S00118/nz-first-announces-immigration-reform-policies.htm) — [full text](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md)
+  - [Immigration Reform Policies (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/immigration_reform_policies) — [full text](documents/site-immigration-reform-policies.md)
 
 ### POL54966: Expand criteria for deportation
 
@@ -687,8 +695,9 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that that public trust in the immigration system requires trust that violent offenders would be deported. Immigration to NZ is a privilege, not a right.
 - **How:** This party would widen the criteria for deportation liability to cover any offence for which imprisonment is available as a sentence. Automatic deportation will be applied to those found guilty of violent or sexual crimes, fraud, participating in an organised criminal group, money laundering, or exploiting migrants.
 - **Sources:**
-  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nz-first-announces-immigration-reform-policies.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
+  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — [full text](documents/site-nz-first-announces-immigration-reform-policies.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
   - [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](https://www.scoop.co.nz/stories/PA2609/S00118/nz-first-announces-immigration-reform-policies.htm) — [full text](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md)
+  - [Immigration Reform Policies (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/immigration_reform_policies) — [full text](documents/site-immigration-reform-policies.md)
 
 ### POL54967: Raise citizenship and permanent residence application fees
 
@@ -698,8 +707,9 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that application fees will be increased to fund the additional administrative burden of its other immigration reforms. Such increases should be accepted by applicants, as, according to the party, immigration to NZ is a privilege, not a right. The party claims that the application fee should be reflective of the value of becoming a New Zealander.
 - **How:** This party would increase citizenship and permanent residence application fees. The revenue gained from this will fund the additional administrative burden resulting from these stricter processes.
 - **Sources:**
-  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-nz-first-announces-immigration-reform-policies.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
+  - ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) — [full text](documents/site-nz-first-announces-immigration-reform-policies.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies)
   - [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](https://www.scoop.co.nz/stories/PA2609/S00118/nz-first-announces-immigration-reform-policies.htm) — [full text](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md)
+  - [Immigration Reform Policies (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/immigration_reform_policies) — [full text](documents/site-immigration-reform-policies.md)
 
 ### POL55262: Replace the Accredited Employer Work Visa with a shortage-led skilled work visa
 
@@ -804,6 +814,113 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Sources:**
   - [NZFirst Law And Order Policy Announcement: Tougher Sentences, Degrees Of Murder, Smashing Organised Crime (Press release, 2026-10-22)](https://www.scoop.co.nz/stories/PA2610/S00200/nzfirst-law-and-order-policy-announcement-tougher-sentences-degrees-of-murder-smashing-organised-crime.htm) — [full text](documents/2026-10-22-nzfirst-law-and-order-policy-announcement-tougher-sentences.md)
 
+## Members' bills on the party's books
+
+### NZF-A31: Free, structured prostate cancer screening for at-risk men (member's bill)
+
+**Statement:** Free, structured prostate cancer screening for at-risk men (member's bill)  
+*Summary source: archive* · topics: health, public-health
+
+- **Why:** The party lists this among its current members' bills.
+- **How:** The Health (Prostate Cancer Screening Services) Amendment Bill (Sept 2025) 'will provide free, structured screening for at-risk men, using PSA testing, MRI scans, and targeted biopsies where needed.'
+- **Sources:**
+  - [The Health (Prostate Cancer Screening Services) Amendment Bill (Party web page (Common Crawl), 2026-07-19)](https://www.nzfirst.nz/prostate_cancer_screening_bill) — [full text](documents/site-prostate-cancer-screening-bill.md)
+  - [Our Members' Bills (Party web page (Common Crawl), 2026-10-14)](https://www.nzfirst.nz/our-members-bills) — [full text](documents/site-our-members-bills.md)
+
+### NZF-A32: Require organisations to accept physical ID, not only digital ID (member's bill)
+
+**Statement:** Require organisations to accept physical ID, not only digital ID (member's bill)  
+*Summary source: archive* · topics: internet-and-digital-technologies, civil-justice
+
+- **Why:** The party says physical identification must remain a valid and equal alternative to digital ID.
+- **How:** The Identification (Protection of Physical Identification Methods) Bill (Sept 2025) would require organisations to accept passports, driver licences, 18+ cards, school IDs and other prescribed physical documents whenever proof of age or identity is required.
+- **Sources:**
+  - [New Zealand First Introduces Bill to Protect Against ‘Digital ID’ Overreach (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/nz_first_introduces_bill_to_protect_against_digital_id_overreach) — [full text](documents/site-nz-first-introduces-bill-to-protect-against-digital-id-overreach.md)
+  - [Our Members' Bills (Party web page (Common Crawl), 2026-10-14)](https://www.nzfirst.nz/our-members-bills) — [full text](documents/site-our-members-bills.md)
+
+### NZF-A33: Legislate 'New Zealand' as the country's official name (member's bill)
+
+**Statement:** Legislate 'New Zealand' as the country's official name (member's bill)  
+*Summary source: archive* · topics: parliament-and-democracy, arts-culture-and-heritage
+
+- **Why:** The party says officials have been changing the country's name 'by stealth'.
+- **How:** The New Zealand (Name of State) Bill (Aug 2025) would state in law that 'New Zealand' is the official geographic name of the country.
+- **Note:** Contrast: Te Pāti Māori's Mana Motuhake chapter proposes recognising 'Aotearoa' as the official name.
+- **Sources:**
+  - [NZ First Bill Legislates “New Zealand” As Official Name of Country in Law (Party web page (Common Crawl), 2026-07-19)](https://www.nzfirst.nz/nzf_bill_legislating_nzs_name) — [full text](documents/site-nzf-bill-legislating-nzs-name.md)
+  - [Our Members' Bills (Party web page (Common Crawl), 2026-10-14)](https://www.nzfirst.nz/our-members-bills) — [full text](documents/site-our-members-bills.md)
+
+### NZF-A34: Protect the right to pay with cash (member's bill)
+
+**Statement:** Protect the right to pay with cash (member's bill)  
+*Summary source: archive* · topics: economy, prices
+
+- **Why:** The party says cash must remain a private, accessible and reliable way to pay.
+- **How:** The Cash Transactions Protection Bill (July 2025) would provide for the enduring use of cash as a method of payment.
+- **Sources:**
+  - [Cash Transactions Protection Bill (Party web page (Common Crawl), 2026-07-19)](https://www.nzfirst.nz/cash_transactions_protection_bill) — [full text](documents/site-cash-transactions-protection-bill.md)
+  - [Our Members' Bills (Party web page (Common Crawl), 2026-10-14)](https://www.nzfirst.nz/our-members-bills) — [full text](documents/site-our-members-bills.md)
+
+### NZF-A35: Define 'woman' and 'man' biologically in law (member's bill)
+
+**Statement:** Define 'woman' and 'man' biologically in law (member's bill)  
+*Summary source: archive* · topics: civil-justice, community-and-inclusion
+
+- **Why:** The party says the law needs clarity and consistency.
+- **How:** The Legislation (Definitions of Woman and Man) Amendment Bill (April 2025) would define 'woman' as 'an adult human biological female' and 'man' as 'an adult human biological male' in the Legislation Act 2019.
+- **Sources:**
+  - [The Definitions of Woman and Man Bill (Party web page (Common Crawl), 2026-09-07)](https://www.nzfirst.nz/definitions-woman-man-bill) — [full text](documents/site-definitions-woman-man-bill.md)
+
+### NZF-A36: Repeal diversity and inclusion requirements in the public service (member's bill)
+
+**Statement:** Repeal diversity and inclusion requirements in the public service (member's bill)  
+*Summary source: archive* · topics: public-sector
+
+- **Why:** The party says public service employment should be based on merit, not DEI targets.
+- **How:** The Public Service (Repeal of Diversity and Inclusiveness Requirements) Amendment Bill (March 2025) would remove those requirements from the Public Service Act.
+- **Sources:**
+  - [Public Service (Repeal of Diversity and Inclusiveness Requirements) Amendment Bill (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/repeal-of-dei-requirements-bill) — [full text](documents/site-repeal-of-dei-requirements-bill.md)
+
+### NZF-A37: Make English an official language of New Zealand (member's bill)
+
+**Statement:** Make English an official language of New Zealand (member's bill)  
+*Summary source: archive* · topics: arts-culture-and-heritage, parliament-and-democracy
+
+- **Why:** The party says the law should be clear about the official status of English.
+- **How:** NZ First's English Language Bill, which would make English an official language, passed its first reading in March 2026.
+- **Sources:**
+  - [English Language Bill passes first reading (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/english-language-bill-passes-first-reading) — [full text](documents/site-english-language-bill-passes-first-reading.md)
+
+### NZF-A38: Require national referendums before conscience-vote issues become law (member's bill)
+
+**Statement:** Require national referendums before conscience-vote issues become law (member's bill)  
+*Summary source: archive* · topics: parliament-and-democracy
+
+- **Why:** The party says conscience issues should be decided by the people, not MPs' conscience votes.
+- **How:** The Conscience Acts Referendums Bill (March 2025) would require a mandatory national referendum before any conscience issue is passed into law.
+- **Sources:**
+  - [The Conscience Acts Referendums Bill (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/conscience-referendums-bill) — [full text](documents/site-conscience-referendums-bill.md)
+
+### NZF-A39: Return fluoridation decisions to local communities by referendum (member's bill)
+
+**Statement:** Return fluoridation decisions to local communities by referendum (member's bill)  
+*Summary source: archive* · topics: public-health, local-government
+
+- **Why:** The party says fluoridation decisions were centralised without community say.
+- **How:** The Fluoridation (Referendum) Legislation Bill (Feb 2025) would repeal the Health (Fluoridation of Drinking Water) Amendment Act 2021 and restore local decision-making through referendums.
+- **Sources:**
+  - [Fluoridation (Referendum) Legislation Bill (Party web page (Common Crawl), 2026-10-11)](https://www.nzfirst.nz/fluoridation-referendum-bill) — [full text](documents/site-fluoridation-referendum-bill.md)
+
+### NZF-A40: Only the official New Zealand flag on government buildings (member's bill)
+
+**Statement:** Only the official New Zealand flag on government buildings (member's bill)  
+*Summary source: archive* · topics: public-sector, arts-culture-and-heritage
+
+- **Why:** The party says government premises should display only the national flag.
+- **How:** The Display of Flags (Government Premises) Bill (July 2025) would make it law that government buildings can only display the official flag of New Zealand.
+- **Sources:**
+  - [Display of Flags (Government Premises) Bill (Party web page (Common Crawl), 2026-07-19)](https://www.nzfirst.nz/display_of_flags_government_premises_bill) — [full text](documents/site-display-of-flags-government-premises-bill.md)
+
 ## Mining, energy & resources
 
 ### POL54661: Return at least 50 percent of mining project royalties to the region where mining took place
@@ -814,7 +931,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that mining plays a vital role in NZ's economy and regions as one of the country's most productive sectors. The benefits of mining do not always stay in these regions, and communities should directly benefit from local mining projects. If mining expands, infrastructure and development in the regions must grow too.
 - **How:** This party would invest 50 percent of mining royalties in the region the resources were extracted from. This money would be spend on infrastructure like flood protection, energy generation transport and housing development and would be backed up by targeted regional investment. This money would also fund Mines Rescue capabilities.
 - **Sources:**
-  - ['Returning 50% of mining royalties to the regions', undated (accessed 13 August 2026)](https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-returning-50-of-mining-royalties-to-the-regions.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014242/https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions)
+  - ['Returning 50% of mining royalties to the regions', undated (accessed 13 August 2026)](https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions) — [full text](documents/site-returning-50-of-mining-royalties-to-the-regions.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014242/https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions)
   - [NZ First Campaign Announcement: 50% Mining Royalties To Be Returned To Regions – Not Wellington (Press release, 2026-03-29)](https://www.scoop.co.nz/stories/PA2603/S00188/nz-first-campaign-announcement-50-mining-royalties-to-be-returned-to-regions-not-wellington.htm) — [full text](documents/2026-03-29-nz-first-campaign-announcement-50-mining-royalties-to-be-ret.md)
   - [SPEECH: Winston Peters - Fair Share For The Regions (Speech, 2026-03-29)](https://www.scoop.co.nz/stories/PA2603/S00187/speech-winston-peters-fair-share-for-the-regions.htm) — [full text](documents/2026-03-29-speech-winston-peters-fair-share-for-the-regions.md)
 
@@ -826,7 +943,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** This party says that NZ needs to gain the maximum benefit from its resources. Knowing which resources are available is a key step for making decisions about future mining projects. Investing in science, technology and the mining workforce will protect the benefits of mining into the future.
 - **How:** This party would invest in advanced core-scanning technology and pay for a modern geological survey to be done throughout NZ. It would also reopen the School of Mines to build the mining workforce and ensure that money made in the mining industry stays in NZ. Building on policies like Fast-track, this would make it easier for new mines to be created.
 - **Sources:**
-  - ['Returning 50% of mining royalties to the regions', undated (accessed 13 August 2026)](https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions) — full text **not retrieved** ([why](documents/not-retrieved-nzfirst-returning-50-of-mining-royalties-to-the-regions.md)) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014242/https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions)
+  - ['Returning 50% of mining royalties to the regions', undated (accessed 13 August 2026)](https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions) — [full text](documents/site-returning-50-of-mining-royalties-to-the-regions.md) · [archived copy cited by policy.nz](https://web.archive.org/web/20260813014242/https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions)
   - [NZ First Campaign Announcement: 50% Mining Royalties To Be Returned To Regions – Not Wellington (Press release, 2026-03-29)](https://www.scoop.co.nz/stories/PA2603/S00188/nz-first-campaign-announcement-50-mining-royalties-to-be-returned-to-regions-not-wellington.htm) — [full text](documents/2026-03-29-nz-first-campaign-announcement-50-mining-royalties-to-be-ret.md)
   - [SPEECH: Winston Peters - Fair Share For The Regions (Speech, 2026-03-29)](https://www.scoop.co.nz/stories/PA2603/S00187/speech-winston-peters-fair-share-for-the-regions.htm) — [full text](documents/2026-03-29-speech-winston-peters-fair-share-for-the-regions.md)
 
@@ -838,6 +955,7 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 - **Why:** The party says New Zealand should identify and use its own energy reserves for fuel security, citing disruption in the Strait of Hormuz.
 - **How:** This party would invest an initial $1 billion over the term of government in a national survey creating one dataset across energy, geothermal and CO2 storage sites, plus a framework to develop those sites and extract the resources. Announced at the party's July 2026 campaign launch.
 - **Sources:**
+  - [Future Proofing our Fuel Security (Party web page (Common Crawl), 2026-08-18)](https://www.nzfirst.nz/future_proofing_our_fuel_security) — [full text](documents/site-future-proofing-our-fuel-security.md)
   - [“Hope, And A Better Tomorrow” (Speech, 2026-07-19)](https://www.scoop.co.nz/stories/PA2607/S00134/hope-and-a-better-tomorrow.htm) — [full text](documents/2026-07-19-hope-and-a-better-tomorrow.md)
   - [Winston Peters' Speech: “New Zealand In Its Eleventh Hour” (Speech, 2026-08-02)](https://www.scoop.co.nz/stories/PA2608/S00010/winston-peters-speech-new-zealand-in-its-eleventh-hour.htm) — [full text](documents/2026-08-02-winston-peters-speech-new-zealand-in-its-eleventh-hour.md)
   - [“Seniors Sole Defender”- Winston Peters (Speech, 2026-08-28)](https://www.scoop.co.nz/stories/PA2608/S00261/seniors-sole-defender-winston-peters.htm) — [full text](documents/2026-08-28-seniors-sole-defender-winston-peters.md)
@@ -869,6 +987,8 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 |---|---|---|---|
 | — | PDF | [Financial Markets Conduct (Preventing Payment Scams) Amendment Bill (draft v1.5, NZ First member's bill)](documents/pdf-financial-markets-conduct-preventing-payment-scamv1-5.md) | [link](https://img.scoop.co.nz/media/pdfs/2602/Financial_Markets_Conduct_Preventing_Payment_Scamv1.5.pdf) |
 | — | PDF | [Accessibility Standards Bill (draft v1.4, NZ First member's bill)](documents/pdf-accessibility-standards-billv1-4.md) | [link](https://img.scoop.co.nz/media/pdfs/2607/Accessibility_Standards_Billv1.4.pdf) |
+| — | PDF | [Fireworks Prohibition Legislation Bill (NZ First member's bill)](documents/pdf-fireworks-prohibition-legislation-bill.md) | [link](https://assets.nationbuilder.com/nzfirst/pages/8447/attachments/original/1762913986/Fireworks_Prohibition_Legislation_Bill.pdf?1762913986) |
+| — | PDF | [Container Return Scheme Bill (draft v1.5, NZ First member's bill)](documents/pdf-container-return-scheme-bill-v1-5-1.md) | [link](https://assets.nationbuilder.com/nzfirst/pages/9701/attachments/original/1778203177/Container_Return_Scheme_Bill-v1.5_%281%29.pdf?1778203177) |
 | 2025-11-04 | Press release | [NZ First Introduces Bill To Ban Public Sales Of Fireworks](documents/2025-11-04-nz-first-introduces-bill-to-ban-public-sales-of-fireworks.md) | [link](https://www.scoop.co.nz/stories/PA2511/S00018/nz-first-introduces-bill-to-ban-public-sales-of-fireworks.htm) |
 | 2025-12-22 | Press release | [India FTA A Bad Deal For New Zealand](documents/2025-12-22-india-fta-a-bad-deal-for-new-zealand.md) | [link](https://www.scoop.co.nz/stories/PA2512/S00181/india-fta-a-bad-deal-for-new-zealand.htm) |
 | 2026-02-12 | Press release | [New Zealand First To Campaign For Referendum On Māori Seats](documents/2026-02-12-new-zealand-first-to-campaign-for-referendum-on-maori-seats.md) | [link](https://www.scoop.co.nz/stories/PA2602/S00071/new-zealand-first-to-campaign-for-referendum-on-maori-seats.htm) |
@@ -892,16 +1012,42 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 | 2026-07-06 | Press release | [NZ First Will Not Let Waikato Farmers Be Buried By Plan Change 1](documents/2026-07-06-nz-first-will-not-let-waikato-farmers-be-buried-by-plan-chan.md) | [link](https://www.scoop.co.nz/stories/PA2607/S00044/nz-first-will-not-let-waikato-farmers-be-buried-by-plan-change-1.htm) |
 | 2026-07-08 | Press release | [Establishing An Accessible New Zealand For Everyone](documents/2026-07-08-establishing-an-accessible-new-zealand-for-everyone.md) | [link](https://www.scoop.co.nz/stories/PA2607/S00069/establishing-an-accessible-new-zealand-for-everyone.htm) |
 | 2026-07-19 | Speech | [“Hope, And A Better Tomorrow”](documents/2026-07-19-hope-and-a-better-tomorrow.md) | [link](https://www.scoop.co.nz/stories/PA2607/S00134/hope-and-a-better-tomorrow.htm) |
+| 2026-07-19 | Party web page (Common Crawl) | [Local Government (Auckland Council) (Disestablishment of Independent Māori Statutory Board) Amendment Bill](documents/site-local-government-auckland-council-disestablishment-of-imsb-amendment-b.md) | [link](https://www.nzfirst.nz/local_government_auckland_council_disestablishment_of_imsb_amendment_bill) |
+| 2026-07-19 | Party web page (Common Crawl) | [The Health (Prostate Cancer Screening Services) Amendment Bill](documents/site-prostate-cancer-screening-bill.md) | [link](https://www.nzfirst.nz/prostate_cancer_screening_bill) |
+| 2026-07-19 | Party web page (Common Crawl) | [NZ First Bill Legislates “New Zealand” As Official Name of Country in Law](documents/site-nzf-bill-legislating-nzs-name.md) | [link](https://www.nzfirst.nz/nzf_bill_legislating_nzs_name) |
+| 2026-07-19 | Party web page (Common Crawl) | [Cash Transactions Protection Bill](documents/site-cash-transactions-protection-bill.md) | [link](https://www.nzfirst.nz/cash_transactions_protection_bill) |
+| 2026-07-19 | Party web page (Common Crawl) | [Display of Flags (Government Premises) Bill](documents/site-display-of-flags-government-premises-bill.md) | [link](https://www.nzfirst.nz/display_of_flags_government_premises_bill) |
 | 2026-08-02 | Press release | [NZFirst Announces Policy To Encourage Kiwis To Have More Kids](documents/2026-08-02-nzfirst-announces-policy-to-encourage-kiwis-to-have-more-kid.md) | [link](https://www.scoop.co.nz/stories/PA2608/S00008/nzfirst-announces-policy-to-encourage-kiwis-to-have-more-kids.htm) |
 | 2026-08-02 | Speech | [Winston Peters' Speech: “New Zealand In Its Eleventh Hour”](documents/2026-08-02-winston-peters-speech-new-zealand-in-its-eleventh-hour.md) | [link](https://www.scoop.co.nz/stories/PA2608/S00010/winston-peters-speech-new-zealand-in-its-eleventh-hour.htm) |
 | 2026-08-16 | Speech | [Winston Peters' Speech: “The Labour, Green, Māori, Opportunity - Antipodean Animal Farm”](documents/2026-08-16-winston-peters-speech-the-labour-green-maori-opportunity-ant.md) | [link](https://www.scoop.co.nz/stories/PA2608/S00133/winston-peters-speech-the-labour-green-maori-opportunity-antipodean-animal-farm.htm) |
 | 2026-08-17 | Press release | [New Zealand First Makes Mill Road Extension A Priority For South Auckland](documents/2026-08-17-new-zealand-first-makes-mill-road-extension-a-priority-for-s.md) | [link](https://www.scoop.co.nz/stories/PO2608/S00121/new-zealand-first-makes-mill-road-extension-a.htm) |
+| 2026-08-18 | Party web page (Common Crawl) | [Breaking up the Gentailers](documents/site-breaking-up-the-gentailers.md) | [link](https://www.nzfirst.nz/breaking_up_the_gentailers) |
+| 2026-08-18 | Party web page (Common Crawl) | [Break up the Supermarket Duopoly](documents/site-break-up-the-supermarket-duopoly.md) | [link](https://www.nzfirst.nz/break_up_the_supermarket_duopoly) |
+| 2026-08-18 | Party web page (Common Crawl) | [Returning 50% of mining royalties to the regions](documents/site-returning-50-of-mining-royalties-to-the-regions.md) | [link](https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions) |
+| 2026-08-18 | Party web page (Common Crawl) | [Establishing a KiwiSaver Generation](documents/site-establishing-a-kiwisaver-generation.md) | [link](https://www.nzfirst.nz/establishing_a_kiwisaver_generation) |
+| 2026-08-18 | Party web page (Common Crawl) | [Backing a New Zealand Owned Bank](documents/site-backing-a-new-zealand-owned-bank.md) | [link](https://www.nzfirst.nz/backing_a_new_zealand_owned_bank) |
+| 2026-08-18 | Party web page (Common Crawl) | [Disestablish Auckland’s‘Independent Maori Statutory Board’](documents/site-disestablish-auckland-s-independent-maori-statutory-board.md) | [link](https://www.nzfirst.nz/disestablish_auckland_s_independent_maori_statutory_board) |
+| 2026-08-18 | Party web page (Common Crawl) | [Referendum on Maori Seats](documents/site-referendum-on-maori-seats.md) | [link](https://www.nzfirst.nz/referendum_on_maori_seats) |
+| 2026-08-18 | Party web page (Common Crawl) | [Establishing a Special Economic Zone at Marsden Point](documents/site-establishing-a-special-economic-zone-at-marsden-point.md) | [link](https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point) |
+| 2026-08-18 | Party web page (Common Crawl) | [Complete the Christchurch Cathedral](documents/site-complete-the-christchurch-cathedral.md) | [link](https://www.nzfirst.nz/complete_the_christchurch_cathedral) |
+| 2026-08-18 | Party web page (Common Crawl) | [Citizen’s Only Voting](documents/site-citizens-only-voting.md) | [link](https://www.nzfirst.nz/citizens_only_voting) |
+| 2026-08-18 | Party web page (Common Crawl) | [Future Proofing our Fuel Security](documents/site-future-proofing-our-fuel-security.md) | [link](https://www.nzfirst.nz/future_proofing_our_fuel_security) |
+| 2026-08-18 | Party web page (Common Crawl) | [The ‘Kiwi Kids Grant’](documents/site-the-kiwi-kids-grant.md) | [link](https://www.nzfirst.nz/the_kiwi_kids_grant) |
 | 2026-08-20 | Press release | [NZ First Launches 'Use It Or Lose It' Dairy Policy](documents/2026-08-20-nz-first-launches-use-it-or-lose-it-dairy-policy.md) | [link](https://www.scoop.co.nz/stories/PA2608/S00184/nz-first-launches-use-it-or-lose-it-dairy-policy.htm) |
 | 2026-08-22 | Speech | [Winston Peters' Speech - “Adding Real Export Value – Use It Or Lose It”](documents/2026-08-22-winston-peters-speech-adding-real-export-value-use-it-or-los.md) | [link](https://www.scoop.co.nz/stories/PA2608/S00205/winston-peters-speech-adding-real-export-value-use-it-or-lose-it.htm) |
 | 2026-08-24 | Press release | [NZFirst Invokes Agree To Disagree On Social Media Ban](documents/2026-08-24-nzfirst-invokes-agree-to-disagree-on-social-media-ban.md) | [link](https://www.scoop.co.nz/stories/PA2608/S00222/nzfirst-invokes-agree-to-disagree-on-social-media-ban.htm) |
 | 2026-08-28 | Speech | [“Seniors Sole Defender”- Winston Peters](documents/2026-08-28-seniors-sole-defender-winston-peters.md) | [link](https://www.scoop.co.nz/stories/PA2608/S00261/seniors-sole-defender-winston-peters.htm) |
 | 2026-09-06 | Speech | [Winston Peters' Speech - “Citizenship And Superannuation”](documents/2026-09-06-winston-peters-speech-citizenship-and-superannuation.md) | [link](https://www.scoop.co.nz/stories/PA2609/S00058/winston-peters-speech-citizenship-and-superannuation.htm) |
 | 2026-09-06 | Press release | [NZ First Campaign Announcement: NZ Super For Citizens Only](documents/2026-09-06-nz-first-campaign-announcement-nz-super-for-citizens-only.md) | [link](https://www.scoop.co.nz/stories/PA2609/S00059/nz-first-campaign-announcement-nz-super-for-citizens-only.htm) |
+| 2026-09-06 | Party web page (Common Crawl) | [The Kiwisaver Generation and BNZ Buy-Back](documents/site-the-kiwisaver-generation-and-bnz-buy-back.md) | [link](https://www.nzfirst.nz/the_kiwisaver_generation_and_bnz_buy_back) |
+| 2026-09-07 | Party web page (Common Crawl) | ['Use It or Lose It' dairy policy](documents/site-use-it-or-lose-it-dairy-policy.md) | [link](https://www.nzfirst.nz/use_it_or_lose_it_dairy_policy) |
+| 2026-09-07 | Party web page (Common Crawl) | [We Will Withdraw From The Paris Accord](documents/site-withdraw-from-paris-accord.md) | [link](https://www.nzfirst.nz/withdraw_from_paris_accord) |
+| 2026-09-07 | Party web page (Common Crawl) | [The $100bn New Zealand Future Fund](documents/site-the-100bn-new-zealand-future-fund.md) | [link](https://www.nzfirst.nz/the_100bn_new_zealand_future_fund) |
+| 2026-09-07 | Party web page (Common Crawl) | [The Container Return Scheme Bill](documents/site-the-container-return-scheme-bill.md) | [link](https://www.nzfirst.nz/the_container_return_scheme_bill) |
+| 2026-09-07 | Party web page (Common Crawl) | [The Definitions of Woman and Man Bill](documents/site-definitions-woman-man-bill.md) | [link](https://www.nzfirst.nz/definitions-woman-man-bill) |
+| 2026-09-07 | Party web page (Common Crawl) | [New Zealand First lodges differing view on the Gene Tech Bill](documents/site-nz-first-lodges-differing-view-on-the-gene-tech-bill.md) | [link](https://www.nzfirst.nz/nz_first_lodges_differing_view_on_the_gene_tech_bill) |
+| 2026-09-07 | Party web page (Common Crawl) | [New Zealand First Pillars](documents/site-nzf-pillars.md) | [link](https://www.nzfirst.nz/nzf_pillars) |
+| 2026-09-07 | Party web page (Common Crawl) | [NZ First launches 'Use It or Lose It' dairy policy](documents/site-nz-first-launches-use-it-or-lose-it-dairy-policy.md) | [link](https://www.nzfirst.nz/nz_first_launches_use_it_or_lose_it_dairy_policy) |
 | 2026-09-11 | Press release | [NZ First Announces Immigration Reform Policies](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md) | [link](https://www.scoop.co.nz/stories/PA2609/S00118/nz-first-announces-immigration-reform-policies.htm) |
 | 2026-09-13 | Speech | [Winston Peters' Speech - "Cool Heads, Rational Judgement"](documents/2026-09-13-winston-peters-speech-cool-heads-rational-judgement.md) | [link](https://www.scoop.co.nz/stories/PA2609/S00134/winston-peters-speech-cool-heads-rational-judgement.htm) |
 | 2026-09-18 | Press release | [Common Sense Must Prevail For Retirement Village Reform](documents/2026-09-18-common-sense-must-prevail-for-retirement-village-reform.md) | [link](https://www.scoop.co.nz/stories/PA2609/S00193/common-sense-must-prevail-for-retirement-village-reform.htm) |
@@ -912,8 +1058,29 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 | 2026-10-09 | Press release | [NZFirst To Ban Public Sales Of Fireworks](documents/2026-10-09-nzfirst-to-ban-public-sales-of-fireworks.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00076/nzfirst-to-ban-public-sales-of-fireworks.htm) |
 | 2026-10-10 | Press release | [NZ First To Increase Working For Families, Minimum Wage](documents/2026-10-10-nz-first-to-increase-working-for-families-minimum-wage.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00084/nz-first-to-increase-working-for-families-minimum-wage.htm) |
 | 2026-10-11 | Press release | [NZFirst To Scrap Accredited Working Visa Model](documents/2026-10-11-nzfirst-to-scrap-accredited-working-visa-model.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00087/nzfirst-to-scrap-accredited-working-visa-model.htm) |
+| 2026-10-11 | Party web page (Common Crawl) | [Our Policy](documents/site-policy.md) | [link](https://www.nzfirst.nz/policy) |
+| 2026-10-11 | Party web page (Common Crawl) | [NZ Super for Citizens Only](documents/site-nz-super-for-citizens-only.md) | [link](https://www.nzfirst.nz/nz_super_for_citizens_only) |
+| 2026-10-11 | Party web page (Common Crawl) | [Immigration Reform Policies](documents/site-immigration-reform-policies.md) | [link](https://www.nzfirst.nz/immigration_reform_policies) |
+| 2026-10-11 | Party web page (Common Crawl) | [The Plan to “Make NZ Healthy”](documents/site-the-plan-to-make-nz-healthy.md) | [link](https://www.nzfirst.nz/the_plan_to_make_nz_healthy) |
+| 2026-10-11 | Party web page (Common Crawl) | [Lowering Tax Rate for SMEs to 20%](documents/site-20-tax-rate-for-smes.md) | [link](https://www.nzfirst.nz/20_tax_rate_for_smes) |
+| 2026-10-11 | Party web page (Common Crawl) | [Ending the Waitangi Make-Work Industry](documents/site-ending-the-waitangi-makework-industry.md) | [link](https://www.nzfirst.nz/ending_the_waitangi_makework_industry) |
+| 2026-10-11 | Party web page (Common Crawl) | [Māori Seats Referendum Bill](documents/site-maori-seats-referendum-bill.md) | [link](https://www.nzfirst.nz/maori_seats_referendum_bill) |
+| 2026-10-11 | Party web page (Common Crawl) | [The Fireworks Prohibition Legislation Bill](documents/site-the-fireworks-prohibition-legislation-bill.md) | [link](https://www.nzfirst.nz/the_fireworks_prohibition_legislation_bill) |
+| 2026-10-11 | Party web page (Common Crawl) | [Financial Markets Conduct (Preventing Payment Scams) Amendment Bill](documents/site-preventing-payment-scams-bill.md) | [link](https://www.nzfirst.nz/preventing_payment_scams_bill) |
+| 2026-10-11 | Party web page (Common Crawl) | [New Zealand First Introduces Bill to Protect Against ‘Digital ID’ Overreach](documents/site-nz-first-introduces-bill-to-protect-against-digital-id-overreach.md) | [link](https://www.nzfirst.nz/nz_first_introduces_bill_to_protect_against_digital_id_overreach) |
+| 2026-10-11 | Party web page (Common Crawl) | [Public Service (Repeal of Diversity and Inclusiveness Requirements) Amendment Bill](documents/site-repeal-of-dei-requirements-bill.md) | [link](https://www.nzfirst.nz/repeal-of-dei-requirements-bill) |
+| 2026-10-11 | Party web page (Common Crawl) | [English Language Bill passes first reading](documents/site-english-language-bill-passes-first-reading.md) | [link](https://www.nzfirst.nz/english-language-bill-passes-first-reading) |
+| 2026-10-11 | Party web page (Common Crawl) | [The Conscience Acts Referendums Bill](documents/site-conscience-referendums-bill.md) | [link](https://www.nzfirst.nz/conscience-referendums-bill) |
+| 2026-10-11 | Party web page (Common Crawl) | [Fluoridation (Referendum) Legislation Bill](documents/site-fluoridation-referendum-bill.md) | [link](https://www.nzfirst.nz/fluoridation-referendum-bill) |
+| 2026-10-11 | Party web page (Common Crawl) | [NZFirst Campaign Announcement: NZ Super for Citizens Only](documents/site-nzfirst-campaign-announcement-nz-super-for-citizens-only.md) | [link](https://www.nzfirst.nz/nzfirst_campaign_announcement_nz_super_for_citizens_only) |
+| 2026-10-11 | Party web page (Common Crawl) | [NZ First Announces Immigration Reform Policies](documents/site-nz-first-announces-immigration-reform-policies.md) | [link](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) |
+| 2026-10-11 | Party web page (Common Crawl) | [NZFirst Campaign Announcement: The Plan to “Make NZ Healthy”](documents/site-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md) | [link](https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy) |
+| 2026-10-11 | Party web page (Common Crawl) | [Winston Peters - “Ending the Waitangi Make-Work Industry”](documents/site-winston-peters-ending-the-waitangi-make-work-industry.md) | [link](https://www.nzfirst.nz/winston_peters_ending_the_waitangi_make_work_industry) |
+| 2026-10-11 | Party web page (Common Crawl) | [Ending the Waitangi Make-Work Industry](documents/site-ending-the-waitangi-make-work-industry.md) | [link](https://www.nzfirst.nz/ending_the_waitangi_make_work_industry) |
 | 2026-10-13 | Press release | [Statement On The Decision By The Minister Of Consumer Affairs Regarding Imported Aluminium Extrusions](documents/2026-10-13-statement-on-the-decision-by-the-minister-of-consumer-affair.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00110/statement-on-the-decision-by-the-minister-of-consumer-affairs-regarding-imported-aluminium-extrusions.htm) |
 | 2026-10-14 | Press release | [NZFirst Policy Announcement: Changes To Fast-Track Residential Approvals](documents/2026-10-14-nzfirst-policy-announcement-changes-to-fast-track-residentia.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00112/nzfirst-policy-announcement-changes-to-fast-track-residential-approvals.htm) |
+| 2026-10-14 | Party web page (Common Crawl) | [Our Members' Bills](documents/site-our-members-bills.md) | [link](https://www.nzfirst.nz/our-members-bills) |
+| 2026-10-14 | Party web page (Common Crawl) | [The Accessibility Standards Bill](documents/site-the-accessibility-standards-bill.md) | [link](https://www.nzfirst.nz/the_accessibility_standards_bill) |
 | 2026-10-15 | Press release | [NZ First Announces Overhaul To Regulate Combat Sports](documents/2026-10-15-nz-first-announces-overhaul-to-regulate-combat-sports.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00133/nz-first-announces-overhaul-to-regulate-combat-sports.htm) |
 | 2026-10-15 | Press release | [NZ First To Increase Funding And Support To NZ Coastguard](documents/2026-10-15-nz-first-to-increase-funding-and-support-to-nz-coastguard.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00135/nz-first-to-increase-funding-and-support-to-nz-coastguard.htm) |
 | 2026-10-16 | Press release | [NZ First Will Immediately Reverse This Week’s Decision By The Minister Of Consumer Affairs](documents/2026-10-16-nz-first-will-immediately-reverse-this-weeks-decision-by-the.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00145/nz-first-will-immediately-reverse-this-weeks-decision-by-the-minister-of-consumer-affairs.htm) |
@@ -922,24 +1089,6 @@ Marketing ‘New Zealand Dairy’, this party sees this policy as a means of mak
 | 2026-10-20 | Press release | [NZFirst To Fund NZs Gaming Industry Sector, Keeping Talent And Companies In NZ](documents/2026-10-20-nzfirst-to-fund-nzs-gaming-industry-sector-keeping-talent-an.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00174/nzfirst-to-fund-nzs-gaming-industry-sector-keeping-talent-and-companies-in-nz.htm) |
 | 2026-10-22 | Press release | [NZFirst Law And Order Policy Announcement: Tougher Sentences, Degrees Of Murder, Smashing Organised Crime](documents/2026-10-22-nzfirst-law-and-order-policy-announcement-tougher-sentences.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00200/nzfirst-law-and-order-policy-announcement-tougher-sentences-degrees-of-murder-smashing-organised-crime.htm) |
 | 2026-10-23 | Press release | [NZFirst Policy Announcement: 50% Targeted Accelerated Depreciation For Manufacturing And Export Sector](documents/2026-10-23-nzfirst-policy-announcement-50-targeted-accelerated-deprecia.md) | [link](https://www.scoop.co.nz/stories/PA2610/S00209/nzfirst-policy-announcement-50-targeted-accelerated-depreciation-for-manufacturing-and-export-sector.htm) |
-| — | Not retrieved | ['Breaking up the Gentailers', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-breaking-up-the-gentailers.md) | [link](https://www.nzfirst.nz/breaking_up_the_gentailers) |
-| — | Not retrieved | ['Break up the Supermarket Duopoly', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-break-up-the-supermarket-duopoly.md) | [link](https://www.nzfirst.nz/break_up_the_supermarket_duopoly) |
-| — | Not retrieved | ['Returning 50% of mining royalties to the regions', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-returning-50-of-mining-royalties-to-the-regions.md) | [link](https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions) |
-| — | Not retrieved | ['Backing a New Zealand Owned Bank', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-backing-a-new-zealand-owned-bank.md) | [link](https://www.nzfirst.nz/backing_a_new_zealand_owned_bank) |
-| — | Not retrieved | ['Establishing a Kiwisaver Generation', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-establishing-a-kiwisaver-generation.md) | [link](https://www.nzfirst.nz/establishing_a_kiwisaver_generation) |
-| — | Not retrieved | ['Disestablish Auckland's 'Independent Maori Statutory Board'', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-disestablish-auckland-s-independent-maori-statutory-board.md) | [link](https://www.nzfirst.nz/disestablish_auckland_s_independent_maori_statutory_board) |
-| — | Not retrieved | ['The 'Kiwi Kids Grant'', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-the-kiwi-kids-grant.md) | [link](https://www.nzfirst.nz/the_kiwi_kids_grant) |
-| — | Not retrieved | ['NZ First launches 'Use It or Lose It' dairy policy', 20 August 2026 (accessed 26 August 2026)](documents/not-retrieved-nzfirst-nz-first-launches-use-it-or-lose-it-dairy-policy.md) | [link](https://www.nzfirst.nz/nz_first_launches_use_it_or_lose_it_dairy_policy) |
-| — | Not retrieved | ['Establishing a Special Economic Zone At Marsden Point', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-establishing-a-special-economic-zone-at-marsden-point.md) | [link](https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point) |
-| — | Not retrieved | ['Complete the Christchurch Cathedral', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-complete-the-christchurch-cathedral.md) | [link](https://www.nzfirst.nz/complete_the_christchurch_cathedral) |
-| — | Not retrieved | ['Referendum on Maori Seats', undated (accessed 13 August 2026)](documents/not-retrieved-nzfirst-referendum-on-maori-seats.md) | [link](https://www.nzfirst.nz/referendum_on_maori_seats) |
-| — | Not retrieved | ['Citizen’s Only Voting', undated (accessed 27 August 2026)](documents/not-retrieved-nzfirst-citizens-only-voting.md) | [link](https://www.nzfirst.nz/citizens_only_voting) |
-| — | Not retrieved | ['NZFirst Campaign Announcement: NZ Super for Citizens Only ', 6 September 2026 (accessed 11 September 2026)](documents/not-retrieved-nzfirst-nzfirst-campaign-announcement-nz-super-for-citizens-only.md) | [link](https://www.nzfirst.nz/nzfirst_campaign_announcement_nz_super_for_citizens_only) |
-| — | Not retrieved | ['NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)](documents/not-retrieved-nzfirst-nz-first-announces-immigration-reform-policies.md) | [link](https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies) |
-| — | Not retrieved | ['NZFirst Campaign Announcement: The Plan to “Make NZ Healthy” ', 20 September 2026 (accessed 21 September 2026)](documents/not-retrieved-nzfirst-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md) | [link](https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy) |
-| — | Not retrieved | ['Lowering Tax Rate for SMEs to 20%', undated (accessed 24 September 2026)](documents/not-retrieved-nzfirst-20-tax-rate-for-smes.md) | [link](https://www.nzfirst.nz/20_tax_rate_for_smes) |
-| — | Not retrieved | ['Winston Peters - “Ending the Waitangi Make-Work Industry”', 27 September 2026 (accessed 27 September 2026)](documents/not-retrieved-nzfirst-winston-peters-ending-the-waitangi-make-work-industry.md) | [link](https://www.nzfirst.nz/winston_peters_ending_the_waitangi_make_work_industry) |
-| — | Not retrieved | ['NZFirst to Campaign on Ending the Waitangi Make-Work Industry', 27 September 2026 (accessed 27 September 2026)](documents/not-retrieved-nzfirst-ending-the-waitangi-make-work-industry.md) | [link](https://www.nzfirst.nz/ending_the_waitangi_make_work_industry) |
 | — | Not retrieved | ['NZFirst to Ban Public Sales of Fireworks', 9 October 2026 (accessed 09 October 2026)](documents/not-retrieved-nzfirst-nzfirst-to-ban-public-sales-of-fireworks.md) | [link](https://www.nzfirst.nz/nzfirst_to_ban_public_sales_of_fireworks) |
 | — | Not retrieved | ['NZ First to Increase Working for Families, Minimum Wage', 10 October 2026 (accessed 12 October 2026)](documents/not-retrieved-nzfirst-nz-first-to-increase-working-for-families-minimum-wage.md) | [link](https://www.nzfirst.nz/nz_first_to_increase_working_for_families_minimum_wage) |
 | — | Not retrieved | ['NZFirst to Scrap Accredited Working Visa Model', 11 October 2026 (accessed 12 October 2026)](documents/not-retrieved-nzfirst-nzfirst-to-scrap-accredited-working-visa-model.md) | [link](https://www.nzfirst.nz/nzfirst_to_scrap_accredited_working_visa_model) |

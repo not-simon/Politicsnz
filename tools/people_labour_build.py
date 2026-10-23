@@ -198,7 +198,8 @@ def build(slug, title=None, roster_entry=None):
         L += [f'<img src="photo.jpg" width="200" align="right" alt="{name}">', '']
     L += ['| | |', '|---|---|']
     ph = p.get('party_history') or []
-    partytxt = 'Labour' if p['party'] == 'labour' else p['party']
+    PN = {'nz-first': 'NZ First', 'te-pati-maori': 'Te Pāti Māori', 'independent': 'Independent', 'opportunity': 'The Opportunity Party (TOP)', 'green': 'Green'}
+    partytxt = 'Labour' if p['party'] == 'labour' else PN.get(p['party'], p['party'])
     if p['party'] != 'labour': partytxt += ' (formerly Labour)'
     L.append(f'| **Party** | {partytxt} |')
     L.append(f"| **Status (Oct 2026)** | {STATUS_LABEL.get(p['status'], p['status'])} |")

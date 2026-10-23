@@ -103,14 +103,20 @@ def write_readme(party, pols, docs, meta, pnz_count):
     if facts:
         Lr += ["- " + f for f in facts] + [""]
     Lr += ["## About this list", "", meta["intro"], ""]
-    Lr += ["**Method.** Pages and PDFs were downloaded on 2026-10-23 by "
+    if not docs:
+        Lr += ["**Method.** Checked the Electoral Commission party register, policy.nz candidate data and web search "
+               "(2026-10-23); no policy source was found to archive.", ""]
+    else:
+      Lr += ["**Method.** Pages and PDFs were downloaded on 2026-10-23 by "
            "[`tools/policies_minor_sites_fetch.py`](../../../tools/policies_minor_sites_fetch.py) / "
            "[`tools/policies_minor_opportunity_fetch.py`](../../../tools/policies_minor_opportunity_fetch.py) "
            "(raw copies in `raw/party-docs/" + party + "/`) and reduced to their main text in [`documents/`](documents/) "
            "(markup and whitespace normalised only). The list and summaries are built by "
            "[`tools/policies_minor_build.py`](../../../tools/policies_minor_build.py) from "
            "[`tools/policies_minor_catalog.py`](../../../tools/policies_minor_catalog.py).", ""]
-    if pnz_count:
+    if not docs:
+        pass
+    elif pnz_count:
         Lr += ["Summaries marked *policy.nz* are policy.nz's neutral \"This party says…\" text, reproduced unchanged. "
                "Summaries marked *archive* were written for this archive from the linked full text: one to three neutral "
                "sentences; \"Why\" is the party's own stated reason, \"How\" what it says it would do.", ""]

@@ -6,8 +6,8 @@
 |---|---|
 | **Party** | Labour |
 | **Status (Oct 2026)** | Deceased |
-| **Born** | {{Birth year|1961}} — Taihape, New Zealand |
-| **Died** | {{Death date and given age|2026|9|30|65|df=y}} |
+| **Born** | 1961 — Taihape, New Zealand |
+| **Died** | 2026-09-30 |
 | **Electorate(s) held** | Te Tai Hauāuru |
 | **Parliaments** | 51, 52, 53, 54 |
 | **First elected** | 2014 |
@@ -44,6 +44,8 @@ _Source: Wikipedia parliamentary-term table._
 | Second Assistant Speaker of the House of Representatives | 8 November 2017 | 26 November 2020 |  |
 
 _Source: Wikipedia infobox._
+
+### Career summary
 
 - **Te Tai Hauāuru MP 2014–2023:** won the seat from the Māori Party after Tariana Turia's retirement; held it in 2017 and in 2020 (majority 1,053 over Debbie Ngarewa-Packer after a recount) ([Stuff](https://www.stuff.co.nz/national/politics/123446749/mori-partysought-recount-sees-fewer-votes-for-coleader-debbie-ngarewapacker)). List MP 2023–2026.
 - Assistant Speaker (2017–2020), Deputy Speaker (2020–2022), and **Speaker of the House, 24 Aug 2022 – Dec 2023** — the second Māori Speaker after Sir Peter Tapsell ([RNZ](https://www.rnz.co.nz/news/political/473418/gaurav-sharma-hijacks-speaker-ceremony-to-accuse-trevor-mallard)).

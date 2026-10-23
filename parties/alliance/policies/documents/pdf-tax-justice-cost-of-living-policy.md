@@ -1,0 +1,166 @@
+---
+title: "Alliance Tax Justice and Cost of Living Policy 2026 (PDF)"
+party: alliance
+source_url: https://allianceparty.nz/wp-content/uploads/2026/09/alliance-tax-justice-cost-of-living-policy-2026.pdf
+retrieved: 2026-10-23
+format: pdf
+fetch_method: curl + pdftotext -layout
+---
+
+# Alliance Tax Justice and Cost of Living Policy 2026 (PDF)
+
+> Archive note: Uploaded 2026-09-06; linked from the matching policy post. Text extracted from the party's PDF with pdftotext; bullets normalised to Markdown, page breaks shown as horizontal rules; images/graphics not reproduced.
+
+## Full text (verbatim)
+
+Alliance Party of Aotearoa New Zealand
+
+Alliance Tax Justice and Cost of Living
+Policy
+A Fair Tax System and Real Relief for Working People
+The Alliance believes that the essentials of living a good life should be readily
+accessible to all.
+Our country taxes income from the very first dollar earned. Not from the first dollar a
+person can spare, and not from the point at which they are getting ahead, but from the
+money that pays for food, power, and rent.
+At the same time, wealth that grows without work is taxed lightly, occasionally, or not at
+all.
+The Alliance rejects the idea that a fair tax system is one which asks the most of those
+with the least.
+We will shift the burden of taxation away from wages and salaries and onto wealth, and
+we will use the proceeds to deliver permanent, universal cost of living relief to every
+person in Aotearoa New Zealand.
+
+1. A Tax-Free Threshold of $20,000
+The Alliance will make the first $20,000 of every person's income completely tax
+free.
+The threshold will be:
+
+- universal, applying to every income earner regardless of occupation, employment
+status, or level of income;
+- automatic, delivered through the pay system rather than by application, means test,
+or annual claim;
+- equal in value, returning the same amount to every person who earns above it;
+- permanent, forming a standing feature of the tax system rather than a temporary
+package; and
+- reviewed over time, so that its value is not eroded by inflation.
+Because the relief is drawn from the bottom of the income scale, every person's income
+passes through it. The cleaner and the surgeon receive exactly the same benefit.
+This is deliberate. A universal threshold creates a shared entitlement, rather than a
+targeted concession, and it cannot be withdrawn as a person's circumstances change.
+
+1
+
+---
+
+2. Why the Burden Has Fallen on Wages
+The current imbalance in taxation is not an accident, and it is not a loophole; it is
+designed this way.
+Income earned through work is taxed at source, every pay, automatically. A wage earner
+has no opportunity to arrange matters otherwise, and no realistic ability to defer,
+restructure, or relocate their income.
+Income and wealth accumulated through property ownership and investments are treated
+differently. Much of it is not taxed as it accrues, and some of it is not taxed at all.
+Inland Revenue's own research into the wealthiest families found that they pay a
+substantially lower effective rate on their economic income than an ordinary wage and
+salary earner does. This is not a claim advanced by the Alliance. It is the finding of the
+tax department itself.
+A tax system which leans this heavily on wages is a political choice. A different
+choice can be made.
+
+3. A Capital Gains Tax
+Aotearoa New Zealand is one of very few developed countries without a broad tax on
+capital gains.
+The Alliance will introduce a broad-based capital gains tax, covering investment
+property, shares, and business assets.
+The family home will be excluded. This is not a tax on the house people live in.
+The principle is straightforward. When a person earns money by working, they pay tax on
+it. When a person makes a gain from an asset, in most cases, they do not. There is no
+principled reason for treating the two differently.
+The Alliance will also be clear about how this tax behaves. A capital gains tax applies
+only to gains that accrue after it begins and only when an asset is sold. It builds gradually
+towards its full value over a number of years. It is a durable, long-term revenue base, not
+an immediate windfall, and we will not present it as one.
+
+4. A Tax on Very Large Accumulations of Wealth
+The Alliance will introduce an annual tax on net wealth above a high threshold of $2
+million, together with a companion tax on assets held in trusts.
+The trust provision is essential rather than incidental. This country has hundreds of
+thousands of trusts. A wealth tax without a trust tax could be arranged around by anyone
+with an accountant and would raise a fraction of what is claimed for it.
+This measure will affect a very small number of people.
+It is not directed at families who have paid off a mortgage over a working lifetime.
+Instead, it focuses on wealth held by those at the very top, which has grown steadily over
+four decades while wages have not kept pace.
+
+2
+
+---
+
+The Alliance will properly resource Inland Revenue to administer and enforce these
+measures. A tax which is legislated but not collected achieves nothing.
+
+5. A Financial Transactions Tax
+The Alliance will introduce a very small levy on financial market transactions,
+including share trading, currency dealing, and derivatives.
+The levy will not apply to the ordinary financial life of households. It will not apply to:
+- wages and salaries being paid;
+- mortgage or rent payments;
+- household bills and everyday purchases; or
+- KiwiSaver and other retirement savings contributions.
+This is a levy on the churn of the financial sector, not on the ordinary business of having a
+bank account.
+The Alliance will design this measure conservatively. Other countries have introduced
+transactions taxes and seen trading activity relocate offshore. A low rate applied to a
+clearly defined domestic base is more likely to raise a reliable sum than an ambitious rate
+applied to activity that can simply move.
+
+6. Rebalancing the Income Tax Scale
+The remaining revenue comes from the shape of the income tax scale itself.
+Our tax scale currently flattens out well below the level of genuinely high incomes. A
+person on a middling professional salary and a person earning several hundred thousand
+dollars contribute at rates far closer together than most people assume.
+The Alliance will:
+- extend the upper rates further down the range of genuinely high incomes;
+- introduce a new top rate above them; and
+- leave the rates applying to low and middle incomes unchanged or reduced.
+Under this policy the overwhelming majority will pay less income tax than they do
+today. Those who pay more are concentrated among the highest earners in the country.
+
+7. What This Policy Does Not Claim
+The Alliance believes political parties should be plain about the limits of their own
+proposals.
+This is a tax policy, not a complete fiscal plan. Our commitments on health, housing,
+and infrastructure are developed and cost determined separately, and this policy does not
+purport to fund them in full.
+This is not an attack on people who have done well. A person who has built a
+business, worked long hours, and become comfortable has done nothing wrong. What
+the Alliance challenges is a structure which asks less of income derived from ownership
+than it asks of income derived from work.
+
+3
+
+---
+
+This is not a promise that no one will pay more. Some people will, and they are
+concentrated at the top of the income and wealth distribution. A rebalancing means
+moving weight from one place to another.
+
+8. Our Commitment
+The Alliance will make the first $20,000 of every person's income tax free, funded
+through a broad capital gains tax, a tax on very large wealth, a levy on financial market
+transactions, and a rebalancing of the income tax scale.
+We believe that:
+- the money people need to live on should not be taxed;
+
+- wealth that accumulates through ownership rather than effort should be
+taxed;
+
+- relief should be universal, not rationed;
+
+- a tax system should ask most of those best able to contribute.
+
+This policy is a practical expression of a simple principle: an economy should serve the
+people who do the work to make it possible.
+
+4

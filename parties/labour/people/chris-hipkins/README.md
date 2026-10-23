@@ -66,6 +66,8 @@ Rank 1 in Chris Hipkins' shadow cabinet:
 
 _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins), list as of 11 March 2026._
 
+### Career summary
+
 **Electorate.** Hipkins won the Labour-held Rimutaka seat (renamed Remutaka in 2020) in 2008 after Paul Swain retired, beating union official Paul Chalmers for the nomination. His majorities: 753 (2008), 3,286 (2011), 6,664 (2014), 8,609 (2017), 8,859 (2023); in 2020 he polled 20,497 votes (official results via [electionresults.govt.nz 2011](http://www.electionresults.govt.nz/electionresults_2011/electorate-43.html), [2014](http://electionresults.govt.nz/electionresults_2014/electorate-44.html), [2017](https://www.electionresults.govt.nz/electionresults_2017/electorate-details-44.html), [2020](https://www.electionresults.govt.nz/electionresults_2020/electorate-details-42.html), [2023](https://www.electionresults.govt.nz/electionresults_2023/electorate-details-42.html)).
 
 **Opposition, 2008–2017.** Spokesperson for internal affairs in his first term; under David Shearer he entered the shadow cabinet as education and state services spokesperson and became Labour's chief whip; he kept education under David Cunliffe, Andrew Little and Jacinda Ardern and was also shadow Leader of the House from 2014 ([Parliament profile](https://www.parliament.nz/en/mps-and-electorates/members-of-parliament/hipkins-chris/)).

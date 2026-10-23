@@ -1,0 +1,2139 @@
+{
+  "_about": "The big issues of the 2026 New Zealand election, in plain English. Issue list chosen from what voters say matters most (Ipsos NZ Issues Monitor May and Sept 2026: cost of living, healthcare, the economy, unemployment, housing, petrol prices, poverty/inequality, crime, climate change, education; tax concern rising) plus the areas where parties' 2026 platforms differ most. Each position is a 1-2 sentence plain summary of that party's published 2026 policy; policy_ids point to parties/<slug>/policies/policies.json (policy.nz POL ids or archive ids) and minor-party positions cite the party's own documents. A party is omitted from an issue when we found no 2026 position on it. Summaries describe what parties propose, not whether it would work.",
+  "as_of": "2026-10-23",
+  "issue_ranking_sources": [
+    "https://www.rnz.co.nz/news/political/596305/fuel-prices-become-fourth-biggest-issue-for-new-zealanders-poll-finds",
+    "https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey",
+    "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election"
+  ],
+  "issues": [
+    {
+      "slug": "cost-of-living",
+      "title": "Cost of living",
+      "icon": "wallet",
+      "why_it_matters": "Prices for things like petrol, power and food have been rising faster than the Reserve Bank's 1-3% target. It is the number one worry for voters this year. Parties disagree on whether the answer is more competition, tax changes or direct help with bills.",
+      "key_facts": [
+        {
+          "fact": "Prices rose 3.7% in the year to the September 2026 quarter (down from 4.1% in June), above the Reserve Bank's 1-3% target.",
+          "date": "2026-10-22",
+          "sources": [
+            "https://www.stats.govt.nz/information-releases/consumers-price-index-september-2026-quarter/",
+            "https://www.interest.co.nz/economy/140742/annual-inflation-hits-37-september-quarter-petrol-continuing-lead-way-followed"
+          ]
+        },
+        {
+          "fact": "Petrol was the biggest driver, up 19.1% on a year earlier in the CPI; electricity was up 9.3% and council rates 6.2%.",
+          "date": "2026-10-22",
+          "sources": [
+            "https://www.interest.co.nz/economy/140742/annual-inflation-hits-37-september-quarter-petrol-continuing-lead-way-followed"
+          ]
+        },
+        {
+          "fact": "Food prices rose 2.4% in the year to September 2026.",
+          "date": "2026-10-16",
+          "sources": [
+            "https://www.thestar.com.my/news/world/2026/10/16/new-zealand-petrol-diesel-prices-rise-in-september"
+          ]
+        },
+        {
+          "fact": "61% of people named cost of living as a top issue facing the country, more than any other issue (Ipsos, May 2026). It was still number one in September.",
+          "date": "2026-05-27",
+          "sources": [
+            "https://www.rnz.co.nz/news/political/596305/fuel-prices-become-fourth-biggest-issue-for-new-zealanders-poll-finds",
+            "https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey"
+          ]
+        },
+        {
+          "fact": "Two companies, Foodstuffs and Woolworths, have about 82% of the supermarket market, which the Commerce Commission calls a duopoly.",
+          "date": "2026-10-23",
+          "sources": [
+            "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election",
+            "https://thespinoff.co.nz/vertical-videos/now-you-know/nzs-supermarket-duopoly-explained"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Split Foodstuffs into two competing companies, hold fuel tax and road user charges until 2028, and keep council rate rises between 2% and 4% a year.",
+          "policy_ids": [
+            "POL55014",
+            "POL54835",
+            "POL54817"
+          ]
+        },
+        "labour": {
+          "summary": "Make price gouging illegal, force the big supermarkets to separate wholesale from retail, cap public transport at $20 a week in the big cities, freeze fuel tax, and crack down on surprise fees and hard-to-cancel subscriptions.",
+          "policy_ids": [
+            "POL55043",
+            "POL55092",
+            "POL54685",
+            "POL54768",
+            "POL55180"
+          ]
+        },
+        "green": {
+          "summary": "Create a government-owned supermarket chain ('KiwiMart') from 120 stores the big two must sell, $2 public transport fares, and make the first $10,000 of income tax-free.",
+          "policy_ids": [
+            "POL55032",
+            "POL55195",
+            "POL54735"
+          ]
+        },
+        "act": {
+          "summary": "Opposes breaking up the supermarkets; instead wants a one-stop consenting body so new competitors can open, and to accept overseas food labels by default.",
+          "policy_ids": [
+            "POL55160",
+            "ACT-A16"
+          ]
+        },
+        "nz-first": {
+          "summary": "Split Foodstuffs into two cooperatives, give the Commerce Commission and Grocery Commissioner more power, and raise the Working for Families in-work tax credit by $70 a week.",
+          "policy_ids": [
+            "POL54658",
+            "POL54659",
+            "POL55257"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "Take GST off food and back Māori-owned supermarkets and food sellers.",
+          "policy_ids": [
+            "POL54938",
+            "POL54650"
+          ]
+        },
+        "opportunity": {
+          "summary": "Give the Commerce Commission stronger powers against monopolies and duopolies, and pay most adults a regular Citizen's Income.",
+          "policy_ids": [
+            "POL54824",
+            "POL54816"
+          ]
+        },
+        "alliance": {
+          "summary": "Make the first $20,000 of income tax-free and bring electricity back into full public ownership to bring bills down.",
+          "policy_ids": [
+            "ALL-01",
+            "ALL-09"
+          ],
+          "sources": [
+            "https://allianceparty.nz/alliance-tax-plan-first-20000-income-tax-free/",
+            "https://allianceparty.nz/alliance-public-ownership-economic-democracy-policy/"
+          ]
+        },
+        "conservative": {
+          "summary": "Lower GST to 12.5% and cut income and company taxes.",
+          "policy_ids": [
+            "CON-01"
+          ],
+          "sources": [
+            "https://conservatives.org.nz/policies/economy-1/"
+          ]
+        },
+        "vision-nz": {
+          "summary": "Make the first $25,000 of income tax-free to give working families relief.",
+          "policy_ids": [
+            "VIS-10"
+          ],
+          "sources": [
+            "https://www.vision.org.nz/visionpolicies"
+          ]
+        }
+      },
+      "sources": [
+        "https://www.stats.govt.nz/information-releases/consumers-price-index-september-2026-quarter/",
+        "https://www.interest.co.nz/economy/140742/annual-inflation-hits-37-september-quarter-petrol-continuing-lead-way-followed",
+        "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election"
+      ]
+    },
+    {
+      "slug": "health",
+      "title": "Health",
+      "icon": "heart",
+      "why_it_matters": "Health is voters' second-biggest worry. Emergency departments are often full and many people struggle to see a GP quickly or cheaply. Parties offer different mixes of free visits, more staff, more medicines funding and new ways of delivering care.",
+      "key_facts": [
+        {
+          "fact": "76.3% of emergency department patients were admitted, discharged or transferred within six hours in April-June 2026, up from 73.9% a year earlier; the government target is 95% by 2030.",
+          "date": "2026-09-23",
+          "sources": [
+            "https://b2bnews.co.nz/news/nz-health-targets-improve-but-ed-waits-stay-stuck/",
+            "https://www.dpmc.govt.nz/sites/default/files/2026-03/gt-factsheet-target-1-dec25.pdf"
+          ]
+        },
+        {
+          "fact": "72.6% of patients waited less than four months for planned (elective) treatment in April-June 2026, up from 63.9% a year earlier.",
+          "date": "2026-09-23",
+          "sources": [
+            "https://b2bnews.co.nz/news/nz-health-targets-improve-but-ed-waits-stay-stuck/"
+          ]
+        },
+        {
+          "fact": "Hospital bed supply fell from 2.7 to 2.5 inpatient beds per 1,000 people between 2014 and 2024, and ED visits rose 21% over a decade (Australasian College for Emergency Medicine).",
+          "date": "2026-09-30",
+          "sources": [
+            "https://www.1news.co.nz/2026/09/30/new-zealands-emergency-departments-in-crisis-report-says/"
+          ]
+        },
+        {
+          "fact": "39% of people named healthcare as a top issue (Ipsos, May 2026), second only to cost of living.",
+          "date": "2026-05-27",
+          "sources": [
+            "https://www.rnz.co.nz/news/political/596305/fuel-prices-become-fourth-biggest-issue-for-new-zealanders-poll-finds"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "An extra $604 million for Pharmac medicines, free bowel screening from age 50 and breast screening to 74 by 2029, free cervical screening, and more training for rural doctors and nurses.",
+          "policy_ids": [
+            "POL55205",
+            "POL55208",
+            "POL55209",
+            "POL55211",
+            "POL54713"
+          ]
+        },
+        "labour": {
+          "summary": "Up to three free GP visits a year (paid for by a capital gains tax), free prescriptions, free cervical screening and maternity scans, a job for every NZ-trained graduate nurse, and an emergency department recovery plan.",
+          "policy_ids": [
+            "POL54669",
+            "POL54670",
+            "POL54665",
+            "POL54689",
+            "POL54686",
+            "POL54820",
+            "LAB-A03"
+          ]
+        },
+        "green": {
+          "summary": "An extra $3 billion a year for health, more free public health services, more Pharmac funding and free mental health services for all communities.",
+          "policy_ids": [
+            "POL55118",
+            "POL55121",
+            "POL55069"
+          ],
+          "sources": [
+            "https://www.newstalkzb.co.nz/news/politics/election-2026-green-party-s-plan-to-transform-nz-s-finances-with-more-tax-spending-debt/"
+          ]
+        },
+        "act": {
+          "summary": "Let pharmacists treat more conditions, lift Pharmac's share of the health budget above 10% by 2033, pay GPs more, and build two cancer centres through public-private partnership.",
+          "policy_ids": [
+            "POL54642",
+            "POL54645",
+            "POL55311",
+            "POL54870"
+          ]
+        },
+        "nz-first": {
+          "summary": "Give GPs more independence and less paperwork, make health coaches part of primary care, and review national nutrition guidelines.",
+          "policy_ids": [
+            "POL55078",
+            "POL55073",
+            "POL55077"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "Invest in Māori health outcomes and whānau-led care for Māori children.",
+          "policy_ids": [
+            "POL55066",
+            "POL55000"
+          ]
+        },
+        "opportunity": {
+          "summary": "A 10-year plan for the health system made with health professionals, lifting health funding to 9% of GDP, and tougher rules on tobacco, vaping, alcohol and unhealthy food.",
+          "policy_ids": [
+            "POL54823",
+            "POL54871",
+            "POL54885"
+          ]
+        },
+        "alliance": {
+          "summary": "Free GP, dental, optical and hearing care through a new public Community Health Service.",
+          "policy_ids": [
+            "ALL-13"
+          ],
+          "sources": [
+            "https://allianceparty.nz/alliance-health-policy-free-gp-dental-optical-audiology/"
+          ]
+        },
+        "vision-nz": {
+          "summary": "Move health money from administration and 'race-based spending' to frontline services such as GPs and specialists.",
+          "policy_ids": [
+            "VIS-31"
+          ],
+          "sources": [
+            "https://www.vision.org.nz/visionpolicies"
+          ]
+        },
+        "te-tai-tokerau-party": {
+          "summary": "An independent, iwi-governed Māori health authority and a bonded scholarship scheme to train more Māori health workers.",
+          "policy_ids": [
+            "TTP-05"
+          ],
+          "sources": [
+            "https://tetaitokerauparty.org.nz/our-policies/"
+          ]
+        },
+        "conservative": {
+          "summary": "Make cutting hospital waiting times the top health priority, paid for with savings from bureaucracy and procurement.",
+          "policy_ids": [
+            "CON-04"
+          ],
+          "sources": [
+            "https://conservatives.org.nz/policies/health/"
+          ]
+        },
+        "womens-rights": {
+          "summary": "Ban puberty blockers and cross-sex hormones for under-18s with 'sex-related distress' and restrict funded gender surgery to over-25s.",
+          "policy_ids": [
+            "WRP-01"
+          ],
+          "sources": [
+            "https://womensrightsparty.nz/policy-proposal/puberty-blockers-hormones-and-surgery/"
+          ]
+        }
+      },
+      "sources": [
+        "https://b2bnews.co.nz/news/nz-health-targets-improve-but-ed-waits-stay-stuck/",
+        "https://www.1news.co.nz/2026/09/30/new-zealands-emergency-departments-in-crisis-report-says/"
+      ]
+    },
+    {
+      "slug": "economy-and-jobs",
+      "title": "Economy and jobs",
+      "icon": "briefcase",
+      "why_it_matters": "Unemployment is at its highest level in about 11 years, and growth has been slow. The government's books are still in deficit. Parties split on whether to cut spending, change taxes or invest more to create jobs.",
+      "key_facts": [
+        {
+          "fact": "Unemployment was 5.6% in the June 2026 quarter (171,000 people), the highest since 2015.",
+          "date": "2026-08-05",
+          "sources": [
+            "https://www.1news.co.nz/2026/08/05/nzs-unemployment-rate-hits-11-year-high-in-june-quarter/",
+            "https://www.stats.govt.nz/information-releases/labour-market-statistics-june-2026-quarter/"
+          ]
+        },
+        {
+          "fact": "The economy grew 0.2% in the June 2026 quarter and 1.7% over the year; GDP per person rose 0.1%.",
+          "date": "2026-09-17",
+          "sources": [
+            "https://www.1news.co.nz/2026/09/17/gdp-economy-grows-02-in-june-quarter/"
+          ]
+        },
+        {
+          "fact": "Treasury's pre-election update (PREFU) forecasts the government's books returning to surplus in 2028/29.",
+          "date": "2026-10-05",
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1733687/labour-s-fiscal-plan-national-s-claims-and-how-labour-is-defending-it"
+          ]
+        },
+        {
+          "fact": "Unemployment rose from fifth to fourth place in voters' list of top concerns (Ipsos, Sept 2026).",
+          "date": "2026-09-25",
+          "sources": [
+            "https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Keep spending tight to return to surplus, double export earnings by 2034 through new trade deals, keep the 'Investment Boost' tax break for business equipment, and cut compliance for small businesses.",
+          "policy_ids": [
+            "POL54725",
+            "POL54712",
+            "POL54711",
+            "NAT-ARC-20",
+            "POL55218"
+          ]
+        },
+        "labour": {
+          "summary": "A 'NZ Future Fund' to invest in New Zealand firms and infrastructure, a $4 billion building programme, faster payment of small-business invoices, more government contracts for local firms, and yearly minimum wage rises.",
+          "policy_ids": [
+            "POL54687",
+            "POL55152",
+            "POL54718",
+            "POL54719",
+            "POL55238"
+          ]
+        },
+        "green": {
+          "summary": "Guarantee a job, training or study place for 16-24-year-olds out of work for six months, create jobs in nature restoration, and make union membership the default for new workers.",
+          "policy_ids": [
+            "POL55254",
+            "POL54787",
+            "POL55016"
+          ]
+        },
+        "act": {
+          "summary": "Cut government spending, freeze the minimum wage for three years, add a lower training wage, and limit personal grievance claims.",
+          "policy_ids": [
+            "POL55268",
+            "POL54990",
+            "POL54993",
+            "POL54997"
+          ]
+        },
+        "nz-first": {
+          "summary": "Cut company tax to 20% for firms with turnover under $30 million, create a special economic zone at Marsden Point, and survey the whole country for minerals.",
+          "policy_ids": [
+            "POL55155",
+            "POL54755",
+            "POL54662"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "Grow the Māori economy, including a $1 billion fund for Māori and community-owned renewable energy.",
+          "policy_ids": [
+            "POL55088",
+            "POL55059"
+          ]
+        },
+        "opportunity": {
+          "summary": "Lift science and innovation funding to 2% of GDP and strengthen competition law to help small businesses.",
+          "policy_ids": [
+            "POL54779",
+            "POL54824"
+          ]
+        },
+        "alliance": {
+          "summary": "Full employment, a 35-hour working week with no loss of pay, and a new 'KiwiWorks' Ministry of Works.",
+          "policy_ids": [
+            "ALL-05"
+          ],
+          "sources": [
+            "https://allianceparty.nz/alliance-full-employment-35-hour-week-workers-rights-policy/",
+            "https://allianceparty.nz/alliance-public-ownership-economic-democracy-policy/"
+          ]
+        },
+        "conservative": {
+          "summary": "Lower personal and company tax rates to encourage business investment.",
+          "policy_ids": [
+            "CON-01"
+          ],
+          "sources": [
+            "https://conservatives.org.nz/policies/economy-1/"
+          ]
+        },
+        "womens-rights": {
+          "summary": "Pay equity in both the public and private sectors, and bring back Fair Pay Agreements.",
+          "policy_ids": [
+            "WRP-13"
+          ],
+          "sources": [
+            "https://womensrightsparty.nz/policy-proposal/pay-equity/"
+          ]
+        }
+      },
+      "sources": [
+        "https://www.1news.co.nz/2026/08/05/nzs-unemployment-rate-hits-11-year-high-in-june-quarter/",
+        "https://www.1news.co.nz/2026/09/17/gdp-economy-grows-02-in-june-quarter/"
+      ]
+    },
+    {
+      "slug": "housing-and-rent",
+      "title": "Housing and rent",
+      "icon": "home",
+      "why_it_matters": "Buying a first home is still out of reach for many people, and rents take a big share of income. House prices have eased a little but remain high. Parties differ on building more public housing, helping first-home buyers, and controlling rents.",
+      "key_facts": [
+        {
+          "fact": "The national median house price was $755,000 in September 2026, down 2.3% on a year earlier; Auckland's was $950,000.",
+          "date": "2026-10-14",
+          "sources": [
+            "https://www.propertybrokers.co.nz/news/measured-national-picture-continues-alongside-strong-regional-results-reinz-stats-september-2026",
+            "https://www.propertynoise.co.nz/reinz-september-2026-nz-property-sales-spring-recovery/"
+          ]
+        },
+        {
+          "fact": "The national median weekly rent on Trade Me was $625 in August 2026, the first year-on-year rise in 18 months.",
+          "date": "2026-09-25",
+          "sources": [
+            "https://www.interest.co.nz/sites/default/files/2026-09/Trade%20Me%20media%20release%20-%20National%20rents%20up%20year-on-year%20for%20the%20first%20time%20in%2018%20months%20as%20Otago%20becomes%20country%27s%20most%20expensive%20region%20.pdf"
+          ]
+        },
+        {
+          "fact": "Homes took a median of 46 days to sell in September 2026, three days longer than a year earlier.",
+          "date": "2026-10-14",
+          "sources": [
+            "https://www.propertybrokers.co.nz/news/measured-national-picture-continues-alongside-strong-regional-results-reinz-stats-september-2026"
+          ]
+        },
+        {
+          "fact": "Housing was the fifth-biggest concern for voters in September 2026 (Ipsos).",
+          "date": "2026-09-25",
+          "sources": [
+            "https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Let more first-home buyers get 5% deposit loans, speed up building consents, change how developers pay for infrastructure, and make granny flats easier to build.",
+          "policy_ids": [
+            "POL54918",
+            "POL55245",
+            "POL54736",
+            "NAT-ARC-10"
+          ]
+        },
+        "labour": {
+          "summary": "At least 6,000 more social homes over four years, a bigger Crown guarantee for community housing builders, and keeping rough sleepers out of the 'move on' law.",
+          "policy_ids": [
+            "POL55151",
+            "LAB-A43",
+            "POL54889"
+          ]
+        },
+        "green": {
+          "summary": "Cap rent rises at 2% a year, a rental warrant of fitness, many more public homes, and reverse interest-deductibility tax breaks for landlords.",
+          "policy_ids": [
+            "POL55082",
+            "POL55079",
+            "POL55081",
+            "POL54731"
+          ]
+        },
+        "act": {
+          "summary": "Let residential landlords offset rental losses against their other income.",
+          "policy_ids": [
+            "POL55286"
+          ]
+        },
+        "nz-first": {
+          "summary": "Put citizens first for social housing and require fast-tracked housing developments to include roads, water and other infrastructure.",
+          "policy_ids": [
+            "POL54962",
+            "POL55305"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "Build more public and private housing, and add a 5% stamp duty on residential sales and taxes on vacant houses and land banking.",
+          "policy_ids": [
+            "POL55071",
+            "POL54943",
+            "POL54942"
+          ]
+        },
+        "opportunity": {
+          "summary": "Reform zoning to allow more homes and use a land value tax to make land banking unprofitable and lower house prices.",
+          "policy_ids": [
+            "POL54853",
+            "POL54777",
+            "POL54873"
+          ]
+        },
+        "alliance": {
+          "summary": "A five-year public building programme led by Kāinga Ora to clear the social housing waitlist, with social rents capped at 25% of income.",
+          "policy_ids": [
+            "ALL-22"
+          ],
+          "sources": [
+            "https://allianceparty.nz/the-right-to-a-roof-alliance-housing-policy/"
+          ]
+        },
+        "nz-outdoors-freedom": {
+          "summary": "Free up land for subdivisions and revise resource-management rules to speed up house building, using a mix of public and private housing.",
+          "policy_ids": [
+            "OFP-07"
+          ],
+          "sources": [
+            "https://freedom.kiwi/housing-policy"
+          ]
+        },
+        "vision-nz": {
+          "summary": "Open government land for affordable housing and allow two homes to be built on a section under planning rules.",
+          "policy_ids": [
+            "VIS-09"
+          ],
+          "sources": [
+            "https://www.vision.org.nz/visionpolicies"
+          ]
+        }
+      },
+      "sources": [
+        "https://www.propertybrokers.co.nz/news/measured-national-picture-continues-alongside-strong-regional-results-reinz-stats-september-2026"
+      ]
+    },
+    {
+      "slug": "tax",
+      "title": "Tax",
+      "icon": "coins",
+      "why_it_matters": "Tax is one of the clearest dividing lines this election. Some parties promise no new taxes; others want new taxes on wealth, property or land to pay for services or income tax cuts. Concern about tax has been rising in polls.",
+      "key_facts": [
+        {
+          "fact": "New Zealand's top income tax rate is 39% on income over $180,000; there is no general capital gains tax, wealth tax or inheritance tax.",
+          "date": "2026-10-23",
+          "sources": [
+            "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals"
+          ]
+        },
+        {
+          "fact": "45% of people say they pay about the right amount of tax and 44% want to pay less (Ipsos, Sept 2026).",
+          "date": "2026-09-25",
+          "sources": [
+            "https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey"
+          ]
+        },
+        {
+          "fact": "In the same survey, 64% supported a 2.5% wealth tax on assets above $10 million (excluding family homes), 45% supported a capital gains tax on property (excluding the family home), and less than a quarter supported a land tax.",
+          "date": "2026-09-25",
+          "sources": [
+            "https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "No new taxes next term; delays any new tax cuts until debt is under control.",
+          "policy_ids": [
+            "POL54733"
+          ],
+          "sources": [
+            "https://assets.national.org.nz/web/prod/National's%20Fiscal%20Plan.pdf",
+            "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election"
+          ]
+        },
+        "labour": {
+          "summary": "A 28% capital gains tax on residential and commercial property (not the family home) to fund GP visits; rules out raising GST in 2027.",
+          "policy_ids": [
+            "POL54670",
+            "POL54769"
+          ]
+        },
+        "green": {
+          "summary": "A 2.5% wealth tax on net assets above $10 million, a 33% tax on inheritances and gifts over $1 million, 33% company tax for the biggest firms, a new rate above $160,000, and the first $10,000 of income tax-free.",
+          "policy_ids": [
+            "POL55135",
+            "POL54729",
+            "POL54653",
+            "POL54737",
+            "POL54735"
+          ]
+        },
+        "act": {
+          "summary": "No tax on KiwiSaver earnings, let landlords offset rental losses, and remove the cap on tax deductions for charitable donations.",
+          "policy_ids": [
+            "POL55194",
+            "POL55286",
+            "POL55225"
+          ]
+        },
+        "nz-first": {
+          "summary": "Cut company tax from 28% to 20% for businesses with turnover under $30 million.",
+          "policy_ids": [
+            "POL55155"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "Make the first $30,000 tax-free, add a 48% rate above $300,000, a wealth tax, a higher company tax rate and a 5% tax on profits sent overseas.",
+          "policy_ids": [
+            "POL54812",
+            "POL54939",
+            "POL54940",
+            "POL54941"
+          ],
+          "sources": [
+            "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf"
+          ]
+        },
+        "opportunity": {
+          "summary": "A 'Tax Reset': a land value tax (1.75% a year on urban land in the full plan, starting at 0.5% on urban land only and phased in over about a decade) funding a Citizen's Income, with income tax realigned to three rates.",
+          "policy_ids": [
+            "POL54777",
+            "POL54816",
+            "OPP-A04",
+            "OPP-A02"
+          ]
+        },
+        "alliance": {
+          "summary": "First $20,000 tax-free, a 2.5% wealth tax above $2 million, a 33% capital gains tax, a financial transactions levy and 30% company tax.",
+          "policy_ids": [
+            "ALL-01",
+            "ALL-02",
+            "ALL-03",
+            "ALL-04"
+          ],
+          "sources": [
+            "https://allianceparty.nz/alliance-tax-plan-first-20000-income-tax-free/"
+          ]
+        },
+        "conservative": {
+          "summary": "Lower income and company taxes, GST at 12.5%, and no income tax on NZ Super.",
+          "policy_ids": [
+            "CON-01",
+            "CON-02"
+          ],
+          "sources": [
+            "https://conservatives.org.nz/policies/economy-1/",
+            "https://conservatives.org.nz/policies/superannuation/"
+          ]
+        },
+        "vision-nz": {
+          "summary": "Make the first $25,000 tax-free and stop taxing superannuation and student loans.",
+          "policy_ids": [
+            "VIS-10",
+            "VIS-11"
+          ],
+          "sources": [
+            "https://www.vision.org.nz/visionpolicies"
+          ]
+        },
+        "nz-loyal": {
+          "summary": "Scrap the current tax system.",
+          "policy_ids": [
+            "NZL-05"
+          ],
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+          ]
+        }
+      },
+      "sources": [
+        "https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey",
+        "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals"
+      ]
+    },
+    {
+      "slug": "energy-and-fuel",
+      "title": "Power bills and fuel prices",
+      "icon": "bolt",
+      "why_it_matters": "A conflict in the Middle East pushed fuel prices up sharply this year, and power bills keep climbing. Fuel prices jumped into voters' top four worries in May. Parties disagree on breaking up the big power companies, public ownership, and how much to rely on solar, oil and gas.",
+      "key_facts": [
+        {
+          "fact": "Petrol prices were 24.3% higher and diesel 55.8% higher in September 2026 than a year earlier, though below their April peak (Stats NZ).",
+          "date": "2026-10-16",
+          "sources": [
+            "https://www.thestar.com.my/news/world/2026/10/16/new-zealand-petrol-diesel-prices-rise-in-september"
+          ]
+        },
+        {
+          "fact": "Electricity prices rose 9.3% in the year to the September 2026 quarter.",
+          "date": "2026-10-22",
+          "sources": [
+            "https://www.interest.co.nz/economy/140742/annual-inflation-hits-37-september-quarter-petrol-continuing-lead-way-followed"
+          ]
+        },
+        {
+          "fact": "Concern about fuel prices jumped 17 points to make it the fourth-biggest issue for voters (Ipsos, May 2026).",
+          "date": "2026-05-27",
+          "sources": [
+            "https://www.rnz.co.nz/news/political/596305/fuel-prices-become-fourth-biggest-issue-for-new-zealanders-poll-finds"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Government-backed loans for home solar and batteries, let people sell their solar power to any buyer, require new data centres to bring their own power, and a back-up power contract for dry years.",
+          "policy_ids": [
+            "POL54922",
+            "POL55188",
+            "POL54702",
+            "POL55186"
+          ]
+        },
+        "labour": {
+          "summary": "Loans and subsidies for home solar (including for low and middle-income households), and closer scrutiny of fuel prices.",
+          "policy_ids": [
+            "POL54717",
+            "LAB-A47",
+            "POL55204"
+          ]
+        },
+        "green": {
+          "summary": "A new publicly owned company, 'Kiwipower', to invest in renewable power, a clean-energy loan scheme, and legal plug-in solar with a renters' right to solar.",
+          "policy_ids": [
+            "POL54766",
+            "POL54744",
+            "POL54758"
+          ]
+        },
+        "act": {
+          "summary": "Opposes breaking up the power companies; wants private investment in transmission, more domestic energy production, and households paid market rates for solar exports.",
+          "policy_ids": [
+            "ACT-A18",
+            "POL55163",
+            "POL55222",
+            "POL55162"
+          ]
+        },
+        "nz-first": {
+          "summary": "Split the big power companies' generation and retail arms, and offer fixed-price contracts for new power stations; invest in oil and gas exploration.",
+          "policy_ids": [
+            "POL54656",
+            "POL54657"
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "A $1 billion fund for Māori and community-owned renewable energy, help for households to buy solar, and a national energy independence plan.",
+          "policy_ids": [
+            "POL55059",
+            "POL55058",
+            "POL55060"
+          ]
+        },
+        "opportunity": {
+          "summary": "Restructure the electricity market to bring prices down and expand the grid to 30GW by 2050.",
+          "policy_ids": [
+            "POL54806",
+            "POL54807"
+          ]
+        },
+        "alliance": {
+          "summary": "Bring the whole electricity system - generation, lines and retail - into public ownership.",
+          "policy_ids": [
+            "ALL-09"
+          ],
+          "sources": [
+            "https://allianceparty.nz/alliance-public-ownership-economic-democracy-policy/"
+          ]
+        },
+        "conservative": {
+          "summary": "Encourage cheap, abundant energy of all kinds, with no subsidies for any form of energy.",
+          "policy_ids": [
+            "CON-13"
+          ],
+          "sources": [
+            "https://conservatives.org.nz/policies/energy/",
+            "https://conservatives.org.nz/policies/climate/"
+          ]
+        },
+        "nz-loyal": {
+          "summary": "Energy independence, including oil and gas.",
+          "policy_ids": [
+            "NZL-03"
+          ],
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+          ]
+        }
+      },
+      "sources": [
+        "https://www.thestar.com.my/news/world/2026/10/16/new-zealand-petrol-diesel-prices-rise-in-september",
+        "https://www.rnz.co.nz/news/political/596305/fuel-prices-become-fourth-biggest-issue-for-new-zealanders-poll-finds"
+      ]
+    },
+    {
+      "slug": "welfare-and-poverty",
+      "title": "Welfare and poverty",
+      "icon": "hands",
+      "why_it_matters": "More children are living without basics like enough food or warm clothes than at any time since 2015. More people are on benefits as unemployment rises. Parties split between tougher rules for beneficiaries and more generous support.",
+      "key_facts": [
+        {
+          "fact": "14.3% of children (about 169,300) lived in material hardship in the year to June 2025, the highest rate Stats NZ has recorded since 2015.",
+          "date": "2026-02-26",
+          "sources": [
+            "https://www.1news.co.nz/2026/02/26/unacceptable-childrens-commissioner-says-child-poverty-progress-has-stalled",
+            "https://www.scoop.co.nz/stories/AK2602/S00608.htm"
+          ]
+        },
+        {
+          "fact": "413,691 people were on a main benefit at the end of June 2026 (12.8% of working-age people), up 1.9% on a year earlier.",
+          "date": "2026-07",
+          "sources": [
+            "https://msd.govt.nz/documents/about-msd-and-our-work/publications-resources/statistics/benefit/2026/benefit-fact-sheet-snapshot-june-2026.pdf"
+          ]
+        },
+        {
+          "fact": "Poverty and inequality was named a top issue by 17% of people (Ipsos, May 2026).",
+          "date": "2026-05-27",
+          "sources": [
+            "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Drug testing for some beneficiaries, lower payments for people on a benefit for more than two years, a 26-week stand-down after leaving a job, and targeted work support for 30,000 jobseekers.",
+          "policy_ids": [
+            "POL55228",
+            "POL55227",
+            "POL55229",
+            "POL55226"
+          ]
+        },
+        "labour": {
+          "summary": "End annual benefit renewals for people with permanent disabilities, and repeal and replace the Disability Support Services Bill.",
+          "policy_ids": [
+            "LAB-A40",
+            "POL55216"
+          ]
+        },
+        "green": {
+          "summary": "Raise benefit payments, make the Best Start payment universal, strengthen Working for Families and expand ACC to cover income support.",
+          "policy_ids": [
+            "POL55132",
+            "POL54948",
+            "POL55137",
+            "POL55136"
+          ]
+        },
+        "act": {
+          "summary": "Tighten medical certificates for health-related benefits, monitor spending of long-term jobseekers, and stop new residents getting benefits for five years.",
+          "policy_ids": [
+            "POL54864",
+            "POL54866",
+            "POL54881"
+          ]
+        },
+        "nz-first": {
+          "summary": "A $5,000-a-year Kiwi Kids Grant for each child's first three years (up to three children), $70 a week more Working for Families, and a 10-year benefit stand-down for new migrants.",
+          "policy_ids": [
+            "POL54746",
+            "POL55257",
+            "POL54965"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "Make the first $30,000 of income tax-free and take GST off food to lift low incomes.",
+          "policy_ids": [
+            "POL54812",
+            "POL54938",
+            "POL55087"
+          ]
+        },
+        "opportunity": {
+          "summary": "Replace most benefits with a Citizen's Income of up to $370 a week for most adults.",
+          "policy_ids": [
+            "POL54816"
+          ]
+        },
+        "alliance": {
+          "summary": "A universal child benefit and a plan to eliminate child poverty by rebuilding universal social security.",
+          "policy_ids": [
+            "ALL-16",
+            "ALL-17"
+          ],
+          "sources": [
+            "https://allianceparty.nz/alliance-plan-to-eliminate-child-poverty/",
+            "https://allianceparty.nz/alliance-calls-for-universal-child-benefit/",
+            "https://allianceparty.nz/alliance-plan-to-rebuild-universal-social-security/"
+          ]
+        },
+        "te-tai-tokerau-party": {
+          "summary": "Wipe about $2 billion of debt low-income whānau owe to MSD and IRD and replace the benefit system with a simpler universal whānau allowance.",
+          "policy_ids": [
+            "TTP-03"
+          ],
+          "sources": [
+            "https://tetaitokerauparty.org.nz/our-policies/"
+          ]
+        }
+      },
+      "sources": [
+        "https://www.1news.co.nz/2026/02/26/unacceptable-childrens-commissioner-says-child-poverty-progress-has-stalled",
+        "https://msd.govt.nz/documents/about-msd-and-our-work/publications-resources/statistics/benefit/2026/benefit-fact-sheet-snapshot-june-2026.pdf"
+      ]
+    },
+    {
+      "slug": "law-and-order",
+      "title": "Law and order",
+      "icon": "shield",
+      "why_it_matters": "Crime and safety matter to many voters, and the current government has passed tougher sentencing and anti-gang laws. The prison population is growing. Parties range from longer sentences and more police to abolishing prisons and focusing on rehabilitation.",
+      "key_facts": [
+        {
+          "fact": "There were 11,240 people in prison in February 2026; the Ministry of Justice projects 15,200 by June 2036 if nothing changes, partly because of recent sentencing law changes.",
+          "date": "2026-06",
+          "sources": [
+            "https://www.justice.govt.nz/about/news-and-media/media-releases/justice-sector-projections-released-june-2026/"
+          ]
+        },
+        {
+          "fact": "Crime was named a top issue by 16% of people (Ipsos, May 2026); voters rated National the party most capable on crime (Ipsos, Sept 2026).",
+          "date": "2026-09-25",
+          "sources": [
+            "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election",
+            "https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "No 'good character' sentence discounts for sex offenders, a clear 'yes' required for consent, no right to silence when a child under 12 is killed, a police team for Auckland public transport, and more prison beds.",
+          "policy_ids": [
+            "POL54926",
+            "POL54925",
+            "POL55322",
+            "POL54978",
+            "POL54705"
+          ]
+        },
+        "labour": {
+          "summary": "A new corporate manslaughter (corporate homicide) offence and an end to military-style 'boot camps' for young offenders.",
+          "policy_ids": [
+            "POL55044",
+            "POL54822"
+          ]
+        },
+        "green": {
+          "summary": "Focus on rehabilitation, end military-style academies, make coercive control a crime, and decriminalise cannabis for personal use.",
+          "policy_ids": [
+            "POL55138",
+            "POL55140",
+            "POL55109",
+            "POL55117"
+          ]
+        },
+        "act": {
+          "summary": "Add burglary to three-strikes sentencing, deport serious offenders who aren't citizens, expand rural policing and use noise cameras against boy racers.",
+          "policy_ids": [
+            "POL54644",
+            "POL54880",
+            "POL54894",
+            "POL55159"
+          ]
+        },
+        "nz-first": {
+          "summary": "Widen the grounds for deporting non-citizen criminals and ban public sales of fireworks.",
+          "policy_ids": [
+            "POL54966",
+            "POL55234"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "Abolish prisons by 2040, replacing them with community-led solutions and restorative justice.",
+          "policy_ids": [
+            "POL55283",
+            "POL55070"
+          ]
+        },
+        "opportunity": {
+          "summary": "More funding for courts and rehabilitation to cut reoffending, and decriminalise drug possession (but not supply).",
+          "policy_ids": [
+            "POL54854",
+            "POL54855"
+          ]
+        },
+        "conservative": {
+          "summary": "A Royal Commission of Inquiry into police performance and misconduct.",
+          "policy_ids": [
+            "CON-06"
+          ],
+          "sources": [
+            "https://conservatives.org.nz/policies/policing/"
+          ]
+        },
+        "legalise-cannabis": {
+          "summary": "Stop prosecuting adults for cannabis and wipe past cannabis convictions.",
+          "policy_ids": [
+            "ALCP-01",
+            "ALCP-05"
+          ],
+          "sources": [
+            "https://www.alcp.org.nz/policy"
+          ]
+        },
+        "te-tai-tokerau-party": {
+          "summary": "Move savings from empty prison beds into hapū-run rehabilitation sanctuaries with compulsory community work.",
+          "policy_ids": [
+            "TTP-04"
+          ],
+          "sources": [
+            "https://tetaitokerauparty.org.nz/our-policies/"
+          ]
+        },
+        "womens-rights": {
+          "summary": "Ban the 'rough sex' defence in murder cases, and replace the Prostitution Reform Act with the 'Nordic model' that criminalises buyers.",
+          "policy_ids": [
+            "WRP-06",
+            "WRP-05"
+          ],
+          "sources": [
+            "https://womensrightsparty.nz/policy-proposal/rough-sex-murder-defence/",
+            "https://womensrightsparty.nz/policy-proposal/prostitution/"
+          ]
+        },
+        "alliance": {
+          "summary": "'Three strikes and into treatment': justice focused on rehabilitation, with no private prisons.",
+          "policy_ids": [
+            "ALL-21"
+          ],
+          "sources": [
+            "https://allianceparty.nz/alliance-justice-policy-three-strikes-into-treatment/"
+          ]
+        }
+      },
+      "sources": [
+        "https://www.justice.govt.nz/about/news-and-media/media-releases/justice-sector-projections-released-june-2026/"
+      ]
+    },
+    {
+      "slug": "climate-and-environment",
+      "title": "Climate and environment",
+      "icon": "leaf",
+      "why_it_matters": "New Zealand has promised to cut greenhouse gases, and farming is the biggest source. The current government has eased some climate rules for farmers. Parties range from scrapping the net-zero target to putting farming into the emissions trading scheme.",
+      "key_facts": [
+        {
+          "fact": "Agriculture makes up about half of New Zealand's gross greenhouse gas emissions.",
+          "date": "2026",
+          "sources": [
+            "https://mpi.govt.nz/science/open-data-and-forecasting/greenhouse-gas-reporting"
+          ]
+        },
+        {
+          "fact": "In October 2025 the government set a new 2050 target to cut biogenic methane (mostly from farm animals) by 14-24% below 2017 levels, replacing the previous 24-47% range, and ruled out a tax on farm methane.",
+          "date": "2025-10-12",
+          "sources": [
+            "https://www.national.org.nz/news/20251012-hon-todd-mcclay-government-sets-methane-targets-for-2050"
+          ]
+        },
+        {
+          "fact": "Voters rated the Greens as most capable on climate change and the environment (Ipsos, Sept 2026).",
+          "date": "2026-09-25",
+          "sources": [
+            "https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Keep farm emissions out of the emissions trading scheme, protect 50% of the ocean area New Zealand controls by 2040, and expand protection in the Hauraki Gulf.",
+          "policy_ids": [
+            "POL55319",
+            "POL55264",
+            "POL55261"
+          ]
+        },
+        "labour": {
+          "summary": "Review the emissions trading scheme, keep backing the Paris Agreement, and work towards a Pacific agreement on climate.",
+          "policy_ids": [
+            "POL54898",
+            "POL55134",
+            "POL55130"
+          ]
+        },
+        "green": {
+          "summary": "Cut gross emissions across all sectors including farming, phase out synthetic nitrogen fertiliser, protect at least 30% of the ocean, and repeal the Fast-track Approvals Act.",
+          "policy_ids": [
+            "POL54833",
+            "POL54831",
+            "POL54740",
+            "POL54741",
+            "POL55095"
+          ]
+        },
+        "act": {
+          "summary": "Repeal the Zero Carbon Act and the net-zero goal, abolish the Climate Change Commission, keep farming out of emissions pricing, and count methane separately from carbon dioxide.",
+          "policy_ids": [
+            "POL55046",
+            "ACT-A04",
+            "POL55054",
+            "POL54667"
+          ]
+        },
+        "nz-first": {
+          "summary": "Expand mining and open conservation land to development, returning half of mining royalties to the regions.",
+          "policy_ids": [
+            "POL54661",
+            "POL54662"
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "Ban seabed mining and invest in climate adaptation for the communities most at risk.",
+          "policy_ids": [
+            "POL54680",
+            "POL54681"
+          ]
+        },
+        "opportunity": {
+          "summary": "Put farming into a strengthened emissions trading scheme, keep the Climate Change Commission, ban seabed mining and build a $5 billion climate-resilience fund.",
+          "policy_ids": [
+            "POL54810",
+            "POL54782",
+            "POL54827",
+            "POL55175"
+          ]
+        },
+        "animal-justice": {
+          "summary": "Move away from animal farming with a farmer-led transition programme, citing livestock's share of emissions and water pollution.",
+          "policy_ids": [],
+          "sources": [
+            "https://animaljustice.org.nz/election-2026/election-manifesto/"
+          ]
+        },
+        "conservative": {
+          "summary": "Leave the Paris Agreement and repeal climate-based laws and taxes.",
+          "policy_ids": [
+            "CON-09"
+          ],
+          "sources": [
+            "https://conservatives.org.nz/policies/climate/"
+          ]
+        },
+        "vision-nz": {
+          "summary": "Leave the Paris Accord.",
+          "policy_ids": [
+            "VIS-25"
+          ],
+          "sources": [
+            "https://www.vision.org.nz/visionpolicies"
+          ]
+        },
+        "nz-loyal": {
+          "summary": "End climate agreements, which it says are 'based on faulty science'.",
+          "policy_ids": [
+            "NZL-02"
+          ],
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+          ]
+        },
+        "nz-outdoors-freedom": {
+          "summary": "Withdraw from the Paris Agreement, focus on flood management and carbon-rich soils, and keep ecosystems free from poisons such as 1080.",
+          "policy_ids": [
+            "OFP-04",
+            "OFP-18"
+          ],
+          "sources": [
+            "https://freedom.kiwi/agriculture-policy",
+            "https://freedom.kiwi/outdoors-recreation-and-wildlife-policy"
+          ]
+        },
+        "alliance": {
+          "summary": "Replace the emissions trading scheme with a carbon tax, apply a strict 'polluter pays' rule, and ban mining on conservation land.",
+          "policy_ids": [
+            "ALL-10",
+            "ALL-11",
+            "ALL-12"
+          ],
+          "sources": [
+            "https://allianceparty.nz/alliance-environment-climate-sustainable-economy-policy/"
+          ]
+        }
+      },
+      "sources": [
+        "https://www.national.org.nz/news/20251012-hon-todd-mcclay-government-sets-methane-targets-for-2050",
+        "https://mpi.govt.nz/science/open-data-and-forecasting/greenhouse-gas-reporting"
+      ]
+    },
+    {
+      "slug": "education",
+      "title": "Schools and education",
+      "icon": "book",
+      "why_it_matters": "The current government has changed the school curriculum and plans to replace NCEA. School attendance has improved but is still well below target. Parties argue about NCEA, school lunches, screens and student debt.",
+      "key_facts": [
+        {
+          "fact": "64.3% of students attended school regularly in Term 2 2026, up from 58.4% a year earlier; the government's target is 80%.",
+          "date": "2026-09",
+          "sources": [
+            "https://www.dpmc.govt.nz/sites/default/files/2026-09/gt-factsheet-target-6-jun26.pdf"
+          ]
+        },
+        {
+          "fact": "Voters rated Labour as most capable on education (Ipsos, Sept 2026).",
+          "date": "2026-09-25",
+          "sources": [
+            "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Replace NCEA with a new qualification, require students to finish Year 11, limit screens for young children, keep the cellphone ban, and extend school lunches to 2029.",
+          "policy_ids": [
+            "POL55174",
+            "POL55259",
+            "POL55050",
+            "NAT-ARC-16",
+            "NAT-ARC-18"
+          ]
+        },
+        "labour": {
+          "summary": "Pause plans to scrap NCEA and set up an independent curriculum council, 1,000 more teacher aides, locally made school lunches, and 10% off eligible graduates' student loans.",
+          "policy_ids": [
+            "LAB-A07",
+            "LAB-A06",
+            "POL55255",
+            "POL55158"
+          ]
+        },
+        "green": {
+          "summary": "Keep and expand free school lunches, free early childhood education, reset the curriculum and NCEA changes, and fees-free tertiary study with universal student allowances.",
+          "policy_ids": [
+            "POL54722",
+            "POL55093",
+            "POL55097",
+            "POL55035"
+          ]
+        },
+        "act": {
+          "summary": "Expand charter schools, give teachers legal power to remove disruptive students, and create a pathway into the trades from school.",
+          "policy_ids": [
+            "ACT-A01",
+            "POL54882",
+            "ACT-A02"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "A Māori Education Authority to run Māori education; it is also campaigning for compulsory te reo Māori in schools.",
+          "policy_ids": [
+            "POL54679"
+          ],
+          "sources": [
+            "https://www.1news.co.nz/2026/10/14/you-poor-thing-six-big-moments-from-the-multi-party-debate/"
+          ]
+        },
+        "opportunity": {
+          "summary": "A 10-year education plan, more staff and support for early childhood education, and rebuilding the school lunch programme.",
+          "policy_ids": [
+            "POL54860",
+            "POL54861",
+            "POL54887"
+          ]
+        },
+        "alliance": {
+          "summary": "Free education from early childhood through to tertiary level.",
+          "policy_ids": [],
+          "sources": [
+            "https://allianceparty.nz/what-we-stand-for/"
+          ]
+        },
+        "vision-nz": {
+          "summary": "An inquiry into falling standards, political neutrality in classrooms, and higher teacher pay.",
+          "policy_ids": [
+            "VIS-16",
+            "VIS-18"
+          ],
+          "sources": [
+            "https://www.vision.org.nz/visionpolicies"
+          ]
+        }
+      },
+      "sources": [
+        "https://www.dpmc.govt.nz/sites/default/files/2026-09/gt-factsheet-target-6-jun26.pdf"
+      ]
+    },
+    {
+      "slug": "te-tiriti-and-maori-issues",
+      "title": "Te Tiriti o Waitangi and Māori issues",
+      "icon": "korowai",
+      "why_it_matters": "How the Treaty of Waitangi is applied in law has been one of the most heated debates of this term. Some parties want to limit Treaty-based and race-based policies; others want Te Tiriti given more legal weight. The future of the Māori seats and the Waitangi Tribunal is also on the ballot.",
+      "key_facts": [
+        {
+          "fact": "ACT's Treaty Principles Bill was voted down 112 to 11 at its second reading on 10 April 2025; only ACT voted for it.",
+          "date": "2025-04-10",
+          "sources": [
+            "https://www.1news.co.nz/2025/04/10/treaty-principles-bill-voted-down-amid-fiery-mp-debate"
+          ]
+        },
+        {
+          "fact": "305,124 Māori voters were on the Māori roll and 255,900 on the general roll (54.4% on the Māori roll) as of 3 August 2026.",
+          "date": "2026-08-05",
+          "sources": [
+            "https://www.teaonews.co.nz/2026/08/05/maori-roll-gains-momentum-as-deadline-looms-after-nationwide-enrolment-push/"
+          ]
+        },
+        {
+          "fact": "Voters rated Te Pāti Māori as the party most capable on Māori issues (Ipsos, Sept 2026).",
+          "date": "2026-09-25",
+          "sources": [
+            "https://www.rnz.co.nz/news/politics/1563852/labour-s-lead-on-top-issues-narrows-as-national-gains-survey"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Voted against the Treaty Principles Bill; in the Herald leaders' debate Luxon suggested he could support a referendum on the Māori seats.",
+          "policy_ids": [],
+          "sources": [
+            "https://www.nzherald.co.nz/nz/politics/election-2026-labours-chris-hipkins-rules-out-greens-te-pati-maori-from-major-ministerial-roles-in-herald-debate/3GBPYMI6TJBKHLVNOSPGY6WTKA/",
+            "https://www.1news.co.nz/2025/04/10/treaty-principles-bill-voted-down-amid-fiery-mp-debate"
+          ]
+        },
+        "labour": {
+          "summary": "Restore Te Tiriti obligations on school boards, restore iwi participation agreements in resource management, and direct 5% of government contracts to Māori businesses.",
+          "policy_ids": [
+            "LAB-A08",
+            "POL55147",
+            "POL55306"
+          ]
+        },
+        "green": {
+          "summary": "Entrench the Māori seats, uphold Te Tiriti across government, $200 million for te reo Māori, and a trust to support marae.",
+          "policy_ids": [
+            "POL54982",
+            "POL55039",
+            "POL54979",
+            "POL54767"
+          ]
+        },
+        "act": {
+          "summary": "Scale back Treaty principles in law, remove ethnicity-based criteria from public services, and abolish the Waitangi Tribunal once historical claims are resolved.",
+          "policy_ids": [
+            "POL54838",
+            "POL54839",
+            "POL54960"
+          ]
+        },
+        "nz-first": {
+          "summary": "A binding referendum on the Māori seats, abolish Auckland's Independent Māori Statutory Board, and replace the Waitangi Tribunal with a Treaty completion commission.",
+          "policy_ids": [
+            "POL54757",
+            "POL54668",
+            "POL55157"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "An independent Te Tiriti Commission, binding Waitangi Tribunal recommendations, a Māori constitutional convention (Matike Mai) and the UN Declaration on the Rights of Indigenous Peoples in practice.",
+          "policy_ids": [
+            "POL54917",
+            "POL54795",
+            "POL54921",
+            "POL54919"
+          ]
+        },
+        "opportunity": {
+          "summary": "Teach Te Tiriti and Aotearoa history in schools, restore pre-2025 customary marine title settings, and not support a Treaty Principles bill.",
+          "policy_ids": [
+            "POL54828",
+            "OPP-A16"
+          ],
+          "sources": [
+            "https://www.1news.co.nz/2026/10/21/opportunity-would-have-walked-away-from-current-coalition/"
+          ]
+        },
+        "te-tai-tokerau-party": {
+          "summary": "Constitutionally protect He Whakaputanga and Te Tiriti, repeal the Regulatory Standards Act, and make Waitangi Tribunal findings binding on the Crown.",
+          "policy_ids": [
+            "TTP-13",
+            "TTP-14"
+          ],
+          "sources": [
+            "https://tetaitokerauparty.org.nz/our-policies/"
+          ]
+        },
+        "conservative": {
+          "summary": "'One people under one law': opposes policies that treat people differently by race or ancestry.",
+          "policy_ids": [
+            "CON-19"
+          ],
+          "sources": [
+            "https://conservatives.org.nz/policies/overview/"
+          ]
+        },
+        "nz-loyal": {
+          "summary": "Scrap all race-based policies.",
+          "policy_ids": [
+            "NZL-06"
+          ],
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+          ]
+        },
+        "vision-nz": {
+          "summary": "End race-based policies and policies it links to the He Puapua report.",
+          "policy_ids": [
+            "VIS-28"
+          ],
+          "sources": [
+            "https://www.vision.org.nz/visionpolicies"
+          ]
+        }
+      },
+      "sources": [
+        "https://www.1news.co.nz/2025/04/10/treaty-principles-bill-voted-down-amid-fiery-mp-debate",
+        "https://www.teaonews.co.nz/2026/08/05/maori-roll-gains-momentum-as-deadline-looms-after-nationwide-enrolment-push/"
+      ]
+    },
+    {
+      "slug": "infrastructure-and-transport",
+      "title": "Infrastructure and transport",
+      "icon": "road",
+      "why_it_matters": "Roads, rail, water pipes, hospitals and schools all need fixing or building, and the bill is huge. Much of what is planned has no money set aside yet. Parties differ on roads versus public transport and on how to pay.",
+      "key_facts": [
+        {
+          "fact": "New Zealand spends over $20 billion a year on infrastructure but gets less for its money than many similar countries (Infrastructure Commission).",
+          "date": "2026-02-17",
+          "sources": [
+            "https://tewaihanga.govt.nz/news-events/national-infrastructure-plan-sets-path-for-next-30-years/"
+          ]
+        },
+        {
+          "fact": "Nearly 12,000 planned infrastructure projects are worth about $275 billion, but more than two-thirds don't yet have full funding.",
+          "date": "2026-02-17",
+          "sources": [
+            "https://www.1news.co.nz/2026/02/17/hospitals-water-roads-what-nzs-new-30-year-infrastructure-plan-means"
+          ]
+        },
+        {
+          "fact": "Economist Cameron Bagrie says every major party is offering too little for roads by not raising fuel taxes, warning of a 'gaping hole' by about 2028.",
+          "date": "2026-10-05",
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1733687/labour-s-fiscal-plan-national-s-claims-and-how-labour-is-defending-it"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Finish the next Roads of National Significance, fund the $800 million Christchurch Northern Motorway extension, finish Auckland's Eastern Busway and remove Auckland level crossings.",
+          "policy_ids": [
+            "POL55177",
+            "POL55201",
+            "POL55301",
+            "POL55300"
+          ]
+        },
+        "labour": {
+          "summary": "Cap public transport fares, spend more on fixing schools and hospitals, and restore cancelled rural school bus routes.",
+          "policy_ids": [
+            "POL54685",
+            "POL55152",
+            "POL55153",
+            "POL55285"
+          ]
+        },
+        "green": {
+          "summary": "Mass rapid transit in the three biggest cities, new intercity passenger rail (about $4 billion), removing Auckland level crossings, and $2 fares.",
+          "policy_ids": [
+            "POL55030",
+            "POL55196",
+            "POL55200",
+            "POL55195"
+          ]
+        },
+        "act": {
+          "summary": "Spend the land transport fund on roads only and require projects to consider a cheaper option.",
+          "policy_ids": [
+            "POL54974",
+            "POL54975"
+          ]
+        },
+        "nz-first": {
+          "summary": "A 12-month commuter rail trial in Canterbury and further south, and make fast-tracked housing include roads and water infrastructure.",
+          "policy_ids": [
+            "POL55310",
+            "POL55305"
+          ]
+        },
+        "opportunity": {
+          "summary": "A funded 30-year infrastructure plan, up to $60 billion of borrowing for it, 60% of spending on maintenance and renewals, and free public transport.",
+          "policy_ids": [
+            "POL54785",
+            "POL54875",
+            "POL54874",
+            "POL54786"
+          ]
+        },
+        "alliance": {
+          "summary": "Public ownership of rail and key ports, and a new Ministry of Works to build infrastructure.",
+          "policy_ids": [
+            "ALL-14",
+            "ALL-26"
+          ],
+          "sources": [
+            "https://allianceparty.nz/alliance-public-ownership-economic-democracy-policy/"
+          ]
+        },
+        "vision-nz": {
+          "summary": "Build roads that cut congestion and commuting times.",
+          "policy_ids": [
+            "VIS-22"
+          ],
+          "sources": [
+            "https://www.vision.org.nz/visionpolicies"
+          ]
+        }
+      },
+      "sources": [
+        "https://tewaihanga.govt.nz/news-events/national-infrastructure-plan-sets-path-for-next-30-years/",
+        "https://www.1news.co.nz/2026/02/17/hospitals-water-roads-what-nzs-new-30-year-infrastructure-plan-means"
+      ]
+    },
+    {
+      "slug": "immigration",
+      "title": "Immigration",
+      "icon": "plane",
+      "why_it_matters": "Many New Zealanders are leaving for Australia while more migrants arrive. Some parties want much tighter rules on visas, benefits and citizenship. Others want easier paths to residency and family visas.",
+      "key_facts": [
+        {
+          "fact": "Net migration added 20,500 people in the year to August 2026, about double the year before but below the long-run average.",
+          "date": "2026-10-14",
+          "sources": [
+            "https://newswire.co.nz/2026/10/new-zealand-net-migration-gain-doubles-20500-august-2026-citizens-leaving/"
+          ]
+        },
+        {
+          "fact": "New Zealand citizens had a net loss of 38,200 people (64,800 left long-term, 26,600 came home), while non-citizens had a net gain of 58,800.",
+          "date": "2026-10-14",
+          "sources": [
+            "https://newswire.co.nz/2026/10/new-zealand-net-migration-gain-doubles-20500-august-2026-citizens-leaving/"
+          ]
+        },
+        {
+          "fact": "59% of people in a Taxpayers' Union-Curia poll favoured limiting general-election voting to citizens; 32% were opposed (August 2026).",
+          "date": "2026-08-20",
+          "sources": [
+            "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Fast-track visas for partners of New Zealand citizens, encourage wealthy investor visa holders to stay, and make new residents wait five years for benefits; keeps the permanent resident visa.",
+          "policy_ids": [
+            "POL55298",
+            "POL55176",
+            "POL55230"
+          ],
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1340334/act-and-nz-first-pitch-tighter-immigration-controls-others-warn-against-anti-immigration-policies"
+          ]
+        },
+        "labour": {
+          "summary": "A citizenship pathway for children of migrants born here, let migrants move between accredited employers, a four-year path to permanent residence, and wider visa-free travel for Pacific Islands Forum countries.",
+          "policy_ids": [
+            "POL54969",
+            "POL54970",
+            "POL54971",
+            "POL55215"
+          ]
+        },
+        "green": {
+          "summary": "A pathway to residency for migrant workers, a higher refugee quota, help for migrant families to get visas, and more visa-free travel for Pacific visitors.",
+          "policy_ids": [
+            "POL55123",
+            "POL55127",
+            "POL55126",
+            "POL55036"
+          ]
+        },
+        "act": {
+          "summary": "Deport serious non-citizen offenders, a $6-a-day infrastructure surcharge on temporary work visas, stronger English requirements, a physical-presence test for residents, and a Rural Workforce Visa.",
+          "policy_ids": [
+            "POL54880",
+            "POL54879",
+            "POL54883",
+            "POL54821",
+            "ACT-A06"
+          ]
+        },
+        "nz-first": {
+          "summary": "Replace the Accredited Employer Work Visa with a shortage-led visa, remove automatic work rights for students, a 10-year benefit stand-down for migrants, a two-year amnesty for overstayers who leave, and higher citizenship fees.",
+          "policy_ids": [
+            "POL55262",
+            "POL54964",
+            "POL54965",
+            "POL54963",
+            "POL54967"
+          ]
+        },
+        "conservative": {
+          "summary": "Shift visas away from unskilled workers towards skilled professionals and entrepreneurs using a stable points system.",
+          "policy_ids": [
+            "CON-05"
+          ],
+          "sources": [
+            "https://conservatives.org.nz/policies/immigration/"
+          ]
+        },
+        "vision-nz": {
+          "summary": "Pause mass immigration and extend the wait for citizenship to 10 years.",
+          "policy_ids": [
+            "VIS-24",
+            "VIS-26"
+          ],
+          "sources": [
+            "https://www.vision.org.nz/visionpolicies"
+          ]
+        }
+      },
+      "sources": [
+        "https://newswire.co.nz/2026/10/new-zealand-net-migration-gain-doubles-20500-august-2026-citizens-leaving/",
+        "https://www.rnz.co.nz/news/politics_election-2026/1340334/act-and-nz-first-pitch-tighter-immigration-controls-others-warn-against-anti-immigration-policies"
+      ]
+    },
+    {
+      "slug": "superannuation-and-retirement",
+      "title": "Superannuation and retirement",
+      "icon": "clock",
+      "why_it_matters": "NZ Super is paid to almost everyone from age 65 and its cost is rising fast as the population ages. Several parties want to change KiwiSaver to boost savings. Others want to change who qualifies for NZ Super, or when.",
+      "key_facts": [
+        {
+          "fact": "NZ Super costs $24.7 billion this financial year (2025/26) and is forecast to reach $31.2 billion in 2029/30 (Budget 2026).",
+          "date": "2026-05-28",
+          "sources": [
+            "https://www.budget.govt.nz/budget/pdfs/releases/l6-willis-government-super-fund-contributions-increase.pdf"
+          ]
+        },
+        {
+          "fact": "The government is forecast to put $3.1 billion into the NZ Superannuation Fund over the next four years; withdrawals are expected from 2054.",
+          "date": "2026-05-28",
+          "sources": [
+            "https://www.budget.govt.nz/budget/pdfs/releases/l6-willis-government-super-fund-contributions-increase.pdf"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Make KiwiSaver compulsory and enrol babies at birth with a $1,500 'Baby Boost', and require retirement villages to repay departing residents within nine months.",
+          "policy_ids": [
+            "POL54734",
+            "POL55089"
+          ],
+          "sources": [
+            "https://assets.national.org.nz/web/prod/National's%20Fiscal%20Plan.pdf"
+          ]
+        },
+        "labour": {
+          "summary": "Make employer KiwiSaver contributions compulsory, more flexible KiwiSaver for workers, and make retirement villages repay residents within three months.",
+          "policy_ids": [
+            "POL54985",
+            "POL55045"
+          ],
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1356180/labour-to-make-employer-contributions-to-kiwisaver-compulsory-if-elected"
+          ]
+        },
+        "green": {
+          "summary": "Return to a 10-year residency requirement for NZ Super and create a state-owned retirement village system.",
+          "policy_ids": [
+            "POL55026",
+            "POL55042"
+          ]
+        },
+        "act": {
+          "summary": "Raise the NZ Super age gradually to 67 by 2035, stop taxing KiwiSaver earnings, and keep payments into the NZ Super Fund suspended.",
+          "policy_ids": [
+            "POL55275",
+            "POL55194",
+            "ACT-A08"
+          ]
+        },
+        "nz-first": {
+          "summary": "Pay NZ Super only to citizens and enrol every newborn citizen in KiwiSaver.",
+          "policy_ids": [
+            "POL54961",
+            "POL54664"
+          ]
+        },
+        "opportunity": {
+          "summary": "Gradually raise KiwiSaver contributions to 6% and make it compulsory; its Citizen's Income would replace current benefits.",
+          "policy_ids": [
+            "POL54818",
+            "POL54816"
+          ]
+        },
+        "alliance": {
+          "summary": "Keep NZ Super universal, raise the couple rate to the legal maximum, end the asset test for rest-home care, and give new KiwiSaver accounts a $10,000 start.",
+          "policy_ids": [
+            "ALL-23"
+          ],
+          "sources": [
+            "https://allianceparty.nz/alliance-retirement-aged-care-kiwisaver-policy/"
+          ]
+        },
+        "conservative": {
+          "summary": "Stop taxing NZ Super, including for people who keep working after 65.",
+          "policy_ids": [
+            "CON-02"
+          ],
+          "sources": [
+            "https://conservatives.org.nz/policies/superannuation/"
+          ]
+        },
+        "vision-nz": {
+          "summary": "Stop taxing superannuation.",
+          "policy_ids": [
+            "VIS-11"
+          ],
+          "sources": [
+            "https://www.vision.org.nz/visionpolicies"
+          ]
+        }
+      },
+      "sources": [
+        "https://www.budget.govt.nz/budget/pdfs/releases/l6-willis-government-super-fund-contributions-increase.pdf"
+      ]
+    },
+    {
+      "slug": "agriculture-and-rural",
+      "title": "Farming and rural New Zealand",
+      "icon": "tractor",
+      "why_it_matters": "Farming, food and forestry earn most of New Zealand's export income. Farmers face rules on water, emissions and land use that parties want to loosen or tighten. Rural communities also care about workers, water storage and services.",
+      "key_facts": [
+        {
+          "fact": "Food and fibre exports were forecast at a record $64.3 billion for the year to June 2026, up 6% (MPI).",
+          "date": "2026-06-16",
+          "sources": [
+            "https://www.ruralnewsgroup.co.nz/rural-news/rural-general-news/nz-primary-sector-exports-record-64-3-billion-2030-forecast"
+          ]
+        },
+        {
+          "fact": "Agriculture produces about half of New Zealand's gross greenhouse gas emissions, and farm emissions are not priced in the emissions trading scheme.",
+          "date": "2026",
+          "sources": [
+            "https://mpi.govt.nz/science/open-data-and-forecasting/greenhouse-gas-reporting",
+            "https://www.national.org.nz/news/20251012-hon-todd-mcclay-government-sets-methane-targets-for-2050"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Keep farm emissions out of the ETS, $300 million of low-cost loans for water storage, national standards for everyday farm activities, and more places on the vet bonding scheme.",
+          "policy_ids": [
+            "POL55319",
+            "POL55240",
+            "NAT-ARC-06",
+            "POL55321"
+          ],
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1803343/national-woos-farmer-vote-with-300m-low-cost-loans-for-water-storage"
+          ]
+        },
+        "labour": {
+          "summary": "Review the emissions trading scheme, including how it affects farming.",
+          "policy_ids": [
+            "POL54898"
+          ]
+        },
+        "green": {
+          "summary": "Phase out synthetic nitrogen fertiliser, cap nitrogen use, ban imported palm kernel feed, and reduce farm emissions.",
+          "policy_ids": [
+            "POL54740",
+            "POL54906",
+            "POL54905",
+            "POL54909"
+          ]
+        },
+        "act": {
+          "summary": "Keep farming out of emissions programmes, a three-year Rural Workforce Visa, accept trusted overseas approvals for farm chemicals, and let routine farm work go ahead without resource consent.",
+          "policy_ids": [
+            "POL55054",
+            "ACT-A06",
+            "ACT-A10",
+            "ACT-A11"
+          ]
+        },
+        "nz-first": {
+          "summary": "Guarantee more milk for New Zealand dairy manufacturers and help small food suppliers get onto supermarket shelves.",
+          "policy_ids": [
+            "POL54754",
+            "POL54660"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "Protect Māori food systems and support on-farm and rural energy generation.",
+          "policy_ids": [
+            "POL54649",
+            "POL55061"
+          ]
+        },
+        "opportunity": {
+          "summary": "Bring farming into a strengthened emissions trading scheme and rewrite gene technology rules.",
+          "policy_ids": [
+            "POL54810",
+            "POL54842"
+          ]
+        },
+        "animal-justice": {
+          "summary": "A farmer-led national programme with transition planning, financial help and debt restructuring for farmers moving to plant-based or other land uses.",
+          "policy_ids": [],
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+          ]
+        },
+        "nz-loyal": {
+          "summary": "'Save our farmers from restrictive regulations'.",
+          "policy_ids": [
+            "NZL-04"
+          ],
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+          ]
+        },
+        "conservative": {
+          "summary": "Oppose converting farmland to carbon forestry and oppose the Gene Technology Bill.",
+          "policy_ids": [
+            "CON-10"
+          ],
+          "sources": [
+            "https://conservatives.org.nz/policies/agriculture/"
+          ]
+        }
+      },
+      "sources": [
+        "https://www.ruralnewsgroup.co.nz/rural-news/rural-general-news/nz-primary-sector-exports-record-64-3-billion-2030-forecast"
+      ]
+    },
+    {
+      "slug": "foreign-affairs-and-defence",
+      "title": "Foreign affairs, trade and defence",
+      "icon": "globe",
+      "why_it_matters": "War in the Middle East and tension in the Pacific have made foreign policy a bigger issue than usual. New Zealand is spending more on defence and signing new trade deals. Parties disagree on Israel and Palestine, AUKUS, foreign aid and military alliances.",
+      "key_facts": [
+        {
+          "fact": "The 2025 Defence Capability Plan commits $12 billion over four years ($9 billion new) and aims to lift defence spending from about 1% to more than 2% of GDP within eight years.",
+          "date": "2025-04-07",
+          "sources": [
+            "https://defence.govt.nz/news/defence-capability-plan-released"
+          ]
+        },
+        {
+          "fact": "New Zealand's free trade agreement with India came into force on 20 October 2026.",
+          "date": "2026-10-20",
+          "sources": [
+            "https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/"
+          ]
+        },
+        {
+          "fact": "Voters rated National as most capable on defence and foreign affairs (Ipsos, Sept 2026).",
+          "date": "2026-09-25",
+          "sources": [
+            "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Pursue trade deals with Europe, South America, Asia and Africa, cut foreign aid outside the Pacific to fund medicines, and ratify the High Seas Biodiversity Treaty.",
+          "policy_ids": [
+            "POL54711",
+            "NAT-ARC-32",
+            "POL55274"
+          ]
+        },
+        "labour": {
+          "summary": "Recognise a Palestinian state, raise foreign aid to 0.7% of GDP, not join AUKUS, and support the India trade deal with conditions.",
+          "policy_ids": [
+            "POL55131",
+            "POL55129",
+            "LAB-A39",
+            "LAB-A28"
+          ]
+        },
+        "green": {
+          "summary": "Recognise Palestine and sanction Israel, rewrite foreign policy to oppose imperialism, and refuse to buy autonomous weapons.",
+          "policy_ids": [
+            "POL55113",
+            "POL55114",
+            "POL55280"
+          ]
+        },
+        "act": {
+          "summary": "Cut foreign aid back to 2017 levels and renegotiate New Zealand's Paris Agreement commitment, or leave it.",
+          "policy_ids": [
+            "POL55266",
+            "ACT-A19"
+          ]
+        },
+        "nz-first": {
+          "summary": "Protect New Zealand-made aluminium with trade barriers; it opposed the India trade deal, calling it \"a bad deal for New Zealand\" that \"gives too much away, especially on immigration\".",
+          "policy_ids": [
+            "POL55308"
+          ],
+          "sources": [
+            "https://www.scoop.co.nz/stories/PA2512/S00181/india-fta-a-bad-deal-for-new-zealand.htm"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "Declare New Zealand militarily neutral, focus the Defence Force on disaster response and the Pacific, and hold war criminals to account.",
+          "policy_ids": [
+            "POL54684",
+            "POL54683",
+            "POL54690"
+          ]
+        },
+        "free-palestine": {
+          "summary": "A single democratic state in Palestine and an independent foreign policy, withdrawing from military and security alliances with the US.",
+          "policy_ids": [
+            "FPP-02",
+            "FPP-05"
+          ],
+          "sources": [
+            "https://palfree.nz/"
+          ]
+        },
+        "alliance": {
+          "summary": "A non-aligned foreign policy centred on the Pacific, support for a strong United Nations and disarmament, and an end to US military and intelligence facilities in New Zealand.",
+          "policy_ids": [
+            "ALL-27"
+          ],
+          "sources": [
+            "https://allianceparty.nz/alliance-foreign-affairs-defence-international-relations-policy/"
+          ]
+        },
+        "nz-loyal": {
+          "summary": "End New Zealand's participation in the UN, WEF and WHO.",
+          "policy_ids": [
+            "NZL-01"
+          ],
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+          ]
+        },
+        "vision-nz": {
+          "summary": "Suspend New Zealand's commitment to UN regulations and leave the Paris Accord.",
+          "policy_ids": [],
+          "sources": [
+            "https://www.vision.org.nz/visionpolicies"
+          ]
+        },
+        "conservative": {
+          "summary": "Review all trade agreements and pursue a neutral foreign policy, with a military focused on support and reconstruction.",
+          "policy_ids": [
+            "CON-18"
+          ],
+          "sources": [
+            "https://www.conservatives.nz/news/new-policies-announcement"
+          ]
+        },
+        "nz-outdoors-freedom": {
+          "summary": "Leave the CPTPP and RCEP trade agreements and pursue 'fair trade' deals country by country.",
+          "policy_ids": [
+            "OFP-06"
+          ],
+          "sources": [
+            "https://freedom.kiwi/agriculture-policy"
+          ]
+        }
+      },
+      "sources": [
+        "https://defence.govt.nz/news/defence-capability-plan-released"
+      ]
+    },
+    {
+      "slug": "democracy-and-government",
+      "title": "Democracy and how government works",
+      "icon": "ballot",
+      "why_it_matters": "Several parties want to change how elections and Parliament work, from voting rules to political donations. This election is the first without same-day enrolment. Some proposals would change who can vote or how MPs are elected.",
+      "key_facts": [
+        {
+          "fact": "You can no longer enrol on election day: enrolment for the 2026 election closes on 25 October 2026, before advance voting starts on 26 October.",
+          "date": "2026",
+          "sources": [
+            "https://elections.nz/assets/2026-General-Election/2026-Factsheet-Make-Sure-Youre-Enrolled-for-the-2026-General-Election-v2.pdf",
+            "https://en.wikipedia.org/wiki/Electoral_Amendment_Act_2025"
+          ]
+        },
+        {
+          "fact": "Turnout at the 2023 election was 78.2% of enrolled voters.",
+          "date": "2023-10-14",
+          "sources": [
+            "https://en.wikipedia.org/wiki/2023_New_Zealand_general_election"
+          ]
+        },
+        {
+          "fact": "17 parties are registered to contest the 2026 party vote.",
+          "date": "2026-10-12",
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+          ]
+        }
+      ],
+      "positions": {
+        "national": {
+          "summary": "Hold referendums on the MMP voting system and on moving to a four-year parliamentary term, and set up an election policy costings unit.",
+          "policy_ids": [
+            "NAT-ARC-33"
+          ],
+          "sources": [
+            "https://www.rnz.co.nz/news/politics/903205/christopher-luxon-promises-mmp-referendum-if-re-elected-winston-peters-calls-it-a-power-grab"
+          ]
+        },
+        "labour": {
+          "summary": "Restore same-day enrolment, let 16 and 17-year-olds vote in local elections, repeal the Regulatory Standards Act, a lobbying register, and an independent body to cost party policies.",
+          "policy_ids": [
+            "POL55190",
+            "POL55189",
+            "LAB-A29",
+            "LAB-A30",
+            "POL54750"
+          ]
+        },
+        "green": {
+          "summary": "Cap political donations at $30,000 and ban company donations, regulate lobbying, expand voting rights, and entrench the Māori seats.",
+          "policy_ids": [
+            "POL54983",
+            "POL54984",
+            "POL55099",
+            "POL54981",
+            "POL54982"
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election"
+          ]
+        },
+        "act": {
+          "summary": "Merge government departments and cut ministers, and remove voting rights from unelected council appointees.",
+          "policy_ids": [
+            "POL54863",
+            "ACT-A03"
+          ]
+        },
+        "nz-first": {
+          "summary": "Only citizens could vote, and a binding referendum on the Māori seats.",
+          "policy_ids": [
+            "POL54759",
+            "POL54757"
+          ]
+        },
+        "te-pati-maori": {
+          "summary": "An independent Commissioner for Te Tiriti o Waitangi to scrutinise laws.",
+          "policy_ids": [
+            "POL54802"
+          ]
+        },
+        "opportunity": {
+          "summary": "Citizens' assemblies for major decisions, a $30,000 donation cap, a lobbying register and a political corruption watchdog.",
+          "policy_ids": [
+            "POL54784",
+            "POL54809",
+            "POL54778",
+            "POL54808"
+          ]
+        },
+        "nz-outdoors-freedom": {
+          "summary": "Direct democracy through binding citizen votes, and make the Bill of Rights supreme law.",
+          "policy_ids": [
+            "OFP-01",
+            "OFP-02"
+          ],
+          "sources": [
+            "https://freedom.kiwi/direct-democracy"
+          ]
+        },
+        "vision-nz": {
+          "summary": "Abolish MMP party lists so only electorate winners sit in Parliament, cut the number of MPs, and add term limits for MPs.",
+          "policy_ids": [
+            "VIS-34",
+            "VIS-35"
+          ],
+          "sources": [
+            "https://www.vision.org.nz/visionpolicies"
+          ]
+        },
+        "animal-justice": {
+          "summary": "Get money out of politics and protect whistleblowers.",
+          "policy_ids": [],
+          "sources": [
+            "https://animaljustice.org.nz/election-2026/election-manifesto/"
+          ]
+        },
+        "nz-loyal": {
+          "summary": "Write a New Zealand constitution and decentralise government.",
+          "policy_ids": [
+            "NZL-07",
+            "NZL-10"
+          ],
+          "sources": [
+            "https://www.rnz.co.nz/news/politics_election-2026/1856067/explainer-what-you-need-to-know-about-the-smaller-political-parties-in-this-year-s-election"
+          ]
+        },
+        "alliance": {
+          "summary": "Lower the MMP threshold to 3.5% and hold a public review towards a written constitution grounded in Te Tiriti.",
+          "policy_ids": [
+            "ALL-24"
+          ],
+          "sources": [
+            "https://allianceparty.nz/alliance-te-tiriti-democracy-constitutional-policy/"
+          ]
+        }
+      },
+      "sources": [
+        "https://elections.nz/assets/2026-General-Election/2026-Factsheet-Make-Sure-Youre-Enrolled-for-the-2026-General-Election-v2.pdf"
+      ]
+    }
+  ]
+}

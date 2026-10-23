@@ -10,7 +10,11 @@
 
 ## Current status
 
-2026 candidate (not previously an MP)
+Labour candidate for Selwyn (electorate only, not on the party list) at the 7 November 2026 election (policy.nz candidate data). Not previously an MP.
+
+## Biography
+
+Gautam came to New Zealand from India more than two decades ago. Her Labour profile says she is a senior business management lecturer at Ara Institute of Canterbury and chairs the Waipapa Papanui-Innes-Central Community Board in Christchurch. ([Labour candidate profile](https://www.labour.org.nz/2026-campaign/our-candidates/dr-sunita-gautam/), self-description; occupation also from the policy.nz questionnaire)
 
 <!-- GENERATED:2026-candidacy START -->
 ## 2026 candidacy
@@ -31,5 +35,6 @@ _Source: candidate questionnaire answers published on [policy.nz](https://policy
 ## Sources
 
 - https://policy.nz/2026/party-vote/parties/labour-party
+- https://www.labour.org.nz/2026-campaign/our-candidates/dr-sunita-gautam/
 
 _Profile compiled 2026-10-23 from the sources above; Wikipedia tables parsed by tools/people_labour_build.py._

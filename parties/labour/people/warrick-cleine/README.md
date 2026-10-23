@@ -10,7 +10,11 @@
 
 ## Current status
 
-2026 candidate (not previously an MP)
+Labour list-only candidate, ranked 30 on the party list at the 7 November 2026 election (policy.nz candidate data). Not previously an MP.
+
+## Biography
+
+No biography was found in Labour's candidate pages, the policy.nz questionnaire or Wikipedia when this profile was compiled; he is a list-only candidate.
 
 <!-- GENERATED:2026-candidacy START -->
 ## 2026 candidacy

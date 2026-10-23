@@ -10,7 +10,7 @@
 | **Electorate(s) held** | Ōhāriu |
 | **Parliaments** | 52, 53, 54 |
 | **First elected** | 2017 |
-| **Key roles** | Labour shadow cabinet #26 (as of 11 Mar 2026): Assistant Speaker of the House of Representatives; Spokesperson for Courts; Spokesperson for Veterans<br>Wellington City Councillor{{br}}for the Takapū/Northern general ward (2026–)<br>Second Assistant Speaker of the House of Representatives (2023–)<br>11th Deputy Speaker of the New Zealand House of Representatives (2022–2023) |
+| **Key roles** | Labour shadow cabinet #26 (as of 11 Mar 2026): Assistant Speaker of the House of Representatives; Spokesperson for Courts; Spokesperson for Veterans<br>Wellington City Councillor for the Takapū/Northern general ward (2026–)<br>Second Assistant Speaker of the House of Representatives (2023–)<br>11th Deputy Speaker of the New Zealand House of Representatives (2022–2023) |
 | **Wikipedia** | [Greg O'Connor (politician)](https://en.wikipedia.org/wiki/Greg_O%27Connor_%28politician%29) |
 
 ## Current status
@@ -37,7 +37,7 @@ _Source: Wikipedia parliamentary-term table._
 
 | Office | From | To | Prime Minister at the time |
 |---|---|---|---|
-| Wellington City Councillor{{br}}for the Takapū/Northern general ward | 22 October 2026 | present |  |
+| Wellington City Councillor for the Takapū/Northern general ward | 22 October 2026 | present |  |
 | Second Assistant Speaker of the House of Representatives | 6 December 2023 | present |  |
 | 11th Deputy Speaker of the New Zealand House of Representatives | 25 August 2022 | 6 December 2023 |  |
 
@@ -52,6 +52,8 @@ Rank 26 in Chris Hipkins' shadow cabinet:
 - Spokesperson for Veterans
 
 _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_Cabinet_of_Chris_Hipkins), list as of 11 March 2026._
+
+### Career summary
 
 - **Ōhāriu MP 2017–2026:** won in 2017 after Peter Dunne withdrew (majority 1,051), then by 11,961 (2020) and 1,260 over Nicola Willis (2023) ([2017](http://www.electionresults.govt.nz/electionresults_2017/electorate-details-36.html); [2020](https://www.electionresults.govt.nz/electionresults_2020/electorate-details-33.html); [2023](https://archive.electionresults.govt.nz/electionresults_2023/electorate-details-33.html)).
 - Chair of the Transport and Infrastructure Committee (2020–2022); **Deputy Speaker** from 25 August 2022; Assistant Speaker in the 54th Parliament, and spokesperson for courts and veterans.

@@ -1,0 +1,201 @@
+---
+title: "Alliance Transport Policy 2026 (PDF)"
+party: alliance
+source_url: https://allianceparty.nz/wp-content/uploads/2026/09/alliance-transport-policy-2026.pdf
+retrieved: 2026-10-23
+format: pdf
+fetch_method: curl + pdftotext -layout
+---
+
+# Alliance Transport Policy 2026 (PDF)
+
+> Archive note: Uploaded 2026-09-12; linked from the matching policy post. Text extracted from the party's PDF with pdftotext; bullets normalised to Markdown, page breaks shown as horizontal rules; images/graphics not reproduced.
+
+## Full text (verbatim)
+
+Alliance Party of Aotearoa New Zealand
+
+Transport Policy
+A Public Transport System for People, Communities, and the
+Environment
+Transport is essential public infrastructure. It underpins economic participation,
+community wellbeing, and national resilience during climate emergencies and global
+disruption.
+The Alliance will establish a 100 percent publicly owned, integrated freight and
+passenger network in which coastal shipping and rail serve as the twin backbones of
+domestic long-distance freight.
+
+1. Public Ownership of Strategic Transport Assets
+The Alliance will return and retain strategic transport assets under full public
+ownership and democratic control, operating them for social, economic, and
+environmental benefit rather than private profit.
+- Rail: the national network, tracks, signalling, rolling stock, and intermodal
+freight terminals.
+- Ports: all sea port infrastructure, with privatisation and contracting out
+prohibited.
+- Aviation and transit: Air New Zealand, moving from majority Crown control to
+full public ownership, together with strategic urban and regional public
+transport systems.
+- Shipping: a newly established State Shipping Line.
+These assets will operate as public services, serving our economic, social, and
+environmental needs rather than maximising returns.
+
+2. Rail and Coastal Shipping as Freight Backbones
+Rail and coastal shipping will be the primary long-distance freight carriers, shifting
+heavy cargo off the highways and reducing emissions, road damage, and deaths.
+- Intermodal freight: coordinated schedules and seamless transfer across rail
+corridors, ports, and coastal shipping.
+- Feeder roading: road freight repositioned as the local, regional, and last-mile
+network.
+
+1
+
+---
+
+- Regional access: upgraded heavy-freight links connecting regional productive
+sectors directly to national networks.
+
+Freight does not move to rail on its own, because the cost of heavy road transport
+falls on the public rather than on the operator and the government will use
+legislation, regulation, and investment to correct that.
+
+3. A State Shipping Line
+Aotearoa New Zealand no longer has a domestic merchant fleet. The last locally
+flagged and crewed container ship left the coastal trade in 2026, the last locally
+crewed coastal cement carrier had gone months earlier, and neither was replaced.
+There is no longer a domestic drydock able to service a vessel of that size.
+We will establish a state-owned shipping line to rebuild domestic maritime capability
+and supply chain resilience.
+- Scheduled and reliable services: regular coastal, trans-Tasman, and
+Pacific regional container and bulk routes.
+- Fuel security: restore dedicated domestic coastal fuel tankers.
+- Emergency resilience: fund an ocean-going emergency salvage tug and
+ensure vessels are available to service isolated regions during civil
+emergencies.
+- Workforce development: domestic vessels flagged here, crewed under
+national collective agreements, and equipped with funded training berths
+for cadets.
+- Maintenance capability: invest in drydock facilities so that a locally flagged
+ship does not have to leave the country for servicing.
+
+4. KiwiPort: A National Port Network
+We will replace destructive and parochial port competition with KiwiPort, a nationally
+coordinated, publicly owned hub-and-spoke network.
+- Hub-and-spoke model: several primary deep-water international hubs,
+connected to regional spoke ports by regular domestic coastal feeders.
+- Capital rationalisation: an end to the duplication of infrastructure between
+competing regional ports.
+- Public ownership: port assets retained under shared municipal, regional, and
+national public control.
+
+5. Cabotage and Supply Chain Strategy
+2
+
+---
+
+We already have cabotage. Section 198 of the Maritime Transport Act 1994 reserves
+coastal cargo for Aotearoa New Zealand ships, and for foreign ships on demise
+charter to a locally based operator who employs the crew under our law. It also
+permits a foreign ship on a continuous international voyage to carry coastal cargo
+where that carriage is incidental to its international journey.
+That third category now carries the majority of our coastal freight. The exception has
+become the rule, and it is why no operator will supply a locally flagged vessel. A ship
+paying New Zealand wages competes for the same cargo against vessels crewed on
+flag-of-convenience terms, for which the coastal leg is marginal revenue on a voyage
+already paid for.
+The Alliance will:
+- close the incidental-carriage exception in section 198(1)(c), ending the
+open-coast policy and reserving domestic sea freight for locally flagged and
+crewed ships;
+- tighten the ministerial authorisation power in section 198(2);
+- require KiwiRail and other state-owned enterprises to use locally flagged and
+crewed vessels for coastal freight;
+- establish a Sea Freight Group, a ministerial council uniting government, cargo
+owners, KiwiPort, and the maritime unions, to drive modal shift;
+- ensure seafarers on our coastal and trans-Tasman services are covered by
+New Zealand or Australian employment standards, not flag-of-convenience
+conditions.
+
+Cabotage governs who may carry coastal freight. It cannot require anyone to send
+freight by sea, and it cannot produce a vessel where no operator will provide one.
+That is why the law and the fleet must be rebuilt together.
+
+6. Public Transport
+The Alliance will establish a fully integrated, quality public transport system covering
+urban and regional Aotearoa New Zealand.
+- Integrated ticketing, timetables, and network planning across modes and
+regions;
+- Affordable and, over time, free public transport;
+- Restored and expanded regional and long-distance passenger rail;
+- Reliable services in smaller centres and rural communities, not only in the
+main cities.
+
+3
+
+---
+
+We will repeal the procurement requirements that force public transport into
+competitive tendering and corporatised operating models, and allow councils to run
+services directly where that delivers better outcomes.
+A greater share of fuel excise and road-user charges will be directed towards public
+and regional transport.
+
+7. Active Transport and Urban Planning
+- Prioritise capital spending on electrified public transit, passenger rail, coastal
+shipping, walking, and cycling.
+- Build separated, safe cycleway and pedestrian networks for everyday travel.
+- Design town planning around accessible public transit rather than private
+vehicle movement and parking.
+
+The objective is to give people a real choice. In much of the country there is currently
+no alternative to the car, and until there is, reducing car use is not a policy but a
+wish.
+
+8. Safety and Worker Protections
+- Direct funding towards evidence-based road and transit safety, speed
+management, and safer infrastructure design.
+- Enforce strict health and safety standards and fair working conditions across
+port, rail, road, and maritime operations, using the Approved Code of Practice
+for Port Operations as the model.
+
+Transport workers will have safe conditions and enforceable employment
+protections. Driver fatigue is a road safety issue as much as an employment one.
+
+9. Accessibility and Partnership
+Transport will be fully funded, affordable, and accessible for low-income households,
+disabled people, young people, older people, and rural communities.
+Accessibility will be built into transport planning from the start rather than added
+afterwards.
+Transport planning will be undertaken in partnership with iwi and hapū, whose
+interests in the network are those of a Te Tiriti partner rather than of a user group.
+
+4
+
+---
+
+10. A National Transport Strategy
+We will replace ad-hoc highway spending with a National Transport Strategy
+assessing projects on decarbonisation, regional employment, resilience, and
+whole-of-life public cost.
+We should not have a transport system in which rail competes against roads, buses
+compete against trains, ports compete against rail, and local councils compete
+against central government for funding.
+
+The Integrated Modal Network
+Each mode has a role in a single network rather than a share of a market.
+- Coastal shipping: primary domestic bulk and container freight between ports.
+- Rail: primary long-distance land freight and inter-regional passenger transport.
+
+- Roads: local, regional feeder, and last-mile freight and vehicle connections.
+
+- Public transit: comprehensive urban, regional, and rural passenger services.
+
+- Active transport: protected walking and cycling routes for short journeys.
+
+- Aviation: publicly owned links between regions and global networks.
+
+A transport system should be judged on affordability, accessibility, regional
+resilience, freight efficiency, emissions reduction, and democratic public control. Not
+on how many lane-kilometres were opened.
+
+5
