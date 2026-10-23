@@ -14,3 +14,6 @@ raw/elections/
 # Large third-party survey datasets (re-downloadable; >100MB GitHub limit)
 raw/compass/cses5_csv/
 raw/**/*.csv
+
+# Saved third-party pages that embed API tokens (triggers GitHub push protection)
+raw/howtovote/map-api/
