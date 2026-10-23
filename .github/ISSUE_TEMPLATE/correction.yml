@@ -1,0 +1,20 @@
+name: Correction
+description: Report something that is wrong, outdated or unfairly worded
+labels: [correction]
+body:
+  - type: input
+    id: where
+    attributes: { label: Where, description: "Page or file (e.g. parties/national/README.md, the Labour party page in the app, question 12 of the quiz)" }
+    validations: { required: true }
+  - type: textarea
+    id: wrong
+    attributes: { label: What it says now }
+    validations: { required: true }
+  - type: textarea
+    id: right
+    attributes: { label: What it should say }
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: Source, description: "Link to the party document, official release or news report that supports the correction" }
+    validations: { required: true }

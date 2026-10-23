@@ -1,0 +1,12 @@
+name: Missing policy or candidate
+description: A 2026 policy, document or candidate that isn't in the archive
+labels: [data]
+body:
+  - type: input
+    id: party
+    attributes: { label: Party }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What's missing, description: "Policy, document or person, with a link to where it's published" }
+    validations: { required: true }
