@@ -2,3 +2,11 @@ node_modules/
 __pycache__/
 *.pyc
 .DS_Store
+# Raw HTML page caches are re-fetchable working files; the extracted verbatim text lives in parties/*/policies/documents/
+raw/**/*.html
+raw/**/*.htm
+raw/**/*.wikitext
+raw/**/*.wiki
+raw/people/
+raw/record/
+raw/elections/
