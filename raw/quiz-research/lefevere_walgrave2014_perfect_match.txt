@@ -1,0 +1,927 @@
+“NOTICE: this is the author’s version of a work that was accepted for publication in Electoral
+Studies. Changes resulting from the publishing process, such as peer review, editing,
+corrections, structural formatting, and other quality control mechanisms may not be reflected
+in this document. Changes may have been made to this work since it was submitted for
+publication. A definitive version is forthcoming in Electoral Studies¨
+ Lefevere, J., & Walgrave, S. (2014). A Perfect Match? The Impact of Statement Selection
+ on Voting Advice Applications’ Ability to Match Voters and Parties. Electoral Studies,
+ 34(4). doi:10.1016/j.electstud.2014.04.002
+                   A Perfect Match? The Impact of Statement Selection on
+
+                Voting Advice Applications’ Ability to Match Voters and Parties
+
+
+
+
+                                           Jonas Lefevere
+
+                                      University of Amsterdam
+
+
+
+                                          Stefaan Walgrave
+
+                                       University of Antwerp
+
+
+
+
+   Abstract
+
+   This study examines how statement selection systematically affects the output of voting
+   advice applications (VAAs). Does the statement selection influence how often voters are
+   matched with parties that ‘should be’ close to them? Our benchmark is a classic account of
+   issue voting, the proximity left-right model. We analyze the Belgian VAA Do the Vote Test
+   and find that the output resembles the left-right model. When more left-right statements are
+   included, more left-wing voters get the advice to vote for left-wing parties and the same is
+   true on the right, while simultaneously advantaging parties with more extreme positions on
+   this dimension. We also analyze issue saliency and find that parties are disadvantaged when
+   more statements about salient issues are included. These findings imply tough choices for
+   VAA builders.
+
+
+   Keywords: voting advice application, statement selection, issue voting, political parties
+
+
+
+
+                                                  1
+Introduction
+
+Voting Advice Applications (VAAs) have enjoyed increasing popularity in Western Europe
+(Cedroni & Garzia, 2010). These on-line tools provide citizens with voting advice based on a
+comparison between the respondents’ and the parties’ opinion on a number of actual policy
+statements. Their popularity has spurred debate among political scientists about their
+methodology and the validity of their advice. Most debates concern the way in which party
+positions are determined and the answers voters can give (agree/disagree or a scale).
+Surprisingly, the elements that are central to all VAAs, the statements, have received less
+attention.
+           Prior research has found that statement selection—the set of statements presented to
+parties and voters—has consequences for the advice users get (Walgrave, Nuytemans, &
+Pepermans, 2009). Statement selection makes a difference. This paper goes further and
+gauges which features of a specific selection of statements matter for which parties, and how
+these interact with features of users and parties. We examine whether some parties benefit
+from a given selection of statements (more voters are given the message that the party
+matches their preferences) while others stand to lose (more voters get the signal that the party
+is a bad match). We also examine how statement selection affects the matching of specific
+voters to specific parties.
+           To accomplish this task, we need a benchmark. Even without a benchmark we could
+still compare aggregate VAA outputs with the actual election results, for example, and assess
+how parties’ aggregate scores in VAAs relying on different statement selections relate to their
+actual electoral strength. However, since VAAs are exclusively geared towards issues and
+ignore all other voter motives, using actual election results as a benchmark is not a good idea.
+We rely on a classic mainstream theory of issue voting: the proximity model. It provides
+hypotheses about which parties should gain/lose with a specific batch of statements and
+generates expectations about which type of voter is matched with which type of party by
+which type of statement selection. Since many VAAs include issue salience—the importance
+of an issue to either voters or parties—in their calculations we also test its impact on VAA
+results.
+           We use data from a 2007 real-world VAA (Do the Vote Test) created in the Flemish
+region of Belgium and sponsored by the public broadcaster VRT. The final VAA consisted of
+36 statements, but the builders tested a total of 50 statements. In this paper, out of the initial
+50 statements, we take a random sample of 500 statement selections each consisting of 36
+
+                                                  2
+statements. Drawing on a sample of Belgian voters who took a survey answering all 50 issue
+statements we test to what extent statement selection makes a difference for the different
+Belgian (Flemish) parties and how statement selection affects the matching of voters to
+parties.
+
+
+1. Statement selection in VAAs
+Because they provide the information needed to match voters to parties, statements are the
+building blocks of all VAA calculations. But research on their effect is scarce. Statement
+selection has an effect on individual results as well as on the aggregate output across all users.
+           VAAs differ in the number of statements upon which they calculate their output
+(Wagner & Ruusuvirta, 2012). However, to select which statements are used, different criteria
+can be used. Statements should be clear and unambiguous. VAA builders agree that
+statements should cover current political debates. Also, since statements should discriminate
+between parties, it is useless to incorporate statements on which all parties (dis)agree.
+Furthermore, VAA builders aim for statements that are dispersed across issue domains.
+Finally, VAA builders also, implicitly or explicitly, link their selection to a theoretical issue-
+space defined by several dimensions. All statement selection choices are bound to have an
+effect on the output. Depending on the criterion – distinguishing parties from one another,
+preferring statements that load on a dimension, or another consideration – the statement
+selection will be different.
+           In the only academic publication on the subject, based on the same Belgian VAA we
+study here, Walgrave et al. (2009) show that VAA output differs greatly depending on the
+selection of statements, with parties receiving an ‘advice’ seven times as often in one batch of
+statements as in another. Some of these variations are undoubtedly random, since adding or
+removing any statement is bound to affect the output. However, in this study we depart from
+the idea that certain statement selection properties systematically (dis)advantage certain
+parties and that some are better in matching specific voters to specific parties. Walgrave et al.
+(2009) found that statement selection matters but did not specify which characteristics of
+statement selections lead to advantages or disadvantages for which parties, nor did they
+examine whether statement selections differ in their capacity to connect voters to the ‘correct’
+party.
+
+
+
+
+                                                 3
+2. Proximity voting and the left-right dimension
+In investigating the effect of statement selection, we draw on the proximity model of voting.
+The proximity model positions voters and parties on an underlying dimension and assumes
+that issue positions of parties give voters cues about parties’ positions on that dimension.
+Voters minimize the distance between themselves and their party and cast a ballot for the
+closest party (Enelow & Hinich, 1984; Henning & Hinich, 2007; Merrill & Grofman, 1997).
+Most VAAs emulate models of proximity voting (Wagner & Ruusuvirta, 2012). The more
+statements a voter and party agree upon, the smaller the distance and the higher the score of
+that party for that voter.
+        The left-right dimension is familiar to many voters and is the key cleavage in most
+party systems. Voters and parties can easily be positioned on it (Fuchs & Klingemann, 1990;
+Huber & Powell, 1994). The left-right dimension is often said to consist of two sub-
+dimensions. The first is the socio-economic left-right dimension (Lane & Ersson, 1987). It has
+been supplemented with a new dimension that does not revolve around economic growth, but
+rather opposes supporters and critics of post-materialist values such as self-actualization,
+global responsibility, and aesthetic needs (Inglehart, 1990). Given various names (Dalton,
+1996; Kitschelt, 1994), we define this second dimension as cultural left-right (Hooghe,
+Marks, & Wilson, 2002).
+        Many parties are rooted in these left-right cleavages; their electoral fate depends on
+the vividness of ‘their’ conflict. When more statements in a VAA are relevant to the
+dimension on which the party holds a strong—a clear and extreme—position, the party should
+score higher. So, if the left-right cleavage, socio-economically or culturally, is a party’s core
+business, we expect it to fare better when more statements deal with it. Note that VAA
+builders are constrained by a limited number of statements. Including more left-right
+statements results in fewer statements on other dimensions (e.g., in the Belgian context, there
+is the linguistic cleavage between Flemings and Francophones or the old cleavage between
+Catholics and freethinkers). In light of these considerations, our initial hypotheses can be
+formulated as follows:
+
+
+        H1a: Parties holding more extreme economic left-right positions are favored by
+        statement selections with more economic left-right statements.
+        H1b: Parties holding more extreme cultural left-right positions are favored by
+        statement selections with more cultural left-right statements.
+
+                                                4
+       The share of left-right statements in a VAA affects not only the aggregate score of
+parties but also the extent to which VAAs manage to link left- or right-wing voters to left- or
+right-wing parties. Respondents’ positions in VAAs are often internally inconsistent (citation
+removed). Voters oppose increasing taxes and at the same time refuse to accept budget cuts.
+Parties, in contrast, have to deal with trade-offs and need to present a balanced program as
+they are subject to public scrutiny. Respondents can simply take the best of both worlds and
+not align themselves with one side. The inclusion of more left-right statements should
+therefore lead to a higher score of left- or right-wing parties among clearly left- and right-
+wing voters. More left-right statements should increase a VAA’s ability to match left-wing
+voters to left-wing parties, and the same applies to right-wing voters and parties.
+
+
+       H2a: In statement selections with more economic left-right statements, economic left-
+       wing parties score higher among economic left-wing voters and economic right-wing
+       parties score higher among economic right-wing voters.
+       H2b: In statement selections with more cultural left-right statements, cultural left-
+       wing parties score higher among cultural left-wing voters and cultural right-wing
+       parties score higher among cultural right-wing voters.
+
+
+3. Issue salience
+Most VAAs allow users to indicate which issues are especially important to them and
+statements on those issues are given greater weight. Some VAAs also weight statements on
+the parties’ side, on the basis, for example, of party manifestos. If parties devote a great deal
+of attention to an issue, then the agreement with voters on a statement covering it will have a
+greater weight compared to statements dealing with secondary issues. Hence, VAAs often
+incorporate aspects of the issue salience model. The issue salience (or issue ownership) model
+is not based on the idea that voters vote for parties whose position they share (proximity) but
+rather for parties with whom they share a similar issue prioritization. Issue ownership refers
+to the fact that voters link certain parties to certain issues. Ownership is more likely to make
+voters vote for the issue-owning parties if those voters consider the issue to be important
+(Bélanger & Meguid, 2008; Walgrave, Lefevere, & Tresch, 2012). When the issues that a
+party owns become more salient, that party benefits (Petrocik, 1996). Note that VAAs in
+essence rely on positional issues to which the salience aspect is added. VAAs do not include
+
+                                                 5
+valence issues as these do not allow VAAs to distinguish parties. Still, most VAAs are not
+based only on the logic of proximity voting but also incorporate elements of the saliency
+model (Wagner & Ruusuvirta, 2012).
+         We expect VAA outputs to accord with the expectations put forth by the saliency
+model. Issue ownership theory holds that parties experience an across-the-board advantage on
+issues they own. Arising out of a history of attention to an issue (Petrocik 1996), issue
+ownership refers to the long-term salience of issues for parties. With regard to parties, we
+focus on issue ownership since we have a good measure of this concept; however, we see no a
+priori reason to assume that our expectation would not apply for the more general concept of
+party salience. Issue ownership should have the largest effect on voters who care about the
+issue most. There is a well-documented effect of voter salience combined with issue-
+ownership perceptions on vote choice (Bélanger & Meguid, 2008; Walgrave et al., 2012).
+Furthermore, we expect that a VAA’s ability to match issue-owning parties to issue publics
+increases as the number of statements on that issue increases.
+
+
+         H3: issue-owning parties score higher among voters for which the owned issue is
+         salient, than among voters for which it is not, and the difference increases as the
+         number of statements on the issue in the statement selection increases.
+
+
+4. Method
+Before the Belgian 2007 elections, a CATI survey among a random sample of 1,000 Belgian
+(Flemish) citizens was carried out. Respondents provided answers to fifty issue statements of
+which thirty-six were later used in the VAA, ‘Do the Vote Test’. Respondents indicated
+whether they agreed with the statement, disagreed, or had no opinion. Appendix A presents
+the fifty statements.
+         The nine political parties in Belgium (Flanders)1 answered the same fifty issue
+statements. Our measure of party positions is thus based on a single, authoritative, binding
+and public statement of the party leader to each statement. There is some debate as to whether
+this method yields valid party positions (Laros, 2008) but we assume that the recorded party
+
+1
+    CD&V (christian-democrats), Sp.A (socialists), Open VLD (liberals), Spirit (social-
+progressives), N-VA (Flemish-nationalists), VB (radical-right), PvdA (extreme-left), LDD
+(neo-liberal), Groen! (greens).
+
+                                                 6
+positions capture the real party stances, since their positions were widely publicized in the
+mass media. Also, we focus on differences between statement selections—the party positions
+are a constant in this equation. Nevertheless, our method of obtaining party positions may
+affect the impact of statement selection and we return to this point in the discussion.
+          Do the Vote Test had 36 statements2. From the fifty potential statements we drew a
+random sample of 500 batches of each 36 statements. These 500 statement selections form the
+units of analysis as we compare the output of these 500 selections and use features of these
+selections as predictors. For each of the 500 selections, the score for each party is calculated
+by comparing voters’ and parties’ answers to the 36 statements. If Party X matches voter A on
+all 36 statements, there is a hundred per cent match. If they do not agree on any of the 36
+statements, they have a 0% match. Per statement the score is weighted based on both voter
+and party salience: if a party/voter considers an issue to be more important or less important,
+statements on those issues get a different weight3. For each respondent, a given selection thus
+yields nine scores, one for each party. The dataset thus contains 1,000 (respondents) * 9
+(parties) * 500 (selections) = 4.5 million data points.
+          As some respondents differ in their general agreement to all parties regardless of
+which selection was made, all scores are clustered, at the highest level of clustering, by
+respondent. Each respondent’s 4,500 scores (500 selections * 9 parties) are taken as one
+cluster. Within each respondent, another cluster is added for the 9 parties: regardless of the
+selection that was made, some parties do better among some respondents. So, each party has
+500 observations within each respondent. The lowest clustering level is the level of the 500
+selections. We are mainly interested in variance at this lowest level: the between-selection
+
+2
+    The final selection of statements used in DVT was based on the pretest. Basically, the
+creators try to come up with a statement selection that passes four criteria: the selection
+should cover the various issue domains equally, it should discriminate between all parties, it
+should not disproportionally (dis)advantage parties, and it should match at least a part of the
+electorate with the party they would vote for.
+3
+    The party weights are calculated based on the per cent of (semi-)sentences in the party
+program covering an issue; the voter weights are based on a survey question on which issues
+the respondent felt where most important. Adjustments made by the weights for each
+statement separately are small and do not shift the importance much (weights per statement
+are typically between 1 and 1.2).
+
+                                                 7
+variance. For each party-respondent combination this tells us whether, depending on the
+selection, the party scores better or worse for that respondent.
+       Each party scores a certain result for each respondent in each selection. This absolute
+party score is not what we were interested in; it means little that a party’s score increases if all
+other parties gain as well. We were interested in the extent to which a party’s score increases
+or decreases compared to the score of the other parties. Does the party pull away from the
+pack, or not? Therefore we first calculated, for each selection and each respondent separately,
+the mean score of the nine parties and then subtracted this mean score from the absolute score
+of each party. This yields what we call the parties’ Mean Relative Score (MRS). This relative
+score tells us, for a given respondent and given selection, whether the party is leading
+(positive score) or trailing (negative score) compared to the mean party score for that
+selection and it tells us and how big the lead or setback is. This relative score is the dependent
+variable in our estimations.
+       Independent variables are situated at either the respondent, party or selection level.
+The economic/cultural left-right position of the respondents was calculated on the basis of
+their answers to the statements. For each of the statements, we coded whether it dealt with the
+cultural/economic left-right dimension or not, and whether agreeing with the statement
+indicated a left or a right position (see Appendix). For each respondent we added up the
+answers to these distinct left-right statements. A score of 0 means that the respondent gave an
+equal number of left- and right-wing oriented answers, negative scores indicate left-wing
+positions, and positive scores right-wing answers.
+       The survey included an issue-salience measure at the respondent level. Out of a list of
+fourteen issues, respondents were asked to tick a maximum of three issues they found
+particularly important. The fifty statements are matched to the fourteen issues so that we have
+a salience measure for each statement: important statements get a score of 1, the others 0.
+These scores were then summed for each respondent and each selection. As a result, we have
+a measure of how important the issues in a certain selection are for this respondent.
+       At the party level, we use the parties’ left-right position as determined by the Chapel
+Hill expert survey of 2006 (Hooghe et al., 2002). These data do not provide cultural left-right
+measures separately, so we use the general left-right dimension as a proxy. For three parties
+no measures were available: we inferred the scores for these parties based on our reading of
+their manifestoes and communication: LDD was decidedly more economic and culturally
+right-wing than the traditional liberal party Open VLD, but not as extreme as the extreme-
+
+                                                 8
+right party VB. Spirit was in an electoral alliance with the Socialists, so we assigned them
+identical scores; identical reasoning was followed for N-VA being in an electoral alliance
+with CD&V.
+         Based on the 2009 Partirep survey (Deschouwer, Delwit, Hooghe, & Walgrave, 2010),
+in which voters were asked to indicate which party they primarily associated with a range of
+issues, each party received an issue ownership score for each selection. First, we tallied the
+percent of voters associating each issue with each party. Then, this score was multiplied by
+the number of statements on the issue in a given selection. Finally, all separate issue-
+ownership scores were summed across all statements in a selection. The resulting variable
+indicates the extent to which the party owned the issues covered by the statements in a
+selection.
+         At the selection level, we calculated the absolute number of cultural/economic left-
+right statements per selection4.
+         We use fixed effects multi-level models accounting for the clustered nature of our
+dataset (Steenbergen & Jones, 2002). The models mirror the hierarchical nature of the dataset,
+with respondents being the highest level, then parties, and then selections. For readability of
+the coefficients, we multiply the dependent variable by 100.
+
+
+5. Results
+Across all respondents, do certain parties fare better than others? Consider the average
+relative scores per party (MRS) and their standard deviation across the random sample of 500
+statement selections in columns 2 and 3 of Table 1.
+
+
+< TABLE 1 ABOUT HERE >
+
+
+         In this particular VAA, some parties have better odds than others of coming out on
+top. Especially the socialists have an overall lead of about eight percentage points on the other
+
+4
+    Each statement is assigned two issue codes. For example, a statement may entail both social
+security and work, or it may be solely about social security (in which case both issue codes
+are social matters). For each selection, we calculated the number of statements covering an
+issue; statements that covered two issues only counted as half a statement for each issue to
+avoid double counting.
+
+                                                9
+parties across all voters and across all selections. The standard deviation (4.55) shows that this
+lead is present in almost all 500 selections. One party is the clear loser: the extreme-right trails
+by on average six percentage points. This is strong proof that the initial selection of 50
+statements—and subsequently the random samples of 36—are strongly tilted in favor of the
+center-left parties. The initial batch of fifty statements was not selected haphazardly or light-
+heartedly: professors of various universities collaborated to select these statements in order to
+provide a broad spectrum of statements that covered all key issues. Various reasons, some
+worse than others, may explain why there are systematic distortions. First, Flemish voters
+might be more inclined to take left-wing positions having been habituated to the Belgian
+system with its well-established social security provisions and heavily funded educational
+systems. Second, the VAA creators may have (unwillingly) introduced too many statements
+on which left-wing parties can take advantageous positions. Third, especially the center-left
+parties may have strategically adopted positions that maximized their results. Whatever the
+case, we should keep in mind when examining the effects of statement selection that the
+initial batch of statements is tilted towards the center-left.
+         We began by testing the two hypotheses about the scores of parties irrespective of
+voters‘ features. H1a and H1b state that increasing the number of economic/cultural left-right
+statements increases the scores of extreme left-right parties. Table 2 presents the results.
+Model 2 presents the interaction effects—which is what we are interested in here. We
+converted parties’ economic and cultural left-right position to a curvilinear scale ranging from
+0 (center party) to 5 (extreme-left or extreme-right). We included the left-right position of the
+respondents as a control.
+
+
+< TABLE 2 ABOUT HERE >
+
+
+         The intercept-only model is not shown but indicates5 that the variance in the
+dependent variable—a party’s relative score in a given selection—is situated mainly at the
+party and the selection level: party scores are substantially affected by the selection. Model 1
+confirms that especially the economic extreme-right and left parties received lower scores
+
+5
+    Intercept-only model: Residual between-selection variance: 106708 (71.21). Residual
+between-party variance: 307629 (4589.42) Residual between-respondent variance: 0.00 (.00).
+Log likelihood: -32468130.
+
+                                                 10
+across the initial batch of fifty statements (39.74 (5.24), p < .000)—and the 36-statement
+selections made from it—while center-left parties received higher scores. More culturally
+extreme left-right parties received, on average, lower scores (-111.61 (4.30), p < .000);
+bivariate checks indicate that this is caused by the very low scores of the Vlaams Belang,
+which held a particularly extreme position along this dimension. Conversely, the economic
+left-right dimension has a positive valence: parties with a more extreme economic profile
+managed to come out on top; this effect was caused by the socialists, who have a higher score
+in general and an outspoken economic left profile. An interesting finding is that, across the
+board, issue ownership matters, but the valence is negative. When a selection favors issues a
+party has greater ownership on, it is likely to earn lower relative scores. In selections with a
+greater number of environmental statements, for example, the greens are likely to have worse
+scores.
+          Model 2 tests whether including more left-right statements in the selection helps
+parties that are more culturally or economic extreme. Confirming H1b, the valence of the
+interaction is positive which means that including more statements on this dimension aids
+culturally extreme-left or extreme-right parties. H1a regarding the economic left-right
+dimension receives no support from the data, the interaction effect is not significant. More
+economic left-right statements do no boost the score of economically more extreme parties.
+          Hypotheses H2a and H2b stated that selections with more left-right statements are
+better able to connect left voters with left parties and right voters with right parties. We
+estimate another model using not the party extremity left-right score but the mean centered
+party left-right score obtained by subtracting the mean of all parties from the score of a
+specific party. For parties as well as for voters, negative scores imply left-wing positions
+while positive scores mean right-wing positions. Since we used multiplicative interaction
+terms between party and voter position, the interaction term is positive for both left- and right-
+wing voter/party combinations, and negative for the other combinations (e.g. a left-wing party
+score for a right-wing voter). Model 1 in Table 3 estimates the direct effects of all variables,
+Model 2 adds two-way interactions, and Model 3 three-way interactions. It is these three-way
+interactions in Model 3 that we are interested in here.
+
+
+< TABLE 3 ABOUT HERE >
+
+
+
+
+                                                11
+Model 3 allowed us to test H2a and H2b, which state that specific statement selections favor
+specific parties, for specific voters. Both interactions are highly significant. To understand
+their meaning we plotted the MRS of a left-, center-, and right-wing party for both the cultural
+and economic dimension6. We did this for three types of voters: a clear left-, center-, and
+right-wing voter. Finally, we varied the number of statements on the left-right dimension.
+Results are presented in Figure 1. The x-axis records an increasing number of left-right
+statements in the selection; the y-axis charts parties’ MRS.
+
+
+< FIGURE 1 ABOUT HERE >
+
+
+          H2a is confirmed. As the number of economic left-right statements in a selection
+increases, right-wing parties get a higher score among right-wing voters. The relative scores
+of left-wing parties among right-wing voters go down by including more economic left-right
+statements. If a VAA respondent consistently picks the right-wing position on the economic
+left-right statements, the ‘bars’ of the right-wing parties in his/her VAA output are larger than
+the bars of the left wing parties, and the gap between these bars increases as more economic
+left-right statements are included in the selection. Left-wing parties see a similar increase in
+support among economic left-wing voters as more economic left-right statements are
+included. The slopes in Figure 1 are slight, however, and this indicates that the effect of
+statement selection is small. A selection’s ability to match economic left-wing voters to left-
+wing parties, and the same on the right, does not increase strongly with the inclusion of more
+economic left-right statements.
+          A similar story transpires from Figure 2 dealing with H2b. The hypothesis is
+confirmed. The more cultural left-right statements are included, the more a selection yields
+higher scores to culturally left-wing parties for culturally left-wing voters (middle pane of the
+figure), and the same is true for right-wing parties and right-wing voters (right pane). There is
+one important difference, though. The effect of statement selection is not symmetrical as was
+the case with the economic left-right dimension. Rather, it is asymmetrical. Culturally left-
+wing parties have more to gain from more culturally left-right statements than right-wing
+
+6
+    The center party received the mean score on the left-right dimension; the left-wing party, the
+mean minus one standard deviation; and the right-wing party, the mean plus one standard
+deviation.
+
+                                                 12
+parties. Regardless of statement selection, cultural left-wing parties have higher scores due to
+the initial batch of statements. Left-wing parties not only score highest among the culturally
+left voters, but also enjoy a clear advantage among culturally neutral voters (Figure 2, left
+pane). Conversely, culturally right-wing parties received consistently lower scores and their
+scores among ‘their’ right-wing voters are only slightly higher (Figure 2, right pane).
+Including more culturally left-right statements allows a selection to more clearly link
+culturally left-wing voters to left-wing parties, right-wing voters to right-wing parties. But,
+adding more left-right statements does not manage at all to circumvent the fact that overall,
+due to the initially biased nature of the batch of statements, culturally left-wing parties had on
+average higher scores compared to right-wing parties.
+           Finally, we tested H3, thinking that the inclusion of more statements on issues owned
+by specific parties would increase those parties’ scores more among voters who consider these
+issues to be important than among those who do not consider these issues important, and that
+this effect would increase as the number of statements on the owned issue increases. We ran
+the regressions separately for each party that had a clear ownership on an issue—more than
+thirty per cent of the Partirep respondents associated it with the issue: Greens & environment
+(87%), Radical-Right & crime (35%) and Radical-Right & immigration (49%), Liberals &
+budget (45%), Nationalists & state reform (33%), and Socialists & work (41%) and Socialists
+& social affairs (49%). Estimating the model per party reduces the size of the dataset and
+eliminates the party level. Table 4 reports only the three coefficients of interest: the two direct
+effects (Respondent Issue Importance and Number of Statements on the Issue), and the
+interaction between them. The models include all control variables that were included in the
+previous models.7
+
+
+< TABLE 4 ABOUT HERE >
+
+
+           Table 4 presents a mixed bag. One of the significant interaction coefficients is
+negative (Greens & environment), while two are positive (Radical-Right & crime and
+Socialists & work), and four are not significant. An issue-owning party’s score among the
+issue public is not necessarily higher with an increasing number of statements on this issue.
+Hence, H4 must be rejected. Other results in the table confirm what we found earlier: issue
+
+
+7
+    These models are available from the authors.
+
+                                                   13
+owners do not score higher by having more statements on their issue in the selection. In five
+out of seven cases, there are significant and negative coefficients for the number of owned
+issue statements.
+
+
+6. Discussion and Conclusion
+   Our goal was to examine whether statement selection in VAAs systematically alters which
+parties are ‘recommended’ to which voters. We moved beyond Walgrave and colleagues
+(2009) by disaggregating the effect of statement selection: Are specific parties
+(dis)advantaged by including or excluding specific statements? And, are some statement
+selections better than others in connecting voters to parties that ‘should’ be close to them? Our
+benchmark was based on the proximity left-right voting model. We also tested whether the
+inclusion of salience into the calculation generated results in line with the salience/issue
+ownership model.
+   Overall, we found that the output resembles the proximity left-right model. However, the
+salience aspect has unexpected consequences. The hypothesis regarding issue-
+ownership/salience was rejected while three of the four hypotheses based on the proximity
+left-right model received support.
+       Statement selection matters, and it matters according to the logic of the proximity
+model. The more the statements included in a VAA are situated on an underlying
+dimension—in this study, particularly the cultural left-right dimension—the greater the
+likelihood that parties with a clear profile on that dimension get high scores. Also, the more
+statements are included on a given dimension, the more voters with a clear position on that
+dimension get the advice to vote for a party with a similar position on that dimension. This
+pattern corresponds with findings of Wagner and Ruusuvirta (2012) that increasing the
+number of statements covering an issue is almost never detrimental. The more politics is
+‘dimensionalized’ for both parties and voters and the more a VAA taps into these
+dimensions, the more valid the voting advice it produces.
+       However, even though our models were able to predict some of the variance between
+statement selections, they were unable to account for the majority of between-selection
+variance. Either our expectations neglect factors that are important for the effect of statement
+selection, or many of the effects of statement selection are essentially random. Our analysis
+does not allow for a definite answer to this question, but our sense is that the latter is probably
+true and that many of the effects of statement selection are random, or at least exceedingly
+
+                                                14
+hard to predict. The randomness impedes our ability to provide surefire guidelines as to what
+constitutes the ‘best’ statement selection. That said, we do discern two measures that at least
+mitigate the potentially arbitrary impact of statement selection.
+       Firstly, VAA builders should pretest the final batch of statements and preferably all
+statements that can potentially be included. A pretest involves field-testing the statement
+questionnaire and gathering responses of a representative sample of voters. Doing so provides
+data on the possible output of the VAA before it is launched. While this procedure does not
+solve the randomness of statement selection, it at least avoids ignorance about its effects. If
+statements severely advantage or disadvantage some parties, VAA builders can at least
+knowingly include or exclude them. Seeing the large differences in output caused by
+statements selections that differ only by one or two statements should sensitize VAA builders
+to the importance not only of the statement selection itself, but also of formulating statements
+according to standard practice in surveys—by avoiding double-barreledness, for example
+(Gemenis, 2013).
+       Secondly, including more statements increases a VAA’s accuracy. The plots showed
+that more statements on the left-right dimension makes VAAs better able to connect voters
+with parties in a meaningful way (see also Wagner and Ruusuvirta 2012). How many
+statements are needed is a tricky question, though. There is no hard and fast way to ascertain
+the minimum threshold. However, there is one certainty: the more parties there are, the greater
+the number of statements needed to enable a VAA to meaningfully discern between parties. A
+comparative study of 27 VAAs yielded large differences in the number of statements
+included—the lowest number of statements was 18, the highest 75, and most use between 30
+and 40 statements (Van Camp, Lefevere and Walgrave, forthcoming). In terms of
+measurement, more statements are never a bad thing, but there are practical considerations.
+More statements may reduce participation because users are turned off by the lengthy
+questionnaire. This brings us back to the core of our paper: there are unavoidable trade-offs
+regarding statement selection. Increasing the number of statements on one dimension or issue
+inevitably decreases the number of statements on others. Statement selection of statements is
+a balancing act without clear guidelines.
+       Our study yielded other interesting findings. When statements regarding specific
+dimensions increase in number, VAAs become more disadvantageous for center-parties. In
+contrast, extreme parties tend to benefit when dimensional statements are added. Center-
+parties, by definition, do not hold extreme positions and pay the price when a certain
+
+                                               15
+dimension prevails in the selection. A second finding, probably most challenging for VAA
+builders, is that there probably is an inevitable initial bias in any batch of policy statements. In
+the Belgian VAA we studied here, center-left socialist and social-progressive parties received
+high scores regardless of statement selection, while the extreme-right received low scores.
+Almost all VAAs based on this initial batch of statements would boost some parties and pull
+down others. In our case some of the selections dampened this effect, but no selection was
+able to compensate for it entirely. This ‘skew’ in the initial batch is not necessarily
+problematic: some parties may have more popular stances than others. But VAA builders
+should be aware of this by directly assessing public opinion via a survey before making a
+final selection.
+        We also tested whether VAAs’ output conforms to what one would expect on the basis
+of saliency/issue-ownership theory, and the results strongly suggest that it does not. Parties
+whose ‘owned’ issues are amply covered in VAAs do not get a generally more favorable
+output, and even for voters who care more about a party’s owned issues, party support is not
+associated with a large number of statements dealing with the issue. The reverse seems to be
+true. Parties are disadvantaged when ‘their’ issues are prominently present in a VAA.
+        The culprit, we think, is that VAA statements are drafted not only to be representative
+for the policy space but also to distinguish parties from one another. Statements sometimes
+cover policy positions on which one party—often the issue owner—takes a divergent position.
+Oftentimes this is an unpopular position resulting in worse scores for the issue owner.
+Especially for smaller, niche parties, statements on their core issues most likely cover
+unpopular policy positions, since including these statements allows VAAs to differentiate
+these parties. For example, the evidence we used here included a statement asking whether car
+gas should become more expensive (CO2 tax). Undoubtedly, agreeing with the statement is
+the more unpopular stance, but the issue owner (Green party) nevertheless adopted it. The fact
+that VAA builders incorporate party salience into their calculations exacerbates this effect
+because the disadvantageous statement gets greater weight in the calculation for the owner. In
+other words, the statement selection criteria of representativeness and discriminating power
+are at odds with each other, and the discrimination criterion tends to disadvantage the issue
+owner. Discriminating power is a more important criterion for statement selection in crowded
+party systems so this last problem may be typical for VAAs in countries like Belgium, the
+Netherlands, or Switzerland.
+
+
+
+                                                16
+        This brings us to the weaknesses of our study. It draws on one country only, and on a
+single batch of fifty statements. Can we generalize our findings beyond the case of Do the
+Vote Test in Belgium? We cannot know for sure. Yet, the problems and trade-offs we
+highlighted in this paper also confront any other VAA and apply to any statement selection
+process. Any set of VAA statements probably suffers from an initial skew; in any kind of
+VAA, defining dimensions and attributing statements to dimensions favors parties with
+extreme positions on this dimension; the requirement of having discriminating statements
+probably disadvantages the issue-owners in all VAAs; and so on. The specific impact will
+differ, of course, but the general tendencies are probably the same. Our data were unique in
+the sense that we had evidence that included more statements than a typical VAA contains
+and that we had public opinion data that allowed us to directly test whether statement
+selection makes a difference. We call for more work using similar designs.
+        One further limitation caused by the single-case nature of our study is that we cannot
+draw conclusions about the impact of the number of parties on the findings reported here.
+From both a theoretical and technical point of view we expect that in less densely populated
+party systems it is easier for a VAA to meaningfully match voters to parties. In multiparty
+systems the distinctions between parties are often small, whereas in two party systems the
+parties differ on many issues.
+        In conclusion, our evidence and analysis suggest that VAA builders should take
+particular care in selecting both their initial batch and their final selection of statements.
+Although the whole process of building a VAA may seem systematic and ‘scientific’—
+especially if the calculation of the score for each party for a given user is done very
+carefully—the crucial selection of statements is mostly an unsystematic, not very transparent,
+and unreplicable process. This is awkward, as statement selection is definitely the most
+important and consequential aspect of the VAA building effort. This paper may contribute in
+turning it into a more conscious and systematic activity. Minimally, field-testing a given
+statement selection before going public should be standard practice.
+
+
+
+
+                                                 17
+Appendix A
+
+
+< TABLE A ABOUT HERE >
+
+
+
+
+                         18
+References
+
+Bélanger, É., & Meguid, B.M., 2008. Issue salience, issue ownership, and issue-based vote
+       choice. Electoral Studies 27, 477-491.
+Cedroni, L., Garzia, D., 2010. Voting Advice Applications in Europe. The State of the Art.
+       Scriptaweb, Napoli.
+Dalton, J.R., 1996. Political cleavages, issues and electoral change. In: LeDuc, L., Niemi, R.,
+       Norris, P. (Eds.), Comparing Democracies. Elections and Voting in Global
+       Perspective. Sage, Thousand Oaks, CA, pp. 319-342.
+Deschouwer, K., Delwit, P., Hooghe, M., Walgrave, S., 2010. De verkiezingen van 2009.
+       Resultaten en algemene tendensen. In Deschouwer, K., Delwit, P., Hooghe, M.,
+       Walgrave, S., (Eds.), De Stemmen van het Volk. Een Analyse van het Kiesgedrag in
+       Vlaanderen en Wallonië op 7 Juni 2009. VUB Press, Brussels, pp. 7-28.
+Enelow, J., Hinich, M. J., 1984. The Spatial Theory of Voting: An Introduction. Cambridge
+       University Press, Cambridge.
+Fuchs, D., Klingeman, H.-D., 1990. The left-right schema. In Jennings, M. K., van Deth, J.,
+       (Eds.), Continuities in Political Action: A Longitudinal Study of Political Orientations
+       in Three Western Democracies. De Gruyter, Berlin, pp. 203-234.
+Gemenis, K. (2013). Estimating parties? policy positions through voting advice applications:
+
+       Some methodological considerations. Acta politica. Retrieved from
+
+       http://dx.doi.org/10.1057/ap.2012.36
+
+Henning, C.H.C.A., Hinich, M.J., Shikano, S., 2007. Proximity versus directional models of
+       voting: Different concepts but one theory. In: Hinich, M., Barnett, W.A., (Eds.),
+       Topics in Analytical Political Economy. Elsevier Science, Amsterdam, pp. 117-138.
+Hooghe, L., Marks, G., Wilson, C.J., 2002. Does left/right structure party positions on
+       European integration? Comparative Political Studies 35, 965-989.
+Huber, J.D., Powell, B.G., 1994. Congruence between citizens and policymakers in two
+       visions of liberal democracy. World Politics 46, 291-326.
+Inglehart, R., 1990. Culture Shift in Advanced Industrial Society. Princeton University Press,
+       Princeton.
+Kitschelt, H., 1994. The Transformation of European Social Democracy. Cambridge
+       University Press, Cambridge.
+
+
+                                                19
+Lane, J.-E., Ersson, S., 1987. Politics and Society in Western Europe. Sage Publications,
+       London/Beverly Hills.
+Laros, J., 2008. An overview of existing Voting Advice Applications: their methods and their
+       impact. Paper presented at the conference “Voting Advice Applications (VAAs):
+       between charlatanism and political science”, Antwerp.
+Merrill, S., Grofman, B., 1997. Directional and proximity of voter utility and choice: A new
+       synthesis and an illustrative test of competing models. Journal of Theoretical
+       Politics 9, 25-48.
+Petrocik, J., 1996. Issue ownership in presidential elections, with a 1980 case study. American
+       Journal of Political Science 40, 825-850.
+Steenbergen, M., Jones, B., 2002. Modeling multilevel data structures. American Journal of
+       Political Science 46, 218-237.
+Van Camp, K., Lefevere, J., & Walgrave, S. (forthcoming). The content and formulation of
+
+       policy statements in Voting Advice Applications. A comparative analysis of 27 VAAs.
+
+       In D. Garzia & S. Marschall (Eds.), Matching Voters with Parties and Candidates.
+
+       ECPR Press.
+
+Wagner, M., Ruusuvirta, O., 2012. Matching voters to parties: Voting Advice Applications
+       and models of party choice. Acta Politica 47, 400-422.
+Walgrave, S., Lefevere, J., Tresch, A., 2012. The associative dimension of issue ownership.
+       Public Opinion Quarterly, doi: 10.1093/poq/nfs023.
+Walgrave, S., Nuytemans, M., Pepermans, K., 2009. Voting Aid Applications and the effect
+       of statement selection. West-European Politics 32, 1161-1180.
+
+
+
+
+                                              20
+Table 1: Mean Relative Score (MRS) for each party across 500 36-statement selections.
+
+
+                     Party                  MRS         Std. Dev.
+                     Extreme Left           -1.61       4.89
+                     Greens                 -0.55       5.15
+                     Socialists             8.04        4.55
+                     Social-Progressives    4.08        4.45
+                     Christian-Democrats    -1.43       4.03
+                     Liberals               2.72        5.35
+                     Flemish Nationalists   -2.81       4.46
+                     Neo Liberals           -2.31       6.21
+                     Extreme Right          -6.12       5.85
+
+
+
+
+                                                21
+Table 2: Predicting VAA scores for nine parties. Multi-level statistical estimates
+
+
+Parameter                                                      Model 1                   Model 2
+Fixed effects
+Party economic left-right position (curvilinear)               39.74     (5.24)    ***   39.03 (5.42)      ***
+Party cultural left-right position (curvilinear)               -111.61   (4.30)    ***   -176.68 (4.44)    ***
+Number of economic L/R statements                              0.32      (.11)     **    0.72    (.24)     **
+Number of cultural L/R statements                              -0.06     (.11)           -10.31 (.20)      ***
+Respondent economic left-right position                        0.00      (1.24)          0.00    (1.24)
+Respondent cultural left-right position                        0.00      (.98)           0.00    (.99)
+Party Ownership of Issues in Selection                         -0.11     (.00)     ***   -0.14   (.00)     ***
+Party economic left-right position (curvilinear) * Number of
+economic L/R statements                                                                  -0.13     (.09)
+Party cultural left-right position (curvilinear) * Number of
+cultural L/R statements                                                                  4.55   (.07)   ***
+Intercept                                                      183.21    (16.12)   ***   338.69 (16.70) ***
+
+Random effects
+Level 1 (between-selection) res. Variance                      106686                    106591
+Level 2 (between-party) res. Variance                          292378                    294957
+Level 3 (between-respondent) res. Variance                     0                         0
+Log likelihood                                                 -32467440                 -32465485
+
+
+Note: Entries are unstandardized regression coefficients with standard errors in parentheses.
+* = p ≤ .05; ** = p ≤ .01; *** = p ≤ .001
+
+
+
+
+                                                       22
+Table 3: Predicting VAA scores for nine parties: multi-level statistical estimates
+
+
+Parameter                                                                             Model 1                   Model 2                  Model 3
+Fixed effects
+Party economic left-right position                                                    -0.97     (2.98)          -17.66    (2.71)         -10.53    (2.71)
+Party cultural left-right position                                                    -70.62    (2.94)    ***   -76.27    (2.69)   ***   -59.97    (2.69)   ***
+Number of economic L/R statements                                                     0.32      (.11)     **    -2.50     (.22)    ***   -0.19     (.22)
+Number of cultural L/R statements                                                     -0.06     (.11)           4.24      (.22)    ***   9.77      (.22)    ***
+Respondent economic left-right                                                        0.00      (1.21)          -37.33    (2.18)   ***   -1.26     (2.24)
+Respondent cultural left-right                                                        0.00      (.96)           -63.52    (1.76)   ***   -8.21     (1.81)   ***
+Number of cultural L/R statements* Party cultural left-right position                                           -0.08     (.00)    ***   -0.08     (.00)    ***
+Respondent cultural left-right * Party cultural left-right position                                             -0.88     (.04)    ***   -2.01     (.04)    ***
+Respondent cultural left-right * Number of cultural L/R statements                                              13.02     (.31)    ***   1.68      (.33)    ***
+Number of economic L/R statements* Party economic left-right position                                           0.00      (.02)          -3.85     (.03)    ***
+Respondent economic left-right * Party economic left-right position                                             0.59      (.04)    ***   0.09      (.04)    *
+Respondent economic left-right * Number of economic L/R statements                                              8.00      (.40)    ***   0.27      (.42)
+Number of cultural L/R statements* Party cultural left-right position * Respondent
+cultural left-right                                                                                                                      -2.50     (.04)    ***
+Number of economic L/R statements* Party economic left-right position * Respondent
+economic left-right                                                                                                                      0.79   (.01)   ***
+Party Ownership of Issues in Selection                                                -0.11     (.00)     ***   0.00   (.02)             0.54   (.01)   ***
+Intercept                                                                             375.06    (12.86)   ***   474.43 (12.48)     ***   361.68 (12.51) ***
+Random effects
+Level 1 (between-selection) res. Variance                                             106686 (71)               106665 (71)              106194 (70)
+Level 2 (between-party) res. Variance                                                 280221 (4193)             215966 (3238)            215976 (3238)
+Level 3 (between-respondent) res. Variance                                            0.00      (.00)           0.00    (.00)            0.00   (.00)
+Log likelihood                                                                        -32467249                 -32465633                -32455690
+
+
+Note: Entries are unstandardized regression coefficients with standard errors in parentheses.
+* = p ≤ .05; ** = p ≤ .01; *** = p ≤ .001
+
+
+
+
+                                                                                 23
+Table 4: Effect of Statement Selection on Issue Ownership in VAA
+
+Green party - Environment                                  Model 1                Model 2
+Respondent Issue Salience                                  -15.18 (16.43)         9.69      (17.43)
+Number of statements on issue                              -86.64 (1.51)    ***   -81.72    (1.90)    ***
+Number of statements on issue* Respondent Issue Salience                          -12.86    (3.01)    ***
+Liberal Party – Budget                                     Model 1                Model 2
+Respondent Issue Salience                                  36.90 (24.30)          50.70     27.46
+Number of statements on issue                              -33.80 (1.27)    ***   -33.20    (1.38)    ***
+Number of statements on issue* Respondent Issue Salience                          -3.48     (3.22)
+Nationalist Party - State Reform                           Model 1                Model 2
+Respondent Issue Salience                                  265.08 (42.28)   ***   252.21    (44.07)   ***
+Number of statements on issue                              -65.29 (1.05)    ***   -65.52    (1.08)    ***
+Number of statements on issue* Respondent Issue Salience                          4.53      (4.37)
+Socialist Party – Social Affairs                           Model 1                Model 2
+Respondent Issue Salience                                  -27.98 (21.18)         -16.38    (24.41)
+Number of statements on issue                              8.57   (0.89)    ***   9.00      (.99)     ***
+Number of statements on issue* Respondent Issue Salience                          -1.82     (1.90)
+Socialist Party - Work                                     Model 1                Model 2
+Respondent Issue Salience                                  26.03 (17.95)          6.22      (19.58)
+Number of statements on issue                              -96.52 (1.69)    ***   -99.96    (2.15)    ***
+Number of statements on issue* Respondent Issue Salience                          8.13      (3.21)    *
+Extreme Right Party - Crime                                Model 1                Model 2
+Respondent Issue Salience                                  4.34   (18.51)         5.39      (20.39
+Number of statements on issue                              180.64 (1.22)    ***   -12.61    (2.14)    ***
+Number of statements on issue* Respondent Issue Salience                          -0.54     (4.46)
+Extreme Right Party - Immigration                          Model 1                Model 2
+Respondent Issue Salience                                  1.25   (20.30)         -24.75    (24.19)
+Number of statements on issue                              -20.83 (1.55)    ***   -21.98    (1.66)    ***
+Number of statements on issue* Respondent Issue Salience                          7.00      (3.56)    *
+
+
+Note: Entries are unstandardized regression coefficients, with standard errors in parentheses
+* = p < .05; *** = p < .001
+
+
+
+
+                                                    24
+    Table A: The fifty statements, and their economic/cultural left-right assignments and slant
+                                                                                                 Cultural   Economic
+#     Statement
+                                                                                                 L-R        L-R
+1     If young people of 16 years commit a felony, they should always be judged by a regular     1          0
+      (adult) court.
+2     Justice has to give tax fraud more attention compared to normal theft.                     0          -1
+3     If someone burglars your house or store, you can shoot the burglar.                        1          0
+4     Prisoners always have to serve their entire sentence.                                      1          0
+5     Those who profit from the stock market, should pay taxes on those profits.                 0          -1
+6     Income should be taxed using one single rate.                                              0          1
+7     The taxes on fuel should drop more rapidly if the price gets too high.                     1          1
+8     The government cannot use sale and lease-back operations on her buildings.                 0          0
+9     People should pay more taxes on what they buy than on what they earn.                      0          0
+10    The minimum age for early retirement has to be raised.                                     0          1
+11    People that keep working after they’ve reached an age of 65 should get a higher pension.   0          1
+12    The welfare benefits should get a big raise.                                               0          -1
+13    The minimum pension of the self-employed should become identical to that of the            0          0
+      employees.
+14    The social benefits have to increase with the wages.                                       0          -1
+15    Smoking also has to be banned in bars.                                                     0          0
+16    Doctors should be forced to prescribe the cheapest drugs.                                  0          -1
+17    Supermarkets should be allowed to open on every Sunday.                                    0          1
+18    Shops have to be able to decide for themselves when to have a sale.                        0          1
+19    There should be no more additional shopping malls outside of the cities.                   -1         -1
+20    The noise regulations for airplanes should become a national government competence         0          0
+      once more.
+21    All Flemish people should be able to vote for Walloon politicians as well.                 0          0
+22    The national and Flemish elections should be held on the same day.                         0          0
+23    Flanders should be independent.                                                            0          0
+24    On candidate lists for the elections, there should be alternating men and women.           -1         0
+25    A drivers’ license with penalty point should be introduced.                                0          0
+26    Heavy cargo traffic on the road should be done overnight as much as possible.              0          0
+27    Car drivers that do not commit traffic violations should be rewarded with lower traffic    0          1
+      taxes.
+28    Trucks can never pass cars on the highway.                                                 0          0
+29    Gasoline and diesel should become more expensive through a CO2-tax.                        -1         -1
+30    The Belgian nuclear power plants have to close from 2015 onwards.                          -1         0
+31    Unemployment benefits have to be limited in time.                                          0          1
+32    If you have never worked, you cannot get an unemployment benefit.                          0          1
+33    Unemployment benefits should only be paid by the government, not the unions.               0          1
+34    The limitations on night- and weekend work should be lifted.                               0          1
+35    Wearing a head kerchief behind the counter in the town hall should be forbidden.           1          0
+36    Declined asylum seekers that are integrated, should be allowed to stay in Belgium.         -1         0
+37    We must be allowed to use real-life tests to be able to prove racism.                      -1         0
+38    It should become harder to obtain the Belgian nationality.                                 1          0
+39    Immigrants that have come here because of family reunification cannot have other           1          0
+      relatives transferred here.
+40    Belgium must again allow immigrants in to fill gaps in the labor market.                   -1         0
+41    Turkey should be able to become a member of the European Union.                            -1         0
+42    Together with a small group of other countries, Belgium should proceed towards more        0          0
+      European integration.
+43    There cannot be any nuclear arms stored on Belgian soil.                                   -1         0
+44    The next government should increase spending for development aid to 0.7% of the            -1         0
+      national income.
+45    The Belgian army should entirely merge into a European army.                               0          0
+                                                          25
+46   Delivering letters should remain an exclusive task for the Post.   0    -1
+47   The NMBS should be privatized.                                     0    1
+48   Euthanasia should also be legal for minors.                        -1   0
+49   Gay couples have to be able to adopt children.                     -1   0
+50   The abortion laws should become stricter again.                    1    0
+
+
+
+
+                                                          26
+Figure 1: Predicted values for Left-, Center-, and Right-wing Economic parties, for three groups of voters
+
+
+
+
+Note: All other variables are kept at their mean or median value.
+
+
+
+
+                                                                       27
+Figure 2: Predicted values for Left-, Center-, and Right-wing Cultural parties, for three groups of voters
+
+
+
+
+       Note: All other variables are kept at their mean or median value.
+
+
+
+                                                                         28
+29
+

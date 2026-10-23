@@ -1,0 +1,1047 @@
+                                                                                                 www.ssoar.info
+
+
+
+    Voting Advice Applications and the Estimation of
+    Party Positions - A Reliable Tool?
+    König, Pascal D.; Jäckle, Sebastian
+
+    Postprint / Postprint
+    Zeitschriftenartikel / journal article
+
+
+
+Empfohlene Zitierung / Suggested Citation:
+König, P. D., & Jäckle, S. (2018). Voting Advice Applications and the Estimation of Party Positions - A Reliable Tool?
+Swiss political science review (SPSR) / Schweizerische Zeitschrift für Politikwissenschaft (SZPW) / Revue suisse de
+science politique (RSSP), 24(2), 187-203. https://doi.org/10.1111/spsr.12301
+
+
+
+
+Nutzungsbedingungen:                                                 Terms of use:
+Dieser Text wird unter einer Deposit-Lizenz (Keine                   This document is made available under Deposit Licence (No
+Weiterverbreitung - keine Bearbeitung) zur Verfügung gestellt.       Redistribution - no modifications). We grant a non-exclusive, non-
+Gewährt wird ein nicht exklusives, nicht übertragbares,              transferable, individual and limited right to using this document.
+persönliches und beschränktes Recht auf Nutzung dieses               This document is solely intended for your personal, non-
+Dokuments. Dieses Dokument ist ausschließlich für                    commercial use. All of the copies of this documents must retain
+den persönlichen, nicht-kommerziellen Gebrauch bestimmt.             all copyright information and other information regarding legal
+Auf sämtlichen Kopien dieses Dokuments müssen alle                   protection. You are not allowed to alter this document in any
+Urheberrechtshinweise und sonstigen Hinweise auf gesetzlichen        way, to copy it for public or commercial purposes, to exhibit the
+Schutz beibehalten werden. Sie dürfen dieses Dokument                document in public, to perform, distribute or otherwise use the
+nicht in irgendeiner Weise abändern, noch dürfen Sie                 document in public.
+dieses Dokument für öffentliche oder kommerzielle Zwecke             By using this particular document, you accept the above-stated
+vervielfältigen, öffentlich ausstellen, aufführen, vertreiben oder   conditions of use.
+anderweitig nutzen.
+Mit der Verwendung dieses Dokuments erkennen Sie die
+Nutzungsbedingungen an.
+
+
+
+
+Diese Version ist zitierbar unter / This version is citable under:
+https://nbn-resolving.org/urn:nbn:de:0168-ssoar-71549-9
+     This is an accepted manuscript of an article published by Wiley in Swiss Political
+          Science Review, Vol. 24, No. 2, 2018, pp. 187-203 available online at:
+                               https://doi.org/10.1111/spsr.12301
+
+
+
+
+    Voting Advice Applications and the Estimation of Party
+                 Positions – A Reliable Tool?
+
+                           Pascel D. König, Goethe-Universität Frankfurt
+                       Sebastian Jäckle, AlbertLudwigs Universität Freiburg
+
+
+
+
+Introduction1
+The party literature has devised a range of ways to measure party positions. Starting from
+party family classifications based on social and historic origin (Lipset and Rokkan 1967), the
+affiliation with transnational federations (Mair and Mudde 1998: 216–217), the range of
+approaches has been extended with ways of measuring party positions more precisely. These
+approaches include voter survey-based estimates (van der Eijk and Franklin 1991),
+evaluations from expert surveys (Castles and Mair 1984; Benoit and Laver 2006), manual
+(Klingemann et al. 2006; Janda et al. 1995; Helbling and Tresch 2011) and automated content
+analysis (Laver et al. 2003; Slapin and Proksch 2008), and item response models using roll-
+call votes (Poole 2005; Clinton et al. 2004). Some of these approaches have been applied not
+only to the national but also to sub-national levels (Libbrecht et al. 2009; Bräuninger and
+Debus 2008). Using data from Voting Advice Applications (VAAs) has joined these
+approaches to estimate party positions in low-dimensional policy spaces (Wagner and
+Ruusuvirta 2012; Wagschal and König 2015; Gemenis 2013; Louwerse and Otjes 2012).
+What makes VAAs particularly valuable is that they are generated close to an election and
+include various items with information about parties’ declared policy preferences (in some
+VAAs crosschecked by experts) that are chosen with a view to which issues are important in
+
+
+1
+      We thank the anonymous reviewers and the editor of Swiss Political Science Review for their helpful
+      comments and suggestions on the manuscript. A replication file is available at
+      http://www.sebastianjaeckle.de/publications.html. The usual disclaimers apply.
+that election. Additionally, VAA-data allows comparing users’ policy positions with parties’
+or candidates’ positions directly since they are measured based on the same questions.
+
+The usefulness of VAA-data for the purpose of measuring party positions is of relevance not
+only for party researchers. Whether VAAs can provide reliable and valid estimates of parties’
+policy positions is also important for the main purpose of VAAs, which is providing political
+information and orientation to voters – not least because VAA recomenndations may affect
+the opinions of some people in the electorate (Dumont and Kies 2012; Pianzola 2014; Ladner
+et al. 2012). There is thus a growing literature interested in how the design of VAAs may
+affect the recommendations they give to their users (Walgrave et al. 2009; Louwerse and
+Rosema 2014; Wagner and Ruusuvirta 2012; Garzia and Marschall 2016).
+
+A core element in the VAA design that may affect the quality of the represented party space is
+the set of included policy items. Estimates of party positions based on VAA-data may be
+markedly influenced by the selection and the number of issues included in a VAA (Gemenis
+2013). Also, the specific items may have been chosen with a priori defined political or
+ideological dimensions in mind, but it is an open question whether these dimensions emerge
+from the data. The items may in the end not empirically show the relations to the dimensions
+that were originally expected (Otjes and Louwerse 2014; Louwerse and Rosema 2014;
+Gemenis 2013; Germann et al. 2015). It is thus an important question, how much design
+decisions, particularly regarding the item selection, weigh on the latent party-interrelations
+inherent to the VAA-data.
+
+The 2017 German Länder election in Lower Saxony marks a special situation in that regard
+because for these early elections, three VAAs were on offer: the Wahlswiper, the
+Landeswahlkompass and the Niedersachs-O-Mat. Although they were all designed with the
+same basic purpose in mind and geared towards the same election, they nevertheless show
+discernible differences in their design. They differ not only with regard to the number of
+items, but also regarding the way party stances are measured and the implicit weighting of
+larger topics resulting from their item selection. We exploit these special circumstances to
+assess whether differences in (1) the selection, (2) the number and (3) the measurement of
+items lead to consistent estimates of party interrelations. We also make use of the possibility
+of taking items from all VAAs (for the parties shared in all of them) to test how the reliability
+of the positions is affected by random or purposeful topic-wise item removal.
+
+In this research note, we find that the variance between the three VAAs, regarding selection,
+number, and measurement of the items, does not matter much for the overall structure of the
+resulting party positions. The results furthermore suggest that matching VAA-items a priori to
+certain ideological dimensions, as one of the tested VAAs does, may be problematic. The
+interpretation of the dimensions and thus the interpretation of the party space may be
+substantively different from a party space defined by dimensions derived aposteriori after the
+scaling – even if the obtained relative positionining of the parties is virtually identical for both
+approaches, as it is the case in our analysis.
+
+
+
+
+Latent Party Policy Spaces in Voting Advice Applications
+The starting point for turning visible latent policy spaces inherent to VAAs is the fact that
+these applications contain data about policy stances on individual items and that these items –
+especially since we are dealing with programmatic and thus strongly structured content – can
+be condensed to a small number of dimensions. Two approaches have been pursued in
+existing research to carve out such dimensions and position parties on them.
+
+Some studies have drawn upon user data generated by VAAs. These contributions first use
+dimensionality reduction and scaling techniques to find latent dimensions in the user
+responses regarding a set of VAA-items. Having identified such dimensions, user scores on
+these dimensions are then averaged by party or ideological supporters to obtain estimates for
+the parties’ positions (Germann et al. 2015: 229–230; Wheatley et al. 2014; Wheatley 2012;
+see also Louwerse and Rosema 2014: 294–295). While additional checks in these studies have
+been taken as evidence that the possible lack of representativeness of VAA users (Dumont
+and Kies 2012; Marschall 2011) does not constitute an issue, the problem remains that the
+positions of parties are equated with average policy positions of party supporters. Also, there
+is a potential individualistic fallacy at work as the item interrelations on the party level do not
+necessarily mirror those on the level of citizens.
+
+The approach used in this research note is a more direct one. It uses the information about the
+policy stances of parties themselves contained in VAAs. These items can be used in scaling
+procedures that represent the overall pattern of relative party similarities in a low-dimensional
+space (Gemenis 2013; Louwerse and Rosema 2014; Wagschal and König 2014; Otjes and
+Louwerse 2014). The more there is a programmatic bundling of issues and the more parties
+show clear relations of opposition and commonality – e.g. with those parties taking a
+progressive orientation on one societal issue also showing a progressive stance on other
+societal issues – the better this way of extracting a party policy space works. This approach
+provides party researchers with an easily accessible data source for estimating party positions.
+On the other hand, it involves serious methodological challenges, particularly because the
+data and its quality may be strongly affected by how VAAs register party stances on
+individual issues.
+
+First, the response scales may differ, some VAAs use binary variables (agree/disagree),
+whereas others allow for fine-grained categorization, which however also allows more leeway
+for stating certain policy stances for strategic reasons (Wagner and Ruusuvirta 2012). To
+obtain an information-rich VAA it is thus possible to use many binary items or instead to use
+fewer items but with more categories. In any case, one would like the items to be coded
+accurately. This is not a trivial issue. As Gemenis (2015) has shown, there are several ways in
+which parties’ policy statements can be coded – e.g. by party self-placements or expert
+codings – and the chosen approach may matter for the quality of these codings. At the same
+time, VAAs generally do not perform reliability tests on how the parties have been
+categorized so that we cannot know how accurate they are.
+
+Second, the structure of party positions that emerges from VAA-data has been said to depend
+on the number and specific selection of items (Gemenis 2013: 280). Carrying this criticism
+further, one can make the argument that a given selection of items amounts to an implicit
+weighting of topics or issue domains that these items represent (e.g. education or social
+policy). However, such topic weights do not necessarily mirror the conditions under which the
+election took place. The extracted policy space could thus be an artefact based on an implicit
+weighting of topics that may seem more or less arbitrary as it has not deliberately been
+envisaged.
+
+Also, as Otjes and Louwers (2014) and Germann et al. (2015) have shown, the items
+contained in VAAs do not generally seem to scale well on previously conceptualized
+dimensions when looking at the empirically observed interrelations between them. The
+picture is thus likely to be more complex. We would not expect that a crisp assignment of
+items to predefined axes of political conflict works out. Nor is it likely that bundles of items
+will form dimensions that are neatly orthogonal to one another.
+
+It is ultimately an empirical question whether and how much VAA design parameters affect
+the party spaces contained in the VAA-data. It might be the case that design-differences have
+little impact on the party interrelations because the overall information contained in VAAs is
+enough to constrain them to a robust structure. Considering that parties’ programmatic
+statements are structured, many items might be substituted for one another: e.g. parties
+opposed on an environmental dimension are also likely to form a contrast with regard to an
+economic dimension.
+
+To test whether the number, the selection (and resulting topic weights), and the measurement
+level of VAA-items has consequences for the estimation of party positions, we will exploit a
+special real-world setting. We capitalize on the fact that there were three different VAAs
+developed for the election to the state parliament in Lower Saxony in October 2017. Drawing
+on data from them allows us not only to perform a systematic comparison with respect to the
+resulting party positioning derived from each VAA, but also to pool the information from all
+three VAAs. Finally, although a different kind of data would be needed to rigorously test how
+reliable different approaches for coding party policy stances are and whether they matter for
+the validity of the extracted party spaces, the three examined VAAs can at least give some
+relevant tentative insights. To the degree that there are overlapping items, i.e. items appearing
+in all three VAAs, one can check whether there are differences by coding approach.
+
+
+
+
+Description of the Three Examined VAAs
+Before turning to the analysis, we briefly describe the construction of the examined VAAs
+and point to their main differences regarding how they register parties‘ policy stances.
+
+The Wahlswiper (launched 10/03/17) has been designed by the advertising agency MOVACT
+in cooperation with the regional newspaper Neue Osnabrücker Zeitung. Featuring a high
+usability on handheld devices (possibility of swiping left and right to give response, easy
+navigation and supplementary videos for each item), it consists of 31 binary items for which
+the parties themselves were asked to indicate their stances.
+
+The Landeswahlkompass (lauched 10/02/17) has been designed by the state-funded
+Landeszentrale für politische Bildung (center for political education in Lower Saxony) in
+cooperation with the Kieskompas agency and the University of Oldenburg. A set of 30 items
+was presented to the parties which were asked to provide their positions ranging from
+completely agree to completely disagree on a five-point scale. The parties had to back their
+stances with publicly available sources (e.g. manifestos). Experts from the University of
+Oldenburg checked the parties’ answers based on the supplied sources and contacted the
+parties in case of irreproducible self-classifications. The parties always had the final say as
+long as they could provide proof for their stance. All items were assigned to one of two
+predefined dimensions (economic left-right and moral-societal conservative-progressive) and
+„the computation of averaged or summated positions on the two dimensions depends on a
+priori considerations” (Krouwel et al. 2012: 236).
+
+The Niedersachs-O-Mat (launched 10/06/17) has been developed by the University of
+Freiburg and the University of Düsseldorf in cooperation with the Landeszentrale für
+politische Bildung Baden-Württemberg. Based on a reading of party manifestos and press
+coverage, 71 items were prepared and presented to parties which were asked to reply with
+either agreement, disagreement or a neutral stance. Parties furthermore had the possibility to
+add justifications to their replies. After discarding items that were deemed inadequate for
+capturing party variation, a final set of 38 items was selected for the Niedersachs-O-Mat.
+
+Although the three VAAs were designed for the same election, they involve some important
+differences which all potentially matter for estimating party positions from their data.
+Specifically, they differ with regard to the number of items, the response options on these
+items, the involvement of experts in crosschecking the party responses and the implicit
+weighting of topics resulting from the selection of issues (for a detailed comparison see Table
+A1 in the Online Annex).
+
+Taking all three VAAs together, one gets a remarkable data set on party policy differences. Of
+the 99 items overall, 16 have been identically or almost identically asked in two VAAs, and
+three are even included in all three VAAs. While this item overlap means a redundancy, it
+also allows for checking how consistently parties have been categorized on these items (see
+Table A2 in the Online Annex). The three items that occur in all examined VAAs exhibit
+almost perfect consistency. However, those items that are present in two of the three VAAs
+show some discernible discrepancies. In some cases, parties are categorized with
+contradictory issue stances, suggesting a general fuzziness in trying to determine a party’s
+stance. This may in part be due to the specific phrases used. For instance, with regard to the
+driving bans for diesel cars, the Wahlswiper talks more specifically about a ban “in
+particularly affected cities”. For other items, such as rejecting asylum seekers and limiting the
+rise of rents, the discrepancies cannot be attributed to differences in phrasing. Overall, the
+Landeswahlkompass and the Niedersachs-O-Mat show the greatest agreement regarding their
+overlapping items (with only 3.4% inconsistent party categorizations). Inconsistencies mainly
+occur between these two VAAs and the Wahlswiper – strikingly the only VAA that does not
+involve expert decisions in the coding process – whose categorizations are thus to be seen
+with most skepticism. This can be seen as tentative evidence that the iterative process of using
+party self-statements and letting experts validate them leads to more valid measures.
+Further differences come to light when comparing the extent to which the VAAs cover
+specific issue domains. For this purpose, the items have been coded with topic categories that
+are neither too specific nor too general. The result is depicted in Table 1. While the topic
+shares in this table exhibit striking similarities when looking at the broader pattern, there are
+also a couple of noteworthy differences. In comparison, the Landeswahlkompass is marked by
+an emphasis on education, whereas the Niedersachs-O-Mat stresses economic, financial and
+labor market issues but deemphasizes agriculture and environment. The Wahlswiper, in turn,
+stands out by a stronger emphasis on law and order as well as infrastructure and traffic, but
+emphasizes societal issues less. There is only one category that is covered little overall by all
+three VAAs: welfare state and social policy.
+
+
+                      Table 1: Topic Shares for the Three Examined VAAs
+                                            Landeswahl-       Niedersachs-O-         Wahl-
+Topic
+                                             kompass               Mat               swiper
+Education                                       23%                11%                13%
+Society and culture                             10%                8%                 0%
+Immigration and integration                     7%                 8%                 13%
+Infrastructure and traffic                      3%                 5%                 10%
+Law and order                                   13%                13%                19%
+Agriculture and environment                     23%                13%                23%
+Political system                                10%                11%                13%
+Economy, finance, labor                         10%                26%                6%
+Welfare state and social policy                 0%                 5%                 3%
+
+
+
+The correlations over the columns in Table 1 suggest only weak relationships between the
+topic weight profiles. While their magnitude may be affected by the way the items are
+categorized, the categories have deliberately been chosen broad enough, so that even remotely
+related items fall into a single category. And yet, the correlations are rather small, with r =
+0.62 between Landeswahlkompass and Wahlswiper, 0.33 between Niedersachs-O-Mat and
+Landeswahlkompass, and only 0.14 between Landeswahlkompass and Wahlswiper.
+
+Altogether, the inspection of the data shows that the three VAAs do indeed differ in their
+design when it comes to representing parties’ policy stances and the concrete items on which
+parties are positioned. While there is a substantial overlap among the items the clear majority
+of them differ between the three VAAs; and the measurement level differs between binary
+measures on 31 items, (effectively) binary measures on 38 items, and a 5-point scale on 30
+items. In light of these notable design differences, it is conceivable that VAAs designed for
+the same elections might yield different party spaces when using the VAA data to position
+parties in a low-dimensional space. Conversely, if the design differences do not translate into
+different party spaces this would be good news for scholars who want to use VAA data to
+estimate party positions. Whether this is the case and how much the party spaces for the three
+VAAs converge will be examined in the following section.
+
+
+
+
+Checking the Impact of VAA Design on Estimated Party Positions
+For probing the consistency of latent party policy spaces of the examined VAAs, we focus on
+those parties that are represented on the German national level because these can be seen as
+the politically relevant parties for Lower Saxony as well. These are CDU, SPD, FDP, B90/Die
+Grünen, Die Linke, and AfD, which account for 97.6% of the votes at the 2017 state election.2
+Furthermore, the positions of these larger parties can plausibly be validated based on general
+knowledge of the German case, whereas the positions of very small parties competing in
+Lower Saxony are very hard to put in context (a crosscheck with all eleven parties included in
+all three VAAs, showing that the positions of the major parities remain largely the same as in
+the analysis without the very small parties, can be found in Figure A1 in the Online Annex).
+
+To extract the structure of party positions, the analysis employs multidimensional scaling
+(MDS). This inductive scaling technique has the advantage that it does not require predefining
+the dimensions on which parties vary. MDS uses information about the (dis-)similarities
+between objects and aims to best represent this information in a low-dimensional space (Borg
+and Groenen 2005). It scales object interrelations instead of item interrelations and can take
+into account the entire information about the policy items of a VAA without having to bundle
+them in two dimensions before positioning the objects. This is different from item-oriented
+scaling approaches, such as Mokken scaling analysis, which has been been applied in a
+number of contributions on VAAs (see e.g. Otjes and Louwerse 2014). Mokken scaling,
+however, is only suitable on the level of micro data stemming from VAA users as reliable
+estimates generally require more than 200 cases (Straat et al. 2014). In contrast, MDS is
+commonly used for a small number of cases.
+
+We apply metric MDS, as it imposes more restrictions than ordinal MDS – representing the
+relations of the intervals of the party similarity data – and, in turn, also exploits a higher level
+of information in the data, which is justified given the small number of objects. The
+similarities used in the MDS stem from pairwise party comparisons based on the VAA items.
+
+2
+     Adding the remaining parties in the inductive scaling approach is hardly useful as they would enter with
+     the same weight as the politically important parties even though the former are basically negligible.
+The dissimilarity matrix is generated using the Cityblock/Manhattan distance measure – so
+that all items enter in the calculation with equal weight.3
+
+The stress-values for a two-dimensional solution are all sufficiently low, with the highest
+score of 0.06 for the Wahlswiper. Looking more closely at the stress-values for different
+numbers of dimensions, it appears that the examined parties can be appropriately represented
+with two dimensions, whereas the stress for a single dimension would not be acceptable in all
+three VAAs. A scree test charting the stress-I-values for different numbers of dimensions,
+points to a three-dimensional solution only for the Wahlswiper. The other two VAAs yield
+clear elbows at two dimensions (see Figure A2 in the Online Annex).4 Due to this fact, for
+reasons of better interpretability and comparability, the following analysis presents the MDS-
+produced policy spaces for all three VAAs on two-dimensional maps.
+
+Figure 1 depicts the two-dimensional configurations resulting from the scaling analyses for all
+three examined VAAs as well as for the pooled data. The solutions for figures 1A-1C have
+been rotated using the Procrustes procedure to best correspond to the pattern in Figure 1D.
+While not substantially altering the party interrelations this eases the comparison. The
+dimensions are extracted in a way so that they capture the greatest part of the variance
+between the objects. They thus have no inherent substantial meaning and have to be
+interpreted based on what is known about the positioned objects. We will do this further
+below but for now focus on what is of primary interest: the consistency between the party
+spaces obtained from the three different VAAs.
+
+
+
+
+3
+    As the combined item set from all three VAAs uses different measurement levels, we use Gower’s distance
+    (1971) measure for the pooled data, which amounts to a rescaled (and weighted) Manhattan distance
+    (Everitt et al. 2011: 54) and is thus compatible with the results from the individual VAAs.
+4
+    For the crosscheck with all 11 parties, the scree tests indicate that adding a third dimension would then be
+    appropriate (see Figure A3 in the Online Annex). The third dimension is primarily needed to distinguish
+    the very small, insignificant parties from all the major ones but the AfD.
+                        Figure 1: Party Policy Spaces Based on the VAAs
+            (A) Landeswahlkompass                                        (B) Wahlswiper
+
+
+
+
+            (C) Niedersachs-O-Mat                               (D) All Three VAAs Combined
+
+
+
+
+Notes: Results from metric MDS. Only relative distances between parties can be interpreted, not their absolute
+scores. The configurations in charts B to D have been subjected to Procrustes rotation, so that they best
+correspond to the orientation in chart A. The dimensions do not have a fixed meaning but are merely a product of
+the statistical procedure.
+
+
+
+Even though the three VAAs are based on different design choices, the comparison of the four
+plots suggests a high degree of consistency. The overall pattern of inter-party relations is very
+similar. Lin’s (1989) concordance measure affirms this visual impression (see Table 2). The
+measure captures not just the linear covariations between two sets of scores and thus the
+profile similarities – as does Pearson’s correlation coefficient – but also the deviation between
+the absolute scores. Lin’s concordance measure is thus larger the more two score sets conform
+to a diagonal with a slope of 1. It is suitable for comparing agreement between the dimension
+scores extracted above because the parties structure has been rotated and stretched through
+Procrustes rotation so as to be best comparable. The alignment on the horizontal dimension,
+which captures clearly the larger part of the variation, is almost identical for all VAAs. On the
+vertical dimension there is still substantial concordance between Wahlswiper and
+Niedersachs-O-Mat, whereas Landeswahlkompass has only a poor concordance with the other
+two VAAs.
+
+
+
+      Table 2: Concordance Measures Between the Three VAA-Based Policy Spaces
+
+
+                                     Dimension 1                                  Dimension 2
+                                                Niedersachs-                                Niedersachs-
+                          Wahlswiper                                   Wahlswiper
+                                                   O-Mat                                       O-Mat
+Landeswahlkompass            0.994                 0.998                  0.826                 0.856
+
+Wahlswiper                                         0.996                                        0.976
+Notes: Scores calculated with Lin’s (1989) concordance measure.
+
+
+
+Comparing the configurations, there are small but noteworthy differences. First, Linke and
+Grüne are positioned more closely together by the Wahlswiper – which seems substantially
+less valid in comparison with the other party spaces in Figure 1 as the Linke is better
+represented with a more extreme position (to the left) compared to the Greens. Second, the
+vertical alignment of CDU, AfD and FDP differs between configurations. Whereas the
+Wahlswiper and the Niedersachs-O-Mat locate the CDU and the FDP about equidistant to the
+AfD, the Landeswahlkompass puts the FDP more than twice as far away from the AfD than
+from the CDU. This is striking as all three VAAs can claim to cover a broad range of issues
+for the election. Yet, the differences in the concrete selection of items can apparently lead to
+diverging relations among some party pairs or triplets (here: CDU, FDP and AfD).5 However,
+the described deviation regarding the AfD does not make a substantial difference insofar as
+the party is always located at the right extreme in the charts.
+
+The result for the combined data from all three VAAs in Figure 1D uses the most information
+and should thus be the most accurate one. The pattern appears to be a blend between the
+configurations from Landeswahlkompass and Niedersachs-O-Mat but is overall closer to the
+latter due to the vertical alignment among the right-wing parties.
+
+
+
+5
+     Landeswahlkompass contains 14 (of 30) items that position the AfD closer to the CDU than to the FDP. In
+     contrast, this holds true for only 8 of the 38 Niedersachs-O-Mat items. The larger share of the items in
+     question contained in Landeswahlkompass cannot simply be attributed to specific topics.
+The large number of items in the combined dataset offers the possibility to further probe the
+importance of item selection. Specifically, if parties’ positions on the VAA-items are indeed
+strongly structured, constrained by an ideological bundling of policy stances, it is likely that
+the removal of some items can be compensated with the existence of other issues. If taking a
+certain stance on law and order consistently goes along with taking a certain stance on
+immigration, then removal of one of these issues does not necessarily imply a crucial loss of
+information for the overall party positioning.
+
+To put this assumption to a test and examine at which number of items the extraction of party
+spaces becomes markedly more unreliable, we randomly sample between 1 and 98 items from
+all 99 items. This sampling is done 100 times for each sampled number of items. For each run
+we obtain a configuration and its congruence (sum of squares for coordinate distances) with
+the configuration for the full item set (after Procrustes rotation). These congruence-values are
+then averaged for the 100 runs by each number of items sampled. Figure 2 presents the
+number of sampled items on the x-axis and the corresponding averaged congruence score over
+100 runs on the y-axis. The line remains very flat for 98 to about 50 sampled items. Below 40
+items, the fluctuations gradually become larger, and a break is discernible at about 20 items.
+The graph thus suggests that 20 items should be seen as bare minimum.
+
+
+
+Figure 2: Sensitivity of Results for the Combined Data to the Number of Included Items
+
+
+
+
+Notes: The horizontal line is based on comparisons of a random distribution of six coordinates (parties) with the
+configuration in Figure 1D. 1000 such random distributions have been generated and congruence scores for the
+comparison with said configurations have been calculated for each. The horizontal line represents the 2.5-percent
+quantile of that distribution of incongruence scores.
+We do not know yet, however, how large the depicted sampled deviations from the
+configuration in Figure 1D are. To get a better grasp of the charted incongruence scores, two
+further procedures have been performed. First, we have generated 1000 randomly distributed
+coordinates for six objects (within the bounds -1 to +1 on each dimension) and calculated for
+each run the congruence scores between these random configurations and the configuration
+based on the scaling of the combined VAA-data with all 99 items (Figure 1D). The 2.5-
+percent quantile for the resulting distribution of congruence scores is charted as a horizontal
+dashed line in Figure 2. In other words, only in 2.5 percent of the random samples, their
+incongruence with Figure 1D is below about 0.8. This additional information allows for a
+substantial interpretation of the depicted scores: With about five or less randomly sampled
+VAA-items, the configuration cannot clearly be distinguished from one generated randomly.
+
+Second, 100 simulation runs for different numbers of sampled items (25, 40, and 80) are
+depicted in Figure 3. The clouds in the three charts illustrate to what degree the configuration
+based on the entire data becomes irrecognizable with the removal of items. Whereas the
+clouds are very dense with 80 items, 40 items still yield easily distinguishable party spheres.
+With 25, however, the feathering of these clouds becomes quite large – we would not expect
+to obtain an accurate estimate of party positions based on this number of items.
+
+
+
+Figure 3: Comparison Between Simulation Results With 80, 40 and 25 Items in the MDS
+         (A) 80 Items                          (B) 40 Items                           (C) 25 Items
+
+
+
+
+Notes: Data points are based on 100 random samples from the 99 items overall. Scaling as in Figure 1.
+
+
+
+As a further robustness check we performed a jackknife procedure with topics instead of
+individual VAA-items. Thus, for each of the topics that are depicted in Table 1, all items have
+been dropped from the data, and the deviation (sum of squares) from the configuration with
+the combined VAA-data consisting of all 99 items has been calculated (see Figure 4). From
+the chart alone, one can see that the law and order issue domain has the most unique
+information, its removal distorts the configuration much more than that of any other topic.
+
+To see how large these distortions are in substantive terms, it is instructive to compare the
+score in Figure 4 with the incongruence scores that result from the random item removal
+(Figure 2): removing the law and order topic (15 items) corresponds to randomly removing 45
+items – which however still yields results highly similar to those obtained with all 99 issues in
+the dataset. Removing the topic of immigration and integration (nine items) corresponds to
+randomly removing twenty issues. These findings suggest that a systematic topic-removal of
+items can weigh much more heavily than random removal. Still, the results also suggest a
+high robustness of the latent policy space contained in the VAA-data, even to a gross
+systematic distortion – at least as long as there are still enough other items to compensate this
+loss of information.
+
+
+
+        Figure 4: Incongruence Scores Resulting From Removal of Items by Topics
+
+
+
+
+Notes: Incongruence is based on comparison of the configuration using all 99 items with the configuration that
+results when removing all items of a given topic from this set.
+
+
+
+
+Inspecting the Dimensionality of Extracted Policy Spaces
+The scaling analysis in the previous section yielded a structure of party positions that exhibits
+the familiar constellation of the German party system. Knowing the general programmatic
+stance of these parties, it is possible to make sense of the dimensions in the extracted party
+policy spaces (Figure 1). The horizontal dimension, which captures the larger share of the
+variance between the parties, resembles a general left-right dimension with a party ordering
+well-known in Germany. The vertical dimension, however, is harder to interpret. It is mainly
+useful for separating the FDP from the other parties, but this could be for various reasons.
+
+To get a better grasp of the dimensionality, we draw on a two-pronged approach. First, we
+make use of the fact that the Landeswahlkompass involves a schema for assigning the VAA-
+items to predefined dimensions – an economic one and a moral-societal one. We use this
+apriori construction of the scales and examine how the resulting party alignment along these
+known axes corresponds to the inductive scaling results via MDS. Second, we supplement the
+MDS analysis with a procedure that determines the degree to which the original items are
+related to the extracted dimensions (Kruskal and Wish 1978). This so-called property fitting
+procedure is also best done with data from the Landeswahlkompass due to the higher
+measurement level of its items (five-point scale). As the dimensionality can be expected to be
+similar in all three VAAs, the interpretations drawn from this property fitting analysis can be
+transferred to the other VAA configurations.
+
+Comparing the party positions on the predefined dimensions of the Landeswahlkompass in
+Figure 5A with the MDS configuration shown in Figure 5B, we get an almost identical
+pattern. Figure 5B visualizes the rotation needed for optimal congruence of both
+configurations and contains the point discrepancies (arrows) after rotation. Knowing the
+meaning of the predefined axes in Figure 5A, these can be used to interpret the inductively
+won MDS configuration in Figure 5B. An economic policy contrast would then run from the
+the top left to the bottom right while a socio-cultural contrast is marked by the diagonal
+running from the the bottom left to the top right.
+
+      Figure 5: Party Positions on the Predefined Axes of the Landeswahlkompass
+         (A) Predefined Dimensions                   (B) Procrustes Rotation to Match Figure 1D
+Does this dimensionality also bear out when assessing how the MDS dimensions are related
+to the original policy items in the VAA? The results from this property fitting have to be seen
+with some caution in light of the low number of objects. However, the pattern is rather
+straightforward as most items are clearly related to the first dimension of the MDS
+configuration, but unrelated or very weakly related to the second (see Table A3 in the Online
+Annex). Only few items are explained better by the second than the first dimension (merging
+districts to decrease costs, legalizing Cannabis, shop opening days on Sundays, and doctors
+should be able to choose their workplace even though this means fewer doctors in rural
+regions) and only two of them are clearly more related to the second dimension than to the
+first (Lower Saxony should keep its seat in the Supervisory Board of Volkswagen and the
+basic provision with gas, water and electricity should remain in the hands of the state). Taken
+together, these items have a common programmatic core as they point to the degree to which
+the state should regulate and intervene in various areas of the economy and the labor market.
+This is also why the second dimension is most important for positioning the liberal FDP in
+relation to the other parties. The FDP takes a position that is associated with less state
+intervention based on the interpretation of the second dimension just described. However, the
+items associated with the first and more important dimension in the MDS belong to various
+issue domains. Items of the topics law and order, agriculture and environment, society and
+culture, and education all load strongly on that first dimension whereas economic issues are
+comparatively more weakly tied to this dimension and show at least moderate loadings on the
+second dimension.
+
+This has important implications because it means that the dimensional interpretation of the
+MDS space is not identical to the one based on the predefined dimensions, even though the
+overall structure of party relations is almost identical. The first dimension in the MDS
+configuration bundles various topics – mainly law and order, environment, and education –,
+but this dimension corresponds to a diagonal running from top left to bottom right in the space
+with the predefined dimensions (Figure 5A). Therefore, the vertical axis in Figure 5A does
+not seem to be such a clear-cut social-moral axis marked by a conservative and a liberal pole.
+On the one hand, the Landeswahlkompass seems to nicely represent the party interrelations
+for the election. On the other hand, the labeling of the axes seems to oversimplify a more
+complex picture, and one should thus be careful with a priori assigning items to dimensions
+based on theoretical considerations.
+Discussion
+As voting advice applications contain information about party stances on a set of policy items,
+this data source can be used to extract party policy spaces and estimate party positions. The
+core element on which this approach draws, the selection of policy items, their number,
+content, and measurement level, can however be designed differently even for the same
+election and may affect the resulting party position structure. To test the role of such design
+differences, we have exploited relevant variation in a real-world setting, at the 2017 German
+Länder election in Lower Saxony. The three VAAs on offer at this election differed in their
+number and selection of items, the items’ measurement levels, and the implicit weighting of
+topics based on the chosen items. Despite these differences the party spaces extracted via
+multidimensional scaling from the three VAAs are overall very consistent.
+
+This finding is not only of interest to party researchers, but it is also important for the primary
+purpose of VAAs, which is to match voters to parties. An accurate and valid representation of
+party-interrelations is a prerequisite for giving meaningful comparative recommendations.
+And the criticism of biases due to the choice of policy items that can be launched against
+VAA-data as the basis for estimating party positions could also be made with regard to giving
+recommendations. After all, the voter-party match depends on the specific set of items that is
+used in a VAA.
+
+Being able to pool information of the three VAAs, we have furthermore exploited the
+resulting high number of items (in total 99) to probe the sensitivity of the extracted party
+spaces to the random item removal as well as to the systematic removal of entire issue
+domains (topics). The results show a satisfactory reliability if about 40 of the entire set of 99
+items are randomly sampled. Approaching a number of 20 items, however, the resulting
+policy spaces begin to lack robustness and a valid party positioning may no longer be
+possible. It should be noted though, that this finding is based on a random sampling of items –
+a purposeful selection of different items may well be able to produce meaningful policy
+spaces with as few as 15 to 20 items. The extracted party space based on the combined item
+set is also robust to dropping entire topics. Some topics, particularly law and order, however
+lead to a systemtatic loss of information that is harder to compensate through remaining items.
+The overall high consistency can be made plausible in light of parties’ policy stances being
+highly structured. If parties are opposed to one issue they are also very likely to be opposed to
+other issues. Given redundant information in the data, randomly dropping items will not
+directly lead to critical information loss. This may, however, be different in other electoral
+contexts. In the case of the examined election, a comparatively simple party space emerged,
+with one main dimension already capturing most of the variation among the parties.
+
+Finally, based on the additional analyses for interpreting the dimensions that have resulted
+from the inductive scaling, one would caution against using apriori defined dimensions to
+construct a party space based on VAA-data. Based on the comparison with the dimensions
+from the inductive scaling, the predefined dimensions seem much less clear-cut than their
+labels suggest. While having predefined dimensions allows for a visual representation of
+parties as part of the VAA, which may provide useful information for users, assigning items
+to one dimension or the other may well be an undue reduction of complexity and ultimately
+be misleading. Simply positing two political dimensions that are independent from one
+another may artificially separate these dimensions even when they are actually correlated.
+
+Altogether, the results from the analysis suggest that getting the structure of party positions
+right forms less of a problem as long as a certain number of relevant items exists. Yet,
+conveying the dimensionality of the policy spaces at an adequate level of complexity remains
+a difficult task. A major challenge is thus to spatially present party positions and visualize
+them to VAA users while supplementing the party space with a clear-cut interpretation of its
+dimensionality. This amounts to an important trade-off in the design of VAAs: On the one
+hand, they are supposed to provide citizens easily understandable information about political
+affairs; on the other hand, they should offer a reliable and valid representation of party
+positions and their interrelations.
+
+The main purpose of this research note was to test whether VAA-data is suited for measuring
+party positions and extracting policy spaces. Yet, some of our results can also be transferred
+to questions regarding the main purpose of VAAs – i.e. matching users to parties.The question
+of dimensionality can be avoided through the conservative and straightforward approach of
+calculating overall user-party proximities without assumptions about dimensions and spatial
+models. When additionally aiming to visualize users’ positions in relation to parties in a low
+dimensional space, the results above suggest – in line with previous research (Otjes and
+Louwerse 2014; Louwerse and Rosema 2014; Gemenis 2013; Germann et al. 2015) – that
+using predefined dimensions risks imposing a structure on the data that is not backed by the
+empirically obtained patterns in the data.
+
+For building valid scales on which to position users it is thus better to employ a form of scale
+validation that is rooted in the user responses generated for the very election in question and
+at a point when the VAA design can still be altered (Germann and Mendez 2016). This
+however, requires a considerably greater effort while it is uncertain whether only few clear-
+cut dimensions will emerge at all. Yet, it should be noted that the dimensions one can extract
+based on user responses are not necessarily the same as those extracted from the parties’ own
+advocated policy stances as contained in the VAA, i.e. before any user responses are
+collected. This makes representing users and parties in a common space even more difficult.
+Also, even if clear-cut dimensions do emerge it may be hard to label and communicate them
+to users as part of a visualization used in a VAA.
+
+This pragmatic aspect does not arise if one leaves the user-level aside and is merely interested
+in generating party policy spaces based on the policy items contained in a VAA. As the
+analysis above suggests, this data is indeed suitable for reliably mapping party interrelations
+and can be used to carefully probe along which dimensions party differences are best
+described. The inductive scaling used in this research note also underscores that it is
+ultimately an empirical question what kind of political semantic structures party spaces.
+Furthermore, party spaces may be malleable and specific to an election and do not have to
+conform to a simple pattern that we would perhaps prefer.
+
+
+
+
+Literatur
+Benoit, K. and M. Laver (2006). Party Policy in Modern Democracies. 1. publ. London:
+       Routledge.
+
+Borg, I. and P. JF Groenen (2005). Modern multidimensional scaling: theory and
+      applications. 2nd ed. New York: Springer.
+
+Bräuninger, T. and M. Debus (2008). Der Einfluss von Koalitionsaussagen,
+       Programmatischen Standpunkten und der Bundespolitik auf die Regierungsbildung in
+       den Deutschen Ländern, Politische Vierteljahresschrift, 49:2, 309–338.
+
+Castles, F. G and P. Mair (1984). Left-Right Political Scales. Some “Expert” Judgements,
+       European Journal of Political Research, 12:1, 73–88.
+
+Clinton, J., S. Jackman and D. Rivers (2004). The Statistical Analysis of Roll Call Data,
+       American Political Science Review, 98:02, 355–370.
+
+Dumont, P. and R. Kies (2012). Smartvote.lu: usage and impact of the first VAA in
+     Luxembourg, International Journal of Electronic Governance, 5:3/4, 388.
+
+van der Eijk, C. and M. N Franklin (1991). European Community Politics and Electoral
+      Representation. Evidence From the 1989 European Elections Study, European Journal
+      of Political Research, 19:1, 105–127.
+Everitt, B. S., S. Landau, M. Leese and D. Stahl, eds. (2011). Cluster analysis. 5th ed.
+        Chichester, West Sussex, U.K: Wiley.
+
+Garzia, D. and S. Marschall (2016). Research on Voting Advice Applications: State of the Art
+       and Future Directions: Research on Voting Advice Applications, Policy & Internet,
+       8:4, 376–390.
+
+Gemenis, K. (2013). Estimating parties’ policy positions through voting advice applications:
+     Some methodological considerations, Acta Politica, 48:3, 268–295.
+
+Gemenis, K. (2015). An iterative expert survey approach for estimating parties’ policy
+     positions, Quality & Quantity, 49:6, 2291–2306.
+
+Germann, M. and F. Mendez (2016). Dynamic scale validation reloaded: Assessing the
+      psychometric properties of latent measures of ideology in VAA spatial maps, Quality
+      & Quantity, 50:3, 981–1007.
+
+Germann, M., F. Mendez, J. Wheatley and U. Serdült (2015). Spatial maps in voting advice
+      applications: The case for dynamic scale validation, Acta Politica, 50:2, 214–238.
+
+Gower, JC (1971). A General Coefficient of Similarity and Some of Its Properties,
+      Biometrics, 27:4, 857.
+
+Helbling, M. and A. Tresch (2011). Measuring party positions and issue salience from media
+       coverage: Discussing and cross-validating new indicators, Electoral Studies, 30:1,
+       174–183.
+
+Janda, K., R. Harmel, C. Edens and P. Goff (1995). Changes in Party Identity. Evidence From
+       Party Manifestos, Party Politics, 1:2, 171–196.
+
+Klingemann, H.D., A. Volkens, J. L. Bara, I. Budge and M. D. McDonald (2006). Mapping
+      Policy Preferences II. Estimates for Parties, Electors, and Governments in Eastern
+      Europe, European Union, and OECD 1990 - 2003. 1. publ. Oxford: Oxford University
+      Press.
+
+Krouwel, A., T. Vitiello and M. Wall (2012). The practicalities of issuing vote advice: a new
+      methodology for profiling and matching, International Journal of Electronic
+      Governance, 5:3/4, 223.
+
+Kruskal, J. B. and M. Wish (1978). Multidimensional scaling. Beverly Hills: Sage
+      Publications.
+
+Ladner, A., J. Fivaz and J. Pianzola (2012). Voting Advice Applications and Party Choice:
+       Evidence From smartvote Users in Switzerland, International Journal of Electronic
+       Governance, 5:3/4, 367.
+
+Laver, M., K. Benoit and J. Garry (2003). Extracting Policy Positions from Political Texts
+       Using Words as Data, The American Political Science Review, 97:2, 311–331.
+
+Libbrecht, L., B. Maddens, W. Swenden and E. Fabre (2009). Issue Salience in Regional
+       Party Manifestos in Spain, European Journal of Political Research, 48:1, 58–79.
+Lin, L. I. (1989). A Concordance Correlation Coefficient to Evaluate Reproducibility,
+       Biometrics, 45:1, 255.
+
+Lipset, S. M. and S. Rokkan (1967). Party Systems and Voter Alignments. Cross National
+        Perspectives, in Lipset, S. M. and S. Rokkan (eds.), vol. New York: Free Press, 1–64.
+
+Louwerse, T. and S. Otjes (2012). Design challenges in cross-national VAAs: the case of the
+      EU Profiler, International Journal of Electronic Governance, 5:3/4, 279.
+
+Louwerse, T. and M. Rosema (2014). The design effects of voting advice applications:
+      Comparing methods of calculating matches, Acta Politica, 49:3, 286–312.
+
+Mair, P. and C. Mudde (1998). The Party Familiy and its Study, Annual Review of Political
+       Science, 1:1, 211–229.
+
+Marschall, S. (2011). Nutzer und Nutzen – Der Wahl-O-Mat zur Bundestagswahl 2009, in
+      Schweitzer, E. J. and S. Albrecht (eds.), Das Internet im Wahlkampf, vol. Wiesbaden:
+      VS Verlag für Sozialwissenschaften, 136–153.
+
+Otjes, S., and Tom L. (2014). Spatial models in voting advice applications, Electoral Studies,
+        36, 263–271.
+
+Pianzola, J. (2014). Swing Voting due to Smartvote Use? Evidence from the 2011 Swiss
+       Federal Elections, Swiss Political Science Review, 20:4, 651–677.
+
+Poole, K. T. (2005). Spatial Models of Parliamentary Voting. Cambridge: Cambridge
+       University Press.
+
+Slapin, J. B. and S. O. Proksch (2008). A Scaling Model for Estimating Time-Series Party
+        Positions from Texts, American Journal of Political Science, 52:3, 705–722.
+
+Straat, J. H., L. A. van der Ark and K. Sijtsma (2014). Minimum Sample Size Requirements
+        for Mokken Scale Analysis, Educational and Psychological Measurement, 74:5, 809–
+        822.
+
+Wagner, M. and O. Ruusuvirta (2012). Matching voters to parties: Voting advice applications
+      and models of party choice, Acta Politica, 47:4, 400–422.
+
+Wagschal, U. and P. D. König (2014). Alle gleich? Analyse der programmatischen
+      Parteienunterschiede bei Bundestagswahlen auf der Basis des Wahl-O-Mats, ZParl,
+      45:4, 865–884.
+
+Wagschal, U. and P. D. König (2015). Die Links-Rechts-Positionierung der Parteien bei den
+      Bundestagswahlen 2005 bis 2013: Eine empirische Analyse anhand des Wahl-O-Mat,
+      in Korte, K. R. (ed.), Die Bundestagswahl 2013, vol. Wiesbaden: Springer
+      Fachmedien Wiesbaden, 185–210.
+
+Walgrave, S., M. Nuytemans and K. Pepermans (2009). Voting Aid Applications and the
+      Effect of Statement Selection, West European Politics, 32:6, 1161–1180.
+
+Wheatley, J. (2012). Using VAAs to explore the dimensionality of the policy space:
+      experiments from Brazil, Peru, Scotland and Cyprus, International Journal of
+      Electronic Governance, 5:3/4, 318.
+Wheatley, J., C. Carman, F. Mendez and J. Mitchell (2014). The dimensionality of the
+      Scottish political space: Results from an experiment on the 2011 Holyrood elections,
+      Party Politics, 20:6, 864–878.
+Online-Annex
+
+
+                                 Table A1: Overview of the Three VAAs
+
+                   Wahlswiper                      Landeswahlkompass                     Niedersachs-O-Mat
+
+Number of items    31                              30                                    38
+
+Response            Yes                            Strongly agree                          Agree
+options             No                             Agree                                   Neutral
+                    Skip question                  Neutral                                 Disagree
+                                                    Disagree                                Skip question
+                                                    Strongly disagree
+                                                    No opinion
+Included parties   15 Parties:                     11 Parties:                           13 Parties:
+
+                   CDU, SPD, Grüne, FDP,           CDU, SPD, Grüne, FDP, Linke,          CDU, SPD, Grüne, FDP,
+                   Linke, Piraten, FW, AfD,        Piraten, FW, AfD, Die Partei,         Linke, Piraten, FW, AfD, Die
+                                                                             3
+                   Die                  PARTEI,    Tierschutzpartei, V-Partei            PARTEI,       Tierschutzpartei,
+                   Tierschutzpartei,      ÖDP,                                           ÖDP, DM, V-Partei3
+                   DM,    V-Partei3,      REP*,
+                   BdG*
+
+Weighting          Weighting assigned only         No      weighting    of      single   Questions can be marked as
+                   indirectly     via      „skip   questions possible, only of topic     important. Marked questions
+                   question“                       areas     (e.g.     Environment,      receive double weighting in
+                                                   Education, Economy).                  the evaluation process.
+
+Type          of    Percentage score of            The political “coordinates”                  Percentage score of
+                     compatibility with a             of users is displayed in a                   compatibility with a
+evaluation
+                     party                            two-dimensional graph.                       party
+                    Detailed analysis of             Economic alignment is                       Detailed analysis of
+                     single items, including          measured on the horizontal                   single items,
+                     the parties’ stated              axis, socio-political                        including the
+                     reasons for their                alignment varying from                       parties’ stated
+                     selected response                conservative to progressive                  reasons for their
+                    Link to the websites             on the vertical axis                         selected response
+                     and election manifestos        Option to receive results for
+                     of parties                       specific topic areas (e.g.
+                                                      Environment, education,
+                                                      economy)
+                                                    Detailed analysis of single
+                                                     items, including the parties’
+                                                     stated reasons for their
+                                                     selected answer as well as
+                                                     openly accessible statements
+                                                     by parties (e.g. election
+                                                     manifestos)
+Procedure      of      No information                Development of 30 questions /     Development of 71 questions
+creating       the                                   propositions by a team of         / propositions by a team of
+questions          /                                 academics of the University of    academics of the University
+propositions                                         Oldenburg                         of Freiburg, Braunschweig
+                                                                                       and     Düsseldorf.      Election
+                                                                                       manifestos, party manifestos,
+                                                                                       press        reports,        and
+                                                                                       assessments by regional daily
+                                                                                       newspapers      regarding     the
+                                                                                       relevance of specific themes
+                                                                                       for the election are taken into
+                                                                                       account.
+
+Where          are     Parties respond to directly   Parties respond directly to the   Parties respond directly to
+positions      of      the 31 questions they are     30 questions they are given by    the 71 questions they are
+parties and their      given by the VAA.             the VAA. Subsequently, the        given      by    the       VAA.
+reasons derived                                      team of academics reviews the     Subsequently,      the      team
+from?                                                plausibility of these responses   conducts a statistical analysis
+                                                     and may ask parties to revise     to select 38 items that allow
+                                                     responses. The parties have the   to discriminate between the
+                                                     final say, however, as long as    parties’ positions the most.
+                                                     they justify their choices.
+
+
+
+Special features     Also available as           Positioning of parties and       Special selection process
+                       mobile app                    users in a two-dimensional       that aims to increase the
+                     Intuitive user                 graph according to               potential to discriminate
+                       interface with swipe          ideological alignments           between the parties’
+                       movements                                                      positions.
+                       (convenient
+                       especially for
+                       smartphones)
+                     Short explanatory
+                       video for each
+                       question / proposition
+Notes: * Republikaner (REP) and Bündnis der Generationen (BdG) were not admitted to the election. They were
+nevertheless included in the Wahlswiper at first but were then excluded from the evaluation process.
+Sources:          https://wahlswiper.de/;       https://www.demokratie.niedersachsen.de/startseite/themen/
+landtagswahl_niedersachsen/faq-zum-landeswahlkompass-157615.html; http://www.kandidatomat.de/;
+                Table A2: Items That are Included in Each of the Three VAAs
+                                                                             Share of non-uniform
+                                                                                  responses
+Item                                                                      A-B A-C       B-C Average
+Should diesel cars be banned in cities that are particularly
+                                                                                  18,2%               18,2%
+polluted?
+Should it be allowed to hunt wolves in Lower Saxony?                     0,0% 0,0%          0,0%       0,0%
+Should Gorleben be excluded in the national searching for a
+                                                                       0,0%                            0,0%
+permanent nuclear waste depository?
+Should new highways like the A20, A33 North or the A39
+                                                                      13,6%                           13,6%
+be built?
+Should there be nature reserve areas in the river mouth of
+                                                                 9,1%                                  9,1%
+Elbe and Weser?
+Should police custody be extended up to 18 months for
+                                                                       0,0%                            0,0%
+persons who are likely to threaten public safety?
+Should cannabis be legalised within the scope of pilot
+                                                                 9,1%                                  9,1%
+projects?
+Should there be more video surveillance of public streets
+                                                            0,0% 4,5% 4,5%                             3,0%
+and space?
+Should Lower Saxony hire more policemen?                                                   13,6%      13,6%
+Should the voting age for elections on the Länder level
+                                                        0,0% 0,0%                           0,0%       0,0%
+(federate state level) be lowered to 16 years?
+Should politicians represent Lower Saxony by serving on
+                                                             9,1%                                      9,1%
+Volkswagen’s board of directors?
+Should Lower Saxony sell its shares of VW?                                                 18,2%      18,2%
+Should Lower Saxony deport reject asylum seekers more
+                                                                                           22,7%      22,7%
+consistently?
+Should the Mietpreisbremse (literally “rental price brake”)
+                                                                                            9,1%       9,1%
+be abandoned in Lower Saxony?
+Lower Saxony should not reintroduce tuition fees                         4,5%                          4,5%
+Lower Saxony’s government should only support those
+agricultural holdings which manage their farmland 9,1%                                                 9,1%
+organically
+There should be a ban on “fracking” in Lower Saxony.                     0,0%                          0,0%
+
+Stores should be permitted to open on Sundays as well.                   9,1%                          9,1%
+Police forces should carry a personal marker (collar
+                                                     4,5%                                              4,5%
+number) for identification
+Average                                                                  3,4% 7,1%          8,2%
+
+Notes: A = Landeswahlkompass, B = Niedersachs-O-Mat, C = Wahlswiper. Phrasing of items adopted from
+Wahlswiper. Diverging positive or negative direction of the phrasing of the questions were taken into account.
+To make responses between the VAAs comparable, responses by the Landeswahlkompass were transformed into
+1 or 0 if they were in the categories “agree” and “strongly agree” or “disagree” and “strongly disagree”,
+respectively (the original data of the remaining two VAAs is coded in that way, too). Missing values and neutral
+responses were coded as middle category (0.5).
+Figure A1: Configurations With all Eleven Parties Contained in all Three VAAs
+
+        (A) Landeswahlkompass                         (B) Wahlswiper
+
+
+
+
+         (C) Niedersachs-O-Mat                         (D) Combined
+                   Figure A2: Scree Plots
+
+(A) Landeswahlkompass                         (B) Wahlswiper
+
+
+
+
+(C) Niedersachs-O-Mat                   (D) All Three VAAs Combined
+Figure A3: Scree Plots for the Data Used for Figure A1 (Including all Eleven Parties)
+
+           (A) Landewahlkompass                            (B) Wahlswiper
+
+
+
+
+           (C) Niedersachs-O-Mat                     (D) All Three VAAs Combined
+                                                      Table A3: Results From Property Fitting Based on Landeswahlkompass
+Item                                                                                                                                     R²    Slope   Topic                          D1     D2
+Police forces should carry a personal marker (collar number) for identification.                                                        0.98   -0.17   Law and order                 0.98   0.17
+All coal power stations in Lower Saxony should be shut down within the next 10 years.                                                   0.96   -0.02   Agriculture and environment   0.98   0.02
+Lower Saxony should fight left-wing extremism much stronger as it did in the past.                                                      0.93   -0.07   Society and culture           0.96   0.07
+Staying down a year in school should be repealed.                                                                                       0.98   -0.27   Education                     0.96   0.26
+Foreigners who are suspected of committing a severe crime in Germany should be deported.                                                0.95   -0.23   Immigration and integration   0.95   0.22
+The further development of comprehensive schools in Lower Saxony should be stopped.                                                     0.90   -0.08   Education                     0.95   0.08
+In order to avoid discrimination, Lower Saxony should use gender-neutral language.                                                      0.87    0.06   Society and culture           0.93   0.05
+Delinquent asylum seekers should in any case be deported.                                                                               0.91    0.21   Immigration and integration   0.93   0.20
+Children should spend more time with their parents than being supervised at school in the afternoon.                                    0.91    0.30   Education                     0.91   0.27
+Syllabi at schools should focus more on natural sciences and mathematics than on subjects such as arts or social studies.               0.85   -0.18   Education                     0.91   0.17
+Research for military purposes should be allowed at Universities in Lower Saxony.                                                       0.89   -0.30   Education                     0.91   0.28
+For the protection of the economy no further protective areas for animals and plants (fauna and flora habitats) should be designated.   0.95    0.43   Agriculture and environment   0.89   0.39
+There should be more video surveillance in public space.                                                                                0.91    0.42   Law and order                 0.88   0.37
+There should be a general ban on “fracking” in Lower Saxony.                                                                            0.77    0.08   Agriculture and environment   0.87   0.07
+In order to better identify criminals, the police should be allowed to collect more private data.                                       0.80    0.22   Law and order                 0.87   0.19
+Hunting wolves should be allowed in Lower Saxony.                                                                                       0.75   -0.17   Agriculture and environment   0.85   0.15
+Lower Saxony’s government should only support agricultural holdings which manage their farmland organically.                            0.83   -0.38   Agriculture and environment   0.85   0.32
+There should be stricter stipulations for industrial livestock farming, even if this leads to rising prizes.                            0.91   -0.58   Agriculture and environment   0.83   0.48
+Islamic holidays should be acknowledged as official holidays in Lower Saxony too.                                                       0.60   -0.13   Society and culture           0.77   0.10
+The voting age for elections on the Länder level (federate state level) should be lowered to 16 years.                                  0.74    0.55   Political system              0.75   0.41
+Cars which use Diesel should be banned in cities that are particularly polluted to improve air quality.                                 0.51    0.23   Agriculture and environment   0.69   0.16
+Lower Saxony should not reintroduce tuition fees.                                                                                       0.60   -0.53   Education                     0.69   0.36
+Lower Saxony should place more responsibility for the implementation of large-scale infrastructure projects on private companies.       0.78   -1.00   Economy, finance, labor       0.63   0.63
+Cannabis should be legalized.                                                                                                           0.89    1.18   Internal security             0.61   0.72
+In order to save costs, communities should still be merged in the future.                                                               0.89    1.18   Political system              0.61   0.72
+In all schools in Lower Saxony Islamic religious education should be offered.                                                           0.52    0.73   Education                     0.58   0.42
+Stores should in general be permitted to open on Sundays.                                                                               0.83   -1.67   Economy, finance, labor       0.47   0.79
+Physicians should be allowed to choose where they wish to work, even if this means that there are fewer doctors in rural regions.       0.86   -1.74   Economy, finance, labor       0.47   0.81
+Lower Saxony should keep a seat in Volkswagen’s supervisory committee                                                                   0.85   -3.03   Political system              0.29   0.88
+The basic service with gas, water, and electricity should exclusively be under public authority.                                        0.62   -2.60   Infrastructure and traffic    0.28   0.74
+Notes: Results from regression item scores on the dimension scores over parties as cases. The last two columns contain the standardized regression coefficients (betas) from this
+analysis. Own translation of items from Landeswahlkompass.
+
+
+
+
+                                                                                                              29
+

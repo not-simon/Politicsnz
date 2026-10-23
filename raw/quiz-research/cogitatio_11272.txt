@@ -1,0 +1,1080 @@
+Politics and Governance
+2026 • Volume 14 • Article 11272
+https://doi.org/10.17645/pag.11272
+
+
+
+    ARTICLE                                                                                            Open Access Journal
+
+
+
+Televised Influence: Examining Opinion Formation Through Live
+Completion of a Voting Advice Application
+Nikandros Ioannidis              and Vasiliki Triga
+
+Department of Communication and Marketing, Cyprus University of Technology, Cyprus
+
+
+Correspondence: Nikandros Ioannidis (nikandros.ioannidis@cut.ac.cy)
+
+
+Submitted: 2 September 2025 Accepted: 12 November 2025 Published: 21 January 2026
+
+Issue: This article is part of the issue “Voting Advice Applications: Methodological Innovations, Behavioural
+Effects, and Research Perspectives” edited by Diego Garzia (University of Lausanne / Bologna University),
+Stefan Marschall (Heinrich Heine University Düsseldorf), Mathias Wessel Tromborg (Aarhus University), and
+Andreas Albertsen (Aarhus University), fully open access at https://doi.org/10.17645/pag.i485
+
+
+
+Abstract
+The influence of candidate cues on voters’ opinion formulation is a subject of ongoing debate in political
+science. This study examines the 2023 Cyprus presidential elections, when the leading candidates
+completed the country’s most popular voting advice application live on national television. This
+unprecedented event created a natural experiment to test how televised disclosure of candidate positions
+affects alignment between voters and their preferred candidates. Drawing on voting advice application
+responses across a wide set of policy questions and employing regression discontinuity in time models, we
+estimate changes in voter–candidate congruence before and after the broadcast. The results show no
+uniform effect. For Andreas Mavroyiannis, supporters converged toward his progressive and pro‐solution
+profile, particularly on foreign policy, welfare, and Cyprus settlement questions. For Averof Neophytou and
+Nikos Christodoulides, congruence did not increase consistently; in some cases, divergence emerged, as
+explicit cues exposed divisions within their heterogeneous or ambivalent coalitions. The findings provide
+mixed support for the expectation that cues strengthen congruence only on less entrenched issues.
+Convergence was most evident on novel questions, but divergence also occurred on identity and
+Cyprus‐related issues. The study highlights that candidate cues can foster alignment but can also generate
+divergence, depending on candidate characteristics, issue polarisation, and coalition heterogeneity.
+
+
+Keywords
+candidate cues; elite influence; public opinion; voting advice applications; voter–candidate congruence
+
+
+
+
+© 2026 by the author(s), licensed under a Creative Commons Attribution 4.0 International License (CC BY).                1
+1. Introduction
+
+Candidate cues help voters form opinions under limited information. Rather than reflecting political
+knowledge, cue‐taking shows how citizens rely on trusted elites to navigate complex choices (Lupia, 1994;
+Popkin, 1991). This behaviour may simplify decision‐making but can also weaken independent judgement
+and accountability (Samuels & Zucco, 2014).
+
+
+Political cues are signals from elites that help citizens interpret issues, evaluate policies, or position themselves
+in political debates (Sniderman et al., 1991). Party labels, endorsements, and candidate statements allow voters
+to align preferences without detailed knowledge. Party cues are considered stable influences because they
+embody ideological traditions and historical experiences (Campbell et al., 1960). By contrast, candidate cues
+highlight individuals’ roles, especially in systems where personalities dominate competition (Lenz, 2012).
+
+
+Cues matter most when issues are complex, new, or of low salience, since voters with limited knowledge or
+weak predispositions rely on trusted elites. Lupia (1994) showed that endorsements in a Californian
+referendum helped voters make decisions consistent with complete information. Cohen (2003) found that
+people often follow their party’s stance even when it conflicts with ideology. Druckman et al. (2013)
+demonstrated that partisan polarisation amplifies cue effects by shaping the interpretation of conflicting
+messages. Yet, cues are weaker when attitudes are crystallised, salience is high, or credibility is lacking
+(Bullock, 2011; Nicholson, 2012). Cues may also shape preferences, as voters adjust to their candidate’s
+positions rather than select candidates based on prior congruence (Druckman, 2001; Lenz, 2012).
+
+
+The present study examines these dynamics in the 2023 presidential elections in Cyprus. For the first time, the
+three leading candidates (Nikos Christodoulides, Andreas Mavroyiannis, and Averof Neophytou) completed
+the country’s most widely used voting advice application (VAA) live on national television. VAAs are now a
+familiar part of European campaigns and can influence vote choice and participation (Garzia & Marschall, 2012;
+Garzia et al., 2017; Gemenis, 2013). In Cyprus, VAAs had already gained wide popularity, with many citizens
+using them to assess alignment with candidates or parties.
+
+
+The 2023 event was exceptional because the three main candidates became VAA users themselves in real time
+on live broadcast television. Each answered the same 22 policy questions posed to the public. Their responses
+were immediately recorded, reported by the media, and circulated on social platforms. This created a moment
+of high visibility in which voters could observe their preferred candidate’s stance. It also provided unusual
+standardisation: all three answered the same questions under the same conditions, reducing contextual biases
+that complicate studies of cue effects in natural campaigns.
+
+
+The Cypriot case is well‐suited to investigating cue dynamics. First, the televised format guaranteed salience.
+Voters could directly witness elite positions or encounter them through extensive reporting. Second, the
+timing created a natural cut‐point for quasi‐experimental analysis. By comparing VAA responses before and
+after the broadcasts, it is possible to test whether voters shifted their answers to align more closely with
+their candidate. Third, the breadth of the 22 questions, spanning social, economic, foreign, and
+Cyprus‐related issues, enables analysis of whether cue effects vary across domains. This design takes
+advantage of these features. We collected all VAA responses during the campaign and merged them with
+precise timestamps. For each candidate, we identified the broadcast moment and analysed supporter
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                       2
+responses within windows before and after the event. This allows for event‐study models estimating
+changes in voter–candidate distance. Exploiting this temporal cut strengthens claims of causality, even if it
+cannot replicate laboratory control. Comparing otherwise similar voters before and after the cue, while
+adjusting for confounders, provides leverage for attributing shifts to candidate signals.
+
+
+The scope of the study is twofold. Empirically, it asks whether voters adjusted their positions after their
+candidate’s televised VAA completion. Theoretically, it tests propositions about when cues influence opinion
+formation. The findings contribute to debates on elite influence and the role of heuristics in shaping
+electoral behaviour.
+
+
+2. Literature Review
+
+Existing research has long established that most citizens rely on shortcuts when forming opinions and
+making choices. Party labels, elite endorsements, and candidates’ stated positions operate as cues that can
+guide preferences with relatively low cognitive effort. Foundational accounts describe party and leader cues
+as efficient heuristics that help voters economise on information costs (Campbell et al., 1960; Downs, 1957;
+Popkin, 1991). Empirical literature subsequently demonstrated that elite cues can alter attitudes, often
+substantially, when voters are inattentive (Lupia, 1994; Sniderman et al., 1991). Recent evidence shows that
+this mechanism remains robust in contemporary settings, including multiparty European democracies
+(Adams et al., 2012; Arceneaux, 2008; Bullock, 2011; Grewenig et al., 2020).
+
+
+Across many designs, the central finding is consistent: When a trusted party or leader signals a position,
+co‐partisans and supporters tend to move toward that position, whereas signals attributed to disliked
+out‐groups can push voters away, deepening polarisation (Cohen, 2003; Druckman et al., 2013; Nicholson,
+2012). Observational and field‐based studies similarly find that cues help voters resolve uncertainty at low
+cost and that the direction of movement generally follows the source’s identity (Arceneaux, 2008; Bullock,
+2011). Yet, as Samuels and Zucco (2014) demonstrated, such responsiveness often reflects partisan loyalty
+rather than informational updating: citizens align with their preferred leaders even when doing so
+contradicts their prior views.
+
+
+The literature also highlights important contingencies. Cue effects depend on context and on the nature of the
+issue. When motivation to process information is low, citizens are more likely to rely on peripheral cues such
+as source labels rather than scrutinising arguments (Druckman, 2001). Conversely, when the issue is deeply
+salient or tied to core values, individuals are more likely to engage in effortful processing and to discount cues
+that conflict with prior beliefs (Lau & Redlawsk, 2001; Sniderman et al., 1991).
+
+
+As personalisation has intensified, leader images and perceived competence increasingly guide vote choice,
+with cues serving as shorthand for anticipated policy direction (Balmas et al., 2014; Dalton & Wattenberg,
+2000; Garzia, 2014). Recent work has further demonstrated that personalised leader evaluations increasingly
+structure voter alignments across the continent (Aarts et al., 2013; Costa Lobo & Curtice, 2014).
+
+Issue characteristics also moderate cue effects. Work distinguishing “easy” symbolic issues from “hard”
+technical ones shows that elites can more readily structure mass opinion on the latter because prior
+attitudes are weaker and knowledge is thin (Carmines & Stimson, 1980; Lau & Redlawsk, 2001). Elite
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                    3
+influence also depends on issue salience: cues matter most early in an issue’s life cycle, before attitudes
+crystallise (Chong & Druckman, 2007; Druckman et al., 2013; Slothuus & de Vreese, 2010). Studies of
+motivated reasoning reinforce this asymmetry: When issues implicate identity, citizens selectively accept
+congenial elite messages and discount dissonant ones; when issues are peripheral to identity, credible cues
+can move opinions more freely (Druckman et al., 2013; Nicholson, 2012).
+
+
+Against this background, VAAs have become a prominent element of electoral campaigns. VAAs ask users to
+respond to a battery of policy statements and then compute the closeness between the user and parties or
+candidates. Experimental and quasi‐experimental research provides evidence that VAA exposure can update
+preferences and choices: undecided users may revise their party evaluations in the direction of the
+recommended match (Garzia et al., 2017) or even be mobilised to participate in elections (Gemenis &
+Rosema, 2014; Germann & Gemenis, 2019). In line with the spatial voting model (Enelow & Hinich, 1984;
+Tomz & Van Houweling, 2008), VAAs provide personalised proximity information that reduces informational
+costs, enabling voters to align with ideologically proximate parties. Yet effects are conditional. Some studies
+find null or modest impacts on proximity voting and switching (Enyedi, 2016; Mahéo, 2017; Munzert et al.,
+2020), while others suggest that congruence information broadens voters’ consideration sets without
+altering final vote choice (Ioannidis, 2025). Additionally, in candidate‐centred presidential races, publicly
+revealing a candidate’s answers to a VAA collapses uncertainty about that candidate’s positions. That
+moment can function as a concentrated cue shock, potentially producing a measurable increase in
+congruence between voters and candidates across the contested issues, particularly in contexts where
+voters lack stable predispositions or where issues are less entrenched in political competition (Druckman,
+2001; Lenz, 2012; Tromborg & Albertsen, 2023).
+
+
+Bringing this literature together suggests the conditions under which a televised candidate‐completed VAA
+should produce measurable shifts in voter–candidate congruence. The cue is credible and salient because it
+comes directly from the preferred candidate in a public setting. The broadcast timing creates a clear
+before‐and‐after window that concentrates attention and reduces ambiguity about when the cue was
+delivered. In a multiparty presidential contest, some issues will be weakly structured among a candidate’s
+supporters; on those issues, the candidate’s stance can coordinate the group and compress dispersion
+(Slothuus & de Vreese, 2010; Sniderman et al., 1991).
+
+
+This body of evidence provides the theoretical foundation for two hypotheses: that overall congruence
+among a candidate’s voters increased after the televised VAA completion and that congruence increased
+most strongly on issues where those voters previously held heterogeneous positions.
+
+
+The first expectation is straightforward; overall voter–candidate congruence will rise after the televised VAA
+completion. When candidates publicly reveal their positions across the VAA’s policy set, supporters learn
+where the leader stands. Given the general tendency for voters to align with in‐group elite signals, many
+supporters should adjust their responses toward their preferred candidate, shrinking the distance between
+their answers and the candidate’s answers. In a presidential race with intense candidate visibility, a live, widely
+covered VAA completion is a straightforward vehicle for such cue‐driven updating.
+
+
+The second expectation concerns where, within the issue set, the movement should be largest. The literature
+indicates that cue elasticity is greatest where prior attitudes are weak, heterogeneous, or not identity‐defining
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                     4
+(Druckman, 2001; Slothuus & de Vreese, 2010). Within a candidate’s supporter base, some questions will
+display high dispersion, signalling uncertainty. For those issues, the candidate’s public stance provides a focal
+point that should concentrate opinions and reduce within‐group variance. In other words, congruence should
+increase most on the issues where supporters were initially most divided.
+
+
+Finally, unlike typical survey experiments that test hypothetical cues, this study uses a quasi‐experimental
+design embedded in a real campaign, where candidates revealed their positions live on air. Thus, this setting
+offers higher external validity.
+
+
+3. Data and Methods
+
+3.1. Choose4Cyprus 2023
+
+The 2023 presidential elections in Cyprus provided a unique political context for studying how voters
+respond to cues from candidates. These elections were highly competitive and took place in an environment
+of political fragmentation and disillusionment with traditional politics (Ellinas & Katsourides, 2021; Triga
+et al., 2024). With incumbent President Nicos Anastasiades’ term‐limited after two five‐year terms, the
+contest to replace him quickly became a three‐way race among the leading candidates: Nikos
+Christodoulides, Andreas Mavroyiannis, and Averof Neophytou (“Former foreign minister,” 2023).
+Christodoulides, a former foreign minister in the Anastasiades government and long‐time member of the
+Democratic Rally (DISY), ran as an independent but was supported by several centrist parties. Mavroyiannis,
+a career diplomat endorsed by the Progressive Party of Working People (AKEL), presented himself as a
+progressive alternative. Neophytou, the leader of the governing DISY party, campaigned on continuity and
+experience. The election was eventually decided in a runoff on 12 February 2023, when Christodoulides
+narrowly defeated Mavroyiannis by 51.9% to 48.1%, a margin of under 4%, making it one of the closest
+contests in recent Cypriot history (“Cyprus politician Christodoulides,” 2023; Triga et al., 2024).
+
+
+Amid this tense campaign, an unusual event took place that shaped public debate and provided a
+near‐experimental setting to study political cue‐taking. The digital platform Choose4Cyprus, a VAA
+developed by academics, was introduced just nine days before the first round of the election. It comprised
+22 questions covering issues across the economy, society, governance, the Cyprus problem, and foreign
+policy. Users would indicate their positions, and the system would calculate which candidate’s policy stances
+aligned most closely with their responses. Before seeing their individual congruence results, users were
+asked to indicate which candidate they intended to vote for. This self‐reported voting intention preceded
+any exposure to their calculated alignment scores.
+
+
+Despite its late launch, Choose4Cyprus quickly achieved a wide reach. By election day, 10% of the entire
+electorate had used the application. This was partly driven by the extraordinary media exposure it received
+on national television. In an unprecedented move, the three leading candidates completed the Choose4Cyprus
+VAA live on Cyprus’s most popular noon information programme, Alpha Ενημέρωση, which has a large audience
+and shapes midday political discourse.
+
+
+The televised appearances occurred on consecutive days, the week before the election. On 30 January 2023,
+Andreas Mavroyiannis participated in the live broadcast. Averof Neophytou followed on 1 February 2023, and
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                   5
+Nikos Christodoulides appeared on 2 February 2023 (all participated around 12:40 pm), just three days before
+the first round of voting. Each session was organised in collaboration with a member of the Choose4Cyprus
+research team, who joined the show’s host to guide the candidates through the process. The format was simple
+but impactful: candidates responded to each of the 22 policy statements, live on air, explaining their choices
+to the audience. Once completed, the system produced the candidate’s personal VAA result, revealing which
+political figure most closely matched their expressed positions. For the analysis, each broadcast’s exact date
+and time were used as candidate‐specific cut points when defining the after variable.
+
+
+These events provided a setting where candidates with often strategically ambiguous platforms were forced
+to state their positions on specific policy issues. Presidential contests in Cyprus often revolve around broad
+appeals, candidate images, and references to the Cyprus problem rather than precise policy commitments
+(Triga et al., 2018, 2024). Given that the Cypriot presidency combines the roles of head of state and
+government, candidates’ positions carry significant executive and policymaking implications. For this reason,
+the televised VAA exercises were framed by commentators as an “ideal scenario” to push candidates to
+clarify their views and allow voters to see them pinned down on concrete choices.
+
+The outcomes of the televised sessions were widely reported and generated public debate. When Andreas
+Mavroyiannis completed the VAA, the application returned him as the candidate most closely aligned with his
+own positions, with a very high level of congruence. This unsurprising result allowed him to present himself
+as coherent and consistent. Mavroyiannis made light of the outcome, remarking that “for good luck,” it was
+best that the tool advised him to vote for himself. Averof Neophytou experienced a similar outcome when he
+took the quiz two days later. The VAA recommended him as his own best match, which he embraced, using
+the opportunity to highlight his commitment to digital innovation (“Choose4Cyprus,” 2023; “Poio upopsifio
+edeikse,” 2023).
+
+
+The most notable and controversial moment came during Nikos Christodoulides’ appearance on 2 February
+2023. When he completed the VAA, the system did not return him as his own closest match. Instead, the
+application indicated that Christodoulides’ answers aligned more closely with those of Andreas
+Mavroyiannis than with his own declared platform. This surprising outcome was displayed live on television,
+just days before the election. Christodoulides appeared somewhat taken aback but responded with humour,
+noting that the result showed he was close to all three major candidates and that this might be interpreted
+as evidence of his broad appeal. Nonetheless, the symbolism was striking: the frontrunner in the election
+was told by an ostensibly neutral tool that he should vote for his main rival (“Christodoulidis: “Eimai
+aisiodoksos,” 2023; “O Christodoulidis dokimase,” 2023).
+
+
+This incident quickly became headline news across the media and social platforms. Newspapers and
+news sites reported that Christodoulides “matched more with Mavroyiannis than with…himself”
+(“O Christodoulidis dokimase,” 2023), emphasising the moment’s irony and raising questions about the
+clarity of his policy positions. The videos of the televised VAA completions circulated widely on social media,
+gaining thousands of views on YouTube and Facebook within days. The episode fed into ongoing debates
+about whether Christodoulides’ campaign was too vague, with some commentators arguing that his strategy
+of remaining ideologically ambiguous allowed many voters to project their preferences onto him. The VAA
+results seemed to illustrate this ambiguity in a concrete and memorable way (Constantas, 2023;
+“O Christodoulidis dokimase,” 2023).
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                 6
+The televised VAA episodes thus became one of the most discussed features of the final campaign week.
+This case provides a good opportunity to study voter behaviour in response to elite cues. The unique
+combination of a widely used VAA, real‐time candidate participation on national television, and large‐scale
+subsequent citizen engagement creates conditions resembling a natural experiment. The exact timing of the
+televised completions is precisely known, which allows for before‐and‐after comparisons of user responses.
+The VAA dataset contains thousands of individual‐level observations, with timestamps indicating when each
+user completed the questionnaire. This enabled us to examine whether voters who participated after their
+preferred candidate appeared on television showed greater alignment with that candidate’s positions than
+those who took it earlier. Moreover, the data allows for disaggregation by issue, making it possible to
+explore whether alignment increased more on specific questions.
+
+
+3.2. Methodological Framework
+
+The empirical design of this study exploits the unique timing of the VAA completions, which serve as
+discrete interventions in the information environment. These moments are treated as discrete interventions
+in the information environment, creating natural experiments for studying how candidate cues affect
+voter–candidate congruence. To identify these effects, the study adopts a design conceptually similar to a
+regression discontinuity in time (RDiT) framework, operationalised as a binned event‐study. In RDiT, time
+itself functions as the running variable, with the cut point being the broadcast moment, and the assumption
+is that all other factors evolve smoothly across that threshold. Any discontinuous change in outcomes at the
+cutoff can therefore be attributed to the intervention (Hausman & Rapson, 2018). This design is particularly
+appropriate in this case because the treatment is time‐bound and applies, at least potentially, to the entire
+electorate simultaneously.
+
+
+Unlike a sharp discontinuity, however, not all voters are exposed to the treatment simultaneously. Some may
+have been watching the broadcast, while others only encountered the information later through news
+coverage or social media. This corresponds more closely to a fuzzy discontinuity, in which crossing the
+temporal threshold sharply increases the probability of treatment without perfectly determining it
+(Imbens & Lemieux, 2008). Despite this imperfection, the broadcast marks a moment when the information
+environment changed for all voters, raising the likelihood of exposure in the hours and days
+immediately after.
+
+
+In this study, the event‐study specification is used to visualise short‐term dynamics before and after each
+broadcast, showing whether voter–candidate congruence trends remain stable prior to treatment. The RDiT
+framework, by contrast, provides the formal identification strategy by estimating the discontinuous change
+in congruence at the precise broadcast cut‐off using local regressions on either side. The two approaches are
+thus complementary: the event study offers a descriptive diagnosis of temporal adjustment, while the RDiT
+isolates the instantaneous effect at the threshold. This combined design is preferable to a sharp regression
+discontinuity design because exposure to televised cues is inherently probabilistic rather than deterministic:
+voters differ in when and how they receive the information. Treating the broadcast as a fuzzy, time‐based
+discontinuity, therefore, better captures the real diffusion of candidate cues through media and public
+discussion, while still preserving the quasi‐experimental logic of a discontinuous change in the informational
+environment. Nevertheless, we also estimated sharp regression discontinuity models using local polynomial
+regressions for each candidate. These models employed a triangular kernel, a mserd bandwidth selector,
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                7
+and a first‐order local linear specification. The corresponding results, presented in the Supplementary File
+Table A4, are statistically insignificant (as expected) since most voters did not receive the televised
+information exactly at the temporal threshold but rather in the following hours and days through
+indirect exposure.
+
+
+The analysis employs a binned event‐study specification centred on the broadcast cut points. Time was
+divided into six‐hour bins covering the 48 hours before and 48 hours after each event. Each bin is
+represented by a dummy variable, with the final pre‐event bin omitted as the reference category.
+The coefficients, therefore, capture deviations in voter responses in each time window relative to the
+immediate pre‐treatment period. This specification has two advantages. First, it provides a flexible way to
+trace the temporal dynamics of cue‐taking, rather than imposing a single break. Second, it offers an internal
+placebo test: coefficients in the pre‐event bins should be statistically indistinguishable from zero if the
+identifying assumptions hold, since no treatment should occur before the broadcast. This makes it possible
+to detect both anticipatory effects and post‐event adjustments, while preserving a transparent baseline for
+interpretation (Schmidheiny & Siegloch, 2023).
+
+The outcome of interest is voter–candidate congruence, operationalised as an affinity score. For each
+respondent, the absolute difference between their answer and their chosen candidate’s position was
+calculated for each of the 22 policy questions in the VAA. These item‐level distances are then averaged to
+produce an overall affinity score, where lower values indicate closer alignment and higher values denote
+greater divergence. Candidate positions are taken from their televised VAA completions, ensuring that the
+congruence measure reflects the cues that were disclosed to the electorate during the broadcast. This
+is crucial to the logic of the design, as the televised responses constitute the informational treatment
+under examination.
+
+
+The regressions also include covariates for demographics and political interest to improve precision and guard
+against compositional changes in the sample. These control variables include age, gender, education, and
+self‐reported political interest. Including them in the analysis helps ensure that the estimated discontinuities
+truly reflect cue‐taking effects, rather than shifts in the composition of respondents (Delli Carpini & Keeter,
+1996; Lau & Redlawsk, 2001).
+
+
+The regression model can be expressed as the outcome (affinity score) regressed on the set of bin indicators
+and the covariates. This is equivalent to a saturated interrupted time‐series design, where each coefficient
+represents the deviation of congruence in that bin relative to the baseline period just before treatment.
+When plotted, these coefficients produce the familiar event‐study graph. If cue‐taking occurs, one would
+expect to see a stable pre‐event pattern, followed by a sharp downward shift in affinity scores (i.e., improved
+congruence) beginning in the bin immediately after the broadcast and persisting for subsequent bins.
+The six‐hour resolution is chosen deliberately, allowing the analysis to capture immediate and delayed
+adjustments. Since most voters would only have been exposed to the cues after work, via news articles or
+online clips, it is plausible that the most substantial changes appear 6–12 hours or even a day later, rather
+than instantly. The binning framework allows this lagged effect to be visualised and tested directly.
+
+
+In addition to the main event‐study design, the study undertakes supplementary analyses to better understand
+the structure of voter–candidate congruence and to identify which issues are most susceptible to cue‐taking.
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                  8
+This part of the analysis focuses on the issue level, examining how the degree of polarisation within each policy
+item shapes the scope for change. A weighted bimodality coefficient is calculated for all 22 items prior to any
+televised broadcasts, capturing the extent to which responses form two opposing camps while correcting for
+one‐sided skew. Issues with higher polarisation scores correspond to sharper divisions within the electorate,
+while lower scores denote broad consensus. The expectation is that cue‐taking effects are strongest on highly
+polarising issues, where uncertainty and disagreement create greater scope for televised exposure to influence
+perceptions of candidate‐voter alignment.
+
+
+4. Results
+
+We begin the presentation of the results with a descriptive exploration of the data to establish a baseline
+understanding of how voter–candidate congruence varies before and after each of the three presidential
+candidates publicly completed the VAA. Table 1 presents the descriptive statistics. For each of the three
+candidates, the table reports the mean and variance of affinity scores before and after their respective cut
+points and the mean categorical age, gender composition, mean education, mean political interest, and
+number of observations.
+
+
+Table 1. Summary of affinity scores and demographics by candidate and period.
+ Candidate            Period       Mean      Variance        Mean    Female   Male      Mean       Mean        N
+                                  affinity   affinity         age      (%)    (%)     education   political
+                                                             (1–7)                                interest
+ Christodoulides      Before       1.41         0.08         3.03    44.09    55.91     5.09       2.94       2,251
+ Christodoulides       After       1.43         0.08         3.00    50.49    49.51     5.03       2.78       2,384
+ Mavroyiannis         Before       0.94         0.12         2.81    33.43    66.57     5.20       3.32       1,221
+ Mavroyiannis          After       1.08         0.14         2.87    45.71    54.29     4.98       3.04       4,322
+ Neophytou            Before       1.31         0.10         2.87    32.53    67.47     5.15       3.16       1,896
+ Neophytou             After       1.37         0.10         2.86    38.87    61.13     5.07       3.02       3,692
+
+
+
+The results show a consistent pattern across the three candidates: mean affinity scores are slightly higher
+after the cut point than before. For Christodoulides, the mean affinity increases from 1.41 to 1.43, while for
+Mavroyiannis it rises more substantially from 0.94 to 1.08. Neophytou’s supporters also display an increase
+from 1.31 to 1.37 after the cut point. The variances remain relatively stable, with no sharp changes in
+dispersion. These descriptive results may suggest that, on average, voters appeared slightly further from
+their preferred candidate after the VAA was completed on live television.
+
+
+However, caution is needed when interpreting these preliminary figures. One plausible explanation for the
+modest post‐cut point increase in affinity scores is related to the dynamics of participation. Toward the end
+of the period, when the VAA remained open and received high public attention, a surge of late participants
+entered the sample. These users were likely less politically interested or less informed, and consequently, their
+answers may have been less consistent with their preferred candidate’s positions, raising the average affinity
+score. In this sense, the increases in affinity observed descriptively might not reflect genuine persuasion effects
+from the televised events but instead changes in the composition of the user base. It is precisely because of this
+limitation that we move beyond descriptive statistics and employ an RDiT design. The event‐study framework
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                         9
+allows us to isolate changes in affinity at the precise cut points of candidate participation, while accounting
+for temporal dynamics.
+
+
+It is also notable that the VAA user base differs from the general population in predictable ways. Users were,
+on average, younger, more educated, and more politically engaged than the Cypriot electorate as a whole.
+The mean age across all candidate groups falls within the 35–44 category, while the average education level
+is situated at the higher end of the scale. This pattern is consistent with prior research on VAA users, which
+has repeatedly shown that VAA users tend to be younger, more politically interested, and better educated
+than the general electorate (Marschall & Schmidt, 2008). These demographic biases do not invalidate the
+analysis, but they underline that the results should be interpreted as evidence of cue‐taking among a
+politically attentive and relatively well‐educated segment of the public, rather than as a direct reflection of
+the broader Cypriot electorate. Of the 15,771 users who selected one of the three main candidates,
+14,078 (89.3%) provided complete socio‐demographic information. Prior to analysis, the dataset was cleaned
+to remove duplicate entries (multiple completions from the same IP address), speeders, and abnormal
+response patterns (giving more than 7 consecutive times the same response). These exclusions were applied
+before arriving at the final sample of 15,771 users who selected one of the three main candidates.
+
+We now turn to the main empirical results. The analysis focuses on changes in the affinity score between
+voters and their preferred candidate in the period surrounding the televised completion of the VAA. Affinity
+is measured as the average absolute distance between a user’s policy responses and those of their chosen
+candidate, such that higher values indicate greater incongruence. The design exploits six‐hour bins around
+each broadcast, with the [−6,0) interval as the reference category. All models include controls for age, sex,
+education, political interest, and hour‐of‐day and day‐of‐week fixed effects. Standard errors are clustered by
+day to account for temporal autocorrelation in survey activity.
+
+
+Figure 1 plots the estimated coefficients and 95% confidence intervals from the binned models. Each panel
+corresponds to one of the three leading candidates. The coefficients represent the change in mean affinity
+relative to the pre‐broadcast bin. For space reasons, the full model estimates are reported in Table A1 in the
+Supplementary File. The results indicate heterogeneity across candidates. As a robustness check, we also
+replicate the analysis using a 24‐hour window with four four‐hour bins; results are reported in Table A2 in the
+Supplementary File. The results with the alternative specifications are similar.
+
+
+For Mavroyiannis, coefficients prior to the broadcast are strongly positive, suggesting that his supporters
+were on average further away from his stated positions in the days leading up to the broadcast. Immediately
+after the broadcast, however, the coefficients turn sharply negative, with significant drops between 12 and
+36 hours after the event. This pattern suggests that exposure to his positions helped to reduce the distance
+between him and his supporters, producing a short‐term convergence effect. One possible explanation is
+that Mavroyiannis was less well‐known outside diplomatic circles. The broadcast gave him a rare
+high‐visibility opportunity to state clear positions on salient issues, which may have reassured and aligned
+his centre‐left support base, especially voters on the right of AKEL who were still consolidating behind him.
+Additionally, the pre‐event upward trend for Mavroyiannis appears to reflect composition‐related variation
+in early user activity. When the same event‐study specification is replicated under a strict nearest‐neighbour
+matching procedure (see Figure A1 in the Supplementary File), this pre‐event pattern is substantially
+diminished, confirming that compositional differences have no meaningful impact on the estimated effects.
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                10
+                                                                                      Mavroyiannis
+
+
+                                       1
+
+                                       0
+
+                                      −1
+    Change in aﬃnity vs. [–6,0) bin
+
+
+
+
+                                      −2
+                                                                                       Neophytou
+
+
+                                       1
+
+                                       0
+
+                                      −1
+
+                                      −2
+                                                                                     Christodoulides
+
+
+                                       1
+
+                                       0
+
+                                      −1
+
+                                      −2
+                                           −48   −42   −36   −30   −24   −18   −12   −6    0       6   12    18    24   30   36   42   48
+                                                                         Hours rela!ve to broadcast (bin centre)
+
+Figure 1. Event‐study estimates of change in affinity scores by candidate (bin size: six hours, reference = [−6,0)
+bin). Notes: Models include controls for age, sex, education, and political interest, plus time dummies; standard
+errors clustered by day.
+
+
+Moreover, the matched model reinforces the presence of a clear downward shift beginning in the evening of
+the broadcast day and continuing into the following day, consistent with genuine post‐event convergence
+rather than artefactual pre‐trend noise.
+
+
+In contrast, Neophytou’s results reveal an opposite dynamic. His coefficients are mostly negative prior to
+the broadcast. After the broadcast, the coefficients turn positive and significant, especially 12 to 36 hours
+after, indicating that his voters’ answers moved further away from his stated positions. Clarifying his positions
+increased perceived distance on specific issues, eroding rather than strengthening congruence. A possible
+reason is that during the broadcast, he adopted more centrist positions on welfare and the economy and
+expressed more liberal views on rights, which may have alienated parts of his traditionally conservative base.
+In contextual terms, Neophytou faced an uphill battle, as his campaign was overshadowed by intra‐party
+divisions. Many traditional DISY voters were ambivalent, with some leaning towards Christodoulides, who
+had previously served in DISY governments. The broadcast may have highlighted these internal tensions by
+making Neophytou’s stances appear less representative of the broader DISY electorate, thus widening the
+gap between him and his declared supporters.
+
+
+The pattern for Christodoulides is more muted. His coefficients hover close to zero before and immediately
+after the broadcast, suggesting stability. Yet starting around 12 hours post‐broadcast, the coefficients rise
+significantly, implying that his supporters also drifted somewhat further away from his declared answers.
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                                                  11
+A plausible explanation is the well‐publicised VAA recommendation that matched him with Mavroyiannis
+rather than himself, which may have prompted some reassessment among his base. Another factor was
+Christodoulides’ strategy of choosing the non‐directional answer “neither agree nor disagree” on four key
+valence issues—environmental protection, same‐sex adoption, refugee benefits, and wealth redistribution.
+Neither Mavroyiannis nor Neophytou resorted to this option in any of the 22 items, regarding it as a signal
+of dishonesty, but Christodoulides’ use of it reinforced perceptions that he was obscuring his positions.
+More broadly, he adopted a mainstream and pragmatic tone that allowed him to attract support ranging
+from the centre‐left to the right. This catch‐all coalition of voters meant that he was already the least
+congruent candidate with his electorate (Triga et al., 2024), as also seen in Table 1, and therefore, there was
+little scope for the televised VAA completion to have an effect.
+
+
+To address potential compositional differences between users who completed the VAA before and after the
+televised broadcast, we conducted two additional robustness checks replicating the main event‐study
+specification under alternative weighting schemes. First, we implemented a nearest‐neighbour matching
+procedure (3:1 ratio with replacement) on age, sex, education, and political interest. The same event‐study
+model was then re‐estimated on the matched data using the matching weights. Second, we performed a
+raked event‐study, in which observations from the reference (pre‐broadcast) period were iteratively
+weighted so that the marginal distributions of key demographics aligned with those of the treated
+(post‐broadcast) group. When raking was infeasible, a stabilised inverse‐probability‐weighted specification
+served as a fallback. Both checks are conceptually equivalent to the baseline specification but explicitly
+adjust for observed differences in user composition. The resulting estimates, shown in Figure A1 (matched)
+and Figure A2 (raked/inverse probability weighting) in the Supplementary File, closely replicate the main
+event‐study results. The matched specification reduces the mild pre‐event trend observed for Mavroyiannis
+in Figure 1 and strengthens the evidence of a clear downward shift beginning on the evening of his televised
+completion and continuing into the following day, confirming that compositional imbalance does not
+account for the observed convergence pattern. These results show that televised completion of the VAA
+produced asymmetric effects across candidates. For Mavroyiannis, the event appears to have aligned his
+supporters more closely with him, while for Neophytou and Christodoulides, it seems to have revealed
+incongruences. These dynamics underscore the centrality of context and candidate profiles in shaping the
+direction of cue effects. Importantly, they also highlight that elite signals do not always consolidate support
+but can, in some cases, expose underlying divergences.
+
+
+We now turn to a more granular analysis of voter–candidate congruence, moving beyond the aggregate
+affinity score. Instead of treating congruence as a single summary measure across all policy items, we assess
+how it varies across individual issues and how this variation is conditioned by issue polarisation. The central
+expectation is that televised exposure should be most consequential on divisive issues. When an issue is
+already consensual, voters require little additional information to locate themselves relative to a candidate;
+when it is polarising, televised debates may clarify where candidates stand and help voters reconcile their
+own views with those positions.
+
+
+To measure issue polarisation, we computed for each of the 22 VAA policy items a weighted bimodality
+coefficient using all responses recorded before the first televised broadcast. The coefficient combines
+skewness and kurtosis to capture the extent to which responses form two opposing camps rather than a
+single mode. The weighting corrects for one‐sided skew, giving higher scores only when both poles of
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                12
+disagreement are clearly represented. Low bimodality coefficient values, therefore, mark issues of broad
+agreement, while high values identify genuinely polarised topics that divide the electorate.
+
+
+Using this issue‐level measure, we examined whether voter–candidate distance shifts before and after a
+candidate’s televised appearance depend on issue polarisation. The models include hour‐of‐day and
+weekday fixed effects, with standard errors clustered by day. The unit of analysis is the voter–candidate
+distance on a single issue.
+
+
+Figure A4 in the Supplementary File plots the predicted voter–candidate distance before and after each
+broadcast across levels of issue polarisation. Distance increases with polarisation, that is, voters are generally
+further from their preferred candidate on divisive issues. For Mavroyiannis, as shown in Figure 2, the
+broadcast is associated with a reduction in distance on the least polarising issues, with little change on highly
+polarised ones. For Neophytou and Christodoulides, pre‐ and post‐broadcast lines are parallel and
+overlapping, indicating no effect. These patterns may reflect the candidates’ strategic choice to maintain
+moderate positions on polarising issues to avoid alienating segments of their coalitions. However, the
+observed reduction in Mavroyiannis’ voter–candidate distance runs contrary to our initial expectation, as the
+overall decline in distance documented in the earlier event‐study results appears to stem primarily from
+improved alignment on the least polarising issues rather than clarification on divisive ones.
+
+                                                            Mavroyiannis                                             Neophytou                                             Christodoulides
+
+                                     2.0
+Predicted voter–candidate distance
+
+
+
+
+                                     1.5
+
+
+
+
+                                     1.0
+
+
+
+
+                                           −2         −1           0           1           2      −2          −1           0           1            2    −2           −1           0           1            2
+                                                                                               Issue polarisa!on (z−score of bimodality coeﬃcient)
+                                                                                                          Pre−broadcast         Post−broadcast
+
+                                                Predicted values from OLS models with interac!on (A#er × polarisa!on); unit of analysis: voter–candidate distance on an issue. 95% CIs clustered by day.
+
+
+Figure 2. Predicted voter–candidate distance before and after each televised broadcast across levels of issue
+polarisation.
+
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                                                                                                                 13
+Finally, the average marginal effects (AMEs) in Table 2 quantify how, after the televised completion, the average
+distance between a candidate’s supporters and that candidate’s stance on each item changed relative to the
+pre‐event baseline. Negative values signal convergence, while positive values indicate divergence.
+
+Table 2. Average marginal effects (post‐event).
+ Question                                                     Christodoulides          Mavroyiannis   Neophytou
+ Environmental protection is more important than                 −0.588***              −0.147         1.194***
+ economic growth
+ The church should have a say in the Minister                     0.774***              −0.559        −0.326
+ of Education
+ Immigrants contribute positively to Cyprus culture               0.482                 −1.121***      1.162*
+ Fence along the Green Line solves immigration                    1.724***              −0.307        −2.189**
+ Same‐sex couples equal rights, including adoption               −0.339                 −0.946         2.199**
+ Legalise recreational cannabis                                  −0.726                  0.764         0.410
+ Abolish refugee benefits if not working                          0.287                 −1.620***     −0.835*
+ Accelerate European integration                                  0.627***              −0.417         0.979***
+ Support EU sanctions against Russia                             −0.795*                −0.693         1.293**
+ Apply for NATO membership                                        0.150                 −4.322***     −0.412
+ Privatisation improves service efficiency                        0.482                 −1.859*       −0.383
+ Minimal state intervention in the economy                        0.608*                 0.671         0.164
+ Redistribute wealth from the rich to the poor                    0.183                  0.119        −0.169
+ Increase corporate profit taxes                                  0.403                  0.520*        0.472
+ Rent‐to‐buy on state land for housing                            0.120                  1.757**      −0.777*
+ “Golden passports” were a sound economic policy                 −1.084***              −1.739***      0.496
+ Greek Cypriots and Turkish Cypriots cannot live                  1.410*                −3.363**       1.557***
+ together again
+ Bi‐zonal bi‐communal federation is viable                       −0.936***              −2.557***      2.164*
+ Resume negotiations after Crans‐Montana                          0.328                 −2.991***      2.289**
+ More checkpoints harm the Greek Cypriot side                     1.319***              −1.929***     −0.133
+ Gas pipeline via Turkey before a solution                        0.079                  0.362         0.320
+ Referendums are proper decision tools                            0.399                 −0.672         2.876***
+Note: Stars denote statistical significance: * 𝑝 < 0.05, ** 𝑝 < 0.01, *** 𝑝 < 0.001.
+
+For Mavroyiannis, convergence is evident on the core progressive and pro‐solution items that defined his
+campaign. He placed himself firmly at the liberal end on cultural issues (fully supporting same‐sex adoption,
+opposing church influence, fences, and welfare retrenchment). Supporters moved toward him after the
+broadcast, reflected in negative AMEs such as −1.121 on immigrants’ contribution, −1.620 on refugee
+benefits, and –1.859 on privatisation. On the Cyprus problem, where he unequivocally backed a bizonal
+federation, resumption of talks, and coexistence, large negative AMEs (−2.557, −2.991, and −1.929) show
+his base realigning to his pro‐federal stance. NATO membership is especially striking: he rejected it outright,
+and the −4.322 AME indicates that many ambivalent supporters converged strongly toward his opposition.
+These results fit the expectation that cues matter most where voters are less entrenched and where
+candidates provide clarity.
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                        14
+For Christodoulides, who adopted centrist positions, the AMEs show selective convergence and divergence.
+He often placed himself at intermediate points (e.g., “neither agree, nor disagree” on environment vs. growth,
+“disagree” on church influence, “neither agree, nor disagree” on adoption rights, “disagree” on NATO). This
+ambiguity broadened his appeal but made him a weak anchor. His supporters converged on some issues
+associated with the Anastasiades‐DISY government, such as the “golden passports” scheme (−1.084) and
+the bizonal federation (−0.936). Yet divergence appears where his centrism clashed with stronger leanings in
+his coalition. He opposed the Green Line fence, yet his nationalist supporters held to their harder stance
+(+1.724). On coexistence with Turkish Cypriots, he expressed support, but rejectionist elements within his
+base produced divergence (+1.410). In short, Christodoulides’s ambiguity attracted diverse supporters, but
+the cue exposed their differences: convergence on broadly consensual themes, divergence where
+middle‐of‐the‐road cues met entrenched predispositions.
+
+For Neophytou, the pattern is bifurcated. He consistently adopted market‐liberal, pro‐Western, and
+moderately conservative positions: favouring fences, welfare conditionality, NATO, sanctions on Russia,
+minimal state intervention, and privatisation. His supporters converged on some of these, notably the fence
+(−2.189), refugee benefits (−0.835), and privatisation (−0.383), suggesting the cue clarified his stance.
+Yet substantial divergence also appears, particularly on Europe, social liberalism, and the Cyprus problem.
+Although he strongly supported a bizonal federation and resumption of talks, his supporters diverged after
+the event (+2.164 and +2.289). On cultural issues, divergence was pronounced: despite supporting LGBT
+adoption rights, his base moved sharply away (+2.199), reflecting the disconnect between his progressive
+stance and the conservative instincts of Cyprus’s mainstream right. These patterns reveal that the televised
+cue accentuated fissures in his base: alignment improved on traditional centre‐right issues of security and
+markets, but supporters resisted his more cosmopolitan or pro‐solution signals.
+
+To further probe the dynamics of cueing, we plot two RDiT models for NATO membership and same‐sex
+couples’ adoption rights. While the AMEs reveal whether congruence increased or decreased overall, these
+figures allow us to observe when, in the hours following the televised completion, the candidates’ cues began
+to exert influence on their supporters.
+
+Figure 3 shows how congruence with each candidate’s stated stance on NATO membership evolved in six‐hour
+bins before and after the televised completion. Mavroyiannis, who firmly opposed NATO entry, experienced
+rapid convergence as his supporters adjusted toward his position in the hours after the broadcast. This shift
+became primarily apparent 12 hours after the televised completion. Christodoulides, who also opposed NATO
+membership, saw no systematic movement, suggesting his cue did not alter his divided base on the issue.
+Neophytou, who clearly backed NATO, also saw no major shifts, consistent with the idea that his pro‐Atlantic
+supporters were already aligned pre‐event.
+
+Figure 4 depicts congruence dynamics on same‐sex couples’ adoption rights. Mavroyiannis, who strongly
+supported equal rights, experienced no substantial post‐event shifts, as his base was already aligned with his
+liberal position. Christodoulides, who expressed a more ambivalent stance, likewise, shows little movement,
+reflecting a coalition split between liberal and conservative instincts. By contrast, Neophytou, who
+supported same‐sex adoption, saw significant divergence: many of his socially conservative supporters
+moved further away from his declared position after the broadcast, underscoring the difficulty of reconciling
+his progressive stance with the preferences of his traditionalist electorate. This divergence is again evident
+after the plus 12‐hour bin.
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                15
+                                                                             Christodoulides
+                             10
+                              5
+                              0
+                             −5
+                             −10
+                                                                              Mavroyiannis
+    Eﬀect vs. [–6,0) bin
+
+
+
+
+                             10
+                              5
+                              0
+                             −5
+                             −10
+                                                                               Neophytou
+                             10
+                              5
+                              0
+                             −5
+                             −10
+                                   −48 −42 −36 −30 −24 −18 −12                −6    0      6   12    18    24   30   36   42   48
+                                                                 Hours rela!ve to broadcast (bin centre)
+
+Figure 3. Effect of televised VAA completion on voter–candidate congruence for NATO membership.
+
+
+                                                                             Christodoulides
+                             10
+                              5
+                              0
+                             −5
+
+                                                                              Mavroyiannis
+      Eﬀect vs. [–6,0) bin
+
+
+
+
+                             10
+                              5
+                              0
+                             −5
+
+                                                                               Neophytou
+                             10
+                              5
+                              0
+                             −5
+
+                                   −48   −42   −36   −30   −24   −18   −12   −6    0     6     12   18     24   30   36   42   48
+                                                                 Hours rela!ve to broadcast (bin centre)
+
+Figure 4. Effect of televised VAA completion on voter–candidate congruence for same‐sex couples’ adoption.
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                                          16
+5. Conclusion
+
+The analysis of the televised completion of the VAA by the three leading candidates in the 2023 Cypriot
+presidential election provides an unusual window into how candidate cues operate in a high‐salience
+campaign. The first expectation was that congruence between voters and their chosen candidate would
+increase after the televised event, as supporters aligned themselves more closely with the positions their
+preferred candidate made explicit. The evidence from the regression discontinuity models does not confirm
+this expectation in any general sense. There was no uniform pattern across candidates, and the effect of the
+televised cue was contingent on candidate profiles. For Mavroyiannis, who campaigned with a clear
+progressive and pro‐solution profile, the televised disclosure of positions drew his supporters closer to him,
+though this convergence was mostly concentrated on low‐polarisation issues rather than divisive ones.
+For Neophytou and Christodoulides, the effect was the opposite: rather than reducing the gap between the
+candidate and the base, the cue revealed and in some cases, widened underlying divergences. The first
+expectation is therefore only conditionally supported. Cues can strengthen congruence, but they can also
+trigger divergence when they expose the heterogeneity of electoral coalitions or highlight the ambiguous
+positioning of candidates (Bullock, 2011).
+
+
+This outcome speaks directly to the role of candidate characteristics. Mavroyiannis represented a more
+ideologically coherent base, largely composed of AKEL voters who expected a pro‐solution, progressive
+stance. His VAA completion confirmed these expectations and clarified his positions on issues such as NATO
+membership. Supporters responded by adjusting their responses, producing observable convergence.
+Neophytou, by contrast, led a party with an established pro‐Western and market‐liberal identity, but his
+electorate included socially conservative voters and members of a party fractured by the candidacy of
+Christodoulides. His explicit stance favoring socially liberal positions, such as adoption rights, produced
+divergence among his supporters. Christodoulides relied on ambiguity and attempted to cultivate a broad
+appeal across the spectrum. The VAA completion forced him to reveal intermediate or non‐committal
+positions, which failed to anchor his coalition. On issues tied to national identity and the Cyprus problem, his
+cues even generated divergence. Ambiguity may help in attracting broad support, but the disclosure of
+concrete positions risks alienating segments of such a coalition.
+
+
+The second expectation was that congruence would increase mainly on issues less embedded in Cypriot
+political competition and where voters are more heterogeneous. The supplementary issue‐level analysis,
+using the weighted bimodality coefficient to capture issue polarisation, provides a different view. The results
+show that congruence is generally higher on consensual, low‐polarisation issues, while divisive issues tend
+to produce larger voter–candidate gaps. Crucially, television broadcasts did not reduce these differences on
+polarizing issues. Instead, the narrowing of the gap between voters and candidates seems to be due to
+better alignment on less divisive issues, and this only in the case of Mavroyiannis. This suggests that
+televised cues primarily clarified already cohesive positions rather than bridging divides. One possible
+explanation is that all three candidates sought to maintain moderate stances on contentious issues, limiting
+the scope for convergence among opposing camps.
+
+Taken together, these findings highlight that cue‐taking is not a mechanical process of alignment but a
+conditional one. Candidate characteristics, the internal cohesion of their support bases, and the polarisation
+of issues all interact to shape outcomes. Rather than a universal effect of televised cues on congruence, the
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                 17
+evidence points to asymmetric dynamics. Candidates with coherent and less established images may use
+such events to strengthen congruence, while candidates with heterogeneous coalitions or those relying on
+ambiguity may find that the same events reveal divisions.
+
+
+The study, therefore, contributes to the literature on VAAs and political heuristics by showing that VAAs do not
+simply provide information to voters but, when candidates themselves participate, they create highly visible
+cueing moments with varied consequences. Our findings suggest that when candidates reveal their positions
+publicly, the effect is mediated by the nature of their coalition and the issues at stake.
+
+
+The theoretical framework underpinning this study emphasises that cues act as heuristics that help voters
+resolve uncertainty, but their effectiveness is conditioned by issue polarisation and predispositions. The results
+are consistent with this framework: cues were effective for Mavroyiannis because his base was predisposed
+to accept his progressive positions; cues failed for Neophytou and Christodoulides because predispositions
+diverged from their stances, or the candidates lacked credibility as anchors due to ambiguity. Notably, the
+study shows that divergence is also a possible outcome of cueing. This challenges the assumption in much
+of the literature that elite cues primarily increase alignment. When candidates cannot sustain ambiguity, cues
+can expose and deepen divisions within their coalitions.
+
+
+The implications extend beyond Cyprus. In multiparty systems with fluid alignments, elite signals may
+produce asymmetric or contradictory effects. VAAs and similar tools that publicise elite positions can clarify
+competition but may destabilise coalitions built on ambiguity. For scholars of opinion formation, the lesson is
+that cues should be studied not as uniform mechanisms but as contingent interventions whose effects
+depend on both candidates and voters.
+
+
+Conflict of Interests
+The authors declare no conflict of interests.
+
+
+Data Availability
+The data underlying this article are available from the authors upon reasonable request.
+
+
+LLMs Disclosure
+Large Language Models were used solely for proofreading and minor editorial improvements to the final
+manuscript. Specifically, ChatGPT 5.0 was employed for this purpose.
+
+
+Supplementary Material
+Supplementary material for this article is available online in the format provided by the authors (unedited).
+
+
+References
+Aarts, K., Blais, A., & Schmitt, H. (2013). Political leaders and democratic elections. Oxford University Press.
+Adams, J., Ezrow, L., & Leiter, D. (2012). Partisan sorting and niche parties in Europe. West European Politics,
+    35(6), 1272–1294.
+Arceneaux, K. (2008). Can partisan cues diminish democratic accountability? Political Behavior, 30(2), 139–160.
+Balmas, M., Rahat, G., Sheafer, T., & Shenhav, S. R. (2014). Two routes to personalised politics: Centralised and
+   decentralised personalisation. Party Politics, 20(1), 37–51.
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                     18
+Bullock, J. G. (2011). Elite influence on public opinion in an informed electorate. American Political Science
+    Review, 105(3), 496–515.
+Campbell, A., Converse, P. E., Miller, W. E., & Stokes, D. E. (1960). The American voter. University of Chicago
+    Press.
+Carmines, E. G., & Stimson, J. A. (1980). The two faces of issue voting. American Political Science Review, 74(1),
+   78–91.
+Chong, D., & Druckman, J. N. (2007). A theory of framing and opinion formation in competitive elite
+    environments. Journal of Communication, 57(1), 99–118.
+Choose4Cyprus: “Psifise Averof” eipe ston Averof to chrisimo ergaleio (Video). (2023, February 1). AlphaNews.
+    https://www.alphanews.live/politics/choose4cyprus‐psifise‐averof‐eipe‐ston‐averof‐to‐chrisimo‐
+    ergaleio‐vinteo
+Christodoulidis: “Eimai aisiodoksos gia to apotelesma ton eklogon” (Video). (2023, February 2). AlphaNews.
+    https://www.alphanews.live/politics/christodoulidis‐eimai‐aisiodoxos‐gia‐to‐apotelesma‐ton‐eklogon‐
+   vinteo
+Cohen, G. L. (2003). Party over policy: The dominating impact of group influence on political beliefs. Journal
+    of Personality and Social Psychology, 85(5), 808–822.
+Constantas, K. (2023, February 8). To ergaleio pou taraxe ta nera tis proeklogikis. Limassol Today. https://
+   limassoltoday.com.cy/l‐air‐uncut/to‐ergaleio‐pou‐taraxe‐ta‐nera‐tis‐proe
+Costa Lobo, M., & Curtice, J. (2014). Personality politics? The role of leader evaluations in democratic elections.
+    Oxford University Press.
+Cyprus politician Christodoulides wins presidential vote. (2023, February 12). Reuters. https://www.reuters.
+    com/world/middle‐east/cypriot‐diplomats‐face‐off‐cliffhanger‐presidential‐vote‐2023‐02‐12
+Dalton, R. J., & Wattenberg, M. P. (2000). Parties without partisans: Political change in advanced industrial
+    democracies. Oxford University Press.
+Delli Carpini, M. X., & Keeter, S. (1996). What Americans know about politics and why it matters. Yale University
+    Press.
+Downs, A. (1957). An economic theory of democracy. Harper.
+Druckman, J. N. (2001). On the limits of framing effects: Who can frame? The Journal of Politics, 63(4),
+   1041–1066.
+Druckman, J. N., Peterson, E., & Slothuus, R. (2013). How elite partisan polarization affects public opinion
+    formation. American Political Science Review, 107(1), 57–79.
+Ellinas, A. A., & Katsourides, Y. (2021). The silent electoral earthquake in Cyprus: A crisis of political
+    representation. South European Society and Politics, 26(3), 413–436.
+Enelow, J. M., & Hinich, M. J. (1984). The spatial theory of voting: An introduction. Cambridge University Press.
+Enyedi, Z. (2016). The influence of voting advice applications on preferences, loyalties and turnout: An
+    experimental study. Political Studies, 64(4), 1000–1015.
+Former foreign minister holds lead in Cyprus vote, runoff on Feb 12. (2023, February 5). Reuters. https://
+   www.reuters.com/world/middle‐east/former‐foreign‐minister‐holds‐lead‐cyprus‐vote‐runoff‐feb‐12‐
+    2023‐02‐05
+Garzia, D. (2014). Personalization of politics in Western democracies: Causes and consequences of leader effects
+    on voting behaviour. ECPR Press.
+Garzia, D., & Marschall, S. (2012). Voting advice applications under review: The state of research. International
+   Journal of Electronic Governance, 5(3/4), 203–222.
+Garzia, D., Trechsel, A. H., & De Angelis, A. (2017). Voting advice applications and electoral participation:
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                    19
+    Evidence from a quasi‐experiment during the 2011 Swiss federal elections. Political Communication, 34(3),
+   434–443.
+Gemenis, K. (2013). Estimating parties’ policy positions through voting advice applications: Some
+    methodological considerations. Acta Politica, 48(3), 268–295.
+Gemenis, K., & Rosema, M. (2014). Voting advice applications and electoral turnout. Electoral Studies, 36,
+    281–289.
+Germann, M., & Gemenis, K. (2019). Getting out the vote with voting advice applications. Political
+    Communication, 36(1), 149–170.
+Grewenig, E., Lehwald, S., & Roth, C. (2020). Political polarization and attitudes towards climate change in
+    Europe. Journal of Public Economics, 187, Article 104229.
+Hausman, C., & Rapson, D. S. (2018). Regression discontinuity in time: Considerations for empirical
+    applications. Annual Review of Resource Economics, 10(1), 533–552.
+Imbens, G. W., & Lemieux, T. (2008). Regression discontinuity designs: A guide to practice. Journal of
+    Econometrics, 142(2), 615–635.
+Ioannidis, N. (2025). The power of alignment: How personalized information shapes voter decisions. Journal
+    of Information Technology & Politics. Advance online publication. https://doi.org/10.1080/19331681.2025.
+    2512856
+Lau, R. R., & Redlawsk, D. P. (2001). Advantages and disadvantages of cognitive heuristics in political decision
+   making. American Journal of Political Science, 45(4), 951–971.
+Lenz, G. S. (2012). Follow the leader? How voters respond to politicians’ policies and performance. University of
+   Chicago Press.
+Lupia, A. (1994). Shortcuts versus encyclopedias: Information and voting behavior in California insurance
+  reform elections. American Political Science Review, 88(1), 63–76.
+Mahéo, V. A. (2017). Voting advice applications and electoral preferences: The role of political sophistication.
+  Electoral Studies, 45, 75–84.
+Marschall, S., & Schmidt, C. K. (2008). Preaching to the converted or making a difference? Mobilizing effects
+    of an internet application at the German general election 2005. In D. Farrell & R. Schmitt‐Beck (Eds.),
+    Non‐party actors in electoral politics: The role of interest groups and independent citizens in contemporary
+  elections (Vol. 8, pp. 259–278). Nomos.
+Munzert, S., Rubba, C., Ramirez, M. D., & Trechsel, A. H. (2020). What drives the effect of voting advice
+   applications? Evidence from a survey experiment. Political Science Research and Methods, 8(4), 845–862.
+Nicholson, S. P. (2012). Polarizing cues. American Journal of Political Science, 56(1), 52–66.
+O Christodoulidis dokimase to “Choose4Cyprus” kai tairiazei perissotero me Mavrogianni para me ton
+    eauto tou (Video). (2023, February 2). Politis. https://www.politis.com.cy/politis‐news/politiki/589118/
+    o‐xristodoulidis‐dokimase‐to‐choose4cyprus‐kai‐tairiazei‐perissotero‐me‐mavrogianni‐para‐me‐ton‐
+   eafto‐tou‐vinteo
+Poio upopsifio edeikse ston Mavrogianni to erotimatologio Choose4Cyprus (Video). (2023, January 30).
+   AlphaNews. https://www.alphanews.live/politics/poio‐ypopsifio‐edeixe‐ston‐mavrogianni‐to‐
+   erotimatologio‐choose4cyprus‐vinteo
+Popkin, S. L. (1991). The reasoning voter: Communication and persuasion in presidential campaigns. University of
+   Chicago Press.
+Samuels, D., & Zucco, C., Jr. (2014). The power of partisanship in Brazil: Evidence from survey experiments.
+   American Journal of Political Science, 58(1), 212–225.
+Schmidheiny, K., & Siegloch, S. (2023). On event studies and distributed‐lags in two‐way fixed effects models:
+    Identification, equivalence, and generalization. Journal of Applied Econometrics, 38(5), 695–713.
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                  20
+Slothuus, R., & de Vreese, C. H. (2010). Political parties, motivated reasoning, and issue framing effects. The
+    Journal of Politics, 72(3), 630–645.
+Sniderman, P. M., Brody, R. A., & Tetlock, P. E. (1991). Reasoning and choice: Explorations in political psychology.
+    Cambridge University Press.
+Tomz, M., & Van Houweling, R. P. (2008). Candidate positioning and voter choice. American Political Science
+    Review, 102(3), 303–318.
+Triga, V., Ioannidis, N., & Djouvas, C. (2024). The waning of ideology? Presidential elections in the Republic of
+    Cyprus, 5 February 2023. South European Society and Politics, 28(2), 177–206. https://doi.org/10.1080/
+   13608746.2024.2304445
+Triga, V., Mendez, F., & Djouvas, C. (2018). Post‐crisis political normalisation? The 2018 presidential elections
+    in the Republic of Cyprus. South European Society and Politics, 24(1), 103–127.
+Tromborg, M., & Albertsen, M. (2023). Elite cues and the conditionality of persuasion. Political Behavior, 45(2),
+    361–385.
+
+
+About the Authors
+
+                     Nikandros Ioannidis is a special teaching staff member at the Cyprus University of
+                     Technology. His research focuses on political communication, political behaviour, and digital
+                     tools in democratic participation, with an emphasis on experimental and computational
+                     methods.
+
+
+
+                     Vasiliki Triga is an associate professor at the Cyprus University of Technology. Her research
+                     examines political behaviour, digital democracy, and public opinion, with a particular
+                     interest in the effects of online tools and technologies on democratic processes and citizen
+                     engagement.
+
+
+
+
+Politics and Governance • 2026 • Volume 14 • Article 11272                                                     21
+

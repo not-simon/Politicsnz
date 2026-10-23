@@ -1,0 +1,870 @@
+                                                                                                        Research Article
+
+
+Mapping the Austrian political spectrum with the help of VAAs
+
+Sebastian Jäckle1, *, Pascal D. König2, **
+
+1    Seminar für Wissenschaftliche Politik, Universität Freiburg
+2    Institut für Politikwissenschaft, Goethe-Universität Frankfurt am Main
+*    sebastian.jaeckle@politik.uni-freiburg.de
+**   p.koenig@soz.uni-frankfurt.de
+
+
+
+
+Abstract
+This paper uses data from the Austrian Voting Advice Application (VAA) wahlkabine.at to locate parties in policy spaces for
+the 2006, 2008, 2013 and 2017 national elections. It formulates an approach that combines positional information from
+the VAA data with information about issue saliences that stems from the VAA itself as well as from manifestos coded by the
+regularly conducted Austrian National Election Study. The VAA-inherent and the external weights serve to calibrate party
+policy spaces that underlie the VAA data. The paper depicts the Austrian political party space by means of a two-dimensional
+multidimensional scaling (MDS) map, and furthermore assesses the usefulness of the two weighting procedures. The findings
+suggest that the use of the internal weights cannot make much of a difference in the present form. In contrast, the external
+weights not only alter the structure of the party space but also enhance the confidence in the results for substantial reasons.
+
+Keywords
+Voting Advice Applications, party positions, Austrian national elections, scaling, wahlkabine
+
+
+
+Die Kartierung des österreichischen Parteienraums anhand der
+Wahlempfehlungshilfe wahlkabine.at
+
+Zusammenfassung
+Der Beitrag nutzt Daten der österreichischen Wahlempfehlungshilfe wahlkabine.at, um die Parteipositionen für die
+Nationalratswahlen der Jahre 2006 bis 2017 zu bestimmen. Er formuliert einen Ansatz, der die Positionsinformationen der
+Wahlempfehlungshilfe mit zwei Arten von Themensalienzen kombiniert: Mit internen aus der Wahlempfehlungshilfe selbst
+sowie mit externen aus Wahlprogrammen, die im Rahmen der Österreichischen Wahlstudie kodiert wurden. Die Salienzen
+dienen der Kalibrierung der zugrundeliegenden Parteienräume. Neben der Darstellung des österreichischen Parteienraums
+anhand einer zweidimensionalen Multidimensionalen Skalierung (MDS) prüft die Analyse damit auch den generellen
+Nutzen dieser Gewichtungsverfahren. Die Befunde zeigen, dass die aus wahlkabine.at selbst entnommenen Gewichte kaum
+Einfluss haben. Stattdessen ändern die externen Themengewichte die Struktur des Parteienraums und sind dabei eine Quelle,
+die inhaltlich eine bessere Abbildung der Parteipositionen begründet.
+
+Schlüsselwörter
+Voting Advice Applications, Wahlempfehlungshilfen, Parteipositionen, Nationalratswahlen, Skalierung, wahlkabine
+
+
+The authors have declared that no competing interests exist.­
+
+
+
+
+February 28, 2019 I innsbruck university press, Innsbruck
+OZP – Austrian Journal of Political Science I ISSN 2313-5433 I http://oezp.at/
+Vol. 47, issue 4 I DOI 10.15203/ozp.2407.vol47iss4                                               OPEN     ACCESS
+2                           S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4
+
+
+
+
+1. Introduction                                                     in a low dimensional space. Second, the regularly con-
+                                                                    ducted Austrian National Election Study comprises a
+Voting Advice Applications (VAAs) have been around                  content analysis of party manifestos (Müller et al. 2017)
+for about 15 years. These online-tools such as the Ger-             that offers information about parties’ issues importance.
+man Wahl-O-Mat, the Dutch StemWijzer or the Swiss                   We use this information as external weights to compare
+smartvote have been developed to help voters find out               them to the VAA inherent issue weights and examine
+how political parties (or candidates) match their politi-           whether these different weights lead to similar or differ-
+cal preferences. Due to their ease of use, a substantial            ent party policy spaces.
+number of voters nowadays employs these online-tools.                   Based on the comparison of the results obtained with
+For example, more than 4m people used the StemWijzer                the unweighted data and the two weighting methods (in-
+before the 2012 elections in the Netherlands and more               ternal and external saliency weights), the paper discuss-
+than 15m the Wahl-O-Mat ahead of the German national                es how VAAs should be designed in order to provide for
+election in 2017. Research on VAAs has mostly dealt with            a meaningful basis to measure party positions for politi-
+their effects on political knowledge (Schultze 2014), is-           cal scientists. This is of relevance not merely to scholars
+sue voting (Ladner 2016), voter turnout (Fivaz and Nadig            of party politics who may, as for instance in the Austrian
+2010; Marschall and Schultze 2012), electoral prefer-               context, want to use information about party positions to
+ences (Mahéo 2016; Walgrave, van Aelst, and Nuytemans               analyse party competition and coalition building (Mül-
+2008; Kleinnijenhuis et al. 2017) as well as with the im-           ler and Jenny 2000; Müller and Fallend 2004; Dolezal
+pact of design choices on the recommendations given to              et al. 2014) or pledge fulfilment in coalition agreements
+voters (Germann et al. 2015; Rosema and Louwerse 2016;              (Schermann and Ennser-Jedenastik 2014a, 2014b; Pra-
+Agathokleous and Tsapatsoulis 2016; Katakis et al. 2014).           protnik 2015). The results can also help to provide vot-
+    This article takes a different perspective. Its aim is to       ers with advice that is more closely attuned to the party
+use data from the Austrian VAA wahlkabine.at to position            space in their countries as it is constituted by parties’ po-
+politically relevant parties, which took part in the last           sitions and issue saliences. Beyond the question of VAA
+four national elections (2006, 2008, 2013 and 2017) and             design, we also discuss some more general implications
+thus in over a decade of notable political developments,            for the analysis and interpretation of party positions
+within an ideological space. It does so by combining in-            and point to further applications in which the proposed
+formation about both the salience of specific policy is-            approach of weighting policy items from a VAA prom-
+sues and the positions parties take on these issues. Ex-            ises to offer an added value.
+isting ways of estimating party positions usually (but
+see Kriesi et al. 2006; Bornschier 2010; Warwick 2006)
+either rely on positional information – as in the case of           2. Measuring party positions by means of VAAs
+expert surveys (Laver and Hunt 1992; Benoit and Laver
+2006; Polk et al. 2017) – or are based on text analysis             At first glance, VAAs seem particularly suited for the
+that translates the relative saliency of issues (Müller et          study of party positions given that these tools contain
+al. 2017; Volkens et al. 2017) or words (Laver, Garry, and          information about parties’ stances on individual issues.
+Benoit 2007; Proksch and Slapin 2009) into party po-                Are they for or against a minimum wage? Do they sup-
+sitions. While these existing approaches exhibit some               port or oppose renewable energies? Of course, positions
+commonalities in their measurements, they often also                on such individual issues do not say anything about party
+do not yield converging results, as Dolezal et al. (2016,           positions in a more general sense yet, i.e. in terms of how
+646) have recently shown for the Austrian political par-            they differ regarding their overall programmatic pro-
+ties’ left-right positions between 2002 and 2008.                   files. However, the entirety of information from a range
+    By mapping the Austrian party policy space for sev-             of such issues taken together allows for extracting a larg-
+eral elections, this article thus also addresses the mea-           er pattern of how parties position themselves in relation
+surement of party position as a classic political science           to one another and to locate them in a low-dimensional
+problem and illustrates the usefulness of VAA-data for              space. This is possible through condensing the VAA-in-
+that purpose. The Austrian case offers particularly suit-           formation in a way that yields an overall pattern of com-
+able conditions for making use of information about                 monalities and opposition among the parties.
+both saliencies and positions. First, the Austrian VAA                  To generate a structure of party interrelations based
+wahlkabine.at not only contains information about par-              on VAA information about parties’ positions regarding
+ties’ stances regarding a range of specific policies, but           individual policies, previous studies have employed scal-
+also comprises parties’ importance ratings with respect             ing methods in order to bundle the various policy items
+to these policies. These VAA-internal importance ratings            contained in a VAA. Several studies have, however, not
+will be used to weigh the individual policy positions of            drawn on the party positions provided with the VAA for
+wahlkabine.at in order to more accurately position parties          these scaling procedures. Rather, they have employed
+S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4                        3
+
+
+
+
+user input data about their policy position and used scal-              the same way that issue salience matters for individual
+ing techniques to scale these responses and extract larg-               voters’ party perceptions, issue salience also matters on
+er programmatic dimensions (Louwerse and Rosema                         the level of the party system and the party positions. The
+2014; Wheatley 2012; Wheatley, Carman, Mendez, and                      basic idea here is simple: if two parties agree or disagree
+Mitchell 2014). Also by knowing the party affiliation of                on an issue that is highly important in party competi-
+these users, one can position parties indirectly on those               tion, this issue would have to be reflected in the inter-
+extracted dimensions by calculating average user posi-                  party relations more strongly than other issues that are
+tions grouped by party affiliation.                                     less relevant.
+    Alternatively, it is possible to directly use informa-                  Against the backdrop of these considerations, the
+tion about party positions on individual policies. Pre-                 Austrian VAA wahlkabine.at deserves particular atten-
+vious work in that regard has either simply counted                     tion. This tool not only contains information about how
+the amount of concurrent items between parties (Nau-                    parties position themselves on individual issues, but
+mann 2017) or again used scaling methods to map party                   also about how parties rate the importance of these is-
+positions in a low-dimensional space (Gemenis 2013;                     sues or items. These item importance scores can in turn
+Talonen and Sulkava 2011; Wagschal and König 2014;                      be used to calibrate the party positions. This approach
+König and Jäckle 2018). This approach of scaling VAA                    amounts to using internal weights of the VAA to achieve
+data has a major advantage which however has a poten-                   a better representation of party policy positions.
+tially great weakness as its flipside. On the one hand, the                 In order to take into account the importance that par-
+VAA issues are chosen specifically with a view to a given               ties give to various relevant issues, one does not have to
+election – and can thus be expected to adequately repre-                rely on their own ratings though. Instead, it is also pos-
+sent those issues that were relevant at the election date.              sible to look at the extent to which they emphasize issues
+This, on the other hand, implies that the extracted party               in their manifestos. Again, the Austrian context proves to
+policy spaces and party positions cannot straightfor-                   have particular merit because of the data collected by the
+wardly be compared between elections as the generated                   Austrian National Election Study (www.autnes.at). One
+dimension and their meaning are not fixed but differ be-                of the components of this regularly conducted study is
+tween elections.                                                        a content analysis of party manifestos that draws on cat-
+    Moreover, the election-specific selection of issues                 egories for coding topics and positions. As a result, this
+could be criticized as arbitrary. After all, one could al-              study provides information about the importance that
+ways think of different selections of relevant issues for               parties give to a comprehensive range of policy-issues.
+a given election; and depending on the selection of con-                Using this information for the calibration of VAA data
+crete VAA issues, which are tied to larger issue domains                amounts to employing external weights in order to align
+like welfare or law and order, one gets different implicit              the implicit issue domain weights resulting from the se-
+weightings of such issue domains. For instance, it could                lection of VAA items with parties’ issue saliencies.
+be the case that during an election campaign, parties                       Altogether, making use of the data sources described
+have put a strong emphasis on social security and wel-                  above is advantageous in that it allows to clearly distin-
+fare while this issue domain is represented in the VAA                  guish between an issue’s saliency and parties’ positions
+with only a single item among several dozen. The selec-                 regarding it. Furthermore, relying on the VAA data for
+tion of VAA issues thus creates a problem because when                  the party positions has the additional merit that we can
+extracting party positions based on the data contained                  directly compare parties’ ideological stances since all
+in the VAA using structure-identifying methods, the re-                 parties have to answer to a set of question that they all
+sults will depend on the number and choice of the VAA                   receive. This is much more difficult when the party po-
+items (Gemenis 2013, 280). In addition, previous re-                    sitions are extracted from manifestos in which the par-
+search has shown that varying the selection of issues in                ties have the opportunity to mask their real positions by
+a VAA can quickly lead to differing recommendations for                 hardly mentioning certain policy issues at all.
+people who use that tool (Walgrave, van Aelst, and Nuy-
+temans 2008).
+    This problem may not be a grave one in the actual                   3. The Austrian wahlkabine.at
+practice of using VAAs for obtaining voting advice. Af-
+ter all, users of some VAAs have the possibility of either              The Austrian VAA wahlkabine.at was launched for the
+skipping items they deem irrelevant and of attributing                  first time before the 2002 general elections. Since then,
+weights to VAA items more or less in accordance with                    it has been used for a total of 39 elections at the state, na-
+their own issue importance perceptions. This feature                    tional and European level (as of November 2017). With
+can potentially counter a bias in the selection of VAA                  more than 5m users in total and more than 1.2m just for
+items as it allows to calibrate the item saliencies through             the 2017 elections, it is also the most widely used VAA
+aligning them with voters’ own saliencies. However, in                  in Austria. The process of its creation is similar to other
+4                                  S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4
+
+
+
+
+VAAs: First, an editorial team that consists of journalists                   distance is measured (averaged pairwise). The external
+and experts from political science, cultural studies and                      weights based on the AUTNES data have to be calculated
+methodology develops a catalogue of about 40 questions                        before they can be applied, and they have to be calculated
+which is sent to all competing parties. The parties an-                       in such a way so that they can be assigned systematically
+swer these questions with “yes” or “no”,1 explicate their                     to the VAA items. The AUTNES coding data does not pro-
+positions and indicate on a three-point-scale for how                         vide information that can directly be brought together
+important they deem the various issues. Subsequently,                         with the individual VAA issues, but it does offer informa-
+the editorial team discusses the answers and chooses 26                       tion about the salience of larger issue domains or topics.
+questions (25 questions in 2013) for the final online-tool.                   By grouping the VAA items under these topics, it is pos-
+    VAA-users can give their positions on the 26 items                        sible to match the AUTNES saliencies to the various VAA
+answering with “yes”, “no” and “not specified”. Addition-                     items. To obtain the final item-specific weights, we need
+ally, they can rate the importance of the policy-issue on                     to know the topic saliencies derived from the party man-
+a nine-point-scale. Having answered all 26 questions                          ifestos and take into account the implicit weights that re-
+respondents get presented the highest matches between                         sult from the number of VAA items per topic.
+their own ideological stances and the parties’ positions.                          Altogether, our analysis below uses the VAA-in-
+The calculation of these matches also takes into account                      ternal weights in two variants (averaged over all par-
+the item-weights by the parties as well as by the users                       ties and averaged pairwise over parties) as well as the
+(wahlkabine.at 2017).                                                         external weights based on the AUTNES data to gener-
+                                                                              ate three weighted party policy spaces. As a reference,
+                                                                              we also generate a party spaces based on the raw VAA
+4. Obtaining issue saliencies from wahlkabine.at                              item scores, which amounts to using the implicit topic
+   and AUTNES                                                                 weights (resulting from the VAA item numbers per top-
+                                                                              ic). Table 1 gives an overview of these weights as they are
+The scaling analysis below makes use of two sources                           applied in the scaling analysis below. An overview of the
+for parties’ issue saliencies in order to calibrate the data                  necessary steps to obtain the weights are depicted in Fig-
+from wahlkabine.at: (1) the VAA-internal item importance                      ure 1, which we detail in the following.
+rating by the parties themselves and (2) external salien-                          Generating manifesto-based weights that can be
+cies calculated from the coding of party manifestos that                      matched to the VAA items requires, as a starting point,
+forms part of the AUTNES-project. Such information                            a unitized category scheme. As the AUTNES data already
+about item saliences can be used to weigh the distances                       provides a set of categories for topics with which the
+between two parties on the various items and to gener-                        manifestos are coded, we use these topic categories to
+ate weighted overall (dis-)similarities between parties.                      code the VAA items. As there are only 25 or 26 items in
+This information about similarities can then be em-                           the Austrian VAA, it is important to reliably code these
+ployed in the scaling procedure described below. While                        items with larger topic categories, as few deviations can
+this weighting process is the same for all weights, the                       already lead to notable changes (for instance coding not
+weights themselves are generated differently.                                 one but two items under a given topic already gives that
+    The internal importance scores (1 to 3) are already                       topic double weight). The AUTNES data is ideal in that
+given in the VAA for the individual items and can direct-                     regard because the master codebook specifies the larg-
+ly be used to weigh party differences on each of the 26                       er topics on two more concrete sublevels. This makes it
+items. Two different weighting procedures will be applied                     possible to match specific VAA items to AUTNES subcat-
+for them, one weighting the distances by the overall in-                      egories which are nested in the 13 more comprehensive
+ternal importance scores (averaged over all parties) and                      topics (e.g. basic income, health and families/children/
+one by the importance scores of the two parties whose                         youth as subcategories of “welfare state”).
+                                                                                   Having categorized the VAA items with topic catego-
+1   In some cases the simplification coming along with this binary re-        ries and coded the party manifestos with the same topic
+    sponse set yields assignments that are at first sight implausible.        (already provided by the AUTNES data) in a first step,
+    When for example the FPÖ supports sea rescue operations in the            the second step is to obtain the topic weights for both
+    Mediterranean for refugees just as the Greens, the SPÖ, the NEOS
+    or the KPÖ this comes as a surprise, yet looking at the given reasons     data sources. For the manifestos, this is done by divid-
+    it makes sense. The FPÖ links their support for sea rescue operations     ing the number of sentences coded with a topic category
+    with the demand to return the rescued persons directly to North Af-       by all coded sentences of the party manifestos (Dolezal
+    rica. The different reasons for their “yes” for FPÖ and the left par-
+    ties for this item can nevertheless not be taken into account when        et al. 2016, 642). These relative topic weights are then
+    measuring the party positions based on the VAA data. This problem         averaged over all parties so that we obtain overall topic
+    also biases the VAA results when matching the users to the parties.       weights for the election. For the VAA data, the policy
+    Yet, a critical inspection of all items shows that such implausibili-
+    ties are very rare and potentially do not bias the overall results in a   items belonging to each topic are simply divided by the
+    significant way.                                                          total number of items.
+S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4                        5
+
+
+
+
+Table 1: Overview of the weighting procedures
+
+
+ Weighting                                                            Source
+
+ a) Implicit weights                                                  No weighting, raw VAA data
+ b) Internal weights (averaged over all parties)                      VAA-internal item-specific importance ratings provided by
+                                                                      parties
+ c) Internal weights (averaged pairwise)                              VAA-internal item-specific importance ratings provided by
+                                                                      parties
+
+ d) external weights (averaged over all parties)                      Topic saliences based on the manifesto coding of the AUTNES
+                                                                      project
+
+
+
+
+Figure 1: Obtaining the weights
+6                                   S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4
+
+
+
+
+    Finally (step 3), these implicit item weights can then                      Moreover, while “education and culture” is generally un-
+be aligned with the topic importance based on the mani-                         derrepresented in the VAA compared to the manifesto-
+festo data. In other words, the implicit topic importance                       based saliencies, “army” is generally overrepresented.
+of the VAA data is transformed into the known and in                            It is furthermore striking that the European Union
+that sense explicit topic importance from the manifes-                          has not been covered in the 2013 national election and
+tos. The corresponding numbers for the implicit, the in-                        that straightforward economic issues (in line with the
+ternal (VAA) and the external (AUTNES) weights for all                          AUTNES coding scheme) were not contained in the VAA
+13 topics averaged over all parties are presented by elec-                      for the 2008 election.
+tion year in Table 2.                                                               The description in Table 2 is based on the internal
+Looking at the table, the internal weights lead to only                         (VAA-inherent) and external (manifesto-based) weights
+marginal changes in the topic weights. The correlation                          averaged over all parties. However, there might be marked
+between these two weights (using topics as cases) is close                      deviations of the individual parties’ topic weights according
+to 1 for all examined elections – hence the internally                          to their electoral manifestos. Taking a closer look at such
+weighted item importance basically mirrors the item                             possible deviations promises relevant insights in two re-
+importance that results from the item selection deci-                           spects. First, we can determine whether the item selec-
+sions of the VAA designers. In contrast, the AUTNES top-                        tion in the VAA leads to an overall implicit topic impor-
+ic weights are only moderately correlated with the im-                          tance that starkly diverges from the topic importance of
+plicit topic weights. It thus seems that while the Austrian                     certain parties – and may thus disadvantage them. Al-
+VAA contains information about parties’ topic saliences                         though parties may use the Austrian VAA’s item impor-
+as an extra feature, these saliences do not come close to                       tance ratings to correct such deviations, these internal
+the topic saliences expressed through party manifestos.                         weights may not be sufficient. If, for instance, a quarter
+    The most notable discrepancies in this respect can be                       of the items belongs to the category “welfare state” a
+observed for the topics “economy” and “law and order”.                          party that does not put any emphasis on that topic will
+
+Table 2: Comparisons of the topic saliences based on raw VAA data, internal (VAA), and external (AUTNES) weights
+
+
+                             2006                             2008                             2013                             2017
+
+ AUTNES topics               no          VAA-                 no         VAA-                  no         VAA-                  no           VAA-
+                                                    AUTNES                           AUTNES                          AUTNES
+                             weights     weights              weights    weights               weights    weights               weights      weights
+
+ Budget                      0.00        0.00       0.04      0.08       0.08        0.06      0.04       0.05       0.06       0.12         0.12
+
+ Ecology                     0.00        0.00       0.04      0.00       0.00        0.04      0.04       0.02       0.03       0.04         0.05
+
+ Economy                     0.12        0.11       0.13      0.00       0.00        0.15      0.08       0.07       0.17       0.19         0.22
+
+ Education and culture       0.12        0.12       0.13      0.08       0.08        0.14      0.08       0.08       0.14       0.04         0.05
+
+ Europe                      0.04        0.04       0.04      0.15       0.18        0.05      0.00       0.00       0.03       0.00         0.00
+
+ Foreign politics            0.04        0.04       0.02      0.04       0.03        0.01      0.04       0.04       0.01       0.04         0.05
+
+ Immigration                 0.08        0.09       0.09      0.08       0.09        0.07      0.08       0.08       0.05       0.12         0.14
+
+ Infrastructure              0.08        0.07       0.05      0.04       0.03        0.06      0.00       0.00       0.04       0.00         0.00
+
+ Institutional reform        0.15        0.13       0.03      0.04       0.03        0.06      0.08       0.08       0.10       0.04         0.04
+
+ Military                    0.04        0.04       0.03      0.04       0.04        0.01      0.08       0.08       0.01       0.12         0.13
+
+ Security                    0.12        0.12       0.06      0.15       0.13        0.06      0.16       0.17       0.03       0.08         0.09
+
+ Society                     0.12        0.11       0.08      0.04       0.04        0.09      0.16       0.15       0.07       0.04         0.03
+
+ Welfare state               0.12        0.13       0.21      0.27       0.28        0.18      0.16       0.17       0.18       0.19         0.17
+
+ Correlations with
+                                         0.97       0.50                 0.99        0.43                 0.99       0.39                    0.98
+ ”no weights“
+
+ Annotations: Differences from 1.0 in the sums are due to rounding and further topics in the AUTNES data. The AUTNES data for 2017 has not
+ been available as of November 2017.
+S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4                                               7
+
+
+
+
+hardly be able to play down this topic by using the VAA’s                      instances in which this internal weighting does not lead
+importance ratings that range from 1 to 3.                                     to changes. However, in two cases, for the FPÖ and the
+    Second, we can assess whether parties do in fact                           Green Party in 2013, the correspondence in the topic
+use these item importance ratings to align the implicit                        weights drops visibly.
+topic weights of the VAA with their own topic saliences                            Finally, looking at the correlations in total, they are
+as based on their electoral manifestos. This can be ex-                        for the largest part weak to moderate. This means that
+amined as follows: We first compare (by means of cor-                          parties’ topic saliencies based on their manifestos are
+relations) the topic importance profiles of the VAA, i.e.                      generally not reflected in the VAA item selection even
+the implicit weights that are merely based on the item                         after parties use VAA-internal weights to adjust the
+numbers under each topic with the parties’ manifesto-                          importance of VAA items and corresponding topics.
+based topic importance profiles. Second, we do the same                        Presuming that parties are generally intent on such an
+comparison but with the VAA topic importance profiles                          adjustment we conclude that the VAA item importance
+that were adjusted by the VAA-inherent topic impor-                            ratings are not adequate to achieve this. This, however,
+tance ratings provided by the parties. We would expect                         also means that the feature of party importance rating
+that this second correlation of the topic salience profiles                    in the VAA is unlikely to fully serve the aim of optimiz-
+is higher for the parties if they use the VAA-internal                         ing the matching between user preferences and parties’
+weights to align the topic importance with their mani-                         programmatic profiles.
+festos. On the other hand, parties might use the weights                           Altogether, combining the AUTNES data with the
+strategically and divert from the topic saliencies that are                    wahlkabine.at data holds two promises for making use of
+expressed through their manifestos. The results from                           the VAA information. First, it can help to identify top-
+these analyses are presented in Table 3.                                       ics (and thus items) that are grossly over- or underrep-
+    The results indicate that there is no party that is sys-                   resented in the VAA compared to the manifesto-based
+tematically favored by the VAA item selection with re-                         salience of these topics. The comparison in Table 2 fur-
+gard to the topic weights. If anything, the highest cor-                       thermore suggests that using these manifesto-based
+relations on average occur for the two catch-all parties                       saliences to weight the VAA items may lead to different
+SPÖ and ÖVP. However, for some elections, the smaller                          party spaces that can be extracted from the VAA data.
+parties, too, show a moderate congruence of their man-                         Second, the registered discrepancies in topic weights are
+ifesto-based topic weights with the VAA-inherent, im-                          especially important for the purpose of extracting party
+plicit topic weights (Green Party in 2006, FPÖ and BZÖ                         positions and interrelations because when doing so, one
+in 2008). Moreover, the parties largely seem to use the                        would like to take into account the importance given
+VAA item weights in a way that aligns the VAA topic im-                        to the various policy issues by the parties themselves.
+portance with the topic saliency they express through                          The AUTNES data offer a substantially meaningful and
+their electoral manifestos. There are also a number of                         methodologically well-founded basis for this purpose.
+
+Table 3: Comparing the VAA-inherent topic importance profiles with topic importance in electoral manifestos (AUTNES
+data) as an external benchmark
+
+ Election             2006                                        2008                                       2013
+
+                                         with VAA-internal                          with VAA-internal                          with VAA-internal
+ Party                no weighting                                no weighting                               no weighting
+                                         party weights                              party weights                              party weights
+
+ SPÖ                  0.48               0.64                     0.46              0.50                     0.33              0.58
+
+ ÖVP                  0.48               0.76                     0.92              0.94                     0.39              0.42
+
+ FPÖ                  0.09               0.25                     0.78              0.81                     0.36              0.26
+
+ BZÖ                  0.58               0.53                     0.62              0.59                     0.12              0.23
+
+ Grüne                0.58               0.76                     0.18              0.16                     0.39              0.29
+
+ Team Stronach                                                                                               0.28              0.27
+
+ Annotations: Values are Pearson correlation coefficients between the number of issues in wahlkabine.at assigned to one of the 13 AUTNES topics
+ presented in table 1 (not weighted and weighted by the VAA internal issue saliency) and the share of these topics in the manifestos (AUTNES-data). Bold
+ numbers represent change in the expected direction.
+8                                S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4
+
+
+
+
+Importantly, third, this source of topic weights is known                tion of the data and extract party positions on these di-
+and reproducible – in contrast to the implicit topic                     mensions using multidimensional scaling (MDS). MDS
+weights resulting from the selection of items in the VAA.                uses information from a (dis-)similarity matrix that
+                                                                         contains all pairwise comparisons between parties. Cal-
+                                                                         culating these dissimilarities based on parties positions
+5. Empirical analysis                                                    on the individual policy items allows for taking into ac-
+                                                                         count the item-specific weights described above (see fig-
+5.1 Counting similarities                                                ure 1 and table1). The pattern of dissimilarities can then
+                                                                         be condensed and visualized in low-dimensional spac-
+In order to get a first impression of the data we look at a              es (Borg and Groenen 2005; Borg, Groenen, and Mair
+simple yet revealing descriptive statistic.2 Figure 2 pres-              2013). The procedure minimizes the information loss
+ents the party similarities based on the raw data in the                 that occurs through dimension reduction applied to the
+form of the percentage of items over the entire 25/26                    dissimilarity matrix. The lower the number of dimen-
+wahlkabine.at-items a given party-couple agrees on (i.e.                 sions, the more information has to be condensed and the
+without any saliency-weighting). The highest agree-                      higher the information loss.3
+ment in every year is between the Green party and the                        In a first step, the distance matrix has been calcu-
+leftist KPÖ. In 2013, there was only one question they                   lated using Gower’s distance metric (Gower 1971), a gen-
+disagreed upon. With numbers of 15 to 25 percent, the                    eralized distance measure that allows for weighting the
+lowest agreement can be found between the Green party                    properties that enter into the calculation of the inter-
+and the KPÖ, on the one hand, and the FPÖ, BZÖ and                       object distances. In a second step, performing the MDS,
+(particularly since 2013) the ÖVP, on the other hand.                    we choose a two-dimensional representation. This is not
+    Another interesting aspect concerns the ideological                  only justified by satisfactory low values for Stress-I (<
+distance between ÖVP, SPÖ and FPÖ. While the agree-                      0.1), which indicates the extent of information loss, but
+ment between the grand coalition parties dropped sig-                    also allows for a straightforward and easily interpretable
+nificantly from 62% in 2008 to 48% in 2013, the agree-                   visual inspection.4 The selected MDS variant uses infor-
+ment between each of these two parties and the right-                    mation on an interval scale and thus requires that not
+wing populist FPÖ at the same time rose sharply (for the                 just the ordering but also the size of all the party dissimi-
+ÖVP by 22.2, for the SPÖ by 9.8 percentage points). Ac-                  larities is taken into account when translating them into
+cording to these data in 2017 (and already partly in 2013),              spatial distances (Borg, Groenen, and Mair 2013, 38–39).
+a right-wing-populist coalition between ÖVP and FPÖ                          The scaling procedure will be done with four different
+was ideologically more viable than a grand coalition.                    kinds of data: (a) the unweighted, raw VAA data; (b) the
+While this descriptive account is well suited to compare                 weighted VAA data using the internal VAA party weights
+the distances between party pairs, they cannot provide                   averaged over all parties – which applies a bird’s eye view
+a comprehensive picture of the ideological party space.                  of the party space, emphasizing distances between par-
+For this purpose, the following section applies multidi-                 ties if they concern issues rated as important on average
+mensional scaling as a method to translate the pairwise                  by the parties; (c) the weighted VAA items using pairwise
+similarities into spatial distances.                                     averaged internal VAA party weights – which presumes
+                                                                         that the party space and party differences are seen from
+5.2 Mapping the Austrian party system
+                                                                         3 While counting similarities is straightforward, this approach is not
+The information about the similarities and dissimilari-                    able to actually construct an ideological space. Cluster analysis may
+                                                                           find certain patterns in the data, but its results largely depend on
+ties among all the parties based on the VAA items can be                   the applied clustering algorithm. Most importantly, MDS provides
+used to extract an overall structure of party interrela-                   a multidimensional map of the party sphere that holds information
+tions. This works the better the more parties’ positions                   on relative similarities and differences between parties, clusters of
+                                                                           ideological close parties as well as dimensions that can be interpret-
+on the various VAA items are systematically related to                     ed in a meaningful way – all in just one picture.
+one another so that they can be broken down to a few                     4 Additionally, the scree plots have been inspected for the results
+dimensions (i.e. if parties that are opposed to one an-                    based on the 2006, 2008, and 2013 elections and using the mani-
+                                                                           festo-based weights. These plots contain the stress values for dif-
+other on one item, e.g. concerning economic policy, are                    ferent numbers of dimensions used to represent the data are allow
+also opposed to one another on many other items, e.g.                      for checking whether there is a jump in the information loss when
+concerning environmental and welfare policy). These di-                    lowering the number of dimensions one by one. For the 2006 elec-
+                                                                           tion there is a clear elbow only for two dimensions, for 2008 there
+mensions can then be used to describe the party policy                     are elbows at two and four dimensions (but with comparatively the
+space. In the following, we perform a dimension reduc-                     lowest stress values), and for 2013 there is again a clear elbow only
+                                                                           at two dimensions. Together with the acceptable stress-I-values for
+2 We leave out the VAA for the 2002 election because only four parties     two dimensions over all elections and the easier interpretation with
+  were included for that election and thus the VAA provides too little     a two-dimensional spatial representation, we take these to be suit-
+  information for making comparisons of their interrelations.              able visualizations of the data.
+S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4                                             9
+
+
+
+
+Figure 2: Programmatic agreement between parties based on the VAA data
+
+
+
+
+Party abbreviations: BZÖ = Bündnis Zukunft Österreich, Grüne = Die Grünen – Die Grüne Alternative, FLÖ = Freie Liste Österreich, FPÖ = Freiheitliche Partei
+Österreichs, FRANK = Team Stronach, KPÖ = Kommunistische Partei Österreichs, LIF = Liberales Forum, NEOS = Das Neue Österreich und Liberales Forum,
+ÖVP = Österreichische Volkspartei, PILZ = Liste Peter Pilz, PIRAT = Piratenpartei Österreichs, SPÖ = Sozialdemokratische Partei Österreichs.
+
+
+
+the point of view of party dyads5); and (d) weighted VAA                            For the 2006 national election, we see a structure of
+items that are aligned with the overall topic weights in                        party positions that appears overall valid. It shows the
+the party manifestos based on the external AUTNES cod-                          clear opposition between the leftist Parties Grüne and
+ing data (for those elections for which the data is avail-                      KPÖ together with the Social Democrats, on the one
+able). The examination proceeds in chronological order,                         hand, and the ÖVP, BZÖ, and the FPÖ, on the other hand.
+starting with the 2006 election in Figure 3.                                    The first dimensions thus can be interpreted as a gen-
+                                                                                eral left-right dimension that combines socioeconomic
+5   The idea is that only saliencies of the parties whose distance shall be
+    calculated should be taken into account. Saliencies of other parties        as well as sociocultural items. The vertical dimension
+    are not important with respect to this dyadic importance.                   is harder to interpret. The items that primarily load on
+10                         S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4
+
+
+
+
+Figure 3: The Party Policy Space of the 2006 Austrian National Election
+
+
+
+
+this dimension are the following three: Supporting child           relations is present in all four graphs of Figure 3, the
+benefits in the existing form is correlated with higher            comparison of these four configurations also indicates
+values whereas support for stronger controls of banks              that the results are visibly affected by the weighting of
+and the introduction of universal income are correlated            the VAA data. This primarily concerns the use of the in-
+with lower values. These items all have in common that             ternal weights averaged over all parties, which pulls the
+they refer to issues of major societal consensus, with             leftist parties closer together – a finding that is, however,
+parties rejecting this consensus located lower in the pol-         not consistent with the pattern resulting from the exter-
+icy space.                                                         nal weights. In this latter case, the interrelations of the
+    It is furthermore notable that the parties in the left         three leftist parties in the graph resemble the relations
+political spectrum are positioned relatively close to-             in the unweighted scaling configuration. Moreover, the
+gether, whereas the other parties in the graphs are more           external weights based on the party manifestos move
+heterogeneous. While this overall structure of party               the BZÖ closer to the ÖVP and away from the FPÖ. While
+S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4                        11
+
+
+
+
+Figure 4: The Party Policy Space of the 2008 Austrian National Election
+
+
+
+
+this does not alter the overall structure, it nevertheless               at the distance between the Green Party and the ÖVP.
+changes the ranking of the programmatic affinities                       This distance is much lower if their dissimilarities are
+among the parties.                                                       weighted by the averaged saliencies for these two par-
+    The results for the 2008 national election (Figure 4)                ties only.
+appear overall consistent as well. Again, the weighting                      Altogether, it is reassuring that the dimensionality is
+does not induce big changes in the party configuration.                  highly similar to that in the 2006 election when looking
+This also means, however, that it also does not allow for                at the party alignment. There is a cluster of leftist parties
+better discriminating between the three leftist parties                  opposed by the three more heterogeneous parties that
+on the right-hand side. Only in the solution that aver-                  are located on the left-hand side of Figure 3, the ÖVP,
+ages the pairwise internal party saliences in the VAA (c)                BZÖ, and FPÖ. On the vertical axis, when comparing
+they lie further apart. This, however, is a deviation from               the relative distances among the parties, this group of
+all the other configurations, particularly when looking                  right-wing parties has moved closer together compared
+12                          S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4
+
+
+
+
+Figure 5: The Party Policy Space of the 2013 Austrian National Election
+
+
+
+
+to 2006. Strikingly, this vertical dimension is again pri-          preneur Frank Stronach. The resulting party structure is
+marily marked by items that refer to issues concerning              not as clear-cut as the ones presented above. Strikingly,
+a clear societal consensus. While support for abolish-              the leftist parties are now more heterogeneous too. A left
+ing conscription and for the indexing of the retirement             cluster of the Green Party, the KPÖ, and the Pirate Party
+age to the demographic aging are represented by higher              is still discernible, but the SPÖ now shows a greater or at
+values, support for investments to obtain information               least a similar affinity to the FPÖ, and to a lesser extent
+about tax exiles is represented by lower values.                    to the ÖVP, and to the BZÖ.
+    At the 2013 national election (Figure 5), we see a more             Only when using the VAA-internal party issue im-
+complex field of parties with several new contenders                portance ratings and averaging these weights for all
+that competed at the national level for the first time: the         pairwise party comparisons individually (Figure 5c)
+liberal party NEOS, the Pirate party, and the populist              does the SPÖ lie closer to the Green Party and the KPÖ
+challenger party led by the Austrian-Canadian entre-                – albeit not to the Pirate Party. A much more remark-
+S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4                      13
+
+
+
+
+able change occurs, however, with the manifesto-based                    ous elections. Yet, irrespective of the weighting, the BZÖ
+weights. When looking at Figure 5d in comparison to the                  is not located between the ÖVP and FPÖ, as in previous
+two upper charts, one sees a switch in positions between                 elections. Moreover, the ÖVP takes the most extreme
+the party of Frank Stronach and the BZÖ. This begs the                   position at the opposite pole to the territory that is cir-
+question which the actual positions of the parties were                  cumscribed by the leftist parties Green Party and KPÖ.
+at the election. Should we have more confidence in the                       Finally, with regard to the results for the 2017 elec-
+internal weights or the external weights based on the                    tion (Figure 6), there are only marginal changes in the
+manifestos? The results from the scaling analysis using                  party policy space that result from the use of the inter-
+the manifesto-based weights appears as the odd one out,                  nal weights. The results do not contain any anomalies,
+but this result could, on the other hand, be seen as more                rather the overall pattern is highly similar to that of the
+accurate given that the distance between ÖVP and BZÖ                     preceding election, only with the minor parties BZÖ and
+is more similar to the corresponding distance in previ-                  Pirate Party missing. Correspondingly, the interpreta-
+
+Figure 6: The Party Policy Space of the 2017 Austrian National Election
+14                           S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4
+
+
+
+
+tion of the extracted ideological map is comparable to               and SPÖ/ÖVP can only partly be ascribed to an active
+those for the other elections: The more to the left in the           move of the right-wing populists – their large ideologi-
+chart a party is located, the more economically market               cal shifts happened before 2006. It is also tied to the two
+liberal and socio-culturally conservative it is. In addi-            grand coalition parties shifting away from their tradi-
+tion, higher positions on the vertical axis represent party          tional locations in the overall party structure. This be-
+stances that reject status quo policies and cannot easily            comes particularly obvious in the case of the SPÖ, which
+be mapped on the traditional left-right dimensions: sup-             in 2006 and 2008 can easily be located in the left camp
+port for abolishing the compulsive membership in the Austrian        (Greens, KPÖ and LIF) whereas in 2013, it approached
+Federal Economic Chamber, support for state surveillance of          the more conservative positions held by FPÖ and ÖVP.
+online communication (such as the messenger Whatsapp),                   Finally, as a validity check of our results beyond
+and support of state funding for socially polarizing art.            pure face validity, we compared them to the data from
+    Against the backdrop of the pronounced similari-                 the Chapel Hill Expert Survey (see appendix 1 for de-
+ties to the previous election, there are some noteworthy             tails). The overall structure of the party system is in-
+differences. While the SPÖ shows a greater affinity to               deed highly congruent between our wahlkabine.at-based
+the leftist cluster of the Green Party, the party Pilz that          MDS-approach and the expert coding, thus bolstering
+had split from the Green Party, and the KPÖ, the ÖVP is              our confidence in the validity of the chosen approach to
+closer to the SPÖ at the 2017 election whereas the FPÖ               map party positions based on (calibrated) VAA data. One
+is relatively more distant from the SPÖ than in 2013. In             noticeable difference to the Chapel Hill data should be
+that sense, we see a sort of normalization of Austrian               noted though. In the Chapel Hill data the SPÖ virtually
+party competition in terms of parties’ policy positions              does not change their relative position throughout the
+when comparing them to the 2006 and 2008 elections                   observed years, while in our data the SPÖ in 2013 moves
+and the comparatively deviant pattern for 2013.                      closer to the conservative block. This does not mean,
+                                                                     however, that the findings presented above are inaccu-
+5.2 Mapping the Austrian party system                                rate. Rather, as the expert ratings are likely to capture
+                                                                     the more stable programmatic orientation of parties,
+The period from 2006 to 2017, covered in this article,               the data used in the analysis above
+represents the ultimate departure from the “hyperstable
+party system“ (Wineroither and Kitschelt 2017, 251) that
+characterized modern Austrian politics since 1945 (and               6. Conclusion
+particularly between 1970 and 1999), and constitutes a
+shift in the direction of a more fragmented and less con-            Several conclusions can be taken away from the preced-
+centrated party system. In 2006 for the last time, the               ing analyses that concern the usefulness of VAAs and
+grand-coalition parties each had more than 30 per cent               specifically the wahlkabine.at for extracting party policy
+in the national vote, whereas the Greens and the FPÖ                 spaces, but also the more general question of how schol-
+consolidated their political weight. The following elec-             ars should interpret these party spaces and parties’ posi-
+tions established these two smaller parties as relevant              tions.
+players on the Austrian political stage. In 2017, the FPÖ                First, the analysis has shown how the positional
+came very close to its so far best result of nearly 27 per-          information about a considerable number of specific
+cent under Jörg Haider in 1999. Additionally, with BZÖ,              policy issues of the wahlkabine.at can be combined with
+Team Stronach and NEOS, new parties have entered the                 information about the importance of these issues to ex-
+arena.                                                               tract party positions in a low-dimensional policy space.
+    The results of our analysis show that these major                This approach thus uses more information than those
+transformations at the level of the party system are                 approaches which either only use positional informa-
+also paralleled in significant alterations of the parties’           tion or estimate party positions based on the relative
+relative positions within the political space. One major             issue emphasis by parties. It combines party positions
+example here is the relative position of the FPÖ, which              regarding a range of concrete policy items that were rel-
+changed from being the odd one out to a position in 2013             evant at a given election with comprehensive informa-
+that was closer to the ÖVP and the SPÖ than the two                  tion about the saliencies of topics or issue domains. For
+former grand coalition parties were to each other. This              the purpose of extracting party positions, it inherently
+result may seem all the more astonishing as experts see              makes sense to take into account both kinds of informa-
+Austria as an exemplary case for a programmatic con-                 tion. Party differences regarding policies that are only
+vergence of the major parties (Wineroither and Kitschelt             marginally relevant at an election can hardly be given
+2017, 267). Yet there are also signs of convergence when             the same weight as highly important issues when aiming
+looking at the change of the party configuration over                to estimate overall party policy positions. The approach
+time. The increasing relative proximity between FPÖ                  chosen above can be seen as an example of how to con-
+S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4                        15
+
+
+
+
+structively combine information about both positions                     tances among some parties change considerably. These
+and issue importance stemming from different sources.                    differences do not mean that these external weights per
+    Second, although the wahlkabine.at itself provides in-               se lead to more accurate representations of party posi-
+ternal weights in the form of parties’ issue importance                  tions. However, they do imply that the party space in-
+ratings, these weights lead to negligible changes in the                 herent to the information contained in the wahlkabine.
+extracted policy spaces compared to the unweighted                       at is sensitive to the weighting of the data and scholars
+VAA data. The reason for this is that the party weights                  should be careful with their interpretations when ana-
+(on a scale between 1 and 3) effectively vary between 2                  lyzing Austrian party positions based on the unweighted
+and 2.5. This is plausible as parties are not likely to pub-             data from the wahlkabine.at. Hence, the kind of weighting
+licly rate certain issues much less important than others.               matters and combining issue weights with information
+Using a larger scale (e.g. between 1 and 10, as it is, in fact,          about party positions regarding a range of policies is jus-
+possible for the users of the Austrian VAA) would thus                   tified empirically given that this weighting has a bearing
+hardly be practically feasible as a way to improve the                   on the extracted party policy spaces – even though it does
+VAA-internal issue saliencies.                                           not affect the larger structure of party positions.
+    Hence, while parties may give more weight to some                        Moreover, and fourth, drawing on external data
+VAA items compared to others, these comparatively                        sources, such as the AUTNES data, for weighting pol-
+small differences cannot compensate for the selectivity                  icy items can generally serve to calibrate the VAA data
+of the items contained in the VAA which makes the in-                    through aligning the implicit weights of topics repre-
+ternal weights also largely inadequate for calibrating the               sented by the VAA – the sources of which are unknown
+data in order to estimate party policy spaces. If a certain              – with known and easily interpretable external issue
+topic or issue dimension is grossly underrepresented                     importance scores. It should be stressed that the exter-
+among these items when compared to the election cam-                     nal weighting we used in the analysis is clearly not some
+paign and parties’ manifestos, the internal weights are                  far-fetched hypothetical. Rather, it is based on easily
+unable to address and correct this deficit sufficiently.                 interpretable and reproducible topic saliences that can
+The possible weighting range is simply too narrow to do                  be defended as a measure of the importance that parties
+justice to actual differences with regard to parties’ com-               give to certain topics themselves through their mani-
+municated issue saliences. This conclusion is not only of                festos. Moreover, while the issue emphasis in manifes-
+relevance for generating and interpreting party policy                   tos is clearly the product of party intentions, decisions
+spaces. It should be noted that the item importance rat-                 and strategies, it is less amenable to short-term tactical
+ings provided by the parties also enter into the calcula-                distortions than it is providing answers about issue im-
+tion of matching scores provided to users of the VAA. As                 portance for VAAs. This is no minor issue because par-
+these importance ratings have virtually no bearing on                    ties have an incentive to give answers that will best serve
+the party spaces lying behind the VAA data, one might                    their purpose at the election (Krouwel, Vitiello, and Wall
+want to simply dismiss them anyway. However, if we                       2012, 235).
+presume that the feature of parties’ own item impor-                         However, in order to be able to calibrate the data con-
+tance rating has been purposefully included to improve                   tained by the VAA and balance an undue weight/salience
+the validity and accuracy of the data, then the results                  of certain issues by means of external weights, all rel-
+above might be reason for concern. Our results suggest                   evant topics should be covered by the VAA. If issues that
+that if they are supposed to correct any biases, they are                are overall relevant in the party manifestos are not rep-
+not capable of doing that job.                                           resented in the VAA, no weighting scheme will be able
+    Third, further doubts about the usefulness of the                    to correct for such an omission. Indeed, when looking at
+internal weights are raised by the fact that the topic sa-               the AUTNES categories, there are major topics that were
+liencies expressed through parties’ manifestos (based on                 not covered by the VAA, e.g. the European Union issue
+the AUTNES data) markedly differ from the relative im-                   at the 2013 election. Yet, leaving a certain topic out does
+portance of topics represented in the VAA (based on the                  not amount to a problem under all conditions. As long
+number of issues as well as based on the VAA-internal                    as other important issues are represented which corre-
+weights). The relative importance of topics inherent to                  late with those that were left out (i.e. parties take similar
+the wahlkabine.at thus notably diverts from the saliences                positions as on those items that are not represented, e.g.
+given by parties themselves and it is not clear which is the             on foreign policy and European Union affairs), it is theo-
+real or hypothetical source of saliences behind the VAA.                 retically still possible to yield valid overarching issue di-
+Correspondingly, when weighting the VAA items with                       mensions using scaling procedures.
+the manifesto-based weights, we see changes in the party                     Beyond questions of VAA design, the results pre-
+spaces resulting from the scaling of the VAA items. Al-                  sented above hold a further important conclusion. The
+though the overall structure and major oppositions and                   general idea of using weights to calibrate party policy
+affinities between parties remain intact, the relative dis-              spaces directly points to an inherent perspectivism in-
+16                         S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4
+
+
+
+
+volved in these spaces. When thinking about how to                 matches the VAA provides. Greater transparency in that
+weigh the policy items of a VAA properly in order to get           respect would help to literally put the programmatic
+the party positions and interrelations right, the ques-            party differences and party-user matches respectively
+tion is also what getting it right means. This depends             into perspective – a requisite that is of relevance not just
+on which policy space and which underlying perspec-                for the Austrian wahlkabine.at but for VAAs in general.
+tive is of interest. The analysis above has used the is-
+sue weights as expressed by parties themselves through
+their manifestos. This can be seen as only one perspec-            References
+tive among other possible ones, but it is one that is in-
+telligible and reproducible and allows for making state-           Agathokleous, Marilena/Nicolas Tsapatsoulis (2016), Ap-
+ments about the structure of party relations when pre-                 plying Hidden Markov Models to Voting Advice
+suming a global perspective of issue saliences anchored                Applications, in: EPJ Data Science, Vol. 5 (1), Internet:
+in the level of parties themselves. However, different                 https://doi.org/10.1140/epjds/s13688-016-0095-z.
+perspectives could also be of interest. For instance, one          Benoit, Kenneth/Michael Laver (2006), Party Policy in
+could draw on issue weights as communicated through                    Modern Democracies, London: Routledge.
+media reporting about an election. These issue saliences           Borg, Ingwer/Patrick J. F. Groenen (2005), Modern Multi-
+conveyed through the media might even differ depend-                   dimensional Scaling: Theory and Applications, 2nd
+ing on the outlet. In that regard our results might also               ed., New York: Springer.
+be of interest for the question how political positions            Borg, Ingwer/Patrick J. F. Groenen/Patrick Mair (2013), Ap-
+are communicated within electoral campaigns and thus                   plied Multidimensional Scaling, Berlin: Springer.
+for the field of (political) communication and market-             Bornschier, Simon (2010), The New Cultural Divide and
+ing studies in general (see for example Seethaler and                  the Two-Dimensional Political Space in Western Eu-
+Melischek 2014). It is furthermore conceivable to simu-                rope, in: West European Politics, Vol. 33 (3), 419–44, In-
+late certain sub-groups of the population that show very               ternet: https://doi.org/10.1080/01402381003654387.
+clear issue priorities. From the perspective of such is-           Converse, Philip E. (2006), The Nature of Belief
+sue publics, groups of people who are only interested in               Systems in Mass Publics (1964), in: Critical Re-
+a few issues or just one specific issue (Converse 2006),               view, Vol. 18 (1–3), 1–74, Internet: https://doi.
+the party policy spaces may look quite different from the              org/10.1080/08913810608443650.
+ones presented further above. And just like voters may             Dolezal, Martin/Laurenz Ennser-Jedenastik/Wolfgang C.
+stress certain issues, parties too may focus on only few               Müller/Anna Katharina Winkler (2016), Analyzing
+or a single issue (although we did not find signs of such              Manifestos in Their Electoral Context A New Ap-
+a party in the analysis above). Given their programmatic               proach Applied to Austria, 2002–2008, in: Political
+emphasis, the way that such parties distinguish them-                  Science Research and Methods, Vol. 4 (3), 641–50, Inter-
+selves from other parties and their view of the entire                 net: https://doi.org/10.1017/psrm.2015.38.
+party policy space also arguably differs from the spatial          Fivaz, Jan/Giorgio Nadig (2010), Impact of Voting Ad-
+representations presented further above.                               vice Applications (VAAs) on Voter Turnout and
+    All in all, the idea of being able to bring different              Their Potential Use for Civic Education, in: Policy
+weights to policy positions implies that party policy                  & Internet, Vol. 2 (4), 167–200, Internet: https://doi.
+spaces have to be interpreted in terms of the underly-                 org/10.2202/1944-2866.1025.
+ing perspective that scholars should be aware of. The              Gemenis, Kostas (2013a), Estimating Parties’ Policy Po-
+approach pursued above furthermore opens up ways to                    sitions through Voting Advice Applications: Some
+bring different perspectives to the structure of parties’              Methodological Considerations, in: Acta Politica, Vol.
+policy positions in order to better understand certain as-             48 (3), 268–95.
+pects of party politics and party competition. Following           ——— (2013b), Estimating Parties’ Policy Positions
+this notion of perspectivism, the fact that we found the               through Voting Advice Applications: Some Method-
+implicit topic weights of the wahlkabine.at to consider-               ological Considerations, in: Acta Politica, Vol. 48 (3),
+ably deviate from the topic saliences expressed through                268–95, Internet: https://doi.org/10.1057/ap.2012.36.
+parties’ electoral manifestos does not as such constitute          Germann, Micha/Fernando Mendez/Jonathan Wheatley/
+a problem. Rather, what is problematic is that we do not               Uwe Serdült (2015), Spatial Maps in Voting Advice Ap-
+know what the topic weights resulting from the mere                    plications: The Case for Dynamic Scale Validation, in:
+selection of VAA items are supposed to represent. What                 Acta Politica, Vol. 50 (2), 214–38, Internet: https://doi.
+is the underlying perspective that the VAA designers                   org/10.1057/ap.2014.3.
+had in mind? This aspect should be taken seriously as              Gower, J. C. (1971), A General Coefficiant of Similarity
+it potentially not only concerns the party policy spaces               and Some of Its Properties, in: Biometrics, Vol. 27 (4),
+generated from the VAA data but also the party-user                    857–71.
+S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4                          17
+
+
+
+
+Katakis, Ioannis/Nicolas Tsapatsoulis/Fernando Mendez/                   Müller, Wolfgang C./Anita Bodlos/Martin Dolezal/Niko-
+    Vasiliki Triga/Constantinos Djouvas (2014), Social                      laus Eder/Laurenz Ennser-Jedenastik/Matthias Kalte-
+    Voting Advice Applications, Definitions, Challenges,                    negger/Thomas M. Meyer/Katrin Praprotnik/Anna
+    Datasets and Evaluation, in: IEEE Transactions on Cy-                   Katharina Winkler (2017), AUTNES Content Analysis
+    bernetics, Vol. 44 (7), 1039–52, Internet: https://doi.                 of Party Manifestos 2013. GESIS Data Archive, In-
+    org/10.1109/TCYB.2013.2279019.                                          ternet: https://doi.org/10.4232/1.12752.
+Kleinnijenhuis, Jan/Jasper van de Pol/Anita MJ van Hoof/                 Müller, Wolfgang C./Franz Fallend (2004), Changing Pat-
+    André PM Krouwel (2017), Genuine Effects of Vote                        terns of Party Competition in Austria: From Multi-
+    Advice Applications on Party Choice: Filtering out                      polar to Bipolar System, in: West European Politics, Vol.
+    Factors That Affect Both the Advice Obtained and                        27 (5), 801–835, Internet https://doi.org/10.1080/014
+    the Vote, in: Party Politics, July, Internet: https://doi.              0238042000283319.
+    org/10.1177/1354068817713121.                                        Müller, Wolfgang C./Marcelo Jenny (2000), Abgeord-
+König, Pascal D./Sebastian Jäckle (2018), Voting Advice                     nete, Parteien Und Koalitionspolitik. Individuelle
+    Applications and the Estimation of Party Positions                      Präferenzen Und Politisches Handeln Im National-
+    – A Reliable Tool? in: Swiss Political Science Review,                  rat, in: Austrian Journal of Political Science, Vol. 29 (2),
+    Vol. 24 (2), 187-203. Internet: https://doi.org/10.1111/                137–56.
+    spsr.12301                                                           Naumann, Florian (2017), Wahl-O-Mat-Auswertung:
+Kriesi, Hanspeter/Edgar Grande/Romain Lachat/Mar-                           Diese Partei Stimmt Am Stärksten Mit Der AfD
+    tin Dolezal/Simon Bornschier/Timotheos Frey (2006),                     Überein, in: Merkur.de, 9 September 2017, Internet:
+    Globalization and the Transformation of the Na-                         https://www.merkur.de/politik/bundestagswahl-
+    tional Political Space: Six European Countries Com-                     2017-wahl-o-mat-auswertung-diese-partei-hat-
+    pared, in: European Journal of Political Research, Vol. 45              groesste-uebereinstimmung-mit-afd-zr-8668627.
+    (6), 921–56, Internet: https://doi.org/10.1111/j.1475-                  html (Accessed: 02.05.2019).
+    6765.2006.00644.x.                                                   Polk, Jonathan/Jan Rovny/Ryan Bakker/Erica Edwards/
+Krouwel, André/Thomas Vitiello/Matthew Wall (2012),                         Liesbet Hooghe/Seth Jolly/Jelle Koedam, et al. (2017),
+    The Practicalities of Issuing Vote Advice: A New                        Explaining the Salience of Anti-Elitism and Reduc-
+    Methodology for Profiling and Matching, in: Interna-                    ing Political Corruption for Political Parties in Eu-
+    tional Journal of Electronic Governance, Vol. 5 (3/4), 223,             rope with the 2014 Chapel Hill Expert Survey Data,
+    Internet: https://doi.org/10.1504/IJEG.2012.051308.                     in: Research & Politics, Vol. 4 (1), Internet: https://doi.
+Ladner, Andreas (2016), Do VAAs Encourage Issue Vot-                        org/10.1177/2053168016686915.
+    ing and Promissory Representation? Evidence From                     Praprotnik, Katrin (2015), Die Policy-Bilanz Der Regier-
+    the Swiss Smartvote: VAAs, Issue Voting, and Prom-                      ung Faymann I. Ein Test Der Mandatstheorie, in:
+    issory Representation, in: Policy & Internet, Vol. 8 (4),               Österreichische Zeitschrift Für Politikwissenschaft, Vol.
+    412–30, Internet: https://doi.org/10.1002/poi3.137.                     44 (2), 1, Internet: https://doi.org/10.15203/ozp.457.
+Laver, Michael/John Garry/Kenneth Benoit (2007), Word-                      vol44iss2.
+    scores. https://www.tcd.ie/Political_Science/word-                   Proksch, Sven-Oliver/Jonathan B. Slapin (2009), WORD-
+    scores/ (Accessed: 02.05.2019).                                         FISH. Scaling Software for Estimating Political Posi-
+Laver, Michael/W. Ben Hunt (1992), Policy and Party                         tions from Texts (version 1.3 (22.01.2009), Internet:
+    Competition, New York: Routledge.                                       http://www.wordfish.org/ (Accessed: 02.05.2019)
+Louwerse, Tom/Martin Rosema (2014), The Design Effects                   Rosema, Martin/Tom Louwerse (2016), Response Scales
+    of Voting Advice Applications: Comparing Methods                        in Voting Advice Applications: Do Different Designs
+    of Calculating Matches, in: Acta Politica, Vol. 49 (3),                 Produce Different Outcomes?: Response Scales in
+    286–312.                                                                Voting Advice Applications, in: Policy & Internet,
+Mahéo, Valérie-Anne (2016), The Impact of Voting Ad-                        Vol. 8 (4), 431–56, Internet: https://doi.org/10.1002/
+    vice Applications on Electoral Preferences: A Field                     poi3.139.
+    Experiment in the 2014 Quebec Election: The Impact                   Schermann, Katrin/Laurenz Ennser-Jedenastik (2014a), Co-
+    of VAAs on Electoral Preferences, in: Policy & Internet,                alition Policy-Making under Constraints: Examin-
+    Vol. 8 (4), 391–411, Internet: https://doi.org/10.1002/                 ing the Role of Preferences and Institutions, in: West
+    poi3.138.                                                               European Politics, Vol. 37 (3), 564–83, Internet: https://
+Marschall, Stefan/Martin Schultze (2012), Voting Advice                     doi.org/10.1080/01402382.2013.841069.
+    Applications and Their Effect on Voter Turnout: The                  ——— (2014b), Explaining Coalition-Bargaining Out-
+    Case of the German Wahl-O-Mat, in: International                        comes: Evidence from Austria, 2002–2008, in: Party
+    Journal of Electronic Governance, Vol. 5 (3/4), 349, In-                Politics, Vol. 20 (5), 791–801, Internet: https://doi.
+    ternet: https://doi.org/10.1504/IJEG.2012.051314.                       org/10.1177/1354068812453373.
+18                            S. Jäckle, P. D. König: Mapping the Austrian political spectrum with the help of VAAs I OZP Vol. 47, Issue 4
+
+
+
+
+Schultze, Martin (2014), Effects of Voting Advice Appli-                  Vergleich, 2nd ed., Baden-Baden: Nomos Verlagsge-
+    cations (VAAs) on Political Knowledge About Party                     sellschaft mbH & Co. KG, 251–285, Internet: https://
+    Positions: Effects of VAAs on Political Knowledge                     doi.org/10.5771/9783845239163-193.
+    About Party Positions, in: Policy & Internet, Vol. 6 (1),
+    46–68, Internet: https://doi.org/10.1002/1944-2866.
+    POI352.                                                           Authors
+Seethaler, Josef/Gabriele Melischek (2014), Phases of
+    Mediatization: Empirical Evidence from Austrian                   Sebastian Jäckle is a political scientist working at the
+    Election Campaigns since 1970, in: Journalism Prac-               University of Freiburg, Germany. In his recent research
+    tice, Vol. 8 (3), 258–78, Internet: https://doi.org/10.108        he focuses on political elites, anti-immigrant violence,
+    0/17512786.2014.889443.                                           and appearance effects in elections. His work has also
+Talonen, Jaakko/Mika Sulkava (2011), Analyzing Parlia-                appeared in West European Politics, Legislative Studies
+    mentary Elections Based on Voting Advice Applica-                 Quarterly, the Hournal of European Public Policy and
+    tion Data, in: João Gama/Elizabeth Bradley/Jaakko                 European Sociological Review.
+    Hollmén (ed.), Advances in Intelligent Data Analysis
+    X: IDA 2011. Lecture Notes in Computer Science, Vol.              Pascal D. König is researcher at the Institute of Political
+    7014, Berlin: Springer, 340–51.                                   Science at the Goethe-University Frankfurt, Germany.
+Volkens, Andrea (2007), Strengths and Weaknesses of                   His research mainly deals with political communication,
+    Approaches to Measuring Policy Positions of Par-                  party competition, and policies regarding digital tech-
+    ties, in: Electoral Studies, Vol. 26 (1), 108–120, Internet:      nologies. Recent work has appeared in Journal of Euro-
+    https://doi.org/10.1016/j.electstud.2006.04.003.                  pean Public Policy, Party Politics, European Sociological
+Volkens, Andrea/Pola Lehmann/Theres Matthieß/Nico-                    Review, and Review of Policy Research.
+    las Merz/Sven Regel/Bernhard Weßels/WZB Berlin So-
+    cial Science Center (2017), Manifesto Project Dataset:
+    Manifesto Project, Internet: https://doi.org/10.25522/
+    manifesto.mpds.2017a.
+Wagschal, Uwe/Pascal König (2014), Alle Gleich? Anal-
+    yse Der Programmatischen Parteiunterschiede Bei
+    Bundestagswahlen Auf Basis Der Wahl-O-Mats, in:
+    Zeitschrift Für Parlamentsfragen, Vol. 45 (4), 865–84.
+wahlkabine.at. (2017), Erläuterungen Zur Umsetzung Und
+    Methodik, Internet: https://wahlkabine.at/downloads/​
+    Wahlkabine_Methodik_NRW2017.pdf                  (Accessed:
+    02.05.2019).
+Walgrave, Stefaan/Peter van Aelst/Michiel Nuytemans
+    (2008), “Do the Vote Test”: The Electoral Effects of a
+    Popular Vote Advice Application at the 2004 Belgian
+    Elections, in: Acta Politica, Vol. 43 (1), 50–70, Internet:
+    https://doi.org/10.1057/palgrave.ap.5500209.
+Warwick, Paul V. (2006), Policy Horizons and Parliamen-
+    tary Government, Basingstoke: Palgrave Macmillan.
+Wheatley, Jonathan (2012), Using VAAs to Explore the Di-
+    mensionality of the Policy Space: Experiments from
+    Brazil, Peru, Scotland and Cyprus, in: International
+    Journal of Electronic Governance, Vol. 5 (3/4), 318–48.
+Wheatley, Jonathan/Christopher Carman/Fernando Men-
+    dez/James Mitchell (2014), The Dimensionality of the
+    Scottish Political Space: Results from an Experiment
+    on the 2011 Holyrood Elections, in: Party Politics, Vol.
+    20 (6), 864–878.
+Wineroither, David M./Herbert Kitschelt (2017), Die Ent-
+    wicklung des Parteienwettbewerbs in Österreich im
+    internationalen Vergleich, in: Ludger Helms/David M.
+    Wineroither (ed.), Die österreichische Demokratie im
+
