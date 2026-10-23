@@ -1,0 +1,645 @@
+{
+ "description": "NZ electorate boundaries for the interactive map. All files are GeoJSON in WGS84 (EPSG:4326).",
+ "licence": {
+  "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Electorate boundaries: Representation Commission / Stats NZ (Tatauranga Aotearoa), via the Stats NZ Geographic Data Service, licensed CC BY 4.0. Simplified for web display.",
+  "source_portal": "https://datafinder.stats.govt.nz/",
+  "arcgis_mirror": "https://services2.arcgis.com/vKb0s8tBIA3bdocZ/ArcGIS/rest/services"
+ },
+ "notes": [
+  "Boundary polygons extend offshore to the limit of the territorial sea (as published); they are not clipped to the coastline.",
+  "Longitudes for the Chatham Islands (part of the Rongotai / Wellington Bays and Te Tai Tonga electorates) are stored as 183–184 (i.e. +360) so polygons do not wrap across the antimeridian; use bbox_mainland for the main map and the 'chatham' inset for the islands. The 2007 layers as published do not include the Chatham Islands.",
+  "Geometry simplified with a topology-preserving Visvalingam–Whyatt (shared arcs), tolerance adapted per electorate so small urban seats keep detail; coordinates rounded to 5 dp.",
+  "Feature properties: name (canonical, as in data/elections and data/electorates), slug, type, boundary_set, code (Stats NZ electorate code), source_name (name string as published in the layer)."
+ ],
+ "election_to_boundary_set": {
+  "2008": 2007,
+  "2011": 2007,
+  "2014": 2014,
+  "2017": 2014,
+  "2020": 2020,
+  "2023": 2020,
+  "2026": 2025
+ },
+ "boundary_sets": {
+  "2007": {
+   "elections": [
+    2008,
+    2011
+   ],
+   "layers": {
+    "general": {
+     "file": "geo/general-2007.json",
+     "features": 63,
+     "bytes": 573809,
+     "vertices": 25733,
+     "tolerance_deg2": 2.5028654311746085e-06,
+     "bbox": [
+      166.1387,
+      -47.724,
+      178.8361,
+      -33.9585
+     ],
+     "bbox_mainland": [
+      166.1387,
+      -47.724,
+      178.8361,
+      -33.9585
+     ],
+     "has_chatham": false,
+     "names": {
+      "auckland-central": "Auckland Central",
+      "bay-of-plenty": "Bay of Plenty",
+      "botany": "Botany",
+      "christchurch-central": "Christchurch Central",
+      "christchurch-east": "Christchurch East",
+      "clutha-southland": "Clutha-Southland",
+      "coromandel": "Coromandel",
+      "dunedin-north": "Dunedin North",
+      "dunedin-south": "Dunedin South",
+      "east-coast": "East Coast",
+      "east-coast-bays": "East Coast Bays",
+      "epsom": "Epsom",
+      "hamilton-east": "Hamilton East",
+      "hamilton-west": "Hamilton West",
+      "helensville": "Helensville",
+      "hunua": "Hunua",
+      "hutt-south": "Hutt South",
+      "ilam": "Ilam",
+      "invercargill": "Invercargill",
+      "kaikoura": "Kaikōura",
+      "mana": "Mana",
+      "mangere": "Māngere",
+      "manukau-east": "Manukau East",
+      "manurewa": "Manurewa",
+      "maungakiekie": "Maungakiekie",
+      "mount-albert": "Mount Albert",
+      "mount-roskill": "Mount Roskill",
+      "napier": "Napier",
+      "nelson": "Nelson",
+      "new-lynn": "New Lynn",
+      "new-plymouth": "New Plymouth",
+      "north-shore": "North Shore",
+      "northcote": "Northcote",
+      "northland": "Northland",
+      "ohariu": "Ōhariu",
+      "otaki": "Ōtaki",
+      "pakuranga": "Pakuranga",
+      "palmerston-north": "Palmerston North",
+      "papakura": "Papakura",
+      "port-hills": "Port Hills",
+      "rangitata": "Rangitata",
+      "rangitikei": "Rangitīkei",
+      "rimutaka": "Rimutaka",
+      "rodney": "Rodney",
+      "rongotai": "Rongotai",
+      "rotorua": "Rotorua",
+      "selwyn": "Selwyn",
+      "tamaki": "Tāmaki",
+      "taranaki-king-country": "Taranaki-King Country",
+      "taupo": "Taupō",
+      "tauranga": "Tauranga",
+      "te-atatu": "Te Atatū",
+      "tukituki": "Tukituki",
+      "waikato": "Waikato",
+      "waimakariri": "Waimakariri",
+      "wairarapa": "Wairarapa",
+      "waitakere": "Waitakere",
+      "waitaki": "Waitaki",
+      "wellington-central": "Wellington Central",
+      "west-coast-tasman": "West Coast-Tasman",
+      "whanganui": "Whanganui",
+      "whangarei": "Whangarei",
+      "wigram": "Wigram"
+     },
+     "source": {
+      "title": "General Electoral District 2007",
+      "url": "https://datafinder.stats.govt.nz/layer/104065/"
+     }
+    },
+    "maori": {
+     "file": "geo/maori-2007.json",
+     "features": 7,
+     "bytes": 581388,
+     "vertices": 26590,
+     "tolerance_deg2": 5.725487884358379e-08,
+     "bbox": [
+      166.1387,
+      -47.724,
+      178.8362,
+      -33.9585
+     ],
+     "bbox_mainland": [
+      166.1387,
+      -47.724,
+      178.8362,
+      -33.9585
+     ],
+     "has_chatham": false,
+     "names": {
+      "hauraki-waikato": "Hauraki-Waikato",
+      "ikaroa-rawhiti": "Ikaroa-Rāwhiti",
+      "tamaki-makaurau": "Tāmaki Makaurau",
+      "te-tai-hauauru": "Te Tai Hauāuru",
+      "te-tai-tokerau": "Te Tai Tokerau",
+      "te-tai-tonga": "Te Tai Tonga",
+      "waiariki": "Waiariki"
+     },
+     "source": {
+      "title": "Māori Electoral District 2007",
+      "url": "https://datafinder.stats.govt.nz/layer/104066/"
+     }
+    }
+   },
+   "name_map": {
+    "Kaikoura": "Kaikōura",
+    "Mangere": "Māngere",
+    "Mt Albert": "Mount Albert",
+    "Mt Roskill": "Mount Roskill",
+    "Ohariu": "Ōhariu",
+    "Otaki": "Ōtaki",
+    "Rangitikei": "Rangitīkei",
+    "Tamaki": "Tāmaki",
+    "Taupo": "Taupō",
+    "Te Atatu": "Te Atatū",
+    "Ikaroa-Rawhiti": "Ikaroa-Rāwhiti",
+    "Tamaki Makaurau": "Tāmaki Makaurau",
+    "Te Tai Hauauru": "Te Tai Hauāuru"
+   },
+   "aliases": {
+    "kaikoura": [
+     "Kaikoura",
+     "Kaikōura"
+    ]
+   }
+  },
+  "2014": {
+   "elections": [
+    2014,
+    2017
+   ],
+   "layers": {
+    "general": {
+     "file": "geo/general-2014.json",
+     "features": 64,
+     "bytes": 576935,
+     "vertices": 25871,
+     "tolerance_deg2": 2.9427271762092825e-06,
+     "bbox": [
+      166.1387,
+      -47.724,
+      184.5,
+      -33.9585
+     ],
+     "bbox_mainland": [
+      166.1387,
+      -47.724,
+      178.8361,
+      -33.9585
+     ],
+     "has_chatham": true,
+     "names": {
+      "auckland-central": "Auckland Central",
+      "bay-of-plenty": "Bay of Plenty",
+      "botany": "Botany",
+      "christchurch-central": "Christchurch Central",
+      "christchurch-east": "Christchurch East",
+      "clutha-southland": "Clutha-Southland",
+      "coromandel": "Coromandel",
+      "dunedin-north": "Dunedin North",
+      "dunedin-south": "Dunedin South",
+      "east-coast": "East Coast",
+      "east-coast-bays": "East Coast Bays",
+      "epsom": "Epsom",
+      "hamilton-east": "Hamilton East",
+      "hamilton-west": "Hamilton West",
+      "helensville": "Helensville",
+      "hunua": "Hunua",
+      "hutt-south": "Hutt South",
+      "ilam": "Ilam",
+      "invercargill": "Invercargill",
+      "kaikoura": "Kaikoura",
+      "kelston": "Kelston",
+      "mana": "Mana",
+      "mangere": "Māngere",
+      "manukau-east": "Manukau East",
+      "manurewa": "Manurewa",
+      "maungakiekie": "Maungakiekie",
+      "mount-albert": "Mount Albert",
+      "mount-roskill": "Mount Roskill",
+      "napier": "Napier",
+      "nelson": "Nelson",
+      "new-lynn": "New Lynn",
+      "new-plymouth": "New Plymouth",
+      "north-shore": "North Shore",
+      "northcote": "Northcote",
+      "northland": "Northland",
+      "ohariu": "Ōhāriu",
+      "otaki": "Ōtaki",
+      "pakuranga": "Pakuranga",
+      "palmerston-north": "Palmerston North",
+      "papakura": "Papakura",
+      "port-hills": "Port Hills",
+      "rangitata": "Rangitata",
+      "rangitikei": "Rangitīkei",
+      "rimutaka": "Rimutaka",
+      "rodney": "Rodney",
+      "rongotai": "Rongotai",
+      "rotorua": "Rotorua",
+      "selwyn": "Selwyn",
+      "tamaki": "Tāmaki",
+      "taranaki-king-country": "Taranaki-King Country",
+      "taupo": "Taupō",
+      "tauranga": "Tauranga",
+      "te-atatu": "Te Atatū",
+      "tukituki": "Tukituki",
+      "upper-harbour": "Upper Harbour",
+      "waikato": "Waikato",
+      "waimakariri": "Waimakariri",
+      "wairarapa": "Wairarapa",
+      "waitaki": "Waitaki",
+      "wellington-central": "Wellington Central",
+      "west-coast-tasman": "West Coast-Tasman",
+      "whanganui": "Whanganui",
+      "whangarei": "Whangarei",
+      "wigram": "Wigram"
+     },
+     "source": {
+      "title": "General Electoral District 2014",
+      "url": "https://datafinder.stats.govt.nz/layer/104062/"
+     }
+    },
+    "maori": {
+     "file": "geo/maori-2014.json",
+     "features": 7,
+     "bytes": 581374,
+     "vertices": 26593,
+     "tolerance_deg2": 6.378043838892178e-08,
+     "bbox": [
+      166.1387,
+      -47.724,
+      184.5,
+      -33.9585
+     ],
+     "bbox_mainland": [
+      166.1387,
+      -47.724,
+      178.8362,
+      -33.9585
+     ],
+     "has_chatham": true,
+     "names": {
+      "hauraki-waikato": "Hauraki-Waikato",
+      "ikaroa-rawhiti": "Ikaroa-Rāwhiti",
+      "tamaki-makaurau": "Tāmaki Makaurau",
+      "te-tai-hauauru": "Te Tai Hauāuru",
+      "te-tai-tokerau": "Te Tai Tokerau",
+      "te-tai-tonga": "Te Tai Tonga",
+      "waiariki": "Waiariki"
+     },
+     "source": {
+      "title": "Māori Electoral District 2014",
+      "url": "https://datafinder.stats.govt.nz/layer/104063/"
+     }
+    }
+   },
+   "name_map": {
+    "Mangere": "Māngere",
+    "Mt Albert": "Mount Albert",
+    "Mt Roskill": "Mount Roskill",
+    "Ohariu": "Ōhāriu",
+    "Otaki": "Ōtaki",
+    "Tamaki": "Tāmaki",
+    "Taupo": "Taupō",
+    "Te Atatu": "Te Atatū",
+    "Ikaroa-Rawhiti": "Ikaroa-Rāwhiti",
+    "Tamaki Makaurau": "Tāmaki Makaurau",
+    "Te Tai Hauauru": "Te Tai Hauāuru"
+   },
+   "aliases": {
+    "ohariu": [
+     "Ōhariu",
+     "Ōhāriu"
+    ]
+   }
+  },
+  "2020": {
+   "elections": [
+    2020,
+    2023
+   ],
+   "layers": {
+    "general": {
+     "file": "geo/general-2020.json",
+     "features": 65,
+     "bytes": 574946,
+     "vertices": 25767,
+     "tolerance_deg2": 2.9427271762092825e-06,
+     "bbox": [
+      166.1387,
+      -47.724,
+      184.5,
+      -33.9585
+     ],
+     "bbox_mainland": [
+      166.1387,
+      -47.724,
+      178.8361,
+      -33.9585
+     ],
+     "has_chatham": true,
+     "names": {
+      "auckland-central": "Auckland Central",
+      "banks-peninsula": "Banks Peninsula",
+      "bay-of-plenty": "Bay of Plenty",
+      "botany": "Botany",
+      "christchurch-central": "Christchurch Central",
+      "christchurch-east": "Christchurch East",
+      "coromandel": "Coromandel",
+      "dunedin": "Dunedin",
+      "east-coast": "East Coast",
+      "east-coast-bays": "East Coast Bays",
+      "epsom": "Epsom",
+      "hamilton-east": "Hamilton East",
+      "hamilton-west": "Hamilton West",
+      "hutt-south": "Hutt South",
+      "ilam": "Ilam",
+      "invercargill": "Invercargill",
+      "kaikoura": "Kaikōura",
+      "kaipara-ki-mahurangi": "Kaipara ki Mahurangi",
+      "kelston": "Kelston",
+      "mana": "Mana",
+      "mangere": "Māngere",
+      "manurewa": "Manurewa",
+      "maungakiekie": "Maungakiekie",
+      "mount-albert": "Mount Albert",
+      "mount-roskill": "Mount Roskill",
+      "napier": "Napier",
+      "nelson": "Nelson",
+      "new-lynn": "New Lynn",
+      "new-plymouth": "New Plymouth",
+      "north-shore": "North Shore",
+      "northcote": "Northcote",
+      "northland": "Northland",
+      "ohariu": "Ōhāriu",
+      "otaki": "Ōtaki",
+      "pakuranga": "Pakuranga",
+      "palmerston-north": "Palmerston North",
+      "panmure-otahuhu": "Panmure-Ōtāhuhu",
+      "papakura": "Papakura",
+      "port-waikato": "Port Waikato",
+      "rangitata": "Rangitata",
+      "rangitikei": "Rangitīkei",
+      "remutaka": "Remutaka",
+      "rongotai": "Rongotai",
+      "rotorua": "Rotorua",
+      "selwyn": "Selwyn",
+      "southland": "Southland",
+      "taieri": "Taieri",
+      "takanini": "Takanini",
+      "tamaki": "Tāmaki",
+      "taranaki-king-country": "Taranaki-King Country",
+      "taupo": "Taupō",
+      "tauranga": "Tauranga",
+      "te-atatu": "Te Atatū",
+      "tukituki": "Tukituki",
+      "upper-harbour": "Upper Harbour",
+      "waikato": "Waikato",
+      "waimakariri": "Waimakariri",
+      "wairarapa": "Wairarapa",
+      "waitaki": "Waitaki",
+      "wellington-central": "Wellington Central",
+      "west-coast-tasman": "West Coast-Tasman",
+      "whanganui": "Whanganui",
+      "whangaparaoa": "Whangaparāoa",
+      "whangarei": "Whangārei",
+      "wigram": "Wigram"
+     },
+     "source": {
+      "title": "General Electorates 2020",
+      "url": "https://datafinder.stats.govt.nz/layer/104580/"
+     }
+    },
+    "maori": {
+     "file": "geo/maori-2020.json",
+     "features": 7,
+     "bytes": 581311,
+     "vertices": 26586,
+     "tolerance_deg2": 8.353625469578262e-08,
+     "bbox": [
+      166.1387,
+      -47.724,
+      184.5,
+      -33.9585
+     ],
+     "bbox_mainland": [
+      166.1387,
+      -47.724,
+      178.8362,
+      -33.9585
+     ],
+     "has_chatham": true,
+     "names": {
+      "hauraki-waikato": "Hauraki-Waikato",
+      "ikaroa-rawhiti": "Ikaroa-Rāwhiti",
+      "tamaki-makaurau": "Tāmaki Makaurau",
+      "te-tai-hauauru": "Te Tai Hauāuru",
+      "te-tai-tokerau": "Te Tai Tokerau",
+      "te-tai-tonga": "Te Tai Tonga",
+      "waiariki": "Waiariki"
+     },
+     "source": {
+      "title": "Māori Electorates 2020",
+      "url": "https://datafinder.stats.govt.nz/layer/104579/"
+     }
+    }
+   },
+   "name_map": {
+    "Mt Albert": "Mount Albert",
+    "Mt Roskill": "Mount Roskill"
+   },
+   "aliases": {}
+  },
+  "2025": {
+   "elections": [
+    2026
+   ],
+   "layers": {
+    "general": {
+     "file": "geo/general-2025.json",
+     "features": 64,
+     "bytes": 578142,
+     "vertices": 25921,
+     "tolerance_deg2": 3.1059002236247057e-06,
+     "bbox": [
+      166.1387,
+      -47.724,
+      184.5,
+      -33.9585
+     ],
+     "bbox_mainland": [
+      166.1387,
+      -47.724,
+      178.8361,
+      -33.9585
+     ],
+     "has_chatham": true,
+     "names": {
+      "auckland-central": "Auckland Central",
+      "banks-peninsula": "Banks Peninsula",
+      "botany": "Botany",
+      "christchurch-central": "Christchurch Central",
+      "christchurch-east": "Christchurch East",
+      "coromandel": "Coromandel",
+      "dunedin": "Dunedin",
+      "east-cape": "East Cape",
+      "east-coast-bays": "East Coast Bays",
+      "epsom": "Epsom",
+      "glendene": "Glendene",
+      "hamilton-east": "Hamilton East",
+      "hamilton-west": "Hamilton West",
+      "henderson": "Henderson",
+      "hutt-south": "Hutt South",
+      "ilam": "Ilam",
+      "invercargill": "Invercargill",
+      "kaikoura": "Kaikōura",
+      "kaipara-ki-mahurangi": "Kaipara ki Mahurangi",
+      "kapiti": "Kapiti",
+      "kenepuru": "Kenepuru",
+      "mangere": "Māngere",
+      "manurewa": "Manurewa",
+      "maungakiekie": "Maungakiekie",
+      "mount-albert": "Mount Albert",
+      "mount-maunganui": "Mount Maunganui",
+      "mount-roskill": "Mount Roskill",
+      "napier": "Napier",
+      "nelson": "Nelson",
+      "new-plymouth": "New Plymouth",
+      "north-shore": "North Shore",
+      "northcote": "Northcote",
+      "northland": "Northland",
+      "otahuhu": "Ōtāhuhu",
+      "pakuranga": "Pakuranga",
+      "palmerston-north": "Palmerston North",
+      "papakura": "Papakura",
+      "port-waikato": "Port Waikato",
+      "rangitata": "Rangitata",
+      "rangitikei": "Rangitīkei",
+      "remutaka": "Remutaka",
+      "rotorua": "Rotorua",
+      "selwyn": "Selwyn",
+      "southland": "Southland",
+      "taieri": "Taieri",
+      "takanini": "Takanini",
+      "tamaki": "Tāmaki",
+      "taranaki-king-country": "Taranaki-King Country",
+      "taupo": "Taupō",
+      "tauranga": "Tauranga",
+      "tukituki": "Tukituki",
+      "upper-harbour": "Upper Harbour",
+      "waikato": "Waikato",
+      "waimakariri": "Waimakariri",
+      "wairarapa": "Wairarapa",
+      "waitakere": "Waitākere",
+      "waitaki": "Waitaki",
+      "wellington-bays": "Wellington Bays",
+      "wellington-north": "Wellington North",
+      "west-coast-tasman": "West Coast-Tasman",
+      "whanganui": "Whanganui",
+      "whangaparaoa": "Whangaparāoa",
+      "whangarei": "Whangārei",
+      "wigram": "Wigram"
+     },
+     "source": {
+      "title": "General Electorates 2025",
+      "url": "https://datafinder.stats.govt.nz/layer/122741/"
+     }
+    },
+    "maori": {
+     "file": "geo/maori-2025.json",
+     "features": 7,
+     "bytes": 580367,
+     "vertices": 26541,
+     "tolerance_deg2": 7.914755439411162e-08,
+     "bbox": [
+      166.1387,
+      -47.724,
+      184.5,
+      -33.9585
+     ],
+     "bbox_mainland": [
+      166.1387,
+      -47.724,
+      178.8362,
+      -33.9585
+     ],
+     "has_chatham": true,
+     "names": {
+      "hauraki-waikato": "Hauraki-Waikato",
+      "ikaroa-rawhiti": "Ikaroa-Rāwhiti",
+      "tamaki-makaurau": "Tāmaki Makaurau",
+      "te-tai-hauauru": "Te Tai Hauāuru",
+      "te-tai-tokerau": "Te Tai Tokerau",
+      "te-tai-tonga": "Te Tai Tonga",
+      "waiariki": "Waiariki"
+     },
+     "source": {
+      "title": "Māori Electorates 2025",
+      "url": "https://datafinder.stats.govt.nz/layer/122742/"
+     }
+    }
+   },
+   "name_map": {
+    "Mt Albert": "Mount Albert",
+    "Mt Maunganui": "Mount Maunganui",
+    "Mt Roskill": "Mount Roskill"
+   },
+   "aliases": {}
+  }
+ },
+ "insets": {
+  "auckland": {
+   "label": "Auckland",
+   "bbox": [
+    174.45,
+    -37.1,
+    175.15,
+    -36.6
+   ]
+  },
+  "wellington": {
+   "label": "Wellington",
+   "bbox": [
+    174.6,
+    -41.45,
+    175.15,
+    -40.95
+   ]
+  },
+  "christchurch": {
+   "label": "Christchurch",
+   "bbox": [
+    172.35,
+    -43.7,
+    172.85,
+    -43.35
+   ]
+  },
+  "chatham": {
+   "label": "Chatham Islands",
+   "bbox": [
+    183.3,
+    -44.45,
+    184.1,
+    -43.55
+   ]
+  }
+ },
+ "bbox_mainland": [
+  166.0,
+  -47.5,
+  179.0,
+  -34.0
+ ]
+}
