@@ -192,6 +192,14 @@ SRC = ROOT / 'site' / 'src'
 css = '\n'.join(f.read_text() for f in sorted((SRC / 'css').glob('*.css')))
 js = '\n'.join(f.read_text() for f in sorted((SRC / 'js').glob('*.js')))
 src = (SRC / 'shell.html').read_text().replace('/* @CSS */', css).replace('/* @JS */', js)
+# While the redesign is being ported, site/src-next/ builds to site/new.html (same data/ paths) so the live page stays intact.
+NEXT = ROOT / 'site' / 'src-next'
+if NEXT.exists():
+    ncss = '\n'.join(f.read_text() for f in sorted((NEXT / 'css').glob('*.css')))
+    njs = '\n'.join(f.read_text() for f in sorted((NEXT / 'js').glob('*.js')))
+    nsrc = (NEXT / 'shell.html').read_text().replace('/* @CSS */', ncss).replace('/* @JS */', njs)
+    (ROOT / 'site' / 'new.html').write_text('<!doctype html>\n<html lang="en-NZ"><head><meta charset="utf-8"><title>Ballot Book NZ</title>'
+        '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></head><body>\n' + nsrc + '\n</body></html>\n')
 (ROOT / 'site' / 'artifact.html').write_text(src)
 (ROOT / 'site' / 'index.html').write_text('<!doctype html>\n<html lang="en"><head><meta charset="utf-8">'
     '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></head><body>\n' + src + '\n</body></html>\n')

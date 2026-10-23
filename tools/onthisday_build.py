@@ -82,6 +82,8 @@ def to_entry(t):
     extra = extra or {}
     e = {"date": date, "title": title, "text": text, "tags": tags, "verify": verify,
          "party": party, "person": person, "extra": extra}
+    if extra.get("approx_day") and extra.get("exact_date"):
+        e["verify_date"] = extra["exact_date"]
     return e
 
 
