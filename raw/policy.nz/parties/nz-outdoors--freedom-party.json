@@ -1,0 +1,532 @@
+{
+ "party": {
+  "attributes": [
+   {
+    "_key": "5r5sFjSBWMIetVQk4fKMJw",
+    "icon": null,
+    "name": "Year founded",
+    "value": "2015"
+   },
+   {
+    "_key": "5r5sFjSBWMIetVQk4fKMPA",
+    "icon": null,
+    "name": "Times in government",
+    "value": "0"
+   },
+   {
+    "_key": "5r5sFjSBWMIetVQk4fKMUO",
+    "icon": null,
+    "name": "Current MPs",
+    "value": "0"
+   },
+   {
+    "_key": "5r5sFjSBWMIetVQk4fKMZc",
+    "icon": null,
+    "name": "Number of electorates held",
+    "value": "0"
+   },
+   {
+    "_key": "5r5sFjSBWMIetVQk4fKMeq",
+    "icon": null,
+    "name": "2025 donations",
+    "value": "$270.00"
+   },
+   {
+    "_key": "5r5sFjSBWMIetVQk4fKMk4",
+    "icon": null,
+    "name": "2026 polling average",
+    "value": "<0.5%"
+   }
+  ],
+  "color": "#64BDA1",
+  "description": "The New Zealand and Freedom Party is a party with a platform largely consists of conservation policy and opposition to COVID restrictions, vaccines, the use of 1080 and fluoridation of water. It was founded in 2015 by Alan Simmons, formerly of the United Future party, and David Haynes, president of the Association of Freshwater Anglers. Following the 2020 pandemic response, many members from the Ban 1080 party joined NZOF. Ban 1080 activist and lawyer Sue Grey is now the elected leader of the party. Co-founder David Haynes subsequently left the party. In 2023, it received 13,025 votes and 0.45% percent of the vote.",
+  "image": "https://cdn.sanity.io/images/ubdwo62y/production/5496584898438aed2fbe7e19ac8999baefe98cf4-800x800.png",
+  "name": "NZ Outdoors & Freedom Party",
+  "slug": "nz-outdoors--freedom-party"
+ },
+ "policies": [],
+ "partyList": [
+  {
+   "attributes": [
+    {
+     "_key": "QRM8yCNleIzHnxgUycy1CD",
+     "name": "Before politics",
+     "value": "Medical Doctor GP"
+    },
+    {
+     "_key": "QRM8yCNleIzHnxgUycy1Ec",
+     "name": "Residence",
+     "value": "Takaka, Tasman"
+    },
+    {
+     "_key": "QRM8yCNleIzHnxgUycy1H1",
+     "name": "Age",
+     "value": "68"
+    },
+    {
+     "_key": "QRM8yCNleIzHnxgUycy1JQ",
+     "name": "Public email",
+     "value": "contact@freedom.kiwi"
+    },
+    {
+     "_key": "QRM8yCNleIzHnxgUycy1Lp",
+     "name": "Why I'm standing",
+     "value": "As a medical doctor I am concerned about the serious decline in quality and delivery of New Zealand's once-excellent health system. Additionally, we need to address diet and exercise with a mind towards prevention. When in Parliament I intend to work hard to focus government attention on our medical and health crisis."
+    },
+    {
+     "_key": "QRM8yCNleIzHnxgUycy1OE",
+     "name": "About me",
+     "value": "Thirty years in New Zealand has sharpened my sense of its unique position and ability to shape world opinion. I am a fighter and will give my all to turn our country back on the right path of serving its people and not global controlling interests."
+    }
+   ],
+   "electorateElectionSlug": null,
+   "firstName": "Bruce",
+   "image": null,
+   "lastName": "Dooley",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "bruce-dooley"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv8fJ",
+     "name": "Before politics",
+     "value": "Self-employed lawyer"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv8gW",
+     "name": "Residence",
+     "value": "Dovedale Tasman"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv8hj",
+     "name": "Age",
+     "value": "63"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv8iw",
+     "name": "Public email",
+     "value": "suegrey@freedom.kiwi"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv8k9",
+     "name": "Website",
+     "value": "Freedom.kiwi/2026-candidates"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv8lM",
+     "name": "Facebook",
+     "value": "https://www.facebook.comSueGreyforWestCoastTasman"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv8mZ",
+     "name": "Instagram",
+     "value": "-"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv8nm",
+     "name": "Twitter",
+     "value": "https://x.com/freedom.kiwi"
+    }
+   ],
+   "electorateElectionSlug": "west-coast-tasman-electorate",
+   "firstName": "Sue",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/24a23cfec7f360d3bac0b6baca48325c22798805-1024x1024.jpg",
+   "lastName": "Grey",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the West Coast-Tasman electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "sue-grey"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "rangitata-electorate",
+   "firstName": "Kevin",
+   "image": null,
+   "lastName": "McCracken",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Rangitata electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "kevin-mccracken"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "rangitikei-electorate",
+   "firstName": "Cedric",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/ad0158d2de2c04c67c3d5c48b963e6c29ba3cc2b-1024x1024.jpg",
+   "lastName": "Backhouse",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Rangitīkei electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "cedric-backhouse"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "hamilton-west-electorate",
+   "firstName": "Donna",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/e252d74c99dbaacf619b29c1e01930b597810d23-1024x1024.jpg",
+   "lastName": "Pokere-Phillips",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Hamilton West electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "donna-pokere-phillips"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLwez",
+     "name": "Before politics",
+     "value": "Manager, Director Engineering"
+    },
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLwgx",
+     "name": "Residence",
+     "value": "Dovedale"
+    },
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLwiv",
+     "name": "Age",
+     "value": "51"
+    },
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLwkt",
+     "name": "Public email",
+     "value": "contact@freedom.kiwi"
+    },
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLwmr",
+     "name": "Why I'm standing",
+     "value": "I believe that we have so many broken systems from councils, health, education, Police and the judicial system. There needs to be some accountability. Someone asking the hard questions all the time, not just at election time or at point Break, or when it's safe to jump on board after someone else has tested the waters."
+    },
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLwop",
+     "name": "About me",
+     "value": "I've lived in our community for a large part of my life. I grew up living on and around farming, in the second largest pine forest in NZ. I completed my Engineering trade in 1994. Then spent about 15 years logging and also engineering in-between. I spent 2 years in western Australia on large grain farm. I have owned a globally successful engineering business since 2009. I'm a solution provider to coal, cement, fishing, hops, gold, horticulture and road transport."
+    }
+   ],
+   "electorateElectionSlug": null,
+   "firstName": "Keith",
+   "image": null,
+   "lastName": "Upson",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "keith-upson"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "FWxtFpcrQTiIEeORrE4mqK",
+     "name": "Before politics",
+     "value": "Tech Entrepreneur"
+    },
+    {
+     "_key": "FWxtFpcrQTiIEeORrE4mse",
+     "name": "Residence",
+     "value": "Waiuku"
+    },
+    {
+     "_key": "FWxtFpcrQTiIEeORrE4muy",
+     "name": "Age",
+     "value": "31"
+    },
+    {
+     "_key": "FWxtFpcrQTiIEeORrE4mxI",
+     "name": "Website",
+     "value": "https://daymondgoulder.com/"
+    },
+    {
+     "_key": "FWxtFpcrQTiIEeORrE4mzc",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/DaymondGoulderHorobin/"
+    },
+    {
+     "_key": "FWxtFpcrQTiIEeORrE4n1w",
+     "name": "Twitter",
+     "value": "https://x.com/GoulderHorobin"
+    },
+    {
+     "_key": "FWxtFpcrQTiIEeORrE4n4G",
+     "name": "Why I'm standing",
+     "value": "I am running to restore sanity and balance to our Parliament and Government. Our Government is currently rife with insanity, and many are out of touch with the real world. I will prove to the world that we can indeed have a Government that can be relied upon and trusted by the people to protect them from foreign adversaries and the uncertainty of new technology that poses new challenges for our Nation."
+    },
+    {
+     "_key": "FWxtFpcrQTiIEeORrE4n6a",
+     "name": "About me",
+     "value": "I have a wealth of academic knowledge and prowess up to the Masters level. I am not afraid to step out of the party line to voice my real views on election bills. I have the confidence to lead and I value my views and ability to help others. I am different from the rest, support me and the party I fight for and we can get this country back on track."
+    }
+   ],
+   "electorateElectionSlug": null,
+   "firstName": "Daymond",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/893bc17ab6cd2a7aa23b5702afe2f3481c2c91d7-1024x1024.jpg",
+   "lastName": "Goulder-Horobin",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "daymond-goulder-horobin"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3646odd",
+     "name": "Before politics",
+     "value": "Legal and community advocate"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3646oih",
+     "name": "Residence",
+     "value": "Waipu Caves"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3646onl",
+     "name": "Age",
+     "value": "70"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3646osp",
+     "name": "Public email",
+     "value": "contact@freedom.kiwi"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3646oxt",
+     "name": "Website",
+     "value": "https://freedom.kiwi"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3646p2x",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/AlistairWaitforNorthland/"
+    }
+   ],
+   "electorateElectionSlug": "northland-electorate",
+   "firstName": "Alistair",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/25a536cf224e02db169605106368ff9aefd2f576-1024x1024.jpg",
+   "lastName": "Wait",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Northland electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "alistair-wait"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "mangere-electorate",
+   "firstName": "Hine",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/eae74269d256b72d3108f59a46f4cab43465857e-1024x1024.jpg",
+   "lastName": "Afeaki",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Māngere electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "hine-afeaki"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "klxxTI2yzqiQIMrdxnTDqx",
+     "name": "Before politics",
+     "value": "I am a business owner"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnTDtT",
+     "name": "Residence",
+     "value": "Tasman"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnTDvz",
+     "name": "Age",
+     "value": "63"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnTDyV",
+     "name": "Public email",
+     "value": "contact@freedom.kiwi"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnTE11",
+     "name": "Website",
+     "value": "https://freedom.kiwi"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnTE3X",
+     "name": "Facebook",
+     "value": "https://freedom.kiwi"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnTE63",
+     "name": "Twitter",
+     "value": "https://x.com/freedomdotkiwi"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnTE8Z",
+     "name": "Why I'm standing",
+     "value": "I am sick of seeing money wasted on bureaucracy that is bloated and endless consultants. I want to see New Zealand move toward a direct democracy, where people get the say and governments' jobs are to carry out the will of the people. I also in the first instance will be looking for accountability on decisions made by government & using Parliamentary privilege to call out lies where I see them."
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnTEB5",
+     "name": "About me",
+     "value": "I fight the good fight everyday calling out MPs for their dishonesty with the public. Via OIAs I have done a lot to reveal mistruths particularly around the covid response. I am also here supporting Sue Grey for West Coast-Tasman having lived here for 34 years."
+    }
+   ],
+   "electorateElectionSlug": null,
+   "firstName": "Aly",
+   "image": null,
+   "lastName": "Cook",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "aly-cook"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Alison",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/fe5b81f4650a264450599d3f150500e5fdf0afe3-1024x1024.jpg",
+   "lastName": "Pavlovich",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "alison-pavlovich"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "whangarei-electorate",
+   "firstName": "Noah",
+   "image": null,
+   "lastName": "Wakelam",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Whangārei electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "noah-wakelam"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "JEqH1dfmeufsC5g7TTRhnG",
+     "name": "Residence",
+     "value": "Rolleston"
+    },
+    {
+     "_key": "JEqH1dfmeufsC5g7TTRhpS",
+     "name": "Age",
+     "value": "38"
+    },
+    {
+     "_key": "JEqH1dfmeufsC5g7TTRhre",
+     "name": "Public email",
+     "value": "davidcajar@gmail.com"
+    },
+    {
+     "_key": "JEqH1dfmeufsC5g7TTRhtq",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/davidmcajar"
+    }
+   ],
+   "electorateElectionSlug": "christchurch-east-electorate",
+   "firstName": "David",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/383b7ada78c49225e6ccc0f3a4b9fc586fd06379-1024x1024.jpg",
+   "lastName": "Mueller-Cajar",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Christchurch East electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "david-mueller-cajar"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "kaipara-ki-mahurangi-electorate",
+   "firstName": "Liz",
+   "image": null,
+   "lastName": "Dotcom",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Kaipara ki Mahurangi electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "liz-dotcom"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "coromandel-electorate",
+   "firstName": "Ray",
+   "image": null,
+   "lastName": "Cobb",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Coromandel electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "ray-cobb"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "wairarapa-electorate",
+   "firstName": "Barry",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/2eb0b0dd442a3a1ef62b45b0d0bfbe8e6fc2c2a6-1024x1024.png",
+   "lastName": "Young",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Wairarapa electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-outdoors--freedom-party"
+   },
+   "slug": "barry-young"
+  }
+ ]
+}

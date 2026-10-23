@@ -1,0 +1,65 @@
+{
+ "party": {
+  "attributes": [
+   {
+    "_key": "Cvm0feQQ0x4t4eHXdJCgb2",
+    "icon": null,
+    "name": "Year founded",
+    "value": "2026"
+   },
+   {
+    "_key": "Cvm0feQQ0x4t4eHXdJCgfk",
+    "icon": null,
+    "name": "Times in government",
+    "value": "0"
+   },
+   {
+    "_key": "Cvm0feQQ0x4t4eHXdJCgkS",
+    "icon": null,
+    "name": "Current MPs",
+    "value": "0"
+   },
+   {
+    "_key": "Cvm0feQQ0x4t4eHXdJCgpA",
+    "icon": null,
+    "name": "Number of electorates held",
+    "value": "0"
+   },
+   {
+    "_key": "Cvm0feQQ0x4t4eHXdJCgts",
+    "icon": null,
+    "name": "2025 donations",
+    "value": "< $20,000"
+   },
+   {
+    "_key": "Cvm0feQQ0x4t4eHXdJCgya",
+    "icon": null,
+    "name": "2026 polling average",
+    "value": "<0.5%"
+   }
+  ],
+  "color": "",
+  "description": "The Free Palestine Party is a single-issue anti-Zionist party. Founded in 2026, the party opposes the state of Israel's existence as a Jewish state. Instead, it supports the establishment of a single secular and democratic state in Palestine, with full and equal citizenship. The party is led by Paul Hopkinson and is yet to have competed in a general election. ",
+  "image": "https://cdn.sanity.io/images/ubdwo62y/production/4067a339ee88f8238188ae967129a96c95393ef9-800x800.png",
+  "name": "Free Palestine",
+  "slug": "free-palestine"
+ },
+ "policies": [],
+ "partyList": [
+  {
+   "attributes": [],
+   "electorateElectionSlug": "wigram-electorate",
+   "firstName": "William Donald",
+   "image": null,
+   "lastName": "Alexander",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Wigram electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "free-palestine"
+   },
+   "slug": "william-donald-alexander"
+  }
+ ]
+}

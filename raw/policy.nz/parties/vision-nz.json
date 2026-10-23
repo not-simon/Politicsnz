@@ -1,0 +1,151 @@
+{
+ "party": {
+  "attributes": [
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyBY",
+    "icon": null,
+    "name": "Year founded",
+    "value": "2019"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyCE",
+    "icon": null,
+    "name": "Times in government",
+    "value": "0"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyCu",
+    "icon": null,
+    "name": "Current MPs",
+    "value": "0"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyDa",
+    "icon": null,
+    "name": "Number of electorates held",
+    "value": "0"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyEG",
+    "icon": null,
+    "name": "2025 donations",
+    "value": "$6,718.43"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyEw",
+    "icon": null,
+    "name": "2026 polling average",
+    "value": "<0.5%"
+   }
+  ],
+  "color": "#4EA9E5",
+  "description": "Vision New Zealand is a far-right Christian fundamentalist party. Its programme consists of promoting Christian family values, a smaller role for government, pausing immigration and taking conservative positions on indigenous rights. The party also holds positions opposing abortion, homosexuality, and the construction of new mosques. Founded in 2019 by Brian Tamaki and his wife, Hannah, who leads the party, Vision NZ has not won any seats in parliament. In 2023, it won 0.33% percent of the vote, under the umbrella of Freedoms New Zealand. ",
+  "image": "https://cdn.sanity.io/images/ubdwo62y/production/668aa48aa9a8e3c0116b0007a946dc393228cacb-800x800.png",
+  "name": "Vision NZ",
+  "slug": "vision-nz"
+ },
+ "policies": [],
+ "partyList": [
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM08pY",
+     "name": "Before politics",
+     "value": "People ministry for 45yrs"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM08ql",
+     "name": "Residence",
+     "value": "Papakura"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM08ry",
+     "name": "Age",
+     "value": "65"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM08tB",
+     "name": "Public email",
+     "value": "hrhtamaki@yahoo.com"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM08uO",
+     "name": "Website",
+     "value": "vision.org.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM08vb",
+     "name": "Facebook",
+     "value": "www.facebook.com/hrhtamaki"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM08wo",
+     "name": "Instagram",
+     "value": "https:instagram.com/visionzealand?"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM08y1",
+     "name": "Twitter",
+     "value": "@hrhtamaki"
+    }
+   ],
+   "electorateElectionSlug": "papakura-electorate",
+   "firstName": "Hannah",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/44cdb7ebc4e0974d9268aadd011b13e542aaa538-1024x1024.jpg",
+   "lastName": "Tamaki",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Papakura electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "vision-nz"
+   },
+   "slug": "hannah-tamaki"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "epsom-electorate",
+   "firstName": "Sawan",
+   "image": null,
+   "lastName": "Jerry",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Epsom electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "vision-nz"
+   },
+   "slug": "sawan-jerry"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "southland-electorate",
+   "firstName": "Naomi",
+   "image": null,
+   "lastName": "Maclean",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Southland electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "vision-nz"
+   },
+   "slug": "naomi-maclean"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "otahuhu-electorate",
+   "firstName": "Karl",
+   "image": null,
+   "lastName": "Mokaraka",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Ōtāhuhu electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "vision-nz"
+   },
+   "slug": "karl-mokaraka"
+  }
+ ]
+}

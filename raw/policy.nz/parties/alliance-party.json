@@ -1,0 +1,555 @@
+{
+ "party": {
+  "attributes": [
+   {
+    "_key": "Cvm0feQQ0x4t4eHXdJCGh2",
+    "icon": null,
+    "name": "Year founded",
+    "value": "1991"
+   },
+   {
+    "_key": "Cvm0feQQ0x4t4eHXdJCGlk",
+    "icon": null,
+    "name": "Times in government",
+    "value": "1"
+   },
+   {
+    "_key": "Cvm0feQQ0x4t4eHXdJCGqS",
+    "icon": null,
+    "name": "Current MPs",
+    "value": "0"
+   },
+   {
+    "_key": "Cvm0feQQ0x4t4eHXdJCGvA",
+    "icon": null,
+    "name": "Number of electorates held",
+    "value": "0"
+   },
+   {
+    "_key": "Cvm0feQQ0x4t4eHXdJCGzs",
+    "icon": null,
+    "name": "2025 donations",
+    "value": "< $20,000"
+   },
+   {
+    "_key": "Cvm0feQQ0x4t4eHXdJCH4a",
+    "icon": null,
+    "name": "2026 polling average",
+    "value": "<0.5%"
+   }
+  ],
+  "color": "",
+  "description": "The Alliance Party is a left-wing democratic socialist political party. It was initially founded as an alliance of small left-leaning parties led by Jim Anderton and New Labour in 1991. Its programs historically emphasise opposition to privatisation and support for more ambitious involvement of the government in the economy. It supported the fifth Labour government in 1999 before splitting in 2002 over New Zealand’s involvement in the invasion of Afghanistan.The current iteration of the Alliance is led by Victor Billot who has a background in communications with the Maritime Union. ",
+  "image": "https://cdn.sanity.io/images/ubdwo62y/production/aa8fa2842553f7d683c48dc92571647a43a1808b-800x800.png",
+  "name": "Alliance Party",
+  "slug": "alliance-party"
+ },
+ "policies": [],
+ "partyList": [
+  {
+   "attributes": [
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFePWO",
+     "name": "Before politics",
+     "value": "Maritime Union official"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFePZM",
+     "name": "Residence",
+     "value": "Clyde Hill"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFePcK",
+     "name": "Age",
+     "value": "54"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFePfI",
+     "name": "Public email",
+     "value": "leader@allianceparty.nz"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFePiG",
+     "name": "Website",
+     "value": "https://allianceparty.nz/candidates/dunedin/"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFePlE",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/victor.billot.alliance/"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFePoC",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/victor.billot.alliance/"
+    }
+   ],
+   "electorateElectionSlug": "dunedin-electorate",
+   "firstName": "Victor",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/cdfc6120e8c3763b07c6f46ebfd3cea28eacffe0-1024x1024.jpg",
+   "lastName": "Billot",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Dunedin electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "alliance-party"
+   },
+   "slug": "victor-billot"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "3JmewsNW6vhVzTjYMTYyPz",
+     "name": "Before politics",
+     "value": "Navigation Officer"
+    },
+    {
+     "_key": "3JmewsNW6vhVzTjYMTYyRB",
+     "name": "Residence",
+     "value": "Carterton"
+    },
+    {
+     "_key": "3JmewsNW6vhVzTjYMTYySN",
+     "name": "Age",
+     "value": "35"
+    },
+    {
+     "_key": "3JmewsNW6vhVzTjYMTYyTZ",
+     "name": "Public email",
+     "value": "victoria.ale@allianceparty.nz"
+    },
+    {
+     "_key": "3JmewsNW6vhVzTjYMTYyUl",
+     "name": "Website",
+     "value": "victoria.ale@allianceparty.nz"
+    },
+    {
+     "_key": "3JmewsNW6vhVzTjYMTYyVx",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/people/Victoria-Ale-Alliance-Party-Wairarapa-Candidate-2026"
+    }
+   ],
+   "electorateElectionSlug": "wairarapa-electorate",
+   "firstName": "Victoria",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/33c455db122abc1d5a53ff0b73c63cd2a3e100f9-1024x1024.jpg",
+   "lastName": "Ale",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Wairarapa electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "alliance-party"
+   },
+   "slug": "victoria-ale"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzulN",
+     "name": "Before politics",
+     "value": "Warehouse Operator"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzuma",
+     "name": "Residence",
+     "value": "Rolleston"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzunn",
+     "name": "Age",
+     "value": "26"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzup0",
+     "name": "Public email",
+     "value": "jesse.luke@allianceparty.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzuqD",
+     "name": "Website",
+     "value": "https://allianceparty.nz/candidates/selwyn/"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzurQ",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/people/Jesse-Luke-Alliance-Party-Selwyn-Candidate-2026/61570801161032/"
+    }
+   ],
+   "electorateElectionSlug": "selwyn-electorate",
+   "firstName": "Jesse",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/81507cef27bcf84ff01c3da4aa2a8dfa2a54eec7-1024x1024.jpg",
+   "lastName": "Luke",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Selwyn electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "alliance-party"
+   },
+   "slug": "jesse-luke"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "7eITNGiJtbItwZTzzZbxoA",
+     "name": "Before politics",
+     "value": "Group Sustainability Manager"
+    },
+    {
+     "_key": "7eITNGiJtbItwZTzzZbxpj",
+     "name": "Residence",
+     "value": "Phillipstown"
+    },
+    {
+     "_key": "7eITNGiJtbItwZTzzZbxrI",
+     "name": "Age",
+     "value": "31"
+    },
+    {
+     "_key": "7eITNGiJtbItwZTzzZbxsr",
+     "name": "Public email",
+     "value": "courtney.fraser@allianceparty.nz"
+    },
+    {
+     "_key": "7eITNGiJtbItwZTzzZbxuQ",
+     "name": "Website",
+     "value": "https://allianceparty.nz/candidates/ilam/"
+    },
+    {
+     "_key": "7eITNGiJtbItwZTzzZbxvz",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/courtneyfraseralliance/"
+    }
+   ],
+   "electorateElectionSlug": "ilam-electorate",
+   "firstName": "Courtney",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/ef82541cebb6a8eb690a684d131e32660831993a-1024x1024.jpg",
+   "lastName": "Fraser",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Ilam electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "alliance-party"
+   },
+   "slug": "courtney-fraser"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "k1GRzr1LgvR0pm1IrpWcGs",
+     "name": "Before politics",
+     "value": "Translator"
+    },
+    {
+     "_key": "k1GRzr1LgvR0pm1IrpWcJI",
+     "name": "Residence",
+     "value": "Waiputai / Warrington"
+    },
+    {
+     "_key": "k1GRzr1LgvR0pm1IrpWcLi",
+     "name": "Age",
+     "value": "47"
+    },
+    {
+     "_key": "k1GRzr1LgvR0pm1IrpWcO8",
+     "name": "Public email",
+     "value": "anna.knight@allianceparty.nz"
+    },
+    {
+     "_key": "k1GRzr1LgvR0pm1IrpWcQY",
+     "name": "Website",
+     "value": "https://allianceparty.nz/"
+    },
+    {
+     "_key": "k1GRzr1LgvR0pm1IrpWcSy",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/anna.knight.Taieri"
+    },
+    {
+     "_key": "k1GRzr1LgvR0pm1IrpWcVO",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/annaknight4dcc"
+    }
+   ],
+   "electorateElectionSlug": "taieri-electorate",
+   "firstName": "Anna",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/322bac5fd0440dc8813c6860cb601d7fe29c64e8-1024x1024.jpg",
+   "lastName": "Knight",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Taieri electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "alliance-party"
+   },
+   "slug": "anna-knight"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTXdb",
+     "name": "Before politics",
+     "value": "Senior Data Analyst & Dev"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTXfH",
+     "name": "Residence",
+     "value": "Linwood"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTXgx",
+     "name": "Age",
+     "value": "30"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTXid",
+     "name": "Public email",
+     "value": "ethan.gullery@allianceparty.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTXkJ",
+     "name": "Website",
+     "value": "https://allianceparty.nz/candidates/christchurch-east/"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTXlz",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/ethan.gullery.alliance"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTXnf",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/ethangullery.alliance/"
+    }
+   ],
+   "electorateElectionSlug": "christchurch-east-electorate",
+   "firstName": "Ethan",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/dcc61882fe5ce865cb78a2e90b7c2248d6f1e273-1024x1024.jpg",
+   "lastName": "Gullery",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Christchurch East electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "alliance-party"
+   },
+   "slug": "ethan-gullery"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUKYN",
+     "name": "Before politics",
+     "value": "General Manager Environmental"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUKa3",
+     "name": "Residence",
+     "value": "Waltham"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUKbj",
+     "name": "Age",
+     "value": "65"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUKdP",
+     "name": "Public email",
+     "value": "greg.byrnes@allianceparty.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUKf5",
+     "name": "Website",
+     "value": "https://my.wordpress.com/domains/gregbyrnes4alliance.com"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUKgl",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/people/Greg-Byrnes-Alliance-Party-Christchurch-Central-Candidate-2026/100080157170516/"
+    }
+   ],
+   "electorateElectionSlug": "christchurch-central-electorate",
+   "firstName": "Greg",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/e7a05bcc71f10bff51aed64da4fded5a944bdd2f-1024x1024.jpg",
+   "lastName": "Byrnes",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Christchurch Central electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "alliance-party"
+   },
+   "slug": "greg-byrnes"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRi0R",
+     "name": "Before politics",
+     "value": "Hospitality Worker"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRi1q",
+     "name": "Residence",
+     "value": "Northland"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRi3F",
+     "name": "Age",
+     "value": "20"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRi4e",
+     "name": "Public email",
+     "value": "josh.harford@allianceparty.nz"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRi63",
+     "name": "Website",
+     "value": "https://allianceparty.nz/candidates/wellington-north/"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRi7S",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61575349215336"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRi8r",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/joshlharford/"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRiAG",
+     "name": "Twitter",
+     "value": "https://x.com/j_har_ford"
+    }
+   ],
+   "electorateElectionSlug": "wellington-north-electorate",
+   "firstName": "Joshua",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/8cb3ca9cf3d4e71c16be70635ca8cee7dfb24b3c-1024x1024.jpg",
+   "lastName": "HARFORD",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Wellington North electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "alliance-party"
+   },
+   "slug": "joshua-harford"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "fx620ec4b6M7e5HsZ2aaZm",
+     "name": "Before politics",
+     "value": "Student and part-time worker"
+    },
+    {
+     "_key": "fx620ec4b6M7e5HsZ2aact",
+     "name": "Residence",
+     "value": "Fitzherbert"
+    },
+    {
+     "_key": "fx620ec4b6M7e5HsZ2aag0",
+     "name": "Age",
+     "value": "21"
+    },
+    {
+     "_key": "fx620ec4b6M7e5HsZ2aaj7",
+     "name": "Public email",
+     "value": "joshua.moss@allianceparty.nz"
+    },
+    {
+     "_key": "fx620ec4b6M7e5HsZ2aamE",
+     "name": "Website",
+     "value": "https://allianceparty.nz/candidates/palmerston-north/"
+    },
+    {
+     "_key": "fx620ec4b6M7e5HsZ2aapL",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61594067477721"
+    },
+    {
+     "_key": "fx620ec4b6M7e5HsZ2aasS",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/joshuamoss.alliance/"
+    }
+   ],
+   "electorateElectionSlug": "palmerston-north-electorate",
+   "firstName": "Joshua",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/b045ee0d6e72403e07c9923b732857a5aa52e0eb-1024x1024.jpg",
+   "lastName": "Moss",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Palmerston North electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "alliance-party"
+   },
+   "slug": "joshua-moss"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEj80Q",
+     "name": "Before politics",
+     "value": "Software Developer/Parent"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEj83O",
+     "name": "Residence",
+     "value": "Riwaka"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEj86M",
+     "name": "Age",
+     "value": "41"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEj89K",
+     "name": "Public email",
+     "value": "sara.dyatlova-murphy@allianceparty.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEj8CI",
+     "name": "Website",
+     "value": "https://allianceparty.nz/candidates/west-coast-tasman/"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEj8FG",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/people/Sara-Dyatlova-Murphy-Alliance-Party"
+    }
+   ],
+   "electorateElectionSlug": "west-coast-tasman-electorate",
+   "firstName": "Sara",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/0fcbd6e34fc5930cfddbbe1c56cdae960d9836cf-1024x1024.jpg",
+   "lastName": "Dyatlova–Murphy",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the West Coast-Tasman electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "alliance-party"
+   },
+   "slug": "sara-dyatlovamurphy"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "banks-peninsula-electorate",
+   "firstName": "Kyle",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/8f5068aa92db3b9e44025fe2ee73fbaaf3db6d87-1024x1024.jpg",
+   "lastName": "Turnbull",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Banks Peninsula electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "alliance-party"
+   },
+   "slug": "kyle-turnbull"
+  }
+ ]
+}

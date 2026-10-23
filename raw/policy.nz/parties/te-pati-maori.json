@@ -1,0 +1,1659 @@
+{
+ "party": {
+  "attributes": [
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUwtc",
+    "icon": null,
+    "name": "Year founded",
+    "value": "2004"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUwuI",
+    "icon": null,
+    "name": "Times in government",
+    "value": "1"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUwuy",
+    "icon": null,
+    "name": "Current MPs",
+    "value": "4"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUwve",
+    "icon": null,
+    "name": "Number of electorates held",
+    "value": "4"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUwwK",
+    "icon": null,
+    "name": "2025 donations",
+    "value": "$141,986.50"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUwx0",
+    "icon": null,
+    "name": "2026 polling average",
+    "value": "2.7%"
+   }
+  ],
+  "color": "#EC3041",
+  "description": "Te Pāti Māori is a left-wing indigenous rights party. Its programme couples a larger role for the government in the economy alongside an emphasis on “for Māori-by-Māori” solutions and Māori self-determination. It was founded in 2004 by Tariana Turei as a breakaway from the Labour Party following the Foreshore and Seabed legislation that blocked Māori land claims. The party has been in government only once, from 2008 to 2014, in the fifth National government. It has regularly held Māori seats in Parliament and currently holds 4 of the 7 Māori seats.",
+  "image": "https://cdn.sanity.io/images/ubdwo62y/production/de4fe181b77de3fb0291564055af924f1b72302a-800x800.png",
+  "name": "Te Pāti Māori",
+  "slug": "te-pati-maori"
+ },
+ "policies": [
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CJEX",
+     "name": "Why",
+     "value": "This party says that disabled Māori have to fight the system to get the care they need. Making support easier to access and Māori specific will make the process of receiving care from whānau or external providers less degrading, better matching the reality for disabled Māori and their families. The focus should be on dignity, care and support, not fighting a beureaucratic system. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CJJb",
+     "name": "How",
+     "value": "This party would make support easier to access and reduce the focus on bureaucratic requirements. Funding would be provided based on what families say they need, not bureaucratic forms.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CIf5",
+     "title": "'Disabilities', undated (accessed 10 August 2026)",
+     "url": "https://web.archive.org/save/https://www.maoriparty.org.nz/disabilities"
+    }
+   ],
+   "reference": "POL54647",
+   "statement": "Support Māori-led disability services",
+   "topics": [
+    "community-and-inclusion",
+    "te-ao-maori",
+    "community-and-inclusion",
+    "disability",
+    "wellbeing-and-services",
+    "pasifika"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CK8F",
+     "name": "Why",
+     "value": "This party says that many families are going hungry, even though Aotearoa grows enough food to feed everyone. Scarcity is a product of system failure, rather than lack of food. Protecting Māori food sources and agriculture will ensure food is healthy and affordable. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CKDJ",
+     "name": "How",
+     "value": "This party would reject genetic engineering, look after seed sovereignty, protect the WAI262 Waitangi Tribunal claim over flora and fauna. Increasing access to land for food production and investing in regenerative agriculture and community food systems would get affordable food to people who need it.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CKIN",
+     "title": "'Kai Sovereignty', 6 June 2026 (accessed 10 August 2026)",
+     "url": "https://web.archive.org/web/20260810030114/https://www.maoriparty.org.nz/kai_sovereignt"
+    }
+   ],
+   "reference": "POL54649",
+   "statement": "Protect Māori food systems",
+   "topics": [
+    "economy",
+    "te-ao-maori",
+    "te-ao-maori",
+    "te-ao-maori",
+    "agriculture",
+    "land-and-resources",
+    "wellbeing-and-services",
+    "te-tiriti-o-waitangi-and-governance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CL71",
+     "name": "Why",
+     "value": "This party says that too many families are going hungry, even though NZ grows enough food to feed everyone. Scarcity is a product of system failure, rather than lack of food. Ending corporate control of food chains will make it easier for people to access food when they need it. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CLC5",
+     "name": "How",
+     "value": "This party would support local kai sellers and Māori-owned supermarkets over large corporate supermarket chains.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CLH9",
+     "title": "'Kai Sovereignty', 6 June 2026 (accessed 10 August 2026)",
+     "url": "https://web.archive.org/web/20260810030114/https://www.maoriparty.org.nz/kai_sovereignt"
+    }
+   ],
+   "reference": "POL54650",
+   "statement": "Support Māori-owned supermarkets and kai sellers",
+   "topics": [
+    "te-ao-maori",
+    "incomes-and-employment",
+    "te-ao-maori",
+    "economy",
+    "wellbeing-and-services",
+    "prices",
+    "te-tiriti-o-waitangi-and-governance",
+    "business-support"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CLRH",
+     "name": "Why",
+     "value": "This party says that every child deserves to learn in a way that celebrates their culture. Children who are connected to their identity do better in the education system. Creating education systems that focus on whānau, identity and different knowledge systems will help children to succeed"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CLWL",
+     "name": "How",
+     "value": "This party would increase funding in kōhanga reo and kura kaupapa Māori, wharekura and wānanga. It would embed the use of mātauranga Māori throughout the curriculum and make te reo Māori a core curriculum subject through Year 10. It also believes in expanding school lunches, free public transport for students, free school counselling and increased student support, and strengthening the education workforce.\n"
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CLbP",
+     "title": "'Te Pāti Māori Announces a Māori Education Authority ', 2 August 2026 (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811032531/https://www.scoop.co.nz/stories/PA2608/S00006/te-pati-maori-announces-maori-education-authority-to-restore-maori-success-in-education.htm?_gl=1%2A1x1ylqz%2A_gcl_au%2AMTk4NTg5NzkzNi4xNzg2NDAxNDc5%2A_ga%2AMTA2ODM2Mjg3Mi4xNzg2NDAxNDc5%2A_ga_GGVMM3MB82%2AczE3ODY0MTg1OTkkbzIkZzEkdDE3ODY0MTg3MTAkajUzJGwwJGgw"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CLgT",
+     "title": "'Education and Training', undated (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818013419/https://www.maoriparty.org.nz/education_training"
+    }
+   ],
+   "reference": "POL54679",
+   "statement": "Create a Māori Education Authority with responsibility for Māori education",
+   "topics": [
+    "te-ao-maori",
+    "education",
+    "education",
+    "education",
+    "te-reo-maori-and-culture",
+    "schools",
+    "early-childhood-education",
+    "key-policies-education"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CMV7",
+     "name": "Why",
+     "value": "This party says that the sea is a responsibility and inheritance, not a resource for extraction. Seabed mining threatens the integrity of important natural places. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CMaB",
+     "name": "How",
+     "value": "This party would ban seabed mining.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CMfF",
+     "title": "'Climate', 3 June 2026 (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818043455/https://www.maoriparty.org.nz/climate"
+    }
+   ],
+   "reference": "POL54680",
+   "statement": "Ban seabed mining ",
+   "topics": [
+    "economy",
+    "environment",
+    "environment",
+    "oil-gas-and-mining",
+    "oceans",
+    "conservation"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CNj5",
+     "name": "Why",
+     "value": "This party says that land and marae are at risk from climate change. Adapting to climate change includes protecting the right to live safely on land. Māori deserve to have sovereignty on their land, even if the changing climate is putting that land at risk. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CNo9",
+     "name": "How",
+     "value": "This party would ensure communities at risk from natural disasters, flooding and other climate impacts are prioritised with funding for adapting to climate impacts.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CNJl",
+     "title": "'Climate', 3 June 2026 (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818043455/https://www.maoriparty.org.nz/climate"
+    }
+   ],
+   "reference": "POL54681",
+   "statement": "Invest in adaptation for communities most at risk from climate change",
+   "topics": [
+    "environment",
+    "te-ao-maori",
+    "climate-adaptation",
+    "land-and-resources"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CNyH",
+     "name": "Why",
+     "value": "This party says that whenua (land) and moana (ocean) are our responsibility and future. Climate justice must work to protect these vital resources, not exploit them. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CO3L",
+     "name": "How",
+     "value": "This party would focus emissions reduction efforts on sustainable and regenerative approaches.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CO8P",
+     "title": "'Climate', 3 June 2026 (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818043455/https://www.maoriparty.org.nz/climate"
+    }
+   ],
+   "reference": "POL54682",
+   "statement": "Support sustainable and regenerative means of emissions reduction in line with Māori values",
+   "topics": [
+    "environment",
+    "environment",
+    "te-ao-maori",
+    "emissions-reduction",
+    "oceans",
+    "land-and-resources"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CPHJ",
+     "name": "Why",
+     "value": "This party says that Aotearoa should focus its foreign policy on peace, justice and Indigenous solidarity. New Zealand's foreign policy should be independent and aligned with the Pacific, rather than powerful countries and military alliances. Having a neutral military is an expression of mana motuhake. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CPMN",
+     "name": "How",
+     "value": "This party would prioritise the Pacific, responding to disasters and providing protection as the focus of the Defence Force.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CPRR",
+     "title": "'Military Neutrality', 3 June 2026 (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818013137/https://www.maoriparty.org.nz/military_neutrality"
+    }
+   ],
+   "reference": "POL54683",
+   "statement": "Focus the Defence Force on protection, disaster response and the Pacific",
+   "topics": [
+    "defence-and-foreign-affairs",
+    "defence-and-foreign-affairs",
+    "community-and-inclusion",
+    "defence-and-veterans",
+    "key-policies-defence-and-foreign-affairs",
+    "pasifika"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CQ5x",
+     "name": "Why",
+     "value": "This party says that NZ's foreign policy should be independent, not determined by military alliances with powerful countries fighting wars NZ should not be part of. Instead, New Zealand should ensure its military alliances protect the Pacific and uphold sovereignty. Military alliances should be reviewed, those which do not fit with values of peace and justice should be removed. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CQB1",
+     "name": "How",
+     "value": "This party would declare NZ to be a \"militarily neutral\" nation. All military alliances would be reviewed. The government would withdraw from alliances which undermine national or indigenous sovereignty.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CQG5",
+     "title": "'Military Neutrality', 3 June 2026 (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818013137/https://www.maoriparty.org.nz/military_neutrality"
+    }
+   ],
+   "reference": "POL54684",
+   "statement": "Declare NZ a \"military neutral\" country",
+   "topics": [
+    "defence-and-foreign-affairs",
+    "defence-and-foreign-affairs",
+    "defence-and-foreign-affairs",
+    "defence-and-veterans",
+    "international-relations",
+    "key-policies-defence-and-foreign-affairs"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CQub",
+     "name": "Why",
+     "value": "This party says that NZ's foreign policy shouldn't be determined by powerful countries, but should remain independent. NZ should focus on peace, justice and solidarity with indigenous people in its foreign policy. Foreign policy should uphold Māori values. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CQzf",
+     "name": "How",
+     "value": "This party would ensure foreign policy and international relationships are independent, prioritising Māori values, Pacific countries and indigenous relationships.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CR4j",
+     "title": "'Military Neutrality', 3 June 2026 (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818013137/https://www.maoriparty.org.nz/military_neutrality"
+    }
+   ],
+   "reference": "POL54688",
+   "statement": "Review foreign policy settings and relationships to focus on the Pacific",
+   "topics": [
+    "defence-and-foreign-affairs",
+    "community-and-inclusion",
+    "defence-and-foreign-affairs",
+    "international-relations",
+    "pasifika",
+    "key-policies-defence-and-foreign-affairs"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CREr",
+     "name": "Why",
+     "value": "This party says that NZ should have independent foreign policy, not be influenced by powerful countries and wars in other places. Upholding human rights and ensuring war criminals receive justice on the international stage is important. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CRJv",
+     "name": "How",
+     "value": "This party would prioritise international human rights and justice for war criminals.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CROz",
+     "title": "'Military Neutrality', 3 June 2026 (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818013137/https://www.maoriparty.org.nz/military_neutrality"
+    }
+   ],
+   "reference": "POL54690",
+   "statement": "Hold international war criminals to account",
+   "topics": [
+    "defence-and-foreign-affairs",
+    "international-relations"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CSXt",
+     "name": "Why",
+     "value": "This party says that currently the government currently can ignore recommendations given by the Waitangi Tribunal. The party says this results in there being no accountability when Te Tiriti is breached. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CScx",
+     "name": "How",
+     "value": "This party would will make Waitangi Tribunal recommendations binding by law."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CSi1",
+     "title": "'Te Pāti Māori will make the Waitangi Tribunal Recommendation Binding ', 6 August 2026 (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811032410/https://www.scoop.co.nz/stories/PA2608/S00044/te-pati-maori-will-make-the-waitangi-tribunal-recommendations-binding.htm?_gl=1%2A161whb7%2A_gcl_au%2AMTk4NTg5NzkzNi4xNzg2NDAxNDc5%2A_ga%2AMTA2ODM2Mjg3Mi4xNzg2NDAxNDc5%2A_ga_GGVMM3MB82%2AczE3ODY0MTg1OTkkbzIkZzAkdDE3ODY0MTg2MDIkajU3JGwwJGgw"
+    }
+   ],
+   "reference": "POL54795",
+   "statement": "Make Waitangi Tribunal recommendations binding ",
+   "topics": [
+    "te-ao-maori",
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "te-ao-maori",
+    "te-ao-maori",
+    "te-reo-maori-and-culture",
+    "civil-justice",
+    "key-policies-law-justice-and-government",
+    "te-tiriti-o-waitangi-and-governance",
+    "key-policies-te-ao-maori"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CTMX",
+     "name": "Why",
+     "value": "This party says that that Te Tiriti has regularly been breached by different governments, meaning regulatory powers are needed to prevent future breaches."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CTRb",
+     "name": "How",
+     "value": "This party would establish an independent commissioner, who would act as a watchdog for potential breaches of Te Tiriti o Waitangi. It would also advise parliament to ensure Te Tiriti is central in all law-making.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CTWf",
+     "title": "'Te Pāti Māori Vow To Protect Te Tiriti With Establishment Of Independent Commissioner For Te Tiriti O Waitangi', 4 February 2025 (accessed 31 August 2026)",
+     "url": "https://www.scoop.co.nz/stories/PA2502/S00022/te-pati-maori-vow-to-protect-te-tiriti-with-establishment-of-independent-commissioner-for-te-tiriti-o-waitangi.htm"
+    }
+   ],
+   "reference": "POL54802",
+   "statement": "Establish an independent commissioner for Te Tiriti o Waitangi",
+   "topics": [
+    "te-ao-maori",
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "te-tiriti-o-waitangi-and-governance",
+    "parliament-and-democracy",
+    "key-policies-law-justice-and-government"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CTgn",
+     "name": "Why",
+     "value": "This party says that argues that Aotearoa's tax system is highly unequal, given that wages are taxed more than income from wealth. Lower-earning people have less disposable income; this party seeks to reduce how much this group is taxed. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CTlr",
+     "name": "How",
+     "value": "This party would establish six bands of income tax. The first $30,000 earned would be tax-free, while income between $30,001 and $60,000 would have a tax rate of 15%. Those earning between $60,001 and $90,001 would have a tax rate of 33%; $ 90,001- $ 180,000 would be 39%; between $180,000 and $300,000, 42%; and above $300,000, the tax rate would be 48%."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CTqv",
+     "title": "'A Kiwi Tax Plan' (PDF), 26 August 2026 (accessed 31 August 2026)",
+     "url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf"
+    }
+   ],
+   "reference": "POL54812",
+   "statement": "Make the first $30,000 earned tax-free",
+   "topics": [
+    "incomes-and-employment",
+    "economy",
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "tax-and-income-support",
+    "government-revenue-and-finance",
+    "key-policies-incomes-and-employment",
+    "wages-and-working-conditions"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CUzp",
+     "name": "Why",
+     "value": "This party says that says that te Triti is the constitutional foundation of Aotearoa, but how te Tiriti is treated depends on the government of the day. Therefore, a crown watchdog regarding the implementation of te Tiriti is required. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CV4t",
+     "name": "How",
+     "value": "This party would will create a Te Tiriti commission. The commission would investigate Crown activities which may breach Te Tiriti, report to Parliament on breaches, stop decisions or actions which breach Te Tiriti and require remedial action from the Crown when such breaches occur. The commission would use a Te Tiriti compliance order to prevent the government from continuing the activity. Such orders could only be overturned by the High Court."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CV9x",
+     "title": "'Te Tiriti Entrenchment Policy', undated (accessed 09 September 2026)",
+     "url": "https://img.scoop.co.nz/media/pdfs/2609/TIRITI_ENTRENCHMENT_POLICY.pdf"
+    }
+   ],
+   "reference": "POL54917",
+   "statement": "Establish an independent Te Tiriti Commission",
+   "topics": [
+    "te-ao-maori",
+    "te-ao-maori",
+    "te-tiriti-o-waitangi-and-governance",
+    "te-reo-maori-and-culture"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CVtX",
+     "name": "Why",
+     "value": "This party says that Aotearoa has endorsed the United Nations Declaration on the Rights of Indigenous Peoples but has not done anything domestically to implement it. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CVyb",
+     "name": "How",
+     "value": "This party would fund and develop a national action plan to implement the declaration.    "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CVK5",
+     "title": "'Te Tiriti Entrenchment Policy', undated (accessed 09 September 2026)",
+     "url": "https://img.scoop.co.nz/media/pdfs/2609/TIRITI_ENTRENCHMENT_POLICY.pdf"
+    }
+   ],
+   "reference": "POL54919",
+   "statement": "Implement the United Nations Declaration on the Rights of Indigenous Peoples",
+   "topics": [
+    "te-ao-maori",
+    "defence-and-foreign-affairs",
+    "te-ao-maori",
+    "te-reo-maori-and-culture",
+    "international-relations",
+    "te-tiriti-o-waitangi-and-governance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CWnF",
+     "name": "Why",
+     "value": "This party says that Māori constitutional sovereignty comes from He Whakaputanga o te Rangatiratanga o Nu Tireni (the 1835 declaration of independence). However, with no written constitution, Māori authority is not constitutionally enshrined as it should be. The Mātike Mai project, which was founded in 2010 to strengthen the independence of iwi and hapū, is underfunded to resource such a transition."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CWsJ",
+     "name": "How",
+     "value": "This party would convene a Māori constitutional convention which will start dialogue with tangata Tiriti and both local and central government regarding New Zealand's constitutional future. It would set 2040 as a target date for constitutional change in New Zealand, and estimates that this policy would cost $220m. This would follow the recommendations of the Matike Mai report. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CWxN",
+     "title": "'Te Tiriti Entrenchment Policy', undated (accessed 09 September 2026)",
+     "url": "https://img.scoop.co.nz/media/pdfs/2609/TIRITI_ENTRENCHMENT_POLICY.pdf"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CX2R",
+     "title": "'Mana Motuhake', undated (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818042500/https://www.maoriparty.org.nz/mana_motuhake"
+    }
+   ],
+   "reference": "POL54921",
+   "statement": "Convene a Māori constitutional convention as laid out in Matike Mai",
+   "topics": [
+    "te-ao-maori",
+    "te-ao-maori",
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "te-reo-maori-and-culture",
+    "te-tiriti-o-waitangi-and-governance",
+    "parliament-and-democracy",
+    "key-policies-law-justice-and-government"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CXgx",
+     "name": "Why",
+     "value": "This party says that food is too expensive for lower income people."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CXm1",
+     "name": "How",
+     "value": "This party would create an 'Income Tax Kai Credit' equivalent to eight weeks of free food each year. Only people earning less than $60,000 (64 per cent of the population) would be eligible for this kai credit.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CXr5",
+     "title": "'A Kiwi Tax Plan' (PDF), 26 August 2026 (accessed 31 August 2026)",
+     "url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf"
+    }
+   ],
+   "reference": "POL54938",
+   "statement": "Remove GST costs from kai",
+   "topics": [
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "tax-and-income-support",
+    "prices",
+    "key-policies-incomes-and-employment"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CYVb",
+     "name": "Why",
+     "value": "This party says that wealth inequality is currently extremely high. Tax reform is required to address wealth inequality, build social cohesion, and fund public services."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CYaf",
+     "name": "How",
+     "value": "This party would tax the wealth of those whose net wealth is higher than $2 million. For those whose net wealth is between $2 million and $5 million, 1.5 percent of the wealth will be taxed. Between $5 million and $10 million, this number will rise to 2 percent, and above $10 million, it will be 2.5 percent.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CYfj",
+     "title": "'A Kiwi Tax Plan' (PDF), 26 August 2026 (accessed 31 August 2026)",
+     "url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf"
+    }
+   ],
+   "reference": "POL54939",
+   "statement": "Implement a targeted wealth tax starting from 1.5 percent",
+   "topics": [
+    "incomes-and-employment",
+    "economy",
+    "economy",
+    "tax-and-income-support",
+    "government-revenue-and-finance",
+    "key-policies-economy"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CYpr",
+     "name": "Why",
+     "value": "This party says that Aotearoa's current tax regime is unequal and punishes the lowest earners while rewarding wealth accumulation and property speculation. One aspect is that companies are taxed too little and are incentivised to avoid paying tax they do pay."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CYuv",
+     "name": "How",
+     "value": "This party would increase the corporate tax rate from 28 percent to 33 percent. Additionally, the party would invest $1b in eliminating tax avoidance practices."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CYzz",
+     "title": "'A Kiwi Tax Plan' (PDF), 26 August 2026 (accessed 31 August 2026)",
+     "url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf"
+    }
+   ],
+   "reference": "POL54940",
+   "statement": "Ensure tax fairness by raising corporate tax rate",
+   "topics": [
+    "incomes-and-employment",
+    "economy",
+    "economy",
+    "economy",
+    "tax-and-income-support",
+    "business-support",
+    "government-revenue-and-finance",
+    "key-policies-economy"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CaT9",
+     "name": "Why",
+     "value": "This party says that companies should not be able to transfer money extracted from NZ offshore without paying taxes. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CaYD",
+     "name": "How",
+     "value": "This party would introduce a tax of 5 percent on the value of profits sent overseas from NZ."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CadH",
+     "title": "'A Kiwi Tax Plan' (PDF), 26 August 2026 (accessed 31 August 2026)",
+     "url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf"
+    }
+   ],
+   "reference": "POL54941",
+   "statement": "Introduce a 5 percent tax on profit transferred overseas ",
+   "topics": [
+    "incomes-and-employment",
+    "economy",
+    "economy",
+    "economy",
+    "tax-and-income-support",
+    "business-support",
+    "foreign-investment",
+    "government-revenue-and-finance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cbh7",
+     "name": "Why",
+     "value": "This party says that too often land is used unproductively, resulting in land banking. For example, there are 111,700 empty houses in New Zealand. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CbmB",
+     "name": "How",
+     "value": "This party would introduce a land banking tax of 33 percent on land which is not being used. It would also introduce a 2 percent vacant house tax to encourage homes to be filled faster.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CanP",
+     "title": "'A Kiwi Tax Plan' (PDF), 26 August 2026 (accessed 31 August 2026)",
+     "url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf"
+    }
+   ],
+   "reference": "POL54942",
+   "statement": "Support productive use of land with a land banking tax",
+   "topics": [
+    "housing",
+    "economy",
+    "housing",
+    "incomes-and-employment",
+    "economy",
+    "housing-affordability",
+    "government-revenue-and-finance",
+    "key-policies-housing",
+    "tax-and-income-support",
+    "economic-development-and-industry"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CbwJ",
+     "name": "Why",
+     "value": "This party says Aotearoa's current tax regime is unequal and currently punishes the lowest earners while rewarding wealth accumulation and property speculation. To create lower taxes for the lowest earners, revenue is needed."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Cc1N",
+     "name": "How",
+     "value": "This party would create a tax of 5 percent of a home's value, paid by the people buying the home.  First-home buyers buying a property worth less than $1 million would be exempt.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cc6R",
+     "title": "'A Kiwi Tax Plan' (PDF), 26 August 2026 (accessed 31 August 2026)",
+     "url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf"
+    }
+   ],
+   "reference": "POL54943",
+   "statement": "Implement a 5 percent stamp duty on residential sales ",
+   "topics": [
+    "housing",
+    "incomes-and-employment",
+    "housing",
+    "economy",
+    "housing-affordability",
+    "tax-and-income-support",
+    "key-policies-housing",
+    "government-revenue-and-finance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CdZb",
+     "name": "Why",
+     "value": "This party says that Aotearoa's current tax regime is unequal and currently punishes the lowest earners while rewarding wealth accumulation, property speculation and environmental extraction."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Cdef",
+     "name": "How",
+     "value": "This party would ensure that tax policy and environmental policy are aligned so that tax policy also protects Te Taiao. In addition, the party would ensure future environmental taxes do not disproportionately target low-income households.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cdjj",
+     "title": "'A Kiwi Tax Plan' (PDF), 26 August 2026 (accessed 31 August 2026)",
+     "url": "https://img.scoop.co.nz/media/pdfs/2608/A_Kiwi_Tax_Plan.pdf"
+    }
+   ],
+   "reference": "POL54968",
+   "statement": "Align tax and environmental policy",
+   "topics": [
+    "incomes-and-employment",
+    "environment",
+    "economy",
+    "environment",
+    "tax-and-income-support",
+    "climate-adaptation",
+    "government-revenue-and-finance",
+    "conservation"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cesd",
+     "name": "Why",
+     "value": "This party says that tamariki Māori must be protected as they are the future leaders of the country. However, current policy often results in Māori children being removed from their parents and raised in Pākeha-dominated spaces, removed from their culture"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Cexh",
+     "name": "How",
+     "value": "This party would stop removing Māori children from their parents, and invest instead in whānau-led care. It would also make the Crown accountable for the harm this practice has caused. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cf2l",
+     "title": "'Mokopuna Māori', undated (accessed 15 September 2026)",
+     "url": "https://www.maoriparty.org.nz/mokopuna_m_ori"
+    }
+   ],
+   "reference": "POL55000",
+   "statement": "Invest in whānau-led care for Māori children",
+   "topics": [
+    "te-ao-maori",
+    "te-ao-maori",
+    "te-ao-maori",
+    "health",
+    "health",
+    "te-ao-maori",
+    "wellbeing-and-services",
+    "te-reo-maori-and-culture",
+    "te-tiriti-o-waitangi-and-governance",
+    "health-services",
+    "key-policies-health",
+    "key-policies-te-ao-maori"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CgBf",
+     "name": "Why",
+     "value": "This party says disabled Māori need support which upholds their mana and whānau, but that too often the system degrades them."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CgGj",
+     "name": "How",
+     "value": "This party would support Māori-led disability services, make these services easier to access, and ensure dignity is preserved when the services are accessed  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CgLn",
+     "title": "'Disabilities', undated (accessed 15 September 2026)",
+     "url": "https://www.maoriparty.org.nz/disabilities"
+    }
+   ],
+   "reference": "POL55001",
+   "statement": "Improve support for Māori with disabilities ",
+   "topics": [
+    "te-ao-maori",
+    "community-and-inclusion",
+    "te-ao-maori",
+    "health",
+    "health",
+    "community-and-inclusion",
+    "te-reo-maori-and-culture",
+    "disability",
+    "wellbeing-and-services",
+    "health-services",
+    "key-policies-health",
+    "key-policies-community-and-inclusion"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Ch0J",
+     "name": "Why",
+     "value": "This party says that electricity and electricity generation is increasingly increasingly is carried out by large corporations focused on profits, not people. Returning electricity generation to the people will allow costs to come down and move Aotearoa towards energy sovereignty."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Ch5N",
+     "name": "How",
+     "value": "This party would provide financial support for whānau purchasing solar-power, energy-efficient appliances and EV charging ports. This support would be long-term, low-cost, and without interest.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360ChAR",
+     "title": "'We Want Cheaper Power and We Want Our People To Own It ', 16 September 2026 (accessed 21 September 2026)",
+     "url": "https://web.archive.org/web/20260921002528/https://www.maoriparty.org.nz/we_want_cheaper_power_and_we_want_our_people_to_own_it"
+    }
+   ],
+   "reference": "POL55058",
+   "statement": "Provide financial support to households purchasing solar infrastructure and efficient appliances",
+   "topics": [
+    "transport-and-infrastructure",
+    "housing",
+    "environment",
+    "energy",
+    "housing-quality",
+    "climate-adaptation"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360ChKZ",
+     "name": "Why",
+     "value": "This party says that currently energy production extracts wealth and autonomy from Māori. An energy transition must uphold tino rangatiratanga and give Māori tangible rights surrounding, and ownership of, energy"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360ChPd",
+     "name": "How",
+     "value": "This party would establish a $1b energy sovereignty fund. It will invest in energy resilience on marae, papakāinga, and Māori land more generally. It will also reduce household power costs and provide workforce development opportunities, with an end goal of allowing whānau, iwi, and more to own more energy assets."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360ChUh",
+     "title": "'We Want Cheaper Power and We Want Our People To Own It ', 16 September 2026 (accessed 21 September 2026)",
+     "url": "https://web.archive.org/web/20260921002528/https://www.maoriparty.org.nz/we_want_cheaper_power_and_we_want_our_people_to_own_it"
+    }
+   ],
+   "reference": "POL55059",
+   "statement": "Invest in Māori energy sovereignty ",
+   "topics": [
+    "transport-and-infrastructure",
+    "environment",
+    "te-ao-maori",
+    "energy",
+    "climate-adaptation",
+    "te-tiriti-o-waitangi-and-governance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cisn",
+     "name": "Why",
+     "value": "This party says that electricity and electricity generation increasingly is carried out by large corporations focused on profits, not people. It's important to create a pathway to energy independence away from monopolies. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Cixr",
+     "name": "How",
+     "value": "This party would create an independent national energy plan. It would implement a fairness framework to regulate power prices, and also identify where the renewable energies are required for a transition to cleaner energy. It would also fund upgrades and distribution required for new renewable energies. By 2035, this party wants New Zealand to have achieved energy sovereignty."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Ci9D",
+     "title": "'We Want Cheaper Power and We Want Our People To Own It ', 16 September 2026 (accessed 21 September 2026)",
+     "url": "https://web.archive.org/web/20260921002528/https://www.maoriparty.org.nz/we_want_cheaper_power_and_we_want_our_people_to_own_it"
+    }
+   ],
+   "reference": "POL55060",
+   "statement": "Establish a national energy independence plan",
+   "topics": [
+    "transport-and-infrastructure",
+    "environment",
+    "transport-and-infrastructure",
+    "environment",
+    "energy",
+    "emissions-reduction",
+    "key-policies-transport-and-infrastructure",
+    "key-policies-environment"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CjrZ",
+     "name": "Why",
+     "value": "This party says that electricity and electricity generation is increasingly is carried out by large corporations focused on profits, not people. Therefore, making a pathway to energy independence away from monopolies, owned and benefiting rural communities is essential. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Cjwd",
+     "name": "How",
+     "value": "This party would support rural communities in generating and storing renewable energy on-farm.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cj7z",
+     "title": "'We Want Cheaper Power and We Want Our People To Own It ', 16 September 2026 (accessed 21 September 2026)",
+     "url": "https://web.archive.org/web/20260921002528/https://www.maoriparty.org.nz/we_want_cheaper_power_and_we_want_our_people_to_own_it"
+    }
+   ],
+   "reference": "POL55061",
+   "statement": "Build rural energy capability and on-farm generation",
+   "topics": [
+    "transport-and-infrastructure",
+    "economy",
+    "economy",
+    "environment",
+    "energy",
+    "regional-development",
+    "agriculture",
+    "emissions-reduction"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CkgD",
+     "name": "Why",
+     "value": "This party says that while households and communities are beginning to store and produce renewable power like solar energy, they are not being properly compensated for giving the energy system a buffer. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CklH",
+     "name": "How",
+     "value": "This party would ensure households and communities are paid fairly for energy production and storage. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Ck6l",
+     "title": "'We Want Cheaper Power and We Want Our People To Own It ', 16 September 2026 (accessed 21 September 2026)",
+     "url": "https://web.archive.org/web/20260921002528/https://www.maoriparty.org.nz/we_want_cheaper_power_and_we_want_our_people_to_own_it"
+    }
+   ],
+   "reference": "POL55062",
+   "statement": "Improve compensation for households generating power into the grid",
+   "topics": [
+    "transport-and-infrastructure",
+    "environment",
+    "incomes-and-employment",
+    "energy",
+    "emissions-reduction",
+    "prices"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Clk3",
+     "name": "Why",
+     "value": "This party says that Aotearoa is currently reliant on fossil fuels imported from overseas. This means that not only is New Zealand contributing to the climate crisis, but it also has much reduced resilience against energy shocks. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Clp7",
+     "name": "How",
+     "value": "This party would support business, farms, transport and industry to switch to home-grown renewable energy sources. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CluB",
+     "title": "'We Want Cheaper Power and We Want Our People To Own It ', 16 September 2026 (accessed 21 September 2026)",
+     "url": "https://web.archive.org/web/20260921002528/https://www.maoriparty.org.nz/we_want_cheaper_power_and_we_want_our_people_to_own_it"
+    }
+   ],
+   "reference": "POL55063",
+   "statement": "Reduce dependence on fossil fuels to protect sovereignty ",
+   "topics": [
+    "environment",
+    "transport-and-infrastructure",
+    "economy",
+    "environment",
+    "economy",
+    "climate-adaptation",
+    "energy",
+    "foreign-investment",
+    "emissions-reduction",
+    "business-support"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cmip",
+     "name": "Why",
+     "value": "This party says that electricity and electricity generation increasingly is carried out by large corporations focused on profits rather than serving the people.  A pathway to renewable energy independence away from monopolies is needed, but the technologies involved in such a transition must respect tino rangatiratanga. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Cmnt",
+     "name": "How",
+     "value": "This party would protect Māori data generated through smart meters, energy systems, trading platforms, and other technologies, and ensure that such information is only used for the benefit of Māori with their authority  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cmsx",
+     "title": "'We Want Cheaper Power and We Want Our People To Own It ', 16 September 2026 (accessed 21 September 2026)",
+     "url": "https://web.archive.org/web/20260921002528/https://www.maoriparty.org.nz/we_want_cheaper_power_and_we_want_our_people_to_own_it"
+    }
+   ],
+   "reference": "POL55064",
+   "statement": "Protect Māori data sovereignty ",
+   "topics": [
+    "te-ao-maori",
+    "te-ao-maori",
+    "economy",
+    "transport-and-infrastructure",
+    "te-reo-maori-and-culture",
+    "te-tiriti-o-waitangi-and-governance",
+    "internet-and-digital-technologies",
+    "energy"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CnNL",
+     "name": "Why",
+     "value": "This party says that te reo Māori is a fundamental part of New Zealand and must be both protected and strengthened."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CnSP",
+     "name": "How",
+     "value": "This party would normalise te reo Māori in all facets of life, by investing in learning pathways and community re-vitalisation. The party would also make the state legally accountable for the language's protection. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CnXT",
+     "title": "'Te reo Māori', undated (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818042325/https://www.maoriparty.org.nz/te_reo_maori"
+    }
+   ],
+   "reference": "POL55065",
+   "statement": "Make the state legally accountable for protecting te reo Māori",
+   "topics": [
+    "te-ao-maori",
+    "te-ao-maori",
+    "te-reo-maori-and-culture",
+    "te-tiriti-o-waitangi-and-governance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CogN",
+     "name": "Why",
+     "value": "This party says that the health system as it currently stands fails Māori as the system does not understand Māori, and is not accountable to Māori. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360ColR",
+     "name": "How",
+     "value": "This party would re-create the Māori Health Authority, and make health services accessible, accountable, and culturally safe to Māori, while shifting the health system's focus to prevention rather than crisis response.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CoqV",
+     "title": "'Health ', undated (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818042407/https://www.maoriparty.org.nz/health"
+    }
+   ],
+   "reference": "POL55066",
+   "statement": "Invest in Māori-health outcomes",
+   "topics": [
+    "health",
+    "te-ao-maori",
+    "te-ao-maori",
+    "te-ao-maori",
+    "health",
+    "health",
+    "health-services",
+    "te-reo-maori-and-culture",
+    "te-tiriti-o-waitangi-and-governance",
+    "wellbeing-and-services",
+    "public-health",
+    "key-policies-health"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cpf9",
+     "name": "Why",
+     "value": "This party says that being removed from their families creates negative social outcomes for Māori children. It says that whānau Māori and Māori wider networks are better suited than the Crown to support children growing up in high-risk environments. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CpkD",
+     "name": "How",
+     "value": "This party would hold the Crown accountable for damage caused by the uplift of children from their families. It would restore whānau authority and invest in whānau-led care.\n  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CppH",
+     "title": "'Mokopuna Māori', undated (accessed 10 August 2026)",
+     "url": "https://web.archive.org/web/20260810030203/https://www.maoriparty.org.nz/mokopuna_m_ori"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CpuL",
+     "title": "'Mokopuna Māori', undated (accessed 15 September 2026)",
+     "url": "https://www.maoriparty.org.nz/mokopuna_m_ori"
+    }
+   ],
+   "reference": "POL55067",
+   "statement": "Prioritise whānau decision making in the care of vulnerable children",
+   "topics": [
+    "community-and-inclusion",
+    "law-justice-and-government",
+    "te-ao-maori",
+    "te-ao-maori",
+    "young-people",
+    "family-justice-and-safety",
+    "te-reo-maori-and-culture",
+    "te-tiriti-o-waitangi-and-governance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cq4T",
+     "name": "Why",
+     "value": "This party says that sports bring belonging, discipline, confidence, and connection, warranting support from government."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Cq9X",
+     "name": "How",
+     "value": "This party would invest in sport initiatives which foster belonging and opportunity, including making sure there are pathways into sports for rangatahi."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CqEb",
+     "title": "'Sports', undated (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818042739/https://www.maoriparty.org.nz/sports"
+    }
+   ],
+   "reference": "POL55068",
+   "statement": "Invest in sports, particularly for young people ",
+   "topics": [
+    "media-culture-and-recreation",
+    "community-and-inclusion",
+    "sports-and-recreation",
+    "young-people"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CrXd",
+     "name": "Why",
+     "value": "This party says that the current justice system disproportionately criminalises and punishes Māori. Therefore, recreating the justice system so it is equitable for all is vital. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Crch",
+     "name": "How",
+     "value": "This party would create a Māori-led justice authority, prevent laws from punishing poverty and survival, and move away from mass imprisonment. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Crhl",
+     "title": "'Justice', undated (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818042919/https://www.maoriparty.org.nz/justice"
+    }
+   ],
+   "reference": "POL55070",
+   "statement": "Move towards restorative justice ",
+   "topics": [
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "te-ao-maori",
+    "te-ao-maori",
+    "civil-justice",
+    "family-justice-and-safety",
+    "criminal-justice",
+    "te-reo-maori-and-culture",
+    "te-tiriti-o-waitangi-and-governance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CsWP",
+     "name": "Why",
+     "value": "This party says that housing is a big driver of poverty and financial hardship in NZ. Housing is too scarce for people, even on Māori/ancestral land."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CsbT",
+     "name": "How",
+     "value": "This party would disincentivise holding rental properties vacant through tax changes, change regulations to allow more building on Māori/ancestral land. It would build and support more public and affordable homes.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CsgX",
+     "title": "'Housing', undated (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818013324/https://www.maoriparty.org.nz/housing"
+    }
+   ],
+   "reference": "POL55071",
+   "statement": "Increase the supply of housing in both the public and private sector",
+   "topics": [
+    "housing",
+    "housing",
+    "housing",
+    "transport-and-infrastructure",
+    "housing-affordability",
+    "social-and-public-housing",
+    "key-policies-housing",
+    "construction"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CtL3",
+     "name": "Why",
+     "value": "This party says that Toi Māori should be supported by the government, as such art is not decoration. It is truth-telling, resistance, healing, identity, and legacy. It tells stories that have historically been silenced by the Crown.  "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CtQ7",
+     "name": "How",
+     "value": "This party would protect Māori cultural rights and expressions. The party would provide additional support for Māori-led arts infrastructure, funding, and pathways as well as Toi Māori and Māori creative industries.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CtVB",
+     "title": "'Toi Māori', undated (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818013537/https://www.maoriparty.org.nz/toi_maori"
+    }
+   ],
+   "reference": "POL55072",
+   "statement": "Support Māori art and creativity ",
+   "topics": [
+    "media-culture-and-recreation",
+    "te-ao-maori",
+    "media-culture-and-recreation",
+    "arts-culture-and-heritage",
+    "te-reo-maori-and-culture",
+    "key-policies-media-culture-and-recreation"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CtfJ",
+     "name": "Why",
+     "value": "This party says that water is the lifeblood of all those who live in New Zealand, yet decisions about it are rarely taken in concord with mana whenua. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CtkN",
+     "name": "How",
+     "value": "This party would assert Māori authority and rights over freshwater, and stop freshwater decisions being made without the go-ahead of iwi and hapū. This will ensure water is protected and its benefits are shared.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CtpR",
+     "title": "'Freshwater Policy', undated (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818043557/https://www.maoriparty.org.nz/freshwater_policy"
+    }
+   ],
+   "reference": "POL55085",
+   "statement": "Assert tino rangatiratanga over freshwater",
+   "topics": [
+    "te-ao-maori",
+    "environment",
+    "environment",
+    "te-ao-maori",
+    "environment",
+    "te-ao-maori",
+    "te-tiriti-o-waitangi-and-governance",
+    "fresh-water-and-pollution",
+    "conservation",
+    "key-policies-te-ao-maori",
+    "key-policies-environment",
+    "land-and-resources"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cvcr",
+     "name": "Why",
+     "value": "This party says that takatāpui Māori should not have to fear discrimination or harm, nor should they be pushed to the margins. Takatāpui Māori should have the space and freedom to be themselves. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Cvhv",
+     "name": "How",
+     "value": "This party would protect Takatāpui Māori's wellbeing, safety and dignity, and ensure public services account for this.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cvmz",
+     "title": "'Takatāpui ', 3 June 2026 (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818043345/https://www.maoriparty.org.nz/takat_pui"
+    }
+   ],
+   "reference": "POL55086",
+   "statement": "Protect takatāpui Māori ",
+   "topics": [
+    "community-and-inclusion",
+    "te-ao-maori",
+    "law-justice-and-government",
+    "community-and-inclusion",
+    "rainbow-community",
+    "te-reo-maori-and-culture",
+    "civil-justice",
+    "key-policies-community-and-inclusion"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cwll",
+     "name": "Why",
+     "value": "This party says that no one should have to choose between food, rent, power, transport or other necessities. The economy should work for the people. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Cwqp",
+     "name": "How",
+     "value": "This party would lift incomes, strengthen welfare, and support cost of living relief efforts, such as reducing transport costs.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cwvt",
+     "title": "'Cost of Living', 3 June 2026 (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818043207/https://www.maoriparty.org.nz/cost_of_living"
+    }
+   ],
+   "reference": "POL55087",
+   "statement": "Reduce the cost of living ",
+   "topics": [
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "transport-and-infrastructure",
+    "housing",
+    "jobs-and-employment",
+    "key-policies-incomes-and-employment",
+    "prices",
+    "public-transport-cycling-and-walking",
+    "housing-affordability"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CxkX",
+     "name": "Why",
+     "value": "This party says that most of Aotearoa's wealth has been extracted from its indigenous people. For Māori to flourish on their own terms, building the Māori economy is vital."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Cxpb",
+     "name": "How",
+     "value": "This party would create funds to support Māori enterprises, for the long-term growth of Māori wealth.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Cxuf",
+     "title": "'Economic development ', undated (accessed 18 August 2026)",
+     "url": "https://web.archive.org/web/20260818043029/https://www.maoriparty.org.nz/economic_development"
+    }
+   ],
+   "reference": "POL55088",
+   "statement": "Support the Māori economy ",
+   "topics": [
+    "economy",
+    "incomes-and-employment",
+    "te-ao-maori",
+    "te-ao-maori",
+    "economic-development-and-industry",
+    "jobs-and-employment",
+    "te-reo-maori-and-culture",
+    "te-tiriti-o-waitangi-and-governance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CyP3",
+     "name": "Why",
+     "value": "This party says that young Māori are regularly criminalised early in their lives, and even once they get out, often end up re-offending. This can be seen as how Māori men make up half the male prison population, while Māori women have one of the highest incarceration rates in the world. This shows that the prison system is failing Māori, and major reform is needed. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CyU7",
+     "name": "How",
+     "value": "This party would abolish prisons by 2040, and replace them with restorative, community-based, tikanga-grounded alternatives. This will reduce harm while addressing the underlying causes of offending, and prevent crime rather than punishing offenders.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CyZB",
+     "title": "'Justice' (PDF), undated (accessed 14 October 2026)",
+     "url": "https://web.archive.org/web/20261013210716/https://drive.google.com/file/d/1PhB4PNA7fE9Ipj5SXhRRCrmgywM-MhAx/view"
+    }
+   ],
+   "reference": "POL55283",
+   "statement": "Abolish prisons by 2040",
+   "topics": [
+    "law-justice-and-government",
+    "te-ao-maori",
+    "criminal-justice",
+    "te-reo-maori-and-culture"
+   ]
+  }
+ ],
+ "partyList": [
+  {
+   "attributes": [],
+   "electorateElectionSlug": "te-tai-tokerau-electorate",
+   "firstName": "Aperahama",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/685582576994129ce36ee9aa3187c8aa10b60dd0-1024x1024.jpg",
+   "lastName": "Edwards",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Te Tai Tokerau electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "te-pati-maori"
+   },
+   "slug": "aperahama-edwards"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "hauraki-waikato-electorate",
+   "firstName": "Hana-Rawhiti",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/1fab6c5335eca7ba3c4b400cc10dedf38e75260d-1024x1024.jpg",
+   "lastName": "Maipi-Clarke",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Hauraki-Waikato electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "te-pati-maori"
+   },
+   "slug": "hana-rawhiti-maipi-clarke"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "waiariki-electorate",
+   "firstName": "Rawiri",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/3dc9a22391695e7f36b33bd6932ae414b8c6bc3d-1024x1024.jpg",
+   "lastName": "Waititi",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Waiariki electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "te-pati-maori"
+   },
+   "slug": "rawiri-waititi"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "tamaki-makaurau-electorate",
+   "firstName": "Oriini",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/11bb1c165e614177ee4603b57d0d9520c70fec70-1024x1024.jpg",
+   "lastName": "Kaipara",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Tāmaki Makaurau electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "te-pati-maori"
+   },
+   "slug": "oriini-kaipara"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "te-tai-hauauru-electorate",
+   "firstName": "Debbie",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/259b391b0159a301b179f53a4b785990eaf5f9c1-1024x1024.jpg",
+   "lastName": "Ngarewa-Packer",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Te Tai Hauāuru electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "te-pati-maori"
+   },
+   "slug": "debbie-ngarewa-packer"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "ikaroa-rawhiti-electorate",
+   "firstName": "Haley",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/3be00f1a0be39d7a7e434f2dabb9c303844af94a-1024x1024.jpg",
+   "lastName": "Maxwell",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Ikaroa-Rāwhiti electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "te-pati-maori"
+   },
+   "slug": "haley-maxwell"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEle9C",
+     "name": "Before politics",
+     "value": "Ministry of Education"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEleCA",
+     "name": "Residence",
+     "value": "Invercargill"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEleF8",
+     "name": "Age",
+     "value": "47"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEleI6",
+     "name": "Public email",
+     "value": "lisamarie@maoriparty.org.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEleL4",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/share/19goqFmBkQ/"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEleO2",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/lisa_marie_murch_te_tai_tonga?stkn=NTVuMDl1djhiaTFi"
+    }
+   ],
+   "electorateElectionSlug": "te-tai-tonga-electorate",
+   "firstName": "Lisa Marie",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/166fd8b75e68a8da1d43ea1d8058142ddd6127eb-1024x1024.jpg",
+   "lastName": "Murch",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Te Tai Tonga electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "te-pati-maori"
+   },
+   "slug": "lisa-marie-murch"
+  }
+ ]
+}

@@ -1,0 +1,197 @@
+{
+ "party": {
+  "attributes": [
+   {
+    "_key": "5r5sFjSBWMIetVQk4fKJCa",
+    "icon": null,
+    "name": "Year founded",
+    "value": "2011"
+   },
+   {
+    "_key": "5r5sFjSBWMIetVQk4fKJHo",
+    "icon": null,
+    "name": "Times in government",
+    "value": "0"
+   },
+   {
+    "_key": "5r5sFjSBWMIetVQk4fKJN2",
+    "icon": null,
+    "name": "Current MPs",
+    "value": "0"
+   },
+   {
+    "_key": "5r5sFjSBWMIetVQk4fKJSG",
+    "icon": null,
+    "name": "Number of electorates held",
+    "value": "0"
+   },
+   {
+    "_key": "5r5sFjSBWMIetVQk4fKJXU",
+    "icon": null,
+    "name": "2025 donations",
+    "value": " $9,519.73"
+   },
+   {
+    "_key": "5r5sFjSBWMIetVQk4fKJci",
+    "icon": null,
+    "name": "2026 polling average",
+    "value": "<0.5%"
+   }
+  ],
+  "color": "#283380",
+  "description": "The Conservative Party is a right-wing party. Its platform consists of reducing the size of government, and opposing abortion, gender diversity and euthanasia. Founded by businessman Colin Craig in 2011, the party has competed reliably in elections, but has never reached the 5 percent threshold for election. It is presently led by Helen Houghton who has a background in primary school teaching, and charity Women's Open Home Charitable Trust. ",
+  "image": "https://cdn.sanity.io/images/ubdwo62y/production/11bc809176e9f5957700368b0d260f54af488e80-800x800.png",
+  "name": "Conservative Party NZ",
+  "slug": "conservative-party-nz"
+ },
+ "policies": [],
+ "partyList": [
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb36I0LBv",
+     "name": "Before politics",
+     "value": "A school teacher for 16 years"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36I0LGz",
+     "name": "Residence",
+     "value": "Burwood"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36I0LM3",
+     "name": "Age",
+     "value": "59"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36I0LR7",
+     "name": "Public email",
+     "value": "helen.houghton@conservatives.nz"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36I0LWB",
+     "name": "Website",
+     "value": "https://conservatives.org.nz/"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36I0LbF",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/ConservativePartyNZ"
+    }
+   ],
+   "electorateElectionSlug": "christchurch-east-electorate",
+   "firstName": "Helen",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/a59a2bffbcf8d116e7ef479dbe6075cf1008fac3-1024x1024.jpg",
+   "lastName": "Houghton",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Christchurch East electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "conservative-party-nz"
+   },
+   "slug": "helen-houghton"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "banks-peninsula-electorate",
+   "firstName": "AmyLorraine",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/34f691e083c41c8d8e34e641fcc5288eb6de1cd9-1024x1024.jpg",
+   "lastName": "TURNER",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Banks Peninsula electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "conservative-party-nz"
+   },
+   "slug": "amylorraine-turner"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwke2jQx",
+     "name": "Before politics",
+     "value": "Clinical Education Manager"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwke2jSd",
+     "name": "Residence",
+     "value": "Northcote"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwke2jUJ",
+     "name": "Public email",
+     "value": "marie@conservatives.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwke2jVz",
+     "name": "Website",
+     "value": "https://conservatives.org.nz/"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwke2jXf",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/ConservativePartyNZ/"
+    }
+   ],
+   "electorateElectionSlug": "northcote-electorate",
+   "firstName": "Marie",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/0dff745e1b006e71c4bd091eb7baae1d0209c7f3-1024x1024.jpg",
+   "lastName": "Drury",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Northcote electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "conservative-party-nz"
+   },
+   "slug": "marie-drury"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Mel",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/712cc588e3c4904904bc6e9253b036bb678ab9eb-1024x1024.jpg",
+   "lastName": "Libre",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "conservative-party-nz"
+   },
+   "slug": "mel-libre"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "rangitata-electorate",
+   "firstName": "Karl",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/c08421d7519df8574d90671668f7008693a34734-1024x1024.jpg",
+   "lastName": "Thomas",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Rangitata electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "conservative-party-nz"
+   },
+   "slug": "karl-thomas"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "northland-electorate",
+   "firstName": "Douglas Robert",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/596e36864577112a1c7f4a8da6d0e3458b80ba17-1024x1024.jpg",
+   "lastName": "LYELL",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Northland electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "conservative-party-nz"
+   },
+   "slug": "douglas-robert-lyell"
+  }
+ ]
+}

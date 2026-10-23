@@ -1,0 +1,95 @@
+{
+ "party": {
+  "attributes": [
+   {
+    "_key": "AUgtWy4yJLHv0xzbBtO0Fq",
+    "icon": null,
+    "name": "Year founded",
+    "value": "2026"
+   },
+   {
+    "_key": "AUgtWy4yJLHv0xzbBtO0JO",
+    "icon": null,
+    "name": "Times in government",
+    "value": "0"
+   },
+   {
+    "_key": "AUgtWy4yJLHv0xzbBtO0Mw",
+    "icon": null,
+    "name": "Current MPs",
+    "value": "1"
+   },
+   {
+    "_key": "AUgtWy4yJLHv0xzbBtO0QU",
+    "icon": null,
+    "name": "Number of electorates held",
+    "value": "1"
+   },
+   {
+    "_key": "AUgtWy4yJLHv0xzbBtO0U2",
+    "icon": null,
+    "name": "2025 donations",
+    "value": "< $20,000"
+   }
+  ],
+  "color": "",
+  "description": "The Te Tai Tokerau Party is an electorate-focused indigenous rights party. It was founded in 2026 to support the candidacy of former Te Pati Māori and current MP Mariameno Kapa-Kingi. Kapa-Kingi was suspended by her party following accusations of mismanaging funds. She successfully challenged that suspension in the High Court. With a background in Iwi-run social services, Kapa-Kingi was most prominently the Te Pati Māori spokesperson for housing, children, and Oranga Tamariki.  ",
+  "image": "https://cdn.sanity.io/images/ubdwo62y/production/348fc137917b9d577669015668099d99216cdecd-800x800.png",
+  "name": "Te Tai Tokerau Party",
+  "slug": "te-tai-tokerau-party"
+ },
+ "policies": [],
+ "partyList": [
+  {
+   "attributes": [
+    {
+     "_key": "QRM8yCNleIzHnxgUycy0oB",
+     "name": "Before politics",
+     "value": "CEO of Te Aupōuri"
+    },
+    {
+     "_key": "QRM8yCNleIzHnxgUycy0qa",
+     "name": "Residence",
+     "value": "Onerahi/Te Tai Tokerau"
+    },
+    {
+     "_key": "QRM8yCNleIzHnxgUycy0sz",
+     "name": "Age",
+     "value": "65"
+    },
+    {
+     "_key": "QRM8yCNleIzHnxgUycy0vO",
+     "name": "Public email",
+     "value": "mariameno.kapa-kingi@parliament.govt.nz"
+    },
+    {
+     "_key": "QRM8yCNleIzHnxgUycy0xn",
+     "name": "Website",
+     "value": "https://tetaitokerauparty.org.nz/"
+    },
+    {
+     "_key": "QRM8yCNleIzHnxgUycy10C",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/KapaKingi/"
+    },
+    {
+     "_key": "QRM8yCNleIzHnxgUycy12b",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/mariameno.kapakingi/"
+    }
+   ],
+   "electorateElectionSlug": "te-tai-tokerau-electorate",
+   "firstName": "Mariameno",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/80f7110d40fe7d6965a377e2e8084ffedd4db366-1664x1664.jpg",
+   "lastName": "Kapa-Kingi",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Te Tai Tokerau electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "te-tai-tokerau-party"
+   },
+   "slug": "mariameno-kapa-kingi"
+  }
+ ]
+}

@@ -1,0 +1,342 @@
+{
+ "party": {
+  "attributes": [
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyUW",
+    "icon": null,
+    "name": "Year founded",
+    "value": "2023"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyVC",
+    "icon": null,
+    "name": "Times in government",
+    "value": "0"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyVs",
+    "icon": null,
+    "name": "Current MPs",
+    "value": "0"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyWY",
+    "icon": null,
+    "name": "Number of electorates held",
+    "value": "0"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyXE",
+    "icon": null,
+    "name": "2025 donations",
+    "value": "< $20,000"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyXu",
+    "icon": null,
+    "name": "2026 polling average",
+    "value": "<0.5%"
+   }
+  ],
+  "color": "#FEB82C",
+  "description": "The NZ Loyal Party is a far-right party. Founded in 2023 by antivax activist Liz Gunn, the party’s program revolves around opposition to ‘globalist’ institutions such as the United Nations, Banks, and the World Economic Forum. It opposes both immigration and taxation. The party is currently led by far-right activist Kelvyn Alp. He has a background in conspiracy media, an armed militia that has targeted bankers, and has been involved in legal battles regarding the distribution of videos from the Christchurch Mosque attacks. It has never won a seat in parliament.",
+  "image": "https://cdn.sanity.io/images/ubdwo62y/production/0ccf1c180a2d26eb1b4f7c25e1e3b510c3621d20-800x800.png",
+  "name": "New Zealand Loyal",
+  "slug": "new-zealand-loyal"
+ },
+ "policies": [],
+ "partyList": [
+  {
+   "attributes": [],
+   "electorateElectionSlug": "otahuhu-electorate",
+   "firstName": "John",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/28c797c2a99647d4e365a40b29dcf179ca9c0298-1024x1024.jpg",
+   "lastName": "Alcock",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the ",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "john-alcock"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "banks-peninsula-electorate",
+   "firstName": "Lesley",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/cb3e058ce4c5f76741a499b3358dfe5f11230173-1024x1024.jpg",
+   "lastName": "Sales",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Banks Peninsula electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "lesley-sales"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "taupo-electorate",
+   "firstName": "Gordon",
+   "image": null,
+   "lastName": "Wilson",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Taupō electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "gordon-wilson"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "whangaparaoa-electorate",
+   "firstName": "Brenton Bruce",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/a5ef975eac2b93598dc52c9b86686d5573337585-1024x1024.jpg",
+   "lastName": "FAITHFULL",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Whangaparāoa electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "brenton-bruce-faithfull"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "4WTYJK4V2SLnVrQiDll7L7",
+     "name": "Before politics",
+     "value": "Security Consultant"
+    },
+    {
+     "_key": "4WTYJK4V2SLnVrQiDll7O4",
+     "name": "Residence",
+     "value": "Mangere"
+    },
+    {
+     "_key": "4WTYJK4V2SLnVrQiDll7R1",
+     "name": "Age",
+     "value": "55"
+    },
+    {
+     "_key": "4WTYJK4V2SLnVrQiDll7Ty",
+     "name": "Public email",
+     "value": "leader@nzloyal.com"
+    },
+    {
+     "_key": "4WTYJK4V2SLnVrQiDll7Wv",
+     "name": "Website",
+     "value": "nzloyal.com"
+    }
+   ],
+   "electorateElectionSlug": "mangere-electorate",
+   "firstName": "Kelvyn",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/f50461eb971697ca059d74d27ba1b4ee32c8f961-1024x1024.jpg",
+   "lastName": "Alp",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Māngere electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "kelvyn-alp"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "christchurch-east-electorate",
+   "firstName": "Glenn",
+   "image": null,
+   "lastName": "Thompson",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Christchurch East electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "glenn-thompson"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "nelson-electorate",
+   "firstName": "Julian",
+   "image": null,
+   "lastName": "Crawford",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Nelson electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "julian-crawford"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "zYyI07bABimmDu8yy5pBTV",
+     "name": "Before politics",
+     "value": "Businessman"
+    },
+    {
+     "_key": "zYyI07bABimmDu8yy5pBY9",
+     "name": "Residence",
+     "value": "Murchison"
+    },
+    {
+     "_key": "zYyI07bABimmDu8yy5pBcn",
+     "name": "Age",
+     "value": "59"
+    },
+    {
+     "_key": "zYyI07bABimmDu8yy5pBhR",
+     "name": "Public email",
+     "value": "alex.hislop@nzloyal.com"
+    },
+    {
+     "_key": "zYyI07bABimmDu8yy5pBm5",
+     "name": "Website",
+     "value": "https://www.nzloyal.com"
+    }
+   ],
+   "electorateElectionSlug": "west-coast-tasman-electorate",
+   "firstName": "Alexander",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/b7d1ec8e3f567e00f891fe086a927e54e7207b96-1024x1024.jpg",
+   "lastName": "Hislop",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the West Coast-Tasman electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "alexander-hislop"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "te-tai-tonga-electorate",
+   "firstName": "Christine",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/523b15439dc491c3debb79eb0a2db14253ec2b22-1024x1024.jpg",
+   "lastName": "Fisher",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Te Tai Tonga electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "christine-fisher"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "east-coast-bays-electorate",
+   "firstName": "Allan",
+   "image": null,
+   "lastName": "Lind",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the East Coast Bays electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "allan-lind"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "mt-maunganui-electorate",
+   "firstName": "Greer",
+   "image": null,
+   "lastName": "Young",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Mt Maunganui electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "greer-young"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "northcote-electorate",
+   "firstName": "Barak",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/59d20c9f684feed7425328c4d8a662c1c118ba0b-1024x1024.jpg",
+   "lastName": "Ford",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Northcote electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "barak-ford"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "rangitikei-electorate",
+   "firstName": "Jason Michael",
+   "image": null,
+   "lastName": "Smith",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Rangitīkei electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "jason-michael-smith"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "whangarei-electorate",
+   "firstName": "Collin",
+   "image": null,
+   "lastName": "Blackman",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Whangārei electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "collin-blackman"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "takanini-electorate",
+   "firstName": "Paul Nooroa",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/5dd0131b25547dcf3ac3bf28894039a57b933ec9-1024x1024.jpg",
+   "lastName": "Teio",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Takanini electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "paul-nooroa-teio"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "northland-electorate",
+   "firstName": "Pete",
+   "image": null,
+   "lastName": "Verhoeven",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Northland electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "new-zealand-loyal"
+   },
+   "slug": "pete-verhoeven"
+  }
+ ]
+}

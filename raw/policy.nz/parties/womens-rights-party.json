@@ -1,0 +1,245 @@
+{
+ "party": {
+  "attributes": [
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyi4",
+    "icon": null,
+    "name": "Year founded",
+    "value": "2023"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyik",
+    "icon": null,
+    "name": "Times in government",
+    "value": "0"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyjQ",
+    "icon": null,
+    "name": "Current MPs",
+    "value": "0"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUyk6",
+    "icon": null,
+    "name": "Number of electorates held",
+    "value": "0"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUykm",
+    "icon": null,
+    "name": "2025 donations",
+    "value": "$9,650.50"
+   },
+   {
+    "_key": "v1Id9wR1uHYCmCW9RaUylS",
+    "icon": null,
+    "name": "2026 polling average",
+    "value": "<0.5%"
+   }
+  ],
+  "color": "#881B95",
+  "description": "The Women’s Rights Party is a trans-critical feminist political party. The party program emphasises that women’s rights are to be based on binary sex as opposed to gender identity. The party co-leaders are Jill Ovens and Dawn Trenberth. Ovens was a trade unionist and former president of the Alliance Party, while Trenberth, who had been a member of Labour, was also a trade unionist. The pair left the Labour Party in 2023, feeling alienated by increased hostility to trans-critical feminist perspectives. The Women’s Right’s Party was founded in 2023 and has never won a seat or entered parliament. In 2023, it received 0.08% percent, or 2,513 votes.",
+  "image": "https://cdn.sanity.io/images/ubdwo62y/production/a72b9d9af7bc2ac57a397d1d4b7569a6fca38045-800x800.png",
+  "name": "Women's Rights Party",
+  "slug": "womens-rights-party"
+ },
+ "policies": [],
+ "partyList": [
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Jill",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/78e84b345d2b4f2e8be95e73564a756eebfd96d6-1024x1024.jpg",
+   "lastName": "Ovens",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "01",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "jill-ovens"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Yvonne",
+   "image": null,
+   "lastName": "Van Dongen",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "02",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "yvonne-van-dongen"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Hilary",
+   "image": null,
+   "lastName": "Oxley",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "03",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "hilary-oxley"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Ann",
+   "image": null,
+   "lastName": "Galloway",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "04",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "ann-galloway"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Prue",
+   "image": null,
+   "lastName": "Hyman",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "05",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "prue-hyman"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Kerry",
+   "image": null,
+   "lastName": "Neilson",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "06",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "kerry-neilson"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Sally",
+   "image": null,
+   "lastName": "Warren",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "07",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "sally-warren"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Francesca",
+   "image": null,
+   "lastName": "Holloway",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "08",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "francesca-holloway"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Sue",
+   "image": null,
+   "lastName": "Hoskins",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "09",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "sue-hoskins"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Caroline",
+   "image": null,
+   "lastName": "Jamieson",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "10",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "caroline-jamieson"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Sue",
+   "image": null,
+   "lastName": "Carnegie-Harding",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "11",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "sue-carnegie-harding"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Louise",
+   "image": null,
+   "lastName": "Burnside",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "12",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "louise-burnside"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": null,
+   "firstName": "Kathleen",
+   "image": null,
+   "lastName": "Lauderdale",
+   "partyAffiliation": {
+    "candidacyDescription": "List only candidate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "13",
+    "partySlug": "womens-rights-party"
+   },
+   "slug": "kathleen-lauderdale"
+  }
+ ]
+}

@@ -1,0 +1,4157 @@
+{
+ "party": {
+  "attributes": [
+   {
+    "_key": "MBeO7ojrohBwl7F7zKIgig",
+    "icon": null,
+    "name": "Year founded",
+    "value": "2016"
+   },
+   {
+    "_key": "MBeO7ojrohBwl7F7zKIglW",
+    "icon": null,
+    "name": "Times in government",
+    "value": "0"
+   },
+   {
+    "_key": "MBeO7ojrohBwl7F7zKIgoM",
+    "icon": null,
+    "name": "Current MPs",
+    "value": "0"
+   },
+   {
+    "_key": "MBeO7ojrohBwl7F7zKIgrC",
+    "icon": null,
+    "name": "Number of electorates held",
+    "value": "0"
+   },
+   {
+    "_key": "MBeO7ojrohBwl7F7zKIgu2",
+    "icon": null,
+    "name": "2025 donations",
+    "value": "$179,401.24"
+   },
+   {
+    "_key": "MBeO7ojrohBwl7F7zKIgws",
+    "icon": null,
+    "name": "2026 polling average",
+    "value": "3.4%"
+   }
+  ],
+  "color": "#4BBAAC",
+  "description": "Opportunity, formerly known as the Opportunity Party, is a radical centrist party. Its program has emphasised a combination of economic efficiency, environmental concerns and well-being. Founded in 2016 by businessman and philanthropist Gareth Morgen with the intention of having a party that can work with both sides based on empirical evidence. It has yet to enter parliament, and its best election result was in 2017 when it received 2.4% percent or 63,261 votes. Opportunity is led by Quilae Wong, whose background is sustainable business consulting at KPMG. ",
+  "image": "https://cdn.sanity.io/images/ubdwo62y/production/3ce1c85a60ee873c8b6b06de3de601f153645bb8-800x800.png",
+  "name": "Opportunity Party",
+  "slug": "opportunity-party"
+ },
+ "policies": [
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BL73",
+     "name": "Why",
+     "value": "This party says that the $100,000 cap introduced on charitable donations in Budget 2026 will limit donations to the charitable sector and put crucial giving at risk. The cap will cost the public more through increased demand on public services. Removing the cap would also help the underfunded arts sector. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BLC7",
+     "name": "How",
+     "value": "This party would remove the $100,000 cap on charitable donations and instruct the Law Commission to carry out a review of regulations in the charity sector in NZ.   At the same time, a comprehensive review and reform of the charitable sector is needed to mitigate concerns about donor-controlled charities and people receiving tax benefits without providing meaningful charitable services. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BLHB",
+     "title": "'Charitable Giving Tax Credit Cap', 19 June 2026 (accessed 06 August 2026)",
+     "url": "https://web.archive.org/web/20260806041344/https://www.opportunity.org.nz/charitable_giving_tax_credit_cap"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BLMF",
+     "title": "'Charitable Giving Tax Cap', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819052504/https://www.opportunity.org.nz/charitable_giving_tax_credit_cap"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BLRJ",
+     "title": "'Arts and culture statement', 19 October 2026 (accessed 20 October 2026)",
+     "url": "https://web.archive.org/web/20261019211037/https://www.opportunity.org.nz/arts_and_culture_statement"
+    }
+   ],
+   "reference": "POL54652",
+   "statement": "Repeal the cap on donations eligible for a 33% tax credit",
+   "topics": [
+    "incomes-and-employment",
+    "tax-and-income-support"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BNEj",
+     "name": "Why",
+     "value": "This party says New Zealand has solar, wind, hydro and geothermal resources but continues to rely too heavily on fossil fuels. It says increasing renewable energy and promoting the electrification household and industry electrification would have many benefits such as increased GDP, lower carbon emissions, smaller power bills and 5,000 new jobs over the next 30 years."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BNJn",
+     "name": "How",
+     "value": "This party would incentivise the electrification of industries and housing. Low-interest loans and funding would be made available for households, community energy projects and public transport.  This would include an expansion of EECA’s Warmer Kiwi Homes subsidies ($80m annually) for household solar and electricity initiatives, and low-interest electrification loans via the national Ratepayer Assistance Scheme. \n\n"
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BNOr",
+     "title": "'Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BNTv",
+     "title": "'Climate Action', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042618/https://www.opportunity.org.nz/climate_action"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BNYz",
+     "title": "'Industry Energy Resilience Fund', 8 September 2026 (accessed 09 September 2026)",
+     "url": "https://web.archive.org/web/20260909023726/https://www.opportunity.org.nz/industry_energy_resilience_fund"
+    }
+   ],
+   "reference": "POL54770",
+   "statement": "Increase incentives to electrify houses, industries and transport",
+   "topics": [
+    "transport-and-infrastructure",
+    "transport-and-infrastructure",
+    "economy",
+    "incomes-and-employment",
+    "transport-and-infrastructure",
+    "environment",
+    "housing",
+    "transport-and-infrastructure",
+    "environment",
+    "energy",
+    "infrastructure-funding-and-planning",
+    "economic-development-and-industry",
+    "prices",
+    "public-transport-cycling-and-walking",
+    "emissions-reduction",
+    "housing-quality",
+    "key-policies-transport-and-infrastructure",
+    "key-policies-environment"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BONd",
+     "name": "Why",
+     "value": "This party says that our seas are hitting their ecological and economic limits. Fish species are being depleted under the current quota management system, and critical habitats are unprotected. Just 0.5% of NZ’s extensive ocean territory is protected as a marine reserve. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BOSh",
+     "name": "How",
+     "value": "This party would change the fisheries management system and make it more transparent. This includes the phasing out bottom trawling in all inshore areas by 2030 and installing cameras on commercial fishing boats. It would also move away from single-species quotas towards an ecosystem-based approach, and raise the baseline for sustainable fish stocks. \nIn the short-term, the party says its wider oceans policy would cost no more than $100m a year, with some costs recovered from the commercial fishing industry. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BOXl",
+     "title": "'Healthy Oceans', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260728055154/https://www.opportunity.org.nz/healthy-oceans"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BOcp",
+     "title": "'Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819043420/https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BOht",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54776",
+   "statement": "Phase out inshore bottom-trawling by 2030 and make fishing more sustainable",
+   "topics": [
+    "environment",
+    "economy",
+    "environment",
+    "environment",
+    "oceans",
+    "fisheries",
+    "conservation",
+    "key-policies-environment"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BPlj",
+     "name": "Why",
+     "value": "This party says that the current tax system is outdated and does not address the cost-of-living crisis, unaffordable housing, and the increasing pressure of the superannuation system. Under its tax plan, this party says incomes will increase for 70 percent of New Zealanders, and another 20% will see no change."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BPqn",
+     "name": "How",
+     "value": "An annual land value tax of 1.75 percent on urban land - and 0.5% on rural land - would be part of a wider tax reset aimed at incomes, house prices and retirement savings. The land value tax would lower house prices an estimated 10-15 percent and discourage land-banking and large property portfolios. There would be potential exemptions for farmers, retirees and other \"land rich, cash poor\" land owners. \nThis tax would fund a universal citizen's income, with an extra $4bn for other uses. The tax system would also be simplified, with the number of tax brackets reduced to three - 28 percent, 34 percent and 39 percent"
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BOs1",
+     "title": "'Tax Reset - Opportunity Party', undated (accessed 06 August 2026)",
+     "url": "https://web.archive.org/save/https://www.opportunity.org.nz/tax-reset"
+    }
+   ],
+   "reference": "POL54777",
+   "statement": "Introduce a land value tax of 1.75 percent",
+   "topics": [
+    "incomes-and-employment",
+    "housing",
+    "economy",
+    "housing",
+    "economy",
+    "tax-and-income-support",
+    "housing-affordability",
+    "government-revenue-and-finance",
+    "key-policies-housing",
+    "key-policies-economy"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BQLB",
+     "name": "Why",
+     "value": "This party says that trust in government is under pressure, and political integrity is important. It agrees with integrity groups that there needs to be more transparency around politics, lobbying and big party donations, if trust is to be rebuilt."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BQQF",
+     "name": "How",
+     "value": "This party would regulate lobbying, including a one-year cooling off period for ministers becoming lobbyists, and a public register for lobbying groups. This would be part of a fuller political integrity package which would cost about $52m a year."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BQVJ",
+     "title": "'Clean Up Politics', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819043010/https://www.opportunity.org.nz/clean_up_politics"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BQaN",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54778",
+   "statement": "Create a lobbying register",
+   "topics": [
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "parliament-and-democracy",
+    "public-sector"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BQkV",
+     "name": "Why",
+     "value": "This party says that economic growth is slowing and new ideas are needed in the areas of science and technology."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BQpZ",
+     "name": "How",
+     "value": "This party would increase innovation by lifting science funding to 2 percent of GDP. It would also turn polytechs into regional innovation hubs, offer incentives to invest in technology and beef up proven accelerator programmes. The wider innovation plan would cost an additional $1.33bn but create $4bn revenue annually."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BQud",
+     "title": "'Breakthrough Economy', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819043140/https://www.opportunity.org.nz/breakthrough-economy"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BQzh",
+     "title": "'Breakthrough Economy Overview' (PDF), 1 July 2026 (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260729012044/https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf"
+    }
+   ],
+   "reference": "POL54779",
+   "statement": "Increase innovation by lifting science funding to 2 percent of GDP",
+   "topics": [
+    "economy",
+    "economy",
+    "economy",
+    "business-support",
+    "economic-development-and-industry",
+    "government-revenue-and-finance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BRyT",
+     "name": "Why",
+     "value": "This party says that it will oppose any plans to abolish the Climate Change Commission and would use its influence in any National-led government to protect independent climate oversight. It says the commission's role in measuring NZ's greenhouse gas emissions progress is vital, even if politically inconvenient. It opposes calls for this work to be taken over by the Ministry for Cities, Environment, Regions and Transport (MCERT), which also measures greenhouse gas inventory. \n"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BS3X",
+     "name": "How",
+     "value": "This party would keep the Climate Change Commission and ensure that budgets are set to maintain accountability. This is in response to the Act Party's claim that the commission's costs are excessive and that it duplicates MCERT's work.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BS8b",
+     "title": "'Opportunity will defend Climate Change Commission from ACT', 26 August 2026 (accessed 28 August 2026)",
+     "url": "https://web.archive.org/web/20260828091303/https://www.opportunity.org.nz/opportunity_will_defend_climate_change_commission_in_national_led_government"
+    }
+   ],
+   "reference": "POL54782",
+   "statement": "Retain the Climate Change Commission ",
+   "topics": [
+    "environment",
+    "environment",
+    "climate-adaptation",
+    "emissions-reduction"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BSIj",
+     "name": "Why",
+     "value": "This party says that it is concerned about the effects of social media on those under 16, and supports a discussion on whether to impose a ban. However, it adds that an age restriction is not a substitute for stronger obligations on social media companies to address digital harm. \n"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BSNn",
+     "name": "How",
+     "value": "This party would support National’s online safety bill at first reading so it can be properly tested at select committee. It will wait for the select committee to examine the evidence before taking a position on the effectiveness of a social media ban for young people.\n  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BSSr",
+     "title": "'Opportunity to support online safety bill to select committee', 25 August 2026 (accessed 28 August 2026)",
+     "url": "https://web.archive.org/web/20260828093652/https://www.opportunity.org.nz/opportunity_to_support_online_safety_bill_to_select_committee"
+    }
+   ],
+   "reference": "POL54783",
+   "statement": "Support the online safety bill on a potential under-16 social media ban to select committee",
+   "topics": [
+    "community-and-inclusion",
+    "health",
+    "economy",
+    "community-and-inclusion",
+    "education",
+    "young-people",
+    "mental-health",
+    "internet-and-digital-technologies",
+    "key-policies-community-and-inclusion",
+    "key-policies-education"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BTRd",
+     "name": "Why",
+     "value": "This party says that Parliament has become gridlocked on many issues, at the expense of courage and long-term thinking. Political pendulum swings have resulted in projects being cancelled and reforms repealed. Citizens' assemblies, representative groups of ordinary people looking for consensus, would be backed by an independent parliamentary commissioner to amplify their decisions.\n"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BTWh",
+     "name": "How",
+     "value": "This party would select, at random, groups of ordinary people who would serve for a year. The number of people would mirror the number of MPs. They would be compensated for their time and listen to experts, organisations and affected parties on topics that politicians have struggled to find consensus on. The assemblies would work to find common ground and set the policy direction for the politicians to respond to. \nThis policy could cost $10-$15m a year, depending on how many assemblies are held."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BTbl",
+     "title": "'Citizens Voice Policy ' (PDF), undated (accessed 07 August 2026)",
+     "url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/citizens-voice-policy.pdf"
+    }
+   ],
+   "reference": "POL54784",
+   "statement": "Establish citizens' assemblies for major decisions",
+   "topics": [
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "parliament-and-democracy",
+    "key-policies-law-justice-and-government"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BUkf",
+     "name": "Why",
+     "value": "This party says that short-term political cycles have led to wastage and a lack of planning for long-term infrastructure.  It notes New Zealand compares badly against most OECD countries for maintaining its existing assets. Te Waihanga, the Infrastructure Commission, could be given a greater role to ensure that major projects continue between governments. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BUpj",
+     "name": "How",
+     "value": "This party would lock into law the 30-year National Infrastructure Plan published by Te Waihanga, which would also be put in charge of the funding and delivery of projects. Major projects, where the government is investing over $250m, would require a bill through Parliament to cancel. This policy would cost around $27 million annually for the enhanced infrastructure commission and ties in with a $150m free public transport policy and a $60bn infrastructure capital fund."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BUun",
+     "title": "'Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811031858/https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf"
+    }
+   ],
+   "reference": "POL54785",
+   "statement": "Enforce and fund a 30-year infrastructure plan",
+   "topics": [
+    "economy",
+    "economy",
+    "transport-and-infrastructure",
+    "transport-and-infrastructure",
+    "government-revenue-and-finance",
+    "economic-development-and-industry",
+    "infrastructure-funding-and-planning",
+    "public-transport-cycling-and-walking"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BVjR",
+     "name": "Why",
+     "value": "This party says that the numbers stack up on universal free-to-ride public transport. This would provide immediate relief in terms of fuel demand and the cost of living, less traffic and increased productivity. More people taking public transport would ease congestion on our roads."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BVoV",
+     "name": "How",
+     "value": "This party would make public transport universally free. It notes that the government already funds 90 percent of the cost of public transport from taxes and rates - fares only cover about 10 percent of operating costs. By scrapping ticketing systems, free public transport has an estimated net cost of about $150m per year.    "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BVtZ",
+     "title": "'Free Public Transport', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819051847/https://www.opportunity.org.nz/free_public_transport"
+    }
+   ],
+   "reference": "POL54786",
+   "statement": "Make public transport free",
+   "topics": [
+    "transport-and-infrastructure",
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "transport-and-infrastructure",
+    "public-transport-cycling-and-walking",
+    "prices",
+    "key-policies-incomes-and-employment",
+    "key-policies-transport-and-infrastructure"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BW3h",
+     "name": "Why",
+     "value": "This party says that as the climate changes, we need to act urgently to mitigate and adapt to its negative impacts. The focus should be on preventing further heating, adapting to climate disruption and pushing for greater global efforts."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BW8l",
+     "name": "How",
+     "value": "This party would focus on helping sectors to cut emissions and adapt to change. It would offer incentives to improve air quality and reward efforts to sequester carbon with biodiversity alternatives to pine trees. It would also support local government in finding nature-based solutions to flooding and heat stress; this policy would cost $5b. In addition, there would be subsidies for households and businesses to go electric or solar as part of its energy policy."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BWDp",
+     "title": "'Climate Action', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042618/https://www.opportunity.org.nz/climate_action"
+    }
+   ],
+   "reference": "POL54791",
+   "statement": "Support sectors and councils with climate change action",
+   "topics": [
+    "environment",
+    "environment",
+    "law-justice-and-government",
+    "economy",
+    "climate-adaptation",
+    "emissions-reduction",
+    "local-government",
+    "regional-development"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BY1F",
+     "name": "Why",
+     "value": "This party says that current economic models ignore the health of the ecosystems they rely on. This party believes native forests, wetlands and living soil should be funded as infrastructure. This means setting bottom lines to preserve rivers and protect biodiversity, and also supporting businesses that work to restore nature."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BY6J",
+     "name": "How",
+     "value": "This party would improve water quality through stronger regulation and independent oversight. Water quality would also be impacted by increased conservation and biosecurity funding, with particular focus on wetlands, native reforestation and other biodiversity-rich projects.\n  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BYBN",
+     "title": "'Healthy Land', undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811032155/https://www.opportunity.org.nz/healthy_land"
+    }
+   ],
+   "reference": "POL54797",
+   "statement": "Tighten rules on water quality",
+   "topics": [
+    "environment",
+    "environment",
+    "economy",
+    "te-ao-maori",
+    "te-ao-maori",
+    "te-ao-maori",
+    "fresh-water-and-pollution",
+    "conservation",
+    "business-support",
+    "te-tiriti-o-waitangi-and-governance",
+    "land-and-resources",
+    "key-policies-te-ao-maori"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BYpt",
+     "name": "Why",
+     "value": "This party says NZ's native forest, wetlands and living soil should be funded like the infrastructure they are. That includes supporting purpose-led businesses working to restore and protect nature. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BYux",
+     "name": "How",
+     "value": "This party would design a circular plastics economy aligned to the New Plastic Economy Roadmap. This plan, developed by the plastics industry and Scion, addresses the creation, use and reuse of plastics, treating it as a resource rather than waste.\n  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BZ01",
+     "title": "'Healthy Land', undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811032155/https://www.opportunity.org.nz/healthy_land"
+    }
+   ],
+   "reference": "POL54803",
+   "statement": "Support a circular plastics economy",
+   "topics": [
+    "environment",
+    "economy",
+    "environment",
+    "conservation",
+    "economic-development-and-industry",
+    "waste-management"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BZyn",
+     "name": "Why",
+     "value": "This party says that New Zealand has solar, wind, hydro and geothermal resources but continues to rely too heavily on fossil fuels. It says increasing renewable energy and promoting electrification would have many benefits such as increased GDP, lower carbon emissions, smaller power bills and 5,000 new jobs over the next 30 years."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Ba3r",
+     "name": "How",
+     "value": "This party would consolidate the energy industry, merging the four energy regulatory agencies into one, and shrink the number of energy distributors from 29 to no more than 8. It believes this policy would help make electricity more affordable. The party's full energy plan would be funded from about $500m in dividends from government stakes in electricity gentailers. \n"
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Ba8v",
+     "title": "'Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf"
+    }
+   ],
+   "reference": "POL54806",
+   "statement": "Restructure the electricity market to bring prices down",
+   "topics": [
+    "transport-and-infrastructure",
+    "incomes-and-employment",
+    "economy",
+    "transport-and-infrastructure",
+    "incomes-and-employment",
+    "energy",
+    "prices",
+    "economic-development-and-industry",
+    "infrastructure-funding-and-planning",
+    "key-policies-incomes-and-employment"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BbMt",
+     "name": "Why",
+     "value": "This party says New Zealand has solar, wind, hydro and geothermal resources but continues to rely too heavily on fossil fuels. Increasing renewable energy and promoting the electrification of households and industries would have many benefits such as increased GDP, lower carbon emissions, smaller power bills and 5,000 new jobs over the next 30 years."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BbRx",
+     "name": "How",
+     "value": "This party would push for cross-party agreement to boost renewable energy by adding 19GW of new renewable generation capacity to the grid by 2050, bringing it up to 30GW. It would also launch a capacity investment scheme like Australia's to unlock capital and encourage industries to electrify their processes. The party's full energy policy would be funded through ringfenced government dividends from electricity generators.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BaJ3",
+     "title": "'Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BaO7",
+     "title": "'Climate Action', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042618/https://www.opportunity.org.nz/climate_action"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BaTB",
+     "title": "'Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811031858/https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf"
+    }
+   ],
+   "reference": "POL54807",
+   "statement": "Increase the energy grid up to 30GW by 2050",
+   "topics": [
+    "transport-and-infrastructure",
+    "economy",
+    "environment",
+    "transport-and-infrastructure",
+    "economy",
+    "energy",
+    "economic-development-and-industry",
+    "emissions-reduction",
+    "infrastructure-funding-and-planning",
+    "regional-development"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BbwL",
+     "name": "Why",
+     "value": "This party says that trust in government is under pressure. It believes there needs to be more transparency around politics, lobbying and big party donations, if trust is to be rebuilt."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bc1P",
+     "name": "How",
+     "value": "This party would create an independent body to investigate political corruption and a party policy costing unit to verify policy claims. Other moves to strengthen political integrity include a ban on misleading election ads and strengthening the Official Information Act and whistleblowing laws. The anti-corruption body would cost $40m annually, part of a wider political integrity package which would cost around $52m a year.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bc6T",
+     "title": "'Clean Up Politics', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819043010/https://www.opportunity.org.nz/clean_up_politics"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BcBX",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54808",
+   "statement": "Create a political corruption watchdog",
+   "topics": [
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "parliament-and-democracy",
+    "key-policies-law-justice-and-government"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bcfv",
+     "name": "Why",
+     "value": "This party says that trust in government needs to improve. It believes there needs to be more transparency around politics, lobbying and big party donations if trust in politics is to be rebuilt."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bckz",
+     "name": "How",
+     "value": "This party would cap political donations at $30,000 per party per donor per election. Donations from companies and trusts would be banned, so only registered voters could donate. This is part of a political integrity package which would cost around $52m a year.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bcq3",
+     "title": "'Clean Up Politics', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819043010/https://www.opportunity.org.nz/clean_up_politics"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bcv7",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54809",
+   "statement": "Cap political donations at $30,000 per donor",
+   "topics": [
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "parliament-and-democracy",
+    "key-policies-law-justice-and-government"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Be41",
+     "name": "Why",
+     "value": "This party says that as the climate changes, NZ must be ready to realise once-in-a-generation opportunities. The focus should be on preventing further climate heating, adapting to climate disruption and pushing for greater global efforts to handle climate change."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Be95",
+     "name": "How",
+     "value": "This party would strengthen the Emissions Trading Scheme by adding a mechanism for agricultural emissions and excluding new exotic forestry. It would also ensure the Climate Change Commission sets budgets.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BeE9",
+     "title": "'Climate Action', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042618/https://www.opportunity.org.nz/climate_action"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BeJD",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54810",
+   "statement": "Strengthen the Emissions Trading Scheme and include agriculture",
+   "topics": [
+    "economy",
+    "environment",
+    "economy",
+    "environment",
+    "economy",
+    "environment",
+    "agriculture",
+    "emissions-reduction",
+    "forestry",
+    "climate-adaptation",
+    "economic-development-and-industry",
+    "key-policies-environment"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BfN3",
+     "name": "Why",
+     "value": "This party says local authorities have been forced to rely almost entirely on property rates to service ageing infrastructure under growing demand. New tools are needed to help them maintain these assets and build new ones."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BfS7",
+     "name": "How",
+     "value": "This party would ensure councils had access to more tools such as congestion charges, value capture and accommodation levies and user-pays charges to help fund infrastructure. Funds would also be available through housing funds, climate resilience funds and council-specific loans.  A 30 percent cap on the Uniform Annual General Charge would also be repealed. \nCouncil spending would be overseen by an expanded Infrastructure Commission.\nOther sources of funding could include a Local Government Regeneration Fund, a new NZ Infrastructure Fund and a full-scale Ratepayer Assistance Scheme. All three funds would be covered by a $60bn infrastructure capital fund. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BeTL",
+     "title": "'Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811031858/https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf"
+    }
+   ],
+   "reference": "POL54811",
+   "statement": "Give councils more tools to invest in infrastructure",
+   "topics": [
+    "transport-and-infrastructure",
+    "law-justice-and-government",
+    "transport-and-infrastructure",
+    "economy",
+    "economy",
+    "infrastructure-funding-and-planning",
+    "local-government",
+    "public-transport-cycling-and-walking",
+    "key-policies-economy",
+    "regional-development"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bgb1",
+     "name": "Why",
+     "value": "This party says the current tax system is outdated and does not address the cost-of-living crisis, unaffordable housing, or the increasing pressure of the superannuation system.  By taxing land, redistributing the revenue and raising retirement savings, household incomes could rise for 70% of New Zealanders, and another 20% would see no change. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bgg5",
+     "name": "How",
+     "value": "This party would gradually introduce a universal citizen's income of up to $370 a week for almost all adults. This would replace most benefits, with top-up support available for retirees, parents and others. The Citizen’s Income would lift incomes but is not enough to live on. This retains the incentive to work and reduces barriers for beneficiaries wanting to earn more. The Citizens Income would be funded by a 1.75 percent annual tax on urban land values and 0.5 percent on rural land. Tax brackets would also be simplified to 28 percent, 34 percent and 39 percent."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bgl9",
+     "title": "'Tax Reset - Opportunity Party', undated (accessed 06 August 2026)",
+     "url": "https://web.archive.org/save/https://www.opportunity.org.nz/tax-reset"
+    }
+   ],
+   "reference": "POL54816",
+   "statement": "Introduce a universal income for citizens of up to $370 a week",
+   "topics": [
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "economy",
+    "incomes-and-employment",
+    "economy",
+    "tax-and-income-support",
+    "wages-and-working-conditions",
+    "benefits",
+    "government-revenue-and-finance",
+    "key-policies-incomes-and-employment",
+    "key-policies-economy"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BhZn",
+     "name": "Why",
+     "value": "This party says that every Kiwi should be able to retire with dignity. However, retirement savings are increasingly putting pressure on the government's finances. Instead of cutting services or raising taxes on young people, this party argues that the tax system needs a reset which includes retirement savings.\n"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bher",
+     "name": "How",
+     "value": "This party would bring in a compulsory retirement savings scheme. Over eight years, employee and employer contribution rates would rise to 6%, bringing the total contribution to 12%. This would build a trillion-dollar capital pool to fund infrastructure and national development.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bhjv",
+     "title": "'Tax Reset - Opportunity Party', undated (accessed 06 August 2026)",
+     "url": "https://web.archive.org/save/https://www.opportunity.org.nz/tax-reset"
+    }
+   ],
+   "reference": "POL54818",
+   "statement": "Gradually raise Kiwisaver to 6 percent and make it compulsory",
+   "topics": [
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "superannuation-and-savings",
+    "tax-and-income-support",
+    "key-policies-incomes-and-employment",
+    "jobs-and-employment"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BiYZ",
+     "name": "Why",
+     "value": "This party says that our health system is under immense pressure because it changes whenever governments change, sacrificing long-term progress. Success in health would be more equitable access to healthcare, a less pressured workforce and fewer people getting sick. \n"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bidd",
+     "name": "How",
+     "value": "This party would seek a 10-year cross-party plan that would allow time to develop the workforce needed and to invest in infrastructure and systems. This would include a lift in health funding from the current 7.4% of GDP to 9% over the next ten years, with a greater focus on primary, community and preventative care. \n"
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Biih",
+     "title": "'10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)",
+     "url": "https://web.archive.org/web/20260901211428/https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Binl",
+     "title": "'Healthy People ', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042800/https://www.opportunity.org.nz/healthy_people"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bisp",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54823",
+   "statement": "Introduce a 10-year plan to strengthen the health system",
+   "topics": [
+    "health",
+    "health",
+    "economy",
+    "health",
+    "health-funding-and-workforce",
+    "health-services",
+    "government-revenue-and-finance",
+    "key-policies-health"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bj2x",
+     "name": "Why",
+     "value": "This party says consumers are paying too much because of a lack of market competition in sectors such as the supermarkets and banking. It says small business also need more business support to be competitive and keep up with technology.  "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bj81",
+     "name": "How",
+     "value": "This party would give the Commerce Commission greater powers to investigate, intervene and force structural separation of anti-competitive businesses across the economy. It would also boost R&D tax credits for small businesses and offer budgeting help. It would also ensure fairness for small businesses in the ACC and retail payment systems. This is part of a wider innovation plan which would cost an additional $1.33bn but create $4 billion revenue annually.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BjD5",
+     "title": "'Breakthrough Economy', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819043140/https://www.opportunity.org.nz/breakthrough-economy"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BjI9",
+     "title": "'Breakthrough Economy Overview' (PDF), 1 July 2026 (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260729012044/https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BjND",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54824",
+   "statement": "Give the Commerce Commission greater powers and more market support to small businesses",
+   "topics": [
+    "economy",
+    "economy",
+    "incomes-and-employment",
+    "economy",
+    "law-justice-and-government",
+    "business-support",
+    "economic-development-and-industry",
+    "prices",
+    "key-policies-economy",
+    "criminal-justice"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BlAd",
+     "name": "Why",
+     "value": "This party says the seas are hitting their ecological and economic limits. Fish species are being depleted under the current quota management system, and critical habitats are unprotected. Just 0.5 percent of NZ’s extensive ocean territory is protected as a marine reserve. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BlFh",
+     "name": "How",
+     "value": "This party would increase NZ's marine reserves to 30% of its ocean territory by 2035 and replace the Marine Reserves Act 1971. The party also aims to deliver at least 10,000 hectares of restored coastal habitat.  It would also establish integrated ocean governance through a reinstated Ocean Secretariat.\nThese moves fit within a wider ocean policy. The short-term cost is expected to be no more than $100m a year, some of which would be recovered from the commercial fishing industry. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BlKl",
+     "title": "'Healthy Oceans', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260728055154/https://www.opportunity.org.nz/healthy-oceans"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BlPp",
+     "title": "'Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819043420/https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BlUt",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54825",
+   "statement": "Increase NZ's marine reserves to 30 percent of our ocean territory, and protect coastal habitats",
+   "topics": [
+    "environment",
+    "economy",
+    "environment",
+    "te-ao-maori",
+    "environment",
+    "oceans",
+    "fisheries",
+    "conservation",
+    "te-tiriti-o-waitangi-and-governance",
+    "key-policies-environment"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BmJX",
+     "name": "Why",
+     "value": "This party says that our seas are hitting their ecological and economic limits. Fish stocks are depleted, critical habitats are unprotected and just 0.5 percent of NZ’s extensive ocean territory is protected as marine reserve. A strong \"blue economy\" requires investment and different management."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BmOb",
+     "name": "How",
+     "value": "This party would invest in sustainable aquaculture, marine research and tourism initiatives, with the aim of creating $500m per year in additional “blue economy” revenue. The party's wider ocean policy also addresses fisheries management, expanding NZ's marine reserves and protecting coastal habitats. The short-term cost of these policies is expected to be no more than $100m a year, some of which would be recovered from the commercial fishing industry.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BmTf",
+     "title": "'Healthy Oceans', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260728055154/https://www.opportunity.org.nz/healthy-oceans"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BmYj",
+     "title": "'Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819043420/https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bmdn",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54826",
+   "statement": "Invest in sustainable ocean industries beyond fishing",
+   "topics": [
+    "economy",
+    "environment",
+    "economy",
+    "economy",
+    "fisheries",
+    "conservation",
+    "tourism",
+    "economic-development-and-industry"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BnSR",
+     "name": "Why",
+     "value": "This party says that the seas are hitting their ecological and economic limits. Fish species are being depleted under the current quota management system, and critical habitats are unprotected. Just 0.5 percent of NZ’s extensive ocean territory is protected as a marine reserve. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BnXV",
+     "name": "How",
+     "value": "This party would permanently ban seabed mining in New Zealand waters as part of a broader set of coastal and marine protection measures. It would also establish integrated ocean governance through a reinstated Ocean Secretariat. The party's wider ocean policy also addresses fisheries management, sustainable aquaculture, marine research and marine tourism. The short-term cost of the oceans policy is expected to be no more than $100m a year, with some of this cost recovered from the commercial fishing industry.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BncZ",
+     "title": "'Healthy Oceans', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260728055154/https://www.opportunity.org.nz/healthy-oceans"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bnhd",
+     "title": "'Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819043420/https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bnmh",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54827",
+   "statement": "Permanently ban seabed mining in NZ waters",
+   "topics": [
+    "economy",
+    "environment",
+    "environment",
+    "economy",
+    "oil-gas-and-mining",
+    "oceans",
+    "conservation",
+    "fisheries"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bovb",
+     "name": "Why",
+     "value": "This party says the responsibility of the Crown as a Treaty partner should be treated seriously, including the protection of taonga and redress of historical wrong."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bp0f",
+     "name": "How",
+     "value": "This party would ensure Aotearoa history, including Te Tiriti, is part of the education system and support the growth of te reo teachers.\n  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bp5j",
+     "title": "'Honouring Te Tiriti', undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811032025/https://www.opportunity.org.nz/honouring_te_tiriti"
+    }
+   ],
+   "reference": "POL54828",
+   "statement": "Include te Tiriti and Aotearoa history in education",
+   "topics": [
+    "te-ao-maori",
+    "te-ao-maori",
+    "education",
+    "education",
+    "te-ao-maori",
+    "education",
+    "te-reo-maori-and-culture",
+    "te-tiriti-o-waitangi-and-governance",
+    "schools",
+    "tertiary-education-and-research",
+    "key-policies-te-ao-maori",
+    "key-policies-education"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bq4V",
+     "name": "Why",
+     "value": "This party says the responsibility of the Crown as a Treaty partner should be treated seriously, including the protection of taonga and redress of historical wrong. It argues Māori authority over marine environments is both a Te Tiriti obligation and an opportunity to restore healthier relationships with the ocean. Many iwi and hapū are already leading the way in innovative marine management."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bq9Z",
+     "name": "How",
+     "value": "This party would repeal the the Marine and Coastal Area (Takutai Moana) (Customary Marine Title) Amendment Act passed last year, which tightens the criteria for recognition of Māori marine customary rights. This is part of a wider marine policy which includes modernising legislation, recognising Māori customary management tools and including Māori as full partners in marine protection planning processes. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BqEd",
+     "title": "'Honouring Te Tiriti', undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811032025/https://www.opportunity.org.nz/honouring_te_tiriti"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BqJh",
+     "title": "'Healthy Oceans Policy' (PDF), 1 February 2026 (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819043420/https://cdn.opportunity.org.nz/documents/policy/oceans-policy.pdf"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BqOl",
+     "title": "'Healthy Oceans', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260728055154/https://www.opportunity.org.nz/healthy-oceans"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BqTp",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54829",
+   "statement": "Repeal legislation around customary marine title ",
+   "topics": [
+    "te-ao-maori",
+    "environment",
+    "economy",
+    "te-ao-maori",
+    "te-ao-maori",
+    "te-tiriti-o-waitangi-and-governance",
+    "oceans",
+    "fisheries",
+    "te-reo-maori-and-culture",
+    "key-policies-te-ao-maori"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bqo5",
+     "name": "Why",
+     "value": "This party says that there is broad agreement across science, industry, and government that the current gene technology framework is no longer fit for purpose. However, the current bill was developed without proper public consultation, leaving critical questions around trade, liability and environmental risk. The bill includes no clear statement obligating the regulator to protect people and the environment and no full regulatory impact statement. Left as it is, the party says the bill could create one of the most liberal gene technology regimes in the world. \n "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bqt9",
+     "name": "How",
+     "value": "This party would not support the Gene Technology Bill in its current form, but believes it is possible to get the regulation right. It favours full industry and public consultation and backs a modern framework, based on independent expert assessment, case-by-case evaluation and accountability. It calls for a national conversation on gene technology. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BqyD",
+     "title": "'Gene Technology Policy', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819052122/https://www.opportunity.org.nz/gene_technology_policy"
+    }
+   ],
+   "reference": "POL54842",
+   "statement": "Rewrite gene technology regulations",
+   "topics": [
+    "economy",
+    "agriculture"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Br8L",
+     "name": "Why",
+     "value": "This party says our economy needs new ideas and science, technology and innovation are traditional sources for fresh thinking. The country needs young talented Kiwis who are currently offshore to bring their experience and skills back to help drive the economy."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BrDP",
+     "name": "How",
+     "value": "This party would roll back the student loan interest of returning Kiwis on up to 3 years spent overseas. This would apply to both newly graduates and those currently overseas. The rollback would be applied at the end of their loan repayment, and conditional on being resident in New Zealand when the loan is repaid. This policy would cost an estimated $95m. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BrIT",
+     "title": "'Breakthrough Economy Overview' (PDF), 1 July 2026 (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260729012044/https://cdn.opportunity.org.nz/documents/policy/breakthrough-economy-policy-overview.pdf"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BrNX",
+     "title": "'Breakthrough Economy', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819043140/https://www.opportunity.org.nz/breakthrough-economy"
+    }
+   ],
+   "reference": "POL54852",
+   "statement": "Forgive student loan interest for returning Kiwis",
+   "topics": [
+    "education",
+    "economy",
+    "education",
+    "incomes-and-employment",
+    "tertiary-fees-and-student-support",
+    "government-revenue-and-finance",
+    "key-policies-education",
+    "superannuation-and-savings"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BtAx",
+     "name": "Why",
+     "value": "This party says that house prices in NZ are too high - on average, 7.3 times the median wage, when 3 times is considered affordable. There's also still a shortage of 80,000 houses. This party says the solution is unpopular: NZ has to build more and house prices have to drop."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BtG1",
+     "name": "How",
+     "value": "This party would simplify zoning, creting a smaller, consistent set of zones for productive farmland, civic spaces and heritage buildings. Medium density housing, mixed-used and extensions to public and retail spaces would be encouraged, and the party would streamline the processes for building tiny homes, sleepouts and extensions. \nThese measures, along with a 1.75% tax on land values and more support for the construction sector, would help increase house supply, bring down house prices, and make landbanking less attractive.\n"
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BtL5",
+     "title": "'Affordable Housing', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042530/https://www.opportunity.org.nz/affordable_housing"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BtQ9",
+     "title": "'Build Today, Breakthrough Tomorrow', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819052323/https://www.opportunity.org.nz/build_today_breakthrough_tomorrow"
+    }
+   ],
+   "reference": "POL54853",
+   "statement": "Revamp zoning to reduce house prices",
+   "topics": [
+    "transport-and-infrastructure",
+    "incomes-and-employment",
+    "economy",
+    "housing",
+    "housing",
+    "transport-and-infrastructure",
+    "construction",
+    "tax-and-income-support",
+    "economic-development-and-industry",
+    "housing-affordability",
+    "key-policies-housing",
+    "urban-planning-and-resource-management"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BtaH",
+     "name": "Why",
+     "value": "This party says that our prison system should be doing a better job of providing rehabilitation and other solutions that reduce the chances of reoffending. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BtfL",
+     "name": "How",
+     "value": "This party would introduce a suite of measures including increased funding for the courts and probation services, to get remand prisoner numbers down. It would expand mental health programmes for prisoners dealing with past family violence. It would raise the age of the youth court jurisdiction, in line with developmental science, and expand drug and mental health court pilot programmes. It would take a health-led response to drug issues, including decriminalising drug possession but not supply."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BtkP",
+     "title": "'Smart on Crime', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042213/https://www.opportunity.org.nz/smart_on_crime"
+    }
+   ],
+   "reference": "POL54854",
+   "statement": "Boost court and rehabilitation funding to reduce reoffending",
+   "topics": [
+    "law-justice-and-government",
+    "health",
+    "health",
+    "te-ao-maori",
+    "criminal-justice",
+    "health-services",
+    "mental-health",
+    "wellbeing-and-services"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BvDZ",
+     "name": "Why",
+     "value": "This party says that NZ's prison system should be doing a better job of providing rehabilitation and other solutions that reduce the chances of reoffending. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BvId",
+     "name": "How",
+     "value": "This party would It would de-criminalise drug possession (but not supply), and shift to a health-led response to drug issues.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BvNh",
+     "title": "'Smart on Crime', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042213/https://www.opportunity.org.nz/smart_on_crime"
+    }
+   ],
+   "reference": "POL54855",
+   "statement": "Decriminalise drug possession, but not supply",
+   "topics": [
+    "health",
+    "law-justice-and-government",
+    "health",
+    "te-ao-maori",
+    "alcohol-and-drugs",
+    "criminal-justice",
+    "health-services",
+    "wellbeing-and-services"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360BvXp",
+     "name": "Why",
+     "value": "This party says that New Zealand's education system is capable of excellence, but it has since become politicised and student results have fallen. Schools need more funding, and teachers face high workloads, poor pay and workforce planning issues. A plan is needed where curriculum and assessment design is not set by politicians, and students are better prepared to learn in new ways."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bvct",
+     "name": "How",
+     "value": "This party would create a 10-year cross-party education plan. It would include an independent council to oversee curriculum and assessment design, including a review of the government’s replacement of NCEA with NZCE/NZACE. It would also promote the purposeful use of technology and expand access to te reo Māori learning. The costs would be spread over 10 years, and many parts of the plan would not require extra funding.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bvhx",
+     "title": "'Future Fit Education', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042902/https://www.opportunity.org.nz/future_fit_education"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bvn1",
+     "title": "'10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)",
+     "url": "https://web.archive.org/web/20260901211428/https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bvs5",
+     "title": "'Honouring Te Tiriti', undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811032025/https://www.opportunity.org.nz/honouring_te_tiriti"
+    }
+   ],
+   "reference": "POL54860",
+   "statement": "Create a 10-year education plan",
+   "topics": [
+    "education",
+    "education",
+    "te-ao-maori",
+    "education",
+    "schools",
+    "tertiary-education-and-research",
+    "te-reo-maori-and-culture",
+    "key-policies-education"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bx0z",
+     "name": "Why",
+     "value": "This party says that New Zealand's education system is capable of excellence, but has become politicised and student performance has fallen. There is a need for more independent and longer-term planning, starting with early education which is over-stretched and under-resourced."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bx63",
+     "name": "How",
+     "value": "This party would introduce a 10-year education plan with cross-party support. The plan would include modernising early childhood education, by providing ensuring better staff-to-child ratios, better spaces and more core funding for community-owned services like playcentres, kōhanga reo, and kindergartens. It would also encourage the inclusion of early childhood-trained teachers in primary schools, to ease the transition for children. The cost would be spread over the 10 years of the plan and in many cases, would require no direct increase in funding.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BxB7",
+     "title": "'Future Fit Education', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042902/https://www.opportunity.org.nz/future_fit_education"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BxGB",
+     "title": "'Honouring Te Tiriti', undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811032025/https://www.opportunity.org.nz/honouring_te_tiriti"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BxLF",
+     "title": "'10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)",
+     "url": "https://web.archive.org/web/20260901211428/https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education"
+    }
+   ],
+   "reference": "POL54861",
+   "statement": "Allocate more support and staffing to early childhood education ",
+   "topics": [
+    "education",
+    "education",
+    "early-childhood-education",
+    "schools"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bxuh",
+     "name": "Why",
+     "value": "This party says that New Zealand's education system is capable of excellence, but has become politicised and student results have fallen. It is calling for more resourcing, more independence and longer-term planning, including better connections between vocational and academic learning."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360Bxzl",
+     "name": "How",
+     "value": "This party would push for a 20-year Skills and Learning Accord which would smooth the pathway between vocational and academic learning. This plan would aim for sustainable funding, coherent strategy and investment in research capabilities for universities, wānanga, and polytechs. \nThe cost would be spread and in many cases, would require no direct increase in funding.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BxVN",
+     "title": "'Future Fit Education', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042902/https://www.opportunity.org.nz/future_fit_education"
+    }
+   ],
+   "reference": "POL54862",
+   "statement": "Introduce a 20-year resource and research plan for the tertiary sector ",
+   "topics": [
+    "education",
+    "education",
+    "tertiary-education-and-research",
+    "trades-and-vocational-education"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360ByZD",
+     "name": "Why",
+     "value": "This party says that biodiversity in New Zealand is at risk. Nature needs a strong stance from the government to invest in an economy that is good for nature rather than damaging to it. Economic models should not ignore the health of the planet. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360ByeH",
+     "name": "How",
+     "value": "This party would increase conservation and biosecurity funding, with particular focus on wetlands, native reforestation and other biodiversity-rich projects.\n    "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360By9t",
+     "title": "'Healthy Land', undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811032155/https://www.opportunity.org.nz/healthy_land"
+    }
+   ],
+   "reference": "POL54865",
+   "statement": "Increase conservation funding ",
+   "topics": [
+    "environment",
+    "economy",
+    "conservation",
+    "government-revenue-and-finance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360Bz8f",
+     "name": "Why",
+     "value": "This party says that New Zealand's education system is capable of excellence, but it has become politicised and student performance has fallen. The education system needs to prepare students better for a more complex world and foster lifelong learning for adults."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BzDj",
+     "name": "How",
+     "value": "This party would restore adult and community education. This is part of its push for cross-party agreement on a 10-year plan for the wider education sector. This long-term plan would focus on stability for students, support for teachers and modernising learning for the future.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360BzIn",
+     "title": "'10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)",
+     "url": "https://web.archive.org/web/20260901211428/https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360BzNr",
+     "title": "'Future Fit Education', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042902/https://www.opportunity.org.nz/future_fit_education"
+    }
+   ],
+   "reference": "POL54869",
+   "statement": "Restore adult education programmes",
+   "topics": [
+    "education",
+    "education",
+    "tertiary-education-and-research",
+    "trades-and-vocational-education"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360C0Md",
+     "name": "Why",
+     "value": "This party says that our health system is under immense pressure because it changes whenever governments change, sacrificing long-term progress. People are finding it difficult to access care and the medical profession needs stability. Filling the gaps in primary care, Māori wellbeing, workforce, mental health, and elective treatment would cost at about $1.3b a year, or an additional 1.5 per cent of annual GDP. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C0Rh",
+     "name": "How",
+     "value": "This party would lift health funding from the current 7.4 per cent to 9 percent of GDP over the next 10 years. This would work in tandem with a 10-year cross-party health plan to provide certainty. Funding for GPs and other primary care providers would also be increased to help catch illness early or even prevent it. This would rise gradually from 5.7 to 10 percent of Health NZ's spending. By setting health funding as a share of GDP, it will grow consistently with the economy, rather than having to be found each Budget.\n  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360C0Wl",
+     "title": "'Healthy People ', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042800/https://www.opportunity.org.nz/healthy_people"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C0bp",
+     "title": "'10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)",
+     "url": "https://web.archive.org/web/20260901211428/https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C0gt",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54871",
+   "statement": "Lift health funding to 9 percent of GDP",
+   "topics": [
+    "health",
+    "health",
+    "economy",
+    "health",
+    "health",
+    "health-funding-and-workforce",
+    "health-services",
+    "government-revenue-and-finance",
+    "public-health",
+    "key-policies-health"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360C0r1",
+     "name": "Why",
+     "value": "This party says that New Zealand has a shortage of 80,000 homes and an affordability problem. Increasing the housing supply will help lower house prices; this means supporting the construction sector to overcome its lumpy pipeline and still build with quality."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C0w5",
+     "name": "How",
+     "value": "This party would back reputable affordable housing developments by underwriting to smooth out the 'boom-bust' cycle. It would also support offsite builders who take on apprentices. Housing quality would be encouraged with low-cost loans, and by refunding GST collected during construction to councils for environmentally high standard builds. \nThese moves would be in tandem with zoning changes and a 1.75 percent urban land tax, which together would lower house prices and discourage land banking.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360C119",
+     "title": "'Affordable Housing', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042530/https://www.opportunity.org.nz/affordable_housing"
+    }
+   ],
+   "reference": "POL54873",
+   "statement": "Make housing more affordable with targeted construction support",
+   "topics": [
+    "economy",
+    "housing",
+    "housing",
+    "transport-and-infrastructure",
+    "housing",
+    "economic-development-and-industry",
+    "housing-affordability",
+    "housing-quality",
+    "construction",
+    "key-policies-housing"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360C2eR",
+     "name": "Why",
+     "value": "This party says that says New Zealand runs 50-year assets on three-year political cycles, resulting in billions of dollars of wasted money. It also says the number of government agencies that cannot list the assets they own is concerning."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C2jV",
+     "name": "How",
+     "value": "This party would put the Infrastructure Commission's 30-year National Infrastructure Plan into law, with a heavy focus on maintenance and infrastructure finance. Sixty percent of the future infrastructure spend would go towards maintenance and renewal. There would also be  greater accountability, with a register of public assets, improvements to procurement and project planning skills across government departments, and scorecards which would show the progress towards infrastructure at 100 days, 12 month and three year intervals. \nThe Infrastructure Commission would have a much greater role, costing another $27m annually. \n  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360C2oZ",
+     "title": "'Intergenerational Infrastructure' (PDF), undated (accessed 04 September 2026)",
+     "url": "https://web.archive.org/web/20260904014758/https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf"
+    }
+   ],
+   "reference": "POL54874",
+   "statement": "Put 60 percent of future infrastructure spend on maintenance and renewal",
+   "topics": [
+    "economy",
+    "transport-and-infrastructure",
+    "economy",
+    "law-justice-and-government",
+    "economic-development-and-industry",
+    "infrastructure-funding-and-planning",
+    "government-revenue-and-finance",
+    "public-sector"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360C4Hj",
+     "name": "Why",
+     "value": "This party says that NZ's government debt is around 50 percent, about half of the average of the other OECD countries. It believes NZ has room to borrow carefully for assets that repay us over lifetimes. It adds that deferred maintenance is borrowing from our children."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C4Mn",
+     "name": "How",
+     "value": "This party would raise up to $60b over ten years through a new Infrastructure Fund, with interest costs under 1 percent of GDP. It would borrow at Crown rates instead of costly private finance, and issue bonds that KiwiSaver funds can invest in. It will also back councils with grants, not just loans, plus new funding tools so those who benefit contribute and ratepayers don't carry the load. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360C4Rr",
+     "title": "'Intergenerational Infrastructure' (PDF), undated (accessed 04 September 2026)",
+     "url": "https://web.archive.org/web/20260904014758/https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Intergenerational%20Infrastructure.pdf"
+    }
+   ],
+   "reference": "POL54875",
+   "statement": "Raise up to $60b to finance infrastructure ",
+   "topics": [
+    "transport-and-infrastructure",
+    "economy",
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "economy",
+    "economy",
+    "transport-and-infrastructure",
+    "economy",
+    "infrastructure-funding-and-planning",
+    "economic-development-and-industry",
+    "public-sector",
+    "local-government",
+    "government-revenue-and-finance",
+    "key-policies-economy",
+    "key-policies-transport-and-infrastructure",
+    "regional-development"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360C5al",
+     "name": "Why",
+     "value": "This party says encouraging businesses to buy electric vehicles will reduce their ongoing fuel costs and make them more resilient to volatile prices. As businesses are big buyers of new vehicles, this would also increase the pool of EVs in the secondhand market.\n"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C5fp",
+     "name": "How",
+     "value": "This party would allow accelerated depreciation and fringe benefit tax exemptions for business electric vehicles worth up to $50,000 (or $75,000 for utes and vans).\nThe fringe benefit tax exemption is expected to cost $31m a year, growing to $155m as uptake increases. \nThe impact of accelerated depreciation will start at about $95m a year, but much of it will be recovered as depreciation timing unwinds. Both will be funded from ringfenced dividends from state gentailers. \n"
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360C4bz",
+     "title": "'Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C4h3",
+     "title": "'Accelerating EV Uptake', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819052040/https://www.opportunity.org.nz/accelerating_ev_uptake"
+    }
+   ],
+   "reference": "POL54876",
+   "statement": "Offer incentives to businesses to buy electric vehicles ",
+   "topics": [
+    "transport-and-infrastructure",
+    "economy",
+    "economy",
+    "transport-and-infrastructure",
+    "environment",
+    "energy",
+    "business-support",
+    "government-revenue-and-finance",
+    "cars-and-roads",
+    "emissions-reduction"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360C6eb",
+     "name": "Why",
+     "value": "This party says that tobacco, alcohol and unhealthy food account for roughly a quarter of all the healthy years New Zealanders lose to death and disability. Prevention receives a small fraction of health spending relative to the share of health loss these risks cause. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C6jf",
+     "name": "How",
+     "value": "This party would work to reduce the harm from tobacco, as well as alcohol and unhealthy food, as part of a 10-year health plan. This would include a renewed Smoke-free New Zealand programme, with fewer places selling tobacco, and mandated de-nicotinisation of smoked tobacco. \nQuit programmes and regulated alternatives for adult smokers would be better funded, and there would be stronger protections against youth access to vapes. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360C6oj",
+     "title": "'Healthy People ', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042800/https://www.opportunity.org.nz/healthy_people"
+    }
+   ],
+   "reference": "POL54885",
+   "statement": "Bring in tougher rules around tobacco, vaping, alcohol, and unhealthy food",
+   "topics": [
+    "health",
+    "community-and-inclusion",
+    "health",
+    "health",
+    "community-and-inclusion",
+    "health-services",
+    "young-people",
+    "public-health",
+    "alcohol-and-drugs",
+    "key-policies-community-and-inclusion"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360C6yr",
+     "name": "Why",
+     "value": "This party says that unhealthy food account for roughly a quarter of all the healthy years New Zealanders lose to death and disability. Prevention receives a small fraction of health spending relative to the share of health loss these risks cause."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C73v",
+     "name": "How",
+     "value": "This party would roll out several measures to encourage healthier eating, including restoring the original lunches in schools programme. Nutrition would be an overall health priority. It would extend the nutritional standards used in hospitals to other sectors like aged care, prisons and schools. A national nutritional study would also be commissioned to better inform policymakers. The party's 10-year health plan will lift health funding to 9% of GDP, with a greater focus on prevention and primary care.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360C78z",
+     "title": "'10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)",
+     "url": "https://web.archive.org/web/20260901211428/https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C7E3",
+     "title": "'Healthy People ', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042800/https://www.opportunity.org.nz/healthy_people"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C7J7",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54887",
+   "statement": "Rebuild the school lunch programme",
+   "topics": [
+    "health",
+    "education",
+    "education",
+    "health",
+    "public-health",
+    "schools",
+    "early-childhood-education",
+    "health-services"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360C8wP",
+     "name": "Why",
+     "value": "This party says that tobacco, alcohol and unhealthy food companies have an undue influence over the policies that regulate them. These three sectors account for roughly a quarter of all the healthy years New Zealanders lose to death and disability. This party believes more focus needs to go on harm prevention in the health sector."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C91T",
+     "name": "How",
+     "value": "This party would introduce rules for lobbying and donations, which would make it tougher for industries that profit from illness. This includes a mandatory public register of lobbyists and a cooling-off period before ministers and senior officials could take industry roles in sectors they regulated.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360C96X",
+     "title": "'Healthy People ', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042800/https://www.opportunity.org.nz/healthy_people"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C9Bb",
+     "title": "'10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)",
+     "url": "https://web.archive.org/web/20260901211428/https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C9Gf",
+     "title": "'Clean Up Politics', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819043010/https://www.opportunity.org.nz/clean_up_politics"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360C9Lj",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL54888",
+   "statement": "Limit the lobbying power of the tobacco, alcohol and unhealthy food industries",
+   "topics": [
+    "health",
+    "health",
+    "health",
+    "law-justice-and-government",
+    "health",
+    "public-health",
+    "health-services",
+    "alcohol-and-drugs",
+    "parliament-and-democracy",
+    "key-policies-health"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CAFR",
+     "name": "Why",
+     "value": "This party says that electrification of industry is being blocked by the cost of plant capital, grid connection and network upgrades. Industry has been hampered by a fall in gas reserves and the scrapping of GIDI, a government industry decarbonisation fund. A replacement loan guarantee scheme has fallen short because it cannot overcome the upfront cost, debt constraints and investment risks. This party says money collected from selling carbon units should be used to fight climate pollution, not disappear into the government's consolidated fund."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CAKV",
+     "name": "How",
+     "value": "This party would establish a ring-fenced Industry Energy Resilience Fund (IERF) which would cover capital and upgrade costs. The fund will be capitalised by a $1b green bond raised against forecast ETS auction revenues over the next decade. \nIERF will offer a greater mix of instruments than GIDI , with grants reserved for smaller targeted uses. \nMoney collected from selling carbon units would be used to fight climate change, putting it into IERF by law so businesses could plan ahead."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360C9Vr",
+     "title": "'Industry Energy Resilience Fund', 8 September 2026 (accessed 09 September 2026)",
+     "url": "https://web.archive.org/web/20260909023726/https://www.opportunity.org.nz/industry_energy_resilience_fund"
+    }
+   ],
+   "reference": "POL54900",
+   "statement": "Help industries decarbonise with a new fund",
+   "topics": [
+    "transport-and-infrastructure",
+    "economy",
+    "economy",
+    "environment",
+    "energy",
+    "economic-development-and-industry",
+    "government-revenue-and-finance",
+    "emissions-reduction"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CB45",
+     "name": "Why",
+     "value": "This party says that New Zealand has solar, wind, hydro and geothermal resources but continues to rely too heavily on fossil fuels. It says increasing renewable energy and promoting the electrification household and industry electrification would have many benefits. The current electricity system is unfair; renewable energy generation has been underfunded and created expensive power bills for individuals and businesses. The government has a majority stake in several major power companies and is incentivised to keep prices high. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CB99",
+     "name": "How",
+     "value": "This party would add 30 gigawatts of renewable energy to the grid by 2050. This ambitious target will require building just over 556 megawatts of electricity generation to the country every year. The government currently receives approximately $500m from stakes in the electricity gentailers each year. This money would be ringfenced for investment in generation so that there is no incentive to maintain high prices. Electricity distributors would be consolidated and all electricity regulation would fall under one regulator. This party estimates that this policy would cost 500 m. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CAUd",
+     "title": "'Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf"
+    }
+   ],
+   "reference": "POL55049",
+   "statement": "Use the money received from stakes in gentailers to fund renewable energy",
+   "topics": [
+    "transport-and-infrastructure",
+    "incomes-and-employment",
+    "economy",
+    "energy",
+    "prices",
+    "government-revenue-and-finance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CBJH",
+     "name": "Why",
+     "value": "This party says that greenhouse gas emissions targets and budgets hold the government accountable and give households, businesses and investors certainty. It believes NZ's domestic budgets, international commitments and policies must form one coherent pathway when it comes to emissions.\n"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CBOL",
+     "name": "How",
+     "value": "This party would restore the link between NZ's national emissions budgets with our Nationally Determined Contribution and the Paris Agreement's goal of limiting global warming to 1.5°C above pre‑industrial levels. It would also record the cost as a liability on the Crown balance sheet, and would implement the Climate Change Commission's advice on amendments to the 2050 emissions targets, which include international aviation and shipping emissions.\n  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CBTP",
+     "title": "'Climate Action', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819042618/https://www.opportunity.org.nz/climate_action"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CBYT",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL55169",
+   "statement": "Ensure NZ's emissions goals align with the Paris Agreement",
+   "topics": [
+    "environment",
+    "environment",
+    "economy",
+    "transport-and-infrastructure",
+    "environment",
+    "climate-adaptation",
+    "emissions-reduction",
+    "economic-development-and-industry",
+    "energy",
+    "key-policies-environment"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CCXF",
+     "name": "Why",
+     "value": "This party says that preparing for climate change means doing our part to prevent further heating and adapting to climate disruption. This includes valuing nature as critical climate resilient infrastructure."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CCcJ",
+     "name": "How",
+     "value": "This party would create a $5bn climate resilience fund for climate adaptation, including $500m for nature-based solutions which reduce emissions and increase climate change resilience. This would include support for local government in managing flood resilience and heat stress. More widely, this party aims to help all sectors with adaptation and emissions reduction.\n  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CChN",
+     "title": "'Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811031858/https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CCmR",
+     "title": "'Climate Action: Emissions Reduction', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813023241/https://www.greens.org.nz/manifesto_2020_climate_action_emissions_reduction"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CCrV",
+     "title": "'Climate Action: Resilience and Adaptation', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813023329/https://www.greens.org.nz/manifesto_2026_climate_action_resilience_adaptation"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CCwZ",
+     "title": "'Healthy Land', undated (accessed 11 August 2026)",
+     "url": "https://web.archive.org/web/20260811032155/https://www.opportunity.org.nz/healthy_land"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CD1d",
+     "title": "'Bottom Lines', 29 September 2026 (accessed 30 September 2026)",
+     "url": "https://www.opportunity.org.nz/bottom_lines"
+    }
+   ],
+   "reference": "POL55175",
+   "statement": "Build a $5bn fund to support climate resilience, including $500m for nature-based solutions",
+   "topics": [
+    "environment",
+    "environment",
+    "te-ao-maori",
+    "emissions-reduction",
+    "climate-adaptation",
+    "land-and-resources"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CDg9",
+     "name": "Why",
+     "value": "This party says that recent law changes cancelled many active pay equity claims. This included disability care and support workers, and experts warn this will make it harder to hire and keep workers, cause staff shortages, and lower the quality of care."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CDlD",
+     "name": "How",
+     "value": "This party would re-instate rules from the Equal Pay Amendment Act 2020 to ensure care and support workers get fairer pay and recognise their skills, helping to create a stable, long-lasting care workforce.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CDqH",
+     "title": "'Who's listening to our disability advocates? ', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819051736/https://www.opportunity.org.nz/who_s_listening_to_our_disability_advocates"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CDvL",
+     "title": "'Disability Statement', 12 October 2026 (accessed 12 October 2026)",
+     "url": "https://web.archive.org/web/20261012001842/https://www.opportunity.org.nz/disability_statement"
+    }
+   ],
+   "reference": "POL55265",
+   "statement": "Restore pay equity deals for care and support workers",
+   "topics": [
+    "community-and-inclusion",
+    "incomes-and-employment",
+    "disability",
+    "wages-and-working-conditions"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CEPj",
+     "name": "Why",
+     "value": "This party says accessibility and care is a growing issue. One in six Kiwis have a disability and if ageing-related access issues are factored in, 1 in 4 Kiwis will have accessibility needs in their lifetimes. Everyone should be able to participate in society with dignity and make the most of opportunities. However, the current Disability Support Services Bill did not properly consult with those it affects, and fails to give paid and unpaid carers the support they deserve."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CEUn",
+     "name": "How",
+     "value": "This party would look to improve disability policy, including good care plans for disabled adults as their family carers age. It would back pay equity for care and support workers. It would also seek more support for unpaid carers, with improved respite care and more flexibility to balance their employment and unpaid caring roles. \n  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CEZr",
+     "title": "'Disability Statement', 12 October 2026 (accessed 12 October 2026)",
+     "url": "https://web.archive.org/web/20261012001842/https://www.opportunity.org.nz/disability_statement"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CEev",
+     "title": "'Who's listening to our disability advocates? ', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819051736/https://www.opportunity.org.nz/who_s_listening_to_our_disability_advocates"
+    }
+   ],
+   "reference": "POL55267",
+   "statement": "Improved respite and carer support for the disabled",
+   "topics": [
+    "community-and-inclusion",
+    "disability"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CFdh",
+     "name": "Why",
+     "value": "This party says that many disabled people lose benefit income if they work and some are even legally paid less than the minimum wage. One in six Kiwis are disabled and when ageing-related access issues are factored in, one in four Kiwis will face access issues in their lifetimes. So access to care and income are key issues for those with disabilities.\n"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CFil",
+     "name": "How",
+     "value": "This party would work to end rules that allow disabled people to be paid less than the minimum wage. It would improve support for employers to recruit and retain disabled workers. This party argues its Citizens’ Income and Disability Allowance would ensure disabled people would not lose income support for doing paid work.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CFnp",
+     "title": "'Disability Statement', 12 October 2026 (accessed 12 October 2026)",
+     "url": "https://web.archive.org/web/20261012001842/https://www.opportunity.org.nz/disability_statement"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CFst",
+     "title": "'Who's listening to our disability advocates? ', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819051736/https://www.opportunity.org.nz/who_s_listening_to_our_disability_advocates"
+    }
+   ],
+   "reference": "POL55269",
+   "statement": "Oppose disabled people being paid less than minimum wage",
+   "topics": [
+    "community-and-inclusion",
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "community-and-inclusion",
+    "disability",
+    "wages-and-working-conditions",
+    "benefits",
+    "key-policies-community-and-inclusion"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CG31",
+     "name": "Why",
+     "value": "This party says people with long-term disabilities often find themselves endlessly repeating their story or having to prove their disability to authorities. Or they may fall through the cracks if their health, education, ACC and disability support systems are not strongly connected."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CG85",
+     "name": "How",
+     "value": "This party would back a \"Tell Us Once\" system, which would mean those with long-term disability support needs would not have to repeat their story or have tests over and over. Privacy would be protected and they would have control over how their information was shared. They would be supported to navigate the various government agencies that are connected to their case.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CGD9",
+     "title": "'Disability Statement', 12 October 2026 (accessed 12 October 2026)",
+     "url": "https://web.archive.org/web/20261012001842/https://www.opportunity.org.nz/disability_statement"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CGID",
+     "title": "'Who's listening to our disability advocates? ', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819051736/https://www.opportunity.org.nz/who_s_listening_to_our_disability_advocates"
+    }
+   ],
+   "reference": "POL55271",
+   "statement": "Ensure better connections between government systems and those with a disability ",
+   "topics": [
+    "community-and-inclusion",
+    "health",
+    "education",
+    "disability",
+    "health-services",
+    "schools"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360CIAh",
+     "name": "Why",
+     "value": "This party says that a stronger arts ecosystem creates jobs and wellbeing, builds healthier communities and helps define national identity. NZ sits in the bottom ten OECD countries for public arts investment. The barriers for artists are less about a lack of arts funding and more about unpredictable income, and changing a mindset that the arts are a key part of the economy, rather than an optional extra. \n"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CIFl",
+     "name": "How",
+     "value": "This party would address the precarity of an artist's income firstly with its universal citizen’s income policy, which would enable artists to take a financial gamble on their career. Tax reforms would help over irregular income and free up charitable giving by repealing the cap on charitable donations. This party would more broadly support the arts through other policies such as an AI framework and revamp of the polytech sector, which would address copyright exploitation and recognise the arts in innovation funding.\n  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb360CGwj",
+     "title": "'Arts and culture statement', 19 October 2026 (accessed 20 October 2026)",
+     "url": "https://web.archive.org/web/20261019211037/https://www.opportunity.org.nz/arts_and_culture_statement"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CH1n",
+     "title": "'Charitable Giving Tax Credit Cap', 19 June 2026 (accessed 06 August 2026)",
+     "url": "https://web.archive.org/web/20260806041344/https://www.opportunity.org.nz/charitable_giving_tax_credit_cap"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb360CH6r",
+     "title": "'Charitable Giving Tax Cap', undated (accessed 19 August 2026)",
+     "url": "https://web.archive.org/web/20260819052504/https://www.opportunity.org.nz/charitable_giving_tax_credit_cap"
+    }
+   ],
+   "reference": "POL55323",
+   "statement": "Provide more support for the arts through a citizens income and innovation funding ",
+   "topics": [
+    "media-culture-and-recreation",
+    "economy",
+    "incomes-and-employment",
+    "education",
+    "economy",
+    "media-culture-and-recreation",
+    "sports-and-recreation",
+    "economic-development-and-industry",
+    "tax-and-income-support",
+    "tertiary-education-and-research",
+    "artificial-intelligence-ai",
+    "arts-culture-and-heritage"
+   ]
+  }
+ ],
+ "partyList": [
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUxGl",
+     "name": "Before politics",
+     "value": "Sustainable Business Leader"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUxIR",
+     "name": "Residence",
+     "value": "Mt Albert"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUxK7",
+     "name": "Age",
+     "value": "38"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUxLn",
+     "name": "Public email",
+     "value": "qiulae.wong@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUxNT",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/qiulae-wong-for-mt-albert"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUxP9",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61583421426605"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUxQp",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/qiulae/"
+    }
+   ],
+   "electorateElectionSlug": "mt-albert-electorate",
+   "firstName": "Qiulae",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/f7239d0687073cd463d19002121374a72bb0e329-1024x1024.jpg",
+   "lastName": "Wong",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Mt Albert electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "01",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "qiulae-wong"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0nCM",
+     "name": "Before politics",
+     "value": "Business and impact founder"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0nFK",
+     "name": "Residence",
+     "value": "North-West Auckland"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0nII",
+     "name": "Age",
+     "value": "39"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0nLG",
+     "name": "Public email",
+     "value": "Daniel.Eb@opportunity.org.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0nOE",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-daniel-eb"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0nRC",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/dan.eb.nz/"
+    }
+   ],
+   "electorateElectionSlug": "kaipara-ki-mahurangi-electorate",
+   "firstName": "Daniel",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/4a9c53fbc15c10f168780628736e346dfecb7d5f-1024x1024.jpg",
+   "lastName": "Eb",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Kaipara ki Mahurangi electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "02",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "daniel-eb"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVHEh",
+     "name": "Before politics",
+     "value": "Public servant (policy)"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVHGN",
+     "name": "Residence",
+     "value": "Wellington northern suburbs"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVHI3",
+     "name": "Age",
+     "value": "47"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVHJj",
+     "name": "Public email",
+     "value": "jessica.hammond@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVHLP",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-jessica-hammond"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVHN5",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/TOPJessicaHammond"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVHOl",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/jessicaforopportunity/"
+    }
+   ],
+   "electorateElectionSlug": "wellington-north-electorate",
+   "firstName": "Jessica",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/ccc4c83b4d05059871285a43f8b5de9a48ac99fa-1024x1024.jpg",
+   "lastName": "Hammond",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Wellington North electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "03",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "jessica-hammond"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEr09S",
+     "name": "Before politics",
+     "value": "Chief Executive"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEr0CQ",
+     "name": "Residence",
+     "value": "Wellington Bays"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEr0FO",
+     "name": "Age",
+     "value": "40"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEr0IM",
+     "name": "Public email",
+     "value": "kayla.kingdon-bebb@opportunity.org.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEr0LK",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-kayla-kingdon-bebb"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEr0OI",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/photo/?fbid=122094156602692948&set=a.122094156626692948"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEr0RG",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/itskaylakingdon/"
+    }
+   ],
+   "electorateElectionSlug": "wellington-bays-electorate",
+   "firstName": "Kayla",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/1cdae9e801d63ff9e7beb900ef40fc7f0ee26a58-1024x1024.jpg",
+   "lastName": "Kingdon-Bebb",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Wellington Bays electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "04",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "kayla-kingdon-bebb"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTYh1",
+     "name": "Before politics",
+     "value": "Policy analyst"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTYih",
+     "name": "Residence",
+     "value": "Waltham"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTYkN",
+     "name": "Age",
+     "value": "28"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTYm3",
+     "name": "Public email",
+     "value": "eden.skipper@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTYnj",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-eden-skipper"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTYpP",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61577494432982"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTYr5",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/edenskipper1/?hl=en"
+    }
+   ],
+   "electorateElectionSlug": "christchurch-central-electorate",
+   "firstName": "Eden",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/4bb390390a1ade9232dc465168c16ff2cdc815b2-1024x1024.jpg",
+   "lastName": "Skipper",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Christchurch Central electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "05",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "eden-skipper"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzdmx",
+     "name": "Before politics",
+     "value": "Entrepreneur"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzdoA",
+     "name": "Residence",
+     "value": "Nelson"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzdpN",
+     "name": "Age",
+     "value": "45"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzdqa",
+     "name": "Public email",
+     "value": "jodie.kuntzsch@opportunity.org.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzdrn",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-jodie-kuntzsch"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzdt0",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/jodieforopportunity"
+    }
+   ],
+   "electorateElectionSlug": "nelson-electorate",
+   "firstName": "Jodie",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/46a46fc6ed406372e3ae2e731b4c8e4b1974c64b-1024x1024.jpg",
+   "lastName": "Kuntzsch",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Nelson electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "06",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "jodie-kuntzsch"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv9PH",
+     "name": "Before politics",
+     "value": "Business person"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv9QU",
+     "name": "Residence",
+     "value": "Taranaki"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv9Rh",
+     "name": "Age",
+     "value": "50"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv9Su",
+     "name": "Public email",
+     "value": "sarah.lucas@opportunity.org.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv9U7",
+     "name": "Website",
+     "value": "www.opportunity.org.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv9VK",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/sarahlucasnewplymouth/"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv9WX",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/sarah_lucas_new_plymouth/"
+    }
+   ],
+   "electorateElectionSlug": "new-plymouth-electorate",
+   "firstName": "Sarah",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/18c671056df6d33a62e448354ce921a0303a4842-1024x1024.jpg",
+   "lastName": "Lucas",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the New Plymouth electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "07",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "sarah-lucas"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRjH1",
+     "name": "Before politics",
+     "value": "GM - Local Government"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRjIQ",
+     "name": "Residence",
+     "value": "Dunedin"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRjJp",
+     "name": "Age",
+     "value": "42"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRjLE",
+     "name": "Public email",
+     "value": "david.bainbridge-zafar@opportunity.org.nz"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRjMd",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-dave-bainbridge-zafar"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRjO2",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61586871011120"
+    },
+    {
+     "_key": "wXzfL7QnyVJSGAKqmNRjPR",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/davefordunedin"
+    }
+   ],
+   "electorateElectionSlug": "dunedin-electorate",
+   "firstName": "David",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/c17e00cf82c1c17249f198afde7782341686740c-1024x1024.jpg",
+   "lastName": "BAINBRIDGE-ZAFAR",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Dunedin electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "08",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "david-bainbridge-zafar"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzhUn",
+     "name": "Before politics",
+     "value": "Executive Director"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzhW0",
+     "name": "Residence",
+     "value": "Devonport"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzhXD",
+     "name": "Public email",
+     "value": "holly.knill@opportunity.org.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzhYQ",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzhZd",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/hollyforopportunity/"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzhaq",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/hollyforopportunity"
+    }
+   ],
+   "electorateElectionSlug": "north-shore-electorate",
+   "firstName": "Holly",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/1c667b9543ec16a65e86bc82c9e7d27f307c9418-1024x1024.jpg",
+   "lastName": "Knill",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the North Shore electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "09",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "holly-knill"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFdMf6",
+     "name": "Before politics",
+     "value": "LG Councillor, small business"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFdMi4",
+     "name": "Residence",
+     "value": "Te Kaha East Coast SH35"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFdMl2",
+     "name": "Age",
+     "value": "34"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFdMo0",
+     "name": "Public email",
+     "value": "papa.wharewera@opportunity.org.nz"
+    }
+   ],
+   "electorateElectionSlug": "waiariki-electorate",
+   "firstName": "Pāpā",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/fb8cdb261d0fb67fc0c93860aeb3af391cbde2f7-1024x1024.jpg",
+   "lastName": "Wharewera",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Waiariki electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "10",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "papa-wharewera"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRTVL",
+     "name": "Before politics",
+     "value": "Chair of Fired Up Stilettos"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRTX1",
+     "name": "Residence",
+     "value": "Queenstown"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRTYh",
+     "name": "Age",
+     "value": "37"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRTaN",
+     "name": "Public email",
+     "value": "bianca.beebe@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRTc3",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-bianca-beebe"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRTdj",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/BiancaBeebeforOpportunity/"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRTfP",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/bianca_beebe_/?hl=en"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRTh5",
+     "name": "Twitter",
+     "value": "https://biancabeebe.substack.com/"
+    }
+   ],
+   "electorateElectionSlug": "southland-electorate",
+   "firstName": "Bianca",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/4f794c743c7e96c2446d7728e5b7d012fe7e50fc-1024x1024.jpg",
+   "lastName": "Beebe",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Southland electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "11",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "bianca-beebe"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUQfT",
+     "name": "Before politics",
+     "value": "Government Policy Advisor"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUQh9",
+     "name": "Residence",
+     "value": "North Shore"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUQip",
+     "name": "Age",
+     "value": "35"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUQkV",
+     "name": "Public email",
+     "value": "romeo.tevaga@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUQmB",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-romeo-tevaga"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUQnr",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/people/Romeo-Tevaga-Opportunity-Candidate-for-Upper-Harbour/61589957897879"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUQpX",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/romeoforopportunity"
+    }
+   ],
+   "electorateElectionSlug": "upper-harbour-electorate",
+   "firstName": "Romeo",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/06426b0cc36d40e83a1635c7c972cb3212e39d55-1024x1024.jpg",
+   "lastName": "Tevaga",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Upper Harbour electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "12",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "romeo-tevaga"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "fx620ec4b6M7e5HsZ2ZRz2",
+     "name": "Before politics",
+     "value": "Physicist"
+    },
+    {
+     "_key": "fx620ec4b6M7e5HsZ2ZS29",
+     "name": "Residence",
+     "value": "Korokoro"
+    },
+    {
+     "_key": "fx620ec4b6M7e5HsZ2ZS5G",
+     "name": "Age",
+     "value": "39"
+    },
+    {
+     "_key": "fx620ec4b6M7e5HsZ2ZS8N",
+     "name": "Public email",
+     "value": "ben.wylie-vaneerd@opportunity.org.nz"
+    },
+    {
+     "_key": "fx620ec4b6M7e5HsZ2ZSBU",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-ben-wylie-van-eerd"
+    },
+    {
+     "_key": "fx620ec4b6M7e5HsZ2ZSEb",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/benforhuttsouth"
+    }
+   ],
+   "electorateElectionSlug": "hutt-south-electorate",
+   "firstName": "Ben",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/af122648b7a26a122b52d2c4576ec6a4a2cd2379-1024x1024.jpg",
+   "lastName": "WYLIE-VAN EERD",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Hutt South electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "13",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "ben-wylie-van-eerd"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "va0lU21xMN9Thq1CkWJRUT",
+     "name": "Before politics",
+     "value": "General Manager - Conservation"
+    },
+    {
+     "_key": "va0lU21xMN9Thq1CkWJRWl",
+     "name": "Residence",
+     "value": "Havelock North"
+    },
+    {
+     "_key": "va0lU21xMN9Thq1CkWJRZ3",
+     "name": "Age",
+     "value": "40"
+    },
+    {
+     "_key": "va0lU21xMN9Thq1CkWJRbL",
+     "name": "Public email",
+     "value": "rachel.ward@opportunity.org.nz"
+    },
+    {
+     "_key": "va0lU21xMN9Thq1CkWJRdd",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-rachel-ward"
+    },
+    {
+     "_key": "va0lU21xMN9Thq1CkWJRfv",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/rachelwardfortukituki"
+    },
+    {
+     "_key": "va0lU21xMN9Thq1CkWJRiD",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/rachelforopportunity"
+    }
+   ],
+   "electorateElectionSlug": "tukituki-electorate",
+   "firstName": "Rachel",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/5cf8894b801345dc5c20c7f84e0d0752f0da0866-1024x1024.jpg",
+   "lastName": "Ward",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Tukituki electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "14",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "rachel-ward"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "klxxTI2yzqiQIMrdxnRz9T",
+     "name": "Before politics",
+     "value": "Teaching Fellow"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnRzBz",
+     "name": "Public email",
+     "value": "naomi.pocock@opportunity.org.nz"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnRzEV",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-naomi-pocock"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnRzH1",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/NaomiPocockTOP"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnRzJX",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/naomiforopportunity/?hl=en"
+    }
+   ],
+   "electorateElectionSlug": "hamilton-east-electorate",
+   "firstName": "Naomi",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/b4c907972f3c0097595cd59111a924d7972825dd-1024x1024.jpg",
+   "lastName": "Pocock",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Hamilton East electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "15",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "naomi-pocock"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSP4t",
+     "name": "Before politics",
+     "value": "Local government management"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSP6Z",
+     "name": "Residence",
+     "value": "Wanaka"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSP8F",
+     "name": "Public email",
+     "value": "helen.tait@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSP9v",
+     "name": "Website",
+     "value": "www.opportunity.org.nz"
+    }
+   ],
+   "electorateElectionSlug": "waitaki-electorate",
+   "firstName": "Helen",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/64d73830f111b4846e64d8b6421c1759605e3fed-1024x1024.jpg",
+   "lastName": "Tait",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Waitaki electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "16",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "helen-tait"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULtHmj",
+     "name": "Before politics",
+     "value": "Paramedic"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULtHnw",
+     "name": "Residence",
+     "value": "Northcote Electorate"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULtHp9",
+     "name": "Age",
+     "value": "34"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULtHqM",
+     "name": "Public email",
+     "value": "cody.marsh@opportunity.org.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULtHrZ",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-cody-marsh"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULtHsm",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/CodyMarshforNorthcote"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULtHtz",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/codyforopportunity"
+    }
+   ],
+   "electorateElectionSlug": "northcote-electorate",
+   "firstName": "Cody",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/288487cef8c166e9e6a2dd497631bf02afaec67a-1024x1024.jpg",
+   "lastName": "Marsh",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Northcote electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "17",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "cody-marsh"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "klxxTI2yzqiQIMrdxnSW43",
+     "name": "Before politics",
+     "value": "Lead Buyer"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnSW6Z",
+     "name": "Residence",
+     "value": "Ōtāhuhu"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnSW95",
+     "name": "Age",
+     "value": "37"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnSWBb",
+     "name": "Public email",
+     "value": "adam.macrae-martin@opportunity.org.nz"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnSWE7",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-adam-macrae-martin"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnSWGd",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/adamforotahuhu"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnSWJ9",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/adamforopportunity"
+    }
+   ],
+   "electorateElectionSlug": "otahuhu-electorate",
+   "firstName": "Adam",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/0f9daf1bc731b853d3471a4d42b9b723147af563-1024x1024.jpg",
+   "lastName": "MacRae-Martin",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Ōtāhuhu electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "18",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "adam-macrae-martin"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM0Kwl",
+     "name": "Before politics",
+     "value": "Designer & Industry Consultant"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM0Kxy",
+     "name": "Residence",
+     "value": "New Lynn"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM0KzB",
+     "name": "Public email",
+     "value": "mark.roach@opportunity.org.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM0L0O",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-mark-roach"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM0L1b",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/markroachforwaitakere"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM0L2o",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/markroachforwaitakere"
+    }
+   ],
+   "electorateElectionSlug": "waitakere-electorate",
+   "firstName": "Mark",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/5c0de7138e653bd65b1792957e6ccf4c47a9b1c8-1024x1024.jpg",
+   "lastName": "Roach",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Waitākere electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "19",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "mark-roach"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUi43",
+     "name": "Before politics",
+     "value": "Secondary school teacher"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUi5j",
+     "name": "Residence",
+     "value": "Ngaio"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUi7P",
+     "name": "Age",
+     "value": "49"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUi95",
+     "name": "Public email",
+     "value": "robert.mason@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUiAl",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-robert-mason"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUiCR",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/bobmason.nz/"
+    }
+   ],
+   "electorateElectionSlug": "kenepuru-electorate",
+   "firstName": "Robert",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/4d216beb21d5c18c1026400e47937d8033182b66-1024x1024.jpg",
+   "lastName": "Mason",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Kenepuru electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "20",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "robert-mason"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv0v4",
+     "name": "Before politics",
+     "value": "Video Producer"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv0wH",
+     "name": "Residence",
+     "value": "Upper Hutt"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv0xU",
+     "name": "Age",
+     "value": "29"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv0yh",
+     "name": "Public email",
+     "value": "luke.ross@opportunity.org.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv0zu",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-luke-ross"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv117",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61577823116057"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULv12K",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/lukeforopportunity/?hl=en"
+    }
+   ],
+   "electorateElectionSlug": "remutaka-electorate",
+   "firstName": "Luke",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/7c23620d2f8d967ff538e0e4942b426682892064-1024x1024.jpg",
+   "lastName": "Ross",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Remutaka electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "21",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "luke-ross"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSgnb",
+     "name": "Before politics",
+     "value": "Architectural Designer"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSgpH",
+     "name": "Residence",
+     "value": "Tauranga"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSgqx",
+     "name": "Age",
+     "value": "32"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSgsd",
+     "name": "Public email",
+     "value": "michael.carter@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSguJ",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-michael-carter"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSgvz",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/michaelforopportunity"
+    }
+   ],
+   "electorateElectionSlug": "tauranga-electorate",
+   "firstName": "Michael",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/4d71ba865c18b1daea87eff003e19b31ac8e9087-1024x1024.jpg",
+   "lastName": "Carter",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Tauranga electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "22",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "michael-carter"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yErB74",
+     "name": "Before politics",
+     "value": "Managing Director"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yErBA2",
+     "name": "Residence",
+     "value": "Onehunga"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yErBD0",
+     "name": "Age",
+     "value": "49"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yErBFy",
+     "name": "Public email",
+     "value": "derrick.paull@opportunity.org.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yErBIw",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-derrick-paull"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yErBLu",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61588062417136"
+    }
+   ],
+   "electorateElectionSlug": "maungakiekie-electorate",
+   "firstName": "Derrick",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/4d82dcd0773f060da0998f997f2451adb48cc1af-1024x1024.jpg",
+   "lastName": "Paull",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Maungakiekie electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "23",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "derrick-paull"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "EZWec2ARqjqVWDdf5Qcr5E",
+     "name": "Before politics",
+     "value": "Relief School Teacher"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5Qcr9O",
+     "name": "Residence",
+     "value": "Central Masterton"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5QcrDY",
+     "name": "Age",
+     "value": "32"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5QcrHi",
+     "name": "Public email",
+     "value": "Matt.shepherd@opportunity.org.nz"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5QcrLs",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-matt-shepherd"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5QcrQ2",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61577652958533"
+    }
+   ],
+   "electorateElectionSlug": "wairarapa-electorate",
+   "firstName": "Matt",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/724ec1a93ed8a66fc209f2bc1e56a551135612b5-1024x1024.jpg",
+   "lastName": "Shepherd",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Wairarapa electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "24",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "matt-shepherd"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULvEkj",
+     "name": "Before politics",
+     "value": "Tourism"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULvElw",
+     "name": "Residence",
+     "value": "Auckland"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULvEn9",
+     "name": "Age",
+     "value": "44"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULvEoM",
+     "name": "Public email",
+     "value": "ben.lane@opportunity.org.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULvEpZ",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-ben-lane"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULvEqm",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/benformangere"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULvErz",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/benforopportunity"
+    }
+   ],
+   "electorateElectionSlug": "mangere-electorate",
+   "firstName": "Ben",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/18f73d78bd6faf3cbd31d566b4a163f879ba6501-1024x1024.jpg",
+   "lastName": "Lane",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Māngere electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "25",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "ben-lane"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "TaCek9yHZvfcsE1G9XMW7N",
+     "name": "Before politics",
+     "value": "Journalist, Nurse, Strategist"
+    },
+    {
+     "_key": "TaCek9yHZvfcsE1G9XMWCj",
+     "name": "Residence",
+     "value": "Brooklyn, Wellington"
+    },
+    {
+     "_key": "TaCek9yHZvfcsE1G9XMWI5",
+     "name": "Age",
+     "value": "49"
+    },
+    {
+     "_key": "TaCek9yHZvfcsE1G9XMWNR",
+     "name": "Public email",
+     "value": "ck.sng@opportunity.org.nz"
+    },
+    {
+     "_key": "TaCek9yHZvfcsE1G9XMWSn",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-chee-khiang-sng"
+    },
+    {
+     "_key": "TaCek9yHZvfcsE1G9XMWY9",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61590683270523"
+    },
+    {
+     "_key": "TaCek9yHZvfcsE1G9XMWdV",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/ckforopportunitykapiti"
+    }
+   ],
+   "electorateElectionSlug": "kapiti-electorate",
+   "firstName": "Chee-Khiang",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/cfbd98c74a19d7a2a7d864540ec668e39718beca-1024x1024.jpg",
+   "lastName": "Sng",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Kapiti electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "26",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "chee-khiang-sng"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUph5",
+     "name": "Before politics",
+     "value": "Emergency Medical Call Taker"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUpil",
+     "name": "Residence",
+     "value": "Rotorua"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUpkR",
+     "name": "Age",
+     "value": "22"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUpm7",
+     "name": "Public email",
+     "value": "finn.liley@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUpnn",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-finn-liley"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUppT",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61578431067950"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUpr9",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/finnforopportunity/"
+    }
+   ],
+   "electorateElectionSlug": "rotorua-electorate",
+   "firstName": "Finn",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/ca3320fb33c054946b3b3012b0073cb968c1751f-1024x1024.jpg",
+   "lastName": "Liley",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Rotorua electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "27",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "finn-liley"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUd3j",
+     "name": "Before politics",
+     "value": "Student"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUd5P",
+     "name": "Residence",
+     "value": "Auckland Central"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUd75",
+     "name": "Age",
+     "value": "22"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUd8l",
+     "name": "Public email",
+     "value": "evan.french@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUdAR",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-evan-french"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUdC7",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/evan.french.313"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUdDn",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/evanforopportunity/"
+    }
+   ],
+   "electorateElectionSlug": "glendene-electorate",
+   "firstName": "Evan",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/122dbd166790766b241c9f8d361c0c6daae1193e-1024x1024.jpg",
+   "lastName": "French",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Glendene electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "28",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "evan-french"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEzmaY",
+     "name": "Before politics",
+     "value": "Quality Manager"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEzmdW",
+     "name": "Residence",
+     "value": "Mt Roskill"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEzmgU",
+     "name": "Age",
+     "value": "32"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEzmjS",
+     "name": "Public email",
+     "value": "jamie.attenborough@opportunity.org.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEzmmQ",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-jamie-attenborough"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEzmpO",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/JamieAttenboroughforMtRoskill/"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEzmsM",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/jamieforopportunity/"
+    }
+   ],
+   "electorateElectionSlug": "mt-roskill-electorate",
+   "firstName": "Jamie",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/32f7b0853469250f2b24a9debe7c365f4233616a-1024x1024.jpg",
+   "lastName": "Attenborough",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Mt Roskill electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "29",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "jamie-attenborough"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbvCO",
+     "name": "Before politics",
+     "value": "Organisational change leader"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbvFM",
+     "name": "Residence",
+     "value": "Huntingdon, Mid Canterbury"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbvIK",
+     "name": "Age",
+     "value": "54"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbvLI",
+     "name": "Public email",
+     "value": "matt.harris@opportunity.org.nz"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbvOG",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-matt-harris"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbvRE",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/MattHarrisForRangitata"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbvUC",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/mattharrisforrangitata"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbvXA",
+     "name": "Twitter",
+     "value": "https://x.com/AskMattHarris"
+    }
+   ],
+   "electorateElectionSlug": "rangitata-electorate",
+   "firstName": "Matt",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/755f3dc960033d32098a55e3615c8358199b5c87-1024x1024.jpg",
+   "lastName": "Harris",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Rangitata electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "30",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "matt-harris"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUROl",
+     "name": "Before politics",
+     "value": "General Manager Business"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaURQR",
+     "name": "Residence",
+     "value": "Parnell"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaURS7",
+     "name": "Age",
+     "value": "57"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaURTn",
+     "name": "Public email",
+     "value": "sacha.haskell@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaURVT",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-sacha-haskell"
+    }
+   ],
+   "electorateElectionSlug": "tamaki-electorate",
+   "firstName": "Sacha",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/e79a8493b973ed3ae5cda4406850ba2e563b3276-1024x1024.jpg",
+   "lastName": "Haskell",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Tāmaki electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "31",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "sacha-haskell"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLmTL",
+     "name": "Before politics",
+     "value": "High School Teacher"
+    },
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLmVJ",
+     "name": "Residence",
+     "value": "Palmerston North"
+    },
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLmXH",
+     "name": "Age",
+     "value": "28"
+    },
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLmZF",
+     "name": "Public email",
+     "value": "netra.ghimire@opportunity.org.nz"
+    },
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLmbD",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-netra-ghimire"
+    },
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLmdB",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/share/1ECyitY5Yb/?mibextid=wwXIfr"
+    },
+    {
+     "_key": "kJAu62w5lZXEhmmA4hLmf9",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/netraforopportunity?igsh=amgwc25rcXdlNWcw&utm_source=qr"
+    }
+   ],
+   "electorateElectionSlug": "palmerston-north-electorate",
+   "firstName": "Netra",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/0cee03f509c92e2b2dca0b5b4998f88cf2ca14cc-1024x1024.jpg",
+   "lastName": "Ghimire",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Palmerston North electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "32",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "netra-ghimire"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0MCY",
+     "name": "Before politics",
+     "value": "HR and Operations Manager"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0MFW",
+     "name": "Residence",
+     "value": "Te Hapara"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0MIU",
+     "name": "Age",
+     "value": "32"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0MLS",
+     "name": "Public email",
+     "value": "cail.smith@opportunity.org.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0MOQ",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-cail-smith"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0MRO",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/share/14pbAWq8LiQ/"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0MUM",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/cailforopportunity/"
+    }
+   ],
+   "electorateElectionSlug": "east-cape-electorate",
+   "firstName": "Cail",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/ba0a67be6aa3d964c840da4495c659f4934fa34d-1024x1024.jpg",
+   "lastName": "Smith",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the East Cape electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "33",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "cail-smith"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUtBT",
+     "name": "Before politics",
+     "value": "Small Business Owner"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUtD9",
+     "name": "Residence",
+     "value": "Taupō"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUtEp",
+     "name": "Age",
+     "value": "58"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUtGV",
+     "name": "Public email",
+     "value": "sam.plummer@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUtIB",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-sam-plummer"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUtJr",
+     "name": "Facebook",
+     "value": "www.facebook.com/profile.php?id=61579576150704"
+    }
+   ],
+   "electorateElectionSlug": "taupo-electorate",
+   "firstName": "Sam",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/a91e30f3a90a09bac4c5ce322f91555b4d6b2143-1024x1024.jpg",
+   "lastName": "Plummer",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Taupō electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "34",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "sam-plummer"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTon5",
+     "name": "Before politics",
+     "value": "Critical Care Paramedic"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTool",
+     "name": "Residence",
+     "value": "St Andrews"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaToqR",
+     "name": "Age",
+     "value": "33"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTos7",
+     "name": "Public email",
+     "value": "Blair.smith@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTotn",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-blair-smith"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTovT",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/BlairForHamWest"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaTox9",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/blair_smith_for_opportunity/"
+    }
+   ],
+   "electorateElectionSlug": "hamilton-west-electorate",
+   "firstName": "Blair",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/d1b03fef1f4fce97318940a152c6559d58274440-1024x1024.jpg",
+   "lastName": "Smith",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Hamilton West electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "35",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "blair-smith"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzrU9",
+     "name": "Before politics",
+     "value": "Content Producer"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzrVM",
+     "name": "Residence",
+     "value": "Auckland Central"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzrWZ",
+     "name": "Age",
+     "value": "38"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzrXm",
+     "name": "Public email",
+     "value": "johan.chang@opportunity.org.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzrYz",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-johan-chang"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzraC",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/johanchangforaucklandcentral"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzrbP",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/johanforopportunity"
+    }
+   ],
+   "electorateElectionSlug": "auckland-central-electorate",
+   "firstName": "Johan",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/39892141c265a0d6301c34b7f060a866963a6277-1024x1024.jpg",
+   "lastName": "Chang",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Auckland Central electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "36",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "johan-chang"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUwhX",
+     "name": "Before politics",
+     "value": "Delivery Manager"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUwjD",
+     "name": "Residence",
+     "value": "West Auckland"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUwkt",
+     "name": "Age",
+     "value": "33"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUwmZ",
+     "name": "Public email",
+     "value": "almo.wong@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUwoF",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-almo-wong"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUwpv",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/almowong.opportunity/"
+    }
+   ],
+   "electorateElectionSlug": "henderson-electorate",
+   "firstName": "Almo",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/31d6fbf318a9a72b19934cf2862dde0913a80995-1024x1024.jpg",
+   "lastName": "Wong",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Henderson electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "37",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "almo-wong"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0PeE",
+     "name": "Before politics",
+     "value": "Medical Laboratory Scientist"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0PhC",
+     "name": "Residence",
+     "value": "Selwyn District"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0PkA",
+     "name": "Age",
+     "value": "64"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0Pn8",
+     "name": "Public email",
+     "value": "adrian.mee@opportunity.org.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0Pq6",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-adrian-mee"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0Pt4",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61590390570833"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0Pw2",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/adrianforopportunity/"
+    }
+   ],
+   "electorateElectionSlug": "selwyn-electorate",
+   "firstName": "Adrian",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/7d2c6dbed2f955c2db031a613813ad613084f1a8-1024x1024.jpg",
+   "lastName": "Mee",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Selwyn electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "38",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "adrian-mee"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "epsom-electorate",
+   "firstName": "Paul",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/7180bec47875554af082f37f48b5500f1ef1deaf-1024x1024.jpg",
+   "lastName": "Jackson",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Epsom electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "39",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "paul-jackson"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "klxxTI2yzqiQIMrdxnT50R",
+     "name": "Before politics",
+     "value": "Pharmacist"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnT52x",
+     "name": "Residence",
+     "value": "Howick"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnT55T",
+     "name": "Age",
+     "value": "26"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnT57z",
+     "name": "Public email",
+     "value": "kevin.huang@opportunity.org.nz"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnT5AV",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-kevin-huang"
+    }
+   ],
+   "electorateElectionSlug": "pakuranga-electorate",
+   "firstName": "Kevin",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/7b5b17ce212affb1d01f91c297805e435886196c-1024x1024.jpg",
+   "lastName": "Huang",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Pakuranga electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": "40",
+    "partySlug": "opportunity-party"
+   },
+   "slug": "kevin-huang"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0TrO",
+     "name": "Before politics",
+     "value": "Bicycle Mechanic."
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0TuM",
+     "name": "Residence",
+     "value": "Kauri"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0TxK",
+     "name": "Age",
+     "value": "52"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0U0I",
+     "name": "Public email",
+     "value": "simon.dellabarca@opportunity.org.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0U3G",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-simon-dellabarca"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0U6E",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/people/Simon-for-Whang%C4%81rei/61590625948349/"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yF0U9C",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/simonforopportunity"
+    }
+   ],
+   "electorateElectionSlug": "whangarei-electorate",
+   "firstName": "Simon",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/516b309cb6647b5ae99278c56d52893da27dc397-1024x1024.jpg",
+   "lastName": "DellaBarca",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Whangārei electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "opportunity-party"
+   },
+   "slug": "simon-dellabarca"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaOQp1",
+     "name": "Before politics",
+     "value": "Fibreglass Manufacturer"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaOQqh",
+     "name": "Residence",
+     "value": "Karoro, Greymouth"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaOQsN",
+     "name": "Age",
+     "value": "42"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaOQu3",
+     "name": "Public email",
+     "value": "cindie.uddstrom@opportunity.org.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaOQvj",
+     "name": "Website",
+     "value": "https://www.opportunity.org.nz/candidate-cindie-uddstrom"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaOQxP",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/61577524732833/"
+    }
+   ],
+   "electorateElectionSlug": "west-coast-tasman-electorate",
+   "firstName": "Cindie",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/fb980e2e0b8505a12cbf7e6f724b09e69d3c4ddf-1024x1024.jpg",
+   "lastName": "Uddstrom",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the West Coast-Tasman electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "opportunity-party"
+   },
+   "slug": "cindie-uddstrom"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+# Bruce Dooley
+
+**Party:** nz-outdoors-freedom · **Status:** 2026 candidate
+
+<!-- GENERATED:2026-candidacy START -->
+## 2026 candidacy
+
+- **Before politics:** Medical Doctor GP
+- **Residence:** Takaka, Tasman
+- **Age:** 68
+- **Public email:** contact@freedom.kiwi
+
+### Why I'm standing
+
+As a medical doctor I am concerned about the serious decline in quality and delivery of New Zealand's once-excellent health system. Additionally, we need to address diet and exercise with a mind towards prevention. When in Parliament I intend to work hard to focus government attention on our medical and health crisis.
+
+### About me
+
+Thirty years in New Zealand has sharpened my sense of its unique position and ability to shape world opinion. I am a fighter and will give my all to turn our country back on the right path of serving its people and not global controlling interests.
+
+_Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/nz-outdoors--freedom-party), retrieved Oct 2026._
+<!-- GENERATED:2026-candidacy END -->

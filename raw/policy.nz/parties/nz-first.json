@@ -1,0 +1,3089 @@
+{
+ "party": {
+  "attributes": [
+   {
+    "_key": "227mFCOl8uclHuS5roVjKC",
+    "icon": null,
+    "name": "Year founded",
+    "value": "1993"
+   },
+   {
+    "_key": "227mFCOl8uclHuS5roVjN1",
+    "icon": null,
+    "name": "Times in government",
+    "value": "4"
+   },
+   {
+    "_key": "227mFCOl8uclHuS5roVjPq",
+    "icon": null,
+    "name": "Current MPs",
+    "value": "8"
+   },
+   {
+    "_key": "227mFCOl8uclHuS5roVjSf",
+    "icon": null,
+    "name": "Number of electorates held",
+    "value": "0"
+   },
+   {
+    "_key": "227mFCOl8uclHuS5roVjVU",
+    "icon": null,
+    "name": "2025 donations",
+    "value": "$1,360,272.56"
+   },
+   {
+    "_key": "227mFCOl8uclHuS5roVjYJ",
+    "icon": null,
+    "name": "2026 polling average",
+    "value": "9.7%"
+   }
+  ],
+  "color": "#454545",
+  "description": "New Zealand First (Aotearoa Tuatahi) are a centrist, yet socially conservative party. The party has traditionally supported a moderate role for government. It emphasises its ability to be a check on both Labour and National and marry economic moderation with conservative views on gender, indigenous rights and immigration. Led by long-term leader Winston Peters, the party has been in government on four occasions, once with National in 1996, then Labour in 2005 and 2017. It has been in government with National and Act from 2023 to 2026. It is known for introducing the gold card for pensioners in 2008 and supporting extractive industries. ",
+  "image": "https://cdn.sanity.io/images/ubdwo62y/production/66e160e23a11773a94a8a452f422e285442ff428-800x800.png",
+  "name": "NZ First",
+  "slug": "nz-first"
+ },
+ "policies": [
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3604qZ7",
+     "name": "Why",
+     "value": "This party says that New Zealanders are paying too much for power, because four large companies generate 90 percent of NZ's power, controlling the supply and selling the power directly to customers. The party says that this situation results in high prices for households and industry, leading to companies closing down and job losses. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3604qeB",
+     "name": "How",
+     "value": "This party would replace the current system so that generation and retail are not done by the same companies. This would make sure that the most expensive generator would not set the price for the rest of the market.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3604qjF",
+     "title": "'Breaking up the Gentailers', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813014033/https://www.nzfirst.nz/breaking_up_the_gentailers"
+    }
+   ],
+   "reference": "POL54656",
+   "statement": "Divide the \"generation\" and \"retail\" aspects of power companies",
+   "topics": [
+    "transport-and-infrastructure",
+    "incomes-and-employment",
+    "economy",
+    "transport-and-infrastructure",
+    "economy",
+    "energy",
+    "prices",
+    "economic-development-and-industry",
+    "key-policies-transport-and-infrastructure",
+    "key-policies-economy"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3604rXt",
+     "name": "Why",
+     "value": "This party says that prices for electricity are too high in NZ. Because of the structure of the market with four major companies, it is hard for competitors to enter the market. The \"gentailer\" companies can hold back supply, making electricity more expensive, instead of investing in more power generation. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3604rcx",
+     "name": "How",
+     "value": "This party would guarantee long-term, fixed-price contractions for building new electricity generation. The companies building this infrastructure would receive guarantees that their power would be the first to be used when needed. This would make it easier for investors to fund electricity generation projects, and increase New Zealand's energy security and resilience.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3604ri1",
+     "title": "'Breaking up the Gentailers', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813014033/https://www.nzfirst.nz/breaking_up_the_gentailers"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3604rn5",
+     "title": "'Release: Labour will make price gouging illegal', 16 September 2026 (accessed 16 September 2026)",
+     "url": "https://web.archive.org/web/20260916083128/https://www.labour.org.nz/news/release-labour-will-make-price-gouging-illegal/"
+    }
+   ],
+   "reference": "POL54657",
+   "statement": "Guarantee fixed-price contracts for new electricity generation projects",
+   "topics": [
+    "transport-and-infrastructure",
+    "transport-and-infrastructure",
+    "incomes-and-employment",
+    "transport-and-infrastructure",
+    "energy",
+    "infrastructure-funding-and-planning",
+    "prices",
+    "key-policies-transport-and-infrastructure"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3604sbj",
+     "name": "Why",
+     "value": "This party says that food prices are too high in New Zealand, as a result of a supermarket duopoly controlling 80% of the grocery market. Food producers and households do not get a good deal from this system. Creating more competition will drive prices down. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3604sgn",
+     "name": "How",
+     "value": "This party would introduce legislation to split the Foodstuffs brands into two cooperatives; one for New World and Four Square and the other for Pak'n'Save. This would create more competition with Woolworths and result in lower prices and fairer deals for producers. This would create more certainty for major businesses like McCains and Heinz Watties, which have experienced job losses as a result of a poorly functioning system.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3604slr",
+     "title": "'Break up the Supermarket Duopoly', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813014141/https://www.nzfirst.nz/break_up_the_supermarket_duopoly"
+    }
+   ],
+   "reference": "POL54658",
+   "statement": "Separate the Foodstuffs supermarket chain into two national cooperatives",
+   "topics": [
+    "incomes-and-employment",
+    "economy",
+    "economy",
+    "economy",
+    "prices",
+    "business-support",
+    "economic-development-and-industry",
+    "key-policies-economy"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3604tkd",
+     "name": "Why",
+     "value": "This party says that the current Grocery Commissioner does not have the power to enforce the sector properly. The Commerce Commission cannot apply penalties as high as its counterpoint in Australia, investigations are often slow, and penalties are not enforced."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3604tph",
+     "name": "How",
+     "value": "This party would increase the powers assigned to the Commerce Commission and Grocery Commissioner. The Commerce Commission would be able to apply penalties for serious breaches of up to $10 million, three times the gain, or 10 percent of turnover. Investigations would be faster and enforcement stricter. The Grocery Commissioner would have powers to investigate, make binding decisions and apply penalties directly. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3604tul",
+     "title": "'Break up the Supermarket Duopoly', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813014141/https://www.nzfirst.nz/break_up_the_supermarket_duopoly"
+    }
+   ],
+   "reference": "POL54659",
+   "statement": "Give the Commerce Commission and Grocery Commissioner more powers",
+   "topics": [
+    "incomes-and-employment",
+    "economy",
+    "law-justice-and-government",
+    "economy",
+    "economy",
+    "prices",
+    "economic-development-and-industry",
+    "criminal-justice",
+    "business-support",
+    "key-policies-economy"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3604uP9",
+     "name": "Why",
+     "value": "This party says that prices for food are too high in NZ, in part because supermarkets limit small food providers' access to customers. The supermarkets control suppliers' access to the market, favouring larger providers. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3604uUD",
+     "name": "How",
+     "value": "This party would introduce a new industry framework into the Commerce Act 1986 to fix competition issues quickly without waiting for legislative change. This would ensure producers are not pushed off supermarket shelves by larger players.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3604uZH",
+     "title": "'Break up the Supermarket Duopoly', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813014141/https://www.nzfirst.nz/break_up_the_supermarket_duopoly"
+    }
+   ],
+   "reference": "POL54660",
+   "statement": "Make it easier for small food suppliers to compete on supermarket shelves",
+   "topics": [
+    "incomes-and-employment",
+    "economy",
+    "prices",
+    "agriculture"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3604ujP",
+     "name": "Why",
+     "value": "This party says that mining plays a vital role in NZ's economy and regions as one of the country's most productive sectors. The benefits of mining do not always stay in these regions, and communities should directly benefit from local mining projects. If mining expands, infrastructure and development in the regions must grow too.  "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3604uoT",
+     "name": "How",
+     "value": "This party would invest 50 percent of mining royalties in the region the resources were extracted from. This money would be spend on infrastructure like flood protection, energy generation transport and housing development and would be backed up by targeted regional investment. This money would also fund Mines Rescue capabilities.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3604utX",
+     "title": "'Returning 50% of mining royalties to the regions', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813014242/https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions"
+    }
+   ],
+   "reference": "POL54661",
+   "statement": "Return at least 50 percent of mining project royalties to the region where mining took place",
+   "topics": [
+    "economy",
+    "economy",
+    "economy",
+    "te-ao-maori",
+    "economy",
+    "oil-gas-and-mining",
+    "economic-development-and-industry",
+    "regional-development",
+    "land-and-resources",
+    "government-revenue-and-finance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3604wWp",
+     "name": "Why",
+     "value": "This party says that NZ needs to gain the maximum benefit from its resources. Knowing which resources are available is a key step for making decisions about future mining projects. Investing in science, technology and the mining workforce will protect the benefits of mining into the future. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3604wbt",
+     "name": "How",
+     "value": "This party would invest in advanced core-scanning technology and pay for a modern geological survey to be done throughout NZ. It would also reopen the School of Mines to build the mining workforce and ensure that money made in the mining industry stays in NZ. Building on policies like Fast-track, this would make it easier for new mines to be created."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3604wgx",
+     "title": "'Returning 50% of mining royalties to the regions', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813014242/https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions"
+    }
+   ],
+   "reference": "POL54662",
+   "statement": "Survey all of NZ to look for minerals ",
+   "topics": [
+    "economy",
+    "economy",
+    "economy",
+    "te-ao-maori",
+    "oil-gas-and-mining",
+    "economic-development-and-industry",
+    "key-policies-economy",
+    "land-and-resources"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3604xLT",
+     "name": "Why",
+     "value": "This party says that 85 percent of New Zealand banks are owned by Australian companies, and lending is offered at margins higher than Australia. Domestically-owned Kiwibank has just 8 percent of the mortgage market. A New Zealand bank of a similar scale would compete with these major Australian banks and promote economic sovereignty. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3604xQX",
+     "name": "How",
+     "value": "This party would use ACC, banking bonds, Crown debt and Kiwisaver capital to buy BNZ from the National Australia Bank. It would be combined with Kiwibank to form the fully Crown-owned National Bank of New Zealand. The profits generated by BNZ would finance the buy-back.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3604xVb",
+     "title": "'Backing a New Zealand Owned Bank', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813014557/https://www.nzfirst.nz/backing_a_new_zealand_owned_bank"
+    }
+   ],
+   "reference": "POL54663",
+   "statement": "Return BNZ to NZ ownership",
+   "topics": [
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "economy",
+    "prices",
+    "superannuation-and-savings",
+    "government-revenue-and-finance"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3604yPJ",
+     "name": "Why",
+     "value": "This party says that ensuring children are enrolled in Kiwisaver would create benefits that compound for decades. Birth enrollment ensures that all New Zealanders can participate, and an up-front government contribution of $1,000 would mean that all citizens will enter adulthood with savings. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3604yUN",
+     "name": "How",
+     "value": "This party would enrol all New Zealand citizens in Kiwisaver at birth and provide a $1,000 contribution to all these accounts from the Crown. This would complement other Kiwisaver policies, including increasing employee and employer contribution to 8% and 10% and making enrolment compulsory for all people in the workforce.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3604xfj",
+     "title": "'Establishing a Kiwisaver Generation', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813014452/https://www.nzfirst.nz/establishing_a_kiwisaver_generation"
+    }
+   ],
+   "reference": "POL54664",
+   "statement": "Enrol New Zealand citizens in Kiwisaver at birth",
+   "topics": [
+    "incomes-and-employment",
+    "community-and-inclusion",
+    "community-and-inclusion",
+    "incomes-and-employment",
+    "superannuation-and-savings",
+    "seniors",
+    "young-people",
+    "key-policies-incomes-and-employment"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3604zJ1",
+     "name": "Why",
+     "value": "This party says that this board is not accountable to ratepayers, yet influences decisions that are part of Auckland Council. The board is not elected and cost $3.5m last year. It says that Auckland Council can engage with Māori and recognise their interests but that this engagement should happen through people who are elected."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3604zO5",
+     "name": "How",
+     "value": "This party would introduce a members bill to disestablish the Independent Māori Statutory Board. All functions of the board would be returned to the main body of Auckland Council.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3604zT9",
+     "title": "'Disestablish Auckland's 'Independent Maori Statutory Board'', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813014648/https://www.nzfirst.nz/disestablish_auckland_s_independent_maori_statutory_board"
+    }
+   ],
+   "reference": "POL54668",
+   "statement": "Disestablish the Independent Māori Statutory Board from Auckland Council",
+   "topics": [
+    "law-justice-and-government",
+    "te-ao-maori",
+    "te-ao-maori",
+    "economy",
+    "local-government",
+    "te-tiriti-o-waitangi-and-governance",
+    "key-policies-te-ao-maori",
+    "regional-development"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb36050Rv",
+     "name": "Why",
+     "value": "This party says that New Zealand's birth rate is only 1.53 children per woman, when the replacement rate is 2.1 children per woman. If something is not done, this party says New Zealand may become entirely dependent on immigration in the future. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36050Wz",
+     "name": "How",
+     "value": "This party would offer all new parents (where at least one is a New Zealand citizen) a $5000 grant per year for the first three years of their child's life. This grant would apply to the first, second, and third children which the couple have. The grant would be tax free and not replace any current support.  This party estimates that this policy would cost $400 million per three-year-cycle."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb36050c3",
+     "title": "'The 'Kiwi Kids Grant'', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813015246/https://www.nzfirst.nz/the_kiwi_kids_grant"
+    }
+   ],
+   "reference": "POL54746",
+   "statement": "Support new parents with a $5000 grant for the first three years of their child's life",
+   "topics": [
+    "incomes-and-employment",
+    "community-and-inclusion",
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "community-and-inclusion",
+    "benefits",
+    "young-people",
+    "tax-and-income-support",
+    "key-policies-incomes-and-employment",
+    "key-policies-community-and-inclusion"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb36051GZ",
+     "name": "Why",
+     "value": "This party says that the present 50 million litres per year is too low to incentivise production at a large scale. The status-quo supports New Zealand-based dairy manufacturers, but does not support these firms to scale to size, which disincentives investment into Fonterra. \n\nMarketing ‘New Zealand Dairy’, this party sees this policy as a means of making NZ’s dairy manufacturing sector more competitive in export markets. It says it is important for the milk provision not to be a subsidy; dairy manufacturing firms would cover delivery and collection costs and pay farmers market rates. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36051Ld",
+     "name": "How",
+     "value": "This party would increase milk access from 50 million litres to 500 million litres per year over the first six years. From there, access would taper to 80 per cent, 60 per cent, 40 per cent and 20 per cent to encourage immediate investment. This would be done through changing the Dairy Industry Restructuring Act 2001. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb36051Qh",
+     "title": "'NZ First launches 'Use It or Lose It' dairy policy', 20 August 2026 (accessed 26 August 2026)",
+     "url": "https://web.archive.org/web/20260823215053/https://www.nzfirst.nz/nz_first_launches_use_it_or_lose_it_dairy_policy"
+    }
+   ],
+   "reference": "POL54754",
+   "statement": "Increase the milk quantity guaranteed to NZ dairy manufacturing",
+   "topics": [
+    "economy",
+    "economy",
+    "economy",
+    "agriculture",
+    "trade-and-exports",
+    "economic-development-and-industry"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb36052FL",
+     "name": "Why",
+     "value": "This party says Marsden Point should be allowed to operate under a lighter regulatory framework to support domestic energy production. The party argues that, with rising global tensions and increasing energy costs, New Zealand needs to better ensure itself against spikes in global fuel prices. Establishing a special economic zone (SEZ) will attract foreign investment. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36052KP",
+     "name": "How",
+     "value": "This party would establish a Special Economic Zone, which would see a combination of tax breaks, wage subsidies, and reduced regulation to incentivise the development of energy and port operations. The party says that the principal benefits of the economic zone would be the bypassing of planning regulations and the RMA. If elected, this party would consider providing additional funding to help local councils run services in the SEZ, such as investment in physical, transport or communications infrastructure.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb36052PT",
+     "title": "'Establishing a Special Economic Zone At Marsden Point', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813014909/https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point"
+    }
+   ],
+   "reference": "POL54755",
+   "statement": "Establish a Special Economic Zone at Marsden Point",
+   "topics": [
+    "economy",
+    "transport-and-infrastructure",
+    "economy",
+    "economy",
+    "economic-development-and-industry",
+    "energy",
+    "business-support",
+    "regional-development"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360533z",
+     "name": "Why",
+     "value": "This party claims the rebuild is representative of Christchurch's earthquake recovery. Completing the rebuild would restore a symbol of the city's heritage and be a boost for local tourism and business in the city.  "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605393",
+     "name": "How",
+     "value": "The party has pledged $15m dollars to Christ Church Cathedral Reinstatement Ltd to complete the company's proposed pathway. The funding would be alongside money Christchurch City Council, not instead of. \n\nThe additional government funding would help complete the first stage of the new rebuild project. This would re-open the Cathedral and remove the hoardings from the square during the first stage of full revitalisation.\n\n This party estimates that this policy would cost 15 million over one year. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb36053E7",
+     "title": "'Complete the Christchurch Cathedral', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813015000/https://www.nzfirst.nz/complete_the_christchurch_cathedral"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36053JB",
+     "title": "'NZ First Campaign Announcement: Funding For Christ Church Cathedral Rebuild', 27 March 2026 (accessed 27 August 2026)",
+     "url": " /web/20260827002604/https://community.scoop.co.nz/2026/03/nz-first-campaign-announcement-funding-for-christ-church-cathedral-rebuild/"
+    }
+   ],
+   "reference": "POL54756",
+   "statement": "Complete the reconstruction of Christchurch Cathedral",
+   "topics": [
+    "media-culture-and-recreation",
+    "law-justice-and-government",
+    "media-culture-and-recreation",
+    "arts-culture-and-heritage",
+    "local-government",
+    "key-policies-media-culture-and-recreation"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb36054Hx",
+     "name": "Why",
+     "value": "This party says that Māori have been better represented since the establishment of MMP. When MMP was introduced, a report recommended scrapping the old Māori seats because Māori would be better represented. The party argues that a referendum is needed to justify the seats' existence and so the issue can be settled. It also cites the conduct of Te Pati Māori in Parliament as justifying the need for a referendum. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36054N1",
+     "name": "How",
+     "value": "This party would introduce legislation to run a public referendum on the Māori seats at the next general election. It says the referendum would have no extra costs if it could be included on the ballot papers at the next general election. The result would not affect the outcomes of that election, but the following election three years later.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb36053TJ",
+     "title": "'Referendum on Maori Seats', undated (accessed 13 August 2026)",
+     "url": "https://web.archive.org/web/20260813014751/https://www.nzfirst.nz/referendum_on_maori_seats"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36053YN",
+     "title": "'Referendum on Maori Seats\n', undated (accessed 27 August 2026)",
+     "url": "/web/20260827012337/https://www.nzfirst.nz/referendum_on_maori_seats"
+    }
+   ],
+   "reference": "POL54757",
+   "statement": "Introduce a binding referendum on the Māori seats",
+   "topics": [
+    "te-ao-maori",
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "te-ao-maori",
+    "te-tiriti-o-waitangi-and-governance",
+    "parliament-and-democracy",
+    "key-policies-law-justice-and-government",
+    "key-policies-te-ao-maori"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb36055Bf",
+     "name": "Why",
+     "value": "This party says that it is a problem that after two years of living in NZ, someone can claim permanent residency and vote. For visa holders who have no expiry date for their visa, they can technically vote after one year. It says that only those who are natural-born citizens and have sworn allegiance to NZ should be able to vote for who governs the country and in referendums that can change NZ."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36055Gj",
+     "name": "How",
+     "value": "This party would restrict voting rights for all referenda and levels of government (including local government) to those with legal citizenship.\n\nPermanent residents will still retain other rights such as the right to live, work, study, and access government support.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb36055Ln",
+     "title": "'Citizen’s Only Voting', undated (accessed 27 August 2026)",
+     "url": "/web/20260827014537/https://www.nzfirst.nz/citizens_only_voting"
+    }
+   ],
+   "reference": "POL54759",
+   "statement": "Ensure that only NZ citizens can vote",
+   "topics": [
+    "te-ao-maori",
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "te-ao-maori",
+    "te-tiriti-o-waitangi-and-governance",
+    "parliament-and-democracy",
+    "key-policies-law-justice-and-government",
+    "key-policies-te-ao-maori"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb36056KZ",
+     "name": "Why",
+     "value": "The party says that New Zealanders who have worked since they were teenagers deserve security in retirement. As superannuation becomes harder to pay for as the population ages, it's unfair for people who have lived and worked in the country for a lot less time to receive the same payments. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36056Pd",
+     "name": "How",
+     "value": "The party would phase in the demand that one be a citizen to be eligible for superannuation over three years. It would amend the eligibility criteria to remove access to NZ Super for permanent residents.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb36056Uh",
+     "title": "'NZFirst Campaign Announcement: NZ Super for Citizens Only\n', 6 September 2026 (accessed 11 September 2026)",
+     "url": "/web/20260911012209/https://www.nzfirst.nz/nzfirst_campaign_announcement_nz_super_for_citizens_only"
+    }
+   ],
+   "reference": "POL54961",
+   "statement": "Provide superannuation only to NZ citizens",
+   "topics": [
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "migration",
+    "incomes-and-employment",
+    "migration",
+    "superannuation-and-savings",
+    "benefits",
+    "migration",
+    "key-policies-incomes-and-employment",
+    "key-policies-migration"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb360579D",
+     "name": "Why",
+     "value": "This party says that housing is becoming more expensive and that there's a greater need for social housing. The party claims that it is unjust not to distinguish between a citizen and someone yet to become a citizen when providing a scarce resource like social housing.  "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36057EH",
+     "name": "How",
+     "value": "This party would amend legislation to prioritise NZ citizens in the allocation of social housing. Resident class visa holders will retain eligibility to be on the waitlist, but NZ citizens will be fast-tracked up the waitlist for social housing.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb36057JL",
+     "title": "'NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)",
+     "url": "/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies"
+    }
+   ],
+   "reference": "POL54962",
+   "statement": "Reserve social housing for NZ citizens first",
+   "topics": [
+    "housing",
+    "migration",
+    "housing",
+    "social-and-public-housing",
+    "migration",
+    "key-policies-housing"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb36057TT",
+     "name": "Why",
+     "value": "This party says that the illegal overstaying of visas by migrants is causing public distrust of the immigration system. However, people have built a life here and are discouraged by bans on re-entering the country if caught and deported. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36057YX",
+     "name": "How",
+     "value": "This party would provide a 24-month/two-year amnesty whereby, if one chooses to self-deport by leaving the country, they will be eligible to apply to immigrate to NZ legally. Any overstayer caught thereafter will receive a permanent ban from applying. Pacific overstayers will be able to apply for a legal visa right away and stay in NZ.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb36057db",
+     "title": "'NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)",
+     "url": "/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies"
+    }
+   ],
+   "reference": "POL54963",
+   "statement": "Allow a two-year amnesty on overstayers if they self-deport",
+   "topics": [
+    "migration",
+    "community-and-inclusion",
+    "migration",
+    "pasifika"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb36058mV",
+     "name": "Why",
+     "value": "This party says that student visa holders compete in the competitive graduate job market and can take jobs from New Zealanders. It stays the intent of international education is for overseas economies to give money to NZ by paying for their education, not to provide automatic work rights and residence pathways. The party also cites broader concern with net numbers of migrants entering New Zealand and sees changes to student visas as a way of reducing net migration and its effect on infrastructure.  "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36058rZ",
+     "name": "How",
+     "value": "This party would have student visa holders lose their automatic right to work. To be allowed to work, student visa holders would have to fulfil strict conditions to ensure they are not doing work that could be done by NZ citizens. People who have been on student visas and want to transition to another visa would have to leave NZ and reapply for a new visa from overseas. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb36058wd",
+     "title": "'NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)",
+     "url": "/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies"
+    }
+   ],
+   "reference": "POL54964",
+   "statement": "Remove automatic work rights from student visas",
+   "topics": [
+    "education",
+    "migration",
+    "education",
+    "incomes-and-employment",
+    "tertiary-fees-and-student-support",
+    "migration",
+    "key-policies-education",
+    "wages-and-working-conditions"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb36059lH",
+     "name": "Why",
+     "value": "This party says that benefit support comes with the rights and responsibilities of being a New Zealander. It wants to prevent the use of benefits by migrants yet to become citizens and to slow down net migration."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb36059qL",
+     "name": "How",
+     "value": "This party would implement a benefit stand-down period of ten years. This period would be in line with the additional changes to citizenship and permanent residency, where the required period to qualify for citizenship would double from five years to a minimum of ten years and from two years to five years for permanent residency.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb36059vP",
+     "title": "'NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)",
+     "url": "/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies"
+    }
+   ],
+   "reference": "POL54965",
+   "statement": "Create a benefit stand-down period of ten years for migrants and lengthen residency and citizenship eligibility",
+   "topics": [
+    "migration",
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "migration",
+    "migration",
+    "benefits",
+    "tax-and-income-support",
+    "key-policies-migration"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605Ap7",
+     "name": "Why",
+     "value": "This party says that that public trust in the immigration system requires trust that violent offenders would be deported. Immigration to NZ is a privilege, not a right. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605AuB",
+     "name": "How",
+     "value": "This party would widen the criteria for deportation liability to cover any offence for which imprisonment is available as a sentence. Automatic deportation will be applied to those found guilty of violent or sexual crimes, fraud, participating in an organised criminal group, money laundering, or exploiting migrants.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605A5X",
+     "title": "'NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)",
+     "url": "/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies"
+    }
+   ],
+   "reference": "POL54966",
+   "statement": "Expand criteria for deportation ",
+   "topics": [
+    "migration",
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "migration",
+    "migration",
+    "criminal-justice",
+    "key-policies-law-justice-and-government",
+    "key-policies-migration"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605B4J",
+     "name": "Why",
+     "value": "This party says that application fees will be increased to fund the additional administrative burden of its other immigration reforms. Such increases should be accepted by applicants, as, according to the party, immigration to NZ is a privilege, not a right. The party claims that the application fee should be reflective of the value of becoming a New Zealander."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605B9N",
+     "name": "How",
+     "value": "This party would increase citizenship and permanent residence application fees. The revenue gained from this will fund the additional administrative burden resulting from these stricter processes.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605BER",
+     "title": "'NZ First Announces Immigration Reform Policies', 11 September 2026 (accessed 11 September 2026)",
+     "url": "/web/20260911013910/https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies"
+    }
+   ],
+   "reference": "POL54967",
+   "statement": "Raise citizenship and permanent residence application fees",
+   "topics": [
+    "migration",
+    "migration"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605CDD",
+     "name": "Why",
+     "value": "This party says that too large a share of NZ health spending goes towards caring for people once they're sick, as opposed to before. The party claims that 59% of health spending is spent treating chronic illness, and only 1.75% on the prevention of such conditions. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605CIH",
+     "name": "How",
+     "value": "This party would promote nutrition from primary school to medical school, use health coaches in GP care, and require a full independent review of our dietary guidelines. It would fund research and development to better assess nutritional interventions for preventing and treating mental illness. It would fund development in agricultural tech and cut regulatory barriers to help grow markets for organic food items.  It would investigate how the use of vitamins in the delivery of healthcare can prevent people from getting sick again, including intravenous vitamin C pre- and post-surgery for preventing and treating infections."
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605CNL",
+     "title": "'NZFirst Campaign Announcement: The Plan to “Make NZ Healthy”\n', 20 September 2026 (accessed 21 September 2026)",
+     "url": "/web/20260921001655/https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy"
+    }
+   ],
+   "reference": "POL55057",
+   "statement": "Promote healthy eating as preventative healthcare",
+   "topics": [
+    "health",
+    "health",
+    "education",
+    "education",
+    "health-services",
+    "public-health",
+    "early-childhood-education",
+    "schools"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605D1r",
+     "name": "Why",
+     "value": "This party says that the healthcare system responds to crises without dealing with the underlying causes, such as poor nutrition. It claims the incorporation of health coaches can help educate patients on how to better avoid underlying causes of illness. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605D6v",
+     "name": "How",
+     "value": "This party would fund health coaches to be staffed at local general practices.    "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605DBz",
+     "title": "'NZFirst Campaign Announcement: The Plan to “Make NZ Healthy”\n', 20 September 2026 (accessed 21 September 2026)",
+     "url": "/web/20260921001655/https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy"
+    }
+   ],
+   "reference": "POL55073",
+   "statement": "Make health coaches an integrated part of primary care",
+   "topics": [
+    "health",
+    "health",
+    "health",
+    "health-services",
+    "health-funding-and-workforce",
+    "public-health"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605E0d",
+     "name": "Why",
+     "value": "This party says that there is too little investment in preventive care. Poor nutrition is a driver of underlying conditions that lead people to need expensive healthcare.  "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605E5h",
+     "name": "How",
+     "value": "This party would fund NZ scientists to assess nutritional interventions for preventing and treating mental illness. It would remove Medsafe/Pharmac barriers to recognising safe nutrients and invest in hospital trials that assess the effectiveness of intravenous vitamin C to treat infections. Farmers would be supported by to invest in the research of alternatives to potentially harmful agricultural sprays. It would fund development in agricultural tech and cut regulatory barriers to help grow markets for organic food items.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605EAl",
+     "title": "'NZFirst Campaign Announcement: The Plan to “Make NZ Healthy”\n', 20 September 2026 (accessed 21 September 2026)",
+     "url": "/web/20260921001655/https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy"
+    }
+   ],
+   "reference": "POL55076",
+   "statement": "Fund organic and nutrient-based health interventions",
+   "topics": [
+    "economy",
+    "health",
+    "health",
+    "health",
+    "business-support",
+    "public-health",
+    "mental-health",
+    "key-policies-health"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605FJf",
+     "name": "Why",
+     "value": "This party says that too large a share of NZ health spending goes towards caring for people once they're sick, as opposed to before. The party claims that 59% of health spending is spent treating chronic illness, and only 1.75% is spent on the prevention of such conditions. Better education and info can help inform people of how they can best make healthier decisions. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605FOj",
+     "name": "How",
+     "value": "This party would launch an independent review that seeks to better understand metabolic health. It would promote nutrition from primary school to medical school. Such a review would look at current dietary guidelines.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605FTn",
+     "title": "'New Zealand First Makes Mill Road Extension A Priority For South Auckland', 17 August 2026 (accessed 24 August 2026)",
+     "url": "https://web.archive.org/web/20260824030425/https://www.scoop.co.nz/stories/PO2608/S00121/new-zealand-first-makes-mill-road-extension-a-priority-for-south-auckland.htm?_gl=1%2Ahky0cg%2A_gcl_au%2AMTk4NTg5NzkzNi4xNzg2NDAxNDc5%2A_ga%2AMTA2ODM2Mjg3Mi4xNzg2NDAxNDc5%2A_ga_GGVMM3MB82%2AczE3ODc1NDA1MjkkbzMkZzEkdDE3ODc1NDA1ODMkajYkbDAkaDA."
+    }
+   ],
+   "reference": "POL55077",
+   "statement": "Commission a full and independent review of NZ's nutritional guidelines and education",
+   "topics": [
+    "health",
+    "education",
+    "health",
+    "health",
+    "education",
+    "health",
+    "medicines",
+    "tertiary-education-and-research",
+    "public-health",
+    "health-services",
+    "key-policies-education",
+    "key-policies-health"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605G8J",
+     "name": "Why",
+     "value": "This party says that preventive care is underemphasised as part of the NZ health system. Regulatory barriers can increase costs for doctors, and professional standards are seen as too restrictive from the party's perspective. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605GDN",
+     "name": "How",
+     "value": "This party would reduce the regulatory burden on doctors in primary care. It would also allow greater diversity of medical viewpoints in professional standards.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605GIR",
+     "title": "'NZFirst Campaign Announcement: The Plan to “Make NZ Healthy”\n', 20 September 2026 (accessed 21 September 2026)",
+     "url": "/web/20260921001655/https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy"
+    }
+   ],
+   "reference": "POL55078",
+   "statement": "Increase autonomy and reduce administration for general practitioners",
+   "topics": [
+    "health",
+    "health",
+    "health",
+    "public-health",
+    "health-funding-and-workforce",
+    "key-policies-health"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605Gwx",
+     "name": "Why",
+     "value": "This party says that NZ firms need support for greater productivity and growth. The party argues that small businesses operating on thin margins need additional support to invest, develop, and start up. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605H21",
+     "name": "How",
+     "value": "This party would lower the corporate tax rate for all firms with turnover less than $30 million. The party claims the cost would initially be $1 billion and that additional growth would cover additional costs over time.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605H75",
+     "title": "'Lowering Tax Rate for SMEs to 20%', undated (accessed 24 September 2026)",
+     "url": "https://web.archive.org/web/20260924022431/https://www.nzfirst.nz/20_tax_rate_for_smes"
+    }
+   ],
+   "reference": "POL55155",
+   "statement": "Lower the corporate tax rate to 20% for small businesses ",
+   "topics": [
+    "incomes-and-employment",
+    "economy",
+    "economy",
+    "tax-and-income-support",
+    "business-support",
+    "economic-development-and-industry"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605Hlb",
+     "name": "Why",
+     "value": "This party says that the Waitangi Tribunal, in its capacity to hear alleged ongoing breaches of the Treaty, is beginning to violate Parliament's sovereignty and voters' rights through its criticism of government policy.   "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605Hqf",
+     "name": "How",
+     "value": "This party would replace the Waitangi Tribunal with the Treaty of Waitangi Completion Commission, tasked with finalising all claims lodged before 2008.  It would implement this policy within the first hundred days of forming a government.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605Hvj",
+     "title": "'Winston Peters - “Ending the Waitangi Make-Work Industry”', 27 September 2026 (accessed 27 September 2026)",
+     "url": "/web/20260927063935/https://www.nzfirst.nz/winston_peters_ending_the_waitangi_make_work_industry"
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605I0n",
+     "title": "'NZFirst to Campaign on Ending the Waitangi Make-Work Industry', 27 September 2026 (accessed 27 September 2026)",
+     "url": " /web/20260927064142/https://www.nzfirst.nz/ending_the_waitangi_make_work_industry"
+    }
+   ],
+   "reference": "POL55157",
+   "statement": "Replace the Waitangi Tribunal with a Treaty of Waitangi Completion Commission",
+   "topics": [
+    "te-ao-maori",
+    "law-justice-and-government",
+    "law-justice-and-government",
+    "te-tiriti-o-waitangi-and-governance",
+    "public-sector",
+    "parliament-and-democracy"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605IVB",
+     "name": "Why",
+     "value": "This party says that the fireworks cause distress for pets, fires, and lead to increased use of emergency response resources. This leads to healthcare and ACC costs."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605IaF",
+     "name": "How",
+     "value": "This party would introduce legislation that will stop the retail sale, manufacture, and importation of fireworks for public use. Fireworks would still be allowed for approved public displays.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605IfJ",
+     "title": "'NZFirst to Ban Public Sales of Fireworks', 9 October 2026 (accessed 09 October 2026)",
+     "url": "/web/20261009005530/https://www.nzfirst.nz/nzfirst_to_ban_public_sales_of_fireworks"
+    }
+   ],
+   "reference": "POL55234",
+   "statement": "Ban public sales of fireworks",
+   "topics": [
+    "law-justice-and-government",
+    "media-culture-and-recreation",
+    "family-justice-and-safety",
+    "sports-and-recreation"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605JOt",
+     "name": "Why",
+     "value": "This party says that working parents are struggling to get by and afford the essentials. The party cites the additional, but temporary, $50 added to the IWFTC by the government this year as needing to be increased and made permanent. The party says such changes will turn the temporary relief into a long-term pathway for parents in work to be able to plan for their families’ future."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605JTx",
+     "name": "How",
+     "value": "This party would increase the IWFTC by $70 a week. The increase would not apply to the Family Tax Credit (FTC), which covers parents regardless of employment status. This party estimates that this policy would cost between $500m and $600m annually. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605IpR",
+     "title": "'NZ First to Increase Working for Families, Minimum Wage', 10 October 2026 (accessed 12 October 2026)",
+     "url": "/web/20261011233947/https://www.nzfirst.nz/nz_first_to_increase_working_for_families_minimum_wage"
+    }
+   ],
+   "reference": "POL55257",
+   "statement": "Increase In-Work-Family-Tax-Credit by $70 a week",
+   "topics": [
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "community-and-inclusion",
+    "benefits",
+    "tax-and-income-support",
+    "young-people"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605JyL",
+     "name": "Why",
+     "value": "This party says that workers need their wages to not fall below inflation. The party says it has advocated for this in coalitions before and would do so again.  "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605K3P",
+     "name": "How",
+     "value": "This party would try to negotiate that the minimum wage increases agreed in coalition agreements be at least the rate of inflation.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605K8T",
+     "title": "'NZ First to Increase Working for Families, Minimum Wage', 10 October 2026 (accessed 12 October 2026)",
+     "url": "/web/20261011233947/https://www.nzfirst.nz/nz_first_to_increase_working_for_families_minimum_wage"
+    }
+   ],
+   "reference": "POL55258",
+   "statement": "Increase the minimum wage in line with inflation",
+   "topics": [
+    "incomes-and-employment",
+    "incomes-and-employment",
+    "wages-and-working-conditions",
+    "jobs-and-employment"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605Kmz",
+     "name": "Why",
+     "value": "This party says that NZ's immigration system should be used to manage genuine workforce shortages.  However, it says that instead the accredited employer work visa has too often been used as a means to simply find a preferable candidate and is a risk for the workers themselves, who can find themselves with less protection from exploitation. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605Ks3",
+     "name": "How",
+     "value": "This party would replace the Accredited Employer Work Visa with the shortage-led skilled work visa. Such a visa would be limited to shortages, requiring evidence of attempted NZ recruitment, transparency data, and a wage floor to protect domestic wages. The party also says the reforms should be targeted towards the most needed industries, which would restrict access for other industries that have a larger domestic workforce.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605Kx7",
+     "title": "'NZFirst to Scrap Accredited Working Visa Model', 11 October 2026 (accessed 12 October 2026)",
+     "url": "/web/20261012001423/https://www.nzfirst.nz/nzfirst_to_scrap_accredited_working_visa_model"
+    }
+   ],
+   "reference": "POL55262",
+   "statement": "Replace the Accredited Employer Work Visa with a shortage-led skilled work visa",
+   "topics": [
+    "migration",
+    "incomes-and-employment",
+    "economy",
+    "migration",
+    "jobs-and-employment",
+    "business-support"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605L7F",
+     "name": "Why",
+     "value": "This party says that Coastguard, as an organisation, is funded only 40% by the government. 60% of its funding comes from public donations. The party argues that an essential service needs a more reliable funding model, so the organisation has greater certainty. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605LCJ",
+     "name": "How",
+     "value": "This party would increase Coastguard funding. The party would review the Coastguard’s funding arrangement to lift baseline funding and establish a contracting model to ensure that there's adequate access to capital for critical maintenance and capability investment, improved workforce capability, and volunteer support for training, wear and tear, and call-out support. This party estimates that this policy would cost $12 million a year. "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605LHN",
+     "title": "'NZ First to increase funding and support to NZ Coastguard', 15 October 2026 (accessed 15 October 2026)",
+     "url": "/web/20261014233123/https://www.nzfirst.nz/increase_funding_and_support_to_nz_coastguard"
+    }
+   ],
+   "reference": "POL55304",
+   "statement": "Increase the funding for the NZ Coastguard ",
+   "topics": [
+    "law-justice-and-government",
+    "environment",
+    "family-justice-and-safety",
+    "oceans"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605MG9",
+     "name": "Why",
+     "value": "This party says that they support increasing housing supply, but do not want the increase in housing to come at the expense of the quality of public infrastructure or access to services for those who have already lived in affected communities. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605MLD",
+     "name": "How",
+     "value": "This party would require fast-track housing developers to detail what infrastructure they need and demonstrate whether the present infrastructure can meet demand and has funding. Local authorities would also be required to provide advice on network capacity and delivery risks.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605MQH",
+     "title": "'NZFirst Policy Announcement: Changes to Fast-Track Residential Approvals', 14 October 2026 (accessed 14 October 2026)",
+     "url": "/web/20261015002406/https://www.nzfirst.nz/nzfirst_policy_announcement_changes_to_fast_track_residential_approvals"
+    }
+   ],
+   "reference": "POL55305",
+   "statement": "Add infrastructure and service capacity requirements to residential fast-track permissions",
+   "topics": [
+    "housing",
+    "transport-and-infrastructure",
+    "transport-and-infrastructure",
+    "housing-affordability",
+    "urban-planning-and-resource-management",
+    "infrastructure-funding-and-planning"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605MaP",
+     "name": "Why",
+     "value": "This party says that other countries such as Australia, the UK, the US, the EU, and Canada have imposed trade protections on aluminium. The party says jobs at 9 producers across NZ are at risk."
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605MfT",
+     "name": "How",
+     "value": "This party would reverse the current National Party-aligned Minister of Commerce's decision not to pursue trade protections for NZ-produced aluminium.   "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605MkX",
+     "title": "'NZ First Will Immediately Reverse This Week’s Decision by the Minister of Consumer Affairs', 17 October 2026 (accessed 17 October 2026)",
+     "url": "/web/20261016214927/https://www.nzfirst.nz/nz_first_will_immediately_reverse_this_week_s_decision_by_the_minister_of_consumer_affairs"
+    }
+   ],
+   "reference": "POL55308",
+   "statement": "Impose trade barriers to protect NZ-produced aluminium",
+   "topics": [
+    "economy",
+    "economy",
+    "incomes-and-employment",
+    "trade-and-exports",
+    "business-support",
+    "jobs-and-employment"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605NoN",
+     "name": "Why",
+     "value": "This party says that the coroner's report on the killing of Kain Parsons, in conjunction with concerns of illegal underground fight clubs involved in organised crime, requires expanded regulation of combat sports. "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605NtR",
+     "name": "How",
+     "value": "This party would establish a Combat Sports Commission. This organisation would focus on licensing events and promoters to ensure legality and safety. It would introduce minimum health and medical standards, such as pre-and post-fight medical examinations, attending medical practitioners at all events, mandatory stand-down periods between contests determined by medical professionals, and penalty systems for unsanctioned events. The Commission would partner with Sport NZ to to support legitimate promoters and athletes.  "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605NP3",
+     "title": "'NZ First Announces Overhaul to Regulate Combat Sports', 15 October 2026 (accessed 17 October 2026)",
+     "url": "/web/20261016215055/https://www.nzfirst.nz/nz_first_announces_overhaul_to_regulate_combat_sports"
+    }
+   ],
+   "reference": "POL55309",
+   "statement": "Establish a combat sport commission",
+   "topics": [
+    "media-culture-and-recreation",
+    "law-justice-and-government",
+    "sports-and-recreation",
+    "public-sector"
+   ]
+  },
+  {
+   "attributes": [
+    {
+     "_key": "lXvsWGt582gEfwb3605OXx",
+     "name": "Why",
+     "value": "This party says that traffic wait times are too great between Christchurch and the wider Canterbury region. The party says there are existing rail lines between Christchurch and Dunedin, which are owned by the government and should be delivering for the public.  The party wants the trial to determine a business case for permanent passenger rail.  "
+    },
+    {
+     "_key": "lXvsWGt582gEfwb3605Od1",
+     "name": "How",
+     "value": "This party would commence a 12-month trial of passenger rail across Canterbury, such as Christchurch city to Rolleston and Rangiora. It would also connected Canterbury to Otago with a Christchurch-to-Dunedin service.    "
+    }
+   ],
+   "citations": [
+    {
+     "_key": "lXvsWGt582gEfwb3605Oi5",
+     "title": "'NZFirst Campaign Announcement: Commuter Rail For Christchurch, Reinstate Southerner Train', 18 October 2026 (accessed 19 October 2026)",
+     "url": "/web/20261018210336/https://www.scoop.co.nz/stories/PA2610/S00155/nzfirst-campaign-announcement-commuter-rail-for-christchurch-reinstate-southerner-train.htm"
+    }
+   ],
+   "reference": "POL55310",
+   "statement": "Establish a 12-month trial for commuter rail in Canterbury and further south",
+   "topics": [
+    "transport-and-infrastructure",
+    "transport-and-infrastructure",
+    "transport-and-infrastructure",
+    "public-transport-cycling-and-walking",
+    "infrastructure-funding-and-planning",
+    "urban-planning-and-resource-management"
+   ]
+  }
+ ],
+ "partyList": [
+  {
+   "attributes": [
+    {
+     "_key": "klxxTI2yzqiQIMrdxnT5yp",
+     "name": "Before politics",
+     "value": "Tourism Business Owner"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnT61L",
+     "name": "Residence",
+     "value": "Ashley and the West Coast"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnT63r",
+     "name": "Age",
+     "value": "62"
+    }
+   ],
+   "electorateElectionSlug": "waimakariri-electorate",
+   "firstName": "Jackie",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/e60b9458835072040d3b7fcbf2585e3c12543400-1024x1024.jpg",
+   "lastName": "Farrelly",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Waimakariri electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "jackie-farrelly"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRK5b",
+     "name": "Before politics",
+     "value": "School assistant"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRK7H",
+     "name": "Residence",
+     "value": "Selwyn"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRK8x",
+     "name": "Age",
+     "value": "95"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRKAd",
+     "name": "Public email",
+     "value": "Elizabeth.Mundt@nzfirst.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRKCJ",
+     "name": "Website",
+     "value": "https://nzfirst.nz"
+    }
+   ],
+   "electorateElectionSlug": "selwyn-electorate",
+   "firstName": "Elizabeth",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/3d67ec7578d0ff0f1dfd13793d11dcd3f65a31e6-1024x1024.jpg",
+   "lastName": "Mundt",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Selwyn electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "elizabeth-mundt"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "whanganui-electorate",
+   "firstName": "Harete",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/c60d2c9b00e6ba4f8a890d7ff4399e123f241e23-1024x1024.jpg",
+   "lastName": "Hipango-Brownlie",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Whanganui electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "harete-hipango-brownlie"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "wairarapa-electorate",
+   "firstName": "Ron",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/a74ffb80646ace932243656b22826e463d7a4d0f-1024x1024.jpg",
+   "lastName": "Mark",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Wairarapa electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "ron-mark"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "northland-electorate",
+   "firstName": "Shane",
+   "image": null,
+   "lastName": "Jones",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Northland electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "shane-jones"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRXy7",
+     "name": "Before politics",
+     "value": "Managing Director"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRXzn",
+     "name": "Residence",
+     "value": "Khandallah"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRY1T",
+     "name": "Age",
+     "value": "61"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRY39",
+     "name": "Public email",
+     "value": "alistair.boyce@nzfirst.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRY4p",
+     "name": "Website",
+     "value": "nzfirst.nz"
+    }
+   ],
+   "electorateElectionSlug": "hutt-south-electorate",
+   "firstName": "Alistair",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/40fd35411333e7f6b9fcbb4954c0337679963316-1024x1024.jpg",
+   "lastName": "Boyce",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Hutt South electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "alistair-boyce"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEqrp4",
+     "name": "Before politics",
+     "value": "Commercial Director"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEqrs2",
+     "name": "Residence",
+     "value": "Northcote"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEqrv0",
+     "name": "Age",
+     "value": "47"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEqrxy",
+     "name": "Public email",
+     "value": "daryl.habraken@nzfirst.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEqs0w",
+     "name": "Website",
+     "value": "https://www.nzfirst.nz/daryl_habraken"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEqs3u",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/DarylHabraken.NZFirst/"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEqs6s",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/darylhabraken.nzf/"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEqs9q",
+     "name": "Twitter",
+     "value": "https://x.com/DarylHabraken"
+    }
+   ],
+   "electorateElectionSlug": "northcote-electorate",
+   "firstName": "Daryl",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/dcf8bba1042db1c201f3e86cb02a4738fa474e38-1024x1024.jpg",
+   "lastName": "Habraken",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Northcote electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "daryl-habraken"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRJPf",
+     "name": "Before politics",
+     "value": "Mayor of Wellington"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRJRL",
+     "name": "Residence",
+     "value": "South Wairarapa"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRJT1",
+     "name": "Age",
+     "value": "64"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRJUh",
+     "name": "Public email",
+     "value": "andy.foster@nzfirst.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRJWN",
+     "name": "Website",
+     "value": "n/a"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRJY3",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/andyfostermp"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRJZj",
+     "name": "Instagram",
+     "value": "n/a"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaRJbP",
+     "name": "Twitter",
+     "value": "n/a"
+    }
+   ],
+   "electorateElectionSlug": "remutaka-electorate",
+   "firstName": "Andy",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/e8c37c8154275cb6b297087cb9399b383195bfd2-1024x1024.jpg",
+   "lastName": "Foster",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Remutaka electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "andy-foster"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUj99",
+     "name": "Before politics",
+     "value": "Health and Safety Trainer"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUjAp",
+     "name": "Residence",
+     "value": "Flat Bush"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUjCV",
+     "name": "Age",
+     "value": "49"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUjEB",
+     "name": "Public email",
+     "value": "Elliot.ikilei@nzfirst.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUjFr",
+     "name": "Website",
+     "value": "https://www.nzfirst.nz/elliot_ikilei"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUjHX",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/ElliotIkileiConservative"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUjJD",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/elliotikileipage?stkn=ajJyd2xrOXFyODQw"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUjKt",
+     "name": "Twitter",
+     "value": "https://x.com/ElliotIkilei"
+    }
+   ],
+   "electorateElectionSlug": "takanini-electorate",
+   "firstName": "Elliot",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/b5462e8c93daa0104984491ba0aa0b8b5b961246-1024x1024.jpg",
+   "lastName": "Ikilei",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Takanini electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "elliot-ikilei"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzwkl",
+     "name": "Before politics",
+     "value": "Electrician, Pastor, MP"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzwly",
+     "name": "Residence",
+     "value": "Te Atatu Peninsula"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzwnB",
+     "name": "Age",
+     "value": "60"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzwoO",
+     "name": "Public email",
+     "value": "Alfred.ngaro@nzfirst.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzwpb",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/alfredNgaroMp"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzwqo",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/alfredngaro"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzws1",
+     "name": "Twitter",
+     "value": "https://x.com/alfredngaro"
+    }
+   ],
+   "electorateElectionSlug": "glendene-electorate",
+   "firstName": "Alfred",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/7359177187f078c7ff4195ccf084bc1864b839ee-1024x1024.jpg",
+   "lastName": "Ngaro",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Glendene electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "alfred-ngaro"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEzu6U",
+     "name": "Before politics",
+     "value": "Volunteer and a business owner"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEzu9S",
+     "name": "Residence",
+     "value": "Manurewa "
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEzuCQ",
+     "name": "Age",
+     "value": "59"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEzuFO",
+     "name": "Public email",
+     "value": "Esther.tofilautevaga@nzfirst.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEzuIM",
+     "name": "Facebook",
+     "value": "Esther Tofilau Tevaga for Manurewa"
+    }
+   ],
+   "electorateElectionSlug": "manurewa-electorate",
+   "firstName": "Esther",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/69bbf2af7133fbeca629ea76d1dc5d6274d50c8a-1024x1024.jpg",
+   "lastName": "Tofilau-Tevaga",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Manurewa electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "esther-tofilau-tevaga"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM0Do1",
+     "name": "Before politics",
+     "value": "Financial Analyst ex Dishie"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM0DpE",
+     "name": "Age",
+     "value": "29"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM0DqR",
+     "name": "Public email",
+     "value": "bryce.park@nzfirst.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM0Dre",
+     "name": "Website",
+     "value": "https://beacons.ai/brycepark"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM0Dsr",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/bryceparknz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxUM0Du4",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/bryceparknz"
+    }
+   ],
+   "electorateElectionSlug": "wigram-electorate",
+   "firstName": "Bryce",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/537fcc26120ed8f69e70aab6df5b973c4e762e53-1024x1024.jpg",
+   "lastName": "Park",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Wigram electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "bryce-park"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFdG0a",
+     "name": "Before politics",
+     "value": "N/A"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFdG3Y",
+     "name": "Residence",
+     "value": "Feilding"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFdG6W",
+     "name": "Age",
+     "value": "56"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFdG9U",
+     "name": "Public email",
+     "value": "Steve.gibson@nzfirst.nz"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFdGCS",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/votestevegibson"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFdGFQ",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/votestevegibson"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFdGIO",
+     "name": "Twitter",
+     "value": "@nzfirststevegib"
+    }
+   ],
+   "electorateElectionSlug": "rangitikei-electorate",
+   "firstName": "Steve",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/3dfc507013d99201708a89084b97fa13edb791b2-1024x1024.jpg",
+   "lastName": "Gibson",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Rangitīkei electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "steve-gibson"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "EZWec2ARqjqVWDdf5QcOMC",
+     "name": "Before politics",
+     "value": "Plumber, Gasfitter, Drainlayer"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5QcOQM",
+     "name": "Residence",
+     "value": "Timaru"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5QcOUW",
+     "name": "Age",
+     "value": "45"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5QcOYg",
+     "name": "Public email",
+     "value": "isaac.nicholson@nzfirst.nz"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5QcOcq",
+     "name": "Website",
+     "value": "https://www.nzfirst.nz"
+    }
+   ],
+   "electorateElectionSlug": "rangitata-electorate",
+   "firstName": "Isaac",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/f5b8e9d62505469446b8d7dabacf618f26d4538f-1024x1024.jpg",
+   "lastName": "Nicholson",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Rangitata electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "isaac-nicholson"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "waitaki-electorate",
+   "firstName": "Michael",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/4ba71b196ff08d2bc09bfdddf76bf275e42d5ee7-1024x1024.jpg",
+   "lastName": "Laws",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Waitaki electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "michael-laws"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "tukituki-electorate",
+   "firstName": "Taine",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/91619d16c0da798ab1fa1910be53434fb042c594-1024x1024.jpg",
+   "lastName": "Randell",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Tukituki electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "taine-randell"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "kaipara-ki-mahurangi-electorate",
+   "firstName": "Jenny",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/192fe683571c6633b1f2378f54e9cab1dc07efc9-1024x1024.jpg",
+   "lastName": "Marcroft",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Kaipara ki Mahurangi electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "jenny-marcroft"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVKwV",
+     "name": "Before politics",
+     "value": "Business owner & former Mayor"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVKyB",
+     "name": "Residence",
+     "value": "Woodhill, Whangarei"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVKzr",
+     "name": "Age",
+     "value": "52"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVL1X",
+     "name": "Public email",
+     "value": "vince.cocurullo@nzfirst.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVL3D",
+     "name": "Website",
+     "value": "www.nzfirst.nz/vince_cocurullo"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVL4t",
+     "name": "Facebook",
+     "value": "www.facebook.com/WhangareiFirst"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaVL6Z",
+     "name": "Instagram",
+     "value": "www.instagram.com/vcocurullo/"
+    }
+   ],
+   "electorateElectionSlug": "whangarei-electorate",
+   "firstName": "Vince",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/f833f7bbd6682acf5c81f1d424982b82c96be7d2-1024x1024.jpg",
+   "lastName": "Cocurullo",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Whangārei electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "vince-cocurullo"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "henderson-electorate",
+   "firstName": "David",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/16c78d0a9e447cc7c92073dc559136761876a6a8-1024x1024.jpg",
+   "lastName": "Wilson",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Henderson electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "david-wilson"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "klxxTI2yzqiQIMrdxnStOp",
+     "name": "Before politics",
+     "value": "\"Dairy farmer\","
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnStRL",
+     "name": "Residence",
+     "value": "Rural Southland"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnStTr",
+     "name": "Age",
+     "value": "48"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnStWN",
+     "name": "Public email",
+     "value": "jason.herrick@nzfirst.nz"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnStYt",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/share/1HmnbddAmw/"
+    },
+    {
+     "_key": "klxxTI2yzqiQIMrdxnStbP",
+     "name": "Twitter",
+     "value": "https://x.com/JasonHerricknzf"
+    }
+   ],
+   "electorateElectionSlug": "southland-electorate",
+   "firstName": "Jason",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/2562fe14bc5566ffb9c694b1f1ab113301679111-1024x1024.jpg",
+   "lastName": "Herrick",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Southland electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "jason-herrick"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFeBLw",
+     "name": "Before politics",
+     "value": "Communications Advisor"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFeBOu",
+     "name": "Residence",
+     "value": "Wellington"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFeBRs",
+     "name": "Age",
+     "value": "25"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFeBUq",
+     "name": "Public email",
+     "value": "keegan.langeveld@nzfirst.nz"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFeBXo",
+     "name": "Website",
+     "value": "https://www.nzfirst.nz/keegan_langeveld"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFeBam",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/keeganlangeveld.nzf"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFeBdk",
+     "name": "Twitter",
+     "value": "https://x.com/KeeganLangeveld"
+    }
+   ],
+   "electorateElectionSlug": "maungakiekie-electorate",
+   "firstName": "Keegan",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/cb6d389e83f8b864ecff72b14b008d61dc27a14b-1024x1024.jpg",
+   "lastName": "Langeveld",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Maungakiekie electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "keegan-langeveld"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "coromandel-electorate",
+   "firstName": "Vincent",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/9ea1b9457714d3eddc343af184f5bb905c9288f3-1024x1024.jpg",
+   "lastName": "ANDERSEN",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Coromandel electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "vincent-andersen"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "EZWec2ARqjqVWDdf5Qd19Q",
+     "name": "Before politics",
+     "value": "Management"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5Qd1Da",
+     "name": "Residence",
+     "value": "Pokeno"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5Qd1Hk",
+     "name": "Age",
+     "value": "60"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5Qd1Lu",
+     "name": "Public email",
+     "value": "casey.costello@nzfirst.nz"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5Qd1Q4",
+     "name": "Website",
+     "value": "www.nzfirst.nz"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5Qd1UE",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/caseycostellonzfirst/"
+    },
+    {
+     "_key": "EZWec2ARqjqVWDdf5Qd1YO",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/caseycostellomp/"
+    }
+   ],
+   "electorateElectionSlug": "port-waikato-electorate",
+   "firstName": "Casey",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/c6213e1ce1871680c2b3a977c12666833cd0bbf6-1024x1024.jpg",
+   "lastName": "Costello",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Port Waikato electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "casey-costello"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "CXH9EKkg0O5KO4YpbyxQ3G",
+     "name": "Before politics",
+     "value": "Digital Business Partner"
+    },
+    {
+     "_key": "CXH9EKkg0O5KO4YpbyxQ6S",
+     "name": "Residence",
+     "value": "Saint Albans"
+    },
+    {
+     "_key": "CXH9EKkg0O5KO4YpbyxQ9e",
+     "name": "Age",
+     "value": "64"
+    },
+    {
+     "_key": "CXH9EKkg0O5KO4YpbyxQCq",
+     "name": "Public email",
+     "value": "mark.arneil@nzfirst.nz"
+    },
+    {
+     "_key": "CXH9EKkg0O5KO4YpbyxQG2",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/share/1C2PxmWCtz/?mibextid=wwXIfr"
+    }
+   ],
+   "electorateElectionSlug": "christchurch-central-electorate",
+   "firstName": "Mark",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/f29e7f0600e8298a7478fa5feea9fc1f71b36809-1024x1024.jpg",
+   "lastName": "Arneil",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Christchurch Central electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "mark-arneil"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "cfclJeUZ7QuUzEhbJ9ZyU7",
+     "name": "Before politics",
+     "value": "Councillor GWRC Kapiti Ward"
+    },
+    {
+     "_key": "cfclJeUZ7QuUzEhbJ9ZyUl",
+     "name": "Residence",
+     "value": "Otaki, Kapiti Coast"
+    },
+    {
+     "_key": "cfclJeUZ7QuUzEhbJ9ZyVP",
+     "name": "Public email",
+     "value": "penny.gaylor@nzfirst.nz"
+    }
+   ],
+   "electorateElectionSlug": "kapiti-electorate",
+   "firstName": "Penny",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/0abb6e57ff0354b96a2da821b23726a93ed2759c-1024x1024.jpg",
+   "lastName": "Gaylor",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Kapiti electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "penny-gaylor"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "taieri-electorate",
+   "firstName": "Mark",
+   "image": null,
+   "lastName": "Patterson",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Taieri electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "mark-patterson"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSG4J",
+     "name": "Before politics",
+     "value": "BID Manager"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSG5z",
+     "name": "Residence",
+     "value": "Māngere"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSG7f",
+     "name": "Public email",
+     "value": "vicky.hau@nzfirst.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSG9L",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/p/Vicky-Hau-NZ-First-Candidate-for-M%C4%81ngere-61591715260258/"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaSGB1",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/vickyhaunzf"
+    }
+   ],
+   "electorateElectionSlug": "mangere-electorate",
+   "firstName": "Vicky",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/0fc5f0c289f102b357d1854255c55a793ea9832b-1024x1024.jpg",
+   "lastName": "Hau",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Māngere electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "vicky-hau"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEsm6M",
+     "name": "Before politics",
+     "value": "Councillor/Business owner"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEsm9K",
+     "name": "Residence",
+     "value": "Te Puna, Tauranga"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEsmCI",
+     "name": "Age",
+     "value": "62"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEsmFG",
+     "name": "Public email",
+     "value": "tracey.coxhead@nzfirst.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEsmIE",
+     "name": "Website",
+     "value": "NA"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEsmLC",
+     "name": "Facebook",
+     "value": "https://https://www.facebook.com/TraceyCoxheadNZF/"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEsmOA",
+     "name": "Instagram",
+     "value": "NA"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEsmR8",
+     "name": "Twitter",
+     "value": "https://x.com/traceycoxhead"
+    }
+   ],
+   "electorateElectionSlug": "mt-maunganui-electorate",
+   "firstName": "Tracey",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/02aa17b0636a2c4fabb84016f69b949b109ba4a0-1024x1024.jpg",
+   "lastName": "Coxhead",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Mt Maunganui electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "tracey-coxhead"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEuhZq",
+     "name": "Before politics",
+     "value": "Parliamentary Outreach Advisor"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEuhco",
+     "name": "Residence",
+     "value": "Wakari"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEuhfm",
+     "name": "Age",
+     "value": "53"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEuhik",
+     "name": "Public email",
+     "value": "kym.mcdonald@nzfirt.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEuhli",
+     "name": "Website",
+     "value": "https://www.nzfirst.nz/kym_mcdonald_king"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEuhog",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61591544901529"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEuhre",
+     "name": "Twitter",
+     "value": "https://x.com/kymmcdonzf"
+    }
+   ],
+   "electorateElectionSlug": "dunedin-electorate",
+   "firstName": "Kym",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/f18f42013a9ab7ba2cb2ce148a4702a657be006c-1024x1024.jpg",
+   "lastName": "McDonald-King",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Dunedin electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "kym-mcdonald-king"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "hamilton-west-electorate",
+   "firstName": "Kevin",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/b4c4222fa3f57e59e992754207167f392e42c0ed-1024x1024.jpg",
+   "lastName": "Stone",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Hamilton West electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "kevin-stone"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEwING",
+     "name": "Before politics",
+     "value": "Operations Manager"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEwIQE",
+     "name": "Residence",
+     "value": "Phillipstown Christchurch East"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEwITC",
+     "name": "Age",
+     "value": "58"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEwIWA",
+     "name": "Public email",
+     "value": "shane.wiremu@nzfirst.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEwIZ8",
+     "name": "Facebook",
+     "value": "www.facebook.com/profile.php?id=61592646518833"
+    }
+   ],
+   "electorateElectionSlug": "christchurch-east-electorate",
+   "firstName": "Shane",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/47488167ed56e5970cceb6dcd64aae1bad64b654-1024x1024.jpg",
+   "lastName": "Wiremu",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Christchurch East electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "shane-wiremu"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "botany-electorate",
+   "firstName": "Craig",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/b5f954df2b9ce44f97b842769af00f9a6758617e-1024x1024.jpg",
+   "lastName": "Stobo",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Botany electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "craig-stobo"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULz8R0",
+     "name": "Before politics",
+     "value": "Outreach Advisor & Councillor"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULz8SD",
+     "name": "Residence",
+     "value": "Napier"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULz8TQ",
+     "name": "Age",
+     "value": "41"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULz8Ud",
+     "name": "Public email",
+     "value": "tekira.lawrence@nzfirst.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULz8Vq",
+     "name": "Website",
+     "value": "https://www.nzfirst.nz/te_kira_lawrence"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULz8X3",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/people/Te-Kira-Lawrence-New-Zealand-First-Candidate-for-Napier/61591578470128/"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULz8YG",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/tekiralawrence.nzf/"
+    }
+   ],
+   "electorateElectionSlug": "napier-electorate",
+   "firstName": "Te Kira",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/6f680454e5c8dd403772c8a1745c87a16a6123fa-1024x1024.jpg",
+   "lastName": "Lawrence",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Napier electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "te-kira-lawrence"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "wellington-bays-electorate",
+   "firstName": "Gerald",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/8a081bb3b54f9a7223efa7d30a8545d7dd77e8e2-1024x1024.jpg",
+   "lastName": "Warner",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Wellington Bays electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "gerald-warner"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUFMJ",
+     "name": "Before politics",
+     "value": "Business Owner and Director"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUFNz",
+     "name": "Residence",
+     "value": "West Harbour, Auckland."
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUFPf",
+     "name": "Age",
+     "value": "58"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUFRL",
+     "name": "Public email",
+     "value": "Bernadette.soares@nzfirst.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUFT1",
+     "name": "Website",
+     "value": "Bernadettesoares.com"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUFUh",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/bernadettesoaresUH"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUFWN",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/bernadettesoaresnz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUFY3",
+     "name": "Twitter",
+     "value": "https://x.com/berniesoares"
+    }
+   ],
+   "electorateElectionSlug": "upper-harbour-electorate",
+   "firstName": "Bernadette",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/b9d4193645e1538033ac04bac0fdc109b5c7e3b0-1024x1024.jpg",
+   "lastName": "Soares",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Upper Harbour electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "bernadette-soares"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbRoC",
+     "name": "Before politics",
+     "value": "Mayor of Buller District."
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbRrA",
+     "name": "Residence",
+     "value": "Westport"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbRu8",
+     "name": "Age",
+     "value": "49"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbRx6",
+     "name": "Public email",
+     "value": "Jamie.cleine@nzfirst.nz"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbS04",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/JamieCleineNZFirstWestCoastTasman"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbS32",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/jamie.cleine.nzfirst"
+    }
+   ],
+   "electorateElectionSlug": "west-coast-tasman-electorate",
+   "firstName": "Jamie",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/4d2353d1dc86b1bffab5560b89232fc01f53a3fb-1024x1024.jpg",
+   "lastName": "Cleine",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the West Coast-Tasman electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "jamie-cleine"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzRGL",
+     "name": "Before politics",
+     "value": "Registered Social Worker"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzRHY",
+     "name": "Residence",
+     "value": "Eastern Porirua"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzRIl",
+     "name": "Age",
+     "value": "58"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzRJy",
+     "name": "Public email",
+     "value": "jon.blackshaw@nzfirst.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzRLB",
+     "name": "Website",
+     "value": "https://www.nzfirst.nz/jon_blackshaw"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzRMO",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61592236456748"
+    }
+   ],
+   "electorateElectionSlug": "kenepuru-electorate",
+   "firstName": "Jon",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/d3a4f8ad106d1427e6f54782f4ce007e094ccf57-1024x1024.jpg",
+   "lastName": "Blackshaw",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Kenepuru electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "jon-blackshaw"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "banks-peninsula-electorate",
+   "firstName": "John",
+   "image": null,
+   "lastName": "Stringer",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Banks Peninsula electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "john-stringer"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbw0q",
+     "name": "Residence",
+     "value": "Rotorua"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbw3o",
+     "name": "Age",
+     "value": "42"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbw6m",
+     "name": "Public email",
+     "value": "Billy.brown@nzfirst.nz"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbw9k",
+     "name": "Website",
+     "value": "https://www.billybrown.nz/"
+    },
+    {
+     "_key": "vIVp5TpLHjIr5sjeSFbwCi",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/share/1BtGf37BGb/"
+    }
+   ],
+   "electorateElectionSlug": "rotorua-electorate",
+   "firstName": "Billy",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/a3b36301fe340eb2221f4a5736e80283cdfc02d5-1024x1024.jpg",
+   "lastName": "Brown",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Rotorua electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "billy-brown"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "ilam-electorate",
+   "firstName": "Nathan",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/c1e3bf94ac879053a8434d4bef25e9a40f0f331d-1024x1024.jpg",
+   "lastName": "Walton",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Ilam electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "nathan-walton"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUPEZ",
+     "name": "Before politics",
+     "value": "District Councillor"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUPGF",
+     "name": "Residence",
+     "value": "Renwick Marlborough"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUPHv",
+     "name": "Age",
+     "value": "47"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUPJb",
+     "name": "Public email",
+     "value": "jamie.arbuckle@nzfirst.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaUPLH",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/jamiearbuckle.nzfirst?mibextid=wwXIfr&mibextid=wwXIfr"
+    }
+   ],
+   "electorateElectionSlug": "kaikoura-electorate",
+   "firstName": "Jamie",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/331affb51f338826439d3ecdfe43c3eb92ba36fa-1024x1024.jpg",
+   "lastName": "Arbuckle",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Kaikōura electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "jamie-arbuckle"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "X1lYTuyb687sZVzyLNYjRU",
+     "name": "Before politics",
+     "value": "NZME Media Specialist"
+    },
+    {
+     "_key": "X1lYTuyb687sZVzyLNYjSg",
+     "name": "Residence",
+     "value": "Newmarket Auckland"
+    },
+    {
+     "_key": "X1lYTuyb687sZVzyLNYjTs",
+     "name": "Age",
+     "value": "41"
+    },
+    {
+     "_key": "X1lYTuyb687sZVzyLNYjV4",
+     "name": "Public email",
+     "value": "sheldon.edenwhaitiri@nzfirst.nz"
+    },
+    {
+     "_key": "X1lYTuyb687sZVzyLNYjWG",
+     "name": "Website",
+     "value": "n/a"
+    },
+    {
+     "_key": "X1lYTuyb687sZVzyLNYjXS",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/sheldon.edenwhaitiri/"
+    },
+    {
+     "_key": "X1lYTuyb687sZVzyLNYjYe",
+     "name": "Instagram",
+     "value": "www.instagram.com/sheldyew"
+    },
+    {
+     "_key": "X1lYTuyb687sZVzyLNYjZq",
+     "name": "Twitter",
+     "value": "n/a"
+    }
+   ],
+   "electorateElectionSlug": "mt-albert-electorate",
+   "firstName": "Sheldon",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/0719c1211d0b20835297150be5a4af8c55290255-1024x1024.jpg",
+   "lastName": "Eden-Whaitiri",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Mt Albert electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "sheldon-eden-whaitiri"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEz2jS",
+     "name": "Before politics",
+     "value": "Self employed"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEz2mQ",
+     "name": "Residence",
+     "value": "Raglan"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEz2pO",
+     "name": "Age",
+     "value": "59"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEz2sM",
+     "name": "Public email",
+     "value": "nicola.laboyrie@nzfirst.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEz2vK",
+     "name": "Website",
+     "value": "https://www.nzfirst.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEz2yI",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=61579070137481"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEz31G",
+     "name": "Twitter",
+     "value": "https://x.com/NicolaLaboyrie"
+    }
+   ],
+   "electorateElectionSlug": "hamilton-east-electorate",
+   "firstName": "Nicola",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/395d50ff4b4c82b532f79dceb9d6743db36ecfeb-1024x1024.jpg",
+   "lastName": "Laboyrie",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Hamilton East electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "nicola-laboyrie"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzqzu",
+     "name": "Before politics",
+     "value": "Current Small Business Owner"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzr17",
+     "name": "Residence",
+     "value": "Otorohanga"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzr2K",
+     "name": "Age",
+     "value": "53"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzr3X",
+     "name": "Public email",
+     "value": "lee.smith@nzfirst.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzr4k",
+     "name": "Website",
+     "value": "https://www.nzfirst.nz/"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzr5x",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/share/1KNoCpBUjD/"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULzr7A",
+     "name": "Twitter",
+     "value": "https://x.com/LeeSmithNZ"
+    }
+   ],
+   "electorateElectionSlug": "taranaki-king-country-electorate",
+   "firstName": "Lee",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/18dff33bbeb9d1dd50fb376c342f150c567cd93c-1024x1024.jpg",
+   "lastName": "Smith",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Taranaki-King Country electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "lee-smith"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "w4j50sYgZwrRfCGwkaO1OF",
+     "name": "Before politics",
+     "value": "Prosecution Officer"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaO1Pv",
+     "name": "Residence",
+     "value": "Rosedale, Auckland"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaO1Rb",
+     "name": "Age",
+     "value": "48"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaO1TH",
+     "name": "Public email",
+     "value": "vaughan.taylor@nzfirst.nz"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaO1Ux",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/share/19ha6bdRyQ/"
+    },
+    {
+     "_key": "w4j50sYgZwrRfCGwkaO1Wd",
+     "name": "Instagram",
+     "value": "https://www.instagram.com/vaughan_nzf"
+    }
+   ],
+   "electorateElectionSlug": "east-coast-bays-electorate",
+   "firstName": "Vaughan",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/01708e0856e08887bf840ee86cab44c5e1813b02-1024x1024.jpg",
+   "lastName": "Taylor",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the East Coast Bays electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "vaughan-taylor"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEgvIY",
+     "name": "Before politics",
+     "value": "Company managing director"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEgvLW",
+     "name": "Residence",
+     "value": "Greenlane, Auckland"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEgvOU",
+     "name": "Age",
+     "value": "70"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEgvRS",
+     "name": "Public email",
+     "value": "martin.gummer@nzfirst.nz"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEgvUQ",
+     "name": "Website",
+     "value": "https://www.nzfirst.nz/martin_gummer"
+    },
+    {
+     "_key": "9oZu0CWOUJTR2tc3yEgvXO",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/martin.gummer.7; https://www.facebook.com/martin.gummer.1"
+    }
+   ],
+   "electorateElectionSlug": "epsom-electorate",
+   "firstName": "Martin",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/e9ff622af5ac285db5c163651b7828e1a51a5d94-1024x1024.jpg",
+   "lastName": "Gummer",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Epsom electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "martin-gummer"
+  },
+  {
+   "attributes": [
+    {
+     "_key": "gWRK0kP6sfCK6YcxULuP6i",
+     "name": "Before politics",
+     "value": "Contractor and lifeguard"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULuP7v",
+     "name": "Residence",
+     "value": "Wellington"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULuP98",
+     "name": "Age",
+     "value": "31"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULuPAL",
+     "name": "Public email",
+     "value": "taylor.arneil@nzfirst.nz"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULuPBY",
+     "name": "Website",
+     "value": "https://www.nzfirst.nz/taylor_arneil"
+    },
+    {
+     "_key": "gWRK0kP6sfCK6YcxULuPCl",
+     "name": "Facebook",
+     "value": "https://www.facebook.com/profile.php?id=100090888830940"
+    }
+   ],
+   "electorateElectionSlug": "wellington-north-electorate",
+   "firstName": "Taylor",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/3bfb6ec7e4d7721efcfe6f24bdbb6e845ab9fde1-1024x1024.jpg",
+   "lastName": "Arneil",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Wellington North electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "taylor-arneil"
+  },
+  {
+   "attributes": [],
+   "electorateElectionSlug": "waikato-electorate",
+   "firstName": "Robert John",
+   "image": "https://cdn.sanity.io/images/ubdwo62y/production/203a2110a66439167bb107382c19204c8164c4c4-1024x1024.jpg",
+   "lastName": "COOKSON",
+   "partyAffiliation": {
+    "candidacyDescription": "Candidate for the Waikato electorate",
+    "candidacyURL": "",
+    "leadershipLabel": "",
+    "listRank": null,
+    "partySlug": "nz-first"
+   },
+   "slug": "robert-john-cookson"
+  }
+ ]
+}
