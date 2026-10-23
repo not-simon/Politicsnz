@@ -87,8 +87,9 @@ for s in parties:
 # --- policy swipe deck: party-blind cards (statement + summary), leak-filtered
 LEAK_NAMES = re.compile(r"\b(National|Labour|Greens?|ACT|NZ First|New Zealand First|Te P[āa]ti M[āa]ori|M[āa]ori Party|TOP|Opportunities Party|Alliance|Conservatives?|Vision NZ|NZ Loyal|Animal Justice|Women's Rights Party|"
     r"Luxon|Hipkins|Seymour|Peters|Swarbrick|Davidson|Waititi|Ngarewa-Packer|Willis|van Velden|Bishop|Brown|Jones|Costello|Doocey|Reti|Stanford|Upston|Robertson|Ardern|Edmonds|Sepuloni|Jackson|Kapa-Kingi|Ferris|Maipi-Clarke|Manji|Minto)\b")
+LEAK_ACRONYMS = re.compile(r"\b(NAP|TOP|ALCP|AJP|WRP|NZF|NZOFP|NZOF|TTP|TTTP|PANZ|SEG|TPM|NZL|Nats|Nat|Lab|Grn|Not A Party|Opportunities|Women’s Rights|Women's Rights|Outdoors & Freedom|Outdoors and Freedom|Legalise Cannabis|Progressive Aotearoa|Socialist Equality|Vision|Loyal|Alliance)\b")
 LEAK_TERMS = re.compile(r"coalition|current Government|this Government|the Government's|Luxon Government|National-led|Labour-led|our party|our government|we will|we would|we are|Green Budget|KiwiMart|Kiwipower|Future Fund|Medicard|LabourSaver|FamilyBoost|Treaty Principles Bill|Regulatory Standards|Fast-track Approvals Act|Three Strikes|Fair Pay Agreements?|Roads of National Significance|Te Aka Whai Ora|Whānau Ora|Mana Motuhake|kaupapa M[āa]ori", re.I)
-def leaks(t): return bool(LEAK_NAMES.search(t) or LEAK_TERMS.search(t))
+def leaks(t): return bool(LEAK_NAMES.search(t) or LEAK_ACRONYMS.search(t) or LEAK_TERMS.search(t))
 MAIN = {'national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'}
 swipe, seen_stmt = [], set()
 for s, pols in policies.items():
