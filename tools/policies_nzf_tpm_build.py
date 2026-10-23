@@ -148,7 +148,7 @@ def build(party):
         q = r'"((?:[^"\\]|\\.)*)"'
         blk = raw[raw.index("var AREAS"):raw.index("var GROUPS")]
         parts = {"AREAS": "Part 1 — policies by area (“Pick your top three”)", "ABOUT": "Part 2 — what changes for you (“Which of these sounds like you or your whānau?”)",
-                 "BOTTOM": "Part 3 — “Everything else we’ll do”"}
+                 "BOTTOM": "Part 3 — flagship policies (data block `BOTTOM`)"}
         out = []
         tok = re.compile(r'var (AREAS|ABOUT|BOTTOM)\b|\{\s*((?:\w+:' + q + r'\s*,?\s*)+)\w+:\[|\[' + q + r'\s*,\s*' + q + r'\]')
         for t in tok.finditer(blk):
@@ -169,7 +169,7 @@ def build(party):
                                  format="html (embedded JavaScript data)",
                                  fetch_method=f"Common Crawl WARC record ({re.search(r'CC-MAIN-[0-9-]+', m['warc']).group(0)}; {m['warc']} offset {m['offset']} length {m['length']})",
                                  note="The page is an interactive tool; its content is a JavaScript data block headed 'CONTENT (from Te Pāti Māori Policy Manifesto 2026)'. "
-                                      "Every text string of that block is reproduced below in order (headline, then detail), only re-laid out as Markdown. The page footer reads: "
+                                      "Every text string of that block is reproduced below in order (headline, then detail), only re-laid out as Markdown (the \"Part\" headings are added by this archive to separate the three data blocks AREAS, ABOUT and BOTTOM). The page footer reads: "
                                       "'Everything here comes from the Te Pāti Māori Policy Manifesto 2026.'"))
         body += f"# {docs['tool:' + tool]['title']}\n\nSource: <{m['url']}> — Common Crawl capture {cap}\n\n"
         body += "## Full text\n" + "\n".join(out) + "\n"
