@@ -31,6 +31,8 @@ def frontmatter(text):
 meta = load(ROOT / 'data' / 'parties-meta.json', {'parties': {}})['parties']
 elections = sorted([load(f) for f in glob.glob(str(ROOT / 'data' / 'elections' / '*.json'))], key=lambda e: e.get('year', 0) if e else 0)
 elections = [e for e in elections if e]
+upcoming = [e for e in elections if not any(isinstance(r, dict) and r.get('party_vote_pct') is not None for r in e.get('parties') or [])]
+elections = [e for e in elections if e not in upcoming]
 parliaments = sorted([load(f) for f in glob.glob(str(ROOT / 'data' / 'parliaments' / '*.json'))], key=lambda p: p.get('parliament', 0) if p else 0)
 parliaments = [p for p in parliaments if p]
 polls_raw = load(ROOT / 'data' / 'polls-2026.json', [])
@@ -122,7 +124,7 @@ if isinstance(guide['parties'], dict): guide['parties'] = guide['parties'].get('
 if isinstance(guide['issues'], dict): guide['issues'] = guide['issues'].get('issues', [])
 electorates = load(ROOT / 'data' / 'electorates' / '2026.json', [])
 if isinstance(electorates, dict): electorates = electorates.get('electorates', [])
-bundle = {'guide': guide, 'electorates': electorates, 'generated': __import__('datetime').date.today().isoformat(), 'parties': parties, 'elections': elections,
+bundle = {'upcoming': upcoming[0] if upcoming else None, 'guide': guide, 'electorates': electorates, 'generated': __import__('datetime').date.today().isoformat(), 'parties': parties, 'elections': elections,
           'parliaments': parliaments, 'polls': polls, 'promises': promises}
 (OUT / 'bundle.json').write_text(dumps(bundle))
 (OUT / 'policies.json').write_text(dumps(policies))

@@ -14,7 +14,7 @@
 
 | Party | Leader(s) | Wikipedia position | Seats now | Polling (avg) | Says it could work with | Has ruled out |
 |---|---|---|---|---|---|---|
-| [National](#national) | Christopher Luxon | centre-right | 49 | 28.7% | ACT, NZ First | Labour, Opportunity (TOP) |
+| [National](#national) | Christopher Luxon | centre-right | 48 | 28.7% | ACT, NZ First | Labour, Opportunity (TOP) |
 | [Labour](#labour) | Chris Hipkins | centre-left | 34 | 27.9% | Greens, Opportunity (TOP), Te Pāti Māori | NZ First, ACT, National |
 | [Greens](#green) | Marama Davidson, Chlöe Swarbrick | centre-left to left-wing | 15 | 15.2% | Labour | – |
 | [ACT](#act) | David Seymour | right-wing | 11 | 9.8% | National, NZ First, Opportunity (TOP) | Labour |
@@ -62,7 +62,7 @@
 | **Leader(s)** | Christopher Luxon (Leader, Prime Minister) |
 | **Founded** | 1936 |
 | **Position (Wikipedia)** | centre-right ([en.wikipedia.org](https://en.wikipedia.org/wiki/New_Zealand_National_Party)) |
-| **Seats now** | 49 of 123 — 48 won at the 2023 election, plus Port Waikato, won at the November 2023 by-election (Wikipedia election article, 'Current seats'). |
+| **Seats now** | 48 of 122 — 49 won in 2023 (48 at the general election plus the Port Waikato by-election). Papakura has been vacant since Judith Collins resigned on 14 May 2026, so National holds 48 of 122 seats at dissolution (data/parliaments/54.json). |
 | **Polling** | 28.7% (average of 9 polls, 2026-09-23–2026-10-23; range 25.9–32.0%) |
 | **Coalition stance** | Wants to continue the current government with ACT and NZ First. Luxon ruled out a 'grand coalition' with Labour (May 2026) and formally ruled out any deal with Opportunity, including confidence and supply, from 27 July 2026, citing its plans to raise taxes; he repeated this through October. *(as at 2026-10-22)* [rnz.co.nz](https://www.rnz.co.nz/news/politics/809555/national-rules-out-working-with-opportunity-party), [bloomberg.com](https://www.bloomberg.com/news/articles/2026-05-11/new-zealand-pm-luxon-rules-out-grand-coalition-with-labour), [1news.co.nz](https://www.1news.co.nz/2026/10/22/analysis-the-real-roadblock-to-opportunity-isnt-luxon-its-peters/), [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1932454/four-headed-beast-act-leader-david-seymour-hints-at-potential-for-coalition-with-opportunity) |
 | **Costed fiscal plan?** | Yes. Its fiscal plan (12 Oct 2026) keeps new spending to $2.4b a year, leaves $7.5b of operating money unallocated over four years, and part-funds promises by cutting foreign aid. It includes $1.2m for an election policy costings unit. [assets.national.org.nz](https://assets.national.org.nz/web/prod/National's%20Fiscal%20Plan.pdf), [rnz.co.nz](https://www.rnz.co.nz/news/politics_election-2026/1865939/fiscal-holes-unfunded-promises-economist-not-sure-any-of-it-matters) |
@@ -227,7 +227,7 @@
 ---
 
 <a id="te-pati-maori"></a>
-## Te Pāti Māori — Te Pāti Māori
+## Te Pāti Māori
 
 > A Māori rights party asking Māori-roll voters for their electorate vote, focused on Te Tiriti and Māori self-determination.
 
@@ -265,7 +265,7 @@
 ---
 
 <a id="te-tai-tokerau-party"></a>
-## Te Tai Tokerau Party — Te Tai Tokerau Party
+## Te Tai Tokerau Party
 
 > A new Northland-based Māori party formed by sitting MP Mariameno Kapa-Kingi after her split from Te Pāti Māori.
 

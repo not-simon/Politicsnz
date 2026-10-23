@@ -114,7 +114,8 @@ def parties_md():
       'statement. See each card for wording and sources.*\n')
     for s in ORDER:
         p = BY[s]
-        A(f'---\n\n<a id="{anchor(p)}"></a>\n## {p["short_name"]} — {p["name"]}\n')
+        title = p['short_name'] if p['short_name'] == p['name'] else f"{p['short_name']} — {p['name']}"
+        A(f'---\n\n<a id="{anchor(p)}"></a>\n## {title}\n')
         A(f"> {p['tagline']}\n")
         A(f"**In a nutshell:** {p['in_a_nutshell']}\n")
         A('**Big ideas for 2026:**\n')
@@ -140,8 +141,11 @@ def parties_md():
         A(f"| **Costed fiscal plan?** | {co['summary']}" + (f" {links(co.get('sources'))}" if co.get('sources') else '') + ' |')
         A(f"| **Track record** | {p['track_record_line']} |")
         A(f"| **Website** | [{host(p['website'])}]({p['website']}) |")
-        deeper = [f"[profile](../parties/{s}/README.md)", f"[all 2026 policies](../parties/{s}/policies/README.md)"]
-        if p.get('track_record_file'):
+        deeper = []
+        for label, rel in (('profile', f'parties/{s}/README.md'), ('all 2026 policies', f'parties/{s}/policies/README.md')):
+            if (ROOT / rel).exists():
+                deeper.append(f"[{label}](../{rel})")
+        if p.get('track_record_file') and (ROOT / p['track_record_file']).exists():
             deeper.append(f"[track record](../{p['track_record_file']})")
         if p.get('policy_nz'):
             deeper.append(f"[policy.nz]({p['policy_nz']})")

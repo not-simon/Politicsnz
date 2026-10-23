@@ -280,8 +280,9 @@ def write_readme(party, P, policies, docs, blocked, base):
     L.append(f"- **{len(policies)} policies** listed: {n_pnz} from [policy.nz](https://policy.nz) (all of its {n_pnz} {P['short']} "
              f"statements, with its Why/How summaries) + {n_arc} more found in the party's own releases, speeches and policy PDFs "
              f"(marked *archive*; summaries written for this archive).")
-    L.append(f"- **{len(docs)} full-text documents** archived ({sum(1 for d in docs.values() if d['kind']!='PDF')} press releases/speeches, "
-             f"{sum(1 for d in docs.values() if d['kind']=='PDF')} PDFs) + {len(blocked)} placeholder files for cited pages that could not be retrieved.")
+    L.append(f"- **{len(docs)} full-text documents** archived ({sum(1 for d in docs.values() if 'Common Crawl' in d['kind'])} party web pages via Common Crawl, "
+             f"{sum(1 for d in docs.values() if d['kind'] in ('Press release', 'Speech'))} press releases/speeches via Scoop, "
+             f"{sum(1 for d in docs.values() if d['kind']=='PDF')} PDFs) + {len(blocked)} placeholder file(s) for cited pages that could not be retrieved.")
     L.append(f"- {len(with_text)} policies have at least one retrieved party text; {len(no_text)} rely only on a page that could not be retrieved.\n")
     L.append("## Method & sources\n")
     L.append(f"1. Started from policy.nz's {P['short']} data (`raw/policy.nz/parties/{P['pnz']}.json`): statement, Why/How, citations.")
@@ -289,8 +290,8 @@ def write_readme(party, P, policies, docs, blocked, base):
              f"from this environment. The party's own web pages were therefore recovered from **Common Crawl**: its 2026 crawl indexes "
              f"(CC-MAIN-2026-12 … -43) were searched for every {P['site']} URL and the latest HTTP-200 capture of each page was read from the WARC "
              f"archive on data.commoncrawl.org (`tools/policies_nzf_tpm_cc_index.py`, `tools/policies_nzf_tpm_cc_fetch.py`). Each such document "
-             f"(`documents/site-*.md`) records the capture date and WARC record; captures are 16 Aug–14 Oct 2026, so later edits are not reflected.")
-    L.append(f"3. Instead, every {P['name']} press release and speech from late 2025 to 23 Oct 2026 was collected from Scoop's "
+             f"(`documents/site-*.md`) records the capture date and WARC record; captures date from {min(d['date'] for d in docs.values() if 'Common Crawl' in d['kind'])} to {max(d['date'] for d in docs.values() if 'Common Crawl' in d['kind'])}, so later edits are not reflected.")
+    L.append(f"3. In addition, every {P['name']} press release and speech from late 2025 to 23 Oct 2026 was collected from Scoop's "
              f"organisation page ({P['scoop_org']}); Scoop republishes party releases as issued, so their text is the party's own. "
              f"Policy PDFs the party attached to releases (img.scoop.co.nz) or linked from its site (Google Drive) were downloaded "
              f"and text-extracted.")
