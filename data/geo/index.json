@@ -32,7 +32,7 @@
     "general": {
      "file": "geo/general-2007.json",
      "features": 63,
-     "bytes": 573809,
+     "bytes": 573799,
      "vertices": 25733,
      "tolerance_deg2": 2.5028654311746077e-06,
      "bbox": [
@@ -74,8 +74,8 @@
       "manukau-east": "Manukau East",
       "manurewa": "Manurewa",
       "maungakiekie": "Maungakiekie",
-      "mount-albert": "Mount Albert",
-      "mount-roskill": "Mount Roskill",
+      "mt-albert": "Mt Albert",
+      "mt-roskill": "Mt Roskill",
       "napier": "Napier",
       "nelson": "Nelson",
       "new-lynn": "New Lynn",
@@ -105,12 +105,12 @@
       "waikato": "Waikato",
       "waimakariri": "Waimakariri",
       "wairarapa": "Wairarapa",
-      "waitakere": "Waitakere",
+      "waitakere": "Waitākere",
       "waitaki": "Waitaki",
       "wellington-central": "Wellington Central",
       "west-coast-tasman": "West Coast-Tasman",
       "whanganui": "Whanganui",
-      "whangarei": "Whangarei",
+      "whangarei": "Whangārei",
       "wigram": "Wigram"
      },
      "source": {
@@ -155,14 +155,14 @@
    "name_map": {
     "Kaikoura": "Kaikōura",
     "Mangere": "Māngere",
-    "Mt Albert": "Mount Albert",
-    "Mt Roskill": "Mount Roskill",
     "Ohariu": "Ōhariu",
     "Otaki": "Ōtaki",
     "Rangitikei": "Rangitīkei",
     "Tamaki": "Tāmaki",
     "Taupo": "Taupō",
     "Te Atatu": "Te Atatū",
+    "Waitakere": "Waitākere",
+    "Whangarei": "Whangārei",
     "Ikaroa-Rawhiti": "Ikaroa-Rāwhiti",
     "Tamaki Makaurau": "Tāmaki Makaurau",
     "Te Tai Hauauru": "Te Tai Hauāuru"
@@ -171,6 +171,22 @@
     "kaikoura": [
      "Kaikoura",
      "Kaikōura"
+    ],
+    "mt-albert": [
+     "Mount Albert",
+     "Mt Albert"
+    ],
+    "mt-roskill": [
+     "Mount Roskill",
+     "Mt Roskill"
+    ],
+    "waitakere": [
+     "Waitakere",
+     "Waitākere"
+    ],
+    "whangarei": [
+     "Whangarei",
+     "Whangārei"
     ]
    }
   },
@@ -183,7 +199,7 @@
     "general": {
      "file": "geo/general-2014.json",
      "features": 64,
-     "bytes": 576935,
+     "bytes": 576925,
      "vertices": 25871,
      "tolerance_deg2": 2.9427271762092816e-06,
      "bbox": [
@@ -219,15 +235,15 @@
       "hutt-south": "Hutt South",
       "ilam": "Ilam",
       "invercargill": "Invercargill",
-      "kaikoura": "Kaikoura",
+      "kaikoura": "Kaikōura",
       "kelston": "Kelston",
       "mana": "Mana",
       "mangere": "Māngere",
       "manukau-east": "Manukau East",
       "manurewa": "Manurewa",
       "maungakiekie": "Maungakiekie",
-      "mount-albert": "Mount Albert",
-      "mount-roskill": "Mount Roskill",
+      "mt-albert": "Mt Albert",
+      "mt-roskill": "Mt Roskill",
       "napier": "Napier",
       "nelson": "Nelson",
       "new-lynn": "New Lynn",
@@ -262,7 +278,7 @@
       "wellington-central": "Wellington Central",
       "west-coast-tasman": "West Coast-Tasman",
       "whanganui": "Whanganui",
-      "whangarei": "Whangarei",
+      "whangarei": "Whangārei",
       "wigram": "Wigram"
      },
      "source": {
@@ -305,22 +321,38 @@
     }
    },
    "name_map": {
+    "Kaikoura": "Kaikōura",
     "Mangere": "Māngere",
-    "Mt Albert": "Mount Albert",
-    "Mt Roskill": "Mount Roskill",
     "Ohariu": "Ōhāriu",
     "Otaki": "Ōtaki",
     "Tamaki": "Tāmaki",
     "Taupo": "Taupō",
     "Te Atatu": "Te Atatū",
+    "Whangarei": "Whangārei",
     "Ikaroa-Rawhiti": "Ikaroa-Rāwhiti",
     "Tamaki Makaurau": "Tāmaki Makaurau",
     "Te Tai Hauauru": "Te Tai Hauāuru"
    },
    "aliases": {
+    "kaikoura": [
+     "Kaikoura",
+     "Kaikōura"
+    ],
+    "mt-albert": [
+     "Mount Albert",
+     "Mt Albert"
+    ],
+    "mt-roskill": [
+     "Mount Roskill",
+     "Mt Roskill"
+    ],
     "ohariu": [
      "Ōhariu",
      "Ōhāriu"
+    ],
+    "whangarei": [
+     "Whangarei",
+     "Whangārei"
     ]
    }
   },
@@ -333,7 +365,7 @@
     "general": {
      "file": "geo/general-2020.json",
      "features": 65,
-     "bytes": 574946,
+     "bytes": 574934,
      "vertices": 25767,
      "tolerance_deg2": 2.9427271762092816e-06,
      "bbox": [
@@ -373,8 +405,8 @@
       "mangere": "Māngere",
       "manurewa": "Manurewa",
       "maungakiekie": "Maungakiekie",
-      "mount-albert": "Mount Albert",
-      "mount-roskill": "Mount Roskill",
+      "mt-albert": "Mt Albert",
+      "mt-roskill": "Mt Roskill",
       "napier": "Napier",
       "nelson": "Nelson",
       "new-lynn": "New Lynn",
@@ -455,11 +487,17 @@
      }
     }
    },
-   "name_map": {
-    "Mt Albert": "Mount Albert",
-    "Mt Roskill": "Mount Roskill"
-   },
-   "aliases": {}
+   "name_map": {},
+   "aliases": {
+    "mt-albert": [
+     "Mount Albert",
+     "Mt Albert"
+    ],
+    "mt-roskill": [
+     "Mount Roskill",
+     "Mt Roskill"
+    ]
+   }
   },
   "2025": {
    "elections": [
@@ -469,7 +507,7 @@
     "general": {
      "file": "geo/general-2025.json",
      "features": 64,
-     "bytes": 578142,
+     "bytes": 578124,
      "vertices": 25921,
      "tolerance_deg2": 3.105900223624705e-06,
      "bbox": [
@@ -510,9 +548,9 @@
       "mangere": "Māngere",
       "manurewa": "Manurewa",
       "maungakiekie": "Maungakiekie",
-      "mount-albert": "Mount Albert",
-      "mount-maunganui": "Mount Maunganui",
-      "mount-roskill": "Mount Roskill",
+      "mt-albert": "Mt Albert",
+      "mt-maunganui": "Mt Maunganui",
+      "mt-roskill": "Mt Roskill",
       "napier": "Napier",
       "nelson": "Nelson",
       "new-plymouth": "New Plymouth",
@@ -590,11 +628,7 @@
      }
     }
    },
-   "name_map": {
-    "Mt Albert": "Mount Albert",
-    "Mt Maunganui": "Mount Maunganui",
-    "Mt Roskill": "Mount Roskill"
-   },
+   "name_map": {},
    "aliases": {}
   }
  },
@@ -629,10 +663,10 @@
   "chatham": {
    "label": "Chatham Islands",
    "bbox": [
-    183.3,
-    -44.45,
-    184.1,
-    -43.55
+    183.2,
+    -44.5,
+    184.6,
+    -43.5
    ]
   }
  },

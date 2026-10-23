@@ -50,7 +50,7 @@ INSETS = {
     "auckland": {"label": "Auckland", "bbox": [174.45, -37.10, 175.15, -36.60]},
     "wellington": {"label": "Wellington", "bbox": [174.60, -41.45, 175.15, -40.95]},
     "christchurch": {"label": "Christchurch", "bbox": [172.35, -43.70, 172.85, -43.35]},
-    "chatham": {"label": "Chatham Islands", "bbox": [183.30, -44.45, 184.10, -43.55]},
+    "chatham": {"label": "Chatham Islands", "bbox": [183.20, -44.50, 184.60, -43.50]},
 }
 MAINLAND_BBOX = [166.0, -47.5, 179.0, -34.0]
 
@@ -59,12 +59,12 @@ def slugify(s):
     s = unicodedata.normalize("NFKD", s)
     s = "".join(c for c in s if not unicodedata.combining(c))
     s = s.lower().replace("'", "").replace("’", "")
-    return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return re.sub(r"^mount-", "mt-", s)  # repo convention: mt-albert, mt-roskill, mt-maunganui (as Stats NZ spells them)
 
 
 def clean_source_name(n):
     n = "".join(c for c in n if unicodedata.category(c) != "Cc")  # stray U+0081 in Māori 2014
-    n = re.sub(r"^Mt ", "Mount ", n)
     return n.strip()
 
 
@@ -88,6 +88,13 @@ def canonical_names():
                 sl = e.get("slug") or slugify(e["name"])
                 out[(e["type"], bs)][sl] = e["name"]  # later years overwrite -> latest spelling
                 aliases[(e["type"], bs)][sl].add(e["name"])
+    # prefer the spelling used by data/electorates/2026.json (the site's canonical electorate list)
+    names2026 = out.get(("general", "2025"), {}) | out.get(("maori", "2025"), {})
+    for key, m in out.items():
+        for sl in m:
+            if sl in names2026:
+                m[sl] = names2026[sl]
+            aliases[key][sl].add(m[sl])  # every spelling used by any election year + the canonical one
     return out, aliases
 
 

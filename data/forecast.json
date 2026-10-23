@@ -1,0 +1,4433 @@
+{
+ "title": "Poll-of-polls and seat forecast: 2026 New Zealand general election",
+ "generated": "2026-10-23",
+ "as_of": "2026-10-23",
+ "election_date": "2026-11-07",
+ "days_to_election": 15,
+ "polls_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
+ "polls_retrieved": "2026-10-23",
+ "n_polls_this_term": 129,
+ "n_polls_last_120_days": 21,
+ "latest_poll_date": "2026-10-19",
+ "method_doc": "guide/forecast-method.md",
+ "how_to_read": [
+  "The poll average is where the public polls, adjusted for each pollster's habitual lean, put each party today. Its interval shows only how noisy the polls are.",
+  "The forecast interval is wider: it adds how far New Zealand's final polls have missed the result at the last five elections and how much support can still move before 7 November.",
+  "Seats come from running the real MMP rules (5% or an electorate seat, Sainte-Laguë, overhang) on tens of thousands of simulated results. Expected seats are an average; the 80% range is where 8 in 10 simulations land.",
+  "A bloc's 'majority' probability is the share of simulations in which those parties alone hold more than half of all seats, including overhang seats.",
+  "Probabilities are rounded to the nearest 1% and seats to whole numbers deliberately: the inputs are not precise enough to justify more.",
+  "A 70% chance is not a certainty: it means the other outcome happens about 3 times in 10."
+ ],
+ "headline": {
+  "largest_party_probability": {
+   "national": 61,
+   "labour": 39
+  },
+  "p_right_bloc_majority_NAT_ACT_NZF": 36,
+  "p_left_bloc_majority_LAB_GRN_TPM": 8,
+  "p_no_bloc_majority": 56,
+  "p_TOP_holds_balance_of_power": 55,
+  "p_NZ_First_holds_balance_of_power": 82,
+  "p_TOP_over_5pct": 83,
+  "p_NZ_First_over_5pct": 100,
+  "p_TPM_over_5pct": 1,
+  "p_overhang": 77,
+  "expected_total_seats": 122
+ },
+ "parties": [
+  {
+   "party": "national",
+   "name": "National",
+   "poll_average": 28.6,
+   "poll_average_80": [
+    27.8,
+    29.3
+   ],
+   "poll_average_95": [
+    27.3,
+    29.8
+   ],
+   "forecast_vote_mean": 28.1,
+   "forecast_vote_80": [
+    24.4,
+    31.9
+   ],
+   "forecast_vote_95": [
+    22.5,
+    33.9
+   ],
+   "uncertainty": {
+    "calibrated_poll_error_sd": 2.69,
+    "aggregate_se": 0.62,
+    "drift_sd_to_election": 0.45,
+    "total_sd": 2.8
+   },
+   "n_polls_last_120_days": 21,
+   "seats_mean": 34.8,
+   "seats_expected": 35,
+   "seats_80": [
+    30,
+    40
+   ],
+   "seats_95": [
+    27,
+    43
+   ],
+   "seat_histogram": {
+    "26": 1,
+    "27": 1,
+    "28": 2,
+    "29": 3,
+    "30": 5,
+    "31": 7,
+    "32": 9,
+    "33": 10,
+    "34": 10,
+    "35": 10,
+    "36": 9,
+    "37": 8,
+    "38": 7,
+    "39": 6,
+    "40": 4,
+    "41": 3,
+    "42": 2,
+    "43": 1,
+    "44": 1
+   },
+   "p_over_5pct": 100,
+   "p_wins_electorate": 100,
+   "p_in_parliament": 100,
+   "p_largest_party": 61
+  },
+  {
+   "party": "labour",
+   "name": "Labour",
+   "poll_average": 27.1,
+   "poll_average_80": [
+    26.4,
+    27.8
+   ],
+   "poll_average_95": [
+    26.1,
+    28.2
+   ],
+   "forecast_vote_mean": 26.6,
+   "forecast_vote_80": [
+    23.5,
+    29.8
+   ],
+   "forecast_vote_95": [
+    21.9,
+    31.4
+   ],
+   "uncertainty": {
+    "calibrated_poll_error_sd": 2.65,
+    "aggregate_se": 0.54,
+    "drift_sd_to_election": 0.54,
+    "total_sd": 2.76
+   },
+   "n_polls_last_120_days": 21,
+   "seats_mean": 33.0,
+   "seats_expected": 33,
+   "seats_80": [
+    29,
+    37
+   ],
+   "seats_95": [
+    27,
+    39
+   ],
+   "seat_histogram": {
+    "26": 1,
+    "27": 2,
+    "28": 3,
+    "29": 6,
+    "30": 9,
+    "31": 11,
+    "32": 13,
+    "33": 14,
+    "34": 12,
+    "35": 10,
+    "36": 8,
+    "37": 5,
+    "38": 3,
+    "39": 2,
+    "40": 1
+   },
+   "p_over_5pct": 100,
+   "p_wins_electorate": 100,
+   "p_in_parliament": 100,
+   "p_largest_party": 39
+  },
+  {
+   "party": "green",
+   "name": "Green",
+   "poll_average": 14.9,
+   "poll_average_80": [
+    14.3,
+    15.5
+   ],
+   "poll_average_95": [
+    14.0,
+    15.8
+   ],
+   "forecast_vote_mean": 14.7,
+   "forecast_vote_80": [
+    12.1,
+    17.4
+   ],
+   "forecast_vote_95": [
+    10.9,
+    18.9
+   ],
+   "uncertainty": {
+    "calibrated_poll_error_sd": 2.12,
+    "aggregate_se": 0.47,
+    "drift_sd_to_election": 0.43,
+    "total_sd": 2.22
+   },
+   "n_polls_last_120_days": 21,
+   "seats_mean": 18.2,
+   "seats_expected": 18,
+   "seats_80": [
+    15,
+    21
+   ],
+   "seats_95": [
+    14,
+    23
+   ],
+   "seat_histogram": {
+    "13": 2,
+    "14": 4,
+    "15": 8,
+    "16": 12,
+    "17": 15,
+    "18": 16,
+    "19": 14,
+    "20": 11,
+    "21": 8,
+    "22": 5,
+    "23": 3,
+    "24": 1,
+    "25": 1
+   },
+   "p_over_5pct": 100,
+   "p_wins_electorate": 100,
+   "p_in_parliament": 100,
+   "p_largest_party": 0
+  },
+  {
+   "party": "act",
+   "name": "ACT",
+   "poll_average": 10.0,
+   "poll_average_80": [
+    9.5,
+    10.5
+   ],
+   "poll_average_95": [
+    9.2,
+    10.7
+   ],
+   "forecast_vote_mean": 9.9,
+   "forecast_vote_80": [
+    7.7,
+    12.2
+   ],
+   "forecast_vote_95": [
+    6.8,
+    13.7
+   ],
+   "uncertainty": {
+    "calibrated_poll_error_sd": 1.79,
+    "aggregate_se": 0.39,
+    "drift_sd_to_election": 0.43,
+    "total_sd": 1.88
+   },
+   "n_polls_last_120_days": 21,
+   "seats_mean": 12.3,
+   "seats_expected": 12,
+   "seats_80": [
+    10,
+    15
+   ],
+   "seats_95": [
+    8,
+    17
+   ],
+   "seat_histogram": {
+    "8": 2,
+    "9": 6,
+    "10": 12,
+    "11": 17,
+    "12": 19,
+    "13": 17,
+    "14": 12,
+    "15": 7,
+    "16": 4,
+    "17": 2,
+    "18": 1
+   },
+   "p_over_5pct": 100,
+   "p_wins_electorate": 90,
+   "p_in_parliament": 100,
+   "p_largest_party": 0
+  },
+  {
+   "party": "nz-first",
+   "name": "NZ First",
+   "poll_average": 10.2,
+   "poll_average_80": [
+    9.7,
+    10.8
+   ],
+   "poll_average_95": [
+    9.4,
+    11.0
+   ],
+   "forecast_vote_mean": 10.2,
+   "forecast_vote_80": [
+    7.9,
+    12.6
+   ],
+   "forecast_vote_95": [
+    7.0,
+    14.1
+   ],
+   "uncertainty": {
+    "calibrated_poll_error_sd": 1.81,
+    "aggregate_se": 0.41,
+    "drift_sd_to_election": 0.31,
+    "total_sd": 1.88
+   },
+   "n_polls_last_120_days": 21,
+   "seats_mean": 12.6,
+   "seats_expected": 13,
+   "seats_80": [
+    10,
+    16
+   ],
+   "seats_95": [
+    9,
+    17
+   ],
+   "seat_histogram": {
+    "8": 2,
+    "9": 5,
+    "10": 10,
+    "11": 15,
+    "12": 18,
+    "13": 16,
+    "14": 13,
+    "15": 9,
+    "16": 5,
+    "17": 3,
+    "18": 1,
+    "19": 1
+   },
+   "p_over_5pct": 100,
+   "p_wins_electorate": 0,
+   "p_in_parliament": 100,
+   "p_largest_party": 0
+  },
+  {
+   "party": "te-pati-maori",
+   "name": "Te Pāti Māori",
+   "poll_average": 1.7,
+   "poll_average_80": [
+    1.4,
+    1.9
+   ],
+   "poll_average_95": [
+    1.3,
+    2.0
+   ],
+   "forecast_vote_mean": 1.8,
+   "forecast_vote_80": [
+    0.9,
+    3.1
+   ],
+   "forecast_vote_95": [
+    0.6,
+    4.2
+   ],
+   "uncertainty": {
+    "calibrated_poll_error_sd": 0.76,
+    "aggregate_se": 0.18,
+    "drift_sd_to_election": 0.27,
+    "total_sd": 0.83
+   },
+   "n_polls_last_120_days": 21,
+   "seats_mean": 3.7,
+   "seats_expected": 4,
+   "seats_80": [
+    3,
+    5
+   ],
+   "seats_95": [
+    2,
+    6
+   ],
+   "seat_histogram": {
+    "2": 3,
+    "3": 38,
+    "4": 43,
+    "5": 12,
+    "6": 2
+   },
+   "p_over_5pct": 1,
+   "p_wins_electorate": 100,
+   "p_in_parliament": 100,
+   "p_largest_party": 0
+  },
+  {
+   "party": "opportunity",
+   "name": "Opportunity (TOP)",
+   "poll_average": 6.4,
+   "poll_average_80": [
+    5.9,
+    6.8
+   ],
+   "poll_average_95": [
+    5.6,
+    7.1
+   ],
+   "forecast_vote_mean": 6.4,
+   "forecast_vote_80": [
+    4.6,
+    8.3
+   ],
+   "forecast_vote_95": [
+    3.9,
+    9.7
+   ],
+   "uncertainty": {
+    "calibrated_poll_error_sd": 1.45,
+    "aggregate_se": 0.36,
+    "drift_sd_to_election": 0.23,
+    "total_sd": 1.52
+   },
+   "n_polls_last_120_days": 21,
+   "seats_mean": 6.9,
+   "seats_expected": 7,
+   "seats_80": [
+    0,
+    10
+   ],
+   "seats_95": [
+    0,
+    12
+   ],
+   "seat_histogram": {
+    "0": 17,
+    "6": 6,
+    "7": 23,
+    "8": 22,
+    "9": 16,
+    "10": 9,
+    "11": 5,
+    "12": 2,
+    "13": 1
+   },
+   "p_over_5pct": 83,
+   "p_wins_electorate": 0,
+   "p_in_parliament": 83,
+   "p_largest_party": 0
+  }
+ ],
+ "other_seat_winners": {
+  "te-tai-tokerau-party": {
+   "seats_expected": 0,
+   "p_wins_seat": 5,
+   "seat_histogram": {
+    "0": 95,
+    "1": 5
+   }
+  },
+  "independent": {
+   "seats_expected": 0,
+   "p_wins_seat": 7,
+   "seat_histogram": {
+    "0": 93,
+    "1": 7
+   }
+  }
+ },
+ "blocs": [
+  {
+   "bloc": "National + ACT + NZ First",
+   "parties": [
+    "national",
+    "act",
+    "nz-first"
+   ],
+   "seats_expected": 60,
+   "seats_80": [
+    54,
+    65
+   ],
+   "p_majority": 36,
+   "seat_histogram": {
+    "50": 1,
+    "51": 1,
+    "52": 2,
+    "53": 3,
+    "54": 4,
+    "55": 5,
+    "56": 7,
+    "57": 8,
+    "58": 9,
+    "59": 9,
+    "60": 9,
+    "61": 9,
+    "62": 8,
+    "63": 6,
+    "64": 5,
+    "65": 4,
+    "66": 3,
+    "67": 2,
+    "68": 2,
+    "69": 1,
+    "70": 1
+   }
+  },
+  {
+   "bloc": "Labour + Green + Te Pāti Māori",
+   "parties": [
+    "labour",
+    "green",
+    "te-pati-maori"
+   ],
+   "seats_expected": 55,
+   "seats_80": [
+    50,
+    60
+   ],
+   "p_majority": 8,
+   "seat_histogram": {
+    "46": 1,
+    "47": 2,
+    "48": 2,
+    "49": 4,
+    "50": 5,
+    "51": 6,
+    "52": 8,
+    "53": 9,
+    "54": 10,
+    "55": 10,
+    "56": 9,
+    "57": 8,
+    "58": 7,
+    "59": 5,
+    "60": 4,
+    "61": 3,
+    "62": 2,
+    "63": 2,
+    "64": 1,
+    "65": 1
+   }
+  },
+  {
+   "bloc": "Labour + Green + Te Pāti Māori + TOP",
+   "parties": [
+    "labour",
+    "green",
+    "te-pati-maori",
+    "opportunity"
+   ],
+   "seats_expected": 62,
+   "seats_80": [
+    56,
+    67
+   ],
+   "p_majority": 58,
+   "seat_histogram": {
+    "52": 1,
+    "53": 1,
+    "54": 2,
+    "55": 2,
+    "56": 3,
+    "57": 5,
+    "58": 6,
+    "59": 7,
+    "60": 9,
+    "61": 9,
+    "62": 10,
+    "63": 10,
+    "64": 8,
+    "65": 8,
+    "66": 6,
+    "67": 4,
+    "68": 3,
+    "69": 2,
+    "70": 1,
+    "71": 1
+   }
+  },
+  {
+   "bloc": "National + ACT + NZ First + TOP",
+   "parties": [
+    "national",
+    "act",
+    "nz-first",
+    "opportunity"
+   ],
+   "seats_expected": 67,
+   "seats_80": [
+    61,
+    72
+   ],
+   "p_majority": 90,
+   "seat_histogram": {
+    "56": 1,
+    "57": 1,
+    "58": 1,
+    "59": 2,
+    "60": 3,
+    "61": 4,
+    "62": 5,
+    "63": 6,
+    "64": 7,
+    "65": 8,
+    "66": 9,
+    "67": 9,
+    "68": 9,
+    "69": 8,
+    "70": 7,
+    "71": 6,
+    "72": 4,
+    "73": 3,
+    "74": 2,
+    "75": 1,
+    "76": 1
+   }
+  },
+  {
+   "bloc": "National + ACT",
+   "parties": [
+    "national",
+    "act"
+   ],
+   "seats_expected": 47,
+   "seats_80": [
+    42,
+    52
+   ],
+   "p_majority": 0,
+   "seat_histogram": {
+    "38": 1,
+    "39": 1,
+    "40": 2,
+    "41": 3,
+    "42": 5,
+    "43": 6,
+    "44": 8,
+    "45": 9,
+    "46": 9,
+    "47": 10,
+    "48": 9,
+    "49": 9,
+    "50": 7,
+    "51": 6,
+    "52": 4,
+    "53": 3,
+    "54": 2,
+    "55": 1,
+    "56": 1,
+    "57": 1
+   }
+  },
+  {
+   "bloc": "Labour + Green",
+   "parties": [
+    "labour",
+    "green"
+   ],
+   "seats_expected": 51,
+   "seats_80": [
+    46,
+    56
+   ],
+   "p_majority": 1,
+   "seat_histogram": {
+    "42": 1,
+    "43": 1,
+    "44": 2,
+    "45": 3,
+    "46": 4,
+    "47": 6,
+    "48": 7,
+    "49": 9,
+    "50": 10,
+    "51": 10,
+    "52": 10,
+    "53": 9,
+    "54": 7,
+    "55": 6,
+    "56": 4,
+    "57": 3,
+    "58": 2,
+    "59": 1,
+    "60": 1
+   }
+  },
+  {
+   "bloc": "Labour + Green + TOP",
+   "parties": [
+    "labour",
+    "green",
+    "opportunity"
+   ],
+   "seats_expected": 58,
+   "seats_80": [
+    53,
+    63
+   ],
+   "p_majority": 23,
+   "seat_histogram": {
+    "48": 1,
+    "49": 1,
+    "50": 2,
+    "51": 2,
+    "52": 3,
+    "53": 4,
+    "54": 6,
+    "55": 7,
+    "56": 8,
+    "57": 10,
+    "58": 10,
+    "59": 10,
+    "60": 9,
+    "61": 8,
+    "62": 7,
+    "63": 5,
+    "64": 3,
+    "65": 2,
+    "66": 1,
+    "67": 1
+   }
+  },
+  {
+   "bloc": "Labour + NZ First",
+   "parties": [
+    "labour",
+    "nz-first"
+   ],
+   "seats_expected": 46,
+   "seats_80": [
+    41,
+    50
+   ],
+   "p_majority": 0,
+   "seat_histogram": {
+    "37": 1,
+    "38": 1,
+    "39": 2,
+    "40": 4,
+    "41": 5,
+    "42": 7,
+    "43": 8,
+    "44": 10,
+    "45": 10,
+    "46": 11,
+    "47": 10,
+    "48": 8,
+    "49": 6,
+    "50": 5,
+    "51": 4,
+    "52": 2,
+    "53": 2,
+    "54": 1,
+    "55": 1
+   }
+  },
+  {
+   "bloc": "National + NZ First",
+   "parties": [
+    "national",
+    "nz-first"
+   ],
+   "seats_expected": 47,
+   "seats_80": [
+    42,
+    53
+   ],
+   "p_majority": 0,
+   "seat_histogram": {
+    "38": 1,
+    "39": 1,
+    "40": 2,
+    "41": 3,
+    "42": 4,
+    "43": 6,
+    "44": 7,
+    "45": 9,
+    "46": 10,
+    "47": 10,
+    "48": 10,
+    "49": 9,
+    "50": 8,
+    "51": 6,
+    "52": 5,
+    "53": 4,
+    "54": 3,
+    "55": 2,
+    "56": 1,
+    "57": 1
+   }
+  }
+ ],
+ "p_no_bloc_majority": 56,
+ "majority_threshold": {
+  "usual": 61,
+  "note": "61 of 120; one more for every two overhang seats (62 of 122-123)",
+  "distribution_total_seats": {
+   "120": 23,
+   "121": 27,
+   "122": 30,
+   "123": 16,
+   "124": 4
+  }
+ },
+ "most_likely_parliament": {
+  "seats": {
+   "national": 38,
+   "labour": 31,
+   "green": 18,
+   "act": 12,
+   "nz-first": 11,
+   "te-pati-maori": 4,
+   "opportunity": 8
+  },
+  "share_of_simulations": 0.0,
+  "note": "The single most frequent exact seat combination; even the most likely one occurs in only a few per cent of simulations."
+ },
+ "trend_weekly": [
+  {
+   "week_ending": "2023-11-06",
+   "national": 36.8,
+   "labour": 27.7,
+   "green": 15.0,
+   "act": 8.2,
+   "nz-first": 5.9,
+   "te-pati-maori": 3.4,
+   "opportunity": 3.6
+  },
+  {
+   "week_ending": "2023-11-13",
+   "national": 36.8,
+   "labour": 27.7,
+   "green": 15.0,
+   "act": 8.2,
+   "nz-first": 5.9,
+   "te-pati-maori": 3.4,
+   "opportunity": 3.6
+  },
+  {
+   "week_ending": "2023-11-20",
+   "national": 36.8,
+   "labour": 27.7,
+   "green": 15.0,
+   "act": 8.2,
+   "nz-first": 5.9,
+   "te-pati-maori": 3.4,
+   "opportunity": 3.6
+  },
+  {
+   "week_ending": "2023-11-27",
+   "national": 36.8,
+   "labour": 27.7,
+   "green": 15.0,
+   "act": 8.2,
+   "nz-first": 5.9,
+   "te-pati-maori": 3.4,
+   "opportunity": 3.6
+  },
+  {
+   "week_ending": "2023-12-04",
+   "national": 37.7,
+   "labour": 24.6,
+   "green": 12.3,
+   "act": 10.6,
+   "nz-first": 7.4,
+   "te-pati-maori": 2.6,
+   "opportunity": 3.0
+  },
+  {
+   "week_ending": "2023-12-11",
+   "national": 37.3,
+   "labour": 25.8,
+   "green": 11.9,
+   "act": 9.3,
+   "nz-first": 7.6,
+   "te-pati-maori": 3.3,
+   "opportunity": 3.0
+  },
+  {
+   "week_ending": "2023-12-18",
+   "national": 37.3,
+   "labour": 25.8,
+   "green": 11.9,
+   "act": 9.3,
+   "nz-first": 7.6,
+   "te-pati-maori": 3.3,
+   "opportunity": 3.0
+  },
+  {
+   "week_ending": "2023-12-25",
+   "national": 37.3,
+   "labour": 25.8,
+   "green": 11.9,
+   "act": 9.3,
+   "nz-first": 7.6,
+   "te-pati-maori": 3.3,
+   "opportunity": 3.0
+  },
+  {
+   "week_ending": "2024-01-01",
+   "national": 36.9,
+   "labour": 24.9,
+   "green": 13.1,
+   "act": 9.0,
+   "nz-first": 6.7,
+   "te-pati-maori": 4.1,
+   "opportunity": 3.2
+  },
+  {
+   "week_ending": "2024-01-08",
+   "national": 36.9,
+   "labour": 24.9,
+   "green": 13.1,
+   "act": 9.0,
+   "nz-first": 6.7,
+   "te-pati-maori": 4.1,
+   "opportunity": 3.2
+  },
+  {
+   "week_ending": "2024-01-15",
+   "national": 38.1,
+   "labour": 25.9,
+   "green": 12.1,
+   "act": 8.6,
+   "nz-first": 6.4,
+   "te-pati-maori": 4.0,
+   "opportunity": 3.2
+  },
+  {
+   "week_ending": "2024-01-22",
+   "national": 38.1,
+   "labour": 25.9,
+   "green": 12.1,
+   "act": 8.6,
+   "nz-first": 6.4,
+   "te-pati-maori": 4.0,
+   "opportunity": 3.2
+  },
+  {
+   "week_ending": "2024-01-29",
+   "national": 38.1,
+   "labour": 25.9,
+   "green": 12.1,
+   "act": 8.6,
+   "nz-first": 6.4,
+   "te-pati-maori": 4.0,
+   "opportunity": 3.2
+  },
+  {
+   "week_ending": "2024-02-05",
+   "national": 38.4,
+   "labour": 25.0,
+   "green": 13.1,
+   "act": 7.6,
+   "nz-first": 6.2,
+   "te-pati-maori": 4.1,
+   "opportunity": 3.5
+  },
+  {
+   "week_ending": "2024-02-12",
+   "national": 38.7,
+   "labour": 25.9,
+   "green": 12.1,
+   "act": 9.7,
+   "nz-first": 5.7,
+   "te-pati-maori": 3.6,
+   "opportunity": 3.0
+  },
+  {
+   "week_ending": "2024-02-19",
+   "national": 38.2,
+   "labour": 26.2,
+   "green": 12.1,
+   "act": 9.4,
+   "nz-first": 5.9,
+   "te-pati-maori": 3.8,
+   "opportunity": 2.6
+  },
+  {
+   "week_ending": "2024-02-26",
+   "national": 37.6,
+   "labour": 25.5,
+   "green": 12.7,
+   "act": 9.9,
+   "nz-first": 6.4,
+   "te-pati-maori": 3.8,
+   "opportunity": 2.3
+  },
+  {
+   "week_ending": "2024-03-04",
+   "national": 37.6,
+   "labour": 25.5,
+   "green": 12.7,
+   "act": 9.9,
+   "nz-first": 6.4,
+   "te-pati-maori": 3.8,
+   "opportunity": 2.3
+  },
+  {
+   "week_ending": "2024-03-11",
+   "national": 37.6,
+   "labour": 25.2,
+   "green": 12.9,
+   "act": 9.8,
+   "nz-first": 6.5,
+   "te-pati-maori": 3.4,
+   "opportunity": 2.4
+  },
+  {
+   "week_ending": "2024-03-18",
+   "national": 37.6,
+   "labour": 25.2,
+   "green": 12.9,
+   "act": 9.8,
+   "nz-first": 6.5,
+   "te-pati-maori": 3.4,
+   "opportunity": 2.4
+  },
+  {
+   "week_ending": "2024-03-25",
+   "national": 37.9,
+   "labour": 25.2,
+   "green": 12.7,
+   "act": 10.1,
+   "nz-first": 6.5,
+   "te-pati-maori": 3.3,
+   "opportunity": 2.2
+  },
+  {
+   "week_ending": "2024-04-01",
+   "national": 37.9,
+   "labour": 25.2,
+   "green": 12.7,
+   "act": 10.1,
+   "nz-first": 6.5,
+   "te-pati-maori": 3.4,
+   "opportunity": 2.2
+  },
+  {
+   "week_ending": "2024-04-08",
+   "national": 37.6,
+   "labour": 25.1,
+   "green": 13.7,
+   "act": 9.2,
+   "nz-first": 6.4,
+   "te-pati-maori": 3.8,
+   "opportunity": 2.2
+  },
+  {
+   "week_ending": "2024-04-15",
+   "national": 37.6,
+   "labour": 25.1,
+   "green": 13.7,
+   "act": 9.2,
+   "nz-first": 6.4,
+   "te-pati-maori": 3.8,
+   "opportunity": 2.2
+  },
+  {
+   "week_ending": "2024-04-22",
+   "national": 37.4,
+   "labour": 25.7,
+   "green": 12.9,
+   "act": 9.6,
+   "nz-first": 6.1,
+   "te-pati-maori": 4.3,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2024-04-29",
+   "national": 36.7,
+   "labour": 26.6,
+   "green": 13.3,
+   "act": 9.0,
+   "nz-first": 5.7,
+   "te-pati-maori": 4.3,
+   "opportunity": 1.7
+  },
+  {
+   "week_ending": "2024-05-06",
+   "national": 36.3,
+   "labour": 27.1,
+   "green": 13.2,
+   "act": 8.8,
+   "nz-first": 5.7,
+   "te-pati-maori": 4.2,
+   "opportunity": 1.7
+  },
+  {
+   "week_ending": "2024-05-13",
+   "national": 36.4,
+   "labour": 27.9,
+   "green": 12.7,
+   "act": 9.0,
+   "nz-first": 5.6,
+   "te-pati-maori": 3.9,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2024-05-20",
+   "national": 35.8,
+   "labour": 29.0,
+   "green": 12.7,
+   "act": 9.0,
+   "nz-first": 5.6,
+   "te-pati-maori": 3.6,
+   "opportunity": 1.9
+  },
+  {
+   "week_ending": "2024-05-27",
+   "national": 35.8,
+   "labour": 29.0,
+   "green": 12.7,
+   "act": 9.0,
+   "nz-first": 5.6,
+   "te-pati-maori": 3.6,
+   "opportunity": 1.9
+  },
+  {
+   "week_ending": "2024-06-03",
+   "national": 35.8,
+   "labour": 29.0,
+   "green": 12.7,
+   "act": 9.0,
+   "nz-first": 5.6,
+   "te-pati-maori": 3.6,
+   "opportunity": 1.9
+  },
+  {
+   "week_ending": "2024-06-10",
+   "national": 35.6,
+   "labour": 29.0,
+   "green": 13.1,
+   "act": 9.3,
+   "nz-first": 5.6,
+   "te-pati-maori": 3.7,
+   "opportunity": 1.7
+  },
+  {
+   "week_ending": "2024-06-17",
+   "national": 35.6,
+   "labour": 29.0,
+   "green": 13.1,
+   "act": 9.3,
+   "nz-first": 5.5,
+   "te-pati-maori": 3.7,
+   "opportunity": 1.7
+  },
+  {
+   "week_ending": "2024-06-24",
+   "national": 35.9,
+   "labour": 28.9,
+   "green": 13.1,
+   "act": 8.6,
+   "nz-first": 5.8,
+   "te-pati-maori": 3.6,
+   "opportunity": 1.7
+  },
+  {
+   "week_ending": "2024-07-01",
+   "national": 35.9,
+   "labour": 28.9,
+   "green": 13.1,
+   "act": 8.5,
+   "nz-first": 5.8,
+   "te-pati-maori": 3.6,
+   "opportunity": 1.7
+  },
+  {
+   "week_ending": "2024-07-08",
+   "national": 36.3,
+   "labour": 27.8,
+   "green": 13.3,
+   "act": 8.8,
+   "nz-first": 6.2,
+   "te-pati-maori": 3.6,
+   "opportunity": 2.2
+  },
+  {
+   "week_ending": "2024-07-15",
+   "national": 36.3,
+   "labour": 27.8,
+   "green": 13.3,
+   "act": 8.8,
+   "nz-first": 6.2,
+   "te-pati-maori": 3.6,
+   "opportunity": 2.2
+  },
+  {
+   "week_ending": "2024-07-22",
+   "national": 35.3,
+   "labour": 27.3,
+   "green": 13.0,
+   "act": 9.2,
+   "nz-first": 6.3,
+   "te-pati-maori": 4.3,
+   "opportunity": 2.7
+  },
+  {
+   "week_ending": "2024-07-29",
+   "national": 35.3,
+   "labour": 27.3,
+   "green": 13.0,
+   "act": 9.2,
+   "nz-first": 6.3,
+   "te-pati-maori": 4.3,
+   "opportunity": 2.7
+  },
+  {
+   "week_ending": "2024-08-05",
+   "national": 35.3,
+   "labour": 27.3,
+   "green": 13.0,
+   "act": 9.2,
+   "nz-first": 6.3,
+   "te-pati-maori": 4.3,
+   "opportunity": 2.7
+  },
+  {
+   "week_ending": "2024-08-12",
+   "national": 35.3,
+   "labour": 27.3,
+   "green": 13.0,
+   "act": 9.2,
+   "nz-first": 6.3,
+   "te-pati-maori": 4.3,
+   "opportunity": 2.7
+  },
+  {
+   "week_ending": "2024-08-19",
+   "national": 35.9,
+   "labour": 28.0,
+   "green": 12.2,
+   "act": 8.5,
+   "nz-first": 6.5,
+   "te-pati-maori": 4.5,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2024-08-26",
+   "national": 36.2,
+   "labour": 28.2,
+   "green": 12.0,
+   "act": 8.6,
+   "nz-first": 6.9,
+   "te-pati-maori": 4.0,
+   "opportunity": 2.0
+  },
+  {
+   "week_ending": "2024-09-02",
+   "national": 36.2,
+   "labour": 28.2,
+   "green": 11.9,
+   "act": 8.6,
+   "nz-first": 6.9,
+   "te-pati-maori": 4.0,
+   "opportunity": 2.0
+  },
+  {
+   "week_ending": "2024-09-09",
+   "national": 36.2,
+   "labour": 28.2,
+   "green": 12.0,
+   "act": 8.6,
+   "nz-first": 6.9,
+   "te-pati-maori": 4.0,
+   "opportunity": 2.0
+  },
+  {
+   "week_ending": "2024-09-16",
+   "national": 37.3,
+   "labour": 27.6,
+   "green": 11.9,
+   "act": 8.8,
+   "nz-first": 6.6,
+   "te-pati-maori": 4.3,
+   "opportunity": 1.9
+  },
+  {
+   "week_ending": "2024-09-23",
+   "national": 37.6,
+   "labour": 26.8,
+   "green": 12.1,
+   "act": 8.9,
+   "nz-first": 6.9,
+   "te-pati-maori": 4.1,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2024-09-30",
+   "national": 37.6,
+   "labour": 26.8,
+   "green": 12.1,
+   "act": 8.9,
+   "nz-first": 6.9,
+   "te-pati-maori": 4.1,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2024-10-07",
+   "national": 36.5,
+   "labour": 27.8,
+   "green": 11.9,
+   "act": 9.2,
+   "nz-first": 7.1,
+   "te-pati-maori": 3.7,
+   "opportunity": 2.3
+  },
+  {
+   "week_ending": "2024-10-14",
+   "national": 36.3,
+   "labour": 27.9,
+   "green": 12.0,
+   "act": 9.1,
+   "nz-first": 6.7,
+   "te-pati-maori": 3.9,
+   "opportunity": 2.5
+  },
+  {
+   "week_ending": "2024-10-21",
+   "national": 35.0,
+   "labour": 28.8,
+   "green": 12.1,
+   "act": 8.8,
+   "nz-first": 6.8,
+   "te-pati-maori": 4.1,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2024-10-28",
+   "national": 35.0,
+   "labour": 28.8,
+   "green": 12.1,
+   "act": 8.8,
+   "nz-first": 6.8,
+   "te-pati-maori": 4.1,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2024-11-04",
+   "national": 35.0,
+   "labour": 28.8,
+   "green": 12.1,
+   "act": 8.8,
+   "nz-first": 6.8,
+   "te-pati-maori": 4.1,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2024-11-11",
+   "national": 36.1,
+   "labour": 29.6,
+   "green": 11.4,
+   "act": 9.1,
+   "nz-first": 6.6,
+   "te-pati-maori": 3.5,
+   "opportunity": 1.9
+  },
+  {
+   "week_ending": "2024-11-18",
+   "national": 36.1,
+   "labour": 29.6,
+   "green": 11.4,
+   "act": 9.1,
+   "nz-first": 6.6,
+   "te-pati-maori": 3.5,
+   "opportunity": 1.9
+  },
+  {
+   "week_ending": "2024-11-25",
+   "national": 33.9,
+   "labour": 29.8,
+   "green": 11.6,
+   "act": 8.8,
+   "nz-first": 6.6,
+   "te-pati-maori": 5.1,
+   "opportunity": 2.2
+  },
+  {
+   "week_ending": "2024-12-02",
+   "national": 33.8,
+   "labour": 29.5,
+   "green": 12.0,
+   "act": 9.0,
+   "nz-first": 6.1,
+   "te-pati-maori": 5.1,
+   "opportunity": 2.2
+  },
+  {
+   "week_ending": "2024-12-09",
+   "national": 34.2,
+   "labour": 28.6,
+   "green": 11.2,
+   "act": 9.7,
+   "nz-first": 6.1,
+   "te-pati-maori": 5.7,
+   "opportunity": 1.9
+  },
+  {
+   "week_ending": "2024-12-16",
+   "national": 33.7,
+   "labour": 28.5,
+   "green": 11.4,
+   "act": 10.2,
+   "nz-first": 6.4,
+   "te-pati-maori": 5.6,
+   "opportunity": 1.5
+  },
+  {
+   "week_ending": "2024-12-23",
+   "national": 33.7,
+   "labour": 28.5,
+   "green": 11.4,
+   "act": 10.2,
+   "nz-first": 6.4,
+   "te-pati-maori": 5.6,
+   "opportunity": 1.5
+  },
+  {
+   "week_ending": "2024-12-30",
+   "national": 33.7,
+   "labour": 28.5,
+   "green": 11.4,
+   "act": 10.2,
+   "nz-first": 6.4,
+   "te-pati-maori": 5.6,
+   "opportunity": 1.5
+  },
+  {
+   "week_ending": "2025-01-06",
+   "national": 33.7,
+   "labour": 28.5,
+   "green": 11.4,
+   "act": 10.2,
+   "nz-first": 6.4,
+   "te-pati-maori": 5.6,
+   "opportunity": 1.5
+  },
+  {
+   "week_ending": "2025-01-13",
+   "national": 32.1,
+   "labour": 29.2,
+   "green": 11.1,
+   "act": 10.5,
+   "nz-first": 6.9,
+   "te-pati-maori": 5.5,
+   "opportunity": 2.0
+  },
+  {
+   "week_ending": "2025-01-20",
+   "national": 32.1,
+   "labour": 29.2,
+   "green": 11.1,
+   "act": 10.5,
+   "nz-first": 6.9,
+   "te-pati-maori": 5.5,
+   "opportunity": 2.0
+  },
+  {
+   "week_ending": "2025-01-27",
+   "national": 32.6,
+   "labour": 29.9,
+   "green": 11.1,
+   "act": 9.7,
+   "nz-first": 7.1,
+   "te-pati-maori": 5.5,
+   "opportunity": 1.5
+  },
+  {
+   "week_ending": "2025-02-03",
+   "national": 32.6,
+   "labour": 29.9,
+   "green": 11.1,
+   "act": 9.7,
+   "nz-first": 7.1,
+   "te-pati-maori": 5.5,
+   "opportunity": 1.5
+  },
+  {
+   "week_ending": "2025-02-10",
+   "national": 32.4,
+   "labour": 30.6,
+   "green": 11.6,
+   "act": 9.8,
+   "nz-first": 6.5,
+   "te-pati-maori": 5.0,
+   "opportunity": 1.6
+  },
+  {
+   "week_ending": "2025-02-17",
+   "national": 32.4,
+   "labour": 30.6,
+   "green": 11.6,
+   "act": 9.8,
+   "nz-first": 6.5,
+   "te-pati-maori": 5.0,
+   "opportunity": 1.6
+  },
+  {
+   "week_ending": "2025-02-24",
+   "national": 32.0,
+   "labour": 30.7,
+   "green": 12.3,
+   "act": 9.9,
+   "nz-first": 6.4,
+   "te-pati-maori": 4.3,
+   "opportunity": 1.6
+  },
+  {
+   "week_ending": "2025-03-03",
+   "national": 32.0,
+   "labour": 30.7,
+   "green": 12.3,
+   "act": 9.9,
+   "nz-first": 6.4,
+   "te-pati-maori": 4.3,
+   "opportunity": 1.6
+  },
+  {
+   "week_ending": "2025-03-10",
+   "national": 32.3,
+   "labour": 31.5,
+   "green": 11.8,
+   "act": 9.6,
+   "nz-first": 5.9,
+   "te-pati-maori": 4.9,
+   "opportunity": 1.5
+  },
+  {
+   "week_ending": "2025-03-17",
+   "national": 32.2,
+   "labour": 31.5,
+   "green": 11.8,
+   "act": 9.6,
+   "nz-first": 5.9,
+   "te-pati-maori": 4.9,
+   "opportunity": 1.5
+  },
+  {
+   "week_ending": "2025-03-24",
+   "national": 32.5,
+   "labour": 30.9,
+   "green": 12.2,
+   "act": 8.7,
+   "nz-first": 6.3,
+   "te-pati-maori": 5.0,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-03-31",
+   "national": 32.7,
+   "labour": 30.8,
+   "green": 11.8,
+   "act": 9.1,
+   "nz-first": 6.4,
+   "te-pati-maori": 4.9,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-04-07",
+   "national": 33.2,
+   "labour": 30.5,
+   "green": 11.5,
+   "act": 9.4,
+   "nz-first": 6.8,
+   "te-pati-maori": 4.6,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-04-14",
+   "national": 33.2,
+   "labour": 30.5,
+   "green": 11.5,
+   "act": 9.4,
+   "nz-first": 6.8,
+   "te-pati-maori": 4.6,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-04-21",
+   "national": 32.8,
+   "labour": 30.6,
+   "green": 11.8,
+   "act": 9.1,
+   "nz-first": 7.4,
+   "te-pati-maori": 4.5,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-04-28",
+   "national": 32.8,
+   "labour": 30.6,
+   "green": 11.8,
+   "act": 9.1,
+   "nz-first": 7.4,
+   "te-pati-maori": 4.5,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-05-05",
+   "national": 33.3,
+   "labour": 31.2,
+   "green": 11.3,
+   "act": 9.2,
+   "nz-first": 7.3,
+   "te-pati-maori": 4.3,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2025-05-12",
+   "national": 33.3,
+   "labour": 31.2,
+   "green": 11.3,
+   "act": 9.2,
+   "nz-first": 7.3,
+   "te-pati-maori": 4.3,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2025-05-19",
+   "national": 33.3,
+   "labour": 31.2,
+   "green": 11.3,
+   "act": 9.2,
+   "nz-first": 7.3,
+   "te-pati-maori": 4.3,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2025-05-26",
+   "national": 32.9,
+   "labour": 31.2,
+   "green": 10.9,
+   "act": 9.9,
+   "nz-first": 7.1,
+   "te-pati-maori": 4.3,
+   "opportunity": 1.9
+  },
+  {
+   "week_ending": "2025-06-02",
+   "national": 32.4,
+   "labour": 30.4,
+   "green": 11.5,
+   "act": 9.0,
+   "nz-first": 7.8,
+   "te-pati-maori": 4.5,
+   "opportunity": 2.0
+  },
+  {
+   "week_ending": "2025-06-09",
+   "national": 32.7,
+   "labour": 31.4,
+   "green": 10.9,
+   "act": 9.0,
+   "nz-first": 7.3,
+   "te-pati-maori": 4.2,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-06-16",
+   "national": 32.7,
+   "labour": 31.5,
+   "green": 11.1,
+   "act": 8.9,
+   "nz-first": 7.3,
+   "te-pati-maori": 3.7,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-06-23",
+   "national": 32.7,
+   "labour": 31.3,
+   "green": 10.8,
+   "act": 9.3,
+   "nz-first": 7.5,
+   "te-pati-maori": 3.9,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-06-30",
+   "national": 32.7,
+   "labour": 31.3,
+   "green": 10.8,
+   "act": 9.3,
+   "nz-first": 7.5,
+   "te-pati-maori": 3.9,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-07-07",
+   "national": 33.0,
+   "labour": 31.2,
+   "green": 10.7,
+   "act": 9.3,
+   "nz-first": 8.1,
+   "te-pati-maori": 3.8,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-07-14",
+   "national": 32.9,
+   "labour": 31.3,
+   "green": 11.0,
+   "act": 9.2,
+   "nz-first": 7.9,
+   "te-pati-maori": 3.8,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-07-21",
+   "national": 32.9,
+   "labour": 31.3,
+   "green": 11.0,
+   "act": 9.2,
+   "nz-first": 7.9,
+   "te-pati-maori": 3.8,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-07-28",
+   "national": 32.5,
+   "labour": 31.9,
+   "green": 10.7,
+   "act": 9.4,
+   "nz-first": 8.4,
+   "te-pati-maori": 3.6,
+   "opportunity": 1.4
+  },
+  {
+   "week_ending": "2025-08-04",
+   "national": 32.5,
+   "labour": 31.9,
+   "green": 10.7,
+   "act": 9.4,
+   "nz-first": 8.4,
+   "te-pati-maori": 3.6,
+   "opportunity": 1.4
+  },
+  {
+   "week_ending": "2025-08-11",
+   "national": 32.4,
+   "labour": 32.0,
+   "green": 10.8,
+   "act": 9.0,
+   "nz-first": 8.6,
+   "te-pati-maori": 3.7,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-08-18",
+   "national": 32.4,
+   "labour": 32.0,
+   "green": 10.8,
+   "act": 9.0,
+   "nz-first": 8.6,
+   "te-pati-maori": 3.7,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-08-25",
+   "national": 31.6,
+   "labour": 33.1,
+   "green": 11.1,
+   "act": 9.2,
+   "nz-first": 8.2,
+   "te-pati-maori": 3.3,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-09-01",
+   "national": 31.6,
+   "labour": 33.1,
+   "green": 11.1,
+   "act": 9.2,
+   "nz-first": 8.2,
+   "te-pati-maori": 3.3,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2025-09-08",
+   "national": 32.0,
+   "labour": 33.1,
+   "green": 11.3,
+   "act": 8.5,
+   "nz-first": 8.1,
+   "te-pati-maori": 3.6,
+   "opportunity": 2.0
+  },
+  {
+   "week_ending": "2025-09-15",
+   "national": 32.1,
+   "labour": 32.8,
+   "green": 11.3,
+   "act": 8.3,
+   "nz-first": 8.3,
+   "te-pati-maori": 3.7,
+   "opportunity": 1.9
+  },
+  {
+   "week_ending": "2025-09-22",
+   "national": 32.1,
+   "labour": 32.3,
+   "green": 11.5,
+   "act": 8.3,
+   "nz-first": 8.2,
+   "te-pati-maori": 4.0,
+   "opportunity": 1.9
+  },
+  {
+   "week_ending": "2025-09-29",
+   "national": 32.1,
+   "labour": 32.3,
+   "green": 11.5,
+   "act": 8.3,
+   "nz-first": 8.2,
+   "te-pati-maori": 4.0,
+   "opportunity": 1.9
+  },
+  {
+   "week_ending": "2025-10-06",
+   "national": 31.3,
+   "labour": 31.8,
+   "green": 12.0,
+   "act": 7.8,
+   "nz-first": 8.9,
+   "te-pati-maori": 4.1,
+   "opportunity": 2.0
+  },
+  {
+   "week_ending": "2025-10-13",
+   "national": 31.5,
+   "labour": 31.7,
+   "green": 11.3,
+   "act": 8.4,
+   "nz-first": 9.5,
+   "te-pati-maori": 3.8,
+   "opportunity": 1.7
+  },
+  {
+   "week_ending": "2025-10-20",
+   "national": 31.5,
+   "labour": 31.7,
+   "green": 11.3,
+   "act": 8.4,
+   "nz-first": 9.5,
+   "te-pati-maori": 3.8,
+   "opportunity": 1.7
+  },
+  {
+   "week_ending": "2025-10-27",
+   "national": 31.7,
+   "labour": 31.9,
+   "green": 11.1,
+   "act": 8.1,
+   "nz-first": 9.6,
+   "te-pati-maori": 3.5,
+   "opportunity": 1.7
+  },
+  {
+   "week_ending": "2025-11-03",
+   "national": 31.7,
+   "labour": 31.9,
+   "green": 11.1,
+   "act": 8.1,
+   "nz-first": 9.6,
+   "te-pati-maori": 3.5,
+   "opportunity": 1.7
+  },
+  {
+   "week_ending": "2025-11-10",
+   "national": 31.6,
+   "labour": 32.5,
+   "green": 10.8,
+   "act": 8.2,
+   "nz-first": 9.2,
+   "te-pati-maori": 3.3,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2025-11-17",
+   "national": 31.6,
+   "labour": 32.5,
+   "green": 10.8,
+   "act": 8.2,
+   "nz-first": 9.2,
+   "te-pati-maori": 3.3,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2025-11-24",
+   "national": 32.1,
+   "labour": 31.9,
+   "green": 11.4,
+   "act": 7.9,
+   "nz-first": 9.1,
+   "te-pati-maori": 2.9,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2025-12-01",
+   "national": 32.1,
+   "labour": 31.8,
+   "green": 11.4,
+   "act": 7.9,
+   "nz-first": 9.1,
+   "te-pati-maori": 2.9,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2025-12-08",
+   "national": 32.1,
+   "labour": 32.1,
+   "green": 10.6,
+   "act": 8.8,
+   "nz-first": 8.9,
+   "te-pati-maori": 2.5,
+   "opportunity": 1.6
+  },
+  {
+   "week_ending": "2025-12-15",
+   "national": 31.8,
+   "labour": 33.0,
+   "green": 10.3,
+   "act": 8.7,
+   "nz-first": 8.8,
+   "te-pati-maori": 2.6,
+   "opportunity": 1.6
+  },
+  {
+   "week_ending": "2025-12-22",
+   "national": 32.2,
+   "labour": 33.4,
+   "green": 10.3,
+   "act": 8.2,
+   "nz-first": 9.1,
+   "te-pati-maori": 2.5,
+   "opportunity": 1.6
+  },
+  {
+   "week_ending": "2025-12-29",
+   "national": 32.2,
+   "labour": 33.4,
+   "green": 10.3,
+   "act": 8.2,
+   "nz-first": 9.1,
+   "te-pati-maori": 2.5,
+   "opportunity": 1.6
+  },
+  {
+   "week_ending": "2026-01-05",
+   "national": 32.2,
+   "labour": 33.4,
+   "green": 10.3,
+   "act": 8.2,
+   "nz-first": 9.1,
+   "te-pati-maori": 2.5,
+   "opportunity": 1.6
+  },
+  {
+   "week_ending": "2026-01-12",
+   "national": 32.2,
+   "labour": 33.4,
+   "green": 10.3,
+   "act": 8.3,
+   "nz-first": 9.1,
+   "te-pati-maori": 2.5,
+   "opportunity": 1.6
+  },
+  {
+   "week_ending": "2026-01-19",
+   "national": 31.9,
+   "labour": 33.5,
+   "green": 9.7,
+   "act": 7.8,
+   "nz-first": 10.1,
+   "te-pati-maori": 2.7,
+   "opportunity": 1.5
+  },
+  {
+   "week_ending": "2026-01-26",
+   "national": 32.6,
+   "labour": 33.1,
+   "green": 9.8,
+   "act": 8.0,
+   "nz-first": 9.5,
+   "te-pati-maori": 2.7,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2026-02-02",
+   "national": 32.6,
+   "labour": 33.1,
+   "green": 9.8,
+   "act": 8.0,
+   "nz-first": 9.5,
+   "te-pati-maori": 2.7,
+   "opportunity": 1.8
+  },
+  {
+   "week_ending": "2026-02-09",
+   "national": 32.3,
+   "labour": 33.2,
+   "green": 10.2,
+   "act": 7.7,
+   "nz-first": 9.7,
+   "te-pati-maori": 2.7,
+   "opportunity": 1.9
+  },
+  {
+   "week_ending": "2026-02-16",
+   "national": 32.1,
+   "labour": 33.2,
+   "green": 10.5,
+   "act": 7.9,
+   "nz-first": 9.9,
+   "te-pati-maori": 2.7,
+   "opportunity": 1.7
+  },
+  {
+   "week_ending": "2026-02-23",
+   "national": 32.0,
+   "labour": 33.0,
+   "green": 11.0,
+   "act": 7.8,
+   "nz-first": 9.8,
+   "te-pati-maori": 2.6,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2026-03-02",
+   "national": 32.0,
+   "labour": 33.0,
+   "green": 11.0,
+   "act": 7.8,
+   "nz-first": 9.8,
+   "te-pati-maori": 2.6,
+   "opportunity": 2.1
+  },
+  {
+   "week_ending": "2026-03-09",
+   "national": 31.1,
+   "labour": 33.1,
+   "green": 11.2,
+   "act": 7.8,
+   "nz-first": 9.8,
+   "te-pati-maori": 2.7,
+   "opportunity": 2.2
+  },
+  {
+   "week_ending": "2026-03-16",
+   "national": 31.3,
+   "labour": 33.0,
+   "green": 11.3,
+   "act": 7.8,
+   "nz-first": 9.9,
+   "te-pati-maori": 2.6,
+   "opportunity": 2.3
+  },
+  {
+   "week_ending": "2026-03-23",
+   "national": 30.4,
+   "labour": 33.8,
+   "green": 10.8,
+   "act": 8.0,
+   "nz-first": 10.2,
+   "te-pati-maori": 2.7,
+   "opportunity": 2.5
+  },
+  {
+   "week_ending": "2026-03-30",
+   "national": 30.4,
+   "labour": 33.8,
+   "green": 10.8,
+   "act": 8.0,
+   "nz-first": 10.2,
+   "te-pati-maori": 2.7,
+   "opportunity": 2.5
+  },
+  {
+   "week_ending": "2026-04-06",
+   "national": 30.2,
+   "labour": 33.5,
+   "green": 10.4,
+   "act": 8.3,
+   "nz-first": 11.0,
+   "te-pati-maori": 2.7,
+   "opportunity": 2.7
+  },
+  {
+   "week_ending": "2026-04-13",
+   "national": 30.2,
+   "labour": 33.5,
+   "green": 10.4,
+   "act": 8.3,
+   "nz-first": 11.0,
+   "te-pati-maori": 2.6,
+   "opportunity": 2.7
+  },
+  {
+   "week_ending": "2026-04-20",
+   "national": 29.8,
+   "labour": 34.0,
+   "green": 10.2,
+   "act": 8.2,
+   "nz-first": 11.4,
+   "te-pati-maori": 2.4,
+   "opportunity": 2.9
+  },
+  {
+   "week_ending": "2026-04-27",
+   "national": 28.9,
+   "labour": 34.5,
+   "green": 10.1,
+   "act": 8.6,
+   "nz-first": 11.4,
+   "te-pati-maori": 2.5,
+   "opportunity": 3.0
+  },
+  {
+   "week_ending": "2026-05-04",
+   "national": 28.9,
+   "labour": 34.5,
+   "green": 10.1,
+   "act": 8.6,
+   "nz-first": 11.4,
+   "te-pati-maori": 2.5,
+   "opportunity": 3.0
+  },
+  {
+   "week_ending": "2026-05-11",
+   "national": 29.2,
+   "labour": 33.6,
+   "green": 10.2,
+   "act": 8.0,
+   "nz-first": 11.7,
+   "te-pati-maori": 2.8,
+   "opportunity": 3.1
+  },
+  {
+   "week_ending": "2026-05-18",
+   "national": 29.2,
+   "labour": 33.6,
+   "green": 10.2,
+   "act": 8.0,
+   "nz-first": 11.7,
+   "te-pati-maori": 2.8,
+   "opportunity": 3.1
+  },
+  {
+   "week_ending": "2026-05-25",
+   "national": 29.7,
+   "labour": 32.2,
+   "green": 10.5,
+   "act": 8.4,
+   "nz-first": 11.6,
+   "te-pati-maori": 2.6,
+   "opportunity": 3.8
+  },
+  {
+   "week_ending": "2026-06-01",
+   "national": 29.7,
+   "labour": 32.2,
+   "green": 10.5,
+   "act": 8.4,
+   "nz-first": 11.6,
+   "te-pati-maori": 2.6,
+   "opportunity": 3.8
+  },
+  {
+   "week_ending": "2026-06-08",
+   "national": 29.7,
+   "labour": 32.0,
+   "green": 11.2,
+   "act": 8.2,
+   "nz-first": 11.5,
+   "te-pati-maori": 2.8,
+   "opportunity": 3.8
+  },
+  {
+   "week_ending": "2026-06-15",
+   "national": 29.7,
+   "labour": 32.1,
+   "green": 11.5,
+   "act": 8.2,
+   "nz-first": 11.5,
+   "te-pati-maori": 2.7,
+   "opportunity": 3.8
+  },
+  {
+   "week_ending": "2026-06-22",
+   "national": 29.7,
+   "labour": 31.0,
+   "green": 11.9,
+   "act": 8.0,
+   "nz-first": 11.3,
+   "te-pati-maori": 2.6,
+   "opportunity": 4.5
+  },
+  {
+   "week_ending": "2026-06-29",
+   "national": 29.7,
+   "labour": 31.0,
+   "green": 11.9,
+   "act": 8.0,
+   "nz-first": 11.3,
+   "te-pati-maori": 2.6,
+   "opportunity": 4.5
+  },
+  {
+   "week_ending": "2026-07-06",
+   "national": 29.9,
+   "labour": 31.0,
+   "green": 11.8,
+   "act": 7.8,
+   "nz-first": 11.2,
+   "te-pati-maori": 2.8,
+   "opportunity": 4.3
+  },
+  {
+   "week_ending": "2026-07-13",
+   "national": 29.7,
+   "labour": 31.2,
+   "green": 11.6,
+   "act": 7.9,
+   "nz-first": 11.1,
+   "te-pati-maori": 2.6,
+   "opportunity": 4.5
+  },
+  {
+   "week_ending": "2026-07-20",
+   "national": 29.9,
+   "labour": 31.0,
+   "green": 11.4,
+   "act": 7.9,
+   "nz-first": 11.2,
+   "te-pati-maori": 2.7,
+   "opportunity": 4.6
+  },
+  {
+   "week_ending": "2026-07-27",
+   "national": 30.6,
+   "labour": 30.2,
+   "green": 11.6,
+   "act": 7.9,
+   "nz-first": 10.5,
+   "te-pati-maori": 2.4,
+   "opportunity": 5.3
+  },
+  {
+   "week_ending": "2026-08-03",
+   "national": 30.6,
+   "labour": 30.2,
+   "green": 11.6,
+   "act": 7.9,
+   "nz-first": 10.5,
+   "te-pati-maori": 2.4,
+   "opportunity": 5.3
+  },
+  {
+   "week_ending": "2026-08-10",
+   "national": 30.6,
+   "labour": 29.4,
+   "green": 11.5,
+   "act": 7.7,
+   "nz-first": 10.1,
+   "te-pati-maori": 2.2,
+   "opportunity": 5.7
+  },
+  {
+   "week_ending": "2026-08-17",
+   "national": 29.9,
+   "labour": 29.4,
+   "green": 11.4,
+   "act": 8.2,
+   "nz-first": 10.1,
+   "te-pati-maori": 2.2,
+   "opportunity": 6.2
+  },
+  {
+   "week_ending": "2026-08-24",
+   "national": 30.2,
+   "labour": 29.0,
+   "green": 11.8,
+   "act": 8.5,
+   "nz-first": 9.8,
+   "te-pati-maori": 2.1,
+   "opportunity": 6.6
+  },
+  {
+   "week_ending": "2026-08-31",
+   "national": 30.2,
+   "labour": 28.9,
+   "green": 11.8,
+   "act": 8.5,
+   "nz-first": 9.8,
+   "te-pati-maori": 2.1,
+   "opportunity": 6.6
+  },
+  {
+   "week_ending": "2026-09-07",
+   "national": 29.9,
+   "labour": 28.1,
+   "green": 12.5,
+   "act": 9.0,
+   "nz-first": 9.5,
+   "te-pati-maori": 2.0,
+   "opportunity": 6.3
+  },
+  {
+   "week_ending": "2026-09-14",
+   "national": 29.4,
+   "labour": 28.0,
+   "green": 12.8,
+   "act": 8.9,
+   "nz-first": 10.0,
+   "te-pati-maori": 2.1,
+   "opportunity": 6.4
+  },
+  {
+   "week_ending": "2026-09-21",
+   "national": 29.4,
+   "labour": 28.0,
+   "green": 12.8,
+   "act": 8.9,
+   "nz-first": 10.0,
+   "te-pati-maori": 2.1,
+   "opportunity": 6.4
+  },
+  {
+   "week_ending": "2026-09-28",
+   "national": 29.3,
+   "labour": 27.3,
+   "green": 13.8,
+   "act": 9.7,
+   "nz-first": 9.9,
+   "te-pati-maori": 2.0,
+   "opportunity": 6.2
+  },
+  {
+   "week_ending": "2026-10-05",
+   "national": 28.5,
+   "labour": 27.5,
+   "green": 14.5,
+   "act": 9.6,
+   "nz-first": 10.4,
+   "te-pati-maori": 1.7,
+   "opportunity": 6.2
+  },
+  {
+   "week_ending": "2026-10-12",
+   "national": 28.2,
+   "labour": 27.5,
+   "green": 14.6,
+   "act": 9.7,
+   "nz-first": 10.4,
+   "te-pati-maori": 1.6,
+   "opportunity": 6.4
+  },
+  {
+   "week_ending": "2026-10-19",
+   "national": 28.6,
+   "labour": 27.1,
+   "green": 14.9,
+   "act": 10.0,
+   "nz-first": 10.2,
+   "te-pati-maori": 1.7,
+   "opportunity": 6.4
+  },
+  {
+   "week_ending": "2026-10-23",
+   "national": 28.6,
+   "labour": 27.1,
+   "green": 14.9,
+   "act": 10.0,
+   "nz-first": 10.2,
+   "te-pati-maori": 1.7,
+   "opportunity": 6.4
+  }
+ ],
+ "pollsters": [
+  {
+   "pollster": "1 News–Verian",
+   "type": "public-media",
+   "commissioner": "TVNZ 1News",
+   "internal": false,
+   "n_polls_this_term": 20,
+   "anchor_for_house_effects": true,
+   "house_effects": {
+    "national": 1.2,
+    "labour": 1.0,
+    "green": -0.1,
+    "act": -0.6,
+    "nz-first": -0.6,
+    "te-pati-maori": -0.6,
+    "opportunity": -0.1
+   },
+   "latest_poll": {
+    "fieldwork": "15–19 Oct 2026",
+    "end_date": "2026-10-19",
+    "sample_size": 1003,
+    "results": {
+     "national": 32.0,
+     "labour": 27.0,
+     "green": 16.0,
+     "act": 11.0,
+     "nz-first": 8.0,
+     "te-pati-maori": 0.7,
+     "opportunity": 7.0
+    },
+    "source_url": "https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/"
+   }
+  },
+  {
+   "pollster": "The Post/Freshwater Strategy",
+   "type": "public-media",
+   "commissioner": "The Post (Stuff)",
+   "internal": false,
+   "n_polls_this_term": 8,
+   "anchor_for_house_effects": true,
+   "house_effects": {
+    "national": -0.8,
+    "labour": 2.2,
+    "green": -0.6,
+    "act": -0.6,
+    "nz-first": 0.7,
+    "te-pati-maori": -0.3
+   },
+   "latest_poll": {
+    "fieldwork": "9–19 Oct 2026",
+    "end_date": "2026-10-19",
+    "sample_size": 1458,
+    "results": {
+     "national": 27.6,
+     "labour": 28.7,
+     "green": 14.3,
+     "act": 9.0,
+     "nz-first": 11.8,
+     "te-pati-maori": 2.0,
+     "opportunity": 5.4
+    },
+    "source_url": "https://www.thepost.co.nz/politics/361101225/postfreshwater-strategy-poll-fraction-point-could-decide-who-governs"
+   }
+  },
+  {
+   "pollster": "Anacta",
+   "type": "internal-leaked",
+   "commissioner": "Anacta Consulting (corporate clients; has polled for Labour)",
+   "internal": true,
+   "n_polls_this_term": 2,
+   "anchor_for_house_effects": false,
+   "house_effects": {},
+   "latest_poll": {
+    "fieldwork": "6–10 Oct 2026",
+    "end_date": "2026-10-10",
+    "sample_size": 1352,
+    "results": {
+     "national": 28.0,
+     "labour": 29.0,
+     "green": 15.0,
+     "act": 9.0,
+     "nz-first": 10.0,
+     "te-pati-maori": 1.9,
+     "opportunity": 5.4
+    },
+    "source_url": "https://www.thepost.co.nz/nz-news/361100468/labour-and-national-below-30-labours-pollster-tells-corporate-clients"
+   }
+  },
+  {
+   "pollster": "Taxpayers' Union–Curia",
+   "type": "public-sponsored",
+   "commissioner": "New Zealand Taxpayers' Union (advocacy group)",
+   "internal": false,
+   "n_polls_this_term": 33,
+   "anchor_for_house_effects": true,
+   "house_effects": {
+    "national": 0.2,
+    "labour": 0.6,
+    "green": -1.2,
+    "act": -0.1,
+    "nz-first": 0.1,
+    "te-pati-maori": 0.0,
+    "opportunity": -0.7
+   },
+   "latest_poll": {
+    "fieldwork": "1–5 Oct 2026",
+    "end_date": "2026-10-05",
+    "sample_size": 1000,
+    "results": {
+     "national": 28.5,
+     "labour": 28.2,
+     "green": 13.3,
+     "act": 9.2,
+     "nz-first": 12.0,
+     "te-pati-maori": 1.4,
+     "opportunity": 4.8
+    },
+    "source_url": "https://www.taxpayers.org.nz/oct2026_nztucurpolljjhhfas"
+   }
+  },
+  {
+   "pollster": "RNZ–Reid Research",
+   "type": "public-media",
+   "commissioner": "RNZ (previously Newshub, to 2024)",
+   "internal": false,
+   "n_polls_this_term": 8,
+   "anchor_for_house_effects": true,
+   "house_effects": {
+    "national": -0.4,
+    "labour": 2.0,
+    "green": -0.6,
+    "act": -0.7,
+    "nz-first": 0.5,
+    "te-pati-maori": 0.4,
+    "opportunity": -0.3
+   },
+   "latest_poll": {
+    "fieldwork": "24 Sep – 1 Oct 2026",
+    "end_date": "2026-10-01",
+    "sample_size": 1000,
+    "results": {
+     "national": 25.9,
+     "labour": 30.8,
+     "green": 14.8,
+     "act": 9.0,
+     "nz-first": 10.6,
+     "te-pati-maori": 2.0,
+     "opportunity": 5.5
+    },
+    "source_url": "https://www.rnz.co.nz/news/politics_election-2026/1749693/rnz-reid-research-poll-national-crashes-greens-surge-opportunity-kingmaker"
+   }
+  },
+  {
+   "pollster": "Roy Morgan",
+   "type": "public-self",
+   "commissioner": "Roy Morgan Research (self-published)",
+   "internal": false,
+   "n_polls_this_term": 35,
+   "anchor_for_house_effects": true,
+   "house_effects": {
+    "national": -0.6,
+    "labour": -2.1,
+    "green": 1.5,
+    "act": 0.8,
+    "nz-first": -0.1,
+    "te-pati-maori": 0.3,
+    "opportunity": 0.7
+   },
+   "latest_poll": {
+    "fieldwork": "31 Aug – 27 Sep 2026",
+    "end_date": "2026-09-27",
+    "sample_size": 859,
+    "results": {
+     "national": 31.0,
+     "labour": 23.5,
+     "green": 16.0,
+     "act": 11.0,
+     "nz-first": 10.0,
+     "te-pati-maori": 2.0,
+     "opportunity": 6.5
+    },
+    "source_url": "https://www.roymorgan.com/findings/10351-nz-national-voting-intention-september-2026"
+   }
+  },
+  {
+   "pollster": "Talbot Mills",
+   "type": "internal-leaked",
+   "commissioner": "Talbot Mills Research (corporate-client poll; also Labour's pollster, formerly UMR)",
+   "internal": true,
+   "n_polls_this_term": 21,
+   "anchor_for_house_effects": false,
+   "house_effects": {
+    "national": -0.5,
+    "labour": 3.0,
+    "green": -1.0,
+    "act": -0.8,
+    "nz-first": 0.5,
+    "te-pati-maori": 0.1,
+    "opportunity": -0.4
+   },
+   "latest_poll": {
+    "fieldwork": "1–11 Aug 2026",
+    "end_date": "2026-08-11",
+    "sample_size": null,
+    "results": {
+     "national": 29.0,
+     "labour": 34.0,
+     "green": 8.0,
+     "act": 7.0,
+     "nz-first": 13.0,
+     "te-pati-maori": 3.0,
+     "opportunity": 5.2
+    },
+    "source_url": "https://www.nzherald.co.nz/nz/politics/poll-national-down-and-out-of-government-in-new-talbot-mills-poll/XXSSJVLG35GP7C4NZTSALVAPGE/"
+   }
+  },
+  {
+   "pollster": "Curia",
+   "type": "internal-leaked",
+   "commissioner": "Curia Market Research (National's pollster) - publicly released polls not sponsored by the Taxpayers' Union",
+   "internal": true,
+   "n_polls_this_term": 2,
+   "anchor_for_house_effects": false,
+   "house_effects": {},
+   "latest_poll": {
+    "fieldwork": "8–10 Jan 2024",
+    "end_date": "2024-01-10",
+    "sample_size": 1000,
+    "results": {
+     "national": 41.0,
+     "labour": 28.4,
+     "green": 9.5,
+     "act": 7.8,
+     "nz-first": 5.6,
+     "te-pati-maori": 3.6
+    },
+    "source_url": "https://www.nzherald.co.nz/nz/politics/national-soars-in-new-poll-as-voters-agree-country-is-on-track-chris-hipkins-crashes-record-low/TNS4GGJHIFDTZNGMKPQLNJOGJA/"
+   }
+  }
+ ],
+ "house_effects_note": "House effect = that pollster's average deviation from the pooled trend this term, after shrinkage, in percentage points; positive = the pollster runs high for that party. Constrained to average zero across the independent public pollsters (1 News–Verian, RNZ–Reid Research, Roy Morgan, Taxpayers' Union–Curia, The Post/Freshwater Strategy), so they describe relative leans, not absolute bias. Party-commissioned/corporate polls (internal=true) get half weight and do not anchor the average.",
+ "undecided_note": "All NZ pollsters publish party shares with undecided voters (typically 5-15%) excluded, so polls already sum to ~100% of decided voters and the aggregate is used as published. 'Others' are implied as 100 minus the seven listed parties. The historical calibration measures the resulting error directly, so no separate undecided adjustment is applied.",
+ "aggregation_settings": {
+  "half_life_days": 21.0,
+  "sample_size_weight": "sqrt(n/1000)",
+  "internal_poll_weight": 0.5,
+  "window_days": 120,
+  "house_effect_min_polls": 3,
+  "one_sided": true
+ },
+ "calibration": {
+  "elections_used": [
+   2011,
+   2014,
+   2017,
+   2020,
+   2023
+  ],
+  "method": "Final-3-weeks pooled average (sqrt(n) weights, no house adjustment) vs official result, per party; error SD modelled as k*sqrt(p(100-p))/10 fitted by least squares on squared errors (so historical bias widens the spread rather than shifting the mean).",
+  "k": 0.596,
+  "model_sd_examples": {
+   "1": 0.6,
+   "3": 1.02,
+   "5": 1.3,
+   "10": 1.79,
+   "15": 2.13,
+   "30": 2.73,
+   "45": 2.96
+  },
+  "by_party_size": {
+   "major (>=20%)": {
+    "n": 10,
+    "rmse": 3.07,
+    "mean_abs_error": 2.48,
+    "mean_bias_result_minus_polls": -0.47,
+    "model_sd_at_bin_mean": 2.88
+   },
+   "mid (5-20%)": {
+    "n": 10,
+    "rmse": 1.17,
+    "mean_abs_error": 0.94,
+    "mean_bias_result_minus_polls": -0.41,
+    "model_sd_at_bin_mean": 1.7
+   },
+   "minor (<5%)": {
+    "n": 21,
+    "rmse": 0.76,
+    "mean_abs_error": 0.45,
+    "mean_bias_result_minus_polls": 0.32,
+    "model_sd_at_bin_mean": 0.72
+   }
+  },
+  "by_party_bias": {
+   "national": {
+    "n_elections": 5,
+    "mean_error_result_minus_polls": -0.93,
+    "mean_abs_error": 3.36,
+    "years_overstated_by_polls": [
+     2011,
+     2014,
+     2020
+    ],
+    "years_understated_by_polls": [
+     2017,
+     2023
+    ]
+   },
+   "labour": {
+    "n_elections": 5,
+    "mean_error_result_minus_polls": -0.01,
+    "mean_abs_error": 1.61,
+    "years_overstated_by_polls": [
+     2017,
+     2023
+    ],
+    "years_understated_by_polls": [
+     2011,
+     2014,
+     2020
+    ]
+   },
+   "green": {
+    "n_elections": 5,
+    "mean_error_result_minus_polls": -0.91,
+    "mean_abs_error": 1.12,
+    "years_overstated_by_polls": [
+     2011,
+     2014,
+     2017,
+     2023
+    ],
+    "years_understated_by_polls": [
+     2020
+    ]
+   },
+   "nz-first": {
+    "n_elections": 5,
+    "mean_error_result_minus_polls": 0.87,
+    "mean_abs_error": 1.14,
+    "years_overstated_by_polls": [
+     2017,
+     2023
+    ],
+    "years_understated_by_polls": [
+     2011,
+     2014,
+     2020
+    ]
+   },
+   "te-pati-maori": {
+    "n_elections": 5,
+    "mean_error_result_minus_polls": 0.3,
+    "mean_abs_error": 0.33,
+    "years_overstated_by_polls": [
+     2011,
+     2017
+    ],
+    "years_understated_by_polls": [
+     2014,
+     2020,
+     2023
+    ]
+   },
+   "act": {
+    "n_elections": 5,
+    "mean_error_result_minus_polls": -0.24,
+    "mean_abs_error": 0.32,
+    "years_overstated_by_polls": [
+     2011,
+     2017,
+     2020,
+     2023
+    ],
+    "years_understated_by_polls": [
+     2014
+    ]
+   },
+   "conservative": {
+    "n_elections": 4,
+    "mean_error_result_minus_polls": 0.23,
+    "mean_abs_error": 0.55,
+    "years_overstated_by_polls": [
+     2023
+    ],
+    "years_understated_by_polls": [
+     2011,
+     2014,
+     2020
+    ]
+   },
+   "opportunity": {
+    "n_elections": 3,
+    "mean_error_result_minus_polls": 0.25,
+    "mean_abs_error": 0.28,
+    "years_overstated_by_polls": [
+     2023
+    ],
+    "years_understated_by_polls": [
+     2017,
+     2020
+    ]
+   }
+  },
+  "error_table": [
+   {
+    "year": 2011,
+    "party": "national",
+    "polls": 51.54,
+    "result": 47.31,
+    "error": -4.23,
+    "n_polls": 14
+   },
+   {
+    "year": 2011,
+    "party": "labour",
+    "polls": 26.93,
+    "result": 27.48,
+    "error": 0.55,
+    "n_polls": 14
+   },
+   {
+    "year": 2011,
+    "party": "green",
+    "polls": 12.12,
+    "result": 11.06,
+    "error": -1.06,
+    "n_polls": 14
+   },
+   {
+    "year": 2011,
+    "party": "nz-first",
+    "polls": 3.78,
+    "result": 6.59,
+    "error": 2.81,
+    "n_polls": 14
+   },
+   {
+    "year": 2011,
+    "party": "te-pati-maori",
+    "polls": 1.44,
+    "result": 1.43,
+    "error": -0.01,
+    "n_polls": 14
+   },
+   {
+    "year": 2011,
+    "party": "mana",
+    "polls": 0.81,
+    "result": 1.08,
+    "error": 0.27,
+    "n_polls": 14
+   },
+   {
+    "year": 2011,
+    "party": "act",
+    "polls": 1.36,
+    "result": 1.07,
+    "error": -0.29,
+    "n_polls": 14
+   },
+   {
+    "year": 2011,
+    "party": "united-future",
+    "polls": 0.21,
+    "result": 0.6,
+    "error": 0.39,
+    "n_polls": 14
+   },
+   {
+    "year": 2011,
+    "party": "conservative",
+    "polls": 1.26,
+    "result": 2.65,
+    "error": 1.39,
+    "n_polls": 8
+   },
+   {
+    "year": 2014,
+    "party": "national",
+    "polls": 47.98,
+    "result": 47.04,
+    "error": -0.94,
+    "n_polls": 14
+   },
+   {
+    "year": 2014,
+    "party": "labour",
+    "polls": 25.05,
+    "result": 25.13,
+    "error": 0.08,
+    "n_polls": 14
+   },
+   {
+    "year": 2014,
+    "party": "green",
+    "polls": 12.74,
+    "result": 10.7,
+    "error": -2.04,
+    "n_polls": 14
+   },
+   {
+    "year": 2014,
+    "party": "nz-first",
+    "polls": 6.56,
+    "result": 8.66,
+    "error": 2.1,
+    "n_polls": 14
+   },
+   {
+    "year": 2014,
+    "party": "te-pati-maori",
+    "polls": 0.96,
+    "result": 1.32,
+    "error": 0.36,
+    "n_polls": 14
+   },
+   {
+    "year": 2014,
+    "party": "act",
+    "polls": 0.49,
+    "result": 0.69,
+    "error": 0.2,
+    "n_polls": 14
+   },
+   {
+    "year": 2014,
+    "party": "conservative",
+    "polls": 3.82,
+    "result": 3.97,
+    "error": 0.15,
+    "n_polls": 14
+   },
+   {
+    "year": 2014,
+    "party": "internet-mana",
+    "polls": 1.67,
+    "result": 1.42,
+    "error": -0.25,
+    "n_polls": 14
+   },
+   {
+    "year": 2017,
+    "party": "national",
+    "polls": 40.88,
+    "result": 44.45,
+    "error": 3.58,
+    "n_polls": 8
+   },
+   {
+    "year": 2017,
+    "party": "labour",
+    "polls": 40.59,
+    "result": 36.89,
+    "error": -3.7,
+    "n_polls": 8
+   },
+   {
+    "year": 2017,
+    "party": "nz-first",
+    "polls": 7.36,
+    "result": 7.2,
+    "error": -0.16,
+    "n_polls": 8
+   },
+   {
+    "year": 2017,
+    "party": "green",
+    "polls": 6.71,
+    "result": 6.27,
+    "error": -0.44,
+    "n_polls": 8
+   },
+   {
+    "year": 2017,
+    "party": "act",
+    "polls": 0.6,
+    "result": 0.5,
+    "error": -0.1,
+    "n_polls": 8
+   },
+   {
+    "year": 2017,
+    "party": "opportunity",
+    "polls": 1.81,
+    "result": 2.44,
+    "error": 0.63,
+    "n_polls": 8
+   },
+   {
+    "year": 2017,
+    "party": "te-pati-maori",
+    "polls": 1.25,
+    "result": 1.18,
+    "error": -0.07,
+    "n_polls": 8
+   },
+   {
+    "year": 2020,
+    "party": "labour",
+    "polls": 46.65,
+    "result": 50.01,
+    "error": 3.36,
+    "n_polls": 5
+   },
+   {
+    "year": 2020,
+    "party": "national",
+    "polls": 31.15,
+    "result": 25.58,
+    "error": -5.57,
+    "n_polls": 5
+   },
+   {
+    "year": 2020,
+    "party": "green",
+    "polls": 7.34,
+    "result": 7.86,
+    "error": 0.52,
+    "n_polls": 5
+   },
+   {
+    "year": 2020,
+    "party": "act",
+    "polls": 7.69,
+    "result": 7.59,
+    "error": -0.1,
+    "n_polls": 5
+   },
+   {
+    "year": 2020,
+    "party": "nz-first",
+    "polls": 2.48,
+    "result": 2.6,
+    "error": 0.12,
+    "n_polls": 5
+   },
+   {
+    "year": 2020,
+    "party": "opportunity",
+    "polls": 1.34,
+    "result": 1.51,
+    "error": 0.17,
+    "n_polls": 5
+   },
+   {
+    "year": 2020,
+    "party": "conservative",
+    "polls": 1.47,
+    "result": 1.48,
+    "error": 0.01,
+    "n_polls": 4
+   },
+   {
+    "year": 2020,
+    "party": "te-pati-maori",
+    "polls": 0.54,
+    "result": 1.17,
+    "error": 0.63,
+    "n_polls": 5
+   },
+   {
+    "year": 2020,
+    "party": "advance-nz",
+    "polls": 0.68,
+    "result": 0.98,
+    "error": 0.3,
+    "n_polls": 4
+   },
+   {
+    "year": 2023,
+    "party": "national",
+    "polls": 35.59,
+    "result": 38.08,
+    "error": 2.49,
+    "n_polls": 9
+   },
+   {
+    "year": 2023,
+    "party": "labour",
+    "polls": 27.26,
+    "result": 26.92,
+    "error": -0.34,
+    "n_polls": 9
+   },
+   {
+    "year": 2023,
+    "party": "green",
+    "polls": 13.14,
+    "result": 11.61,
+    "error": -1.53,
+    "n_polls": 9
+   },
+   {
+    "year": 2023,
+    "party": "act",
+    "polls": 9.57,
+    "result": 8.64,
+    "error": -0.93,
+    "n_polls": 9
+   },
+   {
+    "year": 2023,
+    "party": "nz-first",
+    "polls": 6.58,
+    "result": 6.09,
+    "error": -0.49,
+    "n_polls": 9
+   },
+   {
+    "year": 2023,
+    "party": "te-pati-maori",
+    "polls": 2.49,
+    "result": 3.08,
+    "error": 0.59,
+    "n_polls": 9
+   },
+   {
+    "year": 2023,
+    "party": "opportunity",
+    "polls": 2.26,
+    "result": 2.22,
+    "error": -0.04,
+    "n_polls": 8
+   },
+   {
+    "year": 2023,
+    "party": "conservative",
+    "polls": 0.8,
+    "result": 0.16,
+    "error": -0.64,
+    "n_polls": 3
+   }
+  ],
+  "correlation_used": {
+   "national|labour": -0.54,
+   "national|green": -0.24,
+   "national|act": -0.21,
+   "national|nz-first": -0.32,
+   "national|te-pati-maori": -0.14,
+   "labour|green": 0.19,
+   "labour|nz-first": 0.12,
+   "labour|te-pati-maori": 0.42,
+   "green|act": 0.08,
+   "green|nz-first": -0.25,
+   "act|nz-first": 0.29,
+   "act|te-pati-maori": -0.18,
+   "nz-first|te-pati-maori": -0.25
+  },
+  "correlation_note": "Pairwise correlation of final-poll errors across the five elections (pairs with at least four shared elections), shrunk by n/(n+3) because five observations cannot pin down a correlation; matrix forced positive-definite.",
+  "drift_variance_per_day": {
+   "national": 0.0136,
+   "labour": 0.0193,
+   "green": 0.0123,
+   "act": 0.0122,
+   "nz-first": 0.0063,
+   "te-pati-maori": 0.0049,
+   "opportunity": 0.0036
+  },
+  "drift_note": "Random-walk innovation variance per day, estimated from week-to-week changes in this term's own trend (half attributed to real movement). Multiplied by days to the election."
+ },
+ "electorates": {
+  "note": "Only electorates that can change the seat allocation are simulated: Epsom (ACT's insurance seat) and the seven Māori seats (Te Pāti Māori's party vote is far below 5%, so every seat it wins is an overhang seat; an independent or Te Tai Tokerau Party winner also changes the arithmetic). General seats won by National, Labour or the Greens are assumed never to exceed those parties' list entitlement, so they do not affect totals.",
+  "epsom": {
+   "p_act_wins": 90,
+   "assumption": "David Seymour (ACT) won Epsom by 8,142 votes in 2023 over Paul Goldsmith (National), who is standing again; National has not formally stood aside but did not campaign hard for the seat in 2023. ACT is polling 9-11% so Epsom only matters if ACT fell below 5%. Set at 90% (no 2026 Epsom poll).",
+   "sources": [
+    "data/elections/2023.json",
+    "https://www.1news.co.nz/2026/08/16/goldsmith-rules-out-kaipara-ki-mahurangi-run-will-stay-in-epsom/"
+   ]
+  },
+  "maori_seats": {
+   "Hauraki-Waikato": {
+    "p_win": {
+     "te-pati-maori": 96,
+     "labour": 4
+    },
+    "shares_used": {
+     "labour": 38.6,
+     "te-pati-maori": 61.4
+    },
+    "poll_shares_decided": {
+     "labour": 36.5,
+     "te-pati-maori": 63.5
+    },
+    "prior_2023_shares": {
+     "labour": 43.7,
+     "te-pati-maori": 56.3
+    },
+    "polls_used": [
+     {
+      "pollster": "Whakaata Māori–Curia",
+      "date": "21 Sep – 1 Oct 2026",
+      "sample_size": 500,
+      "results": {
+       "te-pati-maori": 54.0,
+       "labour": 31.0
+      },
+      "source_url": null
+     }
+    ],
+    "simulation": "shares_used = 0.7 x decided-voter shares from the electorate polls above (n_eff=500) + 0.3 x the same party's 2023 candidate-vote share; each candidate drawn with SD = sqrt(sampling + 9^2) points; winner = highest draw."
+   },
+   "Ikaroa-Rāwhiti": {
+    "p_win": {
+     "labour": 96,
+     "te-pati-maori": 4,
+     "green": 0
+    },
+    "shares_used": {
+     "green": 14.2,
+     "labour": 54.6,
+     "te-pati-maori": 31.2
+    },
+    "poll_shares_decided": {
+     "green": 20.3,
+     "labour": 54.1,
+     "te-pati-maori": 25.7
+    },
+    "prior_2023_shares": {
+     "green": 0.0,
+     "labour": 55.8,
+     "te-pati-maori": 44.2
+    },
+    "polls_used": [
+     {
+      "pollster": "Whakaata Māori–Curia",
+      "date": "28 Sep – 8 Oct 2026",
+      "sample_size": 500,
+      "results": {
+       "labour": 40.0,
+       "te-pati-maori": 19.0,
+       "green": 15.0
+      },
+      "source_url": null
+     }
+    ],
+    "simulation": "shares_used = 0.7 x decided-voter shares from the electorate polls above (n_eff=500) + 0.3 x the same party's 2023 candidate-vote share; each candidate drawn with SD = sqrt(sampling + 9^2) points; winner = highest draw."
+   },
+   "Tāmaki Makaurau": {
+    "p_win": {
+     "labour": 58,
+     "te-pati-maori": 42,
+     "green": 0
+    },
+    "shares_used": {
+     "green": 13.8,
+     "labour": 44.4,
+     "te-pati-maori": 41.8
+    },
+    "poll_shares_decided": {
+     "green": 14.3,
+     "labour": 44.7,
+     "te-pati-maori": 41.0
+    },
+    "prior_2023_shares": {
+     "green": 12.7,
+     "labour": 43.6,
+     "te-pati-maori": 43.7
+    },
+    "polls_used": [
+     {
+      "pollster": "Whakaata Māori–Curia",
+      "date": "5–15 Oct 2026",
+      "sample_size": 500,
+      "results": {
+       "te-pati-maori": 36.0,
+       "labour": 34.0,
+       "green": 23.0
+      },
+      "source_url": null
+     },
+     {
+      "pollster": "Mata–Horizon",
+      "date": "25 Sep – 9 Oct 2026",
+      "sample_size": 711,
+      "results": {
+       "te-pati-maori": 30.0,
+       "labour": 38.0
+      },
+      "source_url": null
+     }
+    ],
+    "simulation": "shares_used = 0.7 x decided-voter shares from the electorate polls above (n_eff=1211) + 0.3 x the same party's 2023 candidate-vote share; each candidate drawn with SD = sqrt(sampling + 9^2) points; winner = highest draw."
+   },
+   "Te Tai Hauāuru": {
+    "p_win": {
+     "te-pati-maori": 94,
+     "labour": 6,
+     "national": 0
+    },
+    "shares_used": {
+     "labour": 34.2,
+     "national": 11.5,
+     "te-pati-maori": 54.3
+    },
+    "poll_shares_decided": {
+     "labour": 36.6,
+     "national": 14.0,
+     "te-pati-maori": 49.5
+    },
+    "prior_2023_shares": {
+     "labour": 28.7,
+     "national": 5.7,
+     "te-pati-maori": 65.6
+    },
+    "polls_used": [
+     {
+      "pollster": "Whakaata Māori–Curia",
+      "date": "14–24 Sep 2026",
+      "sample_size": 500,
+      "results": {
+       "te-pati-maori": 46.0,
+       "labour": 34.0,
+       "national": 13.0
+      },
+      "source_url": null
+     }
+    ],
+    "simulation": "shares_used = 0.7 x decided-voter shares from the electorate polls above (n_eff=500) + 0.3 x the same party's 2023 candidate-vote share; each candidate drawn with SD = sqrt(sampling + 9^2) points; winner = highest draw."
+   },
+   "Te Tai Tokerau": {
+    "p_win": {
+     "labour": 56,
+     "green": 25,
+     "te-pati-maori": 14,
+     "te-tai-tokerau-party": 5
+    },
+    "shares_used": {
+     "green": 26.9,
+     "labour": 33.0,
+     "te-pati-maori": 23.1,
+     "te-tai-tokerau-party": 17.0
+    },
+    "poll_shares_decided": {
+     "green": 31.1,
+     "labour": 29.8,
+     "te-pati-maori": 23.8,
+     "te-tai-tokerau-party": 15.2
+    },
+    "prior_2023_shares": {
+     "green": 17.1,
+     "labour": 40.4,
+     "te-pati-maori": 21.3,
+     "te-tai-tokerau-party": 21.3
+    },
+    "polls_used": [
+     {
+      "pollster": "Whakaata Māori–Curia",
+      "date": "5 Oct – 15 Oct 2026",
+      "sample_size": 500,
+      "results": {
+       "green": 24.0,
+       "labour": 18.0,
+       "te-pati-maori": 17.0,
+       "te-tai-tokerau-party": 12.0
+      },
+      "source_url": null
+     },
+     {
+      "pollster": "Mata–Horizon",
+      "date": "25 Sep – 9 Oct 2026",
+      "sample_size": 711,
+      "results": {
+       "green": 23.0,
+       "labour": 27.0,
+       "te-pati-maori": 19.0,
+       "te-tai-tokerau-party": 11.0
+      },
+      "source_url": null
+     }
+    ],
+    "simulation": "shares_used = 0.7 x decided-voter shares from the electorate polls above (n_eff=1211) + 0.3 x the same party's 2023 candidate-vote share; each candidate drawn with SD = sqrt(sampling + 9^2) points; winner = highest draw."
+   },
+   "Te Tai Tonga": {
+    "p_win": {
+     "labour": 83,
+     "te-pati-maori": 9,
+     "independent": 7,
+     "green": 1
+    },
+    "shares_used": {
+     "green": 14.1,
+     "independent": 21.8,
+     "labour": 40.0,
+     "te-pati-maori": 24.1
+    },
+    "poll_shares_decided": {
+     "green": 20.2,
+     "independent": 19.1,
+     "labour": 38.3,
+     "te-pati-maori": 22.3
+    },
+    "prior_2023_shares": {
+     "green": 0.0,
+     "independent": 28.1,
+     "labour": 43.8,
+     "te-pati-maori": 28.1
+    },
+    "polls_used": [
+     {
+      "pollster": "Whakaata Māori–Curia",
+      "date": "14–24 Sep 2026",
+      "sample_size": 500,
+      "results": {
+       "labour": 36.0,
+       "te-pati-maori": 21.0,
+       "green": 19.0,
+       "independent": 18.0
+      },
+      "source_url": null
+     }
+    ],
+    "simulation": "shares_used = 0.7 x decided-voter shares from the electorate polls above (n_eff=500) + 0.3 x the same party's 2023 candidate-vote share; each candidate drawn with SD = sqrt(sampling + 9^2) points; winner = highest draw."
+   },
+   "Waiariki": {
+    "p_win": {
+     "te-pati-maori": 100,
+     "labour": 0,
+     "green": 0,
+     "opportunity": 0
+    },
+    "shares_used": {
+     "green": 15.1,
+     "labour": 19.8,
+     "opportunity": 2.3,
+     "te-pati-maori": 62.9
+    },
+    "poll_shares_decided": {
+     "green": 21.5,
+     "labour": 19.4,
+     "opportunity": 3.2,
+     "te-pati-maori": 55.9
+    },
+    "prior_2023_shares": {
+     "green": 0.0,
+     "labour": 20.7,
+     "opportunity": 0.0,
+     "te-pati-maori": 79.3
+    },
+    "polls_used": [
+     {
+      "pollster": "Whakaata Māori–Curia",
+      "date": "21 Sep – 1 Oct 2026",
+      "sample_size": 500,
+      "results": {
+       "te-pati-maori": 52.0,
+       "green": 20.0,
+       "labour": 18.0,
+       "opportunity": 3.0
+      },
+      "source_url": null
+     }
+    ],
+    "simulation": "shares_used = 0.7 x decided-voter shares from the electorate polls above (n_eff=500) + 0.3 x the same party's 2023 candidate-vote share; each candidate drawn with SD = sqrt(sampling + 9^2) points; winner = highest draw."
+   }
+  },
+  "maori_seats_context": [
+   "2023: Te Pāti Māori won 6 of 7 (Tāmaki Makaurau by 42 votes, Te Tai Tokerau by 517); Labour held Ikaroa-Rāwhiti.",
+   "6 Sep 2025 Tāmaki Makaurau by-election: Oriini Kaipara (TPM) 6,948 beat Peeni Henare (Labour) 3,429 (turnout low). Kaipara stands again; Labour's candidate is Kerrin Leoni.",
+   "Nov 2025: Tākuta Ferris (Te Tai Tonga) and Mariameno Kapa-Kingi (Te Tai Tokerau) were expelled from TPM; Kapa-Kingi was reinstated by the High Court, then left in May 2026 to found Te Tai Tokerau Party. Ferris stands as an independent.",
+   "Prior for Te Tai Tokerau and Te Tai Tonga: half of the 2023 Te Pāti Māori candidate vote is credited to the sitting MP's new vehicle (Te Tai Tokerau Party / independent) and half to Te Pāti Māori.",
+   "Electorate polls in Māori seats have small samples (n≈500) and a history of large misses; the 9-point systematic error term and the 30% weight on the 2023 result reflect that."
+  ]
+ },
+ "historical_track_record": {
+  "note": "What this model would have said two weeks before each election since 2011 (polls as of that date, house effects estimated from that term, calibration from the other four elections) versus the official result; plus the final-3-weeks simple pooled average, and how the governing party moved from mid-term (18 months out) to polling day.",
+  "coverage80": "30/36",
+  "coverage95": "32/36",
+  "elections": [
+   {
+    "election": 2011,
+    "election_date": "2011-11-26",
+    "forecast_date": "2011-11-12",
+    "n_polls_used_120d": 26,
+    "pollsters": [
+     "1 News–Verian",
+     "Fairfax Media–Ipsos",
+     "Herald–DigiPoll",
+     "RNZ–Reid Research",
+     "Roy Morgan"
+    ],
+    "parties": [
+     {
+      "party": "national",
+      "forecast_2wk_out": 53.1,
+      "sd": 2.9,
+      "interval80": [
+       49.3,
+       56.8
+      ],
+      "result": 47.31,
+      "error_result_minus_forecast": -5.8,
+      "inside80": false,
+      "inside95": false
+     },
+     {
+      "party": "labour",
+      "forecast_2wk_out": 28.5,
+      "sd": 2.7,
+      "interval80": [
+       25.1,
+       32.0
+      ],
+      "result": 27.48,
+      "error_result_minus_forecast": -1.1,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "green",
+      "forecast_2wk_out": 10.3,
+      "sd": 1.8,
+      "interval80": [
+       8.0,
+       12.6
+      ],
+      "result": 11.06,
+      "error_result_minus_forecast": 0.8,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "nz-first",
+      "forecast_2wk_out": 2.9,
+      "sd": 1.0,
+      "interval80": [
+       1.6,
+       4.2
+      ],
+      "result": 6.59,
+      "error_result_minus_forecast": 3.7,
+      "inside80": false,
+      "inside95": false
+     },
+     {
+      "party": "te-pati-maori",
+      "forecast_2wk_out": 1.7,
+      "sd": 0.8,
+      "interval80": [
+       0.7,
+       2.7
+      ],
+      "result": 1.43,
+      "error_result_minus_forecast": -0.3,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "mana",
+      "forecast_2wk_out": 0.6,
+      "sd": 0.6,
+      "interval80": [
+       -0.2,
+       1.3
+      ],
+      "result": 1.08,
+      "error_result_minus_forecast": 0.5,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "act",
+      "forecast_2wk_out": 1.4,
+      "sd": 0.7,
+      "interval80": [
+       0.5,
+       2.2
+      ],
+      "result": 1.07,
+      "error_result_minus_forecast": -0.3,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "united-future",
+      "forecast_2wk_out": 0.4,
+      "sd": 0.6,
+      "interval80": [
+       -0.4,
+       1.2
+      ],
+      "result": 0.6,
+      "error_result_minus_forecast": 0.2,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "conservative",
+      "forecast_2wk_out": 0.8,
+      "sd": 0.6,
+      "interval80": [
+       0.0,
+       1.7
+      ],
+      "result": 2.65,
+      "error_result_minus_forecast": 1.8,
+      "inside80": false,
+      "inside95": false
+     }
+    ],
+    "coverage80": "5/8",
+    "coverage95": "5/8",
+    "mean_abs_error_major_parties": 2.9,
+    "final_3_weeks_vs_result": {
+     "national": {
+      "final3wk_avg": 51.5,
+      "result": 47.31,
+      "error": -4.2,
+      "n_polls": 14
+     },
+     "labour": {
+      "final3wk_avg": 26.9,
+      "result": 27.48,
+      "error": 0.6,
+      "n_polls": 14
+     },
+     "green": {
+      "final3wk_avg": 12.1,
+      "result": 11.06,
+      "error": -1.1,
+      "n_polls": 14
+     },
+     "nz-first": {
+      "final3wk_avg": 3.8,
+      "result": 6.59,
+      "error": 2.8,
+      "n_polls": 14
+     },
+     "te-pati-maori": {
+      "final3wk_avg": 1.4,
+      "result": 1.43,
+      "error": -0.0,
+      "n_polls": 14
+     },
+     "mana": {
+      "final3wk_avg": 0.8,
+      "result": 1.08,
+      "error": 0.3,
+      "n_polls": 14
+     },
+     "act": {
+      "final3wk_avg": 1.4,
+      "result": 1.07,
+      "error": -0.3,
+      "n_polls": 14
+     },
+     "united-future": {
+      "final3wk_avg": 0.2,
+      "result": 0.6,
+      "error": 0.4,
+      "n_polls": 14
+     },
+     "conservative": {
+      "final3wk_avg": 1.3,
+      "result": 2.65,
+      "error": 1.4,
+      "n_polls": 8
+     }
+    },
+    "incumbent_government_lead_party": "national",
+    "incumbent_midterm_poll_level": 50.7,
+    "incumbent_midterm_date": "2010-06-04",
+    "incumbent_result": 47.31,
+    "incumbent_change_midterm_to_result": -3.4
+   },
+   {
+    "election": 2014,
+    "election_date": "2014-09-20",
+    "forecast_date": "2014-09-06",
+    "n_polls_used_120d": 31,
+    "pollsters": [
+     "1 News–Verian",
+     "Fairfax Media–Ipsos",
+     "Herald–DigiPoll",
+     "RNZ–Reid Research",
+     "Roy Morgan"
+    ],
+    "parties": [
+     {
+      "party": "national",
+      "forecast_2wk_out": 48.7,
+      "sd": 3.3,
+      "interval80": [
+       44.5,
+       52.9
+      ],
+      "result": 47.04,
+      "error_result_minus_forecast": -1.6,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "labour",
+      "forecast_2wk_out": 25.9,
+      "sd": 2.8,
+      "interval80": [
+       22.2,
+       29.5
+      ],
+      "result": 25.13,
+      "error_result_minus_forecast": -0.8,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "green",
+      "forecast_2wk_out": 12.7,
+      "sd": 2.2,
+      "interval80": [
+       9.9,
+       15.5
+      ],
+      "result": 10.7,
+      "error_result_minus_forecast": -2.0,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "nz-first",
+      "forecast_2wk_out": 5.5,
+      "sd": 1.5,
+      "interval80": [
+       3.6,
+       7.4
+      ],
+      "result": 8.66,
+      "error_result_minus_forecast": 3.1,
+      "inside80": false,
+      "inside95": false
+     },
+     {
+      "party": "te-pati-maori",
+      "forecast_2wk_out": 0.9,
+      "sd": 0.6,
+      "interval80": [
+       0.1,
+       1.7
+      ],
+      "result": 1.32,
+      "error_result_minus_forecast": 0.4,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "act",
+      "forecast_2wk_out": 0.5,
+      "sd": 0.6,
+      "interval80": [
+       -0.3,
+       1.3
+      ],
+      "result": 0.69,
+      "error_result_minus_forecast": 0.2,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "united-future",
+      "forecast_2wk_out": 0.2,
+      "sd": 0.6,
+      "interval80": [
+       -0.5,
+       1.0
+      ],
+      "result": 0.22,
+      "error_result_minus_forecast": -0.0,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "conservative",
+      "forecast_2wk_out": 2.9,
+      "sd": 1.1,
+      "interval80": [
+       1.5,
+       4.3
+      ],
+      "result": 3.97,
+      "error_result_minus_forecast": 1.1,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "internet-mana",
+      "forecast_2wk_out": 2.2,
+      "sd": 1.0,
+      "interval80": [
+       1.0,
+       3.4
+      ],
+      "result": 1.42,
+      "error_result_minus_forecast": -0.8,
+      "inside80": true,
+      "inside95": true
+     }
+    ],
+    "coverage80": "6/7",
+    "coverage95": "6/7",
+    "mean_abs_error_major_parties": 1.9,
+    "final_3_weeks_vs_result": {
+     "national": {
+      "final3wk_avg": 48.0,
+      "result": 47.04,
+      "error": -0.9,
+      "n_polls": 14
+     },
+     "labour": {
+      "final3wk_avg": 25.1,
+      "result": 25.13,
+      "error": 0.1,
+      "n_polls": 14
+     },
+     "green": {
+      "final3wk_avg": 12.7,
+      "result": 10.7,
+      "error": -2.0,
+      "n_polls": 14
+     },
+     "nz-first": {
+      "final3wk_avg": 6.6,
+      "result": 8.66,
+      "error": 2.1,
+      "n_polls": 14
+     },
+     "te-pati-maori": {
+      "final3wk_avg": 1.0,
+      "result": 1.32,
+      "error": 0.4,
+      "n_polls": 14
+     },
+     "act": {
+      "final3wk_avg": 0.5,
+      "result": 0.69,
+      "error": 0.2,
+      "n_polls": 14
+     },
+     "united-future": {
+      "final3wk_avg": 0.1,
+      "result": 0.22,
+      "error": 0.1,
+      "n_polls": 14
+     },
+     "conservative": {
+      "final3wk_avg": 3.8,
+      "result": 3.97,
+      "error": 0.1,
+      "n_polls": 14
+     },
+     "internet-mana": {
+      "final3wk_avg": 1.7,
+      "result": 1.42,
+      "error": -0.3,
+      "n_polls": 14
+     }
+    },
+    "incumbent_government_lead_party": "national",
+    "incumbent_midterm_poll_level": 46.3,
+    "incumbent_midterm_date": "2013-03-29",
+    "incumbent_result": 47.04,
+    "incumbent_change_midterm_to_result": 0.8
+   },
+   {
+    "election": 2017,
+    "election_date": "2017-09-23",
+    "forecast_date": "2017-09-09",
+    "n_polls_used_120d": 18,
+    "pollsters": [
+     "1 News–Verian",
+     "Listener: Bauer Media Insights",
+     "Newsroom–SSI",
+     "RNZ–Reid Research",
+     "Roy Morgan"
+    ],
+    "parties": [
+     {
+      "party": "national",
+      "forecast_2wk_out": 40.6,
+      "sd": 3.2,
+      "interval80": [
+       36.5,
+       44.7
+      ],
+      "result": 44.45,
+      "error_result_minus_forecast": 3.8,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "labour",
+      "forecast_2wk_out": 37.2,
+      "sd": 3.4,
+      "interval80": [
+       32.8,
+       41.5
+      ],
+      "result": 36.89,
+      "error_result_minus_forecast": -0.3,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "nz-first",
+      "forecast_2wk_out": 9.3,
+      "sd": 1.8,
+      "interval80": [
+       7.0,
+       11.6
+      ],
+      "result": 7.2,
+      "error_result_minus_forecast": -2.1,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "green",
+      "forecast_2wk_out": 7.9,
+      "sd": 1.8,
+      "interval80": [
+       5.6,
+       10.2
+      ],
+      "result": 6.27,
+      "error_result_minus_forecast": -1.7,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "act",
+      "forecast_2wk_out": 0.7,
+      "sd": 0.6,
+      "interval80": [
+       -0.1,
+       1.5
+      ],
+      "result": 0.5,
+      "error_result_minus_forecast": -0.2,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "opportunity",
+      "forecast_2wk_out": 1.8,
+      "sd": 0.8,
+      "interval80": [
+       0.8,
+       2.9
+      ],
+      "result": 2.44,
+      "error_result_minus_forecast": 0.6,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "te-pati-maori",
+      "forecast_2wk_out": 1.4,
+      "sd": 0.7,
+      "interval80": [
+       0.5,
+       2.3
+      ],
+      "result": 1.18,
+      "error_result_minus_forecast": -0.2,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "conservative",
+      "forecast_2wk_out": 0.1,
+      "sd": 0.6,
+      "interval80": [
+       -0.7,
+       0.9
+      ],
+      "result": 0.24,
+      "error_result_minus_forecast": 0.1,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "mana",
+      "forecast_2wk_out": 0.1,
+      "sd": 0.6,
+      "interval80": [
+       -0.6,
+       0.9
+      ],
+      "result": 0.14,
+      "error_result_minus_forecast": -0.0,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "united-future",
+      "forecast_2wk_out": 0.0,
+      "sd": 0.6,
+      "interval80": [
+       -0.7,
+       0.8
+      ],
+      "result": 0.07,
+      "error_result_minus_forecast": 0.0,
+      "inside80": true,
+      "inside95": true
+     }
+    ],
+    "coverage80": "6/6",
+    "coverage95": "6/6",
+    "mean_abs_error_major_parties": 2.0,
+    "final_3_weeks_vs_result": {
+     "national": {
+      "final3wk_avg": 40.9,
+      "result": 44.45,
+      "error": 3.6,
+      "n_polls": 8
+     },
+     "labour": {
+      "final3wk_avg": 40.6,
+      "result": 36.89,
+      "error": -3.7,
+      "n_polls": 8
+     },
+     "nz-first": {
+      "final3wk_avg": 7.4,
+      "result": 7.2,
+      "error": -0.2,
+      "n_polls": 8
+     },
+     "green": {
+      "final3wk_avg": 6.7,
+      "result": 6.27,
+      "error": -0.4,
+      "n_polls": 8
+     },
+     "act": {
+      "final3wk_avg": 0.6,
+      "result": 0.5,
+      "error": -0.1,
+      "n_polls": 8
+     },
+     "opportunity": {
+      "final3wk_avg": 1.8,
+      "result": 2.44,
+      "error": 0.6,
+      "n_polls": 8
+     },
+     "te-pati-maori": {
+      "final3wk_avg": 1.2,
+      "result": 1.18,
+      "error": -0.1,
+      "n_polls": 8
+     },
+     "conservative": {
+      "final3wk_avg": 0.5,
+      "result": 0.24,
+      "error": -0.2,
+      "n_polls": 3
+     },
+     "mana": {
+      "final3wk_avg": 0.1,
+      "result": 0.14,
+      "error": 0.0,
+      "n_polls": 2
+     },
+     "united-future": {
+      "final3wk_avg": 0.1,
+      "result": 0.07,
+      "error": 0.0,
+      "n_polls": 2
+     }
+    },
+    "incumbent_government_lead_party": "national",
+    "incumbent_midterm_poll_level": 46.8,
+    "incumbent_midterm_date": "2016-04-01",
+    "incumbent_result": 44.45,
+    "incumbent_change_midterm_to_result": -2.4
+   },
+   {
+    "election": 2020,
+    "election_date": "2020-10-17",
+    "forecast_date": "2020-10-03",
+    "n_polls_used_120d": 10,
+    "pollsters": [
+     "1 News–Verian",
+     "RNZ–Reid Research",
+     "Roy Morgan"
+    ],
+    "parties": [
+     {
+      "party": "labour",
+      "forecast_2wk_out": 48.8,
+      "sd": 2.9,
+      "interval80": [
+       45.2,
+       52.5
+      ],
+      "result": 50.01,
+      "error_result_minus_forecast": 1.2,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "national",
+      "forecast_2wk_out": 30.4,
+      "sd": 2.6,
+      "interval80": [
+       27.1,
+       33.7
+      ],
+      "result": 25.58,
+      "error_result_minus_forecast": -4.8,
+      "inside80": false,
+      "inside95": true
+     },
+     {
+      "party": "green",
+      "forecast_2wk_out": 7.5,
+      "sd": 1.5,
+      "interval80": [
+       5.6,
+       9.4
+      ],
+      "result": 7.86,
+      "error_result_minus_forecast": 0.4,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "act",
+      "forecast_2wk_out": 6.7,
+      "sd": 1.4,
+      "interval80": [
+       4.9,
+       8.6
+      ],
+      "result": 7.59,
+      "error_result_minus_forecast": 0.9,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "nz-first",
+      "forecast_2wk_out": 2.0,
+      "sd": 0.8,
+      "interval80": [
+       1.0,
+       3.0
+      ],
+      "result": 2.6,
+      "error_result_minus_forecast": 0.6,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "opportunity",
+      "forecast_2wk_out": 1.0,
+      "sd": 0.6,
+      "interval80": [
+       0.2,
+       1.8
+      ],
+      "result": 1.51,
+      "error_result_minus_forecast": 0.5,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "conservative",
+      "forecast_2wk_out": 1.6,
+      "sd": 0.7,
+      "interval80": [
+       0.7,
+       2.5
+      ],
+      "result": 1.48,
+      "error_result_minus_forecast": -0.1,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "te-pati-maori",
+      "forecast_2wk_out": 0.9,
+      "sd": 0.6,
+      "interval80": [
+       0.1,
+       1.7
+      ],
+      "result": 1.17,
+      "error_result_minus_forecast": 0.3,
+      "inside80": true,
+      "inside95": true
+     }
+    ],
+    "coverage80": "7/8",
+    "coverage95": "8/8",
+    "mean_abs_error_major_parties": 1.8,
+    "final_3_weeks_vs_result": {
+     "labour": {
+      "final3wk_avg": 46.7,
+      "result": 50.01,
+      "error": 3.4,
+      "n_polls": 5
+     },
+     "national": {
+      "final3wk_avg": 31.1,
+      "result": 25.58,
+      "error": -5.6,
+      "n_polls": 5
+     },
+     "green": {
+      "final3wk_avg": 7.3,
+      "result": 7.86,
+      "error": 0.5,
+      "n_polls": 5
+     },
+     "act": {
+      "final3wk_avg": 7.7,
+      "result": 7.59,
+      "error": -0.1,
+      "n_polls": 5
+     },
+     "nz-first": {
+      "final3wk_avg": 2.5,
+      "result": 2.6,
+      "error": 0.1,
+      "n_polls": 5
+     },
+     "opportunity": {
+      "final3wk_avg": 1.3,
+      "result": 1.51,
+      "error": 0.2,
+      "n_polls": 5
+     },
+     "conservative": {
+      "final3wk_avg": 1.5,
+      "result": 1.48,
+      "error": 0.0,
+      "n_polls": 4
+     },
+     "te-pati-maori": {
+      "final3wk_avg": 0.5,
+      "result": 1.17,
+      "error": 0.6,
+      "n_polls": 5
+     }
+    },
+    "incumbent_government_lead_party": "labour",
+    "incumbent_midterm_poll_level": 48.2,
+    "incumbent_midterm_date": "2019-04-26",
+    "incumbent_result": 50.01,
+    "incumbent_change_midterm_to_result": 1.8
+   },
+   {
+    "election": 2023,
+    "election_date": "2023-10-14",
+    "forecast_date": "2023-09-30",
+    "n_polls_used_120d": 24,
+    "pollsters": [
+     "1 News–Verian",
+     "Guardian Essential",
+     "RNZ–Reid Research",
+     "Roy Morgan",
+     "Talbot Mills",
+     "Taxpayers' Union–Curia",
+     "The Post/Freshwater Strategy"
+    ],
+    "parties": [
+     {
+      "party": "national",
+      "forecast_2wk_out": 36.1,
+      "sd": 3.2,
+      "interval80": [
+       32.0,
+       40.1
+      ],
+      "result": 38.08,
+      "error_result_minus_forecast": 2.0,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "labour",
+      "forecast_2wk_out": 26.6,
+      "sd": 2.9,
+      "interval80": [
+       22.8,
+       30.3
+      ],
+      "result": 26.92,
+      "error_result_minus_forecast": 0.4,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "green",
+      "forecast_2wk_out": 12.4,
+      "sd": 2.2,
+      "interval80": [
+       9.6,
+       15.2
+      ],
+      "result": 11.61,
+      "error_result_minus_forecast": -0.8,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "act",
+      "forecast_2wk_out": 11.7,
+      "sd": 2.1,
+      "interval80": [
+       9.0,
+       14.5
+      ],
+      "result": 8.64,
+      "error_result_minus_forecast": -3.1,
+      "inside80": false,
+      "inside95": true
+     },
+     {
+      "party": "nz-first",
+      "forecast_2wk_out": 5.3,
+      "sd": 1.5,
+      "interval80": [
+       3.4,
+       7.2
+      ],
+      "result": 6.09,
+      "error_result_minus_forecast": 0.8,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "te-pati-maori",
+      "forecast_2wk_out": 3.0,
+      "sd": 1.1,
+      "interval80": [
+       1.6,
+       4.5
+      ],
+      "result": 3.08,
+      "error_result_minus_forecast": 0.0,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "opportunity",
+      "forecast_2wk_out": 1.8,
+      "sd": 0.9,
+      "interval80": [
+       0.7,
+       2.9
+      ],
+      "result": 2.22,
+      "error_result_minus_forecast": 0.4,
+      "inside80": true,
+      "inside95": true
+     },
+     {
+      "party": "conservative",
+      "forecast_2wk_out": 0.6,
+      "sd": 0.6,
+      "interval80": [
+       -0.1,
+       1.4
+      ],
+      "result": 0.16,
+      "error_result_minus_forecast": -0.5,
+      "inside80": true,
+      "inside95": true
+     }
+    ],
+    "coverage80": "6/7",
+    "coverage95": "7/7",
+    "mean_abs_error_major_parties": 1.4,
+    "final_3_weeks_vs_result": {
+     "national": {
+      "final3wk_avg": 35.6,
+      "result": 38.08,
+      "error": 2.5,
+      "n_polls": 9
+     },
+     "labour": {
+      "final3wk_avg": 27.3,
+      "result": 26.92,
+      "error": -0.3,
+      "n_polls": 9
+     },
+     "green": {
+      "final3wk_avg": 13.1,
+      "result": 11.61,
+      "error": -1.5,
+      "n_polls": 9
+     },
+     "act": {
+      "final3wk_avg": 9.6,
+      "result": 8.64,
+      "error": -0.9,
+      "n_polls": 9
+     },
+     "nz-first": {
+      "final3wk_avg": 6.6,
+      "result": 6.09,
+      "error": -0.5,
+      "n_polls": 9
+     },
+     "te-pati-maori": {
+      "final3wk_avg": 2.5,
+      "result": 3.08,
+      "error": 0.6,
+      "n_polls": 9
+     },
+     "opportunity": {
+      "final3wk_avg": 2.3,
+      "result": 2.22,
+      "error": -0.0,
+      "n_polls": 8
+     },
+     "conservative": {
+      "final3wk_avg": 0.8,
+      "result": 0.16,
+      "error": -0.6,
+      "n_polls": 3
+     }
+    },
+    "incumbent_government_lead_party": "labour",
+    "incumbent_midterm_poll_level": 36.0,
+    "incumbent_midterm_date": "2022-04-22",
+    "incumbent_result": 26.92,
+    "incumbent_change_midterm_to_result": -9.1
+   }
+  ],
+  "incumbent_2026": {
+   "party": "national",
+   "midterm_date": "2025-05-16",
+   "midterm_poll_level": 33.3,
+   "current_poll_average": 28.6,
+   "result_2023": 38.08
+  }
+ },
+ "caveats": [
+  "Polling error: at the last five elections NZ's final polls missed individual parties by up to 5 points (National 2020). The forecast intervals are built from those misses, but a miss bigger than any since 2011 is always possible.",
+  "Threshold effects: TOP and NZ First sit near the 5% line, and Te Pāti Māori's seats depend on a handful of Māori-electorate contests. A one-point shift can move 6-10 seats between blocs, which is why the bloc probabilities are far less certain than the vote shares.",
+  "Electorate assumptions: Epsom and the Māori seats are modelled from very few, small-sample electorate polls and stated assumptions; those probabilities are the model's weakest input.",
+  "Late swing: a fifth of voters typically decide in the final fortnight; advance voting (which opened 26 Oct) blunts but does not remove this.",
+  "Undecideds: polls exclude 5-15% undecided voters; if they break unevenly the published shares shift.",
+  "House effects are relative to the average public pollster, not to the truth; if all pollsters share a bias (as in 2020) the aggregate shares it.",
+  "Party-commissioned and corporate-client polls (Talbot Mills, Anacta, Curia) are published selectively and are down-weighted, but may still colour the average.",
+  "The model does not forecast coalition negotiations: a 'majority' means the seats exist, not that the parties would agree to govern together.",
+  "Only seven parties are modelled; a minor party winning an electorate or crossing 5% from nowhere is not simulated."
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
+  "https://freerangestats.info/elections/state-space",
+  "https://freerangestats.info/blog/2020/06/06/nz-2020-forecasts",
+  "https://doi.org/10.1080/10361140500302472",
+  "https://doi.org/10.1080/01621459.2012.737735",
+  "https://doi.org/10.1038/s41562-018-0315-6",
+  "https://doi.org/10.1080/01621459.2018.1448823",
+  "https://www.1news.co.nz/2026/08/28/i-dont-believe-your-poll-politicians-like-to-say-but-are-they-right/",
+  "https://elections.nz/democracy-in-nz/what-is-new-zealands-system-of-government/what-is-mmp/"
+ ],
+ "simulation": {
+  "draws": 40000,
+  "seed": 20261107,
+  "distribution": "multivariate logit-normal around the poll average"
+ }
+}

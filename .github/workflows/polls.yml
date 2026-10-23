@@ -1,0 +1,47 @@
+# Refreshes the poll-of-polls and the seat forecast every 6 hours (and on demand).
+#
+# Requires GitHub Actions to be enabled for the repository (Settings -> Actions -> General -> "Allow all actions"),
+# and "Workflow permissions" set to "Read and write" (or rely on the `permissions: contents: write` block below).
+# It runs tools/polls_update.py (Wikipedia poll tables -> data/polls-2026.json, data/polls-history/), then
+# tools/forecast.py (-> data/forecast.json), then tools/build_site.py, and commits only if something changed.
+# Safe to run repeatedly: both scripts are idempotent (fixed random seed, byte-identical output on unchanged input);
+# a failed Wikipedia fetch leaves the existing data untouched and the forecast is still rebuilt from it.
+name: Update polls and forecast
+on:
+  schedule:
+    - cron: '17 */6 * * *'   # every 6 hours (UTC); the odd minute avoids the top-of-hour rush
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: polls
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: python3 -m pip install --quiet numpy beautifulsoup4 lxml
+      - name: Refresh polls from Wikipedia
+        run: python3 tools/polls_update.py
+      - name: Run the forecast model
+        run: python3 tools/forecast.py
+      - name: Rebuild the site bundle
+        run: python3 tools/build_site.py
+      - name: Commit and push if anything changed
+        run: |
+          git add data/polls-2026.json data/forecast.json data/polls-history site raw/forecast/*.meta.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "polls-bot"
+          git config user.email "polls-bot@users.noreply.github.com"
+          git commit -m "Update polls and forecast ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git push
