@@ -86,7 +86,9 @@ function parlCoalition() {
   const els = (S.data.elections || []).filter(e => e.year >= 2011 && e.year < 2026), R = results2026();
   const srcs = [...(R ? [['r2026', '2026 result']] : forecastHidden() ? [] : [['proj', '2026 poll average']]), ...els.map(e => [`e${e.year}`, `${e.year} result`]).reverse()];
   let src = srcs.some(s => s[0] === store.get('coalSrc')) ? store.get('coalSrc') : srcs[0][0];
-  let bloc; try { bloc = new Set(JSON.parse(store.get('coalBloc') || 'null') || ['national', 'act', 'nz-first']) } catch { bloc = new Set(['national', 'act', 'nz-first']) }
+  // No parties are pre-chosen on election day (before 7pm): the page starts from the 2023 result with an empty government.
+  const blocDefault = forecastHidden() ? [] : ['national', 'act', 'nz-first'];
+  let bloc; try { bloc = new Set(JSON.parse(store.get('coalBloc') || 'null') || blocDefault) } catch { bloc = new Set(blocDefault) }
   $('#main').innerHTML = sectionFrame('seats', 'seats/coalition', `
     <header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('seats', 'i--s')} Seats · Coalition builder</p><h1>Build a government</h1>
       <p class="lede">Pick a result, then tap parties to put them together. A government needs more than half the seats to win confidence votes.</p></header>
@@ -101,7 +103,7 @@ function parlCoalition() {
     <p class="srcline">Seats: official results, Electoral Commission${R ? '; 2026 from the count as loaded here' : ''}.</p>
     <div class="stack stack--s">
       <details class="disclose"><summary>Why more than half?</summary><div class="disclose__body"><p class="small">A government has to keep the confidence of the House: win the votes that say it may govern, and pass a Budget. With 120 seats that means 61. If there are overhang seats the House is bigger and the number rises with it. Parties can also govern as a minority with "confidence and supply" support from parties outside the Cabinet.</p></div></details>
-      <details class="disclose"><summary>Where these seat counts come from</summary><div class="disclose__body"><p class="small">Seat counts are the official results for past elections. The 2026 option turns the latest poll average into seats with the same formula as the seat calculator; it is an illustration, not a forecast.</p></div></details>
+      <details class="disclose"><summary>Where these seat counts come from</summary><div class="disclose__body"><p class="small">Seat counts are the official results for past elections.${srcs.some(([v]) => v === 'proj') ? ' The 2026 option turns the latest poll average into seats with the same formula as the seat calculator; it is an illustration, not a forecast.' : R ? ' The 2026 option is the count as loaded here, and can still move until the official result.' : ''}</p></div></details>
       <details class="disclose"><summary>Who would actually work with whom</summary><div class="disclose__body"><p class="small">Adding numbers up is the easy part. What each party has said about working with the others is on its own page, under "Who they'd work with".</p><div class="row"><a class="more small" href="#/parties">All parties, A–Z ${ic('chev', 'i--xs')}</a></div></div></details></div>`);
   const seatsFor = v => v === 'proj' ? projection().seats : v === 'r2026' ? Object.fromEntries((R.parties || []).filter(r => r.total_seats).map(r => [r.party, r.total_seats]))
     : Object.fromEntries((els.find(e => `e${e.year}` === v).parties || []).filter(r => r.total_seats).map(r => [r.party, r.total_seats]));
@@ -137,7 +139,7 @@ function parlCalculator() {
     <div class="row"><span class="small muted">Start from</span><div class="seg" role="group" aria-label="Start from" id="cstart">${hide ? '' : `<button type="button" data-s="polls" aria-pressed="true">Latest polls</button>`}<button type="button" data-s="result" aria-pressed="${hide}">${e23.year} result</button></div></div>
     <div class="split split--7-5">
       <div class="stack"><p class="small soft" id="cfrom"></p><div class="calc" id="calc"></div>
-        <div class="row"><button class="btn btn--s" type="button" id="csave">Use these electorate wins in the 2026 projection</button></div></div>
+        ${hide ? '' : `<div class="row"><button class="btn btn--s" type="button" id="csave">Use these electorate wins in the 2026 projection</button></div>`}</div>
       <div class="stack sticky"><div class="row" style="align-items:baseline;gap:var(--s-3)"><span class="figure figure--s" id="ctot">120</span><span class="soft" id="cmaj"></span></div>
         <figure class="stack stack--s"><div id="calchemi"></div><figcaption class="sr-only">The seats below, party by party, say the same in words.</figcaption></figure><div id="cbars"></div><p class="small soft" id="csum"></p>
         <p class="sr-only" id="clive" aria-live="polite" aria-atomic="true"></p></div>
@@ -170,5 +172,5 @@ function parlCalculator() {
   $('#calc').addEventListener('input', ev => { const t = ev.target; if (!t.matches('.range')) return; const p = t.closest('[data-p]').dataset.p; pct[p] = +t.value; t.style.setProperty('--fill', (+t.value / 60 * 100) + '%'); $('#out-' + p).textContent = fmt(+t.value) + '%'; t.setAttribute('aria-valuetext', fmt(+t.value) + '% of the party vote'); run() });
   $('#calc').addEventListener('click', ev => { const b = ev.target.closest('[data-d]'); if (!b) return; const p = b.closest('[data-p]').dataset.p; elec[p] = Math.max(0, Math.min(72, (elec[p] || 0) + +b.dataset.d)); $('#ev-' + p).textContent = elec[p]; run() });
   $('#cstart').onclick = ev => { const b = ev.target.closest('[data-s]'); if (!b) return; $('#cstart').querySelectorAll('[data-s]').forEach(x => x.setAttribute('aria-pressed', x === b)); load(b.dataset.s === 'polls' ? fromPolls() : fromResult()); drawInputs(); run() };
-  $('#csave').onclick = () => { store.set('elecAssume', JSON.stringify(run())); $('#csave').textContent = 'Saved: the projection now uses these electorate wins' };
+  if ($('#csave')) $('#csave').onclick = () => { store.set('elecAssume', JSON.stringify(run())); $('#csave').textContent = 'Saved: the projection now uses these electorate wins' };
   drawInputs(); run() }

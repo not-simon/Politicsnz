@@ -73,7 +73,7 @@ V.match = (arg) => {
       </div>`);
     $('#qstart').onclick = () => { if (i >= N) i = 0; ask() };
     const z = $('#qreset'); if (z) z.onclick = () => { st.answers = {}; st.weights = {}; st.i = 0; i = 0; q2Save(st); intro() } };
-  const ask = () => { if (i >= N) { st.i = N; q2Save(st); go('choose/results/quiz'); return }
+  const ask = () => { if (i >= N) { st.i = N; q2Save(st); S.focusResults = true; go('choose/results/quiz'); return }
     const q = byId[order[i]]; const a = st.answers[q.id]; const w = st.weights[q.id] || 'normal'; const last = i === N - 1;
     const tabFor = v => (typeof a === 'number' ? a === v : v === SCALE[0][0]) ? 0 : -1;
     $('#main').innerHTML = `<div class="split split--7-5 quizq">
@@ -99,12 +99,14 @@ V.match = (arg) => {
         </div>
       </aside></div>`;
     focusMode('Find your match', 'choose');
+    // each question screen replaces the page, so move focus to the statement (keyboard and screen-reader users start there)
+    const stmt = $('#stmt'); if (stmt) stmt.focus({ preventScroll: true });
     const opts = [...$('#main').querySelectorAll('.likert__opt')];
     const pickOpt = (b, focus) => { st.answers[q.id] = +b.dataset.v; q2Save(st); opts.forEach(x => { const on = x === b; x.setAttribute('aria-checked', on); x.tabIndex = on ? 0 : -1 }); if (focus) b.focus(); $('#qnext').disabled = false };
     opts.forEach((b, k) => { b.onclick = () => pickOpt(b);
       b.onkeydown = e => { const d = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key]; const to = e.key === 'Home' ? 0 : e.key === 'End' ? opts.length - 1 : d ? (k + d + opts.length) % opts.length : -1; if (to < 0) return; e.preventDefault(); pickOpt(opts[to], true) } });
     $('#qimp').onclick = e => { const b = e.target.closest('[data-w]'); if (!b) return; st.weights[q.id] = b.dataset.w; q2Save(st); $('#qimp').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.w === b.dataset.w)) };
-    const step = d => { i = Math.max(0, i + d); st.i = i; q2Save(st); ask(); window.scrollTo(0, 0); const s = $('#stmt'); if (s) s.focus({ preventScroll: true }) };
+    const step = d => { i = Math.max(0, i + d); st.i = i; q2Save(st); ask(); window.scrollTo(0, 0) };
     $('#qnext').onclick = () => step(1); $('#qskip').onclick = () => { delete st.answers[q.id]; step(1) }; $('#qback').onclick = () => step(-1) };
   if (arg === 'start') { if (i >= N) i = 0; ask() } else if (Object.keys(st.answers).length && i < N) ask(); else intro();
 };
@@ -114,8 +116,8 @@ function renderMatchResults(box, Q) {
   const st = q2State(); st.answers = st.answers || {}; st.weights = st.weights || {};
   const N = Q.statements.length; const byId = Object.fromEntries(Q.statements.map(q => [q.id, q]));
   const R = q2Results(Q, st); const M = R.length ? R[0].M : 0; const need = Math.max(10, Math.ceil(0.5 * M)); const sort = st.sort || 'az';
-  const head = `<div class="shead"><div class="shead__row"><h2 id="h-match">Find your match</h2><span class="micro muted">${M} of ${N} answered · Quiz ${esc(Q.version || '')} · frozen ${esc(Q.freeze_date || '')}</span></div></div>`;
-  if (!M) { box.innerHTML = `${head}<div class="panel panel--sunk"><p><b>No answers yet.</b></p><p class="small soft">${N} statements on six themes, written without party names. About 8 minutes.</p><a class="btn btn--primary btn--s" href="#/choose/quiz" style="justify-self:start">Start the quiz ${ic('chev', 'i--xs')}</a></div>`; return }
+  const head = `<div class="shead"><div class="shead__row"><h2 id="h-match" tabindex="-1">Find your match</h2><span class="micro muted">${M} of ${N} answered · Quiz ${esc(Q.version || '')} · frozen ${esc(Q.freeze_date || '')}</span></div></div>`;
+  if (!M) { box.innerHTML = `${head}<div class="panel panel--sunk"><p><b>No answers yet.</b></p><p class="small soft">${N} statements on six themes, written without party names. About 8 minutes.</p><a class="btn btn--primary btn--s" href="#/choose/quiz" style="justify-self:start">Start the quiz ${ic('chev', 'i--xs')}</a></div>`; focusMatchHeading(box); return }
   const az = chooseAZ(R.map(r => r.slug)); const ballot = chooseBallot(R.map(r => r.slug));
   const rows = sort === 'close' ? R.slice().sort((x, y) => (x.thin - y.thin) || ((y.m ?? -1) - (x.m ?? -1)) || az.indexOf(x.slug) - az.indexOf(y.slug)) : sort === 'ballot' ? ballot.map(s => R.find(r => r.slug === s)) : az.map(s => R.find(r => r.slug === s));
   const reason = r => r.n === 0 ? 'No recorded position on the statements you answered' : r.limited ? `Not compared: positions found on only ${r.coded} of ${N} statements` : `Not compared: only ${r.n} of your ${M} answers could be matched (needs ${need})`;
@@ -156,7 +158,7 @@ function renderMatchResults(box, Q) {
         ${chooseUnknowns([`${N} statements can’t cover everything a party stands for: competence, trust, local candidates and who they’d work with aren’t here.`, 'Some parties have published little; we never guess a position, so their bars are hatched rather than placed.', 'Positions are coded from documents by people. Two coders agreed closely, but a party could fairly be placed a step either way; the ranges show what that would do.', 'Your policy swipe and values compass may point elsewhere. They measure different things.'])}
       </aside>
     </div>`;
-  box.querySelectorAll('[data-sort]').forEach(b => b.onclick = () => { const s2 = q2State(); s2.sort = b.dataset.sort; q2Save(s2); renderMatchResults(box, Q) });
+  box.querySelectorAll('[data-sort]').forEach(b => b.onclick = () => { const s2 = q2State(); s2.sort = b.dataset.sort; q2Save(s2); renderMatchResults(box, Q); const nb = box.querySelector(`[data-sort="${b.dataset.sort}"]`); if (nb) nb.focus({ preventScroll: true }) });
   box.querySelectorAll('[data-cmp]').forEach(b => b.onclick = () => { const s2 = q2State(); let c = (s2.cmp || []).filter(s => withDims.includes(s)); const s = b.dataset.cmp;
     if (c.includes(s)) c = c.filter(x => x !== s); else { c.push(s); if (c.length > 2) c.shift() } s2.cmp = c; q2Save(s2); renderMatchResults(box, Q); const nb = box.querySelector(`[data-cmp="${CSS.escape(s)}"]`); if (nb) nb.focus({ preventScroll: true }) });
   $('#qshare', box).onclick = () => { const text = [`Ballot Book NZ · Find your match (quiz ${Q.version || ''})`, `My answers on ${M} of ${N} statements compared with all ${R.length} parties, A–Z:`, '',
@@ -164,20 +166,40 @@ function renderMatchResults(box, Q) {
       'Information, not advice: it shows how answers line up with published positions, and is not a recommendation about how to vote.', chooseShareURL('choose/quiz')].join('\n');
     chooseCopy(text, 'Share all ' + R.length) };
   box.querySelectorAll('[data-why]').forEach(b => b.onclick = () => q2Why(Q, st, b.dataset.why, R.find(r => r.slug === b.dataset.why)));
+  focusMatchHeading(box);
 }
+// Arriving from the last question (or the empty state): focus the results heading so the reader starts at the results.
+function focusMatchHeading(box) { if (!S.focusResults) return; S.focusResults = false; const h = $('#h-match', box); if (h) h.focus({ preventScroll: true }) }
+// The evidence field mixes the reconciled reason with the two coders' working notes ("Coder A: … Coder B: … Reconciler: …",
+// or "… Other coder: … Reconciler: …"). Split it: the reconciled text is the evidence; the coders' notes go behind a disclosure.
+function q2Evidence(c) { const ev = String((c && c.evidence) || '').trim(); const re = /(?:^|\s)(Coder A|Coder B|Other coder|Reconciler):\s/g; const marks = [];
+  let mt; while ((mt = re.exec(ev))) marks.push({ label: mt[1], at: mt.index, body: mt.index + mt[0].length });
+  if (!marks.length) return { summary: ev, notes: [] };
+  const part = k => ev.slice(marks[k].body, k + 1 < marks.length ? marks[k + 1].at : ev.length).trim();
+  const lead = ev.slice(0, marks[0].at).trim(); const parts = Object.fromEntries(marks.map((x, k) => [x.label, part(k)]));
+  const notes = []; if (lead) notes.push(['First coder', lead]); for (const k of ['Coder A', 'Coder B', 'Other coder']) if (parts[k]) notes.push([k, parts[k]]);
+  if (parts.Reconciler) return { summary: parts.Reconciler, notes };
+  // no reconciler's note: the coders agreed (or one value was adopted), so show the note of the coder whose value was kept
+  const rf = c.reconciled_from || {}; const keep = rf.B === c.position && rf.A !== c.position ? parts['Coder B'] : parts['Coder A'] || lead || parts['Coder B'];
+  return { summary: keep || parts['Other coder'] || '', notes } }
 function q2Why(Q, st, p, r) {
   const lab = v => (SCALE.find(x => x[0] === v) || [0, '–'])[1]; const tiers = Q.evidence_tiers || {};
   const order = shuffled(Q.statements.map(q => q.id), st.seed); const byId = Object.fromEntries(Q.statements.map(q => [q.id, q]));
   const ids = order.filter(id => typeof st.answers[id] === 'number');
   const imp = { less: 'matters less', very: 'matters a lot' };
   const rows = ids.map(id => { const q = byId[id]; const c = q.positions[p]; const u = st.answers[id]; const has = c && typeof c.position === 'number';
-    const ev = c && c.evidence ? String(c.evidence) : ''; const short = ev.length > 420 ? ev.slice(0, 420).replace(/\s+\S*$/, '') + '…' : ev;
+    const { summary: ev, notes } = q2Evidence(c); const short = ev.length > 420 ? ev.slice(0, 420).replace(/\s+\S*$/, '') + '…' : ev;
+    const rf = (c && c.reconciled_from) || {}; const placed = ['A', 'B'].filter(k => typeof rf[k] === 'number').map(k => `Coder ${k}: ${lab(rf[k])}`).join(' · ');
+    const coding = has ? `<details class="disclose qwhy__ev"><summary class="small">How this position was coded</summary><div class="disclose__body small">
+        <p>Two coders placed each party on each statement from its published material, working blind to each other under the same rules; a third reviewer settled any difference.${c.coders_agreed ? ' Here they agreed.' : ''}</p>
+        ${placed ? `<p><b>${placed}</b> → ${lab(c.position)}</p>` : ''}${notes.map(([k, t]) => `<p><b>${esc(k)}:</b> ${esc(t)}</p>`).join('')}</div></details>` : '';
     return `<article class="qwhy__row${has ? '' : ' qwhy__row--none'}"><p class="qwhy__s">${esc(q.text)}</p>
       <dl class="dl"><dt>You</dt><dd>${lab(u)}${imp[(st.weights || {})[id]] ? ` <span class="muted">· ${imp[st.weights[id]]}</span>` : ''}</dd>
         <dt>${esc(pname(p))}</dt><dd>${has ? lab(c.position) + (c.position === 0 ? ' (argued neutral)' : '') : '<span class="muted">No evidenced position, so left out</span>'}</dd>
         ${has ? `<dt>Agreement</dt><dd>${Math.round((1 - Math.abs(u - c.position) / 4) * 100)} of 100</dd>` : ''}</dl>
       ${short ? `<p class="small soft">${esc(short)}</p>${ev.length > short.length ? `<details class="disclose qwhy__ev"><summary class="small">Full evidence</summary><div class="disclose__body small"><p>${esc(ev)}</p></div></details>` : ''}` : ''}
-      ${has ? chooseSrc([c.source_url, c.source_url_2], [c.tier ? `Tier ${c.tier}${tiers[c.tier] ? ': ' + esc(tiers[c.tier]) : ''}` : '', c.confidence ? esc(c.confidence) + ' confidence' : ''].filter(Boolean).join(' · ')) : ''}</article>` }).join('');
+      ${has ? chooseSrc([c.source_url, c.source_url_2], [c.tier ? `Tier ${c.tier}${tiers[c.tier] ? ': ' + esc(tiers[c.tier]) : ''}` : '', c.confidence ? esc(c.confidence) + ' confidence' : ''].filter(Boolean).join(' · ')) : ''}
+      ${coding}</article>` }).join('');
   openSheet({ title: `You and ${pname(p)}`, depth: ['Your results', 'Evidence'], at: 1,
     src: `Coded by two coders from published sources · Quiz ${esc(Q.version || '')}, frozen ${esc(Q.freeze_date || '')} · <a href="#/about/page/guide/quiz-method.md">method</a>`,
     html: `<div class="stack"><p class="small soft">Each statement you answered, your answer, ${esc(pname(p))}’s coded position and the evidence behind it.${r ? ` ${r.n} of your ${r.M} answers could be compared${r.thin ? ', which is too few for a fair comparison' : `; likely ${r.lo}–${r.hi} of 100`}.` : ''}</p>

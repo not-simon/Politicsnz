@@ -180,7 +180,8 @@ if results and results.get('votes_cast') and upcoming:
 # Heavy history (election results since 2008, Parliament membership, promises) ships as separate files that the router
 # loads only for the views that need them (needData in 00-core.js); Today, Vote and Choose start without them.
 bundle = {'forecast': forecast, 'upcoming': upcoming[0] if upcoming else None, 'guide': guide, 'electorates': electorates, 'generated': __import__('datetime').date.today().isoformat(), 'parties': parties,
-          'elections': None, 'parliaments': None, 'promises': None, 'polls': polls}
+          'elections': None, 'parliaments': None, 'promises': None, 'polls': polls,
+          'counts': {'people': len(people), 'promises': sum(len(v) for v in (promises or {}).values()) if isinstance(promises, dict) else 0, 'policies': sum(len(v) for v in policies.values())}}
 (OUT / 'elections.json').write_text(dumps(elections)); (OUT / 'parliaments.json').write_text(dumps(parliaments)); (OUT / 'promises.json').write_text(dumps(promises))
 (OUT / 'bundle.json').write_text(dumps(bundle))
 # --- party newsroom: headline + date + link only (no teaser text; see docs/LEGAL_REVIEW.md S8), plus the follow directory

@@ -130,7 +130,7 @@ V.chooseResults = async (sub) => {
   if (sub === 'quiz') {
     frame(`<section class="stack stack--l" aria-labelledby="h-match" id="res-match"></section><div class="rows">${savedRow}</div>`);
     const box = $('#res-match');
-    if (N) renderMatchResults(box, Q); else box.innerHTML = `<div class="shead"><h2 id="h-match">Find your match</h2></div><p class="soft">The quiz is being rebuilt on a published method. Check back soon.</p>`;
+    if (N) { S.focusResults = true; renderMatchResults(box, Q) } else box.innerHTML = `<div class="shead"><h2 id="h-match">Find your match</h2></div><p class="soft">The quiz is being rebuilt on a published method. Check back soon.</p>`;
     return }
   if (sub === 'swipe') {
     frame(`<section class="stack stack--l" aria-labelledby="h-swipe">

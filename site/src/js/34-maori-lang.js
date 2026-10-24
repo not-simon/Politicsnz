@@ -1,3 +1,9 @@
+// What Parliament's record says the MP's party is at the end of the term (party_changes applied); falls back to the electorate data.
+function mpPartyLabel(mp) { if (!mp) return ''; const parl = (S.data.parliaments || []).slice(-1)[0]; const m = parl && (parl.members || []).find(x => x.name === mp.name);
+  const party = m ? ((m.party_changes || []).length ? m.party_changes[m.party_changes.length - 1].to || m.party : m.party) : mp.party;
+  const pn = p => esc(S.data.parties[p] ? pname(p) : p);
+  if (party === 'independent' && mp.party && mp.party !== 'independent') return `independent in Parliament's records; leads the ${pn(mp.party)}`;
+  return pn(party) }
 /* ===== Vote › Māori electorates (#/vote/maori) and Other languages (#/vote/lang, #/vote/lang/mi|sm|to) =====
    Te reo Māori terms come from data/guide/i18n.json (each with its source); the Samoan and Tongan pages from
    data/guide/howtovote-sm.json / -to.json, where every line says whether it is the Electoral Commission's own wording
@@ -40,7 +46,7 @@ function maoriSeatHTML(e, r) {
   const res = r && r.winner ? `<p class="small"><b>2023:</b> ${esc(r.winner)}${tag(r.party)} won${maj}${r.runner_up ? ` over ${esc(r.runner_up)}${tag(r.runner_up_party)}` : ''}.</p>` : '<p class="small muted">2023 result not available.</p>';
   const srcU = r && r.winner ? ((e.result_2023 && e.result_2023.source) || String(r.majority_source || '').match(/https?:\/\/\S+/)?.[0] || '') : '';
   const resSrc = srcU ? `<p class="src src--line">${ic('doc')}<span>2023 result: official count, as reported by ${extA(srcU, esc(srcU.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]))}</span></p>` : '';
-  const now = mp ? `<p class="small soft"><b>MP now:</b> ${esc(mp.name)} (${pn(mp.party)})${e.mp_standing_again === false ? ', not standing again' : ''}.${e.sitting_mp_note ? ` ${esc(e.sitting_mp_note)}` : ''}</p>` : '';
+  const now = mp ? `<p class="small soft"><b>MP now:</b> ${esc(mp.name)} (${mpPartyLabel(mp)})${e.mp_standing_again === false ? ', not standing again' : ''}.${e.sitting_mp_note ? ` ${esc(e.sitting_mp_note)}` : ''}</p>` : '';
   return `<section class="stack stack--s mh-seat" aria-labelledby="mh-${esc(e.slug)}">
       <div class="shead shead--quiet"><div class="shead__row"><h3 id="mh-${esc(e.slug)}" class="h4">${inLang('mi', e.name)}</h3><span class="micro muted">${esc(String(e.region || '').replace(/\s*\(Māori electorate\)\s*/i, ''))}</span></div></div>
       ${res}${resSrc}${now}

@@ -26,7 +26,12 @@ V.polls = sub => {
   $('#main').innerHTML = sectionFrame('seats', 'seats/polls', `<div class="stack stack--xl" id="polls-body">${body(D)}</div>`);
   const after = { trend: bindTrend, all: bindAllPolls, '': bindSummary }[sub]; if (after) after(D);
 };
-const pollsUpdated = D => `<span class="badge">Updated ${esc(seatDate(D.asOf))}${D.hasF && D.F.days_to_election != null ? `, ${esc(D.F.days_to_election)} days out` : ''}</span><span class="badge badge--outline">${ic('lock', 'i--xs')} Hidden 7 Nov until 7pm</span>`;
+// Dated to the forecast run, and the day count is from that run, not from today (the Today page counts down from today),
+// so the two never seem to disagree: "Forecast run 24 Oct 2026 · 14 days before election day".
+const runDaysBefore = F => { const d = s => { const [y, m, dd] = String(s).slice(0, 10).split('-').map(Number); return Date.UTC(y, m - 1, dd) };
+  const n = Math.round((d(F.election_date || '2026-11-07') - d(F.as_of)) / 864e5); return isNaN(n) || n < 0 ? null : n };
+const pollsUpdated = D => { const n = D.hasF ? runDaysBefore(D.F) : null;
+  return `<span class="badge">${D.hasF ? `Forecast run ${esc(seatDate(D.asOf))}${n != null ? ` · ${n === 0 ? 'on election day' : n === 1 ? '1 day before election day' : `${n} days before election day`}` : ''}` : `Latest poll ${esc(seatDate(D.asOf))}`}</span><span class="badge badge--outline">${ic('lock', 'i--xs')} Hidden 7 Nov until 7pm</span>` };
 // The sub-views' header: a way back to the summary, the title, and a switch between the sub-views.
 const pollNav = (D, cur) => `<nav aria-label="Polls and forecast pages"><div class="seg pollnav">${POLL_SUBS.filter(([, , f]) => !f || D.hasF).map(([k, l]) => `<a href="#/seats/polls${k ? '/' + k : ''}"${k === cur ? ' aria-current="page"' : ''}>${esc(l)}</a>`).join('')}</div></nav>`;
 function pollsHead(D, cur, h1, lede) {
@@ -149,7 +154,7 @@ function forecastSummary(F) {
       <p class="small muted">Forecast ${esc(seatDate(F.generated))} · latest poll ${esc(seatDate(F.latest_poll_date))} · ${esc(F.n_polls_this_term)} polls this term</p></div>
     <div class="split split--7-5">
       <div class="stack"><div id="frows"></div><div class="legend small" id="flegend">${forecastLegend('vote')}</div>
-        ${others.length ? `<p class="small soft">Seats outside the parties above: ${others.map(([p, v]) => `${esc(pname(p))} wins an electorate in ${inHundred(v.p_wins_seat)} simulations`).join('; ')}.</p>` : ''}
+        ${others.length ? `<p class="small soft">Seats outside the parties above: ${others.map(([p, v]) => `${p === 'independent' ? 'an independent candidate' : esc(pname(p))} wins an electorate in ${inHundred(v.p_wins_seat)} simulations`).join('; ')}.</p>` : ''}
         <p class="micro muted">Sorted by the forecast's middle estimate. This is the only page in the guide that orders parties by polling; everywhere else is A–Z or ballot order.</p></div>
       <div class="stack stack--l"><h3>Who could govern?</h3>
         <p class="small soft">From ${F.simulation ? Number(F.simulation.draws).toLocaleString('en-NZ') : 'tens of thousands of'} simulated elections built from the polls and how far they have missed before. Not a prediction: in 2017 and 2020 late swings moved the result.</p>

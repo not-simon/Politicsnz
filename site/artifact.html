@@ -2871,6 +2871,12 @@ function partyResultsMini(s, big = false, head = true) {
     <p class="src">Electoral Commission results, via Wikipedia: ${els.map(e => { const u = String((e.sources || [])[0] || '').split(' ')[0]; return u ? ptExt(u, String(e.year)) : '' }).join(' ')}${big ? ' · bars scaled to the party’s best result' : ''}</p></section>`;
 }
 
+// What Parliament's record says the MP's party is at the end of the term (party_changes applied); falls back to the electorate data.
+function mpPartyLabel(mp) { if (!mp) return ''; const parl = (S.data.parliaments || []).slice(-1)[0]; const m = parl && (parl.members || []).find(x => x.name === mp.name);
+  const party = m ? ((m.party_changes || []).length ? m.party_changes[m.party_changes.length - 1].to || m.party : m.party) : mp.party;
+  const pn = p => esc(S.data.parties[p] ? pname(p) : p);
+  if (party === 'independent' && mp.party && mp.party !== 'independent') return `independent in Parliament's records; leads the ${pn(mp.party)}`;
+  return pn(party) }
 /* ===== Vote › Māori electorates (#/vote/maori) and Other languages (#/vote/lang, #/vote/lang/mi|sm|to) =====
    Te reo Māori terms come from data/guide/i18n.json (each with its source); the Samoan and Tongan pages from
    data/guide/howtovote-sm.json / -to.json, where every line says whether it is the Electoral Commission's own wording
@@ -2913,7 +2919,7 @@ function maoriSeatHTML(e, r) {
   const res = r && r.winner ? `<p class="small"><b>2023:</b> ${esc(r.winner)}${tag(r.party)} won${maj}${r.runner_up ? ` over ${esc(r.runner_up)}${tag(r.runner_up_party)}` : ''}.</p>` : '<p class="small muted">2023 result not available.</p>';
   const srcU = r && r.winner ? ((e.result_2023 && e.result_2023.source) || String(r.majority_source || '').match(/https?:\/\/\S+/)?.[0] || '') : '';
   const resSrc = srcU ? `<p class="src src--line">${ic('doc')}<span>2023 result: official count, as reported by ${extA(srcU, esc(srcU.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]))}</span></p>` : '';
-  const now = mp ? `<p class="small soft"><b>MP now:</b> ${esc(mp.name)} (${pn(mp.party)})${e.mp_standing_again === false ? ', not standing again' : ''}.${e.sitting_mp_note ? ` ${esc(e.sitting_mp_note)}` : ''}</p>` : '';
+  const now = mp ? `<p class="small soft"><b>MP now:</b> ${esc(mp.name)} (${mpPartyLabel(mp)})${e.mp_standing_again === false ? ', not standing again' : ''}.${e.sitting_mp_note ? ` ${esc(e.sitting_mp_note)}` : ''}</p>` : '';
   return `<section class="stack stack--s mh-seat" aria-labelledby="mh-${esc(e.slug)}">
       <div class="shead shead--quiet"><div class="shead__row"><h3 id="mh-${esc(e.slug)}" class="h4">${inLang('mi', e.name)}</h3><span class="micro muted">${esc(String(e.region || '').replace(/\s*\(Māori electorate\)\s*/i, ''))}</span></div></div>
       ${res}${resSrc}${now}
@@ -3616,7 +3622,7 @@ V.match = (arg) => {
       </div>`);
     $('#qstart').onclick = () => { if (i >= N) i = 0; ask() };
     const z = $('#qreset'); if (z) z.onclick = () => { st.answers = {}; st.weights = {}; st.i = 0; i = 0; q2Save(st); intro() } };
-  const ask = () => { if (i >= N) { st.i = N; q2Save(st); go('choose/results/quiz'); return }
+  const ask = () => { if (i >= N) { st.i = N; q2Save(st); S.focusResults = true; go('choose/results/quiz'); return }
     const q = byId[order[i]]; const a = st.answers[q.id]; const w = st.weights[q.id] || 'normal'; const last = i === N - 1;
     const tabFor = v => (typeof a === 'number' ? a === v : v === SCALE[0][0]) ? 0 : -1;
     $('#main').innerHTML = `<div class="split split--7-5 quizq">
@@ -3642,12 +3648,14 @@ V.match = (arg) => {
         </div>
       </aside></div>`;
     focusMode('Find your match', 'choose');
+    // each question screen replaces the page, so move focus to the statement (keyboard and screen-reader users start there)
+    const stmt = $('#stmt'); if (stmt) stmt.focus({ preventScroll: true });
     const opts = [...$('#main').querySelectorAll('.likert__opt')];
     const pickOpt = (b, focus) => { st.answers[q.id] = +b.dataset.v; q2Save(st); opts.forEach(x => { const on = x === b; x.setAttribute('aria-checked', on); x.tabIndex = on ? 0 : -1 }); if (focus) b.focus(); $('#qnext').disabled = false };
     opts.forEach((b, k) => { b.onclick = () => pickOpt(b);
       b.onkeydown = e => { const d = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key]; const to = e.key === 'Home' ? 0 : e.key === 'End' ? opts.length - 1 : d ? (k + d + opts.length) % opts.length : -1; if (to < 0) return; e.preventDefault(); pickOpt(opts[to], true) } });
     $('#qimp').onclick = e => { const b = e.target.closest('[data-w]'); if (!b) return; st.weights[q.id] = b.dataset.w; q2Save(st); $('#qimp').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.w === b.dataset.w)) };
-    const step = d => { i = Math.max(0, i + d); st.i = i; q2Save(st); ask(); window.scrollTo(0, 0); const s = $('#stmt'); if (s) s.focus({ preventScroll: true }) };
+    const step = d => { i = Math.max(0, i + d); st.i = i; q2Save(st); ask(); window.scrollTo(0, 0) };
     $('#qnext').onclick = () => step(1); $('#qskip').onclick = () => { delete st.answers[q.id]; step(1) }; $('#qback').onclick = () => step(-1) };
   if (arg === 'start') { if (i >= N) i = 0; ask() } else if (Object.keys(st.answers).length && i < N) ask(); else intro();
 };
@@ -3657,8 +3665,8 @@ function renderMatchResults(box, Q) {
   const st = q2State(); st.answers = st.answers || {}; st.weights = st.weights || {};
   const N = Q.statements.length; const byId = Object.fromEntries(Q.statements.map(q => [q.id, q]));
   const R = q2Results(Q, st); const M = R.length ? R[0].M : 0; const need = Math.max(10, Math.ceil(0.5 * M)); const sort = st.sort || 'az';
-  const head = `<div class="shead"><div class="shead__row"><h2 id="h-match">Find your match</h2><span class="micro muted">${M} of ${N} answered · Quiz ${esc(Q.version || '')} · frozen ${esc(Q.freeze_date || '')}</span></div></div>`;
-  if (!M) { box.innerHTML = `${head}<div class="panel panel--sunk"><p><b>No answers yet.</b></p><p class="small soft">${N} statements on six themes, written without party names. About 8 minutes.</p><a class="btn btn--primary btn--s" href="#/choose/quiz" style="justify-self:start">Start the quiz ${ic('chev', 'i--xs')}</a></div>`; return }
+  const head = `<div class="shead"><div class="shead__row"><h2 id="h-match" tabindex="-1">Find your match</h2><span class="micro muted">${M} of ${N} answered · Quiz ${esc(Q.version || '')} · frozen ${esc(Q.freeze_date || '')}</span></div></div>`;
+  if (!M) { box.innerHTML = `${head}<div class="panel panel--sunk"><p><b>No answers yet.</b></p><p class="small soft">${N} statements on six themes, written without party names. About 8 minutes.</p><a class="btn btn--primary btn--s" href="#/choose/quiz" style="justify-self:start">Start the quiz ${ic('chev', 'i--xs')}</a></div>`; focusMatchHeading(box); return }
   const az = chooseAZ(R.map(r => r.slug)); const ballot = chooseBallot(R.map(r => r.slug));
   const rows = sort === 'close' ? R.slice().sort((x, y) => (x.thin - y.thin) || ((y.m ?? -1) - (x.m ?? -1)) || az.indexOf(x.slug) - az.indexOf(y.slug)) : sort === 'ballot' ? ballot.map(s => R.find(r => r.slug === s)) : az.map(s => R.find(r => r.slug === s));
   const reason = r => r.n === 0 ? 'No recorded position on the statements you answered' : r.limited ? `Not compared: positions found on only ${r.coded} of ${N} statements` : `Not compared: only ${r.n} of your ${M} answers could be matched (needs ${need})`;
@@ -3699,7 +3707,7 @@ function renderMatchResults(box, Q) {
         ${chooseUnknowns([`${N} statements can’t cover everything a party stands for: competence, trust, local candidates and who they’d work with aren’t here.`, 'Some parties have published little; we never guess a position, so their bars are hatched rather than placed.', 'Positions are coded from documents by people. Two coders agreed closely, but a party could fairly be placed a step either way; the ranges show what that would do.', 'Your policy swipe and values compass may point elsewhere. They measure different things.'])}
       </aside>
     </div>`;
-  box.querySelectorAll('[data-sort]').forEach(b => b.onclick = () => { const s2 = q2State(); s2.sort = b.dataset.sort; q2Save(s2); renderMatchResults(box, Q) });
+  box.querySelectorAll('[data-sort]').forEach(b => b.onclick = () => { const s2 = q2State(); s2.sort = b.dataset.sort; q2Save(s2); renderMatchResults(box, Q); const nb = box.querySelector(`[data-sort="${b.dataset.sort}"]`); if (nb) nb.focus({ preventScroll: true }) });
   box.querySelectorAll('[data-cmp]').forEach(b => b.onclick = () => { const s2 = q2State(); let c = (s2.cmp || []).filter(s => withDims.includes(s)); const s = b.dataset.cmp;
     if (c.includes(s)) c = c.filter(x => x !== s); else { c.push(s); if (c.length > 2) c.shift() } s2.cmp = c; q2Save(s2); renderMatchResults(box, Q); const nb = box.querySelector(`[data-cmp="${CSS.escape(s)}"]`); if (nb) nb.focus({ preventScroll: true }) });
   $('#qshare', box).onclick = () => { const text = [`Ballot Book NZ · Find your match (quiz ${Q.version || ''})`, `My answers on ${M} of ${N} statements compared with all ${R.length} parties, A–Z:`, '',
@@ -3707,20 +3715,40 @@ function renderMatchResults(box, Q) {
       'Information, not advice: it shows how answers line up with published positions, and is not a recommendation about how to vote.', chooseShareURL('choose/quiz')].join('\n');
     chooseCopy(text, 'Share all ' + R.length) };
   box.querySelectorAll('[data-why]').forEach(b => b.onclick = () => q2Why(Q, st, b.dataset.why, R.find(r => r.slug === b.dataset.why)));
+  focusMatchHeading(box);
 }
+// Arriving from the last question (or the empty state): focus the results heading so the reader starts at the results.
+function focusMatchHeading(box) { if (!S.focusResults) return; S.focusResults = false; const h = $('#h-match', box); if (h) h.focus({ preventScroll: true }) }
+// The evidence field mixes the reconciled reason with the two coders' working notes ("Coder A: … Coder B: … Reconciler: …",
+// or "… Other coder: … Reconciler: …"). Split it: the reconciled text is the evidence; the coders' notes go behind a disclosure.
+function q2Evidence(c) { const ev = String((c && c.evidence) || '').trim(); const re = /(?:^|\s)(Coder A|Coder B|Other coder|Reconciler):\s/g; const marks = [];
+  let mt; while ((mt = re.exec(ev))) marks.push({ label: mt[1], at: mt.index, body: mt.index + mt[0].length });
+  if (!marks.length) return { summary: ev, notes: [] };
+  const part = k => ev.slice(marks[k].body, k + 1 < marks.length ? marks[k + 1].at : ev.length).trim();
+  const lead = ev.slice(0, marks[0].at).trim(); const parts = Object.fromEntries(marks.map((x, k) => [x.label, part(k)]));
+  const notes = []; if (lead) notes.push(['First coder', lead]); for (const k of ['Coder A', 'Coder B', 'Other coder']) if (parts[k]) notes.push([k, parts[k]]);
+  if (parts.Reconciler) return { summary: parts.Reconciler, notes };
+  // no reconciler's note: the coders agreed (or one value was adopted), so show the note of the coder whose value was kept
+  const rf = c.reconciled_from || {}; const keep = rf.B === c.position && rf.A !== c.position ? parts['Coder B'] : parts['Coder A'] || lead || parts['Coder B'];
+  return { summary: keep || parts['Other coder'] || '', notes } }
 function q2Why(Q, st, p, r) {
   const lab = v => (SCALE.find(x => x[0] === v) || [0, '–'])[1]; const tiers = Q.evidence_tiers || {};
   const order = shuffled(Q.statements.map(q => q.id), st.seed); const byId = Object.fromEntries(Q.statements.map(q => [q.id, q]));
   const ids = order.filter(id => typeof st.answers[id] === 'number');
   const imp = { less: 'matters less', very: 'matters a lot' };
   const rows = ids.map(id => { const q = byId[id]; const c = q.positions[p]; const u = st.answers[id]; const has = c && typeof c.position === 'number';
-    const ev = c && c.evidence ? String(c.evidence) : ''; const short = ev.length > 420 ? ev.slice(0, 420).replace(/\s+\S*$/, '') + '…' : ev;
+    const { summary: ev, notes } = q2Evidence(c); const short = ev.length > 420 ? ev.slice(0, 420).replace(/\s+\S*$/, '') + '…' : ev;
+    const rf = (c && c.reconciled_from) || {}; const placed = ['A', 'B'].filter(k => typeof rf[k] === 'number').map(k => `Coder ${k}: ${lab(rf[k])}`).join(' · ');
+    const coding = has ? `<details class="disclose qwhy__ev"><summary class="small">How this position was coded</summary><div class="disclose__body small">
+        <p>Two coders placed each party on each statement from its published material, working blind to each other under the same rules; a third reviewer settled any difference.${c.coders_agreed ? ' Here they agreed.' : ''}</p>
+        ${placed ? `<p><b>${placed}</b> → ${lab(c.position)}</p>` : ''}${notes.map(([k, t]) => `<p><b>${esc(k)}:</b> ${esc(t)}</p>`).join('')}</div></details>` : '';
     return `<article class="qwhy__row${has ? '' : ' qwhy__row--none'}"><p class="qwhy__s">${esc(q.text)}</p>
       <dl class="dl"><dt>You</dt><dd>${lab(u)}${imp[(st.weights || {})[id]] ? ` <span class="muted">· ${imp[st.weights[id]]}</span>` : ''}</dd>
         <dt>${esc(pname(p))}</dt><dd>${has ? lab(c.position) + (c.position === 0 ? ' (argued neutral)' : '') : '<span class="muted">No evidenced position, so left out</span>'}</dd>
         ${has ? `<dt>Agreement</dt><dd>${Math.round((1 - Math.abs(u - c.position) / 4) * 100)} of 100</dd>` : ''}</dl>
       ${short ? `<p class="small soft">${esc(short)}</p>${ev.length > short.length ? `<details class="disclose qwhy__ev"><summary class="small">Full evidence</summary><div class="disclose__body small"><p>${esc(ev)}</p></div></details>` : ''}` : ''}
-      ${has ? chooseSrc([c.source_url, c.source_url_2], [c.tier ? `Tier ${c.tier}${tiers[c.tier] ? ': ' + esc(tiers[c.tier]) : ''}` : '', c.confidence ? esc(c.confidence) + ' confidence' : ''].filter(Boolean).join(' · ')) : ''}</article>` }).join('');
+      ${has ? chooseSrc([c.source_url, c.source_url_2], [c.tier ? `Tier ${c.tier}${tiers[c.tier] ? ': ' + esc(tiers[c.tier]) : ''}` : '', c.confidence ? esc(c.confidence) + ' confidence' : ''].filter(Boolean).join(' · ')) : ''}
+      ${coding}</article>` }).join('');
   openSheet({ title: `You and ${pname(p)}`, depth: ['Your results', 'Evidence'], at: 1,
     src: `Coded by two coders from published sources · Quiz ${esc(Q.version || '')}, frozen ${esc(Q.freeze_date || '')} · <a href="#/about/page/guide/quiz-method.md">method</a>`,
     html: `<div class="stack"><p class="small soft">Each statement you answered, your answer, ${esc(pname(p))}’s coded position and the evidence behind it.${r ? ` ${r.n} of your ${r.M} answers could be compared${r.thin ? ', which is too few for a fair comparison' : `; likely ${r.lo}–${r.hi} of 100`}.` : ''}</p>
@@ -4076,7 +4104,7 @@ V.chooseResults = async (sub) => {
   if (sub === 'quiz') {
     frame(`<section class="stack stack--l" aria-labelledby="h-match" id="res-match"></section><div class="rows">${savedRow}</div>`);
     const box = $('#res-match');
-    if (N) renderMatchResults(box, Q); else box.innerHTML = `<div class="shead"><h2 id="h-match">Find your match</h2></div><p class="soft">The quiz is being rebuilt on a published method. Check back soon.</p>`;
+    if (N) { S.focusResults = true; renderMatchResults(box, Q) } else box.innerHTML = `<div class="shead"><h2 id="h-match">Find your match</h2></div><p class="soft">The quiz is being rebuilt on a published method. Check back soon.</p>`;
     return }
   if (sub === 'swipe') {
     frame(`<section class="stack stack--l" aria-labelledby="h-swipe">
@@ -4405,7 +4433,9 @@ function parlCoalition() {
   const els = (S.data.elections || []).filter(e => e.year >= 2011 && e.year < 2026), R = results2026();
   const srcs = [...(R ? [['r2026', '2026 result']] : forecastHidden() ? [] : [['proj', '2026 poll average']]), ...els.map(e => [`e${e.year}`, `${e.year} result`]).reverse()];
   let src = srcs.some(s => s[0] === store.get('coalSrc')) ? store.get('coalSrc') : srcs[0][0];
-  let bloc; try { bloc = new Set(JSON.parse(store.get('coalBloc') || 'null') || ['national', 'act', 'nz-first']) } catch { bloc = new Set(['national', 'act', 'nz-first']) }
+  // No parties are pre-chosen on election day (before 7pm): the page starts from the 2023 result with an empty government.
+  const blocDefault = forecastHidden() ? [] : ['national', 'act', 'nz-first'];
+  let bloc; try { bloc = new Set(JSON.parse(store.get('coalBloc') || 'null') || blocDefault) } catch { bloc = new Set(blocDefault) }
   $('#main').innerHTML = sectionFrame('seats', 'seats/coalition', `
     <header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('seats', 'i--s')} Seats · Coalition builder</p><h1>Build a government</h1>
       <p class="lede">Pick a result, then tap parties to put them together. A government needs more than half the seats to win confidence votes.</p></header>
@@ -4420,7 +4450,7 @@ function parlCoalition() {
     <p class="srcline">Seats: official results, Electoral Commission${R ? '; 2026 from the count as loaded here' : ''}.</p>
     <div class="stack stack--s">
       <details class="disclose"><summary>Why more than half?</summary><div class="disclose__body"><p class="small">A government has to keep the confidence of the House: win the votes that say it may govern, and pass a Budget. With 120 seats that means 61. If there are overhang seats the House is bigger and the number rises with it. Parties can also govern as a minority with "confidence and supply" support from parties outside the Cabinet.</p></div></details>
-      <details class="disclose"><summary>Where these seat counts come from</summary><div class="disclose__body"><p class="small">Seat counts are the official results for past elections. The 2026 option turns the latest poll average into seats with the same formula as the seat calculator; it is an illustration, not a forecast.</p></div></details>
+      <details class="disclose"><summary>Where these seat counts come from</summary><div class="disclose__body"><p class="small">Seat counts are the official results for past elections.${srcs.some(([v]) => v === 'proj') ? ' The 2026 option turns the latest poll average into seats with the same formula as the seat calculator; it is an illustration, not a forecast.' : R ? ' The 2026 option is the count as loaded here, and can still move until the official result.' : ''}</p></div></details>
       <details class="disclose"><summary>Who would actually work with whom</summary><div class="disclose__body"><p class="small">Adding numbers up is the easy part. What each party has said about working with the others is on its own page, under "Who they'd work with".</p><div class="row"><a class="more small" href="#/parties">All parties, A–Z ${ic('chev', 'i--xs')}</a></div></div></details></div>`);
   const seatsFor = v => v === 'proj' ? projection().seats : v === 'r2026' ? Object.fromEntries((R.parties || []).filter(r => r.total_seats).map(r => [r.party, r.total_seats]))
     : Object.fromEntries((els.find(e => `e${e.year}` === v).parties || []).filter(r => r.total_seats).map(r => [r.party, r.total_seats]));
@@ -4456,7 +4486,7 @@ function parlCalculator() {
     <div class="row"><span class="small muted">Start from</span><div class="seg" role="group" aria-label="Start from" id="cstart">${hide ? '' : `<button type="button" data-s="polls" aria-pressed="true">Latest polls</button>`}<button type="button" data-s="result" aria-pressed="${hide}">${e23.year} result</button></div></div>
     <div class="split split--7-5">
       <div class="stack"><p class="small soft" id="cfrom"></p><div class="calc" id="calc"></div>
-        <div class="row"><button class="btn btn--s" type="button" id="csave">Use these electorate wins in the 2026 projection</button></div></div>
+        ${hide ? '' : `<div class="row"><button class="btn btn--s" type="button" id="csave">Use these electorate wins in the 2026 projection</button></div>`}</div>
       <div class="stack sticky"><div class="row" style="align-items:baseline;gap:var(--s-3)"><span class="figure figure--s" id="ctot">120</span><span class="soft" id="cmaj"></span></div>
         <figure class="stack stack--s"><div id="calchemi"></div><figcaption class="sr-only">The seats below, party by party, say the same in words.</figcaption></figure><div id="cbars"></div><p class="small soft" id="csum"></p>
         <p class="sr-only" id="clive" aria-live="polite" aria-atomic="true"></p></div>
@@ -4489,7 +4519,7 @@ function parlCalculator() {
   $('#calc').addEventListener('input', ev => { const t = ev.target; if (!t.matches('.range')) return; const p = t.closest('[data-p]').dataset.p; pct[p] = +t.value; t.style.setProperty('--fill', (+t.value / 60 * 100) + '%'); $('#out-' + p).textContent = fmt(+t.value) + '%'; t.setAttribute('aria-valuetext', fmt(+t.value) + '% of the party vote'); run() });
   $('#calc').addEventListener('click', ev => { const b = ev.target.closest('[data-d]'); if (!b) return; const p = b.closest('[data-p]').dataset.p; elec[p] = Math.max(0, Math.min(72, (elec[p] || 0) + +b.dataset.d)); $('#ev-' + p).textContent = elec[p]; run() });
   $('#cstart').onclick = ev => { const b = ev.target.closest('[data-s]'); if (!b) return; $('#cstart').querySelectorAll('[data-s]').forEach(x => x.setAttribute('aria-pressed', x === b)); load(b.dataset.s === 'polls' ? fromPolls() : fromResult()); drawInputs(); run() };
-  $('#csave').onclick = () => { store.set('elecAssume', JSON.stringify(run())); $('#csave').textContent = 'Saved: the projection now uses these electorate wins' };
+  if ($('#csave')) $('#csave').onclick = () => { store.set('elecAssume', JSON.stringify(run())); $('#csave').textContent = 'Saved: the projection now uses these electorate wins' };
   drawInputs(); run() }
 
 /* ----- Seats › Polls & forecast -----
@@ -4520,7 +4550,12 @@ V.polls = sub => {
   $('#main').innerHTML = sectionFrame('seats', 'seats/polls', `<div class="stack stack--xl" id="polls-body">${body(D)}</div>`);
   const after = { trend: bindTrend, all: bindAllPolls, '': bindSummary }[sub]; if (after) after(D);
 };
-const pollsUpdated = D => `<span class="badge">Updated ${esc(seatDate(D.asOf))}${D.hasF && D.F.days_to_election != null ? `, ${esc(D.F.days_to_election)} days out` : ''}</span><span class="badge badge--outline">${ic('lock', 'i--xs')} Hidden 7 Nov until 7pm</span>`;
+// Dated to the forecast run, and the day count is from that run, not from today (the Today page counts down from today),
+// so the two never seem to disagree: "Forecast run 24 Oct 2026 · 14 days before election day".
+const runDaysBefore = F => { const d = s => { const [y, m, dd] = String(s).slice(0, 10).split('-').map(Number); return Date.UTC(y, m - 1, dd) };
+  const n = Math.round((d(F.election_date || '2026-11-07') - d(F.as_of)) / 864e5); return isNaN(n) || n < 0 ? null : n };
+const pollsUpdated = D => { const n = D.hasF ? runDaysBefore(D.F) : null;
+  return `<span class="badge">${D.hasF ? `Forecast run ${esc(seatDate(D.asOf))}${n != null ? ` · ${n === 0 ? 'on election day' : n === 1 ? '1 day before election day' : `${n} days before election day`}` : ''}` : `Latest poll ${esc(seatDate(D.asOf))}`}</span><span class="badge badge--outline">${ic('lock', 'i--xs')} Hidden 7 Nov until 7pm</span>` };
 // The sub-views' header: a way back to the summary, the title, and a switch between the sub-views.
 const pollNav = (D, cur) => `<nav aria-label="Polls and forecast pages"><div class="seg pollnav">${POLL_SUBS.filter(([, , f]) => !f || D.hasF).map(([k, l]) => `<a href="#/seats/polls${k ? '/' + k : ''}"${k === cur ? ' aria-current="page"' : ''}>${esc(l)}</a>`).join('')}</div></nav>`;
 function pollsHead(D, cur, h1, lede) {
@@ -4643,7 +4678,7 @@ function forecastSummary(F) {
       <p class="small muted">Forecast ${esc(seatDate(F.generated))} · latest poll ${esc(seatDate(F.latest_poll_date))} · ${esc(F.n_polls_this_term)} polls this term</p></div>
     <div class="split split--7-5">
       <div class="stack"><div id="frows"></div><div class="legend small" id="flegend">${forecastLegend('vote')}</div>
-        ${others.length ? `<p class="small soft">Seats outside the parties above: ${others.map(([p, v]) => `${esc(pname(p))} wins an electorate in ${inHundred(v.p_wins_seat)} simulations`).join('; ')}.</p>` : ''}
+        ${others.length ? `<p class="small soft">Seats outside the parties above: ${others.map(([p, v]) => `${p === 'independent' ? 'an independent candidate' : esc(pname(p))} wins an electorate in ${inHundred(v.p_wins_seat)} simulations`).join('; ')}.</p>` : ''}
         <p class="micro muted">Sorted by the forecast's middle estimate. This is the only page in the guide that orders parties by polling; everywhere else is A–Z or ballot order.</p></div>
       <div class="stack stack--l"><h3>Who could govern?</h3>
         <p class="small soft">From ${F.simulation ? Number(F.simulation.draws).toLocaleString('en-NZ') : 'tens of thousands of'} simulated elections built from the polls and how far they have missed before. Not a prediction: in 2017 and 2020 late swings moved the result.</p>
@@ -5033,7 +5068,7 @@ function subnav(sec, items, current) { const label = Object.fromEntries(SECTIONS
 const SUBNAV = {
   vote: () => [['vote', 'Ready to vote'], ['vote/electorate', 'Your electorate'], ['vote/plan', 'Make a plan'], ['vote/dates', 'Key dates'], ['vote/mmp', 'How MMP works'], ['vote/glossary', 'Glossary'], ['vote/specials', 'Special votes'], ['vote/maori', 'Māori electorates'], ['vote/lang', 'Other languages']],
   choose: () => [['choose', 'Start here'], ['choose/swipe', 'Policy swipe'], ['choose/quiz', 'Find your match'], ['choose/compass', 'Values compass'], ['choose/game', 'Whose policy? game'], ['choose/compare', 'Compare two parties'], ['choose/results', 'Your results']],
-  parties: () => [['parties', 'Parties', (G().parties || []).length || null], ['parties/issues', 'Issues', (G().issues || []).length || null], ['parties/policies', 'Policies', Object.values(S.data.parties || {}).reduce((a, p) => a + (p.policy_count || 0), 0) || null], ['parties/promises', 'Promises'], ['parties/people', 'People', (S.people || []).length || null], ['parties/news', 'From the parties']],
+  parties: () => [['parties', 'Parties', (G().parties || []).length || null], ['parties/issues', 'Issues', (G().issues || []).length || null], ['parties/policies', 'Policies', Object.values(S.data.parties || {}).reduce((a, p) => a + (p.policy_count || 0), 0) || null], ['parties/promises', 'Promises', ((S.data.counts || {}).promises) || null], ['parties/people', 'People', ((S.data.counts || {}).people) || (S.people || []).length || null], ['parties/news', 'From the parties']],
   seats: () => [['seats/polls', 'Polls & forecast'], ['seats/map', 'Electorate map'], ['seats/parliament', 'Parliament'], ['seats/coalition', 'Coalition builder'], ['seats/calculator', 'Seat calculator'], ['seats/results', 'Results']] };
 // Wrap a view's content in the section frame. Views call: sectionFrame('seats', 'seats/polls', html)
 function sectionFrame(sec, current, html) { const items = (SUBNAV[sec] || (() => []))(); return `<div class="section">${items.length ? subnav(sec, items, current) : ''}<div class="section__body">${html}</div></div>` }
