@@ -46,13 +46,20 @@ jobs:
         run: python3 tools/build_site.py
       - name: Commit and push if anything changed
         if: env.FREEZE != '1'
+        # The polls and releases jobs can finish in the same minute and both commit site/, so a plain push can be rejected.
+        # On rejection: keep the freshly generated data files, reset to the remote head, rebuild the site on top, retry (3x).
         run: |
-          git add data/polls-2026.json data/forecast.json data/polls-history site raw/forecast/*.meta.json
-          if git diff --cached --quiet; then
-            echo "No changes."
-            exit 0
-          fi
           git config user.name "polls-bot"
           git config user.email "polls-bot@users.noreply.github.com"
-          git commit -m "Update polls and forecast ($(date -u +'%Y-%m-%d %H:%M UTC'))"
-          git push
+          keep=$(mktemp -d); for p in data/polls-2026.json data/forecast.json data/polls-history raw/forecast; do [ -e "$p" ] && mkdir -p "$keep/$(dirname "$p")" && cp -r "$p" "$keep/$p"; done
+          for attempt in 1 2 3; do
+            git add data/polls-2026.json data/forecast.json data/polls-history raw/forecast site
+            if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+            git commit -q -m "Update polls and forecast ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            if git push; then exit 0; fi
+            echo "Push rejected (attempt $attempt); rebasing onto the remote head and rebuilding."
+            git fetch -q origin "$GITHUB_REF_NAME" && git reset -q --hard "origin/$GITHUB_REF_NAME"
+            (cd "$keep" && find . -type f | while read -r f; do mkdir -p "$GITHUB_WORKSPACE/$(dirname "$f")"; cp "$f" "$GITHUB_WORKSPACE/$f"; done)
+            python3 tools/build_site.py
+          done
+          echo "Could not push after 3 attempts."; exit 1
