@@ -239,7 +239,7 @@ def poll_entry(k, p, date, now):
     if p.get('sample_size'):
         bits.append(f"{int(p['sample_size']):,} people")
     if p.get('internal'):
-        bits.append('internal (party-commissioned) poll')
+        bits.append('a party or corporate-client poll, published selectively')
     return entry('poll-added', date, p['pollster'], '#/seats/polls', p.get('source_url'), None, ', '.join(bits) + '.', k, now, poll_date=p['end_date'])
 
 

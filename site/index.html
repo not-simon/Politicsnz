@@ -3763,16 +3763,18 @@ V.map = async (startYear, startSlug) => {
     html += `<div class="history" aria-label="Winning party at each election">${hist.map(([y, h]) => `<div style="--pc:${h && h.party ? pcolor(h.party) : 'var(--seat-empty)'}"${y === year ? ' aria-current="true"' : ''}><i></i>${y}<span>${h ? esc(pname(h.party)) : 'no seat'}</span></div>`).join('')}</div>`;
     if (e26) html += `<div class="row"><a class="btn btn--s btn--ink" href="#/vote/electorate/${esc(e26.slug)}">2026: ${(e26.candidates || []).length} candidates ${ic('chev', 'i--xs')}</a></div>`;
     box.innerHTML = html; box.classList.add('seatsheet--float');
-    $('#mclose').onclick = () => { const back = S.mapFrom; sel = null; markSel(); side(); if (listOn) list(); url(); if (back && back.isConnected) back.focus() } };
+    $('#mclose').onclick = () => { const was = sel; sel = null; markSel(); side(); if (listOn) list(); url();
+      // focus goes back to the seat's row in the list view, or to the list button
+      const back = (listOn && $('#mlistbox').querySelector(`[data-sel="${CSS.escape(was)}"]`)) || $('#mlist'); if (back) back.focus() } };
   const list = () => { const rows = ctx.feats.map(f => [f, ctx.resFor(f)]).sort((a, b) => a[0].properties.name.localeCompare(b[0].properties.name, 'en-NZ'));
     const pending = year === 2026 && !results2026();
     $('#mlistbox').innerHTML = `<div class="shead"><div class="shead__row"><h2 id="h-mlist">Every ${type === 'maori' ? 'Māori' : 'general'} seat, ${year}</h2><span class="small muted">${rows.length} seats · A–Z${pending ? ' · sitting MPs, not a result' : ''}</span></div></div>
       ${twrap(`Every ${type === 'maori' ? 'Māori' : 'general'} seat, ${year}`, `<table class="table"><thead><tr><th scope="col">Electorate</th><th scope="col">${pending ? 'Sitting MP' : 'Winner'}</th><th scope="col">Party</th><th class="n" scope="col">Majority</th></tr></thead><tbody>
       ${rows.map(([f, r]) => `<tr${f.properties.slug === sel ? ' aria-current="true"' : ''}><td><button class="linkbtn" type="button" data-sel="${esc(f.properties.slug)}">${esc(f.properties.name)}</button></td><td>${r ? esc(r.winner || '') : '<span class="muted">no result</span>'}</td><td>${r && r.party ? ptagHTML(r.party) : '–'}</td><td class="n">${r && r.majority ? Number(r.majority).toLocaleString('en-NZ') : '–'}</td></tr>`).join('')}
       </tbody></table>`)}` };
-  $('#mstage').addEventListener('click', e => { const p = e.target.closest('path[data-slug]'); if (!p) return; sel = p.dataset.slug; S.mapFrom = null; markSel(); side(); if (listOn) list(); url() });
-  $('#mlistbox').addEventListener('click', e => { const b = e.target.closest('[data-sel]'); if (!b) return; sel = b.dataset.sel; S.mapFrom = null; markSel(); side(); list(); url(); $('#mside').scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    S.mapFrom = $('#mlistbox').querySelector(`[data-sel="${CSS.escape(sel)}"]`); const h = $('#h-seat'); if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }) } });
+  $('#mstage').addEventListener('click', e => { const p = e.target.closest('path[data-slug]'); if (!p) return; sel = p.dataset.slug; markSel(); side(); if (listOn) list(); url() });
+  $('#mlistbox').addEventListener('click', e => { const b = e.target.closest('[data-sel]'); if (!b) return; sel = b.dataset.sel; markSel(); side(); list(); url(); $('#mside').scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    const h = $('#h-seat'); if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }) } });
   const toggleList = (on = !listOn) => { listOn = on; $('#mlist').setAttribute('aria-expanded', listOn); $('#mlist2').setAttribute('aria-expanded', listOn); $('#mlist span').textContent = listOn ? 'Hide list' : 'List view'; $('#mlistbox').hidden = !listOn;
     if (listOn) { list(); $('#mlistbox').scrollIntoView({ block: 'start', behavior: 'auto' }); const h = $('#h-mlist'); h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }) } };
   $('#mlist').onclick = () => toggleList(); $('#mlist2').onclick = () => toggleList(true);
