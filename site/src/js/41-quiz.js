@@ -1,7 +1,7 @@
 /* ----- Find your match (quiz v2) -----
    Scoring follows guide/quiz-method.md exactly: a_ij = 1 − |u − p| / 4 over the statements both answered, importance
    weights (less .5, normal 1, a lot 2), k = 4 phantom neutral statements, coverage rule |S_j| ≥ max(10, ½M).
-   Results live at #/choose/results (V.results); this view is the intro and the question screen (focus mode). */
+   Results live at #/choose/results/quiz (V.chooseResults('quiz')); this view is the intro and the question screen (focus mode). */
 const SCALE = [[-2, 'Strongly disagree'], [-1, 'Disagree'], [0, 'Neutral'], [1, 'Agree'], [2, 'Strongly agree']];
 function quizState() { try { return JSON.parse(store.get('quiz') || '{}') } catch { return {} } }
 function saveQuiz(q) { store.set('quiz', JSON.stringify(q)) }
@@ -52,7 +52,7 @@ V.match = (arg) => {
   const intro = () => { const n = Object.keys(st.answers).filter(id => byId[id]).length; const done = i >= N;
     $('#main').innerHTML = sectionFrame('choose', 'choose/quiz', `
       ${chooseHead('choose', 'Choose · Find your match', 'Which parties think like you?', `${N} statements on six themes, written without party names. At the end you’ll see all ${chooseParties().length} parties A to Z, how closely each one’s recorded positions match yours, and how much we know about each one’s views.`)}
-      <div class="row">${done ? `<a class="btn btn--primary btn--l" href="#/choose/results">See your results ${ic('chev', 'i--s')}</a><button class="btn btn--l" type="button" id="qstart">Change my answers</button>` : `<button class="btn btn--primary btn--l" type="button" id="qstart">${n ? 'Continue' : 'Start'} ${ic('chev', 'i--s')}</button>${n ? '<a class="btn btn--l" href="#/choose/results">Results so far</a>' : ''}`}${n ? '<button class="btn btn--quiet" type="button" id="qreset">Start over</button>' : ''}</div>
+      <div class="row">${done ? `<a class="btn btn--primary btn--l" href="#/choose/results/quiz">See your results ${ic('chev', 'i--s')}</a><button class="btn btn--l" type="button" id="qstart">Change my answers</button>` : `<button class="btn btn--primary btn--l" type="button" id="qstart">${n ? 'Continue' : 'Start'} ${ic('chev', 'i--s')}</button>${n ? '<a class="btn btn--l" href="#/choose/results/quiz">Results so far</a>' : ''}`}${n ? '<button class="btn btn--quiet" type="button" id="qreset">Start over</button>' : ''}</div>
       <div class="split split--7-5">
         <section class="stack">
           <div class="shead"><h2 class="h3">How it works</h2></div>
@@ -71,16 +71,16 @@ V.match = (arg) => {
       </div>`);
     $('#qstart').onclick = () => { if (i >= N) i = 0; ask() };
     const z = $('#qreset'); if (z) z.onclick = () => { st.answers = {}; st.weights = {}; st.i = 0; i = 0; q2Save(st); intro() } };
-  const ask = () => { if (i >= N) { st.i = N; q2Save(st); go('choose/results'); return }
+  const ask = () => { if (i >= N) { st.i = N; q2Save(st); go('choose/results/quiz'); return }
     const q = byId[order[i]]; const a = st.answers[q.id]; const w = st.weights[q.id] || 'normal'; const last = i === N - 1;
     const tabFor = v => (typeof a === 'number' ? a === v : v === SCALE[0][0]) ? 0 : -1;
     $('#main').innerHTML = `<div class="split split--7-5 quizq">
       <section class="stack stack--l" aria-labelledby="stmt">
         <div class="quizbar">
-          <div class="quizbar__meta"><span><b>${i + 1}</b> of ${N}</span><a class="small" href="#/choose/results">Results so far</a></div>
+          <div class="quizbar__meta"><span><b>${i + 1}</b> of ${N}</span><a class="small" href="#/choose/results/quiz">Results so far</a></div>
           <div class="quizbar__dims" aria-hidden="true">${QDIMS.map(d => `<i style="--p:${Math.round(dimDone(d) / Math.max(1, dimTotal(d)) * 100)}%"${d === q.dimension ? ' aria-current="step"' : ''}></i>`).join('')}</div>
         </div>
-        <p id="stmt" class="statement" tabindex="-1">${esc(q.text)}</p>
+        <h1 id="stmt" class="statement" tabindex="-1">${esc(q.text)}</h1>
         <details class="disclose" style="border-top:1px solid var(--line)"><summary>What does this mean?</summary><div class="disclose__body"><p>${q2Explainer(q)}</p>
           <p class="src">${ic('doc')} Written without party names · positions checked by two coders · <a href="#/about/page/guide/quiz-method.md">method</a></p></div></details>
         <div class="likert" role="radiogroup" aria-labelledby="stmt"><div class="likert__opts">${SCALE.map(([v, l]) => `<button class="likert__opt" role="radio" type="button" data-v="${v}" aria-checked="${a === v}" tabindex="${tabFor(v)}"><span class="likert__dot">${TICK}</span>${l}</button>`).join('')}</div></div>
@@ -100,14 +100,14 @@ V.match = (arg) => {
     const opts = [...$('#main').querySelectorAll('.likert__opt')];
     const pickOpt = (b, focus) => { st.answers[q.id] = +b.dataset.v; q2Save(st); opts.forEach(x => { const on = x === b; x.setAttribute('aria-checked', on); x.tabIndex = on ? 0 : -1 }); if (focus) b.focus(); $('#qnext').disabled = false };
     opts.forEach((b, k) => { b.onclick = () => pickOpt(b);
-      b.onkeydown = e => { const d = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key]; if (!d) return; e.preventDefault(); pickOpt(opts[(k + d + opts.length) % opts.length], true) } });
+      b.onkeydown = e => { const d = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key]; const to = e.key === 'Home' ? 0 : e.key === 'End' ? opts.length - 1 : d ? (k + d + opts.length) % opts.length : -1; if (to < 0) return; e.preventDefault(); pickOpt(opts[to], true) } });
     $('#qimp').onclick = e => { const b = e.target.closest('[data-w]'); if (!b) return; st.weights[q.id] = b.dataset.w; q2Save(st); $('#qimp').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.w === b.dataset.w)) };
     const step = d => { i = Math.max(0, i + d); st.i = i; q2Save(st); ask(); window.scrollTo(0, 0); const s = $('#stmt'); if (s) s.focus({ preventScroll: true }) };
     $('#qnext').onclick = () => step(1); $('#qskip').onclick = () => { delete st.answers[q.id]; step(1) }; $('#qback').onclick = () => step(-1) };
   if (arg === 'start') { if (i >= N) i = 0; ask() } else if (Object.keys(st.answers).length && i < N) ask(); else intro();
 };
 
-/* ----- match results (rendered inside V.results) ----- */
+/* ----- match results (rendered inside V.chooseResults('quiz')) ----- */
 function renderMatchResults(box, Q) {
   const st = q2State(); st.answers = st.answers || {}; st.weights = st.weights || {};
   const N = Q.statements.length; const byId = Object.fromEntries(Q.statements.map(q => [q.id, q]));

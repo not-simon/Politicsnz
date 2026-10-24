@@ -13,6 +13,11 @@ const TICK = '<svg class="tick" viewBox="0 0 28 28" aria-hidden="true"><circle c
 const chooseHead = (icon, eyebrow, h1, lede, extra = '') => `<header class="pagehead"><p class="eyebrow eyebrow--signal">${ic(icon, 'i--s')} ${eyebrow}</p><h1>${h1}</h1>${lede ? `<p class="lede">${lede}</p>` : ''}${extra}</header>`;
 const chooseSrc = (urls, pre = '') => { const a = [].concat(urls || []).filter(Boolean); return (a.length || pre) ? `<p class="src">${ic('doc')}${pre ? ` <span>${pre}</span>` : ''}${a.slice(0, 4).map((u, i) => ` <a href="${esc(u)}" target="_blank" rel="noopener">source${a.length > 1 ? ' ' + (i + 1) : ''}</a>`).join('')}</p>` : '' };
 const chooseUnknowns = (items, link = ['Method, sources and the position table', 'guide/quiz-method.md']) => `<div class="unknowns"><h2 class="h3">How this could be wrong</h2><ul>${items.map(x => `<li>${x}</li>`).join('')}</ul>${link ? `<a class="more small" href="#/about/page/${link[1]}">${link[0]} ${ic('chev', 'i--xs')}</a>` : ''}</div>`;
+// Same list as chooseUnknowns, folded into a .disclose (used where the block would push the main content down).
+const chooseUnknownsDisclose = (items, link = ['Method, sources and the position table', 'guide/quiz-method.md'], open = false) => `<details class="disclose choose-unk"${open ? ' open' : ''}><summary>How this could be wrong</summary><div class="disclose__body"><ul>${items.map(x => `<li>${x}</li>`).join('')}</ul>${link ? `<a class="more small" href="#/about/page/${link[1]}">${link[0]} ${ic('chev', 'i--xs')}</a>` : ''}</div></details>`;
+// Compact "go deeper" rows. A link row goes to a page; a button row opens the sheet (layer 3).
+const chooseRow = (href, icon, title, sub) => `<a class="rowlink" href="${href}"><span class="rowlink__icon">${ic(icon)}</span><span><span class="rowlink__title">${title}</span>${sub ? `<span class="rowlink__sub choose-block">${sub}</span>` : ''}</span>${ic('chev')}</a>`;
+const chooseRowBtn = (attrs, icon, title, sub) => `<button class="rowlink choose-rowbtn" type="button" aria-haspopup="dialog" ${attrs}><span class="rowlink__icon">${ic(icon)}</span><span><span class="rowlink__title">${title}</span>${sub ? `<span class="rowlink__sub choose-block">${sub}</span>` : ''}</span>${ic('chev')}</button>`;
 const chooseLock = () => `<div class="lock">${ic('lock')}<h2 class="h3">Hidden until 7pm</h2><p>${ELECTION_DAY_BLOCK}</p><p class="small muted">Everything else — parties, policies, candidates, your electorate, how to vote — stays available.</p><div class="row"><a class="btn btn--primary" href="https://map.vote.nz" target="_blank" rel="noopener">Find a voting place</a><a class="btn" href="#/vote/electorate">Your electorate</a></div></div>`;
 function chooseToast(msg) { const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status'); t.textContent = msg; document.body.appendChild(t); setTimeout(() => t.remove(), 2600) }
 async function chooseCopy(text, title = 'Copy this text') {
@@ -30,10 +35,10 @@ V.choose = () => {
   const quizBtn = !qn && !qi ? 'Start the quiz' : qDone ? 'See your results' : 'Continue the quiz';
   const day = isElectionDay();
   $('#main').innerHTML = sectionFrame('choose', 'choose', `
-    ${chooseHead('choose', 'Choose', 'Who agrees with you?', 'Four ways in, each looking through a different lens. None of them tells you how to vote, and they won’t always agree with each other. That’s normal, and the page below says why.')}
+    ${chooseHead('choose', 'Choose', 'Who agrees with you?', 'Four ways in, each looking through a different lens. None of them tells you how to vote, and they won’t always agree with each other. That’s normal; the note below says why.')}
     ${day ? `<div class="note note--warn">${ic('lock')}<div><b>Closed until 7pm today.</b> It’s election day, so the tools and your results are hidden until voting closes. Compare two parties stays open.</div></div>` : ''}
-    <div class="tools">
-      <a class="tool tool--lead" href="#/choose/${qDone ? 'results' : 'quiz'}">
+    <div class="tools tools--choose">
+      <a class="tool tool--lead" href="#/choose/${qDone ? 'results/quiz' : 'quiz'}">
         <span class="tool__k"><span class="badge badge--signal">The full check</span><span class="badge badge--outline">About 8 minutes</span></span>
         <svg class="tool__art" viewBox="0 0 120 96" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
           <path d="M10 22h100M10 48h100M10 74h100" opacity=".35"/>
@@ -70,19 +75,15 @@ V.choose = () => {
           <path d="M22 46c4 10 10 16 18 20M74 46c-4 10-10 16-18 20" stroke-dasharray="3 5"/></svg>
         <span class="tool__meta">Scores what you know, not what you think</span>
       </a>
-      <a class="tool" href="#/choose/compare">
-        <span class="tool__k"><span class="badge">Side by side</span></span>
-        <h2 class="tool__t h3">Compare two parties</h2><p class="tool__p">Big ideas, positions on ${(G().issues || []).length || 17} issues and who they’d work with, in two columns.</p>
-        <span class="tool__art" style="width:auto;height:auto;display:grid;place-items:center">${ic('swap', 'i--l')}</span>
-      </a>
     </div>
     <div class="rows">
-      <a class="rowlink" href="#/choose/results"><span class="rowlink__icon">${ic('list')}</span><div><div class="rowlink__title">Your results</div><div class="rowlink__sub">${qn || swn || cn ? [qn ? `Match: ${qn} of ${N} answered` : '', swn ? `Swipe: ${swn} cards` : '', cn ? `Compass: ${cn} of ${ci}` : ''].filter(Boolean).join(' · ') : 'Everything you’ve answered, in one place, with why the tools differ'}</div></div>${ic('chev')}</a>
+      ${chooseRow(`#/choose/results`, 'list', 'Your results', qn || swn || cn ? [qn ? `Match: ${qn} of ${N} answered` : '', swn ? `Swipe: ${swn} cards` : '', cn ? `Compass: ${cn} of ${ci}` : ''].filter(Boolean).join(' · ') : 'Everything you’ve answered, in one place, with why the tools differ')}
+      ${chooseRow('#/choose/compare', 'swap', 'Compare two parties', `Big ideas, positions on ${(G().issues || []).length || 17} issues and who they’d work with, side by side`)}
     </div>
-    <div class="split split--7-5">
-      <section class="stack" aria-labelledby="h-why">
-        <div class="shead"><h2 id="h-why">Why they give different answers</h2></div>
-        <p class="soft">Each tool asks about something different, so a party can be close to you on one and further away on another. Look at where they agree.</p>
+    <details class="disclose" id="why-differ">
+      <summary><h2 class="choose-sum">Why the tools give different answers</h2></summary>
+      <div class="disclose__body">
+        <p>Each tool asks about something different, so a party can be close to you on one and further away on another. Look at where they agree.</p>
         <div class="table-wrap"><table class="lens">
           <thead><tr><th>Tool</th><th>Asks about</th><th>Compares you with</th></tr></thead>
           <tbody>
@@ -92,58 +93,105 @@ V.choose = () => {
             <tr><td>Whose policy?</td><td>Who said what</td><td>Nobody. It scores knowledge only</td></tr>
           </tbody></table></div>
         <a class="more" href="#/about/page/guide/quiz-research.md">How each tool works, and how it could be wrong ${ic('chev', 'i--xs')}</a>
-      </section>
-      <aside class="stack">
-        <div class="note">${ic('lock')}<div><b>Closed on election day.</b> On Saturday 7 November these tools and your results are hidden until voting closes at 7pm, because the law limits anything that could influence votes on the day.</div></div>
-        <div class="note">${ic('shield')}<div><b>Your answers stay on this device.</b> Nothing is sent or stored by us. On <a href="#/choose/results">Your results</a> you can copy a code that restores your answers on another device.</div></div>
-      </aside>
-    </div>`);
+      </div>
+    </details>
+    <ul class="choose-notes">
+      <li>${ic('lock', 'i--s')}<span><b>Closed on election day.</b> On Saturday 7 November these tools and your results are hidden until voting closes at 7pm, because the law limits anything that could influence votes on the day.</span></li>
+      <li>${ic('shield', 'i--s')}<span><b>Your answers stay on this device.</b> Nothing is sent or stored by us. On <a href="#/choose/results/saved">Your saved answers</a> you can copy a code that restores your answers on another device.</span></li>
+    </ul>`);
 };
 
-/* ----- your results: every tool in one place ----- */
-// The router maps both #/choose/results and #/seats/results to the view name 'results', and Seats › Results
-// (56-results.js) also defines V.results. Once every file has run, V.results dispatches on the route.
-V.chooseResults = async () => {
-  const head = chooseHead('choose', 'Choose · Your results', 'Your results, in one place', 'Every tool you’ve used, side by side. They measure different things, so they won’t always agree; the note further down says why.');
-  if (isElectionDay()) { $('#main').innerHTML = sectionFrame('choose', 'choose/results', head + chooseLock()); return }
+/* ----- your results: a summary first, then one sub-view per tool ----- */
+// The router maps #/choose/results/<sub> to V.chooseResults(sub) (and both #/choose/results and #/seats/results to the view
+// name 'results'; Seats › Results (56-results.js) also defines V.results, which dispatches on the route).
+// sub: undefined = summary · 'quiz' · 'swipe' · 'compass' · 'saved' (export, restore, clear).
+const RES_TABS = [['', 'Summary'], ['quiz', 'Match'], ['swipe', 'Swipe'], ['compass', 'Compass']];
+V.chooseResults = async (sub) => {
+  sub = ['quiz', 'swipe', 'compass', 'saved'].includes(sub) ? sub : '';
+  const T1 = { '': ['Your results, in one place', 'Every tool you’ve used, in one short summary. They measure different things, so they won’t always agree; the note below says why.'],
+    quiz: ['Find your match: every party', ''], swipe: ['Policy swipe: your tally', ''], compass: ['Values compass: where you sit', ''],
+    saved: ['Your saved answers', 'Your answers are kept in this browser only. Copy the code to restore them on another device or browser; nothing is sent to us.'] }[sub];
+  const head = chooseHead('choose', 'Choose · Your results', T1[0], T1[1]);
+  const key = 'choose/results';
+  if (isElectionDay()) { $('#main').innerHTML = sectionFrame('choose', key, head + chooseLock()); return }
   if (!S.swipe) S.swipe = await getJSON('data/swipe.json').catch(() => []);
-  const Q = G().quiz2 || {}; const N = (Q.statements || []).length;
-  const sw = swipeState(); const swn = Object.values(sw.done || {}).filter(d => d.v !== 'skip').length;
+  const Q = G().quiz2 || {}; const N = (Q.statements || []).length; const qs = q2State(); qs.answers = qs.answers || {};
+  const qM = (Q.statements || []).filter(q => typeof qs.answers[q.id] === 'number').length;
+  const sw = swipeState(); const swd = Object.values(sw.done || {}); const swn = swd.filter(d => d.v !== 'skip').length;
   const C = G().compass || {}; const cs = compassState(); const cn = Object.keys(cs.answers || {}).length;
+  const tabs = `<nav class="seg choose-tabs" aria-label="Your results by tool">${RES_TABS.map(([k, l]) => `<a href="#/choose/results${k ? '/' + k : ''}"${k === sub ? ' aria-current="page"' : ''}>${l}</a>`).join('')}</nav>`;
   const empty = (t, p, href, btn) => `<div class="panel panel--sunk"><p><b>${t}</b></p><p class="small soft">${p}</p><a class="btn btn--s" href="${href}" style="justify-self:start">${btn} ${ic('chev', 'i--xs')}</a></div>`;
-  $('#main').innerHTML = sectionFrame('choose', 'choose/results', `${head}
-    <section class="stack stack--l" aria-labelledby="h-match" id="res-match"></section>
-    <section class="stack stack--l" aria-labelledby="h-swipe">
-      <div class="shead"><div class="shead__row"><h2 id="h-swipe">Policy swipe</h2><a class="more small" href="#/choose/swipe">${swn ? 'Keep swiping' : 'Start swiping'} ${ic('chev', 'i--xs')}</a></div></div>
-      ${swn ? `<div class="split split--7-5"><div class="stack" id="res-tally">${swipeTallyHTML(sw)}</div><div class="stack">${swipeLikedHTML(sw)}${chooseUnknowns(['The tally only covers the cards you happened to see, so a party you saw twice can swing from 0% to 100%.', 'A specific promise can look very different from a party’s overall direction.', 'Skipped cards are left out.'], null)}</div></div>`
+  const savedRow = chooseRow('#/choose/results/saved', 'download', 'Your saved answers', 'Copy a code to move them to another device, restore one, or clear them');
+  const frame = html => { $('#main').innerHTML = sectionFrame('choose', key, `${head}${sub === 'saved' ? '' : tabs}${html}${RESULT_DISCLAIMER}`) };
+  const tool = (id, title, href, hrefLabel, body) => `<section class="stack choose-res" aria-labelledby="h-${id}"><div class="shead"><div class="shead__row"><h2 id="h-${id}" class="h3">${title}</h2><a class="more small" href="${href}">${hrefLabel} ${ic('chev', 'i--xs')}</a></div></div>${body}</section>`;
+
+  if (sub === 'quiz') {
+    frame(`<section class="stack stack--l" aria-labelledby="h-match" id="res-match"></section><div class="rows">${savedRow}</div>`);
+    const box = $('#res-match');
+    if (N) renderMatchResults(box, Q); else box.innerHTML = `<div class="shead"><h2 id="h-match">Find your match</h2></div><p class="soft">The quiz is being rebuilt on a published method. Check back soon.</p>`;
+    return }
+  if (sub === 'swipe') {
+    frame(`<section class="stack stack--l" aria-labelledby="h-swipe">
+      <div class="shead"><div class="shead__row"><h2 id="h-swipe">Every party you’ve seen cards from</h2><a class="more small" href="#/choose/swipe">${swn ? 'Keep swiping' : 'Start swiping'} ${ic('chev', 'i--xs')}</a></div></div>
+      ${swn ? `<div class="split split--7-5"><div class="stack" id="res-tally">${swipeTallyHTML(sw)}</div><div class="stack">${swipeLikedHTML(sw, true)}${chooseUnknowns(['The tally only covers the cards you happened to see, so a party you saw twice can swing from 0% to 100%.', 'A specific promise can look very different from a party’s overall direction.', 'Skipped cards are left out.'], ['How the swipe works', 'guide/quiz-research.md'])}</div></div>`
         : empty('No cards swiped yet.', 'Real 2026 policies, one at a time, with the party hidden until you decide.', '#/choose/swipe', 'Try Policy swipe')}
+    </section><div class="rows">${savedRow}</div>`);
+    return }
+  if (sub === 'compass') {
+    frame(`<section class="stack stack--l" aria-labelledby="h-compass">
+      <div class="shead"><div class="shead__row"><h2 id="h-compass">Your values next to the parties</h2><a class="more small" href="#/choose/compass${cn ? '/results' : ''}">${cn ? 'Full compass results' : 'Start the compass'} ${ic('chev', 'i--xs')}</a></div></div>
+      ${cn ? compassSummaryHTML(cs, true) : empty('Not started.', 'General questions about values from academic surveys, with nothing about this year’s parties or policies.', '#/choose/compass', 'Try the Values compass')}
     </section>
-    <section class="stack stack--l" aria-labelledby="h-compass">
-      <div class="shead"><div class="shead__row"><h2 id="h-compass">Values compass</h2><a class="more small" href="#/choose/compass${cn ? '/results' : ''}">${cn ? 'Full compass results' : 'Start the compass'} ${ic('chev', 'i--xs')}</a></div></div>
-      ${cn ? compassSummaryHTML(cs) : empty('Not started.', 'General questions about values from academic surveys, with nothing about this year’s parties or policies.', '#/choose/compass', 'Try the Values compass')}
-    </section>
-    <section class="stack" aria-labelledby="h-differ">
-      <div class="callout callout--signal"><h2 id="h-differ" class="h3">Why they differ</h2>
-        <p class="soft">The quiz compares you with each party’s recorded position on broad statements; the swipe counts how often you liked specific promises from the cards you happened to get; the compass places your general values next to where experts and our coders put the parties. A party can be close on one and far on another. Where they agree is the more solid signal; where they don’t, read that party’s page.</p>
-        <a class="more small" href="#/choose">Compare the four lenses ${ic('chev', 'i--xs')}</a></div>
-    </section>
-    <section class="stack" aria-labelledby="h-saved">
-      <div class="shead shead--quiet"><h2 id="h-saved" class="h3">Your saved answers</h2></div>
-      <p class="small soft">Your answers are kept in this browser only. Copy the code to restore them on another device or browser; nothing is sent to us.</p>
+    <div class="rows">${cn ? chooseRow('#/choose/compass/results', 'compass', 'Full compass results', 'Switch how parties are placed, the populism measure and how this could be wrong') : ''}${savedRow}</div>`);
+    return }
+  if (sub === 'saved') {
+    frame(`<section class="stack" aria-labelledby="h-saved">
+      <div class="shead shead--quiet"><h2 id="h-saved" class="h3">Move your answers</h2></div>
       <div class="row"><button class="btn btn--s" type="button" id="exp">${ic('share', 'i--xs')} Copy my answers code</button><span class="small muted" id="expmsg" role="status"></span></div>
       <div class="field"><label class="field__label" for="impcode">Restore from a code</label><textarea class="input choose-ta" id="impcode" rows="3" placeholder="Paste a code here"></textarea></div>
       <div class="row"><button class="btn btn--s" type="button" id="imp">Restore</button></div>
-      <div class="row" style="margin-top:var(--s-3)"><span class="micro muted">Clear:</span><button class="btn btn--s btn--quiet" type="button" data-reset="quiz2">Match answers</button><button class="btn btn--s btn--quiet" type="button" data-reset="swipe">Swipe cards</button><button class="btn btn--s btn--quiet" type="button" data-reset="compass">Compass answers</button><button class="btn btn--s btn--quiet" type="button" data-reset="game">Game in progress</button></div>
     </section>
-    ${RESULT_DISCLAIMER}`);
-  const box = $('#res-match');
-  if (N) renderMatchResults(box, Q); else box.innerHTML = `<div class="shead"><h2 id="h-match">Find your match</h2></div><p class="soft">The quiz is being rebuilt on a published method. Check back soon.</p>`;
-  $('#exp').onclick = async () => { const code = exportSaved(); try { await navigator.clipboard.writeText(code); $('#expmsg').textContent = 'Copied. Paste it into this box on your other device.' } catch { $('#impcode').value = code; $('#impcode').select(); $('#expmsg').textContent = 'Select the code in the box and copy it.' } };
-  $('#imp').onclick = () => { try { importSaved($('#impcode').value); chooseToast('Restored. Your saved answers are back.'); V.chooseResults() } catch { $('#expmsg').textContent = 'That code didn’t work. Check it was copied in full.' } };
-  $('#main').querySelectorAll('[data-reset]').forEach(b => b.onclick = () => { const k = b.dataset.reset; const label = b.textContent.trim().toLowerCase();
-    if (!confirm(`Clear your ${label} from this device? This can't be undone.`)) return;
-    if (k === 'quiz2') { const st = q2State(); store.set('quiz2', JSON.stringify({ seed: st.seed })) } else if (k === 'swipe') { const st = swipeState(); store.set('swipe', JSON.stringify({ topic: st.topic || '' })) } else if (k === 'compass') { const st = compassState(); store.set('compass', JSON.stringify({ source: st.source })) } else store.set(k, 'null');
-    chooseToast('Cleared.'); V.chooseResults() });
+    <section class="stack" aria-labelledby="h-clear">
+      <div class="shead shead--quiet"><h2 id="h-clear" class="h3">Clear from this device</h2></div>
+      <div class="row" role="group" aria-labelledby="h-clear"><button class="btn btn--s btn--quiet" type="button" data-reset="quiz2">Match answers</button><button class="btn btn--s btn--quiet" type="button" data-reset="swipe">Swipe cards</button><button class="btn btn--s btn--quiet" type="button" data-reset="compass">Compass answers</button><button class="btn btn--s btn--quiet" type="button" data-reset="game">Game in progress</button></div>
+    </section>
+    <a class="more small" href="#/choose/results">Back to your results ${ic('chev', 'i--xs')}</a>`);
+    $('#exp').onclick = async () => { const code = exportSaved(); try { await navigator.clipboard.writeText(code); $('#expmsg').textContent = 'Copied. Paste it into this box on your other device.' } catch { $('#impcode').value = code; $('#impcode').select(); $('#expmsg').textContent = 'Select the code in the box and copy it.' } };
+    $('#imp').onclick = () => { try { importSaved($('#impcode').value); chooseToast('Restored. Your saved answers are back.'); V.chooseResults('saved') } catch { $('#expmsg').textContent = 'That code didn’t work. Check it was copied in full.' } };
+    $('#main').querySelectorAll('[data-reset]').forEach(b => b.onclick = () => { const k = b.dataset.reset; const label = b.textContent.trim().toLowerCase();
+      if (!confirm(`Clear your ${label} from this device? This can't be undone.`)) return;
+      if (k === 'quiz2') { const st = q2State(); store.set('quiz2', JSON.stringify({ seed: st.seed })) } else if (k === 'swipe') { const st = swipeState(); store.set('swipe', JSON.stringify({ topic: st.topic || '' })) } else if (k === 'compass') { const st = compassState(); store.set('compass', JSON.stringify({ source: st.source })) } else store.set(k, 'null');
+      chooseToast('Cleared.'); V.chooseResults('saved') });
+    return }
+
+  // Summary: one compact block per tool.
+  let quizBody;
+  if (!N) quizBody = '<p class="soft">The quiz is being rebuilt on a published method. Check back soon.</p>';
+  else if (!qM) quizBody = empty('No answers yet.', `${N} statements on six themes, written without party names. About 8 minutes.`, '#/choose/quiz', 'Start the quiz');
+  else { const R = q2Results(Q, qs); const cnt = k => R.filter(r => r.bucket === k).length;
+    quizBody = `<p class="soft">You answered <b>${qM} of ${N}</b> statements. All ${R.length} parties were checked against your answers; here is how many fall in each band.</p>
+      <ul class="choose-counts" aria-label="Parties in each band">${['strong', 'moderate', 'weak', 'thin'].map(k => `<li><span class="bucket bucket--${k}">${BUCKET[k]}</span><b class="num">${cnt(k)}</b><span class="micro muted">part${cnt(k) === 1 ? 'y' : 'ies'}</span></li>`).join('')}</ul>
+      <div class="rows">${chooseRow('#/choose/results/quiz', 'list', `See all ${R.length} parties, A–Z`, 'Each party’s likely range, how many of your answers it covers, the theme map and the evidence')}</div>` }
+  const agreed = swd.filter(d => d.v === 'agree').length, disagreed = swd.filter(d => d.v === 'disagree').length, unsure = swd.filter(d => d.v === 'skip').length;
+  const seenP = new Set(swd.filter(d => d.v !== 'skip').map(d => d.party)).size;
+  const swipeBody = swn ? `<p class="soft">You decided on <b>${swn}</b> card${swn === 1 ? '' : 's'} from ${seenP} of ${chooseParties().length} parties.</p>
+      <ul class="choose-counts" aria-label="Your swipes"><li><span class="badge badge--ink">${ic('check', 'i--xs')} Agreed</span><b class="num">${agreed}</b></li><li><span class="badge">${ic('x', 'i--xs')} Disagreed</span><b class="num">${disagreed}</b></li><li><span class="badge badge--outline">${ic('minus', 'i--xs')} Not sure</span><b class="num">${unsure}</b></li></ul>
+      <div class="rows">${chooseRow('#/choose/results/swipe', 'cards', 'See your tally by party', `Agreement with each party, A–Z${agreed ? `, and the ${agreed} polic${agreed === 1 ? 'y' : 'ies'} you agreed with` : ''}`)}</div>`
+    : empty('No cards swiped yet.', 'Real 2026 policies, one at a time, with the party hidden until you decide.', '#/choose/swipe', 'Try Policy swipe');
+  const me = compassMe(C, cs.answers || {});
+  const compassBody = cn ? `<p class="soft">${compassSentence(me)}</p><p class="micro muted">${cn} of ${(C.items || []).length} answered.</p>
+      <div class="rows">${chooseRow('#/choose/results/compass', 'compass', 'See the plot', 'You as a range, with the parties on the same two axes, and the same as a table')}</div>`
+    : empty('Not started.', 'General questions about values from academic surveys, with nothing about this year’s parties or policies.', '#/choose/compass', 'Try the Values compass');
+  frame(`
+    <div class="choose-sumgrid">
+      ${tool('match', 'Find your match', qM ? '#/choose/quiz/start' : '#/choose/quiz', qM ? 'Change answers' : 'Start', quizBody)}
+      ${tool('swipe', 'Policy swipe', '#/choose/swipe', swn ? 'Keep swiping' : 'Start swiping', swipeBody)}
+      ${tool('compass', 'Values compass', `#/choose/compass${cn ? '/results' : ''}`, cn ? 'Full results' : 'Start', compassBody)}
+    </div>
+    <details class="disclose" id="res-differ"><summary><h2 class="choose-sum">Why they differ</h2></summary><div class="disclose__body">
+      <p>The quiz compares you with each party’s recorded position on broad statements; the swipe counts how often you liked specific promises from the cards you happened to get; the compass places your general values next to where experts and our coders put the parties. A party can be close on one and far on another. Where they agree is the more solid signal; where they don’t, read that party’s page.</p>
+      <a class="more small" href="#/choose">Compare the four lenses ${ic('chev', 'i--xs')}</a></div></details>
+    <div class="rows">${savedRow}</div>`);
 };
 
 /* ----- compare two parties ----- */
@@ -163,13 +211,21 @@ V.compare = (arg) => {
       const path = 'choose/compare' + (pick.length === 2 ? '/' + chooseAZ(pick).join('-vs-') : pick.length === 1 ? '/' + pick[0] : '');
       S.route = path; try { history.replaceState(history.state, '', '#/' + path) } catch {}
       const y = scrollY; draw(); scrollTo(0, y) });
+    if (two) cmpDisclose();
   };
   draw();
 };
+// Field pairs open on wide screens and closed on phones; one button opens or closes them all.
+function cmpDisclose() { const ds = [...$('#main').querySelectorAll('[data-cmpd]')]; const btn = $('#cmp-all'); if (!ds.length || !btn) return;
+  const wide = matchMedia('(min-width: 720px)').matches; ds.forEach(d => d.open = wide);
+  const sync = () => { const all = ds.every(d => d.open); btn.textContent = all ? 'Close all' : 'Open all'; btn.setAttribute('aria-expanded', all) };
+  ds.forEach(d => d.addEventListener('toggle', sync)); btn.onclick = () => { const open = !ds.every(d => d.open); ds.forEach(d => d.open = open); sync() }; sync() }
 function compareBody(a, b) {
   const ga = guideParty(a) || {}, gb = guideParty(b) || {};
   const cell = (s, html) => `<div class="cmp__cell" style="--pc:${pcolor(s)}"><span class="ptag ptag--s"><span class="sw"></span>${esc(pname(s))}</span>${html}</div>`;
-  const pair = (title, fa, fb, id) => `<section class="stack" aria-labelledby="cmp-${id}"><div class="shead"><h2 id="cmp-${id}" class="h3">${title}</h2></div><div class="cmp__pair">${cell(a, fa(ga, a))}${cell(b, fb ? fb(gb, b) : fa(gb, b))}</div></section>`;
+  // One .disclose per field pair; cmpDisclose() opens them all on wide screens, closed on phones.
+  const fold = (h, id, t, body) => `<details class="disclose cmp__d" data-cmpd><summary><${h} id="cmp-${id}" class="choose-sum">${t}</${h}></summary><div class="disclose__body">${body}</div></details>`;
+  const pair = (t, fa, fb, id) => fold('h2', id, t, `<div class="cmp__pair">${cell(a, fa(ga, a))}${cell(b, fb ? fb(gb, b) : fa(gb, b))}</div>`);
   const none = '<p class="small muted">Not recorded.</p>';
   const nutshell = g => g.in_a_nutshell ? `<p>${esc(g.in_a_nutshell)}</p>${chooseSrc(g.sources)}` : none;
   const ideas = (g, s) => (g.big_ideas || []).length ? `<ol class="ideas">${g.big_ideas.map(x => `<li><div><span style="font-weight:600">${esc(T(x))}</span>${(x.policy_ids || []).length ? `<span class="micro muted">${x.policy_ids.length} polic${x.policy_ids.length === 1 ? 'y' : 'ies'}</span>` : ''}</div></li>`).join('')}</ol><a class="more small" href="#/parties/${esc(s)}/policies">All ${esc(pname(s))} policies ${ic('chev', 'i--xs')}</a>` : none;
@@ -184,15 +240,18 @@ function compareBody(a, b) {
   const both = iss.filter(i => (i.positions || {})[a] && (i.positions || {})[b]);
   const one = iss.filter(i => !both.includes(i) && ((i.positions || {})[a] || (i.positions || {})[b]));
   const pos = (i, s) => { const p = i.positions[s]; return `<p class="small">${esc(T(p))}</p>${chooseSrc(srcOf(p))}` };
-  return `<div class="cmp stack stack--xl">
+  return `<div class="cmp stack stack--l">
+    <div class="row row--between choose-cmpbar"><span class="micro muted">Tap a heading to open it.</span><button class="btn btn--s btn--quiet" type="button" id="cmp-all">Open all</button></div>
     <div class="cmp__pair cmp__heads" aria-hidden="true">${[a, b].map(s => `<div class="cmp__cell" style="--pc:${pcolor(s)}"><span class="h4">${esc(pname(s))}</span><span class="micro muted">${esc((guideParty(s) || {}).name || P(s).name || '')}</span></div>`).join('')}</div>
+    <div id="cmp-fields">
     ${pair('In a nutshell', nutshell, null, 'nut')}
     ${pair('Big ideas', ideas, null, 'ideas')}
     ${pair('Who they’d work with', works, null, 'works')}
     ${pair('Costed?', costed, null, 'cost')}
     ${pair('Two sides', sides, null, 'sides')}
-    <section class="stack" aria-labelledby="cmp-iss"><div class="shead"><div class="shead__row"><h2 id="cmp-iss" class="h3">Where they stand on the issues</h2><span class="micro muted">${both.length} issue${both.length === 1 ? '' : 's'} where both have a position · A–Z</span></div></div>
-      ${both.length ? both.map(i => `<div class="stack stack--s"><div class="shead shead--quiet"><div class="shead__row"><h3 class="h4">${esc(i.title)}</h3><a class="more small" href="#/parties/issues/${esc(i.slug)}">All parties ${ic('chev', 'i--xs')}</a></div></div><div class="cmp__pair">${cell(a, pos(i, a))}${cell(b, pos(i, b))}</div></div>`).join('') : '<p class="small muted">No issue where both parties have a recorded position.</p>'}
+    </div>
+    <section class="stack stack--s" aria-labelledby="cmp-iss"><div class="shead"><div class="shead__row"><h2 id="cmp-iss" class="h3">Where they stand on the issues</h2><span class="micro muted">${both.length} issue${both.length === 1 ? '' : 's'} where both have a position · A–Z</span></div></div>
+      <div>${both.length ? both.map(i => fold('h3', 'i-' + i.slug, esc(i.title), `<div class="cmp__pair">${cell(a, pos(i, a))}${cell(b, pos(i, b))}</div><a class="more small" href="#/parties/issues/${esc(i.slug)}">${esc(i.title)}: all parties ${ic('chev', 'i--xs')}</a>`)).join('') : '<p class="small muted">No issue where both parties have a recorded position.</p>'}</div>
       ${one.length ? `<p class="small soft">Only one of the two has a recorded position on: ${one.map(i => `<a href="#/parties/issues/${esc(i.slug)}">${esc(i.title)}</a>`).join(', ')}.</p>` : ''}
     </section>
     <div class="row"><a class="btn btn--s" href="#/parties/${esc(a)}">${esc(pname(a))} party page</a><a class="btn btn--s" href="#/parties/${esc(b)}">${esc(pname(b))} party page</a></div>

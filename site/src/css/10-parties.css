@@ -53,3 +53,42 @@ a.pchip { color: var(--text) } a.pchip:not(.pchip--no) { text-decoration: none }
 .party-body .prose, .sheet .prose { overflow-wrap: anywhere; min-width: 0 }
 .party-body .prose table, .sheet .prose table { display: block; max-width: 100%; overflow-x: auto }
 .party-body .prose pre, .sheet .prose pre { max-width: 100%; overflow-x: auto; white-space: pre-wrap }
+
+/* ---------- Round 2: digestible pages + accessibility ---------- */
+/* Party tabs are route links: the current one carries aria-current="page" */
+.ptabs a[aria-current="page"] { color: var(--text) }
+.ptabs a[aria-current="page"]::after { content: ""; position: absolute; left: 14px; right: 14px; bottom: -1px; height: 3px; background: var(--signal); border-radius: 3px 3px 0 0 }
+/* Rows that open a sheet are buttons styled as rows */
+.ov-row { background: none; border: 0; border-bottom: 1px solid var(--line); width: 100%; text-align: left; font: inherit; color: var(--text); cursor: pointer }
+button.more { background: none; border: 0; border-bottom: 2px solid var(--link-underline); padding: 0 0 1px; font: inherit; font-weight: 700; color: var(--text); cursor: pointer }
+.party-layout__main .ideas + .more { margin-top: var(--s-2) }
+/* Source lines on policy rows: links far enough apart to tap (WCAG 2.5.8) */
+.pol .src a, .pol .src .linkbtn, .positions .src a { display: inline-flex; align-items: center; min-height: 24px }
+/* "All N on this topic" fold inside a party column */
+.disclose--more { border-bottom: 0; border-top: 1px solid var(--line) }
+.disclose--more > summary { font-size: var(--t-small); padding: var(--s-3) 0 }
+/* People: search and filters as one compact row on wider screens; letter rail on every width */
+@media (min-width: 720px) { .people-tools { grid-template-columns: minmax(200px, 300px) minmax(0, 1fr); align-items: center } }
+.chip--menu.is-on { background: var(--signal-soft); border-color: var(--signal) }
+.chips__sep { flex: none; width: 1px; align-self: stretch; margin-inline: 2px; background: var(--line) }
+.alpha--all { display: flex; flex-wrap: nowrap; gap: 2px; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--gutter-l)) calc(-1 * var(--gutter-r)); padding-inline: var(--gutter-l) var(--gutter-r) }
+.alpha--all::-webkit-scrollbar { display: none }
+.alpha--all a { flex: none; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 6px; text-decoration: none; font: 700 13px/1 var(--font-body); color: var(--text-2) }
+.alpha--all a:hover { background: var(--sunk) }
+.alpha--all span { flex: none }
+@media (min-width: 1024px) { .alpha--all { flex-wrap: wrap; overflow: visible; margin: 0; padding: 0 } }
+.letter:focus { outline: none } .letter:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px }
+/* Person sheet: header, then folds */
+.person-blocks { display: grid; border-top: 1px solid var(--line) }
+/* Promises grouped by verdict */
+.promise-groups { display: grid; border-top: 1px solid var(--line) }
+.promise-groups .promises .promise:first-child { padding-top: 0 }
+/* Tables: a visible caption */
+.table caption { caption-side: top; text-align: left; padding: 0 0 var(--s-2); font-size: var(--t-small); color: var(--text-2) }
+.table th[scope="row"] { font-weight: 400; text-align: left }
+/* Newsroom: party filter links as chips; the folds after the three-per-party grid */
+.chip[aria-current="page"] { background: var(--signal-soft); border-color: var(--signal) }
+.news-more { display: grid; border-top: 1px solid var(--line) }
+.news-fold > summary .badge { margin-left: 8px; vertical-align: middle }
+/* Selected state is never colour alone: the same tick as a pressed chip */
+.chip[aria-current="page"]::before, .chip--menu.is-on::before { content: ""; width: 12px; height: 7px; margin-right: 1px; border-left: 2.2px solid var(--signal-text); border-bottom: 2.2px solid var(--signal-text); transform: translateY(-2px) rotate(-45deg) }

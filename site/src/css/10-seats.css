@@ -72,3 +72,20 @@
 /* Inset labels sit on a surface chip so they read over any party fill */
 .insets .inset > span { z-index: 1; background: var(--surface); color: var(--text); padding: 2px 6px; border-radius: var(--r-xs) }
 .chart .avg, .chart .elx, .chart .end, .chart .thr, .chart .eday, .chart text { pointer-events: none }
+
+/* Round 2: digestible pages */
+/* Polls & forecast sub-view switch (links in a .seg): the current page reads as selected */
+.pollnav [aria-current="page"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 2px var(--shadow-tint), inset 0 0 0 1px var(--line) }
+.pollnav { max-width: 100% }
+/* "On this page" rows that are buttons (jump to a heading) */
+button.rowlink { width: 100%; background: none; border: 0; border-bottom: 1px solid var(--line); font: inherit; text-align: left; cursor: pointer }
+/* Map: on phones the seat sheet appears only once a seat is tapped */
+@media (max-width: 1023px) { .seatsheet--idle { display: none } }
+/* Focusable scrolling tables show where focus is */
+.table-wrap[tabindex]:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px }
+/* Hemicycle seats are buttons: a visible focus ring that doesn't rely on colour alone */
+.hemi circle[role="button"]:focus-visible { stroke: var(--focus); stroke-width: 3 }
+.calc__head label { display: inline-flex; cursor: pointer }
+@media (prefers-reduced-motion: reduce) { .cbar > i { transition: none } }
+/* sr-only text inside sideways-scrolling rows must be clipped by the row, not escape to widen the page */
+.table-wrap[tabindex], #pp-pollsters, #pp-parties { position: relative }

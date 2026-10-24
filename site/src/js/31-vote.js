@@ -1,12 +1,15 @@
-/* ===== Vote: Ready to vote · Make a plan · How MMP works · Glossary · What specials could change (mockups/vote.html) =====
+/* ===== Vote: Ready to vote · Key dates · Make a plan · How MMP works · Glossary · What specials could change (mockups/vote.html) =====
    Everything about *how* to vote links to vote.nz; this guide must never look official. */
 const OFFICIAL_LINE = `<p class="note">${ic('info', 'i--s')}<span>Official information comes from the Electoral Commission: <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or 0800 36 76 56 (free, 24 hours). Ballot Book NZ is an independent guide, not the Commission.</span></p>`;
 const voteFoot = () => `<div class="stack stack--s">${OFFICIAL_LINE}<div class="micro notec">${NOT_EC}</div></div>`;
 const voteHead = (eyebrow, h1, lede) => `<header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('vote', 'i--s')} Vote${eyebrow ? ' · ' + esc(eyebrow) : ''}</p><h1>${h1}</h1>${lede ? `<p class="lede">${lede}</p>` : ''}</header>`;
 const vExt = (href, label, cls = 'btn btn--s') => `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener">${label} ${ic('ext', 'i--xs ext')}</a>`;
 
+const rowbtn = (attrs, icon, title, sub) => `<button class="rowlink" type="button" aria-haspopup="dialog" ${attrs}><span class="rowlink__icon">${ic(icon)}</span><span><span class="rowlink__title">${title}</span><span class="rowlink__sub" style="display:block">${sub}</span></span>${ic('chev')}</button>`;
+const contactLabel = k => k.replace(/_/g, ' ').replace(/^\w/, c => c.toUpperCase());
+
 V.vote = async sub => {
-  const views = { plan: votePlan, mmp: voteMMP, glossary: voteGlossary, specials: voteSpecials };
+  const views = { plan: votePlan, mmp: voteMMP, glossary: voteGlossary, specials: voteSpecials, dates: voteDates };
   const fn = views[sub] || voteReady; const key = views[sub] ? 'vote/' + sub : 'vote';
   $('#main').innerHTML = sectionFrame('vote', key, `<div class="stack stack--xl" id="vote-body"></div>`);
   fn($('#vote-body'));
@@ -48,45 +51,66 @@ function voteReady(root) {
       <span class="check__t">${esc(c.step)}${i === 1 && ph === 'enrol' ? ` <span class="deadline">${toE > 1 ? `${toE} days left` : toE === 1 ? '1 day left' : 'Closes tonight'}</span>` : ''}</span>
       <p class="check__d">${esc(c.done_when)}</p>${actions(c, i)}</li>`;
   const progress = () => { const n = core.filter((_, i) => st[i]).length; return `<b>${n} of ${core.length} done</b><div class="bar"><i style="--w:${core.length ? n / core.length * 100 : 0}%"></i></div>` };
-  const secHTML = (sec, j) => `<details class="disclose"${(sit !== 'basics' && j === 0) || (sit === 'basics' && ((sec.id === 'enrol' && ph === 'enrol') || (sec.id === 'when-where' && ph !== 'enrol'))) ? ' open' : ''}><summary>${esc(sec.title.replace(/^\d+\.\s*/, ''))}</summary><div class="disclose__body">
+  const secHTML = sec => `<details class="disclose"><summary>${esc(sec.title.replace(/^\d+\.\s*/, ''))}</summary><div class="disclose__body">
       <ol class="vsteps">${(sec.steps || []).map(x => `<li><p>${esc(x.text)}${x.date ? ` <span class="badge">${esc(x.date)}</span>` : ''}</p>${x.url ? `<p class="src">${ic('doc')} ${extA(x.url, esc((x.source || 'Source').split(',')[0]))}</p>` : ''}</li>`).join('')}</ol>
       ${(sec.notes || []).length ? `<ul class="small muted vnotes">${sec.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}</div></details>`;
   const personaHTML = () => { const shown = sitSections(secs, sit);
     return `<div class="persona" role="group" aria-label="Your situation">${VOTE_SIT.map(([k, l, s]) => `<button type="button" data-sit="${k}" aria-pressed="${k === sit}">${esc(l)}<span>${esc(k === 'moved' && ph !== 'enrol' ? 'Where you’re enrolled' : s)}</span></button>`).join('')}</div>
       <div class="stack stack--s" id="sit-out"><p class="small muted">${shown.length} part${shown.length === 1 ? '' : 's'} of the official guidance, in plain words, with a link to the source for every step.</p><div>${shown.map(secHTML).join('')}</div></div>` };
-  const kd = (H.key_dates || []).filter(d => d.date >= nzToday().iso).slice(0, 6);
-  const contacts = Object.entries(H.contacts || {}).filter(([k, v]) => typeof v === 'string').slice(0, 5);
-  const vp = H.voting_places || {};
+  const kd = (H.key_dates || []).filter(d => d.date >= nzToday().iso); const next = kd[0];
+  const contacts = Object.entries(H.contacts || {}).filter(([k, v]) => typeof v === 'string');
+  const vp = H.voting_places || {}; const anyExtra = extra.some((_, j) => st[j + 5]);
   root.innerHTML = `${voteHead('Ready to vote', `Ready to vote in ${core.length === 5 ? 'five' : core.length} ticks.`, 'Most people need about five minutes. There’s nothing to bring and no ID to show. Your ticks are saved on this device, nowhere else.')}
     <div class="callout callout--signal"><p>${top}</p></div>
     <div class="split split--7-5">
       <section class="stack" aria-labelledby="h-check">
         <h2 id="h-check" class="sr-only">Checklist</h2>
-        <div class="progress-line" id="vprog">${progress()}</div>
+        <div class="progress-line" id="vprog" aria-live="polite">${progress()}</div>
         <ol class="checklist">${core.map(checkLi).join('')}</ol>
-        ${extra.length ? `<div class="shead shead--quiet"><h3 class="h4">If it applies to you</h3></div><ol class="checklist">${extra.map((c, j) => checkLi(c, j + 5)).join('')}</ol>` : ''}
+        ${extra.length ? `<details class="disclose"${anyExtra ? ' open' : ''}><summary>If it applies to you: ${extra.length} more tick${extra.length === 1 ? '' : 's'}</summary><div class="disclose__body"><ol class="checklist">${extra.map((c, j) => checkLi(c, j + 5)).join('')}</ol></div></details>` : ''}
       </section>
-      <aside class="stack" aria-labelledby="h-who">
+      <section class="stack" aria-labelledby="h-who">
         <div class="panel">
-          <h2 id="h-who" class="h3">Which of these are you?</h2>
+          <div class="stack stack--s"><h2 id="h-who" class="h3">Which of these are you?</h2><p class="small muted">Pick one to see the steps that apply to you. Each opens with a link to its official source.</p></div>
           <div id="persona">${personaHTML()}</div>
         </div>
-      </aside>
+      </section>
     </div>
-    <div class="cols cols--3">
-      <section class="stack stack--s" aria-labelledby="h-vp"><div class="shead shead--quiet"><h2 id="h-vp" class="h4">Find a voting place</h2></div>
-        <p class="small soft">The official finder shows every voting place with its days and hours, and lets you filter for wheelchair access. Hours vary during advance voting; on election day every place is open 9am–7pm. You can vote at any voting place in New Zealand.</p>
-        <div class="row">${vExt(vp.official_finder || 'https://map.vote.nz', 'Open the official finder', 'btn btn--s btn--ink')}${vExt(vp.official_finder_list_view || 'https://vote.nz', 'List view', 'btn btn--s btn--quiet')}</div></section>
-      <section class="stack stack--s" aria-labelledby="h-kd"><div class="shead shead--quiet"><h2 id="h-kd" class="h4">Key dates</h2></div>
-        ${kd.length ? `<ul class="vdates">${kd.map(d => `<li${d.date === '2026-11-07' ? ' class="is-eday"' : ''}><span class="num">${shortDate(d.date)}</span><span class="small">${esc(d.event)}${d.source ? ` ${extA(d.source, 'source', 'micro muted')}` : ''}</span></li>`).join('')}</ul>` : '<p class="small muted">All the key dates have passed.</p>'}</section>
-      <section class="stack stack--s" aria-labelledby="h-help"><div class="shead shead--quiet"><h2 id="h-help" class="h4">Need a hand?</h2></div>
-        <dl class="dl vhelp">${contacts.map(([k, v]) => `<dt>${esc(k.replace(/_/g, ' ').replace(/^\w/, c => c.toUpperCase()))}</dt><dd>${esc(v)}</dd>`).join('')}</dl></section>
-    </div>
-    <p class="src">${ic('shield')} Checked ${esc(H.as_of || '')} against vote.nz, elections.nz and the Electoral Act 1993. Every step links to its source.${(H.could_not_verify || []).length ? ` <button class="linkbtn" type="button" data-page="guide/how-to-vote.md">Full guide, and what we couldn’t verify</button>` : ''}</p>
+    <section class="stack" aria-labelledby="h-next">
+      <div class="shead"><h2 id="h-next">Next steps</h2></div>
+      <div class="rows">
+        ${rowbtn('data-vsheet="places"', 'map', 'Find a voting place', 'Any voting place in New Zealand. Hours vary during advance voting.')}
+        ${rowlink('#/vote/dates', 'clock', 'Key dates', next ? `Next: ${shortDate(next.date)}, ${esc(next.event.replace(/\s*\(.*?\)/g, '').split(/[.;]/)[0].replace(/^[A-Z ]{6,}\b/, m => m.charAt(0) + m.slice(1).toLowerCase()))}` : 'Every date in the 2026 election, and what it means.')}
+        ${ph === 'results' || ph === 'after' ? '' : rowlink('#/vote/plan', 'caladd', 'Make a plan', 'Pick a day, a time and a place. Add it to your calendar.')}
+        ${contacts.length ? rowbtn('data-vsheet="help"', 'phone', 'Need a hand?', 'Free phone, text, email and post contacts at the Electoral Commission.') : ''}
+        ${(H.could_not_verify || []).length ? rowbtn('data-page="guide/how-to-vote.md"', 'book', 'The full guide', 'Every step in one page, and what we couldn’t verify.') : ''}
+      </div>
+    </section>
+    <p class="src">${ic('shield')} Checked ${esc(H.as_of || '')} against vote.nz, elections.nz and the Electoral Act 1993. Every step links to its source.</p>
     ${voteFoot()}`;
   root.querySelectorAll('[data-ck]').forEach(c => c.onchange = () => { st[c.dataset.ck] = c.checked; store.set('votecheck', JSON.stringify(st)); c.closest('.check').classList.toggle('is-done', c.checked); $('#vprog').innerHTML = progress() });
   $('#persona').addEventListener('click', e => { const b = e.target.closest('[data-sit]'); if (!b) return; sit = b.dataset.sit; store.set('votesit', sit);
     $('#persona').innerHTML = personaHTML(); const nb = $(`#persona [data-sit="${sit}"]`); if (nb) nb.focus({ preventScroll: true }) });
+  root.addEventListener('click', e => { const b = e.target.closest('[data-vsheet]'); if (!b) return;
+    if (b.dataset.vsheet === 'places') openSheet({ title: 'Find a voting place', depth: ['Ready to vote', 'Voting places'], at: 1, src: `From vote.nz, checked ${esc(H.as_of || '')}. Hours and places can change, so check the official finder before you go.`,
+      html: `<p class="soft">The official finder shows every voting place with its days and hours, and lets you filter for wheelchair access. Hours vary during advance voting; on election day every place is open 9am–7pm. You can vote at any voting place in New Zealand.</p>
+        <div class="row">${vExt(vp.official_finder || 'https://map.vote.nz', 'Open the official finder', 'btn btn--s btn--ink')}${vExt(vp.official_finder_list_view || 'https://vote.nz', 'List view', 'btn btn--s btn--quiet')}</div>${OFFICIAL_LINE}` });
+    if (b.dataset.vsheet === 'help') openSheet({ title: 'Need a hand?', depth: ['Ready to vote', 'Contacts'], at: 1, src: `Electoral Commission contacts, from vote.nz, checked ${esc(H.as_of || '')}.`,
+      html: `<dl class="dl vhelp">${contacts.map(([k, v]) => `<dt>${esc(contactLabel(k))}</dt><dd>${esc(v)}</dd>`).join('')}</dl>${OFFICIAL_LINE}` }) });
+}
+
+/* ----- Key dates: every date in the 2026 election and what it means (coming up first, then the ones already past) ----- */
+function voteDates(root) {
+  const H = G().howtovote || {}; const all = (H.key_dates || []).slice().sort((a, b) => a.date.localeCompare(b.date)); const t = nzToday().iso;
+  const up = all.filter(d => d.date >= t), past = all.filter(d => d.date < t);
+  const wd = iso => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-NZ', { weekday: 'short', timeZone: 'UTC' });
+  const li = d => `<li${d.date === '2026-11-07' ? ' class="is-eday"' : ''}><span class="num">${shortDate(d.date)}<span class="micro muted vdates__wd">${wd(d.date)}</span></span><span class="stack stack--s"><span class="small">${esc(d.event)}${d.date === t ? ' <span class="badge badge--signal">Today</span>' : ''}</span>${d.source ? `<span class="src">${ic('doc')} ${extA(d.source, esc(d.source.replace(/^https?:\/\//, '').split('/')[0]))}${d.source_date ? ` · checked ${esc(shortDate(d.source_date))}` : ''}</span>` : ''}</span></li>`;
+  root.innerHTML = `${voteHead('Key dates', 'Key dates, and what each means.', 'Every date in the 2026 election, from roll changes to the official result. Dates come from the Electoral Commission; check vote.nz if anything changes.')}
+    <section class="stack stack--s" aria-labelledby="h-kd-up"><div class="shead"><h2 id="h-kd-up">Coming up</h2></div>
+      ${up.length ? `<ul class="vdates">${up.map(li).join('')}</ul>` : '<p class="small muted">All the key dates have passed.</p>'}</section>
+    ${past.length ? `<details class="disclose"><summary>Already passed: ${past.length} date${past.length === 1 ? '' : 's'}</summary><div class="disclose__body"><ul class="vdates">${past.map(li).join('')}</ul></div></details>` : ''}
+    <div class="rows">${rowlink('#/vote', 'vote', 'Ready to vote', 'Five ticks, and which steps apply to you.')}${rowlink('#/vote/specials', 'clock', 'What special votes could change', 'Between election night and the official result.')}</div>
+    ${voteFoot()}`;
 }
 
 /* ----- Make a plan: when, where, with whom → .ics + message ----- */
@@ -146,26 +170,31 @@ function votePlan(root) {
   draw();
 }
 
-/* ----- How MMP works ----- */
+/* ----- How MMP works: a contents list, then one short section per idea; the ballot illustration stays ----- */
+const MMP_TOC = [['mmp-two', 'You have two votes', 'A party vote and an electorate vote.'], ['mmp-5', 'The 5% rule', 'The threshold a party needs for list seats.'],
+  ['mmp-61', '61 to govern', 'Why parties form coalitions.'], ['mmp-fill', 'How the seats are filled', 'Electorates first, then party lists.'],
+  ['mmp-oh', 'Overhang', 'When Parliament has more than 120 seats.'], ['mmp-ballot', 'The ballot paper', 'What you’ll see, as an illustration.']];
 function voteMMP(root) {
-  root.innerHTML = `${voteHead('How MMP works', 'Two ticks, one Parliament.', 'New Zealand has used MMP (mixed-member proportional representation) since 1996. Here is the whole system in four ideas.')}
-    <section class="stack" aria-labelledby="h-2v"><div class="shead"><h2 id="h-2v">You have two votes</h2></div>${twoVotesHTML()}</section>
+  const sec = (id, title, body, cls = 'stack stack--s') => `<section class="${cls} mmp-sec" aria-labelledby="${id}"><div class="shead shead--quiet"><h2 id="${id}" class="h3" tabindex="-1">${title}</h2></div>${body}</section>`;
+  root.innerHTML = `${voteHead('How MMP works', 'Two ticks, one Parliament.', 'New Zealand has used MMP (mixed-member proportional representation) since 1996. Here is the whole system in a few short ideas.')}
+    <nav aria-labelledby="h-mmp-toc" class="stack stack--s"><h2 id="h-mmp-toc" class="eyebrow">On this page</h2>
+      <ol class="rows mmp-toc" role="list">${MMP_TOC.map(([id, t, sub], i) => `<li><a class="rowlink rowlink--plain" href="#/vote/mmp" data-jump="${id}"><span><span class="rowlink__title"><span class="num muted">${i + 1}</span> ${t}</span><span class="rowlink__sub" style="display:block">${sub}</span></span>${ic('down')}</a></li>`).join('')}</ol></nav>
+    ${sec('mmp-two', 'You have two votes', twoVotesHTML(), 'stack mmp-sec')}
     <div class="cols cols--2">
-      <section class="stack stack--s" aria-labelledby="h-5"><div class="shead shead--quiet"><h2 id="h-5" class="h3">The 5% rule</h2></div>
-        <p class="soft">A party gets its share of the 120 seats only if it wins at least 5% of the party vote, or wins at least one electorate. Party votes for parties that do neither don’t count towards any seats.</p></section>
-      <section class="stack stack--s" aria-labelledby="h-61"><div class="shead shead--quiet"><h2 id="h-61" class="h3">61 to govern</h2></div>
-        <p class="soft">A government needs the support of a majority of MPs: usually 61 of 120, more if there is an overhang. One party rarely gets there alone, so parties form coalitions or support agreements.</p></section>
-      <section class="stack stack--s" aria-labelledby="h-fill"><div class="shead shead--quiet"><h2 id="h-fill" class="h3">How the seats are filled</h2></div>
-        <p class="soft">Every electorate winner gets a seat. Each party’s remaining seats are filled from its ranked party list, so its total matches its share of the party vote (worked out with the Sainte-Laguë formula).</p></section>
-      <section class="stack stack--s" aria-labelledby="h-oh"><div class="shead shead--quiet"><h2 id="h-oh" class="h3">Overhang</h2></div>
-        <p class="soft">If a party wins more electorates than its party vote entitles it to, it keeps them, and Parliament has a few more than 120 seats until the next election.</p></section>
+      ${sec('mmp-5', 'The 5% rule', `<p class="soft">A party gets its share of the 120 seats only if it wins at least 5% of the party vote, or wins at least one electorate. Party votes for parties that do neither don’t count towards any seats.</p>`)}
+      ${sec('mmp-61', '61 to govern', `<p class="soft">A government needs the support of a majority of MPs: usually 61 of 120, more if there is an overhang. One party rarely gets there alone, so parties form coalitions or support agreements.</p>`)}
+      ${sec('mmp-fill', 'How the seats are filled', `<p class="soft">Every electorate winner gets a seat. Each party’s remaining seats are filled from its ranked party list, so its total matches its share of the party vote (worked out with the Sainte-Laguë formula).</p>`)}
+      ${sec('mmp-oh', 'Overhang', `<p class="soft">If a party wins more electorates than its party vote entitles it to, it keeps them, and Parliament has a few more than 120 seats until the next election.</p>`)}
     </div>
-    <section class="stack" aria-labelledby="h-bal"><div class="shead"><div class="shead__row"><h2 id="h-bal">The ballot paper</h2><span class="micro muted">Illustration only</span></div></div>
+    <section class="stack mmp-sec" aria-labelledby="mmp-ballot"><div class="shead shead--quiet"><div class="shead__row"><h2 id="mmp-ballot" class="h3" tabindex="-1">The ballot paper</h2><span class="micro muted">Illustration only</span></div></div>
       <div class="split split--7-5">${ballotHTML()}
-        <div class="stack"><p class="soft">Party vote on the left, electorate vote on the right. Tick one circle on each side, or only one side if you prefer. Made a mistake? Ask for a new paper.</p>
-          <div class="rows">${rowlink('#/seats/calculator', 'scale', 'Try the seat calculator', 'Turn party-vote shares into seats.')}${rowlink('#/seats/coalition', 'users', 'Coalition builder', 'Add parties up to 61.')}${rowlink('#/vote/glossary', 'book', 'Glossary', 'Every MMP term in plain English.')}</div></div>
+        <div class="stack"><p class="soft">Party vote on the left, electorate vote on the right. Tick one circle on each side, or only one side if you prefer. Made a mistake? Ask for a new paper.</p></div>
       </div></section>
+    <section class="stack stack--s" aria-labelledby="h-mmp-try"><div class="shead shead--quiet"><h2 id="h-mmp-try" class="h3">Try it yourself</h2></div>
+      <div class="rows">${rowlink('#/seats/calculator', 'scale', 'Try the seat calculator', 'Turn party-vote shares into seats.')}${rowlink('#/seats/coalition', 'users', 'Coalition builder', 'Add parties up to 61.')}${rowlink('#/vote/glossary', 'book', 'Glossary', 'Every MMP term in plain English.')}</div></section>
     ${voteFoot()}`;
+  root.querySelector('.mmp-toc').addEventListener('click', e => { const a = e.target.closest('[data-jump]'); if (!a) return; e.preventDefault();
+    const h = document.getElementById(a.dataset.jump); if (!h) return; h.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }); h.focus({ preventScroll: true }) });
   requestAnimationFrame(startBallot);
 }
 
@@ -202,13 +231,25 @@ const GLOSSARY = [
 function voteGlossary(root) {
   const slug = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   const items = GLOSSARY.slice().sort((a, b) => a[0].localeCompare(b[0], 'en-NZ'));
+  const letter = t => t.normalize('NFD').charAt(0).toUpperCase();
+  const groups = []; items.forEach(it => { const L = letter(it[0]); const g = groups.find(x => x.L === L); if (g) g.items.push(it); else groups.push({ L, items: [it] }) });
   root.innerHTML = `${voteHead('Glossary', 'MMP words, in plain English.', `${items.length} terms you’ll meet in election coverage, each in a sentence or two. For anything official, check vote.nz.`)}
-    <div class="input-icon gloss__find">${ic('search', 'i--s')}<input class="input" type="search" id="gl-q" placeholder="Filter the terms" aria-label="Filter the glossary" autocomplete="off"></div>
-    <dl class="gloss" id="gl-list">${items.map(([t, d]) => `<div class="gloss__row" id="g-${slug(t)}" data-t="${esc((t + ' ' + d).toLowerCase())}"><dt>${esc(t)}</dt><dd>${esc(d)}</dd></div>`).join('')}</dl>
+    <div class="stack stack--s">
+      <div class="input-icon gloss__find">${ic('search', 'i--s')}<input class="input" type="search" id="gl-q" placeholder="Filter the terms" aria-label="Filter the glossary" aria-describedby="gl-count" autocomplete="off"></div>
+      <nav class="gloss__az" aria-label="Jump to a letter">${groups.map(g => `<a href="#/vote/glossary" data-jump="gl-${g.L}" aria-label="Terms starting with ${g.L}">${g.L}</a>`).join('')}</nav>
+      <p class="micro muted" id="gl-count" role="status">${items.length} terms, A–Z</p>
+    </div>
+    <div class="stack stack--l" id="gl-list">${groups.map(g => `<section class="gloss__grp" aria-labelledby="gl-${g.L}"><h2 class="gloss__l" id="gl-${g.L}" tabindex="-1">${g.L}</h2>
+      <dl class="gloss">${g.items.map(([t, d]) => `<div class="gloss__row" id="g-${slug(t)}" data-t="${esc((t + ' ' + d).toLowerCase())}"><dt>${esc(t)}</dt><dd>${esc(d)}</dd></div>`).join('')}</dl></section>`).join('')}</div>
     <p class="small muted" id="gl-none" hidden>No term matches. Try a shorter word.</p>
     ${voteFoot()}`;
   $('#gl-q').oninput = e => { const q = e.target.value.trim().toLowerCase(); let n = 0;
-    root.querySelectorAll('.gloss__row').forEach(r => { const on = !q || r.dataset.t.includes(q); r.hidden = !on; if (on) n++ }); $('#gl-none').hidden = n > 0 };
+    root.querySelectorAll('.gloss__row').forEach(r => { const on = !q || r.dataset.t.includes(q); r.hidden = !on; if (on) n++ });
+    root.querySelectorAll('.gloss__grp').forEach(g => { g.hidden = !g.querySelector('.gloss__row:not([hidden])') });
+    $('#gl-none').hidden = n > 0; $('#gl-count').textContent = q ? (n ? `${n} term${n === 1 ? '' : 's'} match` : 'No term matches') : `${items.length} terms, A–Z` };
+  root.querySelector('.gloss__az').addEventListener('click', e => { const a = e.target.closest('[data-jump]'); if (!a) return; e.preventDefault();
+    const q = $('#gl-q'); if (q.value) { q.value = ''; q.dispatchEvent(new Event('input')) }
+    const h = document.getElementById(a.dataset.jump); if (h) { h.scrollIntoView({ block: 'start' }); h.focus({ preventScroll: true }) } });
 }
 
 /* ----- What special votes could change ----- */
@@ -220,21 +261,22 @@ function voteSpecials(root) {
   const changed = pick(af, /special votes have changed|^2020:|not final|official results:/i);
   const step = x => `<li><p>${esc(x.text)}</p>${x.url ? `<p class="src">${ic('doc')} ${extA(x.url, esc((x.source || x.url.replace(/^https?:\/\//, '').split('/')[0]).split(',')[0]))}</p>` : ''}</li>`;
   const notes = [].concat((sv && sv.notes) || [], (af && af.notes) || []).filter(n => /special/i.test(n));
+  const steps = (list, label) => list.length ? `<details class="disclose"><summary>${label} (${list.length})</summary><div class="disclose__body"><ol class="vsteps">${list.map(step).join('')}</ol></div></details>` : '';
   root.innerHTML = `${voteHead('Special votes', 'What special votes could change.', 'The result on election night is not the final result. Special votes are counted over the following three weeks; in 2023 they were about one vote in five, and they can move seats.')}
     <div class="split split--7-5">
       <div class="stack stack--l">
         <section class="stack stack--s" aria-labelledby="h-sv1"><div class="shead"><h2 id="h-sv1">What a special vote is</h2></div>
           <p class="soft">A special vote is an ordinary vote with a signed declaration attached. People cast one when they aren’t on the printed roll where they vote, for example because they enrolled late, voted outside their electorate or voted from overseas. Each declaration is checked before the vote is counted.</p>
-          ${what.length ? `<ol class="vsteps">${what.map(step).join('')}</ol>` : ''}</section>
+          ${steps(what, 'How they are cast and counted')}</section>
         <section class="stack stack--s" aria-labelledby="h-sv2"><div class="shead"><h2 id="h-sv2">What they have changed before</h2></div>
           <p class="soft">Because special votes are counted last, the official result can differ from election night: a party can gain or lose a seat or two, close electorates can change hands, and the numbers a government needs can shift.</p>
-          ${changed.length ? `<ol class="vsteps">${changed.map(step).join('')}</ol>` : ''}</section>
+          ${steps(changed, 'Past elections and the official result')}</section>
       </div>
-      <aside class="stack sticky">
-        <div class="panel"><h2 class="h3">Dates</h2><dl class="dl"><dt>Election night</dt><dd>Sat 7 Nov, from 7pm: preliminary results</dd><dt>Specials arrive</dt><dd>Up to 10 days after election day</dd><dt>Official result</dt><dd>Fri 27 Nov 2026</dd></dl>
+      <aside class="stack sticky" aria-labelledby="h-sv-dates">
+        <div class="panel"><h2 class="h3" id="h-sv-dates">Dates</h2><dl class="dl"><dt>Election night</dt><dd>Sat 7 Nov, from 7pm: preliminary results</dd><dt>Specials arrive</dt><dd>Up to 10 days after election day</dd><dt>Official result</dt><dd>Fri 27 Nov 2026</dd></dl>
           ${vExt('https://electionresults.govt.nz', 'Official results site', 'btn btn--s')}</div>
         ${notes.length ? `<div class="stack stack--s">${notes.map(n => `<p class="small muted">${esc(n)}</p>`).join('')}</div>` : ''}
-        <div class="rows">${rowlink('#/vote/glossary', 'book', 'Glossary', 'Preliminary, official, special and more.')}${rowlink('#/vote/mmp', 'scale', 'How MMP works', 'Why a few votes can move a seat.')}</div>
+        <div class="rows">${rowlink('#/vote/dates', 'clock', 'Key dates', 'Every date in the 2026 election.')}${rowlink('#/vote/glossary', 'book', 'Glossary', 'Preliminary, official, special and more.')}${rowlink('#/vote/mmp', 'scale', 'How MMP works', 'Why a few votes can move a seat.')}</div>
       </aside>
     </div>
     ${H.as_of ? `<p class="src">${ic('shield')} Checked ${esc(H.as_of)} against vote.nz and elections.nz.</p>` : ''}

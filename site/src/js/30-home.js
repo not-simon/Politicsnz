@@ -1,4 +1,4 @@
-/* ===== Today (home): phase hero, four tasks, two votes, the Today feed, resume (site/redesign/mockups/home.html) ===== */
+/* ===== Today (home): phase hero, four tasks, the Today feed (policy of the day + compact rows that open the sheet), resume, two votes ===== */
 // NZ calendar helpers (all "today" logic uses the NZ date so everyone sees the same thing on the same day)
 function nzToday() { const t = nzNow(); const y = t.getFullYear(), m = t.getMonth() + 1, d = t.getDate(); const p = n => String(n).padStart(2, '0');
   return { y, m, d, md: `${p(m)}-${p(d)}`, iso: `${y}-${p(m)}-${p(d)}`, n: Math.round(Date.UTC(y, m - 1, d) / 864e5), num: y * 10000 + m * 100 + d } }
@@ -83,49 +83,63 @@ function potdHTML() { const c = potdCard(); if (!c) return '';
     </div></div>` }
 
 function realPolls() { return (S.data.polls || []).filter(p => p && p.date && !/election result/i.test(p.pollster || '')) }
-function sinceHTML() { const t = nzToday(); const out = [];
+
+/* Compact feed rows: one or two lines each; the detail opens in the sheet (layer 3) or links to its page (layer 2). */
+function tfRow(key, icon, label, title, sub) { return `<li><button class="tfrow" type="button" data-tf="${key}" aria-haspopup="dialog"><span class="tfrow__txt"><span class="feed__k">${ic(icon)} ${label}</span><span class="tfrow__t">${title}</span>${sub ? `<span class="tfrow__s">${sub}</span>` : ''}</span>${ic('chev')}</button></li>` }
+
+function sinceRow() { const t = nzToday(); const out = [];
   const wk = new Date(Date.UTC(t.y, t.m - 1, t.d) - 7 * 864e5).toISOString().slice(0, 10);
   const nPolls = realPolls().filter(p => p.date >= wk && p.date <= t.iso).length;
-  if (nPolls) out.push(`<a href="#/seats/polls"><b>${nPolls}</b><span>new poll${nPolls === 1 ? '' : 's'} in the last 7 days</span></a>`);
+  if (nPolls) out.push(`<a href="#/seats/polls">${nPolls} new poll${nPolls === 1 ? '' : 's'}</a> in the last 7 days`);
   if (S.news && S.news.items) { const y = new Date(Date.UTC(t.y, t.m - 1, t.d) - 864e5).toISOString().slice(0, 10);
     const nRel = S.news.items.filter(i => i.party !== 'government' && String(i.date).slice(0, 10) >= y).length;
-    if (nRel) out.push(`<a href="#/parties/news"><b>${nRel}</b><span>party release${nRel === 1 ? '' : 's'} since yesterday</span></a>`) }
+    if (nRel) out.push(`<a href="#/parties/news">${nRel} party release${nRel === 1 ? '' : 's'}</a> since yesterday`) }
   if (!out.length) return '';
-  return `<div class="feed__item"><span class="feed__k">${ic('spark')} New lately</span><div class="changes">${out.join('')}</div></div>` }
+  return `<li class="tfrow tfrow--static"><span class="tfrow__txt"><span class="feed__k">${ic('spark')} New lately</span><span class="tfrow__t tfrow__t--links">${out.join(' · ')}</span></span></li>` }
 
-function pollWatchHTML() { const ps = realPolls(); if (!ps.length) return ''; const last = ps.map(p => p.date).sort().pop(); const latest = ps.filter(p => p.date === last);
+function latestPolls() { const ps = realPolls(); if (!ps.length) return null; const last = ps.map(p => p.date).sort().pop(); return { last, latest: ps.filter(p => p.date === last) } }
+function pollWatchRow() { const L = latestPolls(); if (!L) return '';
+  const who = L.latest.map(p => esc(p.pollster)); const list = who.length > 1 ? who.slice(0, -1).join(', ') + ' and ' + who[who.length - 1] : who[0];
+  return tfRow('polls', 'poll', 'Poll watch', `${L.latest.length > 1 ? `${L.latest.length} polls` : 'The latest poll'} finished fieldwork on ${shortDate(L.last)}`, list) }
+function pollWatchSheet() { const L = latestPolls(); if (!L) return; const { last, latest } = L;
   const who = latest.map(p => `${esc(p.pollster)}${p.sample_size ? ` (${Number(p.sample_size).toLocaleString('en-NZ')} people)` : ''}`);
   const list = who.length > 1 ? who.slice(0, -1).join(', ') + ' and ' + who[who.length - 1] : who[0];
-  return `<div class="feed__item"><span class="feed__k">${ic('poll')} Poll watch</span>
-    <p class="feed__t">${latest.length > 1 ? `${latest.length} polls` : 'The latest poll'} finished fieldwork on ${shortDate(last)}: ${list}.</p>
+  openSheet({ title: 'Poll watch', depth: ['Today', 'Poll watch'], at: 1, src: 'Fieldwork dates and sample sizes from each pollster’s own release.',
+    html: `<p class="feed__t">${latest.length > 1 ? `${latest.length} polls` : 'The latest poll'} finished fieldwork on ${shortDate(last)}: ${list}.</p>
     <p class="src">${latest.map(p => p.source_url ? extA(p.source_url, esc(p.pollster)) : '').filter(Boolean).join(' · ')}</p>
-    <a class="more small" href="#/seats/polls">What the polls would mean in seats ${ic('chev', 'i--xs')}</a></div>` }
+    <a class="more small" href="#/seats/polls">What the polls would mean in seats ${ic('chev', 'i--xs')}</a>` }) }
 
-function otdHTML() { const O = S.otd; if (!O || !O.days) return ''; const t = nzToday(); const list = (O.days[t.md] || []).filter(x => x && x.text && x.year && !x.upcoming);
-  if (!list.length) return '';
+function otdList() { const O = S.otd; if (!O || !O.days) return []; return (O.days[nzToday().md] || []).filter(x => x && x.text && x.year && !x.upcoming) }
+function otdRow() { const list = otdList(); if (!list.length) return ''; const x = list[0];
+  return tfRow('otd', 'history', 'On this day', `${esc(x.year)}: ${esc(x.title || (x.text.length > 90 ? x.text.slice(0, 87).replace(/\s+\S*$/, '') + '…' : x.text))}`, list.length > 1 ? `and ${list.length - 1} more from ${nzNow().toLocaleDateString('en-NZ', { day: 'numeric', month: 'long' })} in other years` : '') }
+function otdSheet() { const O = S.otd; const list = otdList(); if (!list.length) return; const t = nzToday();
   const person = slug => slug && (S.people || []).find(p => p.slug === slug);
   const item = x => { const pe = person(x.related && x.related.person); const pa = x.related && x.related.party && S.data.parties[x.related.party] ? x.related.party : null;
     return `<div class="otd"><span class="otd__year">${esc(x.year)}</span><div class="stack stack--s">${x.title ? `<b>${esc(x.title)}</b>` : ''}<p class="small soft">${esc(x.text)}</p>
       ${pe || pa ? `<p class="small">${pa ? `<a class="ptag ptag--s" style="--pc:${pcolor(pa)}" href="#/parties/${esc(pa)}"><span class="sw"></span>${esc(pname(pa))}</a>` : ''}${pe ? `${pa ? ' · ' : ''}<button class="linkbtn" type="button" data-person="${esc(pe.folder)}">${esc(pe.name)}</button>` : ''}</p>` : ''}
       ${x.source_url ? `<p class="src">${ic('doc')} ${extA(x.source_url, esc(x.source_name || 'Source'))}${x.approx_day ? ' · date approximate' : ''}</p>` : ''}</div></div>` };
   const more = O.nzhistory_day_url && O.nzhistory_day_url[t.md];
-  return `<div class="feed__item"><span class="feed__k">${ic('history')} On this day</span>${list.map(item).join('')}
-    ${more ? `<a class="more small" href="${esc(more)}" target="_blank" rel="noopener">More on this day at NZHistory ${extIc()}</a>` : ''}</div>` }
+  openSheet({ title: `On this day: ${nzNow().toLocaleDateString('en-NZ', { day: 'numeric', month: 'long' })}`, depth: ['Today', 'On this day'], at: 1,
+    html: `${list.map(item).join('')}${more ? `<a class="more small" href="${esc(more)}" target="_blank" rel="noopener">More on this day at NZHistory ${extIc()}</a>` : ''}` }) }
 
-function fromPartiesHTML() { const N = S.news; if (!N || !N.items) return '';
+function fromPartiesPick() { const N = S.news; if (!N || !N.items) return null;
   const all = (G().parties || []).map(p => p.slug).filter(s => N.parties[s] || (N.follow_parties || {})[s] || N.items.some(i => i.party === s));
-  const slugs = all.sort((a, b) => pname(a).localeCompare(pname(b), 'en-NZ')); if (!slugs.length) return '';
-  const k = slugs.length; const start = ((nzToday().n * 3) % k + k) % k; const pick = [0, 1, 2].slice(0, Math.min(3, k)).map(i => slugs[(start + i) % k]);
+  const slugs = all.sort((a, b) => pname(a).localeCompare(pname(b), 'en-NZ')); if (!slugs.length) return null;
+  const k = slugs.length; const start = ((nzToday().n * 3) % k + k) % k; return [0, 1, 2].slice(0, Math.min(3, k)).map(i => slugs[(start + i) % k]) }
+function fromPartiesRow() { const pick = fromPartiesPick(); if (!pick) return '';
+  const names = pick.map(s => esc(pname(s))); const list = names.length > 1 ? names.slice(0, -1).join(', ') + ' and ' + names[names.length - 1] : names[0];
+  return tfRow('parties', 'news', 'From the parties', `Today’s latest from ${list}`, 'Three parties a day in an A–Z rotation') }
+function fromPartiesSheet() { const N = S.news; const pick = fromPartiesPick(); if (!pick) return;
   const items = N.items.filter(i => i.party !== 'government').sort((a, b) => String(b.date).localeCompare(String(a.date)));
   const tag = s => `<span class="ptag ptag--s" style="--pc:${pcolor(s)}"><span class="sw"></span>${esc(pname(s))}</span>`;
   const row = s => { const it = items.find(i => i.party === s); const pm = N.parties[s] || (N.follow_parties || {})[s] || {};
     if (it) return `<a class="release" href="${esc(it.url)}" target="_blank" rel="noopener nofollow"><span class="release__t">${esc(it.title)}</span><span class="release__m">${tag(s)}<span>${shortDate(it.date)}</span><span>via ${esc(it.source || 'source')} ↗</span></span></a>`;
     return pm.newsroom_url ? `<a class="release" href="${esc(pm.newsroom_url)}" target="_blank" rel="noopener nofollow"><span class="release__t">No release in the feeds we read in the last ${N.window_days || 60} days. Their own newsroom ↗</span><span class="release__m">${tag(s)}</span></a>`
       : `<div class="release"><span class="release__t">No release in the feeds we read in the last ${N.window_days || 60} days.</span><span class="release__m">${tag(s)}</span></div>` };
-  return `<div class="feed__item"><span class="feed__k">${ic('news')} From the parties</span>
-    <p class="small soft">Today’s three parties in an A–Z rotation, so every party gets the same space. Their own words, not fact-checked.</p>
+  openSheet({ title: 'From the parties', depth: ['Today', 'From the parties'], at: 1, src: 'Headlines only, linking to each party’s own page. Their own words, not fact-checked.',
+    html: `<p class="small soft">Today’s three parties in an A–Z rotation, so every party gets the same space. Their own words, not fact-checked.</p>
     <div>${pick.map(row).join('')}</div>
-    <a class="more small" href="#/parties/news">All parties, three releases each ${ic('chev', 'i--xs')}</a></div>` }
+    <a class="more small" href="#/parties/news">All parties, three releases each ${ic('chev', 'i--xs')}</a>` }) }
 
 function resumeHTML() { const out = [];
   const Q = G().quiz2; const q = lsJSON('quiz2', typeof q2State === 'function' ? q2State : null); const qn = Object.keys(q.answers || {}).length; const qt = ((Q && Q.statements) || []).length || 30;
@@ -144,9 +158,9 @@ function resumeHTML() { const out = [];
     <div class="cols cols--3">${out.join('')}</div></section>` }
 
 function feedHTML() { const eday = isElectionDay();
-  const lockItem = `<div class="feed__item"><div class="locked">${ic('lock')}<div><b>Policy of the day, poll watch, party releases and “on this day” are hidden until 7pm.</b><p>${esc(ELECTION_DAY_BLOCK)}</p></div></div></div>`;
-  const parts = eday ? [lockItem] : [potdHTML(), sinceHTML(), pollWatchHTML(), otdHTML(), fromPartiesHTML()];
-  const body = parts.filter(Boolean).join('');
+  if (eday) return `<div class="feed"><div class="feed__item"><div class="locked">${ic('lock')}<div><b>Policy of the day, poll watch, party releases and “on this day” are hidden until 7pm.</b><p>${esc(ELECTION_DAY_BLOCK)}</p></div></div></div></div>`;
+  const rows = [pollWatchRow(), sinceRow(), otdRow(), fromPartiesRow()].filter(Boolean).join('');
+  const body = potdHTML() + (rows ? `<ul class="tfeed" role="list">${rows}</ul>` : '');
   return body ? `<div class="feed">${body}</div>` : '<p class="small muted">Nothing new today.</p>' }
 
 V.home = async () => {
@@ -170,20 +184,22 @@ V.home = async () => {
           ${rowlink('#/seats/polls', 'seats', 'What might happen?', 'Polls, seat ranges and every map since 2011.')}
         </div>
       </section>
-      <section class="stack" aria-labelledby="h-two">
-        <div class="shead shead--quiet"><div class="shead__row"><h2 id="h-two" class="h3">You have two votes</h2><a class="more small" href="#/vote/mmp">MMP in 60 seconds ${ic('chev', 'i--xs')}</a></div></div>
-        ${twoVotesHTML()}
-      </section>
     </div>
-    <aside class="stack stack--l" aria-labelledby="h-today">
+    <section class="stack stack--l" aria-labelledby="h-today">
       <div class="shead__row"><h2 id="h-today">Today</h2><span class="small muted">${upd}</span></div>
       ${feedHTML()}
-    </aside>
+    </section>
   </div>
-  ${resumeHTML()}`;
+  ${resumeHTML()}
+  <section class="stack" aria-labelledby="h-two">
+    <div class="shead shead--quiet"><div class="shead__row"><h2 id="h-two" class="h3">You have two votes</h2><a class="more small" href="#/vote/mmp">MMP in 60 seconds ${ic('chev', 'i--xs')}</a></div></div>
+    ${twoVotesHTML()}
+  </section>`;
   const pt = $('#potd'); if (pt) pt.addEventListener('click', e => { const b = e.target.closest('[data-potd]'); if (!b) return; const c = potdCard(); if (!c) return;
     store.set('potd', JSON.stringify({ date: nzToday().iso, id: c.id, v: b.dataset.potd }));
     pt.outerHTML = potdHTML(); const n = $('#potd'); if (n) { const f = n.querySelector('.reveal a, .reveal button'); if (f) f.focus({ preventScroll: true }) } });
+  const tf = $('.tfeed'); if (tf) tf.addEventListener('click', e => { const b = e.target.closest('[data-tf]'); if (!b) return;
+    ({ polls: pollWatchSheet, otd: otdSheet, parties: fromPartiesSheet })[b.dataset.tf]() });
 };
 
 /* ----- the animated ballot illustration (shown in Vote › How MMP works) -----
@@ -192,15 +208,17 @@ V.home = async () => {
 function ballotParties() { const gp = (G().parties || []).map(p => ({ slug: p.slug, name: p.name || pname(p.slug) }));
   const list = gp.length ? gp : Object.keys(S.data.parties || {}).map(s => ({ slug: s, name: P(s).name || pname(s) }));
   return list.sort((a, b) => a.name.localeCompare(b.name, 'en-NZ')) }
-function ballotHTML() { const bp = ballotParties();
-  return `<figure class="ballot-fig stack stack--s">
-    <div class="ballot" role="img" aria-label="Example ballot paper (illustration only; the ticks move at random and do not indicate a choice)">
-      <div class="ballot__col"><span class="ballot__h">Party vote</span><div class="ballot__list" id="bl-p">${bp.map(p => `<span class="ballot__opt"><span class="ballot__name"><span class="sw" style="--pc:${pcolor(p.slug)}"></span>${esc(p.name)}</span><span class="ballot__box"></span></span>`).join('')}<span class="ballot__tick" id="bt-p">${TICK_SVG(true)}</span></div></div>
-      <div class="ballot__col"><span class="ballot__h">Electorate vote</span><div class="ballot__list" id="bl-e">${['Candidate A', 'Candidate B', 'Candidate C', 'Candidate D', 'Candidate E', 'Candidate F'].map(c => `<span class="ballot__opt"><span class="ballot__name">${c}</span><span class="ballot__box"></span></span>`).join('')}<span class="ballot__tick" id="bt-e">${TICK_SVG(true)}</span></div></div>
+function ballotHTML() { const bp = ballotParties(); const cands = ['Candidate A', 'Candidate B', 'Candidate C', 'Candidate D', 'Candidate E', 'Candidate F'];
+  return `<figure class="ballot-fig stack stack--s" aria-labelledby="ballot-cap">
+    <div class="ballot" role="group" aria-label="Example ballot paper (illustration only; the ticks move at random and do not indicate a choice)">
+      <div class="ballot__col"><span class="ballot__h" aria-hidden="true">Party vote</span><div class="ballot__list" id="bl-p" tabindex="0" role="group" aria-label="Party vote: ${bp.length} registered parties, A–Z (scrolls)">${bp.map(p => `<span class="ballot__opt"><span class="ballot__name"><span class="sw" style="--pc:${pcolor(p.slug)}"></span>${esc(p.name)}</span><span class="ballot__box"></span></span>`).join('')}<span class="ballot__tick" id="bt-p" aria-hidden="true">${TICK_SVG(true)}</span></div></div>
+      <div class="ballot__col"><span class="ballot__h" aria-hidden="true">Electorate vote</span><div class="ballot__list" id="bl-e" tabindex="0" role="group" aria-label="Electorate vote: example candidates, A–Z by surname">${cands.map(c => `<span class="ballot__opt"><span class="ballot__name">${c}</span><span class="ballot__box"></span></span>`).join('')}<span class="ballot__tick" id="bt-e" aria-hidden="true">${TICK_SVG(true)}</span></div></div>
     </div>
-    <figcaption class="small muted">Illustration only: the ticks move at random and don’t show a choice. All ${bp.length} registered parties appear on the real paper, in alphabetical order, and candidates are listed alphabetically by surname. You can split your two votes between different parties. What the real paper looks like: ${extA('https://vote.nz/2026-general-election/voting-in-the-election/what-to-do', 'vote.nz')}.</figcaption>
+    <figcaption class="small muted" id="ballot-cap">Illustration only: the ticks move at random and don’t show a choice. All ${bp.length} registered parties appear on the real paper, in alphabetical order, and candidates are listed alphabetically by surname. You can split your two votes between different parties. What the real paper looks like: ${extA('https://vote.nz/2026-general-election/voting-in-the-election/what-to-do', 'vote.nz')}.</figcaption>
+    <button class="btn btn--s btn--quiet ballot__pause" type="button" id="bt-pause">${ic('pause', 'i--s')} Pause the moving ticks</button>
   </figure>` }
-function startBallot() { if (S.ballotTimer) clearInterval(S.ballotTimer); if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+function startBallot() { if (S.ballotTimer) clearInterval(S.ballotTimer); S.ballotTimer = null;
+  const pb = $('#bt-pause'); if (matchMedia('(prefers-reduced-motion: reduce)').matches) { if (pb) pb.hidden = true; return }
   const cols = [['#bl-p', '#bt-p'], ['#bl-e', '#bt-e']].map(([l, t]) => ({ list: $(l), tick: $(t), i: 0 })).filter(c => c.list && c.tick);
   if (!cols.length) return; cols[1] && (cols[1].i = 2);
   const place = c => { const rows = c.list.querySelectorAll('.ballot__opt'); if (!rows.length) return; const r = rows[c.i % rows.length];
@@ -208,5 +226,9 @@ function startBallot() { if (S.ballotTimer) clearInterval(S.ballotTimer); if (ma
     // scroll only the list, never the page
     const top = r.offsetTop - c.list.clientHeight / 2 + r.offsetHeight / 2; c.list.scrollTo({ top: Math.max(0, top), behavior: 'smooth' }) };
   cols.forEach(place);
+  // WCAG 2.2.2: the movement can be paused, and it holds still while someone is reading or scrolling a list
+  let paused = false; const fig = cols[0].list.closest('.ballot'); const hold = () => paused || fig.matches(':hover') || fig.contains(document.activeElement);
+  if (pb) pb.onclick = () => { paused = !paused; pb.innerHTML = paused ? `${ic('play', 'i--s')} Play the moving ticks` : `${ic('pause', 'i--s')} Pause the moving ticks` };
   S.ballotTimer = setInterval(() => { if (!document.body.contains(cols[0].list)) { clearInterval(S.ballotTimer); S.ballotTimer = null; return }
+    if (hold()) return;
     cols.forEach(c => { const n = c.list.querySelectorAll('.ballot__opt').length; if (n < 2) return; let j; do { j = Math.floor(Math.random() * n) } while (j === c.i); c.i = j; place(c) }) }, 1700) }

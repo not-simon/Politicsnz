@@ -712,7 +712,7 @@ body.has-tabbar { padding-bottom: calc(var(--tabbar-h) + var(--gutter-b)) }
 .colophon { background: var(--sunk); border-top: 1px solid var(--line); padding-block: var(--s-8) var(--s-8); font-size: var(--t-small); color: var(--text-2) }
 .colophon__grid { display: grid; gap: var(--s-6); grid-template-columns: minmax(0, 1fr) }
 @media (min-width: 720px) { .colophon__grid { grid-template-columns: 2fr 1fr 1fr 1fr } }
-.colophon h4 { font-size: 13px; letter-spacing: var(--track-eyebrow); text-transform: uppercase; color: var(--text-3); margin-bottom: var(--s-3) }
+.colophon h4, .colophon .h4 { font-size: 13px; letter-spacing: var(--track-eyebrow); text-transform: uppercase; color: var(--text-3); margin-bottom: var(--s-3) }
 .colophon ul { list-style: none; padding: 0; display: grid; gap: 8px }
 .colophon a { color: var(--text); text-decoration-thickness: 1px; text-decoration-color: var(--line-strong) }
 .colophon__pledge { font: 700 20px/1.3 var(--font-display); font-variation-settings: "wdth" 104; color: var(--text); max-width: 26ch }

@@ -31,22 +31,26 @@ V.map = async (startYear, startSlug) => {
   await loadPeople(); await loadGeo(2020);
   const idx = S.geo.index;
   let year = MAP_YEARS.includes(+startYear) ? +startYear : (MAP_YEARS.includes(+store.get('mapYear')) ? +store.get('mapYear') : 2023);
-  let type = store.get('mapType') === 'maori' ? 'maori' : 'general', sel = startSlug ? slugify(decodeURIComponent(startSlug)) : null, selName = '', listOn = false, built = '';
+  const layerArg = ['maori', 'general'].includes(startSlug) ? startSlug : null; if (layerArg) startSlug = undefined;
+  let type = layerArg || (store.get('mapType') === 'maori' ? 'maori' : 'general'), sel = startSlug ? slugify(decodeURIComponent(startSlug)) : null, selName = '', listOn = false, built = '';
   if (sel) { const set = (idx.boundary_sets[idx.election_to_boundary_set[year]] || {}).layers || {};
     if (set.maori && set.maori.names[sel]) type = 'maori'; else if (set.general && set.general.names[sel]) type = 'general';
     selName = (set[type] && set[type].names[sel]) || '' }
   $('#main').innerHTML = sectionFrame('seats', 'seats/map', `
     <header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('seats', 'i--s')} Seats · Electorate map</p><h1>Every electorate since 2011</h1>
-      <p class="lede">Each seat is coloured by the party whose candidate won it. Press play to watch the map change, switch to the Māori electorates, or tap any seat for its story.</p></header>
-    <div class="row row--between"><div class="seg" role="group" aria-label="Electorate type"><button type="button" data-t="general" aria-pressed="${type === 'general'}">General</button><button type="button" data-t="maori" aria-pressed="${type === 'maori'}">Māori</button></div>
-      <button class="btn btn--s btn--quiet" type="button" id="mlist" aria-pressed="false" aria-controls="mlistbox">${ic('list', 'i--xs')} List view</button></div>
+      <p class="lede">Each seat is coloured by the party whose candidate won it. Press play to watch the map change, or tap a seat for its story.</p></header>
     ${scrubberHTML({ id: 'mscrub', labels: MAP_YEARS.map(String), i: MAP_YEARS.indexOf(year) })}
+    <div class="row row--between"><div class="seg" role="group" aria-label="Electorate type"><button type="button" data-t="general" aria-pressed="${type === 'general'}">General</button><button type="button" data-t="maori" aria-pressed="${type === 'maori'}">Māori</button></div>
+      <button class="btn btn--s btn--quiet" type="button" id="mlist" aria-expanded="false" aria-controls="mlistbox">${ic('list', 'i--xs')} <span>List view</span></button></div>
     <div class="split split--7-5 mapsplit">
-      <div class="mapstage" id="mstage"><div id="mmain"></div><div class="insets" id="minsets"></div><div class="legend" id="mlegend" aria-label="Seats won by party"></div></div>
+      <div class="mapstage" id="mstage"><div id="mmain"></div><div class="insets" id="minsets"></div>
+        <div class="legend" id="mlegend" role="group" aria-label="Seats won by each party, A to Z"></div>
+        <p class="small soft" id="malt">Colour is never the only cue: <button class="linkbtn" type="button" id="mlist2" aria-controls="mlistbox">the list view</button> names every seat, its winner and their party.</p></div>
       <section class="seatsheet sticky" id="mside" aria-live="polite" aria-labelledby="h-seat"></section>
     </div>
     <section class="stack" id="mlistbox" hidden aria-labelledby="h-mlist"></section>
-    <p class="micro muted">Boundaries: Stats NZ / Representation Commission (CC BY 4.0), simplified; polygons extend offshore to the territorial-sea limit as published, and the Chatham Islands are left off the drawing. Results: official counts via the archive's election data. Colour is never the only cue: every seat and its winner is named in the list view.</p>`);
+    <p class="srcline">Boundaries: Stats NZ / Representation Commission (CC BY 4.0). Results: official counts, Electoral Commission.</p>
+    <details class="disclose"><summary>About the boundaries and the results</summary><div class="disclose__body"><p class="small">Boundaries: Stats NZ / Representation Commission (CC BY 4.0), simplified; polygons extend offshore to the territorial-sea limit as published, and the Chatham Islands are left off the drawing. Each election is drawn on the boundaries it was fought on (2011 on the 2007 set, 2014 and 2017 on 2014, 2020 and 2023 on 2020, 2026 on 2025). Results: official counts via the archive's election data. For 2026, until results come in, seats are coloured by the party of the sitting MP: that is not a result or a prediction.</p></div></details>`);
   const scrub = bindScrubber($('#mscrub'), { labels: MAP_YEARS.map(String), get: () => MAP_YEARS.indexOf(year), set: i => { year = MAP_YEARS[i]; draw() } });
   const url = () => { const p = 'seats/map/' + year + (sel ? '/' + sel : ''); try { history.replaceState(history.state, '', '#/' + p) } catch {} S.route = p };
   let ctx = null;
@@ -55,8 +59,8 @@ V.map = async (startYear, startSlug) => {
     const { idx, setId, feats, resFor } = c; const key = type + '-' + setId;
     const pending = year === 2026 && !results2026();
     if (built !== key) { built = key;
-      $('#mmain').innerHTML = `<svg class="nzmap" viewBox="0 0 520 640" role="img" aria-label=""><text class="yr" x="20" y="96" font-size="96">${year}</text>${mapPaths(feats, resFor, idx.bbox_mainland, 520, 640, sel)}</svg>`;
-      $('#minsets').innerHTML = type === 'general' ? ['auckland', 'wellington', 'christchurch'].map(k => { const ins = idx.insets[k]; return `<div class="inset"><span>${esc(ins.label)}</span><svg class="nzmap" viewBox="0 0 200 200" role="img" aria-label="${esc(ins.label)} electorates">${mapPaths(feats, resFor, ins.bbox, 200, 200, sel)}</svg></div>` }).join('') : '';
+      $('#mmain').innerHTML = `<svg class="nzmap" viewBox="0 0 520 640" role="img" aria-label="" aria-describedby="mlegend malt"><text class="yr" x="20" y="96" font-size="96">${year}</text>${mapPaths(feats, resFor, idx.bbox_mainland, 520, 640, sel)}</svg>`;
+      $('#minsets').innerHTML = type === 'general' ? ['auckland', 'wellington', 'christchurch'].map(k => { const ins = idx.insets[k]; return `<div class="inset"><span>${esc(ins.label)}</span><svg class="nzmap" viewBox="0 0 200 200" role="img" aria-label="${esc(ins.label)} electorates, enlarged" aria-describedby="malt">${mapPaths(feats, resFor, ins.bbox, 200, 200, sel)}</svg></div>` }).join('') : '';
       $('#minsets').hidden = type !== 'general' }
     else { const bySlug = Object.fromEntries(feats.map(f => [f.properties.slug, f]));
       $('#mstage').querySelectorAll('path[data-slug]').forEach(p => { const f = bySlug[p.dataset.slug]; if (!f) return; const r = resFor(f); p.style.fill = r && r.party ? pcolor(r.party) : 'var(--seat-empty)'; p.querySelector('title').textContent = mapTitle(f, r) }) }
@@ -68,11 +72,12 @@ V.map = async (startYear, startSlug) => {
     markSel(); side(); if (listOn) list(); scrub.sync(MAP_YEARS.indexOf(year)); url() };
   const markSel = () => $('#mstage').querySelectorAll('path[data-slug]').forEach(p => { const on = p.dataset.slug === sel; p.classList.toggle('is-sel', on); if (on) p.parentNode.appendChild(p) });
   const side = () => { const box = $('#mside');
+    box.classList.toggle('seatsheet--idle', !sel);
     if (!sel) { box.classList.remove('seatsheet--float'); box.innerHTML = `<p class="eyebrow">${type === 'maori' ? 'Māori electorates' : 'General electorates'} · ${year}</p><h2 class="h3" id="h-seat">Tap a seat</h2><p class="small soft">Tap any electorate for who won it and how it has voted since 2011, or open the list view to read every seat and winner.</p>`; return }
     const f = ctx.feats.find(x => x.properties.slug === sel); const name = f ? f.properties.name : (selName || sel); selName = name;
     const r = f ? ctx.resFor(f) : null; const e26 = (S.data.electorates || []).find(x => slugify(x.slug) === sel || slugify(x.name) === sel);
     const hist = MAP_YEARS.filter(y => y !== 2026).map(y => { const rr = electorateResults(y); return [y, rr[sel] || rr[slugify(name)] || null] });
-    let html = `<span class="seatsheet__grab" aria-hidden="true"></span><div class="seatsheet__top"><p class="eyebrow">${type === 'maori' ? 'Māori electorate' : 'General electorate'}${e26 && e26.region ? ' · ' + esc(e26.region) : ''}</p><button class="iconbtn iconbtn--quiet" type="button" id="mclose" aria-label="Close">${ic('close', 'i--s')}</button></div><h2 id="h-seat">${esc(name)}</h2>`;
+    let html = `<span class="seatsheet__grab" aria-hidden="true"></span><div class="seatsheet__top"><p class="eyebrow">${type === 'maori' ? 'Māori electorate' : 'General electorate'}${e26 && e26.region ? ' · ' + esc(e26.region) : ''}</p><button class="iconbtn iconbtn--quiet" type="button" id="mclose" aria-label="Close the seat details">${ic('close', 'i--s')}</button></div><h2 id="h-seat">${esc(name)}</h2>`;
     if (!f) html += `<p class="small soft">There was no ${esc(name)} electorate in ${year}: the boundaries changed.</p>`;
     else if (r && r.pending) { const e = r.e;
       html += `<p>${r.party ? `<b>Sitting MP:</b> ${esc(r.winner)} (${esc(pname(r.party))})` : '<b>Vacant</b>'}${e.mp_standing_again === false ? ' · not standing again' : ''}. The 2026 result comes in from 7pm on 7 November.</p>
@@ -83,16 +88,19 @@ V.map = async (startYear, startSlug) => {
     html += `<div class="history" aria-label="Winning party at each election">${hist.map(([y, h]) => `<div style="--pc:${h && h.party ? pcolor(h.party) : 'var(--seat-empty)'}"${y === year ? ' aria-current="true"' : ''}><i></i>${y}<span>${h ? esc(pname(h.party)) : 'no seat'}</span></div>`).join('')}</div>`;
     if (e26) html += `<div class="row"><a class="btn btn--s btn--ink" href="#/vote/electorate/${esc(e26.slug)}">2026: ${(e26.candidates || []).length} candidates ${ic('chev', 'i--xs')}</a></div>`;
     box.innerHTML = html; box.classList.add('seatsheet--float');
-    $('#mclose').onclick = () => { sel = null; markSel(); side(); if (listOn) list(); url() } };
+    $('#mclose').onclick = () => { const back = S.mapFrom; sel = null; markSel(); side(); if (listOn) list(); url(); if (back && back.isConnected) back.focus() } };
   const list = () => { const rows = ctx.feats.map(f => [f, ctx.resFor(f)]).sort((a, b) => a[0].properties.name.localeCompare(b[0].properties.name, 'en-NZ'));
     const pending = year === 2026 && !results2026();
     $('#mlistbox').innerHTML = `<div class="shead"><div class="shead__row"><h2 id="h-mlist">Every ${type === 'maori' ? 'Māori' : 'general'} seat, ${year}</h2><span class="small muted">${rows.length} seats · A–Z${pending ? ' · sitting MPs, not a result' : ''}</span></div></div>
-      <div class="table-wrap"><table class="table"><thead><tr><th>Electorate</th><th>${pending ? 'Sitting MP' : 'Winner'}</th><th>Party</th><th class="n">Majority</th></tr></thead><tbody>
+      ${twrap(`Every ${type === 'maori' ? 'Māori' : 'general'} seat, ${year}`, `<table class="table"><thead><tr><th scope="col">Electorate</th><th scope="col">${pending ? 'Sitting MP' : 'Winner'}</th><th scope="col">Party</th><th class="n" scope="col">Majority</th></tr></thead><tbody>
       ${rows.map(([f, r]) => `<tr${f.properties.slug === sel ? ' aria-current="true"' : ''}><td><button class="linkbtn" type="button" data-sel="${esc(f.properties.slug)}">${esc(f.properties.name)}</button></td><td>${r ? esc(r.winner || '') : '<span class="muted">no result</span>'}</td><td>${r && r.party ? ptagHTML(r.party) : '–'}</td><td class="n">${r && r.majority ? Number(r.majority).toLocaleString('en-NZ') : '–'}</td></tr>`).join('')}
-      </tbody></table></div>` };
-  $('#mstage').addEventListener('click', e => { const p = e.target.closest('path[data-slug]'); if (!p) return; sel = p.dataset.slug; markSel(); side(); if (listOn) list(); url() });
-  $('#mlistbox').addEventListener('click', e => { const b = e.target.closest('[data-sel]'); if (!b) return; sel = b.dataset.sel; markSel(); side(); list(); url(); $('#mside').scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }) });
-  $('#mlist').onclick = () => { listOn = !listOn; $('#mlist').setAttribute('aria-pressed', listOn); $('#mlistbox').hidden = !listOn; if (listOn) { list(); $('#mlistbox').scrollIntoView({ block: 'start', behavior: 'auto' }) } };
+      </tbody></table>`)}` };
+  $('#mstage').addEventListener('click', e => { const p = e.target.closest('path[data-slug]'); if (!p) return; sel = p.dataset.slug; S.mapFrom = null; markSel(); side(); if (listOn) list(); url() });
+  $('#mlistbox').addEventListener('click', e => { const b = e.target.closest('[data-sel]'); if (!b) return; sel = b.dataset.sel; S.mapFrom = null; markSel(); side(); list(); url(); $('#mside').scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    S.mapFrom = $('#mlistbox').querySelector(`[data-sel="${CSS.escape(sel)}"]`); const h = $('#h-seat'); if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }) } });
+  const toggleList = (on = !listOn) => { listOn = on; $('#mlist').setAttribute('aria-expanded', listOn); $('#mlist2').setAttribute('aria-expanded', listOn); $('#mlist span').textContent = listOn ? 'Hide list' : 'List view'; $('#mlistbox').hidden = !listOn;
+    if (listOn) { list(); $('#mlistbox').scrollIntoView({ block: 'start', behavior: 'auto' }); const h = $('#h-mlist'); h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }) } };
+  $('#mlist').onclick = () => toggleList(); $('#mlist2').onclick = () => toggleList(true);
   $('#main').querySelector('.seg[aria-label="Electorate type"]').onclick = e => { const b = e.target.closest('[data-t]'); if (!b || b.dataset.t === type) return; type = b.dataset.t; sel = null;
     b.parentElement.querySelectorAll('[data-t]').forEach(x => x.setAttribute('aria-pressed', x === b)); draw() };
   await draw();

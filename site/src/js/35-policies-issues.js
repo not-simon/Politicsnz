@@ -27,7 +27,7 @@ async function policyBrowser(el, only = null, { topic = '' } = {}) {
   const single = !!(only && only.length === 1);
   let t = TOPIC_NAMES[topic] || topic === 'other' ? topic : '', q = '', limit = 40; const on = new Set(parties);
   el.innerHTML = `<div class="stack stack--l"><div class="toolbar">
-      <div class="input-icon">${ic('search', 'i--s')}<input class="input" type="search" id="q" placeholder="Search, e.g. GST, rent, KiwiSaver, gangs" aria-label="Search policies"></div>
+      <div class="input-icon"><label class="sr-only" for="q">Search policies</label>${ic('search', 'i--s')}<input class="input" type="search" id="q" placeholder="Search, e.g. GST, rent, KiwiSaver, gangs"></div>
       <div class="chips chips--scroll" id="tchips" role="group" aria-label="Topic"></div>
       ${single ? '' : `<details class="disclose"><summary>Parties <span class="micro muted" id="pcount" style="margin-left:auto">all ${parties.length} shown</span></summary><div class="disclose__body"><div class="chips" id="pchips" role="group" aria-label="Parties">${parties.map(p => `<button class="chip" type="button" data-p="${p}" aria-pressed="true"><span class="sw" style="--pc:${pcolor(p)}"></span>${esc(pname(p))} <span class="count">${S.policies[p].length}</span></button>`).join('')}<button class="linkbtn small" type="button" id="pall">All parties</button></div></div></details>`}</div>
     <div id="plist" class="stack stack--l"></div></div>`;
@@ -37,9 +37,9 @@ async function policyBrowser(el, only = null, { topic = '' } = {}) {
   const draw = () => { drawTopics(); const tc = $('#tchips', el), cur = tc.querySelector('[aria-pressed="true"]'); if (cur && t) tc.scrollLeft = Math.max(0, cur.offsetLeft - tc.offsetLeft - 16);
     const match = pol => (!t || topicOf(pol) === t) && matchQ(pol); const box = $('#plist', el);
     if (t && !single) { const ps = parties.filter(p => on.has(p));   // a topic picked: parties side by side, A–Z
-      box.innerHTML = `<p class="small muted">${esc(TOPIC_NAMES[t] || 'Other')}: ${ps.length} parties, A to Z. Each column is that party's published policies on this topic.</p>
+      box.innerHTML = `<p class="small muted">${esc(TOPIC_NAMES[t] || 'Other')}: ${ps.length} parties, A to Z. Each column shows the first three of that party's published policies on this topic; open "All" for the rest.</p>
         <div class="cols ${ps.length > 2 ? 'cols--3' : 'cols--2'} pcols">${ps.map(p => { const L = S.policies[p].filter(match);
-        return `<section class="pgroup" style="--pc:${pcolor(p)}"><div class="pgroup__h"><h3>${esc(pname(p))}</h3><a class="more micro" href="#/parties/${esc(p)}/policies">All ${S.policies[p].length}</a></div>${L.length ? L.map(x => policyCard(p, x, false)).join('') : '<p class="small muted">Nothing published on this topic.</p>'}</section>` }).join('')}</div>`; return }
+        return `<section class="pgroup" style="--pc:${pcolor(p)}"><div class="pgroup__h"><h3>${esc(pname(p))}</h3><a class="more micro" href="#/parties/${esc(p)}/policies" aria-label="All ${S.policies[p].length} ${esc(pname(p))} policies">All ${S.policies[p].length} policies</a></div>${L.length ? L.slice(0, 3).map(x => policyCard(p, x, false)).join('') + (L.length > 3 ? `<details class="disclose disclose--more"><summary>All ${L.length} on this topic <span class="micro muted" style="margin-left:auto">${L.length - 3} more</span></summary><div class="disclose__body">${L.slice(3).map(x => policyCard(p, x, false)).join('')}</div></details>` : '') : '<p class="small muted">Nothing published on this topic.</p>'}</section>` }).join('')}</div>`; return }
     const all = []; parties.filter(p => on.has(p)).forEach(p => S.policies[p].filter(match).forEach(x => all.push([p, x])));
     if (single && !q && !t) { // one party, no filter: grouped by topic
       const by = {}; all.forEach(([p, x]) => (by[topicOf(x)] = by[topicOf(x)] || []).push([p, x]));
@@ -86,17 +86,22 @@ V.issues = () => {
     ${iss.length ? `<div class="rows">${iss.map(i => `<a class="rowlink rowlink--plain" href="#/parties/issues/${esc(i.slug)}"><span><span class="rowlink__title">${esc(i.title)}</span><span class="rowlink__sub" style="display:block">${esc((i.why_it_matters || '').slice(0, 160))}${(i.why_it_matters || '').length > 160 ? '…' : ''}</span><span class="micro muted" style="display:block;margin-top:4px">${(i.key_facts || []).length} key facts · ${Object.keys(i.positions || {}).length} parties' positions</span></span>${ic('chev')}</a>`).join('')}</div>`
     : `<p class="muted">Issue guides are being written. Meanwhile, compare by topic in <a href="#/parties/policies">the policy browser</a>.</p>`}`);
 };
+// First sentence of a position; the rest folds away under "More" (nothing is cut).
+function ptSplitSentence(t) { const m = String(t || '').match(/^(.+?[.!?])(\s+)(?=[A-Z0-9“"‘'(])/); return m && m[1].length >= 40 ? [m[1], String(t).slice(m[0].length)] : [String(t || ''), ''] }
 V.issue = slug => {
   const i = (G().issues || []).find(x => x.slug === slug); if (!i) return V.issues();
   const order = Object.keys(i.positions || {}).sort((a, b) => ptCmp(pname(a), pname(b)));   // A–Z, never by polling
+  const facts = i.key_facts || []; const fact = f => `<div class="feed__item"><p>${esc(typeof f === 'string' ? f : f.fact || f.text)}</p><p class="src">${f.date ? `<span>${esc(ptDate(f.date))}</span>` : ''}${ptSources(f)}</p></div>`;
   $('#main').innerHTML = sectionFrame('parties', 'parties/issues', `<nav class="small" aria-label="Breadcrumb"><a href="#/parties/issues">All ${(G().issues || []).length} issues</a> <span class="muted">/ ${esc(i.title)}</span></nav>
     <header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('scale', 'i--s')} Parties · Issue</p><h1>${esc(i.title)}</h1>${i.why_it_matters ? `<p class="lede">${esc(i.why_it_matters)}</p>` : ''}</header>
-    ${(i.key_facts || []).length ? `<section class="stack"><div class="shead"><h2>Key facts</h2></div><div class="feed">${i.key_facts.map(f => `<div class="feed__item"><p>${esc(typeof f === 'string' ? f : f.fact || f.text)}</p><p class="src">${f.date ? `<span>${esc(ptDate(f.date))}</span>` : ''}${ptSources(f)}</p></div>`).join('')}</div></section>` : ''}
-    <section class="stack"><div class="shead"><div class="shead__row"><h2>Where the parties stand</h2><span class="micro muted">${order.length} parties, A to Z</span></div></div>
-      <div class="cols cols--2 positions">${order.map(p => { const x = i.positions[p]; const ids = (x && x.policy_ids) || [];
-        return `<section class="pgroup" style="--pc:${pcolor(p)}"><div class="pgroup__h"><h3><a href="#/parties/${esc(p)}">${esc(pname(p))}</a></h3></div><p>${esc(T(x))}</p>
+    ${facts.length ? `<section class="stack" aria-labelledby="h-facts"><div class="shead"><div class="shead__row"><h2 id="h-facts">Key facts</h2><span class="micro muted">${facts.length}, with sources</span></div></div><div class="feed">${facts.slice(0, 5).map(fact).join('')}</div>
+      ${facts.length > 5 ? `<details class="disclose"><summary>${facts.length - 5} more key fact${facts.length - 5 === 1 ? '' : 's'}</summary><div class="disclose__body"><div class="feed">${facts.slice(5).map(fact).join('')}</div></div></details>` : ''}</section>` : ''}
+    <section class="stack" aria-labelledby="h-pos"><div class="shead"><div class="shead__row"><h2 id="h-pos">Where the parties stand</h2><span class="micro muted">${order.length} parties, A to Z</span></div></div>
+      <div class="cols cols--2 positions">${order.map(p => { const x = i.positions[p]; const ids = (x && x.policy_ids) || []; const [lead, rest] = ptSplitSentence(T(x));
+        return `<section class="pgroup" style="--pc:${pcolor(p)}" aria-label="${esc(pname(p))}"><div class="pgroup__h"><h3><a href="#/parties/${esc(p)}">${esc(pname(p))}</a></h3></div><p>${esc(lead)}</p>
+          ${rest ? `<details class="disclose disclose--pol"><summary>More<span class="sr-only"> from ${esc(pname(p))}</span></summary><div class="disclose__body"><p>${esc(rest)}</p></div></details>` : ''}
           <p class="src">${srcOf(x).length ? ptSources(x) : ids.length ? '<span>From the party’s published policies</span>' : '<span>No source recorded</span>'}</p>
-          ${ids.length ? `<button class="linkbtn small" type="button" data-issuepol="${esc(p)}|${esc(ids.join(','))}" style="justify-self:start">${ids.length} related ${ids.length === 1 ? 'policy' : 'policies'}</button>` : ''}</section>` }).join('')}</div></section>
+          ${ids.length ? `<button class="linkbtn small" type="button" data-issuepol="${esc(p)}|${esc(ids.join(','))}" aria-haspopup="dialog" style="justify-self:start">${ids.length} related ${ids.length === 1 ? 'policy' : 'policies'}<span class="sr-only"> from ${esc(pname(p))}</span></button>` : ''}</section>` }).join('')}</div></section>
     ${(i.sources || []).length ? `<details class="disclose"><summary>All sources for this issue <span class="micro muted">${i.sources.length}</span></summary><div class="disclose__body"><ul class="small src-list">${i.sources.map(u => `<li>${ptExt(typeof u === 'string' ? u : u.url, esc(typeof u === 'string' ? ptSrcLabel(u) : (u.title || u.url)))}</li>`).join('')}</ul></div></details>` : ''}`);
 };
 // Layer 3 from an issue: the policies behind one party's position.

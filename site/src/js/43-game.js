@@ -30,18 +30,18 @@ V.game = async () => {
       const pool = buildDeck(S.swipe.filter(c => GAME_PARTIES.includes(c.party) && c.statement.length < 140), {}, '').slice(0, players.length * rounds);
       g = { players, rounds, deck: pool.map(c => c.id), turn: 0, scores: players.map(() => 0), phase: 'handoff' }; save(); play() } };
   const card = id => S.swipe.find(c => c.id === id);
-  const board = pi => `<div class="game-score" aria-label="Scores">${g.players.map((n, k) => `<span${k === pi ? ' aria-current="true"' : ''}>${esc(n)} <b class="num">${g.scores[k]}</b></span>`).join('')}</div>`;
+  const board = pi => `<div class="game-score" role="group" aria-label="Scores">${g.players.map((n, k) => `<span${k === pi ? ' aria-current="true"' : ''}>${esc(n)} <b class="num">${g.scores[k]}</b></span>`).join('')}</div>`;
   const play = () => { const total = Math.min(g.deck.length, g.players.length * g.rounds); if (g.turn >= total) return finish();
     const pi = g.turn % g.players.length; const c = card(g.deck[g.turn]); if (!c) { g.turn++; save(); return play() } const round = Math.floor(g.turn / g.players.length) + 1;
     if (g.phase === 'handoff') {
       $('#main').innerHTML = `<div class="stack stack--l game">${board(pi)}
-        <section class="game-hand stack" aria-labelledby="gp"><p class="eyebrow">Round ${round} of ${g.rounds} · pass the phone to</p><p class="figure" id="gp">${esc(g.players[pi])}</p>
+        <section class="game-hand stack" aria-labelledby="gp"><p class="eyebrow">Round ${round} of ${g.rounds} · pass the phone to</p><h1 class="figure" id="gp">${esc(g.players[pi])}</h1>
           <p class="soft">Your turn. Take the phone, then tap when you’re ready.</p>
           <div class="row"><button class="btn btn--primary btn--l" type="button" id="ready">I’m ready</button><button class="btn btn--quiet" type="button" id="quitg">End game</button></div></section></div>`;
       focusMode('Whose policy?', 'choose');
       $('#ready').onclick = () => { g.phase = 'guess'; save(); play() }; $('#quitg').onclick = finish; $('#ready').focus(); return }
     $('#main').innerHTML = `<div class="stack stack--l game">${board(pi)}
-      <section class="stack" aria-labelledby="gq"><p class="eyebrow">${esc(g.players[pi])} · whose policy is this?</p><p class="statement" id="gq">${esc(c.statement)}</p>${c.how ? `<p class="soft">${esc(c.how.length > 260 ? c.how.slice(0, 260).replace(/\s+\S*$/, '') + '…' : c.how)}</p>` : ''}</section>
+      <section class="stack" aria-labelledby="gq"><p class="eyebrow">${esc(g.players[pi])} · whose policy is this?</p><h1 class="statement" id="gq">${esc(c.statement)}</h1>${c.how ? `<p class="soft">${esc(c.how.length > 260 ? c.how.slice(0, 260).replace(/\s+\S*$/, '') + '…' : c.how)}</p>` : ''}</section>
       <div class="persona game-choices" id="choices" role="group" aria-labelledby="gq">${choices.map(p => `<button type="button" data-p="${p}" aria-pressed="false" style="--pc:${pcolor(p)}"><i class="sw" aria-hidden="true"></i>${esc(pname(p))}</button>`).join('')}</div>
       <div id="verdict" aria-live="polite"></div></div>`;
     focusMode('Whose policy?', 'choose');

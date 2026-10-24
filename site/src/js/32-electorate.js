@@ -26,8 +26,8 @@ function elHistory(e) { const names = new Set([e.name, ...(e.predecessor_seats |
 function electorateBody(e) { const r = e.result_2023 || {}; const eday = isElectionDay(); const maori = e.type === 'maori';
   const cands = (e.candidates || []).slice().sort(ballotSort);
   const loc = S.locHit || {}; const here = featToElectorate(maori ? loc.maori : loc.general); const alt = here && here.slug === e.slug ? featToElectorate(maori ? loc.general : loc.maori) : null;
-  const altLine = maori ? `This is one of the seven Māori electorates: you vote here if you’re on the Māori roll.${alt ? ` On the general roll, your electorate is <b>${esc(alt.name)}</b> (<a href="#/vote/electorate/${esc(alt.slug)}">see it</a>).` : ''}`
-    : `On the Māori roll? ${alt ? `Your electorate is <b>${esc(alt.name)}</b>. <a href="#/vote/electorate/${esc(alt.slug)}">See its candidates</a>.` : 'Your Māori electorate depends on where you live; use your location above, or check at vote.nz.'} <a href="https://vote.nz" target="_blank" rel="noopener">Not sure which roll you’re on?</a>`;
+  const altLine = maori ? `This is one of the seven <a href="#/vote/maori">Māori electorates</a>: you vote here if you’re on the Māori roll.${alt ? ` On the general roll, your electorate is <b>${esc(alt.name)}</b> (<a href="#/vote/electorate/${esc(alt.slug)}">see it</a>).` : ''}`
+    : `On the Māori roll? ${alt ? `Your electorate is <b>${esc(alt.name)}</b>. <a href="#/vote/electorate/${esc(alt.slug)}">See its candidates</a>.` : 'Your Māori electorate depends on where you live; use your location above, or check at vote.nz.'} <a href="#/vote/maori">How the Māori electorates work</a>. <a href="https://vote.nz" target="_blank" rel="noopener">Not sure which roll you’re on?</a>`;
   // 2023 result: top two and the margin
   const rc = (r.candidates || []).slice().sort((a, b) => (b.votes || 0) - (a.votes || 0)); const top2 = rc.slice(0, 2); const maxPct = Math.max(1, ...top2.map(c => c.pct || 0));
   let rank = ''; if (!eday && r.majority && !r.for_predecessor_seat) { const all = ((S.data.elections || []).find(x => x.year === 2023) || {}).electorates || [];
@@ -36,43 +36,44 @@ function electorateBody(e) { const r = e.result_2023 || {}; const eday = isElect
   const pred = r.for_predecessor_seat || (e.predecessor_seats || []).some(x => x !== e.name);
   const pv = Object.entries(r.party_vote_pct || {}).sort((a, b) => pname(a[0]).localeCompare(pname(b[0]), 'en-NZ'));
   const hist = elHistory(e);
+  const resSum = r.winner ? `2023: ${esc(r.winner)} (${esc(pname(r.party))})${r.majority ? ` by ${Number(r.majority).toLocaleString('en-NZ')} votes` : ''}${pred ? ` in ${esc(r.seat || (e.predecessor_seats || []).join(', '))}` : ''}` : '';
+  const links = [`<button class="rowlink rowlink--plain" type="button" aria-haspopup="dialog" data-page="electorates/${esc(e.slug)}.md"><span><span class="rowlink__title">Full electorate guide</span><span class="rowlink__sub" style="display:block">Everything we hold on ${esc(e.name)}, with sources.</span></span>${ic('chev')}</button>`,
+    `<a class="rowlink rowlink--plain" href="#/seats/map/2023/${esc(e.slug)}"><span><span class="rowlink__title">See ${esc(e.name)} on the map</span><span class="rowlink__sub" style="display:block">Every election since 2011.</span></span>${ic('chev')}</a>`,
+    e.map_pdf ? `<a class="rowlink rowlink--plain" href="${esc(e.map_pdf)}" target="_blank" rel="noopener"><span><span class="rowlink__title">Boundary map (PDF)</span><span class="rowlink__sub" style="display:block">The 2025 boundary review map, from elections.nz.</span></span>${ic('ext')}</a>` : ''].join('');
   return `<div class="found">
       <p class="eyebrow">${maori ? 'Māori electorate' : 'General electorate'}${e.region ? ' · ' + esc(e.region) : ''}</p>
       <h2>${esc(e.name)}</h2>
       ${e.boundary_status && /new|renamed|redrawn/i.test(e.boundary_status) ? `<p class="small muted">${esc(e.boundary_status)}</p>` : ''}
+      ${e.sitting_mp ? `<p class="small"><b>Current MP:</b> ${esc(e.sitting_mp.name)} (${esc(pname(e.sitting_mp.party))})${e.mp_standing_again === false ? ', not standing again' : ''}.</p>` : ''}
       <p class="found__alt">${altLine}</p>
     </div>
     <div class="split split--7-5">
-      <div class="stack">
-        <div class="shead__row"><h3>On your ballot: ${cands.length} candidate${cands.length === 1 ? '' : 's'}</h3><span class="micro muted">Ballot order (A–Z by surname)</span></div>
+      <section class="stack" aria-labelledby="h-cands">
+        <div class="shead__row"><h3 id="h-cands">On your ballot: ${cands.length} candidate${cands.length === 1 ? '' : 's'}</h3><span class="micro muted">Ballot order (A–Z by surname)</span></div>
         ${cands.length ? `<ul class="cands" role="list">${cands.map(candRow).join('')}</ul>` : '<p class="small muted">The candidate list for this electorate is still being checked.</p>'}
-        <div class="row el-actions"><a class="btn" href="https://map.vote.nz" target="_blank" rel="noopener">${ic('pin', 'i--s')} Voting places near ${esc(e.name)} ${ic('ext', 'i--xs ext')}</a><button class="btn btn--quiet" type="button" id="el-print">${ic('print', 'i--s')} Print a one-pager</button>${cands.length > 1 ? `<button class="btn btn--quiet" type="button" id="el-compare">${ic('swap', 'i--s')} Compare candidates</button>` : ''}</div>
+        <div class="row el-actions"><a class="btn" href="https://map.vote.nz" target="_blank" rel="noopener">${ic('pin', 'i--s')} Voting places near ${esc(e.name)} ${ic('ext', 'i--xs ext')}</a><button class="btn btn--quiet" type="button" id="el-print">${ic('print', 'i--s')} Print a one-pager</button>${cands.length > 1 ? `<button class="btn btn--quiet" type="button" id="el-compare" aria-haspopup="dialog">${ic('swap', 'i--s')} Compare candidates</button>` : ''}</div>
         <p class="micro muted">Candidates from policy.nz and party lists; the official list is on your EasyVote card and at vote.nz. You also have a party vote, for any party, wherever you live.</p>
-      </div>
-      <div class="stack stack--l">
-        ${r.winner ? `<div class="panel">
-          <p class="eyebrow">2023 result${pred ? ` · ${esc(r.seat || (e.predecessor_seats || []).join(', '))}` : ''}</p>
+      </section>
+      <section class="stack stack--s el-more" aria-labelledby="h-elmore">
+        <div class="shead shead--quiet"><h3 id="h-elmore" class="h4">More about ${esc(e.name)}</h3></div>
+        ${e.contest_notes && !eday ? `<p class="small soft">${esc(e.contest_notes)}</p>` : ''}
+        <div>
+        ${r.winner ? `<details class="disclose" data-print><summary><span>${resSum}${rank ? `<span class="small muted el-sum">${esc(rank.charAt(0).toUpperCase() + rank.slice(1))}</span>` : ''}</span></summary><div class="disclose__body">
           ${r.majority ? `<div class="margin"><span class="figure">${Number(r.majority).toLocaleString('en-NZ')}</span><span><b>votes</b> between first and second${rank ? `<br>${rank}` : ''}</span></div>` : ''}
           ${top2.length ? `<div class="duel">${top2.map((c, i) => `<div class="duel__row" style="--pc:${pcolor(c.party)}"><span class="duel__name">${esc(c.name)} <span class="muted small" style="font-weight:500">${esc(pname(c.party))}</span></span><span class="duel__v">${fmt(c.pct, 1)}%</span><div class="bar"><i style="--w:${(c.pct || 0) / maxPct * 90}%;--i:${i}"></i></div></div>`).join('')}</div>` : `<p class="small">${esc(r.winner)} (${esc(pname(r.party))}) won.</p>`}
           ${pred ? `<p class="micro muted">Based on ${esc((e.predecessor_seats || []).join(', ') || r.seat || '')} before the 2025 boundary changes, so the 2026 contest is not directly comparable.</p>` : ''}
-          ${pv.length ? `<details class="disclose"><summary>Party vote in this area, 2023</summary><div class="disclose__body"><p class="micro muted">A–Z. ${esc(r.party_vote_basis || 'Official count')}.</p>${pv.map(([p, v], i) => `<div class="rrow" style="--pc:${pcolor(p)}"><span>${esc(pname(p))}</span><div class="bar"><i style="--w:${Math.min(100, v * 2)}%;--i:${i}"></i></div><span class="rrow__v">${fmt(v)}%</span></div>`).join('')}</div></details>` : ''}
-          <p class="src">${ic('doc')} ${r.source ? extA(r.source, 'Official count, as reported') : 'Official count, Electoral Commission'} · <a href="#/seats/map/2023/${esc(e.slug)}">See ${esc(e.name)} on the map since 2011</a></p>
-        </div>` : ''}
-      </div>
-    </div>
-    <div class="cols cols--2 el-more">
-      <div class="stack stack--l">
-        ${hist.length ? `<section class="stack stack--s" aria-labelledby="h-hist"><h3 id="h-hist" class="h4">Who won here</h3>
+          <p class="src">${ic('doc')} ${r.source ? extA(r.source, 'Official count, as reported') : 'Official count, Electoral Commission'}</p>
+        </div></details>` : ''}
+        ${pv.length ? `<details class="disclose"><summary>Party vote in this area, 2023</summary><div class="disclose__body"><p class="micro muted">A–Z. ${esc(r.party_vote_basis || 'Official count')}.</p>${pv.map(([p, v], i) => `<div class="rrow" style="--pc:${pcolor(p)}"><span>${esc(pname(p))}</span><div class="bar"><i style="--w:${Math.min(100, v * 2)}%;--i:${i}"></i></div><span class="rrow__v">${fmt(v)}%</span></div>`).join('')}
+          ${r.source ? `<p class="src">${ic('doc')} ${extA(r.source, 'Official count, as reported')}</p>` : ''}</div></details>` : ''}
+        ${hist.length ? `<details class="disclose" data-print><summary>Who won here since 2011</summary><div class="disclose__body">
           <div class="history">${hist.map(h => `<div style="--pc:${pcolor(h.r.party)}"${h.year === 2023 ? ' aria-current="true"' : ''}><i></i><span>${h.year}</span><span>${esc(pname(h.r.party))}</span></div>`).join('')}</div>
-          <p class="micro muted">${hist.map(h => `${h.year}: ${esc(h.r.winner)}${h.r.majority ? ` by ${Number(h.r.majority).toLocaleString('en-NZ')}` : ''}${elSlug(h.r.name) !== elSlug(e.name) ? ` (${esc(h.r.name)})` : ''}`).join(' · ')}.</p></section>` : ''}
-        ${e.sitting_mp ? `<p class="small"><b>Current MP:</b> ${esc(e.sitting_mp.name)} (${esc(pname(e.sitting_mp.party))})${e.mp_standing_again === false ? ', not standing again' : ''}.</p>` : ''}
-      </div>
-      <div class="stack stack--l">
+          <p class="micro muted">${hist.map(h => `${h.year}: ${esc(h.r.winner)}${h.r.majority ? ` by ${Number(h.r.majority).toLocaleString('en-NZ')}` : ''}${elSlug(h.r.name) !== elSlug(e.name) ? ` (${esc(h.r.name)})` : ''}`).join(' · ')}.</p></div></details>` : ''}
         ${e.description ? `<details class="disclose"><summary>About ${esc(e.name)}</summary><div class="disclose__body"><p>${esc(e.description)}</p><p class="src">${ic('doc')} Description from policy.nz, quoted as published.</p>
           ${(e.description_fact_check || []).length ? `<div class="note note--warn">${ic('flag', 'i--s')}<div><b>Fact-check notes on this description</b><ul>${e.description_fact_check.map(f => `<li>${esc(typeof f === 'string' ? f : (f.note || f.correction || f.text || JSON.stringify(f)))}</li>`).join('')}</ul></div></div>` : ''}</div></details>` : ''}
-        ${e.contest_notes && !eday ? `<p class="small soft">${esc(e.contest_notes)}</p>` : ''}
-        <div class="row"><button class="btn btn--s btn--quiet" type="button" data-page="electorates/${esc(e.slug)}.md">Full electorate guide</button>${e.map_pdf ? extA(e.map_pdf, `Boundary map (PDF) ${ic('ext', 'i--xs ext')}`, 'btn btn--s btn--quiet') : ''}</div>
-      </div>
+        </div>
+        <div class="rows el-links">${links}</div>
+      </section>
     </div>` }
 
 function compareCands(e) { const cands = (e.candidates || []).slice().sort(ballotSort);
@@ -106,9 +107,10 @@ V.electorate = async slug => {
       <div class="row"><button class="chip chip--menu" type="button" id="el-all">${sel ? 'Choose a different electorate' : `All ${E.length} electorates`}</button><a class="small more" href="https://vote.nz" target="_blank" rel="noopener">Look up your address at vote.nz ${ic('ext', 'i--xs ext')}</a></div>
     </div>`;
   $('#main').innerHTML = sectionFrame('vote', 'vote/electorate', `<div class="stack stack--xl el-page">
+    <div class="el-print-head"><p>Ballot Book NZ · independent guide, not the Electoral Commission · printed ${esc(nzDateLong())} · official information: vote.nz or 0800 36 76 56</p>
+      ${sel ? `<figure class="el-qr"><img src="data/qr/${esc(sel.slug)}.svg" alt="QR code linking to this page" width="96" height="96"><figcaption>Scan for the latest: not-simon.github.io/Politicsnz</figcaption></figure>` : ''}</div>
     <header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('pin', 'i--s')} Vote · Your electorate</p><h1>Who’s standing where you live</h1>
       <p class="lede">Find your electorate to meet the candidates on your ballot, in ballot order, with how close it was last time.</p><div class="micro notec">${NOT_EC}</div></header>
-    <p class="el-print-head">Ballot Book NZ · independent guide, not the Electoral Commission · printed ${esc(nzDateLong())} · official information: vote.nz or 0800 36 76 56</p>
     ${sel ? `<details class="disclose el-find"><summary>Not your electorate? Find yours</summary><div class="disclose__body"><div class="el-find__in">${finder}</div></div></details><div class="stack stack--l" id="el-body">${electorateBody(sel)}</div>`
       : `<div class="split split--5-7"><div class="stack sticky">${finder}</div><div class="stack stack--l"><div class="shead"><h2>Browse all ${E.length}</h2></div>${browseRows()}</div></div>`}
     ${OFFICIAL_LINE}
@@ -139,6 +141,8 @@ V.electorate = async slug => {
   const body = $('#el-body');
   body.addEventListener('click', ev => { const b = ev.target.closest('[data-cand]'); if (!b) return; const p = findPerson(b.dataset.cand, b.dataset.cname); if (p) openPerson(p);
     else openSheet({ title: b.dataset.cname, html: '<p class="small muted">We don’t have a profile for this candidate yet. Their party’s website, policy.nz and vote.nz list the candidates standing.</p>' }) });
-  $('#el-print').onclick = () => window.print();
+  // the one-pager prints the 2023 result and the seat's history even when those blocks are closed on screen
+  $('#el-print').onclick = () => { const shut = [...body.querySelectorAll('.disclose[data-print]:not([open])')]; shut.forEach(d => { d.open = true });
+    const back = () => { shut.forEach(d => { d.open = false }); removeEventListener('afterprint', back) }; addEventListener('afterprint', back); window.print() };
   const cmp = $('#el-compare'); if (cmp) cmp.onclick = () => compareCands(sel);
 };

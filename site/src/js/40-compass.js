@@ -17,7 +17,7 @@ const compassMins = C => (C.scoring && C.scoring.min_items) || { economic: 6, so
 function compassMe(C, answers) { const items = C.items || []; const mins = compassMins(C);
   return { x: axisScore(items, answers, 'economic', mins.economic), y: axisScore(items, answers, 'social', mins.social), pop: axisScore(items, answers, 'populism', mins.populism) } }
 // Square plot, −10..+10 on both axes. size 'narrow' (360, phone) or 'wide' (560, desktop); CSS shows one.
-function compassPlot(me, parties, { showMe = true, size = 'both' } = {}) {
+function compassPlot(me, parties, { showMe = true, size = 'both', table = true } = {}) {
   const one = (W, fs, cls) => { const pad = 28, H = W; const sx = v => pad + (v + 10) / 20 * (W - 2 * pad), sy = v => H - pad - (v + 10) / 20 * (H - 2 * pad);
     let g = `<rect class="cplot__bg" x="${pad}" y="${pad}" width="${W - 2 * pad}" height="${H - 2 * pad}" rx="10"/><g class="grid">`;
     for (let v = -10; v <= 10; v += 5) if (v) g += `<line x1="${sx(v)}" x2="${sx(v)}" y1="${pad}" y2="${H - pad}"/><line y1="${sy(v)}" y2="${sy(v)}" x1="${pad}" x2="${W - pad}"/>`;
@@ -33,18 +33,23 @@ function compassPlot(me, parties, { showMe = true, size = 'both' } = {}) {
       let c = cands.find(cd => !hit(box(cd))) || cands[0]; placed.push(box(c));
       return `<g class="cplot__p" style="--pc:${pcolor(p.slug)}"><circle cx="${cx}" cy="${cy}" r="7"><title>${esc(label)}: economic ${fmt(p.x, 0)}, social ${fmt(p.y, 0)}</title></circle><text x="${c[0]}" y="${c[1]}" text-anchor="${c[2]}" style="font-size:${fs}px">${esc(label)}</text></g>` }).join('');
     if (showMe && me && me.x && me.y) { const cx = sx(me.x.score), cy = sy(me.y.score); g += `<circle class="cplot__ring" cx="${cx}" cy="${cy}" r="8"/><text class="cplot__me" x="${cx}" y="${cy - 14}" text-anchor="middle" style="font-size:${fs + 1}px">You</text>` }
-    return `<svg class="chart cplot ${cls}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Values compass: economic left to right across, social libertarian to authoritarian up the page${showMe && me && me.x && me.y ? `; you are the shaded box` : ''}. The same positions are listed in the table below.">${g}</svg>` };
+    return `<svg class="chart cplot ${cls}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Values compass: economic left to right across, social libertarian to authoritarian up the page${showMe && me && me.x && me.y ? `; you are the shaded box` : ''}.${table ? ' The same positions are listed in the table on this page.' : ''}">${g}</svg>` };
   if (size === 'narrow') return one(360, 12, '');
   return one(360, 12, 'chart--narrow') + one(560, 13, 'chart--wide') }
 const compassWord = (v, lo, hi) => v == null ? '' : Math.abs(v) < 2 ? 'near the centre' : (v < 0 ? lo : hi) + (Math.abs(v) >= 6 ? ', strongly' : '');
 const sgnInt = v => { const r = Math.round(v); return (r < 0 ? '−' : r > 0 ? '+' : '') + Math.abs(r) };
 const compassRange = a => `${sgnInt(Math.max(-10, a.score - a.half))} to ${sgnInt(Math.min(10, a.score + a.half))}`;
 function compassSentence(me) { return `${me.x ? `Economically you lean <b>${compassWord(me.x.score, 'left', 'right')}</b> (somewhere from ${compassRange(me.x)} on a −10 to +10 scale). ` : 'Answer at least 6 economic questions to place you on the economic axis. '}${me.y ? `Socially you lean <b>${compassWord(me.y.score, 'libertarian / pluralist', 'authoritarian / traditional')}</b> (${compassRange(me.y)}). ` : 'Answer at least 8 social questions for the social axis. '}${me.pop ? `On populism: <b>${compassWord(me.pop.score, 'pluralist', 'populist')}</b> (${compassRange(me.pop)}).` : ''}` }
-// Small summary for Your results.
-function compassSummaryHTML(st) { const C = G().compass || {}; const CP = G().compass_parties || {}; const me = compassMe(C, st.answers || {}); const n = Object.keys(st.answers || {}).length;
-  const parties = partyCompassPoints(C, CP, st.source || 'coded');
-  return `<div class="split split--5-7"><div class="stack"><p class="soft">${compassSentence(me)}</p><p class="micro muted">${n} of ${(C.items || []).length} answered · parties placed ${(st.source || 'coded') === 'coded' ? 'from their 2026 policies and votes' : 'by expert surveys (2019)'}. The shaded box is you, as a range.</p></div>
-    <div class="cplot-s">${compassPlot(me, parties, { size: 'narrow' })}</div></div>` }
+// The plot's text alternative: every placed party A–Z, plus you as a range.
+function compassTableHTML(me, shown) { return `<div class="table-wrap"><table class="table"><caption class="sr-only">Values compass positions, A–Z</caption><thead><tr><th scope="col">Party (A–Z)</th><th scope="col" class="n">Economic</th><th scope="col" class="n">Social</th></tr></thead><tbody>
+  ${me.x && me.y ? `<tr><td><b>You</b></td><td class="n">${compassRange(me.x)}</td><td class="n">${compassRange(me.y)}</td></tr>` : ''}
+  ${chooseAZ(shown.map(p => p.slug)).map(s => { const p = shown.find(x => x.slug === s); return `<tr><td><span class="sw" style="--pc:${pcolor(s)}"></span> ${esc(pname(s))}</td><td class="n">${sgnInt(p.x)}</td><td class="n">${sgnInt(p.y)}</td></tr>` }).join('')}</tbody></table></div><p class="micro muted">−10 = left / libertarian, +10 = right / authoritarian.</p>` }
+// Small summary for Your results (withTable: add the table version under a .disclose).
+function compassSummaryHTML(st, withTable) { const C = G().compass || {}; const CP = G().compass_parties || {}; const me = compassMe(C, st.answers || {}); const n = Object.keys(st.answers || {}).length;
+  const parties = partyCompassPoints(C, CP, st.source || 'coded'); const shown = parties.filter(p => p.x != null && p.y != null);
+  return `<div class="split split--5-7"><div class="stack"><p class="soft">${compassSentence(me)}</p><p class="micro muted">${n} of ${(C.items || []).length} answered · parties placed ${(st.source || 'coded') === 'coded' ? 'from their 2026 policies and votes' : 'by expert surveys (2019)'}. The shaded box is you, as a range.</p>
+    ${withTable ? `<details class="disclose"><summary>The same positions as a table</summary><div class="disclose__body">${compassTableHTML(me, shown)}</div></details>` : ''}</div>
+    <div class="cplot-s">${compassPlot(me, parties, { size: 'narrow', table: withTable })}</div></div>` }
 
 V.compass = (arg) => {
   const C = G().compass || {}; const CP = G().compass_parties || {}; const items = C.items || [];
@@ -71,7 +76,7 @@ V.compass = (arg) => {
     $('#main').innerHTML = `<div class="split split--7-5 quizq">
       <section class="stack stack--l" aria-labelledby="stmt">
         <div class="progress-line"><b>${i + 1} of ${items.length}</b><div class="bar"><i style="--w:${Math.round(i / items.length * 100)}%"></i></div><a class="small" href="#/choose/compass/results">Results so far</a></div>
-        <p id="stmt" class="statement" tabindex="-1">${esc(q.text)}</p>
+        <h1 id="stmt" class="statement" tabindex="-1">${esc(q.text)}</h1>
         ${q.scale && q.scale.type === 'feeling5' ? '<p class="soft">How do you feel about this?</p>' : ''}
         <div class="likert" role="radiogroup" aria-labelledby="stmt"><div class="likert__opts">${vals.map((v, k) => `<button class="likert__opt" role="radio" type="button" data-v="${v}" aria-checked="${a === v}" tabindex="${(typeof a === 'number' ? a === v : k === 0) ? 0 : -1}"><span class="likert__dot">${TICK}</span>${esc(labels[k])}</button>`).join('')}</div></div>
         <div class="quiz-nav"><button class="btn btn--quiet" type="button" id="qback"${i === 0 ? ' disabled' : ''}>${ic('back', 'i--s')} Back</button><button class="btn btn--quiet" type="button" id="qskip">Skip, no opinion</button><button class="btn btn--primary btn--l" type="button" id="qnext"${typeof a === 'number' ? '' : ' disabled'}>${last ? 'See results' : 'Next'} ${ic('chev', 'i--s')}</button></div>
@@ -83,7 +88,7 @@ V.compass = (arg) => {
     focusMode('Values compass', 'choose');
     const opts = [...$('#main').querySelectorAll('.likert__opt')];
     const pickOpt = (b, focus) => { st.answers[q.id] = +b.dataset.v; save(); opts.forEach(x => { const on = x === b; x.setAttribute('aria-checked', on); x.tabIndex = on ? 0 : -1 }); if (focus) b.focus(); $('#qnext').disabled = false };
-    opts.forEach((b, k) => { b.onclick = () => pickOpt(b); b.onkeydown = e => { const d = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key]; if (!d) return; e.preventDefault(); pickOpt(opts[(k + d + opts.length) % opts.length], true) } });
+    opts.forEach((b, k) => { b.onclick = () => pickOpt(b); b.onkeydown = e => { const d = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key]; const to = e.key === 'Home' ? 0 : e.key === 'End' ? opts.length - 1 : d ? (k + d + opts.length) % opts.length : -1; if (to < 0) return; e.preventDefault(); pickOpt(opts[to], true) } });
     const step = d => { i = Math.max(0, i + d); st.i = i; save(); ask(); window.scrollTo(0, 0); const s = $('#stmt'); if (s) s.focus({ preventScroll: true }) };
     $('#qnext').onclick = () => step(1); $('#qskip').onclick = () => { delete st.answers[q.id]; step(1) }; $('#qback').onclick = () => step(-1) };
   const results = () => {
@@ -94,22 +99,22 @@ V.compass = (arg) => {
     const popRow = (name, v, pc, you) => `<div class="tally__row" style="--pc:${pc}">${you ? `<span class="small"><b>${name}</b></span>` : `<span class="ptag ptag--s"><span class="sw"></span>${name}</span>`}<div class="bar" role="img" aria-label="${name}: ${fmt(v, 0)} on −10 to +10"><i style="--w:${Math.round((v + 10) / 20 * 100)}%"></i></div><span class="tally__v">${sgnInt(v)}</span></div>`;
     $('#main').innerHTML = sectionFrame('choose', 'choose/compass', `
       ${chooseHead('compass', 'Choose · Values compass', 'Where you sit', compassSentence(me), `<p class="micro muted">${answered} of ${items.length} answered · your answers stay on this device</p>`)}
-      <div class="row"><span class="micro muted">Place the parties</span><div class="seg" style="min-width:0" role="group" aria-label="How parties are placed"><button type="button" data-src="coded" aria-pressed="${source === 'coded'}">2026 policies &amp; votes</button><button type="button" data-src="published" aria-pressed="${source === 'published'}">Experts, 2019</button></div></div>
+      <div class="row"><span class="micro muted" id="csrc-lab">Place the parties</span><div class="seg" style="min-width:0" role="group" aria-labelledby="csrc-lab"><button type="button" data-src="coded" aria-pressed="${source === 'coded'}">2026 policies &amp; votes</button><button type="button" data-src="published" aria-pressed="${source === 'published'}">Experts, 2019</button></div></div>
       <div class="split split--7-5">
-        <section class="stack">
+        <section class="stack" aria-label="The compass plot">
           <div class="cplot-wrap">${compassPlot(me, parties)}</div>
           <p class="small soft">The shaded box is you: a range, from how many questions you answered and how consistent your answers were. ${source === 'coded' ? 'Party points: each party “answered” the same questions from its manifesto, policy documents, votes and leaders’ statements, with evidence for every cell; parties with too few evidenced answers on an axis are not shown.' : 'Party points: Global Party Survey 2019 (experts rated the five parliamentary parties of 2019; smaller parties and Te Pāti Māori were not rated), rescaled to these axes.'}</p>
           ${missing.length ? `<p class="micro muted">Not placed (${source === 'coded' ? 'too few evidenced answers' : 'not rated'}): ${missing.map(s => esc(pname(s))).join(', ')}.</p>` : ''}
-          <details class="disclose"><summary>Positions as a list</summary><div class="disclose__body"><div class="table-wrap"><table class="table"><thead><tr><th>Party (A–Z)</th><th class="n">Economic</th><th class="n">Social</th></tr></thead><tbody>
-            ${me.x && me.y ? `<tr><td><b>You</b></td><td class="n">${compassRange(me.x)}</td><td class="n">${compassRange(me.y)}</td></tr>` : ''}
-            ${chooseAZ(shown.map(p => p.slug)).map(s => { const p = shown.find(x => x.slug === s); return `<tr><td><span class="sw" style="--pc:${pcolor(s)}"></span> ${esc(pname(s))}</td><td class="n">${sgnInt(p.x)}</td><td class="n">${sgnInt(p.y)}</td></tr>` }).join('')}</tbody></table></div><p class="micro muted">−10 = left / libertarian, +10 = right / authoritarian.</p></div></details>
         </section>
-        <aside class="stack stack--l">
-          ${me.pop || pops.length ? `<section class="stack"><div class="shead"><h2 class="h3">Populism</h2></div><p class="small soft">A secondary measure: higher means more anti-establishment. Indicative only. A–Z.</p><div class="tally ctally">${me.pop ? popRow('You', me.pop.score, 'var(--signal)', true) : ''}${pops.map(p => popRow(esc(pname(p.slug)), p.pop, pcolor(p.slug))).join('')}</div></section>` : ''}
-          ${chooseUnknowns(['A two-axis map flattens politics: parties and people differ on things it doesn’t measure, such as Te Tiriti, the environment, competence and who they’d work with.', 'Party positions coded from documents tend to look more polarised than expert ratings; both are shown so you can see the gap.', 'Your range shrinks as you answer more questions. With only a few answers it’s wide for a reason.', 'This is not a voting recommendation. For 2026 policies, use <a href="#/choose/quiz">Find your match</a>.'], ['Full method, item sources and licences', 'guide/compass-method.md'])}
+        <aside class="stack">
+          <div>
+            <details class="disclose"><summary>Positions as a table</summary><div class="disclose__body">${compassTableHTML(me, shown)}</div></details>
+            ${me.pop || pops.length ? `<details class="disclose"><summary>Populism</summary><div class="disclose__body"><p class="small soft">A secondary measure: higher means more anti-establishment. Indicative only. A–Z.</p><div class="tally ctally">${me.pop ? popRow('You', me.pop.score, 'var(--signal)', true) : ''}${pops.map(p => popRow(esc(pname(p.slug)), p.pop, pcolor(p.slug))).join('')}</div></div></details>` : ''}
+            ${chooseUnknownsDisclose(['A two-axis map flattens politics: parties and people differ on things it doesn’t measure, such as Te Tiriti, the environment, competence and who they’d work with.', 'Party positions coded from documents tend to look more polarised than expert ratings; both are shown so you can see the gap.', 'Your range shrinks as you answer more questions. With only a few answers it’s wide for a reason.', 'This is not a voting recommendation. For 2026 policies, use <a href="#/choose/quiz">Find your match</a>.'], ['Full method, item sources and licences', 'guide/compass-method.md'])}
+          </div>
+          <div class="row"><button class="btn btn--primary" type="button" id="cagain">${i >= items.length ? 'Change my answers' : 'Keep answering'}</button><a class="btn" href="#/choose/results">All your results</a><button class="btn btn--quiet" type="button" id="creset2">Start over</button></div>
         </aside>
       </div>
-      <div class="row"><button class="btn btn--primary" type="button" id="cagain">${i >= items.length ? 'Change my answers' : 'Keep answering'}</button><a class="btn" href="#/choose/results">All your results</a><button class="btn btn--quiet" type="button" id="creset2">Start over</button></div>
       ${RESULT_DISCLAIMER}`);
     $('#main').querySelectorAll('[data-src]').forEach(b => b.onclick = () => { source = b.dataset.src; st.source = source; save(); const y = scrollY; results(); scrollTo(0, y) });
     $('#cagain').onclick = () => { i = i >= items.length ? 0 : i; ask() }; $('#creset2').onclick = () => { st.answers = {}; st.i = 0; i = 0; save(); intro() } };

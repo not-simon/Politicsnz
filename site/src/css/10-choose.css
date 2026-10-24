@@ -61,3 +61,39 @@
 /* tallies with counts like "11 of 16" */
 .ctally .tally__row { grid-template-columns: minmax(6rem, 10rem) minmax(0, 1fr) auto }
 .ctally .tally__v { white-space: nowrap; min-width: 3.5rem }
+
+/* ----- round 2: digestible pages ----- */
+.choose-block { display: block }
+.choose-rowbtn { width: 100%; background: none; border: 0; border-bottom: 1px solid var(--line); text-align: left; font: inherit; color: var(--text); cursor: pointer }
+/* a heading inside a .disclose summary keeps the summary's look */
+.choose-sum { font: inherit; color: inherit; letter-spacing: inherit; font-variation-settings: normal; text-wrap: pretty }
+.choose-unk ul { padding-left: 1.1em; display: grid; gap: 6px; font-size: var(--t-small) }
+.choose-notes { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-3); font-size: var(--t-small); color: var(--text-2) }
+.choose-notes li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--s-2); align-items: start }
+.choose-notes .i { margin-top: 2px; color: var(--text-3) }
+@media (min-width: 720px) { .choose-notes { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-5) } }
+/* hub: lead tile + three; on desktop the last one spans the two columns beside the lead */
+@media (min-width: 1024px) { .tools--choose > .tool:last-child { grid-column: span 2 } }
+/* Your results: summary blocks and tool switcher */
+.choose-tabs { justify-self: start }
+.choose-sumgrid { display: grid; gap: var(--s-6) }
+@media (min-width: 1024px) { .choose-sumgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--col-gap) } }
+.choose-res { align-content: start }
+.choose-counts { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4) }
+.choose-counts li { display: inline-flex; align-items: center; gap: 6px }
+.choose-counts .num { font-size: 18px }
+/* compare: one .disclose per field pair */
+.cmp .disclose__body { color: var(--text) }
+.cmp__d > summary { font-size: 18px }
+.cmp__d:has(h3) > summary { font-size: 16px }
+.choose-cmpbar { margin-bottom: calc(-1 * var(--s-2)) }
+/* likert: focus ring on the dot, so it is obvious which option arrow keys will move from */
+.likert__opt:focus-visible { outline: none }
+.likert__opt:focus-visible .likert__dot { outline: 3px solid var(--focus); outline-offset: 3px }
+.likert__opt:focus-visible { text-decoration: underline; text-underline-offset: 3px }
+@media (max-width: 719px) {
+  .tools--choose > .tool:not(.tool--lead) { padding: var(--s-4); grid-template-columns: minmax(0, 1fr) 60px }
+  .tools--choose > .tool:not(.tool--lead) .tool__art { width: 60px; height: 60px }
+  .tools--choose > .tool:not(.tool--lead) .tool__p { margin-top: 0 }
+}
+.choose-tabs [aria-current="page"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 2px var(--shadow-tint), inset 0 0 0 1px var(--line) }

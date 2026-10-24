@@ -19,21 +19,23 @@ function buildDeck(cards, done, topic) {
 function tallyFor(st, party) { let n = 0, agree = 0; for (const d of Object.values(st.done || {})) if (d.party === party && d.v !== 'skip') { n++; if (d.v === 'agree') agree++ } return { n, agree } }
 const swipeTopic = t => TOPIC_NAMES[t] || 'Other';
 // The tally block (used on the swipe page and on Your results).
-function swipeTallyHTML(st) {
+function swipeTallyHTML(st, noHead) {
   const done = Object.values(st.done || {}); const seen = [...new Set(done.filter(d => d.v !== 'skip').map(d => d.party))];
   const total = done.filter(d => d.v !== 'skip').length;
   const rows = chooseAZ(seen).map(p => ({ p, ...tallyFor(st, p) })).filter(r => r.n);
   const unseen = chooseAZ(chooseParties().filter(s => !seen.includes(s)));
-  if (!total) return `<div class="shead"><div class="shead__row"><h2 class="h3">Your tally so far</h2><span class="micro muted">0 cards</span></div></div><p class="small soft">Your agreement rate with each party shows up here as you go.</p>`;
-  return `<div class="shead"><div class="shead__row"><h2 class="h3">Your tally so far</h2><span class="micro muted">${total} card${total === 1 ? '' : 's'}</span></div></div>
+  const hd = noHead ? '' : `<div class="shead"><div class="shead__row"><h2 class="h3">Your tally so far</h2><span class="micro muted">${total} card${total === 1 ? '' : 's'}</span></div></div>`;
+  if (!total) return `${hd}<p class="small soft">Your agreement rate with each party shows up here as you go.</p>`;
+  return `${hd}
     <p class="small soft">How often you agreed, out of the cards you’ve seen from each party, A–Z. Parties come up about equally often, so long manifestos don’t win by volume.</p>
     <div class="tally ctally">${rows.map((r, k) => { const rate = Math.round(r.agree / r.n * 100); return `<div class="tally__row" style="--pc:${pcolor(r.p)}"><span class="tally__who"><span class="ptag ptag--s"><span class="sw"></span>${esc(pname(r.p))}</span>${r.n < 3 ? ' <span class="badge" title="Fewer than 3 cards">few</span>' : ''}</span><div class="bar" role="img" aria-label="${esc(pname(r.p))}: agreed with ${r.agree} of ${r.n}, ${rate}%"><i style="--w:${rate}%;--i:${k}"></i></div><span class="tally__v"><b>${r.agree}</b> of ${r.n}</span></div>` }).join('')}</div>
     ${unseen.length ? `<p class="micro muted">No cards yet from: ${unseen.map(s => esc(pname(s))).join(', ')}.</p>` : ''}
     <p class="micro muted">${total < SWIPE_ROUND ? `${total} card${total === 1 ? ' is' : 's is'} a small sample. Keep going for a clearer picture.` : '“Few” marks parties you’ve seen fewer than 3 cards from: their rate can swing a lot.'}</p>` }
-function swipeLikedHTML(st) { const byId = Object.fromEntries((S.swipe || []).map(c => [c.id, c]));
-  const liked = Object.entries(st.done || {}).filter(([, d]) => d.v === 'agree').sort((a, b) => (b[1].t || 0) - (a[1].t || 0)).map(([id]) => byId[id]).filter(Boolean);
-  if (!liked.length) return '';
-  return `<details class="disclose"><summary>Policies you agreed with (${liked.length})</summary><div class="disclose__body"><div class="stack stack--s">${liked.map(c => `<div class="pol" style="--pc:${pcolor(c.party)}"><p class="pol__t" style="font-weight:600">${esc(c.statement)}</p><p class="pol__m micro muted"><span class="ptag ptag--s" style="--pc:${pcolor(c.party)}"><span class="sw"></span>${esc(pname(c.party))}</span> · ${esc(swipeTopic(c.topic))}${c.doc ? ` · <button class="linkbtn" type="button" data-doc="${esc(c.party)}|${esc(c.doc)}">Read the full policy</button>` : ''}</p></div>`).join('')}</div></div></details>` }
+function swipeLiked(st) { const byId = Object.fromEntries((S.swipe || []).map(c => [c.id, c]));
+  return Object.entries(st.done || {}).filter(([, d]) => d.v === 'agree').sort((a, b) => (b[1].t || 0) - (a[1].t || 0)).map(([id]) => byId[id]).filter(Boolean) }
+function swipeLikedList(liked) { return `<div class="stack stack--s">${liked.map(c => `<div class="pol" style="--pc:${pcolor(c.party)}"><p class="pol__t" style="font-weight:600">${esc(c.statement)}</p><p class="pol__m micro muted"><span class="ptag ptag--s" style="--pc:${pcolor(c.party)}"><span class="sw"></span>${esc(pname(c.party))}</span> · ${esc(swipeTopic(c.topic))}${c.doc ? ` · <button class="linkbtn" type="button" data-doc="${esc(c.party)}|${esc(c.doc)}">Read the full policy</button>` : ''}</p></div>`).join('')}</div>` }
+function swipeLikedHTML(st, open) { const liked = swipeLiked(st); if (!liked.length) return '';
+  return `<details class="disclose"${open ? ' open' : ''}><summary>Policies you agreed with (${liked.length})</summary><div class="disclose__body">${swipeLikedList(liked)}</div></details>` }
 
 V.swipe = async () => {
   if (!S.swipe) S.swipe = await getJSON('data/swipe.json').catch(() => []);
@@ -43,25 +45,25 @@ V.swipe = async () => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const topics = Object.keys(TOPIC_NAMES).filter(t => S.swipe.some(c => c.topic === t));
   $('#main').innerHTML = sectionFrame('choose', 'choose/swipe', `
-    ${chooseHead('cards', 'Choose · Policy swipe', 'Agree or disagree?', 'Real 2026 policies, party hidden until you decide. Swipe, use the buttons, or the arrow keys.')}
+    ${chooseHead('cards', 'Choose · Policy swipe', 'Agree or disagree?', 'Real 2026 policies, party hidden until you decide.')}
     <div class="chips chips--scroll" role="group" aria-label="Topic" id="sw-topics">${[['', 'All topics'], ...topics.map(t => [t, TOPIC_NAMES[t]])].map(([t, l]) => `<button class="chip" type="button" data-topic="${esc(t)}" aria-pressed="${t === topic}">${esc(l)}</button>`).join('')}</div>
     <div class="split split--7-5">
       <section class="stack stack--l" aria-label="Card">
         <div class="progress-line" id="sw-prog"></div>
         <div class="deck" id="deck"></div>
-        <div class="swipe-actions" id="acts">
-          <button class="swipe-btn swipe-btn--disagree" type="button" data-swipe="disagree"><i>${ic('x')}</i>Disagree</button>
-          <button class="swipe-btn swipe-btn--skip" type="button" data-swipe="skip"><i>${ic('minus')}</i>Not sure</button>
-          <button class="swipe-btn swipe-btn--agree" type="button" data-swipe="agree"><i>${ic('check')}</i>Agree</button>
+        <div class="swipe-actions" id="acts" role="group" aria-label="Your verdict on this card">
+          <button class="swipe-btn swipe-btn--disagree" type="button" data-swipe="disagree" aria-label="Disagree with this policy" aria-keyshortcuts="ArrowLeft"><i>${ic('x')}</i>Disagree</button>
+          <button class="swipe-btn swipe-btn--skip" type="button" data-swipe="skip" aria-label="Not sure, skip this policy" aria-keyshortcuts="ArrowUp"><i>${ic('minus')}</i>Not sure</button>
+          <button class="swipe-btn swipe-btn--agree" type="button" data-swipe="agree" aria-label="Agree with this policy" aria-keyshortcuts="ArrowRight"><i>${ic('check')}</i>Agree</button>
         </div>
-        <p class="micro muted" style="text-align:center">Summaries are each party’s own policy, described neutrally. Keyboard: → agree, ← disagree, ↑ not sure.</p>
+        <p class="micro muted" style="text-align:center">Swipe the card, use the buttons, or the arrow keys: → agree, ← disagree, ↑ not sure. Summaries are each party’s own policy, described neutrally.</p>
+        <p class="sr-only" id="sw-say" role="status"></p>
       </section>
       <aside class="stack stack--l">
-        <div id="sw-reveal" aria-live="polite"></div>
-        <section class="stack" id="sw-tally" aria-label="Your tally"></section>
-        <div id="sw-liked"></div>
-        ${chooseUnknowns(['The tally only covers the cards you happened to see, so a party you saw twice can swing from 0% to 100%.', 'Some parties publish far fewer policies; you may see the same few from them.', 'A specific promise can look very different from a party’s overall direction. Find your match is the more careful tool.'], ['How the swipe works', 'guide/quiz-research.md'])}
-        <div class="row"><a class="btn btn--s" href="#/choose/results">All your results</a><button class="btn btn--s btn--quiet" type="button" id="sw-reset">Start over</button></div>
+        <div id="sw-reveal"></div>
+        <div class="rows" id="sw-rows"></div>
+        ${chooseUnknownsDisclose(['The tally only covers the cards you happened to see, so a party you saw twice can swing from 0% to 100%.', 'Some parties publish far fewer policies; you may see the same few from them.', 'A specific promise can look very different from a party’s overall direction. Find your match is the more careful tool.'], ['How the swipe works', 'guide/quiz-research.md'])}
+        <div class="row"><a class="btn btn--s" href="#/choose/results/swipe">All your results</a><button class="btn btn--s btn--quiet" type="button" id="sw-reset">Start over</button></div>
         ${RESULT_DISCLAIMER}
       </aside>
     </div>`);
@@ -73,11 +75,19 @@ V.swipe = async () => {
       ${c.how ? `<div class="scard__body"><p><b>What it would do:</b> ${esc(c.how)}</p></div>` : ''}
       ${c.why ? `<details class="disclose" style="border-top:1px solid var(--line)"><summary class="small">The reasoning given</summary><div class="disclose__body small"><p>${esc(c.why)}</p></div></details>` : ''}
       <p class="src">${ic('doc')} From a party’s 2026 policy document · summarised, meaning kept</p></article>`;
-  const drawTally = () => { $('#sw-tally').innerHTML = swipeTallyHTML(st); $('#sw-liked').innerHTML = swipeLikedHTML(st) };
+  // The tally and the liked list sit behind rows that open the sheet, so the deck stays the first screen.
+  const tallySheet = () => openSheet({ title: 'Your tally so far', html: `<div class="stack">${swipeTallyHTML(st, true)}<a class="more small" href="#/choose/results/swipe">All your results ${ic('chev', 'i--xs')}</a>${RESULT_DISCLAIMER}</div>` });
+  const likedSheet = () => { const liked = swipeLiked(st); openSheet({ title: `Policies you agreed with (${liked.length})`, html: `<div class="stack"><p class="small soft">Newest first. Each one’s party is shown now that you’ve decided.</p>${swipeLikedList(liked)}${RESULT_DISCLAIMER}</div>` }) };
+  const drawTally = () => { const total = Object.values(st.done).filter(d => d.v !== 'skip').length; const parties = new Set(Object.values(st.done).filter(d => d.v !== 'skip').map(d => d.party)).size; const liked = swipeLiked(st).length;
+    $('#sw-rows').innerHTML = chooseRowBtn('id="sw-tally"', 'poll', 'Your tally so far', total ? `${total} card${total === 1 ? '' : 's'} from ${parties} part${parties === 1 ? 'y' : 'ies'} · agreement with each, A–Z` : 'Your agreement rate with each party shows up here as you go')
+      + (liked ? chooseRowBtn('id="sw-liked"', 'check', `Policies you agreed with (${liked})`, 'With the party, the topic and the full policy') : '');
+    $('#sw-tally').onclick = tallySheet; const l = $('#sw-liked'); if (l) l.onclick = likedSheet };
   const drawProg = () => { const left = deck.length - i; $('#sw-prog').innerHTML = `<b>Card ${Math.min(sess + 1, SWIPE_ROUND)} of ${SWIPE_ROUND}</b><div class="bar"><i style="--w:${Math.round(sess / SWIPE_ROUND * 100)}%"></i></div><span class="micro muted">${left} left${topic ? ' on this topic' : ''}</span>` };
   const render = () => { busy = false; drawProg();
-    if (i >= deck.length) { stage.innerHTML = `<div class="panel panel--sunk"><h2 class="h3">You’ve seen every card${topic ? ' on this topic' : ''}.</h2><p class="soft">Pick another topic, or look at your tally.</p><a class="btn btn--primary" href="#/choose/results" style="justify-self:start">All your results</a></div>`; acts.hidden = true; return }
-    if (sess >= SWIPE_ROUND) { stage.innerHTML = `<div class="panel panel--sunk"><h2 class="h3">That’s ${SWIPE_ROUND} cards.</h2><p class="soft">Your tally is ${matchMedia('(min-width: 720px)').matches ? 'beside' : 'below'} the deck. Another round gives a clearer picture.</p><div class="row"><button class="btn btn--primary" type="button" id="sw-more">Another ${SWIPE_ROUND}</button><a class="btn" href="#/choose/results">All your results</a></div></div>`; acts.hidden = true; $('#sw-more').onclick = () => { sess = 0; render() }; return }
+    const hadFocus = acts.contains(document.activeElement);
+    const stop = html => { stage.innerHTML = html; acts.hidden = true; const t = $('#sw-tally2'); if (t) t.onclick = tallySheet; if (hadFocus) { const f = stage.querySelector('button, a'); if (f) f.focus() } };
+    if (i >= deck.length) { stop(`<div class="panel panel--sunk"><h2 class="h3">You’ve seen every card${topic ? ' on this topic' : ''}.</h2><p class="soft">Pick another topic, or look at your tally.</p><div class="row"><button class="btn btn--primary" type="button" id="sw-tally2" aria-haspopup="dialog">See your tally</button><a class="btn" href="#/choose/results/swipe">All your results</a></div></div>`); return }
+    if (sess >= SWIPE_ROUND) { stop(`<div class="panel panel--sunk"><h2 class="h3">That’s ${SWIPE_ROUND} cards.</h2><p class="soft">Another round gives a clearer picture.</p><div class="row"><button class="btn btn--primary" type="button" id="sw-more">Another ${SWIPE_ROUND}</button><button class="btn" type="button" id="sw-tally2" aria-haspopup="dialog">See your tally</button><a class="btn btn--quiet" href="#/choose/results/swipe">All your results</a></div></div>`); $('#sw-more').onclick = () => { sess = 0; render(); const b = acts.querySelector('[data-swipe="agree"]'); if (b) b.focus() }; return }
     acts.hidden = false;
     stage.innerHTML = (deck[i + 2] ? '<article class="scard scard--behind2" aria-hidden="true"><p>.</p></article>' : '') + (deck[i + 1] ? '<article class="scard scard--behind" aria-hidden="true"><p>.</p></article>' : '') + cardHTML(deck[i]);
     attachDrag($('#sc-top')) };
@@ -91,7 +101,8 @@ V.swipe = async () => {
   const decide = verdict => { if (busy) return; const c = deck[i]; if (!c) return; if (acts.hidden) return; busy = true;
     st.done[c.id] = { v: verdict, party: c.party, t: Date.now() }; saveSwipe(st);
     const top = $('#sc-top'); if (top) { top.style.transition = ''; top.style.transform = verdict === 'agree' ? 'translateX(130%) rotate(16deg)' : verdict === 'disagree' ? 'translateX(-130%) rotate(-16deg)' : 'translateY(-40px) scale(.96)'; top.style.opacity = '0' }
-    setTimeout(() => { i++; sess++; if (verdict !== 'skip') reveal(c, verdict); drawTally(); render() }, reduce ? 10 : 280) };
+    setTimeout(() => { i++; sess++; if (verdict !== 'skip') reveal(c, verdict); drawTally(); render();
+      const next = sess < SWIPE_ROUND && deck[i]; $('#sw-say').textContent = `${verdict === 'skip' ? 'Skipped.' : `You ${verdict === 'agree' ? 'agreed' : 'disagreed'}. That was a ${P(c.party).name || pname(c.party)} policy.`} ${next ? `Next card: ${next.statement}` : 'That’s the end of this round.'}` }, reduce ? 10 : 280) };
   function attachDrag(el) { if (!el) return; let x0 = null, y0 = 0, dx = 0, id = null; const stamp = el.querySelector('.scard__stamp');
     el.addEventListener('pointerdown', e => { if (e.button > 0 || e.target.closest('summary, a, button, details[open] .disclose__body')) return; x0 = e.clientX; y0 = e.clientY; dx = 0; id = e.pointerId });
     el.addEventListener('pointermove', e => { if (x0 == null || e.pointerId !== id) return; dx = e.clientX - x0;

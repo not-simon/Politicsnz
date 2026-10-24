@@ -1,6 +1,18 @@
 /* ===== Today + Vote + Your electorate (tokens only; both themes come from the tokens) ===== */
 .notec p { margin: 0; color: var(--text-3) }
 
+/* Today feed: compact rows (one or two lines each; the detail opens in the sheet) */
+.tfeed { list-style: none; margin: 0; padding: 0; display: grid }
+.tfrow { width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--s-3); align-items: center; padding: var(--s-3) 2px; border: 0; border-bottom: 1px solid var(--line); background: none; text-align: left; font: inherit; color: var(--text); cursor: pointer; transition: background var(--dur-1) }
+button.tfrow:hover { background: color-mix(in srgb, var(--sunk) 60%, transparent) }
+button.tfrow:hover .tfrow__t { text-decoration: underline; text-decoration-color: var(--link-underline); text-decoration-thickness: 2px }
+.tfrow > .i { color: var(--text-3) }
+.tfrow--static { cursor: auto }
+.tfrow__txt { display: grid; gap: 5px; min-width: 0 }
+.tfrow__t { font: 700 16px/1.3 var(--font-body) }
+.tfrow__t--links { font-weight: 500 } .tfrow__t--links a { font-weight: 700 }
+.tfrow__s { font-size: var(--t-small); color: var(--text-3); line-height: 1.3 }
+
 /* checklist tick as a real checkbox */
 .check__tick { position: relative; display: grid; place-items: center; cursor: pointer; align-self: start; margin-top: -2px }
 .check__tick input:focus-visible ~ .tick { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 50% }
@@ -15,6 +27,19 @@
 .vdates li.is-eday .num { color: var(--signal-text) }
 .dl dd { overflow-wrap: anywhere }
 
+/* a .rowlink that opens the sheet (a button, not a link) */
+button.rowlink { width: 100%; background: none; border: 0; border-bottom: 1px solid var(--line); text-align: left; font: inherit; color: var(--text); cursor: pointer }
+.vdates__wd { display: block; font-weight: 500 }
+
+/* How MMP works: contents list and jump targets */
+.mmp-toc { list-style: none; margin: 0; padding: 0 }
+.mmp-toc .rowlink { padding-block: var(--s-3) }
+.mmp-toc .rowlink__title { font-size: 16px }
+.mmp-toc .num { display: inline-block; min-width: 1.4em }
+.mmp-sec [tabindex="-1"]:focus { outline: none }
+.mmp-sec, .gloss__grp { scroll-margin-top: calc(var(--mast-h) + 56px) }
+.mmp-sec h2[tabindex="-1"], .gloss__l { scroll-margin-top: calc(var(--mast-h) + 56px) }
+
 /* plan builder */
 .plan .chips--scroll { margin-inline: 0; padding-inline: 0 }
 .plan__lbl { font: 700 var(--t-micro)/1 var(--font-body); letter-spacing: var(--track-eyebrow); text-transform: uppercase; color: var(--text-3) }
@@ -22,6 +47,13 @@
 
 /* glossary */
 .gloss__find { max-width: 26rem }
+.gloss__az { display: flex; flex-wrap: wrap; gap: 4px }
+.gloss__az a { display: grid; place-items: center; min-width: 32px; height: 32px; border-radius: var(--r-s); background: var(--sunk); color: var(--text); font: 700 14px/1 var(--font-body); text-decoration: none }
+.gloss__az a:hover { background: var(--line) }
+.gloss__grp[hidden] { display: none }
+.gloss__grp { display: grid; gap: var(--s-2) }
+.gloss__l { font: 800 var(--t-h3)/1 var(--font-display); color: var(--signal-text) }
+.gloss__l:focus { outline: none }
 .gloss { margin: 0; display: grid; border-top: var(--rule) solid var(--rule-ink) }
 .gloss__row { display: grid; gap: 4px; padding: var(--s-4) 0; border-bottom: 1px solid var(--line); scroll-margin-top: calc(var(--mast-h) + 56px) }
 .gloss__row[hidden] { display: none }
@@ -42,6 +74,8 @@
 .ballot__tick { position: absolute; right: calc(var(--s-3)); top: 0; width: 22px; height: 22px; opacity: 0; pointer-events: none; transition: top var(--dur-4) var(--ease-in-out), opacity var(--dur-2) }
 .ballot__tick.on { opacity: 1 }
 .ballot__tick .tick { width: 22px; height: 22px }
+.ballot__list:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px }
+.ballot__pause { justify-self: start }
 
 /* electorate */
 .el-sugg { border-top: 0 } .el-sugg__h { padding: var(--s-2) 2px }
@@ -52,12 +86,17 @@ button.cand:hover .cand__name { text-decoration: underline; text-decoration-colo
 .cand > .i { color: var(--text-3) }
 .history > div { min-width: 0; overflow-wrap: anywhere }
 .el-print-head { display: none }
+.el-sum { display: block; font-weight: 500; margin-top: 2px }
+.el-qr { margin: 0; display: grid; justify-items: center; gap: 4px; width: 9rem; text-align: center; font-size: 10px; line-height: 1.2 }
+.el-qr img { width: 96px; height: 96px }
 
 @media print {
   body:has(.el-page) .mast, body:has(.el-page) .phase, body:has(.el-page) .tabbar, body:has(.el-page) .colophon, body:has(.el-page) .subnav,
-  .el-page .finder, .el-page .el-find, .el-page .el-actions, .el-page .pagehead .lede, .el-page .disclose:not([open]), .el-page .cand > .i { display: none !important }
+  .el-page .finder, .el-page .el-find, .el-page .el-actions, .el-page .el-links, .el-page .pagehead .lede, .el-page .disclose:not([open]), .el-page .cand > .i { display: none !important }
   body:has(.el-page) { padding: 0 !important; background: Canvas }
-  .el-page .el-print-head { display: block; font-size: 11px; border-bottom: 1px solid CanvasText; padding-bottom: 6px }
+  .el-page .el-print-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; font-size: 11px; border-bottom: 1px solid CanvasText; padding-bottom: 6px }
+  .el-page .el-print-head p { margin: 0 }
+  .el-page .disclose > summary::after { display: none }
   .el-page .found { background: none; color: CanvasText; border: 2px solid CanvasText; padding: 12px }
   .el-page .found h2, .el-page .found .eyebrow, .el-page .found__alt, .el-page .found__alt b, .el-page .found a { color: CanvasText }
   .el-page .split { display: block } .el-page .split > * + * { margin-top: 16px }

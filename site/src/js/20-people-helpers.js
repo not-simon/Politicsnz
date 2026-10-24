@@ -35,16 +35,19 @@ function openPerson(p) {
   const roles = (p.roles || []).map(r => typeof r === 'string' ? r : (r.role || r.title || JSON.stringify(r)));
   const photo = p.photo_credit ? `Photo: ${esc(p.photo_credit)}${p.photo_license ? ' · ' + (p.photo_license_url ? ptExt(p.photo_license_url, esc(p.photo_license)) : esc(p.photo_license)) : ''}${/wikimedia|commons/i.test(p.photo_credit) ? ', cropped' : ''}` : 'No photo supplied';
   const wikiAttr = p.wikipedia && p.has_profile ? `<span>Biography adapted from ${ptExt(p.wikipedia, 'Wikipedia')}, licensed ${ptExt('https://creativecommons.org/licenses/by-sa/4.0/', 'CC BY-SA 4.0')}, and the sources it cites.</span>` : '';
+  // Header first (photo, party, status, standing), then the longer blocks folded; the first block present starts open.
+  const blocks = [
+    roles.length ? ['Roles', roles.length, `<ul class="small person-roles">${roles.map(r => `<li>${esc(r)}</li>`).join('')}</ul>`] : null,
+    p.bio || p.before || p.has_profile || p.wikipedia ? ['Profile', '', `${p.bio ? `<div class="prose"><p>${esc(p.bio)}</p></div>` : ''}${p.before ? `<p class="small"><b>Before politics:</b> ${esc(p.before)}</p>` : ''}
+      <div class="row">${p.has_profile ? `<a class="btn btn--s" href="#/about/page/${esc(p.folder)}/README.md">${ic('book', 'i--xs')} Read full profile</a>` : ''}${p.wikipedia ? `<a class="btn btn--s btn--quiet" href="${esc(p.wikipedia)}" target="_blank" rel="noopener">Wikipedia article ${ic('ext', 'i--xs')}</a>` : ''}</div>`] : null,
+    p.why ? ["In their words: why they're standing", '', `<div class="prose"><p>${esc(p.why)}</p></div>`] : null].filter(Boolean);
   openSheet({ title: p.name, depth: ['Party', 'Person', 'Sources'], at: 1,
     src: `<a class="ptag ptag--s" style="--pc:${pc}" href="#/parties/${esc(p.party)}"><span class="sw"></span>${esc(party.name || pname(p.party))}</a><span>${esc(STATUS[p.status] || p.status || '')}</span>${p.wikipedia ? ptExt(p.wikipedia, 'Wikipedia') : ''}${ptExt('https://github.com/not-simon/Politicsnz/tree/main/' + p.folder, 'Profile source')}`,
     html: `<div class="person-sheet">${faceHTML(p, p.party, 'face face--l')}
       <dl class="dl">${row('Party', `<a href="#/parties/${esc(p.party)}">${esc(party.name || pname(p.party))}</a>`)}${row('Status', esc(STATUS[p.status] || p.status || '') + (p.status_detail ? `<span class="soft" style="display:block;font-weight:400">${esc(p.status_detail)}</span>` : ''))}
-        ${row('Standing in 2026', standing)}${row('In Parliament', p.parliaments ? esc(p.parliaments.map(ordinal).join(', ')) + ' Parliament' + (p.parliaments.length > 1 ? 's' : '') : '')}${row('Before politics', esc(p.before || ''))}</dl></div>
-      ${roles.length ? `<section class="stack stack--s"><h3 class="h4">Roles</h3><ul class="small person-roles">${roles.map(r => `<li>${esc(r)}</li>`).join('')}</ul></section>` : ''}
-      ${p.bio ? `<section class="stack stack--s"><h3 class="h4">Profile</h3><div class="prose"><p>${esc(p.bio)}</p></div></section>` : ''}
-      ${p.why ? `<section class="stack stack--s"><h3 class="h4">In their words: why they're standing</h3><div class="prose"><p>${esc(p.why)}</p></div></section>` : ''}
-      <div class="row">${p.has_profile ? `<a class="btn btn--s" href="#/about/page/${esc(p.folder)}/README.md">${ic('book', 'i--xs')} Read full profile</a>` : ''}${p.wikipedia ? `<a class="btn btn--s btn--quiet" href="${esc(p.wikipedia)}" target="_blank" rel="noopener">Wikipedia article ${ic('ext', 'i--xs')}</a>` : ''}</div>
+        ${row('Standing in 2026', standing)}${row('In Parliament', p.parliaments ? esc(p.parliaments.map(ordinal).join(', ')) + ' Parliament' + (p.parliaments.length > 1 ? 's' : '') : '')}</dl></div>
+      <div class="person-blocks">${blocks.map(([t, n, body], i) => `<details class="disclose"${i === 0 ? ' open' : ''}><summary>${esc(t)}${n ? ` <span class="micro muted" style="margin-left:auto">${n}</span>` : ''}</summary><div class="disclose__body">${body}</div></details>`).join('')}</div>
       <p class="src"><span class="nm">${photo}</span>${wikiAttr}<a href="${CORRECTION_URL}" target="_blank" rel="noopener">${ic('flag', 'i--xs')} Correct or reply</a></p>` });
 }
 // Bring the pressed chip of a horizontally scrolling chip row into view (without moving the page).
-function ptScrollChips(row) { if (!row) return; const c = row.querySelector('[aria-pressed="true"]'); if (c && row.scrollWidth > row.clientWidth) row.scrollLeft = Math.max(0, c.offsetLeft - row.offsetLeft - 16) }
+function ptScrollChips(row) { if (!row) return; const c = row.querySelector('[aria-pressed="true"], [aria-current="page"]'); if (c && row.scrollWidth > row.clientWidth) row.scrollLeft = Math.max(0, c.offsetLeft - row.offsetLeft - 16) }

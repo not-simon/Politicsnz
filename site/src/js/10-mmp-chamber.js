@@ -28,24 +28,33 @@ function hemicycle(n) {
   const pts = []; radii.forEach((r, i) => { const k = counts[i]; for (let j = 0; j < k; j++) { const t = k === 1 ? Math.PI / 2 : Math.PI * (1 - j / (k - 1)); pts.push({ t, r, x: Math.cos(t) * r, y: Math.sin(t) * r }) } });
   pts.sort((a, b) => b.t - a.t || a.r - b.r); return { pts, dot: (1 - r0) / (rows - 1) * .42 } }
 // Seat map. svg.hemi with one <circle style="--pc;--i"> per seat: fills and the pop-in stagger come from CSS.
-// opts: highlight (Set of parties to keep at full strength), label, caption (count + "N to govern"), majLine, interactive (seats focusable)
-function chamberSVG(seatList, { highlight = null, label = 'Seats', caption = true, majLine = true, interactive = false } = {}) {
+// opts: highlight (Set of parties to keep at full strength), label, caption (count + "N to govern"), majLine,
+// interactive (seats are buttons with one tab stop; arrow keys move between them, see bindSeatKeys), describedby (ids of the
+// text alternative: the legend counts and the caption)
+function chamberSVG(seatList, { highlight = null, label = 'Seats', caption = true, majLine = true, interactive = false, describedby = '' } = {}) {
   const n = seatList.length; if (!n) return '<p class="muted small">No seat data yet.</p>';
   const { pts, dot } = hemicycle(n), R = 185, cx = 200, cy = 200, maj = Math.floor(n / 2) + 1;
   const c = pts.map((p, i) => { const s = seatList[i]; const dim = highlight && !highlight.has(s.party);
-    return `<circle${dim ? ' class="is-dim"' : ''} style="--pc:${pcolor(s.party)};--i:${i}"${interactive ? ' tabindex="0"' : ''} data-i="${i}" cx="${(cx + p.x * R).toFixed(1)}" cy="${(cy - p.y * R).toFixed(1)}" r="${(dot * R).toFixed(2)}"><title>${esc(seatTitle(s))}</title></circle>` }).join('');
+    return `<circle${dim ? ' class="is-dim"' : ''} style="--pc:${pcolor(s.party)};--i:${i}"${interactive ? ` role="button" tabindex="${i ? -1 : 0}" aria-label="${esc(seatLabel(s, i, n))}"` : ''} data-i="${i}" cx="${(cx + p.x * R).toFixed(1)}" cy="${(cy - p.y * R).toFixed(1)}" r="${(dot * R).toFixed(2)}"><title>${esc(seatTitle(s))}</title></circle>` }).join('');
   let line = '';
   if (majLine && n > maj) { const t = (pts[maj - 1].t + pts[maj].t) / 2, r0 = Math.min(...pts.map(p => p.r)) - dot * 1.4, r1 = 1 + dot * 1.4;
     const x0 = cx + Math.cos(t) * r0 * R, y0 = cy - Math.sin(t) * r0 * R, x1 = cx + Math.cos(t) * r1 * R, y1 = cy - Math.sin(t) * r1 * R;
-    line = `<line class="maj" x1="${x0.toFixed(1)}" y1="${y0.toFixed(1)}" x2="${x1.toFixed(1)}" y2="${y1.toFixed(1)}"/><text class="hemi__maj" x="${x1.toFixed(1)}" y="${(y1 - 4).toFixed(1)}" text-anchor="middle">${maj}</text>` }
-  return `<svg class="hemi" viewBox="0 -14 400 ${caption ? 258 : 218}" role="img" aria-label="${esc(label)}: ${n} seats, ${maj} needed to govern">${line}${c}${caption ? `<text class="hemi__n" x="200" y="214" text-anchor="middle">${n}</text><text class="hemi__l" x="200" y="236" text-anchor="middle">seats · ${maj} to govern</text>` : ''}</svg>` }
+    line = `<line class="maj" x1="${x0.toFixed(1)}" y1="${y0.toFixed(1)}" x2="${x1.toFixed(1)}" y2="${y1.toFixed(1)}" aria-hidden="true"/><text class="hemi__maj" x="${x1.toFixed(1)}" y="${(y1 - 4).toFixed(1)}" text-anchor="middle" aria-hidden="true">${maj}</text>` }
+  const name = `${label}: ${n} seats, ${maj} needed to govern${interactive ? '. Seats are buttons: use the arrow keys to move between them and Enter to see who sat there' : ''}`;
+  return `<svg class="hemi" viewBox="0 -14 400 ${caption ? 258 : 218}" role="${interactive ? 'group' : 'img'}" aria-label="${esc(name)}"${describedby ? ` aria-describedby="${describedby}"` : ''}>${line}${c}${caption ? `<text class="hemi__n" x="200" y="214" text-anchor="middle" aria-hidden="true">${n}</text><text class="hemi__l" x="200" y="236" text-anchor="middle" aria-hidden="true">seats · ${maj} to govern</text>` : ''}</svg>` }
 const seatTitle = s => s.name ? `${s.name} · ${pname(s.party)}` : `${pname(s.party)} seat`;
+const seatLabel = (s, i, n) => `Seat ${i + 1} of ${n}: ${seatTitle(s)}`;
+// Roving focus across an interactive hemicycle: one tab stop, arrows/Home/End move along the seats (left to right).
+function bindSeatKeys(container) { container.addEventListener('keydown', e => { const c = e.target.closest && e.target.closest('circle[data-i]'); if (!c) return;
+  const all = [...container.querySelectorAll('circle[data-i]')], i = +c.dataset.i;
+  const k = { ArrowRight: i + 1, ArrowDown: i + 1, ArrowLeft: i - 1, ArrowUp: i - 1, Home: 0, End: all.length - 1, PageDown: i + 10, PageUp: i - 10 }[e.key]; if (k == null) return;
+  e.preventDefault(); const t = all[Math.max(0, Math.min(all.length - 1, k))]; all.forEach(x => x.setAttribute('tabindex', x === t ? '0' : '-1')); t.focus() }) }
 // Change seats in place (fills cross-fade through CSS) when the count is unchanged; otherwise redraw (seats pop in).
 function chamberUpdate(container, seatList, opts = {}) {
   const svg = container.querySelector('svg.hemi'); const circles = svg ? svg.querySelectorAll('circle') : [];
   if (!svg || circles.length !== seatList.length) { container.innerHTML = chamberSVG(seatList, opts); return }
-  circles.forEach((c, i) => { const s = seatList[i]; c.style.setProperty('--pc', pcolor(s.party)); c.querySelector('title').textContent = seatTitle(s); c.classList.toggle('is-dim', !!(opts.highlight && !opts.highlight.has(s.party))) });
-  if (opts.label) svg.setAttribute('aria-label', `${opts.label}: ${seatList.length} seats, ${Math.floor(seatList.length / 2) + 1} needed to govern`);
+  circles.forEach((c, i) => { const s = seatList[i]; c.style.setProperty('--pc', pcolor(s.party)); c.querySelector('title').textContent = seatTitle(s); if (c.hasAttribute('role')) c.setAttribute('aria-label', seatLabel(s, i, seatList.length)); c.classList.toggle('is-dim', !!(opts.highlight && !opts.highlight.has(s.party))) });
+  if (opts.label) { const n = seatList.length; svg.setAttribute('aria-label', `${opts.label}: ${n} seats, ${Math.floor(n / 2) + 1} needed to govern${opts.interactive ? '. Seats are buttons: use the arrow keys to move between them and Enter to see who sat there' : ''}`) }
 }
 function seatsFromComposition(comp, members) {
   const parties = Object.keys(comp).filter(p => comp[p] > 0).sort((a, b) => P(a).order - P(b).order); const list = [];
@@ -87,20 +96,32 @@ const ptagHTML = (p, label) => `<span class="ptag ptag--s" style="--pc:${pcolor(
    so the router clears it on navigation. Keyboard: the range takes arrow keys; reduced motion: CSS drops the roll, steps stay. */
 function scrubberHTML({ id, labels, i, aria = 'Election year', play = 'Play through the years', note = '' }) {
   const fill = labels.length > 1 ? i / (labels.length - 1) * 100 : 0;
-  return `<div class="scrubber" id="${id}"><button class="scrubber__play" type="button" aria-label="${esc(play)}">${ic('play')}${ic('pause')}</button>
-    <div class="scrubber__main"><div class="scrubber__head"><div class="scrubber__year" aria-live="polite"><span>${esc(labels[i])}</span></div><span class="scrubber__note">${note}</span></div>
-      <div class="scrubber__track"><input class="range" type="range" min="0" max="${labels.length - 1}" step="1" value="${i}" aria-label="${esc(aria)}" aria-valuetext="${esc(labels[i])}" style="--fill:${fill}%">
-        <div class="scrubber__stops">${labels.map((l, k) => `<span data-k="${k}" aria-current="${k === i}">${esc(l)}</span>`).join('')}</div></div></div></div>` }
+  // The year is announced while playing (aria-live switches to polite then); when the reader moves the slider, its
+  // aria-valuetext says the year instead, so it isn't spoken twice.
+  return `<div class="scrubber" id="${id}" role="group" aria-label="${esc(aria)}"><button class="scrubber__play" type="button" aria-label="${esc(play)}">${ic('play')}${ic('pause')}</button>
+    <div class="scrubber__main"><div class="scrubber__head"><div class="scrubber__year" aria-live="off" aria-atomic="true"><span>${esc(labels[i])}</span></div><span class="scrubber__note">${note}</span></div>
+      <div class="scrubber__track"><input class="range" type="range" id="${id}-range" min="0" max="${labels.length - 1}" step="1" value="${i}" aria-label="${esc(aria)}: ${esc(labels[0])} to ${esc(labels[labels.length - 1])}" aria-valuetext="${esc(labels[i])}" style="--fill:${fill}%">
+        <div class="scrubber__stops" aria-hidden="true">${labels.map((l, k) => `<span data-k="${k}" aria-current="${k === i}">${esc(l)}</span>`).join('')}</div></div></div></div>` }
 function bindScrubber(el, { labels, get, set, play = 'Play through the years' }) {
   const range = el.querySelector('.range'), btn = el.querySelector('.scrubber__play'), yr = el.querySelector('.scrubber__year'), stops = [...el.querySelectorAll('.scrubber__stops span')];
   const sync = i => { range.value = i; range.style.setProperty('--fill', (labels.length > 1 ? i / (labels.length - 1) * 100 : 0) + '%'); range.setAttribute('aria-valuetext', labels[i]);
     stops.forEach((s, k) => s.setAttribute('aria-current', String(k === i))); if (yr.textContent !== labels[i]) yr.innerHTML = `<span>${esc(labels[i])}</span>` };
-  const stop = () => { if (S.scrubTimer) { clearInterval(S.scrubTimer); S.scrubTimer = null } el.removeAttribute('data-playing'); btn.setAttribute('aria-label', play) };
+  const stop = () => { if (S.scrubTimer) { clearInterval(S.scrubTimer); S.scrubTimer = null } el.removeAttribute('data-playing'); btn.setAttribute('aria-label', play); yr.setAttribute('aria-live', 'off') };
   const to = i => { sync(i); set(i) };
   range.addEventListener('input', () => { stop(); to(+range.value) });
   el.querySelector('.scrubber__stops').addEventListener('click', e => { const s = e.target.closest('[data-k]'); if (s) { stop(); to(+s.dataset.k) } });
   btn.addEventListener('click', () => { if (el.hasAttribute('data-playing')) { stop(); return }
     if (S.scrubTimer) clearInterval(S.scrubTimer);
-    el.setAttribute('data-playing', ''); btn.setAttribute('aria-label', 'Pause'); to(0);
+    el.setAttribute('data-playing', ''); btn.setAttribute('aria-label', 'Pause the playback'); yr.setAttribute('aria-live', 'polite'); to(0);
     S.scrubTimer = setInterval(() => { if (!el.isConnected) { stop(); return } const i = get(); if (i >= labels.length - 1) { stop(); return } to(i + 1); if (i + 1 >= labels.length - 1) stop() }, 1200) });
   return { sync, stop } }
+
+/* ----- shared bits for the Seats pages ----- */
+// A table that scrolls sideways on phones: a named, focusable region so keyboard users can scroll it too.
+const twrap = (label, table) => `<div class="table-wrap" tabindex="0" role="region" aria-label="${esc(label)}">${table}</div>`;
+// "On this page" rows that jump to a heading (hash links would change the route, so these are buttons).
+const jumpRow = (target, title, sub) => `<button class="rowlink rowlink--plain rowlink--btn" type="button" data-jump="${esc(target)}"><span><span class="rowlink__title">${title}</span>${sub ? `<span class="rowlink__sub" style="display:block">${sub}</span>` : ''}</span>${ic('down')}</button>`;
+function bindJumps(root) { root.addEventListener('click', e => { const b = e.target.closest('[data-jump]'); if (!b) return; const t = document.getElementById(b.dataset.jump); if (!t) return;
+  if (t.tagName === 'DETAILS') t.open = true;
+  const h = t.matches('h1,h2,h3,summary') ? t : (t.querySelector('h2,h3,summary') || t); if (!h.hasAttribute('tabindex') && !/^(SUMMARY|BUTTON|A)$/.test(h.tagName)) h.setAttribute('tabindex', '-1');
+  h.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); h.focus({ preventScroll: true }) }) }
