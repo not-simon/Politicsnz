@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T00:36:02Z",
+ "updated": "2026-10-24T04:58:40Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,16 +126,16 @@
   }
  },
  "counts": {
-  "items": 165,
+  "items": 170,
   "per_party": {
-   "act": 20,
+   "act": 23,
    "conservative": 16,
    "free-palestine": 2,
    "government": 30,
    "green": 20,
    "labour": 20,
-   "national": 20,
-   "nz-first": 20,
+   "national": 21,
+   "nz-first": 21,
    "nz-loyal": 1,
    "te-pati-maori": 13,
    "womens-rights": 3
@@ -382,6 +382,56 @@
   }
  ],
  "items": [
+  {
+   "party": "act",
+   "title": "How ACT Will Unlock The Digital Economy",
+   "date": "2026-10-24T14:23+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00215/how-act-will-unlock-the-digital-economy.htm",
+   "summary": "Where other parties see cryptocurrency and the digital economy as an opportunity to over-regulate, restrict and tax, ACT sees an opportunity for New Zealand to innovate, compete and prosper.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "act",
+   "title": "How ACT Will Unlock The Digital Economy",
+   "date": "2026-10-24T14:23+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00214/how-act-will-unlock-the-digital-economy.htm",
+   "summary": "Where other parties see cryptocurrency and the digital economy as an opportunity to over-regulate, restrict and tax, ACT sees an opportunity for New Zealand to innovate, compete and prosper.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZFirst To Remove Climate Tax From Fuel",
+   "date": "2026-10-24T14:17+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00213/nzfirst-to-remove-climate-tax-from-fuel.htm",
+   "summary": "New Zealand First will remove this burden on consumers and businesses over the next term of government.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "act",
+   "title": "ACT Will Give Students A Stake In Their Financial Education",
+   "date": "2026-10-24T14:12+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00212/act-will-give-students-a-stake-in-their-financial-education.htm",
+   "summary": "This policy will help unlock the potential of generations of young New Zealanders, introducing them to saving, investing, and taking responsibility for their financial futures, says ACT Leader David…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "Fixing The Basics And Building The Future: National’s Plan For Parents",
+   "date": "2026-10-24T14:07+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00211/fixing-the-basics-and-building-the-future-nationals-plan-for-parents.htm",
+   "summary": "National’s plan will deliver a better future for parents and their children, National Leader Christopher Luxon says.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
   {
    "party": "government",
    "title": "Chief of Defence resigns",
