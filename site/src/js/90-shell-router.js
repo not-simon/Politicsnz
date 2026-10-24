@@ -76,7 +76,7 @@ function resolve(path) { const seg = path.split('/'); const [a, b, ...rest] = se
     if (b === 'news') return { sec: 'parties', view: 'newsroom', args: [arg], key: 'parties/news' };
     return { sec: 'parties', view: 'party', args: [b, arg || 'glance'], key: 'parties' } }
   if (a === 'seats') { const sub = b || 'polls';
-    if (sub === 'polls') return { sec: 'seats', view: 'polls', args: [], key: 'seats/polls' };
+    if (sub === 'polls') return { sec: 'seats', view: 'polls', args: [rest[0]], key: 'seats/polls' };
     if (sub === 'map') return { sec: 'seats', view: 'map', args: [rest[0] ? +rest[0] : undefined, rest[1]], key: 'seats/map' };
     if (sub === 'parliament') return { sec: 'seats', view: 'parliament', args: ['chamber'], key: 'seats/parliament' };
     if (sub === 'coalition' || sub === 'calculator') return { sec: 'seats', view: 'parliament', args: [sub], key: 'seats/' + sub };

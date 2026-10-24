@@ -209,6 +209,9 @@ if (OUT / 'pages.json').exists(): (OUT / 'pages.json').unlink()
 import shutil
 (OUT / 'geo').mkdir(exist_ok=True)
 for f in (ROOT / 'data' / 'geo').glob('*.json'): shutil.copy(f, OUT / 'geo' / f.name)
+(OUT / 'guide').mkdir(exist_ok=True)
+for f in ('i18n.json', 'howtovote-sm.json', 'howtovote-to.json'):
+    if (ROOT / 'data' / 'guide' / f).exists(): shutil.copy(ROOT / 'data' / 'guide' / f, OUT / 'guide' / f)
 
 # --- assemble pages: artifact fragment (no doctype) + standalone index.html
 # The app source is modular: site/src/shell.html (markup) + site/src/css/*.css + site/src/js/*.js, concatenated in

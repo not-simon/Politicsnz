@@ -25,3 +25,4 @@
 /* Māori electorates hub */
 .mh-seats { row-gap: var(--s-8) }
 .mh-seat .ptag { white-space: normal }
+.lp-h1-en { display: block; margin-top: var(--s-2); font-size: .55em; line-height: 1.2; color: var(--text-2) }

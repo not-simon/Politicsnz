@@ -413,6 +413,8 @@ h4, .h4 { font: 700 var(--t-h4)/1.3 var(--font-body); font-variation-settings: n
 .phase a { color: var(--on-band); margin-left: auto; white-space: nowrap; font-weight: 700; text-decoration-color: var(--signal-on-band) }
 @media (min-width: 720px) { .phase__more { display: inline } }
 .phase[data-phase="electionday"] { background: var(--signal); color: var(--on-signal) }
+.phase[data-phase="electionday"] .phase__more, .phase[data-phase="electionday"] a { color: var(--on-signal); text-decoration-color: var(--on-signal) }
+.phase[data-phase="electionday"] .phase__dot { background: var(--on-signal) }
 
 /* ---------- 5. Phone tab bar ---------------------------------------------- */
 .tabbar { position: fixed; z-index: var(--z-tabbar); left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: repeat(5, 1fr); background: var(--surface); border-top: 1px solid var(--line); padding: 0 max(4px, env(safe-area-inset-right, 0px)) var(--gutter-b) max(4px, env(safe-area-inset-left, 0px)) }
@@ -1175,6 +1177,7 @@ main { view-transition-name: main }
 /* Māori electorates hub */
 .mh-seats { row-gap: var(--s-8) }
 .mh-seat .ptag { white-space: normal }
+.lp-h1-en { display: block; margin-top: var(--s-2); font-size: .55em; line-height: 1.2; color: var(--text-2) }
 
 /* ---------- Parties section: small additions to the design system (tokens only, both themes) ---------- */
 /* Party list rows */
@@ -2678,7 +2681,7 @@ V.maoriHub = async () => {
   const el23 = ((S.data.elections || []).find(x => x.year === 2023) || {}).electorates || [];
   const r23 = e => el23.find(r => elSlug(r.name) === elSlug(e.name)) || null;
   const term = (k, en) => { const m = t(k); return m ? `${esc(en)} (<i lang="mi">${esc(m)}</i>)` : esc(en) };
-  const dis = (mi, en, body, src, open) => `<details class="disclose"${open ? ' open' : ''}><summary>${biText('mi', mi, en)}</summary><div class="disclose__body stack stack--s">${body}${srcRow(src)}</div></details>`;
+  const dis = (mi, en, body, src, open) => `<details class="disclose"${open ? ' open' : ''}><summary><span>${biText('mi', mi, en)}</span></summary><div class="disclose__body stack stack--s">${body}${srcRow(src)}</div></details>`;
   $('#mh-body').innerHTML = `
     <header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('vote', 'i--s')} Vote · Māori electorates</p>
       <h1>${inLang('mi', miTerm(I, 'vote_pages', 'vote/maori') || 'Ngā rohe pōti Māori')} · Māori electorates</h1>
@@ -2761,14 +2764,14 @@ async function langMaori(root) {
       <div class="row">${vExt(s.url, /map\.vote/.test(s.url) ? 'Find a voting place' : 'vote.nz', 'btn btn--s btn--quiet')}${(s.more || []).map(m => vExt(m.url, `<span lang="mi">${esc(m.label)}</span>`, 'btn btn--s btn--quiet')).join('')}</div></li>`;
   const STATUS = { official: 'Electoral Commission term', adapted: 'From Commission wording', dictionary: 'Te Aka Māori Dictionary', flagged: 'Not found: English kept' };
   const terms = (I.groups || []).map(g => `<h3 class="h4">${esc(g.title)}</h3><dl class="gloss lp-terms">${g.terms.map(t => `<div class="gloss__row"><dt>${t.mi ? inLang('mi', t.mi) : '<span class="muted">(English kept)</span>'}</dt><dd><span>${esc(t.en)}</span> <span class="badge${t.status === 'flagged' ? ' badge--outline' : ''}">${esc(STATUS[t.status] || t.status)}</span><span class="micro muted lp-ev">${esc(t.evidence || t.note || '')} ${(t.sources || []).map(k => srcs[k] ? extA(srcs[k].url, 'source', 'micro muted') : '').join(' ')}</span></dd></div>`).join('')}</dl>`).join('');
-  root.innerHTML = `${langHead(inLang('mi', 'Te reo Māori'), `${inLang('mi', P.title.mi)} · ${esc(P.title.en)}`, '')}
+  root.innerHTML = `${langHead(inLang('mi', 'Te reo Māori'), `${inLang('mi', P.title.mi)} <span class="lp-h1-en">${esc(P.title.en)}</span>`, '')}
     <p class="note">${ic('info', 'i--s')}<span>Every te reo Māori sentence on this page is quoted from the Electoral Commission’s te reo pages and leaflets, beside the Commission’s own English. Not checked by a fluent speaker; the official vote.nz pages are authoritative. ${extA(MH.tereo, 'The Commission’s te reo guides')}.</span></p>
     <ol class="lp-steps" aria-label="Voting steps">${P.steps.map(step).join('')}</ol>
     <section class="stack stack--s" aria-labelledby="lm-more"><div class="shead shead--quiet"><h2 id="lm-more" class="h3">${biText('mi', P.more.mi, P.more.en)}</h2></div>
       <ul class="lp-list">${P.more.items.map(x => `<li><a href="${esc(x.url)}"${/^https/.test(x.url) ? ' target="_blank" rel="noopener"' : ''}>${inLang('mi', x.mi)}</a> · ${esc(x.en)}</li>`).join('')}</ul>
       <div class="row"><a class="btn btn--s btn--quiet" href="#/vote/maori">${ic('pin', 'i--s')} <span lang="mi">Ngā rohe pōti Māori</span> · Māori electorates</a></div></section>
     <details class="disclose"><summary>The te reo Māori terms this guide uses, and where each comes from</summary><div class="disclose__body stack stack--s">
-      <p class="small soft">Checked ${esc(I.as_of || '')}. Where we found no established term we kept the English rather than make one up. Corrections from fluent speakers are welcome.</p>${terms}
+      <p class="small soft">Checked ${esc(I.as_of === '2026-10-24' ? '24 October 2026' : I.as_of || '')}. Where we found no established term we kept the English rather than make one up. Corrections from fluent speakers are welcome.</p>${terms}
       ${(I.not_reached || []).length ? `<p class="micro muted">Could not be reached to check: ${I.not_reached.map(esc).join(' ')}</p>` : ''}</div></details>
     ${langFoot()}`;
 }
@@ -2782,15 +2785,15 @@ async function langPacific(root, code) {
   const meta = x => `<p class="micro muted lp-meta"><span class="lp-basis lp-basis--${esc(x.basis)}">${esc(bl(x.basis))}</span>${x.url ? ` · ${/^tel:/.test(x.url) ? `<a href="${esc(x.url)}">Call</a>` : extA(x.url, 'Official page')}` : ''}</p>`;
   const item = x => `<li class="lp-item">${pair(x)}${meta(x)}</li>`;
   const today = nzToday().iso;
-  const sec = (s, open) => `<details class="disclose"${open ? ' open' : ''}><summary>${X(s.h.xx)} <span class="lp-sum-en">· ${esc(s.h.en)}</span></summary><div class="disclose__body">
+  const sec = (s, open) => `<details class="disclose"${open ? ' open' : ''}><summary><span>${X(s.h.xx)} <span class="lp-sum-en">· ${esc(s.h.en)}</span></span></summary><div class="disclose__body">
       <${s.steps ? 'ol' : 'ul'} class="lp-list lp-list--items${s.steps ? ' lp-list--num' : ''}">${s.items.map(item).join('')}</${s.steps ? 'ol' : 'ul'}></div></details>`;
   const off = D.official || [];
-  root.innerHTML = `${langHead(X(names[0]), `${X(D.title.xx)} · ${esc(D.title.en)}`, `${X(D.lede.xx)}<br><span class="small">${esc(D.lede.en)}</span>`)}
+  root.innerHTML = `${langHead(X(names[0]), `${X(D.title.xx)} <span class="lp-h1-en">${esc(D.title.en)}</span>`, `${X(D.lede.xx)}<br><span class="small">${esc(D.lede.en)}</span>`)}
     <div class="note note--warn" role="note">${ic('flag', 'i--s')}<div class="stack stack--s"><p lang="${code}"><b>${esc(D.disclaimer.xx)}</b></p><p><b>${esc(D.disclaimer.en)}</b></p></div></div>
     <section class="panel" aria-labelledby="lp-off">
       <h2 id="lp-off" class="h3">The Electoral Commission’s own ${esc(names[1])} guides</h2>
       <p class="small soft">These are the official translations. Where they differ from this page, follow them.</p>
-      <div class="rows">${off.map(r => `<a class="rowlink rowlink--plain" href="${esc(r.url)}" target="_blank" rel="noopener"><span><span class="rowlink__title">${r.title ? X(r.title) : esc(r.title_en)}</span><span class="rowlink__sub" style="display:block">${r.title ? esc(r.title_en) + ' · ' : ''}${esc(r.size || 'PDF')}</span></span>${ic('ext')}</a>`).join('')}</div>
+      <div class="rows">${off.map(r => `<a class="rowlink rowlink--plain" href="${esc(r.url)}" target="_blank" rel="noopener"><span><span class="rowlink__title">${r.title ? X(r.title) : esc(r.title_en)}</span><span class="rowlink__sub" style="display:block">${r.title ? esc(r.title_en) : 'In ' + esc(names[1])} · ${esc(r.size || 'PDF')}</span></span>${ic('ext')}</a>`).join('')}</div>
       <p class="small" lang="${code}">${esc(D.interpreter.xx)}</p><p class="small soft">${esc(D.interpreter.en)}</p>
       <div class="row">${vExt(EC_LANG_PAGE, 'All languages at vote.nz', 'btn btn--s btn--ink')}<a class="btn btn--s btn--quiet" href="tel:0800367656">${ic('phone', 'i--s')} 0800 36 76 56</a></div>
     </section>
@@ -2803,7 +2806,7 @@ async function langPacific(root, code) {
       <ul class="vdates lp-dates">${(D.key_dates || []).map(k => `<li${k.date === '2026-11-07' ? ' class="is-eday"' : ''}><span class="num">${shortDate(k.date)}${k.date < today ? '<span class="micro muted lp-past">passed</span>' : ''}</span><span>${pair(k)}${meta(k)}</span></li>`).join('')}</ul></section>
     <section class="stack stack--s" aria-labelledby="lp-help"><div class="shead shead--quiet"><h2 id="lp-help" class="h3">${X(D.contacts.h.xx)} · ${esc(D.contacts.h.en)}</h2></div>
       <ul class="lp-list lp-list--items">${D.contacts.items.map(item).join('')}</ul></section>
-    <p class="src">${ic('shield')} Checked ${esc(D.as_of || '')} against the Electoral Commission’s ${esc(names[1])} and English guides. <button class="linkbtn" type="button" data-page="guide/how-to-vote-${code}.md">Readable copy and translation notes</button></p>
+    <p class="src">${ic('shield')} Checked ${esc(D.as_of === '2026-10-24' ? '24 October 2026' : D.as_of || '')} against the Electoral Commission’s ${esc(names[1])} and English guides. <button class="linkbtn" type="button" data-page="guide/how-to-vote-${code}.md">Readable copy and translation notes</button></p>
     ${langFoot()}`;
 }
 
@@ -4738,7 +4741,7 @@ function resolve(path) { const seg = path.split('/'); const [a, b, ...rest] = se
     if (b === 'news') return { sec: 'parties', view: 'newsroom', args: [arg], key: 'parties/news' };
     return { sec: 'parties', view: 'party', args: [b, arg || 'glance'], key: 'parties' } }
   if (a === 'seats') { const sub = b || 'polls';
-    if (sub === 'polls') return { sec: 'seats', view: 'polls', args: [], key: 'seats/polls' };
+    if (sub === 'polls') return { sec: 'seats', view: 'polls', args: [rest[0]], key: 'seats/polls' };
     if (sub === 'map') return { sec: 'seats', view: 'map', args: [rest[0] ? +rest[0] : undefined, rest[1]], key: 'seats/map' };
     if (sub === 'parliament') return { sec: 'seats', view: 'parliament', args: ['chamber'], key: 'seats/parliament' };
     if (sub === 'coalition' || sub === 'calculator') return { sec: 'seats', view: 'parliament', args: [sub], key: 'seats/' + sub };

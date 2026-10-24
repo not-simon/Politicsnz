@@ -137,6 +137,8 @@ h4, .h4 { font: 700 var(--t-h4)/1.3 var(--font-body); font-variation-settings: n
 .phase a { color: var(--on-band); margin-left: auto; white-space: nowrap; font-weight: 700; text-decoration-color: var(--signal-on-band) }
 @media (min-width: 720px) { .phase__more { display: inline } }
 .phase[data-phase="electionday"] { background: var(--signal); color: var(--on-signal) }
+.phase[data-phase="electionday"] .phase__more, .phase[data-phase="electionday"] a { color: var(--on-signal); text-decoration-color: var(--on-signal) }
+.phase[data-phase="electionday"] .phase__dot { background: var(--on-signal) }
 
 /* ---------- 5. Phone tab bar ---------------------------------------------- */
 .tabbar { position: fixed; z-index: var(--z-tabbar); left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: repeat(5, 1fr); background: var(--surface); border-top: 1px solid var(--line); padding: 0 max(4px, env(safe-area-inset-right, 0px)) var(--gutter-b) max(4px, env(safe-area-inset-left, 0px)) }
