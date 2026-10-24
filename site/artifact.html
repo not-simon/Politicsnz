@@ -3964,7 +3964,7 @@ function markNav(sec) { document.querySelectorAll('[data-sec]').forEach(a => { i
 function subnav(sec, items, current) { const label = Object.fromEntries(SECTIONS)[sec] || sec;
   return `<nav class="subnav" aria-label="${esc(label)}"><span class="subnav__label">${esc(label)}</span>${items.map(([p, l, n]) => `<a href="#/${p}"${p === current ? ' aria-current="page"' : ''}>${esc(l)}${n != null ? ` <span class="num">${esc(String(n))}</span>` : ''}</a>`).join('')}</nav>` }
 const SUBNAV = {
-  vote: () => [['vote', 'Ready to vote'], ['vote/electorate', 'Your electorate'], ['vote/plan', 'Make a plan'], ['vote/mmp', 'How MMP works'], ['vote/glossary', 'Glossary'], ['vote/specials', 'Special votes']],
+  vote: () => [['vote', 'Ready to vote'], ['vote/electorate', 'Your electorate'], ['vote/plan', 'Make a plan'], ['vote/mmp', 'How MMP works'], ['vote/glossary', 'Glossary'], ['vote/specials', 'Special votes'], ['vote/maori', 'Māori electorates'], ['vote/lang', 'Other languages']],
   choose: () => [['choose', 'Start here'], ['choose/swipe', 'Policy swipe'], ['choose/quiz', 'Find your match'], ['choose/compass', 'Values compass'], ['choose/game', 'Whose policy? game'], ['choose/compare', 'Compare two parties'], ['choose/results', 'Your results']],
   parties: () => [['parties', 'Parties', (G().parties || []).length || null], ['parties/issues', 'Issues', (G().issues || []).length || null], ['parties/policies', 'Policies', Object.values(S.data.parties || {}).reduce((a, p) => a + (p.policy_count || 0), 0) || null], ['parties/promises', 'Promises'], ['parties/people', 'People', (S.people || []).length || null], ['parties/news', 'From the parties']],
   seats: () => [['seats/polls', 'Polls & forecast'], ['seats/map', 'Electorate map'], ['seats/parliament', 'Parliament'], ['seats/coalition', 'Coalition builder'], ['seats/calculator', 'Seat calculator'], ['seats/results', 'Results']] };
@@ -3985,8 +3985,11 @@ function normaliseRoute(r) { r = String(r || '').replace(/^#/, ''); if (r.starts
 function resolve(path) { const seg = path.split('/'); const [a, b, ...rest] = seg; const arg = rest.join('/') || undefined;
   if (a === 'today') return { sec: 'today', view: 'home', args: [] };
   if (a === 'search') return { sec: null, view: 'search', args: [b ? decodeURIComponent(b) : ''] };
-  if (a === 'about') { if (!b || b === 'trust') return { sec: null, view: 'trust', args: [] }; if (b === 'page') return { sec: null, view: 'page', args: [arg] }; return { sec: null, view: 'trust', args: [] } }
-  if (a === 'vote') { if (b === 'electorate') return { sec: 'vote', view: 'electorate', args: [arg], key: 'vote/electorate' }; return { sec: 'vote', view: 'vote', args: [b], key: 'vote' + (b ? '/' + b : '') } }
+  if (a === 'about') { if (!b || b === 'trust') return { sec: null, view: 'trust', args: [] }; if (b === 'page') return { sec: null, view: 'page', args: [arg] }; if (b === 'changes') return { sec: null, view: 'changes', args: [arg] }; return { sec: null, view: 'trust', args: [] } }
+  if (a === 'vote') { if (b === 'electorate') return { sec: 'vote', view: 'electorate', args: [arg], key: 'vote/electorate' };
+    if (b === 'maori') return { sec: 'vote', view: 'maoriHub', args: [arg], key: 'vote/maori' };
+    if (b === 'lang') return { sec: 'vote', view: 'voteLang', args: [arg], key: 'vote/lang' };
+    return { sec: 'vote', view: 'vote', args: [b], key: 'vote' + (b ? '/' + b : '') } }
   if (a === 'choose') { const v = { quiz: 'match', swipe: 'swipe', compass: 'compass', game: 'game', compare: 'compare', results: 'chooseResults' }[b]; return { sec: 'choose', view: v || 'choose', args: [arg], key: 'choose' + (b ? '/' + b : '') } }
   if (a === 'parties') { if (!b) return { sec: 'parties', view: 'parties', args: [], key: 'parties' };
     if (b === 'issues') return { sec: 'parties', view: arg ? 'issue' : 'issues', args: [arg], key: 'parties/issues' };
@@ -4031,7 +4034,7 @@ function drawFooter() {
       <p class="colophon__pledge">Independent and non-partisan. It will never tell you how to vote.</p>
       <p>Built from public sources, every figure linked. Nothing you do here leaves your device. Not the Electoral Commission: for official information on enrolling, voting places and hours, go to vote.nz or call 0800 36 76 56.</p>
       <p class="micro muted">Built ${esc(S.data.generated || '')}. Party documents, photos and other third-party material belong to their owners; owners can ask for removal or correction and we act within 24 hours during the campaign.</p></div>
-    <div><h4>Use the guide</h4><ul><li><a href="#/search">Search everything</a></li><li><a href="#/vote/glossary">Glossary of MMP terms</a></li><li><a href="#/vote/electorate">Your electorate</a></li><li><a href="#/choose/results">Your saved answers</a></li></ul></div>
+    <div><h4>Use the guide</h4><ul><li><a href="#/search">Search everything</a></li><li><a href="#/vote/glossary">Glossary of MMP terms</a></li><li><a href="#/vote/electorate">Your electorate</a></li><li><a href="#/choose/results">Your saved answers</a></li><li><a href="#/about/changes">What changed this week</a></li><li><a href="feed.xml">RSS feed</a></li></ul></div>
     <div><h4>Trust</h4><ul><li><a href="#/about/trust">Why trust this?</a></li><li><a href="#/about/page/docs/EDITORIAL_STANDARDS.md">Editorial standards</a></li><li><a href="#/about/page/guide/quiz-research.md">How the tools work</a></li><li><a href="#/about/page/docs/REVIEW_LOG.md">Review log</a></li><li><a href="#/about/trust">Privacy &amp; contact</a></li></ul></div>
     <div><h4>Get in touch</h4><ul><li><a href="https://github.com/not-simon/Politicsnz/issues/new?template=correction.yml" target="_blank" rel="noopener">${ic('flag', 'i--xs')} Report an error</a></li><li><a href="https://github.com/not-simon/Politicsnz" target="_blank" rel="noopener">Open data and source</a></li><li><a href="https://vote.nz" target="_blank" rel="noopener">vote.nz (official)</a></li><li>0800 36 76 56</li></ul></div>
   </div>` }
