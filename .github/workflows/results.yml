@@ -1,0 +1,65 @@
+# Election night: reads the Electoral Commission's public XML media feed (https://media.election.net.nz/xml/) with
+# tools/results_feed.py, writes data/results-2026.json, rebuilds the site and commits. GitHub Pages republishes on the push.
+#
+# Schedule (UTC; NZDT is UTC+13): every 5 minutes from 7pm Sat 7 Nov NZDT (06:00Z) until noon Sun 8 Nov NZDT (23:00Z),
+# then hourly for the rest of the weekend, and hourly on 27-28 Nov for the official result. Also runnable by hand.
+# The script writes nothing while the feed carries no votes, and the first step refuses to run before 7pm on election day,
+# so nothing predictive or partial can be published during voting hours (Electoral Act 1993 s 197).
+# GitHub's cron can lag by several minutes at busy times; the page itself re-fetches the small results file every two minutes.
+name: Election night results
+on:
+  schedule:
+    - cron: '*/5 6-23 7 11 *'    # Sat 7 Nov 19:00 NZDT -> Sun 8 Nov 12:00 NZDT
+    - cron: '0 0-5 8 11 *'       # Sun 8 Nov afternoon, hourly
+    - cron: '0 */2 9,10 11 *'    # Mon-Tue, every two hours (late voting-place entries, corrections)
+    - cron: '0 * 27,28 11 *'     # official results declared Fri 27 Nov (NZ)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: results
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Voting-hours guard (nothing runs before 7pm NZDT on 7 November)
+        run: |
+          now=$(date -u +%s)
+          if [ "$now" -lt "$(date -u -d '2026-11-07T06:00:00Z' +%s)" ]; then
+            echo "Voting has not closed yet; skipping."; echo "SKIP=1" >> "$GITHUB_ENV"
+          fi
+      - uses: actions/checkout@v4
+        if: env.SKIP != '1'
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        if: env.SKIP != '1'
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        if: env.SKIP != '1'
+        run: python3 -m pip install --quiet pillow
+      - name: Read the Electoral Commission feed
+        if: env.SKIP != '1'
+        run: python3 tools/results_feed.py
+      - name: Rebuild the site bundle
+        if: env.SKIP != '1'
+        run: python3 tools/build_site.py
+      - name: Commit and push if anything changed
+        if: env.SKIP != '1'
+        run: |
+          git config user.name "results-bot"
+          git config user.email "results-bot@users.noreply.github.com"
+          keep=$(mktemp -d); for p in data/results-2026.json; do [ -e "$p" ] && mkdir -p "$keep/$(dirname "$p")" && cp -r "$p" "$keep/$p"; done
+          for attempt in 1 2 3; do
+            git add data/results-2026.json site
+            if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+            git commit -q -m "Election results ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            if git push; then exit 0; fi
+            echo "Push rejected (attempt $attempt); rebasing onto the remote head and rebuilding."
+            git fetch -q origin "$GITHUB_REF_NAME" && git reset -q --hard "origin/$GITHUB_REF_NAME"
+            (cd "$keep" && find . -type f | while read -r f; do mkdir -p "$GITHUB_WORKSPACE/$(dirname "$f")"; cp "$f" "$GITHUB_WORKSPACE/$f"; done)
+            python3 tools/build_site.py
+          done
+          echo "Could not push after 3 attempts."; exit 1

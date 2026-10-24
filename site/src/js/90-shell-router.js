@@ -86,6 +86,7 @@ const route = go;
 function render(path) {
   if (S.ballotTimer) { clearInterval(S.ballotTimer); S.ballotTimer = null }
   if (S.scrubTimer) { clearInterval(S.scrubTimer); S.scrubTimer = null }
+  if (S.resultsTimer) { clearInterval(S.resultsTimer); S.resultsTimer = null }
   const R = resolve(path); if (!V[R.view]) { R.view = 'home'; R.sec = 'today' }
   S.route = path; S.sec = R.sec; S.subkey = R.key; markNav(R.sec); renderPhase();
   if (document.body.classList.contains('focus-mode')) focusMode(null);

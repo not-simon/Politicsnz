@@ -82,6 +82,7 @@ docs/SCHEMA.md            data formats
 - Code is MIT; the project's own text and data are CC BY-SA 4.0 (parts are adapted from Wikipedia, which requires that); third-party material stays its owners' and is listed in [`NOTICE.md`](NOTICE.md). Owners can ask for removal or correction by [opening an issue](https://github.com/not-simon/Politicsnz/issues/new/choose); we act within 24 hours during the campaign.
 - Published by an unincorporated group of volunteers led by the repository owner. Not affiliated with any party, candidate or the Electoral Commission. Official voting information is at vote.nz.
 - The site has no accounts, cookies, server or analytics; answers are kept in the visitor's own browser. See the privacy statement on the site's *Why trust this?* page and the compliance notes in [`docs/LEGAL_REVIEW.md`](docs/LEGAL_REVIEW.md).
+- On election night a workflow reads the Electoral Commission's public results feed every five minutes from 7pm and the Seats › Results page refreshes itself; preliminary figures are labelled, and the official result (27 November) replaces them.
 - Automated updates (polls, releases) are paused from 23:59 Friday 6 November to 7pm Saturday 7 November (NZDT); on election day the site hides polls, forecasts, quiz results and the game until 7pm (Electoral Act 1993 s 197).
 
 ## Sources and method

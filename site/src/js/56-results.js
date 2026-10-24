@@ -3,7 +3,8 @@
    On election day before 7pm it shows only the countdown and the explainer: nothing predictive. When a results object
    ({ parties: [{ party, party_vote_pct, electorate_seats, list_seats, total_seats }], counted_pct?, official?, updated?,
    source_url?, electorates? }) appears for 2026, it renders the live seat count. */
-V.results = async () => {
+V.results = async () => { await resultsView(); armResultsRefresh() };
+async function resultsView() {
   const ph = electionPhase(), eday = ph === 'electionday', R = eday ? null : results2026();
   const body = R ? resultsLive(R) : resultsWaiting(ph);
   $('#main').innerHTML = sectionFrame('seats', 'seats/results', body);
@@ -59,8 +60,8 @@ function resultsLive(R) {
   const pc = v => (Math.max(0, Math.min(max, v)) / max * 100).toFixed(1) + '%';
   return `<header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('seats', 'i--s')} Seats · Results ${R.official ? '<span class="badge badge--ink">Official</span>' : '<span class="badge badge--live">Live</span>'}</p>
       <h1>2026 election: the ${R.official ? 'official' : 'preliminary'} count</h1>
-      <p class="lede">${R.counted_pct != null ? `${fmt(R.counted_pct, 0)}% of votes counted. ` : ''}${R.official ? 'Every vote counted, special votes included.' : 'Preliminary results leave out special votes (roughly one in six). The final result is due Friday 27 November.'}</p>
-      <p class="srcline">${R.updated ? `Updated ${esc(R.updated)} · ` : ''}Source: <a href="${esc(R.source_url || 'https://www.electionresults.govt.nz')}" target="_blank" rel="noopener">Electoral Commission</a></p></header>
+      <p class="lede">${R.counted_pct != null ? `Results in from ${fmt(R.counted_pct, 0)}% of voting places${R.votes_cast ? ` (${Number(R.votes_cast).toLocaleString('en-NZ')} votes so far)` : ''}. ` : ''}${R.official ? 'Every vote counted, special votes included.' : 'Preliminary results leave out special votes (roughly one in six). The final result is due Friday 27 November.'}</p>
+      <p class="srcline">${R.updated ? `Commission feed updated ${esc(String(R.updated).replace('T', ' ').slice(0, 16))} NZ time · this page refreshes every two minutes · ` : ''}Source: <a href="${esc(R.source_url || 'https://www.electionresults.govt.nz')}" target="_blank" rel="noopener">Electoral Commission</a></p></header>
     <section class="stack" aria-labelledby="h-live"><div class="shead"><div class="shead__row"><h2 id="h-live">Seats</h2><span class="small muted">${total} seats · ${maj} to govern</span></div></div>
       <div class="split split--7-5"><div class="stack stack--s">${chamberSVG(seatsFromComposition(comp, []), { label: '2026 seat count' })}<div class="legend">${legendHTML(comp)}</div></div>
         <div class="stack"><p class="small soft">No single party is shown as the winner: governments are formed by negotiation, and the count can still move.</p><a class="btn btn--s" href="#/seats/coalition">Try combinations in the coalition builder</a></div></div></section>
@@ -71,3 +72,15 @@ function resultsLive(R) {
     ${(R.electorates || []).length ? `<section class="stack" aria-labelledby="h-rmap"><div class="shead"><div class="shead__row"><h2 id="h-rmap">Electorates</h2><a class="more small" href="#/seats/map/2026">Explore the map ${ic('chev', 'i--xs')}</a></div></div><div class="mapstage rmap"><div id="rmap"><p class="muted small">Loading the map…</p></div><div class="legend" id="rmapleg"></div></div></section>` : `<div class="row"><a class="more" href="#/seats/map/2026">Electorate map ${ic('chev', 'i--xs')}</a></div>`}
     <section class="stack" id="rtable">${electionTableHTML({ year: 2026, date: R.date, parties: R.parties, official: R.official })}</section>
     ${R.official ? '' : COUNTING_HTML}` }
+
+/* Election night: poll site/data/results.json every two minutes and re-render when the Commission feed has moved.
+   The timer lives in S.resultsTimer so the router clears it on navigation. */
+function armResultsRefresh() {
+  if (S.resultsTimer) clearInterval(S.resultsTimer);
+  const R = results2026(); if (R && R.official) return;
+  if (!['results', 'after'].includes(electionPhase())) return;
+  S.resultsTimer = setInterval(async () => {
+    if (S.route !== 'seats/results') { clearInterval(S.resultsTimer); S.resultsTimer = null; return }
+    try { const r = await getJSON('data/results.json?t=' + Date.now()); const cur = results2026();
+      if (r && r.votes_cast && (!cur || r.updated !== cur.updated || r.votes_cast !== cur.votes_cast)) { S.data.upcoming = { ...(S.data.upcoming || { year: 2026 }), results: r }; V.results() } } catch {}
+  }, 120000) }

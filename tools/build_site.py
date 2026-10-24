@@ -164,6 +164,11 @@ if isinstance(guide['issues'], dict): guide['issues'] = guide['issues'].get('iss
 electorates = load(ROOT / 'data' / 'electorates' / '2026.json', [])
 if isinstance(electorates, dict): electorates = electorates.get('electorates', [])
 forecast = load(ROOT / 'data' / 'forecast.json', None)
+# Election-night results (tools/results_feed.py). Attached only once real votes exist, so no zero-count 'live' page can appear.
+results = load(ROOT / 'data' / 'results-2026.json', None)
+if results and results.get('votes_cast') and upcoming:
+    upcoming[0] = {**upcoming[0], 'results': results}
+(OUT / 'results.json').write_text(dumps(results if results and results.get('votes_cast') else {'votes_cast': 0}))
 bundle = {'forecast': forecast, 'upcoming': upcoming[0] if upcoming else None, 'guide': guide, 'electorates': electorates, 'generated': __import__('datetime').date.today().isoformat(), 'parties': parties, 'elections': elections,
           'parliaments': parliaments, 'polls': polls, 'promises': promises}
 (OUT / 'bundle.json').write_text(dumps(bundle))
