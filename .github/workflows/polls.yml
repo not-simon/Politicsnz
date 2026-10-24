@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install dependencies
-        run: python3 -m pip install --quiet numpy beautifulsoup4 lxml
+        run: python3 -m pip install --quiet numpy beautifulsoup4 lxml pillow
       - name: Polling-day freeze (Electoral Act 1993 s 197)
         # Nothing new is published from 23:59 Fri 6 Nov to 19:00 Sat 7 Nov NZDT (10:59Z 6 Nov to 06:00Z 7 Nov).
         run: |
