@@ -48,7 +48,7 @@ V.game = async () => {
     $('#choices').onclick = e => { const b = e.target.closest('[data-p]'); if (!b || $('#choices').dataset.done) return; $('#choices').dataset.done = '1'; const right = b.dataset.p === c.party; if (right) g.scores[pi]++;
       $('#choices').querySelectorAll('button').forEach(x => { x.disabled = x !== b && x.dataset.p !== c.party; if (x === b) x.setAttribute('aria-pressed', 'true'); if (x.dataset.p === c.party) x.classList.add('v-kept'); else if (x === b) x.classList.add('v-broken') });
       const lastTurn = g.turn + 1 >= Math.min(g.deck.length, g.players.length * g.rounds);
-      $('#verdict').innerHTML = `<div class="panel stack"><div class="row"><span class="verdict ${right ? 'v-kept' : 'v-broken'}">${ic(right ? 'check' : 'x')} ${right ? 'Correct' : 'Not quite'}</span><span>It’s a <b>${esc(P(c.party).name || pname(c.party))}</b> policy.</span></div>
+      $('#verdict').innerHTML = `<div class="panel stack"><div class="row"><span class="verdict ${right ? 'v-kept' : 'v-broken'}">${ic(right ? 'check' : 'x')} ${right ? 'Correct' : 'Not quite'}</span><span>That policy is from <b>${esc(chooseFullName(c.party))}</b>.</span></div>
         <div class="row">${c.doc ? `<button class="btn btn--s" type="button" data-doc="${esc(c.party)}|${esc(c.doc)}">${ic('doc', 'i--xs')} Read the full policy</button>` : ''}<button class="btn btn--primary" type="button" id="nextturn" style="margin-left:auto">${lastTurn ? 'See the scores' : 'Pass the phone'} ${ic('chev', 'i--s')}</button></div></div>`;
       g.phase = 'answered'; save();
       $('#nextturn').onclick = () => { g.turn++; g.phase = 'handoff'; save(); window.scrollTo(0, 0); play() }; $('#nextturn').focus({ preventScroll: true }) }; };

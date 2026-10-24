@@ -1050,6 +1050,15 @@ main { view-transition-name: main }
 .tiny { font-size: var(--t-micro) }
 .empty { color: var(--text-3); font-size: var(--t-small); padding: var(--s-4) 0 }
 
+/* very narrow phones (320px): keep the masthead on one line */
+@media (max-width: 400px) {
+  .mast__in { gap: 8px; min-width: 0 }
+  .search-trigger span, .search-trigger kbd { display: none }
+  .search-trigger { width: 40px; min-width: 40px; padding: 0; justify-content: center }
+  .brand__tag { display: none }
+  .mast__tools { flex: none }
+}
+
 /* ===== Choose section: small additions to components.css (tokens only, both themes) ===== */
 .quizq { padding-top: var(--s-2) }
 .quizq .statement:focus { outline: none }
@@ -1149,6 +1158,42 @@ main { view-transition-name: main }
   .tools--choose > .tool:not(.tool--lead) .tool__p { margin-top: 0 }
 }
 .choose-tabs [aria-current="page"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 2px var(--shadow-tint), inset 0 0 0 1px var(--line) }
+
+/* ----- policy swipe: first screen fits a phone; the reveal never moves the card ----- */
+.swpg { display: grid; gap: var(--s-6); min-width: 0 }
+.swpg__main { gap: var(--s-4) }
+.swpg__main .deck { padding-bottom: 30px }
+.swlast:empty { display: none }
+.swlast__in { display: grid; gap: 4px; padding: var(--s-3) var(--s-4); border-left: 4px solid var(--pc, var(--line-strong)); border-radius: 0 var(--r-s) var(--r-s) 0; background: var(--sunk) }
+.swlast__h { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: var(--t-small) }
+.swlast__h .sw { align-self: center }
+.scard__more { justify-self: start }
+@media (min-width: 1024px) { .swlast { display: none } }
+@media (max-width: 1023px) { .swpg__reveal { display: none } }
+@media (max-width: 719px) {
+  .swpg { gap: var(--s-3) }
+  .swpg__head { gap: 0 }
+  .swpg__head .eyebrow, .swpg__head .lede { display: none }
+  .swpg__head h1 { font-size: 26px; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+  .swpg .split { gap: var(--s-6) }
+  .swpg__main { gap: var(--s-3) }
+  .swpg__main .deck { padding-bottom: 16px }
+  .swpg__main .scard { gap: 10px; padding: var(--s-4) var(--s-4) var(--s-3) }
+  .swpg__main .scard--behind { transform: translateY(8px) scale(.965) }
+  .swpg__main .scard--behind2 { transform: translateY(16px) scale(.93) }
+  .swpg__main .scard__s { font-size: 21px; line-height: 1.18 }
+  .swpg__main .scard__body { font-size: 15px; gap: 4px }
+  .scard__how { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden }
+  .scard--open .scard__how { display: block; -webkit-line-clamp: unset; line-clamp: none; overflow: visible }
+  .swpg__main .scard .disclose > summary { padding-block: 8px }
+  .swpg__main .scard .src { font-size: 12px }
+  .swpg__main .scard__stamp { top: 14px; right: 14px }
+  .swpg__main .swipe-btn i { width: 56px; height: 56px }
+  .swpg__main .swipe-btn i .i { width: 26px; height: 26px }
+  .swpg__main .swipe-btn--skip i { width: 44px; height: 44px }
+  .swpg__main .swipe-btn--skip i .i { width: 20px; height: 20px }
+}
+@media (min-width: 720px) { .scard__more { display: none } }
 
 /* ===== Vote › Māori electorates and Other languages (34-maori-lang.js). Tokens only; both themes come from the tokens ===== */
 /* a line in another language, with its English under it */
@@ -1519,8 +1564,11 @@ const ic = (k, cls = '') => `<svg class="i i-${k}${cls ? ' ' + cls : ''}" aria-h
 const S = { data: null, policies: null, people: null, thumbs: null, fulltext: {}, pages: null };
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const getJSON = async p => { const r = await fetch(p); if (!r.ok) throw new Error(p + ' ' + r.status); return r.json() };
+const _json = {};  // one request per URL (views re-render; cache-busted URLs with ?t= bypass the cache)
+const getJSON = p => { if (_json[p] && !p.includes('?t=')) return _json[p]; const q = fetch(p).then(r => { if (!r.ok) throw new Error(p + ' ' + r.status); return r.json() }); q.catch(() => { delete _json[p] }); if (!p.includes('?t=')) _json[p] = q; return q };
 const store = { get(k) { try { return localStorage.getItem(k) } catch { return null } }, set(k, v) { try { localStorage.setItem(k, v) } catch {} } };
+// Election history, Parliament membership and promises are fetched on first use (see render() in 90-shell-router.js).
+async function needData(...keys) { await Promise.all(keys.filter(k => !S.data[k]).map(async k => { S.data[k] = await getJSON('data/' + k + '.json').catch(() => []) })) }
 const P = s => (S.data.parties[s] || { slug: s, name: s, short: s, color: '#A7ADB5', order: 90 });
 const pname = s => P(s).short || s;
 const pcolor = s => P(s).color || '#A7ADB5';
@@ -3493,11 +3541,13 @@ V.swipe = async () => {
   let deck = buildDeck(S.swipe, st.done, topic); let i = 0, sess = 0, busy = false;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const topics = Object.keys(TOPIC_NAMES).filter(t => S.swipe.some(c => c.topic === t));
-  $('#main').innerHTML = sectionFrame('choose', 'choose/swipe', `
-    ${chooseHead('cards', 'Choose · Policy swipe', 'Agree or disagree?', 'Real 2026 policies, party hidden until you decide.')}
+  // Phone first screen: one-line heading, one scrolling row of topics, the card and the three buttons. The reveal of the
+  // last card sits in a strip under the buttons (phone/tablet) or in the side column (desktop), so it never moves the card.
+  $('#main').innerHTML = sectionFrame('choose', 'choose/swipe', `<div class="swpg">
+    ${chooseHead('cards', 'Choose · Policy swipe', 'Agree or disagree?', 'Real 2026 policies, party hidden until you decide.').replace('class="pagehead"', 'class="pagehead swpg__head"')}
     <div class="chips chips--scroll" role="group" aria-label="Topic" id="sw-topics">${[['', 'All topics'], ...topics.map(t => [t, TOPIC_NAMES[t]])].map(([t, l]) => `<button class="chip" type="button" data-topic="${esc(t)}" aria-pressed="${t === topic}">${esc(l)}</button>`).join('')}</div>
     <div class="split split--7-5">
-      <section class="stack stack--l" aria-label="Card">
+      <section class="stack swpg__main" aria-label="Card">
         <div class="progress-line" id="sw-prog"></div>
         <div class="deck" id="deck"></div>
         <div class="swipe-actions" id="acts" role="group" aria-label="Your verdict on this card">
@@ -3505,23 +3555,24 @@ V.swipe = async () => {
           <button class="swipe-btn swipe-btn--skip" type="button" data-swipe="skip" aria-label="Not sure, skip this policy" aria-keyshortcuts="ArrowUp"><i>${ic('minus')}</i>Not sure</button>
           <button class="swipe-btn swipe-btn--agree" type="button" data-swipe="agree" aria-label="Agree with this policy" aria-keyshortcuts="ArrowRight"><i>${ic('check')}</i>Agree</button>
         </div>
+        <div class="swlast" id="sw-last"></div>
         <p class="micro muted" style="text-align:center">Swipe the card, use the buttons, or the arrow keys: → agree, ← disagree, ↑ not sure. Summaries are each party’s own policy, described neutrally.</p>
         <p class="sr-only" id="sw-say" role="status"></p>
       </section>
       <aside class="stack stack--l">
-        <div id="sw-reveal"></div>
+        <div id="sw-reveal" class="swpg__reveal"></div>
         <div class="rows" id="sw-rows"></div>
         ${chooseUnknownsDisclose(['The tally only covers the cards you happened to see, so a party you saw twice can swing from 0% to 100%.', 'Some parties publish far fewer policies; you may see the same few from them.', 'A specific promise can look very different from a party’s overall direction. Find your match is the more careful tool.'], ['How the swipe works', 'guide/quiz-research.md'])}
         <div class="row"><a class="btn btn--s" href="#/choose/results/swipe">All your results</a><button class="btn btn--s btn--quiet" type="button" id="sw-reset">Start over</button></div>
         ${RESULT_DISCLAIMER}
       </aside>
-    </div>`);
+    </div></div>`);
   const stage = $('#deck'), acts = $('#acts');
   const cardHTML = c => `<article class="scard" aria-labelledby="sc-s" id="sc-top">
       <span class="scard__stamp" aria-hidden="true">AGREE</span>
       <div class="row row--between"><span class="badge">${esc(swipeTopic(c.topic))}</span><span class="scard__blind">${ic('lock', 'i--xs')} Party hidden</span></div>
       <p id="sc-s" class="scard__s">${esc(c.statement)}</p>
-      ${c.how ? `<div class="scard__body"><p><b>What it would do:</b> ${esc(c.how)}</p></div>` : ''}
+      ${c.how ? `<div class="scard__body"><p class="scard__how" id="sc-how"><b>What it would do:</b> ${esc(c.how)}</p><button class="linkbtn small scard__more" type="button" aria-expanded="false" aria-controls="sc-how" hidden>Show all of it</button></div>` : ''}
       ${c.why ? `<details class="disclose" style="border-top:1px solid var(--line)"><summary class="small">The reasoning given</summary><div class="disclose__body small"><p>${esc(c.why)}</p></div></details>` : ''}
       <p class="src">${ic('doc')} From a party’s 2026 policy document · summarised, meaning kept</p></article>`;
   // The tally and the liked list sit behind rows that open the sheet, so the deck stays the first screen.
@@ -3531,27 +3582,43 @@ V.swipe = async () => {
     $('#sw-rows').innerHTML = chooseRowBtn('id="sw-tally"', 'poll', 'Your tally so far', total ? `${total} card${total === 1 ? '' : 's'} from ${parties} part${parties === 1 ? 'y' : 'ies'} · agreement with each, A–Z` : 'Your agreement rate with each party shows up here as you go')
       + (liked ? chooseRowBtn('id="sw-liked"', 'check', `Policies you agreed with (${liked})`, 'With the party, the topic and the full policy') : '');
     $('#sw-tally').onclick = tallySheet; const l = $('#sw-liked'); if (l) l.onclick = likedSheet };
-  const drawProg = () => { const left = deck.length - i; $('#sw-prog').innerHTML = `<b>Card ${Math.min(sess + 1, SWIPE_ROUND)} of ${SWIPE_ROUND}</b><div class="bar"><i style="--w:${Math.round(sess / SWIPE_ROUND * 100)}%"></i></div><span class="micro muted">${left} left${topic ? ' on this topic' : ''}</span>` };
+  // "Card 3 of 20 in this round": a round is 20 cards, or fewer when the topic runs out first.
+  const drawProg = () => { const tot = Math.max(1, Math.min(SWIPE_ROUND, sess + Math.max(0, deck.length - i))); const n = Math.min(sess + 1, tot);
+    $('#sw-prog').innerHTML = `<span><b>Card ${n} of ${tot}</b> in this round</span><div class="bar" aria-hidden="true"><i style="--w:${Math.round(sess / tot * 100)}%"></i></div>` };
   const render = () => { busy = false; drawProg();
     const hadFocus = acts.contains(document.activeElement);
-    const stop = html => { stage.innerHTML = html; acts.hidden = true; const t = $('#sw-tally2'); if (t) t.onclick = tallySheet; if (hadFocus) { const f = stage.querySelector('button, a'); if (f) f.focus() } };
+    const stop = html => { stage.innerHTML = html; acts.hidden = true; const t = $('#sw-tally2'); if (t) t.onclick = tallySheet; if (hadFocus) { const f = stage.querySelector('button, a'); if (f) f.focus({ preventScroll: true }) } };
     if (i >= deck.length) { stop(`<div class="panel panel--sunk"><h2 class="h3">You’ve seen every card${topic ? ' on this topic' : ''}.</h2><p class="soft">Pick another topic, or look at your tally.</p><div class="row"><button class="btn btn--primary" type="button" id="sw-tally2" aria-haspopup="dialog">See your tally</button><a class="btn" href="#/choose/results/swipe">All your results</a></div></div>`); return }
-    if (sess >= SWIPE_ROUND) { stop(`<div class="panel panel--sunk"><h2 class="h3">That’s ${SWIPE_ROUND} cards.</h2><p class="soft">Another round gives a clearer picture.</p><div class="row"><button class="btn btn--primary" type="button" id="sw-more">Another ${SWIPE_ROUND}</button><button class="btn" type="button" id="sw-tally2" aria-haspopup="dialog">See your tally</button><a class="btn btn--quiet" href="#/choose/results/swipe">All your results</a></div></div>`); $('#sw-more').onclick = () => { sess = 0; render(); const b = acts.querySelector('[data-swipe="agree"]'); if (b) b.focus() }; return }
+    if (sess >= SWIPE_ROUND) { stop(`<div class="panel panel--sunk"><h2 class="h3">That’s ${SWIPE_ROUND} cards.</h2><p class="soft">Another round gives a clearer picture.</p><div class="row"><button class="btn btn--primary" type="button" id="sw-more">Another ${SWIPE_ROUND}</button><button class="btn" type="button" id="sw-tally2" aria-haspopup="dialog">See your tally</button><a class="btn btn--quiet" href="#/choose/results/swipe">All your results</a></div></div>`); $('#sw-more').onclick = () => { sess = 0; render(); keepInView(); const b = acts.querySelector('[data-swipe="agree"]'); if (b) b.focus({ preventScroll: true }) }; return }
     acts.hidden = false;
     stage.innerHTML = (deck[i + 2] ? '<article class="scard scard--behind2" aria-hidden="true"><p>.</p></article>' : '') + (deck[i + 1] ? '<article class="scard scard--behind" aria-hidden="true"><p>.</p></article>' : '') + cardHTML(deck[i]);
+    const how = $('#sc-how'), more = stage.querySelector('.scard__more');
+    if (how && more && how.scrollHeight > how.clientHeight + 2) { more.hidden = false; more.onclick = () => { const open = more.getAttribute('aria-expanded') !== 'true'; $('#sc-top').classList.toggle('scard--open', open); more.setAttribute('aria-expanded', open); more.textContent = open ? 'Show less' : 'Show all of it' } }
     attachDrag($('#sc-top')) };
-  const reveal = (c, verdict) => { const faces = typeof leaderFaces === 'function' ? leaderFaces(c.party) : []; const t = tallyFor(st, c.party);
+  // After a decision, scroll (only if needed) so the next card's top is on screen, below the sticky masthead.
+  const keepInView = () => { const mast = $('.mast'); const topLim = (mast ? Math.max(0, mast.getBoundingClientRect().bottom) : 0) + 8;
+    const tb = $('.tabbar'); const tbh = tb && getComputedStyle(tb).display !== 'none' && document.body.classList.contains('has-tabbar') ? tb.getBoundingClientRect().height : 0;
+    const t = $('#sw-prog').getBoundingClientRect().top, b = (acts.hidden ? stage : acts).getBoundingClientRect().bottom;
+    if (t < topLim || b > innerHeight - tbh - 8) window.scrollTo({ top: Math.max(0, scrollY + t - topLim), behavior: reduce ? 'auto' : 'smooth' }) };
+  const reveal = (c, verdict) => { const faces = typeof leaderFaces === 'function' ? leaderFaces(c.party) : []; const t = tallyFor(st, c.party); const name = esc(chooseFullName(c.party));
+    const verdictBadge = `<span class="badge badge--outline">${ic(verdict === 'agree' ? 'check' : 'x', 'i--xs')} You ${verdict === 'agree' ? 'agreed' : 'disagreed'}</span>`;
+    const soFar = `So far you’ve agreed with <b>${t.agree}</b> of the <b>${t.n}</b> ${esc(pname(c.party))} polic${t.n === 1 ? 'y' : 'ies'} you’ve seen.`;
+    const doc = c.doc ? `<button class="linkbtn" type="button" data-doc="${esc(c.party)}|${esc(c.doc)}">Read the full policy</button>` : '';
+    $('#sw-last').innerHTML = `<div class="swlast__in" style="--pc:${pcolor(c.party)}"><p class="swlast__h"><span class="sw"></span><span>Last card was from <b>${name}</b></span>${verdictBadge}</p>
+      <p class="small soft">${soFar} ${doc}${doc ? ' · ' : ''}<a href="#/parties/${esc(c.party)}">About this party</a></p></div>`;
     $('#sw-reveal').innerHTML = `<section class="reveal" style="--pc:${pcolor(c.party)}" aria-labelledby="rv">
-      <div class="reveal__who">${faces[0] ? faceHTML(faces[0], c.party) : ''}<span class="stack stack--s" style="gap:2px"><span class="micro muted">Last card was from</span><span id="rv" class="reveal__name">${esc(P(c.party).name || pname(c.party))}</span></span></div>
-      <p class="small"><span class="badge badge--ink">${ic(verdict === 'agree' ? 'check' : 'x', 'i--xs')} You ${verdict === 'agree' ? 'agreed' : 'disagreed'}</span></p>
+      <div class="reveal__who">${faces[0] ? faceHTML(faces[0], c.party) : ''}<span class="stack stack--s" style="gap:2px"><span class="micro muted">Last card was from</span><span id="rv" class="reveal__name">${name}</span></span></div>
+      <p class="small">${verdictBadge.replace('badge--outline', 'badge--ink')}</p>
       <p style="font-weight:700">${esc(c.statement)}</p>
-      <p class="small soft">So far you’ve agreed with <b>${t.agree}</b> of the <b>${t.n}</b> ${esc(pname(c.party))} polic${t.n === 1 ? 'y' : 'ies'} you’ve seen.</p>
+      <p class="small soft">${soFar}</p>
       <div class="row">${c.doc ? `<button class="btn btn--s" type="button" data-doc="${esc(c.party)}|${esc(c.doc)}">${ic('doc', 'i--xs')} Read the full policy</button>` : ''}<a class="btn btn--s btn--quiet" href="#/parties/${esc(c.party)}">About this party</a></div></section>` };
+  const skipped = () => { $('#sw-last').innerHTML = `<div class="swlast__in"><p class="swlast__h"><span class="badge badge--outline">${ic('minus', 'i--xs')} Skipped</span><span class="small soft">Its party stays hidden, and it isn’t counted.</span></p></div>`;
+    $('#sw-reveal').innerHTML = `<div class="panel panel--sunk"><p class="small soft"><b>You skipped the last card.</b> Its party stays hidden, and it isn’t counted in your tally.</p></div>` };
   const decide = verdict => { if (busy) return; const c = deck[i]; if (!c) return; if (acts.hidden) return; busy = true;
     st.done[c.id] = { v: verdict, party: c.party, t: Date.now() }; saveSwipe(st);
     const top = $('#sc-top'); if (top) { top.style.transition = ''; top.style.transform = verdict === 'agree' ? 'translateX(130%) rotate(16deg)' : verdict === 'disagree' ? 'translateX(-130%) rotate(-16deg)' : 'translateY(-40px) scale(.96)'; top.style.opacity = '0' }
-    setTimeout(() => { i++; sess++; if (verdict !== 'skip') reveal(c, verdict); drawTally(); render();
-      const next = sess < SWIPE_ROUND && deck[i]; $('#sw-say').textContent = `${verdict === 'skip' ? 'Skipped.' : `You ${verdict === 'agree' ? 'agreed' : 'disagreed'}. That was a ${P(c.party).name || pname(c.party)} policy.`} ${next ? `Next card: ${next.statement}` : 'That’s the end of this round.'}` }, reduce ? 10 : 280) };
+    setTimeout(() => { i++; sess++; if (verdict !== 'skip') reveal(c, verdict); else skipped(); drawTally(); render(); keepInView();
+      const next = sess < SWIPE_ROUND && deck[i]; $('#sw-say').textContent = `${verdict === 'skip' ? 'Skipped.' : `You ${verdict === 'agree' ? 'agreed' : 'disagreed'}. That policy was from ${chooseFullName(c.party)}.`} ${next ? `Next card: ${next.statement}` : 'That’s the end of this round.'}` }, reduce ? 10 : 280) };
   function attachDrag(el) { if (!el) return; let x0 = null, y0 = 0, dx = 0, id = null; const stamp = el.querySelector('.scard__stamp');
     el.addEventListener('pointerdown', e => { if (e.button > 0 || e.target.closest('summary, a, button, details[open] .disclose__body')) return; x0 = e.clientX; y0 = e.clientY; dx = 0; id = e.pointerId });
     el.addEventListener('pointermove', e => { if (x0 == null || e.pointerId !== id) return; dx = e.clientX - x0;
@@ -3623,7 +3690,7 @@ V.game = async () => {
     $('#choices').onclick = e => { const b = e.target.closest('[data-p]'); if (!b || $('#choices').dataset.done) return; $('#choices').dataset.done = '1'; const right = b.dataset.p === c.party; if (right) g.scores[pi]++;
       $('#choices').querySelectorAll('button').forEach(x => { x.disabled = x !== b && x.dataset.p !== c.party; if (x === b) x.setAttribute('aria-pressed', 'true'); if (x.dataset.p === c.party) x.classList.add('v-kept'); else if (x === b) x.classList.add('v-broken') });
       const lastTurn = g.turn + 1 >= Math.min(g.deck.length, g.players.length * g.rounds);
-      $('#verdict').innerHTML = `<div class="panel stack"><div class="row"><span class="verdict ${right ? 'v-kept' : 'v-broken'}">${ic(right ? 'check' : 'x')} ${right ? 'Correct' : 'Not quite'}</span><span>It’s a <b>${esc(P(c.party).name || pname(c.party))}</b> policy.</span></div>
+      $('#verdict').innerHTML = `<div class="panel stack"><div class="row"><span class="verdict ${right ? 'v-kept' : 'v-broken'}">${ic(right ? 'check' : 'x')} ${right ? 'Correct' : 'Not quite'}</span><span>That policy is from <b>${esc(chooseFullName(c.party))}</b>.</span></div>
         <div class="row">${c.doc ? `<button class="btn btn--s" type="button" data-doc="${esc(c.party)}|${esc(c.doc)}">${ic('doc', 'i--xs')} Read the full policy</button>` : ''}<button class="btn btn--primary" type="button" id="nextturn" style="margin-left:auto">${lastTurn ? 'See the scores' : 'Pass the phone'} ${ic('chev', 'i--s')}</button></div></div>`;
       g.phase = 'answered'; save();
       $('#nextturn').onclick = () => { g.turn++; g.phase = 'handoff'; save(); window.scrollTo(0, 0); play() }; $('#nextturn').focus({ preventScroll: true }) }; };
@@ -3652,7 +3719,9 @@ V.game = async () => {
 function chooseParties() { const g = (G().parties || []).map(p => p.slug); return g.length ? g : Object.keys((G().quiz2 || {}).parties || {}) }
 function chooseAZ(slugs) { return slugs.slice().sort((a, b) => pname(a).localeCompare(pname(b), 'en', { sensitivity: 'base' })) }
 // Ballot order: A–Z by each party's full registered name.
-function chooseBallot(slugs) { const full = s => (guideParty(s) || {}).name || P(s).name || pname(s); return slugs.slice().sort((a, b) => full(a).localeCompare(full(b), 'en', { sensitivity: 'base' })) }
+// A party's full name, the same everywhere in Choose and on the ballot list: the guide's registered name, else the short name.
+function chooseFullName(s) { return (guideParty(s) || {}).name || pname(s) }
+function chooseBallot(slugs) { return slugs.slice().sort((a, b) => chooseFullName(a).localeCompare(chooseFullName(b), 'en', { sensitivity: 'base' })) }
 const TICK = '<svg class="tick" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12"/><path d="M8.5 14.5l3.6 3.6L19.5 10"/></svg>';
 const chooseHead = (icon, eyebrow, h1, lede, extra = '') => `<header class="pagehead"><p class="eyebrow eyebrow--signal">${ic(icon, 'i--s')} ${eyebrow}</p><h1>${h1}</h1>${lede ? `<p class="lede">${lede}</p>` : ''}${extra}</header>`;
 const chooseSrc = (urls, pre = '') => { const a = [].concat(urls || []).filter(Boolean); return (a.length || pre) ? `<p class="src">${ic('doc')}${pre ? ` <span>${pre}</span>` : ''}${a.slice(0, 4).map((u, i) => ` <a href="${esc(u)}" target="_blank" rel="noopener">source${a.length > 1 ? ' ' + (i + 1) : ''}</a>`).join('')}</p>` : '' };
@@ -3886,7 +3955,7 @@ function compareBody(a, b) {
   const pos = (i, s) => { const p = i.positions[s]; return `<p class="small">${esc(T(p))}</p>${chooseSrc(srcOf(p))}` };
   return `<div class="cmp stack stack--l">
     <div class="row row--between choose-cmpbar"><span class="micro muted">Tap a heading to open it.</span><button class="btn btn--s btn--quiet" type="button" id="cmp-all">Open all</button></div>
-    <div class="cmp__pair cmp__heads" aria-hidden="true">${[a, b].map(s => `<div class="cmp__cell" style="--pc:${pcolor(s)}"><span class="h4">${esc(pname(s))}</span><span class="micro muted">${esc((guideParty(s) || {}).name || P(s).name || '')}</span></div>`).join('')}</div>
+    <div class="cmp__pair cmp__heads" aria-hidden="true">${[a, b].map(s => `<div class="cmp__cell" style="--pc:${pcolor(s)}"><span class="h4">${esc(pname(s))}</span><span class="micro muted">${esc(chooseFullName(s))}</span></div>`).join('')}</div>
     <div id="cmp-fields">
     ${pair('In a nutshell', nutshell, null, 'nut')}
     ${pair('Big ideas', ideas, null, 'ideas')}
@@ -4756,34 +4825,42 @@ function resolve(path) { const seg = path.split('/'); const [a, b, ...rest] = se
     if (b === 'people') return { sec: 'parties', view: 'people', args: [arg], key: 'parties/people' };
     if (b === 'news') return { sec: 'parties', view: 'newsroom', args: [arg], key: 'parties/news' };
     return { sec: 'parties', view: 'party', args: [b, arg || 'glance'], key: 'parties' } }
-  if (a === 'seats') { const sub = b || 'polls';
+  if (a === 'seats') { const sub = b || (electionPhase() === 'electionday' ? 'map' : 'polls');
     if (sub === 'polls') return { sec: 'seats', view: 'polls', args: [rest[0]], key: 'seats/polls' };
     if (sub === 'map') return { sec: 'seats', view: 'map', args: [rest[0] ? +rest[0] : undefined, rest[1]], key: 'seats/map' };
     if (sub === 'parliament') return { sec: 'seats', view: 'parliament', args: ['chamber'], key: 'seats/parliament' };
     if (sub === 'coalition' || sub === 'calculator') return { sec: 'seats', view: 'parliament', args: [sub], key: 'seats/' + sub };
     if (sub === 'results') return { sec: 'seats', view: 'results', args: [], key: 'seats/results' } }
-  return { sec: 'today', view: 'home', args: [] } }
+  return { sec: null, view: 'notfound', args: [path] } }
 // Navigate. Pushes a history entry via the hash; render() runs from the hashchange handler.
 function go(r) { const path = normaliseRoute(r); if ($('#sheet').open) { const d = $('#sheet'); d.close(); if (history.state && history.state.sheet) { history.back(); setTimeout(() => { location.hash = '/' + path }, 0); return } }
   if (location.hash === '#/' + path) render(path); else location.hash = '/' + path }
 const route = go;
+// Views that never touch election history, Parliament membership or promises start without loading them.
+const LIGHT_VIEWS = new Set(['home', 'vote', 'voteLang', 'choose', 'match', 'swipe', 'compass', 'game', 'chooseResults', 'compare', 'search', 'trust', 'page', 'changes', 'notfound', 'newsroom', 'issues', 'issue', 'policies']);
 function render(path) {
   if (S.ballotTimer) { clearInterval(S.ballotTimer); S.ballotTimer = null }
   if (S.scrubTimer) { clearInterval(S.scrubTimer); S.scrubTimer = null }
   if (S.resultsTimer) { clearInterval(S.resultsTimer); S.resultsTimer = null }
-  const R = resolve(path); if (!V[R.view]) { R.view = 'home'; R.sec = 'today' }
+  const R = resolve(path); if (!V[R.view]) { R.view = 'notfound'; R.args = [path]; R.sec = null }
   S.route = path; S.sec = R.sec; S.subkey = R.key; markNav(R.sec); renderPhase();
   if (document.body.classList.contains('focus-mode')) focusMode(null);
   const main = $('#main'); main.className = 'wrap page' + (R.view === 'home' ? ' page--hero' : '');
   const swap = async () => {
     if (blockedToday(R.view) || blockedToday(path.split('/').pop())) { main.innerHTML = `<div class="lock">${ic('lock')}<h2 class="h3">Hidden until 7pm</h2><p>${ELECTION_DAY_BLOCK}</p><p class="small muted">Everything else — parties, policies, candidates, your electorate, how to vote — stays available.</p><div class="row"><a class="btn btn--primary" href="https://map.vote.nz" target="_blank" rel="noopener">Find a voting place</a><a class="btn" href="#/vote/electorate">Your electorate</a></div></div>`; return }
+    if (!LIGHT_VIEWS.has(R.view)) await needData('elections', 'parliaments', 'promises');
     await V[R.view](...R.args);
+    const h1 = main.querySelector('h1'); document.title = (h1 && h1.textContent.trim() ? h1.textContent.trim().replace(/\s+/g, ' ').slice(0, 80) + ' · ' : '') + 'Ballot Book NZ';
     loadPeople().then(() => { if (S.route === path) main.querySelectorAll('.read, .prose, .quote, .pol p, .lede, #ctx, .mapside, .feed__t, .side, .nutshell').forEach(autolink);
       // a page never links to itself
       main.querySelectorAll('.linkbtn[data-go]').forEach(b => { if (normaliseRoute(b.dataset.go) === S.route.replace(/\/(glance|policies|record|people|history)$/, '')) b.replaceWith(document.createTextNode(b.textContent)) }) }) };
   const run = () => { window.scrollTo(0, 0); main.classList.remove('page-enter'); void main.offsetWidth; main.classList.add('page-enter'); return swap() };
-  if (document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches) document.startViewTransition(run); else run();
+  if (document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches) document.startViewTransition(() => Promise.race([run(), new Promise(r => setTimeout(r, 300))])); else run();
 }
+
+/* ----- not found ----- */
+V.notfound = path => { $('#main').innerHTML = `<div class="stack stack--l" style="max-width:720px"><header class="pagehead"><p class="eyebrow">Not found</p><h1>There's no page at “${esc(path)}”</h1><p class="lede">The link may be old or mistyped. Everything in the guide is reachable from the five sections, or try a search.</p></header>
+    <div class="rows">${SECTIONS.map(([k, l]) => `<a class="rowlink" href="#/${k}">${ic(k)}<span><span class="rowlink__title">${l}</span></span>${ic('chev', 'i--s')}</a>`).join('')}<a class="rowlink" href="#/search">${ic('search')}<span><span class="rowlink__title">Search the guide</span></span>${ic('chev', 'i--s')}</a></div></div>` };
 
 /* ----- footer ----- */
 function drawFooter() {
@@ -4799,6 +4876,7 @@ function drawFooter() {
 
 /* ----- event delegation (one listener for the whole app) ----- */
 document.addEventListener('click', e => {
+  const sk = e.target.closest('a.skip'); if (sk) { e.preventDefault(); const m = $('#main'); m.focus({ preventScroll: false }); m.scrollIntoView(); return }
   const pl = e.target.closest('.linkbtn[data-person], button.lnk[data-person]'); if (pl) { openPersonByFolder(pl.dataset.person); return }
   const lc = e.target.closest('[data-locate]'); if (lc) { runLocate(lc.dataset.locate); return }
   const gob = e.target.closest('[data-go]'); if (gob) { go(gob.dataset.go); return }
@@ -4806,6 +4884,8 @@ document.addEventListener('click', e => {
   const ip = e.target.closest('[data-issuepol]'); if (ip) { const [p, ids] = ip.dataset.issuepol.split('|'); showIssuePolicies(p, ids); return }
   const pg = e.target.closest('[data-page]'); if (pg) { openPage(pg.dataset.page); return }
   const a = e.target.closest('.prose a'); if (a) { const href = a.getAttribute('href') || '';
+    if (/^#(?!\/)/.test(href)) { e.preventDefault(); const id = href.slice(1); const scope = a.closest('#sheet-body') || $('#main'); const t = scope.querySelector('#' + CSS.escape(id)) || [...scope.querySelectorAll('h1,h2,h3,h4')].find(h => h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') === id); if (t) { t.scrollIntoView({ block: 'start' }); t.setAttribute('tabindex', '-1'); t.focus() } return }
+    if (!/^https?:|^mailto:|^#/.test(href) && /\.json(#.*)?$/.test(href)) { e.preventDefault(); const base = (a.closest('[data-base]') || {}).dataset?.base || ''; const parts = base.split('/').slice(0, -1); href.replace(/#.*$/, '').split('/').forEach(x => { if (x === '..') parts.pop(); else if (x && x !== '.') parts.push(x) }); window.open('https://github.com/not-simon/Politicsnz/blob/main/' + parts.join('/'), '_blank', 'noopener'); return }
     if (!/^https?:|^mailto:|^#/.test(href) && /\.(md|json)(#.*)?$|\/$/.test(href)) { e.preventDefault(); const base = (a.closest('[data-base]') || {}).dataset?.base || ''; const parts = base.split('/').slice(0, -1);
       href.replace(/#.*$/, '').split('/').forEach(s => { if (s === '..') parts.pop(); else if (s && s !== '.') parts.push(s) }); let k = parts.join('/'); if (!/\.md$/.test(k)) k = k.replace(/\/?$/, '/README.md'); openPage(k) } }
   // in-app links inside the sheet: close the sheet first so the page behind changes
@@ -4823,7 +4903,6 @@ document.addEventListener('keydown', e => { if (e.key === '/' && !/^(INPUT|TEXTA
   window.addEventListener('hashchange', () => { const p = normaliseRoute(location.hash); if (location.hash !== '#/' + p) { history.replaceState(null, '', '#/' + p); } if (p !== S.route) render(p) });
   if (location.hash !== '#/' + start) history.replaceState(null, '', '#/' + start);
   render(start);
-  loadPeople().then(() => { if (['today', 'parties'].includes(S.route)) render(S.route) });
 })();
 })();
 

@@ -12,8 +12,11 @@ const ic = (k, cls = '') => `<svg class="i i-${k}${cls ? ' ' + cls : ''}" aria-h
 const S = { data: null, policies: null, people: null, thumbs: null, fulltext: {}, pages: null };
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const getJSON = async p => { const r = await fetch(p); if (!r.ok) throw new Error(p + ' ' + r.status); return r.json() };
+const _json = {};  // one request per URL (views re-render; cache-busted URLs with ?t= bypass the cache)
+const getJSON = p => { if (_json[p] && !p.includes('?t=')) return _json[p]; const q = fetch(p).then(r => { if (!r.ok) throw new Error(p + ' ' + r.status); return r.json() }); q.catch(() => { delete _json[p] }); if (!p.includes('?t=')) _json[p] = q; return q };
 const store = { get(k) { try { return localStorage.getItem(k) } catch { return null } }, set(k, v) { try { localStorage.setItem(k, v) } catch {} } };
+// Election history, Parliament membership and promises are fetched on first use (see render() in 90-shell-router.js).
+async function needData(...keys) { await Promise.all(keys.filter(k => !S.data[k]).map(async k => { S.data[k] = await getJSON('data/' + k + '.json').catch(() => []) })) }
 const P = s => (S.data.parties[s] || { slug: s, name: s, short: s, color: '#A7ADB5', order: 90 });
 const pname = s => P(s).short || s;
 const pcolor = s => P(s).color || '#A7ADB5';

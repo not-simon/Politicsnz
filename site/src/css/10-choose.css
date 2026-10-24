@@ -97,3 +97,39 @@
   .tools--choose > .tool:not(.tool--lead) .tool__p { margin-top: 0 }
 }
 .choose-tabs [aria-current="page"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 2px var(--shadow-tint), inset 0 0 0 1px var(--line) }
+
+/* ----- policy swipe: first screen fits a phone; the reveal never moves the card ----- */
+.swpg { display: grid; gap: var(--s-6); min-width: 0 }
+.swpg__main { gap: var(--s-4) }
+.swpg__main .deck { padding-bottom: 30px }
+.swlast:empty { display: none }
+.swlast__in { display: grid; gap: 4px; padding: var(--s-3) var(--s-4); border-left: 4px solid var(--pc, var(--line-strong)); border-radius: 0 var(--r-s) var(--r-s) 0; background: var(--sunk) }
+.swlast__h { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: var(--t-small) }
+.swlast__h .sw { align-self: center }
+.scard__more { justify-self: start }
+@media (min-width: 1024px) { .swlast { display: none } }
+@media (max-width: 1023px) { .swpg__reveal { display: none } }
+@media (max-width: 719px) {
+  .swpg { gap: var(--s-3) }
+  .swpg__head { gap: 0 }
+  .swpg__head .eyebrow, .swpg__head .lede { display: none }
+  .swpg__head h1 { font-size: 26px; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+  .swpg .split { gap: var(--s-6) }
+  .swpg__main { gap: var(--s-3) }
+  .swpg__main .deck { padding-bottom: 16px }
+  .swpg__main .scard { gap: 10px; padding: var(--s-4) var(--s-4) var(--s-3) }
+  .swpg__main .scard--behind { transform: translateY(8px) scale(.965) }
+  .swpg__main .scard--behind2 { transform: translateY(16px) scale(.93) }
+  .swpg__main .scard__s { font-size: 21px; line-height: 1.18 }
+  .swpg__main .scard__body { font-size: 15px; gap: 4px }
+  .scard__how { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden }
+  .scard--open .scard__how { display: block; -webkit-line-clamp: unset; line-clamp: none; overflow: visible }
+  .swpg__main .scard .disclose > summary { padding-block: 8px }
+  .swpg__main .scard .src { font-size: 12px }
+  .swpg__main .scard__stamp { top: 14px; right: 14px }
+  .swpg__main .swipe-btn i { width: 56px; height: 56px }
+  .swpg__main .swipe-btn i .i { width: 26px; height: 26px }
+  .swpg__main .swipe-btn--skip i { width: 44px; height: 44px }
+  .swpg__main .swipe-btn--skip i .i { width: 20px; height: 20px }
+}
+@media (min-width: 720px) { .scard__more { display: none } }

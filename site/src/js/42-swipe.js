@@ -44,11 +44,13 @@ V.swipe = async () => {
   let deck = buildDeck(S.swipe, st.done, topic); let i = 0, sess = 0, busy = false;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const topics = Object.keys(TOPIC_NAMES).filter(t => S.swipe.some(c => c.topic === t));
-  $('#main').innerHTML = sectionFrame('choose', 'choose/swipe', `
-    ${chooseHead('cards', 'Choose · Policy swipe', 'Agree or disagree?', 'Real 2026 policies, party hidden until you decide.')}
+  // Phone first screen: one-line heading, one scrolling row of topics, the card and the three buttons. The reveal of the
+  // last card sits in a strip under the buttons (phone/tablet) or in the side column (desktop), so it never moves the card.
+  $('#main').innerHTML = sectionFrame('choose', 'choose/swipe', `<div class="swpg">
+    ${chooseHead('cards', 'Choose · Policy swipe', 'Agree or disagree?', 'Real 2026 policies, party hidden until you decide.').replace('class="pagehead"', 'class="pagehead swpg__head"')}
     <div class="chips chips--scroll" role="group" aria-label="Topic" id="sw-topics">${[['', 'All topics'], ...topics.map(t => [t, TOPIC_NAMES[t]])].map(([t, l]) => `<button class="chip" type="button" data-topic="${esc(t)}" aria-pressed="${t === topic}">${esc(l)}</button>`).join('')}</div>
     <div class="split split--7-5">
-      <section class="stack stack--l" aria-label="Card">
+      <section class="stack swpg__main" aria-label="Card">
         <div class="progress-line" id="sw-prog"></div>
         <div class="deck" id="deck"></div>
         <div class="swipe-actions" id="acts" role="group" aria-label="Your verdict on this card">
@@ -56,23 +58,24 @@ V.swipe = async () => {
           <button class="swipe-btn swipe-btn--skip" type="button" data-swipe="skip" aria-label="Not sure, skip this policy" aria-keyshortcuts="ArrowUp"><i>${ic('minus')}</i>Not sure</button>
           <button class="swipe-btn swipe-btn--agree" type="button" data-swipe="agree" aria-label="Agree with this policy" aria-keyshortcuts="ArrowRight"><i>${ic('check')}</i>Agree</button>
         </div>
+        <div class="swlast" id="sw-last"></div>
         <p class="micro muted" style="text-align:center">Swipe the card, use the buttons, or the arrow keys: → agree, ← disagree, ↑ not sure. Summaries are each party’s own policy, described neutrally.</p>
         <p class="sr-only" id="sw-say" role="status"></p>
       </section>
       <aside class="stack stack--l">
-        <div id="sw-reveal"></div>
+        <div id="sw-reveal" class="swpg__reveal"></div>
         <div class="rows" id="sw-rows"></div>
         ${chooseUnknownsDisclose(['The tally only covers the cards you happened to see, so a party you saw twice can swing from 0% to 100%.', 'Some parties publish far fewer policies; you may see the same few from them.', 'A specific promise can look very different from a party’s overall direction. Find your match is the more careful tool.'], ['How the swipe works', 'guide/quiz-research.md'])}
         <div class="row"><a class="btn btn--s" href="#/choose/results/swipe">All your results</a><button class="btn btn--s btn--quiet" type="button" id="sw-reset">Start over</button></div>
         ${RESULT_DISCLAIMER}
       </aside>
-    </div>`);
+    </div></div>`);
   const stage = $('#deck'), acts = $('#acts');
   const cardHTML = c => `<article class="scard" aria-labelledby="sc-s" id="sc-top">
       <span class="scard__stamp" aria-hidden="true">AGREE</span>
       <div class="row row--between"><span class="badge">${esc(swipeTopic(c.topic))}</span><span class="scard__blind">${ic('lock', 'i--xs')} Party hidden</span></div>
       <p id="sc-s" class="scard__s">${esc(c.statement)}</p>
-      ${c.how ? `<div class="scard__body"><p><b>What it would do:</b> ${esc(c.how)}</p></div>` : ''}
+      ${c.how ? `<div class="scard__body"><p class="scard__how" id="sc-how"><b>What it would do:</b> ${esc(c.how)}</p><button class="linkbtn small scard__more" type="button" aria-expanded="false" aria-controls="sc-how" hidden>Show all of it</button></div>` : ''}
       ${c.why ? `<details class="disclose" style="border-top:1px solid var(--line)"><summary class="small">The reasoning given</summary><div class="disclose__body small"><p>${esc(c.why)}</p></div></details>` : ''}
       <p class="src">${ic('doc')} From a party’s 2026 policy document · summarised, meaning kept</p></article>`;
   // The tally and the liked list sit behind rows that open the sheet, so the deck stays the first screen.
@@ -82,27 +85,43 @@ V.swipe = async () => {
     $('#sw-rows').innerHTML = chooseRowBtn('id="sw-tally"', 'poll', 'Your tally so far', total ? `${total} card${total === 1 ? '' : 's'} from ${parties} part${parties === 1 ? 'y' : 'ies'} · agreement with each, A–Z` : 'Your agreement rate with each party shows up here as you go')
       + (liked ? chooseRowBtn('id="sw-liked"', 'check', `Policies you agreed with (${liked})`, 'With the party, the topic and the full policy') : '');
     $('#sw-tally').onclick = tallySheet; const l = $('#sw-liked'); if (l) l.onclick = likedSheet };
-  const drawProg = () => { const left = deck.length - i; $('#sw-prog').innerHTML = `<b>Card ${Math.min(sess + 1, SWIPE_ROUND)} of ${SWIPE_ROUND}</b><div class="bar"><i style="--w:${Math.round(sess / SWIPE_ROUND * 100)}%"></i></div><span class="micro muted">${left} left${topic ? ' on this topic' : ''}</span>` };
+  // "Card 3 of 20 in this round": a round is 20 cards, or fewer when the topic runs out first.
+  const drawProg = () => { const tot = Math.max(1, Math.min(SWIPE_ROUND, sess + Math.max(0, deck.length - i))); const n = Math.min(sess + 1, tot);
+    $('#sw-prog').innerHTML = `<span><b>Card ${n} of ${tot}</b> in this round</span><div class="bar" aria-hidden="true"><i style="--w:${Math.round(sess / tot * 100)}%"></i></div>` };
   const render = () => { busy = false; drawProg();
     const hadFocus = acts.contains(document.activeElement);
-    const stop = html => { stage.innerHTML = html; acts.hidden = true; const t = $('#sw-tally2'); if (t) t.onclick = tallySheet; if (hadFocus) { const f = stage.querySelector('button, a'); if (f) f.focus() } };
+    const stop = html => { stage.innerHTML = html; acts.hidden = true; const t = $('#sw-tally2'); if (t) t.onclick = tallySheet; if (hadFocus) { const f = stage.querySelector('button, a'); if (f) f.focus({ preventScroll: true }) } };
     if (i >= deck.length) { stop(`<div class="panel panel--sunk"><h2 class="h3">You’ve seen every card${topic ? ' on this topic' : ''}.</h2><p class="soft">Pick another topic, or look at your tally.</p><div class="row"><button class="btn btn--primary" type="button" id="sw-tally2" aria-haspopup="dialog">See your tally</button><a class="btn" href="#/choose/results/swipe">All your results</a></div></div>`); return }
-    if (sess >= SWIPE_ROUND) { stop(`<div class="panel panel--sunk"><h2 class="h3">That’s ${SWIPE_ROUND} cards.</h2><p class="soft">Another round gives a clearer picture.</p><div class="row"><button class="btn btn--primary" type="button" id="sw-more">Another ${SWIPE_ROUND}</button><button class="btn" type="button" id="sw-tally2" aria-haspopup="dialog">See your tally</button><a class="btn btn--quiet" href="#/choose/results/swipe">All your results</a></div></div>`); $('#sw-more').onclick = () => { sess = 0; render(); const b = acts.querySelector('[data-swipe="agree"]'); if (b) b.focus() }; return }
+    if (sess >= SWIPE_ROUND) { stop(`<div class="panel panel--sunk"><h2 class="h3">That’s ${SWIPE_ROUND} cards.</h2><p class="soft">Another round gives a clearer picture.</p><div class="row"><button class="btn btn--primary" type="button" id="sw-more">Another ${SWIPE_ROUND}</button><button class="btn" type="button" id="sw-tally2" aria-haspopup="dialog">See your tally</button><a class="btn btn--quiet" href="#/choose/results/swipe">All your results</a></div></div>`); $('#sw-more').onclick = () => { sess = 0; render(); keepInView(); const b = acts.querySelector('[data-swipe="agree"]'); if (b) b.focus({ preventScroll: true }) }; return }
     acts.hidden = false;
     stage.innerHTML = (deck[i + 2] ? '<article class="scard scard--behind2" aria-hidden="true"><p>.</p></article>' : '') + (deck[i + 1] ? '<article class="scard scard--behind" aria-hidden="true"><p>.</p></article>' : '') + cardHTML(deck[i]);
+    const how = $('#sc-how'), more = stage.querySelector('.scard__more');
+    if (how && more && how.scrollHeight > how.clientHeight + 2) { more.hidden = false; more.onclick = () => { const open = more.getAttribute('aria-expanded') !== 'true'; $('#sc-top').classList.toggle('scard--open', open); more.setAttribute('aria-expanded', open); more.textContent = open ? 'Show less' : 'Show all of it' } }
     attachDrag($('#sc-top')) };
-  const reveal = (c, verdict) => { const faces = typeof leaderFaces === 'function' ? leaderFaces(c.party) : []; const t = tallyFor(st, c.party);
+  // After a decision, scroll (only if needed) so the next card's top is on screen, below the sticky masthead.
+  const keepInView = () => { const mast = $('.mast'); const topLim = (mast ? Math.max(0, mast.getBoundingClientRect().bottom) : 0) + 8;
+    const tb = $('.tabbar'); const tbh = tb && getComputedStyle(tb).display !== 'none' && document.body.classList.contains('has-tabbar') ? tb.getBoundingClientRect().height : 0;
+    const t = $('#sw-prog').getBoundingClientRect().top, b = (acts.hidden ? stage : acts).getBoundingClientRect().bottom;
+    if (t < topLim || b > innerHeight - tbh - 8) window.scrollTo({ top: Math.max(0, scrollY + t - topLim), behavior: reduce ? 'auto' : 'smooth' }) };
+  const reveal = (c, verdict) => { const faces = typeof leaderFaces === 'function' ? leaderFaces(c.party) : []; const t = tallyFor(st, c.party); const name = esc(chooseFullName(c.party));
+    const verdictBadge = `<span class="badge badge--outline">${ic(verdict === 'agree' ? 'check' : 'x', 'i--xs')} You ${verdict === 'agree' ? 'agreed' : 'disagreed'}</span>`;
+    const soFar = `So far you’ve agreed with <b>${t.agree}</b> of the <b>${t.n}</b> ${esc(pname(c.party))} polic${t.n === 1 ? 'y' : 'ies'} you’ve seen.`;
+    const doc = c.doc ? `<button class="linkbtn" type="button" data-doc="${esc(c.party)}|${esc(c.doc)}">Read the full policy</button>` : '';
+    $('#sw-last').innerHTML = `<div class="swlast__in" style="--pc:${pcolor(c.party)}"><p class="swlast__h"><span class="sw"></span><span>Last card was from <b>${name}</b></span>${verdictBadge}</p>
+      <p class="small soft">${soFar} ${doc}${doc ? ' · ' : ''}<a href="#/parties/${esc(c.party)}">About this party</a></p></div>`;
     $('#sw-reveal').innerHTML = `<section class="reveal" style="--pc:${pcolor(c.party)}" aria-labelledby="rv">
-      <div class="reveal__who">${faces[0] ? faceHTML(faces[0], c.party) : ''}<span class="stack stack--s" style="gap:2px"><span class="micro muted">Last card was from</span><span id="rv" class="reveal__name">${esc(P(c.party).name || pname(c.party))}</span></span></div>
-      <p class="small"><span class="badge badge--ink">${ic(verdict === 'agree' ? 'check' : 'x', 'i--xs')} You ${verdict === 'agree' ? 'agreed' : 'disagreed'}</span></p>
+      <div class="reveal__who">${faces[0] ? faceHTML(faces[0], c.party) : ''}<span class="stack stack--s" style="gap:2px"><span class="micro muted">Last card was from</span><span id="rv" class="reveal__name">${name}</span></span></div>
+      <p class="small">${verdictBadge.replace('badge--outline', 'badge--ink')}</p>
       <p style="font-weight:700">${esc(c.statement)}</p>
-      <p class="small soft">So far you’ve agreed with <b>${t.agree}</b> of the <b>${t.n}</b> ${esc(pname(c.party))} polic${t.n === 1 ? 'y' : 'ies'} you’ve seen.</p>
+      <p class="small soft">${soFar}</p>
       <div class="row">${c.doc ? `<button class="btn btn--s" type="button" data-doc="${esc(c.party)}|${esc(c.doc)}">${ic('doc', 'i--xs')} Read the full policy</button>` : ''}<a class="btn btn--s btn--quiet" href="#/parties/${esc(c.party)}">About this party</a></div></section>` };
+  const skipped = () => { $('#sw-last').innerHTML = `<div class="swlast__in"><p class="swlast__h"><span class="badge badge--outline">${ic('minus', 'i--xs')} Skipped</span><span class="small soft">Its party stays hidden, and it isn’t counted.</span></p></div>`;
+    $('#sw-reveal').innerHTML = `<div class="panel panel--sunk"><p class="small soft"><b>You skipped the last card.</b> Its party stays hidden, and it isn’t counted in your tally.</p></div>` };
   const decide = verdict => { if (busy) return; const c = deck[i]; if (!c) return; if (acts.hidden) return; busy = true;
     st.done[c.id] = { v: verdict, party: c.party, t: Date.now() }; saveSwipe(st);
     const top = $('#sc-top'); if (top) { top.style.transition = ''; top.style.transform = verdict === 'agree' ? 'translateX(130%) rotate(16deg)' : verdict === 'disagree' ? 'translateX(-130%) rotate(-16deg)' : 'translateY(-40px) scale(.96)'; top.style.opacity = '0' }
-    setTimeout(() => { i++; sess++; if (verdict !== 'skip') reveal(c, verdict); drawTally(); render();
-      const next = sess < SWIPE_ROUND && deck[i]; $('#sw-say').textContent = `${verdict === 'skip' ? 'Skipped.' : `You ${verdict === 'agree' ? 'agreed' : 'disagreed'}. That was a ${P(c.party).name || pname(c.party)} policy.`} ${next ? `Next card: ${next.statement}` : 'That’s the end of this round.'}` }, reduce ? 10 : 280) };
+    setTimeout(() => { i++; sess++; if (verdict !== 'skip') reveal(c, verdict); else skipped(); drawTally(); render(); keepInView();
+      const next = sess < SWIPE_ROUND && deck[i]; $('#sw-say').textContent = `${verdict === 'skip' ? 'Skipped.' : `You ${verdict === 'agree' ? 'agreed' : 'disagreed'}. That policy was from ${chooseFullName(c.party)}.`} ${next ? `Next card: ${next.statement}` : 'That’s the end of this round.'}` }, reduce ? 10 : 280) };
   function attachDrag(el) { if (!el) return; let x0 = null, y0 = 0, dx = 0, id = null; const stamp = el.querySelector('.scard__stamp');
     el.addEventListener('pointerdown', e => { if (e.button > 0 || e.target.closest('summary, a, button, details[open] .disclose__body')) return; x0 = e.clientX; y0 = e.clientY; dx = 0; id = e.pointerId });
     el.addEventListener('pointermove', e => { if (x0 == null || e.pointerId !== id) return; dx = e.clientX - x0;

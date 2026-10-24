@@ -8,7 +8,9 @@
 function chooseParties() { const g = (G().parties || []).map(p => p.slug); return g.length ? g : Object.keys((G().quiz2 || {}).parties || {}) }
 function chooseAZ(slugs) { return slugs.slice().sort((a, b) => pname(a).localeCompare(pname(b), 'en', { sensitivity: 'base' })) }
 // Ballot order: A–Z by each party's full registered name.
-function chooseBallot(slugs) { const full = s => (guideParty(s) || {}).name || P(s).name || pname(s); return slugs.slice().sort((a, b) => full(a).localeCompare(full(b), 'en', { sensitivity: 'base' })) }
+// A party's full name, the same everywhere in Choose and on the ballot list: the guide's registered name, else the short name.
+function chooseFullName(s) { return (guideParty(s) || {}).name || pname(s) }
+function chooseBallot(slugs) { return slugs.slice().sort((a, b) => chooseFullName(a).localeCompare(chooseFullName(b), 'en', { sensitivity: 'base' })) }
 const TICK = '<svg class="tick" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12"/><path d="M8.5 14.5l3.6 3.6L19.5 10"/></svg>';
 const chooseHead = (icon, eyebrow, h1, lede, extra = '') => `<header class="pagehead"><p class="eyebrow eyebrow--signal">${ic(icon, 'i--s')} ${eyebrow}</p><h1>${h1}</h1>${lede ? `<p class="lede">${lede}</p>` : ''}${extra}</header>`;
 const chooseSrc = (urls, pre = '') => { const a = [].concat(urls || []).filter(Boolean); return (a.length || pre) ? `<p class="src">${ic('doc')}${pre ? ` <span>${pre}</span>` : ''}${a.slice(0, 4).map((u, i) => ` <a href="${esc(u)}" target="_blank" rel="noopener">source${a.length > 1 ? ' ' + (i + 1) : ''}</a>`).join('')}</p>` : '' };
@@ -242,7 +244,7 @@ function compareBody(a, b) {
   const pos = (i, s) => { const p = i.positions[s]; return `<p class="small">${esc(T(p))}</p>${chooseSrc(srcOf(p))}` };
   return `<div class="cmp stack stack--l">
     <div class="row row--between choose-cmpbar"><span class="micro muted">Tap a heading to open it.</span><button class="btn btn--s btn--quiet" type="button" id="cmp-all">Open all</button></div>
-    <div class="cmp__pair cmp__heads" aria-hidden="true">${[a, b].map(s => `<div class="cmp__cell" style="--pc:${pcolor(s)}"><span class="h4">${esc(pname(s))}</span><span class="micro muted">${esc((guideParty(s) || {}).name || P(s).name || '')}</span></div>`).join('')}</div>
+    <div class="cmp__pair cmp__heads" aria-hidden="true">${[a, b].map(s => `<div class="cmp__cell" style="--pc:${pcolor(s)}"><span class="h4">${esc(pname(s))}</span><span class="micro muted">${esc(chooseFullName(s))}</span></div>`).join('')}</div>
     <div id="cmp-fields">
     ${pair('In a nutshell', nutshell, null, 'nut')}
     ${pair('Big ideas', ideas, null, 'ideas')}

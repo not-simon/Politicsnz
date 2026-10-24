@@ -117,6 +117,7 @@ def bio_excerpt(readme):
         m = re.search(r'^##+\s*' + head + r'.*?\n(.*?)(?=\n##|\Z)', readme, re.S | re.M)
         if m:
             t = re.sub(r'\s+', ' ', re.sub(r'<[^>]+>|\[([^\]]+)\]\([^)]+\)', r'\1', m.group(1))).strip()
+            t = re.sub(r'\*\*([^*]+)\*\*|\*([^*]+)\*|`([^`]+)`', lambda mm: next(g for g in mm.groups() if g is not None), t)   # markdown emphasis -> plain
             if len(t) > 40: return t[:700]
     return ''
 people, thumbs = [], {}
@@ -165,14 +166,22 @@ if isinstance(guide['parties'], dict): guide['parties'] = guide['parties'].get('
 if isinstance(guide['issues'], dict): guide['issues'] = guide['issues'].get('issues', [])
 electorates = load(ROOT / 'data' / 'electorates' / '2026.json', [])
 if isinstance(electorates, dict): electorates = electorates.get('electorates', [])
+# candidate list places must match the person records (which prefer the official renumbered list); people.json is built above
+_rank = {p['slug']: p.get('list_rank_2026') for p in people}
+for e in electorates:
+    for c in e.get('candidates') or []:
+        if c.get('slug') in _rank and _rank[c['slug']] and c.get('list_rank') != _rank[c['slug']]: c['list_rank'] = _rank[c['slug']]
 forecast = load(ROOT / 'data' / 'forecast.json', None)
 # Election-night results (tools/results_feed.py). Attached only once real votes exist, so no zero-count 'live' page can appear.
 results = load(ROOT / 'data' / 'results-2026.json', None)
 if results and results.get('votes_cast') and upcoming:
     upcoming[0] = {**upcoming[0], 'results': results}
 (OUT / 'results.json').write_text(dumps(results if results and results.get('votes_cast') else {'votes_cast': 0}))
-bundle = {'forecast': forecast, 'upcoming': upcoming[0] if upcoming else None, 'guide': guide, 'electorates': electorates, 'generated': __import__('datetime').date.today().isoformat(), 'parties': parties, 'elections': elections,
-          'parliaments': parliaments, 'polls': polls, 'promises': promises}
+# Heavy history (election results since 2008, Parliament membership, promises) ships as separate files that the router
+# loads only for the views that need them (needData in 00-core.js); Today, Vote and Choose start without them.
+bundle = {'forecast': forecast, 'upcoming': upcoming[0] if upcoming else None, 'guide': guide, 'electorates': electorates, 'generated': __import__('datetime').date.today().isoformat(), 'parties': parties,
+          'elections': None, 'parliaments': None, 'promises': None, 'polls': polls}
+(OUT / 'elections.json').write_text(dumps(elections)); (OUT / 'parliaments.json').write_text(dumps(parliaments)); (OUT / 'promises.json').write_text(dumps(promises))
 (OUT / 'bundle.json').write_text(dumps(bundle))
 # --- party newsroom: headline + date + link only (no teaser text; see docs/LEGAL_REVIEW.md S8), plus the follow directory
 rel = load(ROOT / 'data' / 'releases.json', {}) or {}

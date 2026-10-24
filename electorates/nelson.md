@@ -54,7 +54,7 @@ _Candidate list from policy.nz (Electoral Commission final list, released 9 Oct 
 
 ## What to watch
 
-- The closest result of 2023: Labour’s Rachel Boyack held it by 26 votes over National’s Blair Cameron, who is standing again.
+- The second-closest result of 2023 (Mount Albert, 18 votes, was tighter): Labour’s Rachel Boyack held it by 26 votes over National’s Blair Cameron, who is standing again.
 - **Marginal / battleground:** 2023 majority 26 (<2,000).
 
 ## Sources

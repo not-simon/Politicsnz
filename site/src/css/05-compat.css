@@ -1,3 +1,12 @@
 /* Small aliases kept for shared helpers that predate the design system. */
 .tiny { font-size: var(--t-micro) }
 .empty { color: var(--text-3); font-size: var(--t-small); padding: var(--s-4) 0 }
+
+/* very narrow phones (320px): keep the masthead on one line */
+@media (max-width: 400px) {
+  .mast__in { gap: 8px; min-width: 0 }
+  .search-trigger span, .search-trigger kbd { display: none }
+  .search-trigger { width: 40px; min-width: 40px; padding: 0; justify-content: center }
+  .brand__tag { display: none }
+  .mast__tools { flex: none }
+}

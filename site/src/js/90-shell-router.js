@@ -75,34 +75,42 @@ function resolve(path) { const seg = path.split('/'); const [a, b, ...rest] = se
     if (b === 'people') return { sec: 'parties', view: 'people', args: [arg], key: 'parties/people' };
     if (b === 'news') return { sec: 'parties', view: 'newsroom', args: [arg], key: 'parties/news' };
     return { sec: 'parties', view: 'party', args: [b, arg || 'glance'], key: 'parties' } }
-  if (a === 'seats') { const sub = b || 'polls';
+  if (a === 'seats') { const sub = b || (electionPhase() === 'electionday' ? 'map' : 'polls');
     if (sub === 'polls') return { sec: 'seats', view: 'polls', args: [rest[0]], key: 'seats/polls' };
     if (sub === 'map') return { sec: 'seats', view: 'map', args: [rest[0] ? +rest[0] : undefined, rest[1]], key: 'seats/map' };
     if (sub === 'parliament') return { sec: 'seats', view: 'parliament', args: ['chamber'], key: 'seats/parliament' };
     if (sub === 'coalition' || sub === 'calculator') return { sec: 'seats', view: 'parliament', args: [sub], key: 'seats/' + sub };
     if (sub === 'results') return { sec: 'seats', view: 'results', args: [], key: 'seats/results' } }
-  return { sec: 'today', view: 'home', args: [] } }
+  return { sec: null, view: 'notfound', args: [path] } }
 // Navigate. Pushes a history entry via the hash; render() runs from the hashchange handler.
 function go(r) { const path = normaliseRoute(r); if ($('#sheet').open) { const d = $('#sheet'); d.close(); if (history.state && history.state.sheet) { history.back(); setTimeout(() => { location.hash = '/' + path }, 0); return } }
   if (location.hash === '#/' + path) render(path); else location.hash = '/' + path }
 const route = go;
+// Views that never touch election history, Parliament membership or promises start without loading them.
+const LIGHT_VIEWS = new Set(['home', 'vote', 'voteLang', 'choose', 'match', 'swipe', 'compass', 'game', 'chooseResults', 'compare', 'search', 'trust', 'page', 'changes', 'notfound', 'newsroom', 'issues', 'issue', 'policies']);
 function render(path) {
   if (S.ballotTimer) { clearInterval(S.ballotTimer); S.ballotTimer = null }
   if (S.scrubTimer) { clearInterval(S.scrubTimer); S.scrubTimer = null }
   if (S.resultsTimer) { clearInterval(S.resultsTimer); S.resultsTimer = null }
-  const R = resolve(path); if (!V[R.view]) { R.view = 'home'; R.sec = 'today' }
+  const R = resolve(path); if (!V[R.view]) { R.view = 'notfound'; R.args = [path]; R.sec = null }
   S.route = path; S.sec = R.sec; S.subkey = R.key; markNav(R.sec); renderPhase();
   if (document.body.classList.contains('focus-mode')) focusMode(null);
   const main = $('#main'); main.className = 'wrap page' + (R.view === 'home' ? ' page--hero' : '');
   const swap = async () => {
     if (blockedToday(R.view) || blockedToday(path.split('/').pop())) { main.innerHTML = `<div class="lock">${ic('lock')}<h2 class="h3">Hidden until 7pm</h2><p>${ELECTION_DAY_BLOCK}</p><p class="small muted">Everything else — parties, policies, candidates, your electorate, how to vote — stays available.</p><div class="row"><a class="btn btn--primary" href="https://map.vote.nz" target="_blank" rel="noopener">Find a voting place</a><a class="btn" href="#/vote/electorate">Your electorate</a></div></div>`; return }
+    if (!LIGHT_VIEWS.has(R.view)) await needData('elections', 'parliaments', 'promises');
     await V[R.view](...R.args);
+    const h1 = main.querySelector('h1'); document.title = (h1 && h1.textContent.trim() ? h1.textContent.trim().replace(/\s+/g, ' ').slice(0, 80) + ' · ' : '') + 'Ballot Book NZ';
     loadPeople().then(() => { if (S.route === path) main.querySelectorAll('.read, .prose, .quote, .pol p, .lede, #ctx, .mapside, .feed__t, .side, .nutshell').forEach(autolink);
       // a page never links to itself
       main.querySelectorAll('.linkbtn[data-go]').forEach(b => { if (normaliseRoute(b.dataset.go) === S.route.replace(/\/(glance|policies|record|people|history)$/, '')) b.replaceWith(document.createTextNode(b.textContent)) }) }) };
   const run = () => { window.scrollTo(0, 0); main.classList.remove('page-enter'); void main.offsetWidth; main.classList.add('page-enter'); return swap() };
-  if (document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches) document.startViewTransition(run); else run();
+  if (document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches) document.startViewTransition(() => Promise.race([run(), new Promise(r => setTimeout(r, 300))])); else run();
 }
+
+/* ----- not found ----- */
+V.notfound = path => { $('#main').innerHTML = `<div class="stack stack--l" style="max-width:720px"><header class="pagehead"><p class="eyebrow">Not found</p><h1>There's no page at “${esc(path)}”</h1><p class="lede">The link may be old or mistyped. Everything in the guide is reachable from the five sections, or try a search.</p></header>
+    <div class="rows">${SECTIONS.map(([k, l]) => `<a class="rowlink" href="#/${k}">${ic(k)}<span><span class="rowlink__title">${l}</span></span>${ic('chev', 'i--s')}</a>`).join('')}<a class="rowlink" href="#/search">${ic('search')}<span><span class="rowlink__title">Search the guide</span></span>${ic('chev', 'i--s')}</a></div></div>` };
 
 /* ----- footer ----- */
 function drawFooter() {
@@ -118,6 +126,7 @@ function drawFooter() {
 
 /* ----- event delegation (one listener for the whole app) ----- */
 document.addEventListener('click', e => {
+  const sk = e.target.closest('a.skip'); if (sk) { e.preventDefault(); const m = $('#main'); m.focus({ preventScroll: false }); m.scrollIntoView(); return }
   const pl = e.target.closest('.linkbtn[data-person], button.lnk[data-person]'); if (pl) { openPersonByFolder(pl.dataset.person); return }
   const lc = e.target.closest('[data-locate]'); if (lc) { runLocate(lc.dataset.locate); return }
   const gob = e.target.closest('[data-go]'); if (gob) { go(gob.dataset.go); return }
@@ -125,6 +134,8 @@ document.addEventListener('click', e => {
   const ip = e.target.closest('[data-issuepol]'); if (ip) { const [p, ids] = ip.dataset.issuepol.split('|'); showIssuePolicies(p, ids); return }
   const pg = e.target.closest('[data-page]'); if (pg) { openPage(pg.dataset.page); return }
   const a = e.target.closest('.prose a'); if (a) { const href = a.getAttribute('href') || '';
+    if (/^#(?!\/)/.test(href)) { e.preventDefault(); const id = href.slice(1); const scope = a.closest('#sheet-body') || $('#main'); const t = scope.querySelector('#' + CSS.escape(id)) || [...scope.querySelectorAll('h1,h2,h3,h4')].find(h => h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') === id); if (t) { t.scrollIntoView({ block: 'start' }); t.setAttribute('tabindex', '-1'); t.focus() } return }
+    if (!/^https?:|^mailto:|^#/.test(href) && /\.json(#.*)?$/.test(href)) { e.preventDefault(); const base = (a.closest('[data-base]') || {}).dataset?.base || ''; const parts = base.split('/').slice(0, -1); href.replace(/#.*$/, '').split('/').forEach(x => { if (x === '..') parts.pop(); else if (x && x !== '.') parts.push(x) }); window.open('https://github.com/not-simon/Politicsnz/blob/main/' + parts.join('/'), '_blank', 'noopener'); return }
     if (!/^https?:|^mailto:|^#/.test(href) && /\.(md|json)(#.*)?$|\/$/.test(href)) { e.preventDefault(); const base = (a.closest('[data-base]') || {}).dataset?.base || ''; const parts = base.split('/').slice(0, -1);
       href.replace(/#.*$/, '').split('/').forEach(s => { if (s === '..') parts.pop(); else if (s && s !== '.') parts.push(s) }); let k = parts.join('/'); if (!/\.md$/.test(k)) k = k.replace(/\/?$/, '/README.md'); openPage(k) } }
   // in-app links inside the sheet: close the sheet first so the page behind changes
@@ -142,6 +153,5 @@ document.addEventListener('keydown', e => { if (e.key === '/' && !/^(INPUT|TEXTA
   window.addEventListener('hashchange', () => { const p = normaliseRoute(location.hash); if (location.hash !== '#/' + p) { history.replaceState(null, '', '#/' + p); } if (p !== S.route) render(p) });
   if (location.hash !== '#/' + start) history.replaceState(null, '', '#/' + start);
   render(start);
-  loadPeople().then(() => { if (['today', 'parties'].includes(S.route)) render(S.route) });
 })();
 })();
