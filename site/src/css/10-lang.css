@@ -1,0 +1,27 @@
+/* ===== Vote › Māori electorates and Other languages (34-maori-lang.js). Tokens only; both themes come from the tokens ===== */
+/* a line in another language, with its English under it */
+.lp__xx { margin: 0; font-weight: 600; line-height: 1.45; overflow-wrap: anywhere }
+.lp__en { margin: 2px 0 0; line-height: 1.45; overflow-wrap: anywhere }
+.lp-list { margin: 0; padding: 0; list-style: none; display: grid }
+.lp-list > li { padding: var(--s-3) 0; border-bottom: 1px solid var(--line) }
+.lp-list > li:last-child { border-bottom: 0 }
+.lp-list--num { counter-reset: lp; }
+.lp-list--num > li { counter-increment: lp; display: grid; grid-template-columns: 1.8em minmax(0, 1fr); column-gap: var(--s-2) }
+.lp-list--num > li::before { content: counter(lp) "."; font-weight: 800; color: var(--text); grid-row: 1 / span 3 }
+.lp-list--num > li > * { grid-column: 2 }
+.lp-meta { margin: 6px 0 0 }
+.lp-basis { font-weight: 700; color: var(--text-2) }
+.lp-basis--mt { color: var(--warn-text) }
+.lp-sum-en { font-weight: 500; color: var(--text-2) }
+.lp-dates li > span:last-child { min-width: 0 }
+.lp-past { display: block; font-weight: 500 }
+/* te reo voting steps */
+.lp-steps { margin: 0; padding: 0; list-style: none; display: grid; counter-reset: lps; border-top: var(--rule) solid var(--rule-ink) }
+.lp-steps > li { counter-increment: lps; display: grid; gap: var(--s-2); padding: var(--s-4) 0; border-bottom: 1px solid var(--line) }
+.lp-steps h2::before { content: counter(lps) ". "; color: var(--signal-text) }
+.lp-steps .lp__en + .lp__xx { margin-top: var(--s-2) }
+.lp-terms .gloss__row dd { display: grid; gap: 4px; justify-items: start }
+.lp-ev { display: block }
+/* Māori electorates hub */
+.mh-seats { row-gap: var(--s-8) }
+.mh-seat .ptag { white-space: normal }

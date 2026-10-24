@@ -29,7 +29,8 @@ const MH = {   // vote.nz / elections.nz pages behind each claim on the Māori e
   whare: 'https://vote.nz/2026-general-election/voting-in-the-election/find-a-voting-place/whare-poti-maori',
   tereo: 'https://vote.nz/2026-general-election/resources/information-in-te-reo-maori' };
 
-/* ----- Māori electorates hub ----- */
+/* ----- Māori electorates hub -----
+   Te reo headings are the Electoral Commission's own (vote.nz te reo pages and the bilingual 'Get ready' leaflet); see data/guide/i18n.json. */
 function maoriSeatHTML(e, r) {
   const cands = (e.candidates || []).slice().sort(ballotSort); const mp = e.sitting_mp;
   const pn = p => esc(S.data.parties[p] ? pname(p) : p);
@@ -58,25 +59,25 @@ V.maoriHub = async () => {
       <div class="micro notec">${NOT_EC}</div></header>
     <div class="callout callout--signal"><p><b>Your roll is fixed for this election.</b> The last day to change between the Māori roll and the general roll was midnight, 6 August 2026. Not sure which roll you’re on? <a href="${MH.check}" target="_blank" rel="noopener">Check at vote.nz</a> or call 0800 36 76 56.</p></div>
     <section class="stack" aria-labelledby="mh-how">
-      <div class="shead"><h2 id="mh-how">${biText('mi', miTerm(I, 'labels', 'maori_roll') ? 'Te rārangi Māori' : '', 'How the Māori roll works')}</h2></div>
+      <div class="shead"><h2 id="mh-how">${biText('mi', 'Te rārangi Māori', 'How the Māori roll works')}</h2></div>
       <div>
-        ${dis(`${t('maori_roll') ? 'Te ' + t('maori_roll') : ''}`, 'The Māori roll and the general roll',
+        ${dis('Te rārangi Māori, te rārangi whānui', 'The Māori roll and the general roll',
           `<p>There are two electoral rolls. On the ${term('maori_roll', 'Māori roll')} you vote for a candidate in a Māori electorate; on the ${term('general_roll', 'general roll')} you vote for a candidate in a general electorate. Your roll decides which electorate candidates you can choose from.</p>
            <p>You vote for the same list of parties whichever roll you’re on. The Electoral Commission says of the choice: “There is no right or wrong.”</p>`,
           [[MH.roll, 'vote.nz: Māori roll or general roll?'], [MH.choice, 'vote.nz: What does your choice mean for you?']], true)}
-        ${dis('', 'Who can be on the Māori roll',
+        ${dis('Ko te rēhita hei kaipōti mēnā he Māori koe', 'Enrolling if you are Māori: who can be on the Māori roll',
           `<p>If you are of New Zealand Māori descent, you can choose to enrol on the Māori roll or the general roll. You make the choice when you first enrol.</p>
            <p>This has been the rule since the Electoral Amendment Act 1975, which defined a Māori as a person of New Zealand Māori descent. Everyone else enrols on the general roll.</p>`,
           [[MH.glossary, 'vote.nz glossary: Māori roll'], [MH.history, 'vote.nz: History of the Māori Electoral Option']])}
-        ${dis(miTerm(I, 'labels', 'maori_electoral_option') ? 'Te ' + miTerm(I, 'labels', 'maori_electoral_option') : '', 'The Māori Electoral Option',
+        ${dis('Te Kōwhiringa Pōti Māori', 'The Māori Electoral Option',
           `<p>The Māori Electoral Option is the choice between the two rolls. Since 31 March 2023, Māori who are enrolled can change roll at any time, except in the 3 months before a general election, in the 3 months before the three-yearly local elections, and before a by-election if the change would move them into that electorate. Before then, people could only change during an Option period every 5 or 6 years.</p>
            <p>For the 2026 election the last day to change was <b>midnight, 6 August 2026</b>, so the roll you are on now is the roll you vote on. Between 31 March and 6 August 2026, 9,400 people moved from the general roll to the Māori roll and 7,633 moved the other way; 7,723 new enrolments went on the Māori roll and 3,549 on the general roll (Electoral Commission figures).</p>`,
           [[MH.option, 'vote.nz: What is the Māori Electoral Option?'], [MH.changed, 'vote.nz: Changes to the Option'], [MH.keydates, 'vote.nz: Key dates'], [MH.stats, 'vote.nz: Statistics']])}
-        ${dis('', 'How the number of Māori electorates is set',
+        ${dis('Te whakatau i te maha o ngā rohe pōti Māori me ngā rohe pōti whānui', 'How the number of Māori electorates is set',
           `<p>After each census, the Government Statistician works out how many Māori and general electorates there should be, using the census and the number of Māori on the Māori roll and on the general roll. The formula and dates are set out in the Electoral Act 1993. ${term('representation_commission', 'The Representation Commission')} then draws the boundaries.</p>
            <p>For 2026 the calculation was made in 2024 from the 2023 Census and the rolls at 1 April 2024. The number of Māori electorates stayed at 7, with a population quota of 74,367 people each (South Island general electorates: 70,037; North Island: 69,875). The new boundaries were released on 8 August 2025.</p>`,
           [[MH.count, 'elections.nz: Working out how many electorates there should be'], [MH.review, 'elections.nz: Boundary Review 2025'], [MH.changed, 'vote.nz: Changes to the Option']])}
-        ${dis(miTerm(I, 'labels', 'party_vote') ? 'Me pēwhea te pōti' : '', 'How to vote',
+        ${dis('Me pēwhea te pōti', 'How to vote',
           `<p>Everyone gets the same two votes: a ${term('party_vote', 'party vote')} for a party, and an ${term('electorate_vote', 'electorate vote')} for a candidate. On the Māori roll, your electorate vote is for a candidate standing in your Māori electorate.</p>
            <p>You can vote at any voting place. More than 220 are <i lang="mi">Whare Pōti Māori</i>, places recommended by communities for their significance to local Māori, including many marae, kura and wānanga. 67 of them are <i lang="mi">reo rua</i> (bilingual), where you can vote in te reo Māori, English or both. Whare Pōti Māori are open to every voter, on either roll.</p>
            <div class="row">${vExt('https://map.vote.nz/voting-places/whare', 'Find Whare Pōti Māori')}${vExt('https://map.vote.nz/voting-places/maori', 'Reo rua voting places', 'btn btn--s btn--quiet')}<a class="btn btn--s btn--quiet" href="#/vote/lang/mi">Voting steps in te reo Māori</a></div>`,
