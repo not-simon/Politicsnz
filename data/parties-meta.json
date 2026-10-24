@@ -8,7 +8,7 @@
   "free-palestine":  {"name": "Free Palestine", "short": "Free Palestine", "color": "#149954", "order": 5},
   "green":           {"name": "Green Party", "short": "Green", "color": "#0B8A3E", "order": 10},
   "te-pati-maori":   {"name": "Te Pāti Māori", "short": "Te Pāti Māori", "color": "#B2001A", "order": 11},
-  "te-tai-tokerau-party": {"name": "Te Tai Tokerau Party", "short": "Te Tai Tokerau", "color": "#8C3B2E", "order": 12},
+  "te-tai-tokerau-party": {"name": "Te Tai Tokerau Party", "short": "Te Tai Tokerau Party", "color": "#8C3B2E", "order": 12},
   "labour":          {"name": "Labour Party", "short": "Labour", "color": "#D82A20", "order": 20},
   "animal-justice":  {"name": "Animal Justice Party", "short": "Animal Justice", "color": "#0F6E84", "order": 25},
   "legalise-cannabis": {"name": "Aotearoa Legalise Cannabis", "short": "Legalise Cannabis", "color": "#3C8D2F", "order": 26},
@@ -28,6 +28,7 @@
   "advance-nz":      {"name": "Advance NZ", "short": "Advance NZ", "color": "#C6382D", "order": 72},
   "democracynz":     {"name": "DemocracyNZ", "short": "DemocracyNZ", "color": "#4B5D7A", "order": 73},
   "newzeal":         {"name": "NewZeal", "short": "NewZeal", "color": "#3D7FB8", "order": 74},
+  "nap":             {"name": "Not A Party (NAP)", "short": "Not A Party", "color": "#A7ADB5", "order": 90},
   "other":           {"name": "Other", "short": "Other", "color": "#A7ADB5", "order": 99}
  }
 }

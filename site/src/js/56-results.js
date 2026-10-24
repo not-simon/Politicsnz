@@ -3,18 +3,20 @@
    On election day before 7pm it shows only the countdown and the explainer: nothing predictive. When a results object
    ({ parties: [{ party, party_vote_pct, electorate_seats, list_seats, total_seats }], counted_pct?, official?, updated?,
    source_url?, electorates? }) appears for 2026, it renders the live seat count. */
-V.results = async () => { await resultsView(); armResultsRefresh() };
-async function resultsView() {
+// Resolves as soon as the page is painted: the electorate map, the countdown and the refresh timer start without being awaited.
+V.results = () => { resultsView(); armResultsRefresh() };
+function resultsView() {
   const ph = electionPhase(), eday = ph === 'electionday', R = eday ? null : results2026();
   const body = R ? resultsLive(R) : resultsWaiting(ph);
   $('#main').innerHTML = sectionFrame('seats', 'seats/results', body);
   if (!R) { const tick = () => { const el = $('#rcount'); if (!el) return false; el.innerHTML = countdownHTML(); return true };
     tick(); const t = setInterval(() => { if (!tick()) clearInterval(t) }, 30000) }
   if (R) { bindElectionTable($('#rtable')); bindJumps($('#main'));
-    if ((R.electorates || []).length) { try { await loadGeo(2025); const c = await mapContext(2026, 'general'); const box = $('#rmap'); if (!box) return;
-      box.innerHTML = `<svg class="nzmap" viewBox="0 0 520 640" role="img" aria-label="Map of general electorates coloured by the 2026 winner" aria-describedby="rmapleg rmapalt"><text class="yr" x="20" y="96" font-size="96">2026</text>${mapPaths(c.feats, c.resFor, c.idx.bbox_mainland, 520, 640, null)}</svg>`;
-      const counts = {}; c.feats.forEach(f => { const r = c.resFor(f); const p = r && r.party ? r.party : 'vacant'; counts[p] = (counts[p] || 0) + 1 }); $('#rmapleg').innerHTML = legendHTML(counts, true) } catch { } } }
+    if ((R.electorates || []).length) resultsMap() }
 };
+async function resultsMap() { try { await loadGeo(2025); const c = await mapContext(2026, 'general'); const box = $('#rmap'); if (!box || S.route !== 'seats/results') return;
+      box.innerHTML = `<svg class="nzmap" viewBox="0 0 520 640" role="img" aria-label="Map of general electorates coloured by the 2026 winner" aria-describedby="rmapleg rmapalt"><text class="yr" x="20" y="96" font-size="96">2026</text>${mapPaths(c.feats, c.resFor, c.idx.bbox_mainland, 520, 640, null)}</svg>`;
+      const counts = {}; c.feats.forEach(f => { const r = c.resFor(f); const p = r && r.party ? r.party : 'vacant'; counts[p] = (counts[p] || 0) + 1 }); $('#rmapleg').innerHTML = legendHTML(counts, true) } catch { } }
 function countdownHTML() { const ms = ELECTION_DAY.getTime() - Date.now();
   if (ms <= 0) return `<span class="figure">7pm</span><span class="soft">Voting has closed. The first results usually arrive within the hour.</span>`;
   const d = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5), m = Math.floor(ms % 36e5 / 6e4);

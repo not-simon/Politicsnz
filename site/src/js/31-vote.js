@@ -42,7 +42,7 @@ function voteReady(root) {
     results: `<b>Voting has closed.</b> Election-night results are preliminary; special votes are counted later.`,
     after: `<b>The 2026 election has been held.</b> Special votes are being counted; the official result is due Friday 27 November.` }[ph];
   const actions = (c, i) => { const a = [];
-    if (c.url) a.push(vExt(c.url, /vote\.nz/.test(c.url) && !/map\.vote/.test(c.url) ? 'At vote.nz' : /map\.vote/.test(c.url) ? 'Find a voting place' : 'Official source', `btn btn--s${i === 1 && ph === 'enrol' ? ' btn--primary' : ''}`));
+    if (c.url) a.push(vExt(c.url, i === 1 ? (ph === 'enrol' ? 'Check or update at vote.nz' : 'Check at vote.nz') : /vote\.nz/.test(c.url) && !/map\.vote/.test(c.url) ? 'At vote.nz' : /map\.vote/.test(c.url) ? 'Find a voting place' : 'Official source', `btn btn--s${i === 1 && ph === 'enrol' ? ' btn--primary' : ''}`));
     if (i === 2) a.push(`<a class="btn btn--s btn--quiet" href="#/vote/plan">Make a plan</a>`);
     if (i === 4) a.push(`<a class="more small" href="#/vote/mmp">See the ballot paper ${ic('chev', 'i--xs')}</a>`);
     return a.length ? `<div class="check__a">${a.join('')}</div>` : '' };
@@ -115,13 +115,17 @@ function voteDates(root) {
 
 /* ----- Make a plan: when, where, with whom → .ics + message ----- */
 const PLAN_SLOTS = [['morning', 'Morning', 9, 11], ['midday', 'Midday', 11, 13], ['afternoon', 'Afternoon', 13, 16], ['late', 'After 4', 16, 18]];
+// "9–11am", "11am–1pm", "1–4pm": the am/pm is written once when both ends share it, on both ends when they don't
+const planHr = h => (h > 12 ? h - 12 : h) + (h >= 12 ? 'pm' : 'am');
+const planRange = (a, b) => (a >= 12) === (b >= 12) ? `${a > 12 ? a - 12 : a}–${planHr(b)}` : `${planHr(a)}–${planHr(b)}`;
+// slots still to come on a given day (today drops the ones whose time has passed; election day stops at 7pm)
+function planSlots(iso) { const t = nzToday(); if (iso !== t.iso) return PLAN_SLOTS; const h = nzNow().getHours(); return PLAN_SLOTS.filter(s => s[3] > h) }
 function planDays() { const t = nzToday(); const out = [];
-  for (let d = 26; d <= 38; d++) { const dt = new Date(Date.UTC(2026, 9, d)); const iso = dt.toISOString().slice(0, 10); if (iso < t.iso) continue;
+  for (let d = 26; d <= 38; d++) { const dt = new Date(Date.UTC(2026, 9, d)); const iso = dt.toISOString().slice(0, 10); if (iso < t.iso || !planSlots(iso).length) continue;
     const eday = iso === '2026-11-07'; out.push({ iso, eday, label: dt.toLocaleDateString('en-NZ', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' }) }) }
   return out }
 function planText(p, days) { const d = days.find(x => x.iso === p.day); const s = PLAN_SLOTS.find(x => x[0] === p.slot); if (!d || !s) return '';
-  const hr = h => (h > 12 ? h - 12 : h) + (h >= 12 ? 'pm' : 'am');
-  return `My voting plan: ${d.eday ? 'election day, ' : ''}${d.label}, ${s[1].toLowerCase()} (${hr(s[2])}–${hr(s[3])})${p.where ? `, at ${p.where}` : ''}${p.withWho ? `, with ${p.withWho}` : ''}. Find a voting place and its hours: https://map.vote.nz` }
+  return `My voting plan: ${d.eday ? 'election day, ' : ''}${d.label}, ${s[1].toLowerCase()} (${planRange(s[2], s[3])})${p.where ? `, at ${p.where}` : ''}${p.withWho ? `, with ${p.withWho}` : ''}. Find a voting place and its hours: https://map.vote.nz` }
 function planICS(p, days) { const d = days.find(x => x.iso === p.day); const s = PLAN_SLOTS.find(x => x[0] === p.slot); if (!d || !s) return null;
   const [y, m, dd] = d.iso.split('-').map(Number); const stamp = h => new Date(Date.UTC(y, m - 1, dd, h - 13)).toISOString().replace(/[-:]/g, '').replace(/\.\d+Z$/, 'Z');   // NZDT is UTC+13 for the whole voting period
   const escI = v => String(v).replace(/[\\;,]/g, c => '\\' + c).replace(/\n/g, '\\n');
@@ -133,8 +137,9 @@ function planICS(p, days) { const d = days.find(x => x.iso === p.day); const s =
 function votePlan(root) {
   const ph = electionPhase(); const days = planDays();
   let p; try { p = JSON.parse(store.get('voteplan') || '{}') || {} } catch { p = {} }
-  if (!days.some(d => d.iso === p.day)) p.day = (days.find(d => d.eday) || days[0] || {}).iso;
-  if (!PLAN_SLOTS.some(s => s[0] === p.slot)) p.slot = 'morning';
+  // nothing is pre-selected: a saved choice is kept only while that day (and time) is still to come
+  if (!days.some(d => d.iso === p.day)) delete p.day;
+  if (!p.day || !planSlots(p.day).some(s => s[0] === p.slot)) delete p.slot;
   const closed = ph === 'results' || ph === 'after' || !days.length;
   const save = () => store.set('voteplan', JSON.stringify(p));
   const draw = () => { const txt = planText(p, days);
@@ -144,13 +149,13 @@ function votePlan(root) {
         <div class="plan">
           <div class="row row--between"><b>My voting plan</b><span class="micro muted">Saved on this device</span></div>
           <div class="plan__q" style="margin-top:14px"><span id="pq-day">When</span><div class="chips chips--scroll" role="group" aria-labelledby="pq-day">${days.map(d => `<button class="chip" type="button" data-day="${d.iso}" aria-pressed="${d.iso === p.day}">${esc(d.label)}${d.eday ? ' · election day' : ''}</button>`).join('')}</div>
-            <div class="chips" role="group" aria-label="Time of day">${PLAN_SLOTS.map(([k, l, a, b]) => `<button class="chip" type="button" data-slot="${k}" aria-pressed="${k === p.slot}">${l} <span class="micro muted">${a > 12 ? a - 12 : a}–${b > 12 ? b - 12 : b}${b >= 12 ? 'pm' : 'am'}</span></button>`).join('')}</div>
+            <div class="chips" role="group" aria-label="Time of day">${planSlots(p.day).map(([k, l, a, b]) => `<button class="chip" type="button" data-slot="${k}" aria-pressed="${k === p.slot}">${l} <span class="micro muted">· ${planRange(a, b)}</span></button>`).join('')}</div>
             <p class="micro muted">${(days.find(d => d.iso === p.day) || {}).eday ? 'Election day: every voting place is open 9am–7pm.' : 'Advance voting hours differ from place to place; check yours on map.vote.nz.'}</p></div>
           <div class="plan__q"><label for="pq-where"><span class="plan__lbl">Where</span></label><input class="input" id="pq-where" type="text" maxlength="80" autocomplete="off" placeholder="e.g. the library on the main street" value="${esc(p.where || '')}">
             <a class="more small" href="https://map.vote.nz" target="_blank" rel="noopener">Find voting places near you on map.vote.nz ${ic('ext', 'i--xs ext')}</a></div>
           <div class="plan__q"><label for="pq-who"><span class="plan__lbl">Who with</span></label><input class="input" id="pq-who" type="text" maxlength="60" autocomplete="off" placeholder="On my own, or a name" value="${esc(p.withWho || '')}"></div>
-          <div class="row"><button class="btn btn--primary" type="button" id="pl-ics">${ic('caladd', 'i--s')} Add to calendar</button><a class="btn" id="pl-sms" href="sms:?&body=${encodeURIComponent(txt)}">${ic('msg', 'i--s')} Text it</a><a class="btn btn--quiet" id="pl-wa" href="https://wa.me/?text=${encodeURIComponent(txt)}" target="_blank" rel="noopener">WhatsApp</a><button class="btn btn--quiet" type="button" id="pl-copy">${ic('share', 'i--s')} Copy</button></div>
-          <p class="small soft" id="pl-text" aria-live="polite">${esc(txt)}</p>
+          ${txt ? `<div class="row"><button class="btn btn--primary" type="button" id="pl-ics">${ic('caladd', 'i--s')} Add to calendar</button><a class="btn" id="pl-sms" href="sms:?&body=${encodeURIComponent(txt)}">${ic('msg', 'i--s')} Text it</a><a class="btn btn--quiet" id="pl-wa" href="https://wa.me/?text=${encodeURIComponent(txt)}" target="_blank" rel="noopener">WhatsApp</a><button class="btn btn--quiet" type="button" id="pl-copy">${ic('share', 'i--s')} Copy</button></div>` : ''}
+          <p class="small soft${txt ? '' : ' plan__hint'}" id="pl-text" aria-live="polite">${txt ? esc(txt) : `Pick ${p.day ? 'a time' : 'a day and a time'} above, and your plan appears here, ready for your calendar or a message.`}</p>
         </div>
         <div class="stack"><p class="lede">Three choices: a day, a time and a place. Going with someone helps too.</p>
           <p class="small muted">You can vote at any voting place in New Zealand. No ID needed; your EasyVote card makes it quicker if you have it.</p></div>
@@ -158,11 +163,12 @@ function votePlan(root) {
       ${voteFoot()}`;
     if (closed) return;
     const on = root.querySelector('[data-day][aria-pressed="true"]'); if (on) { const row = on.parentElement; row.scrollLeft = Math.max(0, on.offsetLeft - row.offsetLeft - 8) }
-    root.querySelectorAll('[data-day]').forEach(b => b.onclick = () => { p.day = b.dataset.day; save(); draw(); const n = root.querySelector(`[data-day="${p.day}"]`); if (n) n.focus({ preventScroll: true }) });
+    root.querySelectorAll('[data-day]').forEach(b => b.onclick = () => { p.day = b.dataset.day; if (!planSlots(p.day).some(s => s[0] === p.slot)) delete p.slot; save(); draw(); const n = root.querySelector(`[data-day="${p.day}"]`); if (n) n.focus({ preventScroll: true }) });
     root.querySelectorAll('[data-slot]').forEach(b => b.onclick = () => { p.slot = b.dataset.slot; save(); draw(); const n = root.querySelector(`[data-slot="${p.slot}"]`); if (n) n.focus({ preventScroll: true }) });
-    const upd = () => { const t = planText(p, days); $('#pl-text').textContent = t; $('#pl-sms').href = 'sms:?&body=' + encodeURIComponent(t); $('#pl-wa').href = 'https://wa.me/?text=' + encodeURIComponent(t) };
+    const upd = () => { const t = planText(p, days); if (!t) return; $('#pl-text').textContent = t; $('#pl-sms').href = 'sms:?&body=' + encodeURIComponent(t); $('#pl-wa').href = 'https://wa.me/?text=' + encodeURIComponent(t) };
     $('#pq-where').oninput = e => { p.where = e.target.value.trim(); save(); upd() };
     $('#pq-who').oninput = e => { p.withWho = e.target.value.trim(); save(); upd() };
+    if (!txt) return;
     $('#pl-ics').onclick = () => { const ics = planICS(p, days); if (!ics) return; const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar;charset=utf-8' }));
       const a = document.createElement('a'); a.href = url; a.download = 'voting-plan.ics'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 4000) };
     $('#pl-copy').onclick = async () => { const t = planText(p, days); let ok = false; try { await navigator.clipboard.writeText(t); ok = true } catch {}

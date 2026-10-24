@@ -10,22 +10,29 @@ const extA = (href, html, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="
 const extIc = () => ic('ext', 'i--xs ext');
 const lsJSON = (k, fn) => { if (typeof fn === 'function') { try { return fn() || {} } catch {} } try { return JSON.parse(store.get(k) || '{}') || {} } catch { return {} } };
 
+// The one election-day countdown wording, from daysLeft() (whole NZ days to Saturday 7 November). '' once it has passed.
+function edayCountdown(dl = daysLeft()) { return dl > 1 ? `${dl} days to election day` : dl === 1 ? 'Election day is tomorrow' : dl === 0 ? 'Today is election day' : '' }
+// The Commission's own enrol-or-check page (from data/guide/howtovote.json: contacts.enrol_or_check_online / checklist step 2)
+function enrolCheckURL() { const H = G().howtovote || {}; const fromC = String((H.contacts || {}).enrol_or_check_online || '').match(/https:\/\/\S+/);
+  const step = (H.checklist || []).find(c => /enrolled/i.test(c.step || '') && c.url);
+  return (fromC && fromC[0]) || (step && step.url) || 'https://vote.nz/enrolling/enrol-or-update/enrol-or-update-online' }
+
 // Phase hero copy (IA.md §2.2). Returns { n, eyebrow, h1, p, ctas, step }
 function heroCopy(ph) {
   const t = nzToday(); const dl = daysLeft(); const toE = daysTo('2026-10-25'); const toFinal = daysTo('2026-11-27');
-  const eyebrow = nzDateLong() + (dl > 0 ? ` · ${dl} day${dl === 1 ? '' : 's'} to election day` : '');
-  const vnz = (l, primary = true) => `<a class="btn ${primary ? 'btn--primary' : 'btn--on-band'} btn--l" href="https://vote.nz" target="_blank" rel="noopener">${l} ${ic('ext', 'i--s ext')}</a>`;
+  const cd = edayCountdown(dl); const eyebrow = nzDateLong() + (cd ? ` · ${cd}` : '');
+  const vnz = (l, primary = true) => `<a class="btn ${primary ? 'btn--primary' : 'btn--on-band'} btn--l" href="${esc(enrolCheckURL())}" target="_blank" rel="noopener">${l} ${ic('ext', 'i--s ext')}</a>`;
   const mapA = (primary = true) => `<a class="btn ${primary ? 'btn--primary' : 'btn--on-band'} btn--l" href="https://map.vote.nz" target="_blank" rel="noopener">Find a voting place ${ic('ext', 'i--s ext')}</a>`;
   const inA = (href, l, primary = false) => `<a class="btn ${primary ? 'btn--primary' : 'btn--on-band'} btn--l" href="${href}">${l}</a>`;
   if (ph === 'enrol') return { n: toE > 0 ? toE : null, eyebrow, step: 0,
     h1: toE > 1 ? `days left<br>to enrol.` : toE === 1 ? `day left<br>to enrol.` : `Last day<br>to enrol.`,
-    p: `Enrolment closes at midnight on Sunday 25 October. This year you can’t enrol at a voting place, so if you’ve moved or never enrolled, do it now. It takes about five minutes.`,
+    p: `Enrolment closes at midnight on Sunday 25 October. This year you can’t enrol at a voting place, so if you’ve moved or never enrolled, enrol or update now. It takes about five minutes.`,
     ctas: vnz('Check I’m enrolled') + inA('#/vote', 'First vote? Start here') };
-  if (ph === 'advance') return { n: dl > 0 ? dl : null, eyebrow: nzDateLong() + ' · voting is open', step: 1,
-    h1: `${dl > 0 ? `day${dl === 1 ? '' : 's'} to go.<br>` : ''}Vote early, anywhere.`,
+  if (ph === 'advance') return { n: dl > 1 ? dl : null, eyebrow: nzDateLong() + ' · voting is open', step: 1,
+    h1: `${dl > 1 ? 'days to election day.<br>' : dl === 1 ? 'Election day is tomorrow.<br>' : ''}Vote early, anywhere.`,
     p: `Advance voting is open at any voting place in the country until Friday 6 November. No ID is needed, and you can vote outside your own electorate. Hours vary, so check the official map first.`,
     ctas: mapA() + inA('#/vote/plan', 'Make a plan') };
-  if (ph === 'electionday') return { n: null, eyebrow: nzDateLong() + ' · election day', step: 2,
+  if (ph === 'electionday') return { n: null, eyebrow: nzDateLong() + ' · ' + (edayCountdown(dl) || 'election day'), step: 2,
     h1: `Today’s the day.`,
     p: `Voting places are open 9am to 7pm. You can vote at any voting place in New Zealand, and you don’t need ID or your EasyVote card.`,
     ctas: mapA() + inA('#/vote', 'What to expect inside') };
@@ -57,6 +64,12 @@ function twoVotesHTML() { return `<div class="twovotes">
     <div><span class="twovotes__k">${TICK_SVG(true)} Electorate vote</span><span class="twovotes__big">Picks your local MP.</span><p>The candidate with the most votes wins. You can give your two ticks to different parties, or use just one.</p></div>
   </div>` }
 
+// On election day (before 7pm) the two tool rows stay in place, locked, and open the explanation instead of a locked page
+function lockedRow(title) { return `<button class="rowlink" type="button" data-eday-lock aria-haspopup="dialog"><span class="rowlink__icon">${ic('lock')}</span><span><span class="rowlink__title">${title}</span><span class="rowlink__sub" style="display:block">Hidden until 7pm</span></span>${ic('chev')}</button>` }
+function edayLockSheet() { openSheet({ title: 'Hidden until 7pm', depth: ['Today', 'Election day'], at: 1,
+  html: `<div class="locked">${ic('lock')}<div><p>${esc(ELECTION_DAY_BLOCK)}</p></div></div>
+    <p class="small soft">Everything else stays available: parties, policies, candidates, your electorate and how to vote. The tools and the polls come back when voting closes at 7pm.</p>
+    <div class="rows">${rowlink('#/vote', 'vote', 'Can I vote, and how?', 'Five quick checks. No ID needed.')}${rowlink('#/vote/electorate', 'pin', 'Who is standing where I live?', 'Your electorate and its candidates.')}</div>` }) }
 function rowlink(href, icon, title, sub) { return `<a class="rowlink" href="${href}"><span class="rowlink__icon">${ic(icon)}</span><span><span class="rowlink__title">${title}</span><span class="rowlink__sub" style="display:block">${sub}</span></span>${ic('chev')}</a>` }
 
 /* ----- the Today feed ----- */
@@ -180,8 +193,8 @@ V.home = async () => {
         <div class="rows" style="border-top:0">
           ${rowlink('#/vote', 'vote', 'Can I vote, and how?', 'Five quick checks. No ID needed.')}
           ${rowlink('#/vote/electorate', 'pin', 'Who is standing where I live?', 'Your electorate, candidates and how close it was.')}
-          ${rowlink('#/choose', 'choose', 'Which parties agree with me?', 'Swipe, quiz or compass. Party names hidden.')}
-          ${rowlink('#/seats/polls', 'seats', 'What might happen?', 'Polls, seat ranges and every map since 2011.')}
+          ${isElectionDay() ? lockedRow('Which parties agree with me?') + lockedRow('What might happen?')
+            : rowlink('#/choose', 'choose', 'Which parties agree with me?', 'Swipe, quiz or compass. Party names hidden.') + rowlink('#/seats/polls', 'seats', 'What might happen?', 'Polls, seat ranges and every map since 2011.')}
         </div>
       </section>
     </div>
@@ -198,6 +211,7 @@ V.home = async () => {
   const pt = $('#potd'); if (pt) pt.addEventListener('click', e => { const b = e.target.closest('[data-potd]'); if (!b) return; const c = potdCard(); if (!c) return;
     store.set('potd', JSON.stringify({ date: nzToday().iso, id: c.id, v: b.dataset.potd }));
     pt.outerHTML = potdHTML(); const n = $('#potd'); if (n) { const f = n.querySelector('.reveal a, .reveal button'); if (f) f.focus({ preventScroll: true }) } });
+  $('#main').querySelectorAll('[data-eday-lock]').forEach(b => b.onclick = edayLockSheet);
   const tf = $('.tfeed'); if (tf) tf.addEventListener('click', e => { const b = e.target.closest('[data-tf]'); if (!b) return;
     ({ polls: pollWatchSheet, otd: otdSheet, parties: fromPartiesSheet })[b.dataset.tf]() });
 };

@@ -105,3 +105,29 @@ button.cand:hover .cand__name { text-decoration: underline; text-decoration-colo
   .el-page a { color: CanvasText }
 }
 @media (max-width: 719px) { .vhelp { grid-template-columns: minmax(0, 1fr); gap: 2px } .vhelp dd { margin-bottom: var(--s-2) } }
+
+/* electorate finder: search sits under the heading; on a phone it scrolls to the top when focused so results clear the keyboard and tab bar */
+.el-qwrap { scroll-margin-top: calc(var(--mast-h) + 12px) }
+.el-qwrap .input { font-size: 16px }
+.el-sugg__none { margin: 0 }
+.el-lede { margin: 0 }
+
+/* compare candidates sheet: one card per candidate, the same fields for each; long names wrap */
+.ptag--wrap { white-space: normal; align-items: flex-start; line-height: 1.3 }
+.ptag--wrap .sw { margin-top: .3em; flex: none }
+.ccards { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid var(--line) }
+.ccard { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: var(--s-3); padding: var(--s-4) 0; border-bottom: 1px solid var(--line) }
+.ccard__body { display: grid; gap: var(--s-2); min-width: 0 }
+.ccard__name { margin: 0; font: 800 var(--t-h4)/1.2 var(--font-display); overflow-wrap: anywhere }
+.ccard__dl { margin: 0; display: grid; grid-template-columns: minmax(6.5rem, auto) minmax(0, 1fr); gap: 4px var(--s-3); font-size: var(--t-small) }
+.ccard__dl dt { color: var(--text-3); font-weight: 600 }
+.ccard__dl dd { margin: 0; min-width: 0; overflow-wrap: anywhere }
+.ccard .linkbtn { justify-self: start; text-align: left }
+
+/* plan builder: a slot whose time has passed today isn't offered */
+.plan__hint { margin: 0 }
+/* a source line whose text is one span: the icon stays beside the first line instead of wrapping onto its own */
+.src--line { flex-wrap: nowrap; align-items: flex-start }
+.src--line > .i { flex: none; margin-top: 1px }
+.src--line > span { min-width: 0 }
+.cand__meta .ptag { white-space: normal; min-width: 0 }

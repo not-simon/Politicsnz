@@ -29,10 +29,10 @@
 
 /* Trend and past-election charts */
 .chart .dot { cursor: pointer }
-.chart .res { fill: var(--pc); stroke: var(--surface); stroke-width: 2; cursor: pointer }
+.chart .res { fill: var(--pc); stroke: var(--ring); stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer }
 .chart .elx { fill: none; stroke: var(--pc); stroke-width: 1.5; stroke-dasharray: 4 3; opacity: .8 }
 .chart--past text { font-size: 16px }
-.chart .stk { fill: var(--pc); stroke: var(--surface); stroke-width: 1; cursor: pointer }
+.chart .stk { fill: var(--pc); stroke: var(--ring); stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer }
 .chart .majtick { stroke: var(--text); stroke-width: 2.5 }
 .chart .waste { fill: var(--viz-empty); cursor: pointer }
 .chart .turn { fill: none; stroke: var(--viz-ink); stroke-width: 3; stroke-linejoin: round }
@@ -89,3 +89,16 @@ button.rowlink { width: 100%; background: none; border: 0; border-bottom: 1px so
 @media (prefers-reduced-motion: reduce) { .cbar > i { transition: none } }
 /* sr-only text inside sideways-scrolling rows must be clipped by the row, not escape to widen the page */
 .table-wrap[tabindex], #pp-pollsters, #pp-parties { position: relative }
+/* Page transitions: while a view transition is capturing or running, hold the hemicycle's staggered pop-in (and the other
+   staggered reveals on the Seats pages). Chrome cannot capture the old page while dozens of staggered SVG animations are
+   still starting, and waits out its 4 s timeout with the old page frozen on screen; paused, the capture takes one frame
+   and the pop-in carries on once the new page is in. */
+:root:active-view-transition .hemi circle, :root:active-view-transition .iconarray i, :root:active-view-transition .bar > i { animation-play-state: paused }
+/* Party-colour rings: every --pc bar, band, line and marker carries a 1px var(--ring), as .sw does, so the near-black and
+   yellow party colours read on both the light and the dark ground. */
+.rrow .bar > i, .cbar > i:not(.cbar__rest), #mside .history > div i { box-shadow: inset 0 0 0 1px var(--ring), 0 0 0 1px var(--ring) }
+.rbar__band--ghost { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--pc) 55%, transparent), 0 0 0 1px var(--ring) }
+.hemi circle { stroke-width: 1; vector-effect: non-scaling-stroke }
+.chart .dot { stroke: var(--ring); stroke-width: 1; vector-effect: non-scaling-stroke }
+.chart .avg.avg--ring { stroke: var(--ring); stroke-width: 4.6 }
+.chart .elx.elx--ring { stroke: var(--ring); stroke-width: 3.5; opacity: 1 }

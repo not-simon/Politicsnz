@@ -83,9 +83,22 @@ async function openDoc(party, path, { related = null, context = '' } = {}) {
 }
 
 /* ----- issues ----- */
-V.issues = () => {
+// Issue pages whose slug or title is close to what was typed: shared words or word starts ("housing" → Housing and rent),
+// then small typos ("helth" → Health). Best matches first.
+function ptIssueMatches(q, iss) { const fold = t => String(t || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const words = t => fold(t).split(/[^a-z0-9]+/).filter(w => w.length > 2 && !['and', 'the', 'how', 'for'].includes(w));
+  const near = (a, b) => { if (Math.abs(a.length - b.length) > 2) return false; const d = Array.from({ length: b.length + 1 }, (_, j) => j);
+    for (let i = 1; i <= a.length; i++) { let prev = d[0]; d[0] = i; for (let j = 1; j <= b.length; j++) { const t = d[j]; d[j] = Math.min(d[j] + 1, d[j - 1] + 1, prev + (a[i - 1] === b[j - 1] ? 0 : 1)); prev = t } } return d[b.length] <= (a.length > 6 ? 2 : 1) };
+  const qw = words(q); if (!qw.length) return [];
+  return iss.map(i => { const iw = [...words(i.slug), ...words(i.title)]; let sc = 0;
+      for (const w of qw) sc += iw.some(x => x === w) ? 3 : iw.some(x => x.startsWith(w) || (x.length > 3 && w.startsWith(x))) ? 2 : iw.some(x => near(w, x)) ? 1 : 0;
+      return [i, sc] }).filter(([, sc]) => sc > 0).sort((a, b) => b[1] - a[1] || ptCmp(a[0].title, b[0].title)).slice(0, 5).map(([i]) => i) }
+V.issues = (missing = '') => {
   const iss = (G().issues || []).slice().sort((a, b) => ptCmp(a.title, b.title));
-  $('#main').innerHTML = sectionFrame('parties', 'parties/issues', `<header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('scale', 'i--s')} Parties · Issues</p><h1>The big issues</h1>
+  const like = missing ? ptIssueMatches(missing, iss) : [];
+  const notFound = missing ? `<div class="callout" role="status"><p><b>No issue page called “${esc(missing)}”.</b>${like.length ? ' Did you mean:' : ' Every issue page is listed below.'}</p>
+    ${like.length ? `<div class="rows">${like.map(i => `<a class="rowlink rowlink--plain" href="#/parties/issues/${esc(i.slug)}"><span class="rowlink__title">${esc(i.title)}</span>${ic('chev')}</a>`).join('')}</div>` : ''}</div>` : '';
+  $('#main').innerHTML = sectionFrame('parties', 'parties/issues', `${notFound}<header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('scale', 'i--s')} Parties · Issues</p><h1>The big issues</h1>
     <p class="lede">Pick an issue to see the key facts and where every party stands, in plain English, with sources.</p></header>
     ${iss.length ? `<div class="rows">${iss.map(i => `<a class="rowlink rowlink--plain" href="#/parties/issues/${esc(i.slug)}"><span><span class="rowlink__title">${esc(i.title)}</span><span class="rowlink__sub" style="display:block">${esc((i.why_it_matters || '').slice(0, 160))}${(i.why_it_matters || '').length > 160 ? '…' : ''}</span><span class="micro muted" style="display:block;margin-top:4px">${(i.key_facts || []).length} key facts · ${Object.keys(i.positions || {}).length} parties' positions</span></span>${ic('chev')}</a>`).join('')}</div>`
     : `<p class="muted">Issue guides are being written. Meanwhile, compare by topic in <a href="#/parties/policies">the policy browser</a>.</p>`}`);
@@ -93,7 +106,7 @@ V.issues = () => {
 // First sentence of a position; the rest folds away under "More" (nothing is cut).
 function ptSplitSentence(t) { const m = String(t || '').match(/^(.+?[.!?])(\s+)(?=[A-Z0-9“"‘'(])/); return m && m[1].length >= 40 ? [m[1], String(t).slice(m[0].length)] : [String(t || ''), ''] }
 V.issue = slug => {
-  const i = (G().issues || []).find(x => x.slug === slug); if (!i) return V.issues();
+  const i = (G().issues || []).find(x => x.slug === slug); if (!i) return V.issues((() => { try { return decodeURIComponent(String(slug || '')) } catch { return String(slug || '') } })());
   const order = Object.keys(i.positions || {}).sort((a, b) => ptCmp(pname(a), pname(b)));   // A–Z, never by polling
   const facts = i.key_facts || []; const fact = f => `<div class="feed__item"><p>${esc(typeof f === 'string' ? f : f.fact || f.text)}</p><p class="src">${f.date ? `<span>${esc(ptDate(f.date))}</span>` : ''}${ptSources(f)}</p></div>`;
   $('#main').innerHTML = sectionFrame('parties', 'parties/issues', `<nav class="small" aria-label="Breadcrumb"><a href="#/parties/issues">All ${(G().issues || []).length} issues</a> <span class="muted">/ ${esc(i.title)}</span></nav>

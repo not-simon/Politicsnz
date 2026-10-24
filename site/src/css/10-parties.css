@@ -96,3 +96,26 @@ button.more { background: none; border: 0; border-bottom: 2px solid var(--link-u
 .chip[aria-current="page"]::before, .chip--menu.is-on::before { content: ""; width: 12px; height: 7px; margin-right: 1px; border-left: 2.2px solid var(--signal-text); border-bottom: 2.2px solid var(--signal-text); transform: translateY(-2px) rotate(-45deg) }
 /* Withdrawn policies: still listed, greyed, with the "Withdrawn <date>" badge as the words */
 .pol--gone .pol__t { color: var(--text-3) }
+
+/* ---------- QA round: party page tabs, breadcrumb, sheet folds, early-action verdict ---------- */
+/* Party pages: one tab row only. On phones and tablets the section chip row gives way to a "Parties › Labour" breadcrumb;
+   the desktop rail (a vertical list, nothing like the tabs) stays. */
+@media (max-width: 1023px) { .section--party > .subnav { display: none } }
+.pcrumb { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font: 600 var(--t-small)/1.3 var(--font-body); color: var(--text-2) }
+.pcrumb a { color: var(--text); display: inline-flex; align-items: center; min-height: 24px }
+.pcrumb .i { color: var(--text-3) }
+.pcrumb [aria-current="page"] { color: var(--text-2) }
+/* The party's own tabs: an underlined strip fixed to the foot of the party header, on the party-colour rule. */
+.party-page > .ptabs--party { margin-top: calc(-1 * var(--s-6) + var(--s-2)); border-bottom: 3px solid var(--pc); align-items: center }
+.ptabs--party a { font-weight: 600 }
+.ptabs--party a[aria-current="page"] { font-weight: 800; color: var(--text) }
+.ptabs--party a[aria-current="page"]::after { background: var(--text); bottom: -3px; height: 4px; border-radius: 0 }
+.ptabs__who { display: none; flex: none; padding-right: 2px; font: 800 15px/1 var(--font-body); color: var(--text) }
+@media (max-width: 719px) { .ptabs__who { display: block } .ptabs--party a { padding-inline: 10px } .ptabs--party a[aria-current="page"]::after { left: 10px; right: 10px } }
+.seat-note { display: flex; gap: 6px; align-items: baseline; padding: var(--s-3) var(--s-4); border-left: 3px solid var(--line); background: var(--sunk); border-radius: var(--r-xs) }
+/* Folds inside a sheet: a chevron, so the sheet's own ✕ is the only cross on screen */
+.sheet .disclose > summary::after { width: 9px; height: 9px; margin: 0 7px 5px 7px; border-radius: 0; background: none; border-right: 2px solid var(--text-2); border-bottom: 2px solid var(--text-2); transform: rotate(45deg) }
+.sheet .disclose[open] > summary::after { transform: translateY(5px) rotate(-135deg) }
+/* 2026 campaign promise with something already done: recorded, never scored */
+.v-early { --v: var(--st-notdue); --v-soft: var(--st-notdue-soft) }
+.vmeter > i.v-early { background: repeating-linear-gradient(45deg, var(--v) 0 2px, color-mix(in srgb, var(--v) 40%, transparent) 2px 5px) }

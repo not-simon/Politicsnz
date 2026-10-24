@@ -12,7 +12,7 @@ const inLang = (code, txt) => `<span lang="${code}">${esc(txt)}</span>`;
 const biText = (code, xx, en) => xx ? `${inLang(code, xx)} · ${esc(en)}` : esc(en);
 const LANG_OFFICIAL_NOTE = `<p class="note">${ic('phone', 'i--s')}<span>Official information comes from the Electoral Commission: <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or 0800 36 76 56 (free, 24 hours). Ask for an interpreter in your language on the same number. Ballot Book NZ is an independent guide, not the Commission.</span></p>`;
 const langFoot = () => `<div class="stack stack--s">${LANG_OFFICIAL_NOTE}<div class="micro notec">${NOT_EC}</div></div>`;
-const srcRow = links => `<p class="src">${ic('doc')} ${links.map(([u, l]) => extA(u, esc(l))).join(' · ')}</p>`;
+const srcRow = links => { const L = (links || []).filter(x => x && x[0] && x[1]); return L.length ? `<p class="src src--line">${ic('doc')}<span>${L.map(([u, l]) => extA(u, esc(l))).join(' · ')}</span></p>` : '' };
 const MH = {   // vote.nz / elections.nz pages behind each claim on the Māori electorates page (checked 24 Oct 2026)
   roll: 'https://vote.nz/enrolling/get-ready-to-enrol/maori-roll-or-general-roll',
   choice: 'https://vote.nz/maori-enrolment/about-the-option/about/what-does-your-choice-mean-for-you',
@@ -34,20 +34,26 @@ const MH = {   // vote.nz / elections.nz pages behind each claim on the Māori e
 function maoriSeatHTML(e, r) {
   const cands = (e.candidates || []).slice().sort(ballotSort); const mp = e.sitting_mp;
   const pn = p => esc(S.data.parties[p] ? pname(p) : p);
-  const res = r ? `<p class="small"><b>2023:</b> ${esc(r.winner)} <span class="ptag ptag--s" style="--pc:${pcolor(r.party)}"><span class="sw"></span>${pn(r.party)}</span> won${r.majority ? ` by ${Number(r.majority).toLocaleString('en-NZ')} votes` : ''}${r.runner_up ? ` over ${esc(r.runner_up)} <span class="ptag ptag--s" style="--pc:${pcolor(r.runner_up_party)}"><span class="sw"></span>${pn(r.runner_up_party)}</span>` : ''}.</p>` : '<p class="small muted">2023 result not available.</p>';
+  // every field is guarded: a missing winner, party, majority or runner-up drops that part, and the source line only appears when there is a result and a source
+  const tag = p => p ? ` <span class="ptag ptag--s" style="--pc:${pcolor(p)}"><span class="sw"></span>${pn(p)}</span>` : '';
+  const maj = r && typeof r.majority === 'number' && r.majority > 0 ? ` by ${Number(r.majority).toLocaleString('en-NZ')} votes` : '';
+  const res = r && r.winner ? `<p class="small"><b>2023:</b> ${esc(r.winner)}${tag(r.party)} won${maj}${r.runner_up ? ` over ${esc(r.runner_up)}${tag(r.runner_up_party)}` : ''}.</p>` : '<p class="small muted">2023 result not available.</p>';
+  const srcU = r && r.winner ? ((e.result_2023 && e.result_2023.source) || String(r.majority_source || '').match(/https?:\/\/\S+/)?.[0] || '') : '';
+  const resSrc = srcU ? `<p class="src src--line">${ic('doc')}<span>2023 result: official count, as reported by ${extA(srcU, esc(srcU.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]))}</span></p>` : '';
   const now = mp ? `<p class="small soft"><b>MP now:</b> ${esc(mp.name)} (${pn(mp.party)})${e.mp_standing_again === false ? ', not standing again' : ''}.${e.sitting_mp_note ? ` ${esc(e.sitting_mp_note)}` : ''}</p>` : '';
   return `<section class="stack stack--s mh-seat" aria-labelledby="mh-${esc(e.slug)}">
       <div class="shead shead--quiet"><div class="shead__row"><h3 id="mh-${esc(e.slug)}" class="h4">${inLang('mi', e.name)}</h3><span class="micro muted">${esc(String(e.region || '').replace(/\s*\(Māori electorate\)\s*/i, ''))}</span></div></div>
-      ${res}${now}
+      ${res}${resSrc}${now}
       <div class="shead__row"><span class="small"><b>On the ballot: ${cands.length}</b></span><span class="micro muted">A–Z by surname</span></div>
       ${cands.length ? `<ul class="cands" role="list">${cands.map(candRow).join('')}</ul>` : '<p class="small muted">The candidate list is still being checked.</p>'}
       <div class="row"><a class="btn btn--s" href="#/vote/electorate/${esc(e.slug)}">${ic('pin', 'i--s')} ${esc(e.name)} electorate page</a><a class="btn btn--s btn--quiet" href="#/seats/map/2023/${esc(e.slug)}">${ic('map', 'i--s')} On the map</a></div>
     </section>` }
 
 function maoriSeatRow(e, r) { const mp = e.sitting_mp; const pn = p => esc(S.data.parties[p] ? pname(p) : p);
-  const by = r && r.majority ? ` by ${Number(r.majority).toLocaleString('en-NZ')}` : '';
-  const same = mp && r && elSlug(mp.name) === elSlug(r.winner) && mp.party === r.party;
-  const line = same ? `MP: ${esc(mp.name)} (${pn(mp.party)}), won 2023${by}` : [mp ? `MP: ${esc(mp.name)} (${pn(mp.party)})` : '', r ? `2023: ${esc(r.winner)} (${pn(r.party)})${by}` : ''].filter(Boolean).join(' · ');
+  const by = r && typeof r.majority === 'number' && r.majority > 0 ? ` by ${Number(r.majority).toLocaleString('en-NZ')}` : '';
+  const who = (n, p) => n ? `${esc(n)}${p ? ` (${pn(p)})` : ''}` : '';
+  const same = mp && mp.name && r && r.winner && elSlug(mp.name) === elSlug(r.winner) && mp.party === r.party;
+  const line = same ? `MP: ${who(mp.name, mp.party)}, won 2023${by}` : [mp && mp.name ? `MP: ${who(mp.name, mp.party)}` : '', r && r.winner ? `2023: ${who(r.winner, r.party)}${by}` : ''].filter(Boolean).join(' · ');
   return `<button class="rowlink rowlink--plain" type="button" data-seat="${esc(e.slug)}" aria-haspopup="dialog"><span><span class="rowlink__title"><span lang="mi">${esc(e.name)}</span> <span class="micro muted">${esc(String(e.region || '').replace(/\s*\(Māori electorate\)\s*/i, ''))}</span></span><span class="rowlink__sub" style="display:block">${line}</span></span>${ic('chev')}</button>` }
 
 V.maoriHub = async arg => {
@@ -93,12 +99,12 @@ V.maoriHub = async arg => {
       <div class="shead"><div class="shead__row"><h2 id="mh-seats">${inLang('mi', 'Ngā rohe pōti Māori e 7')} · The 7 Māori electorates</h2><span class="micro muted">A–Z</span></div></div>
       <p class="small soft">Tap one for its candidates (A–Z by surname), the 2023 result and links. Boundaries changed in 2025.</p>
       <div class="rows" id="mh-list">${E.map(e => maoriSeatRow(e, r23(e))).join('')}</div>
-      <p class="src">${ic('doc')} Candidates: policy.nz and party lists (official list: EasyVote card, vote.nz). 2023: ${extA('https://electionresults.govt.nz', 'official count')}, as reported. Checked 24 Oct 2026.</p>
+      <p class="src src--line">${ic('doc')}<span>Candidates: policy.nz and party lists (official list: EasyVote card, vote.nz).${E.some(e => (r23(e) || {}).winner) ? ` 2023 results: the ${extA('https://electionresults.govt.nz', 'official count')}, as reported.` : ''} Checked 24 Oct 2026.</span></p>
       <div class="row"><a class="btn btn--s btn--quiet" href="#/vote/electorate">${ic('pin', 'i--s')} Find your electorate</a><a class="btn btn--s btn--quiet" href="#/seats/map">${ic('map', 'i--s')} Electorate map</a><a class="btn btn--s btn--quiet" href="#/vote/mmp">${ic('scale', 'i--s')} How MMP works</a></div>
     </section>
     ${voteFoot()}`;
   const openSeat = slug => { const e = E.find(x => x.slug === slug); if (!e) return;
-    openSheet({ title: e.name, depth: ['Vote', 'Māori electorates', e.name], at: 2, src: 'Candidates from policy.nz and party lists; the official list is on your EasyVote card and at vote.nz. 2023: Electoral Commission official count, as reported.', html: maoriSeatHTML(e, r23(e)) });
+    openSheet({ title: e.name, depth: ['Vote', 'Māori electorates', e.name], at: 2, src: `Candidates from policy.nz and party lists; the official list is on your EasyVote card and at vote.nz.${(r23(e) || {}).winner ? ' 2023: Electoral Commission official count, as reported.' : ''}`, html: maoriSeatHTML(e, r23(e)) });
     const box = $('#sheet-body .mh-seat'); if (box) box.addEventListener('click', ev => { const b = ev.target.closest('[data-cand]'); if (!b) return; const p = findPerson(b.dataset.cand, b.dataset.cname); if (p) openPerson(p);
       else openSheet({ title: b.dataset.cname, html: '<p class="small muted">We don’t have a profile for this candidate yet. Their party’s website, policy.nz and vote.nz list the candidates standing.</p>' }) }) };
   $('#mh-list').addEventListener('click', ev => { const b = ev.target.closest('[data-seat]'); if (b) openSeat(b.dataset.seat) });

@@ -28,7 +28,8 @@ async function mapContext(year, type) { const idx = S.geo.index; const setId = i
 
 V.map = async (startYear, startSlug) => {
   $('#main').innerHTML = sectionFrame('seats', 'seats/map', `<p class="muted">Loading the map…</p>`);
-  await loadPeople(); await loadGeo(2020);
+  const route = S.route; await loadPeople(); await loadGeo(2020);
+  if (S.route !== route) return;   // the reader moved on while the boundaries loaded: don't draw over the new page
   const idx = S.geo.index;
   let year = MAP_YEARS.includes(+startYear) ? +startYear : (MAP_YEARS.includes(+store.get('mapYear')) ? +store.get('mapYear') : 2023);
   const layerArg = ['maori', 'general'].includes(startSlug) ? startSlug : null; if (layerArg) startSlug = undefined;

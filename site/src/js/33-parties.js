@@ -10,13 +10,41 @@ function partyOrder(mode = 'az') {
 }
 const onBallot = s => (G().parties || []).some(p => p.slug === s);
 function leaderFaces(s) { const g = guideParty(s); const ls = (g && g.leaders) || []; return ls.map(l => findPerson(l.slug, l.name)).filter(Boolean) }
-function partySeats(s) { const g = guideParty(s); if (g && g.current_seats && g.current_seats.seats != null) return g.current_seats.seats; return (currentParl() && (currentParl().composition_now_or_end || {})[s]) || 0 }
+// Seats come from Parliament's own record (data/parliaments/<latest>.json, composition_now_or_end), never a constant.
+// The guide card's current_seats is only a fallback for views that run before the Parliament data has loaded.
+const ptParl = () => { const ps = (S.data && S.data.parliaments) || []; return ps.length ? ps[ps.length - 1] : null };
+function partySeats(s) { const p = ptParl(); if (p && p.composition_now_or_end) return +p.composition_now_or_end[s] || 0;
+  const g = guideParty(s); return (g && g.current_seats && +g.current_seats.seats) || 0 }
+const partyMPs = partySeats;   // the name other views use
+// Size of the House: the sum of the composition, with any vacancies the record lists; `ended` once Parliament is dissolved.
+function houseSeats() { const p = ptParl(); const g = (G().parties || []).find(x => x.current_seats && x.current_seats.of) || {};
+  if (!p) return { total: (g.current_seats || {}).of || null, vacancies: [], ended: false, end: null, asOf: (g.current_seats || {}).as_of || null };
+  const total = Object.values(p.composition_now_or_end || {}).reduce((a, n) => a + (+n || 0), 0);
+  const ended = !!(p.end && new Date(p.end + 'T23:59:59') < new Date());
+  return { total: total || p.total_now_or_end, vacancies: p.vacancies_at_end || [], ended, end: p.end, asOf: ended ? p.end : null } }
+const houseLine = h => `${h.total} seats${h.vacancies.length ? `; ${h.vacancies.length === 1 ? 'one vacancy' : h.vacancies.length + ' vacancies'}` : ''}`;
+// MPs whose profile sits under this party but whom Parliament's record lists under another party (or as independents).
+function partyMPsElsewhere(s) { const p = ptParl(); if (!p) return [];
+  return (p.members || []).filter(m => !m.left && String(m.repo_folder || '').startsWith(`parties/${s}/`) && m.party_now_or_end && m.party_now_or_end !== s) }
+function partySeatNote(s, long = false) {
+  const h = houseSeats(); const L = partyMPsElsewhere(s); if (!L.length) return '';
+  const leaders = ((guideParty(s) || {}).leaders || []).map(l => l.name);
+  return L.map(m => { const who = leaders.includes(m.name) ? 'its leader' : 'its candidate'; const as = m.party_now_or_end === 'independent' ? 'an independent MP' : `a ${pname(m.party_now_or_end)} MP`;
+    if (!long) return `${who} ${h.ended ? 'sat' : 'sits'} as ${as}`;
+    const ch = (m.party_changes || []).slice(-1)[0];
+    return `${leaders.includes(m.name) ? 'Its leader, ' : ''}${esc(m.name)}${m.seat ? `, MP for ${esc(m.seat)},` : ''} was elected for ${esc(pname(m.party))} in ${esc(ptParl().election_year)} and is listed in Parliament’s records as ${as}${ch ? ` from ${esc(ptDate(ch.date))}` : ''}${h.ended ? ' until Parliament was dissolved' : ''}.${ch && ch.reason ? ` Reason recorded: ${esc(ch.reason.replace(/;.*$/, ''))}.` : ''}${partySeats(s) ? '' : ` ${esc(pname(s))} has no MPs of its own in those records.`}` }).join(' ') }
+// Groups not on the party-vote ballot have no guide card: one neutral line each, from their profiles (parties/<slug>/README.md),
+// in the same form as the guide taglines (what it is, what it proposes; nothing evaluative). Others get the generic line.
+const PT_OTHER_LINE = { nap: 'An unregistered group that opposes voting. Electorate candidates only.',
+  'progressive-aotearoa-new-zealand': 'An unregistered party based on Progressive Utilization Theory, proposing economic democracy and co-operative ownership of large businesses. Electorate candidates only.',
+  'socialist-equality-group': 'An unregistered label used by one candidate. Electorate candidates only.' };
 // Glance row used on the parties list (and by any other view that wants a party row). No polling.
 function partyCard(s) {
   const g = guideParty(s) || {}; const pp = P(s); const seats = partySeats(s);
-  const meta = [seats ? `${seats} MP${seats === 1 ? '' : 's'}` : 'No MPs', pp.policy_count ? `${pp.policy_count} ${pp.policy_count === 1 ? 'policy' : 'policies'}` : ''].filter(Boolean).join(' · ');
+  const note = partySeatNote(s);
+  const meta = [seats ? `${seats} MP${seats === 1 ? '' : 's'}` : note ? '0 MPs in Parliament’s records' : 'Not in Parliament', note, pp.policy_count ? `${pp.policy_count} ${pp.policy_count === 1 ? 'policy' : 'policies'}` : ''].filter(Boolean).join(' · ');
   return `<a class="rowlink rowlink--plain party-row" href="#/parties/${esc(s)}" style="--pc:${pcolor(s)}"><span class="stack stack--s"><span class="rowlink__title"><span class="ptag"><span class="sw"></span>${esc(g.name && S.partySort === 'ballot' ? g.name : pname(s))}</span></span>
-    ${g.tagline || pp.intro ? `<span class="rowlink__sub">${esc(g.tagline || String(pp.intro).replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').slice(0, 180))}</span>` : ''}<span class="micro muted">${meta}</span></span>${ic('chev')}</a>`;
+    ${g.tagline || PT_OTHER_LINE[s] ? `<span class="rowlink__sub">${esc(g.tagline || PT_OTHER_LINE[s])}</span>` : ''}<span class="micro muted">${meta}</span></span>${ic('chev')}</a>`;
 }
 
 V.parties = async () => {
@@ -28,6 +56,7 @@ V.parties = async () => {
       <p class="lede">Every party on the 2026 party-vote ballot. Pick one for a plain summary, then go as deep as you like: every policy in the party's own words, their people and their record.</p></header>
       <section class="stack"><div class="row row--between"><div class="seg" role="group" aria-label="Order">${[['az', 'A to Z'], ['ballot', 'Ballot order']].map(([k, l]) => `<button type="button" data-sort="${k}" aria-pressed="${S.partySort === k}">${l}</button>`).join('')}</div>
         <span class="micro muted">${S.partySort === 'ballot' ? 'Alphabetical by registered name, the order the parties appear on the ballot paper.' : 'Alphabetical by short name.'} ${ballot.length} parties.</span></div>
+        <p class="micro muted">${(h => `MPs: Parliament’s record ${h.ended ? `at dissolution on ${esc(ptDate(h.end))}` : 'now'} (${esc(houseLine(h))}).`)(houseSeats())}</p>
         <div class="rows">${ballot.map(partyCard).join('')}</div></section>
       ${others.length ? `<section class="stack"><div class="shead shead--quiet"><h2 class="h3">Also in this guide</h2></div><p class="small soft">Groups that are not on the 2026 party-vote list but whose candidates or policies are on file.</p><div class="rows">${others.map(partyCard).join('')}</div></section>` : ''}
       <p class="small muted">Former parties from 2011 to 2023 are in <a href="#/about/page/parties/MINOR_PARTIES.md">the minor parties overview</a>.</p>`);
@@ -51,7 +80,8 @@ V.party = async (s, tab = 'glance') => {
   const pos = g.position || {}; const label = T(pos);
   const leaders = (g.leaders || []).map(l => { const r = String(l.role || '').replace(/^Leader(,\s*)?/i, '').trim(); return esc(l.name) + (r ? ', ' + esc(r) : '') });
   const nBallot = (G().parties || []).length;
-  const head = `<div class="stack stack--l party-page"><nav class="small" aria-label="Breadcrumb"><a href="#/parties">All ${nBallot} parties</a> <span class="muted">/ ${esc(pname(s))}</span></nav>
+  // On a phone the section chip row is replaced by this breadcrumb (CSS), so the only tab row on the page is the party's own.
+  const head = `<div class="stack stack--l party-page"><nav class="pcrumb" aria-label="Breadcrumb"><a href="#/parties">Parties<span class="sr-only"> (all ${nBallot})</span></a>${ic('chev', 'i--xs')}<span aria-current="page">${esc(pname(s))}</span></nav>
     <header class="phead" style="--pc:${pc}">
       <div class="phead__id"><span class="phead__faces">${faces.length ? faces.slice(0, 2).map(f => faceHTML(f, s, 'face face--l')).join('') : `<span class="face--none face face--l" style="--pc:${pc}" aria-hidden="true">${esc(initials(s))}</span>`}</span>
         <div class="stack stack--s"><p class="eyebrow">${label ? (/^no /i.test(label) ? 'No position label' : esc(label)) + ` <span class="phead__src">(${pos.source ? ptExt(pos.source, "Wikipedia's label") : "Wikipedia's label"})</span>` : ''}${g.founded ? ` · Founded ${esc(g.founded)}` : ''}</p>
@@ -59,9 +89,9 @@ V.party = async (s, tab = 'glance') => {
       ${g.tagline ? `<p class="phead__tag">${esc(g.tagline)}</p>` : ''}${pos.description ? `<p class="small soft">${esc(pos.description)}</p>` : ''}
       <div class="row"><a class="btn btn--s" href="#/choose/compare/${esc(s)}">${ic('swap', 'i--xs')} Compare with another party</a>${g.website ? `<a class="btn btn--s btn--quiet" href="${esc(g.website)}" target="_blank" rel="noopener">Party website ${ic('ext', 'i--xs')}</a>` : ''}</div>
     </header>
-    <nav class="ptabs" aria-label="${esc(g.name || pp.name)}">${PARTY_TABS.map(([k, l, sub]) => `<a href="#/parties/${esc(s)}${sub}"${k === tab ? ' aria-current="page"' : ''}>${l}${counts[k] != null ? ` <span class="num">${counts[k]}</span>` : ''}</a>`).join('')}</nav>
+    <nav class="ptabs ptabs--party" style="--pc:${pc}" aria-label="${esc(pname(s))}: pages about this party"><span class="ptabs__who" aria-hidden="true">${esc(pname(s))}:</span>${PARTY_TABS.map(([k, l, sub]) => `<a href="#/parties/${esc(s)}${sub}"${k === tab ? ' aria-current="page"' : ''}>${l}${counts[k] != null ? ` <span class="num">${counts[k]}</span>` : ''}</a>`).join('')}</nav>
     <div id="pbody" class="party-body"></div></div>`;
-  $('#main').innerHTML = sectionFrame('parties', 'parties', head);
+  $('#main').innerHTML = sectionFrame('parties', 'parties', head).replace('<div class="section">', '<div class="section section--party">');
   const body = $('#pbody');
   if (tab === 'glance') { body.innerHTML = partyOverview(s, pols, prom); bindIdeas(body, s);
     body.querySelectorAll('[data-ov]').forEach(b => b.onclick = () => openPartySheet(s, b.dataset.ov));
@@ -89,7 +119,7 @@ function partyFacts(s) {
 const ptAZ = L => (L || []).slice().sort((a, b) => ptCmp(pname(a), pname(b)));
 function partyOverview(s, pols, prom) {
   const { g, cost, costYes, csObj, ideas, ideasLabel } = partyFacts(s); const pp = P(s);
-  const cur = g.current_seats || {}; const seats = partySeats(s);
+  const cur = g.current_seats || {}; const seats = partySeats(s); const house = houseSeats(); const seatNote = partySeatNote(s, true);
   const topics = new Set(pols.map(topicOf)).size; const nm = esc(pname(s));
   const sec = (id, title, inner, extra = '', quiet = false) => `<section class="stack" aria-labelledby="h-${id}"><div class="shead${quiet ? ' shead--quiet' : ''}"><div class="shead__row"><h2 id="h-${id}"${quiet ? ' class="h3"' : ''}>${title}</h2>${extra}</div></div>${inner}</section>`;
   const sc = scoreOf(prom); const hasSides = T(g.they_say) || T(g.critics_say);
@@ -99,25 +129,26 @@ function partyOverview(s, pols, prom) {
   const nSrc = (g.sources || []).length; const checked = ptDate((cur.as_of || (S.data.generated || '').slice(0, 10)));
   return `<div class="party-layout">
     <dl class="glance">
-      <div><dt>MPs now</dt><dd>${seats}<small>of ${esc(cur.of || (currentParl() || {}).total_now_or_end || 123)} seats${cur.as_of ? ' · ' + ptDate(cur.as_of, { day: 'numeric', month: 'short' }) : ''}</small></dd></div>
+      <div><dt>${house.ended ? 'MPs at dissolution' : 'MPs now'}</dt><dd>${seats}<small>of ${esc(house.total)} seats${house.vacancies.length ? `, ${house.vacancies.length === 1 ? 'one' : house.vacancies.length} vacant` : ''}${house.asOf || cur.as_of ? '<br>' + ptDate(house.asOf || cur.as_of, { day: 'numeric', month: 'short', year: 'numeric' }) : ''}</small></dd></div>
       <div><dt>2026 policies</dt><dd>${pols.length}<small>${pols.length ? `${topics} topic${topics === 1 ? '' : 's'}` : 'none on file yet'}</small></dd></div>
-      <div><dt>Promises checked</dt><dd>${prom.length || '–'}<small>${prom.length ? 'with sources' : 'not tracked yet'}</small></dd></div>
+      <div><dt>Promises checked</dt><dd>${prom.length ? sc.past : '–'}<small>${prom.length ? (sc.n - sc.past ? `past promises<br>+${sc.n - sc.past} for 2026, not yet due` : 'past promises, with sources') : 'not tracked yet'}</small></dd></div>
       <div><dt>Numbers costed?</dt><dd>${cost ? (costYes ? 'Yes' : 'No') : '–'}<small>${cost ? (costYes ? 'party-published' : 'no full plan found') : 'not checked'}</small></dd></div>
     </dl>
     <div class="stack stack--xl party-layout__main">
+      ${seatNote ? `<p class="small soft seat-note">${ic('info', 'i--xs')} ${seatNote}</p>` : ''}
       ${sec('nut', 'In a nutshell', g.in_a_nutshell ? `<div class="prose"><p>${esc(g.in_a_nutshell)}</p></div>` : pp.intro ? `<div class="prose">${md(pp.intro)}</div>` : '<p class="muted">A plain summary has not been written yet.</p>')}
       ${sec('big', (g.big_ideas || []).length ? 'Big ideas for 2026' : 'Headline policies', ideas.length ? `<ol class="ideas">${ideas.slice(0, 3).join('')}</ol>` : '<p class="muted">No headline policies on file yet.</p>', pols.length ? `<a class="more small" href="#/parties/${esc(s)}/policies">All ${pols.length} policies ${ic('chev', 'i--xs')}</a>` : '')}
       ${sec('more', `More about ${nm}`, `<div class="rows">
         ${ovRow('big-ideas', 'list', `All ${ideasLabel}`, ideas.length ? `${ideas.length}, each linked to the policies and documents behind it` : 'None on file yet')}
         ${ovRow('two-sides', 'scale', 'Two sides', hasSides ? 'What they say, and what critics say, with sources' : 'Not summarised yet')}
         ${ovRow('work-with', 'users', "Who they'd work with", workSub)}
-        <a class="rowlink" href="#/parties/${esc(s)}/record"><span class="rowlink__icon">${ic('history')}</span><span><span class="rowlink__title">Keeping their word</span><span class="rowlink__sub" style="display:block">${prom.length ? `${sc.n} promises checked${sc.score != null ? `, ${sc.score}% kept` : ''} · verdicts by term, with sources` : 'The promise check is still being researched'}</span></span>${ic('chev')}</a>
+        <a class="rowlink" href="#/parties/${esc(s)}/record"><span class="rowlink__icon">${ic('history')}</span><span><span class="rowlink__title">Keeping their word</span><span class="rowlink__sub" style="display:block">${prom.length ? `${sc.past} past promises checked${sc.score != null ? `, ${sc.score}% kept` : ''}${sc.n - sc.past ? ` · ${sc.n - sc.past} for 2026, not yet due` : ''} · by term, with sources` : 'The promise check is still being researched'}</span></span>${ic('chev')}</a>
         ${ovRow('costed', 'doc', 'Are the numbers costed?', cost ? (costYes ? 'Yes, party-published' : 'No full costing published') : 'Not checked yet')}
         ${ovRow('results', 'poll', 'Election results', 'Party vote and seats at each election since 2008')}
         ${ovRow('sources', 'info', 'Sources', `${nSrc ? `${nSrc} source${nSrc === 1 ? '' : 's'} for this summary · ` : ''}checked ${checked}`)}</div>`)}
       ${sec('deep', 'Full documents', `<div class="rows" style="border-top:0">
         ${pp.has_readme ? deepRow('book', 'Full party profile and history', `${g.founded ? 'Founded ' + esc(g.founded) + ' · ' : ''}leaders · every result`, `#/about/page/parties/${s}/README.md`) : ''}
-        ${pp.has_track_record ? deepRow('history', 'Full track record, with sources', prom.length ? `${prom.length} promises checked` : 'The written record', `#/about/page/parties/${s}/track-record.md`) : ''}
+        ${pp.has_track_record ? deepRow('history', 'Full track record, with sources', prom.length ? `${prom.length} promises recorded` : 'The written record', `#/about/page/parties/${s}/track-record.md`) : ''}
         ${deepRow('doc', 'Policy index', `${pols.length} policies${pols.length ? ` across ${topics} topic${topics === 1 ? '' : 's'}` : ''}, with the documents they come from`, `#/about/page/parties/${s}/policies/README.md`)}
         ${deepRow('news', 'From the party', 'Latest press releases and where to follow them', `#/parties/news/${s}`)}
         ${g.website ? deepRow('ext', 'Party website', esc(ptHost(g.website)), g.website, true) : ''}</div>`, '', true)}
@@ -159,16 +190,20 @@ function bindIdeas(el, s) {
 /* ----- Keeping their word (party Overview and Record tab) ----- */
 function recordSummary(s, { inRecord = false } = {}) {
   const all = (S.data.promises || {})[s] || []; const g = guideParty(s) || {};
-  const head = `<div class="shead"><div class="shead__row"><h2 id="h-rec">Keeping their word</h2>${all.length ? `<span class="micro muted">${all.length} promises tracked</span>` : ''}</div></div>`;
+  const head = `<div class="shead"><div class="shead__row"><h2 id="h-rec">Keeping their word</h2>${all.length ? `<span class="micro muted">${all.length} promises recorded</span>` : ''}</div></div>`;
   if (!all.length) return `<section class="stack" aria-labelledby="h-rec">${head}<p class="muted">The promise check for this party is still being researched.</p>${P(s).has_track_record ? `<a class="more small" href="#/about/page/parties/${esc(s)}/track-record.md">Read the written track record ${ic('chev', 'i--xs')}</a>` : ''}</section>`;
   const terms = TERMS.map(([k, l]) => [k, l, all.filter(x => periodOf(x) === k)]).filter(([, , L]) => L.length);
-  const sc = scoreOf(all);
+  // One definition everywhere (see the rubric): past = every promise not made for the 2026 campaign.
+  const past = all.filter(isPastPromise), next = all.filter(x => !isPastPromise(x)); const sc = scoreOf(past); const sn = scoreOf(next);
+  // The guide's context sentence only; its counts are recomputed here from the same promises as the meters and the list.
+  const ctx = T(g.track_record_line).replace(/\s*Of \d+ past promises[\s\S]*$/, '').trim();
   return `<section class="stack" aria-labelledby="h-rec">${head}
-    ${T(g.track_record_line) ? `<p class="soft">${esc(T(g.track_record_line))}</p>` : ''}
-    <p class="small"><b>All time:</b> ${sc.n} promises checked${sc.score != null ? `, <b>${sc.score}%</b> kept` : ''}.</p>
-    <div class="terms">${terms.map(([k, l, L]) => { const t = scoreOf(L); return `<div class="term"><div class="term__h"><span><b>${esc(l)}</b> · ${t.n} checked</span><span class="muted">${t.score != null ? `${t.score}% kept` : 'Not yet due'}</span></div>${verdictMeter(L, l)}</div>` }).join('')}</div>
-    <div class="legend">${VERDICTS.filter(v => all.some(x => x.status === v)).map(v => `${verdictChip(v)}<b>${all.filter(x => x.status === v).length}</b>`).map(x => `<span>${x}</span>`).join('')}</div>
-    ${RUBRIC_HTML('How each promise was judged')}
+    ${ctx ? `<p class="soft">${esc(ctx)}</p>` : ''}
+    ${past.length ? `<p class="small"><b>${past.length} past promise${past.length === 1 ? '' : 's'} checked:</b> ${esc(verdictCounts(past))}.${sc.score != null ? ` <b>${sc.score}%</b> kept, of the ${sc.resolved} with a final verdict.` : ''}</p>` : ''}
+    ${next.length ? `<p class="small"><b>2026 campaign:</b> ${next.length} promise${next.length === 1 ? '' : 's'} recorded, not yet due${sn.early ? ` (${sn.early} with early action recorded)` : ''}. Not scored.</p>` : ''}
+    <div class="terms">${terms.map(([k, l, L]) => { const t = scoreOf(L); return `<div class="term"><div class="term__h"><span><b>${esc(l)}</b> · ${t.n} ${k === '2026' ? 'recorded' : 'checked'}</span><span class="muted">${k === '2026' ? 'Not yet due' : t.score != null ? `${t.score}% kept` : 'No final verdicts yet'}</span></div>${verdictMeter(L, l)}</div>` }).join('')}</div>
+    <div class="legend">${VERDICTS.filter(v => all.some(x => pStatus(x) === v)).map(v => `<span>${verdictChip(v)}</span>`).join('')}</div>
+    ${RUBRIC_HTML('How each promise was judged, and which are counted')}
     <div class="row">${inRecord ? '' : `<a class="more small" href="#/parties/${esc(s)}/record">See every promise, with sources ${ic('chev', 'i--xs')}</a>`}${P(s).has_track_record ? `<a class="more small" href="#/about/page/parties/${esc(s)}/track-record.md">Full track record ${ic('chev', 'i--xs')}</a>` : ''}</div></section>`;
 }
 // Party vote at each election since 2008, as .rrow bars (party colour only via --pc).

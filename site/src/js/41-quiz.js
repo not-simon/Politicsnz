@@ -27,7 +27,8 @@ function dimPositions(Q, st) { const dims = {}; for (const q of Q.statements) { 
   const mean = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
   return Object.fromEntries(Object.entries(dims).map(([k, d]) => [k, { ...d, user: d.user.length >= 2 ? mean(d.user) : null, parties: Object.fromEntries(Object.entries(d.parties).filter(([, a]) => a.length >= 2).map(([s, a]) => [s, mean(a)])) }])) }
 // Every party, with a likely range: min–max of the shrunk score, the raw score, the score without low-confidence cells,
-// and the scores with ±1 cells moved one step toward / away from you. Buckets come from the shrunk score.
+// and the scores with ±1 cells moved one step toward / away from you. The tick drawn on the bar (m) is the middle of that
+// displayed range, and the label (bucket) is read from the tick, so the range, the tick, the label and the share text agree.
 function q2Results(Q, st) {
   const by = a => Object.fromEntries(a.map(x => [x.slug, x]));
   const base = by(q2Scores(Q, st)), low = by(q2Scores(Q, st, { dropLow: true })), tw = by(q2Scores(Q, st, { shift: 1 })), aw = by(q2Scores(Q, st, { shift: -1 }));
@@ -36,8 +37,9 @@ function q2Results(Q, st) {
     const common = { slug, M, need, limited, coded: meta.positions_recorded, lowCells: meta.low_confidence_cells };
     if (!b) return { ...common, n: 0, thin: true, bucket: 'thin' };
     const vals = [b.match, b.raw, (low[slug] || {}).match, (tw[slug] || {}).match, (aw[slug] || {}).match].filter(v => typeof v === 'number');
-    const m = Math.round(b.match * 100); const thin = !b.inRanking || limited;
-    return { ...common, ...b, lo: Math.round(Math.min(...vals) * 100), hi: Math.round(Math.max(...vals) * 100), m, thin, bucket: thin ? 'thin' : m >= 70 ? 'strong' : m >= 55 ? 'moderate' : 'weak' } }) }
+    const lo = Math.round(Math.min(...vals) * 100), hi = Math.round(Math.max(...vals) * 100), m = Math.round((lo + hi) / 2); const thin = !b.inRanking || limited;
+    return { ...common, ...b, lo, hi, m, thin, bucket: thin ? 'thin' : q2Bucket(m) } }) }
+const q2Bucket = m => m >= 70 ? 'strong' : m >= 55 ? 'moderate' : 'weak';
 const BUCKET = { strong: 'Strong', moderate: 'Moderate', weak: 'Weak', thin: 'Too few positions' };
 function q2Explainer(q) { if (q.explainer) return esc(q.explainer);
   const toA = q.polarity_sign >= 0; const lab = esc(q.dimension_label || QDIM_SHORT[q.dimension] || '');
@@ -120,8 +122,8 @@ function renderMatchResults(box, Q) {
   const mrow = (r, k) => `<div class="mrow${r.thin ? ' mrow--thin' : ''}" style="--pc:${pcolor(r.slug)}">
       <span class="mrow__name"><span class="sw"></span><span>${esc(pname(r.slug))}</span></span>
       <span class="row row--nowrap" style="gap:6px"><span class="bucket bucket--${r.bucket}">${BUCKET[r.bucket]}</span><button class="btn btn--s btn--quiet" type="button" data-why="${esc(r.slug)}" aria-label="Why: ${esc(pname(r.slug))}, statement by statement">Why</button></span>
-      <div class="mrow__bar" style="--lo:${r.thin ? 0 : r.lo}%;--hi:${r.thin ? 0 : r.hi}%;--m:${r.thin ? 0 : r.m}%;--i:${k}" role="img" aria-label="${esc(pname(r.slug))}: ${r.thin ? 'too few positions to compare' : `${BUCKET[r.bucket].toLowerCase()} agreement, likely between ${r.lo} and ${r.hi} percent`}"><i></i><b></b></div>
-      <span class="mrow__cov"><span class="coverage"><i style="--c:${Math.round(r.n / Math.max(1, M) * 100)}%"></i>Positions on ${r.n} of your ${M}</span>${r.thin ? `<span>${reason(r)}</span>` : `<span>Likely ${r.lo}–${r.hi} of 100</span>`}</span></div>`;
+      <div class="mrow__bar" style="--lo:${r.thin ? 0 : r.lo}%;--hi:${r.thin ? 0 : r.hi}%;--m:${r.thin ? 0 : r.m}%;--i:${k}" role="img" aria-label="${esc(pname(r.slug))}: ${r.thin ? 'too few positions to compare' : `${BUCKET[r.bucket].toLowerCase()} agreement, likely between ${r.lo} and ${r.hi} of 100, middle ${r.m}`}"><i></i><b></b></div>
+      <span class="mrow__cov"><span class="coverage"><i style="--c:${Math.round(r.n / Math.max(1, M) * 100)}%"></i>Positions on ${r.n} of your ${M}</span>${r.thin ? `<span>${reason(r)}</span>` : `<span>Likely ${r.lo}–${r.hi} of 100 · middle ${r.m}</span>`}</span></div>`;
   const dims = dimPositions(Q, st); const dimKeys = QDIMS.filter(d => dims[d]);
   const withDims = az.filter(s => Object.values(dims).some(d => d.parties[s] != null));
   const cmp = (st.cmp || []).filter(s => withDims.includes(s)).slice(0, 2);
@@ -134,8 +136,9 @@ function renderMatchResults(box, Q) {
     <div class="split split--7-5">
       <section class="stack" aria-label="Every party">
         <div class="legend"><span><i class="bucket bucket--strong">Strong</i> 70+</span><span><i class="bucket bucket--moderate">Moderate</i> 55–69</span><span><i class="bucket bucket--weak">Weak</i> under 55</span><span><i class="bucket bucket--thin">Too few positions</i></span></div>
+        <p class="micro muted">The label is read from the tick on each bar, which marks the middle of the likely range.</p>
         <div>${rows.map(mrow).join('')}</div>
-        <p class="micro muted">${sort === 'close' ? 'Sorted by the middle of each range; parties with too few positions go last. Small differences mean nothing.' : sort === 'ballot' ? 'Ballot order: A–Z by each party’s full registered name.' : 'A–Z by short name.'} Bars show the score with and without the pull toward 50, with low-confidence positions set aside, and with ±1 positions moved a step either way.</p>
+        <p class="micro muted">${sort === 'close' ? 'Sorted by the middle of each range; parties with too few positions go last. Small differences mean nothing.' : sort === 'ballot' ? 'Ballot order: A–Z by each party’s full registered name.' : 'A–Z by short name.'} Each bar runs from the lowest to the highest of five versions of the score: with and without the pull toward 50, with low-confidence positions set aside, and with ±1 positions moved a step either way. Labels: Strong if the middle is 70 or more, Moderate 55–69, Weak under 55.</p>
       </section>
       <aside class="stack stack--l">
         <section class="stack" aria-labelledby="h-dims">
@@ -157,7 +160,7 @@ function renderMatchResults(box, Q) {
   box.querySelectorAll('[data-cmp]').forEach(b => b.onclick = () => { const s2 = q2State(); let c = (s2.cmp || []).filter(s => withDims.includes(s)); const s = b.dataset.cmp;
     if (c.includes(s)) c = c.filter(x => x !== s); else { c.push(s); if (c.length > 2) c.shift() } s2.cmp = c; q2Save(s2); renderMatchResults(box, Q); const nb = box.querySelector(`[data-cmp="${CSS.escape(s)}"]`); if (nb) nb.focus({ preventScroll: true }) });
   $('#qshare', box).onclick = () => { const text = [`Ballot Book NZ · Find your match (quiz ${Q.version || ''})`, `My answers on ${M} of ${N} statements compared with all ${R.length} parties, A–Z:`, '',
-      ...az.map(s => { const r = R.find(x => x.slug === s); return `${pname(s)}: ${r.thin ? 'too few positions to compare' : `${BUCKET[r.bucket].toLowerCase()} (likely ${r.lo}–${r.hi} of 100)`}` }), '',
+      ...az.map(s => { const r = R.find(x => x.slug === s); return `${pname(s)}: ${r.thin ? 'too few positions to compare' : `${BUCKET[r.bucket].toLowerCase()} (likely ${r.lo}–${r.hi} of 100, middle ${r.m})`}` }), '',
       'Information, not advice: it shows how answers line up with published positions, and is not a recommendation about how to vote.', chooseShareURL('choose/quiz')].join('\n');
     chooseCopy(text, 'Share all ' + R.length) };
   box.querySelectorAll('[data-why]').forEach(b => b.onclick = () => q2Why(Q, st, b.dataset.why, R.find(r => r.slug === b.dataset.why)));

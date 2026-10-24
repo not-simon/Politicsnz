@@ -48,6 +48,11 @@ function openPerson(p) {
         ${row('Standing in 2026', standing)}${row('In Parliament', p.parliaments ? esc(p.parliaments.map(ordinal).join(', ')) + ' Parliament' + (p.parliaments.length > 1 ? 's' : '') : '')}</dl></div>
       <div class="person-blocks">${blocks.map(([t, n, body], i) => `<details class="disclose"${i === 0 ? ' open' : ''}><summary>${esc(t)}${n ? ` <span class="micro muted" style="margin-left:auto">${n}</span>` : ''}</summary><div class="disclose__body">${body}</div></details>`).join('')}</div>
       <p class="src"><span class="nm">${photo}</span>${wikiAttr}<a href="${CORRECTION_URL}" target="_blank" rel="noopener">${ic('flag', 'i--xs')} Correct or reply</a></p>` });
+  // The sheet autolinks names in its body; inside a person's own sheet, their own party and their own name stay plain text
+  // (the party is already linked once, in the Party row and the header tag). Runs after the sheet's autolink pass.
+  loadPeople().then(() => setTimeout(() => { const body = $('#sheet-body'); if (!body || $('#sheet-title').textContent !== p.name) return;
+    body.querySelectorAll('.linkbtn').forEach(b => { if (b.dataset.go === 'party-' + p.party || (p.folder && b.dataset.person === p.folder)) b.replaceWith(document.createTextNode(b.textContent)) });
+    body.normalize() }, 0));
 }
 // Bring the pressed chip of a horizontally scrolling chip row into view (without moving the page).
 function ptScrollChips(row) { if (!row) return; const c = row.querySelector('[aria-pressed="true"], [aria-current="page"]'); if (c && row.scrollWidth > row.clientWidth) row.scrollLeft = Math.max(0, c.offsetLeft - row.offsetLeft - 16) }

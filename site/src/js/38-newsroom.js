@@ -7,6 +7,10 @@ function acctLinks(a, extra = []) { const out = Object.entries(a || {}).filter((
 function officeEmail(email, party, N) { const m = String(email || '').toLowerCase().match(/@([a-z0-9.-]+)$/); if (!m) return '';
   const fp = (N.follow_parties || {})[party] || {}; const hosts = [ptHost((fp.accounts || {}).website), ptHost(fp.newsroom_url), ptHost((guideParty(party) || {}).website), 'parliament.govt.nz'].filter(Boolean).map(h => h.toLowerCase());
   return hosts.some(h => m[1] === h || m[1].endsWith('.' + h)) ? email : '' }
+// The same release is sometimes published twice (two URLs, one headline): keep the newest copy per party and headline.
+// Titles compare without case, accents, punctuation or spacing ("Te Pāti Māori" = "Te Pati Maori").
+const ptNormTitle = t => String(t || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&amp;/g, '&').replace(/[^a-z0-9]+/g, ' ').trim();
+function dedupeReleases(L) { const seen = new Set(); return L.filter(i => { const k = i.party + '|' + ptNormTitle(i.title); if (seen.has(k)) return false; seen.add(k); return true }) }
 const newsDate = d => { const t = new Date(d); return isNaN(t) ? '' : t.toLocaleDateString('en-NZ', { day: 'numeric', month: 'short' }) };
 function releaseRow(i, withParty = false) {
   return `<a class="release" href="${esc(i.url)}" target="_blank" rel="noopener nofollow"><span class="release__t">${esc(i.title)}</span><span class="release__m">${withParty && i.party !== 'government' ? ptTag(i.party) : ''}${i.party === 'government' ? '<span class="badge badge--outline">Ministerial</span>' : ''}<span>${newsDate(i.date)}</span><span>${ic('ext', 'i--xs')} via ${esc(i.source || ptHost(i.url))}</span></span></a>` }
@@ -21,8 +25,8 @@ V.newsroom = async party => {
   const sel = party && (N.parties[party] || N.follow_parties[party]) ? party : 'all';
   const mode = sel === 'all' && store.get('newsMode') === 'newest' ? 'newest' : 'three';
   const byDate = (a, b) => String(b.date).localeCompare(String(a.date));
-  const items = N.items.filter(i => i.party !== 'government').sort(byDate);
-  const gov = N.items.filter(i => i.party === 'government').sort(byDate);
+  const items = dedupeReleases(N.items.filter(i => i.party !== 'government').sort(byDate));
+  const gov = dedupeReleases(N.items.filter(i => i.party === 'government').sort(byDate));
   const win = N.window_days || 60;
   const quietLine = p => { const pm = N.parties[p] || N.follow_parties[p] || {}; return `<p class="small muted">No release in the last ${esc(win)} days in the feeds we read.${pm.newsroom_url ? ` <a href="${esc(pm.newsroom_url)}" target="_blank" rel="noopener nofollow">Their own newsroom ${ic('ext', 'i--xs')}</a>` : ''}</p>` };
   const group = (p, L, all = false) => `<section class="pgroup" style="--pc:${pcolor(p)}"><div class="pgroup__h"><h3>${esc(pname(p))}</h3>${all ? '' : `<a class="more micro" href="#/parties/news/${esc(p)}" aria-label="All releases from ${esc(pname(p))}">All ${ic('chev', 'i--xs')}</a>`}</div>${L.length ? L.map(i => releaseRow(i)).join('') : quietLine(p)}</section>`;

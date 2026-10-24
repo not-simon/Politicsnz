@@ -101,35 +101,56 @@
 /* ----- policy swipe: first screen fits a phone; the reveal never moves the card ----- */
 .swpg { display: grid; gap: var(--s-6); min-width: 0 }
 .swpg__main { gap: var(--s-4) }
+/* the three buttons stay on screen (above the phone tab bar), even under a long card */
+.swpg__main .swipe-actions { position: sticky; z-index: 3; bottom: 0; margin-top: -12px; padding: 12px 0 6px; background: linear-gradient(to bottom, transparent, var(--bg) 12px) }
+@media (max-width: 1023px) { .swpg__main .swipe-actions { bottom: calc(var(--tabbar-h) + var(--gutter-b, 0px)) } }
+.swpg__main .scard__s { font-size: clamp(1.3125rem, 1.1rem + .8vw, 1.75rem) }
+@media (min-width: 1024px) {
+  .swpg__split { grid-template-rows: auto 1fr; row-gap: var(--s-5) }
+  .swpg__topics { grid-column: 2; grid-row: 1 }
+  .swpg__main { grid-column: 1; grid-row: 1 / span 2; align-self: start }
+  .swpg__aside { grid-column: 2; grid-row: 2; align-self: start }
+  .swpg__head .lede { margin-top: 0 }
+}
 .swpg__main .deck { padding-bottom: 30px }
 .swlast:empty { display: none }
-.swlast__in { display: grid; gap: 4px; padding: var(--s-3) var(--s-4); border-left: 4px solid var(--pc, var(--line-strong)); border-radius: 0 var(--r-s) var(--r-s) 0; background: var(--sunk) }
-.swlast__h { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: var(--t-small) }
-.swlast__h .sw { align-self: center }
+.swlast__in { display: grid; gap: 2px; min-height: 52px; align-content: center; padding: 6px 12px; border-left: 4px solid var(--pc, var(--line-strong)); border-radius: 0 var(--r-s) var(--r-s) 0; background: var(--sunk); animation: rise var(--dur-3) var(--ease-out) both }
+.swlast__h { display: flex; align-items: center; gap: 8px; font-size: var(--t-small); line-height: 1.3 }
+.swlast__h .sw { flex: none }
+.swlast .linkbtn, .swlast a { font-weight: 600; color: var(--text-2) }
 .scard__more { justify-self: start }
+/* long "What it would do" text is cut to a few lines, with a button to show all of it */
+.scard__how { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-clamp: 4; overflow: hidden }
+.scard--open .scard__how { display: block; -webkit-line-clamp: unset; line-clamp: none; overflow: visible }
 @media (min-width: 1024px) { .swlast { display: none } }
 @media (max-width: 1023px) { .swpg__reveal { display: none } }
 @media (max-width: 719px) {
-  .swpg { gap: var(--s-3) }
+  .swpg { gap: 10px }
   .swpg__head { gap: 0 }
   .swpg__head .eyebrow, .swpg__head .lede { display: none }
-  .swpg__head h1 { font-size: 26px; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
-  .swpg .split { gap: var(--s-6) }
-  .swpg__main { gap: var(--s-3) }
+  .swpg__head h1 { font-size: 24px; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+  .swpg__split { gap: 10px }
+  .swpg__aside { margin-top: var(--s-5) }
+  .swpg__main { gap: 10px }
+  .swpg__main .swipe-btn { gap: 4px }
   .swpg__main .deck { padding-bottom: 16px }
   .swpg__main .scard { gap: 10px; padding: var(--s-4) var(--s-4) var(--s-3) }
   .swpg__main .scard--behind { transform: translateY(8px) scale(.965) }
   .swpg__main .scard--behind2 { transform: translateY(16px) scale(.93) }
-  .swpg__main .scard__s { font-size: 21px; line-height: 1.18 }
+  .swpg__main .scard__s { line-height: 1.18 }
   .swpg__main .scard__body { font-size: 15px; gap: 4px }
-  .scard__how { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden }
-  .scard--open .scard__how { display: block; -webkit-line-clamp: unset; line-clamp: none; overflow: visible }
-  .swpg__main .scard .disclose > summary { padding-block: 8px }
-  .swpg__main .scard .src { font-size: 12px }
+  .scard__how { -webkit-line-clamp: 3; line-clamp: 3 }
+  .swpg__main .scard .disclose > summary { padding-block: 6px; font-size: 14.5px }
+  .swpg__main .scard .disclose > summary::after { width: 22px; height: 22px }
+  .swpg__main .scard .src { font-size: 12px; flex-wrap: nowrap; align-items: start }
+  .swpg__main .scard .src .i { margin-top: 1px }
   .swpg__main .scard__stamp { top: 14px; right: 14px }
   .swpg__main .swipe-btn i { width: 56px; height: 56px }
   .swpg__main .swipe-btn i .i { width: 26px; height: 26px }
   .swpg__main .swipe-btn--skip i { width: 44px; height: 44px }
   .swpg__main .swipe-btn--skip i .i { width: 20px; height: 20px }
 }
-@media (min-width: 720px) { .scard__more { display: none } }
+
+/* match: the four labels are outline chips of equal weight, so no band draws the eye (the words carry the meaning) */
+.bucket.bucket--strong, .bucket.bucket--moderate, .bucket.bucket--weak, .bucket.bucket--thin { background: transparent; color: var(--text-2); box-shadow: inset 0 0 0 1px var(--line-strong); outline: 0 }
+.bucket.bucket--thin { box-shadow: none; outline: 1px dashed var(--line-strong); outline-offset: -1px }

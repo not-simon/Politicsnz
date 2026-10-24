@@ -33,7 +33,7 @@ function elSuggHTML(raw) { const R = elSearch(raw); if (!R) return '';
   const typ = e => `${e.type === 'maori' ? 'Māori' : 'General'} electorate`; const nc = e => `${(e.candidates || []).length} candidates`;
   const row = (e, why) => `<a class="rowlink rowlink--plain" href="#/vote/electorate/${esc(e.slug)}"><span><span class="rowlink__title">${esc(e.name)}</span><span class="rowlink__sub" style="display:block">${why}</span></span>${ic('chev')}</a>`;
   let h = R.byName.slice(0, 8).map(e => row(e, `${typ(e)} · ${nc(e)}`)).join('');
-  if (R.byFormer.length) h += `<p class="micro muted el-sugg__h">Took in part of a former electorate in the 2025 boundary changes</p>` + R.byFormer.map(e => row(e, `${esc(e.name)} includes part of the former ${esc(R.formerHit(e))} electorate · ${nc(e)}`)).join('');
+  if (R.byFormer.length) h += `<p class="micro muted el-sugg__h">${R.byName.length ? 'Former electorates' : `${esc(R.formerHit(R.byFormer[0]))} is no longer an electorate`}: since the 2025 boundary changes, the area is in</p>` + R.byFormer.map(e => row(e, `Includes part of the former ${esc(R.formerHit(e))} electorate · ${nc(e)}`)).join('');
   if (R.byRegion.length) { const rg = R.regionHit(R.byRegion[0]);
     h += `<p class="micro muted el-sugg__h">${R.byRegion.length} electorate${R.byRegion.length === 1 ? '' : 's'} in ${esc(rg)}, A–Z. Boundaries can split a town, so check your address at vote.nz.</p>` + R.byRegion.slice().sort((a, b) => a.name.localeCompare(b.name, 'en-NZ')).map(e => row(e, `${typ(e)} · ${esc(String(e.region || '').replace(/\s*\(Māori electorate\)\s*/i, ''))}`)).join('') }
   if (R.byFormer.length || R.byRegion.length) h += `<p class="micro muted el-sugg__h">Boundaries changed in 2025. If you’re not sure, <a href="https://vote.nz" target="_blank" rel="noopener">look up your address at vote.nz</a>.</p>`;
@@ -105,12 +105,32 @@ function electorateBody(e) { const r = e.result_2023 || {}; const eday = isElect
       </section>
     </div>` }
 
+// party name for a candidate, linked to its party page whenever the guide has one (every party, not just some)
+function candPartyTag(c, cls = 'ptag ptag--s ptag--wrap') { const has = !!(S.data.parties[c.party] || (typeof guideParty === 'function' && guideParty(c.party)));
+  const name = esc(has ? (P(c.party).name || pname(c.party)) : (c.party_name || pname(c.party)));
+  return has && c.party !== 'independent' ? `<a class="${cls}" style="--pc:${pcolor(c.party)}" href="#/parties/${esc(c.party)}"><span class="sw"></span>${name}</a>`
+    : `<span class="${cls}" style="--pc:${pcolor(c.party)}"><span class="sw"></span>${name}</span>` }
+const firstSentence = t => { const m = String(t || '').trim().match(/^[\s\S]*?(?<!\b(?:Dr|Mr|Mrs|Ms|St|Mt|Prof|Hon|No))[.!?](?=\s+[A-ZĀĒĪŌŪ"“‘(]|$)/); const s = (m ? m[0] : String(t || '').trim()); return s.length > 220 ? s.slice(0, 217).replace(/\s+\S*$/, '') + '…' : s };
 function compareCands(e) { const cands = (e.candidates || []).slice().sort(ballotSort);
-  const rows = cands.map(c => { const p = findPerson(c.slug, c.name) || {};
-    return `<tr><td><b>${esc(c.name)}</b></td><td><span class="sw" style="--pc:${pcolor(c.party)}"></span> ${esc(S.data.parties[c.party] ? pname(c.party) : (c.party_name || pname(c.party)))}</td><td class="n">${c.list_rank_2026 ? '#' + c.list_rank_2026 : 'Electorate only'}</td><td>${c.sitting_mp ? 'Sitting MP' : (p.parliaments || []).length ? 'Former MP' : 'No'}</td><td style="white-space:normal;min-width:12rem">${esc(p.before || '–')}</td></tr>` }).join('');
-  openSheet({ title: `${e.name}: the candidates side by side`, depth: ['Electorate', 'Candidates', 'Compare'], at: 2, src: 'Ballot order (A–Z by surname). From policy.nz, party lists and the candidates’ own profiles.',
-    html: `<div class="table-wrap"><table class="table"><thead><tr><th>Candidate</th><th>Party</th><th class="n">List place</th><th>Been an MP?</th><th>Before politics</th></tr></thead><tbody>${rows}</tbody></table></div>
-      <p class="small muted">Tap a candidate on the page for their profile, in their own words where they’ve given them. To compare the parties’ policies, use <a href="#/choose/compare">Compare two parties</a>.</p>` }) }
+  const card = c => { const p = findPerson(c.slug, c.name);
+    const rank = c.list_rank_2026 || (p && p.list_rank_2026);
+    const status = [c.sitting_mp ? 'Sitting MP' : p && (p.parliaments || []).length ? 'Former MP' : '', rank ? 'Electorate and party list' : 'Electorate only'].filter(Boolean).join(' · ');
+    const why = p && p.why ? firstSentence(p.why) : '';
+    return `<li class="ccard">${candFace(c)}<div class="ccard__body">
+      <h3 class="ccard__name">${esc(c.name)}</h3>
+      <dl class="ccard__dl">
+        <dt>Party</dt><dd>${candPartyTag(c)}</dd>
+        <dt>List place</dt><dd>${rank ? `#${esc(rank)}` : '<span class="muted">Not on the list</span>'}</dd>
+        <dt>Standing as</dt><dd>${esc(status)}</dd>
+        <dt>Before politics</dt><dd>${p && p.before ? esc(p.before) : '<span class="muted">Not given</span>'}</dd>
+        <dt>In their words</dt><dd>${why ? `“${esc(why)}”` : '<span class="muted">No statement given to us</span>'}</dd>
+      </dl>
+      ${p ? `<button class="linkbtn small" type="button" data-cmp-person="${esc(p.folder)}">Full profile: ${esc(c.name)}</button>` : '<span class="micro muted">No profile yet. Their party’s website, policy.nz and vote.nz list the candidates.</span>'}
+    </div></li>` };
+  openSheet({ title: `${e.name}: the candidates side by side`, depth: ['Electorate', 'Candidates', 'Compare'], at: 2, src: 'Ballot order (A–Z by surname). From policy.nz, party lists and the candidates’ own profiles; “in their words” is the first sentence of their own statement.',
+    html: `<p class="small muted">${cands.length} candidates, in ballot order. The same five things for each.</p><ul class="ccards" role="list">${cands.map(card).join('')}</ul>
+      <p class="small muted">To compare the parties’ policies, use <a href="#/choose/compare">Compare two parties</a>.</p>` });
+  const box = $('#sheet-body .ccards'); if (box) box.addEventListener('click', ev => { const b = ev.target.closest('[data-cmp-person]'); if (!b) return; const p = (S.people || []).find(x => x.folder === b.dataset.cmpPerson); if (p) openPerson(p) }) }
 
 function pickerSheet(cur) { const E = elList(); const grp = t => E.filter(e => (e.type || 'general') === t);
   openSheet({ title: 'Choose your electorate', depth: null, html: `<div class="input-icon">${ic('search', 'i--s')}<input class="input" type="search" id="el-sq" placeholder="Type an electorate, town or region" aria-label="Filter electorates" autocomplete="off"></div><p class="small" id="el-sq-none" role="status" hidden></p>

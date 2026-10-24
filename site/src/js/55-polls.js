@@ -228,12 +228,14 @@ function trendSVG(polls, parties, W, H, dots, long, label) {
   for (const p of parties) { const pc = pcolor(p); const pp = sorted.filter(x => typeof x.parties[p] === 'number');
     let part = '';
     const res = els.map(e => { const r = (e.parties || []).find(x => x.party === p); return r && r.party_vote_pct != null ? [e.date || e.year + '-11-01', r.party_vote_pct, e.year] : null }).filter(Boolean);
-    if (long && res.length > 1) part += `<polyline class="elx" points="${res.map(([d, v]) => `${xs(d).toFixed(1)},${ys(v).toFixed(1)}`).join(' ')}"/>`;
+    // every party line is drawn over a 1px --ring underlay, so black and yellow lines read on either theme
+    if (long && res.length > 1) { const pts = res.map(([d, v]) => `${xs(d).toFixed(1)},${ys(v).toFixed(1)}`).join(' '); part += `<polyline class="elx elx--ring" points="${pts}"/><polyline class="elx" points="${pts}"/>` }
     part += res.map(([d, v, y]) => `<circle class="res" cx="${xs(d).toFixed(1)}" cy="${ys(v).toFixed(1)}" r="${W < 500 ? 3.5 : 4.5}" data-tip="${y} election result · ${esc(pname(p))} ${fmt(v, 2)}%"></circle>`).join('');
     if (dots) part += pp.map(x => `<circle class="dot" cx="${xs(x.date).toFixed(1)}" cy="${ys(x.parties[p]).toFixed(1)}" r="3" data-tip="${esc(x.pollster)} · ${esc(seatDate(x.date))} · ${esc(pname(p))} ${fmt(x.parties[p])}%${x.sample_size ? ' · sample ' + Number(x.sample_size).toLocaleString('en-NZ') : ''}"></circle>`).join('');
     if (pp.length > 3) { const avg = pp.map((x, i) => { const w = pp.slice(Math.max(0, i - 7), i + 1); return [x.date, w.reduce((a, y) => a + y.parties[p], 0) / w.length] });
       const xy = avg.map(([d, v]) => [xs(d), ys(v)]); let len = 0; for (let k = 1; k < xy.length; k++) len += Math.hypot(xy[k][0] - xy[k - 1][0], xy[k][1] - xy[k - 1][1]);
-      part += `<polyline class="avg" style="--len:${Math.ceil(len)}" points="${xy.map(([a, b]) => `${a.toFixed(1)},${b.toFixed(1)}`).join(' ')}"/>`;
+      const pts = xy.map(([a, b]) => `${a.toFixed(1)},${b.toFixed(1)}`).join(' ');
+      part += `<polyline class="avg avg--ring" style="--len:${Math.ceil(len)}" points="${pts}"/><polyline class="avg" style="--len:${Math.ceil(len)}" points="${pts}"/>`;
       const [ld, lv] = avg[avg.length - 1]; ends.push({ x: xs(ld) + 5, y: ys(lv) + 4, v: lv, p }) }
     g += `<g style="--pc:${pc}">${part}</g>` }
   // end labels, nudged apart so they don't overlap

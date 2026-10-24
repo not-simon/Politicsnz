@@ -1164,38 +1164,59 @@ main { view-transition-name: main }
 /* ----- policy swipe: first screen fits a phone; the reveal never moves the card ----- */
 .swpg { display: grid; gap: var(--s-6); min-width: 0 }
 .swpg__main { gap: var(--s-4) }
+/* the three buttons stay on screen (above the phone tab bar), even under a long card */
+.swpg__main .swipe-actions { position: sticky; z-index: 3; bottom: 0; margin-top: -12px; padding: 12px 0 6px; background: linear-gradient(to bottom, transparent, var(--bg) 12px) }
+@media (max-width: 1023px) { .swpg__main .swipe-actions { bottom: calc(var(--tabbar-h) + var(--gutter-b, 0px)) } }
+.swpg__main .scard__s { font-size: clamp(1.3125rem, 1.1rem + .8vw, 1.75rem) }
+@media (min-width: 1024px) {
+  .swpg__split { grid-template-rows: auto 1fr; row-gap: var(--s-5) }
+  .swpg__topics { grid-column: 2; grid-row: 1 }
+  .swpg__main { grid-column: 1; grid-row: 1 / span 2; align-self: start }
+  .swpg__aside { grid-column: 2; grid-row: 2; align-self: start }
+  .swpg__head .lede { margin-top: 0 }
+}
 .swpg__main .deck { padding-bottom: 30px }
 .swlast:empty { display: none }
-.swlast__in { display: grid; gap: 4px; padding: var(--s-3) var(--s-4); border-left: 4px solid var(--pc, var(--line-strong)); border-radius: 0 var(--r-s) var(--r-s) 0; background: var(--sunk) }
-.swlast__h { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: var(--t-small) }
-.swlast__h .sw { align-self: center }
+.swlast__in { display: grid; gap: 2px; min-height: 52px; align-content: center; padding: 6px 12px; border-left: 4px solid var(--pc, var(--line-strong)); border-radius: 0 var(--r-s) var(--r-s) 0; background: var(--sunk); animation: rise var(--dur-3) var(--ease-out) both }
+.swlast__h { display: flex; align-items: center; gap: 8px; font-size: var(--t-small); line-height: 1.3 }
+.swlast__h .sw { flex: none }
+.swlast .linkbtn, .swlast a { font-weight: 600; color: var(--text-2) }
 .scard__more { justify-self: start }
+/* long "What it would do" text is cut to a few lines, with a button to show all of it */
+.scard__how { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-clamp: 4; overflow: hidden }
+.scard--open .scard__how { display: block; -webkit-line-clamp: unset; line-clamp: none; overflow: visible }
 @media (min-width: 1024px) { .swlast { display: none } }
 @media (max-width: 1023px) { .swpg__reveal { display: none } }
 @media (max-width: 719px) {
-  .swpg { gap: var(--s-3) }
+  .swpg { gap: 10px }
   .swpg__head { gap: 0 }
   .swpg__head .eyebrow, .swpg__head .lede { display: none }
-  .swpg__head h1 { font-size: 26px; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
-  .swpg .split { gap: var(--s-6) }
-  .swpg__main { gap: var(--s-3) }
+  .swpg__head h1 { font-size: 24px; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+  .swpg__split { gap: 10px }
+  .swpg__aside { margin-top: var(--s-5) }
+  .swpg__main { gap: 10px }
+  .swpg__main .swipe-btn { gap: 4px }
   .swpg__main .deck { padding-bottom: 16px }
   .swpg__main .scard { gap: 10px; padding: var(--s-4) var(--s-4) var(--s-3) }
   .swpg__main .scard--behind { transform: translateY(8px) scale(.965) }
   .swpg__main .scard--behind2 { transform: translateY(16px) scale(.93) }
-  .swpg__main .scard__s { font-size: 21px; line-height: 1.18 }
+  .swpg__main .scard__s { line-height: 1.18 }
   .swpg__main .scard__body { font-size: 15px; gap: 4px }
-  .scard__how { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden }
-  .scard--open .scard__how { display: block; -webkit-line-clamp: unset; line-clamp: none; overflow: visible }
-  .swpg__main .scard .disclose > summary { padding-block: 8px }
-  .swpg__main .scard .src { font-size: 12px }
+  .scard__how { -webkit-line-clamp: 3; line-clamp: 3 }
+  .swpg__main .scard .disclose > summary { padding-block: 6px; font-size: 14.5px }
+  .swpg__main .scard .disclose > summary::after { width: 22px; height: 22px }
+  .swpg__main .scard .src { font-size: 12px; flex-wrap: nowrap; align-items: start }
+  .swpg__main .scard .src .i { margin-top: 1px }
   .swpg__main .scard__stamp { top: 14px; right: 14px }
   .swpg__main .swipe-btn i { width: 56px; height: 56px }
   .swpg__main .swipe-btn i .i { width: 26px; height: 26px }
   .swpg__main .swipe-btn--skip i { width: 44px; height: 44px }
   .swpg__main .swipe-btn--skip i .i { width: 20px; height: 20px }
 }
-@media (min-width: 720px) { .scard__more { display: none } }
+
+/* match: the four labels are outline chips of equal weight, so no band draws the eye (the words carry the meaning) */
+.bucket.bucket--strong, .bucket.bucket--moderate, .bucket.bucket--weak, .bucket.bucket--thin { background: transparent; color: var(--text-2); box-shadow: inset 0 0 0 1px var(--line-strong); outline: 0 }
+.bucket.bucket--thin { box-shadow: none; outline: 1px dashed var(--line-strong); outline-offset: -1px }
 
 /* ===== Vote › Māori electorates and Other languages (34-maori-lang.js). Tokens only; both themes come from the tokens ===== */
 /* a line in another language, with its English under it */
@@ -1325,6 +1346,29 @@ button.more { background: none; border: 0; border-bottom: 2px solid var(--link-u
 /* Withdrawn policies: still listed, greyed, with the "Withdrawn <date>" badge as the words */
 .pol--gone .pol__t { color: var(--text-3) }
 
+/* ---------- QA round: party page tabs, breadcrumb, sheet folds, early-action verdict ---------- */
+/* Party pages: one tab row only. On phones and tablets the section chip row gives way to a "Parties › Labour" breadcrumb;
+   the desktop rail (a vertical list, nothing like the tabs) stays. */
+@media (max-width: 1023px) { .section--party > .subnav { display: none } }
+.pcrumb { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font: 600 var(--t-small)/1.3 var(--font-body); color: var(--text-2) }
+.pcrumb a { color: var(--text); display: inline-flex; align-items: center; min-height: 24px }
+.pcrumb .i { color: var(--text-3) }
+.pcrumb [aria-current="page"] { color: var(--text-2) }
+/* The party's own tabs: an underlined strip fixed to the foot of the party header, on the party-colour rule. */
+.party-page > .ptabs--party { margin-top: calc(-1 * var(--s-6) + var(--s-2)); border-bottom: 3px solid var(--pc); align-items: center }
+.ptabs--party a { font-weight: 600 }
+.ptabs--party a[aria-current="page"] { font-weight: 800; color: var(--text) }
+.ptabs--party a[aria-current="page"]::after { background: var(--text); bottom: -3px; height: 4px; border-radius: 0 }
+.ptabs__who { display: none; flex: none; padding-right: 2px; font: 800 15px/1 var(--font-body); color: var(--text) }
+@media (max-width: 719px) { .ptabs__who { display: block } .ptabs--party a { padding-inline: 10px } .ptabs--party a[aria-current="page"]::after { left: 10px; right: 10px } }
+.seat-note { display: flex; gap: 6px; align-items: baseline; padding: var(--s-3) var(--s-4); border-left: 3px solid var(--line); background: var(--sunk); border-radius: var(--r-xs) }
+/* Folds inside a sheet: a chevron, so the sheet's own ✕ is the only cross on screen */
+.sheet .disclose > summary::after { width: 9px; height: 9px; margin: 0 7px 5px 7px; border-radius: 0; background: none; border-right: 2px solid var(--text-2); border-bottom: 2px solid var(--text-2); transform: rotate(45deg) }
+.sheet .disclose[open] > summary::after { transform: translateY(5px) rotate(-135deg) }
+/* 2026 campaign promise with something already done: recorded, never scored */
+.v-early { --v: var(--st-notdue); --v-soft: var(--st-notdue-soft) }
+.vmeter > i.v-early { background: repeating-linear-gradient(45deg, var(--v) 0 2px, color-mix(in srgb, var(--v) 40%, transparent) 2px 5px) }
+
 /* ==========================================================================
    Seats section (polls, map, parliament, coalition, calculator, results).
    Tokens only; both themes come from 00-tokens.css. Party colour only via --pc.
@@ -1356,10 +1400,10 @@ button.more { background: none; border: 0; border-bottom: 2px solid var(--link-u
 
 /* Trend and past-election charts */
 .chart .dot { cursor: pointer }
-.chart .res { fill: var(--pc); stroke: var(--surface); stroke-width: 2; cursor: pointer }
+.chart .res { fill: var(--pc); stroke: var(--ring); stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer }
 .chart .elx { fill: none; stroke: var(--pc); stroke-width: 1.5; stroke-dasharray: 4 3; opacity: .8 }
 .chart--past text { font-size: 16px }
-.chart .stk { fill: var(--pc); stroke: var(--surface); stroke-width: 1; cursor: pointer }
+.chart .stk { fill: var(--pc); stroke: var(--ring); stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer }
 .chart .majtick { stroke: var(--text); stroke-width: 2.5 }
 .chart .waste { fill: var(--viz-empty); cursor: pointer }
 .chart .turn { fill: none; stroke: var(--viz-ink); stroke-width: 3; stroke-linejoin: round }
@@ -1416,6 +1460,19 @@ button.rowlink { width: 100%; background: none; border: 0; border-bottom: 1px so
 @media (prefers-reduced-motion: reduce) { .cbar > i { transition: none } }
 /* sr-only text inside sideways-scrolling rows must be clipped by the row, not escape to widen the page */
 .table-wrap[tabindex], #pp-pollsters, #pp-parties { position: relative }
+/* Page transitions: while a view transition is capturing or running, hold the hemicycle's staggered pop-in (and the other
+   staggered reveals on the Seats pages). Chrome cannot capture the old page while dozens of staggered SVG animations are
+   still starting, and waits out its 4 s timeout with the old page frozen on screen; paused, the capture takes one frame
+   and the pop-in carries on once the new page is in. */
+:root:active-view-transition .hemi circle, :root:active-view-transition .iconarray i, :root:active-view-transition .bar > i { animation-play-state: paused }
+/* Party-colour rings: every --pc bar, band, line and marker carries a 1px var(--ring), as .sw does, so the near-black and
+   yellow party colours read on both the light and the dark ground. */
+.rrow .bar > i, .cbar > i:not(.cbar__rest), #mside .history > div i { box-shadow: inset 0 0 0 1px var(--ring), 0 0 0 1px var(--ring) }
+.rbar__band--ghost { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--pc) 55%, transparent), 0 0 0 1px var(--ring) }
+.hemi circle { stroke-width: 1; vector-effect: non-scaling-stroke }
+.chart .dot { stroke: var(--ring); stroke-width: 1; vector-effect: non-scaling-stroke }
+.chart .avg.avg--ring { stroke: var(--ring); stroke-width: 4.6 }
+.chart .elx.elx--ring { stroke: var(--ring); stroke-width: 3.5; opacity: 1 }
 
 /* ===== Today + Vote + Your electorate (tokens only; both themes come from the tokens) ===== */
 .notec p { margin: 0; color: var(--text-3) }
@@ -1524,6 +1581,32 @@ button.cand:hover .cand__name { text-decoration: underline; text-decoration-colo
   .el-page a { color: CanvasText }
 }
 @media (max-width: 719px) { .vhelp { grid-template-columns: minmax(0, 1fr); gap: 2px } .vhelp dd { margin-bottom: var(--s-2) } }
+
+/* electorate finder: search sits under the heading; on a phone it scrolls to the top when focused so results clear the keyboard and tab bar */
+.el-qwrap { scroll-margin-top: calc(var(--mast-h) + 12px) }
+.el-qwrap .input { font-size: 16px }
+.el-sugg__none { margin: 0 }
+.el-lede { margin: 0 }
+
+/* compare candidates sheet: one card per candidate, the same fields for each; long names wrap */
+.ptag--wrap { white-space: normal; align-items: flex-start; line-height: 1.3 }
+.ptag--wrap .sw { margin-top: .3em; flex: none }
+.ccards { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid var(--line) }
+.ccard { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: var(--s-3); padding: var(--s-4) 0; border-bottom: 1px solid var(--line) }
+.ccard__body { display: grid; gap: var(--s-2); min-width: 0 }
+.ccard__name { margin: 0; font: 800 var(--t-h4)/1.2 var(--font-display); overflow-wrap: anywhere }
+.ccard__dl { margin: 0; display: grid; grid-template-columns: minmax(6.5rem, auto) minmax(0, 1fr); gap: 4px var(--s-3); font-size: var(--t-small) }
+.ccard__dl dt { color: var(--text-3); font-weight: 600 }
+.ccard__dl dd { margin: 0; min-width: 0; overflow-wrap: anywhere }
+.ccard .linkbtn { justify-self: start; text-align: left }
+
+/* plan builder: a slot whose time has passed today isn't offered */
+.plan__hint { margin: 0 }
+/* a source line whose text is one span: the icon stays beside the first line instead of wrapping onto its own */
+.src--line { flex-wrap: nowrap; align-items: flex-start }
+.src--line > .i { flex: none; margin-top: 1px }
+.src--line > span { min-width: 0 }
+.cand__meta .ptag { white-space: normal; min-width: 0 }
 
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-today" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><circle cx="12" cy="15" r="1.7" fill="currentColor" stroke="none"/></symbol><symbol id="i-vote" viewBox="0 0 24 24"><path d="M4 13h16v7.5H4zM8 13V4h8v9"/><path d="m9.8 8.6 1.6 1.6 3-3.2"/></symbol><symbol id="i-choose" viewBox="0 0 24 24"><path d="M12 3.5v17M7.5 20.5h9M4.5 7.5h15"/><path d="M4.5 7.5 2 13.5a2.5 2.5 0 0 0 5 0zM19.5 7.5 17 13.5a2.5 2.5 0 0 0 5 0z"/></symbol><symbol id="i-parties" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><circle cx="5.5" cy="10.2" r="2.2"/><circle cx="18.5" cy="10.2" r="2.2"/><path d="M6.5 20c0-3.2 2.5-5.5 5.5-5.5s5.5 2.3 5.5 5.5M1.8 18.2c.2-2.3 1.6-3.8 3.7-3.8M22.2 18.2c-.2-2.3-1.6-3.8-3.7-3.8"/></symbol><symbol id="i-seats" viewBox="0 0 24 24"><path d="M2.5 19a9.5 9.5 0 0 1 19 0"/><path d="M7 19a5 5 0 0 1 10 0"/><circle cx="4.9" cy="12.5" r=".9" fill="currentColor"/><circle cx="12" cy="9.5" r=".9" fill="currentColor"/><circle cx="19.1" cy="12.5" r=".9" fill="currentColor"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol><symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol><symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></symbol><symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol><symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol><symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol><symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol><symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></symbol><symbol id="i-pause" viewBox="0 0 24 24"><path d="M6.5 4.5h4v15h-4zM13.5 4.5h4v15h-4z"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="m4.5 12.5 4.5 4.5 10.5-11"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol><symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol><symbol id="i-half" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6v.1"/></symbol><symbol id="i-share" viewBox="0 0 24 24"><path d="M12 3.5v12M7.5 8 12 3.5 16.5 8"/><path d="M5 12.5v6.5a1.5 1.5 0 0 0 1.5 1.5h11a1.5 1.5 0 0 0 1.5-1.5v-6.5"/></symbol><symbol id="i-print" viewBox="0 0 24 24"><path d="M7 9V3.5h10V9M7 17H4.5V10a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v7H17"/><path d="M7 14h10v6.5H7z"/></symbol><symbol id="i-caladd" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></symbol><symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 4z"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></symbol><symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3.5h8l4 4v13H6z"/><path d="M14 3.5v4h4M9 12h6M9 15.5h6"/></symbol><symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol><symbol id="i-poll" viewBox="0 0 24 24"><path d="M4 20h16M7 17v-6M12 17V6M17 17v-4"/></symbol><symbol id="i-history" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.4-5.7L4 8.5"/><path d="M4 4v4.5h4.5M12 8v4.5l3 1.5"/></symbol><symbol id="i-news" viewBox="0 0 24 24"><path d="M4 10v4h3l7 4.5V5.5L7 10z"/><path d="M17.5 9a4 4 0 0 1 0 6"/></symbol><symbol id="i-swap" viewBox="0 0 24 24"><path d="M7 7h12l-3-3M17 17H5l3 3"/></symbol><symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4.5 3.5 6.5v13L9 17.5l6 2 5.5-2v-13L15 6.5z"/><path d="M9 4.5v13M15 6.5v13"/></symbol><symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 16.8v.1"/></symbol><symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4.5h11l-2 4 2 4H5"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5 19 6v5.5c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></symbol><symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol><symbol id="i-cards" viewBox="0 0 24 24"><rect x="7" y="4" width="11" height="15" rx="2"/><path d="M4.5 7.5v10a2.5 2.5 0 0 0 2.5 2.5h8"/></symbol><symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/><circle cx="15" cy="9" r="1.8" fill="currentColor"/></symbol><symbol id="i-scale" viewBox="0 0 24 24"><path d="M3 12h18"/><circle cx="4" cy="12" r="1.6"/><circle cx="8" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="16" cy="12" r="2.8" fill="currentColor"/><circle cx="20" cy="12" r="1.6"/></symbol><symbol id="i-game" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="11" rx="3"/><path d="M8 11v3M6.5 12.5h3M15 11h.01M17.5 13.5h.01"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.8a3.5 3.5 0 0 1 0 6.4M18.5 14.4c1.8.8 3 2.8 3 5.6"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></symbol><symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 20h14"/></symbol></svg>
@@ -1766,6 +1849,11 @@ function openPerson(p) {
         ${row('Standing in 2026', standing)}${row('In Parliament', p.parliaments ? esc(p.parliaments.map(ordinal).join(', ')) + ' Parliament' + (p.parliaments.length > 1 ? 's' : '') : '')}</dl></div>
       <div class="person-blocks">${blocks.map(([t, n, body], i) => `<details class="disclose"${i === 0 ? ' open' : ''}><summary>${esc(t)}${n ? ` <span class="micro muted" style="margin-left:auto">${n}</span>` : ''}</summary><div class="disclose__body">${body}</div></details>`).join('')}</div>
       <p class="src"><span class="nm">${photo}</span>${wikiAttr}<a href="${CORRECTION_URL}" target="_blank" rel="noopener">${ic('flag', 'i--xs')} Correct or reply</a></p>` });
+  // The sheet autolinks names in its body; inside a person's own sheet, their own party and their own name stay plain text
+  // (the party is already linked once, in the Party row and the header tag). Runs after the sheet's autolink pass.
+  loadPeople().then(() => setTimeout(() => { const body = $('#sheet-body'); if (!body || $('#sheet-title').textContent !== p.name) return;
+    body.querySelectorAll('.linkbtn').forEach(b => { if (b.dataset.go === 'party-' + p.party || (p.folder && b.dataset.person === p.folder)) b.replaceWith(document.createTextNode(b.textContent)) });
+    body.normalize() }, 0));
 }
 // Bring the pressed chip of a horizontally scrolling chip row into view (without moving the page).
 function ptScrollChips(row) { if (!row) return; const c = row.querySelector('[aria-pressed="true"], [aria-current="page"]'); if (c && row.scrollWidth > row.clientWidth) row.scrollLeft = Math.max(0, c.offsetLeft - row.offsetLeft - 16) }
@@ -1841,22 +1929,29 @@ const extA = (href, html, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="
 const extIc = () => ic('ext', 'i--xs ext');
 const lsJSON = (k, fn) => { if (typeof fn === 'function') { try { return fn() || {} } catch {} } try { return JSON.parse(store.get(k) || '{}') || {} } catch { return {} } };
 
+// The one election-day countdown wording, from daysLeft() (whole NZ days to Saturday 7 November). '' once it has passed.
+function edayCountdown(dl = daysLeft()) { return dl > 1 ? `${dl} days to election day` : dl === 1 ? 'Election day is tomorrow' : dl === 0 ? 'Today is election day' : '' }
+// The Commission's own enrol-or-check page (from data/guide/howtovote.json: contacts.enrol_or_check_online / checklist step 2)
+function enrolCheckURL() { const H = G().howtovote || {}; const fromC = String((H.contacts || {}).enrol_or_check_online || '').match(/https:\/\/\S+/);
+  const step = (H.checklist || []).find(c => /enrolled/i.test(c.step || '') && c.url);
+  return (fromC && fromC[0]) || (step && step.url) || 'https://vote.nz/enrolling/enrol-or-update/enrol-or-update-online' }
+
 // Phase hero copy (IA.md §2.2). Returns { n, eyebrow, h1, p, ctas, step }
 function heroCopy(ph) {
   const t = nzToday(); const dl = daysLeft(); const toE = daysTo('2026-10-25'); const toFinal = daysTo('2026-11-27');
-  const eyebrow = nzDateLong() + (dl > 0 ? ` · ${dl} day${dl === 1 ? '' : 's'} to election day` : '');
-  const vnz = (l, primary = true) => `<a class="btn ${primary ? 'btn--primary' : 'btn--on-band'} btn--l" href="https://vote.nz" target="_blank" rel="noopener">${l} ${ic('ext', 'i--s ext')}</a>`;
+  const cd = edayCountdown(dl); const eyebrow = nzDateLong() + (cd ? ` · ${cd}` : '');
+  const vnz = (l, primary = true) => `<a class="btn ${primary ? 'btn--primary' : 'btn--on-band'} btn--l" href="${esc(enrolCheckURL())}" target="_blank" rel="noopener">${l} ${ic('ext', 'i--s ext')}</a>`;
   const mapA = (primary = true) => `<a class="btn ${primary ? 'btn--primary' : 'btn--on-band'} btn--l" href="https://map.vote.nz" target="_blank" rel="noopener">Find a voting place ${ic('ext', 'i--s ext')}</a>`;
   const inA = (href, l, primary = false) => `<a class="btn ${primary ? 'btn--primary' : 'btn--on-band'} btn--l" href="${href}">${l}</a>`;
   if (ph === 'enrol') return { n: toE > 0 ? toE : null, eyebrow, step: 0,
     h1: toE > 1 ? `days left<br>to enrol.` : toE === 1 ? `day left<br>to enrol.` : `Last day<br>to enrol.`,
-    p: `Enrolment closes at midnight on Sunday 25 October. This year you can’t enrol at a voting place, so if you’ve moved or never enrolled, do it now. It takes about five minutes.`,
+    p: `Enrolment closes at midnight on Sunday 25 October. This year you can’t enrol at a voting place, so if you’ve moved or never enrolled, enrol or update now. It takes about five minutes.`,
     ctas: vnz('Check I’m enrolled') + inA('#/vote', 'First vote? Start here') };
-  if (ph === 'advance') return { n: dl > 0 ? dl : null, eyebrow: nzDateLong() + ' · voting is open', step: 1,
-    h1: `${dl > 0 ? `day${dl === 1 ? '' : 's'} to go.<br>` : ''}Vote early, anywhere.`,
+  if (ph === 'advance') return { n: dl > 1 ? dl : null, eyebrow: nzDateLong() + ' · voting is open', step: 1,
+    h1: `${dl > 1 ? 'days to election day.<br>' : dl === 1 ? 'Election day is tomorrow.<br>' : ''}Vote early, anywhere.`,
     p: `Advance voting is open at any voting place in the country until Friday 6 November. No ID is needed, and you can vote outside your own electorate. Hours vary, so check the official map first.`,
     ctas: mapA() + inA('#/vote/plan', 'Make a plan') };
-  if (ph === 'electionday') return { n: null, eyebrow: nzDateLong() + ' · election day', step: 2,
+  if (ph === 'electionday') return { n: null, eyebrow: nzDateLong() + ' · ' + (edayCountdown(dl) || 'election day'), step: 2,
     h1: `Today’s the day.`,
     p: `Voting places are open 9am to 7pm. You can vote at any voting place in New Zealand, and you don’t need ID or your EasyVote card.`,
     ctas: mapA() + inA('#/vote', 'What to expect inside') };
@@ -1888,6 +1983,12 @@ function twoVotesHTML() { return `<div class="twovotes">
     <div><span class="twovotes__k">${TICK_SVG(true)} Electorate vote</span><span class="twovotes__big">Picks your local MP.</span><p>The candidate with the most votes wins. You can give your two ticks to different parties, or use just one.</p></div>
   </div>` }
 
+// On election day (before 7pm) the two tool rows stay in place, locked, and open the explanation instead of a locked page
+function lockedRow(title) { return `<button class="rowlink" type="button" data-eday-lock aria-haspopup="dialog"><span class="rowlink__icon">${ic('lock')}</span><span><span class="rowlink__title">${title}</span><span class="rowlink__sub" style="display:block">Hidden until 7pm</span></span>${ic('chev')}</button>` }
+function edayLockSheet() { openSheet({ title: 'Hidden until 7pm', depth: ['Today', 'Election day'], at: 1,
+  html: `<div class="locked">${ic('lock')}<div><p>${esc(ELECTION_DAY_BLOCK)}</p></div></div>
+    <p class="small soft">Everything else stays available: parties, policies, candidates, your electorate and how to vote. The tools and the polls come back when voting closes at 7pm.</p>
+    <div class="rows">${rowlink('#/vote', 'vote', 'Can I vote, and how?', 'Five quick checks. No ID needed.')}${rowlink('#/vote/electorate', 'pin', 'Who is standing where I live?', 'Your electorate and its candidates.')}</div>` }) }
 function rowlink(href, icon, title, sub) { return `<a class="rowlink" href="${href}"><span class="rowlink__icon">${ic(icon)}</span><span><span class="rowlink__title">${title}</span><span class="rowlink__sub" style="display:block">${sub}</span></span>${ic('chev')}</a>` }
 
 /* ----- the Today feed ----- */
@@ -2011,8 +2112,8 @@ V.home = async () => {
         <div class="rows" style="border-top:0">
           ${rowlink('#/vote', 'vote', 'Can I vote, and how?', 'Five quick checks. No ID needed.')}
           ${rowlink('#/vote/electorate', 'pin', 'Who is standing where I live?', 'Your electorate, candidates and how close it was.')}
-          ${rowlink('#/choose', 'choose', 'Which parties agree with me?', 'Swipe, quiz or compass. Party names hidden.')}
-          ${rowlink('#/seats/polls', 'seats', 'What might happen?', 'Polls, seat ranges and every map since 2011.')}
+          ${isElectionDay() ? lockedRow('Which parties agree with me?') + lockedRow('What might happen?')
+            : rowlink('#/choose', 'choose', 'Which parties agree with me?', 'Swipe, quiz or compass. Party names hidden.') + rowlink('#/seats/polls', 'seats', 'What might happen?', 'Polls, seat ranges and every map since 2011.')}
         </div>
       </section>
     </div>
@@ -2029,6 +2130,7 @@ V.home = async () => {
   const pt = $('#potd'); if (pt) pt.addEventListener('click', e => { const b = e.target.closest('[data-potd]'); if (!b) return; const c = potdCard(); if (!c) return;
     store.set('potd', JSON.stringify({ date: nzToday().iso, id: c.id, v: b.dataset.potd }));
     pt.outerHTML = potdHTML(); const n = $('#potd'); if (n) { const f = n.querySelector('.reveal a, .reveal button'); if (f) f.focus({ preventScroll: true }) } });
+  $('#main').querySelectorAll('[data-eday-lock]').forEach(b => b.onclick = edayLockSheet);
   const tf = $('.tfeed'); if (tf) tf.addEventListener('click', e => { const b = e.target.closest('[data-tf]'); if (!b) return;
     ({ polls: pollWatchSheet, otd: otdSheet, parties: fromPartiesSheet })[b.dataset.tf]() });
 };
@@ -2108,7 +2210,7 @@ function voteReady(root) {
     results: `<b>Voting has closed.</b> Election-night results are preliminary; special votes are counted later.`,
     after: `<b>The 2026 election has been held.</b> Special votes are being counted; the official result is due Friday 27 November.` }[ph];
   const actions = (c, i) => { const a = [];
-    if (c.url) a.push(vExt(c.url, /vote\.nz/.test(c.url) && !/map\.vote/.test(c.url) ? 'At vote.nz' : /map\.vote/.test(c.url) ? 'Find a voting place' : 'Official source', `btn btn--s${i === 1 && ph === 'enrol' ? ' btn--primary' : ''}`));
+    if (c.url) a.push(vExt(c.url, i === 1 ? (ph === 'enrol' ? 'Check or update at vote.nz' : 'Check at vote.nz') : /vote\.nz/.test(c.url) && !/map\.vote/.test(c.url) ? 'At vote.nz' : /map\.vote/.test(c.url) ? 'Find a voting place' : 'Official source', `btn btn--s${i === 1 && ph === 'enrol' ? ' btn--primary' : ''}`));
     if (i === 2) a.push(`<a class="btn btn--s btn--quiet" href="#/vote/plan">Make a plan</a>`);
     if (i === 4) a.push(`<a class="more small" href="#/vote/mmp">See the ballot paper ${ic('chev', 'i--xs')}</a>`);
     return a.length ? `<div class="check__a">${a.join('')}</div>` : '' };
@@ -2181,13 +2283,17 @@ function voteDates(root) {
 
 /* ----- Make a plan: when, where, with whom → .ics + message ----- */
 const PLAN_SLOTS = [['morning', 'Morning', 9, 11], ['midday', 'Midday', 11, 13], ['afternoon', 'Afternoon', 13, 16], ['late', 'After 4', 16, 18]];
+// "9–11am", "11am–1pm", "1–4pm": the am/pm is written once when both ends share it, on both ends when they don't
+const planHr = h => (h > 12 ? h - 12 : h) + (h >= 12 ? 'pm' : 'am');
+const planRange = (a, b) => (a >= 12) === (b >= 12) ? `${a > 12 ? a - 12 : a}–${planHr(b)}` : `${planHr(a)}–${planHr(b)}`;
+// slots still to come on a given day (today drops the ones whose time has passed; election day stops at 7pm)
+function planSlots(iso) { const t = nzToday(); if (iso !== t.iso) return PLAN_SLOTS; const h = nzNow().getHours(); return PLAN_SLOTS.filter(s => s[3] > h) }
 function planDays() { const t = nzToday(); const out = [];
-  for (let d = 26; d <= 38; d++) { const dt = new Date(Date.UTC(2026, 9, d)); const iso = dt.toISOString().slice(0, 10); if (iso < t.iso) continue;
+  for (let d = 26; d <= 38; d++) { const dt = new Date(Date.UTC(2026, 9, d)); const iso = dt.toISOString().slice(0, 10); if (iso < t.iso || !planSlots(iso).length) continue;
     const eday = iso === '2026-11-07'; out.push({ iso, eday, label: dt.toLocaleDateString('en-NZ', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' }) }) }
   return out }
 function planText(p, days) { const d = days.find(x => x.iso === p.day); const s = PLAN_SLOTS.find(x => x[0] === p.slot); if (!d || !s) return '';
-  const hr = h => (h > 12 ? h - 12 : h) + (h >= 12 ? 'pm' : 'am');
-  return `My voting plan: ${d.eday ? 'election day, ' : ''}${d.label}, ${s[1].toLowerCase()} (${hr(s[2])}–${hr(s[3])})${p.where ? `, at ${p.where}` : ''}${p.withWho ? `, with ${p.withWho}` : ''}. Find a voting place and its hours: https://map.vote.nz` }
+  return `My voting plan: ${d.eday ? 'election day, ' : ''}${d.label}, ${s[1].toLowerCase()} (${planRange(s[2], s[3])})${p.where ? `, at ${p.where}` : ''}${p.withWho ? `, with ${p.withWho}` : ''}. Find a voting place and its hours: https://map.vote.nz` }
 function planICS(p, days) { const d = days.find(x => x.iso === p.day); const s = PLAN_SLOTS.find(x => x[0] === p.slot); if (!d || !s) return null;
   const [y, m, dd] = d.iso.split('-').map(Number); const stamp = h => new Date(Date.UTC(y, m - 1, dd, h - 13)).toISOString().replace(/[-:]/g, '').replace(/\.\d+Z$/, 'Z');   // NZDT is UTC+13 for the whole voting period
   const escI = v => String(v).replace(/[\\;,]/g, c => '\\' + c).replace(/\n/g, '\\n');
@@ -2199,8 +2305,9 @@ function planICS(p, days) { const d = days.find(x => x.iso === p.day); const s =
 function votePlan(root) {
   const ph = electionPhase(); const days = planDays();
   let p; try { p = JSON.parse(store.get('voteplan') || '{}') || {} } catch { p = {} }
-  if (!days.some(d => d.iso === p.day)) p.day = (days.find(d => d.eday) || days[0] || {}).iso;
-  if (!PLAN_SLOTS.some(s => s[0] === p.slot)) p.slot = 'morning';
+  // nothing is pre-selected: a saved choice is kept only while that day (and time) is still to come
+  if (!days.some(d => d.iso === p.day)) delete p.day;
+  if (!p.day || !planSlots(p.day).some(s => s[0] === p.slot)) delete p.slot;
   const closed = ph === 'results' || ph === 'after' || !days.length;
   const save = () => store.set('voteplan', JSON.stringify(p));
   const draw = () => { const txt = planText(p, days);
@@ -2210,13 +2317,13 @@ function votePlan(root) {
         <div class="plan">
           <div class="row row--between"><b>My voting plan</b><span class="micro muted">Saved on this device</span></div>
           <div class="plan__q" style="margin-top:14px"><span id="pq-day">When</span><div class="chips chips--scroll" role="group" aria-labelledby="pq-day">${days.map(d => `<button class="chip" type="button" data-day="${d.iso}" aria-pressed="${d.iso === p.day}">${esc(d.label)}${d.eday ? ' · election day' : ''}</button>`).join('')}</div>
-            <div class="chips" role="group" aria-label="Time of day">${PLAN_SLOTS.map(([k, l, a, b]) => `<button class="chip" type="button" data-slot="${k}" aria-pressed="${k === p.slot}">${l} <span class="micro muted">${a > 12 ? a - 12 : a}–${b > 12 ? b - 12 : b}${b >= 12 ? 'pm' : 'am'}</span></button>`).join('')}</div>
+            <div class="chips" role="group" aria-label="Time of day">${planSlots(p.day).map(([k, l, a, b]) => `<button class="chip" type="button" data-slot="${k}" aria-pressed="${k === p.slot}">${l} <span class="micro muted">· ${planRange(a, b)}</span></button>`).join('')}</div>
             <p class="micro muted">${(days.find(d => d.iso === p.day) || {}).eday ? 'Election day: every voting place is open 9am–7pm.' : 'Advance voting hours differ from place to place; check yours on map.vote.nz.'}</p></div>
           <div class="plan__q"><label for="pq-where"><span class="plan__lbl">Where</span></label><input class="input" id="pq-where" type="text" maxlength="80" autocomplete="off" placeholder="e.g. the library on the main street" value="${esc(p.where || '')}">
             <a class="more small" href="https://map.vote.nz" target="_blank" rel="noopener">Find voting places near you on map.vote.nz ${ic('ext', 'i--xs ext')}</a></div>
           <div class="plan__q"><label for="pq-who"><span class="plan__lbl">Who with</span></label><input class="input" id="pq-who" type="text" maxlength="60" autocomplete="off" placeholder="On my own, or a name" value="${esc(p.withWho || '')}"></div>
-          <div class="row"><button class="btn btn--primary" type="button" id="pl-ics">${ic('caladd', 'i--s')} Add to calendar</button><a class="btn" id="pl-sms" href="sms:?&body=${encodeURIComponent(txt)}">${ic('msg', 'i--s')} Text it</a><a class="btn btn--quiet" id="pl-wa" href="https://wa.me/?text=${encodeURIComponent(txt)}" target="_blank" rel="noopener">WhatsApp</a><button class="btn btn--quiet" type="button" id="pl-copy">${ic('share', 'i--s')} Copy</button></div>
-          <p class="small soft" id="pl-text" aria-live="polite">${esc(txt)}</p>
+          ${txt ? `<div class="row"><button class="btn btn--primary" type="button" id="pl-ics">${ic('caladd', 'i--s')} Add to calendar</button><a class="btn" id="pl-sms" href="sms:?&body=${encodeURIComponent(txt)}">${ic('msg', 'i--s')} Text it</a><a class="btn btn--quiet" id="pl-wa" href="https://wa.me/?text=${encodeURIComponent(txt)}" target="_blank" rel="noopener">WhatsApp</a><button class="btn btn--quiet" type="button" id="pl-copy">${ic('share', 'i--s')} Copy</button></div>` : ''}
+          <p class="small soft${txt ? '' : ' plan__hint'}" id="pl-text" aria-live="polite">${txt ? esc(txt) : `Pick ${p.day ? 'a time' : 'a day and a time'} above, and your plan appears here, ready for your calendar or a message.`}</p>
         </div>
         <div class="stack"><p class="lede">Three choices: a day, a time and a place. Going with someone helps too.</p>
           <p class="small muted">You can vote at any voting place in New Zealand. No ID needed; your EasyVote card makes it quicker if you have it.</p></div>
@@ -2224,11 +2331,12 @@ function votePlan(root) {
       ${voteFoot()}`;
     if (closed) return;
     const on = root.querySelector('[data-day][aria-pressed="true"]'); if (on) { const row = on.parentElement; row.scrollLeft = Math.max(0, on.offsetLeft - row.offsetLeft - 8) }
-    root.querySelectorAll('[data-day]').forEach(b => b.onclick = () => { p.day = b.dataset.day; save(); draw(); const n = root.querySelector(`[data-day="${p.day}"]`); if (n) n.focus({ preventScroll: true }) });
+    root.querySelectorAll('[data-day]').forEach(b => b.onclick = () => { p.day = b.dataset.day; if (!planSlots(p.day).some(s => s[0] === p.slot)) delete p.slot; save(); draw(); const n = root.querySelector(`[data-day="${p.day}"]`); if (n) n.focus({ preventScroll: true }) });
     root.querySelectorAll('[data-slot]').forEach(b => b.onclick = () => { p.slot = b.dataset.slot; save(); draw(); const n = root.querySelector(`[data-slot="${p.slot}"]`); if (n) n.focus({ preventScroll: true }) });
-    const upd = () => { const t = planText(p, days); $('#pl-text').textContent = t; $('#pl-sms').href = 'sms:?&body=' + encodeURIComponent(t); $('#pl-wa').href = 'https://wa.me/?text=' + encodeURIComponent(t) };
+    const upd = () => { const t = planText(p, days); if (!t) return; $('#pl-text').textContent = t; $('#pl-sms').href = 'sms:?&body=' + encodeURIComponent(t); $('#pl-wa').href = 'https://wa.me/?text=' + encodeURIComponent(t) };
     $('#pq-where').oninput = e => { p.where = e.target.value.trim(); save(); upd() };
     $('#pq-who').oninput = e => { p.withWho = e.target.value.trim(); save(); upd() };
+    if (!txt) return;
     $('#pl-ics').onclick = () => { const ics = planICS(p, days); if (!ics) return; const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar;charset=utf-8' }));
       const a = document.createElement('a'); a.href = url; a.download = 'voting-plan.ics'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 4000) };
     $('#pl-copy').onclick = async () => { const t = planText(p, days); let ok = false; try { await navigator.clipboard.writeText(t); ok = true } catch {}
@@ -2361,6 +2469,35 @@ function elList() { return (S.data.electorates || []).slice().sort((a, b) => a.n
 function featToElectorate(f) { if (!f) return null; const E = S.data.electorates || []; const s = f.properties && (f.properties.slug || elSlug(f.properties.name));
   return E.find(x => elSlug(x.slug) === s || elSlug(x.name) === s) || null }
 
+/* Typed electorate search. Folds macrons both ways (Otaki = Ōtaki) and common alternative spellings (Mt/Mount, Pt/Port,
+   St/Saint, Wanganui/Whanganui), then matches electorate names, the seats they replaced in 2025, and regions. It never
+   guesses from description text, so a suburb that isn't an electorate name gets an honest "no electorate called …". */
+const EL_ALIAS = { mt: 'mount', pt: 'port', st: 'saint', wanganui: 'whanganui', chch: 'christchurch', palmy: 'palmerston north', welly: 'wellington', akl: 'auckland' };
+const elFold = v => String(v || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[’'`]/g, '').replace(/[^a-z0-9]+/g, ' ').trim()
+  .split(' ').filter(Boolean).map(w => EL_ALIAS[w] || w).join(' ');
+const elRegions = e => String(e.region || '').replace(/\(.*?\)/g, '').split('/').map(x => x.trim()).filter(Boolean);
+// score: 4 exact, 3 starts with, 2 a word starts with, 1 contains (3+ letters); 0 no match
+function elScore(hay, q) { const h = elFold(hay); if (!h || !q) return 0; if (h === q) return 4; if (h.startsWith(q)) return 3;
+  if ((' ' + h).includes(' ' + q)) return 2; return q.length >= 3 && h.includes(q) ? 1 : 0 }
+function elSearch(raw, E = elList()) { const q = elFold(raw); if (q.length < 2) return null;
+  const by = (fn) => E.map(e => ({ e, s: fn(e) })).filter(x => x.s > 0).sort((a, b) => b.s - a.s || a.e.name.localeCompare(b.e.name, 'en-NZ')).map(x => x.e);
+  const byName = by(e => elScore(e.name, q));
+  const formerOf = e => (e.predecessor_seats || []).filter(n => elFold(n) !== elFold(e.name));
+  const byFormer = by(e => byName.includes(e) ? 0 : Math.max(0, ...formerOf(e).map(n => elScore(n, q))));
+  const formerHit = e => formerOf(e).find(n => elScore(n, q) > 0);
+  const byRegion = by(e => byName.includes(e) || byFormer.includes(e) ? 0 : Math.max(0, ...elRegions(e).map(r => elScore(r, q))));
+  const regionHit = e => elRegions(e).find(r => elScore(r, q) > 0);
+  return { q, byName, byFormer, formerHit, byRegion, regionHit } }
+function elSuggHTML(raw) { const R = elSearch(raw); if (!R) return '';
+  const typ = e => `${e.type === 'maori' ? 'Māori' : 'General'} electorate`; const nc = e => `${(e.candidates || []).length} candidates`;
+  const row = (e, why) => `<a class="rowlink rowlink--plain" href="#/vote/electorate/${esc(e.slug)}"><span><span class="rowlink__title">${esc(e.name)}</span><span class="rowlink__sub" style="display:block">${why}</span></span>${ic('chev')}</a>`;
+  let h = R.byName.slice(0, 8).map(e => row(e, `${typ(e)} · ${nc(e)}`)).join('');
+  if (R.byFormer.length) h += `<p class="micro muted el-sugg__h">${R.byName.length ? 'Former electorates' : `${esc(R.formerHit(R.byFormer[0]))} is no longer an electorate`}: since the 2025 boundary changes, the area is in</p>` + R.byFormer.map(e => row(e, `Includes part of the former ${esc(R.formerHit(e))} electorate · ${nc(e)}`)).join('');
+  if (R.byRegion.length) { const rg = R.regionHit(R.byRegion[0]);
+    h += `<p class="micro muted el-sugg__h">${R.byRegion.length} electorate${R.byRegion.length === 1 ? '' : 's'} in ${esc(rg)}, A–Z. Boundaries can split a town, so check your address at vote.nz.</p>` + R.byRegion.slice().sort((a, b) => a.name.localeCompare(b.name, 'en-NZ')).map(e => row(e, `${typ(e)} · ${esc(String(e.region || '').replace(/\s*\(Māori electorate\)\s*/i, ''))}`)).join('') }
+  if (R.byFormer.length || R.byRegion.length) h += `<p class="micro muted el-sugg__h">Boundaries changed in 2025. If you’re not sure, <a href="https://vote.nz" target="_blank" rel="noopener">look up your address at vote.nz</a>.</p>`;
+  return h || `<p class="small el-sugg__h el-sugg__none">No electorate called “${esc(String(raw).trim())}”. Try your town or region, or <button class="linkbtn" type="button" data-el-useloc>use your location</button>. You can also <a href="https://vote.nz" target="_blank" rel="noopener">look up your address at vote.nz</a>.</p>` }
+
 function candFace(c) { const img = faceSrc(c); const pc = pcolor(c.party);
   return img ? `<img class="face" style="--pc:${pc}" loading="lazy" src="${img}" alt="" width="56" height="56">` : `<span class="face face--none" style="--pc:${pc}" aria-hidden="true">${esc(elInitials(c.name))}</span>` }
 function candRow(c) { const p = findPerson(c.slug, c.name) || {}; const mp = !!c.sitting_mp;
@@ -2427,17 +2564,40 @@ function electorateBody(e) { const r = e.result_2023 || {}; const eday = isElect
       </section>
     </div>` }
 
+// party name for a candidate, linked to its party page whenever the guide has one (every party, not just some)
+function candPartyTag(c, cls = 'ptag ptag--s ptag--wrap') { const has = !!(S.data.parties[c.party] || (typeof guideParty === 'function' && guideParty(c.party)));
+  const name = esc(has ? (P(c.party).name || pname(c.party)) : (c.party_name || pname(c.party)));
+  return has && c.party !== 'independent' ? `<a class="${cls}" style="--pc:${pcolor(c.party)}" href="#/parties/${esc(c.party)}"><span class="sw"></span>${name}</a>`
+    : `<span class="${cls}" style="--pc:${pcolor(c.party)}"><span class="sw"></span>${name}</span>` }
+const firstSentence = t => { const m = String(t || '').trim().match(/^[\s\S]*?(?<!\b(?:Dr|Mr|Mrs|Ms|St|Mt|Prof|Hon|No))[.!?](?=\s+[A-ZĀĒĪŌŪ"“‘(]|$)/); const s = (m ? m[0] : String(t || '').trim()); return s.length > 220 ? s.slice(0, 217).replace(/\s+\S*$/, '') + '…' : s };
 function compareCands(e) { const cands = (e.candidates || []).slice().sort(ballotSort);
-  const rows = cands.map(c => { const p = findPerson(c.slug, c.name) || {};
-    return `<tr><td><b>${esc(c.name)}</b></td><td><span class="sw" style="--pc:${pcolor(c.party)}"></span> ${esc(S.data.parties[c.party] ? pname(c.party) : (c.party_name || pname(c.party)))}</td><td class="n">${c.list_rank_2026 ? '#' + c.list_rank_2026 : 'Electorate only'}</td><td>${c.sitting_mp ? 'Sitting MP' : (p.parliaments || []).length ? 'Former MP' : 'No'}</td><td style="white-space:normal;min-width:12rem">${esc(p.before || '–')}</td></tr>` }).join('');
-  openSheet({ title: `${e.name}: the candidates side by side`, depth: ['Electorate', 'Candidates', 'Compare'], at: 2, src: 'Ballot order (A–Z by surname). From policy.nz, party lists and the candidates’ own profiles.',
-    html: `<div class="table-wrap"><table class="table"><thead><tr><th>Candidate</th><th>Party</th><th class="n">List place</th><th>Been an MP?</th><th>Before politics</th></tr></thead><tbody>${rows}</tbody></table></div>
-      <p class="small muted">Tap a candidate on the page for their profile, in their own words where they’ve given them. To compare the parties’ policies, use <a href="#/choose/compare">Compare two parties</a>.</p>` }) }
+  const card = c => { const p = findPerson(c.slug, c.name);
+    const rank = c.list_rank_2026 || (p && p.list_rank_2026);
+    const status = [c.sitting_mp ? 'Sitting MP' : p && (p.parliaments || []).length ? 'Former MP' : '', rank ? 'Electorate and party list' : 'Electorate only'].filter(Boolean).join(' · ');
+    const why = p && p.why ? firstSentence(p.why) : '';
+    return `<li class="ccard">${candFace(c)}<div class="ccard__body">
+      <h3 class="ccard__name">${esc(c.name)}</h3>
+      <dl class="ccard__dl">
+        <dt>Party</dt><dd>${candPartyTag(c)}</dd>
+        <dt>List place</dt><dd>${rank ? `#${esc(rank)}` : '<span class="muted">Not on the list</span>'}</dd>
+        <dt>Standing as</dt><dd>${esc(status)}</dd>
+        <dt>Before politics</dt><dd>${p && p.before ? esc(p.before) : '<span class="muted">Not given</span>'}</dd>
+        <dt>In their words</dt><dd>${why ? `“${esc(why)}”` : '<span class="muted">No statement given to us</span>'}</dd>
+      </dl>
+      ${p ? `<button class="linkbtn small" type="button" data-cmp-person="${esc(p.folder)}">Full profile: ${esc(c.name)}</button>` : '<span class="micro muted">No profile yet. Their party’s website, policy.nz and vote.nz list the candidates.</span>'}
+    </div></li>` };
+  openSheet({ title: `${e.name}: the candidates side by side`, depth: ['Electorate', 'Candidates', 'Compare'], at: 2, src: 'Ballot order (A–Z by surname). From policy.nz, party lists and the candidates’ own profiles; “in their words” is the first sentence of their own statement.',
+    html: `<p class="small muted">${cands.length} candidates, in ballot order. The same five things for each.</p><ul class="ccards" role="list">${cands.map(card).join('')}</ul>
+      <p class="small muted">To compare the parties’ policies, use <a href="#/choose/compare">Compare two parties</a>.</p>` });
+  const box = $('#sheet-body .ccards'); if (box) box.addEventListener('click', ev => { const b = ev.target.closest('[data-cmp-person]'); if (!b) return; const p = (S.people || []).find(x => x.folder === b.dataset.cmpPerson); if (p) openPerson(p) }) }
 
 function pickerSheet(cur) { const E = elList(); const grp = t => E.filter(e => (e.type || 'general') === t);
-  openSheet({ title: 'Choose your electorate', depth: null, html: `<div class="input-icon">${ic('search', 'i--s')}<input class="input" type="search" id="el-sq" placeholder="Type an electorate, town or suburb" aria-label="Filter electorates" autocomplete="off"></div>
-    ${['general', 'maori'].map(t => `<section class="stack stack--s" data-grp><h3 class="h4">${t === 'maori' ? 'Māori electorates' : 'General electorates'} <span class="num muted">${grp(t).length}</span></h3><div class="rows">${grp(t).map(e => `<a class="rowlink rowlink--plain" href="#/vote/electorate/${esc(e.slug)}" data-el-q="${esc((e.name + ' ' + (e.region || '')).toLowerCase())}" data-el-d="${esc((e.description || '').toLowerCase())}"${e.slug === cur ? ' aria-current="page"' : ''}><span><span class="rowlink__title">${esc(e.name)}</span><span class="rowlink__sub" style="display:block">${esc(e.region || '')}${e.region ? ' · ' : ''}${(e.candidates || []).length} candidates</span></span>${ic('chev')}</a>`).join('')}</div></section>`).join('')}` });
-  const q = $('#el-sq'); if (q) q.oninput = () => { const v = q.value.trim().toLowerCase(); document.querySelectorAll('#sheet-body [data-el-q]').forEach(a => { a.hidden = !!v && !a.dataset.elQ.includes(v) && !(v.length >= 4 && a.dataset.elD.includes(v)) }) } }
+  openSheet({ title: 'Choose your electorate', depth: null, html: `<div class="input-icon">${ic('search', 'i--s')}<input class="input" type="search" id="el-sq" placeholder="Type an electorate, town or region" aria-label="Filter electorates" autocomplete="off"></div><p class="small" id="el-sq-none" role="status" hidden></p>
+    ${['general', 'maori'].map(t => `<section class="stack stack--s" data-grp><h3 class="h4">${t === 'maori' ? 'Māori electorates' : 'General electorates'} <span class="num muted">${grp(t).length}</span></h3><div class="rows">${grp(t).map(e => `<a class="rowlink rowlink--plain" href="#/vote/electorate/${esc(e.slug)}" data-el-q="${esc([e.name, ...(e.predecessor_seats || []), ...elRegions(e)].map(elFold).join('|'))}"${e.slug === cur ? ' aria-current="page"' : ''}><span><span class="rowlink__title">${esc(e.name)}</span><span class="rowlink__sub" style="display:block">${esc(e.region || '')}${e.region ? ' · ' : ''}${(e.candidates || []).length} candidates</span></span>${ic('chev')}</a>`).join('')}</div></section>`).join('')}` });
+  const q = $('#el-sq'); if (q) q.oninput = () => { const v = elFold(q.value); let n = 0;
+    document.querySelectorAll('#sheet-body [data-el-q]').forEach(a => { const on = v.length < 2 || a.dataset.elQ.split('|').some(h => elScore(h, v) > 0); a.hidden = !on; if (on) n++ });
+    document.querySelectorAll('#sheet-body [data-grp]').forEach(g => { g.hidden = !g.querySelector('[data-el-q]:not([hidden])') });
+    const none = $('#el-sq-none'); if (none) { none.hidden = n > 0; none.textContent = n ? '' : `No electorate called “${q.value.trim()}”. Try your town or region, or use your location on the electorate page.` } } }
 
 function browseRows() { const E = elList();
   return ['general', 'maori'].map(t => { const L = E.filter(e => (e.type || 'general') === t);
@@ -2448,35 +2608,32 @@ V.electorate = async slug => {
   await loadPeople(); const E = elList();
   const saved = store.get('myElectorate'); const sel = (slug && E.find(x => x.slug === slug)) || (!slug && saved && E.find(x => x.slug === saved)) || null;
   if (sel) store.set('myElectorate', sel.slug);
-  const finder = `<div class="finder">
+  const finder = `<div class="finder" role="search" aria-label="Find your electorate">
+      <div class="input-icon el-qwrap">${ic('search', 'i--s')}<input class="input" type="search" id="el-q" placeholder="Type your electorate, town or region" aria-label="Find your electorate by name, town or region" autocomplete="off" aria-controls="el-sugg"></div>
+      <div class="rows el-sugg" id="el-sugg" aria-live="polite" hidden></div>
+      <div class="finder__or">or</div>
       <button class="btn btn--ink btn--l btn--block" type="button" id="el-loc">${ic('pin', 'i--s')} Use my location <span class="small" style="font-weight:500;opacity:.8">— stays on your device</span></button>
       <p class="micro muted">${ELEC_CONSENT}</p>
       <div id="el-loc-out" aria-live="polite"></div>
-      <div class="finder__or">or</div>
-      <div class="input-icon">${ic('search', 'i--s')}<input class="input" type="search" id="el-q" placeholder="Type your electorate, town or suburb" aria-label="Find your electorate by name, town or suburb" autocomplete="off" aria-controls="el-sugg"></div>
-      <div class="rows el-sugg" id="el-sugg" hidden></div>
       <div class="row"><button class="chip chip--menu" type="button" id="el-all">${sel ? 'Choose a different electorate' : `All ${E.length} electorates`}</button><a class="small more" href="https://vote.nz" target="_blank" rel="noopener">Look up your address at vote.nz ${ic('ext', 'i--xs ext')}</a></div>
     </div>`;
   $('#main').innerHTML = sectionFrame('vote', 'vote/electorate', `<div class="stack stack--xl el-page">
     <div class="el-print-head"><p>Ballot Book NZ · independent guide, not the Electoral Commission · printed ${esc(nzDateLong())} · official information: vote.nz or 0800 36 76 56</p>
       ${sel ? `<figure class="el-qr"><img src="data/qr/${esc(sel.slug)}.svg" alt="QR code linking to this page" width="96" height="96"><figcaption>Scan for the latest: not-simon.github.io/Politicsnz</figcaption></figure>` : ''}</div>
-    <header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('pin', 'i--s')} Vote · Your electorate</p><h1>Who’s standing where you live</h1>
-      <p class="lede">Find your electorate to meet the candidates on your ballot, in ballot order, with how close it was last time.</p><div class="micro notec">${NOT_EC}</div></header>
-    ${sel ? `<details class="disclose el-find"><summary>Not your electorate? Find yours</summary><div class="disclose__body"><div class="el-find__in">${finder}</div></div></details><div class="stack stack--l" id="el-body">${electorateBody(sel)}</div>`
-      : `<div class="split split--5-7"><div class="stack sticky">${finder}</div><div class="stack stack--l"><div class="shead"><h2>Browse all ${E.length}</h2></div>${browseRows()}</div></div>`}
+    <header class="pagehead el-head"><p class="eyebrow eyebrow--signal">${ic('pin', 'i--s')} Vote · Your electorate</p><h1>Who’s standing where you live</h1></header>
+    ${sel ? `<div class="stack stack--s"><details class="disclose el-find"><summary>Not your electorate? Find yours</summary><div class="disclose__body"><div class="el-find__in">${finder}</div></div></details><div class="micro notec">${NOT_EC}</div></div><div class="stack stack--l" id="el-body">${electorateBody(sel)}</div>`
+      : `<div class="split split--5-7 el-top"><div class="stack sticky">${finder}<p class="small soft el-lede">Find your electorate to meet the candidates on your ballot, in ballot order, with how close it was last time.</p><div class="micro notec">${NOT_EC}</div></div><div class="stack stack--l"><div class="shead"><h2>Browse all ${E.length}</h2></div>${browseRows()}</div></div>`}
     ${OFFICIAL_LINE}
   </div>`);
-  // typed picker: electorate names first, then electorates whose description mentions the place
+  // typed picker: electorate names, then the seats they replaced in 2025, then regions (never description text)
   const q = $('#el-q'), sg = $('#el-sugg');
-  q.oninput = () => { const v = q.value.trim().toLowerCase(); if (v.length < 2) { sg.hidden = true; sg.innerHTML = ''; return }
-    const byName = E.filter(e => e.name.toLowerCase().includes(v) || elSlug(e.name).includes(elSlug(v)));
-    const byText = byName.length && v.length < 6 ? [] : E.filter(e => !byName.includes(e) && ((e.region || '').toLowerCase().includes(v) || (v.length >= 4 && (e.description || '').toLowerCase().includes(v)))).slice(0, 6);
-    const row = (e, why) => `<a class="rowlink rowlink--plain" href="#/vote/electorate/${esc(e.slug)}"><span><span class="rowlink__title">${esc(e.name)}</span><span class="rowlink__sub" style="display:block">${why}</span></span>${ic('chev')}</a>`;
-    sg.innerHTML = byName.slice(0, 8).map(e => row(e, `${e.type === 'maori' ? 'Māori' : 'General'} electorate · ${(e.candidates || []).length} candidates`)).join('')
-      + (byText.length ? `<p class="micro muted el-sugg__h">Mentions “${esc(q.value.trim())}”: boundaries can split a town, so check at vote.nz</p>` + byText.map(e => row(e, esc(e.region || 'Mentioned in its description'))).join('') : '')
-      || `<p class="small muted el-sugg__h">No electorate matches. Try the list, or look up your address at vote.nz.</p>`;
-    sg.hidden = false };
-  q.onkeydown = e => { if (e.key === 'Enter') { const a = sg.querySelector('a'); if (a) { e.preventDefault(); go(a.getAttribute('href')) } } };
+  q.oninput = () => { const h = elSuggHTML(q.value); sg.innerHTML = h; sg.hidden = !h; if (h) keepSearchInView() };
+  // on a phone the keyboard covers the lower half of the screen: bring the field (and the results under it) to the top
+  const keepSearchInView = () => { if (innerWidth >= 720) return; const r = q.getBoundingClientRect(); const mh = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--mast-h')) || 56;
+    if (r.top < mh + 8 || r.top > innerHeight * 0.3) scrollTo({ top: scrollY + r.top - mh - 12, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }) };
+  q.onfocus = () => setTimeout(keepSearchInView, 60);
+  q.onkeydown = e => { if (e.key === 'Enter') { const a = sg.querySelector('a.rowlink'); if (a) { e.preventDefault(); go(a.getAttribute('href')) } } };
+  sg.addEventListener('click', e => { if (e.target.closest('[data-el-useloc]')) $('#el-loc').click() });
   $('#el-all').onclick = () => pickerSheet(sel && sel.slug);
   // location (device-side only; uses the shared locateElectorate())
   $('#el-loc').onclick = async () => { const out = $('#el-loc-out'); out.innerHTML = '<p class="small muted">Finding your electorate…</p>';
@@ -2510,13 +2667,41 @@ function partyOrder(mode = 'az') {
 }
 const onBallot = s => (G().parties || []).some(p => p.slug === s);
 function leaderFaces(s) { const g = guideParty(s); const ls = (g && g.leaders) || []; return ls.map(l => findPerson(l.slug, l.name)).filter(Boolean) }
-function partySeats(s) { const g = guideParty(s); if (g && g.current_seats && g.current_seats.seats != null) return g.current_seats.seats; return (currentParl() && (currentParl().composition_now_or_end || {})[s]) || 0 }
+// Seats come from Parliament's own record (data/parliaments/<latest>.json, composition_now_or_end), never a constant.
+// The guide card's current_seats is only a fallback for views that run before the Parliament data has loaded.
+const ptParl = () => { const ps = (S.data && S.data.parliaments) || []; return ps.length ? ps[ps.length - 1] : null };
+function partySeats(s) { const p = ptParl(); if (p && p.composition_now_or_end) return +p.composition_now_or_end[s] || 0;
+  const g = guideParty(s); return (g && g.current_seats && +g.current_seats.seats) || 0 }
+const partyMPs = partySeats;   // the name other views use
+// Size of the House: the sum of the composition, with any vacancies the record lists; `ended` once Parliament is dissolved.
+function houseSeats() { const p = ptParl(); const g = (G().parties || []).find(x => x.current_seats && x.current_seats.of) || {};
+  if (!p) return { total: (g.current_seats || {}).of || null, vacancies: [], ended: false, end: null, asOf: (g.current_seats || {}).as_of || null };
+  const total = Object.values(p.composition_now_or_end || {}).reduce((a, n) => a + (+n || 0), 0);
+  const ended = !!(p.end && new Date(p.end + 'T23:59:59') < new Date());
+  return { total: total || p.total_now_or_end, vacancies: p.vacancies_at_end || [], ended, end: p.end, asOf: ended ? p.end : null } }
+const houseLine = h => `${h.total} seats${h.vacancies.length ? `; ${h.vacancies.length === 1 ? 'one vacancy' : h.vacancies.length + ' vacancies'}` : ''}`;
+// MPs whose profile sits under this party but whom Parliament's record lists under another party (or as independents).
+function partyMPsElsewhere(s) { const p = ptParl(); if (!p) return [];
+  return (p.members || []).filter(m => !m.left && String(m.repo_folder || '').startsWith(`parties/${s}/`) && m.party_now_or_end && m.party_now_or_end !== s) }
+function partySeatNote(s, long = false) {
+  const h = houseSeats(); const L = partyMPsElsewhere(s); if (!L.length) return '';
+  const leaders = ((guideParty(s) || {}).leaders || []).map(l => l.name);
+  return L.map(m => { const who = leaders.includes(m.name) ? 'its leader' : 'its candidate'; const as = m.party_now_or_end === 'independent' ? 'an independent MP' : `a ${pname(m.party_now_or_end)} MP`;
+    if (!long) return `${who} ${h.ended ? 'sat' : 'sits'} as ${as}`;
+    const ch = (m.party_changes || []).slice(-1)[0];
+    return `${leaders.includes(m.name) ? 'Its leader, ' : ''}${esc(m.name)}${m.seat ? `, MP for ${esc(m.seat)},` : ''} was elected for ${esc(pname(m.party))} in ${esc(ptParl().election_year)} and is listed in Parliament’s records as ${as}${ch ? ` from ${esc(ptDate(ch.date))}` : ''}${h.ended ? ' until Parliament was dissolved' : ''}.${ch && ch.reason ? ` Reason recorded: ${esc(ch.reason.replace(/;.*$/, ''))}.` : ''}${partySeats(s) ? '' : ` ${esc(pname(s))} has no MPs of its own in those records.`}` }).join(' ') }
+// Groups not on the party-vote ballot have no guide card: one neutral line each, from their profiles (parties/<slug>/README.md),
+// in the same form as the guide taglines (what it is, what it proposes; nothing evaluative). Others get the generic line.
+const PT_OTHER_LINE = { nap: 'An unregistered group that opposes voting. Electorate candidates only.',
+  'progressive-aotearoa-new-zealand': 'An unregistered party based on Progressive Utilization Theory, proposing economic democracy and co-operative ownership of large businesses. Electorate candidates only.',
+  'socialist-equality-group': 'An unregistered label used by one candidate. Electorate candidates only.' };
 // Glance row used on the parties list (and by any other view that wants a party row). No polling.
 function partyCard(s) {
   const g = guideParty(s) || {}; const pp = P(s); const seats = partySeats(s);
-  const meta = [seats ? `${seats} MP${seats === 1 ? '' : 's'}` : 'No MPs', pp.policy_count ? `${pp.policy_count} ${pp.policy_count === 1 ? 'policy' : 'policies'}` : ''].filter(Boolean).join(' · ');
+  const note = partySeatNote(s);
+  const meta = [seats ? `${seats} MP${seats === 1 ? '' : 's'}` : note ? '0 MPs in Parliament’s records' : 'Not in Parliament', note, pp.policy_count ? `${pp.policy_count} ${pp.policy_count === 1 ? 'policy' : 'policies'}` : ''].filter(Boolean).join(' · ');
   return `<a class="rowlink rowlink--plain party-row" href="#/parties/${esc(s)}" style="--pc:${pcolor(s)}"><span class="stack stack--s"><span class="rowlink__title"><span class="ptag"><span class="sw"></span>${esc(g.name && S.partySort === 'ballot' ? g.name : pname(s))}</span></span>
-    ${g.tagline || pp.intro ? `<span class="rowlink__sub">${esc(g.tagline || String(pp.intro).replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').slice(0, 180))}</span>` : ''}<span class="micro muted">${meta}</span></span>${ic('chev')}</a>`;
+    ${g.tagline || PT_OTHER_LINE[s] ? `<span class="rowlink__sub">${esc(g.tagline || PT_OTHER_LINE[s])}</span>` : ''}<span class="micro muted">${meta}</span></span>${ic('chev')}</a>`;
 }
 
 V.parties = async () => {
@@ -2528,6 +2713,7 @@ V.parties = async () => {
       <p class="lede">Every party on the 2026 party-vote ballot. Pick one for a plain summary, then go as deep as you like: every policy in the party's own words, their people and their record.</p></header>
       <section class="stack"><div class="row row--between"><div class="seg" role="group" aria-label="Order">${[['az', 'A to Z'], ['ballot', 'Ballot order']].map(([k, l]) => `<button type="button" data-sort="${k}" aria-pressed="${S.partySort === k}">${l}</button>`).join('')}</div>
         <span class="micro muted">${S.partySort === 'ballot' ? 'Alphabetical by registered name, the order the parties appear on the ballot paper.' : 'Alphabetical by short name.'} ${ballot.length} parties.</span></div>
+        <p class="micro muted">${(h => `MPs: Parliament’s record ${h.ended ? `at dissolution on ${esc(ptDate(h.end))}` : 'now'} (${esc(houseLine(h))}).`)(houseSeats())}</p>
         <div class="rows">${ballot.map(partyCard).join('')}</div></section>
       ${others.length ? `<section class="stack"><div class="shead shead--quiet"><h2 class="h3">Also in this guide</h2></div><p class="small soft">Groups that are not on the 2026 party-vote list but whose candidates or policies are on file.</p><div class="rows">${others.map(partyCard).join('')}</div></section>` : ''}
       <p class="small muted">Former parties from 2011 to 2023 are in <a href="#/about/page/parties/MINOR_PARTIES.md">the minor parties overview</a>.</p>`);
@@ -2551,7 +2737,8 @@ V.party = async (s, tab = 'glance') => {
   const pos = g.position || {}; const label = T(pos);
   const leaders = (g.leaders || []).map(l => { const r = String(l.role || '').replace(/^Leader(,\s*)?/i, '').trim(); return esc(l.name) + (r ? ', ' + esc(r) : '') });
   const nBallot = (G().parties || []).length;
-  const head = `<div class="stack stack--l party-page"><nav class="small" aria-label="Breadcrumb"><a href="#/parties">All ${nBallot} parties</a> <span class="muted">/ ${esc(pname(s))}</span></nav>
+  // On a phone the section chip row is replaced by this breadcrumb (CSS), so the only tab row on the page is the party's own.
+  const head = `<div class="stack stack--l party-page"><nav class="pcrumb" aria-label="Breadcrumb"><a href="#/parties">Parties<span class="sr-only"> (all ${nBallot})</span></a>${ic('chev', 'i--xs')}<span aria-current="page">${esc(pname(s))}</span></nav>
     <header class="phead" style="--pc:${pc}">
       <div class="phead__id"><span class="phead__faces">${faces.length ? faces.slice(0, 2).map(f => faceHTML(f, s, 'face face--l')).join('') : `<span class="face--none face face--l" style="--pc:${pc}" aria-hidden="true">${esc(initials(s))}</span>`}</span>
         <div class="stack stack--s"><p class="eyebrow">${label ? (/^no /i.test(label) ? 'No position label' : esc(label)) + ` <span class="phead__src">(${pos.source ? ptExt(pos.source, "Wikipedia's label") : "Wikipedia's label"})</span>` : ''}${g.founded ? ` · Founded ${esc(g.founded)}` : ''}</p>
@@ -2559,9 +2746,9 @@ V.party = async (s, tab = 'glance') => {
       ${g.tagline ? `<p class="phead__tag">${esc(g.tagline)}</p>` : ''}${pos.description ? `<p class="small soft">${esc(pos.description)}</p>` : ''}
       <div class="row"><a class="btn btn--s" href="#/choose/compare/${esc(s)}">${ic('swap', 'i--xs')} Compare with another party</a>${g.website ? `<a class="btn btn--s btn--quiet" href="${esc(g.website)}" target="_blank" rel="noopener">Party website ${ic('ext', 'i--xs')}</a>` : ''}</div>
     </header>
-    <nav class="ptabs" aria-label="${esc(g.name || pp.name)}">${PARTY_TABS.map(([k, l, sub]) => `<a href="#/parties/${esc(s)}${sub}"${k === tab ? ' aria-current="page"' : ''}>${l}${counts[k] != null ? ` <span class="num">${counts[k]}</span>` : ''}</a>`).join('')}</nav>
+    <nav class="ptabs ptabs--party" style="--pc:${pc}" aria-label="${esc(pname(s))}: pages about this party"><span class="ptabs__who" aria-hidden="true">${esc(pname(s))}:</span>${PARTY_TABS.map(([k, l, sub]) => `<a href="#/parties/${esc(s)}${sub}"${k === tab ? ' aria-current="page"' : ''}>${l}${counts[k] != null ? ` <span class="num">${counts[k]}</span>` : ''}</a>`).join('')}</nav>
     <div id="pbody" class="party-body"></div></div>`;
-  $('#main').innerHTML = sectionFrame('parties', 'parties', head);
+  $('#main').innerHTML = sectionFrame('parties', 'parties', head).replace('<div class="section">', '<div class="section section--party">');
   const body = $('#pbody');
   if (tab === 'glance') { body.innerHTML = partyOverview(s, pols, prom); bindIdeas(body, s);
     body.querySelectorAll('[data-ov]').forEach(b => b.onclick = () => openPartySheet(s, b.dataset.ov));
@@ -2589,7 +2776,7 @@ function partyFacts(s) {
 const ptAZ = L => (L || []).slice().sort((a, b) => ptCmp(pname(a), pname(b)));
 function partyOverview(s, pols, prom) {
   const { g, cost, costYes, csObj, ideas, ideasLabel } = partyFacts(s); const pp = P(s);
-  const cur = g.current_seats || {}; const seats = partySeats(s);
+  const cur = g.current_seats || {}; const seats = partySeats(s); const house = houseSeats(); const seatNote = partySeatNote(s, true);
   const topics = new Set(pols.map(topicOf)).size; const nm = esc(pname(s));
   const sec = (id, title, inner, extra = '', quiet = false) => `<section class="stack" aria-labelledby="h-${id}"><div class="shead${quiet ? ' shead--quiet' : ''}"><div class="shead__row"><h2 id="h-${id}"${quiet ? ' class="h3"' : ''}>${title}</h2>${extra}</div></div>${inner}</section>`;
   const sc = scoreOf(prom); const hasSides = T(g.they_say) || T(g.critics_say);
@@ -2599,25 +2786,26 @@ function partyOverview(s, pols, prom) {
   const nSrc = (g.sources || []).length; const checked = ptDate((cur.as_of || (S.data.generated || '').slice(0, 10)));
   return `<div class="party-layout">
     <dl class="glance">
-      <div><dt>MPs now</dt><dd>${seats}<small>of ${esc(cur.of || (currentParl() || {}).total_now_or_end || 123)} seats${cur.as_of ? ' · ' + ptDate(cur.as_of, { day: 'numeric', month: 'short' }) : ''}</small></dd></div>
+      <div><dt>${house.ended ? 'MPs at dissolution' : 'MPs now'}</dt><dd>${seats}<small>of ${esc(house.total)} seats${house.vacancies.length ? `, ${house.vacancies.length === 1 ? 'one' : house.vacancies.length} vacant` : ''}${house.asOf || cur.as_of ? '<br>' + ptDate(house.asOf || cur.as_of, { day: 'numeric', month: 'short', year: 'numeric' }) : ''}</small></dd></div>
       <div><dt>2026 policies</dt><dd>${pols.length}<small>${pols.length ? `${topics} topic${topics === 1 ? '' : 's'}` : 'none on file yet'}</small></dd></div>
-      <div><dt>Promises checked</dt><dd>${prom.length || '–'}<small>${prom.length ? 'with sources' : 'not tracked yet'}</small></dd></div>
+      <div><dt>Promises checked</dt><dd>${prom.length ? sc.past : '–'}<small>${prom.length ? (sc.n - sc.past ? `past promises<br>+${sc.n - sc.past} for 2026, not yet due` : 'past promises, with sources') : 'not tracked yet'}</small></dd></div>
       <div><dt>Numbers costed?</dt><dd>${cost ? (costYes ? 'Yes' : 'No') : '–'}<small>${cost ? (costYes ? 'party-published' : 'no full plan found') : 'not checked'}</small></dd></div>
     </dl>
     <div class="stack stack--xl party-layout__main">
+      ${seatNote ? `<p class="small soft seat-note">${ic('info', 'i--xs')} ${seatNote}</p>` : ''}
       ${sec('nut', 'In a nutshell', g.in_a_nutshell ? `<div class="prose"><p>${esc(g.in_a_nutshell)}</p></div>` : pp.intro ? `<div class="prose">${md(pp.intro)}</div>` : '<p class="muted">A plain summary has not been written yet.</p>')}
       ${sec('big', (g.big_ideas || []).length ? 'Big ideas for 2026' : 'Headline policies', ideas.length ? `<ol class="ideas">${ideas.slice(0, 3).join('')}</ol>` : '<p class="muted">No headline policies on file yet.</p>', pols.length ? `<a class="more small" href="#/parties/${esc(s)}/policies">All ${pols.length} policies ${ic('chev', 'i--xs')}</a>` : '')}
       ${sec('more', `More about ${nm}`, `<div class="rows">
         ${ovRow('big-ideas', 'list', `All ${ideasLabel}`, ideas.length ? `${ideas.length}, each linked to the policies and documents behind it` : 'None on file yet')}
         ${ovRow('two-sides', 'scale', 'Two sides', hasSides ? 'What they say, and what critics say, with sources' : 'Not summarised yet')}
         ${ovRow('work-with', 'users', "Who they'd work with", workSub)}
-        <a class="rowlink" href="#/parties/${esc(s)}/record"><span class="rowlink__icon">${ic('history')}</span><span><span class="rowlink__title">Keeping their word</span><span class="rowlink__sub" style="display:block">${prom.length ? `${sc.n} promises checked${sc.score != null ? `, ${sc.score}% kept` : ''} · verdicts by term, with sources` : 'The promise check is still being researched'}</span></span>${ic('chev')}</a>
+        <a class="rowlink" href="#/parties/${esc(s)}/record"><span class="rowlink__icon">${ic('history')}</span><span><span class="rowlink__title">Keeping their word</span><span class="rowlink__sub" style="display:block">${prom.length ? `${sc.past} past promises checked${sc.score != null ? `, ${sc.score}% kept` : ''}${sc.n - sc.past ? ` · ${sc.n - sc.past} for 2026, not yet due` : ''} · by term, with sources` : 'The promise check is still being researched'}</span></span>${ic('chev')}</a>
         ${ovRow('costed', 'doc', 'Are the numbers costed?', cost ? (costYes ? 'Yes, party-published' : 'No full costing published') : 'Not checked yet')}
         ${ovRow('results', 'poll', 'Election results', 'Party vote and seats at each election since 2008')}
         ${ovRow('sources', 'info', 'Sources', `${nSrc ? `${nSrc} source${nSrc === 1 ? '' : 's'} for this summary · ` : ''}checked ${checked}`)}</div>`)}
       ${sec('deep', 'Full documents', `<div class="rows" style="border-top:0">
         ${pp.has_readme ? deepRow('book', 'Full party profile and history', `${g.founded ? 'Founded ' + esc(g.founded) + ' · ' : ''}leaders · every result`, `#/about/page/parties/${s}/README.md`) : ''}
-        ${pp.has_track_record ? deepRow('history', 'Full track record, with sources', prom.length ? `${prom.length} promises checked` : 'The written record', `#/about/page/parties/${s}/track-record.md`) : ''}
+        ${pp.has_track_record ? deepRow('history', 'Full track record, with sources', prom.length ? `${prom.length} promises recorded` : 'The written record', `#/about/page/parties/${s}/track-record.md`) : ''}
         ${deepRow('doc', 'Policy index', `${pols.length} policies${pols.length ? ` across ${topics} topic${topics === 1 ? '' : 's'}` : ''}, with the documents they come from`, `#/about/page/parties/${s}/policies/README.md`)}
         ${deepRow('news', 'From the party', 'Latest press releases and where to follow them', `#/parties/news/${s}`)}
         ${g.website ? deepRow('ext', 'Party website', esc(ptHost(g.website)), g.website, true) : ''}</div>`, '', true)}
@@ -2659,16 +2847,20 @@ function bindIdeas(el, s) {
 /* ----- Keeping their word (party Overview and Record tab) ----- */
 function recordSummary(s, { inRecord = false } = {}) {
   const all = (S.data.promises || {})[s] || []; const g = guideParty(s) || {};
-  const head = `<div class="shead"><div class="shead__row"><h2 id="h-rec">Keeping their word</h2>${all.length ? `<span class="micro muted">${all.length} promises tracked</span>` : ''}</div></div>`;
+  const head = `<div class="shead"><div class="shead__row"><h2 id="h-rec">Keeping their word</h2>${all.length ? `<span class="micro muted">${all.length} promises recorded</span>` : ''}</div></div>`;
   if (!all.length) return `<section class="stack" aria-labelledby="h-rec">${head}<p class="muted">The promise check for this party is still being researched.</p>${P(s).has_track_record ? `<a class="more small" href="#/about/page/parties/${esc(s)}/track-record.md">Read the written track record ${ic('chev', 'i--xs')}</a>` : ''}</section>`;
   const terms = TERMS.map(([k, l]) => [k, l, all.filter(x => periodOf(x) === k)]).filter(([, , L]) => L.length);
-  const sc = scoreOf(all);
+  // One definition everywhere (see the rubric): past = every promise not made for the 2026 campaign.
+  const past = all.filter(isPastPromise), next = all.filter(x => !isPastPromise(x)); const sc = scoreOf(past); const sn = scoreOf(next);
+  // The guide's context sentence only; its counts are recomputed here from the same promises as the meters and the list.
+  const ctx = T(g.track_record_line).replace(/\s*Of \d+ past promises[\s\S]*$/, '').trim();
   return `<section class="stack" aria-labelledby="h-rec">${head}
-    ${T(g.track_record_line) ? `<p class="soft">${esc(T(g.track_record_line))}</p>` : ''}
-    <p class="small"><b>All time:</b> ${sc.n} promises checked${sc.score != null ? `, <b>${sc.score}%</b> kept` : ''}.</p>
-    <div class="terms">${terms.map(([k, l, L]) => { const t = scoreOf(L); return `<div class="term"><div class="term__h"><span><b>${esc(l)}</b> · ${t.n} checked</span><span class="muted">${t.score != null ? `${t.score}% kept` : 'Not yet due'}</span></div>${verdictMeter(L, l)}</div>` }).join('')}</div>
-    <div class="legend">${VERDICTS.filter(v => all.some(x => x.status === v)).map(v => `${verdictChip(v)}<b>${all.filter(x => x.status === v).length}</b>`).map(x => `<span>${x}</span>`).join('')}</div>
-    ${RUBRIC_HTML('How each promise was judged')}
+    ${ctx ? `<p class="soft">${esc(ctx)}</p>` : ''}
+    ${past.length ? `<p class="small"><b>${past.length} past promise${past.length === 1 ? '' : 's'} checked:</b> ${esc(verdictCounts(past))}.${sc.score != null ? ` <b>${sc.score}%</b> kept, of the ${sc.resolved} with a final verdict.` : ''}</p>` : ''}
+    ${next.length ? `<p class="small"><b>2026 campaign:</b> ${next.length} promise${next.length === 1 ? '' : 's'} recorded, not yet due${sn.early ? ` (${sn.early} with early action recorded)` : ''}. Not scored.</p>` : ''}
+    <div class="terms">${terms.map(([k, l, L]) => { const t = scoreOf(L); return `<div class="term"><div class="term__h"><span><b>${esc(l)}</b> · ${t.n} ${k === '2026' ? 'recorded' : 'checked'}</span><span class="muted">${k === '2026' ? 'Not yet due' : t.score != null ? `${t.score}% kept` : 'No final verdicts yet'}</span></div>${verdictMeter(L, l)}</div>` }).join('')}</div>
+    <div class="legend">${VERDICTS.filter(v => all.some(x => pStatus(x) === v)).map(v => `<span>${verdictChip(v)}</span>`).join('')}</div>
+    ${RUBRIC_HTML('How each promise was judged, and which are counted')}
     <div class="row">${inRecord ? '' : `<a class="more small" href="#/parties/${esc(s)}/record">See every promise, with sources ${ic('chev', 'i--xs')}</a>`}${P(s).has_track_record ? `<a class="more small" href="#/about/page/parties/${esc(s)}/track-record.md">Full track record ${ic('chev', 'i--xs')}</a>` : ''}</div></section>`;
 }
 // Party vote at each election since 2008, as .rrow bars (party colour only via --pc).
@@ -2695,7 +2887,7 @@ const inLang = (code, txt) => `<span lang="${code}">${esc(txt)}</span>`;
 const biText = (code, xx, en) => xx ? `${inLang(code, xx)} · ${esc(en)}` : esc(en);
 const LANG_OFFICIAL_NOTE = `<p class="note">${ic('phone', 'i--s')}<span>Official information comes from the Electoral Commission: <a href="https://vote.nz" target="_blank" rel="noopener">vote.nz</a> or 0800 36 76 56 (free, 24 hours). Ask for an interpreter in your language on the same number. Ballot Book NZ is an independent guide, not the Commission.</span></p>`;
 const langFoot = () => `<div class="stack stack--s">${LANG_OFFICIAL_NOTE}<div class="micro notec">${NOT_EC}</div></div>`;
-const srcRow = links => `<p class="src">${ic('doc')} ${links.map(([u, l]) => extA(u, esc(l))).join(' · ')}</p>`;
+const srcRow = links => { const L = (links || []).filter(x => x && x[0] && x[1]); return L.length ? `<p class="src src--line">${ic('doc')}<span>${L.map(([u, l]) => extA(u, esc(l))).join(' · ')}</span></p>` : '' };
 const MH = {   // vote.nz / elections.nz pages behind each claim on the Māori electorates page (checked 24 Oct 2026)
   roll: 'https://vote.nz/enrolling/get-ready-to-enrol/maori-roll-or-general-roll',
   choice: 'https://vote.nz/maori-enrolment/about-the-option/about/what-does-your-choice-mean-for-you',
@@ -2717,20 +2909,26 @@ const MH = {   // vote.nz / elections.nz pages behind each claim on the Māori e
 function maoriSeatHTML(e, r) {
   const cands = (e.candidates || []).slice().sort(ballotSort); const mp = e.sitting_mp;
   const pn = p => esc(S.data.parties[p] ? pname(p) : p);
-  const res = r ? `<p class="small"><b>2023:</b> ${esc(r.winner)} <span class="ptag ptag--s" style="--pc:${pcolor(r.party)}"><span class="sw"></span>${pn(r.party)}</span> won${r.majority ? ` by ${Number(r.majority).toLocaleString('en-NZ')} votes` : ''}${r.runner_up ? ` over ${esc(r.runner_up)} <span class="ptag ptag--s" style="--pc:${pcolor(r.runner_up_party)}"><span class="sw"></span>${pn(r.runner_up_party)}</span>` : ''}.</p>` : '<p class="small muted">2023 result not available.</p>';
+  // every field is guarded: a missing winner, party, majority or runner-up drops that part, and the source line only appears when there is a result and a source
+  const tag = p => p ? ` <span class="ptag ptag--s" style="--pc:${pcolor(p)}"><span class="sw"></span>${pn(p)}</span>` : '';
+  const maj = r && typeof r.majority === 'number' && r.majority > 0 ? ` by ${Number(r.majority).toLocaleString('en-NZ')} votes` : '';
+  const res = r && r.winner ? `<p class="small"><b>2023:</b> ${esc(r.winner)}${tag(r.party)} won${maj}${r.runner_up ? ` over ${esc(r.runner_up)}${tag(r.runner_up_party)}` : ''}.</p>` : '<p class="small muted">2023 result not available.</p>';
+  const srcU = r && r.winner ? ((e.result_2023 && e.result_2023.source) || String(r.majority_source || '').match(/https?:\/\/\S+/)?.[0] || '') : '';
+  const resSrc = srcU ? `<p class="src src--line">${ic('doc')}<span>2023 result: official count, as reported by ${extA(srcU, esc(srcU.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]))}</span></p>` : '';
   const now = mp ? `<p class="small soft"><b>MP now:</b> ${esc(mp.name)} (${pn(mp.party)})${e.mp_standing_again === false ? ', not standing again' : ''}.${e.sitting_mp_note ? ` ${esc(e.sitting_mp_note)}` : ''}</p>` : '';
   return `<section class="stack stack--s mh-seat" aria-labelledby="mh-${esc(e.slug)}">
       <div class="shead shead--quiet"><div class="shead__row"><h3 id="mh-${esc(e.slug)}" class="h4">${inLang('mi', e.name)}</h3><span class="micro muted">${esc(String(e.region || '').replace(/\s*\(Māori electorate\)\s*/i, ''))}</span></div></div>
-      ${res}${now}
+      ${res}${resSrc}${now}
       <div class="shead__row"><span class="small"><b>On the ballot: ${cands.length}</b></span><span class="micro muted">A–Z by surname</span></div>
       ${cands.length ? `<ul class="cands" role="list">${cands.map(candRow).join('')}</ul>` : '<p class="small muted">The candidate list is still being checked.</p>'}
       <div class="row"><a class="btn btn--s" href="#/vote/electorate/${esc(e.slug)}">${ic('pin', 'i--s')} ${esc(e.name)} electorate page</a><a class="btn btn--s btn--quiet" href="#/seats/map/2023/${esc(e.slug)}">${ic('map', 'i--s')} On the map</a></div>
     </section>` }
 
 function maoriSeatRow(e, r) { const mp = e.sitting_mp; const pn = p => esc(S.data.parties[p] ? pname(p) : p);
-  const by = r && r.majority ? ` by ${Number(r.majority).toLocaleString('en-NZ')}` : '';
-  const same = mp && r && elSlug(mp.name) === elSlug(r.winner) && mp.party === r.party;
-  const line = same ? `MP: ${esc(mp.name)} (${pn(mp.party)}), won 2023${by}` : [mp ? `MP: ${esc(mp.name)} (${pn(mp.party)})` : '', r ? `2023: ${esc(r.winner)} (${pn(r.party)})${by}` : ''].filter(Boolean).join(' · ');
+  const by = r && typeof r.majority === 'number' && r.majority > 0 ? ` by ${Number(r.majority).toLocaleString('en-NZ')}` : '';
+  const who = (n, p) => n ? `${esc(n)}${p ? ` (${pn(p)})` : ''}` : '';
+  const same = mp && mp.name && r && r.winner && elSlug(mp.name) === elSlug(r.winner) && mp.party === r.party;
+  const line = same ? `MP: ${who(mp.name, mp.party)}, won 2023${by}` : [mp && mp.name ? `MP: ${who(mp.name, mp.party)}` : '', r && r.winner ? `2023: ${who(r.winner, r.party)}${by}` : ''].filter(Boolean).join(' · ');
   return `<button class="rowlink rowlink--plain" type="button" data-seat="${esc(e.slug)}" aria-haspopup="dialog"><span><span class="rowlink__title"><span lang="mi">${esc(e.name)}</span> <span class="micro muted">${esc(String(e.region || '').replace(/\s*\(Māori electorate\)\s*/i, ''))}</span></span><span class="rowlink__sub" style="display:block">${line}</span></span>${ic('chev')}</button>` }
 
 V.maoriHub = async arg => {
@@ -2776,12 +2974,12 @@ V.maoriHub = async arg => {
       <div class="shead"><div class="shead__row"><h2 id="mh-seats">${inLang('mi', 'Ngā rohe pōti Māori e 7')} · The 7 Māori electorates</h2><span class="micro muted">A–Z</span></div></div>
       <p class="small soft">Tap one for its candidates (A–Z by surname), the 2023 result and links. Boundaries changed in 2025.</p>
       <div class="rows" id="mh-list">${E.map(e => maoriSeatRow(e, r23(e))).join('')}</div>
-      <p class="src">${ic('doc')} Candidates: policy.nz and party lists (official list: EasyVote card, vote.nz). 2023: ${extA('https://electionresults.govt.nz', 'official count')}, as reported. Checked 24 Oct 2026.</p>
+      <p class="src src--line">${ic('doc')}<span>Candidates: policy.nz and party lists (official list: EasyVote card, vote.nz).${E.some(e => (r23(e) || {}).winner) ? ` 2023 results: the ${extA('https://electionresults.govt.nz', 'official count')}, as reported.` : ''} Checked 24 Oct 2026.</span></p>
       <div class="row"><a class="btn btn--s btn--quiet" href="#/vote/electorate">${ic('pin', 'i--s')} Find your electorate</a><a class="btn btn--s btn--quiet" href="#/seats/map">${ic('map', 'i--s')} Electorate map</a><a class="btn btn--s btn--quiet" href="#/vote/mmp">${ic('scale', 'i--s')} How MMP works</a></div>
     </section>
     ${voteFoot()}`;
   const openSeat = slug => { const e = E.find(x => x.slug === slug); if (!e) return;
-    openSheet({ title: e.name, depth: ['Vote', 'Māori electorates', e.name], at: 2, src: 'Candidates from policy.nz and party lists; the official list is on your EasyVote card and at vote.nz. 2023: Electoral Commission official count, as reported.', html: maoriSeatHTML(e, r23(e)) });
+    openSheet({ title: e.name, depth: ['Vote', 'Māori electorates', e.name], at: 2, src: `Candidates from policy.nz and party lists; the official list is on your EasyVote card and at vote.nz.${(r23(e) || {}).winner ? ' 2023: Electoral Commission official count, as reported.' : ''}`, html: maoriSeatHTML(e, r23(e)) });
     const box = $('#sheet-body .mh-seat'); if (box) box.addEventListener('click', ev => { const b = ev.target.closest('[data-cand]'); if (!b) return; const p = findPerson(b.dataset.cand, b.dataset.cname); if (p) openPerson(p);
       else openSheet({ title: b.dataset.cname, html: '<p class="small muted">We don’t have a profile for this candidate yet. Their party’s website, policy.nz and vote.nz list the candidates standing.</p>' }) }) };
   $('#mh-list').addEventListener('click', ev => { const b = ev.target.closest('[data-seat]'); if (b) openSeat(b.dataset.seat) });
@@ -2957,9 +3155,22 @@ async function openDoc(party, path, { related = null, context = '' } = {}) {
 }
 
 /* ----- issues ----- */
-V.issues = () => {
+// Issue pages whose slug or title is close to what was typed: shared words or word starts ("housing" → Housing and rent),
+// then small typos ("helth" → Health). Best matches first.
+function ptIssueMatches(q, iss) { const fold = t => String(t || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const words = t => fold(t).split(/[^a-z0-9]+/).filter(w => w.length > 2 && !['and', 'the', 'how', 'for'].includes(w));
+  const near = (a, b) => { if (Math.abs(a.length - b.length) > 2) return false; const d = Array.from({ length: b.length + 1 }, (_, j) => j);
+    for (let i = 1; i <= a.length; i++) { let prev = d[0]; d[0] = i; for (let j = 1; j <= b.length; j++) { const t = d[j]; d[j] = Math.min(d[j] + 1, d[j - 1] + 1, prev + (a[i - 1] === b[j - 1] ? 0 : 1)); prev = t } } return d[b.length] <= (a.length > 6 ? 2 : 1) };
+  const qw = words(q); if (!qw.length) return [];
+  return iss.map(i => { const iw = [...words(i.slug), ...words(i.title)]; let sc = 0;
+      for (const w of qw) sc += iw.some(x => x === w) ? 3 : iw.some(x => x.startsWith(w) || (x.length > 3 && w.startsWith(x))) ? 2 : iw.some(x => near(w, x)) ? 1 : 0;
+      return [i, sc] }).filter(([, sc]) => sc > 0).sort((a, b) => b[1] - a[1] || ptCmp(a[0].title, b[0].title)).slice(0, 5).map(([i]) => i) }
+V.issues = (missing = '') => {
   const iss = (G().issues || []).slice().sort((a, b) => ptCmp(a.title, b.title));
-  $('#main').innerHTML = sectionFrame('parties', 'parties/issues', `<header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('scale', 'i--s')} Parties · Issues</p><h1>The big issues</h1>
+  const like = missing ? ptIssueMatches(missing, iss) : [];
+  const notFound = missing ? `<div class="callout" role="status"><p><b>No issue page called “${esc(missing)}”.</b>${like.length ? ' Did you mean:' : ' Every issue page is listed below.'}</p>
+    ${like.length ? `<div class="rows">${like.map(i => `<a class="rowlink rowlink--plain" href="#/parties/issues/${esc(i.slug)}"><span class="rowlink__title">${esc(i.title)}</span>${ic('chev')}</a>`).join('')}</div>` : ''}</div>` : '';
+  $('#main').innerHTML = sectionFrame('parties', 'parties/issues', `${notFound}<header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('scale', 'i--s')} Parties · Issues</p><h1>The big issues</h1>
     <p class="lede">Pick an issue to see the key facts and where every party stands, in plain English, with sources.</p></header>
     ${iss.length ? `<div class="rows">${iss.map(i => `<a class="rowlink rowlink--plain" href="#/parties/issues/${esc(i.slug)}"><span><span class="rowlink__title">${esc(i.title)}</span><span class="rowlink__sub" style="display:block">${esc((i.why_it_matters || '').slice(0, 160))}${(i.why_it_matters || '').length > 160 ? '…' : ''}</span><span class="micro muted" style="display:block;margin-top:4px">${(i.key_facts || []).length} key facts · ${Object.keys(i.positions || {}).length} parties' positions</span></span>${ic('chev')}</a>`).join('')}</div>`
     : `<p class="muted">Issue guides are being written. Meanwhile, compare by topic in <a href="#/parties/policies">the policy browser</a>.</p>`}`);
@@ -2967,7 +3178,7 @@ V.issues = () => {
 // First sentence of a position; the rest folds away under "More" (nothing is cut).
 function ptSplitSentence(t) { const m = String(t || '').match(/^(.+?[.!?])(\s+)(?=[A-Z0-9“"‘'(])/); return m && m[1].length >= 40 ? [m[1], String(t).slice(m[0].length)] : [String(t || ''), ''] }
 V.issue = slug => {
-  const i = (G().issues || []).find(x => x.slug === slug); if (!i) return V.issues();
+  const i = (G().issues || []).find(x => x.slug === slug); if (!i) return V.issues((() => { try { return decodeURIComponent(String(slug || '')) } catch { return String(slug || '') } })());
   const order = Object.keys(i.positions || {}).sort((a, b) => ptCmp(pname(a), pname(b)));   // A–Z, never by polling
   const facts = i.key_facts || []; const fact = f => `<div class="feed__item"><p>${esc(typeof f === 'string' ? f : f.fact || f.text)}</p><p class="src">${f.date ? `<span>${esc(ptDate(f.date))}</span>` : ''}${ptSources(f)}</p></div>`;
   $('#main').innerHTML = sectionFrame('parties', 'parties/issues', `<nav class="small" aria-label="Breadcrumb"><a href="#/parties/issues">All ${(G().issues || []).length} issues</a> <span class="muted">/ ${esc(i.title)}</span></nav>
@@ -3042,37 +3253,50 @@ function peopleGrid(el, { party = '', preset = '' } = {}) {
   draw() }
 
 /* ----- promises: what each party said it would do, checked against what happened (verdict + sources on every one) ----- */
-const VERDICTS = ['kept', 'partially-kept', 'in-progress', 'broken', 'abandoned', 'not-yet-due'];
-const VMETA = { kept: ['kept', 'check', 'Kept'], 'partially-kept': ['partly', 'half', 'Partly kept'], 'in-progress': ['progress', 'play', 'In progress'], broken: ['broken', 'x', 'Broken'], abandoned: ['abandoned', 'minus', 'Abandoned'], 'not-yet-due': ['notdue', 'clock', 'Not yet due'] };
+const VERDICTS = ['kept', 'partially-kept', 'in-progress', 'broken', 'abandoned', 'not-yet-due', 'early-action'];
+const VMETA = { kept: ['kept', 'check', 'Kept'], 'partially-kept': ['partly', 'half', 'Partly kept'], 'in-progress': ['progress', 'play', 'In progress'], broken: ['broken', 'x', 'Broken'], abandoned: ['abandoned', 'minus', 'Abandoned'], 'not-yet-due': ['notdue', 'clock', 'Not yet due'], 'early-action': ['early', 'flag', 'Early action, recorded'] };
 const vMeta = v => VMETA[v] || ['notdue', 'help', String(v || 'Unknown').replace(/-/g, ' ')];
 // Verdict chip: icon + word + colour, never colour alone.
 const verdictChip = v => { const [c, i, l] = vMeta(v); return `<span class="verdict v-${c}">${ic(i)}${esc(l)}</span>` };
-const TERMS = [['2008-17', '2008–17'], ['2017-23', '2017–23'], ['2023-26', '2023–26'], ['2026', '2026 campaign']];
+// Every promise is filed under one period: the term it was made for (its `term` field when recorded, otherwise the first year
+// in `made`). 'other' = long-standing positions with no year. The party summary, the term meters, the tables and the lists all
+// use these same periods, so their numbers always add up.
+const TERMS = [['2008-17', '2008–17'], ['2017-23', '2017–23'], ['2023-26', '2023–26'], ['other', 'Undated, long-standing'], ['2026', '2026 campaign']];
 // "By term" is no longer a period: the by-term table opens in a sheet from the Promises page (and each party's Record tab shows its own terms).
 const PERIODS = [['all', 'All time'], ['since2017', 'Since 2017'], ['current', '2023–26 term'], ['2026', '2026 promises']];
 const promPer = () => { const v = S.promPeriod || store.get('promPeriod') || 'all'; return PERIODS.some(([k]) => k === v) ? v : 'all' };
-function periodOf(x) { const m = String((x.made || '') + ' ' + (x.term || '')).match(/\b(20[0-2]\d)\b/); if (!m) return 'other'; const y = +m[1];
+function periodOf(x) { const yr = v => { const m = String(v || '').match(/\b(20[0-2]\d)\b/); return m ? +m[1] : null }; const y = yr(x.term) || yr(x.made); if (!y) return 'other';
   return y <= 2016 ? '2008-17' : y <= 2022 ? '2017-23' : y <= 2025 ? '2023-26' : '2026' }
+// Promises made for the 2026 election cannot be judged yet. They are never scored; one that already carries a verdict
+// (something happened before the election) is shown as "Early action, recorded".
+const isPastPromise = x => periodOf(x) !== '2026';
+const pStatus = x => !isPastPromise(x) && x.status !== 'not-yet-due' ? 'early-action' : x.status;
 function inPeriod(x, per) { const t = periodOf(x); return per === 'all' || per === 'byterm' ? true : per === 'since2017' ? (t === '2017-23' || t === '2023-26') : per === 'current' ? t === '2023-26' : per === '2026' ? t === '2026' : true }
 function periodBar(id) { const cur = promPer(); return `<div class="seg" id="${id}" role="group" aria-label="Period" style="justify-self:start">${PERIODS.map(([k, l]) => `<button type="button" data-per="${k}" aria-pressed="${cur === k}">${l}</button>`).join('')}</div>` }
-function scoreOf(L) { const c = v => L.filter(x => x.status === v).length; const resolved = L.filter(x => ['kept', 'partially-kept', 'broken', 'abandoned'].includes(x.status)).length;
-  return { n: L.length, kept: c('kept'), partly: c('partially-kept'), broken: c('broken'), abandoned: c('abandoned'), progress: c('in-progress'), due: c('not-yet-due'), resolved, score: resolved ? Math.round((c('kept') + .5 * c('partially-kept')) / resolved * 100) : null } }
+// n = every promise in L; past = those made before the 2026 campaign; % kept = (kept + half of partly kept) / past promises
+// with a final verdict (kept, partly kept, broken, abandoned). In progress, not yet due and 2026 promises are never in the %.
+function scoreOf(L) { const c = v => L.filter(x => pStatus(x) === v).length; const resolved = L.filter(x => isPastPromise(x) && ['kept', 'partially-kept', 'broken', 'abandoned'].includes(pStatus(x))).length;
+  return { n: L.length, past: L.filter(isPastPromise).length, kept: c('kept'), partly: c('partially-kept'), broken: c('broken'), abandoned: c('abandoned'), progress: c('in-progress'), due: c('not-yet-due'), early: c('early-action'), resolved, score: resolved ? Math.round((c('kept') + .5 * c('partially-kept')) / resolved * 100) : null } }
+// "36 kept, 10 partly kept, 7 broken …" for one set of promises (only the verdicts present).
+const verdictCounts = L => VERDICTS.map(v => [v, L.filter(x => pStatus(x) === v).length]).filter(([, n]) => n).map(([v, n]) => `${n} ${vMeta(v)[2].toLowerCase()}`).join(', ');
 // Stacked verdict meter (.vmeter > i.v-* with --n). `label` names it for screen readers.
-function verdictMeter(L, label = '') { const parts = VERDICTS.map(v => [v, L.filter(x => x.status === v).length]).filter(([, n]) => n);
+function verdictMeter(L, label = '') { const parts = VERDICTS.map(v => [v, L.filter(x => pStatus(x) === v).length]).filter(([, n]) => n);
   const aria = (label ? label + ': ' : '') + (parts.map(([v, n]) => `${n} ${vMeta(v)[2].toLowerCase()}`).join(', ') || 'none');
   return `<div class="vmeter" role="img" aria-label="${esc(aria)}">${parts.map(([v, n], i) => `<i class="v-${vMeta(v)[0]}" style="--n:${n};--i:${i}"></i>`).join('')}</div>` }
 // The verdict rules: the same definitions for every party.
 const RUBRIC_HTML = (title = 'How verdicts are decided', open = false) => `<details class="disclose"${open ? ' open' : ''}><summary>${esc(title)}</summary><div class="disclose__body small">
-  <ul class="rubric"><li>${verdictChip('kept')} delivered as promised, in substance and timing.</li><li>${verdictChip('partially-kept')} delivered in part, late, or in a narrower form.</li><li>${verdictChip('broken')} not delivered while the party had the power to deliver it.</li><li>${verdictChip('abandoned')} dropped by the party itself (often in coalition talks); the entry says who dropped it and why.</li><li>${verdictChip('in-progress')} still being implemented.</li><li>${verdictChip('not-yet-due')} promised for after the election.</li></ul>
-  <p>Each promise lists what was said (with a link to where it was said), what happened (with sources), and the verdict. The same definitions are applied to every party. Parties in opposition have fewer promises that can be judged, which is noted. "% kept" counts a partly kept promise as half and leaves out promises still in progress or not yet due.</p></div></details>`;
-function byTermTable(parties, pr) { return `<div class="table-wrap" tabindex="0" role="region" aria-label="Promises by term, scrollable table"><table class="table"><caption>Promises checked and share kept, by party and by the term the promise was made in</caption><thead><tr><th scope="col">Party</th>${TERMS.map(([, l]) => `<th scope="col">${l}</th>`).join('')}</tr></thead><tbody>${parties.map(p => `<tr><th scope="row">${ptTag(p, 'ptag')}</th>${TERMS.map(([k, l]) => { const L = (pr[p] || []).filter(x => periodOf(x) === k); if (!L.length) return '<td class="muted">–</td>'; const sc = scoreOf(L); return `<td class="term-cell">${verdictMeter(L, pname(p) + ', ' + l)}<div class="micro muted" style="margin-top:4px">${sc.n} checked${sc.score != null ? ` · <b>${sc.score}%</b> kept` : ' · not yet due'}</div></td>` }).join('')}</tr>`).join('')}</tbody></table></div>
-  <p class="micro muted">Terms are when the promise was made: 2008–17 covers the National-led years, 2017–23 the Labour-led years, 2023–26 the current term.</p>` }
+  <ul class="rubric"><li>${verdictChip('kept')} delivered as promised, in substance and timing.</li><li>${verdictChip('partially-kept')} delivered in part, late, or in a narrower form.</li><li>${verdictChip('broken')} not delivered while the party had the power to deliver it.</li><li>${verdictChip('abandoned')} dropped by the party itself (often in coalition talks); the entry says who dropped it and why.</li><li>${verdictChip('in-progress')} still being implemented.</li><li>${verdictChip('not-yet-due')} promised for after the election.</li><li>${verdictChip('early-action')} a 2026 campaign promise where something has already happened. Recorded, never scored.</li></ul>
+  <p>Each promise lists what was said (with a link to where it was said), what happened (with sources), and the verdict. The same definitions are applied to every party. Parties in opposition have fewer promises that can be judged, which is noted.</p>
+  <p><b>Which promises are counted.</b> Each promise is filed under the term it was made for: 2008–17, 2017–23, 2023–26, undated long-standing positions, or the 2026 campaign. "Past promises" are all of them except the 2026 campaign; the party summary, the term meters, the tables and the list all count the same promises. Past promises that are still in progress or not yet due are counted as checked but left out of "% kept". "% kept" counts a partly kept promise as half, out of the past promises with a final verdict (kept, partly kept, broken, abandoned).</p>
+  <p><b>2026 campaign promises are not judged.</b> They show as "Not yet due" for every party, with counts only and no percentage.</p></div></details>`;
+function byTermTable(parties, pr) { return `<div class="table-wrap" tabindex="0" role="region" aria-label="Promises by term, scrollable table"><table class="table"><caption>Promises checked and share kept, by party and by the term the promise was made in</caption><thead><tr><th scope="col">Party</th>${TERMS.map(([, l]) => `<th scope="col">${l}</th>`).join('')}</tr></thead><tbody>${parties.map(p => `<tr><th scope="row">${ptTag(p, 'ptag')}</th>${TERMS.map(([k, l]) => { const L = (pr[p] || []).filter(x => periodOf(x) === k); if (!L.length) return '<td class="muted">–</td>'; const sc = scoreOf(L); return `<td class="term-cell">${verdictMeter(L, pname(p) + ', ' + l)}<div class="micro muted" style="margin-top:4px">${sc.n} ${k === '2026' ? 'recorded' : 'checked'}${sc.score != null ? ` · <b>${sc.score}%</b> kept` : k === '2026' ? ' · not yet due' : ' · no final verdicts yet'}</div></td>` }).join('')}</tr>`).join('')}</tbody></table></div>
+  <p class="micro muted">Terms are the term the promise was made for: 2008–17 covers the National-led years, 2017–23 the Labour-led years, 2023–26 the term that has just ended. "Undated" are long-standing positions with no year. 2026 campaign promises are not judged.</p>` }
 const MAIN7 = ['national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'opportunity'];
 
 // Numbers table for one period (sheet from the Promises page).
-function promNumbersTable(rows, perLabel) { return `<div class="table-wrap" tabindex="0" role="region" aria-label="Promise numbers, scrollable table"><table class="table"><caption>Promise verdicts by party, ${esc(perLabel.toLowerCase())}</caption><thead><tr><th scope="col">Party</th><th scope="col" class="n">Checked</th><th scope="col" class="n">Kept</th><th scope="col" class="n">Partly</th><th scope="col" class="n">Broken / dropped</th><th scope="col" class="n">In progress / not due</th><th scope="col" class="n">% kept</th></tr></thead><tbody>
-  ${rows.map(({ p, L }) => { const sc = scoreOf(L); return `<tr><th scope="row">${ptTag(p, 'ptag')}</th><td class="n">${sc.n}</td><td class="n">${sc.kept}</td><td class="n">${sc.partly}</td><td class="n">${sc.broken + sc.abandoned}</td><td class="n">${sc.progress + sc.due}</td><td class="n"><b>${sc.score == null ? '–' : sc.score + '%'}</b></td></tr>` }).join('')}</tbody></table></div>
-  <p class="micro muted">"% kept" counts a partly kept promise as half and leaves out promises still in progress or not yet due.</p>` }
+function promNumbersTable(rows, perLabel) { return `<div class="table-wrap" tabindex="0" role="region" aria-label="Promise numbers, scrollable table"><table class="table"><caption>Promise verdicts by party, ${esc(perLabel.toLowerCase())}</caption><thead><tr><th scope="col">Party</th><th scope="col" class="n">Checked</th><th scope="col" class="n">Kept</th><th scope="col" class="n">Partly</th><th scope="col" class="n">Broken / dropped</th><th scope="col" class="n">In progress / not due / early action</th><th scope="col" class="n">% kept</th></tr></thead><tbody>
+  ${rows.map(({ p, L }) => { const sc = scoreOf(L); return `<tr><th scope="row">${ptTag(p, 'ptag')}</th><td class="n">${sc.n}</td><td class="n">${sc.kept}</td><td class="n">${sc.partly}</td><td class="n">${sc.broken + sc.abandoned}</td><td class="n">${sc.progress + sc.due + sc.early}</td><td class="n"><b>${sc.score == null ? '–' : sc.score + '%'}</b></td></tr>` }).join('')}</tbody></table></div>
+  <p class="micro muted">"% kept" counts a partly kept promise as half, out of past promises with a final verdict. Promises still in progress, not yet due, or made for the 2026 campaign are counted but never in the percentage.</p>` }
 
 V.promises = arg => { const pr = S.data.promises || {};
   const parties = Object.keys(pr).filter(p => (pr[p] || []).length).sort((a, b) => ptCmp(pname(a), pname(b)));
@@ -3080,16 +3304,16 @@ V.promises = arg => { const pr = S.data.promises || {};
   const first = parties.includes(arg) ? arg : parties[0];
   const sheetRow = (k, icon, t, sub) => `<button class="rowlink ov-row" type="button" data-prsheet="${k}" aria-haspopup="dialog"><span class="rowlink__icon">${ic(icon)}</span><span><span class="rowlink__title">${t}</span><span class="rowlink__sub" style="display:block">${sub}</span></span>${ic('chev')}</button>`;
   $('#main').innerHTML = sectionFrame('parties', 'parties/promises', `<header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('history', 'i--s')} Parties · Promises</p><h1>Promises against delivery</h1>
-      <p class="lede">Promises from past campaigns and coalition deals, each checked against what happened, with sources. Choose a period: the whole record, the last two governments, or just the current term.</p></header>
+      <p class="lede">Promises from past campaigns and coalition deals, each checked against what happened, with sources. Choose a period: the whole record, the last two governments, or the 2023–26 term. Promises made for the 2026 election are listed but not judged.</p></header>
     ${RUBRIC_HTML('How verdicts are decided')}
     <section class="stack" aria-labelledby="h-prby"><div class="shead"><div class="shead__row"><h2 id="h-prby">By party</h2><span class="micro muted">A to Z</span></div></div>
       ${periodBar('prper')}<div id="prtable" class="stack"></div>
-      <div class="rows">${sheetRow('byterm', 'history', 'By term, every party', 'When each promise was made: 2008–17, 2017–23, 2023–26 and the 2026 campaign')}${sheetRow('numbers', 'list', 'The numbers in a table', 'Checked, kept, partly, broken or dropped, in progress, for the period above')}</div></section>
+      <div class="rows">${sheetRow('byterm', 'history', 'By term, every party', 'The term each promise was made for: 2008–17, 2017–23, 2023–26, undated, and the 2026 campaign')}${sheetRow('numbers', 'list', 'The numbers in a table', 'Checked, kept, partly, broken or dropped, in progress, for the period above')}</div></section>
     <section class="stack" id="prsec" aria-labelledby="h-prall"><div class="shead"><div class="shead__row"><h2 id="h-prall">Every promise</h2><span class="micro muted">pick a party</span></div></div><div id="pl"></div></section>`);
   const rowsFor = per => parties.map(p => ({ p, L: (pr[p] || []).filter(x => inPeriod(x, per)) })).filter(r => r.L.length);
   const drawTable = () => { const per = promPer(); const t = $('#prtable');
-    t.innerHTML = `<div class="terms">${rowsFor(per).map(({ p, L }) => { const sc = scoreOf(L); return `<div class="term"><div class="term__h"><span><a class="ptag" href="#/parties/${esc(p)}/record" style="--pc:${pcolor(p)}"><span class="sw"></span>${esc(pname(p))}</a> · ${sc.n} checked</span><span class="muted">${sc.score == null ? 'Not yet due' : sc.score + '% kept'}</span></div>${verdictMeter(L, pname(p))}</div>` }).join('')}</div>
-      <div class="legend">${VERDICTS.map(v => `<span>${verdictChip(v)}</span>`).join('')}</div>
+    t.innerHTML = `<div class="terms">${rowsFor(per).map(({ p, L }) => { const sc = scoreOf(L); return `<div class="term"><div class="term__h"><span><a class="ptag" href="#/parties/${esc(p)}/record" style="--pc:${pcolor(p)}"><span class="sw"></span>${esc(pname(p))}</a> · ${sc.n} ${per === '2026' ? 'recorded' : 'checked'}</span><span class="muted">${per === '2026' ? 'Not yet due' : sc.score == null ? 'No final verdicts yet' : sc.score + '% kept'}</span></div>${verdictMeter(L, pname(p))}</div>` }).join('')}</div>
+      <div class="legend">${VERDICTS.filter(v => v !== 'early-action' || rowsFor(per).some(r => r.L.some(x => pStatus(x) === v))).map(v => `<span>${verdictChip(v)}</span>`).join('')}</div>
       <p class="micro muted">Parties were assessed on different numbers of promises and from different positions (government, support partner, opposition); read each party's track record for the context.</p>` };
   $('#main').querySelectorAll('[data-prsheet]').forEach(b => b.onclick = () => { const per = promPer(); const perL = (PERIODS.find(([k]) => k === per) || [, 'All time'])[1];
     if (b.dataset.prsheet === 'byterm') openSheet({ title: 'Promises by term', depth: ['Promises', 'By term', 'Sources'], at: 1, html: byTermTable(parties, pr) + RUBRIC_HTML('How verdicts are decided') });
@@ -3110,15 +3334,15 @@ function promiseList(el, party, parties = null) { const pr = S.data.promises || 
     <div id="prlist"></div></div>`;
   const draw = () => { const per = promPer();
     const inP = all.filter(x => inPeriod(x, per)); const qq = q.toLowerCase();
-    $('#prv', el).innerHTML = [['', 'All verdicts', inP.length], ...VERDICTS.filter(v => all.some(x => x.status === v)).map(v => [v, vMeta(v)[2], inP.filter(x => x.status === v).length])].map(([k, l, n]) => `<button class="chip" type="button" data-v="${k}" aria-pressed="${vf === k}">${k ? `<span class="v-${vMeta(k)[0]} vdot">${ic(vMeta(k)[1], 'i--xs')}</span>` : ''}${esc(l)} <span class="count">${n}</span></button>`).join('');
-    const L = inP.filter(x => (!vf || x.status === vf) && (!qq || JSON.stringify(x).toLowerCase().includes(qq)));
-    const card = x => `<article class="pol promise"><div class="row">${verdictChip(x.status)}<span class="micro muted">${esc(x.made || '')}${x.category ? ' · ' + esc(x.category) : ''}</span></div>
+    $('#prv', el).innerHTML = [['', 'All verdicts', inP.length], ...VERDICTS.filter(v => all.some(x => pStatus(x) === v)).map(v => [v, vMeta(v)[2], inP.filter(x => pStatus(x) === v).length])].map(([k, l, n]) => `<button class="chip" type="button" data-v="${k}" aria-pressed="${vf === k}">${k ? `<span class="v-${vMeta(k)[0]} vdot">${ic(vMeta(k)[1], 'i--xs')}</span>` : ''}${esc(l)} <span class="count">${n}</span></button>`).join('');
+    const L = inP.filter(x => (!vf || pStatus(x) === vf) && (!qq || JSON.stringify(x).toLowerCase().includes(qq)));
+    const card = x => `<article class="pol promise"><div class="row">${verdictChip(pStatus(x))}<span class="micro muted">${esc(x.made || '')}${x.category ? ' · ' + esc(x.category) : ''}</span></div>
         <p class="pol__t st">${esc(x.promise)}</p>${x.detail ? `<p class="small soft">${esc(x.detail)}</p>` : ''}
-        <p class="src">${(x.sources || []).length ? 'Sources: ' + ptSources(x.sources) : 'No source recorded'}${x.term ? ' · ' + esc(x.term) : ''}</p></article>`;
+        <p class="src">${(x.sources || []).length ? 'Sources: ' + ptSources(x.sources) : 'No source recorded'}${x.term ? ' · ' + esc(x.term) : ''}${pStatus(x) === 'early-action' ? ' · a 2026 campaign promise: recorded, not scored' : ''}</p></article>`;
     const head = `<p class="small muted">${L.length} promise${L.length === 1 ? '' : 's'}${per !== 'all' ? ' in this period' : ''}${!vf && !qq && L.length ? ', grouped by verdict: open a group' : ''}</p>`;
     if (!L.length) { $('#prlist', el).innerHTML = head + '<p class="muted">No promises match.</p>'; return }
     if (!vf && !qq) { // unfiltered: one fold per verdict, in the rubric's order
-      $('#prlist', el).innerHTML = head + `<div class="promise-groups">${VERDICTS.map(v => [v, L.filter(x => x.status === v)]).filter(([, G]) => G.length).map(([v, G]) => `<details class="disclose"><summary><span class="row row--nowrap" style="gap:10px">${verdictChip(v)}</span><span class="micro muted" style="margin-left:auto">${G.length}</span></summary><div class="disclose__body"><div class="promises">${G.map(card).join('')}</div></div></details>`).join('')}</div>`; return }
+      $('#prlist', el).innerHTML = head + `<div class="promise-groups">${VERDICTS.map(v => [v, L.filter(x => pStatus(x) === v)]).filter(([, G]) => G.length).map(([v, G]) => `<details class="disclose"><summary><span class="row row--nowrap" style="gap:10px">${verdictChip(v)}</span><span class="micro muted" style="margin-left:auto">${G.length}</span></summary><div class="disclose__body"><div class="promises">${G.map(card).join('')}</div></div></details>`).join('')}</div>`; return }
     $('#prlist', el).innerHTML = head + `<div class="promises">${L.slice(0, limit).map(card).join('')}</div>${L.length > limit ? `<div class="row"><button class="btn" type="button" id="prmore">Show the next ${Math.min(20, L.length - limit)}</button><span class="small muted">${limit} of ${L.length} shown</span></div>` : ''}`;
     const m = $('#prmore', el); if (m) m.onclick = () => { limit += 20; draw() } };
   ptScrollChips(el.querySelector('[data-prp]') && el.querySelector('[data-prp]').parentElement);
@@ -3137,6 +3361,10 @@ function acctLinks(a, extra = []) { const out = Object.entries(a || {}).filter((
 function officeEmail(email, party, N) { const m = String(email || '').toLowerCase().match(/@([a-z0-9.-]+)$/); if (!m) return '';
   const fp = (N.follow_parties || {})[party] || {}; const hosts = [ptHost((fp.accounts || {}).website), ptHost(fp.newsroom_url), ptHost((guideParty(party) || {}).website), 'parliament.govt.nz'].filter(Boolean).map(h => h.toLowerCase());
   return hosts.some(h => m[1] === h || m[1].endsWith('.' + h)) ? email : '' }
+// The same release is sometimes published twice (two URLs, one headline): keep the newest copy per party and headline.
+// Titles compare without case, accents, punctuation or spacing ("Te Pāti Māori" = "Te Pati Maori").
+const ptNormTitle = t => String(t || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&amp;/g, '&').replace(/[^a-z0-9]+/g, ' ').trim();
+function dedupeReleases(L) { const seen = new Set(); return L.filter(i => { const k = i.party + '|' + ptNormTitle(i.title); if (seen.has(k)) return false; seen.add(k); return true }) }
 const newsDate = d => { const t = new Date(d); return isNaN(t) ? '' : t.toLocaleDateString('en-NZ', { day: 'numeric', month: 'short' }) };
 function releaseRow(i, withParty = false) {
   return `<a class="release" href="${esc(i.url)}" target="_blank" rel="noopener nofollow"><span class="release__t">${esc(i.title)}</span><span class="release__m">${withParty && i.party !== 'government' ? ptTag(i.party) : ''}${i.party === 'government' ? '<span class="badge badge--outline">Ministerial</span>' : ''}<span>${newsDate(i.date)}</span><span>${ic('ext', 'i--xs')} via ${esc(i.source || ptHost(i.url))}</span></span></a>` }
@@ -3151,8 +3379,8 @@ V.newsroom = async party => {
   const sel = party && (N.parties[party] || N.follow_parties[party]) ? party : 'all';
   const mode = sel === 'all' && store.get('newsMode') === 'newest' ? 'newest' : 'three';
   const byDate = (a, b) => String(b.date).localeCompare(String(a.date));
-  const items = N.items.filter(i => i.party !== 'government').sort(byDate);
-  const gov = N.items.filter(i => i.party === 'government').sort(byDate);
+  const items = dedupeReleases(N.items.filter(i => i.party !== 'government').sort(byDate));
+  const gov = dedupeReleases(N.items.filter(i => i.party === 'government').sort(byDate));
   const win = N.window_days || 60;
   const quietLine = p => { const pm = N.parties[p] || N.follow_parties[p] || {}; return `<p class="small muted">No release in the last ${esc(win)} days in the feeds we read.${pm.newsroom_url ? ` <a href="${esc(pm.newsroom_url)}" target="_blank" rel="noopener nofollow">Their own newsroom ${ic('ext', 'i--xs')}</a>` : ''}</p>` };
   const group = (p, L, all = false) => `<section class="pgroup" style="--pc:${pcolor(p)}"><div class="pgroup__h"><h3>${esc(pname(p))}</h3>${all ? '' : `<a class="more micro" href="#/parties/news/${esc(p)}" aria-label="All releases from ${esc(pname(p))}">All ${ic('chev', 'i--xs')}</a>`}</div>${L.length ? L.map(i => releaseRow(i)).join('') : quietLine(p)}</section>`;
@@ -3344,7 +3572,8 @@ function dimPositions(Q, st) { const dims = {}; for (const q of Q.statements) { 
   const mean = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
   return Object.fromEntries(Object.entries(dims).map(([k, d]) => [k, { ...d, user: d.user.length >= 2 ? mean(d.user) : null, parties: Object.fromEntries(Object.entries(d.parties).filter(([, a]) => a.length >= 2).map(([s, a]) => [s, mean(a)])) }])) }
 // Every party, with a likely range: min–max of the shrunk score, the raw score, the score without low-confidence cells,
-// and the scores with ±1 cells moved one step toward / away from you. Buckets come from the shrunk score.
+// and the scores with ±1 cells moved one step toward / away from you. The tick drawn on the bar (m) is the middle of that
+// displayed range, and the label (bucket) is read from the tick, so the range, the tick, the label and the share text agree.
 function q2Results(Q, st) {
   const by = a => Object.fromEntries(a.map(x => [x.slug, x]));
   const base = by(q2Scores(Q, st)), low = by(q2Scores(Q, st, { dropLow: true })), tw = by(q2Scores(Q, st, { shift: 1 })), aw = by(q2Scores(Q, st, { shift: -1 }));
@@ -3353,8 +3582,9 @@ function q2Results(Q, st) {
     const common = { slug, M, need, limited, coded: meta.positions_recorded, lowCells: meta.low_confidence_cells };
     if (!b) return { ...common, n: 0, thin: true, bucket: 'thin' };
     const vals = [b.match, b.raw, (low[slug] || {}).match, (tw[slug] || {}).match, (aw[slug] || {}).match].filter(v => typeof v === 'number');
-    const m = Math.round(b.match * 100); const thin = !b.inRanking || limited;
-    return { ...common, ...b, lo: Math.round(Math.min(...vals) * 100), hi: Math.round(Math.max(...vals) * 100), m, thin, bucket: thin ? 'thin' : m >= 70 ? 'strong' : m >= 55 ? 'moderate' : 'weak' } }) }
+    const lo = Math.round(Math.min(...vals) * 100), hi = Math.round(Math.max(...vals) * 100), m = Math.round((lo + hi) / 2); const thin = !b.inRanking || limited;
+    return { ...common, ...b, lo, hi, m, thin, bucket: thin ? 'thin' : q2Bucket(m) } }) }
+const q2Bucket = m => m >= 70 ? 'strong' : m >= 55 ? 'moderate' : 'weak';
 const BUCKET = { strong: 'Strong', moderate: 'Moderate', weak: 'Weak', thin: 'Too few positions' };
 function q2Explainer(q) { if (q.explainer) return esc(q.explainer);
   const toA = q.polarity_sign >= 0; const lab = esc(q.dimension_label || QDIM_SHORT[q.dimension] || '');
@@ -3437,8 +3667,8 @@ function renderMatchResults(box, Q) {
   const mrow = (r, k) => `<div class="mrow${r.thin ? ' mrow--thin' : ''}" style="--pc:${pcolor(r.slug)}">
       <span class="mrow__name"><span class="sw"></span><span>${esc(pname(r.slug))}</span></span>
       <span class="row row--nowrap" style="gap:6px"><span class="bucket bucket--${r.bucket}">${BUCKET[r.bucket]}</span><button class="btn btn--s btn--quiet" type="button" data-why="${esc(r.slug)}" aria-label="Why: ${esc(pname(r.slug))}, statement by statement">Why</button></span>
-      <div class="mrow__bar" style="--lo:${r.thin ? 0 : r.lo}%;--hi:${r.thin ? 0 : r.hi}%;--m:${r.thin ? 0 : r.m}%;--i:${k}" role="img" aria-label="${esc(pname(r.slug))}: ${r.thin ? 'too few positions to compare' : `${BUCKET[r.bucket].toLowerCase()} agreement, likely between ${r.lo} and ${r.hi} percent`}"><i></i><b></b></div>
-      <span class="mrow__cov"><span class="coverage"><i style="--c:${Math.round(r.n / Math.max(1, M) * 100)}%"></i>Positions on ${r.n} of your ${M}</span>${r.thin ? `<span>${reason(r)}</span>` : `<span>Likely ${r.lo}–${r.hi} of 100</span>`}</span></div>`;
+      <div class="mrow__bar" style="--lo:${r.thin ? 0 : r.lo}%;--hi:${r.thin ? 0 : r.hi}%;--m:${r.thin ? 0 : r.m}%;--i:${k}" role="img" aria-label="${esc(pname(r.slug))}: ${r.thin ? 'too few positions to compare' : `${BUCKET[r.bucket].toLowerCase()} agreement, likely between ${r.lo} and ${r.hi} of 100, middle ${r.m}`}"><i></i><b></b></div>
+      <span class="mrow__cov"><span class="coverage"><i style="--c:${Math.round(r.n / Math.max(1, M) * 100)}%"></i>Positions on ${r.n} of your ${M}</span>${r.thin ? `<span>${reason(r)}</span>` : `<span>Likely ${r.lo}–${r.hi} of 100 · middle ${r.m}</span>`}</span></div>`;
   const dims = dimPositions(Q, st); const dimKeys = QDIMS.filter(d => dims[d]);
   const withDims = az.filter(s => Object.values(dims).some(d => d.parties[s] != null));
   const cmp = (st.cmp || []).filter(s => withDims.includes(s)).slice(0, 2);
@@ -3451,8 +3681,9 @@ function renderMatchResults(box, Q) {
     <div class="split split--7-5">
       <section class="stack" aria-label="Every party">
         <div class="legend"><span><i class="bucket bucket--strong">Strong</i> 70+</span><span><i class="bucket bucket--moderate">Moderate</i> 55–69</span><span><i class="bucket bucket--weak">Weak</i> under 55</span><span><i class="bucket bucket--thin">Too few positions</i></span></div>
+        <p class="micro muted">The label is read from the tick on each bar, which marks the middle of the likely range.</p>
         <div>${rows.map(mrow).join('')}</div>
-        <p class="micro muted">${sort === 'close' ? 'Sorted by the middle of each range; parties with too few positions go last. Small differences mean nothing.' : sort === 'ballot' ? 'Ballot order: A–Z by each party’s full registered name.' : 'A–Z by short name.'} Bars show the score with and without the pull toward 50, with low-confidence positions set aside, and with ±1 positions moved a step either way.</p>
+        <p class="micro muted">${sort === 'close' ? 'Sorted by the middle of each range; parties with too few positions go last. Small differences mean nothing.' : sort === 'ballot' ? 'Ballot order: A–Z by each party’s full registered name.' : 'A–Z by short name.'} Each bar runs from the lowest to the highest of five versions of the score: with and without the pull toward 50, with low-confidence positions set aside, and with ±1 positions moved a step either way. Labels: Strong if the middle is 70 or more, Moderate 55–69, Weak under 55.</p>
       </section>
       <aside class="stack stack--l">
         <section class="stack" aria-labelledby="h-dims">
@@ -3474,7 +3705,7 @@ function renderMatchResults(box, Q) {
   box.querySelectorAll('[data-cmp]').forEach(b => b.onclick = () => { const s2 = q2State(); let c = (s2.cmp || []).filter(s => withDims.includes(s)); const s = b.dataset.cmp;
     if (c.includes(s)) c = c.filter(x => x !== s); else { c.push(s); if (c.length > 2) c.shift() } s2.cmp = c; q2Save(s2); renderMatchResults(box, Q); const nb = box.querySelector(`[data-cmp="${CSS.escape(s)}"]`); if (nb) nb.focus({ preventScroll: true }) });
   $('#qshare', box).onclick = () => { const text = [`Ballot Book NZ · Find your match (quiz ${Q.version || ''})`, `My answers on ${M} of ${N} statements compared with all ${R.length} parties, A–Z:`, '',
-      ...az.map(s => { const r = R.find(x => x.slug === s); return `${pname(s)}: ${r.thin ? 'too few positions to compare' : `${BUCKET[r.bucket].toLowerCase()} (likely ${r.lo}–${r.hi} of 100)`}` }), '',
+      ...az.map(s => { const r = R.find(x => x.slug === s); return `${pname(s)}: ${r.thin ? 'too few positions to compare' : `${BUCKET[r.bucket].toLowerCase()} (likely ${r.lo}–${r.hi} of 100, middle ${r.m})`}` }), '',
       'Information, not advice: it shows how answers line up with published positions, and is not a recommendation about how to vote.', chooseShareURL('choose/quiz')].join('\n');
     chooseCopy(text, 'Share all ' + R.length) };
   box.querySelectorAll('[data-why]').forEach(b => b.onclick = () => q2Why(Q, st, b.dataset.why, R.find(r => r.slug === b.dataset.why)));
@@ -3543,25 +3774,26 @@ V.swipe = async () => {
   let deck = buildDeck(S.swipe, st.done, topic); let i = 0, sess = 0, busy = false;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const topics = Object.keys(TOPIC_NAMES).filter(t => S.swipe.some(c => c.topic === t));
-  // Phone first screen: one-line heading, one scrolling row of topics, the card and the three buttons. The reveal of the
-  // last card sits in a strip under the buttons (phone/tablet) or in the side column (desktop), so it never moves the card.
+  // Phone first screen: one-line heading, one scrolling row of topics, the round counter, the card and the three buttons.
+  // After a decision the last card's party shows in a short strip above the next card (phone/tablet) or in the side
+  // column (desktop, where the topics also move to the side column so the card and buttons fit the first screen).
   $('#main').innerHTML = sectionFrame('choose', 'choose/swipe', `<div class="swpg">
     ${chooseHead('cards', 'Choose · Policy swipe', 'Agree or disagree?', 'Real 2026 policies, party hidden until you decide.').replace('class="pagehead"', 'class="pagehead swpg__head"')}
-    <div class="chips chips--scroll" role="group" aria-label="Topic" id="sw-topics">${[['', 'All topics'], ...topics.map(t => [t, TOPIC_NAMES[t]])].map(([t, l]) => `<button class="chip" type="button" data-topic="${esc(t)}" aria-pressed="${t === topic}">${esc(l)}</button>`).join('')}</div>
-    <div class="split split--7-5">
+    <div class="split split--7-5 swpg__split">
+      <div class="chips chips--scroll swpg__topics" role="group" aria-label="Topic" id="sw-topics">${[['', 'All topics'], ...topics.map(t => [t, TOPIC_NAMES[t]])].map(([t, l]) => `<button class="chip" type="button" data-topic="${esc(t)}" aria-pressed="${t === topic}">${esc(l)}</button>`).join('')}</div>
       <section class="stack swpg__main" aria-label="Card">
         <div class="progress-line" id="sw-prog"></div>
+        <div class="swlast" id="sw-last"></div>
         <div class="deck" id="deck"></div>
         <div class="swipe-actions" id="acts" role="group" aria-label="Your verdict on this card">
           <button class="swipe-btn swipe-btn--disagree" type="button" data-swipe="disagree" aria-label="Disagree with this policy" aria-keyshortcuts="ArrowLeft"><i>${ic('x')}</i>Disagree</button>
           <button class="swipe-btn swipe-btn--skip" type="button" data-swipe="skip" aria-label="Not sure, skip this policy" aria-keyshortcuts="ArrowUp"><i>${ic('minus')}</i>Not sure</button>
           <button class="swipe-btn swipe-btn--agree" type="button" data-swipe="agree" aria-label="Agree with this policy" aria-keyshortcuts="ArrowRight"><i>${ic('check')}</i>Agree</button>
         </div>
-        <div class="swlast" id="sw-last"></div>
         <p class="micro muted" style="text-align:center">Swipe the card, use the buttons, or the arrow keys: → agree, ← disagree, ↑ not sure. Summaries are each party’s own policy, described neutrally.</p>
         <p class="sr-only" id="sw-say" role="status"></p>
       </section>
-      <aside class="stack stack--l">
+      <aside class="stack stack--l swpg__aside">
         <div id="sw-reveal" class="swpg__reveal"></div>
         <div class="rows" id="sw-rows"></div>
         ${chooseUnknownsDisclose(['The tally only covers the cards you happened to see, so a party you saw twice can swing from 0% to 100%.', 'Some parties publish far fewer policies; you may see the same few from them.', 'A specific promise can look very different from a party’s overall direction. Find your match is the more careful tool.'], ['How the swipe works', 'guide/quiz-research.md'])}
@@ -3576,7 +3808,7 @@ V.swipe = async () => {
       <p id="sc-s" class="scard__s">${esc(c.statement)}</p>
       ${c.how ? `<div class="scard__body"><p class="scard__how" id="sc-how"><b>What it would do:</b> ${esc(c.how)}</p><button class="linkbtn small scard__more" type="button" aria-expanded="false" aria-controls="sc-how" hidden>Show all of it</button></div>` : ''}
       ${c.why ? `<details class="disclose" style="border-top:1px solid var(--line)"><summary class="small">The reasoning given</summary><div class="disclose__body small"><p>${esc(c.why)}</p></div></details>` : ''}
-      <p class="src">${ic('doc')} From a party’s 2026 policy document · summarised, meaning kept</p></article>`;
+      <p class="src">${ic('doc')}<span>From a party’s 2026 policy · summarised, meaning kept</span></p></article>`;
   // The tally and the liked list sit behind rows that open the sheet, so the deck stays the first screen.
   const tallySheet = () => openSheet({ title: 'Your tally so far', html: `<div class="stack">${swipeTallyHTML(st, true)}<a class="more small" href="#/choose/results/swipe">All your results ${ic('chev', 'i--xs')}</a>${RESULT_DISCLAIMER}</div>` });
   const likedSheet = () => { const liked = swipeLiked(st); openSheet({ title: `Policies you agreed with (${liked.length})`, html: `<div class="stack"><p class="small soft">Newest first. Each one’s party is shown now that you’ve decided.</p>${swipeLikedList(liked)}${RESULT_DISCLAIMER}</div>` }) };
@@ -3597,24 +3829,27 @@ V.swipe = async () => {
     const how = $('#sc-how'), more = stage.querySelector('.scard__more');
     if (how && more && how.scrollHeight > how.clientHeight + 2) { more.hidden = false; more.onclick = () => { const open = more.getAttribute('aria-expanded') !== 'true'; $('#sc-top').classList.toggle('scard--open', open); more.setAttribute('aria-expanded', open); more.textContent = open ? 'Show less' : 'Show all of it' } }
     attachDrag($('#sc-top')) };
-  // After a decision, scroll (only if needed) so the next card's top is on screen, below the sticky masthead.
+  // After a decision, bring the round counter to the top of the screen (just under the sticky masthead) so the reveal strip,
+  // the next card's top and the buttons are all in view. On a phone this always happens; wider screens scroll only if needed.
   const keepInView = () => { const mast = $('.mast'); const topLim = (mast ? Math.max(0, mast.getBoundingClientRect().bottom) : 0) + 8;
-    const tb = $('.tabbar'); const tbh = tb && getComputedStyle(tb).display !== 'none' && document.body.classList.contains('has-tabbar') ? tb.getBoundingClientRect().height : 0;
-    const t = $('#sw-prog').getBoundingClientRect().top, b = (acts.hidden ? stage : acts).getBoundingClientRect().bottom;
-    if (t < topLim || b > innerHeight - tbh - 8) window.scrollTo({ top: Math.max(0, scrollY + t - topLim), behavior: reduce ? 'auto' : 'smooth' }) };
+    const t = $('#sw-prog').getBoundingClientRect().top; const card = $('#sc-top') || stage.firstElementChild;
+    // the buttons are sticky, so the question is whether the card is cut off at the top, or hidden behind the buttons
+    const hidden = card && !acts.hidden ? Math.max(0, card.getBoundingClientRect().bottom - acts.getBoundingClientRect().top - 12) : 0;
+    let dy = 0; if (matchMedia('(max-width: 1023px)').matches || t < topLim) dy = t - topLim; else if (hidden) dy = Math.min(hidden, t - topLim);
+    if (Math.abs(dy) > 4) window.scrollTo({ top: Math.max(0, scrollY + dy), behavior: reduce ? 'auto' : 'smooth' }) };
   const reveal = (c, verdict) => { const faces = typeof leaderFaces === 'function' ? leaderFaces(c.party) : []; const t = tallyFor(st, c.party); const name = esc(chooseFullName(c.party));
     const verdictBadge = `<span class="badge badge--outline">${ic(verdict === 'agree' ? 'check' : 'x', 'i--xs')} You ${verdict === 'agree' ? 'agreed' : 'disagreed'}</span>`;
     const soFar = `So far you’ve agreed with <b>${t.agree}</b> of the <b>${t.n}</b> ${esc(pname(c.party))} polic${t.n === 1 ? 'y' : 'ies'} you’ve seen.`;
     const doc = c.doc ? `<button class="linkbtn" type="button" data-doc="${esc(c.party)}|${esc(c.doc)}">Read the full policy</button>` : '';
-    $('#sw-last').innerHTML = `<div class="swlast__in" style="--pc:${pcolor(c.party)}"><p class="swlast__h"><span class="sw"></span><span>Last card was from <b>${name}</b></span>${verdictBadge}</p>
-      <p class="small soft">${soFar} ${doc}${doc ? ' · ' : ''}<a href="#/parties/${esc(c.party)}">About this party</a></p></div>`;
+    $('#sw-last').innerHTML = `<div class="swlast__in" style="--pc:${pcolor(c.party)}"><p class="swlast__h"><span class="sw"></span><span>Last card: <b>${name}</b> · you ${verdict === 'agree' ? 'agreed' : 'disagreed'}</span></p>
+      <p class="micro soft">So far: ${t.agree} of ${t.n} agreed${doc ? ` · ${doc.replace('Read the full policy', 'Full policy')}` : ''} · <a href="#/parties/${esc(c.party)}">Party page</a></p></div>`;
     $('#sw-reveal').innerHTML = `<section class="reveal" style="--pc:${pcolor(c.party)}" aria-labelledby="rv">
       <div class="reveal__who">${faces[0] ? faceHTML(faces[0], c.party) : ''}<span class="stack stack--s" style="gap:2px"><span class="micro muted">Last card was from</span><span id="rv" class="reveal__name">${name}</span></span></div>
       <p class="small">${verdictBadge.replace('badge--outline', 'badge--ink')}</p>
       <p style="font-weight:700">${esc(c.statement)}</p>
       <p class="small soft">${soFar}</p>
       <div class="row">${c.doc ? `<button class="btn btn--s" type="button" data-doc="${esc(c.party)}|${esc(c.doc)}">${ic('doc', 'i--xs')} Read the full policy</button>` : ''}<a class="btn btn--s btn--quiet" href="#/parties/${esc(c.party)}">About this party</a></div></section>` };
-  const skipped = () => { $('#sw-last').innerHTML = `<div class="swlast__in"><p class="swlast__h"><span class="badge badge--outline">${ic('minus', 'i--xs')} Skipped</span><span class="small soft">Its party stays hidden, and it isn’t counted.</span></p></div>`;
+  const skipped = () => { $('#sw-last').innerHTML = `<div class="swlast__in"><p class="swlast__h"><span>Last card: skipped</span></p><p class="micro soft">Its party stays hidden, and it isn’t counted.</p></div>`;
     $('#sw-reveal').innerHTML = `<div class="panel panel--sunk"><p class="small soft"><b>You skipped the last card.</b> Its party stays hidden, and it isn’t counted in your tally.</p></div>` };
   const decide = verdict => { if (busy) return; const c = deck[i]; if (!c) return; if (acts.hidden) return; busy = true;
     st.done[c.id] = { v: verdict, party: c.party, t: Date.now() }; saveSwipe(st);
@@ -4003,7 +4238,8 @@ async function mapContext(year, type) { const idx = S.geo.index; const setId = i
 
 V.map = async (startYear, startSlug) => {
   $('#main').innerHTML = sectionFrame('seats', 'seats/map', `<p class="muted">Loading the map…</p>`);
-  await loadPeople(); await loadGeo(2020);
+  const route = S.route; await loadPeople(); await loadGeo(2020);
+  if (S.route !== route) return;   // the reader moved on while the boundaries loaded: don't draw over the new page
   const idx = S.geo.index;
   let year = MAP_YEARS.includes(+startYear) ? +startYear : (MAP_YEARS.includes(+store.get('mapYear')) ? +store.get('mapYear') : 2023);
   const layerArg = ['maori', 'general'].includes(startSlug) ? startSlug : null; if (layerArg) startSlug = undefined;
@@ -4488,12 +4724,14 @@ function trendSVG(polls, parties, W, H, dots, long, label) {
   for (const p of parties) { const pc = pcolor(p); const pp = sorted.filter(x => typeof x.parties[p] === 'number');
     let part = '';
     const res = els.map(e => { const r = (e.parties || []).find(x => x.party === p); return r && r.party_vote_pct != null ? [e.date || e.year + '-11-01', r.party_vote_pct, e.year] : null }).filter(Boolean);
-    if (long && res.length > 1) part += `<polyline class="elx" points="${res.map(([d, v]) => `${xs(d).toFixed(1)},${ys(v).toFixed(1)}`).join(' ')}"/>`;
+    // every party line is drawn over a 1px --ring underlay, so black and yellow lines read on either theme
+    if (long && res.length > 1) { const pts = res.map(([d, v]) => `${xs(d).toFixed(1)},${ys(v).toFixed(1)}`).join(' '); part += `<polyline class="elx elx--ring" points="${pts}"/><polyline class="elx" points="${pts}"/>` }
     part += res.map(([d, v, y]) => `<circle class="res" cx="${xs(d).toFixed(1)}" cy="${ys(v).toFixed(1)}" r="${W < 500 ? 3.5 : 4.5}" data-tip="${y} election result · ${esc(pname(p))} ${fmt(v, 2)}%"></circle>`).join('');
     if (dots) part += pp.map(x => `<circle class="dot" cx="${xs(x.date).toFixed(1)}" cy="${ys(x.parties[p]).toFixed(1)}" r="3" data-tip="${esc(x.pollster)} · ${esc(seatDate(x.date))} · ${esc(pname(p))} ${fmt(x.parties[p])}%${x.sample_size ? ' · sample ' + Number(x.sample_size).toLocaleString('en-NZ') : ''}"></circle>`).join('');
     if (pp.length > 3) { const avg = pp.map((x, i) => { const w = pp.slice(Math.max(0, i - 7), i + 1); return [x.date, w.reduce((a, y) => a + y.parties[p], 0) / w.length] });
       const xy = avg.map(([d, v]) => [xs(d), ys(v)]); let len = 0; for (let k = 1; k < xy.length; k++) len += Math.hypot(xy[k][0] - xy[k - 1][0], xy[k][1] - xy[k - 1][1]);
-      part += `<polyline class="avg" style="--len:${Math.ceil(len)}" points="${xy.map(([a, b]) => `${a.toFixed(1)},${b.toFixed(1)}`).join(' ')}"/>`;
+      const pts = xy.map(([a, b]) => `${a.toFixed(1)},${b.toFixed(1)}`).join(' ');
+      part += `<polyline class="avg avg--ring" style="--len:${Math.ceil(len)}" points="${pts}"/><polyline class="avg" style="--len:${Math.ceil(len)}" points="${pts}"/>`;
       const [ld, lv] = avg[avg.length - 1]; ends.push({ x: xs(ld) + 5, y: ys(lv) + 4, v: lv, p }) }
     g += `<g style="--pc:${pc}">${part}</g>` }
   // end labels, nudged apart so they don't overlap
@@ -4524,18 +4762,20 @@ function pastElectionsCharts() {
    On election day before 7pm it shows only the countdown and the explainer: nothing predictive. When a results object
    ({ parties: [{ party, party_vote_pct, electorate_seats, list_seats, total_seats }], counted_pct?, official?, updated?,
    source_url?, electorates? }) appears for 2026, it renders the live seat count. */
-V.results = async () => { await resultsView(); armResultsRefresh() };
-async function resultsView() {
+// Resolves as soon as the page is painted: the electorate map, the countdown and the refresh timer start without being awaited.
+V.results = () => { resultsView(); armResultsRefresh() };
+function resultsView() {
   const ph = electionPhase(), eday = ph === 'electionday', R = eday ? null : results2026();
   const body = R ? resultsLive(R) : resultsWaiting(ph);
   $('#main').innerHTML = sectionFrame('seats', 'seats/results', body);
   if (!R) { const tick = () => { const el = $('#rcount'); if (!el) return false; el.innerHTML = countdownHTML(); return true };
     tick(); const t = setInterval(() => { if (!tick()) clearInterval(t) }, 30000) }
   if (R) { bindElectionTable($('#rtable')); bindJumps($('#main'));
-    if ((R.electorates || []).length) { try { await loadGeo(2025); const c = await mapContext(2026, 'general'); const box = $('#rmap'); if (!box) return;
-      box.innerHTML = `<svg class="nzmap" viewBox="0 0 520 640" role="img" aria-label="Map of general electorates coloured by the 2026 winner" aria-describedby="rmapleg rmapalt"><text class="yr" x="20" y="96" font-size="96">2026</text>${mapPaths(c.feats, c.resFor, c.idx.bbox_mainland, 520, 640, null)}</svg>`;
-      const counts = {}; c.feats.forEach(f => { const r = c.resFor(f); const p = r && r.party ? r.party : 'vacant'; counts[p] = (counts[p] || 0) + 1 }); $('#rmapleg').innerHTML = legendHTML(counts, true) } catch { } } }
+    if ((R.electorates || []).length) resultsMap() }
 };
+async function resultsMap() { try { await loadGeo(2025); const c = await mapContext(2026, 'general'); const box = $('#rmap'); if (!box || S.route !== 'seats/results') return;
+      box.innerHTML = `<svg class="nzmap" viewBox="0 0 520 640" role="img" aria-label="Map of general electorates coloured by the 2026 winner" aria-describedby="rmapleg rmapalt"><text class="yr" x="20" y="96" font-size="96">2026</text>${mapPaths(c.feats, c.resFor, c.idx.bbox_mainland, 520, 640, null)}</svg>`;
+      const counts = {}; c.feats.forEach(f => { const r = c.resFor(f); const p = r && r.party ? r.party : 'vacant'; counts[p] = (counts[p] || 0) + 1 }); $('#rmapleg').innerHTML = legendHTML(counts, true) } catch { } }
 function countdownHTML() { const ms = ELECTION_DAY.getTime() - Date.now();
   if (ms <= 0) return `<span class="figure">7pm</span><span class="soft">Voting has closed. The first results usually arrive within the hour.</span>`;
   const d = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5), m = Math.floor(ms % 36e5 / 6e4);
