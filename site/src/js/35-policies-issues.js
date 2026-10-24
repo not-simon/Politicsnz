@@ -13,10 +13,14 @@ function docButtons(p, pol) {
   return `<p class="src">${docs.length ? `<button class="linkbtn" type="button" data-doc="${esc(p)}|${esc(docs[0])}">Read the full text</button>${docs.length > 1 ? `<span>${docs.length} documents</span>` : ''}` : ''}
     ${uniq.map(x => { const t = String(x.title || '').replace(/^['"‘]|['"’]$/g, '').replace(/['"’],.*$/, ''); return ptExt(x.url, esc(t ? (t.length > 48 ? t.slice(0, 46) + '…' : t) : ptHost(x.url) || 'original source') + ' ' + ic('ext', 'i--xs')) }).join('')}${pol.summary_source ? `<span>Summary: ${esc(String(pol.summary_source).replace(/^archive\b/, 'Ballot Book'))}</span>` : ''}</p>`;
 }
+// Freshness: withdrawn (no longer on policy.nz since capture) stays listed, greyed, at the end of its group; new ones get a badge.
+const polGone = pol => !!pol.withdrawn && !(pol.reinstated && String(pol.reinstated) >= String(pol.withdrawn));
+const polOrder = L => L.filter(x => !polGone(x)).concat(L.filter(polGone));
+function polBadges(pol) { return `${polGone(pol) ? `<span class="badge badge--outline">Withdrawn ${esc(ptDate(pol.withdrawn))}</span>` : ''}${pol.reinstated && !polGone(pol) ? `<span class="badge badge--outline">Back ${esc(ptDate(pol.reinstated))}</span>` : ''}${pol.added ? `<span class="badge badge--outline">New ${esc(ptDate(pol.added))}</span>` : ''}` }
 function policyCard(p, pol, showParty = true) {
   const sm = pol.summary || {};
-  return `<article class="pol" style="--pc:${pcolor(p)}"><p class="pol__t st">${esc(pol.statement)}</p>
-    <p class="pol__m">${showParty ? ptTag(p) : ''}<span>${esc(TOPIC_NAMES[topicOf(pol)] || 'Other')}</span>${isKey(pol) ? '<span class="badge badge--outline">Headline policy</span>' : ''}</p>
+  return `<article class="pol${polGone(pol) ? ' pol--gone' : ''}" style="--pc:${pcolor(p)}"><p class="pol__t st">${esc(pol.statement)}</p>
+    <p class="pol__m">${showParty ? ptTag(p) : ''}<span>${esc(TOPIC_NAMES[topicOf(pol)] || 'Other')}</span>${isKey(pol) ? '<span class="badge badge--outline">Headline policy</span>' : ''}${polBadges(pol)}</p>
     ${sm.why || sm.how || sm.text || pol.costing ? `<details class="disclose disclose--pol"><summary>Why and how</summary><div class="disclose__body small">${sm.why ? `<p><b>Why:</b> ${esc(sm.why)}</p>` : ''}${sm.how ? `<p><b>How:</b> ${esc(sm.how)}</p>` : ''}${sm.text ? `<p>${esc(sm.text)}</p>` : ''}${sm.cost || pol.costing ? `<p><b>Cost:</b> ${esc(sm.cost || (typeof pol.costing === 'string' ? pol.costing : JSON.stringify(pol.costing)))}</p>` : ''}</div></details>` : ''}
     ${docButtons(p, pol)}</article>`;
 }
@@ -38,11 +42,11 @@ async function policyBrowser(el, only = null, { topic = '' } = {}) {
     const match = pol => (!t || topicOf(pol) === t) && matchQ(pol); const box = $('#plist', el);
     if (t && !single) { const ps = parties.filter(p => on.has(p));   // a topic picked: parties side by side, A–Z
       box.innerHTML = `<div class="shead"><div class="shead__row"><h2 class="h3">${esc(TOPIC_NAMES[t] || 'Other')}, party by party</h2><span class="micro muted">${ps.length} parties, A to Z</span></div></div><p class="small muted">Each column shows the first three of that party's published policies on this topic; open "All" for the rest.</p>
-        <div class="cols ${ps.length > 2 ? 'cols--3' : 'cols--2'} pcols">${ps.map(p => { const L = S.policies[p].filter(match);
+        <div class="cols ${ps.length > 2 ? 'cols--3' : 'cols--2'} pcols">${ps.map(p => { const L = polOrder(S.policies[p].filter(match));
         return `<section class="pgroup" style="--pc:${pcolor(p)}"><div class="pgroup__h"><h3>${esc(pname(p))}</h3><a class="more micro" href="#/parties/${esc(p)}/policies" aria-label="All ${S.policies[p].length} ${esc(pname(p))} policies">All ${S.policies[p].length} policies</a></div>${L.length ? L.slice(0, 3).map(x => policyCard(p, x, false)).join('') + (L.length > 3 ? `<details class="disclose disclose--more"><summary>All ${L.length} on this topic <span class="micro muted" style="margin-left:auto">${L.length - 3} more</span></summary><div class="disclose__body">${L.slice(3).map(x => policyCard(p, x, false)).join('')}</div></details>` : '') : '<p class="small muted">Nothing published on this topic.</p>'}</section>` }).join('')}</div>`; return }
-    const all = []; parties.filter(p => on.has(p)).forEach(p => S.policies[p].filter(match).forEach(x => all.push([p, x])));
+    const all = []; parties.filter(p => on.has(p)).forEach(p => polOrder(S.policies[p].filter(match)).forEach(x => all.push([p, x])));
     if (single && !q && !t) { // one party, no filter: grouped by topic
-      const by = {}; all.forEach(([p, x]) => (by[topicOf(x)] = by[topicOf(x)] || []).push([p, x]));
+      const by = {}; all.forEach(([p, x]) => (by[topicOf(x)] = by[topicOf(x)] || []).push([p, x])); Object.keys(by).forEach(k => { by[k] = by[k].filter(([, x]) => !polGone(x)).concat(by[k].filter(([, x]) => polGone(x))) });
       box.innerHTML = `<p class="small muted">${all.length} policies in ${Object.keys(by).length} topics. Open a topic, or pick one above.</p><div>${Object.entries(by).sort((a, b) => b[1].length - a[1].length || ptCmp(TOPIC_NAMES[a[0]] || 'Other', TOPIC_NAMES[b[0]] || 'Other')).map(([tp, xs]) => `<details class="disclose"><summary>${esc(TOPIC_NAMES[tp] || 'Other')} <span class="micro muted" style="margin-left:auto">${xs.length}</span></summary><div class="disclose__body">${xs.map(([p, x]) => policyCard(p, x, false)).join('')}</div></details>`).join('')}</div>`;
       return }
     box.innerHTML = `<p class="small muted">${all.length} matching ${all.length === 1 ? 'policy' : 'policies'}${single ? '' : ', grouped by party A to Z'}</p><div>${all.slice(0, limit).map(([p, x]) => policyCard(p, x, !single)).join('')}</div>${all.length > limit ? `<div class="row"><button class="btn" type="button" id="more">Show the next ${Math.min(40, all.length - limit)}</button><span class="small muted">${limit} of ${all.length} shown</span></div>` : ''}`;
@@ -109,4 +113,4 @@ async function showIssuePolicies(p, ids) {
   if (!S.policies) S.policies = await getJSON('data/policies.json').catch(() => ({}));
   const set = new Set(ids.split(',')); const ps = (S.policies[p] || []).filter(x => set.has(x.id));
   openSheet({ title: `${pname(p)}: related policies`, depth: DOC_DEPTH, at: 1, src: ptTag(p),
-    html: ps.length ? `<div>${ps.map(x => policyCard(p, x, false)).join('')}</div>` : '<p class="muted">These policies are still being added.</p>' }) }
+    html: ps.length ? `<div>${polOrder(ps).map(x => policyCard(p, x, false)).join('')}</div>` : '<p class="muted">These policies are still being added.</p>' }) }

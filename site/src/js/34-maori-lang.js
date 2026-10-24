@@ -44,7 +44,13 @@ function maoriSeatHTML(e, r) {
       <div class="row"><a class="btn btn--s" href="#/vote/electorate/${esc(e.slug)}">${ic('pin', 'i--s')} ${esc(e.name)} electorate page</a><a class="btn btn--s btn--quiet" href="#/seats/map/2023/${esc(e.slug)}">${ic('map', 'i--s')} On the map</a></div>
     </section>` }
 
-V.maoriHub = async () => {
+function maoriSeatRow(e, r) { const mp = e.sitting_mp; const pn = p => esc(S.data.parties[p] ? pname(p) : p);
+  const by = r && r.majority ? ` by ${Number(r.majority).toLocaleString('en-NZ')}` : '';
+  const same = mp && r && elSlug(mp.name) === elSlug(r.winner) && mp.party === r.party;
+  const line = same ? `MP: ${esc(mp.name)} (${pn(mp.party)}), won 2023${by}` : [mp ? `MP: ${esc(mp.name)} (${pn(mp.party)})` : '', r ? `2023: ${esc(r.winner)} (${pn(r.party)})${by}` : ''].filter(Boolean).join(' · ');
+  return `<button class="rowlink rowlink--plain" type="button" data-seat="${esc(e.slug)}" aria-haspopup="dialog"><span><span class="rowlink__title"><span lang="mi">${esc(e.name)}</span> <span class="micro muted">${esc(String(e.region || '').replace(/\s*\(Māori electorate\)\s*/i, ''))}</span></span><span class="rowlink__sub" style="display:block">${line}</span></span>${ic('chev')}</button>` }
+
+V.maoriHub = async arg => {
   $('#main').innerHTML = sectionFrame('vote', 'vote/maori', `<div class="stack stack--xl" id="mh-body"><p class="small muted">Loading…</p></div>`);
   await loadPeople(); const I = await langData('i18n'); const t = k => miTerm(I, 'labels', k);
   const E = (S.data.electorates || []).filter(e => e.type === 'maori').sort((a, b) => a.name.localeCompare(b.name, 'en-NZ'));
@@ -55,16 +61,15 @@ V.maoriHub = async () => {
   $('#mh-body').innerHTML = `
     <header class="pagehead"><p class="eyebrow eyebrow--signal">${ic('vote', 'i--s')} Vote · Māori electorates</p>
       <h1>${inLang('mi', miTerm(I, 'vote_pages', 'vote/maori') || 'Ngā rohe pōti Māori')} · Māori electorates</h1>
-      <p class="lede">Seven of the 71 electorates are Māori electorates. If you’re on the Māori roll, your electorate vote is for a candidate in one of them. Everyone’s party vote is the same, whichever roll they’re on.</p>
-      <div class="micro notec">${NOT_EC}</div></header>
+      <p class="lede">Seven of the 71 electorates are Māori electorates. If you’re on the Māori roll, your electorate vote is for a candidate in one of them. Everyone’s party vote is the same, whichever roll they’re on.</p></header>
     <div class="callout callout--signal"><p><b>Your roll is fixed for this election.</b> The last day to change between the Māori roll and the general roll was midnight, 6 August 2026. Not sure which roll you’re on? <a href="${MH.check}" target="_blank" rel="noopener">Check at vote.nz</a> or call 0800 36 76 56.</p></div>
     <section class="stack" aria-labelledby="mh-how">
       <div class="shead"><h2 id="mh-how">${biText('mi', 'Te rārangi Māori', 'How the Māori roll works')}</h2></div>
+      <div class="stack stack--s"><h3 class="h4">${biText('mi', 'Te rārangi Māori, te rārangi whānui', 'The Māori roll and the general roll')}</h3>
+          <p>There are two electoral rolls. On the ${term('maori_roll', 'Māori roll')} you vote for a candidate in a Māori electorate; on the ${term('general_roll', 'general roll')} you vote for a candidate in a general electorate. Your roll decides which electorate candidates you can choose from.</p>
+           <p>You vote for the same list of parties whichever roll you’re on. The Electoral Commission says of the choice: “There is no right or wrong.”</p>
+          ${srcRow([[MH.roll, 'vote.nz: Māori roll or general roll?'], [MH.choice, 'vote.nz: What does your choice mean for you?']])}</div>
       <div>
-        ${dis('Te rārangi Māori, te rārangi whānui', 'The Māori roll and the general roll',
-          `<p>There are two electoral rolls. On the ${term('maori_roll', 'Māori roll')} you vote for a candidate in a Māori electorate; on the ${term('general_roll', 'general roll')} you vote for a candidate in a general electorate. Your roll decides which electorate candidates you can choose from.</p>
-           <p>You vote for the same list of parties whichever roll you’re on. The Electoral Commission says of the choice: “There is no right or wrong.”</p>`,
-          [[MH.roll, 'vote.nz: Māori roll or general roll?'], [MH.choice, 'vote.nz: What does your choice mean for you?']], true)}
         ${dis('Ko te rēhita hei kaipōti mēnā he Māori koe', 'Enrolling if you are Māori: who can be on the Māori roll',
           `<p>If you are of New Zealand Māori descent, you can choose to enrol on the Māori roll or the general roll. You make the choice when you first enrol.</p>
            <p>This has been the rule since the Electoral Amendment Act 1975, which defined a Māori as a person of New Zealand Māori descent. Everyone else enrols on the general roll.</p>`,
@@ -86,14 +91,18 @@ V.maoriHub = async () => {
     </section>
     <section class="stack" aria-labelledby="mh-seats">
       <div class="shead"><div class="shead__row"><h2 id="mh-seats">${inLang('mi', 'Ngā rohe pōti Māori e 7')} · The 7 Māori electorates</h2><span class="micro muted">A–Z</span></div></div>
-      <p class="small soft">Candidates are in ballot order (A–Z by surname). The 2023 result is the official count as reported; boundaries were redrawn in 2025, so it is not exactly the same contest. Tap a candidate for their profile.</p>
-      <div class="cols cols--2 mh-seats" id="mh-list">${E.map(e => maoriSeatHTML(e, r23(e))).join('')}</div>
-      <p class="src">${ic('doc')} Candidates from policy.nz and party lists; the official list is on your EasyVote card and at vote.nz. 2023 results: ${extA('https://electionresults.govt.nz', 'Electoral Commission official count')}, as reported. Checked 24 Oct 2026.</p>
+      <p class="small soft">Tap one for its candidates (A–Z by surname), the 2023 result and links. Boundaries changed in 2025.</p>
+      <div class="rows" id="mh-list">${E.map(e => maoriSeatRow(e, r23(e))).join('')}</div>
+      <p class="src">${ic('doc')} Candidates: policy.nz and party lists (official list: EasyVote card, vote.nz). 2023: ${extA('https://electionresults.govt.nz', 'official count')}, as reported. Checked 24 Oct 2026.</p>
+      <div class="row"><a class="btn btn--s btn--quiet" href="#/vote/electorate">${ic('pin', 'i--s')} Find your electorate</a><a class="btn btn--s btn--quiet" href="#/seats/map">${ic('map', 'i--s')} Electorate map</a><a class="btn btn--s btn--quiet" href="#/vote/mmp">${ic('scale', 'i--s')} How MMP works</a></div>
     </section>
-    <div class="rows">${rowlink('#/vote/electorate', 'pin', 'Find your electorate', 'Your general and Māori electorate from your location or the list.')}${rowlink('#/seats/map', 'map', 'Electorate map', 'The Māori electorates on the map, 2011 to 2026.')}${rowlink('#/vote/mmp', 'scale', 'How MMP works', 'Party vote, electorate vote, and how seats are filled.')}</div>
     ${voteFoot()}`;
-  $('#mh-list').addEventListener('click', ev => { const b = ev.target.closest('[data-cand]'); if (!b) return; const p = findPerson(b.dataset.cand, b.dataset.cname); if (p) openPerson(p);
-    else openSheet({ title: b.dataset.cname, html: '<p class="small muted">We don’t have a profile for this candidate yet. Their party’s website, policy.nz and vote.nz list the candidates standing.</p>' }) });
+  const openSeat = slug => { const e = E.find(x => x.slug === slug); if (!e) return;
+    openSheet({ title: e.name, depth: ['Vote', 'Māori electorates', e.name], at: 2, src: 'Candidates from policy.nz and party lists; the official list is on your EasyVote card and at vote.nz. 2023: Electoral Commission official count, as reported.', html: maoriSeatHTML(e, r23(e)) });
+    const box = $('#sheet-body .mh-seat'); if (box) box.addEventListener('click', ev => { const b = ev.target.closest('[data-cand]'); if (!b) return; const p = findPerson(b.dataset.cand, b.dataset.cname); if (p) openPerson(p);
+      else openSheet({ title: b.dataset.cname, html: '<p class="small muted">We don’t have a profile for this candidate yet. Their party’s website, policy.nz and vote.nz list the candidates standing.</p>' }) }) };
+  $('#mh-list').addEventListener('click', ev => { const b = ev.target.closest('[data-seat]'); if (b) openSeat(b.dataset.seat) });
+  if (arg && E.some(x => x.slug === arg)) openSeat(arg);   // #/vote/maori/<slug> opens that electorate
 };
 
 /* ----- Other languages ----- */

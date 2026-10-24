@@ -94,3 +94,5 @@ button.more { background: none; border: 0; border-bottom: 2px solid var(--link-u
 .news-fold > summary .badge { margin-left: 8px; vertical-align: middle }
 /* Selected state is never colour alone: the same tick as a pressed chip */
 .chip[aria-current="page"]::before, .chip--menu.is-on::before { content: ""; width: 12px; height: 7px; margin-right: 1px; border-left: 2.2px solid var(--signal-text); border-bottom: 2.2px solid var(--signal-text); transform: translateY(-2px) rotate(-45deg) }
+/* Withdrawn policies: still listed, greyed, with the "Withdrawn <date>" badge as the words */
+.pol--gone .pol__t { color: var(--text-3) }

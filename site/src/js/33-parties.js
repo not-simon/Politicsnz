@@ -149,7 +149,8 @@ function openPartySheet(s, key) {
 const ptSrcLabel = u => { try { const x = new URL(u); return (x.hostname.replace(/^www\./, '') + decodeURIComponent(x.pathname).replace(/\/$/, '')).slice(0, 72) } catch { return String(u).slice(0, 72) } };
 const deepRow = (icon, title, sub, href, ext = false) => `<a class="rowlink" href="${esc(href)}"${ext ? ' target="_blank" rel="noopener"' : ''}><span class="rowlink__icon">${ic(icon)}</span><span><span class="rowlink__title">${esc(title)}</span><span class="rowlink__sub" style="display:block">${sub}</span></span>${ic('chev')}</a>`;
 // Documents behind a set of policies, de-duplicated, in policy order.
-function ideaDocs(ps) { const seen = new Set(); const out = []; for (const x of ps) for (const d of (x.sources || [])) if (d.document && !seen.has(d.document)) { seen.add(d.document); out.push(d.document) } return out }
+// Policies marked has_fulltext:false have no captured text yet: they get their original source link instead (see docButtons).
+function ideaDocs(ps) { const seen = new Set(); const out = []; for (const x of ps) if (x.has_fulltext !== false) for (const d of (x.sources || [])) if (d.document && !seen.has(d.document)) { seen.add(d.document); out.push(d.document) } return out }
 function bindIdeas(el, s) {
   el.querySelectorAll('[data-idea]').forEach(b => b.onclick = () => { const idea = (guideParty(s) || {}).big_ideas[+b.dataset.idea]; const ps = (S.policies[s] || []).filter(x => (idea.policy_ids || []).includes(x.id));
     const docs = ideaDocs(ps); if (docs.length) openDoc(s, docs[0], { related: docs, context: idea.text || '' }) });
