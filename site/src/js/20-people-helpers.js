@@ -1,5 +1,6 @@
 /* ===== people helpers (shared: people list, party People tab, electorate candidates, parliament seat cards) ===== */
-async function loadPeople() { if (!S.people) S.people = await getJSON('data/people.json').catch(() => []); if (!S.thumbs) S.thumbs = await getJSON('data/thumbs.json').catch(() => ({})) }
+async function loadPeople() { if (!S.people) S.people = await getJSON('data/people.json').catch(() => []) }
+const faceSrc = p => { if (!p) return null; if (p.photo) return p.photo; const q = (S.people || []).find(x => x.folder === p.folder); return q && q.photo || null };
 const STATUS = { 'current-mp': 'MP', 'current-mp-standing-2026': 'MP · standing', 'current-mp-retiring': 'MP · retiring', 'candidate-2026': 'Candidate', 'former-mp': 'Former MP', 'deceased': 'Deceased', 'party-official': 'Official' };
 const isMP = s => String(s || '').startsWith('current-mp');
 const findPerson = (slug, name) => (S.people || []).find(p => p.slug === slug) || (S.people || []).find(p => name && p.name === name);
@@ -22,7 +23,7 @@ const ptSources = (v, word = 'source') => { const a = Array.isArray(v) ? v.map(x
 const ptTag = (s, cls = 'ptag ptag--s') => `<span class="${cls}" style="--pc:${pcolor(s)}"><span class="sw"></span>${esc(pname(s))}</span>`;
 
 // Same crop for everyone: a round .face with the party ring; initials (never a stand-in photo) when there is no photo.
-const faceHTML = (p, party, cls = 'face') => { const img = p && S.thumbs && S.thumbs[p.folder]; const pc = pcolor(party || (p && p.party));
+const faceHTML = (p, party, cls = 'face') => { const img = faceSrc(p); const pc = pcolor(party || (p && p.party));
   return img ? `<img class="${cls}" style="--pc:${pc}" loading="lazy" src="${img}" alt="" width="56" height="56">` : `<span class="face--none ${cls}" style="--pc:${pc}" aria-hidden="true">${esc(ptInitials((p && p.name) || '?'))}</span>` };
 
 // Layer 3 for a person: the sheet. Same fields, same order, for everyone.

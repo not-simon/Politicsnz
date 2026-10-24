@@ -113,12 +113,12 @@ function otdHTML() { const O = S.otd; if (!O || !O.days) return ''; const t = nz
     ${more ? `<a class="more small" href="${esc(more)}" target="_blank" rel="noopener">More on this day at NZHistory ${extIc()}</a>` : ''}</div>` }
 
 function fromPartiesHTML() { const N = S.news; if (!N || !N.items) return '';
-  const all = (G().parties || []).map(p => p.slug).filter(s => N.parties[s] || N.follow_parties[s] || N.items.some(i => i.party === s));
+  const all = (G().parties || []).map(p => p.slug).filter(s => N.parties[s] || (N.follow_parties || {})[s] || N.items.some(i => i.party === s));
   const slugs = all.sort((a, b) => pname(a).localeCompare(pname(b), 'en-NZ')); if (!slugs.length) return '';
   const k = slugs.length; const start = ((nzToday().n * 3) % k + k) % k; const pick = [0, 1, 2].slice(0, Math.min(3, k)).map(i => slugs[(start + i) % k]);
   const items = N.items.filter(i => i.party !== 'government').sort((a, b) => String(b.date).localeCompare(String(a.date)));
   const tag = s => `<span class="ptag ptag--s" style="--pc:${pcolor(s)}"><span class="sw"></span>${esc(pname(s))}</span>`;
-  const row = s => { const it = items.find(i => i.party === s); const pm = N.parties[s] || N.follow_parties[s] || {};
+  const row = s => { const it = items.find(i => i.party === s); const pm = N.parties[s] || (N.follow_parties || {})[s] || {};
     if (it) return `<a class="release" href="${esc(it.url)}" target="_blank" rel="noopener nofollow"><span class="release__t">${esc(it.title)}</span><span class="release__m">${tag(s)}<span>${shortDate(it.date)}</span><span>via ${esc(it.source || 'source')} ↗</span></span></a>`;
     return pm.newsroom_url ? `<a class="release" href="${esc(pm.newsroom_url)}" target="_blank" rel="noopener nofollow"><span class="release__t">No release in the feeds we read in the last ${N.window_days || 60} days. Their own newsroom ↗</span><span class="release__m">${tag(s)}</span></a>`
       : `<div class="release"><span class="release__t">No release in the feeds we read in the last ${N.window_days || 60} days.</span><span class="release__m">${tag(s)}</span></div>` };
@@ -155,7 +155,7 @@ V.home = async () => {
   const loads = [];
   if (!S.swipe) loads.push(getJSON('data/swipe.json').then(d => { S.swipe = d }).catch(() => { S.swipe = [] }));
   if (S.news === undefined || S.news === null) loads.push(getJSON('data/newsroom.json').then(d => { S.news = d }).catch(() => { S.news = null }));
-  if (S.otd === undefined) loads.push(getJSON('data/onthisday.json').then(d => { S.otd = d }).catch(() => { S.otd = null }));
+  if (S.otd === undefined || (S.otd && S.otd.days && !S.otd.days[nzToday().md])) loads.push(getJSON(`data/onthisday/${nzToday().md}.json`).then(d => { S.otd = d }).catch(() => { S.otd = null }));
   await Promise.all(loads);
   const upd = S.data.generated ? `Updated ${esc(shortDate(S.data.generated) || String(S.data.generated).slice(0, 10))}` : '';
   $('#main').innerHTML = `<div class="split split--7-5">

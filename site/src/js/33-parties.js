@@ -64,7 +64,7 @@ V.party = async (s, tab = 'glance') => {
   if (tab === 'policies') policyBrowser(body, [s]);
   if (tab === 'record') promiseList(body, s);
   if (tab === 'people') peopleGrid(body, { party: s });
-  if (tab === 'history') { await loadPages(); const k = `parties/${s}/README.md`;
+  if (tab === 'history') { const k = `parties/${s}/README.md`; await loadPage(k);
     body.innerHTML = `<div class="party-layout party-layout--history"><div class="party-layout__main stack"><div class="shead"><h2>History and profile</h2></div>
       ${S.pages[k] ? `<div class="prose" data-base="${esc(k)}">${md(S.pages[k].replace(/^#\s+.+\n/, ''))}</div><p class="src">Plain-text source: ${ptExt('https://github.com/not-simon/Politicsnz/blob/main/' + k, esc(k))}</p>` : '<p class="muted">The full profile for this party has not been written yet.</p>'}</div>
       <aside class="stack stack--l party-layout__side">${partyResultsMini(s, true)}</aside></div>` }

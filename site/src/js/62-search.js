@@ -9,7 +9,7 @@ async function searchIndex() {
   for (const [party, list] of Object.entries(S.policies || {})) for (const x of list) idx.push({ kind: 'Policy', title: x.statement, sub: pname(party) + (x.topic_group ? ' · ' + (TOPIC_NAMES[x.topic_group] || x.topic_group) : ''), go: `parties/${party}/policies`, pc: pcolor(party), key: fold(x.statement + ' ' + (x.summary && x.summary.why || '')) });
   for (const e of (S.data.electorates || [])) idx.push({ kind: 'Electorate', title: e.name, sub: (e.type === 'maori' ? 'Māori electorate' : 'General electorate') + (e.region ? ' · ' + e.region : ''), go: 'vote/electorate/' + e.slug, key: fold(e.name + ' ' + (e.region || '')) });
   for (const i of (G().issues || [])) idx.push({ kind: 'Issue', title: i.title, sub: i.why_it_matters || '', go: 'parties/issues/' + i.slug, key: fold(i.title + ' ' + (i.why_it_matters || '')) });
-  for (const k of Object.keys(S.pages || {})) if (!/\/people\//.test(k)) idx.push({ kind: 'Page', title: pageTitle(k), sub: k, go: 'about/page/' + k, key: fold(pageTitle(k) + ' ' + k) });
+  for (const k of Object.keys(S.pageIndex || {})) if (!/\/people\//.test(k)) idx.push({ kind: 'Page', title: pageTitle(k), sub: k, go: 'about/page/' + k, key: fold(pageTitle(k) + ' ' + k) });
   return (S.searchIdx = idx) }
 function searchRun(idx, q) { const terms = fold(q).split(/\s+/).filter(t => t.length > 1); if (!terms.length) return [];
   const scored = []; for (const it of idx) { let s = 0; for (const t of terms) { const i = it.key.indexOf(t); if (i < 0) { s = -1; break } s += i === 0 || it.key[i - 1] === ' ' ? 3 : 1 } if (s > 0) scored.push([s + (it.kind === 'Party' ? 2 : it.kind === 'Person' || it.kind === 'Electorate' ? 1 : 0), it]) }

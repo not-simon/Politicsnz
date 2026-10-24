@@ -13,6 +13,7 @@ function releaseRow(i, withParty = false) {
 
 V.newsroom = async party => {
   if (!S.news) S.news = await getJSON('data/newsroom.json').catch(() => null);
+  if (S.news && !S.news.follow_people) { const f = await getJSON('data/follow.json').catch(() => ({})); Object.assign(S.news, { follow_parties: f.follow_parties || {}, follow_people: f.follow_people || [] }) }
   const N = S.news;
   if (!N || !N.items) { $('#main').innerHTML = sectionFrame('parties', 'parties/news', '<p class="muted">The press-release feed isn’t available in this build.</p>'); return }
   N.parties = N.parties || {}; N.follow_parties = N.follow_parties || {};

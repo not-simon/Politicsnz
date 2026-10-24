@@ -137,7 +137,9 @@ for pj in sorted((ROOT / 'parties').glob('*/people/*/person.json')):
         try:
             im = Image.open(ph).convert('RGB'); w, h = im.size; s = min(w, h)
             im = im.crop(((w - s) // 2, max(0, (h - s) // 4), (w - s) // 2 + s, max(0, (h - s) // 4) + s)).resize((128, 128))
-            b = io.BytesIO(); im.save(b, 'JPEG', quality=72); thumbs[rec['folder']] = 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
+            # one small JPEG per person, loaded lazily by the browser (replaces the 2.7 MB base64 thumbs.json)
+            (OUT / 'faces').mkdir(exist_ok=True); fn = f"{rec['party']}--{d.name}.jpg"; im.save(OUT / 'faces' / fn, 'JPEG', quality=72, optimize=True)
+            rec['photo'] = 'data/faces/' + fn; thumbs[rec['folder']] = rec['photo']
             rec['photo_credit'] = p.get('photo_credit') or ''
             if p.get('photo_license'): rec['photo_license'] = p['photo_license']
             if p.get('photo_license_url'): rec['photo_license_url'] = p['photo_license_url']
@@ -153,7 +155,6 @@ for f in [ROOT / 'REPORT.md', ROOT / 'README.md'] + sorted((ROOT / 'elections').
     if f.exists(): pages[str(f.relative_to(ROOT))] = f.read_text()
 
 guide = {'parties': load(ROOT / 'data' / 'guide' / 'parties.json', []), 'issues': load(ROOT / 'data' / 'guide' / 'issues.json', []),
-         'quiz': load(ROOT / 'data' / 'guide' / 'quiz.json', {}),
          'howtovote': load(ROOT / 'data' / 'guide' / 'howtovote.json', {}),
          'quiz2': (lambda q, ex: ({**{k: v for k, v in q.items() if k != 'reconciliation_log'},
                                    'statements': [{**st, **({'explainer': ex[st['id']]} if st.get('id') in ex else {})} for st in q.get('statements', [])]}))(
@@ -179,15 +180,29 @@ PERSONAL_MAIL = re.compile(r'@(gmail|googlemail|hotmail|outlook|live|yahoo|xtra|
 newsroom = {'updated': rel.get('updated'), 'window_days': rel.get('window_days'),
             'items': [{k: it.get(k) for k in ('party', 'title', 'date', 'url', 'source', 'ministerial', 'byline') if it.get(k) is not None} for it in rel.get('items', [])],
             'parties': {k: {kk: v.get(kk) for kk in ('name', 'newsroom_url', 'newsroom_verified')} for k, v in (rel.get('parties') or {}).items()},
-            'follow_parties': fol.get('parties') or {},
-            'follow_people': [{k: v for k, v in pp.items() if k != 'email' or (v and not PERSONAL_MAIL.search(v))} for pp in (fol.get('people') or [])]}
+            }
 (OUT / 'newsroom.json').write_text(dumps(newsroom))
+# the follow directory is only needed on the newsroom's single-party view, so it ships separately
+(OUT / 'follow.json').write_text(dumps({'follow_parties': fol.get('parties') or {},
+            'follow_people': [{k: v for k, v in pp.items() if k != 'email' or (v and not PERSONAL_MAIL.search(v))} for pp in (fol.get('people') or [])]}))
 otd = load(ROOT / 'data' / 'onthisday.json', None)
-if otd: (OUT / 'onthisday.json').write_text(dumps(otd))
+if otd:
+    (OUT / 'onthisday.json').write_text(dumps(otd))
+    (OUT / 'onthisday').mkdir(exist_ok=True)   # one small file per calendar day for the Today feed
+    for md, entries in (otd.get('days') or {}).items():
+        (OUT / 'onthisday' / f'{md}.json').write_text(dumps({'days': {md: entries}, 'nzhistory_day_url': {md: (otd.get('nzhistory_day_url') or {}).get(md)}, 'licence_notes': otd.get('licence_notes')}))
 (OUT / 'policies.json').write_text(dumps(policies))
 (OUT / 'people.json').write_text(dumps(people))
-(OUT / 'thumbs.json').write_text(json.dumps(thumbs))
-(OUT / 'pages.json').write_text(json.dumps(pages, ensure_ascii=False))
+if (OUT / 'thumbs.json').exists(): (OUT / 'thumbs.json').unlink()
+# long-form pages: an index of titles plus four chunks loaded on demand (was one 5.6 MB file)
+def page_group(k): return 'people' if '/people/' in k else 'parties' if k.startswith('parties/') else 'electorates' if k.startswith('electorates/') else 'docs'
+def page_title(k, t):
+    m = re.search(r'^#\s+(.+)$', t, re.M); return re.sub(r'[*_`]', '', m.group(1)).strip() if m else k
+(OUT / 'pages').mkdir(exist_ok=True)
+for grp in ('docs', 'parties', 'electorates', 'people'):
+    (OUT / 'pages' / f'{grp}.json').write_text(json.dumps({k: v for k, v in pages.items() if page_group(k) == grp}, ensure_ascii=False))
+(OUT / 'pages' / 'index.json').write_text(json.dumps({k: [page_group(k), page_title(k, v)] for k, v in pages.items()}, ensure_ascii=False))
+if (OUT / 'pages.json').exists(): (OUT / 'pages.json').unlink()
 
 # --- geo (electorate boundaries)
 import shutil

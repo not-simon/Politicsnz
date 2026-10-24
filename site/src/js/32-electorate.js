@@ -10,7 +10,7 @@ function elList() { return (S.data.electorates || []).slice().sort((a, b) => a.n
 function featToElectorate(f) { if (!f) return null; const E = S.data.electorates || []; const s = f.properties && (f.properties.slug || elSlug(f.properties.name));
   return E.find(x => elSlug(x.slug) === s || elSlug(x.name) === s) || null }
 
-function candFace(c) { const img = S.thumbs && S.thumbs[c.folder]; const pc = pcolor(c.party);
+function candFace(c) { const img = faceSrc(c); const pc = pcolor(c.party);
   return img ? `<img class="face" style="--pc:${pc}" loading="lazy" src="${img}" alt="" width="56" height="56">` : `<span class="face face--none" style="--pc:${pc}" aria-hidden="true">${esc(elInitials(c.name))}</span>` }
 function candRow(c) { const p = findPerson(c.slug, c.name) || {}; const mp = !!c.sitting_mp;
   return `<li><button class="cand" type="button" data-cand="${esc(c.slug || '')}" data-cname="${esc(c.name)}">${candFace(c)}<span><span class="cand__name">${esc(c.name)}</span>
