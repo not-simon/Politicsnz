@@ -1,0 +1,76 @@
+# Refreshes the 2026 policy.nz data (party policies, party lists, electorate candidates) once a day (and on demand),
+# updates the "What changed this week" log and the RSS feed.
+#
+# Requires GitHub Actions to be enabled for the repository (Settings -> Actions -> General -> "Allow all actions"),
+# and "Workflow permissions" set to "Read and write" (or rely on the `permissions: contents: write` block below).
+# Steps: tools/refresh_policies.py (policy.nz __NEXT_DATA__ pages -> raw/policy.nz/, parties/*/policies/policies.json +
+# the generated block in policies/README.md, candidates via tools/build_candidates.py) -> tools/changelog.py
+# (data/changes.json, site/data/changes.json) -> tools/build_site.py -> tools/changelog.py --feed (site/feed.xml).
+# Safe to run repeatedly: a fetch that fails keeps the stored copy (logged in raw/policy.nz/refresh-status.json); a
+# policy that disappears from policy.nz is marked withdrawn, never deleted; a run with nothing new adds no log entries.
+# Requests go one at a time with a pause and the same User-Agent as tools/scrape_policynz.py (~90 pages, ~4 minutes).
+# Full-text policy documents are NOT fetched here (separate process); new policies get policy.nz's summary + source links.
+name: Refresh policies and candidates
+on:
+  schedule:
+    - cron: '17 3 * * *'   # daily 03:17 UTC = 4:17pm NZDT
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: python3 -m pip install --quiet beautifulsoup4 lxml pillow
+      - name: Polling-day freeze (Electoral Act 1993 s 197)
+        # Nothing new is published from 23:59 Fri 6 Nov to 19:00 Sat 7 Nov NZDT (10:59Z 6 Nov to 06:00Z 7 Nov).
+        run: |
+          now=$(date -u +%s)
+          if [ "$now" -ge "$(date -u -d '2026-11-06T10:59:00Z' +%s)" ] && [ "$now" -lt "$(date -u -d '2026-11-07T06:00:00Z' +%s)" ]; then
+            echo "Polling-day freeze: skipping this run."; echo "FREEZE=1" >> "$GITHUB_ENV"
+          fi
+      - name: Refresh policy.nz policies and candidates
+        if: env.FREEZE != '1'
+        run: python3 tools/refresh_policies.py
+      - name: Update the change log
+        if: env.FREEZE != '1'
+        run: python3 tools/changelog.py
+      - name: Rebuild the site bundle
+        if: env.FREEZE != '1'
+        run: python3 tools/build_site.py
+      - name: Write the RSS feed
+        if: env.FREEZE != '1'
+        run: python3 tools/changelog.py --feed
+      - name: Commit and push if anything changed
+        if: env.FREEZE != '1'
+        # The polls and releases jobs can finish in the same minute and both commit site/, so a plain push can be rejected.
+        # On rejection: keep the freshly generated data files, reset to the remote head, rebuild the site on top, retry (3x).
+        run: |
+          git config user.name "refresh-bot"
+          git config user.email "refresh-bot@users.noreply.github.com"
+          P="data/changes.json raw/policy.nz parties"
+          keep=$(mktemp -d); { git diff --name-only -- $P; git ls-files -o --exclude-standard -- $P; } | sort -u > "$keep.list"
+          while read -r p; do [ -e "$p" ] && mkdir -p "$keep/$(dirname "$p")" && cp "$p" "$keep/$p"; done < "$keep.list"
+          for attempt in 1 2 3; do
+            git add $P site
+            if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+            git commit -q -m "Refresh policy.nz policies and candidates, change log and RSS feed ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            if git push; then exit 0; fi
+            echo "Push rejected (attempt $attempt); rebasing onto the remote head and rebuilding."
+            git fetch -q origin "$GITHUB_REF_NAME" && git reset -q --hard "origin/$GITHUB_REF_NAME"
+            (cd "$keep" && find . -type f | while read -r f; do mkdir -p "$GITHUB_WORKSPACE/$(dirname "$f")"; cp "$f" "$GITHUB_WORKSPACE/$f"; done)
+            python3 tools/build_site.py
+            python3 tools/changelog.py --feed
+          done
+          echo "Could not push after 3 attempts."; exit 1

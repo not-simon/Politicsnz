@@ -6,10 +6,15 @@
 #   3. Actions -> "Publish voter guide" -> Run workflow.
 # Setup done 23 Oct 2026; the site publishes automatically on every push that changes site/.
 name: Publish voter guide
+# Commits made by the scheduled bots use the default GITHUB_TOKEN, and GitHub does not start push-triggered workflows for
+# those, so this workflow also runs when each bot workflow completes (workflow_run fires on the default branch only).
 on:
   push:
     branches: [claude/nz-political-parties-research-hnn8ae, main]
     paths: ['site/**', '.github/workflows/pages.yml']
+  workflow_run:
+    workflows: ['Update polls and forecast', 'Update party releases', 'Election night results', 'Refresh policies and candidates']
+    types: [completed]
   workflow_dispatch:
 permissions:
   contents: read
@@ -20,6 +25,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

@@ -60,7 +60,8 @@ for (ps, slug), p in sorted(people.items()):
     if p.get('image_src') and photo(p['image_src'], d / 'photo.jpg') and not existing.get('photo'):
         existing.update({'photo': 'photo.jpg', 'photo_source': p['image_src'], 'photo_credit': 'Supplied to policy.nz by the candidate/party'})
     base = {'name': p['name'], 'slug': slug, 'party': p['party'], 'status': existing.get('status', 'candidate-2026')}
-    merged = {**base, **existing, **{k: v for k, v in p.items() if k not in ('image_src',)}}
+    # hand-corrected names in person.json win over policy.nz's spelling (e.g. macrons); everything else refreshes
+    merged = {**base, **existing, **{k: v for k, v in p.items() if k not in ('image_src',) and not (k == 'name' and existing.get('name'))}}
     merged.setdefault('sources', [])
     src = f'https://policy.nz/2026/party-vote/parties/{ps}'
     if src not in merged['sources']: merged['sources'].append(src)

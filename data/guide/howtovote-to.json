@@ -1,0 +1,462 @@
+{
+ "_about": "How to vote in the 7 November 2026 New Zealand general election, in lea faka-Tonga beside the English. Lines marked basis \"ec\" are quoted from the Electoral Commission’s own Tongan guide (E231 Tongan A4 08/26, linked in ec_guide) or its Tongan “Get ready to enrol and vote” leaflet (ROE47 A4 Tongan 04/2026), with the matching sentence from the Commission’s English text. Lines marked \"mt\" are Ballot Book’s machine-assisted translations of data/guide/howtovote.json, using the Commission’s Tongan terms where it has them, and have NOT been checked by a fluent speaker. The English and the official vote.nz pages are authoritative.",
+ "as_of": "2026-10-24",
+ "english_source": "data/guide/howtovote.json (checked 23 Oct 2026 against vote.nz) and the Electoral Commission’s English guide E231 ENG A4 08/26 (https://vote.nz/assets/Language-resources/E231-Your-Guide-to-voting-2026/Your-guide-to-voting-English-2026.pdf)",
+ "languages_page": "https://vote.nz/2026-general-election/resources/information-in-multiple-languages",
+ "sources": [
+  "https://vote.nz/2026-general-election/resources/information-in-multiple-languages",
+  "https://vote.nz/enrolling/get-ready-to-enrol/are-you-eligible-to-enrol-and-vote",
+  "https://vote.nz/2026-general-election/voting-in-the-election/what-to-do",
+  "https://vote.nz/2026-general-election/about/overview/key-dates",
+  "https://vote.nz/2026-general-election/overseas/vote-from-overseas",
+  "https://vote.nz/2026-general-election/voting-in-the-election/need-help-to-vote",
+  "https://vote.nz/2026-general-election/voting-in-the-election/cant-get-to-a-voting-place/telephone-dictation-voting",
+  "https://vote.nz/2026-general-election/voting-in-the-election/cant-get-to-a-voting-place",
+  "https://vote.nz/contact-us"
+ ],
+ "lang": "to",
+ "name": "lea faka-Tonga",
+ "name_en": "Tongan",
+ "ec_guide": {
+  "title": "Ko e fakahinohino ki ha‘o kau ‘i he Fili Falealea 2026",
+  "title_en": "Your guide to voting in the 2026 General Election (Tongan, E231 Tongan A4 08/26)",
+  "url": "https://vote.nz/assets/Language-resources/E231-Your-Guide-to-voting-2026/Your-guide-to-voting-Tongan-2026.pdf"
+ },
+ "title": {
+  "xx": "Ko e founga fili",
+  "en": "How to vote",
+  "basis": "ec"
+ },
+ "lede": {
+  "xx": "Ko e me‘a ke ke ‘ilo ki ai mo e anga e fili ‘i he 2026",
+  "en": "What to expect and how to vote in 2026",
+  "basis": "ec"
+ },
+ "disclaimer": {
+  "xx": "Ko e liliu ko ‘ení na‘e tokoni ki ai ha mīsini, pea kei te‘eki ke vakai‘i ‘e ha tokotaha ‘oku poto ‘i he lea faka-Tonga. Ko e lea faka-Pilitāniá mo e ngaahi peesi faka‘ofisiale ‘i he vote.nz ‘a e ma‘u‘anga fakamatala ke falala ki ai.",
+  "en": "Machine-assisted translation, not yet checked by a fluent speaker; the English and the official vote.nz pages are authoritative.",
+  "basis": "mt"
+ },
+ "basis_labels": {
+  "ec": {
+   "xx": "Lea ‘a e Electoral Commission",
+   "en": "Electoral Commission wording",
+   "basis": "mt"
+  },
+  "mt": {
+   "xx": "Liliu ‘a kimautolu",
+   "en": "Our translation",
+   "basis": "mt"
+  }
+ },
+ "official": [
+  {
+   "title": "Ko e fakahinohino ki ha‘o kau ‘i he Fili Falealea 2026",
+   "title_en": "Your guide to voting in the 2026 General Election",
+   "url": "https://vote.nz/assets/Language-resources/E231-Your-Guide-to-voting-2026/Your-guide-to-voting-Tongan-2026.pdf",
+   "size": "PDF, 2.9MB"
+  },
+  {
+   "title": "Teuteu ke ke lēsisita mo ke fili",
+   "title_en": "Get ready to enrol and vote",
+   "url": "https://vote.nz/assets/Language-resources/Get-Ready-to-Enrol-Vote-2026-Tongan.pdf",
+   "size": "PDF, 385KB"
+  },
+  {
+   "title": null,
+   "title_en": "Unable to get to a voting place?",
+   "url": "https://vote.nz/assets/Language-resources/E78-Unable-to-get-to-a-voting-place/E78-Unable-to-get-to-a-voting-place-Tongan-Web-2026.pdf",
+   "size": "PDF, 644KB"
+  },
+  {
+   "title": null,
+   "title_en": "Concerned for your personal safety?",
+   "url": "https://vote.nz/assets/Language-resources/ROE47b-Concerned-for-your-personal-safety-2026/Concerned-for-your-safety-Tongan-Web-2026.pdf",
+   "size": "PDF, 279KB"
+  }
+ ],
+ "interpreter": {
+  "xx": "Kapau ‘oku ke fiema‘u ke talanoa mo e Electoral Commission ‘i ha lea kehe mei he lea faka-Pilitānia, tā ki he 0800 36 76 56 pea tala ange ‘a e lea ‘oku ke fiema‘u. Te nau fakafehokotaki koe mo ha tokotaha fakatonulea.",
+  "en": "If you or someone in your whānau would like to talk to the Electoral Commission in a language other than English, call 0800 36 76 56 and tell them your preferred language. They will connect you with an interpreter.",
+  "basis": "mt"
+ },
+ "checklist": [
+  {
+   "xx": "Vakai‘i pe ‘oku ngofua ke ke lēsisita mo fili",
+   "en": "Check you are eligible",
+   "basis": "mt",
+   "url": "https://vote.nz/enrolling/get-ready-to-enrol/are-you-eligible-to-enrol-and-vote"
+  },
+  {
+   "xx": "Vakai‘i kuo ke lēsisita ‘i ho tu‘asila lolotongá, kimu‘a he tu‘uapō Sāpate 25 ‘Okatopa",
+   "en": "Check you are enrolled at your current address, before midnight Sunday 25 October",
+   "basis": "mt",
+   "url": "https://vote.nz/enrolling/enrol-or-update/enrol-or-update-online"
+  },
+  {
+   "xx": "Fakakaukau‘i ‘a e fai‘anga fili mo e taimi te ke ‘alu ai ‘o fili",
+   "en": "Pick where and when you will vote",
+   "basis": "mt",
+   "url": "https://map.vote.nz"
+  },
+  {
+   "xx": "Ko e me‘a ke ‘ave: ‘oku ‘ikai fiema‘u ha me‘a",
+   "en": "Know what to bring: nothing is required",
+   "basis": "mt",
+   "url": "https://vote.nz/2026-general-election/about/overview/communications-from-the-electoral-commission/your-easyvote-card"
+  },
+  {
+   "xx": "Mahino‘i ho‘o fo‘i fili ‘e ua: fili paati mo e fili vāhenga fili",
+   "en": "Understand the two ticks: a party vote and an electorate vote",
+   "basis": "mt",
+   "url": "https://vote.nz/2026-general-election/voting-in-the-election/what-to-do"
+  },
+  {
+   "xx": "Palani kimu‘a kapau te ke ‘i ha feitu‘u kehe pe ‘i tu‘apule‘anga",
+   "en": "Plan ahead if you will be away or overseas",
+   "basis": "mt",
+   "url": "https://vote.nz/2026-general-election/overseas/vote-from-overseas"
+  },
+  {
+   "xx": "Kole tokoni kapau ‘oku ke fiema‘u",
+   "en": "Get help if you need it",
+   "basis": "mt",
+   "url": "https://vote.nz/2026-general-election/voting-in-the-election/need-help-to-vote"
+  }
+ ],
+ "sections": [
+  {
+   "id": "enrol",
+   "h": {
+    "xx": "Ko hai ‘e lava ke lēsisita ke fili?",
+    "en": "Who can enrol to vote?",
+    "basis": "ec"
+   },
+   "items": [
+    {
+     "xx": "Kuopau ke ke lēsisita kapau ‘oku ke ta‘u 18 pe motu‘a ange, sitiseni New Zealand pe ‘oku ke nofo ‘i he fonuá ni pea ngofua ke ke kau ‘i he filí, pea kuo ke ‘osi nofo ma‘u hokohoko ‘i New Zealand ‘i he māhina ‘e 12 pe toe lōloa ange lolotonga ho‘o mo‘uí.",
+     "en": "You must enrol if you are 18 years or older, a New Zealand citizen or resident for electoral purposes, and you’ve lived in New Zealand continuously for 12 months or more at some time in your life.",
+     "basis": "ec",
+     "url": "https://vote.nz/enrolling/get-ready-to-enrol/are-you-eligible-to-enrol-and-vote"
+    },
+    {
+     "xx": "Ko e tokotaha nofo fonua koe pea ‘e ngofua ke ke kau ‘i he filí kapau ‘oku fakalao ho‘o nofo ‘i New Zealand pea ‘oku ‘ikai ha tu‘utu‘uni atu ‘a e taimi ‘oku fiema‘u ai ke ke mavahe ai mei he fonuá ni.",
+     "en": "You’re a resident for electoral purposes if you’re living in New Zealand lawfully and you’re not required to leave within a specified time.",
+     "basis": "ec",
+     "url": "https://vote.nz/enrolling/get-ready-to-enrol/are-you-eligible-to-enrol-and-vote"
+    },
+    {
+     "xx": "Kapau ko ha tokotaha ‘Australia, Niue, Tokelau pe Cook Island koe, ‘e lava ke ke lēsisita kapau kuo laka hake he māhina ‘e 12 pe toe lahi ange ho‘o nofo ma‘u ‘i New Zealand.",
+     "en": "If you’re Australian, Niuean, Tokelauan or a Cook Islander, you can enrol if you have lived in New Zealand continuously for 12 months or more.",
+     "basis": "ec",
+     "url": "https://vote.nz/enrolling/get-ready-to-enrol/are-you-eligible-to-enrol-and-vote"
+    },
+    {
+     "xx": "Ke ke kau ‘i he fili Falealea 2026, ‘e fiema‘u ke ke lēsisita kimu‘a he tu‘uapō, Sāpate 25 ‘Okatopá. He ‘ikai lava ke ke lēsisita pe fakatonutonu ‘a e ngaahi fakamatala fekau‘aki mo koé, hili e kamata ‘a e filí he ‘aho Mōnite 26 ‘Okatopa.",
+     "en": "To vote in the 2026 General Election, you need to be enrolled by midnight, Sunday 25 October. You won’t be able to enrol or update your details once voting starts on Monday 26 October.",
+     "basis": "ec",
+     "url": "https://vote.nz/enrolling/enrol-or-update/enrol-or-update-online"
+    },
+    {
+     "xx": "Ko e lēsisitá ‘oku faingofua, pea pehē mo hono vakai‘i pe fakatonutonu ‘onilaine ‘a e ngaahi fakamatala fekau‘aki mo koé ‘i he uepisaiti vote.nz ‘o lava ke ke hū‘aki ho‘o laiseni faka‘uli New Zealand, paasipooti New Zealand pe ‘akauni RealMe.",
+     "en": "It’s easy to enrol, check or update your details online at vote.nz using your New Zealand driver licence, New Zealand passport or RealMe verified identity.",
+     "basis": "ec",
+     "url": "https://vote.nz/enrolling/enrol-or-update/enrol-or-update-online"
+    }
+   ]
+  },
+  {
+   "id": "when-where",
+   "h": {
+    "xx": "Ko e taimi mo e feitu‘u ‘oku fai ai e filí",
+    "en": "When and where to vote",
+    "basis": "ec"
+   },
+   "items": [
+    {
+     "xx": "‘Oku ‘ikai fiema‘u ia ke ke tali ki he ‘aho ‘o e filí ke toki fai ai ho‘o filí.",
+     "en": "You don’t need to wait until election day to vote.",
+     "basis": "ec",
+     "url": "https://map.vote.nz"
+    },
+    {
+     "xx": "Kamata e fili: Mōnite 26 ‘Okatopa",
+     "en": "Voting opens: Monday 26 October",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/about/overview/key-dates"
+    },
+    {
+     "xx": "Tāpuni e fili: 7pm ‘aho fili, Tokonaki 7 Nōvema",
+     "en": "Voting closes: 7pm on election day, Saturday 7 November",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/about/overview/key-dates"
+    },
+    {
+     "xx": "‘I he ‘aho filí, Tokonaki 7 Novemá, ‘e ava ‘a e ngaahi fai‘anga filí kotoa mei he taimi 9am ki he 7pm.",
+     "en": "On election day, Saturday 7 November, all voting places will be open from 9am to 7pm.",
+     "basis": "ec",
+     "url": "https://map.vote.nz"
+    },
+    {
+     "xx": "Te ke lava ‘o ma‘u e ngaahi fakahinohino fekau‘aki mo e ngaahi feitu‘u fai‘anga filí kau ai e ‘aho mo e taimi tenau ava aí ‘i he vote.nz pe telefoni ki he 0800 36 76 56",
+     "en": "You can find information about voting places including the days and hours that they’re open, on vote.nz or by calling 0800 36 76 56.",
+     "basis": "ec",
+     "url": "https://map.vote.nz"
+    },
+    {
+     "xx": "‘E lava ke ke fili ‘i ha fai‘anga fili pē ‘i New Zealand.",
+     "en": "You can vote at any voting place in New Zealand.",
+     "basis": "mt",
+     "url": "https://map.vote.nz"
+    }
+   ]
+  },
+  {
+   "id": "how",
+   "h": {
+    "xx": "Ko e founga fili",
+    "en": "How to vote",
+    "basis": "ec"
+   },
+   "steps": true,
+   "items": [
+    {
+     "xx": "Ha‘u mo ho‘o kaati fili EasyVote. ‘E lava pe ia ke ke kei fili kapau ‘e ‘ikai ke ke ‘alu mo ho‘o kaati fili EasyVote ki he fai‘anga fili.",
+     "en": "Bring your EasyVote card. You can still vote if you don’t have your EasyVote card with you when you go to vote.",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/about/overview/communications-from-the-electoral-commission/your-easyvote-card"
+    },
+    {
+     "xx": "‘Oku ‘ikai fiema‘u ke ke ‘omai ha ID.",
+     "en": "You don’t need to take ID.",
+     "basis": "mt",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/what-to-do"
+    },
+    {
+     "xx": "‘E ‘i ai pe taha ‘i he fai‘anga filí ke ne tokoni‘i koe. ‘E fakahinohino atu pē ‘e he kau ngāue ‘i he fai‘anga filí ‘a e me‘a ke faí mo e feitu‘u ke ke ‘alu ki ai.",
+     "en": "There will be someone at the voting place to help you. Election workers at your voting place will show you what to do and where to go.",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/what-to-do"
+    },
+    {
+     "xx": "‘I ha fili falealea, ‘oku ‘i ai ho‘o fo‘i fili ‘e ua – fili paati mo e fili vāhenga fili.",
+     "en": "In a general election, you get two votes – a party vote and an electorate vote.",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/what-to-do"
+    },
+    {
+     "xx": "‘I ho‘o pepa filí, tiki‘i ‘a e hingoa ‘o e paati politikale ‘oku ke poupou.",
+     "en": "On your voting paper, place a tick by the name of the political party of your choice.",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/what-to-do"
+    },
+    {
+     "xx": "‘I ho‘o pepa filí, tiki‘i e hingoa ‘o e kanititeiti ‘oku ke fiema‘u ke ne fakafofonga‘i ho vāhenga. Ko e kanititeiti ‘e tokolahi taha ‘a kinautolu te nau fili ‘iate ia ‘e hoko ia ko e fakafofonga ‘o e vāhenga.",
+     "en": "On your voting paper, place a tick by the name of the candidate you would most like to represent your local area. The candidate with the most votes will become your electorate MP.",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/what-to-do"
+    },
+    {
+     "xx": "Te ke fili paati mei he lisi ‘o e ‘ū paatí, pea ‘oku tatau pe ‘a e lisi ‘e fili mei ai ‘a kinautolu ‘oku lēsisita fili Maori pea mo kinautolu lēsisita fili fakalukufuá.",
+     "en": "You can choose from the same list of political parties whether you’re on the general roll or Māori roll.",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/what-to-do"
+    },
+    {
+     "xx": "Kapau te ke fai ha fehālaaki, kole ha pepa fili fo‘ou.",
+     "en": "If you make a mistake, ask for a new paper.",
+     "basis": "mt",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/what-to-do"
+    },
+    {
+     "xx": "Fa‘o ho‘o pepa filí ‘i he puha pāloti ‘oku fokotu‘u ai. Pea ko ‘ene lavá ia – kuo lava ho‘o fili!",
+     "en": "Place your voting paper in the ballot box provided. And that’s it — you’ve voted!",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/what-to-do"
+    }
+   ]
+  },
+  {
+   "id": "special",
+   "h": {
+    "xx": "Pepa pāloti makehe (special vote)",
+    "en": "Special votes",
+    "basis": "mt"
+   },
+   "items": [
+    {
+     "xx": "Kapau ‘oku ‘ikai ‘asi ho hingoá ‘i he tohi lēsisita fili kuo paaki ‘i he fai‘anga filí, te ke fakafonu ha foomu ‘special declaration vote’ kimu‘a pea ke fili. ‘Oku ui ‘eni ko e pepa pāloti makehe (special vote).",
+     "en": "If your name is not on the printed roll at a voting place, you’ll need to fill out a ‘special declaration vote’ form before you can vote. This is known as a ‘special vote’.",
+     "basis": "mt",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/what-to-do"
+    },
+    {
+     "xx": "‘E lava ke hoko ‘eni kapau na‘a ke lēsisita hili ‘a e Sāpate 4 ‘Okatopa, ‘oku ke fili ‘i tu‘a mei ho vāhenga fili, pe ‘oku ‘i he tohi lēsisita fakapulipuli (unpublished roll) ho hingoá.",
+     "en": "Your name may not be on the printed roll if you enrolled after Sunday 4 October, you’re voting away from your home electorate, or you’re on the unpublished roll.",
+     "basis": "mt",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/what-to-do"
+    },
+    {
+     "xx": "Kapau te ke lēsisita hili e ‘aho Sāpate 4 ‘Okatopá pea kimu‘a he tu‘uapō Sāpate 25 ‘Okatopá, he ‘ikai ma‘u atu ha‘o kaati fili EasyVote.",
+     "en": "If you enrol after Sunday 4 October but before midnight, Sunday 25 October, you won’t get an EasyVote card.",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/about/overview/communications-from-the-electoral-commission/your-easyvote-card"
+    },
+    {
+     "xx": "‘E lau ‘a e ngaahi pepa pāloti makehe ‘i he ola faka‘ofisiale ‘o e filí ‘i he Falaite 27 Nōvema.",
+     "en": "Special votes are counted in the official result, due Friday 27 November.",
+     "basis": "mt",
+     "url": "https://vote.nz/2026-general-election/about/overview/key-dates"
+    }
+   ]
+  },
+  {
+   "id": "away",
+   "h": {
+    "xx": "Fili mei tu‘apule‘anga",
+    "en": "Voting from overseas",
+    "basis": "ec"
+   },
+   "items": [
+    {
+     "xx": "Kapau ‘oku ke ‘i ha feitu‘u kehe ‘i New Zealand, ‘e lava ke ke fili ‘i ha fai‘anga fili pē ‘i New Zealand.",
+     "en": "Away from home in New Zealand: you can vote at any voting place in New Zealand.",
+     "basis": "mt",
+     "url": "https://map.vote.nz"
+    },
+    {
+     "xx": "‘E lava pe ke ke fili mei tu‘apule‘anga mei he ‘aho Pulelulu 21 ‘Okatopa ‘o ngata ‘i he 7pm Tokonaki 7 Nōvema (Taimi ‘a NZ ni).",
+     "en": "You can vote from overseas from Wednesday 21 October until 7pm, Saturday 7 November (NZ time).",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/overseas/vote-from-overseas"
+    },
+    {
+     "xx": "Ko e founga vave mo faingofua taha ki he fili mei tu‘apule‘angá ko hono taunilouti (download) mo fakafonu ho‘o pepa filí pea toki ‘apulouti (upload) ‘i he vote.nz",
+     "en": "The easiest and quickest way to vote from overseas is to download and complete your voting papers and then upload them at vote.nz",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/overseas/vote-from-overseas"
+    }
+   ]
+  },
+  {
+   "id": "help",
+   "h": {
+    "xx": "Fiema‘u tokoni ki hono lau mo fakafonu ho‘o pepa fili?",
+    "en": "Need help to read or mark your voting papers?",
+    "basis": "ec"
+   },
+   "items": [
+    {
+     "xx": "‘E lava pe ke tokoni atu ha taha ‘i he fai‘anga fili, pe ko hao fāmili pe maheni ke lau mo fakafonu ho‘o pepa fili. ‘E ‘ikai ngofua ke ne tala atu kia koe ha taha ke ke fili ai.",
+     "en": "A friend, whānau member, or someone working at the voting place can help you to read or mark your voting paper. They can’t tell you who you should vote for.",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/need-help-to-vote"
+    },
+    {
+     "xx": "Kapau ‘oku ke kui, pe ‘oku nenefu ho‘o sió pe mo‘ua ‘i ha faingata‘a‘ia fakasino ‘o ‘ikai lava ke ke fakafonu ho‘o pepa filí, ‘e lava ke fai ‘a ho‘o filí ‘aki e founga telefoni fakaongo (phone dictation service).",
+     "en": "If you’re blind, partially blind or have a physical disability that means you can’t mark your voting paper without help, you can vote using the telephone dictation service.",
+     "basis": "ec",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/cant-get-to-a-voting-place/telephone-dictation-voting"
+    },
+    {
+     "xx": "Lēsisita ki he founga ko ‘ení ‘i he 0800 028 028 (fili e 1) kimu‘a he 12 ho‘atā Tokonaki 7 Nōvema.",
+     "en": "Register for it on 0800 028 028 (option 1) by noon on Saturday 7 November.",
+     "basis": "mt",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/cant-get-to-a-voting-place/telephone-dictation-voting"
+    },
+    {
+     "xx": "Kapau ‘oku ‘ikai te ke lava ki ha fai‘anga fili koe‘uhi ‘oku ke tokoto falemahaki, ‘e lava ke ‘omai ho‘o pepa filí ‘e ha taha ‘i ho fāmili pe maheni, mei he ‘aho Mōnite 26 ‘Okatopa.",
+     "en": "If you can’t get to a voting place because you’re in hospital, a friend or whānau member can bring you your voting papers from Monday 26 October.",
+     "basis": "mt",
+     "url": "https://vote.nz/2026-general-election/voting-in-the-election/cant-get-to-a-voting-place"
+    }
+   ]
+  }
+ ],
+ "key_dates": [
+  {
+   "date": "2026-10-04",
+   "xx": "Kapau te ke lēsisita kimu‘a he ‘aho Sāpate 4 ‘Okatopá, temau ‘oatu ha‘o kaati fili EasyVote.",
+   "en": "If you enrol by Sunday 4 October, you’ll be sent an EasyVote card.",
+   "basis": "ec",
+   "url": "https://vote.nz/2026-general-election/about/overview/communications-from-the-electoral-commission/your-easyvote-card"
+  },
+  {
+   "date": "2026-10-21",
+   "xx": "Pulelulu 21 ‘Okatopa: kamata ‘a e fili mei tu‘apule‘anga.",
+   "en": "Wednesday 21 October: voting from overseas starts.",
+   "basis": "mt",
+   "url": "https://vote.nz/2026-general-election/overseas/vote-from-overseas"
+  },
+  {
+   "date": "2026-10-25",
+   "xx": "Sāpate 25 ‘Okatopa, tu‘uapō: tāpuni ‘a e lēsisitá. He ‘ikai lava ke ke lēsisita pe fakatonutonu ho‘o fakamatala hili ‘a e taimi ko ‘ení.",
+   "en": "Sunday 25 October, midnight: enrolment closes. You can’t enrol or update your details after this.",
+   "basis": "mt",
+   "url": "https://vote.nz/enrolling/enrol-or-update/enrol-or-update-online"
+  },
+  {
+   "date": "2026-10-26",
+   "xx": "Kamata e fili: Mōnite 26 ‘Okatopa",
+   "en": "Voting opens: Monday 26 October.",
+   "basis": "ec",
+   "url": "https://vote.nz/2026-general-election/about/overview/key-dates"
+  },
+  {
+   "date": "2026-11-06",
+   "xx": "Falaite 6 Nōvema: ‘aho faka‘osi ke fili kimu‘a he ‘aho filí.",
+   "en": "Friday 6 November: last day of advance voting.",
+   "basis": "mt",
+   "url": "https://vote.nz/2026-general-election/about/overview/key-dates"
+  },
+  {
+   "date": "2026-11-07",
+   "xx": "Tokonaki 7 Nōvema: ‘aho fili. ‘E ava ‘a e ngaahi fai‘anga filí mei he 9am ki he 7pm. ‘E kamata ke tuku atu ‘a e ola fakataimi ‘o e filí mei he 7pm.",
+   "en": "Saturday 7 November: election day. Voting places are open 9am to 7pm. Preliminary results from 7pm.",
+   "basis": "mt",
+   "url": "https://vote.nz/2026-general-election/about/overview/key-dates"
+  },
+  {
+   "date": "2026-11-27",
+   "xx": "Falaite 27 Nōvema: tuku atu ‘a e ola faka‘ofisiale ‘o e filí.",
+   "en": "Friday 27 November: official results declared, after special votes are counted.",
+   "basis": "mt",
+   "url": "https://electionresults.govt.nz"
+  }
+ ],
+ "contacts": {
+  "h": {
+   "xx": "Fiema‘u ha toe tānaki atu ki he ngaahi fakamatalá ni?",
+   "en": "Want more information?",
+   "basis": "ec"
+  },
+  "items": [
+   {
+    "xx": "Uepisaiti vote.nz",
+    "en": "Visit vote.nz",
+    "basis": "ec",
+    "url": "https://vote.nz",
+    "value": "vote.nz"
+   },
+   {
+    "xx": "Tā ki he 0800 36 76 56",
+    "en": "Call 0800 36 76 56 (free, 24 hours, 7 days)",
+    "basis": "ec",
+    "url": "tel:0800367656",
+    "value": "0800 36 76 56"
+   },
+   {
+    "xx": "Kapau ‘e ‘ikai lava ke fakahoko ho‘o fili ‘i he ngaahi founga ko eni, kātaki ‘o ‘imeili ki he overseas@vote.nz pe tā ki he +64 9 909 4182 (‘e malava pe ke ‘i ai e totongi) ‘o kole ha tokoni.",
+    "en": "Voting from overseas and need help: email overseas@vote.nz or call +64 9 909 4182 (international call rates may apply).",
+    "basis": "ec",
+    "url": "https://vote.nz/2026-general-election/overseas/vote-from-overseas",
+    "value": "+64 9 909 4182"
+   }
+  ]
+ },
+ "notes": [
+  "The Commission’s Tongan guide has no line saying ID is not needed, and no Friday dates; those lines are ours (basis mt). Its term for a special vote, “pepa pāloti makehe (special vote)”, comes from the Commission’s Tongan “Get ready to enrol and vote” leaflet.",
+  "The Commission’s Tongan guide says a whānau member can bring hospital voting papers “kae kimu‘a ‘i he ‘aho Mōnite 26 ‘Okatopa”, which reads as “before Monday 26 October”, whereas the English guide says “from Monday 26 October”. We did not reuse that sentence; our line (basis mt) follows the English.",
+  "The Commission’s Tongan “Unable to get to a voting place?” PDF could not be downloaded from this environment (bot protection); it is linked but its wording was not compared."
+ ]
+}

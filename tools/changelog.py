@@ -317,8 +317,6 @@ def write_feed(doc, now):
         if e.get('source'):
             desc = (desc + ' ' if desc else '') + f"Source: {e['source']}"
         ET.SubElement(it, 'description').text = desc
-        if e.get('source'):
-            ET.SubElement(it, 'source', {'url': e['source']}).text = e.get('via') or re.sub(r'^https?://(www\.)?([^/]+).*$', r'\2', e['source'])
     ET.indent(rss)
     data = ET.tostring(rss, encoding='utf-8', xml_declaration=True) + b'\n'
     ET.fromstring(data)          # must parse

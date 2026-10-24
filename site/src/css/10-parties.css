@@ -68,7 +68,9 @@ button.more { background: none; border: 0; border-bottom: 2px solid var(--link-u
 .disclose--more { border-bottom: 0; border-top: 1px solid var(--line) }
 .disclose--more > summary { font-size: var(--t-small); padding: var(--s-3) 0 }
 /* People: search and filters as one compact row on wider screens; letter rail on every width */
-@media (min-width: 720px) { .people-tools { grid-template-columns: minmax(200px, 300px) minmax(0, 1fr); align-items: center } }
+/* People: search, then every filter in one row (scrolls sideways on a phone; one row on a laptop) */
+.people-tools .chip { padding: 0 11px }
+@media (min-width: 1024px) { .people-tools .input-icon { max-width: 420px } }
 .chip--menu.is-on { background: var(--signal-soft); border-color: var(--signal) }
 .chips__sep { flex: none; width: 1px; align-self: stretch; margin-inline: 2px; background: var(--line) }
 .alpha--all { display: flex; flex-wrap: nowrap; gap: 2px; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--gutter-l)) calc(-1 * var(--gutter-r)); padding-inline: var(--gutter-l) var(--gutter-r) }

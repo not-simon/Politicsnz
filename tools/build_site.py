@@ -94,6 +94,7 @@ MAIN = {'national', 'labour', 'green', 'act', 'nz-first', 'te-pati-maori', 'oppo
 swipe, seen_stmt = [], set()
 for s, pols in policies.items():
     for pol in pols:
+        if pol.get('withdrawn'): continue   # withdrawn on policy.nz since capture: stays in the record, leaves the swipe deck
         sm = pol.get('summary') or {}
         why, how, text = (sm.get('why') or '').strip(), (sm.get('how') or '').strip(), (sm.get('text') or '').strip()
         st = (pol.get('statement') or '').strip()
