@@ -27,8 +27,8 @@ def share_image():
     d.text((262, 200), 'NZ election 2026', font=mid, fill=SIGNAL)
     d.text((80, 300), 'Independent and non-partisan.', font=mid, fill=PAPER)
     d.text((80, 352), 'It will never tell you how to vote.', font=mid, fill=PAPER)
-    lines = ['How to vote and who is standing where you live · every party, policy and promise', 'Polls, the electorate map since 2011 and results on the night · 7 November 2026']
-    for i, t in enumerate(lines): d.text((80, 440 + i * 42), t, font=small, fill=MUTED)
+    lines = ['How to vote · who is standing where you live', 'Every party, policy and promise · polls and the map', 'Results on the night · 7 November 2026']
+    for i, t in enumerate(lines): d.text((80, 428 + i * 40), t, font=small, fill=MUTED)
     d.text((80, 560), 'not-simon.github.io/Politicsnz', font=micro, fill=PAPER)
     d.rectangle((0, H - 10, W, H), fill=SIGNAL)
     im.save(SITE / 'share.png', optimize=True)
