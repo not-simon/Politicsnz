@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T17:12:50Z",
+ "updated": "2026-10-25T22:47:33Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,14 +126,14 @@
   }
  },
  "counts": {
-  "items": 172,
+  "items": 174,
   "per_party": {
-   "act": 24,
+   "act": 25,
    "conservative": 16,
    "free-palestine": 2,
    "government": 30,
    "green": 20,
-   "labour": 20,
+   "labour": 21,
    "national": 23,
    "nz-first": 21,
    "nz-loyal": 1,
@@ -382,6 +382,26 @@
   }
  ],
  "items": [
+  {
+   "party": "act",
+   "title": "ACT Releases Manifesto To Unlock New Zealand’s Potential",
+   "date": "2026-10-26T11:29+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00220/act-releases-manifesto-to-unlock-new-zealands-potential.htm",
+   "summary": "“We will make farming fun again by letting farmers farm, protecting their property rights and cutting the red tape imposed from Wellington so farmers can spend more time and money improving their…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "labour",
+   "title": "Labour To Tackle Cost Of Living From Day One",
+   "date": "2026-10-26T10:04+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00219/labour-to-tackle-cost-of-living-from-day-one.htm",
+   "summary": "“People are working hard, but they’re still falling behind. The bills keep coming, the grocery shop costs more every week, and too many people can’t get the healthcare they need,” Labour leader Chris…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
   {
    "party": "act",
    "title": "Voters Must Be In Charge, Not The Bureaucratic Priesthood",
