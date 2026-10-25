@@ -1,15 +1,51 @@
 {
  "_about": "What changed: new and changed policies and candidates (policy.nz), new polls and party releases, newest first. Built by tools/changelog.py; last 60 days. Release entries are headline + link only. `_snapshot` is the state the next run compares against (not published to the site).",
- "updated": "2026-10-25T10:08:29+13:00",
+ "updated": "2026-10-25T21:28:19+13:00",
  "window_days": 60,
- "policy_nz_checked": "2026-10-25T10:03:10+13:00",
+ "policy_nz_checked": "2026-10-25T21:24:36+13:00",
  "policy_nz_failures": 0,
  "counts": {
   "poll-added": 12,
-  "release": 137,
+  "release": 140,
   "site": 1
  },
  "entries": [
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2610/S00218/voters-must-be-in-charge-not-the-bureaucratic-priesthood.htm",
+   "date": "2026-10-25",
+   "kind": "release",
+   "party": "act",
+   "title": "Voters Must Be In Charge, Not The Bureaucratic Priesthood",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00218/voters-must-be-in-charge-not-the-bureaucratic-priesthood.htm",
+   "time": "2026-10-25T14:02+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:national:https://www.scoop.co.nz/stories/PA2610/S00217/christopher-luxons-speech-nationals-100-day-plan-to-secure-our-future.htm",
+   "date": "2026-10-25",
+   "kind": "release",
+   "party": "national",
+   "title": "Christopher Luxon's Speech - National’s 100 Day Plan To Secure Our Future",
+   "summary": "",
+   "url": "#/parties/news/national",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00217/christopher-luxons-speech-nationals-100-day-plan-to-secure-our-future.htm",
+   "time": "2026-10-25T13:59+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:national:https://www.scoop.co.nz/stories/PA2610/S00216/nationals-100-day-plan-to-secure-our-future.htm",
+   "date": "2026-10-25",
+   "kind": "release",
+   "party": "national",
+   "title": "National’s 100 Day Plan To Secure Our Future",
+   "summary": "",
+   "url": "#/parties/news/national",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00216/nationals-100-day-plan-to-secure-our-future.htm",
+   "time": "2026-10-25T13:56+13:00",
+   "via": "Scoop"
+  },
   {
    "id": "site:-:changes-page",
    "date": "2026-10-25",
@@ -1799,7 +1835,7 @@
   }
  ],
  "_snapshot": {
-  "taken": "2026-10-25T10:10:07+13:00",
+  "taken": "2026-10-25T21:28:19+13:00",
   "policies": {
    "act": {
     "POL54642": {
@@ -15301,6 +15337,9 @@
    "https://www.scoop.co.nz/stories/PA2610/S00212/act-will-give-students-a-stake-in-their-financial-education.htm",
    "https://www.scoop.co.nz/stories/PA2610/S00213/nzfirst-to-remove-climate-tax-from-fuel.htm",
    "https://www.scoop.co.nz/stories/PA2610/S00214/how-act-will-unlock-the-digital-economy.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00216/nationals-100-day-plan-to-secure-our-future.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00217/christopher-luxons-speech-nationals-100-day-plan-to-secure-our-future.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00218/voters-must-be-in-charge-not-the-bureaucratic-priesthood.htm",
    "https://www.scoop.co.nz/stories/PO2608/S00215/alex-hislop-announced-as-west-coast-tasman-candidate.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00028/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00108/a-win-for-free-speech-helen-houghton-challenges-extremist-label-and-secures-public-apology.htm",

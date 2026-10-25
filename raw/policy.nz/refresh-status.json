@@ -1,21 +1,14 @@
 {
- "checked": "2026-10-25T10:03:10+13:00",
+ "checked": "2026-10-25T21:24:36+13:00",
  "date": "2026-10-25",
  "mode": "live",
  "requests_failed": [],
  "kept_previous": [],
  "suspect": [],
- "raw_files_changed": [
-  "party-vote-election.json",
-  "parties/nz-outdoors--freedom-party.json",
-  "electorates/party-vote.json",
-  "electorates/waitaki-electorate.json"
- ],
+ "raw_files_changed": [],
  "policies": {},
  "candidates": {
-  "new_or_changed": [
-   "independent/bronwyn-judge"
-  ],
+  "new_or_changed": [],
   "unlisted": []
  },
  "counts": {
@@ -36,6 +29,5 @@
   "te-tai-tokerau-party": 0,
   "vision-nz": 0,
   "womens-rights-party": 0
- },
- "note": "Other pages differed only in policy.nz CMS ids, list order or the candidate page used to reach an electorate (not content); those files were left as stored."
+ }
 }
