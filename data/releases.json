@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T04:58:40Z",
+ "updated": "2026-10-25T01:32:48Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,15 +126,15 @@
   }
  },
  "counts": {
-  "items": 170,
+  "items": 173,
   "per_party": {
-   "act": 23,
+   "act": 24,
    "conservative": 16,
    "free-palestine": 2,
    "government": 30,
    "green": 20,
    "labour": 20,
-   "national": 21,
+   "national": 23,
    "nz-first": 21,
    "nz-loyal": 1,
    "te-pati-maori": 13,
@@ -382,6 +382,36 @@
   }
  ],
  "items": [
+  {
+   "party": "act",
+   "title": "Voters Must Be In Charge, Not The Bureaucratic Priesthood",
+   "date": "2026-10-25T14:02+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00218/voters-must-be-in-charge-not-the-bureaucratic-priesthood.htm",
+   "summary": "New Zealand needs a smaller, more efficient government if we are going to balance the books, lift wages, restore trust in democracy, and unlock New Zealand's potential, says ACT Leader David Seymour.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "Christopher Luxon's Speech - National’s 100 Day Plan To Secure Our Future",
+   "date": "2026-10-25T13:59+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00217/christopher-luxons-speech-nationals-100-day-plan-to-secure-our-future.htm",
+   "summary": "National’s agenda for our First 100 Days is a series of 26 actions designed to keep growing our economy, keep Kiwis safe, and ensure every child gets the best possible start in life.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "national",
+   "title": "National’s 100 Day Plan To Secure Our Future",
+   "date": "2026-10-25T13:56+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00216/nationals-100-day-plan-to-secure-our-future.htm",
+   "summary": "National has a positive plan to grow the economy, with less debt, more jobs, higher wages and no new taxes.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
   {
    "party": "act",
    "title": "How ACT Will Unlock The Digital Economy",
