@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T01:37:15Z",
+ "updated": "2026-10-26T06:54:39Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,9 +126,9 @@
   }
  },
  "counts": {
-  "items": 176,
+  "items": 178,
   "per_party": {
-   "act": 25,
+   "act": 27,
    "conservative": 16,
    "free-palestine": 2,
    "government": 30,
@@ -354,7 +354,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 13,
+   "items_matched_to_a_party": 14,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -382,6 +382,26 @@
   }
  ],
  "items": [
+  {
+   "party": "act",
+   "title": "ACT Introduces Chippy To 'Efficiency'",
+   "date": "2026-10-26T14:42+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00224/act-introduces-chippy-to-efficiency.htm",
+   "summary": "“ACT would reduce the size of government and cut waste to reach surplus earlier, with $12.4 billion less debt than Treasury's baseline by 2031. That’s thanks to a concept called efficiency,” says ACT…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "act",
+   "title": "ACT Releases Manifesto To Unlock New Zealand’s Potential",
+   "date": "2026-10-26T14:33+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00223/act-releases-manifesto-to-unlock-new-zealands-potential.htm",
+   "summary": "“When you’re paying over a million dollars an hour in interest on government debt, it’s not the time to spend more. Someone needs to make the choices now that will allow future generations to build a…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
   {
    "party": "labour",
    "title": "Labour’s Plan To Deliver A Fairer Deal For Workers",
