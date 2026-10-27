@@ -12,8 +12,27 @@
   "OPP": "opportunity"
  },
  "notes": "Percentages as published (decided voters; undecided excluded by every pollster). 'end_date' is the sort date used by Wikipedia (last fieldwork day or release date). Rows are newest first. 'others' = combined minor parties where listed. 'pollster_key' groups series that changed name; 'internal' marks party/corporate-client polls that are published selectively. Poll sources: each row's source_url as linked on Wikipedia. Refreshed by tools/polls_update.py.",
- "count": 129,
+ "count": 130,
  "polls": [
+  {
+   "date": "21–25 Oct 2026",
+   "end_date": "2026-10-25",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.1news.co.nz/2026/10/27/poll-coalition-has-path-to-power-but-labour-steady-after-gangs-row/",
+   "sample_size": 1000,
+   "results": {
+    "national": 28.9,
+    "labour": 27.3,
+    "green": 14.8,
+    "act": 12.4,
+    "nz-first": 10.0,
+    "te-pati-maori": 0.1,
+    "opportunity": 6.3
+   },
+   "others": 0.2,
+   "pollster_key": "1 News–Verian",
+   "internal": false
+  },
   {
    "date": "9–19 Oct 2026",
    "end_date": "2026-10-19",
@@ -2560,7 +2579,7 @@
    "end_date": "2023-11-27"
   }
  ],
- "source_revid": 1382172132,
+ "source_revid": 1382211259,
  "pollsters": {
   "1 News–Verian": {
    "commissioner": "TVNZ 1News",
@@ -2568,7 +2587,7 @@
    "method": "Landline + mobile CATI and online panel, n≈1,000, max. sampling error ±3.1 pts at 95%",
    "type": "public-media",
    "history": "Same series as 1 News–Colmar Brunton (to 2021) and 1 News–Kantar Public (2021–23)",
-   "n_polls": 20
+   "n_polls": 21
   },
   "RNZ–Reid Research": {
    "commissioner": "RNZ (previously Newshub, to 2024)",
@@ -2621,6 +2640,40 @@
   }
  },
  "electorate_polls": [
+  {
+   "electorate": "Auckland Central",
+   "date": "14–21 Oct 2026",
+   "end_date": "2026-10-21",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "national": 27.0,
+    "green": 30.0,
+    "labour": 27.0,
+    "act": 8.0,
+    "nz-first": 6.0,
+    "opportunity": 7.0,
+    "te-pati-maori": 2.0
+   }
+  },
+  {
+   "electorate": "Auckland Central",
+   "date": "14–21 Oct 2026",
+   "end_date": "2026-10-21",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "national": 35.0,
+    "green": 39.0,
+    "labour": 17.0,
+    "act": 5.0,
+    "opportunity": 3.0
+   }
+  },
   {
    "electorate": "Auckland Central",
    "date": "22–29 Jul 2026",
