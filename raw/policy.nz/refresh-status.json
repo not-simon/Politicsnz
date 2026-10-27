@@ -1,14 +1,20 @@
 {
- "checked": "2026-10-26T21:54:15+13:00",
- "date": "2026-10-26",
+ "checked": "2026-10-27T21:58:59+13:00",
+ "date": "2026-10-27",
  "mode": "live",
  "requests_failed": [],
  "kept_previous": [],
  "suspect": [],
- "raw_files_changed": [],
+ "raw_files_changed": [
+  "electorates/henderson-electorate.json",
+  "electorates/waitaki-electorate.json"
+ ],
  "policies": {},
  "candidates": {
-  "new_or_changed": [],
+  "new_or_changed": [
+   "independent/bronwyn-judge",
+   "independent/kay-luv"
+  ],
   "unlisted": []
  },
  "counts": {
