@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T20:07:37Z",
+ "updated": "2026-10-27T00:03:36Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,14 +126,14 @@
   }
  },
  "counts": {
-  "items": 179,
+  "items": 183,
   "per_party": {
-   "act": 27,
-   "conservative": 16,
+   "act": 28,
+   "conservative": 17,
    "free-palestine": 2,
    "government": 30,
-   "green": 20,
-   "labour": 23,
+   "green": 21,
+   "labour": 24,
    "national": 24,
    "nz-first": 21,
    "nz-loyal": 1,
@@ -354,7 +354,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 13,
+   "items_matched_to_a_party": 15,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -365,7 +365,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 2,
+   "items_matched_to_a_party": 1,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -382,6 +382,46 @@
   }
  ],
  "items": [
+  {
+   "party": "green",
+   "title": "Green Party Plans Could Save Families Thousands Each Year",
+   "date": "2026-10-27T12:07+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00228/green-party-plans-could-save-families-thousands-each-year.htm",
+   "summary": "A single parent with one child who installs rooftop solar could save $3,488 a year, about $67 a week.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "conservative",
+   "title": "Conservative Party Rues NZ’s Ignoring Of Environment",
+   "date": "2026-10-27T10:26+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00174/conservative-party-rues-nzs-ignoring-of-environment.htm",
+   "summary": "The “clean, green, 100 percent pure” image is vital to New Zealand’s exports fetching premium prices with consumers who are increasingly environmentally aware and wanting quality in origin and…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "act",
+   "title": "Hipkins’ Opposition To Charter Schools Based On False Claims",
+   "date": "2026-10-27T09:05+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00227/hipkins-opposition-to-charter-schools-based-on-false-claims.htm",
+   "summary": "Since the first charter schools opened last year, enrolments have grown from 215 to more than 2,100. Five of the original seven schools exceeded their attendance targets in their first year, and five…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "labour",
+   "title": "National’s Hiring Freeze Leaves New Ward Empty",
+   "date": "2026-10-27T09:01+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00226/nationals-hiring-freeze-leaves-new-ward-empty.htm",
+   "summary": "“National told New Zealanders its cuts wouldn’t touch the frontline. West Auckland families can see for themselves that was never true,” Labour health spokesperson Dr Ayesha Verrall said.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
   {
    "party": "national",
    "title": "Labour MPs Soften The Ground For Expanded CGT As Hipkins' Record Raises Questions",
