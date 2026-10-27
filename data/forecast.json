@@ -1,11 +1,11 @@
 {
  "title": "Poll-of-polls and seat forecast: 2026 New Zealand general election",
- "generated": "2026-10-26",
- "as_of": "2026-10-26",
+ "generated": "2026-10-27",
+ "as_of": "2026-10-27",
  "election_date": "2026-11-07",
- "days_to_election": 12,
+ "days_to_election": 11,
  "polls_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
- "polls_retrieved": "2026-10-26",
+ "polls_retrieved": "2026-10-27",
  "n_polls_this_term": 129,
  "n_polls_last_120_days": 21,
  "latest_poll_date": "2026-10-19",
@@ -25,13 +25,13 @@
   },
   "p_right_bloc_majority_NAT_ACT_NZF": 36,
   "p_left_bloc_majority_LAB_GRN_TPM": 8,
-  "p_no_bloc_majority": 56,
+  "p_no_bloc_majority": 57,
   "p_TOP_holds_balance_of_power": 55,
   "p_NZ_First_holds_balance_of_power": 82,
   "p_TOP_over_5pct": 83,
   "p_NZ_First_over_5pct": 100,
   "p_TPM_over_5pct": 1,
-  "p_overhang": 77,
+  "p_overhang": 78,
   "expected_total_seats": 122
  },
  "parties": [
@@ -53,13 +53,13 @@
     31.9
    ],
    "forecast_vote_95": [
-    22.5,
+    22.6,
     33.9
    ],
    "uncertainty": {
     "calibrated_poll_error_sd": 2.69,
     "aggregate_se": 0.62,
-    "drift_sd_to_election": 0.4,
+    "drift_sd_to_election": 0.39,
     "total_sd": 2.79
    },
    "n_polls_last_120_days": 21,
@@ -123,8 +123,8 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 2.65,
     "aggregate_se": 0.54,
-    "drift_sd_to_election": 0.48,
-    "total_sd": 2.75
+    "drift_sd_to_election": 0.46,
+    "total_sd": 2.74
    },
    "n_polls_last_120_days": 21,
    "seats_mean": 33.0,
@@ -142,7 +142,7 @@
     "27": 2,
     "28": 3,
     "29": 6,
-    "30": 9,
+    "30": 8,
     "31": 11,
     "32": 13,
     "33": 14,
@@ -183,8 +183,8 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 2.12,
     "aggregate_se": 0.47,
-    "drift_sd_to_election": 0.38,
-    "total_sd": 2.21
+    "drift_sd_to_election": 0.37,
+    "total_sd": 2.2
    },
    "n_polls_last_120_days": 21,
    "seats_mean": 18.2,
@@ -241,8 +241,8 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 1.79,
     "aggregate_se": 0.39,
-    "drift_sd_to_election": 0.38,
-    "total_sd": 1.87
+    "drift_sd_to_election": 0.36,
+    "total_sd": 1.86
    },
    "n_polls_last_120_days": 21,
    "seats_mean": 12.3,
@@ -297,7 +297,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 1.81,
     "aggregate_se": 0.41,
-    "drift_sd_to_election": 0.27,
+    "drift_sd_to_election": 0.26,
     "total_sd": 1.87
    },
    "n_polls_last_120_days": 21,
@@ -354,7 +354,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 0.76,
     "aggregate_se": 0.18,
-    "drift_sd_to_election": 0.24,
+    "drift_sd_to_election": 0.23,
     "total_sd": 0.82
    },
    "n_polls_last_120_days": 21,
@@ -404,7 +404,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 1.45,
     "aggregate_se": 0.36,
-    "drift_sd_to_election": 0.21,
+    "drift_sd_to_election": 0.2,
     "total_sd": 1.51
    },
    "n_polls_last_120_days": 21,
@@ -480,7 +480,7 @@
     "59": 9,
     "60": 9,
     "61": 9,
-    "62": 7,
+    "62": 8,
     "63": 6,
     "64": 5,
     "65": 4,
@@ -551,7 +551,7 @@
     "58": 6,
     "59": 7,
     "60": 9,
-    "61": 10,
+    "61": 9,
     "62": 10,
     "63": 10,
     "64": 8,
@@ -777,12 +777,12 @@
    }
   }
  ],
- "p_no_bloc_majority": 56,
+ "p_no_bloc_majority": 57,
  "majority_threshold": {
   "usual": 61,
   "note": "61 of 120; one more for every two overhang seats (62 of 122-123)",
   "distribution_total_seats": {
-   "120": 23,
+   "120": 22,
    "121": 28,
    "122": 30,
    "123": 16,
@@ -2362,6 +2362,16 @@
    "nz-first": 10.2,
    "te-pati-maori": 1.7,
    "opportunity": 6.4
+  },
+  {
+   "week_ending": "2026-10-27",
+   "national": 28.6,
+   "labour": 27.1,
+   "green": 14.9,
+   "act": 10.0,
+   "nz-first": 10.2,
+   "te-pati-maori": 1.7,
+   "opportunity": 6.4
   }
  ],
  "pollsters": [
@@ -3114,11 +3124,11 @@
   },
   "correlation_note": "Pairwise correlation of final-poll errors across the five elections (pairs with at least four shared elections), shrunk by n/(n+3) because five observations cannot pin down a correlation; matrix forced positive-definite.",
   "drift_variance_per_day": {
-   "national": 0.0136,
-   "labour": 0.0193,
-   "green": 0.0123,
-   "act": 0.0122,
-   "nz-first": 0.0063,
+   "national": 0.0135,
+   "labour": 0.0192,
+   "green": 0.0122,
+   "act": 0.0121,
+   "nz-first": 0.0062,
    "te-pati-maori": 0.0049,
    "opportunity": 0.0036
   },
