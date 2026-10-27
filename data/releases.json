@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T10:54:24Z",
+ "updated": "2026-10-27T21:28:25Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,16 +126,16 @@
   }
  },
  "counts": {
-  "items": 188,
+  "items": 191,
   "per_party": {
-   "act": 29,
+   "act": 30,
    "conservative": 17,
    "free-palestine": 2,
    "government": 30,
-   "green": 23,
+   "green": 24,
    "labour": 25,
    "national": 25,
-   "nz-first": 21,
+   "nz-first": 22,
    "nz-loyal": 1,
    "te-pati-maori": 12,
    "womens-rights": 3
@@ -382,6 +382,36 @@
   }
  ],
  "items": [
+  {
+   "party": "green",
+   "title": "Greens Welcome Mayor Wayne Brown’s Priorities For Auckland",
+   "date": "2026-10-28T10:13+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00236/greens-welcome-mayor-wayne-browns-priorities-for-auckland.htm",
+   "summary": "The Greens are committed to working with Auckland Council to progress a sensible and affordable infrastructure pipeline, along with rules that reduce the cost of living, bust congestion and support a…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "act",
+   "title": "Unlocking New Zealand’s Potential And Locking Up Criminals",
+   "date": "2026-10-28T09:34+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00235/unlocking-new-zealands-potential-and-locking-up-criminals.htm",
+   "summary": "ACT has spent the past term restoring consequences for criminal behaviour. We've brought back Three Strikes, scrapped the prisoner reduction target and ended taxpayer funding for culural reports…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "nz-first",
+   "title": "New Zealand First Announces Ten-Point Rail Policy",
+   "date": "2026-10-28T08:32+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00234/new-zealand-first-announces-ten-point-rail-policy.htm",
+   "summary": "New Zealand First has always backed rail, and unlike the other parties that sold it off, ran it down, or talked about it without delivering, we have the track record to prove it, Mr Peters says.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
   {
    "party": "act",
    "title": "Paul Henry’s Speech - Botany Town Hall",
