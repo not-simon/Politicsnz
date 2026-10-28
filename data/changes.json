@@ -1,16 +1,1435 @@
 {
  "_about": "What changed: new and changed policies and candidates (policy.nz), new polls and party releases, newest first. Built by tools/changelog.py; last 60 days. Release entries are headline + link only. `_snapshot` is the state the next run compares against (not published to the site).",
- "updated": "2026-10-27T22:02:31+13:00",
+ "updated": "2026-10-28T22:43:05+13:00",
  "window_days": 60,
- "policy_nz_checked": "2026-10-27T21:58:59+13:00",
+ "policy_nz_checked": "2026-10-28T22:39:20+13:00",
  "policy_nz_failures": 0,
  "counts": {
   "candidate-changed": 2,
-  "poll-added": 12,
-  "release": 153,
+  "policy-added": 55,
+  "policy-changed": 48,
+  "policy-withdrawn": 1,
+  "poll-added": 13,
+  "release": 167,
   "site": 1
  },
  "entries": [
+  {
+   "id": "poll-added:-:2026-10-25|1 News–Verian",
+   "date": "2026-10-28",
+   "kind": "poll-added",
+   "party": null,
+   "title": "1 News–Verian",
+   "summary": "Fieldwork 21–25 Oct 2026, 1,000 people.",
+   "url": "#/seats/polls",
+   "source": "https://www.1news.co.nz/2026/10/27/poll-coalition-has-path-to-power-but-labour-steady-after-gangs-row/",
+   "time": "2026-10-28T22:43:05+13:00",
+   "poll_date": "2026-10-25"
+  },
+  {
+   "id": "policy-withdrawn:green:POL55281",
+   "date": "2026-10-28",
+   "kind": "policy-withdrawn",
+   "party": "green",
+   "title": "Protect data sovereignty",
+   "summary": "No longer listed on policy.nz. It stays in this archive, marked withdrawn.",
+   "url": "#/parties/green/policies",
+   "source": "https://policy.nz/2026/party-vote/parties/green-party",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55281"
+  },
+  {
+   "id": "policy-changed:opportunity:POL54887:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "opportunity",
+   "title": "Rebuild the school lunch programme",
+   "summary": "Sources updated.",
+   "url": "#/parties/opportunity/policies",
+   "source": "https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54887"
+  },
+  {
+   "id": "policy-changed:opportunity:POL55323:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "opportunity",
+   "title": "Provide more support for the arts through a citizens income and innovation funding",
+   "summary": "Sources updated.",
+   "url": "#/parties/opportunity/policies",
+   "source": "https://www.opportunity.org.nz/arts_and_culture_statement",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55323"
+  },
+  {
+   "id": "policy-changed:opportunity:POL54873:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "opportunity",
+   "title": "Make housing more affordable with targeted construction support",
+   "summary": "Sources updated.",
+   "url": "#/parties/opportunity/policies",
+   "source": "https://www.opportunity.org.nz/affordable_housing",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54873"
+  },
+  {
+   "id": "policy-changed:opportunity:POL54770:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "opportunity",
+   "title": "Increase incentives to electrify houses, industries and transport",
+   "summary": "Sources updated.",
+   "url": "#/parties/opportunity/policies",
+   "source": "https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54770"
+  },
+  {
+   "id": "policy-changed:opportunity:POL54828:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "opportunity",
+   "title": "Include te Tiriti and Aotearoa history in education",
+   "summary": "Sources updated.",
+   "url": "#/parties/opportunity/policies",
+   "source": "https://www.opportunity.org.nz/honouring_te_tiriti",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54828"
+  },
+  {
+   "id": "policy-changed:nz-first:POL54662:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "nz-first",
+   "title": "Survey all of NZ to look for minerals",
+   "summary": "Sources updated.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54662"
+  },
+  {
+   "id": "policy-changed:nz-first:POL54746:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "nz-first",
+   "title": "Support new parents with a $5000 grant for the first three years of their child's life",
+   "summary": "Sources updated.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/the_kiwi_kids_grant",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54746"
+  },
+  {
+   "id": "policy-changed:nz-first:POL55262:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "nz-first",
+   "title": "Replace the Accredited Employer Work Visa with a shortage-led skilled work visa",
+   "summary": "Sources updated.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/nzfirst_to_scrap_accredited_working_visa_model",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55262"
+  },
+  {
+   "id": "policy-changed:nz-first:POL55057:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "nz-first",
+   "title": "Promote healthy eating",
+   "summary": "Reworded (was “Promote healthy eating as preventative healthcare”); summary updated.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55057"
+  },
+  {
+   "id": "policy-changed:nz-first:POL54757:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "nz-first",
+   "title": "Introduce a binding referendum on the Māori seats",
+   "summary": "Sources updated.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/referendum_on_maori_seats",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54757"
+  },
+  {
+   "id": "policy-changed:nz-first:POL55076:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "nz-first",
+   "title": "Fund organic and nutrient-based health interventions",
+   "summary": "Summary updated.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55076"
+  },
+  {
+   "id": "policy-changed:nz-first:POL54755:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "nz-first",
+   "title": "Establish a Special Economic Zone at Marsden Point",
+   "summary": "Sources updated.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54755"
+  },
+  {
+   "id": "policy-changed:nz-first:POL55310:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "nz-first",
+   "title": "Establish a 12-month trial for commuter rail in Canterbury and further south",
+   "summary": "Sources updated.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00155/nzfirst-campaign-announcement-commuter-rail-for-christchurch-reinstate-southerner-train.htm",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55310"
+  },
+  {
+   "id": "policy-changed:nz-first:POL54759:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "nz-first",
+   "title": "Ensure that only NZ citizens can vote",
+   "summary": "Sources updated.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/citizens_only_voting",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54759"
+  },
+  {
+   "id": "policy-changed:national:POL55051:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Use a checklist in early childhood settings to assess school readiness",
+   "summary": "Sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://www.national.org.nz/news/260920-screen-use-to-end-in-ece-and-limits-set",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55051"
+  },
+  {
+   "id": "policy-changed:national:POL55052:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Require primary school writing assessments to be completed on paper",
+   "summary": "Sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://www.national.org.nz/news/260920-screen-use-to-end-in-ece-and-limits-set",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55052"
+  },
+  {
+   "id": "policy-changed:national:POL54813:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Reduce the student loan repayment rate to 10 percent",
+   "summary": "Sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://assets.national.org.nz/web/prod/Back%20Pocket%20Boost%20for%20Graduates.pdf?v=1788119937",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54813"
+  },
+  {
+   "id": "policy-changed:national:POL54918:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Raise the income threshold for people who can pay a lower deposit for their first home",
+   "summary": "Sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://assets.national.org.nz/web/prod/Backing%20First%20Home%20Buyers.pdf?v=1788652154",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54918"
+  },
+  {
+   "id": "policy-changed:national:POL54926:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Prevent \"good character\" from being a mitigating factor in sentencing for sexual offending",
+   "summary": "Summary updated; sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://www.national.org.nz/policies/consent-laws",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54926"
+  },
+  {
+   "id": "policy-changed:national:POL55050:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Limit the use of screens in school for primary-aged and younger children",
+   "summary": "Sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://www.national.org.nz/news/260920-screen-use-to-end-in-ece-and-limits-set",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55050"
+  },
+  {
+   "id": "policy-changed:national:POL54715:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Increase paid parental leave to 30 weeks by 2029",
+   "summary": "Sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://www.national.org.nz/news/paid-parental-leave",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54715"
+  },
+  {
+   "id": "policy-changed:national:POL55205:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Increase funding for Pharmac's medicines budget by reducing foreign aid",
+   "summary": "Reworded (was “Increase funding for Pharmac's medicines budget”); summary updated; sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://www.national.org.nz/policies/more-medicines-and-earlier-care",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55205"
+  },
+  {
+   "id": "policy-changed:national:POL54814:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Fund further enforcement and create harsher penalties for overseas-based student loan holders",
+   "summary": "Summary updated; sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://assets.national.org.nz/web/prod/Back%20Pocket%20Boost%20for%20Graduates.pdf?v=1788119937",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54814"
+  },
+  {
+   "id": "policy-changed:national:POL54734:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Enrol New Zealand citizens in Kiwisaver at birth",
+   "summary": "Sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://www.national.org.nz/news/20260802-honnicolawillis",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54734"
+  },
+  {
+   "id": "policy-changed:national:POL54978:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Create a dedicated police team for Auckland public transport",
+   "summary": "Summary updated; sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://www.national.org.nz/news/260913-markmitchell",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54978"
+  },
+  {
+   "id": "policy-changed:national:POL54815:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Ban under-16 year olds from social media",
+   "summary": "Sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://www.national.org.nz/news/260824-christopherluxon",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54815"
+  },
+  {
+   "id": "policy-changed:national:POL54836:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "national",
+   "title": "Allow Kiwisaver to be used by farm workers buying homes or farms",
+   "summary": "Sources updated.",
+   "url": "#/parties/national/policies",
+   "source": "https://www.national.org.nz/news/260902-cameronbrewer",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54836"
+  },
+  {
+   "id": "policy-changed:labour:POL54753:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "labour",
+   "title": "Support a social media ban for under-16s to go through to select committee",
+   "summary": "Sources updated.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-clears-way-for-social-media-bill-to-go-to-select-committee/",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54753"
+  },
+  {
+   "id": "policy-changed:labour:POL54820:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "labour",
+   "title": "Guarantee jobs for NZ-trained graduate nurses",
+   "summary": "Sources updated.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-will-guarantee-a-job-for-graduate-nurses/",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54820"
+  },
+  {
+   "id": "policy-changed:act:POL55223:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Revise legislation for resource extraction",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55223"
+  },
+  {
+   "id": "policy-changed:act:POL55193:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Replace Te Mana o te Wai with measurable freshwater outcomes",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/news/leave-spirituality-out-of-infrastructure",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55193"
+  },
+  {
+   "id": "policy-changed:act:POL55046:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Repeal the Zero Carbon Act and NZ's net zero goal",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://assets.nationbuilder.com/actnz/pages/37031/attachments/original/1788642905/Scrap_Net_Zero_policy_09.pdf?1788642905",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55046"
+  },
+  {
+   "id": "policy-changed:act:POL55047:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Remove the carbon price floor and return ETS profits to households",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://assets.nationbuilder.com/actnz/pages/37031/attachments/original/1788642905/Scrap_Net_Zero_policy_09.pdf?1788642905",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55047"
+  },
+  {
+   "id": "policy-changed:act:POL55161:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Remove the \"six months\" caveat for assisted dying",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/strengthening-end-of-life-choice",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55161"
+  },
+  {
+   "id": "policy-changed:act:POL54643:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Remove some rules around pharmacy locations, ownership and licences",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/news/your-pharmacist-should-be-your-first-stop",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54643"
+  },
+  {
+   "id": "policy-changed:act:POL55048:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Reduce emissions with a focus on new technology",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://assets.nationbuilder.com/actnz/pages/37031/attachments/original/1788642905/Scrap_Net_Zero_policy_09.pdf?1788642905",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55048"
+  },
+  {
+   "id": "policy-changed:act:POL54672:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Make disrupting lawful hunters with drones or by standing in the line of fire an offence",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/protect-lawful-hunting",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54672"
+  },
+  {
+   "id": "policy-changed:act:POL55233:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Keep agriculture as a subject in the Year 11 curriculum",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/news/keep-agriculture-in-the-curriculum",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55233"
+  },
+  {
+   "id": "policy-changed:act:POL55224:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Increase the flexibility around environmental regulations for mining",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55224"
+  },
+  {
+   "id": "policy-changed:act:POL54646:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Increase the areas of conservation land which can be accessed by helicopter for hunting",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/open-the-backcountry",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54646"
+  },
+  {
+   "id": "policy-changed:act:POL54678:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Give volunteer groups more opportunities and funding for maintenance on conservation land",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/back-the-volunteers",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54678"
+  },
+  {
+   "id": "policy-changed:act:POL54674:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Give the Game Council responsibility for game animals on conservation land",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/game-management",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54674"
+  },
+  {
+   "id": "policy-changed:act:POL54894:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Expand rural policing",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/rural-crime",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL54894"
+  },
+  {
+   "id": "policy-changed:act:POL55222:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Expand domestic energy production",
+   "summary": "Summary updated; sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55222"
+  },
+  {
+   "id": "policy-changed:act:POL55220:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Establish a statutory body to ensure compensation for investors in mineral extraction",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55220"
+  },
+  {
+   "id": "policy-changed:act:POL55054:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Ensure agriculture is not included in emission reduction programmes",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/news/act-will-make-farming-fun-again",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55054"
+  },
+  {
+   "id": "policy-changed:act:POL55221:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Create a set of national mineral extractions standards",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55221"
+  },
+  {
+   "id": "policy-changed:act:POL55166:2026-10-28",
+   "date": "2026-10-28",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Commission Parliament to explore a deal with Meta for young people on social media",
+   "summary": "Sources updated.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/news/landmark-social-media-settlement-shows-better-way-forward",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55166"
+  },
+  {
+   "id": "policy-added:te-pati-maori:POL55341",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "te-pati-maori",
+   "title": "Restore Te Ahu o Te Reo Māori",
+   "summary": "This party would bring back and fund Te Ahu o te Reo. This party estimates that this policy would cost $30 million a year.",
+   "url": "#/parties/te-pati-maori/policies",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00052/te-pati-maori-backs-kohanga-reo-and-kura-with-long-term-investment.htm?_gl=1%2A1ati0d2%2A_gcl_au%2AMTk4NTg5NzkzNi4xNzg2NDAxNDc5%2A_ga%2AMTA2ODM2Mjg3Mi4xNzg2NDAxNDc5%2A_ga_GGVMM3MB82%2AczE3OTIwMjI5MDgkbzckZzEkdDE3OTIwMjM3ODckajQ3JGwwJGgw",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55341"
+  },
+  {
+   "id": "policy-added:te-pati-maori:POL55340",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "te-pati-maori",
+   "title": "Invest in kōhanga Reo and kura",
+   "summary": "This party would would pass a Te Kōhanga Reo Act which would ensure kōhanga reo have an annual baseline level of funding. The party would invest $20 million in a capital fund for kōhanga reo, while $50 million would be invested in…",
+   "url": "#/parties/te-pati-maori/policies",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00052/te-pati-maori-backs-kohanga-reo-and-kura-with-long-term-investment.htm?_gl=1%2A1ati0d2%2A_gcl_au%2AMTk4NTg5NzkzNi4xNzg2NDAxNDc5%2A_ga%2AMTA2ODM2Mjg3Mi4xNzg2NDAxNDc5%2A_ga_GGVMM3MB82%2AczE3OTIwMjI5MDgkbzckZzEkdDE3OTIwMjM3ODckajQ3JGwwJGgw",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55340"
+  },
+  {
+   "id": "policy-added:te-pati-maori:POL55339",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "te-pati-maori",
+   "title": "Create a Toi Māori authority to support Māori arts",
+   "summary": "This party would would establish a Toi Māori Authority, which would be separate from and equal to Creative New Zealand. The authority would establish a two-year rotational programme where 1000 artists in the mātauranga space receive 30…",
+   "url": "#/parties/te-pati-maori/policies",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00101/te-pati-maori-announces-toi-maori-authority-and-artist-income-programme.htm?_gl=1%2A1hm4we0%2A_gcl_au%2AMTk4NTg5NzkzNi4xNzg2NDAxNDc5%2A_ga%2AMTA2ODM2Mjg3Mi4xNzg2NDAxNDc5%2A_ga_GGVMM3MB82%2AczE3OTIwMjI5MDgkbzckZzAkdDE3OTIwMjI5MDkkajU5JGwwJGgw",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55339"
+  },
+  {
+   "id": "policy-added:opportunity:POL55376",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "opportunity",
+   "title": "Set up a future generations commissioner and require lawmakers to consider long-term impacts",
+   "summary": "This party would establish a Future Generations Commissioner who would guide the development of long-term national goals and hold politicians to account. As an independent Officer of Parliament, the role would be shielded from political…",
+   "url": "#/parties/opportunity/policies",
+   "source": "https://www.opportunity.org.nz/future-generations",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55376"
+  },
+  {
+   "id": "policy-added:opportunity:POL55327",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "opportunity",
+   "title": "Increase access to innovation and investment for Māori creatives",
+   "summary": "This party would support greater Māori agency and rangatiratanga by ensuring Māori artists and arts organisations have full access to innovation, investment, commercialisation and export opportunities. One avenue could be through \"Impact…",
+   "url": "#/parties/opportunity/policies",
+   "source": "https://www.opportunity.org.nz/arts_and_culture_statement",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55327"
+  },
+  {
+   "id": "policy-added:opportunity:POL55326",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "opportunity",
+   "title": "Back an AI framework on copyright protection",
+   "summary": "This party would support a robust AI framework that protects intellectual property. It publicly supports the International Confederation of Societies of Authors and Composers (CISAC)'s Paris Commitment, a global call for action to prevent…",
+   "url": "#/parties/opportunity/policies",
+   "source": "https://www.opportunity.org.nz/arts_and_culture_statement",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55326"
+  },
+  {
+   "id": "policy-added:nz-first:POL55364",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Withdraw from the Paris climate agreement",
+   "summary": "This party would have NZ formally withdraw from the Paris Agreement altogether. Commitments made as part of previous trade agreements would remain.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/withdraw_from_paris_accord",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55364"
+  },
+  {
+   "id": "policy-added:nz-first:POL55361",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Review fines and chargers for transport offences",
+   "summary": "This party would launch a review of the government's transport penalty regimes. Such a review would focus on consistency across similar offences, what punishments should be used (i.e., fines vs de-merit points), and, lastly, whether such…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55361"
+  },
+  {
+   "id": "policy-added:nz-first:POL55354",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Remove both petrol and diesel from the emissions trading scheme",
+   "summary": "This party would remove petrol and diesel from the emissions trading scheme. Providers would not have to purchase carbon credits to engage in their business.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/remove_the_climate_tax_from_fuel",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55354"
+  },
+  {
+   "id": "policy-added:nz-first:POL55373",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Protect the \"Ross Dependency\" and Antarctic security",
+   "summary": "This party would deploy NZDF inspection teams to ensure that Ross Dependency facilities are restricted strictly to peaceful scientific research. It would aim to safeguard the Ross Sea Marine Protected Area from illegal and unauthorised…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55373"
+  },
+  {
+   "id": "policy-added:nz-first:POL55359",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Oppose any expansion of the clean-slate law",
+   "summary": "This party would oppose any expansion of the clean-slate law.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55359"
+  },
+  {
+   "id": "policy-added:nz-first:POL55375",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Invest in the SAS to maintain important defence relationships",
+   "summary": "This party would increase SAS funding to equip operators with advanced counter-drone systems, munitions integration, encrypted satellite communications, and high-speed data fusion tools. It would increase the incentives for people to…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55375"
+  },
+  {
+   "id": "policy-added:nz-first:POL55352",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Increase the depreciation rate for manufacturing and targeted export industries",
+   "summary": "This party would introduce a 50% depreciation rate for manufacturing and targeted export industries. Intended for businesses in the manufacturing and targeted export sectors such as primary production - mining, aquaculture, forestry…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/nzfirst_policy_announcement_50_targeted_accelerated_depreciation_for_manufacturing_and_export_sector",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55352"
+  },
+  {
+   "id": "policy-added:nz-first:POL55332",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Increase the Gaming Development Sector Rebate scheme",
+   "summary": "This party would increase the Gaming Development Sector Rebate so that studios can receive from 20% to 40% to accelerate development. It would lift the rebate cap from $3 million to $10 million and lower the minimum threshold to $150,000.…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/nzfirst_to_fund_nzs_gaming_industry_sector_keeping_talent_and_companies_in_nz",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55332"
+  },
+  {
+   "id": "policy-added:nz-first:POL55355",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Increase sentence lengths for murder",
+   "summary": "This party would introduce a formal degree of murder regime whereby first degree murder is life imprisonment without a chance of parole; second degree murder is an aggravated life sentence with a minimum sentence of non-parole period of…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55355"
+  },
+  {
+   "id": "policy-added:nz-first:POL55357",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Increase prison sentences for those convicted of sexual offences against children",
+   "summary": "This party would would introduce tougher penalties for sexual offences, including life imprisonment for rape offences against children.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55357"
+  },
+  {
+   "id": "policy-added:nz-first:POL55368",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Increase capacity to defend underwater minerals from other countries if needed",
+   "summary": "This party would establish permanent capacity to defend the Kermadec Submarine Arc and Chatham Rise Phosphorites.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55368"
+  },
+  {
+   "id": "policy-added:nz-first:POL55358",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Focus police resources on combating transnational organised crime",
+   "summary": "This party would establish a new government department that specialises in combating organised crime. It would combine the Serious Fraud Office with NZ Police, which it says creates duplication.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55358"
+  },
+  {
+   "id": "policy-added:nz-first:POL55356",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Expand self-defence justifications in the justice system",
+   "summary": "This party would investigate the best practice to establish 'stand your ground' laws for when someone has committed violence while defending their person and their property. It would amend Police operational and prosecution guidelines to…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55356"
+  },
+  {
+   "id": "policy-added:nz-first:POL55366",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Establish a six-year Defence Force investment programme",
+   "summary": "This party would initiate a six-year, three-stage program to invest in the NZDF. A full recruitment target would be met in year six, when NZ would have 12,500 regular members and 6,000 reserves. Governing legislation for the investment…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55366"
+  },
+  {
+   "id": "policy-added:nz-first:POL55379",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Decouple NZDF pay from the Public Service Commission and ensure merit-based appointments",
+   "summary": "This party would Amend the Defence Act 1990 to remove military appointments from PSC oversight and cap executive pay at no more than 3.5 times the pay for Command Warrant Officer First Class. It would enforce a rigorous combat focus…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55379"
+  },
+  {
+   "id": "policy-added:nz-first:POL55360",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Create a time limit for sentencing in courts and limit name suppression",
+   "summary": "This party would mandate that all district courts around the country publish complete sentencing notes within 72 hours and limit final name suppression to extreme cases.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55360"
+  },
+  {
+   "id": "policy-added:nz-first:POL55365",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Consider establishing a “New Zealand Future Fund” of up to $100 billion",
+   "summary": "This party would commit to the investigation of the development of a “New Zealand Future Fund” of up to $100 billion to invest solely in a multi-decade infrastructure build, to ensure our future infrastructure security and to enable…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/the_100bn_new_zealand_future_fund",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55365"
+  },
+  {
+   "id": "policy-added:nz-first:POL55374",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Centralise Defence Force command",
+   "summary": "This party would would bring in the Army, Navy, and Air Force leadership under one roof by having the NZDF transition immediately to a unified, flat command structure under New Zealand Joint Defence Command (NZJDC). This transition would…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55374"
+  },
+  {
+   "id": "policy-added:national:POL55346",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "national",
+   "title": "Review the Enduring Powers of Attorney framework",
+   "summary": "This party would review the Enduring Powers of Attorney Framework (which allows people to choose trusted others to act on their behalf if they cannot make decisions), and consider further law changes to protect seniors from economic harm.",
+   "url": "#/parties/national/policies",
+   "source": "https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Retirement.pdf?v=1792619441",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55346"
+  },
+  {
+   "id": "policy-added:national:POL55344",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "national",
+   "title": "Reserve at least 20 percent of Housing Flexible Fund places for older people",
+   "summary": "This party would ringfence 20 percent of Housing Flexible Fund dwellings for older people. Social homes, affordable rentals and other types of housing will all qualify.",
+   "url": "#/parties/national/policies",
+   "source": "https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Retirement.pdf?v=1792619441",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55344"
+  },
+  {
+   "id": "policy-added:national:POL55345",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "national",
+   "title": "Require employers to continue contributing to Kiwisaver for employees over 65",
+   "summary": "This party would require employers to continue Kiwisaver contributions for employees over the age of 65. This change would begin on 1 July 2027.",
+   "url": "#/parties/national/policies",
+   "source": "https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Retirement.pdf?v=1792619441",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55345"
+  },
+  {
+   "id": "policy-added:national:POL55367",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "national",
+   "title": "Make it more straightforward to open up children's bank accounts",
+   "summary": "This party would amend the Anti Money Laundering law to make sure that it is not difficult for parents to open bank accounts for their children.",
+   "url": "#/parties/national/policies",
+   "source": "https://assets.national.org.nz/web/prod/National%27s%20plan%20for%20parents.pdf?v=1792956772",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55367"
+  },
+  {
+   "id": "policy-added:national:POL55343",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "national",
+   "title": "Expand the type of dwellings eligible for faster consents under the 'granny flat' rule",
+   "summary": "This party would allow attached garages to be consented under the 'granny flat rules' for houses up to 70 metres squared. Tiny homes on wheels would also be allowed to access these rules. This party would require PIM (project information…",
+   "url": "#/parties/national/policies",
+   "source": "https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Retirement.pdf?v=1792619441",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55343"
+  },
+  {
+   "id": "policy-added:national:POL55342",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "national",
+   "title": "Establish a free helpline for elderly people",
+   "summary": "This party would create 0800 SENIORS, a number senior citizens can call for help with government services and support. The helpline will sit within MSD and be funded from existing baselines.",
+   "url": "#/parties/national/policies",
+   "source": "https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Retirement.pdf?v=1792619441",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55342"
+  },
+  {
+   "id": "policy-added:national:POL55369",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "national",
+   "title": "Emphasise financial literacy in the school curriculum",
+   "summary": "This party would make sure financial literacy is part of the NZ school curriculum.",
+   "url": "#/parties/national/policies",
+   "source": "https://assets.national.org.nz/web/prod/National%27s%20plan%20for%20parents.pdf?v=1792956772",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55369"
+  },
+  {
+   "id": "policy-added:labour:POL55325",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Train more extended-care paramedics to treat people at home",
+   "summary": "This party would train more extended-care paramedics to treat people at home and help reduce the pressure on emergency departments. Its existing policies around adding more nurses, offering three free GP visits a year will also increase…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55325"
+  },
+  {
+   "id": "policy-added:labour:POL55324",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Review the wait time and deaths linked to hospital emergency department",
+   "summary": "This party would order an immediate review of hospital wait times and bed shortages, and also the safety issues linked to emergency departments. This party believes that the pressure on EDs can be reduced and more hospital beds can be…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55324"
+  },
+  {
+   "id": "policy-added:labour:POL55378",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Raise the income cap for the First Home Loans scheme",
+   "summary": "This party would expand First Home Loans scheme to more people and keep the amount required for a deposit at five percent of the loan. The income cap for eligibility would be lifted to $300,000 per household, and more banks would be…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-to-help-more-kiwis-buy-their-first-home",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55378"
+  },
+  {
+   "id": "policy-added:labour:POL55377",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Introduce a rent-to-own scheme for social and community housing tenants",
+   "summary": "This party would introduce rent-to-buy housing for eligible Kāinga Ora state house and community housing tenants who are working. Tenants would have $100 of their weekly rent placed in a trust account to accumulate towards a 5% deposit.…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-to-help-more-kiwis-buy-their-first-home",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55377"
+  },
+  {
+   "id": "policy-added:labour:POL55351",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Fund 1000 extra teacher aides",
+   "summary": "This party would fund 1,000 extra teacher aides to give more individual support for students who need it, and more help in busy classrooms. The party would also use the 2022 Highest Needs Review to help identify gaps in learning support.…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-to-provide-more-help-in-the-classroom",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55351"
+  },
+  {
+   "id": "policy-added:green:POL55337",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "green",
+   "title": "Support NZ businesses to grow their exports",
+   "summary": "This party would create a co-ordinated pathway for NZ businesses to grow exports, moving from research and experiments to commercial-scale production. To support businesses, it would also make sure public procurement contracts are given…",
+   "url": "#/parties/green/policies",
+   "source": "https://www.greens.org.nz/greens_economic_development_plan_will_create_284_000_jobs",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55337"
+  },
+  {
+   "id": "policy-added:green:POL55329",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "green",
+   "title": "Provide $2000 to employers and apprentices to help with training",
+   "summary": "This party would give apprentices a $2000 equipment grant for buying tools, equipment or uniforms required for their qualification. Employers who take on apprentices who finish their qualifications would receive $2000 when the apprentice…",
+   "url": "#/parties/green/policies",
+   "source": "https://www.greens.org.nz/green_party_to_abolish_training_wage_and_provide_more_support_for_apprentices",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55329"
+  },
+  {
+   "id": "policy-added:green:POL55338",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "green",
+   "title": "Protect at least 30 percent of the Hauraki Gulf by 2030",
+   "summary": "This party would commit to the goal of protecting at least 30 percent of the Hauraki Gulf by 2030. It would remove the ring-net fishing exemption from the Hauraki Gulf. This party says some of its other policies would also help the Gulf…",
+   "url": "#/parties/green/policies",
+   "source": "https://www.greens.org.nz/greens_announce_plans_to_protect_the_hauraki_gulf",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55338"
+  },
+  {
+   "id": "policy-added:green:POL55328",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "green",
+   "title": "Pay students who need to complete work placements for their qualifications",
+   "summary": "This party would support students completing work placements for their study with a payment of $380 a week, on top of existing student loans or student allowances. Students who had to relocate for a placement (for example to a different…",
+   "url": "#/parties/green/policies",
+   "source": "https://www.greens.org.nz/greens_announce_paid_placements_for_nurses_teachers_and_social_workers",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55328"
+  },
+  {
+   "id": "policy-added:green:POL55331",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "green",
+   "title": "Invest $30m in Māori and Pacific led trades training",
+   "summary": "This party would create a $30m funding lift each year for Māori and Pasifika-led trades training. This will include pastoral care, job matches and wraparound services for newly qualified workers.",
+   "url": "#/parties/green/policies",
+   "source": "https://www.greens.org.nz/green_party_to_abolish_training_wage_and_provide_more_support_for_apprentices",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55331"
+  },
+  {
+   "id": "policy-added:green:POL55370",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "green",
+   "title": "Increase public health funding by $3bn over 4 years",
+   "summary": "This party would increase public health funding by $3bn over four years, so the total would be $30bn spent on health by the end of that period. This money would go to long-term planning as well as immediate needs.",
+   "url": "#/parties/green/policies",
+   "source": "https://www.greens.org.nz/greens_to_deliver_more_staff_shorter_wait_times_and_a_healthier_country_with_significant_health_investment",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55370"
+  },
+  {
+   "id": "policy-added:green:POL55336",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "green",
+   "title": "Increase funding for research and science in NZ",
+   "summary": "This party would restore science funding lost through cuts, with the goal of spending 3 percent of GDP on research and development. It would also increase funding for research in tertiary education centres, including initiatives like the…",
+   "url": "#/parties/green/policies",
+   "source": "https://www.greens.org.nz/greens_economic_development_plan_will_create_284_000_jobs",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55336"
+  },
+  {
+   "id": "policy-added:green:POL55335",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "green",
+   "title": "Establish industry partnerships for mid-and-early career researchers",
+   "summary": "This party would create \"mission fellowships\" for early and mid career researchers and technical specialists, completing research linked to specific objectives of their industries.",
+   "url": "#/parties/green/policies",
+   "source": "https://www.greens.org.nz/greens_economic_development_plan_will_create_284_000_jobs",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55335"
+  },
+  {
+   "id": "policy-added:green:POL55372",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "green",
+   "title": "Commit to future government operating allowances between $4.5bn to $4.7 bn",
+   "summary": "This party would commit to government operating allowances between $4.5 to $4.7bn for the forecast period between 2026 and 2029/30. It would invest at least $3bn of additional funding in the health system per year. Extra operating…",
+   "url": "#/parties/green/policies",
+   "source": "https://www.greens.org.nz/greens_fiscal_plan_builds_real_economic_resilience_to_lower_cost_of_living_and_stimulate_64_000_new_jobs",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55372"
+  },
+  {
+   "id": "policy-added:green:POL55334",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "green",
+   "title": "Change the Investment Boost funding to focus on decarbonisation",
+   "summary": "This party would refocus the \"Investment Boost\" government funding for businesses on businesses aligned with investment objectives, decarbonisation and good quality working conditions.",
+   "url": "#/parties/green/policies",
+   "source": "https://www.greens.org.nz/greens_economic_development_plan_will_create_284_000_jobs",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55334"
+  },
+  {
+   "id": "policy-added:green:POL55371",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "green",
+   "title": "Aim to create a government surplus by 2029/30",
+   "summary": "This party would return the government to surplus by 2029/30. It would do this by increasing the tax base, prioritising taxing capital (i.e. a wealth tax) rather than labour.",
+   "url": "#/parties/green/policies",
+   "source": "https://www.greens.org.nz/greens_fiscal_plan_builds_real_economic_resilience_to_lower_cost_of_living_and_stimulate_64_000_new_jobs",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55371"
+  },
+  {
+   "id": "policy-added:green:POL55330",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "green",
+   "title": "Abolish the training wage",
+   "summary": "This party would abolish the training wage. All workers, regardless of training status, would be paid the minimum wage.",
+   "url": "#/parties/green/policies",
+   "source": "https://www.greens.org.nz/green_party_to_abolish_training_wage_and_provide_more_support_for_apprentices",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55330"
+  },
+  {
+   "id": "policy-added:act:POL55350",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "act",
+   "title": "Require compensation for individuals if council decisions affect private land",
+   "summary": "This party would would require councils to pay 'fair' compensation if decisions made by such councils interfere with agricultural industry and farming.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55350"
+  },
+  {
+   "id": "policy-added:act:POL55362",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "act",
+   "title": "Reduce regulations related to selling home-kill meat",
+   "summary": "This party would revise regulations around selling and purchasing home-kill meat.",
+   "url": "#/parties/act/policies",
+   "source": "https://www.beehive.govt.nz/release/cutting-red-tape-between-farm-gate-and-freezer",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55362"
+  },
+  {
+   "id": "policy-added:act:POL55349",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "act",
+   "title": "Introduce new permitting standards for agriculture",
+   "summary": "This party would introduce ten new permitting standards relating to farm plans, vegetable growing, on-farm water storage, gravel extraction, drain maintenance, effluent management, fertiliser application, farm quarries, wetland…",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55349"
+  },
+  {
+   "id": "policy-added:act:POL55333",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "act",
+   "title": "Expand and simplify access to trades for secondary school students",
+   "summary": "This party would ensure that funding follows students so that schools receive funding for approved vocational-training programs that are done outside of the student's school. It would create 'Industry Awards' as a qualification equivalent…",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/news/act-will-put-trades-on-an-equal-footing-with-university",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55333"
+  },
+  {
+   "id": "policy-added:act:POL55347",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "act",
+   "title": "Create a target of 10,000 children attending charter schools by 2029",
+   "summary": "This party would set a target of 10,000 student enrolments by the end of 2029, with annual reporting on progress. It would reduce barriers relating to employment, property and funding for state and state-integrated schools to convert to…",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/expanding-charter-schools",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55347"
+  },
+  {
+   "id": "policy-added:act:POL55353",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "act",
+   "title": "Create a rural workforce visa",
+   "summary": "This party would create a standalone, three-year visa specifically for dairy, sheep and beef, and general farm work. Would be tied to industry, not location or employer. The visa would be for 3 years, if no suitable New Zealander is…",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/rural-visa",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55353"
+  },
+  {
+   "id": "policy-added:act:POL55348",
+   "date": "2026-10-28",
+   "kind": "policy-added",
+   "party": "act",
+   "title": "Allow more sheep to graze on conservation land",
+   "summary": "This party would give DOC explicit authority and direction to issue grazing licenses for specified areas of conservation land where grazing can be used effectively, as per an established ecological framework that would identify where…",
+   "url": "#/parties/act/policies",
+   "source": "https://www.act.org.nz/grazing",
+   "time": "2026-10-28T22:43:05+13:00",
+   "ref": "POL55348"
+  },
+  {
+   "id": "release:womens-rights:https://www.scoop.co.nz/stories/PO2610/S00191/tomorrow-women-will-commemorate-winning-right-to-stand-for-parliament.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "womens-rights",
+   "title": "Tomorrow Women Will Commemorate Winning Right To Stand For Parliament",
+   "summary": "",
+   "url": "#/parties/news/womens-rights",
+   "source": "https://www.scoop.co.nz/stories/PO2610/S00191/tomorrow-women-will-commemorate-winning-right-to-stand-for-parliament.htm",
+   "time": "2026-10-28T17:12+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2610/S00246/labours-rental-rules-would-leave-more-kiwis-locked-out.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "act",
+   "title": "Labour's Rental Rules Would Leave More Kiwis Locked Out",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00246/labours-rental-rules-would-leave-more-kiwis-locked-out.htm",
+   "time": "2026-10-28T15:58+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:green:https://www.scoop.co.nz/stories/PA2610/S00245/luxons-lack-of-plan-leaves-rbnz-nervous-to-act.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "green",
+   "title": "Luxon’s Lack Of Plan Leaves RBNZ Nervous To Act",
+   "summary": "",
+   "url": "#/parties/news/green",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00245/luxons-lack-of-plan-leaves-rbnz-nervous-to-act.htm",
+   "time": "2026-10-28T14:47+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:labour:https://www.scoop.co.nz/stories/PA2610/S00244/labour-will-make-renting-fairer-and-more-secure.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "labour",
+   "title": "Labour Will Make Renting Fairer And More Secure",
+   "summary": "",
+   "url": "#/parties/news/labour",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00244/labour-will-make-renting-fairer-and-more-secure.htm",
+   "time": "2026-10-28T14:44+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:national:https://www.scoop.co.nz/stories/PA2610/S00243/nationals-plan-is-working-but-economy-not-out-of-the-woods-yet.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "national",
+   "title": "National’s Plan Is Working But Economy Not Out Of The Woods Yet",
+   "summary": "",
+   "url": "#/parties/news/national",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00243/nationals-plan-is-working-but-economy-not-out-of-the-woods-yet.htm",
+   "time": "2026-10-28T14:41+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2610/S00242/savings-progress-must-continue-to-keep-rates-in-check.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "act",
+   "title": "Savings Progress Must Continue To Keep Rates In Check",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00242/savings-progress-must-continue-to-keep-rates-in-check.htm",
+   "time": "2026-10-28T14:32+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:national:https://www.scoop.co.nz/stories/PA2610/S00241/labour-and-greens-must-be-clear-on-coalition-plan.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "national",
+   "title": "Labour And Greens Must Be Clear On Coalition Plan",
+   "summary": "",
+   "url": "#/parties/news/national",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00241/labour-and-greens-must-be-clear-on-coalition-plan.htm",
+   "time": "2026-10-28T13:03+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:nz-first:https://www.scoop.co.nz/stories/PA2610/S00240/jeez-wayne-winston-peters-welcomes-wayne-brown-aboard.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "nz-first",
+   "title": "Jeez Wayne: Winston Peters Welcomes Wayne Brown Aboard",
+   "summary": "",
+   "url": "#/parties/news/nz-first",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00240/jeez-wayne-winston-peters-welcomes-wayne-brown-aboard.htm",
+   "time": "2026-10-28T12:28+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:nz-first:https://www.scoop.co.nz/stories/PA2610/S00239/voting-is-open-it-is-your-time-to-decide-the-future-of-our-country.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "nz-first",
+   "title": "Voting Is Open, It Is Your Time To Decide The Future Of Our Country",
+   "summary": "",
+   "url": "#/parties/news/nz-first",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00239/voting-is-open-it-is-your-time-to-decide-the-future-of-our-country.htm",
+   "time": "2026-10-28T12:25+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2610/S00237/greens-dont-know-the-biggest-cost-to-households-its-them.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "act",
+   "title": "Greens Don’t Know The Biggest Cost To Households (It’s Them)",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00237/greens-dont-know-the-biggest-cost-to-households-its-them.htm",
+   "time": "2026-10-28T11:01+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:green:https://www.scoop.co.nz/stories/PA2610/S00236/greens-welcome-mayor-wayne-browns-priorities-for-auckland.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "green",
+   "title": "Greens Welcome Mayor Wayne Brown’s Priorities For Auckland",
+   "summary": "",
+   "url": "#/parties/news/green",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00236/greens-welcome-mayor-wayne-browns-priorities-for-auckland.htm",
+   "time": "2026-10-28T10:13+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2610/S00235/unlocking-new-zealands-potential-and-locking-up-criminals.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "act",
+   "title": "Unlocking New Zealand’s Potential And Locking Up Criminals",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00235/unlocking-new-zealands-potential-and-locking-up-criminals.htm",
+   "time": "2026-10-28T09:34+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:nz-first:https://www.scoop.co.nz/stories/PA2610/S00234/new-zealand-first-announces-ten-point-rail-policy.htm",
+   "date": "2026-10-28",
+   "kind": "release",
+   "party": "nz-first",
+   "title": "New Zealand First Announces Ten-Point Rail Policy",
+   "summary": "",
+   "url": "#/parties/news/nz-first",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00234/new-zealand-first-announces-ten-point-rail-policy.htm",
+   "time": "2026-10-28T08:32+13:00",
+   "via": "Scoop"
+  },
   {
    "id": "candidate-changed:independent:independent/kay-luv:2026-10-27",
    "date": "2026-10-27",
@@ -32,6 +1451,18 @@
    "url": "#/parties/independent/people",
    "source": "https://policy.nz/2026/party-vote/parties/independent",
    "time": "2026-10-27T22:02:31+13:00"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2610/S00233/paul-henrys-speech-botany-town-hall.htm",
+   "date": "2026-10-27",
+   "kind": "release",
+   "party": "act",
+   "title": "Paul Henry’s Speech - Botany Town Hall",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00233/paul-henrys-speech-botany-town-hall.htm",
+   "time": "2026-10-27T21:06+13:00",
+   "via": "Scoop"
   },
   {
    "id": "release:national:https://www.scoop.co.nz/stories/PA2610/S00232/dont-risk-more-taxes-and-debt-with-labourgreens.htm",
@@ -2014,7 +3445,7 @@
   }
  ],
  "_snapshot": {
-  "taken": "2026-10-27T22:02:31+13:00",
+  "taken": "2026-10-28T22:43:05+13:00",
   "policies": {
    "act": {
     "POL54642": {
@@ -2026,7 +3457,7 @@
     "POL54643": {
      "s": "Remove some rules around pharmacy locations, ownership and licences",
      "m": "550e8d2a41",
-     "u": "571dfd5c45",
+     "u": "389bf29206",
      "w": null
     },
     "POL54644": {
@@ -2044,7 +3475,7 @@
     "POL54646": {
      "s": "Increase the areas of conservation land which can be accessed by helicopter for hunting",
      "m": "94cf1db49c",
-     "u": "c41bbb03c3",
+     "u": "097a68c4ef",
      "w": null
     },
     "POL54648": {
@@ -2074,7 +3505,7 @@
     "POL54672": {
      "s": "Make disrupting lawful hunters with drones or by standing in the line of fire an offence",
      "m": "568bf6e862",
-     "u": "5c854019b4",
+     "u": "63c9f4a574",
      "w": null
     },
     "POL54673": {
@@ -2086,7 +3517,7 @@
     "POL54674": {
      "s": "Give the Game Council responsibility for game animals on conservation land",
      "m": "e693f417fc",
-     "u": "f430390165",
+     "u": "6062fb934e",
      "w": null
     },
     "POL54675": {
@@ -2110,7 +3541,7 @@
     "POL54678": {
      "s": "Give volunteer groups more opportunities and funding for maintenance on conservation land",
      "m": "dc6a4a43e9",
-     "u": "1e5dc80f47",
+     "u": "8bbf5627d6",
      "w": null
     },
     "POL54691": {
@@ -2266,7 +3697,7 @@
     "POL54894": {
      "s": "Expand rural policing",
      "m": "fa3d61fbb0",
-     "u": "d7d47f9fd0",
+     "u": "3876765682",
      "w": null
     },
     "POL54896": {
@@ -2338,25 +3769,25 @@
     "POL55046": {
      "s": "Repeal the Zero Carbon Act and NZ's net zero goal",
      "m": "86e909e86a",
-     "u": "c3a02769bb",
+     "u": "78a8e352f8",
      "w": null
     },
     "POL55047": {
      "s": "Remove the carbon price floor and return ETS profits to households",
      "m": "16d79200be",
-     "u": "bee16fea11",
+     "u": "3ac7912cc4",
      "w": null
     },
     "POL55048": {
      "s": "Reduce emissions with a focus on new technology",
      "m": "b39f2ab824",
-     "u": "c3a02769bb",
+     "u": "78a8e352f8",
      "w": null
     },
     "POL55054": {
      "s": "Ensure agriculture is not included in emission reduction programmes",
      "m": "dc66e1977e",
-     "u": "0778c77f25",
+     "u": "a078253baa",
      "w": null
     },
     "POL55159": {
@@ -2374,7 +3805,7 @@
     "POL55161": {
      "s": "Remove the \"six months\" caveat for assisted dying",
      "m": "0736224090",
-     "u": "f014aee8ee",
+     "u": "d49aaf85e9",
      "w": null
     },
     "POL55162": {
@@ -2404,7 +3835,7 @@
     "POL55166": {
      "s": "Commission Parliament to explore a deal with Meta for young people on social media",
      "m": "36a6e1e779",
-     "u": "50868dd196",
+     "u": "1cb6f96638",
      "w": null
     },
     "POL55182": {
@@ -2428,7 +3859,7 @@
     "POL55193": {
      "s": "Replace Te Mana o te Wai with measurable freshwater outcomes",
      "m": "4f438c07fe",
-     "u": "ea3c1b3e91",
+     "u": "3dc569631a",
      "w": null
     },
     "POL55194": {
@@ -2440,31 +3871,31 @@
     "POL55220": {
      "s": "Establish a statutory body to ensure compensation for investors in mineral extraction",
      "m": "55dc34715c",
-     "u": "d9140673a6",
+     "u": "258582a900",
      "w": null
     },
     "POL55221": {
      "s": "Create a set of national mineral extractions standards",
      "m": "bd6df89508",
-     "u": "d9140673a6",
+     "u": "258582a900",
      "w": null
     },
     "POL55222": {
      "s": "Expand domestic energy production",
-     "m": "92d6275517",
-     "u": "d9140673a6",
+     "m": "8055db7891",
+     "u": "258582a900",
      "w": null
     },
     "POL55223": {
      "s": "Revise legislation for resource extraction",
      "m": "ae6c1c6dc7",
-     "u": "d9140673a6",
+     "u": "258582a900",
      "w": null
     },
     "POL55224": {
      "s": "Increase the flexibility around environmental regulations for mining",
      "m": "8e7f2d41ee",
-     "u": "d9140673a6",
+     "u": "258582a900",
      "w": null
     },
     "POL55225": {
@@ -2476,7 +3907,7 @@
     "POL55233": {
      "s": "Keep agriculture as a subject in the Year 11 curriculum",
      "m": "93fc967719",
-     "u": "35b9491fcb",
+     "u": "0c71185541",
      "w": null
     },
     "POL55266": {
@@ -2675,6 +4106,48 @@
      "s": "Renegotiate New Zealand's Paris Agreement commitment, and leave if a fair deal is not possible",
      "m": "324c70fa5c",
      "u": "7947e22f86",
+     "w": null
+    },
+    "POL55333": {
+     "s": "Expand and simplify access to trades for secondary school students",
+     "m": "37eaea785f",
+     "u": "8baed4764a",
+     "w": null
+    },
+    "POL55347": {
+     "s": "Create a target of 10,000 children attending charter schools by 2029",
+     "m": "79326222cc",
+     "u": "831ea6c55f",
+     "w": null
+    },
+    "POL55348": {
+     "s": "Allow more sheep to graze on conservation land",
+     "m": "09c2a0e721",
+     "u": "fc390e7fc8",
+     "w": null
+    },
+    "POL55349": {
+     "s": "Introduce new permitting standards for agriculture",
+     "m": "9ec51eaadc",
+     "u": "d61cd966b8",
+     "w": null
+    },
+    "POL55350": {
+     "s": "Require compensation for individuals if council decisions affect private land",
+     "m": "16c8918503",
+     "u": "d61cd966b8",
+     "w": null
+    },
+    "POL55353": {
+     "s": "Create a rural workforce visa",
+     "m": "e360354bc5",
+     "u": "5d3a07778b",
+     "w": null
+    },
+    "POL55362": {
+     "s": "Reduce regulations related to selling home-kill meat",
+     "m": "bd425bc3dc",
+     "u": "c1db5da68c",
      "w": null
     }
    },
@@ -4551,7 +6024,7 @@
      "s": "Protect data sovereignty",
      "m": "c94d0225ea",
      "u": "599415b813",
-     "w": null
+     "w": "2026-10-28"
     },
     "POL55293": {
      "s": "Place limits on AI data centres' use of water and electricity",
@@ -6610,6 +8083,78 @@
      "m": "b5e1f0d087",
      "u": "2851dd948c",
      "w": null
+    },
+    "POL55328": {
+     "s": "Pay students who need to complete work placements for their qualifications",
+     "m": "8bde37070a",
+     "u": "dfe9f6ec53",
+     "w": null
+    },
+    "POL55329": {
+     "s": "Provide $2000 to employers and apprentices to help with training",
+     "m": "74e0d5ff7b",
+     "u": "5b3a5a25c3",
+     "w": null
+    },
+    "POL55330": {
+     "s": "Abolish the training wage",
+     "m": "e1e5db35bf",
+     "u": "5b3a5a25c3",
+     "w": null
+    },
+    "POL55331": {
+     "s": "Invest $30m in Māori and Pacific led trades training",
+     "m": "aca18106a7",
+     "u": "5b3a5a25c3",
+     "w": null
+    },
+    "POL55334": {
+     "s": "Change the Investment Boost funding to focus on decarbonisation",
+     "m": "b120628167",
+     "u": "b453be9bfb",
+     "w": null
+    },
+    "POL55335": {
+     "s": "Establish industry partnerships for mid-and-early career researchers",
+     "m": "98408fb8a3",
+     "u": "b453be9bfb",
+     "w": null
+    },
+    "POL55336": {
+     "s": "Increase funding for research and science in NZ",
+     "m": "cae42b4cc2",
+     "u": "b453be9bfb",
+     "w": null
+    },
+    "POL55337": {
+     "s": "Support NZ businesses to grow their exports",
+     "m": "7d4ee3a9a6",
+     "u": "b453be9bfb",
+     "w": null
+    },
+    "POL55338": {
+     "s": "Protect at least 30 percent of the Hauraki Gulf by 2030",
+     "m": "8123382ca6",
+     "u": "d62bb877cf",
+     "w": null
+    },
+    "POL55370": {
+     "s": "Increase public health funding by $3bn over 4 years",
+     "m": "d41f858f8e",
+     "u": "0a5b781ec6",
+     "w": null
+    },
+    "POL55371": {
+     "s": "Aim to create a government surplus by 2029/30",
+     "m": "3f1f84bf81",
+     "u": "494b31592f",
+     "w": null
+    },
+    "POL55372": {
+     "s": "Commit to future government operating allowances between $4.5bn to $4.7 bn",
+     "m": "81563b28a0",
+     "u": "494b31592f",
+     "w": null
     }
    },
    "labour": {
@@ -6736,7 +8281,7 @@
     "POL54753": {
      "s": "Support a social media ban for under-16s to go through to select committee",
      "m": "50071e75ab",
-     "u": "62c4fa83a1",
+     "u": "92280878e0",
      "w": null
     },
     "POL54768": {
@@ -6760,7 +8305,7 @@
     "POL54820": {
      "s": "Guarantee jobs for NZ-trained graduate nurses",
      "m": "924bc01b2b",
-     "u": "62e399c71e",
+     "u": "076064ba14",
      "w": null
     },
     "POL54822": {
@@ -7368,6 +8913,36 @@
      "m": "1802bccad6",
      "u": "7241bd4197",
      "w": null
+    },
+    "POL55324": {
+     "s": "Review the wait time and deaths linked to hospital emergency department",
+     "m": "2105d1217d",
+     "u": "9b69d086ca",
+     "w": null
+    },
+    "POL55325": {
+     "s": "Train more extended-care paramedics to treat people at home",
+     "m": "8a9c0465bf",
+     "u": "9b69d086ca",
+     "w": null
+    },
+    "POL55351": {
+     "s": "Fund 1000 extra teacher aides",
+     "m": "0588eba708",
+     "u": "dc0eee524a",
+     "w": null
+    },
+    "POL55377": {
+     "s": "Introduce a rent-to-own scheme for social and community housing tenants",
+     "m": "39671307a2",
+     "u": "493c77ac75",
+     "w": null
+    },
+    "POL55378": {
+     "s": "Raise the income cap for the First Home Loans scheme",
+     "m": "4b31608a3f",
+     "u": "96ec092005",
+     "w": null
     }
    },
    "legalise-cannabis": {
@@ -7588,7 +9163,7 @@
     "POL54715": {
      "s": "Increase paid parental leave to 30 weeks by 2029",
      "m": "a04780f0bb",
-     "u": "bf4c297353",
+     "u": "bf8ebdf5b7",
      "w": null
     },
     "POL54723": {
@@ -7636,7 +9211,7 @@
     "POL54734": {
      "s": "Enrol New Zealand citizens in Kiwisaver at birth",
      "m": "830d1e603d",
-     "u": "46ba1e81d7",
+     "u": "70283251e4",
      "w": null
     },
     "POL54736": {
@@ -7654,19 +9229,19 @@
     "POL54813": {
      "s": "Reduce the student loan repayment rate to 10 percent",
      "m": "3b09b791c8",
-     "u": "2dbbd53fb4",
+     "u": "90c601f73f",
      "w": null
     },
     "POL54814": {
      "s": "Fund further enforcement and create harsher penalties for overseas-based student loan holders",
-     "m": "fbc59c3e6f",
-     "u": "c3a8bef91c",
+     "m": "2e743d3978",
+     "u": "9bd220e507",
      "w": null
     },
     "POL54815": {
      "s": "Ban under-16 year olds from social media",
      "m": "dfa5684757",
-     "u": "bb1e0e913e",
+     "u": "8595c554e1",
      "w": null
     },
     "POL54817": {
@@ -7684,7 +9259,7 @@
     "POL54836": {
      "s": "Allow Kiwisaver to be used by farm workers buying homes or farms",
      "m": "7cb29d92f5",
-     "u": "c39da615d8",
+     "u": "a82439cb98",
      "w": null
     },
     "POL54897": {
@@ -7696,7 +9271,7 @@
     "POL54918": {
      "s": "Raise the income threshold for people who can pay a lower deposit for their first home",
      "m": "991c40cf05",
-     "u": "e1a8da36d7",
+     "u": "a34fc0934a",
      "w": null
     },
     "POL54922": {
@@ -7725,14 +9300,14 @@
     },
     "POL54926": {
      "s": "Prevent \"good character\" from being a mitigating factor in sentencing for sexual offending",
-     "m": "ee3fdc5be6",
-     "u": "aa330087bd",
+     "m": "3d89f34811",
+     "u": "d20f09f451",
      "w": null
     },
     "POL54978": {
      "s": "Create a dedicated police team for Auckland public transport",
-     "m": "31831b3bdf",
-     "u": "097c548174",
+     "m": "3e2b5178e1",
+     "u": "4388b9625f",
      "w": null
     },
     "POL55014": {
@@ -7750,19 +9325,19 @@
     "POL55050": {
      "s": "Limit the use of screens in school for primary-aged and younger children",
      "m": "f3dfd054e1",
-     "u": "2f4308c87f",
+     "u": "976f569bcf",
      "w": null
     },
     "POL55051": {
      "s": "Use a checklist in early childhood settings to assess school readiness",
      "m": "9c779097b2",
-     "u": "2f4308c87f",
+     "u": "976f569bcf",
      "w": null
     },
     "POL55052": {
      "s": "Require primary school writing assessments to be completed on paper",
      "m": "f4bad00827",
-     "u": "2f4308c87f",
+     "u": "976f569bcf",
      "w": null
     },
     "POL55089": {
@@ -7886,9 +9461,9 @@
      "w": null
     },
     "POL55205": {
-     "s": "Increase funding for Pharmac's medicines budget",
-     "m": "22eb738e0c",
-     "u": "59da33f6d5",
+     "s": "Increase funding for Pharmac's medicines budget by reducing foreign aid",
+     "m": "1029953da7",
+     "u": "451ccb8f42",
      "w": null
     },
     "POL55206": {
@@ -8406,6 +9981,48 @@
      "m": "5d912d8cd4",
      "u": "64e8fc3fb4",
      "w": null
+    },
+    "POL55342": {
+     "s": "Establish a free helpline for elderly people",
+     "m": "db12521da2",
+     "u": "6aa48668ae",
+     "w": null
+    },
+    "POL55343": {
+     "s": "Expand the type of dwellings eligible for faster consents under the 'granny flat' rule",
+     "m": "f654b9cbf7",
+     "u": "6aa48668ae",
+     "w": null
+    },
+    "POL55344": {
+     "s": "Reserve at least 20 percent of Housing Flexible Fund places for older people",
+     "m": "3966af7d63",
+     "u": "6aa48668ae",
+     "w": null
+    },
+    "POL55345": {
+     "s": "Require employers to continue contributing to Kiwisaver for employees over 65",
+     "m": "4722d321cc",
+     "u": "6aa48668ae",
+     "w": null
+    },
+    "POL55346": {
+     "s": "Review the Enduring Powers of Attorney framework",
+     "m": "6d9cb147c0",
+     "u": "6aa48668ae",
+     "w": null
+    },
+    "POL55367": {
+     "s": "Make it more straightforward to open up children's bank accounts",
+     "m": "fb3059ed08",
+     "u": "ef2ea36c27",
+     "w": null
+    },
+    "POL55369": {
+     "s": "Emphasise financial literacy in the school curriculum",
+     "m": "ee553aeae4",
+     "u": "ef2ea36c27",
+     "w": null
     }
    },
    "nz-first": {
@@ -8448,7 +10065,7 @@
     "POL54662": {
      "s": "Survey all of NZ to look for minerals",
      "m": "0ba85b9478",
-     "u": "c18e7f8041",
+     "u": "fec70fdc34",
      "w": null
     },
     "POL54663": {
@@ -8472,7 +10089,7 @@
     "POL54746": {
      "s": "Support new parents with a $5000 grant for the first three years of their child's life",
      "m": "44f5fde047",
-     "u": "cacfae415b",
+     "u": "2c3c7baba3",
      "w": null
     },
     "POL54754": {
@@ -8484,7 +10101,7 @@
     "POL54755": {
      "s": "Establish a Special Economic Zone at Marsden Point",
      "m": "ad929bc70f",
-     "u": "54cf215df1",
+     "u": "d511f2596f",
      "w": null
     },
     "POL54756": {
@@ -8496,13 +10113,13 @@
     "POL54757": {
      "s": "Introduce a binding referendum on the Māori seats",
      "m": "73b6f6ba76",
-     "u": "469bef02db",
+     "u": "6ebf7776c2",
      "w": null
     },
     "POL54759": {
      "s": "Ensure that only NZ citizens can vote",
      "m": "e66eb0be2e",
-     "u": "ceb9f64efd",
+     "u": "0e513635f3",
      "w": null
     },
     "POL54961": {
@@ -8548,8 +10165,8 @@
      "w": null
     },
     "POL55057": {
-     "s": "Promote healthy eating as preventative healthcare",
-     "m": "919cc53ab3",
+     "s": "Promote healthy eating",
+     "m": "141bfd3122",
      "u": "bfe9e9b5db",
      "w": null
     },
@@ -8561,7 +10178,7 @@
     },
     "POL55076": {
      "s": "Fund organic and nutrient-based health interventions",
-     "m": "95b735c865",
+     "m": "c3cb3aa6c4",
      "u": "bfe9e9b5db",
      "w": null
     },
@@ -8610,7 +10227,7 @@
     "POL55262": {
      "s": "Replace the Accredited Employer Work Visa with a shortage-led skilled work visa",
      "m": "0479cee066",
-     "u": "514bb52e59",
+     "u": "19768d23e4",
      "w": null
     },
     "POL55304": {
@@ -8640,7 +10257,7 @@
     "POL55310": {
      "s": "Establish a 12-month trial for commuter rail in Canterbury and further south",
      "m": "76abdfe2cf",
-     "u": "de265c29fd",
+     "u": "b41b20590e",
      "w": null
     },
     "NZF-A01": {
@@ -8882,6 +10499,114 @@
      "m": "e12a9e1ef8",
      "u": "e99ea3e39f",
      "w": null
+    },
+    "POL55332": {
+     "s": "Increase the Gaming Development Sector Rebate scheme",
+     "m": "6d2e3694bf",
+     "u": "609786e97c",
+     "w": null
+    },
+    "POL55352": {
+     "s": "Increase the depreciation rate for manufacturing and targeted export industries",
+     "m": "6b56b30212",
+     "u": "e76910a9ae",
+     "w": null
+    },
+    "POL55354": {
+     "s": "Remove both petrol and diesel from the emissions trading scheme",
+     "m": "a1a39b15dc",
+     "u": "38267c6b72",
+     "w": null
+    },
+    "POL55355": {
+     "s": "Increase sentence lengths for murder",
+     "m": "4a977d0a65",
+     "u": "d8707c6651",
+     "w": null
+    },
+    "POL55356": {
+     "s": "Expand self-defence justifications in the justice system",
+     "m": "8e64bb39b9",
+     "u": "d8707c6651",
+     "w": null
+    },
+    "POL55357": {
+     "s": "Increase prison sentences for those convicted of sexual offences against children",
+     "m": "cb0103e918",
+     "u": "d8707c6651",
+     "w": null
+    },
+    "POL55358": {
+     "s": "Focus police resources on combating transnational organised crime",
+     "m": "75f060e4df",
+     "u": "d8707c6651",
+     "w": null
+    },
+    "POL55359": {
+     "s": "Oppose any expansion of the clean-slate law",
+     "m": "86dcfdbadf",
+     "u": "d8707c6651",
+     "w": null
+    },
+    "POL55360": {
+     "s": "Create a time limit for sentencing in courts and limit name suppression",
+     "m": "ba078c4ce3",
+     "u": "d8707c6651",
+     "w": null
+    },
+    "POL55361": {
+     "s": "Review fines and chargers for transport offences",
+     "m": "b3214eacc8",
+     "u": "d8707c6651",
+     "w": null
+    },
+    "POL55364": {
+     "s": "Withdraw from the Paris climate agreement",
+     "m": "78b07f78a5",
+     "u": "0a6e73fe83",
+     "w": null
+    },
+    "POL55365": {
+     "s": "Consider establishing a “New Zealand Future Fund” of up to $100 billion",
+     "m": "de32ca1efc",
+     "u": "d5d00569a3",
+     "w": null
+    },
+    "POL55366": {
+     "s": "Establish a six-year Defence Force investment programme",
+     "m": "4a8fcbe57a",
+     "u": "b01a3c524c",
+     "w": null
+    },
+    "POL55368": {
+     "s": "Increase capacity to defend underwater minerals from other countries if needed",
+     "m": "a427697659",
+     "u": "b01a3c524c",
+     "w": null
+    },
+    "POL55373": {
+     "s": "Protect the \"Ross Dependency\" and Antarctic security",
+     "m": "df5a1e1dbb",
+     "u": "b01a3c524c",
+     "w": null
+    },
+    "POL55374": {
+     "s": "Centralise Defence Force command",
+     "m": "de199a5085",
+     "u": "b01a3c524c",
+     "w": null
+    },
+    "POL55375": {
+     "s": "Invest in the SAS to maintain important defence relationships",
+     "m": "8495d2495a",
+     "u": "b01a3c524c",
+     "w": null
+    },
+    "POL55379": {
+     "s": "Decouple NZDF pay from the Public Service Commission and ensure merit-based appointments",
+     "m": "9d718785c0",
+     "u": "b01a3c524c",
+     "w": null
     }
    },
    "nz-loyal": {
@@ -9066,7 +10791,7 @@
     "POL54770": {
      "s": "Increase incentives to electrify houses, industries and transport",
      "m": "41d751476b",
-     "u": "05a3395528",
+     "u": "b3930f497d",
      "w": null
     },
     "POL54776": {
@@ -9222,7 +10947,7 @@
     "POL54828": {
      "s": "Include te Tiriti and Aotearoa history in education",
      "m": "5e88bede84",
-     "u": "2cda3209b7",
+     "u": "a452375b6b",
      "w": null
     },
     "POL54829": {
@@ -9300,7 +11025,7 @@
     "POL54873": {
      "s": "Make housing more affordable with targeted construction support",
      "m": "37aaeacb22",
-     "u": "2dd6f56336",
+     "u": "19883745db",
      "w": null
     },
     "POL54874": {
@@ -9330,7 +11055,7 @@
     "POL54887": {
      "s": "Rebuild the school lunch programme",
      "m": "6c93cdba82",
-     "u": "d563a6732d",
+     "u": "04e975da55",
      "w": null
     },
     "POL54888": {
@@ -9390,7 +11115,7 @@
     "POL55323": {
      "s": "Provide more support for the arts through a citizens income and innovation funding",
      "m": "d3c13c69d9",
-     "u": "e4d13db552",
+     "u": "4e45a7f133",
      "w": null
     },
     "OPP-A01": {
@@ -9517,6 +11242,24 @@
      "s": "Reverse the Government's plan for an LNG import terminal in Taranaki",
      "m": "0567597ab7",
      "u": "57f21fcd46",
+     "w": null
+    },
+    "POL55326": {
+     "s": "Back an AI framework on copyright protection",
+     "m": "d7373ca1e2",
+     "u": "e9d5b2da15",
+     "w": null
+    },
+    "POL55327": {
+     "s": "Increase access to innovation and investment for Māori creatives",
+     "m": "1d17f7a44e",
+     "u": "231d82570c",
+     "w": null
+    },
+    "POL55376": {
+     "s": "Set up a future generations commissioner and require lawmakers to consider long-term impacts",
+     "m": "2b3fb5d17b",
+     "u": "17d6657cf3",
      "w": null
     }
    },
@@ -10213,6 +11956,24 @@
      "s": "Protect the right to sell homegrown and homekill kai locally",
      "m": "99310bea83",
      "u": "27dbb09153",
+     "w": null
+    },
+    "POL55339": {
+     "s": "Create a Toi Māori authority to support Māori arts",
+     "m": "c1a27d9148",
+     "u": "16984ab39a",
+     "w": null
+    },
+    "POL55340": {
+     "s": "Invest in kōhanga Reo and kura",
+     "m": "6d2ab1c373",
+     "u": "eb9e1c3705",
+     "w": null
+    },
+    "POL55341": {
+     "s": "Restore Te Ahu o Te Reo Māori",
+     "m": "0ca9a39d31",
+     "u": "eb9e1c3705",
      "w": null
     }
    },
@@ -14763,19 +16524,19 @@
     "desc": "Candidate for the Hamilton West electorate",
     "q": "90d20141bf"
    },
-   "new-world-order-mccann-party/nathan-lee-couper": {
-    "party": "new-world-order-mccann-party",
-    "pnz": "new-world-order-mccann-party",
-    "name": "Nathan Lee Couper",
+   "independent/wiremu-thomson": {
+    "party": "independent",
+    "pnz": "independent",
+    "name": "Wiremu Thomson",
     "rank": null,
     "el": "Hamilton West",
     "desc": "Candidate for the Hamilton West electorate",
     "q": "90d20141bf"
    },
-   "independent/wiremu-thomson": {
-    "party": "independent",
-    "pnz": "independent",
-    "name": "Wiremu Thomson",
+   "new-world-order-mccann-party/nathan-lee-couper": {
+    "party": "new-world-order-mccann-party",
+    "pnz": "new-world-order-mccann-party",
+    "name": "Nathan Lee Couper",
     "rank": null,
     "el": "Hamilton West",
     "desc": "Candidate for the Hamilton West electorate",
@@ -15397,7 +17158,8 @@
    "2026-10-10|Anacta",
    "2026-10-12|1 News–Verian",
    "2026-10-19|1 News–Verian",
-   "2026-10-19|The Post/Freshwater Strategy"
+   "2026-10-19|The Post/Freshwater Strategy",
+   "2026-10-25|1 News–Verian"
   ],
   "releases": [
    "https://www.scoop.co.nz/stories/PA2609/S00008/te-pati-maori-launches-te-tiriti-entrenchment-policy.htm",
@@ -15531,6 +17293,19 @@
    "https://www.scoop.co.nz/stories/PA2610/S00230/new-report-shows-nz-healthcare-system-heading-the-way-of-the-united-states.htm",
    "https://www.scoop.co.nz/stories/PA2610/S00231/greens-campaign-to-make-history-in-te-tai-tokerau-with-first-ever-maori-electorate-win.htm",
    "https://www.scoop.co.nz/stories/PA2610/S00232/dont-risk-more-taxes-and-debt-with-labourgreens.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00233/paul-henrys-speech-botany-town-hall.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00234/new-zealand-first-announces-ten-point-rail-policy.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00235/unlocking-new-zealands-potential-and-locking-up-criminals.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00236/greens-welcome-mayor-wayne-browns-priorities-for-auckland.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00237/greens-dont-know-the-biggest-cost-to-households-its-them.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00239/voting-is-open-it-is-your-time-to-decide-the-future-of-our-country.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00240/jeez-wayne-winston-peters-welcomes-wayne-brown-aboard.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00241/labour-and-greens-must-be-clear-on-coalition-plan.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00242/savings-progress-must-continue-to-keep-rates-in-check.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00243/nationals-plan-is-working-but-economy-not-out-of-the-woods-yet.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00244/labour-will-make-renting-fairer-and-more-secure.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00245/luxons-lack-of-plan-leaves-rbnz-nervous-to-act.htm",
+   "https://www.scoop.co.nz/stories/PA2610/S00246/labours-rental-rules-would-leave-more-kiwis-locked-out.htm",
    "https://www.scoop.co.nz/stories/PO2608/S00215/alex-hislop-announced-as-west-coast-tasman-candidate.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00028/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00108/a-win-for-free-speech-helen-houghton-challenges-extremist-label-and-secures-public-apology.htm",
@@ -15552,7 +17327,8 @@
    "https://www.scoop.co.nz/stories/PO2610/S00133/fixing-our-broken-healthcare-system.htm",
    "https://www.scoop.co.nz/stories/PO2610/S00157/civil-wars-chaos-and-anarchy.htm",
    "https://www.scoop.co.nz/stories/PO2610/S00159/gutless-ministry-of-health-is-responsible-for-high-court-ruling-against-puberty-blockers-ban.htm",
-   "https://www.scoop.co.nz/stories/PO2610/S00174/conservative-party-rues-nzs-ignoring-of-environment.htm"
+   "https://www.scoop.co.nz/stories/PO2610/S00174/conservative-party-rues-nzs-ignoring-of-environment.htm",
+   "https://www.scoop.co.nz/stories/PO2610/S00191/tomorrow-women-will-commemorate-winning-right-to-stand-for-parliament.htm"
   ]
  }
 }

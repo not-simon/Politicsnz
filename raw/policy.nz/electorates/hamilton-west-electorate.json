@@ -5,27 +5,27 @@
    {
     "attributes": [
      {
-      "_key": "227mFCOl8uclHuS5roWPWj",
+      "_key": "KjQPzD5dL9UNn0UCveKRir",
       "name": "Why I'm standing",
       "value": "I'm running because after 15 years as a paramedic, I've seen what happens when our systems work, and when they fail people. I want to bring that frontline experience to Parliament and focus on practical, evidence-based solutions to the challenges facing Hamilton West and New Zealand. I've spent my career helping people one patient at a time. Running for Parliament is an opportunity to improve the systems that shape people's lives in the first place."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWPZY",
+      "_key": "KjQPzD5dL9UNn0UCveKRmZ",
       "name": "About me",
       "value": "15 years as a paramedic has taught me to listen, make difficult decisions, communicate clearly and remain accountable for those decisions. I've worked across rural, provincial and urban communities, giving me perspective on the challenges New Zealanders face. I believe good politics should be practical, evidence-based and focused on outcomes rather than ideology. I'll listen to my community, challenge ideas when necessary."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWPcN",
+      "_key": "KjQPzD5dL9UNn0UCveKRqH",
       "name": "Priority 1",
       "value": "Clean up politics by increasing transparency, accountability and trust in government."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWPfC",
+      "_key": "KjQPzD5dL9UNn0UCveKRtz",
       "name": "Priority 2",
       "value": "Reset our tax system to reward work, reduce inequality and make housing more affordable."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWPi1",
+      "_key": "KjQPzD5dL9UNn0UCveKRxh",
       "name": "Priority 3",
       "value": "Build a breakthrough economy with higher productivity, better jobs and greater opportunity."
      }
@@ -95,34 +95,6 @@
    {
     "attributes": [],
     "party": {
-     "name": "Green Party"
-    },
-    "person": {
-     "attributes": [],
-     "firstName": "Louise",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/1d87960b815ed1fcf21e6f7fa4b3567869b841cb-1024x1024.jpg",
-     "lastName": "Hutt",
-     "party": {
-      "name": "Green Party",
-      "slug": "green-party"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the Hamilton West electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": "19",
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recie6XT3ewqkl3HM",
-       "_type": "reference"
-      }
-     },
-     "slug": "louise-hutt"
-    },
-    "policies": []
-   },
-   {
-    "attributes": [],
-    "party": {
      "name": "Independent"
     },
     "person": {
@@ -151,6 +123,90 @@
    {
     "attributes": [],
     "party": {
+     "name": "NZ Outdoors & Freedom Party"
+    },
+    "person": {
+     "attributes": [],
+     "firstName": "Donna",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/e252d74c99dbaacf619b29c1e01930b597810d23-1024x1024.jpg",
+     "lastName": "Pokere-Phillips",
+     "party": {
+      "name": "NZ Outdoors & Freedom Party",
+      "slug": "nz-outdoors--freedom-party"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the Hamilton West electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": null,
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recG8k12dxVMhUDLv",
+       "_type": "reference"
+      }
+     },
+     "slug": "donna-pokere-phillips"
+    },
+    "policies": []
+   },
+   {
+    "attributes": [],
+    "party": {
+     "name": "Independent"
+    },
+    "person": {
+     "attributes": [],
+     "firstName": "Wiremu",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/2d9351cf5b5806903c621bc798fb74e68ae95b1e-1024x1024.jpg",
+     "lastName": "Thomson",
+     "party": {
+      "name": "Independent",
+      "slug": "independent"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the Hamilton West electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": null,
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recFlrFwZ5cWyWhjX",
+       "_type": "reference"
+      }
+     },
+     "slug": "wiremu-thomson"
+    },
+    "policies": []
+   },
+   {
+    "attributes": [],
+    "party": {
+     "name": "New World Order McCann Party"
+    },
+    "person": {
+     "attributes": [],
+     "firstName": "Nathan Lee",
+     "image": null,
+     "lastName": "Couper",
+     "party": {
+      "name": "New World Order McCann Party",
+      "slug": "new-world-order-mccann-party"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the Hamilton West electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": null,
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-rec1perg1WjKFORRb",
+       "_type": "reference"
+      }
+     },
+     "slug": "nathan-lee-couper"
+    },
+    "policies": []
+   },
+   {
+    "attributes": [],
+    "party": {
      "name": "National Party"
     },
     "person": {
@@ -173,6 +229,34 @@
       }
      },
      "slug": "tama-potaka"
+    },
+    "policies": []
+   },
+   {
+    "attributes": [],
+    "party": {
+     "name": "Green Party"
+    },
+    "person": {
+     "attributes": [],
+     "firstName": "Louise",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/1d87960b815ed1fcf21e6f7fa4b3567869b841cb-1024x1024.jpg",
+     "lastName": "Hutt",
+     "party": {
+      "name": "Green Party",
+      "slug": "green-party"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the Hamilton West electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": "19",
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recie6XT3ewqkl3HM",
+       "_type": "reference"
+      }
+     },
+     "slug": "louise-hutt"
     },
     "policies": []
    },
@@ -231,102 +315,18 @@
      "slug": "myra-williamson"
     },
     "policies": []
-   },
-   {
-    "attributes": [],
-    "party": {
-     "name": "New World Order McCann Party"
-    },
-    "person": {
-     "attributes": [],
-     "firstName": "Nathan Lee",
-     "image": null,
-     "lastName": "Couper",
-     "party": {
-      "name": "New World Order McCann Party",
-      "slug": "new-world-order-mccann-party"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the Hamilton West electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": null,
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-rec1perg1WjKFORRb",
-       "_type": "reference"
-      }
-     },
-     "slug": "nathan-lee-couper"
-    },
-    "policies": []
-   },
-   {
-    "attributes": [],
-    "party": {
-     "name": "Independent"
-    },
-    "person": {
-     "attributes": [],
-     "firstName": "Wiremu",
-     "image": null,
-     "lastName": "Thomson",
-     "party": {
-      "name": "Independent",
-      "slug": "independent"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the Hamilton West electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": null,
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recFlrFwZ5cWyWhjX",
-       "_type": "reference"
-      }
-     },
-     "slug": "wiremu-thomson"
-    },
-    "policies": []
-   },
-   {
-    "attributes": [],
-    "party": {
-     "name": "NZ Outdoors & Freedom Party"
-    },
-    "person": {
-     "attributes": [],
-     "firstName": "Donna",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/e252d74c99dbaacf619b29c1e01930b597810d23-1024x1024.jpg",
-     "lastName": "Pokere-Phillips",
-     "party": {
-      "name": "NZ Outdoors & Freedom Party",
-      "slug": "nz-outdoors--freedom-party"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the Hamilton West electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": null,
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recG8k12dxVMhUDLv",
-       "_type": "reference"
-      }
-     },
-     "slug": "donna-pokere-phillips"
-    },
-    "policies": []
    }
   ],
   "candidatesList": [
    "blair-smith",
-   "louise-hutt",
    "steve-phelps",
-   "tama-potaka",
-   "kevin-stone",
-   "myra-williamson",
-   "nathan-lee-couper",
+   "donna-pokere-phillips",
    "wiremu-thomson",
-   "donna-pokere-phillips"
+   "nathan-lee-couper",
+   "tama-potaka",
+   "louise-hutt",
+   "kevin-stone",
+   "myra-williamson"
   ],
   "description": "Hamilton West covers Hamilton’s western half, up until the Waikato River which dives it from Hamilton East. It covers suburbs such as Nawtown, Fitzroy, and Melville. Tama Potaka has been the MP since winning the seat in a 2022 by-election and won re-election with a margin of 17,595. National also won the party vote in 2023 with 41% of the vote, followed by Labour on 26%. The seat is regarded as a bellwether seat, as with the exception of 1993, the seat has always been won by the party which won the plurality of the vote. \n\n",
   "format": "candidate",
@@ -455,6 +455,7 @@
    "regional-development",
    "fresh-water-and-pollution",
    "energy",
+   "mental-health",
    "te-reo-maori-and-culture",
    "superannuation-and-savings",
    "oil-gas-and-mining",
@@ -468,15 +469,15 @@
    "fisheries",
    "oceans",
    "waste-management",
+   "trades-and-vocational-education",
    "seniors",
    "trade-and-exports",
    "arts-culture-and-heritage",
    "social-and-public-housing",
    "key-policies-housing",
    "early-childhood-education",
-   "mental-health",
+   "defence-and-veterans",
    "rail-transport",
-   "trades-and-vocational-education",
    "housing-quality",
    "wellbeing-and-services",
    "forestry",
@@ -488,8 +489,7 @@
    "construction",
    "disability",
    "renting",
-   "alcohol-and-drugs",
-   "defence-and-veterans"
+   "alcohol-and-drugs"
   ],
   "type": {
    "description": "",
@@ -1122,6 +1122,7 @@
     "regional-development",
     "fresh-water-and-pollution",
     "energy",
+    "mental-health",
     "te-reo-maori-and-culture",
     "superannuation-and-savings",
     "oil-gas-and-mining",
@@ -1135,15 +1136,15 @@
     "fisheries",
     "oceans",
     "waste-management",
+    "trades-and-vocational-education",
     "seniors",
     "trade-and-exports",
     "arts-culture-and-heritage",
     "social-and-public-housing",
     "key-policies-housing",
     "early-childhood-education",
-    "mental-health",
+    "defence-and-veterans",
     "rail-transport",
-    "trades-and-vocational-education",
     "housing-quality",
     "wellbeing-and-services",
     "forestry",
@@ -1155,8 +1156,7 @@
     "construction",
     "disability",
     "renting",
-    "alcohol-and-drugs",
-    "defence-and-veterans"
+    "alcohol-and-drugs"
    ]
   },
   "slug": "2026"

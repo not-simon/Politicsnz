@@ -8,6 +8,225 @@ Every 2026 general-election policy of the New Zealand National Party (Te Rōpū 
 - Policy statements, Why/How summaries and topics for `POL…` entries come from policy.nz (`raw/policy.nz/parties/national-party.json`). Costings are shown only where National or policy.nz states one.
 - National is the senior party in the current (2023–2026) coalition Government, so some documents mix new election promises with descriptions of what the Government has already done. Entries here are the forward-looking commitments.
 
+<!-- GENERATED:policy-updates START -->
+## Changes on policy.nz since 23 October 2026
+
+This archive captured the party's policy.nz policies on 23 October 2026; policy.nz is re-checked daily by [`tools/refresh_policies.py`](../../../tools/refresh_policies.py). Nothing is deleted: a policy that is no longer on policy.nz stays in this archive marked *withdrawn*. Full texts of new sources are archived separately; until then the links go to the original pages. Where this block and the sections below differ, this block is the newer text.
+
+### New policies
+
+#### Establish a free helpline for elderly people (POL55342)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that it can be difficult for older people to navigate government systems and access what they're entitled to. Creating a single helpline will make it easier for people to get help.
+
+**How** (*policy.nz*): This party would create 0800 SENIORS, a number senior citizens can call for help with government services and support. The helpline will sit within MSD and be funded from existing baselines.
+
+Sources: ['Retirement Policy' (PDF), undated (accessed 22 October 2026)](https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Retirement.pdf?v=1792619441); ['Fixing the Basics and Building the Future: National's plan for retirement', 22 October 2026 (accessed 22 October 2026)](https://www.national.org.nz/news/20261022-retirement); [policy.nz party page](https://policy.nz/2026/party-vote/parties/national-party). Full text not yet archived.
+
+#### Expand the type of dwellings eligible for faster consents under the 'granny flat' rule (POL55343)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that a current 'granny flat' policy has made it easier to build affordable, warm, safe homes for older people. This party says these rules should be expanded to apply to more small dwellings, including tiny houses and attached garages. It says older people deserve affordable and quality housing.
+
+**How** (*policy.nz*): This party would allow attached garages to be consented under the 'granny flat rules' for houses up to 70 metres squared. Tiny homes on wheels would also be allowed to access these rules. This party would require PIM (project information memorandums) to be processed within 5 working days and keep fees to cost recovery. The requirement for a primary dwelling would be removed. This party would also explore a new licensing class for builders working on this type of building to ensure that homes are built with high quality standards.
+
+Sources: ['Retirement Policy' (PDF), undated (accessed 22 October 2026)](https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Retirement.pdf?v=1792619441); ['Fixing the Basics and Building the Future: National's plan for retirement', 22 October 2026 (accessed 22 October 2026)](https://www.national.org.nz/news/20261022-retirement); [policy.nz party page](https://policy.nz/2026/party-vote/parties/national-party). Full text not yet archived.
+
+#### Reserve at least 20 percent of Housing Flexible Fund places for older people (POL55344)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that not all old people can or want to live in retirement villages. This party says that 15 percent of people on the Housing Register are older than 65 and a third are 55 or older, meaning that many old people do not have secure housing. The Housing Flexible Fund is a contestable housing fund from the government for different kinds of affordable housing solutions, and this party says that some of that should be focused on housing for older people.
+
+**How** (*policy.nz*): This party would ringfence 20 percent of Housing Flexible Fund dwellings for older people. Social homes, affordable rentals and other types of housing will all qualify.
+
+Sources: ['Retirement Policy' (PDF), undated (accessed 22 October 2026)](https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Retirement.pdf?v=1792619441); ['Fixing the Basics and Building the Future: National's plan for retirement', 22 October 2026 (accessed 22 October 2026)](https://www.national.org.nz/news/20261022-retirement); [policy.nz party page](https://policy.nz/2026/party-vote/parties/national-party). Full text not yet archived.
+
+#### Require employers to continue contributing to Kiwisaver for employees over 65 (POL55345)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that seniors' savings and security should be protected. Many people choose to keep working after the age of 65 and these people should still get employer contributions to their Kiwisaver.
+
+**How** (*policy.nz*): This party would require employers to continue Kiwisaver contributions for employees over the age of 65. This change would begin on 1 July 2027.
+
+Sources: ['Retirement Policy' (PDF), undated (accessed 22 October 2026)](https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Retirement.pdf?v=1792619441); ['Fixing the Basics and Building the Future: National's plan for retirement', 22 October 2026 (accessed 22 October 2026)](https://www.national.org.nz/news/20261022-retirement); [policy.nz party page](https://policy.nz/2026/party-vote/parties/national-party). Full text not yet archived.
+
+#### Review the Enduring Powers of Attorney framework (POL55346)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that older New Zealanders deserve to be protected from financial harm. A review of the Enduring Powers of Attorney law is one way to check that these rules are working as intended.
+
+**How** (*policy.nz*): This party would review the Enduring Powers of Attorney Framework (which allows people to choose trusted others to act on their behalf if they cannot make decisions), and consider further law changes to protect seniors from economic harm.
+
+Sources: ['Retirement Policy' (PDF), undated (accessed 22 October 2026)](https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Retirement.pdf?v=1792619441); ['Fixing the Basics and Building the Future: National's plan for retirement', 22 October 2026 (accessed 22 October 2026)](https://www.national.org.nz/news/20261022-retirement); [policy.nz party page](https://policy.nz/2026/party-vote/parties/national-party). Full text not yet archived.
+
+#### Make it more straightforward to open up children's bank accounts (POL55367)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that currently, anti-money laundering requirements can make it hard for parents to open bank accounts for their children. That could be changed by amendments to the legislation.
+
+**How** (*policy.nz*): This party would amend the Anti Money Laundering law to make sure that it is not difficult for parents to open bank accounts for their children.
+
+Sources: ['Plan for Parents' (PDF), undated (accessed 27 October 2026)](https://assets.national.org.nz/web/prod/National%27s%20plan%20for%20parents.pdf?v=1792956772); ['National’s plan for parents ', 24 October 2026 (accessed 27 October 2026)](https://www.national.org.nz/news/20261024-parents); [policy.nz party page](https://policy.nz/2026/party-vote/parties/national-party). Full text not yet archived.
+
+#### Emphasise financial literacy in the school curriculum (POL55369)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that New Zealanders at every stage of life should have a secure future. For this party that includes making sure that financial literacy is part of the curriculum that all kids will encounter at school.
+
+**How** (*policy.nz*): This party would make sure financial literacy is part of the NZ school curriculum.
+
+Sources: ['Plan for Parents' (PDF), undated (accessed 27 October 2026)](https://assets.national.org.nz/web/prod/National%27s%20plan%20for%20parents.pdf?v=1792956772); ['National’s plan for parents ', 24 October 2026 (accessed 27 October 2026)](https://www.national.org.nz/news/20261024-parents); [policy.nz party page](https://policy.nz/2026/party-vote/parties/national-party). Full text not yet archived.
+
+### Updated policies
+
+#### Increase paid parental leave to 30 weeks by 2029 (POL54715)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that parents need more flexibility for taking leave, including taking paid leave at the same time as their partner, so they can receive more support if needed. Current arrangements create financial penalties for people who take time off work to care for their children. Both parents should have the opportunity to access parental leave if they choose.
+
+**How** (*policy.nz*): This party would increase parental leave to 27 weeks in the 2027 budget, with further increases in 2028 and 2029. This leave could be split between parents or shared in overlapping periods. After returning to work, pay for annual leave would be calculated based on yearly salaries, rather than average pay for parents who have earned less due to taking parental leave. This party would also continue contributing to a parent's Kiwisaver while they take paid parental leave. Eventually, this party would aim to increase paid parental leave to 40 weeks.
+
+Sources: ['National to extend and improve Paid Parental Leave', 26 July 2026 (accessed 18 August 2026)](documents/news-paid-parental-leave.md) ([original](https://www.national.org.nz/news/paid-parental-leave)); ['Modernising Paid Parental Leave', undated (accessed 10 September 2026)](documents/policy-paid-parental-leave.md) ([original](https://www.national.org.nz/policies/paid-parental-leave)); ['National’s plan to welcome more Kiwis home
+', 13 October 2026 (accessed 13 October 2026)](documents/news-261013-nicolawillis.md) ([original](https://www.national.org.nz/news/261013-nicolawillis)); [Paid Parental Leave](documents/pdf-paid-parental-leave.md) ([original](https://assets.national.org.nz/web/prod/Paid%20Parental%20Leave.pdf?v=1785023838)); [National’s plan to welcome more Kiwis home](documents/policy-welcome-kiwis-home.md) ([original](https://www.national.org.nz/policies/welcome-kiwis-home)); ['Plan for Parents' (PDF), undated (accessed 27 October 2026)](https://assets.national.org.nz/web/prod/National%27s%20plan%20for%20parents.pdf?v=1792956772); ['National’s plan for parents ', 24 October 2026 (accessed 27 October 2026)](https://www.national.org.nz/news/20261024-parents)
+
+#### Enrol New Zealand citizens in Kiwisaver at birth (POL54734)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that Kiwisaver is a way for people to build up money for themselves during retirement, and everyone who is working should be part of it. The money in Kiwisaver is also important for providing capital for investments in New Zealand's future, like major projects or infrastructure. Contributions from the government for babies who are automatically enrolled will help the investment grow over time.
+
+**How** (*policy.nz*): This party would make Kiwisaver compulsory from July 2028 and life combined contribution rates (individuals and employers) to 12% by 2032. For babies, it would contribute a $1500 "Baby Boost" payment to all New Zealanders at birth, automatically enrolling them in Kiwisaver. It would also make other changes to Kiwisaver, including government contributions through paid parental leave and requiring employers to maintain payments for people over the age of 65 who are still working.
+
+Sources: ['National launches KiwiSaver calculator
+', 2 August 2026 (accessed 24 August 2026)](documents/news-20260802-honnicolawillis.md) ([original](https://www.national.org.nz/news/20260802-honnicolawillis)); ['Enhancing Kiwisaver for Everyone', undated (accessed 10 September 2026)](documents/policy-kiwisaver.md) ([original](https://www.national.org.nz/policies/kiwisaver)); [National KiwiSaver policy document](documents/pdf-national-kiwisaver-policy-document.md) ([original](https://assets.national.org.nz/web/prod/National%20KiwiSaver%20policy%20document.pdf?v=1782016131)); [National to further boost Kiwis’ financial security](documents/news-260621-national-to-further-boost-kiwis-financia.md) ([original](https://www.national.org.nz/news/260621-national-to-further-boost-kiwis-financia)); [National’s plan for young adults](documents/policy-young-adults.md) ([original](https://www.national.org.nz/policies/young-adults)); ['National's Plan for Kiwi Kids ' (PDF), undated (accessed 21 October 2026)](https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Kiwi%20kids.pdf?v=1792535730)
+
+#### Reduce the student loan repayment rate to 10 percent (POL54813)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that New Zealanders should keep more money, rather than paying taxes, to save money for their own future. Taking home more pay and repaying a student loan over a longer period will give graduates more options for how to spend their money. People who have been educated in New Zealand and are staying to work here should have more money available while starting their careers.
+
+**How** (*policy.nz*): This party would reduce the annual repayment rate for student loans to 10 percent, from the current rate of 12 percent. Student loans for people in NZ would remain interest-free. People could continue to make additional repayments if they wished. Currently, there are $16.8bn of student loans owed to the government. Because of a slower rate of repayment, this party would write off $283m of student loans in the 2026/27 financial year to make up the loss in value from the interest-free loans.
+
+Sources: ['Back Pocket Boost for Graduates' (PDF), undated (accessed 31 August 2026)](documents/pdf-back-pocket-boost-for-graduates.md) ([original](https://assets.national.org.nz/web/prod/Back%20Pocket%20Boost%20for%20Graduates.pdf?v=1788119937)); ['Back Pocket Boost for Graduates', 31 August 2026 (accessed 31 August 2026)](documents/news-260831-nicolawillis.md) ([original](https://www.national.org.nz/news/260831-nicolawillis)); ['Back Pocket Boost for Graduates', undated (accessed 10 September 2026)](documents/policy-boost-for-graduates.md) ([original](https://www.national.org.nz/policies/boost-for-graduates)); ['National’s plan to welcome more Kiwis home
+', 13 October 2026 (accessed 13 October 2026)](documents/news-261013-nicolawillis.md) ([original](https://www.national.org.nz/news/261013-nicolawillis)); [National’s plan to welcome more Kiwis home](documents/policy-welcome-kiwis-home.md) ([original](https://www.national.org.nz/policies/welcome-kiwis-home)); ['National's plan for young adults' (PDF), undated (accessed 23 October 2026)](https://assets.national.org.nz/web/prod/National%27s%20plan%20for%20Young%20Adults.pdf?v=1792709954)
+
+#### Fund further enforcement and create harsher penalties for overseas-based student loan holders (POL54814)
+
+_Updated on policy.nz, seen 28 October 2026: how, sources._
+
+**Why** (*policy.nz*): This party says that many New Zealanders receive a heavily subsidised education, but do not use their skills in NZ. To support people to stay in New Zealand, overseas-based student loan holders who are not making repayments need to be penalised. The Inland Revenue Department (IRD) already has some tools, like charging interest to overseas-based loan holders and monitoring the border for people who have not paid their student loans. More penalties and limits for people who are not paying their student loans would recover more money.
+
+**How** (*policy.nz*): This party would add another 1 percent of interest for overseas student loan holders. For overseas-based New Zealanders withdrawing their Kiwisaver under the "permanent migration" category, money from Kiwisaver would clear the remaining student loan debt first. IRD would receive $10m of additional funding for student loan recovery and be allowed to register a charge for recovery in another country without getting a court order. As is already the case in Australia, this party would set up an information-sharing agreement to share details of student loan holders with the UK. If elected, this party would also lower the threshold for issuing an arrest order for not repaying a student loan. It estimates that the $10m of enforcement funding would result in at least $15m of recovered money per year. It would take action on this within its first 100 days in office.
+
+Sources: ['Back Pocket Boost for Graduates' (PDF), undated (accessed 31 August 2026)](documents/pdf-back-pocket-boost-for-graduates.md) ([original](https://assets.national.org.nz/web/prod/Back%20Pocket%20Boost%20for%20Graduates.pdf?v=1788119937)); ['Back Pocket Boost for Graduates', 31 August 2026 (accessed 31 August 2026)](documents/news-260831-nicolawillis.md) ([original](https://www.national.org.nz/news/260831-nicolawillis)); ['Back Pocket Boost for Graduates', undated (accessed 10 September 2026)](documents/policy-boost-for-graduates.md) ([original](https://www.national.org.nz/policies/boost-for-graduates)); ['National's 100 day plan to secure our future', 25 October 2026 (accessed 27 October 2026)](https://www.national.org.nz/news/20261025-100-day-plan)
+
+#### Ban under-16 year olds from social media (POL54815)
+
+_Updated on policy.nz, seen 28 October 2026: topics, sources._
+
+**Why** (*policy.nz*): This party says that 1 in 3 children between the ages of 13-17 spends more than 5 hours on social media every day. Parents should not be responsible for monitoring what children are seeing alone; social media companies also have a responsibility to make sure kids are safe. Restricting social media use will give parents and teachers more options to look after teenagers and create positive behavioural shifts.
+
+**How** (*policy.nz*): This party would pass a bill requiring that companies including Instagram, TikTok, Facebook and Snapchat check the age of all users to make sure they are not under 16. These companies would be required to regularly report on risks to children on their platforms, and an online safety regulator would monitor compliance. AI companies and other new technologies would be included in the framework, and platforms which fail to take these measures will be fined, based on a percentage of their annual global revenue.
+
+Sources: ['Government moves to ban U16s from social media', undated (accessed 26 August 2026)](documents/news-260824-christopherluxon.md) ([original](https://www.national.org.nz/news/260824-christopherluxon)); [ONLINE SAFETY BILL FACT SHEET](documents/pdf-online-safety-bill-fact-sheet.md) ([original](https://assets.national.org.nz/web/prod/ONLINE%20SAFETY%20BILL%20FACT%20SHEET.pdf?v=1787705953)); [National’s plan for Kiwi kids](documents/policy-kiwi-kids.md) ([original](https://www.national.org.nz/policies/kiwi-kids)); ['Fixing the Basics and Building the Future: National's Plan for Kiwi kids', 21 October 2026 (accessed 22 October 2026)](https://www.national.org.nz/news/20261021-christopherluxon)
+
+#### Allow Kiwisaver to be used by farm workers buying homes or farms (POL54836)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that that the Kiwisaver policy was designed with urban housing in mind. Farm workers may be living in provided housing, and not able to access Kiwisaver for a house, as they are not living in the home. This means that people working on farms have to wait longer to buy property. Similarly, Kiwisaver withdrawals cannot be used for purchasing a farm through a company. This change will allow people to buy their first farms with less debt.
+
+**How** (*policy.nz*): This party would amend the Kiwisaver legislation to allow people working on farms in provided housing to use their Kiwisaver balance for their first house, even if they are not living in it. If they are buying a farm where they are the majority owner, and will be living on the farm, regardless of whether the ownership structure is a partnership, a trust, a company or individuals, they will be eligible to withdraw their Kiwisaver for this purchase too.
+
+Sources: ['Opening the farm gate to first-time buyers
+', 2 September 2026 (accessed 03 September 2026)](documents/news-260902-cameronbrewer.md) ([original](https://www.national.org.nz/news/260902-cameronbrewer)); ['Enhancing Kiwisaver for Everyone', undated (accessed 10 September 2026)](documents/policy-kiwisaver.md) ([original](https://www.national.org.nz/policies/kiwisaver)); [National KiwiSaver policy document](documents/pdf-national-kiwisaver-policy-document.md) ([original](https://assets.national.org.nz/web/prod/National%20KiwiSaver%20policy%20document.pdf?v=1782016131)); [National to further boost Kiwis’ financial security](documents/news-260621-national-to-further-boost-kiwis-financia.md) ([original](https://www.national.org.nz/news/260621-national-to-further-boost-kiwis-financia)); ['National's plan for young adults' (PDF), undated (accessed 23 October 2026)](https://assets.national.org.nz/web/prod/National%27s%20plan%20for%20Young%20Adults.pdf?v=1792709954)
+
+#### Raise the income threshold for people who can pay a lower deposit for their first home (POL54918)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that a home is an essential way for New Zealanders to build wealth. The First Home Loan scheme has operated since 2003, allowing people to purchase their first homes with a 5% deposit, instead of a standard 20% deposit. However, some people who are struggling to afford the deposit on their first home fall above the income cap of $95,000 for a person buying alone and $150,000 for two people buying together (both with no dependents). Raising the eligibility criteria will mean more people can buy homes with low deposits. Raising and simplifying the eligibility will allow more people to buy houses.
+
+**How** (*policy.nz*): This party would raise the eligibility so anyone earning less than $300,000 per year, whether single or a couple, could access the 5% deposit of the First Home Loan scheme. These lower deposits would only apply to people purchasing their first property. The loans would be approved by banks, as already happens, meaning no-one would be issued with a loan they cannot afford. The fiscal impact of this policy is expected to be between $4m-$6m.
+
+Sources: ['Backing First Home Buyers' (PDF), undated (accessed 09 September 2026)](documents/pdf-backing-first-home-buyers.md) ([original](https://assets.national.org.nz/web/prod/Backing%20First%20Home%20Buyers.pdf?v=1788652154)); ['Giving more Kiwis access to 5% first home deposits
+', undated (accessed 10 September 2026)](documents/policy-backing-first-home-buyers.md) ([original](https://www.national.org.nz/policies/backing-first-home-buyers)); ['National is backing first-home buyers', 6 September 2026 (accessed 08 September 2026)](documents/news-260906-backs-first-home-buyers.md) ([original](https://www.national.org.nz/news/260906-backs-first-home-buyers)); ['National’s plan to welcome more Kiwis home
+', 13 October 2026 (accessed 13 October 2026)](documents/news-261013-nicolawillis.md) ([original](https://www.national.org.nz/news/261013-nicolawillis)); [National’s plan to welcome more Kiwis home](documents/policy-welcome-kiwis-home.md) ([original](https://www.national.org.nz/policies/welcome-kiwis-home)); ['National's plan for young adults' (PDF), undated (accessed 23 October 2026)](https://assets.national.org.nz/web/prod/National%27s%20plan%20for%20Young%20Adults.pdf?v=1792709954)
+
+#### Prevent "good character" from being a mitigating factor in sentencing for sexual offending (POL54926)
+
+_Updated on policy.nz, seen 28 October 2026: how, sources._
+
+**Why** (*policy.nz*): This party says that crime should have real consequences. A "good character" assessment can be a factor in receiving sentencing discounts for sexual offending.
+
+**How** (*policy.nz*): This party would prohibit judges from using "good character" assessments as a mitigating factor for any sexual offending. It would take action on this within its first 100 days in office.
+
+Sources: ['Modernise sexual consent laws', undated (accessed 10 September 2026)](documents/policy-consent-laws.md) ([original](https://www.national.org.nz/policies/consent-laws)); ['Tougher Sentences', undated (accessed 10 September 2026)](documents/policy-tougher-sentences.md) ([original](https://www.national.org.nz/policies/tougher-sentences)); [National will modernise consent laws](documents/news-20260719-honpaulgoldsmith.md) ([original](https://www.national.org.nz/news/20260719-honpaulgoldsmith)); ['1 News Leaders Debate', 6 October 2026 (accessed 09 October 2026)](https://www.tvnz.co.nz/tvseries/1-news-leaders-debate)
+
+#### Create a dedicated police team for Auckland public transport (POL54978)
+
+_Updated on policy.nz, seen 28 October 2026: how, sources._
+
+**Why** (*policy.nz*): This party says that as Aucklanders get used to the City Rail Link, more people will be using public transport. Visible police officers help prevent offending. Taking public transport should feel safe, and having a police unit dedicated to Auckland's trains and buses will be good for all travellers.
+
+**How** (*policy.nz*): This party would create an Auckland Transport Police Team, which would operate across Auckland's public transport network, on vehicles as well as at transport stations and hubs. This would require an addition 50 sworn officers, and would be funded with an additional $7m to the police in the 2027 Budget. This party estimates that this policy would cost $7m from 2027. it would take action on this within its first 100 days in office.
+
+Sources: ['More Police on the beat, and on the bus', 13 September 2026 (accessed 14 September 2026)](documents/news-260913-markmitchell.md) ([original](https://www.national.org.nz/news/260913-markmitchell)); [More Police on Auckland’s buses and trains](documents/policy-police-auckland-transport.md) ([original](https://www.national.org.nz/policies/police-auckland-transport)); [Auckland Transport Police Teams](documents/pdf-auckland-transport-police-teams.md) ([original](https://assets.national.org.nz/web/prod/Auckland%20Transport%20Police%20Teams-1.pdf?v=1789952338)); ['National's 100 day plan to secure our future', 25 October 2026 (accessed 27 October 2026)](https://www.national.org.nz/news/20261025-100-day-plan)
+
+#### Limit the use of screens in school for primary-aged and younger children (POL55050)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that evidence says there needs to be caution around screen use in young children. For early childhood education, there should be no screen use at all, while the use of digital technology in the first three years of primary school should be strictly limited. Technology should only be used to enhance education, rather than being the main way that kids learn. Instead, the focus should be on hands-on learning and interaction.
+
+**How** (*policy.nz*): This party would end all screen use and individual device use in early childhood education settings. Screen use in Years 1 to 3 would be strictly limited, and age-appropriate restrictions would be placed on screen use for older primary aged students.
+
+Sources: ['Screen use to end in ECE and limits set in primary', 20 September 2026 (accessed 21 September 2026)](documents/news-260920-screen-use-to-end-in-ece-and-limits-set.md) ([original](https://www.national.org.nz/news/260920-screen-use-to-end-in-ece-and-limits-set)); [Teaching the basics brilliantly](documents/policy-education-teaching-the-basics-brilliantly.md) ([original](https://www.national.org.nz/policies/education-teaching-the-basics-brilliantly)); [ECE - Set up for Success](documents/pdf-ece-set-up-for-success.md) ([original](https://assets.national.org.nz/web/prod/ECE%20-%20Set%20up%20for%20Success.pdf?v=1789950876)); [National's Education Manifesto](documents/pdf-nationals-education-manifesto.md) ([original](https://assets.national.org.nz/web/prod/National's%20Education%20Manifesto.pdf?v=1791664336)); [National’s plan for Kiwi kids](documents/policy-kiwi-kids.md) ([original](https://www.national.org.nz/policies/kiwi-kids)); ['National's Plan for Kiwi Kids ' (PDF), undated (accessed 21 October 2026)](https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Kiwi%20kids.pdf?v=1792535730)
+
+#### Use a checklist in early childhood settings to assess school readiness (POL55051)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says children need to be ready for school, and parents and teachers need to be aware of developmental milestones. Skills like toilet training, holding pencils and scissors, and eating independently are important for kids to thrive as they start school. A checklist of expectations for starting school will help teachers and parents know when a child might need extra support to be prepared for being at school all day. This would formalise a process many ECE centres already have.
+
+**How** (*policy.nz*): This party would create a "School Start Check" for use by ECE centres and parents. The expectations for transitioning to primary school would be clear, and kids struggling to meet these expectations would be given extra support. The checklist would not be a "pass/fail" test, and not completing the checklist would not prevent a child from starting school.
+
+Sources: ['Screen use to end in ECE and limits set in primary', 20 September 2026 (accessed 21 September 2026)](documents/news-260920-screen-use-to-end-in-ece-and-limits-set.md) ([original](https://www.national.org.nz/news/260920-screen-use-to-end-in-ece-and-limits-set)); [Teaching the basics brilliantly](documents/policy-education-teaching-the-basics-brilliantly.md) ([original](https://www.national.org.nz/policies/education-teaching-the-basics-brilliantly)); [ECE - Set up for Success](documents/pdf-ece-set-up-for-success.md) ([original](https://assets.national.org.nz/web/prod/ECE%20-%20Set%20up%20for%20Success.pdf?v=1789950876)); [National's Education Manifesto](documents/pdf-nationals-education-manifesto.md) ([original](https://assets.national.org.nz/web/prod/National's%20Education%20Manifesto.pdf?v=1791664336)); [National’s plan for Kiwi kids](documents/policy-kiwi-kids.md) ([original](https://www.national.org.nz/policies/kiwi-kids)); ['National's Plan for Kiwi Kids ' (PDF), undated (accessed 21 October 2026)](https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Kiwi%20kids.pdf?v=1792535730)
+
+#### Require primary school writing assessments to be completed on paper (POL55052)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that primary-age education should be focused on books, handwriting, conversation and in-person interaction, not digital technology and screens. Evidence shows that writing by hand when learning to write and read helps children retain information.
+
+**How** (*policy.nz*): This party would require that students complete the writing component of twice-yearly primary school assessments on paper, by hand, rather than on computers.
+
+Sources: ['Screen use to end in ECE and limits set in primary', 20 September 2026 (accessed 21 September 2026)](documents/news-260920-screen-use-to-end-in-ece-and-limits-set.md) ([original](https://www.national.org.nz/news/260920-screen-use-to-end-in-ece-and-limits-set)); [Teaching the basics brilliantly](documents/policy-education-teaching-the-basics-brilliantly.md) ([original](https://www.national.org.nz/policies/education-teaching-the-basics-brilliantly)); [ECE - Set up for Success](documents/pdf-ece-set-up-for-success.md) ([original](https://assets.national.org.nz/web/prod/ECE%20-%20Set%20up%20for%20Success.pdf?v=1789950876)); [National's Education Manifesto](documents/pdf-nationals-education-manifesto.md) ([original](https://assets.national.org.nz/web/prod/National's%20Education%20Manifesto.pdf?v=1791664336)); [National’s plan for Kiwi kids](documents/policy-kiwi-kids.md) ([original](https://www.national.org.nz/policies/kiwi-kids)); ['National's Plan for Kiwi Kids ' (PDF), undated (accessed 21 October 2026)](https://assets.national.org.nz/web/prod/National%E2%80%99s%20plan%20for%20Kiwi%20kids.pdf?v=1792535730)
+
+#### Increase funding for Pharmac's medicines budget by reducing foreign aid (POL55205)
+
+_Updated on policy.nz, seen 28 October 2026: statement, how, sources._
+
+Previously: "Increase funding for Pharmac's medicines budget"
+
+**Why** (*policy.nz*): This party says that this funding boost will expand access to new cancer and other life-saving medicines so Kiwis can access world-class treatment here in New Zealand.
+
+**How** (*policy.nz*): This party would deliver a further $604 million uplift in Pharmac’s medicines budget. This will be funded by reducing foreign aid spent outside the Pacific. It would carry out this policy within its first 100 days in office.
+
+Sources: ['More medicines and earlier care', 6 October 2026 (accessed 06 October 2026)](documents/policy-more-medicines-and-earlier-care.md) ([original](https://www.national.org.nz/policies/more-medicines-and-earlier-care)); ['Building the Future: More medicines and earlier care' (PDF), 6 October 2026 (accessed 06 October 2026)](documents/pdf-more-medicines-and-earlier-care.md) ([original](https://assets.national.org.nz/web/prod/More%20medicines%20and%20earlier%20care.pdf?v=1791237531)); [More medicines for Kiwis at home](documents/news-261006-simeonbrown.md) ([original](https://www.national.org.nz/news/261006-simeonbrown)); ['National's 100 day plan to secure our future', 25 October 2026 (accessed 27 October 2026)](https://www.national.org.nz/news/20261025-100-day-plan)
+
+<!-- GENERATED:policy-updates END -->
+
 ## Contents
 
 - [Key commitments / headline policies](#key-commitments--headline-policies)

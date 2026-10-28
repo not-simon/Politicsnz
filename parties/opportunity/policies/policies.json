@@ -4,10 +4,12 @@
   "statement": "Repeal the cap on donations eligible for a 33% tax credit",
   "topics": [
    "incomes-and-employment",
-   "tax-and-income-support"
+   "tax-and-income-support",
+   "media-culture-and-recreation",
+   "arts-culture-and-heritage"
   ],
   "topic_group": "incomes-and-employment",
-  "key_policy": false,
+  "key_policy": true,
   "summary": {
    "why": "This party says that the $100,000 cap introduced on charitable donations in Budget 2026 will limit donations to the charitable sector and put crucial giving at risk. The cap will cost the public more through increased demand on public services. Removing the cap would also help the underfunded arts sector.",
    "how": "This party would remove the $100,000 cap on charitable donations and instruct the Law Commission to carry out a review of regulations in the charity sector in NZ.   At the same time, a comprehensive review and reform of the charitable sector is needed to mitigate concerns about donor-controlled charities and people receiving tax benefits without providing meaningful charitable services."
@@ -25,6 +27,15 @@
     "url": "https://www.opportunity.org.nz/arts_and_culture_statement",
     "document": "documents/web-arts-and-culture-statement.md",
     "cited_by": "policy.nz"
+   }
+  ],
+  "policy_nz_updated": "2026-10-28",
+  "changes": [
+   {
+    "date": "2026-10-28",
+    "fields": [
+     "topics"
+    ]
    }
   ]
  },
@@ -83,6 +94,21 @@
     "url": "https://cdn.opportunity.org.nz/documents/policy/Abundant%20Energy%20-%20Opportunity%20Party%20Policy.pdf",
     "document": "documents/pdf-abundant-energy-paper.md",
     "cited_by": "archive"
+   },
+   {
+    "title": "'Build Today, Breakthrough Tomorrow', undated (accessed 19 August 2026)",
+    "url": "https://www.opportunity.org.nz/build_today_breakthrough_tomorrow",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20260819052323/https://www.opportunity.org.nz/build_today_breakthrough_tomorrow"
+   }
+  ],
+  "policy_nz_updated": "2026-10-28",
+  "changes": [
+   {
+    "date": "2026-10-28",
+    "fields": [
+     "sources"
+    ]
    }
   ]
  },
@@ -300,7 +326,8 @@
    "education",
    "young-people",
    "mental-health",
-   "internet-and-digital-technologies"
+   "internet-and-digital-technologies",
+   "schools"
   ],
   "topic_group": "community-and-inclusion",
   "key_policy": true,
@@ -315,6 +342,15 @@
     "url": "https://www.opportunity.org.nz/opportunity_to_support_online_safety_bill_to_select_committee",
     "document": "documents/web-opportunity-to-support-online-safety-bill-to-select-committee.md",
     "cited_by": "policy.nz"
+   }
+  ],
+  "policy_nz_updated": "2026-10-28",
+  "changes": [
+   {
+    "date": "2026-10-28",
+    "fields": [
+     "topics"
+    ]
    }
   ]
  },
@@ -1092,6 +1128,21 @@
     "url": "https://cdn.opportunity.org.nz/documents/policy/Honouring%20Te%20Tiriti%20Policy%20Paper.pdf",
     "document": "documents/pdf-honouring-te-tiriti.md",
     "cited_by": "archive"
+   },
+   {
+    "title": "'Future Fit Education', undated (accessed 19 August 2026)",
+    "url": "https://www.opportunity.org.nz/future_fit_education",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20260819042902/https://www.opportunity.org.nz/future_fit_education"
+   }
+  ],
+  "policy_nz_updated": "2026-10-28",
+  "changes": [
+   {
+    "date": "2026-10-28",
+    "fields": [
+     "sources"
+    ]
    }
   ]
  },
@@ -1566,6 +1617,21 @@
     "url": "https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Affordable%20Housing.pdf",
     "document": "documents/pdf-affordable-housing.md",
     "cited_by": "archive"
+   },
+   {
+    "title": "'Build Today, Breakthrough Tomorrow', undated (accessed 19 August 2026)",
+    "url": "https://www.opportunity.org.nz/build_today_breakthrough_tomorrow",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20260819052323/https://www.opportunity.org.nz/build_today_breakthrough_tomorrow"
+   }
+  ],
+  "policy_nz_updated": "2026-10-28",
+  "changes": [
+   {
+    "date": "2026-10-28",
+    "fields": [
+     "sources"
+    ]
    }
   ]
  },
@@ -1744,6 +1810,21 @@
     "url": "https://www.opportunity.org.nz/bottom_lines",
     "document": "documents/web-bottom-lines.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "'Future Fit Education', undated (accessed 19 August 2026)",
+    "url": "https://www.opportunity.org.nz/future_fit_education",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20260819042902/https://www.opportunity.org.nz/future_fit_education"
+   }
+  ],
+  "policy_nz_updated": "2026-10-28",
+  "changes": [
+   {
+    "date": "2026-10-28",
+    "fields": [
+     "sources"
+    ]
    }
   ]
  },
@@ -2095,16 +2176,13 @@
    "media-culture-and-recreation",
    "economy",
    "incomes-and-employment",
-   "education",
-   "sports-and-recreation",
    "economic-development-and-industry",
    "tax-and-income-support",
-   "tertiary-education-and-research",
    "artificial-intelligence-ai",
    "arts-culture-and-heritage"
   ],
   "topic_group": "media-culture-and-recreation",
-  "key_policy": false,
+  "key_policy": true,
   "summary": {
    "why": "This party says that a stronger arts ecosystem creates jobs and wellbeing, builds healthier communities and helps define national identity. NZ sits in the bottom ten OECD countries for public arts investment. The barriers for artists are less about a lack of arts funding and more about unpredictable income, and changing a mindset that the arts are a key part of the economy, rather than an optional extra.",
    "how": "This party would address the precarity of an artist's income firstly with its universal citizen’s income policy, which would enable artists to take a financial gamble on their career. Tax reforms would help over irregular income and free up charitable giving by repealing the cap on charitable donations. This party would more broadly support the arts through other policies such as an AI framework and revamp of the polytech sector, which would address copyright exploitation and recognise the arts in innovation funding."
@@ -2122,6 +2200,22 @@
     "url": "https://www.opportunity.org.nz/charitable_giving_tax_credit_cap",
     "document": "documents/web-charitable-giving-tax-credit-cap.md",
     "cited_by": "policy.nz"
+   },
+   {
+    "title": "'Tax Reset ', undated (accessed 24 August 2026)",
+    "url": "https://www.opportunity.org.nz/tax-reset",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20260824045408/https://www.opportunity.org.nz/tax-reset"
+   }
+  ],
+  "policy_nz_updated": "2026-10-28",
+  "changes": [
+   {
+    "date": "2026-10-28",
+    "fields": [
+     "topics",
+     "sources"
+    ]
    }
   ]
  },
@@ -2643,5 +2737,137 @@
     "cited_by": "archive"
    }
   ]
+ },
+ {
+  "id": "POL55326",
+  "statement": "Back an AI framework on copyright protection",
+  "topics": [
+   "media-culture-and-recreation",
+   "economy",
+   "law-justice-and-government",
+   "arts-culture-and-heritage",
+   "internet-and-digital-technologies",
+   "artificial-intelligence-ai",
+   "criminal-justice"
+  ],
+  "topic_group": "law-justice-and-government",
+  "key_policy": true,
+  "summary": {
+   "why": "This party says that a stronger arts ecosystem creates jobs and wellbeing, builds healthier communities and helps define national identity. Creatives need to retain control over their work, which is why an AI framework is necessary to allow technology to assist, not exploit, artists.",
+   "how": "This party would support a robust AI framework that protects intellectual property. It publicly supports the International Confederation of Societies of Authors and Composers (CISAC)'s Paris Commitment, a global call for action to prevent AI exploitation of creatives."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Arts and culture statement', 19 October 2026 (accessed 20 October 2026)",
+    "url": "https://www.opportunity.org.nz/arts_and_culture_statement",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261019211037/https://www.opportunity.org.nz/arts_and_culture_statement"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/opportunity-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-10-28"
+ },
+ {
+  "id": "POL55327",
+  "statement": "Increase access to innovation and investment for Māori creatives",
+  "topics": [
+   "media-culture-and-recreation",
+   "te-ao-maori",
+   "arts-culture-and-heritage",
+   "te-reo-maori-and-culture",
+   "te-tiriti-o-waitangi-and-governance"
+  ],
+  "topic_group": "te-ao-maori",
+  "key_policy": true,
+  "summary": {
+   "why": "This party says that Māori artists, like all creatives, enrich our society better but struggle with precarity. Helping Māori to access investment and commercial opportunities will support Māori culture, agency and help support small businesses.",
+   "how": "This party would support greater Māori agency and rangatiratanga by ensuring Māori artists and arts organisations have full access to innovation, investment, commercialisation and export opportunities. One avenue could be through \"Impact Companies\" (a commercial/charity hybrid model) which encourages investment in businesses that have an explicit social and/or environmental purpose. This policy could help charities and creatives across the board."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Arts and culture statement', 19 October 2026 (accessed 20 October 2026)",
+    "url": "https://www.opportunity.org.nz/arts_and_culture_statement",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261019211037/https://www.opportunity.org.nz/arts_and_culture_statement"
+   },
+   {
+    "title": "'Charitable Giving Tax Credit Cap', 19 June 2026 (accessed 06 August 2026)",
+    "url": "https://www.opportunity.org.nz/charitable_giving_tax_credit_cap",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20260806041344/https://www.opportunity.org.nz/charitable_giving_tax_credit_cap"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/opportunity-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-10-28"
+ },
+ {
+  "id": "POL55376",
+  "statement": "Set up a future generations commissioner and require lawmakers to consider long-term impacts",
+  "topics": [
+   "community-and-inclusion",
+   "transport-and-infrastructure",
+   "law-justice-and-government",
+   "young-people",
+   "infrastructure-funding-and-planning",
+   "parliament-and-democracy"
+  ],
+  "topic_group": "community-and-inclusion",
+  "key_policy": false,
+  "summary": {
+   "why": "This party says that many of us feel a responsibility to those who come after us. A Future Generations Act would require governments to consider the long-term impacts of decisions on future generations and a commissioner to monitor the progress of those goals would hold decision-makers to account.",
+   "how": "This party would establish a Future Generations Commissioner who would guide the development of long-term national goals and hold politicians to account. As an independent Officer of Parliament, the role would be shielded from political interference and its funding would come from the Offices of Parliament, requiring unanimous cross-party support. This is part of a wider policy of citizen's assemblies to set long-term goals and monitoring on their progress."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Future generations' (PDF), undated (accessed 27 October 2026)",
+    "url": "https://www.opportunity.org.nz/future-generations",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261027044407/https://www.opportunity.org.nz/future-generations"
+   },
+   {
+    "title": "'Citizens Voice Policy ' (PDF), undated (accessed 07 August 2026)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/citizens-voice-policy.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/citizens-voice-policy.pdf"
+   },
+   {
+    "title": "'10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)",
+    "url": "https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20260901211428/https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education"
+   },
+   {
+    "title": "'Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/save/https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf"
+   },
+   {
+    "title": "'Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)",
+    "url": "https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20260811031858/https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/opportunity-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-10-28"
  }
 ]

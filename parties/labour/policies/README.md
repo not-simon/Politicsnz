@@ -8,6 +8,97 @@ Every 2026 election policy of the New Zealand Labour Party that this archive cou
 - How completeness was checked: every policy card on Labour's policy hub ([labour.org.nz/policy](https://www.labour.org.nz/policy)) and every page linked from it was captured. labour.org.nz has no sitemap.xml (it returns 404), so the list of all ~820 news items in the site's news menu was used instead: the ~300 most recent titles (roughly August 2025 to 22 October 2026) were read one by one and older ones were searched by keyword, and every release that announced a commitment was captured. Releases that only attack other parties, or report member's bills that have already passed, are not counted as policies.
 - Each *archive* summary is a neutral restatement of what the linked Labour text says. Costings are Labour's own figures; none are independent estimates. Where sources disagree, this is noted.
 
+<!-- GENERATED:policy-updates START -->
+## Changes on policy.nz since 23 October 2026
+
+This archive captured the party's policy.nz policies on 23 October 2026; policy.nz is re-checked daily by [`tools/refresh_policies.py`](../../../tools/refresh_policies.py). Nothing is deleted: a policy that is no longer on policy.nz stays in this archive marked *withdrawn*. Full texts of new sources are archived separately; until then the links go to the original pages. Where this block and the sections below differ, this block is the newer text.
+
+### New policies
+
+#### Review the wait time and deaths linked to hospital emergency department (POL55324)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that patients are waiting too long, emergency departments are overcrowded, and nurses and doctors are under enormous pressure. Delays in ED are often due to a lack of beds in hospital wards and staffing issues.
+
+**How** (*policy.nz*): This party would order an immediate review of hospital wait times and bed shortages, and also the safety issues linked to emergency departments. This party believes that the pressure on EDs can be reduced and more hospital beds can be opened up with action at hospital and community level. Its wider health plan includes adding more nurses, funding three free GP visits annually, and training more extended-care paramedics to treat people at home.
+
+Sources: ['Labour will get emergency departments moving', 20 October 2026 (accessed 21 October 2026)](https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving); ['Free Doctor's Visits with the Medicard', undated (accessed 11 August 2026)](web.archive.org/web/20260810223019/https://www.labour.org.nz/medicard); ['Labour will guarantee a job for graduate nurses', 31 August 2026 (accessed 01 September 2026)](https://www.labour.org.nz/news/release-labour-will-guarantee-a-job-for-graduate-nurses); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Train more extended-care paramedics to treat people at home (POL55325)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that patients are waiting too long, emergency departments are overcrowded, and nurses and doctors are under enormous pressure. Increasing the level of community health care will help reduce pressure at hospitals.
+
+**How** (*policy.nz*): This party would train more extended-care paramedics to treat people at home and help reduce the pressure on emergency departments. Its existing policies around adding more nurses, offering three free GP visits a year will also increase the level of care at the community level and reduce the pressure on EDs.
+
+Sources: ['Labour will get emergency departments moving', 20 October 2026 (accessed 21 October 2026)](https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving); ['Free Doctor's Visits with the Medicard', undated (accessed 11 August 2026)](web.archive.org/web/20260810223019/https://www.labour.org.nz/medicard); ['Labour will guarantee a job for graduate nurses', 31 August 2026 (accessed 01 September 2026)](https://www.labour.org.nz/news/release-labour-will-guarantee-a-job-for-graduate-nurses); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Fund 1000 extra teacher aides (POL55351)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that schools are seeing more children with complex learning needs. Teachers are doing an incredible job, but they can't do it alone. This party says that schools are struggling to find the funds for learning support.
+
+**How** (*policy.nz*): This party would fund 1,000 extra teacher aides to give more individual support for students who need it, and more help in busy classrooms. The party would also use the 2022 Highest Needs Review to help identify gaps in learning support. This policy would cost $80m over four years, which this party says would give schools more certainty and teacher aides more job security.
+
+Sources: ['Labour to provide more help in the classroom', 22 October 2026 (accessed 23 October 2026)](https://www.labour.org.nz/news/release-labour-to-provide-more-help-in-the-classroom); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Introduce a rent-to-own scheme for social and community housing tenants (POL55377)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that state house and community housing tenants who struggle to save for a first home deposit, even when they are working, on top of their rent.
+
+**How** (*policy.nz*): This party would introduce rent-to-buy housing for eligible Kāinga Ora state house and community housing tenants who are working. Tenants would have $100 of their weekly rent placed in a trust account to accumulate towards a 5% deposit. They will also be able to access an expanded First Home Loan scheme, which enables people to obtain a mortgage with a five percent deposit. The combined income cap would be lifted to $300,000 and more banks would be brought into the scheme. This party would ensure that proceeds from public homes sold through the rent-to-buy scheme would be reinvested into more public housing.
+
+Sources: ['Labour to help more Kiwis buy their first home', 27 October 2026 (accessed 27 October 2026)](https://www.labour.org.nz/news/release-labour-to-help-more-kiwis-buy-their-first-home); ['Labour to get NZ building and Kiwis back to work', 24 September 2026 (accessed 24 September 2026)](https://wayback-api.archive.org/save/https://www.labour.org.nz/news/release-labour-to-get-new-zealand-building-and-kiwis-back-to-work); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Raise the income cap for the First Home Loans scheme (POL55378)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that with the cost of living being so high, people are struggling to save the deposit to buy their first home.
+
+**How** (*policy.nz*): This party would expand First Home Loans scheme to more people and keep the amount required for a deposit at five percent of the loan. The income cap for eligibility would be lifted to $300,000 per household, and more banks would be brought into the scheme. This party would also introduce rent-to-buy scheme to lower the barriers to home ownership for working state house and community housing tenants. It would put the proceeds from public homes sold through the rent-to-buy scheme into more public housing.
+
+Sources: ['Labour to help more Kiwis buy their first home', 27 October 2026 (accessed 27 October 2026)](https://www.labour.org.nz/news/release-labour-to-help-more-kiwis-buy-their-first-home); ['Capital Gains Tax', undated (accessed 13 August 2026)](https://www.labour.org.nz/capitalgainstax); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+### Updated policies
+
+#### Support a social media ban for under-16s to go through to select committee (POL54753)
+
+_Updated on policy.nz, seen 28 October 2026: topics, sources._
+
+**Why** (*policy.nz*): This party says that it is important to help parents keep their children safe from online harm, but any law would need to be fit for purpose.
+
+**How** (*policy.nz*): This party would support the bill through its first reading and see it go to select committee before the election.
+
+Sources: ['Labour clears way for social media bill to go to select committee', 25 August 2026 (accessed 26 August 2026)](documents/release-labour-clears-way-for-social-media-bill-to-go-to-select-committee.md) ([original](https://www.labour.org.nz/news/release-labour-clears-way-for-social-media-bill-to-go-to-select-committee/)); [Safer Online](documents/safer-online.md) ([original](https://www.labour.org.nz/safer-online)); ['Getting kids off screens and back to being kids', 18 October 2026 (accessed 19 October 2026)](https://www.labour.org.nz/news/release-getting-kids-off-screens-and-back-to-being-kids); ['Keeping kids off screens' (PDF), undated (accessed 19 October 2026)](https://www.labour.org.nz/kids-off-screens)
+
+#### Guarantee jobs for NZ-trained graduate nurses (POL54820)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that graduate nurses are being trained here, but because of a lack of job openings, too many are being forced to look overseas instead of starting their careers in New Zealand. The pressure on the health system from the shortage of nurses spills over into patient healthcare.
+
+**How** (*policy.nz*): This party would guarantee a job for every eligible New Zealand-trained nursing graduate, affecting about 2400 nurses. It would also address pressure on primary care because of the nursing shortage by doubling the funding available through the current recruitment subsidy. The current rate for rural nurses would be lifted from $20,000 to $40,000 and it would rise from $15,000 to $30,000 for nurses in urban areas. This party estimates that this policy would cost $525m.
+
+Sources: ['Labour will guarantee a job for graduate nurses', 31 August 2026 (accessed 01 September 2026)](documents/release-labour-will-guarantee-a-job-for-graduate-nurses.md) ([original](https://www.labour.org.nz/news/release-labour-will-guarantee-a-job-for-graduate-nurses/)); ['National moves the goalposts on jobs', 8 October 2026 (accessed 08 October 2026)](documents/release-national-moves-the-goalposts-on-jobs.md) ([original](https://www.labour.org.nz/news/release-national-moves-the-goalposts-on-jobs/)); [Graduate Nurse Job Guarantee](documents/graduate-nurse-job-guarantee.md) ([original](https://www.labour.org.nz/graduate-nurse-job-guarantee)); ['Labour will get emergency departments moving', 20 October 2026 (accessed 21 October 2026)](https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving)
+
+#### Tighten digital regulation, especially around deepfakes, children and social media (POL55312)
+
+_Updated on policy.nz, seen 28 October 2026: topics._
+
+**Why** (*policy.nz*): This party says that smart phones are one of the parenting challenges of our time. Tech companies have too much power over what we see and fake images are harder to spot. Many parents worry about what their children are seeing or if they are being bullied. More responsibility should be placed on the companies making money from these platforms.
+
+**How** (*policy.nz*): This party would introduce more digital regulation to Parliament within the first 100 days, including no social media accounts for under-16s. Social media companies would be legally responsible for policing this, and a new digital duty of care will be introduced with stronger privacy and other protections for those under 18. Other action would include more control for users over their feeds, and stronger rules around deepfakes and non-consensual sexual images. An independent digital regulator will be created, with powers to take action against companies that break the rules.
+
+Sources: ['Safer online' (PDF), 19 October 2026 (accessed 19 October 2026)](documents/safer-online.md) ([original](https://www.labour.org.nz/safer-online)); ['AI in New Zealand's interests', 9 September 2026 (accessed 09 September 2026)](documents/ai-for-new-zealand.md) ([original](https://www.labour.org.nz/ai-for-new-zealand)); ['Labour to make it safer for Kiwis online', 19 October 2026 (accessed 19 October 2026)](documents/release-labour-to-make-it-safer-for-kiwis-online.md) ([original](https://www.labour.org.nz/news/release-labour-to-make-it-safer-for-kiwis-online/)); ['Keeping kids off screens' (PDF), undated (accessed 19 October 2026)](documents/kids-off-screens.md) ([original](https://www.labour.org.nz/kids-off-screens)); ['Getting kids off screens and back to being kids', 18 October 2026 (accessed 19 October 2026)](documents/release-getting-kids-off-screens-and-back-to-being-kids.md) ([original](https://www.labour.org.nz/news/release-getting-kids-off-screens-and-back-to-being-kids/))
+
+<!-- GENERATED:policy-updates END -->
+
 ## Headline commitments
 
 These are the policy cards on Labour's [policy hub](https://www.labour.org.nz/policy), in Labour's order. Each description is Labour's own text (full page: [documents/policy.md](documents/policy.md)).

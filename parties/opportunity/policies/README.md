@@ -5,6 +5,118 @@ Every policy of **Opportunity (The Opportunity Party, TOP)** for the 7 November 
 - Party website: <https://www.opportunity.org.nz/>
 - Registration: 6 March 2017 (Electoral Commission register)
 
+<!-- GENERATED:policy-updates START -->
+## Changes on policy.nz since 23 October 2026
+
+This archive captured the party's policy.nz policies on 23 October 2026; policy.nz is re-checked daily by [`tools/refresh_policies.py`](../../../tools/refresh_policies.py). Nothing is deleted: a policy that is no longer on policy.nz stays in this archive marked *withdrawn*. Full texts of new sources are archived separately; until then the links go to the original pages. Where this block and the sections below differ, this block is the newer text.
+
+### New policies
+
+#### Back an AI framework on copyright protection (POL55326)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that a stronger arts ecosystem creates jobs and wellbeing, builds healthier communities and helps define national identity. Creatives need to retain control over their work, which is why an AI framework is necessary to allow technology to assist, not exploit, artists.
+
+**How** (*policy.nz*): This party would support a robust AI framework that protects intellectual property. It publicly supports the International Confederation of Societies of Authors and Composers (CISAC)'s Paris Commitment, a global call for action to prevent AI exploitation of creatives.
+
+Sources: ['Arts and culture statement', 19 October 2026 (accessed 20 October 2026)](https://www.opportunity.org.nz/arts_and_culture_statement); [policy.nz party page](https://policy.nz/2026/party-vote/parties/opportunity-party). Full text not yet archived.
+
+#### Increase access to innovation and investment for Māori creatives (POL55327)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that Māori artists, like all creatives, enrich our society better but struggle with precarity. Helping Māori to access investment and commercial opportunities will support Māori culture, agency and help support small businesses.
+
+**How** (*policy.nz*): This party would support greater Māori agency and rangatiratanga by ensuring Māori artists and arts organisations have full access to innovation, investment, commercialisation and export opportunities. One avenue could be through "Impact Companies" (a commercial/charity hybrid model) which encourages investment in businesses that have an explicit social and/or environmental purpose. This policy could help charities and creatives across the board.
+
+Sources: ['Arts and culture statement', 19 October 2026 (accessed 20 October 2026)](https://www.opportunity.org.nz/arts_and_culture_statement); ['Charitable Giving Tax Credit Cap', 19 June 2026 (accessed 06 August 2026)](https://www.opportunity.org.nz/charitable_giving_tax_credit_cap); [policy.nz party page](https://policy.nz/2026/party-vote/parties/opportunity-party). Full text not yet archived.
+
+#### Set up a future generations commissioner and require lawmakers to consider long-term impacts (POL55376)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that many of us feel a responsibility to those who come after us. A Future Generations Act would require governments to consider the long-term impacts of decisions on future generations and a commissioner to monitor the progress of those goals would hold decision-makers to account.
+
+**How** (*policy.nz*): This party would establish a Future Generations Commissioner who would guide the development of long-term national goals and hold politicians to account. As an independent Officer of Parliament, the role would be shielded from political interference and its funding would come from the Offices of Parliament, requiring unanimous cross-party support. This is part of a wider policy of citizen's assemblies to set long-term goals and monitoring on their progress.
+
+Sources: ['Future generations' (PDF), undated (accessed 27 October 2026)](https://www.opportunity.org.nz/future-generations); ['Citizens Voice Policy ' (PDF), undated (accessed 07 August 2026)](https://cdn.opportunity.org.nz/documents/policy/citizens-voice-policy.pdf); ['10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)](https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education); ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf); ['Intergenerational Infrastructure' (PDF), undated (accessed 11 August 2026)](https://cdn.opportunity.org.nz/documents/policy/intergenerational-infrastructure.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/opportunity-party). Full text not yet archived.
+
+### Updated policies
+
+#### Repeal the cap on donations eligible for a 33% tax credit (POL54652)
+
+_Updated on policy.nz, seen 28 October 2026: topics._
+
+**Why** (*policy.nz*): This party says that the $100,000 cap introduced on charitable donations in Budget 2026 will limit donations to the charitable sector and put crucial giving at risk. The cap will cost the public more through increased demand on public services. Removing the cap would also help the underfunded arts sector.
+
+**How** (*policy.nz*): This party would remove the $100,000 cap on charitable donations and instruct the Law Commission to carry out a review of regulations in the charity sector in NZ.   At the same time, a comprehensive review and reform of the charitable sector is needed to mitigate concerns about donor-controlled charities and people receiving tax benefits without providing meaningful charitable services.
+
+Sources: ['Charitable Giving Tax Credit Cap', 19 June 2026 (accessed 06 August 2026)](documents/web-charitable-giving-tax-credit-cap.md) ([original](https://www.opportunity.org.nz/charitable_giving_tax_credit_cap)); ['Arts and culture statement', 19 October 2026 (accessed 20 October 2026)](documents/web-arts-and-culture-statement.md) ([original](https://www.opportunity.org.nz/arts_and_culture_statement))
+
+#### Increase incentives to electrify houses, industries and transport (POL54770)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says New Zealand has solar, wind, hydro and geothermal resources but continues to rely too heavily on fossil fuels. It says increasing renewable energy and promoting the electrification household and industry electrification would have many benefits such as increased GDP, lower carbon emissions, smaller power bills and 5,000 new jobs over the next 30 years.
+
+**How** (*policy.nz*): This party would incentivise the electrification of industries and housing. Low-interest loans and funding would be made available for households, community energy projects and public transport.  This would include an expansion of EECA’s Warmer Kiwi Homes subsidies ($80m annually) for household solar and electricity initiatives, and low-interest electrification loans via the national Ratepayer Assistance Scheme.
+
+Sources: ['Abundant Energy Policy' (PDF), undated (accessed 11 August 2026)](documents/pdf-abundant-energy-paper.md) ([original](https://cdn.opportunity.org.nz/documents/policy/abundant-energy-policy.pdf)); ['Climate Action', undated (accessed 19 August 2026)](documents/web-climate-action.md) ([original](https://www.opportunity.org.nz/climate_action)); ['Industry Energy Resilience Fund', 8 September 2026 (accessed 09 September 2026)](documents/web-industry-energy-resilience-fund.md) ([original](https://www.opportunity.org.nz/industry_energy_resilience_fund)); [Abundant Energy (policy document)](documents/pdf-abundant-energy.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Abundant%20Energy.pdf)); [Abundant Energy - Opportunity Party Policy (policy paper)](documents/pdf-abundant-energy-paper.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Abundant%20Energy%20-%20Opportunity%20Party%20Policy.pdf)); ['Build Today, Breakthrough Tomorrow', undated (accessed 19 August 2026)](https://www.opportunity.org.nz/build_today_breakthrough_tomorrow)
+
+#### Support the online safety bill on a potential under-16 social media ban to select committee (POL54783)
+
+_Updated on policy.nz, seen 28 October 2026: topics._
+
+**Why** (*policy.nz*): This party says that it is concerned about the effects of social media on those under 16, and supports a discussion on whether to impose a ban. However, it adds that an age restriction is not a substitute for stronger obligations on social media companies to address digital harm.
+
+**How** (*policy.nz*): This party would support National’s online safety bill at first reading so it can be properly tested at select committee. It will wait for the select committee to examine the evidence before taking a position on the effectiveness of a social media ban for young people.
+
+Sources: ['Opportunity to support online safety bill to select committee', 25 August 2026 (accessed 28 August 2026)](documents/web-opportunity-to-support-online-safety-bill-to-select-committee.md) ([original](https://www.opportunity.org.nz/opportunity_to_support_online_safety_bill_to_select_committee))
+
+#### Include te Tiriti and Aotearoa history in education (POL54828)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says the responsibility of the Crown as a Treaty partner should be treated seriously, including the protection of taonga and redress of historical wrong.
+
+**How** (*policy.nz*): This party would ensure Aotearoa history, including Te Tiriti, is part of the education system and support the growth of te reo teachers.
+
+Sources: ['Honouring Te Tiriti', undated (accessed 11 August 2026)](documents/web-honouring-te-tiriti.md) ([original](https://www.opportunity.org.nz/honouring_te_tiriti)); [Future-Fit Education Policy Paper](documents/pdf-future-fit-education.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Future-Fit%20Education%20Policy%20Paper.pdf)); [Honouring Te Tiriti Policy Paper](documents/pdf-honouring-te-tiriti.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Honouring%20Te%20Tiriti%20Policy%20Paper.pdf)); ['Future Fit Education', undated (accessed 19 August 2026)](https://www.opportunity.org.nz/future_fit_education)
+
+#### Make housing more affordable with targeted construction support (POL54873)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that New Zealand has a shortage of 80,000 homes and an affordability problem. Increasing the housing supply will help lower house prices; this means supporting the construction sector to overcome its lumpy pipeline and still build with quality.
+
+**How** (*policy.nz*): This party would back reputable affordable housing developments by underwriting to smooth out the 'boom-bust' cycle. It would also support offsite builders who take on apprentices. Housing quality would be encouraged with low-cost loans, and by refunding GST collected during construction to councils for environmentally high standard builds. 
+These moves would be in tandem with zoning changes and a 1.75 percent urban land tax, which together would lower house prices and discourage land banking.
+
+Sources: ['Affordable Housing', undated (accessed 19 August 2026)](documents/web-affordable-housing.md) ([original](https://www.opportunity.org.nz/affordable_housing)); [Affordable Housing (policy document)](documents/pdf-affordable-housing.md) ([original](https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Affordable%20Housing.pdf)); ['Build Today, Breakthrough Tomorrow', undated (accessed 19 August 2026)](https://www.opportunity.org.nz/build_today_breakthrough_tomorrow)
+
+#### Rebuild the school lunch programme (POL54887)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that unhealthy food account for roughly a quarter of all the healthy years New Zealanders lose to death and disability. Prevention receives a small fraction of health spending relative to the share of health loss these risks cause.
+
+**How** (*policy.nz*): This party would roll out several measures to encourage healthier eating, including restoring the original lunches in schools programme. Nutrition would be an overall health priority. It would extend the nutritional standards used in hospitals to other sectors like aged care, prisons and schools. A national nutritional study would also be commissioned to better inform policymakers. The party's 10-year health plan will lift health funding to 9% of GDP, with a greater focus on prevention and primary care.
+
+Sources: ['10-year plans to strengthen health and education', 2 September 2026 (accessed 02 September 2026)](documents/web-10-year-plans-to-strengthen-health-and-education.md) ([original](https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education)); ['Healthy People ', undated (accessed 19 August 2026)](documents/web-healthy-people.md) ([original](https://www.opportunity.org.nz/healthy_people)); ['Bottom Lines', 29 September 2026 (accessed 30 September 2026)](documents/web-bottom-lines.md) ([original](https://www.opportunity.org.nz/bottom_lines)); ['Future Fit Education', undated (accessed 19 August 2026)](https://www.opportunity.org.nz/future_fit_education)
+
+#### Provide more support for the arts through a citizens income and innovation funding (POL55323)
+
+_Updated on policy.nz, seen 28 October 2026: topics, sources._
+
+**Why** (*policy.nz*): This party says that a stronger arts ecosystem creates jobs and wellbeing, builds healthier communities and helps define national identity. NZ sits in the bottom ten OECD countries for public arts investment. The barriers for artists are less about a lack of arts funding and more about unpredictable income, and changing a mindset that the arts are a key part of the economy, rather than an optional extra.
+
+**How** (*policy.nz*): This party would address the precarity of an artist's income firstly with its universal citizen’s income policy, which would enable artists to take a financial gamble on their career. Tax reforms would help over irregular income and free up charitable giving by repealing the cap on charitable donations. This party would more broadly support the arts through other policies such as an AI framework and revamp of the polytech sector, which would address copyright exploitation and recognise the arts in innovation funding.
+
+Sources: ['Arts and culture statement', 19 October 2026 (accessed 20 October 2026)](documents/web-arts-and-culture-statement.md) ([original](https://www.opportunity.org.nz/arts_and_culture_statement)); ['Charitable Giving Tax Credit Cap', 19 June 2026 (accessed 06 August 2026)](documents/web-charitable-giving-tax-credit-cap.md) ([original](https://www.opportunity.org.nz/charitable_giving_tax_credit_cap)); ['Tax Reset ', undated (accessed 24 August 2026)](https://www.opportunity.org.nz/tax-reset)
+
+<!-- GENERATED:policy-updates END -->
+
 ## About this list
 
 Opportunity (leader Qiulae Wong) publishes its platform as 15 policy pages (priority policies: Abundant Energy, Breakthrough Economy, Clean Up Politics, Healthy Oceans, Tax Reset; plus Citizens' Voice, Future-fit Education, Healthy People, Honouring Te Tiriti, Smart on Crime, Affordable Housing, Digital Future, Inter-Generational Infrastructure, Climate Action, Healthy Land & Water), most with a downloadable PDF policy paper, plus statements and five election "bottom lines". The list below starts from policy.nz's 56 statements for the party (with policy.nz's own Why/How text) and adds policies from TOP's documents that policy.nz does not list (IDs OPP-A..).

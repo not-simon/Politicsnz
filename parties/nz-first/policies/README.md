@@ -2,6 +2,291 @@
 
 Every 2026 policy of New Zealand First that this archive could find, with a short neutral summary (**Why** — the reason the party gives; **How** — what it would do) and links to the **full verbatim text** of the party's own documents in [`documents/`](documents/). Election day: 7 November 2026. Compiled 23 October 2026.
 
+<!-- GENERATED:policy-updates START -->
+## Changes on policy.nz since 23 October 2026
+
+This archive captured the party's policy.nz policies on 23 October 2026; policy.nz is re-checked daily by [`tools/refresh_policies.py`](../../../tools/refresh_policies.py). Nothing is deleted: a policy that is no longer on policy.nz stays in this archive marked *withdrawn*. Full texts of new sources are archived separately; until then the links go to the original pages. Where this block and the sections below differ, this block is the newer text.
+
+### New policies
+
+#### Increase the Gaming Development Sector Rebate scheme (POL55332)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that gaming is an underutilised section of the arts and creative sector and is growing. It says that video game industries globally exceed film and television in revenue and how the game development industry has hit $1 billion in annual revenue this year, a growth of 33.5% on the 2025 figures in NZ.
+
+**How** (*policy.nz*): This party would increase the Gaming Development Sector Rebate so that studios can receive from 20% to 40% to accelerate development. It would lift the rebate cap from $3 million to $10 million and lower the minimum threshold to $150,000. This policy would provide $7m annually in funding for the grant approval agency, CODE. This party estimates that this policy would cost $52m over three years.
+
+Sources: ['NZFirst to fund NZs Gaming Industry Sector, keeping talent and companies in NZ', 20 October 2026 (accessed 22 October 2026)](https://www.nzfirst.nz/nzfirst_to_fund_nzs_gaming_industry_sector_keeping_talent_and_companies_in_nz); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Increase the depreciation rate for manufacturing and targeted export industries (POL55352)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that it is the only party that has committed to doubling NZ's GDP by 2050. The party seeks to incentivise capital investment to improve productivity in high-value export industries.
+
+**How** (*policy.nz*): This party would introduce a 50% depreciation rate for manufacturing and targeted export industries. Intended for businesses in the manufacturing and targeted export sectors such as primary production - mining, aquaculture, forestry, farming, and fishing. This is in contrast to the current 'investment boost' policy which applies to all industries.
+
+Sources: ['NZFirst Policy Announcement: 50% Targeted Accelerated Depreciation for Manufacturing and Export Sector.', 23 October 2026 (accessed 24 October 2026)](https://www.nzfirst.nz/nzfirst_policy_announcement_50_targeted_accelerated_depreciation_for_manufacturing_and_export_sector); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Remove both petrol and diesel from the emissions trading scheme (POL55354)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that petrol and diesel are too expensive to be included in the emissions trading scheme. It says that removing fuel from the ETS would result in 12-cent and 14-cent reductions in the price of petrol and diesel respectively.
+
+**How** (*policy.nz*): This party would remove petrol and diesel from the emissions trading scheme. Providers would not have to purchase carbon credits to engage in their business.
+
+Sources: ['Remove The Climate Tax From Fuel', undated (accessed 26 October 2026)](https://www.nzfirst.nz/remove_the_climate_tax_from_fuel); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Increase sentence lengths for murder (POL55355)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that the criminal justice system needs to prioritise victims over perpetrators. Part of this, the party argues, requires longer sentences for violent and sexual offences. The party is concerned that those on trial for murder can have their sentences reduced because of technicalities. It says a formal degree of murder regime needs to be introduced to counteract this.
+
+**How** (*policy.nz*): This party would introduce a formal degree of murder regime whereby first degree murder is life imprisonment without a chance of parole; second degree murder is an aggravated life sentence with a minimum sentence of non-parole period of 30 years. Third degree murder would be a life sentence with a minimum non-parole period of 10 years. The party would also increase sentences for attempted murder and wounding with intent to cause grievous bodily harm from 14 years to 25 years. It would increase the standard parole eligibility to 75% of a sentence for long-term offenders so that those convicted of murder have to be assessed as having a low probability of reoffending before release. It would also limit sentence discounts for factors other than a guilty plea to 10%. Guilty plea discounts will remain limited to 25%.
+
+Sources: ['Tougher Sentences, Degrees of Murder, Smashing Organised Crime, Life Means Life', undated (accessed 26 October 2026)](https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Expand self-defence justifications in the justice system (POL55356)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that the criminal justice system should prioritise victims as opposed to offenders. A component of better serving victims, the party says, is ensuring trusted and effective self-defence protections and recognising home burglaries as aggravated due to the impact of such offences on people, not just property.
+
+**How** (*policy.nz*): This party would investigate the best practice to establish 'stand your ground' laws for when someone has committed violence while defending their person and their property. It would amend Police operational and prosecution guidelines to make it clear that a person who excessively defends themselves is to be treated initially as a victim unless evidence indicates otherwise. The Solicitor-General’s prosecution guidelines would be amended so more weight is given to juries. Additionally, the Solicitor-General would be required to approve that any prosecution based on self-defence is in the public interest. Additionally, the party would ensure that home burglaries are regarded as aggravated.
+
+Sources: ['Tougher Sentences, Degrees of Murder, Smashing Organised Crime, Life Means Life', undated (accessed 26 October 2026)](https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Increase prison sentences for those convicted of sexual offences against children (POL55357)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that that the criminal justice system should further prioritise victims over perpetrators. Part of this, the party argues, requires that sentences for sexual offences involving children be greater.
+
+**How** (*policy.nz*): This party would would introduce tougher penalties for sexual offences, including life imprisonment for rape offences against children.
+
+Sources: ['Tougher Sentences, Degrees of Murder, Smashing Organised Crime, Life Means Life', undated (accessed 26 October 2026)](https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Focus police resources on combating transnational organised crime (POL55358)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that there is a growing crime and security risk posed by transnational organised crime. The party would establish its own government body to specialise in investigating and combating transnational organised crime. The party would also fold the Serious Fraud Office in with the police.
+
+**How** (*policy.nz*): This party would establish a new government department that specialises in combating organised crime. It would combine the Serious Fraud Office with NZ Police, which it says creates duplication.
+
+Sources: ['Tougher Sentences, Degrees of Murder, Smashing Organised Crime, Life Means Life', undated (accessed 26 October 2026)](https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Oppose any expansion of the clean-slate law (POL55359)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that the criminal justice system needs to prioritise victims over perpetrators. Part of this, the party argues, requires any expansion of the clean-slate laws. The party argues in favour of more severe consequences for offending. The clean slate law allows people who have no recent criminal convictions to conceal past offences if they have not committed crimes for many years. Currently, it applies only to people with convictions at least seven years old that were not serious and for which they had not been sentenced to prison or home detention.
+
+**How** (*policy.nz*): This party would oppose any expansion of the clean-slate law.
+
+Sources: ['Tougher Sentences, Degrees of Murder, Smashing Organised Crime, Life Means Life', undated (accessed 26 October 2026)](https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Create a time limit for sentencing in courts and limit name suppression (POL55360)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that the criminal justice system needs to prioritise victims over perpetrators. As part of this, the party argues that justice needs to be timely and transparent. Courts should have deadlines for sentencing notes and name suppression should be limited in most cases.
+
+**How** (*policy.nz*): This party would mandate that all district courts around the country publish complete sentencing notes within 72 hours and limit final name suppression to extreme cases.
+
+Sources: ['Tougher Sentences, Degrees of Murder, Smashing Organised Crime, Life Means Life', undated (accessed 26 October 2026)](https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Review fines and chargers for transport offences (POL55361)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that there can be inconsistency with regard to traffic penalties. For instance, red-light running and stop-sign running have different penalties. It says other penalties can be too light or too harsh.
+
+**How** (*policy.nz*): This party would launch a review of the government's transport penalty regimes. Such a review would focus on consistency across similar offences, what punishments should be used (i.e., fines vs de-merit points), and, lastly, whether such punishments are proportionate to the initial traffic offence.
+
+Sources: ['Tougher Sentences, Degrees of Murder, Smashing Organised Crime, Life Means Life', undated (accessed 26 October 2026)](https://www.nzfirst.nz/tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Withdraw from the Paris climate agreement (POL55364)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that that NZ's contribution to global emissions is too small to make much of a difference, but key industries in New Zealand rely on fossil fuels. It says that around sixty per cent of the world's CO2 emissions come from four countries: China, the United States, Russia, and India. New Zealand’s emissions amount to only around 0.17%.
+
+**How** (*policy.nz*): This party would have NZ formally withdraw from the Paris Agreement altogether. Commitments made as part of previous trade agreements would remain.
+
+Sources: ['We Will Withdraw From The Paris Accord', undated (accessed 26 October 2026)](https://www.nzfirst.nz/withdraw_from_paris_accord); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Consider establishing a “New Zealand Future Fund” of up to $100 billion (POL55365)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that that NZ lacks productive capital investment. It says the government should start picking winners by directly investing in the domestic economy with funds. It says that Singapore, Norway, Croatia, and Ireland are examples of countries that have climbed international rankings of economic performance whilst adopting sovereign wealth funds.
+
+**How** (*policy.nz*): This party would commit to the investigation of the development of a “New Zealand Future Fund” of up to $100 billion to invest solely in a multi-decade infrastructure build, to ensure our future infrastructure security and to enable future economic growth. This fund would be 'ring-fenced' free from political interference by law. This party estimates that this policy would require borrowing $100 billion.
+
+Sources: ['The $100bn New Zealand Future Fund', undated (accessed 26 October 2026)](https://www.nzfirst.nz/the_100bn_new_zealand_future_fund); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Establish a six-year Defence Force investment programme (POL55366)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that strategic warning time has fallen as tensions rise globally between major powers. The party rejects the 10 year programme for the Defence Force established by the current government. Instead, it cites the previously mentioned instability as a rationale to speed up and increase spending on the NZ Defence Force is a combat-ready deterrant.
+
+**How** (*policy.nz*): This party would initiate a six-year, three-stage program to invest in the NZDF. A full recruitment target would be met in year six, when NZ would have 12,500 regular members and 6,000 reserves. Governing legislation for the investment program would have an acceleration clause, whereby the recruitment and capital expenditure targets across phases two and three are legally empowered to compress instantly. Defence spending would rise to 3% of GDP.
+
+Sources: ['Defence, Security, and Protection of the Realm (2027-2032)' (PDF), 25 October 2026 (accessed 26 October 2026)](https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Increase capacity to defend underwater minerals from other countries if needed (POL55368)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that NZ is, according to the World Bank, the fourth richest country by natural resources if you consider NZ's full maritime border. The party claims the NZ Defence Force needs the capacity to defend such resources from illegal extraction.
+
+**How** (*policy.nz*): This party would establish permanent capacity to defend the Kermadec Submarine Arc and Chatham Rise Phosphorites.
+
+Sources: ['Defence, Security, and Protection of the Realm (2027-2032)' (PDF), 25 October 2026 (accessed 26 October 2026)](https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Protect the "Ross Dependency" and Antarctic security (POL55373)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party claims that the Ross Dependency base area of Antarctica is used by competing geopolitical powers for scientific research. It says he NZDF must maintain an operational presence to ensure that the base and location remain used for its stated purpose of scientific research.
+
+**How** (*policy.nz*): This party would deploy NZDF inspection teams to ensure that Ross Dependency facilities are restricted strictly to peaceful scientific research. It would aim to safeguard the Ross Sea Marine Protected Area from illegal and unauthorised mineral prospecting and fishing. Additionally, the party would ensure the capital investment necessary so that ice-capable ships and ski-fitted military transport planes are ready, so NZ can reliably supply Antarctic bases year after year and run long-distance search and rescue missions in the polar region.
+
+Sources: ['Defence, Security, and Protection of the Realm (2027-2032)' (PDF), 25 October 2026 (accessed 26 October 2026)](https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Centralise Defence Force command (POL55374)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that NZ should significantly increase its defence spending. To maximise efficiency, it says command leadership can be centralised to save money on duplication and inter-departmental competition.
+
+**How** (*policy.nz*): This party would would bring in the Army, Navy, and Air Force leadership under one roof by having the NZDF transition immediately to a unified, flat command structure under New Zealand Joint Defence Command (NZJDC). This transition would disestablish separate Service Chief HQs and redirect 800 to 1,200 administrative positions to frontline operational roles.
+
+Sources: ['Defence, Security, and Protection of the Realm (2027-2032)' (PDF), 25 October 2026 (accessed 26 October 2026)](https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Invest in the SAS to maintain important defence relationships (POL55375)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that international partnerships depend on NZ contributing real capability, and a hollowed-out or over-constrained NZ SAS would undermine the country’s standing in Five Eyes and regional coalitions. The party describes the SAS as NZ's strategic insurance policy due to its track record of impressive capability.
+
+**How** (*policy.nz*): This party would increase SAS funding to equip operators with advanced counter-drone systems, munitions integration, encrypted satellite communications, and high-speed data fusion tools. It would increase the incentives for people to continue working for the NZDF rather than joining private forces or foreign militaries. Additionally, the party would guarantee interoperability with Australian, British, Canadian, French, and US special forces, meaning the NZDF could provide increased support to allies.
+
+Sources: ['Defence, Security, and Protection of the Realm (2027-2032)' (PDF), 25 October 2026 (accessed 26 October 2026)](https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Decouple NZDF pay from the Public Service Commission and ensure merit-based appointments (POL55379)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that benchmarking NZDF pay to Public Service Commission standards has led executive salaries to rise too fast relative to frontline personnel. The party argues that greater operational independence in recruitment can also facilitate a stronger emphasis on merit in appointments.
+
+**How** (*policy.nz*): This party would Amend the Defence Act 1990 to remove military appointments from PSC oversight and cap executive pay at no more than 3.5 times the pay for Command Warrant Officer First Class. It would enforce a rigorous combat focus across training. Ministerial Directive establishing that a commander's primary statutory obligation is the welfare, housing, and operational readiness of their personnel. Lastly, the party says the HMNZS Manawanui disaster was in part caused by an absence of an absolute emphasis on merit in appointment selections.
+
+Sources: ['Defence, Security, and Protection of the Realm (2027-2032)' (PDF), 25 October 2026 (accessed 26 October 2026)](https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+### Updated policies
+
+#### Survey all of NZ to look for minerals (POL54662)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that NZ needs to gain the maximum benefit from its resources. Knowing which resources are available is a key step for making decisions about future mining projects. Investing in science, technology and the mining workforce will protect the benefits of mining into the future.
+
+**How** (*policy.nz*): This party would invest in advanced core-scanning technology and pay for a modern geological survey to be done throughout NZ. It would also reopen the School of Mines to build the mining workforce and ensure that money made in the mining industry stays in NZ. Building on policies like Fast-track, this would make it easier for new mines to be created.
+
+Sources: ['Returning 50% of mining royalties to the regions', undated (accessed 13 August 2026)](documents/site-returning-50-of-mining-royalties-to-the-regions.md) ([original](https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions)); [NZ First Campaign Announcement: 50% Mining Royalties To Be Returned To Regions – Not Wellington (Press release, 2026-03-29)](documents/2026-03-29-nz-first-campaign-announcement-50-mining-royalties-to-be-ret.md) ([original](https://www.scoop.co.nz/stories/PA2603/S00188/nz-first-campaign-announcement-50-mining-royalties-to-be-returned-to-regions-not-wellington.htm)); [SPEECH: Winston Peters - Fair Share For The Regions (Speech, 2026-03-29)](documents/2026-03-29-speech-winston-peters-fair-share-for-the-regions.md) ([original](https://www.scoop.co.nz/stories/PA2603/S00187/speech-winston-peters-fair-share-for-the-regions.htm)); ['Future Proofing our Fuel Security', undated (accessed 13 August 2026)](https://www.nzfirst.nz/future_proofing_our_fuel_security)
+
+#### Support new parents with a $5000 grant for the first three years of their child's life (POL54746)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that New Zealand's birth rate is only 1.53 children per woman, when the replacement rate is 2.1 children per woman. If something is not done, this party says New Zealand may become entirely dependent on immigration in the future.
+
+**How** (*policy.nz*): This party would offer all new parents (where at least one is a New Zealand citizen) a $5000 grant per year for the first three years of their child's life. This grant would apply to the first, second, and third children which the couple have. The grant would be tax free and not replace any current support.  This party estimates that this policy would cost $400 million per three-year-cycle.
+
+Sources: ['The 'Kiwi Kids Grant'', undated (accessed 13 August 2026)](documents/site-the-kiwi-kids-grant.md) ([original](https://www.nzfirst.nz/the_kiwi_kids_grant)); [NZFirst Announces Policy To Encourage Kiwis To Have More Kids (Press release, 2026-08-02)](documents/2026-08-02-nzfirst-announces-policy-to-encourage-kiwis-to-have-more-kid.md) ([original](https://www.scoop.co.nz/stories/PA2608/S00008/nzfirst-announces-policy-to-encourage-kiwis-to-have-more-kids.htm)); [Winston Peters' Speech: “New Zealand In Its Eleventh Hour” (Speech, 2026-08-02)](documents/2026-08-02-winston-peters-speech-new-zealand-in-its-eleventh-hour.md) ([original](https://www.scoop.co.nz/stories/PA2608/S00010/winston-peters-speech-new-zealand-in-its-eleventh-hour.htm)); ['Nz First Announces Policy to Encourage Kiwis to Have More Kids', 2 August 2026 (accessed 18 August 2026)](https://www.nzfirst.nz/nzfirst_announces_policy_to_encourage_kiwis_to_have_more_kids)
+
+#### Establish a Special Economic Zone at Marsden Point (POL54755)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says Marsden Point should be allowed to operate under a lighter regulatory framework to support domestic energy production. The party argues that, with rising global tensions and increasing energy costs, New Zealand needs to better ensure itself against spikes in global fuel prices. Establishing a special economic zone (SEZ) will attract foreign investment.
+
+**How** (*policy.nz*): This party would establish a Special Economic Zone, which would see a combination of tax breaks, wage subsidies, and reduced regulation to incentivise the development of energy and port operations. The party says that the principal benefits of the economic zone would be the bypassing of planning regulations and the RMA. If elected, this party would consider providing additional funding to help local councils run services in the SEZ, such as investment in physical, transport or communications infrastructure.
+
+Sources: ['Establishing a Special Economic Zone At Marsden Point', undated (accessed 13 August 2026)](documents/site-establishing-a-special-economic-zone-at-marsden-point.md) ([original](https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point)); [“No More Cinderella City” - Winston Peters' Speech (Speech, 2026-05-24)](documents/2026-05-24-no-more-cinderella-city-winston-peters-speech.md) ([original](https://www.scoop.co.nz/stories/PA2605/S00199/no-more-cinderella-city-winston-peters-speech.htm)); ['Policy Announcement: Marsden Point Special Economic Zone', 24 May 2026 (accessed 18 August 2026)](https://www.nzfirst.nz/policy_announcement_marsden_point_special_economic_zone)
+
+#### Introduce a binding referendum on the Māori seats (POL54757)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that Māori have been better represented since the establishment of MMP. When MMP was introduced, a report recommended scrapping the old Māori seats because Māori would be better represented. The party argues that a referendum is needed to justify the seats' existence and so the issue can be settled. It also cites the conduct of Te Pati Māori in Parliament as justifying the need for a referendum.
+
+**How** (*policy.nz*): This party would introduce legislation to run a public referendum on the Māori seats at the next general election. It says the referendum would have no extra costs if it could be included on the ballot papers at the next general election. The result would not affect the outcomes of that election, but the following election three years later.
+
+Sources: ['Referendum on Maori Seats', undated (accessed 13 August 2026)](documents/site-referendum-on-maori-seats.md) ([original](https://www.nzfirst.nz/referendum_on_maori_seats)); ['Referendum on Maori Seats ', undated (accessed 27 August 2026)](documents/site-referendum-on-maori-seats.md) ([original](https://www.nzfirst.nz/referendum_on_maori_seats)); [New Zealand First To Campaign For Referendum On Māori Seats (Press release, 2026-02-12)](documents/2026-02-12-new-zealand-first-to-campaign-for-referendum-on-maori-seats.md) ([original](https://www.scoop.co.nz/stories/PA2602/S00071/new-zealand-first-to-campaign-for-referendum-on-maori-seats.htm)); [NZ First Bill To Enable Binding Referendum On Māori Seats At 2026 Election (Press release, 2026-02-18)](documents/2026-02-18-nz-first-bill-to-enable-binding-referendum-on-maori-seats-at.md) ([original](https://www.scoop.co.nz/stories/PA2602/S00102/nz-first-bill-to-enable-binding-referendum-on-maori-seats-at-2026-election.htm)); [Māori Seats Referendum Bill (Party web page (Common Crawl), 2026-10-11)](documents/site-maori-seats-referendum-bill.md) ([original](https://www.nzfirst.nz/maori_seats_referendum_bill)); ['NZ First Bill To Enable Binding Referendum On Māori Seats At 2026 Election ', 18 August 2026 (accessed 27 August 2026)](https://community.scoop.co.nz/2026/02/nz-first-bill-to-enable-binding-referendum-on-maori-seats-at-2026-election)
+
+#### Ensure that only NZ citizens can vote (POL54759)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that it is a problem that after two years of living in NZ, someone can claim permanent residency and vote. For visa holders who have no expiry date for their visa, they can technically vote after one year. It says that only those who are natural-born citizens and have sworn allegiance to NZ should be able to vote for who governs the country and in referendums that can change NZ.
+
+**How** (*policy.nz*): This party would restrict voting rights for all referenda and levels of government (including local government) to those with legal citizenship.
+
+Permanent residents will still retain other rights such as the right to live, work, study, and access government support.
+
+Sources: ['Citizen’s Only Voting', undated (accessed 27 August 2026)](documents/site-citizens-only-voting.md) ([original](https://www.nzfirst.nz/citizens_only_voting)); [New Zealand First To Campaign On ‘Citizens Only Voting’ (Press release, 2026-07-05)](documents/2026-07-05-new-zealand-first-to-campaign-on-citizens-only-voting.md) ([original](https://www.scoop.co.nz/stories/PA2607/S00039/new-zealand-first-to-campaign-on-citizens-only-voting.htm)); [NZ First Announces Immigration Reform Policies (Press release, 2026-09-11)](documents/2026-09-11-nz-first-announces-immigration-reform-policies.md) ([original](https://www.scoop.co.nz/stories/PA2609/S00118/nz-first-announces-immigration-reform-policies.htm)); ['New Zealand First to Campaign on Citizens Only Voting', 5 July 2026 (accessed 18 August 2026)](https://www.nzfirst.nz/nz_first_to_campaign_on_citizens_only_voting)
+
+#### Promote healthy eating (POL55057)
+
+_Updated on policy.nz, seen 28 October 2026: statement, why._
+
+Previously: "Promote healthy eating as preventative healthcare"
+
+**Why** (*policy.nz*): This party says that too large a share of NZ health spending goes towards caring for people once they're sick, as opposed to before. The party claims that 59% of health spending is spent treating chronic illness, and only 1.75% on the prevention of such conditions. This party is interested in nutrition as a form of preventing illness.
+
+**How** (*policy.nz*): This party would promote nutrition from primary school to medical school, use health coaches in GP care, and require a full independent review of our dietary guidelines. It would fund research and development to better assess nutritional interventions for preventing and treating mental illness. It would fund development in agricultural tech and cut regulatory barriers to help grow markets for organic food items.  It would investigate how the use of vitamins in the delivery of healthcare can prevent people from getting sick again, including intravenous vitamin C pre- and post-surgery for preventing and treating infections.
+
+Sources: ['NZFirst Campaign Announcement: The Plan to “Make NZ Healthy” ', 20 September 2026 (accessed 21 September 2026)](documents/site-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md) ([original](https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy)); [NZ First Campaign Announcement: The Plan To “Make NZ Healthy” (Press release, 2026-09-20)](documents/2026-09-20-nz-first-campaign-announcement-the-plan-to-make-nz-healthy.md) ([original](https://www.scoop.co.nz/stories/PA2609/S00205/nz-first-campaign-announcement-the-plan-to-make-nz-healthy.htm)); [The Plan to “Make NZ Healthy” (Party web page (Common Crawl), 2026-10-11)](documents/site-the-plan-to-make-nz-healthy.md) ([original](https://www.nzfirst.nz/the_plan_to_make_nz_healthy))
+
+#### Fund organic and nutrient-based health interventions (POL55076)
+
+_Updated on policy.nz, seen 28 October 2026: why._
+
+**Why** (*policy.nz*): This party says that there is too little investment in preventive care. It is focused on preventing health issues by improving nutrition. It says individual nutrition is a driver of underlying conditions that lead people to need expensive healthcare.
+
+**How** (*policy.nz*): This party would fund NZ scientists to assess nutritional interventions for preventing and treating mental illness. It would remove Medsafe/Pharmac barriers to recognising safe nutrients and invest in hospital trials that assess the effectiveness of intravenous vitamin C to treat infections. Farmers would be supported by to invest in the research of alternatives to potentially harmful agricultural sprays. It would fund development in agricultural tech and cut regulatory barriers to help grow markets for organic food items.
+
+Sources: ['NZFirst Campaign Announcement: The Plan to “Make NZ Healthy” ', 20 September 2026 (accessed 21 September 2026)](documents/site-nzfirst-campaign-announcement-the-plan-to-make-nz-healthy.md) ([original](https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy)); [NZ First Campaign Announcement: The Plan To “Make NZ Healthy” (Press release, 2026-09-20)](documents/2026-09-20-nz-first-campaign-announcement-the-plan-to-make-nz-healthy.md) ([original](https://www.scoop.co.nz/stories/PA2609/S00205/nz-first-campaign-announcement-the-plan-to-make-nz-healthy.htm)); [The Plan to “Make NZ Healthy” (Party web page (Common Crawl), 2026-10-11)](documents/site-the-plan-to-make-nz-healthy.md) ([original](https://www.nzfirst.nz/the_plan_to_make_nz_healthy))
+
+#### Replace the Accredited Employer Work Visa with a shortage-led skilled work visa (POL55262)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that NZ's immigration system should be used to manage genuine workforce shortages.  However, it says that instead the accredited employer work visa has too often been used as a means to simply find a preferable candidate and is a risk for the workers themselves, who can find themselves with less protection from exploitation.
+
+**How** (*policy.nz*): This party would replace the Accredited Employer Work Visa with the shortage-led skilled work visa. Such a visa would be limited to shortages, requiring evidence of attempted NZ recruitment, transparency data, and a wage floor to protect domestic wages. The party also says the reforms should be targeted towards the most needed industries, which would restrict access for other industries that have a larger domestic workforce.
+
+Sources: ['NZFirst to Scrap Accredited Working Visa Model', 11 October 2026 (accessed 12 October 2026)](documents/not-retrieved-nzfirst-nzfirst-to-scrap-accredited-working-visa-model.md) ([original](https://www.nzfirst.nz/nzfirst_to_scrap_accredited_working_visa_model)); [NZFirst To Scrap Accredited Working Visa Model (Press release, 2026-10-11)](documents/2026-10-11-nzfirst-to-scrap-accredited-working-visa-model.md) ([original](https://www.scoop.co.nz/stories/PA2610/S00087/nzfirst-to-scrap-accredited-working-visa-model.htm)); ['Scrapping Accredited Working Visa Model', undated (accessed 26 October 2026)](https://www.nzfirst.nz/scrapping_accredited_working_visa_model)
+
+#### Establish a 12-month trial for commuter rail in Canterbury and further south (POL55310)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that traffic wait times are too great between Christchurch and the wider Canterbury region. The party says there are existing rail lines between Christchurch and Dunedin, which are owned by the government and should be delivering for the public.  The party wants the trial to determine a business case for permanent passenger rail.
+
+**How** (*policy.nz*): This party would commence a 12-month trial of passenger rail across Canterbury, such as Christchurch city to Rolleston and Rangiora. It would also connected Canterbury to Otago with a Christchurch-to-Dunedin service.
+
+Sources: ['NZFirst Campaign Announcement: Commuter Rail For Christchurch, Reinstate Southerner Train', 18 October 2026 (accessed 19 October 2026)](documents/2026-10-18-nzfirst-campaign-announcement-commuter-rail-for-christchurch.md) ([original](https://www.scoop.co.nz/stories/PA2610/S00155/nzfirst-campaign-announcement-commuter-rail-for-christchurch-reinstate-southerner-train.htm)); ['NZFirst Campaign Announcement: Commuter Rail for Christchurch, Reinstate Southerner Train. ', 18 October 2026 (accessed 20 October 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_commuter_rail_for_christchurch)
+
+<!-- GENERATED:policy-updates END -->
+
 ## At a glance
 
 - **79 policies** listed: 39 from [policy.nz](https://policy.nz) (all of its 39 NZ First statements, with its Why/How summaries) + 40 more found in the party's own releases, speeches and policy PDFs (marked *archive*; summaries written for this archive).

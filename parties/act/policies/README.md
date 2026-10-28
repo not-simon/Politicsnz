@@ -13,6 +13,277 @@ Every 2026 general-election (7 November 2026) policy of ACT New Zealand that thi
 
 > Summaries describe what ACT says it would do; they are not endorsements or fact-checks. ACT's own claims (costs, statistics) are reported as ACT's claims.
 
+<!-- GENERATED:policy-updates START -->
+## Changes on policy.nz since 23 October 2026
+
+This archive captured the party's policy.nz policies on 23 October 2026; policy.nz is re-checked daily by [`tools/refresh_policies.py`](../../../tools/refresh_policies.py). Nothing is deleted: a policy that is no longer on policy.nz stays in this archive marked *withdrawn*. Full texts of new sources are archived separately; until then the links go to the original pages. Where this block and the sections below differ, this block is the newer text.
+
+### New policies
+
+#### Expand and simplify access to trades for secondary school students (POL55333)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that workforce shortages exist in key trade areas. Such professions are viable and positive pathways for many young people who are struggling to find jobs. Aligning education with labour market demands this party says, can be a long-term solution to improving employment outcomes. Additionally, the party argues that trades need to not be considered a second option.
+
+**How** (*policy.nz*): This party would ensure that funding follows students so that schools receive funding for approved vocational-training programs that are done outside of the student's school. It would create 'Industry Awards' as a qualification equivalent to university entrance. This policy would allow for credits in approved courses to be counted, even after finishing high school.
+
+Sources: ['ACT will put trades on an equal footing with university', 20 October 2026 (accessed 22 October 2026)](https://www.act.org.nz/news/act-will-put-trades-on-an-equal-footing-with-university); [policy.nz party page](https://policy.nz/2026/party-vote/parties/act-party). Full text not yet archived.
+
+#### Create a target of 10,000 children attending charter schools by 2029 (POL55347)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that parents and their children should have greater school choice. Charter schools can cater to specific needs, such as disability support or special athletic talent.
+
+**How** (*policy.nz*): This party would set a target of 10,000 student enrolments by the end of 2029, with annual reporting on progress. It would reduce barriers relating to employment, property and funding for state and state-integrated schools to convert to charter schools. It would set a goal to have a charter school in every major town in New Zealand, paired with standards regarding funding and community demand.
+
+Sources: ['Expanding Charter Schools', undated (accessed 23 October 2026)](https://www.act.org.nz/expanding-charter-schools); ['ACT campaigning to transform 10,000 lives', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-campaigning-to-transform-10-000-lives); [policy.nz party page](https://policy.nz/2026/party-vote/parties/act-party). Full text not yet archived.
+
+#### Allow more sheep to graze on conservation land (POL55348)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that taxpayers are currently funding a helicopter-spraying program. Instead, it says farmers should be allowed to graze their sheep on public conservation land to reduce pests and fire risk. The party claims that in the United States, Australia, and across Europe, targeted grazing is used as a tool for managing invasive plants, controlling vegetation growth, and reducing the risk of wildfires.
+
+**How** (*policy.nz*): This party would give DOC explicit authority and direction to issue grazing licenses for specified areas of conservation land where grazing can be used effectively, as per an established ecological framework that would identify where grazing is appropriate. Licenses would be conditioned on compliance, and virtual fencing systems would be used to manage stock.
+
+Sources: ['Grazing to Cut Pests and Fire Risk', undated (accessed 23 October 2026)](https://www.act.org.nz/grazing); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers); [policy.nz party page](https://policy.nz/2026/party-vote/parties/act-party). Full text not yet archived.
+
+#### Introduce new permitting standards for agriculture (POL55349)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that it wishes to expand accessibility and scope of permitting for agriculture. The party claims this can help promote growth and lower costs associated with regulatory compliance.
+
+**How** (*policy.nz*): This party would introduce ten new permitting standards relating to farm plans, vegetable growing, on-farm water storage, gravel extraction, drain maintenance, effluent management, fertiliser application, farm quarries, wetland restoration, and small-and-medium-scale solar. It would additionally guarantee flexible land use, so farmers won’t require a resource consent when expanding into new markets if they remain compliant with national standards.
+
+Sources: ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers); [policy.nz party page](https://policy.nz/2026/party-vote/parties/act-party). Full text not yet archived.
+
+#### Require compensation for individuals if council decisions affect private land (POL55350)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that private property rights are important to incentivise investment and to protect livelihoods. Councils can, through their policies regarding Significant Natural Areas or Outstanding Natural Landscapes, undermine property values and thus the investments of farmers.
+
+**How** (*policy.nz*): This party would would require councils to pay 'fair' compensation if decisions made by such councils interfere with agricultural industry and farming.
+
+Sources: ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers); [policy.nz party page](https://policy.nz/2026/party-vote/parties/act-party). Full text not yet archived.
+
+#### Create a rural workforce visa (POL55353)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that rural workforce visas are seasonal, such as the Global Workforce Seasonal Visa and the Peak Seasonal Visa. The party says a year-round visa needs to be introduced to ensure labour demands are met.
+
+**How** (*policy.nz*): This party would create a standalone, three-year visa specifically for dairy, sheep and beef, and general farm work. Would be tied to industry, not location or employer. The visa would be for 3 years, if no suitable New Zealander is available, the visa is reissued for a further three years. The party would additionally add a new agricultural stream to the Work to Residence Visa.
+
+Sources: ['A Rural Workforce Visa', undated (accessed 24 October 2026)](https://www.act.org.nz/rural-visa); [policy.nz party page](https://policy.nz/2026/party-vote/parties/act-party). Full text not yet archived.
+
+#### Reduce regulations related to selling home-kill meat (POL55362)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that it could potentially be cheaper for consumers to buy an animal directly from a producer, rather than once it has been processed by a butcher. It says buying and processing home kill should be easier. It says that currently, home-killed meat can only be eaten the animal owner, their family or household, and farm employees and that the rules haven't been updated in twenty years.
+
+**How** (*policy.nz*): This party would revise regulations around selling and purchasing home-kill meat.
+
+Sources: ['Cutting red tape between the farm gate and the freezer', 31 August 2026 (accessed 26 October 2026)](https://www.beehive.govt.nz/release/cutting-red-tape-between-farm-gate-and-freezer); ['ACT will make farming fun again ', 20 September 2026 (accessed 21 September 2026)]( /web/20260920235739/https://www.act.org.nz/news/act-will-make-farming-fun-again); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers); [policy.nz party page](https://policy.nz/2026/party-vote/parties/act-party). Full text not yet archived.
+
+### Updated policies
+
+#### Remove some rules around pharmacy locations, ownership and licences (POL54643)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that removing the rule that prevents a single person or entity from owning more than five pharmacies would make it easier to open new pharmacies. Changing other rules about pharmacy locations, licenses and qualifications for pharmacists would make it easier to open and staff pharmacies anywhere in the country.
+
+**How** (*policy.nz*): The party would change regulatory settings to implement the reforms. Online prescription e-lockers can be used to help those in rural areas access medication when pharmacies may have limited opening hours.
+
+Sources: ['Your pharmacist should be your first stop', 6 August 2026 (accessed 06 August 2026)](documents/news-your-pharmacist-should-be-your-first-stop.md) ([original](https://www.act.org.nz/news/your-pharmacist-should-be-your-first-stop)); [Let Pharmacies Do More](documents/let-pharmacies-do-more.md) ([original](https://www.act.org.nz/let-pharmacies-do-more)); [Pharmacy First](documents/pdf-policy-pharmacy-02.md) ([original](https://assets.nationbuilder.com/actnz/pages/36340/attachments/original/1787116582/policy_pharmacy_02.pdf?1787116582)); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
+
+#### Increase the areas of conservation land which can be accessed by helicopter for hunting (POL54646)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that in areas of forest and mountains where people want to hunt, there are "no-fly" and "no-landing" areas for helicopters with no clear reasoning. In areas where helicopters are the fastest way in, access restrictions should be justified with obvious safety or conservation reasons.
+
+**How** (*policy.nz*): This party would allow the Game Council to designate helicopter landing sites, and restrict commercial venison operators by animal gender when necessary, leaving trophy stags for hunters. DOC would be required to use public tests to designate where aircraft could land, and would not have any say in which types of helicopters were used. The Outdoors Access Commission would be asked to make hunting access a priority in its work programme.
+
+Sources: ['Open the Backcountry', undated (accessed 07 August 2026)](documents/open-the-backcountry.md) ([original](https://www.act.org.nz/open-the-backcountry)); [Backing Hunters](documents/pdf-policy-backing-hunters-02-2.md) ([original](https://assets.nationbuilder.com/actnz/pages/36342/attachments/original/1787117027/policy_backing_hunters_02-2.pdf?1787117027)); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
+
+#### Make disrupting lawful hunters with drones or by standing in the line of fire an offence (POL54672)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that people can disrupt hunters by stepping into the line of fire, or disturbing game birds with a drone. This should not happen if a hunter is following legal guidelines and safety protocols. While people are free to protest hunting, those protests should not place anyone at risk.  It says that currently there are no laws covering this situation which needs to change.
+
+**How** (*policy.nz*): This party would create specific infringement offences for standing in the line of fire of a hunter, and for disturbing game birds with aircraft like drones or helicopters. These infringements would not apply if the hunter was not following the relevant laws and guidelines.
+
+Sources: ['Protect Lawful Hunting', undated (accessed 07 August 2026)](documents/protect-lawful-hunting.md) ([original](https://www.act.org.nz/protect-lawful-hunting)); [Backing Hunters](documents/pdf-policy-backing-hunters-02-2.md) ([original](https://assets.nationbuilder.com/actnz/pages/36342/attachments/original/1787117027/policy_backing_hunters_02-2.pdf?1787117027)); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
+
+#### Give the Game Council responsibility for game animals on conservation land (POL54674)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that legislation currently treats deer as pest animals to be exterminated rather than game animals to be hunted. The Game Council can advise DOC but does not make decisions. Hunters spend time in the area where these animals live and should be making decisions about what happens to game animals on conservation land.
+
+**How** (*policy.nz*): This party would transfer responsibility for game animals from DOC to the Game Council. It would also give the Council more funding to recognise its further responsibilities.
+
+Sources: ['Hunter-led Game Management', undated (accessed 07 August 2026)](documents/game-management.md) ([original](https://www.act.org.nz/game-management)); [Backing Hunters](documents/pdf-policy-backing-hunters-02-2.md) ([original](https://assets.nationbuilder.com/actnz/pages/36342/attachments/original/1787117027/policy_backing_hunters_02-2.pdf?1787117027)); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
+
+#### Give volunteer groups more opportunities and funding for maintenance on conservation land (POL54678)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that that DOC has a 30 percent maintenance shortfall and has issued more than 2,300 closure alerts since 2021. Volunteer groups carry out track and hut maintenance, but should receive funding for this over multiple years rather than applying annually. Creating a system for groups to receive biodiversity credits will incentivise further volunteer work in the hills.
+
+**How** (*policy.nz*): This party would require DOC to give community groups the first opportunity for funding for maintenance on conservation land. Community groups would be allowed to sign multi-year contracts for work they are able to do. If biodiversity benefits were independently verified, groups including hunters would receive biodiversity credits. The Game Council and Deerstalkers Association would be formally represented when deciding how animals on conservation land were managed.
+
+Sources: ['Back the Volunteers', undated (accessed 07 August 2026)](documents/back-the-volunteers.md) ([original](https://www.act.org.nz/back-the-volunteers)); [Backing Hunters](documents/pdf-policy-backing-hunters-02-2.md) ([original](https://assets.nationbuilder.com/actnz/pages/36342/attachments/original/1787117027/policy_backing_hunters_02-2.pdf?1787117027)); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
+
+#### Expand rural policing (POL54894)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that there is a lack of reporting of rural crime in NZ. It attributes this to a lack of trust in whether police will investigate. The prosecution rate is presently at 15%.  The lack of enforcement encourages rural crime.
+
+**How** (*policy.nz*): This party would provide additional funding to expand the 111 service and hire more officers for rural areas, with a target of an additional 100,000 extra patrol hours each year. It would establish a dedicated rural crime unit.
+
+Sources: ['Rural Crime Crackdown', undated (accessed 07 August 2026)](documents/rural-crime.md) ([original](https://www.act.org.nz/rural-crime)); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
+
+#### Repeal the Zero Carbon Act and NZ's net zero goal (POL55046)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that NZ should play its part to reduce emissions but only in line with what other trading partners do, so that the country is not at a competitive disadvantage. The net zero target is arbitrary, and emissions reductions should be weighted in terms of trade.
+
+**How** (*policy.nz*): This party would repeal the current Zero Carbon Act and adopted a trade-weighted approach to emissions reduction instead. The net zero by 2050 goal would be removed, and New Zealand would only do what its trading partners are doing.  This party would also protect NZ workers at risk of losing their jobs in high-emissions industries like steel production, so that these industries face lower carbon prices or none at all and are not at a competitive disadvantage.
+
+Sources: ['Scrap Net Zero, Cut the Carbon Tax' (PDF), 6 September 2026 (accessed 07 September 2026)](documents/pdf-scrap-net-zero-policy-09.md) ([original](https://assets.nationbuilder.com/actnz/pages/37031/attachments/original/1788642905/Scrap_Net_Zero_policy_09.pdf?1788642905)); ['ACT will make farming fun again ', 20 September 2026 (accessed 21 September 2026)](documents/news-act-will-make-farming-fun-again.md) ([original](https://www.act.org.nz/news/act-will-make-farming-fun-again)); [Scrap Net Zero, Cut the Carbon Tax](documents/scrap-net-zero-cut-the-carbon-tax.md) ([original](https://www.act.org.nz/scrap-net-zero-cut-the-carbon-tax)); [Make Farming Fun Again](documents/make-farming-fun-again.md) ([original](https://www.act.org.nz/make-farming-fun-again)); [ACT’s Plan to Make Farming Fun Again](documents/pdf-acts-plan-to-make-farming-fun-again.md) ([original](https://assets.nationbuilder.com/actnz/pages/37460/attachments/original/1789711573/ACT's_plan_to_Make_Farming_Fun_Again.pdf?1789711573)); ['ACT will make farming fun again ', 20 September 2026 (accessed 21 September 2026)]( /web/20260920235739/https://www.act.org.nz/news/act-will-make-farming-fun-again); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
+
+#### Remove the carbon price floor and return ETS profits to households (POL55047)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that the Emissions Trading Scheme (ETS) acts as a "carbon tax", with a minimum price for carbon credits set by the government. This means the auctions do not work properly and raises the price of goods and services. The supply of carbon credits should be increased and the profit returned as a refund to New Zealanders.
+
+**How** (*policy.nz*): This party would remove the price floor from the Emissions Trading Scheme to place downward pressure on the carbon price. 100 percent of the money from the carbon auction would be returned to New Zealanders as a tax refund. If the amount became so low that the refund was impractical to deliver, it would mean prices had fallen so that people had lower prices for goods and services and would no longer need the tax refund.  Conversions of farmland to permanent forest for creating carbon credits would be discouraged.
+
+Sources: ['Scrap Net Zero, Cut the Carbon Tax' (PDF), 6 September 2026 (accessed 07 September 2026)](documents/pdf-scrap-net-zero-policy-09.md) ([original](https://assets.nationbuilder.com/actnz/pages/37031/attachments/original/1788642905/Scrap_Net_Zero_policy_09.pdf?1788642905)); [Scrap Net Zero, Cut the Carbon Tax](documents/scrap-net-zero-cut-the-carbon-tax.md) ([original](https://www.act.org.nz/scrap-net-zero-cut-the-carbon-tax)); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
+
+#### Reduce emissions with a focus on new technology (POL55048)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that many of the changes required to reduce emissions can be provided by novel technology rather than the emissions trading scheme or similar financial systems. To protect prosperity, it says there should be fewer barriers for people to invest in new technologies, especially those which may reduce emissions.
+
+**How** (*policy.nz*): This party would continue to oppose any new financial penalties for carbon emissions. It would remove regulations that it says prevent people from investing in new technology with potential emission-reduction benefits.
+
+Sources: ['Scrap Net Zero, Cut the Carbon Tax' (PDF), 6 September 2026 (accessed 07 September 2026)](documents/pdf-scrap-net-zero-policy-09.md) ([original](https://assets.nationbuilder.com/actnz/pages/37031/attachments/original/1788642905/Scrap_Net_Zero_policy_09.pdf?1788642905)); ['ACT will make farming fun again ', 20 September 2026 (accessed 21 September 2026)](documents/news-act-will-make-farming-fun-again.md) ([original](https://www.act.org.nz/news/act-will-make-farming-fun-again)); [Scrap Net Zero, Cut the Carbon Tax](documents/scrap-net-zero-cut-the-carbon-tax.md) ([original](https://www.act.org.nz/scrap-net-zero-cut-the-carbon-tax)); [Make Farming Fun Again](documents/make-farming-fun-again.md) ([original](https://www.act.org.nz/make-farming-fun-again)); [ACT’s Plan to Make Farming Fun Again](documents/pdf-acts-plan-to-make-farming-fun-again.md) ([original](https://assets.nationbuilder.com/actnz/pages/37460/attachments/original/1789711573/ACT's_plan_to_Make_Farming_Fun_Again.pdf?1789711573)); ['ACT will make farming fun again ', 20 September 2026 (accessed 21 September 2026)]( /web/20260920235739/https://www.act.org.nz/news/act-will-make-farming-fun-again); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
+
+#### Ensure agriculture is not included in emission reduction programmes (POL55054)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that emissions-focused regulation worries farmers who are concerned with industry competitiveness in global export markets. The party argues that the government is getting in the way of decisions that should be made by farmers, and that they should be supported in leading environmental protections, since they have a vested interest in the preservation of their land.
+
+**How** (*policy.nz*): This party would omit agriculture from climate-related legislation such as the Zero Carbon Act and Emissions Trading Scheme. The party has supported reforms to the Resource Management Act, shifting funding from Te Mana o te Wai to rural catchment groups, increasing funding for rural catchment groups, allowing targeted grazing on suitable DOC land, and continuing the war against wilding pines.
+
+Sources: ['ACT will make farming fun again ', 20 September 2026 (accessed 21 September 2026)](documents/news-act-will-make-farming-fun-again.md) ([original](https://www.act.org.nz/news/act-will-make-farming-fun-again)); [Make Farming Fun Again](documents/make-farming-fun-again.md) ([original](https://www.act.org.nz/make-farming-fun-again)); [ACT’s Plan to Make Farming Fun Again](documents/pdf-acts-plan-to-make-farming-fun-again.md) ([original](https://assets.nationbuilder.com/actnz/pages/37460/attachments/original/1789711573/ACT's_plan_to_Make_Farming_Fun_Again.pdf?1789711573)); ['ACT will make farming fun again ', 20 September 2026 (accessed 21 September 2026)]( /web/20260920235739/https://www.act.org.nz/news/act-will-make-farming-fun-again); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
+
+#### Remove the "six months" caveat for assisted dying (POL55161)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that since 2021, New Zealanders have had the option of assisted dying, and the Ministry of Health's first statutory review recommended 25 changes to the law. The party claims that restrictions such as the six-month-to-live rule place an unnecessary barrier to access for those who remain best placed to make decisions about their own bodies.
+
+**How** (*policy.nz*): This party would implement all twenty-five recommendations from the Ministry of Health report. Additionally, the six-month-to-live rule would be replaced by a test based on whether a person's condition is advanced, progressive, and expected to cause death.
+
+Sources: ['Strengthening End of Life Choice', undated (accessed 29 September 2026)](documents/strengthening-end-of-life-choice.md) ([original](https://www.act.org.nz/strengthening-end-of-life-choice)); ['ACT commits to strengthening end-of-life choice', 5 August 2026 (accessed 18 August 2026)](documents/news-act-commits-to-strengthening.md) ([original](https://www.act.org.nz/news/act-commits-to-strengthening)); [End of Life Choice Amendment Bill](documents/pdf-end-of-life-choice-amendment-bill-v3-1.md) ([original](https://assets.nationbuilder.com/actnz/pages/28682/attachments/original/1756344552/End_of_Life_Choice_Amendment_Bill-v3.1.pdf?1756344552)); [Advance Directives Bill](documents/pdf-advance-directives-bill.md) ([original](https://assets.nationbuilder.com/actnz/pages/36371/attachments/original/1787195507/Advance_Directives_Bill.pdf?1787195507)); ['Strengthening End of Life Choice', undated (accessed 29 September 2026)]( /web/20260928213105/https://www.act.org.nz/strengthening-end-of-life-choice)
+
+#### Commission Parliament to explore a deal with Meta for young people on social media (POL55166)
+
+_Updated on policy.nz, seen 28 October 2026: topics, sources._
+
+**Why** (*policy.nz*): This party says that proposals to emulate Australia's social-media ban for under-sixteen-year-olds come with privacy concerns. The party argues that the recent settlement between the United States and Meta (Facebook, Instagram) provides a better framework for dealing with the harm experienced by children due to social media.
+
+**How** (*policy.nz*): This party would ask Parliament to investigate forming a similar settlement with Meta which would include changes seen in the United States. Changes would include a default two-hour daily limit for teenagers, locking most teen accounts between midnight and 6 am, switching off push notifications overnight and during school hours, and giving parents greater power to supervise and restrict their children’s accounts. Teenagers would also need parental approval to loosen the main restrictions.
+
+Sources: ['Landmark social media settlement shows better way forward', 27 August 2026 (accessed 29 September 2026)](documents/news-landmark-social-media-settlement-shows-better-way-forward.md) ([original](https://www.act.org.nz/news/landmark-social-media-settlement-shows-better-way-forward)); ['Landmark social media settlement shows better way forward', 27 August 2026 (accessed 29 September 2026)]( /web/20260929000336/https://www.act.org.nz/news/landmark-social-media-settlement-shows-better-way-forward)
+
+#### Replace Te Mana o te Wai with measurable freshwater outcomes (POL55193)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that the current water standards under the newly introduced government water management entity are too vague its objectives. It says that the standards focus too greatly on 'spiritual' criteria.
+
+**How** (*policy.nz*): This party would replace current standards with a sole focus on measurable freshwater outcomes and remove Te Ao Māori-related concerns.
+
+Sources: ['Leave spirituality out of infrastructure', 3 October 2026 (accessed 05 October 2026)](documents/news-leave-spirituality-out-of-infrastructure.md) ([original](https://www.act.org.nz/news/leave-spirituality-out-of-infrastructure)); [Leave Spirituality out of Infrastructure](documents/leave-spirituality-out-of-infrastructure.md) ([original](https://www.act.org.nz/leave-spirituality-out-of-infrastructure)); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
+
+#### Establish a statutory body to ensure compensation for investors in mineral extraction (POL55220)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that New Zealand needs to produce energy through mineral extraction. Extraction takes a long time between the initial investment and the returns, and investors need confidence that consent process will remain in place.
+
+**How** (*policy.nz*): This party would establish a statutory body to ensure compensation for investors in mineral extraction. Any future government would be required to pay compensation to investors if permit rights are withdrawn. It would facilitate this by adding property rights into the New Zealand Bill of Rights Act and ensuring that any legal challenge opposing a permit does not suspend that permit.
+
+Sources: ['Unlocking Mineral and Energy Wealth' (PDF), 8 October 2026 (accessed 08 October 2026)](documents/pdf-unlocking-mineral-and-energy-wealth.md) ([original](https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386)); [Unlocking Mineral Wealth](documents/unlocking-mineral-wealth.md) ([original](https://www.act.org.nz/unlocking-mineral-wealth)); ['Unlocking Mineral and Energy Wealth' (PDF), 8 October 2026 (accessed 08 October 2026)](https:/assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386)
+
+#### Create a set of national mineral extractions standards (POL55221)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that New Zealand's economy would benefit from more jobs in resource and mineral extraction, and the government would gain from increased royalty payments.
+
+**How** (*policy.nz*): This party would guarantee regular updates to the Crown Mineral List, establish national policy direction and standards for mines, quarries and mineral processing under the new planning legislation, retain fast-track access for eligible projects, and have government work alongside industry to build up the workforce in extractive industries.
+
+Sources: ['Unlocking Mineral and Energy Wealth' (PDF), 8 October 2026 (accessed 08 October 2026)](documents/pdf-unlocking-mineral-and-energy-wealth.md) ([original](https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386)); [Unlocking Mineral Wealth](documents/unlocking-mineral-wealth.md) ([original](https://www.act.org.nz/unlocking-mineral-wealth)); ['Unlocking Mineral and Energy Wealth' (PDF), 8 October 2026 (accessed 08 October 2026)](https:/assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386)
+
+#### Expand domestic energy production (POL55222)
+
+_Updated on policy.nz, seen 28 October 2026: how, sources._
+
+**Why** (*policy.nz*): This party says that global energy markets are becoming more competitive. Expanding domestic energy production could bring commercial and security benefits for New Zealand and allied nations.
+
+**How** (*policy.nz*): This party would continue to allow offshore gas exploration. It would encourage businesses to use renewable energy or fossil fuels with no preference for either option. It would revise the Crown Minerals Act to create rules for underground gas storage . It would also support LNG (gas) import infrastructure as insurance against changes in NZ's domestic gas production.
+
+Sources: ['Unlocking Mineral and Energy Wealth' (PDF), 8 October 2026 (accessed 08 October 2026)](documents/pdf-unlocking-mineral-and-energy-wealth.md) ([original](https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386)); [Unlocking Mineral Wealth](documents/unlocking-mineral-wealth.md) ([original](https://www.act.org.nz/unlocking-mineral-wealth)); ['Unlocking Mineral and Energy Wealth' (PDF), 8 October 2026 (accessed 08 October 2026)](https:/assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386)
+
+#### Revise legislation for resource extraction (POL55223)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that regulatory barriers can create increased costs for investors and firms engaged in mining and gas and oil extraction. Regulations that duplicate criteria that are already met waste time, money and state resources.
+
+**How** (*policy.nz*): This party would have separate legislation around mining with the goal of minimising similar regulations. One piece of legislation would focus on the allocation of Crown-owned petroleum and minerals, another on the management of environmental effects and another on consenting processes.
+
+Sources: ['Unlocking Mineral and Energy Wealth' (PDF), 8 October 2026 (accessed 08 October 2026)](documents/pdf-unlocking-mineral-and-energy-wealth.md) ([original](https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386)); [Unlocking Mineral Wealth](documents/unlocking-mineral-wealth.md) ([original](https://www.act.org.nz/unlocking-mineral-wealth)); ['Unlocking Mineral and Energy Wealth' (PDF), 8 October 2026 (accessed 08 October 2026)](https:/assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386)
+
+#### Increase the flexibility around environmental regulations for mining (POL55224)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that clear rules are needed for responsible mining, to ensure that resource extraction is done without tax money being used to deal with preventable environmental damage. However, extraction companies should be able to follower fewer regulations if they can demonstrate that there is less risk to the environment.
+
+**How** (*policy.nz*): This party would target marine protection at significant ecological features, including important seamounts, habitats and breeding areas. The party says it would give regulators the discretion to allow, in the case of unanticipated effects, the reduction of regulations where evidence demonstrates a lower risk.
+
+Sources: ['Unlocking Mineral and Energy Wealth' (PDF), 8 October 2026 (accessed 08 October 2026)](documents/pdf-unlocking-mineral-and-energy-wealth.md) ([original](https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386)); [Unlocking Mineral Wealth](documents/unlocking-mineral-wealth.md) ([original](https://www.act.org.nz/unlocking-mineral-wealth)); ['Unlocking Mineral and Energy Wealth' (PDF), 8 October 2026 (accessed 08 October 2026)](https:/assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386)
+
+#### Keep agriculture as a subject in the Year 11 curriculum (POL55233)
+
+_Updated on policy.nz, seen 28 October 2026: sources._
+
+**Why** (*policy.nz*): This party says that its leader was disappointed that the Minister of Education confirmed that Agricultural and Horticultural Science won't remain as a standalone subject in the Year 11 Science curriculum. It says that 63% of the over 100,000 students who took the subject last year were from urban schools and argues that students should have access to a subject tailored to building knowledge in agriculture, a major export industry.
+
+**How** (*policy.nz*): This party would keep Agricultural and Horticultural Science as a standalone subject in Year 11.
+
+Sources: ['Keep agriculture in the curriculum', 9 October 2026 (accessed 09 October 2026)](documents/news-keep-agriculture-in-the-curriculum.md) ([original](https://www.act.org.nz/news/keep-agriculture-in-the-curriculum)); [Make Farming Fun Again](documents/make-farming-fun-again.md) ([original](https://www.act.org.nz/make-farming-fun-again)); [ACT’s Plan to Make Farming Fun Again](documents/pdf-acts-plan-to-make-farming-fun-again.md) ([original](https://assets.nationbuilder.com/actnz/pages/37460/attachments/original/1789711573/ACT's_plan_to_Make_Farming_Fun_Again.pdf?1789711573)); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
+
+<!-- GENERATED:policy-updates END -->
+
 ## Headline commitments
 
 policy.nz flags these as ACT's **key policies**:

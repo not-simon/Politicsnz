@@ -798,14 +798,15 @@
   "id": "POL54753",
   "statement": "Support a social media ban for under-16s to go through to select committee",
   "topics": [
-   "te-ao-maori",
    "community-and-inclusion",
-   "media-culture-and-recreation",
    "economy",
-   "wellbeing-and-services",
    "young-people",
    "key-policies-media-culture-and-recreation",
-   "internet-and-digital-technologies"
+   "internet-and-digital-technologies",
+   "health",
+   "education",
+   "mental-health",
+   "schools"
   ],
   "primary_group": "media-culture-and-recreation",
   "summary": {
@@ -826,6 +827,28 @@
     "url": "https://www.labour.org.nz/safer-online",
     "added_by_archive": true,
     "document": "documents/safer-online.md"
+   },
+   {
+    "title": "'Getting kids off screens and back to being kids', 18 October 2026 (accessed 19 October 2026)",
+    "url": "https://www.labour.org.nz/news/release-getting-kids-off-screens-and-back-to-being-kids",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/save/https://www.labour.org.nz/news/release-getting-kids-off-screens-and-back-to-being-kids/"
+   },
+   {
+    "title": "'Keeping kids off screens' (PDF), undated (accessed 19 October 2026)",
+    "url": "https://www.labour.org.nz/kids-off-screens",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261018233303/https://www.labour.org.nz/kids-off-screens"
+   }
+  ],
+  "policy_nz_updated": "2026-10-28",
+  "changes": [
+   {
+    "date": "2026-10-28",
+    "fields": [
+     "topics",
+     "sources"
+    ]
    }
   ]
  },
@@ -978,6 +1001,21 @@
     "url": "https://www.labour.org.nz/graduate-nurse-job-guarantee",
     "added_by_archive": true,
     "document": "documents/graduate-nurse-job-guarantee.md"
+   },
+   {
+    "title": "'Labour will get emergency departments moving', 20 October 2026 (accessed 21 October 2026)",
+    "url": "https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261020201247/https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving/"
+   }
+  ],
+  "policy_nz_updated": "2026-10-28",
+  "changes": [
+   {
+    "date": "2026-10-28",
+    "fields": [
+     "sources"
+    ]
    }
   ]
  },
@@ -2816,7 +2854,10 @@
    "internet-and-digital-technologies",
    "young-people",
    "artificial-intelligence-ai",
-   "key-policies-education"
+   "key-policies-education",
+   "health",
+   "mental-health",
+   "schools"
   ],
   "primary_group": "media-culture-and-recreation",
   "summary": {
@@ -2855,6 +2896,15 @@
     "url": "https://www.labour.org.nz/news/release-getting-kids-off-screens-and-back-to-being-kids/",
     "cited_by_policy_nz_as": "https://web.archive.org/save/https://www.labour.org.nz/news/release-getting-kids-off-screens-and-back-to-being-kids/",
     "document": "documents/release-getting-kids-off-screens-and-back-to-being-kids.md"
+   }
+  ],
+  "policy_nz_updated": "2026-10-28",
+  "changes": [
+   {
+    "date": "2026-10-28",
+    "fields": [
+     "topics"
+    ]
    }
   ]
  },
@@ -4176,5 +4226,190 @@
    }
   ],
   "notes": "A Labour MP's member's bill."
+ },
+ {
+  "id": "POL55324",
+  "statement": "Review the wait time and deaths linked to hospital emergency department",
+  "topics": [
+   "health",
+   "health-funding-and-workforce",
+   "public-health"
+  ],
+  "primary_group": "health",
+  "summary": {
+   "why": "This party says that patients are waiting too long, emergency departments are overcrowded, and nurses and doctors are under enormous pressure. Delays in ED are often due to a lack of beds in hospital wards and staffing issues.",
+   "how": "This party would order an immediate review of hospital wait times and bed shortages, and also the safety issues linked to emergency departments. This party believes that the pressure on EDs can be reduced and more hospital beds can be opened up with action at hospital and community level. Its wider health plan includes adding more nurses, funding three free GP visits annually, and training more extended-care paramedics to treat people at home."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour will get emergency departments moving', 20 October 2026 (accessed 21 October 2026)",
+    "url": "https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261020201247/https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving/"
+   },
+   {
+    "title": "'Free Doctor's Visits with the Medicard', undated (accessed 11 August 2026)",
+    "url": "web.archive.org/web/20260810223019/https://www.labour.org.nz/medicard",
+    "cited_by": "policy.nz"
+   },
+   {
+    "title": "'Labour will guarantee a job for graduate nurses', 31 August 2026 (accessed 01 September 2026)",
+    "url": "https://www.labour.org.nz/news/release-labour-will-guarantee-a-job-for-graduate-nurses",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20260901022610/https://www.labour.org.nz/news/release-labour-will-guarantee-a-job-for-graduate-nurses/"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-10-28"
+ },
+ {
+  "id": "POL55325",
+  "statement": "Train more extended-care paramedics to treat people at home",
+  "topics": [
+   "health",
+   "health-funding-and-workforce",
+   "health-services",
+   "public-health"
+  ],
+  "primary_group": "health",
+  "summary": {
+   "why": "This party says that patients are waiting too long, emergency departments are overcrowded, and nurses and doctors are under enormous pressure. Increasing the level of community health care will help reduce pressure at hospitals.",
+   "how": "This party would train more extended-care paramedics to treat people at home and help reduce the pressure on emergency departments. Its existing policies around adding more nurses, offering three free GP visits a year will also increase the level of care at the community level and reduce the pressure on EDs."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour will get emergency departments moving', 20 October 2026 (accessed 21 October 2026)",
+    "url": "https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261020201247/https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving/"
+   },
+   {
+    "title": "'Free Doctor's Visits with the Medicard', undated (accessed 11 August 2026)",
+    "url": "web.archive.org/web/20260810223019/https://www.labour.org.nz/medicard",
+    "cited_by": "policy.nz"
+   },
+   {
+    "title": "'Labour will guarantee a job for graduate nurses', 31 August 2026 (accessed 01 September 2026)",
+    "url": "https://www.labour.org.nz/news/release-labour-will-guarantee-a-job-for-graduate-nurses",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20260901022610/https://www.labour.org.nz/news/release-labour-will-guarantee-a-job-for-graduate-nurses/"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-10-28"
+ },
+ {
+  "id": "POL55351",
+  "statement": "Fund 1000 extra teacher aides",
+  "topics": [
+   "education",
+   "schools"
+  ],
+  "primary_group": "education",
+  "summary": {
+   "why": "This party says that schools are seeing more children with complex learning needs. Teachers are doing an incredible job, but they can't do it alone. This party says that schools are struggling to find the funds for learning support.",
+   "how": "This party would fund 1,000 extra teacher aides to give more individual support for students who need it, and more help in busy classrooms. The party would also use the 2022 Highest Needs Review to help identify gaps in learning support. This policy would cost $80m over four years, which this party says would give schools more certainty and teacher aides more job security."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour to provide more help in the classroom', 22 October 2026 (accessed 23 October 2026)",
+    "url": "https://www.labour.org.nz/news/release-labour-to-provide-more-help-in-the-classroom",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261022232239/https://www.labour.org.nz/news/release-labour-to-provide-more-help-in-the-classroom/"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-10-28"
+ },
+ {
+  "id": "POL55377",
+  "statement": "Introduce a rent-to-own scheme for social and community housing tenants",
+  "topics": [
+   "housing",
+   "housing-affordability",
+   "social-and-public-housing"
+  ],
+  "primary_group": "housing",
+  "summary": {
+   "why": "This party says that state house and community housing tenants who struggle to save for a first home deposit, even when they are working, on top of their rent.",
+   "how": "This party would introduce rent-to-buy housing for eligible Kāinga Ora state house and community housing tenants who are working. Tenants would have $100 of their weekly rent placed in a trust account to accumulate towards a 5% deposit. They will also be able to access an expanded First Home Loan scheme, which enables people to obtain a mortgage with a five percent deposit. The combined income cap would be lifted to $300,000 and more banks would be brought into the scheme. This party would ensure that proceeds from public homes sold through the rent-to-buy scheme would be reinvested into more public housing."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour to help more Kiwis buy their first home', 27 October 2026 (accessed 27 October 2026)",
+    "url": "https://www.labour.org.nz/news/release-labour-to-help-more-kiwis-buy-their-first-home",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261027050904/https://www.labour.org.nz/news/release-labour-to-help-more-kiwis-buy-their-first-home/"
+   },
+   {
+    "title": "'Labour to get NZ building and Kiwis back to work', 24 September 2026 (accessed 24 September 2026)",
+    "url": "https://wayback-api.archive.org/save/https://www.labour.org.nz/news/release-labour-to-get-new-zealand-building-and-kiwis-back-to-work",
+    "cited_by": "policy.nz",
+    "archived_url": "https://wayback-api.archive.org/save/https://www.labour.org.nz/news/release-labour-to-get-new-zealand-building-and-kiwis-back-to-work/"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-10-28"
+ },
+ {
+  "id": "POL55378",
+  "statement": "Raise the income cap for the First Home Loans scheme",
+  "topics": [
+   "housing",
+   "incomes-and-employment",
+   "housing-affordability",
+   "prices"
+  ],
+  "primary_group": "housing",
+  "summary": {
+   "why": "This party says that with the cost of living being so high, people are struggling to save the deposit to buy their first home.",
+   "how": "This party would expand First Home Loans scheme to more people and keep the amount required for a deposit at five percent of the loan. The income cap for eligibility would be lifted to $300,000 per household, and more banks would be brought into the scheme. This party would also introduce rent-to-buy scheme to lower the barriers to home ownership for working state house and community housing tenants. It would put the proceeds from public homes sold through the rent-to-buy scheme into more public housing."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour to help more Kiwis buy their first home', 27 October 2026 (accessed 27 October 2026)",
+    "url": "https://www.labour.org.nz/news/release-labour-to-help-more-kiwis-buy-their-first-home",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261027050904/https://www.labour.org.nz/news/release-labour-to-help-more-kiwis-buy-their-first-home/"
+   },
+   {
+    "title": "'Capital Gains Tax', undated (accessed 13 August 2026)",
+    "url": "https://www.labour.org.nz/capitalgainstax",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20260813015413/https://www.labour.org.nz/capitalgainstax"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-10-28"
  }
 ]

@@ -2,6 +2,45 @@
 
 Every 2026 policy of Te Pāti Māori that this archive could find, with a short neutral summary (**Why** — the reason the party gives; **How** — what it would do) and links to the **full verbatim text** of the party's own documents in [`documents/`](documents/). Election day: 7 November 2026. Compiled 23 October 2026.
 
+<!-- GENERATED:policy-updates START -->
+## Changes on policy.nz since 23 October 2026
+
+This archive captured the party's policy.nz policies on 23 October 2026; policy.nz is re-checked daily by [`tools/refresh_policies.py`](../../../tools/refresh_policies.py). Nothing is deleted: a policy that is no longer on policy.nz stays in this archive marked *withdrawn*. Full texts of new sources are archived separately; until then the links go to the original pages. Where this block and the sections below differ, this block is the newer text.
+
+### New policies
+
+#### Create a Toi Māori authority to support Māori arts (POL55339)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that Māori identity cannot be separated from Māori art, so supporting Māori art is supporting Māori people. Funding the Māori arts can ensures a future where mātaurange is healthy and ubiquitous throughout New Zealand life.
+
+**How** (*policy.nz*): This party would would establish a Toi Māori Authority, which would be separate from and equal to Creative New Zealand. The authority would establish a two-year rotational programme where 1000 artists in the mātauranga space receive 30 hours of paid work a week, with a new cohort replacing them after the two years.
+
+Sources: ['Te Pāti Māori announce Toi Māori Authority and artist income programme', 12 October 2026 (accessed 15 October 2026)](https://www.scoop.co.nz/stories/PA2610/S00101/te-pati-maori-announces-toi-maori-authority-and-artist-income-programme.htm?_gl=1%2A1hm4we0%2A_gcl_au%2AMTk4NTg5NzkzNi4xNzg2NDAxNDc5%2A_ga%2AMTA2ODM2Mjg3Mi4xNzg2NDAxNDc5%2A_ga_GGVMM3MB82%2AczE3OTIwMjI5MDgkbzckZzAkdDE3OTIwMjI5MDkkajU5JGwwJGgw); [policy.nz party page](https://policy.nz/2026/party-vote/parties/te-pati-maori). Full text not yet archived.
+
+#### Invest in kōhanga Reo and kura (POL55340)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that kōhanga reo and kura are vital for regenerating te reo Māori, but many are in need of rebuilds or refurbishment and do not have the funds to do so.
+
+**How** (*policy.nz*): This party would would pass a Te Kōhanga Reo Act which would ensure kōhanga reo have an annual baseline level of funding. The party would invest $20 million in a capital fund for kōhanga reo, while $50 million would be invested in refurbishing or rebuilding kōhanga reo. The party would also invest $250 million a year over five years in kura, for much the same purposes. This party estimates that this policy would cost $1.25 billion over five years for kura, $70 million for kōhanga reo.
+
+Sources: ['Te Pāti Māori backs kohanga reo and kura with long term investment', 6 October 2026 (accessed 15 October 2026)](https://www.scoop.co.nz/stories/PA2610/S00052/te-pati-maori-backs-kohanga-reo-and-kura-with-long-term-investment.htm?_gl=1%2A1ati0d2%2A_gcl_au%2AMTk4NTg5NzkzNi4xNzg2NDAxNDc5%2A_ga%2AMTA2ODM2Mjg3Mi4xNzg2NDAxNDc5%2A_ga_GGVMM3MB82%2AczE3OTIwMjI5MDgkbzckZzEkdDE3OTIwMjM3ODckajQ3JGwwJGgw); [policy.nz party page](https://policy.nz/2026/party-vote/parties/te-pati-maori). Full text not yet archived.
+
+#### Restore Te Ahu o Te Reo Māori (POL55341)
+
+_Added on policy.nz, first seen 28 October 2026._
+
+**Why** (*policy.nz*): This party says that Te Ahu o te Reo, a programme which supported teachers in learning te Reo Māori, was cut by the National-led government. Because of the programme's importance to te reo Māori revitalisation in increasing Māori abilities across the education workforce, this party would restore it.
+
+**How** (*policy.nz*): This party would bring back and fund Te Ahu o te Reo. This party estimates that this policy would cost $30 million a year.
+
+Sources: ['Te Pāti Māori backs kohanga reo and kura with long term investment', 6 October 2026 (accessed 15 October 2026)](https://www.scoop.co.nz/stories/PA2610/S00052/te-pati-maori-backs-kohanga-reo-and-kura-with-long-term-investment.htm?_gl=1%2A1ati0d2%2A_gcl_au%2AMTk4NTg5NzkzNi4xNzg2NDAxNDc5%2A_ga%2AMTA2ODM2Mjg3Mi4xNzg2NDAxNDc5%2A_ga_GGVMM3MB82%2AczE3OTIwMjI5MDgkbzckZzEkdDE3OTIwMjM3ODckajQ3JGwwJGgw); [policy.nz party page](https://policy.nz/2026/party-vote/parties/te-pati-maori). Full text not yet archived.
+
+<!-- GENERATED:policy-updates END -->
+
 ## At a glance
 
 - **91 policies** listed: 45 from [policy.nz](https://policy.nz) (all of its 45 Te Pāti Māori statements, with its Why/How summaries) + 46 more found in the party's own releases, speeches and policy PDFs (marked *archive*; summaries written for this archive).

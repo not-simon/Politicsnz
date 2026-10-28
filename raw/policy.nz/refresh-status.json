@@ -1,37 +1,473 @@
 {
- "checked": "2026-10-27T21:58:59+13:00",
- "date": "2026-10-27",
+ "checked": "2026-10-28T22:39:20+13:00",
+ "date": "2026-10-28",
  "mode": "live",
  "requests_failed": [],
  "kept_previous": [],
  "suspect": [],
  "raw_files_changed": [
-  "electorates/henderson-electorate.json",
-  "electorates/waitaki-electorate.json"
+  "party-vote-election.json",
+  "parties/act-party.json",
+  "parties/green-party.json",
+  "parties/labour-party.json",
+  "parties/nz-first.json",
+  "parties/national-party.json",
+  "parties/opportunity-party.json",
+  "parties/te-pati-maori.json",
+  "electorates/hamilton-west-electorate.json",
+  "electorates/party-vote.json"
  ],
- "policies": {},
+ "policies": {
+  "act": {
+   "added": [
+    "POL55333",
+    "POL55347",
+    "POL55348",
+    "POL55349",
+    "POL55350",
+    "POL55353",
+    "POL55362"
+   ],
+   "changed": [
+    [
+     "POL54643",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54646",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54672",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54674",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54678",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54894",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55046",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55047",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55048",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55054",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55161",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55166",
+     [
+      "topics",
+      "sources"
+     ]
+    ],
+    [
+     "POL55193",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55220",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55221",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55222",
+     [
+      "how",
+      "sources"
+     ]
+    ],
+    [
+     "POL55223",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55224",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55233",
+     [
+      "sources"
+     ]
+    ]
+   ],
+   "withdrawn": [],
+   "reinstated": []
+  },
+  "green": {
+   "added": [
+    "POL55328",
+    "POL55329",
+    "POL55330",
+    "POL55331",
+    "POL55334",
+    "POL55335",
+    "POL55336",
+    "POL55337",
+    "POL55338",
+    "POL55370",
+    "POL55371",
+    "POL55372"
+   ],
+   "changed": [],
+   "withdrawn": [
+    "POL55281"
+   ],
+   "reinstated": []
+  },
+  "labour": {
+   "added": [
+    "POL55324",
+    "POL55325",
+    "POL55351",
+    "POL55377",
+    "POL55378"
+   ],
+   "changed": [
+    [
+     "POL54753",
+     [
+      "topics",
+      "sources"
+     ]
+    ],
+    [
+     "POL54820",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55312",
+     [
+      "topics"
+     ]
+    ]
+   ],
+   "withdrawn": [],
+   "reinstated": []
+  },
+  "national": {
+   "added": [
+    "POL55342",
+    "POL55343",
+    "POL55344",
+    "POL55345",
+    "POL55346",
+    "POL55367",
+    "POL55369"
+   ],
+   "changed": [
+    [
+     "POL54715",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54734",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54813",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54814",
+     [
+      "how",
+      "sources"
+     ]
+    ],
+    [
+     "POL54815",
+     [
+      "topics",
+      "sources"
+     ]
+    ],
+    [
+     "POL54836",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54918",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54926",
+     [
+      "how",
+      "sources"
+     ]
+    ],
+    [
+     "POL54978",
+     [
+      "how",
+      "sources"
+     ]
+    ],
+    [
+     "POL55050",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55051",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55052",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55205",
+     [
+      "statement",
+      "how",
+      "sources"
+     ]
+    ]
+   ],
+   "withdrawn": [],
+   "reinstated": []
+  },
+  "nz-first": {
+   "added": [
+    "POL55332",
+    "POL55352",
+    "POL55354",
+    "POL55355",
+    "POL55356",
+    "POL55357",
+    "POL55358",
+    "POL55359",
+    "POL55360",
+    "POL55361",
+    "POL55364",
+    "POL55365",
+    "POL55366",
+    "POL55368",
+    "POL55373",
+    "POL55374",
+    "POL55375",
+    "POL55379"
+   ],
+   "changed": [
+    [
+     "POL54662",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54746",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54755",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54757",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54759",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55057",
+     [
+      "statement",
+      "why"
+     ]
+    ],
+    [
+     "POL55076",
+     [
+      "why"
+     ]
+    ],
+    [
+     "POL55262",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55310",
+     [
+      "sources"
+     ]
+    ]
+   ],
+   "withdrawn": [],
+   "reinstated": []
+  },
+  "opportunity": {
+   "added": [
+    "POL55326",
+    "POL55327",
+    "POL55376"
+   ],
+   "changed": [
+    [
+     "POL54652",
+     [
+      "topics"
+     ]
+    ],
+    [
+     "POL54770",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54783",
+     [
+      "topics"
+     ]
+    ],
+    [
+     "POL54828",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54873",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54887",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55323",
+     [
+      "topics",
+      "sources"
+     ]
+    ]
+   ],
+   "withdrawn": [],
+   "reinstated": []
+  },
+  "te-pati-maori": {
+   "added": [
+    "POL55339",
+    "POL55340",
+    "POL55341"
+   ],
+   "changed": [],
+   "withdrawn": [],
+   "reinstated": []
+  }
+ },
  "candidates": {
   "new_or_changed": [
-   "independent/bronwyn-judge",
-   "independent/kay-luv"
+   "independent/wiremu-thomson"
   ],
   "unlisted": []
  },
  "counts": {
-  "act-party": 91,
+  "act-party": 98,
   "alliance-party": 0,
   "animal-justice-party": 0,
   "aotearoa-legalise-cannabis-party": 0,
   "conservative-party-nz": 0,
   "free-palestine": 0,
-  "green-party": 226,
-  "labour-party": 76,
-  "national-party": 126,
+  "green-party": 237,
+  "labour-party": 81,
+  "national-party": 133,
   "new-zealand-loyal": 0,
-  "nz-first": 39,
+  "nz-first": 57,
   "nz-outdoors--freedom-party": 0,
-  "opportunity-party": 56,
-  "te-pati-maori": 45,
+  "opportunity-party": 59,
+  "te-pati-maori": 48,
   "te-tai-tokerau-party": 0,
   "vision-nz": 0,
   "womens-rights-party": 0
