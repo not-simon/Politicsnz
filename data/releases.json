@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T21:28:25Z",
+ "updated": "2026-10-28T00:43:05Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,16 +126,16 @@
   }
  },
  "counts": {
-  "items": 191,
+  "items": 197,
   "per_party": {
-   "act": 30,
+   "act": 31,
    "conservative": 17,
    "free-palestine": 2,
-   "government": 30,
+   "government": 32,
    "green": 24,
    "labour": 25,
-   "national": 25,
-   "nz-first": 22,
+   "national": 26,
+   "nz-first": 24,
    "nz-loyal": 1,
    "te-pati-maori": 12,
    "womens-rights": 3
@@ -354,7 +354,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 15,
+   "items_matched_to_a_party": 14,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -382,6 +382,66 @@
   }
  ],
  "items": [
+  {
+   "party": "national",
+   "title": "Labour And Greens Must Be Clear On Coalition Plan",
+   "date": "2026-10-28T13:03+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00241/labour-and-greens-must-be-clear-on-coalition-plan.htm",
+   "summary": "National's Campaign Chair Simeon Brown says both Chloe Swarbrick and Chris Hipkins have been silent about which Green Party policies would be non-negotiable and what concessions Labour would be…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "Jeez Wayne: Winston Peters Welcomes Wayne Brown Aboard",
+   "date": "2026-10-28T12:28+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00240/jeez-wayne-winston-peters-welcomes-wayne-brown-aboard.htm",
+   "summary": "“We proposed establishing Auckland Rail to own all metropolitan rail infrastructure and passenger trains, with one board and one CEO accountable to the Mayor and Minister as equal shareholders,\" says…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "nz-first",
+   "title": "Voting Is Open, It Is Your Time To Decide The Future Of Our Country",
+   "date": "2026-10-28T12:25+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00239/voting-is-open-it-is-your-time-to-decide-the-future-of-our-country.htm",
+   "summary": "New Zealand First has increased its support since 2023 because New Zealanders know what we stand for",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "government",
+   "title": "Lower Hutt gets Crisis Recovery Café",
+   "date": "2026-10-28T11:29+13:00",
+   "url": "https://www.beehive.govt.nz/release/lower-hutt-gets-crisis-recovery-cafe",
+   "summary": "Those in need of mental health or addiction support will have another place to go with a new Crisis Recovery Café officially opening today in Lower Hutt, Mental Health Minister Matt Doocey says. “The…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "New Vanguard charter school to offer military-ethos education to Kiwi students",
+   "date": "2026-10-28T11:16+13:00",
+   "url": "https://www.beehive.govt.nz/release/new-vanguard-charter-school-offer-military-ethos-education-kiwi-students",
+   "summary": "Associate Education Minister David Seymour has today announced that Vanguard Prep School will open on the North Shore, Auckland in Term 1 next year, offering a new option for students in Years 7 to…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "act",
+   "title": "Greens Don’t Know The Biggest Cost To Households (It’s Them)",
+   "date": "2026-10-28T11:01+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00237/greens-dont-know-the-biggest-cost-to-households-its-them.htm",
+   "summary": "\"The Greens would make government bigger than it was in the middle of the pandemic. Pandemic spending was an emergency. The Greens' fiscal plan would put New Zealand’s economy in a permanent state of…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
   {
    "party": "green",
    "title": "Greens Welcome Mayor Wayne Brown’s Priorities For Auckland",
