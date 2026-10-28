@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T00:43:05Z",
+ "updated": "2026-10-28T07:20:19Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,19 +126,19 @@
   }
  },
  "counts": {
-  "items": 197,
+  "items": 203,
   "per_party": {
-   "act": 31,
+   "act": 33,
    "conservative": 17,
    "free-palestine": 2,
    "government": 32,
-   "green": 24,
-   "labour": 25,
-   "national": 26,
+   "green": 25,
+   "labour": 26,
+   "national": 27,
    "nz-first": 24,
    "nz-loyal": 1,
    "te-pati-maori": 12,
-   "womens-rights": 3
+   "womens-rights": 4
   }
  },
  "sources": [
@@ -382,6 +382,66 @@
   }
  ],
  "items": [
+  {
+   "party": "womens-rights",
+   "title": "Tomorrow Women Will Commemorate Winning Right To Stand For Parliament",
+   "date": "2026-10-28T17:12+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2610/S00191/tomorrow-women-will-commemorate-winning-right-to-stand-for-parliament.htm",
+   "summary": "In 1919, a campaign led by Ellen Melville for women to be able to stand for Parliament was finally achieved when the Women's Parliamentary Rights Act was passed.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Women's Rights Party"
+  },
+  {
+   "party": "act",
+   "title": "Labour's Rental Rules Would Leave More Kiwis Locked Out",
+   "date": "2026-10-28T15:58+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00246/labours-rental-rules-would-leave-more-kiwis-locked-out.htm",
+   "summary": "“Labour's answer to the housing crisis is always more rules. ACT's answer is more homes, lower costs, and a rental market that works for landlords and tenants alike. Renters deserve a fair deal and…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "green",
+   "title": "Luxon’s Lack Of Plan Leaves RBNZ Nervous To Act",
+   "date": "2026-10-28T14:47+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00245/luxons-lack-of-plan-leaves-rbnz-nervous-to-act.htm",
+   "summary": "\"New Zealanders deserve a Government who will put its hands on the wheel of the economy and drive us towards real prosperity. That means a plan for and investment in electrification, creating jobs…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "labour",
+   "title": "Labour Will Make Renting Fairer And More Secure",
+   "date": "2026-10-28T14:44+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00244/labour-will-make-renting-fairer-and-more-secure.htm",
+   "summary": "“Everyone deserves a place to call home. If you pay your rent and look after your home, you should have the security of knowing you can stay there,” Labour Leader Chris Hipkins said.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "national",
+   "title": "National’s Plan Is Working But Economy Not Out Of The Woods Yet",
+   "date": "2026-10-28T14:41+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00243/nationals-plan-is-working-but-economy-not-out-of-the-woods-yet.htm",
+   "summary": "“At 2.75 per cent, the OCR is half the rate it was under Labour. That makes a huge difference to household costs.\"",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "act",
+   "title": "Savings Progress Must Continue To Keep Rates In Check",
+   "date": "2026-10-28T14:32+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00242/savings-progress-must-continue-to-keep-rates-in-check.htm",
+   "summary": "“Government needs a party that watches spending like a hawk. Otherwise, inflation will be our future as well as our past. Taxpayers need more ACT in Government to cut more waste and grow the economy.\"",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
   {
    "party": "national",
    "title": "Labour And Greens Must Be Clear On Coalition Plan",
