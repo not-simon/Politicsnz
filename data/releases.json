@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T19:50:42Z",
+ "updated": "2026-10-29T00:21:19Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,15 +126,15 @@
   }
  },
  "counts": {
-  "items": 204,
+  "items": 209,
   "per_party": {
    "act": 33,
    "conservative": 17,
    "free-palestine": 2,
-   "government": 32,
+   "government": 36,
    "green": 25,
    "labour": 27,
-   "national": 27,
+   "national": 28,
    "nz-first": 24,
    "nz-loyal": 1,
    "te-pati-maori": 12,
@@ -354,7 +354,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 13,
+   "items_matched_to_a_party": 12,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -382,6 +382,56 @@
   }
  ],
  "items": [
+  {
+   "party": "government",
+   "title": "Gisborne’s flood protection strengthened",
+   "date": "2026-10-29T22:30+13:00",
+   "url": "https://www.beehive.govt.nz/release/gisbornes-flood-protection-strengthened",
+   "summary": "Gisborne City and 10,000ha of some of the region’s most productive land are now better protected from flooding, following the completion of the Waipaoa Flood Control Scheme, Regional Development…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "RIF funds new Gisborne medical research centre",
+   "date": "2026-10-29T12:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/rif-funds-new-gisborne-medical-research-centre",
+   "summary": "A new building at Mātai Medical Research Institute will expand medical research, specialist healthcare and education opportunities in Tairāwhiti, supported by a $20 million loan from the Regional…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Opening of new Tongan detector dog facility",
+   "date": "2026-10-29T11:08+13:00",
+   "url": "https://www.beehive.govt.nz/release/opening-new-tongan-detector-dog-facility",
+   "summary": "Customs Minister Casey Costello is travelling to Tonga this evening to represent New Zealand at the official opening of the country’s second detector dog facility. “The new facility in Vava’u will…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Northland to get fourth Rural Training Hub",
+   "date": "2026-10-29T10:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/northland-get-fourth-rural-training-hub",
+   "summary": "Northland will soon have a Rural Training Hub to help grow the rural health workforce and improve access to healthcare for communities across the region, Associate Health Minister Matt Doocey…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "national",
+   "title": "The Cost Of Labour’s Four-Party Coalition",
+   "date": "2026-10-29T08:40+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2610/S00248/the-cost-of-labours-four-party-coalition.htm",
+   "summary": "The question that people should ask themselves is: what would be the cost of a Labour coalition with the Greens, Te Pāti Māori and Opportunity?",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
   {
    "party": "labour",
    "title": "National Lines Up Thousands More Jobs Cuts",
