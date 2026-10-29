@@ -5,10 +5,50 @@
     <link>https://not-simon.github.io/Politicsnz/#/about/changes</link>
     <description>New and changed 2026 election policies and candidates (from policy.nz), new opinion polls and party press releases, as picked up by Ballot Book NZ, an independent, non-partisan guide to the 7 November 2026 New Zealand general election. Every item links to its source.</description>
     <language>en-nz</language>
-    <lastBuildDate>Wed, 28 Oct 2026 22:43:07 +1300</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 23:01:19 +1300</lastBuildDate>
     <ttl>720</ttl>
     <generator>tools/changelog.py</generator>
     <atom:link href="https://not-simon.github.io/Politicsnz/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New poll: RNZ–Reid Research, 26 Oct 2026</title>
+      <link>https://not-simon.github.io/Politicsnz/#/seats/polls</link>
+      <guid isPermaLink="false">ballotbook:poll-added:-:2026-10-26|RNZ–Reid Research</guid>
+      <pubDate>Thu, 29 Oct 2026 23:01:16 +1300</pubDate>
+      <category>poll-added</category>
+      <description>Fieldwork 20–26 Oct 2026, 1,000 people. Source: https://www.rnz.co.nz/news/politics_election-2026/2211553/rnz-reid-research-poll-national-below-disastrous-2020-result-as-opportunity-surges</description>
+    </item>
+    <item>
+      <title>Labour: press release — Labour’s Plan To Lower Bills And Build A Better New Zealand</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/news/labour</link>
+      <guid isPermaLink="false">ballotbook:release:labour:https://www.scoop.co.nz/stories/PA2610/S00252/labours-plan-to-lower-bills-and-build-a-better-new-zealand.htm</guid>
+      <pubDate>Thu, 29 Oct 2026 15:33:00 +1300</pubDate>
+      <category>release</category>
+      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2610/S00252/labours-plan-to-lower-bills-and-build-a-better-new-zealand.htm</description>
+    </item>
+    <item>
+      <title>ACT: press release — Greens' Borrowing Bonanza Built On Financial Ignorance</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/news/act</link>
+      <guid isPermaLink="false">ballotbook:release:act:https://www.scoop.co.nz/stories/PA2610/S00251/greens-borrowing-bonanza-built-on-financial-ignorance.htm</guid>
+      <pubDate>Thu, 29 Oct 2026 14:50:00 +1300</pubDate>
+      <category>release</category>
+      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2610/S00251/greens-borrowing-bonanza-built-on-financial-ignorance.htm</description>
+    </item>
+    <item>
+      <title>National: press release — The Cost Of Labour’s Four-Party Coalition</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/news/national</link>
+      <guid isPermaLink="false">ballotbook:release:national:https://www.scoop.co.nz/stories/PA2610/S00248/the-cost-of-labours-four-party-coalition.htm</guid>
+      <pubDate>Thu, 29 Oct 2026 08:40:00 +1300</pubDate>
+      <category>release</category>
+      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2610/S00248/the-cost-of-labours-four-party-coalition.htm</description>
+    </item>
+    <item>
+      <title>Labour: press release — National Lines Up Thousands More Jobs Cuts</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/news/labour</link>
+      <guid isPermaLink="false">ballotbook:release:labour:https://www.scoop.co.nz/stories/PA2610/S00247/national-lines-up-thousands-more-jobs-cuts.htm</guid>
+      <pubDate>Thu, 29 Oct 2026 08:29:00 +1300</pubDate>
+      <category>release</category>
+      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2610/S00247/national-lines-up-thousands-more-jobs-cuts.htm</description>
+    </item>
     <item>
       <title>New poll: 1 News–Verian, 25 Oct 2026</title>
       <link>https://not-simon.github.io/Politicsnz/#/seats/polls</link>
@@ -368,46 +408,6 @@
       <pubDate>Wed, 28 Oct 2026 22:43:05 +1300</pubDate>
       <category>policy-changed</category>
       <description>Sources updated. Source: https://www.act.org.nz/rural-crime</description>
-    </item>
-    <item>
-      <title>ACT: policy updated — Expand domestic energy production</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/act/policies</link>
-      <guid isPermaLink="false">ballotbook:policy-changed:act:POL55222:2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 22:43:05 +1300</pubDate>
-      <category>policy-changed</category>
-      <description>Summary updated; sources updated. Source: https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386</description>
-    </item>
-    <item>
-      <title>ACT: policy updated — Establish a statutory body to ensure compensation for investors in mineral extraction</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/act/policies</link>
-      <guid isPermaLink="false">ballotbook:policy-changed:act:POL55220:2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 22:43:05 +1300</pubDate>
-      <category>policy-changed</category>
-      <description>Sources updated. Source: https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386</description>
-    </item>
-    <item>
-      <title>ACT: policy updated — Ensure agriculture is not included in emission reduction programmes</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/act/policies</link>
-      <guid isPermaLink="false">ballotbook:policy-changed:act:POL55054:2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 22:43:05 +1300</pubDate>
-      <category>policy-changed</category>
-      <description>Sources updated. Source: https://www.act.org.nz/news/act-will-make-farming-fun-again</description>
-    </item>
-    <item>
-      <title>ACT: policy updated — Create a set of national mineral extractions standards</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/act/policies</link>
-      <guid isPermaLink="false">ballotbook:policy-changed:act:POL55221:2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 22:43:05 +1300</pubDate>
-      <category>policy-changed</category>
-      <description>Sources updated. Source: https://assets.nationbuilder.com/actnz/pages/38384/attachments/original/1791257386/Unlocking_Mineral_and_Energy_Wealth.pdf?1791257386</description>
-    </item>
-    <item>
-      <title>ACT: policy updated — Commission Parliament to explore a deal with Meta for young people on social media</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/act/policies</link>
-      <guid isPermaLink="false">ballotbook:policy-changed:act:POL55166:2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 22:43:05 +1300</pubDate>
-      <category>policy-changed</category>
-      <description>Sources updated. Source: https://www.act.org.nz/news/landmark-social-media-settlement-shows-better-way-forward</description>
     </item>
   </channel>
 </rss>
