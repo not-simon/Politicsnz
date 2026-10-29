@@ -1,7 +1,7 @@
 {
  "title": "Opinion polls (party vote) for the 2026 New Zealand general election, since the 14 Oct 2023 election",
  "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
- "retrieved": "2026-10-28",
+ "retrieved": "2026-10-29",
  "parties": {
   "NAT": "national",
   "LAB": "labour",
@@ -12,8 +12,27 @@
   "OPP": "opportunity"
  },
  "notes": "Percentages as published (decided voters; undecided excluded by every pollster). 'end_date' is the sort date used by Wikipedia (last fieldwork day or release date). Rows are newest first. 'others' = combined minor parties where listed. 'pollster_key' groups series that changed name; 'internal' marks party/corporate-client polls that are published selectively. Poll sources: each row's source_url as linked on Wikipedia. Refreshed by tools/polls_update.py.",
- "count": 130,
+ "count": 131,
  "polls": [
+  {
+   "date": "20–26 Oct 2026",
+   "end_date": "2026-10-26",
+   "pollster": "RNZ–Reid Research",
+   "source_url": "https://www.rnz.co.nz/news/politics_election-2026/2211553/rnz-reid-research-poll-national-below-disastrous-2020-result-as-opportunity-surges",
+   "sample_size": 1000,
+   "results": {
+    "national": 24.8,
+    "labour": 30.6,
+    "green": 14.5,
+    "act": 10.1,
+    "nz-first": 9.9,
+    "te-pati-maori": 1.9,
+    "opportunity": 7.2
+   },
+   "others": 0.9,
+   "pollster_key": "RNZ–Reid Research",
+   "internal": false
+  },
   {
    "date": "21–25 Oct 2026",
    "end_date": "2026-10-25",
@@ -2484,11 +2503,6 @@
    "end_date": "2026-10-26"
   },
   {
-   "date": "23 Oct 2026",
-   "event": "Tāmaki Makaurau electorate candidate Kerrin Leoni resigns from the Labour Party.",
-   "end_date": "2026-10-23"
-  },
-  {
    "date": "12 Aug 2026",
    "event": "Prime Minister and National Party leader Christopher Luxon survives a second party leadership vote .",
    "end_date": "2026-08-12"
@@ -2579,7 +2593,7 @@
    "end_date": "2023-11-27"
   }
  ],
- "source_revid": 1382442932,
+ "source_revid": 1382543112,
  "pollsters": {
   "1 News–Verian": {
    "commissioner": "TVNZ 1News",
@@ -2594,7 +2608,7 @@
    "fieldwork_company": "Reid Research",
    "method": "Online panel + telephone, n≈1,000, ±3.1 pts",
    "type": "public-media",
-   "n_polls": 8
+   "n_polls": 9
   },
   "Taxpayers' Union–Curia": {
    "commissioner": "New Zealand Taxpayers' Union (advocacy group)",
