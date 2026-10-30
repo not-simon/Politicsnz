@@ -2593,7 +2593,7 @@
    "end_date": "2023-11-27"
   }
  ],
- "source_revid": 1382585469,
+ "source_revid": 1382795683,
  "pollsters": {
   "1 News–Verian": {
    "commissioner": "TVNZ 1News",
@@ -3006,6 +3006,38 @@
     "act": 5.0,
     "nz-first": 5.0,
     "opportunity": 3.0
+   }
+  },
+  {
+   "electorate": "Wellington North",
+   "date": "15–18 Oct 2026",
+   "end_date": "2026-10-18",
+   "pollster": "Victor Consulting",
+   "sample_size": 541,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "green": 25.6,
+    "labour": 31.5,
+    "national": 12.8,
+    "opportunity": 13.1,
+    "act": 5.7,
+    "nz-first": 4.2,
+    "te-pati-maori": 0.7
+   }
+  },
+  {
+   "electorate": "Wellington North",
+   "date": "15–18 Oct 2026",
+   "end_date": "2026-10-18",
+   "pollster": "Victor Consulting",
+   "sample_size": 541,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "green": 35.3,
+    "labour": 32.6,
+    "national": 16.0
    }
   },
   {
