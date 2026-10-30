@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T02:53:05Z",
+ "updated": "2026-10-30T16:49:05Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,7 +126,7 @@
   }
  },
  "counts": {
-  "items": 221,
+  "items": 220,
   "per_party": {
    "act": 36,
    "conservative": 17,
@@ -136,7 +136,6 @@
    "labour": 30,
    "national": 31,
    "nz-first": 24,
-   "nz-loyal": 1,
    "te-pati-maori": 12,
    "womens-rights": 4
   }
@@ -2581,16 +2580,6 @@
    "source": "Scoop",
    "ministerial": false,
    "byline": "Te Pati Maori"
-  },
-  {
-   "party": "nz-loyal",
-   "title": "Alex Hislop Announced As West Coast-Tasman Candidate",
-   "date": "2026-08-31T11:04+12:00",
-   "url": "https://www.scoop.co.nz/stories/PO2608/S00215/alex-hislop-announced-as-west-coast-tasman-candidate.htm",
-   "summary": "Alex is the first of many talented candidates who will be announced by NZ Loyal in the coming weeks.",
-   "source": "Scoop",
-   "ministerial": false,
-   "byline": "NZ Loyal"
   }
  ]
 }
