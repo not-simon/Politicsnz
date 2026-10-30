@@ -1,11 +1,11 @@
 {
  "title": "Poll-of-polls and seat forecast: 2026 New Zealand general election",
- "generated": "2026-10-29",
- "as_of": "2026-10-29",
+ "generated": "2026-10-30",
+ "as_of": "2026-10-30",
  "election_date": "2026-11-07",
- "days_to_election": 9,
+ "days_to_election": 8,
  "polls_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
- "polls_retrieved": "2026-10-29",
+ "polls_retrieved": "2026-10-30",
  "n_polls_this_term": 131,
  "n_polls_last_120_days": 23,
  "latest_poll_date": "2026-10-26",
@@ -59,7 +59,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 2.68,
     "aggregate_se": 0.61,
-    "drift_sd_to_election": 0.35,
+    "drift_sd_to_election": 0.33,
     "total_sd": 2.77
    },
    "n_polls_last_120_days": 23,
@@ -122,7 +122,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 2.65,
     "aggregate_se": 0.51,
-    "drift_sd_to_election": 0.43,
+    "drift_sd_to_election": 0.4,
     "total_sd": 2.73
    },
    "n_polls_last_120_days": 23,
@@ -182,7 +182,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 2.12,
     "aggregate_se": 0.43,
-    "drift_sd_to_election": 0.33,
+    "drift_sd_to_election": 0.31,
     "total_sd": 2.19
    },
    "n_polls_last_120_days": 23,
@@ -240,7 +240,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 1.82,
     "aggregate_se": 0.43,
-    "drift_sd_to_election": 0.33,
+    "drift_sd_to_election": 0.31,
     "total_sd": 1.9
    },
    "n_polls_last_120_days": 23,
@@ -297,8 +297,8 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 1.8,
     "aggregate_se": 0.38,
-    "drift_sd_to_election": 0.23,
-    "total_sd": 1.86
+    "drift_sd_to_election": 0.22,
+    "total_sd": 1.85
    },
    "n_polls_last_120_days": 23,
    "seats_mean": 12.5,
@@ -353,7 +353,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 0.73,
     "aggregate_se": 0.18,
-    "drift_sd_to_election": 0.21,
+    "drift_sd_to_election": 0.2,
     "total_sd": 0.78
    },
    "n_polls_last_120_days": 23,
@@ -403,7 +403,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 1.47,
     "aggregate_se": 0.34,
-    "drift_sd_to_election": 0.18,
+    "drift_sd_to_election": 0.17,
     "total_sd": 1.52
    },
    "n_polls_last_120_days": 23,
@@ -477,8 +477,8 @@
     "57": 8,
     "58": 9,
     "59": 9,
-    "60": 10,
-    "61": 8,
+    "60": 9,
+    "61": 9,
     "62": 8,
     "63": 6,
     "64": 5,
@@ -723,7 +723,7 @@
     "40": 4,
     "41": 5,
     "42": 7,
-    "43": 8,
+    "43": 9,
     "44": 10,
     "45": 11,
     "46": 10,
@@ -2360,7 +2360,7 @@
    "opportunity": 6.5
   },
   {
-   "week_ending": "2026-10-29",
+   "week_ending": "2026-10-30",
    "national": 28.1,
    "labour": 27.2,
    "green": 14.9,
