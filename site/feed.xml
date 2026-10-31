@@ -5,10 +5,18 @@
     <link>https://not-simon.github.io/Politicsnz/#/about/changes</link>
     <description>New and changed 2026 election policies and candidates (from policy.nz), new opinion polls and party press releases, as picked up by Ballot Book NZ, an independent, non-partisan guide to the 7 November 2026 New Zealand general election. Every item links to its source.</description>
     <language>en-nz</language>
-    <lastBuildDate>Fri, 30 Oct 2026 23:04:00 +1300</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 22:41:58 +1300</lastBuildDate>
     <ttl>720</ttl>
     <generator>tools/changelog.py</generator>
     <atom:link href="https://not-simon.github.io/Politicsnz/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ACT: press release — Three Strikes Here To Stay</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/news/act</link>
+      <guid isPermaLink="false">ballotbook:release:act:https://www.scoop.co.nz/stories/PA2610/S00263/three-strikes-here-to-stay.htm</guid>
+      <pubDate>Sat, 31 Oct 2026 14:13:00 +1300</pubDate>
+      <category>release</category>
+      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2610/S00263/three-strikes-here-to-stay.htm</description>
+    </item>
     <item>
       <title>National: press release — Greens Confirm National’s Warnings On Tax</title>
       <link>https://not-simon.github.io/Politicsnz/#/parties/news/national</link>
@@ -400,14 +408,6 @@
       <pubDate>Wed, 28 Oct 2026 22:43:05 +1300</pubDate>
       <category>policy-changed</category>
       <description>Sources updated. Source: https://assets.nationbuilder.com/actnz/pages/37031/attachments/original/1788642905/Scrap_Net_Zero_policy_09.pdf?1788642905</description>
-    </item>
-    <item>
-      <title>ACT: policy updated — Remove the "six months" caveat for assisted dying</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/act/policies</link>
-      <guid isPermaLink="false">ballotbook:policy-changed:act:POL55161:2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 22:43:05 +1300</pubDate>
-      <category>policy-changed</category>
-      <description>Sources updated. Source: https://www.act.org.nz/strengthening-end-of-life-choice</description>
     </item>
   </channel>
 </rss>
