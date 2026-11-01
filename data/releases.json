@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T09:39:29Z",
+ "updated": "2026-11-01T20:47:59Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,12 +126,12 @@
   }
  },
  "counts": {
-  "items": 224,
+  "items": 225,
   "per_party": {
    "act": 38,
    "conservative": 17,
    "free-palestine": 2,
-   "government": 39,
+   "government": 40,
    "green": 27,
    "labour": 31,
    "national": 31,
@@ -353,7 +353,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 13,
+   "items_matched_to_a_party": 12,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -381,6 +381,16 @@
   }
  ],
  "items": [
+  {
+   "party": "government",
+   "title": "Green light for Rotorua business park intersection",
+   "date": "2026-11-02T08:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/green-light-rotorua-business-park-intersection",
+   "summary": "A $3.46 million grant from the Regional Infrastructure Fund will provide safer access to Rotorua’s Eastgate Business Park from State Highway 30, Regional Development Minister Shane Jones and…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
   {
    "party": "labour",
    "title": "Labour's Next Finance Minister Ready To Deliver For Kiwis",
