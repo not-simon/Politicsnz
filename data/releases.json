@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T02:31:32Z",
+ "updated": "2026-11-01T09:39:29Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,14 +126,14 @@
   }
  },
  "counts": {
-  "items": 222,
+  "items": 224,
   "per_party": {
-   "act": 37,
+   "act": 38,
    "conservative": 17,
    "free-palestine": 2,
    "government": 39,
    "green": 27,
-   "labour": 30,
+   "labour": 31,
    "national": 31,
    "nz-first": 24,
    "te-pati-maori": 11,
@@ -327,7 +327,7 @@
    "source": "Scoop",
    "feed_url": "https://info.scoop.co.nz/Free_Palestine_Party",
    "feed_type": "html-infopage (no per-organisation RSS exists)",
-   "status": "error: HTTP 503 (kept previously stored items)",
+   "status": "ok",
    "items_in_feed": 3,
    "newsroom_url": "https://palfree.nz/",
    "newsroom_verified": true,
@@ -353,7 +353,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 12,
+   "items_matched_to_a_party": 13,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -381,6 +381,26 @@
   }
  ],
  "items": [
+  {
+   "party": "labour",
+   "title": "Labour's Next Finance Minister Ready To Deliver For Kiwis",
+   "date": "2026-11-01T17:29+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00003/labours-next-finance-minister-ready-to-deliver-for-kiwis.htm",
+   "summary": "“From day one, my job is to make sure the money is there to deliver for Kiwis, and that the numbers add up,” Barbara Edmonds said.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "act",
+   "title": "David Seymour Address On ACT's Equal Rights Policy - One Law For All, One Future Together",
+   "date": "2026-11-01T16:51+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00002/david-seymour-address-on-acts-equal-rights-policy-one-law-for-all-one-future-together.htm",
+   "summary": "ACT will make the Government smaller and more accountable, reducing it to 18 Ministers and 19 departments, with clear responsibility for spending and results, says David Seymour.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
   {
    "party": "government",
    "title": "RIF grant to support energy resilience in Far North",
