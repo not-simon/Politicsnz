@@ -1,8 +1,8 @@
 {
  "_about": "What changed: new and changed policies and candidates (policy.nz), new polls and party releases, newest first. Built by tools/changelog.py; last 60 days. Release entries are headline + link only. `_snapshot` is the state the next run compares against (not published to the site).",
- "updated": "2026-10-31T22:41:55+13:00",
+ "updated": "2026-11-01T23:31:23+13:00",
  "window_days": 60,
- "policy_nz_checked": "2026-10-31T22:38:04+13:00",
+ "policy_nz_checked": "2026-11-01T23:27:35+13:00",
  "policy_nz_failures": 0,
  "counts": {
   "candidate-changed": 2,
@@ -10,10 +10,34 @@
   "policy-changed": 48,
   "policy-withdrawn": 1,
   "poll-added": 14,
-  "release": 180,
+  "release": 181,
   "site": 1
  },
  "entries": [
+  {
+   "id": "release:labour:https://www.scoop.co.nz/stories/PA2611/S00003/labours-next-finance-minister-ready-to-deliver-for-kiwis.htm",
+   "date": "2026-11-01",
+   "kind": "release",
+   "party": "labour",
+   "title": "Labour's Next Finance Minister Ready To Deliver For Kiwis",
+   "summary": "",
+   "url": "#/parties/news/labour",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00003/labours-next-finance-minister-ready-to-deliver-for-kiwis.htm",
+   "time": "2026-11-01T17:29+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2611/S00002/david-seymour-address-on-acts-equal-rights-policy-one-law-for-all-one-future-together.htm",
+   "date": "2026-11-01",
+   "kind": "release",
+   "party": "act",
+   "title": "David Seymour Address On ACT's Equal Rights Policy - One Law For All, One Future Together",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00002/david-seymour-address-on-acts-equal-rights-policy-one-law-for-all-one-future-together.htm",
+   "time": "2026-11-01T16:51+13:00",
+   "via": "Scoop"
+  },
   {
    "id": "release:act:https://www.scoop.co.nz/stories/PA2610/S00263/three-strikes-here-to-stay.htm",
    "date": "2026-10-31",
@@ -3598,22 +3622,10 @@
    "url": "#/seats/polls",
    "source": "https://www.taxpayers.org.nz/sept26_pollnztughjkuhn?",
    "poll_date": "2026-09-03"
-  },
-  {
-   "id": "release:te-pati-maori:https://www.scoop.co.nz/stories/PA2609/S00008/te-pati-maori-launches-te-tiriti-entrenchment-policy.htm",
-   "date": "2026-09-01",
-   "kind": "release",
-   "party": "te-pati-maori",
-   "title": "Te Pāti Māori Launches Te Tiriti Entrenchment Policy",
-   "summary": "",
-   "url": "#/parties/news/te-pati-maori",
-   "source": "https://www.scoop.co.nz/stories/PA2609/S00008/te-pati-maori-launches-te-tiriti-entrenchment-policy.htm",
-   "time": "2026-09-01T12:47+12:00",
-   "via": "Scoop"
   }
  ],
  "_snapshot": {
-  "taken": "2026-10-31T22:41:55+13:00",
+  "taken": "2026-11-01T23:31:23+13:00",
   "policies": {
    "act": {
     "POL54642": {
@@ -17331,7 +17343,6 @@
    "2026-10-26|RNZ–Reid Research"
   ],
   "releases": [
-   "https://www.scoop.co.nz/stories/PA2609/S00008/te-pati-maori-launches-te-tiriti-entrenchment-policy.htm",
    "https://www.scoop.co.nz/stories/PA2609/S00152/governments-last-act-is-another-attack-on-te-tiriti.htm",
    "https://www.scoop.co.nz/stories/PA2609/S00161/we-want-cheaper-power-and-we-want-our-people-to-own-it.htm",
    "https://www.scoop.co.nz/stories/PA2609/S00211/te-pati-maori-launches-kai-sovereignty-policy.htm",
@@ -17489,6 +17500,8 @@
    "https://www.scoop.co.nz/stories/PA2610/S00261/new-research-exposes-supermarket-break-up-gamble.htm",
    "https://www.scoop.co.nz/stories/PA2610/S00262/greens-confirm-nationals-warnings-on-tax.htm",
    "https://www.scoop.co.nz/stories/PA2610/S00263/three-strikes-here-to-stay.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00002/david-seymour-address-on-acts-equal-rights-policy-one-law-for-all-one-future-together.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00003/labours-next-finance-minister-ready-to-deliver-for-kiwis.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00028/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00108/a-win-for-free-speech-helen-houghton-challenges-extremist-label-and-secures-public-apology.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00118/historic-flag-raising-commemorates-womens-suffrage.htm",
