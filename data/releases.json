@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T22:47:00Z",
+ "updated": "2026-11-01T02:31:32Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,12 +126,12 @@
   }
  },
  "counts": {
-  "items": 221,
+  "items": 222,
   "per_party": {
    "act": 37,
    "conservative": 17,
    "free-palestine": 2,
-   "government": 38,
+   "government": 39,
    "green": 27,
    "labour": 30,
    "national": 31,
@@ -327,7 +327,7 @@
    "source": "Scoop",
    "feed_url": "https://info.scoop.co.nz/Free_Palestine_Party",
    "feed_type": "html-infopage (no per-organisation RSS exists)",
-   "status": "ok",
+   "status": "error: HTTP 503 (kept previously stored items)",
    "items_in_feed": 3,
    "newsroom_url": "https://palfree.nz/",
    "newsroom_verified": true,
@@ -381,6 +381,16 @@
   }
  ],
  "items": [
+  {
+   "party": "government",
+   "title": "RIF grant to support energy resilience in Far North",
+   "date": "2026-11-01T14:23+13:00",
+   "url": "https://www.beehive.govt.nz/release/rif-grant-support-energy-resilience-far-north",
+   "summary": "A grant of $1.11 million from the Regional Infrastructure Fund will support a Māori-led initiative to install solar power, battery storage and back-up generators in community facilities in the Far…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
   {
    "party": "government",
    "title": "Christchurch commuter rail pilot to be funded",
