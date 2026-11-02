@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T20:47:59Z",
+ "updated": "2026-11-02T01:00:14Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,12 +126,12 @@
   }
  },
  "counts": {
-  "items": 225,
+  "items": 230,
   "per_party": {
-   "act": 38,
+   "act": 40,
    "conservative": 17,
    "free-palestine": 2,
-   "government": 40,
+   "government": 43,
    "green": 27,
    "labour": 31,
    "national": 31,
@@ -381,6 +381,56 @@
   }
  ],
  "items": [
+  {
+   "party": "government",
+   "title": "Government support for Turner Centre upgrade",
+   "date": "2026-11-02T13:46+13:00",
+   "url": "https://www.beehive.govt.nz/release/government-support-turner-centre-upgrade",
+   "summary": "A Regional Infrastructure Fund grant will be used to modernise Kerikeri’s Turner Centre, helping the Far North town play host to more cultural, community and business events, Regional Development…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "act",
+   "title": "Agriculture Stays In The Curriculum Thanks To Strong Advocacy",
+   "date": "2026-11-02T12:42+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00006/agriculture-stays-in-the-curriculum-thanks-to-strong-advocacy.htm",
+   "summary": "“The strong advocacy from rural principals, teachers and the primary sector has made a real difference, and ACT is proud to have stood alongside them all the way. This is a common sense outcome,\"…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "government",
+   "title": "Year 11 Agriculture and Horticultural Science subject announced",
+   "date": "2026-11-02T12:01+13:00",
+   "url": "https://www.beehive.govt.nz/release/year-11-agriculture-and-horticultural-science-subject-announced",
+   "summary": "Students will be able to study Agriculture and Horticultural Science from Year 11, creating a clear pathway into Years 12 and 13 and future careers in New Zealand's primary industries, Education…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Rockpool pillagers face infringements soon",
+   "date": "2026-11-02T10:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/rockpool-pillagers-face-infringements-soon",
+   "summary": "People who break new rules aimed at protecting rockpools in and around Auckland and Coromandel will face infringement fees from this month, Oceans and Fisheries Minister Shane Jones says. “Last month…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "act",
+   "title": "ACT Will Cut The Cost Of Government To Cut The Cost Of Living",
+   "date": "2026-11-02T09:37+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00004/act-will-cut-the-cost-of-government-to-cut-the-cost-of-living.htm",
+   "summary": "“ACT has a fully costed plan to save $22 billion over four years, balance the books sooner with no new taxes, and reduce debt by $12.4 billion compared with current forecasts by 2031.\"",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
   {
    "party": "government",
    "title": "Green light for Rotorua business park intersection",
