@@ -34,6 +34,12 @@ Sources: [National Party candidate profile](https://www.national.org.nz/team/bla
 
 - **Electorate:** Nelson
 - **List ranking:** 41
+- **Before politics:** World Bank Consultant
+- **Age:** 35
+- **Public email:** blair.cameron@national.org.nz
+- **Website:** https://www.national.org.nz/team/blaircameron
+- **Facebook:** https://www.facebook.com/BlairCameronNelson/
+- **Instagram:** https://www.instagram.com/bc.kiwi
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/national-party), retrieved Oct 2026._
 <!-- GENERATED:2026-candidacy END -->

@@ -5,27 +5,27 @@
    {
     "attributes": [
      {
-      "_key": "5r5sFjSBWMIetVQk4N4SiG",
+      "_key": "qYwqdjLMEwpIXYm6FlLMsQ",
       "name": "Why I'm standing",
       "value": "I'm standing because New Zealand needs leadership that is collaborative, practical, and evidence-based: leadership that builds a stronger, fairer country for the next generation. I am tired of the two main parties managing decline and see Opportunity as the circuit breaker for common ground and focused problem-solving."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N4SnU",
+      "_key": "qYwqdjLMEwpIXYm6FlLMuK",
       "name": "About me",
       "value": "I am a mother, and I expect New Zealand to be offering a better future for our young people. Running a small business, working in social services, conservation and as a local government board member have provided me with experience of the realities our communities face, and that needs to be taken into Parliament and decision-making."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N4Ssi",
+      "_key": "qYwqdjLMEwpIXYm6FlLMwE",
       "name": "Priority 1",
       "value": "Innovation: to build the next economy with pragmatic reform."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N4Sxw",
+      "_key": "qYwqdjLMEwpIXYm6FlLMy8",
       "name": "Priority 2",
       "value": "Nature: to protect and restore the natural world."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N4T3A",
+      "_key": "qYwqdjLMEwpIXYm6FlLN02",
       "name": "Priority 3",
       "value": "Unity: to fix politics by working across common ground, fixing lobbying and donations."
      }
@@ -95,27 +95,27 @@
    {
     "attributes": [
      {
-      "_key": "5r5sFjSBWMIetVQk4N4S2S",
+      "_key": "qYwqdjLMEwpIXYm6FlLMdC",
       "name": "Why I'm standing",
       "value": "I am standing for Parliament because I believe New Plymouth deserves an active, visible MP who will fight for the region's future."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N4S7g",
+      "_key": "qYwqdjLMEwpIXYm6FlLMf6",
       "name": "About me",
       "value": "As a former lawyer with a background in science, education and local government, I am known for tackling complex challenges and bringing people together to deliver practical solutions. In two terms on the New Plymouth District Council, I worked on issues that matter to local people – housing, climate action, strong public services, and building an economy that will support the next generation."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N4SCu",
+      "_key": "qYwqdjLMEwpIXYm6FlLMh0",
       "name": "Priority 1",
       "value": "Take tangible action to reduce the cost of living pressure, and ensure affordable housing."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N4SI8",
+      "_key": "qYwqdjLMEwpIXYm6FlLMiu",
       "name": "Priority 2",
       "value": "Ensure jobs are supported - and created in new areas - as existing industries change"
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N4SNM",
+      "_key": "qYwqdjLMEwpIXYm6FlLMko",
       "name": "Priority 3",
       "value": "Fighting for well-functioning healthcare, removing as many barriers to access as possible"
      }
@@ -185,34 +185,6 @@
    {
     "attributes": [],
     "party": {
-     "name": "Independent"
-    },
-    "person": {
-     "attributes": [],
-     "firstName": "Rusty",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/fba13ffa85af897bcd15050678a5827424a54380-1024x1024.jpg",
-     "lastName": "Kane",
-     "party": {
-      "name": "Independent Taranaki",
-      "slug": "independent-taranaki"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the New Plymouth electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": null,
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recehZNFeFGr5BtDd",
-       "_type": "reference"
-      }
-     },
-     "slug": "rusty-kane"
-    },
-    "policies": []
-   },
-   {
-    "attributes": [],
-    "party": {
      "name": "National Party"
     },
     "person": {
@@ -237,15 +209,43 @@
      "slug": "david-macleod"
     },
     "policies": []
+   },
+   {
+    "attributes": [],
+    "party": {
+     "name": "Independent"
+    },
+    "person": {
+     "attributes": [],
+     "firstName": "Rusty",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/fba13ffa85af897bcd15050678a5827424a54380-1024x1024.jpg",
+     "lastName": "Kane",
+     "party": {
+      "name": "Independent Taranaki",
+      "slug": "independent-taranaki"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the New Plymouth electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": null,
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recehZNFeFGr5BtDd",
+       "_type": "reference"
+      }
+     },
+     "slug": "rusty-kane"
+    },
+    "policies": []
    }
   ],
   "candidatesList": [
    "sarah-lucas",
    "amanda-clinton-gohdes",
-   "rusty-kane",
-   "david-macleod"
+   "david-macleod",
+   "rusty-kane"
   ],
-  "description": "New Plymouth covers much of the area around Mount Taranaki, including New Plymouth, Ōpunake, and Egmont Village. The electorate is held by National’s David MacLeod, who was first elected in 2023 with a margin of 22,483 votes. National also won the party vote with 42% of the vote, followed by Labour with 24%. The electorate has the highest number of employed miners in the country, with 2.6% of the population in the mining industry compared to 0.2% nationally. ",
+  "description": "New Plymouth covers much of the area around Mount Taranaki, including New Plymouth, Ōpunake, and Egmont Village. The electorate is held by National’s David MacLeod, who was first elected in 2023 with 22,483 votes. National also won the party vote with 42% of the vote, followed by Labour with 24%. The electorate has the highest number of employed miners in the country, with 2.6% of the population in the mining industry compared to 0.2% nationally. ",
   "format": "candidate",
   "parties": null,
   "partiesList": null,
@@ -372,6 +372,7 @@
    "regional-development",
    "fresh-water-and-pollution",
    "energy",
+   "mental-health",
    "te-reo-maori-and-culture",
    "superannuation-and-savings",
    "oil-gas-and-mining",
@@ -385,28 +386,27 @@
    "fisheries",
    "oceans",
    "waste-management",
+   "trades-and-vocational-education",
    "seniors",
    "trade-and-exports",
    "arts-culture-and-heritage",
    "social-and-public-housing",
    "key-policies-housing",
    "early-childhood-education",
-   "mental-health",
+   "defence-and-veterans",
+   "key-policies-defence-and-foreign-affairs",
    "rail-transport",
-   "trades-and-vocational-education",
-   "housing-quality",
    "wellbeing-and-services",
    "forestry",
    "artificial-intelligence-ai",
    "broadcasting-and-media",
-   "key-policies-defence-and-foreign-affairs",
    "foreign-investment",
    "rainbow-community",
    "construction",
    "disability",
    "renting",
-   "alcohol-and-drugs",
-   "defence-and-veterans"
+   "housing-quality",
+   "alcohol-and-drugs"
   ],
   "type": {
    "description": "",
@@ -1039,6 +1039,7 @@
     "regional-development",
     "fresh-water-and-pollution",
     "energy",
+    "mental-health",
     "te-reo-maori-and-culture",
     "superannuation-and-savings",
     "oil-gas-and-mining",
@@ -1052,28 +1053,27 @@
     "fisheries",
     "oceans",
     "waste-management",
+    "trades-and-vocational-education",
     "seniors",
     "trade-and-exports",
     "arts-culture-and-heritage",
     "social-and-public-housing",
     "key-policies-housing",
     "early-childhood-education",
-    "mental-health",
+    "defence-and-veterans",
+    "key-policies-defence-and-foreign-affairs",
     "rail-transport",
-    "trades-and-vocational-education",
-    "housing-quality",
     "wellbeing-and-services",
     "forestry",
     "artificial-intelligence-ai",
     "broadcasting-and-media",
-    "key-policies-defence-and-foreign-affairs",
     "foreign-investment",
     "rainbow-community",
     "construction",
     "disability",
     "renting",
-    "alcohol-and-drugs",
-    "defence-and-veterans"
+    "housing-quality",
+    "alcohol-and-drugs"
    ]
   },
   "slug": "2026"

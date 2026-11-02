@@ -1,14 +1,179 @@
 {
- "checked": "2026-11-01T23:27:35+13:00",
- "date": "2026-11-01",
+ "checked": "2026-11-03T00:04:18+13:00",
+ "date": "2026-11-03",
  "mode": "live",
  "requests_failed": [],
  "kept_previous": [],
  "suspect": [],
- "raw_files_changed": [],
- "policies": {},
+ "raw_files_changed": [
+  "party-vote-election.json",
+  "parties/act-party.json",
+  "parties/green-party.json",
+  "parties/labour-party.json",
+  "parties/nz-first.json",
+  "parties/national-party.json",
+  "parties/opportunity-party.json",
+  "electorates/auckland-central-electorate.json",
+  "electorates/banks-peninsula-electorate.json",
+  "electorates/botany-electorate.json",
+  "electorates/christchurch-east-electorate.json",
+  "electorates/coromandel-electorate.json",
+  "electorates/dunedin-electorate.json",
+  "electorates/east-cape-electorate.json",
+  "electorates/east-coast-bays-electorate.json",
+  "electorates/epsom-electorate.json",
+  "electorates/hamilton-east-electorate.json",
+  "electorates/hamilton-west-electorate.json",
+  "electorates/hauraki-waikato-electorate.json",
+  "electorates/hutt-south-electorate.json",
+  "electorates/ilam-electorate.json",
+  "electorates/invercargill-electorate.json",
+  "electorates/kaikoura-electorate.json",
+  "electorates/kaipara-ki-mahurangi-electorate.json",
+  "electorates/kenepuru-electorate.json",
+  "electorates/manurewa-electorate.json",
+  "electorates/maungakiekie-electorate.json",
+  "electorates/mt-albert-electorate.json",
+  "electorates/mt-maunganui-electorate.json",
+  "electorates/mt-roskill-electorate.json",
+  "electorates/mangere-electorate.json",
+  "electorates/napier-electorate.json",
+  "electorates/nelson-electorate.json",
+  "electorates/new-plymouth-electorate.json",
+  "electorates/north-shore-electorate.json",
+  "electorates/northcote-electorate.json",
+  "electorates/northland-electorate.json",
+  "electorates/pakuranga-electorate.json",
+  "electorates/palmerston-north-electorate.json",
+  "electorates/papakura-electorate.json",
+  "electorates/party-vote.json",
+  "electorates/rangitata-electorate.json",
+  "electorates/rangitikei-electorate.json",
+  "electorates/remutaka-electorate.json",
+  "electorates/rotorua-electorate.json",
+  "electorates/selwyn-electorate.json",
+  "electorates/southland-electorate.json",
+  "electorates/takanini-electorate.json",
+  "electorates/taranaki-king-country-electorate.json",
+  "electorates/taupo-electorate.json",
+  "electorates/tauranga-electorate.json",
+  "electorates/te-tai-hauauru-electorate.json",
+  "electorates/tukituki-electorate.json",
+  "electorates/tamaki-makaurau-electorate.json",
+  "electorates/tamaki-electorate.json",
+  "electorates/upper-harbour-electorate.json",
+  "electorates/waiariki-electorate.json",
+  "electorates/waikato-electorate.json",
+  "electorates/waimakariri-electorate.json",
+  "electorates/wairarapa-electorate.json",
+  "electorates/waitaki-electorate.json",
+  "electorates/waitakere-electorate.json",
+  "electorates/wellington-bays-electorate.json",
+  "electorates/wellington-north-electorate.json",
+  "electorates/west-coast-tasman-electorate.json",
+  "electorates/whanganui-electorate.json",
+  "electorates/whangarei-electorate.json",
+  "electorates/wigram-electorate.json",
+  "electorates/otahuhu-electorate.json"
+ ],
+ "policies": {
+  "labour": {
+   "added": [
+    "POL55384",
+    "POL55385",
+    "POL55393",
+    "POL55394",
+    "POL55395",
+    "POL55396",
+    "POL55397",
+    "POL55398",
+    "POL55399",
+    "POL55400",
+    "POL55401",
+    "POL55402",
+    "POL55403",
+    "POL55404",
+    "POL55405",
+    "POL55406",
+    "POL55407",
+    "POL55408",
+    "POL55409",
+    "POL55411"
+   ],
+   "changed": [
+    [
+     "POL54717",
+     [
+      "why",
+      "how",
+      "topics",
+      "sources"
+     ]
+    ],
+    [
+     "POL54889",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL54970",
+     [
+      "topics"
+     ]
+    ],
+    [
+     "POL55151",
+     [
+      "sources"
+     ]
+    ],
+    [
+     "POL55377",
+     [
+      "topics"
+     ]
+    ]
+   ],
+   "withdrawn": [],
+   "reinstated": []
+  },
+  "nz-first": {
+   "added": [
+    "POL55380",
+    "POL55381",
+    "POL55382",
+    "POL55383",
+    "POL55386",
+    "POL55387",
+    "POL55388",
+    "POL55389",
+    "POL55390",
+    "POL55391",
+    "POL55392"
+   ],
+   "changed": [
+    [
+     "POL55310",
+     [
+      "sources"
+     ]
+    ]
+   ],
+   "withdrawn": [],
+   "reinstated": []
+  }
+ },
  "candidates": {
-  "new_or_changed": [],
+  "new_or_changed": [
+   "green/shreejan-pandey",
+   "independent/grant-seton",
+   "money-free-party/richard-francis-osmaston",
+   "national/blair-cameron",
+   "national/jonathan-pitts",
+   "national/ryan-hamilton",
+   "national/scott-simpson"
+  ],
   "unlisted": []
  },
  "counts": {
@@ -19,10 +184,10 @@
   "conservative-party-nz": 0,
   "free-palestine": 0,
   "green-party": 237,
-  "labour-party": 81,
+  "labour-party": 101,
   "national-party": 133,
   "new-zealand-loyal": 0,
-  "nz-first": 57,
+  "nz-first": 68,
   "nz-outdoors--freedom-party": 0,
   "opportunity-party": 59,
   "te-pati-maori": 48,

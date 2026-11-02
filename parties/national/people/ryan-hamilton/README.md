@@ -52,6 +52,11 @@ Backbench MP for Hamilton East since 2023. He sits on the Finance and Expenditur
 
 - **Electorate:** Hamilton East
 - **List ranking:** 36
+- **Before politics:** Hamillton City Councillor
+- **Age:** 47
+- **Public email:** ryan.hamilton@national.org.nz
+- **Website:** https://urldefense.com/v3/__https://www.national.org.nz/team/ryanhamilton__;!!Asq5-8xVch3Reg!tW8JqEG4_rbcfN3_LVenrSib3EKTUXWIwSjveJsiZPIadloqB7O3iNfuWIa-eHVcTnWDrl70BdUsEPjWiogIlycaIEjVne-3FfeJLc_Lsg$
+- **Facebook:** https://www.facebook.com/Hamilton4HamiltonEast?mibextid=wwXIfr&rdid=dqkgxQqTaeos6K5e&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Dsrab5Enq%2F%3Fmibextid%3DwwXIfr#
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/national-party), retrieved Oct 2026._
 <!-- GENERATED:2026-candidacy END -->

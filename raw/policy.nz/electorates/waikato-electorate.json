@@ -5,27 +5,27 @@
    {
     "attributes": [
      {
-      "_key": "227mFCOl8uclHuS5roWg0V",
+      "_key": "5qodKiwOBcGQHqqFNmtHP8",
       "name": "Why I'm standing",
       "value": "Rural communities matter to me. Everyone deserves a voice."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWg3K",
+      "_key": "5qodKiwOBcGQHqqFNmtHR8",
       "name": "About me",
       "value": "My parents eloped to Waitoa back in the late 1940s, raising 13 children. My father worked at the dairy factory. We moved to Hamilton in the 60s and grew up attending Catholic schools."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWg69",
+      "_key": "5qodKiwOBcGQHqqFNmtHT8",
       "name": "Priority 1",
       "value": "Be a voice for rural communities."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWg8y",
+      "_key": "5qodKiwOBcGQHqqFNmtHV8",
       "name": "Priority 2",
       "value": "Ensure there is access to health and essential providers."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWgBn",
+      "_key": "5qodKiwOBcGQHqqFNmtHX8",
       "name": "Priority 3",
       "value": "Employment opportunities, education and affordable housing."
      }
@@ -85,27 +85,27 @@
    {
     "attributes": [
      {
-      "_key": "227mFCOl8uclHuS5roWfjZ",
+      "_key": "5qodKiwOBcGQHqqFNmtHD8",
       "name": "Why I'm standing",
       "value": "I am asking you to give your party vote to ACT. I want more ACT MPs who will fight to cut waste and grow the country, balance the books with no new taxes, defend equal rights, deliver better public services, cut red tape, and restore real consequences for crime. In our electorate, I'm asking you to choose whichever electorate candidate you believe will best represent the area and give your party vote to ACT."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWfmO",
+      "_key": "5qodKiwOBcGQHqqFNmtHF8",
       "name": "About me",
       "value": "I'm putting NZ ahead of personal ambition. I'm not asking you to elect me as your local MP. I'm asking you to give your party vote to ACT to Lock Labour Out and unlock New Zealand's potential. It means keeping the coalition Government in power, but ensuring that it can go further and faster on the issues that matter most to you. A party vote for ACT will re-elect the Government and make it stronger."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWfpD",
+      "_key": "5qodKiwOBcGQHqqFNmtHH8",
       "name": "Priority 1",
       "value": "Grow the economy to balance the books with no new taxes so incomes rise faster than living costs."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWfs2",
+      "_key": "5qodKiwOBcGQHqqFNmtHJ8",
       "name": "Priority 2",
       "value": "Deliver better services for taxpayers: education, police, and match Australia on medicines funding."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWfur",
+      "_key": "5qodKiwOBcGQHqqFNmtHL8",
       "name": "Priority 3",
       "value": "Make decisions based on need, not race, and with one law for all and one future together."
      }
@@ -154,62 +154,6 @@
       }
      },
      "slug": "ash-parmar"
-    },
-    "policies": []
-   },
-   {
-    "attributes": [],
-    "party": {
-     "name": "NZ First"
-    },
-    "person": {
-     "attributes": [],
-     "firstName": "Robert John",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/203a2110a66439167bb107382c19204c8164c4c4-1024x1024.jpg",
-     "lastName": "COOKSON",
-     "party": {
-      "name": "NZ First",
-      "slug": "nz-first"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the Waikato electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": null,
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recfLpcv7I0gKUsQJ",
-       "_type": "reference"
-      }
-     },
-     "slug": "robert-john-cookson"
-    },
-    "policies": []
-   },
-   {
-    "attributes": [],
-    "party": {
-     "name": "Independent"
-    },
-    "person": {
-     "attributes": [],
-     "firstName": "Turi Te Kamonga",
-     "image": null,
-     "lastName": "Robinson",
-     "party": {
-      "name": "Independent",
-      "slug": "independent"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the Waikato electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": null,
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recFlrFwZ5cWyWhjX",
-       "_type": "reference"
-      }
-     },
-     "slug": "turi-te-kamonga-robinson"
     },
     "policies": []
    },
@@ -268,17 +212,73 @@
      "slug": "tim-van-de-molen"
     },
     "policies": []
+   },
+   {
+    "attributes": [],
+    "party": {
+     "name": "Independent"
+    },
+    "person": {
+     "attributes": [],
+     "firstName": "Turi Te Kamonga",
+     "image": null,
+     "lastName": "Robinson",
+     "party": {
+      "name": "Independent",
+      "slug": "independent"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the Waikato electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": null,
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recFlrFwZ5cWyWhjX",
+       "_type": "reference"
+      }
+     },
+     "slug": "turi-te-kamonga-robinson"
+    },
+    "policies": []
+   },
+   {
+    "attributes": [],
+    "party": {
+     "name": "NZ First"
+    },
+    "person": {
+     "attributes": [],
+     "firstName": "Robert John",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/203a2110a66439167bb107382c19204c8164c4c4-1024x1024.jpg",
+     "lastName": "COOKSON",
+     "party": {
+      "name": "NZ First",
+      "slug": "nz-first"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the Waikato electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": null,
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recfLpcv7I0gKUsQJ",
+       "_type": "reference"
+      }
+     },
+     "slug": "robert-john-cookson"
+    },
+    "policies": []
    }
   ],
   "candidatesList": [
    "jamie-toko",
    "ash-parmar",
-   "robert-john-cookson",
-   "turi-te-kamonga-robinson",
    "brendan-richard-whyte",
-   "tim-van-de-molen"
+   "tim-van-de-molen",
+   "turi-te-kamonga-robinson",
+   "robert-john-cookson"
   ],
-  "description": "Waikato covers much of the area between Tauranga and Hamilton, including communities such as Morrinsville, Matamata, and Huntly. The seat is held by National’s Tim van de Molen, who was first elected in 2017 and was re-elected in 2023 with a margin of 27,335. National won the party vote in 2023 with 50%, followed by Labour on 18%. The seat boasted the odd distinction of being the birthplace of both 2020 Labour and National leaders Jacinda Ardern and Judith Collins, though neither ran in the electorate. \n\n\n",
+  "description": "Waikato covers much of the area between Tauranga and Hamilton, including communities such as Morrinsville, Matamata, and Huntly. The seat is held by National’s Tim van de Molen, who was first elected in 2017 and was re-elected in 2023 with 27,335 votes. National won the party vote in 2023 with 50%, followed by Labour on 18%. The seat boasted the odd distinction of being the birthplace of both 2020 Labour and National leaders Jacinda Ardern and Judith Collins, though neither ran in the electorate. ",
   "format": "candidate",
   "parties": null,
   "partiesList": null,
@@ -405,6 +405,7 @@
    "regional-development",
    "fresh-water-and-pollution",
    "energy",
+   "mental-health",
    "te-reo-maori-and-culture",
    "superannuation-and-savings",
    "oil-gas-and-mining",
@@ -418,28 +419,27 @@
    "fisheries",
    "oceans",
    "waste-management",
+   "trades-and-vocational-education",
    "seniors",
    "trade-and-exports",
    "arts-culture-and-heritage",
    "social-and-public-housing",
    "key-policies-housing",
    "early-childhood-education",
-   "mental-health",
+   "defence-and-veterans",
+   "key-policies-defence-and-foreign-affairs",
    "rail-transport",
-   "trades-and-vocational-education",
-   "housing-quality",
    "wellbeing-and-services",
    "forestry",
    "artificial-intelligence-ai",
    "broadcasting-and-media",
-   "key-policies-defence-and-foreign-affairs",
    "foreign-investment",
    "rainbow-community",
    "construction",
    "disability",
    "renting",
-   "alcohol-and-drugs",
-   "defence-and-veterans"
+   "housing-quality",
+   "alcohol-and-drugs"
   ],
   "type": {
    "description": "",
@@ -1072,6 +1072,7 @@
     "regional-development",
     "fresh-water-and-pollution",
     "energy",
+    "mental-health",
     "te-reo-maori-and-culture",
     "superannuation-and-savings",
     "oil-gas-and-mining",
@@ -1085,28 +1086,27 @@
     "fisheries",
     "oceans",
     "waste-management",
+    "trades-and-vocational-education",
     "seniors",
     "trade-and-exports",
     "arts-culture-and-heritage",
     "social-and-public-housing",
     "key-policies-housing",
     "early-childhood-education",
-    "mental-health",
+    "defence-and-veterans",
+    "key-policies-defence-and-foreign-affairs",
     "rail-transport",
-    "trades-and-vocational-education",
-    "housing-quality",
     "wellbeing-and-services",
     "forestry",
     "artificial-intelligence-ai",
     "broadcasting-and-media",
-    "key-policies-defence-and-foreign-affairs",
     "foreign-investment",
     "rainbow-community",
     "construction",
     "disability",
     "renting",
-    "alcohol-and-drugs",
-    "defence-and-veterans"
+    "housing-quality",
+    "alcohol-and-drugs"
    ]
   },
   "slug": "2026"

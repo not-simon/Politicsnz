@@ -5,27 +5,27 @@
    {
     "attributes": [
      {
-      "_key": "5r5sFjSBWMIetVQk4N5BNw",
+      "_key": "5qodKiwOBcGQHqqFNmt7p8",
       "name": "Why I'm standing",
       "value": "I'm running to serve. People here deserve someone who puts them first — not slogans, not a party script. Housing, traffic, rates and whether families can get ahead are not talking points to me; they are the job. I'll listen hard, tell the truth about trade-offs, and fight for practical results."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N5BTA",
+      "_key": "5qodKiwOBcGQHqqFNmt7r8",
       "name": "About me",
       "value": "I'll make a good representative because I put service first and treat every New Zealander as equal before the law. My work with Hobson's Pledge was about that principle in practice: one standard of citizenship, not race-based privilege. I listen, I say the hard thing when it's true, and I measure success by results people can feel. I'll stay close to the community, honest about trade-offs, and keep working until the job is done."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N5BYO",
+      "_key": "5qodKiwOBcGQHqqFNmt7t8",
       "name": "Priority 1",
       "value": "Defend one law for all so every New Zealander has equal rights, not race rules."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N5Bdc",
+      "_key": "5qodKiwOBcGQHqqFNmt7v8",
       "name": "Priority 2",
       "value": "Rebuild strong families so our young people stay off crime, gangs and despair."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N5Biq",
+      "_key": "5qodKiwOBcGQHqqFNmt7x8",
       "name": "Priority 3",
       "value": "Protect kids with truth and order so schools and streets stay safe for families."
      }
@@ -100,27 +100,27 @@
    {
     "attributes": [
      {
-      "_key": "5r5sFjSBWMIetVQk4N5BtI",
+      "_key": "5qodKiwOBcGQHqqFNmt818",
       "name": "Why I'm standing",
       "value": "I am running because I want Takanini to have a strong local voice in Parliament. As a small-business owner, I understand the pressures families and businesses face around the cost of living, healthcare and reliable infrastructure. I want to listen to our communities, advocate for solutions and help build a fairer future in which everyone has the opportunity to succeed."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N5ByW",
+      "_key": "5qodKiwOBcGQHqqFNmt838",
       "name": "About me",
       "value": "As a long-standing business owner, I understand the importance of listening to people and solving problems. This experience has also given me a strong understanding of the everyday pressures facing families, workers and small businesses. I will bring that practical perspective to Parliament, represent Takanini's diverse communities with respect, and work hard to ensure local concerns are heard and acted on."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N5C3k",
+      "_key": "5qodKiwOBcGQHqqFNmt858",
       "name": "Priority 1",
       "value": "To support businesses in creating more employment opportunities as our communities continue to grow."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N5C8y",
+      "_key": "5qodKiwOBcGQHqqFNmt878",
       "name": "Priority 2",
       "value": "To advocate for safer streets, stronger policing and better support for the Takanini local community."
      },
      {
-      "_key": "5r5sFjSBWMIetVQk4N5CEC",
+      "_key": "5qodKiwOBcGQHqqFNmt898",
       "name": "Priority 3",
       "value": "To improve infrastructure and roads to reduce the daily pressure on families, workers and businesses."
      }
@@ -185,34 +185,6 @@
    {
     "attributes": [],
     "party": {
-     "name": "Animal Justice Party"
-    },
-    "person": {
-     "attributes": [],
-     "firstName": "Lynley",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/23ea5c481fecd82ff361211a58b4261764d6248a-1024x1024.jpg",
-     "lastName": "Tulloch",
-     "party": {
-      "name": "Animal Justice Party",
-      "slug": "animal-justice-party"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the Takanini electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": null,
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recNSTVpDxoCiwLBs",
-       "_type": "reference"
-      }
-     },
-     "slug": "lynley-tulloch"
-    },
-    "policies": []
-   },
-   {
-    "attributes": [],
-    "party": {
      "name": "New Zealand Loyal"
     },
     "person": {
@@ -265,16 +237,44 @@
      "slug": "rima-nakhle"
     },
     "policies": []
+   },
+   {
+    "attributes": [],
+    "party": {
+     "name": "Animal Justice Party"
+    },
+    "person": {
+     "attributes": [],
+     "firstName": "Lynley",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/23ea5c481fecd82ff361211a58b4261764d6248a-1024x1024.jpg",
+     "lastName": "Tulloch",
+     "party": {
+      "name": "Animal Justice Party",
+      "slug": "animal-justice-party"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the Takanini electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": null,
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recNSTVpDxoCiwLBs",
+       "_type": "reference"
+      }
+     },
+     "slug": "lynley-tulloch"
+    },
+    "policies": []
    }
   ],
   "candidatesList": [
    "elliot-ikilei",
    "kharag-singh",
-   "lynley-tulloch",
    "paul-nooroa-teio",
-   "rima-nakhle"
+   "rima-nakhle",
+   "lynley-tulloch"
   ],
-  "description": "Takanini covers some of Auckland’s southernmost suburbs, including Conifer Grove, Randwick Park, and Totara Heights. The electorate is held by National’s Rima Nakhle, who first won election in 2023 with a margin of 21,936. National also won a majority of the party vote with 53%, followed by Labour with 28%. The electorate is in one of New Zealand’s fastest growing areas population-wise: it was first created as an entirely new electorate in 2020, and was 17.7% over population quota in the 2026 redistributions. \n\n\n",
+  "description": "Takanini covers some of Auckland’s southernmost suburbs, including Conifer Grove, Randwick Park, and Totara Heights. The electorate is held by National’s Rima Nakhle, who first won election in 2023 with 21,936 votes. National also won a majority of the party vote with 53%, followed by Labour with 28%. The electorate is in one of New Zealand’s fastest growing areas population-wise: it was first created as an entirely new electorate in 2020, and was 17.7% over population quota in the 2026 redistributions. ",
   "format": "candidate",
   "parties": null,
   "partiesList": null,
@@ -401,6 +401,7 @@
    "regional-development",
    "fresh-water-and-pollution",
    "energy",
+   "mental-health",
    "te-reo-maori-and-culture",
    "superannuation-and-savings",
    "oil-gas-and-mining",
@@ -414,28 +415,27 @@
    "fisheries",
    "oceans",
    "waste-management",
+   "trades-and-vocational-education",
    "seniors",
    "trade-and-exports",
    "arts-culture-and-heritage",
    "social-and-public-housing",
    "key-policies-housing",
    "early-childhood-education",
-   "mental-health",
+   "defence-and-veterans",
+   "key-policies-defence-and-foreign-affairs",
    "rail-transport",
-   "trades-and-vocational-education",
-   "housing-quality",
    "wellbeing-and-services",
    "forestry",
    "artificial-intelligence-ai",
    "broadcasting-and-media",
-   "key-policies-defence-and-foreign-affairs",
    "foreign-investment",
    "rainbow-community",
    "construction",
    "disability",
    "renting",
-   "alcohol-and-drugs",
-   "defence-and-veterans"
+   "housing-quality",
+   "alcohol-and-drugs"
   ],
   "type": {
    "description": "",
@@ -1068,6 +1068,7 @@
     "regional-development",
     "fresh-water-and-pollution",
     "energy",
+    "mental-health",
     "te-reo-maori-and-culture",
     "superannuation-and-savings",
     "oil-gas-and-mining",
@@ -1081,28 +1082,27 @@
     "fisheries",
     "oceans",
     "waste-management",
+    "trades-and-vocational-education",
     "seniors",
     "trade-and-exports",
     "arts-culture-and-heritage",
     "social-and-public-housing",
     "key-policies-housing",
     "early-childhood-education",
-    "mental-health",
+    "defence-and-veterans",
+    "key-policies-defence-and-foreign-affairs",
     "rail-transport",
-    "trades-and-vocational-education",
-    "housing-quality",
     "wellbeing-and-services",
     "forestry",
     "artificial-intelligence-ai",
     "broadcasting-and-media",
-    "key-policies-defence-and-foreign-affairs",
     "foreign-investment",
     "rainbow-community",
     "construction",
     "disability",
     "renting",
-    "alcohol-and-drugs",
-    "defence-and-veterans"
+    "housing-quality",
+    "alcohol-and-drugs"
    ]
   },
   "slug": "2026"

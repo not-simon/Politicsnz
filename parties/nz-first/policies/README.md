@@ -189,6 +189,116 @@ _Added on policy.nz, first seen 28 October 2026._
 
 Sources: ['Defence, Security, and Protection of the Realm (2027-2032)' (PDF), 25 October 2026 (accessed 26 October 2026)](https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
 
+#### Invest in developing NZ's naval capabilities, learning from Ukraine (POL55380)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that Ukraine’s destruction of much of Russia’s Black Sea fleet, using uncrewed surface vessels, subsurface drones and shore-based precision fires without a conventional navy, has changed naval warfare. The party questions committing billions to legacy capital ships that are vulnerable to low-cost autonomous weapons.
+
+**How** (*policy.nz*): This party would requires an enhanced, ice-strengthened sealift fleet to complement HMNZS Canterbury. This capability would be for independent humanitarian disaster relief and to sustain South Pacific stability operations. It would structure 5,500 to 6,000 regular army personnel into a mobile, highly networked force equipped with modern protected mobility, loitering munitions, counter-drone units, and precision long-range strike. This party would establish a "National Defence Intelligence Fusion Centre" equipped with AI analytics and satellite imagery, combining military, GCSB, and NZSIS capabilities. It would establish a direct bilateral technology and tactical exchange arrangement with the Ukrainian Ministry of Defence to learn directly from Ukraine.
+
+Sources: ['Defence, Security, and Protection of the Realm (2027-2032)' (PDF), 25 October 2026 (accessed 26 October 2026)](https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Establish the a specialised New Zealand Marine Force (NZMF) (POL55381)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that NZ needs a force that bridges the gap between land and sea, which it would meet by establishing a specialised commando regiment, the New Zealand Marine Force (NZMF). The intention would be to add more protection to NZ's maritime borders.
+
+**How** (*policy.nz*): This party would establish the NZMF, which would be a commando regiment of 800 to 1,200 personnel plus reservists. The regiment would be permanently embarked aboard sealift naval vessels and would be responsible for non-compliant boarding, island security, beachhead projection and cold-weather polar operations.
+
+Sources: ['Defence, Security, and Protection of the Realm (2027-2032)' (PDF), 25 October 2026 (accessed 26 October 2026)](https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Establish a 90-day recruitment process for the Defence Force (POL55382)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that recruitment is key to the party's defence investment program, especially if the program's timeline needs to be sped up in the event of an emergency. A Ministerial Panel would outline an implementation plan within 90 days of the next government, to reduce "institutional delay".
+
+**How** (*policy.nz*): This party would intake process must move candidates from initial application to basic training within 90 days. It would end automatic disqualifications for manageable dietary preferences (e.g., veganism), minor allergies, or resolved childhood asthma. Military medical boards would give primary statutory weight to a candidate’s registered civilian GP assessment. It would create an expedited enlistment stream for New Zealanders returning from deployments in Commonwealth, NATO, EU, Pacific, Five Eyes, GCC and Ukrainian armed forces.
+
+Sources: ['Defence, Security, and Protection of the Realm (2027-2032)' (PDF), 25 October 2026 (accessed 26 October 2026)](https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Integrate defence supplies and manufacturing across Australia and NZ (POL55383)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that it rejects reliance on primary defence contractors. The party claims national survival demands a Whole-of-society Total Defence model that links defence with commercial light manufacturing, tech, composite fabrication, and logistics.
+
+**How** (*policy.nz*): This party would establish domestic war reserves of essential munitions, fuel, spare parts and medical supplies capable of sustaining operations for 6 months without foreign resupply. It would issue pre-funded contracts to domestic firms that supply precision machining, composite marine, electronics, and software so the country has the capacity to quickly shift to a wartime economy. Remove tariff, regulatory, and export barriers between Australia and NZ. Lastly, this party would prefer major procurement tendering arrangements to be allocated to European and Canadian suppliers offering local manufacturing licenses.
+
+Sources: ['Defence, Security, and Protection of the Realm (2027-2032)' (PDF), 25 October 2026 (accessed 26 October 2026)](https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Expand passenger rail operations to Hamilton and Northland (POL55386)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that rail is a neglected means of transport. Additionally, rail is already used for logistics, and passenger rail can be a straightforward addition to railways already in use. Additional tracks in Auckland could enable more passenger services and provide greater capacity and reliability for freight moving to and from the country’s largest domestic market.
+
+**How** (*policy.nz*): This party would plan passenger rail south of Avondale. Plans would also be completed for the third and fourth main lines in Auckland, ready for construction in the 2030s. It would extend the Hamilton-Auckland passenger rail contract beyond its current 2027 end date. This party would also build the Marsden Point Rail Link, to connect Auckland and Northland. This party estimates that this policy would cost $490 million.
+
+Sources: ['Ten-Point Rail Policy', undated (accessed 29 October 2026)](https://www.nzfirst.nz/ten_point_rail_policy); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Establish separate organisations to operate rail in Auckland and Wellington (POL55387)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that at present, rail and train networks are co-run by KiwiRail and relevant regional councils in Auckland and Wellington—overlapping responsibilities creating inefficiency. It says passenger rail management should be done by newly established entities called Wellington Rail and Auckland Rail, while KiwiRail should focus on rail, ferry, and property freight operations.
+
+**How** (*policy.nz*): This party would create Wellington Rail and Auckland Rail as separate organisations. Each would be co-owned by their respective local governments and the central government. These newly established companies would be responsible for metropolitan rail infrastructure and passenger trains in their respective cities. They would together share a common chair to provide a strong metropolitan rail voice in railway decisions. This would provide clear accountability for performance, investment and asset management for metropolitan rail operators and for track maintainers.
+
+Sources: ['Ten-Point Rail Policy', undated (accessed 29 October 2026)](https://www.nzfirst.nz/ten_point_rail_policy); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Remove level crossings in Auckland (POL55388)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that accidents have occurred across Auckland due to dangerous rail crossings. These crossings cannot provide adequate warning of oncoming trains and can endanger pedestrians and drivers. Accidents also cause disruption and delay.
+
+**How** (*policy.nz*): This party would work with Auckland Council to progress further level crossing removals and upgrades. The party has also committed to investing in better protection at high-risk crossings throughout the national network. This party estimates that this policy would cost $300 million.
+
+Sources: ['Ten-Point Rail Policy', undated (accessed 29 October 2026)](https://www.nzfirst.nz/ten_point_rail_policy); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Increase protections for heritage rail (POL55389)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that local railway connection and old train station buildings represent an important piece of history, both for the country and for small towns. The party cites its track record of protecting the Mataura Railway Station.
+
+**How** (*policy.nz*): This party would continue the 'rare and reasonable' discounted network access for heritage rail operators. This would be in conjunction with $500,00 of annual funding for the Rail Heritage Trust of New Zealand to restore historic railway buildings and structures. This party estimates that this policy would cost $500,000 per year.
+
+Sources: ['Ten-Point Rail Policy', undated (accessed 29 October 2026)](https://www.nzfirst.nz/ten_point_rail_policy); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Increase the capacity of Bay of Plenty's Kaimai tunnel (POL55390)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that expanded use of the Kaimai tunnel could return greater fuel savings than the proposal to electrify the golden triangle of Auckland, Hamilton and Tauranga, which are estimated at around $15 million a year. The party argues the expansion of the Kaimai tunnel would deliver better value for money than the $1.5 billion golden triangle electrification program.
+
+**How** (*policy.nz*): This party would seek to ventilate the tunnel and construct passing loops on either side, enabling more frequent freight trains through one of New Zealand’s most important freight corridors. This party estimates that this policy would cost $100 million.
+
+Sources: ['Ten-Point Rail Policy', undated (accessed 29 October 2026)](https://www.nzfirst.nz/ten_point_rail_policy); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Make the Te Huia contract permanent (POL55391)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that Te Huia passenger trains are delivering up-to-scratch services. The party believes they should have extensions to rail contract between Auckland and Hamilton and get access to Wellington contracts.
+
+**How** (*policy.nz*): This party would extend the Hamilton-Auckland passenger rail contract beyond its current 2027 end date. The party would also have Te Huia add an additional three trains to the Greater Wellington Network. This party estimates that this policy would cost $130 million.
+
+Sources: ['Ten-Point Rail Policy', undated (accessed 29 October 2026)](https://www.nzfirst.nz/ten_point_rail_policy); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
+#### Deliver current government commitments for rail and ferry maintenance and investment (POL55392)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that there's a need for reliable infrastructure that can withstand heavy trains and storms, and that fiscal cliffs have undermined rail in the past. The party also says the new ferries are needed to protect the road/rail freight connection across Cook Strait, at $2.3 billion less than the previous iReX programme.
+
+**How** (*policy.nz*): This party would deliver the 2027-2030 Rail Network Investment Programme, where more than 66 cents in every dollar would go to maintenance and renewals. The party would also deliver the two new road and rail Interislander ferries, Kupe and Cook, and their associated port infrastructure, which are under fixed-price contracts and will enter service in 2029. This party estimates that this policy would cost $2.835 billion over three years.
+
+Sources: ['Ten-Point Rail Policy', undated (accessed 29 October 2026)](https://www.nzfirst.nz/ten_point_rail_policy); [policy.nz party page](https://policy.nz/2026/party-vote/parties/nz-first). Full text not yet archived.
+
 ### Updated policies
 
 #### Survey all of NZ to look for minerals (POL54662)
@@ -277,13 +387,13 @@ Sources: ['NZFirst to Scrap Accredited Working Visa Model', 11 October 2026 (acc
 
 #### Establish a 12-month trial for commuter rail in Canterbury and further south (POL55310)
 
-_Updated on policy.nz, seen 28 October 2026: sources._
+_Updated on policy.nz, seen 3 November 2026: sources._
 
 **Why** (*policy.nz*): This party says that traffic wait times are too great between Christchurch and the wider Canterbury region. The party says there are existing rail lines between Christchurch and Dunedin, which are owned by the government and should be delivering for the public.  The party wants the trial to determine a business case for permanent passenger rail.
 
 **How** (*policy.nz*): This party would commence a 12-month trial of passenger rail across Canterbury, such as Christchurch city to Rolleston and Rangiora. It would also connected Canterbury to Otago with a Christchurch-to-Dunedin service.
 
-Sources: ['NZFirst Campaign Announcement: Commuter Rail For Christchurch, Reinstate Southerner Train', 18 October 2026 (accessed 19 October 2026)](documents/2026-10-18-nzfirst-campaign-announcement-commuter-rail-for-christchurch.md) ([original](https://www.scoop.co.nz/stories/PA2610/S00155/nzfirst-campaign-announcement-commuter-rail-for-christchurch-reinstate-southerner-train.htm)); ['NZFirst Campaign Announcement: Commuter Rail for Christchurch, Reinstate Southerner Train. ', 18 October 2026 (accessed 20 October 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_commuter_rail_for_christchurch)
+Sources: ['NZFirst Campaign Announcement: Commuter Rail For Christchurch, Reinstate Southerner Train', 18 October 2026 (accessed 19 October 2026)](documents/2026-10-18-nzfirst-campaign-announcement-commuter-rail-for-christchurch.md) ([original](https://www.scoop.co.nz/stories/PA2610/S00155/nzfirst-campaign-announcement-commuter-rail-for-christchurch-reinstate-southerner-train.htm)); ['NZFirst Campaign Announcement: Commuter Rail for Christchurch, Reinstate Southerner Train. ', 18 October 2026 (accessed 20 October 2026)](https://www.nzfirst.nz/nzfirst_campaign_announcement_commuter_rail_for_christchurch); ['Ten-Point Rail Policy', undated (accessed 29 October 2026)](https://www.nzfirst.nz/ten_point_rail_policy)
 
 <!-- GENERATED:policy-updates END -->
 

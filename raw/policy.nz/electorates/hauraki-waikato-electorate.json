@@ -5,34 +5,6 @@
    {
     "attributes": [],
     "party": {
-     "name": "Labour Party"
-    },
-    "person": {
-     "attributes": [],
-     "firstName": "Kingi",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/78fb6a457779e8768f04b69f87f30cab61b90532-1024x1024.jpg",
-     "lastName": "Kiriona",
-     "party": {
-      "name": "Labour Party",
-      "slug": "labour-party"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the Hauraki-Waikato electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": "22",
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recspBJsfBBM9b93A",
-       "_type": "reference"
-      }
-     },
-     "slug": "kingi-kiriona"
-    },
-    "policies": []
-   },
-   {
-    "attributes": [],
-    "party": {
      "name": "Independent"
     },
     "person": {
@@ -55,6 +27,34 @@
       }
      },
      "slug": "neil-denby"
+    },
+    "policies": []
+   },
+   {
+    "attributes": [],
+    "party": {
+     "name": "Labour Party"
+    },
+    "person": {
+     "attributes": [],
+     "firstName": "Kingi",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/78fb6a457779e8768f04b69f87f30cab61b90532-1024x1024.jpg",
+     "lastName": "Kiriona",
+     "party": {
+      "name": "Labour Party",
+      "slug": "labour-party"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the Hauraki-Waikato electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": "22",
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recspBJsfBBM9b93A",
+       "_type": "reference"
+      }
+     },
+     "slug": "kingi-kiriona"
     },
     "policies": []
    },
@@ -88,11 +88,11 @@
    }
   ],
   "candidatesList": [
-   "kingi-kiriona",
    "neil-denby",
+   "kingi-kiriona",
    "hana-rawhiti-maipi-clarke"
   ],
-  "description": "Hauraki-Waikato is a Māori electorate currently held by Labour's Nanaia Mahuta, who won comfortably with a margin of 9,660. In 2020, Labour won the greatest share of party votes in Hauraki-Waikato – 63% to Te Pāti Māori's 12%. The seat was established in 2008 and was previously called Tainui. Mahuta held Tainui since 2002 and Hauraki-Waikato since 2008.",
+  "description": "Hauraki-Waikato electorate begins in parts of South Auckland such as Papakura, and Pukekohe. It covers much of the Waikato region from Huntly, to Hamilton City and Cambridge. The seat is currently held by Hana-Rawhiti Maipi-Clarke, the second youngest MP in New Zealand history. Running for Te Pāti Māori, Mapi-Clarke unseated long-time Labour MP Nanaia Mahuta who had held the seat since its establishment in 2008, with 12,939 votes and 32% of the party vote. \n\n",
   "format": "candidate",
   "parties": null,
   "partiesList": null,
@@ -219,6 +219,7 @@
    "regional-development",
    "fresh-water-and-pollution",
    "energy",
+   "mental-health",
    "te-reo-maori-and-culture",
    "superannuation-and-savings",
    "oil-gas-and-mining",
@@ -232,28 +233,27 @@
    "fisheries",
    "oceans",
    "waste-management",
+   "trades-and-vocational-education",
    "seniors",
    "trade-and-exports",
    "arts-culture-and-heritage",
    "social-and-public-housing",
    "key-policies-housing",
    "early-childhood-education",
-   "mental-health",
+   "defence-and-veterans",
+   "key-policies-defence-and-foreign-affairs",
    "rail-transport",
-   "trades-and-vocational-education",
-   "housing-quality",
    "wellbeing-and-services",
    "forestry",
    "artificial-intelligence-ai",
    "broadcasting-and-media",
-   "key-policies-defence-and-foreign-affairs",
    "foreign-investment",
    "rainbow-community",
    "construction",
    "disability",
    "renting",
-   "alcohol-and-drugs",
-   "defence-and-veterans"
+   "housing-quality",
+   "alcohol-and-drugs"
   ],
   "type": {
    "description": "",
@@ -886,6 +886,7 @@
     "regional-development",
     "fresh-water-and-pollution",
     "energy",
+    "mental-health",
     "te-reo-maori-and-culture",
     "superannuation-and-savings",
     "oil-gas-and-mining",
@@ -899,31 +900,30 @@
     "fisheries",
     "oceans",
     "waste-management",
+    "trades-and-vocational-education",
     "seniors",
     "trade-and-exports",
     "arts-culture-and-heritage",
     "social-and-public-housing",
     "key-policies-housing",
     "early-childhood-education",
-    "mental-health",
+    "defence-and-veterans",
+    "key-policies-defence-and-foreign-affairs",
     "rail-transport",
-    "trades-and-vocational-education",
-    "housing-quality",
     "wellbeing-and-services",
     "forestry",
     "artificial-intelligence-ai",
     "broadcasting-and-media",
-    "key-policies-defence-and-foreign-affairs",
     "foreign-investment",
     "rainbow-community",
     "construction",
     "disability",
     "renting",
-    "alcohol-and-drugs",
-    "defence-and-veterans"
+    "housing-quality",
+    "alcohol-and-drugs"
    ]
   },
   "slug": "2026"
  },
- "candidateSlug": "kingi-kiriona"
+ "candidateSlug": "neil-denby"
 }

@@ -27,6 +27,12 @@ Sources: [National Party candidate profile](https://www.national.org.nz/team/jon
 
 - **Electorate:** Wellington North
 - **List ranking:** 67
+- **Before politics:** Lawyer
+- **Age:** 47
+- **Public email:** jonathan.pitts@national.org.nz
+- **Website:** https://www.national.org.nz/team/jonathanpitts
+- **Facebook:** https://www.facebook.com/jpforwellingtonnorth
+- **Instagram:** https://www.instagram.com/jpforwellingtonnorth/
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/national-party), retrieved Oct 2026._
 <!-- GENERATED:2026-candidacy END -->

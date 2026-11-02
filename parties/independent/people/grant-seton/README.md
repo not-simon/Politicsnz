@@ -8,6 +8,10 @@
 ## 2026 candidacy
 
 - **Electorate:** Tukituki
+- **Before politics:** Technologist, Business Owner
+- **Age:** 61
+- **Website:** https://gseton.com
+- **Facebook:** https://www.facebook.com/grant.seton.for.tukituki.2026
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/independent), retrieved Oct 2026._
 <!-- GENERATED:2026-candidacy END -->

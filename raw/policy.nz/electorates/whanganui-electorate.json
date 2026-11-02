@@ -5,27 +5,27 @@
    {
     "attributes": [
      {
-      "_key": "227mFCOl8uclHuS5roWZS3",
+      "_key": "5qodKiwOBcGQHqqFNmt7L8",
       "name": "Why I'm standing",
       "value": "Whanganui (incl Ruapehu, South Taranaki and Stratford) deserves an active, engaged local MP, advocating for our region in Wellington. That is what I have been and will continue to be, should I be re-elected on 7 Nov. In order to have the health, education and social services our region deserves, we also need to re-elect a National-led Government to ensure we have a growing economy that can pay for this."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWZUs",
+      "_key": "5qodKiwOBcGQHqqFNmt7N8",
       "name": "About me",
       "value": "Born and raised in Whanganui, Candice and I live here with our three children. A wide range of international business involvement in the primary industries and animal health, food safety and manufacturing, retail and education, gives me significant real-world experience and skills. Over the last three years I have demonstrated how an active local MP delivers results for our community - school upgrades, new police station, new Patea connectivity tower, environmental funding and more."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWZXh",
+      "_key": "5qodKiwOBcGQHqqFNmt7P8",
       "name": "Priority 1",
       "value": "Ensure ongoing improvement in healthcare services - including mental, rural & provincial healthcare."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWZaW",
+      "_key": "5qodKiwOBcGQHqqFNmt7R8",
       "name": "Priority 2",
       "value": "Drive opportunities for new jobs and higher wages, ensuring investment boost continues."
      },
      {
-      "_key": "227mFCOl8uclHuS5roWZdL",
+      "_key": "5qodKiwOBcGQHqqFNmt7T8",
       "name": "Priority 3",
       "value": "Continue advocating for our rural sector, which is critical to this region. Backing our farmers!"
      }
@@ -100,28 +100,28 @@
    {
     "attributes": [],
     "party": {
-     "name": "NZ First"
+     "name": "Labour Party"
     },
     "person": {
      "attributes": [],
-     "firstName": "Harete",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/c60d2c9b00e6ba4f8a890d7ff4399e123f241e23-1024x1024.jpg",
-     "lastName": "Hipango-Brownlie",
+     "firstName": "Angela",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/30777998fbe36f3ae5a436d35988464e5d9a4ed6-1024x1024.jpg",
+     "lastName": "Roberts",
      "party": {
-      "name": "NZ First",
-      "slug": "nz-first"
+      "name": "Labour Party",
+      "slug": "labour-party"
      },
      "partyAffiliation": {
       "candidacyDescription": "Candidate for the Whanganui electorate",
       "candidacyURL": "",
       "leadershipLabel": "",
-      "listRank": null,
+      "listRank": "46",
       "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recfLpcv7I0gKUsQJ",
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recspBJsfBBM9b93A",
        "_type": "reference"
       }
      },
-     "slug": "harete-hipango-brownlie"
+     "slug": "angela-roberts"
     },
     "policies": []
    },
@@ -156,34 +156,6 @@
    {
     "attributes": [],
     "party": {
-     "name": "Labour Party"
-    },
-    "person": {
-     "attributes": [],
-     "firstName": "Angela",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/30777998fbe36f3ae5a436d35988464e5d9a4ed6-1024x1024.jpg",
-     "lastName": "Roberts",
-     "party": {
-      "name": "Labour Party",
-      "slug": "labour-party"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the Whanganui electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": "46",
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recspBJsfBBM9b93A",
-       "_type": "reference"
-      }
-     },
-     "slug": "angela-roberts"
-    },
-    "policies": []
-   },
-   {
-    "attributes": [],
-    "party": {
      "name": "Balance New Zealand"
     },
     "person": {
@@ -208,16 +180,44 @@
      "slug": "juan-charles-coffey"
     },
     "policies": []
+   },
+   {
+    "attributes": [],
+    "party": {
+     "name": "NZ First"
+    },
+    "person": {
+     "attributes": [],
+     "firstName": "Harete",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/c60d2c9b00e6ba4f8a890d7ff4399e123f241e23-1024x1024.jpg",
+     "lastName": "Hipango-Brownlie",
+     "party": {
+      "name": "NZ First",
+      "slug": "nz-first"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the Whanganui electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": null,
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recfLpcv7I0gKUsQJ",
+       "_type": "reference"
+      }
+     },
+     "slug": "harete-hipango-brownlie"
+    },
+    "policies": []
    }
   ],
   "candidatesList": [
    "carl-bates",
-   "harete-hipango-brownlie",
-   "sandra-kyle",
    "angela-roberts",
-   "juan-charles-coffey"
+   "sandra-kyle",
+   "juan-charles-coffey",
+   "harete-hipango-brownlie"
   ],
-  "description": "Whanganui covers its namesake town and the surrounding smaller towns of Hawera and Stratford while also stretching into the Rupaehu district to include Waiouru and Tongariro National Park. The seat is currently held by National’s Carl Bates, who was first elected in 2023 with a margin of 18,484. National won the party vote in 2023 with 39% of the vote, followed by Labour with 28%. The electorate has the highest proportion of the populace employed in manufacturing jobs in the country. \n\n\n",
+  "description": "Whanganui covers its namesake town and the surrounding smaller towns of Hawera and Stratford while also stretching into the Rupaehu district to include Waiouru and Tongariro National Park. The seat is currently held by National’s Carl Bates, who was first elected in 2023 with 18,484 votes. National won the party vote in 2023 with 39% of the vote, followed by Labour with 28%. The electorate has the highest proportion of the populace employed in manufacturing jobs in the country. ",
   "format": "candidate",
   "parties": null,
   "partiesList": null,
@@ -344,6 +344,7 @@
    "regional-development",
    "fresh-water-and-pollution",
    "energy",
+   "mental-health",
    "te-reo-maori-and-culture",
    "superannuation-and-savings",
    "oil-gas-and-mining",
@@ -357,28 +358,27 @@
    "fisheries",
    "oceans",
    "waste-management",
+   "trades-and-vocational-education",
    "seniors",
    "trade-and-exports",
    "arts-culture-and-heritage",
    "social-and-public-housing",
    "key-policies-housing",
    "early-childhood-education",
-   "mental-health",
+   "defence-and-veterans",
+   "key-policies-defence-and-foreign-affairs",
    "rail-transport",
-   "trades-and-vocational-education",
-   "housing-quality",
    "wellbeing-and-services",
    "forestry",
    "artificial-intelligence-ai",
    "broadcasting-and-media",
-   "key-policies-defence-and-foreign-affairs",
    "foreign-investment",
    "rainbow-community",
    "construction",
    "disability",
    "renting",
-   "alcohol-and-drugs",
-   "defence-and-veterans"
+   "housing-quality",
+   "alcohol-and-drugs"
   ],
   "type": {
    "description": "",
@@ -1011,6 +1011,7 @@
     "regional-development",
     "fresh-water-and-pollution",
     "energy",
+    "mental-health",
     "te-reo-maori-and-culture",
     "superannuation-and-savings",
     "oil-gas-and-mining",
@@ -1024,28 +1025,27 @@
     "fisheries",
     "oceans",
     "waste-management",
+    "trades-and-vocational-education",
     "seniors",
     "trade-and-exports",
     "arts-culture-and-heritage",
     "social-and-public-housing",
     "key-policies-housing",
     "early-childhood-education",
-    "mental-health",
+    "defence-and-veterans",
+    "key-policies-defence-and-foreign-affairs",
     "rail-transport",
-    "trades-and-vocational-education",
-    "housing-quality",
     "wellbeing-and-services",
     "forestry",
     "artificial-intelligence-ai",
     "broadcasting-and-media",
-    "key-policies-defence-and-foreign-affairs",
     "foreign-investment",
     "rainbow-community",
     "construction",
     "disability",
     "renting",
-    "alcohol-and-drugs",
-    "defence-and-veterans"
+    "housing-quality",
+    "alcohol-and-drugs"
    ]
   },
   "slug": "2026"

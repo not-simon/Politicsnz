@@ -1,19 +1,588 @@
 {
  "_about": "What changed: new and changed policies and candidates (policy.nz), new polls and party releases, newest first. Built by tools/changelog.py; last 60 days. Release entries are headline + link only. `_snapshot` is the state the next run compares against (not published to the site).",
- "updated": "2026-11-01T23:31:23+13:00",
+ "updated": "2026-11-03T00:08:21+13:00",
  "window_days": 60,
- "policy_nz_checked": "2026-11-01T23:27:35+13:00",
+ "policy_nz_checked": "2026-11-03T00:04:18+13:00",
  "policy_nz_failures": 0,
  "counts": {
-  "candidate-changed": 2,
-  "policy-added": 55,
-  "policy-changed": 48,
+  "candidate-changed": 9,
+  "policy-added": 86,
+  "policy-changed": 52,
   "policy-withdrawn": 1,
-  "poll-added": 14,
-  "release": 181,
+  "poll-added": 13,
+  "release": 187,
   "site": 1
  },
  "entries": [
+  {
+   "id": "policy-changed:nz-first:POL55310:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "policy-changed",
+   "party": "nz-first",
+   "title": "Establish a 12-month trial for commuter rail in Canterbury and further south",
+   "summary": "Sources updated.",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.scoop.co.nz/stories/PA2610/S00155/nzfirst-campaign-announcement-commuter-rail-for-christchurch-reinstate-southerner-train.htm",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55310"
+  },
+  {
+   "id": "policy-changed:labour:POL54889:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "policy-changed",
+   "party": "labour",
+   "title": "Remove rough sleepers from \"Move On\" bill",
+   "summary": "Sources updated.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-move-on-bill-still-punishes-the-homeless/",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL54889"
+  },
+  {
+   "id": "policy-changed:labour:POL54717:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "policy-changed",
+   "party": "labour",
+   "title": "Provide loans for people to purchase solar set-ups for their homes",
+   "summary": "Summary updated; sources updated.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/solarsaver",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL54717"
+  },
+  {
+   "id": "policy-changed:labour:POL55151:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "policy-changed",
+   "party": "labour",
+   "title": "Add at least 6000 more social housing places over the next 4 years",
+   "summary": "Sources updated.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/maori-trades-training",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55151"
+  },
+  {
+   "id": "policy-added:nz-first:POL55388",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Remove level crossings in Auckland",
+   "summary": "This party would work with Auckland Council to progress further level crossing removals and upgrades. The party has also committed to investing in better protection at high-risk crossings throughout the national network. This party…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/ten_point_rail_policy",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55388"
+  },
+  {
+   "id": "policy-added:nz-first:POL55391",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Make the Te Huia contract permanent",
+   "summary": "This party would extend the Hamilton-Auckland passenger rail contract beyond its current 2027 end date. The party would also have Te Huia add an additional three trains to the Greater Wellington Network. This party estimates that this…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/ten_point_rail_policy",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55391"
+  },
+  {
+   "id": "policy-added:nz-first:POL55380",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Invest in developing NZ's naval capabilities, learning from Ukraine",
+   "summary": "This party would requires an enhanced, ice-strengthened sealift fleet to complement HMNZS Canterbury. This capability would be for independent humanitarian disaster relief and to sustain South Pacific stability operations. It would…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55380"
+  },
+  {
+   "id": "policy-added:nz-first:POL55383",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Integrate defence supplies and manufacturing across Australia and NZ",
+   "summary": "This party would establish domestic war reserves of essential munitions, fuel, spare parts and medical supplies capable of sustaining operations for 6 months without foreign resupply. It would issue pre-funded contracts to domestic firms…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55383"
+  },
+  {
+   "id": "policy-added:nz-first:POL55390",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Increase the capacity of Bay of Plenty's Kaimai tunnel",
+   "summary": "This party would seek to ventilate the tunnel and construct passing loops on either side, enabling more frequent freight trains through one of New Zealand’s most important freight corridors. This party estimates that this policy would…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/ten_point_rail_policy",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55390"
+  },
+  {
+   "id": "policy-added:nz-first:POL55389",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Increase protections for heritage rail",
+   "summary": "This party would continue the 'rare and reasonable' discounted network access for heritage rail operators. This would be in conjunction with $500,00 of annual funding for the Rail Heritage Trust of New Zealand to restore historic railway…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/ten_point_rail_policy",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55389"
+  },
+  {
+   "id": "policy-added:nz-first:POL55386",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Expand passenger rail operations to Hamilton and Northland",
+   "summary": "This party would plan passenger rail south of Avondale. Plans would also be completed for the third and fourth main lines in Auckland, ready for construction in the 2030s. It would extend the Hamilton-Auckland passenger rail contract…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/ten_point_rail_policy",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55386"
+  },
+  {
+   "id": "policy-added:nz-first:POL55381",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Establish the a specialised New Zealand Marine Force (NZMF)",
+   "summary": "This party would establish the NZMF, which would be a commando regiment of 800 to 1,200 personnel plus reservists. The regiment would be permanently embarked aboard sealift naval vessels and would be responsible for non-compliant…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55381"
+  },
+  {
+   "id": "policy-added:nz-first:POL55387",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Establish separate organisations to operate rail in Auckland and Wellington",
+   "summary": "This party would create Wellington Rail and Auckland Rail as separate organisations. Each would be co-owned by their respective local governments and the central government. These newly established companies would be responsible for…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/ten_point_rail_policy",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55387"
+  },
+  {
+   "id": "policy-added:nz-first:POL55382",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Establish a 90-day recruitment process for the Defence Force",
+   "summary": "This party would intake process must move candidates from initial application to basic training within 90 days. It would end automatic disqualifications for manageable dietary preferences (e.g., veganism), minor allergies, or resolved…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://drive.google.com/viewerng/viewer?url=https://assets.nationbuilder.com/nzfirst/pages/14123/attachments/original/1792716954/NZ_First_Defence_Policy_2026_dtd_21_Oct_2026_14_37hrs_(1).pdf?1792716954",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55382"
+  },
+  {
+   "id": "policy-added:nz-first:POL55392",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "nz-first",
+   "title": "Deliver current government commitments for rail and ferry maintenance and investment",
+   "summary": "This party would deliver the 2027-2030 Rail Network Investment Programme, where more than 66 cents in every dollar would go to maintenance and renewals. The party would also deliver the two new road and rail Interislander ferries, Kupe…",
+   "url": "#/parties/nz-first/policies",
+   "source": "https://www.nzfirst.nz/ten_point_rail_policy",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55392"
+  },
+  {
+   "id": "policy-added:labour:POL55405",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Support a tourism plan that supports local areas and reduces carbon emissions",
+   "summary": "This party would encourage a tourism plan that reduces its environmental impact and develops a pathway towards carbon neutrality. Such a plan would support tourism that generates local jobs and benefits their communities.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55405"
+  },
+  {
+   "id": "policy-added:labour:POL55402",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Review the electricity market with the goal of structural reform",
+   "summary": "This party would begin a review of structural reform of the electricity market in its first 100 days and introduce legislation to enact reform within six months.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55402"
+  },
+  {
+   "id": "policy-added:labour:POL55406",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Reverse the tobacco tax cut",
+   "summary": "This party would legislate for a smokefree generation, and work with retailers to introduce a tobacco and vape retail licensing regime to crack down on illicit tobacco sales. It would reverse National’s tobacco tax cut and introduce a…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55406"
+  },
+  {
+   "id": "policy-added:labour:POL55409",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Restore treaty clauses taken out of legislation",
+   "summary": "This party would restore Treaty clauses in legislation so Crown decisionmakers have clear obligations. It would also strengthen Māori leadership and capability across the public service and support Māori decision-making over language…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55409"
+  },
+  {
+   "id": "policy-added:labour:POL55397",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Restore same-day enrolment",
+   "summary": "This party would restore same-day enrolment for voters wanting to enrol on the spot.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55397"
+  },
+  {
+   "id": "policy-added:labour:POL55404",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Pause curriculum changes and new qualifications for a review",
+   "summary": "This party would pause curriculum changes that have not yet been implemented for one year, giving schools breathing room and experts time to assess what should proceed. It would retain NCEA until experts have reviewed the curriculum…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55404"
+  },
+  {
+   "id": "policy-added:labour:POL55385",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Introduce a landlord duty of care to tenants",
+   "summary": "This party would introduce a landlord duty of care to address serious hazards, and require proper curtains or blinds under the Healthy Homes Standards It would also reduce unnecessary inspections triggered by insurers, reducing them to no…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-will-make-renting-fairer-and-more-secure",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55385"
+  },
+  {
+   "id": "policy-added:labour:POL55401",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Increase funding to community housing and Māori-led housing providers",
+   "summary": "This party would raise funding for community housing providers and guarantee Community Housing Funding Agency borrowing so they can built more homes and re-establish Whai Kainga Whai Oranga, a programme discontinued in 2025 which…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55401"
+  },
+  {
+   "id": "policy-added:labour:POL55396",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Improve the delivery of children's dental health",
+   "summary": "This party would improve the delivery of dental healthcare for kids to ensure all NZ children can get the care they're entitled to.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55396"
+  },
+  {
+   "id": "policy-added:labour:POL55399",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Improve homelessness data and set goals to reduce it",
+   "summary": "This party would improve data on homelessness and regular reporting which shows whether rough sleeping is reducing. It would bring government agencies, councils and frontline providers together to form a long-term plan to reduce…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55399"
+  },
+  {
+   "id": "policy-added:labour:POL55393",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Extend Kiwisaver employer contributions to workers over 65",
+   "summary": "This party would extend employer contributions to workers over 65. Other changes would include setting the default employee contribution at 4 percent, removing the minimum contribution and ensuring employer contributions continue even…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-will-strengthen-kiwisaver-for-future-generations",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55393"
+  },
+  {
+   "id": "policy-added:labour:POL55394",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Expand bowel cancer screening and melanoma prevention work",
+   "summary": "This party would expand bowel cancer screening and melanoma prevention. This is in addition to another policy for free cervical screening for everyone aged 25-69 from 1 October 2027, at a cost of $21.6m for the first full year.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-to-deliver-stronger-healthcare-and-protections-for-rainbow-communities",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55394"
+  },
+  {
+   "id": "policy-added:labour:POL55395",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Ensure Pharmac seeks out medicines proactively and is funded apolitically",
+   "summary": "This party would work across parties to agree to a long-term stable funding model for Pharmac so drug funding doesn't change with governments. It will also require Pharmac to be proactive about seeking out medicines and put the Public…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55395"
+  },
+  {
+   "id": "policy-added:labour:POL55400",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Ensure 25 percent of new public housing uses universal design",
+   "summary": "This party would ensure 25% of new public housing uses universal design, so it can be used by anyone. It would also ensure that Kainga Ora's regular renovations programme considers accessibility options, and that it considers a wider…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55400"
+  },
+  {
+   "id": "policy-added:labour:POL55407",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "End the minimum wage exemption for disabled workers",
+   "summary": "This party would end the Minimum Wage Exemption which allows disabled workers to be paid below the minimum wage. It would work towards systemic change so disabled people can transition into open employment, and end annual benefit renewals…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55407"
+  },
+  {
+   "id": "policy-added:labour:POL55408",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "End good character sentencing discounts for child sex offenders",
+   "summary": "This party would support ending good-character sentencing discounts for child sexual offenders.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55408"
+  },
+  {
+   "id": "policy-added:labour:POL55403",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "End charter schools",
+   "summary": "This party would end the charter school model so no new charter schools can be established. It would work with existing charter schools on a case-by-case basis to transition them into the state system, special character or alternative…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55403"
+  },
+  {
+   "id": "policy-added:labour:POL55398",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Conduct a stock-take of hospital beds and services",
+   "summary": "This party would staff EDs with more nurses and and order an independent report of deaths, quality and safety in EDs. It would start winter planning immediately rather than waiting for demand to increase carry out a nationwide stock take…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55398"
+  },
+  {
+   "id": "policy-added:labour:POL55384",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Ban no-cause evictions and increase the number of days' notice landlords must give in certain situations",
+   "summary": "This party would ban no-cause evictions, requiring landlords to give a valid reason for ending a tenancy. It would also increase the number of days' notice that tenants must receive if a landlord wants to move in or change the use of the…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-will-make-renting-fairer-and-more-secure",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55384"
+  },
+  {
+   "id": "policy-added:labour:POL55411",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Aim for one million te reo Māori speakers by 2040",
+   "summary": "This party would reinvigorate the goal of one million te reo Māori speakers by 2040 and work towards 30% Māori participation in kaupapa Māori and Māori-medium education by 2040. It would partner with Māori to grow Māori educators and…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T00:08:21+13:00",
+   "ref": "POL55411"
+  },
+  {
+   "id": "candidate-changed:national:national/scott-simpson:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "candidate-changed",
+   "party": "national",
+   "title": "Scott Simpson",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/national/people",
+   "source": "https://policy.nz/2026/party-vote/parties/national-party",
+   "time": "2026-11-03T00:08:21+13:00"
+  },
+  {
+   "id": "candidate-changed:national:national/ryan-hamilton:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "candidate-changed",
+   "party": "national",
+   "title": "Ryan Hamilton",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/national/people",
+   "source": "https://policy.nz/2026/party-vote/parties/national-party",
+   "time": "2026-11-03T00:08:21+13:00"
+  },
+  {
+   "id": "candidate-changed:national:national/jonathan-pitts:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "candidate-changed",
+   "party": "national",
+   "title": "Jonathan Pitts",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/national/people",
+   "source": "https://policy.nz/2026/party-vote/parties/national-party",
+   "time": "2026-11-03T00:08:21+13:00"
+  },
+  {
+   "id": "candidate-changed:national:national/blair-cameron:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "candidate-changed",
+   "party": "national",
+   "title": "Blair Cameron",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/national/people",
+   "source": "https://policy.nz/2026/party-vote/parties/national-party",
+   "time": "2026-11-03T00:08:21+13:00"
+  },
+  {
+   "id": "candidate-changed:money-free-party:money-free-party/richard-francis-osmaston:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "candidate-changed",
+   "party": "money-free-party",
+   "title": "Richard Francis Osmaston",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/money-free-party/people",
+   "source": "https://policy.nz/2026/party-vote/parties/money-free-party",
+   "time": "2026-11-03T00:08:21+13:00"
+  },
+  {
+   "id": "candidate-changed:independent:independent/grant-seton:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "candidate-changed",
+   "party": "independent",
+   "title": "Grant Seton",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/independent/people",
+   "source": "https://policy.nz/2026/party-vote/parties/independent",
+   "time": "2026-11-03T00:08:21+13:00"
+  },
+  {
+   "id": "candidate-changed:green:green/shreejan-pandey:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "candidate-changed",
+   "party": "green",
+   "title": "Shreejan Pandey",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/green/people",
+   "source": "https://policy.nz/2026/party-vote/parties/green-party",
+   "time": "2026-11-03T00:08:21+13:00"
+  },
+  {
+   "id": "release:conservative:https://www.scoop.co.nz/stories/PO2611/S00011/we-are-ruled-by-unelected-bureaucrats.htm",
+   "date": "2026-11-02",
+   "kind": "release",
+   "party": "conservative",
+   "title": "We Are Ruled By Unelected Bureaucrats",
+   "summary": "",
+   "url": "#/parties/news/conservative",
+   "source": "https://www.scoop.co.nz/stories/PO2611/S00011/we-are-ruled-by-unelected-bureaucrats.htm",
+   "time": "2026-11-02T16:35+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:conservative:https://www.scoop.co.nz/stories/PO2611/S00010/fisheries-ministers-ignoring-of-yellow-eyed-penguin-advice-raises-serious-questions.htm",
+   "date": "2026-11-02",
+   "kind": "release",
+   "party": "conservative",
+   "title": "Fisheries Minister’s Ignoring Of Yellow Eyed Penguin Advice Raises Serious Questions",
+   "summary": "",
+   "url": "#/parties/news/conservative",
+   "source": "https://www.scoop.co.nz/stories/PO2611/S00010/fisheries-ministers-ignoring-of-yellow-eyed-penguin-advice-raises-serious-questions.htm",
+   "time": "2026-11-02T16:31+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2611/S00008/greens-say-ka-kite-to-employers-labour-serves-up-ai-slop.htm",
+   "date": "2026-11-02",
+   "kind": "release",
+   "party": "act",
+   "title": "Greens Say ‘Ka Kite’ To Employers, Labour Serves Up ‘AI Slop’",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00008/greens-say-ka-kite-to-employers-labour-serves-up-ai-slop.htm",
+   "time": "2026-11-02T16:26+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:labour:https://www.scoop.co.nz/stories/PA2611/S00007/labour-will-crack-down-on-unfair-charges-on-bills.htm",
+   "date": "2026-11-02",
+   "kind": "release",
+   "party": "labour",
+   "title": "Labour Will Crack Down On Unfair Charges On Bills",
+   "summary": "",
+   "url": "#/parties/news/labour",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00007/labour-will-crack-down-on-unfair-charges-on-bills.htm",
+   "time": "2026-11-02T14:40+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2611/S00006/agriculture-stays-in-the-curriculum-thanks-to-strong-advocacy.htm",
+   "date": "2026-11-02",
+   "kind": "release",
+   "party": "act",
+   "title": "Agriculture Stays In The Curriculum Thanks To Strong Advocacy",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00006/agriculture-stays-in-the-curriculum-thanks-to-strong-advocacy.htm",
+   "time": "2026-11-02T12:42+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2611/S00004/act-will-cut-the-cost-of-government-to-cut-the-cost-of-living.htm",
+   "date": "2026-11-02",
+   "kind": "release",
+   "party": "act",
+   "title": "ACT Will Cut The Cost Of Government To Cut The Cost Of Living",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00004/act-will-cut-the-cost-of-government-to-cut-the-cost-of-living.htm",
+   "time": "2026-11-02T09:37+13:00",
+   "via": "Scoop"
+  },
   {
    "id": "release:labour:https://www.scoop.co.nz/stories/PA2611/S00003/labours-next-finance-minister-ready-to-deliver-for-kiwis.htm",
    "date": "2026-11-01",
@@ -3611,21 +4180,10 @@
    "source": "https://www.scoop.co.nz/stories/PO2609/S00028/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
    "time": "2026-09-04T08:56+12:00",
    "via": "Scoop"
-  },
-  {
-   "id": "poll-added:-:2026-09-03|Taxpayers' Union–Curia",
-   "date": "2026-09-03",
-   "kind": "poll-added",
-   "party": null,
-   "title": "Taxpayers' Union–Curia",
-   "summary": "Fieldwork 1–3 Sep 2026, 1,000 people.",
-   "url": "#/seats/polls",
-   "source": "https://www.taxpayers.org.nz/sept26_pollnztughjkuhn?",
-   "poll_date": "2026-09-03"
   }
  ],
  "_snapshot": {
-  "taken": "2026-11-01T23:31:23+13:00",
+  "taken": "2026-11-03T00:08:21+13:00",
   "policies": {
    "act": {
     "POL54642": {
@@ -8394,8 +8952,8 @@
     },
     "POL54717": {
      "s": "Provide loans for people to purchase solar set-ups for their homes",
-     "m": "bba4c50d6c",
-     "u": "69c2ef32ad",
+     "m": "59922e916a",
+     "u": "f47e09091f",
      "w": null
     },
     "POL54718": {
@@ -8497,7 +9055,7 @@
     "POL54889": {
      "s": "Remove rough sleepers from \"Move On\" bill",
      "m": "ed929c5cd6",
-     "u": "0674b030ea",
+     "u": "774f432bd9",
      "w": null
     },
     "POL54898": {
@@ -8635,7 +9193,7 @@
     "POL55151": {
      "s": "Add at least 6000 more social housing places over the next 4 years",
      "m": "1ead4925fe",
-     "u": "a79fedb2c0",
+     "u": "421e675d5c",
      "w": null
     },
     "POL55152": {
@@ -9122,6 +9680,126 @@
      "s": "Raise the income cap for the First Home Loans scheme",
      "m": "4b31608a3f",
      "u": "96ec092005",
+     "w": null
+    },
+    "POL55384": {
+     "s": "Ban no-cause evictions and increase the number of days' notice landlords must give in certain situations",
+     "m": "8c2f6166bc",
+     "u": "75558ce8ca",
+     "w": null
+    },
+    "POL55385": {
+     "s": "Introduce a landlord duty of care to tenants",
+     "m": "5bda6093ef",
+     "u": "75558ce8ca",
+     "w": null
+    },
+    "POL55393": {
+     "s": "Extend Kiwisaver employer contributions to workers over 65",
+     "m": "b57a4fe4ec",
+     "u": "5e013dbc5d",
+     "w": null
+    },
+    "POL55394": {
+     "s": "Expand bowel cancer screening and melanoma prevention work",
+     "m": "519c7c52a2",
+     "u": "efa6d4c848",
+     "w": null
+    },
+    "POL55395": {
+     "s": "Ensure Pharmac seeks out medicines proactively and is funded apolitically",
+     "m": "856b86dcd0",
+     "u": "7e3c2ff911",
+     "w": null
+    },
+    "POL55396": {
+     "s": "Improve the delivery of children's dental health",
+     "m": "b182f0635d",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55397": {
+     "s": "Restore same-day enrolment",
+     "m": "b607fe07cb",
+     "u": "219e4716d1",
+     "w": null
+    },
+    "POL55398": {
+     "s": "Conduct a stock-take of hospital beds and services",
+     "m": "8025e18be8",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55399": {
+     "s": "Improve homelessness data and set goals to reduce it",
+     "m": "2fd4db1c8c",
+     "u": "2393b81ac7",
+     "w": null
+    },
+    "POL55400": {
+     "s": "Ensure 25 percent of new public housing uses universal design",
+     "m": "79ef2ab1ad",
+     "u": "d4bf723188",
+     "w": null
+    },
+    "POL55401": {
+     "s": "Increase funding to community housing and Māori-led housing providers",
+     "m": "77b02539e8",
+     "u": "dde0a3f63f",
+     "w": null
+    },
+    "POL55402": {
+     "s": "Review the electricity market with the goal of structural reform",
+     "m": "7a53873169",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55403": {
+     "s": "End charter schools",
+     "m": "b46751094d",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55404": {
+     "s": "Pause curriculum changes and new qualifications for a review",
+     "m": "747d66f948",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55405": {
+     "s": "Support a tourism plan that supports local areas and reduces carbon emissions",
+     "m": "866913cc57",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55406": {
+     "s": "Reverse the tobacco tax cut",
+     "m": "75e106ff69",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55407": {
+     "s": "End the minimum wage exemption for disabled workers",
+     "m": "1b2b9fc265",
+     "u": "d4bf723188",
+     "w": null
+    },
+    "POL55408": {
+     "s": "End good character sentencing discounts for child sex offenders",
+     "m": "f67310e6a1",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55409": {
+     "s": "Restore treaty clauses taken out of legislation",
+     "m": "7e51b89794",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55411": {
+     "s": "Aim for one million te reo Māori speakers by 2040",
+     "m": "a074ea3358",
+     "u": "3e31ab5cf4",
      "w": null
     }
    },
@@ -10437,7 +11115,7 @@
     "POL55310": {
      "s": "Establish a 12-month trial for commuter rail in Canterbury and further south",
      "m": "76abdfe2cf",
-     "u": "b41b20590e",
+     "u": "f9a2ef89ed",
      "w": null
     },
     "NZF-A01": {
@@ -10786,6 +11464,72 @@
      "s": "Decouple NZDF pay from the Public Service Commission and ensure merit-based appointments",
      "m": "9d718785c0",
      "u": "b01a3c524c",
+     "w": null
+    },
+    "POL55380": {
+     "s": "Invest in developing NZ's naval capabilities, learning from Ukraine",
+     "m": "b9870278a3",
+     "u": "b01a3c524c",
+     "w": null
+    },
+    "POL55381": {
+     "s": "Establish the a specialised New Zealand Marine Force (NZMF)",
+     "m": "f02282dbb1",
+     "u": "b01a3c524c",
+     "w": null
+    },
+    "POL55382": {
+     "s": "Establish a 90-day recruitment process for the Defence Force",
+     "m": "82a4499021",
+     "u": "b01a3c524c",
+     "w": null
+    },
+    "POL55383": {
+     "s": "Integrate defence supplies and manufacturing across Australia and NZ",
+     "m": "597e042b69",
+     "u": "b01a3c524c",
+     "w": null
+    },
+    "POL55386": {
+     "s": "Expand passenger rail operations to Hamilton and Northland",
+     "m": "5cd40cdfb1",
+     "u": "8a0c2795a0",
+     "w": null
+    },
+    "POL55387": {
+     "s": "Establish separate organisations to operate rail in Auckland and Wellington",
+     "m": "678ddf3672",
+     "u": "8a0c2795a0",
+     "w": null
+    },
+    "POL55388": {
+     "s": "Remove level crossings in Auckland",
+     "m": "db8405f164",
+     "u": "8a0c2795a0",
+     "w": null
+    },
+    "POL55389": {
+     "s": "Increase protections for heritage rail",
+     "m": "d80a177304",
+     "u": "8a0c2795a0",
+     "w": null
+    },
+    "POL55390": {
+     "s": "Increase the capacity of Bay of Plenty's Kaimai tunnel",
+     "m": "2fcd3762ac",
+     "u": "8a0c2795a0",
+     "w": null
+    },
+    "POL55391": {
+     "s": "Make the Te Huia contract permanent",
+     "m": "424072442a",
+     "u": "8a0c2795a0",
+     "w": null
+    },
+    "POL55392": {
+     "s": "Deliver current government commitments for rail and ferry maintenance and investment",
+     "m": "7417b861d6",
+     "u": "8a0c2795a0",
      "w": null
     }
    },
@@ -13615,7 +14359,7 @@
     "rank": 22,
     "el": "Wigram",
     "desc": "Candidate for the Wigram electorate",
-    "q": "7b7e644c56"
+    "q": "7dd6bbd99c"
    },
    "green/lauren-craig": {
     "party": "green",
@@ -14812,7 +15556,7 @@
     "rank": 19,
     "el": "Coromandel",
     "desc": "Candidate for the Coromandel electorate",
-    "q": "7b7e644c56"
+    "q": "7caa2a433e"
    },
    "national/cameron-brewer": {
     "party": "national",
@@ -14965,7 +15709,7 @@
     "rank": 36,
     "el": "Hamilton East",
     "desc": "Candidate for the Hamilton East electorate",
-    "q": "7b7e644c56"
+    "q": "5516d6a91e"
    },
    "national/catherine-wedd": {
     "party": "national",
@@ -15010,7 +15754,7 @@
     "rank": 41,
     "el": "Nelson",
     "desc": "Candidate for the Nelson electorate",
-    "q": "7b7e644c56"
+    "q": "914f5d5415"
    },
    "national/kristine-asuncion": {
     "party": "national",
@@ -15244,7 +15988,7 @@
     "rank": 67,
     "el": "Wellington North",
     "desc": "Candidate for the Wellington North electorate",
-    "q": "7b7e644c56"
+    "q": "481e38f54c"
    },
    "national/zabeen-lateef": {
     "party": "national",
@@ -16695,6 +17439,15 @@
     "desc": "Candidate for the Hamilton East electorate",
     "q": "90d20141bf"
    },
+   "new-world-order-mccann-party/nathan-lee-couper": {
+    "party": "new-world-order-mccann-party",
+    "pnz": "new-world-order-mccann-party",
+    "name": "Nathan Lee Couper",
+    "rank": null,
+    "el": "Hamilton West",
+    "desc": "Candidate for the Hamilton West electorate",
+    "q": "90d20141bf"
+   },
    "independent/steve-phelps": {
     "party": "independent",
     "pnz": "independent",
@@ -16708,15 +17461,6 @@
     "party": "independent",
     "pnz": "independent",
     "name": "Wiremu Thomson",
-    "rank": null,
-    "el": "Hamilton West",
-    "desc": "Candidate for the Hamilton West electorate",
-    "q": "90d20141bf"
-   },
-   "new-world-order-mccann-party/nathan-lee-couper": {
-    "party": "new-world-order-mccann-party",
-    "pnz": "new-world-order-mccann-party",
-    "name": "Nathan Lee Couper",
     "rank": null,
     "el": "Hamilton West",
     "desc": "Candidate for the Hamilton West electorate",
@@ -16758,6 +17502,15 @@
     "desc": "Candidate for the Henderson electorate",
     "q": "90d20141bf"
    },
+   "independent/malcolm-dick": {
+    "party": "independent",
+    "pnz": "independent",
+    "name": "Malcolm Dick",
+    "rank": null,
+    "el": "Hutt South",
+    "desc": "Candidate for the Hutt South electorate",
+    "q": "90d20141bf"
+   },
    "independent/david-l-f-smith": {
     "party": "independent",
     "pnz": "independent",
@@ -16771,15 +17524,6 @@
     "party": "socialist-equality-group",
     "pnz": "socialist-equality-group",
     "name": "Tom Petterson",
-    "rank": null,
-    "el": "Hutt South",
-    "desc": "Candidate for the Hutt South electorate",
-    "q": "90d20141bf"
-   },
-   "independent/malcolm-dick": {
-    "party": "independent",
-    "pnz": "independent",
-    "name": "Malcolm Dick",
     "rank": null,
     "el": "Hutt South",
     "desc": "Candidate for the Hutt South electorate",
@@ -16929,10 +17673,10 @@
     "desc": "Candidate for the Northland electorate",
     "q": "90d20141bf"
    },
-   "independent/james-gordon-robb": {
-    "party": "independent",
-    "pnz": "independent",
-    "name": "James Gordon Robb",
+   "peoples-party-new-zealand/eseta-haunga": {
+    "party": "peoples-party-new-zealand",
+    "pnz": "peoples-party-new-zealand",
+    "name": "Eseta Haunga",
     "rank": null,
     "el": "Ōtāhuhu",
     "desc": "Candidate for the Ōtāhuhu electorate",
@@ -16947,10 +17691,10 @@
     "desc": "Candidate for the Ōtāhuhu electorate",
     "q": "90d20141bf"
    },
-   "peoples-party-new-zealand/eseta-haunga": {
-    "party": "peoples-party-new-zealand",
-    "pnz": "peoples-party-new-zealand",
-    "name": "Eseta Haunga",
+   "independent/james-gordon-robb": {
+    "party": "independent",
+    "pnz": "independent",
+    "name": "James Gordon Robb",
     "rank": null,
     "el": "Ōtāhuhu",
     "desc": "Candidate for the Ōtāhuhu electorate",
@@ -17035,7 +17779,7 @@
     "rank": null,
     "el": "Tukituki",
     "desc": "Candidate for the Tukituki electorate",
-    "q": "90d20141bf"
+    "q": "2d1a33ba20"
    },
    "independent/allister-david-tosh": {
     "party": "independent",
@@ -17055,19 +17799,19 @@
     "desc": "Candidate for the Upper Harbour electorate",
     "q": "90d20141bf"
    },
-   "independent/turi-te-kamonga-robinson": {
+   "independent/brendan-richard-whyte": {
     "party": "independent",
     "pnz": "independent",
-    "name": "Turi Te Kamonga Robinson",
+    "name": "Brendan Richard Whyte",
     "rank": null,
     "el": "Waikato",
     "desc": "Candidate for the Waikato electorate",
     "q": "90d20141bf"
    },
-   "independent/brendan-richard-whyte": {
+   "independent/turi-te-kamonga-robinson": {
     "party": "independent",
     "pnz": "independent",
-    "name": "Brendan Richard Whyte",
+    "name": "Turi Te Kamonga Robinson",
     "rank": null,
     "el": "Waikato",
     "desc": "Candidate for the Waikato electorate",
@@ -17118,10 +17862,10 @@
     "desc": "Candidate for the Waitaki electorate",
     "q": "90d20141bf"
    },
-   "independent/donald-ds-mcdonald": {
-    "party": "independent",
-    "pnz": "independent",
-    "name": "Donald DS McDonald",
+   "money-free-party/liam-anderson": {
+    "party": "money-free-party",
+    "pnz": "money-free-party",
+    "name": "Liam Anderson",
     "rank": null,
     "el": "Wellington Bays",
     "desc": "Candidate for the Wellington Bays electorate",
@@ -17136,10 +17880,10 @@
     "desc": "Candidate for the Wellington Bays electorate",
     "q": "90d20141bf"
    },
-   "money-free-party/liam-anderson": {
-    "party": "money-free-party",
-    "pnz": "money-free-party",
-    "name": "Liam Anderson",
+   "independent/donald-ds-mcdonald": {
+    "party": "independent",
+    "pnz": "independent",
+    "name": "Donald DS McDonald",
     "rank": null,
     "el": "Wellington Bays",
     "desc": "Candidate for the Wellington Bays electorate",
@@ -17161,7 +17905,7 @@
     "rank": null,
     "el": "West Coast-Tasman",
     "desc": "Candidate for the West Coast-Tasman electorate",
-    "q": "90d20141bf"
+    "q": "7728e76a45"
    },
    "balance-new-zealand/juan-charles-coffey": {
     "party": "balance-new-zealand",
@@ -17181,19 +17925,19 @@
     "desc": "Candidate for the Whangārei electorate",
     "q": "90d20141bf"
    },
-   "independent/jon-twyman": {
+   "independent/daryl-warren-clotworthy": {
     "party": "independent",
     "pnz": "independent",
-    "name": "Jon Twyman",
+    "name": "Daryl Warren Clotworthy",
     "rank": null,
     "el": "Whangārei",
     "desc": "Candidate for the Whangārei electorate",
     "q": "90d20141bf"
    },
-   "independent/daryl-warren-clotworthy": {
+   "independent/jon-twyman": {
     "party": "independent",
     "pnz": "independent",
-    "name": "Daryl Warren Clotworthy",
+    "name": "Jon Twyman",
     "rank": null,
     "el": "Whangārei",
     "desc": "Candidate for the Whangārei electorate",
@@ -17502,6 +18246,10 @@
    "https://www.scoop.co.nz/stories/PA2610/S00263/three-strikes-here-to-stay.htm",
    "https://www.scoop.co.nz/stories/PA2611/S00002/david-seymour-address-on-acts-equal-rights-policy-one-law-for-all-one-future-together.htm",
    "https://www.scoop.co.nz/stories/PA2611/S00003/labours-next-finance-minister-ready-to-deliver-for-kiwis.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00004/act-will-cut-the-cost-of-government-to-cut-the-cost-of-living.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00006/agriculture-stays-in-the-curriculum-thanks-to-strong-advocacy.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00007/labour-will-crack-down-on-unfair-charges-on-bills.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00008/greens-say-ka-kite-to-employers-labour-serves-up-ai-slop.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00028/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00108/a-win-for-free-speech-helen-houghton-challenges-extremist-label-and-secures-public-apology.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00118/historic-flag-raising-commemorates-womens-suffrage.htm",
@@ -17523,7 +18271,9 @@
    "https://www.scoop.co.nz/stories/PO2610/S00157/civil-wars-chaos-and-anarchy.htm",
    "https://www.scoop.co.nz/stories/PO2610/S00159/gutless-ministry-of-health-is-responsible-for-high-court-ruling-against-puberty-blockers-ban.htm",
    "https://www.scoop.co.nz/stories/PO2610/S00174/conservative-party-rues-nzs-ignoring-of-environment.htm",
-   "https://www.scoop.co.nz/stories/PO2610/S00191/tomorrow-women-will-commemorate-winning-right-to-stand-for-parliament.htm"
+   "https://www.scoop.co.nz/stories/PO2610/S00191/tomorrow-women-will-commemorate-winning-right-to-stand-for-parliament.htm",
+   "https://www.scoop.co.nz/stories/PO2611/S00010/fisheries-ministers-ignoring-of-yellow-eyed-penguin-advice-raises-serious-questions.htm",
+   "https://www.scoop.co.nz/stories/PO2611/S00011/we-are-ruled-by-unelected-bureaucrats.htm"
   ]
  }
 }

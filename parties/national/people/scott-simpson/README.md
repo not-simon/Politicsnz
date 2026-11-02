@@ -75,6 +75,12 @@ Minister for ACC since February 2025, when he replaced Andrew Bayly after Bayly'
 
 - **Electorate:** Coromandel
 - **List ranking:** 19
+- **Before politics:** CEO Make-A-Wish NZ
+- **Age:** 66
+- **Public email:** scott.simpson@national.org.nz
+- **Website:** https://www.national.org.nz/team/scottsimpson
+- **Facebook:** https://www.facebook.com/scottsimpsonmp
+- **Instagram:** https://www.instagram.com/scottsimpsonmp
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/national-party), retrieved Oct 2026._
 <!-- GENERATED:2026-candidacy END -->

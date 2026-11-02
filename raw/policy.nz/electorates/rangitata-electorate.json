@@ -5,27 +5,202 @@
    {
     "attributes": [
      {
-      "_key": "MBeO7ojrohBwl7F7zAOq0A",
+      "_key": "5qodKiwOBcGQHqqFNmsqz8",
+      "name": "Why I'm standing",
+      "value": "I want to do my part to create a better future for my children and future generations. I love my country and I am proud of my New Zealand heritage. I believe that all New Zealanders should be treated equally, with one law for all, regardless of ethnicity, gender or belief. We should put the interests of New Zealanders first and I'm determined to fight for the rights of everyday Kiwi Mums and Dads."
+     },
+     {
+      "_key": "5qodKiwOBcGQHqqFNmsr18",
+      "name": "About me",
+      "value": "I am a proud dad of a large family. I have worked in the construction industry as a plumber, gasfitter and drainlayer for the last 27 years. As a parent and working-class Kiwi, I understand all too well the pressures that face everyday New Zealanders. We need politicians to represent us that have real life practical experience and who can come up with common-sense practical solutions to the problems facing us today."
+     },
+     {
+      "_key": "5qodKiwOBcGQHqqFNmsr38",
+      "name": "Priority 1",
+      "value": "Ensuring that ratepayer's money is spent on the things that are necessary to the community."
+     },
+     {
+      "_key": "5qodKiwOBcGQHqqFNmsr58",
+      "name": "Priority 2",
+      "value": "Promote Timaru as a great tourist destination, support local tourism attractions and opportunities."
+     },
+     {
+      "_key": "5qodKiwOBcGQHqqFNmsr78",
+      "name": "Priority 3",
+      "value": "Campaign for appropriate funding for road maintenance, so we can travel and trade effectively."
+     }
+    ],
+    "party": {
+     "name": "NZ First"
+    },
+    "person": {
+     "attributes": [
+      {
+       "_key": "EZWec2ARqjqVWDdf5QcOMC",
+       "name": "Before politics",
+       "value": "Plumber, Gasfitter, Drainlayer"
+      },
+      {
+       "_key": "EZWec2ARqjqVWDdf5QcOQM",
+       "name": "Residence",
+       "value": "Timaru"
+      },
+      {
+       "_key": "EZWec2ARqjqVWDdf5QcOUW",
+       "name": "Age",
+       "value": "45"
+      },
+      {
+       "_key": "EZWec2ARqjqVWDdf5QcOYg",
+       "name": "Public email",
+       "value": "isaac.nicholson@nzfirst.nz"
+      },
+      {
+       "_key": "EZWec2ARqjqVWDdf5QcOcq",
+       "name": "Website",
+       "value": "https://www.nzfirst.nz"
+      }
+     ],
+     "firstName": "Isaac",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/f5b8e9d62505469446b8d7dabacf618f26d4538f-1024x1024.jpg",
+     "lastName": "Nicholson",
+     "party": {
+      "name": "NZ First",
+      "slug": "nz-first"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the Rangitata electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": null,
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recfLpcv7I0gKUsQJ",
+       "_type": "reference"
+      }
+     },
+     "slug": "isaac-nicholson"
+    },
+    "policies": []
+   },
+   {
+    "attributes": [
+     {
+      "_key": "5qodKiwOBcGQHqqFNmsrB8",
+      "name": "Why I'm standing",
+      "value": "Having served as your MP for the past three years, supporting constituents and advocating for Mid and South Canterbury in Wellington, I know what it takes to represent our region and deliver real results for our community. I'm focused on growing our region, creating more jobs and higher incomes, reducing the cost of living and making sure our region gets the investment we deserve."
+     },
+     {
+      "_key": "5qodKiwOBcGQHqqFNmsrD8",
+      "name": "About me",
+      "value": "In 2023, I was proud to be elected as the Member of Parliament for Rangitata. I'm a local boy, born and raised in Timaru with roots in both Mid and South Canterbury. In 2026, I'm once again asking for your vote to elect me as your MP for Rangitata. I'm committed to making Mid and South Canterbury the safest, best and most prosperous place to live for every family who calls it home."
+     },
+     {
+      "_key": "5qodKiwOBcGQHqqFNmsrF8",
+      "name": "Priority 1",
+      "value": "Deliver the new $140m Ashburton Bridge by the end of 2027, on time and on budget."
+     },
+     {
+      "_key": "5qodKiwOBcGQHqqFNmsrH8",
+      "name": "Priority 2",
+      "value": "Secure additional investment in our road, transport and logistics infrastructure network."
+     },
+     {
+      "_key": "5qodKiwOBcGQHqqFNmsrJ8",
+      "name": "Priority 3",
+      "value": "Grow our region by creating more jobs and higher incomes in agriculture, tourism and manufacturing."
+     }
+    ],
+    "party": {
+     "name": "National Party"
+    },
+    "person": {
+     "attributes": [
+      {
+       "_key": "w4j50sYgZwrRfCGwkaUyq3",
+       "name": "Before politics",
+       "value": "Lawyer"
+      },
+      {
+       "_key": "w4j50sYgZwrRfCGwkaUyrj",
+       "name": "Residence",
+       "value": "Timaru"
+      },
+      {
+       "_key": "w4j50sYgZwrRfCGwkaUytP",
+       "name": "Age",
+       "value": "39"
+      },
+      {
+       "_key": "w4j50sYgZwrRfCGwkaUyv5",
+       "name": "Public email",
+       "value": "james.meager@national.org.nz"
+      },
+      {
+       "_key": "w4j50sYgZwrRfCGwkaUywl",
+       "name": "Website",
+       "value": "www.jamesmeager.nz"
+      },
+      {
+       "_key": "w4j50sYgZwrRfCGwkaUyyR",
+       "name": "Facebook",
+       "value": "https://www.facebook.com/JamesMeagerMP"
+      },
+      {
+       "_key": "w4j50sYgZwrRfCGwkaUz07",
+       "name": "Instagram",
+       "value": "http://instagram.com/JamesMeagerMP"
+      },
+      {
+       "_key": "w4j50sYgZwrRfCGwkaUz1n",
+       "name": "Twitter",
+       "value": "http://twitter.com/JamesMeagerMP"
+      }
+     ],
+     "firstName": "James",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/b05ef4a21265931266b99960fed0861a38858e6a-1024x1024.jpg",
+     "lastName": "Meager",
+     "party": {
+      "name": "National Party",
+      "slug": "national-party"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the Rangitata electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": "18",
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recPwSvcsPp7UmDjZ",
+       "_type": "reference"
+      }
+     },
+     "slug": "james-meager"
+    },
+    "policies": []
+   },
+   {
+    "attributes": [
+     {
+      "_key": "5qodKiwOBcGQHqqFNmsrP8",
       "name": "Why I'm standing",
       "value": "Growing up on a farm listening to my dad's stories sparked a lifelong interest in politics. Today, I'm standing because I believe New Zealand needs politics that is less tribal and more focused on what works. I want to help build a country where people can live with dignity, young people can get ahead, and communities can thrive. That's why I'm standing to represent Rangitata and help shape a better future for the next generation."
      },
      {
-      "_key": "MBeO7ojrohBwl7F7zAOq30",
+      "_key": "5qodKiwOBcGQHqqFNmsrR8",
       "name": "About me",
       "value": "I've spent my career helping people and organisations solve problems, deliver change, and achieve better outcomes. I listen carefully, value evidence, and enjoy working with people who hold different views. Growing up in a rural community and living and working across New Zealand has given me an appreciation for the challenges and opportunities facing our regions. I'll be an approachable, hardworking representative who focuses on practical solutions and long-term thinking."
      },
      {
-      "_key": "MBeO7ojrohBwl7F7zAOq5q",
+      "_key": "5qodKiwOBcGQHqqFNmsrT8",
       "name": "Priority 1",
       "value": "Support farming and business to create jobs, grow incomes, and strengthen our local economy."
      },
      {
-      "_key": "MBeO7ojrohBwl7F7zAOq8g",
+      "_key": "5qodKiwOBcGQHqqFNmsrV8",
       "name": "Priority 2",
       "value": "Create opportunities for young people to thrive here and older generations to retire with dignity."
      },
      {
-      "_key": "MBeO7ojrohBwl7F7zAOqBW",
+      "_key": "5qodKiwOBcGQHqqFNmsrX8",
       "name": "Priority 3",
       "value": "Restore nature and biodiversity so future generations inherit a healthier environment."
      }
@@ -100,107 +275,27 @@
    {
     "attributes": [
      {
-      "_key": "MBeO7ojrohBwl7F7zAOpPG",
-      "name": "Why I'm standing",
-      "value": "I want to do my part to create a better future for my children and future generations. I love my country and I am proud of my New Zealand heritage. I believe that all New Zealanders should be treated equally, with one law for all, regardless of ethnicity, gender or belief. We should put the interests of New Zealanders first and I'm determined to fight for the rights of everyday Kiwi Mums and Dads."
-     },
-     {
-      "_key": "MBeO7ojrohBwl7F7zAOpS6",
-      "name": "About me",
-      "value": "I am a proud dad of a large family. I have worked in the construction industry as a plumber, gasfitter and drainlayer for the last 27 years. As a parent and working-class Kiwi, I understand all too well the pressures that face everyday New Zealanders. We need politicians to represent us that have real life practical experience and who can come up with common-sense practical solutions to the problems facing us today."
-     },
-     {
-      "_key": "MBeO7ojrohBwl7F7zAOpUw",
-      "name": "Priority 1",
-      "value": "Ensuring that ratepayer's money is spent on the things that are necessary to the community."
-     },
-     {
-      "_key": "MBeO7ojrohBwl7F7zAOpXm",
-      "name": "Priority 2",
-      "value": "Promote Timaru as a great tourist destination, support local tourism attractions and opportunities."
-     },
-     {
-      "_key": "MBeO7ojrohBwl7F7zAOpac",
-      "name": "Priority 3",
-      "value": "Campaign for appropriate funding for road maintenance, so we can travel and trade effectively."
-     }
-    ],
-    "party": {
-     "name": "NZ First"
-    },
-    "person": {
-     "attributes": [
-      {
-       "_key": "EZWec2ARqjqVWDdf5QcOMC",
-       "name": "Before politics",
-       "value": "Plumber, Gasfitter, Drainlayer"
-      },
-      {
-       "_key": "EZWec2ARqjqVWDdf5QcOQM",
-       "name": "Residence",
-       "value": "Timaru"
-      },
-      {
-       "_key": "EZWec2ARqjqVWDdf5QcOUW",
-       "name": "Age",
-       "value": "45"
-      },
-      {
-       "_key": "EZWec2ARqjqVWDdf5QcOYg",
-       "name": "Public email",
-       "value": "isaac.nicholson@nzfirst.nz"
-      },
-      {
-       "_key": "EZWec2ARqjqVWDdf5QcOcq",
-       "name": "Website",
-       "value": "https://www.nzfirst.nz"
-      }
-     ],
-     "firstName": "Isaac",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/f5b8e9d62505469446b8d7dabacf618f26d4538f-1024x1024.jpg",
-     "lastName": "Nicholson",
-     "party": {
-      "name": "NZ First",
-      "slug": "nz-first"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the Rangitata electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": null,
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recfLpcv7I0gKUsQJ",
-       "_type": "reference"
-      }
-     },
-     "slug": "isaac-nicholson"
-    },
-    "policies": []
-   },
-   {
-    "attributes": [
-     {
-      "_key": "MBeO7ojrohBwl7F7zAOp5O",
+      "_key": "5qodKiwOBcGQHqqFNmsql8",
       "name": "Why I'm standing",
       "value": "I am running for ACT because I wish to help grow its party vote to ensure as many people with the values and principles that they stand for are elected into the next government. This is important because they are the one party whose fundamental base values of personal freedom, equal rights and personal responsibility (you are responsible for your life, not the government) resonate with me."
      },
      {
-      "_key": "MBeO7ojrohBwl7F7zAOp8E",
+      "_key": "5qodKiwOBcGQHqqFNmsqn8",
       "name": "About me",
       "value": "As a chartered accountant I deal with people, their financial issues, and the compliance costs on a daily basis. I have seen the effect increased regulation has been causing including increased financial costs, and the time it is taking to just continue doing the same business. I'd like to be effective in changing some of that so that people can get on with their life. Live in the freedom and the prosperity that they deserve."
      },
      {
-      "_key": "MBeO7ojrohBwl7F7zAOpB4",
+      "_key": "5qodKiwOBcGQHqqFNmsqp8",
       "name": "Priority 1",
       "value": "Improve Road funding - ensure the user charges we pay locally are used locally. Remove barriers."
      },
      {
-      "_key": "MBeO7ojrohBwl7F7zAOpDu",
+      "_key": "5qodKiwOBcGQHqqFNmsqr8",
       "name": "Priority 2",
       "value": "Medical Care - Help reduce wait times by allowing Pharmacists to do more. Pharmac Funding - access."
      },
      {
-      "_key": "MBeO7ojrohBwl7F7zAOpGk",
+      "_key": "5qodKiwOBcGQHqqFNmsqt8",
       "name": "Priority 3",
       "value": "Environment - Work with Hunters to help control pests. Ensure DOC is focused on its own job."
      }
@@ -258,97 +353,30 @@
     "policies": []
    },
    {
-    "attributes": [
-     {
-      "_key": "MBeO7ojrohBwl7F7zAOpgI",
-      "name": "Why I'm standing",
-      "value": "Having served as your MP for the past three years, supporting constituents and advocating for Mid and South Canterbury in Wellington, I know what it takes to represent our region and deliver real results for our community. I'm focused on growing our region, creating more jobs and higher incomes, reducing the cost of living and making sure our region gets the investment we deserve."
-     },
-     {
-      "_key": "MBeO7ojrohBwl7F7zAOpj8",
-      "name": "About me",
-      "value": "In 2023, I was proud to be elected as the Member of Parliament for Rangitata. I'm a local boy, born and raised in Timaru with roots in both Mid and South Canterbury. In 2026, I'm once again asking for your vote to elect me as your MP for Rangitata. I'm committed to making Mid and South Canterbury the safest, best and most prosperous place to live for every family who calls it home."
-     },
-     {
-      "_key": "MBeO7ojrohBwl7F7zAOply",
-      "name": "Priority 1",
-      "value": "Deliver the new $140m Ashburton Bridge by the end of 2027, on time and on budget."
-     },
-     {
-      "_key": "MBeO7ojrohBwl7F7zAOpoo",
-      "name": "Priority 2",
-      "value": "Secure additional investment in our road, transport and logistics infrastructure network."
-     },
-     {
-      "_key": "MBeO7ojrohBwl7F7zAOpre",
-      "name": "Priority 3",
-      "value": "Grow our region by creating more jobs and higher incomes in agriculture, tourism and manufacturing."
-     }
-    ],
+    "attributes": [],
     "party": {
-     "name": "National Party"
+     "name": "Green Party"
     },
     "person": {
-     "attributes": [
-      {
-       "_key": "w4j50sYgZwrRfCGwkaUyq3",
-       "name": "Before politics",
-       "value": "Lawyer"
-      },
-      {
-       "_key": "w4j50sYgZwrRfCGwkaUyrj",
-       "name": "Residence",
-       "value": "Timaru"
-      },
-      {
-       "_key": "w4j50sYgZwrRfCGwkaUytP",
-       "name": "Age",
-       "value": "39"
-      },
-      {
-       "_key": "w4j50sYgZwrRfCGwkaUyv5",
-       "name": "Public email",
-       "value": "james.meager@national.org.nz"
-      },
-      {
-       "_key": "w4j50sYgZwrRfCGwkaUywl",
-       "name": "Website",
-       "value": "www.jamesmeager.nz"
-      },
-      {
-       "_key": "w4j50sYgZwrRfCGwkaUyyR",
-       "name": "Facebook",
-       "value": "https://www.facebook.com/JamesMeagerMP"
-      },
-      {
-       "_key": "w4j50sYgZwrRfCGwkaUz07",
-       "name": "Instagram",
-       "value": "http://instagram.com/JamesMeagerMP"
-      },
-      {
-       "_key": "w4j50sYgZwrRfCGwkaUz1n",
-       "name": "Twitter",
-       "value": "http://twitter.com/JamesMeagerMP"
-      }
-     ],
-     "firstName": "James",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/b05ef4a21265931266b99960fed0861a38858e6a-1024x1024.jpg",
-     "lastName": "Meager",
+     "attributes": [],
+     "firstName": "Dave",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/20a0a0899a996b161aecb9677abe2daffbd99ed2-1024x1024.jpg",
+     "lastName": "Richards",
      "party": {
-      "name": "National Party",
-      "slug": "national-party"
+      "name": "Green Party",
+      "slug": "green-party"
      },
      "partyAffiliation": {
       "candidacyDescription": "Candidate for the Rangitata electorate",
       "candidacyURL": "",
       "leadershipLabel": "",
-      "listRank": "18",
+      "listRank": null,
       "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recPwSvcsPp7UmDjZ",
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recie6XT3ewqkl3HM",
        "_type": "reference"
       }
      },
-     "slug": "james-meager"
+     "slug": "dave-richards"
     },
     "policies": []
    },
@@ -383,28 +411,28 @@
    {
     "attributes": [],
     "party": {
-     "name": "Green Party"
+     "name": "Labour Party"
     },
     "person": {
      "attributes": [],
-     "firstName": "Dave",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/20a0a0899a996b161aecb9677abe2daffbd99ed2-1024x1024.jpg",
-     "lastName": "Richards",
+     "firstName": "Sange",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/68b1853579c8b9d7a35fc59d6bd76001ddc5002a-1024x1024.jpg",
+     "lastName": "Malama",
      "party": {
-      "name": "Green Party",
-      "slug": "green-party"
+      "name": "Labour Party",
+      "slug": "labour-party"
      },
      "partyAffiliation": {
       "candidacyDescription": "Candidate for the Rangitata electorate",
       "candidacyURL": "",
       "leadershipLabel": "",
-      "listRank": null,
+      "listRank": "64",
       "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recie6XT3ewqkl3HM",
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recspBJsfBBM9b93A",
        "_type": "reference"
       }
      },
-     "slug": "dave-richards"
+     "slug": "sange-malama"
     },
     "policies": []
    },
@@ -435,47 +463,19 @@
      "slug": "kevin-mccracken"
     },
     "policies": []
-   },
-   {
-    "attributes": [],
-    "party": {
-     "name": "Labour Party"
-    },
-    "person": {
-     "attributes": [],
-     "firstName": "Sange",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/68b1853579c8b9d7a35fc59d6bd76001ddc5002a-1024x1024.jpg",
-     "lastName": "Malama",
-     "party": {
-      "name": "Labour Party",
-      "slug": "labour-party"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the Rangitata electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": "64",
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recspBJsfBBM9b93A",
-       "_type": "reference"
-      }
-     },
-     "slug": "sange-malama"
-    },
-    "policies": []
    }
   ],
   "candidatesList": [
-   "matt-harris",
    "isaac-nicholson",
-   "aaron-allred",
    "james-meager",
-   "karl-thomas",
+   "matt-harris",
+   "aaron-allred",
    "dave-richards",
-   "kevin-mccracken",
-   "sange-malama"
+   "karl-thomas",
+   "sange-malama",
+   "kevin-mccracken"
   ],
-  "description": "Rangitata covers much of the South Canterbury region south of the Rakaia river, including towns such as Ashburton, Timaru, and Methven. The seat is currently held by National’s James Meager, who was first elected with a margin of 22,792 votes in 2023. National won the party vote in 2023 with 44.9%, followed by Labour with 26%. The electorate works long hours, with 15.2% of the electorate’s population working between 50 and 59 hours a week - the highest percentage in New Zealand. \n\n\n",
+  "description": "Rangitata covers much of the South Canterbury region south of the Rakaia river, including towns such as Ashburton, Timaru, and Methven. The seat is currently held by National’s James Meager, who was first elected with 22,792 votes in 2023. National won the party vote in 2023 with 44.9%, followed by Labour with 26%. The electorate works long hours, with 15.2% of the electorate’s population working between 50 and 59 hours a week - the highest percentage in New Zealand. \n\n\n",
   "format": "candidate",
   "parties": null,
   "partiesList": null,
@@ -602,6 +602,7 @@
    "regional-development",
    "fresh-water-and-pollution",
    "energy",
+   "mental-health",
    "te-reo-maori-and-culture",
    "superannuation-and-savings",
    "oil-gas-and-mining",
@@ -615,28 +616,27 @@
    "fisheries",
    "oceans",
    "waste-management",
+   "trades-and-vocational-education",
    "seniors",
    "trade-and-exports",
    "arts-culture-and-heritage",
    "social-and-public-housing",
    "key-policies-housing",
    "early-childhood-education",
-   "mental-health",
+   "defence-and-veterans",
+   "key-policies-defence-and-foreign-affairs",
    "rail-transport",
-   "trades-and-vocational-education",
-   "housing-quality",
    "wellbeing-and-services",
    "forestry",
    "artificial-intelligence-ai",
    "broadcasting-and-media",
-   "key-policies-defence-and-foreign-affairs",
    "foreign-investment",
    "rainbow-community",
    "construction",
    "disability",
    "renting",
-   "alcohol-and-drugs",
-   "defence-and-veterans"
+   "housing-quality",
+   "alcohol-and-drugs"
   ],
   "type": {
    "description": "",
@@ -1269,6 +1269,7 @@
     "regional-development",
     "fresh-water-and-pollution",
     "energy",
+    "mental-health",
     "te-reo-maori-and-culture",
     "superannuation-and-savings",
     "oil-gas-and-mining",
@@ -1282,31 +1283,30 @@
     "fisheries",
     "oceans",
     "waste-management",
+    "trades-and-vocational-education",
     "seniors",
     "trade-and-exports",
     "arts-culture-and-heritage",
     "social-and-public-housing",
     "key-policies-housing",
     "early-childhood-education",
-    "mental-health",
+    "defence-and-veterans",
+    "key-policies-defence-and-foreign-affairs",
     "rail-transport",
-    "trades-and-vocational-education",
-    "housing-quality",
     "wellbeing-and-services",
     "forestry",
     "artificial-intelligence-ai",
     "broadcasting-and-media",
-    "key-policies-defence-and-foreign-affairs",
     "foreign-investment",
     "rainbow-community",
     "construction",
     "disability",
     "renting",
-    "alcohol-and-drugs",
-    "defence-and-veterans"
+    "housing-quality",
+    "alcohol-and-drugs"
    ]
   },
   "slug": "2026"
  },
- "candidateSlug": "matt-harris"
+ "candidateSlug": "isaac-nicholson"
 }

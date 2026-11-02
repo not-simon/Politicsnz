@@ -5,27 +5,27 @@
    {
     "attributes": [
      {
-      "_key": "lXvsWGt582gEfwb3603Ukv",
+      "_key": "5qodKiwOBcGQHqqFNmtEP8",
       "name": "Why I'm standing",
       "value": "I was inspired by the uplifting conversations with the diverse range of people I have met along life's journey. Many found resonance with my perspective and my approach of a united approach towards a more prosperous future for us all. Building a future where no one gets left behind and the success of an economy that depends on a healthy environment. Service has always been a passion of mine."
      },
      {
-      "_key": "lXvsWGt582gEfwb3603Upz",
+      "_key": "5qodKiwOBcGQHqqFNmtER8",
       "name": "About me",
       "value": "Life so far has taught me many valuable skills whilst presenting me with the wisdom of direct experience. As a professional sportsman, serviceman of the NZ Army and Fire and Emergency, I have worked in the highest pressure situations where often lives were at stake. To remain cool, calm and collected with what is presented in front of you and search for the best solution to succeed is what I learnt to be good at."
      },
      {
-      "_key": "lXvsWGt582gEfwb3603Uv3",
+      "_key": "5qodKiwOBcGQHqqFNmtET8",
       "name": "Priority 1",
       "value": "Honouring Te Tiriti - Constitutional Transformation."
      },
      {
-      "_key": "lXvsWGt582gEfwb3603V07",
+      "_key": "5qodKiwOBcGQHqqFNmtEV8",
       "name": "Priority 2",
       "value": "Uplift our people out of hardship and address the cost of living."
      },
      {
-      "_key": "lXvsWGt582gEfwb3603V5B",
+      "_key": "5qodKiwOBcGQHqqFNmtEX8",
       "name": "Priority 3",
       "value": "Care for our natural environment. Create an economy that is dependent on a healthy environment."
      }
@@ -74,6 +74,34 @@
       }
      },
      "slug": "papa-wharewera"
+    },
+    "policies": []
+   },
+   {
+    "attributes": [],
+    "party": {
+     "name": "Green Party"
+    },
+    "person": {
+     "attributes": [],
+     "firstName": "Tania",
+     "image": "https://cdn.sanity.io/images/ubdwo62y/production/fd36ab9ea42dfe21aef5ab474971b188d24eb9ce-1024x1024.jpg",
+     "lastName": "Waikato",
+     "party": {
+      "name": "Green Party",
+      "slug": "green-party"
+     },
+     "partyAffiliation": {
+      "candidacyDescription": "Candidate for the Waiariki electorate",
+      "candidacyURL": "",
+      "leadershipLabel": "",
+      "listRank": "13",
+      "party": {
+       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recie6XT3ewqkl3HM",
+       "_type": "reference"
+      }
+     },
+     "slug": "tania-waikato"
     },
     "policies": []
    },
@@ -132,43 +160,15 @@
      "slug": "toni-boynton"
     },
     "policies": []
-   },
-   {
-    "attributes": [],
-    "party": {
-     "name": "Green Party"
-    },
-    "person": {
-     "attributes": [],
-     "firstName": "Tania",
-     "image": "https://cdn.sanity.io/images/ubdwo62y/production/fd36ab9ea42dfe21aef5ab474971b188d24eb9ce-1024x1024.jpg",
-     "lastName": "Waikato",
-     "party": {
-      "name": "Green Party",
-      "slug": "green-party"
-     },
-     "partyAffiliation": {
-      "candidacyDescription": "Candidate for the Waiariki electorate",
-      "candidacyURL": "",
-      "leadershipLabel": "",
-      "listRank": "13",
-      "party": {
-       "_ref": "18e50ec7-1b10-47e2-a812-0497e8c28314-recie6XT3ewqkl3HM",
-       "_type": "reference"
-      }
-     },
-     "slug": "tania-waikato"
-    },
-    "policies": []
    }
   ],
   "candidatesList": [
    "papa-wharewera",
+   "tania-waikato",
    "rawiri-waititi",
-   "toni-boynton",
-   "tania-waikato"
+   "toni-boynton"
   ],
-  "description": "Waiariki is the Māori electorate of the Bay of Plenty, covering population centres such as Tauranga, Whakatāne, and Rotorua. The seat is held by current Te Pāti Māori co-leader Rawiri Waititi who won in 2023 with 21,500 votes and 36.7% of the party vote. Since its establishment, the seat has been a stronghold for Te Pāti Māori. A Labour candidate has only won once since 2005. \n\n",
+  "description": "Waiariki is the Māori electorate of the Bay of Plenty, covering population centres such as Tauranga, Whakatāne, and Rotorua. The seat is held by current Te Pāti Māori co-leader Rawiri Waititi who won in 2023 with 21,500 votes and 36.7% of the party vote. Since its establishment, the seat has been a stronghold for Te Pāti Māori. A Labour candidate has only won once since 2005. ",
   "format": "candidate",
   "parties": null,
   "partiesList": null,
@@ -295,6 +295,7 @@
    "regional-development",
    "fresh-water-and-pollution",
    "energy",
+   "mental-health",
    "te-reo-maori-and-culture",
    "superannuation-and-savings",
    "oil-gas-and-mining",
@@ -308,28 +309,27 @@
    "fisheries",
    "oceans",
    "waste-management",
+   "trades-and-vocational-education",
    "seniors",
    "trade-and-exports",
    "arts-culture-and-heritage",
    "social-and-public-housing",
    "key-policies-housing",
    "early-childhood-education",
-   "mental-health",
+   "defence-and-veterans",
+   "key-policies-defence-and-foreign-affairs",
    "rail-transport",
-   "trades-and-vocational-education",
-   "housing-quality",
    "wellbeing-and-services",
    "forestry",
    "artificial-intelligence-ai",
    "broadcasting-and-media",
-   "key-policies-defence-and-foreign-affairs",
    "foreign-investment",
    "rainbow-community",
    "construction",
    "disability",
    "renting",
-   "alcohol-and-drugs",
-   "defence-and-veterans"
+   "housing-quality",
+   "alcohol-and-drugs"
   ],
   "type": {
    "description": "",
@@ -962,6 +962,7 @@
     "regional-development",
     "fresh-water-and-pollution",
     "energy",
+    "mental-health",
     "te-reo-maori-and-culture",
     "superannuation-and-savings",
     "oil-gas-and-mining",
@@ -975,28 +976,27 @@
     "fisheries",
     "oceans",
     "waste-management",
+    "trades-and-vocational-education",
     "seniors",
     "trade-and-exports",
     "arts-culture-and-heritage",
     "social-and-public-housing",
     "key-policies-housing",
     "early-childhood-education",
-    "mental-health",
+    "defence-and-veterans",
+    "key-policies-defence-and-foreign-affairs",
     "rail-transport",
-    "trades-and-vocational-education",
-    "housing-quality",
     "wellbeing-and-services",
     "forestry",
     "artificial-intelligence-ai",
     "broadcasting-and-media",
-    "key-policies-defence-and-foreign-affairs",
     "foreign-investment",
     "rainbow-community",
     "construction",
     "disability",
     "renting",
-    "alcohol-and-drugs",
-    "defence-and-veterans"
+    "housing-quality",
+    "alcohol-and-drugs"
    ]
   },
   "slug": "2026"

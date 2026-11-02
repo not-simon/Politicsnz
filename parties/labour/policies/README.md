@@ -65,6 +65,206 @@ _Added on policy.nz, first seen 28 October 2026._
 
 Sources: ['Labour to help more Kiwis buy their first home', 27 October 2026 (accessed 27 October 2026)](https://www.labour.org.nz/news/release-labour-to-help-more-kiwis-buy-their-first-home); ['Capital Gains Tax', undated (accessed 13 August 2026)](https://www.labour.org.nz/capitalgainstax); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
 
+#### Ban no-cause evictions and increase the number of days' notice landlords must give in certain situations (POL55384)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that the security of those renting has been eroded in recent years. In particular, no-cause evictions are leaving families at risk of being forced to move, regardless of whether they have done something wrong.
+
+**How** (*policy.nz*): This party would ban no-cause evictions, requiring landlords to give a valid reason for ending a tenancy. It would also increase the number of days' notice that tenants must receive if a landlord wants to move in or change the use of the property - to 63 days and 90 days respectively.
+
+Sources: ['Labour will make renting fairer and more secure', 28 October 2026 (accessed 28 October 2026)](https://www.labour.org.nz/news/release-labour-will-make-renting-fairer-and-more-secure); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Introduce a landlord duty of care to tenants (POL55385)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that renters deserve greater security in their homes, better rental standards and better pathways for dealing with problems in the property management space.
+
+**How** (*policy.nz*): This party would introduce a landlord duty of care to address serious hazards, and require proper curtains or blinds under the Healthy Homes Standards It would also reduce unnecessary inspections triggered by insurers, reducing them to no more than every six months. Clear rules would be set for property managers and greater oversight would be introduced for boarding houses to better protect the people living in them.
+
+Sources: ['Labour will make renting fairer and more secure', 28 October 2026 (accessed 28 October 2026)](https://www.labour.org.nz/news/release-labour-will-make-renting-fairer-and-more-secure); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Extend Kiwisaver employer contributions to workers over 65 (POL55393)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that Kiwisaver is crucial to building a secure future and a key source of investment for the economy. However, more than a million working-age KiwiSaver members are not contributing at all, while 83,400 are on a savings suspension. This party would take the government's proposed Kiwisaver plan and make it more flexible for workers, particularly those under financial pressure.
+
+**How** (*policy.nz*): This party would extend employer contributions to workers over 65. Other changes would include setting the default employee contribution at 4 percent, removing the minimum contribution and ensuring employer contributions continue even when employees reduced or paused their own contributions. Kiwisaver would also encompass the self-employed and those on parental leave.
+
+Sources: ['Labour will strengthen Kiwisaver for future generations', 13 September 2026 (accessed 14 September 2026)](https://www.labour.org.nz/news/release-labour-will-strengthen-kiwisaver-for-future-generations); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Expand bowel cancer screening and melanoma prevention work (POL55394)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that it is not only possible but practical to raise NZ's bowel screening programme to the same level as Australia's. Making bowel cancer screening and melanoma prevention programmes more accessible means earlier diagnosis, better outcomes and less pressure on hospitals.
+
+**How** (*policy.nz*): This party would expand bowel cancer screening and melanoma prevention. This is in addition to another policy for free cervical screening for everyone aged 25-69 from 1 October 2027, at a cost of $21.6m for the first full year.
+
+Sources: ['Release: Labour to deliver stronger healthcare and protections for rainbow communities', 22 September 2026 (accessed 23 September 2026)](https://www.labour.org.nz/news/release-labour-to-deliver-stronger-healthcare-and-protections-for-rainbow-communities); ['Government must not miss chance to keep bowel screening promise', 4 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/news/release-govt-must-not-miss-chance-to-keep-bowel-screening-promise); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Ensure Pharmac seeks out medicines proactively and is funded apolitically (POL55395)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that medical care should be accessible and affordable. This applies to critical treatments also but this has become political and Pharmac does not pro-actively seek out medicines NZers need.
+
+**How** (*policy.nz*): This party would work across parties to agree to a long-term stable funding model for Pharmac so drug funding doesn't change with governments. It will also require Pharmac to be proactive about seeking out medicines and put the Public Health Agency in charge of deciding the national vaccine schedule.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); ['Labour will get emergency departments moving', 20 October 2026 (accessed 21 October 2026)](https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving); ['263,000 Kiwis at risk of missing out on vote', 30 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/news/release-263-000-kiwis-at-risk-of-missing-out-on-vote); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Improve the delivery of children's dental health (POL55396)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that every child is entitled to free dental care but currently some children do not receive it, due to workforce shortages or a lack of people in rural and remote areas.
+
+**How** (*policy.nz*): This party would improve the delivery of dental healthcare for kids to ensure all NZ children can get the care they're entitled to.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Restore same-day enrolment (POL55397)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that the government should be easy to deal with and make it easy to vote. It should inspire confidence in the political system. However, changes to the voting rules this election mean thousands of people will miss out on exercising their right to vote because they are eligible but not enrolled.
+
+**How** (*policy.nz*): This party would restore same-day enrolment for voters wanting to enrol on the spot.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); ['National is making it harder to vote', 24 July 2026 (accessed 03 October 2026)](https://www.labour.org.nz/news/release-national-is-making-it-harder-to-vote); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Conduct a stock-take of hospital beds and services (POL55398)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that emergency departments are overcrowded, while at the same time existing hospital infrastructure is not being used. This party says it is possible to increase hospital beds through staffing increases and other operational changes, so everyone can get the care they need.
+
+**How** (*policy.nz*): This party would staff EDs with more nurses and and order an independent report of deaths, quality and safety in EDs. It would start winter planning immediately rather than waiting for demand to increase carry out a nationwide stock take of empty beds and the staff needed to fill them. It would also require hospitals to use better real time information about who is in EDs and the process for moving them into wards.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Improve homelessness data and set goals to reduce it (POL55399)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that to eliminate homelessness, we need more data to show who needs help and where. The government needs a clear goal to reduce rough sleepers, and an action plan to address homelessness, particularly for youth.
+
+**How** (*policy.nz*): This party would improve data on homelessness and regular reporting which shows whether rough sleeping is reducing. It would bring government agencies, councils and frontline providers together to form a long-term plan to reduce homelessness that doesn't involve criminalising rough sleeping. It would develop a youth homelessness action plan, and remove barriers to emergency housing while more permanent homes are built.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); ['Move on Bill still punishes the homeless', 3 September 2026 (accessed 07 September 2026)](https://www.labour.org.nz/news/release-move-on-bill-still-punishes-the-homeless); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Ensure 25 percent of new public housing uses universal design (POL55400)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that too few houses are being designed with disabilities in mind, yet 1 in 4 Kiwis will have a disability at some stage of life.
+
+**How** (*policy.nz*): This party would ensure 25% of new public housing uses universal design, so it can be used by anyone. It would also ensure that Kainga Ora's regular renovations programme considers accessibility options, and that it considers a wider range of social housing including accessible and multi-generational homes.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); ['Labour will scrap harmful disability Bill', 2 July 2026 (accessed 24 August 2026)](https://www.labour.org.nz/news/release-labour-will-scrap-harmful-disability-bill); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Increase funding to community housing and Māori-led housing providers (POL55401)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that kickstarting social housing programmes will help reduce homelessness, help struggling families and create more jobs in the construction sector.
+
+**How** (*policy.nz*): This party would raise funding for community housing providers and guarantee Community Housing Funding Agency borrowing so they can built more homes and re-establish Whai Kainga Whai Oranga, a programme discontinued in 2025 which accelerated Māori‑led housing solutions.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); ['Labour to get NZ building and Kiwis back to work', 24 September 2026 (accessed 24 September 2026)](https://wayback-api.archive.org/save/https://www.labour.org.nz/news/release-labour-to-get-new-zealand-building-and-kiwis-back-to-work); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Review the electricity market with the goal of structural reform (POL55402)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that power bills have risen by 20 percent in the last two years. Action is needed to make electricity more affordable, including at peak times, as NZ transitions to cleaner energy.
+
+**How** (*policy.nz*): This party would begin a review of structural reform of the electricity market in its first 100 days and introduce legislation to enact reform within six months.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### End charter schools (POL55403)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that every child should get a great education, with the help they need to do well, and supported teachers. Charter schools promote a privatised, competitive education system which this party says is unnecessary in a strong public education system.
+
+**How** (*policy.nz*): This party would end the charter school model so no new charter schools can be established. It would work with existing charter schools on a case-by-case basis to transition them into the state system, special character or alternative education. It would review state-integrated school legislation to support special-character education within a strong and transparent public system.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Pause curriculum changes and new qualifications for a review (POL55404)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that changes to the school curriculum and secondary qualifications have been rushed. Non-introduced changes should be paused until an independent review is done alongside teachers and proven classroom practice. Any curriculum should be written by New Zealanders, grounded in Te Tiriti, and recognise mātauranga Māori. Teachers should have more flexibility over how they teach the basics.
+
+**How** (*policy.nz*): This party would pause curriculum changes that have not yet been implemented for one year, giving schools breathing room and experts time to assess what should proceed. It would retain NCEA until experts have reviewed the curriculum, assessment and teacher development. It would continue structured literacy but give schools the flexibility to decide how they deliver the daily hour of reading, writing and maths.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Support a tourism plan that supports local areas and reduces carbon emissions (POL55405)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that says NZ should aspire to have a thriving tourism sector that delivers for local communities and protects what makes New Zealand special.
+
+**How** (*policy.nz*): This party would encourage a tourism plan that reduces its environmental impact and develops a pathway towards carbon neutrality. Such a plan would support tourism that generates local jobs and benefits their communities.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Reverse the tobacco tax cut (POL55406)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that a healthy community discourages smoking and vaping. Taxes on tobacco have played a big part in lowering the number of smokers.
+
+**How** (*policy.nz*): This party would legislate for a smokefree generation, and work with retailers to introduce a tobacco and vape retail licensing regime to crack down on illicit tobacco sales. It would reverse National’s tobacco tax cut and introduce a tobacco transparency bill.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### End the minimum wage exemption for disabled workers (POL55407)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that disabled people should not struggle to get support to live with dignity. Disabled people deserve fair pay and the freedom to live independently and with less bureaucracy.
+
+**How** (*policy.nz*): This party would end the Minimum Wage Exemption which allows disabled workers to be paid below the minimum wage. It would work towards systemic change so disabled people can transition into open employment, and end annual benefit renewals for people with verified permanent disabilities.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); ['Labour will scrap harmful disability Bill', 2 July 2026 (accessed 24 August 2026)](https://www.labour.org.nz/news/release-labour-will-scrap-harmful-disability-bill); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### End good character sentencing discounts for child sex offenders (POL55408)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that the court system should stand with victims of child sex abuse and not allow offenders to receive special consideration based on their background.
+
+**How** (*policy.nz*): This party would support ending good-character sentencing discounts for child sexual offenders.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Restore treaty clauses taken out of legislation (POL55409)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that the government needs to be a strong partner with Māori that honours Te Tiriti and upholds and the Treaty principles of participation, protection and partnership.
+
+**How** (*policy.nz*): This party would restore Treaty clauses in legislation so Crown decisionmakers have clear obligations. It would also strengthen Māori leadership and capability across the public service and support Māori decision-making over language, taonga and resources.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Aim for one million te reo Māori speakers by 2040 (POL55411)
+
+_Added on policy.nz, first seen 3 November 2026._
+
+**Why** (*policy.nz*): This party says that te reo and Māori education needs to thrive in everyday life in order to survive.
+
+**How** (*policy.nz*): This party would reinvigorate the goal of one million te reo Māori speakers by 2040 and work towards 30% Māori participation in kaupapa Māori and Māori-medium education by 2040. It would partner with Māori to grow Māori educators and protect the distinct role of wānanga.
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
 ### Updated policies
 
 #### Support a social media ban for under-16s to go through to select committee (POL54753)
@@ -96,6 +296,46 @@ _Updated on policy.nz, seen 28 October 2026: topics._
 **How** (*policy.nz*): This party would introduce more digital regulation to Parliament within the first 100 days, including no social media accounts for under-16s. Social media companies would be legally responsible for policing this, and a new digital duty of care will be introduced with stronger privacy and other protections for those under 18. Other action would include more control for users over their feeds, and stronger rules around deepfakes and non-consensual sexual images. An independent digital regulator will be created, with powers to take action against companies that break the rules.
 
 Sources: ['Safer online' (PDF), 19 October 2026 (accessed 19 October 2026)](documents/safer-online.md) ([original](https://www.labour.org.nz/safer-online)); ['AI in New Zealand's interests', 9 September 2026 (accessed 09 September 2026)](documents/ai-for-new-zealand.md) ([original](https://www.labour.org.nz/ai-for-new-zealand)); ['Labour to make it safer for Kiwis online', 19 October 2026 (accessed 19 October 2026)](documents/release-labour-to-make-it-safer-for-kiwis-online.md) ([original](https://www.labour.org.nz/news/release-labour-to-make-it-safer-for-kiwis-online/)); ['Keeping kids off screens' (PDF), undated (accessed 19 October 2026)](documents/kids-off-screens.md) ([original](https://www.labour.org.nz/kids-off-screens)); ['Getting kids off screens and back to being kids', 18 October 2026 (accessed 19 October 2026)](documents/release-getting-kids-off-screens-and-back-to-being-kids.md) ([original](https://www.labour.org.nz/news/release-getting-kids-off-screens-and-back-to-being-kids/))
+
+#### Provide loans for people to purchase solar set-ups for their homes (POL54717)
+
+_Updated on policy.nz, seen 3 November 2026: why, how, topics, sources._
+
+**Why** (*policy.nz*): This party says that power bills have risen by 20 percent in the last two years. Solar power is the cheapest energy source available; however, high installation and equipment costs remain a large barrier for people. It says this policy would help people with these upfront costs, making cheap power accessible for all.
+
+**How** (*policy.nz*): This party would create a SolarSaver fund, which includes two new Government-backed, long-term, low-interest finance options. The first loan is a lines company loan, where you borrow through your local lines company to cover the cost of solar and a battery, repaid via your power bill. The second loan is a Ratepayer Assistance Scheme, a low-interest loan attached to your home covering solar, batteries and other home electrification. Repayments would be set below your power bill savings. A kickstart subsidy of up to $3,000 would be available for low- and middle-income households. The party would also amend power regulations so renters can use plug-in solar panels, with a subsidy available to cover the cost of purchase. Funding would come from the Government's Gas Security Fund. This party estimates that this policy would cost $160 million over four years.
+
+Sources: ['Labour's Solar Saver', undated (accessed 13 August 2026)](documents/solarsaver.md) ([original](https://www.labour.org.nz/solarsaver)); [Release: Labour to make power bills more affordable with SolarSaver](documents/release-labour-to-make-power-bills-more-affordable-with-solarsaver.md) ([original](https://www.labour.org.nz/news/release-labour-to-make-power-bills-more-affordable-with-solarsaver/)); ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf)
+
+#### Remove rough sleepers from "Move On" bill (POL54889)
+
+_Updated on policy.nz, seen 3 November 2026: sources._
+
+**Why** (*policy.nz*): This party says that the current 'Move On' bill criminalises people for sleeping rough when they have no other option. The bill, introduced as a means of maintaining public order, would require disruptive individuals to leave an area for up to 24 hours or risk a fine or prison. The party says while the bill has been somewhat amended, it still does nothing to fix homelessness, which is only fixed with stable housing.
+
+**How** (*policy.nz*): This party would push to amend the bill at committee stage to remove rough sleeping and begging from the legislation entirely.
+
+Sources: ['Move on Bill still punishes the homeless', 3 September 2026 (accessed 07 September 2026)](documents/release-move-on-bill-still-punishes-the-homeless.md) ([original](https://www.labour.org.nz/news/release-move-on-bill-still-punishes-the-homeless/)); ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf)
+
+#### Allow migrants to move between accredited employers (POL54970)
+
+_Updated on policy.nz, seen 3 November 2026: topics._
+
+**Why** (*policy.nz*): This party says that immigration is a balance between the country's needs and the need to attract talent and skills. To do this, NZ should protect migrants from exploitation and support their arrival, while ensuring that our immigration settings consider NZ's workforce, housing and infrastructure needs.
+
+**How** (*policy.nz*): This party would protect migrants from exploitation by enabling them to move between accredited employers after three months, rather than tying their visa to one employer. By strengthening the Accredited Employer Work Visa scheme, and improving support in their communities, migrants would be less vulnerable,
+
+Sources: ['Labour to ensure an immigration system that works for New Zealand', 11 September 2026 (accessed 12 September 2026)](documents/release-labour-to-ensure-an-immigration-system-that-works-for-new-zealand-1.md) ([original](https://www.labour.org.nz/news/release-labour-to-ensure-an-immigration-system-that-works-for-new-zealand-1/)); [Immigration](documents/immigration.md) ([original](https://www.labour.org.nz/immigration))
+
+#### Add at least 6000 more social housing places over the next 4 years (POL55151)
+
+_Updated on policy.nz, seen 3 November 2026: sources._
+
+**Why** (*policy.nz*): This party says that NZ has a backlog of construction work. Homes need building, schools need improving and hospitals need fixing. Government investment will get this pipeline underway, helping to reduce high unemployment and opportunities for businesses to win work.
+
+**How** (*policy.nz*): This party would provide more social housing - at least 6,000 additional social housing places over four years. As part of this policy, more people will be helped into the trades by expanding the Apprenticeship Boost and Māori Trades Training scheme. This party would budget $2.9bn to spend on Kainga Ora over four years.
+
+Sources: ['Labour is backing Maori into skilled work', 29 August 2026 (accessed 01 September 2026)](documents/maori-trades-training.md) ([original](https://www.labour.org.nz/maori-trades-training)); ['Expanding Apprenticeship Boost', undated (accessed 13 August 2026)](documents/apprenticeshipboost.md) ([original](https://www.labour.org.nz/apprenticeshipboost)); ['Labour to get NZ building and Kiwis back to work', 24 September 2026 (accessed 24 September 2026)](documents/release-labour-to-get-new-zealand-building-and-kiwis-back-to-work.md) ([original](https://www.labour.org.nz/news/release-labour-to-get-new-zealand-building-and-kiwis-back-to-work/)); ['Fiscal Strategy', 23 August 2026 (accessed 24 August 2026)](documents/fiscal-strategy.md) ([original](https://www.labour.org.nz/fiscal-strategy)); [Start Work Now](documents/start-work-now.md) ([original](https://www.labour.org.nz/start-work-now)); ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf)
 
 <!-- GENERATED:policy-updates END -->
 

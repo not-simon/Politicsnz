@@ -6,6 +6,10 @@
 ## 2026 candidacy
 
 - **Electorate:** West Coast-Tasman
+- **Before politics:** Aviation Tutor
+- **Age:** 62
+- **Website:** www.moneyfreeparty.org.nz
+- **Facebook:** https://www.facebook.com/MoneyFreePartyNZ/
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/money-free-party), retrieved Oct 2026._
 <!-- GENERATED:2026-candidacy END -->
