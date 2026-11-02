@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T01:00:14Z",
+ "updated": "2026-11-02T08:12:59Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,14 +126,14 @@
   }
  },
  "counts": {
-  "items": 230,
+  "items": 235,
   "per_party": {
-   "act": 40,
-   "conservative": 17,
+   "act": 41,
+   "conservative": 19,
    "free-palestine": 2,
-   "government": 43,
+   "government": 44,
    "green": 27,
-   "labour": 31,
+   "labour": 32,
    "national": 31,
    "nz-first": 24,
    "te-pati-maori": 11,
@@ -353,7 +353,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 12,
+   "items_matched_to_a_party": 13,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -364,7 +364,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 0,
+   "items_matched_to_a_party": 2,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -381,6 +381,56 @@
   }
  ],
  "items": [
+  {
+   "party": "government",
+   "title": "RIF grant to help build replacement Tinopai Wharf",
+   "date": "2026-11-02T17:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/rif-grant-help-build-replacement-tinopai-wharf",
+   "summary": "The dilapidated and closed Tinopai Wharf on Kaipara Harbour will be replaced with the help of a $1 million grant from the Regional Infrastructure Fund, Regional Development Minister Shane Jones says.…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "conservative",
+   "title": "We Are Ruled By Unelected Bureaucrats",
+   "date": "2026-11-02T16:35+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2611/S00011/we-are-ruled-by-unelected-bureaucrats.htm",
+   "summary": "Ministers have little power to compel their senior staff to act according to their directions (and according to the will of the electorate).",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "conservative",
+   "title": "Fisheries Minister’s Ignoring Of Yellow Eyed Penguin Advice Raises Serious Questions",
+   "date": "2026-11-02T16:31+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2611/S00010/fisheries-ministers-ignoring-of-yellow-eyed-penguin-advice-raises-serious-questions.htm",
+   "summary": "Fisheries Minister Shane Jones has instead chosen a smaller set net ban area than ministry officials thought would best protect endangered yellow-eyed penguins, according to a newly released document.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "act",
+   "title": "Greens Say ‘Ka Kite’ To Employers, Labour Serves Up ‘AI Slop’",
+   "date": "2026-11-02T16:26+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00008/greens-say-ka-kite-to-employers-labour-serves-up-ai-slop.htm",
+   "summary": "Misleading discounts are already illegal under the Fair Trading Act. There’s been a fair bit of conjecture over ‘ai slop’ social media this election campaign, the real villain is Labour’s ‘ai slop’…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "labour",
+   "title": "Labour Will Crack Down On Unfair Charges On Bills",
+   "date": "2026-11-02T14:40+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00007/labour-will-crack-down-on-unfair-charges-on-bills.htm",
+   "summary": "“This election is about the cost of living. Household bills have gone up under National, and every dollar counts,” Labour Leader Chris Hipkins said.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
   {
    "party": "government",
    "title": "Government support for Turner Centre upgrade",
