@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T18:02:40Z",
+ "updated": "2026-11-03T23:38:17Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,16 +126,16 @@
   }
  },
  "counts": {
-  "items": 247,
+  "items": 258,
   "per_party": {
-   "act": 43,
-   "conservative": 18,
+   "act": 45,
+   "conservative": 19,
    "free-palestine": 2,
-   "government": 50,
+   "government": 53,
    "green": 27,
-   "labour": 34,
-   "national": 34,
-   "nz-first": 24,
+   "labour": 35,
+   "national": 37,
+   "nz-first": 25,
    "te-pati-maori": 11,
    "womens-rights": 4
   }
@@ -353,7 +353,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 13,
+   "items_matched_to_a_party": 15,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -364,7 +364,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 3,
+   "items_matched_to_a_party": 2,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -381,6 +381,116 @@
   }
  ],
  "items": [
+  {
+   "party": "national",
+   "title": "Jobs Data Shows Why Kiwis Can’t Risk Labour",
+   "date": "2026-11-04T12:14+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00022/jobs-data-shows-why-kiwis-cant-risk-labour.htm",
+   "summary": "“Unemployment will rise if a Labour, Greens, Te Pāti Māori, Opportunity government gets the chance to increase borrowing and taxation and put more obstacles in the path of Kiwi businesses,\" says…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "labour",
+   "title": "Luxon's Failed Record Laid Bare",
+   "date": "2026-11-04T11:54+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00021/luxons-failed-record-laid-bare.htm",
+   "summary": "\"National wiped out around 20,000 construction jobs, and cut thousands of public service positions. Skilled workers are losing their jobs while businesses are struggling to stay afloat\" said Labour…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "act",
+   "title": "New Zealand Has One Of The World's Worst Retirement Taxes. ACT Will Fix It",
+   "date": "2026-11-04T11:36+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00020/new-zealand-has-one-of-the-worlds-worst-retirement-taxes-act-will-fix-it.htm",
+   "summary": "“ACT will remove tax on KiwiSaver earnings, allowing New Zealanders to keep more of their own money growing for retirement,\" says ACT Leader David Seymour.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "Hipkins' Pledge Can’t Survive Greens Negotiations",
+   "date": "2026-11-04T11:03+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00019/hipkins-pledge-cant-survive-greens-negotiations.htm",
+   "summary": "“A party vote for anyone other than National risks Labour finishing as the largest party and forming a coalition with the Greens, which would send us all backwards,\" says National's Campaign Chair…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "government",
+   "title": "Geothermal exploration for Taranaki and Waikato",
+   "date": "2026-11-04T11:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/geothermal-exploration-taranaki-and-waikato",
+   "summary": "Two Māori-led early exploration projects in Taranaki and South Waikato could unlock new geothermal opportunities beyond New Zealand’s established geothermal areas, supporting regional growth and…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "nz-first",
+   "title": "NZFirst Policy Announcement: Establish Legally Recognised Accessibility Standards",
+   "date": "2026-11-04T09:58+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00018/nzfirst-policy-announcement-establish-legally-recognised-accessibility-standards.htm",
+   "summary": "Accessibility barriers continue to affect many New Zealanders in their daily interactions with public services, transport, communications, banking, education, justice services, and essential…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand First Party"
+  },
+  {
+   "party": "government",
+   "title": "Wairarapa grain storage set to benefit farmers",
+   "date": "2026-11-04T09:50+13:00",
+   "url": "https://www.beehive.govt.nz/release/wairarapa-grain-storage-set-benefit-farmers",
+   "summary": "Wairarapa farmers and allied contractors will reap the benefits of a $1.55 million loan from the Regional Infrastructure Fund to support the establishment of a new grain drying and storage facility…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Foxton wetland restoration backed by RIF",
+   "date": "2026-11-04T09:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/foxton-wetland-restoration-backed-rif",
+   "summary": "The restoration and development of Piriharakeke, the river loop at Foxton, will be supported by a grant of up to $3 million from the Regional Infrastructure Fund, Regional Development Minister Shane…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "conservative",
+   "title": "Conservative NZ Policy: Review And Reform Of The Conversion Practices Prohibition Legislation Act 2022",
+   "date": "2026-11-04T08:59+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2611/S00025/conservative-nz-policy-review-and-reform-of-the-conversion-practices-prohibition-legislation-act-2022.htm",
+   "summary": "Parents should not be presumed abusive simply because they do not agree with a child's expressed gender identity or do not immediately support a particular social or medical course of action.,",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "act",
+   "title": "86 Per Cent Of GP Owners Back ACT's Plan To Boost Funding",
+   "date": "2026-11-04T08:26+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00017/86-per-cent-of-gp-owners-back-acts-plan-to-boost-funding.htm",
+   "summary": "One of the many differences between us and Labour is that our promises are fully funded though, and we invest where it matters, says ACT Leader David Seymour.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "National’s Manifesto To Secure NZ’s Future",
+   "date": "2026-11-04T08:03+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00016/nationals-manifesto-to-secure-nzs-future.htm",
+   "summary": "Inflation and interest rates are down from the record highs reached under Labour, kids are back in school and learning the basics, and our streets are safer, National Leader Christopher Luxon says.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
   {
    "party": "national",
    "title": "Kiwis Only Need To Look At Labour’s Record On Tax",
