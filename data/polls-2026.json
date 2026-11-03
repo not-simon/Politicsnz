@@ -2612,7 +2612,7 @@
    "end_date": "2023-11-27"
   }
  ],
- "source_revid": 1383533577,
+ "source_revid": 1383614168,
  "pollsters": {
   "1 News–Verian": {
    "commissioner": "TVNZ 1News",
@@ -2917,6 +2917,42 @@
     "green": 4.2,
     "act": 3.6,
     "opportunity": 2.8
+   }
+  },
+  {
+   "electorate": "Tāmaki",
+   "date": "21–28 Oct 2026",
+   "end_date": "2026-10-28",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "party",
+   "results": {
+    "national": 45.0,
+    "labour": 16.0,
+    "green": 6.0,
+    "act": 19.0,
+    "nz-first": 6.0,
+    "te-pati-maori": 3.0,
+    "opportunity": 6.0
+   }
+  },
+  {
+   "electorate": "Tāmaki",
+   "date": "21–28 Oct 2026",
+   "end_date": "2026-10-28",
+   "pollster": "Taxpayers' Union–Curia",
+   "sample_size": 400,
+   "source_url": null,
+   "vote": "electorate",
+   "results": {
+    "national": 42.0,
+    "labour": 16.0,
+    "green": 5.0,
+    "act": 24.0,
+    "nz-first": 3.0,
+    "te-pati-maori": 4.0,
+    "opportunity": 7.0
    }
   },
   {
