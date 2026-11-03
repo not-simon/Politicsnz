@@ -1,7 +1,7 @@
 {
  "title": "Opinion polls (party vote) for the 2026 New Zealand general election, since the 14 Oct 2023 election",
  "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
- "retrieved": "2026-11-02",
+ "retrieved": "2026-11-03",
  "parties": {
   "NAT": "national",
   "LAB": "labour",
@@ -12,8 +12,27 @@
   "OPP": "opportunity"
  },
  "notes": "Percentages as published (decided voters; undecided excluded by every pollster). 'end_date' is the sort date used by Wikipedia (last fieldwork day or release date). Rows are newest first. 'others' = combined minor parties where listed. 'pollster_key' groups series that changed name; 'internal' marks party/corporate-client polls that are published selectively. Poll sources: each row's source_url as linked on Wikipedia. Refreshed by tools/polls_update.py.",
- "count": 131,
+ "count": 132,
  "polls": [
+  {
+   "date": "29 Oct – 2 Nov 2026",
+   "end_date": "2026-11-02",
+   "pollster": "1 News–Verian",
+   "source_url": "https://www.1news.co.nz/2026/11/03/final-poll-election-set-to-go-down-to-wire-as-nationals-partners-slip/",
+   "sample_size": 1006,
+   "results": {
+    "national": 29.5,
+    "labour": 28.8,
+    "green": 16.4,
+    "act": 10.0,
+    "nz-first": 8.4,
+    "te-pati-maori": 0.4,
+    "opportunity": 6.2
+   },
+   "others": 0.2,
+   "pollster_key": "1 News–Verian",
+   "internal": false
+  },
   {
    "date": "20–26 Oct 2026",
    "end_date": "2026-10-26",
@@ -2593,7 +2612,7 @@
    "end_date": "2023-11-27"
   }
  ],
- "source_revid": 1383260438,
+ "source_revid": 1383533577,
  "pollsters": {
   "1 News–Verian": {
    "commissioner": "TVNZ 1News",
@@ -2601,7 +2620,7 @@
    "method": "Landline + mobile CATI and online panel, n≈1,000, max. sampling error ±3.1 pts at 95%",
    "type": "public-media",
    "history": "Same series as 1 News–Colmar Brunton (to 2021) and 1 News–Kantar Public (2021–23)",
-   "n_polls": 21
+   "n_polls": 22
   },
   "RNZ–Reid Research": {
    "commissioner": "RNZ (previously Newshub, to 2024)",
