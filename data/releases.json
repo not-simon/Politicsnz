@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T08:12:59Z",
+ "updated": "2026-11-03T01:45:52Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,15 +126,15 @@
   }
  },
  "counts": {
-  "items": 235,
+  "items": 247,
   "per_party": {
-   "act": 41,
-   "conservative": 19,
+   "act": 43,
+   "conservative": 20,
    "free-palestine": 2,
-   "government": 44,
+   "government": 49,
    "green": 27,
-   "labour": 32,
-   "national": 31,
+   "labour": 34,
+   "national": 33,
    "nz-first": 24,
    "te-pati-maori": 11,
    "womens-rights": 4
@@ -364,7 +364,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 2,
+   "items_matched_to_a_party": 3,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -381,6 +381,126 @@
   }
  ],
  "items": [
+  {
+   "party": "national",
+   "title": "‘Sky-High’ Retail Confidence Under National, At Risk Under Labour",
+   "date": "2026-11-03T14:31+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00014/sky-high-retail-confidence-under-national-at-risk-under-labour.htm",
+   "summary": "Higher taxes and higher interest rates are a recipe for weaker consumer confidence – just as households and businesses are starting to feel the recovery, National’s Finance and Economic Growth…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "act",
+   "title": "Unlocking Better Access To Healthcare For Every New Zealander",
+   "date": "2026-11-03T13:21+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00013/unlocking-better-access-to-healthcare-for-every-new-zealander.htm",
+   "summary": "\"ACT’s health policy package will invest an additional $400 million in general practice over four years\", says ACT Leader David Seymour.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "labour",
+   "title": "Three More Years Of National A Threat To Our Health System",
+   "date": "2026-11-03T12:53+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00012/three-more-years-of-national-a-threat-to-our-health-system.htm",
+   "summary": "\"One man is waiting for cancer treatment, another has spent two years with a catheter waiting for an operation. This is the reality of the health system under National\", says Labour health…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "act",
+   "title": "Three Strikes For Hipkins On Charter Schools",
+   "date": "2026-11-03T11:52+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00011/three-strikes-for-hipkins-on-charter-schools.htm",
+   "summary": "Chris Hipkins should be celebrating schools that are helping students succeed, not threatening to abolish the model to keep his union mates happy\", says ACT Leader David Seymour.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "government",
+   "title": "Government backs regional airline Air Napier",
+   "date": "2026-11-03T10:30+13:00",
+   "url": "https://www.beehive.govt.nz/release/government-backs-regional-airline-air-napier",
+   "summary": "The Government is continuing its support for regional air services, with Regional Development Minister Shane Jones and Associate Transport Minister James Meager announcing an $845,000 loan to Hawke’s…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Govt nurturing New Zealand’s seed supply chain",
+   "date": "2026-11-03T10:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/govt-nurturing-new-zealands-seed-supply-chain",
+   "summary": "Hawke’s Bay’s arable sector is set to benefit from a $3 million Regional Infrastructure Fund loan for a new grower-led seed cleaning, processing and storage facility in Central Hawke’s Bay, Associate…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "national",
+   "title": "Party Vote National To Protect Farmers’ Gains",
+   "date": "2026-11-03T09:45+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00010/party-vote-national-to-protect-farmers-gains.htm",
+   "summary": "In 2023, National campaigned on getting Wellington out of farming and backing our farmers to drive the economic recovery and we have delivered. Now, we’re asking farmers for their support to stick…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "government",
+   "title": "Government backing Whale Trail tourism venture",
+   "date": "2026-11-03T09:39+13:00",
+   "url": "https://www.beehive.govt.nz/release/government-backing-whale-trail-tourism-venture",
+   "summary": "The Government is investing up to $12 million to connect Picton to the Whale Trail cycling and walking track, Transport and Infrastructure Minister Chris Bishop and Tourism and Hospitality Minister…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "conservative",
+   "title": "New Zealand Is Being Taken For A Ride",
+   "date": "2026-11-03T09:35+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2611/S00015/new-zealand-is-being-taken-for-a-ride.htm",
+   "summary": "In other countries (for example the USA and Canada), government immigration departments have been known to be penetrated by organised criminals, who use their positions to sell visas to their mates.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
+  {
+   "party": "government",
+   "title": "Government support for aged care facility",
+   "date": "2026-11-03T09:30+13:00",
+   "url": "https://www.beehive.govt.nz/release/government-support-aged-care-facility",
+   "summary": "A loan from the Regional Infrastructure Fund will help fund a much-needed new 24-bed wing at O’Conor Home for senior citizens in Westport, Regional Development Minister Shane Jones and Associate…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "labour",
+   "title": "Brown Ducks Questions As Graduate Nurses Left Without Jobs",
+   "date": "2026-11-03T08:05+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00009/brown-ducks-questions-as-graduate-nurses-left-without-jobs.htm",
+   "summary": "In a questionnaire from the New Zealand Nurses Organisation, Brown refused to answer questions about National’s plans for the nursing workforce, claiming they have politicised health.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "government",
+   "title": "Government backing iwi-led geothermal potential",
+   "date": "2026-11-03T08:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/government-backing-iwi-led-geothermal-potential",
+   "summary": "Funding for two iwi-led geothermal projects near Rotorua will help build the knowledge needed to better understand the Bay of Plenty’s geothermal potential, Regional Development Minister Shane Jones…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
   {
    "party": "government",
    "title": "RIF grant to help build replacement Tinopai Wharf",
