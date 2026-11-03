@@ -282,6 +282,18 @@ _Updated on policy.nz, seen 28 October 2026: sources._
 
 Sources: ['Keep agriculture in the curriculum', 9 October 2026 (accessed 09 October 2026)](documents/news-keep-agriculture-in-the-curriculum.md) ([original](https://www.act.org.nz/news/keep-agriculture-in-the-curriculum)); [Make Farming Fun Again](documents/make-farming-fun-again.md) ([original](https://www.act.org.nz/make-farming-fun-again)); [ACT’s Plan to Make Farming Fun Again](documents/pdf-acts-plan-to-make-farming-fun-again.md) ([original](https://assets.nationbuilder.com/actnz/pages/37460/attachments/original/1789711573/ACT's_plan_to_Make_Farming_Fun_Again.pdf?1789711573)); ['ACT will drive down costs for farmers', 22 October 2026 (accessed 23 October 2026)](https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers)
 
+#### Ban scallop dredging (POL55289)
+
+_Updated on policy.nz, seen 3 November 2026: statement, topics._
+
+Previously: "Bad scallop dredging"
+
+**Why** (*policy.nz*): This party says that practice of scallop dredging damages the seabed, so that fisheries can be closed down to recover. Alternative harvesting methods exist, so the particular method of scallop dredging is not needed.
+
+**How** (*policy.nz*): This party would permanently ban scallop dredging in scallop fisheries that are currently closed. It would allow selective harvesting technologies as stock numbers recover.
+
+Sources: ['Unlocking New Zealand’s Fishing Potential' (PDF), 30 August 2026 (accessed 14 October 2026)](documents/pdf-unlocking-new-zealands-fishing-potential.md) ([original](https://assets.nationbuilder.com/actnz/pages/36668/attachments/original/1787875748/Unlocking_New_Zealand%27s_Fishing_Potential.pdf?1787875748)); [Plenty Is Possible](documents/plenty-is-possible.md) ([original](https://www.act.org.nz/plenty-is-possible))
+
 <!-- GENERATED:policy-updates END -->
 
 ## Headline commitments

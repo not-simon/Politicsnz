@@ -580,7 +580,7 @@
  },
  {
   "id": "POL54747",
-  "statement": "Ensure government balance sheet is in surplus by 2029/2030",
+  "statement": "Aim to create a government surplus by 2028/29",
   "topics": [
    "economy",
    "government-revenue-and-finance",
@@ -591,7 +591,7 @@
   "primary_group": "economy",
   "summary": {
    "why": "This party says that it is possible to return to a positive operating balance without shrinking the economy.",
-   "how": "This party would restore the OBEGAL (operating balance before gains and losses) fiscal measurement, and removing OBEGALx, the measure used by the current government which excludes ACC revenue and expenses. This party aims to return New Zealand to an OBEGAL surplus in 2029/2030, using the same timing forecast in Budget 2026."
+   "how": "This party would restore the OBEGAL (operating balance before gains and losses) fiscal measurement, and removing OBEGALx, the measure used by the current government which excludes ACC revenue and expenses. This party aims to return New Zealand to an OBEGAL surplus in 2028/29 using the same timing forecast in Budget 2026."
   },
   "summary_source": "policy.nz",
   "costing": null,
@@ -619,9 +619,30 @@
     "url": "https://www.labour.org.nz/news/release-labour-will-back-kiwis-with-a-responsible-fiscal-plan/",
     "added_by_archive": true,
     "document": "documents/release-labour-will-back-kiwis-with-a-responsible-fiscal-plan.md"
+   },
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
    }
   ],
-  "notes": "Timing differs between sources: policy.nz (citing Labour's fiscal strategy page, archived 24 Aug 2026) says an OBEGAL surplus in 2029/30; Labour's later Fiscal Plan (labour.org.nz/fiscal-plan, released 4 Oct 2026) says an OBEGAL surplus in 2028/29."
+  "notes": "Timing differs between sources: policy.nz (citing Labour's fiscal strategy page, archived 24 Aug 2026) says an OBEGAL surplus in 2029/30; Labour's later Fiscal Plan (labour.org.nz/fiscal-plan, released 4 Oct 2026) says an OBEGAL surplus in 2028/29.",
+  "policy_nz_updated": "2026-11-03",
+  "changes": [
+   {
+    "date": "2026-11-03",
+    "fields": [
+     "statement",
+     "how",
+     "sources"
+    ],
+    "previous": {
+     "statement": "Ensure government balance sheet is in surplus by 2029/2030",
+     "how": "This party would restore the OBEGAL (operating balance before gains and losses) fiscal measurement, and removing OBEGALx, the measure used by the current government which excludes ACC revenue and expenses. This party aims to return New Zealand to an OBEGAL surplus in 2029/2030, using the same timing forecast in Budget 2026."
+    }
+   }
+  ]
  },
  {
   "id": "POL54748",
@@ -669,7 +690,7 @@
  },
  {
   "id": "POL54749",
-  "statement": "Create a GDP target for core Crown spending and revenue",
+  "statement": "Create a GDP target of 33 percent for core Crown spending and revenue",
   "topics": [
    "economy",
    "transport-and-infrastructure",
@@ -683,7 +704,7 @@
   "primary_group": "law-justice-and-government",
   "summary": {
    "why": "This party says that New Zealand should be investing now for a more productive future by reducing the future debt burden and investing in key capital projects like ferries, hospitals and schools.",
-   "how": "This party would hold core Crown expenditure and revenue at around 33% of GDP (gross domestic product) when a capital gains tax is fully implemented."
+   "how": "This party would hold core Crown expenditure and revenue at around 33 percent of GDP (gross domestic product) when a capital gains tax is fully implemented."
   },
   "summary_source": "policy.nz",
   "costing": null,
@@ -699,6 +720,20 @@
     "url": "https://www.labour.org.nz/policy",
     "added_by_archive": true,
     "document": "documents/policy.md"
+   }
+  ],
+  "policy_nz_updated": "2026-11-03",
+  "changes": [
+   {
+    "date": "2026-11-03",
+    "fields": [
+     "statement",
+     "how"
+    ],
+    "previous": {
+     "statement": "Create a GDP target for core Crown spending and revenue",
+     "how": "This party would hold core Crown expenditure and revenue at around 33% of GDP (gross domestic product) when a capital gains tax is fully implemented."
+    }
    }
   ]
  },
@@ -5122,6 +5157,584 @@
   "summary": {
    "why": "This party says that te reo and Māori education needs to thrive in everyday life in order to survive.",
    "how": "This party would reinvigorate the goal of one million te reo Māori speakers by 2040 and work towards 30% Māori participation in kaupapa Māori and Māori-medium education by 2040. It would partner with Māori to grow Māori educators and protect the distinct role of wānanga."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55410",
+  "statement": "Give Māori more autonomy over their education and require school boards to give effect to Te Tiriti",
+  "topics": [
+   "te-ao-maori",
+   "education",
+   "te-reo-maori-and-culture",
+   "schools",
+   "early-childhood-education",
+   "tertiary-education-and-research",
+   "te-tiriti-o-waitangi-and-governance"
+  ],
+  "primary_group": "te-ao-maori",
+  "summary": {
+   "why": "This party says that the government should work in genuine partnership with Māori on Māori education.",
+   "how": "This party would require school boards to give effect to Te Tiriti, and enable greater Māori leadership over Māori education. This would include expanding kōhanga reo, puna reo, kura kaupapa Māori and kura-ā-iwi."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55412",
+  "statement": "Support growth in the creative industries, especially game development",
+  "topics": [
+   "media-culture-and-recreation",
+   "economy",
+   "education",
+   "broadcasting-and-media",
+   "business-support",
+   "internet-and-digital-technologies",
+   "arts-culture-and-heritage",
+   "economic-development-and-industry",
+   "tertiary-education-and-research"
+  ],
+  "primary_group": "media-culture-and-recreation",
+  "summary": {
+   "why": "This party says that the government should invest in the productive economy, rather than the unproductive housing sector. The creative industries, especially the game industry, have untapped potential to create new businesses and jobs.",
+   "how": "This party would expand the Game Development Sector Rebate and explore similar types of support elsewhere in the creative industries. It would protect industry training for the creative industries (games, films, TV etc.) with the transition to Industry Skills Boards and increase the opportunities for apprenticeships in the creative industries."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55413",
+  "statement": "Fund water storage and catchment groups in rural areas",
+  "topics": [
+   "environment",
+   "community-and-inclusion",
+   "te-ao-maori",
+   "economy",
+   "fresh-water-and-pollution",
+   "animal-welfare",
+   "land-and-resources",
+   "agriculture",
+   "te-tiriti-o-waitangi-and-governance"
+  ],
+  "primary_group": "environment",
+  "summary": {
+   "why": "This party says that freshwater security is a problem for farmers, who use extensive irrigation to water their land. This water comes from rivers and aquifers, but the levels can change. Water storage gives farmers the ability to keeps water outside of the natural systems that drain to the sea. Catchment groups can work together to plan water storage.",
+   "how": "This party would progress water storage funding for farmers. It would continue to support catchment groups, made up of farmers, Māori, local communities and environmental groups to discuss water issues, in particular river systems."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55414",
+  "statement": "Grow wood processing in NZ",
+  "topics": [
+   "economy",
+   "forestry",
+   "economic-development-and-industry",
+   "agriculture"
+  ],
+  "primary_group": "economy",
+  "summary": {
+   "why": "This party says that NZ grows trees but wood is often processed offshore. More wood processing taking place in NZ increases the value of the wood and provides jobs.",
+   "how": "This party would support the growth of wood processing industry in NZ, especially businesses that use the whole tree."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55415",
+  "statement": "Establish an independent redress system for survivors of abuse in state care",
+  "topics": [
+   "incomes-and-employment",
+   "law-justice-and-government",
+   "benefits",
+   "public-sector"
+  ],
+  "primary_group": "incomes-and-employment",
+  "summary": {
+   "why": "This party says that survivors of abuse in state care, as detailed in the Royal Commission of Inquiry into Abuse in Care, deserve compensation for what they have suffered. This party says NZ needs to learn about its history and follow proposals to compensate those who have been harmed in care.",
+   "how": "This party would create an independent redress system in line with the High Level Design Group's proposal. It would revisit findings on torture (beyond the Lake Alice findings) in care and amend the Limitations Act so that time limits would not stop people seeking compensation."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55416",
+  "statement": "Create a national memorial day for victims of abuse in state care",
+  "topics": [
+   "health",
+   "media-culture-and-recreation",
+   "public-health",
+   "arts-culture-and-heritage"
+  ],
+  "primary_group": "health",
+  "summary": {
+   "why": "This party says that as detailed in the Royal Commission of Inquiry into Abuse in Care, thousands of New Zealanders suffered horribly at the hands of the state. All New Zealanders should learn about this history and ongoing issues of harm to children and vulnerable adults.",
+   "how": "This party would create an annual memorial day for the public to learn about NZ's history of abuse, and ongoing issues of harm to vulnerable people. It would not be a statutory holiday."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55417",
+  "statement": "Support social workers and youth workers",
+  "topics": [
+   "community-and-inclusion",
+   "incomes-and-employment",
+   "young-people",
+   "jobs-and-employment"
+  ],
+  "primary_group": "community-and-inclusion",
+  "summary": {
+   "why": "This party says that there are not enough people supporting young people in this country, especially for young people in difficult situations, such as having a parent in prison. More social workers are needed, and youth workers should have professional qualifications.",
+   "how": "This party would develop and long-term plan for recruiting, training and retaining social workers. It would support professional qualifications for youth workers and whānau navigators for young people with parents in prison."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55418",
+  "statement": "Make community refugee sponsorship additional to the annual refugee quota",
+  "topics": [
+   "migration"
+  ],
+  "primary_group": "migration",
+  "summary": {
+   "why": "This party says that community refugee sponsorship is a scheme where particular groups (i.e. a church or community) can agree to support refugees with housing and adjusting to life in Aotearoa, which is normally carried out and paid for by the government. After an initial trial period, the scheme has been extended but the number of community-sponsored refugees is folded into the general refugee quota rather than being additional to it.",
+   "how": "This party would make the places available through community refugee sponsorship additional to the annual refugee quota and increase the quota over time."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55419",
+  "statement": "Create additional support for asylum seekers and people fleeing humanitarian crises",
+  "topics": [
+   "migration",
+   "community-and-inclusion",
+   "rainbow-community"
+  ],
+  "primary_group": "migration",
+  "summary": {
+   "why": "This party says that no matter the circumstances of leaving their countries, all people deserve support. Increasing options for asylum seekers who are recognised as refugees and humanitarian visas will support people in crisis. Rainbow people face particular persecution and harassment and so this party says spots should be reserved for them.",
+   "how": "This party would create a humanitarian visa for family members of New Zealanders in places of war and crisis. It would also give recognised refugees who arrived as asylum seekers the same support as other refugees and ave at least 15 dedicated spots on the refugee quota set aside for Rainbow people facing persecution in their countries."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55420",
+  "statement": "Reassert Māori-led services and community care for Māori children and youth",
+  "topics": [
+   "te-ao-maori",
+   "community-and-inclusion",
+   "law-justice-and-government",
+   "te-tiriti-o-waitangi-and-governance",
+   "wellbeing-and-services",
+   "young-people",
+   "civil-justice",
+   "criminal-justice"
+  ],
+  "primary_group": "te-ao-maori",
+  "summary": {
+   "why": "This party says that young Māori people may lose connection with their roots and whānau when they encounter support services and state care. This party would strengthen the rights of young Māori which protect their identity and whanau connections. This also recognises the Crown's treaty obligations.",
+   "how": "This party would reinstate and strengthen Section 7AA so tamariki Māori and rangatahi remain connected to their family and identity. In partnership with Māori, it would create a 10-year plan to devolve care and protection services closer to whānau, where it is safe to do so, and move towards smaller, community-based youth justice homes."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55421",
+  "statement": "Set up a $30m fund for community solar batteries",
+  "topics": [
+   "transport-and-infrastructure",
+   "environment",
+   "energy",
+   "climate-adaptation",
+   "infrastructure-funding-and-planning"
+  ],
+  "primary_group": "transport-and-infrastructure",
+  "summary": {
+   "why": "This party says that community resilience is going to be increasingly important to adapt to climate change. NZ has abundant clean energy and we should be using it to lower power bills, create good jobs and make our communities more secure.",
+   "how": "This party would establish a $30m fund for community batteries to store solar power. Community batteries will let more neighbourhoods share the benefits of locally generated power, including households without panels on their roofs. Installing that equipment will also create work for local electricians, installers and apprentices."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55422",
+  "statement": "Establish a National Adaption Act so communities can plan for climate resilience",
+  "topics": [
+   "transport-and-infrastructure",
+   "environment",
+   "energy",
+   "climate-adaptation",
+   "urban-planning-and-resource-management"
+  ],
+  "primary_group": "transport-and-infrastructure",
+  "summary": {
+   "why": "This party says that community resilience is going to be increasingly important as we adapt to climate change. Communities, councils and business need a clear plan for protecting homes and infrastructure from extreme weather.",
+   "how": "This party would pass a national Adaptation Act so communities, councils, Māori and government can plan together. It would work with banks and insurers on affordable finance to make homes more resilient, and prevent building in the highest-risk locations, supporting development in safer areas."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55423",
+  "statement": "Ensure benefits and rent subsidies keep up with the cost of living",
+  "topics": [
+   "incomes-and-employment",
+   "housing",
+   "benefits",
+   "social-and-public-housing"
+  ],
+  "primary_group": "incomes-and-employment",
+  "summary": {
+   "why": "This party says that people should be able to count on support that gives them security and the chance to get ahead.",
+   "how": "This party would make sure support doesn’t fall behind the cost of living. It would increase benefits by whichever is higher: inflation or average wage growth through indexation. It would reverse National’s changes to the Income-Related Rent Subsidy and Accommodation Supplement."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55424",
+  "statement": "Reinstate the ban on offshore oil and gas exploration",
+  "topics": [
+   "economy",
+   "environment",
+   "transport-and-infrastructure",
+   "oil-gas-and-mining",
+   "energy"
+  ],
+  "primary_group": "environment",
+  "summary": {
+   "why": "This party says that it's time to transition away from fossil fuels to cleaner forms of energy. NZ has abundant clean energy which will be cheaper and prepare us better for the future.",
+   "how": "This party would reinstate the ban on offshore oil and gas exploration, and phase out low-and medium-heat coal boilers by 2037. It would also stop the proposed LNG import facility in Taranaki."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55425",
+  "statement": "Stop planned LNG import terminal in Taranaki",
+  "topics": [
+   "economy",
+   "transport-and-infrastructure",
+   "environment",
+   "oil-gas-and-mining",
+   "energy",
+   "emissions-reduction"
+  ],
+  "primary_group": "economy",
+  "summary": {
+   "why": "This party says that it's time to transition away from fossil fuels to cleaner forms of energy. NZ has abundant clean energy which will be cheaper and prepare us better for the future.",
+   "how": "This party would stop the proposed LNG import facility in Taranaki."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55426",
+  "statement": "Increase protection in the Hauraki Gulf",
+  "topics": [
+   "environment",
+   "economy",
+   "oceans",
+   "fisheries",
+   "conservation"
+  ],
+  "primary_group": "environment",
+  "summary": {
+   "why": "This party says that there should be an ecosystem approach to fisheries management, especially in the Hauraki Gulf. Types of fishing like ringnet fishing and bottom trawling should be restricted in these areas.",
+   "how": "This party would remove ring-net fishing rights in the Hauraki Gulf High Protection Areas. It would also investigate restricting trawling within the 100-metre contour with exceptions for specialty fisheries. It would fully ban bottom trawling in the Hauraki Gulf Marine Park."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55427",
+  "statement": "Aim to protect 30 percent of NZ's ocean areas",
+  "topics": [
+   "economy",
+   "environment",
+   "fisheries",
+   "oceans"
+  ],
+  "primary_group": "economy",
+  "summary": {
+   "why": "This party says that healthy seas and marine life should be protected for future generations. Expanding protected areas will mean more sea life flourishing in NZ and work towards the international goal of protecting 30% of the ocean.",
+   "how": "This party would aim to protect 30 percent of NZ's marine environment. It would ban seabed mining, prevent new areas of seamount from bottom trawling and reform marine protection law to include estuaries, wetlands and salt marshes."
+  },
+  "summary_source": "policy.nz",
+  "sources": [
+   {
+    "title": "'Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)",
+    "url": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+    "cited_by": "policy.nz",
+    "archived_url": "https://web.archive.org/web/20261030044455/https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf"
+   },
+   {
+    "title": "policy.nz party page",
+    "url": "https://policy.nz/2026/party-vote/parties/labour-party",
+    "cited_by": "policy.nz"
+   }
+  ],
+  "has_fulltext": false,
+  "added": "2026-11-03"
+ },
+ {
+  "id": "POL55428",
+  "statement": "Ratify the High Seas biodiversity treaty",
+  "topics": [
+   "environment",
+   "defence-and-foreign-affairs",
+   "oceans",
+   "international-relations",
+   "conservation"
+  ],
+  "primary_group": "environment",
+  "summary": {
+   "why": "This party says that NZ's ocean needs to be protected, but NZ should also join other countries in protecting biodiversity in the high seas, beyond national jurisdictions.",
+   "how": "This party would ratify the United Nations treaty on biodiversity in the high seas. If elected, this party would do this within its first 100 days in office."
   },
   "summary_source": "policy.nz",
   "sources": [

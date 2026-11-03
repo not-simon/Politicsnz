@@ -21,6 +21,12 @@ Paterson is a West Coaster and a father of four. His Labour profile says he join
 
 - **Electorate:** West Coast-Tasman
 - **List ranking:** 54
+- **Before politics:** Teacher
+- **Age:** 42
+- **Public email:** rory.paterson@labour.org.nz
+- **Website:** https://www.labour.org.nz/2026-campaign/our-candidates/rory-paterson/
+- **Facebook:** https://www.facebook.com/RoryforWestCoastTasman/
+- **Instagram:** https://www.instagram.com/rory4westcoasttasman/
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/labour-party), retrieved Oct 2026._
 <!-- GENERATED:2026-candidacy END -->

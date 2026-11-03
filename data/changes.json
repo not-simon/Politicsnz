@@ -1,19 +1,423 @@
 {
  "_about": "What changed: new and changed policies and candidates (policy.nz), new polls and party releases, newest first. Built by tools/changelog.py; last 60 days. Release entries are headline + link only. `_snapshot` is the state the next run compares against (not published to the site).",
- "updated": "2026-11-03T00:08:21+13:00",
+ "updated": "2026-11-03T23:55:42+13:00",
  "window_days": 60,
- "policy_nz_checked": "2026-11-03T00:04:18+13:00",
+ "policy_nz_checked": "2026-11-03T23:51:44+13:00",
  "policy_nz_failures": 0,
  "counts": {
-  "candidate-changed": 9,
-  "policy-added": 86,
-  "policy-changed": 52,
+  "candidate-changed": 13,
+  "policy-added": 104,
+  "policy-changed": 55,
   "policy-withdrawn": 1,
-  "poll-added": 13,
-  "release": 187,
+  "poll-added": 14,
+  "release": 196,
   "site": 1
  },
  "entries": [
+  {
+   "id": "poll-added:-:2026-11-02|1 News–Verian",
+   "date": "2026-11-03",
+   "kind": "poll-added",
+   "party": null,
+   "title": "1 News–Verian",
+   "summary": "Fieldwork 29 Oct – 2 Nov 2026, 1,006 people.",
+   "url": "#/seats/polls",
+   "source": "https://www.1news.co.nz/2026/11/03/final-poll-election-set-to-go-down-to-wire-as-nationals-partners-slip/",
+   "time": "2026-11-03T23:55:42+13:00",
+   "poll_date": "2026-11-02"
+  },
+  {
+   "id": "policy-changed:labour:POL54749:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "policy-changed",
+   "party": "labour",
+   "title": "Create a GDP target of 33 percent for core Crown spending and revenue",
+   "summary": "Reworded (was “Create a GDP target for core Crown spending and revenue”); summary updated.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-will-back-kiwis-and-grow-the-economy/",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL54749"
+  },
+  {
+   "id": "policy-changed:labour:POL54747:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "policy-changed",
+   "party": "labour",
+   "title": "Aim to create a government surplus by 2028/29",
+   "summary": "Reworded (was “Ensure government balance sheet is in surplus by 2029/2030”); summary updated; sources updated.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-will-back-kiwis-and-grow-the-economy/",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL54747"
+  },
+  {
+   "id": "policy-changed:act:POL55289:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "policy-changed",
+   "party": "act",
+   "title": "Ban scallop dredging",
+   "summary": "Reworded (was “Bad scallop dredging”).",
+   "url": "#/parties/act/policies",
+   "source": "https://assets.nationbuilder.com/actnz/pages/36668/attachments/original/1787875748/Unlocking_New_Zealand%27s_Fishing_Potential.pdf?1787875748",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55289"
+  },
+  {
+   "id": "policy-added:labour:POL55417",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Support social workers and youth workers",
+   "summary": "This party would develop and long-term plan for recruiting, training and retaining social workers. It would support professional qualifications for youth workers and whānau navigators for young people with parents in prison.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55417"
+  },
+  {
+   "id": "policy-added:labour:POL55412",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Support growth in the creative industries, especially game development",
+   "summary": "This party would expand the Game Development Sector Rebate and explore similar types of support elsewhere in the creative industries. It would protect industry training for the creative industries (games, films, TV etc.) with the…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55412"
+  },
+  {
+   "id": "policy-added:labour:POL55425",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Stop planned LNG import terminal in Taranaki",
+   "summary": "This party would stop the proposed LNG import facility in Taranaki.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55425"
+  },
+  {
+   "id": "policy-added:labour:POL55421",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Set up a $30m fund for community solar batteries",
+   "summary": "This party would establish a $30m fund for community batteries to store solar power. Community batteries will let more neighbourhoods share the benefits of locally generated power, including households without panels on their roofs.…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55421"
+  },
+  {
+   "id": "policy-added:labour:POL55424",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Reinstate the ban on offshore oil and gas exploration",
+   "summary": "This party would reinstate the ban on offshore oil and gas exploration, and phase out low-and medium-heat coal boilers by 2037. It would also stop the proposed LNG import facility in Taranaki.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55424"
+  },
+  {
+   "id": "policy-added:labour:POL55420",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Reassert Māori-led services and community care for Māori children and youth",
+   "summary": "This party would reinstate and strengthen Section 7AA so tamariki Māori and rangatahi remain connected to their family and identity. In partnership with Māori, it would create a 10-year plan to devolve care and protection services closer…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55420"
+  },
+  {
+   "id": "policy-added:labour:POL55428",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Ratify the High Seas biodiversity treaty",
+   "summary": "This party would ratify the United Nations treaty on biodiversity in the high seas. If elected, this party would do this within its first 100 days in office.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55428"
+  },
+  {
+   "id": "policy-added:labour:POL55418",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Make community refugee sponsorship additional to the annual refugee quota",
+   "summary": "This party would make the places available through community refugee sponsorship additional to the annual refugee quota and increase the quota over time.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55418"
+  },
+  {
+   "id": "policy-added:labour:POL55426",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Increase protection in the Hauraki Gulf",
+   "summary": "This party would remove ring-net fishing rights in the Hauraki Gulf High Protection Areas. It would also investigate restricting trawling within the 100-metre contour with exceptions for specialty fisheries. It would fully ban bottom…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55426"
+  },
+  {
+   "id": "policy-added:labour:POL55414",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Grow wood processing in NZ",
+   "summary": "This party would support the growth of wood processing industry in NZ, especially businesses that use the whole tree.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55414"
+  },
+  {
+   "id": "policy-added:labour:POL55410",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Give Māori more autonomy over their education and require school boards to give effect to Te Tiriti",
+   "summary": "This party would require school boards to give effect to Te Tiriti, and enable greater Māori leadership over Māori education. This would include expanding kōhanga reo, puna reo, kura kaupapa Māori and kura-ā-iwi.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55410"
+  },
+  {
+   "id": "policy-added:labour:POL55413",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Fund water storage and catchment groups in rural areas",
+   "summary": "This party would progress water storage funding for farmers. It would continue to support catchment groups, made up of farmers, Māori, local communities and environmental groups to discuss water issues, in particular river systems.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55413"
+  },
+  {
+   "id": "policy-added:labour:POL55415",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Establish an independent redress system for survivors of abuse in state care",
+   "summary": "This party would create an independent redress system in line with the High Level Design Group's proposal. It would revisit findings on torture (beyond the Lake Alice findings) in care and amend the Limitations Act so that time limits…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55415"
+  },
+  {
+   "id": "policy-added:labour:POL55422",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Establish a National Adaption Act so communities can plan for climate resilience",
+   "summary": "This party would pass a national Adaptation Act so communities, councils, Māori and government can plan together. It would work with banks and insurers on affordable finance to make homes more resilient, and prevent building in the…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55422"
+  },
+  {
+   "id": "policy-added:labour:POL55423",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Ensure benefits and rent subsidies keep up with the cost of living",
+   "summary": "This party would make sure support doesn’t fall behind the cost of living. It would increase benefits by whichever is higher: inflation or average wage growth through indexation. It would reverse National’s changes to the Income-Related…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55423"
+  },
+  {
+   "id": "policy-added:labour:POL55419",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Create additional support for asylum seekers and people fleeing humanitarian crises",
+   "summary": "This party would create a humanitarian visa for family members of New Zealanders in places of war and crisis. It would also give recognised refugees who arrived as asylum seekers the same support as other refugees and ave at least 15…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55419"
+  },
+  {
+   "id": "policy-added:labour:POL55416",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Create a national memorial day for victims of abuse in state care",
+   "summary": "This party would create an annual memorial day for the public to learn about NZ's history of abuse, and ongoing issues of harm to vulnerable people. It would not be a statutory holiday.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55416"
+  },
+  {
+   "id": "policy-added:labour:POL55427",
+   "date": "2026-11-03",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Aim to protect 30 percent of NZ's ocean areas",
+   "summary": "This party would aim to protect 30 percent of NZ's marine environment. It would ban seabed mining, prevent new areas of seamount from bottom trawling and reform marine protection law to include estuaries, wetlands and salt marshes.",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-03T23:55:42+13:00",
+   "ref": "POL55427"
+  },
+  {
+   "id": "candidate-changed:opportunity:opportunity/paul-jackson:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "candidate-changed",
+   "party": "opportunity",
+   "title": "Paul Jackson",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/opportunity/people",
+   "source": "https://policy.nz/2026/party-vote/parties/opportunity-party",
+   "time": "2026-11-03T23:55:42+13:00"
+  },
+  {
+   "id": "candidate-changed:nz-first:nz-first/david-wilson:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "candidate-changed",
+   "party": "nz-first",
+   "title": "David Wilson",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/nz-first/people",
+   "source": "https://policy.nz/2026/party-vote/parties/nz-first",
+   "time": "2026-11-03T23:55:42+13:00"
+  },
+  {
+   "id": "candidate-changed:labour:labour/rory-paterson:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "candidate-changed",
+   "party": "labour",
+   "title": "Rory Paterson",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/labour/people",
+   "source": "https://policy.nz/2026/party-vote/parties/labour-party",
+   "time": "2026-11-03T23:55:42+13:00"
+  },
+  {
+   "id": "candidate-changed:independent:independent/wiremu-thomson:2026-11-03",
+   "date": "2026-11-03",
+   "kind": "candidate-changed",
+   "party": "independent",
+   "title": "Wiremu Thomson",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/independent/people",
+   "source": "https://policy.nz/2026/party-vote/parties/independent",
+   "time": "2026-11-03T23:55:42+13:00"
+  },
+  {
+   "id": "release:national:https://www.scoop.co.nz/stories/PA2611/S00015/kiwis-only-need-to-look-at-labours-record-on-tax.htm",
+   "date": "2026-11-03",
+   "kind": "release",
+   "party": "national",
+   "title": "Kiwis Only Need To Look At Labour’s Record On Tax",
+   "summary": "",
+   "url": "#/parties/news/national",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00015/kiwis-only-need-to-look-at-labours-record-on-tax.htm",
+   "time": "2026-11-03T16:11+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:national:https://www.scoop.co.nz/stories/PA2611/S00014/sky-high-retail-confidence-under-national-at-risk-under-labour.htm",
+   "date": "2026-11-03",
+   "kind": "release",
+   "party": "national",
+   "title": "‘Sky-High’ Retail Confidence Under National, At Risk Under Labour",
+   "summary": "",
+   "url": "#/parties/news/national",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00014/sky-high-retail-confidence-under-national-at-risk-under-labour.htm",
+   "time": "2026-11-03T14:31+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2611/S00013/unlocking-better-access-to-healthcare-for-every-new-zealander.htm",
+   "date": "2026-11-03",
+   "kind": "release",
+   "party": "act",
+   "title": "Unlocking Better Access To Healthcare For Every New Zealander",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00013/unlocking-better-access-to-healthcare-for-every-new-zealander.htm",
+   "time": "2026-11-03T13:21+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:labour:https://www.scoop.co.nz/stories/PA2611/S00012/three-more-years-of-national-a-threat-to-our-health-system.htm",
+   "date": "2026-11-03",
+   "kind": "release",
+   "party": "labour",
+   "title": "Three More Years Of National A Threat To Our Health System",
+   "summary": "",
+   "url": "#/parties/news/labour",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00012/three-more-years-of-national-a-threat-to-our-health-system.htm",
+   "time": "2026-11-03T12:53+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2611/S00011/three-strikes-for-hipkins-on-charter-schools.htm",
+   "date": "2026-11-03",
+   "kind": "release",
+   "party": "act",
+   "title": "Three Strikes For Hipkins On Charter Schools",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00011/three-strikes-for-hipkins-on-charter-schools.htm",
+   "time": "2026-11-03T11:52+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:national:https://www.scoop.co.nz/stories/PA2611/S00010/party-vote-national-to-protect-farmers-gains.htm",
+   "date": "2026-11-03",
+   "kind": "release",
+   "party": "national",
+   "title": "Party Vote National To Protect Farmers’ Gains",
+   "summary": "",
+   "url": "#/parties/news/national",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00010/party-vote-national-to-protect-farmers-gains.htm",
+   "time": "2026-11-03T09:45+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:conservative:https://www.scoop.co.nz/stories/PO2611/S00015/new-zealand-is-being-taken-for-a-ride.htm",
+   "date": "2026-11-03",
+   "kind": "release",
+   "party": "conservative",
+   "title": "New Zealand Is Being Taken For A Ride",
+   "summary": "",
+   "url": "#/parties/news/conservative",
+   "source": "https://www.scoop.co.nz/stories/PO2611/S00015/new-zealand-is-being-taken-for-a-ride.htm",
+   "time": "2026-11-03T09:35+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:labour:https://www.scoop.co.nz/stories/PA2611/S00009/brown-ducks-questions-as-graduate-nurses-left-without-jobs.htm",
+   "date": "2026-11-03",
+   "kind": "release",
+   "party": "labour",
+   "title": "Brown Ducks Questions As Graduate Nurses Left Without Jobs",
+   "summary": "",
+   "url": "#/parties/news/labour",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00009/brown-ducks-questions-as-graduate-nurses-left-without-jobs.htm",
+   "time": "2026-11-03T08:05+13:00",
+   "via": "Scoop"
+  },
   {
    "id": "policy-changed:nz-first:POL55310:2026-11-03",
    "date": "2026-11-03",
@@ -4170,6 +4574,18 @@
    "poll_date": "2026-09-10"
   },
   {
+   "id": "release:conservative:https://www.scoop.co.nz/stories/PO2609/S00030/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
+   "date": "2026-09-04",
+   "kind": "release",
+   "party": "conservative",
+   "title": "Condemnation Of Real Estate Authority’s Decision: Breach Of Fundamental Rights And Failure To Uphold The Law",
+   "summary": "",
+   "url": "#/parties/news/conservative",
+   "source": "https://www.scoop.co.nz/stories/PO2609/S00030/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
+   "time": "2026-09-04T13:26+12:00",
+   "via": "Scoop"
+  },
+  {
    "id": "release:conservative:https://www.scoop.co.nz/stories/PO2609/S00028/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
    "date": "2026-09-04",
    "kind": "release",
@@ -4183,7 +4599,7 @@
   }
  ],
  "_snapshot": {
-  "taken": "2026-11-03T00:08:21+13:00",
+  "taken": "2026-11-03T23:55:42+13:00",
   "policies": {
    "act": {
     "POL54642": {
@@ -4703,7 +5119,7 @@
      "w": null
     },
     "POL55289": {
-     "s": "Bad scallop dredging",
+     "s": "Ban scallop dredging",
      "m": "e7e8e99cf5",
      "u": "d3a01f75fc",
      "w": null
@@ -8981,9 +9397,9 @@
      "w": null
     },
     "POL54747": {
-     "s": "Ensure government balance sheet is in surplus by 2029/2030",
-     "m": "0a374233c5",
-     "u": "e832366777",
+     "s": "Aim to create a government surplus by 2028/29",
+     "m": "842a5a196e",
+     "u": "8ebc2ce338",
      "w": null
     },
     "POL54748": {
@@ -8993,8 +9409,8 @@
      "w": null
     },
     "POL54749": {
-     "s": "Create a GDP target for core Crown spending and revenue",
-     "m": "5616992a6f",
+     "s": "Create a GDP target of 33 percent for core Crown spending and revenue",
+     "m": "da587db224",
      "u": "30084f7370",
      "w": null
     },
@@ -9799,6 +10215,114 @@
     "POL55411": {
      "s": "Aim for one million te reo Māori speakers by 2040",
      "m": "a074ea3358",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55410": {
+     "s": "Give Māori more autonomy over their education and require school boards to give effect to Te Tiriti",
+     "m": "b40dd76357",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55412": {
+     "s": "Support growth in the creative industries, especially game development",
+     "m": "ca45d854aa",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55413": {
+     "s": "Fund water storage and catchment groups in rural areas",
+     "m": "08f35f4a8d",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55414": {
+     "s": "Grow wood processing in NZ",
+     "m": "275690198d",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55415": {
+     "s": "Establish an independent redress system for survivors of abuse in state care",
+     "m": "7a291cb071",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55416": {
+     "s": "Create a national memorial day for victims of abuse in state care",
+     "m": "4d7ef79ed3",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55417": {
+     "s": "Support social workers and youth workers",
+     "m": "54905da0fd",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55418": {
+     "s": "Make community refugee sponsorship additional to the annual refugee quota",
+     "m": "c0a84e49c9",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55419": {
+     "s": "Create additional support for asylum seekers and people fleeing humanitarian crises",
+     "m": "de9d5220eb",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55420": {
+     "s": "Reassert Māori-led services and community care for Māori children and youth",
+     "m": "bd5f84b711",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55421": {
+     "s": "Set up a $30m fund for community solar batteries",
+     "m": "2408561370",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55422": {
+     "s": "Establish a National Adaption Act so communities can plan for climate resilience",
+     "m": "cc2d5fbc0e",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55423": {
+     "s": "Ensure benefits and rent subsidies keep up with the cost of living",
+     "m": "632e4f257a",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55424": {
+     "s": "Reinstate the ban on offshore oil and gas exploration",
+     "m": "a6c44076b1",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55425": {
+     "s": "Stop planned LNG import terminal in Taranaki",
+     "m": "ed625f20fc",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55426": {
+     "s": "Increase protection in the Hauraki Gulf",
+     "m": "30ddcf47b1",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55427": {
+     "s": "Aim to protect 30 percent of NZ's ocean areas",
+     "m": "345fb75da4",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55428": {
+     "s": "Ratify the High Seas biodiversity treaty",
+     "m": "24830e7d2d",
      "u": "3e31ab5cf4",
      "w": null
     }
@@ -15160,7 +15684,7 @@
     "rank": 54,
     "el": "West Coast-Tasman",
     "desc": "Candidate for the West Coast-Tasman electorate",
-    "q": "7b7e644c56"
+    "q": "8b176ca035"
    },
    "labour/ashleigh-latimer": {
     "party": "labour",
@@ -16357,7 +16881,7 @@
     "rank": null,
     "el": "Henderson",
     "desc": "Candidate for the Henderson electorate",
-    "q": "7b7e644c56"
+    "q": "80b9f78fdb"
    },
    "nz-first/jason-herrick": {
     "party": "nz-first",
@@ -17113,7 +17637,7 @@
     "rank": 39,
     "el": "Epsom",
     "desc": "Candidate for the Epsom electorate",
-    "q": "7b7e644c56"
+    "q": "1b451cc656"
    },
    "opportunity/kevin-huang": {
     "party": "opportunity",
@@ -17439,6 +17963,15 @@
     "desc": "Candidate for the Hamilton East electorate",
     "q": "90d20141bf"
    },
+   "independent/wiremu-thomson": {
+    "party": "independent",
+    "pnz": "independent",
+    "name": "Wiremu Thomson",
+    "rank": null,
+    "el": "Hamilton West",
+    "desc": "Candidate for the Hamilton West electorate",
+    "q": "1520f842a4"
+   },
    "new-world-order-mccann-party/nathan-lee-couper": {
     "party": "new-world-order-mccann-party",
     "pnz": "new-world-order-mccann-party",
@@ -17452,15 +17985,6 @@
     "party": "independent",
     "pnz": "independent",
     "name": "Steve Phelps",
-    "rank": null,
-    "el": "Hamilton West",
-    "desc": "Candidate for the Hamilton West electorate",
-    "q": "90d20141bf"
-   },
-   "independent/wiremu-thomson": {
-    "party": "independent",
-    "pnz": "independent",
-    "name": "Wiremu Thomson",
     "rank": null,
     "el": "Hamilton West",
     "desc": "Candidate for the Hamilton West electorate",
@@ -17889,15 +18413,6 @@
     "desc": "Candidate for the Wellington Bays electorate",
     "q": "90d20141bf"
    },
-   "progressive-aotearoa-new-zealand/kevin-rooke": {
-    "party": "progressive-aotearoa-new-zealand",
-    "pnz": "progressive-aotearoa-new-zealand",
-    "name": "Kevin Rooke",
-    "rank": null,
-    "el": "West Coast-Tasman",
-    "desc": "Candidate for the West Coast-Tasman electorate",
-    "q": "a6a1e760a4"
-   },
    "money-free-party/richard-francis-osmaston": {
     "party": "money-free-party",
     "pnz": "money-free-party",
@@ -17906,6 +18421,15 @@
     "el": "West Coast-Tasman",
     "desc": "Candidate for the West Coast-Tasman electorate",
     "q": "7728e76a45"
+   },
+   "progressive-aotearoa-new-zealand/kevin-rooke": {
+    "party": "progressive-aotearoa-new-zealand",
+    "pnz": "progressive-aotearoa-new-zealand",
+    "name": "Kevin Rooke",
+    "rank": null,
+    "el": "West Coast-Tasman",
+    "desc": "Candidate for the West Coast-Tasman electorate",
+    "q": "a6a1e760a4"
    },
    "balance-new-zealand/juan-charles-coffey": {
     "party": "balance-new-zealand",
@@ -18084,7 +18608,8 @@
    "2026-10-19|1 News–Verian",
    "2026-10-19|The Post/Freshwater Strategy",
    "2026-10-25|1 News–Verian",
-   "2026-10-26|RNZ–Reid Research"
+   "2026-10-26|RNZ–Reid Research",
+   "2026-11-02|1 News–Verian"
   ],
   "releases": [
    "https://www.scoop.co.nz/stories/PA2609/S00152/governments-last-act-is-another-attack-on-te-tiriti.htm",
@@ -18250,7 +18775,14 @@
    "https://www.scoop.co.nz/stories/PA2611/S00006/agriculture-stays-in-the-curriculum-thanks-to-strong-advocacy.htm",
    "https://www.scoop.co.nz/stories/PA2611/S00007/labour-will-crack-down-on-unfair-charges-on-bills.htm",
    "https://www.scoop.co.nz/stories/PA2611/S00008/greens-say-ka-kite-to-employers-labour-serves-up-ai-slop.htm",
-   "https://www.scoop.co.nz/stories/PO2609/S00028/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00009/brown-ducks-questions-as-graduate-nurses-left-without-jobs.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00010/party-vote-national-to-protect-farmers-gains.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00011/three-strikes-for-hipkins-on-charter-schools.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00012/three-more-years-of-national-a-threat-to-our-health-system.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00013/unlocking-better-access-to-healthcare-for-every-new-zealander.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00014/sky-high-retail-confidence-under-national-at-risk-under-labour.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00015/kiwis-only-need-to-look-at-labours-record-on-tax.htm",
+   "https://www.scoop.co.nz/stories/PO2609/S00030/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00108/a-win-for-free-speech-helen-houghton-challenges-extremist-label-and-secures-public-apology.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00118/historic-flag-raising-commemorates-womens-suffrage.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00122/immigration-and-employment-practices-time-for-transparency.htm",
@@ -18273,7 +18805,8 @@
    "https://www.scoop.co.nz/stories/PO2610/S00174/conservative-party-rues-nzs-ignoring-of-environment.htm",
    "https://www.scoop.co.nz/stories/PO2610/S00191/tomorrow-women-will-commemorate-winning-right-to-stand-for-parliament.htm",
    "https://www.scoop.co.nz/stories/PO2611/S00010/fisheries-ministers-ignoring-of-yellow-eyed-penguin-advice-raises-serious-questions.htm",
-   "https://www.scoop.co.nz/stories/PO2611/S00011/we-are-ruled-by-unelected-bureaucrats.htm"
+   "https://www.scoop.co.nz/stories/PO2611/S00011/we-are-ruled-by-unelected-bureaucrats.htm",
+   "https://www.scoop.co.nz/stories/PO2611/S00015/new-zealand-is-being-taken-for-a-ride.htm"
   ]
  }
 }

@@ -3094,12 +3094,13 @@
  },
  {
   "id": "POL55289",
-  "statement": "Bad scallop dredging",
+  "statement": "Ban scallop dredging",
   "topics": [
    "environment",
    "economy",
    "conservation",
-   "fisheries"
+   "fisheries",
+   "oceans"
   ],
   "topic_group": "economy",
   "key_policy": false,
@@ -3120,6 +3121,19 @@
     "url": "https://www.act.org.nz/plenty-is-possible",
     "document": "documents/plenty-is-possible.md",
     "relation": "related ACT policy page/document"
+   }
+  ],
+  "policy_nz_updated": "2026-11-03",
+  "changes": [
+   {
+    "date": "2026-11-03",
+    "fields": [
+     "statement",
+     "topics"
+    ],
+    "previous": {
+     "statement": "Bad scallop dredging"
+    }
    }
   ]
  },

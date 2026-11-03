@@ -42,6 +42,11 @@ None of significance found in the sources consulted.
 ## 2026 candidacy
 
 - **Electorate:** Henderson
+- **Before politics:** Founder Cities and Regions Ltd
+- **Age:** 67
+- **Public email:** david.wilson@nzfirst.nz
+- **Facebook:** https://www.facebook.com/share/14yChhsqsoM/?mibextid=wwXIfr
+- **Instagram:** https://www.instagram.com/davidwilsonmp?xtok=MWZrM2E5NmNwaXM4cw%3D%3D&utm_source=qr
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/nz-first), retrieved Oct 2026._
 <!-- GENERATED:2026-candidacy END -->
