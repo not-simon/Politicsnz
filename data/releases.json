@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T23:38:17Z",
+ "updated": "2026-11-04T03:12:41Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,13 +126,13 @@
   }
  },
  "counts": {
-  "items": 258,
+  "items": 263,
   "per_party": {
-   "act": 45,
+   "act": 46,
    "conservative": 19,
    "free-palestine": 2,
-   "government": 53,
-   "green": 27,
+   "government": 55,
+   "green": 29,
    "labour": 35,
    "national": 37,
    "nz-first": 25,
@@ -364,7 +364,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 2,
+   "items_matched_to_a_party": 1,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -381,6 +381,56 @@
   }
  ],
  "items": [
+  {
+   "party": "government",
+   "title": "Funding for better connections in Kaikōura",
+   "date": "2026-11-04T14:53+13:00",
+   "url": "https://www.beehive.govt.nz/release/funding-better-connections-kaikoura",
+   "summary": "Locals and visitors will benefit from improved access in central Kaikōura, with the Government providing a grant of up to $500,000 from the Regional Infrastructure Fund for new facilities, Regional…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "government",
+   "title": "Milford Tourism concession in place for summer",
+   "date": "2026-11-04T14:15+13:00",
+   "url": "https://www.beehive.govt.nz/release/milford-tourism-concession-place-summer",
+   "summary": "A new concession agreement with Milford Sound Tourism Limited has now been signed – bringing certainty for the iconic tourism destination ahead of summer, Conservation Minister Tama Potaka says. The…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
+  {
+   "party": "green",
+   "title": "National Caught Sneaking Unpopular Conservation Policies Back Into Play",
+   "date": "2026-11-04T13:25+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00025/national-caught-sneaking-unpopular-conservation-policies-back-into-play.htm",
+   "summary": "The ‘Blue-Green’ policy, published online with no fanfare, quietly walks away from previous assurances by Luxon that his party had backed down from its unpopular conservation positions.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "green",
+   "title": "Unemployment Shows Luxon Asleep At The Wheel",
+   "date": "2026-11-04T12:53+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00024/unemployment-shows-luxon-asleep-at-the-wheel.htm",
+   "summary": "“This Government chose to make ordinary New Zealanders poorer, while the super-rich have added $27 billion to their wallets in the last year alone,\" says Green Party Co-leader Chlöe Swarbrick.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
+  {
+   "party": "act",
+   "title": "Poll Shows New ACT Talent Can Strengthen The Coalition",
+   "date": "2026-11-04T12:45+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00023/poll-shows-new-act-talent-can-strengthen-the-coalition.htm",
+   "summary": "“ACT has never formed a coalition with Labour and never will. Every Party Vote for ACT strengthens a re-elected centre-right coalition and gives ACT greater influence over its direction,\" says ACT…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
   {
    "party": "national",
    "title": "Jobs Data Shows Why Kiwis Can’t Risk Labour",
