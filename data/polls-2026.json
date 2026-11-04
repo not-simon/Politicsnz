@@ -12,7 +12,7 @@
   "OPP": "opportunity"
  },
  "notes": "Percentages as published (decided voters; undecided excluded by every pollster). 'end_date' is the sort date used by Wikipedia (last fieldwork day or release date). Rows are newest first. 'others' = combined minor parties where listed. 'pollster_key' groups series that changed name; 'internal' marks party/corporate-client polls that are published selectively. Poll sources: each row's source_url as linked on Wikipedia. Refreshed by tools/polls_update.py.",
- "count": 133,
+ "count": 134,
  "polls": [
   {
    "date": "28 Oct – 3 Nov 2026",
@@ -69,6 +69,25 @@
    },
    "others": 0.9,
    "pollster_key": "RNZ–Reid Research",
+   "internal": false
+  },
+  {
+   "date": "28 Sep – 25 Oct 2026",
+   "end_date": "2026-10-25",
+   "pollster": "Roy Morgan",
+   "source_url": "https://www.roymorgan.com/findings/10381-nz-national-voting-intention-october-2026",
+   "sample_size": 859,
+   "results": {
+    "national": 26.5,
+    "labour": 27.5,
+    "green": 15.5,
+    "act": 11.0,
+    "nz-first": 10.0,
+    "te-pati-maori": 1.0,
+    "opportunity": 8.0
+   },
+   "others": 0.5,
+   "pollster_key": "Roy Morgan",
    "internal": false
   },
   {
@@ -2631,7 +2650,7 @@
    "end_date": "2023-11-27"
   }
  ],
- "source_revid": 1383686574,
+ "source_revid": 1383703101,
  "pollsters": {
   "1 News–Verian": {
    "commissioner": "TVNZ 1News",
@@ -2660,7 +2679,7 @@
    "fieldwork_company": "Roy Morgan",
    "method": "Telephone/online, fieldwork spans the whole month, n≈800–1,000",
    "type": "public-self",
-   "n_polls": 35
+   "n_polls": 36
   },
   "The Post/Freshwater Strategy": {
    "commissioner": "The Post (Stuff)",
