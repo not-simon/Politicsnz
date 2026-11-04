@@ -1,19 +1,163 @@
 {
  "_about": "What changed: new and changed policies and candidates (policy.nz), new polls and party releases, newest first. Built by tools/changelog.py; last 60 days. Release entries are headline + link only. `_snapshot` is the state the next run compares against (not published to the site).",
- "updated": "2026-11-03T23:55:42+13:00",
+ "updated": "2026-11-04T23:58:08+13:00",
  "window_days": 60,
- "policy_nz_checked": "2026-11-03T23:51:44+13:00",
+ "policy_nz_checked": "2026-11-04T23:54:19+13:00",
  "policy_nz_failures": 0,
  "counts": {
   "candidate-changed": 13,
   "policy-added": 104,
   "policy-changed": 55,
   "policy-withdrawn": 1,
-  "poll-added": 14,
-  "release": 196,
+  "poll-added": 15,
+  "release": 205,
   "site": 1
  },
  "entries": [
+  {
+   "id": "poll-added:-:2026-11-03|Taxpayers' Union–Curia",
+   "date": "2026-11-04",
+   "kind": "poll-added",
+   "party": null,
+   "title": "Taxpayers' Union–Curia",
+   "summary": "Fieldwork 28 Oct – 3 Nov 2026, 1,000 people.",
+   "url": "#/seats/polls",
+   "source": "https://www.taxpayers.org.nz/2026nov_nztucur_pollhhatdst",
+   "time": "2026-11-04T23:58:08+13:00",
+   "poll_date": "2026-11-03"
+  },
+  {
+   "id": "release:green:https://www.scoop.co.nz/stories/PA2611/S00025/national-caught-sneaking-unpopular-conservation-policies-back-into-play.htm",
+   "date": "2026-11-04",
+   "kind": "release",
+   "party": "green",
+   "title": "National Caught Sneaking Unpopular Conservation Policies Back Into Play",
+   "summary": "",
+   "url": "#/parties/news/green",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00025/national-caught-sneaking-unpopular-conservation-policies-back-into-play.htm",
+   "time": "2026-11-04T13:25+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:green:https://www.scoop.co.nz/stories/PA2611/S00024/unemployment-shows-luxon-asleep-at-the-wheel.htm",
+   "date": "2026-11-04",
+   "kind": "release",
+   "party": "green",
+   "title": "Unemployment Shows Luxon Asleep At The Wheel",
+   "summary": "",
+   "url": "#/parties/news/green",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00024/unemployment-shows-luxon-asleep-at-the-wheel.htm",
+   "time": "2026-11-04T12:53+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2611/S00023/poll-shows-new-act-talent-can-strengthen-the-coalition.htm",
+   "date": "2026-11-04",
+   "kind": "release",
+   "party": "act",
+   "title": "Poll Shows New ACT Talent Can Strengthen The Coalition",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00023/poll-shows-new-act-talent-can-strengthen-the-coalition.htm",
+   "time": "2026-11-04T12:45+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:national:https://www.scoop.co.nz/stories/PA2611/S00022/jobs-data-shows-why-kiwis-cant-risk-labour.htm",
+   "date": "2026-11-04",
+   "kind": "release",
+   "party": "national",
+   "title": "Jobs Data Shows Why Kiwis Can’t Risk Labour",
+   "summary": "",
+   "url": "#/parties/news/national",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00022/jobs-data-shows-why-kiwis-cant-risk-labour.htm",
+   "time": "2026-11-04T12:14+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:labour:https://www.scoop.co.nz/stories/PA2611/S00021/luxons-failed-record-laid-bare.htm",
+   "date": "2026-11-04",
+   "kind": "release",
+   "party": "labour",
+   "title": "Luxon's Failed Record Laid Bare",
+   "summary": "",
+   "url": "#/parties/news/labour",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00021/luxons-failed-record-laid-bare.htm",
+   "time": "2026-11-04T11:54+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2611/S00020/new-zealand-has-one-of-the-worlds-worst-retirement-taxes-act-will-fix-it.htm",
+   "date": "2026-11-04",
+   "kind": "release",
+   "party": "act",
+   "title": "New Zealand Has One Of The World's Worst Retirement Taxes. ACT Will Fix It",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00020/new-zealand-has-one-of-the-worlds-worst-retirement-taxes-act-will-fix-it.htm",
+   "time": "2026-11-04T11:36+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:national:https://www.scoop.co.nz/stories/PA2611/S00019/hipkins-pledge-cant-survive-greens-negotiations.htm",
+   "date": "2026-11-04",
+   "kind": "release",
+   "party": "national",
+   "title": "Hipkins' Pledge Can’t Survive Greens Negotiations",
+   "summary": "",
+   "url": "#/parties/news/national",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00019/hipkins-pledge-cant-survive-greens-negotiations.htm",
+   "time": "2026-11-04T11:03+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:nz-first:https://www.scoop.co.nz/stories/PA2611/S00018/nzfirst-policy-announcement-establish-legally-recognised-accessibility-standards.htm",
+   "date": "2026-11-04",
+   "kind": "release",
+   "party": "nz-first",
+   "title": "NZFirst Policy Announcement: Establish Legally Recognised Accessibility Standards",
+   "summary": "",
+   "url": "#/parties/news/nz-first",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00018/nzfirst-policy-announcement-establish-legally-recognised-accessibility-standards.htm",
+   "time": "2026-11-04T09:58+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:conservative:https://www.scoop.co.nz/stories/PO2611/S00025/conservative-nz-policy-review-and-reform-of-the-conversion-practices-prohibition-legislation-act-2022.htm",
+   "date": "2026-11-04",
+   "kind": "release",
+   "party": "conservative",
+   "title": "Conservative NZ Policy: Review And Reform Of The Conversion Practices Prohibition Legislation Act 2022",
+   "summary": "",
+   "url": "#/parties/news/conservative",
+   "source": "https://www.scoop.co.nz/stories/PO2611/S00025/conservative-nz-policy-review-and-reform-of-the-conversion-practices-prohibition-legislation-act-2022.htm",
+   "time": "2026-11-04T08:59+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2611/S00017/86-per-cent-of-gp-owners-back-acts-plan-to-boost-funding.htm",
+   "date": "2026-11-04",
+   "kind": "release",
+   "party": "act",
+   "title": "86 Per Cent Of GP Owners Back ACT's Plan To Boost Funding",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00017/86-per-cent-of-gp-owners-back-acts-plan-to-boost-funding.htm",
+   "time": "2026-11-04T08:26+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:national:https://www.scoop.co.nz/stories/PA2611/S00016/nationals-manifesto-to-secure-nzs-future.htm",
+   "date": "2026-11-04",
+   "kind": "release",
+   "party": "national",
+   "title": "National’s Manifesto To Secure NZ’s Future",
+   "summary": "",
+   "url": "#/parties/news/national",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00016/nationals-manifesto-to-secure-nzs-future.htm",
+   "time": "2026-11-04T08:03+13:00",
+   "via": "Scoop"
+  },
   {
    "id": "poll-added:-:2026-11-02|1 News–Verian",
    "date": "2026-11-03",
@@ -4572,34 +4716,10 @@
    "url": "#/seats/polls",
    "source": "https://www.nzherald.co.nz/nz/politics/labour-slumps-in-another-poll-but-still-ahead-of-national/HDUVF4SBJJHK3LYLGXLVLG3F7U/",
    "poll_date": "2026-09-10"
-  },
-  {
-   "id": "release:conservative:https://www.scoop.co.nz/stories/PO2609/S00030/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
-   "date": "2026-09-04",
-   "kind": "release",
-   "party": "conservative",
-   "title": "Condemnation Of Real Estate Authority’s Decision: Breach Of Fundamental Rights And Failure To Uphold The Law",
-   "summary": "",
-   "url": "#/parties/news/conservative",
-   "source": "https://www.scoop.co.nz/stories/PO2609/S00030/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
-   "time": "2026-09-04T13:26+12:00",
-   "via": "Scoop"
-  },
-  {
-   "id": "release:conservative:https://www.scoop.co.nz/stories/PO2609/S00028/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
-   "date": "2026-09-04",
-   "kind": "release",
-   "party": "conservative",
-   "title": "Condemnation Of Real Estate Authority’s Decision: Breach Of Fundamental Rights And Failure To Uphold The Law",
-   "summary": "",
-   "url": "#/parties/news/conservative",
-   "source": "https://www.scoop.co.nz/stories/PO2609/S00028/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
-   "time": "2026-09-04T08:56+12:00",
-   "via": "Scoop"
   }
  ],
  "_snapshot": {
-  "taken": "2026-11-03T23:55:42+13:00",
+  "taken": "2026-11-04T23:58:08+13:00",
   "policies": {
    "act": {
     "POL54642": {
@@ -18609,7 +18729,8 @@
    "2026-10-19|The Post/Freshwater Strategy",
    "2026-10-25|1 News–Verian",
    "2026-10-26|RNZ–Reid Research",
-   "2026-11-02|1 News–Verian"
+   "2026-11-02|1 News–Verian",
+   "2026-11-03|Taxpayers' Union–Curia"
   ],
   "releases": [
    "https://www.scoop.co.nz/stories/PA2609/S00152/governments-last-act-is-another-attack-on-te-tiriti.htm",
@@ -18782,7 +18903,16 @@
    "https://www.scoop.co.nz/stories/PA2611/S00013/unlocking-better-access-to-healthcare-for-every-new-zealander.htm",
    "https://www.scoop.co.nz/stories/PA2611/S00014/sky-high-retail-confidence-under-national-at-risk-under-labour.htm",
    "https://www.scoop.co.nz/stories/PA2611/S00015/kiwis-only-need-to-look-at-labours-record-on-tax.htm",
-   "https://www.scoop.co.nz/stories/PO2609/S00030/condemnation-of-real-estate-authoritys-decision-breach-of-fundamental-rights-and-failure-to-uphold-the-law.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00016/nationals-manifesto-to-secure-nzs-future.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00017/86-per-cent-of-gp-owners-back-acts-plan-to-boost-funding.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00018/nzfirst-policy-announcement-establish-legally-recognised-accessibility-standards.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00019/hipkins-pledge-cant-survive-greens-negotiations.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00020/new-zealand-has-one-of-the-worlds-worst-retirement-taxes-act-will-fix-it.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00021/luxons-failed-record-laid-bare.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00022/jobs-data-shows-why-kiwis-cant-risk-labour.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00023/poll-shows-new-act-talent-can-strengthen-the-coalition.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00024/unemployment-shows-luxon-asleep-at-the-wheel.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00025/national-caught-sneaking-unpopular-conservation-policies-back-into-play.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00108/a-win-for-free-speech-helen-houghton-challenges-extremist-label-and-secures-public-apology.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00118/historic-flag-raising-commemorates-womens-suffrage.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00122/immigration-and-employment-practices-time-for-transparency.htm",
@@ -18806,7 +18936,8 @@
    "https://www.scoop.co.nz/stories/PO2610/S00191/tomorrow-women-will-commemorate-winning-right-to-stand-for-parliament.htm",
    "https://www.scoop.co.nz/stories/PO2611/S00010/fisheries-ministers-ignoring-of-yellow-eyed-penguin-advice-raises-serious-questions.htm",
    "https://www.scoop.co.nz/stories/PO2611/S00011/we-are-ruled-by-unelected-bureaucrats.htm",
-   "https://www.scoop.co.nz/stories/PO2611/S00015/new-zealand-is-being-taken-for-a-ride.htm"
+   "https://www.scoop.co.nz/stories/PO2611/S00015/new-zealand-is-being-taken-for-a-ride.htm",
+   "https://www.scoop.co.nz/stories/PO2611/S00025/conservative-nz-policy-review-and-reform-of-the-conversion-practices-prohibition-legislation-act-2022.htm"
   ]
  }
 }

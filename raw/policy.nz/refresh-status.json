@@ -1,88 +1,14 @@
 {
- "checked": "2026-11-03T23:51:44+13:00",
- "date": "2026-11-03",
+ "checked": "2026-11-04T23:54:19+13:00",
+ "date": "2026-11-04",
  "mode": "live",
  "requests_failed": [],
  "kept_previous": [],
  "suspect": [],
- "raw_files_changed": [
-  "party-vote-election.json",
-  "parties/act-party.json",
-  "parties/labour-party.json",
-  "parties/nz-first.json",
-  "parties/opportunity-party.json",
-  "electorates/epsom-electorate.json",
-  "electorates/glendene-electorate.json",
-  "electorates/hamilton-west-electorate.json",
-  "electorates/henderson-electorate.json",
-  "electorates/party-vote.json",
-  "electorates/waitakere-electorate.json",
-  "electorates/west-coast-tasman-electorate.json"
- ],
- "policies": {
-  "act": {
-   "added": [],
-   "changed": [
-    [
-     "POL55289",
-     [
-      "statement",
-      "topics"
-     ]
-    ]
-   ],
-   "withdrawn": [],
-   "reinstated": []
-  },
-  "labour": {
-   "added": [
-    "POL55410",
-    "POL55412",
-    "POL55413",
-    "POL55414",
-    "POL55415",
-    "POL55416",
-    "POL55417",
-    "POL55418",
-    "POL55419",
-    "POL55420",
-    "POL55421",
-    "POL55422",
-    "POL55423",
-    "POL55424",
-    "POL55425",
-    "POL55426",
-    "POL55427",
-    "POL55428"
-   ],
-   "changed": [
-    [
-     "POL54747",
-     [
-      "statement",
-      "how",
-      "sources"
-     ]
-    ],
-    [
-     "POL54749",
-     [
-      "statement",
-      "how"
-     ]
-    ]
-   ],
-   "withdrawn": [],
-   "reinstated": []
-  }
- },
+ "raw_files_changed": [],
+ "policies": {},
  "candidates": {
-  "new_or_changed": [
-   "independent/wiremu-thomson",
-   "labour/rory-paterson",
-   "nz-first/david-wilson",
-   "opportunity/paul-jackson"
-  ],
+  "new_or_changed": [],
   "unlisted": []
  },
  "counts": {
