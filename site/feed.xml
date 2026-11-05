@@ -5,10 +5,74 @@
     <link>https://not-simon.github.io/Politicsnz/#/about/changes</link>
     <description>New and changed 2026 election policies and candidates (from policy.nz), new opinion polls and party press releases, as picked up by Ballot Book NZ, an independent, non-partisan guide to the 7 November 2026 New Zealand general election. Every item links to its source.</description>
     <language>en-nz</language>
-    <lastBuildDate>Wed, 04 Nov 2026 23:58:11 +1300</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 23:58:24 +1300</lastBuildDate>
     <ttl>720</ttl>
     <generator>tools/changelog.py</generator>
     <atom:link href="https://not-simon.github.io/Politicsnz/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New poll: Roy Morgan, 25 Oct 2026</title>
+      <link>https://not-simon.github.io/Politicsnz/#/seats/polls</link>
+      <guid isPermaLink="false">ballotbook:poll-added:-:2026-10-25|Roy Morgan</guid>
+      <pubDate>Thu, 05 Nov 2026 23:58:21 +1300</pubDate>
+      <category>poll-added</category>
+      <description>Fieldwork 28 Sep – 25 Oct 2026, 859 people. Source: https://www.roymorgan.com/findings/10381-nz-national-voting-intention-october-2026</description>
+    </item>
+    <item>
+      <title>Labour: new policy — Ensure new customers don't get a better deal than existing ones</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/labour/policies</link>
+      <guid isPermaLink="false">ballotbook:policy-added:labour:POL55431</guid>
+      <pubDate>Thu, 05 Nov 2026 23:58:21 +1300</pubDate>
+      <category>policy-added</category>
+      <description>This party would prevent customers from creating deals just for new customers while charging existing customers more. Power companies are already required to check if customers are on the best deal; this would be extended to phone… Source: https://www.labour.org.nz/news/release-labour-will-crack-down-on-unfair-charges-on-bills</description>
+    </item>
+    <item>
+      <title>Labour: new policy — Base advertised discounts on the normal price of a product</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/labour/policies</link>
+      <guid isPermaLink="false">ballotbook:policy-added:labour:POL55432</guid>
+      <pubDate>Thu, 05 Nov 2026 23:58:21 +1300</pubDate>
+      <category>policy-added</category>
+      <description>This party would base advertised discounts on the lowest price that product has been in the 30 days before a sale starts. Companies would be required to keep a record of their prices so that all claims can be checked. Ignoring this rule… Source: https://www.labour.org.nz/news/release-labour-will-crack-down-on-unfair-charges-on-bills</description>
+    </item>
+    <item>
+      <title>Labour: new policy — Affirm NZ's Paris agreement and methane targets</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/labour/policies</link>
+      <guid isPermaLink="false">ballotbook:policy-added:labour:POL55429</guid>
+      <pubDate>Thu, 05 Nov 2026 23:58:21 +1300</pubDate>
+      <category>policy-added</category>
+      <description>This party would make sure methane targets keep NZ on track to meet its international commitments, while backing farmers to reduce emissions. It would affirm the country's commitment to the Paris Agreement, and make sure forestry ETS… Source: https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf</description>
+    </item>
+    <item>
+      <title>Green: press release — Big Donors Hand National $500k In 11 Days, Eclipsing Some Parties' Entire 2026 Donation Total</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/news/green</link>
+      <guid isPermaLink="false">ballotbook:release:green:https://www.scoop.co.nz/stories/PA2611/S00030/big-donors-hand-national-500k-in-11-days-eclipsing-some-parties-entire-2026-donation-total.htm</guid>
+      <pubDate>Thu, 05 Nov 2026 14:29:00 +1300</pubDate>
+      <category>release</category>
+      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2611/S00030/big-donors-hand-national-500k-in-11-days-eclipsing-some-parties-entire-2026-donation-total.htm</description>
+    </item>
+    <item>
+      <title>Labour: press release — National Continues To Fail Starship</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/news/labour</link>
+      <guid isPermaLink="false">ballotbook:release:labour:https://www.scoop.co.nz/stories/PA2611/S00029/national-continues-to-fail-starship.htm</guid>
+      <pubDate>Thu, 05 Nov 2026 12:18:00 +1300</pubDate>
+      <category>release</category>
+      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2611/S00029/national-continues-to-fail-starship.htm</description>
+    </item>
+    <item>
+      <title>ACT: press release — Save The Kiwi (Dollar) With ACT’s Cost Of Living Plan</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/news/act</link>
+      <guid isPermaLink="false">ballotbook:release:act:https://www.scoop.co.nz/stories/PA2611/S00028/save-the-kiwi-dollar-with-acts-cost-of-living-plan.htm</guid>
+      <pubDate>Thu, 05 Nov 2026 12:14:00 +1300</pubDate>
+      <category>release</category>
+      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2611/S00028/save-the-kiwi-dollar-with-acts-cost-of-living-plan.htm</description>
+    </item>
+    <item>
+      <title>National: press release — Government’s Books Show National’s Plan Working</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/news/national</link>
+      <guid isPermaLink="false">ballotbook:release:national:https://www.scoop.co.nz/stories/PA2611/S00026/governments-books-show-nationals-plan-working.htm</guid>
+      <pubDate>Thu, 05 Nov 2026 11:03:00 +1300</pubDate>
+      <category>release</category>
+      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2611/S00026/governments-books-show-nationals-plan-working.htm</description>
+    </item>
     <item>
       <title>New poll: Taxpayers' Union–Curia, 3 Nov 2026</title>
       <link>https://not-simon.github.io/Politicsnz/#/seats/polls</link>
@@ -344,70 +408,6 @@
       <pubDate>Tue, 03 Nov 2026 12:53:00 +1300</pubDate>
       <category>release</category>
       <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2611/S00012/three-more-years-of-national-a-threat-to-our-health-system.htm</description>
-    </item>
-    <item>
-      <title>ACT: press release — Three Strikes For Hipkins On Charter Schools</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/news/act</link>
-      <guid isPermaLink="false">ballotbook:release:act:https://www.scoop.co.nz/stories/PA2611/S00011/three-strikes-for-hipkins-on-charter-schools.htm</guid>
-      <pubDate>Tue, 03 Nov 2026 11:52:00 +1300</pubDate>
-      <category>release</category>
-      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2611/S00011/three-strikes-for-hipkins-on-charter-schools.htm</description>
-    </item>
-    <item>
-      <title>National: press release — Party Vote National To Protect Farmers’ Gains</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/news/national</link>
-      <guid isPermaLink="false">ballotbook:release:national:https://www.scoop.co.nz/stories/PA2611/S00010/party-vote-national-to-protect-farmers-gains.htm</guid>
-      <pubDate>Tue, 03 Nov 2026 09:45:00 +1300</pubDate>
-      <category>release</category>
-      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2611/S00010/party-vote-national-to-protect-farmers-gains.htm</description>
-    </item>
-    <item>
-      <title>Conservative: press release — New Zealand Is Being Taken For A Ride</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/news/conservative</link>
-      <guid isPermaLink="false">ballotbook:release:conservative:https://www.scoop.co.nz/stories/PO2611/S00015/new-zealand-is-being-taken-for-a-ride.htm</guid>
-      <pubDate>Tue, 03 Nov 2026 09:35:00 +1300</pubDate>
-      <category>release</category>
-      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PO2611/S00015/new-zealand-is-being-taken-for-a-ride.htm</description>
-    </item>
-    <item>
-      <title>Labour: press release — Brown Ducks Questions As Graduate Nurses Left Without Jobs</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/news/labour</link>
-      <guid isPermaLink="false">ballotbook:release:labour:https://www.scoop.co.nz/stories/PA2611/S00009/brown-ducks-questions-as-graduate-nurses-left-without-jobs.htm</guid>
-      <pubDate>Tue, 03 Nov 2026 08:05:00 +1300</pubDate>
-      <category>release</category>
-      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PA2611/S00009/brown-ducks-questions-as-graduate-nurses-left-without-jobs.htm</description>
-    </item>
-    <item>
-      <title>NZ First: policy updated — Establish a 12-month trial for commuter rail in Canterbury and further south</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/nz-first/policies</link>
-      <guid isPermaLink="false">ballotbook:policy-changed:nz-first:POL55310:2026-11-03</guid>
-      <pubDate>Tue, 03 Nov 2026 00:08:21 +1300</pubDate>
-      <category>policy-changed</category>
-      <description>Sources updated. Source: https://www.scoop.co.nz/stories/PA2610/S00155/nzfirst-campaign-announcement-commuter-rail-for-christchurch-reinstate-southerner-train.htm</description>
-    </item>
-    <item>
-      <title>Labour: policy updated — Remove rough sleepers from "Move On" bill</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/labour/policies</link>
-      <guid isPermaLink="false">ballotbook:policy-changed:labour:POL54889:2026-11-03</guid>
-      <pubDate>Tue, 03 Nov 2026 00:08:21 +1300</pubDate>
-      <category>policy-changed</category>
-      <description>Sources updated. Source: https://www.labour.org.nz/news/release-move-on-bill-still-punishes-the-homeless/</description>
-    </item>
-    <item>
-      <title>Labour: policy updated — Provide loans for people to purchase solar set-ups for their homes</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/labour/policies</link>
-      <guid isPermaLink="false">ballotbook:policy-changed:labour:POL54717:2026-11-03</guid>
-      <pubDate>Tue, 03 Nov 2026 00:08:21 +1300</pubDate>
-      <category>policy-changed</category>
-      <description>Summary updated; sources updated. Source: https://www.labour.org.nz/solarsaver</description>
-    </item>
-    <item>
-      <title>Labour: policy updated — Add at least 6000 more social housing places over the next 4 years</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/labour/policies</link>
-      <guid isPermaLink="false">ballotbook:policy-changed:labour:POL55151:2026-11-03</guid>
-      <pubDate>Tue, 03 Nov 2026 00:08:21 +1300</pubDate>
-      <category>policy-changed</category>
-      <description>Sources updated. Source: https://www.labour.org.nz/maori-trades-training</description>
     </item>
   </channel>
 </rss>

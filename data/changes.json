@@ -1,19 +1,115 @@
 {
  "_about": "What changed: new and changed policies and candidates (policy.nz), new polls and party releases, newest first. Built by tools/changelog.py; last 60 days. Release entries are headline + link only. `_snapshot` is the state the next run compares against (not published to the site).",
- "updated": "2026-11-04T23:58:08+13:00",
+ "updated": "2026-11-05T23:58:21+13:00",
  "window_days": 60,
- "policy_nz_checked": "2026-11-04T23:54:19+13:00",
+ "policy_nz_checked": "2026-11-05T23:54:51+13:00",
  "policy_nz_failures": 0,
  "counts": {
   "candidate-changed": 13,
-  "policy-added": 104,
+  "policy-added": 107,
   "policy-changed": 55,
   "policy-withdrawn": 1,
-  "poll-added": 15,
-  "release": 205,
+  "poll-added": 16,
+  "release": 209,
   "site": 1
  },
  "entries": [
+  {
+   "id": "poll-added:-:2026-10-25|Roy Morgan",
+   "date": "2026-11-05",
+   "kind": "poll-added",
+   "party": null,
+   "title": "Roy Morgan",
+   "summary": "Fieldwork 28 Sep – 25 Oct 2026, 859 people.",
+   "url": "#/seats/polls",
+   "source": "https://www.roymorgan.com/findings/10381-nz-national-voting-intention-october-2026",
+   "time": "2026-11-05T23:58:21+13:00",
+   "poll_date": "2026-10-25"
+  },
+  {
+   "id": "policy-added:labour:POL55431",
+   "date": "2026-11-05",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Ensure new customers don't get a better deal than existing ones",
+   "summary": "This party would prevent customers from creating deals just for new customers while charging existing customers more. Power companies are already required to check if customers are on the best deal; this would be extended to phone…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-will-crack-down-on-unfair-charges-on-bills",
+   "time": "2026-11-05T23:58:21+13:00",
+   "ref": "POL55431"
+  },
+  {
+   "id": "policy-added:labour:POL55432",
+   "date": "2026-11-05",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Base advertised discounts on the normal price of a product",
+   "summary": "This party would base advertised discounts on the lowest price that product has been in the 30 days before a sale starts. Companies would be required to keep a record of their prices so that all claims can be checked. Ignoring this rule…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/news/release-labour-will-crack-down-on-unfair-charges-on-bills",
+   "time": "2026-11-05T23:58:21+13:00",
+   "ref": "POL55432"
+  },
+  {
+   "id": "policy-added:labour:POL55429",
+   "date": "2026-11-05",
+   "kind": "policy-added",
+   "party": "labour",
+   "title": "Affirm NZ's Paris agreement and methane targets",
+   "summary": "This party would make sure methane targets keep NZ on track to meet its international commitments, while backing farmers to reduce emissions. It would affirm the country's commitment to the Paris Agreement, and make sure forestry ETS…",
+   "url": "#/parties/labour/policies",
+   "source": "https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf",
+   "time": "2026-11-05T23:58:21+13:00",
+   "ref": "POL55429"
+  },
+  {
+   "id": "release:green:https://www.scoop.co.nz/stories/PA2611/S00030/big-donors-hand-national-500k-in-11-days-eclipsing-some-parties-entire-2026-donation-total.htm",
+   "date": "2026-11-05",
+   "kind": "release",
+   "party": "green",
+   "title": "Big Donors Hand National $500k In 11 Days, Eclipsing Some Parties' Entire 2026 Donation Total",
+   "summary": "",
+   "url": "#/parties/news/green",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00030/big-donors-hand-national-500k-in-11-days-eclipsing-some-parties-entire-2026-donation-total.htm",
+   "time": "2026-11-05T14:29+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:labour:https://www.scoop.co.nz/stories/PA2611/S00029/national-continues-to-fail-starship.htm",
+   "date": "2026-11-05",
+   "kind": "release",
+   "party": "labour",
+   "title": "National Continues To Fail Starship",
+   "summary": "",
+   "url": "#/parties/news/labour",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00029/national-continues-to-fail-starship.htm",
+   "time": "2026-11-05T12:18+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:act:https://www.scoop.co.nz/stories/PA2611/S00028/save-the-kiwi-dollar-with-acts-cost-of-living-plan.htm",
+   "date": "2026-11-05",
+   "kind": "release",
+   "party": "act",
+   "title": "Save The Kiwi (Dollar) With ACT’s Cost Of Living Plan",
+   "summary": "",
+   "url": "#/parties/news/act",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00028/save-the-kiwi-dollar-with-acts-cost-of-living-plan.htm",
+   "time": "2026-11-05T12:14+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:national:https://www.scoop.co.nz/stories/PA2611/S00026/governments-books-show-nationals-plan-working.htm",
+   "date": "2026-11-05",
+   "kind": "release",
+   "party": "national",
+   "title": "Government’s Books Show National’s Plan Working",
+   "summary": "",
+   "url": "#/parties/news/national",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00026/governments-books-show-nationals-plan-working.htm",
+   "time": "2026-11-05T11:03+13:00",
+   "via": "Scoop"
+  },
   {
    "id": "poll-added:-:2026-11-03|Taxpayers' Union–Curia",
    "date": "2026-11-04",
@@ -4719,7 +4815,7 @@
   }
  ],
  "_snapshot": {
-  "taken": "2026-11-04T23:58:08+13:00",
+  "taken": "2026-11-05T23:58:21+13:00",
   "policies": {
    "act": {
     "POL54642": {
@@ -10444,6 +10540,24 @@
      "s": "Ratify the High Seas biodiversity treaty",
      "m": "24830e7d2d",
      "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55429": {
+     "s": "Affirm NZ's Paris agreement and methane targets",
+     "m": "9683c6ce5b",
+     "u": "3e31ab5cf4",
+     "w": null
+    },
+    "POL55431": {
+     "s": "Ensure new customers don't get a better deal than existing ones",
+     "m": "e9ed596468",
+     "u": "c8e5d35712",
+     "w": null
+    },
+    "POL55432": {
+     "s": "Base advertised discounts on the normal price of a product",
+     "m": "422b6dc4cc",
+     "u": "656ebd4161",
      "w": null
     }
    },
@@ -18728,6 +18842,7 @@
    "2026-10-19|1 News–Verian",
    "2026-10-19|The Post/Freshwater Strategy",
    "2026-10-25|1 News–Verian",
+   "2026-10-25|Roy Morgan",
    "2026-10-26|RNZ–Reid Research",
    "2026-11-02|1 News–Verian",
    "2026-11-03|Taxpayers' Union–Curia"
@@ -18913,6 +19028,10 @@
    "https://www.scoop.co.nz/stories/PA2611/S00023/poll-shows-new-act-talent-can-strengthen-the-coalition.htm",
    "https://www.scoop.co.nz/stories/PA2611/S00024/unemployment-shows-luxon-asleep-at-the-wheel.htm",
    "https://www.scoop.co.nz/stories/PA2611/S00025/national-caught-sneaking-unpopular-conservation-policies-back-into-play.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00026/governments-books-show-nationals-plan-working.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00028/save-the-kiwi-dollar-with-acts-cost-of-living-plan.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00029/national-continues-to-fail-starship.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00030/big-donors-hand-national-500k-in-11-days-eclipsing-some-parties-entire-2026-donation-total.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00108/a-win-for-free-speech-helen-houghton-challenges-extremist-label-and-secures-public-apology.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00118/historic-flag-raising-commemorates-womens-suffrage.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00122/immigration-and-employment-practices-time-for-transparency.htm",

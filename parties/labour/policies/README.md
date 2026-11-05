@@ -445,6 +445,36 @@ _Added on policy.nz, first seen 3 November 2026._
 
 Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
 
+#### Affirm NZ's Paris agreement and methane targets (POL55429)
+
+_Added on policy.nz, first seen 5 November 2026._
+
+**Why** (*policy.nz*): This party says that we need to lower emissions, make better use of NZ's cheap, clean energy and prepare communities for a changing climate.
+
+**How** (*policy.nz*): This party would make sure methane targets keep NZ on track to meet its international commitments, while backing farmers to reduce emissions. It would affirm the country's commitment to the Paris Agreement, and make sure forestry ETS rules support its long-term climate goals
+
+Sources: ['Labour policy manifesto' (PDF), 29 October 2026 (accessed 30 October 2026)](https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Ensure new customers don't get a better deal than existing ones (POL55431)
+
+_Added on policy.nz, first seen 5 November 2026._
+
+**Why** (*policy.nz*): This party says that people shouldn't have to do extensive research and reading of fine print to get a good deal on services like power, insurance and phone plans. Customers shouldn't be surprised when deals that existed to get new customers ends and the price of something increases drastically.
+
+**How** (*policy.nz*): This party would prevent customers from creating deals just for new customers while charging existing customers more. Power companies are already required to check if customers are on the best deal; this would be extended to phone companies and insurers. Exit fees that are unfair would be banned, as would automatic renewals and and long notice periods, which can make it harder to switch provider. When an introductory deal ends, companies would have to clearly state what the new price will be, so changed prices aren't a surprise.
+
+Sources: ['Labour will crack down on unfair charges on bills ', 2 November 2026 (accessed 03 November 2026)](https://www.labour.org.nz/news/release-labour-will-crack-down-on-unfair-charges-on-bills); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
+#### Base advertised discounts on the normal price of a product (POL55432)
+
+_Added on policy.nz, first seen 5 November 2026._
+
+**Why** (*policy.nz*): This party says that some companies create false discounts by inflating the price of products before a sale starts. This party says this is not fair to customers, and sales should only be for genuine discount.
+
+**How** (*policy.nz*): This party would base advertised discounts on the lowest price that product has been in the 30 days before a sale starts. Companies would be required to keep a record of their prices so that all claims can be checked. Ignoring this rule would be an offence under the Fair Trading Act.
+
+Sources: ['Labour will crack down on unfair charges on bills ', 2 November 2026 (accessed 03 November 2026)](https://www.labour.org.nz/news/release-labour-will-crack-down-on-unfair-charges-on-bills); ['Cracking Down on Unfair Charges', undated (accessed 03 November 2026)](https://www.labour.org.nz/fair-charges-on-bills); [policy.nz party page](https://policy.nz/2026/party-vote/parties/labour-party). Full text not yet archived.
+
 ### Updated policies
 
 #### Support a social media ban for under-16s to go through to select committee (POL54753)
