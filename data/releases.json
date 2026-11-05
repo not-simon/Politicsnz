@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T00:31:25Z",
+ "updated": "2026-11-05T07:19:14Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,13 +126,13 @@
   }
  },
  "counts": {
-  "items": 267,
+  "items": 268,
   "per_party": {
    "act": 47,
    "conservative": 19,
    "free-palestine": 2,
    "government": 56,
-   "green": 29,
+   "green": 30,
    "labour": 36,
    "national": 38,
    "nz-first": 25,
@@ -364,7 +364,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 1,
+   "items_matched_to_a_party": 0,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -381,6 +381,16 @@
   }
  ],
  "items": [
+  {
+   "party": "green",
+   "title": "Big Donors Hand National $500k In 11 Days, Eclipsing Some Parties' Entire 2026 Donation Total",
+   "date": "2026-11-05T14:29+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00030/big-donors-hand-national-500k-in-11-days-eclipsing-some-parties-entire-2026-donation-total.htm",
+   "summary": "From 2-13 October 2026, National received $499,000 in large donations, more than some parties have received the entire year.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Green Party"
+  },
   {
    "party": "labour",
    "title": "National Continues To Fail Starship",
