@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T03:12:41Z",
+ "updated": "2026-11-05T00:31:25Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,15 +126,15 @@
   }
  },
  "counts": {
-  "items": 263,
+  "items": 267,
   "per_party": {
-   "act": 46,
+   "act": 47,
    "conservative": 19,
    "free-palestine": 2,
-   "government": 55,
+   "government": 56,
    "green": 29,
-   "labour": 35,
-   "national": 37,
+   "labour": 36,
+   "national": 38,
    "nz-first": 25,
    "te-pati-maori": 11,
    "womens-rights": 4
@@ -353,7 +353,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 15,
+   "items_matched_to_a_party": 14,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -381,6 +381,46 @@
   }
  ],
  "items": [
+  {
+   "party": "labour",
+   "title": "National Continues To Fail Starship",
+   "date": "2026-11-05T12:18+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00029/national-continues-to-fail-starship.htm",
+   "summary": "“New Zealanders should be able to trust that when their child needs treatment, there will be qualified nurses there to deliver it\", says Labour health spokesperson Dr Ayesha Verrall.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand Labour Party"
+  },
+  {
+   "party": "act",
+   "title": "Save The Kiwi (Dollar) With ACT’s Cost Of Living Plan",
+   "date": "2026-11-05T12:14+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00028/save-the-kiwi-dollar-with-acts-cost-of-living-plan.htm",
+   "summary": "\"A weaker Kiwi dollar would be fuel on the cost of living fire. New Zealanders struggling with the cost of living can’t afford another source of inflation\", says ACT Leader David Seymour.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "ACT New Zealand"
+  },
+  {
+   "party": "national",
+   "title": "Government’s Books Show National’s Plan Working",
+   "date": "2026-11-05T11:03+13:00",
+   "url": "https://www.scoop.co.nz/stories/PA2611/S00026/governments-books-show-nationals-plan-working.htm",
+   "summary": "National’s Finance spokesperson Nicola Willis says, “The financial statements for the first 3 months of the year, released today, show the operating balance deficit was $1.3 billion lower than…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "New Zealand National Party"
+  },
+  {
+   "party": "government",
+   "title": "Funding for research into hydrogen resources",
+   "date": "2026-11-05T11:00+13:00",
+   "url": "https://www.beehive.govt.nz/release/funding-research-hydrogen-resources",
+   "summary": "Exploratory research work into the commercial viability of hydrogen resources in Southland will be accelerated by a grant of up to $17.8 million from the Regional Infrastructure Fund, Regional…",
+   "source": "Beehive",
+   "ministerial": true,
+   "byline": "beehive.govt.nz"
+  },
   {
    "party": "government",
    "title": "Funding for better connections in Kaikōura",
