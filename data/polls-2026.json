@@ -12,8 +12,27 @@
   "OPP": "opportunity"
  },
  "notes": "Percentages as published (decided voters; undecided excluded by every pollster). 'end_date' is the sort date used by Wikipedia (last fieldwork day or release date). Rows are newest first. 'others' = combined minor parties where listed. 'pollster_key' groups series that changed name; 'internal' marks party/corporate-client polls that are published selectively. Poll sources: each row's source_url as linked on Wikipedia. Refreshed by tools/polls_update.py.",
- "count": 134,
+ "count": 135,
  "polls": [
+  {
+   "date": "29 Oct – 3 Nov 2026",
+   "end_date": "2026-11-03",
+   "pollster": "The Post/Freshwater Strategy",
+   "source_url": "https://www.thepost.co.nz/politics/361111442/election-eve-cliffhanger-one-sleep-go-labour-nudges-ahead",
+   "sample_size": 1044,
+   "results": {
+    "national": 26.4,
+    "labour": 30.7,
+    "green": 13.0,
+    "act": 9.8,
+    "nz-first": 12.0,
+    "te-pati-maori": 2.0,
+    "opportunity": 5.1
+   },
+   "others": 1.0,
+   "pollster_key": "The Post/Freshwater Strategy",
+   "internal": false
+  },
   {
    "date": "28 Oct – 3 Nov 2026",
    "end_date": "2026-11-03",
@@ -2650,7 +2669,7 @@
    "end_date": "2023-11-27"
   }
  ],
- "source_revid": 1383703101,
+ "source_revid": 1383951372,
  "pollsters": {
   "1 News–Verian": {
    "commissioner": "TVNZ 1News",
@@ -2686,7 +2705,7 @@
    "fieldwork_company": "Freshwater Strategy",
    "method": "Online panel, n≈1,000–1,500",
    "type": "public-media",
-   "n_polls": 8
+   "n_polls": 9
   },
   "Talbot Mills": {
    "commissioner": "Talbot Mills Research (corporate-client poll; also Labour's pollster, formerly UMR)",
