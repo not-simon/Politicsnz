@@ -1,11 +1,11 @@
 {
  "title": "Poll-of-polls and seat forecast: 2026 New Zealand general election",
- "generated": "2026-11-05",
- "as_of": "2026-11-05",
+ "generated": "2026-11-06",
+ "as_of": "2026-11-06",
  "election_date": "2026-11-07",
- "days_to_election": 2,
+ "days_to_election": 1,
  "polls_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
- "polls_retrieved": "2026-11-05",
+ "polls_retrieved": "2026-11-06",
  "n_polls_this_term": 135,
  "n_polls_last_120_days": 26,
  "latest_poll_date": "2026-11-03",
@@ -27,7 +27,7 @@
   "p_left_bloc_majority_LAB_GRN_TPM": 8,
   "p_no_bloc_majority": 62,
   "p_TOP_holds_balance_of_power": 61,
-  "p_NZ_First_holds_balance_of_power": 81,
+  "p_NZ_First_holds_balance_of_power": 82,
   "p_TOP_over_5pct": 86,
   "p_NZ_First_over_5pct": 100,
   "p_TPM_over_5pct": 0,
@@ -59,7 +59,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 2.68,
     "aggregate_se": 0.51,
-    "drift_sd_to_election": 0.17,
+    "drift_sd_to_election": 0.12,
     "total_sd": 2.73
    },
    "n_polls_last_120_days": 26,
@@ -122,7 +122,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 2.67,
     "aggregate_se": 0.47,
-    "drift_sd_to_election": 0.2,
+    "drift_sd_to_election": 0.14,
     "total_sd": 2.71
    },
    "n_polls_last_120_days": 26,
@@ -182,8 +182,8 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 2.12,
     "aggregate_se": 0.4,
-    "drift_sd_to_election": 0.16,
-    "total_sd": 2.17
+    "drift_sd_to_election": 0.11,
+    "total_sd": 2.16
    },
    "n_polls_last_120_days": 26,
    "seats_mean": 18.2,
@@ -207,7 +207,7 @@
     "20": 11,
     "21": 8,
     "22": 5,
-    "23": 3,
+    "23": 2,
     "24": 1,
     "25": 1
    },
@@ -240,7 +240,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 1.82,
     "aggregate_se": 0.35,
-    "drift_sd_to_election": 0.15,
+    "drift_sd_to_election": 0.11,
     "total_sd": 1.86
    },
    "n_polls_last_120_days": 26,
@@ -265,8 +265,7 @@
     "15": 9,
     "16": 6,
     "17": 3,
-    "18": 1,
-    "19": 1
+    "18": 1
    },
    "p_over_5pct": 100,
    "p_wins_electorate": 90,
@@ -297,7 +296,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 1.8,
     "aggregate_se": 0.34,
-    "drift_sd_to_election": 0.11,
+    "drift_sd_to_election": 0.08,
     "total_sd": 1.83
    },
    "n_polls_last_120_days": 26,
@@ -353,7 +352,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 0.71,
     "aggregate_se": 0.16,
-    "drift_sd_to_election": 0.1,
+    "drift_sd_to_election": 0.07,
     "total_sd": 0.73
    },
    "n_polls_last_120_days": 26,
@@ -394,7 +393,7 @@
    "forecast_vote_mean": 6.5,
    "forecast_vote_80": [
     4.8,
-    8.5
+    8.4
    ],
    "forecast_vote_95": [
     4.1,
@@ -403,7 +402,7 @@
    "uncertainty": {
     "calibrated_poll_error_sd": 1.47,
     "aggregate_se": 0.28,
-    "drift_sd_to_election": 0.09,
+    "drift_sd_to_election": 0.06,
     "total_sd": 1.5
    },
    "n_polls_last_120_days": 26,
@@ -499,7 +498,7 @@
    "seats_expected": 55,
    "seats_80": [
     50,
-    61
+    60
    ],
    "p_majority": 8,
    "seat_histogram": {
@@ -785,13 +784,13 @@
  },
  "most_likely_parliament": {
   "seats": {
-   "national": 35,
-   "labour": 33,
+   "national": 37,
+   "labour": 31,
    "green": 17,
-   "act": 12,
-   "nz-first": 13,
-   "te-pati-maori": 4,
-   "opportunity": 8
+   "act": 14,
+   "nz-first": 12,
+   "te-pati-maori": 3,
+   "opportunity": 7
   },
   "share_of_simulations": 0.0,
   "note": "The single most frequent exact seat combination across 40,000 simulations; with seven parties even the modal combination occurs in well under 1% of them, so read it as one plausible parliament, not a prediction."
@@ -2368,7 +2367,7 @@
    "opportunity": 6.6
   },
   {
-   "week_ending": "2026-11-05",
+   "week_ending": "2026-11-06",
    "national": 28.0,
    "labour": 27.7,
    "green": 14.9,
