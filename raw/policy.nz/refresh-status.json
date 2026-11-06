@@ -1,27 +1,12 @@
 {
- "checked": "2026-11-05T23:54:51+13:00",
- "date": "2026-11-05",
+ "checked": "2026-11-06T23:51:22+13:00",
+ "date": "2026-11-06",
  "mode": "live",
  "requests_failed": [],
  "kept_previous": [],
  "suspect": [],
- "raw_files_changed": [
-  "party-vote-election.json",
-  "parties/labour-party.json",
-  "electorates/party-vote.json"
- ],
- "policies": {
-  "labour": {
-   "added": [
-    "POL55429",
-    "POL55431",
-    "POL55432"
-   ],
-   "changed": [],
-   "withdrawn": [],
-   "reinstated": []
-  }
- },
+ "raw_files_changed": [],
+ "policies": {},
  "candidates": {
   "new_or_changed": [],
   "unlisted": []

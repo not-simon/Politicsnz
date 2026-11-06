@@ -1,19 +1,55 @@
 {
  "_about": "What changed: new and changed policies and candidates (policy.nz), new polls and party releases, newest first. Built by tools/changelog.py; last 60 days. Release entries are headline + link only. `_snapshot` is the state the next run compares against (not published to the site).",
- "updated": "2026-11-05T23:58:21+13:00",
+ "updated": "2026-11-06T23:54:43+13:00",
  "window_days": 60,
- "policy_nz_checked": "2026-11-05T23:54:51+13:00",
+ "policy_nz_checked": "2026-11-06T23:51:22+13:00",
  "policy_nz_failures": 0,
  "counts": {
   "candidate-changed": 13,
   "policy-added": 107,
   "policy-changed": 55,
   "policy-withdrawn": 1,
-  "poll-added": 16,
-  "release": 209,
+  "poll-added": 17,
+  "release": 211,
   "site": 1
  },
  "entries": [
+  {
+   "id": "poll-added:-:2026-11-03|The Post/Freshwater Strategy",
+   "date": "2026-11-06",
+   "kind": "poll-added",
+   "party": null,
+   "title": "The Post/Freshwater Strategy",
+   "summary": "Fieldwork 29 Oct – 3 Nov 2026, 1,044 people.",
+   "url": "#/seats/polls",
+   "source": "https://www.thepost.co.nz/politics/361111442/election-eve-cliffhanger-one-sleep-go-labour-nudges-ahead",
+   "time": "2026-11-06T23:54:43+13:00",
+   "poll_date": "2026-11-03"
+  },
+  {
+   "id": "release:nz-loyal:https://www.scoop.co.nz/stories/PO2611/S00050/notice-to-new-zealand-voters-check-your-enrolment-status.htm",
+   "date": "2026-11-06",
+   "kind": "release",
+   "party": "nz-loyal",
+   "title": "Notice To New Zealand Voters: Check Your Enrolment Status",
+   "summary": "",
+   "url": "#/parties/news/nz-loyal",
+   "source": "https://www.scoop.co.nz/stories/PO2611/S00050/notice-to-new-zealand-voters-check-your-enrolment-status.htm",
+   "time": "2026-11-06T12:42+13:00",
+   "via": "Scoop"
+  },
+  {
+   "id": "release:national:https://www.scoop.co.nz/stories/PA2611/S00031/new-zealand-a-bright-spot-in-global-economy.htm",
+   "date": "2026-11-06",
+   "kind": "release",
+   "party": "national",
+   "title": "New Zealand A Bright Spot In Global Economy",
+   "summary": "",
+   "url": "#/parties/news/national",
+   "source": "https://www.scoop.co.nz/stories/PA2611/S00031/new-zealand-a-bright-spot-in-global-economy.htm",
+   "time": "2026-11-06T09:05+13:00",
+   "via": "Scoop"
+  },
   {
    "id": "poll-added:-:2026-10-25|Roy Morgan",
    "date": "2026-11-05",
@@ -4815,7 +4851,7 @@
   }
  ],
  "_snapshot": {
-  "taken": "2026-11-05T23:58:21+13:00",
+  "taken": "2026-11-06T23:54:43+13:00",
   "policies": {
    "act": {
     "POL54642": {
@@ -18845,7 +18881,8 @@
    "2026-10-25|Roy Morgan",
    "2026-10-26|RNZ–Reid Research",
    "2026-11-02|1 News–Verian",
-   "2026-11-03|Taxpayers' Union–Curia"
+   "2026-11-03|Taxpayers' Union–Curia",
+   "2026-11-03|The Post/Freshwater Strategy"
   ],
   "releases": [
    "https://www.scoop.co.nz/stories/PA2609/S00152/governments-last-act-is-another-attack-on-te-tiriti.htm",
@@ -19032,6 +19069,7 @@
    "https://www.scoop.co.nz/stories/PA2611/S00028/save-the-kiwi-dollar-with-acts-cost-of-living-plan.htm",
    "https://www.scoop.co.nz/stories/PA2611/S00029/national-continues-to-fail-starship.htm",
    "https://www.scoop.co.nz/stories/PA2611/S00030/big-donors-hand-national-500k-in-11-days-eclipsing-some-parties-entire-2026-donation-total.htm",
+   "https://www.scoop.co.nz/stories/PA2611/S00031/new-zealand-a-bright-spot-in-global-economy.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00108/a-win-for-free-speech-helen-houghton-challenges-extremist-label-and-secures-public-apology.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00118/historic-flag-raising-commemorates-womens-suffrage.htm",
    "https://www.scoop.co.nz/stories/PO2609/S00122/immigration-and-employment-practices-time-for-transparency.htm",
@@ -19056,7 +19094,8 @@
    "https://www.scoop.co.nz/stories/PO2611/S00010/fisheries-ministers-ignoring-of-yellow-eyed-penguin-advice-raises-serious-questions.htm",
    "https://www.scoop.co.nz/stories/PO2611/S00011/we-are-ruled-by-unelected-bureaucrats.htm",
    "https://www.scoop.co.nz/stories/PO2611/S00015/new-zealand-is-being-taken-for-a-ride.htm",
-   "https://www.scoop.co.nz/stories/PO2611/S00025/conservative-nz-policy-review-and-reform-of-the-conversion-practices-prohibition-legislation-act-2022.htm"
+   "https://www.scoop.co.nz/stories/PO2611/S00025/conservative-nz-policy-review-and-reform-of-the-conversion-practices-prohibition-legislation-act-2022.htm",
+   "https://www.scoop.co.nz/stories/PO2611/S00050/notice-to-new-zealand-voters-check-your-enrolment-status.htm"
   ]
  }
 }
