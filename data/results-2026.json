@@ -4,14 +4,14 @@
  "parliament": 55,
  "official": false,
  "preliminary": true,
- "updated": "2026-11-08T01:16:20",
- "fetched": "2026-11-07T12:17:13Z",
- "counted_pct": 99.1,
+ "updated": "2026-11-08T03:45:13",
+ "fetched": "2026-11-07T17:46:41Z",
+ "counted_pct": 100.0,
  "counted_basis": "percentage of voting places whose results have been entered (the Commission's measure), not percentage of votes",
- "voting_places_counted": 9306,
- "votes_cast": 2423766,
- "turnout_pct": 63.8,
- "electorates_final": 40,
+ "voting_places_counted": 9389,
+ "votes_cast": 2432403,
+ "turnout_pct": 64.1,
+ "electorates_final": 71,
  "total_seats": 131,
  "majority": 66,
  "source_url": "https://www.electionresults.govt.nz",
@@ -22,8 +22,8 @@
    "party": "labour",
    "name": "Labour Party",
    "registered": true,
-   "party_votes": 706989,
-   "party_vote_pct": 29.33,
+   "party_votes": 710330,
+   "party_vote_pct": 29.36,
    "electorate_seats": 21,
    "list_seats": 15,
    "total_seats": 36
@@ -32,8 +32,8 @@
    "party": "national",
    "name": "National Party",
    "registered": true,
-   "party_votes": 704892,
-   "party_vote_pct": 29.24,
+   "party_votes": 706680,
+   "party_vote_pct": 29.21,
    "electorate_seats": 42,
    "list_seats": 0,
    "total_seats": 42
@@ -42,7 +42,7 @@
    "party": "green",
    "name": "Green Party",
    "registered": true,
-   "party_votes": 320714,
+   "party_votes": 321902,
    "party_vote_pct": 13.3,
    "electorate_seats": 2,
    "list_seats": 14,
@@ -52,8 +52,8 @@
    "party": "act",
    "name": "ACT New Zealand",
    "registered": true,
-   "party_votes": 263460,
-   "party_vote_pct": 10.93,
+   "party_votes": 264121,
+   "party_vote_pct": 10.92,
    "electorate_seats": 1,
    "list_seats": 12,
    "total_seats": 13
@@ -62,8 +62,8 @@
    "party": "nz-first",
    "name": "New Zealand First Party",
    "registered": true,
-   "party_votes": 235613,
-   "party_vote_pct": 9.77,
+   "party_votes": 236630,
+   "party_vote_pct": 9.78,
    "electorate_seats": 0,
    "list_seats": 12,
    "total_seats": 12
@@ -72,8 +72,8 @@
    "party": "opportunity",
    "name": "Opportunity Party",
    "registered": true,
-   "party_votes": 143972,
-   "party_vote_pct": 5.97,
+   "party_votes": 144298,
+   "party_vote_pct": 5.96,
    "electorate_seats": 0,
    "list_seats": 7,
    "total_seats": 7
@@ -82,7 +82,7 @@
    "party": "te-pati-maori",
    "name": "Te Pāti Māori",
    "registered": true,
-   "party_votes": 13762,
+   "party_votes": 13845,
    "party_vote_pct": 0.57,
    "electorate_seats": 5,
    "list_seats": 0,
@@ -92,7 +92,7 @@
    "party": "legalise-cannabis",
    "name": "Aotearoa Legalise Cannabis Party",
    "registered": true,
-   "party_votes": 4793,
+   "party_votes": 4829,
    "party_vote_pct": 0.19,
    "electorate_seats": 0,
    "list_seats": 0,
@@ -102,7 +102,7 @@
    "party": "nz-outdoors-freedom",
    "name": "NZ Outdoors & Freedom Party",
    "registered": true,
-   "party_votes": 2673,
+   "party_votes": 2685,
    "party_vote_pct": 0.11,
    "electorate_seats": 0,
    "list_seats": 0,
@@ -112,7 +112,7 @@
    "party": "animal-justice",
    "name": "Animal Justice Party Aotearoa New Zealand",
    "registered": true,
-   "party_votes": 2573,
+   "party_votes": 2585,
    "party_vote_pct": 0.1,
    "electorate_seats": 0,
    "list_seats": 0,
@@ -122,7 +122,7 @@
    "party": "conservative",
    "name": "Conservative Party NZ",
    "registered": true,
-   "party_votes": 1862,
+   "party_votes": 1886,
    "party_vote_pct": 0.07,
    "electorate_seats": 0,
    "list_seats": 0,
@@ -132,7 +132,7 @@
    "party": "womens-rights",
    "name": "Women’s Rights Party",
    "registered": true,
-   "party_votes": 1847,
+   "party_votes": 1856,
    "party_vote_pct": 0.07,
    "electorate_seats": 0,
    "list_seats": 0,
@@ -142,7 +142,7 @@
    "party": "nz-loyal",
    "name": "New Zealand Loyal",
    "registered": true,
-   "party_votes": 1837,
+   "party_votes": 1855,
    "party_vote_pct": 0.07,
    "electorate_seats": 0,
    "list_seats": 0,
@@ -152,7 +152,7 @@
    "party": "vision-nz",
    "name": "Vision New Zealand",
    "registered": true,
-   "party_votes": 1518,
+   "party_votes": 1529,
    "party_vote_pct": 0.06,
    "electorate_seats": 0,
    "list_seats": 0,
@@ -162,8 +162,8 @@
    "party": "te-tai-tokerau-party",
    "name": "Te Tai Tokerau Party",
    "registered": true,
-   "party_votes": 1191,
-   "party_vote_pct": 0.04,
+   "party_votes": 1217,
+   "party_vote_pct": 0.05,
    "electorate_seats": 0,
    "list_seats": 0,
    "total_seats": 0
@@ -172,7 +172,7 @@
    "party": "free-palestine",
    "name": "Free Palestine",
    "registered": true,
-   "party_votes": 1165,
+   "party_votes": 1168,
    "party_vote_pct": 0.04,
    "electorate_seats": 0,
    "list_seats": 0,
@@ -182,7 +182,7 @@
    "party": "alliance",
    "name": "Alliance Party",
    "registered": true,
-   "party_votes": 1146,
+   "party_votes": 1149,
    "party_vote_pct": 0.04,
    "electorate_seats": 0,
    "list_seats": 0,
@@ -194,43 +194,43 @@
    "name": "Auckland Central",
    "slug": "auckland-central",
    "type": "general",
-   "counted_pct": 97.1,
-   "final": false,
-   "votes_cast": 30039,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 30110,
+   "winner": "Chlöe Swarbrick",
+   "party": "green",
    "leader": "Chlöe Swarbrick",
    "leader_party": "green",
-   "majority": 2837,
+   "majority": 2831,
    "runner_up": "Candace Kinser",
    "runner_up_party": "national",
-   "winner_votes": 13920,
-   "runner_up_votes": 11083,
+   "winner_votes": 13942,
+   "runner_up_votes": 11111,
    "candidates": [
     {
      "name": "Chlöe Swarbrick",
      "party": "green",
-     "votes": 13920
+     "votes": 13942
     },
     {
      "name": "Candace Kinser",
      "party": "national",
-     "votes": 11083
+     "votes": 11111
     },
     {
      "name": "Naisi Chen",
      "party": "labour",
-     "votes": 2806
+     "votes": 2819
     },
     {
      "name": "Antonia Modkova",
      "party": "act",
-     "votes": 992
+     "votes": 996
     },
     {
      "name": "Johan Chang",
      "party": "opportunity",
-     "votes": 858
+     "votes": 861
     },
     {
      "name": "Christopher Manaia",
@@ -239,19 +239,19 @@
     }
    ],
    "party_votes": {
-    "act": 3304,
+    "act": 3313,
     "alliance": 6,
     "animal-justice": 28,
     "legalise-cannabis": 48,
     "conservative": 7,
     "free-palestine": 16,
-    "green": 6007,
-    "labour": 7722,
+    "green": 6017,
+    "labour": 7747,
     "nz-outdoors-freedom": 14,
-    "national": 7957,
-    "nz-first": 1570,
+    "national": 7976,
+    "nz-first": 1573,
     "nz-loyal": 8,
-    "opportunity": 3171,
+    "opportunity": 3176,
     "te-pati-maori": 62,
     "te-tai-tokerau-party": 1,
     "vision-nz": 2,
@@ -340,28 +340,28 @@
    "name": "Botany",
    "slug": "botany",
    "type": "general",
-   "counted_pct": 98.7,
-   "final": false,
-   "votes_cast": 32063,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 32069,
+   "winner": "Christopher Luxon",
+   "party": "national",
    "leader": "Christopher Luxon",
    "leader_party": "national",
-   "majority": 13070,
+   "majority": 13073,
    "runner_up": "Anae Neru Leavasa",
    "runner_up_party": "labour",
-   "winner_votes": 20851,
-   "runner_up_votes": 7781,
+   "winner_votes": 20855,
+   "runner_up_votes": 7782,
    "candidates": [
     {
      "name": "Christopher Luxon",
      "party": "national",
-     "votes": 20851
+     "votes": 20855
     },
     {
      "name": "Anae Neru Leavasa",
      "party": "labour",
-     "votes": 7781
+     "votes": 7782
     },
     {
      "name": "Craig H. Stobo",
@@ -371,7 +371,7 @@
     {
      "name": "Ali Dahche",
      "party": "act",
-     "votes": 1361
+     "votes": 1362
     }
    ],
    "party_votes": {
@@ -381,13 +381,13 @@
     "legalise-cannabis": 24,
     "conservative": 19,
     "free-palestine": 15,
-    "green": 1838,
+    "green": 1839,
     "labour": 5846,
     "nz-outdoors-freedom": 17,
-    "national": 16325,
-    "nz-first": 2284,
+    "national": 16328,
+    "nz-first": 2285,
     "nz-loyal": 10,
-    "opportunity": 1405,
+    "opportunity": 1406,
     "te-pati-maori": 20,
     "te-tai-tokerau-party": 3,
     "vision-nz": 19,
@@ -725,67 +725,67 @@
    "name": "East Cape",
    "slug": "east-cape",
    "type": "general",
-   "counted_pct": 98.2,
-   "final": false,
-   "votes_cast": 33822,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 33920,
+   "winner": "Dana Margot Kirkpatrick",
+   "party": "national",
    "leader": "Dana Margot Kirkpatrick",
    "leader_party": "national",
-   "majority": 5365,
+   "majority": 5325,
    "runner_up": "Jo Luxton",
    "runner_up_party": "labour",
-   "winner_votes": 16388,
-   "runner_up_votes": 11023,
+   "winner_votes": 16404,
+   "runner_up_votes": 11079,
    "candidates": [
     {
      "name": "Dana Margot Kirkpatrick",
      "party": "national",
-     "votes": 16388
+     "votes": 16404
     },
     {
      "name": "Jo Luxton",
      "party": "labour",
-     "votes": 11023
+     "votes": 11079
     },
     {
      "name": "Jordan Walker",
      "party": "green",
-     "votes": 2852
+     "votes": 2862
     },
     {
      "name": "Darrin Hawkes",
      "party": "act",
-     "votes": 1974
+     "votes": 1982
     },
     {
      "name": "Cail Smith",
      "party": "opportunity",
-     "votes": 776
+     "votes": 779
     },
     {
      "name": "Gordon John Dickson",
      "party": "independent",
-     "votes": 274
+     "votes": 276
     }
    ],
    "party_votes": {
-    "act": 4500,
+    "act": 4505,
     "alliance": 12,
     "animal-justice": 26,
     "legalise-cannabis": 60,
     "conservative": 16,
-    "free-palestine": 11,
-    "green": 3282,
-    "labour": 9521,
+    "free-palestine": 12,
+    "green": 3294,
+    "labour": 9569,
     "nz-outdoors-freedom": 35,
-    "national": 10250,
-    "nz-first": 4242,
+    "national": 10254,
+    "nz-first": 4258,
     "nz-loyal": 18,
-    "opportunity": 1428,
-    "te-pati-maori": 179,
-    "te-tai-tokerau-party": 5,
-    "vision-nz": 33,
+    "opportunity": 1432,
+    "te-pati-maori": 181,
+    "te-tai-tokerau-party": 6,
+    "vision-nz": 34,
     "womens-rights": 33
    }
   },
@@ -793,11 +793,11 @@
    "name": "East Coast Bays",
    "slug": "east-coast-bays",
    "type": "general",
-   "counted_pct": 98.9,
-   "final": false,
+   "counted_pct": 100.0,
+   "final": true,
    "votes_cast": 31004,
-   "winner": null,
-   "party": null,
+   "winner": "Erica Stanford",
+   "party": "national",
    "leader": "Erica Stanford",
    "leader_party": "national",
    "majority": 13819,
@@ -861,70 +861,70 @@
    "name": "Epsom",
    "slug": "epsom",
    "type": "general",
-   "counted_pct": 97.2,
-   "final": false,
-   "votes_cast": 31831,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 32201,
+   "winner": "David Seymour",
+   "party": "act",
    "leader": "David Seymour",
    "leader_party": "act",
-   "majority": 2027,
+   "majority": 2044,
    "runner_up": "Paul Goldsmith",
    "runner_up_party": "national",
-   "winner_votes": 11680,
-   "runner_up_votes": 9653,
+   "winner_votes": 11786,
+   "runner_up_votes": 9742,
    "candidates": [
     {
      "name": "David Seymour",
      "party": "act",
-     "votes": 11680
+     "votes": 11786
     },
     {
      "name": "Paul Goldsmith",
      "party": "national",
-     "votes": 9653
+     "votes": 9742
     },
     {
      "name": "Camilla Belich",
      "party": "labour",
-     "votes": 5697
+     "votes": 5798
     },
     {
      "name": "Lawrence Xu-Nan",
      "party": "green",
-     "votes": 3056
+     "votes": 3105
     },
     {
      "name": "Paul Jackson",
      "party": "opportunity",
-     "votes": 1167
+     "votes": 1181
     },
     {
      "name": "Martin Gummer",
      "party": "nz-first",
-     "votes": 350
+     "votes": 359
     },
     {
      "name": "Sawan Jerry",
      "party": "vision-nz",
-     "votes": 21
+     "votes": 22
     }
    ],
    "party_votes": {
-    "act": 4947,
+    "act": 4976,
     "alliance": 5,
     "animal-justice": 22,
     "legalise-cannabis": 19,
-    "conservative": 12,
-    "free-palestine": 10,
-    "green": 3703,
-    "labour": 5305,
+    "conservative": 13,
+    "free-palestine": 11,
+    "green": 3751,
+    "labour": 5414,
     "nz-outdoors-freedom": 3,
-    "national": 13617,
-    "nz-first": 1391,
+    "national": 13754,
+    "nz-first": 1401,
     "nz-loyal": 5,
-    "opportunity": 2654,
-    "te-pati-maori": 28,
+    "opportunity": 2688,
+    "te-pati-maori": 29,
     "te-tai-tokerau-party": 1,
     "vision-nz": 11,
     "womens-rights": 18
@@ -934,48 +934,48 @@
    "name": "Glendene",
    "slug": "glendene",
    "type": "general",
-   "counted_pct": 98.0,
-   "final": false,
-   "votes_cast": 29904,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 29932,
+   "winner": "Carmel Jean Sepuloni",
+   "party": "labour",
    "leader": "Carmel Jean Sepuloni",
    "leader_party": "labour",
-   "majority": 6932,
+   "majority": 6940,
    "runner_up": "Sunil Kumar",
    "runner_up_party": "national",
-   "winner_votes": 14464,
-   "runner_up_votes": 7532,
+   "winner_votes": 14478,
+   "runner_up_votes": 7538,
    "candidates": [
     {
      "name": "Carmel Jean Sepuloni",
      "party": "labour",
-     "votes": 14464
+     "votes": 14478
     },
     {
      "name": "Sunil Kumar",
      "party": "national",
-     "votes": 7532
+     "votes": 7538
     },
     {
      "name": "Yasmine Serhan",
      "party": "green",
-     "votes": 2897
+     "votes": 2900
     },
     {
      "name": "Alfred Ngaro",
      "party": "nz-first",
-     "votes": 2177
+     "votes": 2178
     },
     {
      "name": "Amanda Roberts",
      "party": "act",
-     "votes": 1169
+     "votes": 1170
     },
     {
      "name": "Evan French",
      "party": "opportunity",
-     "votes": 936
+     "votes": 937
     },
     {
      "name": "Rob McNEIL",
@@ -989,19 +989,19 @@
     }
    ],
    "party_votes": {
-    "act": 1682,
+    "act": 1683,
     "alliance": 10,
     "animal-justice": 70,
     "legalise-cannabis": 50,
     "conservative": 22,
     "free-palestine": 16,
-    "green": 4147,
-    "labour": 12309,
+    "green": 4149,
+    "labour": 12320,
     "nz-outdoors-freedom": 8,
-    "national": 7000,
-    "nz-first": 2511,
-    "nz-loyal": 9,
-    "opportunity": 1702,
+    "national": 7007,
+    "nz-first": 2513,
+    "nz-loyal": 10,
+    "opportunity": 1704,
     "te-pati-maori": 60,
     "te-tai-tokerau-party": 4,
     "vision-nz": 20,
@@ -1158,53 +1158,53 @@
    "name": "Henderson",
    "slug": "henderson",
    "type": "general",
-   "counted_pct": 96.5,
-   "final": false,
-   "votes_cast": 28032,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 28408,
+   "winner": "Phil Twyford",
+   "party": "labour",
    "leader": "Phil Twyford",
    "leader_party": "labour",
-   "majority": 6163,
+   "majority": 6213,
    "runner_up": "Angee Nicholas",
    "runner_up_party": "national",
-   "winner_votes": 13802,
-   "runner_up_votes": 7639,
+   "winner_votes": 13964,
+   "runner_up_votes": 7751,
    "candidates": [
     {
      "name": "Phil Twyford",
      "party": "labour",
-     "votes": 13802
+     "votes": 13964
     },
     {
      "name": "Angee Nicholas",
      "party": "national",
-     "votes": 7639
+     "votes": 7751
     },
     {
      "name": "Alika Wells",
      "party": "green",
-     "votes": 2296
+     "votes": 2326
     },
     {
      "name": "David Ashley Wilson",
      "party": "nz-first",
-     "votes": 1720
+     "votes": 1741
     },
     {
      "name": "Nick Peirce",
      "party": "act",
-     "votes": 1016
+     "votes": 1032
     },
     {
      "name": "Almo Wong",
      "party": "opportunity",
-     "votes": 907
+     "votes": 931
     },
     {
      "name": "Kay Luv",
      "party": "independent",
-     "votes": 139
+     "votes": 144
     },
     {
      "name": "Kelso Papali'I",
@@ -1214,23 +1214,23 @@
     {
      "name": "John Divine Paola Talagi",
      "party": "independent",
-     "votes": 53
+     "votes": 54
     }
    ],
    "party_votes": {
-    "act": 1734,
+    "act": 1758,
     "alliance": 10,
-    "animal-justice": 23,
-    "legalise-cannabis": 43,
-    "conservative": 29,
+    "animal-justice": 25,
+    "legalise-cannabis": 44,
+    "conservative": 30,
     "free-palestine": 29,
-    "green": 3010,
-    "labour": 12192,
+    "green": 3046,
+    "labour": 12342,
     "nz-outdoors-freedom": 13,
-    "national": 7060,
-    "nz-first": 2517,
+    "national": 7170,
+    "nz-first": 2546,
     "nz-loyal": 22,
-    "opportunity": 1077,
+    "opportunity": 1097,
     "te-pati-maori": 68,
     "te-tai-tokerau-party": 3,
     "vision-nz": 8,
@@ -1523,11 +1523,11 @@
    "name": "Kaipara ki Mahurangi",
    "slug": "kaipara-ki-mahurangi",
    "type": "general",
-   "counted_pct": 99.1,
-   "final": false,
+   "counted_pct": 100.0,
+   "final": true,
    "votes_cast": 38131,
-   "winner": null,
-   "party": null,
+   "winner": "Jessica Rowe",
+   "party": "national",
    "leader": "Jessica Rowe",
    "leader_party": "national",
    "majority": 12592,
@@ -1747,210 +1747,210 @@
    "name": "Māngere",
    "slug": "mangere",
    "type": "general",
-   "counted_pct": 95.8,
-   "final": false,
-   "votes_cast": 22822,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 23624,
+   "winner": "Lemauga Lydia Sosene",
+   "party": "labour",
    "leader": "Lemauga Lydia Sosene",
    "leader_party": "labour",
-   "majority": 11519,
+   "majority": 11970,
    "runner_up": "Rosemary Bourke",
    "runner_up_party": "national",
-   "winner_votes": 14281,
-   "runner_up_votes": 2762,
+   "winner_votes": 14815,
+   "runner_up_votes": 2845,
    "candidates": [
     {
      "name": "Lemauga Lydia Sosene",
      "party": "labour",
-     "votes": 14281
+     "votes": 14815
     },
     {
      "name": "Rosemary Bourke",
      "party": "national",
-     "votes": 2762
+     "votes": 2845
     },
     {
      "name": "Michel Mulipola",
      "party": "green",
-     "votes": 2241
+     "votes": 2313
     },
     {
      "name": "Vicky Hau",
      "party": "nz-first",
-     "votes": 1669
+     "votes": 1729
     },
     {
      "name": "Ben Lane",
      "party": "opportunity",
-     "votes": 519
+     "votes": 540
     },
     {
      "name": "Manu Singh",
      "party": "act",
-     "votes": 372
+     "votes": 384
     },
     {
      "name": "Alani Fisher Taione",
      "party": "nz-peoples",
-     "votes": 180
+     "votes": 185
     },
     {
      "name": "Timoti Te Moke",
      "party": "independent",
-     "votes": 173
+     "votes": 179
     },
     {
      "name": "Hine Afeaki",
      "party": "nz-outdoors-freedom",
-     "votes": 159
+     "votes": 167
     },
     {
      "name": "Kelvyn Alp",
      "party": "nz-loyal",
-     "votes": 35
+     "votes": 36
     }
    ],
    "party_votes": {
-    "act": 570,
+    "act": 579,
     "alliance": 4,
     "animal-justice": 17,
     "legalise-cannabis": 32,
-    "conservative": 12,
+    "conservative": 14,
     "free-palestine": 8,
-    "green": 1891,
-    "labour": 14294,
-    "nz-outdoors-freedom": 18,
-    "national": 2613,
-    "nz-first": 2045,
-    "nz-loyal": 26,
-    "opportunity": 612,
-    "te-pati-maori": 64,
+    "green": 1929,
+    "labour": 14857,
+    "nz-outdoors-freedom": 19,
+    "national": 2696,
+    "nz-first": 2114,
+    "nz-loyal": 27,
+    "opportunity": 624,
+    "te-pati-maori": 66,
     "te-tai-tokerau-party": 5,
-    "vision-nz": 30,
-    "womens-rights": 13
+    "vision-nz": 32,
+    "womens-rights": 15
    }
   },
   {
    "name": "Manurewa",
    "slug": "manurewa",
    "type": "general",
-   "counted_pct": 89.9,
-   "final": false,
-   "votes_cast": 20711,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 21569,
+   "winner": "Arena Williams",
+   "party": "labour",
    "leader": "Arena Williams",
    "leader_party": "labour",
-   "majority": 10518,
+   "majority": 10973,
    "runner_up": "Ghouse Majeed",
    "runner_up_party": "national",
-   "winner_votes": 13854,
-   "runner_up_votes": 3336,
+   "winner_votes": 14444,
+   "runner_up_votes": 3471,
    "candidates": [
     {
      "name": "Arena Williams",
      "party": "labour",
-     "votes": 13854
+     "votes": 14444
     },
     {
      "name": "Ghouse Majeed",
      "party": "national",
-     "votes": 3336
+     "votes": 3471
     },
     {
      "name": "Esther Tofilau Tevaga",
      "party": "nz-first",
-     "votes": 2655
+     "votes": 2767
     },
     {
      "name": "Avalua Tavui",
      "party": "animal-justice",
-     "votes": 301
+     "votes": 309
     }
    ],
    "party_votes": {
-    "act": 538,
+    "act": 558,
     "alliance": 3,
-    "animal-justice": 51,
-    "legalise-cannabis": 37,
-    "conservative": 30,
+    "animal-justice": 52,
+    "legalise-cannabis": 38,
+    "conservative": 33,
     "free-palestine": 7,
-    "green": 1668,
-    "labour": 12174,
+    "green": 1743,
+    "labour": 12681,
     "nz-outdoors-freedom": 5,
-    "national": 3515,
-    "nz-first": 1943,
-    "nz-loyal": 4,
-    "opportunity": 377,
-    "te-pati-maori": 63,
+    "national": 3651,
+    "nz-first": 2016,
+    "nz-loyal": 5,
+    "opportunity": 400,
+    "te-pati-maori": 68,
     "te-tai-tokerau-party": 2,
-    "vision-nz": 53,
-    "womens-rights": 16
+    "vision-nz": 57,
+    "womens-rights": 19
    }
   },
   {
    "name": "Maungakiekie",
    "slug": "maungakiekie",
    "type": "general",
-   "counted_pct": 97.5,
-   "final": false,
-   "votes_cast": 31819,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 31876,
+   "winner": "Greg Fleming",
+   "party": "national",
    "leader": "Greg Fleming",
    "leader_party": "national",
-   "majority": 2944,
+   "majority": 2952,
    "runner_up": "Priyanca Radhakrishnan",
    "runner_up_party": "labour",
-   "winner_votes": 14598,
-   "runner_up_votes": 11654,
+   "winner_votes": 14626,
+   "runner_up_votes": 11674,
    "candidates": [
     {
      "name": "Greg Fleming",
      "party": "national",
-     "votes": 14598
+     "votes": 14626
     },
     {
      "name": "Priyanca Radhakrishnan",
      "party": "labour",
-     "votes": 11654
+     "votes": 11674
     },
     {
      "name": "Adam Powell",
      "party": "green",
-     "votes": 2463
+     "votes": 2466
     },
     {
      "name": "Derrick Paull",
      "party": "opportunity",
-     "votes": 1014
+     "votes": 1015
     },
     {
      "name": "Keegan Langeveld",
      "party": "nz-first",
-     "votes": 877
+     "votes": 879
     },
     {
      "name": "Juan Alvarez De Lugo",
      "party": "act",
-     "votes": 814
+     "votes": 817
     }
    ],
    "party_votes": {
-    "act": 2923,
+    "act": 2928,
     "alliance": 17,
     "animal-justice": 22,
     "legalise-cannabis": 38,
     "conservative": 14,
     "free-palestine": 15,
-    "green": 4045,
-    "labour": 10264,
+    "green": 4050,
+    "labour": 10284,
     "nz-outdoors-freedom": 8,
-    "national": 9675,
-    "nz-first": 2005,
+    "national": 9695,
+    "nz-first": 2006,
     "nz-loyal": 10,
-    "opportunity": 2518,
+    "opportunity": 2524,
     "te-pati-maori": 42,
     "te-tai-tokerau-party": 5,
     "vision-nz": 14,
@@ -1961,48 +1961,48 @@
    "name": "Mt Albert",
    "slug": "mt-albert",
    "type": "general",
-   "counted_pct": 97.1,
-   "final": false,
-   "votes_cast": 32224,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 32781,
+   "winner": "Helen White",
+   "party": "labour",
    "leader": "Helen White",
    "leader_party": "labour",
-   "majority": 4600,
+   "majority": 4678,
    "runner_up": "Melissa Lee",
    "runner_up_party": "national",
-   "winner_votes": 13816,
-   "runner_up_votes": 9216,
+   "winner_votes": 14067,
+   "runner_up_votes": 9389,
    "candidates": [
     {
      "name": "Helen White",
      "party": "labour",
-     "votes": 13816
+     "votes": 14067
     },
     {
      "name": "Melissa Lee",
      "party": "national",
-     "votes": 9216
+     "votes": 9389
     },
     {
      "name": "Qiulae Wong",
      "party": "opportunity",
-     "votes": 3900
+     "votes": 3960
     },
     {
      "name": "Ricardo Menendez March",
      "party": "green",
-     "votes": 3553
+     "votes": 3595
     },
     {
      "name": "Sheldon Eden-Whaitiri",
      "party": "nz-first",
-     "votes": 690
+     "votes": 703
     },
     {
      "name": "Alex Price",
      "party": "act",
-     "votes": 654
+     "votes": 668
     },
     {
      "name": "Luke Bones",
@@ -2011,23 +2011,23 @@
     }
    ],
    "party_votes": {
-    "act": 2399,
+    "act": 2451,
     "alliance": 7,
     "animal-justice": 29,
-    "legalise-cannabis": 37,
+    "legalise-cannabis": 38,
     "conservative": 15,
     "free-palestine": 14,
-    "green": 6508,
-    "labour": 9978,
+    "green": 6625,
+    "labour": 10148,
     "nz-outdoors-freedom": 8,
-    "national": 8050,
-    "nz-first": 1658,
+    "national": 8177,
+    "nz-first": 1695,
     "nz-loyal": 5,
-    "opportunity": 3311,
+    "opportunity": 3360,
     "te-pati-maori": 49,
     "te-tai-tokerau-party": 1,
     "vision-nz": 14,
-    "womens-rights": 18
+    "womens-rights": 19
    }
   },
   {
@@ -2107,65 +2107,65 @@
    "name": "Mt Roskill",
    "slug": "mt-roskill",
    "type": "general",
-   "counted_pct": 98.0,
-   "final": false,
-   "votes_cast": 30555,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 30606,
+   "winner": "Michael Philip Wood",
+   "party": "labour",
    "leader": "Michael Philip Wood",
    "leader_party": "labour",
-   "majority": 256,
+   "majority": 262,
    "runner_up": "Carlos Cheung",
    "runner_up_party": "national",
-   "winner_votes": 13556,
-   "runner_up_votes": 13300,
+   "winner_votes": 13582,
+   "runner_up_votes": 13320,
    "candidates": [
     {
      "name": "Michael Philip Wood",
      "party": "labour",
-     "votes": 13556
+     "votes": 13582
     },
     {
      "name": "Carlos Cheung",
      "party": "national",
-     "votes": 13300
+     "votes": 13320
     },
     {
      "name": "Anjana Iyer",
      "party": "green",
-     "votes": 1573
+     "votes": 1574
     },
     {
      "name": "Yang Qu",
      "party": "act",
-     "votes": 762
+     "votes": 763
     },
     {
      "name": "Jamie Attenborough",
      "party": "opportunity",
-     "votes": 758
+     "votes": 760
     },
     {
      "name": "Priyanka Deo",
      "party": "animal-justice",
-     "votes": 150
+     "votes": 151
     }
    ],
    "party_votes": {
-    "act": 1964,
+    "act": 1968,
     "alliance": 17,
     "animal-justice": 34,
     "legalise-cannabis": 21,
     "conservative": 25,
     "free-palestine": 90,
-    "green": 3357,
-    "labour": 10953,
+    "green": 3359,
+    "labour": 10978,
     "nz-outdoors-freedom": 50,
-    "national": 10334,
-    "nz-first": 1791,
+    "national": 10349,
+    "nz-first": 1793,
     "nz-loyal": 36,
-    "opportunity": 1618,
-    "te-pati-maori": 36,
+    "opportunity": 1620,
+    "te-pati-maori": 37,
     "te-tai-tokerau-party": 7,
     "vision-nz": 7,
     "womens-rights": 15
@@ -2374,28 +2374,28 @@
    "name": "North Shore",
    "slug": "north-shore",
    "type": "general",
-   "counted_pct": 97.5,
-   "final": false,
-   "votes_cast": 34258,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 34270,
+   "winner": "Simon Watts",
+   "party": "national",
    "leader": "Simon Watts",
    "leader_party": "national",
-   "majority": 11144,
+   "majority": 11151,
    "runner_up": "Sam Collins",
    "runner_up_party": "labour",
-   "winner_votes": 19575,
-   "runner_up_votes": 8431,
+   "winner_votes": 19584,
+   "runner_up_votes": 8433,
    "candidates": [
     {
      "name": "Simon Watts",
      "party": "national",
-     "votes": 19575
+     "votes": 19584
     },
     {
      "name": "Sam Collins",
      "party": "labour",
-     "votes": 8431
+     "votes": 8433
     },
     {
      "name": "Josh Jacobsen",
@@ -2405,7 +2405,7 @@
     {
      "name": "Karen Chhour",
      "party": "act",
-     "votes": 1746
+     "votes": 1747
     },
     {
      "name": "Holly Knill",
@@ -2414,17 +2414,17 @@
     }
    ],
    "party_votes": {
-    "act": 5276,
+    "act": 5278,
     "alliance": 15,
     "animal-justice": 30,
     "legalise-cannabis": 28,
     "conservative": 14,
     "free-palestine": 11,
-    "green": 3257,
-    "labour": 6877,
+    "green": 3258,
+    "labour": 6879,
     "nz-outdoors-freedom": 13,
-    "national": 13780,
-    "nz-first": 2052,
+    "national": 13785,
+    "nz-first": 2053,
     "nz-loyal": 14,
     "opportunity": 2724,
     "te-pati-maori": 22,
@@ -2437,33 +2437,33 @@
    "name": "Northcote",
    "slug": "northcote",
    "type": "general",
-   "counted_pct": 97.7,
-   "final": false,
-   "votes_cast": 33505,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 33522,
+   "winner": "Dan Bidois",
+   "party": "national",
    "leader": "Dan Bidois",
    "leader_party": "national",
-   "majority": 3067,
+   "majority": 3064,
    "runner_up": "Shanan Halbert",
    "runner_up_party": "labour",
-   "winner_votes": 15964,
-   "runner_up_votes": 12897,
+   "winner_votes": 15969,
+   "runner_up_votes": 12905,
    "candidates": [
     {
      "name": "Dan Bidois",
      "party": "national",
-     "votes": 15964
+     "votes": 15969
     },
     {
      "name": "Shanan Halbert",
      "party": "labour",
-     "votes": 12897
+     "votes": 12905
     },
     {
      "name": "Bhen Goodsir",
      "party": "green",
-     "votes": 1642
+     "votes": 1644
     },
     {
      "name": "Cody Marsh",
@@ -2478,7 +2478,7 @@
     {
      "name": "Martin Lundqvist",
      "party": "act",
-     "votes": 570
+     "votes": 571
     },
     {
      "name": "Lily Carrington",
@@ -2497,19 +2497,19 @@
     }
    ],
    "party_votes": {
-    "act": 3253,
+    "act": 3254,
     "alliance": 7,
     "animal-justice": 59,
     "legalise-cannabis": 40,
     "conservative": 47,
     "free-palestine": 18,
-    "green": 4455,
-    "labour": 9343,
+    "green": 4457,
+    "labour": 9350,
     "nz-outdoors-freedom": 15,
-    "national": 10657,
-    "nz-first": 2489,
+    "national": 10661,
+    "nz-first": 2490,
     "nz-loyal": 36,
-    "opportunity": 2805,
+    "opportunity": 2807,
     "te-pati-maori": 30,
     "te-tai-tokerau-party": 2,
     "vision-nz": 2,
@@ -2520,141 +2520,141 @@
    "name": "Northland",
    "slug": "northland",
    "type": "general",
-   "counted_pct": 94.6,
-   "final": false,
-   "votes_cast": 33933,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 37823,
+   "winner": "Grant Lewis McCALLUM",
+   "party": "national",
    "leader": "Grant Lewis McCALLUM",
    "leader_party": "national",
-   "majority": 7738,
+   "majority": 7942,
    "runner_up": "Ashleigh Latimer",
    "runner_up_party": "labour",
-   "winner_votes": 15222,
-   "runner_up_votes": 7484,
+   "winner_votes": 16556,
+   "runner_up_votes": 8614,
    "candidates": [
     {
      "name": "Grant Lewis McCALLUM",
      "party": "national",
-     "votes": 15222
+     "votes": 16556
     },
     {
      "name": "Ashleigh Latimer",
      "party": "labour",
-     "votes": 7484
+     "votes": 8614
     },
     {
      "name": "Shane Jones",
      "party": "nz-first",
-     "votes": 5069
+     "votes": 5750
     },
     {
      "name": "Mike Finlayson",
      "party": "green",
-     "votes": 3016
+     "votes": 3413
     },
     {
      "name": "Mark Cameron",
      "party": "act",
-     "votes": 1881
+     "votes": 2058
     },
     {
      "name": "Jeffrey Lye",
      "party": "legalise-cannabis",
-     "votes": 384
+     "votes": 443
     },
     {
      "name": "Alistair Wait",
      "party": "nz-outdoors-freedom",
-     "votes": 184
+     "votes": 200
     },
     {
      "name": "Richard McINTOSH",
      "party": "independent",
-     "votes": 152
+     "votes": 160
     },
     {
      "name": "Pete Verhoeven",
      "party": "nz-loyal",
-     "votes": 126
+     "votes": 147
     },
     {
      "name": "Douglas Robert Lyell",
      "party": "conservative",
-     "votes": 104
+     "votes": 123
     }
    ],
    "party_votes": {
-    "act": 5658,
-    "alliance": 8,
-    "animal-justice": 34,
-    "legalise-cannabis": 117,
-    "conservative": 58,
+    "act": 6110,
+    "alliance": 10,
+    "animal-justice": 42,
+    "legalise-cannabis": 140,
+    "conservative": 75,
     "free-palestine": 9,
-    "green": 3538,
-    "labour": 6700,
-    "nz-outdoors-freedom": 90,
-    "national": 10182,
-    "nz-first": 5533,
-    "nz-loyal": 93,
-    "opportunity": 1599,
-    "te-pati-maori": 79,
-    "te-tai-tokerau-party": 33,
-    "vision-nz": 18,
-    "womens-rights": 21
+    "green": 4003,
+    "labour": 7782,
+    "nz-outdoors-freedom": 100,
+    "national": 11127,
+    "nz-first": 6232,
+    "nz-loyal": 107,
+    "opportunity": 1715,
+    "te-pati-maori": 98,
+    "te-tai-tokerau-party": 42,
+    "vision-nz": 20,
+    "womens-rights": 24
    }
   },
   {
    "name": "Ōtāhuhu",
    "slug": "otahuhu",
    "type": "general",
-   "counted_pct": 96.7,
-   "final": false,
-   "votes_cast": 20726,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 20907,
+   "winner": "Jenny Salesa",
+   "party": "labour",
    "leader": "Jenny Salesa",
    "leader_party": "labour",
-   "majority": 10498,
+   "majority": 10558,
    "runner_up": "Lalit Arya",
    "runner_up_party": "national",
-   "winner_votes": 13727,
-   "runner_up_votes": 3229,
+   "winner_votes": 13826,
+   "runner_up_votes": 3268,
    "candidates": [
     {
      "name": "Jenny Salesa",
      "party": "labour",
-     "votes": 13727
+     "votes": 13826
     },
     {
      "name": "Lalit Arya",
      "party": "national",
-     "votes": 3229
+     "votes": 3268
     },
     {
      "name": "Te Whatanui Leka Skipwith",
      "party": "green",
-     "votes": 1537
+     "votes": 1552
     },
     {
      "name": "Henrietta Devoe",
      "party": "act",
-     "votes": 588
+     "votes": 595
     },
     {
      "name": "Adam Macrae-Martin",
      "party": "opportunity",
-     "votes": 408
+     "votes": 417
     },
     {
      "name": "Karl Mokaraka",
      "party": "vision-nz",
-     "votes": 237
+     "votes": 242
     },
     {
      "name": "John Alcock",
      "party": "nz-loyal",
-     "votes": 141
+     "votes": 142
     },
     {
      "name": "Eseta Haunga",
@@ -2669,26 +2669,26 @@
     {
      "name": "James Gordon Robb",
      "party": "independent",
-     "votes": 106
+     "votes": 107
     }
    ],
    "party_votes": {
-    "act": 461,
+    "act": 466,
     "alliance": 7,
     "animal-justice": 13,
     "legalise-cannabis": 26,
     "conservative": 17,
     "free-palestine": 10,
-    "green": 1458,
-    "labour": 12999,
+    "green": 1472,
+    "labour": 13093,
     "nz-outdoors-freedom": 8,
-    "national": 3169,
-    "nz-first": 1622,
+    "national": 3212,
+    "nz-first": 1639,
     "nz-loyal": 52,
-    "opportunity": 442,
+    "opportunity": 448,
     "te-pati-maori": 55,
     "te-tai-tokerau-party": 10,
-    "vision-nz": 54,
+    "vision-nz": 55,
     "womens-rights": 12
    }
   },
@@ -2696,55 +2696,55 @@
    "name": "Pakuranga",
    "slug": "pakuranga",
    "type": "general",
-   "counted_pct": 97.3,
-   "final": false,
-   "votes_cast": 32112,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 32170,
+   "winner": "Simeon Brown",
+   "party": "national",
    "leader": "Simeon Brown",
    "leader_party": "national",
-   "majority": 13679,
+   "majority": 13691,
    "runner_up": "Campbell Henry Matthews",
    "runner_up_party": "labour",
-   "winner_votes": 21233,
-   "runner_up_votes": 7554,
+   "winner_votes": 21264,
+   "runner_up_votes": 7573,
    "candidates": [
     {
      "name": "Simeon Brown",
      "party": "national",
-     "votes": 21233
+     "votes": 21264
     },
     {
      "name": "Campbell Henry Matthews",
      "party": "labour",
-     "votes": 7554
+     "votes": 7573
     },
     {
      "name": "Kevin Huang",
      "party": "opportunity",
-     "votes": 1999
+     "votes": 2005
     },
     {
      "name": "Parmjeet Parmar",
      "party": "act",
-     "votes": 979
+     "votes": 981
     }
    ],
    "party_votes": {
-    "act": 4047,
+    "act": 4054,
     "alliance": 5,
     "animal-justice": 27,
     "legalise-cannabis": 37,
     "conservative": 26,
     "free-palestine": 16,
-    "green": 2230,
-    "labour": 6440,
+    "green": 2236,
+    "labour": 6459,
     "nz-outdoors-freedom": 13,
-    "national": 14900,
-    "nz-first": 2456,
+    "national": 14919,
+    "nz-first": 2459,
     "nz-loyal": 15,
-    "opportunity": 1652,
-    "te-pati-maori": 30,
+    "opportunity": 1655,
+    "te-pati-maori": 31,
     "te-tai-tokerau-party": 2,
     "vision-nz": 9,
     "womens-rights": 31
@@ -2822,11 +2822,11 @@
    "name": "Papakura",
    "slug": "papakura",
    "type": "general",
-   "counted_pct": 98.9,
-   "final": false,
+   "counted_pct": 100.0,
+   "final": true,
    "votes_cast": 28728,
-   "winner": null,
-   "party": null,
+   "winner": "Emma May Chatterton",
+   "party": "national",
    "leader": "Emma May Chatterton",
    "leader_party": "national",
    "majority": 8394,
@@ -2885,23 +2885,23 @@
    "name": "Port Waikato",
    "slug": "port-waikato",
    "type": "general",
-   "counted_pct": 99.0,
-   "final": false,
-   "votes_cast": 35861,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 35867,
+   "winner": "Matthew Paul",
+   "party": "national",
    "leader": "Matthew Paul",
    "leader_party": "national",
-   "majority": 10433,
+   "majority": 10437,
    "runner_up": "Matt Brachi",
    "runner_up_party": "labour",
-   "winner_votes": 18344,
+   "winner_votes": 18348,
    "runner_up_votes": 7911,
    "candidates": [
     {
      "name": "Matthew Paul",
      "party": "national",
-     "votes": 18344
+     "votes": 18348
     },
     {
      "name": "Matt Brachi",
@@ -2921,11 +2921,11 @@
     {
      "name": "Sarah Lochead-Macmillan",
      "party": "act",
-     "votes": 2454
+     "votes": 2456
     }
    ],
    "party_votes": {
-    "act": 5691,
+    "act": 5692,
     "alliance": 17,
     "animal-justice": 56,
     "legalise-cannabis": 81,
@@ -2934,8 +2934,8 @@
     "green": 2360,
     "labour": 7333,
     "nz-outdoors-freedom": 35,
-    "national": 13482,
-    "nz-first": 4942,
+    "national": 13486,
+    "nz-first": 4943,
     "nz-loyal": 35,
     "opportunity": 1326,
     "te-pati-maori": 77,
@@ -3444,28 +3444,28 @@
    "name": "Takanini",
    "slug": "takanini",
    "type": "general",
-   "counted_pct": 97.1,
-   "final": false,
-   "votes_cast": 25757,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 25764,
+   "winner": "Rima Nakhle",
+   "party": "national",
    "leader": "Rima Nakhle",
    "leader_party": "national",
-   "majority": 1484,
+   "majority": 1487,
    "runner_up": "Kharag Singh",
    "runner_up_party": "labour",
-   "winner_votes": 12115,
-   "runner_up_votes": 10631,
+   "winner_votes": 12120,
+   "runner_up_votes": 10633,
    "candidates": [
     {
      "name": "Rima Nakhle",
      "party": "national",
-     "votes": 12115
+     "votes": 12120
     },
     {
      "name": "Kharag Singh",
      "party": "labour",
-     "votes": 10631
+     "votes": 10633
     },
     {
      "name": "Elliot Ikilei",
@@ -3491,12 +3491,12 @@
     "conservative": 21,
     "free-palestine": 12,
     "green": 1838,
-    "labour": 9477,
+    "labour": 9478,
     "nz-outdoors-freedom": 8,
-    "national": 9598,
+    "national": 9603,
     "nz-first": 2080,
     "nz-loyal": 14,
-    "opportunity": 791,
+    "opportunity": 792,
     "te-pati-maori": 41,
     "te-tai-tokerau-party": 1,
     "vision-nz": 32,
@@ -3507,70 +3507,70 @@
    "name": "Tāmaki",
    "slug": "tamaki",
    "type": "general",
-   "counted_pct": 97.5,
-   "final": false,
-   "votes_cast": 35866,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 35924,
+   "winner": "Mahesh Muralidhar",
+   "party": "national",
    "leader": "Mahesh Muralidhar",
    "leader_party": "national",
-   "majority": 5342,
+   "majority": 5356,
    "runner_up": "Max Harris",
    "runner_up_party": "labour",
-   "winner_votes": 15303,
-   "runner_up_votes": 9961,
+   "winner_votes": 15330,
+   "runner_up_votes": 9974,
    "candidates": [
     {
      "name": "Mahesh Muralidhar",
      "party": "national",
-     "votes": 15303
+     "votes": 15330
     },
     {
      "name": "Max Harris",
      "party": "labour",
-     "votes": 9961
+     "votes": 9974
     },
     {
      "name": "James Christmas",
      "party": "act",
-     "votes": 7659
+     "votes": 7670
     },
     {
      "name": "Donald Mackenzie Mayo",
      "party": "green",
-     "votes": 1367
+     "votes": 1369
     },
     {
      "name": "Sacha Haskell",
      "party": "opportunity",
-     "votes": 1001
+     "votes": 1002
     },
     {
      "name": "Finlay Smith",
      "party": "independent",
-     "votes": 153
+     "votes": 155
     },
     {
      "name": "Ryan Earl Pausina",
      "party": "independent",
-     "votes": 124
+     "votes": 125
     }
    ],
    "party_votes": {
-    "act": 5913,
+    "act": 5923,
     "alliance": 3,
     "animal-justice": 21,
     "legalise-cannabis": 24,
     "conservative": 7,
     "free-palestine": 7,
-    "green": 3089,
-    "labour": 7357,
+    "green": 3093,
+    "labour": 7369,
     "nz-outdoors-freedom": 4,
-    "national": 14664,
-    "nz-first": 1775,
+    "national": 14687,
+    "nz-first": 1776,
     "nz-loyal": 12,
-    "opportunity": 2623,
-    "te-pati-maori": 31,
+    "opportunity": 2629,
+    "te-pati-maori": 32,
     "te-tai-tokerau-party": 1,
     "vision-nz": 9,
     "womens-rights": 18
@@ -3867,43 +3867,43 @@
    "name": "Upper Harbour",
    "slug": "upper-harbour",
    "type": "general",
-   "counted_pct": 98.8,
-   "final": false,
-   "votes_cast": 30894,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 30916,
+   "winner": "Cameron Brewer",
+   "party": "national",
    "leader": "Cameron Brewer",
    "leader_party": "national",
-   "majority": 8964,
+   "majority": 8967,
    "runner_up": "Hannah Pia Baral",
    "runner_up_party": "labour",
-   "winner_votes": 16657,
-   "runner_up_votes": 7693,
+   "winner_votes": 16667,
+   "runner_up_votes": 7700,
    "candidates": [
     {
      "name": "Cameron Brewer",
      "party": "national",
-     "votes": 16657
+     "votes": 16667
     },
     {
      "name": "Hannah Pia Baral",
      "party": "labour",
-     "votes": 7693
+     "votes": 7700
     },
     {
      "name": "Ryan Richards",
      "party": "green",
-     "votes": 2326
+     "votes": 2328
     },
     {
      "name": "Bernadette Soares",
      "party": "nz-first",
-     "votes": 1285
+     "votes": 1286
     },
     {
      "name": "Romeo Tevaga",
      "party": "opportunity",
-     "votes": 1201
+     "votes": 1203
     },
     {
      "name": "Panos Patros",
@@ -3923,13 +3923,13 @@
     "legalise-cannabis": 36,
     "conservative": 30,
     "free-palestine": 12,
-    "green": 2777,
-    "labour": 7326,
+    "green": 2780,
+    "labour": 7334,
     "nz-outdoors-freedom": 13,
-    "national": 12476,
-    "nz-first": 2327,
+    "national": 12482,
+    "nz-first": 2330,
     "nz-loyal": 5,
-    "opportunity": 1926,
+    "opportunity": 1928,
     "te-pati-maori": 42,
     "te-tai-tokerau-party": 1,
     "vision-nz": 6,
@@ -4149,38 +4149,38 @@
    "name": "Waitākere",
    "slug": "waitakere",
    "type": "general",
-   "counted_pct": 98.4,
-   "final": false,
-   "votes_cast": 34093,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 34115,
+   "winner": "Vanushi Walters",
+   "party": "labour",
    "leader": "Vanushi Walters",
    "leader_party": "labour",
-   "majority": 2674,
+   "majority": 2675,
    "runner_up": "Agnes Loheni",
    "runner_up_party": "national",
-   "winner_votes": 13472,
-   "runner_up_votes": 10798,
+   "winner_votes": 13480,
+   "runner_up_votes": 10805,
    "candidates": [
     {
      "name": "Vanushi Walters",
      "party": "labour",
-     "votes": 13472
+     "votes": 13480
     },
     {
      "name": "Agnes Loheni",
      "party": "national",
-     "votes": 10798
+     "votes": 10805
     },
     {
      "name": "Steve Abel",
      "party": "green",
-     "votes": 4623
+     "votes": 4625
     },
     {
      "name": "Callum Sheridan",
      "party": "act",
-     "votes": 2246
+     "votes": 2249
     },
     {
      "name": "Bianca O'Keefe",
@@ -4190,21 +4190,21 @@
     {
      "name": "Mark Roach",
      "party": "opportunity",
-     "votes": 1179
+     "votes": 1181
     }
    ],
    "party_votes": {
-    "act": 2984,
+    "act": 2985,
     "alliance": 20,
     "animal-justice": 33,
     "legalise-cannabis": 59,
     "conservative": 33,
     "free-palestine": 16,
-    "green": 5826,
-    "labour": 10623,
+    "green": 5830,
+    "labour": 10631,
     "nz-outdoors-freedom": 28,
-    "national": 8650,
-    "nz-first": 3126,
+    "national": 8657,
+    "nz-first": 3128,
     "nz-loyal": 29,
     "opportunity": 2394,
     "te-pati-maori": 63,
@@ -4612,23 +4612,23 @@
    "name": "Whangaparāoa",
    "slug": "whangaparaoa",
    "type": "general",
-   "counted_pct": 98.6,
-   "final": false,
-   "votes_cast": 37284,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 37290,
+   "winner": "Mark Mitchell",
+   "party": "national",
    "leader": "Mark Mitchell",
    "leader_party": "national",
-   "majority": 15365,
+   "majority": 15368,
    "runner_up": "Estefania Muller Pallarès",
    "runner_up_party": "labour",
-   "winner_votes": 24692,
+   "winner_votes": 24695,
    "runner_up_votes": 9327,
    "candidates": [
     {
      "name": "Mark Mitchell",
      "party": "national",
-     "votes": 24692
+     "votes": 24695
     },
     {
      "name": "Estefania Muller Pallarès",
@@ -4638,7 +4638,7 @@
     {
      "name": "Helena Roza",
      "party": "act",
-     "votes": 2172
+     "votes": 2175
     },
     {
      "name": "Brenton Bruce Faithfull",
@@ -4647,7 +4647,7 @@
     }
    ],
    "party_votes": {
-    "act": 6194,
+    "act": 6197,
     "alliance": 7,
     "animal-justice": 40,
     "legalise-cannabis": 51,
@@ -4656,10 +4656,10 @@
     "green": 2794,
     "labour": 6422,
     "nz-outdoors-freedom": 23,
-    "national": 15072,
+    "national": 15074,
     "nz-first": 4567,
     "nz-loyal": 105,
-    "opportunity": 1740,
+    "opportunity": 1741,
     "te-pati-maori": 29,
     "te-tai-tokerau-party": 4,
     "vision-nz": 9,
@@ -4670,43 +4670,43 @@
    "name": "Whangārei",
    "slug": "whangarei",
    "type": "general",
-   "counted_pct": 98.7,
-   "final": false,
-   "votes_cast": 39311,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 39404,
+   "winner": "Lloyd Sam Budd",
+   "party": "national",
    "leader": "Lloyd Sam Budd",
    "leader_party": "national",
-   "majority": 1061,
+   "majority": 1092,
    "runner_up": "Gary Payinda",
    "runner_up_party": "labour",
-   "winner_votes": 15706,
-   "runner_up_votes": 14645,
+   "winner_votes": 15757,
+   "runner_up_votes": 14665,
    "candidates": [
     {
      "name": "Lloyd Sam Budd",
      "party": "national",
-     "votes": 15706
+     "votes": 15757
     },
     {
      "name": "Gary Payinda",
      "party": "labour",
-     "votes": 14645
+     "votes": 14665
     },
     {
      "name": "Vince Cocurullo",
      "party": "nz-first",
-     "votes": 5832
+     "votes": 5842
     },
     {
      "name": "Doug Graham",
      "party": "act",
-     "votes": 1473
+     "votes": 1476
     },
     {
      "name": "Simon Dellabarca",
      "party": "opportunity",
-     "votes": 741
+     "votes": 748
     },
     {
      "name": "Noah Wakelam",
@@ -4716,7 +4716,7 @@
     {
      "name": "Collin Blackman",
      "party": "nz-loyal",
-     "votes": 131
+     "votes": 132
     },
     {
      "name": "Jon Twyman",
@@ -4726,7 +4726,7 @@
     {
      "name": "Daryl Warren Clotworthy",
      "party": "independent",
-     "votes": 88
+     "votes": 89
     },
     {
      "name": "Luke Beharrell",
@@ -4735,19 +4735,19 @@
     }
    ],
    "party_votes": {
-    "act": 5250,
+    "act": 5265,
     "alliance": 8,
     "animal-justice": 33,
     "legalise-cannabis": 85,
     "conservative": 28,
     "free-palestine": 9,
-    "green": 4116,
-    "labour": 9254,
+    "green": 4124,
+    "labour": 9266,
     "nz-outdoors-freedom": 71,
-    "national": 11916,
-    "nz-first": 6028,
-    "nz-loyal": 91,
-    "opportunity": 2065,
+    "national": 11955,
+    "nz-first": 6035,
+    "nz-loyal": 92,
+    "opportunity": 2076,
     "te-pati-maori": 71,
     "te-tai-tokerau-party": 33,
     "vision-nz": 25,
@@ -4884,50 +4884,50 @@
    "name": "Ikaroa-Rāwhiti",
    "slug": "ikaroa-rawhiti",
    "type": "maori",
-   "counted_pct": 99.4,
-   "final": false,
-   "votes_cast": 28296,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 28444,
+   "winner": "Cushla Tangaere-Manuel",
+   "party": "labour",
    "leader": "Cushla Tangaere-Manuel",
    "leader_party": "labour",
-   "majority": 3029,
+   "majority": 3132,
    "runner_up": "Haley Maxwell",
    "runner_up_party": "te-pati-maori",
-   "winner_votes": 12016,
-   "runner_up_votes": 8987,
+   "winner_votes": 12135,
+   "runner_up_votes": 9003,
    "candidates": [
     {
      "name": "Cushla Tangaere-Manuel",
      "party": "labour",
-     "votes": 12016
+     "votes": 12135
     },
     {
      "name": "Haley Maxwell",
      "party": "te-pati-maori",
-     "votes": 8987
+     "votes": 9003
     },
     {
      "name": "Heather Te Au-Skipworth",
      "party": "green",
-     "votes": 6753
+     "votes": 6762
     }
    ],
    "party_votes": {
     "act": 135,
     "alliance": 4,
     "animal-justice": 15,
-    "legalise-cannabis": 124,
+    "legalise-cannabis": 125,
     "conservative": 10,
     "free-palestine": 9,
-    "green": 8993,
-    "labour": 15384,
+    "green": 9026,
+    "labour": 15472,
     "nz-outdoors-freedom": 17,
-    "national": 474,
-    "nz-first": 814,
+    "national": 477,
+    "nz-first": 822,
     "nz-loyal": 3,
-    "opportunity": 449,
-    "te-pati-maori": 1494,
+    "opportunity": 450,
+    "te-pati-maori": 1506,
     "te-tai-tokerau-party": 25,
     "vision-nz": 38,
     "womens-rights": 14
@@ -4937,52 +4937,52 @@
    "name": "Tāmaki Makaurau",
    "slug": "tamaki-makaurau",
    "type": "maori",
-   "counted_pct": 98.4,
-   "final": false,
-   "votes_cast": 25378,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 25633,
+   "winner": "Oriini Kaipara",
+   "party": "te-pati-maori",
    "leader": "Oriini Kaipara",
    "leader_party": "te-pati-maori",
-   "majority": 7442,
+   "majority": 7498,
    "runner_up": "Kerrin Leoni",
    "runner_up_party": "labour",
-   "winner_votes": 13378,
-   "runner_up_votes": 5936,
+   "winner_votes": 13505,
+   "runner_up_votes": 6007,
    "candidates": [
     {
      "name": "Oriini Kaipara",
      "party": "te-pati-maori",
-     "votes": 13378
+     "votes": 13505
     },
     {
      "name": "Kerrin Leoni",
      "party": "labour",
-     "votes": 5936
+     "votes": 6007
     },
     {
      "name": "Florence Te Ohaere",
      "party": "green",
-     "votes": 5354
+     "votes": 5406
     }
    ],
    "party_votes": {
-    "act": 157,
-    "alliance": 6,
+    "act": 158,
+    "alliance": 7,
     "animal-justice": 19,
-    "legalise-cannabis": 96,
+    "legalise-cannabis": 99,
     "conservative": 5,
     "free-palestine": 11,
-    "green": 8945,
-    "labour": 12108,
+    "green": 9011,
+    "labour": 12258,
     "nz-outdoors-freedom": 15,
-    "national": 556,
-    "nz-first": 872,
+    "national": 557,
+    "nz-first": 875,
     "nz-loyal": 15,
-    "opportunity": 624,
-    "te-pati-maori": 1435,
-    "te-tai-tokerau-party": 96,
-    "vision-nz": 92,
+    "opportunity": 626,
+    "te-pati-maori": 1454,
+    "te-tai-tokerau-party": 97,
+    "vision-nz": 93,
     "womens-rights": 11
    }
   },
@@ -5043,66 +5043,66 @@
    "name": "Te Tai Tokerau",
    "slug": "te-tai-tokerau",
    "type": "maori",
-   "counted_pct": 98.6,
-   "final": false,
-   "votes_cast": 27860,
-   "winner": null,
-   "party": null,
+   "counted_pct": 100.0,
+   "final": true,
+   "votes_cast": 28448,
+   "winner": "Aperahama Edwards",
+   "party": "te-pati-maori",
    "leader": "Aperahama Edwards",
    "leader_party": "te-pati-maori",
-   "majority": 499,
+   "majority": 436,
    "runner_up": "Hūhana Lyndon",
    "runner_up_party": "green",
-   "winner_votes": 8333,
-   "runner_up_votes": 7834,
+   "winner_votes": 8484,
+   "runner_up_votes": 8048,
    "candidates": [
     {
      "name": "Aperahama Edwards",
      "party": "te-pati-maori",
-     "votes": 8333
+     "votes": 8484
     },
     {
      "name": "Hūhana Lyndon",
      "party": "green",
-     "votes": 7834
+     "votes": 8048
     },
     {
      "name": "Willow-Jean Prime",
      "party": "labour",
-     "votes": 6109
+     "votes": 6209
     },
     {
      "name": "Mariameno Kapa-Kingi",
      "party": "te-tai-tokerau-party",
-     "votes": 3977
+     "votes": 4059
     },
     {
      "name": "Maki Herbert",
      "party": "legalise-cannabis",
-     "votes": 787
+     "votes": 809
     },
     {
      "name": "Karl Barkley",
      "party": "your-pic-party",
-     "votes": 228
+     "votes": 236
     }
    ],
    "party_votes": {
-    "act": 225,
+    "act": 230,
     "alliance": 5,
-    "animal-justice": 15,
-    "legalise-cannabis": 184,
+    "animal-justice": 16,
+    "legalise-cannabis": 190,
     "conservative": 4,
-    "free-palestine": 24,
-    "green": 10133,
-    "labour": 12257,
-    "nz-outdoors-freedom": 25,
-    "national": 828,
-    "nz-first": 1299,
+    "free-palestine": 25,
+    "green": 10369,
+    "labour": 12487,
+    "nz-outdoors-freedom": 26,
+    "national": 849,
+    "nz-first": 1327,
     "nz-loyal": 18,
-    "opportunity": 624,
-    "te-pati-maori": 1232,
-    "te-tai-tokerau-party": 650,
+    "opportunity": 641,
+    "te-pati-maori": 1252,
+    "te-tai-tokerau-party": 665,
     "vision-nz": 52,
     "womens-rights": 16
    }
@@ -5111,11 +5111,11 @@
    "name": "Te Tai Tonga",
    "slug": "te-tai-tonga",
    "type": "maori",
-   "counted_pct": 99.9,
-   "final": false,
+   "counted_pct": 100.0,
+   "final": true,
    "votes_cast": 26564,
-   "winner": null,
-   "party": null,
+   "winner": "Mananui Ramsden",
+   "party": "labour",
    "leader": "Mananui Ramsden",
    "leader_party": "labour",
    "majority": 2773,
@@ -5179,11 +5179,11 @@
    "name": "Waiariki",
    "slug": "waiariki",
    "type": "maori",
-   "counted_pct": 99.6,
-   "final": false,
+   "counted_pct": 100.0,
+   "final": true,
    "votes_cast": 29641,
-   "winner": null,
-   "party": null,
+   "winner": "Rawiri Waititi",
+   "party": "te-pati-maori",
    "leader": "Rawiri Waititi",
    "leader_party": "te-pati-maori",
    "majority": 2274,
