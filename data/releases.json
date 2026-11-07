@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T02:47:15Z",
+ "updated": "2026-11-07T10:38:46Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,11 +126,11 @@
   }
  },
  "counts": {
-  "items": 271,
+  "items": 272,
   "per_party": {
    "act": 47,
    "conservative": 19,
-   "free-palestine": 2,
+   "free-palestine": 3,
    "government": 57,
    "green": 30,
    "labour": 36,
@@ -329,7 +329,7 @@
    "feed_url": "https://info.scoop.co.nz/Free_Palestine_Party",
    "feed_type": "html-infopage (no per-organisation RSS exists)",
    "status": "ok",
-   "items_in_feed": 3,
+   "items_in_feed": 4,
    "newsroom_url": "https://palfree.nz/",
    "newsroom_verified": true,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html (cl. 3.1 personal/non-commercial use with attribution; see terms_note)"
@@ -365,7 +365,7 @@
    "feed_type": "rss (section feed; no organisation field)",
    "status": "ok",
    "items_in_feed": 15,
-   "items_matched_to_a_party": 1,
+   "items_matched_to_a_party": 2,
    "licence_or_terms_note": "Scoop terms https://www.scoop.co.nz/about/terms.html; feed copyright line 'Scoop Media Ltd and/or its contributors'"
   },
   {
@@ -382,6 +382,16 @@
   }
  ],
  "items": [
+  {
+   "party": "free-palestine",
+   "title": "Electoral Commission Gives Greenlight To Election Censorship Of Free Palestine Party",
+   "date": "2026-11-07T18:35+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2611/S00057/electoral-commission-gives-greenlight-to-election-censorship-of-free-palestine-party.htm",
+   "summary": "Free Palestine Party President, Paul Hopkinson, says the party was established for this election, not to get votes, but instead to have people vote for the political party with the best policies in…",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Free Palestine Party"
+  },
   {
    "party": "nz-loyal",
    "title": "Notice To New Zealand Voters: Check Your Enrolment Status",
