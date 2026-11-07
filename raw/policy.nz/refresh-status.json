@@ -1,14 +1,28 @@
 {
- "checked": "2026-11-06T23:51:22+13:00",
- "date": "2026-11-06",
+ "checked": "2026-11-07T23:05:54+13:00",
+ "date": "2026-11-07",
  "mode": "live",
  "requests_failed": [],
  "kept_previous": [],
  "suspect": [],
- "raw_files_changed": [],
+ "raw_files_changed": [
+  "parties/labour-party.json",
+  "parties/new-zealand-loyal.json",
+  "electorates/banks-peninsula-electorate.json",
+  "electorates/new-plymouth-electorate.json",
+  "electorates/northland-electorate.json",
+  "electorates/rangitata-electorate.json",
+  "electorates/otahuhu-electorate.json"
+ ],
  "policies": {},
  "candidates": {
-  "new_or_changed": [],
+  "new_or_changed": [
+   "independent/richard-mcintosh",
+   "independent/rusty-kane",
+   "labour/sange-malama",
+   "labour/tracey-mclellan",
+   "nz-loyal/john-alcock"
+  ],
   "unlisted": []
  },
  "counts": {

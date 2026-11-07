@@ -65,6 +65,11 @@ _Source: [Shadow Cabinet of Chris Hipkins](https://en.wikipedia.org/wiki/Shadow_
 
 - **Electorate:** Banks Peninsula
 - **List ranking:** 28
+- **Before politics:** New Zealand Nurses Org.
+- **Age:** 56
+- **Public email:** tracey.mclellan@labour.org.nz
+- **Website:** https://www.labour.org.nz/traceymclellan
+- **Facebook:** https://www.facebook.com/traceymclellanlabour
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/labour-party), retrieved Oct 2026._
 <!-- GENERATED:2026-candidacy END -->

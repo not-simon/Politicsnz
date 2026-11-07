@@ -21,6 +21,10 @@ Malama is a Tokelauan–Tongan woman raised in Timaru. Her Labour profile says s
 
 - **Electorate:** Rangitata
 - **List ranking:** 64
+- **Before politics:** Attendance Officer
+- **Age:** 45
+- **Public email:** sange.malama@labour.nz
+- **Facebook:** https://www.facebook.com/share/1DPAmn4y3X/?mibextid=wwXIfr
 
 _Source: candidate questionnaire answers published on [policy.nz](https://policy.nz/2026/party-vote/parties/labour-party), retrieved Oct 2026._
 <!-- GENERATED:2026-candidacy END -->

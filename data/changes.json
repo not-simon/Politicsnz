@@ -1,11 +1,12 @@
 {
  "_about": "What changed: new and changed policies and candidates (policy.nz), new polls and party releases, newest first. Built by tools/changelog.py; last 60 days. Release entries are headline + link only. `_snapshot` is the state the next run compares against (not published to the site).",
- "updated": "2026-11-06T23:54:43+13:00",
+ "updated": "2026-11-07T23:09:42+13:00",
  "window_days": 60,
- "policy_nz_checked": "2026-11-06T23:51:22+13:00",
+ "policy_nz_checked": "2026-11-07T23:05:54+13:00",
  "policy_nz_failures": 0,
  "counts": {
-  "candidate-changed": 13,
+  "candidate-added": 2,
+  "candidate-changed": 18,
   "policy-added": 107,
   "policy-changed": 55,
   "policy-withdrawn": 1,
@@ -14,6 +15,83 @@
   "site": 1
  },
  "entries": [
+  {
+   "id": "candidate-changed:nz-loyal:nz-loyal/john-alcock:2026-11-07",
+   "date": "2026-11-07",
+   "kind": "candidate-changed",
+   "party": "nz-loyal",
+   "title": "John Alcock",
+   "summary": "Now “Candidate for the Ōtāhuhu electorate”.",
+   "url": "#/parties/nz-loyal/people",
+   "source": "https://policy.nz/2026/party-vote/parties/new-zealand-loyal",
+   "time": "2026-11-07T23:09:42+13:00"
+  },
+  {
+   "id": "candidate-changed:labour:labour/tracey-mclellan:2026-11-07",
+   "date": "2026-11-07",
+   "kind": "candidate-changed",
+   "party": "labour",
+   "title": "Tracey McLellan",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/labour/people",
+   "source": "https://policy.nz/2026/party-vote/parties/labour-party",
+   "time": "2026-11-07T23:09:42+13:00"
+  },
+  {
+   "id": "candidate-changed:labour:labour/sange-malama:2026-11-07",
+   "date": "2026-11-07",
+   "kind": "candidate-changed",
+   "party": "labour",
+   "title": "Sange Malama",
+   "summary": "Updated their policy.nz answers.",
+   "url": "#/parties/labour/people",
+   "source": "https://policy.nz/2026/party-vote/parties/labour-party",
+   "time": "2026-11-07T23:09:42+13:00"
+  },
+  {
+   "id": "candidate-changed:independent-taranaki:independent-taranaki/rusty-kane:2026-11-07",
+   "date": "2026-11-07",
+   "kind": "candidate-changed",
+   "party": "independent-taranaki",
+   "title": "Rusty Kane",
+   "summary": "No longer listed on policy.nz (checked today).",
+   "url": "#/parties/independent-taranaki/people",
+   "source": "https://policy.nz/2026/party-vote/parties/independent-taranaki",
+   "time": "2026-11-07T23:09:42+13:00"
+  },
+  {
+   "id": "candidate-changed:build-the-nation:build-the-nation/richard-mcintosh:2026-11-07",
+   "date": "2026-11-07",
+   "kind": "candidate-changed",
+   "party": "build-the-nation",
+   "title": "Richard McIntosh",
+   "summary": "No longer listed on policy.nz (checked today).",
+   "url": "#/parties/build-the-nation/people",
+   "source": "https://policy.nz/2026/party-vote/parties/build-the-nation",
+   "time": "2026-11-07T23:09:42+13:00"
+  },
+  {
+   "id": "candidate-added:independent:independent/rusty-kane",
+   "date": "2026-11-07",
+   "kind": "candidate-added",
+   "party": "independent",
+   "title": "Rusty Kane",
+   "summary": "Candidate for the New Plymouth electorate.",
+   "url": "#/parties/independent/people",
+   "source": "https://policy.nz/2026/party-vote/parties/independent",
+   "time": "2026-11-07T23:09:42+13:00"
+  },
+  {
+   "id": "candidate-added:independent:independent/richard-mcintosh",
+   "date": "2026-11-07",
+   "kind": "candidate-added",
+   "party": "independent",
+   "title": "Richard McIntosh",
+   "summary": "Candidate for the Northland electorate.",
+   "url": "#/parties/independent/people",
+   "source": "https://policy.nz/2026/party-vote/parties/independent",
+   "time": "2026-11-07T23:09:42+13:00"
+  },
   {
    "id": "poll-added:-:2026-11-03|The Post/Freshwater Strategy",
    "date": "2026-11-06",
@@ -4851,7 +4929,7 @@
   }
  ],
  "_snapshot": {
-  "taken": "2026-11-06T23:54:43+13:00",
+  "taken": "2026-11-07T23:09:42+13:00",
   "policies": {
    "act": {
     "POL54642": {
@@ -15720,7 +15798,7 @@
     "rank": 28,
     "el": "Banks Peninsula",
     "desc": "Candidate for the Banks Peninsula electorate",
-    "q": "7b7e644c56"
+    "q": "ac624e1472"
    },
    "labour/max-harris": {
     "party": "labour",
@@ -16044,7 +16122,7 @@
     "rank": 64,
     "el": "Rangitata",
     "desc": "Candidate for the Rangitata electorate",
-    "q": "7b7e644c56"
+    "q": "89681628cf"
    },
    "labour/rhieve-grey": {
     "party": "labour",
@@ -16844,7 +16922,7 @@
     "name": "John Alcock",
     "rank": null,
     "el": "Ōtāhuhu",
-    "desc": "Candidate for the ",
+    "desc": "Candidate for the Ōtāhuhu electorate",
     "q": "7b7e644c56"
    },
    "nz-loyal/lesley-sales": {
@@ -18449,22 +18527,31 @@
     "desc": "Candidate for the Nelson electorate",
     "q": "29eef3cd6e"
    },
-   "independent-taranaki/rusty-kane": {
-    "party": "independent-taranaki",
-    "pnz": "independent-taranaki",
+   "independent/rusty-kane": {
+    "party": "independent",
+    "pnz": "independent",
     "name": "Rusty Kane",
     "rank": null,
     "el": "New Plymouth",
     "desc": "Candidate for the New Plymouth electorate",
     "q": "90d20141bf"
    },
-   "build-the-nation/richard-mcintosh": {
-    "party": "build-the-nation",
-    "pnz": "build-the-nation",
+   "independent/richard-mcintosh": {
+    "party": "independent",
+    "pnz": "independent",
     "name": "Richard McIntosh",
     "rank": null,
     "el": "Northland",
     "desc": "Candidate for the Northland electorate",
+    "q": "90d20141bf"
+   },
+   "independent/james-gordon-robb": {
+    "party": "independent",
+    "pnz": "independent",
+    "name": "James Gordon Robb",
+    "rank": null,
+    "el": "Ōtāhuhu",
+    "desc": "Candidate for the Ōtāhuhu electorate",
     "q": "90d20141bf"
    },
    "peoples-party-new-zealand/eseta-haunga": {
@@ -18480,15 +18567,6 @@
     "party": "independent",
     "pnz": "independent",
     "name": "Phillip Harry Faleu",
-    "rank": null,
-    "el": "Ōtāhuhu",
-    "desc": "Candidate for the Ōtāhuhu electorate",
-    "q": "90d20141bf"
-   },
-   "independent/james-gordon-robb": {
-    "party": "independent",
-    "pnz": "independent",
-    "name": "James Gordon Robb",
     "rank": null,
     "el": "Ōtāhuhu",
     "desc": "Candidate for the Ōtāhuhu electorate",
