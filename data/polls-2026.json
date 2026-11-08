@@ -1,7 +1,7 @@
 {
  "title": "Opinion polls (party vote) for the 2026 New Zealand general election, since the 14 Oct 2023 election",
  "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
- "retrieved": "2026-11-07",
+ "retrieved": "2026-11-08",
  "parties": {
   "NAT": "national",
   "LAB": "labour",
@@ -14,6 +14,26 @@
  "notes": "Percentages as published (decided voters; undecided excluded by every pollster). 'end_date' is the sort date used by Wikipedia (last fieldwork day or release date). Rows are newest first. 'others' = combined minor parties where listed. 'pollster_key' groups series that changed name; 'internal' marks party/corporate-client polls that are published selectively. Poll sources: each row's source_url as linked on Wikipedia. Refreshed by tools/polls_update.py.",
  "count": 135,
  "polls": [
+  {
+   "date": "7 Nov 2023",
+   "end_date": "2026-11-07",
+   "pollster": "2026 preliminary election result",
+   "source_url": "https://en.wikipedia.org/wiki/Results_of_the_2026_New_Zealand_general_election",
+   "sample_size": null,
+   "results": {
+    "national": 29.21,
+    "labour": 29.36,
+    "green": 13.3,
+    "act": 10.92,
+    "nz-first": 9.78,
+    "te-pati-maori": 0.56,
+    "opportunity": 5.96
+   },
+   "is_election_result": true,
+   "others": 0.85,
+   "pollster_key": "2026 preliminary election result",
+   "internal": false
+  },
   {
    "date": "29 Oct – 3 Nov 2026",
    "end_date": "2026-11-03",
@@ -2669,7 +2689,7 @@
    "end_date": "2023-11-27"
   }
  ],
- "source_revid": 1384218164,
+ "source_revid": 1384437121,
  "pollsters": {
   "1 News–Verian": {
    "commissioner": "TVNZ 1News",
