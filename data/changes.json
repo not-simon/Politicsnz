@@ -1,8 +1,8 @@
 {
  "_about": "What changed: new and changed policies and candidates (policy.nz), new polls and party releases, newest first. Built by tools/changelog.py; last 60 days. Release entries are headline + link only. `_snapshot` is the state the next run compares against (not published to the site).",
- "updated": "2026-11-07T23:09:42+13:00",
+ "updated": "2026-11-08T23:24:55+13:00",
  "window_days": 60,
- "policy_nz_checked": "2026-11-07T23:05:54+13:00",
+ "policy_nz_checked": "2026-11-08T23:20:57+13:00",
  "policy_nz_failures": 0,
  "counts": {
   "candidate-added": 2,
@@ -11,7 +11,7 @@
   "policy-changed": 55,
   "policy-withdrawn": 1,
   "poll-added": 17,
-  "release": 211,
+  "release": 212,
   "site": 1
  },
  "entries": [
@@ -91,6 +91,18 @@
    "url": "#/parties/independent/people",
    "source": "https://policy.nz/2026/party-vote/parties/independent",
    "time": "2026-11-07T23:09:42+13:00"
+  },
+  {
+   "id": "release:free-palestine:https://www.scoop.co.nz/stories/PO2611/S00057/electoral-commission-gives-greenlight-to-election-censorship-of-free-palestine-party.htm",
+   "date": "2026-11-07",
+   "kind": "release",
+   "party": "free-palestine",
+   "title": "Electoral Commission Gives Greenlight To Election Censorship Of Free Palestine Party",
+   "summary": "",
+   "url": "#/parties/news/free-palestine",
+   "source": "https://www.scoop.co.nz/stories/PO2611/S00057/electoral-commission-gives-greenlight-to-election-censorship-of-free-palestine-party.htm",
+   "time": "2026-11-07T18:35+13:00",
+   "via": "Scoop"
   },
   {
    "id": "poll-added:-:2026-11-03|The Post/Freshwater Strategy",
@@ -4929,7 +4941,7 @@
   }
  ],
  "_snapshot": {
-  "taken": "2026-11-07T23:09:42+13:00",
+  "taken": "2026-11-08T23:24:55+13:00",
   "policies": {
    "act": {
     "POL54642": {
@@ -19173,7 +19185,8 @@
    "https://www.scoop.co.nz/stories/PO2611/S00011/we-are-ruled-by-unelected-bureaucrats.htm",
    "https://www.scoop.co.nz/stories/PO2611/S00015/new-zealand-is-being-taken-for-a-ride.htm",
    "https://www.scoop.co.nz/stories/PO2611/S00025/conservative-nz-policy-review-and-reform-of-the-conversion-practices-prohibition-legislation-act-2022.htm",
-   "https://www.scoop.co.nz/stories/PO2611/S00050/notice-to-new-zealand-voters-check-your-enrolment-status.htm"
+   "https://www.scoop.co.nz/stories/PO2611/S00050/notice-to-new-zealand-voters-check-your-enrolment-status.htm",
+   "https://www.scoop.co.nz/stories/PO2611/S00057/electoral-commission-gives-greenlight-to-election-censorship-of-free-palestine-party.htm"
   ]
  }
 }
