@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T10:38:46Z",
+ "updated": "2026-11-09T12:02:34Z",
  "_about": "Party press releases and ministerial releases: the party's or minister's own words, not fact-checked. Headline, date, link and a short attributed snippet only; follow the link for the release. Default display should be equal slots per party (e.g. latest 3 each), with a chronological view second, because large parties issue many times more releases than small ones. Items are kept for 60 days and de-duplicated by URL. Built by tools/releases_update.py.",
  "window_days": 60,
  "election_date": "2026-11-07",
@@ -126,10 +126,10 @@
   }
  },
  "counts": {
-  "items": 272,
+  "items": 273,
   "per_party": {
    "act": 47,
-   "conservative": 19,
+   "conservative": 20,
    "free-palestine": 3,
    "government": 57,
    "green": 30,
@@ -382,6 +382,16 @@
   }
  ],
  "items": [
+  {
+   "party": "conservative",
+   "title": "Post Election First Statement",
+   "date": "2026-11-09T16:12+13:00",
+   "url": "https://www.scoop.co.nz/stories/PO2611/S00064/post-election-first-statement.htm",
+   "summary": "You cannot use a party's lack of polling support to justify denying it exposure, and then use that lack of exposure as evidence that the party has no public support.",
+   "source": "Scoop",
+   "ministerial": false,
+   "byline": "Conservative Party"
+  },
   {
    "party": "free-palestine",
    "title": "Electoral Commission Gives Greenlight To Election Censorship Of Free Palestine Party",
