@@ -2,7 +2,7 @@
  "_about": "What changed: new and changed policies and candidates (policy.nz), new polls and party releases, newest first. Built by tools/changelog.py; last 60 days. Release entries are headline + link only. `_snapshot` is the state the next run compares against (not published to the site).",
  "updated": "2026-11-08T23:24:55+13:00",
  "window_days": 60,
- "policy_nz_checked": "2026-11-08T23:20:57+13:00",
+ "policy_nz_checked": "2026-11-10T00:29:30+13:00",
  "policy_nz_failures": 0,
  "counts": {
   "candidate-added": 2,
@@ -10,7 +10,7 @@
   "policy-added": 107,
   "policy-changed": 55,
   "policy-withdrawn": 1,
-  "poll-added": 17,
+  "poll-added": 16,
   "release": 212,
   "site": 1
  },
@@ -4927,21 +4927,10 @@
    "url": "#/seats/polls",
    "source": "https://freshwaterstrategy.com/2026/09/15/the-post-freshwater-strategy-september-polling-data/",
    "poll_date": "2026-09-11"
-  },
-  {
-   "id": "poll-added:-:2026-09-10|Anacta",
-   "date": "2026-09-10",
-   "kind": "poll-added",
-   "party": null,
-   "title": "Anacta",
-   "summary": "Fieldwork 4–10 Sep 2026, 1,701 people, a party or corporate-client poll, published selectively.",
-   "url": "#/seats/polls",
-   "source": "https://www.nzherald.co.nz/nz/politics/labour-slumps-in-another-poll-but-still-ahead-of-national/HDUVF4SBJJHK3LYLGXLVLG3F7U/",
-   "poll_date": "2026-09-10"
   }
  ],
  "_snapshot": {
-  "taken": "2026-11-08T23:24:55+13:00",
+  "taken": "2026-11-10T00:33:32+13:00",
   "policies": {
    "act": {
     "POL54642": {
