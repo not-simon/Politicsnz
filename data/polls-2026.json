@@ -1,7 +1,7 @@
 {
  "title": "Opinion polls (party vote) for the 2026 New Zealand general election, since the 14 Oct 2023 election",
  "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
- "retrieved": "2026-11-08",
+ "retrieved": "2026-11-09",
  "parties": {
   "NAT": "national",
   "LAB": "labour",
@@ -19,7 +19,7 @@
    "end_date": "2026-11-07",
    "pollster": "2026 preliminary election result",
    "source_url": "https://en.wikipedia.org/wiki/Results_of_the_2026_New_Zealand_general_election",
-   "sample_size": null,
+   "sample_size": 2418565,
    "results": {
     "national": 29.21,
     "labour": 29.36,
@@ -2689,7 +2689,7 @@
    "end_date": "2023-11-27"
   }
  ],
- "source_revid": 1384448953,
+ "source_revid": 1384580454,
  "pollsters": {
   "1 News–Verian": {
    "commissioner": "TVNZ 1News",
