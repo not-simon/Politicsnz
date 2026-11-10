@@ -1,8 +1,8 @@
 {
  "_about": "What changed: new and changed policies and candidates (policy.nz), new polls and party releases, newest first. Built by tools/changelog.py; last 60 days. Release entries are headline + link only. `_snapshot` is the state the next run compares against (not published to the site).",
- "updated": "2026-11-08T23:24:55+13:00",
+ "updated": "2026-11-11T00:14:36+13:00",
  "window_days": 60,
- "policy_nz_checked": "2026-11-10T00:29:30+13:00",
+ "policy_nz_checked": "2026-11-11T00:10:34+13:00",
  "policy_nz_failures": 0,
  "counts": {
   "candidate-added": 2,
@@ -10,11 +10,23 @@
   "policy-added": 107,
   "policy-changed": 55,
   "policy-withdrawn": 1,
-  "poll-added": 16,
-  "release": 212,
+  "poll-added": 15,
+  "release": 213,
   "site": 1
  },
  "entries": [
+  {
+   "id": "release:conservative:https://www.scoop.co.nz/stories/PO2611/S00064/post-election-first-statement.htm",
+   "date": "2026-11-09",
+   "kind": "release",
+   "party": "conservative",
+   "title": "Post Election First Statement",
+   "summary": "",
+   "url": "#/parties/news/conservative",
+   "source": "https://www.scoop.co.nz/stories/PO2611/S00064/post-election-first-statement.htm",
+   "time": "2026-11-09T16:12+13:00",
+   "via": "Scoop"
+  },
   {
    "id": "candidate-changed:nz-loyal:nz-loyal/john-alcock:2026-11-07",
    "date": "2026-11-07",
@@ -4916,21 +4928,10 @@
    "source": "https://www.scoop.co.nz/stories/PA2609/S00152/governments-last-act-is-another-attack-on-te-tiriti.htm",
    "time": "2026-09-15T11:03+12:00",
    "via": "Scoop"
-  },
-  {
-   "id": "poll-added:-:2026-09-11|The Post/Freshwater Strategy",
-   "date": "2026-09-11",
-   "kind": "poll-added",
-   "party": null,
-   "title": "The Post/Freshwater Strategy",
-   "summary": "Fieldwork 4–11 Sep 2026, 1,011 people.",
-   "url": "#/seats/polls",
-   "source": "https://freshwaterstrategy.com/2026/09/15/the-post-freshwater-strategy-september-polling-data/",
-   "poll_date": "2026-09-11"
   }
  ],
  "_snapshot": {
-  "taken": "2026-11-10T00:33:32+13:00",
+  "taken": "2026-11-11T00:14:36+13:00",
   "policies": {
    "act": {
     "POL54642": {
@@ -19175,7 +19176,8 @@
    "https://www.scoop.co.nz/stories/PO2611/S00015/new-zealand-is-being-taken-for-a-ride.htm",
    "https://www.scoop.co.nz/stories/PO2611/S00025/conservative-nz-policy-review-and-reform-of-the-conversion-practices-prohibition-legislation-act-2022.htm",
    "https://www.scoop.co.nz/stories/PO2611/S00050/notice-to-new-zealand-voters-check-your-enrolment-status.htm",
-   "https://www.scoop.co.nz/stories/PO2611/S00057/electoral-commission-gives-greenlight-to-election-censorship-of-free-palestine-party.htm"
+   "https://www.scoop.co.nz/stories/PO2611/S00057/electoral-commission-gives-greenlight-to-election-censorship-of-free-palestine-party.htm",
+   "https://www.scoop.co.nz/stories/PO2611/S00064/post-election-first-statement.htm"
   ]
  }
 }

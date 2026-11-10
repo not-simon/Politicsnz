@@ -5,10 +5,18 @@
     <link>https://not-simon.github.io/Politicsnz/#/about/changes</link>
     <description>New and changed 2026 election policies and candidates (from policy.nz), new opinion polls and party press releases, as picked up by Ballot Book NZ, an independent, non-partisan guide to the 7 November 2026 New Zealand general election. Every item links to its source.</description>
     <language>en-nz</language>
-    <lastBuildDate>Tue, 10 Nov 2026 00:33:35 +1300</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 00:14:39 +1300</lastBuildDate>
     <ttl>720</ttl>
     <generator>tools/changelog.py</generator>
     <atom:link href="https://not-simon.github.io/Politicsnz/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conservative: press release — Post Election First Statement</title>
+      <link>https://not-simon.github.io/Politicsnz/#/parties/news/conservative</link>
+      <guid isPermaLink="false">ballotbook:release:conservative:https://www.scoop.co.nz/stories/PO2611/S00064/post-election-first-statement.htm</guid>
+      <pubDate>Mon, 09 Nov 2026 16:12:00 +1300</pubDate>
+      <category>release</category>
+      <description>Headline as published by the party. Source: https://www.scoop.co.nz/stories/PO2611/S00064/post-election-first-statement.htm</description>
+    </item>
     <item>
       <title>NZ Loyal: candidate update — John Alcock</title>
       <link>https://not-simon.github.io/Politicsnz/#/parties/nz-loyal/people</link>
@@ -400,14 +408,6 @@
       <pubDate>Tue, 03 Nov 2026 23:55:42 +1300</pubDate>
       <category>policy-added</category>
       <description>This party would make sure support doesn’t fall behind the cost of living. It would increase benefits by whichever is higher: inflation or average wage growth through indexation. It would reverse National’s changes to the Income-Related… Source: https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf</description>
-    </item>
-    <item>
-      <title>Labour: new policy — Create additional support for asylum seekers and people fleeing humanitarian crises</title>
-      <link>https://not-simon.github.io/Politicsnz/#/parties/labour/policies</link>
-      <guid isPermaLink="false">ballotbook:policy-added:labour:POL55419</guid>
-      <pubDate>Tue, 03 Nov 2026 23:55:42 +1300</pubDate>
-      <category>policy-added</category>
-      <description>This party would create a humanitarian visa for family members of New Zealanders in places of war and crisis. It would also give recognised refugees who arrived as asylum seekers the same support as other refugees and ave at least 15… Source: https://www.labour.org.nz/media/xdfhgrlt/labour-policy-manifesto-2026.pdf</description>
     </item>
   </channel>
 </rss>
